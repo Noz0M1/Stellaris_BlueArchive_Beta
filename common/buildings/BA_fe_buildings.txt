@@ -338,15 +338,10 @@ building_BA_fe_dome_SI = {
 			minor_artifacts = 200
 		}
 		produces = {
+			unity = 100
 			physics_research = 200
 			society_research = 200
 			engineering_research = 200
-		}
-	}
-	resources = {
-		category = planet_buildings
-		produces = {
-			unity = 100
 		}
 	}
 	planet_modifier = {

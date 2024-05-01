@@ -1,113 +1,113 @@
-###
-BA_Shittem_logistics_button = {
-	potential = {
-		always = yes
-	}
-	allow = {
-		always = yes
-	}
-	effect = {
-		from = {
-			hidden_effect = {
-				country_event = {
-					id = BA_Shittem.1002
-				}
-			}
-		}
-	}
-}
-
-BA_Shittem_communication_button = {
-	potential = {
-		always = yes
-	}
-	allow = {
-		always = yes
-	}
-	effect = {
-		from = {
-			hidden_effect = {
-				country_event = {
-					id = BA_Shittem.1003
-				}
-			}
-		}
-	}
-}
-
-BA_Shittem_entrust_button = {
-	potential = {
-		always = yes
-	}
-	allow = {
-		always = yes
-	}
-	effect = {
-		custom_tooltip = "BA_Shittem_entrust_button_tip"
-		from = {
-			hidden_effect = {
-				country_event = {
-					id = BA_Shittem.2000
-				}
-			}
-		}
-	}
-}
-
-BA_Shittem_angel24_button = {
-	potential = {
-		always = yes
-	}
-	allow = {
-		always = yes
-	}
-	effect = {
-		from = {
-			hidden_effect = {
-				country_event = {
-					id = BA_Shittem.1005
-				}
-			}
-		}
-	}
-}
-
-BA_Shittem_gray_button = {
-	potential = {
-		always = yes
-	}
-	allow = {
-		always = yes
-	}
-	effect = {
-		custom_tooltip = "BA_Shittem_gray_button_tip"
-		from = {
-			hidden_effect = {
-				if = {
-					limit = {
-						check_variable = {
-							which = BA_cheat
-							value = 5
-						}
-					}
-					country_event = {
-						id = BA_Shittem.1998
-					}
-					set_variable = {
-						which = BA_cheat
-						value = 0
-					}
-					else = {
-						change_variable = {
-							which = BA_cheat
-							value = 1
-						}
-					}
-				}
-			}
-		}
-	}
-}
+####
+#BA_Shittem_logistics_button = {
+#	potential = {
+#		always = yes
+#	}
+#	allow = {
+#		always = yes
+#	}
+#	effect = {
+#		from = {
+#			hidden_effect = {
+#				country_event = {
+#					id = BA_Shittem.1002
+#				}
+#			}
+#		}
+#	}
+#}
+#
+#BA_Shittem_communication_button = {
+#	potential = {
+#		always = yes
+#	}
+#	allow = {
+#		always = yes
+#	}
+#	effect = {
+#		from = {
+#			hidden_effect = {
+#				country_event = {
+#					id = BA_Shittem.1003
+#				}
+#			}
+#		}
+#	}
+#}
+#
+#BA_Shittem_entrust_button = {
+#	potential = {
+#		always = yes
+#	}
+#	allow = {
+#		always = yes
+#	}
+#	effect = {
+#		custom_tooltip = "BA_Shittem_entrust_button_tip"
+#		from = {
+#			hidden_effect = {
+#				country_event = {
+#					id = BA_Shittem.2000
+#				}
+#			}
+#		}
+#	}
+#}
+#
+#BA_Shittem_angel24_button = {
+#	potential = {
+#		always = yes
+#	}
+#	allow = {
+#		always = yes
+#	}
+#	effect = {
+#		from = {
+#			hidden_effect = {
+#				country_event = {
+#					id = BA_Shittem.1005
+#				}
+#			}
+#		}
+#	}
+#}
+#
+#BA_Shittem_gray_button = {
+#	potential = {
+#		always = yes
+#	}
+#	allow = {
+#		always = yes
+#	}
+#	effect = {
+#		custom_tooltip = "BA_Shittem_gray_button_tip"
+#		from = {
+#			hidden_effect = {
+#				if = {
+#					limit = {
+#						check_variable = {
+#							which = BA_cheat
+#							value = 5
+#						}
+#					}
+#					country_event = {
+#						id = BA_Shittem.1998
+#					}
+#					set_variable = {
+#						which = BA_cheat
+#						value = 0
+#					}
+#					else = {
+#						change_variable = {
+#							which = BA_cheat
+#							value = 1
+#						}
+#					}
+#				}
+#			}
+#		}
+#	}
+#}
 
 BA_Arona_missing = {
 	potential = {

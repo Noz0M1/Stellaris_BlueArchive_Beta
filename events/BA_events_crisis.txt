@@ -158,7 +158,7 @@ country_event = {
 				add_global_ship_design = NAME_BA_FE_CONSTRUCTION
 				#领袖
 				create_leader = {
-					class = admiral
+					class = commander
 					species = event_target:BA_Precursors_Aris_species
 					gender = female
 					name = NAME_Aris
@@ -687,7 +687,7 @@ country_event = {
 		#联络国刷船
 		event_target:BA_Precursor_contactor = {
 			create_leader = {
-				class = admiral
+				class = commander
 				species = event_target:BA_leader_species
 				gender = female
 				name = NAME_Shigure

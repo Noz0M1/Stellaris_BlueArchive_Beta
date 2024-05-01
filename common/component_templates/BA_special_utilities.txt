@@ -403,6 +403,7 @@ weapon_component_template = {
 		weapon_type_explosive
 		weapon_type_Kivotos
 	}
+	type = instant
 	ai_tags = {
 		weapon_role_artillery
 	}
@@ -489,6 +490,7 @@ weapon_component_template = {
 			alloys = 2
 		}
 	}
+	type = instant
 	ai_weight = {
 		weight = 1
 	}

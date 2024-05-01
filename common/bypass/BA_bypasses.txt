@@ -24,7 +24,7 @@ Dgate = {
 			fail_text = Dgate_base_fail_tooltip
 			OR = {
 				has_authority = auth_kivotos
-				has_authority = auth_ba_fe
+				has_authority = auth_kivotos_pr
 			}
 		}
 	}
