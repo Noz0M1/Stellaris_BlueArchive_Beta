@@ -1,0 +1,30 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Kasumi_Original_Drill_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/Kasumi_Original_Drill.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Kasumi_Original_DrillShape"
+			index = 0
+			texture_diffuse = "Kasumi_Original_Drill.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+	pdxmesh = {
+		name = "Kasumi_Original_Drill_Controler_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/Kasumi_Original_Drill_Controler.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Kasumi_Original_Drill_ControlerShape"
+			index = 0
+			texture_diffuse = "Kasumi_Original_Drill.dds"
+			texture_normal = "Kasumi_Original_Drill_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}

@@ -1,0 +1,111 @@
+objectTypes = {
+	pdxmesh = {
+		name = "BA_59_G_mesh"
+		file = "gfx\models\ships\ba_other\BA_59_G.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "HeavyTank_Caterpillar_MeshShape"
+			index = 0
+			texture_diffuse = "HeavyTank_Caterpillar.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "HeavyTank_Caterpillar_MeshShape"
+			index = 0
+			texture_diffuse = "HeavyTank_Caterpillar.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "HeavyTank_Caterpillar_MeshShape"
+			index = 2
+			texture_diffuse = "HeavyTank_Blackmarket.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "BA_59_G_TURRET_mesh"
+		file = "gfx\models\ships\ba_other\BA_59_G_TURRET.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "HeavyTank_Railgun_Mesh_002Shape"
+			index = 0
+			texture_diffuse = "HeavyTank_Blackmarket.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "BA_59_Kaiserpmc_mesh"
+		file = "gfx\models\ships\ba_other\BA_59_G.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "HeavyTank_Caterpillar_MeshShape"
+			index = 0
+			texture_diffuse = "HeavyTank_Caterpillar.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "HeavyTank_Caterpillar_MeshShape"
+			index = 0
+			texture_diffuse = "HeavyTank_Caterpillar.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "HeavyTank_Caterpillar_MeshShape"
+			index = 2
+			texture_diffuse = "HeavyTank_Kaiserpmc.dds"
+			texture_normal = "HeavyTank_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "BA_59_Kaiserpmc_TURRET_mesh"
+		file = "gfx\models\ships\ba_other\BA_59_G_TURRET.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "HeavyTank_Railgun_Mesh_002Shape"
+			index = 0
+			texture_diffuse = "HeavyTank_Kaiserpmc.dds"
+			texture_normal = "HeavyTank_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "Kaiserpmc_logo_mesh"
+		file = "gfx\models\ships\ba_other\Kaiserpmc_logo.mesh"
+		scale = 0.5
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "Kaiserpmc_logo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+}
+

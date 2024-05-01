@@ -1,0 +1,79 @@
+button_effect_BA_Club_Game_Development_Department = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		from = {
+			#country_event = {
+			#	id = BlueArchiveEvents.40
+			#}
+		}
+	}
+}
+
+button_effect_BA_Club_Game_Development_Department_portrait_0 = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_game_development_department_serial
+				value = 0
+			}
+		}
+	}
+	effect = {
+	}
+}
+
+button_effect_BA_Club_Game_Development_Department_portrait_1 = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_game_development_department_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+	}
+}
+
+button_effect_BA_Club_Game_Development_Department_portrait_2 = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_game_development_department_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+	}
+}
+
+button_effect_BA_Club_Game_Development_Department_portrait_3 = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_game_development_department_serial
+				value = 3
+			}
+		}
+	}
+	effect = {
+	}
+}

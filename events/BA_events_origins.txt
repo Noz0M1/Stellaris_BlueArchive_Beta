@@ -1,0 +1,2445 @@
+namespace = BA_origin
+####################
+#伊甸条约
+####################
+#母星初始化
+country_event = {
+	id = BA_origin.0001
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_origin = origin_Kivotos_Eden_treaty
+	}
+	immediate = {
+		country_event = {
+			id = BA_origin.0002
+		}
+		set_country_flag = BA_origin_Eden_treaty_engaged
+		capital_scope = {
+			clear_deposits = yes			#清除原有区块
+			add_deposit = d_black_market			#黑市区块
+			add_deposit = d_broken_Abydos_school			#阿拜多斯校区
+			add_deposit = d_broken_Millennium_school			#千年校区
+			add_deposit = d_broken_Trinity_school			#三一校区
+			add_deposit = d_broken_Gehenna_school			#格黑娜校区
+			add_deposit = d_broken_power_station			#千年发电厂
+			add_deposit = d_broken_desert_mine			#沙漠矿区
+			add_deposit = d_Greenhouse_farms			#赤冬温室农场（只是因为没有粮食区划所以拉来凑数的）
+			add_building = building_BA_Schale_office			#夏莱建筑
+			remove_building = building_commercial_zone			#清除旧建筑 下同
+			remove_building = building_research_lab_1
+			remove_building = building_bureaucratic_1
+			remove_building = building_temple
+			remove_building = building_temple
+			remove_all_districts = yes			#清除旧区划
+			add_district = BA_districts_dome
+			add_district = BA_districts_dome
+			add_district = BA_districts_campus
+			add_district = BA_districts_campus
+			add_district = BA_districts_municipality
+			add_district = BA_districts_municipality
+			add_district = BA_districts_military_factory
+			add_district = BA_districts_suburbs
+			add_district = BA_districts_suburbs
+			check_planet_employment = yes
+		}
+	}
+}
+
+#伊甸条约——新秩序
+country_event = {
+	id = BA_origin.0002
+	is_triggered_only = yes
+	title = "BA_origin.0002.name"
+	desc = "BA_origin.0002.desc"
+	picture = GFX_BA_Kivotos_highway
+	option = {
+		name = BA_origin.0002.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0003
+				days = 2
+			}
+		}
+	}
+}
+
+#伊甸条约——学生会长大选
+country_event = {
+	id = BA_origin.0003
+	is_triggered_only = yes
+	title = "BA_origin.0003.name"
+	desc = "BA_origin.0003.desc"
+	picture = GFX_BA_Kivotos_highway
+	#星野当选
+	option = {
+		name = BA_origin.0003.a
+		trigger = {
+			NOR = {
+				has_civic = civic_SI_Trinity
+				has_civic = civic_SI_Millennium
+				has_civic = civic_SI_Gehenna
+			}
+		}
+		country_event = {
+			id = BA_origin.0004
+			days = 2
+		}
+	}
+	#hina当选
+	option = {
+		name = BA_origin.0003.b
+		trigger = {
+			NOR = {
+				has_civic = civic_SI_Trinity
+				has_civic = civic_SI_Abydos
+				has_civic = civic_SI_Millennium
+			}
+		}
+		country_event = {
+			id = BA_origin.0005
+			days = 2
+		}
+	}
+	#mika当选
+	option = {
+		name = BA_origin.0003.c
+		trigger = {
+			NOR = {
+				has_civic = civic_SI_Abydos
+				has_civic = civic_SI_Millennium
+				has_civic = civic_SI_Gehenna
+			}
+		}
+		country_event = {
+			id = BA_origin.0006
+			days = 2
+		}
+	}
+	#没包人当选
+	option = {
+		name = BA_origin.0003.d
+		trigger = {
+			NOR = {
+				has_civic = civic_SI_Trinity
+				has_civic = civic_SI_Abydos
+				has_civic = civic_SI_Gehenna
+			}
+		}
+		country_event = {
+			id = BA_origin.0007
+			days = 2
+		}
+	}
+	after = {
+		hidden_effect = {
+			#重建计划
+			country_event = {
+				id = BA_origin.0008
+				days = 58
+			}
+			#安置其他候选人
+			country_event = {
+				id = BA_origin.0011
+				days = 58
+			}
+		}
+	}
+}
+
+#星野当选
+country_event = {
+	id = BA_origin.0004
+	is_triggered_only = yes
+	title = "BA_origin.0004.name"
+	desc = "BA_origin.0004.desc"
+	picture = GFX_BA_origin2
+	immediate = {
+		set_country_flag = hoshino_is_leader_flag
+		BA_Hoshino_SP = yes
+		ruler = {
+			kill_leader = {
+				show_notification = no
+			}
+		}
+		last_created_leader = {
+			remove_trait = leader_trait_hoshino_SP5
+			add_trait = leader_trait_hoshino_SP1
+			add_trait = leader_trait_hoshino_SP2
+			add_trait = leader_trait_hoshino_SP3
+		}
+		set_leader = last_created_leader
+		set_variable = {
+			which = Hoshino_daisuki			#星野好感度
+			value = 0
+		}
+	}
+	option = {
+		name = BA_origin.0004.a
+		default_hide_option = yes
+		#下一步事件
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0101
+			}
+		}
+	}
+}
+
+#日奈当选
+country_event = {
+	id = BA_origin.0005
+	is_triggered_only = yes
+	title = "BA_origin.0005.name"
+	desc = "BA_origin.0005.desc"
+	picture = GFX_BA_origin2
+	immediate = {
+		set_country_flag = hina_is_leader_flag
+		BA_Hina_SP = yes
+		ruler = {
+			kill_leader = {
+				show_notification = no
+			}
+		}
+		last_created_leader = {
+			remove_trait = leader_trait_hina_SP2
+			add_trait = leader_trait_hina_SP1
+			add_trait = leader_trait_hina_SP3
+		}
+		set_leader = last_created_leader
+	}
+	option = {
+		name = BA_origin.0005.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0201
+			}
+		}
+	}
+}
+
+#未花当选
+country_event = {
+	id = BA_origin.0006
+	is_triggered_only = yes
+	title = "BA_origin.0006.name"
+	desc = "BA_origin.0006.desc"
+	picture = GFX_BA_origin2
+	immediate = {
+		set_country_flag = mika_is_leader_flag
+		BA_Mika_SP = yes
+		ruler = {
+			kill_leader = {
+				show_notification = no
+			}
+		}
+		last_created_leader = {
+			remove_trait = leader_trait_mika_SP3
+			add_trait = leader_trait_mika_SP1
+			add_trait = leader_trait_mika_SP2
+		}
+		set_leader = last_created_leader
+	}
+	option = {
+		name = BA_origin.0006.a
+		default_hide_option = yes
+	}
+}
+
+#佑香当选
+country_event = {
+	id = BA_origin.0007
+	is_triggered_only = yes
+	title = "BA_origin.0007.name"
+	desc = "BA_origin.0007.desc"
+	picture = GFX_BA_origin2
+	immediate = {
+		set_country_flag = yuuka_is_leader_flag
+		BA_Yuuka_SP = yes
+		ruler = {
+			kill_leader = {
+				show_notification = no
+			}
+		}
+		last_created_leader = {
+			remove_trait = leader_trait_yuuka_SP3
+			add_trait = leader_trait_yuuka_SP1
+			add_trait = leader_trait_yuuka_SP2
+		}
+		set_leader = last_created_leader
+	}
+	option = {
+		name = BA_origin.0007.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0401
+			}
+		}
+	}
+}
+
+#第一步清理
+country_event = {
+	id = BA_origin.0008
+	is_triggered_only = yes
+	title = "BA_origin.0008.name"
+	desc = "BA_origin.0008.desc"
+	picture = GFX_BA_Kivotos_highway
+	immediate = {
+		switch = {
+			trigger = has_country_flag
+			hoshino_is_leader_flag = {
+				capital_scope = {
+					remove_deposit = d_broken_Abydos_school
+					add_deposit = d_Abydos_school
+					set_planet_flag = Abydos_was_fixed_flag
+				}
+			}
+			hina_is_leader_flag = {
+				capital_scope = {
+					remove_deposit = d_broken_Gehenna_school
+					add_deposit = d_Gehenna_school
+					set_planet_flag = Gehenna_was_fixed_flag
+				}
+			}
+			mika_is_leader_flag = {
+				capital_scope = {
+					remove_deposit = d_broken_Trinity_school
+					add_deposit = d_Trinity_school
+					set_planet_flag = Trinity_was_fixed_flag
+				}
+			}
+			yuuka_is_leader_flag = {
+				capital_scope = {
+					remove_deposit = d_broken_Millennium_school
+					add_deposit = d_Millennium_school
+					set_Planet_flag = Millennium_was_fixed_flag
+				}
+			}
+		}
+	}
+	option = {
+		name = BA_origin.0008.a
+		default_hide_option = yes
+		give_technology = {
+			tech = tech_BA_institute_of_reconstruction
+			message = no
+		}
+	}
+}
+
+#清理完成
+country_event = {
+	id = BA_origin.0009
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		#四个学校全部修好
+		capital_scope = {
+			if = {
+				limit = {
+					has_planet_flag = Millennium_was_fixed_flag
+					has_planet_flag = Trinity_was_fixed_flag
+					has_planet_flag = Gehenna_was_fixed_flag
+					has_planet_flag = Abydos_was_fixed_flag
+				}
+				prev = {
+					country_event = {
+						id = BA_origin.0010
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0010
+	is_triggered_only = yes
+	title = "BA_origin.0010.name"
+	desc = "BA_origin.0010.desc"
+	picture = GFX_BA_Kivotos_highway
+	immediate = {
+		remove_country_flag = BA_origin_Eden_treaty_engaged
+		set_country_flag = BA_origin_Eden_treaty_finished
+		set_country_flag = BA_Project_Cradle_ready		#项目
+	}
+	option = {
+		name = BA_origin.0010.a
+		default_hide_option = yes
+		add_research_option = "tech_BA_Shittem_starting"
+		#add_research_option = "tech_BA_culture_Federal"
+		# country_event = {
+		# 	id = BA_ape.0001
+		# 	days = 180
+		# } 
+		#180天后触发光环科技路线 （改为满足条件mtth触发）
+	}
+}
+
+#设置其他候选人
+country_event = {
+	id = BA_origin.0011
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = hoshino_is_leader_flag
+				}
+			}
+			event_target:BA_Shittem_country = {
+				set_country_flag = BA_stored_SP_Hoshino_@root
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = hina_is_leader_flag
+				}
+			}
+			event_target:BA_Shittem_country = {
+				set_country_flag = BA_stored_SP_Hina_@root
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = mika_is_leader_flag
+				}
+			}
+			event_target:BA_Shittem_country = {
+				set_country_flag = BA_stored_SP_Mika_@root
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = yuuka_is_leader_flag
+				}
+			}
+			event_target:BA_Shittem_country = {
+				set_country_flag = BA_stored_SP_Yuuka_@root
+			}
+		}
+	}
+}
+
+###### 星野
+#当选
+country_event = {
+	id = BA_origin.0101
+	is_triggered_only = yes
+	title = "BA_origin.0101.name"
+	desc = "BA_origin.0101.desc"
+	picture = GFX_BA_The_legacy_of_the_dream1
+	option = {
+		name = BA_origin.0101.a
+		default_hide_option = yes
+		country_event = {
+			id = BA_origin.0102
+		}
+	}
+	option = {
+		name = BA_origin.0101.b
+		default_hide_option = yes
+		country_event = {
+			id = BA_origin.0102
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0102
+	is_triggered_only = yes
+	title = "BA_origin.0102.name"
+	desc = "BA_origin.0102.desc"
+	picture = GFX_BA_origin3
+	option = {
+		name = BA_origin.0102.a
+		default_hide_option = yes
+	}
+}
+
+#光环研究后续
+country_event = {
+	id = BA_origin.0103
+	is_triggered_only = yes
+	title = "BA_origin.0103.name"
+	desc = "BA_origin.0103.desc"
+	picture = GFX_BA_Kivotos_highway
+	option = {
+		name = BA_origin.0103.a
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0104
+				days = 30
+			}
+		}
+	}
+}
+
+#蓝鲸之梦
+country_event = {
+	id = BA_origin.0104
+	is_triggered_only = yes
+	title = "BA_origin.0104.name"
+	desc = "BA_origin.0104.desc"
+	picture = GFX_BA_dream_of_bule_wheel01
+	option = {
+		name = BA_origin.0104.a
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0105
+			}
+		}
+	}
+}
+
+#在奇迹的出发点
+country_event = {
+	id = BA_origin.0105
+	is_triggered_only = yes
+	title = "BA_origin.0105.name"
+	desc = "BA_origin.0105.desc"
+	picture = GFX_BA_origin3
+	option = {
+		name = BA_origin.0105.a
+		hidden_effect = {
+			enable_special_project = {
+				name = BA_dream_of_bule_wheel01
+			}
+		}
+	}
+}
+
+#光环解析
+country_event = {
+	id = BA_origin.0106
+	is_triggered_only = yes
+	title = "BA_origin.0106.name"
+	desc = "BA_origin.0106.desc"
+	picture = GFX_BA_dream_of_bule_wheel02
+	option = {
+		name = BA_origin.0106.a
+		hidden_effect = {
+			enable_special_project = {
+				name = BA_dream_of_bule_wheel02
+			}
+		}
+	}
+}
+
+#空白光环
+country_event = {
+	id = BA_origin.0107
+	is_triggered_only = yes
+	title = "BA_origin.0107.name"
+	desc = "BA_origin.0107.desc"
+	picture = GFX_BA_dream_of_bule_wheel02
+	option = {
+		name = BA_origin.0107.a
+		hidden_effect = {
+			enable_special_project = {
+				name = BA_dream_of_bule_wheel03
+			}
+		}
+	}
+}
+
+#归来
+country_event = {
+	id = BA_origin.0108
+	is_triggered_only = yes
+	title = "BA_origin.0108.name"
+	desc = "BA_origin.0108.desc"
+	picture = GFX_BA_dream_of_bule_wheel02
+	option = {
+		name = BA_origin.0108.a
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0109
+				days = 30
+			}
+		}
+	}
+}
+
+#后日谈
+country_event = {
+	id = BA_origin.0109
+	is_triggered_only = yes
+	title = "BA_origin.0109.name"
+	desc = "BA_origin.0109.desc"
+	picture = GFX_BA_dream_of_bule_wheel03
+	option = {
+		name = BA_origin.0109.a
+		hidden_effect = {
+			set_country_flag = dream_of_blue_wheel_done
+			ruler = {
+				remove_trait = leader_trait_hoshino_SP3
+				add_trait = leader_trait_hoshino_SP4
+			}
+		}
+	}
+}
+
+###### 日奈
+country_event = {
+	id = BA_origin.0201
+	is_triggered_only = yes
+	title = "BA_origin.0201.name"
+	desc = "BA_origin.0201.desc"
+	picture = GFX_BA_hina1
+	option = {
+		name = BA_origin.0201.a
+		default_hide_option = yes
+	}
+}
+
+###### 未花
+###### 优香
+country_event = {
+	id = BA_origin.0401
+	is_triggered_only = yes
+	title = "BA_origin.0401.name"
+	desc = "BA_origin.0401.desc"
+	picture = GFX_BA_yuuka_no_bag
+	option = {
+		name = BA_origin.0401.a
+		default_hide_option = yes
+	}
+}
+
+####################
+#致被遗忘的众神
+####################
+###### 主事件链 ######
+#第一天 加上起始15年的buff，同时移除区划和建筑加上新的，并触发其他定时事件
+country_event = {
+	id = BA_origin.1001
+	is_triggered_only = yes
+	title = BA_origin.1001.title
+	desc = BA_origin.1001.desc
+	picture = GFX_BA_Hidden_lab
+	trigger = {
+		has_origin = origin_Kivotos_Kyrie
+	}
+	immediate = {
+		set_country_flag = BA_origin_Kyrie_engaged
+		capital_scope = {
+			###
+			set_planet_flag = BA_Kyrie_target_@root
+			###
+			clear_deposits = yes			#清除原有区块
+			add_deposit = d_Arius_Cathedral_ruined			#大圣堂
+			add_deposit = d_broken_Abydos_school			#_ruined			#阿拜多斯校区
+			add_deposit = d_broken_Millennium_school			#_ruined			#千年校区
+			add_deposit = d_broken_Trinity_school			#_ruined			#三一校区
+			add_deposit = d_broken_Gehenna_school			#_ruined			#格黑娜校区
+			add_deposit = d_broken_power_station			#_ruined			#千年发电厂
+			add_deposit = d_broken_desert_mine			#_ruined			#沙漠矿区
+			add_deposit = d_Greenhouse_farms			#_ruined			#农场
+			remove_building = building_commercial_zone			#清除旧建筑 下同
+			remove_building = building_research_lab_1
+			remove_building = building_bureaucratic_1
+			remove_building = building_temple
+			remove_building = building_temple
+			remove_all_districts = yes			#清除旧区划
+			add_district = BA_districts_shelter
+			add_district = BA_districts_shelter
+			add_district = BA_districts_remining_area
+			add_district = BA_districts_remining_area
+			add_district = BA_districts_supply_station
+			add_district = BA_districts_special_factory
+			add_building = building_BA_Schale_office			#夏莱建筑
+			#清除5人口
+			while = {
+				count = 5
+				random_owned_pop = {
+					kill_pop = yes
+				}
+			}
+		}
+		### 创建领袖
+		inline_script = {
+			script = Leader/SP_unlock
+			Leader = Atsuko
+		}
+		inline_script = {
+			script = Leader/SP_unlock
+			Leader = Saori
+		}
+		#event_target:BA_Shittem_country = {
+		#	set_country_flag = BA_stored_SP_Saori_@root
+		#}
+	}
+	option = {
+		name = BA_origin.1001.next
+		# begin_event_chain = {
+		# 	event_chain = BA_Kyrie
+		# }
+		add_resource = {
+			energy = 300
+			alloys = 200
+			consumer_goods = 300
+		}
+		capital_scope = {
+			add_modifier = {
+				modifier = modifier_BA_Agnus_Dei
+			}
+		}
+		hidden_effect = {
+			#立即触发，联系Arona
+			give_technology = {
+				tech = tech_BA_Shittem_starting
+				message = no
+			}
+			country_event = {
+				id = BA_origin.1002
+			}
+			#十年后，开始解除威胁
+			country_event = {
+				id = BA_origin.1201
+				days = 360				#0
+			}
+		}
+	}
+}
+
+#之后 联系Arona
+country_event = {
+	id = BA_origin.1002
+	is_triggered_only = yes
+	title = BA_origin.1002.name
+	desc = BA_origin.1002.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0031
+		room = "BA_Shittem_room"
+	}
+	immediate = {
+		set_country_flag = BA_Arona_Established
+		event_target:BA_Shittem_country = {
+			establish_communications_no_message = root
+		}
+	}
+	option = {
+		name = BA_origin.1002.a
+		start_situation = {
+			type = situation_Kyrie_ruin_research
+			target = capital_scope
+		}
+	}
+}
+
+###### 废墟研究 ######
+### 局势控制：废墟研究
+#1 准备研究废墟（等待）-阶段1
+#2 委托K01（研究废墟混成化研究科技）-阶段2开头锁定
+#3 准备研究废墟采矿（等待）-阶段2
+#4 准备学园废墟清理，同时研究废墟采矿科技（等待）-阶段3
+#5 开始学园废墟清理，同时准备清理重建（等待）-阶段4
+#6 停止随机废墟生成，并等待学院废墟清理 -阶段5唯一的一点作用 描述同5
+#7 清理重建准备完成，给清理重建科技研究选项，结束局势 -完成
+###
+#进入2阶段，锁定局势，获取青辉石制造石，提醒前往委托页
+country_event = {
+	id = BA_origin.1003
+	title = BA_origin.1003.name
+	desc = BA_origin.1003.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	#fire_only_once = yes
+	picture_event_data = {
+		portrait = Arona0022
+		room = "BA_Shittem_room"
+	}
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = BA_Kyrie_commmission_01_allow
+	}
+	after = {
+		add_resource = {
+			sr_pyroxenes = 25
+			sr_keystone = 50
+		}
+	}
+	option = {
+		name = BA_origin.1003.go
+		country_event = {
+			id = BA_Shittem.2000
+		}
+	}
+	option = {
+		name = BA_origin.1003.cancel
+		trigger = {
+			always = no			# TODO：tip待补 暂时隐藏
+		}
+	}
+}
+
+#研究科技完成，解锁局势，建造混成化实验室
+country_event = {
+	id = BA_origin.1004
+	is_triggered_only = yes
+	#fire_only_once = yes
+	title = BA_origin.1004.title
+	desc = BA_origin.1004.desc
+	picture = GFX_BA_Ruined_street
+	trigger = {
+		last_increased_tech = tech_BA_ruins_research
+		any_situation = {
+			is_situation_type = situation_Kyrie_ruin_research
+		}
+	}
+	option = {
+		name = BA_origin.1004.next
+		set_country_flag = BA_Kyrie_commmission_01_finished
+		#局势解锁
+		random_situation = {
+			limit = {
+				is_situation_type = situation_Kyrie_ruin_research
+			}
+			set_situation_locked = no
+		}
+		capital_scope = {
+			add_building = building_BA_mixed_ruins_lab
+		}
+	}
+}
+
+#进入3阶段，给废墟采矿研究选项
+country_event = {
+	id = BA_origin.1005
+	is_triggered_only = yes
+	title = BA_origin.1005.title
+	desc = BA_origin.1005.desc
+	picture = GFX_BA_Hidden_lab
+	trigger = {
+		#限定阿里乌斯起源
+		has_origin = origin_Kivotos_Kyrie
+	}
+	option = {
+		name = BA_origin.1005.next
+		add_research_option = tech_BA_ruins_mining
+	}
+}
+
+#进入4阶段，给学园废墟清理科技
+country_event = {
+	id = BA_origin.1006
+	is_triggered_only = yes
+	title = BA_origin.1006.title
+	desc = BA_origin.1006.desc
+	picture = GFX_evt_relic_world_building
+	option = {
+		name = BA_origin.1006.next
+		add_research_option = tech_BA_institute_of_reconstruction
+	}
+}
+
+#进入5阶段，通告废墟停止生成
+country_event = {
+	id = BA_origin.1007
+	is_triggered_only = yes
+	title = BA_origin.1007.name
+	desc = BA_origin.1007.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0031
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_origin.1007.a
+	}
+}
+
+#完成，给清理重建研究选项
+country_event = {
+	id = BA_origin.1008
+	is_triggered_only = yes
+	title = BA_origin.1008.name
+	desc = BA_origin.1008.desc
+	picture = GFX_evt_relic_world_building
+	option = {
+		name = BA_origin.1008.next
+		add_research_option = tech_BA_Arius_planet_rebuild
+	}
+}
+
+###
+#on_monthly触发器
+situation_event = {
+	id = BA_origin.1030
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		target = {
+			random_list = {
+				8 = {
+					planet_event = {
+						id = BA_origin.1033
+					}
+				}
+				92 = {
+				}
+			}
+		}
+	}
+}
+
+#-研究废墟采矿科技2月后，开始随机生成废墟
+planet_event = {
+	id = BA_origin.1031
+	is_triggered_only = yes
+	title = BA_origin.1031.title
+	desc = BA_origin.1031.desc
+	picture = GFX_BA_Arius_ruins
+	trigger = {
+		is_planet_class = pc_BA_ruined_planet
+		NOT = {
+			has_planet_flag = BA_ruins_happening
+		}
+	}
+	immediate = {
+		set_planet_flag = BA_ruins_happening
+	}
+	option = {
+		name = BA_origin.1031.next
+		add_deposit = d_fresh_ruins
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = BA_origin.1032
+				}
+			}
+		}
+	}
+}
+
+#- ↑ Arona的提示 ↑
+country_event = {
+	id = BA_origin.1032
+	is_triggered_only = yes
+	title = BA_origin.1032.title
+	desc = BA_origin.1032.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0031
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_origin.1032.next
+	}
+}
+
+#- 随机生成一个废墟
+planet_event = {
+	id = BA_origin.1033
+	is_triggered_only = yes
+	title = BA_origin.1033.title
+	desc = BA_origin.1033.desc
+	picture = GFX_BA_Arius_ruins
+	trigger = {
+		is_planet_class = pc_BA_ruined_planet
+		has_planet_flag = BA_ruins_happening
+		owner = {
+			NOT = {
+				has_country_flag = BA_Kyrie_Arona_will_help_you
+			}
+		}
+	}
+	option = {
+		name = BA_origin.1033.next
+		add_deposit = d_fresh_ruins
+	}
+}
+
+#-随机废墟清理完成
+country_event = {
+	id = BA_origin.1034
+	is_triggered_only = yes
+	title = BA_origin.1034.title
+	desc = BA_origin.1034.desc
+	picture = GFX_BA_Ruined_street
+	immediate = {
+		random_list = {
+			50 = {
+				set_country_flag = BA_origin_ruins_minerals
+			}
+			30 = {
+				set_country_flag = BA_origin_ruins_energy
+			}
+			6 = {
+				set_country_flag = BA_origin_ruins_volatile_motes
+			}
+			6 = {
+				set_country_flag = BA_origin_ruins_exotic_gases
+			}
+			6 = {
+				set_country_flag = BA_origin_ruins_rare_crystals
+			}
+			2 = {
+				set_country_flag = BA_origin_ruins_dark_matter
+			}
+		}
+	}
+	option = {
+		name = BA_origin.1034.minerals_tips
+		trigger = {
+			has_country_flag = BA_origin_ruins_minerals
+		}
+		add_resource = {
+			minerals = 250
+			alloys = 100
+		}
+	}
+	option = {
+		name = BA_origin.1034.energy_tips
+		trigger = {
+			has_country_flag = BA_origin_ruins_energy
+		}
+		add_resource = {
+			energy = 600
+		}
+	}
+	option = {
+		name = BA_origin.1034.rare_tips
+		trigger = {
+			has_country_flag = BA_origin_ruins_volatile_motes
+		}
+		add_resource = {
+			volatile_motes = 30
+		}
+	}
+	option = {
+		name = BA_origin.1034.rare_tips
+		trigger = {
+			has_country_flag = BA_origin_ruins_exotic_gases
+		}
+		add_resource = {
+			exotic_gases = 30
+		}
+	}
+	option = {
+		name = BA_origin.1034.rare_tips
+		trigger = {
+			has_country_flag = BA_origin_ruins_rare_crystals
+		}
+		add_resource = {
+			rare_crystals = 30
+		}
+	}
+	option = {
+		name = BA_origin.1034.dark_matter_tips
+		trigger = {
+			has_country_flag = BA_origin_ruins_dark_matter
+		}
+		add_resource = {
+			sr_dark_matter = 10
+		}
+	}
+	option = {
+		name = BA_origin.1034.nothing
+		trigger = {
+			NOR = {
+				has_country_flag = BA_origin_ruins_minerals
+				has_country_flag = BA_origin_ruins_energy
+				has_country_flag = BA_origin_ruins_volatile_motes
+				has_country_flag = BA_origin_ruins_exotic_gases
+				has_country_flag = BA_origin_ruins_rare_crystals
+				has_country_flag = BA_origin_ruins_dark_matter
+			}
+		}
+	}
+	after = {
+		hidden_effect = {
+			remove_country_flag = BA_origin_ruins_minerals
+			remove_country_flag = BA_origin_ruins_energy
+			remove_country_flag = BA_origin_ruins_volatile_motes
+			remove_country_flag = BA_origin_ruins_exotic_gases
+			remove_country_flag = BA_origin_ruins_rare_crystals
+			remove_country_flag = BA_origin_ruins_dark_matter
+		}
+	}
+}
+
+#2阶段~4阶段，随机获得一些研究选项
+###### 清理事件 ######
+### 局势控制：清除废墟
+#0 清理重建科技研究完成后，开启这个局势
+#1 准备工作 -阶段1
+#2 线路选择分支 -阶段2开头锁定
+#3 清理 （暂时弱化入侵陆军） -阶段2
+#4 行星决议里提交资源开始重建 -阶段3开头锁定
+#5 重建和解除威胁都完成，转化为学园都市星球，收尾工作 -阶段3
+#6 完成重建 -完成
+###
+#清理重建研究完成，开始局势
+country_event = {
+	id = BA_origin.1101
+	is_triggered_only = yes
+	title = BA_origin.1101.title
+	desc = BA_origin.1101.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0031
+		room = "BA_Shittem_room"
+	}
+	trigger = {
+		last_increased_tech = tech_BA_Arius_planet_rebuild
+	}
+	option = {
+		name = BA_origin.1101.next
+		random_owned_planet = {
+			limit = {
+				has_planet_flag = BA_Kyrie_target_@root
+			}
+			root = {
+				start_situation = {
+					type = situation_Kyrie_planet_cleaning
+					target = prev
+				}
+			}
+		}
+	}
+}
+
+#准备完毕开始清扫（阶段2）
+planet_event = {
+	id = BA_origin.1102
+	is_triggered_only = yes
+	title = BA_origin.1102.title
+	desc = BA_origin.1102.desc
+	picture = GFX_BA_Ruined_street
+	option = {
+		name = BA_origin.1102.next
+		add_deposit = d_cleaning_machine_center
+		add_modifier = {
+			modifier = modifier_BA_Arius_cleaning
+		}
+	}
+}
+
+#清扫完毕
+planet_event = {
+	id = BA_origin.1103
+	is_triggered_only = yes
+	title = BA_origin.1103.title
+	desc = BA_origin.1103.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0031
+		room = "BA_Shittem_room"
+	}
+	immediate = {
+		set_planet_flag = BA_Kyrie_clean_finished
+		remove_modifier = modifier_BA_Arius_cleaning
+	}
+	option = {
+		name = BA_origin.1103.next
+	}
+}
+
+#重建完成
+planet_event = {
+	id = BA_origin.1104
+	is_triggered_only = yes
+	title = BA_origin.1104.title
+	desc = BA_origin.1104.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0031
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_origin.1104.next
+	}
+}
+
+###### 威胁事件 ######
+### 局势控制：解除威胁
+#只有一个阶段。详见设计文档。
+#陆军入侵
+planet_event = {
+	id = BA_origin.1200
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		#检测有无敌人国家，没有则创建
+		if = {
+			limit = {
+				NOT = {
+					exists = event_target:BA_origin_enemy_species
+				}
+			}
+			create_species = {
+				name = NAME_BA_origin_enemy_species
+				class = AI
+				portrait = random
+				homeworld = root
+				effect = {
+					save_global_event_target_as = BA_origin_enemy_species
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					exists = event_target:BA_origin_enemy_country
+				}
+			}
+			create_country = {
+				name = "NAME_BA_origin_enemy_country"
+				type = faction
+				auto_delete = no
+				flag = {
+					icon = {
+						category = "ba"
+						file = "ba_flags_08.dds"
+					}
+					background = {
+						category = "backgrounds"
+						file = "double_triangles.dds"
+					}
+					colors = {
+						"intense_blue"
+						"satin_burgundy"
+						"null"
+						"null"
+					}
+				}
+				effect = {
+					set_country_flag = BA_origin_enemy_country
+					every_playable_country = {
+						establish_communications_no_message = PREV
+					}
+					save_global_event_target_as = BA_origin_enemy_country
+				}
+			}
+		}
+		#刷陆军和资源残骸
+		if = {
+			limit = {
+				check_variable = {
+					which = situation_Kyrie_engage_enemy_level
+					value = 4
+				}
+			}
+			while = {
+				count = situation_Kyrie_engage_enemy_amount
+				create_army = {
+					name = NAME_BA_origin_enemy
+					owner = event_target:BA_origin_enemy_country
+					type = BA_Deca_army_4
+					species = event_target:BA_origin_enemy_species
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = situation_Kyrie_engage_enemy_level
+					value = 3
+				}
+			}
+			while = {
+				count = situation_Kyrie_engage_enemy_amount
+				create_army = {
+					name = NAME_BA_origin_enemy
+					owner = event_target:BA_origin_enemy_country
+					type = BA_Deca_army_3
+					species = event_target:BA_origin_enemy_species
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = situation_Kyrie_engage_enemy_level
+					value = 2
+				}
+			}
+			while = {
+				count = situation_Kyrie_engage_enemy_amount
+				create_army = {
+					name = NAME_BA_origin_enemy
+					owner = event_target:BA_origin_enemy_country
+					type = BA_Deca_army_2
+					species = event_target:BA_origin_enemy_species
+				}
+			}
+		}
+		else = {
+			while = {
+				count = situation_Kyrie_engage_enemy_amount
+				create_army = {
+					name = NAME_BA_origin_enemy
+					owner = event_target:BA_origin_enemy_country
+					type = BA_Deca_army_1
+					species = event_target:BA_origin_enemy_species
+				}
+			}
+		}
+		change_variable = {
+			which = situation_Kyrie_engage_enemy_amount
+			value = 1
+		}
+		#add_deposit = d_enemy_debris
+	}
+}
+
+#开始后10年，刷1，触发局势
+country_event = {
+	id = BA_origin.1201
+	is_triggered_only = yes
+	title = BA_origin.1201.title
+	desc = BA_origin.1201.desc
+	picture = GFX_BA_Abydos_vs_Binah
+	option = {
+		name = BA_origin.1201.next
+		random_owned_planet = {
+			limit = {
+				has_planet_flag = BA_Kyrie_target_@root
+			}
+			root = {
+				start_situation = {
+					type = situation_Kyrie_engage_enemy
+					target = prev
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.1202
+			}
+		}
+	}
+}
+
+#-↑接上，Arona
+country_event = {
+	id = BA_origin.1202
+	is_triggered_only = yes
+	title = BA_origin.1202.title
+	desc = BA_origin.1202.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0031
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_origin.1202.next
+	}
+}
+
+#第二阶段提示 
+country_event = {
+	id = BA_origin.1203
+	is_triggered_only = yes
+	title = BA_origin.1203.title
+	desc = BA_origin.1203.desc
+	picture = GFX_BA_Abydos_vs_Binah
+	option = {
+		name = BA_origin.1203.next
+		custom_tooltip = BA_origin.1203.tip
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.1204
+			}
+		}
+	}
+}
+
+#-↑接上，Arona
+country_event = {
+	id = BA_origin.1204
+	is_triggered_only = yes
+	title = BA_origin.1204.title
+	desc = BA_origin.1204.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0031
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_origin.1204.next
+	}
+}
+
+#第三阶段提示
+country_event = {
+	id = BA_origin.1205
+	is_triggered_only = yes
+	title = BA_origin.1205.title
+	desc = BA_origin.1205.desc
+	picture = GFX_BA_Abydos_vs_Binah
+	option = {
+		name = BA_origin.1205.next
+		custom_tooltip = BA_origin.1205.tip
+	}
+}
+
+#第四阶段提示
+country_event = {
+	id = BA_origin.1206
+	is_triggered_only = yes
+	title = BA_origin.1206.title
+	desc = BA_origin.1206.desc
+	picture = GFX_BA_Abydos_vs_Binah
+	option = {
+		name = BA_origin.1206.next
+		custom_tooltip = BA_origin.1206.tip
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.1207
+			}
+		}
+	}
+}
+
+#-↑接上，Arona
+country_event = {
+	id = BA_origin.1207
+	is_triggered_only = yes
+	title = BA_origin.1207.title
+	desc = BA_origin.1207.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0031
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_origin.1207.next
+	}
+}
+
+### 刷陆军
+#局势触发器
+situation_event = {
+	id = BA_origin.1210
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				has_situation_flag = BA_enemy_met
+			}
+			target = {
+				planet_event = {
+					id = BA_origin.1212
+				}
+			}
+		}
+		else = {
+			target = {
+				planet_event = {
+					id = BA_origin.1211
+				}
+			}
+			set_situation_flag = BA_enemy_met
+		}
+	}
+}
+
+#首次刷陆军
+planet_event = {
+	id = BA_origin.1211
+	is_triggered_only = yes
+	title = BA_origin.1211.title
+	desc = BA_origin.1211.desc
+	picture = GFX_BA_Abydos_vs_Binah
+	trigger = {
+		NOT = {
+			has_planet_flag = BA_enemy_just_defeated
+		}
+	}
+	immediate = {
+		set_timed_planet_flag = {
+			flag = BA_enemy_just_defeated
+			days = 180
+		}
+		planet_event = {
+			id = BA_origin.1200
+		}
+	}
+	option = {
+		name = BA_origin.1211.next
+	}
+}
+
+#后续刷陆军
+planet_event = {
+	id = BA_origin.1212
+	is_triggered_only = yes
+	title = BA_origin.1212.title
+	desc = BA_origin.1212.desc
+	picture = GFX_BA_Abydos_vs_Binah
+	trigger = {
+		NOT = {
+			has_planet_flag = BA_enemy_just_defeated
+		}
+	}
+	immediate = {
+		set_timed_planet_flag = {
+			flag = BA_enemy_just_defeated
+			days = 180
+		}
+		planet_event = {
+			id = BA_origin.1200
+		}
+	}
+	option = {
+		name = BA_origin.1212.next
+	}
+}
+
+### 项目完成
+#完成1
+planet_event = {
+	id = BA_origin.1213
+	is_triggered_only = yes
+	title = BA_origin.1213.title
+	desc = BA_origin.1213.desc
+	picture = GFX_evt_huge_monument
+	immediate = {
+		remove_modifier = modifier_BA_Kyrie_defence_1
+		remove_modifier = modifier_BA_Kyrie_defence_2
+		remove_modifier = modifier_BA_Kyrie_defence_3
+	}
+	option = {
+		name = BA_origin.1213.next
+		add_modifier = {
+			modifier = modifier_BA_Kyrie_defence_1
+		}
+	}
+}
+
+#完成2
+planet_event = {
+	id = BA_origin.1214
+	is_triggered_only = yes
+	title = BA_origin.1214.title
+	desc = BA_origin.1214.desc
+	picture = GFX_evt_huge_monument
+	immediate = {
+		remove_modifier = modifier_BA_Kyrie_defence_1
+		remove_modifier = modifier_BA_Kyrie_defence_2
+		remove_modifier = modifier_BA_Kyrie_defence_3
+	}
+	option = {
+		name = BA_origin.1214.next
+		add_modifier = {
+			modifier = modifier_BA_Kyrie_defence_2
+		}
+	}
+}
+
+#完成3
+planet_event = {
+	id = BA_origin.1215
+	is_triggered_only = yes
+	title = BA_origin.1215.title
+	desc = BA_origin.1215.desc
+	picture = GFX_evt_huge_monument
+	immediate = {
+		remove_modifier = modifier_BA_Kyrie_defence_1
+		remove_modifier = modifier_BA_Kyrie_defence_2
+		remove_modifier = modifier_BA_Kyrie_defence_3
+	}
+	option = {
+		name = BA_origin.1215.next
+		add_modifier = {
+			modifier = modifier_BA_Kyrie_defence_3
+		}
+	}
+}
+
+#完成4
+planet_event = {
+	id = BA_origin.1216
+	is_triggered_only = yes
+	title = BA_origin.1216.title
+	desc = BA_origin.1216.desc
+	picture = GFX_evt_huge_monument
+	immediate = {
+		remove_modifier = modifier_BA_Kyrie_defence_1
+		remove_modifier = modifier_BA_Kyrie_defence_2
+		remove_modifier = modifier_BA_Kyrie_defence_3
+	}
+	option = {
+		name = BA_origin.1216.next
+		owner = {
+			random_situation = {
+				limit = {
+					is_situation_type = situation_Kyrie_engage_enemy
+				}
+				abort_situation = this
+			}
+		}
+	}
+}
+
+### 爆金币
+#触发器
+country_event = {
+	id = BA_origin.1220
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_country_flag = BA_origin_enemy_country
+		from = {
+			has_origin = origin_Kivotos_Kyrie
+		}
+		fromfrom = {
+			has_planet_flag = BA_Kyrie_target_@owner
+		}
+	}
+	immediate = {
+		fromfrom = {
+			planet_event = {
+				id = BA_origin.1221
+			}
+		}
+	}
+}
+
+#击退通知
+planet_event = {
+	id = BA_origin.1221
+	is_triggered_only = yes
+	title = BA_origin.1221.title
+	desc = BA_origin.1221.desc
+	picture = GFX_BA_Abydos_vs_Binah
+	immediate = {
+		set_variable = {
+			which = situation_Kyrie_engage_enemy_bonus
+			value = 1
+		}
+		multiply_variable = {
+			which = situation_Kyrie_engage_enemy_bonus
+			value = situation_Kyrie_engage_enemy_level
+		}
+		multiply_variable = {
+			which = situation_Kyrie_engage_enemy_bonus
+			value = situation_Kyrie_engage_enemy_amount
+		}
+	}
+	option = {
+		name = BA_origin.1221.next
+		owner = {
+			add_resource = {
+				minerals = 100
+				alloys = 20
+				volatile_motes = 1
+				exotic_gases = 1
+				rare_crystals = 1
+				multiplier = prev.situation_Kyrie_engage_enemy_bonus
+			}
+		}
+	}
+}
+
+###### 遗迹事件 ######
+#重建圣殿
+planet_event = {
+	id = BA_origin.1301
+	is_triggered_only = yes
+	title = BA_origin.1301.title
+	desc = BA_origin.1301.desc
+	picture = GFX_BA_Arius_ruins
+	trigger = {
+		has_planet_flag = BA_Kyrie_target_@owner
+	}
+	immediate = {
+		set_planet_flag = BA_Kyrie_centre_cleared
+	}
+	option = {
+		name = BA_origin.1301.next
+		add_deposit = d_Arius_site_park		#添加遗址公园
+		owner = {
+			add_random_research_option = {
+				add_progress = 0.4
+				area = society
+			}
+		}
+	}
+	#
+	after = {
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = BA_origin.1320
+				}
+			}
+		}
+	}
+}
+
+#重建阿拜多斯
+planet_event = {
+	id = BA_origin.1302
+	is_triggered_only = yes
+	title = BA_origin.1302.title
+	desc = BA_origin.1302.desc
+	picture = GFX_BA_Shield_of_Hoshino
+	trigger = {
+		has_planet_flag = BA_Kyrie_target_@owner
+	}
+	immediate = {
+		set_planet_flag = BA_Kyrie_Abydos_cleared
+	}
+	option = {
+		name = BA_origin.1302.next
+		owner = {
+			add_resource = {
+				minerals = 500
+				alloys = 300
+			}
+			add_random_research_option = {
+				add_progress = 0.25
+				area = physics
+			}
+			add_random_research_option = {
+				add_progress = 0.25
+				area = society
+			}
+		}
+	}
+	#
+	after = {
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = BA_origin.1320
+				}
+			}
+		}
+	}
+}
+
+#重建千年
+planet_event = {
+	id = BA_origin.1303
+	is_triggered_only = yes
+	title = BA_origin.1303.title
+	desc = BA_origin.1303.desc
+	picture = GFX_BA_Site_of_Aris
+	trigger = {
+		has_planet_flag = BA_Kyrie_target_@owner
+	}
+	immediate = {
+		set_planet_flag = BA_Kyrie_Millennium_cleared
+		owner = {
+			set_country_flag = BA_Kyrie_commmission_02_allow
+		}
+	}
+	option = {
+		name = BA_origin.1303.next
+		owner = {
+			add_random_research_option = {
+				add_progress = 0.4
+				area = physics
+			}
+			add_random_research_option = {
+				add_progress = 0.4
+				area = society
+			}
+			give_technology = {
+				tech = tech_BA_legacy_of_millennium
+			}
+			add_monthly_resource_mult = {
+				resource = physics_research
+				value = 48
+				min = 6000
+				max = 18000
+			}
+			add_monthly_resource_mult = {
+				resource = engineering_research
+				value = 48
+				min = 6000
+				max = 18000
+			}
+		}
+	}
+	#
+	after = {
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = BA_origin.1320
+				}
+			}
+		}
+	}
+}
+
+#重建圣三一
+planet_event = {
+	id = BA_origin.1304
+	is_triggered_only = yes
+	title = BA_origin.1304.title
+	desc = BA_origin.1304.desc
+	picture = GFX_BA_Old_Cathedral
+	trigger = {
+		has_planet_flag = BA_Kyrie_target_@owner
+	}
+	immediate = {
+		set_planet_flag = BA_Kyrie_Trinity_cleared
+	}
+	option = {
+		name = BA_origin.1304.protect
+		trigger = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 100
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -100
+			}
+		}
+		add_deposit = d_Trinity_National_Museum
+	}
+	option = {
+		name = BA_origin.1304.destroy
+		owner = {
+			add_resource = {
+				minerals = 300
+				sr_pyroxenes = 200
+			}
+			add_random_research_option = {
+				add_progress = 0.4
+				area = society
+			}
+		}
+	}
+	#
+	after = {
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = BA_origin.1320
+				}
+			}
+		}
+	}
+}
+
+#重建欣嫰谷
+planet_event = {
+	id = BA_origin.1305
+	is_triggered_only = yes
+	title = BA_origin.1305.title
+	desc = BA_origin.1305.desc
+	picture = GFX_BA_New_Cathedral
+	trigger = {
+		has_planet_flag = BA_Kyrie_target_@owner
+	}
+	immediate = {
+		set_planet_flag = BA_Kyrie_Gehenna_cleared
+	}
+	option = {
+		name = BA_origin.1305.next
+		owner = {
+			add_random_research_option = {
+				add_progress = 0.5
+				area = society
+			}
+		}
+		add_deposit = d_Gehenna_shelter
+	}
+	#
+	after = {
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = BA_origin.1320
+				}
+			}
+		}
+	}
+}
+
+###
+#清理全部完成，检查并解锁局势
+country_event = {
+	id = BA_origin.1320
+	is_triggered_only = yes
+	title = BA_origin.1320.title
+	desc = BA_origin.1320.desc
+	picture = GFX_BA_New_Cathedral
+	trigger = {
+		from = {
+			NOR = {
+				has_deposit = d_Arius_Cathedral_ruined
+				has_deposit = d_broken_Abydos_school
+				has_deposit = d_broken_Millennium_school
+				has_deposit = d_broken_Trinity_school
+				has_deposit = d_broken_Gehenna_school
+			}
+		}
+	}
+	immediate = {
+		every_situation = {
+			limit = {
+				is_situation_type = situation_Kyrie_ruin_research
+			}
+			set_situation_locked = no
+		}
+	}
+	option = {
+		name = BA_origin.1320.next
+	}
+}
+
+###### 杂项事件 ######
+#研究废墟采矿科技完成，提醒解锁采矿政策
+country_event = {
+	id = BA_origin.1401
+	is_triggered_only = yes
+	title = BA_origin.1401.title
+	desc = BA_origin.1401.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0031
+		room = "BA_Shittem_room"
+	}
+	trigger = {
+		last_increased_tech = tech_BA_ruins_mining
+	}
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				has_planet_flag = BA_Kyrie_target_@root
+			}
+			planet_event = {
+				id = BA_origin.1031
+				days = 60
+			}
+		}
+	}
+	option = {
+		name = BA_origin.1401.next
+	}
+}
+
+### 任务失败
+#解除威胁局势拉满
+planet_event = {
+	id = BA_origin.1410
+	is_triggered_only = yes
+	title = BA_origin.1410.title
+	desc = BA_origin.1410.desc
+	picture = GFX_evt_exploding_planet
+	option = {
+		name = BA_origin.1410.next
+		owner = {
+			remove_country_flag = BA_origin_Kyrie_engaged
+			set_country_flag = BA_origin_Kyrie_failed
+			set_country_flag = BA_origin_Kyrie_finished
+			every_situation = {
+				limit = {
+					has_situation_flag = situation_Kyrie
+				}
+				abort_situation = this
+			}
+			random_owned_planet = {
+				limit = {
+					NOT = {
+						is_same_value = root
+					}
+				}
+				save_event_target_as = BA_resettle_target
+			}
+			set_country_flag = BA_Project_Cradle_ready			#项目
+		}
+		every_owned_pop = {
+			resettle_pop = {
+				pop = THIS
+				planet = event_target:BA_resettle_target
+			}
+		}
+		change_pc = pc_shattered
+	}
+}
+
+#被地下部队攻占
+country_event = {
+	id = BA_origin.1411
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_country_flag = BA_origin_enemy_country
+		from = {
+			has_origin = origin_Kivotos_Kyrie
+		}
+		fromfrom = {
+			has_planet_flag = BA_Kyrie_target_@owner
+		}
+	}
+	immediate = {
+		fromfrom = {
+			planet_event = {
+				id = BA_origin.1412
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = BA_origin.1412
+	is_triggered_only = yes
+	title = BA_origin.1412.title
+	desc = BA_origin.1412.desc
+	picture = GFX_evt_exploding_planet
+	option = {
+		name = BA_origin.1412.next
+		owner = {
+			remove_country_flag = BA_origin_Kyrie_engaged
+			set_country_flag = BA_origin_Kyrie_failed
+			set_country_flag = BA_origin_Kyrie_finished
+			every_situation = {
+				limit = {
+					has_situation_flag = situation_Kyrie
+				}
+				abort_situation = this
+			}
+			random_owned_planet = {
+				limit = {
+					NOT = {
+						is_same_value = root
+					}
+				}
+				save_event_target_as = BA_resettle_target
+			}
+			set_country_flag = BA_Project_Cradle_ready			#项目
+		}
+		every_owned_pop = {
+			resettle_pop = {
+				pop = THIS
+				planet = event_target:BA_resettle_target
+			}
+		}
+		change_pc = pc_shattered
+		event_target:BA_resettle_target = {
+			check_planet_employment = yes
+		}
+	}
+}
+
+#其他方式丢失母星控制权-通知触发器
+planet_event = {
+	id = BA_origin.1413
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+	}
+}
+
+#通知
+planet_event = {
+	id = BA_origin.1414
+	is_triggered_only = yes
+	title = BA_origin.1414.title
+	desc = BA_origin.1414.desc
+	picture = GFX_evt_exploding_planet
+	option = {
+		name = BA_origin.1414.next
+		owner = {
+			remove_country_flag = BA_origin_Kyrie_engaged
+			set_country_flag = BA_origin_Kyrie_failed
+			set_country_flag = BA_origin_Kyrie_finished
+			every_situation = {
+				limit = {
+					has_situation_flag = situation_Kyrie
+				}
+				abort_situation = this
+			}
+			set_country_flag = BA_Project_Cradle_ready			#项目
+		}
+		change_pc = pc_shattered
+	}
+}
+
+#被其他国家攻占时
+country_event = {
+	id = BA_origin.1415
+	is_triggered_only = yes
+	title = BA_origin.1415.title
+	desc = BA_origin.1415.desc
+	picture = GFX_evt_exploding_planet
+	trigger = {
+		is_country_type = default
+		from = {
+			has_origin = origin_Kivotos_Kyrie
+		}
+		fromfrom = {
+			has_planet_flag = BA_Kyrie_target_@owner
+		}
+	}
+	immediate = {
+		fromfrom = {
+			planet_event = {
+				id = BA_origin.1414
+			}
+		}
+	}
+	option = {
+		name = BA_origin.1415.next
+	}
+}
+
+#主动放弃
+#
+### 胜利
+country_event = {
+	id = BA_origin.1429
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		country_event = {
+			id = BA_origin.1430
+			days = 3
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.1430
+	is_triggered_only = yes
+	title = BA_origin.1430.title
+	desc = BA_origin.1430.desc
+	picture = GFX_BA_Azusa_in_Trinity
+	trigger = {
+		NOT = {
+			any_situation = {
+				has_situation_flag = situation_Kyrie
+			}
+		}
+	}
+	immediate = {
+		set_country_flag = BA_origin_Kyrie_finished
+		remove_country_flag = BA_origin_Kyrie_engaged
+		set_country_flag = BA_Project_Cradle_ready		#项目
+	}
+	option = {
+		name = BA_origin.1430.a
+	}
+	option = {
+		name = BA_origin.1430.b
+	}
+	after = {
+		every_owned_planet = {
+			limit = {
+				has_planet_flag = BA_Kyrie_target_@root
+			}
+			remove_modifier = modifier_BA_Agnus_Dei
+			add_modifier = {
+				modifier = modifier_BA_Gloria_Parti
+			}
+		}
+	}
+}
+
+### 万物皆虚
+#发现外星帝国，获得新宣战理由
+country_event = {
+	id = BA_origin.1450
+	is_triggered_only = yes
+	title = BA_origin.1450.title
+	desc = BA_origin.1450.desc
+	picture = GFX_BA_Friendly_Trinity
+	# trigger = {
+	# 	#需要万物皆虚国民理念
+	# 	has_valid_civic = civic_BA_Omnia_Vanitas
+	# 	from = {
+	# 		OR = {
+	# 			is_fallen_empire = yes
+	# 			is_regular_empire = yes
+	# 		}
+	# 	}
+	# }
+	trigger = {
+		NOT = {
+			has_country_flag = BA_Bellum_Ariusum_allowed
+		}
+	}
+	immediate = {
+		set_country_flag = BA_Bellum_Ariusum_allowed
+	}
+	option = {
+		name = BA_origin.1450.next
+		#允许武力献祭
+	}
+}
+
+#on_action触发,揭开面纱
+country_event = {
+	id = BA_origin.1451
+	is_triggered_only = yes
+	title = BA_origin.1451.title
+	desc = BA_origin.1451.desc
+	picture = GFX_BA_Saori
+	trigger = {
+		#应该很好理解
+		root = {
+			has_country_flag = BA_Bellum_Ariusum_allowed
+			has_policy_flag = BA_Arius_Under_guise
+			# NOR = {
+			# 	has_policy_flag = BA_Arius_Guise_aborted
+			# 	has_policy_flag = BA_Arius_Guise_lifted
+			# }
+		}
+		from = {
+			using_war_goal = {
+				type = wg_BA_Sacrifice
+				owner = attacker
+			}
+		}
+	}
+	option = {
+		name = BA_origin.1451.next
+		set_policy = {
+			policy = BA_Arius_guise_policy
+			option = Arius_Guise_lifted
+			cooldown = yes
+		}
+		#献祭非主体物种
+		hidden_effect = {
+			custom_tooltip = BA_origin.1451.tip
+			every_galaxy_species = {
+				limit = {
+					NOR = {
+						is_same_species = root
+						is_robotic = yes
+						has_species_flag = BA_Robot_flag
+					}
+				}
+				set_citizenship_type = {
+					type = citizenship_purge					#暂时设为驱逐
+					country = root
+				}
+			}
+		}
+	}
+}
+
+#项目中触发，和解
+country_event = {
+	id = BA_origin.1452
+	is_triggered_only = yes
+	title = BA_origin.1452.title
+	desc = BA_origin.1452.desc
+	picture = GFX_BA_Retreating_squard
+	trigger = {
+		has_country_flag = BA_Bellum_Ariusum_allowed
+		NOT = {
+			has_policy_flag = BA_Arius_Guise_lifted
+		}
+	}
+	option = {
+		name = BA_origin.1452.next
+		remove_country_flag = BA_Bellum_Ariusum_allowed
+		set_policy = {
+			policy = BA_Arius_guise_policy
+			option = Arius_Guise_aborted
+			cooldown = yes
+		}
+	}
+}
+
+#on_action触发，0210的触发事件
+country_event = {
+	#from = 外国
+	id = BA_origin.1453
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		#需要万物皆虚国民理念
+		has_policy_flag = BA_Arius_Under_guise
+		from = {
+			OR = {
+				is_country_type = default
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}
+	immediate = {
+		country_event = {
+			id = BA_origin.1450
+		}
+	}
+}
+
+country_event = {
+	#from = 本国
+	id = BA_origin.1454
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		#与0210作用域相反的trigger
+		from = {
+			#需要万物皆虚国民理念
+			#has_valid_civic = civic_BA_Omnia_Vanitas
+			has_policy_flag = BA_Arius_Under_guise
+		}
+		OR = {
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+		}
+	}
+	immediate = {
+		from = {
+			country_event = {
+				id = BA_origin.1450
+			}
+		}
+	}
+}
+
+#on_action触发，武力献祭摧毁国家，获得库存
+country_event = {
+	id = BA_origin.1455
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_regular_empire = yes
+		from = {
+			has_policy_flag = BA_Arius_Guise_lifted
+		}
+	}
+	immediate = {
+		#获取库存
+		export_resource_stockpile_to_variable = {
+			resource = energy
+			variable = BA_Sacrifice_energy
+		}
+		export_resource_stockpile_to_variable = {
+			resource = minerals
+			variable = BA_Sacrifice_minerals
+		}
+		export_resource_stockpile_to_variable = {
+			resource = alloys
+			variable = BA_Sacrifice_alloys
+		}
+		export_resource_stockpile_to_variable = {
+			resource = consumer_goods
+			variable = BA_Sacrifice_consumer_goods
+		}
+		export_resource_stockpile_to_variable = {
+			resource = food
+			variable = BA_Sacrifice_food
+		}
+		#打折
+		divide_variable = {
+			which = BA_Sacrifice_energy
+			value = 4
+		}
+		divide_variable = {
+			which = BA_Sacrifice_minerals
+			value = 4
+		}
+		divide_variable = {
+			which = BA_Sacrifice_alloys
+			value = 2
+		}
+		divide_variable = {
+			which = BA_Sacrifice_consumer_goods
+			value = 2
+		}
+		divide_variable = {
+			which = BA_Sacrifice_food
+			value = 30
+		}
+		#拷贝变量
+		from = {
+			set_variable = {
+				which = BA_Sacrifice_energy
+				value = root.BA_Sacrifice_energy
+			}
+			set_variable = {
+				which = BA_Sacrifice_minerals
+				value = root.BA_Sacrifice_minerals
+			}
+			set_variable = {
+				which = BA_Sacrifice_alloys
+				value = root.BA_Sacrifice_alloys
+			}
+			set_variable = {
+				which = BA_Sacrifice_consumer_goods
+				value = root.BA_Sacrifice_consumer_goods
+			}
+			set_variable = {
+				which = BA_Sacrifice_food
+				value = root.BA_Sacrifice_food
+			}
+			#获得资源
+			country_event = {
+				id = BA_origin.1456
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.1456
+	is_triggered_only = yes
+	title = BA_origin.1456.title
+	desc = BA_origin.1456.desc
+	picture = GFX_BA_Emergencies_0006
+	option = {
+		name = BA_origin.1456.confirm
+		custom_tooltip = wg_BA_Sacrifice_tooltip
+		#增加库存
+		add_resource = {
+			energy = 3
+			multiplier = BA_Sacrifice_energy
+		}
+		add_resource = {
+			minerals = 3
+			multiplier = BA_Sacrifice_minerals
+		}
+		add_resource = {
+			alloys = 1
+			multiplier = BA_Sacrifice_alloys
+		}
+		add_resource = {
+			consumer_goods = 1
+			multiplier = BA_Sacrifice_consumer_goods
+		}
+		if = {
+			limit = {
+				has_country_flag = BA_origin_Kyrie_finished
+			}
+			add_resource = {
+				sr_pyroxenes = 0.5
+				multiplier = BA_Sacrifice_food
+			}
+			add_resource = {
+				sr_keystone = 1
+				multiplier = BA_Sacrifice_food
+			}
+		}
+	}
+}

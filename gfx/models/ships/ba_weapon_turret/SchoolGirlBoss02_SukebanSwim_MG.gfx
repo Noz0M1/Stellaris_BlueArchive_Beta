@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "SchoolGirlBoss02_SukebanSwim_MG_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/SchoolGirlBoss02_SukebanSwim_MG.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "SchoolGirlBoss02_SukebanSwim_MGShape"
+			index = 0
+			texture_diffuse = "SchoolGirlBoss02_SukebanSwim_MG.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}

@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "CH9998_Weapon_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/CH9998_Weapon.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "CH9998_WeaponShape"
+			index = 0
+			texture_diffuse = "CH9998_Weapon.dds"
+			texture_normal = "CH9998_Weapon_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}

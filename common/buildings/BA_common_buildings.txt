@@ -1,0 +1,535 @@
+#############   人口建筑   #############
+######   组装厂   ######
+### 卫星局
+building_BA_starlink_1 = {
+	position_priority = 20
+	base_buildtime = 360
+	category = pop_assembly
+	base_cap_amount = 1
+	potential = {
+		exists = owner
+		NOT = {
+			is_planet_class = pc_habitat
+		}
+		owner = {
+			is_ai = no
+			has_authority = auth_kivotos
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		planet_pop_assembly_organic_mult = 0.12
+		planet_pop_assembly_mult = 0.12
+	}
+	planet_modifier = {
+		job_roboticist_add = 1
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+			sr_eligma = 20
+		}
+		upkeep = {
+			energy = 4
+		}
+	}
+	upgrades = {
+		building_BA_starlink_2
+	}
+}
+
+### 星链局
+building_BA_starlink_2 = {
+	position_priority = 20
+	can_build = no
+	base_buildtime = 360
+	category = pop_assembly
+	potential = {
+		exists = owner
+		owner = {
+			has_ascension_perk = ap_BA_new_frontier
+		}
+	}
+	allow = {
+		has_upgraded_capital = yes
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		planet_pop_assembly_organic_mult = 0.25
+		planet_pop_assembly_mult = 0.25
+	}
+	planet_modifier = {
+		job_roboticist_add = 3
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+			sr_eligma = 30
+		}
+		upkeep = {
+			energy = 4
+		}
+	}
+}
+
+#############   基础生产   #############
+### 制造石冶金厂
+# 制造石冶金者+2 
+building_BA_keystone_foundry_1 = {
+	base_buildtime = 360
+	position_priority = 154
+	category = manufacturing
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+		has_upgraded_capital = yes
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_keystone_foundry_add = 2
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 300
+			alloys = 50
+		}
+		upkeep = {
+			energy = 4
+		}
+	}
+	prerequisites = {
+		"tech_BA_angel24_keystone_to_alloy"
+	}
+	upgrades = {
+		building_BA_keystone_foundry_2
+	}
+}
+
+### 大型制造石冶金厂
+# 制造石冶金者+4
+building_BA_keystone_foundry_2 = {
+	base_buildtime = 480
+	can_build = no
+	position_priority = 154
+	category = manufacturing
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_keystone_foundry_add = 4
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			sr_keystone = 100
+		}
+		upkeep = {
+			energy = 8
+		}
+	}
+	prerequisites = {
+		"tech_BA_angel24_keystone_to_alloy"
+	}
+}
+
+#############   特殊资源   #############
+######   青辉石   ######
+### 青辉石建造中心 
+# 青辉石生产员+1
+building_BA_pyroxenes_1 = {
+	position_priority = 151
+	base_buildtime = 360
+	category = manufacturing
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+		has_upgraded_capital = yes
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_pyroxenes_maker_add = 1
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 300
+			alloys = 100
+		}
+		upkeep = {
+			energy = 10
+		}
+	}
+	prerequisites = {
+		"tech_BA_pyroxenes_crafting"
+	}
+	upgrades = {
+		building_BA_pyroxenes_2
+	}
+}
+
+### 规模化青辉石制造中心
+# 青辉石生产员+3
+building_BA_pyroxenes_2 = {
+	position_priority = 150
+	base_buildtime = 480
+	can_build = no
+	category = manufacturing
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+		has_upgraded_capital = yes
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_pyroxenes_maker_add = 3
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 300
+			alloys = 100
+			sr_pyroxenes = 20
+		}
+		upkeep = {
+			energy = 8
+		}
+	}
+	prerequisites = {
+		"tech_BA_pyroxenes_industrial_crafting"
+	}
+}
+
+######   制造石   ######
+### 制造石制造机
+# 1青辉石 -> 2制造石
+building_BA_keystone_1 = {
+	position_priority = 153
+	base_buildtime = 360
+	category = manufacturing
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_keystone_maintenance_staff_add = 1
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+			sr_pyroxenes = 10
+		}
+		upkeep = {
+			energy = 8
+			sr_pyroxenes = 1
+		}
+		produces = {
+			sr_keystone = 2
+		}
+		upkeep = {
+			trigger = {
+				colony_type = col_auto_building
+			}
+			energy = 1.6
+			sr_pyroxenes = 0.2
+		}
+		produces = {
+			trigger = {
+				colony_type = col_auto_building
+			}
+			sr_keystone = 0.4
+		}
+	}
+	prerequisites = {
+		"tech_BA_keystone_crafting"
+	}
+	upgrades = {
+		building_BA_keystone_2
+	}
+}
+
+### 集约化拱心石制造机
+# 制造机维护员+1
+# 3青辉石 -> 6制造石
+building_BA_keystone_2 = {
+	position_priority = 152
+	base_buildtime = 480
+	can_build = no
+	category = manufacturing
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+		has_upgraded_capital = yes
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_keystone_maintenance_staff_add = 1
+		}
+	}
+	resources = {
+		category = BA_auto_buildings
+		cost = {
+			minerals = 1200
+			sr_keystone = 30
+		}
+		upkeep = {
+			energy = 12
+			sr_pyroxenes = 3
+		}
+		produces = {
+			sr_keystone = 6
+		}
+		upkeep = {
+			trigger = {
+				colony_type = col_auto_building
+			}
+			energy = 2.4
+			sr_pyroxenes = 0.6
+		}
+		produces = {
+			trigger = {
+				colony_type = col_auto_building
+			}
+			sr_keystone = 1.2
+		}
+	}
+	prerequisites = {
+		"tech_BA_keystone_automatic_crafting"
+	}
+}
+
+######   暗物质   ######
+#暗物质浓缩机 无岗位 20电10青辉石 -> 5暗物质
+building_BA_dark_matter_concentrator_1 = {
+	position_priority = 156
+	base_buildtime = 480
+	category = manufacturing
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			sr_pyroxenes = 100
+		}
+		upkeep = {
+			energy = 20
+			sr_pyroxenes = 10
+		}
+		produces = {
+			sr_dark_matter = 5
+		}
+		upkeep = {
+			trigger = {
+				colony_type = col_auto_building
+			}
+			energy = 4
+			sr_pyroxenes = 2
+		}
+		produces = {
+			trigger = {
+				colony_type = col_auto_building
+			}
+			sr_keystone = 1
+		}
+	}
+	prerequisites = {
+		"tech_BA_dark_matter_absorbing"
+	}
+}
+
+######  稀有资源  ######
+#稀有资源集中生产中心 10电5青辉石->2三种稀有资源
+building_BA_rare_center_1 = {
+	position_priority = 155
+	base_buildtime = 360
+	category = manufacturing
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 600
+			sr_pyroxenes = 30
+		}
+		upkeep = {
+			energy = 10
+			sr_pyroxenes = 5
+		}
+		produces = {
+			volatile_motes = 2
+			exotic_gases = 2
+			rare_crystals = 2
+		}
+		produces = {
+			trigger = {
+				colony_type = col_auto_building
+			}
+			volatile_motes = 0.2
+			exotic_gases = 0.2
+			rare_crystals = 0.2
+		}
+	}
+	prerequisites = {
+		"tech_BA_angel24_rare_produce"
+	}
+}
+
+#############   事件建筑   #############
+### 起源
+#混成数据实验室
+building_BA_mixed_ruins_lab = {
+	position_priority = 199
+	base_buildtime = 360
+	potential = {
+		always = no
+	}
+	can_be_disabled = no
+	can_demolish = no
+	can_be_ruined = no
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 600
+			alloys = 100
+		}
+		upkeep = {
+			energy = 5
+			unity = 5
+		}
+	}
+	triggered_desc = {
+		text = building_BA_mixed_ruins_lab_tip
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_planet_class = pc_BA_campus_planet
+		}
+		job_BA_club_members_add = 4
+	}
+	destroy_trigger = {
+		planet = {
+			is_planet_class = pc_BA_campus_planet
+		}
+	}
+}
+
+### 学院理念
+building_BA_SI_Millennium_G10 = {
+	position_priority = 148
+	base_buildtime = 360
+	category = manufacturing
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+		has_upgraded_capital = yes
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_student_delegate_add = 3
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			sr_keystone = 100
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 10
+		}
+	}
+	prerequisites = {
+		"tech_BA_SI_Millennium_G09"
+	}
+}
+

@@ -1,0 +1,454 @@
+#############################
+#####		伊甸条约
+#############################
+#
+# 暂无，太难搞了
+#
+#############################
+#####	致被遗忘的众神
+#############################
+situation_Kyrie_ruin_research = {
+	desc = {
+		text = situation_Kyrie_ruin_research_desc_1		#等待矿业协会提案
+		trigger = {
+			situation_progress < 24
+		}
+	}
+	desc = {
+		text = situation_Kyrie_ruin_research_desc_2		#请建造研究室
+		trigger = {
+			situation_progress = 24
+		}
+	}
+	desc = {
+		text = situation_Kyrie_ruin_research_desc_3		#准备采矿科技中
+		trigger = {
+			situation_progress > 24
+			situation_progress < 48
+		}
+	}
+	desc = {
+		text = situation_Kyrie_ruin_research_desc_4		#准备清除废墟科技中
+		trigger = {
+			situation_progress >= 48
+			situation_progress < 84
+		}
+	}
+	desc = {
+		text = situation_Kyrie_ruin_research_desc_5		#研究清除废墟科技
+		trigger = {
+			situation_progress >= 84
+		}
+	}
+	picture = GFX_BA_Arius_ruins
+	category = neutral
+	complete_icon = GFX_situation_outcome_positive
+	complete_icon_frame = GFX_situation_outcome_frame_blue
+	fail_icon = GFX_situation_outcome_positive
+	fail_icon_frame = GFX_situation_outcome_frame_blue
+	######
+	start_value = 0
+	progress_direction = monodirectional
+	monthly_progress = {
+		base = 1
+	}
+	approach = {
+		name = situation_Kyrie_ruin_research_default
+		icon = GFX_situation_approach_research
+		icon_background = GFX_situation_approach_bg_green
+		default = yes
+		on_select = {
+		}
+	}
+	######
+	on_start = {
+		set_situation_flag = situation_Kyrie
+	}
+	stages = {
+		situation_Kyrie_ruin_research_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 24			#持续2年 （2
+			custom_tooltip = situation_Kyrie_ruin_research_1_tip
+		}
+		situation_Kyrie_ruin_research_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_blue
+			end = 48			#持续等待建造实验室 +2年 （4
+			custom_tooltip = situation_Kyrie_ruin_research_2_tip
+			on_first_enter = {
+				set_situation_locked = yes
+				owner = {
+					country_event = {
+						id = BA_origin.1003
+					}
+				}
+			}
+		}
+		situation_Kyrie_ruin_research_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_blue
+			end = 84			#持续3年 +研究科技清除废墟 （7
+			custom_tooltip = situation_Kyrie_ruin_research_3_tip
+			on_first_enter = {
+				#set_situation_locked = yes
+				owner = {
+					country_event = {
+						id = BA_origin.1005
+					}
+				}
+			}
+		}
+		situation_Kyrie_ruin_research_4 = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_blue
+			end = 96			#1年（8
+			custom_tooltip = situation_Kyrie_ruin_research_4_tip
+			on_first_enter = {
+				owner = {
+					country_event = {
+						id = BA_origin.1006
+					}
+				}
+			}
+		}
+		situation_Kyrie_ruin_research_5 = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_blue
+			end = 97			#废墟清除完成后进行下一步
+			custom_tooltip = situation_Kyrie_ruin_research_5_tip
+			on_first_enter = {
+				target = {
+					remove_planet_flag = BA_ruins_happening
+				}
+				#停止废墟生成
+				if = {
+					limit = {
+						target = {
+							OR = {
+								has_deposit = d_Arius_Cathedral_ruined
+								has_deposit = d_broken_Abydos_school
+								has_deposit = d_broken_Millennium_school
+								has_deposit = d_broken_Trinity_school
+								has_deposit = d_broken_Gehenna_school
+							}
+						}
+					}
+					set_situation_locked = yes
+				}
+				owner = {
+					country_event = {
+						id = BA_origin.1007
+					}
+				}
+			}
+		}
+	}
+	on_monthly = {
+		events = {
+			BA_origin.1030
+		}
+	}
+	on_progress_complete = {
+		owner = {
+			country_event = {
+				id = BA_origin.1008
+			}
+		}
+		destroy_situation = this
+	}
+}
+
+situation_Kyrie_planet_cleaning = {
+	desc = {
+		text = situation_Kyrie_planet_cleaning_1		#准备
+		trigger = {
+			situation_progress < 12
+		}
+	}
+	desc = {
+		text = situation_Kyrie_planet_cleaning_2		#清扫
+		trigger = {
+			situation_progress >= 12
+		}
+	}
+	picture = GFX_BA_Arius_ruins
+	category = neutral
+	complete_icon = GFX_situation_outcome_positive
+	complete_icon_frame = GFX_situation_outcome_frame_blue
+	fail_icon = GFX_situation_outcome_positive
+	fail_icon_frame = GFX_situation_outcome_frame_blue
+	######
+	start_value = 0
+	progress_direction = monodirectional
+	monthly_progress = {
+		base = 10
+		
+	}
+	approach = {
+		name = situation_Kyrie_planet_cleaning_default
+		icon = GFX_situation_approach_research
+		icon_background = GFX_situation_approach_bg_green
+		default = yes
+		on_select = {
+		}
+		resources = {
+			category = situations
+			upkeep = {
+				trigger = {
+					current_stage = situation_Kyrie_planet_cleaning_1
+				}
+				alloys = 50
+			}
+			upkeep = {
+				trigger = {
+					current_stage = situation_Kyrie_planet_cleaning_2
+				}
+				energy = 50
+			}
+			produces = {
+				trigger = {
+					current_stage = situation_Kyrie_planet_cleaning_2
+				}
+				minerals = 50
+				alloys = 40
+				exotic_gases = 2
+				rare_crystals = 2
+				volatile_motes = 2
+			}
+		}
+	}
+	######
+	on_start = {
+		set_situation_flag = situation_Kyrie
+	}
+	stages = {
+		situation_Kyrie_planet_cleaning_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 120			#持续1年
+			custom_tooltip = situation_Kyrie_planet_cleaning_1_tip
+			on_first_enter = {
+				set_situation_flag = situation_Kyrie_planet_cleaning
+			}
+		}
+		situation_Kyrie_planet_cleaning_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_blue
+			end = 720			#持续6年
+			custom_tooltip = situation_Kyrie_planet_cleaning_2_tip
+			on_first_enter = {
+				target = {
+					planet_event = {
+						id = BA_origin.1102
+					}
+				}
+			}
+		}
+		situation_Kyrie_planet_cleaning_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_blue
+			end = 721			#持续6年
+			custom_tooltip = situation_Kyrie_planet_cleaning_3_tip
+			on_first_enter = {
+				set_situation_locked = yes
+				target = {
+					planet_event = {
+						id = BA_origin.1103
+					}
+				}
+			}
+		}
+	}
+	on_monthly = {
+	}
+	on_progress_complete = {
+		owner = {
+			country_event = {
+				id = BA_origin.1429				#胜利检测
+			}
+		}
+		destroy_situation = this
+	}
+}
+
+situation_Kyrie_engage_enemy = {
+	desc = {
+		text = situation_Kyrie_engage_enemy_desc
+		trigger = {
+			situation_progress = 24
+		}
+	}
+	picture = GFX_BA_Abydos_vs_Binah
+	category = negative
+	complete_icon = GFX_situation_outcome_positive
+	complete_icon_frame = GFX_situation_outcome_frame_blue
+	fail_icon = GFX_situation_outcome_positive
+	fail_icon_frame = GFX_situation_outcome_frame_blue
+	######
+	start_value = 0
+	progress_direction = monodirectional
+	monthly_progress = {
+		base = 1
+		modifier = {
+			desc = "BLANK_TEXT"
+			factor = 0.8
+			current_situation_approach = situation_Kyrie_engage_enemy_alert
+		}
+		modifier = {
+			desc = "BLANK_TEXT"
+			factor = 0.5
+			current_situation_approach = situation_Kyrie_engage_enemy_max_signal
+		}
+		modifier = {
+			desc = "BLANK_TEXT"
+			factor = 0.5
+			current_situation_approach = situation_Kyrie_engage_enemy_quest
+		}
+	}
+	approach = {
+		name = situation_Kyrie_engage_enemy_default
+		icon = GFX_situation_approach_research
+		icon_background = GFX_situation_approach_bg_green
+		default = yes
+	}
+	approach = {
+		name = situation_Kyrie_engage_enemy_alert
+		icon = GFX_situation_approach_research
+		icon_background = GFX_situation_approach_bg_yellow
+		target_modifier = {
+			pop_amenities_usage_mult = 0.1
+		}
+	}
+	approach = {
+		name = situation_Kyrie_engage_enemy_max_signal
+		icon = GFX_situation_approach_research
+		icon_background = GFX_situation_approach_bg_yellow
+		target_modifier = {
+			pop_amenities_usage_mult = 0.1
+		}
+		resources = {
+			category = situations
+			upkeep = {
+				energy = 10
+			}
+		}
+	}
+	approach = {
+		name = situation_Kyrie_engage_enemy_quest
+		icon = GFX_situation_approach_research
+		icon_background = GFX_situation_approach_bg_yellow
+		active_tooltip = situation_Kyrie_engage_enemy_quest_tip
+		target_modifier = {
+			planet_jobs_physics_research_produces_mult = -0.2
+			planet_jobs_society_research_produces_mult = -0.2
+			planet_jobs_engineering_research_produces_mult = -0.2
+			army_defense_damage_mult = 1
+		}
+	}
+	######
+	on_start = {
+		set_situation_flag = situation_Kyrie
+		target = {
+			set_variable = {
+				which = situation_Kyrie_engage_enemy_dicision
+				value = 1
+			}
+			set_variable = {
+				which = situation_Kyrie_engage_enemy_amount
+				value = 1
+			}
+			set_variable = {
+				which = situation_Kyrie_engage_enemy_level
+				value = 1
+			}
+		}
+	}
+	stages = {
+		situation_Kyrie_engage_enemy_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 150
+			custom_tooltip = situation_Kyrie_engage_enemy_1_tip
+		}
+		situation_Kyrie_engage_enemy_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_blue
+			end = 300
+			custom_tooltip = situation_Kyrie_engage_enemy_2_tip
+			on_first_enter = {
+				owner = {
+					country_event = {
+						id = BA_origin.1203
+					}
+				}
+				target = {
+					change_variable = {
+						which = situation_Kyrie_engage_enemy_level
+						value = 1
+					}
+				}
+			}
+		}
+		situation_Kyrie_engage_enemy_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_blue
+			end = 450
+			custom_tooltip = situation_Kyrie_engage_enemy_3_tip
+			on_first_enter = {
+				owner = {
+					country_event = {
+						id = BA_origin.1205
+					}
+				}
+				target = {
+					change_variable = {
+						which = situation_Kyrie_engage_enemy_level
+						value = 1
+					}
+				}
+			}
+		}
+		situation_Kyrie_engage_enemy_4 = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_blue
+			end = 600
+			custom_tooltip = situation_Kyrie_engage_enemy_4_tip
+			on_first_enter = {
+				owner = {
+					country_event = {
+						id = BA_origin.1206
+					}
+				}
+				target = {
+					change_variable = {
+						which = situation_Kyrie_engage_enemy_level
+						value = 1
+					}
+				}
+			}
+		}
+	}
+	on_monthly = {
+		random_events = {
+			6 = 0
+			1 = BA_origin.1210
+			1 = BA_origin.1211
+		}
+	}
+	on_progress_complete = {
+		destroy_situation = this
+		target = {
+			planet_event = {
+				id = BA_origin.1410				#boom
+			}
+		}
+	}
+	on_abort = {
+		owner = {
+			country_event = {
+				id = BA_origin.1429				#胜利检测
+			}
+		}
+	}
+}

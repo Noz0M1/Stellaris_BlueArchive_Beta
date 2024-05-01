@@ -1,0 +1,32 @@
+is_triggered_only = yes
+title = BA_communication.$Leader$.title
+desc = BA_communication.$Leader$.desc
+event_window_type = leader_recruit
+###
+picture_event_data = {
+	portrait = event_target:BA_$Leader$_SP
+	room = paragon_ba_room
+}
+picture = GFX_leader_recruitment_bg_legendary_ba
+###
+# HIRE
+option = {
+	name = HIRE
+	tag = hire_leader
+	#sound = par_azaryn_hire
+	custom_tooltip = BA_communication.$Leader$.join
+	hidden_effect = {
+		BA_$Leader$_SP = yes
+	}
+}
+# DISMISS
+option = {
+	name = DISMISS
+	tag = dismiss_leader
+	#sound = par_azaryn_dismiss
+}
+###
+after = {
+	hidden_effect = {
+	}
+}

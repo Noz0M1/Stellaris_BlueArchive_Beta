@@ -1,0 +1,121 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Alice_mesh"
+		file = "gfx\models\ships\ba_other\Alice.mesh"
+
+
+		meshsettings = {
+			name = "Aris_Original_WeaponShape"
+			index = 0
+			texture_diffuse = "Aris_Original_Weapon.dds"
+			texture_normal = "Aris_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Aris_Original_BodyShape"
+			index = 0
+			texture_diffuse = "Aris_Original_Body.dds"
+			texture_normal = "Aris_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Aris_Original_BodyShape"
+			index = 1
+			texture_diffuse = "Aris_Original_Face.dds"
+			texture_normal = "Aris_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Aris_Original_BodyShape"
+			index = 2
+			texture_diffuse = "Aris_Original_EyeMouth.dds"
+			texture_normal = "Aris_EyeMouth_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Aris_Original_BodyShape"
+			index = 3
+			texture_diffuse = "Aris_Original_Hair.dds"
+			texture_normal = "Aris_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Aris_Original_HaloShape"
+			index = 0
+			texture_diffuse = "Aris_Original_Halo.dds"
+			texture_normal = "Aris_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+		scale = 0.05
+	}
+	pdxmesh = {
+		name = "KEI_mesh"
+		file = "gfx\models\ships\ba_other\Alice.mesh"
+
+		meshsettings = {
+			name = "Aris_Original_WeaponShape"
+			index = 0
+			texture_diffuse = "Aris_Original_Weapon.dds"
+			texture_normal = "Aris_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Aris_Original_BodyShape"
+			index = 0
+			texture_diffuse = "Aris_Original_Body.dds"
+			texture_normal = "Aris_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Aris_Original_BodyShape"
+			index = 1
+			texture_diffuse = "Aris_Original_Face.dds"
+			texture_normal = "Aris_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Aris_Original_BodyShape"
+			index = 2
+			texture_diffuse = "KEI_Original_EyeMouth.dds"
+			texture_normal = "Aris_EyeMouth_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Aris_Original_BodyShape"
+			index = 3
+			texture_diffuse = "Aris_Original_Hair.dds"
+			texture_normal = "Aris_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Aris_Original_HaloShape"
+			index = 0
+			texture_diffuse = "KEI_Original_Halo.dds"
+			texture_normal = "Aris_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+		scale = 0.05
+	}
+}

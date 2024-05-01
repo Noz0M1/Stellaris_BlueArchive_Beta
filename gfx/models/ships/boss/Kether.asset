@@ -1,0 +1,72 @@
+entity = {
+	name = "Kether_entity"
+	pdxmesh = "Kether_mesh"
+}
+
+entity = {
+	name = "Kether_turret_01_entity"
+	pdxmesh = "Kether_turret_01_mesh"
+	locator = {
+		name = "root"
+		position = { 0 0 0 }
+		rotation = { 0 0 0 }
+	}
+	attach = {
+		root = "Kether_entity"
+	}
+}
+
+entity = {
+	name = "Kether_turret_02_entity"
+	pdxmesh = "Kether_turret_02_mesh"
+	locator = {
+		name = "root"
+		position = { 0 0 0 }
+		rotation = { 0 0 0 }
+	}
+	attach = {
+		root = "Kether_entity"
+	}
+}
+
+entity = {
+	name = "Kether_turret_03_entity"
+	pdxmesh = "Kether_turret_03_mesh"
+}
+
+entity = {
+	name = "Kether_Color_entity"
+	pdxmesh = "Kether_Color_mesh"
+}
+
+entity = {
+	name = "Kether_Color_turret_01_entity"
+	pdxmesh = "Kether_Color_turret_01_mesh"
+	locator = {
+		name = "root"
+		position = { 0 0 0 }
+		rotation = { 0 0 0 }
+	}
+	attach = {
+		root = "Kether_Color_entity"
+	}
+}
+
+entity = {
+	name = "Kether_Color_turret_02_entity"
+	pdxmesh = "Kether_Color_turret_02_mesh"
+	locator = {
+		name = "root"
+		position = { 0 0 0 }
+		rotation = { 0 0 0 }
+	}
+	attach = {
+		root = "Kether_Color_entity"
+	}
+}
+
+entity = {
+	name = "Kether_Color_turret_03_entity"
+	pdxmesh = "Kether_Color_turret_03_mesh"
+}
+

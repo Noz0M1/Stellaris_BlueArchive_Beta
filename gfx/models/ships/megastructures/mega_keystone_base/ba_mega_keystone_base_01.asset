@@ -1,0 +1,124 @@
+entity = {
+	name = "ba_mega_keystone_base_stage_1_entity"
+	pdxmesh = "strategic_coordination_center_01_stage_1_mesh"
+	
+		meshsettings = {
+			name = "body1Shape"
+			index = 0
+			texture_diffuse = "ba_mega_keystone_base_diffuse.dds"
+			texture_normal = "ba_mega_keystone_base_normal.dds"
+			texture_specular = "ba_mega_keystone_base_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_strategic_coordination_center_hum" } }
+	}
+	
+		game_data = {
+			emissive_recolor_crunch = 2.0
+		}
+	locator = {
+		name = "root"
+		position = { 0 0 0 }
+		rotation = { 0 0 0 }
+	}
+
+	attach = {
+		root = "ba_item_keystone_entity"
+	}
+	
+}
+
+entity = {
+	name = "ba_mega_keystone_base_stage_2_entity"
+	pdxmesh = "strategic_coordination_center_01_stage_2_mesh"
+	
+		meshsettings = {
+			name = "body2Shape"
+			index = 0
+			texture_diffuse = "ba_mega_keystone_base_diffuse.dds"
+			texture_normal = "ba_mega_keystone_base_normal.dds"
+			texture_specular = "ba_mega_keystone_base_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_strategic_coordination_center_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_strategic_coordination_center_beeps" } }
+	}
+	
+		game_data = {
+			emissive_recolor_crunch = 2.0
+		}
+	locator = {
+		name = "root"
+		position = { 0 0 0 }
+		rotation = { 0 0 0 }
+	}
+
+	attach = {
+		root = "ba_item_keystone_entity"
+	}	
+}
+
+entity = {
+	name = "ba_mega_keystone_base_stage_3_entity"
+	pdxmesh = "strategic_coordination_center_01_stage_3_mesh"
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "ba_mega_keystone_base_diffuse.dds"
+			texture_normal = "ba_mega_keystone_base_normal.dds"
+			texture_specular = "ba_mega_keystone_base_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		event = { time = 0 node = "light_locator_01"  particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_02"  particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03"  particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_04"  particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_05"  particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_06"  particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_07"  particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_08"  particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_09"  particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_010" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_011" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_012" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_strategic_coordination_center_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_strategic_coordination_center_beeps" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_strategic_coordination_center_pulse" } }
+	}
+	
+		game_data = {
+			emissive_recolor_crunch = 2.0
+		}
+	locator = {
+		name = "root"
+		position = { 0 0 0 }
+		rotation = { 0 0 0 }
+	}
+
+	attach = {
+		root = "ba_item_keystone_entity"
+	}	
+		
+}
+

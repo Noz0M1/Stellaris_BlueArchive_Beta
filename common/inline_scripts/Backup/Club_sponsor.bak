@@ -1,0 +1,54 @@
+### Club_sponsor   赞助社团
+option = {
+	name = $CLUB$_sponsor	
+	allow = {
+		custom_tooltip = {
+			fail_text = Club_sponsoring
+			NOT = {
+				has_country_flag = BA_club_$CLUB$_sponsoring
+			}
+		}
+		resource_stockpile_compare = {
+			resource = energy
+			value >= 1600
+		}
+	}
+	is_dialog_only = yes
+	response_text = $CLUB$_sponsor_$CHARA$RE
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = BA_club_$CLUB$_sponsoring
+				}
+			}
+			set_timed_country_flag = {
+				flag = BA_club_$CLUB$_sponsoring
+				days = 360
+			}
+		}
+		change_variable = {
+			which = $CLUB$
+			value = 20
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = $CLUB$
+					value > 100
+				}
+			}
+			set_variable = {
+				which = $CLUB$
+				value = 100
+			}
+		}
+	}
+	add_resource = {
+		energy = -1600
+	}
+	add_modifier = {
+		modifier = modifier_BA_club_sponsor_$CLUB$
+		days = 1080
+	}
+}

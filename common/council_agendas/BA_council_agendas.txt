@@ -1,0 +1,32 @@
+@base_agenda_cost = 7000
+
+agenda_BA_SI_Trinity_A02 = {
+    agenda_cost = @base_agenda_cost
+    potential = {
+        has_authority = auth_kivotos
+        has_technology = tech_BA_SI_Trinity_A02
+    }
+    allow = {
+        always = yes
+    }
+    modifier = {
+        species_leader_exp_gain = 0.2
+    }
+    finish_modifier = modifier_agenda_BA_SI_Trinity_A02
+}
+
+agenda_BA_SI_Trinity_A04 = {
+    agenda_cost = @base_agenda_cost
+    potential = {
+        has_authority = auth_kivotos
+        has_technology = tech_BA_SI_Trinity_A04
+    }
+    allow = {
+        always = yes
+    }
+    modifier = {
+        planet_jobs_produces_mult = 0.05
+        planet_jobs_upkeep_mult = 0.05
+    }
+    finish_modifier = modifier_agenda_BA_SI_Trinity_A04
+}

@@ -1,0 +1,12 @@
+# 基沃托斯政体的国家类型
+gov_Kivotos_country = {
+	possible = {
+		has_authority = auth_kivotos
+	}
+	weight = {
+		base = 800
+	}
+	ruler_title = "scripted_student_federal_president"
+	ruler_title_female = "scripted_student_federal_president"
+}
+

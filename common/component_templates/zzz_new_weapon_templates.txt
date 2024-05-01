@@ -1,0 +1,7566 @@
+#### G
+#1 Sena
+weapon_component_template = {
+	key = "SENA_WEAPON"
+	size = torpedo	#G槽
+	type = missile	#导弹
+	icon = "GFX_Sena_Weapon"	#图标
+	icon_frame = 1
+	entity = "sena_weapon_turret_base_entity"	#炮台模型
+	power = -45
+	damage = {
+		min = 363
+		max = 445
+	}
+	#伤害区间
+	windup = {
+		min = 100
+		max = 300
+	}
+	#发射时间
+	range = 80
+	accuracy = 1	#准确性
+	hull_damage = 1.3	#船体伤害
+	shield_damage = 0.8	#护盾伤害
+	armor_damage = 1.5	#装甲伤害
+	shield_penetration = 1	#盾穿
+	armor_penetration = 0	#甲穿
+	tracking = 0.1	#追踪
+	missile_speed = 14	#导弹速度 12:250
+	missile_evasion = 0	#导弹闪避
+	missile_armor = 20	#导弹装甲
+	missile_health = 30	#导弹血条
+	missile_retarget_range = 100	#重新瞄准射程
+	prerequisites = {
+		"tech_BA_SPW_SENA_WEAPON"
+	}
+	#科技
+	component_set = "SENA_WEAPON"	#组件集
+	projectile_gfx = "BA_WEAPON_GL"	#特效
+	tags = {
+		weapon_type_mystic
+		g_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+		upkeep = {
+			energy = 0
+		}
+	}
+	target_weights = {
+		#打船权重
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#2 Chise
+weapon_component_template = {
+	key = "CHISE_WEAPON"
+	size = torpedo
+	type = missile
+	icon = "GFX_Chise_Weapon"
+	icon_frame = 1
+	entity = "chise_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 479
+		max = 620
+	}
+	windup = {
+		min = 100
+		max = 360
+	}
+	range = 80
+	accuracy = 1
+	hull_damage = 1
+	shield_damage = 1.1
+	armor_damage = 1.6
+	shield_penetration = 1
+	armor_penetration = 0
+	tracking = 0.1
+	missile_speed = 14
+	missile_evasion = 0.4
+	missile_armor = 15
+	missile_health = 15
+	missile_retarget_range = 100
+	prerequisites = {
+		"tech_BA_SPW_CHISE_WEAPON"
+	}
+	#科技
+	component_set = "CHISE_WEAPON"
+	projectile_gfx = "BA_WEAPON_GL"
+	tags = {
+		weapon_type_mystic
+		g_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+		upkeep = {
+			energy = 0
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#3 Yuzu
+weapon_component_template = {
+	key = "YUZU_WEAPON"
+	size = torpedo
+	type = missile
+	icon = "GFX_Yuzu_Weapon"
+	icon_frame = 1
+	entity = "yuzu_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 356
+		max = 519
+	}
+	windup = {
+		min = 150
+		max = 250
+	}
+	range = 80
+	accuracy = 1
+	hull_damage = 1
+	shield_damage = 0.8
+	armor_damage = 1.8
+	shield_penetration = 1
+	armor_penetration = 0
+	tracking = 0.1
+	missile_speed = 14
+	missile_evasion = 0.4
+	missile_armor = 10
+	missile_health = 10
+	missile_retarget_range = 100
+	prerequisites = {
+		"tech_BA_SPW_YUZU_WEAPON"
+	}
+	#科技
+	component_set = "YUZU_WEAPON"
+	projectile_gfx = "yuzu_missile"
+	tags = {
+		weapon_type_penetration
+		g_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+		upkeep = {
+			energy = 0
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#4 Shigure
+weapon_component_template = {
+	key = "SHIGURE_WEAPON"
+	size = torpedo
+	type = missile
+	icon = "GFX_Shigure_Weapon"
+	icon_frame = 1
+	entity = "shigure_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 278
+		max = 647
+	}
+	windup = {
+		min = 50
+		max = 450
+	}
+	range = 80
+	accuracy = 1
+	hull_damage = 1.3
+	shield_damage = 1
+	armor_damage = 1.2
+	shield_penetration = 1
+	armor_penetration = 0
+	tracking = 0.1
+	missile_speed = 14
+	missile_evasion = 0.4
+	missile_armor = 19
+	missile_health = 19
+	missile_retarget_range = 100
+	prerequisites = {
+		"tech_BA_SPW_SHIGURE_WEAPON"
+	}
+	#科技
+	component_set = "SHIGURE_WEAPON"
+	projectile_gfx = "BA_WEAPON_GL"
+	tags = {
+		weapon_type_explosion
+		g_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+		upkeep = {
+			energy = 0
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#5 Miku
+weapon_component_template = {
+	key = "MIKU_WEAPON"
+	size = torpedo
+	type = missile
+	icon = "GFX_Miku_Weapon"
+	icon_frame = 1
+	entity = "miku_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 440
+		max = 550
+	}
+	windup = {
+		min = 200
+		max = 400
+	}
+	range = 80
+	accuracy = 1
+	hull_damage = 0.8
+	shield_damage = 1
+	armor_damage = 1.8
+	shield_penetration = 1
+	armor_penetration = 0
+	tracking = 0.1
+	missile_speed = 14
+	missile_evasion = 0.4
+	missile_armor = 17
+	missile_health = 17
+	missile_retarget_range = 100
+	prerequisites = {
+		"tech_BA_SPW_MIKU_WEAPON"
+	}
+	#科技
+	component_set = "MIKU_WEAPON"
+	projectile_gfx = "BA_WEAPON_GL"
+	tags = {
+		weapon_type_explosion
+		g_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+		upkeep = {
+			energy = 0
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#6 Hoshino #星野我好爱你啊啊啊啊啊
+weapon_component_template = {
+	key = "HOSHINO_WEAPON"
+	size = torpedo
+	type = missile
+	icon = "GFX_Hoshino_Weapon"
+	icon_frame = 1
+	entity = "hoshino_weapon_turret_base_entity"
+	power = -40
+	damage = {
+		min = 68
+		max = 141
+	}
+	windup = {
+		min = 20
+		max = 80
+	}
+	range = 100
+	accuracy = 1
+	hull_damage = 1.55
+	shield_damage = 1
+	armor_damage = 0.8
+	shield_penetration = 1
+	armor_penetration = 0
+	tracking = 0.25
+	missile_speed = 19
+	missile_evasion = 0.4
+	missile_armor = 20
+	missile_health = 20
+	missile_retarget_range = 100
+	prerequisites = {
+		"tech_BA_SPW_HOSHINO_WEAPON"
+	}
+	#科技
+	component_set = "HOSHINO_WEAPON"
+	projectile_gfx = "BA_WEAPON_SG"
+	tags = {
+		weapon_type_penetration
+		g_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+		upkeep = {
+			energy = 0
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#7 Haruka
+weapon_component_template = {
+	key = "HARUKA_WEAPON"
+	size = torpedo
+	type = missile
+	icon = "GFX_Haruka_Weapon"
+	icon_frame = 1
+	entity = "haruka_weapon_turret_base_entity"
+	power = -40
+	damage = {
+		min = 49
+		max = 149
+	}
+	windup = {
+		min = 20
+		max = 80
+	}
+	range = 100
+	accuracy = 1
+	hull_damage = 1.25
+	shield_damage = 1.1
+	armor_damage = 1
+	shield_penetration = 1
+	armor_penetration = 0
+	tracking = 0.25
+	missile_speed = 19
+	missile_evasion = 0.4
+	missile_armor = 9
+	missile_health = 9
+	missile_retarget_range = 100
+	prerequisites = {
+		"tech_BA_SPW_HARUKA_WEAPON"
+	}
+	#科技
+	component_set = "HARUKA_WEAPON"
+	projectile_gfx = "BA_WEAPON_SG"
+	tags = {
+		weapon_type_explosion
+		g_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+		upkeep = {
+			energy = 0
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#8 Juri
+weapon_component_template = {
+	key = "JURI_WEAPON"
+	size = torpedo
+	type = missile
+	icon = "GFX_Juri_Weapon"
+	icon_frame = 1
+	entity = "juri_weapon_turret_base_entity"
+	power = -40
+	damage = {
+		min = 56
+		max = 131
+	}
+	windup = {
+		min = 20
+		max = 80
+	}
+	range = 100
+	accuracy = 1
+	hull_damage = 1.25
+	shield_damage = 1.1
+	armor_damage = 1
+	shield_penetration = 1
+	armor_penetration = 0
+	tracking = 0.25
+	missile_speed = 19
+	missile_evasion = 0.4
+	missile_armor = 7
+	missile_health = 7
+	missile_retarget_range = 100
+	prerequisites = {
+		"tech_BA_SPW_JURI_WEAPON"
+	}
+	#科技
+	component_set = "JURI_WEAPON"
+	projectile_gfx = "BA_WEAPON_SG"
+	tags = {
+		weapon_type_explosion
+		g_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+		upkeep = {
+			energy = 0
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#9 Sumire
+weapon_component_template = {
+	key = "SUMIRE_WEAPON"
+	size = torpedo
+	type = missile
+	icon = "GFX_Sumire_Weapon"
+	icon_frame = 1
+	entity = "sumire_weapon_turret_base_entity"
+	power = -40
+	damage = {
+		min = 45
+		max = 181
+	}
+	windup = {
+		min = 20
+		max = 80
+	}
+	range = 100
+	accuracy = 1
+	hull_damage = 1.05
+	shield_damage = 1.3
+	armor_damage = 1
+	shield_penetration = 1
+	armor_penetration = 0
+	tracking = 0.25
+	missile_speed = 19
+	missile_evasion = 0.4
+	missile_armor = 7
+	missile_health = 7
+	missile_retarget_range = 100
+	prerequisites = {
+		"tech_BA_SPW_SUMIRE_WEAPON"
+	}
+	#科技
+	component_set = "SUMIRE_WEAPON"
+	projectile_gfx = "BA_WEAPON_SG"
+	tags = {
+		weapon_type_penetration
+		g_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+		upkeep = {
+			energy = 0
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#10 Eimi
+weapon_component_template = {
+	key = "EIMI_WEAPON"
+	size = torpedo
+	type = missile
+	icon = "GFX_Eimi_Weapon"
+	icon_frame = 1
+	entity = "eimi_weapon_turret_base_entity"
+	power = -40
+	damage = {
+		min = 49
+		max = 137
+	}
+	windup = {
+		min = 20
+		max = 70
+	}
+	range = 100
+	accuracy = 1
+	hull_damage = 1.25
+	shield_damage = 0.8
+	armor_damage = 1.55
+	shield_penetration = 1
+	armor_penetration = 0
+	tracking = 0.25
+	missile_speed = 19
+	missile_evasion = 0.4
+	missile_armor = 7
+	missile_health = 7
+	missile_retarget_range = 100
+	prerequisites = {
+		"tech_BA_SPW_EIMI_WEAPON"
+	}
+	#科技
+	component_set = "EIMI_WEAPON"
+	projectile_gfx = "BA_WEAPON_SG"
+	tags = {
+		weapon_type_explosion
+		g_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+		upkeep = {
+			energy = 0
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#11 Tsurugi
+weapon_component_template = {
+	key = "TSURUGI_WEAPON"
+	size = torpedo
+	type = missile
+	icon = "GFX_Tsurugi_Weapon"
+	icon_frame = 1
+	entity = "tsurugi_weapon_turret_base_entity"
+	power = -40
+	damage = {
+		min = 77
+		max = 92
+	}
+	windup = {
+		min = 30
+		max = 50
+	}
+	range = 100
+	accuracy = 1
+	hull_damage = 1.25
+	shield_damage = 1.3
+	armor_damage = 0.8
+	shield_penetration = 1
+	armor_penetration = 0
+	tracking = 0.25
+	missile_speed = 19
+	missile_evasion = 0.4
+	missile_armor = 21
+	missile_health = 21
+	missile_retarget_range = 100
+	prerequisites = {
+		"tech_BA_SPW_TSURUGI_WEAPON"
+	}
+	#科技
+	component_set = "TSURUGI_WEAPON"
+	projectile_gfx = "BA_WEAPON_SG"
+	tags = {
+		weapon_type_penetration
+		g_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+		upkeep = {
+			energy = 0
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#12 Mine
+weapon_component_template = {
+	key = "MINE_WEAPON"
+	size = torpedo
+	type = missile
+	icon = "GFX_Mine_Weapon"
+	icon_frame = 1
+	entity = "mine_weapon_turret_base_entity"
+	power = -40
+	damage = {
+		min = 83
+		max = 96
+	}
+	windup = {
+		min = 20
+		max = 70
+	}
+	range = 100
+	accuracy = 1
+	hull_damage = 1.55
+	shield_damage = 0.8
+	armor_damage = 1
+	shield_penetration = 1
+	armor_penetration = 0
+	tracking = 0.25
+	missile_speed = 19
+	missile_evasion = 0.4
+	missile_armor = 15
+	missile_health = 15
+	missile_retarget_range = 100
+	prerequisites = {
+		"tech_BA_SPW_MINE_WEAPON"
+	}
+	#科技
+	component_set = "MINE_WEAPON"
+	projectile_gfx = "BA_WEAPON_SG"
+	tags = {
+		weapon_type_explosion
+		g_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+		upkeep = {
+			energy = 0
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#13 Shizuko
+weapon_component_template = {
+	key = "SHIZUKO_WEAPON"
+	size = torpedo
+	type = missile
+	icon = "GFX_Shizuko_Weapon"
+	icon_frame = 1
+	entity = "shizuko_weapon_turret_base_entity"
+	power = -40
+	damage = {
+		min = 67
+		max = 168
+	}
+	windup = {
+		min = 20
+		max = 80
+	}
+	range = 100
+	accuracy = 1
+	hull_damage = 1.35
+	shield_damage = 1.1
+	armor_damage = 1.1
+	shield_penetration = 1
+	armor_penetration = 0
+	tracking = 0.25
+	missile_speed = 19
+	missile_evasion = 0.4
+	missile_armor = 50
+	missile_health = 50
+	missile_retarget_range = 100
+	prerequisites = {
+		"tech_BA_SPW_SHIZUKO_WEAPON"
+	}
+	#科技
+	component_set = "SHIZUKO_WEAPON"
+	projectile_gfx = "BA_WEAPON_SG"
+	tags = {
+		weapon_type_mystic
+		g_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+		upkeep = {
+			energy = 0
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#14 Michiru
+weapon_component_template = {
+	key = "MICHIRU_WEAPON"
+	size = torpedo
+	type = missile
+	icon = "GFX_Michiru_Weapon"
+	icon_frame = 1
+	entity = "michiru_weapon_turret_base_entity"
+	power = -40
+	damage = {
+		min = 97
+		max = 226
+	}
+	windup = {
+		min = 40
+		max = 100
+	}
+	range = 100
+	accuracy = 1
+	hull_damage = 1.25
+	shield_damage = 1.1
+	armor_damage = 1
+	shield_penetration = 1
+	armor_penetration = 0
+	tracking = 0.25
+	missile_speed = 19
+	missile_evasion = 0.4
+	missile_armor = 10
+	missile_health = 10
+	missile_retarget_range = 100
+	prerequisites = {
+		"tech_BA_SPW_MICHIRU_WEAPON"
+	}
+	#科技
+	component_set = "MICHIRU_WEAPON"
+	projectile_gfx = "BA_WEAPON_SG"
+	tags = {
+		weapon_type_mystic
+		g_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+		upkeep = {
+			energy = 0
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#16 Rabu
+weapon_component_template = {
+	key = "RABU_WEAPON"
+	size = torpedo
+	type = missile
+	icon = "GFX_Rabu_Weapon"
+	icon_frame = 1
+	entity = "rabu_weapon_turret_base_entity"
+	power = -40
+	damage = {
+		min = 175
+		max = 250
+	}
+	windup = {
+		min = 50
+		max = 120
+	}
+	range = 100
+	accuracy = 1
+	hull_damage = 1.55
+	shield_damage = 0.8
+	armor_damage = 1
+	shield_penetration = 1
+	armor_penetration = 0
+	tracking = 0.25
+	missile_speed = 19
+	missile_evasion = 0.4
+	missile_armor = 15
+	missile_health = 15
+	missile_retarget_range = 100
+	prerequisites = {
+		#"tech_BA_SPW_RABU_WEAPON"
+		tech_BA_fe
+	}
+	#科技
+	component_set = "RABU_WEAPON"
+	projectile_gfx = "BA_WEAPON_SG"
+	tags = {
+		weapon_type_mystic
+		g_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+		upkeep = {
+			energy = 0
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#18 Reisa
+weapon_component_template = {
+	key = "REISA_WEAPON"
+	size = torpedo
+	type = missile
+	icon = "GFX_Reisa_Weapon"
+	icon_frame = 1
+	entity = "reisa_weapon_turret_base_entity"
+	power = -40
+	damage = {
+		min = 180
+		max = 273
+	}
+	windup = {
+		min = 45
+		max = 135
+	}
+	range = 100
+	accuracy = 1
+	hull_damage = 1.25
+	shield_damage = 1.3
+	armor_damage = 0.8
+	shield_penetration = 0
+	armor_penetration = 1
+	tracking = 0.25
+	missile_speed = 19
+	missile_evasion = 0.4
+	missile_armor = 7
+	missile_health = 7
+	missile_retarget_range = 100
+	prerequisites = {
+		"tech_BA_SPW_REISA_WEAPON"
+	}
+	#科技
+	component_set = "REISA_WEAPON"
+	projectile_gfx = "BA_WEAPON_SG"
+	tags = {
+		weapon_type_penetration
+		g_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+		upkeep = {
+			energy = 0
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#19 Niko
+weapon_component_template = {
+	key = "NIKO_WEAPON"
+	size = torpedo
+	type = missile
+	icon = "GFX_Niko_Weapon"
+	icon_frame = 1
+	entity = "niko_weapon_turret_base_entity"
+	power = -40
+	damage = {
+		min = 100
+		max = 120
+	}
+	windup = {
+		min = 40
+		max = 80
+	}
+	range = 80
+	accuracy = 1
+	hull_damage = 2
+	shield_damage = 0.5
+	armor_damage = 0.5
+	shield_penetration = 0.5
+	armor_penetration = 0.5
+	tracking = 0.25
+	missile_speed = 250
+	missile_evasion = 0.4
+	missile_armor = 20
+	missile_health = 20
+	missile_retarget_range = 100
+	prerequisites = {
+		#"tech_BA_SPW_NIKO_WEAPON"
+		tech_BA_fe
+	}
+	#科技
+	component_set = "NIKO_WEAPON"
+	projectile_gfx = "BA_WEAPON_SG"
+	tags = {
+		weapon_type_penetration
+		g_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+		upkeep = {
+			energy = 0
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#导弹
+#15 Misaki
+weapon_component_template = {
+	key = "MISAKI_WEAPON"
+	size = torpedo
+	type = missile
+	icon = "GFX_Misaki_Weapon"
+	icon_frame = 1
+	entity = "misaki_weapon_turret_base_entity"
+	power = -50
+	damage = {
+		min = 109
+		max = 131
+	}
+	windup = {
+		min = 20
+		max = 80
+	}
+	range = 80
+	accuracy = 1
+	hull_damage = 0.8
+	shield_damage = 1.3
+	armor_damage = 1
+	shield_penetration = 1
+	armor_penetration = 0
+	tracking = 0.25
+	missile_speed = 17
+	missile_evasion = 0.4
+	missile_armor = 10
+	missile_health = 10
+	missile_retarget_range = 100
+	prerequisites = {
+		"tech_BA_SPW_MISAKI_WEAPON"
+	}
+	#科技
+	component_set = "MISAKI_WEAPON"
+	projectile_gfx = "BA_WEAPON_RL"
+	tags = {
+		weapon_type_explosion
+		g_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+		upkeep = {
+			energy = 0
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#17 Toki_Fist_Missile
+weapon_component_template = {
+	key = "TOKI_FIST_MISSILE"
+	size = torpedo
+	type = missile
+	icon = "GFX_Toki_Fist_Missile"
+	icon_frame = 1
+	entity = "toki_fist_turret_base_entity"
+	power = -60
+	damage = {
+		min = 314
+		max = 524
+	}
+	windup = {
+		min = 160
+		max = 240
+	}
+	range = 100
+	accuracy = 1
+	hull_damage = 1.5
+	shield_damage = 1
+	armor_damage = 1
+	shield_penetration = 1
+	armor_penetration = 0
+	tracking = 0.25
+	missile_speed = 20
+	missile_evasion = 0.4
+	missile_armor = 40
+	missile_health = 40
+	missile_retarget_range = 100
+	prerequisites = {
+		#"tech_BA_SPW_TOKI_FIST_MISSILE" 3
+		tech_BA_fe
+	}
+	#科技
+	component_set = "TOKI_WEAPON"
+	projectile_gfx = "toki_fist_missile"
+	tags = {
+		weapon_type_penetration
+		g_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+		upkeep = {
+			energy = 0
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#### L
+#修改：阿罗娜（#23）和普拉娜（#24）的武器type修改为missile，武器特效按照文档里修改，导弹相关属性直接照搬，槽位仍为L槽
+#新增：Akira的L槽武器（#25）
+#机枪
+#1 Nonomi
+weapon_component_template = {
+	key = "NONOMI_WEAPON"
+	size = large	#L槽
+	type = instant	#直射武器
+	icon = "GFX_Nonomi_Weapon"
+	icon_frame = 1
+	entity = "nonomi_weapon_turret_base_entity"	#炮台模型
+	power = -70	#能源
+	damage = {
+		min = 57
+		max = 185
+	}
+	#伤害区间
+	windup = {
+		min = 18
+		max = 25
+	}
+	#发射时间
+	range = 100	#射程
+	accuracy = 0.5	#准确性
+	hull_damage = 1.1	#船体伤害
+	shield_damage = 1	#护盾伤害
+	armor_damage = 1.1	#装甲伤害
+	shield_penetration = 0	#盾穿
+	armor_penetration = 0	#甲穿
+	tracking = 0.25	#追踪
+	prerequisites = {
+		"tech_BA_SPW_NONOMI_WEAPON"
+	}
+	component_set = "NONOMI_WEAPON"	#组件集
+	projectile_gfx = "BA_WEAPON_MG"	#特效
+	tags = {
+		weapon_type_penetration
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" （下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 1
+		}
+		upkeep = {
+			energy = 1
+			alloys = 0
+		}
+	}
+	target_weights = {
+		#打船权重
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#2 Hina
+weapon_component_template = {
+	key = "HINA_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_Hina_Weapon"
+	icon_frame = 1
+	entity = "hina_weapon_turret_base_entity"
+	power = -70
+	damage = {
+		min = 89
+		max = 267
+	}
+	windup = {
+		min = 17
+		max = 24
+	}
+	range = 100
+	accuracy = 0.5
+	hull_damage = 0.8
+	shield_damage = 0.8
+	armor_damage = 1.5
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.45
+	prerequisites = {
+		"tech_BA_SPW_HINA_WEAPON"
+	}
+	component_set = "HINA_WEAPON"
+	projectile_gfx = "BA_WEAPON_MG"
+	tags = {
+		weapon_type_explosion
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		#打船权重
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#3 Mutsuki
+weapon_component_template = {
+	key = "MUTSUKI_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_Mutsuki_Weapon"
+	icon_frame = 1
+	entity = "mutsuki_weapon_turret_base_entity"
+	power = -70
+	damage = {
+		min = 41
+		max = 123
+	}
+	windup = {
+		min = 10
+		max = 18
+	}
+	range = 100
+	accuracy = 0.5
+	hull_damage = 1.1
+	shield_damage = 1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_MUTSUKI_WEAPON"
+	}
+	component_set = "MUTSUKI_WEAPON"
+	projectile_gfx = "BA_WEAPON_MG"
+	tags = {
+		weapon_type_explosion
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#4 Izumi
+weapon_component_template = {
+	key = "IZUMI_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_Izumi_Weapon"
+	icon_frame = 1
+	entity = "izumi_weapon_turret_base_entity"
+	power = -70
+	damage = {
+		min = 68
+		max = 208
+	}
+	windup = {
+		min = 16
+		max = 27
+	}
+	range = 100
+	accuracy = 0.5
+	hull_damage = 0.8
+	shield_damage = 1
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.6
+	prerequisites = {
+		"tech_BA_SPW_IZUMI_WEAPON"
+	}
+	component_set = "IZUMI_WEAPON"
+	projectile_gfx = "BA_WEAPON_MG"
+	tags = {
+		weapon_type_explosion
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#5 Maki
+weapon_component_template = {
+	key = "MAKI_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_Maki_Weapon"
+	icon_frame = 1
+	entity = "maki_weapon_turret_base_entity"
+	power = -70
+	damage = {
+		min = 54
+		max = 162
+	}
+	windup = {
+		min = 13
+		max = 21
+	}
+	range = 100
+	accuracy = 0.5
+	hull_damage = 1.5
+	shield_damage = 0.7
+	armor_damage = 0.7
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_MAKI_WEAPON"
+	}
+	component_set = "MAKI_WEAPON"
+	projectile_gfx = "BA_WEAPON_MG"
+	tags = {
+		weapon_type_penetration
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#6 Koyuki
+weapon_component_template = {
+	key = "KOYUKI_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_Koyuki_Weapon"
+	icon_frame = 1
+	entity = "koyuki_weapon_turret_base_entity"
+	power = -70
+	damage = {
+		min = 83
+		max = 249
+	}
+	windup = {
+		min = 25
+		max = 30
+	}
+	range = 100
+	accuracy = 0.5
+	hull_damage = 0.8
+	shield_damage = 1
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_KOYUKI_WEAPON"
+	}
+	component_set = "KOYUKI_WEAPON"
+	projectile_gfx = "BA_WEAPON_MG"
+	tags = {
+		weapon_type_mystic
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#6 Koyuki
+weapon_component_template = {
+	key = "WhiteRabbit_Millennium_Weapon"
+	size = large
+	type = instant
+	icon = "GFX_WhiteRabbit_Millennium_Weapon"
+	icon_frame = 1
+	entity = "WhiteRabbit_Millennium_Weapon_turret_base_entity"
+	power = -70
+	damage = {
+		min = 83
+		max = 249
+	}
+	windup = {
+		min = 25
+		max = 30
+	}
+	range = 100
+	accuracy = 0.5
+	hull_damage = 0.8
+	shield_damage = 1
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		#"tech_BA_SPW_WhiteRabbit_Millennium_Weapon"
+		tech_BA_fe
+	}
+	component_set = "WhiteRabbit_Millennium_Weapon"
+	projectile_gfx = "BA_WEAPON_MG"
+	tags = {
+		weapon_type_penetration
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#7 Kotori
+weapon_component_template = {
+	key = "KOTORI_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_Kotori_Weapon"
+	icon_frame = 1
+	entity = "kotori_weapon_turret_base_entity"
+	power = -70
+	damage = {
+		min = 36
+		max = 108
+	}
+	windup = {
+		min = 15
+		max = 20
+	}
+	range = 100
+	accuracy = 0.5
+	hull_damage = 1.1
+	shield_damage = 1
+	armor_damage = 1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_KOTORI_WEAPON"
+	}
+	component_set = "KOTORI_WEAPON"
+	projectile_gfx = "BA_WEAPON_MG"
+	tags = {
+		weapon_type_penetration
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#8 Kazusa
+weapon_component_template = {
+	key = "KAZUSA_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_Kazusa_Weapon"
+	icon_frame = 1
+	entity = "kazusa_weapon_turret_base_entity"
+	power = -70
+	damage = {
+		min = 58
+		max = 188
+	}
+	windup = {
+		min = 15
+		max = 30
+	}
+	range = 100
+	accuracy = 0.5
+	hull_damage = 0.8
+	shield_damage = 1
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.3
+	prerequisites = {
+		"tech_BA_SPW_KAZUSA_WEAPON"
+	}
+	component_set = "KAZUSA_WEAPON"
+	projectile_gfx = "BA_WEAPON_MG"
+	tags = {
+		weapon_type_penetration
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#9 Pina
+weapon_component_template = {
+	key = "PINA_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_Pina_Weapon"
+	icon_frame = 1
+	entity = "pina_weapon_turret_base_entity"
+	power = -70
+	damage = {
+		min = 49
+		max = 147
+	}
+	windup = {
+		min = 15
+		max = 21
+	}
+	range = 100
+	accuracy = 0.5
+	hull_damage = 1
+	shield_damage = 1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_PINA_WEAPON"
+	}
+	component_set = "PINA_WEAPON"
+	projectile_gfx = "BA_WEAPON_MG"
+	tags = {
+		weapon_type_penetration
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#10 Saki
+weapon_component_template = {
+	key = "SAKI_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_Saki_Weapon"
+	icon_frame = 1
+	entity = "saki_weapon_turret_base_entity"
+	power = -70
+	damage = {
+		min = 70
+		max = 210
+	}
+	windup = {
+		min = 19
+		max = 30
+	}
+	range = 100
+	accuracy = 0.5
+	hull_damage = 0.8
+	shield_damage = 1
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.23
+	prerequisites = {
+		"tech_BA_SPW_SAKI_WEAPON"
+	}
+	component_set = "SAKI_WEAPON"
+	projectile_gfx = "BA_WEAPON_MG"
+	tags = {
+		weapon_type_penetration
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#狙击步枪
+#11 Iori
+weapon_component_template = {
+	key = "IORI_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_Iori_Weapon"
+	icon_frame = 1
+	entity = "iori_weapon_turret_base_entity"
+	power = -70
+	damage = {
+		min = 74
+		max = 296
+	}
+	windup = {
+		min = 25
+		max = 40
+	}
+	range = 135
+	accuracy = 0.95
+	hull_damage = 0.7
+	shield_damage = 1.5
+	armor_damage = 0.7
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_IORI_WEAPON"
+	}
+	component_set = "IORI_WEAPON"
+	projectile_gfx = "BA_WEAPON_SR"
+	tags = {
+		weapon_type_penetration
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#12 Aru
+weapon_component_template = {
+	key = "ARU_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_Aru_Weapon"
+	icon_frame = 1
+	entity = "aru_weapon_turret_base_entity"
+	power = -70
+	damage = {
+		min = 88
+		max = 254
+	}
+	windup = {
+		min = 25
+		max = 40
+	}
+	range = 135
+	accuracy = 0.95
+	hull_damage = 1
+	shield_damage = 0.8
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_ARU_WEAPON"
+	}
+	component_set = "ARU_WEAPON"
+	projectile_gfx = "BA_WEAPON_SR"
+	tags = {
+		weapon_type_explosion
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#13 Haruna
+weapon_component_template = {
+	key = "HARUNA_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_Haruna_Weapon"
+	icon_frame = 1
+	entity = "haruna_weapon_turret_base_entity"
+	power = -70
+	damage = {
+		min = 90
+		max = 270
+	}
+	windup = {
+		min = 25
+		max = 40
+	}
+	range = 135
+	accuracy = 0.95
+	hull_damage = 0.8
+	shield_damage = 1
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_HARUNA_WEAPON"
+	}
+	component_set = "HARUNA_WEAPON"
+	projectile_gfx = "BA_WEAPON_SR"
+	tags = {
+		weapon_type_mystic
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#14 Midori
+weapon_component_template = {
+	key = "MIDORI_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_Midori_Weapon"
+	icon_frame = 1
+	entity = "midori_weapon_turret_base_entity"
+	power = -70
+	damage = {
+		min = 75
+		max = 225
+	}
+	windup = {
+		min = 25
+		max = 40
+	}
+	range = 135
+	accuracy = 0.95
+	hull_damage = 1.3
+	shield_damage = 0.8
+	armor_damage = 1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_MIDORI_WEAPON"
+	}
+	component_set = "MIDORI_WEAPON"
+	projectile_gfx = "BA_WEAPON_SR"
+	tags = {
+		weapon_type_penetration
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#15 Hasumi
+weapon_component_template = {
+	key = "HASUMI_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_Hasumi_Weapon"
+	icon_frame = 1
+	entity = "hasumi_weapon_turret_base_entity"
+	power = -70
+	damage = {
+		min = 107
+		max = 321
+	}
+	windup = {
+		min = 25
+		max = 40
+	}
+	range = 135
+	accuracy = 0.95
+	hull_damage = 1.1
+	shield_damage = 1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_HASUMI_WEAPON"
+	}
+	component_set = "HASUMI_WEAPON"
+	projectile_gfx = "BA_WEAPON_SR"
+	tags = {
+		weapon_type_penetration
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#16 Koharu
+weapon_component_template = {
+	key = "KOHARU_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_Koharu_Weapon"
+	icon_frame = 1
+	entity = "koharu_weapon_turret_base_entity"
+	power = -68
+	damage = {
+		min = 50
+		max = 150
+	}
+	windup = {
+		min = 17
+		max = 29
+	}
+	range = 135
+	accuracy = 0.95
+	hull_damage = 1.3
+	shield_damage = 1
+	armor_damage = 0.8
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_KOHARU_WEAPON"
+	}
+	component_set = "KOHARU_WEAPON"
+	projectile_gfx = "BA_WEAPON_SR"
+	tags = {
+		weapon_type_explosion
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#17 Ui
+weapon_component_template = {
+	key = "UI_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_Ui_Weapon"
+	icon_frame = 1
+	entity = "ui_weapon_turret_base_entity"
+	power = -70
+	damage = {
+		min = 57
+		max = 171
+	}
+	windup = {
+		min = 25
+		max = 40
+	}
+	range = 135
+	accuracy = 0.95
+	hull_damage = 1.3
+	shield_damage = 0.8
+	armor_damage = 1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_UI_WEAPON"
+	}
+	component_set = "UI_WEAPON"
+	projectile_gfx = "BA_WEAPON_SR"
+	tags = {
+		weapon_type_explosion
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#18 Shun
+weapon_component_template = {
+	key = "SHUN_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_Shun_Weapon"
+	icon_frame = 1
+	entity = "shun_weapon_turret_base_entity"
+	power = -70
+	damage = {
+		min = 42
+		max = 168
+	}
+	windup = {
+		min = 25
+		max = 40
+	}
+	range = 135
+	accuracy = 0.95
+	hull_damage = 1
+	shield_damage = 0.8
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_SHUN_WEAPON"
+	}
+	component_set = "SHUN_WEAPON"
+	projectile_gfx = "BA_WEAPON_SR"
+	tags = {
+		weapon_type_explosion
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#19 Tomoe
+weapon_component_template = {
+	key = "TOMOE_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_Tomoe_Weapon"
+	icon_frame = 1
+	entity = "tomoe_weapon_turret_base_entity"
+	power = -70
+	damage = {
+		min = 50
+		max = 200
+	}
+	windup = {
+		min = 25
+		max = 40
+	}
+	range = 135
+	accuracy = 0.95
+	hull_damage = 1
+	shield_damage = 1.1
+	armor_damage = 1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_TOMOE_WEAPON"
+	}
+	component_set = "TOMOE_WEAPON"
+	projectile_gfx = "BA_WEAPON_SR"
+	tags = {
+		weapon_type_penetration
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#20 Wakamo
+weapon_component_template = {
+	key = "WAKAMO_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_Wakamo_Weapon"
+	icon_frame = 1
+	entity = "wakamo_weapon_turret_base_entity"
+	power = -68
+	damage = {
+		min = 83
+		max = 329
+	}
+	windup = {
+		min = 15
+		max = 33
+	}
+	range = 135
+	accuracy = 0.95
+	hull_damage = 0.8
+	shield_damage = 1.3
+	armor_damage = 1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_WAKAMO_WEAPON"
+	}
+	component_set = "WAKAMO_WEAPON"
+	projectile_gfx = "BA_WEAPON_SR"
+	tags = {
+		weapon_type_mystic
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#21 Fubuki
+weapon_component_template = {
+	key = "FUBUKI_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_Fubuki_Weapon"
+	icon_frame = 1
+	entity = "fubuki_weapon_turret_base_entity"
+	power = -70
+	damage = {
+		min = 47
+		max = 184
+	}
+	windup = {
+		min = 25
+		max = 40
+	}
+	range = 135
+	accuracy = 0.95
+	hull_damage = 1
+	shield_damage = 1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_FUBUKI_WEAPON"
+	}
+	component_set = "FUBUKI_WEAPON"
+	projectile_gfx = "BA_WEAPON_SR"
+	tags = {
+		weapon_type_penetration
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#22 Miyu
+weapon_component_template = {
+	key = "MIYU_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_Miyu_Weapon"
+	icon_frame = 1
+	entity = "miyu_weapon_turret_base_entity"
+	power = -68
+	damage = {
+		min = 61
+		max = 183
+	}
+	windup = {
+		min = 25
+		max = 40
+	}
+	range = 135
+	accuracy = 1
+	hull_damage = 1
+	shield_damage = 0.8
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_MIYU_WEAPON"
+	}
+	component_set = "MIYU_WEAPON"
+	projectile_gfx = "BA_WEAPON_SR"
+	tags = {
+		weapon_type_penetration
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#27 Yukari
+weapon_component_template = {
+	key = "CH0161_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_CH0161_Weapon"
+	icon_frame = 1
+	entity = "CH0161_weapon_turret_base_entity"
+	power = -68
+	damage = {
+		min = 61
+		max = 183
+	}
+	windup = {
+		min = 25
+		max = 40
+	}
+	range = 135
+	accuracy = 1
+	hull_damage = 1
+	shield_damage = 0.8
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		#"tech_BA_SPW_CH0161_WEAPON"
+		tech_BA_fe
+	}
+	component_set = "CH0161_WEAPON"
+	projectile_gfx = "BA_WEAPON_SR"
+	tags = {
+		#weapon_type_sonic
+		l_slot
+	}
+	ai_tags = {
+		#weapon_role_anti_elastic_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#28 Renge
+weapon_component_template = {
+	key = "CH0224_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_CH0224_Weapon"
+	icon_frame = 1
+	entity = "CH0224_weapon_turret_base_entity"
+	power = -68
+	damage = {
+		min = 61
+		max = 183
+	}
+	windup = {
+		min = 25
+		max = 40
+	}
+	range = 135
+	accuracy = 1
+	hull_damage = 1
+	shield_damage = 0.8
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		#"tech_BA_SPW_CH0224_WEAPON"
+		tech_BA_fe
+	}
+	component_set = "CH0224_WEAPON"
+	projectile_gfx = "BA_WEAPON_SR"
+	tags = {
+		weapon_type_explosion
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#28 Kikyo
+weapon_component_template = {
+	key = "CH0225_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_CH0225_Weapon"
+	icon_frame = 1
+	entity = "CH0225_weapon_turret_base_entity"
+	power = -68
+	damage = {
+		min = 61
+		max = 183
+	}
+	windup = {
+		min = 25
+		max = 40
+	}
+	range = 135
+	accuracy = 1
+	hull_damage = 1
+	shield_damage = 0.8
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		#"tech_BA_SPW_CH0225_WEAPON"
+		tech_BA_fe
+	}
+	component_set = "CH0225_WEAPON"
+	projectile_gfx = "BA_WEAPON_SR"
+	tags = {
+		weapon_type_penetration
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#29 Wakamo Swimsuit
+weapon_component_template = {
+	key = "CH0175_WEAPON"
+	size = large
+	type = instant
+	icon = "GFX_CH0161_Weapon"
+	icon_frame = 1
+	entity = "CH0175_weapon_turret_base_entity"
+	power = -68
+	damage = {
+		min = 61
+		max = 183
+	}
+	windup = {
+		min = 25
+		max = 40
+	}
+	range = 135
+	accuracy = 1
+	hull_damage = 1
+	shield_damage = 0.8
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		#"tech_BA_SPW_CH0175_WEAPON"
+		tech_BA_fe
+	}
+	component_set = "CH0175_WEAPON"
+	projectile_gfx = "BA_WEAPON_SR"
+	tags = {
+		#weapon_type_sonic
+		l_slot
+	}
+	ai_tags = {
+		#weapon_role_anti_elastic_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#彩蛋
+#23 Arona
+weapon_component_template = {
+	key = "ARONA_WEAPON"
+	size = large
+	type = missile
+	icon = "GFX_Arona_Weapon"
+	icon_frame = 1
+	entity = "arona_weapon_turret_base_entity"
+	power = -70
+	damage = {
+		min = 150
+		max = 300
+	}
+	windup = {
+		min = 50
+		max = 100
+	}
+	range = 135
+	accuracy = 0.99
+	hull_damage = 2
+	shield_damage = 2
+	armor_damage = 0.5
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	missile_speed = 18
+	missile_evasion = 2
+	missile_armor = 100
+	missile_health = 300
+	prerequisites = {
+		#"tech_BA_SPW_ARONA_WEAPON"
+		tech_BA_fe
+	}
+	component_set = "ARONA_WEAPON"
+	projectile_gfx = "Arona_Gacha_Weapon"
+	tags = {
+		weapon_type_destruction
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_structure
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#24 Pulana
+weapon_component_template = {
+	key = "PULANA_WEAPON"
+	size = large
+	type = missile
+	icon = "GFX_Pulana_Weapon"
+	icon_frame = 1
+	entity = "pulana_weapon_turret_base_entity"
+	power = -70
+	damage = {
+		min = 150
+		max = 300
+	}
+	windup = {
+		min = 50
+		max = 100
+	}
+	range = 135
+	accuracy = 0.99
+	hull_damage = 2
+	shield_damage = 0.5
+	armor_damage = 2
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	missile_speed = 18
+	missile_evasion = 2
+	missile_armor = 100
+	missile_health = 300
+	missile_retarget_range = 150
+	prerequisites = {
+		#"tech_BA_SPW_PULANA_WEAPON"
+		tech_BA_fe
+	}
+	component_set = "PULANA_WEAPON"
+	projectile_gfx = "Pulana_Gacha_Weapon"
+	tags = {
+		weapon_type_destruction
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_structure
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#25 Akira_L
+weapon_component_template = {
+	key = "AKIRA_WEAPON_L"
+	size = large
+	type = instant
+	icon = "GFX_Akira_Weapon_L"
+	icon_frame = 1
+	entity = "akira_weapon_l_turret_base_entity"
+	power = -140
+	damage = {
+		min = 114
+		max = 314
+	}
+	windup = {
+		min = 19
+		max = 37
+	}
+	range = 135
+	accuracy = 0.99
+	hull_damage = 1.25
+	shield_damage = 0.25
+	armor_damage = 0.25
+	shield_penetration = 1
+	armor_penetration = 1
+	tracking = 0.99
+	prerequisites = {
+		#"tech_BA_SPW_AKIRA_WEAPON_L"
+		tech_BA_fe
+	}
+	component_set = "AKIRA_WEAPON"
+	projectile_gfx = "BA_WEAPON_SR"
+	tags = {
+		weapon_type_mystic
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#26 SchoolGirlBoss02_SukebanSwim_MG
+weapon_component_template = {
+	key = "SchoolGirlBoss02_SukebanSwim_MG"
+	size = large	#L槽
+	type = instant	#直射武器
+	icon = "GFX_SchoolGirlBoss02_SukebanSwim_MG"
+	icon_frame = 1
+	entity = "SchoolGirlBoss02_SukebanSwim_MG_turret_base_entity"	#炮台模型
+	power = -70	#能源
+	damage = {
+		min = 57
+		max = 185
+	}
+	#伤害区间
+	windup = {
+		min = 18
+		max = 25
+	}
+	#发射时间
+	range = 100	#射程
+	accuracy = 0.5	#准确性
+	hull_damage = 1.1	#船体伤害
+	shield_damage = 1	#护盾伤害
+	armor_damage = 1.1	#装甲伤害
+	shield_penetration = 0	#盾穿
+	armor_penetration = 0	#甲穿
+	tracking = 0.25	#追踪
+	prerequisites = {
+		#"tech_BA_SPW_SchoolGirlBoss02_SukebanSwim_MG"
+		tech_BA_fe
+	}
+	component_set = "SchoolGirlBoss02_SukebanSwim_MG"	#组件集
+	projectile_gfx = "BA_WEAPON_MG"	#特效
+	tags = {
+		weapon_type_penetration
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" （下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 1
+		}
+		upkeep = {
+			energy = 1
+			alloys = 0
+		}
+	}
+	target_weights = {
+		#打船权重
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#26 Attendant_Highlander_MG
+weapon_component_template = {
+	key = "Attendant_Highlander_MG"
+	size = large	#L槽
+	type = instant	#直射武器
+	icon = "GFX_Attendant_Highlander_MG"
+	icon_frame = 1
+	entity = "Attendant_Highlander_MG_turret_base_entity"	#炮台模型
+	power = -70	#能源
+	damage = {
+		min = 57
+		max = 185
+	}
+	#伤害区间
+	windup = {
+		min = 18
+		max = 25
+	}
+	#发射时间
+	range = 100	#射程
+	accuracy = 0.5	#准确性
+	hull_damage = 1.1	#船体伤害
+	shield_damage = 1	#护盾伤害
+	armor_damage = 1.1	#装甲伤害
+	shield_penetration = 0	#盾穿
+	armor_penetration = 0	#甲穿
+	tracking = 0.25	#追踪
+	prerequisites = {
+		#"tech_BA_SPW_Attendant_Highlander_MG"
+		tech_BA_fe
+	}
+	component_set = "Attendant_Highlander_MG"	#组件集
+	projectile_gfx = "BA_WEAPON_MG"	#特效
+	tags = {
+		weapon_type_penetration
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" （下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 1
+		}
+		upkeep = {
+			energy = 1
+			alloys = 0
+		}
+	}
+	target_weights = {
+		#打船权重
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+weapon_component_template = {
+	key = "FoodTruck_GenbuStore_MG"
+	size = large
+	type = instant
+	icon = "GFX_FoodTruck_GenbuStore_MG"
+	icon_frame = 1
+	entity = "FoodTruck_GenbuStore_MG_turret_base_entity"
+	power = -70
+	damage = {
+		min = 58
+		max = 188
+	}
+	windup = {
+		min = 15
+		max = 30
+	}
+	range = 100
+	accuracy = 0.5
+	hull_damage = 0.8
+	shield_damage = 1
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.3
+	prerequisites = {
+		#"tech_BA_SPW_FoodTruck_GenbuStore_MG"
+		tech_BA_fe
+	}
+	component_set = "FoodTruck_GenbuStore_MG"
+	projectile_gfx = "BA_WEAPON_MG"
+	tags = {
+		weapon_type_penetration
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+weapon_component_template = {
+	key = "FoodTruck_GenbuStore_MG_02"
+	size = large
+	type = instant
+	icon = "GFX_FoodTruck_GenbuStore_MG_02"
+	icon_frame = 1
+	entity = "FoodTruck_GenbuStore_MG_02_turret_base_entity"
+	power = -70
+	damage = {
+		min = 58
+		max = 188
+	}
+	windup = {
+		min = 15
+		max = 30
+	}
+	range = 100
+	accuracy = 0.5
+	hull_damage = 0.8
+	shield_damage = 1
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.3
+	prerequisites = {
+		#"tech_BA_SPW_FoodTruck_GenbuStore_MG_02"
+		tech_BA_fe
+	}
+	component_set = "FoodTruck_GenbuStore_MG_02"
+	projectile_gfx = "BA_WEAPON_FT"
+	tags = {
+		weapon_type_penetration
+		l_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#### M
+#突击步枪
+#1 Shiroko #呀，那个女人可是会把老师打晕再绑到地下室当性奴的呀！
+weapon_component_template = {
+	key = "SHIROKO_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Shiroko_Weapon"
+	icon_frame = 1
+	entity = "shiroko_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 28
+		max = 95
+	}
+	windup = {
+		min = 16
+		max = 48
+	}
+	range = 75
+	accuracy = 0.71
+	hull_damage = 1
+	shield_damage = 0.8
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_SHIROKO_WEAPON"
+	}
+	component_set = "SHIROKO_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_explosion
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#2 Serika #猫猫嘿嘿嘿
+weapon_component_template = {
+	key = "SERIKA_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Serika_Weapon"
+	icon_frame = 1
+	entity = "serika_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 28
+		max = 88
+	}
+	windup = {
+		min = 14
+		max = 48
+	}
+	range = 75
+	accuracy = 0.72
+	hull_damage = 1
+	shield_damage = 1.1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.8
+	prerequisites = {
+		"tech_BA_SPW_SERIKA_WEAPON"
+	}
+	component_set = "SERIKA_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_explosion
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#3 Junko #小火龙捏
+weapon_component_template = {
+	key = "JUNKO_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Junko_Weapon"
+	icon_frame = 1
+	entity = "junko_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 27
+		max = 86
+	}
+	windup = {
+		min = 12
+		max = 50
+	}
+	range = 75
+	accuracy = 0.7
+	hull_damage = 1.1
+	shield_damage = 1.1
+	armor_damage = 1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.75
+	prerequisites = {
+		"tech_BA_SPW_JUNKO_WEAPON"
+	}
+	component_set = "JUNKO_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_penetration
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#4 Akari #美食部挺正常的人
+weapon_component_template = {
+	key = "AKARI_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Akari_Weapon"
+	icon_frame = 1
+	entity = "akari_weapon_turret_base_entity"
+	power = -75
+	damage = {
+		min = 21
+		max = 140
+	}
+	windup = {
+		min = 16
+		max = 48
+	}
+	range = 60
+	accuracy = 0.69
+	hull_damage = 1.1
+	shield_damage = 1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_AKARI_WEAPON"
+	}
+	component_set = "AKARI_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_explosion
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#5 Momoi #苦呀希
+weapon_component_template = {
+	key = "MOMOI_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Momoi_Weapon"
+	icon_frame = 1
+	entity = "momoi_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 18
+		max = 63
+	}
+	windup = {
+		min = 20
+		max = 60
+	}
+	range = 75
+	accuracy = 0.68
+	hull_damage = 1.1
+	shield_damage = 1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.8
+	prerequisites = {
+		"tech_BA_SPW_MOMOI_WEAPON"
+	}
+	component_set = "MOMOI_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_penetration
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#6 Asuna #你游一对堆兔子
+weapon_component_template = {
+	key = "ASUNA_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Asuna_Weapon"
+	icon_frame = 1
+	entity = "asuna_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 21
+		max = 71
+	}
+	windup = {
+		min = 16
+		max = 38
+	}
+	range = 75
+	accuracy = 1
+	hull_damage = 1
+	shield_damage = 1
+	armor_damage = 1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_ASUNA_WEAPON"
+	}
+	component_set = "ASUNA_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_mystic
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#7 Hare #无人机
+weapon_component_template = {
+	key = "HARE_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Hare_Weapon"
+	icon_frame = 1
+	entity = "hare_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 17
+		max = 58
+	}
+	windup = {
+		min = 14
+		max = 36
+	}
+	range = 75
+	accuracy = 0.71
+	hull_damage = 1
+	shield_damage = 1.1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.81
+	prerequisites = {
+		"tech_BA_SPW_HARE_WEAPON"
+	}
+	component_set = "HARE_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_explosion
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#8 Chihiro #看立绘的时候感觉大腿好粗
+weapon_component_template = {
+	key = "CHIHIRO_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Chihiro_Weapon"
+	icon_frame = 1
+	entity = "chihiro_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 27
+		max = 81
+	}
+	windup = {
+		min = 16
+		max = 42
+	}
+	range = 75
+	accuracy = 0.71
+	hull_damage = 0.8
+	shield_damage = 1
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.79
+	prerequisites = {
+		"tech_BA_SPW_CHIHIRO_WEAPON"
+	}
+	component_set = "CHIHIRO_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_penetration
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#9 Toki #机甲嘿嘿嘿
+weapon_component_template = {
+	key = "TOKI_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Toki_Weapon"
+	icon_frame = 1
+	entity = "toki_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 24
+		max = 80
+	}
+	windup = {
+		min = 10
+		max = 20
+	}
+	range = 75
+	accuracy = 0.7
+	hull_damage = 1
+	shield_damage = 1
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.79
+	prerequisites = {
+		"tech_BA_SPW_TOKI_WEAPON"
+	}
+	component_set = "TOKI_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_explosion
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#10 Yoshimi
+weapon_component_template = {
+	key = "YOSHIMI_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Yoshimi_Weapon"
+	icon_frame = 1
+	entity = "yoshimi_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 20
+		max = 94
+	}
+	windup = {
+		min = 18
+		max = 36
+	}
+	range = 75
+	accuracy = 0.7
+	hull_damage = 1.1
+	shield_damage = 1
+	armor_damage = 1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.8
+	prerequisites = {
+		"tech_BA_SPW_YOSHIMI_WEAPON"
+	}
+	component_set = "YOSHIMI_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_penetration
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#11 Suzumi #投掷傻瓜蛋！
+weapon_component_template = {
+	key = "SUZUMI_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Suzumi_Weapon"
+	icon_frame = 1
+	entity = "suzumi_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 16
+		max = 52
+	}
+	windup = {
+		min = 10
+		max = 30
+	}
+	range = 75
+	accuracy = 0.69
+	hull_damage = 1
+	shield_damage = 1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.79
+	prerequisites = {
+		"tech_BA_SPW_SUZUMI_WEAPON"
+	}
+	component_set = "SUZUMI_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_explosion
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#12 Hanae
+weapon_component_template = {
+	key = "HANAE_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Hanae_Weapon"
+	icon_frame = 1
+	entity = "hanae_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 16
+		max = 51
+	}
+	windup = {
+		min = 10
+		max = 30
+	}
+	range = 75
+	accuracy = 0.68
+	hull_damage = 1
+	shield_damage = 1.1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.78
+	prerequisites = {
+		"tech_BA_SPW_HANAE_WEAPON"
+	}
+	component_set = "HANAE_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_explosion
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#13 Hifumi #啊哈哈
+weapon_component_template = {
+	key = "HIFUMI_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Hifumi_Weapon"
+	icon_frame = 1
+	entity = "hifumi_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 20
+		max = 67
+	}
+	windup = {
+		min = 12
+		max = 38
+	}
+	range = 75
+	accuracy = 1
+	hull_damage = 1.3
+	shield_damage = 1
+	armor_damage = 0.8
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_HIFUMI_WEAPON"
+	}
+	component_set = "HIFUMI_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_penetration
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#14 Azusa #梓宝嘿嘿嘿
+weapon_component_template = {
+	key = "AZUSA_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Azusa_Weapon"
+	icon_frame = 1
+	entity = "azusa_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 18
+		max = 63
+	}
+	windup = {
+		min = 10
+		max = 30
+	}
+	range = 75
+	accuracy = 0.7
+	hull_damage = 0.8
+	shield_damage = 1.3
+	armor_damage = 1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.68
+	prerequisites = {
+		"tech_BA_SPW_AZUSA_WEAPON"
+	}
+	component_set = "AZUSA_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_explosion
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#15 Hanako
+weapon_component_template = {
+	key = "HANAKO_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Hanako_Weapon"
+	icon_frame = 1
+	entity = "hanako_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 14
+		max = 50
+	}
+	windup = {
+		min = 10
+		max = 30
+	}
+	range = 75
+	accuracy = 0.9
+	hull_damage = 1
+	shield_damage = 1.1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.7
+	prerequisites = {
+		"tech_BA_SPW_HANAKO_WEAPON"
+	}
+	component_set = "HANAKO_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_penetration
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#16 Serina
+weapon_component_template = {
+	key = "SERINA_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Serina_Weapon"
+	icon_frame = 1
+	entity = "serina_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 17
+		max = 49
+	}
+	windup = {
+		min = 10
+		max = 25
+	}
+	range = 75
+	accuracy = 0.7
+	hull_damage = 1
+	shield_damage = 1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.8
+	prerequisites = {
+		"tech_BA_SPW_SERINA_WEAPON"
+	}
+	component_set = "SERINA_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_mystic
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#17 Shimiko
+weapon_component_template = {
+	key = "SHIMIKO_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Shimiko_Weapon"
+	icon_frame = 1
+	entity = "shimiko_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 15
+		max = 52
+	}
+	windup = {
+		min = 10
+		max = 25
+	}
+	range = 75
+	accuracy = 0.71
+	hull_damage = 1
+	shield_damage = 1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.72
+	prerequisites = {
+		"tech_BA_SPW_SHIMIKO_WEAPON"
+	}
+	component_set = "SHIMIKO_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_explosion
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#18 Sakurako
+weapon_component_template = {
+	key = "SAKURAKO_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Sakurako_Weapon"
+	icon_frame = 1
+	entity = "sakurako_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 29
+		max = 93
+	}
+	windup = {
+		min = 18
+		max = 40
+	}
+	range = 75
+	accuracy = 0.7
+	hull_damage = 1.3
+	shield_damage = 1
+	armor_damage = 0.8
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_SAKURAKO_WEAPON"
+	}
+	component_set = "SAKURAKO_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_mystic
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#19 Kokona
+weapon_component_template = {
+	key = "KOKONA_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Kokona_Weapon"
+	icon_frame = 1
+	entity = "kokona_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 21
+		max = 70
+	}
+	windup = {
+		min = 14
+		max = 34
+	}
+	range = 75
+	accuracy = 0.77
+	hull_damage = 1
+	shield_damage = 0.8
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.75
+	prerequisites = {
+		"tech_BA_SPW_KOKONA_WEAPON"
+	}
+	component_set = "KOKONA_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_penetration
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#20 Kaho
+weapon_component_template = {
+	key = "KAHO_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Kaho_Weapon"
+	icon_frame = 1
+	entity = "kaho_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 26
+		max = 84
+	}
+	windup = {
+		min = 18
+		max = 30
+	}
+	range = 75
+	accuracy = 0.7
+	hull_damage = 1.3
+	shield_damage = 0.8
+	armor_damage = 1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.8
+	prerequisites = {
+		"tech_BA_SPW_KAHO_WEAPON"
+	}
+	component_set = "KAHO_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_mystic
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#21 Saori
+weapon_component_template = {
+	key = "SAORI_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Saori_Weapon"
+	icon_frame = 1
+	entity = "saori_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 22
+		max = 73
+	}
+	windup = {
+		min = 12
+		max = 28
+	}
+	range = 75
+	accuracy = 0.71
+	hull_damage = 0.8
+	shield_damage = 1.3
+	armor_damage = 1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.78
+	prerequisites = {
+		"tech_BA_SPW_SAORI_WEAPON"
+	}
+	component_set = "SAORI_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_explosion
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#23 Minori
+weapon_component_template = {
+	key = "MINORI_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Minori_Weapon"
+	icon_frame = 1
+	entity = "minori_weapon_turret_base_entity"
+	power = -48
+	damage = {
+		min = 25
+		max = 72
+	}
+	windup = {
+		min = 15
+		max = 31
+	}
+	range = 75
+	accuracy = 0.8
+	hull_damage = 1
+	shield_damage = 1.3
+	armor_damage = 0.8
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.75
+	prerequisites = {
+		"tech_BA_SPW_MINORI_WEAPON"
+	}
+	component_set = "MINORI_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_explosion
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#24 Yukino
+weapon_component_template = {
+	key = "YUKINO_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Yukino_Weapon"
+	icon_frame = 1
+	entity = "yukino_weapon_turret_base_entity"
+	power = -55
+	damage = {
+		min = 30
+		max = 70
+	}
+	windup = {
+		min = 12
+		max = 28
+	}
+	range = 75
+	accuracy = 0.9
+	hull_damage = 1.1
+	shield_damage = 1.1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.75
+	prerequisites = {
+		#"tech_BA_SPW_YUKINO_WEAPON"
+		tech_BA_fe
+	}
+	component_set = "YUKINO_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_explosion
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#25 Ichika
+weapon_component_template = {
+	key = "ICHIKA_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_Ichika_Weapon"
+	icon_frame = 1
+	entity = "ichika_weapon_turret_base_entity"
+	power = -55
+	damage = {
+		min = 30
+		max = 70
+	}
+	windup = {
+		min = 12
+		max = 28
+	}
+	range = 75
+	accuracy = 0.9
+	hull_damage = 1.1
+	shield_damage = 1.1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.75
+	prerequisites = {
+		#"tech_BA_SPW_ICHIKA_WEAPON"
+		tech_BA_fe
+	}
+	component_set = "ICHIKA_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		#weapon_type_sonic
+		m_slot
+	}
+	ai_tags = {
+		#weapon_role_anti_elastic_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#彩蛋
+#22 EN0002
+weapon_component_template = {
+	key = "EN0002_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_EN0002_Weapon"
+	icon_frame = 1
+	entity = "EN0002_weapon_turret_base_entity"
+	power = -60
+	damage = {
+		min = 25
+		max = 105
+	}
+	windup = {
+		min = 14
+		max = 38
+	}
+	range = 75
+	accuracy = 0.9
+	hull_damage = 1.5
+	shield_damage = 1
+	armor_damage = 1
+	shield_penetration = 1
+	armor_penetration = 1
+	tracking = 0.9
+	prerequisites = {
+		#"tech_BA_SPW_EN0002_WEAPON"
+		tech_BA_fe
+	}
+	component_set = "EN0002_WEAPON"
+	projectile_gfx = "BA_WEAPON_AR"
+	tags = {
+		weapon_type_destruction
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_structure
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#26 Mikoto
+weapon_component_template = {
+	key = "CH9998_WEAPON"
+	size = medium
+	type = instant
+	icon = "GFX_CH9998_Weapon"
+	icon_frame = 1
+	entity = "CH9998_weapon_turret_base_entity"
+	power = -45
+	damage = {
+		min = 10
+		max = 20
+	}
+	windup = {
+		min = 2
+		max = 14
+	}
+	range = 75
+	accuracy = 0.7
+	hull_damage = 1.1
+	shield_damage = 1.1
+	armor_damage = 1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.75
+	prerequisites = {
+		#"tech_BA_SPW_CH9998_WEAPON"
+		tech_BA_fe
+	}
+	component_set = "CH9998_WEAPON"
+	projectile_gfx = "CH9998_WEAPON"
+	tags = {
+		weapon_type_penetration
+		m_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#### P
+#冲锋枪
+#1 Fuuka
+weapon_component_template = {
+	key = "FUUKA_WEAPON"
+	size = point_defence
+	type = instant
+	icon = "GFX_Fuuka_Weapon"
+	icon_frame = 1
+	entity = "fuuka_weapon_turret_base_entity"
+	power = -30
+	damage = {
+		min = 5
+		max = 10
+	}
+	windup = {
+		min = 5
+		max = 5
+	}
+	range = 30
+	accuracy = 0.8
+	hull_damage = 1.1
+	shield_damage = 1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.25
+	prerequisites = {
+		"tech_BA_SPW_FUUKA_WEAPON"
+	}
+	component_set = "FUUKA_WEAPON"
+	projectile_gfx = "BA_WEAPON_SMG"
+	tags = {
+		weapon_type_explosion
+		weapon_type_point_defense
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+		weapon_role_point_defense
+		screen
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#2 Yuuka
+weapon_component_template = {
+	key = "YUUKA_WEAPON"
+	size = point_defence
+	type = instant
+	icon = "GFX_Yuuka_Weapon"
+	icon_frame = 1
+	entity = "yuuka_weapon_turret_base_entity"
+	power = -30
+	damage = {
+		min = 3
+		max = 7
+	}
+	windup = {
+		min = 5
+		max = 5
+	}
+	range = 30
+	accuracy = 0.95
+	hull_damage = 1
+	shield_damage = 1.1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.25
+	prerequisites = {
+		"tech_BA_SPW_YUUKA_WEAPON"
+	}
+	component_set = "YUUKA_WEAPON"
+	projectile_gfx = "BA_WEAPON_SMG"
+	tags = {
+		weapon_type_explosion
+		weapon_type_point_defense
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+		weapon_role_point_defense
+		screen
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#3 Neru
+weapon_component_template = {
+	key = "NERU_WEAPON"
+	size = point_defence
+	type = instant
+	icon = "GFX_Neru_Weapon"
+	icon_frame = 1
+	entity = "neru_weapon_turret_base_entity"
+	power = -50
+	damage = {
+		min = 6
+		max = 16
+	}
+	windup = {
+		min = 5
+		max = 5
+	}
+	range = 30
+	accuracy = 0.8
+	hull_damage = 1.3
+	shield_damage = 0.8
+	armor_damage = 1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.25
+	prerequisites = {
+		"tech_BA_SPW_NERU_WEAPON"
+	}
+	component_set = "NERU_WEAPON"
+	projectile_gfx = "BA_WEAPON_SMG"
+	tags = {
+		weapon_type_penetration
+		weapon_type_point_defense
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+		weapon_role_point_defense
+		screen
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#4 Utaha
+weapon_component_template = {
+	key = "UTAHA_WEAPON"
+	size = point_defence
+	type = instant
+	icon = "GFX_Utaha_Weapon"
+	icon_frame = 1
+	entity = "utaha_weapon_turret_base_entity"
+	power = -50
+	damage = {
+		min = 7
+		max = 16
+	}
+	windup = {
+		min = 5
+		max = 5
+	}
+	range = 30
+	accuracy = 0.8
+	hull_damage = 1
+	shield_damage = 1.1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.25
+	prerequisites = {
+		"tech_BA_SPW_UTAHA_WEAPON"
+	}
+	component_set = "UTAHA_WEAPON"
+	projectile_gfx = "BA_WEAPON_SMG"
+	tags = {
+		weapon_type_penetration
+		weapon_type_point_defense
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+		weapon_role_point_defense
+		screen
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#5 Airi
+weapon_component_template = {
+	key = "AIRI_WEAPON"
+	size = point_defence
+	type = instant
+	icon = "GFX_Airi_Weapon"
+	icon_frame = 1
+	entity = "airi_weapon_turret_base_entity"
+	power = -30
+	damage = {
+		min = 5
+		max = 12
+	}
+	windup = {
+		min = 5
+		max = 5
+	}
+	range = 30
+	accuracy = 0.8
+	hull_damage = 1
+	shield_damage = 1.1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.25
+	prerequisites = {
+		"tech_BA_SPW_AIRI_WEAPON"
+	}
+	component_set = "AIRI_WEAPON"
+	projectile_gfx = "BA_WEAPON_SMG"
+	tags = {
+		weapon_type_explosion
+		weapon_type_point_defense
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+		weapon_role_point_defense
+		screen
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#6 Natsu
+weapon_component_template = {
+	key = "NATSU_WEAPON"
+	size = point_defence
+	type = instant
+	icon = "GFX_Natsu_Weapon"
+	icon_frame = 1
+	entity = "natsu_weapon_turret_base_entity"
+	power = -30
+	damage = {
+		min = 5
+		max = 11
+	}
+	windup = {
+		min = 5
+		max = 5
+	}
+	range = 30
+	accuracy = 0.8
+	hull_damage = 1
+	shield_damage = 1.3
+	armor_damage = 0.8
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.25
+	prerequisites = {
+		"tech_BA_SPW_NATSU_WEAPON"
+	}
+	component_set = "NATSU_WEAPON"
+	projectile_gfx = "BA_WEAPON_SMG"
+	tags = {
+		weapon_type_mystic
+		weapon_type_point_defense
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+		weapon_role_point_defense
+		screen
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#7 Mika
+weapon_component_template = {
+	key = "MIKA_WEAPON"
+	size = point_defence
+	type = instant
+	icon = "GFX_Mika_Weapon"
+	icon_frame = 1
+	entity = "mika_weapon_turret_base_entity"
+	power = -30
+	damage = {
+		min = 8
+		max = 20
+	}
+	windup = {
+		min = 5
+		max = 5
+	}
+	range = 30
+	accuracy = 0.8
+	hull_damage = 1.1
+	shield_damage = 1.3
+	armor_damage = 0.8
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.25
+	prerequisites = {
+		"tech_BA_SPW_MIKA_WEAPON"
+	}
+	component_set = "MIKA_WEAPON"
+	projectile_gfx = "BA_WEAPON_SMG"
+	tags = {
+		weapon_type_penetration
+		weapon_type_point_defense
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+		weapon_role_point_defense
+		screen
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#8 Tsubaki
+weapon_component_template = {
+	key = "TSUBAKI_WEAPON"
+	size = point_defence
+	type = instant
+	icon = "GFX_Tsubaki_Weapon"
+	icon_frame = 1
+	entity = "tsubaki_weapon_turret_base_entity"
+	power = -30
+	damage = {
+		min = 6
+		max = 7
+	}
+	windup = {
+		min = 5
+		max = 5
+	}
+	range = 30
+	accuracy = 0.8
+	hull_damage = 1.1
+	shield_damage = 1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.25
+	prerequisites = {
+		"tech_BA_SPW_TSUBAKI_WEAPON"
+	}
+	component_set = "TSUBAKI_WEAPON"
+	projectile_gfx = "BA_WEAPON_SMG"
+	tags = {
+		weapon_type_penetration
+		weapon_type_point_defense
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+		weapon_role_point_defense
+		screen
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#9 Izuna
+weapon_component_template = {
+	key = "IZUNA_WEAPON"
+	size = point_defence
+	type = instant
+	icon = "GFX_Izuna_Weapon"
+	icon_frame = 1
+	entity = "izuna_weapon_turret_base_entity"
+	power = -30
+	damage = {
+		min = 6
+		max = 14
+	}
+	windup = {
+		min = 5
+		max = 5
+	}
+	range = 30
+	accuracy = 0.8
+	hull_damage = 0.8
+	shield_damage = 1
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.25
+	prerequisites = {
+		"tech_BA_SPW_IZUNA_WEAPON"
+	}
+	component_set = "IZUNA_WEAPON"
+	projectile_gfx = "BA_WEAPON_SMG"
+	tags = {
+		weapon_type_mystic
+		weapon_type_point_defense
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+		weapon_role_point_defense
+		screen
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#10 Tsukuyo
+weapon_component_template = {
+	key = "TSUKUYO_WEAPON"
+	size = point_defence
+	type = instant
+	icon = "GFX_Tsukuyo_Weapon"
+	icon_frame = 1
+	entity = "tsukuyo_weapon_turret_base_entity"
+	power = -30
+	damage = {
+		min = 4
+		max = 10
+	}
+	windup = {
+		min = 5
+		max = 5
+	}
+	range = 30
+	accuracy = 0.8
+	hull_damage = 0.8
+	shield_damage = 1.3
+	armor_damage = 1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.25
+	prerequisites = {
+		"tech_BA_SPW_TSUKUYO_WEAPON"
+	}
+	component_set = "TSUKUYO_WEAPON"
+	projectile_gfx = "BA_WEAPON_SMG"
+	tags = {
+		weapon_type_mystic
+		weapon_type_point_defense
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+		weapon_role_point_defense
+		screen
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#11 Nodoka
+weapon_component_template = {
+	key = "NODOKA_WEAPON"
+	size = point_defence
+	type = instant
+	icon = "GFX_Nodoka_Weapon"
+	icon_frame = 1
+	entity = "nodoka_weapon_turret_base_entity"
+	power = -30
+	damage = {
+		min = 5
+		max = 12
+	}
+	windup = {
+		min = 5
+		max = 5
+	}
+	range = 30
+	accuracy = 0.8
+	hull_damage = 1
+	shield_damage = 1.1
+	armor_damage = 1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.25
+	prerequisites = {
+		"tech_BA_SPW_NODOKA_WEAPON"
+	}
+	component_set = "NODOKA_WEAPON"
+	projectile_gfx = "BA_WEAPON_SMG"
+	tags = {
+		weapon_type_explosion
+		weapon_type_point_defense
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+		weapon_role_point_defense
+		screen
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#12 Marina
+weapon_component_template = {
+	key = "MARINA_WEAPON"
+	size = point_defence
+	type = instant
+	icon = "GFX_Marina_Weapon"
+	icon_frame = 1
+	entity = "marina_weapon_turret_base_entity"
+	power = -30
+	damage = {
+		min = 5
+		max = 12
+	}
+	windup = {
+		min = 5
+		max = 5
+	}
+	range = 30
+	accuracy = 0.8
+	hull_damage = 1
+	shield_damage = 1.3
+	armor_damage = 0.8
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.25
+	prerequisites = {
+		"tech_BA_SPW_MARINA_WEAPON"
+	}
+	component_set = "MARINA_WEAPON"
+	projectile_gfx = "BA_WEAPON_SMG"
+	tags = {
+		weapon_type_penetration
+		weapon_type_point_defense
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+		weapon_role_point_defense
+		screen
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#13 Miyako
+weapon_component_template = {
+	key = "MIYAKO_WEAPON"
+	size = point_defence
+	type = instant
+	icon = "GFX_Miyako_Weapon"
+	icon_frame = 1
+	entity = "miyako_weapon_turret_base_entity"
+	power = -30
+	damage = {
+		min = 4
+		max = 10
+	}
+	windup = {
+		min = 5
+		max = 5
+	}
+	range = 30
+	accuracy = 0.8
+	hull_damage = 0.8
+	shield_damage = 1
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.25
+	prerequisites = {
+		"tech_BA_SPW_MIYAKO_WEAPON"
+	}
+	component_set = "MIYAKO_WEAPON"
+	projectile_gfx = "BA_WEAPON_SMG"
+	tags = {
+		weapon_type_penetration
+		weapon_type_point_defense
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+		weapon_role_point_defense
+		screen
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#14 Atsuko
+weapon_component_template = {
+	key = "ATSUKO_WEAPON"
+	size = point_defence
+	type = instant
+	icon = "GFX_Atsuko_Weapon"
+	icon_frame = 1
+	entity = "atsuko_weapon_turret_base_entity"
+	power = -30
+	damage = {
+		min = 5
+		max = 11
+	}
+	windup = {
+		min = 5
+		max = 5
+	}
+	range = 30
+	accuracy = 0.8
+	hull_damage = 0.8
+	shield_damage = 1.3
+	armor_damage = 1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.25
+	prerequisites = {
+		"tech_BA_SPW_ATSUKO_WEAPON"
+	}
+	component_set = "ATSUKO_WEAPON"
+	projectile_gfx = "BA_WEAPON_SMG"
+	tags = {
+		weapon_type_explosion
+		weapon_type_point_defense
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+		weapon_role_point_defense
+		screen
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#15 Rumi
+weapon_component_template = {
+	key = "RUMI_WEAPON"
+	size = point_defence
+	type = instant
+	icon = "GFX_Rumi_Weapon"
+	icon_frame = 1
+	entity = "rumi_weapon_turret_base_entity"
+	power = -30
+	damage = {
+		min = 8
+		max = 9
+	}
+	windup = {
+		min = 5
+		max = 5
+	}
+	range = 30
+	accuracy = 0.8
+	hull_damage = 0.8
+	shield_damage = 1.3
+	armor_damage = 0.8
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.25
+	prerequisites = {
+		"tech_BA_SPW_RUMI_WEAPON"
+	}
+	component_set = "RUMI_WEAPON"
+	projectile_gfx = "BA_WEAPON_SMG"
+	tags = {
+		weapon_type_explosion
+		weapon_type_point_defense
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+		weapon_role_point_defense
+		screen
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#16 Kurumi
+weapon_component_template = {
+	key = "KURUMI_WEAPON"
+	size = point_defence
+	type = instant
+	icon = "GFX_Kurumi_Weapon"
+	icon_frame = 1
+	entity = "kurumi_weapon_turret_base_entity"
+	power = -35
+	damage = {
+		min = 5
+		max = 12
+	}
+	windup = {
+		min = 4
+		max = 4
+	}
+	range = 30
+	accuracy = 0.9
+	hull_damage = 0.5
+	shield_damage = 1
+	armor_damage = 0.5
+	shield_penetration = 1
+	armor_penetration = 0
+	tracking = 0.25
+	prerequisites = {
+		#"tech_BA_SPW_KURUMI_WEAPON"
+		tech_BA_fe
+	}
+	component_set = "KURUMI_WEAPON"
+	projectile_gfx = "BA_WEAPON_SMG"
+	tags = {
+		weapon_type_explosion
+		weapon_type_point_defense
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+		weapon_role_point_defense
+		screen
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#17 Ruiko
+weapon_component_template = {
+	key = "CH9996_WEAPON"
+	size = point_defence
+	type = instant
+	icon = "GFX_CH9996_Weapon"
+	icon_frame = 1
+	entity = "CH9996_weapon_turret_base_entity"
+	power = -30
+	damage = {
+		min = 5
+		max = 10
+	}
+	windup = {
+		min = 5
+		max = 5
+	}
+	range = 30
+	accuracy = 0.8
+	hull_damage = 1.1
+	shield_damage = 1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.25
+	prerequisites = {
+		#"tech_BA_SPW_CH9996_WEAPON"
+		tech_BA_fe
+	}
+	component_set = "CH9996_WEAPON"
+	projectile_gfx = "BA_WEAPON_SMG"
+	tags = {
+		weapon_type_explosion
+		weapon_type_point_defense
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+		weapon_role_point_defense
+		screen
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#### S
+#手枪
+#新增了Akira的S槽武器（#20）
+#1 Ayane  #合乎常理的手段-奥空绫音
+weapon_component_template = {
+	key = "AYANE_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Ayane_Weapon"
+	icon_frame = 1
+	entity = "ayane_weapon_turret_base_entity"
+	power = -15
+	damage = {
+		min = 12
+		max = 37
+	}
+	windup = {
+		min = 10
+		max = 23
+	}
+	range = 30
+	accuracy = 0.87
+	hull_damage = 1.1
+	shield_damage = 1.1
+	armor_damage = 1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.75
+	prerequisites = {
+		"tech_BA_SPW_AYANE_WEAPON"
+	}
+	component_set = "AYANE_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_penetration
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#2 Chinatsu #日野宫千夏
+weapon_component_template = {
+	key = "CHINATSU_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Chinatsu_Weapon"
+	icon_frame = 1
+	entity = "chinatsu_weapon_turret_base_entity"
+	power = -15
+	damage = {
+		min = 10
+		max = 34
+	}
+	windup = {
+		min = 10
+		max = 23
+	}
+	range = 30
+	accuracy = 0.89
+	hull_damage = 1
+	shield_damage = 1.1
+	armor_damage = 1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.75
+	prerequisites = {
+		"tech_BA_SPW_CHINATSU_WEAPON"
+	}
+	component_set = "CHINATSU_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_penetration
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#3 Kayoko #鬼方佳代子-Demon's Roar
+weapon_component_template = {
+	key = "KAYOKO_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Kayoko_Weapon"
+	icon_frame = 1
+	entity = "kayoko_weapon_turret_base_entity"
+	power = -15
+	damage = {
+		min = 10
+		max = 33
+	}
+	windup = {
+		min = 10
+		max = 23
+	}
+	range = 30
+	accuracy = 0.88
+	hull_damage = 1
+	shield_damage = 1.1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.75
+	prerequisites = {
+		"tech_BA_SPW_KAYOKO_WEAPON"
+	}
+	component_set = "KAYOKO_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_explosion
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#4 Ako #亚子
+weapon_component_template = {
+	key = "AKO_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Ako_Weapon"
+	icon_frame = 1
+	entity = "ako_weapon_turret_base_entity"
+	power = -15
+	damage = {
+		min = 23
+		max = 38
+	}
+	windup = {
+		min = 10
+		max = 23
+	}
+	range = 30
+	accuracy = 0.95
+	hull_damage = 0.8
+	shield_damage = 1
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_AKO_WEAPON"
+	}
+	component_set = "AKO_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_mystic
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#5 Iroha #168
+weapon_component_template = {
+	key = "IROHA_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Iroha_Weapon"
+	icon_frame = 1
+	entity = "iroha_weapon_turret_base_entity"
+	power = -15
+	damage = {
+		min = 17
+		max = 45
+	}
+	windup = {
+		min = 10
+		max = 23
+	}
+	range = 30
+	accuracy = 0.75
+	hull_damage = 1
+	shield_damage = 1.3
+	armor_damage = 0.8
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.75
+	prerequisites = {
+		"tech_BA_SPW_IROHA_WEAPON"
+	}
+	component_set = "IROHA_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_mystic
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#6 Kotama #小玉
+weapon_component_template = {
+	key = "KOTAMA_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Kotama_Weapon"
+	icon_frame = 1
+	entity = "kotama_weapon_turret_base_entity"
+	power = -25
+	damage = {
+		min = 11
+		max = 27
+	}
+	windup = {
+		min = 10
+		max = 23
+	}
+	range = 30
+	accuracy = 0.9
+	hull_damage = 1
+	shield_damage = 1.1
+	armor_damage = 1
+	shield_penetration = 1	#千年特有的穿盾技术（
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_KOTAMA_WEAPON"
+	}
+	component_set = "KOTAMA_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_explosion
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#7 Akane #室冈茜-威尔洛德消音手枪
+weapon_component_template = {
+	key = "AKANE_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Akane_Weapon"
+	icon_frame = 1
+	entity = "akane_weapon_turret_base_entity"
+	power = -15
+	damage = {
+		min = 9
+		max = 30
+	}
+	windup = {
+		min = 10
+		max = 23
+	}
+	range = 30
+	accuracy = 0.91
+	hull_damage = 1.1
+	shield_damage = 1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.75
+	prerequisites = {
+		"tech_BA_SPW_AKANE_WEAPON"
+	}
+	component_set = "AKANE_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_penetration
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#8 Noa #卑女
+weapon_component_template = {
+	key = "NOA_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Noa_Weapon"
+	icon_frame = 1
+	entity = "noa_weapon_turret_base_entity"
+	power = -15
+	damage = {
+		min = 10
+		max = 36
+	}
+	windup = {
+		min = 10
+		max = 23
+	}
+	range = 30
+	accuracy = 0.9
+	hull_damage = 1
+	shield_damage = 1.3
+	armor_damage = 0.8
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_NOA_WEAPON"
+	}
+	component_set = "NOA_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_mystic
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#9 Himari #otto
+weapon_component_template = {
+	key = "HIMARI_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Himari_Weapon"
+	icon_frame = 1
+	entity = "himari_weapon_turret_base_entity"
+	power = -30
+	damage = {
+		min = 23
+		max = 45
+	}
+	windup = {
+		min = 10
+		max = 23
+	}
+	range = 30
+	accuracy = 0.99
+	hull_damage = 1
+	shield_damage = 0.8
+	armor_damage = 1.3
+	shield_penetration = 1	#问就是千年科技
+	armor_penetration = 0
+	tracking = 0.99	#天才射准点怎么了
+	prerequisites = {
+		"tech_BA_SPW_HIMARI_WEAPON"
+	}
+	component_set = "HIMARI_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_penetration
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#10 Mari #她真可爱
+weapon_component_template = {
+	key = "MARI_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Mari_Weapon"
+	icon_frame = 1
+	entity = "mari_weapon_turret_base_entity"
+	power = -15
+	damage = {
+		min = 14
+		max = 35
+	}
+	windup = {
+		min = 10
+		max = 23
+	}
+	range = 30
+	accuracy = 0.95
+	hull_damage = 1.1
+	shield_damage = 1.1
+	armor_damage = 1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_MARI_WEAPON"
+	}
+	component_set = "MARI_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_mystic
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#11 Hinata #你们修女都用沙鹰的吗？
+weapon_component_template = {
+	key = "HINATA_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Hinata_Weapon"
+	icon_frame = 1
+	entity = "hinata_weapon_turret_base_entity"
+	power = -20
+	damage = {
+		min = 18
+		max = 49
+	}
+	windup = {
+		min = 10
+		max = 23
+	}
+	range = 30
+	accuracy = 0.91
+	hull_damage = 1.3
+	shield_damage = 1
+	armor_damage = 0.8
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_HINATA_WEAPON"
+	}
+	component_set = "HINATA_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_mystic
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#12 Nagisa #海带汤好喝
+weapon_component_template = {
+	key = "NAGISA_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Nagisa_Weapon"
+	icon_frame = 1
+	entity = "nagisa_weapon_turret_base_entity"
+	power = -50
+	damage = {
+		min = 29
+		max = 86
+	}
+	windup = {
+		min = 10
+		max = 23
+	}
+	range = 15	#带个椅子怎么射程远
+	accuracy = 0.5
+	hull_damage = 1
+	shield_damage = 1.3
+	armor_damage = 0.8
+	shield_penetration = 0.25	#大量的炮击，使得有些攻击可以穿过护盾直接攻击护甲
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_NAGISA_WEAPON"
+	}
+	component_set = "NAGISA_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_explosion
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#13 Mimori #三森（真不知道三森写啥了）
+weapon_component_template = {
+	key = "MIMORI_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Mimori_Weapon"
+	icon_frame = 1
+	entity = "mimori_weapon_turret_base_entity"
+	power = -15
+	damage = {
+		min = 13
+		max = 35
+	}
+	windup = {
+		min = 10
+		max = 23
+	}
+	range = 30
+	accuracy = 0.95
+	hull_damage = 0.8
+	shield_damage = 1
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_MIMORI_WEAPON"
+	}
+	component_set = "MIMORI_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_mystic
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#14 Kaede #呆呆
+weapon_component_template = {
+	key = "KAEDE_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Kaede_Weapon"
+	icon_frame = 1
+	entity = "kaede_weapon_turret_base_entity"
+	power = -15
+	damage = {
+		min = 15
+		max = 40
+	}
+	windup = {
+		min = 10
+		max = 23
+	}
+	range = 30
+	accuracy = 0.95
+	hull_damage = 0.8
+	shield_damage = 1
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_KAEDE_WEAPON"
+	}
+	component_set = "KAEDE_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_explosion
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#15 Saya #鼠鼠我啊，抓走你的up，换成自己捏
+weapon_component_template = {
+	key = "SAYA_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Saya_Weapon"
+	icon_frame = 1
+	entity = "saya_weapon_turret_base_entity"
+	power = -20
+	damage = {
+		min = 14
+		max = 41
+	}
+	windup = {
+		min = 10
+		max = 23
+	}
+	range = 30
+	accuracy = 0.88
+	hull_damage = 0.8
+	shield_damage = 1.3
+	armor_damage = 1
+	shield_penetration = 0
+	armor_penetration = 0.5	#奇妙药物捏
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_SAYA_WEAPON"
+	}
+	component_set = "SAYA_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_explosion
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#16 Cherino #肃清！
+weapon_component_template = {
+	key = "CHERINO_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Cherino_Weapon"
+	icon_frame = 1
+	entity = "cherino_weapon_turret_base_entity"
+	power = -15
+	damage = {
+		min = 17
+		max = 48
+	}
+	windup = {
+		min = 10
+		max = 23
+	}
+	range = 30
+	accuracy = 0.91
+	hull_damage = 1.3
+	shield_damage = 0.8
+	armor_damage = 1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.05
+	prerequisites = {
+		"tech_BA_SPW_CHERINO_WEAPON"
+	}
+	component_set = "CHERINO_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_penetration
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#17 Kirino #心胜于物（
+weapon_component_template = {
+	key = "KIRINO_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Kirino_Weapon"
+	icon_frame = 1
+	entity = "kirino_weapon_turret_base_entity"
+	power = -30
+	damage = {
+		min = 50
+		max = 91
+	}
+	windup = {
+		min = 10
+		max = 23
+	}
+	range = 30
+	accuracy = 0.1
+	hull_damage = 5
+	shield_damage = 0
+	armor_damage = 0
+	shield_penetration = 1
+	armor_penetration = 1
+	tracking = 0.05
+	prerequisites = {
+		"tech_BA_SPW_KIRINO_WEAPON"
+	}
+	component_set = "KIRINO_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_explosion
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#18 Kanna #局长可爱捏
+weapon_component_template = {
+	key = "KANNA_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Kanna_Weapon"
+	icon_frame = 1
+	entity = "kanna_weapon_turret_base_entity"
+	power = -20
+	damage = {
+		min = 21
+		max = 61
+	}
+	windup = {
+		min = 25
+		max = 33
+	}
+	range = 30
+	accuracy = 0.95
+	hull_damage = 0.8
+	shield_damage = 1
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.75
+	prerequisites = {
+		"tech_BA_SPW_KANNA_WEAPON"
+	}
+	component_set = "KANNA_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_penetration
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#19 Moe #按下去————
+weapon_component_template = {
+	key = "MOE_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Moe_Weapon"
+	icon_frame = 1
+	entity = "moe_weapon_turret_base_entity"
+	power = -20
+	damage = {
+		min = 19
+		max = 55
+	}
+	windup = {
+		min = 15
+		max = 38
+	}
+	range = 30
+	accuracy = 0.9
+	hull_damage = 1
+	shield_damage = 1.3
+	armor_damage = 0.8
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.8
+	prerequisites = {
+		"tech_BA_SPW_MOE_WEAPON"
+	}
+	component_set = "MOE_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_penetration
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#20 Akira
+weapon_component_template = {
+	key = "AKIRA_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Akira_Weapon"
+	icon_frame = 1
+	entity = "akira_weapon_turret_base_entity"
+	power = -85
+	damage = {
+		min = 1
+		max = 40
+	}
+	windup = {
+		min = 15
+		max = 25
+	}
+	range = 45
+	accuracy = 0.88
+	hull_damage = 1
+	shield_damage = 1
+	armor_damage = 1
+	shield_penetration = 1
+	armor_penetration = 1
+	tracking = 0.5
+	prerequisites = {
+		#"tech_BA_SPW_AKIRA_WEAPON"
+		tech_BA_fe
+	}
+	component_set = "AKIRA_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_mystic
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#21 Mina
+weapon_component_template = {
+	key = "MINA_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Mina_Weapon"
+	icon_frame = 1
+	entity = "mina_weapon_turret_base_entity"
+	power = -30
+	damage = {
+		min = 16
+		max = 38
+	}
+	windup = {
+		min = 10
+		max = 18
+	}
+	range = 30
+	accuracy = 0.88
+	hull_damage = 1
+	shield_damage = 1.3
+	armor_damage = 0.8
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.75
+	prerequisites = {
+		"tech_BA_SPW_MINA_WEAPON"
+	}
+	component_set = "MINA_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_explosion
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#22 Meru
+weapon_component_template = {
+	key = "MERU_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Meru_Weapon"
+	icon_frame = 1
+	entity = "meru_weapon_turret_base_entity"
+	power = -30
+	damage = {
+		min = 16
+		max = 38
+	}
+	windup = {
+		min = 10
+		max = 18
+	}
+	range = 30
+	accuracy = 0.88
+	hull_damage = 1
+	shield_damage = 1.3
+	armor_damage = 0.8
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.75
+	prerequisites = {
+		#"tech_BA_SPW_MERU_WEAPON"
+		tech_BA_fe
+	}
+	component_set = "MERU_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_penetration
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#23 Kasumi
+weapon_component_template = {
+	key = "KASUMI_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_Kasumi_Weapon"
+	icon_frame = 1
+	entity = "kasumi_weapon_turret_base_entity"
+	power = -30
+	damage = {
+		min = 16
+		max = 38
+	}
+	windup = {
+		min = 10
+		max = 18
+	}
+	range = 30
+	accuracy = 0.88
+	hull_damage = 1
+	shield_damage = 1.3
+	armor_damage = 0.8
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.75
+	prerequisites = {
+		#"tech_BA_SPW_KASUMI_WEAPON"
+		tech_BA_fe
+	}
+	component_set = "KASUMI_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		#weapon_type_sonic
+		s_slot
+	}
+	ai_tags = {
+		#weapon_role_anti_elastic_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#24 Shokuhou Misaki
+weapon_component_template = {
+	key = "CH9997_WEAPON"
+	size = small
+	type = instant
+	icon = "GFX_CH9997_Weapon"
+	icon_frame = 1
+	entity = "CH9997_weapon_turret_base_entity"
+	power = -15
+	damage = {
+		min = 10
+		max = 33
+	}
+	windup = {
+		min = 10
+		max = 23
+	}
+	range = 30
+	accuracy = 0.88
+	hull_damage = 1
+	shield_damage = 1.1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.75
+	prerequisites = {
+		#"tech_BA_SPW_CH9997_WEAPON"
+		tech_BA_fe
+	}
+	component_set = "CH9997_WEAPON"
+	projectile_gfx = "BA_WEAPON_HG"
+	tags = {
+		weapon_type_explosion
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#24 Shokuhou Misaki
+weapon_component_template = {
+	key = "CH9997_Remote"
+	size = small
+	type = missile
+	icon = "GFX_CH9997_Remote"
+	icon_frame = 1
+	entity = "CH9997_Remote_turret_base_entity"
+	power = -15
+	damage = {
+		min = 10
+		max = 33
+	}
+	windup = {
+		min = 10
+		max = 23
+	}
+	range = 30
+	accuracy = 0.88
+	hull_damage = 1
+	shield_damage = 1.1
+	armor_damage = 1.1
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.75
+	prerequisites = {
+		#"tech_BA_SPW_CH9997_Remote"
+		tech_BA_fe
+	}
+	component_set = "CH9997_Remote"
+	projectile_gfx = "Utaha_Spanner"
+	tags = {
+		weapon_type_explosion
+		s_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	#upgrades_to = "SMALL_MASS_DRIVER_2" #下一个升级，有需要再加
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.04
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#### X
+#1 Karin
+weapon_component_template = {
+	key = "KARIN_WEAPON"
+	size = extra_large	#X槽
+	type = instant
+	icon = "GFX_Karin_Weapon"
+	icon_frame = 1
+	entity = "karin_weapon_turret_base_entity"	#炮台模型
+	firing_arc = 25	#射击扇面
+	use_ship_kill_target = no
+	power = -300
+	damage = {
+		min = 1800
+		max = 3600
+	}
+	#伤害区间
+	windup = {
+		min = 100
+		max = 250
+	}
+	#发射时间
+	range = 200	#射程
+	accuracy = 0.8
+	hull_damage = 1.55	#船体伤害
+	shield_damage = 1.5
+	armor_damage = 0.5
+	shield_penetration = 0
+	armor_penetration = 0	#甲穿
+	tracking = 0
+	prerequisites = {
+		"tech_BA_SPW_KARIN_WEAPON"
+	}
+	component_set = "KARIN_WEAPON"
+	projectile_gfx = "BA_WEAPON_HSR"
+	#size_restriction = { corvette } #舰船限制
+	tags = {
+		weapon_type_penetration
+		x_slot
+	}
+	ai_tags = {
+		weapon_role_anti_heavy_armor
+	}
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			rare_crystals = 10
+		}
+		upkeep = {
+			energy = 6
+			alloys = 1
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#2 Mashiro
+weapon_component_template = {
+	key = "MASHIRO_WEAPON"
+	size = extra_large
+	type = instant
+	icon = "GFX_Mashiro_Weapon"
+	icon_frame = 1
+	entity = "mashiro_weapon_turret_base_entity"
+	firing_arc = 20
+	use_ship_kill_target = no
+	power = -200
+	damage = {
+		min = 680
+		max = 5000
+	}
+	windup = {
+		min = 100
+		max = 400
+	}
+	range = 180
+	accuracy = 0.8
+	hull_damage = 1.55
+	shield_damage = 1.5
+	armor_damage = 0.5
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0
+	prerequisites = {
+		"tech_BA_SPW_MASHIRO_WEAPON"
+	}
+	component_set = "MASHIRO_WEAPON"
+	projectile_gfx = "BA_WEAPON_HSR"
+	#size_restriction = { corvette } #舰船限制
+	tags = {
+		weapon_type_explosion
+		x_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			rare_crystals = 10
+		}
+		upkeep = {
+			energy = 6
+			alloys = 1
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#3 Hiyori
+weapon_component_template = {
+	key = "HIYORI_WEAPON"
+	size = extra_large
+	type = instant
+	icon = "GFX_Hiyori_Weapon"
+	icon_frame = 1
+	entity = "hiyori_weapon_turret_base_entity"
+	firing_arc = 25
+	use_ship_kill_target = no
+	power = -300
+	damage = {
+		min = 2000
+		max = 3800
+	}
+	windup = {
+		min = 100
+		max = 300
+	}
+	range = 160
+	accuracy = 0.9
+	hull_damage = 0.8
+	shield_damage = 1
+	armor_damage = 2
+	shield_penetration = 1
+	armor_penetration = 0
+	tracking = 0.25
+	prerequisites = {
+		"tech_BA_SPW_HIYORI_WEAPON"
+	}
+	component_set = "HIYORI_WEAPON"
+	projectile_gfx = "BA_WEAPON_HSR"
+	#size_restriction = { corvette } #舰船限制
+	tags = {
+		weapon_type_explosion
+		x_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			rare_crystals = 10
+		}
+		upkeep = {
+			energy = 6
+			alloys = 1
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#迫击炮
+#5 Hibiki
+weapon_component_template = {
+	key = "HIBIKI_WEAPON"
+	size = extra_large
+	type = missile
+	icon = "GFX_Hibiki_Weapon"
+	icon_frame = 1
+	entity = "hibiki_weapon_turret_base_entity"
+	use_ship_kill_target = no
+	power = -400
+	damage = {
+		min = 2500
+		max = 4000
+	}
+	windup = {
+		min = 300
+		max = 500
+	}
+	range = 200
+	accuracy = 0.8
+	hull_damage = 1
+	shield_damage = 1
+	armor_damage = 1.5
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.25
+	missile_speed = 300	#导弹速度
+	missile_evasion = 0	#导弹闪避
+	missile_armor = 10	#导弹装甲
+	missile_health = 10	#导弹血条
+	missile_retarget_range = 100	#重新瞄准射程
+	prerequisites = {
+		"tech_BA_SPW_HIBIKI_WEAPON"
+	}
+	component_set = "HIBIKI_WEAPON"
+	projectile_gfx = "BA_WEAPON_MT"
+	#size_restriction = { corvette } #舰船限制
+	tags = {
+		weapon_type_explosion
+		x_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			rare_crystals = 10
+		}
+		upkeep = {
+			energy = 6
+			alloys = 1
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#火焰喷射器
+#6 Megu
+weapon_component_template = {
+	key = "MEGU_WEAPON"
+	size = extra_large
+	type = instant
+	icon = "GFX_Megu_Weapon"
+	icon_frame = 1
+	entity = "megu_weapon_turret_base_entity"
+	firing_arc = 120
+	use_ship_kill_target = no
+	power = -200
+	damage = {
+		min = 900
+		max = 1800
+	}
+	windup = {
+		min = 50
+		max = 100
+	}
+	range = 120
+	accuracy = 0.9
+	hull_damage = 1.3
+	shield_damage = 1
+	armor_damage = 0.8
+	shield_penetration = 1
+	armor_penetration = 1
+	tracking = 0.5
+	prerequisites = {
+		"tech_BA_SPW_MEGU_WEAPON"
+	}
+	component_set = "MEGU_WEAPON"
+	projectile_gfx = "BA_WEAPON_FT"
+	#size_restriction = { corvette } #舰船限制
+	tags = {
+		weapon_type_explosion
+		x_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			rare_crystals = 10
+		}
+		upkeep = {
+			energy = 6
+			alloys = 1
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#### T
+#T槽 Aris
+weapon_component_template = {
+	key = "ARIS_WEAPON"
+	size = titanic
+	type = instant
+	prio_projectile = yes	#优先显示特效
+	entity = "aris_weapon_turret_base_entity"	#炮台模型
+	icon = "GFX_Aris_Weapon"
+	icon_frame = 1
+	firing_arc = 100
+	use_ship_kill_target = no
+	damage = {
+		min = 1000
+		max = 6000
+	}
+	windup = {
+		min = 50
+		max = 135
+	}
+	range = 250
+	accuracy = 0.99
+	shield_penetration = 5
+	armor_damage = 1.25
+	hull_damage = 1.25
+	tracking = 0.9
+	power = -1888
+	tags = {
+		weapon_type_mystic
+		t_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	#prerequisites = { "tech_titans" } #前置科技
+	component_set = "ARIS_WEAPON"
+	projectile_gfx = "BA_WEAPON_RG"	#特效
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			rare_crystals = 10
+		}
+		upkeep = {
+			energy = 6
+			alloys = 1
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#### EX
+#Hibiki_Cheerleader
+weapon_component_template = {
+	key = "HIBIKI_CHEERLEADER_WEAPON"
+	size = extra_large
+	type = missile
+	icon = "GFX_Hibiki_Cheerleader_Weapon"
+	icon_frame = 1
+	entity = "CH0181_weapon_turret_base_entity"
+	firing_arc = 40
+	use_ship_kill_target = no
+	power = -400
+	damage = {
+		min = 4000
+		max = 8000
+	}
+	windup = {
+		min = 300
+		max = 500
+	}
+	range = 250
+	accuracy = 0.5
+	hull_damage = 0.5
+	shield_damage = 1.3
+	armor_damage = 1.3
+	shield_penetration = 0
+	armor_penetration = 0
+	tracking = 0.1
+	missile_speed = 300	#导弹速度
+	missile_evasion = 0	#导弹闪避
+	missile_armor = 10	#导弹装甲
+	missile_health = 10	#导弹血条
+	missile_retarget_range = 100	#重新瞄准射程
+	prerequisites = {
+		#tech_BA_SPW_HIBIKI_CHEERLEADER_WEAPON
+		tech_BA_fe
+	}
+	component_set = "HIBIKI_CHEERLEADER_WEAPON"
+	projectile_gfx = "BA_WEAPON_MT"
+	#size_restriction = { corvette } #舰船限制
+	tags = {
+		weapon_type_explosion
+		x_slot
+	}
+	ai_tags = {
+		weapon_role_anti_light_armor
+	}
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			rare_crystals = 10
+		}
+		upkeep = {
+			energy = 6
+			alloys = 1
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#EX_Aris
+weapon_component_template = {
+	key = "ARIS_WEAPON_EX"
+	size = titanic
+	type = instant
+	prio_projectile = yes	#优先显示特效
+	entity = "Aris_Weapon_EX_entity"	#炮台模型
+	icon = "GFX_Aris_Weapon"
+	icon_frame = 1
+	firing_arc = 100
+	use_ship_kill_target = no
+	damage = {
+		min = 5000
+		max = 15000
+	}
+	windup = {
+		min = 100
+		max = 200
+	}
+	range = 250
+	accuracy = 0.99
+	shield_penetration = 5
+	armor_damage = 1.25
+	hull_damage = 1.25
+	tracking = 0.9
+	power = -2888
+	tags = {
+		weapon_type_mystic
+		t_slot
+	}
+	ai_tags = {
+		weapon_role_anti_special_armor
+	}
+	prerequisites = {
+		#"tech_BA_SPW_ARIS_WEAPON_EX"
+		tech_BA_fe
+	}
+	component_set = "ARIS_WEAPON_EX"
+	projectile_gfx = "BA_WEAPON_RG"	#特效
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			rare_crystals = 10
+		}
+		upkeep = {
+			energy = 6
+			alloys = 1
+		}
+	}
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}

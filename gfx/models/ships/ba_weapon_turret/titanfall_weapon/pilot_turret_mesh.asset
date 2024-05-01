@@ -1,0 +1,20 @@
+entity = {
+	name = "pilot_turret_entity"
+	pdxmesh = "pilot_turret_part_1_mesh"
+	attach = {
+		root = "pilot_turret_part_2_entity"
+		root = "pilot_turret_part_3_entity"
+	}
+}
+entity = {
+	name = "pilot_turret_part_1_entity"
+	pdxmesh = "pilot_turret_part_1_mesh"
+}
+entity = {
+	name = "pilot_turret_part_2_entity"
+	pdxmesh = "pilot_turret_part_2_mesh"
+}
+entity = {
+	name = "pilot_turret_part_3_entity"
+	pdxmesh = "pilot_turret_part_3_mesh"
+}

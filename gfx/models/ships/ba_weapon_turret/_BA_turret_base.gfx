@@ -1,0 +1,114 @@
+objectTypes = {
+	pdxmesh = {
+		name = "turret_base_X_SLOT_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/turret_base_X_SLOT.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "turret_base_X_SLOTShape"
+			index = 0
+			texture_diffuse = "HOD_GuardTower_Cannon_02.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+	pdxmesh = {
+		name = "turret_base_L_SLOT_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/turret_base_L_SLOT.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "turret_base_L_SLOTShape"
+			index = 0
+			texture_diffuse = "HOD_GuardTower_Cannon_02.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+	pdxmesh = {
+		name = "turret_base_M_SLOT_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/turret_base_M_SLOT.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "turret_base_M_SLOTShape"
+			index = 0
+			texture_diffuse = "HOD_GuardTower_Cannon_02.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+	pdxmesh = {
+		name = "turret_base_S_SLOT_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/turret_base_S_SLOT.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "turret_base_S_SLOTShape"
+			index = 0
+			texture_diffuse = "HOD_GuardTower_Cannon_02.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+	pdxmesh = {
+		name = "turret_base_P_SLOT_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/turret_base_P_SLOT.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "turret_base_P_SLOTShape"
+			index = 0
+			texture_diffuse = "HOD_GuardTower_Cannon_02.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+	pdxmesh = {
+		name = "turret_base_G_SLOT_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/turret_base_G_SLOT.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "turret_base_G_SLOTShape"
+			index = 0
+			texture_diffuse = "HOD_GuardTower_Cannon_02.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+	pdxmesh = {
+		name = "turret_base_T_SLOT_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/turret_base_T_SLOT.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "turret_base_T_SLOTShape"
+			index = 0
+			texture_diffuse = "HOD_GuardTower_Cannon_02.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+	pdxmesh = {
+		name = "turret_base_W_SLOT_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/turret_base_T_SLOT.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "turret_base_T_SLOTShape"
+			index = 0
+			texture_diffuse = "HOD_GuardTower_Cannon_02.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}

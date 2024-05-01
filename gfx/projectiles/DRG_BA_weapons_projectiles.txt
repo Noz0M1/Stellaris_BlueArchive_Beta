@@ -1,0 +1,255 @@
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "DRG_Breach_Cutter"
+	color = { 0.2 		0.45		1.0 	5.0 }
+	hit_entity = "focused_arc_emitter_hit_entity"
+	shield_hit_entity = "focused_arc_emitter_shield_hit_entity"
+	muzzle_flash_entity = "focused_arc_emitter_muzzle_entity"
+	windup_entity = focused_arc_emitter_turret_windup_entity
+	#missile specific data
+	entity = "DRG_Breach_Cutter_Lines_entity"
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "DRG_Bulldog_Heavy_Revolver"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "mass_driver_small_hit_entity"
+	shield_hit_entity = "mass_driver_small_shield_hit_entity"
+	muzzle_flash_entity = "mass_driver_small_muzzle_entity"
+	
+	shield_impact = {
+		size = small
+		delay = 0.0
+	}
+	
+	#ballistic specific
+	entity = "mass_driver_tracer_round_small_entity"
+	speed = 450.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+}
+
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "DRG_Colette_Wave_Cooker"
+#	color = { 0.6 	0.25 	0.97 	1 }
+	color = { 0.6 	0.75 	1.0 	1 }
+	hit_entity = "dark_matter_laser_large_hit_entity"
+	shield_hit_entity = "dark_matter_laser_large_shield_hit_entity"
+	muzzle_flash_entity = "dark_matter_laser_large_muzzle_entity"
+	
+	#beam specific data
+	width = 3.50
+	texture_scroll_speed = 0.15
+	texture_tiling = 70.0
+	
+	
+	hit = {
+
+		alpha_curve = { 
+			0.0 0.0
+			0.05	0.0
+			0.2 50.0
+			0.8 5.0
+			1.0 0.0
+		}
+		
+		
+		duration = 3.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 0.0
+			0.05	0.0
+			0.2 15.0
+			0.8 1.0
+			1.0 0.0
+		}
+		duration = 0.65
+	}
+	texture = "gfx/models/combat_items/black_matter_laser.dds"
+	
+	shield_impact = {
+		size = small
+		loop_duration = 0.5
+		delay = 0.1
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "DRG_Cryo_Cannon"
+	color = { 0.5 	 0.85 	0.95 	1.0 }
+	hit_entity = "aquatic_dragon_weapon_hit_entity"
+	shield_hit_entity = "aquatic_dragon_weapon_shield_hit_entity"
+	muzzle_flash_entity = "aquatic_dragon_weapon_muzzle_entity"
+	windup_entity = "aquatic_dragon_weapon_windup_entity"
+
+	#beam specific data
+	width = 15.0
+	texture_scroll_speed = 4.0
+	texture_tiling = 5.5
+
+	hit = {
+		alpha_curve = {
+			0.0 	0.0
+			0.3		0.0
+			0.4		5.0
+			0.45	8.0
+			0.7		9.0
+			0.9		2.0
+			1.0 	0.0
+		}
+		duration = 4.50
+	}
+	miss = {
+		alpha_curve = {
+			0.0 	0.0
+			0.2		0.0
+			0.3		3.0
+			0.4		2.0
+			0.9		0.5
+			1.0 	0.0
+		}
+		duration = 3.1
+	}
+	texture = "gfx/models/combat_items/titan_laser_diffuse.dds"
+
+	set_state = {
+		#ship = "test2"
+		#component = "test1"
+		section = "attack"
+	}
+	#set_state_windup = {
+	#	#ship = "test2"
+	#	#component = "test1"
+	#	section = "attack_windup"
+	#}
+
+	shield_impact = {
+		size = large
+		loop_duration = 0.5
+		delay = 0.2
+	}
+}
+
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "DRG_DRAK_25_Plasma_Carbine"
+	color = { 0.2 	0.5 	1.0 	5.0 }
+	hit_entity = "stormfire_auto_cannons_medium_hit_entity"
+	shield_hit_entity = "stormfire_auto_cannons_medium_shield_hit_entity"
+	muzzle_flash_entity = "stormfire_auto_cannons_medium_muzzle_entity"
+	
+	#beam specific data
+	width = 0.5
+	texture_scroll_speed = 25.5
+	texture_tiling = 10.0
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 1.5
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 1.5
+	}
+	texture = "gfx/models/combat_items/auto_cannon_diffuse.dds"
+	
+	shield_impact = {
+		size = medium
+		loop_duration = 1.5
+		delay = 0.0
+	}
+}
+
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "DRG_LeadStorm_Powered_Minigun"
+	color = { 0.2 	0.5 	1.0 	5.0 }
+	hit_entity = "stormfire_auto_cannons_large_hit_entity"
+	shield_hit_entity = "stormfire_auto_cannons_large_shield_hit_entity"
+	muzzle_flash_entity = "stormfire_auto_cannons_large_muzzle_entity"
+	
+	#beam specific data
+	width = 0.7
+	texture_scroll_speed = 25.5
+	texture_tiling = 12.0
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 1.5
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 1.5
+	}
+	texture = "gfx/models/combat_items/auto_cannon_diffuse.dds"
+	
+	shield_impact = {
+		size = large
+		loop_duration = 1.5
+		delay = 0.0
+	}
+}
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "DRG_LOK_1_Smart_Rifle"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "missile_small_hit_entity"
+	shield_hit_entity = "missile_small_shield_hit_entity"
+	muzzle_flash_entity = "mass_driver_small_muzzle_entity"
+	
+	#missile specific data
+	entity = "DRG_Bullet_entity"
+	
+	shield_impact = {
+		size = small
+		delay = 0.0
+	}
+}
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "DRG_Nishanka_Boltshark_X_80"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "aquatic_dragon_weapon_hit_entity"
+	shield_hit_entity = "aquatic_dragon_weapon_shield_hit_entity"
+	muzzle_flash_entity = "mass_driver_small_muzzle_entity"
+	
+	#missile specific data
+	entity = "DRG_Arrow_entity"
+	
+	shield_impact = {
+		size = small
+		delay = 0.0
+	}
+}

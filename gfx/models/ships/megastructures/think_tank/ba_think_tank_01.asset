@@ -1,0 +1,126 @@
+entity = {
+	name = "ba_01_thinktank_part1_entity"
+	pdxmesh = "thinktank_part1_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "think_tank_core_amb" } }
+		event = { time = 0 node = "center" particle = "think_tank_core_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	meshsettings = {
+		name = "body1Shape"
+		index = 0
+		texture_diffuse = "ba_01_think_tank_diffuse.dds"
+		texture_normal = "ba_01_think_tank_normal.dds"
+		texture_specular = "ba_01_think_tank_specular.dds"
+		shader = "PdxMeshShip"
+	}
+		 game_data = {
+        custom_texture = "gfx/models/ships/megastructures/think_tank/think_tank_01_construction_fadein.dds"
+			emissive_recolor_crunch = 2.0
+    }
+	
+}
+
+
+entity = {
+	name = "ba_01_thinktank_part2_entity"
+	pdxmesh = "thinktank_part2_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 10
+		start_event = { trigger_once = yes sound = { soundeffect = "think_tank_structure_amb_01" stop_on_state_change = yes } }
+		event = { time = 0 node = "light_locator_1" particle = "think_tank_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_2" particle = "think_tank_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_3" particle = "think_tank_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_4" particle = "think_tank_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	meshsettings = {
+		name = "section_05Shape"
+		index = 0
+		texture_diffuse = "ba_01_think_tank_diffuse.dds"
+		texture_normal = "ba_01_think_tank_normal.dds"
+		texture_specular = "ba_01_think_tank_specular.dds"
+		shader = "PdxMeshShip"
+	}
+	
+	 game_data = {
+        custom_texture = "gfx/models/ships/megastructures/think_tank/think_tank_01_construction_fadein.dds"
+		emissive_recolor_crunch = 2.0
+    }
+	
+}
+
+
+entity = {
+	name = "ba_01_thinktank_part3_entity"
+	pdxmesh = "thinktank_part3_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 10
+		start_event = { trigger_once = yes sound = { soundeffect = "think_tank_structure_amb_02" stop_on_state_change = yes } }
+		event = { time = 0 node = "light_locator_5" particle = "think_tank_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_6" particle = "think_tank_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_7" particle = "think_tank_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_8" particle = "think_tank_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	meshsettings = {
+		name = "section_04Shape"
+		index = 0
+		texture_diffuse = "ba_01_think_tank_diffuse.dds"
+		texture_normal = "ba_01_think_tank_normal.dds"
+		texture_specular = "ba_01_think_tank_specular.dds"
+		shader = "PdxMeshShip"
+	}
+		
+	game_data = {
+        custom_texture = "gfx/models/ships/megastructures/think_tank/think_tank_01_construction_fadein.dds"
+		emissive_recolor_crunch = 2.0	
+    }
+	
+}
+
+entity = {
+	name = "ba_01_thinktank_phase_01_entity"
+	locator = { name = "root"	position = { 0 0 0 } }	
+	
+	attach = { "root" = "ba_01_thinktank_part1_entity" }
+
+	state = { name = "construction"
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+	}
+
+	cull_radius = 500
+}
+
+entity = {
+	name = "ba_01_thinktank_phase_02_entity"
+	locator = { name = "root"	position = { 0 0 0 } }	
+	
+	attach = { "root" = "ba_01_thinktank_part1_entity" }
+	attach = { "root" = "ba_01_thinktank_part2_entity" }
+
+	state = { name = "construction"
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+	}
+
+	cull_radius = 500
+}
+
+entity = {
+	name = "ba_01_thinktank_phase_03_entity"
+	locator = { name = "root"	position = { 0 0 0 } }	
+	
+	attach = { "root" = "ba_01_thinktank_part1_entity" }
+	attach = { "root" = "ba_01_thinktank_part2_entity" }
+	attach = { "root" = "ba_01_thinktank_part3_entity" }
+
+	state = { name = "construction"
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+	}
+
+	cull_radius = 500
+}

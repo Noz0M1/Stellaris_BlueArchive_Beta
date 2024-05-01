@@ -1,0 +1,96 @@
+extra_large_turret_BA_59 = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "BA_59_G_TURRET_entity"
+		weapon_type_energy = "BA_59_G_TURRET_entity"
+		weapon_type_explosive = "BA_59_G_TURRET_entity"
+	}
+}
+
+extra_large_turret_BA_59_Kaiserpmc = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "BA_59_Kaiserpmc_TURRET_entity"
+		weapon_type_energy = "BA_59_Kaiserpmc_TURRET_entity"
+		weapon_type_explosive = "BA_59_Kaiserpmc_TURRET_entity"
+	}
+}
+
+extra_large_turret_BA_Iroha = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "Iroha_Tank_turret_entity"
+		weapon_type_energy = "Iroha_Tank_turret_entity"
+		weapon_type_explosive = "Iroha_Tank_turret_entity"
+	}
+}
+large_turret_BA_Iroha = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "Iroha_Tank_turret_entity"
+		weapon_type_energy = "Iroha_Tank_turret_entity"
+		weapon_type_explosive = "Iroha_Tank_turret_entity"
+	}
+}
+
+extra_large_turret_BA_Iroha = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "Iroha_Tank_turret_entity"
+		weapon_type_energy = "Iroha_Tank_turret_entity"
+		weapon_type_explosive = "Iroha_Tank_turret_entity"
+	}
+}
+
+
+large_turret_Boxcat_01 = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "Boxcat_01_entity"
+		weapon_type_energy = "Boxcat_01_entity"
+		weapon_type_explosive = "Boxcat_01_entity"
+	}
+}
+large_turret_Boxcat_02 = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "Boxcat_02_entity"
+		weapon_type_energy = "Boxcat_02_entity"
+		weapon_type_explosive = "Boxcat_02_entity"
+	}
+}
+large_turret_Boxcat_03 = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "Boxcat_03_entity"
+		weapon_type_energy = "Boxcat_03_entity"
+		weapon_type_explosive = "Boxcat_03_entity"
+	}
+}
+titanic_turret_BA_Kether = {
+	size = titanic
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "Kether_turret_03_entity"
+		weapon_type_energy = "Kether_turret_03_entity"
+		weapon_type_explosive = "Kether_turret_03_entity"
+	}
+}
+
+titanic_turret_BA_Kether_Color = {
+	size = titanic
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "Kether_Color_turret_03_entity"
+		weapon_type_energy = "Kether_Color_turret_03_entity"
+		weapon_type_explosive = "Kether_Color_turret_03_entity"
+	}
+}

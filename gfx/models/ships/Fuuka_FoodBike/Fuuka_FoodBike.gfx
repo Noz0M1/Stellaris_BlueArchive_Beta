@@ -1,0 +1,250 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Fuuka_FoodBike_mesh"
+		file = "gfx/models/ships/Fuuka_FoodBike/Fuuka_FoodBike.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "CH0177_HairShape"
+			index = 0
+			texture_diffuse = "CH0177_Hair.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0177_HaloShape"
+			index = 0
+			texture_diffuse = "Fuuka_Original_Halo.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0177_BodyShape"
+			index = 0
+			texture_diffuse = "CH0177_Body.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0177_FaceShape"
+			index = 0
+			texture_diffuse = "CH0177_Face.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0177_EyeShape"
+			index = 0
+			texture_diffuse = "CH0177_Eye_DeadFish.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0177_FoodBikeShape"
+			index = 0
+			texture_diffuse = "CH0177_FoodBike.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0177_MouthShape"
+			index = 0
+			texture_diffuse = "CH0177_Character_Mouth.dds"
+			shader = "AlphaBlend_00"
+		}
+	}
+	pdxmesh = {
+		name = "Fuuka_FoodBox_01_mesh"
+		file = "gfx/models/ships/Fuuka_FoodBike/Fuuka_FoodBox_01.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "CH0177_FoodBox_01Shape"
+			index = 0
+			texture_diffuse = "CH0177_FoodBox_01.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "Fuuka_FoodBox_02_mesh"
+		file = "gfx/models/ships/Fuuka_FoodBike/Fuuka_FoodBox_02.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "CH0177_FoodBox_02Shape"
+			index = 0
+			texture_diffuse = "CH0177_FoodBox_02.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "Fuuka_FoodBox_03_mesh"
+		file = "gfx/models/ships/Fuuka_FoodBike/Fuuka_FoodBox_03.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "CH0177_FoodBox_03Shape"
+			index = 0
+			texture_diffuse = "CH0177_FoodBox_03.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "Fuuka_FoodBox_04_mesh"
+		file = "gfx/models/ships/Fuuka_FoodBike/Fuuka_FoodBox_04.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "CH0177_FoodBox_04Shape"
+			index = 0
+			texture_diffuse = "CH0177_FoodBox_04.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "Fuuka_FoodBox_05_mesh"
+		file = "gfx/models/ships/Fuuka_FoodBike/Fuuka_FoodBox_05.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "CH0177_FoodBox_05Shape"
+			index = 0
+			texture_diffuse = "CH0177_FoodBox_05.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "Fuuka_FoodBox_06_mesh"
+		file = "gfx/models/ships/Fuuka_FoodBike/Fuuka_FoodBox_06.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "CH0177_FoodBox_06Shape"
+			index = 0
+			texture_diffuse = "CH0177_FoodBox_06.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "Fuuka_FoodBox_07_mesh"
+		file = "gfx/models/ships/Fuuka_FoodBike/Fuuka_FoodBox_07.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "CH0177_FoodBox_07Shape"
+			index = 0
+			texture_diffuse = "CH0177_FoodBox_07.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "Fuuka_FoodBox_08_mesh"
+		file = "gfx/models/ships/Fuuka_FoodBike/Fuuka_FoodBox_08.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "CH0177_FoodBox_08Shape"
+			index = 0
+			texture_diffuse = "CH0177_FoodBox_08.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "Fuuka_FoodBox_09_mesh"
+		file = "gfx/models/ships/Fuuka_FoodBike/Fuuka_FoodBox_09.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "CH0177_FoodBox_09Shape"
+			index = 0
+			texture_diffuse = "CH0177_FoodBox_09.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "Fuuka_FoodBox_10_mesh"
+		file = "gfx/models/ships/Fuuka_FoodBike/Fuuka_FoodBox_10.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "CH0177_FoodBox_10Shape"
+			index = 0
+			texture_diffuse = "CH0177_FoodBox_10.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "Fuuka_FoodBox_11_mesh"
+		file = "gfx/models/ships/Fuuka_FoodBike/Fuuka_FoodBox_11.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "CH0177_FoodBox_11Shape"
+			index = 0
+			texture_diffuse = "CH0177_FoodBox_11.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "Fuuka_FoodBox_12_mesh"
+		file = "gfx/models/ships/Fuuka_FoodBike/Fuuka_FoodBox_12.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "CH0177_FoodBox_12Shape"
+			index = 0
+			texture_diffuse = "CH0177_FoodBox_12.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "Fuuka_FoodBox_13_mesh"
+		file = "gfx/models/ships/Fuuka_FoodBike/Fuuka_FoodBox_13.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "CH0177_FoodBox_13Shape"
+			index = 0
+			texture_diffuse = "CH0177_FoodBox_13.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

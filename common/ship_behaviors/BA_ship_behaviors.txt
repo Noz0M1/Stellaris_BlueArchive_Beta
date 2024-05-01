@@ -1,0 +1,13 @@
+ship_behavior = {
+	name = "mortar"
+	preferred_attack_range = 165
+	formation_distance = 165
+	return_to_formation_distance = 180
+	combat_target_anchor = root
+	collision_awareness = 0.2
+	collision_radius = 1	#collision_radius is a multiplier on the radius specified in the ship size
+	collision_strafe = 2.5	#collision_strafe allows the ship to move in any direction while colliding with another
+	attack_move_pattern = stay_at_range
+	passive_move_pattern = charge
+	desc = "MORTAR_BEHAVIOR_DESC"
+}

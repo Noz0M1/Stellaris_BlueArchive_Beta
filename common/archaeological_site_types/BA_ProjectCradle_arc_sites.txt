@@ -1,0 +1,242 @@
+#摇篮计划考古遗址
+BA_ProjectCradle_arc_site_A_A = {
+	picture = GFX_BA_Ruined_street
+	desc = "BA_ProjectCradle_arc_site_core_desc"
+	weight = 0	#不允许随机生成
+	visible = {
+		default_site_visible_trigger = yes
+		this = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+		is_ship_class = shipclass_science_ship
+		exists = leader
+	}
+	stages = 5
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_C1
+		event = BA_Project.8001
+	}
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_C2
+		event = BA_Project.8002
+	}
+	stage = {
+		difficulty = 3
+		icon = GFX_archaeology_runes_C3
+		event = BA_Project.8003
+	}
+	stage = {
+		difficulty = 3
+		icon = GFX_archaeology_runes_C4
+		event = BA_Project.8004
+	}
+	stage = {
+		difficulty = 4
+		icon = GFX_archaeology_runes_C5
+		event = BA_Project.8005
+	}
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = {
+				RANDOM_EVENTS = all_random_events
+			}
+		}
+	}
+}
+
+BA_ProjectCradle_arc_site_A_B = {
+	picture = GFX_BA_Ruined_street
+	desc = "BA_ProjectCradle_arc_site_core_desc"
+	weight = 0	#不允许随机生成
+	visible = {
+		default_site_visible_trigger = yes
+		this = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+		is_ship_class = shipclass_science_ship
+		exists = leader
+	}
+	stages = 5
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_C1
+		event = BA_Project.8001
+	}
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_C2
+		event = BA_Project.8006
+	}
+	stage = {
+		difficulty = 3
+		icon = GFX_archaeology_runes_C3
+		event = BA_Project.8007
+	}
+	stage = {
+		difficulty = 3
+		icon = GFX_archaeology_runes_C4
+		event = BA_Project.8008
+	}
+	stage = {
+		difficulty = 4
+		icon = GFX_archaeology_runes_C5
+		event = BA_Project.8009
+	}
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = {
+				RANDOM_EVENTS = all_random_events
+			}
+		}
+	}
+}
+
+BA_ProjectCradle_arc_site_B_A = {
+	picture = GFX_BA_Ruined_street
+	desc = "BA_ProjectCradle_arc_site_core_desc"
+	weight = 0	#不允许随机生成
+	visible = {
+		default_site_visible_trigger = yes
+		this = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+		is_ship_class = shipclass_science_ship
+		exists = leader
+	}
+	stages = 5
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_C1
+		event = BA_Project.8010
+	}
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_C2
+		event = BA_Project.8011
+	}
+	stage = {
+		difficulty = 3
+		icon = GFX_archaeology_runes_C3
+		event = BA_Project.8012
+	}
+	stage = {
+		difficulty = 3
+		icon = GFX_archaeology_runes_C4
+		event = BA_Project.8013
+	}
+	stage = {
+		difficulty = 4
+		icon = GFX_archaeology_runes_C5
+		event = BA_Project.8014
+	}
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = {
+				RANDOM_EVENTS = all_random_events
+			}
+		}
+	}
+}
+
+BA_ProjectCradle_arc_site_B_B = {
+	picture = GFX_BA_Ruined_street
+	desc = "BA_ProjectCradle_arc_site_core_desc"
+	weight = 0	#不允许随机生成
+	visible = {
+		default_site_visible_trigger = yes
+		this = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+		is_ship_class = shipclass_science_ship
+		exists = leader
+	}
+	stages = 5
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_C1
+		event = BA_Project.8010
+	}
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_C2
+		event = BA_Project.8015
+	}
+	stage = {
+		difficulty = 3
+		icon = GFX_archaeology_runes_C3
+		event = BA_Project.8016
+	}
+	stage = {
+		difficulty = 3
+		icon = GFX_archaeology_runes_C4
+		event = BA_Project.8017
+	}
+	stage = {
+		difficulty = 4
+		icon = GFX_archaeology_runes_C5
+		event = BA_Project.8018
+	}
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = {
+				RANDOM_EVENTS = all_random_events
+			}
+		}
+	}
+}
+
+#数秘术基地考古
+BA_Gematria_arc_site_1 = {
+	#picture = GFX_BA_RAID1
+	picture = GFX_BA_Checkmate	#暂时的 以后改
+	desc = "BA_Gematria_arc_site_1_desc"
+	weight = 0	#不允许随机生成
+	visible = {
+		default_site_visible_trigger = yes
+		this = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+		is_ship_class = shipclass_science_ship
+		exists = leader
+	}
+	stages = 4
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_C1		#暂时的 以后改
+		event = BA_ape.0101
+	}
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_C2		#暂时的 以后改
+		event = BA_ape.0102
+	}
+	stage = {
+		difficulty = 3
+		icon = GFX_archaeology_runes_C3		#暂时的 以后改
+		event = BA_ape.0103
+	}
+	stage = {
+		difficulty = 4
+		icon = GFX_archaeology_runes_C4		#暂时的 以后改
+		event = BA_ape.0104
+	}
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = {
+				RANDOM_EVENTS = all_random_events
+			}
+		}
+	}
+}

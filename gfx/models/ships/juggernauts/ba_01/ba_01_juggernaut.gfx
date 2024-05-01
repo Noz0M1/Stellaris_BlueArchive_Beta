@@ -1,0 +1,27 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "ba_01_juggernaut_frame_mesh"
+		file = "gfx/models/ships/juggernauts/ba_01/ba_01_juggernaut_frame.mesh"
+		animation = {id = "idle"		type = "ba_01_juggernaut_frame_idle_animation" }
+		animation = {id = "death"		type = "ba_01_juggernaut_frame_death_animation" }
+
+	}
+
+	pdxmesh = {
+		name = "ba_01_juggernaut_mesh"
+		file = "gfx/models/ships/juggernauts/ba_01/ba_01_juggernaut.mesh"
+		animation = {id = "idle"		type = "ba_01_juggernaut_idle_animation" }
+		animation = {id = "death"		type = "ba_01_juggernaut_death_animation" }
+
+
+		meshsettings = {
+			name = "ba_01_juggernautShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

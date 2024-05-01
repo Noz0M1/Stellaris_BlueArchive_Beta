@@ -1,0 +1,149 @@
+####   ！此文件涉及原版修改
+is_organic_species = {
+	species = {
+		OR = {
+			is_archetype = BIOLOGICAL			# original trigger did not include pre-sapient classes
+			is_archetype = LITHOID
+			is_archetype = Schale
+		}
+	}
+}
+
+has_food_upkeep = {
+	species = {
+		OR = {
+			is_archetype = BIOLOGICAL
+			is_archetype = Schale
+		}
+	}
+	NOT = {
+		has_trait = trait_voidling
+	}
+}
+
+colonizable_planet = {
+	OR = {
+		is_planet_class = pc_city
+		is_planet_class = pc_relic
+		is_planet_class = pc_nuked
+		is_planet_class = pc_hive
+		is_planet_class = pc_machine
+		habitable_structure = yes
+		habitable_planet = yes
+	}
+}
+
+habitable_planet = {
+	optimize_memory	#内存
+	OR = {
+		# vanilla
+		habitable_planet_not_urban = yes
+		is_planet_class = pc_relic
+		is_planet_class = pc_city
+		# BA
+		is_planet_class = pc_BA_campus_planet
+		is_planet_class = pc_BA_ruined_planet
+		is_planet_class = pc_BA_auto_habitat
+	}
+}
+
+uses_habitat_capitals = {
+	OR = {
+		uses_district_set = habitat
+		uses_district_set = BA_auto_habitat
+	}
+}
+
+has_upgraded_capital = {
+	if = {
+		limit = {
+			has_modifier = resort_colony
+		}
+		custom_tooltip = {
+			fail_text = "requires_building_resort_capital"
+			OR = {
+				has_building = building_resort_capital
+				has_building = building_resort_major_capital
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = slave_colony
+		}
+		custom_tooltip = {
+			fail_text = "requires_building_slave_capital"
+			OR = {
+				has_building = building_slave_capital
+				has_building = building_slave_major_capital
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				is_planet_class = pc_habitat
+				is_planet_class = pc_BA_auto_habitat
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_building_hab_capital"
+			OR = {
+				has_building = building_hab_capital
+				has_building = building_hab_major_capital
+				has_building = building_imperial_capital
+				has_building = building_imperial_machine_capital
+				has_building = building_imperial_hive_capital
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_building_hive_capital"
+			OR = {
+				has_building = building_hive_capital
+				has_building = building_hive_major_capital
+				has_building = building_imperial_hive_capital
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_building_machine_capital"
+			OR = {
+				has_building = building_machine_capital
+				has_building = building_machine_major_capital
+				has_building = building_machine_system_capital
+				has_building = building_imperial_machine_capital
+			}
+		}
+	}
+	else = {
+		custom_tooltip = {
+			fail_text = "requires_building_capital"
+			OR = {
+				has_building = building_capital
+				has_building = building_major_capital
+				has_building = building_system_capital
+				has_building = building_imperial_capital
+			}
+		}
+	}
+}
+
+use_vanilla_normal_council = {
+	NOR = {
+		is_gestalt = yes
+		has_authority = auth_kivotos
+	}
+}

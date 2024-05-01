@@ -1,0 +1,2722 @@
+namespace = BA_crisis
+######################
+###  中期天灾-爱丽丝 
+######################
+#触发器（global mtth）
+country_event = {
+	id = BA_crisis.1000
+	hide_window = yes
+	trigger = {
+		is_country_type = global_event
+		has_global_flag = Kivotos_detected
+		mid_game_years_passed > 0
+	}
+	mean_time_to_happen = {
+		days = 1080		#1080
+	}
+	fire_only_once = yes
+	immediate = {
+		#开启外域链路
+		country_event = {
+			id = BA_Precursor.0010
+		}
+		#快子信号通告及先驱者
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = default
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+			}
+			country_event = {
+				id = BA_crisis.1001
+			}
+		}
+		#划定位置
+		country_event = {
+			id = BA_crisis.1002
+		}
+		#出现
+		country_event = {
+			id = BA_crisis.1003
+			days = 360
+			random = 720
+		}
+	}
+}
+
+#触发通告（country）
+country_event = {
+	id = BA_crisis.1001
+	is_triggered_only = yes
+	title = BA_crisis.1001.title
+	desc = BA_crisis.1001.desc
+	picture = GFX_BA_Checkmate
+	trigger = {
+		has_authority = auth_kivotos
+	}
+	option = {
+		name = BA_crisis.1001.next
+		hidden_effect = {
+			country_event = {
+				id = BA_crisis.1201
+			}
+		}
+	}
+}
+
+#前期准备（global）
+country_event = {
+	id = BA_crisis.1002
+	is_triggered_only = yes
+	hide_window = yes
+	fire_only_once = yes
+	immediate = {
+		#创建先驱爱丽丝
+		create_species = {
+			name = "NAME_BA_Precursors_Aris_species"
+			class = MACHINE
+			portrait = Aris_Pr
+			namelist = "ArisPrName"
+			traits = {
+				trait = trait_G_after
+			}
+			effect = {
+				set_species_flag = BA_Precursors_Aris_flag
+				save_global_event_target_as = BA_Precursors_Aris_species
+			}
+		}
+		create_country = {
+			name = "NAME_BA_Precursors_Aris_country"
+			type = Aris_mid
+			ignore_initial_colony_error = yes
+			species = event_target:BA_Precursors_Aris_species
+			#authority = auth_ba_fe
+			flag = {
+				icon = {
+					category = "ba"
+					file = "ba_flags_06.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+				colors = {
+					"dark_purple"
+					"dark_purple"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				##########
+				#set_graphical_culture = 
+				save_global_event_target_as = BA_Precursors_Aris_country
+				set_country_flag = BA_Precursors_Aris
+				add_modifier = {
+					modifier = modifier_BA_Aris
+				}
+				if = {
+					limit = {
+						OR = {
+							has_global_flag = BA_Crisis_Normal
+							has_global_flag = BA_Crisis_Hardcore
+							has_global_flag = BA_Crisis_Extreme
+						}
+					}
+					add_modifier = {
+						modifier = modifier_BA_mid_debuff_1
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							has_global_flag = BA_Crisis_Normal
+							has_global_flag = BA_Crisis_Hardcore
+						}
+					}
+					add_modifier = {
+						modifier = modifier_BA_mid_debuff_2
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = BA_Crisis_Normal
+					}
+					add_modifier = {
+						modifier = modifier_BA_mid_debuff_3
+					}
+				}
+				##########
+				#舰船设计
+				add_global_ship_design = NAME_BA_FE_MISSILE_SHIP
+				add_global_ship_design = NAME_BA_FE_ARTILLERY_SHIP
+				add_global_ship_design = NAME_BA_FE_SWARM_SHIP
+				add_global_ship_design = NAME_BA_FE_HUB_SHIP
+				add_global_ship_design = NAME_BA_FE_DEFENCE_CANON
+				add_global_ship_design = NAME_BA_FE_CONSTRUCTION
+				#领袖
+				create_leader = {
+					class = admiral
+					species = event_target:BA_Precursors_Aris_species
+					gender = female
+					name = NAME_Aris
+					skill = 3
+					set_age = 17
+					immortal = yes
+					event_leader = yes
+					traits = {
+					}
+				}
+				last_created_leader = {
+					change_leader_portrait = Aris_Pr
+				}
+				set_leader = last_created_leader
+				##########
+				# every_country = {
+				# 	limit = {
+				# 		OR = {
+				# 			# is_country_type = enclave							#不攻击飞地
+				# 			# is_country_type = enclave_mercenary							#不攻击飞地
+				# 			# is_country_type = guardian_sphere							#不攻击无限神机
+				# 			# is_country_type = fallen_empire							#与堕落和平相处
+				# 			is_country_type = default
+				# 		}
+				# 	}
+				# 	set_faction_hostility = {
+				# 		target = prev
+				# 		set_neutral = no
+				# 		set_hostile = yes
+				# 	}
+				# }
+			}
+		}
+		#划定爱丽丝出现的星系
+		random_system = {
+			limit = {
+				has_planet_class = pc_barren
+				has_natural_wormhole = no
+				has_any_megastructure = no
+				NOT = {
+					has_star_flag = enclave
+				}
+				OR = {
+					NOT = {
+						exists = owner
+					}
+					owner = {
+						is_country_type = default
+					}
+				}
+				NOT = {
+					any_system_planet = {
+						OR = {
+							is_colonizable = yes
+							has_owner = yes
+							has_planet_flag = phaseshifting_active
+						}
+					}
+				}
+			}
+			set_star_flag = BA_mid_Aris_system
+			save_global_event_target_as = BA_mid_Aris_system
+			random_system_planet = {
+				limit = {
+					is_planet_class = pc_barren
+				}
+				set_planet_flag = BA_mid_Aris_base
+				save_global_event_target_as = BA_mid_Aris_base
+			}
+		}
+	}
+}
+
+#开始！爱丽丝出击！（global） # BA_Precursors_Aris_country
+country_event = {
+	id = BA_crisis.1003
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		random_list = {
+			50 = {
+				set_global_flag = BA_mid_Aris_charaA
+			}
+			50 = {
+				set_global_flag = BA_mid_Aris_charaB
+			}
+		}
+		#通告启动
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = default
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+			}
+			event_target:BA_mid_Aris_system = {
+				set_surveyed = {
+					surveyed = yes
+					surveyor = prev
+				}
+			}
+			country_event = {
+				id = BA_crisis.1204
+			}
+			country_event = {
+				id = BA_crisis.1206
+				days = 10
+			}
+		}
+		#建立联系并初始化武装
+		event_target:BA_Precursors_Aris_country = {
+			country_event = {
+				id = BA_crisis.1004
+			}
+			country_event = {
+				id = BA_crisis.1005
+				days = 30
+			}
+		}
+		set_variable = {
+			which = BA_mid_Aris_countdown
+			value = 3
+		}
+	}
+}
+
+#初始化舰队和基地
+country_event = {
+	id = BA_crisis.1004
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		#设定第一个目的地
+		random_system = {
+			limit = {
+				has_star_flag = BA_D_ENTRANCE
+			}
+			random_system_planet = {
+				limit = {
+					has_planet_flag = BA_D_system_base
+				}
+				save_global_event_target_as = BA_Aris_mid_nod_target
+			}
+		}
+		#初始化星系基地并召出第一批舰队
+		event_target:BA_mid_Aris_system = {
+			event_target:BA_mid_Aris_base = {
+				change_pc = pc_ai
+				set_owner = event_target:BA_Precursors_Aris_country
+				#旗舰
+				BA_create_mid_Aris_fleet_king = yes
+				#卫戍舰
+				while = {
+					count = 6
+					BA_create_mid_Aris_fleet_bishop = yes
+				}
+				#攻击舰
+				while = {
+					count = 6
+					BA_create_mid_Aris_fleet_pawn = yes
+				}
+			}
+			# create_starbase = {
+			# 	size = starbase_marauder
+			# 	owner = event_target:BA_Precursors_Aris_country
+			# }
+		}
+		event_target:BA_Precursors_Aris_country = {
+			every_owned_fleet = {
+				limit = {
+					has_fleet_flag = BA_mid_Aris_pawn
+				}
+				fleet_event = {
+					id = BA_crisis.1030
+				}
+			}
+			every_owned_fleet = {
+				limit = {
+					has_fleet_flag = BA_mid_Aris_bishop
+				}
+				fleet_event = {
+					id = BA_crisis.1031
+				}
+			}
+		}
+	}
+}
+
+#与爱丽丝建立联系
+country_event = {
+	id = BA_crisis.1005
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = default
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+			}
+			establish_communications_no_message = root
+		}
+	}
+}
+
+#爱丽丝抵达跳线点
+country_event = {
+	id = BA_crisis.1006
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		NOT = {
+			has_global_flag = BA_mid_Aris_Arrived_nod
+		}
+	}
+	immediate = {
+		set_global_flag = BA_mid_Aris_Arrived_nod
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = default
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+			}
+			country_event = {
+				id = BA_crisis.1207
+			}
+		}
+	}
+}
+
+#爱丽丝遍历完成跳线点，舰队散开攻击
+country_event = {
+	id = BA_crisis.1007
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		NOR = {
+			has_global_flag = BA_mid_Aris_nod_complete
+			has_global_flag = BA_mid_Aris_disabled
+		}
+	}
+	immediate = {
+		set_global_flag = BA_mid_Aris_nod_complete
+		#爱丽丝开火
+		event_target:BA_Precursors_Aris_country = {
+			every_country = {
+				limit = {
+					OR = {
+						is_country_type = default
+					}
+				}
+				set_faction_hostility = {
+					target = prev
+					set_neutral = no
+					set_hostile = yes
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = default
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+			}
+			country_event = {
+				id = BA_crisis.1209
+			}
+		}
+		every_country = {
+			limit = {
+				is_country_type = global_event
+			}
+			country_event = {
+				id = BA_crisis.1010
+				days = 360
+				random = 360
+			}
+		}
+	}
+}
+
+#爱丽丝被攻击，提前散开攻击
+country_event = {
+	id = BA_crisis.1008
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		NOR = {
+			has_global_flag = BA_mid_Aris_nod_complete
+			has_global_flag = BA_mid_Aris_disabled
+		}
+		is_country_type = default
+		from = {
+			has_country_flag = BA_Precursors_Aris
+		}
+	}
+	immediate = {
+		set_global_flag = BA_mid_Aris_nod_complete
+		set_country_flag = BA_mid_Aris_nod_attacker
+		#爱丽丝开火
+		event_target:BA_Precursors_Aris_country = {
+			every_country = {
+				limit = {
+					OR = {
+						is_country_type = default
+					}
+				}
+				set_faction_hostility = {
+					target = prev
+					set_neutral = no
+					set_hostile = yes
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = default
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+			}
+			country_event = {
+				id = BA_crisis.1210
+			}
+		}
+		every_country = {
+			limit = {
+				is_country_type = global_event
+			}
+			country_event = {
+				id = BA_crisis.1010
+				days = 360
+				random = 360
+			}
+		}
+	}
+}
+
+#刷舰队
+country_event = {
+	id = BA_crisis.1010
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_country_type = global_event
+		NOT = {
+			has_global_flag = BA_mid_Aris_disabled
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				check_variable = {
+					which = BA_mid_Aris_countdown
+					value > 0
+				}
+			}
+			event_target:BA_Precursors_Aris_country = {
+				country_event = {
+					id = BA_crisis.1011
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_mid_Aris_countdown
+						value = 2
+					}
+				}
+				change_variable = {
+					which = BA_mid_Aris_countdown
+					value = -1
+				}
+				every_country = {
+					limit = {
+						is_country_type = default
+					}
+					country_event = {
+						id = BA_crisis.1225
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = BA_mid_Aris_countdown
+						value = 0
+					}
+				}
+				change_variable = {
+					which = BA_mid_Aris_countdown
+					value = -1
+				}
+				every_country = {
+					limit = {
+						is_country_type = default
+					}
+					country_event = {
+						id = BA_crisis.1227
+					}
+				}
+			}
+			else = {
+				#random = {
+				#	chance = 0.7
+				change_variable = {
+					which = BA_mid_Aris_countdown
+					value = -1
+				}
+				#}
+				every_country = {
+					limit = {
+						is_country_type = default
+					}
+					country_event = {
+						id = BA_crisis.1226
+					}
+				}
+			}
+			country_event = {
+				id = BA_crisis.1010
+				days = 360
+				random = 360
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_crisis.1011
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		event_target:BA_mid_Aris_base = {
+			set_owner = root
+			#卫戍舰
+			while = {
+				count = 2
+				BA_create_mid_Aris_fleet_bishop = yes
+				last_created_fleet = {
+					queue_actions = {
+						wait = 10
+					}
+				}
+			}
+			#攻击舰
+			while = {
+				count = 6
+				BA_create_mid_Aris_fleet_pawn = yes
+				last_created_fleet = {
+					queue_actions = {
+						wait = 10
+					}
+				}
+			}
+		}
+	}
+}
+
+#建门路线：刷先驱者通讯船
+country_event = {
+	id = BA_crisis.1013
+	is_triggered_only = yes
+	hide_window = yes
+	fire_only_once = yes
+	trigger = {
+		is_country_type = global_event
+	}
+	immediate = {
+		set_global_flag = BA_mid_Aris_disabled		#锁爱丽丝舰船，同时战斗停止
+		set_global_flag = BA_Precursor_Mid_A		#建门路线，影响终末天灾
+		event_target:BA_Precursors_Aris_country = {
+			every_owned_fleet = {
+				set_event_locked = yes
+			}
+			every_country = {
+				limit = {
+					OR = {
+						is_country_type = default
+					}
+				}
+				set_faction_hostility = {
+					target = prev
+					set_hostile = no
+					set_neutral = yes
+				}
+			}
+		}
+		# event_target:BA_mid_Aris_flagship = {
+		# 	set_event_locked = yes
+		# }
+		#建门者通知
+		from.owner = {
+			remove_country_flag = BA_mid_Aris_gate_building
+			set_country_flag = BA_Gate_finished
+			country_event = {
+				id = BA_crisis.1231
+			}
+		}
+		#其他帝国的通知，并移除星门
+		every_country = {
+			limit = {
+				is_country_type = default
+				NOT = {
+					has_country_flag = BA_Gate_finished
+				}
+			}
+			every_owned_megastructure = {
+				limit = {
+					is_megastructure_type = Dgate_temp_base
+				}
+				remove_megastructure = this
+			}
+			country_event = {
+				id = BA_crisis.1232
+			}
+		}
+		#联络国刷船
+		event_target:BA_Precursor_contactor = {
+			create_leader = {
+				class = admiral
+				species = event_target:BA_leader_species
+				gender = female
+				name = NAME_Shigure
+				skill = 10
+				set_age = 16
+				immortal = yes
+				event_leader = yes
+			}
+			last_created_leader = {
+				set_leader_flag = BA_event_leader
+				set_age = 16
+				change_leader_portrait = BA_125
+			}
+			create_fleet = {
+				name = Soft_determination
+				effect = {
+					set_owner = prev
+					assign_leader = last_created_leader
+					set_location = event_target:BA_mid_Aris_gate
+					create_ship = {
+						name = NAME_BA_FE_HUB_SHIP
+						design = NAME_BA_FE_HUB_SHIP
+					}
+					add_modifier = {
+						modifier = BA_fe_determination
+					}
+					queue_actions = {
+						move_to = event_target:BA_mid_Aris_system
+						effect = {
+							id = ArisMid.effect.0005							#收尾事件
+							save_global_event_target_as = BA_Precursor_contactor_ship
+							every_country = {
+								limit = {
+									is_country_type = global_event
+								}
+								country_event = {
+									id = BA_crisis.1014
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#建门路线：先驱者将爱丽丝送至基沃托斯
+country_event = {
+	id = BA_crisis.1014
+	is_triggered_only = yes
+	hide_window = yes
+	fire_only_once = yes
+	trigger = {
+		is_country_type = global_event
+	}
+	immediate = {
+		every_country = {
+			limit = {
+				has_country_flag = BA_Gate_finished
+			}
+			country_event = {
+				id = BA_crisis.1233
+			}
+		}
+		event_target:BA_Precursor_contactor_ship = {
+			fleet_event = {
+				id = BA_crisis.1040
+			}
+		}
+	}
+}
+
+#攻击路线：爱丽丝旗舰瘫痪
+ship_event = {
+	id = BA_crisis.1015
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_ship_flag = BA_mid_Aris_flagship
+	}
+	immediate = {
+		set_global_flag = BA_mid_Aris_disabled		#锁爱丽丝舰船，同时战斗停止
+		set_global_flag = BA_Precursor_Mid_B		#战斗路线，影响终末天灾
+		#瘫痪旗舰者的通知
+		from.owner = {
+			set_country_flag = BA_mid_Aris_disabler
+			country_event = {
+				id = BA_crisis.1211
+			}
+		}
+		#其他国家的通知
+		every_country = {
+			limit = {
+				is_country_type = default
+				NOT = {
+					has_country_flag = BA_mid_Aris_disabler
+				}
+			}
+			country_event = {
+				id = BA_crisis.1212
+				days = 5
+			}
+		}
+		#停止局势
+		every_country = {
+			limit = {
+				has_authority = auth_kivotos
+			}
+			every_situation = {
+				limit = {
+					is_situation_type = situation_mid_Aris_ask_help
+				}
+				destroy_situation = this
+			}
+		}
+		#临时星门拆毁
+		every_megastructure = {
+			limit = {
+				has_megastructure_flag = BA_temp_Dgate
+			}
+			delete_megastructure = this
+		}
+		#武装自毁
+		event_target:BA_Precursors_Aris_country = {
+			every_owned_fleet = {
+				limit = {
+					NOT = {
+						has_fleet_flag = BA_mid_Aris_king
+					}
+				}
+				destroy_fleet = this
+			}
+		}
+	}
+}
+
+#攻击路线：完成项目并捕获爱丽丝
+ship_event = {
+	id = BA_crisis.1016
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		set_global_flag = BA_mid_Aris_get
+		owner = {
+			if = {
+				limit = {
+					has_authority = auth_kivotos
+				}
+				country_event = {
+					id = BA_crisis.1215
+				}
+			}
+			else = {
+				country_event = {
+					id = BA_crisis.1213
+				}
+			}
+		}
+		delete_ship = event_target:BA_mid_Aris_flagship
+		#定时结束
+		every_country = {
+			limit = {
+				is_country_type = global_event
+			}
+			country_event = {
+				id = BA_crisis.1024
+				days = 360
+				random = 540
+			}
+		}
+	}
+}
+
+#爱丽丝返回先驱者
+country_event = {
+	id = BA_crisis.1024
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		#摧毁事件国家
+		event_target:BA_Precursors_Aris_country = {
+			destroy_country = yes
+		}
+		event_target:BA_Precursor_contactor_ship = {
+			delete_fleet = this
+		}
+		#剧情
+		every_country = {
+			limit = {
+				OR = {
+					has_country_flag = BA_mid_Aris_disabler
+					has_country_flag = BA_Gate_finished
+				}
+			}
+			country_event = {
+				id = BA_crisis.1240
+			}
+		}
+	}
+}
+
+### 设定舰队行动
+#pawn首次寻找跳线点
+fleet_event = {
+	id = BA_crisis.1030
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		queue_actions = {
+			wait = 60
+			find_closest_system = {
+				trigger = {
+					id = ArisMid.system.0001
+					has_star_flag = BA_D_ENTRANCE
+					NOT = {
+						has_star_flag = BA_mid_Aris_visited
+					}
+				}
+				found_system = {
+					move_to = this
+					find_closest_planet = {
+						trigger = {
+							id = ArisMid.planet.0001
+							has_planet_flag = BA_D_system_base
+						}
+						found_planet = {
+							move_to = this
+							effect = {
+								id = ArisMid.effect.0001								#1：剧情
+								random_country = {
+									limit = {
+										is_country_type = global_event
+									}
+									country_event = {
+										id = BA_crisis.1006
+									}
+								}
+							}
+						}
+					}
+					#
+					effect = {
+						id = ArisMid.effect.0002						#2：设定跳线点已到达
+						set_star_flag = BA_mid_Aris_visited
+					}
+				}
+			}
+			effect = {
+				id = ArisMid.effect.0003				#3：pawn寻找跳线点
+				event_target:BA_Precursors_Aris_country = {
+					every_owned_fleet = {
+						limit = {
+							has_fleet_flag = BA_mid_Aris_pawn
+						}
+						fleet_event = {
+							id = BA_crisis.1032
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#bishop、king于基地上方待命
+fleet_event = {
+	id = BA_crisis.1031
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		queue_actions = {
+			find_closest_system = {
+				trigger = {
+					id = ArisMid.system.0003					#返回基地
+					has_star_flag = BA_mid_Aris_system
+				}
+				found_system = {
+					move_to = this
+				}
+			}
+			repeat = {
+				while = {
+					id = ArisMid.global.0001
+					NOT = {
+						has_global_flag = BA_mid_Aris_nod_complete
+					}
+				}
+				find_closest_planet = {
+					trigger = {
+						id = ArisMid.planet.0004						#返回基地
+						has_planet_flag = BA_mid_Aris_base
+					}
+					found_planet = {
+						move_to = this
+						orbit_planet = this
+					}
+				}
+				wait = 10
+			}
+		}
+	}
+}
+
+#pawn循环寻找跳线点
+fleet_event = {
+	id = BA_crisis.1032
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		queue_actions = {
+			wait = 60
+			find_closest_system = {
+				trigger = {
+					id = ArisMid.system.0001
+					has_star_flag = BA_D_ENTRANCE
+					NOT = {
+						has_star_flag = BA_mid_Aris_visited
+					}
+				}
+				found_system = {
+					move_to = this
+					find_closest_planet = {
+						trigger = {
+							id = ArisMid.planet.0001
+							has_planet_flag = BA_D_system_base
+						}
+						found_planet = {
+							move_to = this
+						}
+					}
+					effect = {
+						id = ArisMid.effect.0002
+						set_star_flag = BA_mid_Aris_visited
+					}
+				}
+				failed = {
+					effect = {
+						id = ArisMid.effect.0004						#4：遍历完成 舰队散开
+						every_country = {
+							limit = {
+								OR = {
+									is_country_type = global_event
+								}
+							}
+							country_event = {
+								id = BA_crisis.1007
+							}
+						}
+					}
+				}
+			}
+			effect = {
+				id = ArisMid.effect.0003
+				event_target:BA_Precursors_Aris_country = {
+					every_owned_fleet = {
+						limit = {
+							has_fleet_flag = BA_mid_Aris_pawn
+						}
+						fleet_event = {
+							id = BA_crisis.1032
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#调查员舰船巡回
+fleet_event = {
+	id = BA_crisis.1040
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		queue_actions = {
+			find_closest_system = {
+				trigger = {
+					id = Arismid.system.0004					#检测有无爱丽丝舰队
+					any_fleet_in_system = {
+						is_owned_by = event_target:BA_Precursors_Aris_country
+						NOT = {
+							has_fleet_flag = BA_mid_Aris_king
+						}
+					}
+				}
+				found_system = {
+					move_to = this
+					repeat = {
+						while = {
+							id = Arismid.system.0004							#检测有无爱丽丝舰队
+							any_fleet_in_system = {
+								is_owned_by = event_target:BA_Precursors_Aris_country
+								NOT = {
+									has_fleet_flag = BA_mid_Aris_king
+								}
+							}
+						}
+						find_random_fleet = {
+							trigger = {
+								id = Arismid.fleet.0001								#检测爱丽丝舰队
+								is_owned_by = event_target:BA_Precursors_Aris_country
+								NOT = {
+									has_fleet_flag = BA_mid_Aris_king
+								}
+							}
+							found_fleet = {
+								move_to = this
+								wait = 30
+								effect = {
+									id = ArisMid.effect.0006									#解除锁定，摧毁舰队
+									set_event_locked = no
+									destroy_fleet = this
+								}
+							}
+						}
+					}
+					effect = {
+						id = ArisMid.effect.0007						#去下一个星系
+						root = {
+							fleet_event = {
+								id = BA_crisis.1040
+							}
+						}
+					}
+				}
+				failed = {
+					move_to = event_target:BA_mid_Aris_base
+					effect = {
+						id = ArisMid.effect.0008						#解除锁定，摧毁舰队
+						event_target:BA_mid_Aris_base = {
+							change_pc = pc_machine_broken
+						}
+						event_target:BA_mid_Aris_flagship = {
+							fleet = {
+								set_event_locked = no
+								destroy_fleet = this
+							}
+						}
+					}
+					wait = 60
+					#收集完成，返回星门，结束事件链
+					move_to = event_target:BA_mid_Aris_gate
+					orbit_planet = event_target:BA_mid_Aris_gate
+					wait = 30
+					effect = {
+						id = ArisMid.effect.0009
+						every_country = {
+							limit = {
+								has_country_flag = BA_Gate_finished
+							}
+							country_event = {
+								id = BA_crisis.1024								#建门线
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+### 轨道轰炸事件
+#进入轨道即进行一次轰击 +25%破坏度
+#50% 人口10%概率死亡 进行一轮清扫[360d]
+#75% 人口15%概率死亡 摧毁所有建筑 进行一轮清扫[360d]
+#100% 人口20%概率死亡 星球炸为死寂星球 该星球环境改造花费-80% 进行一轮清扫[1800d] 不再轰炸该星球
+### 先驱爱丽丝的天灾通讯界面
+#触发器
+country_event = {
+	id = BA_crisis.1180
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {
+			is_country_type = Aris_mid
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				has_global_flag = BA_mid_Aris_get
+			}
+			country_event = {
+				id = BA_crisis.1183
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					has_global_flag = BA_mid_Aris_get
+				}
+				has_global_flag = BA_mid_Aris_disabled
+			}
+			country_event = {
+				id = BA_crisis.1182
+			}
+		}
+		else_if = {
+			limit = {
+				NOR = {
+					has_global_flag = BA_mid_Aris_get
+					has_global_flag = BA_mid_Aris_disabled
+				}
+			}
+			country_event = {
+				id = BA_crisis.1181
+			}
+		}
+	}
+}
+
+#入侵时期
+country_event = {
+	id = BA_crisis.1181
+	is_triggered_only = yes
+	title = BA_crisis.1181.title
+	desc = {
+		text = BA_crisis.1181.desc.else
+		trigger = {
+			NOT = {
+				has_authority = auth_kivotos
+			}
+			NOT = {
+				has_global_flag = BA_mid_Aris_nod_complete
+			}
+		}
+	}
+	desc = {
+		text = BA_crisis.1181.desc.kivotos
+		trigger = {
+			has_authority = auth_kivotos
+			NOT = {
+				has_global_flag = BA_mid_Aris_nod_complete
+			}
+		}
+	}
+	desc = {
+		text = BA_crisis.1181.desc.error
+		trigger = {
+			has_global_flag = BA_mid_Aris_nod_complete
+		}
+	}
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = event_target:BA_Precursors_Aris_country
+		room = BA_06_room
+	}
+	option = {
+		name = BA_crisis.1181.dialog.a
+		is_dialog_only = yes
+		response_text = BA_crisis.1181.dialog.a.re
+		trigger = {
+			NOR = {
+				has_authority = auth_kivotos
+				has_global_flag = BA_mid_Aris_nod_complete
+			}
+		}
+	}
+	option = {
+		name = BA_crisis.1181.dialog.b
+		is_dialog_only = yes
+		response_text = BA_crisis.1181.dialog.b.re
+		trigger = {
+			NOR = {
+				has_authority = auth_kivotos
+				has_global_flag = BA_mid_Aris_nod_complete
+			}
+		}
+	}
+	option = {
+		name = BA_crisis.1181.dialog.c
+		is_dialog_only = yes
+		response_text = BA_crisis.1181.dialog.c.re
+		trigger = {
+			has_authority = auth_kivotos
+			NOT = {
+				has_global_flag = BA_mid_Aris_nod_complete
+			}
+		}
+	}
+	option = {
+		name = BA_crisis.1181.dialog.d
+		is_dialog_only = yes
+		response_text = BA_crisis.1181.dialog.d.re
+		trigger = {
+			has_authority = auth_kivotos
+			NOT = {
+				has_global_flag = BA_mid_Aris_nod_complete
+			}
+		}
+	}
+	option = {
+		name = BA_crisis.1181.exit.else
+		response_text = BA_crisis.1181.exit.else.re
+		trigger = {
+			NOR = {
+				has_authority = auth_kivotos
+				has_global_flag = BA_mid_Aris_nod_complete
+			}
+		}
+	}
+	option = {
+		name = BA_crisis.1181.exit.kivotos
+		response_text = BA_crisis.1181.exit.kivotos.re
+		trigger = {
+			has_authority = auth_kivotos
+			NOT = {
+				has_global_flag = BA_mid_Aris_nod_complete
+			}
+		}
+	}
+	option = {
+		name = BA_crisis.1181.exit.error
+		response_text = BA_crisis.1181.exit.error.re
+		trigger = {
+			has_authority = auth_kivotos
+			has_global_flag = BA_mid_Aris_nod_complete
+		}
+	}
+	option = {
+		name = BA_crisis.1181.exit.denied
+		response_text = BA_crisis.1181.exit.denied.re
+		trigger = {
+			NOT = {
+				has_authority = auth_kivotos
+			}
+			has_global_flag = BA_mid_Aris_nod_complete
+		}
+	}
+}
+
+#瘫痪时期
+country_event = {
+	id = BA_crisis.1182
+	is_triggered_only = yes
+	title = BA_crisis.1182.title
+	desc = BA_crisis.1182.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	option = {
+		name = BA_crisis.1182.exit
+	}
+}
+
+#被俘获
+country_event = {
+	id = BA_crisis.1183
+	is_triggered_only = yes
+	title = BA_crisis.1183.title
+	trigger = {
+		has_authority = auth_kivotos
+	}
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = event_target:BA_Precursors_Aris_country
+		room = BA_06_room
+	}
+	desc = {
+		text = BA_crisis.1183.desc.charaA
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaA
+		}
+	}
+	option = {
+		name = BA_crisis.1183.dialog.charaA.1
+		is_dialog_only = yes
+		response_text = BA_crisis.1183.dialog.charaA.1.re
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaA
+		}
+	}
+	option = {
+		name = BA_crisis.1183.dialog.charaA.2
+		is_dialog_only = yes
+		response_text = BA_crisis.1183.dialog.charaA.2.re
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaA
+		}
+	}
+	option = {
+		name = BA_crisis.1183.dialog.charaA.next
+		response_text = BA_crisis.1183.dialog.charaA.next.re
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaA
+		}
+	}
+	desc = {
+		text = BA_crisis.1183.desc.charaB
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaB
+		}
+	}
+	option = {
+		name = BA_crisis.1183.dialog.charaB.1
+		is_dialog_only = yes
+		response_text = BA_crisis.1183.dialog.charaB.1.re
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaB
+		}
+	}
+	option = {
+		name = BA_crisis.1183.dialog.charaB.2
+		is_dialog_only = yes
+		response_text = BA_crisis.1183.dialog.charaB.2.re
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaB
+		}
+	}
+	option = {
+		name = BA_crisis.1183.dialog.charaB.next
+		response_text = BA_crisis.1183.dialog.charaB.next.re
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaB
+		}
+	}
+}
+
+#扭送先驱者之后
+### 剧情对话用事件
+#快子信号日志记录
+country_event = {
+	id = BA_crisis.1201
+	is_triggered_only = yes
+	title = BA_crisis.1201.title
+	desc = BA_crisis.1201.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_crisis.1201.a
+		is_dialog_only = yes
+		response_text = BA_crisis.1201.a.re
+	}
+	option = {
+		name = BA_crisis.1201.b
+		is_dialog_only = yes
+		response_text = BA_crisis.1201.b.re
+	}
+	option = {
+		name = BA_crisis.1201.c
+		is_dialog_only = yes
+		response_text = BA_crisis.1201.c.re
+	}
+	option = {
+		name = BA_crisis.1201.d
+		is_dialog_only = yes
+		response_text = BA_crisis.1201.d.re
+	}
+	option = {
+		name = BA_crisis.1201.next
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_crisis.1202
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_crisis.1202
+	is_triggered_only = yes
+	title = BA_crisis.1202.title
+	desc = BA_crisis.1202.desc
+	picture = GFX_BA_Checkmate
+	option = {
+		name = BA_crisis.1202.next
+		hidden_effect = {
+			country_event = {
+				id = BA_crisis.1203
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_crisis.1203
+	is_triggered_only = yes
+	title = BA_crisis.1203.title
+	desc = BA_crisis.1203.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = event_target:BA_Precursor_country
+		room = BA_01_room
+	}
+	immediate = {
+		event_target:BA_Precursor_species = {
+			change_species_portrait = BA_Seia
+		}
+	}
+	option = {
+		name = BA_crisis.1203.a
+		is_dialog_only = yes
+		response_text = BA_crisis.1203.a.re
+	}
+	option = {
+		name = BA_crisis.1203.next
+		response_text = BA_crisis.1203.next.re
+	}
+}
+
+#通告爱丽丝出现
+country_event = {
+	id = BA_crisis.1204
+	is_triggered_only = yes
+	title = BA_crisis.1204.title
+	desc = BA_crisis.1204.desc
+	location = event_target:BA_mid_Aris_system
+	option = {
+		name = BA_crisis.1204.ba
+		trigger = {
+			hidden_trigger = {
+				has_authority = auth_kivotos
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = BA_crisis.1205
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = BA_crisis.1204.else
+		trigger = {
+			NOT = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+}
+
+#出现后联系先驱者
+country_event = {
+	id = BA_crisis.1205
+	is_triggered_only = yes
+	title = BA_crisis.1205.title
+	desc = BA_crisis.1205.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = event_target:BA_Precursor_country
+		room = BA_01_room
+	}
+	immediate = {
+		event_target:BA_Precursor_species = {
+			change_species_portrait = BA_Seia
+		}
+	}
+	option = {
+		name = BA_crisis.1205.next
+		response_text = BA_crisis.1205.next.re
+	}
+}
+
+#与爱丽丝初次见面
+country_event = {
+	id = BA_crisis.1206
+	is_triggered_only = yes
+	title = BA_crisis.1206.title
+	desc = BA_crisis.1206.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = event_target:BA_Precursors_Aris_country
+		room = BA_06_room
+	}
+	option = {
+		name = BA_crisis.1206.a
+		trigger = {
+			has_authority = auth_kivotos
+		}
+		is_dialog_only = yes
+		response_text = BA_crisis.1206.a.re
+	}
+	option = {
+		name = BA_crisis.1206.b
+		trigger = {
+			has_authority = auth_kivotos
+		}
+		is_dialog_only = yes
+		response_text = BA_crisis.1206.b.re
+	}
+	option = {
+		name = BA_crisis.1206.next.kivotos
+		trigger = {
+			has_authority = auth_kivotos
+		}
+	}
+	option = {
+		name = BA_crisis.1206.next.other
+		trigger = {
+			NOT = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+}
+
+#通告到达跳线点
+country_event = {
+	id = BA_crisis.1207
+	is_triggered_only = yes
+	title = BA_crisis.1207.title
+	desc = BA_crisis.1207.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = event_target:BA_Precursors_Aris_country
+		room = BA_06_room
+	}
+	option = {
+		name = BA_crisis.1207.next.kivotos
+		trigger = {
+			has_authority = auth_kivotos
+		}
+		country_event = {
+			id = BA_crisis.1208
+			days = 1
+		}
+	}
+	option = {
+		name = BA_crisis.1207.next.other
+		trigger = {
+			NOT = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_crisis.1208
+	is_triggered_only = yes
+	title = BA_crisis.1208.title
+	desc = BA_crisis.1208.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = event_target:BA_Precursor_country
+		room = BA_01_room
+	}
+	immediate = {
+		event_target:BA_Precursor_species = {
+			change_species_portrait = BA_Seia
+		}
+	}
+	option = {
+		name = BA_crisis.1208.a
+		is_dialog_only = yes
+		response_text = BA_crisis.1208.a.re
+	}
+	option = {
+		name = BA_crisis.1208.b
+		is_dialog_only = yes
+		response_text = BA_crisis.1208.b.re
+	}
+	option = {
+		name = BA_crisis.1208.next
+		response_text = BA_crisis.1208.next.re
+		start_situation = {
+			type = situation_mid_Aris_ask_help
+		}
+	}
+}
+
+#遍历跳线点完成，报错，舰队散开出击
+country_event = {
+	id = BA_crisis.1209
+	is_triggered_only = yes
+	title = BA_crisis.1209.title
+	desc = BA_crisis.1209.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = event_target:BA_Precursors_Aris_country
+		room = BA_06_room
+	}
+	option = {
+		name = BA_crisis.1209.next
+		response_text = BA_crisis.1209.next.re
+	}
+}
+
+#被攻击，舰队提前散开出击
+country_event = {
+	id = BA_crisis.1210
+	is_triggered_only = yes
+	title = BA_crisis.1210.title
+	desc = BA_crisis.1210.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = event_target:BA_Precursors_Aris_country
+		room = BA_06_room
+	}
+	option = {
+		name = BA_crisis.1210.next
+		trigger = {
+			NOT = {
+				has_country_flag = BA_mid_Aris_nod_attacker
+			}
+		}
+	}
+	option = {
+		name = BA_crisis.1210.attacker.kivotos
+		trigger = {
+			has_country_flag = BA_mid_Aris_nod_attacker
+			has_authority = auth_kivotos
+		}
+	}
+	option = {
+		name = BA_crisis.1210.attacker.other
+		trigger = {
+			has_country_flag = BA_mid_Aris_nod_attacker
+			NOT = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+}
+
+#瘫痪旗舰
+country_event = {
+	id = BA_crisis.1211
+	is_triggered_only = yes
+	title = BA_crisis.1211.title
+	desc = {
+		text = BA_crisis.1211.desc.other
+		trigger = {
+			is_country_type = default
+			NOT = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	desc = {
+		text = BA_crisis.1211.desc.kivotos
+		trigger = {
+			is_country_type = default
+			has_authority = auth_kivotos
+		}
+	}
+	desc = {
+		text = BA_crisis.1211.desc.accident
+		trigger = {
+			NOT = {
+				is_country_type = default
+			}
+		}
+	}
+	option = {
+		name = BA_crisis.1211.other
+		trigger = {
+			is_country_type = default
+			NOT = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	option = {
+		name = BA_crisis.1211.kivotos
+		trigger = {
+			is_country_type = default
+			has_authority = auth_kivotos
+		}
+	}
+	option = {
+		name = BA_crisis.1211.accident
+		trigger = {
+			NOT = {
+				is_country_type = default
+			}
+		}
+	}
+	after = {
+		enable_special_project = {
+			name = BA_MID_GET_ARIS
+			location = event_target:BA_mid_Aris_flagship
+		}
+	}
+}
+
+#其他人收到瘫痪旗舰的通知
+country_event = {
+	id = BA_crisis.1212
+	is_triggered_only = yes
+	title = BA_crisis.1212.title
+	desc = {
+		text = BA_crisis.1212.desc.other
+		trigger = {
+			NOT = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	desc = {
+		text = BA_crisis.1212.desc.kivotos
+		trigger = {
+			has_authority = auth_kivotos
+		}
+	}
+	option = {
+		name = BA_crisis.1212.other
+		trigger = {
+			NOT = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	option = {
+		name = BA_crisis.1212.kivotos
+		trigger = {
+			has_authority = auth_kivotos
+		}
+		#巨构退款
+		add_resource = {
+			energy = 8500
+			food = 1500
+			alloys = 6000
+			sr_pyroxenes = 100
+		}
+	}
+}
+
+#非基沃托斯：先驱者赎人
+country_event = {
+	id = BA_crisis.1213
+	is_triggered_only = yes
+	title = BA_crisis.1213.title
+	desc = BA_crisis.1213.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = event_target:BA_Precursor_country
+		room = BA_01_room
+	}
+	immediate = {
+		event_target:BA_Precursor_species = {
+			change_species_portrait = BA_Seia
+		}
+	}
+	option = {
+		name = BA_crisis.1213.next
+		hidden_effect = {
+			every_country = {
+				limit = {
+					has_authority = auth_kivotos
+				}
+				country_event = {
+					id = BA_crisis.1214
+					days = 5
+				}
+			}
+		}
+	}
+}
+
+#赎人后通告基沃托斯
+country_event = {
+	id = BA_crisis.1214
+	is_triggered_only = yes
+	title = BA_crisis.1214.title
+	desc = BA_crisis.1214.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = event_target:BA_Precursor_country
+		room = BA_01_room
+	}
+	immediate = {
+		event_target:BA_Precursor_species = {
+			change_species_portrait = BA_Seia
+		}
+	}
+	option = {
+		name = BA_crisis.1214.next
+	}
+}
+
+#基沃托斯：瘫痪先驱爱丽丝事件链
+country_event = {
+	id = BA_crisis.1215
+	is_triggered_only = yes
+	title = BA_crisis.1215.title
+	desc = BA_crisis.1215.desc
+	option = {
+		name = BA_crisis.1215.next
+		hidden_effect = {
+			country_event = {
+				id = BA_crisis.1216
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_crisis.1216
+	is_triggered_only = yes
+	title = BA_crisis.1216.title
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Aris_Pr
+		room = BA_05_room
+	}
+	desc = {
+		text = BA_crisis.1216.desc.charaA
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaA
+		}
+	}
+	option = {
+		name = BA_crisis.1216.1.charaA
+		is_dialog_only = yes
+		response_text = BA_crisis.1216.1.re.charaA
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaA
+		}
+	}
+	option = {
+		name = BA_crisis.1216.2.charaA
+		is_dialog_only = yes
+		response_text = BA_crisis.1216.2.re.charaA
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaA
+		}
+	}
+	option = {
+		name = BA_crisis.1216.3.charaA
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaA
+		}
+		country_event = {
+			id = BA_crisis.1217
+		}
+	}
+	desc = {
+		text = BA_crisis.1216.desc.charaB
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaB
+		}
+	}
+	option = {
+		name = BA_crisis.1216.1.charaB
+		is_dialog_only = yes
+		response_text = BA_crisis.1216.1.re.charaB
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaB
+		}
+	}
+	option = {
+		name = BA_crisis.1216.2.charaB
+		is_dialog_only = yes
+		response_text = BA_crisis.1216.2.re.charaB
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaB
+		}
+	}
+	option = {
+		name = BA_crisis.1216.3.charaB
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaB
+		}
+		country_event = {
+			id = BA_crisis.1217
+		}
+	}
+}
+
+country_event = {
+	id = BA_crisis.1217
+	is_triggered_only = yes
+	title = BA_crisis.1217.title
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = event_target:BA_Precursor_country
+		room = BA_01_room
+	}
+	immediate = {
+		event_target:BA_Precursor_species = {
+			change_species_portrait = BA_Seia
+		}
+	}
+	desc = {
+		text = BA_crisis.1217.desc.charaA
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaA
+		}
+	}
+	option = {
+		name = BA_crisis.1217.1.charaA
+		is_dialog_only = yes
+		response_text = BA_crisis.1217.1.re.charaA
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaA
+		}
+	}
+	option = {
+		name = BA_crisis.1217.2.charaA
+		is_dialog_only = yes
+		response_text = BA_crisis.1217.2.re.charaA
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaA
+		}
+	}
+	option = {
+		name = BA_crisis.1217.3.charaA
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaA
+		}
+	}
+	desc = {
+		text = BA_crisis.1217.desc.charaB
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaB
+		}
+	}
+	option = {
+		name = BA_crisis.1217.1.charaB
+		is_dialog_only = yes
+		response_text = BA_crisis.1217.1.re.charaB
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaB
+		}
+	}
+	option = {
+		name = BA_crisis.1217.2.charaB
+		is_dialog_only = yes
+		response_text = BA_crisis.1217.2.re.charaB
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaB
+		}
+	}
+	option = {
+		name = BA_crisis.1217.3.charaB
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaB
+		}
+	}
+}
+
+#爱丽丝刷舰队-第一波
+country_event = {
+	id = BA_crisis.1225
+	is_triggered_only = yes
+	title = BA_crisis.1225.title
+	desc = BA_crisis.1225.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = event_target:BA_Precursors_Aris_country
+		room = BA_06_room
+	}
+	option = {
+		name = BA_crisis.1225.next
+	}
+}
+
+#爱丽丝刷舰队-中间波
+country_event = {
+	id = BA_crisis.1226
+	is_triggered_only = yes
+	title = BA_crisis.1226.title
+	desc = BA_crisis.1226.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = event_target:BA_Precursors_Aris_country
+		room = BA_06_room
+	}
+	option = {
+		name = BA_crisis.1226.next
+	}
+}
+
+#爱丽丝刷舰队-最终波
+country_event = {
+	id = BA_crisis.1227
+	is_triggered_only = yes
+	title = BA_crisis.1227.title
+	desc = BA_crisis.1227.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = event_target:BA_Precursors_Aris_country
+		room = BA_06_room
+	}
+	option = {
+		name = BA_crisis.1227.next
+	}
+}
+
+#先驱者支援
+country_event = {
+	id = BA_crisis.1230
+	is_triggered_only = yes
+	title = BA_crisis.1230.title
+	desc = {
+		text = BA_crisis.1230.desc.A
+		trigger = {
+			has_country_flag = BA_mid_Aris_ask_help_A
+		}
+	}
+	desc = {
+		text = BA_crisis.1230.desc.B
+		trigger = {
+			has_country_flag = BA_mid_Aris_ask_help_B
+		}
+	}
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = event_target:BA_Precursor_country
+		room = BA_01_room
+	}
+	immediate = {
+		event_target:BA_Precursor_species = {
+			change_species_portrait = BA_Seia
+		}
+	}
+	option = {
+		name = BA_crisis.1230.A
+		trigger = {
+			has_country_flag = BA_mid_Aris_ask_help_A
+		}
+		add_modifier = {
+			modifier = modifier_BA_vs_mid_Aris
+		}
+		add_monthly_resource_mult = {
+			resource = alloys
+			value = 24
+			min = 2500
+			max = 25000
+		}
+		hidden_effect = {
+			remove_country_flag = BA_mid_Aris_ask_help_A
+		}
+	}
+	option = {
+		name = BA_crisis.1230.B
+		trigger = {
+			has_country_flag = BA_mid_Aris_ask_help_B
+		}
+		give_technology = {
+			tech = tech_BA_gate_build
+			message = yes
+		}
+		capital_scope = {
+			solar_system = {
+				spawn_megastructure = {
+					type = Dgate_temp_base
+					graphical_culture = root
+					orbit_distance = 200
+					orbit_angle = 80
+					init_effect = {
+						set_megastructure_flag = BA_temp_Dgate
+						set_owner = prev.owner
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			remove_country_flag = BA_mid_Aris_ask_help_B
+			set_country_flag = BA_allow_build_gate
+		}
+	}
+}
+
+#建门完成，建造者通知
+country_event = {
+	id = BA_crisis.1231
+	is_triggered_only = yes
+	title = BA_crisis.1231.title
+	desc = BA_crisis.1231.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = event_target:BA_Precursor_country
+		room = BA_01_room
+	}
+	trigger = {
+		has_country_flag = BA_GateBuilder
+	}
+	immediate = {
+		event_target:BA_Precursor_species = {
+			change_species_portrait = BA_Seia
+		}
+	}
+	option = {
+		name = BA_crisis.1231.next
+	}
+}
+
+#建门完成，其他帝国通知
+country_event = {
+	id = BA_crisis.1232
+	is_triggered_only = yes
+	title = BA_crisis.1232.title
+	desc = {
+		text = BA_crisis.1232.desc.other
+		trigger = {
+			NOT = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	desc = {
+		text = BA_crisis.1232.desc.kivotos
+		trigger = {
+			has_authority = auth_kivotos
+		}
+	}
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = event_target:BA_Precursor_country
+		room = BA_01_room
+	}
+	immediate = {
+		event_target:BA_Precursor_species = {
+			change_species_portrait = BA_Seia
+		}
+	}
+	option = {
+		name = BA_crisis.1232.a.kivotos
+		trigger = {
+			has_authority = auth_kivotos
+		}
+		if = {
+			limit = {
+				has_country_flag = BA_mid_Aris_gate_building
+			}
+			add_resource = {
+				energy = 8500
+				food = 1500
+				alloys = 6000
+				sr_pyroxenes = 100
+			}
+			remove_country_flag = BA_mid_Aris_gate_building
+		}
+	}
+	option = {
+		name = BA_crisis.1232.a.other
+		trigger = {
+			NOT = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+}
+
+#对话，先驱者捕获爱丽丝事件链
+country_event = {
+	id = BA_crisis.1233
+	is_triggered_only = yes
+	title = BA_crisis.1233.title
+	desc = BA_crisis.1233.desc
+	immediate = {
+	}
+	option = {
+		name = BA_crisis.1233.next
+		hidden_effect = {
+			country_event = {
+				id = BA_crisis.1234
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_crisis.1234
+	is_triggered_only = yes
+	title = BA_crisis.1234.title
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Aris_Pr
+		room = BA_05_room
+	}
+	desc = {
+		text = BA_crisis.1234.desc.charaA
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaA
+		}
+	}
+	option = {
+		name = BA_crisis.1234.1.charaA
+		is_dialog_only = yes
+		response_text = BA_crisis.1234.1.re.charaA
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaA
+		}
+	}
+	option = {
+		name = BA_crisis.1234.2.charaA
+		is_dialog_only = yes
+		response_text = BA_crisis.1234.2.re.charaA
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaA
+		}
+	}
+	option = {
+		name = BA_crisis.1234.3.charaA
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaA
+		}
+		country_event = {
+			id = BA_crisis.1235
+		}
+	}
+	desc = {
+		text = BA_crisis.1234.desc.charaB
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaB
+		}
+	}
+	option = {
+		name = BA_crisis.1234.1.charaB
+		is_dialog_only = yes
+		response_text = BA_crisis.1234.1.re.charaB
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaB
+		}
+	}
+	option = {
+		name = BA_crisis.1234.2.charaB
+		is_dialog_only = yes
+		response_text = BA_crisis.1234.2.re.charaB
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaB
+		}
+	}
+	option = {
+		name = BA_crisis.1234.3.charaB
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaB
+		}
+		country_event = {
+			id = BA_crisis.1235
+		}
+	}
+}
+
+country_event = {
+	id = BA_crisis.1235
+	is_triggered_only = yes
+	title = BA_crisis.1235.title
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = event_target:BA_Precursor_country
+		room = BA_01_room
+	}
+	immediate = {
+		event_target:BA_Precursor_species = {
+			change_species_portrait = BA_Seia
+		}
+	}
+	desc = BA_crisis.1235.desc
+	option = {
+		name = BA_crisis.1235.1
+		is_dialog_only = yes
+		response_text = BA_crisis.1235.1.re
+	}
+	option = {
+		name = BA_crisis.1235.2
+		is_dialog_only = yes
+		response_text = BA_crisis.1235.2.re
+	}
+	option = {
+		name = BA_crisis.1235.3
+		custom_tooltip = BA_crisis.1235.3.tip
+	}
+}
+
+#对话，爱丽丝回归
+country_event = {
+	id = BA_crisis.1240
+	is_triggered_only = yes
+	picture = GFX_BA_Site_of_Aris
+	title = BA_crisis.1240.title
+	desc = {
+		text = BA_crisis.1240.desc.A
+		trigger = {
+			has_global_flag = BA_Precursor_Mid_A
+		}
+	}
+	desc = {
+		text = BA_crisis.1240.desc.B
+		trigger = {
+			has_global_flag = BA_Precursor_Mid_B
+		}
+	}
+	option = {
+		name = BA_crisis.1240.next
+		hidden_effect = {
+			country_event = {
+				id = BA_crisis.1241
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_crisis.1241
+	title = BA_crisis.1241.title
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_Aris
+		room = BA_01_room
+	}
+	desc = {
+		text = BA_crisis.1241.desc.charaA
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaA
+		}
+	}
+	option = {
+		name = BA_crisis.1241.1.charaA
+		is_dialog_only = yes
+		response_text = BA_crisis.1241.1.re.charaA
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaA
+		}
+	}
+	option = {
+		name = BA_crisis.1241.2.charaA
+		is_dialog_only = yes
+		response_text = BA_crisis.1241.2.re.charaA
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaA
+		}
+	}
+	option = {
+		name = BA_crisis.1241.3.charaA
+		response_text = BA_crisis.1241.3.re.charaA
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaA
+		}
+		country_event = {
+			id = BA_crisis.1242
+			days = 1
+		}
+	}
+	desc = {
+		text = BA_crisis.1241.desc.charaB
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaB
+		}
+	}
+	option = {
+		name = BA_crisis.1241.1.charaB
+		is_dialog_only = yes
+		response_text = BA_crisis.1241.1.re.charaB
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaB
+		}
+	}
+	option = {
+		name = BA_crisis.1241.2.charaB
+		is_dialog_only = yes
+		response_text = BA_crisis.1241.2.re.charaB
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaB
+		}
+	}
+	option = {
+		name = BA_crisis.1241.3.charaB
+		response_text = BA_crisis.1241.3.re.charaB
+		trigger = {
+			has_global_flag = BA_mid_Aris_charaB
+		}
+		country_event = {
+			id = BA_crisis.1242
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = BA_crisis.1242
+	is_triggered_only = yes
+	title = BA_crisis.1242.title
+	desc = {
+		text = BA_crisis.1242.desc.A
+		trigger = {
+			has_global_flag = BA_Precursor_Mid_A
+		}
+	}
+	desc = {
+		text = BA_crisis.1242.desc.B
+		trigger = {
+			has_global_flag = BA_Precursor_Mid_B
+		}
+	}
+	option = {
+		name = BA_crisis.1242.next
+	}
+}
+
+########
+#测试用 全图视野 开启外域链路 建立联系
+country_event = {
+	id = BA_crisis.7777
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		#全图视野
+		add_modifier = {
+			modifier = modifier_BA_Veritas_4
+		}
+		#联系普通帝国
+		every_country = {
+			limit = {
+				is_country_type = default
+			}
+			establish_communications = root
+		}
+		#联系先驱者或数秘术
+		every_country = {
+			limit = {
+				OR = {
+					#has_country_flag = BA_Gematria
+					has_authority = auth_kivotos_pr
+				}
+			}
+			country_event = {
+				id = BA_Precursor.0100
+			}
+		}
+		# every_country = {
+		# 	limit = {
+		# 		OR = {
+		# 			has_country_flag = BA_Gematria
+		# 			has_country_flag = BA_Precursor
+		# 		}
+		# 	}
+		# 	every_country = {
+		# 		limit = {
+		# 			OR = {
+		# 				is_country_type = default
+		# 				is_country_type = fallen_empire
+		# 				is_country_type = awakened_fallen_empire
+		# 			}
+		# 		}
+		# 		establish_communications_no_message = prev
+		# 		country_event = {
+		# 			id = BA_Precursor.0101
+		# 		}
+		# 	}
+		# }
+		# #开启外域链路
+		# random_country = {
+		# 	limit = {
+		# 		is_country_type = global_event
+		# 	}
+		# 	country_event = {
+		# 		id = BA_Precursor.0010
+		# 	}
+		# }
+	}
+}
+
+#测试用 触发天灾
+country_event = {
+	id = BA_crisis.8888
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		#全图视野
+		#
+		every_country = {
+			limit = {
+				is_country_type = global_event
+			}
+			#快子信号通告及先驱者
+			every_country = {
+				limit = {
+					OR = {
+						is_country_type = default
+						is_country_type = fallen_empire
+						is_country_type = awakened_fallen_empire
+					}
+				}
+				country_event = {
+					id = BA_crisis.1001
+				}
+			}
+			#划定位置
+			country_event = {
+				id = BA_crisis.1002
+			}
+			#出现
+			country_event = {
+				id = BA_crisis.1003
+				days = 60
+			}
+		}
+	}
+}
+
+#测试用 爱丽丝舰船获得大量加速
+country_event = {
+	id = BA_crisis.9000
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		event_target:BA_Precursors_Aris_country = {
+			add_modifier = {
+				modifier = BA_fe_determination
+			}
+		}
+	}
+}
+
+#测试用 调查员巡回调查
+country_event = {
+	id = BA_crisis.7877
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		event_target:BA_Precursor_contactor = {
+			every_owned_fleet = {
+				fleet_event = {
+					id = BA_crisis.7878
+				}
+			}
+		}
+	}
+}
+
+fleet_event = {
+	id = BA_crisis.7878
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		queue_actions = {
+			find_closest_system = {
+				trigger = {
+					id = Arismid.system.0004					#检测有无爱丽丝舰队
+					any_fleet_in_system = {
+						is_owned_by = event_target:BA_Precursors_Aris_country
+						NOT = {
+							has_fleet_flag = BA_mid_Aris_king
+						}
+					}
+				}
+				found_system = {
+					move_to = this
+					repeat = {
+						while = {
+							id = Arismid.system.0004							#检测有无爱丽丝舰队
+							any_fleet_in_system = {
+								is_owned_by = event_target:BA_Precursors_Aris_country
+								NOT = {
+									has_fleet_flag = BA_mid_Aris_king
+								}
+							}
+						}
+						find_random_fleet = {
+							trigger = {
+								id = Arismid.fleet.0001								#检测爱丽丝舰队
+								is_owned_by = event_target:BA_Precursors_Aris_country
+								NOT = {
+									has_fleet_flag = BA_mid_Aris_king
+								}
+							}
+							found_fleet = {
+								move_to = this
+								wait = 30
+								effect = {
+									id = ArisMid.effect.0006									#解除锁定，摧毁舰队
+									set_event_locked = no
+									destroy_fleet = this
+								}
+							}
+						}
+					}
+					effect = {
+						id = ArisMid.effect.0007						#去下一个星系
+						root = {
+							fleet_event = {
+								id = BA_crisis.7878
+							}
+						}
+					}
+				}
+				failed = {
+					move_to = event_target:BA_mid_Aris_base
+					effect = {
+						id = ArisMid.effect.0006						#解除锁定，摧毁舰队
+						event_target:BA_mid_Aris_base = {
+							change_pc = pc_machine_broken
+						}
+						event_target:BA_mid_Aris_flagship = {
+							fleet = {
+								set_event_locked = no
+								destroy_fleet = this
+							}
+						}
+					}
+					wait = 30
+					move_to = event_target:BA_mid_Aris_gate
+					wait = 30
+				}
+			}
+		}
+	}
+}
+
+#测试用 事件结束后摧毁爱丽丝国家
+country_event = {
+	id = BA_crisis.9501
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		event_target:BA_Precursors_Aris_country = {
+			destroy_country = yes
+		}
+	}
+}

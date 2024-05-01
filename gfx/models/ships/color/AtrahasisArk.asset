@@ -1,0 +1,40 @@
+entity = {
+	name = "AtrahasisArk_entity"
+	pdxmesh = "AtrahasisArk_mesh"
+	locator = {
+		name = "sky_ring"
+		position = { 0 -60 0 }
+		rotation = { 0 0 0 }
+	}
+	attach = {
+		sky_ring = "SkyRing_entity"
+	}
+}
+entity = {
+	name = "AtrahasisArk_invincible_entity"
+	pdxmesh = "AtrahasisArk_mesh"
+	locator = {
+		name = "root"
+		position = { 0 0 0 }
+		rotation = { 0 0 0 }
+	}
+	locator = {
+		name = "sky_ring"
+		position = { 0 -60 0 }
+		rotation = { 0 0 0 }
+	}
+	attach = {
+		sky_ring = "SkyRing_entity"
+		root = "AtrahasisArk_black_hole_entity"
+	}
+}
+entity = {
+	name = "SkyRing_entity"
+	pdxmesh = "SkyRing_mesh"
+}
+entity = {
+	name = "AtrahasisArk_black_hole_entity"
+	pdxmesh = "AtrahasisArk_black_hole_new_mesh"
+	scale = 16.0	
+	default_state = "idle"
+}

@@ -1,0 +1,48 @@
+objectTypes = {
+	pdxmesh = {
+		name = "ba_mega_keystone_base_stage_1_mesh"
+		file = "gfx/models/ships/megastructures/mega_keystone_base/ba_mega_keystone_base_stage_1.mesh"
+		scale = 6.0
+
+		meshsettings = {
+			name = "ba_mega_keystone_base_stage_1Shape"
+			index = 0
+			texture_diffuse = "Millennium_Tech_Tower_03.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "ba_mega_keystone_base_stage_2_mesh"
+		file = "gfx/models/ships/megastructures/mega_keystone_base/ba_mega_keystone_base_stage_2.mesh"
+		scale = 6.0
+
+		meshsettings = {
+			name = "ba_mega_keystone_base_stage_1Shape"
+			index = 0
+			texture_diffuse = "Millennium_Tech_Tower_03.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "ba_mega_keystone_base_stage_3_mesh"
+		file = "gfx/models/ships/megastructures/mega_keystone_base/ba_mega_keystone_base_stage_3.mesh"
+		scale = 6.0
+
+		meshsettings = {
+			name = "ba_mega_keystone_base_stage_1Shape"
+			index = 0
+			texture_diffuse = "Millennium_Tech_Tower_03.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

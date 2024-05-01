@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Adena3_mesh"
+		file = "gfx\models\combat_items\Adena3\Adena3.mesh"
+		scale = 6.0
+
+		meshsettings = {
+			name = "Adena3Shape"
+			index = 0
+			texture_diffuse = "Hare_Original_DronPad.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}

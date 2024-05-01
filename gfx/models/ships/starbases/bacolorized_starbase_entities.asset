@@ -1,0 +1,340 @@
+@flowmap_speed = 0.17
+@flowmap_intensity =  0.3
+
+
+	entity = {
+		name = "bacolorized_01_starbase_outpost_entity"
+		pdxmesh = "bacolorized_01_outpost_frame_mesh"
+
+		cull_radius = 7
+	}
+
+	entity = {
+		name = "bacolorized_01_starbase_outpost_section_entity"
+		pdxmesh = "bacolorized_01_outpost_mesh"
+
+		locator = { name = "slot1"				position = { 0	0  0 } }
+
+	attach = {
+		slot1 = "ba_ship_halo_colorized_station_entity"
+	}
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			 event = { time = 0 node = "light_locator_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_03" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_01" } }
+		}
+			game_data = {
+				emissive_recolor_crunch = 2.0
+			}
+
+	}
+
+
+entity = {
+	name = "bacolorized_01_starbase_starport_entity"
+	pdxmesh = "bacolorized_01_starport_frame_mesh"
+
+	cull_radius = 25
+}
+
+entity = {
+	name = "bacolorized_01_starbase_starport_section_entity"
+	pdxmesh = "bacolorized_01_starport_mesh"
+
+	locator = { name = "slot1"				position = { 0	0  0 } }
+
+	attach = {
+		slot1 = "ba_ship_halo_colorized_station_entity"
+	}
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		 event = { time = 0 node = "light_locator_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_03" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_04" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_05" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_01" } }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_02" } }
+	}
+		game_data = {
+			emissive_recolor_crunch = 2.0
+		}
+}
+
+
+entity = {
+	name = "bacolorized_01_starbase_starhold_entity"
+	pdxmesh = "bacolorized_01_starhold_frame_mesh"
+
+	cull_radius = 25
+}
+
+entity = {
+	name = "bacolorized_01_starbase_starhold_section_entity"
+	pdxmesh = "bacolorized_01_starhold_mesh"
+
+	locator = { name = "slot1"				position = { 0	0  0 } }
+
+	attach = {
+		slot1 = "ba_ship_halo_colorized_station_entity"
+	}
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		 event = { time = 0 node = "light_locator_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_03" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_04" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_05" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_06" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_07" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_08" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_01" } }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_01" } }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_02" } }
+	}
+		game_data = {
+			emissive_recolor_crunch = 2.0
+		}
+}
+
+entity = {
+	name = "bacolorized_01_starbase_starfortress_entity"
+	pdxmesh = "bacolorized_01_starfort_frame_mesh"
+
+	cull_radius = 25
+}
+
+entity = {
+	name = "bacolorized_01_starbase_starfortress_section_entity"
+	pdxmesh = "bacolorized_01_starfort_mesh"
+
+
+	locator = { name = "slot1"				position = { 0	0  0 } }
+
+	attach = {
+		slot1 = "ba_ship_halo_colorized_station_entity"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		 event = { time = 0 node = "light_locator_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_03" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_04" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_05" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_06" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_07" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_08" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_01" } }
+		 start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_02" } }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_01" } }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_02" } }
+	}
+		game_data = {
+			emissive_recolor_crunch = 2.0
+		}
+}
+
+
+entity = {
+	name = "bacolorized_01_starbase_citadel_entity"
+	pdxmesh = "bacolorized_01_citadel_frame_mesh"
+
+	cull_radius = 30
+}
+
+entity = {
+	name = "bacolorized_01_starbase_citadel_section_entity"
+	pdxmesh = "bacolorized_01_citadel_mesh"
+
+	locator = { name = "slot1"				position = { 0	0  0 } }
+
+	attach = {
+		slot1 = "ba_ship_halo_colorized_station_entity"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		 event = { time = 0 node = "light_locator_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_03" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_04" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_05" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_06" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_07" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_08" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_09" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_01" } }
+		 start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_02" } }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_01" } }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_02" } }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_03" } }
+	}
+
+		game_data = {
+			emissive_recolor_crunch = 2.0
+		}
+}
+
+entity = {
+	name = "bacolorized_01_starbase_outpost_phase_01_entity"
+	locator = { name = "slot1"				position = { 0	0  0 } }
+
+	attach = { "slot1" = "bacolorized_01_starbase_outpost_section_entity" }
+
+	cull_radius = 500
+}
+
+
+entity = {
+	name = "bacolorized_01_starbase_starport_phase_02_entity"
+	locator = { name = "slot1"				position = { 0	0  0 } }
+
+	attach = { "slot1" = "bacolorized_01_starbase_starport_section_entity" }
+
+	cull_radius = 500
+}
+
+
+entity = {
+	name = "bacolorized_01_starbase_starhold_phase_03_entity"
+	locator = { name = "slot1"				position = { 0	0  0 } }
+
+	attach = { "slot1" = "bacolorized_01_starbase_starhold_section_entity" }
+
+	cull_radius = 500
+}
+
+
+entity = {
+	name = "bacolorized_01_starbase_starfortress_phase_04_entity"
+	locator = { name = "slot1"				position = { 0	0  0 } }
+
+	attach = { "slot1" = "bacolorized_01_starbase_starfortress_section_entity" }
+
+	cull_radius = 500
+}
+
+
+
+entity = {
+	name = "bacolorized_01_starbase_citadel_phase_05_entity"
+	locator = { name = "slot1"				position = { 0	0  0 } }
+
+	attach = { "slot1" = "bacolorized_01_starbase_citadel_section_entity" }
+
+	cull_radius = 500
+
+}
+
+entity = {
+	name = "bacolorized_01_starbases_entity"
+	locator = { name = "slot1"				position = { 0	0  0 } }
+	locator = { name = "slot2"				position = { 50	0  0 } }
+	locator = { name = "slot3"				position = { 100	0  0 } }
+	locator = { name = "slot4"				position = { 175	0  0 } }
+	locator = { name = "slot5"				position = { 250	0  0 } }
+
+
+
+	attach = { "slot1" = "bacolorized_01_starbase_outpost_phase_01_entity" }
+	attach = { "slot2" = "bacolorized_01_starbase_starport_phase_02_entity" }
+	attach = { "slot3" = "bacolorized_01_starbase_starhold_phase_03_entity" }
+	attach = { "slot4" = "bacolorized_01_starbase_starfortress_phase_04_entity" }
+	attach = { "slot5" = "bacolorized_01_starbase_citadel_phase_05_entity" }
+
+	cull_radius = 500
+
+}
+
+entity = {
+	name = "bacolorized_01_starbase_outpost_construction_entity"
+	pdxmesh = "bacolorized_01_outpost_mesh"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+
+	scale = 1.0
+}
+
+entity = {
+	name = "bacolorized_01_starbase_starport_construction_entity"
+	pdxmesh = "bacolorized_01_starport_mesh"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+
+	scale = 1.0
+}
+
+entity = {
+	name = "bacolorized_01_starbase_starhold_construction_entity"
+	pdxmesh = "bacolorized_01_starhold_mesh"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+
+	scale = 1.0
+}
+
+entity = {
+	name = "bacolorized_01_starbase_starfortress_construction_entity"
+	pdxmesh = "bacolorized_01_starfort_mesh"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+
+	scale = 1.0
+}
+
+entity = {
+	name = "bacolorized_01_starbase_citadel_construction_entity"
+	pdxmesh = "bacolorized_01_citadel_mesh"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+
+	scale = 1.0
+}
+
+
+	entity = {
+	name = "bacolorized_01_starbase_turret_section_entity"
+	pdxmesh = "bacolorized_01_starbase_turret_section_mesh"
+	}
+
+
+###### Ion Cannon ######
+
+entity = {
+	name = "bacolorized_01_ion_cannon_entity"
+	locator = { name = "part1" position = { 0 0 0 } }
+}
+
+entity = {
+	name = "bacolorized_01_ion_cannon_section_entity"
+	pdxmesh = "bacolorized_01_ion_cannon_mesh"
+	scale = 1
+	locator = { name = "root" position = { 0 0 0 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 8
+		event = { time = 0.0 node = "engine" particle = "bacolorized_01_ion_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_ba_starbase_ion_cannon_hum_01" } }
+#
+#		event = {	time = 4 	node = "effect_core"	entity = "necroid_01_ion_core_effect_entity"
+#		erosion_in = 2		life = 1.5 	erosion_out = 2	}
+
+	}
+
+ 	#attach = { "part1" = "bacolorized_01_ion_cannon_windup_entity" }
+}
+
+

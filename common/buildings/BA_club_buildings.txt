@@ -1,0 +1,421 @@
+@club_room_time = 180
+#############   社团建筑   #############
+### 夏莱办公室
+#基础：+1社团部员岗位 非学园都市星球每10人口+1社团部员岗位
+building_BA_Schale_office = {
+	position_priority = 21
+	base_buildtime = @club_room_time
+	base_cap_amount = 1
+	category = government
+	icon = Schale_office
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	can_be_disabled = no
+	can_be_ruined = no
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_club_members_add = 1
+			job_BA_club_members_per_pop = 0.05
+			pop_government_ethic_attraction = 1
+			planet_amenities_add = 10
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+			planet = {
+				NOR = {
+					is_planet_class = pc_nuked
+				}
+			}
+		}
+		pop_environment_tolerance = 0.2
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+		}
+		upkeep = {
+			consumer_goods = 1
+			energy = 1
+		}
+	}
+}
+
+#游戏开发部 +2/+5社团部员
+building_BA_Game_development_department = {
+	base_buildtime = @club_room_time
+	category = government
+	position_priority = 22
+	base_cap_amount = 1
+	empire_limit = {
+		base = 0
+		modifier = {
+			add = Game_development_department_room_limit			#设置的部室变量
+			owner = {
+				has_country_flag = allow_Game_development_department				#设置的允许标志
+			}
+		}
+		modifier = {
+			set = -1
+			always = no			#需要的话以后改
+		}
+	}
+	#triggered_desc = {
+	#	text = building_BA_Game_development_department_effect
+	#}
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+		#has_active_building = building_BA_Schale_office
+		check_variable = {
+			which = BA_planet_club_count
+			value < 3
+		}
+	}
+	on_queued = {
+		change_variable = {
+			which = BA_planet_club_count
+			value = 1
+		}
+	}
+	on_unqueued = {
+		change_variable = {
+			which = BA_planet_club_count
+			value = -1
+		}
+	}
+	on_destroy = {
+		change_variable = {
+			which = BA_planet_club_count
+			value = -1
+		}
+	}
+	can_be_disabled = no
+	can_be_ruined = no
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_club_members_add = 2
+			pop_happiness = 0.15
+			planet_jobs_unity_produces_mult = 0.15
+			BA_club_pop_unity_produces_add = 0.5
+			BA_club_pop_consumer_goods_upkeep_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_SI_Millennium_G03
+			}
+		}
+		modifier = {
+			job_BA_club_members_add = 2
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+		}
+		upkeep = {
+			consumer_goods = 1
+			energy = 1
+		}
+	}
+}
+
+#工程师部 +2/+5社团部员
+building_BA_Engineering_club = {
+	base_buildtime = @club_room_time
+	category = government
+	position_priority = 22
+	base_cap_amount = 1
+	empire_limit = {
+		base = 0
+		modifier = {
+			add = Engineering_club_room_limit			#设置的部室变量
+			owner = {
+				has_country_flag = allow_Engineering_club				#设置的允许标志
+			}
+		}
+		modifier = {
+			set = -1
+			always = no			#需要的话以后改
+		}
+	}
+	#triggered_desc = {
+	#	text = building_BA_Engineering_club_effect
+	#}
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	can_be_disabled = no
+	can_be_ruined = no
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_club_members_add = 2
+			planet_building_build_speed_mult = 0.2
+			planet_decision_enact_speed_mult = 0.2
+			BA_club_pop_engineering_research_produces_add = 1.5
+			BA_club_pop_consumer_goods_upkeep_add = 0.5
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+		}
+		upkeep = {
+			consumer_goods = 1
+			energy = 1
+		}
+	}
+}
+
+#真理部服务器
+building_BA_Veritas_server = {
+	base_buildtime = @club_room_time
+	category = government
+	position_priority = 22
+	base_cap_amount = 1
+	empire_limit = {
+		base = 0
+		modifier = {
+			add = Veritas_room_limit			#设置的部室变量
+			owner = {
+				has_country_flag = allow_Veritas				#设置的允许标志
+			}
+		}
+		modifier = {
+			set = -1
+			always = no			#需要的话以后改
+		}
+	}
+	#triggered_desc = {
+	#	text = building_BA_Veritas_server_effect
+	#}
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	can_be_disabled = no
+	can_be_ruined = no
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_club_members_add = 2
+			pop_government_ethic_attraction = 3
+			BA_club_pop_physics_research_produces_add = 1.5
+			BA_club_pop_consumer_goods_upkeep_add = 0.5
+		}
+	}
+	triggered_country_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		intel_encryption_add = 1
+		intel_decryption_add = 1
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+		}
+		upkeep = {
+			consumer_goods = 1
+			energy = 1
+		}
+	}
+}
+
+#阿拜多斯生产部门（本地） +2/+5社团部员
+building_BA_local_division = {
+	base_buildtime = @club_room_time
+	category = government
+	position_priority = 22
+	base_cap_amount = 1
+	empire_limit = {
+		base = 0
+		modifier = {
+			add = Foreclosure_task_force_room_limit			#设置的部室变量
+			owner = {
+				has_country_flag = allow_Foreclosure_task_force				#设置的允许标志
+			}
+		}
+		modifier = {
+			set = -1
+			always = no			#需要的话以后改
+		}
+	}
+	#triggered_desc = {
+	#	text = building_BA_local_division_effect
+	#}
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	can_be_disabled = no
+	can_be_ruined = no
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_club_members_add = 2
+			planet_miners_minerals_produces_mult = 0.25
+			planet_miners_consumer_goods_upkeep_add = 0.5
+			planet_technician_energy_produces_mult = 0.25
+			planet_technician_consumer_goods_upkeep_add = 0.5
+			BA_club_pop_society_research_produces_add = 1.5
+			BA_club_pop_consumer_goods_upkeep_add = 0.5
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+		}
+		upkeep = {
+			consumer_goods = 1
+			energy = 1
+		}
+	}
+}
+
+#茶会办事处 +2/+5社团部员
+building_BA_Teaparty_branch = {
+	base_buildtime = @club_room_time
+	category = government
+	position_priority = 22
+	base_cap_amount = 1
+	empire_limit = {
+		base = 0
+		modifier = {
+			add = Teaparty_room_limit			#设置的部室变量
+			owner = {
+				has_country_flag = allow_Teaparty				#设置的允许标志
+			}
+		}
+		modifier = {
+			set = -1
+			always = no			#需要的话以后改
+		}
+	}
+	#triggered_desc = {
+	#	text = building_BA_local_division_effect
+	#}
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	can_be_disabled = no
+	can_be_ruined = no
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_club_members_add = 2
+			empire_size_districts_mult = -0.6
+			BA_club_pop_unity_produces_add = 0.5
+			BA_club_pop_consumer_goods_upkeep_add = 0.5
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 350
+		}
+		upkeep = {
+			energy = 5
+			alloys = 5
+		}
+	}
+}
+
+# #风纪委员会 +2/+5社团部员
+# building_BA_Prefect_team = {
+# 	base_buildtime = @club_room_time 
+# 	base_cap_amount = 1
+# 	category = amenity
+# 	icon = building_luxury_residence	#暂时的 以后改
+# 	#icon = engineer_club
+# 	allow = {
+# 		has_upgraded_capital = yes
+# 	}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = {
+# 				has_authority = auth_kivotos
+# 			}
+# 		}
+# 		modifier = {
+# 			#job_BA_judgemen_add = 4
+# 			job_BA_club_members_add = 2
+# 			planet_stability_add = 10			#暂时的 以后改
+# 			planet_crime_mult = -15
+# 		}
+# 	}
+# 	resources = {
+# 		category = planet_buildings
+# 		cost = {
+# 			minerals = 350
+# 		}
+# 		upkeep = {
+# 			energy = 5
+# 			alloys = 5
+# 		}
+# 	}
+# 	prerequisites = {
+# 		"tech_BA_culture_Gehenna"
+# 	}
+# }

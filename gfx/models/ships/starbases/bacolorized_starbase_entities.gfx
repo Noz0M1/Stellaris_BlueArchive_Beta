@@ -1,0 +1,133 @@
+objectTypes = {
+
+
+	pdxmesh = {
+		name = "bacolorized_01_outpost_frame_mesh"
+		file = "gfx/models/ships/starbases/nemesis_01_outpost_frame.mesh"
+		scale = 1.0
+
+	}
+
+	pdxmesh = {
+		name = "bacolorized_01_starport_frame_mesh"
+		file = "gfx/models/ships/starbases/nemesis_01_starport_frame.mesh"
+		scale = 1.0
+
+	}
+
+	pdxmesh = {
+		name = "bacolorized_01_starhold_frame_mesh"
+		file = "gfx/models/ships/starbases/nemesis_01_starhold_frame.mesh"
+		scale = 1.0
+
+	}
+
+	pdxmesh = {
+		name = "bacolorized_01_starfort_frame_mesh"
+		file = "gfx/models/ships/starbases/nemesis_01_starfort_frame.mesh"
+		scale = 1.0
+
+	}
+
+	pdxmesh = {
+		name = "bacolorized_01_citadel_frame_mesh"
+		file = "gfx/models/ships/starbases/nemesis_01_citadel_frame.mesh"
+		scale = 1.0
+
+	}
+
+	pdxmesh = {
+		name = "bacolorized_01_outpost_mesh"
+		file = "gfx/models/ships/starbases/nemesis_01_outpost.mesh"
+		scale = 1.0
+		meshsettings = {
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_starbase_hangarbay_section_normal.dds"
+			texture_specular = "ba_01_starbase_hangarbay_section_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "bacolorized_01_starport_mesh"
+		file = "gfx/models/ships/starbases/nemesis_01_starport.mesh"
+		scale = 1.0
+		meshsettings = {
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_starbase_hangarbay_section_normal.dds"
+			texture_specular = "ba_01_starbase_hangarbay_section_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "bacolorized_01_starhold_mesh"
+		file = "gfx/models/ships/starbases/nemesis_01_starhold.mesh"
+		scale = 1.0
+		meshsettings = {
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_starbase_hangarbay_section_normal.dds"
+			texture_specular = "ba_01_starbase_hangarbay_section_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "bacolorized_01_starfort_mesh"
+		file = "gfx/models/ships/starbases/nemesis_01_starfort.mesh"
+		scale = 1.0
+		meshsettings = {
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_starbase_hangarbay_section_normal.dds"
+			texture_specular = "ba_01_starbase_hangarbay_section_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "bacolorized_01_citadel_mesh"
+		file = "gfx/models/ships/starbases/nemesis_01_citadel.mesh"
+		scale = 1.0
+		meshsettings = {
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_starbase_hangarbay_section_normal.dds"
+			texture_specular = "ba_01_starbase_hangarbay_section_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "bacolorized_01_starbase_turret_section_mesh"
+		file = "gfx/models/ships/nemesis_01/nemesis_01_starbase_turret_section.mesh"
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_starbase_turret_section_normal.dds"
+			texture_specular = "ba_01_starbase_turret_section_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+
+	####### Ion Cannon  #######
+
+	pdxmesh = {
+		name = "bacolorized_01_ion_cannon_mesh"
+		file = "gfx/models/ships/starbases/nemesis_01_ion_cannon.mesh"
+
+		meshsettings = {
+
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_ion_cannon_normal.dds"
+			texture_specular = "ba_01_ion_cannon_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+
+}

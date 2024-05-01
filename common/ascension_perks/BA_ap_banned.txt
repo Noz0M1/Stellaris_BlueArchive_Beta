@@ -1,0 +1,429 @@
+####   ！此文件涉及原版修改
+@ascension_path_base_weight = 100
+@ascension_path_synergy_weight = 2
+@ascension_path_anti_synergy_weight = 0.5
+ap_engineered_evolution = {
+	on_enabled = {
+		custom_tooltip = "engineered_evolution_tooltip"
+		if = {
+			limit = {
+				has_origin = origin_clone_army
+				OR = {
+					has_trait = trait_clone_soldier_infertile
+					has_trait = trait_clone_soldier_infertile_full_potential
+				}
+			}
+			custom_tooltip = clone_soldier_locked_genes
+		}
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "synthetic_empire_biological_ascension"
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_the_flesh_is_weak"
+			NOT = {
+				has_ascension_perk = ap_the_flesh_is_weak
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_organo_machine_interfacing"
+			NOT = {
+				has_ascension_perk = ap_organo_machine_interfacing
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_mind_over_matter"
+			NOT = {
+				has_ascension_perk = ap_mind_over_matter
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_synthetic_evolution"
+			NOT = {
+				has_ascension_perk = ap_synthetic_evolution
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_free_tradition_tree"
+			num_tradition_categories < 7
+		}
+	}
+	potential = {
+		has_utopia = yes
+		NOR = {
+			has_ascension_perk = ap_engineered_evolution
+			has_authority = "auth_machine_intelligence"
+			has_origin = origin_shroudwalker_apprentice
+		}
+		is_mechanical_empire = no
+		is_cyborg_empire = no
+		# BA
+		NOT = {
+			has_authority = auth_kivotos
+		}
+	}
+	ai_weight = {
+		factor = @ascension_path_base_weight
+		modifier = {
+			factor = @ascension_path_synergy_weight
+			has_engineered_evolution_synergy = yes
+		}
+	}
+}
+
+ap_the_flesh_is_weak = {
+	on_enabled = {
+		custom_tooltip = "flesh_is_weak_tooltip"
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "synthetic_empire_synthetic_ascension"
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_engineered_evolution"
+			NOT = {
+				has_ascension_perk = ap_engineered_evolution
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_mind_over_matter"
+			NOT = {
+				has_ascension_perk = ap_mind_over_matter
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_synthetic_evolution"
+			NOT = {
+				has_ascension_perk = ap_synthetic_evolution
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_free_tradition_tree"
+			num_tradition_categories < 7
+		}
+	}
+	potential = {
+		has_utopia = yes
+		NOR = {
+			has_ascension_perk = ap_the_flesh_is_weak
+			has_origin = origin_shroudwalker_apprentice
+		}
+		is_gestalt = no
+		# BA
+		NOT = {
+			has_authority = auth_kivotos
+		}
+	}
+	ai_weight = {
+		factor = @ascension_path_base_weight
+		modifier = {
+			factor = @ascension_path_anti_synergy_weight
+			has_flesh_is_weak_anti_synergy = yes
+		}
+	}
+}
+
+ap_organo_machine_interfacing = {
+	on_enabled = {
+		custom_tooltip = "organo_machine_interfacing_tooltip"
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_engineered_evolution"
+			NOT = {
+				has_ascension_perk = ap_engineered_evolution
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_free_tradition_tree"
+			num_tradition_categories < 7
+		}
+	}
+	potential = {
+		has_utopia = yes
+		NOR = {
+			has_ascension_perk = ap_organo_machine_interfacing
+		}
+		has_authority = auth_hive_mind
+		# BA
+		NOT = {
+			has_authority = auth_kivotos
+		}
+	}
+	ai_weight = {
+		factor = @ascension_path_base_weight
+	}
+}
+
+ap_organo_machine_interfacing_assimilator = {
+	on_enabled = {
+		custom_tooltip = "organo_machine_interfacing_tooltip"
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
+		}
+		custom_tooltip = {
+			fail_text = "requires_assimilated_pops"
+			check_variable = {
+				which = num_assimilated_pops
+				value >= 30
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_synthetic_age"
+			NOT = {
+				has_ascension_perk = ap_synthetic_age
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_free_tradition_tree"
+			num_tradition_categories < 7
+		}
+	}
+	potential = {
+		has_utopia = yes
+		NOT = {
+			has_ascension_perk = ap_organo_machine_interfacing_assimilator
+		}
+		has_civic = civic_machine_assimilator
+		# BA
+		NOT = {
+			has_authority = auth_kivotos
+		}
+	}
+	ai_weight = {
+		factor = @ascension_path_base_weight
+		modifier = {
+			factor = @ascension_path_synergy_weight
+			has_organo_machine_interfacing_assimilator_synergy = yes
+		}
+	}
+}
+
+ap_synthetic_evolution = {
+	on_enabled = {
+		custom_tooltip = "synthetic_evolution_tooltip"
+		if = {
+			limit = {
+				has_origin = origin_necrophage
+				has_trait = trait_necrophage
+			}
+			custom_tooltip = disables_necrophage_features
+		}
+		if = {
+			limit = {
+				has_origin = origin_clone_army
+				OR = {
+					has_trait = trait_clone_soldier_infertile
+					has_trait = trait_clone_soldier_infertile_full_potential
+					has_trait = trait_clone_soldier_fertile
+				}
+			}
+			custom_tooltip = disables_clone_army_origin_features
+		}
+		if = {
+			limit = {
+				has_origin = origin_overtuned
+			}
+			custom_tooltip = disables_overtuned_features
+		}
+		if = {
+			limit = {
+				OR = {
+					has_valid_civic = civic_idyllic_bloom
+					has_valid_civic = civic_hive_idyllic_bloom
+				}
+			}
+			custom_tooltip = disables_idyllic_bloom
+		}
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "synthetic_empire_synthetic_ascension"
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_engineered_evolution"
+			NOT = {
+				has_ascension_perk = ap_engineered_evolution
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_the_flesh_is_weak"
+			NOT = {
+				has_ascension_perk = ap_the_flesh_is_weak
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_mind_over_matter"
+			NOT = {
+				has_ascension_perk = ap_mind_over_matter
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_free_tradition_tree"
+			num_tradition_categories < 7
+		}
+	}
+	potential = {
+		has_utopia = yes
+		NOR = {
+			has_ascension_perk = ap_synthetic_evolution
+			has_authority = "auth_machine_intelligence"
+			has_origin = origin_shroudwalker_apprentice
+		}
+		is_gestalt = no
+		is_mechanical_empire = no
+		# BA
+		NOT = {
+			has_authority = auth_kivotos
+		}
+	}
+	ai_weight = {
+		factor = @ascension_path_base_weight
+		modifier = {
+			factor = @ascension_path_synergy_weight
+			has_synthetic_evolution_synergy = yes
+		}
+		modifier = {
+			factor = @ascension_path_anti_synergy_weight
+			has_synthetic_evolution_anti_synergy = yes
+		}
+		modifier = {
+			factor = 0
+			blocks_ai_synthetic_evolution = yes
+		}
+	}
+}
+
+ap_mind_over_matter = {
+	on_enabled = {
+		custom_tooltip = "mind_over_matter_tooltip"
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "synthetic_empire_psionic_ascension"
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_engineered_evolution"
+			NOT = {
+				has_ascension_perk = ap_engineered_evolution
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_the_flesh_is_weak"
+			NOT = {
+				has_ascension_perk = ap_the_flesh_is_weak
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_synthetic_evolution"
+			NOT = {
+				has_ascension_perk = ap_synthetic_evolution
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_free_tradition_tree"
+			num_tradition_categories < 7
+		}
+	}
+	potential = {
+		has_utopia = yes
+		NOR = {
+			has_ascension_perk = ap_mind_over_matter
+			has_origin = origin_shroudwalker_apprentice
+		}
+		is_gestalt = no
+		is_mechanical_empire = no
+		is_cyborg_empire = no
+		# BA
+		NOT = {
+			has_authority = auth_kivotos
+		}
+	}
+	ai_weight = {
+		factor = @ascension_path_base_weight
+		modifier = {
+			factor = @ascension_path_synergy_weight
+			has_mind_over_matter_synergy = yes
+		}
+		modifier = {
+			factor = @ascension_path_anti_synergy_weight
+			has_mind_over_matter_anti_synergy = yes
+		}
+	}
+}
+
+ap_synthetic_age = {
+	on_enabled = {
+		custom_tooltip = "synthetic_age_tooltip"
+	}
+	potential = {
+		has_synthethic_dawn = yes
+		has_authority = auth_machine_intelligence
+		NOT = {
+			has_ascension_perk = ap_synthetic_age
+		}
+		# BA
+		NOT = {
+			has_authority = auth_kivotos
+		}
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_organo_machine_interfacing"
+			NOT = {
+				has_ascension_perk = ap_organo_machine_interfacing_assimilator
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_free_tradition_tree"
+			num_tradition_categories < 7
+		}
+	}
+	ai_weight = {
+		factor = @ascension_path_base_weight
+		modifier = {
+			factor = @ascension_path_anti_synergy_weight
+			has_synthetic_age_anti_synergy = yes
+		}
+	}
+}

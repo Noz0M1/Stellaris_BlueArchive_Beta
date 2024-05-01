@@ -1,0 +1,59 @@
+extra_large_turret_alice = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "Alice_entity"
+		weapon_type_energy = "Alice_entity"
+		weapon_type_explosive = "Alice_entity"
+	}
+}
+
+
+extra_large_turret_kei = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "KEI_entity"
+		weapon_type_energy = "KEI_entity"
+		weapon_type_explosive = "KEI_entity"
+	}
+}
+extra_large_turret_WhiteRabbit = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "WhiteRabbit_entity"
+		weapon_type_energy = "WhiteRabbit_entity"
+		weapon_type_explosive = "WhiteRabbit_entity"
+	}
+}
+point_defence_turret_WhiteRabbit = {
+	size = point_defence
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "WhiteRabbit_entity"
+		weapon_type_energy = "WhiteRabbit_entity"
+		weapon_type_explosive = "WhiteRabbit_entity"
+	}
+}
+
+extra_large_turret_EN_0001 = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "EN_0001_entity"
+		weapon_type_energy = "EN_0001_entity"
+		weapon_type_explosive = "EN_0001_entity"
+	}
+}
+
+extra_large_turret_EN_0002 = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "EN_0002_entity"
+		weapon_type_energy = "EN_0002_entity"
+		weapon_type_explosive = "EN_0002_entity"
+	}
+}
+

@@ -1,0 +1,37 @@
+tradition_Kivotos_chronicle = {
+	adoption_bonus = tr_kivotos_adopt
+	finish_bonus = tr_kivotos_finish
+	potential = {
+		has_authority = auth_kivotos
+	}
+	traditions = {
+		"tr_kivotos_daily_duty"
+		"tr_kivotos_opaz"
+		"tr_kivotos_student_arms"
+		"tr_kivotos_newkind_dome"
+		"tr_kivotos_space_supplies"
+	}
+	tree_template = "tree_12_11"
+	ai_weight = {
+		weight = 10000
+	}
+}
+
+tradition_Halo_awaken = {
+	adoption_bonus = tr_halo_awaken_adopt
+	finish_bonus = tr_halo_awaken_finish
+	potential = {
+		has_authority = auth_kivotos
+	}
+	traditions = {
+		tr_halo_awaken_drop
+		tr_halo_awaken_luminous
+		tr_halo_awaken_predator
+		tr_halo_awaken_fertile
+		tr_halo_awaken_color
+	}
+	tree_template = "tree_11_11_21"
+	ai_weight = {
+		weight = 10000
+	}
+}

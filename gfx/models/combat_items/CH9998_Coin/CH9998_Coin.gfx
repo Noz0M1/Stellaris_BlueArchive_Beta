@@ -1,0 +1,14 @@
+objectTypes = {
+	pdxmesh = {
+		name = "CH9998_Coin_mesh"
+		file = "gfx/models/combat_items/CH9998_Coin/CH9998_Coin.mesh"
+		scale = 12.0
+
+		meshsettings = {
+			name = "CH9998_CoinShape"
+			index = 0
+			texture_diffuse = "CH9998_Coin.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+}

@@ -1,0 +1,64 @@
+#伊甸条约起源
+part = {
+	location = 0
+	localization = "START_SCREEN_EDEN_TREATY"
+	trigger = {
+		has_origin = origin_Kivotos_Eden_treaty
+		NOT = {
+			has_country_flag = BA_ETO
+		}
+	}
+}
+
+#预设：ETO
+part = {
+	location = 0
+	localization = "START_SCREEN_BA_ETO"
+	trigger = {
+		has_country_flag = BA_ETO
+	}
+}
+
+#致被遗忘的众神
+part = {
+	location = 0
+	localization = "START_SCREEN_KYRIE"
+	trigger = {
+		has_origin = origin_Kivotos_Kyrie
+		NOT = {
+			has_country_flag = BA_NPA
+		}
+	}
+}
+
+#预设：NPA
+part = {
+	location = 0
+	localization = "START_SCREEN_BA_NPA"
+	trigger = {
+		has_origin = origin_Kivotos_Kyrie
+		has_country_flag = BA_NPA
+	}
+}
+
+#未命名的始发点
+part = {
+	location = 0
+	localization = "START_SCREEN_UNNAMED"
+	trigger = {
+		has_origin = origin_Kivotos_Unnamed_starting
+		NOT = {
+			has_country_flag = BA_DUU
+		}
+	}
+}
+
+#预设：DUU
+part = {
+	location = 0
+	localization = "START_SCREEN_BA_DUU"
+	trigger = {
+		has_origin = origin_Kivotos_Unnamed_starting
+		has_country_flag = BA_DUU
+	}
+}

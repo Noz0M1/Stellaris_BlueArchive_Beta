@@ -1,0 +1,896 @@
+# Ship components (test)
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ship_part_ba_aura_heavy_armor"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_aura_heavy_armor.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_ba_aura_light_armor"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_aura_light_armor.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_ba_aura_special_armor"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_aura_special_armor.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_ba_aura_heavy_armor_pd"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_aura_heavy_armor_pd.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_ba_aura_light_armor_pd"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_aura_light_armor_pd.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_ba_aura_special_armor_pd"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_aura_special_armor_pd.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_ba_test"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_test.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_armor_type"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_armor_type.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_armor_type_pd"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_armor_type_pd.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_ba_aura_structure"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_aura_structure.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_ba_aura_structure_pd"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_aura_structure_pd.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_ba_Perorozilla_craft"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Perorozilla_craft.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_ba_Perorozilla_Color_craft"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Perorozilla_Color_craft.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_BA_Drone_Missile"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_BA_Drone_Missile.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_BA_Drone_Vulcan"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_BA_Drone_Vulcan.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_ba_power_chair"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_power_chair.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_Goz_Cards"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_Goz_Cards.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_Goz_Screamrider"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_Goz_Screamrider.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_KaitenFX_MK0_Missile"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_KaitenFX_MK0_Missile.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_Widow_Mine"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_Widow_Mine.dds"
+	}
+}
+
+# Ship components (Now using)
+spriteTypes = {
+	spriteType = {
+		name = "GFX_T1CORE"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_T1CORE.dds"
+	}
+	spriteType = {
+		name = "GFX_T2CORE"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_T2CORE.dds"
+	}
+	spriteType = {
+		name = "GFX_T3CORE"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_T3CORE.dds"
+	}
+	spriteType = {
+		name = "GFX_T4CORE"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_T4CORE.dds"
+	}
+	spriteType = {
+		name = "GFX_T5CORE"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_T5CORE.dds"
+	}
+	spriteType = {
+		name = "GFX_T6CORE"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_T6CORE.dds"
+	}
+	spriteType = {
+		name = "GFX_T1BACKPACK"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_T1BACKPACK.dds"
+	}
+	spriteType = {
+		name = "GFX_T2BACKPACK"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_T2BACKPACK.dds"
+	}
+	spriteType = {
+		name = "GFX_T3BACKPACK"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_T3BACKPACK.dds"
+	}
+	spriteType = {
+		name = "GFX_T4BACKPACK"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_T4BACKPACK.dds"
+	}
+	spriteType = {
+		name = "GFX_T5BACKPACK"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_T5BACKPACK.dds"
+	}
+	spriteType = {
+		name = "GFX_T6BACKPACK"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_T6BACKPACK.dds"
+	}
+	spriteType = {
+		name = "GFX_T1BADGE"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_T1BADGE.dds"
+	}
+	spriteType = {
+		name = "GFX_T2BADGE"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_T2BADGE.dds"
+	}
+	spriteType = {
+		name = "GFX_T3BADGE"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_T3BADGE.dds"
+	}
+	spriteType = {
+		name = "GFX_T4BADGE"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_T4BADGE.dds"
+	}
+	spriteType = {
+		name = "GFX_T5BADGE"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_T5BADGE.dds"
+	}
+	spriteType = {
+		name = "GFX_T6BADGE"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_T6BADGE.dds"
+	}
+	spriteType = {
+		name = "GFX_Sagittarius_night"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_Sagittarius_night.dds"
+	}
+	spriteType = {
+		name = "GFX_Grenadiers_575"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_Grenadiers_575.dds"
+	}
+	spriteType = {
+		name = "GFX_Adena_3"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_Adena_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Fantacy_colors"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_Fantacy_colors.dds"
+	}
+	spriteType = {
+		name = "GFX_Fantacy_colors_SP"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_Fantacy_colors_SP.dds"
+	}
+	spriteType = {
+		name = "GFX_SuperNova"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_SuperNova.dds"
+	}
+	spriteType = {
+		name = "GFX_Soft_determination"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_Soft_determination.dds"
+	}
+	spriteType = {
+		name = "GFX_Unique_idea"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_Unique_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_Flashy_inspiration"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_Flashy_inspiration.dds"
+	}
+	spriteType = {
+		name = "GFX_Crack_shot"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_Crack_shot.dds"
+	}
+	spriteType = {
+		name = "GFX_Ojiisan_Atsui"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_Ojiisan_atsui.dds"
+	}
+}
+
+# Ship components (special weapon)
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Airi_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Airi_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Akane_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Akane_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Akari_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Akari_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Akira_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Akira_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Akira_Weapon_L"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Akira_Weapon_l.dds"
+	}
+	spriteType = {
+		name = "GFX_Ako_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Ako_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Aris_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Aris_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Arona_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Arona_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Aru_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Aru_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Asuna_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Asuna_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Atsuko_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Atsuko_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Ayane_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Ayane_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Azusa_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Azusa_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Cherino_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Cherino_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Chihiro_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Chihiro_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Chinatsu_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Chinatsu_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Chise_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Chise_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Eimi_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Eimi_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_EN0001_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_EN0001_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_EN0002_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_EN0002_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Fubuki_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Fubuki_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Fuuka_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Fuuka_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Hanae_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Hanae_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Hanako_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Hanako_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Hare_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Hare_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Haruka_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Haruka_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Haruna_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Haruna_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Hasumi_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Hasumi_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Hibiki_Cheerleader_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Hibiki_Cheerleader_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Hibiki_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Hibiki_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Hifumi_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Hifumi_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Himari_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Himari_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Hinata_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Hinata_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Hina_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Hina_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Hiyori_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Hiyori_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Hoshino_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Hoshino_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Iori_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Iori_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Iroha_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Iroha_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Izumi_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Izumi_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Izuna_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Izuna_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Junko_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Junko_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Juri_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Juri_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Kaede_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Kaede_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Kaho_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Kaho_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Kanna_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Kanna_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Karin_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Karin_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Kayoko_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Kayoko_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Kazusa_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Kazusa_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Kirino_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Kirino_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Koharu_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Koharu_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Kokona_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Kokona_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Kotama_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Kotama_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Kotori_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Kotori_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Koyuki_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Koyuki_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Maki_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Maki_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Marina_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Marina_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Mari_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Mari_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Mashiro_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Mashiro_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Megu_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Megu_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Michiru_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Michiru_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Midori_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Midori_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Mika_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Mika_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Miku_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Miku_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Mimori_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Mimori_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Mina_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Mina_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Mine_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Mine_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Misaki_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Misaki_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Miyako_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Miyako_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Miyu_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Miyu_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Moe_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Moe_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Momoi_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Momoi_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Mutsuki_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Mutsuki_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Nagisa_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Nagisa_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Natsu_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Natsu_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Neru_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Neru_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Noa_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Noa_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Nodoka_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Nodoka_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Nonomi_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Nonomi_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Pina_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Pina_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Pulana_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Pulana_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Rabu_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Rabu_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Reisa_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Reisa_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Rumi_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Rumi_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Saki_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Saki_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Sakurako_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Sakurako_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Saori_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Saori_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Saya_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Saya_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Sena_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Sena_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Serika_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Serika_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Serina_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Serina_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Shigure_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Shigure_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Shimiko_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Shimiko_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Shiroko_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Shiroko_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Shizuko_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Shizuko_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Shun_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Shun_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Sumire_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Sumire_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Suzumi_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Suzumi_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Toki_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Toki_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Toki_Fist_Missile"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Toki_Fist_Missile.dds"
+	}
+	spriteType = {
+		name = "GFX_Tomoe_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Tomoe_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Tsubaki_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Tsubaki_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Tsukuyo_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Tsukuyo_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Tsurugi_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Tsurugi_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Ui_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Ui_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Utaha_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Utaha_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Wakamo_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Wakamo_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Yoshimi_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Yoshimi_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Yuuka_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Yuuka_Weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_Yuzu_Weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ba_Yuzu_Weapon.dds"
+	}
+}
+
+# Tradition & Ascension Perks
+spriteTypes = {
+	# Tradition - Kivotos
+	spriteType = {
+		name = "GFX_tradition_hex_bg_tradition_Kivotos_chronicle"
+		textureFile = "gfx/interface/icons/traditions/tradition_hex_bg_tradition_Kivotos_chronicle.dds"
+	}
+	spriteType = {
+		name = "GFX_tradition_category_bg_tradition_Kivotos_chronicle"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_tradition_Kivotos_chronicle.dds"
+	}
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_Kivotos_chronicle"
+		textureFile = "gfx/interface/icons/traditions/tradition_icon_tradition_Kivotos_chronicle.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_tradition_Kivotos_chronicle"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_tradition_Kivotos_chronicle.dds"
+		borderSize = {
+			x = 140
+			y = 140
+		}
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	spriteType = {
+		name = "GFX_tr_kivotos_daily_duty"
+		textureFile = "gfx/interface/icons/traditions/tr_kivotos_daily_duty.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_kivotos_newkind_dome"
+		textureFile = "gfx/interface/icons/traditions/tr_kivotos_newkind_dome.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_kivotos_space_supplies"
+		textureFile = "gfx/interface/icons/traditions/tr_kivotos_space_supplies.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_kivotos_opaz"
+		textureFile = "gfx/interface/icons/traditions/tr_kivotos_opaz.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_kivotos_student_arms"
+		textureFile = "gfx/interface/icons/traditions/tr_kivotos_student_arms.dds"
+	}
+	# Tradition - Halo Awaken
+	spriteType = {
+		name = "GFX_tradition_hex_bg_tradition_Halo_awaken"
+		textureFile = "gfx/interface/icons/traditions/tradition_hex_bg_tradition_Halo_awaken.dds"
+	}
+	spriteType = {
+		name = "GFX_tradition_category_bg_tradition_Halo_awaken"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_tradition_Halo_awaken.dds"
+	}
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_Halo_awaken"
+		textureFile = "gfx/interface/icons/traditions/tradition_icon_tradition_Halo_awaken.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_tradition_Halo_awaken"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_tradition_Halo_awaken.dds"
+		borderSize = {
+			x = 140
+			y = 140
+		}
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	spriteType = {
+		name = "GFX_tr_halo_awaken_predator"
+		textureFile = "gfx/interface/icons/traditions/tr_halo_awaken_predator.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_halo_awaken_drop"
+		textureFile = "gfx/interface/icons/traditions/tr_halo_awaken_drop.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_halo_awaken_luminous"
+		textureFile = "gfx/interface/icons/traditions/tr_halo_awaken_luminous.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_halo_awaken_fertile"
+		textureFile = "gfx/interface/icons/traditions/tr_halo_awaken_fertile.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_halo_awaken_color"
+		textureFile = "gfx/interface/icons/traditions/tr_halo_awaken_color.dds"
+	}
+	# Ascension Perks
+	spriteType = {
+		name = "GFX_ap_BA_Our_story"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_BA_Our_story.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_BA_halo_awaken"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_BA_halo_awaken.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_BA_new_frontier"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_BA_new_frontier.dds"
+		alwaystransparent = yes
+	}
+}
+
+# Army
+spriteTypes = {
+	spriteType = {
+		name = "GFX_army_type_Binah_1"
+		textureFile = "gfx/interface/planetview/Binah_army_1_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Binah_2"
+		textureFile = "gfx/interface/planetview/Binah_army_2_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Chesed_1"
+		textureFile = "gfx/interface/planetview/Chesed_army_1_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Chesed_2"
+		textureFile = "gfx/interface/planetview/Chesed_army_2_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Goz_1"
+		textureFile = "gfx/interface/planetview/Goz_army_1_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Hieronymus_1"
+		textureFile = "gfx/interface/planetview/Hieronymus_army_1_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Hieronymus_2"
+		textureFile = "gfx/interface/planetview/Hieronymus_army_2_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Hod_1"
+		textureFile = "gfx/interface/planetview/Hod_army_1_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Hod_2"
+		textureFile = "gfx/interface/planetview/Hod_army_2_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Kaiten_FX_MK0_1"
+		textureFile = "gfx/interface/planetview/Kaiten_FX_MK0_army_1_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Kuro_1"
+		textureFile = "gfx/interface/planetview/Kuro_army_1_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Kuro_2"
+		textureFile = "gfx/interface/planetview/Kuro_army_2_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Perorodzilla_1"
+		textureFile = "gfx/interface/planetview/Perorodzilla_army_1_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Perorodzilla_2"
+		textureFile = "gfx/interface/planetview/Perorodzilla_army_2_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Shiro_1"
+		textureFile = "gfx/interface/planetview/Shiro_army_1_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Shiro_2"
+		textureFile = "gfx/interface/planetview/Shiro_army_2_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_C_C"
+		textureFile = "gfx/interface/planetview/C&C_army_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Disciplinary"
+		textureFile = "gfx/interface/planetview/Disciplinary_army_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Game_Dev"
+		textureFile = "gfx/interface/planetview/Game_Dev_army_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Gourmet"
+		textureFile = "gfx/interface/planetview/Gourmet_army_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Handyman"
+		textureFile = "gfx/interface/planetview/Handyman_army_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Justice"
+		textureFile = "gfx/interface/planetview/Justice_army_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Pandemonium"
+		textureFile = "gfx/interface/planetview/Pandemonium_army_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Seminar"
+		textureFile = "gfx/interface/planetview/Seminar_army_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Sweets_Club"
+		textureFile = "gfx/interface/planetview/Sweets_Club_army_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Tea_Party"
+		textureFile = "gfx/interface/planetview/Tea_Party_army_icon.dds"
+		default_frame = 1
+	}
+	spriteType = {
+		name = "GFX_army_type_Veritas"
+		textureFile = "gfx/interface/planetview/Veritas_army_icon.dds"
+		default_frame = 1
+	}
+}
+
+# Else
+spriteTypes = {
+	# War goals
+	spriteType = {
+		name = "GFX_wg_BA_Sacrifice"
+		texturefile = "gfx/interface/icons/diplomacy/diplomacy_war.dds"
+		noOfFrames = 2
+	}
+}

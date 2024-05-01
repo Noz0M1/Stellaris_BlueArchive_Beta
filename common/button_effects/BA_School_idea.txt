@@ -1,0 +1,7856 @@
+#####     阿拜多斯     #####
+### 页面1
+#G线路
+button_effect_BA_SI_Abydos_G01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Abydos_G01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_G01_tip
+	}
+}
+
+button_effect_BA_SI_Abydos_G01_lock = {
+	allow = {
+		custom_tooltip = SI_Abydos_G01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Abydos_G01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_G01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Abydos_G01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Abydos_G01
+							message = no
+						}
+					}
+				}
+			}
+		}
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = 3
+			max = 4000
+			min = 300
+		}
+		add_monthly_resource_mult = {
+			resource = unity
+			value = 3
+			max = 4000
+			min = 300
+		}
+	}
+}
+
+button_effect_BA_SI_Abydos_G02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Abydos_G02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_G02_tip
+	}
+}
+
+button_effect_BA_SI_Abydos_G02_lock = {
+	allow = {
+		custom_tooltip = SI_Abydos_G02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				OR = {
+					has_technology = tech_BA_SI_Abydos_A03
+					has_technology = tech_BA_SI_Abydos_B03
+				}
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Abydos_G02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_G02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Abydos_G02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Abydos_G02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#A线路
+button_effect_BA_SI_Abydos_A01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Abydos_A01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_A01_tip
+	}
+}
+
+button_effect_BA_SI_Abydos_A01_lock = {
+	allow = {
+		custom_tooltip = SI_Abydos_A01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Abydos_B01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Abydos_G01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Abydos_A01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_A01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Abydos_A01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Abydos_A01
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Abydos_A02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Abydos_A02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_A02_tip
+	}
+}
+
+button_effect_BA_SI_Abydos_A02_lock = {
+	allow = {
+		custom_tooltip = SI_Abydos_A02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Abydos_B01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Abydos_A01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Abydos_A02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_A02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Abydos_A02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Abydos_A02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Abydos_A03 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Abydos_A03
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_A03_tip
+	}
+}
+
+button_effect_BA_SI_Abydos_A03_lock = {
+	allow = {
+		custom_tooltip = SI_Abydos_A03_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Abydos_B01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Abydos_A02
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Abydos_A03
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_A03_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Abydos_A03
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Abydos_A03
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Abydos_A04_P1 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Abydos_A04
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_A04_tip
+	}
+}
+
+button_effect_BA_SI_Abydos_A04_P1_lock = {
+	allow = {
+		custom_tooltip = SI_Abydos_A04_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Abydos_B01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Abydos_A03
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Abydos_A04
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_A04_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Abydos_A04
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Abydos_A04
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#B线路
+button_effect_BA_SI_Abydos_B01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Abydos_B01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_B01_tip
+	}
+}
+
+button_effect_BA_SI_Abydos_B01_lock = {
+	allow = {
+		custom_tooltip = SI_Abydos_B01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Abydos_A01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Abydos_G01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Abydos_B01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_B01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Abydos_B01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Abydos_B01
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Abydos_B02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Abydos_B02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_B02_tip
+	}
+}
+
+button_effect_BA_SI_Abydos_B02_lock = {
+	allow = {
+		custom_tooltip = SI_Abydos_B02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Abydos_A01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Abydos_B01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Abydos_B02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_B02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Abydos_B02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Abydos_B02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Abydos_B03 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Abydos_B03
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_B03_tip
+	}
+}
+
+button_effect_BA_SI_Abydos_B03_lock = {
+	allow = {
+		custom_tooltip = SI_Abydos_B03_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Abydos_A01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Abydos_B02
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Abydos_B03
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_B03_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Abydos_B03
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Abydos_B03
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Abydos_B04_P1 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Abydos_B04
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_B04_tip
+	}
+}
+
+button_effect_BA_SI_Abydos_B04_P1_lock = {
+	allow = {
+		custom_tooltip = SI_Abydos_B04_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Abydos_A01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Abydos_B03
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Abydos_B04
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_B04_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Abydos_B04
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Abydos_B04
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+### 页面2
+#G线路
+button_effect_BA_SI_Abydos_G03 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Abydos_G03
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_G03_tip
+	}
+}
+
+button_effect_BA_SI_Abydos_G03_lock = {
+	allow = {
+		custom_tooltip = SI_Abydos_G03_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				OR = {
+					has_technology = tech_BA_SI_Abydos_A06
+					has_technology = tech_BA_SI_Abydos_B06
+				}
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Abydos_G03
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_G03_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Abydos_G03
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Abydos_G03
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#A线路
+button_effect_BA_SI_Abydos_A04_P2 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Abydos_A04
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_A04_tip
+	}
+}
+
+button_effect_BA_SI_Abydos_A04_P2_lock = {
+	allow = {
+		custom_tooltip = SI_Abydos_A04_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Abydos_B01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Abydos_A03
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Abydos_A04
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_A04_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Abydos_A04
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Abydos_A04
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Abydos_A05 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Abydos_A05
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_A05_tip
+	}
+}
+
+button_effect_BA_SI_Abydos_A05_lock = {
+	allow = {
+		custom_tooltip = SI_Abydos_A05_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Abydos_B01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Abydos_A04
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Abydos_A05
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_A05_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Abydos_A05
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Abydos_A05
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Abydos_A06 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Abydos_A06
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_A06_tip
+	}
+}
+
+button_effect_BA_SI_Abydos_A06_lock = {
+	allow = {
+		custom_tooltip = SI_Abydos_A06_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Abydos_B01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Abydos_A05
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Abydos_A06
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_A06_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Abydos_A06
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Abydos_A06
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#B线路
+button_effect_BA_SI_Abydos_B04_P2 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Abydos_B04
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_B04_tip
+	}
+}
+
+button_effect_BA_SI_Abydos_B04_P2_lock = {
+	allow = {
+		custom_tooltip = SI_Abydos_B04_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Abydos_A01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Abydos_B03
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Abydos_B04
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_B04_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Abydos_B04
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Abydos_B04
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Abydos_B05 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Abydos_B05
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_B05_tip
+	}
+}
+
+button_effect_BA_SI_Abydos_B05_lock = {
+	allow = {
+		custom_tooltip = SI_Abydos_B05_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Abydos_A01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Abydos_B04
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Abydos_B05
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_B05_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Abydos_B05
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Abydos_B05
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Abydos_B06 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Abydos_B06
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_B06_tip
+	}
+}
+
+button_effect_BA_SI_Abydos_B06_lock = {
+	allow = {
+		custom_tooltip = SI_Abydos_B06_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Abydos_A01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Abydos_B05
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Abydos_B06
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Abydos_B06_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Abydos_B06
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Abydos_B06
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#####      格黑那      #####
+### 页面1
+#上左线
+button_effect_BA_SI_Gehenna_A01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Gehenna_A01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_A01_tip
+	}
+}
+
+button_effect_BA_SI_Gehenna_A01_lock = {
+	allow = {
+		custom_tooltip = SI_Gehenna_A01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Gehenna_B01
+				}
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Gehenna_A01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_A01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Gehenna_A01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Gehenna_A01
+							message = no
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			add_modifier = {
+				modifier = modifier_BA_SI_Gehenna_A01
+				days = 3600
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Gehenna_A02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Gehenna_A02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_A02_tip
+	}
+}
+
+button_effect_BA_SI_Gehenna_A02_lock = {
+	allow = {
+		custom_tooltip = SI_Gehenna_A02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Gehenna_B02
+				}
+			}
+			# custom_tooltip = {
+			# 	fail_text = need_preposition_ideas
+			# 	OR = {
+			# 		has_technology = tech_BA_SI_Gehenna_A01
+			# 		has_technology = tech_BA_SI_Gehenna_B01
+			# 	}
+			# }
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Gehenna_A02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_A02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Gehenna_A02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Gehenna_A02
+							message = no
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			add_modifier = {
+				modifier = modifier_BA_SI_Gehenna_A02
+				days = 3600
+			}
+			BA_SI_Gehenna_A02_grant_fleet = yes
+		}
+	}
+}
+
+button_effect_BA_SI_Gehenna_A03 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Gehenna_A03
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_A03_tip
+	}
+}
+
+button_effect_BA_SI_Gehenna_A03_lock = {
+	allow = {
+		custom_tooltip = SI_Gehenna_A03_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Gehenna_B03
+				}
+			}
+			# custom_tooltip = {
+			# 	fail_text = need_preposition_ideas
+			# 	OR = {
+			# 		has_technology = tech_BA_SI_Gehenna_A02
+			# 		has_technology = tech_BA_SI_Gehenna_B02
+			# 	}
+			# }
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Gehenna_A03
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_A03_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Gehenna_A03
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Gehenna_A03
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#上右线
+button_effect_BA_SI_Gehenna_B01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Gehenna_B01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_B01_tip
+	}
+}
+
+button_effect_BA_SI_Gehenna_B01_lock = {
+	allow = {
+		custom_tooltip = SI_Gehenna_B01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Gehenna_A01
+				}
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Gehenna_B01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_B01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Gehenna_B01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Gehenna_B01
+							message = no
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			add_modifier = {
+				modifier = modifier_BA_SI_Gehenna_B01
+				days = 1800
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Gehenna_B02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Gehenna_B02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_B02_tip
+	}
+}
+
+button_effect_BA_SI_Gehenna_B02_lock = {
+	allow = {
+		custom_tooltip = SI_Gehenna_B02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Gehenna_A02
+				}
+			}
+			# custom_tooltip = {
+			# 	fail_text = need_preposition_ideas
+			# 	OR = {
+			# 		has_technology = tech_BA_SI_Gehenna_A01
+			# 		has_technology = tech_BA_SI_Gehenna_B01
+			# 	}
+			# }
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Gehenna_B02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_B02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Gehenna_B02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Gehenna_B02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Gehenna_B03 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Gehenna_B03
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_B03_tip
+	}
+}
+
+button_effect_BA_SI_Gehenna_B03_lock = {
+	allow = {
+		custom_tooltip = SI_Gehenna_B03_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Gehenna_A03
+				}
+			}
+			# custom_tooltip = {
+			# 	fail_text = need_preposition_ideas
+			# 	OR = {
+			# 		has_technology = tech_BA_SI_Gehenna_A02
+			# 		has_technology = tech_BA_SI_Gehenna_B02
+			# 	}
+			# }
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Gehenna_B03
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_B03_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Gehenna_B03
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Gehenna_B03
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#共通线
+button_effect_BA_SI_Gehenna_G01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Gehenna_G01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_G01_tip
+	}
+}
+
+button_effect_BA_SI_Gehenna_G01_lock = {
+	allow = {
+		custom_tooltip = SI_Gehenna_G01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				calc_true_if = {
+					amount >= 3
+					has_technology = tech_BA_SI_Gehenna_A01
+					has_technology = tech_BA_SI_Gehenna_A02
+					has_technology = tech_BA_SI_Gehenna_A03
+					has_technology = tech_BA_SI_Gehenna_B01
+					has_technology = tech_BA_SI_Gehenna_B02
+					has_technology = tech_BA_SI_Gehenna_B03
+				}
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Gehenna_G01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_G01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Gehenna_G01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Gehenna_G01
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Gehenna_G02_P1 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Gehenna_G02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_G02_tip
+	}
+}
+
+button_effect_BA_SI_Gehenna_G02_P1_lock = {
+	allow = {
+		custom_tooltip = SI_Gehenna_G02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Gehenna_G01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Gehenna_G02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_G02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Gehenna_G02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Gehenna_G02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+### 页面2
+#共通线
+button_effect_BA_SI_Gehenna_G02_P2 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Gehenna_G02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_G02_tip
+	}
+}
+
+button_effect_BA_SI_Gehenna_G02_P2_lock = {
+	allow = {
+		custom_tooltip = SI_Gehenna_G02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Gehenna_G01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Gehenna_G02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_G02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Gehenna_G02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Gehenna_G02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Gehenna_G03 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Gehenna_G03
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_G03_tip
+	}
+}
+
+button_effect_BA_SI_Gehenna_G03_lock = {
+	allow = {
+		custom_tooltip = SI_Gehenna_G03_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				OR = {
+					has_technology = tech_BA_SI_Gehenna_C03
+					has_technology = tech_BA_SI_Gehenna_D03
+					has_technology = tech_BA_SI_Gehenna_E03
+				}
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Gehenna_G03
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_G03_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Gehenna_G03
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Gehenna_G03
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#下左线
+button_effect_BA_SI_Gehenna_C01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Gehenna_C01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_C01_tip
+	}
+}
+
+button_effect_BA_SI_Gehenna_C01_lock = {
+	allow = {
+		custom_tooltip = SI_Gehenna_C01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = Gehenna_SI_Pandemonium_Society_point
+				calc_true_if = {
+					amount >= 2
+					has_technology = tech_BA_SI_Gehenna_A01
+					has_technology = tech_BA_SI_Gehenna_A02
+					has_technology = tech_BA_SI_Gehenna_A03
+				}
+			}
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOR = {
+					has_technology = tech_BA_SI_Gehenna_D01
+					has_technology = tech_BA_SI_Gehenna_E01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Gehenna_G02
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Gehenna_C01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_C01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Gehenna_C01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Gehenna_C01
+							message = no
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			add_modifier = {
+				modifier = modifier_BA_SI_Gehenna_C01
+				days = 10800
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Gehenna_C02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Gehenna_C02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_C02_tip
+	}
+}
+
+button_effect_BA_SI_Gehenna_C02_lock = {
+	allow = {
+		custom_tooltip = SI_Gehenna_C02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Gehenna_C01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Gehenna_C02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_C02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Gehenna_C02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Gehenna_C02
+							message = no
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			enable_special_project = {
+				name = SP_BA_SI_Gehenna_C02
+				owner = from
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Gehenna_C03 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Gehenna_C03
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_C03_tip
+	}
+}
+
+button_effect_BA_SI_Gehenna_C03_lock = {
+	allow = {
+		custom_tooltip = SI_Gehenna_C03_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Gehenna_C02
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Gehenna_C03
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_C03_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Gehenna_C03
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Gehenna_C03
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#下中线
+button_effect_BA_SI_Gehenna_D01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Gehenna_D01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_D01_tip
+	}
+}
+
+button_effect_BA_SI_Gehenna_D01_lock = {
+	allow = {
+		custom_tooltip = SI_Gehenna_D01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = Gehenna_SI_Student_Council_point
+				OR = {
+					has_technology = tech_BA_SI_Gehenna_A01
+					has_technology = tech_BA_SI_Gehenna_A02
+					has_technology = tech_BA_SI_Gehenna_A03
+				}
+				OR = {
+					has_technology = tech_BA_SI_Gehenna_B01
+					has_technology = tech_BA_SI_Gehenna_B02
+					has_technology = tech_BA_SI_Gehenna_B03
+				}
+			}
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOR = {
+					has_technology = tech_BA_SI_Gehenna_C01
+					has_technology = tech_BA_SI_Gehenna_E01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Gehenna_G02
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Gehenna_D01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_D01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Gehenna_D01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Gehenna_D01
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Gehenna_D02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Gehenna_D02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_D02_tip
+	}
+}
+
+button_effect_BA_SI_Gehenna_D02_lock = {
+	allow = {
+		custom_tooltip = SI_Gehenna_D02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Gehenna_D01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Gehenna_D02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_D02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Gehenna_D02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Gehenna_D02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Gehenna_D03 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Gehenna_D03
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_D03_tip
+	}
+}
+
+button_effect_BA_SI_Gehenna_D03_lock = {
+	allow = {
+		custom_tooltip = SI_Gehenna_D03_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Gehenna_D02
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Gehenna_D03
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_D03_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Gehenna_D03
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Gehenna_D03
+							message = no
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.4025
+			}
+		}
+	}
+}
+
+#下右线
+button_effect_BA_SI_Gehenna_E01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Gehenna_E01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_E01_tip
+	}
+}
+
+button_effect_BA_SI_Gehenna_E01_lock = {
+	allow = {
+		custom_tooltip = SI_Gehenna_E01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = Gehenna_SI_Perfect_Team_point
+				calc_true_if = {
+					amount >= 2
+					has_technology = tech_BA_SI_Gehenna_B01
+					has_technology = tech_BA_SI_Gehenna_B02
+					has_technology = tech_BA_SI_Gehenna_B03
+				}
+			}
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOR = {
+					has_technology = tech_BA_SI_Gehenna_C01
+					has_technology = tech_BA_SI_Gehenna_D01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Gehenna_G02
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Gehenna_E01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_E01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Gehenna_E01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Gehenna_E01
+							message = no
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			add_modifier = {
+				modifier = modifier_BA_SI_Gehenna_E01
+				days = 10800
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Gehenna_E02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Gehenna_E02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_E02_tip
+	}
+}
+
+button_effect_BA_SI_Gehenna_E02_lock = {
+	allow = {
+		custom_tooltip = SI_Gehenna_E02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Gehenna_E01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Gehenna_E02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_E02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Gehenna_E02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Gehenna_E02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Gehenna_E03 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Gehenna_E03
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_E03_tip
+	}
+}
+
+button_effect_BA_SI_Gehenna_E03_lock = {
+	allow = {
+		custom_tooltip = SI_Gehenna_E03_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Gehenna_E02
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Gehenna_E03
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Gehenna_E03_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Gehenna_E03
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Gehenna_E03
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#####       千年       #####
+### 页面1
+#G线路
+button_effect_BA_SI_Millennium_G01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Millennium_G01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G01_tip
+	}
+}
+
+button_effect_BA_SI_Millennium_G01_lock = {
+	allow = {
+		custom_tooltip = SI_Millennium_G01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Millennium_G01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Millennium_G01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Millennium_G01
+							message = no
+						}
+					}
+				}
+			}
+		}
+		add_monthly_resource_mult = {
+			resource = physics_research
+			value = 1
+			max = 2500
+			min = 100
+		}
+		add_monthly_resource_mult = {
+			resource = society_research
+			value = 1
+			max = 2500
+			min = 100
+		}
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = 1
+			max = 2500
+			min = 100
+		}
+	}
+}
+
+button_effect_BA_SI_Millennium_G02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Millennium_G02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G02_tip
+	}
+}
+
+button_effect_BA_SI_Millennium_G02_lock = {
+	allow = {
+		custom_tooltip = SI_Millennium_G02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Millennium_G01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Millennium_G02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Millennium_G02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Millennium_G02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Millennium_G03 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Millennium_G03
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G03_tip
+	}
+}
+
+button_effect_BA_SI_Millennium_G03_lock = {
+	allow = {
+		custom_tooltip = SI_Millennium_G03_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Millennium_G02
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Millennium_G03
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G03_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Millennium_G03
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Millennium_G03
+							message = no
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_owned_leader = {
+				limit = {
+					leader_class = scientist
+					NOT = {
+						has_leader_flag = BA_event_leader
+					}
+					is_ruler = no
+				}
+				add_skill_without_trait_selection = 1
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Millennium_G04 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Millennium_G04
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G04_tip
+	}
+}
+
+button_effect_BA_SI_Millennium_G04_lock = {
+	allow = {
+		custom_tooltip = SI_Millennium_G04_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Millennium_G03
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Millennium_G04
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G04_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Millennium_G04
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Millennium_G04
+							message = no
+						}
+					}
+				}
+			}
+		}
+		add_monthly_resource_mult = {
+			resource = physics_research
+			value = 3
+			max = 3000
+			min = 300
+		}
+		add_monthly_resource_mult = {
+			resource = society_research
+			value = 3
+			max = 3000
+			min = 300
+		}
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = 3
+			max = 3000
+			min = 300
+		}
+		add_monthly_resource_mult = {
+			resource = alloys
+			value = 3
+			max = 3000
+			min = 300
+		}
+		capital_scope = {
+			add_modifier = {
+				modifier = modifier_BA_SI_Millennium_G04
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Millennium_A01_P1 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Millennium_A01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_A01_tip
+	}
+}
+
+button_effect_BA_SI_Millennium_A01_P1_lock = {
+	allow = {
+		custom_tooltip = SI_Millennium_A01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Millennium_B01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Millennium_G04
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Millennium_A01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_A01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Millennium_A01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Millennium_A01
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Millennium_B01_P1 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Millennium_B01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_B01_tip
+	}
+}
+
+button_effect_BA_SI_Millennium_B01_P1_lock = {
+	allow = {
+		custom_tooltip = SI_Millennium_B01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Millennium_A01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Millennium_G04
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Millennium_B01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_B01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Millennium_B01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Millennium_B01
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+### 页面2
+#A线路
+button_effect_BA_SI_Millennium_A01_P2 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Millennium_A01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_A01_tip
+	}
+}
+
+button_effect_BA_SI_Millennium_A01_P2_lock = {
+	allow = {
+		custom_tooltip = SI_Millennium_A01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Millennium_B01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Millennium_G04
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Millennium_A01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_A01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Millennium_A01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Millennium_A01
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Millennium_A02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Millennium_A02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_A02_tip
+	}
+}
+
+button_effect_BA_SI_Millennium_A02_lock = {
+	allow = {
+		custom_tooltip = SI_Millennium_A02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Millennium_B01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Millennium_A01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Millennium_A02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_A02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Millennium_A02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Millennium_A02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#B线路
+button_effect_BA_SI_Millennium_B01_P2 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Millennium_B01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_B01_tip
+	}
+}
+
+button_effect_BA_SI_Millennium_B01_P2_lock = {
+	allow = {
+		custom_tooltip = SI_Millennium_B01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Millennium_A01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Millennium_G04
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Millennium_B01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_B01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Millennium_B01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Millennium_B01
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Millennium_B02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Millennium_B02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_B02_tip
+	}
+}
+
+button_effect_BA_SI_Millennium_B02_lock = {
+	allow = {
+		custom_tooltip = SI_Millennium_B02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Millennium_A01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Millennium_B01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Millennium_B02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_B02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Millennium_B02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Millennium_B02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#G线路
+button_effect_BA_SI_Millennium_G05 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Millennium_G05
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G05_tip
+	}
+}
+
+button_effect_BA_SI_Millennium_G05_lock = {
+	allow = {
+		custom_tooltip = SI_Millennium_G05_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				OR = {
+					has_technology = tech_BA_SI_Millennium_A01
+					has_technology = tech_BA_SI_Millennium_B01
+				}
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Millennium_G05
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G05_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Millennium_G05
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Millennium_G05
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Millennium_G06 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Millennium_G06
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G06_tip
+	}
+}
+
+button_effect_BA_SI_Millennium_G06_lock = {
+	allow = {
+		custom_tooltip = SI_Millennium_G06_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Millennium_G05
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Millennium_G06
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G06_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Millennium_G06
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Millennium_G06
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Millennium_G07 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Millennium_G07
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G07_tip
+	}
+}
+
+button_effect_BA_SI_Millennium_G07_lock = {
+	allow = {
+		custom_tooltip = SI_Millennium_G07_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Millennium_G06
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Millennium_G07
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G07_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Millennium_G07
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Millennium_G07
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Millennium_G08_P2 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Millennium_G08
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G08_tip
+	}
+}
+
+button_effect_BA_SI_Millennium_G08_P2_lock = {
+	allow = {
+		custom_tooltip = SI_Millennium_G08_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Millennium_G07
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Millennium_G08
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G08_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Millennium_G08
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Millennium_G08
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+### 页面3
+#G线路
+button_effect_BA_SI_Millennium_G08_P3 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Millennium_G08
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 3
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G08_tip
+	}
+}
+
+button_effect_BA_SI_Millennium_G08_P3_lock = {
+	allow = {
+		custom_tooltip = SI_Millennium_G08_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Millennium_G07
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 3
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Millennium_G08
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G08_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Millennium_G08
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Millennium_G08
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Millennium_G09 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Millennium_G09
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 3
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G09_tip
+	}
+}
+
+button_effect_BA_SI_Millennium_G09_lock = {
+	allow = {
+		custom_tooltip = SI_Millennium_G09_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Millennium_G08
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 3
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Millennium_G09
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G09_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Millennium_G09
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Millennium_G09
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Millennium_G10 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Millennium_G10
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 3
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G10_tip
+	}
+}
+
+button_effect_BA_SI_Millennium_G10_lock = {
+	allow = {
+		custom_tooltip = SI_Millennium_G10_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Millennium_G09
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 3
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Millennium_G10
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G10_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Millennium_G10
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Millennium_G10
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Millennium_G11 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Millennium_G11
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 3
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G11_tip
+	}
+}
+
+button_effect_BA_SI_Millennium_G11_lock = {
+	allow = {
+		custom_tooltip = SI_Millennium_G11_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Millennium_G10
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 3
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Millennium_G11
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_G11_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Millennium_G11
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Millennium_G11
+							message = no
+						}
+					}
+					hidden_effect = {
+						while = {
+							count = 2
+							random_list = {
+								1 = {
+									modifier = {
+										factor = 0
+										has_country_flag = BA_SI_Millennium_building_1
+									}
+									set_country_flag = BA_SI_Millennium_building_1
+								}
+								1 = {
+									modifier = {
+										factor = 0
+										has_country_flag = BA_SI_Millennium_building_2
+									}
+									set_country_flag = BA_SI_Millennium_building_2
+								}
+								1 = {
+									modifier = {
+										factor = 0
+										has_country_flag = BA_SI_Millennium_building_3
+									}
+									set_country_flag = BA_SI_Millennium_building_3
+								}
+								1 = {
+									modifier = {
+										factor = 0
+										has_country_flag = BA_SI_Millennium_building_4
+									}
+									set_country_flag = BA_SI_Millennium_building_4
+								}
+								1 = {
+									modifier = {
+										factor = 0
+										has_country_flag = BA_SI_Millennium_building_5
+									}
+									set_country_flag = BA_SI_Millennium_building_5
+								}
+								1 = {
+									modifier = {
+										factor = 0
+										has_country_flag = BA_SI_Millennium_building_6
+									}
+									set_country_flag = BA_SI_Millennium_building_6
+								}
+								1 = {
+									modifier = {
+										factor = 0
+										has_country_flag = BA_SI_Millennium_building_7
+									}
+									set_country_flag = BA_SI_Millennium_building_7
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#C线路
+button_effect_BA_SI_Millennium_C01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Millennium_C01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 3
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_C01_tip
+	}
+}
+
+button_effect_BA_SI_Millennium_C01_lock = {
+	allow = {
+		custom_tooltip = SI_Millennium_C01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Millennium_G08
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 3
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Millennium_C01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_C01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Millennium_C01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Millennium_C01
+							message = no
+						}
+					}
+				}
+			}
+		}
+		capital_scope = {
+			hidden_effect = {
+				remove_modifier = modifier_BA_SI_Millennium_G04
+			}
+			add_modifier = {
+				modifier = modifier_BA_SI_Millennium_C01
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Millennium_C02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Millennium_C02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 3
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_C02_tip
+	}
+}
+
+button_effect_BA_SI_Millennium_C02_lock = {
+	allow = {
+		custom_tooltip = SI_Millennium_C02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Millennium_C03
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Millennium_C01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 3
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Millennium_C02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_C02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Millennium_C02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Millennium_C02
+							message = no
+						}
+					}
+				}
+			}
+		}
+		add_monthly_resource_mult = {
+			resource = unity
+			value = 3
+			max = 100000
+			min = 10000
+		}
+	}
+}
+
+button_effect_BA_SI_Millennium_C03 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Millennium_C03
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 3
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_C03_tip
+	}
+}
+
+button_effect_BA_SI_Millennium_C03_lock = {
+	allow = {
+		custom_tooltip = SI_Millennium_C03_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Millennium_C02
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Millennium_C01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 3
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Millennium_C03
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Millennium_C03_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Millennium_C03
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Millennium_C03
+							message = no
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				country_event = {
+					id = BA_Shittem.4030
+					days = 360
+				}
+			}
+		}
+		hidden_effect = {
+			every_owned_leader = {
+				limit = {
+					OR = {
+						leader_class = scientist
+						leader_class = commander
+						leader_class = official
+					}
+					NOT = {
+						has_leader_flag = BA_event_leader
+					}
+					is_ruler = no
+				}
+				add_skill_without_trait_selection = 1
+			}
+		}
+	}
+}
+
+#####      圣三一      #####
+### 页面1
+# 左线
+button_effect_BA_SI_Trinity_A01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_A01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_A01_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_A01_lock = {
+	allow = {
+		custom_tooltip = SI_Trinity_A01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOR = {
+					has_technology = tech_BA_SI_Trinity_B01
+					has_technology = tech_BA_SI_Trinity_C01
+				}
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_A01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_A01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_A01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_A01
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Trinity_A02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_A02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_A02_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_A02_lock = {
+	allow = {
+		custom_tooltip = SI_Trinity_A02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Trinity_A01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_A02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_A02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_A02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_A02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Trinity_A03 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_A03
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_A03_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_A03_lock = {
+	allow = {
+		custom_tooltip = SI_Trinity_A03_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Trinity_A02
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_A03
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_A03_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_A03
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_A03
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Trinity_A04 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_A04
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_A04_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_A04_lock = {
+	allow = {
+		custom_tooltip = SI_Trinity_A04_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Trinity_A03
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_A04
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_A04_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_A04
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_A04
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Trinity_A05_P1 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_A05
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_A05_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_A05_lock_P1 = {
+	allow = {
+		custom_tooltip = SI_Trinity_A05_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Trinity_A04
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_A05
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_A05_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_A05
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_A05
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#中线
+button_effect_BA_SI_Trinity_B01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_B01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_B01_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_B01_lock = {
+	allow = {
+		custom_tooltip = SI_Trinity_B01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOR = {
+					has_technology = tech_BA_SI_Trinity_A01
+					has_technology = tech_BA_SI_Trinity_C01
+				}
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_B01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_B01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_B01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_B01
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Trinity_B02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_B02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_B02_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_B02_lock = {
+	allow = {
+		custom_tooltip = SI_Trinity_B02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Trinity_B01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_B02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_B02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_B02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_B02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Trinity_B03 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_B03
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_B03_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_B03_lock = {
+	allow = {
+		custom_tooltip = SI_Trinity_B03_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Trinity_B02
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_B03
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_B03_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_B03
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_B03
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Trinity_B04 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_B04
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_B04_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_B04_lock = {
+	allow = {
+		custom_tooltip = SI_Trinity_B04_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Trinity_B03
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_B04
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_B04_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_B04
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_B04
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Trinity_B05_P1 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_B05
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_B05_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_B05_lock_P1 = {
+	allow = {
+		custom_tooltip = SI_Trinity_B05_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Trinity_B04
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_B05
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_B05_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_B05
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_B05
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#右线
+button_effect_BA_SI_Trinity_C01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_C01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_C01_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_C01_lock = {
+	allow = {
+		custom_tooltip = SI_Trinity_C01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOR = {
+					has_technology = tech_BA_SI_Trinity_A01
+					has_technology = tech_BA_SI_Trinity_B01
+				}
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_C01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_C01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_C01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_C01
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Trinity_C02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_C02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_C02_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_C02_lock = {
+	allow = {
+		custom_tooltip = SI_Trinity_C02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Trinity_C01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_C02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_C02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_C02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_C02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Trinity_C03 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_C03
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_C03_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_C03_lock = {
+	allow = {
+		custom_tooltip = SI_Trinity_C03_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Trinity_C02
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_C03
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_C03_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_C03
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_C03
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Trinity_C04 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_C04
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_C04_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_C04_lock = {
+	allow = {
+		custom_tooltip = SI_Trinity_C04_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Trinity_C03
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_C04
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_C04_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_C04
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_C04
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Trinity_C05_P1 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_C05
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_C05_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_C05_lock_P1 = {
+	allow = {
+		custom_tooltip = SI_Trinity_C05_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Trinity_C04
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_C05
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_C05_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_C05
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_C05
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+### 页面2
+#左线
+button_effect_BA_SI_Trinity_A05_P2 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_A05
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_A05_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_A05_lock_P2 = {
+	allow = {
+		custom_tooltip = SI_Trinity_A05_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Trinity_A04
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_A05
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_A05_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_A05
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_A05
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Trinity_A06 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_A06
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_A06_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_A06_lock = {
+	allow = {
+		custom_tooltip = SI_Trinity_A06_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Trinity_A05
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_A06
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_A06_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_A06
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_A06
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#中线
+button_effect_BA_SI_Trinity_B05_P2 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_B05
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_B05_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_B05_lock_P2 = {
+	allow = {
+		custom_tooltip = SI_Trinity_B05_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Trinity_B04
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_B05
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_B05_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_B05
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_B05
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Trinity_B06 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_B06
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_B06_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_B06_lock = {
+	allow = {
+		custom_tooltip = SI_Trinity_B06_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Trinity_B05
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_B06
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_B06_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_B06
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_B06
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#右线
+button_effect_BA_SI_Trinity_C05_P2 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_C05
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_C05_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_C05_lock_P2 = {
+	allow = {
+		custom_tooltip = SI_Trinity_C05_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Trinity_C04
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_C05
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_C05_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_C05
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_C05
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Trinity_C06 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_C06
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_C06_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_C06_lock = {
+	allow = {
+		custom_tooltip = SI_Trinity_C06_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Trinity_C05
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_C06
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_C06_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_C06
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_C06
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#共通线
+button_effect_BA_SI_Trinity_G01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Trinity_G01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_G01_tip
+	}
+}
+
+button_effect_BA_SI_Trinity_G01_lock = {
+	allow = {
+		custom_tooltip = SI_Trinity_G01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				OR = {
+					has_technology = tech_BA_SI_Trinity_A06
+					has_technology = tech_BA_SI_Trinity_B06
+					has_technology = tech_BA_SI_Trinity_C06
+				}
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Trinity_G01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Trinity_G01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Trinity_G01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Trinity_G01
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#####       红冬       #####
+#特殊框架
+button_effect_BA_RedWinter_frame_1 = {
+	allow = {
+		hidden_trigger = {
+			always = no
+		}
+	}
+	potential = {
+		from = {
+			has_technology = tech_BA_SI_Redwinter_G02
+		}
+	}
+	effect = {
+	}
+}
+
+button_effect_BA_RedWinter_frame_2 = {
+	allow = {
+		hidden_trigger = {
+			always = no
+		}
+	}
+	potential = {
+		from = {
+			has_technology = tech_BA_SI_Redwinter_G03
+		}
+	}
+	effect = {
+	}
+}
+
+button_effect_BA_RedWinter_frame_3 = {
+	allow = {
+		hidden_trigger = {
+			always = no
+		}
+	}
+	potential = {
+		from = {
+			has_technology = tech_BA_SI_Redwinter_G04
+		}
+	}
+	effect = {
+	}
+}
+
+button_effect_BA_RedWinter_frame_4 = {
+	allow = {
+		hidden_trigger = {
+			always = no
+		}
+	}
+	potential = {
+		from = {
+			has_technology = tech_BA_SI_Redwinter_G05
+		}
+	}
+	effect = {
+	}
+}
+
+button_effect_BA_RedWinter_frame_5 = {
+	allow = {
+		hidden_trigger = {
+			always = no
+		}
+	}
+	potential = {
+		from = {
+			has_technology = tech_BA_SI_Redwinter_G05
+		}
+	}
+	effect = {
+	}
+}
+
+#共通线
+button_effect_BA_SI_Redwinter_G01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Redwinter_G01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Redwinter_G01_tip
+	}
+}
+
+button_effect_BA_SI_Redwinter_G01_lock = {
+	allow = {
+		custom_tooltip = SI_Redwinter_G01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Redwinter_G01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Redwinter_G01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Redwinter_G01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Redwinter_G01
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Redwinter_G02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Redwinter_G02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Redwinter_G02_tip
+	}
+}
+
+button_effect_BA_SI_Redwinter_G02_lock = {
+	allow = {
+		custom_tooltip = SI_Redwinter_G02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Redwinter_G01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Redwinter_G02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Redwinter_G02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Redwinter_G02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Redwinter_G02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Redwinter_G03 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Redwinter_G03
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Redwinter_G03_tip
+	}
+}
+
+button_effect_BA_SI_Redwinter_G03_lock = {
+	allow = {
+		custom_tooltip = SI_Redwinter_G03_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Redwinter_G02
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Redwinter_G03
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Redwinter_G03_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Redwinter_G03
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Redwinter_G03
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Redwinter_G04 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Redwinter_G04
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Redwinter_G04_tip
+	}
+}
+
+button_effect_BA_SI_Redwinter_G04_lock = {
+	allow = {
+		custom_tooltip = SI_Redwinter_G04_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Redwinter_G03
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Redwinter_G04
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Redwinter_G04_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Redwinter_G04
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Redwinter_G04
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Redwinter_G05 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Redwinter_G05
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Redwinter_G05_tip
+	}
+}
+
+button_effect_BA_SI_Redwinter_G05_lock = {
+	allow = {
+		custom_tooltip = SI_Redwinter_G05_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Redwinter_G04
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Redwinter_G05
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Redwinter_G05_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Redwinter_G05
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Redwinter_G05
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#####     百鬼夜行     #####
+#特殊页面交互
+button_effect_BA_Hyakkiyako_page_down = {
+	allow = {
+		custom_tooltip = {
+			fail_text = BA_not_the_right_time
+			#mid_game_years_passed >= 0
+		}
+	}
+	potential = {
+		check_variable = {
+			which = BA_page_serial
+			value < 2
+		}
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				change_variable = {
+					which = BA_page_serial
+					value = 1
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_Hyakkiyako_bg_1 = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+	}
+}
+
+button_effect_BA_Hyakkiyako_bg_2 = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+	}
+}
+
+#第一页
+button_effect_BA_SI_Hyakkiyako_G01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Hyakkiyako_G01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Hyakkiyako_G01_tip
+	}
+}
+
+button_effect_BA_SI_Hyakkiyako_G01_lock = {
+	allow = {
+		custom_tooltip = SI_Hyakkiyako_G01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Hyakkiyako_G01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Hyakkiyako_G01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Hyakkiyako_G01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Hyakkiyako_G01
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Hyakkiyako_G02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Hyakkiyako_G02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Hyakkiyako_G02_tip
+	}
+}
+
+button_effect_BA_SI_Hyakkiyako_G02_lock = {
+	allow = {
+		custom_tooltip = SI_Hyakkiyako_G02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Hyakkiyako_G01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Hyakkiyako_G02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Hyakkiyako_G02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Hyakkiyako_G02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Hyakkiyako_G02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Hyakkiyako_G03 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Hyakkiyako_G03
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Hyakkiyako_G03_tip
+	}
+}
+
+button_effect_BA_SI_Hyakkiyako_G03_lock = {
+	allow = {
+		custom_tooltip = SI_Hyakkiyako_G03_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Hyakkiyako_G01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Hyakkiyako_G03
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Hyakkiyako_G03_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Hyakkiyako_G03
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Hyakkiyako_G03
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Hyakkiyako_G04 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Hyakkiyako_G04
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Hyakkiyako_G04_tip
+	}
+}
+
+button_effect_BA_SI_Hyakkiyako_G04_lock = {
+	allow = {
+		custom_tooltip = SI_Hyakkiyako_G04_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Hyakkiyako_G01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Hyakkiyako_G04
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Hyakkiyako_G04_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Hyakkiyako_G04
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Hyakkiyako_G04
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Hyakkiyako_G05 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Hyakkiyako_G05
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Hyakkiyako_G05_tip
+	}
+}
+
+button_effect_BA_SI_Hyakkiyako_G05_lock = {
+	allow = {
+		custom_tooltip = SI_Hyakkiyako_G05_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Hyakkiyako_G02
+				has_technology = tech_BA_SI_Hyakkiyako_G03
+				has_technology = tech_BA_SI_Hyakkiyako_G04
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Hyakkiyako_G05
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Hyakkiyako_G05_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Hyakkiyako_G05
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Hyakkiyako_G05
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#第二页
+button_effect_BA_SI_Hyakkiyako_G06 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Hyakkiyako_G06
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Hyakkiyako_G06_tip
+	}
+}
+
+button_effect_BA_SI_Hyakkiyako_G06_lock = {
+	allow = {
+		custom_tooltip = SI_Hyakkiyako_G06_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Hyakkiyako_G05
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Hyakkiyako_G06
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Hyakkiyako_G06_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Hyakkiyako_G06
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Hyakkiyako_G06
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Hyakkiyako_G07 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Hyakkiyako_G07
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Hyakkiyako_G07_tip
+	}
+}
+
+button_effect_BA_SI_Hyakkiyako_G07_lock = {
+	allow = {
+		custom_tooltip = SI_Hyakkiyako_G07_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Hyakkiyako_G06
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Hyakkiyako_G07
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Hyakkiyako_G07_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Hyakkiyako_G07
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Hyakkiyako_G07
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Hyakkiyako_G08 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Hyakkiyako_G08
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Hyakkiyako_G08_tip
+	}
+}
+
+button_effect_BA_SI_Hyakkiyako_G08_lock = {
+	allow = {
+		custom_tooltip = SI_Hyakkiyako_G08_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Hyakkiyako_G07
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Hyakkiyako_G08
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Hyakkiyako_G08_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Hyakkiyako_G08
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Hyakkiyako_G08
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Hyakkiyako_G09 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Hyakkiyako_G09
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Hyakkiyako_G09_tip
+	}
+}
+
+button_effect_BA_SI_Hyakkiyako_G09_lock = {
+	allow = {
+		custom_tooltip = SI_Hyakkiyako_G09_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Hyakkiyako_G08
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 2
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Hyakkiyako_G09
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Hyakkiyako_G09_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Hyakkiyako_G09
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Hyakkiyako_G09
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+### 瓦尔基里
+#共通
+button_effect_BA_SI_Valkyrie_G01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Valkyrie_G01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Valkyrie_G01_tip
+	}
+}
+
+button_effect_BA_SI_Valkyrie_G01_lock = {
+	allow = {
+		custom_tooltip = SI_Valkyrie_G01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Valkyrie_G01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Valkyrie_G01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Valkyrie_G01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Valkyrie_G01
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Valkyrie_G02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Valkyrie_G02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Valkyrie_G02_tip
+	}
+}
+
+button_effect_BA_SI_Valkyrie_G02_lock = {
+	allow = {
+		custom_tooltip = SI_Valkyrie_G02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				OR = {
+					has_technology = tech_BA_SI_Valkyrie_A02
+					has_technology = tech_BA_SI_Valkyrie_B02
+				}
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Valkyrie_G02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Valkyrie_G02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Valkyrie_G02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Valkyrie_G02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#左部分
+button_effect_BA_SI_Valkyrie_A01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Valkyrie_A01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Valkyrie_A01_tip
+	}
+}
+
+button_effect_BA_SI_Valkyrie_A01_lock = {
+	allow = {
+		custom_tooltip = SI_Valkyrie_A01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Valkyrie_G01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Valkyrie_A01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Valkyrie_A01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Valkyrie_A01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Valkyrie_A01
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Valkyrie_A02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Valkyrie_A02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Valkyrie_A02_tip
+	}
+}
+
+button_effect_BA_SI_Valkyrie_A02_lock = {
+	allow = {
+		custom_tooltip = SI_Valkyrie_A02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Valkyrie_A01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Valkyrie_A02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Valkyrie_A02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Valkyrie_A02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Valkyrie_A02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#右部分
+button_effect_BA_SI_Valkyrie_B01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Valkyrie_B01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Valkyrie_B01_tip
+	}
+}
+
+button_effect_BA_SI_Valkyrie_B01_lock = {
+	allow = {
+		custom_tooltip = SI_Valkyrie_B01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Valkyrie_G01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Valkyrie_B01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Valkyrie_B01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Valkyrie_B01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Valkyrie_B01
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Valkyrie_B02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Valkyrie_B02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Valkyrie_B02_tip
+	}
+}
+
+button_effect_BA_SI_Valkyrie_B02_lock = {
+	allow = {
+		custom_tooltip = SI_Valkyrie_B02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Valkyrie_B01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Valkyrie_B02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Valkyrie_B02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Valkyrie_B02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Valkyrie_B02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#####      山海经      #####
+#共通
+button_effect_BA_SI_Shanhaijing_G01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Shanhaijing_G01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Shanhaijing_G01_tip
+	}
+}
+
+button_effect_BA_SI_Shanhaijing_G01_lock = {
+	allow = {
+		custom_tooltip = SI_Shanhaijing_G01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Shanhaijing_G01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Shanhaijing_G01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Shanhaijing_G01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Shanhaijing_G01
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Shanhaijing_G02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Shanhaijing_G02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Shanhaijing_G02_tip
+	}
+}
+
+button_effect_BA_SI_Shanhaijing_G02_lock = {
+	allow = {
+		custom_tooltip = SI_Shanhaijing_G02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Shanhaijing_G01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Shanhaijing_G02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Shanhaijing_G02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Shanhaijing_G02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Shanhaijing_G02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#左线
+button_effect_BA_SI_Shanhaijing_A01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Shanhaijing_A01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Shanhaijing_A01_tip
+	}
+}
+
+button_effect_BA_SI_Shanhaijing_A01_lock = {
+	allow = {
+		custom_tooltip = SI_Shanhaijing_A01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Shanhaijing_B01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Shanhaijing_G01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Shanhaijing_A01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Shanhaijing_A01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Shanhaijing_A01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Shanhaijing_A01
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Shanhaijing_A02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Shanhaijing_A02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Shanhaijing_A02_tip
+	}
+}
+
+button_effect_BA_SI_Shanhaijing_A02_lock = {
+	allow = {
+		custom_tooltip = SI_Shanhaijing_A02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Shanhaijing_A01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Shanhaijing_A02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Shanhaijing_A02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Shanhaijing_A02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Shanhaijing_A02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Shanhaijing_A03 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Shanhaijing_A03
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Shanhaijing_A03_tip
+	}
+}
+
+button_effect_BA_SI_Shanhaijing_A03_lock = {
+	allow = {
+		custom_tooltip = SI_Shanhaijing_A03_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Shanhaijing_B03
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Shanhaijing_G02
+				OR = {
+					has_technology = tech_BA_SI_Shanhaijing_A02
+					has_technology = tech_BA_SI_Shanhaijing_B02
+				}
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Shanhaijing_A03
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Shanhaijing_A03_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Shanhaijing_A03
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Shanhaijing_A03
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Shanhaijing_A04 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Shanhaijing_A04
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Shanhaijing_A04_tip
+	}
+}
+
+button_effect_BA_SI_Shanhaijing_A04_lock = {
+	allow = {
+		custom_tooltip = SI_Shanhaijing_A04_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Shanhaijing_A03
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Shanhaijing_A04
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Shanhaijing_A04_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Shanhaijing_A04
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Shanhaijing_A04
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#右线
+button_effect_BA_SI_Shanhaijing_B01 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Shanhaijing_B01
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Shanhaijing_B01_tip
+	}
+}
+
+button_effect_BA_SI_Shanhaijing_B01_lock = {
+	allow = {
+		custom_tooltip = SI_Shanhaijing_B01_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Shanhaijing_A01
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Shanhaijing_G01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Shanhaijing_B01
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Shanhaijing_B01_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Shanhaijing_B01
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Shanhaijing_B01
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Shanhaijing_B02 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Shanhaijing_B02
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Shanhaijing_B02_tip
+	}
+}
+
+button_effect_BA_SI_Shanhaijing_B02_lock = {
+	allow = {
+		custom_tooltip = SI_Shanhaijing_B02_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Shanhaijing_B01
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Shanhaijing_B02
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Shanhaijing_B02_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Shanhaijing_B02
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Shanhaijing_B02
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Shanhaijing_B03 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Shanhaijing_B03
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Shanhaijing_B03_tip
+	}
+}
+
+button_effect_BA_SI_Shanhaijing_B03_lock = {
+	allow = {
+		custom_tooltip = SI_Shanhaijing_B03_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = BA_mutual_exclusion_events
+				NOT = {
+					has_technology = tech_BA_SI_Shanhaijing_A03
+				}
+			}
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Shanhaijing_G02
+				OR = {
+					has_technology = tech_BA_SI_Shanhaijing_A02
+					has_technology = tech_BA_SI_Shanhaijing_B02
+				}
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Shanhaijing_B03
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Shanhaijing_B03_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Shanhaijing_B03
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Shanhaijing_B03
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Shanhaijing_B04 = {
+	allow = {
+		from = {
+			has_technology = tech_BA_SI_Shanhaijing_B04
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Shanhaijing_B04_tip
+	}
+}
+
+button_effect_BA_SI_Shanhaijing_B04_lock = {
+	allow = {
+		custom_tooltip = SI_Shanhaijing_B04_tip
+		from = {
+			BA_SI_cooldown_trigger = yes
+			BA_SI_time_limit_trigger = yes
+			custom_tooltip = {
+				fail_text = need_preposition_ideas
+				has_technology = tech_BA_SI_Shanhaijing_B03
+			}
+		}
+	}
+	potential = {
+		from = {
+			check_variable = {
+				which = BA_page_serial
+				value = 1
+			}
+			NOT = {
+				has_technology = tech_BA_SI_Shanhaijing_B04
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = SI_Shanhaijing_B04_tip
+		hidden_effect = {
+			from = {
+				if = {
+					play_sound = notification
+					limit = {
+						has_technology = tech_BA_SI_Shanhaijing_B04
+					}
+				}
+				else = {
+					hidden_effect = {
+						BA_SI_set_cooldown_normal = yes
+						give_technology = {
+							tech = tech_BA_SI_Shanhaijing_B04
+							message = no
+						}
+					}
+				}
+			}
+		}
+	}
+}

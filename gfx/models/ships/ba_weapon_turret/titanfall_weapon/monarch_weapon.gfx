@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "monarch_weapon_mesh"
+		file = "gfx\models\ships\ba_weapon_turret\titanfall_weapon\monarch_weapon.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Monarch_Orinal_WeaponShape"
+			index = 0
+			texture_diffuse = "titanfall_weapon_diffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "titanfall_weapon_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

@@ -1,0 +1,264 @@
+##########   致被遗忘的众神   ##########
+### 清扫
+#重建星球
+decision_Kyrie_rebuild_Kivotos_on_ruins = {
+	owned_planets_only = yes
+	icon = decision_arcology_project
+	potential = {
+		is_planet_class = pc_BA_ruined_planet
+		has_planet_flag = BA_Kyrie_clean_finished
+	}
+	allow = {
+		NOR = {
+			has_deposit = d_Arius_Cathedral_ruined
+			has_deposit = d_broken_Abydos_school
+			has_deposit = d_broken_Millennium_school
+			has_deposit = d_broken_Trinity_school
+			has_deposit = d_broken_Gehenna_school
+			#
+			has_deposit = d_fresh_ruins
+		}
+	}
+	enactment_time = 1800
+	resources = {
+		category = decisions
+		cost = {
+			energy = 2500
+			minerals = 10000
+			alloys = 6500
+			consumer_goods = 3000
+			rare_crystals = 200
+			volatile_motes = 200
+			exotic_gases = 200
+		}
+	}
+	effect = {
+		custom_tooltip = decision_Kyrie_rebuild_Kivotos_on_ruins_desc
+		planet_event = {
+			id = BA_origin.1104
+		}
+		hidden_effect = {
+			change_pc = pc_BA_campus_planet
+			remove_planet_flag = BA_Kyrie_clean_finished
+			add_district = BA_districts_dome
+			add_district = BA_districts_dome
+			add_district = BA_districts_dome
+			add_district = BA_districts_campus
+			add_district = BA_districts_campus
+			add_district = BA_districts_municipality
+			add_district = BA_districts_municipality
+			add_district = BA_districts_military_factory
+			add_district = BA_districts_suburbs
+			add_district = BA_districts_suburbs
+			check_planet_employment = yes
+			remove_deposit = d_Gehenna_shelter
+			owner = {
+				set_country_flag = BA_Planet_rebuilded
+				random_situation = {
+					limit = {
+						is_situation_type = situation_Kyrie_planet_cleaning
+					}
+					set_situation_locked = no
+				}
+			}
+		}
+	}
+}
+
+### 威胁
+decision_Kyrie_enemy_1 = {
+	owned_planets_only = yes
+	icon = decision_discourage_growth
+	potential = {
+		#is_planet_class = pc_BA_ruined_planet
+		has_planet_flag = BA_Kyrie_target_@owner
+		check_variable = {
+			which = situation_Kyrie_engage_enemy_dicision
+			value = 1
+		}
+	}
+	enactment_time = 30
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 1000
+			food = 1000
+		}
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = {
+				which = situation_Kyrie_engage_enemy_dicision
+				value = 1
+			}
+			planet_event = {
+				id = BA_origin.1213
+			}
+		}
+	}
+}
+
+decision_Kyrie_enemy_2 = {
+	owned_planets_only = yes
+	icon = decision_discourage_growth
+	potential = {
+		#is_planet_class = pc_BA_ruined_planet
+		has_planet_flag = BA_Kyrie_target_@owner
+		check_variable = {
+			which = situation_Kyrie_engage_enemy_dicision
+			value = 2
+		}
+	}
+	enactment_time = 60
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 1800
+			consumer_goods = 1000
+		}
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = {
+				which = situation_Kyrie_engage_enemy_dicision
+				value = 1
+			}
+			planet_event = {
+				id = BA_origin.1214
+			}
+		}
+	}
+}
+
+decision_Kyrie_enemy_3 = {
+	owned_planets_only = yes
+	icon = decision_discourage_growth
+	potential = {
+		#is_planet_class = pc_BA_ruined_planet
+		has_planet_flag = BA_Kyrie_target_@owner
+		check_variable = {
+			which = situation_Kyrie_engage_enemy_dicision
+			value = 3
+		}
+	}
+	enactment_time = 120
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 1500
+			alloys = 800
+		}
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = {
+				which = situation_Kyrie_engage_enemy_dicision
+				value = 1
+			}
+			planet_event = {
+				id = BA_origin.1215
+			}
+		}
+	}
+}
+
+decision_Kyrie_enemy_4 = {
+	owned_planets_only = yes
+	icon = decision_discourage_growth
+	potential = {
+		#is_planet_class = pc_BA_ruined_planet
+		has_planet_flag = BA_Kyrie_target_@owner
+		check_variable = {
+			which = situation_Kyrie_engage_enemy_dicision
+			value = 4
+		}
+	}
+	enactment_time = 120
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 2000
+			sr_pyroxenes = 20
+		}
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = {
+				which = situation_Kyrie_engage_enemy_dicision
+				value = 1
+			}
+			planet_event = {
+				id = BA_origin.1216
+			}
+		}
+	}
+}
+
+##########   未命名的始发点   ##########
+decision_Atrahasis_research_1 = {
+	owned_planets_only = yes
+	icon = decision_arcology_project
+	potential = {
+		is_planet_class = pc_BA_auto_habitat
+		has_planet_flag = Unnamed_starting_habitat_1
+		owner = {
+			has_country_flag = BA_habitat_inhibit_1
+		}
+	}
+	enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			consumer_goods = 300
+			sr_pyroxenes = 100
+		}
+	}
+	effect = {
+		custom_tooltip = decision_Atrahasis_research_1_tip
+		hidden_effect = {
+			remove_modifier = modifier_BA_Atrahasis_station_1
+			add_modifier = {
+				modifier = modifier_BA_Atrahasis_station_2
+			}
+			owner = {
+				country_event = {
+					id = BA_origin.2111
+				}
+				remove_country_flag = BA_habitat_inhibit_1
+				set_country_flag = BA_habitat_inhibit_2
+			}
+		}
+	}
+}
+
+decision_Atrahasis_research_2 = {
+	owned_planets_only = yes
+	icon = decision_arcology_project
+	potential = {
+		is_planet_class = pc_BA_auto_habitat
+		has_planet_flag = Unnamed_starting_habitat_1
+		owner = {
+			has_country_flag = BA_habitat_inhibit_2
+		}
+	}
+	enactment_time = 1800
+	resources = {
+		category = decisions
+		cost = {
+			consumer_goods = 600
+			sr_pyroxenes = 200
+		}
+	}
+	effect = {
+		custom_tooltip = decision_Atrahasis_research_2_tip
+		hidden_effect = {
+			remove_modifier = modifier_BA_Atrahasis_station_2
+			owner = {
+				country_event = {
+					id = BA_origin.2112
+				}
+				remove_country_flag = BA_habitat_inhibit_2
+			}
+		}
+	}
+}

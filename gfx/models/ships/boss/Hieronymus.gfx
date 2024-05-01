@@ -1,0 +1,47 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Hieronymus_mesh"
+		file = "gfx\models\ships\boss/Hieronymus.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "Hieronymus_Original_HaloShape"
+			index = 0
+			texture_diffuse = "Hieronymus_Halo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "Hieronymus_Original_BodyShape"
+			index = 0
+			texture_diffuse = "Hieronymus_Original.dds"
+			texture_normal = "Hieronymus_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+	pdxmesh = {
+		name = "Hieronymus_Color_mesh"
+		file = "gfx\models\ships\boss/Hieronymus.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "Hieronymus_Original_HaloShape"
+			index = 0
+			texture_diffuse = "Hieronymus_Color_Halo.dds"
+			texture_normal = "Color_normal.dds"
+			texture_specular = "Color_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+
+		meshsettings = {
+			name = "Hieronymus_Original_BodyShape"
+			index = 0
+			texture_diffuse = "Hieronymus_Color.dds"
+			texture_normal = "Color_normal.dds"
+			texture_specular = "Color_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+
+}

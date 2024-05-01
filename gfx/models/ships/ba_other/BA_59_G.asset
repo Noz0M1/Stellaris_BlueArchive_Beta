@@ -1,0 +1,33 @@
+entity = {
+	name = "BA_59_G_entity"
+	pdxmesh = "BA_59_G_mesh"
+}
+entity = {
+	name = "BA_59_G_TURRET_entity"
+	pdxmesh = "BA_59_G_TURRET_mesh"
+}
+
+entity = {
+	name = "BA_59_Kaiserpmc_entity"
+	pdxmesh = "BA_59_Kaiserpmc_mesh"
+}
+entity = {
+	name = "BA_59_Kaiserpmc_TURRET_entity"
+	pdxmesh = "BA_59_Kaiserpmc_TURRET_mesh"
+	locator = {
+		name = "advert"
+		position = { 0 0 -15 }
+		rotation = { 0 -90 0 }
+	}
+	attach = {
+		advert = "Kaiserpmc_logo_entity"
+	}
+}
+
+entity = {
+	name = "Kaiserpmc_logo_entity"
+	pdxmesh = "Kaiserpmc_logo_mesh"
+
+	scale = 1.0
+}
+

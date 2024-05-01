@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Azusa_Original_Bullet_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/Azusa_Original_Bullet.mesh"
+		scale = 16.0
+
+		meshsettings = {
+			name = "Azusa_Original_BulletShape"
+			index = 0
+			texture_diffuse = "Azusa_Original_Bullet.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+}

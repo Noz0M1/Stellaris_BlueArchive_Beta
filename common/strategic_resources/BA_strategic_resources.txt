@@ -1,0 +1,30 @@
+sr_pyroxenes = {
+	#AI_category = strategic_resource
+	tradable = no
+	max = 300000
+	tooltip_decimals = 120
+	deficit_modifier = sr_pyroxenes_deficit
+	visibility_prerequisite = {
+		has_authority = auth_kivotos
+	}
+}
+
+sr_keystone = {
+	#AI_category = strategic_resource
+	tradable = no
+	max = 300000
+	tooltip_decimals = 120
+	deficit_modifier = sr_keystone_deficit
+	visibility_prerequisite = {
+		has_authority = auth_kivotos
+	}
+}
+
+sr_eligma = {
+	tradable = no
+	max = 30000
+	tooltip_decimals = -1
+	visibility_prerequisite = {
+		has_authority = auth_kivotos
+	}
+}

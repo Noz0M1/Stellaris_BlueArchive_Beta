@@ -1,0 +1,395 @@
+#古书修复
+special_project = {
+	key = "BA_ring_tech_project_1"
+	cost = 3000
+	picture = GFX_BA_ring_tech
+	tech_department = society_technology
+	event_scope = country_event
+	on_success = {
+		add_research_option = "tech_BA_Preliminary_ring_theory"
+	}
+}
+
+#无底线的研究
+special_project = {
+	key = "BA_ring_tech_project_2"
+	days_to_research = 720
+	picture = GFX_BA_ring_tech
+	event_scope = country_event
+	on_success = {
+		country_event = {
+			id = BA_ape.0005
+		}
+	}
+}
+
+#蓝鲸之梦
+special_project = {
+	key = "BA_dream_of_bule_wheel01"
+	cost = 3000
+	picture = GFX_BA_dream_of_bule_wheel02
+	tech_department = physics_technology
+
+	event_scope = country_event
+
+	on_success = {
+		country_event = {
+			id = BA_origin.0106
+		}
+	}
+}
+
+special_project = {
+	key = "BA_dream_of_bule_wheel02"
+	cost = 3000
+	picture = GFX_BA_dream_of_bule_wheel02
+	tech_department = physics_technology
+
+	event_scope = country_event
+
+	on_success = {
+		country_event = {
+			id = BA_origin.0107
+		}
+	}
+}
+
+special_project = {
+	key = "BA_dream_of_bule_wheel03"
+	days_to_research = 30
+	picture = GFX_BA_dream_of_bule_wheel02
+
+	event_scope = country_event
+
+	on_success = {
+		country_event = {
+			id = BA_origin.0108
+		}
+	}
+}
+
+##### 飞升项目 #####
+#### 飞升一
+#光环研究
+special_project = {
+	key = "BA_Halo_research"
+	event_chain = BA_Halo_awaken_chain
+	tech_department = society_technology
+	cost = {
+		base = 1000
+		scaled_modifier = {
+			limit = {
+				species = {
+					has_trait = trait_halo_unreleased
+				}
+			}
+			add = 30
+			scope = THIS
+			calc = pop_count
+		}
+	}
+	event_scope = country_event
+	on_success = {
+		country_event = {
+			id = BA_ape.1002
+		}
+	}
+}
+
+#准备
+special_project = {
+	key = "BA_Halo_preparation"
+	event_chain = BA_Halo_awaken_chain
+	days_to_research = 360
+	event_scope = country_event
+	on_success = {
+		country_event = {
+			id = BA_ape.1003
+		}
+	}
+}
+
+#开始
+special_project = {
+	key = "BA_Halo_remake"
+	event_chain = BA_Halo_awaken_chain
+	tech_department = society_technology
+	cost = {
+		base = 0
+		scaled_modifier = {
+			limit = {
+				species = {
+					has_trait = trait_halo_unreleased
+				}
+				owner = {
+					has_country_flag = BA_Halo_Prize0
+				}
+			}
+			add = 200
+			scope = THIS
+			calc = pop_count
+		}
+		scaled_modifier = {
+			limit = {
+				species = {
+					has_trait = trait_halo_unreleased
+				}
+				owner = {
+					has_country_flag = BA_Halo_Prize1
+				}
+			}
+			add = 150
+			scope = THIS
+			calc = pop_count
+		}
+		scaled_modifier = {
+			limit = {
+				species = {
+					has_trait = trait_halo_unreleased
+				}
+				owner = {
+					has_country_flag = BA_Halo_Prize2
+				}
+			}
+			add = 100
+			scope = THIS
+			calc = pop_count
+		}
+		scaled_modifier = {
+			limit = {
+				species = {
+					has_trait = trait_halo_unreleased
+				}
+				owner = {
+					has_country_flag = BA_Halo_Prize3
+				}
+			}
+			add = 50
+			scope = THIS
+			calc = pop_count
+		}
+		scaled_modifier = {
+			limit = {
+				species = {
+					has_trait = trait_halo_unreleased
+				}
+				owner = {
+					has_country_flag = BA_Halo_Prize4
+				}
+			}
+			add = 25
+			scope = THIS
+			calc = pop_count
+		}
+	}
+	event_scope = country_event
+	on_success = {
+		country_event = {
+			id = BA_ape.1004
+		}
+	}
+}
+
+#### 飞升二
+#不同的选项支
+special_project = {
+	key = "BA_Another_route"
+	event_chain = BA_Kivotos_chronicle_chain
+	event_scope = country_event
+	tech_department = society_technology
+	cost = 15000
+	on_success = {
+		hidden_effect = {
+			change_variable = {
+				which = BA_tradition_count
+				value = 1
+			}
+			set_country_flag = BA_Blue_new_world_1
+			country_event = {
+				id = BA_ape.2002
+			}
+			country_event = {
+				id = BA_ape.2003
+			}
+			country_event = {
+				id = BA_ape.2009
+				days = 30
+			}
+		}
+	}
+}
+
+#高塔下盛开的花儿
+special_project = {
+	key = "BA_Flowers"
+	event_chain = BA_Kivotos_chronicle_chain
+	event_scope = country_event
+	tech_department = engineering_technology
+	cost = 15000
+	on_success = {
+		hidden_effect = {
+			change_variable = {
+				which = BA_tradition_count
+				value = 1
+			}
+			set_country_flag = BA_Blue_new_world_2
+			country_event = {
+				id = BA_ape.2002
+			}
+			country_event = {
+				id = BA_ape.2004
+			}
+			country_event = {
+				id = BA_ape.2009
+				days = 30
+			}
+		}
+	}
+}
+
+#被灰与火浸染的每日
+special_project = {
+	key = "BA_In_flame"
+	event_chain = BA_Kivotos_chronicle_chain
+	event_scope = country_event
+	tech_department = physics_technology
+	cost = 15000
+	on_success = {
+		hidden_effect = {
+			change_variable = {
+				which = BA_tradition_count
+				value = 1
+			}
+			set_country_flag = BA_Blue_new_world_3
+			country_event = {
+				id = BA_ape.2002
+			}
+			country_event = {
+				id = BA_ape.2005
+			}
+			country_event = {
+				id = BA_ape.2009
+				days = 30
+			}
+		}
+	}
+}
+
+#绝对无法放手的东西
+special_project = {
+	key = "BA_Things_cannot_give_up"
+	event_chain = BA_Kivotos_chronicle_chain
+	event_scope = country_event
+	days_to_research = 720
+	on_success = {
+		hidden_effect = {
+			change_variable = {
+				which = BA_tradition_count
+				value = 1
+			}
+			set_country_flag = BA_Blue_new_world_4
+			country_event = {
+				id = BA_ape.2002
+			}
+			country_event = {
+				id = BA_ape.2006
+			}
+			country_event = {
+				id = BA_ape.2009
+				days = 30
+			}
+		}
+	}
+}
+
+#星空，星空
+special_project = {
+	key = "BA_Hoshizora"
+	event_chain = BA_Kivotos_chronicle_chain
+	event_scope = country_event
+	tech_department = physics_technology
+	cost = 17500
+	on_success = {
+		hidden_effect = {
+			change_variable = {
+				which = BA_tradition_count
+				value = 1
+			}
+			set_country_flag = BA_Blue_new_world_5
+			country_event = {
+				id = BA_ape.2002
+			}
+			country_event = {
+				id = BA_ape.2007
+			}
+			country_event = {
+				id = BA_ape.2009
+				days = 30
+			}
+		}
+	}
+}
+
+#碧蓝色的新世界
+special_project = {
+	key = "BA_Blue_new_world"
+	event_chain = BA_Kivotos_chronicle_chain
+	event_scope = country_event
+	tech_department = society_technology
+	cost = 20000
+	on_success = {
+		hidden_effect = {
+			change_variable = {
+				which = BA_tradition_count
+				value = 1
+			}
+			set_country_flag = BA_Blue_new_world_6
+			country_event = {
+				id = BA_ape.2002
+			}
+			country_event = {
+				id = BA_ape.2008
+			}
+			country_event = {
+				id = BA_ape.2009
+				days = 30
+			}
+		}
+	}
+}
+
+#编年史的尾声
+special_project = {
+	key = "BA_End_of_chronicle"
+	event_chain = BA_Kivotos_chronicle_chain
+	event_scope = country_event
+	days_to_research = 1080
+	on_success = {
+		hidden_effect = {
+			set_country_flag = BA_Blue_new_world_7
+			country_event = {
+				id = BA_ape.2010
+			}
+		}
+	}
+}
+
+##### 学园理念 #####
+special_project = {
+	key = "SP_BA_SI_Gehenna_C02"
+	event_scope = country_event
+	tech_department = society_technology
+	cost = {
+		base = 3500
+		scaled_modifier = {
+			add = 100
+			scope = THIS
+			calc = pop_count
+		}
+	}
+	on_success = {
+		add_modifier = {
+			modifier = modifier_BA_SI_Gehenna_C02
+		}
+	}
+}

@@ -1,0 +1,25 @@
+entity = {
+	name = "Psycho_Pass_Dominator_entity"
+	pdxmesh = "Psycho_Pass_Dominator_mesh"
+}
+entity = {
+	name = "Psycho_Pass_Dominator_EX_entity"
+	pdxmesh = "Psycho_Pass_Dominator_EX_mesh"
+}
+
+entity = {
+	name = "Psycho_Pass_Dominator_turret_base_entity"
+	pdxmesh = "turret_base_M_SLOT_mesh"
+	attach = {
+		gun_locator = "Psycho_Pass_Dominator_entity"
+	}
+	scale = 0.7
+}
+entity = {
+	name = "Psycho_Pass_Dominator_EX_turret_base_entity"
+	pdxmesh = "turret_base_M_SLOT_mesh"
+	attach = {
+		gun_locator = "Psycho_Pass_Dominator_EX_entity"
+	}
+	scale = 0.7
+}

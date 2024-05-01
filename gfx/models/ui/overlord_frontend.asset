@@ -1,0 +1,38 @@
+entity = {
+	name = "frontend_background_entity"
+	
+	locator = { name = "loc" position = { 0.0 0.0 0.0 } } #position = { 0.0 0.025 0.0 }
+	
+	attach = { loc = "overlord_frontend_attached_entity" }
+	
+}
+
+entity = {
+	name = "overlord_frontend_attached_entity"
+	pdxmesh = "firstcontact_frontend_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "idle" animation_speed = 2.5
+		start_event = { node = "root" particle = "fc_01_front_end_fog" keep_particle = yes trigger_once = yes }
+	#	start_event = { node = "stars_locator_01" particle = "apocalypse_frontend_stars_effect" keep_particle = yes trigger_once = yes }
+	#	start_event = { node = "stars_locator_02" particle = "apocalypse_frontend_stars_effect" keep_particle = yes trigger_once = yes }
+	#	start_event = { node = "ship_light_locator_01" particle = "nemesis_frontend_ship_light_effect" keep_particle = yes trigger_once = yes }
+#		start_event = { node = "ship_light_locator_02" particle = "apocalypse_frontend_ship_light_effect" keep_particle = yes trigger_once = yes }
+	#	start_event = { node = "ship_light_locator_03" particle = "nemesis_frontend_station_light_effect" keep_particle = yes trigger_once = yes }
+#		start_event = { node = "ship_light_locator_04" particle = "apocalypse_frontend_ship_light_effect" keep_particle = yes trigger_once = yes }
+	#	start_event = { node = "background" particle = "nemesis_frontend_gas_outburst_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	#position = { x= 5 y = 0 }
+	
+	scale = 1
+	
+	
+}
+
+
+
+animation = {
+	name = "overlord_frontend_idle_animation"
+	file = "firstcontact_frontend_idle.anim"
+}

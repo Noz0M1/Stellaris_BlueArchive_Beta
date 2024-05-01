@@ -1,0 +1,338 @@
+utility_component_template = {
+	key = "BA_AURA_HEAVY_ARMOR"
+	size = aux
+	icon = "GFX_ship_part_ba_aura_heavy_armor"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+	}
+	component_set = "BA_AURA_HEAVY_ARMOR"
+	hostile_aura = {
+		name = "aura_heavy_armor"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = aura_heavy_armor
+			priority = 40
+		}
+		modifier = {
+			weapon_type_mystic_weapon_damage_mult = -0.2
+			weapon_type_mystic_weapon_fire_rate_mult = -0.2
+			weapon_type_penetration_weapon_damage_mult = 0.2
+			weapon_type_penetration_weapon_fire_rate_mult = 0.2
+			weapon_type_explosion_weapon_damage_mult = 0
+			weapon_type_explosion_weapon_fire_rate_mult = 0
+			weapon_type_destruction_weapon_damage_mult = -0.2
+			weapon_type_destruction_weapon_fire_rate_mult = -0.2
+			#
+			weapon_type_energy_weapon_damage_mult = -0.1
+			weapon_type_energy_weapon_fire_rate_mult = -0.1
+			weapon_type_kinetic_weapon_damage_mult = 0.1
+			weapon_type_kinetic_weapon_fire_rate_mult = 0.1
+			weapon_type_explosive_weapon_damage_mult = 0
+			weapon_type_explosive_weapon_fire_rate_mult = 0
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	ship_limit = 1
+	blocked_by = {
+		BA_AURA_LIGHT_ARMOR
+		BA_AURA_SPECIAL_ARMOR
+		BA_AURA_STRUCTURE
+		BA_AURA_ARMOR_TYPE
+		BA_STATION_AURA_STRUCTURE
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "BA_AURA_LIGHT_ARMOR"
+	size = aux
+	icon = "GFX_ship_part_ba_aura_light_armor"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+	}
+	component_set = "BA_AURA_LIGHT_ARMOR"
+	hostile_aura = {
+		name = "aura_light_armor"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = aura_light_armor
+			priority = 40
+		}
+		modifier = {
+			weapon_type_mystic_weapon_damage_mult = 0
+			weapon_type_mystic_weapon_fire_rate_mult = 0
+			weapon_type_penetration_weapon_damage_mult = -0.2
+			weapon_type_penetration_weapon_fire_rate_mult = -0.2
+			weapon_type_explosion_weapon_damage_mult = 0.2
+			weapon_type_explosion_weapon_fire_rate_mult = 0.2
+			weapon_type_destruction_weapon_damage_mult = -0.2
+			weapon_type_destruction_weapon_fire_rate_mult = -0.2
+			#
+			weapon_type_energy_weapon_damage_mult = 0
+			weapon_type_energy_weapon_fire_rate_mult = 0
+			weapon_type_kinetic_weapon_damage_mult = -0.1
+			weapon_type_kinetic_weapon_fire_rate_mult = -0.1
+			weapon_type_explosive_weapon_damage_mult = 0.1
+			weapon_type_explosive_weapon_fire_rate_mult = 0.1
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	ship_limit = 1
+	blocked_by = {
+		BA_AURA_HEAVY_ARMOR
+		BA_AURA_SPECIAL_ARMOR
+		BA_AURA_STRUCTURE
+		BA_AURA_ARMOR_TYPE
+		BA_STATION_AURA_STRUCTURE
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "BA_AURA_SPECIAL_ARMOR"
+	size = aux
+	icon = "GFX_ship_part_ba_aura_special_armor"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+	}
+	component_set = "BA_AURA_SPECIAL_ARMOR"
+	hostile_aura = {
+		name = "aura_special_armor"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = aura_special_armor
+			priority = 40
+		}
+		modifier = {
+			weapon_type_mystic_weapon_damage_mult = 0.2
+			weapon_type_mystic_weapon_fire_rate_mult = 0.2
+			weapon_type_penetration_weapon_damage_mult = 0
+			weapon_type_penetration_weapon_fire_rate_mult = 0
+			weapon_type_explosion_weapon_damage_mult = -0.2
+			weapon_type_explosion_weapon_fire_rate_mult = -0.2
+			weapon_type_destruction_weapon_damage_mult = -0.2
+			weapon_type_destruction_weapon_fire_rate_mult = -0.2
+			#
+			weapon_type_energy_weapon_damage_mult = 0.1
+			weapon_type_energy_weapon_fire_rate_mult = 0.1
+			weapon_type_kinetic_weapon_damage_mult = 0
+			weapon_type_kinetic_weapon_fire_rate_mult = 0
+			weapon_type_explosive_weapon_damage_mult = -0.1
+			weapon_type_explosive_weapon_fire_rate_mult = -0.1
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	ship_limit = 1
+	blocked_by = {
+		BA_AURA_HEAVY_ARMOR
+		BA_AURA_LIGHT_ARMOR
+		BA_AURA_STRUCTURE
+		BA_AURA_ARMOR_TYPE
+		BA_STATION_AURA_STRUCTURE
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "BA_AURA_STRUCTURE"
+	size = aux
+	icon = "GFX_ship_part_ba_aura_structure"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+	}
+	component_set = "BA_AURA_STRUCTURE"
+	hostile_aura = {
+		name = "aura_structure"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = aura_structure
+			priority = 40
+		}
+		modifier = {
+			weapon_type_mystic_weapon_damage_mult = -0.25
+			weapon_type_mystic_weapon_fire_rate_mult = -0.25
+			weapon_type_penetration_weapon_damage_mult = -0.25
+			weapon_type_penetration_weapon_fire_rate_mult = -0.25
+			weapon_type_explosion_weapon_damage_mult = -0.25
+			weapon_type_explosion_weapon_fire_rate_mult = -0.25
+			weapon_type_destruction_weapon_damage_mult = 0.3
+			weapon_type_destruction_weapon_fire_rate_mult = 0.3
+			#
+			weapon_type_energy_weapon_damage_mult = -0.25
+			weapon_type_energy_weapon_fire_rate_mult = -0.25
+			weapon_type_kinetic_weapon_damage_mult = -0.25
+			weapon_type_kinetic_weapon_fire_rate_mult = -0.25
+			weapon_type_explosive_weapon_damage_mult = -0.25
+			weapon_type_explosive_weapon_fire_rate_mult = -0.25
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	ship_limit = 1
+	blocked_by = {
+		BA_AURA_HEAVY_ARMOR
+		BA_AURA_LIGHT_ARMOR
+		BA_AURA_SPECIAL_ARMOR
+		BA_AURA_ARMOR_TYPE
+		BA_STATION_AURA_STRUCTURE
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "BA_STATION_AURA_STRUCTURE"
+	size = aux
+	icon = "GFX_ship_part_ba_aura_structure"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+	}
+	component_set = "BA_STATION_AURA_STRUCTURE"
+	hostile_aura = {
+		name = "aura_structure_station"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = aura_structure_station
+			priority = 40
+		}
+		modifier = {
+			weapon_type_mystic_weapon_damage_mult = -0.25
+			weapon_type_mystic_weapon_fire_rate_mult = -0.25
+			weapon_type_penetration_weapon_damage_mult = -0.25
+			weapon_type_penetration_weapon_fire_rate_mult = -0.25
+			weapon_type_explosion_weapon_damage_mult = -0.25
+			weapon_type_explosion_weapon_fire_rate_mult = -0.25
+			weapon_type_destruction_weapon_damage_mult = 0.3
+			weapon_type_destruction_weapon_fire_rate_mult = 0.3
+			#
+			weapon_type_energy_weapon_damage_mult = -0.25
+			weapon_type_energy_weapon_fire_rate_mult = -0.25
+			weapon_type_kinetic_weapon_damage_mult = -0.25
+			weapon_type_kinetic_weapon_fire_rate_mult = -0.25
+			weapon_type_explosive_weapon_damage_mult = -0.25
+			weapon_type_explosive_weapon_fire_rate_mult = -0.25
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	ship_limit = 1
+	blocked_by = {
+		BA_AURA_HEAVY_ARMOR
+		BA_AURA_LIGHT_ARMOR
+		BA_AURA_SPECIAL_ARMOR
+		BA_AURA_STRUCTURE
+		BA_AURA_ARMOR_TYPE
+	}
+	class_restriction = {
+		shipclass_starbase
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "BA_AURA_ARMOR_TYPE"
+	size = aux
+	icon = "GFX_ship_part_armor_type"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+	}
+	component_set = "BA_AURA_ARMOR_TYPE"
+	ship_limit = 1
+	blocked_by = {
+		BA_AURA_HEAVY_ARMOR
+		BA_AURA_LIGHT_ARMOR
+		BA_AURA_SPECIAL_ARMOR
+		BA_AURA_STRUCTURE
+		BA_STATION_AURA_STRUCTURE
+	}
+	ai_weight = {
+		weight = 0
+	}
+}

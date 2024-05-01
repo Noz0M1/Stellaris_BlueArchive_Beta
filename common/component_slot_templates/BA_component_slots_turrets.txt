@@ -1,0 +1,136 @@
+point_defence_turret = {
+	size = point_defence
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "turret_point_defence_entity"
+		weapon_type_energy = "turret_point_defence_entity"
+		weapon_type_explosive = "turret_point_defence_entity"
+
+		weapon_type_penetration = "turret_point_defence_entity"
+		weapon_type_mystic = "turret_point_defence_entity"
+		weapon_type_explosion = "turret_point_defence_entity"
+		weapon_type_destruction = "turret_point_defence_entity"
+	}
+}
+
+invisible_point_defence_turret = {
+	size = point_defence
+	component = weapon
+}
+
+small_turret = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "small_kinetic_gun_entity"
+		weapon_type_energy = "small_laser_gun_entity"
+		weapon_type_explosive = "turret_missile_small_entity"
+
+		weapon_type_penetration = "small_kinetic_gun_entity"
+		weapon_type_mystic = "small_laser_gun_entity"
+		weapon_type_explosion = "turret_missile_small_entity"
+		weapon_type_destruction = "small_kinetic_gun_entity"
+	}
+}
+
+invisible_small_turret = {
+	size = small
+	component = weapon
+}
+
+medium_turret = {
+	size = medium
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "medium_kinetic_gun_entity"
+		weapon_type_energy = "medium_laser_gun_entity"
+		weapon_type_explosive = "turret_missile_medium_entity"
+
+		weapon_type_penetration = "medium_kinetic_gun_entity"
+		weapon_type_mystic = "medium_laser_gun_entity"
+		weapon_type_explosion = "turret_missile_medium_entity"
+		weapon_type_destruction = "medium_kinetic_gun_entity"
+	}
+}
+
+invisible_medium_turret = {
+	size = medium
+	component = weapon
+}
+
+large_turret = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "large_kinetic_gun_entity"
+		weapon_type_energy = "large_laser_gun_entity"
+		weapon_type_explosive = "turret_missile_large_entity"
+
+		weapon_type_penetration = "large_kinetic_gun_entity"
+		weapon_type_mystic = "large_laser_gun_entity"
+		weapon_type_explosion = "turret_missile_large_entity"
+		weapon_type_destruction = "large_kinetic_gun_entity"
+	}
+}
+
+invisible_large_turret = {
+	size = large
+	component = weapon
+}
+
+extra_large_turret = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "turret_xl_entity"
+		weapon_type_energy = "turret_xl_entity"
+		weapon_type_explosive = "turret_xl_entity"
+
+		weapon_type_penetration = "turret_xl_entity"
+		weapon_type_mystic = "turret_xl_entity"
+		weapon_type_explosion = "turret_xl_entity"
+		weapon_type_destruction = "turret_xl_entity"
+	}
+}
+
+invisible_titanic_turret = {
+	size = titanic
+	component = weapon
+}
+
+invisible_missile_turret = {
+	size = torpedo
+	component = weapon
+}
+
+medium_missile_turret = {
+	size = torpedo
+	component = weapon
+	entities = {
+		weapon_type_explosive = "turret_missile_medium_entity"
+		weapon_type_kinetic = "medium_kinetic_gun_entity" # Failsafe for saved "invalid designs"
+		weapon_type_energy = "medium_laser_gun_entity" # Failsafe for saved "invalid designs"
+
+
+		weapon_type_penetration = "medium_kinetic_gun_entity"
+		weapon_type_mystic = "medium_laser_gun_entity"
+		weapon_type_explosion = "turret_missile_medium_entity"
+		weapon_type_destruction = "medium_kinetic_gun_entity"
+
+	}
+}
+
+large_missile_turret = {
+	size = torpedo
+	component = weapon
+	entities = {
+		weapon_type_explosive = "turret_missile_large_entity"
+		weapon_type_kinetic = "large_kinetic_gun_entity" # Failsafe for saved "invalid designs"
+		weapon_type_energy = "large_laser_gun_entity" # Failsafe for saved "invalid designs"
+
+		weapon_type_penetration = "large_kinetic_gun_entity"
+		weapon_type_mystic = "large_laser_gun_entity"
+		weapon_type_explosion = "turret_missile_large_entity"
+		weapon_type_destruction = "large_kinetic_gun_entity"
+	}
+}

@@ -1,0 +1,278 @@
+button_effect_BA_angel_24_goods = {
+    allow = {
+        always = yes
+    }
+    potential = {
+        always = yes
+    }
+    effect = {
+        hidden_effect = {
+            from = {
+                country_event = {
+                    id = BA_Shittem.1011
+                }
+            }
+        }
+    }
+}
+
+button_effect_BA_angel_24_technology = {
+    allow = {
+        always = yes
+    }
+    potential = {
+        always = yes
+    }
+    effect = {
+        hidden_effect = {
+            from = {
+                country_event = {
+                    id = BA_Shittem.1012
+                }
+            }
+        }
+    }
+}
+
+###
+BA_Angel24_11_button = {
+    potential = {
+        always = yes
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = COOLDOWN
+            NOT = {
+                has_country_flag = BA_Angel24_consumer_goods_cooldown
+            }
+        }
+    }
+    effect = {
+        custom_tooltip = angel24_pyroxenes_tip1
+        from = {
+            add_resource = {
+                sr_pyroxenes = -1
+                consumer_goods = 6
+                multiplier = BA_Angel24_resource_cost
+            }
+            hidden_effect = {
+                set_timed_country_flag = {
+                    flag = BA_Angel24_consumer_goods_cooldown
+                    days = 30
+                }
+            }
+
+        }
+    }
+}
+
+BA_Angel24_12_button = {
+    potential = {
+        always = yes
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = COOLDOWN
+            NOT = {
+                has_country_flag = BA_Angel24_volatile_motes_cooldown
+            }
+        }
+    }
+    effect = {
+        custom_tooltip = angel24_pyroxenes_tip2
+        from = {
+            add_resource = {
+                sr_pyroxenes = -1
+                volatile_motes = 1
+                multiplier = BA_Angel24_resource_rare_cost
+            }
+            hidden_effect = {
+                set_timed_country_flag = {
+                    flag = BA_Angel24_volatile_motes_cooldown
+                    days = 30
+                }
+            }
+        }
+    }
+}
+
+BA_Angel24_13_button = {
+    potential = {
+        always = yes
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = COOLDOWN
+            NOT = {
+                has_country_flag = BA_Angel24_exotic_gases_cooldown
+            }
+        }
+    }
+    effect = {
+        custom_tooltip = angel24_pyroxenes_tip2
+        from = {
+            add_resource = {
+                sr_pyroxenes = -1
+                exotic_gases = 1
+                multiplier = BA_Angel24_resource_rare_cost
+            }
+            hidden_effect = {
+                set_timed_country_flag = {
+                    flag = BA_Angel24_exotic_gases_cooldown
+                    days = 30
+                }
+            }
+        }
+    }
+}
+
+BA_Angel24_14_button = {
+    potential = {
+        always = yes
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = COOLDOWN
+            NOT = {
+                has_country_flag = BA_Angel24_rare_crystals_cooldown
+            }
+        }
+    }
+    effect = {
+        custom_tooltip = angel24_pyroxenes_tip2
+        from = {
+            add_resource = {
+                sr_pyroxenes = -1
+                rare_crystals = 1
+                multiplier = BA_Angel24_resource_rare_cost
+            }
+            hidden_effect = {
+                set_timed_country_flag = {
+                    flag = BA_Angel24_rare_crystals_cooldown
+                    days = 30
+                }
+            }
+        }
+    }
+}
+
+BA_Angel24_21_button = {
+    potential = {
+        always = yes
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = COOLDOWN
+            NOT = {
+                has_country_flag = BA_Angel24_alloys_cooldown
+            }
+        }
+    }
+    effect = {
+        custom_tooltip = angel24_pyroxenes_tip1
+        from = {
+            add_resource = {
+                sr_pyroxenes = -1
+                alloys = 3
+                multiplier = BA_Angel24_resource_cost
+            }
+            hidden_effect = {
+                set_timed_country_flag = {
+                    flag = BA_Angel24_alloys_cooldown
+                    days = 30
+                }
+            }
+
+        }
+    }
+}
+
+BA_Angel24_22_button = {
+    potential = {
+        always = yes
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = COOLDOWN
+            NOT = {
+                has_country_flag = BA_Angel24_physics_research_cooldown
+            }
+        }
+    }
+    effect = {
+        custom_tooltip = angel24_pyroxenes_tip3
+        from = {
+            add_resource = {
+                sr_pyroxenes = -1
+                physics_research = 36
+                multiplier = BA_Angel24_resource_tech_cost
+            }
+            hidden_effect = {
+                set_timed_country_flag = {
+                    flag = BA_Angel24_physics_research_cooldown
+                    days = 30
+                }
+            }
+        }
+    }
+}
+
+BA_Angel24_23_button = {
+    potential = {
+        always = yes
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = COOLDOWN
+            NOT = {
+                has_country_flag = BA_Angel24_society_research_cooldown
+            }
+        }
+    }
+    effect = {
+        custom_tooltip = angel24_pyroxenes_tip3
+        from = {
+            add_resource = {
+                sr_pyroxenes = -1
+                society_research = 36
+                multiplier = BA_Angel24_resource_tech_cost
+            }
+            hidden_effect = {
+                set_timed_country_flag = {
+                    flag = BA_Angel24_society_research_cooldown
+                    days = 30
+                }
+            }
+        }
+    }
+}
+
+BA_Angel24_24_button = {
+    potential = {
+        always = yes
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = COOLDOWN
+            NOT = {
+                has_country_flag = BA_Angel24_engineering_research_cooldown
+            }
+        }
+    }
+    effect = {
+        custom_tooltip = angel24_pyroxenes_tip3
+        from = {
+            add_resource = {
+                sr_pyroxenes = -1
+                engineering_research = 36
+                multiplier = BA_Angel24_resource_tech_cost
+            }
+            hidden_effect = {
+                set_timed_country_flag = {
+                    flag = BA_Angel24_engineering_research_cooldown
+                    days = 30
+                }
+            }
+        }
+    }
+}

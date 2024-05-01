@@ -1,0 +1,230 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Ichika_Warhammer_mesh"
+		file = "gfx/models/ships/IchikaWarhammer_40K/Ichika_Warhammer.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Ichika_Body_1Shape"
+			index = 0
+			texture_diffuse = "sm_armour_mp_dlc2_set1_legl_difout.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Ichika_Body_1Shape"
+			index = 1
+			texture_diffuse = "sm_armour_mp_dlc2_set1_shldrr_difout.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Ichika_Body_1Shape"
+			index = 2
+			texture_diffuse = "sm_armour_mp_dlc2_set1_arml_difout.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Ichika_Body_1Shape"
+			index = 3
+			texture_diffuse = "sm_armour_mp_dlc2_set1_shldrl_spcout.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Ichika_Body_1Shape"
+			index = 4
+			texture_diffuse = "sm_armour_mp_dlc2_set1_torso_difout.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Ichika_Body_1Shape"
+			index = 5
+			texture_diffuse = "sm_armour_mp_dlc2_set1_legr_difout.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Ichika_Body_1Shape"
+			index = 6
+			texture_diffuse = "sm_armour_mp_dlc2_set1_armr_difout.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Ichika_Body_1Shape"
+			index = 7
+			texture_diffuse = "sm_armour_mp_dlc2_set1_bp_difout.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Ichika_Body_2Shape"
+			index = 0
+			texture_diffuse = "CH0071_Body.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Ichika_HeadShape"
+			index = 0
+			texture_diffuse = "Character_Mouth.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "Ichika_HeadShape"
+			index = 1
+			texture_diffuse = "CH0071_Face.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Ichika_HeadShape"
+			index = 2
+			texture_diffuse = "CH0071_Halo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "Ichika_HeadShape"
+			index = 3
+			texture_diffuse = "CH0071_Hair.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Ichika_HeadShape"
+			index = 4
+			texture_diffuse = "CH0071_EyeMouth.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "ZakoChan_Warhammer_mesh"
+		file = "gfx/models/ships/IchikaWarhammer_40K/ZakoChan_Warhammer.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Zayu_HeadShape"
+			index = 0
+			texture_diffuse = "CH0071_Halo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "Zayu_HeadShape"
+			index = 1
+			texture_diffuse = "NP0144.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Zayu_HeadShape"
+			index = 2
+			texture_diffuse = "Character_Mouth.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "Zayu_BodyShape"
+			index = 0
+			texture_diffuse = "sm_armour_mp_dlc2_set1_shldrr_difout.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Zayu_BodyShape"
+			index = 1
+			texture_diffuse = "sm_armour_mp_dlc2_set1_arml_difout.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Zayu_BodyShape"
+			index = 2
+			texture_diffuse = "sm_armour_mp_dlc2_set1_shldrl_spcout.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Zayu_BodyShape"
+			index = 3
+			texture_diffuse = "sm_armour_mp_dlc2_set1_torso_difout.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Zayu_BodyShape"
+			index = 4
+			texture_diffuse = "sm_armour_mp_dlc2_set1_legr_difout.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Zayu_BodyShape"
+			index = 5
+			texture_diffuse = "sm_armour_mp_dlc2_set1_armr_difout.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Zayu_BodyShape"
+			index = 6
+			texture_diffuse = "sm_armour_mp_dlc2_set1_bp_difout.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Zayu_BodyShape"
+			index = 7
+			texture_diffuse = "sm_armour_mp_dlc2_set1_legl_difout.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

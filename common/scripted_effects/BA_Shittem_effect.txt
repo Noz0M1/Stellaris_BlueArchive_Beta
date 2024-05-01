@@ -1,0 +1,968 @@
+####   UI
+#获取资源数量 country scope
+BA_Shittem_get_stockpile = {
+	#### 初始化
+	remove_country_flag = BA_negative_pyroxenes
+	remove_country_flag = BA_negative_keystone
+	#存量
+	set_variable = {
+		which = BA_var_stockpile_pyroxenes
+		value = 0
+	}
+	set_variable = {
+		which = BA_var_stockpile_keystone
+		value = 0
+	}
+	set_variable = {
+		which = BA_var_stockpile_energy
+		value = 0
+	}
+	#月度
+	set_variable = {
+		which = BA_var_income_pyroxenes
+		value = 0
+	}
+	set_variable = {
+		which = BA_var_income_keystone
+		value = 0
+	}
+	#### 载入
+	#存量
+	export_resource_stockpile_to_variable = {
+		resource = sr_pyroxenes
+		variable = BA_var_stockpile_pyroxenes
+	}
+	export_resource_stockpile_to_variable = {
+		resource = sr_keystone
+		variable = BA_var_stockpile_keystone
+	}
+	export_resource_stockpile_to_variable = {
+		resource = sr_eligma
+		variable = BA_var_stockpile_energy
+	}
+	#月度
+	export_resource_income_to_variable = {
+		resource = sr_pyroxenes
+		variable = BA_var_income_pyroxenes
+	}
+	export_resource_income_to_variable = {
+		resource = sr_keystone
+		variable = BA_var_income_keystone
+	}
+	#### 设置
+	if = {
+		limit = {
+			check_variable = {
+				which = BA_var_income_pyroxenes
+				value < 0
+			}
+		}
+		set_country_flag = BA_negative_pyroxenes
+		multiply_variable = {
+			which = BA_var_income_pyroxenes
+			value = -1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = BA_var_income_keystone
+				value < 0
+			}
+		}
+		set_country_flag = BA_negative_keystone
+		multiply_variable = {
+			which = BA_var_income_keystone
+			value = -1
+		}
+	}
+}
+
+####   社团
+#社团容量相关 country scope
+BA_club_cap_add = {
+	change_variable = {
+		which = BA_Club_limit
+		value = 1
+	}
+	BA_club_cap_recount = yes
+	BA_club_set_modifier = yes
+}
+
+BA_club_cap_use = {
+	change_variable = {
+		which = BA_Club_count
+		value = 1
+	}
+	BA_club_cap_recount = yes
+	BA_club_set_modifier = yes
+}
+
+BA_club_cap_recount = {
+	set_variable = {
+		which = BA_Club_check
+		value = BA_Club_limit
+	}
+	subtract_variable = {
+		which = BA_Club_check
+		value = BA_Club_count
+	}
+}
+
+BA_club_resource_recount = {
+	set_variable = {
+		which = BA_club_cap_consumer_goods_cost
+		value = BA_Club_limit
+	}
+	multiply_variable = {
+		which = BA_club_cap_consumer_goods_cost
+		value = 500
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = BA_Club_limit
+				value < 3
+			}
+		}
+		set_variable = {
+			which = BA_club_cap_pyroxenes_cost
+			value = 0
+		}
+	}
+	else = {
+		set_variable = {
+			which = BA_club_cap_pyroxenes_cost
+			value = BA_Club_limit
+		}
+		subtract_variable = {
+			which = BA_club_cap_pyroxenes_cost
+			value = 2
+		}
+		multiply_variable = {
+			which = BA_club_cap_pyroxenes_cost
+			value = 100
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = BA_Club_limit
+				value < 7
+			}
+		}
+		set_variable = {
+			which = BA_club_cap_keystone_cost
+			value = 0
+		}
+	}
+	else = {
+		set_variable = {
+			which = BA_club_cap_keystone_cost
+			value = BA_Club_limit
+		}
+		subtract_variable = {
+			which = BA_club_cap_keystone_cost
+			value = 6
+		}
+		multiply_variable = {
+			which = BA_club_cap_keystone_cost
+			value = 300
+		}
+	}
+}
+
+BA_club_set_modifier = {
+	if = {
+		limit = {
+			check_variable = {
+				which = BA_Club_check
+				value >= 0
+			}
+		}
+		remove_modifier = modifier_BA_club_overload_1
+		remove_modifier = modifier_BA_club_overload_2
+		remove_modifier = modifier_BA_club_overload_3
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = BA_Club_check
+				value >= -1
+			}
+		}
+		add_modifier = {
+			modifier = modifier_BA_club_overload_1
+		}
+		remove_modifier = modifier_BA_club_overload_2
+		remove_modifier = modifier_BA_club_overload_3
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = BA_Club_check
+				value >= -2
+			}
+		}
+		remove_modifier = modifier_BA_club_overload_1
+		add_modifier = {
+			modifier = modifier_BA_club_overload_2
+		}
+		remove_modifier = modifier_BA_club_overload_3
+	}
+	else = {
+		remove_modifier = modifier_BA_club_overload_1
+		remove_modifier = modifier_BA_club_overload_2
+		add_modifier = {
+			modifier = modifier_BA_club_overload_3
+		}
+	}
+}
+
+#清点赞助情况
+BA_club_check_sponse = {
+	set_variable = {
+		which = BA_club_to_sponse
+		value = 0
+	}
+	# TODO：随社团更新
+	if = {
+		limit = {
+			has_country_flag = BA_Game_development_department
+			NOT = {
+				has_country_flag = BA_club_Game_development_department_sponsoring
+			}
+		}
+		change_variable = {
+			which = BA_club_to_sponse
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Engineering_club
+			NOT = {
+				has_country_flag = BA_club_Engineering_club_sponsoring
+			}
+		}
+		change_variable = {
+			which = BA_club_to_sponse
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Veritas
+			NOT = {
+				has_country_flag = BA_club_Veritas_sponsoring
+			}
+		}
+		change_variable = {
+			which = BA_club_to_sponse
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Foreclosure_task_force
+			NOT = {
+				has_country_flag = BA_club_Foreclosure_task_force_sponsoring
+			}
+		}
+		change_variable = {
+			which = BA_club_to_sponse
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Teaparty
+			NOT = {
+				has_country_flag = BA_club_Teaparty_sponsoring
+			}
+		}
+		change_variable = {
+			which = BA_club_to_sponse
+			value = 1
+		}
+	}
+	#
+	set_variable = {
+		which = BA_club_sponse_cost
+		value = BA_club_to_sponse
+	}
+	multiply_variable = {
+		which = BA_club_sponse_cost
+		value = 1600
+	}
+}
+
+#清点部室情况
+BA_club_check_room = {
+	set_variable = {
+		which = BA_club_room_to_unlock
+		value = 0
+	}
+	###
+	# TODO：随社团更新
+	#Game_development_department
+	if = {
+		limit = {
+			has_country_flag = BA_Game_development_department
+			NOT = {
+				has_country_flag = allow_Game_development_department
+			}
+			check_variable = {
+				which = Game_development_department
+				value >= 60
+			}
+		}
+		change_variable = {
+			which = BA_club_room_to_unlock
+			value = 1
+		}
+	}
+	#Engineering_club
+	if = {
+		limit = {
+			has_country_flag = BA_Engineering_club
+			NOT = {
+				has_country_flag = allow_Engineering_club
+			}
+			check_variable = {
+				which = Engineering_club
+				value >= 60
+			}
+		}
+		change_variable = {
+			which = BA_club_room_to_unlock
+			value = 1
+		}
+	}
+	#Veritas
+	if = {
+		limit = {
+			has_country_flag = BA_Veritas
+			NOT = {
+				has_country_flag = allow_Veritas
+			}
+			check_variable = {
+				which = Veritas
+				value >= 60
+			}
+		}
+		change_variable = {
+			which = BA_club_room_to_unlock
+			value = 1
+		}
+	}
+	#Foreclosure_task_force
+	if = {
+		limit = {
+			has_country_flag = BA_Foreclosure_task_force
+			NOT = {
+				has_country_flag = allow_Foreclosure_task_force
+			}
+			check_variable = {
+				which = Foreclosure_task_force
+				value >= 60
+			}
+		}
+		change_variable = {
+			which = BA_club_room_to_unlock
+			value = 1
+		}
+	}
+	#Teaparty
+	if = {
+		limit = {
+			has_country_flag = BA_Teaparty
+			NOT = {
+				has_country_flag = allow_Teaparty
+			}
+			check_variable = {
+				which = Teaparty
+				value >= 60
+			}
+		}
+		change_variable = {
+			which = BA_club_room_to_unlock
+			value = 1
+		}
+	}
+	###
+	set_variable = {
+		which = BA_club_room_unlock_cost
+		value = BA_club_room_to_unlock
+	}
+	multiply_variable = {
+		which = BA_club_room_unlock_cost
+		value = 200
+	}
+}
+
+#赞助所有社团
+BA_club_sponse_all = {
+	# TODO：随社团更新
+	if = {
+		limit = {
+			has_country_flag = BA_Game_development_department
+			NOT = {
+				has_country_flag = BA_club_Game_development_department_sponsoring
+			}
+		}
+		set_timed_country_flag = {
+			flag = BA_club_Game_development_department_sponsoring
+			days = 360
+		}
+		change_variable = {
+			which = Game_development_department
+			value = 20
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Engineering_club
+			NOT = {
+				has_country_flag = BA_club_Engineering_club_sponsoring
+			}
+		}
+		set_timed_country_flag = {
+			flag = BA_club_Engineering_club_sponsoring
+			days = 360
+		}
+		change_variable = {
+			which = Engineering_club
+			value = 20
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Veritas
+			NOT = {
+				has_country_flag = BA_club_Veritas_sponsoring
+			}
+		}
+		set_timed_country_flag = {
+			flag = BA_club_Veritas_sponsoring
+			days = 360
+		}
+		change_variable = {
+			which = Veritas
+			value = 20
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Foreclosure_task_force
+			NOT = {
+				has_country_flag = BA_club_Foreclosure_task_force_sponsoring
+			}
+		}
+		set_timed_country_flag = {
+			flag = BA_club_Foreclosure_task_force_sponsoring
+			days = 360
+		}
+		change_variable = {
+			which = Foreclosure_task_force
+			value = 20
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Teaparty
+			NOT = {
+				has_country_flag = BA_club_Teaparty_sponsoring
+			}
+		}
+		set_timed_country_flag = {
+			flag = BA_club_Teaparty_sponsoring
+			days = 360
+		}
+		change_variable = {
+			which = Teaparty
+			value = 20
+		}
+	}
+	set_variable = {
+		which = BA_club_to_sponse
+		value = 0
+	}
+}
+
+#解锁多个社团部室
+BA_club_room_all = {
+	# TODO：随社团更新
+	if = {
+		limit = {
+			has_country_flag = BA_Game_development_department
+			NOT = {
+				has_country_flag = allow_Game_development_department
+			}
+			check_variable = {
+				which = Game_development_department
+				value >= 60
+			}
+		}
+		set_country_flag = allow_Game_development_department
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Engineering_club
+			NOT = {
+				has_country_flag = allow_Engineering_club
+			}
+			check_variable = {
+				which = Engineering_club
+				value >= 60
+			}
+		}
+		set_country_flag = allow_Engineering_club
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Veritas
+			NOT = {
+				has_country_flag = allow_Veritas
+			}
+			check_variable = {
+				which = Veritas
+				value >= 60
+			}
+		}
+		set_country_flag = allow_Veritas
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Foreclosure_task_force
+			NOT = {
+				has_country_flag = allow_Foreclosure_task_force
+			}
+			check_variable = {
+				which = Foreclosure_task_force
+				value >= 60
+			}
+		}
+		set_country_flag = allow_Foreclosure_task_force
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Teaparty
+			NOT = {
+				has_country_flag = allow_Teaparty
+			}
+			check_variable = {
+				which = Teaparty
+				value >= 60
+			}
+		}
+		set_country_flag = allow_Teaparty
+	}
+	set_variable = {
+		which = BA_club_room_to_unlock
+		value = 0
+	}
+}
+
+#统计社团部室需增加量
+BA_club_room_limit_count = {
+	set_variable = {
+		which = BA_room_limit_to_add
+		value = 0
+	}
+	# TODO：随社团更新
+	###
+	if = {
+		limit = {
+			has_country_flag = allow_Game_development_department
+			check_variable = {
+				which = Add_room_limit_target
+				value > Game_development_department_room_limit
+			}
+		}
+		set_variable = {
+			which = BA_temp_A
+			value = Add_room_limit_target
+		}
+		subtract_variable = {
+			which = BA_temp_A
+			value = Game_development_department_room_limit
+		}
+		change_variable = {
+			which = BA_room_limit_to_add
+			value = BA_temp_A
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = allow_Engineering_club
+			check_variable = {
+				which = Add_room_limit_target
+				value > Engineering_club_room_limit
+			}
+		}
+		set_variable = {
+			which = BA_temp_A
+			value = Add_room_limit_target
+		}
+		subtract_variable = {
+			which = BA_temp_A
+			value = Engineering_club_room_limit
+		}
+		change_variable = {
+			which = BA_room_limit_to_add
+			value = BA_temp_A
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = allow_Veritas
+			check_variable = {
+				which = Add_room_limit_target
+				value > Veritas_room_limit
+			}
+		}
+		set_variable = {
+			which = BA_temp_A
+			value = Add_room_limit_target
+		}
+		subtract_variable = {
+			which = BA_temp_A
+			value = Veritas_room_limit
+		}
+		change_variable = {
+			which = BA_room_limit_to_add
+			value = BA_temp_A
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = allow_Foreclosure_task_force
+			check_variable = {
+				which = Add_room_limit_target
+				value > Foreclosure_task_force_room_limit
+			}
+		}
+		set_variable = {
+			which = BA_temp_A
+			value = Add_room_limit_target
+		}
+		subtract_variable = {
+			which = BA_temp_A
+			value = Foreclosure_task_force_room_limit
+		}
+		change_variable = {
+			which = BA_room_limit_to_add
+			value = BA_temp_A
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = allow_Teaparty
+			check_variable = {
+				which = Add_room_limit_target
+				value > Teaparty_room_limit
+			}
+		}
+		set_variable = {
+			which = BA_temp_A
+			value = Add_room_limit_target
+		}
+		subtract_variable = {
+			which = BA_temp_A
+			value = Teaparty_room_limit
+		}
+		change_variable = {
+			which = BA_room_limit_to_add
+			value = BA_temp_A
+		}
+	}
+}
+
+#增加社团部室上限
+BA_club_room_limit_add = {
+	# TODO：随社团更新
+	###
+	if = {
+		limit = {
+			has_country_flag = allow_Game_development_department
+			check_variable = {
+				which = Add_room_limit_target
+				value > Game_development_department_room_limit
+			}
+		}
+		set_variable = {
+			which = BA_temp_A
+			value = Add_room_limit_target
+		}
+		subtract_variable = {
+			which = BA_temp_A
+			value = Game_development_department_room_limit
+		}
+		change_variable = {
+			which = Game_development_department_room_limit
+			value = BA_temp_A
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = allow_Engineering_club
+			check_variable = {
+				which = Add_room_limit_target
+				value > Engineering_club_room_limit
+			}
+		}
+		set_variable = {
+			which = BA_temp_A
+			value = Add_room_limit_target
+		}
+		subtract_variable = {
+			which = BA_temp_A
+			value = Engineering_club_room_limit
+		}
+		change_variable = {
+			which = Engineering_club_room_limit
+			value = BA_temp_A
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = allow_Veritas
+			check_variable = {
+				which = Add_room_limit_target
+				value > Veritas_room_limit
+			}
+		}
+		set_variable = {
+			which = BA_temp_A
+			value = Add_room_limit_target
+		}
+		subtract_variable = {
+			which = BA_temp_A
+			value = Veritas_room_limit
+		}
+		change_variable = {
+			which = Veritas_room_limit
+			value = BA_temp_A
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = allow_Foreclosure_task_force
+			check_variable = {
+				which = Add_room_limit_target
+				value > Foreclosure_task_force_room_limit
+			}
+		}
+		set_variable = {
+			which = BA_temp_A
+			value = Add_room_limit_target
+		}
+		subtract_variable = {
+			which = BA_temp_A
+			value = Foreclosure_task_force_room_limit
+		}
+		change_variable = {
+			which = Foreclosure_task_force_room_limit
+			value = BA_temp_A
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = allow_Teaparty
+			check_variable = {
+				which = Add_room_limit_target
+				value > Teaparty_room_limit
+			}
+		}
+		set_variable = {
+			which = BA_temp_A
+			value = Add_room_limit_target
+		}
+		subtract_variable = {
+			which = BA_temp_A
+			value = Teaparty_room_limit
+		}
+		change_variable = {
+			which = Teaparty_room_limit
+			value = BA_temp_A
+		}
+	}
+}
+
+#工程部开发武器 country scope
+BA_Engineering_club_weapon_develop = {
+}
+
+BA_Engineering_club_weapon_develop_clear = {
+	# G
+	remove_country_flag = Engineering_club_HOSHINO_WEAPON
+	remove_country_flag = Engineering_club_HARUKA_WEAPON
+	remove_country_flag = Engineering_club_JURI_WEAPON
+	remove_country_flag = Engineering_club_SUMIRE_WEAPON
+	remove_country_flag = Engineering_club_EIMI_WEAPON
+	remove_country_flag = Engineering_club_TSURUGI_WEAPON
+	remove_country_flag = Engineering_club_MINE_WEAPON
+	remove_country_flag = Engineering_club_SHIZUKO_WEAPON
+	remove_country_flag = Engineering_club_MICHIRU_WEAPON
+	remove_country_flag = Engineering_club_REISA_WEAPON
+	remove_country_flag = Engineering_club_SENA_WEAPON
+	remove_country_flag = Engineering_club_MIKU_WEAPON
+	remove_country_flag = Engineering_club_YUZU_WEAPON
+	remove_country_flag = Engineering_club_SHIGURE_WEAPON
+	remove_country_flag = Engineering_club_CHISE_WEAPON
+	remove_country_flag = Engineering_club_MISAKI_WEAPON
+	# L
+	remove_country_flag = Engineering_club_NONOMI_WEAPON
+	remove_country_flag = Engineering_club_HINA_WEAPON
+	remove_country_flag = Engineering_club_MUTSUKI_WEAPON
+	remove_country_flag = Engineering_club_IZUMI_WEAPON
+	remove_country_flag = Engineering_club_MAKI_WEAPON
+	remove_country_flag = Engineering_club_KOYUKI_WEAPON
+	remove_country_flag = Engineering_club_KOTORI_WEAPON
+	remove_country_flag = Engineering_club_KAZUSA_WEAPON
+	remove_country_flag = Engineering_club_PINA_WEAPON
+	remove_country_flag = Engineering_club_SAKI_WEAPON
+	remove_country_flag = Engineering_club_IORI_WEAPON
+	remove_country_flag = Engineering_club_ARU_WEAPON
+	remove_country_flag = Engineering_club_HARUNA_WEAPON
+	remove_country_flag = Engineering_club_MIDORI_WEAPON
+	remove_country_flag = Engineering_club_HASUMI_WEAPON
+	remove_country_flag = Engineering_club_KOHARU_WEAPON
+	remove_country_flag = Engineering_club_UI_WEAPON
+	remove_country_flag = Engineering_club_SHUN_WEAPON
+	remove_country_flag = Engineering_club_TOMOE_WEAPON
+	remove_country_flag = Engineering_club_WAKAMO_WEAPON
+	remove_country_flag = Engineering_club_FUBUKI_WEAPON
+	remove_country_flag = Engineering_club_MIYU_WEAPON
+	# M
+	remove_country_flag = Engineering_club_SHIROKO_WEAPON
+	remove_country_flag = Engineering_club_SERIKA_WEAPON
+	remove_country_flag = Engineering_club_JUNKO_WEAPON
+	remove_country_flag = Engineering_club_AKARI_WEAPON
+	remove_country_flag = Engineering_club_MOMOI_WEAPON
+	remove_country_flag = Engineering_club_ASUNA_WEAPON
+	remove_country_flag = Engineering_club_HARE_WEAPON
+	remove_country_flag = Engineering_club_CHIHIRO_WEAPON
+	remove_country_flag = Engineering_club_TOKI_WEAPON
+	remove_country_flag = Engineering_club_YOSHIMI_WEAPON
+	remove_country_flag = Engineering_club_SUZUMI_WEAPON
+	remove_country_flag = Engineering_club_HANAE_WEAPON
+	remove_country_flag = Engineering_club_HIFUMI_WEAPON
+	remove_country_flag = Engineering_club_AZUSA_WEAPON
+	remove_country_flag = Engineering_club_HANAKO_WEAPON
+	remove_country_flag = Engineering_club_SERINA_WEAPON
+	remove_country_flag = Engineering_club_SHIMIKO_WEAPON
+	remove_country_flag = Engineering_club_SAKURAKO_WEAPON
+	remove_country_flag = Engineering_club_KOKONA_WEAPON
+	remove_country_flag = Engineering_club_KAHO_WEAPON
+	remove_country_flag = Engineering_club_SAORI_WEAPON
+	remove_country_flag = Engineering_club_MINORI_WEAPON
+	# P
+	remove_country_flag = Engineering_club_FUUKA_WEAPON
+	remove_country_flag = Engineering_club_YUUKA_WEAPON
+	remove_country_flag = Engineering_club_NERU_WEAPON
+	remove_country_flag = Engineering_club_UTAHA_WEAPON
+	remove_country_flag = Engineering_club_AIRI_WEAPON
+	remove_country_flag = Engineering_club_NATSU_WEAPON
+	remove_country_flag = Engineering_club_MIKA_WEAPON
+	remove_country_flag = Engineering_club_TSUBAKI_WEAPON
+	remove_country_flag = Engineering_club_IZUNA_WEAPON
+	remove_country_flag = Engineering_club_TSUKUYO_WEAPON
+	remove_country_flag = Engineering_club_NODOKA_WEAPON
+	remove_country_flag = Engineering_club_MARINA_WEAPON
+	remove_country_flag = Engineering_club_MIYAKO_WEAPON
+	remove_country_flag = Engineering_club_ATSUKO_WEAPON
+	remove_country_flag = Engineering_club_RUMI_WEAPON
+	# S
+	remove_country_flag = Engineering_club_AYANE_WEAPON
+	remove_country_flag = Engineering_club_CHINATSU_WEAPON
+	remove_country_flag = Engineering_club_KAYOKO_WEAPON
+	remove_country_flag = Engineering_club_AKO_WEAPON
+	remove_country_flag = Engineering_club_IROHA_WEAPON
+	remove_country_flag = Engineering_club_KOTAMA_WEAPON
+	remove_country_flag = Engineering_club_AKANE_WEAPON
+	remove_country_flag = Engineering_club_NOA_WEAPON
+	remove_country_flag = Engineering_club_HIMARI_WEAPON
+	remove_country_flag = Engineering_club_MARI_WEAPON
+	remove_country_flag = Engineering_club_HINATA_WEAPON
+	remove_country_flag = Engineering_club_NAGISA_WEAPON
+	remove_country_flag = Engineering_club_MIMORI_WEAPON
+	remove_country_flag = Engineering_club_KAEDE_WEAPON
+	remove_country_flag = Engineering_club_SAYA_WEAPON
+	remove_country_flag = Engineering_club_CHERINO_WEAPON
+	remove_country_flag = Engineering_club_KIRINO_WEAPON
+	remove_country_flag = Engineering_club_KANNA_WEAPON
+	remove_country_flag = Engineering_club_MOE_WEAPON
+	remove_country_flag = Engineering_club_MINA_WEAPON
+	# X
+	remove_country_flag = Engineering_club_KARIN_WEAPON
+	remove_country_flag = Engineering_club_MASHIRO_WEAPON
+	remove_country_flag = Engineering_club_HIYORI_WEAPON
+	remove_country_flag = Engineering_club_HIBIKI_WEAPON
+	remove_country_flag = Engineering_club_MEGU_WEAPON
+	# T
+	remove_country_flag = Engineering_club_ARIS_WEAPON
+}
+
+####   学园理念
+BA_SI_cost_change = {
+	change_variable = {
+		which = BA_SI_cost
+		value = $VALUE$
+	}
+	subtract_variable = {
+		which = BA_SI_diff
+		value = $VALUE$
+	}
+}
+
+BA_SI_set_cooldown_normal = {
+	hidden_effect = {
+		# 学园理念cd
+		set_timed_country_flag = {
+			flag = BA_school_idea_cooldown
+			days = 5
+		}
+		# 点击时触发的效果
+		BA_SI_cost_change = {
+			VALUE = -49
+		}
+		country_event = {
+			id = BA_Shittem.4000
+		}
+	}
+}
+
+BA_SI_Gehenna_A02_grant_fleet = {
+	capital_star = {
+		create_fleet = {
+			name = namelist_BA_fleet_ArisPR
+			effect = {
+				set_owner = prevprev
+				set_location = prev
+				while = {
+					count = 20
+					create_ship = {
+						name = random
+						random_existing_design = corvette
+					}
+				}
+			}
+		}
+		create_fleet = {
+			name = namelist_BA_fleet_ArisPR
+			effect = {
+				set_owner = prevprev
+				set_location = prev
+				while = {
+					count = 20
+					create_ship = {
+						name = random
+						random_existing_design = corvette
+					}
+				}
+			}
+		}
+	}
+}

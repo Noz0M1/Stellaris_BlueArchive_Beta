@@ -1,0 +1,15 @@
+gov_ba_fe = {
+	ruler_title = PRESCRIPTED_ruler_title_ba_fe	#堕落领袖尊称
+	ruler_title_female = PRESCRIPTED_ruler_ba_fe	#堕落领袖名字
+	possible = {
+		OR = {
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+		}
+
+		has_authority = auth_kivotos_pr
+	}
+	weight = {
+		base = 9999999
+	}
+}

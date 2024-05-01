@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Attendant_Highlander_MG_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/Attendant_Highlander_MG.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Attendant_Highlander_MGShape"
+			index = 0
+			texture_diffuse = "Attendant_Highlander_MG.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}

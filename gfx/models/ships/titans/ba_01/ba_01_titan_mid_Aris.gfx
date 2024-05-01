@@ -1,0 +1,23 @@
+objectTypes = {
+	pdxmesh = {
+		name = "ba_01_titan_mid_Aris_mesh"
+		file = "gfx/models/ships/titans/ba_01/ba_01_titan_mid_Aris.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ba_01_titan_mid_ArisShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ba_01_colossus_aris_haloShape"
+			index = 0
+			texture_diffuse = "Aris_Original_Halo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+}

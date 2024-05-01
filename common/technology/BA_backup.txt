@@ -1,0 +1,184 @@
+#### 舰船部件科技
+## 一级部件
+#射手座之夜
+tech_BA_Sagittarius_night = {
+    area = physics
+    cost = @tier2cost3
+    category = {
+        computing
+    }
+    tier = 2
+    is_rare = yes
+    is_reverse_engineerable = no
+    prerequisites = {
+        tech_BA_spaceship_automation_1
+        #两个一级点防御
+        tech_flak_batteries_1
+        tech_pd_tracking_1
+    }
+    weight = 30
+    potential = {
+        has_authority = auth_kivotos_pr
+    }
+}
+
+#五七五式掷弹筒
+tech_BA_Grenadiers_575 = {
+    area = physics
+    cost = @tier2cost3
+    category = {
+        computing
+    }
+    tier = 2
+    is_rare = yes
+    is_reverse_engineerable = no
+    prerequisites = {
+        tech_BA_spaceship_automation_1
+        tech_starbase_2
+    }
+    weight = 30
+    potential = {
+        has_authority = auth_kivotos_pr
+    }
+}
+
+#刚柔并济之心
+tech_BA_Soft_determination = {
+    area = physics
+    cost = @tier2cost3
+    category = {
+        computing
+    }
+    tier = 2
+    is_rare = yes
+    is_reverse_engineerable = no
+    prerequisites = {
+        tech_BA_spaceship_automation_1
+        tech_corvette_hull_2
+    }
+    weight = 30
+    potential = {
+        has_authority = auth_kivotos_pr
+    }
+}
+
+## 二级部件
+#爱迪娜3号
+tech_BA_Adena_3 = {
+    area = physics
+    cost = @tier3cost1
+    category = {
+        computing
+    }
+    tier = 3
+    is_rare = yes
+    is_reverse_engineerable = no
+    prerequisites = {
+        tech_BA_spaceship_automation_2
+        tech_strike_craft_1
+    }
+    weight = 30
+    potential = {
+        has_authority = auth_kivotos_pr
+    }
+}
+
+#独特点子
+tech_BA_Unique_idea = {
+    area = physics
+    cost = @tier3cost1
+    category = {
+        computing
+    }
+    tier = 3
+    is_rare = yes
+    is_reverse_engineerable = no
+    prerequisites = {
+        tech_BA_spaceship_automation_2
+        tech_lasers_4
+    }
+    weight = 30
+    potential = {
+        has_authority = auth_kivotos_pr
+    }
+}
+
+#清爽灵感
+tech_BA_Flashy_inspiration = {
+    area = physics
+    cost = @tier3cost1
+    category = {
+        computing
+    }
+    tier = 3
+    is_rare = yes
+    is_reverse_engineerable = no
+    prerequisites = {
+        tech_BA_spaceship_automation_2
+        tech_lasers_4
+    }
+    weight = 30
+    potential = {
+        has_authority = auth_kivotos_pr
+    }
+}
+
+#爆裂一击
+tech_BA_Crack_shot = {
+    area = physics
+    cost = @tier3cost1
+    category = {
+        computing
+    }
+    tier = 3
+    is_rare = yes
+    is_reverse_engineerable = no
+    prerequisites = {
+        tech_BA_spaceship_automation_2
+        tech_interstellar_fleet_traditions
+    }
+    weight = 30
+    potential = {
+        has_authority = auth_kivotos_pr
+    }
+}
+
+## 三级部件
+#奇幻色彩
+tech_BA_Fantacy_colors = {
+    area = physics
+    cost = @tier3cost3
+    category = {
+        computing
+    }
+    tier = 3
+    is_rare = yes
+    is_reverse_engineerable = no
+    prerequisites = {
+        tech_BA_spaceship_automation_3
+    }
+    weight = 30
+    potential = {
+        has_authority = auth_kivotos_pr
+    }
+}
+
+## 四级部件
+#超新星
+tech_BA_SuperNova = {
+    area = physics
+    cost = @tier4cost2
+    category = {
+        computing
+    }
+    tier = 4
+    is_rare = yes
+    is_reverse_engineerable = no
+    prerequisites = {
+        tech_BA_spaceship_automation_3
+    }
+    weight = 30
+    potential = {
+        has_authority = auth_kivotos_pr
+    }
+}

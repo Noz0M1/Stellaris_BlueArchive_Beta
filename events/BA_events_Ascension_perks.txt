@@ -1,0 +1,1135 @@
+namespace = BA_ape
+#存储飞升事件，以及一些杂项事件
+##### 基础 #####
+country_event = {
+	id = BA_ape.0001
+	is_triggered_only = yes
+	title = "BA_ape.0001.name"
+	desc = "BA_ape.0001.desc"
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_42
+		room = BA_04_room
+	}
+	trigger = {
+		has_authority = auth_kivotos
+		NOT = {
+			has_country_flag = BA_ui_communicated
+		}
+		if = {
+			limit = {
+				OR = {
+					has_origin = origin_Kivotos_Eden_treaty
+					has_origin = origin_Kivotos_Kyrie
+					has_origin = origin_Kivotos_Unnamed_starting
+				}
+			}
+			OR = {
+				has_country_flag = BA_origin_Eden_treaty_finished
+				has_country_flag = BA_origin_Kyrie_finished
+				has_country_flag = BA_origin_Unnamed_starting_finished
+			}
+		}
+		else = {
+			num_ascension_perks > 2
+		}
+	}
+	diplomatic = yes
+	immediate = {
+		set_country_flag = BA_ui_communicated
+	}
+	option = {
+		name = BA_ape.0001.a
+		response_text = BA_ape.0001.a.re
+		is_dialog_only = yes
+	}
+	option = {
+		name = BA_ape.0001.b
+		response_text = BA_ape.0001.b.re
+		is_dialog_only = yes
+	}
+	option = {
+		name = BA_ape.0001.c
+		response_text = BA_ape.0001.c.re
+		custom_tooltip = BA_ape.0001.c.tip
+		add_research_option = "tech_BA_Preliminary_ring_theory"
+		hidden_effect = {
+			event_target:BA_Shittem_country = {
+				set_country_flag = BA_stored_SP_Ui_@root
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_ape.0002
+	is_triggered_only = yes
+	title = "BA_ape.0002.name"
+	desc = "BA_ape.0002.desc"
+	#picture = GFX_BA_news
+	picture = GFX_BA_Emergencies_0401	#暂时用这个
+	trigger = {
+		OR = {
+			last_increased_tech = tech_BA_Halo_power_increase
+			last_increased_tech = tech_BA_Divine_liberation_theory
+			last_increased_tech = tech_BA_pyroxenes_crafting
+		}
+		has_technology = tech_BA_Halo_power_increase
+		has_technology = tech_BA_Divine_liberation_theory
+		has_technology = tech_BA_pyroxenes_crafting
+	}
+	option = {
+		name = BA_ape2.a
+		start_situation = {
+			type = situation_Into_Halo
+		}
+		hidden_effect = {
+			# country_event = {
+			# 	id = BA_ape.0004
+			# 	days = 360
+			# }
+		}
+	}
+}
+
+country_event = {
+	id = BA_ape.0003
+	is_triggered_only = yes
+	title = "BA_ape.0003.name"
+	desc = "BA_ape.0003.desc"
+	picture = GFX_BA_Kivotos_highway
+	option = {
+		name = BA_ape4.a
+		add_research_option = tech_BA_keystone_crafting
+	}
+}
+
+country_event = {
+	id = BA_ape.0004
+	is_triggered_only = yes
+	title = "BA_ape.0004.name"
+	desc = "BA_ape.0004.desc"
+	picture = GFX_BA_Kivotos_highway
+	option = {
+		name = BA_ape3.a
+		set_country_flag = BA_Into_Halo_site_researching
+		random_planet_within_border = {
+			limit = {
+				solar_system = {
+					is_capital_system = yes
+				}
+				has_planet_flag = BA_Gematria_station
+			}
+			enable_special_project = {
+				name = BA_ring_tech_project_2
+				location = this
+				owner = root
+			}
+			create_archaeological_site = BA_Gematria_arc_site_1
+		}
+	}
+}
+
+country_event = {
+	id = BA_ape.0005
+	is_triggered_only = yes
+	title = BA_ape.0005.title
+	desc = BA_ape.0005.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_ape.0005.a
+		is_dialog_only = yes
+		response_text = BA_ape.0005.a.re
+	}
+	option = {
+		name = BA_ape.0005.b
+		is_dialog_only = yes
+		response_text = BA_ape.0005.b.response
+	}
+	option = {
+		name = BA_ape.0005.c
+		is_dialog_only = yes
+		response_text = BA_ape.0005.c.response
+	}
+	option = {
+		name = BA_ape.0005.d
+		is_dialog_only = yes
+		response_text = BA_ape.0005.d.response
+	}
+	option = {
+		name = BA_ape.0005.f
+		is_dialog_only = yes
+		response_text = BA_ape.0005.f.response
+	}
+	option = {
+		name = BA_ape.0005.g
+		hidden_effect = {
+			country_event = {
+				id = BA_ape.0006
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_ape.0006
+	is_triggered_only = yes
+	title = "BA_ape.0006.name"
+	desc = "BA_ape.0006.desc"
+	picture = GFX_BA_Kivotos_highway
+	option = {
+		name = BA_ape.0006.a
+		remove_country_flag = BA_Into_Halo_site_researching
+		# country_event = {
+		# 	id = BA_ape.0007
+		# 	days = 30
+		# }
+	}
+}
+
+country_event = {
+	id = BA_ape.0007
+	is_triggered_only = yes
+	title = "BA_ape.0007.name"
+	desc = "BA_ape.0007.desc"
+	picture = GFX_BA_Kivotos_highway
+	option = {
+		name = BA_ape.0007.a
+		default_hide_option = yes
+		country_event = {
+			id = BA_ape.0007
+			days = 180
+		}
+	}
+	option = {
+		name = BA_ape.0007.b
+		custom_tooltip = BA_ape.0007.b.tip
+		set_country_flag = BA_halo_awaken_route
+		switch = {
+			trigger = has_country_flag
+			#星野
+			hoshino_is_leader_flag = {
+				hidden_effect = {
+					country_event = {
+						id = BA_origin.0103
+						days = 1
+					}
+				}
+			}
+			# #其他 直接触发
+			# default = {
+			# 	#光环改造后续
+			# 	hidden_effect = {
+			# 		country_event = {
+			# 			id = BA_ape.1001
+			# 			days = 30
+			# 		}
+			# 	}
+			# }
+		}
+	}
+	option = {
+		name = BA_ape.0007.c
+		custom_tooltip = BA_ape.0007.c.tip
+		allow = {
+			#光环改造后续做完了加在这 然后删掉整个allow
+			custom_tooltip = {
+				text = BA_Shittem_gray_button_tip
+				always = no
+			}
+		}
+		switch = {
+			trigger = has_country_flag
+			#星野
+			hoshino_is_leader_flag = {
+				hidden_effect = {
+					country_event = {
+						id = BA_origin.0103
+						days = 1
+					}
+				}
+			}
+			#其他 直接触发
+			default = {
+				#光环改造后续
+			}
+		}
+	}
+	after = {
+		if = {
+			limit = {
+				from = {
+					is_scope_type = situation
+				}
+			}
+			destroy_situation = from
+		}
+	}
+}
+
+#### 考古遗迹
+fleet_event = {
+	id = BA_ape.0101
+	title = "BA_Gematria_arc_site_1"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = "Project_Cradle_arc_site_desc_RAID01"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_RAID01"
+	}
+}
+
+fleet_event = {
+	id = BA_ape.0102
+	title = "BA_Gematria_arc_site_1"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = "Project_Cradle_arc_site_desc_RAID02"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_RAID02"
+	}
+}
+
+fleet_event = {
+	id = BA_ape.0103
+	title = "BA_Gematria_arc_site_1"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = "Project_Cradle_arc_site_desc_RAID03"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_RAID03"
+	}
+}
+
+fleet_event = {
+	id = BA_ape.0104
+	title = "BA_Gematria_arc_site_1"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+		owner = {
+			country_event = {
+				id = BA_ape.0005
+			}
+		}
+	}
+	desc = {
+		text = "Project_Cradle_arc_site_desc_RAID04"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_RAID04"
+	}
+}
+
+##### 光环改造（一段） #####
+#启动
+country_event = {
+	id = BA_ape.1001
+	title = "BA_ape.1001.name"
+	desc = "BA_ape.1001.desc"
+	picture = GFX_BA_Halo1
+	is_triggered_only = yes
+	immediate = {
+		begin_event_chain = {
+			event_chain = BA_Halo_awaken_chain
+			target = root
+		}
+	}
+	option = {
+		name = BA_ape.1001.next
+		start_situation = {
+			type = situation_Halo_awaken
+		}
+	}
+}
+
+#准备
+country_event = {
+	id = BA_ape.1002
+	title = "BA_ape.1002.name"
+	desc = "BA_ape.1002.desc"
+	picture = GFX_BA_Halo3
+	is_triggered_only = yes
+	immediate = {
+		### 统计人口，决定项目价格
+		set_variable = {
+			which = Halo_prize
+			value = 0
+		}
+		every_owned_pop = {
+			limit = {
+				has_trait = trait_halo_unreleased
+			}
+			set_pop_flag = BA_counting
+		}
+		while = {
+			limit = {
+				any_owned_pop = {
+					has_pop_flag = BA_counting
+				}
+			}
+			random_owned_pop = {
+				limit = {
+					has_pop_flag = BA_counting
+				}
+				remove_pop_flag = BA_counting
+			}
+			change_variable = {
+				which = Halo_prize
+				value = 1
+			}
+		}
+	}
+	option = {
+		name = BA_ape.1002.Prize0
+		hidden_effect = {
+			set_country_flag = BA_Halo_Prize0
+		}
+	}
+	option = {
+		name = BA_ape.1002.Prize1
+		allow = {
+			resource_stockpile_compare = {
+				resource = food
+				value >= 1
+				multiplier = Halo_prize
+			}
+		}
+		add_resource = {
+			food = -1
+			multiplier = Halo_prize
+		}
+		hidden_effect = {
+			set_country_flag = BA_Halo_Prize1
+		}
+	}
+	option = {
+		name = BA_ape.1002.Prize2
+		allow = {
+			resource_stockpile_compare = {
+				resource = volatile_motes
+				value >= -0.05
+				multiplier = Halo_prize
+			}
+			resource_stockpile_compare = {
+				resource = exotic_gases
+				value >= -0.05
+				multiplier = Halo_prize
+			}
+			resource_stockpile_compare = {
+				resource = rare_crystals
+				value >= -0.05
+				multiplier = Halo_prize
+			}
+		}
+		add_resource = {
+			volatile_motes = -0.05
+			exotic_gases = -0.05
+			rare_crystals = -0.05
+			multiplier = Halo_prize
+		}
+		hidden_effect = {
+			set_country_flag = BA_Halo_Prize2
+		}
+	}
+	option = {
+		name = BA_ape.1002.Prize3
+		allow = {
+			resource_stockpile_compare = {
+				resource = consumer_goods
+				value >= 2
+				multiplier = Halo_prize
+			}
+		}
+		add_resource = {
+			consumer_goods = -2
+			multiplier = Halo_prize
+		}
+		hidden_effect = {
+			set_country_flag = BA_Halo_Prize3
+		}
+	}
+	option = {
+		name = BA_ape.1002.Prize4
+		allow = {
+			resource_stockpile_compare = {
+				resource = sr_pyroxenes
+				value >= 0.5
+				multiplier = Halo_prize
+			}
+		}
+		add_resource = {
+			sr_pyroxenes = -0.5
+			multiplier = Halo_prize
+		}
+		hidden_effect = {
+			set_country_flag = BA_Halo_Prize4
+		}
+	}
+	# after = {
+	# 	enable_special_project = {
+	# 		name = BA_Halo_preparation
+	# 	}
+	# }
+}
+
+#准备完成
+country_event = {
+	id = BA_ape.1003
+	title = "BA_ape.1003.name"
+	desc = {
+		trigger = {
+			has_country_flag = BA_Halo_Prize0
+		}
+		text = "BA_ape.1003.Prize0"
+	}
+	desc = {
+		trigger = {
+			has_country_flag = BA_Halo_Prize1
+		}
+		text = "BA_ape.1003.Prize1"
+	}
+	desc = {
+		trigger = {
+			has_country_flag = BA_Halo_Prize2
+		}
+		text = "BA_ape.1003.Prize2"
+	}
+	desc = {
+		trigger = {
+			has_country_flag = BA_Halo_Prize3
+		}
+		text = "BA_ape.1003.Prize3"
+	}
+	desc = {
+		trigger = {
+			has_country_flag = BA_Halo_Prize4
+		}
+		text = "BA_ape.1003.Prize4"
+	}
+	picture = GFX_BA_Halo4
+	is_triggered_only = yes
+	option = {
+		name = BA_ape.1003.next
+	}
+}
+
+#改造完成
+country_event = {
+	id = BA_ape.1004
+	title = "BA_ape.1004.name"
+	desc = "BA_ape.1004.desc"
+	picture = GFX_BA_Halo5
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = BA_ape_1_finished
+		set_country_flag = BA_Repeatable_commmission_01_allow		#开启循环委托1
+		#改造完成的一系列效果
+		every_owned_pop = {
+			limit = {
+				has_trait = trait_halo_unreleased
+			}
+			species = {
+				change_species_characteristics = {
+					remove_trait = trait_halo_unreleased
+					add_trait = trait_halo_awakened
+					add_traits_at_start_of_list = yes
+				}
+				save_event_target_as = BA_awakened_species
+			}
+		}
+		change_dominant_species = {
+			species = event_target:BA_awakened_species
+			change_all = yes
+		}
+		every_owned_leader = {
+			limit = {
+				OR = {
+					has_leader_flag = BA_event_leader
+					species = {
+						has_trait = trait_halo_awakened
+						#is_same_value = event_target:BA_awakened_species
+					}
+				}
+				NOT = {
+					has_trait = leader_trait_halo_awakened
+				}
+			}
+			add_trait = leader_trait_halo_awakened
+		}
+		every_pool_leader = {
+			limit = {
+				OR = {
+					has_leader_flag = BA_event_leader
+					species = {
+						has_trait = trait_halo_awakened
+						#is_same_value = event_target:BA_awakened_species
+					}
+				}
+				NOT = {
+					has_trait = leader_trait_halo_awakened
+				}
+			}
+			add_trait = leader_trait_halo_awakened
+		}
+	}
+	option = {
+		name = BA_ape.1004.next
+		custom_tooltip = BA_ape.1004.next.tip
+		add_resource = {
+			unity = 50
+			multiplier = Halo_prize
+		}
+		end_event_chain = BA_Halo_awaken_chain
+		destroy_situation = from
+	}
+}
+
+#传统完成
+country_event = {
+	id = BA_ape.1005
+	title = "BA_ape.1005.name"
+	desc = "BA_ape.1005.desc"
+	picture = GFX_BA_Halo5
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = BA_ape_1_tr_finished
+		#改造完成的一系列效果
+		every_owned_pop = {
+			limit = {
+				has_trait = trait_halo_awakened
+			}
+			species = {
+				change_species_characteristics = {
+					remove_trait = trait_halo_awakened
+					add_trait = trait_halo_full_awakened
+					add_traits_at_start_of_list = yes
+				}
+				save_event_target_as = BA_awakened_species
+			}
+		}
+		change_dominant_species = {
+			species = event_target:BA_awakened_species
+			change_all = yes
+		}
+		every_owned_leader = {
+			limit = {
+				OR = {
+					has_leader_flag = BA_event_leader
+					species = {
+						has_trait = trait_halo_full_awakened
+						#is_same_value = event_target:BA_awakened_species
+					}
+				}
+				NOT = {
+					has_trait = leader_trait_halo_full_awakened
+				}
+			}
+			remove_trait = leader_trait_halo_awakened
+			add_trait = leader_trait_halo_full_awakened
+		}
+		every_pool_leader = {
+			limit = {
+				OR = {
+					has_leader_flag = BA_event_leader
+					species = {
+						has_trait = trait_halo_full_awakened
+						#is_same_value = event_target:BA_awakened_species
+					}
+				}
+				NOT = {
+					has_trait = leader_trait_halo_full_awakened
+				}
+			}
+			remove_trait = leader_trait_halo_awakened
+			add_trait = leader_trait_halo_full_awakened
+		}
+	}
+	option = {
+		name = BA_ape.1005.next
+		add_resource = {
+			unity = 100
+			multiplier = Halo_prize
+		}
+	}
+}
+
+#新领袖获得光环特质
+country_event = {
+	id = BA_ape.1101
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		from = {
+			species = {
+				OR = {
+					has_trait = trait_halo_awakened
+					has_trait = trait_halo_full_awakened
+					has_trait = trait_Halo_amplifier
+				}
+			}
+		}
+	}
+	immediate = {
+		from = {
+			if = {
+				limit = {
+					species = {
+						has_trait = trait_halo_awakened
+					}
+				}
+				add_trait = leader_trait_halo_awakened
+			}
+			else_if = {
+				limit = {
+					species = {
+						has_trait = trait_halo_full_awakened
+					}
+				}
+				add_trait = leader_trait_halo_full_awakened
+			}
+			# TODO：光环改造
+		}
+	}
+}
+
+#年检，添加光环特质
+country_event = {
+	id = BA_ape.1102
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_authority = auth_kivotos
+	}
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				OR = {
+					### 特殊领袖
+					has_leader_flag = BA_event_leader
+					### 种族有光环特质，但领袖没有
+					AND = {
+						species = {
+							has_trait = trait_halo_awakened
+						}
+						NOT = {
+							has_trait = leader_trait_halo_awakened
+						}
+					}
+					AND = {
+						species = {
+							has_trait = trait_halo_full_awakened
+						}
+						NOT = {
+							has_trait = leader_trait_halo_full_awakened
+						}
+					}
+					# TODO：光环改造
+				}
+			}
+			### 特殊领袖
+			if = {
+				limit = {
+					has_leader_flag = BA_event_leader
+				}
+				BA_Halo_for_special_leader = yes
+			}
+			### 种族有光环特质，但领袖没有
+			else_if = {
+				limit = {
+					species = {
+						has_trait = trait_halo_awakened
+					}
+					NOT = {
+						has_trait = leader_trait_halo_awakened
+					}
+				}
+				add_trait = leader_trait_halo_awakened
+				remove_trait = leader_trait_halo_full_awakened
+				# TODO：光环改造
+			}
+			else_if = {
+				limit = {
+					species = {
+						has_trait = trait_halo_full_awakened
+					}
+					NOT = {
+						has_trait = leader_trait_halo_full_awakened
+					}
+				}
+				add_trait = leader_trait_halo_full_awakened
+				remove_trait = leader_trait_halo_awakened
+				# TODO：光环改造
+			}
+			# TODO：光环改造
+		}
+	}
+}
+
+##### 我们的故事 #####
+#启动
+country_event = {
+	id = BA_ape.2001
+	title = "BA_ape.2001.name"
+	desc = "BA_ape.2001.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	immediate = {
+		begin_event_chain = {
+			event_chain = BA_Kivotos_chronicle_chain
+			target = root
+		}
+		#开启循环委托2
+		#激活一个项目
+		set_variable = {
+			which = BA_tradition_count
+			value = 1
+		}
+		country_event = {
+			id = BA_ape.2002
+		}
+	}
+	option = {
+		name = BA_ape.2001.a
+	}
+}
+
+#激活项目的分选器 （谨慎展开
+country_event = {
+	id = BA_ape.2002
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				check_variable = {
+					which = BA_tradition_count
+					value = 1
+				}
+				NOT = {
+					has_country_flag = BA_Blue_new_world_1
+				}
+			}
+			enable_special_project = {
+				name = BA_Another_route
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = BA_tradition_count
+					value = 2
+				}
+				NOT = {
+					has_country_flag = BA_Blue_new_world_2
+				}
+			}
+			enable_special_project = {
+				name = BA_Flowers
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = BA_tradition_count
+					value = 3
+				}
+				NOT = {
+					has_country_flag = BA_Blue_new_world_3
+				}
+			}
+			enable_special_project = {
+				name = BA_In_flame
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = BA_tradition_count
+					value = 4
+				}
+				NOT = {
+					has_country_flag = BA_Blue_new_world_4
+				}
+			}
+			enable_special_project = {
+				name = BA_Things_cannot_give_up
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = BA_tradition_count
+					value = 5
+				}
+				NOT = {
+					has_country_flag = BA_Blue_new_world_5
+				}
+			}
+			enable_special_project = {
+				name = BA_Hoshizora
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = BA_tradition_count
+					value = 6
+				}
+				NOT = {
+					has_country_flag = BA_Blue_new_world_6
+				}
+			}
+			enable_special_project = {
+				name = BA_Blue_new_world
+			}
+		}
+	}
+}
+
+#6个项目
+country_event = {
+	id = BA_ape.2003
+	title = "BA_ape.2003.name"
+	desc = "BA_ape.2003.desc"
+	is_triggered_only = yes
+	#fire_only_once = yes
+	picture = GFX_BA_chronicle_1
+	# trigger = {
+	# 	check_variable = {
+	# 		which = BA_tradition_count
+	# 		value = 1
+	# 	}
+	# }
+	option = {
+		name = BA_ape.2003.next
+		custom_tooltip = BA_ape.2003.tip
+	}
+}
+
+country_event = {
+	id = BA_ape.2004
+	title = "BA_ape.2004.name"
+	desc = "BA_ape.2004.desc"
+	is_triggered_only = yes
+	#fire_only_once = yes
+	picture = GFX_BA_chronicle_2
+	# trigger = {
+	# 	check_variable = {
+	# 		which = BA_tradition_count
+	# 		value = 2
+	# 	}
+	# }
+	option = {
+		name = BA_ape.2004.next
+		custom_tooltip = BA_ape.2004.tip
+		# hidden_effect = {
+		# 	add_modifier = {
+		# 		modifier = modifier_Blue_world_2
+		# 	}
+		# }
+	}
+}
+
+country_event = {
+	id = BA_ape.2005
+	title = "BA_ape.2005.name"
+	desc = "BA_ape.2005.desc"
+	is_triggered_only = yes
+	#fire_only_once = yes
+	picture = GFX_BA_chronicle_3
+	# trigger = {
+	# 	check_variable = {
+	# 		which = BA_tradition_count
+	# 		value = 3
+	# 	}
+	# }
+	option = {
+		name = BA_ape.2005.next
+		custom_tooltip = BA_ape.2005.tip
+	}
+}
+
+country_event = {
+	id = BA_ape.2006
+	title = "BA_ape.2006.name"
+	desc = "BA_ape.2006.desc"
+	is_triggered_only = yes
+	#fire_only_once = yes
+	picture = GFX_BA_chronicle_4
+	# trigger = {
+	# 	check_variable = {
+	# 		which = BA_tradition_count
+	# 		value = 4
+	# 	}
+	# }
+	option = {
+		name = BA_ape.2006.next
+		custom_tooltip = BA_ape.2006.tip
+	}
+}
+
+country_event = {
+	id = BA_ape.2007
+	title = "BA_ape.2007.name"
+	desc = "BA_ape.2007.desc"
+	is_triggered_only = yes
+	#fire_only_once = yes
+	picture = GFX_BA_chronicle_5
+	# trigger = {
+	# 	check_variable = {
+	# 		which = BA_tradition_count
+	# 		value = 5
+	# 	}
+	# }
+	option = {
+		name = BA_ape.2007.next
+		custom_tooltip = BA_ape.2007.tip
+	}
+}
+
+country_event = {
+	id = BA_ape.2008
+	title = "BA_ape.2008.name"
+	desc = "BA_ape.2008.desc"
+	is_triggered_only = yes
+	#fire_only_once = yes
+	picture = GFX_BA_chronicle_6
+	# trigger = {
+	# 	check_variable = {
+	# 		which = BA_tradition_count
+	# 		value = 6
+	# 	}
+	# }
+	option = {
+		name = BA_ape.2008.next
+		custom_tooltip = BA_ape.2008.tip
+		hidden_effect = {
+			add_modifier = {
+				modifier = modifier_Blue_world_6
+			}
+		}
+	}
+}
+
+#最终项目
+country_event = {
+	id = BA_ape.2009
+	is_triggered_only = yes
+	#fire_only_once = yes
+	title = "BA_ape.2009.name"
+	desc = "BA_ape.2009.desc"
+	picture = GFX_BA_Kivotos_highway
+	trigger = {
+		has_country_flag = BA_Blue_new_world_1
+		has_country_flag = BA_Blue_new_world_2
+		has_country_flag = BA_Blue_new_world_3
+		has_country_flag = BA_Blue_new_world_4
+		has_country_flag = BA_Blue_new_world_5
+		has_country_flag = BA_Blue_new_world_6
+	}
+	option = {
+		name = BA_ape.2009.next
+		enable_special_project = {
+			name = BA_End_of_chronicle
+		}
+	}
+}
+
+country_event = {
+	id = BA_ape.2010
+	title = "BA_ape.2010.name"
+	desc = "BA_ape.2010.desc"
+	is_triggered_only = yes
+	#fire_only_once = yes
+	picture = GFX_BA_chronicle_8
+	option = {
+		name = BA_ape.2010.next
+		custom_tooltip = BA_ape.2010.tip
+		end_event_chain = BA_Kivotos_chronicle_chain
+	}
+}
+
+##### 星球飞升 #####
+##### 触发器 #####
+country_event = {
+	id = BA_ape.9999
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			#完成起源事件链
+			limit = {
+				OR = {
+					has_country_flag = BA_origin_Eden_treaty_finished
+					has_country_flag = BA_origin_Kyrie_finished
+					has_country_flag = BA_origin_Kyrie_failed
+				}
+			}
+			country_event = {
+				id = BA_ape.0001
+			}
+		}
+	}
+}

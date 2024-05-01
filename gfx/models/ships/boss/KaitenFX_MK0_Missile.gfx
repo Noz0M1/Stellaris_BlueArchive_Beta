@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "KaitenFX_MK0_Missile_mesh"
+		file = "gfx\models\ships\boss\KaitenFX_MK0_Missile.mesh"
+		scale = 3.0
+
+		meshsettings = {
+			name = "KaitenFX_MK0_MissileShape"
+			index = 0
+			texture_diffuse = "KaitenFX_MK0.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

@@ -1,0 +1,132 @@
+title = $CLUB$
+desc = $CHARA$_desc1
+desc = $CHARA$_desc2
+desc = $CHARA$_desc3
+is_triggered_only = yes
+diplomatic = yes
+custom_gui = "BA_window"
+picture_event_data = {
+    portrait = BA_$CHARA$
+    room = BA_06_room
+}
+#赞助
+option = {
+    name = $CLUB$_sponsor
+    allow = {
+        custom_tooltip = {
+            fail_text = Club_sponsoring
+            NOT = {
+                has_country_flag = BA_club_$CLUB$_sponsoring
+            }
+        }
+        resource_stockpile_compare = {
+            resource = energy
+            value >= 1600
+        }
+    }
+    is_dialog_only = yes
+    response_text = $CLUB$_sponsor_$CHARA$RE
+    hidden_effect = {
+        if = {
+            limit = {
+                NOT = {
+                    has_country_flag = BA_club_$CLUB$_sponsoring
+                }
+            }
+            set_timed_country_flag = {
+                flag = BA_club_$CLUB$_sponsoring
+                days = 360
+            }
+        }
+        change_variable = {
+            which = $CLUB$
+            value = 20
+        }
+        if = {
+            limit = {
+                check_variable = {
+                    which = $CLUB$
+                    value > 100
+                }
+            }
+            set_variable = {
+                which = $CLUB$
+                value = 100
+            }
+        }
+    }
+    add_resource = {
+        energy = -1600
+    }
+    add_modifier = {
+        modifier = modifier_BA_club_sponsor_$CLUB$
+        days = 1080
+    }
+}
+#社团功能
+inline_script = {
+    script = Club/Function/$CLUB$
+    CHARA = $CHARA$
+}
+#建立部室
+option = {
+    name = $CLUB$_building
+    trigger = {
+        NOT = {
+            has_country_flag = allow_$CLUB$
+        }
+    }
+    allow = {
+        custom_tooltip = {
+            fail_text = BA_club_favor_fail
+            check_variable = {
+                which = $CLUB$
+                value >= 60
+            }
+        }
+        resource_stockpile_compare = {
+            resource = sr_pyroxenes
+            value >= 200
+            multiplier = $CLUB$_room_limit
+        }
+    }
+    response_text = $CLUB$_building_$CHARA$RE
+    set_country_flag = allow_$CLUB$
+    add_resource = {
+        sr_pyroxenes = -200
+    }
+}
+#增加部室
+option = {
+    name = $CLUB$_building_add
+    trigger = {
+        has_country_flag = allow_$CLUB$
+    }
+    allow = {
+        resource_stockpile_compare = {
+            resource = sr_pyroxenes
+            value >= 1000
+            multiplier = $CLUB$_room_limit
+        }
+    }
+    response_text = $CLUB$_building_add_$CHARA$RE
+    hidden_effect = {
+        change_variable = {
+            which = $CLUB$_room_limit
+            value = 1
+        }
+    }
+    add_resource = {
+        sr_pyroxenes = -200
+    }
+}
+#返回
+option = {
+    name = BA_option_club_exit
+    default_hide_option = yes
+    hidden_effect = {
+        country_event = {
+            id = BA_club.0051
+        }
+    }
+}

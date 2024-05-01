@@ -1,0 +1,17 @@
+option = {
+	name = ARIS_WEAPON_DESC1
+	add_research_option = tech_BA_SPW_ARIS_WEAPON
+	hidden_effect = {
+		change_variable = {
+			which = BA_Weapon_T
+			value = -1
+		}
+	}
+	BA_Engineering_club_weapon_develop_clear = yes
+	trigger = {
+		NOT = {
+			has_tech_option = tech_BA_SPW_ARIS_WEAPON
+		}
+		has_country_flag = Engineering_club_ARIS_WEAPON
+	}
+}

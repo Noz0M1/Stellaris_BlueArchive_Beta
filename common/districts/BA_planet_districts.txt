@@ -1,0 +1,570 @@
+@BA_base_cost = 400
+@BA_ruin_cost = 250
+@BA_base_time = 240
+@BA_ruin_time = 240
+@BA_base_upkeep = 3
+@BA_ruin_upkeep = 2
+@BA_habitat_cost = 100
+#####################################
+#学园都市星球区划
+#####################################
+### 宿舍区划 1槽位、10住房、8舒适度
+BA_districts_dome = {
+	base_buildtime = @BA_base_time
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = BA_planet
+	}
+	potential = {
+		uses_district_set = BA_planet
+	}
+	allow = {
+		NOT = {
+			has_modifier = resort_colony
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	#建造维护费
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @BA_base_cost
+		}
+		upkeep = {
+			energy = @BA_base_upkeep
+		}
+	}
+	#修正
+	planet_modifier = {
+		planet_housing_add = 10
+		planet_max_buildings_add = 2
+		planet_amenities_add = 8
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			#1自警团
+			job_BA_Vigilant_crew_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				OR = {
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+					has_country_flag = BA_Blue_new_world_4
+				}
+			}
+		}
+		#4阶段 住房+5 槽位+2
+		planet_max_buildings_add = 20
+		planet_housing_add = 5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				OR = {
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+					has_country_flag = BA_Blue_new_world_7
+				}
+			}
+		}
+		#7阶段
+		planet_jobs_produces_mult = 0.05
+	}
+}
+
+### 学园区划 2槽位、3住房，减少5稳定度
+BA_districts_campus = {
+	base_buildtime = @BA_base_time
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = BA_planet
+	}
+	potential = {
+		uses_district_set = BA_planet
+	}
+	allow = {
+		NOT = {
+			has_modifier = resort_colony
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @BA_base_cost
+		}
+		upkeep = {
+			energy = @BA_base_upkeep
+		}
+	}
+	#修正
+	planet_modifier = {
+		planet_housing_add = 3
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = {
+					has_country_flag = BA_Blue_new_world_5
+				}
+			}
+		}
+		#5阶段前
+		planet_stability_add = -3
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			#3社团部员
+			job_BA_club_members_add = 3
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_tradition = tr_kivotos_finish
+			}
+		}
+		modifier = {
+			#传统：1学生代表
+			job_BA_student_delegate_add = 1
+			job_BA_club_members_add = -1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = BA_Blue_new_world_4
+			}
+		}
+		#4阶段 住房+3
+		planet_housing_add = 3
+		planet_max_buildings_add = 20
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = BA_Blue_new_world_5
+			}
+		}
+		#5阶段 +1部员
+		job_BA_club_members_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = BA_Blue_new_world_7
+			}
+		}
+		#7阶段
+		planet_jobs_produces_mult = 0.025
+	}
+}
+
+### 自治区区划 2槽位、3住房
+BA_districts_municipality = {
+	base_buildtime = @BA_base_time
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = BA_planet
+	}
+	potential = {
+		uses_district_set = BA_planet
+	}
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @BA_base_cost
+		}
+		upkeep = {
+			energy = @BA_base_upkeep
+		}
+	}
+	#修正
+	planet_modifier = {
+		planet_housing_add = 3
+		planet_max_buildings_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			#3自治区职员
+			job_BA_Kivotos_staff_add = 3
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = BA_Blue_new_world_2
+			}
+		}
+		modifier = {
+			#2阶段 1自治区职员
+			job_BA_Kivotos_staff_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = BA_Blue_new_world_4
+			}
+		}
+		#4阶段 住房+5 
+		planet_housing_add = 5
+		planet_max_buildings_add = 20
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = BA_Blue_new_world_7
+			}
+		}
+		#7阶段
+		planet_jobs_produces_mult = 0.025
+	}
+}
+
+### 军工厂区划 1槽位、3住房
+BA_districts_military_factory = {
+	base_buildtime = @BA_base_time
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = BA_planet
+	}
+	potential = {
+		uses_district_set = BA_planet
+	}
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @BA_base_cost
+		}
+		cost = {
+			minerals = 400
+			trigger = {
+				planet.owner = {
+					has_technology = tech_BA_SI_Trinity_B05
+				}
+			}
+		}
+		upkeep = {
+			energy = @BA_base_upkeep
+		}
+	}
+	#修正
+	planet_modifier = {
+		planet_housing_add = 3
+		planet_max_buildings_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			#3制造石铸造师
+			job_BA_keystone_foundry_add = 3
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = BA_Blue_new_world_3
+			}
+		}
+		modifier = {
+			#3阶段 1制造石铸造师
+			job_BA_keystone_foundry_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = BA_Blue_new_world_4
+			}
+		}
+		#4阶段 住房+3
+		planet_housing_add = 3
+		planet_max_buildings_add = 20
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = BA_Blue_new_world_7
+			}
+		}
+		#7阶段
+		planet_jobs_produces_mult = 0.025
+	}
+}
+
+### 城郊区区划 1槽位、3住房
+BA_districts_suburbs = {
+	base_buildtime = @BA_base_time
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = BA_planet
+	}
+	potential = {
+		uses_district_set = BA_planet
+	}
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @BA_base_cost
+		}
+		upkeep = {
+			energy = @BA_base_upkeep
+		}
+	}
+	#修正
+	planet_modifier = {
+		planet_housing_add = 3
+		planet_max_buildings_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			#2发癫者 2采矿团
+			job_BA_dont_be_crazy_here_add = 2
+			job_BA_Kivotos_miner_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = BA_Blue_new_world_1
+			}
+		}
+		modifier = {
+			#1阶段 1废料精炼工
+			job_BA_scrap_refiner_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = BA_Blue_new_world_4
+			}
+		}
+		#4阶段 住房+3 
+		planet_housing_add = 3
+		planet_max_buildings_add = 20
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = BA_Blue_new_world_7
+			}
+		}
+		#7阶段
+		planet_jobs_produces_mult = 0.025
+	}
+}
+
+#####################################
+#学园都市废墟星球区划
+#####################################
+#定居点区划 1槽位、6住房、4舒适度
+BA_districts_shelter = {
+	base_buildtime = @BA_ruin_time
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = BA_ruined_planet
+	}
+	potential = {
+		uses_district_set = BA_ruined_planet
+	}
+	#建造维护费
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @BA_ruin_cost
+		}
+		upkeep = {
+			energy = @BA_ruin_upkeep
+		}
+	}
+	#修正
+	planet_modifier = {
+		planet_housing_add = 8
+		planet_max_buildings_add = 1
+		planet_amenities_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			#1自警团 1餐务员
+			job_BA_Vigilant_crew_add = 1
+			job_BA_caterer_add = 1
+		}
+	}
+}
+
+#再采集区划 1槽位、3住房
+BA_districts_remining_area = {
+	base_buildtime = @BA_ruin_time
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = BA_ruined_planet
+	}
+	potential = {
+		uses_district_set = BA_ruined_planet
+	}
+	#建造维护费
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @BA_ruin_cost
+		}
+		upkeep = {
+			energy = @BA_ruin_upkeep
+		}
+	}
+	#修正
+	planet_modifier = {
+		planet_housing_add = 3
+		planet_max_buildings_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			#2矿工
+			job_BA_reminer_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = BA_start_at_ruined_planet
+			}
+		}
+		modifier = {
+			#阿里乌斯起源 1矿工
+			job_BA_reminer_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = {
+					has_country_flag = BA_start_at_ruined_planet
+				}
+			}
+		}
+		modifier = {
+			#非阿里乌斯起源 1调查员
+			job_BA_surveyor_add = 1
+		}
+	}
+}
+
+#供给站区划
+BA_districts_supply_station = {
+	base_buildtime = @BA_ruin_time
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = BA_ruined_planet
+	}
+	potential = {
+		uses_district_set = BA_ruined_planet
+	}
+	#建造维护费
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @BA_ruin_cost
+		}
+		upkeep = {
+			energy = @BA_ruin_upkeep
+		}
+	}
+	#修正
+	planet_modifier = {
+		planet_housing_add = 3
+		planet_max_buildings_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			#3太阳能农场职工
+			job_BA_solar_farmer_add = 3
+		}
+	}
+}
+
+#特殊工业区划
+BA_districts_special_factory = {
+	base_buildtime = @BA_ruin_time
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = BA_ruined_planet
+	}
+	potential = {
+		uses_district_set = BA_ruined_planet
+	}
+	#建造维护费
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @BA_ruin_cost
+		}
+		upkeep = {
+			energy = @BA_ruin_upkeep
+		}
+	}
+	#修正
+	planet_modifier = {
+		planet_max_buildings_add = 2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			#阿里乌斯起源 1军需员 1配给员
+			job_BA_quartermaster_add = 1
+			job_BA_supplier_add = 1
+			job_BA_scrap_refiner_add = 1
+		}
+	}
+}

@@ -1,0 +1,12 @@
+entity = { #
+	name = "ba_portraits_entity"
+	pdxmesh = "ba_portraits_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle1"      animation_blend_time = 0 chance = 4 looping = no next_state = idle }
+	state = { name = "idle"       animation = "idle2"      animation_blend_time = 0 chance = 1 looping = no next_state = idle }
+	
+	scale = 3.5
+}
+animation = { name = "ba_portraits_idle_1" file = "ba_portraits_idle_1.anim" }
+animation = { name = "ba_portraits_idle_2" file = "ba_portraits_idle_2.anim" }

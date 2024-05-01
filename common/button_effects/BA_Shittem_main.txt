@@ -1,0 +1,122 @@
+button_effect_BA_angel_24 = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				country_event = {
+                    id = BA_Shittem.1010
+                }
+			}
+		}
+	}
+}
+
+button_effect_BA_communication = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				country_event = {
+					#id = BlueArchiveEvents.2
+					id = BA_Shittem.1300
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_school_idea = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_Shittem.1030
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_community_center = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				#临时
+				country_event = {
+					id = BA_club.0051
+				}
+				#random_list = {
+				#	1 = {
+				#		country_event = {
+				#			id = BlueArchiveEvents.4
+				#		}
+				#	}
+				#	1 = {
+				#		country_event = {
+				#			id = BlueArchiveEvents.400
+				#		}
+				#	}
+				#}
+			}
+		}
+	}
+}
+
+button_effect_BA_entrust = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				country_event = {
+					#id = BlueArchiveEvents.5
+					id = BA_Shittem.2000
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_developer_options = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BlueArchiveEvents.6
+				}
+			}
+		}
+	}
+}

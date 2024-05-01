@@ -1,0 +1,28 @@
+objectTypes = {
+	pdxmesh = {
+		name = "turret_muzzle_01_mesh"
+		file = "gfx\models\ships\test\turret_muzzle_01.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "ba_test_turret_section.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "turret_test_section_mesh"
+		file = "gfx\models\ships\test\turret_test_section.mesh"
+		scale = 1.5
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "ba_test_turret_section.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

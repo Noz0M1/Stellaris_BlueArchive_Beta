@@ -1,0 +1,485 @@
+entity = {
+	name = "ba_item_keystone_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+	# Ship adverts
+
+	state = { name = "idle"	animation = "idle" animation_speed = 1.50  looping = no next_state = "idle"
+		event = { time = 0.0 node = "advert" particle = "ba_item_keystone_particle" keep_particle = yes trigger_once = yes }
+	}
+
+
+	state = { name = "death" animation = "death" looping = no
+	}
+	get_state_from_parent = no
+
+	locator = {
+		name = "advert"
+		position = { 0 23 0 }
+		rotation = { 90 0 0 }
+	}
+
+	locator = {
+		name = "projector"
+		position = { 0  1 0 }
+		rotation = { 0 90 0 }
+	}
+
+	locator = {
+		name = "projector_base"
+		position = { 0 3 0 }
+		rotation = { 0 -90 45 }
+	}
+	
+	attach = {
+		projector = "ba_projector_effect_entity"
+		projector = "ba_projector_effect_entity"
+		projector_base = "ba_advert_part_entity"
+	}
+
+	scale = 1.0
+}
+
+entity = {
+	name = "ba_item_pyroxene_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+	# Ship adverts
+
+
+	state = { name = "idle"	animation = "idle" animation_speed = 1.50  looping = no next_state = "idle"
+		event = { time = 0.0 node = "advert" particle = "ba_item_pyroxene_particle" keep_particle = yes trigger_once = yes }
+	}
+
+
+
+	state = { name = "death" animation = "death" looping = no
+	}
+
+	get_state_from_parent = no
+	locator = {
+		name = "advert"
+		position = { 0 31 10 }
+		rotation = { 90 0 30 }
+	}
+
+	locator = {
+		name = "projector"
+		position = { 0  11 0 }
+		rotation = { 0 120 0 }
+	}
+
+	locator = {
+		name = "projector_base"
+		position = { 0 13 0 }
+		rotation = { 0 -60 45 }
+	}
+	
+	attach = {
+		projector = "ba_projector_effect_entity"
+		projector = "ba_projector_effect_entity"
+		projector_base = "ba_advert_part_entity"
+	}
+
+	scale = 1.0
+}
+
+
+
+entity = {
+	name = "ba_countermeasures_committee_ad_01_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+	# Ship adverts
+
+	state = { name = "idle"	animation = "idle" animation_speed = 1.50  looping = no next_state = "idle"
+		event = { time = 0.0 node = "advert" particle = "ba_countermeasures_committee_ad_particle" keep_particle = yes trigger_once = yes }
+	}
+
+
+	state = { name = "death" animation = "death" looping = no
+	}
+
+	get_state_from_parent = no
+
+	locator = {
+		name = "advert"
+		position = { 0 35 0 }
+		rotation = { 90 0 0 }
+	}
+
+	locator = {
+		name = "projector"
+		position = { 0  12 0 }
+		rotation = { 0 90 0 }
+	}
+
+	locator = {
+		name = "projector_base"
+		position = { 0 14 0 }
+		rotation = { 0 -90 45 }
+	}
+	
+	attach = {
+		projector = "ba_projector_effect_entity"
+		projector = "ba_projector_effect_entity"
+		projector_base = "ba_advert_part_entity"
+	}
+
+	scale = 1.0
+}
+
+
+entity = {
+	name = "ba_engineering_department_ad_01_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+	# Ship adverts
+
+	state = { name = "idle"	animation = "idle" animation_speed = 1.50  looping = no next_state = "idle"
+		event = { time = 0.0 node = "advert" particle = "ba_engineering_department_ad_particle" keep_particle = yes trigger_once = yes }
+	}
+
+
+	state = { name = "death" animation = "death" looping = no
+	}
+	get_state_from_parent = no
+
+	locator = {
+		name = "advert"
+		position = { 0 35 0 }
+		rotation = { 90 0 0 }
+	}
+
+	locator = {
+		name = "projector"
+		position = { 0  12 0 }
+		rotation = { 0 90 0 }
+	}
+
+	locator = {
+		name = "projector_base"
+		position = { 0 14 0 }
+		rotation = { 0 -90 45 }
+	}
+	
+	attach = {
+		projector = "ba_projector_effect_entity"
+		projector = "ba_projector_effect_entity"
+		projector_base = "ba_advert_part_entity"
+	}
+
+	scale = 1.0
+}
+
+
+
+entity = {
+	name = "ba_super_phenomenon_task_force_ad_01_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+	# Ship adverts
+
+	state = { name = "idle"	animation = "idle" animation_speed = 1.50  looping = no next_state = "idle"
+		event = { time = 0.0 node = "advert" particle = "ba_super_phenomenon_task_force_ad_particle" keep_particle = yes trigger_once = yes }
+	}
+
+
+	state = { name = "death" animation = "death" looping = no
+	}
+	get_state_from_parent = no
+
+	locator = {
+		name = "advert"
+		position = { 0 35 0 }
+		rotation = { 90 0 0 }
+	}
+
+	locator = {
+		name = "projector"
+		position = { 0  12 0 }
+		rotation = { 0 90 0 }
+	}
+
+	locator = {
+		name = "projector_base"
+		position = { 0 14 0 }
+		rotation = { 0 -90 45 }
+	}
+	
+	attach = {
+		projector = "ba_projector_effect_entity"
+		projector = "ba_projector_effect_entity"
+		projector_base = "ba_advert_part_entity"
+	}
+
+	scale = 1.0
+}
+
+
+
+
+entity = {
+	name = "ba_game_dev_ad_01_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+	# Ship adverts
+
+
+	state = { name = "idle"	animation = "idle" animation_speed = 1.50  looping = no next_state = "idle"
+		event = { time = 0.0 node = "advert" particle = "ba_game_dev_ad_particle" keep_particle = yes trigger_once = yes }
+	}
+
+
+	state = { name = "death" animation = "death" looping = no
+	}
+
+	get_state_from_parent = no
+	locator = {
+		name = "advert"
+		position = { 0 35 0 }
+		rotation = { 90 0 0 }
+	}
+
+	locator = {
+		name = "projector"
+		position = { 0  12 0 }
+		rotation = { 0 90 0 }
+	}
+
+	locator = {
+		name = "projector_base"
+		position = { 0 14 0 }
+		rotation = { 0 -90 45 }
+	}
+	
+	attach = {
+		projector = "ba_projector_effect_entity"
+		projector = "ba_projector_effect_entity"
+		projector_base = "ba_advert_part_entity"
+	}
+
+	scale = 1.0
+}
+
+
+
+
+entity = {
+	name = "ba_prime_student_council_ad_01_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+	# Ship adverts
+
+
+
+	state = { name = "idle"	animation = "idle" animation_speed = 1.50  looping = no next_state = "idle"
+		event = { time = 0.0 node = "advert" particle = "ba_prime_student_council_ad_particle" keep_particle = yes trigger_once = yes }
+	}
+
+
+	state = { name = "death" animation = "death" looping = no
+	}
+
+	get_state_from_parent = no
+	locator = {
+		name = "advert"
+		position = { 0 35 0 }
+		rotation = { 90 0 0 }
+	}
+
+	locator = {
+		name = "projector"
+		position = { 0  12 0 }
+		rotation = { 0 90 0 }
+	}
+
+	locator = {
+		name = "projector_base"
+		position = { 0 14 0 }
+		rotation = { 0 -90 45 }
+	}
+	
+	attach = {
+		projector = "ba_projector_effect_entity"
+		projector = "ba_projector_effect_entity"
+		projector_base = "ba_advert_part_entity"
+	}
+
+	scale = 1.0
+}
+
+
+
+
+entity = {
+	name = "ba_schale_ad_01_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+	# Ship adverts
+
+	state = { name = "idle"	animation = "idle" animation_speed = 1.50  looping = no next_state = "idle"
+		event = { time = 0.0 node = "advert" particle = "ba_schale_ad_particle" keep_particle = yes trigger_once = yes }
+	}
+
+
+	state = { name = "death" animation = "death" looping = no
+	}
+
+	get_state_from_parent = no
+	locator = {
+		name = "advert"
+		position = { 0 35 0 }
+		rotation = { 90 0 0 }
+	}
+
+	locator = {
+		name = "projector"
+		position = { 0  12 0 }
+		rotation = { 0 90 0 }
+	}
+
+	locator = {
+		name = "projector_base"
+		position = { 0 14 0 }
+		rotation = { 0 -90 45 }
+	}
+	
+	attach = {
+		projector = "ba_projector_effect_entity"
+		projector = "ba_projector_effect_entity"
+		projector_base = "ba_advert_part_entity"
+	}
+
+	scale = 1.0
+}
+
+
+
+
+entity = {
+	name = "ba_tea_party_ad_01_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+	# Ship adverts
+
+	state = { name = "idle"	animation = "idle" animation_speed = 1.50  looping = no next_state = "idle"
+		event = { time = 0.0 node = "advert" particle = "ba_tea_party_ad_particle" keep_particle = yes trigger_once = yes }
+	}
+
+
+	state = { name = "death" animation = "death" looping = no
+	}
+
+	get_state_from_parent = no
+	locator = {
+		name = "advert"
+		position = { 0 35 0 }
+		rotation = { 90 0 0 }
+	}
+
+	locator = {
+		name = "projector"
+		position = { 0  12 0 }
+		rotation = { 0 90 0 }
+	}
+
+	locator = {
+		name = "projector_base"
+		position = { 0 14 0 }
+		rotation = { 0 -90 45 }
+	}
+	
+	attach = {
+		projector = "ba_projector_effect_entity"
+		projector = "ba_projector_effect_entity"
+		projector_base = "ba_advert_part_entity"
+	}
+
+	scale = 1.0
+}
+
+
+
+
+entity = {
+	name = "ba_veritas_ad_01_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+	# Ship adverts
+
+
+	state = { name = "idle"	animation = "idle" animation_speed = 1.50  looping = no next_state = "idle"
+		event = { time = 0.0 node = "advert" particle = "ba_veritas_ad_particle" keep_particle = yes trigger_once = yes }
+	}
+
+
+
+	state = { name = "death" animation = "death" looping = no
+	}
+
+	get_state_from_parent = no
+	locator = {
+		name = "advert"
+		position = { 0 35 0 }
+		rotation = { 90 0 0 }
+	}
+
+	locator = {
+		name = "projector"
+		position = { 0  12 0 }
+		rotation = { 0 90 0 }
+	}
+
+	locator = {
+		name = "projector_base"
+		position = { 0 14 0 }
+		rotation = { 0 -90 45 }
+	}
+	
+	attach = {
+		projector = "ba_projector_effect_entity"
+		projector = "ba_projector_effect_entity"
+		projector_base = "ba_advert_part_entity"
+	}
+
+	scale = 1.0
+}
+
+
+
+
+
+
+
+

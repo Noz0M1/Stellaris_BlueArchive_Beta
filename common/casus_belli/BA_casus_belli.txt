@@ -1,0 +1,33 @@
+#阿里乌斯宣战借口
+BA_Bellum_Ariusum = {
+	potential = {
+		is_country_type = default
+		has_valid_civic = civic_BA_Omnia_Vanitas
+	}
+	is_valid = {
+		has_country_flag = BA_Bellum_Ariusum_allowed
+		OR = {
+			is_subject = no
+			overlord = {
+				NOT = {
+					is_same_value = from
+				}
+			}
+		}
+	}
+	show_notification = yes
+	show_in_diplomacy = yes
+}
+
+BA_resist_Arius = {
+	potential = {
+		from = {
+			has_policy_flag = BA_Arius_Guise_lifted
+		}
+	}
+	is_valid = {
+		always = yes
+	}
+	show_notification = no
+	show_in_diplomacy = no
+}

@@ -1,0 +1,78 @@
+objectTypes = {
+	pdxmesh = {
+		name = "pilot_turret_part_1_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/pilot_turret_part_1.mesh"
+		scale = 3.0
+
+		meshsettings = {
+			name = "Charge_Rifle_01Shape"
+			index = 0
+			texture_diffuse = "Charge_Rifle_01_diffuse.dds"
+			texture_normal = "Charge_Rifle_01_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "pilot_turret_part_2_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/pilot_turret_part_2.mesh"
+		scale = 3.0
+
+		meshsettings = {
+			name = "Pilot_Body_02Shape"
+			index = 0
+			texture_diffuse = "Pilot_Body_02_diffuse.dds"
+			texture_normal = "Pilot_Body_02_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Pilot_Body_01Shape"
+			index = 0
+			texture_diffuse = "Pilot_Body_01_diffuse.dds"
+			texture_normal = "Pilot_Body_01_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "pilot_turret_part_3_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/pilot_turret_part_3.mesh"
+		scale = 3.0
+
+		meshsettings = {
+			name = "Pilot_Helmit_01Shape"
+			index = 0
+			texture_diffuse = "Pilot_Helmit_01_diffuse.dds"
+			texture_normal = "Pilot_Helmit_01_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Pilot_Helmit_02Shape"
+			index = 0
+			texture_diffuse = "Pilot_Helmit_02_diffuse.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "Pilot_Gear_01Shape"
+			index = 0
+			texture_diffuse = "Pilot_Gear_01_diffuse.dds"
+			texture_normal = "Pilot_Gear_01_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Pilot_JumpKit_01Shape"
+			index = 0
+			texture_diffuse = "Pilot_JumpKit_01_diffuse.dds"
+			texture_normal = "Pilot_JumpKit_01_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

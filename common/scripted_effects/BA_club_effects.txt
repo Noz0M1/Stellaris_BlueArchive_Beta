@@ -1,0 +1,117 @@
+BA_club_Engineering_club_function_init = {
+    # physics_research
+    export_resource_stockpile_to_variable = {
+        resource = physics_research
+        variable = BA_weapon_var_physics_research_stockpile
+    }
+    set_variable = {
+        which = BA_weapon_var_prev
+        value = 0
+    }
+    while = {
+        limit = {
+            check_variable = {
+                which = BA_weapon_var_physics_research_stockpile
+                value > value:num_BA_club_weapon_boost_prev
+            }
+        }
+        subtract_variable = {
+            which = BA_weapon_var_physics_research_stockpile
+            value = value:num_BA_club_weapon_boost_prev
+        }
+        change_variable = {
+            which = BA_weapon_var_prev
+            value = 1
+        }
+    }
+    set_variable = {
+        which = BA_weapon_var_physics_research_prev
+        value = BA_weapon_var_prev
+    }
+    # society_research
+    export_resource_stockpile_to_variable = {
+        resource = society_research
+        variable = BA_weapon_var_society_research_stockpile
+    }
+    set_variable = {
+        which = BA_weapon_var_prev
+        value = 0
+    }
+    while = {
+        limit = {
+            check_variable = {
+                which = BA_weapon_var_society_research_stockpile
+                value > value:num_BA_club_weapon_boost_prev
+            }
+        }
+        subtract_variable = {
+            which = BA_weapon_var_society_research_stockpile
+            value = value:num_BA_club_weapon_boost_prev
+        }
+        change_variable = {
+            which = BA_weapon_var_prev
+            value = 1
+        }
+    }
+    set_variable = {
+        which = BA_weapon_var_society_research_prev
+        value = BA_weapon_var_prev
+    }
+    # engineering_research
+    export_resource_stockpile_to_variable = {
+        resource = engineering_research
+        variable = BA_weapon_var_engineering_research_stockpile
+    }
+    set_variable = {
+        which = BA_weapon_var_prev
+        value = 0
+    }
+    while = {
+        limit = {
+            check_variable = {
+                which = BA_weapon_var_engineering_research_stockpile
+                value > value:num_BA_club_weapon_boost_prev
+            }
+        }
+        subtract_variable = {
+            which = BA_weapon_var_engineering_research_stockpile
+            value = value:num_BA_club_weapon_boost_prev
+        }
+        change_variable = {
+            which = BA_weapon_var_prev
+            value = 1
+        }
+    }
+    set_variable = {
+        which = BA_weapon_var_engineering_research_prev
+        value = BA_weapon_var_prev
+    }
+}
+
+BA_club_Engineering_club_function_exec = {
+    while = {
+        limit = {
+            resource_stockpile_compare = {
+                resource = $TECH_CLASS$
+                value > value:num_BA_club_weapon_boost_cost
+            }
+        }
+        add_resource = {
+            $TECH_CLASS$ = -1
+            multiplier = value:num_BA_club_weapon_boost_cost
+        }
+        change_variable = {
+            which = BA_weapon_var_count
+            value = 1
+        }
+        give_technology = {
+            tech = tech_repeatable_weapon_type_Kivotos_$TECH_CLASS$
+            message = no
+        }
+        set_timed_country_flag = {
+            flag = Engineering_club_weapon_develop_cooldown
+            days = 1
+            #years = 1
+        }
+    }
+}

@@ -1,0 +1,59 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Vulture_Shiroko_mesh"
+		file = "gfx\models\ships\SC_BA\Vulture_Shiroko.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "VultureShape"
+			index = 0
+			texture_diffuse = "vulture_diffuse.dds"
+			texture_normal = "vulture_normal.dds"
+			texture_specular = "vulture_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Shiroko_HaloShape"
+			index = 0
+			texture_diffuse = "Shiroko_Original_Halo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "Shiroko_FaceShape"
+			index = 0
+			texture_diffuse = "Shiroko_Original_Face.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Shiroko_EyesShape"
+			index = 0
+			texture_diffuse = "Shiroko_Original_EyeMouth.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Shiroko_HairShape"
+			index = 0
+			texture_diffuse = "Shiroko_Original_Hair.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Shiroko_RidingSuitShape"
+			index = 0
+			texture_diffuse = "Shiroko_RidingSuit_Body.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

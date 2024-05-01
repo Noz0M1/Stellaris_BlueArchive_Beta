@@ -1,0 +1,8208 @@
+particle={
+	name="BA_PV4_001_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_001.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_002_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_002.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_003_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_003.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_004_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_004.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_005_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_005.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_006_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_006.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_007_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_007.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_008_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_008.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_009_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_009.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_010_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_010.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_011_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_011.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_012_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_012.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_013_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_013.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_014_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_014.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_015_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_015.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_016_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_016.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_017_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_017.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_018_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_018.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_019_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_019.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_020_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_020.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_021_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_021.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_022_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_022.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_023_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_023.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_024_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_024.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_025_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_025.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_026_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_026.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_027_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_027.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_028_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_028.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_029_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_029.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_030_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_030.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_031_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_031.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_032_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_032.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_033_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_033.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_034_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_034.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_035_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_035.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_036_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_036.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_037_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_037.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_038_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_038.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_039_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_039.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_040_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_040.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_041_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_041.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_042_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_042.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_043_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_043.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_044_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_044.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_045_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_045.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_046_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_046.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_047_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_047.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_048_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_048.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_049_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_049.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_050_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_050.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_051_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_051.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_052_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_052.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_053_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_053.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_054_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_054.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_055_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_055.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_056_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_056.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_057_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_057.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_058_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_058.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_059_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_059.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_060_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_060.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_061_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_061.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_062_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_062.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_063_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_063.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_064_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_064.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_065_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_065.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_066_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_066.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_067_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_067.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_068_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_068.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_069_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_069.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_070_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_070.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_071_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_071.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_072_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_072.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_073_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_073.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_074_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_074.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_075_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_075.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_076_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_076.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_077_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_077.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_078_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_078.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_079_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_079.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_080_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_080.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_081_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_081.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_082_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_082.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_083_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_083.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_084_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_084.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_085_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_085.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_086_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_086.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_087_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_087.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_088_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_088.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_089_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_089.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_090_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_090.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_091_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_091.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_092_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_092.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_093_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_093.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_094_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_094.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_095_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_095.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_096_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_096.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_097_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_097.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_098_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_098.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_099_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_099.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_100_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_100.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_101_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_101.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_102_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_102.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_103_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_103.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_104_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_104.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_105_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_105.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_106_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_106.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_107_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_107.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_108_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_108.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_109_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_109.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_110_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_110.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_111_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_111.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_112_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_112.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_113_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_113.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_114_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_114.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_115_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_115.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_116_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_116.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_117_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_117.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_118_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_118.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_119_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_119.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_120_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_120.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_121_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_121.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_122_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_122.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_123_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_123.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_124_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_124.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_125_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_125.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_126_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_126.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_127_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_127.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_128_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_128.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_129_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_129.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_130_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_130.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_131_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_131.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_132_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_132.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_133_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_133.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_134_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_134.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_135_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_135.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_136_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_136.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_137_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_137.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_138_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_138.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_139_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_139.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_140_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_140.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_141_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_141.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_142_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_142.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_143_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_143.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_144_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_144.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_145_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_145.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_146_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_146.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_147_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_147.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_148_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_148.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_149_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_149.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_150_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_150.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_151_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_151.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="BA_PV4_152_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/BA_PV/BA_PV4_152.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+

@@ -1,0 +1,27 @@
+entity = {
+	name = "ba_01_construction_platform_entity"
+	pdxmesh = "construction_platform_01_mesh"
+	
+	 state = { name = "construction"
+    }
+	
+		meshsettings = {
+			name = "bodyShape"
+			index = 0
+			texture_diffuse = "ba_01_construction_platform_diffuse.dds"
+			texture_normal = "ba_01_construction_platform_normal.dds"
+			texture_specular = "ba_01_construction_platform_specular.dds"
+			shader = "PdxMeshShip"
+		}
+			
+		default_state = "idle"
+		state = { name = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "construction_platform_hum" } }
+	}
+	
+	 game_data = {
+        custom_texture = "gfx/models/ships/megastructures/construction_platform/construction_platform_01_fadein.dds"
+		emissive_recolor_crunch = 2.0
+    }
+
+}

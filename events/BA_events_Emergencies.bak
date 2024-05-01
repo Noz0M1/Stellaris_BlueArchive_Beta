@@ -1,0 +1,1886 @@
+namespace = BA_Emergencies
+#0001~0200 SRT突袭       0201~0400 Grand Theft Abydos       0401~0600 会员制餐厅
+#########################
+#
+# Rabbit突袭     by:N0Z0M1
+#
+#########################
+#剧情事件
+#SRT突袭1
+country_event = {
+	id = BA_Emergencies.0001
+	title = "BA_Emergencies.0001.name"
+	desc = {
+		text = "BA_Emergencies.0001.desc.a"
+		trigger = {
+			NOT = {
+				has_country_flag = BA_Caerbannog_launched
+			}
+		}
+	}
+	desc = {
+		text = "BA_Emergencies.0001.desc.b"
+		trigger = {
+			has_country_flag = BA_Caerbannog_launched
+		}
+	}
+	picture = GFX_BA_Emergencies_0001
+	is_triggered_only = yes
+	trigger = {
+		#is_ai = no
+		#has_authority = auth_kivotos
+	}
+	# after = {
+	# 	#没有触发许可或者结束标志，则添加触发许可
+	# 	if = {
+	# 		limit = {
+	# 			NOR = {
+	# 				has_country_flag = BA_Caerbannog_launched
+	# 				has_country_flag = BA_Caerbannog_finished
+	# 			}
+	# 		}
+	# 		set_country_flag = BA_Caerbannog_launched
+	# 	}
+	# }
+	option = {
+		name = BA_Emergencies.0001.a
+		default_hide_option = yes
+		#添加一些破坏度
+		if = {
+			limit = {
+				OR = {
+					has_country_flag = BA_Caerbannog_finished
+					has_country_flag = BA_Caerbannog_launched
+				}
+			}
+			capital_scope = {
+				add_planet_devastation = 10
+			}
+			else = {
+				#没有触发许可或者结束标志，则添加触发许可和更多的破坏度
+				capital_scope = {
+					add_planet_devastation = 20
+				}
+				hidden_effect = {
+					set_country_flag = BA_Caerbannog_launched
+				}
+			}
+		}
+	}
+}
+
+#SRT突袭2
+country_event = {
+	id = BA_Emergencies.0002
+	title = "BA_Emergencies.0002.name"
+	desc = "BA_Emergencies.0002.desc"
+	picture = GFX_BA_Emergencies_0002
+	is_triggered_only = yes
+	trigger = {
+		#is_ai = no
+		#has_authority = auth_kivotos
+		#有触发许可才能触发
+		#has_country_flag = BA_Caerbannog_launched
+	}
+	immediate = {
+		#移除触发许可，开始！
+		remove_country_flag = BA_Caerbannog_launched
+		set_country_flag = BA_Caerbannog_engaging
+		#让什亭之匣故障
+		set_country_flag = Shittem_malfunctioned
+		#刷Rabbit小队到首都
+		capital_scope = {
+			planet_event = {
+				id = BA_Emergencies.0101
+			}
+			set_planet_flag = BA_Emergencies_RabbitAttaking
+		}
+	}
+	option = {
+		name = BA_Emergencies.0002.a
+		#开始事件链
+		begin_event_chain = {
+			event_chain = BA_Emergencies_Caerbannog_chain
+			target = ROOT
+		}
+		#陆军相关已经搞定
+		# hidden_effect = {
+		# 	country_event = {
+		# 		id = BA_Emergencies.0003
+		# 	}
+		# }
+	}
+}
+
+#SRT突袭3
+country_event = {
+	id = BA_Emergencies.0003
+	title = "BA_Emergencies.0003.name"
+	desc = "BA_Emergencies.0003.desc"
+	is_triggered_only = yes
+	picture = GFX_BA_Emergencies_0003
+	trigger = {
+		is_ai = no
+	}
+	immediate = {
+	}
+	option = {
+		name = BA_Emergencies.0003.a
+		hidden_effect = {
+			#六个月后触发SRT突袭4
+			country_event = {
+				id = BA_Emergencies.0004
+				days = 180
+			}
+		}
+	}
+}
+
+#SRT突袭4
+country_event = {
+	id = BA_Emergencies.0004
+	title = "BA_Emergencies.0004.name"
+	desc = "BA_Emergencies.0004.desc"
+	picture = GFX_BA_Emergencies_0004
+	is_triggered_only = yes
+	immediate = {
+		#修好什亭之匣
+		remove_country_flag = Shittem_malfunctioned
+	}
+	option = {
+		name = BA_Emergencies.0004.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0005
+			}
+		}
+	}
+}
+
+#SRT突袭5（使用Arona通讯界面）
+country_event = {
+	id = BA_Emergencies.0005
+	title = "BA_Emergencies.0005.name"
+	desc = "BA_Emergencies.0005.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = Arona0018
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_Emergencies.0005.a
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0005.a.response
+	}
+	option = {
+		name = BA_Emergencies.0005.b
+		hidden_effect = {
+			country_event = {
+				days = 3
+				id = BA_Emergencies.0006
+			}
+		}
+	}
+}
+
+#SRT突袭6
+country_event = {
+	id = BA_Emergencies.0006
+	title = "BA_Emergencies.0006.name"
+	desc = "BA_Emergencies.0006.desc"
+	picture = GFX_BA_Emergencies_0006
+	is_triggered_only = yes
+	immediate = {
+		capital_scope = {
+			add_deposit = d_BA_kousagi_park
+		}
+	}
+	option = {
+		name = BA_Emergencies.0006.a
+		default_hide_option = yes
+	}
+}
+
+#SRT突袭7
+country_event = {
+	id = BA_Emergencies.0007
+	title = "BA_Emergencies.0007.name"
+	desc = "BA_Emergencies.0007.desc"
+	picture = GFX_BA_Emergencies_0006
+	is_triggered_only = yes
+	option = {
+		name = BA_Emergencies.0007.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0008
+			}
+		}
+	}
+	option = {
+		name = BA_Emergencies.0007.b
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0103
+			}
+		}
+	}
+}
+
+#SRT突袭8
+country_event = {
+	id = BA_Emergencies.0008
+	title = "BA_Emergencies.0008.name"
+	desc = "BA_Emergencies.0008.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = Kanna
+		room = "BA_RabbitPark_out_room"
+	}
+	option = {
+		name = BA_Emergencies.0008.a
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0008.a.re
+	}
+	option = {
+		name = BA_Emergencies.0008.b
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0008.b.re
+	}
+	option = {
+		name = BA_Emergencies.0008.c
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0008.c.re
+	}
+	option = {
+		name = BA_Emergencies.0008.d
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0008.d.re
+	}
+	option = {
+		name = BA_Emergencies.0008.e
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0008.e.re
+	}
+	option = {
+		name = BA_Emergencies.0008.next
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0009
+			}
+		}
+	}
+}
+
+#SRT突袭9
+country_event = {
+	id = BA_Emergencies.0009
+	title = "BA_Emergencies.0009.name"
+	desc = "BA_Emergencies.0009.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = Emergencies_event9
+		room = "BA_RabbitPark_room"
+	}
+	option = {
+		name = BA_Emergencies.0009.a
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0009.a.re
+	}
+	option = {
+		name = BA_Emergencies.0009.b
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0009.b.re
+	}
+	option = {
+		name = BA_Emergencies.0009.next
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0010
+			}
+		}
+	}
+}
+
+#SRT突袭10
+country_event = {
+	id = BA_Emergencies.0010
+	title = "BA_Emergencies.0010.name"
+	desc = "BA_Emergencies.0010.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = Kanna
+		room = "BA_RabbitPark_out_room"
+	}
+	option = {
+		name = BA_Emergencies.0010.a
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0010.a.re
+	}
+	option = {
+		name = BA_Emergencies.0010.b
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0010.b.re
+	}
+	option = {
+		name = BA_Emergencies.0010.next
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0011
+			}
+		}
+	}
+}
+
+#SRT突袭11
+country_event = {
+	id = BA_Emergencies.0011
+	title = "BA_Emergencies.0011.name"
+	desc = "BA_Emergencies.0011.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = Kirino_Fubuki
+		room = "BA_RabbitPark_out_room"
+	}
+	option = {
+		name = BA_Emergencies.0011.a
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0011.a.re
+	}
+	option = {
+		name = BA_Emergencies.0011.next
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0012
+			}
+		}
+	}
+}
+
+#SRT突袭12
+country_event = {
+	id = BA_Emergencies.0012
+	title = "BA_Emergencies.0012.name"
+	desc = "BA_Emergencies.0012.desc"
+	picture = GFX_BA_Emergencies_0012
+	is_triggered_only = yes
+	option = {
+		name = BA_Emergencies.0012.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0013
+			}
+		}
+	}
+}
+
+#SRT突袭13
+country_event = {
+	id = BA_Emergencies.0013
+	title = "BA_Emergencies.0013.name"
+	desc = "BA_Emergencies.0013.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = RabbitTeam
+		room = "BA_RabbitPark_out_room"
+	}
+	option = {
+		name = BA_Emergencies.0013.a
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0013.a.re
+	}
+	option = {
+		name = BA_Emergencies.0013.b
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0013.b.re
+	}
+	option = {
+		name = BA_Emergencies.0013.next
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0014
+			}
+		}
+	}
+}
+
+#SRT突袭14
+country_event = {
+	id = BA_Emergencies.0014
+	title = "BA_Emergencies.0014.name"
+	desc = "BA_Emergencies.0014.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	is_triggered_only = yes
+	picture_event_data = {
+		room = "BA_interrogation_room"
+	}
+	#审讯咲
+	option = {
+		name = BA_Emergencies.0014.a
+		set_country_flag = BA_Caerbannog_Rabbit2
+		allow = {
+			fail_text = {
+				text = BA_Emergencies.0014.fail
+				NOT = {
+					has_country_flag = BA_Caerbannog_Rabbit2
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0015
+			}
+		}
+	}
+	#审讯萌惠
+	option = {
+		name = BA_Emergencies.0014.b
+		set_country_flag = BA_Caerbannog_Rabbit3
+		allow = {
+			fail_text = {
+				text = BA_Emergencies.0014.fail
+				NOT = {
+					has_country_flag = BA_Caerbannog_Rabbit3
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0016
+			}
+		}
+	}
+	#审讯美游
+	option = {
+		name = BA_Emergencies.0014.c
+		set_country_flag = BA_Caerbannog_Rabbit4
+		allow = {
+			fail_text = {
+				text = BA_Emergencies.0014.fail
+				NOT = {
+					has_country_flag = BA_Caerbannog_Rabbit4
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0017
+			}
+		}
+	}
+}
+
+#SRT突袭15（审讯咲）
+country_event = {
+	id = BA_Emergencies.0015
+	title = "BA_Emergencies.0015.name"
+	desc = "BA_Emergencies.0015.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = Rabbit2
+		room = "BA_interrogation_room"
+	}
+	#对话
+	option = {
+		name = BA_Emergencies.0015.a
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0015.a.re
+	}
+	option = {
+		name = BA_Emergencies.0015.c
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0015.c.re
+	}
+	option = {
+		name = BA_Emergencies.0015.d
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0015.d.re
+	}
+	option = {
+		name = BA_Emergencies.0015.e
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0015.e.re
+	}
+	option = {
+		name = BA_Emergencies.0015.f
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0015.f.re
+	}
+	option = {
+		name = BA_Emergencies.0015.g
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0015.g.re
+	}
+	#返回
+	option = {
+		name = BA_Emergencies.0015.return
+		if = {
+			limit = {
+				has_country_flag = BA_Caerbannog_Rabbit2
+				has_country_flag = BA_Caerbannog_Rabbit3
+				has_country_flag = BA_Caerbannog_Rabbit4
+			}
+			hidden_effect = {
+				country_event = {
+					id = BA_Emergencies.0018
+				}
+			}
+			else = {
+				hidden_effect = {
+					country_event = {
+						id = BA_Emergencies.0014
+					}
+				}
+			}
+		}
+	}
+}
+
+#SRT突袭16（审讯萌惠）
+country_event = {
+	id = BA_Emergencies.0016
+	title = "BA_Emergencies.0016.name"
+	desc = "BA_Emergencies.0016.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = Rabbit3
+		room = "BA_interrogation_room"
+	}
+	#对话
+	option = {
+		name = BA_Emergencies.0016.a
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0016.a.re
+	}
+	option = {
+		name = BA_Emergencies.0016.b
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0016.b.re
+	}
+	option = {
+		name = BA_Emergencies.0016.c
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0016.c.re
+	}
+	option = {
+		name = BA_Emergencies.0016.d
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0016.d.re
+	}
+	option = {
+		name = BA_Emergencies.0016.e
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0016.e.re
+	}
+	#返回
+	option = {
+		name = BA_Emergencies.0016.return
+		if = {
+			limit = {
+				has_country_flag = BA_Caerbannog_Rabbit2
+				has_country_flag = BA_Caerbannog_Rabbit3
+				has_country_flag = BA_Caerbannog_Rabbit4
+			}
+			hidden_effect = {
+				country_event = {
+					id = BA_Emergencies.0018
+				}
+			}
+			else = {
+				hidden_effect = {
+					country_event = {
+						id = BA_Emergencies.0014
+					}
+				}
+			}
+		}
+	}
+}
+
+#SRT突袭17（审讯美游）
+country_event = {
+	id = BA_Emergencies.0017
+	title = "BA_Emergencies.0017.name"
+	desc = "BA_Emergencies.0017.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = Rabbit4
+		room = "BA_interrogation_room"
+	}
+	#对话
+	option = {
+		name = BA_Emergencies.0017.a
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0017.a.re
+	}
+	option = {
+		name = BA_Emergencies.0017.b
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0017.b.re
+	}
+	option = {
+		name = BA_Emergencies.0017.c
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0017.c.re
+	}
+	option = {
+		name = BA_Emergencies.0017.d
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0017.d.re
+	}
+	option = {
+		name = BA_Emergencies.0017.e
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0017.e.re
+	}
+	#返回
+	option = {
+		name = BA_Emergencies.0017.return
+		if = {
+			limit = {
+				has_country_flag = BA_Caerbannog_Rabbit2
+				has_country_flag = BA_Caerbannog_Rabbit3
+				has_country_flag = BA_Caerbannog_Rabbit4
+			}
+			hidden_effect = {
+				country_event = {
+					id = BA_Emergencies.0018
+				}
+			}
+			else = {
+				hidden_effect = {
+					country_event = {
+						id = BA_Emergencies.0014
+					}
+				}
+			}
+		}
+	}
+}
+
+#SRT突袭18
+country_event = {
+	id = BA_Emergencies.0018
+	title = "BA_Emergencies.0018.name"
+	desc = "BA_Emergencies.0018.desc"
+	picture = GFX_BA_Aloha	#图片以后改
+	is_triggered_only = yes
+	option = {
+		name = BA_Emergencies.0018.a
+		hidden_effect = {
+			remove_country_flag = BA_Caerbannog_Rabbit2
+			remove_country_flag = BA_Caerbannog_Rabbit3
+			remove_country_flag = BA_Caerbannog_Rabbit4
+		}
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0019
+			}
+		}
+	}
+}
+
+#SRT突袭19（审讯宫子）
+country_event = {
+	id = BA_Emergencies.0019
+	title = "BA_Emergencies.0019.name"
+	desc = "BA_Emergencies.0019.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = Rabbit1
+		room = "BA_interrogation_room"
+	}
+	#对话
+	option = {
+		name = BA_Emergencies.0019.a
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0019.a.re
+	}
+	option = {
+		name = BA_Emergencies.0019.b
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0019.b.re
+	}
+	option = {
+		name = BA_Emergencies.0019.c
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0019.c.re
+	}
+	option = {
+		name = BA_Emergencies.0019.d
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0019.d.re
+	}
+	option = {
+		name = BA_Emergencies.0019.e
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0019.e.re
+	}
+	#返回
+	option = {
+		name = BA_Emergencies.0019.return
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0020
+			}
+		}
+	}
+}
+
+#SRT突袭20
+country_event = {
+	id = BA_Emergencies.0020
+	title = "BA_Emergencies.0020.name"
+	desc = "BA_Emergencies.0020.desc"
+	picture = GFX_BA_Aloha	#图片以后改
+	is_triggered_only = yes
+	option = {
+		name = BA_Emergencies.0020.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0021
+			}
+		}
+	}
+}
+
+#SRT突袭21
+country_event = {
+	id = BA_Emergencies.0021
+	title = "BA_Emergencies.0021.name"
+	desc = "BA_Emergencies.0021.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	is_triggered_only = yes
+	picture_event_data = {
+		room = "BA_Valkyrie_inner_room"
+	}
+	#对话
+	option = {
+		name = BA_Emergencies.0021.a
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0021.a.re
+	}
+	option = {
+		name = BA_Emergencies.0021.b
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0021.b.re
+	}
+	option = {
+		name = BA_Emergencies.0021.next
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0022
+			}
+		}
+	}
+}
+
+#SRT突袭22
+country_event = {
+	id = BA_Emergencies.0022
+	title = "BA_Emergencies.0022.name"
+	desc = "BA_Emergencies.0022.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = RabbitTeam
+		room = "BA_Valkyrie_inner_room"
+	}
+	#对话
+	option = {
+		name = BA_Emergencies.0022.a
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0022.a.re
+	}
+	option = {
+		name = BA_Emergencies.0022.b
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0022.b.re
+	}
+	option = {
+		name = BA_Emergencies.0022.c
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0022.c.re
+	}
+	option = {
+		name = BA_Emergencies.0022.d
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0022.d.re
+	}
+	option = {
+		name = BA_Emergencies.0022.next
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0023
+			}
+		}
+	}
+}
+
+#SRT突袭23
+country_event = {
+	id = BA_Emergencies.0023
+	title = "BA_Emergencies.0023.name"
+	desc = "BA_Emergencies.0023.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = RabbitTeam
+		room = "BA_Valkyrie_inner_room"
+	}
+	#对话
+	option = {
+		name = BA_Emergencies.0023.a
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0023.a.re
+	}
+	option = {
+		name = BA_Emergencies.0023.b
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0023.b.re
+	}
+	option = {
+		name = BA_Emergencies.0023.c
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0023.c.re
+	}
+	option = {
+		name = BA_Emergencies.0023.d
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0023.d.re
+	}
+	option = {
+		name = BA_Emergencies.0023.e
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0023.e.re
+	}
+	option = {
+		name = BA_Emergencies.0023.next
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0024
+			}
+		}
+	}
+}
+
+#SRT突袭24
+country_event = {
+	id = BA_Emergencies.0024
+	title = BA_Emergencies.0024.title
+	desc = "BA_Emergencies.0024.desc"
+	picture = GFX_BA_Emergencies_0006
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = BA_Rabbit_communication_connected
+	}
+	option = {
+		name = BA_Emergencies.0024.next
+		#custom_tooltip = BA_Emergencies.0024.tip #以后改 做完交流界面再说
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0200
+			}
+		}
+	}
+}
+
+##########
+#交流事件
+country_event = {
+	id = BA_Emergencies.0110
+	title = BA_Emergencies.0110.title
+	desc = "BA_Emergencies.0110.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = RabbitTeam
+		room = BA_RabbitPark_room
+	}
+	immediate = {
+		remove_country_flag = Shittem_engaged
+	}
+	option = {
+		#投喂测试
+		name = BA_Emergencies.0110.a
+		is_dialog_only = yes
+		response_text = "BA_Emergencies.0110.desc"
+		#投喂限制
+		change_variable = {
+			which = BA_Rabbit_feed_limit
+			value = 1
+		}
+		allow = {
+			fail_text = {
+				text = "BA_Rabbit_feed_limit_reached"
+				check_variable = {
+					which = BA_Rabbit_feed_limit
+					value < 3
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0111
+				days = 30
+			}
+		}
+		#投喂效果
+		add_resource = {
+			food = -1
+		}
+		change_variable = {
+			which = BA_Rabbit_communication
+			value = 1
+		}
+	}
+	option = {
+		name = BA_Emergencies.0110.exit
+		default_hide_option = yes
+	}
+}
+
+#解除投喂限制
+country_event = {
+	id = BA_Emergencies.0111
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		#remove_country_flag = BA_Rabbit_feed_limit
+		change_variable = {
+			which = BA_Rabbit_feed_limit
+			value = -1
+		}
+	}
+}
+
+##########
+#功能性事件
+#SRT突袭触发器
+country_event = {
+	id = BA_Emergencies.0100
+	hide_window = yes
+	# mean_time_to_happen = {
+	# 	#测试中，时间设为正式的十分之一
+	# 	months = 120
+	# 	modifier = {
+	# 		factor = 0.3
+	# 		is_at_war = no
+	# 	}
+	# }
+	is_triggered_only = yes
+	trigger = {
+		has_authority = auth_kivotos
+		#该事件开始后、结束后不再触发
+		NOR = {
+			has_country_flag = BA_Caerbannog_engaging
+			has_country_flag = BA_Caerbannog_finished
+		}
+	}
+	immediate = {
+		random_list = {
+			20 = {
+				country_event = {
+					id = BA_Emergencies.0001
+				}
+			}
+			0 = {
+				country_event = {
+					id = BA_Emergencies.0002
+				}
+				modifier = {
+					add = 10
+					has_country_flag = BA_Caerbannog_launched
+				}
+			}
+		}
+	}
+}
+
+#刷Rabbit小队至首都
+planet_event = {
+	id = BA_Emergencies.0101
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		# if = {
+		# 	limit = {
+		# 		any_country = {
+		# 			NOT = {
+		# 				has_country_flag = BA_Caerbannog_Army
+		# 			}
+		# 		}
+		# 	}
+		# 	create_species = {
+		# 		name = "NAME_BA_Caerbannog_species"
+		# 		class = random_non_machine
+		# 		portrait = random
+		# 		traits = random
+		# 	}
+		# 	create_country = {
+		# 		name = "NAME_BA_Caerbannog_country"
+		# 		type = faction
+		# 		species = last_created_species
+		# 		effect = {
+		# 			establish_communications_no_message = root.owner
+		# 			save_global_event_target_as = Caerbannog_country
+		# 			set_country_flag = BA_Caerbannog_Army
+		# 		}
+		# 	}
+		# }
+		if = {
+			limit = {
+				any_country = {
+					NOT = {
+						has_country_flag = BA_Emergency_country
+					}
+				}
+			}
+			create_species = {
+				name = "NAME_BA_Emergency_species"
+				class = random_non_machine
+				portrait = random
+				traits = random
+			}
+			create_country = {
+				name = "NAME_BA_Emergency_country"
+				type = faction
+				species = last_created_species
+				effect = {
+					establish_communications_no_message = Root
+					save_global_event_target_as = BA_Emergency_country
+					set_country_flag = BA_Emergency_country
+				}
+			}
+		}
+		event_target:BA_Emergency_country = {
+			root = {
+				create_army = {
+					name = "BA_Rabbit_sqart_story"
+					owner = PREV
+					species = PREV.owner_species
+					type = "BA_Rabbit_sqart_story"
+				}
+			}
+		}
+	}
+}
+
+#击退Rabbit进攻
+country_event = {
+	id = BA_Emergencies.0102
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		fromfrom = {
+			has_planet_flag = BA_Emergencies_RabbitAttaking
+		}
+		has_country_flag = BA_Emergency_country
+	}
+	immediate = {
+		fromfrom = {
+			remove_planet_flag = BA_Emergencies_RabbitAttaking
+		}
+		from = {
+			country_event = {
+				id = BA_Emergencies.0003
+			}
+		}
+		event_target:BA_Emergency_country = {
+			destroy_country = yes
+		}
+	}
+}
+
+#跳过剧情确认
+country_event = {
+	id = BA_Emergencies.0103
+	title = "BA_Emergencies.0103.name"
+	desc = "BA_Emergencies.0103.desc"
+	picture = GFX_BA_Aloha	#不改了
+	is_triggered_only = yes
+	option = {
+		name = BA_Emergencies.0103.confirm
+		country_event = {
+			id = BA_Emergencies.0024
+		}
+	}
+	option = {
+		name = BA_Emergencies.0103.return
+		country_event = {
+			id = BA_Emergencies.0008
+		}
+	}
+}
+
+#SRT突袭最后一个事件（先在这放着）
+country_event = {
+	id = BA_Emergencies.0200
+	#title = "BA_Emergencies.0200.name"
+	#desc = "BA_Emergencies.0200.desc"
+	#picture = GFX_BA_Aloha	#图片以后改
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		#标志SRT突袭事件完成
+		set_country_flag = BA_Caerbannog_finished
+		remove_country_flag = BA_Caerbannog_engaging
+		#完成事件链
+		end_event_chain = "BA_Emergencies_Caerbannog_chain"
+	}
+	# option = {
+	# 	name = BA_Emergencies.0200.a
+	# }
+}
+
+#
+#
+#
+#
+#########################
+#
+# 给食部与美食研     by:N0Z0M1
+#
+#########################
+#剧情事件
+#食堂01（planA
+country_event = {
+	id = BA_Emergencies.0401
+	title = "BA_Emergencies.0401.name"
+	desc = "BA_Emergencies.0401.desc"
+	picture = GFX_BA_Emergencies_0401
+	is_triggered_only = yes
+	#fire_only_once = yes
+	trigger = {
+		is_ai = no
+        has_authority = auth_kivotos
+		NOR = {
+			has_country_flag = BA_Lunchclub_finished
+			has_country_flag = BA_Lunchclub_launched_planA
+		}
+	}
+	option = {
+		name = BA_Emergencies.0401.a
+		default_hide_option = yes
+		#扣除一些消费品
+		add_resource = {
+			consumer_goods = -40
+		}
+	}
+	option = {
+		name = BA_Emergencies.0401.b
+		custom_tooltip = BA_Emergencies.0401.b.tip
+		#扣除一些消费品
+		add_resource = {
+			consumer_goods = -40
+		}
+		#拨款补贴
+		add_resource = {
+			energy = -10
+		}
+	}
+	after = {
+		hidden_effect = {
+			set_country_flag = BA_Lunchclub_launched_planA
+		}
+	}
+}
+
+#食堂02（planB
+country_event = {
+	id = BA_Emergencies.0402
+	title = "BA_Emergencies.0402.name"
+	desc = "BA_Emergencies.0402.desc"
+	picture = GFX_BA_Emergencies_0401
+	is_triggered_only = yes
+	#fire_only_once = yes
+	trigger = {
+		is_ai = no
+        has_authority = auth_kivotos
+		NOR = {
+			has_country_flag = BA_Lunchclub_finished
+			has_country_flag = BA_Lunchclub_launched_planB
+		}
+	}
+	option = {
+		name = BA_Emergencies.0402.a
+		default_hide_option = yes
+		#扣除一些合金
+		add_resource = {
+			alloys = -40
+		}
+	}
+	option = {
+		name = BA_Emergencies.0402.b
+		custom_tooltip = BA_Emergencies.0402.b.tip
+		#扣除一些合金
+		add_resource = {
+			alloys = -40
+		}
+		#拨款补助
+		add_resource = {
+			alloys = -10
+		}
+	}
+	after = {
+		hidden_effect = {
+			set_country_flag = BA_Lunchclub_launched_planB
+			country_event = {
+				id = BA_Emergencies.0403
+				days = 30
+			}
+		}
+	}
+}
+
+#食堂03（PlanB后续
+country_event = {
+	id = BA_Emergencies.0403
+	title = "BA_Emergencies.0403.name"
+	desc = "BA_Emergencies.0403.desc"
+	picture = GFX_BA_Emergencies_0401
+	is_triggered_only = yes
+	#fire_only_once = yes
+	trigger = {
+		is_ai = no
+        has_authority = auth_kivotos
+	}
+	option = {
+		name = BA_Emergencies.0403.a
+	}
+}
+
+#食堂04（PlanC
+country_event = {
+	id = BA_Emergencies.0404
+	title = "BA_Emergencies.0404.name"
+	desc = "BA_Emergencies.0404.desc"
+	picture = GFX_BA_Emergencies_0401
+	is_triggered_only = yes
+	#fire_only_once = yes
+	trigger = {
+		is_ai = no
+        has_authority = auth_kivotos
+		NOR = {
+			has_country_flag = BA_Lunchclub_finished
+			has_country_flag = BA_Lunchclub_launched_planC
+		}
+	}
+	option = {
+		name = BA_Emergencies.0404.a
+		default_hide_option = yes
+		#扣除一些影响力
+		add_resource = {
+			influence = -10
+		}
+	}
+	option = {
+		name = BA_Emergencies.0404.b
+		custom_tooltip = BA_Emergencies.0404.b.tip
+		#扣除一些影响力
+		add_resource = {
+			influence = -10
+		}
+		#拨款补助
+		add_resource = {
+			influence = -2
+		}
+	}
+	after = {
+		hidden_effect = {
+			set_country_flag = BA_Lunchclub_launched_planC
+		}
+	}
+}
+
+#食堂05
+country_event = {
+	id = BA_Emergencies.0405
+	title = "BA_Emergencies.0405.name"
+	desc = "BA_Emergencies.0405.desc"
+	picture = GFX_BA_Emergencies_0401
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		is_ai = no
+        has_authority = auth_kivotos
+		#有触发许可ABC才能触发
+		has_country_flag = BA_Lunchclub_launched_planA
+		has_country_flag = BA_Lunchclub_launched_planB
+		has_country_flag = BA_Lunchclub_launched_planC
+	}
+	immediate = {
+		#移除触发许可，开始！
+		remove_country_flag = BA_Lunchclub_launched_planA
+		remove_country_flag = BA_Lunchclub_launched_planB
+		remove_country_flag = BA_Lunchclub_launched_planC
+		#标志进行中
+		set_country_flag = BA_Lunchclub_engaging
+	}
+	option = {
+		name = BA_Emergencies.0405.a
+		custom_tooltip = BA_Emergencies.0405.a.tip
+		add_resource = {
+			consumer_goods = -1
+			minerals = -2
+		}
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0406
+				days = 15
+			}
+		}
+	}
+}
+
+#食堂06
+country_event = {
+	id = BA_Emergencies.0406
+	title = "BA_Emergencies.0406.name"
+	desc = "BA_Emergencies.0406.desc"
+	picture = GFX_BA_Emergencies_0406
+	is_triggered_only = yes
+	option = {
+		name = BA_Emergencies.0406.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0407
+			}
+		}
+	}
+}
+
+#食堂07
+country_event = {
+	id = BA_Emergencies.0407
+	title = "BA_Emergencies.0407.name"
+	desc = "BA_Emergencies.0407.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		room = "BA_0407_room"
+	}
+	is_triggered_only = yes
+	option = {
+		name = BA_Emergencies.0407.a
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0407.a.response
+	}
+	option = {
+		name = BA_Emergencies.0407.b
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0407.b.response
+	}
+	option = {
+		name = BA_Emergencies.0407.c
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0407.c.response
+	}
+	option = {
+		name = BA_Emergencies.0407.next
+		custom_tooltip = BA_Emergencies.0407.next.tip
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0408
+			}
+		}
+	}
+}
+
+#食堂08
+country_event = {
+	id = BA_Emergencies.0408
+	title = "BA_Emergencies.0408.name"
+	desc = "BA_Emergencies.0408.desc"
+	picture = GFX_BA_No_signal
+	is_triggered_only = yes
+	option = {
+		name = BA_Emergencies.0408.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0409
+			}
+		}
+	}
+}
+
+#食堂09
+country_event = {
+	id = BA_Emergencies.0409
+	title = "BA_Emergencies.0409.name"
+	desc = "BA_Emergencies.0409.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		room = "BA_0409_room"
+	}
+	is_triggered_only = yes
+	option = {
+		name = BA_Emergencies.0409.a
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0409.a.response
+	}
+	option = {
+		name = BA_Emergencies.0409.b
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0409.b.response
+	}
+	option = {
+		name = BA_Emergencies.0409.next
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0410
+			}
+		}
+	}
+}
+
+#食堂10
+country_event = {
+	id = BA_Emergencies.0410
+	title = "BA_Emergencies.0410.name"
+	desc = "BA_Emergencies.0410.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		room = "BA_0410_room"
+	}
+	is_triggered_only = yes
+	option = {
+		name = BA_Emergencies.0410.a
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0410.a.response
+	}
+	option = {
+		name = BA_Emergencies.0410.b
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0410.b.response
+	}
+	option = {
+		name = BA_Emergencies.0410.next
+		custom_tooltip = BA_Emergencies.0410.next.tip
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0411
+			}
+		}
+	}
+}
+
+#食堂11
+country_event = {
+	id = BA_Emergencies.0411
+	title = "BA_Emergencies.0411.name"
+	desc = "BA_Emergencies.0411.desc"
+	picture = GFX_BA_No_signal
+	is_triggered_only = yes
+	option = {
+		name = BA_Emergencies.0411.a
+		#刷出饼酱
+		capital_scope = {
+			hidden_effect = {
+				planet_event = {
+					id = BA_Emergencies.0501
+				}
+				set_planet_flag = BA_Emergencies_CakeAttaking
+			}
+		}
+	}
+}
+
+#食堂12
+country_event = {
+	id = BA_Emergencies.0412
+	title = "BA_Emergencies.0412.name"
+	desc = "BA_Emergencies.0412.desc"
+	picture = GFX_evt_city_ruins
+	is_triggered_only = yes
+	option = {
+		name = BA_Emergencies.0412.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0413
+			}
+		}
+	}
+}
+
+#食堂13
+country_event = {
+	id = BA_Emergencies.0413
+	title = "BA_Emergencies.0413.name"
+	desc = "BA_Emergencies.0413.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		room = "BA_0413_room"
+	}
+	is_triggered_only = yes
+	option = {
+		name = BA_Emergencies.0413.a
+		is_dialog_only = yes
+		response_text = BA_Emergencies.0413.a.response
+	}
+	option = {
+		name = BA_Emergencies.0413.next
+		custom_tooltip = BA_Emergencies.0413.next.tip
+		hidden_effect = {
+			country_event = {
+				id = BA_Emergencies.0600
+			}
+		}
+	}
+}
+
+##########
+#功能性事件
+#食堂事件触发器
+country_event = {
+	id = BA_Emergencies.0500
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+        has_authority = auth_kivotos
+		#该事件开始后、结束后不再触发
+		NOR = {
+			has_country_flag = BA_Lunchclub_engaging
+			has_country_flag = BA_Lunchclub_finished
+		}
+	}
+	immediate = {
+		random_list = {
+			20 = {
+				country_event = {
+					id = BA_Emergencies.0401
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = BA_Lunchclub_launched_planA
+				}
+			}
+			20 = {
+				country_event = {
+					id = BA_Emergencies.0402
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = BA_Lunchclub_launched_planB
+				}
+			}
+			20 = {
+				country_event = {
+					id = BA_Emergencies.0404
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = BA_Lunchclub_launched_planC
+				}
+			}
+			0 = {
+				country_event = {
+					id = BA_Emergencies.0405
+				}
+				modifier = {
+					add = 30
+					has_country_flag = BA_Lunchclub_launched_planA
+					has_country_flag = BA_Lunchclub_launched_planB
+					has_country_flag = BA_Lunchclub_launched_planC
+				}
+			}
+		}
+	}
+}
+
+#刷饼酱到首都
+planet_event = {
+	id = BA_Emergencies.0501
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				any_country = {
+					NOT = {
+						has_country_flag = BA_Emergency_country
+					}
+				}
+			}
+			create_species = {
+				name = "NAME_BA_Emergency_species"
+				class = random_non_machine
+				portrait = random
+				traits = random
+			}
+			create_country = {
+				name = "NAME_BA_Emergency_country"
+				type = faction
+				species = last_created_species
+				effect = {
+					establish_communications_no_message = Root
+					save_global_event_target_as = BA_Emergency_country
+					set_country_flag = BA_Emergency_country
+				}
+			}
+		}
+		event_target:BA_Emergency_country = {
+			root = {
+				create_army = {
+					name = "BA_Cake_chan_story"
+					owner = PREV
+					species = PREV.owner_species
+					type = "BA_Cake_chan_story"
+				}
+			}
+		}
+	}
+}
+
+#击退饼酱进攻
+country_event = {
+	id = BA_Emergencies.0502
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		fromfrom = {
+			has_planet_flag = BA_Emergencies_CakeAttaking
+		}
+		has_country_flag = BA_Emergency_country
+	}
+	immediate = {
+		fromfrom = {
+			remove_planet_flag = BA_Emergencies_CakeAttaking
+		}
+		from = {
+			country_event = {
+				id = BA_Emergencies.0412
+			}
+		}
+	}
+}
+
+#收尾事件
+country_event = {
+	id = BA_Emergencies.0600
+	#title = "BA_Emergencies.0600.name"
+	#desc = "BA_Emergencies.0600.desc"
+	#picture = GFX_BA_Aloha	#图片以后改
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		#标志事件完成
+		set_country_flag = BA_Lunchclub_finished
+		remove_country_flag = BA_Lunchclub_engaging
+		#完成事件链
+		#end_event_chain = "BA_Emergencies_Caerbannog_chain"
+	}
+}
+
+#
+#
+#
+#
+#########################
+#
+# 杂项代码     by:N0Z0M1
+#
+#########################
+#创建突袭事件相关国家(现在用不上
+country_event = {
+	id = BA_Emergencies.9990
+	is_triggered_only = yes
+	hide_window = yes
+	fire_only_once = yes
+	immediate = {
+		if = {
+			limit = {
+				any_country = {
+					NOT = {
+						has_country_flag = BA_Emergency_country
+					}
+				}
+			}
+			create_species = {
+				name = "NAME_BA_Emergency_species"
+				class = random_non_machine
+				portrait = random
+				traits = random
+			}
+			create_country = {
+				name = "NAME_BA_Emergency_country"
+				type = faction
+				species = last_created_species
+				effect = {
+					establish_communications_no_message = Root
+					save_global_event_target_as = BA_Emergency_country
+					set_country_flag = BA_Emergency_country
+				}
+			}
+		}
+	}
+}
+
+#hina阻止搞事
+country_event = {
+	id = BA_Emergencies.9991
+	title = "BA_Emergencies.9991.name"
+	desc = "BA_Emergencies.9991.desc"
+	picture = GFX_BA_Emergencies_0401
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = hina_is_leader_flag
+	}
+	option = {
+		name = BA_Emergencies.9991.next
+	}
+}
+
+#小打小闹
+country_event = {
+	id = BA_Emergencies.9992
+	title = "BA_Emergencies.9992.name"
+	desc = "BA_Emergencies.9992.desc"
+	picture = GFX_BA_Emergencies_0401
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		is_ai = no
+        has_authority = auth_kivotos
+	}
+	option = {
+		name = BA_Emergencies.9992.a
+		default_hide_option = yes
+	}
+}
+
+#事件链触发器
+event = {
+	id = BA_Emergencies.9000
+	is_triggered_only = yes
+	hide_window = yes
+	fire_only_once = yes
+	immediate = {
+		while = {
+			limit = {
+				any_country = {
+					has_authority = auth_kivotos
+					NOT = {
+						has_country_flag = BA_Emergency_selected
+					}
+					is_ai = no
+				}
+			}
+			random_country = {
+				limit = {
+					has_authority = auth_kivotos
+					NOT = {
+						has_country_flag = BA_Emergency_selected
+					}
+					is_ai = no
+				}
+				set_country_flag = BA_Emergency_selected
+				random_list = {
+					1 = {
+						modifier = {
+							set = 0
+							has_global_flag = BA_Emergengy_01
+						}
+						country_event = {
+							id = BA_Emergencies.9001
+							days = 1800
+							random = 1800
+						}
+						set_global_flag = BA_Emergengy_01
+					}
+					1 = {
+						modifier = {
+							set = 0
+							has_global_flag = BA_Emergengy_02
+						}
+						country_event = {
+							id = BA_Emergencies.9002
+							days = 1800
+							random = 1800
+						}
+						set_global_flag = BA_Emergengy_02
+					}
+				}
+			}
+		}
+	}
+	# immediate = {
+	# 	#主要触发器
+	# 	if = {
+	# 		limit = {
+    #           has_authority = auth_kivotos
+	# 			#阿里乌斯起源不触发
+	# 			NOT = {
+	# 				has_origin = origin_Kivotos_Kyrie
+	# 			}
+	# 			#无正在触发的突发事件
+	# 			NOR = {
+	# 				has_country_flag = BA_Caerbannog_engaging
+	# 				has_country_flag = BA_Lunchclub_engaging
+	# 			}
+	# 			#先修好什亭之匣，然后才能触发
+	# 			has_country_flag = BA_Arona_Established
+	# 		}
+	# 		fire_on_action = {
+	# 			on_action = on_BA_Emergency
+	# 		}
+	# 	}
+	# 	#如果有事件正在触发，则继续进行该事件
+	# 	else_if = {
+	# 		limit = {
+	# 			has_country_flag = BA_Caerbannog_engaging
+	# 		}
+	# 		country_event = {
+	# 			id = BA_Emergencies.0100
+	# 		}
+	# 	}
+	# 	else_if = {
+	# 		limit = {
+	# 			has_country_flag = BA_Lunchclub_engaging
+	# 		}
+	# 		country_event = {
+	# 			id = BA_Emergencies.0500
+	# 		}
+	# 	}
+	# }
+}
+
+country_event = {
+	id = BA_Emergencies.9001
+	hide_window = yes
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = BA_Emergencies.9002
+	hide_window = yes
+	is_triggered_only = yes
+}

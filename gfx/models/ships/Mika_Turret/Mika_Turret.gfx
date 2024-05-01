@@ -1,0 +1,95 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Mika_Turret_mesh"
+		file = "gfx/models/ships/Mika_Turret/Mika_Turret.mesh"
+		scale = 1.5
+
+		meshsettings = {
+			name = "Sponge_Cake_CannonShape"
+			index = 0
+			texture_diffuse = "Sponge_Cake_Cannon.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Sponge_CakeShape"
+			index = 0
+			texture_diffuse = "Sponge_Cake.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mika_MouthShape"
+			index = 0
+			texture_diffuse = "Mika_Character_Mouth.dds"
+			shader = "AlphaBlend_00"
+		}
+
+		meshsettings = {
+			name = "PlateShape"
+			index = 0
+			texture_diffuse = "Plate.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mika_HairShape"
+			index = 0
+			texture_diffuse = "Mika_Hair.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mika_FaceShape"
+			index = 0
+			texture_diffuse = "Mika_Face.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mika_EyeShape"
+			index = 0
+			texture_diffuse = "Mika_EyeMouth.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mika_BodyShape"
+			index = 0
+			texture_diffuse = "Mika_Body.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mika__HaloShape"
+			index = 0
+			texture_diffuse = "Mika_Halo.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Sponge_Cake_Cannon_MuzzleShape"
+			index = 0
+			texture_diffuse = "Sponge_Cake_Cannon_Muzzle.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

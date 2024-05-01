@@ -1,0 +1,31 @@
+#默认的飞地country_type，不会就不要动，对于内部参数有些简单注释。有需要可以试着新建。
+BA_club_enclave = {
+	blocks_piracy = yes
+	show_in_contacts_list = no
+	can_have_their_comms_shared = yes
+	government = yes	#是否有政府，你可能懒得写政府，那就改成no
+	#is_enclave = yes	#是飞地吗？
+	observable = no
+	ai = {
+		#飞地不需要AI
+		enabled = no
+	}
+	faction = {
+		hostile = no
+		needs_border_access = no
+		generate_borders = no
+		needs_colony = no
+	}
+	custom_diplomacy = yes	#自定义外交，用于触发外交事件
+	custom_opinion = yes	#自定义好感，用于事件调整国家好感
+	modules = {
+		basic_technology_module = {
+		}
+		standard_event_module = {
+		}
+		exclusive_diplomacy_module = {
+		}
+		# Nothing is allowed, but we need this for relationships.
+		#basic_technology_module = {}
+	}
+}

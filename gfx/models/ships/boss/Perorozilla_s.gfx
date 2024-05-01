@@ -1,0 +1,30 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Perorozilla_s_mesh"
+		file = "gfx\models\ships\boss/Perorozilla_s.mesh"
+		scale = 2.0
+
+		meshsettings = {
+			name = "Peroro_Mini_Wizard002Shape"
+			index = 0
+			texture_diffuse = "Perorozilla_Original.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+	pdxmesh = {
+		name = "Perorozilla_Color_s_mesh"
+		file = "gfx\models\ships\boss/Perorozilla_s.mesh"
+		scale = 2.0
+
+		meshsettings = {
+			name = "Peroro_Mini_Wizard002Shape"
+			index = 0
+			texture_diffuse = "Perorozilla_Color.dds"
+			texture_normal = "Perorozilla_Color_normal.dds"
+			texture_specular = "Color_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}

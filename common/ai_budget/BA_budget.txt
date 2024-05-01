@@ -1,0 +1,29 @@
+BA_auto_districts_buffer = {
+	# Buffer, will not be spent
+	resource = energy
+	type = expenditure
+	category = BA_auto_districts
+	potential = {
+		always = no
+	}
+}
+
+BA_auto_buildings_buffer = {
+	# Buffer, will not be spent
+	resource = energy
+	type = expenditure
+	category = BA_auto_buildings
+	potential = {
+		always = no
+	}
+}
+
+BA_museum_buffer = {
+	# Buffer, will not be spent
+	resource = energy
+	type = expenditure
+	category = BA_museum
+	potential = {
+		always = no
+	}
+}

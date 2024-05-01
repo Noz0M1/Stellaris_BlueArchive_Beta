@@ -1,0 +1,144 @@
+# leader special species
+portrait_groups = {
+	"Schale_leaders" = {
+		default = "BA_18"
+		game_setup = {
+			add = {
+				portraits = {
+				}
+			}
+		}
+		#species scope
+		species = {
+			#generic portrait for a species
+			add = {
+				portraits = {
+				}
+			}
+		}
+		#leader scope
+		leader = {
+			#scientists, generals, admirals, governor
+			add = {
+				portraits = {
+				}
+			}
+		}
+		#leader scope 
+		ruler = {
+			add = {
+				portraits = {
+				}
+			}
+		}
+	}
+}
+
+# Aris
+portrait_groups = {
+	"Aris" = {
+		default = "Aris01"
+		game_setup = {
+			add = {
+				portraits = {
+					"Aris01"
+					"Aris02"
+					"Aris03"
+					"Aris04"
+					"Aris05"
+					"Aris06"
+					"Aris07"
+					"Aris08"
+					"Aris09"
+					"Aris10"
+					"Aris11"
+					"Aris12"
+					"Aris13"
+				}
+			}
+		}
+		#species scope
+		species = {
+			#generic portrait for a species
+			add = {
+				portraits = {
+					"Aris01"
+					"Aris02"
+					"Aris03"
+					"Aris04"
+					"Aris05"
+					"Aris06"
+					"Aris07"
+					"Aris08"
+					"Aris09"
+					"Aris10"
+					"Aris11"
+					"Aris12"
+					"Aris13"
+				}
+			}
+		}
+		#pop scope
+		pop = {
+			#for a specific pop
+			add = {
+				portraits = {
+					"Aris01"
+					"Aris02"
+					"Aris03"
+					"Aris04"
+					"Aris05"
+					"Aris06"
+					"Aris07"
+					"Aris08"
+					"Aris09"
+					"Aris10"
+					"Aris11"
+					"Aris12"
+					"Aris13"
+				}
+			}
+		}
+		#leader scope
+		leader = {
+			#scientists, generals, admirals, governor
+			add = {
+				portraits = {
+					"Aris01"
+					"Aris02"
+					"Aris03"
+					"Aris04"
+					"Aris05"
+					"Aris06"
+					"Aris07"
+					"Aris08"
+					"Aris09"
+					"Aris10"
+					"Aris11"
+					"Aris12"
+					"Aris13"
+				}
+			}
+		}
+		#leader scope 
+		ruler = {
+			add = {
+				portraits = {
+					"Aris01"
+					"Aris02"
+					"Aris03"
+					"Aris04"
+					"Aris05"
+					"Aris06"
+					"Aris07"
+					"Aris08"
+					"Aris09"
+					"Aris10"
+					"Aris11"
+					"Aris12"
+					"Aris13"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "Goz_Cards"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "swarmer_missiles_02_hit_entity"
+	shield_hit_entity = "swarmer_missiles_02_shield_hit_entity"
+	muzzle_flash_entity = "swarmer_missiles_muzzle_flash_entity"
+	
+	#missile specific data
+	entity = "Goz_Cards_entity"
+	
+	shield_impact = {
+		size = medium
+		delay = 0.0
+	}
+}
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "Goz_Screamrider"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "missile_large_hit_entity"
+	shield_hit_entity = "missile_large_shield_hit_entity"
+	muzzle_flash_entity = "missile_large_muzzle_flash_entity"
+	
+	#missile specific data
+	entity = "Goz_Screamrider_entity"
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}

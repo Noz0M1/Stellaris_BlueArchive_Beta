@@ -1,0 +1,40 @@
+entity = {
+	name = "bacolorized_01_explosion_swipe_entity"
+	pdxmesh = "nemesis_01_explosion_swipe_mesh"
+	scale = 1
+	default_state = "idle"
+		state = { name = "idle"  animation = "idle" looping = no
+
+
+	}	
+		game_data = {
+		bloom_factor			= 1.5
+		uv_animation_speed 			= 0.2
+		uv_animation_direction 	= { -0.1 1 }
+		}
+		
+}
+
+entity = {
+	name = "bacolorized_01_explosion_swipe_s_entity"
+	pdxmesh = "nemesis_01_explosion_swipe_mesh"
+	scale = 0.3
+	default_state = "idle"
+		state = { name = "idle"  animation = "idle" looping = no
+
+
+	}	
+		game_data = {
+		bloom_factor			= 1.5
+		uv_animation_speed 			= 0.2
+		uv_animation_direction 	= { -0.1 1 }
+		}
+		
+}
+
+
+
+animation = {
+	name = "bacolorized_01_swipe_grow"
+	file = "nemesis_01_explosion_swipe_idle.anim"
+}

@@ -1,0 +1,29 @@
+objectTypes = {
+	pdxmesh = {
+		name = "ba_01_explosion_swipe_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_explosion_swipe.mesh"
+		animation = { id = "idle"		type = "ba_01_swipe_grow" }
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "ba_01_explosion_swipe.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUVErosion"
+		}
+	}
+	
+#	pdxmesh = {
+#		name = "ba_01_explosion_debri_mesh"
+#		file = "gfx/models/ships/nem_test/ba_01_explosion_debri.mesh"
+#		animation = { id = "idle"		type = "ba_01_debri" }
+#
+#		meshsettings = {
+#			index = 0
+#			texture_diffuse = "explosion_debri.dds"
+#			texture_normal = "nonormal.dds"
+#			texture_specular = "nospec.dds"
+#			shader = "PdxMeshShip"
+#		}
+#	}
+}

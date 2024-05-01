@@ -1,0 +1,1013 @@
+#防具
+##### 背包
+#T1
+utility_component_template = {
+	key = "SMALL_T1BACKPACK"
+	size = small
+	icon = "GFX_T1BACKPACK"
+	icon_frame = 1
+	power = -20
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = 0.07
+			alloys = 0.014
+		}
+	}
+	modifier = {
+		ship_shield_add = 65
+		ship_armor_add = 65
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T1"
+	}
+	component_set = "T1backpack"
+	upgrades_to = "SMALL_T2BACKPACK"
+}
+
+utility_component_template = {
+	key = "MEDIUM_T1BACKPACK"
+	size = medium
+	icon = "GFX_T1BACKPACK"
+	icon_frame = 1
+	power = -40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 40
+		}
+		upkeep = {
+			energy = 0.13
+			alloys = 0.026
+		}
+	}
+	modifier = {
+		ship_shield_add = 160
+		ship_armor_add = 160
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T1"
+	}
+	component_set = "T1backpack"
+	upgrades_to = "MEDIUM_T2BACKPACK"
+}
+
+utility_component_template = {
+	key = "LARGE_T1BACKPACK"
+	size = large
+	icon = "GFX_T1BACKPACK"
+	icon_frame = 1
+	power = -80
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 80
+		}
+		upkeep = {
+			energy = 0.26
+			alloys = 0.052
+		}
+	}
+	modifier = {
+		ship_shield_add = 390
+		ship_armor_add = 390
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T1"
+	}
+	component_set = "T1backpack"
+	upgrades_to = "LARGE_T2BACKPACK"
+}
+
+#T2
+utility_component_template = {
+	key = "SMALL_T2BACKPACK"
+	size = small
+	icon = "GFX_T2BACKPACK"
+	icon_frame = 1
+	power = -25
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 25
+		}
+		upkeep = {
+			energy = 0.09
+			alloys = 0.018
+		}
+	}
+	modifier = {
+		ship_shield_add = 85
+		ship_armor_add = 85
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T2"
+	}
+	component_set = "T2backpack"
+	upgrades_to = "SMALL_T3BACKPACK"
+}
+
+utility_component_template = {
+	key = "MEDIUM_T2BACKPACK"
+	size = medium
+	icon = "GFX_T2BACKPACK"
+	icon_frame = 1
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+		}
+		upkeep = {
+			energy = 0.17
+			alloys = 0.034
+		}
+	}
+	modifier = {
+		ship_shield_add = 215
+		ship_armor_add = 215
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T2"
+	}
+	component_set = "T2backpack"
+	upgrades_to = "MEDIUM_T3BACKPACK"
+}
+
+utility_component_template = {
+	key = "LARGE_T2BACKPACK"
+	size = large
+	icon = "GFX_T2BACKPACK"
+	icon_frame = 1
+	power = -100
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+		}
+		upkeep = {
+			energy = 0.34
+			alloys = 0.068
+		}
+	}
+	modifier = {
+		ship_shield_add = 510
+		ship_armor_add = 510
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T2"
+	}
+	component_set = "T2backpack"
+	upgrades_to = "LARGE_T3BACKPACK"
+}
+
+#T3
+utility_component_template = {
+	key = "SMALL_T3BACKPACK"
+	size = small
+	icon = "GFX_T3BACKPACK"
+	icon_frame = 1
+	power = -35
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 25
+			sr_pyroxenes = 1
+		}
+		upkeep = {
+			energy = 0.17
+			alloys = 0.034
+		}
+	}
+	modifier = {
+		ship_shield_add = 110
+		ship_shield_regen_add_static = 1.1
+		ship_armor_add = 110
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T3"
+	}
+	component_set = "T3backpack"
+	upgrades_to = "SMALL_T4BACKPACK"
+}
+
+utility_component_template = {
+	key = "MEDIUM_T3BACKPACK"
+	size = medium
+	icon = "GFX_T3BACKPACK"
+	icon_frame = 1
+	power = -70
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+			sr_pyroxenes = 1
+		}
+		upkeep = {
+			energy = 0.34
+			alloys = 0.068
+		}
+	}
+	modifier = {
+		ship_shield_add = 275
+		ship_shield_regen_add_static = 2.75
+		ship_armor_add = 275
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T3"
+	}
+	component_set = "T3backpack"
+	upgrades_to = "MEDIUM_T4BACKPACK"
+}
+
+utility_component_template = {
+	key = "LARGE_T3BACKPACK"
+	size = large
+	icon = "GFX_T3BACKPACK"
+	icon_frame = 1
+	power = -140
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			sr_pyroxenes = 1
+		}
+		upkeep = {
+			energy = 0.68
+			alloys = 0.136
+		}
+	}
+	modifier = {
+		ship_shield_add = 660
+		ship_shield_regen_add_static = 6.6
+		ship_armor_add = 660
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T3"
+	}
+	component_set = "T3backpack"
+	upgrades_to = "LARGE_T4BACKPACK"
+}
+
+#T4
+utility_component_template = {
+	key = "SMALL_T4BACKPACK"
+	size = small
+	icon = "GFX_T4BACKPACK"
+	icon_frame = 1
+	power = -45
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 6
+		}
+		upkeep = {
+			energy = 0.22
+		}
+	}
+	modifier = {
+		ship_shield_add = 145
+		ship_shield_regen_add_static = 1.45
+		ship_armor_add = 145
+		ship_armor_regen_add_static = 1.45
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T4"
+	}
+	component_set = "T4backpack"
+	upgrades_to = "SMALL_T5BACKPACK"
+}
+
+utility_component_template = {
+	key = "MEDIUM_T4BACKPACK"
+	size = medium
+	icon = "GFX_T4BACKPACK"
+	icon_frame = 1
+	power = -90
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 9
+		}
+		upkeep = {
+			energy = 0.44
+		}
+	}
+	modifier = {
+		ship_shield_add = 365
+		ship_shield_regen_add_static = 3.65
+		ship_armor_add = 365
+		ship_armor_regen_add_static = 3.65
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T4"
+	}
+	component_set = "T4backpack"
+	upgrades_to = "MEDIUM_T5BACKPACK"
+}
+
+utility_component_template = {
+	key = "LARGE_T4BACKPACK"
+	size = large
+	icon = "GFX_T4BACKPACK"
+	icon_frame = 1
+	power = -180
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 12
+		}
+		upkeep = {
+			energy = 0.88
+		}
+	}
+	modifier = {
+		ship_shield_add = 870
+		ship_shield_regen_add_static = 8.7
+		ship_armor_add = 870
+		ship_armor_regen_add_static = 8.7
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T4"
+	}
+	component_set = "T4backpack"
+	upgrades_to = "LARGE_T5BACKPACK"
+}
+
+#T5
+utility_component_template = {
+	key = "SMALL_T5BACKPACK"
+	size = small
+	icon = "GFX_T5BACKPACK"
+	icon_frame = 1
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 12
+			sr_dark_matter = 0.2
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.16
+		}
+	}
+	modifier = {
+		ship_shield_add = 185
+		ship_shield_regen_add_static = 1.85
+		ship_armor_add = 185
+		ship_armor_regen_add_static = 1.85
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T5"
+	}
+	component_set = "T5backpack"
+	upgrades_to = "SMALL_T6BACKPACK"
+}
+
+utility_component_template = {
+	key = "MEDIUM_T5BACKPACK"
+	size = medium
+	icon = "GFX_T5BACKPACK"
+	icon_frame = 1
+	power = -100
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 18
+			sr_dark_matter = 0.3
+		}
+		upkeep = {
+			energy = 0.44
+			alloys = 0.2
+		}
+	}
+	modifier = {
+		ship_shield_add = 465
+		ship_shield_regen_add_static = 4.65
+		ship_armor_add = 465
+		ship_armor_regen_add_static = 4.65
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T5"
+	}
+	component_set = "T5backpack"
+	upgrades_to = "MEDIUM_T6BACKPACK"
+}
+
+utility_component_template = {
+	key = "LARGE_T5BACKPACK"
+	size = large
+	icon = "GFX_T5BACKPACK"
+	icon_frame = 1
+	power = -200
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 24
+			sr_dark_matter = 0.4
+		}
+		upkeep = {
+			energy = 0.88
+			alloys = 0.24
+		}
+	}
+	modifier = {
+		ship_shield_add = 1110
+		ship_shield_regen_add_static = 11.1
+		ship_armor_add = 1110
+		ship_armor_regen_add_static = 11.1
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T5"
+	}
+	component_set = "T5backpack"
+	upgrades_to = "LARGE_T6BACKPACK"
+}
+
+#T6
+utility_component_template = {
+	key = "SMALL_T6BACKPACK"
+	size = small
+	icon = "GFX_T6BACKPACK"
+	icon_frame = 1
+	power = -40
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 24
+			sr_dark_matter = 2
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.24
+		}
+	}
+	modifier = {
+		ship_shield_add = 200
+		ship_shield_regen_add_static = 2
+		ship_armor_add = 200
+		ship_armor_regen_add_static = 2
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T6"
+	}
+	component_set = "T6backpack"
+	#upgrades_to = "SMALL_T5BACKPACK"
+}
+
+utility_component_template = {
+	key = "MEDIUM_T6BACKPACK"
+	size = medium
+	icon = "GFX_T6BACKPACK"
+	icon_frame = 1
+	power = -80
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 36
+			sr_dark_matter = 4
+		}
+		upkeep = {
+			energy = 0.44
+			alloys = 0.5
+		}
+	}
+	modifier = {
+		ship_shield_add = 500
+		ship_shield_regen_add_static = 5
+		ship_armor_add = 500
+		ship_armor_regen_add_static = 5
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T6"
+	}
+	component_set = "T6backpack"
+	#upgrades_to = "MEDIUM_T5BACKPACK"
+}
+
+utility_component_template = {
+	key = "LARGE_T6BACKPACK"
+	size = large
+	icon = "GFX_T6BACKPACK"
+	icon_frame = 1
+	power = -160
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 48
+			sr_dark_matter = 6
+		}
+		upkeep = {
+			energy = 0.88
+			alloys = 0.8
+		}
+	}
+	modifier = {
+		ship_shield_add = 1400
+		ship_shield_regen_add_static = 14
+		ship_armor_add = 1400
+		ship_armor_regen_add_static = 14
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T6"
+	}
+	component_set = "T6backpack"
+	#upgrades_to = "LARGE_T5BACKPACK"
+}
+
+##### 徽章
+#T1
+utility_component_template = {
+	key = "SMALL_T1BADGE"
+	size = small
+	icon = "GFX_T1BADGE"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = 0.07
+			alloys = 0.014
+		}
+	}
+	modifier = {
+		ship_evasion_add = 3
+		ship_hull_add = 65
+	}
+	prerequisites = {
+		"tech_BA_Badge_T1"
+	}
+	component_set = "T1badge"
+	upgrades_to = "SMALL_T2BADGE"
+}
+
+utility_component_template = {
+	key = "MEDIUM_T1BADGE"
+	size = medium
+	icon = "GFX_T1BADGE"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 40
+		}
+		upkeep = {
+			energy = 0.13
+			alloys = 0.026
+		}
+	}
+	modifier = {
+		ship_evasion_add = 3
+		ship_hull_add = 160
+	}
+	prerequisites = {
+		"tech_BA_Badge_T1"
+	}
+	component_set = "T1badge"
+	upgrades_to = "MEDIUM_T2BADGE"
+}
+
+utility_component_template = {
+	key = "LARGE_T1BADGE"
+	size = large
+	icon = "GFX_T1BADGE"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 80
+		}
+		upkeep = {
+			energy = 0.26
+			alloys = 0.052
+		}
+	}
+	modifier = {
+		ship_evasion_add = 3
+		ship_hull_add = 390
+	}
+	prerequisites = {
+		"tech_BA_Badge_T1"
+	}
+	component_set = "T1badge"
+	upgrades_to = "LARGE_T2BADGE"
+}
+
+#T2
+utility_component_template = {
+	key = "SMALL_T2BADGE"
+	size = small
+	icon = "GFX_T2BADGE"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 25
+		}
+		upkeep = {
+			energy = 0.09
+			alloys = 0.018
+		}
+	}
+	modifier = {
+		ship_evasion_add = 4
+		ship_hull_add = 85
+	}
+	prerequisites = {
+		"tech_BA_Badge_T2"
+	}
+	component_set = "T2badge"
+	upgrades_to = "SMALL_T3BADGE"
+}
+
+utility_component_template = {
+	key = "MEDIUM_T2BADGE"
+	size = medium
+	icon = "GFX_T2BADGE"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+		}
+		upkeep = {
+			energy = 0.17
+			alloys = 0.034
+		}
+	}
+	modifier = {
+		ship_evasion_add = 4
+		ship_hull_add = 215
+	}
+	prerequisites = {
+		"tech_BA_Badge_T2"
+	}
+	component_set = "T2badge"
+	upgrades_to = "MEDIUM_T3BADGE"
+}
+
+utility_component_template = {
+	key = "LARGE_T2BADGE"
+	size = large
+	icon = "GFX_T2BADGE"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+		}
+		upkeep = {
+			energy = 0.34
+			alloys = 0.068
+		}
+	}
+	modifier = {
+		ship_evasion_add = 4
+		ship_hull_add = 510
+	}
+	prerequisites = {
+		"tech_BA_Badge_T2"
+	}
+	component_set = "T2badge"
+	upgrades_to = "LARGE_T3BADGE"
+}
+
+#T3
+utility_component_template = {
+	key = "SMALL_T3BADGE"
+	size = small
+	icon = "GFX_T3BADGE"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 25
+			sr_pyroxenes = 1
+		}
+		upkeep = {
+			energy = 0.17
+			alloys = 0.034
+		}
+	}
+	modifier = {
+		ship_evasion_add = 5
+		ship_speed_mult = 0.05
+		ship_hull_add = 110
+	}
+	prerequisites = {
+		"tech_BA_Badge_T3"
+	}
+	component_set = "T3badge"
+	upgrades_to = "SMALL_T4BADGE"
+}
+
+utility_component_template = {
+	key = "MEDIUM_T3BADGE"
+	size = medium
+	icon = "GFX_T3BADGE"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+			sr_pyroxenes = 1
+		}
+		upkeep = {
+			energy = 0.34
+			alloys = 0.068
+		}
+	}
+	modifier = {
+		ship_evasion_add = 5
+		ship_speed_mult = 0.05
+		ship_hull_add = 275
+	}
+	prerequisites = {
+		"tech_BA_Badge_T3"
+	}
+	component_set = "T3badge"
+	upgrades_to = "MEDIUM_T4BADGE"
+}
+
+utility_component_template = {
+	key = "LARGE_T3BADGE"
+	size = large
+	icon = "GFX_T3BADGE"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			sr_pyroxenes = 1
+		}
+		upkeep = {
+			energy = 0.68
+			alloys = 0.136
+		}
+	}
+	modifier = {
+		ship_evasion_add = 5
+		ship_speed_mult = 0.05
+		ship_hull_add = 660
+	}
+	prerequisites = {
+		"tech_BA_Badge_T3"
+	}
+	component_set = "T3badge"
+	upgrades_to = "LARGE_T4BADGE"
+}
+
+#T4
+utility_component_template = {
+	key = "SMALL_T4BADGE"
+	size = small
+	icon = "GFX_T4BADGE"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 6
+		}
+		upkeep = {
+			energy = 0.22
+		}
+	}
+	modifier = {
+		ship_evasion_add = 6
+		ship_speed_mult = 0.075
+		ship_hull_add = 145
+	}
+	prerequisites = {
+		"tech_BA_Badge_T4"
+	}
+	component_set = "T4badge"
+	upgrades_to = "SMALL_T5BADGE"
+}
+
+utility_component_template = {
+	key = "MEDIUM_T4BADGE"
+	size = medium
+	icon = "GFX_T4BADGE"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 9
+		}
+		upkeep = {
+			energy = 0.44
+		}
+	}
+	modifier = {
+		ship_evasion_add = 6
+		ship_speed_mult = 0.075
+		ship_hull_add = 365
+	}
+	prerequisites = {
+		"tech_BA_Badge_T4"
+	}
+	component_set = "T4badge"
+	upgrades_to = "MEDIUM_T5BADGE"
+}
+
+utility_component_template = {
+	key = "LARGE_T4BADGE"
+	size = large
+	icon = "GFX_T4BADGE"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 12
+		}
+		upkeep = {
+			energy = 0.88
+		}
+	}
+	modifier = {
+		ship_evasion_add = 6
+		ship_speed_mult = 0.075
+		ship_hull_add = 870
+	}
+	prerequisites = {
+		"tech_BA_Badge_T4"
+	}
+	component_set = "T4badge"
+	upgrades_to = "LARGE_T5BADGE"
+}
+
+#T5
+utility_component_template = {
+	key = "SMALL_T5BADGE"
+	size = small
+	icon = "GFX_T5BADGE"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 12
+			sr_dark_matter = 0.2
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.16
+		}
+	}
+	modifier = {
+		ship_evasion_add = 7
+		ship_speed_mult = 0.1
+		ship_hull_add = 185
+	}
+	prerequisites = {
+		"tech_BA_Badge_T5"
+	}
+	component_set = "T5badge"
+	upgrades_to = "SMALL_T6BADGE"
+}
+
+utility_component_template = {
+	key = "MEDIUM_T5BADGE"
+	size = medium
+	icon = "GFX_T5BADGE"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 18
+			sr_dark_matter = 0.3
+		}
+		upkeep = {
+			energy = 0.44
+			alloys = 0.2
+		}
+	}
+	modifier = {
+		ship_evasion_add = 7
+		ship_speed_mult = 0.1
+		ship_hull_add = 465
+	}
+	prerequisites = {
+		"tech_BA_Badge_T5"
+	}
+	component_set = "T5badge"
+	upgrades_to = "MEDIUM_T6BADGE"
+}
+
+utility_component_template = {
+	key = "LARGE_T5BADGE"
+	size = large
+	icon = "GFX_T5BADGE"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 24
+			sr_dark_matter = 0.4
+		}
+		upkeep = {
+			energy = 0.88
+			alloys = 0.24
+		}
+	}
+	modifier = {
+		ship_evasion_add = 7
+		ship_speed_mult = 0.1
+		ship_hull_add = 1110
+	}
+	prerequisites = {
+		"tech_BA_Badge_T5"
+	}
+	component_set = "T5badge"
+	upgrades_to = "LARGE_T6BADGE"
+}
+
+#T6
+utility_component_template = {
+	key = "SMALL_T6BADGE"
+	size = small
+	icon = "GFX_T6BADGE"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 24
+			sr_dark_matter = 2
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.24
+		}
+	}
+	modifier = {
+		ship_evasion_add = 8
+		ship_speed_mult = 0.125
+		ship_hull_add = 200
+	}
+	prerequisites = {
+		"tech_BA_Badge_T6"
+	}
+	component_set = "T6badge"
+	#upgrades_to = "SMALL_T5BADGE"
+}
+
+utility_component_template = {
+	key = "MEDIUM_T6BADGE"
+	size = medium
+	icon = "GFX_T6BADGE"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 36
+			sr_dark_matter = 4
+		}
+		upkeep = {
+			energy = 0.44
+			alloys = 0.5
+		}
+	}
+	modifier = {
+		ship_evasion_add = 8
+		ship_speed_mult = 0.125
+		ship_hull_add = 500
+	}
+	prerequisites = {
+		"tech_BA_Badge_T6"
+	}
+	component_set = "T6badge"
+	#upgrades_to = "MEDIUM_T5BADGE"
+}
+
+utility_component_template = {
+	key = "LARGE_T6BADGE"
+	size = large
+	icon = "GFX_T6BADGE"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 48
+			sr_dark_matter = 6
+		}
+		upkeep = {
+			energy = 0.88
+			alloys = 0.8
+		}
+	}
+	modifier = {
+		ship_evasion_add = 8
+		ship_speed_mult = 0.125
+		ship_hull_add = 1400
+	}
+	prerequisites = {
+		"tech_BA_Badge_T6"
+	}
+	component_set = "T6badge"
+	#upgrades_to = "LARGE_T5BADGE"
+}

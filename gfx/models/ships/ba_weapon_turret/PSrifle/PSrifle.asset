@@ -1,0 +1,42 @@
+entity = {
+	name = "PSrifle_entity"
+	attach = {
+		root = "PSrifle_Part1_entity"
+		root = "PSrifle_Part2_entity"
+		root = "PSrifle_Part3_entity"
+		root = "PSrifle_Part4_entity"
+		root = "PSrifle_Part5_entity"
+		root = "PSrifle_Part6_entity"
+		root = "PSrifle_Part7_entity"
+
+	}
+
+}
+entity = {
+	name = "PSrifle_Part1_entity"
+	pdxmesh = "PSrifle_Part1_mesh"
+}
+entity = {
+	name = "PSrifle_Part2_entity"
+	pdxmesh = "PSrifle_Part2_mesh"
+}
+entity = {
+	name = "PSrifle_Part3_entity"
+	pdxmesh = "PSrifle_Part3_mesh"
+}
+entity = {
+	name = "PSrifle_Part4_entity"
+	pdxmesh = "PSrifle_Part4_mesh"
+}
+entity = {
+	name = "PSrifle_Part5_entity"
+	pdxmesh = "PSrifle_Part5_mesh"
+}
+entity = {
+	name = "PSrifle_Part6_entity"
+	pdxmesh = "PSrifle_Part6_mesh"
+}
+entity = {
+	name = "PSrifle_Part7_entity"
+	pdxmesh = "PSrifle_Part7_mesh"
+}

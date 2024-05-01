@@ -1,0 +1,155 @@
+#学园都市星球
+pc_BA_campus_planet = {
+	entity = "BA_planet"
+	entity_scale = @planet_standard_scale
+	#icon = GFX_planet_type_city
+	icon = GFX_planet_type_ocean
+	climate = "dry"
+	atmosphere_color = {
+		0.58
+		0.67
+		0.76
+	}
+	atmosphere_intensity = 1
+	atmosphere_width = 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	modifier = {
+	}
+	min_distance_from_sun = @habitable_min_distance
+	max_distance_from_sun = @habitable_max_distance
+	spawn_odds = 0
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	fixed_city_level = 6	#这一项意义不明
+	chance_of_ring = 0.2	#这一项意义不明
+	planet_size = {
+		min = @habitable_planet_min_size
+		max = @habitable_planet_max_size
+	}
+	moon_size = {
+		min = @habitable_moon_min_size
+		max = @habitable_moon_max_size
+	}
+	colonizable = yes
+	district_set = BA_planet
+	starting_planet = no
+	#ideal = yes
+	show_city = no
+	uses_alternative_skies_for_moons = yes
+	carry_cap_per_free_district = @carry_cap_high
+}
+
+#学园都市废墟星球
+pc_BA_ruined_planet = {
+	entity = "ba_ruined_planet"
+	entity_scale = @planet_standard_scale
+	#icon = GFX_planet_type_city
+	icon = GFX_planet_type_nuked
+	atmosphere_color = {
+		0.58
+		0.67
+		0.76
+	}
+	atmosphere_intensity = 1
+	atmosphere_width = 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	modifier = {
+	}
+	min_distance_from_sun = @habitable_min_distance
+	max_distance_from_sun = @habitable_max_distance
+	spawn_odds = 0
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	fixed_city_level = 6	#这一项意义不明
+	chance_of_ring = 0.2	#这一项意义不明
+	planet_size = {
+		min = @habitable_planet_min_size
+		max = @habitable_planet_max_size
+	}
+	moon_size = {
+		min = @habitable_moon_min_size
+		max = @habitable_moon_max_size
+	}
+	colonizable = yes
+	district_set = BA_ruined_planet
+	starting_planet = no
+	#ideal = yes
+	show_city = no
+	uses_alternative_skies_for_moons = yes
+	carry_cap_per_free_district = @carry_cap_high
+}
+
+#学园都市废墟星球的模型
+pc_BA_ruined_planet_model = {
+	entity = "ba_ruined_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_city
+	atmosphere_color = {
+		0.58
+		0.67
+		0.76
+	}
+	atmosphere_intensity = 1
+	atmosphere_width = 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	modifier = {
+	}
+	min_distance_from_sun = @habitable_min_distance
+	max_distance_from_sun = @habitable_max_distance
+	spawn_odds = 0
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	fixed_city_level = 6	#这一项意义不明
+	chance_of_ring = 0.2	#这一项意义不明
+	planet_size = {
+		min = @habitable_planet_min_size
+		max = @habitable_planet_max_size
+	}
+	moon_size = {
+		min = @habitable_moon_min_size
+		max = @habitable_moon_max_size
+	}
+	colonizable = no
+	show_city = no
+	uses_alternative_skies_for_moons = yes
+}
+
+#自动居住站
+pc_BA_auto_habitat = {
+	habitat = yes
+	entity = "orbital_habitat"
+	#preview_entity = ba_01_habitat_phase_03_entity	#AtrahasisArk_station_entity
+	icon = GFX_planet_type_habitat
+	entity_scale = 1
+	enable_tilt = no
+	fixed_entity_scale = yes
+	place_entity_on_planet_plane = no
+	entity_face_object = no	#disable rotation towards sun or planet we orbit around
+	atmosphere_color = {
+		0
+		0
+		1
+	}
+	#DONE
+	atmosphere_intensity = 1
+	atmosphere_width = 0.5
+	show_city = no
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	chance_of_ring = 0
+	planet_size = 6
+	moon_size = 1
+	colonizable = yes
+	district_set = BA_auto_habitat
+	starting_planet = no
+	orbit_lines = no
+	has_colonization_influence_cost = no	# applies when within own borders
+	is_artificial_planet = yes
+	default_planet_selection = yes
+	modifier = {
+		planet_colony_development_speed_mult = 2		# Habitats should be fast to colonize
+		pop_environment_tolerance = 0.7
+	}
+	carry_cap_per_free_district = @carry_cap_low
+}

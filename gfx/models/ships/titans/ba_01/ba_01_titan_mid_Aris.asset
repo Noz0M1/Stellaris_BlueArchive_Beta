@@ -1,0 +1,10 @@
+entity = {
+	name = "ba_01_titan_mid_Aris_entity"
+	pdxmesh = "ba_01_titan_mid_Aris_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { node = "light_locator_01" particle = "ba_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+
+	}
+}

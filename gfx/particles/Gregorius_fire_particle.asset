@@ -1,0 +1,331 @@
+particle={
+	name="Gregorius_fire_particle_file"
+	subsystem={
+		name="flare_1"
+		max_amount=11
+		slave_particles=0
+		sort="depth"
+		emitter_type="point"
+		invert=no
+		trail=no
+		spritesheet_animation=no
+		spritesheet_animation_loop=1.000000
+		local_space=yes
+		billboard=yes
+		hide=no
+		texture={
+			file="gfx/particles/flare.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=120
+			y=120
+			z=255
+			alpha=255,alpha_fade
+		}
+		position={
+			x=-0.15
+			y=0
+			z=0
+		}
+		start=0
+		duration=-1
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		velocity_pitch={ 0 5 }
+		velocity_yaw={ 0 5 }
+		velocity={ 0.4 0.1 }
+		life={ 0.16 0.02 }
+		emission=60
+		size={ 1.5,grow 0.05 }
+		rotation={ 0 180 }
+		rotation_speed={ 0 0 }
+	}
+	subsystem={
+		name="cloud"
+		max_amount=5
+		slave_particles=0
+		sort="depth"
+		emitter_type="point"
+		invert=no
+		trail=no
+		spritesheet_animation=no
+		spritesheet_animation_loop=1.000000
+		local_space=yes
+		billboard=yes
+		hide=yes
+		texture={
+			file="gfx/particles/cloud.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x=150
+			y=105
+			z=255
+			alpha=50,alpha_fade
+		}
+		position={
+			x=-0.15
+			y=0
+			z=0
+		}
+		start=0
+		duration=-1
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		velocity_pitch={ 0 5 }
+		velocity_yaw={ 0 5 }
+		velocity={ 3 1 }
+		life={ 0.16 0.02 }
+		emission=10
+		size={ 0.7,shrink 0 }
+		rotation={ 0 180 }
+		rotation_speed={ 50 0 }
+	}
+	subsystem={
+		name="black"
+		max_amount=10
+		slave_particles=0
+		sort="age"
+		emitter_type="point"
+		invert=no
+		trail=no
+		spritesheet_animation=no
+		spritesheet_animation_loop=1.000000
+		local_space=yes
+		billboard=yes
+		hide=no
+		texture={
+			file="gfx/particles/blackness.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=0
+			y=0
+			z=0
+			alpha=255,alpha_fade
+		}
+		position={
+			x=-0.15
+			y=0
+			z=0
+		}
+		start=0
+		duration=-1
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		velocity_pitch={ 0 5 }
+		velocity_yaw={ 0 5 }
+		velocity={ 0.4 0.1 }
+		life=0.2
+		emission=20
+		size={ 3,grow_2 0.25 }
+		rotation={ 0 0 }
+		rotation_speed={ 200 0 }
+	}
+	subsystem={
+		name="flare_wide"
+		max_amount=200
+		slave_particles=0
+		sort="depth"
+		emitter_type="point"
+		invert=no
+		trail=no
+		spritesheet_animation=no
+		spritesheet_animation_loop=1.000000
+		local_space=yes
+		billboard=yes
+		hide=no
+		texture={
+			file="gfx/particles/flare_wide.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x=120
+			y=150
+			z=170
+			alpha=255,alpha_fade
+		}
+		position={
+			x=-0.15
+			y=0
+			z=0
+		}
+		start=0
+		duration=1
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		velocity_pitch={ 0 5 }
+		velocity_yaw={ 0 5 }
+		velocity={ 0.4 0.1 }
+		life={ 0.16 0.02 }
+		emission=10
+		size={ 3,grow 0.05 }
+		rotation={ 0 0 }
+		rotation_speed={ 0 0 }
+	}
+	subsystem={
+		name="flare_1"
+		max_amount=11
+		slave_particles=0
+		sort="depth"
+		emitter_type="point"
+		invert=no
+		trail=no
+		spritesheet_animation=no
+		spritesheet_animation_loop=1.000000
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/Gregorius_fire_particle.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x=89
+			y=120
+			z=150
+			alpha=255,alpha_fade
+		}
+		position={
+			x=-0.8
+			y=0
+			z=0
+		}
+		start=0
+		duration=-1
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		velocity_pitch={ 0 5 }
+		velocity_yaw={ 0 5 }
+		velocity={ 0.4 0.1 }
+		life={ 0.2 0.02 }
+		emission=30
+		size={ 2.5,grow 0.05 }
+		particle_yaw=-90
+		particle_pitch={ 0 90 }
+		rotation=0
+		rotation_speed={ 0 0 }
+	}
+	subsystem={
+		name="green"
+		max_amount=10
+		slave_particles=0
+		sort="age"
+		emitter_type="point"
+		invert=no
+		trail=no
+		spritesheet_animation=no
+		spritesheet_animation_loop=1.000000
+		local_space=yes
+		billboard=yes
+		hide=no
+		texture={
+			file="gfx/particles/sun_flare.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x=40
+			y={ 160 10 }
+			z={ 130 20 }
+			alpha=255,alpha_fade
+		}
+		position={
+			x=-0.15
+			y=0
+			z=0
+		}
+		start=0
+		duration=-1
+		emission_pulse_duration=0.1
+		emission_pulse_silence=0.3
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		velocity_pitch={ 0 5 }
+		velocity_yaw={ 0 5 }
+		velocity={ 0.4 0.1 }
+		life=0.3
+		emission=50
+		size={ 4,grow_2 0.25 }
+		rotation={ 0 60 }
+		rotation_speed={ 50 0 }
+	}
+	animation={
+		name="alpha_fade"
+		start=0
+		duration=1
+		repeat=no
+		minValue=0
+		maxValue=1
+		curve={
+			0 0 0.37941 0.96094 0.67941 0.85938 1 0 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="grow"
+		start=0
+		duration=1
+		repeat=no
+		minValue=0
+		maxValue=1
+		curve={
+			0 0.8 1 1 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="shrink"
+		start=0
+		duration=1
+		repeat=no
+		minValue=0
+		maxValue=1
+		curve={
+			0 1 1 0.2 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="grow_2"
+		start=0
+		duration=1
+		repeat=no
+		minValue=0
+		maxValue=1
+		curve={
+			0 0.17188 0.42059 0.58594 1 1 
+		}
+		op="MUL"
+		time="life"
+	}
+	force={
+		type="planar"
+		name="force0"
+		position={
+			0 0 0 
+		}
+		direction={
+			0 1 0 
+		}
+		local_force=yes
+		yaw=0
+		division=16
+		amount=5
+	}
+}

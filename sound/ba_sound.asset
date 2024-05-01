@@ -1,0 +1,71 @@
+soundeffect =
+{
+    name = "amb_planet_ba_01_sound"
+    volume = 1
+    loop = yes
+    is3d = yes
+    max_audible = 5
+	max_audible_behaviour = fail
+    falloff = falloff_ambient
+    #delay_random_offset = { 0.0 0.5 }
+    sounds = {
+        sound = sfx_amb_planet_ba_01_sound
+	}
+    fade_in = 0.5
+    fade_out = 0.0
+}
+
+soundeffect =
+{
+    name = "amb_planet_ba_ruined_sound"
+    volume = 1
+    loop = yes
+    is3d = yes
+    max_audible = 5
+	max_audible_behaviour = fail
+    falloff = falloff_ambient
+    #delay_random_offset = { 0.0 0.5 }
+    sounds = {
+        sound = sfx_amb_planet_ba_ruined_sound
+	}
+    fade_in = 0.5
+    fade_out = 0.0
+}
+
+soundeffect =
+{
+    name = "sfx_amb_ojiisan_atsui_sound"
+    volume = 1
+    loop = yes
+    is3d = yes
+    max_audible = 10
+	max_audible_behaviour = fail
+    falloff = falloff_ambient
+    #delay_random_offset = { 0.0 0.5 }
+    sounds = {
+        sound = sfx_amb_ojiisan_atsui_sound
+	}
+    fade_in = 0.5
+    fade_out = 0.0
+}
+
+sound = 
+{
+    name = "sfx_amb_planet_ba_ruined_sound"
+    file = "sfx_amb_planet_ba_ruined_sound.wav"
+    volume = 0.1
+}
+
+sound = 
+{
+    name = "sfx_amb_planet_ba_01_sound"
+    file = "sfx_amb_planet_ba_01_sound.wav"
+    volume = 0.1
+}
+
+sound = 
+{
+    name = "sfx_amb_ojiisan_atsui_sound"
+    file = "sfx_amb_ojiisan_atsui_sound.wav"
+    volume = 0.5
+}

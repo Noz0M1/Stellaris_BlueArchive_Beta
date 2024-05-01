@@ -1,0 +1,25 @@
+objectTypes = {
+	pdxmesh = {
+		name = "ba_01_colossus_attach_mesh"
+		file = "gfx\models\ships\colossus\ba_01\ba_01_colossus_attach.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ba_01_colossus_attachShape"
+			index = 0
+			texture_diffuse = "Aris_Original_Weapon.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ba_01_colossus_haloShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

@@ -1,0 +1,4327 @@
+namespace = BA_Shittem
+#0001： 初始化总控
+#0100：调试、剧情、建立联系等事件
+#1000：主界面相关
+#2000：
+#4000：学园理念
+country_event = {
+	#触发器
+	id = BA_Shittem.0001
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+		has_authority = auth_kivotos
+	}
+	immediate = {
+		set_global_flag = Kivotos_detected		#一系列突发事件触发用的flag，也是BA堕落帝国生成事件用的flag
+		set_country_flag = situation_machine_uprising_started		#防机械叛乱
+		set_country_flag = synth_detector		#防机械叛乱
+		#创建Arona通讯界面国家
+		if = {
+			limit = {
+				NOT = {
+					any_country = {
+						has_country_flag = BA_Shittem_country
+					}
+				}
+			}
+			create_country = {
+				name = "Shittem.name"
+				type = Shittem_communication
+				flag = {
+					icon = {
+						category = "special"
+						file = "flag_Shittem.dds"
+					}
+					background = {
+						category = "backgrounds"
+						file = "00_solid.dds"
+					}
+					colors = {
+						"blue"
+						"blue"
+						"null"
+						"null"
+					}
+				}
+				effect = {
+					set_country_flag = BA_Shittem_country
+					save_global_event_target_as = BA_Shittem_country
+					BA_Shittem_display = yes
+				}
+			}
+		}
+		#设置特殊领袖用种族、复活计数器
+		create_species = {
+			name = "species_name_BA_leader"
+			class = Schale
+			portrait = "Schale"
+			name_list = "Schale"
+			is_mod = yes
+			immortal = yes
+			traits = {
+				trait = trait_BA_BDcase
+			}
+			effect = {
+				set_species_flag = BA_leader_species
+				save_global_event_target_as = BA_leader_species
+			}
+		}
+		set_variable = {
+			which = BA_leader_respawn_cost
+			value = 0
+		}
+		#设置姬器人种族
+		if = {
+			limit = {
+				NOT = {
+					any_galaxy_species = {
+						has_species_flag = BA_Robot_flag
+					}
+				}
+			}
+			create_species = {
+				name = "BA_Robot"
+				class = MACHINE
+				portrait = "Aris"
+				namelist = "ArisName"
+				traits = {
+					trait = trait_test
+					trait = trait_mechanical
+					trait = trait_robot_emotion_emulators
+					trait = trait_robot_logic_engines
+					trait = trait_robot_luxurious
+					trait = trait_robot_high_bandwidth
+				}
+				effect = {
+					set_species_flag = BA_Robot_flag
+					save_global_event_target_as = BA_Robot_species
+				}
+			}
+		}
+		#委托参数
+		set_variable = {
+			which = BA_commission_count
+			value = 0
+		}
+		set_variable = {
+			which = BA_Repeatable_commission_01_counter
+			value = 1000
+		}
+		set_variable = {
+			which = BA_Repeatable_commission_02_counter
+			value = 1500
+		}
+		set_variable = {
+			which = BA_Repeatable_commission_03_counter
+			value = 50
+		}
+		#学园理念
+		set_variable = {
+			which = BA_SI_cost
+			value = -12
+		}
+		set_variable = {
+			which = BA_SI_diff
+			value = 60
+		}
+		#商店计数
+		set_variable = {
+			which = BA_Angel24_eligma_counter
+			value = 10
+		}
+		#社团限制
+		set_variable = {
+			which = BA_Club_count
+			value = 0
+		}
+		set_variable = {
+			which = BA_Club_limit
+			value = 1
+		}
+		set_variable = {
+			which = BA_Club_check
+			value = BA_Club_limit
+		}
+		#面纱相关
+		if = {
+			limit = {
+				has_valid_civic = civic_BA_Omnia_Vanitas
+			}
+			set_country_flag = BA_Omnia_Vanitas_under_guise
+		}
+		#失落帝国相关
+		set_variable = {
+			which = BA_Precursor_system_info
+			value = 1
+		}
+		#内阁相关
+		unlock_council_selection = yes
+		set_council_position_to_council = councilor_research_kivotos
+		random_owned_leader = {
+			limit = {
+				leader_class = scientist
+				is_councilor = no
+				is_ruler = no
+			}
+			set_council_position = councilor_research_kivotos
+		}
+		set_council_position_to_council = councilor_defense_kivotos
+		random_owned_leader = {
+			limit = {
+				leader_class = commander
+				is_councilor = no
+				is_ruler = no
+			}
+			set_council_position = councilor_defense_kivotos
+		}
+
+		#非特有起源的arona
+		country_event = {
+			id = BA_Shittem.0120
+			days = 360
+			random = 360
+		}
+		#某些起源的初始科技
+		if = {
+			limit = {
+				NOT = {
+					has_origin = origin_Kivotos_Kyrie
+				}
+			}
+			give_technology = {
+				tech = tech_BA_legacy_of_millennium
+				message = no
+			}
+		}
+	}
+}
+
+#联系Arona（剧情事件链第一个事件）
+country_event = {
+	id = BA_Shittem.0101
+	title = "BA_Shittem.0101.name"
+	desc = "BA_Shittem.0101.desc"
+	picture = GFX_BA_Emergencies_0004
+	is_triggered_only = yes
+	#fire_only_once = yes
+	trigger = {
+		is_ai = no
+		last_increased_tech = tech_BA_Shittem_starting
+		NOR = {
+			has_origin = origin_Kivotos_Kyrie
+			has_origin = origin_Kivotos_Unnamed_starting
+		}
+	}
+	option = {
+		name = BA_Shittem.0101.a
+	}
+	option = {
+		name = BA_Shittem.0101.b
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.0102
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_Shittem.0102
+	title = "BA_Shittem.0102.name"
+	desc = "BA_Shittem.0102.desc"
+	is_triggered_only = yes
+	#fire_only_once = yes
+	picture = GFX_BA_Emergencies_0004
+	option = {
+		name = BA_Shittem.0102.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.0103
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_Shittem.0103
+	title = "BA_Shittem.0103.name"
+	desc = "BA_Shittem.0103.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	#fire_only_once = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		room = "BA_Shittem_AronaSleeping_room"
+	}
+	option = {
+		name = BA_Shittem.0103.a
+		is_dialog_only = yes
+		response_text = BA_Shittem.0103.a.re
+	}
+	option = {
+		name = BA_Shittem.0103.b
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.0104
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_Shittem.0104
+	title = "BA_Shittem.0104.name"
+	desc = "BA_Shittem.0104.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	#fire_only_once = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0006
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_Shittem.0104.a
+		is_dialog_only = yes
+		response_text = BA_Shittem.0104.a.re
+	}
+	option = {
+		name = BA_Shittem.0104.b
+		is_dialog_only = yes
+		response_text = BA_Shittem.0104.b.re
+	}
+	option = {
+		name = BA_Shittem.0104.c
+		is_dialog_only = yes
+		response_text = BA_Shittem.0104.c.re
+	}
+	option = {
+		name = BA_Shittem.0104.d
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.0105
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_Shittem.0105
+	title = "BA_Shittem.0105.name"
+	desc = "BA_Shittem.0105.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	#fire_only_once = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_Shittem.0105.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.0106
+			}
+		}
+	}
+}
+
+#验证界面
+country_event = {
+	id = BA_Shittem.0106
+	is_triggered_only = yes
+	title = BLANK_TEXT
+	desc = BA_Shittem.0106.desc
+	diplomatic = yes
+	custom_gui = Arona_window
+	custom_gui_option = Arona_option
+	immediate = {
+		hidden_effect = {
+			set_country_flag = BA_Arona_display_1
+		}
+	}
+	after = {
+		hidden_effect = {
+			remove_country_flag = BA_Arona_display_1
+		}
+	}
+	option = {
+		name = tap_it
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.0107
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_Shittem.0107
+	is_triggered_only = yes
+	title = BLANK_TEXT
+	desc = BA_Shittem.0107.desc
+	diplomatic = yes
+	custom_gui = Arona_window
+	custom_gui_option = Arona_option
+	immediate = {
+		hidden_effect = {
+			set_country_flag = BA_Arona_display_2
+		}
+	}
+	after = {
+		hidden_effect = {
+			remove_country_flag = BA_Arona_display_2
+		}
+	}
+	option = {
+		name = tap_it
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.0108
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_Shittem.0108
+	is_triggered_only = yes
+	title = BLANK_TEXT
+	desc = BA_Shittem.0108.desc
+	diplomatic = yes
+	custom_gui = Arona_window
+	custom_gui_option = Arona_option
+	immediate = {
+		hidden_effect = {
+			set_country_flag = BA_Arona_display_3
+		}
+	}
+	after = {
+		hidden_effect = {
+			remove_country_flag = BA_Arona_display_3
+		}
+	}
+	option = {
+		name = tap_it
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.0998
+			}
+		}
+	}
+}
+
+#非特有起源的arona
+country_event = {
+	id = BA_Shittem.0120
+	title = "BA_Shittem.0120.name"
+	desc = "BA_Shittem.0120.desc"
+	picture = GFX_BA_Emergencies_0004
+	is_triggered_only = yes
+	#fire_only_once = yes
+	trigger = {
+		has_authority = auth_kivotos
+		NOR = {
+			#有新起源以后改 加在这里
+			has_origin = origin_Kivotos_Eden_treaty
+			has_origin = origin_Kivotos_Kyrie
+			has_origin = origin_Kivotos_Unnamed_starting
+		}
+		is_ai = no
+	}
+	option = {
+		name = BA_Shittem.0120.next
+		add_research_option = tech_BA_Shittem_starting
+	}
+}
+
+#创建Arona通讯用国家并建立联系（剧情事件链最后一个事件）
+country_event = {
+	id = BA_Shittem.0998
+	title = "BA_Shittem.0998.name"
+	desc = "BA_Shittem.0998.desc"
+	diplomatic = yes
+	#fire_only_once = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+	}
+	immediate = {
+		#非阿里乌斯起源不用研究这个科技
+		set_country_flag = BA_Arona_Established
+		event_target:BA_Shittem_country = {
+			establish_communications_no_message = root
+		}
+	}
+	option = {
+		name = BA_Shittem.0998.a
+	}
+}
+
+
+#####################
+###    主界面   
+#####################
+### 触发器
+country_event = {
+	id = BA_Shittem.1000
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {
+			has_country_flag = BA_Shittem_country
+		}
+		NOT = {
+			has_country_flag = Shittem_engaged
+		}
+	}
+	immediate = {
+		BA_Shittem_get_stockpile = yes
+		#如果故障中，打开故障提示
+		if = {
+			limit = {
+				always = no
+				#has_country_flag = Shittem_malfunctioned
+			}
+			country_event = {
+				id = BA_Shittem.1900
+			}
+		}
+		else = {
+			random_list = {
+				#事件提前生产0-24的随机数，通过该变量的值进行文本以及肖像的随机变化
+				#肖像绑定值，文本绑定值，以此实现肖像与文本的绑定
+				#序号为0的肖像与scripted loc当中的BlueArchivePulanaDesc0绑定，以此类推，Arona窗口同理
+				1 = {
+					set_variable_to_random_value = {
+						which = BA_Arona_serial
+						min = 0
+						#max = 24
+						max = 15
+						rounded = yes
+					}
+					country_event = {
+						id = BA_Shittem.1001
+					}
+				}
+				1 = {
+					set_variable_to_random_value = {
+						which = BA_Pulana_serial
+						min = 0
+						#max = 24
+						max = 13
+						rounded = yes
+					}
+					country_event = {
+						id = BA_Shittem.1002
+					}
+				}
+			}
+		}
+	}
+}
+
+### 主界面
+#主界面白天
+country_event = {
+	id = BA_Shittem.1001
+	is_triggered_only = yes
+	title = "Shittem_resource_bar"
+	desc = Shittem_Arona_desc
+	diplomatic = yes
+	custom_gui = BlueArchive_MainWindow_daytime
+	immediate = {
+		set_country_flag = Shittem_engaged
+	}
+	after = {
+		remove_country_flag = Shittem_engaged
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+#主界面黑夜
+country_event = {
+	id = BA_Shittem.1002
+	is_triggered_only = yes
+	title = "Shittem_resource_bar"
+	desc = Shittem_Pulana_desc
+	diplomatic = yes
+	custom_gui = BlueArchive_MainWindow_night
+	immediate = {
+		set_country_flag = Shittem_engaged
+	}
+	after = {
+		remove_country_flag = Shittem_engaged
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+### 天使24
+country_event = {
+	#天使24
+	id = BA_Shittem.1010
+	is_triggered_only = yes
+	title = "BLANK_TEXT"
+	desc = {
+		trigger = {
+			always = yes
+		}
+		text = "BA_Shittem.1005.common.01"
+	}
+	desc = {
+		trigger = {
+			always = yes
+		}
+		text = "BA_Shittem.1005.common.02"
+	}
+	desc = {
+		trigger = {
+			always = yes
+		}
+		text = "BA_Shittem.1005.common.03"
+	}
+	diplomatic = yes
+	custom_gui = BlueArchive_angel_24
+	immediate = {
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+#物资商店
+country_event = {
+	id = BA_Shittem.1011
+	is_triggered_only = yes
+	title = "BLANK_TEXT"
+	desc = "BLANK_TEXT"
+	diplomatic = yes
+	custom_gui = BlueArchive_angel_24_goods
+	immediate = {
+		export_resource_stockpile_to_variable = {
+			resource = sr_pyroxenes
+			variable = BA_Angel24_resource_cost
+		}
+		export_resource_stockpile_to_variable = {
+			resource = sr_pyroxenes
+			variable = BA_Angel24_resource_rare_cost
+		}
+		export_resource_stockpile_to_variable = {
+			resource = sr_pyroxenes
+			variable = BA_Angel24_resource_tech_cost
+		}
+		multiply_variable = {
+			which = BA_Angel24_resource_cost
+			value = 0.2
+		}
+		multiply_variable = {
+			which = BA_Angel24_resource_rare_cost
+			value = 0.05
+		}
+		multiply_variable = {
+			which = BA_Angel24_resource_tech_cost
+			value = 0.15
+		}
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+#科技商店
+country_event = {
+	id = BA_Shittem.1012
+	is_triggered_only = yes
+	title = "BA_Shittem.1008.title"
+	desc = "BA_Shittem.1008.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		room = "Angel24_room"
+	}
+	immediate = {
+		#T5定价
+		set_variable = {
+			which = angel24_T5_prize
+			value = 6000
+		}
+		if = {
+			limit = {
+				OR = {
+					has_technology = tech_dark_matter_deflector
+					has_technology = tech_dark_matter_power_core
+					has_technology = tech_dark_matter_propulsion
+				}
+			}
+			set_variable = {
+				which = angel24_T5_prize
+				value = 3000
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_technology = tech_mine_dark_matter
+					has_technology = tech_BA_dark_matter_absorbing
+				}
+			}
+			set_variable = {
+				which = angel24_T5_prize
+				value = 1000
+			}
+		}
+	}
+	#返回
+	option = {
+		name = BA_Shittem.1008.exit
+		#hidden_effect = {
+		#    country_event = {
+		#        id = BA_Shittem.1010
+		#    }
+		#}
+	}
+	#T5防具
+	option = {
+		name = angel24_tech_BA_Ship_armor_T5
+		is_dialog_only = yes
+		trigger = {
+			NAND = {
+				has_technology = tech_BA_Tactical_backpack_T5
+				has_technology = tech_BA_Badge_T5
+			}
+		}
+		allow = {
+			has_technology = tech_BA_Tactical_backpack_T4
+			has_technology = tech_BA_Badge_T4
+			resource_stockpile_compare = {
+				resource = sr_pyroxenes
+				value >= 1
+				multiplier = angel24_T5_prize
+			}
+		}
+		response_text = angel24_tech_BA_Ship_armor_T5_done
+		add_resource = {
+			sr_pyroxenes = -1
+			multiplier = angel24_T5_prize
+		}
+		add_tech_progress = {
+			tech = tech_BA_Tactical_backpack_T5
+			progress = 0.2
+		}
+		add_tech_progress = {
+			tech = tech_BA_Badge_T5
+			progress = 0.2
+		}
+	}
+	#T6战术背包
+	option = {
+		name = angel24_tech_BA_Tactical_backpack_T6
+		is_dialog_only = yes
+		trigger = {
+			NOT = {
+				has_technology = tech_BA_Tactical_backpack_T6
+			}
+		}
+		allow = {
+			has_technology = tech_BA_Tactical_backpack_T5
+			resource_stockpile_compare = {
+				resource = sr_pyroxenes
+				value >= 10000
+			}
+		}
+		response_text = angel24_tech_BA_Tactical_backpack_T6_done
+		add_resource = {
+			sr_pyroxenes = -10000
+		}
+		give_technology = {
+			tech = tech_BA_Tactical_backpack_T6
+		}
+	}
+	#T6徽章
+	option = {
+		name = angel24_tech_BA_Badge_T6
+		is_dialog_only = yes
+		trigger = {
+			NOT = {
+				has_technology = tech_BA_Badge_T6
+			}
+		}
+		allow = {
+			has_technology = tech_BA_Tactical_backpack_T5
+			resource_stockpile_compare = {
+				resource = sr_pyroxenes
+				value >= 10000
+			}
+		}
+		response_text = angel24_tech_BA_Badge_T6_done
+		add_resource = {
+			sr_pyroxenes = -10000
+		}
+		give_technology = {
+			tech = tech_BA_Badge_T6
+		}
+	}
+	#稀有资源生产中心
+	option = {
+		name = angel24_tech_rare_produce
+		is_dialog_only = yes
+		trigger = {
+			NOT = {
+				has_technology = tech_BA_angel24_rare_produce
+			}
+		}
+		allow = {
+			has_technology = tech_BA_pyroxenes_using
+			resource_stockpile_compare = {
+				resource = sr_pyroxenes
+				value >= 800
+			}
+		}
+		response_text = angel24_tech_rare_produce_done
+		add_resource = {
+			sr_pyroxenes = -800
+		}
+		give_technology = {
+			tech = tech_BA_angel24_rare_produce
+		}
+	}
+	#制造石冶金厂
+	option = {
+		name = angel24_tech_keystone_to_alloy
+		is_dialog_only = yes
+		trigger = {
+			NOT = {
+				has_technology = tech_BA_angel24_keystone_to_alloy
+			}
+		}
+		allow = {
+			has_technology = tech_BA_keystone_crafting
+			resource_stockpile_compare = {
+				resource = sr_eligma
+				value >= 100
+			}
+		}
+		response_text = angel24_tech_keystone_to_alloy_done
+		add_resource = {
+			sr_eligma = -100
+		}
+		give_technology = {
+			tech = tech_BA_angel24_keystone_to_alloy
+		}
+	}
+	#暗物质浓缩
+	option = {
+		name = angel24_tech_darkmatter
+		is_dialog_only = yes
+		trigger = {
+			NOR = {
+				has_technology = tech_BA_dark_matter_absorbing
+				has_country_flag = Added_angel24_tech_darkmatter
+			}
+		}
+		allow = {
+			has_technology = tech_BA_keystone_automatic_crafting
+			resource_stockpile_compare = {
+				resource = sr_keystone
+				value >= 1500
+			}
+		}
+		custom_tooltip = angel24_tech_darkmatter_tip
+		response_text = angel24_tech_darkmatter_done
+		add_resource = {
+			sr_keystone = -1500
+		}
+		add_tech_progress = {
+			tech = tech_BA_dark_matter_absorbing
+			progress = 0.2
+		}
+		set_country_flag = Added_angel24_tech_darkmatter
+	}
+}
+
+### 学园理念
+country_event = {
+	id = BA_Shittem.1030
+	is_triggered_only = yes
+	title = Civic_SI_info
+	desc = BLANK_TEXT
+	diplomatic = yes
+	custom_gui = BlueArchive_school_idea
+	immediate = {
+		set_variable = {
+			which = BA_SI_available
+			value = value:num_BA_SI_available
+		}
+		set_variable = {
+			which = BA_SI_next_idea
+			value = value:num_BA_SI_next_idea
+		}
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	#格赫娜
+	id = BA_Shittem.1031
+	is_triggered_only = yes
+	title = "BLANK_TEXT"
+	desc = "BLANK_TEXT"
+	diplomatic = yes
+	custom_gui = BA_SI_window_Gehenna
+	immediate = {
+		#初始化页面数
+		set_variable = {
+			which = BA_page_serial
+			value = 1
+		}
+		set_variable = {
+			which = BA_page_class
+			value = 1
+		}
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	#阿拜多斯
+	id = BA_Shittem.1032
+	is_triggered_only = yes
+	title = "BLANK_TEXT"
+	desc = "BLANK_TEXT"
+	diplomatic = yes
+	custom_gui = BA_SI_window_Abydos
+	immediate = {
+		set_variable = {
+			which = BA_page_serial
+			value = 1
+		}
+		set_variable = {
+			which = BA_page_class
+			value = 2
+		}
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	#百鬼夜行
+	id = BA_Shittem.1033
+	is_triggered_only = yes
+	title = "BLANK_TEXT"
+	desc = "BLANK_TEXT"
+	diplomatic = yes
+	custom_gui = BA_SI_window_Hyakkiyako
+	immediate = {
+		set_variable = {
+			which = BA_page_serial
+			value = 1
+		}
+		set_variable = {
+			which = BA_page_class
+			value = 3
+		}
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	#千年
+	id = BA_Shittem.1034
+	is_triggered_only = yes
+	title = "BLANK_TEXT"
+	desc = "BLANK_TEXT"
+	diplomatic = yes
+	custom_gui = BA_SI_window_Millennium
+	immediate = {
+		set_variable = {
+			which = BA_page_serial
+			value = 1
+		}
+		set_variable = {
+			which = BA_page_class
+			value = 4
+		}
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	#赤冬
+	id = BA_Shittem.1035
+	is_triggered_only = yes
+	title = "BLANK_TEXT"
+	desc = "BLANK_TEXT"
+	diplomatic = yes
+	custom_gui = BA_SI_window_Redwinter
+	immediate = {
+		set_variable = {
+			which = BA_page_serial
+			value = 1
+		}
+		set_variable = {
+			which = BA_page_class
+			value = 5
+		}
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	#山海经
+	id = BA_Shittem.1036
+	is_triggered_only = yes
+	title = "BLANK_TEXT"
+	desc = "BLANK_TEXT"
+	diplomatic = yes
+	custom_gui = BA_SI_window_Shanhaijing
+	immediate = {
+		set_variable = {
+			which = BA_page_serial
+			value = 1
+		}
+		set_variable = {
+			which = BA_page_class
+			value = 6
+		}
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	#圣三一
+	id = BA_Shittem.1037
+	is_triggered_only = yes
+	title = "BLANK_TEXT"
+	desc = "BLANK_TEXT"
+	diplomatic = yes
+	custom_gui = BA_SI_window_Trinity
+	immediate = {
+		set_variable = {
+			which = BA_page_serial
+			value = 1
+		}
+		set_variable = {
+			which = BA_page_class
+			value = 7
+		}
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	#瓦尔基里
+	id = BA_Shittem.1038
+	is_triggered_only = yes
+	title = "BLANK_TEXT"
+	desc = "BLANK_TEXT"
+	diplomatic = yes
+	custom_gui = BA_SI_window_Valkyrie
+	immediate = {
+		set_variable = {
+			which = BA_page_serial
+			value = 1
+		}
+		set_variable = {
+			which = BA_page_class
+			value = 8
+		}
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	#待定
+	id = BA_Shittem.1039
+	is_triggered_only = yes
+	title = "BLANK_TEXT"
+	desc = "BLANK_TEXT"
+	diplomatic = yes
+	custom_gui = BlueArchive_angel_24
+	immediate = {
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	#待定
+	id = BA_Shittem.1040
+	is_triggered_only = yes
+	title = "BLANK_TEXT"
+	desc = "BLANK_TEXT"
+	diplomatic = yes
+	custom_gui = BlueArchive_angel_24
+	immediate = {
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	#待定
+	id = BA_Shittem.1041
+	is_triggered_only = yes
+	title = "BLANK_TEXT"
+	desc = "BLANK_TEXT"
+	diplomatic = yes
+	custom_gui = BlueArchive_angel_24
+	immediate = {
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+
+### 领袖储备
+# TODO：随特殊领袖储备更新
+country_event = {
+	id = BA_Shittem.1300
+	is_triggered_only = yes
+	title = BA_Shittem.1120.title
+	desc = BA_Shittem.1120.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0004
+		room = BA_03_room
+	}
+	trigger = {
+		NOT = {
+			has_country_flag = Communication_engaged
+		}
+	}
+	immediate = {
+		set_country_flag = Communication_engaged
+	}
+	after = {
+		remove_country_flag = Communication_engaged
+	}
+	option = {
+		name = BACK
+		default_hide_option = yes
+	}
+	# TODO：随特殊领袖储备更新
+	#爱丽丝
+	option = {
+		name = NAME_Aris
+		trigger = {
+			event_target:BA_Shittem_country = {
+				has_country_flag = BA_stored_SP_Aris_@root
+			}
+			NOT = {
+				any_owned_leader = {
+					has_leader_flag = BA_Real_Aris
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.1301
+			}
+		}
+	}
+	#星野
+	option = {
+		name = NAME_Hoshino
+		trigger = {
+			event_target:BA_Shittem_country = {
+				has_country_flag = BA_stored_SP_Hoshino_@root
+			}
+			NOT = {
+				any_owned_leader = {
+					has_leader_flag = BA_Hoshino
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.1302
+			}
+		}
+	}
+	#日奈
+	option = {
+		name = NAME_Hina
+		trigger = {
+			event_target:BA_Shittem_country = {
+				has_country_flag = BA_stored_SP_Hina_@root
+			}
+			NOT = {
+				any_owned_leader = {
+					has_leader_flag = BA_Hina
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.1303
+			}
+		}
+	}
+	#未花
+	option = {
+		name = NAME_Mika
+		trigger = {
+			event_target:BA_Shittem_country = {
+				has_country_flag = BA_stored_SP_Mika_@root
+			}
+			NOT = {
+				any_owned_leader = {
+					has_leader_flag = BA_Mika
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.1304
+			}
+		}
+	}
+	#优香-总督
+	option = {
+		name = NAME_Yuuka
+		trigger = {
+			event_target:BA_Shittem_country = {
+				has_country_flag = BA_stored_SP_Yuuka_@root
+			}
+			NOT = {
+				any_owned_leader = {
+					has_leader_flag = BA_Yuuka
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.1305
+			}
+		}
+	}
+	#亚津子
+	option = {
+		name = NAME_Atsuko
+		trigger = {
+			event_target:BA_Shittem_country = {
+				has_country_flag = BA_stored_SP_Atsuko_@root
+			}
+			NOT = {
+				any_owned_leader = {
+					has_leader_flag = BA_Atsuko
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.1306
+			}
+		}
+	}
+	#纱织
+	option = {
+		name = NAME_Saori
+		trigger = {
+			event_target:BA_Shittem_country = {
+				has_country_flag = BA_stored_SP_Saori_@root
+			}
+			NOT = {
+				any_owned_leader = {
+					has_leader_flag = BA_Saori
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.1307
+			}
+		}
+	}
+	#优香-科学家
+	#诺亚
+	#忧
+	option = {
+		name = NAME_Ui
+		trigger = {
+			event_target:BA_Shittem_country = {
+				has_country_flag = BA_stored_SP_Ui_@root
+			}
+			NOT = {
+				any_owned_leader = {
+					has_leader_flag = BA_Ui
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.1309
+			}
+		}
+	}
+	### 特殊定制
+}
+
+#爱丽丝
+country_event = {
+	id = BA_Shittem.1301
+	is_triggered_only = yes
+	title = BA_communication.Aris.title
+	desc = BA_communication.Aris.desc
+	event_window_type = leader_recruit
+	###
+	picture_event_data = {
+		portrait = event_target:BA_Aris_SP
+		room = paragon_ba_room
+	}
+	picture = GFX_leader_recruitment_bg_legendary_ba
+	###
+	# HIRE
+	option = {
+		name = HIRE
+		tag = hire_leader
+		custom_tooltip = BA_communication.Aris.join
+		hidden_effect = {
+			BA_Aris_SP = {
+				class = scientist
+			}
+		}
+	}
+	# DISMISS
+	option = {
+		name = DISMISS
+		tag = dismiss_leader
+	}
+	###
+	after = {
+		hidden_effect = {
+		}
+	}
+	###
+	option = {
+		name = BA_communication.Aris.a
+		is_dialog_only = yes
+		response_text = BA_communication.Aris.a.response
+	}
+	option = {
+		name = BA_communication.Aris.b
+		is_dialog_only = yes
+		response_text = BA_communication.Aris.b.response
+	}
+	option = {
+		name = BA_communication.Aris.c
+		response_text = BA_communication.Aris.c.response
+		is_dialog_only = yes
+	}
+}
+
+#星野
+country_event = {
+	id = BA_Shittem.1302
+	inline_script = {
+		script = Leader/SP_recruit
+		Leader = Hoshino
+	}
+	###
+	option = {
+		name = BA_communication.Hoshino.a
+		is_dialog_only = yes
+		response_text = BA_communication.Hoshino.a.response
+	}
+	option = {
+		name = BA_communication.Hoshino.b
+		is_dialog_only = yes
+		response_text = BA_communication.Hoshino.b.response
+	}
+	option = {
+		name = BA_communication.Hoshino.c
+		response_text = BA_communication.Hoshino.c.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = BA_communication.Hoshino.d
+		response_text = BA_communication.Hoshino.d.response
+		is_dialog_only = yes
+	}
+}
+
+#日奈
+country_event = {
+	id = BA_Shittem.1303
+	inline_script = {
+		script = Leader/SP_recruit
+		Leader = Hina
+	}
+	###
+}
+
+#未花
+country_event = {
+	id = BA_Shittem.1304
+	inline_script = {
+		script = Leader/SP_recruit
+		Leader = Mika
+	}
+	###
+	option = {
+		name = BA_communication.Mika.d
+		response_text = BA_communication.Mika.d.response
+		is_dialog_only = yes
+	}
+}
+
+#优香
+country_event = {
+	id = BA_Shittem.1305
+	inline_script = {
+		script = Leader/SP_recruit
+		Leader = Yuuka
+	}
+	###
+	option = {
+		name = BA_communication.Yuuka.a
+		is_dialog_only = yes
+		response_text = BA_communication.Yuuka.a.response
+	}
+	option = {
+		name = BA_communication.Yuuka.b
+		is_dialog_only = yes
+		response_text = BA_communication.Yuuka.b.response
+	}
+	option = {
+		name = BA_communication.Yuuka.c
+		response_text = BA_communication.Yuuka.c.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = BA_communication.Yuuka.d
+		response_text = BA_communication.Yuuka.d.response
+		is_dialog_only = yes
+	}
+}
+
+#亚津子
+country_event = {
+	id = BA_Shittem.1306
+	inline_script = {
+		script = Leader/SP_recruit
+		Leader = Atsuko
+	}
+	###
+}
+
+#纱织
+country_event = {
+	id = BA_Shittem.1307
+	inline_script = {
+		script = Leader/SP_recruit
+		Leader = Saori
+	}
+	###
+}
+
+#诺亚（电磁炮）
+#忧
+country_event = {
+	id = BA_Shittem.1309
+	inline_script = {
+		script = Leader/SP_recruit
+		Leader = Ui
+	}
+	###
+}
+
+
+### 提示
+#故障提示
+country_event = {
+	id = BA_Shittem.1900
+	is_triggered_only = yes
+	title = "BA_Shittem.1900.title"
+	diplomatic = yes
+	custom_gui = "enclave_curator_window"
+	custom_gui_option = "BlueArchive_angel_24_option"
+	desc = {
+		text = BA_Shittem.1900.desc
+	}
+	picture_event_data = {
+		#portrait = Arona0013
+		room = "BA_Shittem_room"
+	}
+	option = {
+		#确定
+		name = BA_Shittem.1900.a
+		default_hide_option = yes
+	}
+}
+
+#青辉石修复委托：提示
+country_event = {
+	id = BA_Shittem.1921
+	is_triggered_only = yes
+	title = "BA_Shittem.1921.title"
+	desc = "BA_Shittem.1921.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	trigger = {
+		has_authority = auth_kivotos
+		has_communications = event_target:BA_Shittem_country
+		NOR = {
+			has_country_flag = BA_pyroxenes_crafting_engaging
+			has_technology = tech_BA_pyroxenes_crafting
+		}
+	}
+	immediate = {
+		set_country_flag = BA_pyroxenes_crafting_engaging
+		set_country_flag = BA_Normal_commission_00_allow
+	}
+	option = {
+		name = BA_Shittem.1921.go
+		country_event = {
+			id = BA_Shittem.2000
+		}
+	}
+	option = {
+		name = BA_Shittem.1921.cancel
+	}
+}
+
+#青辉石量产科技-标记完成
+country_event = {
+	id = BA_Shittem.1923
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_authority = auth_kivotos
+		last_increased_tech = tech_BA_pyroxenes_crafting
+	}
+	immediate = {
+		remove_country_flag = BA_pyroxenes_crafting_engaging
+	}
+}
+
+#神秘事件
+country_event = {
+	id = BA_Shittem.1998
+	is_triggered_only = yes
+	title = "BA_Shittem.1998.title"
+	desc = "BA_Shittem.1998.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0010
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = EXCELLENT
+		default_hide_option = yes
+	}
+	option = {
+		name = cheat_buff
+		is_dialog_only = yes
+		response_text = buff_added
+		if = {
+			limit = {
+				has_modifier = modifier_BA_testing
+			}
+			remove_modifier = modifier_BA_testing
+		}
+		else = {
+			add_modifier = {
+				modifier = modifier_BA_testing
+			}
+		}
+	}
+	option = {
+		name = check_crisis_level
+		is_dialog_only = yes
+		response_text = check_crisis_level_re
+	}
+	option = {
+		name = pyroxene_tech
+		is_dialog_only = yes
+		response_text = tech_gived
+		give_technology = {
+			tech = tech_BA_pyroxenes_crafting
+		}
+	}
+	option = {
+		name = keystone_tech
+		is_dialog_only = yes
+		response_text = tech_gived
+		give_technology = {
+			tech = tech_BA_keystone_crafting
+		}
+	}
+	option = {
+		name = commmission.Normal_08_A
+		is_dialog_only = yes
+		set_country_flag = BA_Normal_commission_08_finished
+		set_country_flag = BA_Normal_commission_09_allow
+		set_timed_country_flag = {
+			flag = BA_Normal_commission_09_delaying
+			days = 720
+		}
+		change_variable = {
+			which = BA_commission_count
+			value = 1
+		}
+		country_event = {
+			id = BA_Shittem.3002
+			days = 1
+		}
+	}
+	option = {
+		name = Special_Leader
+		country_event = {
+			id = BA_Shittem.1999
+		}
+	}
+}
+
+#定制总督选择界面
+country_event = {
+	id = BA_Shittem.1999
+	is_triggered_only = yes
+	title = "BA_Shittem.1999.title"
+	desc = "BA_Shittem.1999.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0010
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_Shittem.1999.exit
+		default_hide_option = yes
+	}
+	option = {
+		name = GetSerina
+		is_dialog_only = yes
+		response_text = GetSerina.re
+		allow = {
+			custom_tooltip_fail = {
+				text = Leader_existed
+				NOT = {
+					has_country_flag = BA_GetSerina
+				}
+			}
+		}
+		hidden_effect = {
+			set_country_flag = BA_GetSerina
+			BA_governor_Serina_PR = yes
+		}
+	}
+	option = {
+		name = GetIori
+		is_dialog_only = yes
+		response_text = GetIori.re
+		allow = {
+			custom_tooltip_fail = {
+				text = Leader_existed
+				NOT = {
+					has_country_flag = BA_GetIori
+				}
+			}
+		}
+		hidden_effect = {
+			set_country_flag = BA_GetIori
+			BA_admiral_Iori_PR = yes
+		}
+	}
+}
+
+###########################
+#委托
+country_event = {
+	id = BA_Shittem.2000
+	is_triggered_only = yes
+	title = "BA_Shittem.2000.title"
+	desc = "BA_Shittem.2000.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0013
+		room = "BA_Shittem_room"
+	}
+	immediate = {
+		set_country_flag = BA_commmission_page
+	}
+	#返回
+	option = {
+		name = BA_Shittem.2000.exit
+	}
+	#循环委托1：提交消费品（完成一段飞升解锁
+	option = {
+		name = commmission.Repeatable_01_A
+		trigger = {
+			has_country_flag = BA_Repeatable_commmission_01_allow
+			NOT = {
+				has_country_flag = BA_Repeatable_commmission_01_accepted
+			}
+		}
+		allow = {
+		}
+		is_dialog_only = yes
+		response_text = BA_Repeatable_commmission_01_A
+		set_country_flag = BA_Repeatable_commmission_01_accepted
+	}
+	option = {
+		name = commmission.Repeatable_01_B
+		custom_tooltip = BA_Repeatable_commmission_01_tip
+		trigger = {
+			has_country_flag = BA_Repeatable_commmission_01_accepted
+		}
+		allow = {
+			custom_tooltip = {
+				text = BA_commission_accepted_unfinished
+				always = yes
+			}
+			resource_stockpile_compare = {
+				resource = consumer_goods
+				value >= 1
+				multiplier = BA_Repeatable_commission_01_counter
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_Repeatable_commmission_01_B
+		hidden_effect = {
+			change_variable = {
+				which = BA_Repeatable_commission_01_counter
+				value = 200
+			}
+			change_variable = {
+				which = BA_commission_count
+				value = 1
+			}
+		}
+		add_resource = {
+			consumer_goods = -1
+			multiplier = BA_Repeatable_commission_01_counter
+		}
+		add_resource = {
+			sr_eligma = 50
+		}
+	}
+	#循环委托2：提交制造石（随二段飞升解锁
+	option = {
+		name = commmission.Repeatable_02_A
+		trigger = {
+			has_ascension_perk = ap_BA_Our_story
+			NOT = {
+				has_country_flag = BA_Repeatable_commmission_02_accepted
+			}
+		}
+		allow = {
+		}
+		is_dialog_only = yes
+		response_text = BA_Repeatable_commmission_02_A
+		set_country_flag = BA_Repeatable_commmission_02_accepted
+	}
+	option = {
+		name = commmission.Repeatable_02_B
+		custom_tooltip = BA_Repeatable_commmission_02_tip
+		trigger = {
+			has_country_flag = BA_Repeatable_commmission_02_accepted
+		}
+		allow = {
+			custom_tooltip = {
+				text = BA_commission_accepted_unfinished
+				always = yes
+			}
+			resource_stockpile_compare = {
+				resource = sr_keystone
+				value >= 1
+				multiplier = BA_Repeatable_commission_02_counter
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_Repeatable_commmission_02_B
+		hidden_effect = {
+			change_variable = {
+				which = BA_Repeatable_commission_02_counter
+				value = 300
+			}
+			change_variable = {
+				which = BA_commission_count
+				value = 1
+			}
+		}
+		add_resource = {
+			sr_keystone = -1
+			multiplier = BA_Repeatable_commission_02_counter
+		}
+		add_resource = {
+			sr_eligma = 100
+		}
+	}
+	#循环委托3：提交暗物质（拥有“暗物质开采”科技以及任意暗物质部件科技解锁）
+	option = {
+		name = commmission.Repeatable_03_A
+		trigger = {
+			has_technology = tech_mine_dark_matter
+			OR = {
+				has_technology = tech_dark_matter_power_core
+				has_technology = tech_dark_matter_deflector
+				has_technology = tech_dark_matter_propulsion
+			}
+			NOT = {
+				has_country_flag = BA_Repeatable_commmission_03_accepted
+			}
+		}
+		allow = {
+		}
+		is_dialog_only = yes
+		response_text = BA_Repeatable_commmission_03_A
+		set_country_flag = BA_Repeatable_commmission_03_accepted
+	}
+	option = {
+		name = commmission.Repeatable_03_B
+		custom_tooltip = BA_Repeatable_commmission_03_tip
+		trigger = {
+			has_country_flag = BA_Repeatable_commmission_03_accepted
+		}
+		allow = {
+			custom_tooltip = {
+				text = BA_commission_accepted_unfinished
+				always = yes
+			}
+			resource_stockpile_compare = {
+				resource = sr_dark_matter
+				value >= 1
+				multiplier = BA_Repeatable_commission_03_counter
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_Repeatable_commmission_03_B
+		hidden_effect = {
+			change_variable = {
+				which = BA_commission_count
+				value = 1
+			}
+		}
+		add_resource = {
+			sr_dark_matter = -1
+			multiplier = BA_Repeatable_commission_03_counter
+		}
+		add_resource = {
+			sr_eligma = 200
+		}
+	}
+	##### 阿里乌斯起源 #####
+	## 委托模板参照K01
+	#K01
+	option = {
+		name = commmission.Kyrie_01_A		#A项 用于接受委托
+		trigger = {
+			#除了数字以外不用改
+			has_country_flag = BA_Kyrie_commmission_01_allow			#在别的地方激活触发许可才可以接受
+			NOT = {
+				has_country_flag = BA_Kyrie_commmission_01_accepted
+			}
+		}
+		allow = {
+			#其他接受限制
+		}
+		is_dialog_only = yes
+		response_text = BA_Kyrie_commmission_01_A		#委托详情
+		set_country_flag = BA_Kyrie_commmission_01_accepted		#标记已接受
+		#需要其他效果自己加，比如下面这个，别忘了测试一下
+		add_research_option = tech_BA_ruins_research
+	}
+	option = {
+		name = commmission.Kyrie_01_B		#B项 用于领取奖励，loc直接引用上一个
+		custom_tooltip = BA_Kyrie_commmission_01_tip		#说明一下完成条件，防止星际玩家
+		trigger = {
+			#除了数字以外不用改
+			has_country_flag = BA_Kyrie_commmission_01_accepted			#还没接受委托就想领奖励？
+		}
+		allow = {
+			#已接受未完成文本，不解释了
+			custom_tooltip = {
+				text = BA_commission_accepted_unfinished
+				#这个完成标识可以换成别的判断条件
+				has_country_flag = BA_Kyrie_commmission_01_finished
+			}
+			#提交资源类的委托，需要加上资源库存判定
+		}
+		is_dialog_only = yes
+		response_text = BA_Kyrie_commmission_01_B		#领奖详情
+		hidden_effect = {
+			#除了数字以外不用改
+			remove_country_flag = BA_Kyrie_commmission_01_allow			#移除触发许可
+			remove_country_flag = BA_Kyrie_commmission_01_accepted			#移除已接受标识
+			remove_country_flag = BA_Kyrie_commmission_01_finished			#移除完成标识，可以换成别的判断条件
+			#完成委托计数
+			change_variable = {
+				which = BA_commission_count
+				value = 1
+			}
+		}
+		#收货，发奖
+		add_resource = {
+			sr_keystone = 50
+		}
+	}
+	#K02
+	option = {
+		name = commmission.Kyrie_02_A
+		trigger = {
+			has_country_flag = BA_Kyrie_commmission_02_allow
+			NOT = {
+				has_country_flag = BA_Kyrie_commmission_02_accepted
+			}
+		}
+		allow = {
+		}
+		is_dialog_only = yes
+		response_text = BA_Kyrie_commmission_02_A
+		set_country_flag = BA_Kyrie_commmission_02_accepted
+	}
+	option = {
+		name = commmission.Kyrie_02_B
+		custom_tooltip = BA_Kyrie_commmission_02_tip
+		trigger = {
+			has_country_flag = BA_Kyrie_commmission_02_accepted
+		}
+		allow = {
+			custom_tooltip = {
+				text = BA_commission_accepted_unfinished
+				has_country_flag = BA_Kyrie_commmission_02_finished
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_Kyrie_commmission_02_B
+		hidden_effect = {
+			remove_country_flag = BA_Kyrie_commmission_02_allow
+			remove_country_flag = BA_Kyrie_commmission_02_accepted
+			remove_country_flag = BA_Kyrie_commmission_02_finished
+			change_variable = {
+				which = BA_commission_count
+				value = 1
+			}
+		}
+		add_resource = {
+			sr_eligma = 10
+			society_research = 2000
+		}
+	}
+	#K03
+	option = {
+		name = commmission.Kyrie_03_A
+		trigger = {
+			has_country_flag = BA_Kyrie_commmission_03_allow
+			NOT = {
+				has_country_flag = BA_Kyrie_commmission_03_accepted
+			}
+		}
+		allow = {
+		}
+		is_dialog_only = yes
+		response_text = BA_Kyrie_commmission_03_A
+		set_country_flag = BA_Kyrie_commmission_03_accepted
+	}
+	option = {
+		name = commmission.Kyrie_03_B
+		custom_tooltip = BA_Kyrie_commmission_03_tip
+		trigger = {
+			has_country_flag = BA_Kyrie_commmission_03_accepted
+		}
+		allow = {
+			custom_tooltip = {
+				text = BA_commission_accepted_unfinished
+				always = yes
+			}
+			resource_stockpile_compare = {
+				resource = alloys
+				value >= 200
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_Kyrie_commmission_03_B
+		hidden_effect = {
+			remove_country_flag = BA_Kyrie_commmission_03_allow
+			remove_country_flag = BA_Kyrie_commmission_03_accepted
+			change_variable = {
+				which = BA_commission_count
+				value = 1
+			}
+		}
+		add_resource = {
+			alloys = -200
+			sr_pyroxenes = 100
+			sr_eligma = 20
+		}
+	}
+	#K04
+	option = {
+		name = commmission.Kyrie_04_A
+		trigger = {
+			has_country_flag = BA_Kyrie_commmission_04_allow
+			NOT = {
+				has_country_flag = BA_Kyrie_commmission_04_accepted
+			}
+		}
+		allow = {
+		}
+		is_dialog_only = yes
+		response_text = BA_Kyrie_commmission_04_A
+		set_country_flag = BA_Kyrie_commmission_04_accepted
+	}
+	option = {
+		name = commmission.Kyrie_04_B
+		custom_tooltip = BA_Kyrie_commmission_04_tip
+		trigger = {
+			has_country_flag = BA_Kyrie_commmission_04_accepted
+		}
+		allow = {
+			custom_tooltip = {
+				text = BA_commission_accepted_unfinished
+				always = yes
+			}
+			resource_stockpile_compare = {
+				resource = volatile_motes
+				value >= 40
+			}
+			resource_stockpile_compare = {
+				resource = food
+				value >= 400
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_Kyrie_commmission_04_B
+		hidden_effect = {
+			remove_country_flag = BA_Kyrie_commmission_04_allow
+			remove_country_flag = BA_Kyrie_commmission_04_accepted
+			change_variable = {
+				which = BA_commission_count
+				value = 1
+			}
+		}
+		add_resource = {
+			volatile_motes = -40
+			food = -400
+			sr_pyroxenes = 100
+			sr_eligma = 30
+		}
+		add_monthly_resource_mult = {
+			resource = unity
+			value = 12
+		}
+	}
+	##### 伊甸条约起源 #####
+	#E01
+	option = {
+		name = commmission.EdenTreaty_01_A		#这个委托以后改
+		trigger = {
+			has_country_flag = BA_EdenTreaty_commmission_01_allow
+			NOT = {
+				has_country_flag = BA_EdenTreaty_commmission_01_accepted
+			}
+		}
+		allow = {
+		}
+		is_dialog_only = yes
+		response_text = BA_EdenTreaty_commmission_01_A
+		set_country_flag = BA_EdenTreaty_commmission_01_accepted
+	}
+	option = {
+		name = commmission.EdenTreaty_01_B
+		custom_tooltip = BA_EdenTreaty_commmission_01_tip
+		trigger = {
+			has_country_flag = BA_EdenTreaty_commmission_01_accepted
+		}
+		allow = {
+			custom_tooltip = {
+				text = BA_commission_accepted_unfinished
+				has_technology = tech_BA_culture_Federal
+			}
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 500
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_EdenTreaty_commmission_01_B
+		hidden_effect = {
+			remove_country_flag = BA_EdenTreaty_commmission_01_allow
+			remove_country_flag = BA_EdenTreaty_commmission_01_accepted
+			change_variable = {
+				which = BA_commission_count
+				value = 1
+			}
+		}
+		add_resource = {
+			influence = -500
+			sr_eligma = 80
+		}
+	}
+	#####    通用     #####
+	#N00 青辉石委托
+	option = {
+		name = commmission.Normal_00_A
+		trigger = {
+			has_country_flag = BA_Normal_commission_00_allow
+			NOT = {
+				has_country_flag = BA_Normal_commission_00_accepted
+			}
+		}
+		allow = {
+			custom_tooltip = {
+				text = project_pyroxenes_crafting_limit
+				check_variable = {
+					which = BA_commission_count
+					value >= 7
+				}
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_00_A
+		set_country_flag = BA_Normal_commission_00_accepted
+		set_timed_country_flag = {
+			flag = BA_Normal_commission_00_engaging
+			days = 29
+		}
+	}
+	option = {
+		name = commmission.Normal_00_B
+		custom_tooltip = BA_Normal_commission_00_tip
+		trigger = {
+			has_country_flag = BA_Normal_commission_00_accepted
+		}
+		allow = {
+			custom_tooltip = {
+				text = BA_commission_accepted_unfinished
+				NOT = {
+					has_country_flag = BA_Normal_commission_00_engaging
+				}
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_00_B
+		hidden_effect = {
+			remove_country_flag = BA_Normal_commission_00_allow
+			remove_country_flag = BA_Normal_commission_00_accepted
+			change_variable = {
+				which = BA_commission_count
+				value = 1
+			}
+		}
+		add_resource = {
+			sr_eligma = 20
+		}
+		add_research_option = tech_BA_pyroxenes_crafting
+		capital_scope = {
+			add_building = building_BA_pyroxenes_1
+		}
+	}
+	#N01
+	option = {
+		name = commmission.Normal_01_A
+		trigger = {
+			has_country_flag = BA_Normal_commission_01_allow
+			NOT = {
+				has_country_flag = BA_Normal_commission_01_accepted
+			}
+		}
+		allow = {
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_01_A
+		set_country_flag = BA_Normal_commission_01_accepted
+	}
+	option = {
+		name = commmission.Normal_01_B
+		custom_tooltip = BA_Normal_commission_01_tip
+		trigger = {
+			has_country_flag = BA_Normal_commission_01_accepted
+		}
+		allow = {
+			custom_tooltip = {
+				text = BA_commission_accepted_unfinished
+				any_owned_planet = {
+					OR = {
+						has_building = building_research_lab_1
+						has_building = building_research_lab_2
+						has_building = building_research_lab_3
+					}
+				}
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_01_B
+		hidden_effect = {
+			remove_country_flag = BA_Normal_commission_01_allow
+			remove_country_flag = BA_Normal_commission_01_accepted
+			change_variable = {
+				which = BA_commission_count
+				value = 1
+			}
+		}
+		add_resource = {
+			sr_eligma = 20
+		}
+	}
+	#N02
+	option = {
+		name = commmission.Normal_02_A
+		trigger = {
+			has_country_flag = BA_Normal_commission_02_allow
+			NOT = {
+				has_country_flag = BA_Normal_commission_02_accepted
+			}
+		}
+		allow = {
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_02_A
+		set_country_flag = BA_Normal_commission_02_accepted
+	}
+	option = {
+		name = commmission.Normal_02_B
+		custom_tooltip = BA_Normal_commission_02_tip
+		trigger = {
+			has_country_flag = BA_Normal_commission_02_accepted
+		}
+		allow = {
+			custom_tooltip = {
+				text = BA_commission_accepted_unfinished
+				always = yes
+			}
+			resource_stockpile_compare = {
+				resource = energy
+				value >= 1000
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_02_B
+		hidden_effect = {
+			remove_country_flag = BA_Normal_commission_02_allow
+			remove_country_flag = BA_Normal_commission_02_accepted
+			change_variable = {
+				which = BA_commission_count
+				value = 1
+			}
+		}
+		add_resource = {
+			energy = -1000
+			sr_eligma = 20
+		}
+	}
+	#N03
+	option = {
+		name = commmission.Normal_03_A
+		trigger = {
+			has_country_flag = BA_Normal_commission_03_allow
+			NOT = {
+				has_country_flag = BA_Normal_commission_03_accepted
+			}
+		}
+		allow = {
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_03_A
+		set_country_flag = BA_Normal_commission_03_accepted
+	}
+	option = {
+		name = commmission.Normal_03_B
+		custom_tooltip = BA_Normal_commission_03_tip
+		trigger = {
+			has_country_flag = BA_Normal_commission_03_accepted
+		}
+		allow = {
+			custom_tooltip = {
+				text = BA_commission_accepted_unfinished
+				always = yes
+			}
+			resource_stockpile_compare = {
+				resource = consumer_goods
+				value >= 500
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_03_B
+		hidden_effect = {
+			remove_country_flag = BA_Normal_commission_03_allow
+			remove_country_flag = BA_Normal_commission_03_accepted
+			change_variable = {
+				which = BA_commission_count
+				value = 1
+			}
+		}
+		add_resource = {
+			consumer_goods = -500
+			sr_eligma = 20
+		}
+	}
+	#N04
+	option = {
+		name = commmission.Normal_04_A
+		trigger = {
+			has_country_flag = BA_Normal_commission_04_allow
+			NOT = {
+				has_country_flag = BA_Normal_commission_04_accepted
+			}
+		}
+		allow = {
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_04_A
+		set_country_flag = BA_Normal_commission_04_accepted
+	}
+	option = {
+		name = commmission.Normal_04_B
+		custom_tooltip = BA_Normal_commission_04_tip
+		trigger = {
+			has_country_flag = BA_Normal_commission_04_accepted
+		}
+		allow = {
+			custom_tooltip = {
+				text = BA_commission_accepted_unfinished
+				always = yes
+			}
+			resource_stockpile_compare = {
+				resource = food
+				value >= 3000
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_04_B
+		hidden_effect = {
+			remove_country_flag = BA_Normal_commission_04_allow
+			remove_country_flag = BA_Normal_commission_04_accepted
+			change_variable = {
+				which = BA_commission_count
+				value = 1
+			}
+		}
+		add_resource = {
+			food = -3000
+			sr_eligma = 20
+		}
+	}
+	#N05
+	option = {
+		name = commmission.Normal_05_A
+		trigger = {
+			has_country_flag = BA_Normal_commission_05_allow
+			NOT = {
+				has_country_flag = BA_Normal_commission_05_accepted
+			}
+		}
+		allow = {
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_05_A
+		set_country_flag = BA_Normal_commission_05_accepted
+	}
+	option = {
+		name = commmission.Normal_05_B
+		custom_tooltip = BA_Normal_commission_05_tip
+		trigger = {
+			has_country_flag = BA_Normal_commission_05_accepted
+		}
+		allow = {
+			custom_tooltip = {
+				text = BA_commission_accepted_unfinished
+				always = yes
+			}
+			resource_stockpile_compare = {
+				resource = rare_crystals
+				value >= 40
+			}
+			resource_stockpile_compare = {
+				resource = alloys
+				value >= 200
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_05_B
+		hidden_effect = {
+			remove_country_flag = BA_Normal_commission_05_allow
+			remove_country_flag = BA_Normal_commission_05_accepted
+			change_variable = {
+				which = BA_commission_count
+				value = 1
+			}
+		}
+		add_resource = {
+			rare_crystals = -40
+			alloys = -200
+			sr_eligma = 30
+		}
+		add_modifier = {
+			modifier = modifier_BA_survey
+		}
+	}
+	#N06
+	option = {
+		name = commmission.Normal_06_A
+		trigger = {
+			has_country_flag = BA_Normal_commission_06_allow
+			NOT = {
+				has_country_flag = BA_Normal_commission_06_accepted
+			}
+		}
+		allow = {
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_06_A
+		set_country_flag = BA_Normal_commission_06_accepted
+	}
+	option = {
+		name = commmission.Normal_06_B
+		custom_tooltip = BA_Normal_commission_06_tip
+		trigger = {
+			has_country_flag = BA_Normal_commission_06_accepted
+		}
+		allow = {
+			custom_tooltip = {
+				text = BA_commission_accepted_unfinished
+				always = yes
+			}
+			resource_stockpile_compare = {
+				resource = exotic_gases
+				value >= 40
+			}
+			resource_stockpile_compare = {
+				resource = minerals
+				value >= 400
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_06_B
+		hidden_effect = {
+			remove_country_flag = BA_Normal_commission_06_allow
+			remove_country_flag = BA_Normal_commission_06_accepted
+			change_variable = {
+				which = BA_commission_count
+				value = 1
+			}
+		}
+		add_resource = {
+			exotic_gases = -40
+			minerals = -400
+			sr_eligma = 30
+		}
+	}
+	#N07（反光环武器
+	option = {
+		name = commmission.Normal_07_A
+		trigger = {
+			has_country_flag = BA_Normal_commission_07_allow
+			NOT = {
+				has_country_flag = BA_Normal_commission_07_accepted
+			}
+		}
+		allow = {
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_07_A
+		set_country_flag = BA_Normal_commission_07_accepted
+		add_research_option = tech_BA_Arius_antihalo
+	}
+	option = {
+		name = commmission.Normal_07_B
+		custom_tooltip = BA_Normal_commission_07_tip
+		trigger = {
+			has_country_flag = BA_Normal_commission_07_accepted
+		}
+		allow = {
+			custom_tooltip = {
+				text = BA_commission_accepted_unfinished
+				has_technology = tech_BA_Arius_antihalo
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_07_B
+		hidden_effect = {
+			remove_country_flag = BA_Normal_commission_07_allow
+			remove_country_flag = BA_Normal_commission_07_accepted
+			change_variable = {
+				which = BA_commission_count
+				value = 1
+			}
+		}
+		add_resource = {
+			sr_eligma = 50
+		}
+	}
+	#N08（姬器人委托1
+	option = {
+		name = commmission.Normal_08_A
+		trigger = {
+			has_technology = tech_colonial_centralization
+			has_technology = tech_robotic_workers
+			NOR = {
+				has_country_flag = BA_Normal_commission_08_accepted
+				has_country_flag = BA_Normal_commission_08_finished
+			}
+		}
+		allow = {
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_08_A
+		set_country_flag = BA_Normal_commission_08_accepted
+		add_research_option = tech_droid_workers
+	}
+	option = {
+		name = commmission.Normal_08_B
+		custom_tooltip = BA_Normal_commission_08_tip
+		trigger = {
+			has_country_flag = BA_Normal_commission_08_accepted
+		}
+		allow = {
+			custom_tooltip = {
+				text = BA_commission_accepted_unfinished
+				has_technology = tech_droid_workers
+			}
+			resource_stockpile_compare = {
+				resource = alloys
+				value >= 1000
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_08_B
+		hidden_effect = {
+			#remove_country_flag = BA_Normal_commission_08_allow_A
+			#remove_country_flag = BA_Normal_commission_08_allow_B
+			remove_country_flag = BA_Normal_commission_08_accepted
+			set_country_flag = BA_Normal_commission_08_finished
+			set_country_flag = BA_Normal_commission_09_allow
+			set_timed_country_flag = {
+				flag = BA_Normal_commission_09_delaying
+				days = 720
+			}
+			change_variable = {
+				which = BA_commission_count
+				value = 1
+			}
+			country_event = {
+				id = BA_Shittem.3002
+				days = 1
+			}
+		}
+		add_resource = {
+			alloys = -1000
+			sr_eligma = 40
+		}
+	}
+	#N09（姬器人委托2
+	option = {
+		name = commmission.Normal_09_A
+		trigger = {
+			has_country_flag = BA_Normal_commission_09_allow
+			NOR = {
+				has_country_flag = BA_Normal_commission_09_delaying
+				has_country_flag = BA_Normal_commission_09_accepted
+			}
+		}
+		allow = {
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_09_A
+		set_country_flag = BA_Normal_commission_09_accepted
+		add_research_option = tech_galactic_administration
+		add_research_option = tech_sapient_ai
+	}
+	option = {
+		name = commmission.Normal_09_B
+		custom_tooltip = BA_Normal_commission_09_tip
+		trigger = {
+			has_country_flag = BA_Normal_commission_09_accepted
+		}
+		allow = {
+			custom_tooltip = {
+				text = BA_commission_accepted_unfinished
+				has_technology = tech_synthetic_workers
+			}
+			resource_stockpile_compare = {
+				resource = alloys
+				value >= 1000
+			}
+			resource_stockpile_compare = {
+				resource = consumer_goods
+				value >= 1000
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_09_B
+		hidden_effect = {
+			remove_country_flag = BA_Normal_commission_09_allow
+			remove_country_flag = BA_Normal_commission_09_accepted
+			change_variable = {
+				which = BA_commission_count
+				value = 1
+			}
+		}
+		add_resource = {
+			alloys = -1000
+			consumer_goods = -1000
+			sr_eligma = 40
+		}
+		set_country_flag = BA_Aris
+		set_country_flag = BA_Normal_commission_10_allow
+		set_timed_country_flag = {
+			flag = BA_Normal_commission_10_delaying
+			days = 720
+		}
+		capital_scope = {
+			create_pop = {
+				species = event_target:BA_Robot_species
+			}
+			create_pop = {
+				species = event_target:BA_Robot_species
+			}
+			create_pop = {
+				species = event_target:BA_Robot_species
+			}
+		}
+	}
+	#N10（姬器人委托3
+	option = {
+		name = commmission.Normal_10_A
+		trigger = {
+			has_country_flag = BA_Normal_commission_10_allow
+			NOR = {
+				has_country_flag = BA_Normal_commission_10_delaying
+				has_country_flag = BA_Normal_commission_10_accepted
+			}
+		}
+		allow = {
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_10_A
+		set_country_flag = BA_Normal_commission_10_accepted
+		set_country_flag = BA_uplifting_Aris
+		hidden_effect = {
+			set_variable = {
+				which = BA_Aris_lift_count
+				value = 0
+			}
+		}
+	}
+	option = {
+		name = commmission.Normal_10_B
+		custom_tooltip = BA_Normal_commission_10_tip
+		trigger = {
+			has_country_flag = BA_Normal_commission_10_accepted
+		}
+		allow = {
+			custom_tooltip = {
+				text = BA_commission_accepted_unfinished
+				has_technology = tech_synthetic_leaders
+				has_country_flag = BA_Aris_lifted
+			}
+			resource_stockpile_compare = {
+				resource = alloys
+				value >= 2000
+			}
+			resource_stockpile_compare = {
+				resource = consumer_goods
+				value >= 2000
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_10_B
+		hidden_effect = {
+			remove_country_flag = BA_Normal_commission_10_allow
+			remove_country_flag = BA_Normal_commission_10_accepted
+			change_variable = {
+				which = BA_commission_count
+				value = 1
+			}
+		}
+	}
+	#N11（百夜堂
+	option = {
+		name = commmission.Normal_11_A
+		trigger = {
+			has_country_flag = BA_Normal_commission_11_allow
+			NOT = {
+				has_country_flag = BA_Normal_commission_11_accepted
+			}
+			always = no			#还没做完 以后改
+		}
+		allow = {
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_11_A
+		set_country_flag = BA_Normal_commission_11_accepted
+	}
+	option = {
+		name = commmission.Normal_11_B
+		custom_tooltip = BA_Normal_commission_11_tip
+		trigger = {
+			has_country_flag = BA_Normal_commission_11_accepted
+		}
+		allow = {
+			custom_tooltip = {
+				text = BA_commission_accepted_unfinished
+				has_technology = tech_synthetic_workers
+			}
+			resource_stockpile_compare = {
+				resource = alloys
+				value >= 1000
+			}
+			resource_stockpile_compare = {
+				resource = consumer_goods
+				value >= 1000
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_11_B
+		hidden_effect = {
+			remove_country_flag = BA_Normal_commission_11_allow
+			remove_country_flag = BA_Normal_commission_11_accepted
+			change_variable = {
+				which = BA_commission_count
+				value = 1
+			}
+		}
+		add_resource = {
+			alloys = -1000
+			consumer_goods = -1000
+			sr_eligma = 40
+		}
+	}
+	##########
+}
+
+#### on_action触发，定时类委托触发器
+#无区别类委托
+country_event = {
+	id = BA_Shittem.2001
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_authority = auth_kivotos
+	}
+	immediate = {
+		switch = {
+			trigger = years_passed
+			3 = {
+				set_country_flag = BA_Normal_commission_01_allow
+				set_country_flag = BA_Normal_commission_03_allow
+			}
+			5 = {
+				set_country_flag = BA_Normal_commission_02_allow
+				set_country_flag = BA_Normal_commission_04_allow
+			}
+			10 = {
+				set_country_flag = BA_Normal_commission_05_allow
+				set_country_flag = BA_Normal_commission_06_allow
+			}
+			15 = {
+				set_country_flag = BA_Normal_commission_07_allow
+				set_country_flag = BA_Normal_commission_11_allow
+			}
+			30 = {
+				remove_country_flag = BA_Normal_commission_01_allow
+			}
+		}
+	}
+}
+
+#伊甸条约
+country_event = {
+	id = BA_Shittem.2002
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_authority = auth_kivotos
+		has_origin = origin_Kivotos_Eden_treaty
+	}
+	immediate = {
+		switch = {
+			trigger = years_passed
+			5 = {
+				set_country_flag = BA_EdenTreaty_commmission_01_allow
+			}
+		}
+	}
+}
+
+#阿里乌斯
+country_event = {
+	id = BA_Shittem.2003
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_authority = auth_kivotos
+		has_origin = origin_Kivotos_Kyrie
+	}
+	immediate = {
+		switch = {
+			trigger = years_passed
+			10 = {
+				set_country_flag = BA_Kyrie_commmission_04_allow
+			}
+		}
+	}
+}
+
+#其他方式触发
+ship_event = {
+	id = BA_Shittem.2004
+	hide_window = yes
+	is_triggered_only = yes
+	#fire_only_once = yes
+	trigger = {
+		is_ship_size = BA_missile_ship
+	}
+	immediate = {
+		owner = {
+			set_country_flag = BA_Kyrie_commmission_02_finished
+		}
+	}
+}
+
+country_event = {
+	id = BA_Shittem.2005
+	is_triggered_only = yes
+	title = BA_Shittem.2005.title
+	desc = BA_Shittem.2005.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0013
+		room = "BA_Shittem_room"
+	}
+	trigger = {
+		has_origin = origin_Kivotos_Kyrie
+	}
+	immediate = {
+		set_country_flag = BA_Kyrie_commmission_01_allow
+	}
+	option = {
+		name = BA_Shittem.2005.go
+		country_event = {
+			id = BA_Shittem.1300
+		}
+	}
+	option = {
+		name = BA_Shittem.2005.cancel
+	}
+}
+
+#提示去委托页面查看
+country_event = {
+	id = BA_Shittem.2008
+	is_triggered_only = yes
+	#fire_only_once = yes
+	title = BA_Shittem.2008.title
+	desc = BA_Shittem.2008.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0013
+		room = "BA_Shittem_room"
+	}
+	trigger = {
+		has_authority = auth_kivotos
+		has_communications = event_target:BA_Shittem_country
+		NOT = {
+			has_country_flag = BA_commmission_page
+		}
+	}
+	option = {
+		name = BA_Shittem.2008.go
+		country_event = {
+			id = BA_Shittem.2000
+		}
+	}
+	option = {
+		name = BA_Shittem.2008.cancel
+	}
+}
+
+###########################
+#### 杂项事件
+###########################
+#### 爱丽丝
+#改装为姬器人
+planet_event = {
+	id = BA_Shittem.3001
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		set_variable = {
+			which = BA_MAC_count
+			value = 0
+		}
+		every_owned_pop = {
+			limit = {
+				is_robot_pop = yes
+				NOT = {
+					species = {
+						is_same_species = event_target:BA_Robot_species
+					}
+				}
+			}
+			set_pop_flag = BA_to_be_converted
+		}
+		while = {
+			limit = {
+				any_owned_pop = {
+					has_pop_flag = BA_to_be_converted
+				}
+			}
+			random_owned_pop = {
+				limit = {
+					has_pop_flag = BA_to_be_converted
+				}
+				kill_pop = yes
+			}
+			change_variable = {
+				which = BA_MAC_count
+				value = 1
+			}
+		}
+		while = {
+			count = BA_MAC_count
+			create_pop = {
+				species = event_target:BA_Robot_species
+			}
+		}
+	}
+}
+
+#获得爱丽丝领袖
+country_event = {
+	id = BA_Shittem.3002
+	title = "BA_Shittem.3002.name"
+	desc = "BA_Shittem.3002.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	is_triggered_only = yes
+	#fire_only_once = yes
+	picture_event_data = {
+		room = "Noa_Aris_room"
+	}
+	immediate = {
+		set_country_flag = BA_Aris_joined
+		BA_Aris_SP = {
+			class = scientist
+		}
+	}
+	option = {
+		name = BA_Shittem.3002.a
+		is_dialog_only = yes
+		response_text = BA_Shittem.3002.a.re
+	}
+	option = {
+		name = BA_Shittem.3002.b
+		is_dialog_only = yes
+		response_text = BA_Shittem.3002.b.re
+	}
+	option = {
+		name = BA_Shittem.3002.c
+		response_text = BA_Shittem.3002.c.re
+		default_hide_option = yes
+		custom_tooltip = Aris_joined
+	}
+}
+
+#和爱丽丝交流
+country_event = {
+	id = BA_Shittem.3003
+	title = "BA_Shittem.3003.name"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = Aris11
+		room = BA_05_room
+	}
+	desc = {
+		trigger = {
+			always = yes
+		}
+		text = BA_Shittem.3003.desc.normal.a
+	}
+	desc = {
+		trigger = {
+			any_owned_leader = {
+				leader_class = scientist
+				has_leader_flag = BA_Real_Aris
+			}
+		}
+		text = BA_Shittem.3003.desc.scientist.a
+	}
+	desc = {
+		trigger = {
+			any_owned_leader = {
+				leader_class = official
+				has_leader_flag = BA_Real_Aris
+			}
+		}
+		text = BA_Shittem.3003.desc.governor.a
+	}
+	desc = {
+		trigger = {
+			any_owned_leader = {
+				leader_class = commander
+				has_leader_flag = BA_Real_Aris
+			}
+		}
+		text = BA_Shittem.3003.desc.admiral.a
+	}
+	desc = {
+		trigger = {
+			any_owned_leader = {
+				leader_class = commander
+				has_leader_flag = BA_Real_Aris
+			}
+		}
+		text = BA_Shittem.3003.desc.general.a
+	}
+	option = {
+		name = BA_Shittem.3003.exit
+		default_hide_option = yes
+	}
+	option = {
+		name = Aris_to_scientist
+		response_text = Aris_to_scientist.re
+		trigger = {
+			Aris_is_scientist = no
+		}
+		allow = {
+			custom_tooltip = {
+				text = Aris_cooldown
+				NOT = {
+					has_country_flag = BA_Aris_cooldown
+				}
+			}
+		}
+		hidden_effect = {
+			BA_remove_Aris = yes
+			BA_Aris_SP = {
+				class = scientist
+			}
+		}
+	}
+	option = {
+		name = Aris_to_official
+		response_text = Aris_to_official.re
+		trigger = {
+			Aris_is_official = no
+		}
+		allow = {
+			custom_tooltip = {
+				text = Aris_cooldown
+				NOT = {
+					has_country_flag = BA_Aris_cooldown
+				}
+			}
+		}
+		hidden_effect = {
+			BA_remove_Aris = yes
+			BA_Aris_SP = {
+				class = official
+			}
+		}
+	}
+	option = {
+		name = Aris_to_commander
+		response_text = Aris_to_commander.re
+		trigger = {
+			Aris_is_commander = no
+		}
+		allow = {
+			custom_tooltip = {
+				text = Aris_cooldown
+				NOT = {
+					has_country_flag = BA_Aris_cooldown
+				}
+			}
+		}
+		hidden_effect = {
+			BA_remove_Aris = yes
+			BA_Aris_SP = {
+				class = commander
+			}
+		}
+	}
+	option = {
+		name = Aris_to_matrix
+		response_text = Aris_to_matrix.re
+		custom_tooltip = covenant.cycle.tooltip
+		trigger = {
+			NOR = {
+				has_modifier = modifier_BA_Aris_in_matrix
+				has_country_flag = BA_bitcoin_yamero
+			}
+		}
+		allow = {
+			custom_tooltip = {
+				text = Aris_cooldown
+				NOT = {
+					has_country_flag = BA_Aris_cooldown
+				}
+			}
+		}
+		hidden_effect = {
+			BA_remove_Aris = yes
+			add_modifier = {
+				modifier = modifier_BA_Aris_in_matrix
+			}
+			random = {
+				chance = 30
+				country_event = {
+					id = BA_Easter_egg.0010
+				}
+			}
+		}
+	}
+}
+
+#爱丽丝矩阵委托计数器
+country_event = {
+	id = BA_Shittem.3005
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_authority = auth_kivotos
+		last_increased_tech = tech_BA_Aris_uplifting
+	}
+	immediate = {
+		change_variable = {
+			which = BA_Aris_lift_count
+			value = 1
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = BA_Aris_lift_count
+					value = 5
+				}
+			}
+			remove_country_flag = BA_uplifting_Aris
+			set_country_flag = BA_Aris_lifted
+			every_owned_pop = {
+				limit = {
+					has_trait = trait_test
+				}
+				species = {
+					change_species_characteristics = {
+						remove_trait = trait_test
+						add_trait = trait_test_finished
+						add_traits_at_start_of_list = yes
+					}
+					set_species_flag = BA_Robot_flag
+					save_global_event_target_as = BA_Robot_species
+				}
+			}
+		}
+	}
+}
+
+### 舰船武器 TODO：武器组
+#升级前卸除武器组buff
+ship_event = {
+	id = BA_Shittem.3020
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		#TODO：武器buff
+		remove_modifier = modifier_BA_ship_weapon_01
+	}
+}
+
+#同时装备 独特点子+清爽灵感 ，提供武器伤害
+ship_event = {
+	id = BA_Shittem.3051
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_component = Unique_idea
+		has_component = Flashy_inspiration
+	}
+	immediate = {
+		add_modifier = {
+			modifier = modifier_BA_ship_weapon_01
+		}
+	}
+}
+
+#### 歼星级武器
+#on_action触发器
+planet_event = {
+	id = BA_Shittem.3050
+	hide_window = yes
+	#title = 被轰了
+	#desc = 球被轰了嘻嘻
+	is_triggered_only = yes
+	immediate = {
+		set_timed_planet_flag = {
+			flag = BA_Planet_sweeped
+			days = 360
+		}
+		add_modifier = {
+			modifier = modifier_BA_colony_sweeped
+			days = 3600
+		}
+		from.owner = {
+			set_country_flag = BA_Sweepers_using
+		}
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = BA_Sweepers_using
+				}
+				country_event = {
+					id = BA_Shittem.3052
+				}
+			}
+			else = {
+				country_event = {
+					id = BA_Shittem.3051
+				}
+				from.owner = {
+					country_event = {
+						id = BA_Shittem.3053
+					}
+				}
+			}
+		}
+		from.owner = {
+			remove_country_flag = BA_Sweepers_using
+		}
+	}
+}
+
+#首次被使用提示
+country_event = {
+	id = BA_Shittem.3051
+	title = "BA_Shittem.3051.name"
+	desc = "BA_Shittem.3051.desc"
+	is_triggered_only = yes
+	location = fromfrom
+	picture = GFX_evt_planet_beam
+	show_sound = event_radio_chatter
+	trigger = {
+		NOT = {
+			has_country_flag = BA_Sweepers_being_used
+		}
+	}
+	immediate = {
+		set_country_flag = BA_Sweepers_being_used
+	}
+	option = {
+		name = BA_Shittem.3051.confirm
+	}
+}
+
+#首次对自己用提示
+country_event = {
+	id = BA_Shittem.3052
+	title = "BA_Shittem.3052.name"
+	desc = "BA_Shittem.3052.desc"
+	is_triggered_only = yes
+	location = fromfrom
+	picture = GFX_evt_planet_beam
+	show_sound = event_radio_chatter
+	trigger = {
+		NOT = {
+			has_country_flag = BA_Sweepers_self_used
+		}
+	}
+	immediate = {
+		set_country_flag = BA_Sweepers_self_used
+	}
+	option = {
+		name = BA_Shittem.3052.confirm
+		fromfrom = {
+		}
+	}
+}
+
+#首次对别人用提示
+country_event = {
+	id = BA_Shittem.3053
+	title = "BA_Shittem.3053.name"
+	desc = "BA_Shittem.3053.desc"
+	is_triggered_only = yes
+	location = fromfrom
+	picture = GFX_evt_planet_beam
+	show_sound = event_radio_chatter
+	trigger = {
+		NOT = {
+			has_country_flag = BA_Sweepers_enemy_used
+		}
+	}
+	immediate = {
+		set_country_flag = BA_Sweepers_enemy_used
+	}
+	option = {
+		name = BA_Shittem.3053.confirm
+	}
+}
+
+#### 巨型结构
+country_event = {
+	id = BA_Shittem.3101
+	title = "BA_Shittem.3101.title"
+	desc = "BA_Shittem.3101.desc"
+	show_sound = event_mystic_reveal
+	picture = GFX_evt_matter_decompressor
+	is_triggered_only = yes
+	location = FROM
+	option = {
+		name = BA_Shittem.3101.next
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	id = BA_Shittem.3102
+	title = "BA_Shittem.3102.title"
+	desc = "BA_Shittem.3102.desc"
+	show_sound = event_mystic_reveal
+	picture = GFX_evt_matter_decompressor
+	is_triggered_only = yes
+	location = FROM
+	option = {
+		name = BA_Shittem.3102.next
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	id = BA_Shittem.3103
+	title = "BA_Shittem.3103.title"
+	desc = "BA_Shittem.3103.desc"
+	show_sound = event_mystic_reveal
+	picture = GFX_evt_matter_decompressor
+	is_triggered_only = yes
+	location = FROM
+	option = {
+		name = BA_Shittem.3103.next
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	id = BA_Shittem.3104
+	title = "BA_Shittem.3104.title"
+	desc = "BA_Shittem.3104.desc"
+	show_sound = event_mystic_reveal
+	picture = GFX_evt_matter_decompressor
+	is_triggered_only = yes
+	location = FROM
+	option = {
+		name = BA_Shittem.3104.next
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	id = BA_Shittem.3105
+	title = "BA_Shittem.3105.title"
+	desc = "BA_Shittem.3105.desc"
+	show_sound = event_mystic_reveal
+	picture = GFX_evt_strategic_coordination_center
+	is_triggered_only = yes
+	location = FROM
+	option = {
+		name = BA_Shittem.3105.next
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	id = BA_Shittem.3106
+	title = "BA_Shittem.3106.title"
+	desc = "BA_Shittem.3106.desc"
+	show_sound = event_mystic_reveal
+	picture = GFX_evt_strategic_coordination_center
+	is_triggered_only = yes
+	location = FROM
+	option = {
+		name = BA_Shittem.3106.next
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	id = BA_Shittem.3107
+	title = "BA_Shittem.3107.title"
+	desc = "BA_Shittem.3107.desc"
+	show_sound = event_mystic_reveal
+	picture = GFX_evt_strategic_coordination_center
+	is_triggered_only = yes
+	location = FROM
+	option = {
+		name = BA_Shittem.3107.next
+		default_hide_option = yes
+	}
+}
+
+#自动化居住站完工
+country_event = {
+	id = BA_Shittem.3108
+	title = "BA_Shittem.3108.name"
+	desc = "BA_Shittem.3108.desc.a"
+	show_sound = event_mystic_reveal
+	picture = GFX_evt_colony_settlement
+	is_triggered_only = yes
+	location = from
+	option = {
+		name = EXCELLENT
+	}
+}
+
+country_event = {
+	id = BA_Shittem.3109
+	title = "BA_Shittem.3109.name"
+	desc = "BA_Shittem.3109.desc.a"
+	show_sound = event_mystic_reveal
+	picture = GFX_evt_colony_settlement
+	is_triggered_only = yes
+	location = from
+	trigger = {
+		NOT = {
+			has_country_flag = close_BA_orbital_message
+		}
+	}
+	option = {
+		name = EXCELLENT
+		default_hide_option = yes
+	}
+	option = {
+		name = BA_Shittem.3109.a
+		hidden_effect = {
+			set_country_flag = close_BA_orbital_message
+		}
+	}
+}
+
+#自动化模块-拆卸
+country_event = {
+	#megastructures.130
+	id = BA_Shittem.3111
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		# 暂时不需要此事件
+		always = no
+		from = {
+			is_ship_class = shipclass_habitat_station
+			solar_system = {
+				any_system_planet = {
+					has_planet_flag = habitat
+				}
+			}
+		}
+	}
+	immediate = {
+		from = {
+			if = {
+				limit = {
+					exists = orbit
+				}
+				orbit = {
+					remove_planet_flag = has_megastructure
+					save_event_target_as = target_planet
+				}
+			}
+			solar_system = {
+				random_system_planet = {
+					limit = {
+						has_planet_flag = habitat
+					}
+					every_deposit = {
+						limit = {
+							has_deposit_flag = planet@event_target:target_planet
+						}
+						remove_deposit = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+################################
+###   学园理念   —— N0Z0M1
+################################
+### 共用
+#月检并在点击时激活
+country_event = {
+	id = BA_Shittem.4000
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_authority = auth_kivotos
+	}
+	immediate = {
+		### 学园理念计时
+		BA_SI_cost_change = {
+			VALUE = 1
+		}
+		set_variable = {
+			which = BA_SI_available
+			value = value:num_BA_SI_available
+		}
+		set_variable = {
+			which = BA_SI_next_idea
+			value = value:num_BA_SI_next_idea
+		}
+		### 阿拜多斯
+		if = {
+			limit = {
+				has_technology = tech_BA_SI_Abydos_B04
+			}
+			every_owned_planet = {
+				limit = {
+					is_planet_class = pc_desert
+					NOT = {
+						has_modifier = modifier_BA_SI_Abydos_B04
+					}
+				}
+				remove_modifier = modifier_BA_SI_Abydos_B01
+				add_modifier = {
+					modifier = modifier_BA_SI_Abydos_B04
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					has_technology = tech_BA_SI_Abydos_B04
+				}
+				has_technology = tech_BA_SI_Abydos_B01
+			}
+			every_owned_planet = {
+				limit = {
+					is_planet_class = pc_desert
+					NOT = {
+						has_modifier = modifier_BA_SI_Abydos_B01
+					}
+				}
+				add_modifier = {
+					modifier = modifier_BA_SI_Abydos_B01
+				}
+			}
+		}
+		### 格黑那
+		if = {
+			limit = {
+				has_technology = tech_BA_SI_Gehenna_B03
+			}
+			every_owned_planet = {
+				limit = {
+					planet_stability >= 90
+				}
+				add_modifier = {
+					modifier = modifier_BA_SI_Gehenna_B03
+					days = 90
+				}
+			}
+		}
+	}
+}
+
+### 阿拜多斯
+#B01 B04-新殖民星球-沙漠开发 丰饶绿洲计划
+planet_event = {
+	id = BA_Shittem.4011
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_planet_class = pc_desert
+	}
+	immediate = {
+		if = {
+			limit = {
+				owner = {
+					has_technology = tech_BA_SI_Abydos_B04
+				}
+			}
+			remove_modifier = modifier_BA_SI_Abydos_B01
+			add_modifier = {
+				modifier = modifier_BA_SI_Abydos_B04
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_technology = tech_BA_SI_Abydos_B01
+				}
+			}
+			add_modifier = {
+				modifier = modifier_BA_SI_Abydos_B01
+			}
+		}
+	}
+}
+
+#G02-小小的副业
+planet_event = {
+	id = BA_Shittem.4012
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		# has_active_building = building_BA_SI_Abydos_G02
+		owner = {
+			NOT = {
+				has_country_flag = BA_SI_G02_targeted@branch_office_owner
+			}
+		}
+	}
+	immediate = {
+		owner = {
+			set_country_flag = BA_SI_G02_targeted@branch_office_owner
+			export_resource_stockpile_to_variable = {
+				resource = energy
+				variable = BA_SI_G02_energy
+			}
+			divide_variable = {
+				which = BA_SI_G02_energy
+				value = 10
+			}
+			country_event = {
+				id = BA_Shittem.4013
+			}
+		}
+		#打折
+		#拷贝变量
+		branch_office_owner = {
+			set_variable = {
+				which = BA_SI_G02_energy
+				value = root.owner.BA_SI_G02_energy
+			}
+			country_event = {
+				id = BA_Shittem.4014
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_Shittem.4013
+	is_triggered_only = yes
+	title = "BA_Shittem.4013.title"
+	desc = "BA_Shittem.4013.desc"
+	picture = GFX_BA_Kivotos_highway	#TODO：改掉
+	option = {
+		name = BA_Shittem.4013.next
+		add_resource = {
+			energy = -1
+			multiplier = BA_SI_G02_energy
+		}
+	}
+}
+
+country_event = {
+	id = BA_Shittem.4014
+	is_triggered_only = yes
+	title = "BA_Shittem.4014.title"
+	desc = "BA_Shittem.4014.desc"
+	picture = GFX_BA_Kivotos_highway	#TODO：改掉
+	option = {
+		name = BA_Shittem.4014.next
+		add_resource = {
+			energy = 1
+			multiplier = BA_SI_G02_energy
+		}
+	}
+}
+
+### 格黑那
+#G02-新殖民星球-新世界的火种
+planet_event = {
+	id = BA_Shittem.4021
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		owner = {
+			has_technology = tech_BA_SI_Gehenna_G02
+		}
+	}
+	immediate = {
+		add_modifier = {
+			modifier = modifier_BA_SI_Gehenna_G02
+			days = 1800
+		}
+	}
+}
+
+#A03-新获得星球-霸权态势
+planet_event = {
+	id = BA_Shittem.4022
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		owner = {
+			has_technology = tech_BA_SI_Gehenna_A03
+		}
+	}
+	immediate = {
+		add_modifier = {
+			modifier = modifier_BA_SI_Gehenna_A03
+			days = 1800
+		}
+	}
+}
+
+#D03-军事领袖加领袖初始等级
+country_event = {
+	id = BA_Shittem.4024
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_technology = tech_BA_SI_Gehenna_D03
+		from = {
+			leader_class = commander
+		}
+	}
+	immediate = {
+		from = {
+			if = {
+				limit = {
+					is_pool_leader = yes
+				}
+				add_skill = 2
+			}
+			else = {
+				add_skill_without_trait_selection = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_Shittem.4025
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_technology = tech_BA_SI_Gehenna_D03
+		any_pool_leader = {
+			leader_class = commander
+			has_skill = 1
+		}
+	}
+	immediate = {
+		every_pool_leader = {
+			limit = {
+				leader_class = commander
+				has_skill = 1
+			}
+			add_skill = 2
+		}
+	}
+}
+
+### 千年
+#C03-所有领袖定期清除领袖负面特质
+country_event = {
+	id = BA_Shittem.4030
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = close_BA_SI_Millennium_G11_message
+			}
+			every_owned_leader = {
+				remove_all_negative_traits = yes
+			}
+		}
+		else = {
+			country_event = {
+				id = BA_Shittem.4031
+			}
+		}
+		country_event = {
+			id = BA_Shittem.4030
+			days = 3600
+		}
+	}
+}
+
+country_event = {
+	id = BA_Shittem.4031
+	title = "BA_Shittem.4031.title"
+	desc = "BA_Shittem.4031.desc"
+	picture = GFX_evt_colony_settlement
+	is_triggered_only = yes
+	option = {
+		name = EXCELLENT
+		default_hide_option = yes
+	}
+	option = {
+		name = BA_Shittem.4031.a
+		hidden_effect = {
+			set_country_flag = close_BA_SI_Millennium_G11_message
+		}
+	}
+	after = {
+		every_owned_leader = {
+			remove_all_negative_traits = yes
+		}
+	}
+}
+
+################################
+###   月检事件区   —— N0Z0M1
+################################
+#交易基础计数
+country_event = {
+	id = BA_Shittem.9990
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_ai = no
+		has_authority = auth_kivotos
+	}
+	immediate = {
+		### 合金
+		if = {
+			limit = {
+				resource_income_compare = {
+					resource = alloys
+					value < 30
+				}
+			}
+			set_variable = {
+				which = BA_alloys
+				value = 30
+			}
+		}
+		else = {
+			export_resource_income_to_variable = {
+				resource = alloys
+				variable = BA_alloys
+			}
+		}
+		### 消费品
+		if = {
+			limit = {
+				resource_income_compare = {
+					resource = consumer_goods
+					value < 30
+				}
+			}
+			set_variable = {
+				which = BA_consumer_goods
+				value = 30
+			}
+		}
+		else = {
+			export_resource_income_to_variable = {
+				resource = consumer_goods
+				variable = BA_consumer_goods
+			}
+		}
+		### 易爆微粒
+		if = {
+			limit = {
+				resource_income_compare = {
+					resource = volatile_motes
+					value < 6
+				}
+			}
+			set_variable = {
+				which = BA_volatile_motes
+				value = 6
+			}
+		}
+		else = {
+			export_resource_income_to_variable = {
+				resource = volatile_motes
+				variable = BA_volatile_motes
+			}
+		}
+		### 异星天然气
+		if = {
+			limit = {
+				resource_income_compare = {
+					resource = exotic_gases
+					value < 6
+				}
+			}
+			set_variable = {
+				which = BA_exotic_gases
+				value = 6
+			}
+		}
+		else = {
+			export_resource_income_to_variable = {
+				resource = exotic_gases
+				variable = BA_exotic_gases
+			}
+		}
+		### 稀有水晶
+		if = {
+			limit = {
+				resource_income_compare = {
+					resource = rare_crystals
+					value < 6
+				}
+			}
+			set_variable = {
+				which = BA_rare_crystals
+				value = 6
+			}
+		}
+		else = {
+			export_resource_income_to_variable = {
+				resource = rare_crystals
+				variable = BA_rare_crystals
+			}
+		}
+		### 物理学
+		if = {
+			limit = {
+				resource_income_compare = {
+					resource = physics_research
+					value < 25
+				}
+			}
+			set_variable = {
+				which = BA_physics_research
+				value = 25
+			}
+		}
+		else = {
+			export_resource_income_to_variable = {
+				resource = physics_research
+				variable = BA_physics_research
+			}
+		}
+		### 社会学
+		if = {
+			limit = {
+				resource_income_compare = {
+					resource = society_research
+					value < 25
+				}
+			}
+			set_variable = {
+				which = BA_society_research
+				value = 25
+			}
+		}
+		else = {
+			export_resource_income_to_variable = {
+				resource = society_research
+				variable = BA_society_research
+			}
+		}
+		### 工程学
+		if = {
+			limit = {
+				resource_income_compare = {
+					resource = engineering_research
+					value < 25
+				}
+			}
+			set_variable = {
+				which = BA_engineering_research
+				value = 25
+			}
+		}
+		else = {
+			export_resource_income_to_variable = {
+				resource = engineering_research
+				variable = BA_engineering_research
+			}
+		}
+	}
+}
+
+#先驱者交易
+country_event = {
+	id = BA_Shittem.9992
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_ai = no
+		has_authority = auth_kivotos
+		has_country_flag = BA_Gematria_contacted
+	}
+	immediate = {
+		#存储未用额度
+		change_variable = {
+			which = BA_Precursor_stockpile
+			value = BA_Precursor_mounthly
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = BA_Precursor_stockpile
+					value > BA_Precursor_limit
+				}
+			}
+			set_variable = {
+				which = BA_Precursor_stockpile
+				value = BA_Precursor_limit
+			}
+		}
+	}
+}
+
+#####
+country_event = {
+	# event BA_Shittem.7777
+	id = BA_Shittem.7777
+	is_triggered_only = yes
+	title = "Shittem_resource_bar"
+	desc = "Shittem_dialog_arona"
+	diplomatic = yes
+	custom_gui = "BA_Shittem_01"
+	custom_gui_option = "BA_window_option"
+	trigger = {
+		#防止重复打开，没有flag才能打开界面
+		NOT = {
+			has_country_flag = Shittem_engaged
+		}
+	}
+	immediate = {
+		set_country_flag = Shittem_engaged
+		random_list = {
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona00
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona01
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona02
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona03
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona04
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona05
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona06
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona07
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona08
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona09
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona10
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona11
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona12
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona13
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona14
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona15
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona16
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona17
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona18
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona19
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona20
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona21
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona22
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona23
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona24
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona25
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona26
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona27
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona28
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona29
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona30
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona31
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona32
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Arona33
+			}
+		}
+	}
+	option = {
+		name = BLANK_TEXT
+		default_hide_option = yes
+	}
+	after = {
+		remove_country_flag = Shittem_engaged
+		remove_country_flag = BA_Shittem_main_Arona00
+		remove_country_flag = BA_Shittem_main_Arona01
+		remove_country_flag = BA_Shittem_main_Arona02
+		remove_country_flag = BA_Shittem_main_Arona03
+		remove_country_flag = BA_Shittem_main_Arona04
+		remove_country_flag = BA_Shittem_main_Arona05
+		remove_country_flag = BA_Shittem_main_Arona06
+		remove_country_flag = BA_Shittem_main_Arona07
+		remove_country_flag = BA_Shittem_main_Arona08
+		remove_country_flag = BA_Shittem_main_Arona09
+		remove_country_flag = BA_Shittem_main_Arona10
+		remove_country_flag = BA_Shittem_main_Arona11
+		remove_country_flag = BA_Shittem_main_Arona12
+		remove_country_flag = BA_Shittem_main_Arona13
+		remove_country_flag = BA_Shittem_main_Arona14
+		remove_country_flag = BA_Shittem_main_Arona15
+		remove_country_flag = BA_Shittem_main_Arona16
+		remove_country_flag = BA_Shittem_main_Arona17
+		remove_country_flag = BA_Shittem_main_Arona18
+		remove_country_flag = BA_Shittem_main_Arona19
+		remove_country_flag = BA_Shittem_main_Arona20
+		remove_country_flag = BA_Shittem_main_Arona21
+		remove_country_flag = BA_Shittem_main_Arona22
+		remove_country_flag = BA_Shittem_main_Arona23
+		remove_country_flag = BA_Shittem_main_Arona24
+		remove_country_flag = BA_Shittem_main_Arona25
+		remove_country_flag = BA_Shittem_main_Arona26
+		remove_country_flag = BA_Shittem_main_Arona27
+		remove_country_flag = BA_Shittem_main_Arona28
+		remove_country_flag = BA_Shittem_main_Arona29
+		remove_country_flag = BA_Shittem_main_Arona30
+		remove_country_flag = BA_Shittem_main_Arona31
+		remove_country_flag = BA_Shittem_main_Arona32
+		remove_country_flag = BA_Shittem_main_Arona33
+	}
+}
+
+country_event = {
+	# event BA_Shittem.8888
+	id = BA_Shittem.8888
+	is_triggered_only = yes
+	title = "Shittem_resource_bar"
+	desc = "Shittem_dialog_arona"
+	diplomatic = yes
+	custom_gui = "BA_Shittem_02"
+	custom_gui_option = "BA_window_option"
+	trigger = {
+		#防止重复打开，没有flag才能打开界面
+		NOT = {
+			has_country_flag = Shittem_engaged
+		}
+	}
+	immediate = {
+		set_country_flag = Shittem_engaged
+		random_list = {
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana00
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana01
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana02
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana03
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana04
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana05
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana06
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana07
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana08
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana09
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana10
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana11
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana12
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana13
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana14
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana15
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana16
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana17
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana18
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana19
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana20
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana21
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana22
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana23
+			}
+			1 = {
+				set_country_flag = BA_Shittem_main_Plana24
+			}
+		}
+	}
+	option = {
+		name = BLANK_TEXT
+		default_hide_option = yes
+	}
+	after = {
+		remove_country_flag = Shittem_engaged
+		remove_country_flag = BA_Shittem_main_Plana00
+		remove_country_flag = BA_Shittem_main_Plana01
+		remove_country_flag = BA_Shittem_main_Plana02
+		remove_country_flag = BA_Shittem_main_Plana03
+		remove_country_flag = BA_Shittem_main_Plana04
+		remove_country_flag = BA_Shittem_main_Plana05
+		remove_country_flag = BA_Shittem_main_Plana06
+		remove_country_flag = BA_Shittem_main_Plana07
+		remove_country_flag = BA_Shittem_main_Plana08
+		remove_country_flag = BA_Shittem_main_Plana09
+		remove_country_flag = BA_Shittem_main_Plana10
+		remove_country_flag = BA_Shittem_main_Plana11
+		remove_country_flag = BA_Shittem_main_Plana12
+		remove_country_flag = BA_Shittem_main_Plana13
+		remove_country_flag = BA_Shittem_main_Plana14
+		remove_country_flag = BA_Shittem_main_Plana15
+		remove_country_flag = BA_Shittem_main_Plana16
+		remove_country_flag = BA_Shittem_main_Plana17
+		remove_country_flag = BA_Shittem_main_Plana18
+		remove_country_flag = BA_Shittem_main_Plana19
+		remove_country_flag = BA_Shittem_main_Plana20
+		remove_country_flag = BA_Shittem_main_Plana21
+		remove_country_flag = BA_Shittem_main_Plana22
+		remove_country_flag = BA_Shittem_main_Plana23
+		remove_country_flag = BA_Shittem_main_Plana24
+	}
+}
+
+country_event = {
+	id = BA_Shittem.6666
+	is_triggered_only = yes
+	title = "BLANK_TEXT"
+	desc = "BLANK_TEXT"
+	diplomatic = yes
+	custom_gui = "test_window"	#这行换成*.gui文件里的name
+	custom_gui_option = "BA_window_option"
+	option = {
+		name = BLANK_TEXT
+		default_hide_option = yes
+	}
+}

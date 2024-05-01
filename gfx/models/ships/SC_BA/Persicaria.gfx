@@ -1,0 +1,66 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Persicaria_mesh"
+		file = "gfx\models\ships\SC_BA\Persicaria.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "PSK_BODYShape"
+			index = 0
+			texture_diffuse = "T_persicaria_body.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Ai_WeaponShape"
+			index = 0
+			texture_diffuse = "AiKizunaxAzurlane_tex_weapon.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "HaloShape"
+			index = 0
+			texture_diffuse = "Shiroko_Original_Halo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "Assemble_RingShape"
+			index = 0
+			texture_diffuse = "artanis_diff.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "PSK_FACEShape"
+			index = 0
+			texture_diffuse = "T_persicaria_head.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "France_380turret_mesh"
+		file = "gfx\models\ships\SC_BA\France_380turret.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "France_380turretShape"
+			index = 0
+			texture_diffuse = "T_persicaria_body.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+}

@@ -1,0 +1,1740 @@
+#基本部件
+### 反应炉
+@BA_small_core_power_1 = 160
+@BA_small_core_power_2 = 220
+@BA_small_core_power_3 = 300
+@BA_small_core_power_4 = 400
+@BA_small_core_power_5 = 530
+@BA_small_core_power_6 = 670
+#
+@BA_small_core_cost_1 = 22
+@BA_small_core_cost_2 = 30
+@BA_small_core_cost_3 = 40
+@BA_small_core_cost_4 = 52
+@BA_small_core_cost_5 = 66
+@BA_small_core_cost_6 = 86
+#
+@BA_mediem_core_power_1 = 590
+@BA_mediem_core_power_2 = 800
+@BA_mediem_core_power_3 = 1070
+@BA_mediem_core_power_4 = 1410
+@BA_mediem_core_power_5 = 1750
+@BA_mediem_core_power_6 = 2240
+#
+@BA_mediem_core_cost_1 = 84
+@BA_mediem_core_cost_2 = 112
+@BA_mediem_core_cost_3 = 160
+@BA_mediem_core_cost_4 = 208
+@BA_mediem_core_cost_5 = 264
+@BA_mediem_core_cost_6 = 344
+#
+@BA_large_core_power_1 = 1180
+@BA_large_core_power_2 = 1610
+@BA_large_core_power_3 = 2140
+@BA_large_core_power_4 = 2820
+@BA_large_core_power_5 = 3600
+@BA_large_core_power_6 = 4680
+#
+@BA_large_core_cost_1 = 190
+@BA_large_core_cost_2 = 247
+@BA_large_core_cost_3 = 323
+@BA_large_core_cost_4 = 418
+@BA_large_core_cost_5 = 532
+@BA_large_core_cost_6 = 665
+### 推进器
+@BA_small_thruster_power_1 = -20
+@BA_small_thruster_power_2 = -30
+@BA_small_thruster_power_3 = -40
+@BA_small_thruster_power_4 = -50
+@BA_small_thruster_power_5 = -60
+#
+@BA_mediem_thruster_power_1 = -80
+@BA_mediem_thruster_power_2 = -120
+@BA_mediem_thruster_power_3 = -160
+@BA_mediem_thruster_power_4 = -200
+@BA_mediem_thruster_power_5 = -240
+#
+@BA_large_thruster_power_1 = -160
+@BA_large_thruster_power_2 = -240
+@BA_large_thruster_power_3 = -320
+@BA_large_thruster_power_4 = -400
+@BA_large_thruster_power_5 = -480
+#
+@BA_small_thruster_cost_1 = 6
+@BA_small_thruster_cost_2 = 12
+@BA_small_thruster_cost_3 = 18
+@BA_small_thruster_cost_4 = 24
+@BA_small_thruster_cost_5 = 30
+#
+@BA_mediem_thruster_cost_1 = 24
+@BA_mediem_thruster_cost_2 = 48
+@BA_mediem_thruster_cost_3 = 72
+@BA_mediem_thruster_cost_4 = 96
+@BA_mediem_thruster_cost_5 = 120
+#
+@BA_large_thruster_cost_1 = 48
+@BA_large_thruster_cost_2 = 96
+@BA_large_thruster_cost_3 = 144
+@BA_large_thruster_cost_4 = 192
+@BA_large_thruster_cost_5 = 240
+### 作战电脑
+@BA_small_computer_power_0 = -5
+@BA_small_computer_power_1 = -10
+@BA_small_computer_power_2 = -15
+@BA_small_computer_power_3 = -25
+#
+@BA_small_computer_cost_0 = 0
+@BA_small_computer_cost_1 = 5
+@BA_small_computer_cost_2 = 10
+@BA_small_computer_cost_3 = 20
+##############################################
+#####  反应炉（改为控制核心）
+#T1
+utility_component_template = {
+	key = "BA_SMALL_FISSION_REACTOR"
+	size = small
+	icon = "GFX_T1CORE"
+	icon_frame = 1
+	power = @BA_small_core_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = 0.2
+			alloys = 0.02
+		}
+	}
+	prerequisites = {
+		"tech_fission_power"
+	}
+	component_set = "power_core"
+	size_restriction = {
+		BA_missile_ship
+		BA_club_ship
+	}
+	upgrades_to = "BA_SMALL_FUSION_REACTOR"
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "BA_MEDIEM_FISSION_REACTOR"
+	size = small
+	icon = "GFX_T1CORE"
+	icon_frame = 1
+	power = @BA_mediem_core_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_mediem_core_cost_1
+		}
+		upkeep = {
+			energy = 0.8
+			alloys = 0.08
+		}
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.05
+		ship_weapon_range_mult = 0.05
+	}
+	prerequisites = {
+		"tech_fission_power"
+	}
+	component_set = "power_core"
+	size_restriction = {
+		BA_artillery_ship
+		BA_swarm_ship
+		BA_defence_cannon
+	}
+	upgrades_to = "BA_MEDIEM_FUSION_REACTOR"
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "BA_LARGE_FISSION_REACTOR"
+	size = small
+	icon = "GFX_T1CORE"
+	icon_frame = 1
+	power = @BA_large_core_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_large_core_cost_1
+		}
+		upkeep = {
+			energy = 1.6
+			alloys = 0.16
+		}
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.05
+		ship_weapon_range_mult = 0.05
+	}
+	prerequisites = {
+		"tech_fission_power"
+	}
+	component_set = "power_core"
+	size_restriction = {
+		BA_hub_ship
+	}
+	upgrades_to = "BA_LARGE_FUSION_REACTOR"
+	ai_weight = {
+		weight = 1
+	}
+}
+
+#T2
+utility_component_template = {
+	key = "BA_SMALL_FUSION_REACTOR"
+	size = small
+	icon = "GFX_T2CORE"
+	icon_frame = 1
+	power = @BA_small_core_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_core_cost_2
+		}
+		upkeep = {
+			energy = 0.26
+			alloys = 0.026
+		}
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.05
+		ship_accuracy_add = 5
+	}
+	prerequisites = {
+		"tech_fusion_power"
+	}
+	component_set = "power_core"
+	size_restriction = {
+		BA_missile_ship
+		BA_club_ship
+	}
+	upgrades_to = "BA_SMALL_COLD_FUSION_REACTOR"
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "BA_MEDIEM_FUSION_REACTOR"
+	size = small
+	icon = "GFX_T2CORE"
+	icon_frame = 1
+	power = @BA_mediem_core_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_mediem_core_cost_2
+		}
+		upkeep = {
+			energy = 1.04
+			alloys = 0.104
+		}
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.1
+		ship_weapon_range_mult = 0.1
+	}
+	prerequisites = {
+		"tech_fusion_power"
+	}
+	component_set = "power_core"
+	size_restriction = {
+		BA_artillery_ship
+		BA_swarm_ship
+		BA_defence_cannon
+	}
+	upgrades_to = "BA_MEDIEM_COLD_FUSION_REACTOR"
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "BA_LARGE_FUSION_REACTOR"
+	size = small
+	icon = "GFX_T2CORE"
+	icon_frame = 1
+	power = @BA_large_core_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_large_core_cost_2
+		}
+		upkeep = {
+			energy = 2.08
+			alloys = 0.208
+		}
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.1
+		ship_weapon_range_mult = 0.1
+	}
+	prerequisites = {
+		"tech_fusion_power"
+	}
+	component_set = "power_core"
+	size_restriction = {
+		BA_hub_ship
+	}
+	upgrades_to = "BA_LARGE_COLD_FUSION_REACTOR"
+	ai_weight = {
+		weight = 2
+	}
+}
+
+#T3
+utility_component_template = {
+	key = "BA_SMALL_COLD_FUSION_REACTOR"
+	size = small
+	icon = "GFX_T3CORE"
+	icon_frame = 1
+	power = @BA_small_core_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_core_cost_3
+		}
+		upkeep = {
+			energy = 0.34
+			alloys = 0.034
+		}
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.1
+		ship_accuracy_add = 10
+	}
+	prerequisites = {
+		"tech_cold_fusion_power"
+	}
+	component_set = "power_core"
+	size_restriction = {
+		BA_missile_ship
+		BA_club_ship
+	}
+	upgrades_to = "BA_SMALL_ANTIMATTER_REACTOR"
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "BA_MEDIEM_COLD_FUSION_REACTOR"
+	size = small
+	icon = "GFX_T3CORE"
+	icon_frame = 1
+	power = @BA_mediem_core_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_mediem_core_cost_3
+		}
+		upkeep = {
+			energy = 1.35
+			alloys = 0.135
+		}
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_weapon_range_mult = 0.15
+	}
+	prerequisites = {
+		"tech_cold_fusion_power"
+	}
+	component_set = "power_core"
+	size_restriction = {
+		BA_artillery_ship
+		BA_swarm_ship
+		BA_defence_cannon
+	}
+	upgrades_to = "BA_MEDIEM_ANTIMATTER_REACTOR"
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "BA_LARGE_COLD_FUSION_REACTOR"
+	size = small
+	icon = "GFX_T3CORE"
+	icon_frame = 1
+	power = @BA_large_core_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_large_core_cost_3
+		}
+		upkeep = {
+			energy = 2.7
+			alloys = 0.27
+		}
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_weapon_range_mult = 0.15
+	}
+	prerequisites = {
+		"tech_cold_fusion_power"
+	}
+	component_set = "power_core"
+	size_restriction = {
+		BA_hub_ship
+	}
+	upgrades_to = "BA_LARGE_ANTIMATTER_REACTOR"
+	ai_weight = {
+		weight = 3
+	}
+}
+
+#T4
+utility_component_template = {
+	key = "BA_SMALL_ANTIMATTER_REACTOR"
+	size = small
+	icon = "GFX_T4CORE"
+	icon_frame = 1
+	power = @BA_small_core_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_core_cost_4
+		}
+		upkeep = {
+			energy = 0.44
+			alloys = 0.044
+		}
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_accuracy_add = 15
+	}
+	prerequisites = {
+		"tech_antimatter_power"
+	}
+	component_set = "power_core"
+	size_restriction = {
+		BA_missile_ship
+		BA_club_ship
+	}
+	upgrades_to = "BA_SMALL_ZERO_POINT_REACTOR"
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "BA_MEDIEM_ANTIMATTER_REACTOR"
+	size = small
+	icon = "GFX_T4CORE"
+	icon_frame = 1
+	power = @BA_mediem_core_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_mediem_core_cost_4
+		}
+		upkeep = {
+			energy = 1.76
+			alloys = 0.176
+		}
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.2
+		ship_weapon_range_mult = 0.2
+	}
+	prerequisites = {
+		"tech_antimatter_power"
+	}
+	component_set = "power_core"
+	size_restriction = {
+		BA_artillery_ship
+		BA_swarm_ship
+		BA_defence_cannon
+	}
+	upgrades_to = "BA_MEDIEM_ZERO_POINT_REACTOR"
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "BA_LARGE_ANTIMATTER_REACTOR"
+	size = small
+	icon = "GFX_T4CORE"
+	icon_frame = 1
+	power = @BA_large_core_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_large_core_cost_4
+		}
+		upkeep = {
+			energy = 3.51
+			alloys = 0.351
+		}
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.2
+		ship_weapon_range_mult = 0.2
+	}
+	prerequisites = {
+		"tech_antimatter_power"
+	}
+	component_set = "power_core"
+	size_restriction = {
+		BA_hub_ship
+	}
+	upgrades_to = "BA_LARGE_ZERO_POINT_REACTOR"
+	ai_weight = {
+		weight = 4
+	}
+}
+
+#T5
+utility_component_template = {
+	key = "BA_SMALL_ZERO_POINT_REACTOR"
+	size = small
+	icon = "GFX_T5CORE"
+	icon_frame = 1
+	power = @BA_small_core_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_core_cost_5
+		}
+		upkeep = {
+			energy = 0.57
+			alloys = 0.057
+		}
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.2
+		ship_accuracy_add = 20
+	}
+	prerequisites = {
+		"tech_zero_point_power"
+	}
+	component_set = "power_core"
+	size_restriction = {
+		BA_missile_ship
+		BA_club_ship
+	}
+	upgrades_to = "BA_SMALL_DARK_MATTER_REACTOR"
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "BA_MEDIEM_ZERO_POINT_REACTOR"
+	size = small
+	icon = "GFX_T5CORE"
+	icon_frame = 1
+	power = @BA_mediem_core_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_mediem_core_cost_5
+		}
+		upkeep = {
+			energy = 2.29
+			alloys = 0.229
+		}
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.225
+		ship_weapon_range_mult = 0.225
+	}
+	prerequisites = {
+		"tech_zero_point_power"
+	}
+	component_set = "power_core"
+	size_restriction = {
+		BA_artillery_ship
+		BA_swarm_ship
+		BA_defence_cannon
+	}
+	upgrades_to = "BA_MEDIEM_DARK_MATTER_REACTOR"
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "BA_LARGE_ZERO_POINT_REACTOR"
+	size = small
+	icon = "GFX_T5CORE"
+	icon_frame = 1
+	power = @BA_large_core_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_large_core_cost_5
+		}
+		upkeep = {
+			energy = 4.56
+			alloys = 0.456
+		}
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.225
+		ship_weapon_range_mult = 0.225
+	}
+	prerequisites = {
+		"tech_zero_point_power"
+	}
+	component_set = "power_core"
+	size_restriction = {
+		BA_hub_ship
+	}
+	upgrades_to = "BA_LARGE_DARK_MATTER_REACTOR"
+	ai_weight = {
+		weight = 5
+	}
+}
+
+#T6
+utility_component_template = {
+	key = "BA_SMALL_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_T6CORE"
+	icon_frame = 1
+	power = @BA_small_core_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_core_cost_6
+			sr_dark_matter = 2
+		}
+		upkeep = {
+			energy = 0.74
+			alloys = 0.074
+		}
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_accuracy_add = 15
+		ship_tracking_add = 15
+	}
+	prerequisites = {
+		"tech_dark_matter_power_core"
+	}
+	component_set = "power_core"
+	size_restriction = {
+		BA_missile_ship
+		BA_club_ship
+	}
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0
+			no_resource_for_component = {
+				RESOURCE = sr_dark_matter
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "BA_MEDIEM_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_T6CORE"
+	icon_frame = 1
+	power = @BA_mediem_core_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_mediem_core_cost_6
+			sr_dark_matter = 8
+		}
+		upkeep = {
+			energy = 2.98
+			alloys = 0.298
+		}
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.25
+		ship_weapon_range_mult = 0.25
+	}
+	prerequisites = {
+		"tech_dark_matter_power_core"
+	}
+	component_set = "power_core"
+	size_restriction = {
+		BA_artillery_ship
+		BA_swarm_ship
+		BA_defence_cannon
+	}
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0
+			no_resource_for_component = {
+				RESOURCE = sr_dark_matter
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "BA_LARGE_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_T6CORE"
+	icon_frame = 1
+	power = @BA_large_core_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_large_core_cost_6
+			sr_dark_matter = 16
+		}
+		upkeep = {
+			energy = 5.93
+			alloys = 0.593
+		}
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.25
+		ship_weapon_range_mult = 0.25
+	}
+	prerequisites = {
+		"tech_dark_matter_power_core"
+	}
+	component_set = "power_core"
+	size_restriction = {
+		BA_hub_ship
+	}
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0
+			no_resource_for_component = {
+				RESOURCE = sr_dark_matter
+			}
+		}
+	}
+}
+
+#先驱者
+utility_component_template = {
+	key = "BA_FE_REACTOR"
+	size = small
+	icon = "GFX_T6CORE"
+	icon_frame = 1
+	power = 65535
+	resources = {
+		category = ship_components
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.25
+		ship_weapon_range_mult = 0.25
+	}
+	prerequisites = {
+		tech_BA_fe
+	}
+	component_set = "power_core"
+	size_restriction = {
+		BA_missile_ship
+		BA_artillery_ship
+		BA_swarm_ship
+		BA_defence_cannon
+		BA_hub_ship
+	}
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0
+			no_resource_for_component = {
+				RESOURCE = sr_dark_matter
+			}
+		}
+	}
+}
+
+#####  超空间
+utility_component_template = {
+	key = "HYPER_DRIVE_1_BA"
+	size = small
+	icon = "GFX_ship_part_hyper_drive_1"
+	icon_frame = 1
+	ftl = yes
+	ship_modifier = {
+		ship_disengage_opportunities_add = 1
+	}
+	ai_weight = {
+		weight = 1
+	}
+	size_restriction = {
+		BA_club_ship
+	}
+	prerequisites = {
+		"tech_hyper_drive_1"
+	}
+	component_set = "ftl_components"
+	upgrades_to = "HYPER_DRIVE_2_BA"
+}
+
+utility_component_template = {
+	key = "HYPER_DRIVE_2_BA"
+	size = small
+	icon = "GFX_ship_part_hyper_drive_2"
+	icon_frame = 1
+	ftl = yes
+	ship_modifier = {
+		ship_disengage_opportunities_add = 1
+		ship_windup_mult = -0.25
+	}
+	ai_weight = {
+		weight = 2
+	}
+	size_restriction = {
+		BA_club_ship
+	}
+	prerequisites = {
+		"tech_hyper_drive_2"
+	}
+	component_set = "ftl_components"
+	upgrades_to = "HYPER_DRIVE_3_BA"
+}
+
+utility_component_template = {
+	key = "HYPER_DRIVE_3_BA"
+	size = small
+	icon = "GFX_ship_part_hyper_drive_3"
+	icon_frame = 1
+	ftl = yes
+	ship_modifier = {
+		ship_disengage_opportunities_add = 1
+		ship_windup_mult = -0.5
+	}
+	ai_weight = {
+		weight = 3
+	}
+	size_restriction = {
+		BA_club_ship
+	}
+	prerequisites = {
+		"tech_hyper_drive_3"
+	}
+	component_set = "ftl_components"
+	upgrades_to = "JUMP_DRIVE_1"
+}
+
+#####  推进器
+#T1
+utility_component_template = {
+	key = "BA_SMALL_SHIP_THRUSTER_1"
+	size = small
+	icon = "GFX_ship_part_thruster_1"
+	icon_frame = 1
+	power = @BA_small_thruster_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_thruster_cost_1
+		}
+	}
+	modifier = {
+	}
+	prerequisites = {
+		"tech_thrusters_1"
+	}
+	component_set = "thruster_components"
+	size_restriction = {
+		BA_missile_ship
+		BA_club_ship
+	}
+	upgrades_to = "BA_SMALL_SHIP_THRUSTER_2"
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "BA_MEDIEM_SHIP_THRUSTER_1"
+	size = small
+	icon = "GFX_ship_part_thruster_1"
+	icon_frame = 1
+	power = @BA_mediem_thruster_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_mediem_thruster_cost_1
+		}
+	}
+	modifier = {
+	}
+	prerequisites = {
+		"tech_thrusters_1"
+	}
+	component_set = "thruster_components"
+	size_restriction = {
+		BA_artillery_ship
+		BA_swarm_ship
+	}
+	upgrades_to = "BA_MEDIEM_SHIP_THRUSTER_2"
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "BA_LARGE_SHIP_THRUSTER_1"
+	size = small
+	icon = "GFX_ship_part_thruster_1"
+	icon_frame = 1
+	power = @BA_large_thruster_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_large_thruster_cost_1
+		}
+	}
+	modifier = {
+	}
+	prerequisites = {
+		"tech_thrusters_1"
+	}
+	component_set = "thruster_components"
+	size_restriction = {
+		BA_hub_ship
+	}
+	upgrades_to = "BA_LARGE_SHIP_THRUSTER_2"
+	ai_weight = {
+		weight = 1
+	}
+}
+
+#T2
+utility_component_template = {
+	key = "BA_SMALL_SHIP_THRUSTER_2"
+	size = small
+	icon = "GFX_ship_part_thruster_2"
+	icon_frame = 1
+	power = @BA_small_thruster_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_thruster_cost_2
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.25
+		ship_evasion_add = 4
+	}
+	prerequisites = {
+		"tech_thrusters_2"
+	}
+	component_set = "thruster_components"
+	size_restriction = {
+		BA_missile_ship
+		BA_club_ship
+	}
+	upgrades_to = "BA_SMALL_SHIP_THRUSTER_3"
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "BA_MEDIEM_SHIP_THRUSTER_2"
+	size = small
+	icon = "GFX_ship_part_thruster_2"
+	icon_frame = 1
+	power = @BA_mediem_thruster_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_mediem_thruster_cost_2
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.25
+		ship_evasion_add = 2
+	}
+	prerequisites = {
+		"tech_thrusters_2"
+	}
+	component_set = "thruster_components"
+	size_restriction = {
+		BA_artillery_ship
+		BA_swarm_ship
+	}
+	upgrades_to = "BA_MEDIEM_SHIP_THRUSTER_3"
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "BA_LARGE_SHIP_THRUSTER_2"
+	size = small
+	icon = "GFX_ship_part_thruster_2"
+	icon_frame = 1
+	power = @BA_large_thruster_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_large_thruster_cost_2
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.25
+		ship_evasion_add = 1
+	}
+	prerequisites = {
+		"tech_thrusters_2"
+	}
+	component_set = "thruster_components"
+	size_restriction = {
+		BA_hub_ship
+	}
+	upgrades_to = "BA_LARGE_SHIP_THRUSTER_3"
+	ai_weight = {
+		weight = 2
+	}
+}
+
+#T3
+utility_component_template = {
+	key = "BA_SMALL_SHIP_THRUSTER_3"
+	size = small
+	icon = "GFX_ship_part_thruster_3"
+	icon_frame = 1
+	power = @BA_small_thruster_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_thruster_cost_3
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.5
+		ship_evasion_add = 8
+	}
+	prerequisites = {
+		"tech_thrusters_3"
+	}
+	component_set = "thruster_components"
+	size_restriction = {
+		BA_missile_ship
+		BA_club_ship
+	}
+	upgrades_to = "BA_SMALL_SHIP_THRUSTER_4"
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "BA_MEDIEM_SHIP_THRUSTER_3"
+	size = small
+	icon = "GFX_ship_part_thruster_3"
+	icon_frame = 1
+	power = @BA_mediem_thruster_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_mediem_thruster_cost_3
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.5
+		ship_evasion_add = 4
+	}
+	prerequisites = {
+		"tech_thrusters_3"
+	}
+	component_set = "thruster_components"
+	size_restriction = {
+		BA_artillery_ship
+		BA_swarm_ship
+	}
+	upgrades_to = "BA_MEDIEM_SHIP_THRUSTER_4"
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "BA_LARGE_SHIP_THRUSTER_3"
+	size = small
+	icon = "GFX_ship_part_thruster_3"
+	icon_frame = 1
+	power = @BA_large_thruster_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_large_thruster_cost_3
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.5
+		ship_evasion_add = 2
+	}
+	prerequisites = {
+		"tech_thrusters_3"
+	}
+	component_set = "thruster_components"
+	size_restriction = {
+		BA_hub_ship
+	}
+	upgrades_to = "BA_LARGE_SHIP_THRUSTER_4"
+	ai_weight = {
+		weight = 3
+	}
+}
+
+#T4
+utility_component_template = {
+	key = "BA_SMALL_SHIP_THRUSTER_4"
+	size = small
+	icon = "GFX_ship_part_thruster_4"
+	icon_frame = 1
+	power = @BA_small_thruster_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_thruster_cost_4
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.75
+		ship_evasion_add = 12
+	}
+	prerequisites = {
+		"tech_thrusters_4"
+	}
+	component_set = "thruster_components"
+	size_restriction = {
+		BA_missile_ship
+		BA_club_ship
+	}
+	upgrades_to = "BA_SMALL_SHIP_THRUSTER_5"
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "BA_MEDIEM_SHIP_THRUSTER_4"
+	size = small
+	icon = "GFX_ship_part_thruster_4"
+	icon_frame = 1
+	power = @BA_mediem_thruster_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_mediem_thruster_cost_4
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.75
+		ship_evasion_add = 6
+	}
+	prerequisites = {
+		"tech_thrusters_4"
+	}
+	component_set = "thruster_components"
+	size_restriction = {
+		BA_artillery_ship
+		BA_swarm_ship
+	}
+	upgrades_to = "BA_MEDIEM_SHIP_THRUSTER_5"
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "BA_LARGE_SHIP_THRUSTER_4"
+	size = small
+	icon = "GFX_ship_part_thruster_4"
+	icon_frame = 1
+	power = @BA_large_thruster_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_large_thruster_cost_4
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.75
+		ship_evasion_add = 3
+	}
+	prerequisites = {
+		"tech_thrusters_4"
+	}
+	component_set = "thruster_components"
+	size_restriction = {
+		BA_hub_ship
+	}
+	upgrades_to = "BA_LARGE_SHIP_THRUSTER_5"
+	ai_weight = {
+		weight = 4
+	}
+}
+
+#T5
+utility_component_template = {
+	key = "BA_SMALL_SHIP_THRUSTER_5"
+	size = small
+	icon = "GFX_ship_part_thruster_5"
+	icon_frame = 1
+	power = @BA_small_thruster_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_thruster_cost_4
+			sr_dark_matter = 2
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.25
+		ship_evasion_add = 16
+	}
+	prerequisites = {
+		"tech_dark_matter_propulsion"
+	}
+	component_set = "thruster_components"
+	size_restriction = {
+		BA_missile_ship
+		BA_club_ship
+	}
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0
+			no_resource_for_component = {
+				RESOURCE = sr_dark_matter
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "BA_MEDIEM_SHIP_THRUSTER_5"
+	size = small
+	icon = "GFX_ship_part_thruster_5"
+	icon_frame = 1
+	power = @BA_mediem_thruster_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_mediem_thruster_cost_4
+			sr_dark_matter = 8
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.25
+		ship_evasion_add = 8
+	}
+	prerequisites = {
+		"tech_dark_matter_propulsion"
+	}
+	component_set = "thruster_components"
+	size_restriction = {
+		BA_artillery_ship
+		BA_swarm_ship
+	}
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0
+			no_resource_for_component = {
+				RESOURCE = sr_dark_matter
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "BA_LARGE_SHIP_THRUSTER_5"
+	size = small
+	icon = "GFX_ship_part_thruster_5"
+	icon_frame = 1
+	power = @BA_large_thruster_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_large_thruster_cost_4
+			sr_dark_matter = 16
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.25
+		ship_evasion_add = 4
+	}
+	prerequisites = {
+		"tech_dark_matter_propulsion"
+	}
+	component_set = "thruster_components"
+	size_restriction = {
+		BA_hub_ship
+	}
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0
+			no_resource_for_component = {
+				RESOURCE = sr_dark_matter
+			}
+		}
+	}
+}
+
+####  作战电脑
+#T3
+utility_component_template = {
+	key = "BA_COMBAT_COMPUTER_LINE_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_line_advanced"
+	icon_frame = 1
+	power = @BA_small_computer_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_computer_cost_3
+		}
+	}
+	class_restriction = {
+		shipclass_military
+		shipclass_military_special
+	}
+	size_restriction = {
+		BA_missile_ship
+	}
+	component_set = "combat_computers"
+	ship_behavior = "line"
+	ship_modifier = {
+		ship_fire_rate_mult = 0.2
+		ship_accuracy_add = 20
+	}
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "BA_COMBAT_COMPUTER_ARTILLERY_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_artillery_advanced"
+	icon_frame = 1
+	power = @BA_small_computer_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_computer_cost_3
+		}
+	}
+	class_restriction = {
+		shipclass_military
+		shipclass_military_special
+	}
+	size_restriction = {
+		BA_artillery_ship
+		BA_swarm_ship
+		BA_hub_ship
+	}
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	ship_modifier = {
+		ship_fire_rate_mult = 0.2
+		ship_weapon_range_mult = 0.2
+	}
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "BA_COMBAT_COMPUTER_CARRIER_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_carrier_advanced"
+	icon_frame = 1
+	power = @BA_small_computer_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_computer_cost_3
+		}
+	}
+	class_restriction = {
+		shipclass_military
+		shipclass_military_special
+	}
+	size_restriction = {
+		BA_artillery_ship
+		BA_swarm_ship
+		BA_hub_ship
+	}
+	component_set = "combat_computers"
+	ship_behavior = "carrier"
+	ship_modifier = {
+		ship_engagement_range_mult = 1
+	}
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "BA_COMBAT_COMPUTER_MORTAR_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_carrier_advanced"
+	icon_frame = 1
+	power = @BA_small_computer_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_computer_cost_3
+		}
+	}
+	class_restriction = {
+		shipclass_military
+		shipclass_military_special
+	}
+	size_restriction = {
+		BA_artillery_ship
+		BA_swarm_ship
+		BA_hub_ship
+	}
+	component_set = "combat_computers"
+	ship_behavior = "mortar"
+	ship_modifier = {
+		ship_engagement_range_mult = 1
+	}
+	ai_weight = {
+		weight = 5
+	}
+}
+
+#T4
+utility_component_template = {
+	key = "BA_COMBAT_COMPUTER_LINE_AUTONOMOUS"
+	size = small
+	icon = "GFX_ship_part_computer_line_sapient"
+	icon_frame = 1
+	power = @BA_small_computer_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_computer_cost_3
+		}
+	}
+	class_restriction = {
+		shipclass_military
+		shipclass_military_special
+	}
+	size_restriction = {
+		BA_missile_ship
+	}
+	component_set = "combat_computers"
+	ship_behavior = "line"
+	prerequisites = {
+		"tech_BA_spaceship_automation_3"
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.2
+		ship_accuracy_add = 20
+	}
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "BA_COMBAT_COMPUTER_ARTILLERY_AUTONOMOUS"
+	size = small
+	icon = "GFX_ship_part_computer_artillery_sapient"
+	icon_frame = 1
+	power = @BA_small_computer_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_computer_cost_3
+		}
+	}
+	class_restriction = {
+		shipclass_military
+		shipclass_military_special
+	}
+	size_restriction = {
+		BA_artillery_ship
+		BA_swarm_ship
+		BA_hub_ship
+	}
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	prerequisites = {
+		"tech_BA_spaceship_automation_3"
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.2
+		ship_weapon_range_mult = 0.2
+	}
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "BA_COMBAT_COMPUTER_CARRIER_AUTONOMOUS"
+	size = small
+	icon = "GFX_ship_part_computer_carrier_sapient"
+	icon_frame = 1
+	power = @BA_small_computer_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_computer_cost_3
+		}
+	}
+	class_restriction = {
+		shipclass_military
+		shipclass_military_special
+	}
+	size_restriction = {
+		BA_artillery_ship
+		BA_swarm_ship
+		BA_hub_ship
+	}
+	component_set = "combat_computers"
+	ship_behavior = "carrier"
+	prerequisites = {
+		"tech_BA_spaceship_automation_3"
+	}
+	ship_modifier = {
+		ship_engagement_range_mult = 1
+	}
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "BA_COMBAT_COMPUTER_MORTAR_AUTONOMOUS"
+	size = small
+	icon = "GFX_ship_part_computer_carrier_sapient"
+	icon_frame = 1
+	power = @BA_small_computer_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_computer_cost_3
+		}
+	}
+	class_restriction = {
+		shipclass_military
+		shipclass_military_special
+	}
+	size_restriction = {
+		BA_artillery_ship
+		BA_swarm_ship
+		BA_hub_ship
+	}
+	component_set = "combat_computers"
+	ship_behavior = "mortar"
+	prerequisites = {
+		"tech_BA_spaceship_automation_3"
+	}
+	ship_modifier = {
+		ship_engagement_range_mult = 1
+	}
+	ai_weight = {
+		weight = 5
+	}
+}
+
+#T5
+utility_component_template = {
+	key = "BA_COMBAT_COMPUTER_LINE_PRECOG"
+	size = small
+	icon = "GFX_ship_part_computer_line_precog"
+	icon_frame = 1
+	power = @BA_small_computer_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_computer_cost_3
+		}
+	}
+	class_restriction = {
+		shipclass_military
+		shipclass_military_special
+	}
+	size_restriction = {
+		BA_missile_ship
+	}
+	component_set = "combat_computers"
+	ship_behavior = "line"
+	prerequisites = {
+		"tech_BA_spaceship_automation_4"
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_accuracy_add = 15
+		ship_tracking_add = 10
+	}
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "BA_COMBAT_COMPUTER_ARTILLERY_PRECOG"
+	size = small
+	icon = "GFX_ship_part_computer_artillery_precog"
+	icon_frame = 1
+	power = @BA_small_computer_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_computer_cost_3
+		}
+	}
+	class_restriction = {
+		shipclass_military
+		shipclass_military_special
+	}
+	size_restriction = {
+		BA_artillery_ship
+		BA_swarm_ship
+		BA_hub_ship
+	}
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	prerequisites = {
+		"tech_BA_spaceship_automation_4"
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_weapon_range_mult = 0.15
+		ship_tracking_add = 10
+	}
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "BA_COMBAT_COMPUTER_CARRIER_PRECOG"
+	size = small
+	icon = "GFX_ship_part_computer_carrier_precog"
+	icon_frame = 1
+	power = @BA_small_computer_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_computer_cost_3
+		}
+	}
+	class_restriction = {
+		shipclass_military
+		shipclass_military_special
+	}
+	size_restriction = {
+		BA_artillery_ship
+		BA_swarm_ship
+		BA_hub_ship
+	}
+	component_set = "combat_computers"
+	ship_behavior = "carrier"
+	prerequisites = {
+		"tech_BA_spaceship_automation_4"
+	}
+	ship_modifier = {
+		ship_engagement_range_mult = 0.75
+		ship_tracking_add = 10
+	}
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "BA_COMBAT_COMPUTER_MORTAR_PRECOG"
+	size = small
+	icon = "GFX_ship_part_computer_carrier_precog"
+	icon_frame = 1
+	power = @BA_small_computer_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_computer_cost_3
+		}
+	}
+	class_restriction = {
+		shipclass_military
+		shipclass_military_special
+	}
+	size_restriction = {
+		BA_artillery_ship
+		BA_swarm_ship
+		BA_hub_ship
+	}
+	component_set = "combat_computers"
+	ship_behavior = "mortar"
+	prerequisites = {
+		"tech_BA_spaceship_automation_4"
+	}
+	ship_modifier = {
+		ship_engagement_range_mult = 0.75
+		ship_tracking_add = 10
+	}
+	ai_weight = {
+		weight = 4
+	}
+}
+
+####  舰船光环
+utility_component_template = {
+	key = "BA_AURA_SHIELD_DAMPENER"
+	size = medium
+	icon = "GFX_ship_part_aura_shield_dampener"
+	icon_frame = 1
+	power = 200
+	size_restriction = {
+		BA_hub_ship
+	}
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_shield_dampener"
+		radius = 300
+		apply_on = ships
+		stack_info = {
+			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = hostile_shield_dampener
+			priority = 50
+		}
+		modifier = {
+			ship_shield_mult = -0.4
+			ship_shield_regen_add_perc = -0.4
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 2
+			is_ai = yes
+			is_preferred_weapons = weapon_type_energy
+		}
+	}
+}

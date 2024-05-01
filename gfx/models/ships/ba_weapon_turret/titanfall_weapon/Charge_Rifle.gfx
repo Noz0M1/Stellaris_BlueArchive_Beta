@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Charge_Rifle_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/Charge_Rifle.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Charge_RifleShape"
+			index = 0
+			texture_diffuse = "Charge_Rifle_diffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

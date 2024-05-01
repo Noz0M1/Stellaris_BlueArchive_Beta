@@ -1,0 +1,267 @@
+@flowmap_speed = 0.17
+@flowmap_intensity =  0.3
+
+
+entity = {
+	name = "ba_club_station_01_entity"
+	pdxmesh = "ba_01_outpost_mesh"
+
+	locator = {
+		name = "slot1"
+		position = { 0 0 0 }
+		rotation = { 0 0 0 }
+	}
+
+	attach = {
+		slot1 = "ba_ship_halo_station_entity"
+	}
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		 event = { time = 0 node = "light_locator_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_03" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_01" } }
+	}
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+
+}
+
+
+#########对策委员会部室########
+
+entity = {
+	name = "ba_club_station_countermeasures_committee_entity"
+	pdxmesh = "ba_01_outpost_mesh"
+
+	locator = {
+		name = "slot1"
+		position = { 0 0 0 }
+		rotation = { 0 0 0 }
+	}
+	attach = {
+		slot1 = "ba_countermeasures_committee_ad_01_entity"
+	}
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		 event = { time = 0 node = "light_locator_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_03" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_01" } }
+	}
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+
+}
+
+
+
+
+#########工程部部室########
+
+entity = {
+	name = "ba_club_station_engineering_department_entity"
+	pdxmesh = "ba_01_outpost_mesh"
+
+	locator = {
+		name = "slot1"
+		position = { 0 0 0 }
+		rotation = { 0 0 0 }
+	}
+	attach = {
+		slot1 = "ba_engineering_department_ad_01_entity"
+	}
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		 event = { time = 0 node = "light_locator_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_03" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_01" } }
+	}
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+
+}
+
+
+
+#########特异现象搜查部########
+
+entity = {
+	name = "ba_club_station_super_phenomenon_task_force_entity"
+	pdxmesh = "ba_01_outpost_mesh"
+
+	locator = {
+		name = "slot1"
+		position = { 0 0 0 }
+		rotation = { 0 0 0 }
+	}
+	attach = {
+		slot1 = "ba_super_phenomenon_task_force_ad_01_entity"
+	}
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		 event = { time = 0 node = "light_locator_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_03" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_01" } }
+	}
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+
+}
+
+#########游戏开发部室########
+
+entity = {
+	name = "ba_club_station_game_dev_entity"
+	pdxmesh = "ba_01_outpost_mesh"
+
+	locator = {
+		name = "slot1"
+		position = { 0 0 0 }
+		rotation = { 0 0 0 }
+	}
+	attach = {
+		slot1 = "ba_game_dev_ad_01_entity"
+	}
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		 event = { time = 0 node = "light_locator_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_03" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_01" } }
+	}
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+
+}
+
+
+
+
+#########联邦学生会部室########
+
+entity = {
+	name = "ba_club_station_prime_student_council_entity"
+	pdxmesh = "ba_01_outpost_mesh"
+
+	locator = {
+		name = "slot1"
+		position = { 0 0 0 }
+		rotation = { 0 0 0 }
+	}
+	attach = {
+		slot1 = "ba_prime_student_council_ad_01_entity"
+	}
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		 event = { time = 0 node = "light_locator_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_03" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_01" } }
+	}
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+
+}
+
+
+
+
+#########夏莱部室########
+
+entity = {
+	name = "ba_club_station_schale_entity"
+	pdxmesh = "ba_01_outpost_mesh"
+
+	locator = {
+		name = "slot1"
+		position = { 0 0 0 }
+		rotation = { 0 0 0 }
+	}
+	attach = {
+		slot1 = "ba_schale_ad_01_entity"
+	}
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		 event = { time = 0 node = "light_locator_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_03" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_01" } }
+	}
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+
+}
+
+
+
+
+#########茶会部室########
+
+entity = {
+	name = "ba_club_station_tea_party_entity"
+	pdxmesh = "ba_01_outpost_mesh"
+
+	locator = {
+		name = "slot1"
+		position = { 0 0 0 }
+		rotation = { 0 0 0 }
+	}
+	attach = {
+		slot1 = "ba_tea_party_ad_01_entity"
+	}
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		 event = { time = 0 node = "light_locator_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_03" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_01" } }
+	}
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+
+}
+
+
+
+
+#########真理部部室########
+
+entity = {
+	name = "ba_club_station_veritas_entity"
+	pdxmesh = "ba_01_outpost_mesh"
+
+	locator = {
+		name = "slot1"
+		position = { 0 0 0 }
+		rotation = { 0 0 0 }
+	}
+	attach = {
+		slot1 = "ba_veritas_ad_01_entity"
+	}
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		 event = { time = 0 node = "light_locator_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_03" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_01" } }
+	}
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+
+}
+
+
+
+

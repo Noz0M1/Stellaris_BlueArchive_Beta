@@ -1,0 +1,128 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Kaitenranger_Black_HG_Weapon_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/Kaitenranger_Black_HG_Weapon.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Kaitenranger_Black_HG_WeaponShape"
+			index = 0
+			texture_diffuse = "Kaitenranger_Black_HG.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "Kaitenranger_Green_HMG_Weapon_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/Kaitenranger_Green_HMG_Weapon.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Kaitenranger_Green_HMG_WeaponShape"
+			index = 0
+			texture_diffuse = "Kaitenranger_Green_HMG.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "Kaitenranger_Pink_RL_Weapon_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/Kaitenranger_Pink_RL_Weapon.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Kaitenranger_Pink_RL_WeaponShape"
+			index = 0
+			texture_diffuse = "Kaitenranger_Pink_RL.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "Kaitenranger_Pink_RPG_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/Kaitenranger_Pink_RPG.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "Kaitenranger_Pink_RPGShape"
+			index = 0
+			texture_diffuse = "Kaitenranger_Pink_RL.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "Kaitenranger_Red_AR_Weapon_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/Kaitenranger_Red_AR_Weapon.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Kaitenranger_Red_AR_WeaponShape"
+			index = 0
+			texture_diffuse = "Kaitenranger_Red_AR.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "Kaitenranger_Yellow_SR_Weapon_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/Kaitenranger_Yellow_SR_Weapon.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Kaitenranger_Yellow_SR_WeaponShape"
+			index = 0
+			texture_diffuse = "Kaitenranger_Yellow_SR.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "Terror_Barbara_Yustina_MG_Weapon_01_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/Terror_Barbara_Yustina_MG_Weapon_01.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Terror_Barbara_Yustina_MG_Weapon_01Shape"
+			index = 0
+			texture_diffuse = "Terror_Barbara_Yustina_MG.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "Terror_Barbara_Yustina_MG_Weapon_02_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/Terror_Barbara_Yustina_MG_Weapon_02.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Terror_Barbara_Yustina_MG_Weapon_02Shape"
+			index = 0
+			texture_diffuse = "Terror_Barbara_Yustina_MG.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}

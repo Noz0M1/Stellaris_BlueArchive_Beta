@@ -1,0 +1,50 @@
+objectTypes = {
+	pdxmesh = {
+		name = "AtrahasisArk_mesh"
+		file = "gfx\models\ships\color/AtrahasisArk.mesh"
+		scale = 3.0
+		meshsettings = {
+			name = "AtrahasisArkShape"
+			index = 0
+			texture_diffuse = "AtrahasisArk.dds"
+			texture_normal = "AtrahasisArk_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "SkyRing_mesh"
+		file = "gfx\models\ships\color/SkyRing.mesh"
+		scale = 9.0
+
+		meshsettings = {
+			name = "Sky_Ring_01Shape"
+			index = 0
+			texture_diffuse = "SkyRing_normal.dds"
+			texture_normal = "SkyRing_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "AtrahasisArk_black_hole_new_mesh"
+		file = "gfx/models/planets/black_hole_new.mesh"
+
+		
+		meshsettings = {
+			name = "pSphereShape2"
+		#	index = 0
+		#	texture_diffuse = "black_hole_new_diffuse.dds"
+		#	texture_normal = "black_hole_new_normal.dds"
+		#	texture_specular = "black_hole_new_specular.dds"
+			shader = "PdxMeshBlackHole"
+		}
+
+		meshsettings = {
+			name = "pSphereShape3"
+			index = 0
+			shader = "PdxMeshAtmosphereStar"
+		}
+
+	}
+}

@@ -1,0 +1,47 @@
+councilor_research = {
+	leader_class = {
+		scientist
+	}
+	possible = {
+		use_vanilla_normal_council = yes
+	}
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	modifier = {
+		all_technology_research_speed = 0.02
+	}
+	icon = "GFX_icon_councilor_research"
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+	ai_priority = 1
+	optional = {
+		has_paragon_dlc = yes
+	}
+}
+
+councilor_defense = {
+	leader_class = {
+		commander
+	}
+	possible = {
+		use_vanilla_normal_council = yes
+	}
+	is_leader_possible = {
+		leader_class = commander
+	}
+	modifier = {
+		ships_upkeep_mult = -0.02
+		armies_upkeep_mult = -0.02
+		starbases_upkeep_mult = -0.02
+	}
+	icon = "GFX_icon_councilor_defense"
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+	ai_priority = 1
+	optional = {
+		has_paragon_dlc = yes
+	}
+}

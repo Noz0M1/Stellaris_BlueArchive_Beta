@@ -1,0 +1,16 @@
+event_target:BA_Shittem_country = {
+    set_country_flag = BA_stored_SP_$Leader$_@root
+    root = {
+        create_message = {
+            type = NEW_SP_LEADER
+            localization = MESSAGE_NEW_SP_LEADER_DESC
+            days = 30
+            target = root
+            variable = {
+                type = name
+                localization = SP_NAME
+                scope = event_target:BA_$Leader$_SP
+            }
+        }
+    }
+}

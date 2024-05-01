@@ -1,0 +1,108 @@
+ap_BA_halo_awaken = {
+	potential = {
+		has_authority = auth_kivotos
+		NOT = {
+			has_ascension_perk = ap_BA_halo_awaken
+		}
+	}
+	possible = {
+		has_technology = tech_BA_Shittem_starting
+		custom_tooltip = {
+			fail_text = In_awaken_route
+			has_country_flag = BA_halo_awaken_route
+		}
+		custom_tooltip = {
+			# TODO：新起源
+			fail_text = ap_BA_origin_limit
+			if = {
+				limit = {
+					OR = {
+						has_origin = origin_Kivotos_Eden_treaty
+						has_origin = origin_Kivotos_Kyrie
+						has_origin = origin_Kivotos_Unnamed_starting
+					}
+				}
+				OR = {
+					has_country_flag = BA_origin_Eden_treaty_finished
+					has_country_flag = BA_origin_Kyrie_finished
+					has_country_flag = BA_origin_Unnamed_starting_finished
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_3"
+			num_ascension_perks > 2
+		}
+	}
+	on_enabled = {
+		custom_tooltip = ap_BA_halo_awaken_tip
+		hidden_effect = {
+			country_event = {
+				id = BA_ape.1001
+				random = 30
+			}
+		}
+	}
+	ai_weight = {
+		factor = 10000
+	}
+}
+
+ap_BA_Our_story = {
+	potential = {
+		has_authority = auth_kivotos
+		NOT = {
+			has_ascension_perk = ap_BA_Our_story
+		}
+	}
+	possible = {
+		#custom_tooltip = {
+		#	fail_text = "requires_ascension_perks_4"
+		#	num_ascension_perks > 3
+		#}
+		#has_technology = tech_housing_2
+		#has_technology = tech_starbase_5
+		always = yes
+	}
+	on_enabled = {
+		custom_tooltip = ap_BA_Our_story_tip
+		hidden_effect = {
+			country_event = {
+				id = BA_ape.2001
+			}
+		}
+	}
+	ai_weight = {
+		factor = 10000
+	}
+}
+
+ap_BA_new_frontier = {
+	potential = {
+		has_authority = auth_kivotos
+		NOT = {
+			has_ascension_perk = ap_BA_new_frontier
+		}
+	}
+	possible = {
+		custom_tooltip = {
+			text = BA_Rebuild_a_planet
+			has_country_flag = BA_Planet_rebuilded
+		}
+		custom_tooltip = {
+			text = BA_tr_kivotos_finished
+			has_country_flag = BA_tr_kivotos_finished
+		}
+	}
+	on_enabled = {
+		custom_tooltip = ap_BA_new_frontier_tip
+		hidden_effect = {
+			# country_event = {
+			# 	id = BA_ape.3001
+			# }
+		}
+	}
+	ai_weight = {
+		factor = 10000
+	}
+}

@@ -1,0 +1,51 @@
+#可启用遗珍 测试篇
+# test_relic_1 = {
+# 	activation_duration = @triumph_duration
+# 	portrait = "GFX_relic_severed_head" #暂用
+# 	#sound =
+
+# 	resources = {
+# 		category = relics
+# 		# Activation cost
+# 		cost = {
+# 			influence = 150
+# 		}
+# 	}
+	
+# 	ai_weight = {
+# 		weight = 100
+# 	}
+	
+# 	triggered_country_modifier = {
+# 		potential = {
+# 			always = yes
+# 		}
+# 		country_unity_produces_mult = 0.20
+# 	}
+
+# 	score = 1000
+
+# 	active_effect = {
+# 		add_modifier = {
+# 			modifier = "BA_test_relic_1" 
+# 			days = 3600
+# 		}
+# 		custom_tooltip = relic_triumph_cooldown
+# 		hidden_effect = {
+# 			add_modifier = {
+# 				modifier = "relic_activation_cooldown" 
+# 				days = 3600
+# 			}		
+# 		}
+# 	}
+
+# 	# Possible check for activation
+# 	possible = {
+# 		custom_tooltip = {
+# 			fail_text = "requires_relic_no_cooldown"
+# 			NOT = { has_modifier = relic_activation_cooldown }
+# 		}
+# 	}
+# }
+
+#

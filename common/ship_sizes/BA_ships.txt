@@ -1,0 +1,548 @@
+#### 民用舰船
+#社团舰
+BA_club_ship = {
+	max_hitpoints = @colony_hp
+	combat_disengage_chance = 0.5
+	max_speed = @speed_very_slow
+	acceleration = 0.3
+	rotation_speed = 0.2
+	modifier = {
+		ship_evasion_add = @colony_evasion
+	}
+	size_multiplier = 1
+	is_civilian = yes
+	valid_target_aggressive_stance = no
+	is_designable = no
+	enable_default_design = yes
+	components_add_to_cost = no
+	auto_upgrade = yes
+	section_slots = {
+		"mid" = {
+			locator = "part1"
+		}
+	}
+	base_buildtime = @colony_build_time
+	prerequisites = {
+		"tech_BA_culture_Federal"
+	}
+	class = shipclass_colonizer
+	construction_type = starbase_shipyard
+	resources = {
+		category = colonies
+		cost = {
+			alloys = 200
+			minerals = 300
+			consumer_goods = 200
+		}
+	}
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+}
+
+#### 军事舰船
+#自律导弹艇
+BA_missile_ship = {
+	formation_priority = 20
+	max_speed = @speed_default
+	acceleration = 0.3
+	rotation_speed = 0.2
+	collision_radius = @cruiser_collision_radius
+	max_hitpoints = 1200
+	entity = "ba_missile_ship_entity"
+	modifier = {
+		ship_evasion_add = @destroyer_evasion
+		ship_piracy_suppression_add = 8
+	}
+	size_multiplier = 2
+	fleet_slot_size = 2
+	section_slots = {
+		"bow" = {
+			locator = "part1"
+		}
+		"stern" = {
+			locator = "part2"
+		}
+	}
+	num_target_locators = 4
+	icon = ship_size_military_2	#以后改
+	is_space_station = no
+	base_buildtime = 120
+	can_have_federation_design = no
+	enable_default_design = yes
+	enable_3dview_in_ship_browser = yes
+	default_behavior = picket
+	prerequisites = {
+		tech_BA_spaceship_automation_1
+	}
+	combat_disengage_chance = 1.5
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	resources = {
+		category = ships
+		upkeep = {
+			energy = 0.7
+			alloys = 0.2
+		}
+	}
+	min_upgrade_cost = {
+		alloys = 2
+	}
+	ai_ship_data = {
+		fraction = {
+			base = 0
+			modifier = {
+				add = 25
+				uses_standard_ship_sizes = yes
+			}
+		}
+	}
+}
+
+#自律脊峰舰
+BA_artillery_ship = {
+	formation_priority = 50
+	max_speed = @speed_slow
+	acceleration = 0.2
+	rotation_speed = 0.15
+	collision_radius = @battleship_collision_radius
+	max_hitpoints = 2500
+	entity = "ba_artillery_ship_entity"
+	modifier = {
+		ship_evasion_add = @battleship_evasion
+		ship_piracy_suppression_add = 8
+	}
+	size_multiplier = 6
+	fleet_slot_size = 4
+	section_slots = {
+		"bow" = {
+			locator = "part1"
+		}
+		"mid" = {
+			locator = "part2"
+		}
+		"stern" = {
+			locator = "part3"
+		}
+	}
+	num_target_locators = 4
+	icon = ship_size_military_8
+	is_space_station = no
+	base_buildtime = 360
+	can_have_federation_design = no
+	enable_default_design = yes
+	enable_3dview_in_ship_browser = yes
+	default_behavior = artillery
+	prerequisites = {
+		tech_BA_spaceship_automation_2
+	}
+	combat_disengage_chance = 1.5
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	resources = {
+		category = ships
+		upkeep = {
+			energy = 2.2
+			alloys = 0.7
+		}
+	}
+	min_upgrade_cost = {
+		alloys = 8
+	}
+	ai_ship_data = {
+		fraction = {
+			base = 0
+			modifier = {
+				add = 25
+				uses_standard_ship_sizes = yes
+			}
+			modifier = {
+				factor = 1.5
+				is_preferred_weapons = weapon_type_energy
+			}
+		}
+	}
+}
+
+#自律军团舰
+BA_swarm_ship = {
+	formation_priority = 60
+	max_speed = @speed_slow
+	acceleration = 0.2
+	rotation_speed = 0.15
+	collision_radius = @battleship_collision_radius
+	max_hitpoints = 2500
+	entity = "ba_swarm_ship_entity"
+	modifier = {
+		ship_evasion_add = @battleship_evasion
+		ship_piracy_suppression_add = 8
+	}
+	size_multiplier = 6
+	fleet_slot_size = 4
+	section_slots = {
+		"bow" = {
+			locator = "part1"
+		}
+		"mid" = {
+			locator = "part2"
+		}
+		"stern" = {
+			locator = "part3"
+		}
+	}
+	num_target_locators = 4
+	icon = ship_size_military_8
+	is_space_station = no
+	base_buildtime = 360
+	can_have_federation_design = no
+	enable_default_design = yes
+	enable_3dview_in_ship_browser = yes
+	default_behavior = carrier
+	prerequisites = {
+		tech_BA_spaceship_automation_2
+	}
+	combat_disengage_chance = 1.5
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	resources = {
+		category = ships
+		upkeep = {
+			energy = 2.2
+			alloys = 0.7
+		}
+	}
+	min_upgrade_cost = {
+		alloys = 8
+	}
+	ai_ship_data = {
+		fraction = {
+			base = 0
+			modifier = {
+				add = 25
+				uses_standard_ship_sizes = yes
+			}
+			modifier = {
+				factor = 1.5
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+			modifier = {
+				factor = 1.5
+				is_preferred_weapons = weapon_type_explosive
+			}
+		}
+	}
+}
+
+#自律演算枢纽
+BA_hub_ship = {
+	formation_priority = 100
+	max_speed = @speed_slow
+	acceleration = 0.2
+	rotation_speed = 0.15
+	collision_radius = @titan_collision_radius
+	max_hitpoints = 10000
+	entity = "ba_hub_ship_entity"
+	modifier = {
+		ship_evasion_add = @battleship_evasion
+		ship_piracy_suppression_add = 24
+	}
+	size_multiplier = 16
+	fleet_slot_size = 8
+	section_slots = {
+		"bow" = {
+			locator = "part1"
+		}
+		"mid" = {
+			locator = "part2"
+		}
+		"stern" = {
+			locator = "part3"
+		}
+	}
+	num_target_locators = 4
+	is_space_station = no
+	icon = ship_size_military_16
+	base_buildtime = @titan_build_time
+	can_have_federation_design = no
+	enable_default_design = yes
+	enable_3dview_in_ship_browser = yes
+	default_behavior = artillery
+	prerequisites = {
+		"tech_BA_spaceship_automation_4"
+	}
+	combat_disengage_chance = 1.25
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	required_component_set = "ship_aura_components"
+	possible_construction = {
+		custom_tooltip = {
+			fail_text = starbase_citadel_trigger
+			OR = {
+				AND = {
+					is_scope_type = megastructure
+					OR = {
+						is_megastructure_type = mega_shipyard_3
+						is_megastructure_type = mega_shipyard_restored
+					}
+				}
+				AND = {
+					is_scope_type = starbase
+					has_starbase_size >= starbase_citadel
+				}
+				#				is_ship_size = enclave_mercenary_station
+			}
+		}
+		custom_tooltip = {
+			fail_text = starbase_titan_yards_trigger
+			OR = {
+				AND = {
+					is_scope_type = megastructure
+					OR = {
+						is_megastructure_type = mega_shipyard_3
+						is_megastructure_type = mega_shipyard_restored
+					}
+				}
+				AND = {
+					is_scope_type = starbase
+					has_starbase_building = titan_yards
+				}
+				#				is_ship_size = enclave_mercenary_station
+			}
+		}
+	}
+	resources = {
+		category = ships
+		upkeep = {
+			energy = @titan_upkeep_energy
+			alloys = @titan_upkeep_alloys
+		}
+	}
+	min_upgrade_cost = {
+		alloys = 16
+	}
+	ai_ship_data = {
+		fraction = {
+			base = 0
+			modifier = {
+				add = 25
+				uses_standard_ship_sizes = yes
+			}
+			modifier = {
+				factor = 1.5
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
+}
+
+#自律防御炮塔
+BA_defence_cannon = {
+	max_speed = 6
+	rotation_speed = 10
+	acceleration = 10
+	max_hitpoints = 10000
+	entity = "ion_cannon_section_entity"
+	modifier = {
+		ship_evasion_mult = -1
+	}
+	ship_modifier = {
+		ship_weapon_range_mult = 0.2
+	}
+	size_multiplier = 4
+	fleet_slot_size = 4
+	combat_size_multiplier = 4
+	section_slots = {
+		"ship" = {
+			locator = "part1"
+		}
+	}
+	is_designable = yes
+	components_add_to_cost = yes
+	uses_name_prefix = no
+	takes_name_from_ship_design = yes
+	num_target_locators = 0
+	is_space_station = yes
+	base_buildtime = @battleship_build_time
+	auto_upgrade = no
+	enable_default_design = yes
+	prerequisites = {
+		tech_BA_spaceship_automation_3
+	}
+	class = shipclass_military_station
+	ship_class_icon_frame = 26
+	icon = ship_size_military_station
+	construction_type = starbase_defenses
+	required_component_set = "power_core"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	potential_construction = {
+		is_scope_type = starbase
+	}
+	possible_construction = {
+		OR = {
+			has_starbase_size >= starbase_starhold
+			has_starbase_size >= orbital_ring_tier_2
+		}
+	}
+	resources = {
+		category = starbase_stations
+		cost = {
+			alloys = 500
+			sr_keystone = 20
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+}
+
+
+#### 天灾舰船
+starbase_Aris = {
+	graphical_culture = {
+		"pirate_01"
+	}
+	max_speed = 0
+	acceleration = 0
+	rotation_speed = 0
+	modifier = {
+		ship_evasion_mult = -1
+		ship_shield_add = 10000
+		ship_armor_add = 10000
+		ship_sensor_range_add = 1
+	}
+	ship_modifier = {
+		ship_weapon_range_mult = 0.2
+	}
+	potential_construction = {
+		is_scope_type = planet
+		is_primary_star = yes
+		NOT = {
+			exists = orbital_defence
+		}
+	}
+	max_hitpoints = 20000
+	base_buildtime = 730
+	combat_size_multiplier = 50
+	size_multiplier = 12
+	fleet_slot_size = 2
+	section_slots = {
+		"mid" = {
+			locator = "part1"
+		}
+	}
+	is_designable = no
+	num_target_locators = 0
+	is_space_station = no
+	can_have_federation_design = no
+	is_civilian = no
+	components_add_to_cost = no
+	is_listed = no
+	can_disable = no
+	enable_default_design = no	#if yes, countries will have an auto-generated design at start
+	class = shipclass_starbase
+	required_component_set = "power_core"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	build_block_radius = 20
+	formation_priority = 1
+	icon_frame = -1
+	icon = ship_size_military_station
+}
+
+#爱丽丝旗舰
+BA_Aris_flagship = {
+	formation_priority = 100
+	max_speed = 0
+	acceleration = 0
+	rotation_speed = 1
+	collision_radius = @titan_collision_radius
+	max_hitpoints = 10000
+	entity = "ba_hub_ship_entity"
+	modifier = {
+		ship_evasion_add = @battleship_evasion
+		ship_piracy_suppression_add = 24
+	}
+	is_designable = no
+	components_add_to_cost = no
+	size_multiplier = 16
+	fleet_slot_size = 8
+	section_slots = {
+		"bow" = {
+			locator = "part1"
+		}
+		"mid" = {
+			locator = "part2"
+		}
+		"stern" = {
+			locator = "part3"
+		}
+	}
+	num_target_locators = 4
+	is_space_station = no
+	icon = ship_size_military_16
+	base_buildtime = @titan_build_time
+	can_have_federation_design = no
+	#enable_default_design = yes
+	enable_3dview_in_ship_browser = no
+	default_behavior = artillery
+	prerequisites = {
+		"tech_BA_fe"
+	}
+	combat_disengage_chance = 1.25
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	required_component_set = "ship_aura_components"
+	potential_construction = {
+		always = no
+	}
+	resources = {
+		category = ships
+		upkeep = {
+			energy = @titan_upkeep_energy
+			alloys = @titan_upkeep_alloys
+		}
+	}
+	min_upgrade_cost = {
+		alloys = 16
+	}
+	ai_ship_data = {
+		fraction = {
+			base = 0
+			modifier = {
+				add = 25
+				uses_standard_ship_sizes = yes
+			}
+			modifier = {
+				factor = 1.5
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
+}

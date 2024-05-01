@@ -1,0 +1,266 @@
+entity = {
+	name = "titanfall_tick_entity"
+	pdxmesh = "titanfall_tick_mesh"
+		
+	default_state = idle
+	state = { name = "idle" animation = "idle"
+		start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "missile_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss"
+		time_offset = { 0 1.4 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "missile_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss2"
+		time_offset = { 0 1 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "missile_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss_reversed"
+		time_offset = { 0 1.4 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "missile_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss2_reversed"
+		time_offset = { 0 1 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "missile_idle_flame_particle" keep_particle = yes }
+	}
+
+}
+
+entity = {
+	name = "titanfall_tick_b_entity"
+	pdxmesh = "titanfall_tick_b_mesh"		
+	default_state = idle
+	state = { name = "idle" animation = "idle"
+		start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "missile_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss"
+		time_offset = { 0 1.4 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "missile_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss2"
+		time_offset = { 0 1 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "missile_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss_reversed"
+		time_offset = { 0 1.4 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "missile_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss2_reversed"
+		time_offset = { 0 1 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "missile_idle_flame_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "titanfall_tick_r_entity"
+	pdxmesh = "titanfall_tick_r_mesh"		
+	default_state = idle
+	state = { name = "idle" animation = "idle"
+		start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "missile_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss"
+		time_offset = { 0 1.4 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "missile_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss2"
+		time_offset = { 0 1 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "missile_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss_reversed"
+		time_offset = { 0 1.4 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "missile_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss2_reversed"
+		time_offset = { 0 1 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "missile_idle_flame_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "titanfall_ticks_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+	}
+	
+	state = { name = "stop" animation = "miss" 
+		looping = no
+		time_offset = { 0 1 }
+		animation_blend_time = 1
+		start_event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_07 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_08 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+	}
+	
+	scale = 8.0
+	
+	
+	attach = { missile_01 = "titanfall_tick_entity" }
+	attach = { missile_02 = "titanfall_tick_entity" }
+	attach = { missile_03 = "titanfall_tick_b_entity" }
+	attach = { missile_04 = "titanfall_tick_r_entity" }
+	attach = { missile_05 = "titanfall_tick_r_entity" }
+	attach = { missile_06 = "titanfall_tick_r_entity" }
+	attach = { missile_07 = "titanfall_tick_b_entity" }
+	attach = { missile_08 = "titanfall_tick_b_entity" }
+}
+
+
+entity = {
+	name = "titanfall_ticks_2_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_idle_particle" keep_particle = yes }
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+	}
+	
+	state = { name = "stop" animation = "miss" 
+		looping = no
+		time_offset = { 0 1 }
+		animation_blend_time = 1
+		start_event = { time = 0 node = missile_01 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_02 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_03 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_04 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_05 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_06 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_07 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_08 particle = "swarmer_missile_idle_particle" keep_particle = yes trigger_once = yes }
+	}
+	
+	scale = 8.0
+	
+	
+	attach = { missile_01 = "titanfall_tick_entity" }
+	attach = { missile_02 = "titanfall_tick_entity" }
+	attach = { missile_03 = "titanfall_tick_entity" }
+	attach = { missile_04 = "titanfall_tick_entity" }
+	attach = { missile_05 = "titanfall_tick_entity" }
+	attach = { missile_06 = "titanfall_tick_entity" }
+	attach = { missile_07 = "titanfall_tick_entity" }
+	attach = { missile_08 = "titanfall_tick_entity" }
+}
+
+entity = {
+	name = "titanfall_tick_turret_entity"
+	pdxmesh = "titanfall_tick_turret_mesh"
+	scale = 8.0
+}

@@ -1,0 +1,60 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Monarch_Part1_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/Monarch_Part1.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Monarch_Part1Shape"
+			index = 0
+			texture_diffuse = "Monarch_Part1_diffuse.dds"
+			texture_normal = "Monarch_Part1_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Monarch_Part1Shape"
+			index = 1
+			texture_diffuse = "Monarch_Eye.dds"
+			texture_normal = "Monarch_Eye_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Monarch_Part1Shape"
+			index = 2
+			texture_diffuse = "Monarch_Nose_Art.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+	pdxmesh = {
+		name = "Monarch_Part2_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/Monarch_Part2.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Monarch_Part2Shape"
+			index = 0
+			texture_diffuse = "Monarch_Part1_diffuse.dds"
+			texture_normal = "Monarch_Part1_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "Monarch_Part3_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/Monarch_Part3.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Monarch_Part3Shape"
+			index = 0
+			texture_diffuse = "Monarch_Part1_diffuse.dds"
+			texture_normal = "Monarch_Part1_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

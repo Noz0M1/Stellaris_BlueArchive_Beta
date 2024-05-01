@@ -1,0 +1,14 @@
+objectTypes = {
+	pdxmesh = {
+		name = "ba_01_colossus_aris_halo_mesh"
+		file = "gfx\models\ships\colossus\ba_01\ba_01_colossus_aris_halo.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ba_01_colossus_aris_haloShape"
+			index = 0
+			texture_diffuse = "Aris_Original_Halo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+}

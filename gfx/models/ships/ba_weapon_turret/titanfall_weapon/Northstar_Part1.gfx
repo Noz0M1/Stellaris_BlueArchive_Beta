@@ -1,0 +1,37 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Northstar_Part1_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/Northstar_Part1.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Northstar_Part1Shape"
+			index = 0
+			texture_diffuse = "Northstar_Part1_diffuse.dds"
+			texture_normal = "Northstar_Part1_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Northstar_Part1Shape"
+			index = 1
+			texture_diffuse = "Northstar_Nose_Art.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+	pdxmesh = {
+		name = "Northstar_Part2_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/Northstar_Part2.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Northstar_Part2Shape"
+			index = 0
+			texture_diffuse = "Northstar_Part1_diffuse.dds"
+			texture_normal = "Northstar_Part1_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

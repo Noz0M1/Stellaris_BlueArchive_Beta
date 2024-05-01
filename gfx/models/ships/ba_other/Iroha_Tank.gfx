@@ -1,0 +1,177 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Iroha_Tank_mesh"
+		file = "gfx\models\ships\ba_other/Iroha_Tank.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "CH0156_TankShape"
+			index = 0
+			texture_diffuse = "CH0156_Tank_01.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_TankShape"
+			index = 1
+			texture_diffuse = "CH0156_Tank_02.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "Iroha_Tank_turret_mesh"
+		file = "gfx\models\ships\ba_other/Iroha_Tank_turret.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "CH0156_Tank_002Shape"
+			index = 0
+			texture_diffuse = "CH0156_Tank_01.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_Tank_002Shape"
+			index = 1
+			texture_diffuse = "CH0156_Hair.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_Tank_002Shape"
+			index = 2
+			texture_diffuse = "CH0156_Face.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_Tank_002Shape"
+			index = 3
+			texture_diffuse = "CH0156_Face.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_Tank_002Shape"
+			index = 4
+			texture_diffuse = "CH0156_EyeMouth.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_Tank_002Shape"
+			index = 5
+			texture_diffuse = "CH0156_Body.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_Tank_002Shape"
+			index = 6
+			texture_diffuse = "CH0156_Book.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_HaloShape"
+			index = 0
+			texture_diffuse = "CH0156_Halo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+	pdxmesh = {
+		name = "Iroha_Tank_turret_2_mesh"
+		file = "gfx\models\ships\ba_other\Iroha_Tank_turret_2.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "CH0156_BOOKShape"
+			index = 0
+			texture_diffuse = "Iroha_book_2.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_Tank_TURRETShape"
+			index = 0
+			texture_diffuse = "CH0156_Tank_01.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_HAIRShape"
+			index = 0
+			texture_diffuse = "CH0156_Hair.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_FACEShape"
+			index = 0
+			texture_diffuse = "CH0156_Face.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_EYEShape"
+			index = 0
+			texture_diffuse = "CH0156_EyeMouth.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_BODYShape"
+			index = 0
+			texture_diffuse = "CH0156_Body.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_HaloShape"
+			index = 0
+			texture_diffuse = "CH0156_Halo.png"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "CH0156_EYE_001Shape"
+			index = 0
+			texture_diffuse = "CH0156_Mouth.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+}

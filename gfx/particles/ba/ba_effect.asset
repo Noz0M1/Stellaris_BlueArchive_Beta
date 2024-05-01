@@ -1,0 +1,924 @@
+particle={
+	name="ba_advert_base_effect"
+	subsystem={
+		name="flare_big_base"
+		max_amount=25
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=yes
+		hide=no
+		texture={
+			file="gfx/particles/glow.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x=210.000
+			y=210.000
+			z=245.000,alpha_fade
+			alpha=85.000,alpha_fade
+		}
+		position={
+			x=-2.5
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 6.00 1.00 }
+		emission=5.00
+		size={ 12.00,alpha_fade 3.000 }
+		rotation={ 0.000 180.000 }
+	}
+	subsystem={
+		name="flare_big_base2"
+		max_amount=25
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=yes
+		hide=no
+		texture={
+			file="gfx/particles/glow.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x=75.000,alpha_fade
+			y=75.000
+			z=135.000,alpha_fade
+			alpha=155.000,alpha_fade
+		}
+		position={
+			x=-5.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 6.00 1.00 }
+		emission=5.00
+		size={ 10.000,alpha_fade 3.000 }
+		rotation={ 0.000 180.000 }
+	}
+	animation={
+		name="alpha_fade"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.303 0.266 0.535 1.000 0.741 0.266 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+
+###青辉石巨构用####
+particle={
+	name="ba_item_pyroxene_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/ba/ba_item_pyroxene.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+
+
+###制造石巨构用####
+particle={
+	name="ba_item_keystone_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/ba/ba_item_keystone.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+
+##########################
+###舰船光环####
+particle={
+	name="ba_ship_halo_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/ba/ba_ship_halo.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="ba_ship_halo_decagrammaton_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/ba/ba_ship_halo_decagrammaton.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+
+
+
+particle={
+	name="ba_ship_halo_decagrammaton_colorized_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/ba/ba_ship_halo_decagrammaton_colorized.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+
+
+
+particle={
+	name="ba_ship_halo_colossus_effect"
+	subsystem={
+		name="particle0"
+		max_amount=6
+		slave_particles=0
+		sort="depth"
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/ba/ba_ship_halo_colossus.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255
+			y=255
+			z=255
+			alpha=175,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life= { 12.00 1.000 }
+		emission=1
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed= 0.000
+		particle_pitch=90
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+particle={
+	name="ba_ship_halo_aris_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/ba/ba_ship_halo_aris.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+
+
+
+###对策委员会####
+particle={
+	name="ba_countermeasures_committee_ad_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/ba/ba_countermeasures_committee_icon.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+###工程部####
+particle={
+	name="ba_engineering_department_ad_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/ba/ba_engineering_department_icon.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+###特异现象搜查部####
+particle={
+	name="ba_super_phenomenon_task_force_ad_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/ba/ba_super_phenomenon_task_force_icon.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+
+###游戏开发部####
+particle={
+	name="ba_game_dev_ad_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/ba/ba_game_dev_icon.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+
+
+###联邦学生会####
+particle={
+	name="ba_prime_student_council_ad_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/ba/ba_prime_student_council_icon.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+
+
+
+###夏莱####
+particle={
+	name="ba_schale_ad_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/ba/ba_schale_icon.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+
+###茶会####
+particle={
+	name="ba_tea_party_ad_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/ba/ba_tea_party_icon.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}
+
+
+###真理部####
+particle={
+	name="ba_veritas_ad_effect"
+	subsystem={
+		name="blackness4"
+		max_amount=6
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/ba/ba_veritas_icon.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=255.000
+			y=255.000
+			z=255.000
+			alpha=175.000,spark_tingle
+		}
+		position={
+			x=0.0
+			y=0.0
+			z=0.0
+		}
+		duration=-1.000
+		life={ 12.00 1.000 }
+		emission=1.00
+		size={ 100.00 0.00 }
+		rotation={ 0.000 0.000 }
+		rotation_speed=0.000
+		#particle_pitch = { 0.0 5.0 }
+		#particle_roll = { 0.0 2.0 }
+		particle_yaw = { 90.0 2.0 }
+	}
+	animation={
+		name="spark_tingle"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.271 0.3500 0.332 0.700 0.576 0.3500 0.632 0.100 0.850 0.900 1.000 0.000
+		}
+		op="MUL"
+		time="life"
+	}
+}

@@ -1,0 +1,37 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Ronin_Part1_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/Ronin_Part1.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Ronin_Part1Shape"
+			index = 0
+			texture_diffuse = "Ronin_Part1_diffuse.dds"
+			texture_normal = "Ronin_Part1_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Ronin_Part1Shape"
+			index = 1
+			texture_diffuse = "Ronin_Nose_Art.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+	pdxmesh = {
+		name = "Ronin_Part2_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/Ronin_Part2.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Ronin_Part2Shape"
+			index = 0
+			texture_diffuse = "Ronin_Part1_diffuse.dds"
+			texture_normal = "Ronin_Part1_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

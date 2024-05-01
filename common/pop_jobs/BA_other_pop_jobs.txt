@@ -1,0 +1,258 @@
+#######################
+##		其他岗位
+#######################
+### 青辉石生产员
+#3电 2矿 -> 1青辉石 2凝聚力
+BA_pyroxenes_maker = {
+    category = specialist
+    condition_string = SPECIALIST_JOB_TRIGGER
+    #building_icon = building_BA_pyroxenes
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_specialist_job
+    possible = {
+        is_kivotos = yes
+    }
+    resources = {
+        category = planet_metallurgists
+        produces = {
+            unity = 2
+            sr_pyroxenes = 1
+        }
+        upkeep = {
+            energy = 3
+            minerals = 6
+        }
+        produces = {
+            trigger = {
+                owner = {
+                    has_technology = tech_BA_SI_Gehenna_G03
+                }
+            }
+            unity = 0.7
+            sr_pyroxenes = 0.35
+        }
+        upkeep = {
+            trigger = {
+                owner = {
+                    has_technology = tech_BA_SI_Gehenna_G03
+                }
+            }
+            energy = 1
+            minerals = 2.1
+        }
+    }
+    weight = {
+        weight = @specialist_job_weight
+        modifier = {
+            owner = {
+                has_monthly_income = {
+                    resource = minerals
+                    value < 30
+                }
+            }
+            factor = 0.7
+        }
+        modifier = {
+            owner = {
+                has_monthly_income = {
+                    resource = minerals
+                    value < 20
+                }
+            }
+            factor = 0.7
+        }
+        modifier = {
+            factor = 5
+            has_job = BA_pyroxenes_maker
+        }
+    }
+}
+
+### 制造机维护员
+#基础：1制造石 -> 12海军容量 10宜居度
+BA_keystone_maintenance_staff = {
+    category = specialist
+    condition_string = SPECIALIST_JOB_TRIGGER
+    #building_icon = building_BA_pyroxenes
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    possible_precalc = can_fill_specialist_job
+    possible = {
+        is_kivotos = yes
+    }
+    resources = {
+        category = planet_metallurgists
+        produces = {
+            alloys = 2
+            consumer_goods = 2
+        }
+        upkeep = {
+            minerals = 3
+            sr_keystone = 1
+        }
+    }
+    planet_modifier = {
+        planet_amenities_add = 5
+    }
+    weight = {
+        weight = @specialist_job_weight
+        modifier = {
+            factor = 5
+            has_job = BA_keystone_maintenance_staff
+        }
+    }
+}
+
+### 被献祭
+#基础：
+BA_oblation = {
+    icon = purge
+    category = purge
+    #purge = purge_Sacrifice
+    is_capped_by_modifier = no
+    ignores_sapience = yes
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = yes
+    }
+    possible = {
+        is_kivotos = no
+    }
+    resources = {
+        category = planet_jobs
+        produces = {
+            alloys = 2
+            sr_keystone = 1
+        }
+        upkeep = {
+            food = 1
+        }
+    }
+    weight = {
+        weight = 0
+        modifier = {
+            owner = {
+                has_policy_flag = BA_Arius_Guise_lifted
+            }
+            set = 100000
+        }
+    }
+}
+
+### 先驱自警团
+BA_fe_defender = {
+    category = precursor
+    icon = BA_Vigilant_crew
+    is_capped_by_modifier = yes
+    possible_pre_triggers = {
+        has_owner = yes
+        is_sapient = yes
+    }
+    possible = {
+        owner = {
+            is_fallen_empire = yes
+            has_authority = auth_kivotos_pr
+        }
+        is_same_species = owner
+    }
+    pop_modifier = {
+        pop_defense_armies_add = 10
+    }
+    country_modifier = {
+        country_naval_cap_add = 150
+    }
+    weight = {
+        weight = 30000
+        modifier = {
+            factor = 5
+            has_job = BA_fe_defender
+        }
+    }
+}
+
+### 先驱志愿者
+BA_fe_volunteers = {
+    category = precursor
+    icon = BA_club_members
+    is_capped_by_modifier = no
+    possible_pre_triggers = {
+        has_owner = yes
+        is_sapient = yes
+    }
+    possible = {
+        owner = {
+            is_fallen_empire = yes
+            has_authority = auth_kivotos_pr
+        }
+        is_same_species = owner
+    }
+    resources = {
+        category = planet_researchers
+        produces = {
+            energy = 1200
+            minerals = 800
+            food = 1200
+            consumer_goods = 600
+            alloys = 300
+            sr_keystone = 100
+            physics_research = 150
+            society_research = 150
+            engineering_research = 150
+            unity = 150
+        }
+    }
+    weight = {
+        weight = 10000
+        modifier = {
+            set = 10
+            OR = {
+                has_job = fe_overseer
+                has_job = fe_protector
+                has_job = BA_fe_defender
+            }
+        }
+    }
+}
+
+### 清扫难民
+BA_Sweeper_refugees = {
+    icon = fe_hedonist
+    category = sweeper_pop
+    is_capped_by_modifier = no
+    possible_pre_triggers = {
+        has_owner = yes
+        is_sapient = yes
+    }
+    possible = {
+        planet = {
+            exists = owner
+            planet = {
+                has_planet_flag = BA_Planet_sweeped
+            }
+        }
+        owner = {
+            NOT = {
+                has_authority = auth_kivotos
+            }
+        }
+    }
+    weight = {
+        base = 80000
+    }
+}
+
+### 虚妄圣库姆特
+BA_Unnamed_enemy = {
+
+}

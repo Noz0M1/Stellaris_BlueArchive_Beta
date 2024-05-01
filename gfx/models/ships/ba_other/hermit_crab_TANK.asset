@@ -1,0 +1,15 @@
+entity = {
+	name = "hermit_crab_TANK_entity"
+	pdxmesh = "hermit_crab_TANK_mesh"
+	attach = {
+		root = "hermit_crab_entity"
+	}
+}
+entity = {
+	name = "hermit_crab_entity"
+	pdxmesh = "hermit_crab_mesh"
+}
+entity = {
+	name = "iroha_ball_entity"
+	pdxmesh = "iroha_ball_mesh"
+}

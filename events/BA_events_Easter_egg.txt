@@ -1,0 +1,411 @@
+namespace = BA_Easter_egg
+######    定时触发器    ######
+country_event = {
+	id = BA_Easter_egg.9999
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_authority = auth_kivotos
+	}
+	immediate = {
+		### 群友菜单
+		#MiAzusa
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = EasterEgg_MiAzusa
+				}
+				any_owned_leader = {
+					has_skill >= 5
+					OR = {
+						has_leader_flag = leader_BA_011
+						has_leader_flag = leader_BA_019
+						has_leader_flag = leader_BA_033
+						has_leader_flag = leader_BA_039
+						has_leader_flag = leader_BA_040
+						has_leader_flag = leader_BA_044
+						has_leader_flag = leader_BA_081
+						has_leader_flag = leader_BA_084
+						has_leader_flag = leader_BA_085
+						has_leader_flag = leader_BA_089
+						has_leader_flag = leader_BA_112
+						has_leader_flag = leader_BA_129
+						has_leader_flag = leader_BA_151
+						has_leader_flag = leader_BA_194
+						has_leader_flag = leader_BA_206
+						has_leader_flag = leader_BA_220
+						has_leader_flag = leader_BA_221
+						has_leader_flag = leader_BA_222
+						has_leader_flag = leader_BA_226
+						has_leader_flag = leader_BA_234
+						has_leader_flag = leader_BA_239
+					}
+				}
+			}
+			random = {
+				chance = 99
+				country_event = {
+					id = BA_Easter_egg.0001
+					random = 25
+				}
+			}
+		}
+	}
+}
+
+######     群友彩蛋     ######
+### MiAzusa
+country_event = {
+	id = BA_Easter_egg.0001
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		NOT = {
+			has_country_flag = EasterEgg_MiAzusa
+		}
+	}
+	immediate = {
+		set_country_flag = EasterEgg_MiAzusa
+		random_owned_leader = {
+			limit = {
+				has_skill >= 5
+				OR = {
+					has_leader_flag = leader_BA_011
+					has_leader_flag = leader_BA_019
+					has_leader_flag = leader_BA_033
+					has_leader_flag = leader_BA_039
+					has_leader_flag = leader_BA_040
+					has_leader_flag = leader_BA_044
+					has_leader_flag = leader_BA_081
+					has_leader_flag = leader_BA_084
+					has_leader_flag = leader_BA_085
+					has_leader_flag = leader_BA_089
+					has_leader_flag = leader_BA_112
+					has_leader_flag = leader_BA_129
+					has_leader_flag = leader_BA_151
+					has_leader_flag = leader_BA_194
+					has_leader_flag = leader_BA_206
+					has_leader_flag = leader_BA_220
+					has_leader_flag = leader_BA_221
+					has_leader_flag = leader_BA_222
+					has_leader_flag = leader_BA_226
+					has_leader_flag = leader_BA_234
+					has_leader_flag = leader_BA_239
+				}
+			}
+			leader_event = {
+				id = BA_Easter_egg.0002
+			}
+		}
+	}
+}
+
+leader_event = {
+	id = BA_Easter_egg.0002
+	is_triggered_only = yes
+	title = BA_Easter_egg.0002.title
+	desc = BA_Easter_egg.0002.desc
+	picture = GFX_BA_Azusa_in_Trinity
+	option = {
+		name = BA_Easter_egg.0002.a
+	}
+	option = {
+		name = BA_Easter_egg.0002.b
+	}
+	after = {
+		custom_tooltip =  BA_Easter_egg.0002.tip
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = BA_Easter_egg.0003
+					days = 15
+				}
+				add_resource = {
+					unity = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_Easter_egg.0003
+	is_triggered_only = yes
+	title = BA_Easter_egg.0003.title
+	desc = BA_Easter_egg.0003.desc
+	picture = GFX_BA_Azusa_in_Trinity
+	option = {
+		name = BA_Easter_egg.0003.a
+	}
+	option = {
+		name = BA_Easter_egg.0003.b
+	}
+	after = {
+		custom_tooltip =  BA_Easter_egg.0003.tip
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = BA_Easter_egg.0004
+					days = 15
+				}
+				add_resource = {
+					unity = 2
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_Easter_egg.0004
+	is_triggered_only = yes
+	title = BA_Easter_egg.0004.title
+	desc = BA_Easter_egg.0004.desc
+	picture = GFX_BA_Azusa_in_Trinity
+	option = {
+		name = BA_Easter_egg.0004.a
+	}
+	option = {
+		name = BA_Easter_egg.0004.b
+	}
+	after = {
+		add_modifier = {
+			modifier = modifier_EasterEgg_MiAzusa
+		}
+	}
+}
+
+### 白石透
+country_event = {
+	id = BA_Easter_egg.0010
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		NOT = {
+			has_country_flag = EasterEgg_Zombie
+		}
+	}
+	immediate = {
+		set_country_flag = EasterEgg_Zombie
+		add_resource = {
+			energy = -1000
+		}
+		country_event = {
+			id = BA_Easter_egg.0011
+			days = 90
+		}
+	}
+}
+
+country_event = {
+	id = BA_Easter_egg.0011
+	is_triggered_only = yes
+	title =  BA_Easter_egg.0011.title
+	desc = BA_Easter_egg.0011.desc
+	trigger = {
+		has_modifier = modifier_BA_Aris_in_matrix
+		any_owned_planet = {
+			has_deposit = d_black_market
+		}
+	}
+	option = {
+		name = BA_Easter_egg.0011.a
+		custom_tooltip = BA_Easter_egg.0011.a.tip
+		country_event = {
+			id = BA_Easter_egg.0012
+			days = 30
+		}
+	}
+	option = {
+		name = BA_Easter_egg.0011.b
+		custom_tooltip = BA_Easter_egg.0011.b.tip
+	}
+}
+
+country_event = {
+	id = BA_Easter_egg.0012
+	is_triggered_only = yes
+	title = BA_Easter_egg.0012.title
+	desc = BA_Easter_egg.0012.desc
+	option = {
+		name = BA_Easter_egg.0012.a
+		country_event = {
+			id = BA_Easter_egg.0013
+			days = 3
+		}
+	}
+}
+
+country_event = {
+	id = BA_Easter_egg.0013
+	is_triggered_only = yes
+	title = BA_Easter_egg.0013.title
+	desc = BA_Easter_egg.0013.desc
+	option = {
+		name = BA_Easter_egg.0013.a
+		country_event = {
+			id = BA_Easter_egg.0014
+			days = 3
+		}
+	}
+}
+
+country_event = {
+	id = BA_Easter_egg.0014
+	is_triggered_only = yes
+	title = BA_Easter_egg.0014.title
+	desc = BA_Easter_egg.0014.desc
+	option = {
+		name = BA_Easter_egg.0014.a
+		country_event = {
+			id = BA_Easter_egg.0015
+			days = 30
+		}
+	}
+}
+
+country_event = {
+	id = BA_Easter_egg.0015
+	is_triggered_only = yes
+	title = BA_Easter_egg.0015.title
+	desc = BA_Easter_egg.0015.desc
+	option = {
+		name = BA_Easter_egg.0015.a
+		set_country_flag = BA_bitcoin_yamero
+		hidden_effect = {
+			BA_remove_Aris = yes
+			BA_Aris_SP = {
+				class = scientist
+			}
+		}
+	}
+}
+
+######     其他彩蛋     ######
+### 超天酱
+fleet_event = {
+	id = BA_Easter_egg.8001
+	title = BA_Easter_egg_Angel_arc_site_title_RAID01
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = BA_Easter_egg_Angel_arc_site_desc_RAID01
+	}
+	option = {
+		name = BA_Easter_egg_Angel_arc_site_option_RAID01
+	}
+}
+
+fleet_event = {
+	id = BA_Easter_egg.8002
+	title = BA_Easter_egg_Angel_arc_site_title_RAID02
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = BA_Easter_egg_Angel_arc_site_desc_RAID02
+	}
+	option = {
+		name = BA_Easter_egg_Angel_arc_site_option_RAID02
+	}
+}
+
+fleet_event = {
+	id = BA_Easter_egg.8003
+	title = BA_Easter_egg_Angel_arc_site_title_RAID03
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = BA_Easter_egg_Angel_arc_site_desc_RAID03
+	}
+	option = {
+		name = BA_Easter_egg_Angel_arc_site_option_RAID03
+	}
+}
+
+fleet_event = {
+	id = BA_Easter_egg.8001
+	title = BA_Easter_egg_Angel_arc_site_title_RAID04
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = BA_Easter_egg_Angel_arc_site_desc_RAID04
+	}
+	option = {
+		name = BA_Easter_egg_Angel_arc_site_option_RAID04
+	}
+}
+
+fleet_event = {
+	id = BA_Easter_egg.8001
+	title = BA_Easter_egg_Angel_arc_site_title_RAID05
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = BA_Easter_egg_Angel_arc_site_desc_RAID05
+	}
+	option = {
+		name = BA_Easter_egg_Angel_arc_site_option_RAID05
+	}
+}
+
+

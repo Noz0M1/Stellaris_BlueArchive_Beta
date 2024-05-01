@@ -1,0 +1,34 @@
+#对策委员会-优化决策
+option = {
+    name = Foreclosure_task_force_decisions
+    custom_tooltip = Foreclosure_task_force_decisions.tip
+    response_text = Foreclosure_task_force_decisions.$CHARA$RE
+    allow = {
+        custom_tooltip = {
+            text = BA_club_favor_fail
+            check_variable = {
+                which = Foreclosure_task_force
+                value >= 40
+            }
+        }
+        custom_tooltip = {
+            fail_text = taskforce_not_finished
+            NOT = {
+                has_country_flag = BA_Foreclosure_decisions_ready
+            }
+        }
+        custom_tooltip = {
+            fail_text = taskforce_cooldown
+            NOT = {
+                has_country_flag = BA_Foreclosure_decisions_cooldown
+            }
+        }
+    }
+    hidden_effect = {
+        set_country_flag = BA_Foreclosure_decisions_ready
+        set_timed_country_flag = {
+            flag = BA_Foreclosure_decisions_cooldown
+            days = 180
+        }
+    }
+}

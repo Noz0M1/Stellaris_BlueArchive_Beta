@@ -1,0 +1,147 @@
+namespace = BA_rename
+################
+#开局触发器
+country_event = {
+	id = BA_rename.1000
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		country_event = {
+			id = BA_rename.1001
+			days = 28
+		}
+	}
+}
+
+#开关
+country_event = {
+	id = BA_rename.1001
+	is_triggered_only = yes
+	title = BA_rename.1001.title
+	desc = BA_rename.1001.desc
+	picture = GFX_BA_Azusa_in_Trinity
+	fire_only_once = yes
+	trigger = {
+		is_country_type = default
+		is_ai = no
+		any_country = {
+			has_authority = auth_kivotos
+		}
+	}
+	option = {
+		name = BA_rename.1001.on
+		custom_tooltip = BA_rename.1001.on.tip
+		default_hide_option = yes
+		hidden_effect = {
+			set_global_flag = BA_leader_rename_activated
+			set_global_flag = BA_leader_rename_trait_activated
+		}
+	}
+	option = {
+		name = BA_rename.1001.partial
+		custom_tooltip = BA_rename.1001.partial.tip
+		hidden_effect = {
+			set_global_flag = BA_leader_rename_activated
+		}
+	}
+	option = {
+		name = BA_rename.1001.off
+	}
+	after = {
+		hidden_effect = {
+			every_country = {
+				country_event = {
+					id = BA_rename.1002
+					days = 5
+				}
+			}
+		}
+	}
+}
+
+#周期性处理触发器
+country_event = {
+	id = BA_rename.1002
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_authority = auth_kivotos
+		has_global_flag = BA_leader_rename_activated
+	}
+	immediate = {
+		BA_set_rename_flag = yes
+		BA_iterate_rename_flag = yes
+	}
+}
+
+#处理 新生成入池的领袖
+country_event = {
+	id = BA_rename.1003
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_country_flag = BA_leader_rename_activated
+		from = {
+			species = {
+				BA_has_halo_organic = yes
+			}
+		}
+	}
+	immediate = {
+		from = {
+			#检查命名标志
+			BA_check_rename_flag = yes
+			#按命名标志命名
+			BA_rename_leader = yes
+		}
+	}
+}
+
+#领袖3级添加特质
+country_event = {
+	id = BA_rename.1101
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_global_flag = BA_leader_rename_trait_activated
+	}
+	immediate = {
+		while = {
+			limit = {
+				any_owned_leader = {
+					BA_rename_special_check_1 = yes
+				}
+			}
+			random_owned_leader = {
+				limit = {
+					BA_rename_special_check_1 = yes
+				}
+				BA_add_special_trait = yes
+				change_variable = {
+					which = AAAAA
+					value = 1
+				}
+			}
+		}
+		#add_modifier = {
+		#	modifier = modifier_BA_testing
+		#}
+	}
+}
+
+leader_event = {
+	id = BA_rename.1102
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_skill >= 3
+		species = {
+			BA_has_halo_organic = yes
+		}
+		NOT = {
+			has_leader_flag = BA_SP_trait_Lv1
+		}
+	}
+	immediate = {
+	}
+}

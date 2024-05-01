@@ -1,0 +1,208 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Brute_Original_Weapon_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/Brute_Original_Weapon.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Brute_WeaponShape"
+			index = 0
+			texture_diffuse = "titan_rocket_launcher.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "TTF_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Brute_WeaponShape"
+			index = 1
+			texture_diffuse = "titan_quad_rocket.dds"
+			texture_normal = "titan_quad_rocket_normal.dds"
+			texture_specular = "TTF_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Brute_WeaponShape"
+			index = 2
+			texture_diffuse = "titan_quad_rocket_optic_camera.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "TTF_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+	}
+
+	pdxmesh = {
+		name = "Ion_Original_Weapon_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/Ion_Original_Weapon.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Ion_WeaponShape"
+			index = 0
+			texture_diffuse = "titan_particle_accelerator.dds"
+			texture_normal = "titan_particle_accelerator_normal.dds"
+			texture_specular = "TTF_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Ion_Weapon_01Shape"
+			index = 0
+			texture_diffuse = "titan_close_range_advanced_optics.dds"
+			texture_normal = "titan_close_range_advanced_optics_normal.dds"
+			texture_specular = "TTF_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "Legion_Original_Weapon_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/Legion_Original_Weapon.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Legion_WeaponShape"
+			index = 0
+			texture_diffuse = "predator_titan.dds"
+			texture_normal = "predator_titan_normal.dds"
+			texture_specular = "TTF_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Legion_Weapon_02Shape"
+			index = 0
+			texture_diffuse = "predator_belt.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "TTF_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Legion_Weapon_03Shape"
+			index = 0
+			texture_diffuse = "cwos_attachment.dds"
+			texture_normal = "cwos_attachment_normal.dds"
+			texture_specular = "TTF_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "Monarch_Original_Weapon_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/Monarch_Original_Weapon.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Monarch_WeaponShape"
+			index = 0
+			texture_diffuse = "xo16_shorty_titan.dds"
+			texture_normal = "xo16_shorty_titan_normal.dds"
+			texture_specular = "TTF_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Monarch_Weapon_01Shape"
+			index = 0
+			texture_diffuse = "titan_close_range_advanced_optics.dds"
+			texture_normal = "titan_close_range_advanced_optics_normal.dds"
+			texture_specular = "TTF_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "Northstar_Original_Weapon_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/Northstar_Original_Weapon.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Northstar_WeaponShape"
+			index = 0
+			texture_diffuse = "plasma_railgun.dds"
+			texture_normal = "plasma_railgun_normal.dds"
+			texture_specular = "TTF_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "Ronin_Original_Weapon_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/Ronin_Original_Weapon.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Ronin_WeaponShape"
+			index = 0
+			texture_diffuse = "triple_threat.dds"
+			texture_normal = "triple_threat_normal.dds"
+			texture_specular = "TTF_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Ronin_Weapon_02Shape"
+			index = 0
+			texture_diffuse = "triple_threat_titan.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "TTF_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "Scorch_Original_Weapon_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/Scorch_Original_Weapon.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Scorch_WeaponShape"
+			index = 0
+			texture_diffuse = "thermite_launcher.dds"
+			texture_normal = "thermite_launcher_normal.dds"
+			texture_specular = "TTF_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "Tone_Original_Weapon_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/Tone_Original_Weapon.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Tone_WeaponShape"
+			index = 0
+			texture_diffuse = "titan_40mm.dds"
+			texture_normal = "titan_40mm_normal.dds"
+			texture_specular = "TTF_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Tone_Weapon_02Shape"
+			index = 0
+			texture_diffuse = "titan_40mm_optic.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "TTF_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "Arc_Original_Weapon_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/Arc_Original_Weapon.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Arc_WeaponShape"
+			index = 0
+			texture_diffuse = "titan_arc_rifle_col.dds"
+			texture_normal = "titan_arc_rifle_nml.dds"
+			texture_specular = "TTF_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

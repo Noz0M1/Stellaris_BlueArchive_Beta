@@ -1,0 +1,1266 @@
+#UI
+defined_text = {
+	name = GetShittemDesc
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = GetShittemDesc.common.01
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = GetShittemDesc.common.02
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = GetShittemDesc.common.03
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = GetShittemDesc.common.04
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = GetShittemDesc.common.05
+	}
+}
+
+defined_text = {
+	name = GetPyroxenesSign
+	random = no
+	text = {
+		trigger = {
+			has_country_flag = BA_negative_pyroxenes
+		}
+		localization_key = BA_Shittem_minus_pyroxenes
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = BA_Shittem_plus_pyroxenes
+	}
+}
+
+defined_text = {
+	name = GetKeystoneSign
+	random = no
+	text = {
+		trigger = {
+			has_country_flag = BA_negative_keystone
+		}
+		localization_key = BA_Shittem_minus_keystone
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = BA_Shittem_plus_keystone
+	}
+}
+
+defined_text = {
+	name = GetRatherPlanetRebuilded
+	text = {
+		trigger = {
+			has_country_flag = BA_Planet_rebuilded
+		}
+		localization_key = BA_Rebuild_a_planet_YES
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = BA_Planet_rebuilded
+			}
+		}
+		localization_key = BA_Rebuild_a_planet_NO
+	}
+}
+
+defined_text = {
+	name = GetRatherTraditionFinished
+	text = {
+		trigger = {
+			has_country_flag = BA_tr_kivotos_finished
+		}
+		localization_key = BA_tr_kivotos_finished_YES
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = BA_tr_kivotos_finished
+			}
+		}
+		localization_key = BA_tr_kivotos_finished_NO
+	}
+}
+
+defined_text = {
+	name = GetPulanaDesc
+	random = no
+	text = {
+		localization_key = BlueArchivePulanaDesc0
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 0
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc1
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 1
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc2
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 2
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc3
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 3
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc4
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 4
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc5
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 5
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc6
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 6
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc7
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 7
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc8
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 8
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc9
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 9
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc10
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 10
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc11
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 11
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc12
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 12
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc13
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 13
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc14
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 14
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc15
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 15
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc16
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 16
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc17
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 17
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc18
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 18
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc19
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 19
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc20
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 20
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc21
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 21
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc22
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 22
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc23
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 23
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaDesc24
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 24
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetAronaDesc
+	random = no
+	text = {
+		localization_key = BlueArchiveAronaDesc0
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 0
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc1
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 1
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc2
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 2
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc3
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 3
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc4
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 4
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc5
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 5
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc6
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 6
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc7
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 7
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc8
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 8
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc9
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 9
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc10
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 10
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc11
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 11
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc12
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 12
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc13
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 13
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc14
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 14
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc15
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 15
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc16
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 16
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc17
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 17
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc18
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 18
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc19
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 19
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc20
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 20
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc21
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 21
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc22
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 22
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc23
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 23
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaDesc24
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 24
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetPulanaClubDesc
+	random = no
+	text = {
+		localization_key = BlueArchivePulanaClubDesc0
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 0
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc1
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 1
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc2
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 2
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc3
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 3
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc4
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 4
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc5
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 5
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc6
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 6
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc7
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 7
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc8
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 8
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc9
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 9
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc10
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 10
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc11
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 11
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc12
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 12
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc13
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 13
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc14
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 14
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc15
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 15
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc16
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 16
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc17
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 17
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc18
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 18
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc19
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 19
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc20
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 20
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc21
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 21
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc22
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 22
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc23
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 23
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchivePulanaClubDesc24
+		trigger = {
+			check_variable = {
+				which = BA_Pulana_serial
+				value = 24
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetAronaClubDesc
+	random = no
+	text = {
+		localization_key = BlueArchiveAronaClubDesc0
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 0
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc1
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 1
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc2
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 2
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc3
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 3
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc4
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 4
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc5
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 5
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc6
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 6
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc7
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 7
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc8
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 8
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc9
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 9
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc10
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 10
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc11
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 11
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc12
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 12
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc13
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 13
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc14
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 14
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc15
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 15
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc16
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 16
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc17
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 17
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc18
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 18
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc19
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 19
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc20
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 20
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc21
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 21
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc22
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 22
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc23
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 23
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveAronaClubDesc24
+		trigger = {
+			check_variable = {
+				which = BA_Arona_serial
+				value = 24
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetGameDevDepDesc
+	text = {
+		localization_key = BlueArchiveGameDevDepDesc0
+		trigger = {
+			check_variable = {
+				which = BA_game_development_department_serial
+				value = 0
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveGameDevDepDesc1
+		trigger = {
+			check_variable = {
+				which = BA_game_development_department_serial
+				value = 1
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveGameDevDepDesc2
+		trigger = {
+			check_variable = {
+				which = BA_game_development_department_serial
+				value = 2
+			}
+		}
+	}
+	text = {
+		localization_key = BlueArchiveGameDevDepDesc3
+		trigger = {
+			check_variable = {
+				which = BA_game_development_department_serial
+				value = 3
+			}
+		}
+	}
+}
+
+#领袖
+defined_text = {
+	name = GetArisSPDesc
+	text = {
+		trigger = {
+			leader_class = scientist
+		}
+		localization_key = leader_trait_scientist_aris_SP_desc
+	}
+	text = {
+		trigger = {
+			leader_class = official
+		}
+		localization_key = leader_trait_official_aris_SP_desc
+	}
+	text = {
+		trigger = {
+			leader_class = commander
+		}
+		localization_key = leader_trait_commander_aris_SP_desc
+	}
+}
+
+#查询天灾
+defined_text = {
+	name = GetBACrisisLevel
+	text = {
+		trigger = {
+			has_global_flag = BA_Crisis_Insane
+		}
+		localization_key = LEVEL_Insane
+	}
+	text = {
+		trigger = {
+			has_global_flag = BA_Crisis_Extreme
+		}
+		localization_key = LEVEL_Veryhard
+	}
+	text = {
+		trigger = {
+			has_global_flag = BA_Crisis_Hardcore
+		}
+		localization_key = LEVEL_Hardcore
+	}
+	text = {
+		trigger = {
+			has_global_flag = BA_Crisis_Normal
+		}
+		localization_key = LEVEL_Normal
+	}
+}
+
+#障碍
+defined_text = {
+	name = GetDescAbydos
+	text = {
+		trigger = {
+			capital_scope = {
+				is_planet_class = pc_BA_campus_planet
+			}
+		}
+		localization_key = d_broken_Abydos_school_desc_campus
+	}
+	text = {
+		trigger = {
+			capital_scope = {
+				is_planet_class = pc_BA_ruined_planet
+			}
+		}
+		localization_key = d_broken_Abydos_school_desc_ruined
+	}
+}
+
+defined_text = {
+	name = GetDescMillennium
+	text = {
+		trigger = {
+			capital_scope = {
+				is_planet_class = pc_BA_campus_planet
+			}
+		}
+		localization_key = d_broken_Millennium_school_desc_campus
+	}
+	text = {
+		trigger = {
+			capital_scope = {
+				is_planet_class = pc_BA_ruined_planet
+			}
+		}
+		localization_key = d_broken_Millennium_school_desc_ruined
+	}
+}
+
+defined_text = {
+	name = GetDescTrinity
+	text = {
+		trigger = {
+			capital_scope = {
+				is_planet_class = pc_BA_campus_planet
+			}
+		}
+		localization_key = d_broken_Trinity_school_desc_campus
+	}
+	text = {
+		trigger = {
+			capital_scope = {
+				is_planet_class = pc_BA_ruined_planet
+			}
+		}
+		localization_key = d_broken_Trinity_school_desc_ruined
+	}
+}
+
+defined_text = {
+	name = GetDescGehenna
+	text = {
+		trigger = {
+			capital_scope = {
+				is_planet_class = pc_BA_campus_planet
+			}
+		}
+		localization_key = d_broken_Gehenna_school_desc_campus
+	}
+	text = {
+		trigger = {
+			capital_scope = {
+				is_planet_class = pc_BA_ruined_planet
+			}
+		}
+		localization_key = d_broken_Gehenna_school_desc_ruined
+	}
+}
+
+defined_text = {
+	name = GetDescPower
+	text = {
+		trigger = {
+			capital_scope = {
+				is_planet_class = pc_BA_campus_planet
+			}
+		}
+		localization_key = d_broken_power_station_desc_campus
+	}
+	text = {
+		trigger = {
+			capital_scope = {
+				is_planet_class = pc_BA_ruined_planet
+			}
+		}
+		localization_key = d_broken_power_station_desc_ruined
+	}
+}
+
+defined_text = {
+	name = GetDescMine
+	text = {
+		trigger = {
+			capital_scope = {
+				is_planet_class = pc_BA_campus_planet
+			}
+		}
+		localization_key = d_broken_desert_mine_desc_campus
+	}
+	text = {
+		trigger = {
+			capital_scope = {
+				is_planet_class = pc_BA_ruined_planet
+			}
+		}
+		localization_key = d_broken_desert_mine_desc_ruined
+	}
+}
+
+#社团舰升级
+defined_text = {
+	name = GetClubshipUpgrade
+	text = {
+		trigger = {
+			has_country_flag = BA_Club_ship_upgrade_0
+		}
+		localization_key = club_colonize_Lv1
+	}
+	text = {
+		trigger = {
+			has_country_flag = BA_Club_ship_upgrade_1
+		}
+		localization_key = club_colonize_Lv2
+	}
+	text = {
+		trigger = {
+			has_country_flag = BA_Club_ship_upgrade_2
+		}
+		localization_key = club_colonize_Lv3
+	}
+	text = {
+		trigger = {
+			has_country_flag = BA_Club_ship_upgrade_3
+		}
+		localization_key = BLANK_TEXT
+	}
+}

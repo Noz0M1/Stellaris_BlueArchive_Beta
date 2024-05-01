@@ -1,0 +1,87 @@
+entity = {
+	name = "bacolorized_01_mega_art_institution_stage_1_entity"
+	pdxmesh = "mega_art_institution_01_stage_1_mesh"
+	
+		meshsettings = {
+			name = "polySurface15Shape"
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_mega_art_institution_normal.dds"
+			texture_specular = "ba_01_mega_art_institution_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.7 
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
+	}
+	
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+	
+		game_data = {
+			emissive_recolor_crunch = 2.0
+		}	
+}
+
+entity = {
+	name = "bacolorized_01_mega_art_institution_stage_2_entity"
+	pdxmesh = "mega_art_institution_01_stage_2_mesh"
+	
+		meshsettings = {
+			name = "polySurface13Shape"
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_mega_art_institution_normal.dds"
+			texture_specular = "ba_01_mega_art_institution_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.7 
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
+	}
+	
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+		
+		game_data = {
+			emissive_recolor_crunch = 2.0
+		}	
+}
+
+entity = {
+	name = "bacolorized_01_mega_art_institution_stage_3_entity"
+	pdxmesh = "mega_art_institution_01_stage_3_mesh"
+	
+		meshsettings = {
+			name = "g_bodyShape"
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_mega_art_institution_normal.dds"
+			texture_specular = "ba_01_mega_art_institution_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.7 
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part2" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part3" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_glitches" } }
+	}
+	
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+	attach = { part2_upper = "mega_art_fountain_splash_entity" }
+	attach = { part3_upper = "mega_art_fountain_splash_entity" }
+	
+		game_data = {
+			emissive_recolor_crunch = 2.0
+		}	
+}

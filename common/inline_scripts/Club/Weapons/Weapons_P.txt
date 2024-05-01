@@ -1,0 +1,269 @@
+option = {
+	name = FUUKA_WEAPON_DESC1
+	add_research_option = tech_BA_SPW_FUUKA_WEAPON
+	hidden_effect = {
+		change_variable = {
+			which = BA_Weapon_P
+			value = -1
+		}
+	}
+	BA_Engineering_club_weapon_develop_clear = yes
+	trigger = {
+		NOT = {
+			has_tech_option = tech_BA_SPW_FUUKA_WEAPON
+		}
+		has_country_flag = Engineering_club_FUUKA_WEAPON
+	}
+}
+
+option = {
+	name = YUUKA_WEAPON_DESC1
+	add_research_option = tech_BA_SPW_YUUKA_WEAPON
+	hidden_effect = {
+		change_variable = {
+			which = BA_Weapon_P
+			value = -1
+		}
+	}
+	BA_Engineering_club_weapon_develop_clear = yes
+	trigger = {
+		NOT = {
+			has_tech_option = tech_BA_SPW_YUUKA_WEAPON
+		}
+		has_country_flag = Engineering_club_YUUKA_WEAPON
+	}
+}
+
+option = {
+	name = NERU_WEAPON_DESC1
+	add_research_option = tech_BA_SPW_NERU_WEAPON
+	hidden_effect = {
+		change_variable = {
+			which = BA_Weapon_P
+			value = -1
+		}
+	}
+	BA_Engineering_club_weapon_develop_clear = yes
+	trigger = {
+		NOT = {
+			has_tech_option = tech_BA_SPW_NERU_WEAPON
+		}
+		has_country_flag = Engineering_club_NERU_WEAPON
+	}
+}
+
+option = {
+	name = UTAHA_WEAPON_DESC1
+	add_research_option = tech_BA_SPW_UTAHA_WEAPON
+	hidden_effect = {
+		change_variable = {
+			which = BA_Weapon_P
+			value = -1
+		}
+	}
+	BA_Engineering_club_weapon_develop_clear = yes
+	trigger = {
+		NOT = {
+			has_tech_option = tech_BA_SPW_UTAHA_WEAPON
+		}
+		has_country_flag = Engineering_club_UTAHA_WEAPON
+	}
+}
+
+option = {
+	name = AIRI_WEAPON_DESC1
+	add_research_option = tech_BA_SPW_AIRI_WEAPON
+	hidden_effect = {
+		change_variable = {
+			which = BA_Weapon_P
+			value = -1
+		}
+	}
+	BA_Engineering_club_weapon_develop_clear = yes
+	trigger = {
+		NOT = {
+			has_tech_option = tech_BA_SPW_AIRI_WEAPON
+		}
+		has_country_flag = Engineering_club_AIRI_WEAPON
+	}
+}
+
+option = {
+	name = NATSU_WEAPON_DESC1
+	add_research_option = tech_BA_SPW_NATSU_WEAPON
+	hidden_effect = {
+		change_variable = {
+			which = BA_Weapon_P
+			value = -1
+		}
+	}
+	BA_Engineering_club_weapon_develop_clear = yes
+	trigger = {
+		NOT = {
+			has_tech_option = tech_BA_SPW_NATSU_WEAPON
+		}
+		has_country_flag = Engineering_club_NATSU_WEAPON
+	}
+}
+
+option = {
+	name = MIKA_WEAPON_DESC1
+	add_research_option = tech_BA_SPW_MIKA_WEAPON
+	hidden_effect = {
+		change_variable = {
+			which = BA_Weapon_P
+			value = -1
+		}
+	}
+	BA_Engineering_club_weapon_develop_clear = yes
+	trigger = {
+		NOT = {
+			has_tech_option = tech_BA_SPW_MIKA_WEAPON
+		}
+		has_country_flag = Engineering_club_MIKA_WEAPON
+	}
+}
+
+option = {
+	name = TSUBAKI_WEAPON_DESC1
+	add_research_option = tech_BA_SPW_TSUBAKI_WEAPON
+	hidden_effect = {
+		change_variable = {
+			which = BA_Weapon_P
+			value = -1
+		}
+	}
+	BA_Engineering_club_weapon_develop_clear = yes
+	trigger = {
+		NOT = {
+			has_tech_option = tech_BA_SPW_TSUBAKI_WEAPON
+		}
+		has_country_flag = Engineering_club_TSUBAKI_WEAPON
+	}
+}
+
+option = {
+	name = IZUNA_WEAPON_DESC1
+	add_research_option = tech_BA_SPW_IZUNA_WEAPON
+	hidden_effect = {
+		change_variable = {
+			which = BA_Weapon_P
+			value = -1
+		}
+	}
+	BA_Engineering_club_weapon_develop_clear = yes
+	trigger = {
+		NOT = {
+			has_tech_option = tech_BA_SPW_IZUNA_WEAPON
+		}
+		has_country_flag = Engineering_club_IZUNA_WEAPON
+	}
+}
+
+option = {
+	name = TSUKUYO_WEAPON_DESC1
+	add_research_option = tech_BA_SPW_TSUKUYO_WEAPON
+	hidden_effect = {
+		change_variable = {
+			which = BA_Weapon_P
+			value = -1
+		}
+	}
+	BA_Engineering_club_weapon_develop_clear = yes
+	trigger = {
+		NOT = {
+			has_tech_option = tech_BA_SPW_TSUKUYO_WEAPON
+		}
+		has_country_flag = Engineering_club_TSUKUYO_WEAPON
+	}
+}
+
+option = {
+	name = NODOKA_WEAPON_DESC1
+	add_research_option = tech_BA_SPW_NODOKA_WEAPON
+	hidden_effect = {
+		change_variable = {
+			which = BA_Weapon_P
+			value = -1
+		}
+	}
+	BA_Engineering_club_weapon_develop_clear = yes
+	trigger = {
+		NOT = {
+			has_tech_option = tech_BA_SPW_NODOKA_WEAPON
+		}
+		has_country_flag = Engineering_club_NODOKA_WEAPON
+	}
+}
+
+option = {
+	name = MARINA_WEAPON_DESC1
+	add_research_option = tech_BA_SPW_MARINA_WEAPON
+	hidden_effect = {
+		change_variable = {
+			which = BA_Weapon_P
+			value = -1
+		}
+	}
+	BA_Engineering_club_weapon_develop_clear = yes
+	trigger = {
+		NOT = {
+			has_tech_option = tech_BA_SPW_MARINA_WEAPON
+		}
+		has_country_flag = Engineering_club_MARINA_WEAPON
+	}
+}
+
+option = {
+	name = MIYAKO_WEAPON_DESC1
+	add_research_option = tech_BA_SPW_MIYAKO_WEAPON
+	hidden_effect = {
+		change_variable = {
+			which = BA_Weapon_P
+			value = -1
+		}
+	}
+	BA_Engineering_club_weapon_develop_clear = yes
+	trigger = {
+		NOT = {
+			has_tech_option = tech_BA_SPW_MIYAKO_WEAPON
+		}
+		has_country_flag = Engineering_club_MIYAKO_WEAPON
+	}
+}
+
+option = {
+	name = ATSUKO_WEAPON_DESC1
+	add_research_option = tech_BA_SPW_ATSUKO_WEAPON
+	hidden_effect = {
+		change_variable = {
+			which = BA_Weapon_P
+			value = -1
+		}
+	}
+	BA_Engineering_club_weapon_develop_clear = yes
+	trigger = {
+		NOT = {
+			has_tech_option = tech_BA_SPW_ATSUKO_WEAPON
+		}
+		has_country_flag = Engineering_club_ATSUKO_WEAPON
+	}
+}
+
+option = {
+	name = RUMI_WEAPON_DESC1
+	add_research_option = tech_BA_SPW_RUMI_WEAPON
+	hidden_effect = {
+		change_variable = {
+			which = BA_Weapon_P
+			value = -1
+		}
+	}
+	BA_Engineering_club_weapon_develop_clear = yes
+	trigger = {
+		NOT = {
+			has_tech_option = tech_BA_SPW_RUMI_WEAPON
+		}
+		has_country_flag = Engineering_club_RUMI_WEAPON
+	}
+}

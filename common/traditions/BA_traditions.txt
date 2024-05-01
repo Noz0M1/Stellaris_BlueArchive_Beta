@@ -1,0 +1,219 @@
+##################
+##  基沃托斯传统
+##################
+# 激活：开采站产出+20%
+tr_kivotos_adopt = {
+	possible = {
+		has_authority = auth_kivotos
+	}
+	modifier = {
+		station_gatherers_produces_mult = 0.2
+	}
+	on_enabled = {
+		# hidden_effect = {
+		# 	country_event = {
+		# 		id = BA_ape.2002
+		# 	}
+		# }
+	}
+	ai_weight = {
+		weight = 10000
+	}
+}
+
+#完成：社团部员不再减少星球稳定度 飞升+1 （学园区划+1学生代表岗位    以后改到学园文化研究里面）
+tr_kivotos_finish = {
+	modifier = {
+		station_researchers_produces_mult = 0.2
+		ascension_perks_add = 1
+	}
+	on_enabled = {
+		set_country_flag = BA_tr_kivotos_finished
+	}
+	custom_tooltip = tr_kivotos_finish_desc
+}
+
+### 第一层
+#常时值日：社团部员—— 无 -> 1凝聚力
+tr_kivotos_daily_duty = {
+	possible = {
+	}
+	modifier = {
+		BA_club_pop_unity_produces_add = 1
+		BA_club_pop_consumer_goods_upkeep_add = 0.5
+	}
+	ai_weight = {
+		factor = 1000
+	}
+	#custom_tooltip = tr_kivotos_daily_duty_desc
+}
+
+#探寻神秘：社团部员—— 0.5消费品 -> 1*3科研点
+tr_kivotos_opaz = {
+	possible = {
+	}
+	modifier = {
+		BA_club_pop_physics_research_produces_add = 1
+		BA_club_pop_society_research_produces_add = 1
+		BA_club_pop_engineering_research_produces_add = 1
+		BA_club_pop_consumer_goods_upkeep_add = 0.5
+	}
+	ai_weight = {
+		factor = 1000
+	}
+	#custom_tooltip = tr_kivotos_opaz_desc
+}
+
+### 第二层
+#新型宿舍：自治区职员—— 无 -> 2舒适度
+tr_kivotos_newkind_dome = {
+	possible = {
+		has_tradition = tr_kivotos_daily_duty
+	}
+	modifier = {
+		#pop_housing_usage_mult = -0.05
+		#pop_amenities_usage_add = -0.05
+	}
+	ai_weight = {
+		factor = 1000
+	}
+	custom_tooltip = tr_kivotos_newkind_dome_desc
+}
+
+#学园军备：自警团会生成防御部队，并+2凝聚力
+tr_kivotos_student_arms = {
+	possible = {
+		has_tradition = tr_kivotos_daily_duty
+	}
+	modifier = {
+	}
+	ai_weight = {
+		factor = 1000
+	}
+	custom_tooltip = tr_kivotos_student_arms_desc
+}
+
+#太空补给：制造石冶金师—— 无 -> 8海军容量
+tr_kivotos_space_supplies = {
+	possible = {
+		has_tradition = tr_kivotos_opaz
+	}
+	modifier = {
+	}
+	ai_weight = {
+		factor = 1000
+	}
+	custom_tooltip = tr_kivotos_space_supplies_desc
+}
+
+##################
+##  光环觉醒路线
+##################
+#采纳：无效果
+tr_halo_awaken_adopt = {
+	possible = {
+		custom_tooltip = {
+			fail_text = tr_halo_awaken_adopt_tip
+			has_country_flag = BA_ape_1_finished
+		}
+	}
+	modifier = {
+	}
+	on_enabled = {
+	}
+	ai_weight = {
+		weight = 10000
+	}
+}
+
+#完成：完全觉醒光环 飞升+1
+tr_halo_awaken_finish = {
+	modifier = {
+		ascension_perks_add = 1
+	}
+	on_enabled = {
+		set_country_flag = BA_tr_halo_awaken_finished
+		country_event = {
+			id = BA_ape.1005
+			random = 30
+		}
+	}
+	custom_tooltip = tr_halo_awaken_finish_desc
+}
+
+### 左列
+#光辉：舰队护盾、装甲、船体+20%，防御平台上限+8
+tr_halo_awaken_luminous = {
+	possible = {
+	}
+	modifier = {
+		ship_armor_mult = 0.2
+		ship_shield_mult = 0.2
+		ship_hull_mult = 0.2
+		starbase_defense_platform_capacity_add = 8
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+#烈火：舰队武器伤害+15% 射速+15%；陆军伤害+50% 士气伤害+50%
+tr_halo_awaken_fertile = {
+	possible = {
+		has_tradition = tr_halo_awaken_luminous
+	}
+	modifier = {
+		ship_weapon_damage = 0.15
+		ship_fire_rate_mult = 0.15
+		army_damage_mult = 0.5
+		army_morale_damage_mult = 0.5
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+### 右列
+#雨露：住房使用-5% 自动安置几率+1000% 舒适度+20%
+tr_halo_awaken_drop = {
+	possible = {
+	}
+	modifier = {
+		planet_resettlement_unemployed_mult = 10
+		pop_housing_usage_mult = -0.05
+		planet_amenities_mult = 0.2
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+#风暴：研究速度+18% 舰队造速+30%
+tr_halo_awaken_predator = {
+	possible = {
+		has_tradition = tr_halo_awaken_drop
+	}
+	modifier = {
+		all_technology_research_speed = 0.18
+		starbase_shipyard_build_speed_mult = 0.3
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+### 底层
+#色彩：帝国规模-15% 巨构造速+35%
+tr_halo_awaken_color = {
+	possible = {
+		has_tradition = tr_halo_awaken_predator
+		has_tradition = tr_halo_awaken_fertile
+	}
+	modifier = {
+		empire_size_mult = -0.15
+		megastructure_build_speed_mult = 0.35
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}

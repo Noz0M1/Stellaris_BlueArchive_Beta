@@ -1,0 +1,98 @@
+objectTypes = {
+	pdxmesh = {
+		name = "PSrifle_Part1_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/PSrifle/PSrifle_Part1.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "PSrifle_PART_01Shape"
+			index = 0
+			texture_diffuse = "Stock_Base_color.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "PSrifle_Part2_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/PSrifle/PSrifle_Part2.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "PSrifle_PART_02Shape"
+			index = 0
+			texture_diffuse = "Rail_Base_color.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "PSrifle_Part3_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/PSrifle/PSrifle_Part3.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "PSrifle_PART_03Shape"
+			index = 0
+			texture_diffuse = "Body_Base_color.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "PSrifle_Part4_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/PSrifle/PSrifle_Part4.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "PSrifle_PART_04Shape"
+			index = 0
+			texture_diffuse = "Clip_Base_color.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "PSrifle_Part5_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/PSrifle/PSrifle_Part5.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "PSrifle_PART_05Shape"
+			index = 0
+			texture_diffuse = "Attachment_Base_color.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "PSrifle_Part6_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/PSrifle/PSrifle_Part6.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "PSrifle_PART_06Shape"
+			index = 0
+			texture_diffuse = "gun_sighting_telescope.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+	pdxmesh = {
+		name = "PSrifle_Part7_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/PSrifle/PSrifle_Part7.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "PSrifle_PART_07Shape"
+			index = 0
+			texture_diffuse = "Rail_Base_color.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

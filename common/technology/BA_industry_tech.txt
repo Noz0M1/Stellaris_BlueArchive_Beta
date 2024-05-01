@@ -1,0 +1,656 @@
+#### 工业科技
+#青辉石制造
+tech_BA_pyroxenes_crafting = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	is_rare = yes
+	category = {
+		voidcraft
+	}
+	weight = 0
+	potential = {
+		has_authority = auth_kivotos
+	}
+	# prerequisites = {
+	# 	"tech_BA_Shittem_starting"
+	# }
+}
+
+tech_BA_pyroxenes_industrial_crafting = {
+	area = engineering
+	cost = @tier4cost3
+	tier = 4
+	is_rare = yes
+	category = {
+		voidcraft
+	}
+	weight = 100
+	prerequisites = {
+		"tech_BA_pyroxenes_crafting"
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+#青辉石巨构
+tech_BA_pyroxenes_megastructure_crafting = {
+	area = engineering
+	cost = @tier5cost2
+	tier = 5
+	is_rare = yes
+	category = {
+		voidcraft
+	}
+	weight = 100
+	prerequisites = {
+		"tech_BA_pyroxenes_industrial_crafting"
+		"tech_mega_engineering"
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+#青辉石应用
+tech_BA_pyroxenes_using = {
+	area = engineering
+	cost = @tier2cost3
+	tier = 2
+	is_rare = yes
+	category = {
+		voidcraft
+	}
+	prereqfor_desc = {
+		ship = {
+			title = tech_BA_pyroxenes_using_title
+			desc = tech_BA_pyroxenes_using_desc
+		}
+	}
+	weight = 70
+	prerequisites = {
+		"tech_BA_pyroxenes_crafting"
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+#制造石制造
+tech_BA_keystone_crafting = {
+	area = engineering
+	cost = @tier3cost1
+	tier = 3
+	is_rare = yes
+	category = {
+		voidcraft
+	}
+	weight = 0
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+tech_BA_keystone_automatic_crafting = {
+	area = engineering
+	cost = @tier4cost3
+	tier = 4
+	is_rare = yes
+	category = {
+		voidcraft
+	}
+	weight = 100
+	prerequisites = {
+		"tech_BA_keystone_crafting"
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+#制造石巨构
+tech_BA_keystone_megastructure_crafting = {
+	area = engineering
+	cost = @tier5cost1
+	tier = 5
+	is_rare = yes
+	category = {
+		voidcraft
+	}
+	weight = 100
+	prerequisites = {
+		"tech_BA_keystone_automatic_crafting"
+		"tech_mega_engineering"
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+#暗物质
+tech_BA_dark_matter_absorbing = {
+	area = physics
+	cost = @tier5cost3
+	tier = 5
+	is_rare = yes
+	is_dangerous = yes
+	category = {
+		computing
+	}
+	weight = 100
+	prerequisites = {
+		"tech_BA_keystone_crafting"
+		"tech_mine_dark_matter"
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+#自动化居住站
+tech_BA_auto_habitat_1 = {
+	cost = @tier3cost3
+	area = engineering
+	category = {
+		voidcraft
+	}
+	tier = 3
+	prerequisites = {
+		"tech_habitat_1"
+		"tech_BA_pyroxenes_using"
+	}
+	weight = @tier3weight3
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+tech_BA_auto_habitat_2 = {
+	cost = @tier4cost2
+	area = engineering
+	category = {
+		voidcraft
+	}
+	tier = 4
+	prerequisites = {
+		"tech_habitat_2"
+		"tech_BA_auto_habitat_1"
+	}
+	weight = @tier3weight3
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+#天使24在售科技
+tech_BA_angel24_rare_produce = {
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	is_rare = yes
+	category = {
+		computing
+	}
+	weight = 0
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+tech_BA_angel24_keystone_to_alloy = {
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	is_rare = yes
+	category = {
+		computing
+	}
+	weight = 0
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+#星河奇迹飞升拓展
+tech_BA_megastructure_linking = {
+	area = physics
+	icon = tech_assembly_pattern	#以后改
+	tier = 5
+	is_rare = yes
+	is_dangerous = yes
+	cost = @tier5cost2
+	category = {
+		voidcraft
+	}
+	weight = 75
+	potential = {
+		OR = {
+			has_ascension_perk = ap_galactic_wonders_utopia
+			has_ascension_perk = ap_galactic_wonders_megacorp
+			has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp
+		}
+		has_authority = auth_kivotos
+	}
+	prerequisites = {
+		"tech_BA_pyroxenes_megastructure_crafting"
+		"tech_BA_keystone_megastructure_crafting"
+	}
+}
+
+#高级社团部室
+tech_BA_club_upgrade = {
+	area = physics
+	icon = tech_assembly_pattern	#以后改
+	tier = 5
+	is_rare = yes
+	cost = @tier4cost2
+	category = {
+		voidcraft
+	}
+	weight = 0
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prerequisites = {
+		"tech_BA_culture_Federal"
+		"tech_BA_keystone_crafting"
+	}
+}
+
+#### 舰船科技
+#自走科技遗产
+tech_BA_legacy_of_millennium = {
+	area = physics
+	icon = tech_assembly_pattern	#以后改
+	cost = @tier2cost1	#白送的无所谓
+	category = {
+		computing
+	}
+	tier = 2
+	is_rare = yes
+	weight = 0
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+#太空船自动化
+tech_BA_spaceship_automation_1 = {
+	area = physics
+	cost = @tier2cost1
+	category = {
+		computing
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_destroyers
+		tech_BA_legacy_of_millennium
+	}
+	weight = 150
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+tech_BA_spaceship_automation_2 = {
+	area = physics
+	cost = @tier3cost1
+	category = {
+		computing
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_pyroxenes_crafting
+		tech_battleships
+		tech_BA_spaceship_automation_1
+	}
+	weight = 150
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+tech_BA_spaceship_automation_3 = {
+	area = physics
+	cost = @tier4cost1
+	category = {
+		computing
+	}
+	tier = 4
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_keystone_crafting
+		tech_BA_spaceship_automation_2
+	}
+	prereqfor_desc = {
+		ship = {
+			title = "tech_BA_spaceship_automation_3_title"
+			desc = "tech_BA_spaceship_automation_3_tip"
+		}
+	}
+	weight = 150
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+tech_BA_spaceship_automation_4 = {
+	area = physics
+	cost = @tier5cost2
+	category = {
+		computing
+	}
+	tier = 5
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_titans
+		tech_BA_keystone_automatic_crafting
+		tech_BA_spaceship_automation_3
+	}
+	weight = 120
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+#### 舰船部件科技
+#包 +装甲、护盾
+tech_BA_Tactical_backpack_T1 = {
+	area = physics
+	cost = 1500
+	tier = 1
+	is_rare = no
+	is_reverse_engineerable = no
+	category = {
+		field_manipulation
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier1weight1
+	weight_modifier = {
+		modifier = {
+			factor = 0.5
+			has_country_flag = yuuka_is_leader_flag			#当优香是学生会长时，权重*0.5
+		}
+	}
+}
+
+tech_BA_Tactical_backpack_T2 = {
+	area = physics
+	cost = 3000
+	tier = 2
+	is_rare = no
+	is_reverse_engineerable = no
+	category = {
+		field_manipulation
+	}
+	weight = @tier2weight1
+	weight_modifier = {
+		modifier = {
+			factor = 0.5
+			has_country_flag = yuuka_is_leader_flag			#当优香是学生会长时，权重*0.5
+		}
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T1"
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+tech_BA_Tactical_backpack_T3 = {
+	area = physics
+	cost = 6500
+	tier = 3
+	is_rare = no
+	is_reverse_engineerable = no
+	category = {
+		field_manipulation
+	}
+	weight = @tier3weight1
+	weight_modifier = {
+		modifier = {
+			factor = 0.5
+			has_country_flag = yuuka_is_leader_flag			#当优香是学生会长时，权重*0.5
+		}
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T2"
+		"tech_BA_pyroxenes_using"
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+tech_BA_Tactical_backpack_T4 = {
+	area = physics
+	cost = 12500
+	tier = 4
+	is_rare = no
+	is_reverse_engineerable = no
+	category = {
+		field_manipulation
+	}
+	weight = @tier4weight1
+	weight_modifier = {
+		modifier = {
+			factor = 0.5
+			has_country_flag = yuuka_is_leader_flag			#当优香是学生会长时，权重*0.5
+		}
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T3"
+		"tech_BA_keystone_crafting"
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+tech_BA_Tactical_backpack_T5 = {
+	area = physics
+	cost = 52000
+	tier = 5
+	is_rare = no
+	is_reverse_engineerable = no
+	category = {
+		field_manipulation
+	}
+	weight = 0	#原版到五级科技好像是暗物质的了，所以没有基础权重。
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T4"
+	}
+	weight_modifier = {
+		modifier = {
+			add = @tier5weight1
+			OR = {
+				has_technology = tech_mine_dark_matter
+				has_technology = tech_BA_dark_matter_absorbing
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				has_technology = tech_BA_dark_matter_absorbing
+				has_technology = tech_dark_matter_deflector
+				has_technology = tech_dark_matter_power_core
+				has_technology = tech_dark_matter_propulsion
+			}
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+tech_BA_Tactical_backpack_T6 = {
+	area = physics
+	cost = 52000
+	tier = 5
+	is_rare = no
+	is_reverse_engineerable = no
+	category = {
+		field_manipulation
+	}
+	weight = 0
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+#徽章 +船体值
+tech_BA_Badge_T1 = {
+	area = physics
+	cost = 1500
+	tier = 1
+	is_rare = no
+	is_reverse_engineerable = no
+	category = {
+		field_manipulation
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier1weight1
+	weight_modifier = {
+		modifier = {
+			factor = 0.5
+			has_country_flag = yuuka_is_leader_flag			#当优香是学生会长时，权重*0.5
+		}
+	}
+}
+
+tech_BA_Badge_T2 = {
+	area = physics
+	cost = 3000
+	tier = 2
+	is_rare = no
+	is_reverse_engineerable = no
+	category = {
+		field_manipulation
+	}
+	weight = @tier2weight1
+	weight_modifier = {
+		modifier = {
+			factor = 0.5
+			has_country_flag = yuuka_is_leader_flag			#当优香是学生会长时，权重*0.5
+		}
+	}
+	prerequisites = {
+		"tech_BA_Badge_T1"
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+tech_BA_Badge_T3 = {
+	area = physics
+	cost = 6500
+	tier = 3
+	is_rare = no
+	is_reverse_engineerable = no
+	category = {
+		field_manipulation
+	}
+	weight = @tier3weight1
+	weight_modifier = {
+		modifier = {
+			factor = 0.5
+			has_country_flag = yuuka_is_leader_flag			#当优香是学生会长时，权重*0.5
+		}
+	}
+	prerequisites = {
+		"tech_BA_Badge_T2"
+		"tech_BA_pyroxenes_using"
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+tech_BA_Badge_T4 = {
+	area = physics
+	cost = 12500
+	tier = 4
+	is_rare = no
+	is_reverse_engineerable = no
+	category = {
+		field_manipulation
+	}
+	weight = @tier4weight1
+	weight_modifier = {
+		modifier = {
+			factor = 0.5
+			has_country_flag = yuuka_is_leader_flag			#当优香是学生会长时，权重*0.5
+		}
+	}
+	prerequisites = {
+		"tech_BA_Badge_T3"
+		"tech_BA_keystone_crafting"
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+tech_BA_Badge_T5 = {
+	area = physics
+	cost = 52000
+	tier = 5
+	is_rare = no
+	is_reverse_engineerable = no
+	category = {
+		field_manipulation
+	}
+	weight = 0	#原版到五级科技好像是暗物质的了，所以没有基础权重。
+	prerequisites = {
+		"tech_BA_Badge_T4"
+	}
+	weight_modifier = {
+		modifier = {
+			add = @tier5weight1
+			OR = {
+				has_technology = tech_mine_dark_matter
+				has_technology = tech_BA_dark_matter_absorbing
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				has_technology = tech_BA_dark_matter_absorbing
+				has_technology = tech_dark_matter_deflector
+				has_technology = tech_dark_matter_power_core
+				has_technology = tech_dark_matter_propulsion
+			}
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+tech_BA_Badge_T6 = {
+	area = physics
+	cost = 52000
+	tier = 5
+	is_rare = no
+	is_reverse_engineerable = no
+	category = {
+		field_manipulation
+	}
+	weight = 0
+	potential = {
+		has_authority = auth_kivotos
+	}
+}

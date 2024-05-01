@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Hibiki_bomb_mesh"
+		file = "gfx\models\combat_items\Hibiki_bomb\Hibiki_bomb.mesh"
+		scale = 1.5
+
+		meshsettings = {
+			name = "Hibiki_bombShape"
+			index = 0
+			texture_diffuse = "Hibiki_Original_Weapon.dds"
+			texture_normal = "DiffuseEmissive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}

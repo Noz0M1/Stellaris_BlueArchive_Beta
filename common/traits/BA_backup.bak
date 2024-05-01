@@ -1,0 +1,4391 @@
+##### 社团特质
+##占位符
+#leader_club_Placeholder = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##联邦学生会
+#leader_club_PrimeCouncil = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B69.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		starbase_upgrade_cost_mult = -0.25		# "恒星基地升级费用"
+#		starbase_upgrade_speed_mult = 0.25		#"恒星基地升级速度"
+#		starbase_upgrade_time_mult = -0.25		# "恒星基地升级时间"
+#		starbase_building_build_speed_mult = 0.25		# "恒星基地建筑建造速度"
+#		starbase_module_build_speed_mult = 0.25		# "恒星基地模块建造速度"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##什亭之匣
+#leader_club_ShittemBox = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		planet_jobs_produces_mult = 0.1		#"£job£ 岗位生产的资源"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = energy
+#		AMOUNT = -30
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##SRT
+#leader_club_SRT = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y18.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		ship_speed_mult = 0.1		# "亚光速航速"
+#		ship_winddown_mult = -0.1		#"超空间跳跃冷却"
+#		ship_windup_mult = -0.1		#"超空间跳跃充能时间"
+#		ship_hyperlane_range_add = 0.1		#"超空间移动
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##瓦尔基里
+#leader_club_Valkyrie = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y04.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		job_soldier_stability_add = 2		#"£job_soldier£[GetSoldier]岗位产出的稳定度"
+#		planet_crime_add = -15		#犯罪度
+#		planet_jobs_unity_produces_mult = 0.15		# "£job£ 岗位生产的凝聚力"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##茶话会
+#leader_club_Teaparty = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B40.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		planet_structures_energy_upkeep_mult = -0.15		#"区划与建筑能量币维护费"
+#		planet_buildings_cost_mult = -0.15		#"建筑花费"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##补习部
+#leader_club_MakeUpWork = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R43.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = society_research
+#		AMOUNT = 20
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = physics_research
+#		AMOUNT = 20
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = engineering_research
+#		AMOUNT = 20
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##正义委
+#leader_club_JusticeTF = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R86.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		planet_crime_add = -30		#犯罪度
+#		ship_weapon_damage = 0.1		# "舰船武器伤害"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##放学后甜点部
+#leader_club_AftSchSweet = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R52.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = consumer_goods
+#		AMOUNT = 20
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##修女会
+#leader_club_Sisterhood = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B84.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		planet_jobs_unity_produces_mult = 0.45		# "￡job￡ 岗位生产的凝聚力"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##救护骑士团
+#leader_club_RemedialKGT = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y73.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		armies_upkeep_mult = -0.1		#"陆军维护费"
+#		ARMY_HEALTH = 0.25		#"陆军生命值"
+#		ARMY_DISENGAGE_CHANCE_MULT = -0.15		#"陆军撤退几率"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##图书委
+#leader_club_LibraryCommi = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R51.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		all_technology_research_speed = 0.1		#"研究速度"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = minor_artifacts
+#		AMOUNT = 8
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##自警团
+#leader_club_VigilanteCrew = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R02.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		planet_crime_add = -15
+#		ship_fire_rate_mult = 0.2		#"舰船武器射速"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##风纪委
+#leader_club_PerfectTeam = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R04.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_damage = 0.2		# "舰船武器伤害"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##急救医学部
+#leader_club_MedicalEmgcy = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B46.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		ARMY_HEALTH = 0.5		#"陆军生命值"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##给食部
+#leader_club_SchoolLunch = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B18.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	self_modifier = {
+#		leaders_upkeep_mult = 6		# "领袖维护费"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = food
+#		AMOUNT = 35
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##便利屋68
+#leader_club_PrblmSvlr68 = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R55.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_damage = 0.1		# "舰船武器伤害"
+#		planet_structures_energy_upkeep_mult = -0.08		#"区划与建筑能量币维护费"
+#		planet_buildings_cost_mult = -0.08		#"建筑花费"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = energy
+#		AMOUNT = -8
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##万魔殿
+#leader_club_Pandemonium = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B35.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		ARMY_DAMAGE_MULT = 0.5		# "陆军伤害"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##美食研
+#leader_club_EatOrDie = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R24.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = energy
+#		AMOUNT = 10
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = food
+#		AMOUNT = 10
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = alloys
+#		AMOUNT = 10
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = consumer_goods
+#		AMOUNT = 10
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##温泉开发部
+#leader_club_HotSpringDvlp = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R39.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		country_engineering_tech_research_speed = 0.2		#"研究速度（工程学）"
+#		category_industry_research_speed_mult = 0.2		# "研究速度（工业）"
+#		category_new_worlds_research_speed_mult = 0.2		# "研究速度（新世界理论）"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = energy
+#		AMOUNT = -20
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = exotic_gases
+#		AMOUNT = 5
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = volatile_motes
+#		AMOUNT = 5
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##回家部
+#leader_club_GoHome = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y07.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = engineering_research
+#		AMOUNT = 10
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = society_research
+#		AMOUNT = 10
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##研讨会
+#leader_club_Seminar = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B51.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		planet_structures_cost_mult = -0.25		#"建筑与区划花费"
+#		planet_structures_upkeep_mult = -0.15		#"建筑与区划维护费"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##游戏开发部
+#leader_club_GameDvlp = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y72.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		planet_amenities_add = 25		# "舒适度"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = unity
+#		AMOUNT = 10
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##MD游戏开发部
+#leader_club_GameDvlp_MD = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B72.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		planet_amenities_add = 15		# "舒适度"
+#		planet_jobs_unity_produces_mult = 0.1		# "￡job￡ 岗位生产的凝聚力"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = unity
+#		AMOUNT = 10
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##C&C
+#leader_club_C_C = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y40.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		ship_speed_mult = 0.1		#"亚光速航速"
+#		ship_disengage_chance_mult = 0.1		#"战斗撤离几率"
+#		ship_accuracy_mult = 0.1		# "命中"
+#		ship_fire_rate_mult = 0.1		#"舰船武器射速"
+#		ship_weapon_range_mult = 0.1		#"舰船武器射程"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##BNGC&C
+#leader_club_C_C_BNG = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B47.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		army_damage_mult = 0.15		#"陆军伤害"
+#		army_collateral_damage_mult = 0.15		#"陆军连带伤害"
+#		army_experience_gain_mult = 0.1
+#		armies_upkeep_mult = -0.1		#"陆军维护费"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##真理部
+#leader_club_Veritas = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R16.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		all_technology_research_speed = 0.1		#"研究速度"
+#		category_particles_research_speed_mult = 0.3		#"研究速度（§Y粒子物理§!）"
+#		category_computing_research_speed_mult = 0.3		# "研究速度（§Y计算技术§!）"
+#		category_field_manipulation_research_speed_mult = 0.3		#"研究速度（§Y力场操控§!）"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##工程部
+#leader_club_Engineer = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R33.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		all_technology_research_speed = 0.1		#"研究速度"
+#		category_materials_research_speed_mult = 0.3		#"研究速度（材料学）"
+#		category_propulsion_research_speed_mult = 0.3		#"研究速度（推进力学）"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##特调部
+#leader_club_SPTF = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R11.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		ship_speed_mult = 0.25		# "亚光速航速"
+#		science_ship_survey_speed = 0.25		# "调查速度"
+#		shipclass_mining_station_build_speed_mult = 0.5		# "开采站建造速度"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##体育部
+#leader_club_Training = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R47.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		planet_army_build_speed_mult = 0.4		#"陆军建造速度"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##对策委
+#leader_club_ForeclosureTF = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R38.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		planet_decision_enact_speed_mult = 0.15		#"决议颁布速度"
+#		planet_building_build_speed_mult = 0.15		# "行星建造速度"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##修行部
+#leader_club_InnerDcpln = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R72.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		POP_HOUSING_USAGE_MULT = -0.2		#"人口住房使用"
+#		POP_AMENITIES_USAGE_BASE = -0.2		#"人口舒适度使用"
+#		planet_num_pops = -0.1		#"来自人口规模"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##七囚人
+#leader_club_7Prisoner = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B18.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		planet_stability_add = -5		# "稳定度"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##忍术部
+#leader_club_Ninjutsu = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B05.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		army_disengage_chance_mult = -0.15		#"陆军撤退几率"
+#		army_health = 0.4		#"陆军生命值"
+#		army_collateral_damage_mult = 0.15		# "陆军连带伤害"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##阴阳部
+#leader_club_YinYang = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B50.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		planet_pops_organics_food_upkeep_mult = -0.1		#"人口食物维护费
+#		planet_pops_organics_energy_upkeep_mult = -0.1		#"人口能量币维护费"
+#		planet_jobs_unity_produces_mult = 0.2		# "￡job￡ 岗位生产的凝聚力"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##祭运委
+#leader_club_FstvlOprtn = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B79.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		planet_decision_enact_speed_mult = 0.25		#"决议颁布速度"
+#		planet_immigration_pull_add = 25		#"迁入吸引力"
+#		planet_jobs_consumer_goods_produces_mult = 0.1		#"岗位生产的消费品
+#		planet_jobs_food_produces_mult = 0.1		#"£job£ 岗位生产的£food£ $food$"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##红冬事务局
+#leader_club_RWOffice = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y88.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		planet_jobs_produces_mult = 0.15		# "£job£ 岗位生产的资源"
+#		planet_structures_upkeep_mult = -0.075		#"建筑与区划维护费
+#		planet_stability_add = -5		# "稳定度"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##227特别班
+#leader_club_SpecOps227 = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y88.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		science_ship_survey_speed = 0.25		# "调查速度"
+#		deposit_blockers_cost_mult = -0.25
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##知识解放战线
+#leader_club_KlgLbrtnFrnt = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y74.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		COUNTRY_SOCIETY_TECH_RESEARCH_SPEED = 0.3		#"研究速度（£society£ 社会学）"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##劳务部
+#leader_club_LaborParty = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B38.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		planet_district_industrial_build_speed_mult = 0.4		#"工业区建造速度"
+#		planet_building_factory_1_build_speed_mult = 0.4		#"民用工厂建造速度"
+#		shipclass_mining_station_build_speed_mult = 0.4		#"开采站建造速度"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##梅花园
+#leader_club_PlumBlossomGarden = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R19.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		planet_jobs_society_research_produces_mult = 0.3		#" 岗位生产的社会学研究点数
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##炼丹术研究会
+#leader_club_Alchemy = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B87.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		all_technology_research_speed = 0.125		#"研究速度"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##玄武商会
+#leader_club_XuanWu = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R79.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = energy
+#		AMOUNT = 60
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = consumer_goods
+#		AMOUNT = -10
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##阿里乌斯
+#leader_club_AriusSquad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R17.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		planet_army_build_speed_mult = 0.25		#"陆军建造速度"
+#		starbase_shipyard_build_speed_mult = 0.15		#"舰船建造速度"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##对策委（泳装）
+#leader_club_ForeclosureTF_SS = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R38.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		ship_hull_mult = -0.1		#"船体值"
+#		SHIP_FIRE_RATE_MULT = 0.15		#"舰船武器射速"
+#		SHIP_SPEED_MULT = 0.15		# "亚光速航速"
+#		ship_weapon_damage = 0.15		# "舰船武器伤害"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##葛叶（内阁）
+#leader_club_KuzunohaCS = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B38.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		planet_jobs_physics_research_produces_mult = 0.3		#岗位生产的物理学研究点数
+#		planet_jobs_society_research_produces_mult = 0.3		#" 岗位生产的社会学研究点数
+#		planet_jobs_engineering_research_produces_mult = 0.3		# "岗位生产的工程学研究点数
+#	}
+#	self_modifier = {
+#		leaders_cost_mult = 200		#"领袖花费"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##对策委（运动会）
+#leader_club_ForeclosureTF_SW = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B20.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		SHIP_SPEED_MULT = 0.5		# "亚光速航速"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##SWSRT
+#leader_club_SRT_SW = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B18.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		ship_speed_mult = 0.25		# "亚光速航速"
+#		ship_winddown_mult = -0.25		#"超空间跳跃冷却"
+#		ship_windup_mult = -0.25		#"超空间跳跃充能时间"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##体操美食研
+#leader_club_EatOrDie_SW = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y72.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		SHIP_SPEED_MULT = 0.1		# "亚光速航速"
+#		SHIP_FIRE_RATE_MULT = 0.1		#"舰船武器射速"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##正月美食研
+#leader_club_EatOrDie_KMN = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R30.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		ship_speed_mult = 0.2		#"亚光速航速"
+#		ship_fire_rate_mult = 0.1		#"舰船武器射速"
+#		ship_weapon_damage = 0.05		# "舰船武器伤害"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##玄龙门
+#leader_club_XuanLongOffice = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y88.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		planet_building_build_speed_mult = 0.4		#"行星建造速度"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##领航员
+#leader_club_Navigator = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B84.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		ship_speed_mult = 0.1		# "亚光速航速"
+#		ship_winddown_mult = -0.2		#"超空间跳跃冷却"
+#		ship_windup_mult = -0.25		#"超空间跳跃充能时间"
+#		ship_emergency_ftl_mult = 0.1
+#		#ship_emergency_ftl = -0.1		        #"紧急超光速脱离受损风险"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#
+##补习部（运动会）
+#leader_club_MakeUpWork_SW = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B86.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		planet_army_build_speed_mult = 0.3		#"陆军建造速度"
+#		planet_jobs_society_research_produces_mult = 0.1		#"£job£ 岗位生产的£society_research£ $society_research$"
+#	}
+#	leader_class = all
+#	sorting_priority = 999
+#	selectable_weight = 0
+#}
+#### 个人特质
+##占位符
+#leader_special_Placeholder = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B39.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#	}
+#	self_modifier = {
+#	}
+#	leader_class = all
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##总务部管辖
+#leader_special_Rin_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B39.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		shipclass_starbase_hull_mult = 25		#"恒星基地船体值"
+#	}
+#	self_modifier = {
+#		leaders_upkeep_mult = 8		#"领袖维护费"
+#		leaders_cost_mult = 4		#"领袖花费"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##明太子维护费
+#leader_special_Momoka_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B35.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	self_modifier = {
+#		leaders_upkeep_mult = -0.25		#"领袖维护费"
+#		leaders_cost_mult = -0.25		#"领袖花费"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##相斥防卫
+#leader_special_Kaya_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B14.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_stability_add = -5		# "稳定度"
+#		shipclass_starbase_damage_mult = 1.5		#"恒星基地伤害"
+#	}
+#	self_modifier = {
+#		leaders_upkeep_mult = 5		#"领袖维护费"
+#		leaders_cost_mult = 5		#"领袖花费"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##星宇调停
+#leader_special_Ayumu_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B26.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_stability_add = 35		# "稳定度"
+#	}
+#	self_modifier = {
+#		leaders_upkeep_mult = 3		#"领袖维护费"
+#		leaders_cost_mult = 3		#"领袖花费"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##万能的阿罗那
+#leader_special_Arona_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B01.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_home_territory_fire_rate_mult = 1		#"本土作战射速"
+#		ship_weapon_range_mult = 0.25		#"舰船武器射程"
+#		ship_weapon_damage = 0.25		# "舰船武器伤害"
+#		ship_hull_regen_add_perc = 1		# "每日船体再生"
+#		ship_armor_regen_add_perc = 1		# "每日装甲再生"
+#	}
+#	self_modifier = {
+#		leaders_upkeep_mult = 4		#"领袖维护费"
+#		leaders_cost_mult = 4		#"领袖花费"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##虚拟偶像
+#leader_special_Miku_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R70.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		pop_happiness = 0.3		#幸福度
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##RABBIT1：正面纲领
+#leader_special_Miyako_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y01.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_hull_mult = 0.1		#"船体值"
+#		ship_evasion_add = 20		#"闪避率"
+#		ship_hull_regen_add_perc = 0.3		# "每日船体再生"
+#		ship_armor_regen_add_perc = 0.3		# "每日装甲再生
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##RABBIT2：火力突破
+#leader_special_Saki_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y21.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_range_mult = -0.2		#"舰船武器射程"
+#		ship_fire_rate_mult = 0.2		#"舰船武器射速"
+#		ship_weapon_damage = 0.2		# "舰船武器伤害"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##RABBIT3：狙击掩护
+#leader_special_Miyu_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y33.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_range_mult = 0.4		#"舰船武器射程"
+#		ship_fire_rate_mult = -0.3		#"舰船武器射速"
+#		ship_weapon_damage = 0.1		# "舰船武器伤害"
+#		ship_accuracy_add = 20		#"命中率"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##RABBIT4：高火力覆盖&SRT火力学说
+#leader_special_Moe_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y65.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_fire_rate_mult = 0.125		#"舰船武器射速"
+#		ship_weapon_damage = 0.125		# "舰船武器伤害"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##SRT作战学说统合
+#leader_special_Moe_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y33.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		category_military_theory_research_speed_mult = 0.3		#"研究速度（军事理论）"
+#		all_technology_research_speed = 0.1		#"研究速度"
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##瓦尔基里海军扩充
+#leader_special_Kanna_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y20.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		starbase_shipyard_build_speed_mult = 0.35		#造舰速度
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##坚决行查的执法者
+#leader_special_Kirino_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R19.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_crime_add = -35		#犯罪度
+#		planet_stability_add = -2.5		# "稳定度
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##摆！诶~开摆！
+#leader_special_Fubuki_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y05.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_crime_add = 2.5		#犯罪度
+#		planet_jobs_produces_mult = 0.15		#"£job£ 岗位生产的资源"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##梦之彼岸
+#leader_special_Seia_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B77.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = unity
+#		AMOUNT = 60
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##星辰坠落
+#leader_special_Mika_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y01.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_damage = 0.6		# "舰船武器伤害"
+#	}
+#	self_modifier = {
+#		leaders_upkeep_mult = 8		#"领袖维护费"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##火炮覆盖
+#leader_special_Nagisa_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R07.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_range_mult = 0.3		#"舰船武器射程"
+#		ship_weapon_damage = 0.3		# "舰船武器伤害"
+#	}
+#	self_modifier = {
+#		leaders_upkeep_mult = 4		#"领袖维护费"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##佩洛洛，出击！
+#leader_special_Hifumi_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y75.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ships_upkeep_mult = 0.1		# "舰船维护费"
+#		weapon_type_energy_weapon_damage_mult = 0.6		#" "能量武器伤害"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##十字军酱，出发！
+#leader_special_HifumiSS_gr = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y56.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ARMY_DAMAGE_MULT = 0.5		# "陆军伤害"
+#	}
+#	leader_class = {
+#		general
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##万物皆虚
+#leader_special_Azusa_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R31.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		SHIP_FIRE_RATE_MULT = -0.3		#"舰船武器射速"
+#		ship_weapon_damage = 0.3		# "舰船武器伤害"
+#		weapon_type_explosive_weapon_damage_mult = 0.3		# "爆炸武器伤害"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##涛海之翼
+#leader_special_AzusaSS_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B31.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		SHIP_FIRE_RATE_MULT = -0.3		#"舰船武器射速"
+#		SHIP_SPEED_MULT = 0.2		# "亚光速航速"
+#		ship_weapon_damage = 0.2		# "舰船武器伤害"
+#		weapon_type_energy_weapon_damage_mult = 0.4		# "能量武器伤害"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##圣水手雷
+#leader_special_Koharu_gr = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R76.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ARMY_HEALTH = 0.3		#"陆军生命值"
+#		ARMY_DAMAGE_MULT = 0.3		# "陆军伤害"
+#	}
+#	leader_class = {
+#		general
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##课后安排
+#leader_special_Hanako_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B44.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_jobs_physics_research_produces_mult = 0.075		#岗位生产的物理学研究点数
+#		planet_jobs_society_research_produces_mult = 0.075		#"岗位生产的社会学研究点数
+#		planet_jobs_engineering_research_produces_mult = 0.075		#"岗位生产的攻城学研究点数
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##凝视射击
+#leader_special_Hasumi_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y01.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_range_mult = 0.25		#"舰船武器射程"
+#		SHIP_ACCURACY_MULT = 0.25		# "命中"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##最终兵器
+#leader_special_Tsurugi_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y55.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		SHIP_FIRE_RATE_MULT = 0.45		#"舰船武器射速"
+#		ship_weapon_damage = 0.3		# "舰船武器伤害"
+#	}
+#	self_modifier = {
+#		leaders_upkeep_mult = 8		#"领袖维护费"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##夏日之巅
+#leader_special_TsurugiSS_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B55.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		SHIP_FIRE_RATE_MULT = 0.15		#"舰船武器射速"
+#		ship_weapon_damage = 0.15		# "舰船武器伤害"
+#	}
+#	self_modifier = {
+#		leaders_upkeep_mult = -0.5		#"领袖维护费"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##最后指令
+#leader_special_Mashiro_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R01.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_range_mult = 0.5		#"舰船武器射程"
+#		SHIP_FIRE_RATE_MULT = -0.5		#"舰船武器射速"
+#		SHIP_ACCURACY_MULT = 0.5		# "命中"
+#		weapon_type_kinetic_weapon_damage_mult = 0.5		#"动能武器伤害"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##洋流狙击
+#leader_special_MashiroSS_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y01.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		SHIP_ACCURACY_MULT = 0.75		# "命中"
+#		ship_weapon_damage = 0.2		# "舰船武器伤害"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##甜品时光
+#leader_special_Airi_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R52.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_pops_organics_consumer_goods_upkeep_mult = 0.1		#"人口消费品维护费"
+#		planet_jobs_unity_produces_mult = 0.3		#"£job£ 岗位生产的£unity£ $unity$"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##精装甜品
+#leader_special_Natsu_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R38.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_pops_consumer_goods_upkeep_mult = 0.1		#"人口消费品维护"
+#		planet_jobs_consumer_goods_produces_mult = 0.2		#"岗位生产的消费"
+#		TRADE_VALUE_ADD = 5		#"贸易额"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##甜品斗争
+#leader_special_Yoshimi_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y52.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		SHIP_FIRE_RATE_MULT = 0.2		#"舰船武器射速"
+#		ship_weapon_damage = 0.2		# "舰船武器伤害"
+#		SHIP_SPEED_MULT = 0.1		# "亚光速航速"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = consumer_goods
+#		AMOUNT = -6
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##可爱修女
+#leader_special_Mari_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B39.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_stability_add = 10		# "稳定度"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = unity
+#		AMOUNT = 15
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##最终手段
+#leader_special_Hinata_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B03.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		weapon_type_kinetic_weapon_damage_mult = 0.3		#"动能武器伤害"
+#		weapon_type_kinetic_weapon_fire_rate_mult = 0.2		#"动能武器攻击速度"
+#		ship_weapon_damage = 0.1		# "舰船武器伤害"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##天降正义
+#leader_special_Mine_gr = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R40.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ARMY_COLLATERAL_DAMAGE_MULT = 0.5		#"陆军连带伤害
+#	}
+#	leader_class = {
+#		general
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##紧急维护
+#leader_special_Serina_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B39.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_emergency_ftl_min_days_mult = -0.5
+#		ship_emergency_ftl_mult = -0.75		#"紧急超光速脱离受损风险"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##活力四射
+#leader_special_Hanae_gr = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R17.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		armies_upkeep_mult = 0.05		#"陆军维护费"
+#		army_damage_mult = 0.3		#"陆军伤害"
+#		army_disengage_chance_mult = -0.1		#"陆军撤退几率"
+#	}
+#	leader_class = {
+#		general
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##樱花之印
+#leader_special_Sakurako_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B83.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		weapon_type_energy_weapon_damage_mult = 0.35		#"能量武器伤害"
+#		weapon_type_energy_weapon_fire_rate_mult = 0.35		#"能量武器攻击速度"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##双向反差
+#leader_special_Ui_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R60.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_anomaly_research_speed_mult = 0.5		#"异常现象研究速度"
+#		SHIP_ARCHAEOLOGICAL_SITE_EXCAVATION_SPEED_MULT = 0.5		#"考古发掘速度"
+#		science_ship_survey_speed = -1		#"调查速度"
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##阿卡林的图书狂
+#leader_special_Shimiko_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R04.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		COUNTRY_SOCIETY_TECH_RESEARCH_SPEED = 0.25		# "研究速度（£society£ 社会学）"
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##星海闪光弹
+#leader_special_Suzumi_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R09.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		weapon_type_energy_weapon_damage_mult = 0.15		#"能量武器伤害"
+#		weapon_type_energy_weapon_fire_rate_mult = 0.4		#"能量武器攻击速度"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##高糖效应
+#leader_special_Kazumi_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y41.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_damage = 0.5		# "舰船武器伤害"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = consumer_goods
+#		AMOUNT = -6
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##魔王降临
+#leader_special_Hina_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R21.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_damage = 0.3		# "舰船武器伤害"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##风纪夏日
+#leader_special_HinaSS_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R29.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_fire_rate_mult = 0.175		#"舰船武器射速"
+#		ship_weapon_damage = 0.075		# "舰船武器伤害"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##背后的怜意
+#leader_special_HinaSY_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B14.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		pop_happiness = 0.1		#幸福度
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = unity
+#		AMOUNT = 5
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##一网打尽
+#leader_special_Iori_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y53.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		weapon_type_kinetic_weapon_damage_mult = 0.666		#"动能武器伤害"
+#		ship_weapon_damage = 0.1998		# "舰船武器伤害"
+#	}
+#	self_modifier = {
+#		leaders_upkeep_mult = 3		#"领袖维护费"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##夏日强袭
+#leader_special_IoriSS_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R31.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_damage = 0.088		# "舰船武器伤害"
+#	}
+#	self_modifier = {
+#		leaders_upkeep_mult = -0.4		#领袖维护费"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##资料检索
+#leader_special_Ako_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B53.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_hyperlane_range_add = 2		# "舰船超空间探测距离"
+#		ship_fire_rate_mult = 0.075		#"舰船武器射速"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##战伤医疗
+#leader_special_Chinatsu_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B14.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_hull_regen_add_perc = 0.4		# "每日船体再生"
+#		ship_armor_regen_add_perc = 0.4		# "每日装甲再生"
+#		ship_weapon_damage = 0.025		# "舰船武器伤害
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##战舰能量剂
+#leader_special_ChinatsuHS_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B44.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_fire_rate_mult = 0.2		#"舰船武器射速"
+#		ship_shield_regen_add_perc = 0.45		# "每日护盾再生"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##军医补给线
+#leader_special_Sena_gr = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B28.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		army_health = 0.3		# "陆军生命值"
+#		army_damage_mult = 0.2		# "陆军伤害"
+#		army_collateral_damage_mult = 0.2		#"陆军连带伤害"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = food
+#		AMOUNT = -5
+#	}
+#	leader_class = {
+#		general
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##厨堂统筹
+#leader_special_Fuuka_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B02.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = food
+#		AMOUNT = 40
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##灼热暴击
+#leader_special_Aru_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R41.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_damage = 0.15
+#		weapon_type_explosive_weapon_damage_mult = 0.15
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##冷酷恶人
+#leader_special_AruKMN_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y09.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_fire_rate_mult = 0.2		#"舰船武器射速"
+#		ship_hull_regen_add_perc = 0.2		# "每日船体再生"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##胆怯乱射
+#leader_special_Haruka_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R29.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_accuracy_add = -10		#"命中率"
+#		ship_fire_rate_mult = 0.4		#"舰船武器射速"
+#		ship_weapon_range_mult = -0.1		# "舰船武器射程"
+#		ship_weapon_damage = 0.2		#"舰船武器伤害
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##正月之春
+#leader_special_HarukaKMN_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R49.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_disengage_chance_mult = 0.25		#"战斗撤离几率"
+#		ship_weapon_damage = 0.15		# "舰船武器伤害
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##爆裂咏叹曲
+#leader_special_Mutsuki_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R08.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		weapon_type_explosive_weapon_damage_mult = 0.3		#爆炸武器伤害"
+#		weapon_type_explosive_weapon_fire_rate_mult = 0.3		#"爆炸武器攻击速度"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##正月之月
+#leader_special_MutsukiKMN_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B31.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_range_mult = 0.25		#"舰船武器射程"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##善意与恐惧
+#leader_special_Kayoko_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R22.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		pop_happiness = -0.1		#幸福度
+#		planet_stability_add = 35		# "稳定度"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = unity
+#		AMOUNT = 4
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##正月之理
+#leader_special_KayokoKMN_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R44.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		pop_happiness = 0.1		#幸福度
+#	}
+#	self_modifier = {
+#		leaders_cost_mult = -0.5		#"领袖花费"
+#		leaders_upkeep_mult = -0.5		#"领袖维护费"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##虎丸出击
+#leader_special_Iroha_gr = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B62.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		armies_upkeep_mult = 1
+#		army_damage_mult = 0.5
+#		army_collateral_damage_mult = 2.5		#"陆军连带伤害"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = alloys
+#		AMOUNT = -6
+#	}
+#	leader_class = {
+#		general
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##美食家的气概
+#leader_special_Haruna_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R05.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_hull_mult = 0.15		#"船体值"
+#		ship_weapon_damage = 0.15		# "舰船武器伤害"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = consumer_goods
+#		AMOUNT = -3
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##深不见底
+#leader_special_Akari_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R30.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ships_upkeep_mult = 0.25		#"舰船维护费"
+#		ship_weapon_damage = 0.45		# "舰船武器伤害"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = consumer_goods
+#		AMOUNT = -3
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##毫不抉择
+#leader_special_Izumi_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R34.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_hull_mult = 0.05		#"船体值"
+#		ship_speed_mult = 0.05		# "亚光速航速"
+#		ship_winddown_mult = -0.05		#"超空间跳跃冷却"
+#		ship_windup_mult = -0.05		#"超空间跳跃充能时间"
+#		ship_evasion_add = 5		#"闪避率"
+#		ship_hull_regen_add_perc = 0.05		# "每日船体再生"
+#		ship_armor_regen_add_perc = 0.05		# "每日装甲再生"
+#		ship_weapon_range_mult = 0.05		#"舰船武器射程"
+#		ship_fire_rate_mult = 0.05		#"舰船武器射速"
+#		ship_weapon_damage = 0.05		# "舰船武器伤害"
+#		ship_accuracy_add = 5		#"命中率"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = consumer_goods
+#		AMOUNT = -3
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##冰镇夏日
+#leader_special_IzumiSS_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B34.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_range_mult = 0.1		#"舰船武器射程"
+#		SHIP_FIRE_RATE_MULT = 0.1		#"舰船武器射速"
+#		ship_weapon_damage = 0.1		# "舰船武器伤害
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##怎么上了太空还是吃不到好吃的！
+#leader_special_Junko_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y45.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		SHIP_FIRE_RATE_MULT = 0.5		#"舰船武器射速"
+#		ship_weapon_damage = -0.05		# "舰船武器伤害
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##行星温泉开发署
+#leader_special_Megu_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R33.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_building_build_speed_mult = 0.4		#"行星建造速度"
+#		planet_buildings_cost_mult = 0.25		#"建筑花费"
+#		planet_districts_cost_mult = 0.25		#"区划花费"
+#		planet_jobs_exotic_gases_produces_mult = 0.25		#"￡job￡ 岗位生产的天然气
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = exotic_gases
+#		AMOUNT = 4
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##菜园时光
+#leader_special_Juri_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B34.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_jobs_food_produces_mult = 0.15		#"£job£ 岗位生产的£food£ $food$"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = food
+#		AMOUNT = 5
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##高速计算
+#leader_special_Yuuka_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R03.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		PLANET_DECISION_ENACT_SPEED_MULT = 0.25		#"决议颁布速度"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##衣柜万花筒
+#leader_special_Yuzu_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y07.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_jobs_unity_produces_mult = 0.15		# "￡job￡ 岗位生产的凝聚力"
+#		planet_jobs_physics_research_produces_mult = 0.05		#岗位生产的物理学研究点数
+#		planet_jobs_society_research_produces_mult = 0.05		#"岗位生产的社会学研究点数
+#		planet_jobs_engineering_research_produces_mult = 0.05		#"岗位生产的攻城学研究点数
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##双子之心-小桃
+#leader_special_Momoi_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y31.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		owned_ship_fire_rate_mult = 0.35
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##双子之心-小绿
+#leader_special_Midori_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y31.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		owned_ship_fire_rate_mult = 0.35
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##高速馈赠
+#leader_special_Aris_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B54.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		category_computing_research_speed_mult = 1		#"研究速度（计算技术）"
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##野性直觉
+#leader_special_Asuna_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B18.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_evasion_add = 10		#"闪避率"
+#		ship_emergency_ftl_mult = 0.25		#"紧急超光速脱离受损风险"
+#		ship_fire_rate_mult = 0.1		#"舰船武器射速"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##兔子直觉
+#leader_special_AsunaBNG_gr = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B09.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ARMY_DAMAGE_MULT = 0.15
+#		ARMY_DISENGAGE_CHANCE_MULT = -0.2
+#	}
+#	leader_class = {
+#		general
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##沉默射击
+#leader_special_Akane_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y38.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		SHIP_ACCURACY_MULT = 0.4		# "命中"
+#		SHIP_FIRE_RATE_MULT = -0.6		#"舰船武器射速"
+#		ship_weapon_damage = 0.6		# "舰船武器伤害
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##静默行动
+#leader_special_AkaneBNG_gr = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B07.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ARMY_COLLATERAL_DAMAGE_MULT = 0.2		#"陆军连带伤害"
+#		ARMY_MORALE = 0.1		#"陆军士气"
+#	}
+#	leader_class = {
+#		general
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##匡默支援
+#leader_special_Karin_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y01.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_range_mult = 0.6		#"舰船武器射程"
+#		SHIP_FIRE_RATE_MULT = -0.4		#"舰船武器射速
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##支援战术
+#leader_special_KarinBNG_gr = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B21.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		SHIP_DISENGAGE_CHANCE_MULT = -0.05		#"战斗撤离几率"
+#		ARMY_DAMAGE_MULT = 0.2		# "陆军伤害"
+#	}
+#	leader_class = {
+#		general
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##胜利誓约
+#leader_special_Neru_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y38.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_damage = 0.375		# "舰船武器伤害
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##零零号令
+#leader_special_NeruBNG_gr = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R04.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ARMY_MORALE_DAMAGE_MULT = 0.3
+#		ARMY_COLLATERAL_DAMAGE_MULT = 0.3
+#	}
+#	leader_class = {
+#		general
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##科考劳务派遣
+#leader_special_Koyuki_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B68.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_anomaly_research_speed_mult = 1		# "异常现象研究速度"
+#		ship_anomaly_generation_chance_mult = 0.45		# "异常现象发现机会"
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##仪器兼修
+#leader_special_Hare_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R30.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_buildings_cost_mult = -0.15
+#		starbase_buildings_cost_mult = -0.15
+#		ship_science_cost_mult = -0.15
+#		planet_jobs_physics_research_produces_mult = 0.2
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##程序储值
+#leader_special_Hare_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R86.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		all_technology_research_speed = 0.1		#"研究速度"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = physics_research
+#		AMOUNT = 10
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##挂载设备研究
+#leader_special_Utaha_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y86.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		category_materials_research_speed_mult = 0.4		#"研究速度（§Y材料学§!）"
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##炮台挂载
+#leader_special_Utaha_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y82.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_damage = 0.1		#"舰船武器伤害"
+#		weapon_type_kinetic_weapon_damage_mult = 0.2		#"动能武器伤害"
+#		weapon_type_kinetic_weapon_fire_rate_mult = 0.2		#"动能武器攻击速度"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##投射原理撰写
+#leader_special_Hibiki_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R02.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		category_particles_research_speed_mult = 0.2		#"研究速度（§Y粒子物理§!）"
+#		category_computing_research_speed_mult = 0.2		# "研究速度（§Y计算技术§!）"
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##抛射理论
+#leader_special_Hibiki_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R07.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_range_mult = 0.5		#"舰船武器射程"
+#		ship_fire_rate_mult = -0.25		#"舰船武器射速"
+#		ship_weapon_damage = 0.1		#"舰船武器伤害"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##网络侦听
+#leader_special_Kotama_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R72.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_jobs_unity_produces_mult = 0.05		# "￡job￡ 岗位生产的凝聚力"
+#		planet_jobs_physics_research_produces_mult = 0.125		#岗位生产的物理学研究点数
+#		INTEL_ENCRYPTION_ADD = 15		#"加密"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##代码律动
+#leader_special_Kotama_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y40.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		SHIP_TRACKING_ADD = 40		#"追踪"
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##新工业军事武备概念
+#leader_special_Kotori_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B86.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##新式装甲应用
+#leader_special_Kotori_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B86.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_fire_rate_mult = 0.1		#"舰船武器射速"
+#		ship_armor_regen_add_perc = 0.4		# "每日装甲再生
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##高速解析
+#leader_special_Eimi_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R21.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_anomaly_research_speed_mult = 1		# "异常现象研究速度"
+#		ship_anomaly_generation_chance_mult = 0.3		# "异常现象发现机会"
+#		ship_speed_mult = 1		# "亚光速航速"
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##渗透行动
+#leader_special_Eimi_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R19.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_speed_mult = 0.4		#"亚光速航速"
+#		ship_winddown_mult = -0.5		#"超空间跳跃冷却"
+#		ship_windup_mult = -0.75		#"超空间跳跃充能时间"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##大蛇之母
+#leader_special_Maki_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y40.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_damage = 0.2		#"舰船武器伤害"
+#	}
+#	self_modifier = {
+#		leaders_cost_mult = -0.3		#"领袖花费"
+#		leaders_upkeep_mult = -0.3		#"领袖维护费"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##黑客方略
+#leader_special_Maki_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R84.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		SHIP_ANOMALY_RESEARCH_SPEED_mult = 0.1		#"异常现象研究速度"
+#		category_computing_research_speed_mult = 0.25		# "研究速度（§Y计算技术§!）"
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##三步进攻
+#leader_special_Sumire_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y19.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ships_upkeep_mult = -0.25		# "舰船维护费"
+#		ship_fire_rate_mult = 0.1		#"舰船武器射速"
+#		ship_weapon_range_mult = -0.2		#"舰船武器射程"
+#		ship_weapon_damage = 0.3		# "舰船武器伤害"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##漏洞攻势
+#leader_special_Chihiro_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y31.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_hyperlane_range_add = 1		# "舰船超空间探测距离"
+#		ship_accuracy_mult = 0.5		# "命中"
+#		ship_weapon_damage = 0.1		# "舰船武器伤害
+#		ship_evasion_mult = 0.3		# "闪避"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##安保方针
+#leader_special_Chihiro_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y34.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		ship_shield_hardening_add = 0.2
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##星域卫戍
+#leader_special_Hoshino_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y34.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		SHIP_HOME_TERRITORY_FIRE_RATE_MULT = 0.75		#"本土作战射速"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##白子の奇妙经济学
+#leader_special_Shiroko_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R47.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_crime_add = 10		#犯罪度
+#		TRADE_VALUE_ADD = 25		# "贸易额"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##星海骑行
+#leader_special_ShirokoQX_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B30.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		SHIP_SPEED_MULT = 0.5		# "亚光速航速"
+#		ships_upkeep_mult = -0.5		# "舰船维护费"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##军工经济援助
+#leader_special_Nonomi_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y68.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		starbase_shipyard_build_speed_mult = 0.2		#"舰船建造速度"
+#		STARBASE_SHIPYARD_BUILD_COST_MULT = -0.2		#"舰船花费"
+#		planet_army_build_speed_mult = 0.25		#"陆军建造速度"
+#		armies_cost_mult = -0.25		#"陆军花费"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##猛烈突击
+#leader_special_Serika_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R45.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		weapon_type_kinetic_weapon_damage_mult = 0.5		#"动能武器伤害"
+#		weapon_type_kinetic_weapon_fire_rate_mult = 0.25		#"动能武器攻击速度"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##经济复兴计划
+#leader_special_SerikaKMN_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y13.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_jobs_energy_produces_mult = 0.1		#"£job£ 岗位生产的 £energy£ $energy$"
+#		planet_districts_cost_mult = -0.1		#"区划花费"
+#		planet_districts_upkeep_mult = -0.1
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##阿拜多斯复兴研究手册
+#leader_special_Ayane_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y17.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		category_new_worlds_research_speed_mult = 1		# "研究速度（新世界理论）"
+#		category_industry_research_speed_mult = 0.25		# "研究速度（工业）"
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##大和抚子
+#leader_special_Mimori_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R41.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_fire_rate_mult = 0.25		#"舰船武器射速"
+#		ship_hull_regen_add_perc = 0.25		# "每日船体再生"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##樱花射击
+#leader_special_Wakamo_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B83.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_damage = 0.4		# "舰船武器伤害"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##正月之狐
+#leader_special_WakamoKMN_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B64.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_hull_regen_add_perc = 0.45		# "每日船体再生"
+#		ship_armor_regen_add_perc = 0.45		# "每日装甲再生"
+#		weapon_type_energy_weapon_damage_mult = 0.1		#"能量武器伤害"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##泉奈流实地科研技术
+#leader_special_Izuna_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B59.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_speed_mult = 0.5		# "亚光速航速"
+#		science_ship_survey_speed = 0.3		# "调查速度"
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##月下雪女
+#leader_special_Chise_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B03.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_range_mult = 0.35		#"舰船武器射程"
+#		ship_fire_rate_mult = -0.075		#"舰船武器射速"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##百鬼夜行事务联合管理
+#leader_special_Kaho_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B31.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_pops_organics_food_upkeep_mult = -0.1		#"人口食物维护费
+#		planet_pops_organics_energy_upkeep_mult = -0.1		#"人口能量币维护费"
+#		planet_jobs_unity_produces_mult = 0.2		# "￡job￡ 岗位生产的凝聚力"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##幸运一击
+#leader_special_Feng_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B61.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		weapon_type_explosive_weapon_damage_mult = 0.6		#"爆炸武器伤害"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##忍术网络宣传计划
+#leader_special_Michiru_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B26.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_stability_add = 10		# "稳定度"
+#		planet_jobs_unity_produces_mult = 0.15		# "£job£ 岗位生产的凝聚力"
+#		planet_pops_consumer_goods_upkeep_mult = 0.05		# "消费品消耗"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##月咏流舰队指挥技……
+#leader_special_Tsukoyo_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B60.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_evasion_add = 10		#"闪避率"
+#		ship_armor_regen_add_perc = 0.7		#"每日装甲再生"
+#		ship_emergency_ftl_mult = -0.3
+#		#ship_emergency_ftl = -0.3		#"紧急超光速脱离受损风险"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##百夜堂老板娘
+#leader_special_Shizuko_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B50.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		trade_value_add = 25		# "贸易额"
+#		pop_job_trade_mult = 0.1		#"£job£岗位产出的£trade_value£贸易额"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = consumer_goods
+#		AMOUNT = -30
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##睡眠充足
+#leader_special_Tsubaki_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y88.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		POP_AMENITIES_USAGE_BASE = -0.1		#"人口舒适度使用"
+#		planet_jobs_produces_mult = 0.125		#"£job£ 岗位生产的资源"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##侠义燃烧
+#leader_special_Pina_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y29.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_fire_rate_mult = 0.25		#"舰船武器射速"
+#		ship_speed_mult = 0.25		#"亚光速航速"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##胡子的权威
+#leader_special_Cherino_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y32.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_structures_upkeep_mult = -0.4		#"建筑与区划维护费"
+#		planet_stability_add = -5		# "稳定度"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##肃清酱出发
+#leader_special_CherinoHS_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R62.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ARMY_MORALE = -0.1		# "陆军士气"
+#		ARMY_DAMAGE_MULT = 0.6		# "陆军伤害"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = alloys
+#		AMOUNT = -6
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##革命突击
+#leader_special_Marina_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y13.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_range_mult = -0.25		#"舰船武器射程"
+#		SHIP_SPEED_MULT = 0.25		# "亚光速航速"
+#		SHIP_FIRE_RATE_MULT = 0.5		#"舰船武器射速"
+#		weapon_type_strike_craft_speed_mult = 5		#"舰载机速度"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##冲锋号令
+#leader_special_Tomoe_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R86.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ARMY_MORALE = 0.4		# "陆军士气"
+#		ARMY_DAMAGE_MULT = 0.2		# "陆军伤害"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##镜相分析
+#leader_special_Nodoka_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R35.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		science_ship_survey_speed = 0.55		# "调查速度"
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##远望战术
+#leader_special_Nodoka_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R35.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_range_mult = 0.1		#"舰船武器射程"
+#		ship_hyperlane_range_add = 2		# "舰船超空间探测距离"
+#		ship_accuracy_mult = 0.3		# "命中"
+#		ship_speed_mult = 0.1		# "亚光速航速"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##温泉营业
+#leader_special_NodokaHS_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R27.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		pop_happiness = 0.1
+#		colony_start_num_pops_add = 1
+#		planet_colony_development_speed_mult = 0.1
+#		planet_building_build_speed_mult = 0.05
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##星海取材研究
+#leader_special_Momiji_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y41.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		science_ship_survey_speed = 0.15		# "调查速度"
+#		ship_anomaly_research_speed_mult = 0.3		# "异常现象研究速度"
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##特质伏特加
+#leader_special_Shigure_gr = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R07.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		army_morale = 0.2		#"陆军士气"
+#		army_collateral_damage_mult = 0.4		#"陆军连带伤害"
+#		army_disengage_chance_mult = -0.05		#"陆军撤退几率"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = consumer_goods
+#		AMOUNT = 6
+#	}
+#	leader_class = {
+#		general
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##漫画爱好者
+#leader_special_Meru_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y03.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		science_ship_survey_speed = 0.1		# "调查速度"
+#		COUNTRY_SOCIETY_TECH_RESEARCH_SPEED = 0.05		#"研究速度（£society£ 社会学）"
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##罢工劣质产品
+#leader_special_Minori_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R25.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_jobs_unity_produces_mult = -0.05		# "￡job￡ 岗位生产的凝聚力"
+#		planet_jobs_produces_mult = 0.15		# "£job£ 岗位生产的资源"
+#		planet_structures_upkeep_mult = -0.2		#"建筑与区划维护费"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##梅花园的大姐姐
+#leader_special_Shun_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R19.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		pop_happiness = 0.1		#幸福度
+#		planet_jobs_unity_produces_mult = 0.15		# "￡job￡ 岗位生产的凝聚力"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##小小的身躯
+#leader_special_ShunYN_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R57.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	self_modifier = {
+#		leaders_upkeep_mult = -0.75		#"领袖维护费"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##小小教官
+#leader_special_Kokona_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y41.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_structures_upkeep_mult = 0.05		#"建筑与区划维护费"
+#		planet_jobs_unity_produces_mult = 0.2		# "£job£ 岗位生产的凝聚力"
+#		planet_jobs_society_research_produces_mult = 0.05		#" 岗位生产的社会学研究点数
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##山海经制药学
+#leader_special_Saya_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R34.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		category_biology_research_speed_mult = 0.35		#"研究速度（生物学）"
+#		all_technology_research_speed = 0.1		#"研究速度"
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##山海经生物舰队研究
+#leader_special_SayaSF_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y68.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		weapon_type_space_fauna_weapon_damage_mult = 4		#"太空兽群武器伤害"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##山海经玄武商会运营
+#leader_special_Rumi_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R20.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		pop_job_trade_mult = 1.5		#"£job£岗位产的£trade_value£贸易额"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = consumer_goods
+#		AMOUNT = -30
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##野草之赐
+#leader_special_Saori_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R40.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_damage = 0.4		# "舰船武器伤害"
+#		ship_fire_rate_mult = -0.075		#"舰船武器射速"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##无日之花
+#leader_special_Atsuko_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B83.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_shield_regen_add_perc = 2		# "每日护盾再生"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##心系火花
+#leader_special_Hiyori_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R73.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		weapon_type_energy_weapon_damage_mult = 0.5		#"能量武器伤害"
+#		weapon_type_energy_weapon_fire_rate_mult = -0.1		#"能量武器攻击速度"
+#		ship_weapon_range_mult = 0.1		#"舰船武器射程"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##暗天烟花
+#leader_special_Misaki_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R83.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_fire_rate_mult = -0.2		#"舰船武器射速"
+#		weapon_type_explosive_weapon_damage_mult = 0.75		#"爆炸武器伤害"、
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##爆发海域
+#leader_special_HoshinoSS_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R69.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		weapon_type_explosive_weapon_damage_mult = 1.75		#"爆炸武器伤害"
+#	}
+#	self_modifier = {
+#		leaders_cost_mult = 5		#"领袖花费"
+#		leaders_upkeep_mult = 5		# "领袖维护费"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##空中火神
+#leader_special_NonomiSS_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R31.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		SHIP_FIRE_RATE_MULT = 0.35		#"舰船武器射速"
+#		ship_weapon_damage = 0.1		# "舰船武器伤害"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##舰载机强化
+#leader_special_AyaneSS_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y65.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		weapon_type_strike_craft_weapon_damage_mult = 1		#"舰载机伤害"
+#		weapon_type_strike_craft_weapon_fire_rate_mult = 0.5		#"舰载机攻击速度"
+#		weapon_type_strike_craft_speed_mult = 1		#"舰载机速度"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##盛夏之狐
+#leader_special_WakamoSS_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y64.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_damage = 0.125		# "舰船武器伤害"
+#	}
+#	self_modifier = {
+#		leaders_cost_mult = -0.25		#"领袖花费"
+#		leaders_upkeep_mult = -0.25		#"领袖维护费"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##专项研究
+#leader_special_Himari_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y11.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		ship_anomaly_research_speed_mult = 0.25		# "异常现象研究速度"
+#		category_computing_research_speed_mult = 0.5		#"研究速度（计算技术）"
+#		all_technology_research_speed = 0.1		#"研究速度"
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##概型统论
+#leader_special_Himari_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y44.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_jobs_unity_produces_mult = -0.1		# "￡job￡ 岗位生产的凝聚力"
+#		planet_jobs_physics_research_produces_mult = 0.3		#岗位生产的物理学研究点数
+#		planet_jobs_society_research_produces_mult = 0.01		#"岗位生产的社会学研究点数
+#		planet_jobs_engineering_research_produces_mult = 0.01		#"岗位生产的攻城学研究点数
+#		planet_building_build_speed_mult = 0.1		#"行星建造速度"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##夏日计划
+#leader_special_ChiseSS_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B07.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		pc_ocean_habitability = 0.7		# "海洋星球宜居性"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##泉奈流陆军忍术作战方式
+#leader_special_IzunaSS_gr = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B07.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		army_collateral_damage_mult = 1		#"陆军连带伤害""
+#	}
+#	leader_class = {
+#		general
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##夏日美人
+#leader_special_MimoriSS_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B41.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_jobs_produces_mult = 0.1		#"£job£ 岗位生产的资源"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##海岸开张企划
+#leader_special_ShizukoSS_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B33.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_building_build_speed_mult = 0.2		#"行星建造速度"
+#		planet_building_commercial_zone_build_speed_mult = 0.8
+#		pc_ocean_habitability = 0.6		# "海洋星球宜居性"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##祭运委筹算理论
+#leader_special_Umika_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B39.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		category_statecraft_research_speed_mult = 0.6		#"研究速度（治国术）"
+#		country_society_tech_research_speed = 0.2		#"研究速度（£society£ 社会学）"
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##相克决断
+#leader_special_Ichika_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y45.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		weapon_type_energy_weapon_damage_mult = -0.4		# "能量武器伤害"
+#		weapon_type_explosive_weapon_damage_mult = -0.4		#"爆炸武器伤害"
+#		weapon_type_kinetic_weapon_damage_mult = 1.6		#"动能武器伤害"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##雪山弥漫求命行
+#leader_special_Kuzunoha_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R84.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_jobs_produces_mult = 0.3		#"£job£ 岗位生产的资源"
+#		shipclass_military_station_build_speed_mult = 1		#"防御平台建造速度"
+#		starbase_shipyard_build_speed_mult = 1		#"舰船建造速度"
+#		shipsize_starbase_citadel_build_speed_mult = 1		#"擎天堡建造速度"
+#	}
+#	self_modifier = {
+#		leaders_upkeep_mult = 200		#"领袖维护费"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##星海挑战券
+#leader_special_Reisa_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y71.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_damage = 0.05		#"舰船武器伤害"
+#		weapon_type_explosive_weapon_damage_mult = 0.2		#"爆炸武器伤害"
+#		weapon_type_kinetic_weapon_damage_mult = 0.2		#" "动能武器伤害"
+#		weapon_type_energy_weapon_damage_mult = 0.2		#" "能量武器伤害"
+#		weapon_type_space_fauna_weapon_damage_mult = 0.2		#" "太空兽群武器伤害"
+#		ships_upkeep_mult = 0.1		# "舰船维护费"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##高效记忆
+#leader_special_Noa_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R54.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_buildings_energy_upkeep_mult = -0.4		#"建筑£energy£能量币维护费"
+#	}
+#	self_modifier = {
+#		leaders_upkeep_mult = -0.5		# "领袖维护费"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##炮台应援指挥
+#leader_special_UtahaCL_gr = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B82.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		army_experience_gain_mult = 0.2		#"陆军经验获得"
+#		army_health = 0.2		#"陆军生命值"
+#		army_damage_mult = 0.2		# "陆军伤害"
+#		army_collateral_damage_mult = 0.2		#"陆军连带伤害"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = alloys
+#		AMOUNT = -6
+#	}
+#	leader_class = {
+#		general
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##Ei！Ei！Oh！
+#leader_special_HibikiCL_gr = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R85.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		army_morale = 0.5		# "陆军士气"
+#		army_morale_damage_mult = 0.3		#"陆军士气伤害"
+#	}
+#	leader_class = {
+#		general
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##应援机器人陆军改造
+#leader_special_KotoriCL_gr = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y67.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		army_damage_mult = 0.35		# "陆军伤害"
+#		army_collateral_damage_mult = 0.35		#"陆军连带伤害"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = alloys
+#		AMOUNT = -6
+#	}
+#	leader_class = {
+#		general
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##速算进攻
+#leader_special_YuukaSW_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B66.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_speed_mult = 0.15		# "亚光速航速"
+#		ship_fire_rate_mult = 0.15		#"舰船武器射速"
+#		ship_hull_regen_add_perc = 0.45		# "每日船体再生"
+#		ship_armor_regen_add_perc = 0.45		# "每日装甲再生"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##晄轮大祭研究方案
+#leader_special_NoaSW_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B40.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		ships_upkeep_mult = -0.2		# "舰船维护费"
+#		ship_ftl_jumpdrive_range_mult = 0.2
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##储备保养
+#leader_special_MariSW_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B04.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_hull_regen_add_perc = 0.35		#"每日船体再生"
+#		ship_armor_regen_add_perc = 0.35		#"每日装甲再生"
+#		ships_upkeep_mult = -0.1		# "舰船维护费"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##甜品能量
+#leader_special_NatsuSW_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B41.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ships_upkeep_mult = 0.1		#"舰船维护费"
+#		ship_weapon_damage = 0.15		# "舰船武器伤害"
+#		SHIP_FIRE_RATE_MULT = 0.15		#"舰船武器射速"
+#		ship_hull_regen_add_perc = 0.3		# "每日船体再生"
+#		ship_armor_regen_add_perc = 0.3		# "每日装甲再生"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = consumer_goods
+#		AMOUNT = 6
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##重心固定
+#leader_special_MashiroSW_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y25.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		SHIP_SPEED_MULT = -0.3		# "亚光速航速"
+#		ship_weapon_range_mult = 0.25		#"舰船武器射程"
+#		ship_weapon_damage = 0.25		# "舰船武器伤害"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##运动迸发
+#leader_special_SumireSW_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y21.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		weapon_type_explosive_weapon_damage_mult = 0.2		#"爆炸武器伤害"
+#		ship_speed_mult = 0.2		# "亚光速航速"
+#		weapon_type_explosive_weapon_fire_rate_mult = 0.2		#"爆炸武器攻击速度"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##街头行动
+#leader_special_MakiSW_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B25.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_damage = 0.1
+#		weapon_type_explosive_weapon_damage_mult = 0.1
+#	}
+#	self_modifier = {
+#		leaders_cost_mult = -0.5		#"领袖花费"
+#		leaders_upkeep_mult = -0.5		#"领袖维护费"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##激情之舞
+#leader_special_HanaeCL_gr = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R27.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ARMY_DAMAGE_MULT = 0.2		#"陆军伤害"
+#		ARMY_DEFENSE_MORALE_MULT = 0.2		#"防御部队士气"
+#		ARMY_DEFENSE_DAMAGE_MULT = 0.2		#"防御部队伤害"
+#	}
+#	leader_class = {
+#		general
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##运动武器载具
+#leader_special_KotoriSW_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y51.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_hull_mult = 0.15		#"船体值"
+#		ship_hull_regen_add_perc = 0.4		#"每日船体再生"
+#		ship_armor_regen_add_perc = 0.4		#"每日装甲再生"
+#		ships_upkeep_mult = 0.1		#"舰船维护费"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##日常保养
+#leader_special_SerinaNU_gr = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B27.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		armies_upkeep_mult = -0.1		#"陆军维护费"
+#		army_starting_experience_add = 100		# "陆军初始经验"
+#		army_defense_health_mult = 0.25		#"防御部队生命值"
+#	}
+#	leader_class = {
+#		general
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##扩展狙击
+#leader_special_HasumiSW_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B03.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_damage = 0.25		# "舰船武器伤害"
+#		ship_weapon_range_mult = 0.25		#"舰船武器射程"
+#		SHIP_ACCURACY_MULT = 0.25		# "命中"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##径向狂走
+#leader_special_TsurugiSW_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R55.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		SHIP_FIRE_RATE_MULT = 0.3		#"舰船武器射速"
+#		SHIP_SPEED_MULT = 0.2		# "亚光速航速"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##资料在轨通识
+#leader_special_AkoSW_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R61.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_hull_regen_add_perc = 0.8		# "每日船体再生"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##赛场之星
+#leader_special_ChiseSW_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R03.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = unity
+#		AMOUNT = 20
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##泉奈流奔跑疾走之术
+#leader_special_IzunaSW_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R29.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		SHIP_SPEED_MULT = 0.1		# "亚光速航速"
+#		SHIP_WINDDOWN_MULT = -0.1		#"超空间跳跃冷却"
+#		SHIP_WINDUP_MULT = -0.99		#"超空间跳跃充能时间"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##占卜运动
+#leader_special_FengSW_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R30.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_jobs_unity_produces_mult = 0.25		# "￡job￡ 岗位生产的凝聚力"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##月咏流伪装运动
+#leader_special_TsukoyoSW_gr = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R60.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ARMY_HEALTH = 0.15		#"陆军生命值" 
+#		ARMY_MORALE = 0.15		#"陆军士气"
+#	}
+#	leader_class = {
+#		general
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##晄轮大祭服务区
+#leader_special_ShizukoSW_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y33.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		PLANET_BUILDING_BUILD_SPEED_MULT = 0.35		#"行星建造速度"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##律动
+#leader_special_AsunaUF_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B03.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		SHIP_ACCURACY_MULT = 0.3		# "命中"
+#		ship_weapon_damage = 0.06		# "舰船武器伤害
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##沉默
+#leader_special_KarinUF_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y36.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		SHIP_HYPERLANE_RANGE_ADD = 1		# "舰船超空间探测距离"
+#		SHIP_EVASION_ADD = 30		#"闪避率"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##机甲巡航
+#leader_special_Toki_st = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R67.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_anomaly_research_speed_mult = 0.5		# "异常现象研究速度"
+#		science_ship_survey_speed = 0.5		# "调查速度"
+#	}
+#	leader_class = {
+#		scientist
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##轨道出舱
+#leader_special_Toki_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R67.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		weapon_type_strike_craft_weapon_damage_mult = 4		#"舰载机伤害"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##圣诞之歌
+#leader_special_SerinaCM_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y72.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		pop_happiness = 0.2		#幸福度
+#		planet_jobs_produces_mult = 0.05		#"£job£ 岗位生产的资源"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##无微不至的火炉
+#leader_special_HanaeCM_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B47.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_hull_regen_add_perc = -0.1		# "每日船体再生"
+#		ship_armor_regen_add_perc = -0.1		# "每日装甲再生"
+#		ship_weapon_damage = 0.35		# "舰船武器伤害
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##正月饭香
+#leader_special_FuukaKMN_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y88.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_building_build_speed_mult = 0.2		#"行星建造速度"
+#		ships_upkeep_mult = -0.6		#"舰船维护费"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##玄龙门的门主
+#leader_special_Kisaki_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B14.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		planet_stability_add = 10		# "稳定度"
+#		pop_job_trade_mult = -0.15		#"£job£岗位产出的£trade_value£贸易额"
+#		planet_jobs_minerals_produces_mult = 0.25		#"£job£ 岗位生产的£minerals£ $minerals$"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##安保室长
+#leader_special_Minami_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R81.dds"
+#	is_councilor_trait_for_ruler = yes
+#	councilor_trait = yes
+#	randomized = no
+#	modifier = {
+#		shipclass_military_station_build_speed_mult = 1		#"防御平台建造速度"
+#		shipclass_military_station_damage_mult = 1		# "防御平台伤害"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##圣装洗礼
+#leader_special_SakurakoHD_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B31.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		weapon_type_energy_weapon_damage_mult = 0.6		#"能量武器伤害"
+#		weapon_type_energy_weapon_fire_rate_mult = 0.6		#"能量武器攻击速度"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##零熵决议
+#leader_special_Rion_gv = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R87.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		planet_structures_upkeep_mult = 0.1		#"建筑与区划维护费"
+#		shipclass_military_station_build_speed_mult = 0.3		#"防御平台建造速度"
+#		shipsize_corvette_build_speed_mult = 0.3		#"护卫舰建造速度"
+#		shipsize_starbase_citadel_build_speed_mult = 0.3		#"擎天堡建造速度"
+#		shipclass_military_station_damage_mult = 0.1		# "防御平台伤害"
+#	}
+#	leader_class = {
+#		governor
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##什亭之匣的黑之魂
+#leader_special_Plana_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B85.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_speed_mult = 3		# "亚光速航速"
+#		ship_hull_regen_add_perc = 3		# "每日船体再生"
+#		ship_armor_regen_add_perc = 3		# "每日装甲再生"
+#		ship_weapon_damage = 1.5		# "舰船武器伤害"
+#	}
+#	self_modifier = {
+#		leaders_cost_mult = 35		#"领袖花费"
+#		leaders_upkeep_mult = 35		#领袖维护费"
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}
+#
+##慈爱怪盗
+#leader_special_Akira_ad = {
+#	cost = 0
+#	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B77.dds"
+#	is_councilor_trait_for_ruler = yes
+#	randomized = no
+#	modifier = {
+#		ship_weapon_damage = 0.25		# "舰船武器伤害"
+#	}
+#	inline_script = {
+#		script = paragon/leader_resource_produces
+#		RESOURCE = minor_artifacts
+#		AMOUNT = 5
+#	}
+#	leader_class = {
+#		admiral
+#	}
+#	sorting_priority = 998
+#	selectable_weight = 0
+#}

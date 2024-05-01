@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Sponge_Cake_mesh"
+		file = "gfx/models/ships/Mika_Turret/Sponge_Cake.mesh"
+		scale = 3.0
+
+		meshsettings = {
+			name = "SpongeCakeShape"
+			index = 0
+			texture_diffuse = "SpongeCake.dds"
+			texture_normal = "Sponge_Cake_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}

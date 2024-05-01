@@ -1,0 +1,28 @@
+objectTypes = {
+	pdxmesh = {
+		name = "EN_0001_Sub_mesh"
+		file = "gfx\models\ships\color\EN_0001_Sub.mesh"
+		scale = 2.0
+
+		meshsettings = {
+			name = "ScreenShape"
+			index = 0
+			texture_diffuse = "FX_TEX_EN0001_HUD_Img_03.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "Screen_02Shape"
+			index = 0
+			texture_diffuse = "FX_TEX_EN0001_HUD_Img_02.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "CrystalShape"
+			index = 0
+			texture_diffuse = "FX_TEX_Crystal_Color_01.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+}

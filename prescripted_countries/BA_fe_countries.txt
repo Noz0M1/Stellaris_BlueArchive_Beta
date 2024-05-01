@@ -1,0 +1,112 @@
+# BA_country = {
+# 	ship_prefix = "DokiDoki_ministry_of_interior"	#舰船名称前缀(让人眼前一黑的前缀)
+# 	species = {
+# 		class = "Schale"
+# 		portrait = "Schale"
+# 		name = "PRESCRIPTED_species_name_ba_fe_1"		#物种名称 如基沃托斯学生
+# 		plural = "PRESCRIPTED_species_plural_ba_fe_1"		#复数称呼 如基沃托斯学生们
+# 		adjective = "PRESCRIPTED_species_adjective_ba_fe_1"		#形容词 如基沃托斯学生
+# 		name_list = "HUM2"		#名称清单目前用hum2暂替
+# 		trait = "trait_halo_unreleased"		#光环未解放天赋
+# 		trait = "trait_slack"		#摸鱼天赋
+# 	}
+# 	name = "EMPIRE_DESIGN_ba_fe_1"	#帝国名称 如蓝色恶魔抽卡集团(为什么我会想到这个)
+# 	adjective = "PRESCRIPTED_adjective_ba_fe_1"	#帝国形容词 如蓝色恶魔抽卡集团
+# 	authority = "auth_ba_fe"	#堕落帝国政体
+# 	government = "gov_Kivotos_country"	#政府
+# 	planet_name = "NAME_ba_fe_sun_rising"	#母星名字 如旭日
+# 	planet_class = "pc_gaia"	#盖亚星球
+# 	initializer = "ba_fallen_empire_capital_system_01"	#堕落帝国系统 不知道能不能正常运行
+# 	system_name = "NAME_ba_fe_horizon"	#星系名字 如 地平线
+# 	graphical_culture = "fallen_empire_02"
+# 	city_graphical_culture = "fallen_empire_02"
+# 	empire_flag = {
+# 		icon = {
+# 			category = "legion"
+# 			file = "flag_mp_beta_01.dds"
+# 		}
+# 		background = {
+# 			category = "backgrounds"
+# 			file = "00_solid.dds"
+# 		}
+# 		colors = {
+# 			"black"
+# 			"light_blue"
+# 			"black"
+# 			"null"
+# 		}
+# 	}
+# 	ruler = {
+# 		gender = female
+# 		name = "未花"
+# 		portrait = "BA_19"
+# 		texture = 0
+# 		hair = 0
+# 		clothes = 19
+# 		ruler_title_female = "茶会代理人"
+# 		leader_class = "ruler"
+# 	}
+# 	spawn_as_fallen = yes
+# 	ignore_portrait_duplication = no
+# 	room = "personality_decadent_hierarchy_room"
+# 	spawn_enabled = always
+# 	ethic = "ethic_fanatic_materialist"
+# 	origin = "origin_default"
+# }
+
+# ###################################################################################
+# BA_02_country = {
+# 	ship_prefix = "Peroro"	#舰船名称前缀
+# 	species = {
+# 		class = "Schale"
+# 		portrait = "Schale"
+# 		name = "PRESCRIPTED_species_name_ba_fe_1"		#物种名称 如基沃托斯学生
+# 		plural = "PRESCRIPTED_species_plural_ba_fe_1"		#复数称呼 如基沃托斯学生们
+# 		adjective = "PRESCRIPTED_species_adjective_ba_fe_1"		#形容词 如基沃托斯学生
+# 		name_list = "HUM2"		#名称清单目前用hum2暂替
+# 		trait = "trait_halo_unreleased"		#光环未解放天赋
+# 		trait = "trait_slack"		#摸鱼天赋
+# 	}
+# 	name = "EMPIRE_DESIGN_ba_fe_2"	#帝国名称
+# 	adjective = "PRESCRIPTED_adjective_ba_fe_2"
+# 	authority = "auth_ba_fe"	#堕落帝国政体
+# 	government = "gov_Kivotos_country"	#政府
+# 	planet_name = "NAME_ba_fe_sun_rising"	#母星名字 如旭日
+# 	planet_class = "pc_gaia"	#盖亚星球
+# 	initializer = "ba_fallen_empire_capital_system_02"	#堕落帝国系统 不知道能不能正常运行
+# 	system_name = "NAME_ba_fe_horizon"	#星系名字 如 地平线
+# 	graphical_culture = "fallen_empire_02"
+# 	city_graphical_culture = "fallen_empire_02"
+# 	empire_flag = {
+# 		icon = {
+# 			category = "legion"
+# 			file = "flag_mp_beta_01.dds"
+# 		}
+# 		background = {
+# 			category = "backgrounds"
+# 			file = "00_solid.dds"
+# 		}
+# 		colors = {
+# 			"black"
+# 			"light_blue"
+# 			"black"
+# 			"null"
+# 		}
+# 	}
+# 	ruler = {
+# 		gender = female
+# 		name = "圣娅"
+# 		portrait = "BA_18"
+# 		texture = 0
+# 		hair = 0
+# 		clothes = 18
+# 		ruler_title_female = "茶会代理人"
+# 		leader_class = "ruler"
+# 	}
+# 	spawn_as_fallen = yes
+# 	ignore_portrait_duplication = no
+# 	room = "personality_decadent_hierarchy_room"
+# 	spawn_enabled = always
+# 	ethic = "ethic_fanatic_spiritualist"
+# 	origin = "origin_default"
+# }

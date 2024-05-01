@@ -1,0 +1,54 @@
+entity = {
+	name = "Goz_Cards_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+				 
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+	}
+	
+	state = { name = "stop" animation = "miss" 
+		looping = no
+		time_offset = { 0 1 }
+		animation_blend_time = 1
+		start_event = { time = 0 node = missile_01 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_02 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_03 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_04 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_05 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_06 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_07 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_08 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+	}
+	
+	scale = 4.0
+	
+	
+	attach = { missile_01 = "Goz_Card_1_entity" }
+	attach = { missile_02 = "Goz_Card_2_entity" }
+	attach = { missile_03 = "Goz_Card_1_entity" }
+	attach = { missile_04 = "Goz_Card_3_entity" }
+	attach = { missile_05 = "Goz_Card_3_entity" }
+	attach = { missile_06 = "Goz_Card_1_entity" }
+	attach = { missile_07 = "Goz_Card_2_entity" }
+	attach = { missile_08 = "Goz_Card_1_entity" }
+}

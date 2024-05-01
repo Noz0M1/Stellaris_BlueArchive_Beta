@@ -1,0 +1,305 @@
+#tech_BA_SPW_RABU_WEAPON = {
+#	area = society
+#	cost = @tier3cost2
+#	category = {
+#		school_tech
+#	}
+#	tier = 3
+#	is_rare = yes
+#	is_reverse_engineerable = no
+#	prerequisites = {
+#		tech_BA_SPW_Base_G
+#	}
+#	prereqfor_desc = {
+#		custom = {
+#			title = tech_BA_SPW_WEAPON_desc
+#			desc = RABU_WEAPON_DESC
+#		}
+#	}
+#	potential = {
+#		has_authority = auth_kivotos
+#	}
+#	weight = @tier3weight2
+#	weight_modifier = {
+#		modifier = {
+#			set = 0
+#			BA_weapon_limit_trigger_G = yes
+#		}
+#		modifier = {
+#			multiply = 0.5
+#			always = yes
+#		}
+#	}
+#}
+#
+#tech_BA_SPW_NIKO_WEAPON = {
+#	area = physics
+#	cost = @tier3cost2
+#	category = {
+#		school_tech
+#	}
+#	tier = 3
+#	is_rare = yes
+#	is_reverse_engineerable = no
+#	prerequisites = {
+#		tech_BA_SPW_Base_G
+#	}
+#	prereqfor_desc = {
+#		custom = {
+#			title = tech_BA_SPW_WEAPON_desc
+#			desc = NIKO_WEAPON_DESC
+#		}
+#	}
+#	potential = {
+#		has_authority = auth_kivotos
+#	}
+#	weight = @tier3weight2
+#	weight_modifier = {
+#		modifier = {
+#			set = 0
+#			BA_weapon_limit_trigger_G = yes
+#		}
+#		modifier = {
+#			multiply = 0.5
+#			always = yes
+#		}
+#	}
+#}
+#
+#tech_BA_SPW_ARONA_WEAPON = {
+#	area = physics
+#	cost = @tier3cost2
+#	category = {
+#		school_tech
+#	}
+#	tier = 3
+#	is_rare = yes
+#	is_reverse_engineerable = no
+#	prerequisites = {
+#		tech_BA_SPW_Base_L
+#	}
+#	prereqfor_desc = {
+#		custom = {
+#			title = tech_BA_SPW_WEAPON_desc
+#			desc = ARONA_WEAPON_DESC
+#		}
+#	}
+#	potential = {
+#		has_authority = auth_kivotos
+#	}
+#	weight = @tier3weight2
+#	weight_modifier = {
+#		modifier = {
+#			set = 0
+#			BA_weapon_limit_trigger_L = yes
+#		}
+#		modifier = {
+#			multiply = 0.5
+#			always = yes
+#		}
+#	}
+#}
+#
+#tech_BA_SPW_PULANA_WEAPON = {
+#	area = physics
+#	cost = @tier3cost2
+#	category = {
+#		school_tech
+#	}
+#	tier = 3
+#	is_rare = yes
+#	is_reverse_engineerable = no
+#	prerequisites = {
+#		tech_BA_SPW_Base_L
+#	}
+#	prereqfor_desc = {
+#		custom = {
+#			title = tech_BA_SPW_WEAPON_desc
+#			desc = PULANA_WEAPON_DESC
+#		}
+#	}
+#	potential = {
+#		has_authority = auth_kivotos
+#	}
+#	weight = @tier3weight2
+#	weight_modifier = {
+#		modifier = {
+#			set = 0
+#			BA_weapon_limit_trigger_L = yes
+#		}
+#		modifier = {
+#			multiply = 0.5
+#			always = yes
+#		}
+#	}
+#}
+#
+#tech_BA_SPW_AKIRA_WEAPON_L = {
+#	area = physics
+#	cost = @tier3cost2
+#	category = {
+#		school_tech
+#	}
+#	tier = 3
+#	is_rare = yes
+#	is_reverse_engineerable = no
+#	prerequisites = {
+#		tech_BA_SPW_Base_L
+#	}
+#	prereqfor_desc = {
+#		custom = {
+#			title = tech_BA_SPW_WEAPON_desc
+#			desc = AKIRA_WEAPON_L_DESC
+#		}
+#	}
+#	potential = {
+#		has_authority = auth_kivotos
+#	}
+#	weight = @tier3weight2
+#	weight_modifier = {
+#		modifier = {
+#			set = 0
+#			BA_weapon_limit_trigger_L = yes
+#		}
+#		modifier = {
+#			multiply = 0.5
+#			always = yes
+#		}
+#	}
+#}
+#
+#tech_BA_SPW_YUKINO_WEAPON = {
+#	area = physics
+#	cost = @tier3cost1
+#	category = {
+#		school_tech
+#	}
+#	tier = 3
+#	is_rare = yes
+#	is_reverse_engineerable = no
+#	prerequisites = {
+#		tech_BA_SPW_Base_M
+#	}
+#	prereqfor_desc = {
+#		custom = {
+#			title = tech_BA_SPW_WEAPON_desc
+#			desc = YUKINO_WEAPON_DESC
+#		}
+#	}
+#	potential = {
+#		has_authority = auth_kivotos
+#	}
+#	weight = @tier3weight1
+#	weight_modifier = {
+#		modifier = {
+#			set = 0
+#			BA_weapon_limit_trigger_M = yes
+#		}
+#		modifier = {
+#			multiply = 0.5
+#			always = yes
+#		}
+#	}
+#}
+#
+#tech_BA_SPW_KURUMI_WEAPON = {
+#	area = physics
+#	cost = @tier2cost3
+#	category = {
+#		school_tech
+#	}
+#	tier = 2
+#	is_rare = yes
+#	is_reverse_engineerable = no
+#	prerequisites = {
+#		tech_BA_SPW_Base_P
+#	}
+#	prereqfor_desc = {
+#		custom = {
+#			title = tech_BA_SPW_WEAPON_desc
+#			desc = KURUMI_WEAPON_DESC
+#		}
+#	}
+#	potential = {
+#		has_authority = auth_kivotos
+#	}
+#	weight = @tier2weight3
+#	weight_modifier = {
+#		modifier = {
+#			set = 0
+#			BA_weapon_limit_trigger_P = yes
+#		}
+#		modifier = {
+#			multiply = 0.5
+#			always = yes
+#		}
+#	}
+#}
+#
+#tech_BA_SPW_AKIRA_WEAPON = {
+#	area = physics
+#	cost = @tier2cost1
+#	category = {
+#		school_tech
+#	}
+#	tier = 2
+#	is_rare = yes
+#	is_reverse_engineerable = no
+#	prerequisites = {
+#		tech_BA_SPW_Base_S
+#	}
+#	prereqfor_desc = {
+#		custom = {
+#			title = tech_BA_SPW_WEAPON_desc
+#			desc = AKIRA_WEAPON_DESC
+#		}
+#	}
+#	potential = {
+#		has_authority = auth_kivotos
+#	}
+#	weight = @tier2weight1
+#	weight_modifier = {
+#		modifier = {
+#			set = 0
+#			BA_weapon_limit_trigger_S = yes
+#		}
+#		modifier = {
+#			multiply = 0.5
+#			always = yes
+#		}
+#	}
+#}
+#
+#tech_BA_SPW_OTOGI_WEAPON = {
+#	area = physics
+#	cost = @tier4cost3
+#	category = {
+#		school_tech
+#	}
+#	tier = 4
+#	is_rare = yes
+#	is_reverse_engineerable = no
+#	prerequisites = {
+#		tech_BA_SPW_Base_X
+#	}
+#	prereqfor_desc = {
+#		custom = {
+#			title = tech_BA_SPW_WEAPON_desc
+#			desc = OTOGI_WEAPON_DESC
+#		}
+#	}
+#	potential = {
+#		has_authority = auth_kivotos
+#	}
+#	weight = @tier4weight3
+#	weight_modifier = {
+#		modifier = {
+#			set = 0
+#			BA_weapon_limit_trigger_X = yes
+#		}
+#		modifier = {
+#			multiply = 0.5
+#			always = yes
+#		}
+#	}
+#}

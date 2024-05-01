@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "PSrifle_turret_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/PSrifle/PSrifle_turret.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "turret_base_PSrifleShape"
+			index = 0
+			texture_diffuse = "HOD_GuardTower_PSrifle.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

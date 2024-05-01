@@ -1,0 +1,17 @@
+create_leader = {
+    class = $Class$
+    species = event_target:BA_leader_species
+    gender = female
+    name = NAME_$Leader$
+    skill = 3
+    set_age = 17
+    immortal = yes
+    event_leader = yes
+    custom_description = DESC_$Leader$
+    custom_catch_phrase = PHASE_$Leader$
+    effect = {
+        change_leader_portrait = BA_$Leader$
+        set_leader_flag = leader_death_events_blocked
+        save_global_event_target_as = BA_$Leader$_SP
+    }
+}

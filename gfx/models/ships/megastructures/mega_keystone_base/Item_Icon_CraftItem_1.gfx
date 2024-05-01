@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Item_Icon_CraftItem_1_mesh"
+		file = "gfx/models/ships/megastructures/mega_keystone_base/Item_Icon_CraftItem_1.mesh"
+		scale = 6.0
+
+		meshsettings = {
+			name = "Item_Icon_CraftItem_1Shape"
+			index = 0
+			texture_diffuse = "Item_Icon_CraftItem_1.dds"
+			texture_normal = "Item_Icon_1_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissiveAlpha"
+		}
+	}
+}

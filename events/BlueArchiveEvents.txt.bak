@@ -1,0 +1,214 @@
+namespace = BlueArchiveEvents
+# country_event = {
+# 	#主界面黑夜
+# 	id = BlueArchiveEvents.0
+# 	is_triggered_only = yes
+# 	title = "BLANK_STRING"
+# 	desc = "BLANK_STRING"
+# 	diplomatic = yes
+# 	custom_gui = BlueArchive_MainWindow_night
+# 	immediate = {
+# 		#事件提前生产0-24的随机数，通过该变量的值进行文本以及肖像的随机变化
+# 		#肖像绑定值，文本绑定值，以此实现肖像与文本的绑定
+# 		#序号为0的肖像与scripted loc当中的BlueArchivePulanaDesc0绑定，以此类推，Arona窗口同理
+# 		set_variable_to_random_value = {
+# 			which = BA_Pulana_serial
+# 			min = 0
+# 			max = 24
+# 			rounded = yes
+# 		}
+# 	}
+# }
+
+#country_event = {
+#	#主界面白天
+#	id = BlueArchiveEvents.100
+#	is_triggered_only = yes
+#	title = "BLANK_STRING"
+#	desc = "BLANK_STRING"
+#	diplomatic = yes
+#	custom_gui = BlueArchive_MainWindow_daytime
+#	immediate = {
+#		set_variable_to_random_value = {
+#			which = BA_Arona_serial
+#			min = 0
+#			max = 24
+#			rounded = yes
+#		}
+#		hidden_effect = {
+#		}
+#	}
+#}
+
+#country_event = { #科技商店
+#    id = BlueArchiveEvents.12
+#    is_triggered_only = yes
+#    desc = BlueArchiveEvents.12.desc
+#    diplomatic = yes
+#    custom_gui = BlueArchive_angel_24_technology
+#    custom_gui_option = BlueArchive_angel_24_option
+#    immediate = {
+#        #T5定价
+#        set_variable = {
+#            which = angel24_T5_prize
+#            value = 6000
+#        }
+#        if = {
+#            limit = {
+#                OR = {
+#                    has_technology = tech_dark_matter_deflector
+#                    has_technology = tech_dark_matter_power_core
+#                    has_technology = tech_dark_matter_propulsion
+#                }
+#            }
+#            set_variable = {
+#                which = angel24_T5_prize
+#                value = 3000
+#            }
+#        }
+#        if = {
+#            limit = {
+#                OR = {
+#                    has_technology = tech_mine_dark_matter
+#                    has_technology = tech_BA_dark_matter_absorbing
+#                }
+#            }
+#            set_variable = {
+#                which = angel24_T5_prize
+#                value = 1000
+#            }
+#        }
+#    }
+#
+#    #T5防具
+#    option = {
+#        name = angel24_tech_BA_Ship_armor_T5
+#        is_dialog_only = yes
+#        trigger = {
+#            NAND = {
+#                has_technology = tech_BA_Tactical_backpack_T5
+#                has_technology = tech_BA_Badge_T5
+#            }
+#        }
+#        allow = {
+#            has_technology = tech_BA_Tactical_backpack_T4
+#            has_technology = tech_BA_Badge_T4
+#            resource_stockpile_compare = {
+#                resource = sr_pyroxenes
+#                value >= 1
+#                multiplier = angel24_T5_prize
+#            }
+#        }
+#        response_text = angel24_tech_BA_Ship_armor_T5_done
+#        add_resource = {
+#            sr_pyroxenes = -1
+#            multiplier = angel24_T5_prize
+#        }
+#        add_tech_progress = {
+#            tech = tech_BA_Tactical_backpack_T5
+#            progress = 0.2
+#        }
+#        add_tech_progress = {
+#            tech = tech_BA_Badge_T5
+#            progress = 0.2
+#        }
+#    }
+#}
+#country_event = {
+#	#交流
+#	id = BlueArchiveEvents.2
+#	is_triggered_only = yes
+#	desc = BlueArchiveEvents.desc
+#	diplomatic = yes
+#	custom_gui = BlueArchive_communication
+#	immediate = {
+#	}
+#}
+
+#country_event = {
+#	#学院理念
+#	id = BlueArchiveEvents.3
+#	is_triggered_only = yes
+#	desc = BlueArchiveEvents.desc
+#	diplomatic = yes
+#	custom_gui = BlueArchive_school_idea
+#	immediate = {
+#	}
+#}
+
+#country_event = {
+#	#社团中心-Pulana
+#	id = BlueArchiveEvents.4
+#	is_triggered_only = yes
+#	desc = BlueArchiveEvents.4.desc
+#	diplomatic = yes
+#	custom_gui = BlueArchive_school_club_1
+#	immediate = {
+#		set_variable_to_random_value = {
+#			which = BA_Pulana_serial
+#			min = 0
+#			max = 24
+#			rounded = yes
+#		}
+#	}
+#}
+
+#country_event = {
+#	#游戏开发部
+#	id = BlueArchiveEvents.40
+#	is_triggered_only = yes
+#	desc = BlueArchiveEvents.40.desc
+#	diplomatic = yes
+#	custom_gui = BlueArchive_game_development_department
+#	immediate = {
+#		set_variable_to_random_value = {
+#			which = BA_game_development_department_serial
+#			min = 0
+#			max = 3
+#			rounded = yes
+#		}
+#	}
+#}
+
+# country_event = {
+# 	#社团中心-Arona
+# 	id = BlueArchiveEvents.400
+# 	is_triggered_only = yes
+# 	desc = BlueArchiveEvents.400.desc
+# 	diplomatic = yes
+# 	custom_gui = BlueArchive_school_club_2
+# 	immediate = {
+# 		set_variable_to_random_value = {
+# 			which = BA_Arona_serial
+# 			min = 0
+# 			max = 24
+# 			rounded = yes
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	#委托
+# 	id = BlueArchiveEvents.5
+# 	is_triggered_only = yes
+# 	desc = BlueArchiveEvents.desc
+# 	diplomatic = yes
+# 	custom_gui = BlueArchive_mission
+# 	immediate = {
+# 	}
+# }
+
+country_event = {
+	#开发者选项
+	id = BlueArchiveEvents.6
+	is_triggered_only = yes
+	desc = BlueArchiveEvents.desc
+	diplomatic = yes
+	custom_gui = BlueArchive_developer_options
+	immediate = {
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}

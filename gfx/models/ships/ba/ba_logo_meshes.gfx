@@ -1,0 +1,389 @@
+objectTypes = {
+
+
+	pdxmesh = {
+
+		name = "ba_sensor_station_mesh"
+		file = "gfx/models/ships/other/sensor_station.mesh"
+		animation = { id = "idle"			type = "sensor_station_idle_animation" }
+		animation = { id = "death"			type = "sensor_station_death_animation" }
+		scale = 1.2
+		
+		meshsettings = {
+			#name = "lpShape"
+			#index = 0
+			texture_diffuse = "nospec.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditive"
+			#shader = "PdxMeshShip"
+		}
+	}
+
+
+
+	pdxmesh = {
+		name = "halo_aris_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 0.8
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_ship_halo_aris.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+
+
+	pdxmesh = {
+		name = "halo_station_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_ship_halo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+
+
+	pdxmesh = {
+		name = "halo_decagrammaton_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 0.8
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_ship_halo_decagrammaton.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+	pdxmesh = {
+		name = "halo_decagrammaton_colorized_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 0.8
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_ship_halo_decagrammaton_colorized.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+
+
+
+	pdxmesh = {
+		name = "halo_extra_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 0.8
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_ship_halo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+	pdxmesh = {
+		name = "halo_big_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 0.6
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_ship_halo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+	pdxmesh = {
+		name = "halo_medium_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 0.4
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_ship_halo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+	pdxmesh = {
+		name = "halo_small_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 0.2
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_ship_halo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+
+
+	pdxmesh = {
+		name = "halo_mini_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 0.05
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_ship_halo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+
+
+
+	pdxmesh = {
+		name = "countermeasures_committee_ad_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 0.8
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_countermeasures_committee_icon.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+
+
+
+	pdxmesh = {
+		name = "engineering_department_ad_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 0.8
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_engineering_department_icon.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+
+
+	pdxmesh = {
+		name = "super_phenomenon_task_force_ad_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 0.8
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_super_phenomenon_task_force_icon.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+
+
+
+	pdxmesh = {
+		name = "game_dev_ad_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 0.8
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "ba_game_dev_icon.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+
+
+
+	pdxmesh = {
+		name = "prime_student_council_ad_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 0.8
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_prime_student_council_icon.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+
+
+	pdxmesh = {
+		name = "schale_ad_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 0.8
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_schale_icon.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+
+	pdxmesh = {
+		name = "tea_party_ad_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 0.8
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_tea_party_icon.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+
+	pdxmesh = {
+		name = "veritas_ad_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 0.8
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_veritas_icon.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+	pdxmesh = {
+		name = "item_pyroxene_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_item_pyroxene.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+
+	pdxmesh = {
+		name = "item_keystone_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_item_keystone.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+
+
+
+###################
+
+
+	pdxmesh = {
+		name = "halo_colorized_station_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_ship_halo_colorized.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+
+
+
+
+
+	pdxmesh = {
+		name = "halo_colorized_extra_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 0.8
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_ship_halo_colorized.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+	pdxmesh = {
+		name = "halo_colorized_big_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 0.6
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_ship_halo_colorized.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+	pdxmesh = {
+		name = "halo_colorized_medium_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 0.4
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_ship_halo_colorized.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+	pdxmesh = {
+		name = "halo_colorized_small_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 0.2
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_ship_halo_colorized.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+
+
+	pdxmesh = {
+		name = "halo_colorized_mini_mesh"
+		file = "gfx/models/ships/ba/logo_ba.mesh"
+		scale = 0.05
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "ba_ship_halo_colorized.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+
+}

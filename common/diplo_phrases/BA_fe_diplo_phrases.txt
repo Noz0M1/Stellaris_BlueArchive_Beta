@@ -1,0 +1,403 @@
+##### 堕落帝国通讯
+#觉醒前
+greetings = {
+	##### 日常对话（宠幸）
+	01_BA_FE_PATRONIZING = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = fallen_empire
+			is_patronizing_to = from
+			NOT = {
+				is_at_war_with = FROM
+			}
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	02_BA_FE_PATRONIZING = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = fallen_empire
+			is_patronizing_to = from
+			NOT = {
+				is_at_war_with = FROM
+			}
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	03_BA_FE_PATRONIZING = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = fallen_empire
+			is_patronizing_to = from
+			NOT = {
+				is_at_war_with = FROM
+			}
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	04_BA_FE_PATRONIZING = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = fallen_empire
+			is_patronizing_to = from
+			NOT = {
+				is_at_war_with = FROM
+			}
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	##### 日常对话（无感情）
+	01_BA_FE_DISMISSIVE = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = fallen_empire
+			is_dismissive_to = from
+			NOT = {
+				is_at_war_with = FROM
+			}
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	02_BA_FE_DISMISSIVE = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = fallen_empire
+			is_dismissive_to = from
+			NOT = {
+				is_at_war_with = FROM
+			}
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	03_BA_FE_DISMISSIVE = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = fallen_empire
+			is_dismissive_to = from
+			NOT = {
+				is_at_war_with = FROM
+			}
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	###### 日常对话(恼)
+	01_BA_FE_ANGRY = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = fallen_empire
+			is_angry_to = from
+			NOT = {
+				is_at_war_with = FROM
+			}
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	02_BA_FE_ANGRY = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = fallen_empire
+			is_angry_to = from
+			NOT = {
+				is_at_war_with = FROM
+			}
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	03_BA_FE_ANGRY = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = fallen_empire
+			is_angry_to = from
+			NOT = {
+				is_at_war_with = FROM
+			}
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	##### 战争中
+	01_BA_FE_WAR = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = fallen_empire
+			is_at_war_with = FROM
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	##对其他人
+	02_BA_FE_WAR = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = fallen_empire
+			is_at_war_with = FROM
+			from = {
+				NOT = {
+					has_authority = auth_kivotos
+				}
+			}
+		}
+	}
+}
+
+greetings = {
+	##### 日常对话（监护）
+	11_BA_FE_CUSTODIAL = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = awakened_fallen_empire
+			is_custodial_to = from
+			NOT = {
+				is_at_war_with = FROM
+			}
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	12_BA_FE_CUSTODIAL = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = awakened_fallen_empire
+			is_custodial_to = from
+			NOT = {
+				is_at_war_with = FROM
+			}
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	13_BA_FE_CUSTODIAL = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = awakened_fallen_empire
+			is_custodial_to = from
+			NOT = {
+				is_at_war_with = FROM
+			}
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	14_BA_FE_CUSTODIAL = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = awakened_fallen_empire
+			is_custodial_to = from
+			NOT = {
+				is_at_war_with = FROM
+			}
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	##### 日常对话（傲慢）
+	11_BA_FE_ARROGANT = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = awakened_fallen_empire
+			is_arrogant_to = from
+			NOT = {
+				is_at_war_with = FROM
+			}
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	12_BA_FE_ARROGANT = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = awakened_fallen_empire
+			is_arrogant_to = from
+			NOT = {
+				is_at_war_with = FROM
+			}
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	13_BA_FE_ARROGANT = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = awakened_fallen_empire
+			is_arrogant_to = from
+			NOT = {
+				is_at_war_with = FROM
+			}
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	###### 日常对话(飞扬跋扈)
+	11_BA_FE_IMPERIOUS = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = awakened_fallen_empire
+			OR = {
+				is_imperious_to = from
+				is_belligerent_to = from
+			}
+			NOT = {
+				is_at_war_with = FROM
+			}
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	12_BA_FE_IMPERIOUS = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = awakened_fallen_empire
+			OR = {
+				is_imperious_to = from
+				is_belligerent_to = from
+			}
+			NOT = {
+				is_at_war_with = FROM
+			}
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	13_BA_FE_IMPERIOUS = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = awakened_fallen_empire
+			OR = {
+				is_imperious_to = from
+				is_belligerent_to = from
+			}
+			NOT = {
+				is_at_war_with = FROM
+			}
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	##### 战争中
+	##对基沃托斯
+	11_BA_FE_WAR = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = awakened_fallen_empire
+			is_at_war_with = FROM
+			from = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	##对其他人
+	12_BA_FE_WAR = {
+		weight = {
+			weight = 10000
+		}
+		trigger = {
+			has_authority = auth_kivotos_pr
+			is_country_type = awakened_fallen_empire
+			is_at_war_with = FROM
+			from = {
+				NOT = {
+					has_authority = auth_kivotos
+				}
+			}
+		}
+	}
+}

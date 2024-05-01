@@ -1,0 +1,43 @@
+Dgate = {
+	# 本文档的写作参照
+	# https://stellaris.paradoxwikis.com/Bypass_modding
+	# 完成，如有bug，wiki全责
+	name = DGATE_GALACTDIC
+	is_pathfind = yes
+	uses_action = no
+	always_active = no
+	windup_time = 0
+	winddown_time = 0
+	ftl_multiplier = 0	# 0 means instant
+	icon_frame = 30
+	remember_instances = no	# whether countries remember meeting a specific instance of that type, or if they just remember seeing the type in general
+	galactic_map_tooltip_header = DGATE_GALACTDIC
+	galactic_map_tooltip_desc = DGATE_GALACTDIC_DESC
+	connection_type = any_other
+	animation_time = 1
+	ftl_ship_effect = "gateway_ftl_ship_effect_entity"
+	ftl_bypass_effect = "gateway_ftl_bypass_effect_entity"
+	extends_sensors = yes
+	country_can_use = {
+		#always = yes
+		custom_tooltip = {
+			fail_text = Dgate_base_fail_tooltip
+			OR = {
+				has_authority = auth_kivotos
+				has_authority = auth_ba_fe
+			}
+		}
+	}
+	# scripted_connection = {
+	# 	# defines endpoints that can only reach the "nexus"
+	# 	node = {
+	# 		# system scope
+	# 		has_star_flag = BA_Dnode
+	# 	}
+	# 	# defines endpoint(s) that can reach all "nodes" (but not other nexuses)
+	# 	nexus = {
+	# 		# system scope
+	# 		has_star_flag = BA_Dnexus
+	# 	}
+	# }
+}

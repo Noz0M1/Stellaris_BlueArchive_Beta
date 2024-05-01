@@ -1,0 +1,1551 @@
+namespace = BA_Precursor
+######################
+###     前置准备 
+######################
+#初始化
+country_event = {
+	id = BA_Precursor.0001
+	is_triggered_only = yes
+	hide_window = yes
+	fire_only_once = yes
+	trigger = {
+		is_country_type = global_event
+		any_country = {
+			is_ai = no
+			has_authority = auth_kivotos
+		}
+	}
+	immediate = {
+		#### 设定难度！！
+		set_variable = {
+			which = BA_Crisis_Strength
+			value = 0
+		}
+		get_galaxy_setup_value = {
+			which = BA_Crisis_Strength
+			setting = crisis_strength_scale
+		}
+		# <5 简单；<25 中等；<250 困难；else 疯狂
+		if = {
+			limit = {
+				check_variable = {
+					which = BA_Crisis_Strength
+					value < 5
+				}
+			}
+			set_global_flag = BA_Crisis_Normal
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = BA_Crisis_Strength
+					value < 25
+				}
+			}
+			set_global_flag = BA_Crisis_Hardcore
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = BA_Crisis_Strength
+					value < 250
+				}
+			}
+			set_global_flag = BA_Crisis_Extreme
+		}
+		else = {
+			set_global_flag = BA_Crisis_Insane
+		}
+		#### 创建国家 选择线路
+		create_species = {
+			name = "NAME_BA_Precursor_species"
+			class = Schale
+			portrait = Schale_pr
+			traits = {
+				trait = trait_pc_ringworld_habitable_preference
+				trait = trait_Halo_precursor
+				trait = trait_BA_top_notchism
+				trait = trait_BA_starlink
+				trait = trait_BA_gammer
+			}
+			allow_negative_traits = no
+			effect = {
+				save_global_event_target_as = BA_Precursor_species
+			}
+		}
+		create_country = {
+			name = NAME_BA_Precursor_country
+			species = event_target:BA_Precursor_species
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			authority = auth_kivotos_pr
+			ethos = {
+				ethic = ethic_fanatic_egalitarian
+				ethic = ethic_pacifist
+			}
+			origin = origin_ba_fallen_empire
+			civics = {
+				civic = civic_ba_fe
+			}
+			flag = {
+				icon = {
+					category = "special"
+					file = "flag_MX.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "flag_BG_31.dds"
+				}
+				colors = {
+					"satin_burgundy"
+					"intense_blue"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				##########
+				save_global_event_target_as = BA_Precursor_country
+				set_country_flag = BA_Precursor
+				##########
+				create_leader = {
+					class = official
+					species = event_target:BA_Precursor_species
+					gender = female
+					name = NAME_Seia
+					skill = 3
+					set_age = 17
+					immortal = yes
+					event_leader = yes
+					traits = {
+					}
+					effect = {
+						change_leader_portrait = BA_Seia
+						owner = {
+							assign_leader = prev
+						}
+					}
+				}
+				##########
+				add_resource = {
+					minerals = 5000
+					energy = 5000
+					food = 5000
+					alloys = 5000
+					consumer_goods = 5000
+					influence = 800
+					unity = 500000
+					#sr_dark_matter = 100000
+					sr_keystone = 500000
+					sr_pyroxenes = 500000
+				}
+				add_global_ship_design = NAME_BA_FE_MISSILE_SHIP
+				add_global_ship_design = NAME_BA_FE_ARTILLERY_SHIP
+				add_global_ship_design = NAME_BA_FE_SWARM_SHIP
+				add_global_ship_design = NAME_BA_FE_HUB_SHIP
+				add_global_ship_design = NAME_BA_FE_DEFENCE_CANON
+				add_global_ship_design = NAME_BA_FE_CONSTRUCTION
+				##########
+				BA_fe_fleet_initial = yes
+				##########
+				country_event = {
+					id = BA_Precursor.0100
+					days = 3600
+					random = 3600
+				}
+			}
+		}
+		#### 创建星系
+		set_global_flag = Precursor_cluster_generated
+		set_spawn_system_batch = begin
+		## 生成第一个星系
+		#200
+		if = {
+			limit = {
+				count_system = {
+					count <= 250
+				}
+			}
+			#入口*3
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 90
+					max_distance <= 180
+					min_orientation_angle = 30
+					max_orientation_angle = 30
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 90
+					max_distance <= 180
+					min_orientation_angle = 150
+					max_orientation_angle = 150
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_2
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 90
+					max_distance <= 180
+					min_orientation_angle = 270
+					max_orientation_angle = 270
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_3
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			#10
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_MALKUTH
+					min_distance >= 350
+					max_distance <= 360
+					min_orientation_angle = 135
+					max_orientation_angle = 135
+					hyperlane = no
+					effect = {
+						save_global_event_target_as = D_MALKUTH
+						BA_fe_system_initial = yes
+					}
+				}
+			}
+		}
+		#400
+		else_if = {
+			limit = {
+				count_system = {
+					count <= 450
+				}
+			}
+			#入口*4
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 125
+					max_distance <= 250
+					min_orientation_angle = 0
+					max_orientation_angle = 0
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 125
+					max_distance <= 250
+					min_orientation_angle = 90
+					max_orientation_angle = 90
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 125
+					max_distance <= 250
+					min_orientation_angle = 180
+					max_orientation_angle = 180
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 125
+					max_distance <= 250
+					min_orientation_angle = 270
+					max_orientation_angle = 270
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			#10
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_MALKUTH
+					min_distance >= 500
+					max_distance <= 510
+					min_orientation_angle = 135
+					max_orientation_angle = 135
+					hyperlane = no
+					effect = {
+						save_global_event_target_as = D_MALKUTH
+						BA_fe_system_initial = yes
+					}
+				}
+			}
+		}
+		#600
+		else_if = {
+			limit = {
+				count_system = {
+					count <= 650
+				}
+			}
+			#入口*5
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 150
+					max_distance <= 300
+					min_orientation_angle = 0
+					max_orientation_angle = 0
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 150
+					max_distance <= 300
+					min_orientation_angle = 72
+					max_orientation_angle = 72
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 150
+					max_distance <= 300
+					min_orientation_angle = 144
+					max_orientation_angle = 144
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 150
+					max_distance <= 300
+					min_orientation_angle = 216
+					max_orientation_angle = 216
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 150
+					max_distance <= 300
+					min_orientation_angle = 288
+					max_orientation_angle = 288
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			#10
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_MALKUTH
+					min_distance >= 580
+					max_distance <= 590
+					min_orientation_angle = 135
+					max_orientation_angle = 135
+					hyperlane = no
+					effect = {
+						save_global_event_target_as = D_MALKUTH
+						BA_fe_system_initial = yes
+					}
+				}
+			}
+		}
+		#800
+		else_if = {
+			limit = {
+				count_system = {
+					count <= 850
+				}
+			}
+			#入口*6
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 160
+					max_distance <= 320
+					min_orientation_angle = 0
+					max_orientation_angle = 0
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 160
+					max_distance <= 320
+					min_orientation_angle = 60
+					max_orientation_angle = 60
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 160
+					max_distance <= 320
+					min_orientation_angle = 120
+					max_orientation_angle = 120
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 160
+					max_distance <= 320
+					min_orientation_angle = 180
+					max_orientation_angle = 180
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 160
+					max_distance <= 320
+					min_orientation_angle = 240
+					max_orientation_angle = 240
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 160
+					max_distance <= 320
+					min_orientation_angle = 300
+					max_orientation_angle = 300
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			#10
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_MALKUTH
+					min_distance >= 630
+					max_distance <= 640
+					min_orientation_angle = 135
+					max_orientation_angle = 135
+					hyperlane = no
+					effect = {
+						save_global_event_target_as = D_MALKUTH
+						BA_fe_system_initial = yes
+					}
+				}
+			}
+		}
+		#1000
+		else = {
+			#入口*8
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 170
+					max_distance <= 340
+					min_orientation_angle = 0
+					max_orientation_angle = 0
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 170
+					max_distance <= 340
+					min_orientation_angle = 45
+					max_orientation_angle = 45
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 170
+					max_distance <= 340
+					min_orientation_angle = 90
+					max_orientation_angle = 90
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 170
+					max_distance <= 340
+					min_orientation_angle = 135
+					max_orientation_angle = 135
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 170
+					max_distance <= 340
+					min_orientation_angle = 180
+					max_orientation_angle = 180
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 170
+					max_distance <= 340
+					min_orientation_angle = 225
+					max_orientation_angle = 225
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 170
+					max_distance <= 340
+					min_orientation_angle = 270
+					max_orientation_angle = 270
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_ENTRANCE
+					min_distance >= 170
+					max_distance <= 340
+					min_orientation_angle = 315
+					max_orientation_angle = 315
+					hyperlane = yes
+					effect = {
+						save_global_event_target_as = D_ENTRANCE_1
+						set_star_flag = BA_Dnode
+					}
+				}
+			}
+			#10
+			no_scope = {
+				spawn_system = {
+					initializer = BA_D_system_MALKUTH
+					min_distance >= 680
+					max_distance <= 690
+					min_orientation_angle = 135
+					max_orientation_angle = 135
+					hyperlane = no
+					effect = {
+						save_global_event_target_as = D_MALKUTH
+						BA_fe_system_initial = yes
+					}
+				}
+			}
+		}
+		## 生成其余的星系
+		#09
+		event_target:D_MALKUTH = {
+			spawn_system = {
+				initializer = BA_D_system_YESOD
+				min_distance >= 20
+				max_distance <= 20
+				min_orientation_angle = 180
+				max_orientation_angle = 180
+				hyperlane = yes
+				effect = {
+					save_global_event_target_as = D_YESOD
+					set_star_flag = BA_Dnode
+				}
+			}
+		}
+		#08
+		event_target:D_YESOD = {
+			spawn_system = {
+				initializer = BA_D_system_HOD
+				min_distance >= 20
+				max_distance <= 20
+				min_orientation_angle = 240
+				max_orientation_angle = 240
+				hyperlane = yes
+				effect = {
+					save_global_event_target_as = D_HOD
+					set_star_flag = BA_Dnode
+				}
+			}
+		}
+		#07
+		event_target:D_YESOD = {
+			spawn_system = {
+				initializer = BA_D_system_NETSAH
+				min_distance >= 20
+				max_distance <= 20
+				min_orientation_angle = 120
+				max_orientation_angle = 120
+				hyperlane = yes
+				effect = {
+					save_global_event_target_as = D_NETSAH
+					set_star_flag = BA_Dnode
+				}
+			}
+		}
+		#05
+		event_target:D_HOD = {
+			spawn_system = {
+				initializer = BA_D_system_GEBURAH
+				min_distance >= 20
+				max_distance <= 20
+				min_orientation_angle = 180
+				max_orientation_angle = 180
+				hyperlane = yes
+				effect = {
+					save_global_event_target_as = D_GEBURAH
+					set_star_flag = BA_Dnode
+				}
+			}
+		}
+		#04
+		event_target:D_NETSAH = {
+			spawn_system = {
+				initializer = BA_D_system_CHESED
+				min_distance >= 20
+				max_distance <= 20
+				min_orientation_angle = 180
+				max_orientation_angle = 180
+				hyperlane = yes
+				effect = {
+					save_global_event_target_as = D_CHESED
+					set_star_flag = BA_Dnode
+				}
+			}
+		}
+		#03
+		event_target:D_GEBURAH = {
+			spawn_system = {
+				initializer = BA_D_system_BINAH
+				min_distance >= 20
+				max_distance <= 20
+				min_orientation_angle = 180
+				max_orientation_angle = 180
+				hyperlane = yes
+				effect = {
+					save_global_event_target_as = D_BINAH
+					set_star_flag = BA_Dnode
+				}
+			}
+		}
+		#02
+		event_target:D_CHESED = {
+			spawn_system = {
+				initializer = BA_D_system_CHHOKMAH
+				min_distance >= 20
+				max_distance <= 20
+				min_orientation_angle = 180
+				max_orientation_angle = 180
+				hyperlane = yes
+				effect = {
+					save_global_event_target_as = D_CHHOKMAH
+					set_star_flag = BA_Dnode
+				}
+			}
+		}
+		#06
+		event_target:D_YESOD = {
+			spawn_system = {
+				initializer = BA_D_system_TIPHARETH
+				min_distance >= 20
+				max_distance <= 20
+				min_orientation_angle = 180
+				max_orientation_angle = 180
+				hyperlane = no
+				effect = {
+					save_global_event_target_as = D_TIPHARETH
+					set_star_flag = BA_Dnode
+				}
+			}
+			add_hyperlane = {
+				from = event_target:D_HOD
+				to = event_target:D_TIPHARETH
+			}
+			add_hyperlane = {
+				from = event_target:D_NETSAH
+				to = event_target:D_TIPHARETH
+			}
+			add_hyperlane = {
+				from = event_target:D_GEBURAH
+				to = event_target:D_TIPHARETH
+			}
+			add_hyperlane = {
+				from = event_target:D_CHESED
+				to = event_target:D_TIPHARETH
+			}
+		}
+		#01
+		event_target:D_TIPHARETH = {
+			spawn_system = {
+				initializer = BA_D_system_KETHER
+				min_distance >= 40
+				max_distance <= 40
+				min_orientation_angle = 180
+				max_orientation_angle = 180
+				hyperlane = no
+				effect = {
+					save_global_event_target_as = D_KETHER
+					set_star_flag = BA_Dnode
+				}
+			}
+			add_hyperlane = {
+				from = event_target:D_CHHOKMAH
+				to = event_target:D_KETHER
+			}
+			add_hyperlane = {
+				from = event_target:D_BINAH
+				to = event_target:D_KETHER
+			}
+		}
+		##
+		set_spawn_system_batch = end
+		##先驱者线
+		event_target:BA_Precursor_species = {
+			# save_global_event_target_as = BA_fe_species
+			set_species_homeworld = event_target:BA_fe_homeworld
+		}
+		event_target:BA_Precursor_country = {
+			# save_global_event_target_as = BA_fe_country
+			every_system_within_border = {
+				while = {
+					count = 10
+					BA_fe_create_fleet = yes
+				}
+			}
+			event_target:D_KETHER = {
+				while = {
+					count = 10
+					BA_fe_create_fleet = yes
+				}
+			}
+			event_target:D_TIPHARETH = {
+				while = {
+					count = 10
+					BA_fe_create_fleet = yes
+				}
+			}
+			event_target:D_MALKUTH = {
+				while = {
+					count = 10
+					BA_fe_create_fleet = yes
+				}
+			}
+		}
+	}
+}
+
+#先驱者月检
+country_event = {
+	id = BA_Precursor.0002
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = BA_Precursor
+	}
+	immediate = {
+		#如果已觉醒，打开内部星门
+		if = {
+			limit = {
+				is_country_type = awakened_fallen_empire
+				has_global_flag = BA_outland_activated
+				NOT = {
+					has_global_flag = BA_inland_activated
+				}
+			}
+			force_add_civic = civic_ba_awakened_fe
+			country_event = {
+				id = BA_Precursor.0011
+			}
+		}
+	}
+}
+
+#激活外域链路
+country_event = {
+	id = BA_Precursor.0010
+	is_triggered_only = yes
+	fire_only_once = yes
+	hide_window = yes
+	immediate = {
+		set_global_flag = BA_outland_activated
+		every_megastructure = {
+			limit = {
+				is_megastructure_type = Dgate_base
+				NOT = {
+					has_megastructure_flag = Dgate_activated
+				}
+				solar_system = {
+					NOT = {
+						has_star_flag = BA_KETHER_SYS_flag
+					}
+				}
+			}
+			activate_gateway = this
+			set_megastructure_flag = Dgate_activated
+		}
+	}
+}
+
+#激活失落帝国内链路
+country_event = {
+	id = BA_Precursor.0011
+	is_triggered_only = yes
+	fire_only_once = yes
+	hide_window = yes
+	immediate = {
+		set_global_flag = BA_inland_activated
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = default
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+					is_country_type = dormant_marauders
+					is_country_type = awakened_marauders
+				}
+				NOT = {
+					has_communications = event_target:BA_Precursor_country
+				}
+			}
+			establish_communications_no_message = event_target:BA_Precursor_country
+			country_event = {
+				id = BA_Precursor.0102
+			}
+		}
+		every_megastructure = {
+			limit = {
+				is_megastructure_type = Dgate_base
+				NOT = {
+					has_megastructure_flag = Dgate_activated
+				}
+				solar_system = {
+					has_star_flag = BA_KETHER_SYS_flag
+				}
+			}
+			activate_gateway = this
+			set_megastructure_flag = Dgate_activated
+		}
+	}
+}
+
+#通知外部链路激活
+country_event = {
+	id = BA_Precursor.0015
+	is_triggered_only = yes
+	title = BA_Precursor.0015.title
+	picture = GFX_evt_drifting_gateway
+	desc = {
+		text = BA_Precursor.0015.desc.1
+		trigger = {
+			has_country_flag = BA_FIND_D_GATE
+		}
+	}
+	desc = {
+		text = BA_Precursor.0015.desc.2
+		trigger = {
+			NOT = {
+				has_country_flag = BA_FIND_D_GATE
+			}
+		}
+	}
+	picture = GFX_BA_Checkmate
+	trigger = {
+	}
+	option = {
+		name = BA_Precursor.0015.a
+		trigger = {
+			has_country_flag = BA_FIND_D_GATE
+		}
+	}
+	option = {
+		name = BA_Precursor.0015.b
+		trigger = {
+			NOT = {
+				has_country_flag = BA_FIND_D_GATE
+			}
+		}
+	}
+}
+
+#通知内部链路激活
+country_event = {
+	id = BA_Precursor.0016
+	is_triggered_only = yes
+	title = BA_Precursor.0016.title
+	desc = BA_Precursor.0016.desc
+	picture_event_data = {
+		portrait = event_target:BA_Precursor_country
+		room = BA_01_room
+	}
+	option = {
+		name = BA_Precursor.0016.next
+	}
+}
+
+######################
+###     探索星系 
+######################
+#进入通讯接口
+ship_event = {
+	id = BA_Precursor.0051
+	is_triggered_only = yes
+	title = BA_Precursor.0051.title
+	desc = BA_Precursor.0051.desc
+	picture = GFX_BA_Checkmate
+	trigger = {
+		from = {
+			has_star_flag = BA_D_ENTRANCE
+		}
+		fromfrom = {
+			has_authority = auth_kivotos
+			NOT = {
+				has_country_flag = BA_FIND_D_GATE
+			}
+		}
+	}
+	immediate = {
+		fromfrom = {
+			set_country_flag = BA_FIND_D_GATE
+		}
+	}
+	option = {
+		name = BA_Precursor.0051.next
+	}
+}
+
+#进入失落帝国境内
+ship_event = {
+	id = BA_Precursor.0052
+	is_triggered_only = yes
+	title = BA_Precursor.0052.title
+	desc = BA_Precursor.0052.desc
+	picture = GFX_BA_Checkmate
+	trigger = {
+		from = {
+			has_star_flag = BA_FE_SYS
+			NOT = {
+				has_star_flag = BA_MALKUTH_SYS_flag
+			}
+		}
+		fromfrom = {
+			has_authority = auth_kivotos
+			NOT = {
+				has_country_flag = BA_ENTERED_FE
+			}
+		}
+	}
+	immediate = {
+		fromfrom = {
+			set_country_flag = BA_ENTERED_FE
+		}
+	}
+	option = {
+		name = BA_Precursor.0052.next
+	}
+}
+
+#进入失落帝国环世界
+#进入失落帝国母星
+ship_event = {
+	id = BA_Precursor.0054
+	is_triggered_only = yes
+	title = BA_Precursor.0054.title
+	desc = BA_Precursor.0054.desc
+	picture = GFX_BA_Checkmate
+	trigger = {
+		from = {
+			has_star_flag = BA_MALKUTH_SYS_flag
+		}
+		fromfrom = {
+			has_authority = auth_kivotos
+			NOT = {
+				has_country_flag = BA_ENTERED_FE_HOME
+			}
+		}
+	}
+	immediate = {
+		fromfrom = {
+			set_country_flag = BA_ENTERED_FE_HOME
+		}
+	}
+	option = {
+		name = BA_Precursor.0054.next
+	}
+}
+
+#链路接口扫完后刷一个坟
+ship_event = {
+	id = BA_Precursor.0057
+	is_triggered_only = yes
+	title = BA_Precursor.0057.title
+	desc = BA_Precursor.0057.desc
+	picture = GFX_BA_Checkmate
+	fire_only_once = yes
+	trigger = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+		solar_system = {
+			has_star_flag = BA_D_ENTRANCE
+		}
+	}
+	option = {
+		name = BA_Precursor.0057.next
+		default_hide_option = yes
+		solar_system = {
+			random_system_planet = {
+				limit = {
+					has_planet_flag = BA_D_system_base
+				}
+			}
+			create_archaeological_site = BA_Dgate_arc_site
+		}
+	}
+}
+
+#进入一个新星系，+1数据
+ship_event = {
+	id = BA_Precursor.0060
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		owner = {
+			is_ai = no
+			has_authority = auth_kivotos
+		}
+	}
+	immediate = {
+		owner = {
+			change_variable = {
+				which = BA_Precursor_system_info
+				value = 1
+			}
+		}
+	}
+}
+
+######################
+###     先驱通讯 
+######################
+### 初次交流
+#触发器
+country_event = {
+	id = BA_Precursor.0100
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		create_country = {
+			name = "NAME_BA_Precursor_contactor"
+			type = Shittem_communication
+			ignore_initial_colony_error = yes
+			species = event_target:BA_Precursor_species
+			flag = {
+				icon = {
+					category = "special"
+					file = "flag_MX.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+				colors = {
+					"black"
+					"black"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				set_country_flag = BA_Precursor_contactor
+				save_global_event_target_as = BA_Precursor_contactor
+				every_country = {
+					set_faction_hostility = {
+						target = prev
+						set_neutral = no
+						set_hostile = no
+						set_friendly = yes
+					}
+				}
+			}
+		}
+		#与先驱者联系
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = default
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+			}
+			establish_communications_no_message = root
+			country_event = {
+				id = BA_Precursor.0101
+			}
+		}
+		#启动外域星门
+		random_country = {
+			limit = {
+				is_country_type = global_event
+			}
+			country_event = {
+				id = BA_Precursor.0010
+			}
+		}
+	}
+}
+
+#通讯触发（先驱者线路）
+country_event = {
+	id = BA_Precursor.0101
+	is_triggered_only = yes
+	title = BA_Precursor.0101.title
+	desc = BA_Precursor.0101.desc
+	picture = GFX_evt_clocks
+	trigger = {
+		NOT = {
+			has_country_flag = BA_Gematria_contacted
+		}
+	}
+	immediate = {
+		set_country_flag = BA_Gematria_contacted
+		set_global_flag = BA_Gematria_contacted
+		set_variable = {
+			which = BA_Precursor_stockpile
+			value = 0
+		}
+		set_variable = {
+			which = BA_Precursor_mounthly
+			value = 0
+		}
+		set_variable = {
+			which = BA_Precursor_limit
+			value = 1600
+		}
+	}
+	option = {
+		name = BA_Precursor.0101.next
+		hidden_effect = {
+			country_event = {
+				id = BA_Precursor.0102
+			}
+		}
+	}
+}
+
+#先驱反抗者通讯
+country_event = {
+	id = BA_Precursor.0102
+	is_triggered_only = yes
+	title = BA_Precursor.0102.title
+	desc = BA_Precursor.0102.desc
+	diplomatic = yes
+	force_open = yes
+	custom_gui = "BA_Window"
+	picture_event_data = {
+		portrait = event_target:BA_Precursor_country
+		room = BA_01_room
+	}
+	immediate = {
+		event_target:BA_Precursor_species = {
+			change_species_portrait = BA_Seia
+		}
+	}
+	### 基沃托斯
+	option = {
+		name = BA_Precursor.0102.Eden_Treaty
+		is_dialog_only = yes
+		trigger = {
+			has_origin = origin_Kivotos_Eden_treaty
+		}
+		response_text = BA_Precursor.0102.Eden_Treaty.re
+	}
+	option = {
+		name = BA_Precursor.0102.Kyrie
+		is_dialog_only = yes
+		trigger = {
+			has_origin = origin_Kivotos_Kyrie
+		}
+		response_text = BA_Precursor.0102.Kyrie.re
+	}
+	option = {
+		name = BA_Precursor.0102.Kivotos_other
+		is_dialog_only = yes
+		trigger = {
+			NOR = {
+				has_origin = origin_Kivotos_Eden_treaty
+				has_origin = origin_Kivotos_Kyrie
+			}
+			has_authority = auth_kivotos
+		}
+		response_text = BA_Precursor.0102.Kivotos_other.re
+	}
+	### 返回
+	option = {
+		name = BA_Precursor.0102.exit_Kivotos
+		trigger = {
+			has_authority = auth_kivotos
+		}
+		response_text = BA_Precursor.0102.exit_Kivotos.re
+		event_target:BA_Precursor_country = {
+			set_closed_borders = {
+				who = prev
+				status = no
+			}
+			add_opinion_modifier = {
+				who = prev
+				modifier = opinion_BA_fe_after
+			}
+			add_intel = {
+				who = prev
+				amount = 100
+			}
+		}
+		hidden_effect = {
+			add_opinion_modifier = {
+				who = event_target:BA_Precursor_country
+				modifier = opinion_BA_fe_after
+			}
+			add_intel = {
+				who = event_target:BA_Precursor_country
+				amount = 100
+			}
+			#和先驱者通讯站联络
+			#establish_communications_no_message = event_target:BA_Precursor_contactor
+		}
+	}
+	option = {
+		name = BA_Precursor.0102.exit_other
+		trigger = {
+			NOT = {
+				has_authority = auth_kivotos
+			}
+		}
+		response_text = BA_Precursor.0102.exit_other.re
+	}
+}
+
+### 通讯站
+#点击触发
+country_event = {
+	id = BA_Precursor.0150
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {
+			has_country_flag = BA_Precursor_contactor
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				always = yes				#以后改
+			}
+			country_event = {
+				id = BA_Precursor.0151
+			}
+		}
+		else = {
+			country_event = {
+				id = BA_Precursor.0152
+			}
+		}
+	}
+}
+
+#拒绝接入
+country_event = {
+	id = BA_Precursor.0151
+	is_triggered_only = yes
+	title = BA_Precursor.0151.title
+	desc = BA_Precursor.0151.desc
+	diplomatic = yes
+	custom_gui = "BA_Window"
+	picture_event_data = {
+		portrait = event_target:BA_Precursor_country.leader
+		room = BA_01_room
+	}
+	option = {
+		name = BA_Precursor.0151.next
+	}
+}
+
+#主界面
+country_event = {
+	id = BA_Precursor.0152
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_Window"
+	picture_event_data = {
+		portrait = BA_Seia
+		room = BA_01_room
+	}
+	title = BA_Precursor.main.title
+	desc = {
+		text = BA_Precursor.main.desc.1
+	}
+	desc = {
+		text = BA_Precursor.main.desc.2
+	}
+	desc = {
+		text = BA_Precursor.main.desc.3
+	}
+	desc = {
+		text = BA_Precursor.main.desc.4
+	}
+	desc = {
+		text = BA_Precursor.main.desc.5
+	}
+	#退出
+	option = {
+		name = BA_Precursor.exit
+		default_hide_option = yes
+	}
+	#说明
+	option = {
+		name = BA_Precursor.manual
+		is_dialog_only = yes
+		response_text = BA_Precursor.manual.re
+	}
+	#交易物资
+	option = {
+		name = BA_Precursor.trade
+	}
+	#交易其他
+	option = {
+		name = BA_Precursor.other
+	}
+	#交流信息	
+	option = {
+		name = BA_Precursor.info
+	}
+}
+
+######################
+###     考古遗址
+######################
+fleet_event = {
+	id = BA_Precursor.8001
+	title = BA_Dgate_arc_site
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = BA_Dgate_arc_site_desc_RAID01
+	}
+	option = {
+		name = BA_Dgate_arc_site_option_RAID01
+	}
+}
+
+fleet_event = {
+	id = BA_Precursor.8002
+	title = BA_Dgate_arc_site
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = BA_Dgate_arc_site_desc_RAID02
+	}
+	option = {
+		name = BA_Dgate_arc_site_option_RAID02
+	}
+}
+
+fleet_event = {
+	id = BA_Precursor.8003
+	title = BA_Dgate_arc_site
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = BA_Dgate_arc_site_desc_RAID03
+	}
+	option = {
+		name = BA_Dgate_arc_site_option_RAID03
+	}
+}
+
+fleet_event = {
+	id = BA_Precursor.8004
+	title = BA_Dgate_arc_site
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = BA_Dgate_arc_site_desc_RAID04
+	}
+	option = {
+		name = BA_Dgate_arc_site_option_RAID04
+	}
+}
+
+fleet_event = {
+	id = BA_Precursor.8005
+	title = BA_Dgate_arc_site
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = BA_Dgate_arc_site_desc_RAID05
+	}
+	option = {
+		name = BA_Dgate_arc_site_option_RAID05
+	}
+}

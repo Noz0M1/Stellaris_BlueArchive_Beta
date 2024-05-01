@@ -1,0 +1,2220 @@
+namespace = BA_Project
+#################################
+###
+### 摇篮计划    by Nozomi
+###
+#################################
+#初始化
+country_event = {
+	id = BA_Project.0001
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_authority = auth_kivotos
+	}
+	immediate = {
+		#目标准备
+		capital_scope = {
+			#设首都旗帜
+			set_planet_flag = BA_Kivotos_capital
+			set_planet_flag = colony_event			#屏蔽地底人一类的事件
+			set_planet_size = 23
+			#为摇篮计划准备目标
+			solar_system = {
+				set_star_flag = BA_Project_Cradle_system
+				if = {
+					limit = {
+						NOT = {
+							any_system_planet = {
+								has_planet_flag = BA_Project_Cradle_target
+							}
+						}
+					}
+					random_system_planet = {
+						limit = {
+							# is_star = no
+							# is_asteroid = no
+							# NOR = {
+							# 	is_planet_class = pc_continental
+							# 	is_planet_class = pc_tropical
+							# 	is_planet_class = pc_ocean
+							# 	is_planet_class = pc_desert
+							# 	is_planet_class = pc_arid
+							# 	is_planet_class = pc_tundra
+							# 	is_planet_class = pc_arctic
+							# 	is_planet_class = pc_alpine
+							# 	is_planet_class = pc_savannah
+							# 	is_planet_class = pc_BA_campus_planet
+							# 	is_planet_class = pc_BA_ruined_planet
+							# 	is_planet_class = pc_gas_giant
+							# }
+							NOR = {
+								is_star = yes
+								is_ideal = yes
+								is_colonizable = yes
+								is_colony = yes
+								is_asteroid = yes
+								is_artificial = yes
+								num_pops > 1
+								is_planet_class = pc_BA_campus_planet
+								is_planet_class = pc_BA_ruined_planet
+								is_planet_class = pc_gas_giant
+							}
+						}
+						set_planet_flag = BA_Project_Cradle_target
+						set_planet_flag = colony_event
+						set_planet_size = 23
+						change_pc = pc_shielded
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_system_planet = {
+								has_planet_flag = BA_Gematria_station
+							}
+						}
+					}
+					random_system_planet = {
+						limit = {
+							is_star = no
+							NOR = {
+								is_planet_class = pc_BA_campus_planet
+								is_planet_class = pc_BA_ruined_planet
+								has_planet_flag = BA_Project_Cradle_target
+							}
+						}
+						set_planet_flag = BA_Gematria_station
+						#save_global_event_target_as = Project_Cradle_02_target
+					}
+				}
+			}
+		}
+	}
+}
+
+#年检启动器
+country_event = {
+	id = BA_Project.0002
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		any_planet_within_border = {
+			has_planet_flag = BA_Project_Cradle_target
+			is_planet_class = pc_shielded
+		}
+		has_country_flag = BA_Project_Cradle_ready
+	}
+	immediate = {
+		country_event = {
+			id = BA_Project.0010
+			days = 60
+			random = 240
+		}
+	}
+}
+
+##########
+#启动摇篮计划 A
+##########
+#启动
+country_event = {
+	id = BA_Project.0010
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0010.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	immediate = {
+		remove_country_flag = BA_Project_Cradle_ready
+		#重设目标
+		# random_planet_within_border = {
+		# 	limit = {
+		# 		has_planet_flag = BA_Project_Cradle_target
+		# 		is_planet_class = pc_shielded
+		# 	}
+		# 	#save_global_event_target_as = Kivotos_shielded_planet
+		# 	solar_system = {
+		# 		random_system_planet = {
+		# 			limit = {
+		# 				NOR = {
+		# 					is_planet_class = pc_BA_campus_planet
+		# 					is_planet_class = pc_BA_ruined_planet
+		# 					is_planet_class = pc_shielded
+		# 				}
+		# 			}
+		# 			set_planet_flag = BA_Gematria_station
+		# 			#save_global_event_target_as = Project_Cradle_02_target
+		# 		}
+		# 	}
+		# }
+	}
+	option = {
+		name = BA_Project.0010.a
+		is_dialog_only = yes
+		response_text = "BA_Project.0010.a.response"
+	}
+	option = {
+		name = BA_Project.0010.next
+		begin_event_chain = {
+			event_chain = BA_Project_Cradle_chain
+			target = root
+		}
+		start_situation = {
+			type = situation_Project_Cradle_A
+		}
+	}
+}
+
+#建筑遗址线索
+country_event = {
+	id = BA_Project.0011
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0011.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_Project.0011.a
+		is_dialog_only = yes
+		response_text = "BA_Project.0011.a.response"
+	}
+	option = {
+		name = BA_Project.0011.b
+		is_dialog_only = yes
+		response_text = "BA_Project.0011.b.response"
+	}
+	option = {
+		name = BA_Project.0011.next
+		random_planet_within_border = {
+			limit = {
+				solar_system = {
+					is_capital_system = yes
+				}
+				has_planet_flag = BA_Gematria_station
+			}
+			enable_special_project = {
+				name = BA_Project_Cradle_02				#扫描建筑遗址
+				location = this
+				owner = root
+			}
+		}
+	}
+}
+
+#计划发掘中继站
+country_event = {
+	id = BA_Project.0012
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0012.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_Project.0012.next
+		random_planet_within_border = {
+			limit = {
+				solar_system = {
+					is_capital_system = yes
+				}
+				has_planet_flag = BA_Gematria_station
+			}
+			enable_special_project = {
+				name = BA_Project_Cradle_03				#中继站发掘
+				#location = event_target:Project_Cradle_02_target
+				location = this
+				owner = root
+			}
+		}
+	}
+}
+
+#获取图纸
+country_event = {
+	id = BA_Project.0013
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0013.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	immediate = {
+		remove_country_flag = BA_Project_Cradle_A_ship_event
+	}
+	option = {
+		name = BA_Project.0013.a
+		is_dialog_only = yes
+		response_text = "BA_Project.0013.a.response"
+	}
+	option = {
+		name = BA_Project.0013.b
+		is_dialog_only = yes
+		response_text = "BA_Project.0013.b.response"
+	}
+	option = {
+		name = BA_Project.0013.next
+	}
+}
+
+#准备解除屏障
+country_event = {
+	id = BA_Project.0014
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0014.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_Project.0014.a
+		is_dialog_only = yes
+		response_text = "BA_Project.0014.a.response"
+	}
+	option = {
+		name = BA_Project.0014.next
+	}
+}
+
+#解除完毕
+country_event = {
+	id = BA_Project.0015
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0015.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_Project.0015.a
+		is_dialog_only = yes
+		response_text = "BA_Project.0015.a.response"
+	}
+	option = {
+		name = BA_Project.0015.next
+		random_planet_within_border = {
+			limit = {
+				Project_Cradle_planet_trigger = yes
+			}
+			change_pc = pc_BA_ruined_planet_model
+		}
+	}
+}
+
+#报告可以定居
+country_event = {
+	id = BA_Project.0016
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0016.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_Project.0016.next
+		random_planet_within_border = {
+			limit = {
+				Project_Cradle_planet_trigger = yes
+			}
+			change_pc = pc_BA_ruined_planet
+		}
+		end_event_chain = BA_Project_Cradle_chain
+		destroy_situation = from
+		hidden_effect = {
+			#允许0017触发
+			set_country_flag = BA_Project_Cradle_B_launched
+		}
+	}
+}
+
+##########
+#启动摇篮计划 B
+##########
+#启动（on_action触发）
+planet_event = {
+	id = BA_Project.0017
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_planet_class = pc_BA_ruined_planet
+		owner = {
+			has_country_flag = BA_Project_Cradle_B_launched
+		}
+	}
+	immediate = {
+		owner = {
+			remove_country_flag = BA_Project_Cradle_B_launched
+			country_event = {
+				id = BA_Project.0018
+			}
+		}
+	}
+}
+
+#准备考古工作
+country_event = {
+	id = BA_Project.0018
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0018.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_Project.0018.next
+		begin_event_chain = {
+			event_chain = BA_Project_Cradle_chain
+			target = root
+		}
+		enable_special_project = {
+			name = BA_Project_Cradle_07			#考古准备
+		}
+	}
+}
+
+#分支显露
+country_event = {
+	id = BA_Project.0019
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0019.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_Project.0019.a
+	}
+	option = {
+		name = BA_Project.0019.b
+	}
+	after = {
+		country_event = {
+			id = BA_Project.0020
+			days = 20
+		}
+	}
+}
+
+#生成遗址
+country_event = {
+	id = BA_Project.0020
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0020.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_Project.0020.next
+		hidden_effect = {
+			random_planet_within_border = {
+				limit = {
+					Project_Cradle_planet_trigger = yes
+				}
+				enable_special_project = {
+					name = BA_Project_Cradle_10
+					location = this
+					owner = root
+				}
+				random_list = {
+					#权重多少无所谓，重要的是相等（
+					40 = {
+						modifier = {
+							set = 0
+							has_global_flag = BA_ProjectCradle_arc_site_A_A
+						}
+						set_global_flag = BA_ProjectCradle_arc_site_A_A
+						create_archaeological_site = BA_ProjectCradle_arc_site_A_A
+					}
+					40 = {
+						modifier = {
+							set = 0
+							has_global_flag = BA_ProjectCradle_arc_site_A_B
+						}
+						set_global_flag = BA_ProjectCradle_arc_site_A_B
+						create_archaeological_site = BA_ProjectCradle_arc_site_A_B
+					}
+					#写完以后加上
+				}
+			}
+		}
+	}
+}
+
+#完成后结束B
+country_event = {
+	id = BA_Project.0021
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0021.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_Project.0021.next
+		end_event_chain = BA_Project_Cradle_chain
+		#3±1年后，开始摇篮计划C
+		hidden_effect = {
+			country_event = {
+				id = BA_Project.0022
+				days = 720
+				random = 360
+			}
+		}
+	}
+}
+
+##########
+#启动摇篮计划 C
+##########
+#准备重建
+country_event = {
+	id = BA_Project.0022
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0022.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_Project.0022.next
+		begin_event_chain = {
+			event_chain = BA_Project_Cradle_chain
+			target = root
+		}
+		enable_special_project = {
+			name = BA_Project_Cradle_08
+		}
+	}
+}
+
+#选项分支
+country_event = {
+	id = BA_Project.0023
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0023.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_Project.0023.order
+		enable_special_project = {
+			name = BA_Project_Cradle_09A
+		}
+		enable_special_project = {
+			name = BA_Project_Cradle_09B
+		}
+	}
+	option = {
+		name = BA_Project.0023.decentralize		#这一系列事件放在最后
+		enable_special_project = {
+			name = BA_Project_Cradle_09C
+		}
+		trigger = {
+			always = no			#没做完，隐藏一下
+		}
+	}
+}
+
+####天基武器线路
+#报告设计完成
+country_event = {
+	id = BA_Project.0024
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0024.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	immediate = {
+		set_country_flag = BA_Project_Cradle_C_space_based
+	}
+	option = {
+		name = BA_Project.0024.next
+	}
+}
+
+#开始作业
+country_event = {
+	id = BA_Project.0025
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0025.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	trigger = {
+		#完成后记得清除旗帜
+		has_country_flag = BA_Project_Cradle_C_focus_tube_completed
+		has_country_flag = BA_Project_Cradle_C_shielding_case_completed
+		has_country_flag = BA_Project_Cradle_C_core_components_completed
+		NOT = {
+			has_country_flag = BA_Project_Cradle_C_space_engaged
+		}
+	}
+	immediate = {
+		set_country_flag = BA_Project_Cradle_C_space_engaged
+		#开始清理，同时开始触发清理时的各种随机事件
+		random_planet_within_border = {
+			limit = {
+				Project_Cradle_planet_trigger = yes
+			}
+			planet_event = {
+				id = BA_Project.8104
+				days = 10
+			}
+		}
+		#        event_target:Kivotos_shielded_planet = {}
+		#定期完成
+		# country_event = {
+		# 	id = BA_Project.0026
+		# 	days = 900
+		# 	random = 360
+		# }
+	}
+	option = {
+		name = BA_Project.0025.next
+	}
+}
+
+#完成作业
+country_event = {
+	id = BA_Project.0026
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0026.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	immediate = {
+		remove_country_flag = BA_Project_Cradle_C_space_engaged
+		#允许开始重建
+		set_country_flag = BA_Project_Cradle_last_step
+	}
+	option = {
+		name = BA_Project.0026.next
+		destroy_situation = from
+		#回收天基设施
+		hidden_effect = {
+			country_event = {
+				id = BA_Project.0027
+				days = 180
+			}
+		}
+	}
+}
+
+#回收天基设施
+country_event = {
+	id = BA_Project.0027
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0027.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_Project.0027.next
+		owner = {
+			add_resource = {
+				energy = 300
+				alloys = 800
+				volatile_motes = 80
+				exotic_gases = 80
+				rare_crystals = 80
+			}
+		}
+		#还没做完，以后改
+		# enable_special_project = {
+		# 	name = BA_Project_Cradle_09A_after
+		# }
+	}
+}
+
+#分析完成
+country_event = {
+	id = BA_Project.0028
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0028.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_Project.0028.next
+		owner = {
+			#科技在这里添加
+		}
+	}
+}
+
+####自走机械线路
+#报告设计完成
+country_event = {
+	id = BA_Project.0031
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0031.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	immediate = {
+		set_country_flag = BA_Project_Cradle_C_auto_machine
+	}
+	option = {
+		name = BA_Project.0031.next
+	}
+}
+
+#开始作业
+country_event = {
+	id = BA_Project.0032
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0032.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	immediate = {
+		set_country_flag = BA_Project_Cradle_C_machine_engaged
+		#开始清理，同时开始触发清理时的各种随机事件
+		random_planet_within_border = {
+			limit = {
+				Project_Cradle_planet_trigger = yes
+			}
+			planet_event = {
+				id = BA_Project.8203
+				days = 10
+			}
+		}
+		#        event_target:Kivotos_shielded_planet = {}
+		#定期完成
+		country_event = {
+			id = BA_Project.0033
+			days = 2340
+			random = 1080
+		}
+	}
+	option = {
+		name = BA_Project.0032.next
+	}
+}
+
+#完成作业
+country_event = {
+	id = BA_Project.0033
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0033.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	immediate = {
+		remove_country_flag = BA_Project_Cradle_C_machine_engaged
+		random_planet_within_border = {
+			limit = {
+				Project_Cradle_planet_trigger = yes
+			}
+			remove_modifier = modifier_BA_Arius_cleaning
+		}
+		#        event_target:Kivotos_shielded_planet = {}
+		#允许开始重建
+		set_country_flag = BA_Project_Cradle_last_step
+	}
+	option = {
+		name = BA_Project.0033.next
+		destroy_situation = from
+	}
+}
+
+#### 完成
+country_event = {
+	id = BA_Project.0098
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0098.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_Project.0098.next
+		hidden_effect = {
+			country_event = {
+				id = BA_Project.0099
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_Project.0099
+	is_triggered_only = yes
+	title = "BA_Project_Cradle_title"
+	desc = "BA_Project.0099.desc"
+	picture = GFX_BA_Kivotos_highway
+	immediate = {
+		set_country_flag = BA_Project_Cradle_finished
+	}
+	option = {
+		name = BA_Project.0099.next1
+		end_event_chain = BA_Project_Cradle_chain
+	}
+	option = {
+		name = BA_Project.0099.next2
+		end_event_chain = BA_Project_Cradle_chain
+	}
+}
+
+##########
+#遗址事件
+##########
+#A路线 共通
+fleet_event = {
+	id = BA_Project.8001
+	title = "Project_Cradle_arc_site_title"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = "Project_Cradle_arc_site_desc_AZ01"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_AZ01"
+		small_artifact_reward = yes
+	}
+}
+
+#A路线 A分支
+fleet_event = {
+	id = BA_Project.8002
+	title = "Project_Cradle_arc_site_title"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		#A 分支A
+		text = "Project_Cradle_arc_site_desc_AA02"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_AA02"
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = BA_Project.8003
+	title = "Project_Cradle_arc_site_title"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = "Project_Cradle_arc_site_desc_AA03"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_AA03"
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = BA_Project.8004
+	title = "Project_Cradle_arc_site_title"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = "Project_Cradle_arc_site_desc_AA04"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_AA04"
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = BA_Project.8005
+	title = "Project_Cradle_arc_site_title"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+		#结束后触发局势
+		owner = {
+			country_event = {
+				id = BA_Project.8025
+				days = 30
+			}
+		}
+	}
+	desc = {
+		text = "Project_Cradle_arc_site_desc_AA05"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_AA05"
+		small_artifact_reward = yes
+	}
+}
+
+#A路线 B分支
+fleet_event = {
+	id = BA_Project.8006
+	title = "Project_Cradle_arc_site_title"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = "Project_Cradle_arc_site_desc_AB02"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_AB02"
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = BA_Project.8007
+	title = "Project_Cradle_arc_site_title"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = "Project_Cradle_arc_site_desc_AB03"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_AB03"
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = BA_Project.8008
+	title = "Project_Cradle_arc_site_title"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = "Project_Cradle_arc_site_desc_AB04"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_AB04"
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = BA_Project.8009
+	title = "Project_Cradle_arc_site_title"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+		#结束后触发局势
+		owner = {
+			country_event = {
+				id = BA_Project.8025
+				days = 30
+			}
+		}
+	}
+	desc = {
+		text = "Project_Cradle_arc_site_desc_AB05"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_AB05"
+		small_artifact_reward = yes
+	}
+}
+
+#B路线 共通
+fleet_event = {
+	id = BA_Project.8010
+	title = "Project_Cradle_arc_site_title"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = "Project_Cradle_arc_site_desc_BZ01"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_BZ01"
+		small_artifact_reward = yes
+	}
+}
+
+#B路线 A分支
+fleet_event = {
+	id = BA_Project.8011
+	title = "Project_Cradle_arc_site_title"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = "Project_Cradle_arc_site_desc_BA02"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_BA02"
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = BA_Project.8012
+	title = "Project_Cradle_arc_site_title"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = "Project_Cradle_arc_site_desc_BA03"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_BA03"
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = BA_Project.8013
+	title = "Project_Cradle_arc_site_title"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = "Project_Cradle_arc_site_desc_BA04"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_BA04"
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = BA_Project.8014
+	title = "Project_Cradle_arc_site_title"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+		#结束后触发局势
+		owner = {
+			country_event = {
+				id = BA_Project.8025
+				days = 30
+			}
+		}
+	}
+	desc = {
+		text = "Project_Cradle_arc_site_desc_BA05"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_BA05"
+		small_artifact_reward = yes
+	}
+}
+
+#B路线 B分支
+fleet_event = {
+	id = BA_Project.8015
+	title = "Project_Cradle_arc_site_title"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = "Project_Cradle_arc_site_desc_BB02"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_BB02"
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = BA_Project.8016
+	title = "Project_Cradle_arc_site_title"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = "Project_Cradle_arc_site_desc_BB03"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_BB03"
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = BA_Project.8017
+	title = "Project_Cradle_arc_site_title"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = "Project_Cradle_arc_site_desc_BB04"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_BB04"
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+	id = BA_Project.8018
+	title = "Project_Cradle_arc_site_title"
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+		#结束后触发局势
+		owner = {
+			country_event = {
+				id = BA_Project.8025
+				days = 30
+			}
+		}
+	}
+	desc = {
+		text = "Project_Cradle_arc_site_desc_BB05"
+	}
+	option = {
+		name = "Project_Cradle_arc_site_option_BB05"
+		small_artifact_reward = yes
+	}
+}
+
+#挖坟后触发局势
+country_event = {
+	id = BA_Project.8025
+	is_triggered_only = yes
+	title = BA_Project.8025.title
+	desc = BA_Project.8025.desc
+	picture = GFX_BA_Desert_base
+	option = {
+		name = BA_Project.8025.a
+		start_situation = {
+			type = situation_Project_Cradle_B
+			effect = {
+				set_situation_approach = Project_Cradle_B_option_1
+			}
+		}
+	}
+	option = {
+		name = BA_Project.8025.b
+		start_situation = {
+			type = situation_Project_Cradle_B
+			effect = {
+				set_situation_approach = Project_Cradle_B_option_2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_Project.8026
+	is_triggered_only = yes
+	title = BA_Project.8026.title
+	desc = BA_Project.8026.desc
+	picture = GFX_BA_Desert_base
+	option = {
+		name = BA_Project.8026.next
+		destroy_situation = from
+		hidden_effect = {
+			country_event = {
+				id = BA_Project.8028
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_Project.8027
+	is_triggered_only = yes
+	title = BA_Project.8027.title
+	desc = BA_Project.8027.desc
+	picture = GFX_BA_Desert_base
+	option = {
+		name = BA_Project.8027.next
+		destroy_situation = from
+		hidden_effect = {
+			country_event = {
+				id = BA_Project.8028
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_Project.8028
+	is_triggered_only = yes
+	title = BA_Project.8028.title
+	desc = BA_Project.8028.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0001
+		room = "BA_Shittem_room"
+	}
+	option = {
+		name = BA_Project.8028.next
+	}
+}
+
+#######################
+# 天基武器和自走机械事件
+#######################
+situation_event = {
+	id = BA_Project.8100
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		owner = {
+		}
+		target = {
+			random_list = {
+				60 = {
+					planet_event = {
+						id = BA_Project.8121
+					}
+				}
+				10 = {
+					planet_event = {
+						id = BA_Project.8122
+					}
+				}
+				4 = {
+					planet_event = {
+						id = BA_Project.8123
+					}
+				}
+				1 = {
+					planet_event = {
+						id = BA_Project.8124
+					}
+				}
+				15 = {
+					planet_event = {
+						id = BA_Project.8125
+					}
+				}
+				6 = {
+					planet_event = {
+						id = BA_Project.8126
+					}
+				}
+				3 = {
+					planet_event = {
+						id = BA_Project.8127
+					}
+				}
+				1 = {
+					planet_event = {
+						id = BA_Project.8128
+					}
+				}
+				#####
+				60 = {
+					planet_event = {
+						id = BA_Project.8221
+					}
+				}
+				15 = {
+					planet_event = {
+						id = BA_Project.8222
+					}
+				}
+				6 = {
+					planet_event = {
+						id = BA_Project.8223
+					}
+				}
+				1 = {
+					planet_event = {
+						id = BA_Project.8224
+					}
+				}
+				12 = {
+					planet_event = {
+						id = BA_Project.8225
+					}
+				}
+				5 = {
+					planet_event = {
+						id = BA_Project.8226
+					}
+				}
+				1 = {
+					planet_event = {
+						id = BA_Project.8227
+					}
+				}
+			}
+		}
+	}
+}
+
+### 天基武器
+#聚焦筒制造完成
+planet_event = {
+	id = BA_Project.8101
+	title = "BA_Project.8101.title"
+	picture = GFX_BA_Desert_base	#以后改
+	is_triggered_only = yes
+	desc = {
+		text = "BA_Project.8101.desc"
+	}
+	option = {
+		name = BA_Project.8101.confirmed
+	}
+	after = {
+		owner = {
+			set_country_flag = BA_Project_Cradle_C_focus_tube_completed
+			country_event = {
+				id = BA_Project.0025
+				days = 90
+			}
+		}
+	}
+}
+
+#屏蔽壳制造完成
+planet_event = {
+	id = BA_Project.8102
+	title = "BA_Project.8102.title"
+	picture = GFX_BA_Desert_base	#以后改
+	is_triggered_only = yes
+	desc = {
+		#回收
+		trigger = {
+			owner = {
+				has_country_flag = BA_Project_Cradle_C_shielding_case_completed
+			}
+		}
+		text = "BA_Project.8102.return"
+	}
+	desc = {
+		#进入轨道
+		trigger = {
+			NOT = {
+				owner = {
+					has_country_flag = BA_Project_Cradle_C_shielding_case_completed
+				}
+			}
+		}
+		text = "BA_Project.8102.desc"
+	}
+	option = {
+		#回收
+		trigger = {
+			owner = {
+				has_country_flag = BA_Project_Cradle_C_shielding_case_completed
+			}
+		}
+		name = BA_Project.8102.recycled
+		owner = {
+			add_resource = {
+				energy = 200
+				alloys = 500
+			}
+		}
+		if = {
+			limit = {
+				has_planet_flag = BA_Kivotos_P1_flag
+			}
+			owner = {
+				add_resource = {
+					energy = 1000
+				}
+			}
+		}
+	}
+	option = {
+		#进入轨道
+		trigger = {
+			NOT = {
+				owner = {
+					has_country_flag = BA_Project_Cradle_C_shielding_case_completed
+				}
+			}
+		}
+		name = BA_Project.8102.confirmed
+	}
+	after = {
+		owner = {
+			set_country_flag = BA_Project_Cradle_C_shielding_case_completed
+			country_event = {
+				id = BA_Project.0025
+				days = 90
+			}
+		}
+	}
+}
+
+#核心组件制造完成
+planet_event = {
+	id = BA_Project.8103
+	title = "BA_Project.8103.title"
+	picture = GFX_BA_Desert_base	#以后改
+	is_triggered_only = yes
+	desc = {
+		#回收
+		trigger = {
+			owner = {
+				has_country_flag = BA_Project_Cradle_C_core_components_completed
+			}
+		}
+		text = "BA_Project.8103.return"
+	}
+	desc = {
+		#进入轨道
+		trigger = {
+			NOT = {
+				owner = {
+					has_country_flag = BA_Project_Cradle_C_core_components_completed
+				}
+			}
+		}
+		text = "BA_Project.8103.desc"
+	}
+	immediate = {
+	}
+	option = {
+		#回收
+		trigger = {
+			owner = {
+				has_country_flag = BA_Project_Cradle_C_core_components_completed
+			}
+		}
+		name = BA_Project.8103.recycled
+		owner = {
+			add_resource = {
+				energy = 1000
+				alloys = 200
+				rare_crystals = 100
+				exotic_gases = 100
+			}
+		}
+		if = {
+			limit = {
+				has_planet_flag = BA_Kivotos_P1_flag
+			}
+			owner = {
+				add_resource = {
+					energy = 1000
+				}
+			}
+		}
+	}
+	option = {
+		#进入轨道
+		trigger = {
+			NOT = {
+				owner = {
+					has_country_flag = BA_Project_Cradle_C_core_components_completed
+				}
+			}
+		}
+		name = BA_Project.8103.confirmed
+	}
+	after = {
+		owner = {
+			set_country_flag = BA_Project_Cradle_C_core_components_completed
+			country_event = {
+				id = BA_Project.0025
+				days = 90
+			}
+		}
+	}
+}
+
+#开始清理
+planet_event = {
+	id = BA_Project.8104
+	title = "BA_Project.8104.title"
+	picture = GFX_BA_Aloha	#以后改
+	is_triggered_only = yes
+	desc = "BA_Project.8104.desc"
+	immediate = {
+		add_modifier = {
+			modifier = modifier_BA_Arius_cleaning
+		}
+		# planet_event = {
+		# 	id = BA_Project.8121
+		# 	days = 30
+		# }
+	}
+	option = {
+		name = BA_Project.8104.next
+		owner = {
+			start_situation = {
+				type = situation_Project_Cradle_C
+				target = prev
+			}
+		}
+	}
+}
+
+### 随机事件 ###
+#正常清理
+planet_event = {
+	id = BA_Project.8121
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		owner = {
+			has_country_flag = BA_Project_Cradle_C_space_engaged
+		}
+	}
+}
+
+#发现矿藏
+planet_event = {
+	id = BA_Project.8122
+	title = "BA_Project.8122.title"
+	picture = GFX_BA_Desert_base
+	is_triggered_only = yes
+	desc = "BA_Project.8122.desc"
+	trigger = {
+		owner = {
+			has_country_flag = BA_Project_Cradle_C_space_engaged
+		}
+	}
+	option = {
+		name = BA_Project.8122.confirm
+		owner = {
+			add_resource = {
+				minerals = 300
+			}
+		}
+	}
+}
+
+#发现大量矿藏
+planet_event = {
+	id = BA_Project.8123
+	title = "BA_Project.8123.title"
+	picture = GFX_BA_Desert_base
+	is_triggered_only = yes
+	desc = "BA_Project.8123.desc"
+	trigger = {
+		owner = {
+			has_country_flag = BA_Project_Cradle_C_space_engaged
+		}
+	}
+	option = {
+		name = BA_Project.8123.confirm
+		owner = {
+			add_resource = {
+				minerals = 1000
+			}
+		}
+	}
+}
+
+#发现地下仓库
+planet_event = {
+	id = BA_Project.8124
+	title = "BA_Project.8124.title"
+	picture = GFX_BA_Hidden_lab
+	is_triggered_only = yes
+	desc = "BA_Project.8124.desc"
+	trigger = {
+		owner = {
+			has_country_flag = BA_Project_Cradle_C_space_engaged
+		}
+	}
+	option = {
+		name = BA_Project.8124.confirm
+		owner = {
+			add_resource = {
+				alloys = 500
+				sr_pyroxenes = 100
+				sr_dark_matter = 100
+			}
+		}
+	}
+}
+
+#轻微干扰
+planet_event = {
+	id = BA_Project.8125
+	title = "BA_Project.8125.title"
+	picture = GFX_BA_Gliched_street
+	is_triggered_only = yes
+	desc = "BA_Project.8125.desc"
+	trigger = {
+		owner = {
+			has_country_flag = BA_Project_Cradle_C_space_engaged
+		}
+	}
+	option = {
+		name = BA_Project.8125.confirm
+		add_planet_devastation = 10
+		owner = {
+			set_timed_country_flag = {
+				flag = BA_Project_Cradle_C_delaying
+				days = 180
+			}
+		}
+	}
+}
+
+#灾害级干扰
+planet_event = {
+	id = BA_Project.8126
+	title = "BA_Project.8126.title"
+	picture = GFX_BA_Ruined_building_Day	#以后改
+	is_triggered_only = yes
+	desc = "BA_Project.8126.desc"
+	trigger = {
+		owner = {
+			has_country_flag = BA_Project_Cradle_C_space_engaged
+		}
+	}
+	option = {
+		name = BA_Project.8126.confirm
+		add_planet_devastation = 30
+		owner = {
+			set_timed_country_flag = {
+				flag = BA_Project_Cradle_C_delaying
+				days = 180
+			}
+		}
+	}
+}
+
+#误击工业区
+planet_event = {
+	id = BA_Project.8127
+	title = "BA_Project.8127.title"
+	picture = GFX_BA_Ruined_building_Day	#以后改
+	is_triggered_only = yes
+	desc = "BA_Project.8127.desc"
+	trigger = {
+		owner = {
+			has_country_flag = BA_Project_Cradle_C_space_engaged
+		}
+	}
+	option = {
+		name = BA_Project.8127.confirm
+		add_planet_devastation = 20
+		add_modifier = {
+			modifier = BA_mistake_hit
+			days = 360
+		}
+		owner = {
+			set_timed_country_flag = {
+				flag = BA_Project_Cradle_C_delaying
+				days = 180
+			}
+		}
+	}
+}
+
+#误击居住区
+planet_event = {
+	id = BA_Project.8128
+	title = "BA_Project.8128.title"
+	picture = GFX_BA_Ruined_building_Day	#以后改
+	is_triggered_only = yes
+	desc = "BA_Project.8128.desc"
+	trigger = {
+		owner = {
+			has_country_flag = BA_Project_Cradle_C_space_engaged
+		}
+	}
+	option = {
+		name = BA_Project.8128.confirm
+		add_planet_devastation = 20
+		add_modifier = {
+			modifier = BA_mistake_hit
+			days = 360
+		}
+		random_owned_pop = {
+			kill_pop = yes
+		}
+		random_owned_pop = {
+			kill_pop = yes
+		}
+		owner = {
+			set_timed_country_flag = {
+				flag = BA_Project_Cradle_C_delaying
+				days = 180
+			}
+		}
+	}
+}
+
+### 自走机械事件
+#厂区建造完成
+planet_event = {
+	id = BA_Project.8201
+	title = "BA_Project.8201.title"
+	picture = GFX_BA_Desert_base
+	is_triggered_only = yes
+	desc = {
+		text = "BA_Project.8201.desc"
+	}
+	option = {
+		name = BA_Project.8201.confirmed
+	}
+	after = {
+		owner = {
+			set_country_flag = BA_Project_Cradle_C_factory_completed
+		}
+	}
+}
+
+#机械建造完成
+planet_event = {
+	id = BA_Project.8202
+	title = "BA_Project.8202.title"
+	picture = GFX_BA_Desert_base
+	is_triggered_only = yes
+	desc = {
+		text = "BA_Project.8202.desc"
+	}
+	option = {
+		name = BA_Project.8202.confirmed
+	}
+	after = {
+		owner = {
+			set_country_flag = BA_Project_Cradle_C_machine_completed
+			country_event = {
+				id = BA_Project.0032
+				days = 30
+			}
+		}
+	}
+}
+
+#开始清理
+planet_event = {
+	id = BA_Project.8203
+	title = "BA_Project.8203.title"
+	picture = GFX_BA_Desert_base
+	is_triggered_only = yes
+	desc = "BA_Project.8203.desc"
+	immediate = {
+		add_modifier = {
+			modifier = modifier_BA_Arius_cleaning
+		}
+	}
+	option = {
+		name = BA_Project.8203.next
+		owner = {
+			start_situation = {
+				type = situation_Project_Cradle_C
+				target = prev
+			}
+		}
+	}
+}
+
+### 随机事件 ###
+#正常清理
+planet_event = {
+	id = BA_Project.8221
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		owner = {
+			has_country_flag = BA_Project_Cradle_C_machine_engaged
+		}
+	}
+}
+
+#科学突破
+planet_event = {
+	id = BA_Project.8222
+	title = "BA_Project.8222.title"
+	picture = GFX_BA_Hidden_lab
+	is_triggered_only = yes
+	desc = "BA_Project.8222.desc"
+	trigger = {
+		owner = {
+			has_country_flag = BA_Project_Cradle_C_machine_engaged
+		}
+	}
+	option = {
+		name = BA_Project.8222.confirm
+		owner = {
+			add_monthly_resource_mult = {
+				resource = physics_research
+				value = 2
+				min = 3
+				max = 1000
+			}
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = 2
+				min = 3
+				max = 1000
+			}
+			add_monthly_resource_mult = {
+				resource = engineering_research
+				value = 2
+				min = 3
+				max = 1000
+			}
+		}
+	}
+}
+
+#发现遗址
+planet_event = {
+	id = BA_Project.8223
+	title = "BA_Project.8223.title"
+	picture = GFX_BA_Arius_ruins
+	is_triggered_only = yes
+	desc = "BA_Project.8223.desc"
+	trigger = {
+		owner = {
+			has_country_flag = BA_Project_Cradle_C_machine_engaged
+		}
+	}
+	option = {
+		name = BA_Project.8223.confirm
+		owner = {
+			add_resource = {
+				minor_artifacts = 10
+			}
+			add_monthly_resource_mult = {
+				resource = unity
+				value = 10
+				min = 200
+				max = 5000
+			}
+		}
+		#添加一个遗址行星特征（以后加）
+	}
+}
+
+#发现实验室
+planet_event = {
+	id = BA_Project.8224
+	title = "BA_Project.8224.title"
+	picture = GFX_BA_Hidden_lab
+	is_triggered_only = yes
+	desc = "BA_Project.8224.desc"
+	trigger = {
+		owner = {
+			has_country_flag = BA_Project_Cradle_C_machine_engaged
+		}
+	}
+	option = {
+		name = BA_Project.8224.confirm
+		custom_tooltip = rediscover_tech
+		#6项随机科技的50%进度
+		hidden_effect = {
+			owner = {
+				add_random_research_option = {
+					add_progress = 0.5
+					ignore_prereqs = yes
+					fail_effects = {
+						add_monthly_resource_mult = {
+							resource = engineering_research
+							value = @tier5researchreward
+							min = @tier5researchmin
+							max = @tier5researchmax
+						}
+					}
+				}
+				add_random_research_option = {
+					add_progress = 0.5
+					ignore_prereqs = yes
+					fail_effects = {
+						add_monthly_resource_mult = {
+							resource = engineering_research
+							value = @tier5researchreward
+							min = @tier5researchmin
+							max = @tier5researchmax
+						}
+					}
+				}
+				add_random_research_option = {
+					add_progress = 0.5
+					ignore_prereqs = yes
+					fail_effects = {
+						add_monthly_resource_mult = {
+							resource = engineering_research
+							value = @tier5researchreward
+							min = @tier5researchmin
+							max = @tier5researchmax
+						}
+					}
+				}
+				add_random_research_option = {
+					add_progress = 0.5
+					ignore_prereqs = yes
+					fail_effects = {
+						add_monthly_resource_mult = {
+							resource = engineering_research
+							value = @tier5researchreward
+							min = @tier5researchmin
+							max = @tier5researchmax
+						}
+					}
+				}
+				add_random_research_option = {
+					add_progress = 0.5
+					ignore_prereqs = yes
+					fail_effects = {
+						add_monthly_resource_mult = {
+							resource = engineering_research
+							value = @tier5researchreward
+							min = @tier5researchmin
+							max = @tier5researchmax
+						}
+					}
+				}
+				add_random_research_option = {
+					add_progress = 0.5
+					ignore_prereqs = yes
+					fail_effects = {
+						add_monthly_resource_mult = {
+							resource = engineering_research
+							value = @tier5researchreward
+							min = @tier5researchmin
+							max = @tier5researchmax
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#宕机
+planet_event = {
+	id = BA_Project.8225
+	title = "BA_Project.8225.title"
+	picture = GFX_BA_Gliched_street
+	is_triggered_only = yes
+	desc = "BA_Project.8225.desc"
+	trigger = {
+		owner = {
+			has_country_flag = BA_Project_Cradle_C_machine_engaged
+		}
+	}
+	option = {
+		name = BA_Project.8225.confirm
+		owner = {
+			set_timed_country_flag = {
+				flag = BA_Project_Cradle_C_delaying
+				days = 30
+			}
+		}
+	}
+}
+
+#暴走
+planet_event = {
+	id = BA_Project.8226
+	title = "BA_Project.8226.title"
+	picture = GFX_BA_Gliched_street
+	is_triggered_only = yes
+	desc = "BA_Project.8226.desc"
+	trigger = {
+		owner = {
+			has_country_flag = BA_Project_Cradle_C_machine_engaged
+		}
+	}
+	option = {
+		name = BA_Project.8226.confirm
+		add_planet_devastation = 20
+		owner = {
+			set_timed_country_flag = {
+				flag = BA_Project_Cradle_C_delaying
+				days = 180
+			}
+		}
+	}
+}
+
+#预言者出现
+planet_event = {
+	id = BA_Project.8227
+	title = "BA_Project.8227.title"
+	picture = GFX_BA_Abydos_vs_Binah
+	is_triggered_only = yes
+	desc = "BA_Project.8227.desc"
+	trigger = {
+		owner = {
+			has_country_flag = BA_Project_Cradle_C_machine_engaged
+		}
+	}
+	option = {
+		name = BA_Project.8227.confirm
+		add_planet_devastation = 20
+		random_owned_pop = {
+			kill_pop = yes
+		}
+		owner = {
+			set_timed_country_flag = {
+				flag = BA_Project_Cradle_C_delaying
+				days = 180
+			}
+		}
+	}
+}

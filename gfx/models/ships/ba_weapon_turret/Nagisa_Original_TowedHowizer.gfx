@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Nagisa_Original_TowedHowizer_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/Nagisa_Original_TowedHowizer.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Nagisa_Original_TowedHowizerShape"
+			index = 0
+			texture_diffuse = "Nagisa_Original_TowedHowizer.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}

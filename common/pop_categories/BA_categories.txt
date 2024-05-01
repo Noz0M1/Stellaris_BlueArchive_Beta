@@ -1,0 +1,32 @@
+sweeper_pop = {
+	rank = 4
+	clothes_texture_index = 1
+	change_job_threshold = 16
+	keep_from_former_job = yes
+	demotion_time = 360
+	pop_modifier = {
+		pop_housing_usage_base = -1
+		pop_amenities_usage_base = -1
+	}
+	allow_resettlement = {
+		always = no
+	}
+	assign_to_pop = {
+		exists = owner
+		OR = {
+			AND = {
+				planet = {
+					has_planet_flag = BA_Planet_sweeped
+				}
+				owner = {
+					NOT = {
+						has_authority = auth_kivotos
+					}
+				}
+			}
+			owner = {
+				has_country_flag = BA_Unnamed_enemy
+			}
+		}
+	}
+}

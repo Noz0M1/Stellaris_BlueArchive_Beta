@@ -1,0 +1,1918 @@
+#所有调用的非互动类型图片(不论iconType还是effectButtonType)皆采用静态注册模块保证不会被选定以及高亮（具体见注册文件BlueArchiveGFX.gfx）
+#互动类图片（可以按的按钮）均按默认高亮状态以及点击模式进行处理
+#保留close控件，并且退出按照默认采用ESCAPE作为快捷键（蠢驴自己做的custom gui莫名其妙删了close，不明所以）
+#xy值过大的控件默认为移除组件，为防止不必要的错误亦或是为之后可能的原有控件调用，这里并没有删除任何多余的原版控件
+#控件名称由于采用批量操作，因此可能很多条目会不符合命名规则，但能够保证不重名不影响使用（有强迫症的话会很麻烦，得一个个改）
+guiTypes = {
+    ### 
+    #物资商店
+    containerWindowType = {
+        name = "BlueArchive_angel_24_goods"
+        orientation = center
+        origo = center
+        moveable = yes
+        size = { width = 1200 height = 650 }
+
+        background = {
+            name = "background"
+            quadTextureSprite = "GFX_Shop_padframe"
+        }
+
+        iconType = {
+            name = BlueArchive_angel_24_bg_1
+            position = { x = 50  y = 28 }
+            quadTextureSprite = GFX_Shop_Shop_BG
+        }
+        iconType = {
+            name = BlueArchive_angel_24_bg_2
+            position = { x = 0 y = 0 }
+            quadTextureSprite = GFX_Shop_padframe
+        }
+
+        buttonType = {
+            name = "close"
+            quadTextureSprite = "GFX_Shop_X"
+            position = { x= -147 y = 38 }
+            orientation = "UPPER_RIGHT"
+            shortcut = "ESCAPE"
+            clicksound = "back_click"
+        }
+
+        containerWindowType = {
+            name = BlueArchive_angel_24_main_button
+            size = { width = 389 height = 465 }
+            position = { x = 700 y = 100 }
+            background = {
+                name = "background"
+                quadTextureSprite = "GFX_Shop_Goods_attach"
+            }
+            iconType = {
+                name = BlueArchive_angel_24_main_icon_1
+                position = { x = 45 y = 125 }
+                quadTextureSprite = GFX_Shop_Goods_Shop_item_goods_shelves
+            }
+            iconType = {
+                name = BlueArchive_angel_24_main_icon_2
+                position = { x = 45 y = 225 }
+                quadTextureSprite = GFX_Shop_Goods_Shop_item_goods_shelves
+            }
+            iconType = {
+                name = BlueArchive_angel_24_main_icon_3
+                position = { x = 45 y = 325 }
+                quadTextureSprite = GFX_Shop_Goods_Shop_item_goods_shelves
+            }
+            effectButtonType = {
+                name = BlueArchive_angel_24_main_button_11
+                position = { x = 40 y = 50 }
+                effect = BA_Angel24_11_button
+                quadTextureSprite = GFX_Shop_Goods_Shop_item_Shop_item_consumer_goods
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_angel_24_main_button_12
+                position = { x = 120 y = 50 }
+                effect = BA_Angel24_12_button
+                quadTextureSprite = GFX_Shop_Goods_Shop_item_Shop_item_volatile_motes
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_angel_24_main_button_13
+                position = { x = 200 y = 50 }
+                effect = BA_Angel24_13_button
+                quadTextureSprite = GFX_Shop_Goods_Shop_item_Shop_item_exotic_gases
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_angel_24_main_button_14
+                position = { x = 280 y = 50 }
+                effect = BA_Angel24_14_button
+                quadTextureSprite = GFX_Shop_Goods_Shop_item_Shop_item_rare_crystals
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_angel_24_main_button_21
+                position = { x = 40 y = 150 }
+                effect = BA_Angel24_21_button
+                quadTextureSprite = GFX_Shop_Goods_Shop_item_Shop_item_alloys
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_angel_24_main_button_22
+                position = { x = 120 y = 150 }
+                effect = BA_Angel24_22_button
+                quadTextureSprite = GFX_Shop_Goods_Shop_item_Shop_item_physics_research
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_angel_24_main_button_23
+                position = { x = 200 y = 150 }
+                effect = BA_Angel24_23_button
+                quadTextureSprite = GFX_Shop_Goods_Shop_item_Shop_item_society_research
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_angel_24_main_button_24
+                position = { x = 280 y = 150 }
+                effect = BA_Angel24_24_button
+                quadTextureSprite = GFX_Shop_Goods_Shop_item_Shop_item_engineering_research
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_angel_24_main_button_31
+                position = { x = 40 y = 250 }
+                effect = button_effect_BA_placeholder_forbid
+                quadTextureSprite = GFX_Shop_Goods_Shop_item_Shop_item_zro
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_angel_24_main_button_32
+                position = { x = 120 y = 250 }
+                effect = button_effect_BA_placeholder_forbid
+                quadTextureSprite = GFX_Shop_Goods_Shop_item_Shop_item_dark_matter
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_angel_24_main_button_33
+                position = { x = 200 y = 250 }
+                effect = button_effect_BA_placeholder_forbid
+                quadTextureSprite = GFX_Shop_Goods_Shop_item_Shop_item_living_metal
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_angel_24_main_button_34
+                position = { x = 280 y = 250 }
+                effect = button_effect_BA_placeholder_forbid
+                quadTextureSprite = GFX_Shop_Goods_Shop_item_Shop_item_minor_artifacts
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_angel_24_main_button_01
+                position = { x = 45 y =400 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Shop_Goods_confirm
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_angel_24_main_button_02
+                position = { x = 210 y = 400 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Shop_Goods_cancel
+                multiline = no
+            }
+        }
+
+
+        iconType = {
+            name = "hex_bg"
+            spriteType = "GFX_hex_bg"
+            position = { x = -1000000 y = -1400000 }
+            alwaysTransparent = yes
+        }
+        iconType = {
+            name = "empire_header_line"
+            quadTextureSprite = "GFX_line_long"
+            position = { x = 600000 y = 2200000 }
+            alwaysTransparent = yes
+        }
+        # Custom header
+        instantTextBoxType = {
+            name = "irm_some_header"
+            font = "malgun_goth_24"
+            text = "ui_faction_header" 	# header text
+            position = { x = 200000 y = 500000 }
+            maxWidth = 543
+            maxHeight = 22
+            fixedSize = yes
+            alwaysTransparent = yes
+        }
+
+        ### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+
+        buttonType = { name = "focus_button" position = { x = -1180 y = -1112 } spriteType = "GFX_fleetview_focus" } # hidden
+        instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -1120 y = -115 } } # hidden
+        buttonType = { name = "alien_message_background" size = { x = 0 y = 0 } position = { x = -1110 y = -11430 } spriteType = "GFX_tiles_dark_area_cut_8" } # hidden
+        buttonType = { name = "confirm_button" quadTextureSprite = "GFX_standard_button_142_34_button" } # hidden
+        containerWindowType = {
+            name = "portrait_background"
+            position = { x = -1117 y = -1145 }
+            size = { width = 0 height = 0 } 	# hide portrait window
+            iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+            iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
+        }
+
+        iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+        instantTextBoxType = { name = "empire_name" font = "malgun_goth_24" } # hidden
+        instantTextBoxType = { name = "empire_government_type" font = "cg_16b" } # hidden
+        instantTextBoxType = { name = "empire_personality_type" font = "cg_16b" } # hidden
+        overlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+        iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+        containerWindowType = {
+            name = "leader_details"
+            position = { x = -1125 y = -1175 }
+            containerWindowType = { name = "empire_traits_box" } # hidden
+            instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+            overlappingElementsBoxType = { name = "leader_traits" } # hidden
+            instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+            instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+        }
+        containerWindowType = {
+            name = "opinion_window"
+            position = { x = -1127 y = -11110 }
+            size = { width = 94 height = 30 }
+            iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+            instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+        }
+
+        ### EVENT DIPLO ###
+        containerWindowType = {
+            name = "EVENT_DIPLO"
+            position = { x = 2 y = 50 }
+            #size = { width = 563 height = 220 }
+            moveable = no
+
+            instantTextBoxType = {
+                name = "action_title"
+                font = "malgun_goth_24"
+                position = { x = 20 y = 0 }
+                maxWidth = 200
+                alwaysTransparent = yes
+            }
+            instantTextBoxType = {
+                name = "action_desc"
+                font = "malgun_goth_24"
+                position = { x = 490 y = 0 }
+                maxWidth = 500
+                maxHeight = 180
+                orientation = "UPPER_LEFT"
+                format = center
+                alwaysTransparent = yes
+                text_color_code = "H"
+            }
+            listboxType = { name = "option_list" position = { x = -11500 y = -1130 } } # hidden option list
+        }
+
+        containerWindowType = {
+            name = "portrait"
+            position = { x = 10000000 y = 00000000 }
+            size = { width = 0 height = 0 } # hide portrait window
+            iconType = {
+                name = "portrait"
+                spriteType = "GFX_portrait_gamesetup_mask"  position = { x = -11170 y = -11450 }
+            } # hidden
+            iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" position = { x = -11170 y = -11450 } } # hidden
+            iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2"  position = { x = -11170 y = -11450 }} # hidden
+            iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" position = { x = -11170 y = -11450 } } # hidden
+        }
+
+        iconType = {
+            name = "alien_message_bg"
+            position = { x = 150 y = 441 }
+            quadTextureSprite = "GFX_Shop_Conversation"
+        }
+        instantTextBoxType = {
+            name = "alien_message"
+            font = "cg_16b"
+            position = { x = 170 y = 450 }
+            maxWidth = 465
+            maxHeight = 220
+            format = left
+            scrollbartype = "standardtext_slider"
+        }
+    }
+    #科技商店
+    containerWindowType = {
+        name = "BlueArchive_angel_24_technology"
+        orientation = center
+        origo = center
+        moveable = yes
+        size = { width = 1200 height = 650 }
+
+        background = {
+            name = "background"
+            quadTextureSprite = "GFX_Shop_padframe"
+        }
+
+        iconType = {
+            name = BlueArchive_angel_24_bg_1
+            position = { x = 50  y = 28 }
+            quadTextureSprite = GFX_Shop_Shop_BG
+        }
+        iconType = {
+            name = BlueArchive_angel_24_bg_2
+            position = { x = 0 y = 0 }
+            quadTextureSprite = GFX_Shop_padframe
+        }
+
+        buttonType = {
+            name = "close"
+            quadTextureSprite = "GFX_Shop_X"
+            position = { x= -147 y = 38 }
+            orientation = "UPPER_RIGHT"
+            shortcut = "ESCAPE"
+            clicksound = "back_click"
+        }
+
+
+        iconType = {
+            name = "hex_bg"
+            spriteType = "GFX_hex_bg"
+            position = { x = -1000000 y = -1400000 }
+            alwaysTransparent = yes
+        }
+        iconType = {
+            name = "empire_header_line"
+            quadTextureSprite = "GFX_line_long"
+            position = { x = 600000 y = 2200000 }
+            alwaysTransparent = yes
+        }
+        # Custom header
+        instantTextBoxType = {
+            name = "irm_some_header"
+            font = "malgun_goth_24"
+            text = "ui_faction_header" 	# header text
+            position = { x = 200000 y = 500000 }
+            maxWidth = 543
+            maxHeight = 22
+            fixedSize = yes
+            alwaysTransparent = yes
+        }
+
+        ### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+
+        buttonType = { name = "focus_button" position = { x = -1180 y = -1112 } spriteType = "GFX_fleetview_focus" } # hidden
+        instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -1120 y = -115 } } # hidden
+        buttonType = { name = "alien_message_background" size = { x = 0 y = 0 } position = { x = -1110 y = -11430 } spriteType = "GFX_tiles_dark_area_cut_8" } # hidden
+        buttonType = { name = "confirm_button" quadTextureSprite = "GFX_standard_button_142_34_button" } # hidden
+        containerWindowType = {
+            name = "portrait_background"
+            position = { x = -1117 y = -1145 }
+            size = { width = 0 height = 0 } 	# hide portrait window
+            iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+            iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
+        }
+
+        iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+        instantTextBoxType = { name = "empire_name" font = "malgun_goth_24" } # hidden
+        instantTextBoxType = { name = "empire_government_type" font = "cg_16b" } # hidden
+        instantTextBoxType = { name = "empire_personality_type" font = "cg_16b" } # hidden
+        overlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+        iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+        containerWindowType = {
+            name = "leader_details"
+            position = { x = -1125 y = -1175 }
+            containerWindowType = { name = "empire_traits_box" } # hidden
+            instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+            overlappingElementsBoxType = { name = "leader_traits" } # hidden
+            instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+            instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+        }
+        containerWindowType = {
+            name = "opinion_window"
+            position = { x = -1127 y = -11110 }
+            size = { width = 94 height = 30 }
+            iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+            instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+        }
+
+        ### EVENT DIPLO ###
+        containerWindowType = {
+            name = "EVENT_DIPLO"
+            position = { x = 2 y = 50 }
+            #size = { width = 563 height = 220 }
+            moveable = no
+
+            instantTextBoxType = {
+                name = "action_title"
+                font = "malgun_goth_24"
+                position = { x = 20 y = 0 }
+                maxWidth = 200
+                alwaysTransparent = yes
+            }
+            instantTextBoxType = {
+                name = "action_desc"
+                font = "malgun_goth_24"
+                position = { x = 490 y = 0 }
+                maxWidth = 500
+                maxHeight = 180
+                orientation = "UPPER_LEFT"
+                format = center
+                alwaysTransparent = yes
+                text_color_code = "H"
+            }
+            #listboxType = { name = "option_list" position = { x = -11500 y = -1130 } } # hidden option list
+            #listboxType = {
+            #    name = "option_list"
+            #    position = { x = 680 y = 100 }
+            #    backGround= ""
+            #    size = { width = 430 height = 430 }
+            #    spacing = 1
+            #    #verticalScrollbar = BA_right_vertical_slider
+            #    scrollbartype = "standardlistbox_slider"
+            #    borderSize = { x = 0 y = 0 }
+            #    Orientation = "UPPER_LEFT"
+            #}
+            listboxType = {
+                name = "option_list"
+                position = { x = 680 y = 100 }
+                #position = { x = 1100 y = 275 }
+                #backGround=""
+                size = { x = 450 y = 240 }
+                spacing = 1
+                scrollbartype = "standardlistbox_slider"
+                borderSize = { x = 0 y = 0 }
+                Orientation = "UPPER_LEFT"
+            }
+        }
+
+        containerWindowType = {
+            name = "portrait"
+            position = { x = 10000000 y = 00000000 }
+            size = { width = 0 height = 0 } # hide portrait window
+            iconType = {
+                name = "portrait"
+                spriteType = "GFX_portrait_gamesetup_mask"  position = { x = -11170 y = -11450 }
+            } # hidden
+            iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" position = { x = -11170 y = -11450 } } # hidden
+            iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2"  position = { x = -11170 y = -11450 }} # hidden
+            iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" position = { x = -11170 y = -11450 } } # hidden
+        }
+
+        iconType = {
+            name = "alien_message_bg"
+            position = { x = 150 y = 441 }
+            quadTextureSprite = "GFX_Shop_Conversation"
+        }
+        instantTextBoxType = {
+            name = "alien_message"
+            font = "cg_16b"
+            position = { x = 170 y = 450 }
+            maxWidth = 465
+            maxHeight = 220
+            format = left
+            scrollbartype = "standardtext_slider"
+        }
+    }
+    #芯片选项
+    containerWindowType = {
+        name = "BlueArchive_angel_24_option"
+        position = { x=0 y=0 }
+        size = { width = 400 height = 120 }
+        moveable = no
+        buttonType = {
+            name = "option_button"
+            quadTextureSprite = "GFX_Shop_Technologies_Chip"
+            position = { x = 220 y = 25 }
+            font = "cg_16b"
+            text = "OPTION_TEXT"
+        }
+        OverlappingElementsBoxType = {
+            name = "trigger_icons"
+            position = { x = 0  y = 10 }
+            size = { x=65 y= 28 }
+        }
+    }
+
+    ###
+    #交流
+    containerWindowType = {
+        name = "BlueArchive_communication"
+        orientation = center
+        origo = center
+        moveable = yes
+        size = { width = 1200 height = 650 }
+
+        background = {
+            name = "background"
+            quadTextureSprite = "GFX_Communication_padframe"
+        }
+
+        iconType = {
+            name = BlueArchive_communication_bg_1
+            position = { x = 50  y = 28 }
+            quadTextureSprite = GFX_Communication_CaffeeBG
+        }
+        iconType = {
+            name = BlueArchive_communication_bg_2
+            position = { x = 0 y = 0 }
+            quadTextureSprite = GFX_Communication_padframe
+        }
+
+        buttonType = {
+            name = "close"
+            quadTextureSprite = "GFX_Communication_X"
+            position = { x= -147 y = 32 }
+            orientation = "UPPER_RIGHT"
+            shortcut = "ESCAPE"
+            clicksound = "back_click"
+        }
+
+        iconType = {
+            name = "hex_bg"
+            spriteType = "GFX_hex_bg"
+            position = { x = -1000000 y = -1400000 }
+            alwaysTransparent = yes
+        }
+        iconType = {
+            name = "empire_header_line"
+            quadTextureSprite = "GFX_line_long"
+            position = { x = 600000 y = 2200000 }
+            alwaysTransparent = yes
+        }
+        # Custom header
+        instantTextBoxType = {
+            name = "irm_some_header"
+            font = "malgun_goth_24"
+            text = "ui_faction_header" 	# header text
+            position = { x = 200000 y = 500000 }
+            maxWidth = 543
+            maxHeight = 22
+            fixedSize = yes
+            alwaysTransparent = yes
+        }
+
+        ### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+
+        buttonType = { name = "focus_button" position = { x = -1180 y = -1112 } spriteType = "GFX_fleetview_focus" } # hidden
+        instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -1120 y = -115 } } # hidden
+        buttonType = { name = "alien_message_background" size = { x = 0 y = 0 } position = { x = -1110 y = -11430 } spriteType = "GFX_tiles_dark_area_cut_8" } # hidden
+        buttonType = { name = "confirm_button" quadTextureSprite = "GFX_standard_button_142_34_button" } # hidden
+        containerWindowType = {
+            name = "portrait_background"
+            position = { x = -1117 y = -1145 }
+            size = { width = 0 height = 0 } 	# hide portrait window
+            iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+            iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
+        }
+
+        iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+        instantTextBoxType = { name = "empire_name" font = "malgun_goth_24" } # hidden
+        instantTextBoxType = { name = "empire_government_type" font = "cg_16b" } # hidden
+        instantTextBoxType = { name = "empire_personality_type" font = "cg_16b" } # hidden
+        overlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+        iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+        containerWindowType = {
+            name = "leader_details"
+            position = { x = -1125 y = -1175 }
+            containerWindowType = { name = "empire_traits_box" } # hidden
+            instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+            overlappingElementsBoxType = { name = "leader_traits" } # hidden
+            instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+            instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+        }
+        containerWindowType = {
+            name = "opinion_window"
+            position = { x = -1127 y = -11110 }
+            size = { width = 94 height = 30 }
+            iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+            instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+        }
+
+        ### EVENT DIPLO ###
+        containerWindowType = {
+            name = "EVENT_DIPLO"
+            position = { x = 2 y = 50 }
+            #size = { width = 563 height = 220 }
+            moveable = no
+
+            instantTextBoxType = {
+                name = "action_title"
+                font = "malgun_goth_24"
+                position = { x = 20 y = 0 }
+                maxWidth = 200
+                alwaysTransparent = yes
+            }
+            instantTextBoxType = {
+                name = "action_desc"
+                font = "malgun_goth_24"
+                position = { x = 490 y = 0 }
+                maxWidth = 500
+                maxHeight = 180
+                orientation = "UPPER_LEFT"
+                format = center
+                alwaysTransparent = yes
+                text_color_code = "H"
+            }
+            listboxType = { name = "option_list" position = { x = -11500 y = -1130 } } # hidden option list
+        }
+
+        containerWindowType = {
+            name = "portrait"
+            position = { x = 10000000 y = 00000000 }
+            size = { width = 0 height = 0 } # hide portrait window
+            iconType = {
+                name = "portrait"
+                spriteType = "GFX_portrait_gamesetup_mask"  position = { x = -11170 y = -11450 }
+            } # hidden
+            iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" position = { x = -11170 y = -11450 } } # hidden
+            iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2"  position = { x = -11170 y = -11450 }} # hidden
+            iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" position = { x = -11170 y = -11450 } } # hidden
+        }
+
+        instantTextBoxType = {
+            name = "alien_message"
+            font = "cg_16b"
+            position = { x = 1000090 y = 47000000 }
+            maxWidth = 465
+            maxHeight = 220
+            format = left
+            scrollbartype = "standardtext_slider"
+        }
+    }
+
+    ###
+    #社团中心-Plana
+    containerWindowType = {
+        name = "BlueArchive_school_club_1"
+        orientation = center
+        origo = center
+        moveable = yes
+        size = { width = 1200 height = 650 }
+
+        background = {
+            name = "background"
+            quadTextureSprite = "GFX_Club_center_interface_padframe"
+        }
+
+        iconType = {
+            name = BlueArchive_school_club_bg_1
+            position = { x = 50  y = 28 }
+            quadTextureSprite = GFX_Club_center_interface_CaffeeBG
+        }
+        iconType = {
+            name = BlueArchive_school_club_icon_1
+            position = {x = 40 y = 15}
+            quadTextureSprite = GFX_Club_center_interface_Club_center_BG_02
+        }
+        iconType = {
+            name = BlueArchive_school_club_icon_2
+            position = {x = 70 y = 40}
+            quadTextureSprite = GFX_Club_center_interface_Club_center
+        }
+        iconType = {
+            name = BlueArchive_school_club_bg_2
+            position = { x = 0 y = 0 }
+            quadTextureSprite = GFX_School_philosophy_padframe
+        }
+        containerWindowType = {#肖像组
+            name = "BlueArchive_MainWindow_portrait_button"
+            position = { x = 70 y = 97 }
+            size = { width = 1200 height = 650 }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_0"
+                effect = button_effect_BA_portrait_Pulana_0
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana000
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_1"
+                effect = button_effect_BA_portrait_Pulana_1
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0001
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_2"
+                effect = button_effect_BA_portrait_Pulana_2
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0002
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_3"
+                effect = button_effect_BA_portrait_Pulana_3
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0003
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_4"
+                effect = button_effect_BA_portrait_Pulana_4
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0004
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_5"
+                effect = button_effect_BA_portrait_Pulana_5
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0005
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_6"
+                effect = button_effect_BA_portrait_Pulana_6
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0006
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_7"
+                effect = button_effect_BA_portrait_Pulana_7
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0007
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_8"
+                effect = button_effect_BA_portrait_Pulana_8
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0008
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_9"
+                effect = button_effect_BA_portrait_Pulana_9
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0009
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_10"
+                effect = button_effect_BA_portrait_Pulana_10
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0010
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_11"
+                effect = button_effect_BA_portrait_Pulana_11
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0011
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_12"
+                effect = button_effect_BA_portrait_Pulana_12
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0012
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_13"
+                effect = button_effect_BA_portrait_Pulana_13
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0013
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_14"
+                effect = button_effect_BA_portrait_Pulana_14
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0014
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_15"
+                effect = button_effect_BA_portrait_Pulana_15
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0015
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_16"
+                effect = button_effect_BA_portrait_Pulana_16
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0016
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_17"
+                effect = button_effect_BA_portrait_Pulana_17
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0017
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_18"
+                effect = button_effect_BA_portrait_Pulana_18
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0018
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_19"
+                effect = button_effect_BA_portrait_Pulana_19
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0019
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_20"
+                effect = button_effect_BA_portrait_Pulana_20
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0020
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_21"
+                effect = button_effect_BA_portrait_Pulana_21
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0021
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_22"
+                effect = button_effect_BA_portrait_Pulana_22
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0022
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_23"
+                effect = button_effect_BA_portrait_Pulana_23
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0023
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_24"
+                effect = button_effect_BA_portrait_Pulana_24
+                quadTextureSprite = GFX_Mainpage_portraits_Pulana_Pulana0024
+                multiline = no
+            }
+        }
+
+        buttonType = {
+            name = "close"
+            quadTextureSprite = "GFX_Communication_X"
+            position = { x= -150 y = 35 }
+            orientation = "UPPER_RIGHT"
+            shortcut = "ESCAPE"
+            clicksound = "back_click"
+        }
+        containerWindowType = {
+            name = BlueArchive_school_idea_button
+            size = { width = 1200 height = 650 }
+            position = { x= 115 y = 90 }
+            effectButtonType = {
+                name = BlueArchive_school_club_button_1
+                position = { x= 450 y = 270 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_C&C_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_2
+                position = { x= 855 y = 270 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Disciplinary_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_3
+                position = { x= 720 y = 0 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Engineering_department_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_4
+                position = { x= 585 y = 0 }
+                effect = button_effect_BA_Club_Game_Development_Department
+                quadTextureSprite = GFX_Club_center_interface_Game_Dev_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_5
+                position = { x= 720 y = 270 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Gourmet_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_6
+                position = { x= 720 y = 135 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Handyman_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_7
+                position = { x= 450 y = 405 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Justice_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_8
+                position = { x= 585 y = 135 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Pandemonium_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_9
+                position = { x= 585 y = 270 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Seminar_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_10
+                position = { x= 855 y = 135 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Super_phenomenon_task_force_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_11
+                position = { x= 450 y = 135 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Sweets_Club_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_12
+                position = { x= 450 y = 0 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Tea_Party_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_13
+                position = { x= 855 y = 0 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Veritas_icon
+                multiline = no
+            }
+        }
+
+        iconType = {
+            name = "hex_bg"
+            spriteType = "GFX_hex_bg"
+            position = { x = -1000000 y = -1400000 }
+            alwaysTransparent = yes
+        }
+        iconType = {
+            name = "empire_header_line"
+            quadTextureSprite = "GFX_line_long"
+            position = { x = 600000 y = 2200000 }
+            alwaysTransparent = yes
+        }
+        # Custom header
+        instantTextBoxType = {
+            name = "irm_some_header"
+            font = "malgun_goth_24"
+            text = "ui_faction_header" 	# header text
+            position = { x = 200000 y = 500000 }
+            maxWidth = 543
+            maxHeight = 22
+            fixedSize = yes
+            alwaysTransparent = yes
+        }
+
+        ### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+
+        buttonType = { name = "focus_button" position = { x = -1180 y = -1112 } spriteType = "GFX_fleetview_focus" } # hidden
+        instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -1120 y = -115 } } # hidden
+        buttonType = { name = "alien_message_background" size = { x = 0 y = 0 } position = { x = -1110 y = -11430 } spriteType = "GFX_tiles_dark_area_cut_8" } # hidden
+        buttonType = { name = "confirm_button" quadTextureSprite = "GFX_standard_button_142_34_button" } # hidden
+        containerWindowType = {
+            name = "portrait_background"
+            position = { x = -1117 y = -1145 }
+            size = { width = 0 height = 0 } 	# hide portrait window
+            iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+            iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
+        }
+
+        iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+        instantTextBoxType = { name = "empire_name" font = "malgun_goth_24" } # hidden
+        instantTextBoxType = { name = "empire_government_type" font = "cg_16b" } # hidden
+        instantTextBoxType = { name = "empire_personality_type" font = "cg_16b" } # hidden
+        overlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+        iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+        containerWindowType = {
+            name = "leader_details"
+            position = { x = -1125 y = -1175 }
+            containerWindowType = { name = "empire_traits_box" } # hidden
+            instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+            overlappingElementsBoxType = { name = "leader_traits" } # hidden
+            instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+            instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+        }
+        containerWindowType = {
+            name = "opinion_window"
+            position = { x = -1127 y = -11110 }
+            size = { width = 94 height = 30 }
+            iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+            instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+        }
+
+        ### EVENT DIPLO ###
+        containerWindowType = {
+            name = "EVENT_DIPLO"
+            position = { x = 2 y = 50 }
+            #size = { width = 563 height = 220 }
+            moveable = no
+
+            instantTextBoxType = {
+                name = "action_title"
+                font = "malgun_goth_24"
+                position = { x = 20 y = 0 }
+                maxWidth = 200
+                alwaysTransparent = yes
+            }
+            instantTextBoxType = {
+                name = "action_desc"
+                font = "malgun_goth_24"
+                position = { x = 490 y = 0 }
+                maxWidth = 500
+                maxHeight = 180
+                orientation = "UPPER_LEFT"
+                format = center
+                alwaysTransparent = yes
+                text_color_code = "H"
+            }
+            listboxType = { name = "option_list" position = { x = -11500 y = -1130 } } # hidden option list
+        }
+
+        containerWindowType = {
+            name = "portrait"
+            position = { x = 10000000 y = 00000000 }
+            size = { width = 0 height = 0 } # hide portrait window
+            iconType = {
+                name = "portrait"
+                spriteType = "GFX_portrait_gamesetup_mask"  position = { x = -11170 y = -11450 }
+            } # hidden
+            iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" position = { x = -11170 y = -11450 } } # hidden
+            iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2"  position = { x = -11170 y = -11450 }} # hidden
+            iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" position = { x = -11170 y = -11450 } } # hidden
+        }
+        iconType = {
+            name = "alien_message_bg"
+            position = { x = 70 y = 461 }
+            quadTextureSprite = "GFX_Club_center_interface_attach_01"
+        }
+        instantTextBoxType = {
+            name = "alien_message"
+            font = "cg_16b"
+            position = { x = 90 y = 470 }
+            maxWidth = 465
+            maxHeight = 220
+            format = left
+            scrollbartype = "standardtext_slider"
+        }
+    }
+    #社团中心-Arona
+    containerWindowType = {
+        name = "BlueArchive_school_club_2"
+        orientation = center
+        origo = center
+        moveable = yes
+        size = { width = 1200 height = 650 }
+
+        background = {
+            name = "background"
+            quadTextureSprite = "GFX_Club_center_interface_padframe"
+        }
+
+        iconType = {
+            name = BlueArchive_school_club_bg_1
+            position = { x = 50  y = 28 }
+            quadTextureSprite = GFX_Club_center_interface_CaffeeBG
+        }
+        iconType = {
+            name = BlueArchive_school_club_icon_1
+            position = {x = 40 y = 15}
+            quadTextureSprite = GFX_Club_center_interface_Club_center_BG_02
+        }
+        iconType = {
+            name = BlueArchive_school_club_icon_2
+            position = {x = 70 y = 40}
+            quadTextureSprite = GFX_Club_center_interface_Club_center
+        }
+        iconType = {
+            name = BlueArchive_school_club_bg_2
+            position = { x = 0 y = 0 }
+            quadTextureSprite = GFX_School_philosophy_padframe
+        }
+        containerWindowType = {#肖像组
+            name = "BlueArchive_MainWindow_portrait_button"
+            position = { x = 80 y = 162 }
+            size = { width = 1200 height = 650 }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_0"
+                effect = button_effect_BA_portrait_Arona_0
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0000
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_1"
+                effect = button_effect_BA_portrait_Arona_1
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0001
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_2"
+                effect = button_effect_BA_portrait_Arona_2
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0002
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_3"
+                effect = button_effect_BA_portrait_Arona_3
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0003
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_4"
+                effect = button_effect_BA_portrait_Arona_4
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0004
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_5"
+                effect = button_effect_BA_portrait_Arona_5
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0005
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_6"
+                effect = button_effect_BA_portrait_Arona_6
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0006
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_7"
+                effect = button_effect_BA_portrait_Arona_7
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0007
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_8"
+                effect = button_effect_BA_portrait_Arona_8
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0008
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_9"
+                effect = button_effect_BA_portrait_Arona_9
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0009
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_10"
+                effect = button_effect_BA_portrait_Arona_10
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0010
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_11"
+                effect = button_effect_BA_portrait_Arona_11
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0011
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_12"
+                effect = button_effect_BA_portrait_Arona_12
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0012
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_13"
+                effect = button_effect_BA_portrait_Arona_13
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0013
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_14"
+                effect = button_effect_BA_portrait_Arona_14
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0014
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_15"
+                effect = button_effect_BA_portrait_Arona_15
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0015
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_16"
+                effect = button_effect_BA_portrait_Arona_16
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0016
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_17"
+                effect = button_effect_BA_portrait_Arona_17
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0017
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_18"
+                effect = button_effect_BA_portrait_Arona_18
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0018
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_19"
+                effect = button_effect_BA_portrait_Arona_19
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0019
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_20"
+                effect = button_effect_BA_portrait_Arona_20
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0020
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_21"
+                effect = button_effect_BA_portrait_Arona_21
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0021
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_22"
+                effect = button_effect_BA_portrait_Arona_22
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0022
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_23"
+                effect = button_effect_BA_portrait_Arona_23
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0023
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_24"
+                effect = button_effect_BA_portrait_Arona_24
+                quadTextureSprite = GFX_Mainpage_portraits_Arona_Arona0024
+                multiline = no
+            }
+        }
+
+        buttonType = {
+            name = "close"
+            quadTextureSprite = "GFX_Communication_X"
+            position = { x= -150 y = 35 }
+            orientation = "UPPER_RIGHT"
+            shortcut = "ESCAPE"
+            clicksound = "back_click"
+        }
+        containerWindowType = {
+            name = BlueArchive_school_idea_button
+            size = { width = 1200 height = 650 }
+            position = { x= 115 y = 90 }
+            effectButtonType = {
+                name = BlueArchive_school_club_button_1
+                position = { x= 450 y = 270 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_C&C_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_2
+                position = { x= 855 y = 270 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Disciplinary_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_3
+                position = { x= 720 y = 0 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Engineering_department_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_4
+                position = { x= 585 y = 0 }
+                effect = button_effect_BA_Club_Game_Development_Department
+                quadTextureSprite = GFX_Club_center_interface_Game_Dev_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_5
+                position = { x= 720 y = 270 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Gourmet_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_6
+                position = { x= 720 y = 135 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Handyman_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_7
+                position = { x= 450 y = 405 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Justice_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_8
+                position = { x= 585 y = 135 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Pandemonium_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_9
+                position = { x= 585 y = 270 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Seminar_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_10
+                position = { x= 855 y = 135 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Super_phenomenon_task_force_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_11
+                position = { x= 450 y = 135 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Sweets_Club_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_12
+                position = { x= 450 y = 0 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Tea_Party_icon
+                multiline = no
+            }
+            effectButtonType = {
+                name = BlueArchive_school_club__button_13
+                position = { x= 855 y = 0 }
+                effect = button_effect_BA_placeholder
+                quadTextureSprite = GFX_Club_center_interface_Veritas_icon
+                multiline = no
+            }
+        }
+
+        iconType = {
+            name = "hex_bg"
+            spriteType = "GFX_hex_bg"
+            position = { x = -1000000 y = -1400000 }
+            alwaysTransparent = yes
+        }
+        iconType = {
+            name = "empire_header_line"
+            quadTextureSprite = "GFX_line_long"
+            position = { x = 600000 y = 2200000 }
+            alwaysTransparent = yes
+        }
+        # Custom header
+        instantTextBoxType = {
+            name = "irm_some_header"
+            font = "malgun_goth_24"
+            text = "ui_faction_header" 	# header text
+            position = { x = 200000 y = 500000 }
+            maxWidth = 543
+            maxHeight = 22
+            fixedSize = yes
+            alwaysTransparent = yes
+        }
+
+        ### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+
+        buttonType = { name = "focus_button" position = { x = -1180 y = -1112 } spriteType = "GFX_fleetview_focus" } # hidden
+        instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -1120 y = -115 } } # hidden
+        buttonType = { name = "alien_message_background" size = { x = 0 y = 0 } position = { x = -1110 y = -11430 } spriteType = "GFX_tiles_dark_area_cut_8" } # hidden
+        buttonType = { name = "confirm_button" quadTextureSprite = "GFX_standard_button_142_34_button" } # hidden
+        containerWindowType = {
+            name = "portrait_background"
+            position = { x = -1117 y = -1145 }
+            size = { width = 0 height = 0 } 	# hide portrait window
+            iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+            iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
+        }
+
+        iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+        instantTextBoxType = { name = "empire_name" font = "malgun_goth_24" } # hidden
+        instantTextBoxType = { name = "empire_government_type" font = "cg_16b" } # hidden
+        instantTextBoxType = { name = "empire_personality_type" font = "cg_16b" } # hidden
+        overlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+        iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+        containerWindowType = {
+            name = "leader_details"
+            position = { x = -1125 y = -1175 }
+            containerWindowType = { name = "empire_traits_box" } # hidden
+            instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+            overlappingElementsBoxType = { name = "leader_traits" } # hidden
+            instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+            instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+        }
+        containerWindowType = {
+            name = "opinion_window"
+            position = { x = -1127 y = -11110 }
+            size = { width = 94 height = 30 }
+            iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+            instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+        }
+
+        ### EVENT DIPLO ###
+        containerWindowType = {
+            name = "EVENT_DIPLO"
+            position = { x = 2 y = 50 }
+            #size = { width = 563 height = 220 }
+            moveable = no
+
+            instantTextBoxType = {
+                name = "action_title"
+                font = "malgun_goth_24"
+                position = { x = 20 y = 0 }
+                maxWidth = 200
+                alwaysTransparent = yes
+            }
+            instantTextBoxType = {
+                name = "action_desc"
+                font = "malgun_goth_24"
+                position = { x = 490 y = 0 }
+                maxWidth = 500
+                maxHeight = 180
+                orientation = "UPPER_LEFT"
+                format = center
+                alwaysTransparent = yes
+                text_color_code = "H"
+            }
+            listboxType = { name = "option_list" position = { x = -11500 y = -1130 } } # hidden option list
+        }
+
+        containerWindowType = {
+            name = "portrait"
+            position = { x = 10000000 y = 00000000 }
+            size = { width = 0 height = 0 } # hide portrait window
+            iconType = {
+                name = "portrait"
+                spriteType = "GFX_portrait_gamesetup_mask"  position = { x = -11170 y = -11450 }
+            } # hidden
+            iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" position = { x = -11170 y = -11450 } } # hidden
+            iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2"  position = { x = -11170 y = -11450 }} # hidden
+            iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" position = { x = -11170 y = -11450 } } # hidden
+        }
+        iconType = {
+            name = "alien_message_bg"
+            position = { x = 70 y = 461 }
+            quadTextureSprite = "GFX_Club_center_interface_attach_01"
+        }
+        instantTextBoxType = {
+            name = "alien_message"
+            font = "cg_16b"
+            position = { x = 90 y = 470 }
+            maxWidth = 465
+            maxHeight = 220
+            format = left
+            scrollbartype = "standardtext_slider"
+        }
+    }
+
+    ###
+    #委托
+    containerWindowType = {
+        name = "BlueArchive_mission"
+        orientation = center
+        origo = center
+        moveable = yes
+        size = { width = 1200 height = 650 }
+
+        background = {
+            name = "background"
+            quadTextureSprite = "GFX_Mission_padframe"
+        }
+
+        iconType = {
+            name = BlueArchive_communication_bg_1
+            position = { x = 50  y = 28 }
+            quadTextureSprite = GFX_Mission_CaffeeBG
+        }
+        iconType = {
+            name = BlueArchive_communication_bg_2
+            position = { x = 0 y = 0 }
+            quadTextureSprite = GFX_Mission_padframe
+        }
+
+        buttonType = {
+            name = "close"
+            quadTextureSprite = "GFX_Mission_X"
+            position = { x= -147 y = 32 }
+            orientation = "UPPER_RIGHT"
+            shortcut = "ESCAPE"
+            clicksound = "back_click"
+        }
+
+        iconType = {
+            name = "hex_bg"
+            spriteType = "GFX_hex_bg"
+            position = { x = -1000000 y = -1400000 }
+            alwaysTransparent = yes
+        }
+        iconType = {
+            name = "empire_header_line"
+            quadTextureSprite = "GFX_line_long"
+            position = { x = 600000 y = 2200000 }
+            alwaysTransparent = yes
+        }
+        # Custom header
+        instantTextBoxType = {
+            name = "irm_some_header"
+            font = "malgun_goth_24"
+            text = "ui_faction_header" 	# header text
+            position = { x = 200000 y = 500000 }
+            maxWidth = 543
+            maxHeight = 22
+            fixedSize = yes
+            alwaysTransparent = yes
+        }
+
+        ### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+
+        buttonType = { name = "focus_button" position = { x = -1180 y = -1112 } spriteType = "GFX_fleetview_focus" } # hidden
+        instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -1120 y = -115 } } # hidden
+        buttonType = { name = "alien_message_background" size = { x = 0 y = 0 } position = { x = -1110 y = -11430 } spriteType = "GFX_tiles_dark_area_cut_8" } # hidden
+        buttonType = { name = "confirm_button" quadTextureSprite = "GFX_standard_button_142_34_button" } # hidden
+        containerWindowType = {
+            name = "portrait_background"
+            position = { x = -1117 y = -1145 }
+            size = { width = 0 height = 0 } 	# hide portrait window
+            iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+            iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
+        }
+
+        iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+        instantTextBoxType = { name = "empire_name" font = "malgun_goth_24" } # hidden
+        instantTextBoxType = { name = "empire_government_type" font = "cg_16b" } # hidden
+        instantTextBoxType = { name = "empire_personality_type" font = "cg_16b" } # hidden
+        overlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+        iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+        containerWindowType = {
+            name = "leader_details"
+            position = { x = -1125 y = -1175 }
+            containerWindowType = { name = "empire_traits_box" } # hidden
+            instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+            overlappingElementsBoxType = { name = "leader_traits" } # hidden
+            instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+            instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+        }
+        containerWindowType = {
+            name = "opinion_window"
+            position = { x = -1127 y = -11110 }
+            size = { width = 94 height = 30 }
+            iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+            instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+        }
+
+        ### EVENT DIPLO ###
+        containerWindowType = {
+            name = "EVENT_DIPLO"
+            position = { x = 2 y = 50 }
+            #size = { width = 563 height = 220 }
+            moveable = no
+
+            instantTextBoxType = {
+                name = "action_title"
+                font = "malgun_goth_24"
+                position = { x = 20 y = 0 }
+                maxWidth = 200
+                alwaysTransparent = yes
+            }
+            instantTextBoxType = {
+                name = "action_desc"
+                font = "malgun_goth_24"
+                position = { x = 490 y = 0 }
+                maxWidth = 500
+                maxHeight = 180
+                orientation = "UPPER_LEFT"
+                format = center
+                alwaysTransparent = yes
+                text_color_code = "H"
+            }
+            listboxType = { name = "option_list" position = { x = -11500 y = -1130 } } # hidden option list
+        }
+
+        containerWindowType = {
+            name = "portrait"
+            position = { x = 10000000 y = 00000000 }
+            size = { width = 0 height = 0 } # hide portrait window
+            iconType = {
+                name = "portrait"
+                spriteType = "GFX_portrait_gamesetup_mask"  position = { x = -11170 y = -11450 }
+            } # hidden
+            iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" position = { x = -11170 y = -11450 } } # hidden
+            iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2"  position = { x = -11170 y = -11450 }} # hidden
+            iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" position = { x = -11170 y = -11450 } } # hidden
+        }
+
+        instantTextBoxType = {
+            name = "alien_message"
+            font = "cg_16b"
+            position = { x = 1000090 y = 47000000 }
+            maxWidth = 465
+            maxHeight = 220
+            format = left
+            scrollbartype = "standardtext_slider"
+        }
+    }
+
+    ###
+    #开发者选项
+    containerWindowType = {
+        name = "BlueArchive_developer_options"
+        orientation = center
+        origo = center
+        moveable = yes
+        size = { width = 1200 height = 650 }
+
+        background = {
+            name = "background"
+            quadTextureSprite = "GFX_Developer_options_padframe"
+        }
+
+        iconType = {
+            name = BlueArchive_communication_bg_1
+            position = { x = 50  y = 28 }
+            quadTextureSprite = GFX_Developer_options_CaffeeBG
+        }
+        iconType = {
+            name = BlueArchive_communication_bg_2
+            position = { x = 0 y = 0 }
+            quadTextureSprite = GFX_Developer_options_padframe
+        }
+
+        buttonType = {
+            name = "close"
+            quadTextureSprite = "GFX_Developer_options_X"
+            position = { x= -147 y = 32 }
+            orientation = "UPPER_RIGHT"
+            shortcut = "ESCAPE"
+            clicksound = "back_click"
+        }
+
+        iconType = {
+            name = "hex_bg"
+            spriteType = "GFX_hex_bg"
+            position = { x = -1000000 y = -1400000 }
+            alwaysTransparent = yes
+        }
+        iconType = {
+            name = "empire_header_line"
+            quadTextureSprite = "GFX_line_long"
+            position = { x = 600000 y = 2200000 }
+            alwaysTransparent = yes
+        }
+        # Custom header
+        instantTextBoxType = {
+            name = "irm_some_header"
+            font = "malgun_goth_24"
+            text = "ui_faction_header" 	# header text
+            position = { x = 200000 y = 500000 }
+            maxWidth = 543
+            maxHeight = 22
+            fixedSize = yes
+            alwaysTransparent = yes
+        }
+
+        ### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+
+        buttonType = { name = "focus_button" position = { x = -1180 y = -1112 } spriteType = "GFX_fleetview_focus" } # hidden
+        instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -1120 y = -115 } } # hidden
+        buttonType = { name = "alien_message_background" size = { x = 0 y = 0 } position = { x = -1110 y = -11430 } spriteType = "GFX_tiles_dark_area_cut_8" } # hidden
+        buttonType = { name = "confirm_button" quadTextureSprite = "GFX_standard_button_142_34_button" } # hidden
+        containerWindowType = {
+            name = "portrait_background"
+            position = { x = -1117 y = -1145 }
+            size = { width = 0 height = 0 } 	# hide portrait window
+            iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+            iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
+        }
+
+        iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+        instantTextBoxType = { name = "empire_name" font = "malgun_goth_24" } # hidden
+        instantTextBoxType = { name = "empire_government_type" font = "cg_16b" } # hidden
+        instantTextBoxType = { name = "empire_personality_type" font = "cg_16b" } # hidden
+        overlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+        iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+        containerWindowType = {
+            name = "leader_details"
+            position = { x = -1125 y = -1175 }
+            containerWindowType = { name = "empire_traits_box" } # hidden
+            instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+            overlappingElementsBoxType = { name = "leader_traits" } # hidden
+            instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+            instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+        }
+        containerWindowType = {
+            name = "opinion_window"
+            position = { x = -1127 y = -11110 }
+            size = { width = 94 height = 30 }
+            iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+            instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+        }
+
+        ### EVENT DIPLO ###
+        containerWindowType = {
+            name = "EVENT_DIPLO"
+            position = { x = 2 y = 50 }
+            #size = { width = 563 height = 220 }
+            moveable = no
+
+            instantTextBoxType = {
+                name = "action_title"
+                font = "malgun_goth_24"
+                position = { x = 20 y = 0 }
+                maxWidth = 200
+                alwaysTransparent = yes
+            }
+            instantTextBoxType = {
+                name = "action_desc"
+                font = "malgun_goth_24"
+                position = { x = 490 y = 0 }
+                maxWidth = 500
+                maxHeight = 180
+                orientation = "UPPER_LEFT"
+                format = center
+                alwaysTransparent = yes
+                text_color_code = "H"
+            }
+            listboxType = { name = "option_list" position = { x = -11500 y = -1130 } } # hidden option list
+        }
+
+        containerWindowType = {
+            name = "portrait"
+            position = { x = 10000000 y = 00000000 }
+            size = { width = 0 height = 0 } # hide portrait window
+            iconType = {
+                name = "portrait"
+                spriteType = "GFX_portrait_gamesetup_mask"  position = { x = -11170 y = -11450 }
+            } # hidden
+            iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" position = { x = -11170 y = -11450 } } # hidden
+            iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2"  position = { x = -11170 y = -11450 }} # hidden
+            iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" position = { x = -11170 y = -11450 } } # hidden
+        }
+
+        instantTextBoxType = {
+            name = "alien_message"
+            font = "cg_16b"
+            position = { x = 1000090 y = 47000000 }
+            maxWidth = 465
+            maxHeight = 220
+            format = left
+            scrollbartype = "standardtext_slider"
+        }
+    }
+    #游戏开发部
+    containerWindowType = {
+        name = "BlueArchive_game_development_department"
+        orientation = center
+        origo = center
+        moveable = yes
+        size = { width = 1200 height = 650 }
+
+        background = {
+            name = "background"
+            quadTextureSprite = "GFX_Game_Development_Department_padframe"
+        }
+
+        iconType = {
+            name = BlueArchive_Game_Development_Department_bg_1
+            position = { x = 50  y = 28 }
+            quadTextureSprite = GFX_Game_Development_Department_CaffeeBG
+        }
+        containerWindowType = {#肖像组
+            name = "BlueArchive_MainWindow_portrait_button"
+            position = { x = 50 y = 240 }
+            size = { width = 1200 height = 650 }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_0"
+                effect = button_effect_BA_Club_Game_Development_Department_portrait_0
+                quadTextureSprite = GFX_Game_Development_Department_portraits_Aris
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_1"
+                position = { x = 10 y = -10 }
+                effect = button_effect_BA_Club_Game_Development_Department_portrait_1
+                quadTextureSprite = GFX_Game_Development_Department_portraits_midori
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_2"
+                effect = button_effect_BA_Club_Game_Development_Department_portrait_2
+                quadTextureSprite = GFX_Game_Development_Department_portraits_momoi
+                multiline = no
+            }
+            effectButtonType = {
+                name = "BlueArchive_MainWindow_portrait_3"
+                position = { x = 40 y = -10 }
+                effect = button_effect_BA_Club_Game_Development_Department_portrait_3
+                quadTextureSprite = GFX_Game_Development_Department_portraits_yuzu
+                multiline = no
+            }
+        }
+        iconType = {
+            name = BlueArchive_Game_Development_Department_bg_2
+            position = { x = 0 y = 0 }
+            quadTextureSprite = GFX_Game_Development_Department_padframe
+        }
+
+        buttonType = {
+            name = "close"
+            quadTextureSprite = "GFX_Game_Development_Department_X"
+            position = { x= -147 y = 32 }
+            orientation = "UPPER_RIGHT"
+            shortcut = "ESCAPE"
+            clicksound = "back_click"
+        }
+
+        iconType = {
+            name = "hex_bg"
+            spriteType = "GFX_hex_bg"
+            position = { x = -1000000 y = -1400000 }
+            alwaysTransparent = yes
+        }
+        iconType = {
+            name = "empire_header_line"
+            quadTextureSprite = "GFX_line_long"
+            position = { x = 600000 y = 2200000 }
+            alwaysTransparent = yes
+        }
+        # Custom header
+        instantTextBoxType = {
+            name = "irm_some_header"
+            font = "malgun_goth_24"
+            text = "ui_faction_header" 	# header text
+            position = { x = 200000 y = 500000 }
+            maxWidth = 543
+            maxHeight = 22
+            fixedSize = yes
+            alwaysTransparent = yes
+        }
+
+        ### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+
+        buttonType = { name = "focus_button" position = { x = -1180 y = -1112 } spriteType = "GFX_fleetview_focus" } # hidden
+        instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -1120 y = -115 } } # hidden
+        buttonType = { name = "alien_message_background" size = { x = 0 y = 0 } position = { x = -1110 y = -11430 } spriteType = "GFX_tiles_dark_area_cut_8" } # hidden
+        buttonType = { name = "confirm_button" quadTextureSprite = "GFX_standard_button_142_34_button" } # hidden
+        containerWindowType = {
+            name = "portrait_background"
+            position = { x = -1117 y = -1145 }
+            size = { width = 0 height = 0 } 	# hide portrait window
+            iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+            iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
+        }
+
+        iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+        instantTextBoxType = { name = "empire_name" font = "malgun_goth_24" } # hidden
+        instantTextBoxType = { name = "empire_government_type" font = "cg_16b" } # hidden
+        instantTextBoxType = { name = "empire_personality_type" font = "cg_16b" } # hidden
+        overlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+        iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+        containerWindowType = {
+            name = "leader_details"
+            position = { x = -1125 y = -1175 }
+            containerWindowType = { name = "empire_traits_box" } # hidden
+            instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+            overlappingElementsBoxType = { name = "leader_traits" } # hidden
+            instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+            instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+        }
+        containerWindowType = {
+            name = "opinion_window"
+            position = { x = -1127 y = -11110 }
+            size = { width = 94 height = 30 }
+            iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+            instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+        }
+
+        ### EVENT DIPLO ###
+        containerWindowType = {
+            name = "EVENT_DIPLO"
+            position = { x = 2 y = 50 }
+            #size = { width = 563 height = 220 }
+            moveable = no
+
+            instantTextBoxType = {
+                name = "action_title"
+                font = "malgun_goth_24"
+                position = { x = 20 y = 0 }
+                maxWidth = 200
+                alwaysTransparent = yes
+            }
+            instantTextBoxType = {
+                name = "action_desc"
+                font = "malgun_goth_24"
+                position = { x = 490 y = 0 }
+                maxWidth = 500
+                maxHeight = 180
+                orientation = "UPPER_LEFT"
+                format = center
+                alwaysTransparent = yes
+                text_color_code = "H"
+            }
+            listboxType = { name = "option_list" position = { x = -11500 y = -1130 } } # hidden option list
+        }
+
+        containerWindowType = {
+            name = "portrait"
+            position = { x = 10000000 y = 00000000 }
+            size = { width = 0 height = 0 } # hide portrait window
+            iconType = {
+                name = "portrait"
+                spriteType = "GFX_portrait_gamesetup_mask"  position = { x = -11170 y = -11450 }
+            } # hidden
+            iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" position = { x = -11170 y = -11450 } } # hidden
+            iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2"  position = { x = -11170 y = -11450 }} # hidden
+            iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" position = { x = -11170 y = -11450 } } # hidden
+        }
+
+        iconType = {
+            name = "alien_message_bg"
+            position = { x = 70 y = 461 }
+            quadTextureSprite = "GFX_Game_Development_Department_attach"
+        }
+        instantTextBoxType = {
+            name = "alien_message"
+            font = "cg_16b"
+            position = { x = 90 y = 470 }
+            maxWidth = 465
+            maxHeight = 220
+            format = left
+            scrollbartype = "standardtext_slider"
+        }
+    }
+}

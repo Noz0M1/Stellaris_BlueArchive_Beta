@@ -1,0 +1,108 @@
+#######  操作领袖（country_scope)
+## 爱丽丝
+BA_remove_Aris = {
+	every_owned_leader = {
+		limit = {
+			has_leader_flag = BA_Real_Aris
+		}
+		kill_leader = {
+			show_notification = no
+		}
+	}
+	if = {
+		limit = {
+			has_modifier = modifier_BA_Aris_in_matrix
+		}
+		remove_modifier = modifier_BA_Aris_in_matrix
+	}
+	else = {
+		change_variable = {
+			which = BA_leader_respawning
+			value = -1
+		}
+	}
+}
+
+## 定制领袖
+BA_governor_Serina_PR = {
+	create_leader = {
+		class = governor
+		species = event_target:BA_leader_species
+		gender = female
+		name = NAME_Serina
+		skill = 3
+		set_age = 16
+		immortal = yes
+		#event_leader = yes
+		traits = {
+			trait = leader_trait_customize
+			trait = leader_trait_custom_Serina_SP
+		}
+	}
+	last_created_leader = {
+		BA_Halo_for_special_leader = yes
+		set_leader_flag = BA_event_leader
+		set_age = 16
+		change_leader_portrait = BA_193
+		set_leader_flag = BA_Serina_PR
+		BA_event_leader_replace = {
+			Leader_flag = leader_BA_193
+		}
+	}
+}
+
+BA_admiral_Iori_PR = {
+	create_leader = {
+		class = admiral
+		species = event_target:BA_leader_species
+		gender = female
+		name = NAME_Iori
+		skill = 3
+		set_age = 16
+		immortal = yes
+		#event_leader = yes
+		traits = {
+			trait = leader_trait_customize
+			trait = leader_trait_custom_Iori_SP
+		}
+	}
+	last_created_leader = {
+		BA_Halo_for_special_leader = yes
+		set_leader_flag = BA_event_leader
+		set_age = 16
+		change_leader_portrait = BA_50
+		set_leader_flag = BA_Iori
+		BA_event_leader_replace = {
+			Leader_flag = leader_BA_050
+		}
+	}
+}
+
+#######  特殊领袖加特质（leader_scope)
+BA_Halo_for_special_leader = {
+	#一段光环
+	if = {
+		limit = {
+			owner = {
+				has_country_flag = BA_ape_1_finished
+				NOT = {
+					has_country_flag = BA_ape_1_tr_finished
+					# TODO：光环改造
+				}
+			}
+		}
+		add_trait = leader_trait_halo_awakened
+	}
+	#二段光环
+	if = {
+		limit = {
+			owner = {
+				has_country_flag = BA_ape_1_tr_finished
+				# TODO：光环改造
+			}
+		}
+		add_trait = leader_trait_halo_full_awakened
+	}
+	#改造光环
+	# TODO：光环改造
+}

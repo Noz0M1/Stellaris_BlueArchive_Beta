@@ -1,0 +1,125 @@
+entity = {
+	name = "tyr_hvt_entity"
+	pdxmesh = "tyr_hvt_mesh"
+
+	default_state = idle
+
+	state = { name = "failsafe_idle"		animation = "idle" animation_blend_time = 2 looping = yes	}
+
+	state = { name = "idle"		animation = "idle" animation_blend_time = 10 looping = yes next_state = "idle"
+		state_time = 10
+		chance = {
+			if_current_state = {
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+
+		#event = { time = 0 node = "medium_engine_01" particle = "generic_075_exhaust_circle_idle" keep_particle = yes trigger_once = yes}
+	
+	}
+	state = { name = "idle"		animation = "idle" animation_blend_time = 4 looping = yes next_state = "idle"
+		state_time = 4
+		chance = {
+			if_current_state = {
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 0
+		}
+
+	}
+	state = { name = "combat_idle"		animation = "idle" animation_blend_time = 4 looping = yes next_state = "combat_idle"
+		state_time = 4
+		chance = {
+			if_current_state = { #判断行为权重，如果上一个是idle 或者moving，则本行为的权重为100
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+
+
+	}
+	state = { name = "combat_idle"		animation = "idle" animation_blend_time = 4 looping = yes next_state = "combat_idle"
+		state_time = 4
+		#open
+		chance = {
+			if_current_state = {
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+
+
+
+	}
+	state = { name = "combat_moving"		animation = "idle" animation_blend_time = 4 looping = yes next_state = "combat_moving"
+		state_time = 4
+		chance = {
+			if_current_state = {
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+
+	}
+	state = { name = "combat_moving"		animation = "idle" animation_blend_time = 4 looping = yes next_state = "combat_moving"
+		state_time = 4
+		chance = {
+			if_current_state = {
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+
+
+	}
+	state = { name = "moving"		animation = "idle" animation_blend_time = 4 looping = yes next_state = "moving"
+		state_time = 4
+		chance = {
+			if_current_state = {
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 0
+		}
+
+	}
+	state = { name = "moving"		animation = "idle" animation_blend_time = 4 looping = yes next_state = "moving"
+		state_time = 4
+		chance = {
+			if_current_state = {
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+
+		
+
+	}
+
+}
+
+animation = { name = "tyr_hvt_idle_animation" file = "tyr_hvt_idle.anim" }

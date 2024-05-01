@@ -1,0 +1,25 @@
+entity = {
+	name = "Chesed_entity"
+	pdxmesh = "Chesed_mesh"
+	locator = {
+		name = "root"
+		position = { 0 0 0 }
+		rotation = { 0 0 0 }
+	}
+	attach = {
+		root = "Chesed_Hud_entity"
+	}
+}
+
+entity = {
+	name = "Chesed_Color_entity"
+	pdxmesh = "Chesed_Color_mesh"
+	locator = {
+		name = "root"
+		position = { 0 0 0 }
+		rotation = { 0 0 0 }
+	}
+	attach = {
+		root = "Chesed_Color_Hud_entity"
+	}
+}

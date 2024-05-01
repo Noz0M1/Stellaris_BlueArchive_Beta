@@ -1,0 +1,198 @@
+building_BA_student_embassy = {
+	base_buildtime = 720
+	icon = building_commercial_forum
+	owner_type = corporate
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			is_ai = no
+			has_authority = auth_kivotos
+		}
+		is_artificial = no
+		NOR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+			is_planet_class = pc_city
+		}
+	}
+	planet_modifier = {
+		branch_office_value_mult = 0.25
+	}
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = 1000
+			sr_pyroxenes = 20
+		}
+		produces = {
+			sr_pyroxenes = 4
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	ai_weight = {
+		factor = 1
+	}
+}
+
+building_BA_hot_spring_town = {
+	base_buildtime = 360
+	icon = building_public_relations_office
+	owner_type = corporate
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			is_ai = no
+			has_authority = auth_kivotos
+		}
+		is_artificial = no
+		NOR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+			is_planet_class = pc_city
+		}
+	}
+	planet_modifier = {
+		planet_amenities_mult = 0.1
+	}
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = 500
+		}
+		produces = {
+			sr_pyroxenes = 10
+			energy = 25
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	ai_weight = {
+		factor = 1
+	}
+}
+
+building_BA_casino = {
+	base_buildtime = 360
+	icon = building_underground_clubs
+	owner_type = corporate
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			is_ai = no
+			has_authority = auth_kivotos
+		}
+		is_artificial = no
+		NOR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+			is_planet_class = pc_city
+		}
+	}
+	planet_modifier = {
+		planet_jobs_produces_mult = -0.1
+	}
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = 500
+		}
+		produces = {
+			sr_pyroxenes = 1
+			energy = 50
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	ai_weight = {
+		factor = 1
+	}
+}
+
+building_BA_Momoyado_interstellar = {
+	base_buildtime = 360
+	icon = building_virtual_entertainment_studios
+	owner_type = corporate
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			is_ai = no
+			has_authority = auth_kivotos
+		}
+		is_artificial = no
+		NOR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+			is_planet_class = pc_city
+		}
+	}
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = 500
+		}
+		produces = {
+			sr_keystone = 30
+
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	ai_weight = {
+		factor = 1
+	}
+}
+
+building_BA_SI_Abydos_G02 = {
+	base_buildtime = 360
+	icon = building_virtual_entertainment_studios
+	owner_type = corporate
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			is_ai = no
+			has_authority = auth_kivotos
+		}
+		is_artificial = no
+		NOR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+			is_planet_class = pc_city
+		}
+	}
+	triggered_desc = {
+		text = building_BA_SI_Abydos_G02_tip
+
+	}
+	prerequisites = {
+		tech_BA_SI_Abydos_G02
+	}
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = 500
+		}
+		produces = {
+			sr_keystone = 30
+
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	ai_weight = {
+		base = 100000
+	}
+	on_built = {
+		planet_event = {
+			id = BA_Shittem.4012
+			#days = 360
+			#random = 1800
+			days = 10
+		}
+	}
+}

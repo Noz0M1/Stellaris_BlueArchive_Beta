@@ -1,0 +1,29 @@
+entity = {
+	name = "Unfounded_Holy_Tower_entity"
+	pdxmesh = "Unfounded_Holy_Tower_mesh"
+	meshsettings = {
+		name = "Unfounded_Holy_TowerShape"
+		index = 0
+		texture_diffuse = "Unfounded_Holy_Tower_Deffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "BA_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+	attach = {
+		root = "Unfounded_Holy_Tower_asteroid_entity"
+		root_01 = "dark_matter_laser_large_muzzle_entity"
+		root_02 = "dark_matter_laser_large_muzzle_entity"
+	}
+}
+entity = {
+	name = "Unfounded_Holy_Tower_asteroid_entity"
+	pdxmesh = "Unfounded_Holy_Tower_asteroid_mesh"
+	meshsettings = {
+		name = "Unfounded_Holy_Tower_asteroidShape"
+		index = 0
+		texture_diffuse = "Unfounded_Holy_Tower_Deffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "BA_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+}

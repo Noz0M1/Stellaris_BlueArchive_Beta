@@ -1,0 +1,934 @@
+objectTypes = {
+	
+	pdxmesh = {
+		name = "ba_01_colony_ship_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_colony_ship.mesh"
+		meshsettings = {
+			name = "ba_01_colony_ship_glassShape"
+			index = 0
+			texture_diffuse = "ba_01_colony_ship_glass.dds"
+			shader = "AlphaBlend_00"
+		}
+
+		meshsettings = {
+			name = "ba_01_colony_shipShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ba_01_colony_ship_cityShape"
+			index = 0
+			texture_diffuse = "ba_01_colony_ship_city.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_construction_ship_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_construction_ship.mesh"
+		animation = { id = "idle"						type = "ba_01_construction_ship_idle_animation" }
+		animation = { id = "working_start"				type = "ba_01_construction_ship_working_start_animation" }
+		animation = { id = "working_looping"			type = "ba_01_construction_ship_working_looping_animation" }
+		meshsettings = {
+			name = "ba_01_construction_shipShape"
+			index = 0
+			texture_diffuse = "ba_01_construction_ship.dds"
+			texture_normal = "ba_01_construction_ship_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_science_ship_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_science_ship.mesh"
+		animation = { id = "idle"				type = "ba_01_science_ship_idle_animation" }
+		meshsettings = {
+			name = "ba_01_science_shipShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_transport_ship_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_transport_ship.mesh"
+		meshsettings = {
+			name = "ba_01_transport_shipShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "ba_01_drop_pod_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_drop_pod.mesh"
+
+		meshsettings = {
+			name = "ba_01_drop_podShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+############ Corvette #############
+
+	pdxmesh = {
+		name = "ba_01_corvette_S3_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_corvette_S3.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ba_01_corvette_S3Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_corvette_M1_S1_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_corvette_M1_S1.mesh"
+
+		meshsettings = {
+			name = "ba_01_corvette_M1_S1Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	
+############ Cruiser #############
+
+	pdxmesh = {
+		name = "ba_01_cruiser_frame_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_cruiser_frame.mesh"
+		animation = { id = "idle"			type = "ba_01_cruiser_frame_idle_animation" }
+		animation = { id = "death"			type = "ba_01_cruiser_frame_death1_animation" }
+		animation = { id = "death2"			type = "ba_01_cruiser_frame_death2_animation" }
+		animation = { id = "death3"			type = "ba_01_cruiser_frame_death3_animation" }			
+		
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+			
+			#Mipmap tweaking
+			#texture_diffuse = "1x1.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ba_01_cruiser_stern_S2_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_cruiser_stern_S2.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ba_01_cruiser_stern_S2Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_cruiser_stern_M1_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_cruiser_stern_M1.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ba_01_cruiser_stern_M1Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_cruiser_mid_S2_HB_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_cruiser_mid_S2_HB.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ba_01_cruiser_mid_S2_HBShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_cruiser_mid_M3_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_cruiser_mid_M3.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ba_01_cruiser_mid_M3Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_cruiser_mid_M2_S2_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_cruiser_mid_M2_S2.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ba_01_cruiser_mid_M2_S2Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_cruiser_mid_L1_M1_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_cruiser_mid_L1_M1.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ba_01_cruiser_mid_L1_M1Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_cruiser_bow_M2_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_cruiser_bow_M2.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ba_01_cruiser_bow_M2Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_cruiser_bow_M1_S2_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_cruiser_bow_M1_S2.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ba_01_cruiser_bow_M1_S2Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_cruiser_bow_L1_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_cruiser_bow_L1.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ba_01_cruiser_bow_L1Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	#######  Battleship frame  #######
+	
+	pdxmesh = {
+		name = "ba_01_battleship_frame_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_battleship_frame.mesh"
+				animation = { id = "idle"			type = "ba_01_battleship_frame_idle_animation" }
+				animation = { id = "death"			type = "ba_01_battleship_frame_death1_animation" }
+				animation = { id = "death2"			type = "ba_01_battleship_frame_death2_animation" }
+				animation = { id = "death3"			type = "ba_01_battleship_frame_death3_animation" }			
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	#######  Battleship bow sections  #######	
+	
+	pdxmesh = {
+		name = "ba_01_battleship_bow_L1_M1_S2_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_battleship_bow_L1_M1_S2.mesh"
+		scale = 0.8
+		meshsettings = {
+			name = "ba_01_battleship_bow_L1_M1_S2Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "ba_01_battleship_bow_L2_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_battleship_bow_L2.mesh"
+		scale = 0.8
+		meshsettings = {
+			name = "ba_01_battleship_bow_L2Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_battleship_bow_M1_S2_HB_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_battleship_bow_M1_S2_HB.mesh"
+		scale = 0.8
+		meshsettings = {
+			name = "ba_01_battleship_bow_M1_S2_HBShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_battleship_bow_XL_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_battleship_bow_XL.mesh"
+		scale = 0.8
+		meshsettings = {
+			name = "ba_01_battleship_bow_XLShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}	
+		
+	#######  Battleship mid sections  #######			
+		
+	pdxmesh = {
+		name = "ba_01_battleship_mid_L2_M2_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_battleship_mid_L2_M2.mesh"
+		scale = 1.0
+		meshsettings = {
+			name = "ba_01_battleship_mid_L2_M2Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_battleship_mid_L3_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_battleship_mid_L3.mesh"
+		scale = 1.0
+		meshsettings = {
+			name = "ba_01_battleship_mid_L3Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_battleship_mid_M4_SHB_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_battleship_mid_M4_SHB.mesh"
+		scale = 1.0
+		meshsettings = {
+			name = "ba_01_battleship_mid_M4_SHBShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_battleship_mid_S4_LHB_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_battleship_mid_S4_LHB.mesh"
+		scale = 1.0
+		meshsettings = {
+			name = "ba_01_battleship_mid_S4_LHBShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+				
+		
+	#######  Battleship stern sections  #######	
+		
+		
+	pdxmesh = {
+		name = "ba_01_battleship_stern_L1_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_battleship_stern_L1.mesh"
+		scale = 1.0
+		meshsettings = {
+			name = "ba_01_battleship_stern_L1Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "ba_01_battleship_stern_M2_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_battleship_stern_M2.mesh"
+		scale = 1.0
+		meshsettings = {
+			name = "ba_01_battleship_stern_M2Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	####### small ships  #######	
+	pdxmesh = {
+		name = "ba_01_bomber_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_bomber.mesh"
+
+
+		meshsettings = {
+			name = "ba_01_bomberShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		
+	}
+
+	pdxmesh = {
+		name = "ba_01_fighter_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_fighter.mesh"
+
+		meshsettings = {
+			name = "ba_01_fighterShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+		#######  destroyer frame  #######
+	
+	pdxmesh = {
+		name = "ba_01_destroyer_frame_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_destroyer_frame.mesh"
+				animation = { id = "idle"			type = "ba_01_destroyer_frame_idle_animation" }
+				animation = { id = "death"			type = "ba_01_destroyer_frame_death1_animation" }
+				animation = { id = "death2"			type = "ba_01_destroyer_frame_death2_animation" }
+				animation = { id = "death3"			type = "ba_01_destroyer_frame_death3_animation" }
+				animation = { id = "attack"			type = "ba_01_destroyer_frame_idle_animation" }				
+		scale = 1.0
+	}
+	
+	#######  destroyer bow sections  #######	
+
+	pdxmesh = {
+		name = "ba_01_destroyer_bow_L1_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_destroyer_bow_L1.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ba_01_destroyer_bow_L1Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_destroyer_bow_M1S2_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_destroyer_bow_M1S2.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ba_01_destroyer_bow_M1_S2Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_destroyer_bow_S3_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_destroyer_bow_S3.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ba_01_destroyer_bow_S3Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	#######  destroyer stern sections  #######	
+	
+	pdxmesh = {
+		name = "ba_01_destroyer_stern_M1_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_destroyer_stern_M1.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ba_01_destroyer_stern_M1Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_destroyer_stern_S2_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_destroyer_stern_S2.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ba_01_destroyer_stern_S2Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+
+	###### stations ########
+
+
+	pdxmesh = {
+		name = "ba_01_starbase_assemblyyard_section_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_starbase_assemblyyard_section.mesh"
+
+		meshsettings = {
+			name = "ba_01_starbase_assemblyyard_sectionShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+
+	pdxmesh = {
+		name = "ba_01_military_station_section_heavy_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_military_station_section_heavy.mesh"
+
+		meshsettings = {
+			name = "ba_01_military_station_section_heavyShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_military_station_section_medium_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_military_station_section_medium.mesh"
+
+		meshsettings = {
+			name = "ba_01_military_station_section_mediumShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_military_station_section_light_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_military_station_section_light.mesh"
+
+		meshsettings = {
+			name = "ba_01_military_station_section_lightShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_military_station_small_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_military_station_small.mesh"
+		meshsettings = {
+			name = "ba_01_military_station_smallShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_mining_station_frame_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_mining_station_frame.mesh"
+		animation = { id = "idle"			type = "ba_01_mining_station_frame_idle_animation" }				
+		animation = { id = "death"			type = "ba_01_mining_station_frame_death_animation" }
+	}
+
+	pdxmesh = {
+		name = "ba_01_mining_station_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_mining_station.mesh"
+		animation = { id = "idle"			type = "ba_01_mining_station_idle_animation" }				
+		animation = { id = "death"			type = "ba_01_mining_station_death_animation" }
+		meshsettings = {
+			name = "ba_01_mining_stationShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "ba_01_research_station_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_research_station.mesh"
+		animation = { id = "idle"			type = "ba_01_research_station_idle_animation" }
+		animation = { id = "death"			type = "ba_01_research_station_death_animation" }	
+		meshsettings = {
+			name = "ba_01_research_stationShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "ba_01_research_station_frame_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_research_station_frame.mesh"
+		animation = { id = "idle"			type = "ba_01_research_station_frame_idle_animation" }
+		animation = { id = "death"			type = "ba_01_research_station_frame_death_animation" }	
+	}
+
+	pdxmesh = {
+		name = "ba_01_starbase_habitat_section_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_starbase_habitat_section.mesh"
+
+		meshsettings = {
+			name = "ba_01_starbase_habitat_section_1Shape"
+			index = 0
+			texture_diffuse = "Aris_Original_Halo.dds"
+			shader = "AlphaBlend_00"
+		}
+
+		meshsettings = {
+			name = "ba_01_starbase_habitat_sectionShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "ba_01_starbase_hangarbay_section_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_starbase_hangarbay_section.mesh"
+
+		meshsettings = {
+			name = "ba_01_starbase_hangarbay_sectionShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "ba_01_starbase_refinery_section_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_starbase_refinery_section.mesh"
+
+		meshsettings = {
+			name = "ba_01_starbase_refinery_sectionShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "ba_01_starbase_science_section_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_starbase_science_section.mesh"
+
+		meshsettings = {
+			name = "ba_01_starbase_science_sectionShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "ba_01_habitat_level_1_frame_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_habitat_level_1_frame.mesh"
+		scale = 1.0
+
+	}
+
+	pdxmesh = {
+		name = "ba_01_habitat_level_2_frame_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_habitat_level_2_frame.mesh"
+		scale = 1.0
+
+	}
+
+	pdxmesh = {
+		name = "ba_01_habitat_level_3_frame_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_habitat_level_3_frame.mesh"
+		scale = 1.0
+
+	}
+	
+	pdxmesh = {
+		name = "ba_01_habitat_level_3_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_habitat_level_3.mesh"
+		animation = { id = "idle"			type = "ba_01_habitat_level_3_idle_animation" }				
+		animation = { id = "death"			type = "ba_01_habitat_level_3_death_animation" }				
+		scale = 1.0
+		meshsettings = {
+			name = "ba_01_habitat_level_3Shape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ba_01_habitat_level_3_00Shape"
+			index = 0
+			texture_diffuse = "Aris_Original_Halo.dds"
+			shader = "PdxMeshAlphaBlend_00"
+		}
+	}
+	
+	
+############ Turrets #############
+
+	pdxmesh = {
+		name = "ba_01_turret_missile_large_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_turret_missile_large.mesh"
+		meshsettings = {
+			name = "ba_01_turret_missile_largeShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_turret_missile_medium_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_turret_missile_medium.mesh"
+		meshsettings = {
+			name = "ba_01_turret_missile_mediumShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_turret_missile_small_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_turret_missile_small.mesh"
+		meshsettings = {
+			name = "ba_01_turret_missile_smallShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_turret_projectile_large_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_turret_projectile_large.mesh"
+		meshsettings = {
+			name = "ba_01_turret_projectile_largeShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_turret_projectile_medium_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_turret_projectile_medium.mesh"
+		meshsettings = {
+			name = "ba_01_turret_projectile_mediumShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_turret_projectile_small_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_turret_projectile_small.mesh"
+		meshsettings = {
+			name = "ba_01_turret_projectile_smallShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_turret_point_defense_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_turret_point_defense.mesh"
+		meshsettings = {
+			name = "ba_01_turret_point_defenseShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "ba_01_turret_xl_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_turret_XL.mesh"
+
+		meshsettings = {
+			name = "ba_01_turret_XLShape"
+			index = 0
+			texture_diffuse = "ba_01_shipset_diffuse.dds"
+			texture_normal = "ba_01_shipset_normal.dds"
+			texture_specular = "ba_01_shipset_specular.dds"
+			shader = "PdxMeshShip"
+		}}
+	}
+############# Effects ##########
+
+		pdxmesh = {
+		name = "ba_science_core_mesh"
+		file = "gfx/models/ships/lithoid_01/effects/science_ship_core.mesh"
+
+		meshsettings = {
+			name = "pTorusShape1"
+			index = 0
+			texture_diffuse = "ba_core_effect.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUVErosion"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_mining_station_effect_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_mining_station_effect.mesh"
+
+		meshsettings = {
+			name = "polySurfaceShape2"
+			index = 0
+			texture_diffuse = "ba_01_mining_lava.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUVErosion"
+		}
+	}
+	
+	pdxmesh = {
+		name = "ba_01_refinery_effect_mesh"
+		file = "gfx/models/ships/ba_01/ba_01_starbase_refinery_effect.mesh"
+
+		meshsettings = {
+			texture_diffuse = "ba_01_mining_lava.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUVErosion"
+		}
+	}
+
+

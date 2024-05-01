@@ -1,0 +1,310 @@
+########## 摇篮计划 ##########
+#### 天基武器
+#组装聚焦筒-母星
+decision_build_focus_tube_home = {
+	owned_planets_only = yes
+	potential = {
+		owner = {
+			#天基武器线路
+			has_country_flag = BA_Project_Cradle_C_space_based
+			#未建造聚焦筒
+			NOT = {
+				has_country_flag = BA_Project_Cradle_C_focus_tube_completed
+			}
+		}
+		#在母星
+		OR = {
+			has_planet_flag = BA_Kivotos_capital
+			is_capital = yes
+		}
+	}
+	enactment_time = 540
+	resources = {
+		category = decisions
+		cost = {
+			energy = 300
+			alloys = 300
+			rare_crystals = 100
+		}
+	}
+	effect = {
+		#标记建造聚焦筒完成
+		custom_tooltip = decision_build_focus_tube_home_desc
+		hidden_effect = {
+			planet_event = {
+				id = BA_Project.8101
+			}
+		}
+	}
+}
+
+#组装屏蔽壳-母星
+decision_build_shielding_case_home = {
+	owned_planets_only = yes
+	potential = {
+		owner = {
+			#天基武器线路
+			has_country_flag = BA_Project_Cradle_C_space_based
+			#未建造屏蔽壳
+			NOT = {
+				has_country_flag = BA_Project_Cradle_C_shielding_case_completed
+			}
+		}
+		#在母星
+		OR = {
+			has_planet_flag = BA_Kivotos_capital
+			is_capital = yes
+		}
+	}
+	enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1200
+			alloys = 500
+		}
+	}
+	effect = {
+		#标记建造屏蔽壳完成
+		custom_tooltip = decision_build_shielding_case_home_desc
+		hidden_effect = {
+			planet_event = {
+				id = BA_Project.8102
+			}
+		}
+	}
+}
+
+#组装屏蔽壳-殖民地
+decision_build_shielding_case_colony = {
+	owned_planets_only = yes
+	potential = {
+		owner = {
+			#天基武器线路
+			has_country_flag = BA_Project_Cradle_C_space_based
+			#未建造屏蔽壳
+			NOT = {
+				has_country_flag = BA_Project_Cradle_C_shielding_case_completed
+			}
+		}
+		#在殖民地
+		Project_Cradle_planet_trigger = yes
+	}
+	enactment_time = 1080
+	resources = {
+		category = decisions
+		cost = {
+			energy = 200
+			alloys = 500
+		}
+	}
+	effect = {
+		#标记建造屏蔽壳完成
+		custom_tooltip = decision_build_shielding_case_colony_desc
+		hidden_effect = {
+			planet_event = {
+				id = BA_Project.8102
+			}
+		}
+	}
+}
+
+#组装核心组件-母星
+decision_build_core_components_home = {
+	owned_planets_only = yes
+	potential = {
+		owner = {
+			#天基武器线路
+			has_country_flag = BA_Project_Cradle_C_space_based
+			#未建造核心组件
+			NOT = {
+				has_country_flag = BA_Project_Cradle_C_core_components_completed
+			}
+		}
+		#在母星
+		OR = {
+			has_planet_flag = BA_Kivotos_capital
+			is_capital = yes
+		}
+	}
+	enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1000
+			alloys = 200
+			volatile_motes = 100
+			exotic_gases = 100
+		}
+	}
+	effect = {
+		#标记建造核心组件完成
+		custom_tooltip = decision_build_core_components_home_desc
+		hidden_effect = {
+			planet_event = {
+				id = BA_Project.8103
+			}
+		}
+	}
+}
+
+#组装核心组件-殖民地
+decision_build_core_components_colony = {
+	owned_planets_only = yes
+	potential = {
+		owner = {
+			#天基武器线路
+			has_country_flag = BA_Project_Cradle_C_space_based
+			#未建造核心组件
+			NOT = {
+				has_country_flag = BA_Project_Cradle_C_core_components_completed
+			}
+		}
+		#在殖民地
+		Project_Cradle_planet_trigger = yes
+	}
+	enactment_time = 1080
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1000
+			alloys = 200
+			volatile_motes = 100
+			exotic_gases = 100
+		}
+	}
+	effect = {
+		#标记建造核心组件完成
+		custom_tooltip = decision_build_core_components_colony_desc
+		hidden_effect = {
+			planet_event = {
+				id = BA_Project.8103
+			}
+		}
+	}
+}
+
+#### 自走机械
+#建造厂区-殖民地
+decision_build_factory_colony = {
+	owned_planets_only = yes
+	potential = {
+		owner = {
+			#自走机械线路
+			has_country_flag = BA_Project_Cradle_C_auto_machine
+			#厂区未建好
+			NOT = {
+				has_country_flag = BA_Project_Cradle_C_factory_completed
+			}
+		}
+		#在殖民地
+		Project_Cradle_planet_trigger = yes
+	}
+	enactment_time = 540
+	resources = {
+		category = decisions
+		cost = {
+			energy = 200
+			minerals = 500
+		}
+	}
+	effect = {
+		#标记厂区完成
+		custom_tooltip = decision_build_factory_colony_desc
+		hidden_effect = {
+			planet_event = {
+				id = BA_Project.8201
+			}
+		}
+	}
+}
+
+#建造机械-殖民地
+decision_build_machine_colony = {
+	owned_planets_only = yes
+	potential = {
+		owner = {
+			#自走机械线路
+			has_country_flag = BA_Project_Cradle_C_auto_machine
+			#厂区已建好
+			has_country_flag = BA_Project_Cradle_C_factory_completed
+			#机械未建好
+			NOT = {
+				has_country_flag = BA_Project_Cradle_C_machine_completed
+			}
+		}
+		#在殖民地
+		Project_Cradle_planet_trigger = yes
+	}
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 300
+			consumer_goods = 200
+		}
+	}
+	effect = {
+		#不用标记机械完成
+		custom_tooltip = decision_build_machine_colony_desc
+		hidden_effect = {
+			planet_event = {
+				id = BA_Project.8202
+			}
+		}
+	}
+}
+
+#重建学园都市星球
+decision_rebuild_Kivotos_on_ruins = {
+	owned_planets_only = yes
+	icon = decision_arcology_project
+	potential = {
+		owner = {
+			has_country_flag = BA_Project_Cradle_last_step
+		}
+		is_planet_class = pc_BA_ruined_planet
+	}
+	allow = {
+		owner = {
+			has_technology = tech_housing_2
+		}
+	}
+	enactment_time = 2880
+	resources = {
+		category = decisions
+		cost = {
+			energy = 2000
+			minerals = 10000
+			consumer_goods = 3000
+			rare_crystals = 200
+			volatile_motes = 200
+			exotic_gases = 200
+			influence = 50
+		}
+	}
+	effect = {
+		custom_tooltip = decision_rebuild_Kivotos_on_ruins_desc
+		hidden_effect = {
+			clear_deposits = yes
+			change_pc = pc_BA_campus_planet
+			add_district = BA_districts_dome
+			add_district = BA_districts_dome
+			add_district = BA_districts_dome
+			add_district = BA_districts_campus
+			add_district = BA_districts_campus
+			add_district = BA_districts_municipality
+			add_district = BA_districts_municipality
+			add_district = BA_districts_military_factory
+			add_district = BA_districts_suburbs
+			add_district = BA_districts_suburbs
+			check_planet_employment = yes
+			owner = {
+				set_country_flag = BA_Planet_rebuilded
+				country_event = {
+					id = BA_Project.0098
+				}
+			}
+		}
+	}
+}

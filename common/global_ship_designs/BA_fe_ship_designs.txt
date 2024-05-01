@@ -1,0 +1,771 @@
+ship_design = {
+	name = "NAME_BA_FE_MISSILE_SHIP"
+	ship_size = BA_missile_ship
+	is_event_design = yes
+	is_special_buildable = yes
+	allow_buildable_trigger = is_BA_fallen_empire
+	section = {
+		template = BA_MISSILE_SHIP_BOW_FE
+		slot = bow
+		component = {
+			slot = LARGE_GUN_01
+			template = LARGE_XRAY_LASER
+		}
+		component = {
+			slot = PD_01
+			template = Sagittarius_night
+		}
+		component = {
+			slot = PD_02
+			template = Sagittarius_night
+		}
+		component = {
+			slot = LARGE_UTILITY_1
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_2
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_3
+			template = LARGE_T6BACKPACK
+		}
+	}
+	section = {
+		template = BA_MISSILE_SHIP_STERN_FE
+		slot = stern
+		component = {
+			slot = TORPEDO_01
+			template = Grenadiers_575
+		}
+		component = {
+			slot = TORPEDO_02
+			template = Grenadiers_575
+		}
+		component = {
+			slot = TORPEDO_03
+			template = Grenadiers_575
+		}
+		component = {
+			slot = TORPEDO_04
+			template = Grenadiers_575
+		}
+		component = {
+			slot = LARGE_UTILITY_1
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_2
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = LARGE_UTILITY_3
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = AUX_UTILITY_1
+			template = AFTERBURNER_2
+		}
+		component = {
+			slot = AUX_UTILITY_2
+			template = AFTERBURNER_2
+		}
+		component = {
+			slot = AUX_UTILITY_3
+			template = AFTERBURNER_2
+		}
+	}
+	required_component = SENSOR_4
+	required_component = JUMP_DRIVE_1
+	required_component = SHIP_THRUSTER_5
+	required_component = BA_FE_REACTOR
+	required_component = BA_COMBAT_COMPUTER_LINE_PRECOG
+}
+
+ship_design = {
+	name = "NAME_BA_FE_ARTILLERY_SHIP"
+	ship_size = BA_artillery_ship
+	is_event_design = yes
+	is_special_buildable = yes
+	allow_buildable_trigger = is_BA_fallen_empire
+	section = {
+		template = BA_ARTILLERY_SHIP_BOW_FE
+		slot = bow
+		component = {
+			slot = TITANIC_01
+			template = SuperNova
+		}
+		component = {
+			slot = LARGE_UTILITY_1
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_2
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_3
+			template = LARGE_T6BACKPACK
+		}
+	}
+	section = {
+		template = BA_ARTILLERY_SHIP_MID_FE
+		slot = mid
+		component = {
+			slot = EXTRA_LARGE_01
+			template = Fantacy_colors
+		}
+		component = {
+			slot = EXTRA_LARGE_02
+			template = Fantacy_colors
+		}
+		component = {
+			slot = EXTRA_LARGE_03
+			template = Fantacy_colors
+		}
+		component = {
+			slot = LARGE_UTILITY_1
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_2
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_3
+			template = LARGE_T6BACKPACK
+		}
+	}
+	section = {
+		template = BA_ARTILLERY_SHIP_STERN_FE
+		slot = stern
+		component = {
+			slot = LARGE_UTILITY_1
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = LARGE_UTILITY_2
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = LARGE_UTILITY_3
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = LARGE_UTILITY_4
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = AUX_UTILITY_1
+			template = ENIGMATIC_DECODER
+		}
+		component = {
+			slot = AUX_UTILITY_2
+			template = ENIGMATIC_DECODER
+		}
+		component = {
+			slot = AUX_UTILITY_3
+			template = ENIGMATIC_DECODER
+		}
+		component = {
+			slot = AUX_UTILITY_4
+			template = SHIELD_BOOSTER
+		}
+		component = {
+			slot = AUX_UTILITY_5
+			template = SHIELD_BOOSTER
+		}
+		component = {
+			slot = AUX_UTILITY_6
+			template = SHIELD_BOOSTER
+		}
+	}
+	required_component = SENSOR_4
+	required_component = JUMP_DRIVE_1
+	required_component = SHIP_THRUSTER_5
+	required_component = BA_FE_REACTOR
+	required_component = BA_COMBAT_COMPUTER_MORTAR_PRECOG
+}
+
+ship_design = {
+	name = "NAME_BA_FE_SWARM_SHIP"
+	ship_size = BA_swarm_ship
+	is_event_design = yes
+	is_special_buildable = yes
+	allow_buildable_trigger = is_BA_fallen_empire
+	section = {
+		template = BA_SWARM_SHIP_BOW_FE
+		slot = bow
+		component = {
+			slot = EXTRA_LARGE_01
+			template = Fantacy_colors
+		}
+		component = {
+			slot = PD_01
+			template = Sagittarius_night
+		}
+		component = {
+			slot = PD_02
+			template = Sagittarius_night
+		}
+		component = {
+			slot = PD_03
+			template = Sagittarius_night
+		}
+		component = {
+			slot = PD_04
+			template = Sagittarius_night
+		}
+		component = {
+			slot = PD_05
+			template = Sagittarius_night
+		}
+		component = {
+			slot = LARGE_UTILITY_1
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_2
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_3
+			template = LARGE_T6BACKPACK
+		}
+	}
+	section = {
+		template = BA_SWARM_SHIP_MID_FE
+		slot = mid
+		component = {
+			slot = TORPEDO_01
+			template = Grenadiers_575
+		}
+		component = {
+			slot = TORPEDO_02
+			template = Grenadiers_575
+		}
+		component = {
+			slot = TORPEDO_03
+			template = Grenadiers_575
+		}
+		component = {
+			slot = STRIKE_CRAFT_01
+			template = Adena_3
+		}
+		component = {
+			slot = STRIKE_CRAFT_02
+			template = Adena_3
+		}
+		component = {
+			slot = STRIKE_CRAFT_03
+			template = Adena_3
+		}
+		component = {
+			slot = LARGE_UTILITY_1
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_2
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_3
+			template = LARGE_T6BACKPACK
+		}
+	}
+	section = {
+		template = BA_SWARM_SHIP_STERN_FE
+		slot = stern
+		component = {
+			slot = LARGE_UTILITY_1
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = LARGE_UTILITY_2
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = LARGE_UTILITY_3
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = LARGE_UTILITY_4
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = AUX_UTILITY_1
+			template = ENIGMATIC_DECODER
+		}
+		component = {
+			slot = AUX_UTILITY_2
+			template = ENIGMATIC_DECODER
+		}
+		component = {
+			slot = AUX_UTILITY_3
+			template = ENIGMATIC_DECODER
+		}
+		component = {
+			slot = AUX_UTILITY_4
+			template = SHIELD_BOOSTER
+		}
+		component = {
+			slot = AUX_UTILITY_5
+			template = SHIELD_BOOSTER
+		}
+		component = {
+			slot = AUX_UTILITY_6
+			template = SHIELD_BOOSTER
+		}
+	}
+	required_component = SENSOR_4
+	required_component = JUMP_DRIVE_1
+	required_component = SHIP_THRUSTER_5
+	required_component = BA_FE_REACTOR
+	required_component = BA_COMBAT_COMPUTER_CARRIER_PRECOG
+}
+
+ship_design = {
+	name = "NAME_BA_FE_HUB_SHIP"
+	ship_size = BA_hub_ship
+	is_event_design = yes
+	is_special_buildable = yes
+	allow_buildable_trigger = is_BA_fallen_empire
+	section = {
+		template = BA_HUB_SHIP_BOW_FE
+		slot = bow
+		component = {
+			slot = TITANIC_01
+			template = SuperNova
+		}
+		component = {
+			slot = TITANIC_02
+			template = SuperNova
+		}
+		component = {
+			slot = TITANIC_03
+			template = SuperNova
+		}
+		component = {
+			slot = TITANIC_04
+			template = SuperNova
+		}
+		component = {
+			slot = LARGE_UTILITY_1
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_2
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_3
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_4
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_5
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_6
+			template = LARGE_T6BACKPACK
+		}
+	}
+	section = {
+		template = BA_HUB_SHIP_MID_FE
+		slot = mid
+		component = {
+			slot = TITANIC_01
+			template = SuperNova
+		}
+		component = {
+			slot = TITANIC_02
+			template = SuperNova
+		}
+		component = {
+			slot = TITANIC_03
+			template = SuperNova
+		}
+		component = {
+			slot = TITANIC_04
+			template = SuperNova
+		}
+		component = {
+			slot = LARGE_UTILITY_1
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_2
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_3
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_4
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_5
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_6
+			template = LARGE_T6BACKPACK
+		}
+	}
+	section = {
+		template = BA_HUB_SHIP_STERN_FE
+		slot = stern
+		component = {
+			slot = LARGE_UTILITY_1
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = LARGE_UTILITY_2
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = LARGE_UTILITY_3
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = LARGE_UTILITY_4
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = LARGE_UTILITY_5
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = LARGE_UTILITY_6
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = AUX_UTILITY_1
+			template = ENIGMATIC_DECODER
+		}
+		component = {
+			slot = AUX_UTILITY_2
+			template = ENIGMATIC_DECODER
+		}
+		component = {
+			slot = AUX_UTILITY_3
+			template = ENIGMATIC_DECODER
+		}
+		component = {
+			slot = AUX_UTILITY_4
+			template = SHIELD_BOOSTER
+		}
+		component = {
+			slot = AUX_UTILITY_5
+			template = SHIELD_BOOSTER
+		}
+		component = {
+			slot = AUX_UTILITY_6
+			template = SHIELD_BOOSTER
+		}
+	}
+	required_component = SENSOR_4
+	required_component = JUMP_DRIVE_1
+	required_component = SHIP_THRUSTER_5
+	required_component = BA_FE_REACTOR
+	required_component = BA_COMBAT_COMPUTER_MORTAR_PRECOG
+	required_component = BA_AURA_SHIELD_DAMPENER
+}
+
+ship_design = {
+	name = "NAME_BA_FE_DEFENCE_CANON"
+	ship_size = BA_defence_cannon
+	is_event_design = yes
+	is_special_buildable = yes
+	allow_buildable_trigger = is_BA_fallen_empire
+	section = {
+		template = BA_DEFENCE_CANNON_FE
+		slot = ship
+		component = {
+			slot = TITANIC_01
+			template = SuperNova
+		}
+		component = {
+			slot = TITANIC_02
+			template = SuperNova
+		}
+		component = {
+			slot = LARGE_UTILITY_1
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_2
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_3
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = AUX_UTILITY_1
+			template = ENIGMATIC_DECODER
+		}
+	}
+	required_component = SENSOR_4
+	required_component = BA_FE_REACTOR
+	required_component = BA_COMBAT_COMPUTER_MORTAR_PRECOG
+}
+
+ship_design = {
+	name = "NAME_BA_FE_CONSTRUCTION"
+	ship_size = constructor
+	is_special_buildable = yes
+	allow_buildable_trigger = is_BA_fallen_empire
+	section = {
+		template = "DEFAULT_CONSTRUCTION_SECTION"
+		slot = mid
+		component = {
+			slot = "SMALL_UTILITY_1"
+			template = "SMALL_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "SMALL_UTILITY_2"
+			template = "SMALL_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "SMALL_UTILITY_3"
+			template = "SMALL_DARK_MATTER_DEFLECTOR"
+		}
+	}
+	required_component = JUMP_DRIVE_1
+	required_component = SHIP_THRUSTER_5
+	required_component = SENSOR_4
+	required_component = CORVETTE_DARK_MATTER_REACTOR
+}
+
+#天灾 先放在这
+ship_design = {
+	name = "NAME_Aris_Starbase"
+	ship_size = starbase_Aris
+	section = {
+		template = "Aris_starbase_key"
+		slot = "mid"
+		component = {
+			slot = "TORPEDO_01"
+			template = "ENERGY_TORPEDO_1"
+		}
+		component = {
+			slot = "TORPEDO_02"
+			template = "ENERGY_TORPEDO_1"
+		}
+		component = {
+			slot = "TORPEDO_03"
+			template = "TORPEDO_3"
+		}
+		component = {
+			slot = "TORPEDO_04"
+			template = "TORPEDO_3"
+		}
+		component = {
+			slot = "TORPEDO_05"
+			template = "TORPEDO_3"
+		}
+		component = {
+			slot = "SMALL_GUN_01"
+			template = "SMALL_UV_LASER"
+		}
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "SMALL_UV_LASER"
+		}
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_PLASMA_2"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_PLASMA_2"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_PLASMA_2"
+		}
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "MEDIUM_PLASMA_2"
+		}
+		component = {
+			slot = "MEDIUM_GUN_05"
+			template = "MEDIUM_PLASMA_2"
+		}
+		component = {
+			slot = "PD_01"
+			template = "FLAK_BATTERY_1"
+		}
+		component = {
+			slot = "PD_02"
+			template = "FLAK_BATTERY_1"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+	}
+	required_component = "SENSOR_2"
+}
+
+ship_design = {
+	name = "NAME_BA_Aris_flagship"
+	ship_size = BA_Aris_flagship
+	is_event_design = yes
+	is_special_buildable = yes
+	allow_buildable_trigger = is_BA_fallen_empire
+	section = {
+		template = BA_ARIS_bow
+		slot = bow
+		component = {
+			slot = TITANIC_01
+			template = SuperNova
+		}
+		component = {
+			slot = TITANIC_02
+			template = SuperNova
+		}
+		component = {
+			slot = TITANIC_03
+			template = SuperNova
+		}
+		component = {
+			slot = TITANIC_04
+			template = SuperNova
+		}
+		component = {
+			slot = LARGE_UTILITY_1
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_2
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_3
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_4
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_5
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_6
+			template = LARGE_T6BACKPACK
+		}
+	}
+	section = {
+		template = BA_ARIS_mid
+		slot = mid
+		component = {
+			slot = TITANIC_01
+			template = SuperNova
+		}
+		component = {
+			slot = TITANIC_02
+			template = SuperNova
+		}
+		component = {
+			slot = TITANIC_03
+			template = SuperNova
+		}
+		component = {
+			slot = TITANIC_04
+			template = SuperNova
+		}
+		component = {
+			slot = LARGE_UTILITY_1
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_2
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_3
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_4
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_5
+			template = LARGE_T6BACKPACK
+		}
+		component = {
+			slot = LARGE_UTILITY_6
+			template = LARGE_T6BACKPACK
+		}
+	}
+	section = {
+		template = BA_ARIS_stern
+		slot = stern
+		component = {
+			slot = LARGE_UTILITY_1
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = LARGE_UTILITY_2
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = LARGE_UTILITY_3
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = LARGE_UTILITY_4
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = LARGE_UTILITY_5
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = LARGE_UTILITY_6
+			template = LARGE_T6BADGE
+		}
+		component = {
+			slot = AUX_UTILITY_1
+			template = ENIGMATIC_DECODER
+		}
+		component = {
+			slot = AUX_UTILITY_2
+			template = ENIGMATIC_DECODER
+		}
+		component = {
+			slot = AUX_UTILITY_3
+			template = ENIGMATIC_DECODER
+		}
+		component = {
+			slot = AUX_UTILITY_4
+			template = SHIELD_BOOSTER
+		}
+		component = {
+			slot = AUX_UTILITY_5
+			template = SHIELD_BOOSTER
+		}
+		component = {
+			slot = AUX_UTILITY_6
+			template = SHIELD_BOOSTER
+		}
+	}
+	required_component = SENSOR_4
+	required_component = JUMP_DRIVE_1
+	required_component = SHIP_THRUSTER_5
+	required_component = BA_FE_REACTOR
+	required_component = BA_COMBAT_COMPUTER_MORTAR_PRECOG
+	required_component = BA_AURA_SHIELD_DAMPENER
+}

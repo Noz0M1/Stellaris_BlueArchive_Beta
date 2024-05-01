@@ -1,0 +1,221 @@
+namespace = BlueArchiveIdeaEVents
+country_event = {
+	#格赫娜
+	id = BA_Shittem.1031
+	is_triggered_only = yes
+	title = "BLANK_TEXT"
+	desc = "BLANK_TEXT"
+	diplomatic = yes
+	custom_gui = BA_SI_window_Gehenna
+	immediate = {
+		#初始化页面数
+		set_variable = {
+			which = BA_page_serial
+			value = 1
+		}
+		set_variable = {
+			which = BA_page_class
+			value = 1
+		}
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	#阿拜多斯
+	id = BA_Shittem.1032
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = BA_SI_window_Abydos
+	immediate = {
+		set_variable = {
+			which = BA_page_serial
+			value = 1
+		}
+		set_variable = {
+			which = BA_page_class
+			value = 2
+		}
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	#百鬼夜行
+	id = BA_Shittem.1033
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = BA_SI_window_Hyakkiyako
+	immediate = {
+		set_variable = {
+			which = BA_page_serial
+			value = 1
+		}
+		set_variable = {
+			which = BA_page_class
+			value = 3
+		}
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	#千年
+	id = BA_Shittem.1034
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = BA_SI_window_Millennium
+	immediate = {
+		set_variable = {
+			which = BA_page_serial
+			value = 1
+		}
+		set_variable = {
+			which = BA_page_class
+			value = 4
+		}
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	#赤冬
+	id = BA_Shittem.1035
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = BA_SI_window_Redwinter
+	immediate = {
+		set_variable = {
+			which = BA_page_serial
+			value = 1
+		}
+		set_variable = {
+			which = BA_page_class
+			value = 5
+		}
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	#山海经
+	id = BA_Shittem.1036
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = BA_SI_window_Shanhaijing
+	immediate = {
+		set_variable = {
+			which = BA_page_serial
+			value = 1
+		}
+		set_variable = {
+			which = BA_page_class
+			value = 6
+		}
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	#圣三一
+	id = BA_Shittem.1037
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = BA_SI_window_Trinity
+	immediate = {
+		set_variable = {
+			which = BA_page_serial
+			value = 1
+		}
+		set_variable = {
+			which = BA_page_class
+			value = 7
+		}
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	#瓦尔基里
+	id = BA_Shittem.1038
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = BA_SI_window_Valkyrie
+	immediate = {
+		set_variable = {
+			which = BA_page_serial
+			value = 1
+		}
+		set_variable = {
+			which = BA_page_class
+			value = 8
+		}
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	#待定
+	id = BA_Shittem.1039
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = BlueArchive_angel_24
+	immediate = {
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	#待定
+	id = BA_Shittem.1040
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = BlueArchive_angel_24
+	immediate = {
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	#待定
+	id = BA_Shittem.1041
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = BlueArchive_angel_24
+	immediate = {
+	}
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}

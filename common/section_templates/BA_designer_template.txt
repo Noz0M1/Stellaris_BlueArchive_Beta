@@ -1,0 +1,830 @@
+######### 自律导弹艇
+#先锋舰艏
+ship_section_template = {
+	key = "BA_MISSILE_SHIP_BOW_A"
+	ship_size = BA_missile_ship
+	fits_on_slot = bow
+	should_draw_components = no
+	entity = "ba_missile_ship_bow_M1S2_entity"	#用驱逐舰的
+	#entity = "destroyer_bow_M1S2_entity"	#用驱逐舰的
+	icon = "GFX_ship_part_core_bow"	#用驱逐舰的
+	ai_weight = {
+		modifier = {
+			factor = 1
+			always = yes
+		}
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	medium_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 20
+		}
+	}
+}
+
+#哨兵舰艏
+ship_section_template = {
+	key = "BA_MISSILE_SHIP_BOW_B"
+	ship_size = BA_missile_ship
+	fits_on_slot = bow
+	should_draw_components = no
+	entity = "ba_missile_ship_bow_L1_entity"	#用驱逐舰的
+	#entity = "destroyer_bow_L1_entity"	#用驱逐舰的
+	icon = "GFX_ship_part_core_bow"	#用驱逐舰的
+	ai_weight = {
+		modifier = {
+			factor = 1
+			always = yes
+		}
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	medium_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 20
+		}
+	}
+}
+
+#神盾舰艏
+ship_section_template = {
+	key = "BA_MISSILE_SHIP_BOW_C"
+	ship_size = BA_missile_ship
+	fits_on_slot = bow
+	should_draw_components = no
+	entity = "ba_missile_ship_bow_L1_entity"	#用驱逐舰的
+	#entity = "destroyer_bow_L1_entity"	#用驱逐舰的
+	icon = "GFX_ship_part_core_bow"	#用驱逐舰的
+	ai_weight = {
+		modifier = {
+			factor = 1
+			always = yes
+		}
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "large_gun_01"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 20
+			sr_keystone = 5
+		}
+	}
+	prerequisites = {
+		tech_BA_spaceship_automation_3
+	}
+}
+
+###
+#弹舱舰尾
+ship_section_template = {
+	key = "BA_MISSILE_SHIP_STERN_A"
+	ship_size = BA_missile_ship
+	fits_on_slot = stern
+	should_draw_components = no
+	entity = "ba_missile_ship_stern_S2_entity"	#用驱逐舰的
+	#entity = "destroyer_stern_S2_entity"	#用驱逐舰的
+	icon = "GFX_ship_part_core_stern"	#用驱逐舰的
+	ai_weight = {
+		modifier = {
+			factor = 1
+			always = yes
+		}
+	}
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "medium_missile_turret"
+		locatorname = "small_gun_02"
+	}
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+#涡旋舰尾
+ship_section_template = {
+	key = "BA_MISSILE_SHIP_STERN_B"
+	ship_size = BA_missile_ship
+	fits_on_slot = stern
+	should_draw_components = no
+	entity = "ba_missile_ship_stern_S2_entity"	#用驱逐舰的
+	#entity = "destroyer_stern_S2_entity"	#用驱逐舰的
+	icon = "GFX_ship_part_core_stern"	#用驱逐舰的
+	ai_weight = {
+		modifier = {
+			factor = 1
+			always = yes
+		}
+	}
+	medium_utility_slots = 3
+	aux_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+			sr_keystone = 5
+		}
+	}
+	prerequisites = {
+		tech_BA_spaceship_automation_3
+	}
+}
+
+######### 自律脊峰舰
+#喷火舰艏
+ship_section_template = {
+	key = "BA_ARTILLERY_SHIP_BOW_A"
+	ship_size = BA_artillery_ship
+	fits_on_slot = bow
+	should_draw_components = no
+	entity = "ba_artillery_ship_bow_L1M1S2_entity"
+	#entity = "battleship_bow_M3S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	icon_frame = 1
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "small_gun_03"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+#波纹舰艏
+ship_section_template = {
+	key = "BA_ARTILLERY_SHIP_BOW_B"
+	ship_size = BA_artillery_ship
+	fits_on_slot = bow
+	should_draw_components = no
+	entity = "ba_artillery_ship_bow_XL1_entity"
+	#entity = "battleship_bow_XL1_entity"
+	icon = "GFX_ship_part_core_bow"
+	icon_frame = 1
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 60
+		}
+	}
+	prerequisites = {
+		#原版
+		tech_energy_lance_1
+		tech_energy_lance_2
+		tech_arc_emitter_1
+		tech_arc_emitter_2
+		tech_mass_accelerator_1
+		tech_mass_accelerator_2
+		#mod
+		tech_BA_Fantacy_colors
+	}
+}
+
+#超新星舰艏
+ship_section_template = {
+	key = "BA_ARTILLERY_SHIP_BOW_C"
+	ship_size = BA_artillery_ship
+	fits_on_slot = bow
+	should_draw_components = no
+	entity = "ba_artillery_ship_bow_XL1_entity"
+	#entity = "battleship_bow_XL1_entity"
+	icon = "GFX_ship_part_core_bow"
+	icon_frame = 1
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+			sr_keystone = 20
+		}
+	}
+	prerequisites = {
+		tech_BA_SuperNova
+	}
+}
+
+###
+#焰火核心
+ship_section_template = {
+	key = "BA_ARTILLERY_SHIP_MID_A"
+	ship_size = BA_artillery_ship
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "ba_artillery_ship_mid_L3_entity"
+	#entity = "battleship_mid_L3_entity"
+	icon = "GFX_ship_part_core_mid"
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_03"
+	}
+	large_utility_slots = 6
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+#剑鞘核心
+ship_section_template = {
+	key = "BA_ARTILLERY_SHIP_MID_C"
+	ship_size = BA_artillery_ship
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "ba_artillery_ship_mid_L3_entity"
+	icon = "GFX_ship_part_core_mid"
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "extra_large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "extra_large_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "extra_large_turret"
+		locatorname = "large_gun_03"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100
+			sr_keystone = 20
+		}
+	}
+	prerequisites = {
+		tech_BA_spaceship_automation_3
+	}
+}
+
+###
+#流星舰尾
+ship_section_template = {
+	key = "BA_ARTILLERY_SHIP_STERN_A"
+	ship_size = BA_artillery_ship
+	fits_on_slot = stern
+	should_draw_components = no
+	entity = "ba_artillery_ship_stern_L1_entity"
+	#entity = "battleship_stern_L1_entity"
+	icon = "GFX_ship_part_core_stern"
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 20
+		}
+	}
+}
+
+#修士舰尾
+ship_section_template = {
+	key = "BA_ARTILLERY_SHIP_STERN_B"
+	ship_size = BA_artillery_ship
+	fits_on_slot = stern
+	should_draw_components = no
+	entity = "ba_artillery_ship_stern_L1_entity"
+	#entity = "battleship_stern_L1_entity"
+	icon = "GFX_ship_part_core_stern"
+	aux_utility_slots = 6
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 50
+		}
+	}
+}
+
+#链路舰尾
+ship_section_template = {
+	key = "BA_ARTILLERY_SHIP_STERN_C"
+	ship_size = BA_artillery_ship
+	fits_on_slot = stern
+	should_draw_components = no
+	entity = "ba_artillery_ship_stern_L1_entity"
+	#entity = "battleship_stern_L1_entity"
+	icon = "GFX_ship_part_core_stern"
+	large_utility_slots = 6
+	aux_utility_slots = 6
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+			sr_keystone = 5
+		}
+	}
+	prerequisites = {
+		tech_BA_spaceship_automation_3
+	}
+}
+
+######### 自律军团舰
+#哨卫舰艏
+ship_section_template = {
+	key = "BA_SWARM_SHIP_BOW_A"
+	ship_size = BA_swarm_ship
+	fits_on_slot = bow
+	should_draw_components = no
+	entity = "ba_swarm_ship_bow_L2_entity"
+	#entity = "battleship_bow_L2_entity"
+	icon = "GFX_ship_part_core_bow"
+	icon_frame = 1
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "point_defence_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "point_defence_turret"
+		locatorname = "large_gun_02"
+	}
+	large_utility_slots = 3
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+#齐射核心
+ship_section_template = {
+	key = "BA_SWARM_SHIP_MID_A"
+	ship_size = BA_swarm_ship
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "ba_swarm_ship_mid_L3_entity"
+	#entity = "battleship_mid_L3_entity"
+	icon = "GFX_ship_part_core_mid"
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "medium_missile_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "medium_missile_turret"
+		locatorname = "large_gun_03"
+	}
+	large_utility_slots = 4
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 60
+		}
+	}
+}
+
+#近卫核心
+ship_section_template = {
+	key = "BA_SWARM_SHIP_MID_B"
+	ship_size = BA_swarm_ship
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "ba_swarm_ship_mid_L3_entity"
+	#entity = "battleship_mid_L3_entity"
+	icon = "GFX_ship_part_core_mid"
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "medium_missile_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "medium_missile_turret"
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_03"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 60
+		}
+	}
+	prerequisites = {
+		tech_BA_spaceship_automation_3
+	}
+}
+
+#蜂群舰尾
+ship_section_template = {
+	key = "BA_SWARM_SHIP_STERN_A"
+	ship_size = BA_swarm_ship
+	fits_on_slot = stern
+	should_draw_components = no
+	entity = "ba_swarm_ship_stern_M2_entity"
+	#entity = "battleship_stern_S4_entity"
+	icon = "GFX_ship_part_core_stern"
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "medium_gun_02"
+	}
+	aux_utility_slots = 2
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 20
+		}
+	}
+}
+
+#链路舰尾
+ship_section_template = {
+	key = "BA_SWARM_SHIP_STERN_B"
+	ship_size = BA_swarm_ship
+	fits_on_slot = stern
+	should_draw_components = no
+	entity = "ba_swarm_ship_stern_L1_entity"
+	#entity = "battleship_stern_L1_entity"
+	icon = "GFX_ship_part_core_stern"
+	large_utility_slots = 6
+	aux_utility_slots = 6
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+			sr_keystone = 5
+		}
+	}
+	prerequisites = {
+		tech_BA_spaceship_automation_3
+	}
+}
+
+######### 自律演算枢纽
+#观测者舰艏
+ship_section_template = {
+	key = "BA_HUB_SHIP_BOW_A"
+	ship_size = BA_hub_ship
+	fits_on_slot = bow
+	should_draw_components = no
+	entity = "ba_hub_ship_bow_entity"
+	#entity = "titan_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	icon_frame = 1
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 320
+			sr_keystone = 150
+		}
+	}
+}
+
+#回声舰艏
+ship_section_template = {
+	key = "BA_HUB_SHIP_BOW_B"
+	ship_size = BA_hub_ship
+	fits_on_slot = bow
+	should_draw_components = no
+	entity = "ba_hub_ship_bow_entity"
+	#entity = "titan_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+	icon_frame = 1
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+}
+
+###
+#观测者核心
+ship_section_template = {
+	key = "BA_HUB_SHIP_MID_A"
+	ship_size = BA_hub_ship
+	fits_on_slot = mid
+	should_draw_components = no
+	#entity = "colossus_ship_entity"
+	entity = "ba_hub_ship_colossus_mid_entity"
+	#entity = "titan_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+	component_slot = {
+		name = "PLANET_KILLER_GUN_01"
+		template = "invisible_planet_killer_fixed"
+		locatorname = "planet_killer_gun_01"
+		#locatorname = "large_gun_01"
+	}
+	large_utility_slots = 4
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 320
+			sr_keystone = 150
+		}
+	}
+}
+
+#领域核心
+ship_section_template = {
+	key = "BA_HUB_SHIP_MID_B"
+	ship_size = BA_hub_ship
+	fits_on_slot = mid
+	should_draw_components = no
+	#entity = "colossus_ship_entity"
+	entity = "ba_hub_ship_mid_entity"
+	#entity = "titan_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "large_gun_04"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "point_defence_turret"
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "point_defence_turret"
+		locatorname = "large_gun_04"
+	}
+	large_utility_slots = 6
+}
+
+###
+#观测者舰尾
+ship_section_template = {
+	key = "BA_HUB_SHIP_STERN_A"
+	ship_size = BA_hub_ship
+	fits_on_slot = stern
+	should_draw_components = no
+	entity = "ba_hub_ship_stern_entity"
+	#entity = "titan_stern_entity"
+	icon = "GFX_ship_part_core_stern"
+	large_utility_slots = 8
+	aux_utility_slots = 8
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 320
+			sr_keystone = 150
+		}
+	}
+}
+
+#平台舰尾
+ship_section_template = {
+	key = "BA_HUB_SHIP_STERN_B"
+	ship_size = BA_hub_ship
+	fits_on_slot = stern
+	should_draw_components = no
+	entity = "ba_hub_ship_stern_entity"
+	#entity = "titan_stern_entity"
+	icon = "GFX_ship_part_core_stern"
+	large_utility_slots = 4
+	aux_utility_slots = 4
+}
+
+######### 自律防御炮台
+ship_section_template = {
+	key = "BA_DEFENCE_CANNON_A"
+	fits_on_slot = "ship"
+	ship_size = BA_defence_cannon
+	entity = "ba_01_ion_cannon_entity"
+	#entity = "ion_cannon_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	large_utility_slots = 3
+	aux_utility_slots = 1
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 0
+		}
+	}
+}

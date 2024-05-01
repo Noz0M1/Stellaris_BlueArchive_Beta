@@ -1,0 +1,630 @@
+entity = {
+	name = "BA_PV3_anime_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle_001"
+	# Ship adverts
+
+	state = { name = "idle_001"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_002"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_001_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_002"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_003"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_002_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_003"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_004"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_003_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_004"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_005"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_004_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_005"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_006"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_005_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_006"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_007"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_006_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_007"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_008"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_007_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_008"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_009"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_008_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_009"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_010"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_009_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_010"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_011"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_010_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_011"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_012"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_011_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_012"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_013"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_012_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_013"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_014"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_013_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_014"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_015"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_014_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_015"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_016"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_015_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_016"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_017"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_016_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_017"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_018"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_017_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_018"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_019"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_018_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_019"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_020"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_019_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_020"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_021"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_020_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_021"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_022"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_021_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_022"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_023"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_022_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_023"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_024"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_023_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_024"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_025"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_024_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_025"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_026"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_025_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_026"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_027"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_026_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_027"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_028"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_027_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_028"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_029"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_028_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_029"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_030"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_029_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_030"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_031"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_030_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_031"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_032"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_031_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_032"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_033"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_032_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_033"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_034"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_033_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_034"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_035"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_034_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_035"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_036"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_035_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_036"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_037"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_036_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_037"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_038"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_037_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_038"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_039"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_038_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_039"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_040"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_039_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_040"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_041"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_040_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_041"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_042"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_041_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_042"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_043"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_042_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_043"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_044"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_043_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_044"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_045"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_044_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_045"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_046"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_045_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_046"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_047"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_046_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_047"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_048"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_047_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_048"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_049"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_048_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_049"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_050"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_049_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_050"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_051"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_050_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_051"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_052"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_051_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_052"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_053"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_052_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_053"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_054"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_053_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_054"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_055"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_054_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_055"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_056"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_055_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_056"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_057"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_056_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_057"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_058"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_057_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_058"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_059"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_058_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_059"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_060"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_059_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_060"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_061"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_060_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_061"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_062"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_061_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_062"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_063"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_062_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_063"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_064"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_063_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_064"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_065"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_064_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_065"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_066"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_065_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_066"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_067"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_066_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_067"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_068"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_067_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_068"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_069"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_068_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_069"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_070"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_069_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_070"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_071"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_070_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_071"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_072"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_071_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_072"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_073"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_072_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_073"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_074"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_073_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_074"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_075"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_074_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_075"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_076"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_075_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_076"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_077"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_076_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_077"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_078"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_077_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_078"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_079"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_078_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_079"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_080"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_079_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_080"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_081"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_080_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_081"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_082"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_081_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_082"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_083"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_082_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_083"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_084"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_083_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_084"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_085"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_084_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_085"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_086"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_085_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_086"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_087"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_086_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_087"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_088"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_087_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_088"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_089"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_088_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_089"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_090"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_089_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_090"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_091"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_090_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_091"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_092"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_091_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_092"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_093"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_092_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_093"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_094"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_093_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_094"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_095"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_094_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_095"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_096"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_095_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_096"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_097"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_096_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_097"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_098"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_097_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_098"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_099"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_098_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_099"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_100"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_099_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_100"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_101"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_100_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_101"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_102"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_101_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_102"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_103"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_102_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_103"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_104"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_103_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_104"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_105"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_104_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_105"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_106"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_105_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_106"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_107"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_106_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_107"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_108"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_107_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_108"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_109"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_108_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_109"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_110"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_109_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_110"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_111"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_110_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_111"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_112"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_111_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_112"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_113"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_112_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_113"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_114"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_113_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_114"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_115"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_114_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_115"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_116"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_115_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_116"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_117"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_116_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_117"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_118"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_117_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_118"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_119"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_118_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_119"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_120"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_119_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_120"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_121"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_120_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_121"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_122"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_121_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_122"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_123"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_122_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_123"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_124"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_123_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_124"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_125"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_124_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_125"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_126"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_125_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_126"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_127"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_126_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_127"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_128"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_127_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_128"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_129"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_128_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_129"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_130"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_129_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_130"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_131"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_130_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_131"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_132"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_131_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_132"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_133"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_132_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_133"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_134"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_133_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_134"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_135"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_134_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_135"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_136"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_135_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_136"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_137"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_136_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_137"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_138"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_137_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_138"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_139"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_138_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_139"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_140"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_139_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_140"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_141"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_140_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_141"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_142"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_141_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_142"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_143"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_142_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_143"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_144"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_143_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_144"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_145"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_144_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_145"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_146"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_145_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_146"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_147"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_146_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_147"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_148"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_147_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_148"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_149"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_148_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_149"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_150"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_149_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_150"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_151"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_150_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_151"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_152"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_151_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "idle_152"	animation = "idle" animation_speed = 5.0  looping = no next_state = "idle_001"
+		event = { time = 0.0 node = "advert" particle = "BA_PV3_152_particle" keep_particle = yes trigger_once = yes }
+	}
+
+
+	state = { name = "death" animation = "death" looping = no
+	}
+	get_state_from_parent = no
+
+	locator = {
+		name = "advert"
+		position = { 0 0 0 }
+		rotation = { 90 0 0 }
+	}
+
+	scale = 1.0
+}

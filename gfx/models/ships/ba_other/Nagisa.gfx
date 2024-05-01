@@ -1,0 +1,59 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Nagisa_mesh"
+		file = "gfx\models\ships\ba_other/Nagisa.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "FBXASC231FBXASC144FBXASC131FBXASC228FBXASC189FBXASC147Shape"
+			index = 0
+			texture_diffuse = "Nagisa_Original_Halo.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Nagisa_Original_BodyShape"
+			index = 0
+			texture_diffuse = "Nagisa_Original_Body.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Nagisa_Original_BodyShape"
+			index = 1
+			texture_diffuse = "Nagisa_Original_EyeMouth.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Nagisa_Original_BodyShape"
+			index = 2
+			texture_diffuse = "Nagisa_Original_Face.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Nagisa_Original_BodyShape"
+			index = 3
+			texture_diffuse = "Nagisa_Original_Hair.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Nagisa_Original_HaloShape"
+			index = 0
+			texture_diffuse = "Nagisa_Original_Halo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+}

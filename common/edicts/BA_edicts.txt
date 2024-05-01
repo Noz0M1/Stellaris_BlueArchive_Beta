@@ -1,0 +1,107 @@
+BA_SI_Abydos_A03 = {
+	length = -1
+	icon = "GFX_edict_type_policy"
+	resources = {
+		category = edicts
+		cost = {
+			unity = 200
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = 20
+			multiplier = value:edict_size_effect
+		}
+	}
+	modifier = {
+		planet_jobs_produces_mult = 0.25
+		planet_jobs_upkeep_mult = 0.25
+	}
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	prerequisites = {
+		"tech_BA_SI_Abydos_A03"
+	}
+	show_tech_unlock_if = {
+		always = yes
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+BA_SI_Gehenna_C03 = {
+	length = -1
+	icon = "GFX_edict_type_policy"
+	resources = {
+		category = edicts
+		cost = {
+			sr_dark_matter = 75
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			volatile_motes = 100
+			exotic_gases = 100
+			rare_crystals = 100
+			sr_dark_matter = 5
+			multiplier = value:edict_size_effect
+		}
+	}
+	modifier = {
+		ship_weapon_damage = 1
+		ship_fire_rate_mult = 0.5
+		ship_weapon_range_mult = 0.5
+	}
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	prerequisites = {
+		"tech_BA_SI_Gehenna_C03"
+	}
+	show_tech_unlock_if = {
+		always = yes
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+BA_SI_Gehenna_E03 = {
+	length = -1
+	icon = "GFX_edict_type_policy"
+	resources = {
+		category = edicts
+		cost = {
+			sr_keystone = 100
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			alloys = 100
+			sr_keystone = 10
+			multiplier = value:edict_size_effect
+		}
+	}
+	modifier = {
+		shipclass_military_station_build_speed_mult = 16
+		shipclass_military_station_damage_mult = 4
+		shipclass_military_station_hull_mult = 4
+	}
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	prerequisites = {
+		"tech_BA_SI_Gehenna_E03"
+	}
+	show_tech_unlock_if = {
+		always = yes
+	}
+	ai_weight = {
+		weight = 0
+	}
+}

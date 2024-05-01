@@ -1,0 +1,58 @@
+objectTypes = {
+	pdxmesh = {
+		name = "titanfall_tick_mesh"
+		file = "gfx/models/combat_items/Titanfall_Tick/titanfall_tick.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "titanfall_tickShape"
+			index = 0
+			texture_diffuse = "titanfall_trick_diffuse.dds"
+			texture_normal = "titanfall_trick_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "titanfall_tick_turret_mesh"
+		file = "gfx/models/combat_items/Titanfall_Tick/titanfall_tick_turret.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "titanfall_tick_turretShape"
+			index = 0
+			texture_diffuse = "titanfall_trick_diffuse.dds"
+			texture_normal = "titanfall_trick_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "titanfall_tick_b_mesh"
+		file = "gfx/models/combat_items/Titanfall_Tick/titanfall_tick_b.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "titanfall_tick_bShape"
+			index = 0
+			texture_diffuse = "titanfall_tick_b_diffuse.dds"
+			texture_normal = "titanfall_tick_b_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "titanfall_tick_r_mesh"
+		file = "gfx/models/combat_items/Titanfall_Tick/titanfall_tick_r.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "titanfall_tick_rShape"
+			index = 0
+			texture_diffuse = "titanfall_tick_r_diffuse.dds"
+			texture_normal = "titanfall_tick_r_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

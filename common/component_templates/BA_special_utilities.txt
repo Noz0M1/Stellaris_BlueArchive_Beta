@@ -1,0 +1,536 @@
+#武器
+##### P武器
+#射手座之夜
+weapon_component_template = {
+	key = "Sagittarius_night"
+	size = point_defence
+	icon = "GFX_Sagittarius_night"
+	icon_frame = 1
+	prerequisites = {
+		"tech_BA_Sagittarius_night"
+	}
+	component_set = "Sagittarius_night"
+	type = point_defence
+	projectile_gfx = "blue_laser_pd"
+	tags = {
+		weapon_type_point_defense
+		weapon_type_energy
+		weapon_type_Kivotos
+	}
+	ai_tags = {
+		weapon_role_point_defense
+	}
+	#upgrades_to = "POINT_DEFENCE_3"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.015
+		}
+	}
+	power = -30
+	damage = {
+		min = 3
+		max = 10
+	}
+	windup = {
+		min = 0
+		max = 0
+	}
+	total_fire_time = 10
+	range = 40
+	accuracy = 1
+	tracking = 1
+	shield_penetration = 1
+	armor_penetration = 1
+	point_defence_targets = {
+		"missile"
+		"strike_craft"
+	}
+}
+
+##### S武器
+#刚柔并济之心
+weapon_component_template = {
+	key = "Soft_determination"
+	size = small
+	type = instant
+	icon = "GFX_Soft_determination"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_Soft_determination"
+	}
+	component_set = "Soft_determination"
+	projectile_gfx = "gamma_laser_s"
+	tags = {
+		weapon_type_kinetic
+		weapon_type_Kivotos
+	}
+	ai_tags = {
+		weapon_role_anti_armor
+		gunship
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.02
+		}
+	}
+	power = -12
+	damage = {
+		min = 18
+		max = 40
+	}
+	hull_damage = 0.8
+	shield_damage = 1.5
+	armor_damage = 0.5
+	armor_penetration = 0.5
+	windup = {
+		min = 10
+		max = 20
+	}
+	total_fire_time = 25
+	range = 50
+	accuracy = 0.75
+	tracking = 0.5
+	ai_weight = {
+		weight = 1
+	}
+}
+
+##### M武器
+#独特点子
+weapon_component_template = {
+	key = "Unique_idea"
+	size = medium
+	type = instant
+	icon = "GFX_Unique_idea"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_Unique_idea"
+	}
+	component_set = "Unique_idea"
+	projectile_gfx = "Unique_idea"
+	tags = {
+		weapon_type_energy
+		weapon_type_Kivotos
+	}
+	ai_tags = {
+		weapon_role_anti_hull
+		gunship
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			sr_pyroxenes = 1
+		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.1
+		}
+	}
+	power = -50
+	damage = {
+		min = 36
+		max = 96
+	}
+	hull_damage = 1
+	shield_damage = 0.25
+	shield_penetration = 0.2
+	armor_damage = 2
+	armor_penetration = 0.2
+	windup = {
+		min = 10
+		max = 20
+	}
+	total_fire_time = 15
+	range = 80
+	accuracy = 0.8
+	tracking = 0.2
+	ai_weight = {
+		weight = 1
+	}
+}
+
+##### L武器
+#清爽灵感
+weapon_component_template = {
+	key = "Flashy_inspiration"
+	size = large
+	type = instant
+	icon = "GFX_Flashy_inspiration"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_Flashy_inspiration"
+	}
+	component_set = "Flashy_inspiration"
+	projectile_gfx = "Flashy_inspiration"
+	tags = {
+		weapon_type_energy
+		weapon_type_Kivotos
+	}
+	ai_tags = {
+		weapon_role_anti_hull
+		gunship
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 220
+			sr_pyroxenes = 2
+		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.2
+		}
+	}
+	power = -110
+	damage = {
+		min = 135
+		max = 150
+	}
+	hull_damage = 1
+	shield_damage = 2
+	shield_penetration = 0.2
+	armor_damage = 0.25
+	armor_penetration = 0.2
+	windup = {
+		min = 8
+		max = 30
+	}
+	total_fire_time = 45
+	range = 80
+	accuracy = 0.8
+	tracking = 0.2
+	ai_weight = {
+		weight = 1
+	}
+}
+
+#爆裂一击
+weapon_component_template = {
+	key = "Crack_shot"
+	size = large
+	type = instant
+	icon = "GFX_Crack_shot"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		tech_BA_Crack_shot
+	}
+	component_set = "Crack_shot"
+	projectile_gfx = "Crack_shot"
+	tags = {
+		weapon_type_explosive
+		weapon_type_Kivotos
+	}
+	ai_tags = {
+		weapon_role_anti_armor
+		gunship
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 180
+			sr_pyroxenes = 2
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.18
+		}
+	}
+	power = -90
+	damage = {
+		min = 300
+		max = 500
+	}
+	hull_damage = 1
+	shield_damage = 1
+	shield_penetration = 1
+	armor_damage = 1
+	armor_penetration = 0
+	windup = {
+		min = 10
+		max = 30
+	}
+	total_fire_time = 50
+	range = 120
+	accuracy = 0.75
+	tracking = 0
+}
+
+##### G武器
+#575式掷弹筒
+weapon_component_template = {
+	key = "Grenadiers_575"
+	size = torpedo
+	entity = "turret_torpedo_entity"
+	icon = "GFX_Grenadiers_575"
+	icon_frame = 1
+	prerequisites = {
+		"tech_BA_Grenadiers_575"
+	}
+	component_set = "Grenadiers_575"
+	type = missile
+	projectile_gfx = "Hibiki_bomb"
+	tags = {
+		weapon_type_explosive
+		weapon_type_energy
+		weapon_type_kinetic
+		weapon_type_Kivotos
+	}
+	ai_tags = {
+		weapon_role_point_defense
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 35
+		}
+		upkeep = {
+			energy = 0.15
+			alloys = 0.035
+		}
+	}
+	power = -30
+	damage = {
+		min = 15
+		max = 18
+	}
+	windup = {
+		min = 2
+		max = 8
+	}
+	total_fire_time = 10
+	range = 80
+	accuracy = 1
+	tracking = 1
+	shield_penetration = 1
+	armor_damage = 1.25
+	hull_damage = 1.25
+	missile_speed = 18
+	missile_evasion = 0
+	missile_health = 50
+	missile_retarget_range = 100
+	size_damage_factor = 1
+}
+
+##### H武器
+#Adena3号
+strike_craft_component_template = {
+	key = "Adena_3"
+	size = LARGE
+	entity = "Adena3_entity"
+	weapon_type = point_defence
+	projectile_gfx = "strike_craft_laser_3"
+	power = -55
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 88
+		}
+		upkeep = {
+			energy = 0.88
+			alloys = 0.196
+		}
+	}
+	count = 8
+	regeneration_per_day = 0.5
+	launch_time = 1.5
+	damage = {
+		min = 6
+		max = 17
+	}
+	cooldown = 2.3
+	range = 10
+	engagement_range = 200
+	accuracy = 1
+	tracking = 1
+	health = 1
+	armor = 0
+	shield = 50
+	evasion = 0.95
+	speed = 700
+	rotation_speed = 1
+	acceleration = 1
+	shield_damage = 2
+	armor_penetration = 1
+	hull_damage = 0.5
+	ship_behavior = "fighters_behavior"
+	icon = "GFX_Adena_3"
+	icon_frame = 1
+	component_set = "Adena_3"
+	prerequisites = {
+		"tech_BA_Adena_3"
+	}
+	tags = {
+		weapon_type_strike_craft
+		weapon_type_Kivotos
+	}
+	ai_tags = {
+		weapon_role_anti_shield
+	}
+}
+
+##### X武器
+#奇幻色彩
+weapon_component_template = {
+	key = "Fantacy_colors"
+	size = extra_large
+	icon = "GFX_Fantacy_colors_SP"
+	icon_frame = 1
+	firing_arc = 25
+	min_range = 10
+	use_ship_kill_target = no
+	prerequisites = {
+		"tech_BA_Fantacy_colors"
+	}
+	component_set = "Fantacy_colors"
+	projectile_gfx = "adv_kinetic_artillery"
+	tags = {
+		weapon_type_kinetic
+		weapon_type_explosive
+		weapon_type_Kivotos
+	}
+	ai_tags = {
+		weapon_role_artillery
+	}
+	ai_tag_weight = 0
+	power = -250
+	damage = {
+		min = 2500
+		max = 6500
+	}
+	windup = {
+		min = 20
+		max = 100
+	}
+	total_fire_time = 100
+	range = 175
+	accuracy = 1
+	tracking = 0.05
+	shield_damage = 0.5
+	shield_penetration = 1
+	armor_damage = 1.25
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 500
+			sr_keystone = 25
+		}
+		upkeep = {
+			energy = 6
+			alloys = 2
+		}
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+##### T武器
+#光剑：超新星
+weapon_component_template = {
+	key = "SuperNova"
+	size = titanic
+	icon = "GFX_SuperNova"
+	icon_frame = 1
+	firing_arc = 25
+	min_range = 10
+	use_ship_kill_target = no
+	prerequisites = {
+		"tech_BA_SuperNova"
+	}
+	component_set = "SuperNova"
+	projectile_gfx = "Supernova"
+	tags = {
+		weapon_type_energy
+		weapon_type_Kivotos
+	}
+	ai_tags = {
+		weapon_role_artillery
+	}
+	ai_tag_weight = 0
+	power = -500
+	damage = {
+		min = 3500
+		max = 8500
+	}
+	windup = {
+		min = 0
+		max = 0
+	}
+	total_fire_time = 80
+	range = 225
+	accuracy = 1
+	tracking = 0.05
+	shield_damage = 0.5
+	armor_penetration = 1
+	hull_damage = 1.5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 500
+			sr_keystone = 50
+		}
+		upkeep = {
+			energy = 6
+			alloys = 2
+		}
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+##### W武器
+#清扫者
+weapon_component_template = {
+	key = "Sweepers"
+	size = planet_killer
+	type = planet_killer
+	use_ship_kill_target = no
+	icon = GFX_ship_part_world_cracker
+	icon_frame = 1
+	size_restriction = {
+		colossus
+		BA_hub_ship
+	}
+	component_set = "Sweepers"
+	planet_destruction_gfx = "neutron_planet_gfx"
+	ai_weight = {
+		factor = 2
+	}
+	#这个给巨像核心
+	# resources = {
+	# 	category = ship_components
+	# 	cost = {
+	# 		alloys = 2000
+	# 		sr_keystone = 300
+	# 	}		
+	# 	upkeep = {
+	# 		energy = 20
+	# 		sr_keystone = 5
+	# 	}
+	# }
+	power = -1000
+	windup = {
+		min = 30
+		max = 0
+	}
+	total_fire_time = 150
+	tracking = 0
+	range = 0
+	accuracy = 1
+}

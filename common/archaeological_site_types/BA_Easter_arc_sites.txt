@@ -1,0 +1,49 @@
+BA_Easter_egg_Angel_arc_site = {
+    picture = GFX_BA_Checkmate	#暂时的 以后改
+    desc = "BA_Easter_egg_Angel_arc_site_desc"
+    weight = 0	#不允许随机生成
+    visible = {
+        default_site_visible_trigger = yes
+        this = {
+            has_authority = auth_kivotos
+            is_ai = no
+        }
+    }
+    allow = {
+        is_ship_class = shipclass_science_ship
+        exists = leader
+    }
+    stages = 5
+    stage = {
+        difficulty = 1
+        icon = GFX_archaeology_runes_C1		#暂时的 以后改
+        event = BA_Easter_egg.8001
+    }
+    stage = {
+        difficulty = 4
+        icon = GFX_archaeology_runes_C2		#暂时的 以后改
+        event = BA_Easter_egg.8002
+    }
+    stage = {
+        difficulty = 4
+        icon = GFX_archaeology_runes_C3		#暂时的 以后改
+        event = BA_Easter_egg.8003
+    }
+    stage = {
+        difficulty = 4
+        icon = GFX_archaeology_runes_C4		#暂时的 以后改
+        event = BA_Easter_egg.8004
+    }
+    stage = {
+        difficulty = 6
+        icon = GFX_archaeology_runes_C5		#暂时的 以后改
+        event = BA_Easter_egg.8005
+    }
+    on_roll_failed = {
+        from = {
+            standard_archaeological_site_on_roll_failed = {
+                RANDOM_EVENTS = all_random_events
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+entity = {
+	name = "bacolorized_01_hyper_relay_entity"
+	pdxmesh = "hyper_relay_01_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+			event = { time = 0 node = "root" particle = "hyper_relay_portal_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "part1" particle = "hyper_relay_orb_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "part2" particle = "hyper_relay_orb_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "part3" particle = "hyper_relay_orb_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "part4" particle = "hyper_relay_orb_effect" keep_particle = yes trigger_once = yes }
+
+			event = { time = 0 node = "effect_1" particle = "hyper_relay_connector_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "effect_2" particle = "hyper_relay_connector_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "effect_3" particle = "hyper_relay_connector_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "effect_4" particle = "hyper_relay_connector_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "effect_5" particle = "hyper_relay_connector_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "effect_6" particle = "hyper_relay_connector_effect" keep_particle = yes trigger_once = yes }
+
+			event = { trigger_once = yes sound = { soundeffect = "amb_megastructure_hyper_relay_01_idle" } }
+
+}
+	state = { name = "death" animation = "death" looping = no}
+	
+	attach = { "root" 			= "hyper_relay_01_portal_entity" }
+	attach = { "root" 			= "hyper_relay_01_portal_spin_entity" }
+#	attach = { "root" 			= "hyper_relay_01_portal_edge_entity" }
+	attach = { "part1" 			= "hyper_relay_01_orb_entity" }
+	attach = { "part2" 			= "hyper_relay_01_orb_entity" }
+	attach = { "part3" 			= "hyper_relay_01_orb_entity" }
+	attach = { "part4" 			= "hyper_relay_01_orb_entity" }	
+	
+	meshsettings = {
+		name = "g_bodyShape"
+		index = 0
+		texture_diffuse = "ba_colorized_diffuse.dds"
+		texture_normal = "ba_01_hyper_relay_normal.dds"
+		texture_specular = "ba_01_hyper_relay_specular.dds"
+		shader = "PdxMeshExtraDimensionalShip"
+	}
+}

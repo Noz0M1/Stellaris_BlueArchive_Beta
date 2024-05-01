@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "ba_turret_base_mesh"
+		file = "gfx\models\ships\ba_weapon_turret\ba_turret_base.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "HOD_GuardTower_Railgun_BodyShape"
+			index = 0
+			texture_diffuse = "HOD_GuardTower_Cannon_02.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

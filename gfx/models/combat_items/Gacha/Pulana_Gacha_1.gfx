@@ -1,0 +1,20 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Pulana_Gacha_1_mesh"
+		file = "gfx\models\combat_items\Gacha\Pulana_Gacha_1.mesh"
+		scale = 4.0
+		
+		animation = { id = "idle"					type = "arthropoid_01_missile_medium_idle_animation" }			
+		animation = { id = "miss"					type = "arthropoid_01_missile_medium_miss_animation" }			
+		animation = { id = "miss2"					type = "arthropoid_01_missile_medium_miss2_animation" }			
+		animation = { id = "miss_reversed"			type = "arthropoid_01_missile_medium_miss_reversed_animation" }			
+		animation = { id = "miss2_reversed"			type = "arthropoid_01_missile_medium_miss2_reversed_animation" }			
+	
+		meshsettings = {
+			name = "Pulana_Gacha_1Shape"
+			index = 0
+			texture_diffuse = "FX_TEX_GT_SSRCard.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+}

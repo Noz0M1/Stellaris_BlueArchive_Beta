@@ -1,0 +1,150 @@
+objectTypes = {
+	pdxmesh = {
+		name = "DRG_Breach_Cutter_mesh"
+		file = "gfx/models/ships/DRG_BA/DRG_Breach_Cutter.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "turret_base_PSrifleShape"
+			index = 0
+			texture_diffuse = "DRG_BA_deffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "DRG_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "DRG_Breach_Cutter_Lines_mesh"
+		file = "gfx/models/ships/DRG_BA/DRG_Breach_Cutter_Lines.mesh"
+		scale = 20.0
+
+		meshsettings = {
+			name = "DRG_Breach_Cutter_LinesShape"
+			index = 0
+			texture_diffuse = "DRG_Breach_Cutter_Lines.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+	pdxmesh = {
+		name = "DRG_Bulldog_Heavy_Revolver_mesh"
+		file = "gfx/models/ships/DRG_BA/DRG_Bulldog_Heavy_Revolver.mesh"
+		scale = 5.0
+
+		meshsettings = {
+			name = "turret_base_PSrifleShape"
+			index = 0
+			texture_diffuse = "DRG_BA_deffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "DRG_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "DRG_Colette_Wave_Cooker_mesh"
+		file = "gfx/models/ships/DRG_BA/DRG_Colette_Wave_Cooker.mesh"
+		scale = 6.0
+
+		meshsettings = {
+			name = "turret_base_PSrifleShape"
+			index = 0
+			texture_diffuse = "DRG_BA_deffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "DRG_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "DRG_Cryo_Cannon_mesh"
+		file = "gfx/models/ships/DRG_BA/DRG_Cryo_Cannon.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "turret_base_PSrifleShape"
+			index = 0
+			texture_diffuse = "DRG_BA_deffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "DRG_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "DRG_DRAK_25_Plasma_Carbine_mesh"
+		file = "gfx/models/ships/DRG_BA/DRG_DRAK_25_Plasma_Carbine.mesh"
+		scale = 6.0
+
+		meshsettings = {
+			name = "turret_base_PSrifleShape"
+			index = 0
+			texture_diffuse = "DRG_BA_deffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "DRG_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "DRG_LeadStorm_Powered_Minigun_mesh"
+		file = "gfx/models/ships/DRG_BA/DRG_LeadStorm_Powered_Minigun.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "turret_base_PSrifleShape"
+			index = 0
+			texture_diffuse = "DRG_BA_deffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "DRG_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "DRG_LOK_1_Smart_Rifle_mesh"
+		file = "gfx/models/ships/DRG_BA/DRG_LOK_1_Smart_Rifle.mesh"
+		scale = 6.0
+
+		meshsettings = {
+			name = "LOK_1_Smart_RifleShape"
+			index = 0
+			texture_diffuse = "DRG_BA_deffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "DRG_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "DRG_Nishanka_Boltshark_X_80_mesh"
+		file = "gfx/models/ships/DRG_BA/DRG_Nishanka_Boltshark_X_80.mesh"
+		scale = 6.0
+
+		meshsettings = {
+			name = "turret_base_PSrifleShape"
+			index = 0
+			texture_diffuse = "DRG_BA_deffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "DRG_BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "DRG_Bullet_mesh"
+		file = "gfx/models/ships/DRG_BA/DRG_Bullet.mesh"
+		scale = 6.0
+
+		meshsettings = {
+			name = "DRG_BulletShape"
+			index = 0
+			texture_diffuse = "DRG_BA_deffuse.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+	pdxmesh = {
+		name = "DRG_Arrow_mesh"
+		file = "gfx/models/ships/DRG_BA/DRG_Arrow.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "Nishanka_Boltshark_X_80_ArrowShape"
+			index = 0
+			texture_diffuse = "DRG_BA_deffuse.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+}

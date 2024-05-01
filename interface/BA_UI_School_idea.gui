@@ -1,0 +1,3357 @@
+guiTypes = {
+    #学院理念主界面
+    containerWindowType = {
+        name = "BlueArchive_school_idea"
+        orientation = center
+        origo = center
+        moveable = yes
+        size = { width = 1200 height = 650 }
+
+        background = {
+            name = "background"
+            quadTextureSprite = "GFX_School_philosophy_padframe"
+        }
+
+        iconType = {
+            name = BlueArchive_school_idea_bg_1
+            position = { x = 50  y = 28 }
+            quadTextureSprite = GFX_School_philosophy_CaffeeBG
+        }
+        iconType = {
+            name = BlueArchive_school_idea_icon_1
+            position = {x = 40 y = 15}
+            quadTextureSprite = GFX_School_philosophy_School_philosophy_BG
+        }
+        #iconType = {
+        #    name = BlueArchive_school_idea_icon_2
+        #    position = {x = 70 y = 40}
+        #    quadTextureSprite = GFX_School_philosophy_School_philosophy_word
+        #}
+        instantTextBoxType = {
+            name = "BlueArchive_MainWindow_button_text_2"
+            font = "large_title_font"
+            text = "Civic_SI"
+            position = {x = 100 y = 40}
+            maxWidth = 543
+            maxHeight = 22
+            #fixedSize = yes
+            alwaysTransparent = yes
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_2
+            position = { x = 0 y = 0 }
+            quadTextureSprite = GFX_School_philosophy_padframe
+        }
+
+        buttonType = {
+            name = "close"
+            quadTextureSprite = "GFX_Communication_X"
+            position = { x= -150 y = 35 }
+            orientation = "UPPER_RIGHT"
+            shortcut = "ESCAPE"
+            clicksound = "back_click"
+        }
+        containerWindowType = {
+            name = BlueArchive_school_idea_button
+            size = { width = 1200 height = 650 }
+            position = { x= 100 y = 100 }
+            effectButtonType = { #格赫娜
+                name = BlueArchive_school_idea_Gehenna
+                position = { x= 400 y = 20 }
+                effect = button_effect_BA_SI_Gehenna_Menu
+                quadTextureSprite = GFX_School_philosophy_buttons_School1
+            }
+            effectButtonType = { #阿拜多斯
+                name = BlueArchive_school_idea_Abydos
+                position = { x= 680 y = 20 }
+                effect = button_effect_BA_SI_Abydos_Menu
+                quadTextureSprite = GFX_School_philosophy_buttons_School2
+            }
+            effectButtonType = { #圣三一
+                name = BlueArchive_school_idea_Trinity
+                position = { x= 400 y = 210 }
+                effect = button_effect_BA_SI_Trinity_Menu
+                quadTextureSprite = GFX_School_philosophy_buttons_School7
+            }
+            effectButtonType = { #千年
+                name = BlueArchive_school_idea_Millennium
+                position = { x= 680 y = 210 }
+                effect = button_effect_BA_SI_Millennium_Menu
+                quadTextureSprite = GFX_School_philosophy_buttons_School4
+            }
+            effectButtonType = { #百鬼夜行
+                name = BlueArchive_school_idea_Hyakkiyako
+                position = { x= 0 y = 10 }
+                effect = button_effect_BA_SI_Hyakkiyako_Menu
+                quadTextureSprite = GFX_School_philosophy_buttons_School3
+            }
+
+            effectButtonType = { #赤冬
+                name = BlueArchive_school_idea_Redwinter
+                position = { x= 180 y = 0 }
+                effect = button_effect_BA_SI_Redwinter_Menu
+                quadTextureSprite = GFX_School_philosophy_buttons_School5
+            }
+            effectButtonType = { #山海经
+                name = BlueArchive_school_idea_Shanhaijing
+                position = { x= 180 y = 125 }
+                effect = button_effect_BA_SI_Shanhaijing_Menu
+                quadTextureSprite = GFX_School_philosophy_buttons_School6
+            }
+            effectButtonType = { #瓦尔基里
+                name = BlueArchive_school_idea_Valkyrie
+                position = { x= 0 y = 135 }
+                effect = button_effect_BA_SI_Valkyrie_Menu
+                quadTextureSprite = GFX_School_philosophy_buttons_School8
+            }
+            effectButtonType = { #阿里乌斯
+                name = BlueArchive_school_idea_Arius
+                position = { x= 0 y = 260 }
+                effect = button_effect_BA_placeholder_forbid
+                quadTextureSprite = GFX_School_philosophy_buttons_School9
+            }
+            effectButtonType = { #SRT
+                name = BlueArchive_school_idea_SRT
+                position = { x= 180 y = 250 }
+                effect = button_effect_BA_placeholder_forbid
+                quadTextureSprite = GFX_School_philosophy_buttons_School10
+            }
+            effectButtonType = { #沙勒！
+                name = BlueArchive_school_idea_Schale
+                position = { x= 0 y = 385 }
+                effect = button_effect_BA_placeholder_forbid
+                quadTextureSprite = GFX_School_philosophy_buttons_School11
+            }
+        }
+
+        iconType = {
+            name = "hex_bg"
+            spriteType = "GFX_hex_bg"
+            position = { x = -1000000 y = -1400000 }
+            alwaysTransparent = yes
+        }
+        iconType = {
+            name = "empire_header_line"
+            quadTextureSprite = "GFX_line_long"
+            position = { x = 600000 y = 2200000 }
+            alwaysTransparent = yes
+        }
+        # Custom header
+        instantTextBoxType = {
+            name = "irm_some_header"
+            font = "malgun_goth_24"
+            text = "ui_faction_header" 	# header text
+            position = { x = 200000 y = 500000 }
+            maxWidth = 543
+            maxHeight = 22
+            fixedSize = yes
+            alwaysTransparent = yes
+        }
+
+        ### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+
+        buttonType = { name = "focus_button" position = { x = -1180 y = -1112 } spriteType = "GFX_fleetview_focus" } # hidden
+        instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -1120 y = -115 } } # hidden
+        buttonType = { name = "alien_message_background" size = { x = 0 y = 0 } position = { x = -1110 y = -11430 } spriteType = "GFX_tiles_dark_area_cut_8" } # hidden
+        buttonType = { name = "confirm_button" quadTextureSprite = "GFX_standard_button_142_34_button" } # hidden
+        containerWindowType = {
+            name = "portrait_background"
+            position = { x = -1117 y = -1145 }
+            size = { width = 0 height = 0 } 	# hide portrait window
+            iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+            iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
+        }
+
+        iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+        instantTextBoxType = { name = "empire_name" font = "malgun_goth_24" } # hidden
+        instantTextBoxType = { name = "empire_government_type" font = "cg_16b" } # hidden
+        instantTextBoxType = { name = "empire_personality_type" font = "cg_16b" } # hidden
+        overlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+        iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+        containerWindowType = {
+            name = "leader_details"
+            position = { x = -1125 y = -1175 }
+            containerWindowType = { name = "empire_traits_box" } # hidden
+            instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+            overlappingElementsBoxType = { name = "leader_traits" } # hidden
+            instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+            instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+        }
+        containerWindowType = {
+            name = "opinion_window"
+            position = { x = -1127 y = -11110 }
+            size = { width = 94 height = 30 }
+            iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+            instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+        }
+
+        ### EVENT DIPLO ###
+        containerWindowType = {
+            name = "EVENT_DIPLO"
+            position = { x = 2 y = 50 }
+            #size = { width = 563 height = 220 }
+            moveable = no
+
+            instantTextBoxType = {
+                name = "action_title"
+                font = "malgun_goth_24"
+                position = { x = 500 y = 0 }
+                maxWidth = 500
+                alwaysTransparent = yes
+            }
+            instantTextBoxType = {
+                name = "action_desc"
+                font = "malgun_goth_24"
+                position = { x = 490 y = 0 }
+                maxWidth = 500
+                maxHeight = 180
+                orientation = "UPPER_LEFT"
+                format = center
+                alwaysTransparent = yes
+                text_color_code = "H"
+            }
+            listboxType = { name = "option_list" position = { x = -11500 y = -1130 } } # hidden option list
+        }
+
+        containerWindowType = {
+            name = "portrait"
+            position = { x = 10000000 y = 00000000 }
+            size = { width = 0 height = 0 } # hide portrait window
+            iconType = {
+                name = "portrait"
+                spriteType = "GFX_portrait_gamesetup_mask"  position = { x = -11170 y = -11450 }
+            } # hidden
+            iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" position = { x = -11170 y = -11450 } } # hidden
+            iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2"  position = { x = -11170 y = -11450 }} # hidden
+            iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" position = { x = -11170 y = -11450 } } # hidden
+        }
+
+        instantTextBoxType = {
+            name = "alien_message"
+            font = "cg_16b"
+            position = { x = 1000090 y = 47000000 }
+            maxWidth = 465
+            maxHeight = 220
+            format = left
+            scrollbartype = "standardtext_slider"
+        }
+    }
+    #理念选择：阿拜多斯
+    containerWindowType = {
+        name = "BA_SI_window_Abydos"
+        orientation = center
+        origo = center
+        moveable = yes
+        size = { width = 1200 height = 650 }
+
+        background = {
+            name = "background"
+            quadTextureSprite = "GFX_BA_SI_padframe"
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_1
+            position = { x = 50  y = 28 }
+            quadTextureSprite = GFX_BA_SI_CaffeeBG
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_2
+            position = { x = 50 y = 26 }
+            quadTextureSprite = GFX_BA_SI_Abydos_Abydos_BG
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_3
+            position = { x = 720 y = 0 }
+            quadTextureSprite = GFX_BA_SI_Abydos_Img_UICountdown_Abydos_Line
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_4
+            position = { x = 0 y = 0 }
+            quadTextureSprite = GFX_BA_SI_padframe
+        }
+        #page 1
+        containerWindowType = {
+            name = BlueArchive_school_idea_page_1
+            size = { width = 1200 height = 650 }
+            effectButtonType = {
+                name = BlueArchive_school_idea_main_window_frame
+                position = { x = 220 y = 120 }
+                effect = button_effect_BA_frame_1
+                quadTextureSprite = GFX_BA_SI_Abydos_page1_frame_Abydo_frame_01
+            }
+            containerWindowType = {
+                name = BA_SI_Abydos_G01_window
+                position = { x = 345 y = 52 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Abydos_G01
+                    quadTextureSprite = GFX_BA_SI_Abydos_page1_00_Abydos_00
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Abydos_G01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Abydos_A01_window
+                position = { x = 155 y = 159 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Abydos_A01
+                    quadTextureSprite = GFX_BA_SI_Abydos_page1_01_a_Abydos_01_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Abydos_A01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Abydos_B01_window
+                position = { x = 550 y = 159 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Abydos_B01
+                    quadTextureSprite = GFX_BA_SI_Abydos_page1_01_b_Abydos_01_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Abydos_B01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Abydos_A02_window
+                position = { x = 155 y = 255 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Abydos_A02
+                    quadTextureSprite = GFX_BA_SI_Abydos_page1_02_a_Abydos_02_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Abydos_A02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Abydos_B02_window
+                position = { x = 550 y = 255 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Abydos_B02
+                    quadTextureSprite = GFX_BA_SI_Abydos_page1_02_b_Abydos_02_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Abydos_B02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Abydos_A03_window
+                position = { x = 155 y = 350 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Abydos_A03
+                    quadTextureSprite = GFX_BA_SI_Abydos_page1_03_a_Abydos_03_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Abydos_A03_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Abydos_B03_window
+                position = { x = 550 y = 350 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Abydos_B03
+                    quadTextureSprite = GFX_BA_SI_Abydos_page1_03_b_Abydos_03_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Abydos_B03_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Abydos_A04_window_P1
+                position = { x = 155 y = 446 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Abydos_A04_P1
+                    quadTextureSprite = GFX_BA_SI_Abydos_page1_04_a_Abydos_04_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Abydos_A04_P1_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Abydos_B04_window_P1
+                position = { x = 550 y = 446 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Abydos_B04_P1
+                    quadTextureSprite = GFX_BA_SI_Abydos_page1_04_b_Abydos_04_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Abydos_B04_P1_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Abydos_G02_window
+                position = { x = 345 y = 400 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Abydos_G02
+                    quadTextureSprite = GFX_BA_SI_Abydos_page1_04_c_Abydos_04_c
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Abydos_G02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+        }
+        #page 2
+        containerWindowType = {
+            name = BlueArchive_school_idea_page_2
+            size = { width = 1200 height = 650 }
+            effectButtonType = {
+                name = BlueArchive_school_idea_main_window_frame
+                position = { x = 235 y = 115 }
+                effect = button_effect_BA_frame_2
+                quadTextureSprite = GFX_BA_SI_Abydos_page2_frame_Abydo_frame_02
+            }
+            containerWindowType = {
+                name = BA_SI_Abydos_A04_window_P2
+                position = { x = 170 y = 131 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Abydos_A04_P2
+                    quadTextureSprite = GFX_BA_SI_Abydos_page1_04_a_Abydos_04_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Abydos_A04_P2_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Abydos_B04_window_P2
+                position = { x = 570 y = 131 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Abydos_B04_P2
+                    quadTextureSprite = GFX_BA_SI_Abydos_page1_04_b_Abydos_04_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Abydos_B04_P2_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Abydos_A05_window
+                position = { x = 170 y = 225 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Abydos_A05
+                    quadTextureSprite = GFX_BA_SI_Abydos_page2_05_a_Abydos_05_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Abydos_A05_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Abydos_B05_window
+                position = { x = 570 y = 225 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Abydos_B05
+                    quadTextureSprite = GFX_BA_SI_Abydos_page2_05_b_Abydos_05_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Abydos_B05_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Abydos_A06_window
+                position = { x = 170 y = 320 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Abydos_A06
+                    quadTextureSprite = GFX_BA_SI_Abydos_page2_06_a_Abydos_06_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Abydos_A06_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Abydos_B06_window
+                position = { x = 570 y = 320 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Abydos_B06
+                    quadTextureSprite = GFX_BA_SI_Abydos_page2_06_b_Abydos_06_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Abydos_B06_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Abydos_G03_window
+                position = { x = 310 y = 385 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Abydos_G03
+                    quadTextureSprite = GFX_BA_SI_Abydos_page2_07_a_Abydos_07_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 45 y = 25 }
+                    effect = button_effect_BA_SI_Abydos_G03_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+        }
+        effectButtonType = {
+            name = BlueArchive_school_idea_page_up
+            position = { x = 398 y = 35 }
+            effect = button_effect_BA_page_up
+            quadTextureSprite = GFX_BA_SI_PageUp
+        }
+        effectButtonType = {
+            name = BlueArchive_school_idea_page_down
+            position = { x = 398 y = 550 }
+            effect = button_effect_BA_page_down
+            quadTextureSprite = GFX_BA_SI_PageDown
+        }
+        buttonType = {
+            name = "close"
+            quadTextureSprite = "GFX_Communication_X"
+            position = { x= -147 y = 32 }
+            orientation = "UPPER_RIGHT"
+            shortcut = "ESCAPE"
+            clicksound = "back_click"
+        }
+
+        iconType = {
+            name = "hex_bg"
+            spriteType = "GFX_hex_bg"
+            position = { x = -1000000 y = -1400000 }
+            alwaysTransparent = yes
+        }
+        iconType = {
+            name = "empire_header_line"
+            quadTextureSprite = "GFX_line_long"
+            position = { x = 600000 y = 2200000 }
+            alwaysTransparent = yes
+        }
+        # Custom header
+        instantTextBoxType = {
+            name = "irm_some_header"
+            font = "malgun_goth_24"
+            text = "ui_faction_header" 	# header text
+            position = { x = 200000 y = 500000 }
+            maxWidth = 543
+            maxHeight = 22
+            fixedSize = yes
+            alwaysTransparent = yes
+        }
+
+        ### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+
+        buttonType = { name = "focus_button" position = { x = -1180 y = -1112 } spriteType = "GFX_fleetview_focus" } # hidden
+        instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -1120 y = -115 } } # hidden
+        buttonType = { name = "alien_message_background" size = { x = 0 y = 0 } position = { x = -1110 y = -11430 } spriteType = "GFX_tiles_dark_area_cut_8" } # hidden
+        buttonType = { name = "confirm_button" quadTextureSprite = "GFX_standard_button_142_34_button" } # hidden
+        containerWindowType = {
+            name = "portrait_background"
+            position = { x = -1117 y = -1145 }
+            size = { width = 0 height = 0 } 	# hide portrait window
+            iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+            iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
+        }
+
+        iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+        instantTextBoxType = { name = "empire_name" font = "malgun_goth_24" } # hidden
+        instantTextBoxType = { name = "empire_government_type" font = "cg_16b" } # hidden
+        instantTextBoxType = { name = "empire_personality_type" font = "cg_16b" } # hidden
+        overlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+        iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+        containerWindowType = {
+            name = "leader_details"
+            position = { x = -1125 y = -1175 }
+            containerWindowType = { name = "empire_traits_box" } # hidden
+            instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+            overlappingElementsBoxType = { name = "leader_traits" } # hidden
+            instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+            instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+        }
+        containerWindowType = {
+            name = "opinion_window"
+            position = { x = -1127 y = -11110 }
+            size = { width = 94 height = 30 }
+            iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+            instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+        }
+
+        ### EVENT DIPLO ###
+        containerWindowType = {
+            name = "EVENT_DIPLO"
+            position = { x = 2 y = 50 }
+            #size = { width = 563 height = 220 }
+            moveable = no
+
+            instantTextBoxType = {
+                name = "action_title"
+                font = "malgun_goth_24"
+                position = { x = 20 y = 0 }
+                maxWidth = 200
+                alwaysTransparent = yes
+            }
+            instantTextBoxType = {
+                name = "action_desc"
+                font = "malgun_goth_24"
+                position = { x = 490 y = 0 }
+                maxWidth = 500
+                maxHeight = 180
+                orientation = "UPPER_LEFT"
+                format = center
+                alwaysTransparent = yes
+                text_color_code = "H"
+            }
+            listboxType = { name = "option_list" position = { x = -11500 y = -1130 } } # hidden option list
+        }
+
+        containerWindowType = {
+            name = "portrait"
+            position = { x = 10000000 y = 00000000 }
+            size = { width = 0 height = 0 } # hide portrait window
+            iconType = {
+                name = "portrait"
+                spriteType = "GFX_portrait_gamesetup_mask"  position = { x = -11170 y = -11450 }
+            } # hidden
+            iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" position = { x = -11170 y = -11450 } } # hidden
+            iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2"  position = { x = -11170 y = -11450 }} # hidden
+            iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" position = { x = -11170 y = -11450 } } # hidden
+        }
+
+        instantTextBoxType = {
+            name = "alien_message"
+            font = "cg_16b"
+            position = { x = 1000090 y = 47000000 }
+            maxWidth = 465
+            maxHeight = 220
+            format = left
+            scrollbartype = "standardtext_slider"
+        }
+    }
+    #理念选择：格赫娜
+    containerWindowType = {
+        name = "BA_SI_window_Gehenna"
+        orientation = center
+        origo = center
+        moveable = yes
+        size = { width = 1200 height = 650 }
+
+        background = {
+            name = "background"
+            quadTextureSprite = "GFX_BA_SI_padframe"
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_1
+            position = { x = 50  y = 28 }
+            quadTextureSprite = GFX_BA_SI_CaffeeBG
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_2
+            position = { x = 50 y = 26 }
+            quadTextureSprite = GFX_BA_SI_Gehenna_Gehenna_BG
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_3
+            position = { x = 720 y = 0 }
+            quadTextureSprite = GFX_BA_SI_Gehenna_Img_UICountdown_Gehenna_Line
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_4
+            position = { x = 0 y = 0 }
+            quadTextureSprite = GFX_BA_SI_padframe
+        }
+        #page 1
+        containerWindowType = {
+            name = BlueArchive_school_idea_page_1
+            size = { width = 1200 height = 650 }
+            effectButtonType = {
+                name = BlueArchive_school_idea_main_window_frame
+                position = { x = 320 y = 92 }
+                effect = button_effect_BA_frame_1
+                quadTextureSprite = GFX_BA_SI_Gehenna_page1_frame_Gehenna_frame_01
+            }
+            containerWindowType = {
+                name = BA_SI_Gehenna_A01_window
+                position = { x = 190 y = 60 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Gehenna_A01
+                    quadTextureSprite = GFX_BA_SI_Gehenna_page1_01_a_Gehenna_01_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Gehenna_A01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Gehenna_B01_window
+                position = { x = 520 y = 60 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Gehenna_B01
+                    quadTextureSprite = GFX_BA_SI_Gehenna_page1_01_b_Gehenna_01_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Gehenna_B01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Gehenna_A02_window
+                position = { x = 190 y = 150 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Gehenna_A02
+                    quadTextureSprite = GFX_BA_SI_Gehenna_page1_02_a_Gehenna_02_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Gehenna_A02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Gehenna_B02_window
+                position = { x = 520 y = 150 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Gehenna_B02
+                    quadTextureSprite = GFX_BA_SI_Gehenna_page1_02_b_Gehenna_02_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Gehenna_B02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Gehenna_A03_window
+                position = { x = 190 y = 240 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Gehenna_A03
+                    quadTextureSprite = GFX_BA_SI_Gehenna_page1_03_a_Gehenna_03_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Gehenna_A03_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Gehenna_B03_window
+                position = { x = 520 y = 240 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Gehenna_B03
+                    quadTextureSprite = GFX_BA_SI_Gehenna_page1_03_b_Gehenna_03_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Gehenna_B03_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Gehenna_G01_window
+                position = { x = 355 y = 325 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Gehenna_G01
+                    quadTextureSprite = GFX_BA_SI_Gehenna_page1_04_Gehenna_04
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Gehenna_G01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Gehenna_G02_window_P1
+                position = { x = 355 y = 415 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Gehenna_G02_P1
+                    quadTextureSprite = GFX_BA_SI_Gehenna_page1_05_Gehenna_05
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Gehenna_G02_P1_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+        }
+        #page 2
+        containerWindowType = {
+            name = BlueArchive_school_idea_page_2
+            size = { width = 1200 height = 650 }
+            effectButtonType = {
+                name = BlueArchive_school_idea_1_main_window_frame
+                position = { x = 258 y = 170 }
+                effect = button_effect_BA_frame_2
+                quadTextureSprite = GFX_BA_SI_Gehenna_page2_frame_Gehenna_frame_02
+            }
+            containerWindowType = {
+                name = BA_SI_Gehenna_G02_window_P2
+                position = { x = 360 y = 100 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Gehenna_G02_P2
+                    quadTextureSprite = GFX_BA_SI_Gehenna_page1_05_Gehenna_05
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Gehenna_G02_P2_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Gehenna_C01_window
+                position = { x = 195 y = 192 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Gehenna_C01
+                    quadTextureSprite = GFX_BA_SI_Gehenna_page2_06_a_Gehenna_06_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Gehenna_C01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Gehenna_D01_window
+                position = { x = 355 y = 192 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Gehenna_D01
+                    quadTextureSprite = GFX_BA_SI_Gehenna_page2_06_b_Gehenna_06_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Gehenna_D01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Gehenna_E01_window
+                position = { x = 515 y = 192 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Gehenna_E01
+                    quadTextureSprite = GFX_BA_SI_Gehenna_page2_06_c_Gehenna_06_c
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Gehenna_E01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Gehenna_C02_window
+                position = { x = 195 y = 280 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Gehenna_C02
+                    quadTextureSprite = GFX_BA_SI_Gehenna_page2_07_a_Gehenna_07_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Gehenna_C02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Gehenna_D02_window
+                position = { x = 355 y = 280 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Gehenna_D02
+                    quadTextureSprite = GFX_BA_SI_Gehenna_page2_07_b_Gehenna_07_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Gehenna_D02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Gehenna_E02_window
+                position = { x = 515 y = 280 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Gehenna_E02
+                    quadTextureSprite = GFX_BA_SI_Gehenna_page2_07_c_Gehenna_07_c
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Gehenna_E02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Gehenna_C03_window
+                position = { x = 195 y = 369 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Gehenna_C03
+                    quadTextureSprite = GFX_BA_SI_Gehenna_page2_08_a_Gehenna_08_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Gehenna_C03_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Gehenna_D03_window
+                position = { x = 355 y = 369 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Gehenna_D03
+                    quadTextureSprite = GFX_BA_SI_Gehenna_page2_08_b_Gehenna_08_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Gehenna_D03_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Gehenna_E03_window
+                position = { x = 515 y = 369 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Gehenna_E03
+                    quadTextureSprite = GFX_BA_SI_Gehenna_page2_08_c_Gehenna_08_c
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Gehenna_E03_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Gehenna_G03_window
+                position = { x = 355 y = 458 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Gehenna_G03
+                    quadTextureSprite = GFX_BA_SI_Gehenna_page2_09_Gehenna_09
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Gehenna_G03_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+        }
+
+        effectButtonType = {
+            name = BlueArchive_school_idea_page_up
+            position = { x = 398 y = 35 }
+            effect = button_effect_BA_page_up
+            quadTextureSprite = GFX_BA_SI_PageUp
+        }
+        effectButtonType = {
+            name = BlueArchive_school_idea_page_down
+            position = { x = 398 y = 550 }
+            effect = button_effect_BA_page_down
+            quadTextureSprite = GFX_BA_SI_PageDown
+        }
+        buttonType = {
+            name = "close"
+            quadTextureSprite = "GFX_Communication_X"
+            position = { x= -147 y = 32 }
+            orientation = "UPPER_RIGHT"
+            shortcut = "ESCAPE"
+            clicksound = "back_click"
+        }
+
+        iconType = {
+            name = "hex_bg"
+            spriteType = "GFX_hex_bg"
+            position = { x = -1000000 y = -1400000 }
+            alwaysTransparent = yes
+        }
+        iconType = {
+            name = "empire_header_line"
+            quadTextureSprite = "GFX_line_long"
+            position = { x = 600000 y = 2200000 }
+            alwaysTransparent = yes
+        }
+        # Custom header
+        instantTextBoxType = {
+            name = "irm_some_header"
+            font = "malgun_goth_24"
+            text = "ui_faction_header" 	# header text
+            position = { x = 200000 y = 500000 }
+            maxWidth = 543
+            maxHeight = 22
+            fixedSize = yes
+            alwaysTransparent = yes
+        }
+
+        ### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+
+        buttonType = { name = "focus_button" position = { x = -1180 y = -1112 } spriteType = "GFX_fleetview_focus" } # hidden
+        instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -1120 y = -115 } } # hidden
+        buttonType = { name = "alien_message_background" size = { x = 0 y = 0 } position = { x = -1110 y = -11430 } spriteType = "GFX_tiles_dark_area_cut_8" } # hidden
+        buttonType = { name = "confirm_button" quadTextureSprite = "GFX_standard_button_142_34_button" } # hidden
+        containerWindowType = {
+            name = "portrait_background"
+            position = { x = -1117 y = -1145 }
+            size = { width = 0 height = 0 } 	# hide portrait window
+            iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+            iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
+        }
+
+        iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+        instantTextBoxType = { name = "empire_name" font = "malgun_goth_24" } # hidden
+        instantTextBoxType = { name = "empire_government_type" font = "cg_16b" } # hidden
+        instantTextBoxType = { name = "empire_personality_type" font = "cg_16b" } # hidden
+        overlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+        iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+        containerWindowType = {
+            name = "leader_details"
+            position = { x = -1125 y = -1175 }
+            containerWindowType = { name = "empire_traits_box" } # hidden
+            instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+            overlappingElementsBoxType = { name = "leader_traits" } # hidden
+            instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+            instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+        }
+        containerWindowType = {
+            name = "opinion_window"
+            position = { x = -1127 y = -11110 }
+            size = { width = 94 height = 30 }
+            iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+            instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+        }
+
+        ### EVENT DIPLO ###
+        containerWindowType = {
+            name = "EVENT_DIPLO"
+            position = { x = 2 y = 50 }
+            #size = { width = 563 height = 220 }
+            moveable = no
+
+            instantTextBoxType = {
+                name = "action_title"
+                font = "malgun_goth_24"
+                position = { x = 20 y = 0 }
+                maxWidth = 200
+                alwaysTransparent = yes
+            }
+            instantTextBoxType = {
+                name = "action_desc"
+                font = "malgun_goth_24"
+                position = { x = 490 y = 0 }
+                maxWidth = 500
+                maxHeight = 180
+                orientation = "UPPER_LEFT"
+                format = center
+                alwaysTransparent = yes
+                text_color_code = "H"
+            }
+            listboxType = { name = "option_list" position = { x = -11500 y = -1130 } } # hidden option list
+        }
+
+        containerWindowType = {
+            name = "portrait"
+            position = { x = 10000000 y = 00000000 }
+            size = { width = 0 height = 0 } # hide portrait window
+            iconType = {
+                name = "portrait"
+                spriteType = "GFX_portrait_gamesetup_mask"  position = { x = -11170 y = -11450 }
+            } # hidden
+            iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" position = { x = -11170 y = -11450 } } # hidden
+            iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2"  position = { x = -11170 y = -11450 }} # hidden
+            iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" position = { x = -11170 y = -11450 } } # hidden
+        }
+
+        instantTextBoxType = {
+            name = "alien_message"
+            font = "cg_16b"
+            position = { x = 1000090 y = 47000000 }
+            maxWidth = 465
+            maxHeight = 220
+            format = left
+            scrollbartype = "standardtext_slider"
+        }
+    }
+    #理念选择：千年
+    containerWindowType = {
+        name = "BA_SI_window_Millennium"
+        orientation = center
+        origo = center
+        moveable = yes
+        size = { width = 1200 height = 650 }
+
+        background = {
+            name = "background"
+            quadTextureSprite = "GFX_BA_SI_padframe"
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_1
+            position = { x = 50  y = 28 }
+            quadTextureSprite = GFX_BA_SI_CaffeeBG
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_2
+            position = { x = 50 y = 26 }
+            quadTextureSprite = GFX_BA_SI_Millennium_Millennium_BG
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_3
+            position = { x = 720 y = 0 }
+            quadTextureSprite = GFX_BA_SI_Millennium_Img_UICountdown_Millennium_Line
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_4
+            position = { x = 0 y = 0 }
+            quadTextureSprite = GFX_BA_SI_padframe
+        }
+        #page 1
+        containerWindowType = {
+            name = BlueArchive_school_idea_page_1
+            size = { width = 1200 height = 650 }
+            position = { x = -30 y = 0 }
+            effectButtonType = {
+                name = BlueArchive_school_idea_main_window_frame
+                position = { x = 300 y = 140 }
+                effect = button_effect_BA_frame_1
+                quadTextureSprite = GFX_BA_SI_Millennium_page1_frame_Millennium_frame_01
+            }
+            containerWindowType = {
+                name = BA_SI_Millennium_G01_window
+                position = { x = 387 y = 75 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Millennium_G01
+                    quadTextureSprite = GFX_BA_SI_Millennium_page1_00_Millennium_00
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Millennium_G01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Millennium_G02_window
+                position = { x = 387 y = 160 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Millennium_G02
+                    quadTextureSprite = GFX_BA_SI_Millennium_page1_01_Millennium_01
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Millennium_G02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Millennium_G03_window
+                position = { x = 387 y = 250 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Millennium_G03
+                    quadTextureSprite = GFX_BA_SI_Millennium_page1_02_Millennium_02
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Millennium_G03_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Millennium_G04_window
+                position = { x = 387 y = 340 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Millennium_G04
+                    quadTextureSprite = GFX_BA_SI_Millennium_page1_03_Millennium_03
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Millennium_G04_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Millennium_A01_window_P1
+                position = { x = 234 y = 427 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Millennium_A01_P1
+                    quadTextureSprite = GFX_BA_SI_Millennium_page1_04_a_Millennium_04_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Millennium_A01_P1_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Millennium_B01_window_P1
+                position = { x = 557 y = 427 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Millennium_B01_P1
+                    quadTextureSprite = GFX_BA_SI_Millennium_page1_04_b_Millennium_04_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Millennium_B01_P1_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+        }
+        #page 2
+        containerWindowType = {
+            name = BlueArchive_school_idea_page_2
+            size = { width = 1200 height = 650 }
+            position = { x = -20 y = 0 }
+            effectButtonType = {
+                name = BlueArchive_school_idea_main_window_frame
+                position = { x = 283 y = 142 }
+                effect = button_effect_BA_frame_2
+                quadTextureSprite = GFX_BA_SI_Millennium_page2_frame_Millennium_frame_02
+            }
+            containerWindowType = {
+                name = BA_SI_Millennium_A01_window_P2
+                position = { x = 216 y = 110 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Millennium_A01_P2
+                    quadTextureSprite = GFX_BA_SI_Millennium_page1_04_a_Millennium_04_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Millennium_A01_P2_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Millennium_A02_window
+                position = { x = 216 y = 200 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Millennium_A02
+                    quadTextureSprite = GFX_BA_SI_Millennium_page2_04_a_1_Millennium_04_a_1
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Millennium_A02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Millennium_B01_window_P2
+                position = { x = 541 y = 108 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Millennium_B01_P2
+                    quadTextureSprite = GFX_BA_SI_Millennium_page1_04_b_Millennium_04_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Millennium_B01_P2_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Millennium_B02_window
+                position = { x = 541 y = 200 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Millennium_B02
+                    quadTextureSprite = GFX_BA_SI_Millennium_page2_04_b_1_Millennium_04_b_1
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Millennium_B02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Millennium_G05_window
+                position = { x = 373 y = 200 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Millennium_G05
+                    quadTextureSprite = GFX_BA_SI_Millennium_page2_05_Millennium_05
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Millennium_G05_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Millennium_G06_window
+                position = { x = 373 y = 288 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Millennium_G06
+                    quadTextureSprite = GFX_BA_SI_Millennium_page2_06_Millennium_06
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Millennium_G06_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Millennium_G07_window
+                position = { x = 373 y = 376 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Millennium_G07
+                    quadTextureSprite = GFX_BA_SI_Millennium_page2_07_Millennium_07
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Millennium_G07_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Millennium_G08_window_P2
+                position = { x = 373 y = 464 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Millennium_G08_P2
+                    quadTextureSprite = GFX_BA_SI_Millennium_page2_08_Millennium_08
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Millennium_G08_P2_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+        }
+        #page 3
+        containerWindowType = {
+            name = BlueArchive_school_idea_page_3
+            size = { width = 1200 height = 650 }
+            effectButtonType = {
+                name = BlueArchive_school_idea_main_window_frame
+                position = { x = 193 y = 168 }
+                effect = button_effect_BA_frame_3
+                quadTextureSprite = GFX_BA_SI_Millennium_page3_frame_Millennium_frame_03
+            }
+            containerWindowType = {
+                name = BA_SI_Millennium_G08_window_P3
+                position = { x = 353 y = 100 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Millennium_G08_P3
+                    quadTextureSprite = GFX_BA_SI_Millennium_page2_08_Millennium_08
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Millennium_G08_P3_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Millennium_C01_window
+                position = { x = 219 y = 188 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Millennium_C01
+                    quadTextureSprite = GFX_BA_SI_Millennium_page3_09_Millennium_09
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Millennium_C01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Millennium_C02_window
+                position = { x = 125 y = 278 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Millennium_C02
+                    quadTextureSprite = GFX_BA_SI_Millennium_page3_09_a_Millennium_09_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Millennium_C02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Millennium_C03_window
+                position = { x = 332 y = 278 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Millennium_C03
+                    quadTextureSprite = GFX_BA_SI_Millennium_page3_09_b_Millennium_09_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Millennium_C03_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Millennium_G09_window
+                position = { x = 505 y = 188 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Millennium_G09
+                    quadTextureSprite = GFX_BA_SI_Millennium_page3_10_Millennium_10
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Millennium_G09_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Millennium_G10_window
+                position = { x = 505 y = 278 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Millennium_G10
+                    quadTextureSprite = GFX_BA_SI_Millennium_page3_11_Millennium_11
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Millennium_G10_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Millennium_G11_window
+                position = { x = 470 y = 365 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Millennium_G11
+                    quadTextureSprite = GFX_BA_SI_Millennium_page3_12_Millennium_12
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 35 y = 18 }
+                    effect = button_effect_BA_SI_Millennium_G11_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+        }
+        effectButtonType = {
+            name = BlueArchive_school_idea_page_up
+            position = { x = 398 y = 35 }
+            effect = button_effect_BA_page_up
+            quadTextureSprite = GFX_BA_SI_PageUp
+        }
+        effectButtonType = {
+            name = BlueArchive_school_idea_page_down
+            position = { x = 398 y = 550 }
+            effect = button_effect_BA_page_down
+            quadTextureSprite = GFX_BA_SI_PageDown
+        }
+
+        buttonType = {
+            name = "close"
+            quadTextureSprite = "GFX_Communication_X"
+            position = { x= -147 y = 32 }
+            orientation = "UPPER_RIGHT"
+            shortcut = "ESCAPE"
+            clicksound = "back_click"
+        }
+
+        iconType = {
+            name = "hex_bg"
+            spriteType = "GFX_hex_bg"
+            position = { x = -1000000 y = -1400000 }
+            alwaysTransparent = yes
+        }
+        iconType = {
+            name = "empire_header_line"
+            quadTextureSprite = "GFX_line_long"
+            position = { x = 600000 y = 2200000 }
+            alwaysTransparent = yes
+        }
+        # Custom header
+        instantTextBoxType = {
+            name = "irm_some_header"
+            font = "malgun_goth_24"
+            text = "ui_faction_header" 	# header text
+            position = { x = 200000 y = 500000 }
+            maxWidth = 543
+            maxHeight = 22
+            fixedSize = yes
+            alwaysTransparent = yes
+        }
+
+        ### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+
+        buttonType = { name = "focus_button" position = { x = -1180 y = -1112 } spriteType = "GFX_fleetview_focus" } # hidden
+        instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -1120 y = -115 } } # hidden
+        buttonType = { name = "alien_message_background" size = { x = 0 y = 0 } position = { x = -1110 y = -11430 } spriteType = "GFX_tiles_dark_area_cut_8" } # hidden
+        buttonType = { name = "confirm_button" quadTextureSprite = "GFX_standard_button_142_34_button" } # hidden
+        containerWindowType = {
+            name = "portrait_background"
+            position = { x = -1117 y = -1145 }
+            size = { width = 0 height = 0 } 	# hide portrait window
+            iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+            iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
+        }
+
+        iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+        instantTextBoxType = { name = "empire_name" font = "malgun_goth_24" } # hidden
+        instantTextBoxType = { name = "empire_government_type" font = "cg_16b" } # hidden
+        instantTextBoxType = { name = "empire_personality_type" font = "cg_16b" } # hidden
+        overlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+        iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+        containerWindowType = {
+            name = "leader_details"
+            position = { x = -1125 y = -1175 }
+            containerWindowType = { name = "empire_traits_box" } # hidden
+            instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+            overlappingElementsBoxType = { name = "leader_traits" } # hidden
+            instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+            instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+        }
+        containerWindowType = {
+            name = "opinion_window"
+            position = { x = -1127 y = -11110 }
+            size = { width = 94 height = 30 }
+            iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+            instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+        }
+
+        ### EVENT DIPLO ###
+        containerWindowType = {
+            name = "EVENT_DIPLO"
+            position = { x = 2 y = 50 }
+            #size = { width = 563 height = 220 }
+            moveable = no
+
+            instantTextBoxType = {
+                name = "action_title"
+                font = "malgun_goth_24"
+                position = { x = 20 y = 0 }
+                maxWidth = 200
+                alwaysTransparent = yes
+            }
+            instantTextBoxType = {
+                name = "action_desc"
+                font = "malgun_goth_24"
+                position = { x = 490 y = 0 }
+                maxWidth = 500
+                maxHeight = 180
+                orientation = "UPPER_LEFT"
+                format = center
+                alwaysTransparent = yes
+                text_color_code = "H"
+            }
+            listboxType = { name = "option_list" position = { x = -11500 y = -1130 } } # hidden option list
+        }
+
+        containerWindowType = {
+            name = "portrait"
+            position = { x = 10000000 y = 00000000 }
+            size = { width = 0 height = 0 } # hide portrait window
+            iconType = {
+                name = "portrait"
+                spriteType = "GFX_portrait_gamesetup_mask"  position = { x = -11170 y = -11450 }
+            } # hidden
+            iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" position = { x = -11170 y = -11450 } } # hidden
+            iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2"  position = { x = -11170 y = -11450 }} # hidden
+            iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" position = { x = -11170 y = -11450 } } # hidden
+        }
+
+        instantTextBoxType = {
+            name = "alien_message"
+            font = "cg_16b"
+            position = { x = 1000090 y = 47000000 }
+            maxWidth = 465
+            maxHeight = 220
+            format = left
+            scrollbartype = "standardtext_slider"
+        }
+    }
+    #理念选择：圣三一
+    containerWindowType = {
+        name = "BA_SI_window_Trinity"
+        orientation = center
+        origo = center
+        moveable = yes
+        size = { width = 1200 height = 650 }
+
+        background = {
+            name = "background"
+            quadTextureSprite = "GFX_BA_SI_padframe"
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_1
+            position = { x = 50  y = 28 }
+            quadTextureSprite = GFX_BA_SI_CaffeeBG
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_2
+            position = { x = 50 y = 26 }
+            quadTextureSprite = GFX_BA_SI_Trinity_Trinity_BG
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_3
+            position = { x = 720 y = 0 }
+            quadTextureSprite = GFX_BA_SI_Trinity_Img_UICountdown_Trinity_Line
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_4
+            position = { x = 0 y = 0 }
+            quadTextureSprite = GFX_BA_SI_padframe
+        }
+        #page 1
+        containerWindowType = {
+            name = BlueArchive_school_idea_page_1
+            size = { width = 1200 height = 650 }
+            position = { x = 0 y = 0 }
+            effectButtonType = {
+                name = BlueArchive_school_idea_main_window_frame
+                position = { x = 235 y = 140 }
+                effect = button_effect_BA_frame_1
+                quadTextureSprite = GFX_BA_SI_Trinity_page1_frame_Trinity_frame_01
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_A01_window
+                position = { x = 172 y = 75 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_A01
+                    quadTextureSprite = GFX_BA_SI_Trinity_page1_01_a_Trinity_01_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_A01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_B01_window
+                position = { x = 357 y = 75 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_B01
+                    quadTextureSprite = GFX_BA_SI_Trinity_page1_01_b_Trinity_01_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_B01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_C01_window
+                position = { x = 567 y = 75 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_C01
+                    quadTextureSprite = GFX_BA_SI_Trinity_page1_01_c_Trinity_01_c
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_C01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_A02_window
+                position = { x = 172 y = 170 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_A02
+                    quadTextureSprite = GFX_BA_SI_Trinity_page1_02_a_Trinity_02_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_A02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_B02_window
+                position = { x = 357 y = 170 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_B02
+                    quadTextureSprite = GFX_BA_SI_Trinity_page1_02_b_Trinity_02_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_B02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_C02_window
+                position = { x = 567 y = 170 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_C02
+                    quadTextureSprite = GFX_BA_SI_Trinity_page1_02_c_Trinity_02_c
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_C02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_A03_window
+                position = { x = 172 y = 270 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_A03
+                    quadTextureSprite = GFX_BA_SI_Trinity_page1_03_a_Trinity_03_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_A03_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_B03_window
+                position = { x = 357 y = 270 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_B03
+                    quadTextureSprite = GFX_BA_SI_Trinity_page1_03_b_Trinity_03_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_B03_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_C03_window
+                position = { x = 567 y = 270 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_C03
+                    quadTextureSprite = GFX_BA_SI_Trinity_page1_03_c_Trinity_03_c
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_C03_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_A04_window
+                position = { x = 172 y = 370 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_A04
+                    quadTextureSprite = GFX_BA_SI_Trinity_page1_04_a_Trinity_04_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_A04_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_B04_window
+                position = { x = 357 y = 370 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_B04
+                    quadTextureSprite = GFX_BA_SI_Trinity_page1_04_b_Trinity_04_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_B04_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_C04_window
+                position = { x = 567 y = 370 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_C04
+                    quadTextureSprite = GFX_BA_SI_Trinity_page1_04_c_Trinity_04_c
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_C04_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_A05_window_P1
+                position = { x = 172 y = 465 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_A05_P1
+                    quadTextureSprite = GFX_BA_SI_Trinity_page1_05_a_Trinity_05_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_A05_lock_P1
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_B05_window_P1
+                position = { x = 357 y = 465 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_B05_P1
+                    quadTextureSprite = GFX_BA_SI_Trinity_page1_05_b_Trinity_05_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_B05_lock_P1
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_C05_window_P1
+                position = { x = 567 y = 465 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_C05_P1
+                    quadTextureSprite = GFX_BA_SI_Trinity_page1_05_c_Trinity_05_c
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_C05_lock_P1
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+        }
+        #page 2
+        containerWindowType = {
+            name = BlueArchive_school_idea_page_2
+            size = { width = 1200 height = 650 }
+            position = { x = 0 y = 0 }
+            effectButtonType = {
+                name = BlueArchive_school_idea_main_window_frame
+                position = { x = 235 y = 200 }
+                effect = button_effect_BA_frame_2
+                quadTextureSprite = GFX_BA_SI_Trinity_page2_frame_Trinity_frame_02
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_A05_window_P2
+                position = { x = 172 y = 135 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_A05_P2
+                    quadTextureSprite = GFX_BA_SI_Trinity_page1_05_a_Trinity_05_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_A05_lock_P2
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_B05_window_P2
+                position = { x = 357 y = 135 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_B05_P2
+                    quadTextureSprite = GFX_BA_SI_Trinity_page1_05_b_Trinity_05_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_B05_lock_P2
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_C05_window_P2
+                position = { x = 567 y = 135 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_C05_P2
+                    quadTextureSprite = GFX_BA_SI_Trinity_page1_05_c_Trinity_05_c
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_C05_lock_P2
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_A06_window
+                position = { x = 172 y = 230 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_A06
+                    quadTextureSprite = GFX_BA_SI_Trinity_page2_06_a_Trinity_06_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_A06_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_B06_window
+                position = { x = 357 y = 230 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_B06
+                    quadTextureSprite = GFX_BA_SI_Trinity_page2_06_b_Trinity_06_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_B06_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_C06_window
+                position = { x = 567 y = 230 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_C06
+                    quadTextureSprite = GFX_BA_SI_Trinity_page2_06_c_Trinity_06_c
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_C06_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Trinity_G01_window
+                position = { x = 357 y = 325 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Trinity_G01
+                    quadTextureSprite = GFX_BA_SI_Trinity_page2_07_b_Trinity_07_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Trinity_G01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+        }
+
+        effectButtonType = {
+            name = BlueArchive_school_idea_page_up
+            position = { x = 398 y = 35 }
+            effect = button_effect_BA_page_up
+            quadTextureSprite = GFX_BA_SI_PageUp
+        }
+        effectButtonType = {
+            name = BlueArchive_school_idea_page_down
+            position = { x = 398 y = 550 }
+            effect = button_effect_BA_page_down
+            quadTextureSprite = GFX_BA_SI_PageDown
+        }
+
+        buttonType = {
+            name = "close"
+            quadTextureSprite = "GFX_Communication_X"
+            position = { x= -147 y = 32 }
+            orientation = "UPPER_RIGHT"
+            shortcut = "ESCAPE"
+            clicksound = "back_click"
+        }
+
+        iconType = {
+            name = "hex_bg"
+            spriteType = "GFX_hex_bg"
+            position = { x = -1000000 y = -1400000 }
+            alwaysTransparent = yes
+        }
+        iconType = {
+            name = "empire_header_line"
+            quadTextureSprite = "GFX_line_long"
+            position = { x = 600000 y = 2200000 }
+            alwaysTransparent = yes
+        }
+        # Custom header
+        instantTextBoxType = {
+            name = "irm_some_header"
+            font = "malgun_goth_24"
+            text = "ui_faction_header" 	# header text
+            position = { x = 200000 y = 500000 }
+            maxWidth = 543
+            maxHeight = 22
+            fixedSize = yes
+            alwaysTransparent = yes
+        }
+
+        ### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+
+        buttonType = { name = "focus_button" position = { x = -1180 y = -1112 } spriteType = "GFX_fleetview_focus" } # hidden
+        instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -1120 y = -115 } } # hidden
+        buttonType = { name = "alien_message_background" size = { x = 0 y = 0 } position = { x = -1110 y = -11430 } spriteType = "GFX_tiles_dark_area_cut_8" } # hidden
+        buttonType = { name = "confirm_button" quadTextureSprite = "GFX_standard_button_142_34_button" } # hidden
+        containerWindowType = {
+            name = "portrait_background"
+            position = { x = -1117 y = -1145 }
+            size = { width = 0 height = 0 } 	# hide portrait window
+            iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+            iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
+        }
+
+        iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+        instantTextBoxType = { name = "empire_name" font = "malgun_goth_24" } # hidden
+        instantTextBoxType = { name = "empire_government_type" font = "cg_16b" } # hidden
+        instantTextBoxType = { name = "empire_personality_type" font = "cg_16b" } # hidden
+        overlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+        iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+        containerWindowType = {
+            name = "leader_details"
+            position = { x = -1125 y = -1175 }
+            containerWindowType = { name = "empire_traits_box" } # hidden
+            instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+            overlappingElementsBoxType = { name = "leader_traits" } # hidden
+            instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+            instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+        }
+        containerWindowType = {
+            name = "opinion_window"
+            position = { x = -1127 y = -11110 }
+            size = { width = 94 height = 30 }
+            iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+            instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+        }
+
+        ### EVENT DIPLO ###
+        containerWindowType = {
+            name = "EVENT_DIPLO"
+            position = { x = 2 y = 50 }
+            #size = { width = 563 height = 220 }
+            moveable = no
+
+            instantTextBoxType = {
+                name = "action_title"
+                font = "malgun_goth_24"
+                position = { x = 20 y = 0 }
+                maxWidth = 200
+                alwaysTransparent = yes
+            }
+            instantTextBoxType = {
+                name = "action_desc"
+                font = "malgun_goth_24"
+                position = { x = 490 y = 0 }
+                maxWidth = 500
+                maxHeight = 180
+                orientation = "UPPER_LEFT"
+                format = center
+                alwaysTransparent = yes
+                text_color_code = "H"
+            }
+            listboxType = { name = "option_list" position = { x = -11500 y = -1130 } } # hidden option list
+        }
+
+        containerWindowType = {
+            name = "portrait"
+            position = { x = 10000000 y = 00000000 }
+            size = { width = 0 height = 0 } # hide portrait window
+            iconType = {
+                name = "portrait"
+                spriteType = "GFX_portrait_gamesetup_mask"  position = { x = -11170 y = -11450 }
+            } # hidden
+            iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" position = { x = -11170 y = -11450 } } # hidden
+            iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2"  position = { x = -11170 y = -11450 }} # hidden
+            iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" position = { x = -11170 y = -11450 } } # hidden
+        }
+
+        instantTextBoxType = {
+            name = "alien_message"
+            font = "cg_16b"
+            position = { x = 1000090 y = 47000000 }
+            maxWidth = 465
+            maxHeight = 220
+            format = left
+            scrollbartype = "standardtext_slider"
+        }
+    }
+    #理念选择：百鬼夜行
+    containerWindowType = {
+        name = "BA_SI_window_Hyakkiyako"
+        orientation = center
+        origo = center
+        moveable = yes
+        size = { width = 1200 height = 650 }
+
+        background = {
+            name = "background"
+            quadTextureSprite = "GFX_BA_SI_padframe"
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_1
+            position = { x = 50  y = 28 }
+            quadTextureSprite = GFX_BA_SI_CaffeeBG
+        }
+        effectButtonType = {
+            name = BlueArchive_school_idea_bg_2
+            position = { x = 50 y = 26 }
+            quadTextureSprite = GFX_BA_SI_Hyakkiyako_page1_Hyakkiyako_BG
+            effect = button_effect_BA_Hyakkiyako_bg_1
+        }
+        effectButtonType = {
+            name = BlueArchive_school_idea_bg_3
+            position = { x = 50 y = 26 }
+            quadTextureSprite = GFX_BA_SI_Hyakkiyako_page2_frame_Hyakkiyako_BG_2
+            effect = button_effect_BA_Hyakkiyako_bg_2
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_4
+            position = { x = 720 y = 0 }
+            quadTextureSprite = GFX_BA_SI_Hyakkiyako_Img_UICountdown_Hyakkiyako_Line
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_5
+            position = { x = 0 y = 0 }
+            quadTextureSprite = GFX_BA_SI_padframe
+        }
+        #page 1
+        containerWindowType = {
+            name = BlueArchive_school_idea_page_1
+            size = { width = 1200 height = 650 }
+            effectButtonType = {
+                name = BlueArchive_school_idea_main_window_frame
+                position = { x = 244 y = 242 }
+                effect = button_effect_BA_frame_1
+                quadTextureSprite = GFX_BA_SI_Hyakkiyako_page1_frame_Hyakkiyako_frame_01
+            }
+            containerWindowType = {
+                name = BA_SI_Hyakkiyako_G01_window
+                position = { x = 370 y = 175 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Hyakkiyako_G01
+                    quadTextureSprite = GFX_BA_SI_Hyakkiyako_page1_00_Hyakkiyako_00
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Hyakkiyako_G01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Hyakkiyako_G02_window
+                position = { x = 179 y = 282 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Hyakkiyako_G02
+                    quadTextureSprite = GFX_BA_SI_Hyakkiyako_page1_01_a_Hyakkiyako_01_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Hyakkiyako_G02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Hyakkiyako_G03_window
+                position = { x = 368 y = 282 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Hyakkiyako_G03
+                    quadTextureSprite = GFX_BA_SI_Hyakkiyako_page1_01_b_Hyakkiyako_01_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Hyakkiyako_G03_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Hyakkiyako_G04_window
+                position = { x = 575 y = 282 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Hyakkiyako_G04
+                    quadTextureSprite = GFX_BA_SI_Hyakkiyako_page1_01_c_Hyakkiyako_01_c
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Hyakkiyako_G04_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Hyakkiyako_G05_window
+                position = { x = 370 y = 390 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Hyakkiyako_G05
+                    quadTextureSprite = GFX_BA_SI_Hyakkiyako_page1_02_Hyakkiyako_02
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Hyakkiyako_G05_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+        }
+        #page 2
+        containerWindowType = {
+            name = BlueArchive_school_idea_page_2
+            size = { width = 1200 height = 650 }
+            containerWindowType = {
+                name = BA_SI_Hyakkiyako_G06_window
+                position = { x = 100 y = 100 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Hyakkiyako_G06
+                    quadTextureSprite = GFX_BA_SI_Hyakkiyako_page2_sp00_Hyakkiyako_sp_00
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Hyakkiyako_G06_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Hyakkiyako_G07_window
+                position = { x = 580 y = 100 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Hyakkiyako_G07
+                    quadTextureSprite = GFX_BA_SI_Hyakkiyako_page2_sp01_Hyakkiyako_sp_01
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Hyakkiyako_G07_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Hyakkiyako_G08_window
+                position = { x = 580 y = 490 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Hyakkiyako_G08
+                    quadTextureSprite = GFX_BA_SI_Hyakkiyako_page2_sp02_Hyakkiyako_sp_02
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Hyakkiyako_G08_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Hyakkiyako_G09_window
+                position = { x = 100 y = 490 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Hyakkiyako_G09
+                    quadTextureSprite = GFX_BA_SI_Hyakkiyako_page2_sp03_Hyakkiyako_sp_03
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Hyakkiyako_G09_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+        }
+        effectButtonType = {
+            name = BlueArchive_school_idea_page_up
+            position = { x = 252 y = 188 }
+            effect = button_effect_BA_page_up
+            quadTextureSprite = GFX_BA_SI_Hyakkiyako_page2_frame_Hyakkiyako_page_change_02
+        }
+        effectButtonType = {
+            name = BlueArchive_school_idea_page_down
+            position = { x = 570 y = 480 }
+            effect = button_effect_BA_Hyakkiyako_page_down
+            quadTextureSprite = GFX_BA_SI_Hyakkiyako_page1_frame_Hyakkiyako_page_change_01
+        }
+
+        buttonType = {
+            name = "close"
+            quadTextureSprite = "GFX_Communication_X"
+            position = { x= -147 y = 32 }
+            orientation = "UPPER_RIGHT"
+            shortcut = "ESCAPE"
+            clicksound = "back_click"
+        }
+
+        iconType = {
+            name = "hex_bg"
+            spriteType = "GFX_hex_bg"
+            position = { x = -1000000 y = -1400000 }
+            alwaysTransparent = yes
+        }
+        iconType = {
+            name = "empire_header_line"
+            quadTextureSprite = "GFX_line_long"
+            position = { x = 600000 y = 2200000 }
+            alwaysTransparent = yes
+        }
+        # Custom header
+        instantTextBoxType = {
+            name = "irm_some_header"
+            font = "malgun_goth_24"
+            text = "ui_faction_header" 	# header text
+            position = { x = 200000 y = 500000 }
+            maxWidth = 543
+            maxHeight = 22
+            fixedSize = yes
+            alwaysTransparent = yes
+        }
+
+        ### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+
+        buttonType = { name = "focus_button" position = { x = -1180 y = -1112 } spriteType = "GFX_fleetview_focus" } # hidden
+        instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -1120 y = -115 } } # hidden
+        buttonType = { name = "alien_message_background" size = { x = 0 y = 0 } position = { x = -1110 y = -11430 } spriteType = "GFX_tiles_dark_area_cut_8" } # hidden
+        buttonType = { name = "confirm_button" quadTextureSprite = "GFX_standard_button_142_34_button" } # hidden
+        containerWindowType = {
+            name = "portrait_background"
+            position = { x = -1117 y = -1145 }
+            size = { width = 0 height = 0 } 	# hide portrait window
+            iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+            iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
+        }
+
+        iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+        instantTextBoxType = { name = "empire_name" font = "malgun_goth_24" } # hidden
+        instantTextBoxType = { name = "empire_government_type" font = "cg_16b" } # hidden
+        instantTextBoxType = { name = "empire_personality_type" font = "cg_16b" } # hidden
+        overlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+        iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+        containerWindowType = {
+            name = "leader_details"
+            position = { x = -1125 y = -1175 }
+            containerWindowType = { name = "empire_traits_box" } # hidden
+            instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+            overlappingElementsBoxType = { name = "leader_traits" } # hidden
+            instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+            instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+        }
+        containerWindowType = {
+            name = "opinion_window"
+            position = { x = -1127 y = -11110 }
+            size = { width = 94 height = 30 }
+            iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+            instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+        }
+
+        ### EVENT DIPLO ###
+        containerWindowType = {
+            name = "EVENT_DIPLO"
+            position = { x = 2 y = 50 }
+            #size = { width = 563 height = 220 }
+            moveable = no
+
+            instantTextBoxType = {
+                name = "action_title"
+                font = "malgun_goth_24"
+                position = { x = 20 y = 0 }
+                maxWidth = 200
+                alwaysTransparent = yes
+            }
+            instantTextBoxType = {
+                name = "action_desc"
+                font = "malgun_goth_24"
+                position = { x = 490 y = 0 }
+                maxWidth = 500
+                maxHeight = 180
+                orientation = "UPPER_LEFT"
+                format = center
+                alwaysTransparent = yes
+                text_color_code = "H"
+            }
+            listboxType = { name = "option_list" position = { x = -11500 y = -1130 } } # hidden option list
+        }
+
+        containerWindowType = {
+            name = "portrait"
+            position = { x = 10000000 y = 00000000 }
+            size = { width = 0 height = 0 } # hide portrait window
+            iconType = {
+                name = "portrait"
+                spriteType = "GFX_portrait_gamesetup_mask"  position = { x = -11170 y = -11450 }
+            } # hidden
+            iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" position = { x = -11170 y = -11450 } } # hidden
+            iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2"  position = { x = -11170 y = -11450 }} # hidden
+            iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" position = { x = -11170 y = -11450 } } # hidden
+        }
+
+        instantTextBoxType = {
+            name = "alien_message"
+            font = "cg_16b"
+            position = { x = 1000090 y = 47000000 }
+            maxWidth = 465
+            maxHeight = 220
+            format = left
+            scrollbartype = "standardtext_slider"
+        }
+    }
+    #理念选择：赤冬
+    containerWindowType = {
+        name = "BA_SI_window_Redwinter"
+        orientation = center
+        origo = center
+        moveable = yes
+        size = { width = 1200 height = 650 }
+
+        background = {
+            name = "background"
+            quadTextureSprite = "GFX_BA_SI_padframe"
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_1
+            position = { x = 50  y = 28 }
+            quadTextureSprite = GFX_BA_SI_CaffeeBG
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_2
+            position = { x = 50 y = 26 }
+            quadTextureSprite = GFX_BA_SI_Red_Winter_page1_RedWinter_BG
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_3
+            position = { x = 720 y = 0 }
+            quadTextureSprite = GFX_BA_SI_Red_Winter_Img_UICountdown_RedWinter_Line
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_4
+            position = { x = 0 y = 0 }
+            quadTextureSprite = GFX_BA_SI_padframe
+        }
+        #page 1
+        containerWindowType = {
+            name = BlueArchive_school_idea_page
+            size = { width = 1200 height = 650 }
+            containerWindowType = {
+                name = BlueArchive_school_idea_page_frame
+                position = { x = -100 y = -50 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_main_window_frame_1
+                    position = { x = 500 y = 200 }
+                    effect = button_effect_BA_RedWinter_frame_1
+                    quadTextureSprite = GFX_BA_SI_Red_Winter_page1_frame_RedWinter_frame_01
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_main_window_frame_2
+                    position = { x = 345 y = 305 }
+                    effect = button_effect_BA_RedWinter_frame_2
+                    quadTextureSprite = GFX_BA_SI_Red_Winter_page1_frame_RedWinter_frame_02
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_main_window_frame_3
+                    position = { x = 350 y = 300 }
+                    effect = button_effect_BA_RedWinter_frame_3
+                    quadTextureSprite = GFX_BA_SI_Red_Winter_page1_frame_RedWinter_frame_03
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_main_window_frame_4
+                    position = { x = 410 y = 305 }
+                    effect = button_effect_BA_RedWinter_frame_4
+                    quadTextureSprite = GFX_BA_SI_Red_Winter_page1_frame_RedWinter_frame_04
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_main_window_frame_5
+                    position = { x = 400 y = 200 }
+                    effect = button_effect_BA_RedWinter_frame_5
+                    quadTextureSprite = GFX_BA_SI_Red_Winter_page1_frame_RedWinter_frame_05
+                }
+            }
+
+            containerWindowType = {
+                name = BA_SI_Redwinter_G01_window
+                position = { x = 330 y = 100 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Redwinter_G01
+                    quadTextureSprite = GFX_BA_SI_Red_Winter_page1_01_RedWinter_01
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Redwinter_G01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Redwinter_G02_window
+                position = { x = 420 y = 410 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Redwinter_G02
+                    quadTextureSprite = GFX_BA_SI_Red_Winter_page1_02_RedWinter_02
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Redwinter_G02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Redwinter_G03_window
+                position = { x = 150 y = 225 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Redwinter_G03
+                    quadTextureSprite = GFX_BA_SI_Red_Winter_page1_03_RedWinter_03
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Redwinter_G03_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Redwinter_G04_window
+                position = { x = 520 y = 225 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Redwinter_G04
+                    quadTextureSprite = GFX_BA_SI_Red_Winter_page1_04_RedWinter_04
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Redwinter_G04_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Redwinter_G05_window
+                position = { x = 230 y = 410 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Redwinter_G05
+                    quadTextureSprite = GFX_BA_SI_Red_Winter_page1_05_RedWinter_05
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Redwinter_G05_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+        }
+
+        buttonType = {
+            name = "close"
+            quadTextureSprite = "GFX_Communication_X"
+            position = { x= -147 y = 32 }
+            orientation = "UPPER_RIGHT"
+            shortcut = "ESCAPE"
+            clicksound = "back_click"
+        }
+
+        iconType = {
+            name = "hex_bg"
+            spriteType = "GFX_hex_bg"
+            position = { x = -1000000 y = -1400000 }
+            alwaysTransparent = yes
+        }
+        iconType = {
+            name = "empire_header_line"
+            quadTextureSprite = "GFX_line_long"
+            position = { x = 600000 y = 2200000 }
+            alwaysTransparent = yes
+        }
+        # Custom header
+        instantTextBoxType = {
+            name = "irm_some_header"
+            font = "malgun_goth_24"
+            text = "ui_faction_header" 	# header text
+            position = { x = 200000 y = 500000 }
+            maxWidth = 543
+            maxHeight = 22
+            fixedSize = yes
+            alwaysTransparent = yes
+        }
+
+        ### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+
+        buttonType = { name = "focus_button" position = { x = -1180 y = -1112 } spriteType = "GFX_fleetview_focus" } # hidden
+        instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -1120 y = -115 } } # hidden
+        buttonType = { name = "alien_message_background" size = { x = 0 y = 0 } position = { x = -1110 y = -11430 } spriteType = "GFX_tiles_dark_area_cut_8" } # hidden
+        buttonType = { name = "confirm_button" quadTextureSprite = "GFX_standard_button_142_34_button" } # hidden
+        containerWindowType = {
+            name = "portrait_background"
+            position = { x = -1117 y = -1145 }
+            size = { width = 0 height = 0 } 	# hide portrait window
+            iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+            iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
+        }
+
+        iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+        instantTextBoxType = { name = "empire_name" font = "malgun_goth_24" } # hidden
+        instantTextBoxType = { name = "empire_government_type" font = "cg_16b" } # hidden
+        instantTextBoxType = { name = "empire_personality_type" font = "cg_16b" } # hidden
+        overlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+        iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+        containerWindowType = {
+            name = "leader_details"
+            position = { x = -1125 y = -1175 }
+            containerWindowType = { name = "empire_traits_box" } # hidden
+            instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+            overlappingElementsBoxType = { name = "leader_traits" } # hidden
+            instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+            instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+        }
+        containerWindowType = {
+            name = "opinion_window"
+            position = { x = -1127 y = -11110 }
+            size = { width = 94 height = 30 }
+            iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+            instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+        }
+
+        ### EVENT DIPLO ###
+        containerWindowType = {
+            name = "EVENT_DIPLO"
+            position = { x = 2 y = 50 }
+            #size = { width = 563 height = 220 }
+            moveable = no
+
+            instantTextBoxType = {
+                name = "action_title"
+                font = "malgun_goth_24"
+                position = { x = 20 y = 0 }
+                maxWidth = 200
+                alwaysTransparent = yes
+            }
+            instantTextBoxType = {
+                name = "action_desc"
+                font = "malgun_goth_24"
+                position = { x = 490 y = 0 }
+                maxWidth = 500
+                maxHeight = 180
+                orientation = "UPPER_LEFT"
+                format = center
+                alwaysTransparent = yes
+                text_color_code = "H"
+            }
+            listboxType = { name = "option_list" position = { x = -11500 y = -1130 } } # hidden option list
+        }
+
+        containerWindowType = {
+            name = "portrait"
+            position = { x = 10000000 y = 00000000 }
+            size = { width = 0 height = 0 } # hide portrait window
+            iconType = {
+                name = "portrait"
+                spriteType = "GFX_portrait_gamesetup_mask"  position = { x = -11170 y = -11450 }
+            } # hidden
+            iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" position = { x = -11170 y = -11450 } } # hidden
+            iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2"  position = { x = -11170 y = -11450 }} # hidden
+            iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" position = { x = -11170 y = -11450 } } # hidden
+        }
+
+        instantTextBoxType = {
+            name = "alien_message"
+            font = "cg_16b"
+            position = { x = 1000090 y = 47000000 }
+            maxWidth = 465
+            maxHeight = 220
+            format = left
+            scrollbartype = "standardtext_slider"
+        }
+    }
+    #理念选择：山海经
+    containerWindowType = {
+        name = "BA_SI_window_Shanhaijing"
+        orientation = center
+        origo = center
+        moveable = yes
+        size = { width = 1200 height = 650 }
+
+        background = {
+            name = "background"
+            quadTextureSprite = "GFX_BA_SI_padframe"
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_1
+            position = { x = 50  y = 28 }
+            quadTextureSprite = GFX_BA_SI_CaffeeBG
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_2
+            position = { x = 50 y = 26 }
+            quadTextureSprite = GFX_BA_SI_Shanhaijing_Shanhaijing_BG
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_3
+            position = { x = 720 y = 0 }
+            quadTextureSprite = GFX_BA_SI_Shanhaijing_Img_UICountdown_Shanhaijing_Line
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_4
+            position = { x = 0 y = 0 }
+            quadTextureSprite = GFX_BA_SI_padframe
+        }
+        #page 1
+        containerWindowType = {
+            name = BlueArchive_school_idea_page
+            size = { width = 1200 height = 650 }
+            effectButtonType = {
+                name = BlueArchive_school_idea_main_window_frame_1
+                position = { x = 210 y = 118 }
+                effect = button_effect_BA_frame_1
+                quadTextureSprite = GFX_BA_SI_Shanhaijing_page1_frame_Shanhaijing_frame_01
+            }
+            containerWindowType = {
+                name = BA_SI_Shanhaijing_G01_window
+                position = { x = 331 y = 50 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Shanhaijing_G01
+                    quadTextureSprite = GFX_BA_SI_Shanhaijing_page1_00_Shanhaijing_00
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Shanhaijing_G01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Shanhaijing_A01_window
+                position = { x = 143 y = 155 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Shanhaijing_A01
+                    quadTextureSprite = GFX_BA_SI_Shanhaijing_page1_01_a_Shanhaijing_01_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Shanhaijing_A01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Shanhaijing_B01_window
+                position = { x = 540 y = 155 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Shanhaijing_B01
+                    quadTextureSprite = GFX_BA_SI_Shanhaijing_page1_01_b_Shanhaijing_01_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Shanhaijing_B01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Shanhaijing_A02_window
+                position = { x = 143 y = 260 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Shanhaijing_A02
+                    quadTextureSprite = GFX_BA_SI_Shanhaijing_page1_02_a_Shanhaijing_02_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Shanhaijing_A02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Shanhaijing_G02_window
+                position = { x = 331 y = 260 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Shanhaijing_G02
+                    quadTextureSprite = GFX_BA_SI_Shanhaijing_page1_02_b_Shanhaijing_02_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Shanhaijing_G02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Shanhaijing_B02_window
+                position = { x = 540 y = 260 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Shanhaijing_B02
+                    quadTextureSprite = GFX_BA_SI_Shanhaijing_page1_02_c_Shanhaijing_02_c
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Shanhaijing_B02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Shanhaijing_A03_window
+                position = { x = 143 y = 368 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Shanhaijing_A03
+                    quadTextureSprite = GFX_BA_SI_Shanhaijing_page1_03_a_Shanhaijing_03_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Shanhaijing_A03_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Shanhaijing_B03_window
+                position = { x = 540 y = 368 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Shanhaijing_B03
+                    quadTextureSprite = GFX_BA_SI_Shanhaijing_page1_03_b_Shanhaijing_03_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Shanhaijing_B03_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Shanhaijing_A04_window
+                position = { x = 143 y = 470 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Shanhaijing_A04
+                    quadTextureSprite = GFX_BA_SI_Shanhaijing_page1_04_a_Shanhaijing_04_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Shanhaijing_A04_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Shanhaijing_B04_window
+                position = { x = 540 y = 470 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Shanhaijing_B04
+                    quadTextureSprite = GFX_BA_SI_Shanhaijing_page1_04_b_Shanhaijing_04_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Shanhaijing_B04_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+        }
+
+        buttonType = {
+            name = "close"
+            quadTextureSprite = "GFX_Communication_X"
+            position = { x= -147 y = 32 }
+            orientation = "UPPER_RIGHT"
+            shortcut = "ESCAPE"
+            clicksound = "back_click"
+        }
+
+        iconType = {
+            name = "hex_bg"
+            spriteType = "GFX_hex_bg"
+            position = { x = -1000000 y = -1400000 }
+            alwaysTransparent = yes
+        }
+        iconType = {
+            name = "empire_header_line"
+            quadTextureSprite = "GFX_line_long"
+            position = { x = 600000 y = 2200000 }
+            alwaysTransparent = yes
+        }
+        # Custom header
+        instantTextBoxType = {
+            name = "irm_some_header"
+            font = "malgun_goth_24"
+            text = "ui_faction_header" 	# header text
+            position = { x = 200000 y = 500000 }
+            maxWidth = 543
+            maxHeight = 22
+            fixedSize = yes
+            alwaysTransparent = yes
+        }
+
+        ### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+
+        buttonType = { name = "focus_button" position = { x = -1180 y = -1112 } spriteType = "GFX_fleetview_focus" } # hidden
+        instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -1120 y = -115 } } # hidden
+        buttonType = { name = "alien_message_background" size = { x = 0 y = 0 } position = { x = -1110 y = -11430 } spriteType = "GFX_tiles_dark_area_cut_8" } # hidden
+        buttonType = { name = "confirm_button" quadTextureSprite = "GFX_standard_button_142_34_button" } # hidden
+        containerWindowType = {
+            name = "portrait_background"
+            position = { x = -1117 y = -1145 }
+            size = { width = 0 height = 0 } 	# hide portrait window
+            iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+            iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
+        }
+
+        iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+        instantTextBoxType = { name = "empire_name" font = "malgun_goth_24" } # hidden
+        instantTextBoxType = { name = "empire_government_type" font = "cg_16b" } # hidden
+        instantTextBoxType = { name = "empire_personality_type" font = "cg_16b" } # hidden
+        overlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+        iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+        containerWindowType = {
+            name = "leader_details"
+            position = { x = -1125 y = -1175 }
+            containerWindowType = { name = "empire_traits_box" } # hidden
+            instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+            overlappingElementsBoxType = { name = "leader_traits" } # hidden
+            instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+            instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+        }
+        containerWindowType = {
+            name = "opinion_window"
+            position = { x = -1127 y = -11110 }
+            size = { width = 94 height = 30 }
+            iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+            instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+        }
+
+        ### EVENT DIPLO ###
+        containerWindowType = {
+            name = "EVENT_DIPLO"
+            position = { x = 2 y = 50 }
+            #size = { width = 563 height = 220 }
+            moveable = no
+
+            instantTextBoxType = {
+                name = "action_title"
+                font = "malgun_goth_24"
+                position = { x = 20 y = 0 }
+                maxWidth = 200
+                alwaysTransparent = yes
+            }
+            instantTextBoxType = {
+                name = "action_desc"
+                font = "malgun_goth_24"
+                position = { x = 490 y = 0 }
+                maxWidth = 500
+                maxHeight = 180
+                orientation = "UPPER_LEFT"
+                format = center
+                alwaysTransparent = yes
+                text_color_code = "H"
+            }
+            listboxType = { name = "option_list" position = { x = -11500 y = -1130 } } # hidden option list
+        }
+
+        containerWindowType = {
+            name = "portrait"
+            position = { x = 10000000 y = 00000000 }
+            size = { width = 0 height = 0 } # hide portrait window
+            iconType = {
+                name = "portrait"
+                spriteType = "GFX_portrait_gamesetup_mask"  position = { x = -11170 y = -11450 }
+            } # hidden
+            iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" position = { x = -11170 y = -11450 } } # hidden
+            iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2"  position = { x = -11170 y = -11450 }} # hidden
+            iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" position = { x = -11170 y = -11450 } } # hidden
+        }
+
+        instantTextBoxType = {
+            name = "alien_message"
+            font = "cg_16b"
+            position = { x = 1000090 y = 47000000 }
+            maxWidth = 465
+            maxHeight = 220
+            format = left
+            scrollbartype = "standardtext_slider"
+        }
+    }
+    #理念选择：瓦尔基里
+    containerWindowType = {
+        name = "BA_SI_window_Valkyrie"
+        orientation = center
+        origo = center
+        moveable = yes
+        size = { width = 1200 height = 650 }
+
+        background = {
+            name = "background"
+            quadTextureSprite = "GFX_BA_SI_padframe"
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_1
+            position = { x = 50  y = 28 }
+            quadTextureSprite = GFX_BA_SI_CaffeeBG
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_2
+            position = { x = 50 y = 26 }
+            quadTextureSprite = GFX_BA_SI_Valkyrie_Valkyrie_BG
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_3
+            position = { x = 720 y = 0 }
+            quadTextureSprite = GFX_BA_SI_Valkyrie_Img_UICountdown_Valkyrie_Line
+        }
+        iconType = {
+            name = BlueArchive_school_idea_bg_4
+            position = { x = 0 y = 0 }
+            quadTextureSprite = GFX_BA_SI_padframe
+        }
+        #page 1
+        containerWindowType = {
+            name = BlueArchive_school_idea_page
+            size = { width = 1200 height = 650 }
+            position = { x = 0 y = 50 }
+            effectButtonType = {
+                name = BlueArchive_school_idea_main_window_frame_1
+                position = { x = 210 y = 118 }
+                effect = button_effect_BA_frame_1
+                quadTextureSprite = GFX_BA_SI_Valkyrie_page1_frame_Valkyrie_frame_01
+            }
+            containerWindowType = {
+                name = BA_SI_Valkyrie_G01_window
+                position = { x = 331 y = 50 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Valkyrie_G01
+                    quadTextureSprite = GFX_BA_SI_Valkyrie_page1_00_Valkyrie_00
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Valkyrie_G01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Valkyrie_A01_window
+                position = { x = 145 y = 155 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Valkyrie_A01
+                    quadTextureSprite = GFX_BA_SI_Valkyrie_page1_01_a_Valkyrie_01_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Valkyrie_A01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Valkyrie_B01_window
+                position = { x = 540 y = 155 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Valkyrie_B01
+                    quadTextureSprite = GFX_BA_SI_Valkyrie_page1_01_b_Valkyrie_01_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Valkyrie_B01_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Valkyrie_A02_window
+                position = { x = 145 y = 265 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Valkyrie_A02
+                    quadTextureSprite = GFX_BA_SI_Valkyrie_page1_02_a_Valkyrie_02_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Valkyrie_A02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Valkyrie_B02_window
+                position = { x = 540 y = 265 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Valkyrie_B02
+                    quadTextureSprite = GFX_BA_SI_Valkyrie_page1_02_b_Valkyrieg_02_b
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Valkyrie_B02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+            containerWindowType = {
+                name = BA_SI_Valkyrie_G02_window
+                position = { x = 331 y = 370 }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_button
+                    effect = button_effect_BA_SI_Valkyrie_G02
+                    quadTextureSprite = GFX_BA_SI_Valkyrie_page1_03_a_Valkyrie_03_a
+                }
+                effectButtonType = {
+                    name = BlueArchive_school_idea_lock
+                    position = { x = 0 y = 0 }
+                    effect = button_effect_BA_SI_Valkyrie_G02_lock
+                    quadTextureSprite = GFX_BA_SI_Lock
+                }
+            }
+        }
+
+        buttonType = {
+            name = "close"
+            quadTextureSprite = "GFX_Communication_X"
+            position = { x= -147 y = 32 }
+            orientation = "UPPER_RIGHT"
+            shortcut = "ESCAPE"
+            clicksound = "back_click"
+        }
+
+        iconType = {
+            name = "hex_bg"
+            spriteType = "GFX_hex_bg"
+            position = { x = -1000000 y = -1400000 }
+            alwaysTransparent = yes
+        }
+        iconType = {
+            name = "empire_header_line"
+            quadTextureSprite = "GFX_line_long"
+            position = { x = 600000 y = 2200000 }
+            alwaysTransparent = yes
+        }
+        # Custom header
+        instantTextBoxType = {
+            name = "irm_some_header"
+            font = "malgun_goth_24"
+            text = "ui_faction_header" 	# header text
+            position = { x = 200000 y = 500000 }
+            maxWidth = 543
+            maxHeight = 22
+            fixedSize = yes
+            alwaysTransparent = yes
+        }
+
+        ### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+
+        buttonType = { name = "focus_button" position = { x = -1180 y = -1112 } spriteType = "GFX_fleetview_focus" } # hidden
+        instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -1120 y = -115 } } # hidden
+        buttonType = { name = "alien_message_background" size = { x = 0 y = 0 } position = { x = -1110 y = -11430 } spriteType = "GFX_tiles_dark_area_cut_8" } # hidden
+        buttonType = { name = "confirm_button" quadTextureSprite = "GFX_standard_button_142_34_button" } # hidden
+        containerWindowType = {
+            name = "portrait_background"
+            position = { x = -1117 y = -1145 }
+            size = { width = 0 height = 0 } 	# hide portrait window
+            iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
+            iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
+        }
+
+        iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
+        instantTextBoxType = { name = "empire_name" font = "malgun_goth_24" } # hidden
+        instantTextBoxType = { name = "empire_government_type" font = "cg_16b" } # hidden
+        instantTextBoxType = { name = "empire_personality_type" font = "cg_16b" } # hidden
+        overlappingElementsBoxType = { name = "empire_ethics_icons" position = { x = -1145 y = -11138 } } # hidden
+        iconType = { name = "empire_flag" spriteType = "GFX_empire_flag_128" position = { x = -1125 y = -11235 } } # hidden
+        containerWindowType = {
+            name = "leader_details"
+            position = { x = -1125 y = -1175 }
+            containerWindowType = { name = "empire_traits_box" } # hidden
+            instantTextBoxType = { name = "empire_traits_label" font = "cg_16b" } # hidden
+            overlappingElementsBoxType = { name = "leader_traits" } # hidden
+            instantTextBoxType = { name = "leader_name" font = "cg_16b" } # hidden
+            instantTextBoxType = { name = "leader_species" font = "cg_16b" } # hidden
+        }
+        containerWindowType = {
+            name = "opinion_window"
+            position = { x = -1127 y = -11110 }
+            size = { width = 94 height = 30 }
+            iconType = { name = "their_opinion_icon" spriteType = "GFX_diplomacy_opinion" } # hidden
+            instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
+        }
+
+        ### EVENT DIPLO ###
+        containerWindowType = {
+            name = "EVENT_DIPLO"
+            position = { x = 2 y = 50 }
+            #size = { width = 563 height = 220 }
+            moveable = no
+
+            instantTextBoxType = {
+                name = "action_title"
+                font = "malgun_goth_24"
+                position = { x = 20 y = 0 }
+                maxWidth = 200
+                alwaysTransparent = yes
+            }
+            instantTextBoxType = {
+                name = "action_desc"
+                font = "malgun_goth_24"
+                position = { x = 490 y = 0 }
+                maxWidth = 500
+                maxHeight = 180
+                orientation = "UPPER_LEFT"
+                format = center
+                alwaysTransparent = yes
+                text_color_code = "H"
+            }
+            listboxType = { name = "option_list" position = { x = -11500 y = -1130 } } # hidden option list
+        }
+
+        containerWindowType = {
+            name = "portrait"
+            position = { x = 10000000 y = 00000000 }
+            size = { width = 0 height = 0 } # hide portrait window
+            iconType = {
+                name = "portrait"
+                spriteType = "GFX_portrait_gamesetup_mask"  position = { x = -11170 y = -11450 }
+            } # hidden
+            iconType = { name = "black_frame" spriteType = "GFX_diplomacy_portrait_shadow_frame" position = { x = -11170 y = -11450 } } # hidden
+            iconType = { name = "stripes_1" spriteType = "GFX_diplomacy_stripes_2"  position = { x = -11170 y = -11450 }} # hidden
+            iconType = { name = "city_frame" spriteType = "GFX_diplomacy_portrait_frame" position = { x = -11170 y = -11450 } } # hidden
+        }
+
+        instantTextBoxType = {
+            name = "alien_message"
+            font = "cg_16b"
+            position = { x = 1000090 y = 47000000 }
+            maxWidth = 465
+            maxHeight = 220
+            format = left
+            scrollbartype = "standardtext_slider"
+        }
+    }
+}
+
+

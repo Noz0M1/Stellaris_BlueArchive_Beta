@@ -1,0 +1,101 @@
+entity = {
+	name = "brute_weapon_turret_base_entity"
+	pdxmesh = "BT7274_Part1_mesh"
+	attach = {
+		root = "BT7274_Part2_entity"
+		root = "Brute_Original_Weapon_entity"
+	}
+	scale = 2.0
+}
+entity = {
+	name = "ion_weapon_turret_base_entity"
+	pdxmesh = "Iron_Part1_mesh"
+	attach = {
+		root = "Iron_Part2_entity"
+		root = "Iron_Part3_entity"
+		root = "Ion_Original_Weapon_entity"
+	}
+	scale = 2.0
+}
+entity = {
+	name = "legion_weapon_turret_base_entity"
+	pdxmesh = "Legion_Part1_mesh"
+	attach = {
+		root = "Legion_Part2_entity"
+		root = "Legion_Original_Weapon_entity"
+	}
+	scale = 2.0
+}
+entity = {
+	name = "monarch_weapon_turret_base_entity"
+	pdxmesh = "Monarch_Part1_mesh"
+	attach = {
+		root = "Monarch_Part2_entity"
+		root = "Monarch_Part3_entity"
+		root = "Monarch_Original_Weapon_entity"
+	}
+	scale = 2.0
+}
+entity = {
+	name = "northstar_weapon_turret_base_entity"
+	pdxmesh = "Northstar_Part1_mesh"
+	attach = {
+		root = "Northstar_Part2_entity"
+		root = "Northstar_Original_Weapon_entity"
+	}
+	scale = 2.0
+}
+entity = {
+	name = "scorch_weapon_turret_base_entity"
+	pdxmesh = "Scorch_Part1_mesh"
+	attach = {
+		root = "Scorch_Part2_entity"
+		root = "Scorch_Original_Weapon_entity"
+	}
+	scale = 2.0
+}
+entity = {
+	name = "tone_weapon_turret_base_entity"
+	pdxmesh = "Tone_Part1_mesh"
+	attach = {
+		root = "Tone_Part2_entity"
+		root = "Tone_Part3_entity"
+		root = "Tone_Original_Weapon_entity"
+	}
+	scale = 2.0
+}
+entity = {
+	name = "ronin_weapon_turret_base_entity"
+	pdxmesh = "Ronin_Part1_mesh"
+	attach = {
+		root = "Ronin_Part2_entity"
+		root = "Ronin_Original_Weapon_entity"
+	}
+	scale = 2.0
+}
+entity = {
+	name = "arc_weapon_turret_base_entity"
+	pdxmesh = "Ronin_Part1_mesh"
+	attach = {
+		root = "Ronin_Part2_entity"
+		root = "Arc_Original_Weapon_entity"
+	}
+	scale = 2.0
+}
+entity = {
+	name = "Charge_Rifle_turret_base_entity"
+	pdxmesh = "turret_base_M_SLOT_mesh"
+	attach = {
+		root = "Charge_Rifle_entity"
+	}
+	scale = 2.0
+}
+
+entity = {
+	name = "ttf_spitfire_turret_entity"
+	pdxmesh = "PSrifle_turret_mesh"
+	attach = {
+		root = "ttf_spitfire_entity"
+	}
+	scale = 2.0
+}

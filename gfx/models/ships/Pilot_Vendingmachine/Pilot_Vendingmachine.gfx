@@ -1,0 +1,39 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Pilot_Vendingmachine_mesh"
+		file = "gfx/models/ships/Pilot_Vendingmachine/Pilot_Vendingmachine.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "Pilot_VendingmachineShape"
+			index = 0
+			texture_diffuse = "Pilot_Vendingmachine_Alpha.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "Pilot_VendingmachineShape"
+			index = 1
+			texture_diffuse = "Pilot_Vendingmachine.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "Pilot_Vendingmachine_Can_mesh"
+		file = "gfx/models/ships/Pilot_Vendingmachine/Pilot_Vendingmachine_Can.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "Pilot_Vendingmachine_CanShape"
+			index = 0
+			texture_diffuse = "Pilot_Vendingmachine.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

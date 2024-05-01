@@ -1,0 +1,72 @@
+modifier_BA_testing = {
+	country_base_influence_produces_add = 100
+	species_leader_exp_gain = 1000
+	all_technology_research_speed = 1000
+	pop_growth_speed = 2
+	megastructure_build_speed_mult = 1000
+	ship_speed_mult = 10
+	planet_building_build_speed_mult = 100
+	starbase_shipyard_build_speed_mult = 100
+	ship_weapon_range_mult = 2
+	ship_engagement_range_mult = 10
+	ship_fire_rate_mult = 10
+	army_damage_mult = 10
+	army_health = 10
+	planet_army_build_speed_mult = 100
+	starbase_module_build_speed_mult = 100
+	starbase_upgrade_speed_mult = 100
+	starbase_building_build_speed_mult = 100
+}
+
+sr_pyroxenes_deficit = {
+}
+
+sr_keystone_deficit = {
+}
+
+#清扫者轰击
+modifier_BA_colony_sweeped = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"
+	icon_frame = 1
+	empire_size_pops_mult = 12
+	planet_building_build_speed_mult = 1
+	planet_decision_enact_speed_mult = 1
+}
+
+#爱丽丝挖矿
+modifier_BA_Aris_in_matrix = {
+	country_influence_produces_mult = 1
+	country_energy_produces_mult = -1000
+	country_minerals_produces_mult = -1000
+	country_food_produces_mult = -1000
+	country_alloys_produces_mult = -1000
+	country_consumer_goods_produces_mult = -1000
+	country_volatile_motes_produces_mult = -1000
+	country_exotic_gases_produces_mult = -1000
+	country_rare_crystals_produces_mult = -1000
+	country_base_unity_produces_add = -11999000
+	country_minor_artifacts_produces_mult = -1000
+}
+
+#天使24售卖修正
+modifier_BA_survey_angle24 = {
+	science_ship_survey_speed = 10
+	country_base_sr_pyroxenes_produces_add = -5
+}
+
+modifier_BA_survey = {
+	science_ship_survey_speed = 0.1
+}
+
+modifier_BA_amenities = {
+	pop_job_amenities_mult = 0.1
+}
+
+#飞升
+modifier_Blue_world_6 = {
+	megastructure_build_speed_mult = 0.5
+	starbase_shipyard_build_speed_mult = 0.5
+	starbase_upgrade_speed_mult = 1
+	starbase_module_build_speed_mult = 1
+	starbase_building_build_speed_mult = 1
+}

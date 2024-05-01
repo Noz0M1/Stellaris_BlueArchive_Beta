@@ -1,0 +1,78 @@
+objectTypes = {
+	pdxmesh = {
+		name = "OTTO_HIMARI_mesh"
+		file = "gfx\models\ships\GF\OTTO_HIMARI.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "CH0159_BodyShape"
+			index = 0
+			texture_diffuse = "Otto_Body.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0159_BodyShape"
+			index = 1
+			texture_diffuse = "Otto_Face.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0159_BodyShape"
+			index = 2
+			texture_diffuse = "Otto_EyeMouth.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0159_BodyShape"
+			index = 3
+			texture_diffuse = "Otto_Hair.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0159_HaloShape"
+			index = 0
+			texture_diffuse = "CH0159_Halo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+	pdxmesh = {
+		name = "Otto_Charge_Rifle_R_mesh"
+		file = "gfx\models\ships\GF\Otto_Charge_Rifle_R.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Charge_Rifle_RShape"
+			index = 0
+			texture_diffuse = "Charge_Rifle_diffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "Otto_Charge_Rifle_L_mesh"
+		file = "gfx\models\ships\GF\Otto_Charge_Rifle_L.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Charge_Rifle_LShape"
+			index = 0
+			texture_diffuse = "Charge_Rifle_diffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

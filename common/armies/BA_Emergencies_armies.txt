@@ -1,0 +1,41 @@
+BA_Rabbit_sqart_story = {
+	defensive = yes
+	damage = 0.01
+	health = 10
+	has_morale = no
+	morale_damage = 10
+	collateral_damage = 10
+	time = 5
+	has_species = no
+	icon = GFX_army_type_machine_defensive
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 1
+		}
+	}
+	potential = {
+		always = no
+	}
+}
+
+BA_Cake_chan_story = {
+	defensive = yes
+	damage = 0.01
+	health = 10
+	has_morale = no
+	morale_damage = 10
+	collateral_damage = 10
+	time = 5
+	has_species = no
+	icon = GFX_army_type_machine_defensive
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 1
+		}
+	}
+	potential = {
+		always = no
+	}
+}

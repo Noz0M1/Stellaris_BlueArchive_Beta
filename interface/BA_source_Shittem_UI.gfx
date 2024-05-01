@@ -1,0 +1,375 @@
+spriteTypes = {
+	portraitType = {
+		#这个应该没用了
+		name = "GFX_portrait_Shittem_mask"
+		masking_texture = "gfx/interface/ui/BA_GUI_BLANK_ALPHA.dds"
+		type = room
+		character = yes
+	}
+	portraitType = {
+		name = "GFX_portrait_Arona_mask"
+		masking_texture = "gfx/interface/ui/BA_ARONA_BLANK_ALPHA.dds"
+		type = room
+		character = yes
+	}
+	spriteType = {
+		#抓紧让它用不上
+		name = "GFX_BA_UI_Exit"
+		textureFile = "gfx/interface/ui/BA_ui_exit.dds"
+	}
+	spriteType = {
+		#用不上了
+		name = "GFX_BA_UI_Option"
+		textureFile = "gfx/interface/ui/BA_ui_option.dds"
+	}
+	spriteType = {
+		#背景
+		name = "GFX_BA_UI_Background"
+		textureFile = "gfx/interface/ui/BA_Shittem_background.dds"
+	}
+	spriteType = {
+		#立绘
+		name = "GFX_BA_UI_Portrait"
+		textureFile = "gfx/interface/ui/BA_ui_arona_potrait.dds"
+	}
+	spriteType = {
+		#对话框
+		name = "GFX_BA_UI_Message_box"
+		textureFile = "gfx/interface/ui/BA_messege_box.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	#按钮
+	spriteType = {
+		name = "GFX_BA_communication_button"
+		textureFile = "gfx/interface/ui/BA_ui_button_communication.dds"
+	}
+	spriteType = {
+		name = "GFX_BA_logistics_button"
+		textureFile = "gfx/interface/ui/BA_ui_button_logistics.dds"
+	}
+	spriteType = {
+		name = "GFX_BA_angel24_button"
+		textureFile = "gfx/interface/ui/BA_ui_button_angel24.dds"
+	}
+	spriteType = {
+		name = "GFX_BA_underconstruction_button"
+		textureFile = "gfx/interface/ui/BA_ui_button_underconstruction.dds"
+	}
+	spriteType = {
+		name = "GFX_BA_entrust_button"
+		textureFile = "gfx/interface/ui/BA_ui_button_entrust.dds"
+	}
+	#logo
+	spriteType = {
+		name = "GFX_BA_logo"
+		textureFile = "gfx/interface/ui/BA_ui_logo.dds"
+	}
+	#验证界面
+	spriteType = {
+		name = "GFX_BA_Arona_1"
+		textureFile = "gfx/interface/ui/BA_ui_Arona_1.dds"
+	}
+	spriteType = {
+		name = "GFX_BA_Arona_2"
+		textureFile = "gfx/interface/ui/BA_ui_Arona_2.dds"
+	}
+	spriteType = {
+		name = "GFX_BA_Arona_3"
+		textureFile = "gfx/interface/ui/BA_ui_Arona_3.dds"
+	}
+	spriteType = {
+		name = "GFX_BA_Arona_Yubisaki"
+		textureFile = "gfx/interface/ui/BA_Arona_YUBISAKI_square.dds"
+	}
+}
+
+spriteTypes = {
+	### 主界面
+	#背景
+	spriteType = {
+		name = BA_UI_Main_background_01
+		textureFile = gfx/Shittem_UI/Main/background_01.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_background_02
+		textureFile = gfx/Shittem_UI/Main/background_02.dds
+	}
+	#边框
+	spriteType = {
+		name = BA_UI_Main_frame
+		textureFile = gfx/Shittem_UI/Main/frame.dds
+	}
+	#关闭按钮
+	spriteType = {
+		name = BA_UI_Main_button_exit
+		textureFile = gfx/Shittem_UI/Main/button_exit.dds
+	}
+	#主功能
+	spriteType = {
+		name = BA_UI_Main_button_Angel24
+		textureFile = gfx/Shittem_UI/Main/button_Angel24.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_button_Civic
+		textureFile = gfx/Shittem_UI/Main/button_Civic.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_button_Club
+		textureFile = gfx/Shittem_UI/Main/button_Club.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_button_Commission
+		textureFile = gfx/Shittem_UI/Main/button_Commission.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_button_Leader
+		textureFile = gfx/Shittem_UI/Main/button_Leader.dds
+	}
+	#文本框背景
+	spriteType = {
+		name = BA_UI_Main_textbox
+		textureFile = gfx/Shittem_UI/Main/textbox_gray.dds
+	}
+	#彩蛋按钮
+}
+
+### 立绘
+spriteTypes = {
+	#主界面
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona00
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona00.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona01
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona01.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona02
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona02.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona03
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona03.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona04
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona04.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona05
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona05.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona06
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona06.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona07
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona07.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona08
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona08.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona09
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona09.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona10
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona10.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona11
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona11.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona12
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona12.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona13
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona13.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona14
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona14.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona15
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona15.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona16
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona16.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona17
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona17.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona18
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona18.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona19
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona19.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona20
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona20.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona21
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona21.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona22
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona22.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona23
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona23.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona24
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona24.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona25
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona25.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona26
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona26.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona27
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona27.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona28
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona28.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona29
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona29.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona30
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona30.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona31
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona31.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona32
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona32.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Arona33
+		textureFile = gfx/Shittem_UI/Main/portrait/Arona33.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana00
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana00.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana01
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana01.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana02
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana02.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana03
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana03.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana04
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana04.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana05
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana05.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana06
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana06.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana07
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana07.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana08
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana08.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana09
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana09.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana10
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana10.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana11
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana11.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana12
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana12.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana13
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana13.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana14
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana14.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana15
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana15.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana16
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana16.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana17
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana17.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana18
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana18.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana19
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana19.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana20
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana20.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana21
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana21.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana22
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana22.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana23
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana23.dds
+	}
+	spriteType = {
+		name = BA_UI_Main_portrait_Plana24
+		textureFile = gfx/Shittem_UI/Main/portrait/Plana24.dds
+	}
+}

@@ -1,0 +1,74 @@
+# BA_abnormal_signal = {
+# 	desc = "BA_abnormal_signal_desc"
+# 	picture = "GFX_evt_arctic"
+# 	level = 5
+#     is_triggered_only = yes
+# 	trigger = {
+# 		any_country = { 
+# 			has_authority = auth_kivotos
+# 		}
+# 	}
+# 	spawn_chance = {
+# 		modifier = {
+# 			add = 9999999999
+# 			is_planet_class = pc_arctic
+# 		}
+# 	}
+# 	on_success = BA_SC_events.1000
+# }
+# BA_anomaly_Dgate = {
+# 	desc = BA_anomaly_Dgate_desc
+# 	picture = GFX_BA_Ruined_street
+# 	level = 2
+# 	should_ai_use = no
+# 	max_once = yes
+# 	spawn_chance = {
+# 		modifier = {
+# 			add = 100
+# 			has_planet_flag = BA_D_system_base
+# 			owner = {
+# 				has_authority = auth_kivotos
+# 				has_country_flag = BA_Gematria_contacted
+# 			}
+# 		}
+# 	}
+# 	on_success = BA_Precursor.0057
+# }
+#
+#BA_whale_get_lost = {
+#	desc = "BA_whale_get_lost_desc"
+#	picture = GFX_evt_microscopic_life #你们看着改
+#	level = 3
+#
+#	spawn_chance = {
+#		modifier = {
+#			add = 5
+#			is_gas_giant = yes
+#		}
+#	}
+#
+#	max_once = yes
+#
+#	on_success = {
+#		1 = BA_anomaly_events.0001
+#	}
+##}
+#
+#BA_Pioneer_Archives = {
+#	desc = "BA_Pioneer_Archives_desc"
+#	picture = GFX_evt_microscopic_life #你们看着改
+#	level = 5
+#
+#	spawn_chance = {
+#		modifier = {
+#			add = 10
+#			is_asteroid = yes
+#		}
+#	}
+#
+#	max_once = yes
+#
+#	on_success = {
+#		1 = BA_anomaly_events.0002
+#	}
+#}

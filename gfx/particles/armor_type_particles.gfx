@@ -1,0 +1,46 @@
+objectTypes = {
+
+
+	pdxparticle = {
+		name = "armor_type_particle"
+		type = "armor_type_effect"
+		
+		scale = 0.1
+	}
+
+
+	pdxparticle = {
+		name = "armor_type_heavy_particle"
+		type = "armor_type_heavy_effect"
+		
+		scale = 0.1
+	}
+
+	pdxparticle = {
+		name = "armor_type_light_particle"
+		type = "armor_type_light_effect"
+		
+		scale = 0.1
+	}
+
+	pdxparticle = {
+		name = "armor_type_special_particle"
+		type = "armor_type_special_effect"
+		
+		scale = 0.1
+	}
+
+	pdxparticle = {
+		name = "armor_type_structure_particle"
+		type = "armor_type_structure_effect"
+		
+		scale = 0.1
+	}
+
+	pdxparticle = {
+		name = "armor_type_base_particle"
+		type = "armor_type_base_effect"
+		
+		scale = 1.0
+	}
+}

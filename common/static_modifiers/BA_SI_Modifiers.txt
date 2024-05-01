@@ -1,0 +1,146 @@
+### 阿拜多斯
+modifier_BA_SI_Abydos_A06_permanent = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	planet_max_districts_add = 6
+}
+
+modifier_BA_SI_Abydos_A06_temp = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	pop_growth_speed = 0.5
+	planet_building_build_speed_mult = 1
+}
+
+modifier_BA_SI_Abydos_B01 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	habitability_floor_add = 0.5
+	planet_building_build_speed_mult = 0.25
+}
+
+modifier_BA_SI_Abydos_B04 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	habitability_floor_add = 0.5
+	planet_building_build_speed_mult = 0.25
+	planet_stability_add = 10
+	pop_happiness = 0.1
+}
+
+modifier_BA_SI_Abydos_G03 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	planet_metallurgists_produces_mult = 2
+	planet_metallurgists_minerals_upkeep_mult = 2.5
+}
+
+modifier_BA_SI_Abydos_B_route_1 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	planet_max_districts_add = 5
+}
+
+modifier_BA_SI_Abydos_B_route_2 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	planet_max_districts_add = 5
+	pop_growth_speed = 0.2
+	pop_housing_usage_mult = -0.15
+}
+
+modifier_BA_SI_Abydos_B_route_3 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	planet_max_districts_add = 5
+	pop_growth_speed = 0.2
+	pop_housing_usage_mult = -0.15
+	planet_decision_enact_speed_mult = 0.85
+}
+
+modifier_BA_SI_Abydos_B_route_4 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	planet_max_districts_add = 5
+	pop_growth_speed = 0.2
+	pop_housing_usage_mult = -0.15
+	planet_decision_enact_speed_mult = 0.85
+	planet_jobs_produces_mult = 0.2
+}
+
+### 格黑那
+modifier_BA_SI_Gehenna_G02 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	pop_happiness = 0.4
+}
+
+modifier_BA_SI_Gehenna_A01 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	pop_growth_speed = 0.25
+	planet_pops_organics_food_upkeep_mult = 0.25
+}
+
+modifier_BA_SI_Gehenna_A02 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	starbase_shipyard_build_speed_mult = 1
+	ships_upkeep_mult = -0.35
+}
+
+modifier_BA_SI_Gehenna_A03 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	planet_stability_add = 50
+}
+
+modifier_BA_SI_Gehenna_B01 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	planet_stability_add = 15
+	planet_crime_add = -25
+	pop_happiness = -0.15
+}
+
+modifier_BA_SI_Gehenna_B03 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	planet_jobs_produces_mult = 0.15
+}
+
+modifier_BA_SI_Gehenna_C01 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	ship_weapon_damage = 0.35
+	starbase_shipyard_build_speed_mult = 0.35
+	army_attack_damage_mult = 0.35
+	planet_stability_add = -10
+	empire_size_pops_mult = 0.25
+}
+
+modifier_BA_SI_Gehenna_C02 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	planet_jobs_produces_mult = 0.3
+	empire_size_pops_mult = 0.3
+	country_base_consumer_goods_produces_add = -800
+}
+
+modifier_BA_SI_Gehenna_E01 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	planet_stability_add = 25
+	planet_crime_add = -20
+	ship_interstellar_speed_mult = 0.3
+}
+
+### 千年
+modifier_BA_SI_Millennium_G04 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	planet_jobs_unity_produces_mult = -0.05
+	planet_jobs_physics_research_produces_mult = 0.15
+	planet_jobs_society_research_produces_mult = 0.15
+	planet_jobs_engineering_research_produces_mult = 0.15
+}
+
+modifier_BA_SI_Millennium_C01 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	planet_jobs_unity_produces_mult = -0.1
+	planet_jobs_physics_research_produces_mult = 0.3
+	planet_jobs_society_research_produces_mult = 0.3
+	planet_jobs_engineering_research_produces_mult = 0.3
+}
+
+### 圣三一
+modifier_agenda_BA_SI_Trinity_A02 = {
+	planet_jobs_unity_produces_mult = 20
+	species_leader_exp_gain = 0.4
+}
+
+modifier_agenda_BA_SI_Trinity_A04 = {
+	planet_jobs_produces_mult = 0.15
+	planet_jobs_upkeep_mult = 0.15
+}

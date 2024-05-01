@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Aris_EX_Weapon_Ship_mesh"
+		file = "gfx\models\ships\boss\Aris_EX_Weapon_Ship.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "Aris_EX_Weapon_ShipShape"
+			index = 0
+			texture_diffuse = "Aris_EX_Weapon_Ship_diffuse.dds"
+			texture_normal = "dreadnought_01_normal.dds"
+			texture_specular = "dreadnought_01_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

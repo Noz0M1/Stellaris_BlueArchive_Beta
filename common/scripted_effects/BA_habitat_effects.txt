@@ -1,0 +1,395 @@
+BA_auto_habitat_center_deposit_init = {
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_exotic_gases_1
+            }
+        }
+        add_deposit = d_BA_hab_gas_1
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_exotic_gases_2
+            }
+        }
+        add_deposit = d_BA_hab_gas_2
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_exotic_gases_3
+            }
+        }
+        add_deposit = d_BA_hab_gas_3
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_exotic_gases_4
+            }
+        }
+        add_deposit = d_BA_hab_gas_4
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_exotic_gases_5
+            }
+        }
+        add_deposit = d_BA_hab_gas_5
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_rare_crystals_1
+            }
+        }
+        add_deposit = d_BA_hab_crystal_1
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_rare_crystals_2
+            }
+        }
+        add_deposit = d_BA_hab_crystal_2
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_rare_crystals_3
+            }
+        }
+        add_deposit = d_BA_hab_crystal_3
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_rare_crystals_4
+            }
+        }
+        add_deposit = d_BA_hab_crystal_4
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_rare_crystals_5
+            }
+        }
+        add_deposit = d_BA_hab_crystal_5
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_volatile_motes_1
+            }
+        }
+        add_deposit = d_BA_hab_mote_1
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_volatile_motes_2
+            }
+        }
+        add_deposit = d_BA_hab_mote_2
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_volatile_motes_3
+            }
+        }
+        add_deposit = d_BA_hab_mote_3
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_volatile_motes_4
+            }
+        }
+        add_deposit = d_BA_hab_mote_4
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_volatile_motes_5
+            }
+        }
+        add_deposit = d_BA_hab_mote_5
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_zro_deposit_1
+            }
+        }
+        add_deposit = d_BA_hab_zro_1
+        set_planet_flag = research_habitat
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_zro_deposit_2
+            }
+        }
+        add_deposit = d_BA_hab_zro_2
+        set_planet_flag = research_habitat
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_zro_deposit_3
+            }
+        }
+        add_deposit = d_BA_hab_zro_3
+        set_planet_flag = research_habitat
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_dark_matter_deposit_1
+            }
+        }
+        add_deposit = d_BA_hab_dark_matter_1
+        set_planet_flag = research_habitat
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_dark_matter_deposit_2
+            }
+        }
+        add_deposit = d_BA_hab_dark_matter_2
+        set_planet_flag = research_habitat
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_dark_matter_deposit_3
+            }
+        }
+        add_deposit = d_BA_hab_dark_matter_3
+        set_planet_flag = research_habitat
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_living_metal_deposit
+            }
+        }
+        add_deposit = d_BA_hab_living_metal_1
+        set_planet_flag = research_habitat
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_alloys_1
+            }
+        }
+        add_deposit = d_BA_hab_alloy_1
+        set_planet_flag = mining_habitat
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_alloys_2
+            }
+        }
+        add_deposit = d_BA_hab_alloy_2
+        set_planet_flag = mining_habitat
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_alloys_3
+            }
+        }
+        add_deposit = d_BA_hab_alloy_3
+        set_planet_flag = mining_habitat
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_alloys_4
+            }
+        }
+        add_deposit = d_BA_hab_alloy_4
+        set_planet_flag = mining_habitat
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_alloys_5
+            }
+        }
+        add_deposit = d_BA_hab_alloy_5
+        set_planet_flag = mining_habitat
+    }
+    if = {
+        limit = {
+            fromfrom.planet = {
+                has_deposit = d_nanites_deposit
+            }
+        }
+        add_deposit = d_BA_hab_nanites_1
+        set_planet_flag = research_habitat
+    }
+}
+
+on_BA_auto_habitat_complete_effect = {
+    from.from.planet = {
+        set_planet_flag = BA_orbital_$TYPE$
+    }
+    fromfrom.solar_system = {
+        random_system_planet = {
+            limit = {
+                has_planet_flag = habitat
+            }
+            save_event_target_as = target_habitat
+        }
+    }
+    event_target:target_planet = {
+        set_planet_flag = has_megastructure
+        #摧毁采矿站或研究站，腾地方
+        if = {
+            limit = { has_orbital_station = yes }
+            orbital_station = {
+                dismantle = yes
+            }
+        }
+        #创建一个新的空间站
+        create_fleet = {
+            effect = {
+                set_owner = FROM
+                create_ship = {
+                    random_existing_design = ship_BA_auto_habitat_$TYPE$
+                    effect = {
+                        set_disable_at_health = 0.05
+                        set_name = BA_orbital_generic
+                        #set_name = {
+                        #    key = TARGET_BA_ORBITAL_NAME
+                        #    variable_string = "\\[FROM.from.planet.GetName]"
+                        #}
+                    }
+                }
+                save_event_target_as = target_orbital
+                fleet = {
+                    set_location = {
+                        target = event_target:target_planet
+                    }
+                }
+            }
+        }
+        #重命名
+        event_target:target_orbital = {
+            set_name = BA_orbital_generic
+            #set_name = {
+            #    key = TARGET_BA_ORBITAL_NAME
+            #    variable_string = "\\[FROM.from.planet.GetName]"
+            #}
+        }
+        set_habitat_planetary_features_effect = yes
+        #可建造研究站，视为科研模块
+        if = {
+            limit = {
+                OR = {
+                    has_deposit_for = shipclass_research_station
+                }
+            }
+            event_target:target_orbital = {
+                set_fleet_flag = BA_research_module
+            }
+        }
+        #产电或为气巨，视为发电模块
+        else_if = {
+            limit = {
+                OR = {
+                    is_planet_class = pc_gas_giant
+                    has_deposit = d_energy_1
+                    has_deposit = d_energy_2
+                    has_deposit = d_energy_3
+                    has_deposit = d_energy_4
+                    has_deposit = d_energy_5
+                    has_deposit = d_energy_6
+                    has_deposit = d_energy_7
+                    has_deposit = d_energy_8
+                    has_deposit = d_energy_9
+                    has_deposit = d_energy_10
+                }
+            }
+            event_target:target_orbital = {
+                set_fleet_flag = BA_energy_module
+            }
+
+        }
+        #产矿，视为采矿模块
+        else_if = {
+            limit = {
+                event_target:target_planet = {
+                    has_orbital_mining_deposit = yes
+                }
+            }
+            event_target:target_orbital = {
+                set_fleet_flag = BA_mineral_module
+            }
+        }
+        #什么都无，在小行星卫星上，视为小模块
+        else_if = {
+            limit = {
+                OR = {
+                    is_moon = yes
+                    is_asteroid = yes
+                }
+            }
+            event_target:target_orbital = {
+                set_fleet_flag = BA_minor_module
+            }
+        }
+        #其他，视为标准模块
+        else = {
+            event_target:target_orbital = {
+                set_fleet_flag = BA_normal_module
+            }
+        }
+    }
+    remove_megastructure = fromfrom
+}
+
+##满足以下条件之一，产电 而不是矿
+#if = {
+#    limit = {
+#        fromfrom.planet = {
+#            OR = {
+#                #气态巨行星
+#                is_planet_class = pc_gas_giant
+#                #野电
+#                has_deposit = d_energy_1
+#                has_deposit = d_energy_2
+#                has_deposit = d_energy_3
+#                has_deposit = d_energy_4
+#                has_deposit = d_energy_5
+#                has_deposit = d_energy_6
+#                has_deposit = d_energy_7
+#                has_deposit = d_energy_8
+#                has_deposit = d_energy_9
+#                has_deposit = d_energy_10
+#                #野贸易
+#                has_deposit = d_trade_value_1
+#                has_deposit = d_trade_value_2
+#                has_deposit = d_trade_value_3
+#                has_deposit = d_trade_value_4
+#                has_deposit = d_trade_value_5
+#                has_deposit = d_trade_value_6
+#                has_deposit = d_trade_value_7
+#                has_deposit = d_trade_value_8
+#                has_deposit = d_trade_value_9
+#                has_deposit = d_trade_value_10
+#            }
+#        }
+#    }
+#    set_planet_flag = energy_habitat
+#}
+##有稀有资源矿脉的，可以开采
+#BA_auto_habitat_center_deposit_init = yes

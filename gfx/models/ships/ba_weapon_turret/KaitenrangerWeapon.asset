@@ -1,0 +1,143 @@
+entity = {
+	name = "Kaitenranger_Black_HG_Weapon_entity"
+	pdxmesh = "Kaitenranger_Black_HG_Weapon_mesh"
+}
+entity = {
+	name = "Kaitenranger_Green_HMG_Weapon_entity"
+	pdxmesh = "Kaitenranger_Green_HMG_Weapon_mesh"
+}
+entity = {
+	name = "Kaitenranger_Pink_RL_Weapon_entity"
+	pdxmesh = "Kaitenranger_Pink_RL_Weapon_mesh"
+}
+entity = {
+	name = "Kaitenranger_Pink_RPG_entity"
+	pdxmesh = "Kaitenranger_Pink_RPG_mesh"
+	
+	default_state = idle
+	state = { name = "idle" animation = "idle"
+		start_event = { time = 0 node = exhaust particle = "medium_missile_idle_particle" keep_particle = yes }
+		start_event = { time = 0 node = exhaust particle = "missile_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss"
+		time_offset = { 0 1.4 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "missile_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss2"
+		time_offset = { 0 1 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "missile_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss_reversed"
+		time_offset = { 0 1.4 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "missile_idle_flame_particle" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+		chance = 1
+		animation = "miss2_reversed"
+		time_offset = { 0 1 }
+		animation_blend_time = 0.5
+		#start_event = { time = 0 node = exhaust particle = "small_missile_idle_particle" keep_particle = yes }
+		start_event = { trigger_once = yes time = 0 node = exhaust particle = "missile_idle_flame_particle" keep_particle = yes }
+	}
+
+}
+entity = {
+	name = "Kaitenranger_Red_AR_Weapon_entity"
+	pdxmesh = "Kaitenranger_Red_AR_Weapon_mesh"
+}
+entity = {
+	name = "Kaitenranger_Yellow_SR_Weapon_entity"
+	pdxmesh = "Kaitenranger_Yellow_SR_Weapon_mesh"
+}
+
+entity = {
+	name = "Terror_Barbara_Yustina_MG_Weapon_01_entity"
+	pdxmesh = "Terror_Barbara_Yustina_MG_Weapon_01_mesh"
+}
+entity = {
+	name = "Terror_Barbara_Yustina_MG_Weapon_02_entity"
+	pdxmesh = "Terror_Barbara_Yustina_MG_Weapon_02_mesh"
+}
+
+
+entity = {
+	name = "Terror_Barbara_Yustina_MG_Weapon_01_turret_base_entity"
+	pdxmesh = "turret_base_M_SLOT_mesh"
+	attach = {
+		gun_locator = "Terror_Barbara_Yustina_MG_Weapon_01_entity"
+	}
+	scale = 1.2
+}
+
+entity = {
+	name = "Terror_Barbara_Yustina_MG_Weapon_02_turret_base_entity"
+	pdxmesh = "turret_base_M_SLOT_mesh"
+	attach = {
+		gun_locator = "Terror_Barbara_Yustina_MG_Weapon_02_entity"
+	}
+	scale = 1.2
+}
+
+
+
+entity = {
+	name = "Kaitenranger_Black_HG_Weapon_turret_base_entity"
+	pdxmesh = "turret_base_S_SLOT_mesh"
+	attach = {
+		gun_locator = "Kaitenranger_Black_HG_Weapon_entity"
+	}
+	scale = 1.0
+}
+entity = {
+	name = "Kaitenranger_Green_HMG_Weapon_turret_base_entity"
+	pdxmesh = "turret_base_M_SLOT_mesh"
+	attach = {
+		gun_locator = "Kaitenranger_Green_HMG_Weapon_entity"
+	}
+	scale = 1.2
+}
+entity = {
+	name = "Kaitenranger_Pink_RL_Weapon_turret_base_entity"
+	pdxmesh = "turret_base_G_SLOT_mesh"
+	attach = {
+		gun_locator = "Kaitenranger_Pink_RL_Weapon_entity"
+	}
+	scale = 1.2
+}
+entity = {
+	name = "Kaitenranger_Red_AR_Weapon_turret_base_entity"
+	pdxmesh = "turret_base_M_SLOT_mesh"
+	attach = {
+		gun_locator = "Kaitenranger_Red_AR_Weapon_entity"
+	}
+	scale = 1.2
+}
+entity = {
+	name = "Kaitenranger_Yellow_SR_Weapon_turret_base_entity"
+	pdxmesh = "turret_base_L_SLOT_mesh"
+	attach = {
+		gun_locator = "Kaitenranger_Yellow_SR_Weapon_entity"
+	}
+	scale = 1.2
+}
+

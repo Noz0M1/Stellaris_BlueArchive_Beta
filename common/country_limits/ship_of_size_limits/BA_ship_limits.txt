@@ -1,0 +1,12 @@
+BA_hub_ships_limit = {
+	ship_types = {
+		BA_hub_ship
+	}
+	base = 16	# 1 * titan's size_multiplier
+	max = 1600	# 100 * base
+	naval_cap_fraction = 0.2	#80
+	show = {
+		is_scope_valid = yes
+		has_technology = tech_BA_spaceship_automation_4
+	}
+}

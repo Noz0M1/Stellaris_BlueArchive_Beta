@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Beatrice_Gematria_mesh"
+		file = "gfx\models\ships\gematria\Beatrice_Gematria.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Beatrice_Gematria_BodyShape"
+			index = 0
+			texture_diffuse = "Beatrice_Gematria_Body.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

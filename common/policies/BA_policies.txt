@@ -1,0 +1,103 @@
+#阿里乌斯采矿政策
+BA_Arius_mining_policy = {
+	potential = {
+		#阿里乌斯起源
+		has_origin = origin_Kivotos_Kyrie
+		#持有废墟采矿科技
+		has_technology = tech_BA_ruins_mining
+		#母星是废墟星球
+		capital_scope = {
+			is_planet_class = pc_BA_ruined_planet
+		}
+	}
+	allow = {
+		always = yes
+	}
+	option = {
+		name = "For_consumer_goods"
+		policy_flags = {
+			BA_Arius_mining_consumer_goods
+		}
+		AI_weight = {
+			weight = 100
+		}
+	}
+	option = {
+		name = "For_rare_resource"
+		policy_flags = {
+			BA_Arius_mining_rare_resource
+		}
+		AI_weight = {
+			weight = 0
+		}
+	}
+}
+
+#阿里乌斯的面纱
+BA_Arius_guise_policy = {
+	potential = {
+		#阿里乌斯起源
+		has_country_flag = BA_Omnia_Vanitas_under_guise
+	}
+	allow = {
+		custom_tooltip = {
+			text = BA_Arius_guise_policy_tooltip
+			always = no
+		}
+	}
+	#面纱之下
+	option = {
+		name = "Arius_Under_guise"
+		policy_flags = {
+			BA_Arius_Under_guise
+		}
+	}
+	#揭开
+	option = {
+		name = "Arius_Guise_lifted"
+		policy_flags = {
+			BA_Arius_Guise_lifted
+		}
+		potential = {
+			has_country_flag = BA_Bellum_Ariusum_allowed
+		}
+		on_enabled = {
+			hidden_effect = {
+				#献祭非主体物种
+				every_galaxy_species = {
+					limit = {
+						NOT = {
+							is_same_species = root
+						}
+					}
+					set_citizenship_type = {
+						type = citizenship_purge						#暂时设为驱逐
+						country = root
+					}
+				}
+			}
+		}
+	}
+	#接纳
+	option = {
+		name = "Arius_Guise_aborted"
+		policy_flags = {
+			BA_Arius_Guise_aborted
+		}
+		potential = {
+			#has_country_flag = BA_Arius_Guise_aborted_allowed
+			always = no
+		}
+		on_enabled = {
+			hidden_effect = {
+				#赋予完整公民权
+				every_owned_species = {
+					set_citizenship_type = {
+						type = citizenship_full
+						country = root
+					}
+				}
+			}
+		}
+	}
+}

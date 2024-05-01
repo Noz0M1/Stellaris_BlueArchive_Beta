@@ -1,0 +1,1166 @@
+#01
+BA_D_system_KETHER = {
+	name = "BA_KETHER_name"
+	class = sc_a
+	flags = {
+		BA_KETHER_SYS_flag
+		BA_FE_SYS
+	}
+	planet = {
+		name = "KETHER.1.name"
+		class = pc_g_star
+		flags = {
+			BA_KETHER_P_flag
+		}
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+	change_orbit = 45
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "KETHER_A"
+		orbit_angle = 30
+		orbit_distance = 0
+		size = 10
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "KETHER01"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "KETHER02"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "KETHER_B"
+		orbit_angle = 30
+		orbit_distance = 0
+		size = 10
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "KETHER03"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "KETHER04"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "KETHER_C"
+		orbit_angle = 30
+		orbit_distance = 0
+		size = 10
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "KETHER05"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "KETHER06"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "KETHER_D"
+		orbit_angle = 30
+		orbit_distance = 0
+		size = 10
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "KETHER07"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "KETHER08"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	init_effect = {
+		#星门
+		spawn_megastructure = {
+			type = Dgate_base
+			orbit_angle = 225
+			orbit_distance = 150
+		}
+		#恒星基地
+		BA_fe_system_initial = yes
+	}
+}
+
+#02
+BA_D_system_CHHOKMAH = {
+	name = "BA_CHHOKMAH_name"
+	class = sc_neutron_star
+	flags = {
+		BA_CHHOKMAH_SYS_flag
+		BA_FE_SYS
+	}
+	asteroid_belt = {
+		type = crystal_asteroid_belt
+		radius = 80
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 150
+	}
+	planet = {
+		name = "CHHOKMAH.1.name"
+		class = pc_b_star
+		flags = {
+			BA_CHHOKMAH_P_flag
+		}
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+	change_orbit = 35
+	planet = {
+		name = "CHHOKMAH_BOOK"
+		class = pc_molten
+		orbit_angle = 65
+		size = 25
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			while = {
+				count = 50
+				add_deposit = d_society_10
+				add_deposit = d_physics_10
+				add_deposit = d_engineering_10
+			}
+		}
+	}
+	change_orbit = 10
+	planet = {
+		name = "CHHOKMAH_COVER"
+		class = pc_shattered
+		orbit_angle = 65
+		size = 30
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+	change_orbit = 70
+	planet = {
+		name = "CHHOKMAH_SCOPE"
+		class = pc_gaia
+		orbit_angle = 245
+		size = 20
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	init_effect = {
+		BA_fe_system_initial = yes
+	}
+}
+
+#03
+BA_D_system_BINAH = {
+	name = "BA_BINAH_name"
+	class = sc_g
+	flags = {
+		BA_BINAH_SYS_flag
+		BA_FE_SYS
+	}
+	asteroid_belt = {
+		type = debris_asteroid_belt
+		radius = 60
+	}
+	planet = {
+		name = "BINAH.1.name"
+		class = pc_b_star
+		flags = {
+			BA_BINAH_P_flag
+		}
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+	change_orbit = 25
+	planet = {
+		name = "BINAH_COMPILER"
+		class = pc_molten
+		orbit_angle = 150
+		size = 15
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			while = {
+				count = 4
+				add_deposit = d_alloys_25
+			}
+		}
+	}
+	change_orbit = 20
+	planet = {
+		name = "BINAH_DRILL"
+		class = pc_desert
+		orbit_angle = 220
+		size = 10
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_modifier = {
+				modifier = modifier_BA_Precursor_Holy_site
+			}
+			set_planet_flag = BA_Precursor_Holy_site
+			while = {
+				count = 30
+				create_ambient_object = {
+					type = "small_debris_object"
+					entity_offset_height = {
+						min = 0
+						max = -25
+					}
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 15
+						angle = random
+					}
+				}
+			}
+		}
+	}
+	change_orbit = 40
+	planet = {
+		name = "BINAH_SHADER"
+		class = pc_gas_giant
+		orbit_angle = 20
+		size = 50
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+		moon = {
+			name = "BINAH_UNDERSTANDING"
+			class = pc_gaia
+			orbit_angle = 150
+			orbit_distance = 30
+			size = 18
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+	}
+	init_effect = {
+		BA_fe_system_initial = yes
+	}
+}
+
+#04
+BA_D_system_CHESED = {
+	name = "BA_CHESED_name"
+	class = sc_m
+	flags = {
+		BA_CHESED_SYS_flag
+		BA_FE_SYS
+	}
+	asteroid_belt = {
+		type = debris_asteroid_belt
+		radius = 50
+	}
+	asteroid_belt = {
+		type = debris_asteroid_belt
+		radius = 75
+	}
+	asteroid_belt = {
+		type = debris_asteroid_belt
+		radius = 100
+	}
+	asteroid_belt = {
+		type = debris_asteroid_belt
+		radius = 150
+	}
+	planet = {
+		name = "CHESED.1.name"
+		class = pc_b_star
+		flags = {
+			BA_CHESED_P_flag
+		}
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+	change_orbit = 105
+	planet = {
+		name = "CHESED_GRACE"
+		class = pc_gaia
+		orbit_angle = 140
+		size = 20
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	init_effect = {
+		BA_fe_system_initial = yes
+	}
+}
+
+#05
+BA_D_system_GEBURAH = {
+	name = "BA_GEBURAH_name"
+	class = sc_m_giant
+	flags = {
+		BA_GEBURAH_SYS_flag
+		BA_FE_SYS
+	}
+	planet = {
+		name = "GEBURAH.1.name"
+		class = pc_b_star
+		flags = {
+			BA_GEBURAH_P_flag
+		}
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+	change_orbit = 45
+	planet = {
+		name = "GEBURAH_GUN"
+		class = pc_molten
+		orbit_angle = 60
+		orbit_distance = 0
+		size = 12
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_exotic_gases_5
+			add_deposit = d_exotic_gases_5
+			add_deposit = d_exotic_gases_5
+		}
+	}
+	planet = {
+		name = "GEBURAH_GUN"
+		class = pc_molten
+		orbit_angle = 60
+		orbit_distance = 0
+		size = 12
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_volatile_motes_5
+			add_deposit = d_volatile_motes_5
+			add_deposit = d_volatile_motes_5
+		}
+	}
+	planet = {
+		name = "GEBURAH_GUN"
+		class = pc_molten
+		orbit_angle = 60
+		orbit_distance = 0
+		size = 12
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_rare_crystals_5
+			add_deposit = d_rare_crystals_5
+			add_deposit = d_rare_crystals_5
+		}
+	}
+	planet = {
+		name = "GEBURAH_GUN"
+		class = pc_molten
+		orbit_angle = 60
+		orbit_distance = 0
+		size = 12
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_exotic_gases_5
+			add_deposit = d_exotic_gases_5
+			add_deposit = d_exotic_gases_5
+		}
+	}
+	planet = {
+		name = "GEBURAH_GUN"
+		class = pc_molten
+		orbit_angle = 60
+		orbit_distance = 0
+		size = 12
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_volatile_motes_5
+			add_deposit = d_volatile_motes_5
+			add_deposit = d_volatile_motes_5
+		}
+	}
+	planet = {
+		name = "GEBURAH_GUN"
+		class = pc_molten
+		orbit_angle = 60
+		orbit_distance = 0
+		size = 12
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_rare_crystals_5
+			add_deposit = d_rare_crystals_5
+			add_deposit = d_rare_crystals_5
+		}
+	}
+	change_orbit = 60
+	planet = {
+		name = "GEBURAH_ALLOY"
+		class = pc_molten
+		orbit_angle = 30
+		orbit_distance = 0
+		size = 30
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_alloys_25
+			add_deposit = d_alloys_25
+			add_deposit = d_alloys_25
+			add_deposit = d_alloys_25
+		}
+	}
+	planet = {
+		name = "GEBURAH_ALLOY"
+		class = pc_molten
+		orbit_angle = 60
+		orbit_distance = 0
+		size = 30
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_alloys_25
+			add_deposit = d_alloys_25
+			add_deposit = d_alloys_25
+			add_deposit = d_alloys_25
+		}
+	}
+	planet = {
+		name = "GEBURAH_ALLOY"
+		class = pc_molten
+		orbit_angle = 60
+		orbit_distance = 0
+		size = 30
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_alloys_25
+			add_deposit = d_alloys_25
+			add_deposit = d_alloys_25
+			add_deposit = d_alloys_25
+		}
+	}
+	planet = {
+		name = "GEBURAH_ALLOY"
+		class = pc_molten
+		orbit_angle = 60
+		orbit_distance = 0
+		size = 30
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_alloys_25
+			add_deposit = d_alloys_25
+			add_deposit = d_alloys_25
+			add_deposit = d_alloys_25
+		}
+	}
+	planet = {
+		name = "GEBURAH_ALLOY"
+		class = pc_molten
+		orbit_angle = 60
+		orbit_distance = 0
+		size = 30
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_alloys_25
+			add_deposit = d_alloys_25
+			add_deposit = d_alloys_25
+			add_deposit = d_alloys_25
+		}
+	}
+	planet = {
+		name = "GEBURAH_ALLOY"
+		class = pc_molten
+		orbit_angle = 60
+		orbit_distance = 0
+		size = 30
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_alloys_25
+			add_deposit = d_alloys_25
+			add_deposit = d_alloys_25
+			add_deposit = d_alloys_25
+		}
+	}
+	change_orbit = 80
+	planet = {
+		name = "GEBURAH_APUR"
+		class = pc_gaia
+		orbit_angle = 220
+		orbit_distance = 0
+		size = 18
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	init_effect = {
+		BA_fe_system_initial = yes
+	}
+}
+
+#06
+BA_D_system_TIPHARETH = {
+	name = "BA_TIPHARETH_name"
+	class = sc_b
+	flags = {
+		BA_TIPHARETH_SYS_flag
+		BA_FE_SYS
+	}
+	planet = {
+		name = "TIPHARETH.1.name"
+		class = pc_b_star
+		flags = {
+			BA_TIPHARETH_P_flag
+		}
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+	change_orbit = 45
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "TIPHARETH_A"
+		orbit_angle = 30
+		orbit_distance = 0
+		size = 10
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "TIPHARETH01"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "TIPHARETH02"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "TIPHARETH_B"
+		orbit_angle = 30
+		orbit_distance = 0
+		size = 10
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "TIPHARETH03"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "TIPHARETH04"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "TIPHARETH_C"
+		orbit_angle = 30
+		orbit_distance = 0
+		size = 10
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "TIPHARETH05"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "TIPHARETH06"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "TIPHARETH_D"
+		orbit_angle = 30
+		orbit_distance = 0
+		size = 10
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "TIPHARETH07"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "TIPHARETH08"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	change_orbit = 80
+	planet = {
+		name = "TIPHARETH_DCAP"
+		class = pc_gaia
+		orbit_angle = 310
+		orbit_distance = 0
+		size = 18
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	change_orbit = 100
+	planet = {
+		name = "TIPHARETH_SECRET"
+		class = pc_barren_cold
+		orbit_angle = 140
+		orbit_distance = 0
+		size = 10
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+	init_effect = {
+		BA_fe_system_initial = yes
+	}
+}
+
+#07
+BA_D_system_NETSAH = {
+	name = "BA_NETSAH_name"
+	class = sc_t
+	flags = {
+		BA_NETSAH_SYS_flag
+		BA_FE_SYS
+	}
+	asteroid_belt = {
+		type = debris_asteroid_belt
+		radius = 50
+	}
+	planet = {
+		name = "NETSAH.1.name"
+		class = pc_f_star
+		flags = {
+			BA_NETSAH_P_flag
+		}
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			save_global_event_target_as = BA_NETSAH
+		}
+	}
+	change_orbit = 30
+	planet = {
+		name = "NETSAH_TINDER"
+		class = pc_molten
+		orbit_angle = 60
+		orbit_distance = 0
+		size = 12
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			while = {
+				count = 30
+				add_deposit = d_food_10
+
+			}
+		}
+	}
+	change_orbit = 75
+	planet = {
+		name = "NETSAH_TEMPLE"
+		class = pc_gaia
+		orbit_angle = 310
+		orbit_distance = 0
+		size = 18
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	change_orbit = 20
+	planet = {
+		name = "NETSAH_ASH"
+		class = pc_gas_giant
+		orbit_angle = 60
+		orbit_distance = 0
+		size = 12
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_food_10
+			add_deposit = d_food_10
+			add_deposit = d_food_10
+		}
+	}
+	init_effect = {
+		BA_fe_system_initial = yes
+		spawn_megastructure = {
+			type = quantum_catapult_permanently_ruined
+			graphical_culture = "mammalian_01"
+			coords_from = event_target:BA_HOD
+		}
+	}
+}
+
+#08
+BA_D_system_HOD = {
+	name = "BA_HOD_name"
+	class = sc_a
+	flags = {
+		BA_HOD_SYS_flag
+		BA_FE_SYS
+	}
+	planet = {
+		name = "HOD.1.name"
+		class = pc_pulsar
+		flags = {
+			BA_HOD_P_flag
+		}
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			save_event_target_as = BA_HOD
+		}
+	}
+	change_orbit = 60
+	planet = {
+		name = "HOD_ICEY_WIND"
+		class = pc_gaia
+		orbit_angle = 180
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		size = 12
+	}
+	change_orbit = 90
+	planet = {
+		name = "HOD_WANDER"
+		class = pc_shattered
+		orbit_distance = 0
+		orbit_angle = 265
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_zro_deposit_1
+		}
+		size = 30
+	}
+	init_effect = {
+		BA_fe_system_initial = yes
+		spawn_megastructure = {
+			type = quantum_catapult_permanently_ruined
+			graphical_culture = "mammalian_01"
+			coords_from = event_target:BA_HOD
+		}
+	}
+}
+
+#09
+BA_D_system_YESOD = {
+	name = "BA_YESOD_name"
+	class = sc_black_hole
+	flags = {
+		BA_YESOD_SYS_flag
+		BA_FE_SYS
+	}
+	planet = {
+		name = "YESOD.1.name"
+		class = pc_black_hole
+		flags = {
+			BA_YESOD_P_flag
+		}
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			while = {
+				count = 30
+				create_ambient_object = {
+					type = "large_debris_object"
+					entity_offset_height = {
+						min = 0
+						max = -25
+					}
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 45
+						angle = random
+					}
+				}
+			}
+			while = {
+				count = 50
+				create_ambient_object = {
+					type = "medium_debris_01_object"
+					entity_offset_height = {
+						min = 0
+						max = -25
+					}
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 45
+						angle = random
+					}
+				}
+			}
+			while = {
+				count = 50
+				create_ambient_object = {
+					type = "medium_debris_02_object"
+					entity_offset_height = {
+						min = 0
+						max = -25
+					}
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 45
+						angle = random
+					}
+				}
+			}
+			while = {
+				count = 100
+				create_ambient_object = {
+					type = "small_debris_object"
+					entity_offset_height = {
+						min = 0
+						max = -25
+					}
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 45
+						angle = random
+					}
+				}
+			}
+			save_event_target_as = BA_YESOD
+		}
+	}
+	change_orbit = 100
+	planet = {
+		name = "YESOD_Frontier"
+		class = pc_barren_cold
+		orbit_distance = 0
+		orbit_angle = 60
+		size = 27
+		has_ring = yes
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_rare_crystals_5
+			# create_mining_station = {
+			# 	owner = THIS
+			# }
+		}
+	}
+	init_effect = {
+		BA_fe_system_initial = yes
+		spawn_megastructure = {
+			type = BA_Mega_pyroxenes_base_4
+			graphical_culture = "mammalian_01"
+			coords_from = event_target:BA_YESOD
+		}
+	}
+}
+
+#10
+BA_D_system_MALKUTH = {
+	name = "BA_MALKUTH_name"
+	class = sc_m_giant
+	flags = {
+		BA_MALKUTH_SYS_flag
+		BA_FE_SYS
+	}
+	planet = {
+		name = "MALKUTH.1.name"
+		class = pc_m_giant_star
+		flags = {
+			BA_MALKUTH_P_flag
+		}
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+	change_orbit = 60
+	planet = {
+		name = "MALKUTH_Asphodel"
+		class = pc_toxic
+		orbit_distance = 0
+		orbit_angle = 135
+		size = 18
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+	change_orbit = 30
+	planet = {
+		name = "MALKUTH_LEglise"
+		class = pc_barren
+		orbit_distance = 0
+		orbit_angle = 225
+		size = 21
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+	change_orbit = 30
+	planet = {
+		name = "MALKUTH_Void_Famille"
+		class = pc_BA_campus_planet
+		orbit_distance = 0
+		deposit_blockers = none
+		orbit_angle = 0
+		init_effect = {
+			prevent_anomaly = yes
+			save_global_event_target_as = BA_fe_homeworld
+		}
+		size = 30
+	}
+	planet = {
+		name = "MALKUTH_Tears_for_rember"
+		class = pc_shattered
+		orbit_distance = 0
+		orbit_angle = 180
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_rare_crystals_5
+			add_deposit = d_exotic_gases_5
+			add_deposit = d_volatile_motes_5
+		}
+		size = 20
+	}
+	change_orbit = 30
+	planet = {
+		name = "MALKUTH_Sagittarius"
+		class = pc_barren
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 24
+		has_ring = yes
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+	change_orbit = 40
+	planet = {
+		name = "MALKUTH_Eden"
+		class = pc_gas_giant
+		orbit_distance = 0
+		orbit_angle = 45
+		size = 25
+		has_ring = yes
+		moon = {
+			name = "MALKUTH_Caramel"
+			class = pc_molten
+			orbit_distance = 30
+			orbit_angle = 30
+			size = 12
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+			}
+		}
+		moon = {
+			name = "MALKUTH_Pudding"
+			class = pc_molten
+			orbit_distance = 0
+			orbit_angle = 90
+			size = 12
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+			}
+		}
+		moon = {
+			name = "MALKUTH_Chocomint"
+			class = pc_molten
+			orbit_distance = 0
+			orbit_angle = 90
+			size = 12
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+			}
+		}
+		moon = {
+			name = "MALKUTH_Mousse"
+			class = pc_molten
+			orbit_distance = 0
+			orbit_angle = 90
+			size = 12
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+			}
+		}
+	}
+	change_orbit = 30
+	planet = {
+		name = "MALKUTH_Echo_Through_Eternity"
+		class = pc_barren_cold
+		orbit_distance = 0
+		orbit_angle = 60
+		size = 27
+		has_ring = yes
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_dark_matter_deposit_10
+		}
+	}
+}
+
+#入口
+BA_D_system_ENTRANCE = {
+	name = "BA_D_system_ENTRANCE_name"
+	class = sc_black_hole
+	flags = {
+		BA_D_ENTRANCE
+	}
+	planet = {
+		name = "BA_D_system_ENTRANCE_node"
+		class = pc_black_hole
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+	change_orbit = 40
+	planet = {
+		name = "BA_D_system_ENTRANCE_station"
+		class = pc_toxic
+		size = 18
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	change_orbit = 80
+	planet = {
+		name = "BA_D_system_ENTRANCE_base"
+		class = pc_barren_cold
+		size = 21
+		flags = {
+			BA_D_system_base
+		}
+		has_ring = no
+	}
+	change_orbit = 100
+	init_effect = {
+		spawn_megastructure = {
+			type = Dgate_base
+			orbit_angle = 225
+			orbit_distance = 150
+		}
+	}
+}

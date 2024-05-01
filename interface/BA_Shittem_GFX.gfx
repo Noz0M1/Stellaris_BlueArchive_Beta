@@ -1,0 +1,1499 @@
+#本条目采用脚本自动注册，手动删除了一些不必要的注册，因此可能导致多注册亦或是其他奇奇怪怪的情况(不过目前需要用到的全部注册到了)
+#所有非互动性图片均附加效果文件buttonstate_onlydisable.shader以保证其不被选定
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Mission_BG"
+		textureFile = "gfx/interface/BA_UI/Mission/Mission_BG.dds"
+	}
+	spriteType = {
+		name = "GFX_Mission_CaffeeBG"
+		textureFile = "gfx/interface/BA_UI/Mission/Mission_CaffeeBG.dds"
+	}
+	spriteType = {
+		name = "GFX_Mission_padframe"
+		textureFile = "gfx/interface/BA_UI/Mission/Mission_padframe.dds"
+	}
+	spriteType = {
+		name = "GFX_Mission_X"
+		textureFile = "gfx/interface/BA_UI/Mission/Mission_X.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_resources_Currency_Icon_Gem"
+		textureFile = "gfx/interface/BA_UI/Mainpage/resources/Mainpage_resources_Currency_Icon_Gem.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_resources_Keystone"
+		textureFile = "gfx/interface/BA_UI/Mainpage/resources/Mainpage_resources_Keystone.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_resources_SecretStone"
+		textureFile = "gfx/interface/BA_UI/Mainpage/resources/Mainpage_resources_SecretStone.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_attach_01"
+		textureFile = "gfx/interface/BA_UI/Mainpage/Mainpage_attach_01.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_attach_02"
+		textureFile = "gfx/interface/BA_UI/Mainpage/Mainpage_attach_02.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_CaffeeBG"
+		textureFile = "gfx/interface/BA_UI/Mainpage/Mainpage_CaffeeBG.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_day_BG"
+		textureFile = "gfx/interface/BA_UI/Mainpage/Mainpage_day_BG.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_day_BG_1"
+		textureFile = "gfx/interface/BA_UI/Mainpage/Mainpage_day_BG_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_night_BG"
+		textureFile = "gfx/interface/BA_UI/Mainpage/Mainpage_night_BG.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_padframe"
+		textureFile = "gfx/interface/BA_UI/Mainpage/Mainpage_padframe.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_WorldRaid_Icon_Siddim_01"
+		textureFile = "gfx/interface/BA_UI/Mainpage/Mainpage_WorldRaid_Icon_Siddim_01.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_WorldRaid_Icon_Siddim_02"
+		textureFile = "gfx/interface/BA_UI/Mainpage/Mainpage_WorldRaid_Icon_Siddim_02.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_X"
+		textureFile = "gfx/interface/BA_UI/Mainpage/Mainpage_X.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_buttons_Club"
+		textureFile = "gfx/interface/BA_UI/Mainpage/buttons/Mainpage_buttons_Club.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_buttons_club_word"
+		textureFile = "gfx/interface/BA_UI/Mainpage/buttons/Mainpage_buttons_club_word.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_buttons_Communication"
+		textureFile = "gfx/interface/BA_UI/Mainpage/buttons/Mainpage_buttons_Communication.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_buttons_communication_word"
+		textureFile = "gfx/interface/BA_UI/Mainpage/buttons/Mainpage_buttons_communication_word.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_buttons_Mission"
+		textureFile = "gfx/interface/BA_UI/Mainpage/buttons/Mainpage_buttons_Mission.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_buttons_mission_word"
+		textureFile = "gfx/interface/BA_UI/Mainpage/buttons/Mainpage_buttons_mission_word.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_buttons_School"
+		textureFile = "gfx/interface/BA_UI/Mainpage/buttons/Mainpage_buttons_School.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_buttons_school_word"
+		textureFile = "gfx/interface/BA_UI/Mainpage/buttons/Mainpage_buttons_school_word.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_buttons_Shop"
+		textureFile = "gfx/interface/BA_UI/Mainpage/buttons/Mainpage_buttons_Shop.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_buttons_shop_word"
+		textureFile = "gfx/interface/BA_UI/Mainpage/buttons/Mainpage_buttons_shop_word.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0000"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0000.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0001"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0001.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0002"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0002.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0003"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0003.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0004"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0004.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0005"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0005.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0006"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0006.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0007"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0007.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0008"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0008.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0009"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0009.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0010"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0010.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0011"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0011.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0012"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0012.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0013"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0013.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0014"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0014.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0015"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0015.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0016"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0016.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0017"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0017.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0018"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0018.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0019"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0019.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0020"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0020.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0021"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0021.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0022"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0022.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0023"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0023.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0024"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0024.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0025"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0025.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0026"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0026.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0027"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0027.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0028"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0028.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0029"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0029.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0030"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0030.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0031"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0031.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0032"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0032.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Arona_Arona0099"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Arona/Mainpage_portraits_Arona_Arona0099.dds"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana000"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana000.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0001"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0001.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0002"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0002.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0003"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0003.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0004"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0004.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0005"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0005.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0006"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0006.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0007"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0007.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0008"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0008.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0009"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0009.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0010"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0010.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0011"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0011.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0012"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0012.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0013"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0013.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0014"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0014.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0015"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0015.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0016"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0016.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0017"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0017.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0018"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0018.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0019"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0019.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0020"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0020.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0021"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0021.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0022"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0022.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0023"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0023.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Mainpage_portraits_Pulana_Pulana0024"
+		textureFile = "gfx/interface/BA_UI/Mainpage/portraits/Pulana/Mainpage_portraits_Pulana_Pulana0024.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Club_center_interface_attach_01"
+		textureFile = "gfx/interface/BA_UI/Club_center_interface/Club_center_interface_attach_01.dds"
+	}
+	spriteType = {
+		name = "GFX_Club_center_interface_BG"
+		textureFile = "gfx/interface/BA_UI/Club_center_interface/Club_center_interface_BG.dds"
+	}
+	spriteType = {
+		name = "GFX_Club_center_interface_CaffeeBG"
+		textureFile = "gfx/interface/BA_UI/Club_center_interface/Club_center_interface_CaffeeBG.dds"
+	}
+	spriteType = {
+		name = "GFX_Club_center_interface_Club_center"
+		textureFile = "gfx/interface/BA_UI/Club_center_interface/Club_center_interface_Club_center.dds"
+	}
+	spriteType = {
+		name = "GFX_Club_center_interface_Club_center_BG_02"
+		textureFile = "gfx/interface/BA_UI/Club_center_interface/Club_center_interface_Club_center_BG_02.dds"
+	}
+	spriteType = {
+		name = "GFX_Club_center_interface_padframe"
+		textureFile = "gfx/interface/BA_UI/Club_center_interface/Club_center_interface_padframe.dds"
+	}
+	spriteType = {
+		name = "GFX_Club_center_interface_X"
+		textureFile = "gfx/interface/BA_UI/Club_center_interface/Club_center_interface_X.dds"
+	}
+	spriteType = {
+		name = "GFX_Club_center_interface_C&C_icon"
+		textureFile = "gfx/interface/BA_UI/Club_center_interface/club/Club_center_interface_C&C_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_Club_center_interface_Disciplinary_icon"
+		textureFile = "gfx/interface/BA_UI/Club_center_interface/club/Club_center_interface_Disciplinary_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_Club_center_interface_Engineering_department_icon"
+		textureFile = "gfx/interface/BA_UI/Club_center_interface/club/Club_center_interface_Engineering_department_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_Club_center_interface_Game_Dev_icon"
+		textureFile = "gfx/interface/BA_UI/Club_center_interface/club/Club_center_interface_Game_Dev_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_Club_center_interface_Gourmet_icon"
+		textureFile = "gfx/interface/BA_UI/Club_center_interface/club/Club_center_interface_Gourmet_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_Club_center_interface_Handyman_icon"
+		textureFile = "gfx/interface/BA_UI/Club_center_interface/club/Club_center_interface_Handyman_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_Club_center_interface_Justice_icon"
+		textureFile = "gfx/interface/BA_UI/Club_center_interface/club/Club_center_interface_Justice_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_Club_center_interface_Pandemonium_icon"
+		textureFile = "gfx/interface/BA_UI/Club_center_interface/club/Club_center_interface_Pandemonium_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_Club_center_interface_Seminar_icon"
+		textureFile = "gfx/interface/BA_UI/Club_center_interface/club/Club_center_interface_Seminar_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_Club_center_interface_Super_phenomenon_task_force_icon"
+		textureFile = "gfx/interface/BA_UI/Club_center_interface/club/Club_center_interface_Super_phenomenon_task_force_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_Club_center_interface_Sweets_Club_icon"
+		textureFile = "gfx/interface/BA_UI/Club_center_interface/club/Club_center_interface_Sweets_Club_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_Club_center_interface_Tea_Party_icon"
+		textureFile = "gfx/interface/BA_UI/Club_center_interface/club/Club_center_interface_Tea_Party_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_Club_center_interface_Veritas_icon"
+		textureFile = "gfx/interface/BA_UI/Club_center_interface/club/Club_center_interface_Veritas_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_Communication_BG"
+		textureFile = "gfx/interface/BA_UI/Communication/Communication_BG.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Communication_CaffeeBG"
+		textureFile = "gfx/interface/BA_UI/Communication/Communication_CaffeeBG.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Communication_padframe"
+		textureFile = "gfx/interface/BA_UI/Communication/Communication_padframe.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Communication_X"
+		textureFile = "gfx/interface/BA_UI/Communication/Communication_X.dds"
+	}
+	spriteType = {
+		name = "GFX_Developer_options_BG"
+		textureFile = "gfx/interface/BA_UI/Developer_options/Developer_options_BG.dds"
+	}
+	spriteType = {
+		name = "GFX_Developer_options_CaffeeBG"
+		textureFile = "gfx/interface/BA_UI/Developer_options/Developer_options_CaffeeBG.dds"
+	}
+	spriteType = {
+		name = "GFX_Developer_options_padframe"
+		textureFile = "gfx/interface/BA_UI/Developer_options/Developer_options_padframe.dds"
+	}
+	spriteType = {
+		name = "GFX_Developer_options_X"
+		textureFile = "gfx/interface/BA_UI/Developer_options/Developer_options_X.dds"
+	}
+	spriteType = {
+		name = "GFX_Game_Development_Department_attach"
+		textureFile = "gfx/interface/BA_UI/Game_Development_Department/Game_Development_Department_attach.dds"
+	}
+	spriteType = {
+		name = "GFX_Game_Development_Department_BG"
+		textureFile = "gfx/interface/BA_UI/Game_Development_Department/Game_Development_Department_BG.dds"
+	}
+	spriteType = {
+		name = "GFX_Game_Development_Department_CaffeeBG"
+		textureFile = "gfx/interface/BA_UI/Game_Development_Department/Game_Development_Department_CaffeeBG.dds"
+	}
+	spriteType = {
+		name = "GFX_Game_Development_Department_padframe"
+		textureFile = "gfx/interface/BA_UI/Game_Development_Department/Game_Development_Department_padframe.dds"
+	}
+	spriteType = {
+		name = "GFX_Game_Development_Department_X"
+		textureFile = "gfx/interface/BA_UI/Game_Development_Department/Game_Development_Department_X.dds"
+	}
+	spriteType = {
+		name = "GFX_Game_Development_Department_portraits_Aris"
+		textureFile = "gfx/interface/BA_UI/Game_Development_Department/portraits/Game_Development_Department_portraits_Aris.dds"
+	}
+	spriteType = {
+		name = "GFX_Game_Development_Department_portraits_midori"
+		textureFile = "gfx/interface/BA_UI/Game_Development_Department/portraits/Game_Development_Department_portraits_midori.dds"
+	}
+	spriteType = {
+		name = "GFX_Game_Development_Department_portraits_momoi"
+		textureFile = "gfx/interface/BA_UI/Game_Development_Department/portraits/Game_Development_Department_portraits_momoi.dds"
+	}
+	spriteType = {
+		name = "GFX_Game_Development_Department_portraits_yuzu"
+		textureFile = "gfx/interface/BA_UI/Game_Development_Department/portraits/Game_Development_Department_portraits_yuzu.dds"
+	}
+	spriteType = {
+		name = "GFX_Master_copy_BG"
+		textureFile = "gfx/interface/BA_UI/Master_copy/Master_copy_BG.dds"
+	}
+	spriteType = {
+		name = "GFX_Master_copy_CaffeeBG"
+		textureFile = "gfx/interface/BA_UI/Master_copy/Master_copy_CaffeeBG.dds"
+	}
+	spriteType = {
+		name = "GFX_Master_copy_padframe"
+		textureFile = "gfx/interface/BA_UI/Master_copy/Master_copy_padframe.dds"
+	}
+	spriteType = {
+		name = "GFX_School_philosophy_BG"
+		textureFile = "gfx/interface/BA_UI/School_philosophy/School_philosophy_BG.dds"
+	}
+	spriteType = {
+		name = "GFX_School_philosophy_CaffeeBG"
+		textureFile = "gfx/interface/BA_UI/School_philosophy/School_philosophy_CaffeeBG.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_School_philosophy_padframe"
+		textureFile = "gfx/interface/BA_UI/School_philosophy/School_philosophy_padframe.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_School_philosophy_School_philosophy_BG"
+		textureFile = "gfx/interface/BA_UI/School_philosophy/School_philosophy_School_philosophy_BG.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_School_philosophy_School_philosophy_word"
+		textureFile = "gfx/interface/BA_UI/School_philosophy/School_philosophy_School_philosophy_word.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_School_philosophy_X"
+		textureFile = "gfx/interface/BA_UI/School_philosophy/School_philosophy_X.dds"
+	}
+	spriteType = {
+		name = "GFX_School_philosophy_buttons_School1"
+		textureFile = "gfx/interface/BA_UI/School_philosophy/buttons/School_philosophy_buttons_School1.dds"
+	}
+	spriteType = {
+		name = "GFX_School_philosophy_buttons_School10"
+		textureFile = "gfx/interface/BA_UI/School_philosophy/buttons/School_philosophy_buttons_School10.dds"
+	}
+	spriteType = {
+		name = "GFX_School_philosophy_buttons_School11"
+		textureFile = "gfx/interface/BA_UI/School_philosophy/buttons/School_philosophy_buttons_School11.dds"
+	}
+	spriteType = {
+		name = "GFX_School_philosophy_buttons_School2"
+		textureFile = "gfx/interface/BA_UI/School_philosophy/buttons/School_philosophy_buttons_School2.dds"
+	}
+	spriteType = {
+		name = "GFX_School_philosophy_buttons_School3"
+		textureFile = "gfx/interface/BA_UI/School_philosophy/buttons/School_philosophy_buttons_School3.dds"
+	}
+	spriteType = {
+		name = "GFX_School_philosophy_buttons_School4"
+		textureFile = "gfx/interface/BA_UI/School_philosophy/buttons/School_philosophy_buttons_School4.dds"
+	}
+	spriteType = {
+		name = "GFX_School_philosophy_buttons_School5"
+		textureFile = "gfx/interface/BA_UI/School_philosophy/buttons/School_philosophy_buttons_School5.dds"
+	}
+	spriteType = {
+		name = "GFX_School_philosophy_buttons_School6"
+		textureFile = "gfx/interface/BA_UI/School_philosophy/buttons/School_philosophy_buttons_School6.dds"
+	}
+	spriteType = {
+		name = "GFX_School_philosophy_buttons_School7"
+		textureFile = "gfx/interface/BA_UI/School_philosophy/buttons/School_philosophy_buttons_School7.dds"
+	}
+	spriteType = {
+		name = "GFX_School_philosophy_buttons_School8"
+		textureFile = "gfx/interface/BA_UI/School_philosophy/buttons/School_philosophy_buttons_School8.dds"
+	}
+	spriteType = {
+		name = "GFX_School_philosophy_buttons_School9"
+		textureFile = "gfx/interface/BA_UI/School_philosophy/buttons/School_philosophy_buttons_School9.dds"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_BG"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/School_philosophy_Detail_BG.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_CaffeeBG"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/School_philosophy_Detail_CaffeeBG.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_padframe"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/School_philosophy_Detail_padframe.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_X"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/School_philosophy_Detail_X.dds"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Abydos_page1_00_Abydos_00"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Abydos/page1/00/School_philosophy_Detail_Abydos_page1_00_Abydos_00.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Abydos_page1_01_a_Abydos_01_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Abydos/page1/01_a/School_philosophy_Detail_Abydos_page1_01_a_Abydos_01_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Abydos_page1_01_b_Abydos_01_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Abydos/page1/01_b/School_philosophy_Detail_Abydos_page1_01_b_Abydos_01_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Abydos_page1_02_a_Abydos_02_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Abydos/page1/02_a/School_philosophy_Detail_Abydos_page1_02_a_Abydos_02_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Abydos_page1_02_b_Abydos_02_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Abydos/page1/02_b/School_philosophy_Detail_Abydos_page1_02_b_Abydos_02_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Abydos_page1_03_a_Abydos_03_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Abydos/page1/03_a/School_philosophy_Detail_Abydos_page1_03_a_Abydos_03_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Abydos_page1_03_b_Abydos_03_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Abydos/page1/03_b/School_philosophy_Detail_Abydos_page1_03_b_Abydos_03_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Abydos_page1_04_a_Abydos_04_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Abydos/page1/04_a/School_philosophy_Detail_Abydos_page1_04_a_Abydos_04_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Abydos_page1_04_b_Abydos_04_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Abydos/page1/04_b/School_philosophy_Detail_Abydos_page1_04_b_Abydos_04_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Abydos_page1_04_c_Abydos_04_c"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Abydos/page1/04_c/School_philosophy_Detail_Abydos_page1_04_c_Abydos_04_c.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Abydos_page1_frame_Abydo_frame_01"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Abydos/page1/frame/School_philosophy_Detail_Abydos_page1_frame_Abydo_frame_01.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Abydos_page2_04_a_Abydos_04_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Abydos/page2/04_a/School_philosophy_Detail_Abydos_page2_04_a_Abydos_04_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Abydos_page2_04_b_Abydos_04_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Abydos/page2/04_b/School_philosophy_Detail_Abydos_page2_04_b_Abydos_04_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Abydos_page2_05_a_Abydos_05_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Abydos/page2/05_a/School_philosophy_Detail_Abydos_page2_05_a_Abydos_05_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Abydos_page2_05_b_Abydos_05_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Abydos/page2/05_b/School_philosophy_Detail_Abydos_page2_05_b_Abydos_05_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Abydos_page2_06_a_Abydos_06_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Abydos/page2/06_a/School_philosophy_Detail_Abydos_page2_06_a_Abydos_06_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Abydos_page2_06_b_Abydos_06_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Abydos/page2/06_b/School_philosophy_Detail_Abydos_page2_06_b_Abydos_06_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Abydos_page2_07_a_Abydos_07_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Abydos/page2/07_a/School_philosophy_Detail_Abydos_page2_07_a_Abydos_07_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Abydos_page2_frame_Abydo_frame_02"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Abydos/page2/frame/School_philosophy_Detail_Abydos_page2_frame_Abydo_frame_02.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Abydos_Abydos_BG"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Abydos/School_philosophy_Detail_Abydos_Abydos_BG.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Abydos_Img_UICountdown_Abydos_Line"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Abydos/School_philosophy_Detail_Abydos_Img_UICountdown_Abydos_Line.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_Img_UICountdown_Gehenna_Line"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/School_philosophy_Detail_Gehenna_Img_UICountdown_Gehenna_Line.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_Gehenna_BG"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/School_philosophy_Detail_Gehenna_Gehenna_BG.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Lock"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/School_philosophy_Detail_Lock.dds"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_PageUp"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/School_philosophy_Detail_PageUp.dds"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_PageDown"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/School_philosophy_Detail_PageDown.dds"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_page1_01_a_Gehenna_01_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/page1/01_a/School_philosophy_Detail_Gehenna_page1_01_a_Gehenna_01_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_page1_01_b_Gehenna_01_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/page1/01_b/School_philosophy_Detail_Gehenna_page1_01_b_Gehenna_01_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_page1_02_a_Gehenna_02_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/page1/02_a/School_philosophy_Detail_Gehenna_page1_02_a_Gehenna_02_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_page1_02_b_Gehenna_02_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/page1/02_b/School_philosophy_Detail_Gehenna_page1_02_b_Gehenna_02_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_page1_03_a_Gehenna_03_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/page1/03_a/School_philosophy_Detail_Gehenna_page1_03_a_Gehenna_03_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_page1_03_b_Gehenna_03_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/page1/03_b/School_philosophy_Detail_Gehenna_page1_03_b_Gehenna_03_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_page1_04_Gehenna_04"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/page1/04/School_philosophy_Detail_Gehenna_page1_04_Gehenna_04.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_page1_05_Gehenna_05"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/page1/05/School_philosophy_Detail_Gehenna_page1_05_Gehenna_05.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_page1_frame_Gehenna_frame_01"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/page1/frame/School_philosophy_Detail_Gehenna_page1_frame_Gehenna_frame_01.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_page2_06_a_Gehenna_06_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/page2/06_a/School_philosophy_Detail_Gehenna_page2_06_a_Gehenna_06_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_page2_06_b_Gehenna_06_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/page2/06_c/School_philosophy_Detail_Gehenna_page2_06_c_Gehenna_06_c.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_page2_06_c_Gehenna_06_c"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/page2/06_b/School_philosophy_Detail_Gehenna_page2_06_b_Gehenna_06_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_page2_07_a_Gehenna_07_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/page2/07_a/School_philosophy_Detail_Gehenna_page2_07_a_Gehenna_07_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_page2_07_b_Gehenna_07_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/page2/07_c/School_philosophy_Detail_Gehenna_page2_07_c_Gehenna_07_c.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_page2_07_c_Gehenna_07_c"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/page2/07_b/School_philosophy_Detail_Gehenna_page2_07_b_Gehenna_07_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_page2_08_a_Gehenna_08_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/page2/08_a/School_philosophy_Detail_Gehenna_page2_08_a_Gehenna_08_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_page2_08_b_Gehenna_08_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/page2/08_c/School_philosophy_Detail_Gehenna_page2_08_c_Gehenna_08_c.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_page2_08_c_Gehenna_08_c"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/page2/08_b/School_philosophy_Detail_Gehenna_page2_08_b_Gehenna_08_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_page2_09_Gehenna_09"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/page2/09/School_philosophy_Detail_Gehenna_page2_09_Gehenna_09.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Gehenna_page2_frame_Gehenna_frame_02"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Gehenna/page2/frame/School_philosophy_Detail_Gehenna_page2_frame_Gehenna_frame_02.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Hyakkiyako_page1_00_Hyakkiyako_00"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Hyakkiyako/page1/00/School_philosophy_Detail_Hyakkiyako_page1_00_Hyakkiyako_00.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Hyakkiyako_page1_01_a_Hyakkiyako_01_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Hyakkiyako/page1/01_a/School_philosophy_Detail_Hyakkiyako_page1_01_a_Hyakkiyako_01_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Hyakkiyako_page1_01_b_Hyakkiyako_01_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Hyakkiyako/page1/01_b/School_philosophy_Detail_Hyakkiyako_page1_01_b_Hyakkiyako_01_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Hyakkiyako_page1_01_c_Hyakkiyako_01_c"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Hyakkiyako/page1/01_c/School_philosophy_Detail_Hyakkiyako_page1_01_c_Hyakkiyako_01_c.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Hyakkiyako_page1_02_Hyakkiyako_02"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Hyakkiyako/page1/02/School_philosophy_Detail_Hyakkiyako_page1_02_Hyakkiyako_02.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Hyakkiyako_page1_frame_Hyakkiyako_frame_01"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Hyakkiyako/page1/frame/School_philosophy_Detail_Hyakkiyako_page1_frame_Hyakkiyako_frame_01.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Hyakkiyako_page1_frame_Hyakkiyako_page_change_01"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Hyakkiyako/page1/frame/School_philosophy_Detail_Hyakkiyako_page1_frame_Hyakkiyako_page_change_01.dds"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Hyakkiyako_page1_Hyakkiyako_BG"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Hyakkiyako/page1/School_philosophy_Detail_Hyakkiyako_page1_Hyakkiyako_BG.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Hyakkiyako_page2_frame_Hyakkiyako_BG_2"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Hyakkiyako/page2/frame/School_philosophy_Detail_Hyakkiyako_page2_frame_Hyakkiyako_BG_2.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Hyakkiyako_page2_frame_Hyakkiyako_page_change_02"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Hyakkiyako/page2/frame/School_philosophy_Detail_Hyakkiyako_page2_frame_Hyakkiyako_page_change_02.dds"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Hyakkiyako_page2_sp00_Hyakkiyako_sp_00"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Hyakkiyako/page2/sp00/School_philosophy_Detail_Hyakkiyako_page2_sp00_Hyakkiyako_sp_00.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Hyakkiyako_page2_sp01_Hyakkiyako_sp_01"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Hyakkiyako/page2/sp01/School_philosophy_Detail_Hyakkiyako_page2_sp01_Hyakkiyako_sp_01.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Hyakkiyako_page2_sp02_Hyakkiyako_sp_02"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Hyakkiyako/page2/sp02/School_philosophy_Detail_Hyakkiyako_page2_sp02_Hyakkiyako_sp_02.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Hyakkiyako_page2_sp03_Hyakkiyako_sp_03"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Hyakkiyako/page2/sp03/School_philosophy_Detail_Hyakkiyako_page2_sp03_Hyakkiyako_sp_03.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Hyakkiyako_Img_UICountdown_Hyakkiyako_Line"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Hyakkiyako/School_philosophy_Detail_Hyakkiyako_Img_UICountdown_Hyakkiyako_Line.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page1_00_Millennium_00"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page1/00/School_philosophy_Detail_Millennium_page1_00_Millennium_00.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page1_01_Millennium_01"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page1/01/School_philosophy_Detail_Millennium_page1_01_Millennium_01.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page1_02_Millennium_02"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page1/02/School_philosophy_Detail_Millennium_page1_02_Millennium_02.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page1_03_Millennium_03"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page1/03/School_philosophy_Detail_Millennium_page1_03_Millennium_03.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page1_04_a_Millennium_04_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page1/04_a/School_philosophy_Detail_Millennium_page1_04_a_Millennium_04_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page1_04_b_Millennium_04_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page1/04_b/School_philosophy_Detail_Millennium_page1_04_b_Millennium_04_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page1_frame_Millennium_frame_01"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page1/frame/School_philosophy_Detail_Millennium_page1_frame_Millennium_frame_01.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page2_04_a_Millennium_04_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page2/04_a/School_philosophy_Detail_Millennium_page2_04_a_Millennium_04_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page2_04_a_1_Millennium_04_a_1"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page2/04_a_1/School_philosophy_Detail_Millennium_page2_04_a_1_Millennium_04_a_1.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page2_04_b_Millennium_04_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page2/04_b/School_philosophy_Detail_Millennium_page2_04_b_Millennium_04_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page2_04_b_1_Millennium_04_b_1"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page2/04_b_1/School_philosophy_Detail_Millennium_page2_04_b_1_Millennium_04_b_1.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page2_05_Millennium_05"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page2/05/School_philosophy_Detail_Millennium_page2_05_Millennium_05.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page2_06_Millennium_06"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page2/06/School_philosophy_Detail_Millennium_page2_06_Millennium_06.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page2_07_Millennium_07"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page2/07/School_philosophy_Detail_Millennium_page2_07_Millennium_07.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page2_08_Millennium_08"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page2/08/School_philosophy_Detail_Millennium_page2_08_Millennium_08.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page2_frame_Millennium_frame_02"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page2/frame/School_philosophy_Detail_Millennium_page2_frame_Millennium_frame_02.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page3_08_Millennium_08"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page3/08/School_philosophy_Detail_Millennium_page3_08_Millennium_08.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page3_09_Millennium_09"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page3/09/School_philosophy_Detail_Millennium_page3_09_Millennium_09.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page3_09_a_Millennium_09_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page3/09_a/School_philosophy_Detail_Millennium_page3_09_a_Millennium_09_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page3_09_b_Millennium_09_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page3/09_b/School_philosophy_Detail_Millennium_page3_09_b_Millennium_09_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page3_10_Millennium_10"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page3/10/School_philosophy_Detail_Millennium_page3_10_Millennium_10.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page3_11_Millennium_11"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page3/11/School_philosophy_Detail_Millennium_page3_11_Millennium_11.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page3_12_Millennium_12"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page3/12/School_philosophy_Detail_Millennium_page3_12_Millennium_12.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_page3_frame_Millennium_frame_03"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/page3/frame/School_philosophy_Detail_Millennium_page3_frame_Millennium_frame_03.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_Img_UICountdown_Millennium_Line"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/School_philosophy_Detail_Millennium_Img_UICountdown_Millennium_Line.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Millennium_Millennium_BG"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Millennium/School_philosophy_Detail_Millennium_Millennium_BG.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Red_Winter_page1_01_RedWinter_01"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Red_Winter/page1/01/School_philosophy_Detail_Red_Winter_page1_01_RedWinter_01.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Red_Winter_page1_02_RedWinter_02"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Red_Winter/page1/02/School_philosophy_Detail_Red_Winter_page1_02_RedWinter_02.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Red_Winter_page1_03_RedWinter_03"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Red_Winter/page1/03/School_philosophy_Detail_Red_Winter_page1_03_RedWinter_03.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Red_Winter_page1_04_RedWinter_04"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Red_Winter/page1/04/School_philosophy_Detail_Red_Winter_page1_04_RedWinter_04.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Red_Winter_page1_05_RedWinter_05"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Red_Winter/page1/05/School_philosophy_Detail_Red_Winter_page1_05_RedWinter_05.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Red_Winter_page1_frame_RedWinter_frame_01"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Red_Winter/page1/frame/School_philosophy_Detail_Red_Winter_page1_frame_RedWinter_frame_01.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Red_Winter_page1_frame_RedWinter_frame_02"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Red_Winter/page1/frame/School_philosophy_Detail_Red_Winter_page1_frame_RedWinter_frame_02.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Red_Winter_page1_frame_RedWinter_frame_03"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Red_Winter/page1/frame/School_philosophy_Detail_Red_Winter_page1_frame_RedWinter_frame_03.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Red_Winter_page1_frame_RedWinter_frame_04"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Red_Winter/page1/frame/School_philosophy_Detail_Red_Winter_page1_frame_RedWinter_frame_04.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Red_Winter_page1_frame_RedWinter_frame_05"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Red_Winter/page1/frame/School_philosophy_Detail_Red_Winter_page1_frame_RedWinter_frame_05.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Red_Winter_page1_RedWinter_BG"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Red_Winter/page1/School_philosophy_Detail_Red_Winter_page1_RedWinter_BG.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Red_Winter_Img_UICountdown_RedWinter_Line"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Red_Winter/School_philosophy_Detail_Red_Winter_Img_UICountdown_RedWinter_Line.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Shanhaijing_page1_00_Shanhaijing_00"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Shanhaijing/page1/00/School_philosophy_Detail_Shanhaijing_page1_00_Shanhaijing_00.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Shanhaijing_page1_01_a_Shanhaijing_01_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Shanhaijing/page1/01_a/School_philosophy_Detail_Shanhaijing_page1_01_a_Shanhaijing_01_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Shanhaijing_page1_01_b_Shanhaijing_01_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Shanhaijing/page1/01_b/School_philosophy_Detail_Shanhaijing_page1_01_b_Shanhaijing_01_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Shanhaijing_page1_02_a_Shanhaijing_02_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Shanhaijing/page1/02_a/School_philosophy_Detail_Shanhaijing_page1_02_a_Shanhaijing_02_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Shanhaijing_page1_02_b_Shanhaijing_02_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Shanhaijing/page1/02_b/School_philosophy_Detail_Shanhaijing_page1_02_b_Shanhaijing_02_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Shanhaijing_page1_02_c_Shanhaijing_02_c"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Shanhaijing/page1/02_c/School_philosophy_Detail_Shanhaijing_page1_02_c_Shanhaijing_02_c.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Shanhaijing_page1_03_a_Shanhaijing_03_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Shanhaijing/page1/03_a/School_philosophy_Detail_Shanhaijing_page1_03_a_Shanhaijing_03_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Shanhaijing_page1_03_b_Shanhaijing_03_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Shanhaijing/page1/03_b/School_philosophy_Detail_Shanhaijing_page1_03_b_Shanhaijing_03_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Shanhaijing_page1_04_a_Shanhaijing_04_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Shanhaijing/page1/04_b/School_philosophy_Detail_Shanhaijing_page1_04_b_Shanhaijing_04_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Shanhaijing_page1_04_b_Shanhaijing_04_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Shanhaijing/page1/04_a/School_philosophy_Detail_Shanhaijing_page1_04_a_Shanhaijing_04_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Shanhaijing_page1_frame_Shanhaijing_frame_01"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Shanhaijing/page1/frame/School_philosophy_Detail_Shanhaijing_page1_frame_Shanhaijing_frame_01.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Shanhaijing_Img_UICountdown_Shanhaijing_Line"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Shanhaijing/School_philosophy_Detail_Shanhaijing_Img_UICountdown_Shanhaijing_Line.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Shanhaijing_Shanhaijing_BG"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Shanhaijing/School_philosophy_Detail_Shanhaijing_Shanhaijing_BG.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page1_01_a_Trinity_01_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page1/01_a/School_philosophy_Detail_Trinity_page1_01_a_Trinity_01_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page1_01_b_Trinity_01_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page1/01_b/School_philosophy_Detail_Trinity_page1_01_b_Trinity_01_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page1_01_c_Trinity_01_c"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page1/01_c/School_philosophy_Detail_Trinity_page1_01_c_Trinity_01_c.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page1_02_a_Trinity_02_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page1/02_a/School_philosophy_Detail_Trinity_page1_02_a_Trinity_02_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page1_02_b_Trinity_02_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page1/02_b/School_philosophy_Detail_Trinity_page1_02_b_Trinity_02_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page1_02_c_Trinity_02_c"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page1/02_c/School_philosophy_Detail_Trinity_page1_02_c_Trinity_02_c.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page1_03_a_Trinity_03_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page1/03_a/School_philosophy_Detail_Trinity_page1_03_a_Trinity_03_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page1_03_b_Trinity_03_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page1/03_b/School_philosophy_Detail_Trinity_page1_03_b_Trinity_03_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page1_03_c_Trinity_03_c"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page1/03_c/School_philosophy_Detail_Trinity_page1_03_c_Trinity_03_c.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page1_04_a_Trinity_04_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page1/04_a/School_philosophy_Detail_Trinity_page1_04_a_Trinity_04_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page1_04_b_Trinity_04_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page1/04_b/School_philosophy_Detail_Trinity_page1_04_b_Trinity_04_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page1_04_c_Trinity_04_c"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page1/04_c/School_philosophy_Detail_Trinity_page1_04_c_Trinity_04_c.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page1_05_a_Trinity_05_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page1/05_a/School_philosophy_Detail_Trinity_page1_05_a_Trinity_05_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page1_05_b_Trinity_05_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page1/05_b/School_philosophy_Detail_Trinity_page1_05_b_Trinity_05_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page1_05_c_Trinity_05_c"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page1/05_c/School_philosophy_Detail_Trinity_page1_05_c_Trinity_05_c.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page2_05_a_Trinity_05_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page2/05_a/School_philosophy_Detail_Trinity_page2_05_a_Trinity_05_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page2_05_b_Trinity_05_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page2/05_b/School_philosophy_Detail_Trinity_page2_05_b_Trinity_05_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page2_05_c_Trinity_05_c"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page2/05_c/School_philosophy_Detail_Trinity_page2_05_c_Trinity_05_c.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page2_06_a_Trinity_06_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page2/06_a/School_philosophy_Detail_Trinity_page2_06_a_Trinity_06_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page2_06_b_Trinity_06_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page2/06_b/School_philosophy_Detail_Trinity_page2_06_b_Trinity_06_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page2_06_c_Trinity_06_c"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page2/06_c/School_philosophy_Detail_Trinity_page2_06_c_Trinity_06_c.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page2_07_b_Trinity_07_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page2/07_b/School_philosophy_Detail_Trinity_page2_07_b_Trinity_07_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page2_frame_Trinity_frame_02"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page2/frame/School_philosophy_Detail_Trinity_page2_frame_Trinity_frame_02.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_page1_frame_Trinity_frame_01"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/page1/frame/School_philosophy_Detail_Trinity_page1_frame_Trinity_frame_01.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_Img_UICountdown_Trinity_Line"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/School_philosophy_Detail_Trinity_Img_UICountdown_Trinity_Line.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Trinity_Trinity_BG"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Trinity/School_philosophy_Detail_Trinity_Trinity_BG.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Valkyrie_page1_00_Valkyrie_00"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Valkyrie/page1/00/School_philosophy_Detail_Valkyrie_page1_00_Valkyrie_00.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Valkyrie_page1_01_a_Valkyrie_01_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Valkyrie/page1/01_a/School_philosophy_Detail_Valkyrie_page1_01_a_Valkyrie_01_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Valkyrie_page1_01_b_Valkyrie_01_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Valkyrie/page1/01_b/School_philosophy_Detail_Valkyrie_page1_01_b_Valkyrie_01_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Valkyrie_page1_02_a_Valkyrie_02_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Valkyrie/page1/02_a/School_philosophy_Detail_Valkyrie_page1_02_a_Valkyrie_02_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Valkyrie_page1_02_b_Valkyrieg_02_b"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Valkyrie/page1/02_b/School_philosophy_Detail_Valkyrie_page1_02_b_Valkyrieg_02_b.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Valkyrie_page1_03_a_Valkyrie_03_a"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Valkyrie/page1/03_a/School_philosophy_Detail_Valkyrie_page1_03_a_Valkyrie_03_a.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Valkyrie_page1_frame_Valkyrie_frame_01"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Valkyrie/page1/frame/School_philosophy_Detail_Valkyrie_page1_frame_Valkyrie_frame_01.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Valkyrie_Img_UICountdown_Valkyrie_Line"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Valkyrie/School_philosophy_Detail_Valkyrie_Img_UICountdown_Valkyrie_Line.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_BA_SI_Valkyrie_Valkyrie_BG"
+		textureFile = "gfx/interface/BA_UI/School_philosophy_Detail/philosophy_Detail/Valkyrie/School_philosophy_Detail_Valkyrie_Valkyrie_BG.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_School_Tag_AriusSquad_Line"
+		textureFile = "gfx/interface/BA_UI/School_Tag/School_Tag_AriusSquad_Line.dds"
+	}
+	spriteType = {
+		name = "GFX_School_Tag_SpecOpsNo227_Line"
+		textureFile = "gfx/interface/BA_UI/School_Tag/School_Tag_SpecOpsNo227_Line.dds"
+	}
+	spriteType = {
+		name = "GFX_School_Tag_TeaParty_Line"
+		textureFile = "gfx/interface/BA_UI/School_Tag/School_Tag_TeaParty_Line.dds"
+	}
+	spriteType = {
+		name = "GFX_Shop_attach"
+		textureFile = "gfx/interface/BA_UI/Shop/Shop_attach.dds"
+	}
+	spriteType = {
+		name = "GFX_Shop_padframe"
+		textureFile = "gfx/interface/BA_UI/Shop/Shop_padframe.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Shop_Shop_BG"
+		textureFile = "gfx/interface/BA_UI/Shop/Shop_Shop_BG.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Shop_X"
+		textureFile = "gfx/interface/BA_UI/Shop/Shop_X.dds"
+	}
+	spriteType = {
+		name = "GFX_Shop_Conversation"
+		textureFile = "gfx/interface/BA_UI/Shop/Shop_Conversation.dds"
+	}
+	spriteType = {
+		name = "GFX_Shop_Goods_attach"
+		textureFile = "gfx/interface/BA_UI/Shop/Goods/Shop_Goods_attach.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_Shop_Goods_cancel"
+		textureFile = "gfx/interface/BA_UI/Shop/Goods/Shop_Goods_cancel.dds"
+	}
+	spriteType = {
+		name = "GFX_Shop_Goods_confirm"
+		textureFile = gfx/interface/BA_UI/Shop/Goods/Shop_Goods_confirm.dds
+	}
+	spriteType = {
+		name = "GFX_Shop_Goods_Shop_item_goods_shelves"
+		textureFile = gfx/interface/BA_UI/Shop/Goods/Shop_item/Shop_Goods_Shop_item_goods_shelves_01.dds
+	}
+	spriteType = {
+		name = "GFX_Shop_Goods_Shop_item_Shop_item_alloys"
+		textureFile = gfx/interface/BA_UI/Shop/Goods/Shop_item/Shop_Goods_Shop_item_Shop_item_alloys.dds
+	}
+	spriteType = {
+		name = "GFX_Shop_Goods_Shop_item_Shop_item_consumer_goods"
+		textureFile = gfx/interface/BA_UI/Shop/Goods/Shop_item/Shop_Goods_Shop_item_Shop_item_consumer_goods.dds
+	}
+	spriteType = {
+		name = "GFX_Shop_Goods_Shop_item_Shop_item_dark_matter"
+		textureFile = gfx/interface/BA_UI/Shop/Goods/Shop_item/Shop_Goods_Shop_item_Shop_item_dark_matter.dds
+	}
+	spriteType = {
+		name = "GFX_Shop_Goods_Shop_item_Shop_item_engineering_research"
+		textureFile = gfx/interface/BA_UI/Shop/Goods/Shop_item/Shop_Goods_Shop_item_Shop_item_engineering_research.dds
+	}
+	spriteType = {
+		name = "GFX_Shop_Goods_Shop_item_Shop_item_exotic_gases"
+		textureFile = gfx/interface/BA_UI/Shop/Goods/Shop_item/Shop_Goods_Shop_item_Shop_item_exotic_gases.dds
+	}
+	spriteType = {
+		name = "GFX_Shop_Goods_Shop_item_Shop_item_living_metal"
+		textureFile = gfx/interface/BA_UI/Shop/Goods/Shop_item/Shop_Goods_Shop_item_Shop_item_living_metal.dds
+	}
+	spriteType = {
+		name = "GFX_Shop_Goods_Shop_item_Shop_item_minor_artifacts"
+		textureFile = gfx/interface/BA_UI/Shop/Goods/Shop_item/Shop_Goods_Shop_item_Shop_item_minor_artifacts.dds
+	}
+	spriteType = {
+		name = "GFX_Shop_Goods_Shop_item_Shop_item_physics_research"
+		textureFile = gfx/interface/BA_UI/Shop/Goods/Shop_item/Shop_Goods_Shop_item_Shop_item_physics_research.dds
+	}
+	spriteType = {
+		name = "GFX_Shop_Goods_Shop_item_Shop_item_rare_crystals"
+		textureFile = gfx/interface/BA_UI/Shop/Goods/Shop_item/Shop_Goods_Shop_item_Shop_item_rare_crystals.dds
+	}
+	spriteType = {
+		name = "GFX_Shop_Goods_Shop_item_Shop_item_society_research"
+		textureFile = gfx/interface/BA_UI/Shop/Goods/Shop_item/Shop_Goods_Shop_item_Shop_item_society_research.dds
+	}
+	spriteType = {
+		name = "GFX_Shop_Goods_Shop_item_Shop_item_volatile_motes"
+		textureFile = gfx/interface/BA_UI/Shop/Goods/Shop_item/Shop_Goods_Shop_item_Shop_item_volatile_motes.dds
+	}
+	spriteType = {
+		name = "GFX_Shop_Goods_Shop_item_Shop_item_zro"
+		textureFile = gfx/interface/BA_UI/Shop/Goods/Shop_item/Shop_Goods_Shop_item_Shop_item_zro.dds
+	}
+	spriteType = {
+		name = "GFX_Shop_Main_choose_Goods"
+		textureFile = gfx/interface/BA_UI/Shop/Main/Shop_Main_choose_Goods.dds
+	}
+	spriteType = {
+		name = "GFX_Shop_Main_choose_Technologies"
+		textureFile = gfx/interface/BA_UI/Shop/Main/Shop_Main_choose_Technologies.dds
+	}
+	spriteType = {
+		name = "GFX_Shop_Technologies_Chip"
+		textureFile = gfx/interface/BA_UI/Shop/Technologies/Shop_Technologies_Chip.dds
+	}
+	spriteType = {
+		name = "GFX_Shop_Shop_Technologies_technologies_BG"
+		textureFile = gfx/interface/BA_UI/Shop/Technologies/Shop_Technologies_technologies_BG.dds
+	}
+}

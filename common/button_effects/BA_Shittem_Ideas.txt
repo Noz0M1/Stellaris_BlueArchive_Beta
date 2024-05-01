@@ -1,0 +1,159 @@
+button_effect_BA_SI_Gehenna_Menu = {
+	#格赫娜
+	allow = {
+		BA_SI_main_unlock_trigger = {
+			SCHOOL = Gehenna
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_Shittem.1031
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Abydos_Menu = {
+	#阿拜多斯
+	allow = {
+		BA_SI_main_unlock_trigger = {
+			SCHOOL = Abydos
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_Shittem.1032
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Hyakkiyako_Menu = {
+	#百鬼夜行
+	allow = {
+		BA_SI_sub_unlock_trigger = yes
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_Shittem.1033
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Millennium_Menu = {
+	#千年
+	allow = {
+		BA_SI_main_unlock_trigger = {
+			SCHOOL = Millennium
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_Shittem.1034
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Redwinter_Menu = {
+	#赤冬
+	allow = {
+		BA_SI_sub_unlock_trigger = yes
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_Shittem.1035
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Shanhaijing_Menu = {
+	#山海经
+	allow = {
+		BA_SI_sub_unlock_trigger = yes
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_Shittem.1036
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Trinity_Menu = {
+	#圣三一
+	allow = {
+		BA_SI_main_unlock_trigger = {
+			SCHOOL = Trinity
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_Shittem.1037
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_SI_Valkyrie_Menu = {
+	#瓦尔基里
+	allow = {
+		BA_SI_sub_unlock_trigger = yes
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_Shittem.1038
+				}
+			}
+		}
+	}
+}

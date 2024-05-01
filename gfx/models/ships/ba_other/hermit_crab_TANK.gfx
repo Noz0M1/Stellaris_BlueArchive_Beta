@@ -1,0 +1,148 @@
+objectTypes = {
+	pdxmesh = {
+		name = "hermit_crab_TANK_mesh"
+		file = "gfx\models\ships\ba_other\hermit_crab_TANK.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "hermit_crab_TANKShape"
+			index = 0
+			texture_diffuse = "CH0156_Tank_01.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "hermit_crab_mesh"
+		file = "gfx\models\ships\ba_other\hermit_crab.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "hermit_crabShape"
+			index = 0
+			texture_diffuse = "hermit_crab_diffuse.dds"
+			texture_normal = "hermit_crab_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_BOOKShape"
+			index = 0
+			texture_diffuse = "Iroha_book_2.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_HAIRShape"
+			index = 0
+			texture_diffuse = "CH0156_Hair.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_FACEShape"
+			index = 0
+			texture_diffuse = "CH0156_Face.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_EYEShape"
+			index = 0
+			texture_diffuse = "CH0156_EyeMouth.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_BODYShape"
+			index = 0
+			texture_diffuse = "CH0156_Body.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_HaloShape"
+			index = 0
+			texture_diffuse = "CH0156_Halo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "CH0156_EYE_001Shape"
+			index = 0
+			texture_diffuse = "CH0156_Mouth.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "iroha_ball_mesh"
+		file = "gfx\models\ships\ba_other\iroha_ball.mesh"
+		scale = 6.0
+
+		meshsettings = {
+			name = "CH0156_HaloShape"
+			index = 0
+			texture_diffuse = "CH0156_Halo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "CH0156_BodyShape"
+			index = 0
+			texture_diffuse = "CH0156_Body.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_EyeShape"
+			index = 0
+			texture_diffuse = "CH0156_EyeMouth.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_MouthShape"
+			index = 0
+			texture_diffuse = "CH0156_Mouth.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_FaceShape"
+			index = 0
+			texture_diffuse = "CH0156_Face.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "CH0156_HearShape"
+			index = 0
+			texture_diffuse = "CH0156_Hair.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

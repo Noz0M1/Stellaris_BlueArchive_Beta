@@ -1,0 +1,16 @@
+default = {
+	# "default" should always exists as it's the value the engine will always fall back on
+	colony_shelter = {
+		default = "building_colony_shelter"
+		pc_habitat = "building_hab_capital"
+		pc_BA_auto_habitat = "building_hab_capital"
+	}
+	weight = {
+		# scope = country
+		base = 1		# a value of 0 will be ignored entirely, otherwise the customization with the highest value wins.
+		modifier = {
+			add = 10
+			has_authority = auth_kivotos
+		}
+	}
+}

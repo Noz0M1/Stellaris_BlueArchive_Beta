@@ -1,0 +1,256 @@
+objectTypes = {
+
+	######################
+	### NEW NSC MESHES ###
+	######################
+	
+	pdxmesh = {
+		name = "bacolorized_01_dreadnought_frame_mesh"
+		file = "gfx/models/ships/bacolorized_01/NSC/bacolorized_01_dreadnought_frame.mesh"
+				animation = { id = "idle"			type = "bacolorized_01_dreadnought_frame_idle_animation" }
+				animation = { id = "death"			type = "bacolorized_01_dreadnought_frame_death_animation" }
+				animation = { id = "attack"			type = "bacolorized_01_dreadnought_frame_idle_animation" }	
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "bacolorized_01_flagship_frame_mesh"
+		file = "gfx/models/ships/bacolorized_01/NSC/bacolorized_01_flagship_frame.mesh"
+				animation = { id = "idle"			type = "bacolorized_01_flagship_frame_idle_animation" }
+				animation = { id = "death"			type = "bacolorized_01_flagship_frame_death_animation" }
+				animation = { id = "attack"			type = "bacolorized_01_flagship_frame_idle_animation" }	
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "bacolorized_01_battlecruiser_frame_mesh"
+		file = "gfx/models/ships/bacolorized_01/NSC/bacolorized_01_battlecruiser_frame.mesh"
+				animation = { id = "idle"			type = "bacolorized_01_battlecruiser_frame_idle_animation" }
+				animation = { id = "death"			type = "bacolorized_01_battlecruiser_frame_death_animation" }
+				animation = { id = "attack"			type = "bacolorized_01_battlecruiser_frame_idle_animation" }	
+		scale = 1.0
+	}
+
+	
+	
+	pdxmesh = {
+		name = "bacolorized_01_cruiser_bow_M1S2_mesh"
+		file = "gfx/models/ships/bacolorized_01/NSC/bacolorized_01_cruiser_bow_M1S2.mesh"
+		meshsettings = {
+	
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_cruiser_normal.dds"
+			texture_specular = "ba_01_cruiser_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "bacolorized_01_cruiser_mid_L1M1_mesh"
+		file = "gfx/models/ships/bacolorized_01/NSC/bacolorized_01_cruiser_mid_L1M1.mesh"
+		meshsettings = {
+	
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_cruiser_normal.dds"
+			texture_specular = "ba_01_cruiser_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "bacolorized_01_cruiser_mid_S2HB_mesh"
+		file = "gfx/models/ships/bacolorized_01/NSC/bacolorized_01_cruiser_mid_S2HB.mesh"
+		meshsettings = {
+	
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_cruiser_normal.dds"
+			texture_specular = "ba_01_cruiser_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "bacolorized_01_cruiser_mid_M2S2_mesh"
+		file = "gfx/models/ships/bacolorized_01/NSC/bacolorized_01_cruiser_mid_M2S2.mesh"
+		meshsettings = {
+	
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_cruiser_normal.dds"
+			texture_specular = "ba_01_cruiser_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "bacolorized_01_battleship_bow_XL1_mesh"
+		file = "gfx/models/ships/bacolorized_01/NSC/bacolorized_01_battleship_bow_XL.mesh"
+		meshsettings = {
+	
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_battleship_normal.dds"
+			texture_specular = "ba_01_battleship_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "bacolorized_01_battleship_bow_L1S4_mesh"
+		file = "gfx/models/ships/bacolorized_01/NSC/bacolorized_01_battleship_bow_L1S4.mesh"
+		meshsettings = {
+	
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_battleship_normal.dds"
+			texture_specular = "ba_01_battleship_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "bacolorized_01_battleship_bow_M2S4_mesh"
+		file = "gfx/models/ships/bacolorized_01/NSC/bacolorized_01_battleship_bow_M2S4.mesh"
+		meshsettings = {
+	
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_battleship_normal.dds"
+			texture_specular = "ba_01_battleship_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "bacolorized_01_battleship_bow_M3S2_mesh"
+		file = "gfx/models/ships/bacolorized_01/NSC/bacolorized_01_battleship_bow_M3S2.mesh"
+		meshsettings = {
+	
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_battleship_normal.dds"
+			texture_specular = "ba_01_battleship_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "bacolorized_01_battleship_bow_M1S2SHB_mesh"
+		file = "gfx/models/ships/bacolorized_01/NSC/bacolorized_01_battleship_bow_M1S2SHB.mesh"
+		meshsettings = {
+	
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_battleship_normal.dds"
+			texture_specular = "ba_01_battleship_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "bacolorized_01_battleship_bow_L1M1S2_mesh"
+		file = "gfx/models/ships/bacolorized_01/NSC/bacolorized_01_battleship_bow_L1M1S2.mesh"
+		meshsettings = {
+	
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_battleship_normal.dds"
+			texture_specular = "ba_01_battleship_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "bacolorized_01_battleship_mid_L1M4_mesh"
+		file = "gfx/models/ships/bacolorized_01/NSC/bacolorized_01_battleship_mid_L1M4.mesh"
+		meshsettings = {
+	
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_battleship_normal.dds"
+			texture_specular = "ba_01_battleship_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "bacolorized_01_battleship_mid_L2S4_mesh"
+		file = "gfx/models/ships/bacolorized_01/NSC/bacolorized_01_battleship_mid_L2S4.mesh"
+		meshsettings = {
+	
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_battleship_normal.dds"
+			texture_specular = "ba_01_battleship_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "bacolorized_01_battleship_mid_M4SHB_mesh"
+		file = "gfx/models/ships/bacolorized_01/NSC/bacolorized_01_battleship_mid_M4SHB.mesh"
+		meshsettings = {
+	
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_battleship_normal.dds"
+			texture_specular = "ba_01_battleship_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "bacolorized_01_battleship_mid_S4LHB_mesh"
+		file = "gfx/models/ships/bacolorized_01/NSC/bacolorized_01_battleship_mid_S4LHB.mesh"
+		meshsettings = {
+	
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_battleship_normal.dds"
+			texture_specular = "ba_01_battleship_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "bacolorized_01_battleship_mid_L2M2_mesh"
+		file = "gfx/models/ships/bacolorized_01/NSC/bacolorized_01_battleship_mid_L2M2.mesh"
+		meshsettings = {
+	
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_battleship_normal.dds"
+			texture_specular = "ba_01_battleship_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "bacolorized_01_battleship_stern_M1S2_mesh"
+		file = "gfx/models/ships/bacolorized_01/NSC/bacolorized_01_battleship_stern_M1S2.mesh"
+		meshsettings = {
+	
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_battleship_normal.dds"
+			texture_specular = "ba_01_battleship_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "bacolorized_01_battleship_stern_S4_mesh"
+		file = "gfx/models/ships/bacolorized_01/NSC/bacolorized_01_battleship_stern_S4.mesh"
+		meshsettings = {
+	
+			index = 0
+			texture_diffuse = "ba_colorized_diffuse.dds"
+			texture_normal = "ba_01_battleship_normal.dds"
+			texture_specular = "ba_01_battleship_specular.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+}

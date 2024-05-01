@@ -1,0 +1,49 @@
+# purge_Sacrifice = {
+# 	token = purge_Sacrifice
+# 	name = purge_Sacrifice
+# 	pop_escape_chance = 0.05
+# 	pop_decline_rate = 15
+# 	potential = {
+# 		exists = from
+# 		from = {
+# 			has_valid_civic = civic_BA_Omnia_Vanitas
+# 		}
+# 	}
+# 	allow = {
+# 		exists = from
+# 		from = {
+# 			has_policy_flag = BA_Arius_Guise_lifted
+# 		}
+# 	}
+# 	ai_will_do = {
+# 		factor = 0
+# 	}
+# }
+
+purge_Sacrifice = {
+	pop_escape_chance = 0.05
+	pop_decline_rate = 15
+	# 1 pop per 4 months, overrides BASE_POP_DECLINE, will only work on purge types
+	pop_modifier = {
+		pop_happiness = -10
+	}
+	pop_tooltip = Sacrificing
+	potential = {
+		exists = from
+		from = {
+			has_valid_civic = civic_BA_Omnia_Vanitas
+		}
+	}
+	allow = {
+		exists = from
+		BA_has_halo_organic = no
+		from = {
+			has_policy_flag = BA_Arius_Guise_lifted
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+#蠢驴！我要把你砍断，切开，剁碎！从现在开始，到时间的尽头，我要焯你一遍，又一遍！

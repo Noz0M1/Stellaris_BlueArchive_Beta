@@ -1,0 +1,579 @@
+
+entity = {
+	name = "ba_ship_halo_aris_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+
+
+	locator = {
+		name = "advert"
+		position = { 0 15 -4 }
+		rotation = { 90 0 0 }
+	}
+
+
+	
+	attach = {
+		advert = "halo_aris_entity"
+	}
+
+	scale = 1.0
+}
+
+entity = {
+	name = "halo_aris_entity"
+	pdxmesh = "halo_aris_mesh"
+
+	scale = 1.0
+}
+
+
+
+
+entity = {
+	name = "ba_ship_halo_station_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+	locator = {
+		name = "advert"
+		position = { 0 20 0 }
+		rotation = { 90 0 0 }
+	}
+
+
+	
+	attach = {
+		advert = "halo_station_entity"
+	}
+
+	scale = 1.0
+}
+
+entity = {
+	name = "halo_station_entity"
+	pdxmesh = "halo_station_mesh"
+
+	scale = 1.0
+}
+
+
+entity = {
+	name = "ba_ship_halo_decagrammaton_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+	locator = {
+		name = "advert"
+		position = { 0 25 0 }
+		rotation = { 90 0 0 }
+	}
+
+
+	
+	attach = {
+		advert = "halo_decagrammaton_entity"
+	}
+
+	scale = 4.0
+}
+
+entity = {
+	name = "halo_decagrammaton_entity"
+	pdxmesh = "halo_decagrammaton_mesh"
+
+	scale = 1.0
+}
+
+
+entity = {
+	name = "ba_ship_halo_decagrammaton_colorized_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+	locator = {
+		name = "advert"
+		position = { 0 25 0 }
+		rotation = { 90 0 0 }
+	}
+
+
+	
+	attach = {
+		advert = "halo_decagrammaton_colorized_entity"
+	}
+
+	scale = 4.0
+}
+
+entity = {
+	name = "halo_decagrammaton_colorized_entity"
+	pdxmesh = "halo_decagrammaton_colorized_mesh"
+
+	scale = 1.0
+}
+
+
+
+
+
+
+
+entity = {
+	name = "ba_ship_halo_extra_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+
+
+	locator = {
+		name = "advert"
+		position = { 0 15 0 }
+		rotation = { 90 0 0 }
+	}
+
+	
+	attach = {
+		advert = "halo_extra_entity"
+	}
+
+	scale = 1.0
+}
+
+
+entity = {
+	name = "halo_extra_entity"
+	pdxmesh = "halo_extra_mesh"
+
+	scale = 1.0
+}
+
+
+entity = {
+	name = "ba_ship_halo_big_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+
+
+	locator = {
+		name = "advert"
+		position = { 0 12 0 }
+		rotation = { 90 0 0 }
+	}
+
+	
+	attach = {
+		advert = "halo_big_entity"
+	}
+
+	scale = 1.0
+}
+
+
+entity = {
+	name = "halo_big_entity"
+	pdxmesh = "halo_big_mesh"
+
+	scale = 1.0
+}
+
+entity = {
+	name = "ba_ship_halo_medium_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+
+
+	locator = {
+		name = "advert"
+		position = { 0 8 0 }
+		rotation = { 90 0 0 }
+	}
+
+	
+	attach = {
+		advert = "halo_medium_entity"
+	}
+
+	scale = 1.0
+}
+
+
+entity = {
+	name = "halo_medium_entity"
+	pdxmesh = "halo_medium_mesh"
+
+	scale = 1.0
+}
+
+
+entity = {
+	name = "ba_ship_halo_small_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+
+
+	locator = {
+		name = "advert"
+		position = { 0 5 0 }
+		rotation = { 90 0 0 }
+	}
+
+	
+	attach = {
+		advert = "halo_small_entity"
+	}
+
+	scale = 1.0
+}
+
+
+entity = {
+	name = "halo_small_entity"
+	pdxmesh = "halo_small_mesh"
+
+	scale = 1.0
+}
+
+entity = {
+	name = "ba_ship_halo_mini_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+
+
+	locator = {
+		name = "advert"
+		position = { 0 5 0 }
+		rotation = { 90 0 0 }
+	}
+
+	
+	attach = {
+		advert = "halo_mini_entity"
+	}
+
+	scale = 1.0
+}
+
+
+entity = {
+	name = "halo_mini_entity"
+	pdxmesh = "halo_mini_mesh"
+
+	scale = 1.0
+}
+
+
+
+
+entity = {
+	name = "ba_ship_halo_station_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+	locator = {
+		name = "advert"
+		position = { 0 20 0 }
+		rotation = { 90 0 0 }
+	}
+
+
+	
+	attach = {
+		advert = "halo_station_entity"
+	}
+
+	scale = 1.0
+}
+
+entity = {
+	name = "halo_station_entity"
+	pdxmesh = "halo_station_mesh"
+
+	scale = 1.0
+}
+
+
+entity = {
+	name = "ba_ship_halo_decagrammaton_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+	locator = {
+		name = "advert"
+		position = { 0 25 0 }
+		rotation = { 90 0 0 }
+	}
+
+
+	
+	attach = {
+		advert = "halo_decagrammaton_entity"
+	}
+
+	scale = 4.0
+}
+
+entity = {
+	name = "halo_decagrammaton_entity"
+	pdxmesh = "halo_decagrammaton_mesh"
+
+	scale = 1.0
+}
+
+
+entity = {
+	name = "ba_ship_halo_decagrammaton_colorized_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+	locator = {
+		name = "advert"
+		position = { 0 25 0 }
+		rotation = { 90 0 0 }
+	}
+
+
+	
+	attach = {
+		advert = "halo_decagrammaton_colorized_entity"
+	}
+
+	scale = 4.0
+}
+
+entity = {
+	name = "halo_decagrammaton_colorized_entity"
+	pdxmesh = "halo_decagrammaton_colorized_mesh"
+
+	scale = 1.0
+}
+
+
+
+
+
+
+###################
+
+
+entity = {
+	name = "ba_ship_halo_colorized_station_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+	locator = {
+		name = "advert"
+		position = { 0 20 0 }
+		rotation = { 90 0 0 }
+	}
+
+
+	
+	attach = {
+		advert = "halo_colorized_station_entity"
+	}
+
+	scale = 1.0
+}
+
+entity = {
+	name = "halo_colorized_station_entity"
+	pdxmesh = "halo_colorized_station_mesh"
+
+	scale = 1.0
+}
+
+
+
+entity = {
+	name = "ba_ship_halo_colorized_extra_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+
+
+	locator = {
+		name = "advert"
+		position = { 0 15 0 }
+		rotation = { 90 0 0 }
+	}
+
+	
+	attach = {
+		advert = "halo_colorized_extra_entity"
+	}
+
+	scale = 1.0
+}
+
+
+entity = {
+	name = "halo_colorized_extra_entity"
+	pdxmesh = "halo_colorized_extra_mesh"
+
+	scale = 1.0
+}
+
+
+entity = {
+	name = "ba_ship_halo_colorized_big_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+
+
+	locator = {
+		name = "advert"
+		position = { 0 12 0 }
+		rotation = { 90 0 0 }
+	}
+
+	
+	attach = {
+		advert = "halo_colorized_big_entity"
+	}
+
+	scale = 1.0
+}
+
+
+entity = {
+	name = "halo_colorized_big_entity"
+	pdxmesh = "halo_colorized_big_mesh"
+
+	scale = 1.0
+}
+
+entity = {
+	name = "ba_ship_halo_colorized_medium_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+
+
+	locator = {
+		name = "advert"
+		position = { 0 8 0 }
+		rotation = { 90 0 0 }
+	}
+
+	
+	attach = {
+		advert = "halo_colorized_medium_entity"
+	}
+
+	scale = 1.0
+}
+
+
+entity = {
+	name = "halo_colorized_medium_entity"
+	pdxmesh = "halo_colorized_medium_mesh"
+
+	scale = 1.0
+}
+
+
+entity = {
+	name = "ba_ship_halo_colorized_small_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+
+
+	locator = {
+		name = "advert"
+		position = { 0 5 0 }
+		rotation = { 90 0 0 }
+	}
+
+	
+	attach = {
+		advert = "halo_colorized_small_entity"
+	}
+
+	scale = 1.0
+}
+
+
+entity = {
+	name = "halo_colorized_small_entity"
+	pdxmesh = "halo_colorized_small_mesh"
+
+	scale = 1.0
+}
+
+entity = {
+	name = "ba_ship_halo_colorized_mini_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+
+	locator = { name = "part1" }
+
+	default_state = "idle"
+
+
+	locator = {
+		name = "advert"
+		position = { 0 5 0 }
+		rotation = { 90 0 0 }
+	}
+
+	
+	attach = {
+		advert = "halo_colorized_mini_entity"
+	}
+
+	scale = 1.0
+}
+
+
+entity = {
+	name = "halo_colorized_mini_entity"
+	pdxmesh = "halo_colorized_mini_mesh"
+
+	scale = 1.0
+}
+
+
+
+
+

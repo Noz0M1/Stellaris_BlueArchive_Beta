@@ -1,0 +1,317 @@
+on_game_start_country = {
+	events = {
+		# 通用
+		BA_Shittem.0001		#什亭之匣的关爱
+		# 项目
+		BA_Project.0001		#目标设定
+		# 起源
+		BA_origin.2001		#站开
+		BA_origin.1001		#阿里乌斯		
+		BA_origin.0001		#伊甸条约
+		BA_rename.1000		#重命名开关触发器
+		# 先驱者（放在最后）
+		BA_Precursor.0001		#生成相应的星系
+	}
+}
+
+on_monthly_pulse_country = {
+	events = {
+		BA_Precursor.0002
+		#BA_Shittem.9990		#月产出计数
+		#BA_Shittem.9992		#先驱者通讯月检
+		BA_Shittem.4000		#学园理念月检
+		BA_Easter_egg.9999		#彩蛋月检
+	}
+}
+
+on_yearly_pulse_country = {
+	events = {
+		BA_Shittem.2001		#委托触发器
+		BA_Shittem.2002		#委托触发器
+		BA_Shittem.2003		#委托触发器
+		BA_ape.0001		#光环飞升事件
+		BA_ape.1102		#领袖光环特质年检
+		BA_Project.0002		#摇篮计划
+	}
+}
+
+on_five_year_pulse_country = {
+	events = {
+		BA_Shittem.1921		#青辉石修复委托：提示
+		BA_rename.1002		#领袖重命名动作触发器
+	}
+}
+
+on_decade_pulse_country = {
+	events = {
+		BA_Shittem.2008		#提示去委托页面查看
+	}
+}
+
+# Executed right after country has established communications with another country. Does not fire if comms are established with establish_communications_no_message
+# This = Country which established the communications
+# From = Country which communications were established with
+on_post_communications_established = {
+	events = {
+		BA_origin.1453		#阿里乌斯 面纱之下
+		BA_origin.1454		#阿里乌斯 面纱之下
+	}
+}
+
+# A war is beginning, executed for every country in the war.
+# Root = Country
+# From = War
+on_war_beginning = {
+	events = {
+		BA_origin.1451		#阿里乌斯 揭开面纱
+	}
+}
+
+# This = destroyed country
+# From = optional, destroyer (country)
+on_country_destroyed = {
+	events = {
+		BA_origin.1455		#阿里乌斯 摧毁国家
+	}
+}
+
+# This = country
+# From = leader
+on_leader_spawned = {
+	events = {
+		BA_ape.1101		#新领袖获得特质
+		BA_rename.1003		#重命名系统
+	}
+}
+
+# A leader is added to the leader pool, available for recruitment
+# scope: country, from: leader
+on_added_to_leader_pool = {
+	events = {
+		BA_Shittem.4024
+	}
+}
+
+# This = Leader
+on_leader_hired = {
+	events = {
+	}
+}
+
+# This = Country
+# From = Leader
+on_leader_fired = {
+	events = {
+		#BA_Shittem.1964		#重生领袖用
+	}
+}
+
+# Scope = Country
+# From = Leader
+on_leader_level_up = {
+	events = {
+		BA_rename.1101		#3级 添加个人特质
+	}
+}
+
+# This = target country (player)
+# From = source country
+on_custom_diplomacy = {
+	events = {
+		BA_Shittem.1000		#BA_Shittem.1000		#Arona通讯界面
+		BA_Precursor.0150		#先驱者通讯
+		BA_club.0050		#社团
+		BA_crisis.1180		#中期天灾-爱丽丝
+	}
+}
+
+on_tech_increased = {
+	events = {
+		BA_Shittem.0101		#研究“修复什亭之匣”，开启事件链
+		BA_ape.0002		#研究完成两个飞升前置科技，开启局势
+		BA_origin.1004		#遗忘众神起源
+		BA_origin.1101		#遗忘众神起源
+		BA_origin.1401		#遗忘众神起源
+		BA_Shittem.1923		#青辉石项目用
+		BA_Shittem.3005		#姬器人委托用
+		BA_club.0001		#社团提示
+		BA_club.1190		#工程部武器研究选项
+	}
+}
+
+# This = country, attack leader
+# From = country, planet owner
+# FromFrom = planet
+on_planet_attackers_lose = {
+	events = {
+		BA_origin.1220		#遗忘众神起源 爆金币
+		#BA_Emergencies.0102		#突发事件：Rabbit突袭
+		#BA_Emergencies.0502		#突发事件：给食部与美食研
+		BA_origin.2051		#站开起源
+	}
+}
+
+# This = country, leader attacker
+# From = country, planet owner
+# FromFrom = planet
+on_planet_attackers_win = {
+	events = {
+		BA_origin.1411		#遗忘众神起源 抵抗失败boom
+		BA_origin.1415		#被其他国家攻占 boom
+		BA_origin.2052		#站开起源
+	}
+}
+
+on_colony_3_years_old = {
+	events = {
+		BA_Project.0017		#触发摇篮计划2阶段
+	}
+}
+
+# Root = Ship
+# From = Planet
+on_ship_built = {
+	events = {
+		BA_Shittem.2004
+		BA_club.0002
+		# TODO：武器组
+		BA_Shittem.3051		#武器组 独特点子+清爽灵感
+	}
+}
+
+on_ship_upgraded = {
+	events = {
+		# TODO：武器组
+		BA_Shittem.3020		#更新武器组
+		BA_Shittem.3051		#武器组 独特点子+清爽灵感
+	}
+}
+
+# This = new capital
+# From = old capital
+on_capital_changed = {
+	events = {
+	}
+}
+
+# This = owner of fleet 1
+# From = owner of fleet 2
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+on_entering_battle = {
+	events = {
+		BA_crisis.1008		#攻击中立时的爱丽丝
+	}
+}
+
+# This = Ship
+# From = Disabler Ship
+on_ship_disabled = {
+	events = {
+		BA_crisis.1015		#瘫痪爱丽丝旗舰
+	}
+}
+
+# This = ship
+# From = system
+on_system_survey_ship = {
+	events = {
+		BA_Precursor.0057		#跳线点考古遗址
+	}
+}
+
+# This = Ship
+# From = System
+# FromFrom = Country
+on_entering_system_first_time = {
+	events = {
+		BA_Precursor.0051		#通讯接口
+		BA_Precursor.0052		#失落帝国境内
+		BA_Precursor.0054		#失落帝国母星
+		BA_Precursor.0060		#待售信息计数
+	}
+}
+
+on_mid_game_pulse_country = {
+	events = {
+		#BA_Precursor.0010		#启动外域星门 之后改为中期触发
+		#BA_Precursor.0011		#启动失落帝国内星门 之后改为其他触发
+	}
+}
+
+on_fleet_enter_orbit = {
+	events = {
+		BA_club.0005		#社团舰建立社团
+	}
+}
+
+on_colonization_started = {
+	events = {
+		BA_club.0030		#社团舰开始殖民
+	}
+}
+
+on_colonized = {
+	events = {
+		BA_origin.2110		#居住站殖民完成
+		BA_Shittem.4011		#学园理念 阿拜多斯B01
+		BA_Shittem.4021		#学园理念 阿拜多斯G02
+	}
+}
+
+# This = Planet scope
+# From = Country scope (new owner)
+# FromFrom = Country scope (previous owner, if any)
+on_planet_transfer = {
+	events = {
+		BA_Shittem.4022		#学园理念 格黑那A03
+	}
+}
+
+on_jump_drive = {
+	events = {
+	}
+}
+
+##### 巨构
+# This = owner of fleet
+# From = disbanded fleet
+on_fleet_disbanded = {
+	events = {
+		BA_Shittem.3111		#自动化模块-拆卸
+	}
+}
+
+# This = owner of ship
+# From = disbanded ship
+on_ship_disbanded = {
+	events = {
+		BA_Shittem.3111		#自动化模块-拆卸
+	}
+}
+
+##### 歼星级武器
+on_destroy_planet_with_Sweepers = {
+	events = {
+		BA_Shittem.3050
+	}
+}
+
+
+
+
+
+##### 自定义
+# BA国家初始化
+on_BA_country_init = {
+
+}
+
+on_BA_Emergency = {
+	# random_events = {
+	# 	10 = BA_Emergencies.0100		#rabbit
+	# 	10 = BA_Emergencies.0500		#美食研
+	# 	30 = BA_Emergencies.9991		#hina阻止搞事——保持此项权重为30%！
+	# 	50 = BA_Emergencies.9992		#小打小闹
+	# }
+}

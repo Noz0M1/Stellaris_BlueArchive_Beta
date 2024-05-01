@@ -1,0 +1,11 @@
+title = $CLUB$
+desc = $CHARA$_desc1
+desc = $CHARA$_desc2
+desc = $CHARA$_desc3
+is_triggered_only = yes
+diplomatic = yes
+custom_gui = "BA_window"
+picture_event_data = {
+	portrait = BA_$CHARA$
+	room = BA_06_room
+}

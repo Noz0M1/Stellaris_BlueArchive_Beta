@@ -1,0 +1,18 @@
+special_project = {
+	key = "BA_MID_GET_ARIS"
+	cost = 0
+	days_to_research = 60
+	tech_department = engineering_technology
+	picture = GFX_evt_sabotaged_ship
+	event_scope = ship_event
+	requirements = {
+		shipclass_military = 1
+	}
+	on_success = {
+		ship_event = {
+			id = BA_crisis.1016
+		}
+	}
+	on_fail = {
+	}
+}

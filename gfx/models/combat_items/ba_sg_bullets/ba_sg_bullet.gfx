@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "ba_sg_bullet_mesh"
+		file = "gfx\models\combat_items\ba_sg_bullets\ba_sg_bullet.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ba_sg_bulletShape"
+			index = 0
+			texture_diffuse = "ba_sg_bullet.dds"
+			texture_normal = "DiffuseEmissive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+}

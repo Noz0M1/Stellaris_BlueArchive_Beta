@@ -1,0 +1,469 @@
+#联邦星际探索局
+civic_BA_explore = {
+	icon = "gfx/interface/icons/civics/Icon_explore.dds"
+	potential = {
+		authority = {
+			value = auth_kivotos
+		}
+	}
+	possible = {
+	}
+	random_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			is_ai = yes
+			has_authority = auth_kivotos
+		}
+	}
+	modifier = {
+		science_ship_survey_speed = 0.2
+		#ship_archeaological_site_clues_add = 2
+		ship_anomaly_generation_chance_mult = 0.15
+		ship_anomaly_research_speed_mult = 0.15
+		empire_size_colonies_mult = -0.1
+	}
+}
+
+#枪械，少女，青春
+civic_BA_Kivotos = {
+	icon = "gfx/interface/council_view/icon_BA_councilor_culture_kivotos.dds"
+	potential = {
+		authority = {
+			value = auth_kivotos
+		}
+	}
+	possible = {
+	}
+	# 话说我为啥要给AI100来着？  --删了，这下成未解之谜了
+	random_weight = {
+		base = 0
+	}
+	modifier = {
+		ship_weapon_range_mult = 0.1
+		ship_fire_rate_mult = 0.1
+		ship_weapon_damage = 0.1
+		commander_skill_levels = 3
+		planet_stability_add = -5
+		planet_crime_mult = 0.15
+	}
+}
+
+#公会制自治区
+civic_BA_guild_region = {
+	icon = "gfx/interface/council_view/icon_BA_councilor_mediation_kivotos.dds"
+	potential = {
+		authority = {
+			value = auth_kivotos
+		}
+	}
+	random_weight = {
+		base = 0
+	}
+	modifier = {
+		planet_max_districts_mult = 0.2
+		planet_jobs_consumer_goods_produces_mult = 0.1
+		planet_jobs_food_produces_mult = 0.1
+	}
+}
+
+#涂鸦式分布情报网
+civic_BA_info_net = {
+	icon = "gfx/interface/council_view/icon_BA_councilor_trade_kivotos.dds"
+	potential = {
+		authority = {
+			value = auth_kivotos
+		}
+		origin = {
+			NOT = {
+				value = origin_Kivotos_Kyrie
+			}
+		}
+	}
+	random_weight = {
+		base = 0
+	}
+	modifier = {
+		trade_value_mult = 0.1
+		starbase_trade_collection_range_add = 2
+		starbase_trade_protection_range_add = 2
+		starbase_trade_protection_add = 30
+	}
+}
+
+#后援会精算
+civic_BA_federal_actuaries = {
+	icon = "gfx/interface/council_view/icon_BA_councilor_finances_kivotos.dds"
+	potential = {
+		authority = {
+			value = auth_kivotos
+		}
+	}
+	random_weight = {
+		base = 0
+	}
+	modifier = {
+		country_sr_pyroxenes_cost_mult = -0.2
+		planet_districts_energy_upkeep_mult = -0.2
+		planet_buildings_energy_upkeep_mult = -0.2
+	}
+}
+
+#数字化据点
+civic_BA_digital_basis = {
+	icon = "gfx/interface/council_view/icon_BA_councilor_medic_kivotos.dds"
+	potential = {
+		authority = {
+			value = auth_kivotos
+		}
+		origin = {
+			NOT = {
+				value = origin_Kivotos_Unnamed_starting
+			}
+		}
+
+	}
+	random_weight = {
+		base = 0
+	}
+	#civic_BA_digital_basis_tip
+	modifier = {
+		planet_max_buildings_add = 2
+		planet_pops_upkeep_mult = -0.1
+	}
+}
+
+### 学园级
+# 阿拜多斯
+civic_SI_Abydos = {
+	icon = "gfx/interface/icons/governments/civics/Abydos.dds"
+	modification = {
+		moddable_conditions_custom_tooltip = civic_SI_mod
+		add = {
+			BA_civic_SI_add_trigger = yes
+		}
+		remove = {
+			always = no
+		}
+	}
+	potential = {
+		authority = {
+			value = auth_kivotos
+		}
+	}
+	possible = {
+		civics = {
+			NOR = {
+				text = civic_one_school_only
+				value = civic_SI_Millennium
+				value = civic_SI_Trinity
+				value = civic_SI_Gehenna
+			}
+		}
+	}
+	random_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			is_ai = yes
+			has_authority = auth_kivotos
+		}
+	}
+	description = civic_SI_tip
+	modifier = {
+		planet_building_build_speed_mult = 0.3
+		terraform_speed_mult = 0.5
+		deposit_blockers_cost_mult = -0.3
+		planet_decision_enact_speed_mult = 0.25
+	}
+}
+
+# 千年
+civic_SI_Millennium = {
+	icon = "gfx/interface/icons/governments/civics/Millennium.dds"
+	modification = {
+		moddable_conditions_custom_tooltip = civic_SI_mod
+		add = {
+			BA_civic_SI_add_trigger = yes
+		}
+		remove = {
+			always = no
+		}
+	}
+	potential = {
+		authority = {
+			value = auth_kivotos
+		}
+	}
+	possible = {
+		civics = {
+			NOR = {
+				text = civic_one_school_only
+				value = civic_SI_Abydos
+				value = civic_SI_Trinity
+				value = civic_SI_Gehenna
+			}
+		}
+	}
+	random_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			is_ai = yes
+			has_authority = auth_kivotos
+		}
+	}
+	description = civic_SI_tip
+	modifier = {
+		planet_researchers_produces_mult = 0.2
+		num_tech_alternatives_add = 1
+		job_BA_club_members_per_pop = 0.05
+		planet_researchers_upkeep_mult = 0.1
+	}
+}
+
+# 圣三一
+civic_SI_Trinity = {
+	icon = "gfx/interface/icons/governments/civics/Trinity.dds"
+	modification = {
+		moddable_conditions_custom_tooltip = civic_SI_mod
+		add = {
+			BA_civic_SI_add_trigger = yes
+		}
+		remove = {
+			always = no
+		}
+	}
+	potential = {
+		authority = {
+			value = auth_kivotos
+		}
+	}
+	possible = {
+		civics = {
+			NOR = {
+				text = civic_one_school_only
+				value = civic_SI_Millennium
+				value = civic_SI_Abydos
+				value = civic_SI_Gehenna
+			}
+		}
+	}
+	random_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			is_ai = yes
+			has_authority = auth_kivotos
+		}
+	}
+	description = civic_SI_tip
+	modifier = {
+		country_unity_produces_mult = 0.2
+		envoys_add = 1
+		diplo_weight_mult = 0.3
+		country_trust_growth = 0.3
+	}
+}
+
+# 欣嫰谷
+civic_SI_Gehenna = {
+	icon = "gfx/interface/icons/governments/civics/Gehenna.dds"
+	modification = {
+		moddable_conditions_custom_tooltip = civic_SI_mod
+		add = {
+			BA_civic_SI_add_trigger = yes
+		}
+		remove = {
+			always = no
+		}
+	}
+	potential = {
+		authority = {
+			value = auth_kivotos
+		}
+	}
+	possible = {
+		civics = {
+			NOR = {
+				text = civic_one_school_only
+				value = civic_SI_Millennium
+				value = civic_SI_Abydos
+				value = civic_SI_Trinity
+			}
+		}
+	}
+	random_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			is_ai = yes
+			has_authority = auth_kivotos
+		}
+	}
+	description = civic_SI_tip
+	modifier = {
+		empire_size_mult = -0.2
+		diplo_weight_mult = -0.1
+		country_trust_growth = -0.1
+	}
+}
+
+###################
+#万物皆虚
+civic_BA_Omnia_Vanitas = {
+	icon = "gfx/interface/icons/governments/civics/azusa.dds"
+	modification = no
+	potential = {
+		authority = {
+			value = auth_kivotos
+		}
+	}
+	random_weight = {
+		base = 0
+	}
+	possible = {
+		origin = {
+			NOT = {
+				value = origin_Kivotos_Eden_treaty
+			}
+		}
+	}
+	description = "civic_BA_Omnia_Vanitas_effects"
+	modifier = {
+		country_unity_produces_mult = 0.2
+		envoys_add = -1
+		country_starbase_influence_cost_mult = -0.3
+		ship_weapon_damage = 0.25
+		starbase_shipyard_build_cost_mult = -0.15
+		country_naval_cap_mult = 0.33
+		country_resettlement_cost_mult = 1.5
+	}
+}
+
+###################
+#堕落帝国
+civic_ba_fe = {
+	icon = "gfx/interface/council_view/icon_BA_councilor_research_kivotos.dds"
+	potential = {
+		country_type = {
+			value = fallen_empire
+		}
+		authority = {
+			value = auth_kivotos_pr
+		}
+	}
+	modifier = {
+		country_war_exhaustion_mult = 0.2
+		planet_max_buildings_add = 16
+		job_BA_fe_defender_per_pop = 0.1
+		#
+		country_base_influence_produces_add = 500
+		country_resource_max_add = 100000
+		country_base_energy_produces_add = 10000000
+		country_minerals_produces_mult = 10000000
+		country_food_produces_mult = 10000000
+		country_alloys_produces_mult = 10000000
+		country_consumer_goods_produces_mult = 10000000
+		country_volatile_motes_produces_mult = 10000000
+		country_exotic_gases_produces_mult = 10000000
+		country_rare_crystals_produces_mult = 10000000
+		country_unity_produces_mult = 10000000
+		country_base_minor_artifacts_produces_add = 10000000
+		#
+		#ships_upkeep_mult = -10000000
+		armies_upkeep_mult = -1
+		leaders_upkeep_mult = -1
+		starbases_upkeep_mult = -1
+		planet_pops_upkeep_mult = -1
+		planet_jobs_upkeep_mult = -1
+		#
+		ship_weapon_range_mult = 0.5
+		ship_fire_rate_mult = 0.5
+		ship_hull_mult = 0.5
+		ships_upkeep_mult = -1
+	}
+	random_weight = {
+		base = 0
+	}
+}
+
+civic_ba_awakened_fe = {
+	icon = "gfx/interface/council_view/icon_BA_councilor_research_kivotos.dds"
+	potential = {
+		country_type = {
+			value = awakened_fallen_empire
+		}
+		authority = {
+			value = auth_kivotos_pr
+		}
+	}
+	modifier = {	
+	country_war_exhaustion_mult = 0.2
+	planet_max_buildings_add = 16
+	job_BA_fe_defender_per_pop = 0.1
+	#
+	country_base_influence_produces_add = 500
+	country_resource_max_add = 100000
+	country_base_energy_produces_add = 10000
+	country_base_minerals_produces_add = 10000
+	country_base_food_produces_add = 10000
+	country_base_alloys_produces_add = 10000
+	country_base_consumer_goods_produces_add = 10000
+	country_base_volatile_motes_produces_add = 10000
+	country_base_exotic_gases_produces_add = 10000
+	country_base_rare_crystals_produces_add	= 10000
+	country_base_unity_produces_add = 10000
+	#
+	armies_upkeep_mult = -0.2
+	leaders_upkeep_mult = -1
+	starbases_upkeep_mult = -1
+	planet_pops_upkeep_mult = -1
+	planet_jobs_upkeep_mult = -1
+	#
+	ship_disengage_chance_mult = 0.5
+	starbase_shipyard_capacity_add = 30
+	country_naval_cap_add = 9999
+	ship_weapon_range_mult = 1
+	ship_fire_rate_mult = 10
+	ship_hull_mult = 1
+	ships_upkeep_mult = -1
+	}
+	random_weight = {
+		base = 0
+	}
+}
+
+civic_ba_awakened_fe_advance = {
+	icon = "gfx/interface/icons/governments/civics/azusa.dds"	#觉醒旗帜（N/A）
+	potential = {
+		country_type = {
+			value = awakened_fallen_empire
+		}
+		authority = {
+			value = auth_kivotos_pr
+		}
+	}
+	modifier = {
+		ships_upkeep_mult = -0.4
+		ship_hull_mult = 0.1
+		ship_hull_regen_add_static = 10
+		ship_shield_mult = 0.1
+		ship_shield_regen_add_static = 50
+		ship_shield_damage_mult = 0.1
+		ship_shield_penetration_mult = 0.1
+		ship_armor_mult = 0.1
+		ship_armor_regen_add_static = 50
+		ship_armor_damage_mult = 0.1
+		ship_armor_penetration_mult = 0.1
+		ship_disengage_chance_mult = 0.5
+		starbase_shipyard_capacity_add = 30
+		ship_starting_experience_add = 10000
+		country_naval_cap_add = 9999
+		country_resource_max_add = 1000000
+		planet_max_buildings_add = 16		#觉醒过后的各类加成
+	}
+	random_weight = {
+		base = 99999
+	}
+}

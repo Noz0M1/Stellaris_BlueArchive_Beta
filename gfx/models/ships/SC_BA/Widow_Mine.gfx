@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Widow_Mine_mesh"
+		file = "gfx\models\ships\SC_BA\Widow_Mine.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Widow_MineShape"
+			index = 0
+			texture_diffuse = "widowmine_diff.dds"
+			texture_normal = "widowmine_norm.dds"
+			texture_specular = "widowmine_spec.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

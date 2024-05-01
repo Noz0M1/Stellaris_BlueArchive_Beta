@@ -1,0 +1,791 @@
+#### 事件链用科技
+#什亭之匣
+tech_BA_Shittem_starting = {
+	area = physics
+	cost = 2000
+	tier = 1
+	is_rare = yes
+	is_dangerous = yes
+	category = {
+		school_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_Shittem_starting_tips
+			desc = tech_BA_Shittem_starting_desc
+		}
+	}
+}
+
+#学园重建
+tech_BA_institute_of_reconstruction = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	is_rare = no
+	category = {
+		school_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prereqfor_desc = {
+		hide_prereq_for_desc = feature
+		custom = {
+			title = "TECH_UNLOCK_reconstruction"
+			desc = "TECH_UNLOCK_reconstructionD_ESC"
+		}
+	}
+	weight = 0
+}
+
+#废墟混成研究
+tech_BA_ruins_research = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = {
+		school_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+		has_origin = origin_Kivotos_Kyrie
+	}
+	is_rare = yes
+	prereqfor_desc = {
+		hide_prereq_for_desc = feature
+		custom = {
+			title = tech_BA_ruins_research_title
+			desc = tech_BA_ruins_research_desc
+		}
+	}
+	weight = 0
+}
+
+#阿里乌斯 采矿科技
+tech_BA_ruins_mining = {
+	area = engineering
+	cost = @tier3cost1
+	tier = 3
+	is_rare = yes
+	category = {
+		school_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+		has_origin = origin_Kivotos_Kyrie
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_ruins_mining_title
+			desc = tech_BA_ruins_mining_desc
+		}
+	}
+	weight = 0
+}
+
+#阿里乌斯 星球重建
+tech_BA_Arius_planet_rebuild = {
+	area = engineering
+	cost = @tier4cost1
+	tier = 3
+	is_rare = yes
+	is_dangerous = yes
+	category = {
+		school_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+		has_origin = origin_Kivotos_Kyrie
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_Arius_planet_rebuild_title
+			desc = tech_BA_Arius_planet_rebuild_desc
+		}
+	}
+	weight = 0
+}
+
+#光环炸弹
+tech_BA_Arius_antihalo = {
+	area = physics
+	cost = @tier2cost3
+	tier = 3
+	is_rare = yes
+	is_dangerous = yes
+	category = {
+		school_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_Arius_antihalo_title
+			desc = tech_BA_Arius_antihalo_desc
+		}
+	}
+	modifier = {
+		army_attack_damage_mult = 0.3
+	}
+	weight = 0
+}
+
+#堕落帝国
+tech_BA_fe = {
+	area = society
+	cost = @tier5cost3
+	tier = 5
+	is_rare = yes
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	category = {
+		school_tech
+	}
+	potential = {
+		always = no
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_fe_desc
+			desc = tech_BA_fe_desc
+		}
+	}
+	weight = 0
+}
+
+#星门建造
+tech_BA_gate_build = {
+	icon = tech_gateway_activation
+	area = engineering
+	cost = @tier3cost3
+	tier = 1
+	is_rare = yes
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	category = {
+		school_tech
+	}
+	potential = {
+		has_country_flag = BA_GateBuilder
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_gate_build
+			desc = tech_BA_gate_build
+		}
+	}
+	weight = 0
+}
+
+#### 飞升科技
+#初步光环理论（基础路线 1阶）
+tech_BA_Preliminary_ring_theory = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	is_rare = no
+	category = {
+		students_rings_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_Preliminary_ring_theory_title
+			desc = tech_BA_Preliminary_ring_theory_desc
+		}
+	}
+	weight = 0
+}
+
+#光环解析装置（基础路线 2阶）
+tech_BA_Ring_resolution_device = {
+	area = physics
+	cost = @tier2cost2
+	tier = 2
+	is_rare = yes
+	is_dangerous = yes
+	category = {
+		students_rings_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier2weight2
+	weight_modifier = {
+		modifier = {
+			years_passed = 25
+			add = 100
+		}
+		modifier = {
+			factor = 2
+			any_council_member = {
+				has_trait = "leader_trait_ui_SP1"
+			}
+		}
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_Ring_resolution_device_title
+			desc = tech_BA_Ring_resolution_device_desc
+		}
+	}
+	prerequisites = {
+		tech_BA_Preliminary_ring_theory
+	}
+}
+
+#光环增幅实验（基础路线 3阶-改造路线飞升前置）
+tech_BA_Halo_power_increase = {
+	area = society
+	cost = @tier2cost3
+	tier = 2
+	is_rare = no
+	category = {
+		students_rings_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_Halo_power_increase_title
+			desc = tech_BA_Halo_power_increase_desc
+		}
+	}
+	weight = @tier2weight2
+	weight_modifier = {
+		modifier = {
+			years_passed = 25
+			add = 100
+		}
+		modifier = {
+			years_passed = 40
+			add = 100
+		}
+		modifier = {
+			factor = 2
+			any_council_member = {
+				has_trait = "leader_trait_ui_SP1"
+			}
+		}
+	}
+	modifier = {
+		army_attack_damage_mult = 0.1
+	}
+	prerequisites = {
+		tech_BA_Ring_resolution_device
+	}
+}
+
+#神性解放理论（基础路线 3阶-解放路线飞升前置）
+tech_BA_Divine_liberation_theory = {
+	area = society
+	cost = @tier2cost3
+	tier = 2
+	is_rare = no
+	category = {
+		students_rings_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_Divine_liberation_theory_title
+			desc = tech_BA_Divine_liberation_theory_desc
+		}
+	}
+	modifier = {
+		country_society_research_produces_mult = 0.1
+	}
+	weight = @tier2weight2
+	weight_modifier = {
+		modifier = {
+			years_passed = 25
+			add = 100
+		}
+		modifier = {
+			years_passed = 40
+			add = 100
+		}
+		modifier = {
+			factor = 2
+			any_council_member = {
+				has_trait = "leader_trait_ui_SP1"
+			}
+		}
+	}
+	prerequisites = {
+		tech_BA_Ring_resolution_device
+	}
+}
+
+#光环编码：外环（改造路线 1阶）
+tech_BA_Halo_coding_outline = {
+	area = physics
+	cost = @tier3cost3
+	tier = 3
+	category = {
+		students_rings_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_Halo_coding_outline_title
+			desc = tech_BA_Halo_coding_outline_desc
+		}
+	}
+	prerequisites = {
+		"tech_BA_Ring_resolution_device"
+	}
+	modifier = {
+		planet_jobs_physics_research_produces_mult = 0.1
+	}
+}
+
+#光环编码：空区（改造路线 2阶）
+tech_BA_Halo_coding_space = {
+	area = physics
+	cost = @tier4cost2
+	tier = 3
+	category = {
+		students_rings_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier4weight2
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_Halo_coding_space_title
+			desc = tech_BA_Halo_coding_space_desc
+		}
+	}
+	prerequisites = {
+		"tech_BA_Halo_coding_outline"
+	}
+	modifier = {
+		Schale_species_trait_points_add = 1
+	}
+}
+
+#光环编码：内环（改造路线 3阶）
+tech_BA_Halo_coding_inner = {
+	area = physics
+	cost = @tier5cost1
+	tier = 5
+	is_rare = yes
+	category = {
+		students_rings_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight2
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_Halo_coding_inner_title
+			desc = tech_BA_Halo_coding_inner_desc
+		}
+	}
+	prerequisites = {
+		"tech_BA_Halo_coding_space"
+	}
+	modifier = {
+		Schale_species_trait_points_add = 1
+	}
+}
+
+#神性解放实验（解放路线 1阶）
+tech_BA_Preliminary_divine_liberation = {
+	area = society
+	cost = @tier3cost3
+	tier = 3
+	is_rare = yes
+	category = {
+		students_rings_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_Preliminary_divine_liberation_title
+			desc = tech_BA_Preliminary_divine_liberation_desc
+		}
+	}
+	prerequisites = {
+		"tech_BA_Divine_liberation_theory"
+		"tech_BA_pyroxenes_using"
+	}
+}
+
+#青辉石外接增幅器（解放路线 2阶）
+tech_BA_Halo_amplifier = {
+	area = physics
+	cost = @tier4cost2
+	tier = 4
+	is_rare = yes
+	is_dangerous = yes
+	category = {
+		students_rings_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier4weight2
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_ui_SP1"
+			}
+		}
+	}
+	prerequisites = {
+		"tech_BA_Preliminary_divine_liberation"
+	}
+}
+
+#外接增幅器升级（解放路线 3阶）
+tech_BA_amplifier_upgrade = {
+	area = physics
+	cost = @tier5cost1
+	tier = 5
+	category = {
+		students_rings_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight2
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_ui_SP1"
+			}
+		}
+	}
+	prerequisites = {
+		"tech_BA_Halo_amplifier"
+	}
+	feature_flags = {
+		add_advanced_traits
+	}
+}
+
+#### 社团项目科技
+## 游戏开发部
+tech_BA_club_Game_development_department_01 = {
+	icon = tech_BA_Aris_uplifting
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = {
+		school_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+		has_country_flag = BA_Game_development_department
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_club_Game_development_department_01_title
+		}
+	}
+	weight = 99999
+}
+
+tech_BA_club_Game_development_department_02 = {
+	icon = tech_BA_Aris_uplifting
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = {
+		school_tech
+	}
+	prerequisites = {
+		tech_BA_club_Game_development_department_01
+	}
+	potential = {
+		has_authority = auth_kivotos
+		has_country_flag = BA_Game_development_department
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_club_Game_development_department_02_title
+		}
+	}
+	weight = 99999
+}
+
+tech_BA_club_Game_development_department_03 = {
+	icon = tech_BA_Aris_uplifting
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = {
+		school_tech
+	}
+	prerequisites = {
+		tech_BA_club_Game_development_department_02
+	}
+	potential = {
+		has_authority = auth_kivotos
+		has_country_flag = BA_Game_development_department
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_club_Game_development_department_03_title
+		}
+	}
+	weight = 99999
+}
+
+tech_BA_club_Game_development_department_04 = {
+	icon = tech_BA_Aris_uplifting
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = {
+		school_tech
+	}
+	prerequisites = {
+		tech_BA_club_Game_development_department_03
+	}
+	potential = {
+		has_authority = auth_kivotos
+		has_country_flag = BA_Game_development_department
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_club_Game_development_department_04_title
+		}
+	}
+	weight = 99999
+}
+
+## 真理部
+## 对策委员会
+## 茶会
+#### 学园文化科技
+tech_BA_culture_Federal = {
+	area = society
+	#icon = culture_Federal
+	cost = @tier1cost3
+	tier = 1
+	is_rare = no
+	category = {
+		school_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prerequisites = {
+		tech_planetary_unification
+		tech_BA_Shittem_starting
+	}
+	weight = @tier1weight1
+	modifier = {
+		country_unity_produces_mult = 0.05
+	}
+}
+
+tech_BA_culture_Abydos = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	is_rare = no
+	category = {
+		school_tech
+	}
+	weight = 0
+	weight_modifier = {
+		modifier = {
+			factor = 3
+			has_country_flag = hoshino_is_leader_flag			#当星野是学生会长时，权重*3
+		}
+	}
+	prerequisites = {
+		"tech_BA_culture_Federal"
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+tech_BA_culture_Gehenna = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	is_rare = no
+	category = {
+		school_tech
+	}
+	weight = 0
+	weight_modifier = {
+		modifier = {
+			factor = 3
+			has_country_flag = hina_is_leader_flag			#当日奈是学生会长时，权重*3
+		}
+	}
+	prerequisites = {
+		"tech_BA_culture_Federal"
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+tech_BA_culture_Millennium = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	is_rare = no
+	category = {
+		school_tech
+	}
+	weight = 0
+	weight_modifier = {
+		modifier = {
+			factor = 3
+			has_country_flag = yuuka_is_leader_flag			#当优香是学生会长时，权重*3
+		}
+	}
+	prerequisites = {
+		"tech_BA_culture_Federal"
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+tech_BA_culture_Trinity = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	is_rare = no
+	category = {
+		school_tech
+	}
+	weight = 0
+	weight_modifier = {
+		modifier = {
+			factor = 3
+			has_country_flag = mika_is_leader_flag			#当未花是学生会长时，权重*3
+		}
+	}
+	prerequisites = {
+		"tech_BA_culture_Federal"
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+#### 循环科技
+tech_BA_Aris_uplifting = {
+	area = society
+	cost = 3000
+	cost_per_level = 1000
+	tier = 1
+	is_rare = yes
+	levels = -1
+	category = {
+		students_rings_tech
+	}
+	weight = 999999
+	potential = {
+		has_country_flag = BA_uplifting_Aris
+	}
+	modifier = {
+		MACHINE_species_trait_points_add = 1
+	}
+	ai_weight = {
+		factor = 1
+	}
+}
+
+tech_repeatable_weapon_type_Kivotos_physics_research = {
+	area = physics
+	icon = tech_BA_culture_Federal
+	cost = 100000
+	cost_per_level = 10000
+	tier = 1
+	category = {
+		school_tech
+	}
+	ai_update_type = military
+	levels = -1
+	prerequisites = {
+		#tech_BA_spaceship_automation_4
+	}
+	weight = 0
+	modifier = {
+		weapon_type_Kivotos_weapon_fire_rate_mult = 0.05
+		weapon_type_Kivotos_weapon_damage_mult = 0.05
+	}
+	potential = {
+	}
+}
+
+tech_repeatable_weapon_type_Kivotos_society_research = {
+	area = society
+	icon = tech_BA_culture_Federal
+	cost = 100000
+	cost_per_level = 10000
+	tier = 1
+	category = {
+		school_tech
+	}
+	ai_update_type = military
+	levels = -1
+	prerequisites = {
+		#tech_BA_spaceship_automation_4
+	}
+	weight = 0
+	modifier = {
+		weapon_type_Kivotos_weapon_fire_rate_mult = 0.05
+		weapon_type_Kivotos_weapon_damage_mult = 0.05
+	}
+	potential = {
+	}
+}
+
+tech_repeatable_weapon_type_Kivotos_engineering_research = {
+	area = engineering
+	icon = tech_BA_culture_Federal
+	cost = 100000
+	cost_per_level = 10000
+	tier = 1
+	category = {
+		propulsion
+	}
+	ai_update_type = military
+	levels = -1
+	prerequisites = {
+		#tech_BA_spaceship_automation_4
+	}
+	weight = 0
+	modifier = {
+		weapon_type_Kivotos_weapon_fire_rate_mult = 0.05
+		weapon_type_Kivotos_weapon_damage_mult = 0.05
+	}
+	potential = {
+	}
+}

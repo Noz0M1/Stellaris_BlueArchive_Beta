@@ -1,0 +1,309 @@
+@cull_radius = 100
+#####################################################
+#####											#####
+#####					ba					#####
+#####											#####
+#####################################################
+
+####	FRAMES	####
+
+entity = {
+	name = "ba_01_orbital_ring_tier_1_entity"
+	pdxmesh = "orbital_ring_tier_01_frame_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle" }
+
+	cull_radius = @cull_radius
+}
+
+entity = {
+	name = "ba_01_orbital_ring_tier_2_entity"
+	pdxmesh = "orbital_ring_tier_02_frame_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle" }
+
+	cull_radius = @cull_radius
+}
+
+entity = {
+	name = "ba_01_orbital_ring_tier_3_entity"
+	pdxmesh = "orbital_ring_tier_03_frame_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle" }
+
+	cull_radius = @cull_radius
+}
+
+####	Parts	####
+
+entity = {
+	name = "ba_01_orbital_ring_section_entity"
+	pdxmesh = "orbital_ring_01_section_mesh"
+
+	meshsettings = {
+		name = "sectionShape"
+		index = 0
+		texture_diffuse = 	"ba_orbital_ring_diffuse.dds"
+		texture_normal = 	"ba_orbital_ring_normal.dds"
+		texture_specular = 	"ba_orbital_ring_specular.dds"
+		shader = "PdxMeshShip"
+	}
+}
+entity = {
+	name = "ba_01_orbital_ring_section_incomplete_entity"
+	pdxmesh = "orbital_ring_01_section_incomplete_mesh"
+
+	meshsettings = {
+		name = "section_incompleteShape"
+		index = 0
+		texture_diffuse = 	"ba_orbital_ring_diffuse.dds"
+		texture_normal = 	"ba_orbital_ring_normal.dds"
+		texture_specular = 	"ba_orbital_ring_specular.dds"
+		shader = "PdxMeshShip"
+	}
+}
+entity = {
+	name = "ba_01_orbital_ring_hub_entity"
+	pdxmesh = "orbital_ring_01_hub_mesh"
+
+	meshsettings = {
+		name = "hubShape"
+		index = 0
+		texture_diffuse = 	"ba_orbital_ring_diffuse.dds"
+		texture_normal = 	"ba_orbital_ring_normal.dds"
+		texture_specular = 	"ba_orbital_ring_specular.dds"
+		shader = "PdxMeshShip"
+	}
+}
+entity = {
+	name = "ba_01_orbital_ring_hub_tier_01_entity"
+	pdxmesh = "orbital_ring_01_hub_tier_01_mesh"
+
+	meshsettings = {
+		name = "tier_01Shape"
+		index = 0
+		texture_diffuse = 	"ba_orbital_ring_diffuse.dds"
+		texture_normal = 	"ba_orbital_ring_normal.dds"
+		texture_specular = 	"ba_orbital_ring_specular.dds"
+		shader = "PdxMeshShip"
+	}
+}
+entity = {
+	name = "ba_01_orbital_ring_hub_tier_02_entity"
+	pdxmesh = "orbital_ring_01_hub_tier_02_mesh"
+
+	meshsettings = {
+		name = "tier_02Shape"
+		index = 0
+		texture_diffuse = 	"ba_orbital_ring_diffuse.dds"
+		texture_normal = 	"ba_orbital_ring_normal.dds"
+		texture_specular = 	"ba_orbital_ring_specular.dds"
+		shader = "PdxMeshShip"
+	}
+}
+entity = {
+	name = "ba_01_orbital_ring_hub_tier_03_entity"
+	pdxmesh = "orbital_ring_01_hub_tier_03_mesh"
+
+	meshsettings = {
+		name = "tier_03Shape"
+		index = 0
+		texture_diffuse = 	"ba_orbital_ring_diffuse.dds"
+		texture_normal = 	"ba_orbital_ring_normal.dds"
+		texture_specular = 	"ba_orbital_ring_specular.dds"
+		shader = "PdxMeshShip"
+	}
+}
+
+####	Tiers	####
+
+entity = {
+	name = "ba_01_orbital_ring_tier_1_section_entity"
+	pdxmesh = "orbital_ring_tier_01_mesh"
+
+	attach = { "part1" 			= "ba_01_orbital_ring_section_entity" }
+	attach = { "part2" 			= "ba_01_orbital_ring_section_entity" }
+	attach = { "part3" 			= "ba_01_orbital_ring_section_incomplete_entity" }
+	attach = { "part4" 			= "ba_01_orbital_ring_section_incomplete_entity" }
+	attach = { "hub1" 			= "ba_01_orbital_ring_hub_tier_01_entity" }
+	attach = { "hub2" 			= "ba_01_orbital_ring_hub_entity" }
+	attach = { "hub3" 			= "ba_01_orbital_ring_hub_entity" }
+	attach = { "hub4" 			= "ba_01_orbital_ring_hub_entity" }
+	attach = { "rotate" 		= "orbital_ring_elevator_stage_1_entity" }
+
+	
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_megastructure_orbital_ring_01_idle" } }
+	}
+}
+
+entity = {
+	name = "ba_01_orbital_ring_tier_2_section_entity"
+	pdxmesh = "orbital_ring_tier_02_mesh"
+
+	attach = { "part1" 			= "ba_01_orbital_ring_section_entity" }
+	attach = { "part2" 			= "ba_01_orbital_ring_section_entity" }
+	attach = { "part3" 			= "ba_01_orbital_ring_section_entity" }
+	attach = { "part4" 			= "ba_01_orbital_ring_section_incomplete_entity" }
+	attach = { "hub1" 			= "ba_01_orbital_ring_hub_tier_02_entity" }
+	attach = { "hub2" 			= "ba_01_orbital_ring_hub_entity" }
+	attach = { "hub3" 			= "ba_01_orbital_ring_hub_entity" }
+	attach = { "hub4" 			= "ba_01_orbital_ring_hub_entity" }
+	attach = { "rotate" 		= "orbital_ring_elevator_stage_2_entity" }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_megastructure_orbital_ring_02_idle" } }
+	}
+}
+
+entity = {
+	name = "ba_01_orbital_ring_tier_3_section_entity"
+	pdxmesh = "orbital_ring_tier_03_mesh"
+
+	attach = { "part1" 			= "ba_01_orbital_ring_section_entity" }
+	attach = { "part2" 			= "ba_01_orbital_ring_section_entity" }
+	attach = { "part3" 			= "ba_01_orbital_ring_section_entity" }
+	attach = { "part4" 			= "ba_01_orbital_ring_section_entity" }
+	attach = { "hub1" 			= "ba_01_orbital_ring_hub_tier_03_entity" }
+	attach = { "hub2" 			= "ba_01_orbital_ring_hub_entity" }
+	attach = { "hub3" 			= "ba_01_orbital_ring_hub_entity" }
+	attach = { "hub4" 			= "ba_01_orbital_ring_hub_entity" }
+	attach = { "rotate" 		= "orbital_ring_elevator_stage_3_entity" }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_megastructure_orbital_ring_03_idle" } }
+	}
+}
+
+#### MODULES ####
+
+entity = {
+	name = "ba_01_orbital_ring_gun_section_entity"
+	pdxmesh = "orbital_ring_gun_section_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle" }
+
+	meshsettings = {
+		name = "orbital_ring_01_gun_sectionShape"
+		index = 0
+		texture_diffuse = "ba_01_orbital_ring_module_diffuse.dds"
+		texture_normal = "ba_01_orbital_ring_module_normal.dds"
+		texture_specular = "ba_01_orbital_ring_module_specular.dds"
+		shader = "PdxMeshShip"
+	}
+
+}
+entity = {
+	name = "ba_01_orbital_ring_missile_section_entity"
+	pdxmesh = "orbital_ring_missile_section_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle" }
+
+	meshsettings = {
+		name = "orbital_ring_01_missile_sectionShape"
+		index = 0
+		texture_diffuse = "ba_01_orbital_ring_module_diffuse.dds"
+		texture_normal = "ba_01_orbital_ring_module_normal.dds"
+		texture_specular = "ba_01_orbital_ring_module_specular.dds"
+		shader = "PdxMeshShip"
+	}
+
+}
+entity = {
+	name = "ba_01_orbital_ring_anchorage_section_entity"
+	pdxmesh = "orbital_ring_anchorage_section_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle" }
+
+	meshsettings = {
+		name = "orbital_ring_01_anchorage_sectionShape"
+		index = 0
+		texture_diffuse = "ba_01_orbital_ring_module_diffuse.dds"
+		texture_normal = "ba_01_orbital_ring_module_normal.dds"
+		texture_specular = "ba_01_orbital_ring_module_specular.dds"
+		shader = "PdxMeshShip"
+	}
+}
+entity = {
+	name = "ba_01_orbital_ring_hangarbay_section_entity"
+	pdxmesh = "orbital_ring_hangarbay_section_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle" }
+
+	meshsettings = {
+		name = "orbital_ring_01_hangarbay_sectionShape"
+		index = 0
+		texture_diffuse = "ba_01_orbital_ring_module_diffuse.dds"
+		texture_normal = "ba_01_orbital_ring_module_normal.dds"
+		texture_specular = "ba_01_orbital_ring_module_specular.dds"
+		shader = "PdxMeshShip"
+	}
+}
+entity = {
+	name = "ba_01_orbital_ring_shipyard_section_entity"
+	pdxmesh = "orbital_ring_shipyard_section_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle" }
+
+	meshsettings = {
+		name = "orbital_ring_01_shipyard_sectionShape"
+		index = 0
+		texture_diffuse = "ba_01_orbital_ring_module_diffuse.dds"
+		texture_normal = "ba_01_orbital_ring_module_normal.dds"
+		texture_specular = "ba_01_orbital_ring_module_specular.dds"
+		shader = "PdxMeshShip"
+	}
+}
+entity = {
+	name = "ba_01_orbital_ring_solarpanel_section_entity"
+	pdxmesh = "orbital_ring_solarpanel_section_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle" }
+
+	meshsettings = {
+		name = "baseShape"
+		index = 0
+		texture_diffuse = "ba_01_orbital_ring_module_diffuse.dds"
+		texture_normal = "ba_01_orbital_ring_module_normal.dds"
+		texture_specular = "ba_01_orbital_ring_module_specular.dds"
+		shader = "PdxMeshShip"
+	}
+}
+entity = {
+	name = "ba_01_orbital_ring_habitat_section_entity"
+	pdxmesh = "orbital_ring_habitat_section_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle" }
+
+	meshsettings = {
+		name = "orbital_ring_01_habitat_sectionShape"
+		index = 0
+		texture_diffuse = "ba_01_orbital_ring_module_diffuse.dds"
+		texture_normal = "ba_01_orbital_ring_module_normal.dds"
+		texture_specular = "ba_01_orbital_ring_module_specular.dds"
+		shader = "AlphaBlend_00"
+	}
+
+	meshsettings = {
+		name = "orbital_ring_01_habitat_sectionShape"
+		index = 1
+		texture_diffuse = "ba_01_orbital_ring_module_diffuse.dds"
+		texture_normal = "ba_01_orbital_ring_module_normal.dds"
+		texture_specular = "ba_01_orbital_ring_module_specular.dds"
+		shader = "PdxMeshShip"
+	}
+}

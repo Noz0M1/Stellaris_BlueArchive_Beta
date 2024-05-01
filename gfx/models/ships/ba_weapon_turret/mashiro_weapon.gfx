@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "mashiro_weapon_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/mashiro_weapon.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Mashiro_Original_WeaponShape"
+			index = 0
+			texture_diffuse = "Mashiro_Original_Weapon.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}

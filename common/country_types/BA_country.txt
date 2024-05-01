@@ -1,0 +1,74 @@
+Shittem_communication = {
+	show_in_contacts_list = yes
+	minimalist_contacts_list_profile = yes
+	share_communications = no
+	default_ships = no
+	government = no
+	ai = {
+		enabled = no
+	}
+	faction = {
+		hostile = no
+		needs_border_access = no
+		generate_borders = no
+		needs_colony = no
+		auto_delete = no
+	}
+	custom_diplomacy = yes
+	modules = {
+		basic_technology_module = {
+		}
+		exclusive_diplomacy_module = {
+			contact_rule = on_action_only
+		}
+	}
+}
+
+Aris_mid = {
+	mid_game_crisis = yes
+	scaled_difficulty_bonuses = 1
+	#
+	show_in_contacts_list = yes
+	minimalist_contacts_list_profile = yes
+	default_ships = no
+	government = no
+	has_capital = no
+	enforces_borders = no
+	share_communications = no
+	uses_origins = no
+	#
+	playable = no
+	has_pulse_events = yes
+	needs_survey = no
+	has_complete_sensor = yes
+	#
+	custom_starbase = starbase_Aris
+	attack_unarmed_orbital_stations = yes	#不拆开采站
+	destroys_starbases = yes	#不拆哨站
+	ship_disengagement = no	#死战不退
+	can_own_empty_planets = yes	#可占据空星球
+	orbital_bombardment = yes
+	#
+	ai = {
+		enabled = yes
+		modules = {
+			berserk_military_minister_module
+		}
+	}
+	faction = {
+		hostile = no
+		neutral = yes
+		needs_border_access = no
+		generate_borders = no
+		needs_colony = no
+		auto_delete = no
+	}
+	custom_diplomacy = yes
+	modules = {
+		basic_technology_module = {
+		}
+		exclusive_diplomacy_module = {
+			contact_rule = on_action_only
+		}
+	}
+}

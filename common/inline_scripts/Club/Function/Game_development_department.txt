@@ -1,0 +1,47 @@
+#游戏开发部-制作一个游戏
+#option = {
+#    name = Game_development_department_game_develop
+#    allow = {
+#        custom_tooltip = {
+#            fail_text = BA_club_favor_fail
+#            check_variable = {
+#                which = Game_development_department
+#                value >= 40
+#            }
+#        }
+#        custom_tooltip = {
+#            fail_text = Game_developing
+#            NOR = {
+#                has_country_flag = Game_development_department_working
+#                has_country_flag = Game_development_department_busy
+#            }
+#        }
+#    }
+#    response_text = Game_development_department_game_develop_$CHARA$RE
+#    hidden_effect = {
+#        set_country_flag = Game_development_department_working
+#        change_variable = {
+#            which = Game_development_department_game_count
+#            value = 1
+#        }
+#        #初始化：重置已用时间为0、每制作经验+2分
+#        set_variable = {
+#            which = Game_development_department_score
+#            value = Game_development_department_game_count
+#        }
+#        multiply_variable = {
+#            which = Game_development_department_score
+#            value = 2
+#        }
+#        set_variable = {
+#            which = Game_development_department_time_used
+#            value = 0
+#        }
+#        #加分结算
+#        country_event = {
+#            id = BA_club.1023
+#            days = 180
+#            random = 540
+#        }
+#    }
+#}

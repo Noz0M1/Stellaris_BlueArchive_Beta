@@ -1,0 +1,15 @@
+entity = {
+	name = "KaitenFX_MK0_entity"
+	pdxmesh = "KaitenFX_MK0_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "engine_large_01" particle = "KaitenFX_MK0_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_02" particle = "KaitenFX_MK0_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "moving" state_time = 5
+		event = { time = 0 node = "engine_large_01" particle = "KaitenFX_MK0_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_02" particle = "KaitenFX_MK0_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "death" state_time = 5 }
+}

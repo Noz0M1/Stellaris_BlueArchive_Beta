@@ -1,0 +1,87 @@
+entity = {
+	name = "Millennium_Tech_Tower_Part_01_entity"
+	pdxmesh = "Millennium_Tech_Tower_Part_01_mesh"
+}
+entity = {
+	name = "Millennium_Tech_Tower_Part_02_entity"
+	pdxmesh = "Millennium_Tech_Tower_Part_02_mesh"
+}
+entity = {
+	name = "Millennium_Tech_Tower_Part_03_entity"
+	pdxmesh = "Millennium_Tech_Tower_Part_03_mesh"
+}
+entity = {
+	name = "Millennium_Tech_Tower_Part_04_entity"
+	pdxmesh = "Millennium_Tech_Tower_Part_04_mesh"
+}
+
+entity = {
+	name = "Millennium_Tech_Tower_black_hole_entity"
+	pdxmesh = "Hod_black_hole_new_mesh"
+	scale = 20.0
+	default_state = "idle"
+}
+
+entity = {
+	name = "Millennium_Tech_Tower_Phase_01_entity"
+	pdxmesh = "Millennium_Tech_Tower_Part_01_mesh"
+	attach = {
+		root  = "Millennium_Tech_Tower_black_hole_entity"
+	}
+}
+
+entity = {
+	name = "Millennium_Tech_Tower_Phase_02_entity"
+	pdxmesh = "Millennium_Tech_Tower_Part_02_mesh"
+	attach = {
+		root  = "Millennium_Tech_Tower_Phase_01_entity"
+	}
+}
+
+entity = {
+	name = "Millennium_Tech_Tower_Phase_03_entity"
+	pdxmesh = "Millennium_Tech_Tower_Part_03_mesh"
+	attach = {
+		root  = "Millennium_Tech_Tower_Phase_02_entity"
+	}
+}
+
+entity = {
+	name = "Millennium_Tech_Tower_Phase_04_entity"
+	pdxmesh = "Millennium_Tech_Tower_Part_04_mesh"
+	attach = {
+		root  = "Millennium_Tech_Tower_Phase_03_entity"
+	}
+}
+
+#entity = {
+#	name = "ba_01_Millennium_Tech_Tower_Phase_01_entity"
+#	pdxmesh = "Millennium_Tech_Tower_Part_01_mesh"
+#	attach = {
+#		root  = "Millennium_Tech_Tower_black_hole_entity"
+#	}
+#}
+#
+#entity = {
+#	name = "ba_01_Millennium_Tech_Tower_Phase_02_entity"
+#	pdxmesh = "Millennium_Tech_Tower_Part_02_mesh"
+#	attach = {
+#		root  = "Millennium_Tech_Tower_Phase_01_entity"
+#	}
+#}
+#
+#entity = {
+#	name = "ba_01_Millennium_Tech_Tower_Phase_03_entity"
+#	pdxmesh = "Millennium_Tech_Tower_Part_03_mesh"
+#	attach = {
+#		root  = "Millennium_Tech_Tower_Phase_02_entity"
+#	}
+#}
+#
+#entity = {
+#	name = "ba_01_Millennium_Tech_Tower_Phase_04_entity"
+#	pdxmesh = "Millennium_Tech_Tower_Part_04_mesh"
+#	attach = {
+#		root  = "Millennium_Tech_Tower_Phase_03_entity"
+#	}
+#}

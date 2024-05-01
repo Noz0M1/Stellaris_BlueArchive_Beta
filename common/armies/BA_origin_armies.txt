@@ -1,0 +1,132 @@
+BA_Deca_army_1 = {
+	#defensive = yes
+	damage = 0.1
+	health = 2
+	has_morale = no
+	morale_damage = 1
+	collateral_damage = 0
+	time = 5
+	has_species = no
+	icon = GFX_army_type_machine_defensive
+	resources = {
+		category = armies
+	}
+	potential = {
+		always = no
+	}
+}
+
+BA_Deca_army_2 = {
+	#defensive = yes
+	damage = 0.5
+	health = 4
+	has_morale = no
+	morale_damage = 1
+	collateral_damage = 0.2
+	time = 5
+	has_species = no
+	icon = GFX_army_type_machine_defensive
+	resources = {
+		category = armies
+	}
+	potential = {
+		always = no
+	}
+}
+
+BA_Deca_army_3 = {
+	#defensive = yes
+	damage = 1
+	health = 8
+	has_morale = no
+	morale_damage = 1
+	collateral_damage = 0.5
+	time = 5
+	has_species = no
+	icon = GFX_army_type_machine_defensive
+	resources = {
+		category = armies
+	}
+	potential = {
+		always = no
+	}
+}
+
+BA_Deca_army_4 = {
+	#defensive = yes
+	damage = 1.5
+	health = 10
+	has_morale = no
+	morale_damage = 1
+	collateral_damage = 1
+	time = 5
+	has_species = no
+	icon = GFX_army_type_machine_defensive
+	resources = {
+		category = armies
+	}
+	potential = {
+		always = no
+	}
+}
+
+BA_Deca_army_start = {
+	defensive = yes
+	damage = 0.1
+	health = 0.5
+	has_morale = no
+	morale_damage = 0
+	collateral_damage = 0.2
+	has_species = no
+	icon = GFX_army_type_machine_defensive
+	resources = {
+		category = armies
+	}
+	potential = {
+		always = no
+	}
+}
+
+BA_Deca_army_final = {
+	defensive = yes
+	is_pop_spawned = yes
+	war_exhaustion = 0.0
+	has_species = yes
+	damage = 2
+	health = 10
+	has_morale = no
+	morale_damage = 1
+	collateral_damage = 4
+	icon = GFX_army_type_machine_defensive
+	resources = {
+		category = armies
+	}
+	potential = {
+		owner = {
+			has_country_flag = BA_Unnamed_enemy
+		}
+	}
+}
+
+BA_origin_Kyrie_controled = {
+	defensive = yes
+	damage = 6
+	health = 20
+	has_morale = no
+	morale_damage = 1
+	collateral_damage = 10
+	time = 5
+	has_species = no
+	icon = GFX_army_type_machine_defensive
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 1
+		}
+	}
+	potential = {
+		always = no
+		#has_country_flag = BA_Kyrie_deterrence_disconnected_by_Arona
+		#has_country_flag = BA_origin_Kyrie_finished
+	}
+}

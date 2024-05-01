@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "ttf_spitfire_mesh"
+		file = "gfx\models\ships\ba_weapon_turret\titanfall_weapon\ttf_spitfire.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "spitfireShape"
+			index = 0
+			texture_diffuse = "spitfire_col.dds"
+			texture_normal = "spitfire_nml.dds"
+			texture_specular = "spitfire_spc.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

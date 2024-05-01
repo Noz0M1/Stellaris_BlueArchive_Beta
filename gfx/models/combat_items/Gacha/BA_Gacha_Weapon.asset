@@ -1,0 +1,110 @@
+entity = {
+	name = "Arona_Gacha_Weapon_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+				 
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+	}
+	
+	state = { name = "stop" animation = "miss" 
+		looping = no
+		time_offset = { 0 1 }
+		animation_blend_time = 1
+		start_event = { time = 0 node = missile_01 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_02 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_03 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_04 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_05 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_06 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_07 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_08 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+	}
+	
+	scale = 4.0
+	
+	
+	attach = { missile_01 = "Arona_Gacha_1_entity" }
+	attach = { missile_02 = "Arona_Gacha_1_entity" }
+	attach = { missile_03 = "Arona_Gacha_1_entity" }
+	attach = { missile_04 = "Arona_Gacha_1_entity" }
+	attach = { missile_05 = "Arona_Gacha_2_entity" }
+	attach = { missile_06 = "Arona_Gacha_1_entity" }
+	attach = { missile_07 = "Arona_Gacha_1_entity" }
+	attach = { missile_08 = "Arona_Gacha_1_entity" }
+}
+
+
+entity = {
+	name = "Pulana_Gacha_Weapon_entity"
+	pdxmesh = "swarmer_missile_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "start"		looping = no	next_state = "loop"
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_02_idle_particle" keep_particle = yes }
+				 
+	}
+	
+	state = { name = "loop"		animation = "fly" 
+		event = { time = 0 node = missile_01 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_02 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_03 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_04 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_05 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_06 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_07 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = missile_08 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+	}
+	
+	state = { name = "stop" animation = "miss" 
+		looping = no
+		time_offset = { 0 1 }
+		animation_blend_time = 1
+		start_event = { time = 0 node = missile_01 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_02 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_03 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_04 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_05 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_06 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_07 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = missile_08 particle = "swarmer_missile_02_idle_particle" keep_particle = yes trigger_once = yes }
+	}
+	
+	scale = 4.0
+	
+	
+	attach = { missile_01 = "Pulana_Gacha_1_entity" }
+	attach = { missile_02 = "Pulana_Gacha_1_entity" }
+	attach = { missile_03 = "Pulana_Gacha_1_entity" }
+	attach = { missile_04 = "Pulana_Gacha_1_entity" }
+	attach = { missile_05 = "Pulana_Gacha_1_entity" }
+	attach = { missile_06 = "Pulana_Gacha_1_entity" }
+	attach = { missile_07 = "Pulana_Gacha_1_entity" }
+	attach = { missile_08 = "Pulana_Gacha_1_entity" }
+}

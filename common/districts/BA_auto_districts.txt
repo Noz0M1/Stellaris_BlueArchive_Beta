@@ -1,0 +1,192 @@
+@BA_habitat_build_time = 240
+#####################################
+#自动居住站区划 数值有待商榷
+#####################################
+#精炼区 矿-->青辉石
+BA_districts_auto_refinery = {
+	base_buildtime = @BA_habitat_build_time
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = BA_auto_habitat
+	}
+	potential = {
+		uses_district_set = BA_auto_habitat
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			energy = 200
+			minerals = 250
+			sr_pyroxenes = 10
+		}
+		produces = {
+			sr_pyroxenes = 3
+		}
+		upkeep = {
+			minerals = 18
+		}
+	}
+	planet_modifier = {
+		planet_max_buildings_add = 0.5
+	}
+}
+
+#维持区 青辉石-->食物、消费品
+BA_districts_auto_sustainer = {
+	base_buildtime = @BA_habitat_build_time
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = BA_auto_habitat
+	}
+	potential = {
+		uses_district_set = BA_auto_habitat
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			energy = 200
+			minerals = 250
+			sr_pyroxenes = 10
+		}
+		produces = {
+			consumer_goods = 12
+		}
+		upkeep = {
+			energy = 9
+			sr_pyroxenes = 1
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 6
+		planet_max_buildings_add = 0.5
+	}
+}
+
+#铸造区 青辉石-->合金
+BA_districts_auto_foundry = {
+	base_buildtime = @BA_habitat_build_time
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = BA_auto_habitat
+	}
+	potential = {
+		uses_district_set = BA_auto_habitat
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			energy = 200
+			minerals = 250
+			sr_pyroxenes = 10
+		}
+		produces = {
+			alloys = 6
+		}
+		upkeep = {
+			energy = 9
+			sr_pyroxenes = 1
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 4
+		planet_max_buildings_add = 0.5
+	}
+}
+
+#矩阵区 青辉石-->科研点
+BA_districts_auto_matrix = {
+	base_buildtime = @BA_habitat_build_time
+	is_capped_by_modifier = yes
+	show_on_uncolonized = {
+		uses_district_set = BA_auto_habitat
+	}
+	potential = {
+		uses_district_set = BA_auto_habitat
+	}
+	triggered_desc = {
+		text = BA_districts_auto_matrix_tip
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			energy = 200
+			minerals = 250
+			sr_pyroxenes = 10
+		}
+		produces = {
+			physics_research = 24
+			society_research = 24
+			engineering_research = 24
+		}
+		upkeep = {
+			energy = 9
+			sr_pyroxenes = 1
+		}
+	}
+}
+
+#涡轮区 电
+BA_districts_auto_turbine = {
+	base_buildtime = @BA_habitat_build_time
+	is_capped_by_modifier = yes
+	show_on_uncolonized = {
+		uses_district_set = BA_auto_habitat
+	}
+	potential = {
+		uses_district_set = BA_auto_habitat
+	}
+	triggered_desc = {
+		text = BA_districts_auto_turbine_tip
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			energy = 200
+			minerals = 250
+			alloys = 30
+			sr_pyroxenes = 10
+		}
+		produces = {
+			energy = 36
+		}
+		upkeep = {
+			minerals = 4
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 2
+	}
+}
+
+#钻探区 矿
+BA_districts_auto_drill = {
+	base_buildtime = @BA_habitat_build_time
+	is_capped_by_modifier = yes
+	show_on_uncolonized = {
+		uses_district_set = BA_auto_habitat
+	}
+	potential = {
+		uses_district_set = BA_auto_habitat
+	}
+	triggered_desc = {
+		text = BA_districts_auto_drill_tip
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			energy = 200
+			minerals = 250
+			alloys = 30
+			sr_pyroxenes = 10
+		}
+		produces = {
+			minerals = 24
+		}
+		upkeep = {
+			energy = 6
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 2
+	}
+}

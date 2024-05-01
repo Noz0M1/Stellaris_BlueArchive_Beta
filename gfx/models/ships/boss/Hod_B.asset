@@ -1,0 +1,14 @@
+entity = {
+	name = "Hod_B_entity"
+	pdxmesh = "Hod_B_mesh"
+	locator = {
+		name = "portal"
+		position = { 0 -43 5 }
+		rotation = { 0 0 0 }
+	}
+
+
+	attach = {
+		portal = "Hod_black_hole_entity"
+	}
+}

@@ -1,0 +1,32 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Psycho_Pass_Dominator_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/Psycho-Pass_Dominator/Psycho_Pass_Dominator.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Psycho_Pass_DominatorShape"
+			index = 0
+			texture_diffuse = "Dominator_01_diffuse.dds"
+			texture_normal = "Dominator_01_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "Psycho_Pass_Dominator_EX_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/Psycho-Pass_Dominator/Psycho_Pass_Dominator_EX.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Psycho_Pass_Dominator_EXShape"
+			index = 0
+			texture_diffuse = "Dominator_01_diffuse.dds"
+			texture_normal = "Dominator_01_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}

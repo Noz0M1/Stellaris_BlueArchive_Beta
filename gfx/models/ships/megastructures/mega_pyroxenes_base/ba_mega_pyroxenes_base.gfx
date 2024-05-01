@@ -1,0 +1,78 @@
+objectTypes = {
+	pdxmesh = {
+		name = "ba_mega_pyroxenes_base_stage_1_mesh"
+		file = "gfx/models/ships/megastructures/mega_pyroxenes_base/ba_mega_pyroxenes_base_stage_1.mesh"
+		scale = 6.0
+
+		meshsettings = {
+			name = "ba_mega_pyroxenes_base_stage_1Shape"
+			index = 0
+			texture_diffuse = "Millennium_Tech_Tower_03.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "ba_mega_pyroxenes_base_stage_2_mesh"
+		file = "gfx/models/ships/megastructures/mega_pyroxenes_base/ba_mega_pyroxenes_base_stage_2.mesh"
+		scale = 6.0
+
+		meshsettings = {
+			name = "ba_mega_pyroxenes_base_stage_1Shape"
+			index = 0
+			texture_diffuse = "Millennium_Tech_Tower_03.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "ba_mega_pyroxenes_base_stage_3_mesh"
+		file = "gfx/models/ships/megastructures/mega_pyroxenes_base/ba_mega_pyroxenes_base_stage_3.mesh"
+		scale = 6.0
+
+		meshsettings = {
+			name = "ba_mega_pyroxenes_base_stage_1Shape"
+			index = 0
+			texture_diffuse = "Millennium_Tech_Tower_03.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "ba_mega_pyroxenes_base_stage_4_mesh"
+		file = "gfx/models/ships/megastructures/mega_pyroxenes_base/ba_mega_pyroxenes_base_stage_4.mesh"
+		scale = 6.0
+
+		meshsettings = {
+			name = "ba_mega_pyroxenes_base_stage_1Shape"
+			index = 0
+			texture_diffuse = "Millennium_Tech_Tower_03.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "Currency_Icon_Gem_mesh"
+		file = "gfx/models/ships/megastructures/mega_pyroxenes_base/Currency_Icon_Gem.mesh"
+		scale = 6.0
+
+		meshsettings = {
+			name = "Currency_Icon_GemShape"
+			index = 0
+			texture_diffuse = "Currency_Icon_Gem.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+}

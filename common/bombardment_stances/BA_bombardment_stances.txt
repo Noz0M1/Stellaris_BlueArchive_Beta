@@ -1,0 +1,21 @@
+BA_berserk_bomb = {
+	trigger = {
+		owner = {
+			is_country_type = Aris_mid
+		}
+	}
+	default = yes
+	stop_when_armies_dead = no
+	abduct_pops = no
+	planet_damage = 1
+	army_damage = 3
+	kill_pop_chance = {
+		base = 0.5
+	}
+	min_pops_to_kill_pop = 0
+	# root = fleet
+	# from = planet
+	ai_weight = {
+		weight = 9999
+	}
+}

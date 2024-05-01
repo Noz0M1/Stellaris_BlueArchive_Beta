@@ -1,0 +1,408 @@
+#### 起源初始化 ####
+#站开 创建模块（改自巨构）
+BA_origin_create_module = {
+	save_event_target_as = target_planet
+	solar_system = {
+		random_system_planet = {
+			limit = {
+				has_planet_flag = habitat
+			}
+			save_event_target_as = target_habitat
+		}
+	}
+	set_planet_flag = has_megastructure
+	#摧毁采矿站或研究站，腾地方
+	if = {
+		limit = {
+			has_orbital_station = yes
+		}
+		orbital_station = {
+			dismantle = yes
+		}
+	}
+	#创建一个新的空间站
+	if = {
+		limit = {
+			OR = {
+				is_asteroid = yes
+				is_moon = yes
+			}
+		}
+		create_fleet = {
+			effect = {
+				set_owner = root
+				create_ship = {
+					random_existing_design = ship_BA_auto_habitat_minor
+					effect = {
+						set_disable_at_health = 0.05
+						set_name = BA_orbital_generic
+						#set_name = {
+						#    key = TARGET_BA_ORBITAL_NAME
+						#    variable_string = "\\[FROM.from.planet.GetName]"
+						#}
+					}
+				}
+				save_event_target_as = target_orbital
+				fleet = {
+					set_location = {
+						target = event_target:target_planet
+					}
+				}
+			}
+		}
+	}
+	else = {
+		create_fleet = {
+			effect = {
+				set_owner = root
+				create_ship = {
+					random_existing_design = ship_BA_auto_habitat_generic
+					effect = {
+						set_disable_at_health = 0.05
+						set_name = BA_orbital_generic
+						#set_name = {
+						#    key = TARGET_BA_ORBITAL_NAME
+						#    variable_string = "\\[FROM.from.planet.GetName]"
+						#}
+					}
+				}
+				save_event_target_as = target_orbital
+				fleet = {
+					set_location = {
+						target = event_target:target_planet
+					}
+				}
+			}
+		}
+	}
+	#重命名
+	event_target:target_orbital = {
+		set_name = BA_orbital_generic
+	}
+	#set_habitat_planetary_features_effect = yes
+	###
+	#可建造研究站，视为科研模块
+	if = {
+		limit = {
+			OR = {
+				has_deposit_for = shipclass_research_station
+			}
+		}
+		event_target:target_orbital = {
+			set_fleet_flag = BA_research_module
+		}
+	}
+	#产电或为气巨，视为发电模块
+	else_if = {
+		limit = {
+			OR = {
+				is_planet_class = pc_gas_giant
+				has_deposit = d_energy_1
+				has_deposit = d_energy_2
+				has_deposit = d_energy_3
+				has_deposit = d_energy_4
+				has_deposit = d_energy_5
+				has_deposit = d_energy_6
+				has_deposit = d_energy_7
+				has_deposit = d_energy_8
+				has_deposit = d_energy_9
+				has_deposit = d_energy_10
+			}
+		}
+		event_target:target_orbital = {
+			set_fleet_flag = BA_energy_module
+		}
+	}
+	#产矿，视为采矿模块
+	else_if = {
+		limit = {
+			event_target:target_planet = {
+				has_orbital_mining_deposit = yes
+			}
+		}
+		event_target:target_orbital = {
+			set_fleet_flag = BA_mineral_module
+		}
+	}
+	#什么都无，在小行星卫星上，视为小模块
+	else_if = {
+		limit = {
+			OR = {
+				is_moon = yes
+				is_asteroid = yes
+			}
+		}
+		event_target:target_orbital = {
+			set_fleet_flag = BA_minor_module
+		}
+	}
+	#其他，视为标准模块
+	else = {
+		event_target:target_orbital = {
+			set_fleet_flag = BA_normal_module
+		}
+	}
+}
+
+#### 失落帝国殖民地初始化 !planet scope
+#初始化失落帝国首都（外部不调用）
+BA_fe_capital_initial = {
+	set_owner = event_target:BA_Precursor_country
+	clear_deposits = yes
+	while = {
+		count = 12
+		add_district = BA_districts_dome
+	}
+	add_building = building_ancient_palace	#以后改
+	add_building = building_BA_fe_data
+	add_building = building_BA_fe_energy
+	add_building = building_BA_fe_food
+	add_building = building_BA_fe_alloy
+	add_building = building_BA_fe_alloy
+	add_building = building_BA_fe_pyroxenes
+	add_building = building_BA_fe_keystone
+	add_building = building_BA_fe_keystone
+	add_building = building_BA_fe_keystone
+	while = {
+		count = 55
+		create_pop = {
+			species = event_target:BA_Precursor_species
+		}
+	}
+	set_capital = yes
+}
+
+#初始化失落帝国殖民地（外部不调用）
+BA_fe_colony_initial = {
+	set_owner = event_target:BA_Precursor_country
+	clear_deposits = yes
+	while = {
+		count = 6
+		add_district = district_city
+	}
+	add_building = building_ancient_palace	#以后改
+	add_building = building_BA_fe_data
+	add_building = building_BA_fe_energy
+	add_building = building_BA_fe_food
+	add_building = building_BA_fe_alloy
+	add_building = building_BA_fe_alloy
+	add_building = building_BA_fe_pyroxenes
+	add_building = building_BA_fe_keystone
+	add_building = building_BA_fe_keystone
+	add_building = building_BA_fe_keystone
+	add_building = building_BA_fe_dome
+	add_building = building_BA_fe_dome
+	while = {
+		count = 10
+		create_pop = {
+			species = event_target:BA_Precursor_species
+		}
+	}
+}
+
+#初始化失落帝国环世界殖民地（外部不调用）
+BA_fe_rw_initial = {
+	set_owner = event_target:BA_Precursor_country
+	clear_deposits = yes
+	while = {
+		count = 5
+		add_district = district_rw_city
+	}
+	add_building = building_ancient_palace	#以后改
+	add_building = building_BA_fe_data
+	add_building = building_BA_fe_energy
+	add_building = building_BA_fe_food
+	add_building = building_BA_fe_alloy
+	add_building = building_BA_fe_alloy
+	add_building = building_BA_fe_pyroxenes
+	add_building = building_BA_fe_keystone
+	add_building = building_BA_fe_keystone
+	add_building = building_BA_fe_keystone
+	add_building = building_BA_fe_dome
+	add_building = building_BA_fe_dome
+	while = {
+		count = 25
+		create_pop = {
+			species = event_target:BA_Precursor_species
+		}
+	}
+}
+
+#### 失落帝国恒星系初始化 !system scope
+BA_fe_system_initial = {
+	every_system_planet = {
+		limit = {
+			is_planet_class = pc_BA_campus_planet
+		}
+		BA_fe_capital_initial = yes
+	}
+	every_system_planet = {
+		limit = {
+			is_planet_class = pc_gaia
+		}
+		BA_fe_colony_initial = yes
+	}
+	every_system_planet = {
+		limit = {
+			is_planet_class = pc_ringworld_habitable
+		}
+		BA_fe_rw_initial = yes
+	}
+	create_starbase = {
+		size = starbase_citadel
+		module = shipyard
+		module = shipyard
+		module = shipyard
+		module = hangar_bay
+		module = gun_battery
+		module = gun_battery
+		building = target_uplink_computer
+		building = defense_grid
+		building = colossus_yards
+		building = titan_yards
+		owner = event_target:BA_Precursor_country
+		effect = {
+			while = {
+				count = 11
+				create_ship = {
+					name = random
+					design = "NAME_BA_FE_DEFENCE_CANON"
+					graphical_culture = owner
+				}
+			}
+		}
+	}
+	every_system_planet = {
+		limit = {
+			has_deposit_for = shipclass_mining_station
+			has_mining_station = no
+		}
+		create_mining_station = {
+			owner = event_target:BA_Precursor_country
+		}
+	}
+	every_system_planet = {
+		limit = {
+			has_deposit_for = shipclass_research_station
+			has_research_station = no
+		}
+		create_research_station = {
+			owner = event_target:BA_Precursor_country
+		}
+	}
+}
+
+#### 失落帝国刷舰队 !system scope
+#为失落帝国刷一支舰队
+BA_fe_create_fleet = {
+	event_target:BA_Precursor_country = {
+		create_fleet = {
+			name = BA_FE_FLEET
+			effect = {
+				set_owner = prev
+				set_location = {
+					target = prevprev
+					distance = 75
+					angle = 60
+					direction = out_system
+				}
+				while = {
+					count = 1
+					create_ship = {
+						name = RANDOM
+						design = NAME_BA_FE_HUB_SHIP
+						prefix = yes
+					}
+				}
+				while = {
+					count = 12
+					create_ship = {
+						name = RANDOM
+						design = NAME_BA_FE_ARTILLERY_SHIP
+						prefix = yes
+					}
+				}
+				while = {
+					count = 12
+					create_ship = {
+						name = RANDOM
+						design = NAME_BA_FE_SWARM_SHIP
+						prefix = yes
+					}
+				}
+				while = {
+					count = 10
+					create_ship = {
+						name = RANDOM
+						design = NAME_BA_FE_MISSILE_SHIP
+						prefix = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+#失落帝国军备初始化
+BA_fe_fleet_initial = {
+	while = {
+		count = 4
+		event_target:D_KETHER = {
+			BA_fe_create_fleet = yes
+		}
+	}
+	while = {
+		count = 1
+		event_target:D_CHHOKMAH = {
+			BA_fe_create_fleet = yes
+		}
+	}
+	while = {
+		count = 1
+		event_target:D_BINAH = {
+			BA_fe_create_fleet = yes
+		}
+	}
+	while = {
+		count = 1
+		event_target:D_CHESED = {
+			BA_fe_create_fleet = yes
+		}
+	}
+	while = {
+		count = 1
+		event_target:D_GEBURAH = {
+			BA_fe_create_fleet = yes
+		}
+	}
+	while = {
+		count = 1
+		event_target:D_TIPHARETH = {
+			BA_fe_create_fleet = yes
+		}
+	}
+	while = {
+		count = 1
+		event_target:D_NETSAH = {
+			BA_fe_create_fleet = yes
+		}
+	}
+	while = {
+		count = 1
+		event_target:D_HOD = {
+			BA_fe_create_fleet = yes
+		}
+	}
+	while = {
+		count = 4
+		event_target:D_YESOD = {
+			BA_fe_create_fleet = yes
+		}
+	}
+	while = {
+		count = 5
+		event_target:D_MALKUTH = {
+			BA_fe_create_fleet = yes
+		}
+	}
+}

@@ -1,0 +1,29 @@
+objectTypes = {
+	pdxmesh = {
+		name = "ba_color_class_star_mesh"
+		file = "gfx/models/planets/ba_color_class_star.mesh"
+
+			meshsettings = {
+			index = 0
+			shader = "PdxMeshWPO"
+			texture_diffuse = "ba_color_class_star.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			texture_wpo = "quantum_catapult_cloud_wpo.dds"
+		}
+	}
+	
+		pdxmesh = {
+		name = "ba_color_class_star_wave_mesh"
+		file = "gfx/models/planets/ba_color_class_star_wave.mesh"
+
+			meshsettings = {
+			index = 0
+			shader = "PdxMeshWPO"
+			texture_diffuse = "ba_color_class_star_wave.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			texture_wpo = "quantum_catapult_cloud_wpo.dds"
+		}
+	}
+}

@@ -1,0 +1,38 @@
+entity = {
+	name = "Binah_entity"
+	pdxmesh = "Binah_mesh"
+	locator = {
+		name = "portal"
+		position = { 0 -10 0 }
+		rotation = { 0 0 0 }
+	}
+
+
+	attach = {
+		portal = "Binah_black_hole_entity"
+	}
+}
+
+entity = {
+	name = "Binah_black_hole_entity"
+	pdxmesh = "Hod_black_hole_new_mesh"
+	scale = 5.0	
+	default_state = "idle"
+	locator = { name = "planet" }
+	attach = { "planet" = "black_hole_rings_entity" }
+}
+
+entity = {
+	name = "Binah_Color_entity"
+	pdxmesh = "Binah_Color_mesh"
+	locator = {
+		name = "portal"
+		position = { 0 -10 0 }
+		rotation = { 0 0 0 }
+	}
+
+
+	attach = {
+		portal = "Binah_black_hole_entity"
+	}
+}

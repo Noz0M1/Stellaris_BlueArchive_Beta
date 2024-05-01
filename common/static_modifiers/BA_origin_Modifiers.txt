@@ -1,0 +1,140 @@
+#阿里乌斯起源 重建前母星增益
+modifier_BA_Agnus_Dei = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_BA_Arius_Kyrie.dds"
+	pop_amenities_usage_mult = -0.3
+	planet_jobs_energy_produces_mult = 0.2
+	planet_jobs_minerals_produces_mult = 0.2
+	planet_jobs_food_produces_mult = 0.2
+	planet_pops_consumer_goods_upkeep_mult = -0.2
+}
+
+#阿里乌斯起源 清扫中
+modifier_BA_Arius_cleaning = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_BA_Arius_cleaning.dds"
+	army_defense_health_mult = 0.2
+	army_defense_damage_mult = 0.5
+}
+
+#阿里乌斯起源 母星陆军buff
+modifier_BA_Kyrie_defence_1 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_BA_Arius_cleaning.dds"
+	army_defense_health_mult = 0.2
+	army_defense_damage_mult = 0.2
+}
+
+modifier_BA_Kyrie_defence_2 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_BA_Arius_cleaning.dds"
+	army_defense_health_mult = 0.5
+	army_defense_damage_mult = 0.5
+}
+
+modifier_BA_Kyrie_defence_3 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_BA_Arius_cleaning.dds"
+	army_defense_health_mult = 1
+	army_defense_damage_mult = 1
+}
+
+#阿里乌斯起源 重建后增益
+modifier_BA_Gloria_Parti = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_BA_Arius_rebuilding.dds"
+	planet_building_build_speed_mult = 1
+	planet_decision_enact_speed_mult = 1
+	planet_jobs_produces_mult = 0.4
+	BA_auto_buildings_produces_mult = 0.4
+	planet_buildings_upkeep_mult = -0.2
+	planet_stability_add = 20
+	planet_districts_energy_upkeep_mult = -0.5
+	pop_demotion_time_mult = -0.99
+}
+
+#站开起源
+modifier_BA_Atrahasis_station_1 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_BA_Arius_rebuilding.dds"
+	BA_auto_districts_cost_mult = -0.5
+	BA_auto_districts_produces_mult = -0.5
+	BA_auto_districts_upkeep_mult = -0.5
+	planet_jobs_produces_mult = -0.3
+}
+
+modifier_BA_Atrahasis_station_2 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_BA_Arius_rebuilding.dds"
+	BA_auto_districts_cost_mult = -0.25
+	BA_auto_districts_produces_mult = -0.25
+	BA_auto_districts_upkeep_mult = -0.25
+	planet_jobs_produces_mult = -0.15
+}
+
+modifier_BA_origin_station_1 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_BA_Arius_rebuilding.dds"
+	BA_auto_districts_cost_mult = -0.5
+	BA_auto_districts_produces_mult = -0.5
+	BA_auto_districts_upkeep_mult = -0.5
+	planet_jobs_produces_mult = -0.3
+}
+
+modifier_BA_origin_station_2 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_BA_Arius_rebuilding.dds"
+	BA_auto_districts_cost_mult = -0.25
+	BA_auto_districts_produces_mult = -0.25
+	BA_auto_districts_upkeep_mult = -0.25
+	planet_jobs_produces_mult = -0.15
+}
+
+#竞技场
+modifier_BA_arena = {
+	starbase_shipyard_build_speed_mult = 10000
+	ships_upkeep_mult = -1
+}
+
+#圣地补正
+modifier_BA_Precursor_Holy_site = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_consecrated_worlds.dds"
+	icon_frame = 3
+}
+
+#中期爱丽丝运营补正
+modifier_BA_Aris = {
+	ships_upkeep_mult = -1
+	leaders_upkeep_mult = -1
+	starbases_upkeep_mult = -1
+	planet_pops_upkeep_mult = -1
+	planet_jobs_upkeep_mult = -1
+	country_resource_max_add = 100000
+}
+
+#中期天灾debuff
+modifier_BA_mid_debuff_1 = {
+	#75%防御
+	ship_hull_mult = -0.25
+	ship_shield_mult = -0.25
+	ship_armor_mult = -0.25
+	#80%武器伤害
+	ship_weapon_damage = -0.2
+	#75%射程70%射速
+	ship_fire_rate_mult = -0.3
+	ship_weapon_range_mult = -0.25
+	#
+}
+
+modifier_BA_mid_debuff_2 = {
+	#55%防御
+	ship_hull_mult = -0.2
+	ship_shield_mult = -0.2
+	ship_armor_mult = -0.2
+	#65%武器伤害
+	ship_weapon_damage = -0.15
+}
+
+modifier_BA_mid_debuff_3 = {
+	#35%防御
+	ship_hull_mult = -0.2
+	ship_shield_mult = -0.2
+	ship_armor_mult = -0.2
+	#45%武器伤害
+	ship_weapon_damage = -0.2
+}
+
+#对中期天灾伤害buff
+modifier_BA_vs_mid_Aris = {
+	damage_vs_country_type_Aris_mid_mult = 0.2
+}

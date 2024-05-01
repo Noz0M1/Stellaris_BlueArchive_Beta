@@ -1,0 +1,67 @@
+entity = {
+	name = "ba_color_class_star_entity"
+	pdxmesh = "black_hole_new_mesh"
+	
+	scale = 1
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 particle = "black_hole_particle" trigger_once = yes keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "blackhole_hum_idle" } }
+	}
+
+	locator = {
+		name = "root_2"
+		position = { 0 0 0 }
+		rotation = { 0 180 0 }
+	}
+	attach = { "root" = "ba_color_class_star_wave_1_entity" }
+	attach = { "root" = "ba_color_class_star_wave_2_entity" }
+	attach = { "root_2" = "ba_color_class_star_wave_1_entity" }
+	attach = { "root_2" = "ba_color_class_star_wave_2_entity" }
+		
+	game_data = {
+		size = 1.0
+		bloom_factor = 5
+	}
+	cull_radius = 700
+}
+
+
+entity = {
+	name = "ba_color_class_star_wave_1_entity"
+	pdxmesh = "ba_color_class_star_mesh"
+	
+			game_data = {
+		shader_type = VFX
+
+		bloom_factor			= 1.4
+		uv_animation_speed 		= 0.035
+		uv_animation_direction 	= { 0.6 0.8 }
+
+		wpo_animation_speed = 0.1
+		wpo_animation_direction = { 0.5 1.0 }
+		wpo_animation_scale = 1.0
+		wpo_animation_big_scale = .6
+		wpo_animation_offset_strength = 4.0
+		}
+}
+
+
+entity = {
+	name = "ba_color_class_star_wave_2_entity"
+	pdxmesh = "ba_color_class_star_wave_mesh"
+	
+			game_data = {
+		shader_type = VFX
+
+		bloom_factor			= 0.7
+		uv_animation_speed 		= 0.015
+		uv_animation_direction 	= { 0.5 0.8 }
+
+		wpo_animation_speed = 0.1
+		wpo_animation_direction = { 0.5 1.0 }
+		wpo_animation_scale = 1.0
+		wpo_animation_big_scale = .6
+		wpo_animation_offset_strength = 4.0
+		}
+}

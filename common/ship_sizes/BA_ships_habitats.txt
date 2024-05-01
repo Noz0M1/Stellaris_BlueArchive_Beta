@@ -1,0 +1,165 @@
+@build_block_BA_habitat_starbase = 20
+@BA_habitat_starbase_formation_priority = 1
+@major_BA_orbital_scale_factor = 0.50
+@minor_BA_orbital_scale_factor = 0.33
+@major_BA_orbital_alloy_upkeep = 1
+@minor_BA_orbital_alloy_upkeep = 0.5
+
+ship_BA_auto_habitat_center = {
+    entity = "habitat_phase_03_entity"
+    graphical_culture = yes
+    max_speed = 0.0
+    acceleration = 0.0
+    rotation_speed = 0.0
+    max_hitpoints = @starport_armor
+    combat_size_multiplier = 5
+    size_multiplier = 4
+    fleet_slot_size = 2
+    section_slots = {
+        "part1" = { locator = "part1" }
+    }
+
+    potential_construction = {
+        # Dummy "ship" to show in the Ship Preview.
+        always = no
+    }
+
+    possible_construction = {
+        always = no
+    }
+
+    is_designable = no
+    uses_name_prefix = no
+    num_target_locators = 0
+    is_space_station = yes
+    can_have_federation_design = no
+    components_add_to_cost = no
+    is_civilian = yes
+    can_disable = yes
+
+    icon = ship_size_military_station
+
+    enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+    enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+    prerequisites = { "tech_habitat_1" }
+    class = shipclass_habitat_station
+
+    build_block_radius = @build_block_BA_habitat_starbase
+    formation_priority = @BA_habitat_starbase_formation_priority
+}
+
+ship_BA_auto_habitat_generic = {
+    entity = "habitat_phase_02_entity"
+    hull_scale = @major_BA_orbital_scale_factor
+    graphical_culture = yes
+    max_speed = 0.0
+    acceleration = 0.0
+    rotation_speed = 0.0
+    modifier = {
+        ship_evasion_mult = -1
+        ship_armor_add = @starport_armor
+        ship_shield_add = @starport_armor
+        ship_hull_regen_add_perc = 0.1
+        ship_armor_regen_add_perc = 0.1
+    }
+    max_hitpoints = @starport_armor
+    combat_size_multiplier = 5
+    size_multiplier = 4
+    fleet_slot_size = 2
+    section_slots = {
+        "part1" = { locator = "part1" }
+    }
+
+    potential_construction = {
+        # This is built through a megastructure
+        always = no
+    }
+
+    possible_construction = {
+        always = no
+    }
+
+    resources = {
+        category = megastructures_habitat
+
+        upkeep = {
+            alloys = @major_BA_orbital_alloy_upkeep
+        }
+    }
+
+    is_designable = no
+    uses_name_prefix = no
+    num_target_locators = 0
+    is_space_station = yes
+    can_have_federation_design = no
+    components_add_to_cost = no
+    is_civilian = yes
+    can_disable = yes
+
+    icon = ship_size_military_station
+
+    enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+    prerequisites = { "tech_habitat_1" }
+    class = shipclass_habitat_station
+
+    build_block_radius = @build_block_BA_habitat_starbase
+    formation_priority = @BA_habitat_starbase_formation_priority
+}
+
+ship_BA_auto_habitat_minor = {
+    entity = "habitat_phase_01_entity"
+    hull_scale = @minor_BA_orbital_scale_factor
+    graphical_culture = yes
+    max_speed = 0.0
+    acceleration = 0.0
+    rotation_speed = 0.0
+    modifier = {
+        ship_evasion_mult = -1
+        ship_armor_add = @outpost_armor
+        ship_shield_add = @outpost_armor
+        ship_hull_regen_add_perc = 0.1
+        ship_armor_regen_add_perc = 0.1
+    }
+    max_hitpoints = @outpost_armor
+    combat_size_multiplier = 5
+    size_multiplier = 4
+    fleet_slot_size = 2
+    section_slots = {
+        "part1" = { locator = "part1" }
+    }
+
+    potential_construction = {
+        # This is built through a megastructure
+        always = no
+    }
+
+    possible_construction = {
+        always = no
+    }
+
+    resources = {
+        category = megastructures_habitat
+
+        upkeep = {
+            alloys = @minor_BA_orbital_alloy_upkeep
+        }
+    }
+
+    is_designable = no
+    uses_name_prefix = no
+    num_target_locators = 0
+    is_space_station = yes
+    can_have_federation_design = no
+    components_add_to_cost = no
+    is_civilian = yes
+    can_disable = yes
+
+    icon = ship_size_military_station
+
+    enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+    prerequisites = { "tech_habitat_1" }
+    class = shipclass_habitat_station
+
+    build_block_radius = @build_block_BA_habitat_starbase
+    formation_priority = @BA_habitat_starbase_formation_priority
+}

@@ -1,0 +1,72 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Millennium_Tech_Tower_Part_01_mesh"
+		file = "gfx/models/ships/megastructures/Millennium_Tower/Millennium_Tech_Tower_Part_01.mesh"
+		scale = 75.0
+
+		meshsettings = {
+			name = "Millennium_Tech_Tower_Part_01Shape"
+			index = 0
+			texture_diffuse = "Millennium_Tech_Tower_02.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Millennium_Tech_Tower_Part_01Shape"
+			index = 1
+			texture_diffuse = "Millennium_Tech_Tower_01.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+	pdxmesh = {
+		name = "Millennium_Tech_Tower_Part_02_mesh"
+		file = "gfx/models/ships/megastructures/Millennium_Tower/Millennium_Tech_Tower_Part_02.mesh"
+		scale = 75.0
+
+		meshsettings = {
+			name = "Millennium_Tech_Tower_Part_02Shape"
+			index = 0
+			texture_diffuse = "Millennium_Tech_Tower_03.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "Millennium_Tech_Tower_Part_03_mesh"
+		file = "gfx/models/ships/megastructures/Millennium_Tower/Millennium_Tech_Tower_Part_03.mesh"
+		scale = 75.0
+
+		meshsettings = {
+			name = "Millennium_Tech_Tower_Part_03Shape"
+			index = 0
+			texture_diffuse = "Millennium_Tech_Tower_03.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "Millennium_Tech_Tower_Part_04_mesh"
+		file = "gfx/models/ships/megastructures/Millennium_Tower/Millennium_Tech_Tower_Part_04.mesh"
+		scale = 75.0
+
+		meshsettings = {
+			name = "Millennium_Tech_Tower_Part_04Shape"
+			index = 0
+			texture_diffuse = "Millennium_Tech_Tower_03.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Millennium_Tech_Tower_Part_04Shape"
+			index = 1
+			texture_diffuse = "Millennium_Tech_Tower_01.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+}

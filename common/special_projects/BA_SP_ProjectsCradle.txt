@@ -1,0 +1,167 @@
+#摇篮计划 A
+special_project = {
+	key = "BA_Project_Cradle_02"
+	event_chain = BA_Project_Cradle_chain
+	event_scope = ship_event
+	days_to_research = 180	#180
+	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 3
+	}
+	on_success = {
+		owner = {
+			country_event = {
+				id = BA_Project.0012
+			}
+		}
+	}
+}
+
+special_project = {
+	key = "BA_Project_Cradle_03"
+	event_chain = BA_Project_Cradle_chain
+	event_scope = ship_event
+	days_to_research = 180	#180
+	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 3
+	}
+	on_success = {
+		owner = {
+			country_event = {
+				id = BA_Project.0013
+			}
+		}
+	}
+}
+
+#摇篮计划 B
+special_project = {
+	key = "BA_Project_Cradle_07"
+	event_chain = BA_Project_Cradle_chain
+	event_scope = country_event
+	days_to_research = 360	#360
+	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
+	on_start = {
+		add_modifier = {
+			modifier = modifier_BA_Project_Cradle_engaging
+		}
+	}
+	on_cancel = {
+		remove_modifier = modifier_BA_Project_Cradle_engaging
+	}
+	on_success = {
+		remove_modifier = modifier_BA_Project_Cradle_engaging
+		country_event = {
+			id = BA_Project.0019
+		}
+	}
+}
+
+special_project = {
+	key = "BA_Project_Cradle_10"
+	event_chain = BA_Project_Cradle_chain
+	# event_scope = ship_event
+	event_scope = country_event
+	days_to_research = 720	#360
+	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
+	#requirements = {
+	#	shipclass_science_ship = 1
+	#	leader = scientist
+	#	skill = 4
+	#}
+	on_success = {
+		#owner = {
+		country_event = {
+			id = BA_Project.0021
+		}
+		#}
+	}
+}
+
+#摇篮计划C
+special_project = {
+	key = "BA_Project_Cradle_08"
+	event_chain = BA_Project_Cradle_chain
+	event_scope = country_event
+	days_to_research = 360	#360
+	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
+	on_start = {
+		add_modifier = {
+			modifier = modifier_BA_Project_Cradle_engaging
+		}
+	}
+	on_cancel = {
+		remove_modifier = modifier_BA_Project_Cradle_engaging
+	}
+	on_success = {
+		remove_modifier = modifier_BA_Project_Cradle_engaging
+		country_event = {
+			id = BA_Project.0023
+		}
+	}
+}
+
+special_project = {
+	key = "BA_Project_Cradle_09A"	#天基武器线路
+	event_chain = BA_Project_Cradle_chain
+	event_scope = country_event
+	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
+	cost = 5000
+	tech_department = physics_technology
+	same_option_group_as = {
+		BA_Project_Cradle_09B
+	}
+	on_success = {
+		country_event = {
+			id = BA_Project.0024
+		}
+	}
+}
+
+special_project = {
+	key = "BA_Project_Cradle_09B"	#自走机械线路
+	event_chain = BA_Project_Cradle_chain
+	event_scope = country_event
+	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
+	cost = 5000
+	tech_department = engineering_technology
+	same_option_group_as = {
+		BA_Project_Cradle_09A
+	}
+	on_success = {
+		country_event = {
+			id = BA_Project.0031
+		}
+	}
+}
+
+special_project = {
+	key = "BA_Project_Cradle_09C"	#学生自规线路
+	event_chain = BA_Project_Cradle_chain
+	event_scope = country_event
+	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
+	cost = 5000
+	tech_department = society_technology
+	on_success = {
+	}
+}
+
+special_project = {
+	key = "BA_Project_Cradle_09A_after"	#天基武器拆解后研究
+	#event_chain = BA_Project_Cradle_chain
+	event_scope = country_event
+	days_to_research = 360	#360
+	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
+	on_success = {
+		country_event = {
+			id = BA_Project.0028
+		}
+	}
+}
+
+####### 试验

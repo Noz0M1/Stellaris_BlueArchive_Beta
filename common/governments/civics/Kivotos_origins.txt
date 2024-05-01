@@ -1,0 +1,104 @@
+# 伊甸条约
+origin_Kivotos_Eden_treaty = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_Kivotos_Eden_treaty.dds"
+	picture = GFX_origin_eden_treaty
+	starting_colony = pc_BA_campus_planet
+	max_once_global = yes
+	possible = {
+		authority = {
+			value = auth_kivotos
+		}
+		civics = {
+			NOT = {
+				value = civic_BA_Omnia_Vanitas
+			}
+		}
+	}
+	description = "origin_Kivotos_Eden_treaty_effects"
+	advanced_start = yes
+	flags = {
+		custom_start_screen
+		BA_start_at_campus_planet
+	}
+	modifier = {
+		country_leader_cap_add = 2
+	}
+	random_weight = {
+		base = 0
+	}
+}
+
+# 致被遗忘的众神
+origin_Kivotos_Kyrie = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_Kivotos_Kyrie.dds"
+	picture = GFX_origin_kyrie
+	starting_colony = pc_BA_ruined_planet
+	max_once_global = yes
+	possible = {
+		authority = {
+			value = auth_kivotos
+		}
+		civics = {
+			value = civic_BA_Omnia_Vanitas
+		}
+	}
+	description = origin_Kivotos_Kyrie_effects
+	advanced_start = yes
+	flags = {
+		custom_start_screen
+		BA_start_at_ruined_planet
+		origin_Kyrie
+	}
+	modifier = {
+		country_resource_max_add = 5000
+	}
+	random_weight = {
+		base = 0
+	}
+}
+
+# 未命名的始发点
+origin_Kivotos_Unnamed_starting = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_Kivotos_Kyrie.dds"	#先用着 以后改
+	picture = GFX_origin_station	#先用着 以后改
+	starting_colony = pc_BA_auto_habitat
+	preferred_planet_class_neighbor = no
+	initializers = {
+		BA_Kivotos_habitat_sys
+	}
+	playable = {
+		#always = no		#暂时关闭
+	}
+	possible = {
+		authority = {
+			value = auth_kivotos
+		}
+	}
+	description = origin_Kivotos_Unnamed_starting_effects
+	flags = {
+		custom_start_screen
+		BA_start_at_auto_habitat
+		origin_Kivotos_Unnamed_starting
+	}
+	random_weight = {
+		base = 0
+	}
+}
+
+#堕落帝国起源
+origin_ba_fallen_empire = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_Kivotos_Eden_treaty.dds"	#图标（N/A)
+	playable = {
+		always = no		#非玩家起源
+	}
+	possible = {
+	}
+	description = origin_ba_fe_effect
+	random_weight = {
+		base = 0
+	}
+}

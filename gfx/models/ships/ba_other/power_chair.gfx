@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "power_chair_mesh"
+		file = "gfx\models\ships\ba_other\power_chair.mesh"
+		scale = 5.5
+
+		meshsettings = {
+			name = "my_seahouse_01_chairShape"
+			index = 0
+			texture_diffuse = "my_seahouse_01_chair.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

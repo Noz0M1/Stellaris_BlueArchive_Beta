@@ -1,0 +1,737 @@
+#############################
+##### 摇篮计划
+#############################
+situation_Project_Cradle_A = {
+	desc = {
+		text = situation_Project_Cradle_A_desc_1
+		trigger = {
+			situation_progress < 28
+		}
+	}
+	desc = {
+		text = situation_Project_Cradle_A_desc_ship
+		trigger = {
+			situation_progress = 28
+		}
+	}
+	desc = {
+		text = situation_Project_Cradle_A_desc_2
+		trigger = {
+			situation_progress > 28
+			situation_progress < 52
+		}
+	}
+	desc = {
+		text = situation_Project_Cradle_A_desc_3
+		trigger = {
+			situation_progress >= 52
+			situation_progress < 76
+		}
+	}
+	desc = {
+		text = situation_Project_Cradle_A_desc_4
+		trigger = {
+			situation_progress >= 76
+		}
+	}
+	picture = GFX_BA_Emergencies_0003
+	category = neutral
+	complete_icon = GFX_situation_outcome_positive
+	complete_icon_frame = GFX_situation_outcome_frame_blue
+	fail_icon = GFX_situation_outcome_positive
+	fail_icon_frame = GFX_situation_outcome_frame_blue
+	######
+	start_value = 2
+	progress_direction = monodirectional
+	monthly_progress = {
+		base = 2
+		modifier = {
+			set = 0
+			desc = Project_Cradle_A_ship_event
+			owner = {
+				has_country_flag =   BA_Project_Cradle_A_ship_event
+			}
+		}
+		modifier = {
+			factor = 2
+			desc = Project_Cradle_A_supporting
+			current_situation_approach = Project_Cradle_A_support
+		}
+	}
+	approach = {
+		name = Project_Cradle_A_nothing
+		icon = GFX_situation_approach_fist
+		icon_background = GFX_situation_approach_bg_red
+		default = yes
+		on_select = {
+		}
+	}
+	approach = {
+		name = Project_Cradle_A_support
+		icon = GFX_situation_approach_research
+		icon_background = GFX_situation_approach_bg_yellow
+		on_select = {
+		}
+		resources = {
+			category = situations
+			upkeep = {
+				trigger = {
+					owner = {
+						NOT = {
+							has_country_flag = BA_Project_Cradle_A_ship_event
+						}
+					}
+				}
+				energy = 5
+			}
+		}
+	}
+	######
+	stages = {
+		Project_Cradle_A_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 28
+			custom_tooltip = Project_Cradle_A_1_tip
+			on_first_enter = {
+			}
+		}
+		Project_Cradle_A_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_blue
+			end = 52
+			custom_tooltip = Project_Cradle_A_2_tip
+			on_first_enter = {
+				owner = {
+					country_event = {
+						id = BA_Project.0011
+					}
+					set_country_flag = BA_Project_Cradle_A_ship_event
+				}
+			}
+		}
+		Project_Cradle_A_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_blue
+			end = 76
+			custom_tooltip = Project_Cradle_A_3_tip
+			on_first_enter = {
+				owner = {
+					country_event = {
+						id = BA_Project.0014
+					}
+				}
+			}
+		}
+		Project_Cradle_A_3 = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_blue
+			end = 100
+			custom_tooltip = Project_Cradle_A_4_tip
+			on_first_enter = {
+				owner = {
+					country_event = {
+						id = BA_Project.0015
+					}
+				}
+			}
+		}
+	}
+	on_progress_complete = {
+		owner = {
+			country_event = {
+				id = BA_Project.0016
+			}
+		}
+		#destroy_situation = this
+	}
+}
+
+situation_Project_Cradle_B = {
+	desc = {
+		text = situation_Project_Cradle_B_desc
+		trigger = {
+			always = yes
+		}
+	}
+	picture = GFX_BA_Emergencies_0003
+	category = neutral
+	complete_icon = GFX_situation_outcome_positive
+	complete_icon_frame = GFX_situation_outcome_frame_blue
+	fail_icon = GFX_situation_outcome_positive
+	fail_icon_frame = GFX_situation_outcome_frame_blue
+	######
+	start_value = 40
+	progress_direction = bidirectional
+	monthly_progress = {
+		base = 5
+		modifier = {
+			set = 10
+			desc = Project_Cradle_B_option_1
+			current_situation_approach = Project_Cradle_B_option_1
+		}
+		modifier = {
+			set = -10
+			desc = Project_Cradle_B_option_2
+			current_situation_approach = Project_Cradle_B_option_2
+		}
+	}
+	approach = {
+		name = Project_Cradle_B_option_1
+		icon = GFX_situation_approach_fist
+		icon_background = GFX_situation_approach_bg_green
+		on_select = {
+		}
+		resources = {
+			category = situations
+			upkeep = {
+				energy = 10
+			}
+		}
+	}
+	approach = {
+		name = Project_Cradle_B_option_2
+		icon = GFX_situation_approach_fist
+		icon_background = GFX_situation_approach_bg_red
+		on_select = {
+		}
+		resources = {
+			category = situations
+			upkeep = {
+				influence = 0.2
+			}
+		}
+	}
+	######
+	stages = {
+		Project_Cradle_B = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 100
+		}
+	}
+	on_progress_complete = {
+		owner = {
+			country_event = {
+				id = BA_Project.8026
+			}
+		}
+		#destroy_situation = this
+	}
+	on_fail = {
+		owner = {
+			country_event = {
+				id = BA_Project.8027
+			}
+		}
+	}
+}
+
+situation_Project_Cradle_C = {
+	desc = {
+		text = situation_Project_Cradle_C_desc_space
+		trigger = {
+			owner = {
+				has_country_flag = BA_Project_Cradle_C_space_based
+			}
+		}
+	}
+	desc = {
+		text = situation_Project_Cradle_C_desc_machine
+		trigger = {
+			owner = {
+				has_country_flag = BA_Project_Cradle_C_auto_machine
+			}
+		}
+	}
+	picture = GFX_BA_Desert_base
+	category = neutral
+	complete_icon = GFX_situation_outcome_positive
+	complete_icon_frame = GFX_situation_outcome_frame_blue
+	fail_icon = GFX_situation_outcome_positive
+	fail_icon_frame = GFX_situation_outcome_frame_blue
+	######
+	start_value = 0
+	progress_direction = monodirectional
+	monthly_progress = {
+		base = 1
+		modifier = {
+			factor = 5
+			desc = S_Space_based
+			owner = {
+				has_country_flag = BA_Project_Cradle_C_space_based
+			}
+		}
+		modifier = {
+			factor = 3
+			desc = S_Auto_machine
+			owner = {
+				has_country_flag = BA_Project_Cradle_C_auto_machine
+			}
+		}
+		modifier = {
+			factor = 0.75
+			desc = S_delaying
+			owner = {
+				has_country_flag = BA_Project_Cradle_C_delaying
+			}
+			NOT = {
+				current_situation_approach = Project_Cradle_C_backup
+			}
+		}
+	}
+	approach = {
+		name = Project_Cradle_C_nothing
+		icon = GFX_situation_approach_fist
+		icon_background = GFX_situation_approach_bg_red
+		default = yes
+		on_select = {
+		}
+		resources = {
+			category = situations
+			produces = {
+				minerals = 80
+			}
+		}
+	}
+	approach = {
+		name = Project_Cradle_C_backup
+		icon = GFX_situation_approach_research
+		icon_background = GFX_situation_approach_bg_yellow
+		on_select = {
+		}
+		resources = {
+			category = situations
+			upkeep = {
+				influence = 3
+			}
+			produces = {
+				minerals = 80
+			}
+		}
+	}
+	######
+	stages = {
+		Project_Cradle_C = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 180			# = 12*3*5
+			custom_tooltip = Project_Cradle_C_tip
+			on_first_enter = {
+			}
+		}
+	}
+	on_monthly = {
+		events = {
+			BA_Project.8100
+		}
+	}
+	on_progress_complete = {
+		target = {
+			remove_modifier = modifier_BA_Arius_cleaning
+		}
+		owner = {
+			if = {
+				limit = {
+					owner = {
+						has_country_flag = BA_Project_Cradle_C_space_based
+					}
+				}
+				country_event = {
+					id = BA_Project.0026
+				}
+			}
+			else_if = {
+				limit = {
+					owner = {
+						has_country_flag = BA_Project_Cradle_C_auto_machine
+					}
+				}
+				country_event = {
+					id = BA_Project.0033
+				}
+			}
+		}
+		#destroy_situation = this
+	}
+}
+
+#############################
+##### 探索神性光环
+#############################
+situation_Into_Halo = {
+	desc = {
+		text = situation_Into_Halo_desc_1
+		trigger = {
+			situation_progress < 24
+		}
+	}
+	desc = {
+		text = situation_Into_Halo_desc_2
+		trigger = {
+			situation_progress = 24
+		}
+	}
+	desc = {
+		text = situation_Into_Halo_desc_3
+		trigger = {
+			situation_progress > 24
+		}
+	}
+	picture = GFX_BA_Site_of_Aris
+	category = neutral
+	complete_icon = GFX_situation_outcome_positive
+	complete_icon_frame = GFX_situation_outcome_frame_blue
+	fail_icon = GFX_situation_outcome_positive
+	fail_icon_frame = GFX_situation_outcome_frame_blue
+	######
+	start_value = 0
+	progress_direction = monodirectional
+	monthly_progress = {
+		base = 1
+		modifier = {
+			set = 0
+			desc = situation_Into_Halo_site_researching
+			owner = {
+				has_country_flag = BA_Into_Halo_site_researching
+			}
+		}
+	}
+	approach = {
+		name = situation_Into_Halo_approach
+		icon = GFX_situation_approach_research
+		icon_background = GFX_situation_approach_bg_yellow
+		default = yes
+		on_select = {
+		}
+	}
+	######
+	stages = {
+		situation_Into_Halo_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 12
+			custom_tooltip = situation_Into_Halo_1_tip
+			on_first_enter = {
+			}
+		}
+		situation_Into_Halo_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_blue
+			end = 24
+			custom_tooltip = situation_Into_Halo_2_tip
+			on_first_enter = {
+				owner = {
+					country_event = {
+						id = BA_ape.0003
+					}
+				}
+			}
+		}
+		situation_Into_Halo_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_blue
+			end = 36
+			custom_tooltip = situation_Into_Halo_3_tip
+			on_first_enter = {
+				owner = {
+					country_event = {
+						id = BA_ape.0004
+					}
+				}
+			}
+		}
+	}
+	on_monthly = {
+	}
+	on_progress_complete = {
+		owner = {
+			country_event = {
+				id = BA_ape.0007
+			}
+		}
+	}
+}
+
+situation_Halo_awaken = {
+	desc = {
+		text = situation_Halo_awaken_desc_1
+		trigger = {
+			situation_progress < 30
+		}
+	}
+	desc = {
+		text = situation_Halo_awaken_desc_2
+		trigger = {
+			situation_progress >= 30
+			situation_progress < 50
+		}
+	}
+	desc = {
+		text = situation_Halo_awaken_desc_3
+		trigger = {
+			situation_progress >= 50
+		}
+	}
+	picture = GFX_BA_Halo2
+	category = neutral
+	complete_icon = GFX_situation_outcome_positive
+	complete_icon_frame = GFX_situation_outcome_frame_blue
+	fail_icon = GFX_situation_outcome_positive
+	fail_icon_frame = GFX_situation_outcome_frame_blue
+	######
+	start_value = 0
+	progress_direction = monodirectional
+	monthly_progress = {
+		base = 1
+		modifier = {
+			add = 2
+			desc = situation_Halo_awaken_supporting
+			current_situation_approach = situation_Halo_awaken_support
+		}
+		#
+		modifier = {
+			add = 1
+			desc = situation_Halo_awaken_researching
+			situation_progress < 30
+		}
+		#
+		modifier = {
+			add = 1
+			desc = situation_Halo_awaken_price1
+			owner = {
+				has_country_flag = BA_Halo_Prize1
+			}
+		}
+		modifier = {
+			add = 2
+			desc = situation_Halo_awaken_price2
+			owner = {
+				has_country_flag = BA_Halo_Prize2
+			}
+		}
+		modifier = {
+			add = 3
+			desc = situation_Halo_awaken_price3
+			owner = {
+				has_country_flag = BA_Halo_Prize3
+			}
+		}
+		modifier = {
+			add = 4
+			desc = situation_Halo_awaken_price4
+			owner = {
+				has_country_flag = BA_Halo_Prize4
+			}
+		}
+	}
+	approach = {
+		name = situation_Halo_awaken_default
+		icon = GFX_situation_approach_research
+		icon_background = GFX_situation_approach_bg_yellow
+		default = yes
+		on_select = {
+		}
+	}
+	approach = {
+		name = situation_Halo_awaken_support
+		icon = GFX_situation_approach_research
+		icon_background = GFX_situation_approach_bg_green
+		default = yes
+		on_select = {
+		}
+		resources = {
+			category = situations
+			upkeep = {
+				consumer_goods = 50
+				influence = 5
+			}
+		}
+	}
+	######
+	stages = {
+		situation_Halo_awaken_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 30
+			custom_tooltip = situation_Halo_awaken_1_tip
+			on_first_enter = {
+			}
+		}
+		situation_Halo_awaken_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_blue
+			end = 50
+			custom_tooltip = situation_Halo_awaken_2_tip
+			on_first_enter = {
+				owner = {
+					country_event = {
+						id = BA_ape.1002
+					}
+				}
+			}
+		}
+		situation_Halo_awaken_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_blue
+			end = 100
+			custom_tooltip = situation_Halo_awaken_3_tip
+			on_first_enter = {
+				owner = {
+					country_event = {
+						id = BA_ape.1003
+					}
+				}
+			}
+		}
+	}
+	on_monthly = {
+	}
+	on_progress_complete = {
+		owner = {
+			country_event = {
+				id = BA_ape.1004
+			}
+		}
+	}
+}
+
+#############################
+##### 天灾局势
+#############################
+situation_mid_Aris_ask_help = {
+	desc = {
+		text = situation_mid_Aris_ask_help_desc
+		trigger = {
+			always = yes
+		}
+	}
+	picture = GFX_BA_Emergencies_0003
+	category = neutral
+	complete_icon = GFX_situation_outcome_positive
+	complete_icon_frame = GFX_situation_outcome_frame_blue
+	fail_icon = GFX_situation_outcome_positive
+	fail_icon_frame = GFX_situation_outcome_frame_blue
+	######
+	start_value = 50
+	progress_direction = bidirectional
+	monthly_progress = {
+		base = 0
+		modifier = {
+			add = 20
+			desc = mid_Aris_ask_help_option_1
+			current_situation_approach = mid_Aris_ask_help_option_1
+		}
+		modifier = {
+			add = -20
+			desc = mid_Aris_ask_help_option_2
+			current_situation_approach = mid_Aris_ask_help_option_2
+		}
+		#
+		modifier = {
+			add = 5
+			desc = mid_Aris_ask_help_adequate_naval
+			owner = {
+				used_naval_capacity_percent >= 0.6
+				used_naval_capacity_percent < 0.8
+			}
+		}
+		modifier = {
+			add = 5
+			desc = mid_Aris_ask_help_adequate_naval
+			owner = {
+				used_naval_capacity_percent >= 0.8
+			}
+		}
+		modifier = {
+			add = -5
+			desc = mid_Aris_ask_help_insufficient_naval
+			owner = {
+				used_naval_capacity_percent <= 0.2
+			}
+		}
+		modifier = {
+			add = -5
+			desc = mid_Aris_ask_help_insufficient_naval
+			owner = {
+				used_naval_capacity_percent <= 0.4
+				used_naval_capacity_percent > 0.2
+			}
+		}
+		#
+		modifier = {
+			add = -5
+			desc = mid_Aris_ask_help_insufficient_alloys
+			owner = {
+				resource_income_compare = {
+					resource = alloys
+					value < 0
+				}
+			}
+		}
+		#
+		modifier = {
+			add = 10
+			desc = mid_Aris_ask_help_easy_mode
+			has_global_flag = BA_Crisis_Normal
+		}
+		modifier = {
+			add = -10
+			desc = mid_Aris_ask_help_insane_mode
+			has_global_flag = BA_Crisis_Insane
+		}
+	}
+	approach = {
+		name = mid_Aris_ask_help_option_1
+		icon = GFX_situation_approach_fist
+		icon_background = GFX_situation_approach_bg_green
+		on_select = {
+		}
+		resources = {
+			category = situations
+			upkeep = {
+				energy = 10
+			}
+		}
+	}
+	approach = {
+		name = mid_Aris_ask_help_option_2
+		icon = GFX_situation_approach_fist
+		icon_background = GFX_situation_approach_bg_red
+		on_select = {
+		}
+		resources = {
+			category = situations
+			upkeep = {
+				influence = 0.2
+			}
+		}
+	}
+	######
+	stages = {
+		mid_Aris_ask_help = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 100
+		}
+	}
+	on_progress_complete = {
+		owner = {
+			set_country_flag = BA_mid_Aris_ask_help_A			#出去干
+			country_event = {
+				id = BA_crisis.1230
+			}
+		}
+		destroy_situation = this
+	}
+	on_fail = {
+		owner = {
+			set_country_flag = BA_mid_Aris_ask_help_B			#窝里怂
+			set_country_flag = BA_GateBuilder			#建门者旗帜，以后用
+			country_event = {
+				id = BA_crisis.1230
+			}
+		}
+		destroy_situation = this
+	}
+}

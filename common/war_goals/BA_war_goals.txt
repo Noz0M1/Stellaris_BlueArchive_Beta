@@ -1,0 +1,52 @@
+wg_BA_Sacrifice = {
+	total_war = yes
+	casus_belli = BA_Bellum_Ariusum
+	hide_if_no_cb = yes
+	potential = {
+		has_valid_civic = civic_BA_Omnia_Vanitas
+	}
+	possible = {
+		always = yes
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 1000
+			is_ai = yes
+			has_authority = auth_kivotos
+		}
+	}
+	war_exhaustion = 0.3
+	allowed_peace_offers = {
+		#surrender
+	}
+	surrender_acceptance = -1000
+	set_defender_wargoal = wg_BA_resist_Arius
+	on_accept = {
+		custom_tooltip = "wg_BA_Sacrifice_tooltip"
+	}
+}
+
+wg_BA_resist_Arius = {
+	total_war = yes
+	casus_belli = BA_resist_Arius
+	hide_if_no_cb = yes
+	war_exhaustion = 0.3
+	potential = {
+		from = {
+			has_valid_civic = civic_BA_Omnia_Vanitas
+		}
+	}
+	possible = {
+		from = {
+			has_policy_flag = BA_Arius_Guise_lifted
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+	allowed_peace_offers = {
+		#surrender
+	}
+	surrender_acceptance = -1000
+}

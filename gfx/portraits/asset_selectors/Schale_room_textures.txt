@@ -1,0 +1,36 @@
+room_selector = {
+	#default = "d_room"	#point to textures that end with "_room.dds" but remove the file ending
+
+	default = "default_room"	#point to textures that end with "_room.dds" but remove the file ending
+
+	#will run with a limited country scope. species and government is set but the country does not actually exist
+	game_setup = {	
+		"BA_01_room" = { always = yes }
+		"BA_02_room" = { always = yes }
+        "BA_03_room" = { always = yes }
+		"BA_04_room" = { always = yes }
+		"BA_05_room" = { always = yes }
+		"BA_06_room" = { always = yes }
+		"BA_07_room" = { always = yes }
+		"BA_08_room" = { always = yes }
+		"BA_09_room" = { always = yes }
+		"BA_10_room" = { always = yes }
+		"BA_11_room" = { always = yes }
+		"BA_12_room" = { always = yes }
+		"BA_13_room" = { always = yes }
+		"BA_14_room" = { always = yes }
+		"BA_15_room" = { always = yes }
+		"BA_16_room" = { always = yes }
+        "BA_17_room" = { always = yes }
+		"BA_18_room" = { always = yes }
+		"BA_19_room" = { always = yes }
+		"BA_20_room" = { always = yes }
+		"BA_21_room" = { always = yes }
+		"BA_22_room" = { always = yes }
+		"BA_23_room" = { always = yes }
+		"BA_24_room" = { always = yes }
+		"BA_25_room" = { always = yes }
+		"BA_26_room" = { always = yes }
+		"BA_27_room" = { always = yes }
+	}
+}

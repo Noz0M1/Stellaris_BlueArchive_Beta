@@ -1,0 +1,298 @@
+BA_Shittem_display = {
+	#TODO：随特殊领袖储备更新
+	optimize_memory
+	#爱丽丝
+	inline_script = {
+		script = Leader/SP_display
+		Leader = Aris
+		Class = scientist
+	}
+	last_created_leader = {
+		add_trait = leader_trait_aris_SP
+	}
+	#星野
+	inline_script = {
+		script = Leader/SP_display
+		Leader = Hoshino
+		Class = commander
+	}
+	last_created_leader = {
+		add_trait = leader_trait_hoshino_SP5
+	}
+	#日奈
+	inline_script = {
+		script = Leader/SP_display
+		Leader = Hina
+		Class = commander
+	}
+	last_created_leader = {
+		add_trait = leader_trait_hina_SP2
+	}
+	#未花
+	inline_script = {
+		script = Leader/SP_display
+		Leader = Mika
+		Class = commander
+	}
+	last_created_leader = {
+		add_trait = leader_trait_hoshino_SP5
+	}
+	#优香
+	inline_script = {
+		script = Leader/SP_display
+		Leader = Yuuka
+		Class = official
+	}
+	last_created_leader = {
+		add_trait = leader_trait_hoshino_SP5
+	}
+	#亚津子
+	inline_script = {
+		script = Leader/SP_display
+		Leader = Atsuko
+		Class = official
+	}
+	last_created_leader = {
+		add_trait = leader_trait_atsuko_SP1
+	}
+	#纱织
+	inline_script = {
+		script = Leader/SP_display
+		Leader = Saori
+		Class = commander
+	}
+	last_created_leader = {
+		add_trait = leader_trait_atsuko_SP1
+	}
+	#忧
+	inline_script = {
+		script = Leader/SP_display
+		Leader = Ui
+		Class = scientist
+	}
+	last_created_leader = {
+		add_trait = leader_trait_ui_SP1
+		add_trait = leader_trait_ui_SP2
+	}
+
+}
+
+BA_Aris_SP = {
+	create_leader = {
+		class = $class$
+		species = event_target:BA_leader_species
+		gender = female
+		name = NAME_Aris
+		skill = 8
+		set_age = 1
+		immortal = yes
+		event_leader = yes
+		traits = {
+			trait = leader_trait_aris_SP
+		}
+		effect = {
+			BA_Halo_for_special_leader = yes
+			set_leader_flag = leader_death_events_blocked
+			set_leader_flag = BA_event_leader
+			set_leader_flag = BA_Real_Aris
+			change_leader_portrait = Aris07
+			BA_event_leader_replace = {
+				Leader_flag = leader_BA_080
+			}
+			owner = {
+				set_timed_country_flag = {
+					flag = BA_Aris_cooldown
+					days = 360
+				}
+			}
+		}
+	}
+}
+
+BA_Hoshino_SP = {
+	create_leader = {
+		class = commander
+		species = event_target:BA_leader_species
+		gender = female
+		name = NAME_Hoshino
+		skill = 3
+		set_age = 17
+		immortal = yes
+		#event_leader = yes
+		custom_description = DESC_Hoshino
+		custom_catch_phrase = PHASE_Hoshino
+		traits = {
+			trait = leader_trait_hoshino_SP5
+		}
+		effect = {
+			change_leader_portrait = BA_Hoshino
+			set_leader_flag = leader_death_events_blocked
+			set_leader_flag = BA_event_leader
+			set_leader_flag = BA_Hoshino
+			BA_event_leader_replace = {
+				Leader_flag = leader_BA_099
+			}
+			BA_Halo_for_special_leader = yes
+		}
+	}
+}
+
+BA_Hina_SP = {
+	create_leader = {
+		class = commander
+		species = event_target:BA_leader_species
+		gender = female
+		name = NAME_Hina
+		skill = 3
+		set_age = 17
+		immortal = yes
+		event_leader = yes
+		traits = {
+			trait = leader_trait_hina_SP2
+		}
+		effect = {
+			change_leader_portrait = BA_Hina
+			set_leader_flag = leader_death_events_blocked
+			set_leader_flag = BA_event_leader
+			set_leader_flag = BA_Hina
+			BA_event_leader_replace = {
+				Leader_flag = leader_BA_046
+			}
+			BA_Halo_for_special_leader = yes
+		}
+	}
+}
+
+BA_Mika_SP = {
+	create_leader = {
+		class = commander
+		species = event_target:BA_leader_species
+		gender = female
+		name = NAME_Mika
+		skill = 3
+		set_age = 17
+		immortal = yes
+		event_leader = yes
+		traits = {
+			trait = leader_trait_mika_SP3
+		}
+		effect = {
+			change_leader_portrait = BA_Mika
+			set_leader_flag = leader_death_events_blocked
+			set_leader_flag = BA_event_leader
+			set_leader_flag = BA_Mika
+			BA_event_leader_replace = {
+				Leader_flag = leader_BA_019
+			}
+			BA_Halo_for_special_leader = yes
+		}
+	}
+}
+
+BA_Yuuka_SP = {
+	create_leader = {
+		class = commander
+		species = event_target:BA_leader_species
+		gender = female
+		name = NAME_Yuuka
+		skill = 3
+		set_age = 16
+		immortal = yes
+		#event_leader = yes
+		custom_description = DESC_Yuuka
+		custom_catch_phrase = PHASE_Yuuka
+		traits = {
+			trait = leader_trait_yuuka_SP3
+		}
+		effect = {
+			change_leader_portrait = BA_Yuuka
+			set_leader_flag = leader_death_events_blocked
+			set_leader_flag = BA_event_leader
+			set_leader_flag = BA_Yuuka
+			BA_event_leader_replace = {
+				Leader_flag = leader_BA_076
+			}
+			BA_Halo_for_special_leader = yes
+		}
+	}
+}
+
+BA_Atsuko_SP = {
+	create_leader = {
+		class = official
+		species = event_target:BA_leader_species
+		gender = female
+		name = NAME_Atsuko
+		skill = 3
+		set_age = 15
+		immortal = yes
+		event_leader = yes
+		traits = {
+			trait = leader_trait_atsuko_SP1
+		}
+		effect = {
+			change_leader_portrait = BA_Atsuko
+			set_leader_flag = leader_death_events_blocked
+			set_leader_flag = BA_event_leader
+			set_leader_flag = BA_Atsuko
+			BA_event_leader_replace = {
+				Leader_flag = leader_BA_136
+			}
+			BA_Halo_for_special_leader = yes
+		}
+	}
+}
+
+BA_Saori_SP = {
+	create_leader = {
+		class = commander
+		species = event_target:BA_leader_species
+		gender = female
+		name = NAME_Saori
+		skill = 3
+		set_age = 17
+		immortal = yes
+		event_leader = yes
+		traits = {
+			trait = leader_trait_saori_SP1
+		}
+		effect = {
+			change_leader_portrait = BA_Saori
+			set_leader_flag = leader_death_events_blocked
+			set_leader_flag = BA_event_leader
+			set_leader_flag = BA_Saori
+			BA_event_leader_replace = {
+				Leader_flag = leader_BA_134
+			}
+			BA_Halo_for_special_leader = yes
+
+		}
+	}
+}
+
+BA_Ui_SP = {
+	create_leader = {
+		class = scientist
+		species = event_target:BA_leader_species
+		gender = female
+		name = NAME_Ui
+		skill = 5
+		set_age = 17
+		immortal = yes
+		event_leader = yes
+		traits = {
+			trait = leader_trait_ui_SP1
+			trait = leader_trait_ui_SP2
+		}
+		effect = {
+			change_leader_portrait = BA_Ui
+			set_leader_flag = leader_death_events_blocked
+			set_leader_flag = BA_event_leader
+			set_leader_flag = BA_Ui
+			BA_event_leader_replace = {
+				Leader_flag = leader_BA_042
+			}
+			BA_Halo_for_special_leader = yes
+		}
+	}
+}

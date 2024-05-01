@@ -1,0 +1,407 @@
+BA_Kivotos_sys = {
+	name = "sys.Kivotos.name"
+	class = sc_m_giant
+	usage = custom_empire
+	usage_odds = 0
+	flags = {
+		BA_KIVOTOS_SYS_flag
+	}
+	planet = {
+		name = "sys.Kivotos.stellar.name"
+		class = pc_m_giant_star
+		flags = {
+			BA_Kivotos_S_flag
+		}
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+	planet = {
+		name = "sys.Kivotos.Subtle.name"
+		class = pc_toxic
+		orbit_distance = 60
+		orbit_angle = 135
+		size = 18
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+	planet = {
+		name = "sys.Kivotos.Brilliant.name"
+		class = pc_barren
+		orbit_distance = 30
+		orbit_angle = 225
+		size = 21
+		flags = {
+			BA_Gematria_station
+		}
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+	planet = {
+		name = "sys.Kivotos.home.name"
+		class = pc_BA_campus_planet
+		starting_planet = yes
+		#tile_blocker = 0
+		deposit_blockers = none
+		flags = {
+			BA_Kivotos_P1_flag
+		}
+		orbit_distance = 30
+		init_effect = {
+			save_global_event_target_as = Kivotos_start_planet
+			generate_empire_home_planet = yes
+			prevent_anomaly = yes
+		}
+		size = 20
+	}
+	planet = {
+		name = "sys.Kivotos.Kyrie.name"
+		class = pc_shielded
+		orbit_distance = 0
+		orbit_angle = 180
+		size = 20
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+		flags = {
+			BA_Kivotos_ruins_flag
+			BA_Project_Cradle_target
+			colony_event
+		}
+	}
+	planet = {
+		name = "sys.Kivotos.Shiny.name"
+		class = pc_barren
+		orbit_distance = 30
+		orbit_angle = 180
+		size = 24
+		has_ring = yes
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+	planet = {
+		name = "sys.Kivotos.Metal.name"
+		class = pc_gas_giant
+		orbit_distance = 40
+		orbit_angle = 45
+		size = 25
+		has_ring = yes
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+		moon = {
+			name = "sys.Kivotos.Copper.name"
+			class = pc_shattered
+			orbit_distance = 30
+			orbit_angle = 30
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+			}
+		}
+		moon = {
+			name = "sys.Kivotos.Silver.name"
+			class = pc_shattered
+			orbit_distance = 0
+			orbit_angle = 90
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+			}
+		}
+		moon = {
+			name = "sys.Kivotos.Gold.name"
+			class = pc_shattered
+			orbit_distance = 0
+			orbit_angle = 90
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+			}
+		}
+		moon = {
+			name = "sys.Kivotos.Platinum.name"
+			class = pc_shattered
+			orbit_distance = 0
+			orbit_angle = 90
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+			}
+		}
+	}
+	planet = {
+		name = "sys.Kivotos.Sparkle.name"
+		class = pc_barren_cold
+		orbit_distance = 30
+		orbit_angle = 60
+		size = 27
+		has_ring = yes
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+}
+
+BA_Kivotos_habitat_sys = {
+	name = "sys.Kivotos.name"
+	class = sc_m_giant
+	usage = origin
+	usage_odds = 0
+	flags = {
+		BA_KIVOTOS_SYS_flag
+		empire_home_system
+	}
+	planet = {
+		name = "sys.Kivotos.stellar.name"
+		class = pc_m_giant_star
+		flags = {
+			BA_Kivotos_S_flag
+		}
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+	planet = {
+		name = "sys.Kivotos.Subtle.name"
+		class = pc_toxic
+		orbit_distance = 60
+		orbit_angle = 135
+		size = 18
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+	planet = {
+		name = "sys.Kivotos.Brilliant.name"
+		class = pc_barren
+		orbit_distance = 30
+		orbit_angle = 225
+		size = 21
+		flags = {
+			BA_Gematria_station
+			has_megastructure
+		}
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			set_planet_flag = BA_init_module
+			add_deposit = d_physics_1
+			add_deposit = d_society_1
+			add_deposit = d_engineering_1
+		}
+		#moon = {
+		#	name = "sys.Kivotos.habitat.2.name"
+		#	class = pc_BA_auto_habitat
+		#	orbit_angle = {
+		#		min = 90
+		#		max = 270
+		#	}
+		#	orbit_distance = 6
+		#	size = 6
+		#	flags = {
+		#		Unnamed_starting_habitat_2
+		#		megastructure
+		#		habitat
+		#		energy_habitat
+		#		advanced_habitat
+		#		colony_event
+		#	}
+		#	deposit_blockers = none
+		#}
+	}
+	planet = {
+		name = "sys.Kivotos.home.name"
+		class = pc_BA_campus_planet
+		deposit_blockers = none
+		starting_planet = yes
+		flags = {
+			BA_Kivotos_P1_flag
+			BA_Unnamed_starting_target
+			colony_event
+		}
+		orbit_distance = 30
+		init_effect = {
+			#save_global_event_target_as = Kivotos_start_planet
+		}
+		size = 20
+	}
+	planet = {
+		name = "sys.Kivotos.Kyrie.name"
+		class = pc_shielded
+		orbit_distance = 0
+		orbit_angle = 180
+		size = 20
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+		flags = {
+			BA_Kivotos_ruins_flag
+			BA_Project_Cradle_target
+			colony_event
+		}
+	}
+	planet = {
+		name = "sys.Kivotos.Shiny.name"
+		class = pc_barren
+		orbit_distance = 30
+		orbit_angle = 180
+		size = 24
+		has_ring = yes
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			set_planet_flag = BA_init_module
+			add_deposit = d_minerals_1
+		}
+		flags = {
+			has_megastructure
+		}
+		#moon = {
+		#	name = "sys.Kivotos.habitat.1.name"
+		#	class = pc_BA_auto_habitat
+		#	orbit_angle = {
+		#		min = 90
+		#		max = 270
+		#	}
+		#	orbit_distance = 8
+		#	size = 15
+		#	flags = {
+		#		Unnamed_starting_habitat_1
+		#		megastructure
+		#		habitat
+		#		advanced_habitat
+		#		advanced_habitat_2
+		#		energy_habitat
+		#		colony_event
+		#	}
+		#	deposit_blockers = none
+		#}
+	}
+	planet = {
+		name = "sys.Kivotos.Metal.name"
+		class = pc_gas_giant
+		orbit_distance = 40
+		orbit_angle = 45
+		size = 25
+		has_ring = yes
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			set_planet_flag = BA_init_module
+		}
+		flags = {
+			has_megastructure
+		}
+		#moon = {
+		#	name = "sys.Kivotos.habitat.3.name"
+		#	class = pc_BA_auto_habitat
+		#	orbit_angle = {
+		#		min = 90
+		#		max = 270
+		#	}
+		#	orbit_distance = 6
+		#	size = 6
+		#	flags = {
+		#		Unnamed_starting_habitat_3
+		#		megastructure
+		#		habitat
+		#		advanced_habitat
+		#		colony_event
+		#	}
+		#	deposit_blockers = none
+		#}
+		moon = {
+			name = "sys.Kivotos.Copper.name"
+			class = pc_shattered
+			orbit_distance = 30
+			orbit_angle = 30
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+			}
+		}
+		moon = {
+			name = "sys.Kivotos.Silver.name"
+			class = pc_shattered
+			orbit_distance = 0
+			orbit_angle = 90
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+			}
+		}
+		moon = {
+			name = "sys.Kivotos.Gold.name"
+			class = pc_shattered
+			orbit_distance = 0
+			orbit_angle = 90
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+			}
+		}
+		moon = {
+			name = "sys.Kivotos.Platinum.name"
+			class = pc_shattered
+			orbit_distance = 0
+			orbit_angle = 90
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+			}
+		}
+	}
+	planet = {
+		name = "sys.Kivotos.Sparkle.name"
+		class = pc_barren_cold
+		orbit_distance = 30
+		orbit_angle = 60
+		size = 27
+		has_ring = yes
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			set_planet_flag = BA_init_module
+		}
+		flags = {
+			has_megastructure
+		}
+		#moon = {
+		#	name = "sys.Kivotos.habitat.4.name"
+		#	class = pc_BA_auto_habitat
+		#	orbit_angle = {
+		#		min = 90
+		#		max = 270
+		#	}
+		#	orbit_distance = 6
+		#	size = 4
+		#	flags = {
+		#		Unnamed_starting_habitat_4
+		#		megastructure
+		#		habitat
+		#		colony_event
+		#	}
+		#	deposit_blockers = none
+		#}
+	}
+}

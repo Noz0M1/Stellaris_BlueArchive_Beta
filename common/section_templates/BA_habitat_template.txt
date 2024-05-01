@@ -1,0 +1,15 @@
+ship_section_template = {
+	key = "DEFAULT_BA_orbital_generic_SECTION"
+	ship_size = ship_BA_auto_habitat_generic
+	fits_on_slot = "part1"
+	entity = "habitat_phase_02_entity"
+	icon = "GFX_ship_part_core_mid"
+}
+
+ship_section_template = {
+	key = "DEFAULT_BA_orbital_minor_SECTION"
+	ship_size = ship_BA_auto_habitat_minor
+	fits_on_slot = "part1"
+	entity = "habitat_phase_01_entity"
+	icon = "GFX_ship_part_core_mid"
+}

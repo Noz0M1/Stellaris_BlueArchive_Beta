@@ -1,0 +1,774 @@
+#####    宜居性    #####
+trait_pc_Schale_preference = {
+	icon = "gfx/interface/icons/traits/Icon_preference.dds"
+	cost = 0
+	sorting_priority = 30
+	modifier = {
+		pc_BA_campus_planet_habitability = 0.5
+		pc_BA_ruined_planet_habitability = 0.1
+		pc_BA_auto_habitat_habitability = 0.1
+		#
+		pc_continental_habitability = 0.3
+		pc_tropical_habitability = 0.3
+		pc_ocean_habitability = 0.3
+		pc_desert_habitability = 0.3
+		pc_arid_habitability = 0.3
+		pc_tundra_habitability = 0.3
+		pc_arctic_habitability = 0.3
+		pc_alpine_habitability = 0.3
+		pc_savannah_habitability = 0.3
+		#
+		pc_habitat_habitability = 0.1
+		pc_nuked_habitability = 0.1
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#####     光环     #####
+#光环（未解放）！
+trait_halo_unreleased = {
+	cost = 0
+	sorting_priority = 50
+	icon = "gfx/interface/icons/traits/Icon_shun.dds"
+	allowed_archetypes = {
+		Schale
+	}
+	randomized = no
+	immortal_leaders = yes
+	species_potential_add = {
+		always = no
+	}
+	species_potential_remove = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_remove = {
+		OR = {
+			exists = from
+			from = {
+				has_ascension_perk = ap_BA_halo_awaken
+			}
+		}
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	modifier = {
+		pop_growth_speed = -0.3
+		pop_environment_tolerance = 0.2
+		pc_BA_campus_planet_habitability = 0.5
+		pc_BA_ruined_planet_habitability = 0.2
+		planet_jobs_produces_mult = 0.2
+		army_damage_mult = 0.4
+		army_health = 1
+	}
+}
+
+#### 光环改造线路专属
+#光环（解放）！
+trait_halo_awakened = {
+	cost = 0
+	sorting_priority = 50
+	#icon = "gfx/interface/icons/traits/Icon_halo_awakened.dds"
+	icon = "gfx/interface/icons/traits/Icon_halo_full_awakened.dds"
+	allowed_archetypes = {
+		Schale
+	}
+	improves_leaders = yes
+	initial = no
+	randomized = no
+	immortal_leaders = yes
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	modifier = {
+		pop_growth_speed = -0.2
+		pop_environment_tolerance = 0.3
+		planet_jobs_produces_mult = 0.3
+		army_damage_mult = 0.6
+		army_health = 1.75
+	}
+}
+
+#光环（完全解放）！
+trait_halo_full_awakened = {
+	cost = 0
+	sorting_priority = 50
+	#icon = "gfx/interface/icons/traits/Icon_halo_full_awakened.dds"
+	icon = "gfx/interface/icons/traits/Icon_mimori_ao.dds"
+	allowed_archetypes = {
+		Schale
+	}
+	improves_leaders = yes
+	initial = no
+	randomized = no
+	immortal_leaders = yes
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	modifier = {
+		pop_environment_tolerance = 1.5
+		planet_jobs_produces_mult = 0.4
+		army_damage_mult = 0.8
+		army_health = 2.5
+	}
+}
+
+#### 神性解放线路专属
+#光环增幅装置！
+trait_Halo_amplifier = {
+	cost = 0
+	sorting_priority = 50
+	#icon = "gfx/interface/icons/traits/Icon_Small_external_amplifier.dds"
+	icon = "gfx/interface/icons/traits/Icon_saya_purple.dds"
+	allowed_archetypes = {
+		Schale
+	}
+	improves_leaders = yes
+	initial = no
+	randomized = no
+	immortal_leaders = yes
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	modifier = {
+		pop_growth_speed = -0.3
+		pop_environment_tolerance = 0.2
+		planet_jobs_produces_mult = 0.2
+		army_damage_mult = 0.4
+		army_health = 1
+	}
+}
+
+#制造机协议 左1
+trait_keystone_protocol = {
+	cost = 4
+	sorting_priority = 16
+	icon = "gfx/interface/icons/traits/Icon_Small_external_amplifier.dds"	#以后改
+	allowed_archetypes = {
+		Schale
+	}
+	initial = no
+	randomized = no
+	prerequisites = {
+		tech_BA_amplifier_upgrade
+	}
+	species_potential_add = {
+		#always = yes		#以后改
+		has_trait = trait_Halo_amplifier
+	}
+	species_possible_remove = {
+		#always = yes		#以后改
+		has_trait = trait_Halo_amplifier
+	}
+	custom_tooltip = trait_keystone_protocol_tip
+	modifier = {
+		planet_jobs_produces_mult = 0.2
+		pop_category_slave_sr_pyroxenes_upkeep_add = 0.05
+		pop_category_rulers_sr_pyroxenes_upkeep_add = 0.05
+		pop_category_specialists_sr_pyroxenes_upkeep_add = 0.05
+		pop_category_workers_sr_pyroxenes_upkeep_add = 0.05
+	}
+}
+
+#光环运算区 左2-1
+trait_Halo_matrix = {
+	cost = 4
+	sorting_priority = 16
+	icon = "gfx/interface/icons/traits/Icon_Small_external_amplifier.dds"	#以后改
+	allowed_archetypes = {
+		Schale
+	}
+	initial = no
+	randomized = no
+	prerequisites = {
+		tech_BA_amplifier_upgrade
+	}
+	species_potential_add = {
+		#always = yes		#以后改
+		has_trait = trait_Halo_amplifier
+	}
+	species_possible_remove = {
+		#always = yes		#以后改
+		has_trait = trait_Halo_amplifier
+	}
+	custom_tooltip = trait_Halo_matrix_tip
+	modifier = {
+		planet_jobs_physics_research_produces_mult = 0.2
+		planet_jobs_society_research_produces_mult = 0.2
+		planet_jobs_engineering_research_produces_mult = 0.2
+		pop_category_slave_sr_pyroxenes_upkeep_add = 0.05
+		pop_category_rulers_sr_pyroxenes_upkeep_add = 0.05
+		pop_category_specialists_sr_pyroxenes_upkeep_add = 0.05
+		pop_category_workers_sr_pyroxenes_upkeep_add = 0.05
+	}
+}
+
+#神性协调器 左2-2
+trait_divine_coordinator = {
+	cost = 4
+	sorting_priority = 16
+	icon = "gfx/interface/icons/traits/Icon_Small_external_amplifier.dds"	#以后改
+	allowed_archetypes = {
+		Schale
+	}
+	initial = no
+	randomized = no
+	prerequisites = {
+		tech_BA_amplifier_upgrade
+	}
+	species_potential_add = {
+		#always = yes		#以后改
+		has_trait = trait_Halo_amplifier
+	}
+	species_possible_remove = {
+		#always = yes		#以后改
+		has_trait = trait_Halo_amplifier
+	}
+	custom_tooltip = trait_divine_coordinator_tip
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.2
+		pop_category_slave_sr_pyroxenes_upkeep_add = 0.05
+		pop_category_rulers_sr_pyroxenes_upkeep_add = 0.05
+		pop_category_specialists_sr_pyroxenes_upkeep_add = 0.05
+		pop_category_workers_sr_pyroxenes_upkeep_add = 0.05
+	}
+}
+
+#内净化模块 右1
+trait_inner_purfier = {
+	cost = 2
+	sorting_priority = 16
+	icon = "gfx/interface/icons/traits/Icon_Small_external_amplifier.dds"	#以后改
+	allowed_archetypes = {
+		Schale
+	}
+	initial = no
+	randomized = no
+	prerequisites = {
+		tech_BA_amplifier_upgrade
+	}
+	species_potential_add = {
+		#always = yes		#以后改
+		has_trait = trait_Halo_amplifier
+	}
+	species_possible_remove = {
+		#always = yes		#以后改
+		has_trait = trait_Halo_amplifier
+	}
+	custom_tooltip = trait_inner_purfier_tip
+	modifier = {
+		pop_environment_tolerance = 1.8
+		pop_happiness = 0.1
+		pop_category_slave_sr_pyroxenes_upkeep_add = 0.05
+		pop_category_rulers_sr_pyroxenes_upkeep_add = 0.05
+		pop_category_specialists_sr_pyroxenes_upkeep_add = 0.05
+		pop_category_workers_sr_pyroxenes_upkeep_add = 0.05
+	}
+}
+
+#星链接收端 右2
+trait_starlink_receiver = {
+	cost = 0
+	sorting_priority = 16
+	icon = "gfx/interface/icons/traits/Icon_Small_external_amplifier.dds"	#以后改
+	allowed_archetypes = {
+		Schale
+	}
+	initial = no
+	randomized = no
+	prerequisites = {
+		tech_BA_amplifier_upgrade
+	}
+	species_potential_add = {
+		#always = yes		#以后改
+		has_trait = trait_Halo_amplifier
+	}
+	species_possible_remove = {
+		#always = yes		#以后改
+		has_trait = trait_Halo_amplifier
+	}
+	custom_tooltip = trait_starlink_receiver_tip
+	modifier = {
+		pop_growth_speed = -0.15
+		empire_size_pops_mult = 0.2
+		pop_category_slave_sr_pyroxenes_upkeep_add = 0.05
+		pop_category_rulers_sr_pyroxenes_upkeep_add = 0.05
+		pop_category_specialists_sr_pyroxenes_upkeep_add = 0.05
+		pop_category_workers_sr_pyroxenes_upkeep_add = 0.05
+	}
+}
+
+#####   物种特性   #####
+#小春化 1
+trait_BA_Koharu = {
+	cost = 1
+	icon = "gfx/interface/icons/traits/species/BA_Koharu.dds"
+	sorting_priority = 15
+	opposites = {
+		trait_BA_good_students
+	}
+	allowed_archetypes = {
+		Schale
+	}
+	modifier = {
+		pop_growth_speed = 0.15
+		planet_jobs_engineering_research_produces_mult = -0.1
+		planet_jobs_physics_research_produces_mult = -0.1
+		planet_jobs_society_research_produces_mult = -0.1
+	}
+}
+
+#三好学生 1
+trait_BA_good_students = {
+	cost = 1
+	icon = "gfx/interface/icons/traits/species/BA_good_students.dds"
+	sorting_priority = 15
+	opposites = {
+		trait_BA_Koharu
+	}
+	allowed_archetypes = {
+		Schale
+	}
+	modifier = {
+		planet_jobs_engineering_research_produces_mult = 0.1
+		planet_jobs_physics_research_produces_mult = 0.1
+		planet_jobs_society_research_produces_mult = 0.1
+	}
+}
+
+#优秀值日生 1
+trait_BA_grate_duty = {
+	cost = 1
+	icon = "gfx/interface/icons/traits/species/BA_grate_duty.dds"
+	sorting_priority = 15
+	allowed_archetypes = {
+		Schale
+	}
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.15
+		pop_housing_usage_mult = -0.05
+	}
+}
+
+#夏日之星 1
+trait_BA_summer_star = {
+	cost = 1
+	icon = "gfx/interface/icons/traits/species/BA_summer_star.dds"
+	sorting_priority = 15
+	allowed_archetypes = {
+		Schale
+	}
+	modifier = {
+		pc_ocean_habitability = 1
+		pop_happiness = 0.05
+	}
+}
+
+#战术训练 2
+trait_BA_tactical_training = {
+	cost = 2
+	icon = "gfx/interface/icons/traits/species/BA_tactical_training.dds"
+	sorting_priority = 15
+	allowed_archetypes = {
+		Schale
+	}
+	modifier = {
+		army_damage_mult = 0.2
+		army_morale = 0.2
+	}
+}
+
+#星链 2
+trait_BA_starlink = {
+	cost = 2
+	sorting_priority = 15
+	allowed_archetypes = {
+		Schale
+	}
+	icon = "gfx/interface/icons/traits/species/BA_starlink.dds"
+	modifier = {
+		planet_jobs_produces_mult = 0.05
+		planet_jobs_ruler_produces_mult = 0.05
+	}
+}
+
+#新世界开拓者 2
+trait_BA_pioneer = {
+	cost = 2
+	sorting_priority = 15
+	allowed_archetypes = {
+		Schale
+	}
+	icon = "gfx/interface/icons/traits/species/BA_pioneer.dds"
+	modifier = {
+#
+		pop_growth_from_immigration = 0.25
+		pop_resettlement_cost_mult = -0.6
+		pop_government_ethic_attraction = -0.05
+	}
+}
+
+#顶配主义 4
+trait_BA_top_notchism = {
+	cost = 4
+	sorting_priority = 15
+	opposites = {
+		trait_BA_tactical_training
+		trait_BA_no_pack
+	}
+	allowed_archetypes = {
+		Schale
+	}
+	improves_leaders = yes
+	initial = yes
+	randomized = yes
+	icon = "gfx/interface/icons/traits/species/BA_top_notchism.dds"
+	modifier = {
+		army_damage_mult = 0.5
+		army_health = 1
+		army_morale = 0.5
+	}
+}
+
+#BD补给方案 4
+trait_BA_BDcase = {
+	cost = 4
+	sorting_priority = 15
+	allowed_archetypes = {
+		Schale
+	}
+	icon = "gfx/interface/icons/traits/species/BA_BDcase.dds"
+	modifier = {
+		num_tech_alternatives_add = 1
+		species_leader_exp_gain = 0.4
+		leader_skill_levels = 3
+	}
+}
+
+#摸鱼 -2
+trait_BA_slack = {
+	cost = -2
+	sorting_priority = 10
+	allowed_archetypes = {
+		Schale
+	}
+	icon = "gfx/interface/icons/traits/species/BA_slack.dds"
+	modifier = {
+		planet_jobs_energy_produces_mult = -0.05
+		pop_amenities_usage_mult = -0.1
+		pop_happiness = 0.1
+	}
+}
+
+#沉迷游戏 -2
+trait_BA_gammer = {
+	cost = -2
+	sorting_priority = 10
+	allowed_archetypes = {
+		Schale
+	}
+	initial = yes
+	randomized = yes
+	icon = "gfx/interface/icons/traits/species/BA_gammer.dds"
+	modifier = {
+		pop_resettlement_cost_mult = 0.2
+	}
+}
+
+#逆反主义 -4
+trait_BA_rebellion = {
+	cost = -4
+	sorting_priority = 10
+	allowed_archetypes = {
+		Schale
+	}
+	randomized = no
+	icon = "gfx/interface/icons/traits/species/BA_rebellion.dds"
+	modifier = {
+		pop_housing_usage_mult = 0.2
+		pop_amenities_usage_no_happiness_mult = 0.2
+	}
+}
+
+#没包人 -4
+trait_BA_no_pack = {
+	cost = -4
+	sorting_priority = 10
+	opposites = {
+		trait_BA_tactical_training
+		trait_BA_top_notchism
+	}
+	allowed_archetypes = {
+		Schale
+	}
+	randomized = no
+	icon = "gfx/interface/icons/traits/species/BA_no_pack.dds"
+	modifier = {
+		army_damage_mult = -0.3
+		army_health = -0.6
+	}
+}
+
+#### 姬器人
+#测试中！
+trait_test = {
+	cost = 0
+	sorting_priority = 50
+	allowed_archetypes = {
+		MACHINE
+	}
+	initial = no
+	randomized = no
+	immortal_leaders = yes
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	icon = "gfx/interface/icons/traits/Icon_unfinshed.dds"
+	modifier = {
+		#pop_environment_tolerance = 2
+		pop_housing_usage_mult = -0.3
+		planet_jobs_produces_mult = 0.2
+		planet_pops_upkeep_mult = 0.2
+	}
+}
+
+#测试完成！
+trait_test_finished = {
+	cost = 0
+	sorting_priority = 50
+	allowed_archetypes = {
+		MACHINE
+	}
+	initial = no
+	randomized = no
+	immortal_leaders = yes
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	icon = "gfx/interface/icons/traits/Icon_aris_purple.dds"
+	modifier = {
+		planet_jobs_produces_mult = 0.3
+		army_damage_mult = 0.2
+		army_health = 1.5
+	}
+}
+
+#GAMEGIRL协议
+trait_gamegirl = {
+	cost = 2
+	sorting_priority = 19
+	allowed_archetypes = {
+		MACHINE
+	}
+	initial = no
+	randomized = no
+	species_potential_add = {
+		from = {
+			has_country_flag = BA_Aris_lifted
+		}
+	}
+	species_possible_remove = {
+		from = {
+			#has_country_flag = BA_Aris_lifted
+			always = yes
+		}
+	}
+	icon = "gfx/interface/icons/traits/trait_gamegirl.dds"	#以后改
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.2
+		#species_empire_size_mult = -0.25
+		empire_size_pops_mult = -0.25
+		#pop_category_specialists_sr_pyroxenes_upkeep_add = 0.2
+	}
+}
+
+#WINGBOT
+trait_wingbot = {
+	cost = 2
+	sorting_priority = 19
+	allowed_archetypes = {
+		MACHINE
+	}
+	initial = no
+	randomized = no
+	species_potential_add = {
+		from = {
+			has_country_flag = BA_Aris_lifted
+		}
+	}
+	species_possible_remove = {
+		from = {
+			has_country_flag = BA_Aris_lifted
+		}
+	}
+	icon = "gfx/interface/icons/traits/trait_wingbot.dds"	#以后改
+	modifier = {
+		planet_jobs_society_research_produces_mult = 0.15
+		planet_jobs_physics_research_produces_mult = 0.15
+		planet_jobs_engineering_research_produces_mult = 0.15
+		#pop_category_specialists_sr_pyroxenes_upkeep_add = 0.2
+	}
+}
+
+#随机化建造产线
+trait_randomized_line = {
+	cost = 2
+	sorting_priority = 19
+	allowed_archetypes = {
+		MACHINE
+	}
+	initial = no
+	randomized = no
+	species_potential_add = {
+		from = {
+			has_country_flag = BA_Aris_lifted
+		}
+	}
+	species_possible_remove = {
+		from = {
+			has_country_flag = BA_Aris_lifted
+		}
+	}
+	icon = "gfx/interface/icons/traits/trait_randomized_line.dds"	#以后改
+	assembling_modifier = {
+		planet_pop_assemblers_upkeep_mult = 0.2
+		planet_pop_assembly_mult = 0.15
+	}
+}
+
+#联邦智械矩阵
+trait_federation_matrix = {
+	cost = 2
+	sorting_priority = 19
+	allowed_archetypes = {
+		MACHINE
+	}
+	initial = no
+	randomized = no
+	species_potential_add = {
+		from = {
+			has_country_flag = BA_Aris_lifted
+		}
+	}
+	species_possible_remove = {
+		from = {
+			#has_country_flag = BA_Aris_lifted
+			always = yes
+		}
+	}
+	icon = "gfx/interface/icons/traits/trait_federation_matrix.dds"	#以后改
+	modifier = {
+		planet_jobs_produces_mult = 0.15
+		#pop_category_specialists_sr_pyroxenes_upkeep_add = 0.2
+		#pop_category_rulers_sr_pyroxenes_upkeep_add = 0.2
+	}
+}
+
+#物质处理模块
+trait_substance_module = {
+	cost = 2
+	sorting_priority = 19
+	allowed_archetypes = {
+		MACHINE
+	}
+	initial = no
+	randomized = no
+	species_potential_add = {
+		from = {
+			has_country_flag = BA_Aris_lifted
+		}
+	}
+	species_possible_remove = {
+		from = {
+			#has_country_flag = BA_Aris_lifted
+			always = yes
+		}
+	}
+	icon = "gfx/interface/icons/traits/trait_substance_module.dds"	#以后改
+	modifier = {
+		pop_category_rulers_energy_upkeep_add = -0.5
+		pop_category_specialists_energy_upkeep_add = -0.5
+		pop_category_workers_energy_upkeep_add = -0.5
+		pop_category_slave_energy_upkeep_add = -0.5
+		pop_category_rulers_food_upkeep_add = 0.5
+		pop_category_specialists_food_upkeep_add = 0.5
+		pop_category_workers_food_upkeep_add = 0.5
+		pop_category_slave_food_upkeep_add = 0.5
+	}
+	custom_tooltip = trait_substance_module_tip
+}
+
+#### 堕落
+#先驱者光环！
+trait_Halo_precursor = {
+	cost = 0
+	sorting_priority = 50
+	allowed_archetypes = {
+		MACHINE
+		Schale
+	}
+	initial = no
+	randomized = no
+	immortal_leaders = yes
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	icon = "gfx/interface/icons/traits/Icon_airi_gold.dds"
+	modifier = {
+		pop_growth_speed = -0.5
+		pop_environment_tolerance = 1.5
+		planet_jobs_produces_mult = 1
+		army_damage_mult = 2
+		army_health = 4
+	}
+}
+
+#后数秘术机械！
+trait_G_after = {
+	cost = 0
+	sorting_priority = 50
+	allowed_archetypes = {
+		MACHINE
+		Schale
+	}
+	initial = no
+	randomized = no
+	immortal_leaders = yes
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	#icon = "gfx/interface/icons/traits/trait_test_finished.dds"
+	icon = "gfx/interface/icons/traits/Icon_airi_gold.dds"
+	modifier = {
+		pop_environment_tolerance = 2
+		planet_jobs_produces_mult = 0.3
+		army_damage_mult = 0.2
+		army_health = 1.5
+	}
+}

@@ -1,0 +1,165 @@
+col_pyroxenes_craft = {
+	icon = GFX_colony_type_industrial	#以后改
+	potential = {
+		exists = owner
+		owner = {
+			is_regular_empire = yes
+			has_authority = auth_kivotos
+		}
+		is_special_colony_type = no
+	}
+	planet_modifier = {
+		planet_stability_add = 5
+		planet_amenities_add = 10
+		pop_happiness = 0.1
+		planet_jobs_sr_pyroxenes_produces_mult = 0.1
+		planet_building_BA_pyroxenes_1_build_speed_mult = 0.25
+	}
+	weight_modifier = {
+		base = 0
+		modifier = {
+			add = 15
+			OR = {
+				has_building = building_BA_pyroxenes_1
+				has_building = building_BA_pyroxenes_2
+			}
+		}
+	}
+}
+
+col_auto_building = {
+	icon = GFX_colony_type_refinery	#以后改
+	potential = {
+		exists = owner
+		owner = {
+			is_regular_empire = yes
+			has_authority = auth_kivotos
+		}
+		is_special_colony_type = no
+	}
+	custom_tooltip = col_auto_building_tooltip
+	planet_modifier = {
+		planet_building_BA_keystone_1_build_speed_mult = 0.25
+		planet_building_BA_rare_center_1_build_speed_mult = 0.25
+		planet_building_BA_dark_matter_concentrator_1_build_speed_mult = 0.25
+		pop_housing_usage_mult = 0.5
+	}
+	weight_modifier = {
+		base = 0
+		modifier = {
+			add = 15
+			OR = {
+				has_building = building_BA_keystone_1
+				has_building = building_BA_keystone_2
+				has_building = building_BA_dark_matter_concentrator_1
+				has_building = building_BA_rare_center_1
+			}
+		}
+	}
+}
+
+col_BA_campus_normal = {
+	icon = GFX_colony_type_urban
+	potential = {
+		exists = owner
+		owner = {
+			is_regular_empire = yes
+			has_authority = auth_kivotos
+		}
+		is_special_colony_type = no
+		is_planet_class = pc_BA_campus_planet
+	}
+	planet_modifier = {
+		planet_amenities_mult = 0.2
+		planet_building_build_speed_mult = 0.2
+		planet_decision_enact_speed_mult = 0.2
+	}
+	weight_modifier = {
+		base = 35
+	}
+}
+
+col_BA_campus_club = {
+	icon = GFX_colony_type_research
+	potential = {
+		exists = owner
+		owner = {
+			is_regular_empire = yes
+			has_authority = auth_kivotos
+		}
+		is_special_colony_type = no
+		is_planet_class = pc_BA_campus_planet
+	}
+	planet_modifier = {
+		planet_researchers_upkeep_mult = -0.2
+		planet_BA_districts_campus_build_speed_mult = 0.2
+	}
+	weight_modifier = {
+		base = 25
+		modifier = {
+			add = 20
+			num_districts = {
+				type = BA_districts_campus
+				value >= 5
+			}
+		}
+	}
+}
+
+col_BA_campus_craft = {
+	icon = GFX_colony_type_foundry
+	potential = {
+		exists = owner
+		owner = {
+			is_regular_empire = yes
+			has_authority = auth_kivotos
+		}
+		is_special_colony_type = no
+		is_planet_class = pc_BA_campus_planet
+	}
+	planet_modifier = {
+		planet_metallurgists_minerals_upkeep_mult = -0.2
+		planet_metallurgists_sr_keystone_upkeep_mult = -0.2
+		planet_building_BA_keystone_foundry_1_build_speed_mult = 0.2
+		planet_BA_districts_military_factory_build_speed_mult = 0.2
+	}
+	weight_modifier = {
+		base = 25
+		modifier = {
+			add = 20
+			num_districts = {
+				type = BA_districts_military_factory
+				value >= 5
+			}
+		}
+	}
+}
+
+col_BA_campus_unemp = {
+	icon = GFX_colony_type_bureaucratic
+	potential = {
+		exists = owner
+		owner = {
+			is_regular_empire = yes
+			has_authority = auth_kivotos
+		}
+		is_special_colony_type = no
+		is_planet_class = pc_BA_campus_planet
+	}
+	planet_modifier = {
+		planet_pops_consumer_goods_upkeep_mult = -0.5
+		planet_jobs_consumer_goods_upkeep_mult = -0.5
+		pop_demotion_time_mult = -0.7
+	}
+	custom_tooltip = col_BA_campus_unemp_tooltip
+	weight_modifier = {
+		base = 25
+		modifier = {
+			add = 10
+			num_assigned_jobs = {
+				job = BA_flexible_workers
+				value >= 10
+			}
+		}
+	}
+}

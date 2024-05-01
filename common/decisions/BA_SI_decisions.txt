@@ -1,0 +1,214 @@
+### 阿拜多斯
+decision_BA_SI_Abydos_A06 = {
+	owned_planets_only = yes
+	icon = decision_arcology_project
+	prerequisites = {
+		tech_BA_SI_Abydos_A06
+	}
+	potential = {
+		NOT = {
+			has_modifier = modifier_BA_SI_Abydos_A06_permanent
+		}
+		OR = {
+			is_planet_class = pc_BA_campus_planet
+			has_planet_flag = habitat_level_3
+			has_planet_flag = advanced_habitat_2
+		}
+	}
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 2500
+			minerals = 2500
+			alloys = 500
+		}
+	}
+	effect = {
+		add_modifier = {
+			modifier = modifier_BA_SI_Abydos_A06_permanent
+		}
+		add_modifier = {
+			modifier = modifier_BA_SI_Abydos_A06_temp
+			days = 1800
+		}
+	}
+}
+
+decision_BA_SI_Abydos_B02 = {
+	owned_planets_only = yes
+	icon = decision_arcology_project
+	prerequisites = {
+		tech_BA_SI_Abydos_B02
+	}
+	potential = {
+		is_planet_class = pc_desert
+		NOT = {
+			check_variable = {
+				which = BA_SI_Abydos_B_route
+				value >= 1
+			}
+		}
+	}
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 2500
+			minerals = 2500
+			alloys = 500
+		}
+	}
+	effect = {
+		add_modifier = {
+			modifier = modifier_BA_SI_Abydos_B_route_1
+		}
+		change_variable = {
+			which = BA_SI_Abydos_B_route
+			value = 1
+		}
+	}
+}
+
+decision_BA_SI_Abydos_B03 = {
+	owned_planets_only = yes
+	icon = decision_arcology_project
+	prerequisites = {
+		tech_BA_SI_Abydos_B03
+	}
+	potential = {
+		is_planet_class = pc_desert
+		check_variable = {
+			which = BA_SI_Abydos_B_route
+			value = 1
+		}
+	}
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 2500
+			minerals = 2500
+			alloys = 500
+		}
+	}
+	effect = {
+		hidden_effect = {
+			remove_modifier = modifier_BA_SI_Abydos_B_route_1
+		}
+		add_modifier = {
+			modifier = modifier_BA_SI_Abydos_B_route_2
+		}
+		change_variable = {
+			which = BA_SI_Abydos_B_route
+			value = 1
+		}
+	}
+}
+
+decision_BA_SI_Abydos_B05 = {
+	owned_planets_only = yes
+	icon = decision_arcology_project
+	prerequisites = {
+		tech_BA_SI_Abydos_B05
+	}
+	potential = {
+		is_planet_class = pc_desert
+		check_variable = {
+			which = BA_SI_Abydos_B_route
+			value = 2
+		}
+	}
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 2500
+			minerals = 2500
+			alloys = 500
+		}
+	}
+	effect = {
+		hidden_effect = {
+			remove_modifier = modifier_BA_SI_Abydos_B_route_2
+		}
+		add_modifier = {
+			modifier = modifier_BA_SI_Abydos_B_route_3
+		}
+		change_variable = {
+			which = BA_SI_Abydos_B_route
+			value = 1
+		}
+	}
+}
+
+decision_BA_SI_Abydos_B06 = {
+	owned_planets_only = yes
+	icon = decision_arcology_project
+	prerequisites = {
+		tech_BA_SI_Abydos_B06
+	}
+	potential = {
+		is_planet_class = pc_desert
+		check_variable = {
+			which = BA_SI_Abydos_B_route
+			value = 3
+		}
+	}
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 2500
+			minerals = 2500
+			alloys = 500
+		}
+	}
+	effect = {
+		hidden_effect = {
+			remove_modifier = modifier_BA_SI_Abydos_B_route_3
+		}
+		add_modifier = {
+			modifier = modifier_BA_SI_Abydos_B_route_4
+		}
+		change_variable = {
+			which = BA_SI_Abydos_B_route
+			value = 1
+		}
+	}
+}
+
+decision_BA_SI_Abydos_G03 = {
+	owned_planets_only = yes
+	icon = decision_arcology_project
+	prerequisites = {
+		tech_BA_SI_Abydos_G03
+	}
+	potential = {
+		is_planet_class = pc_BA_campus_planet
+	}
+	allow = {
+		NOT = {
+			has_modifier = modifier_BA_SI_Abydos_G03
+		}
+	}
+	enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			energy = 2500
+			minerals = 2500
+			alloys = 500
+		}
+	}
+	effect = {
+		add_modifier = {
+			modifier = modifier_BA_SI_Abydos_G03
+            days = 1800
+		}
+		set_variable = {
+			which = BA_Weapon_X
+			value = 3
+		}
+	}
+}

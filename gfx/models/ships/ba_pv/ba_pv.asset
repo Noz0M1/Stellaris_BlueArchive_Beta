@@ -1,0 +1,48 @@
+entity = {
+	name = "BA_PV_anime_entity"
+	pdxmesh = "ba_sensor_station_mesh"
+	locator = {
+		name = "part1"
+		position = { 0 20 -16 }
+		rotation = { 0 0 0 }
+	}
+	locator = {
+		name = "part2"
+		position = { 0 20 16 }
+		rotation = { 180 0 0 }
+	}
+	locator = {
+		name = "part3"
+		position = { 16 20 0 }
+		rotation = { -90 0 0 }
+	}
+	locator = {
+		name = "part4"
+		position = { -16 20 0 }
+		rotation = { 90 0 0 }
+	}
+
+	locator = {
+		name = "projector"
+		position = { 0  0 0 }
+		rotation = { 0 90 0 }
+	}
+
+	locator = {
+		name = "projector_base"
+		position = { 0 0 0 }
+		rotation = { 0 -90 45 }
+	}
+
+
+	attach = {
+		part1 = "BA_PV1_anime_entity"
+		part2 = "BA_PV2_anime_entity"
+		part3 = "BA_PV3_anime_entity"
+		part4 = "BA_PV4_anime_entity"
+		projector = "ba_projector_effect_entity"
+		projector = "ba_projector_effect_entity"
+		projector_base = "ba_advert_part_entity"
+	}
+	scale = 0.5
+}

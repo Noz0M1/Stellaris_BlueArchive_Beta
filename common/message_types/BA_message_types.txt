@@ -1,0 +1,10 @@
+message_type = {
+    key = "NEW_SP_LEADER"
+    icon = "GFX_message_new_heir"
+    icon_frame = 1
+    hidden_in_message_settings = yes
+    name = "MESSAGE_NEW_SP_LEADER_TITLE"
+    sound = "notification"
+    ping = mixed_notification_green
+    category = leaders
+}

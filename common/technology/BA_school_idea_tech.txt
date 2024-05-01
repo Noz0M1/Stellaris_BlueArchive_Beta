@@ -1,0 +1,1636 @@
+#### 学园理念科技
+### 阿拜多斯
+tech_BA_SI_Abydos_G01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Abydos
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Abydos_G02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Abydos
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Abydos_G03 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Abydos
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Abydos_A01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Abydos
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		terraform_speed_mult = 0.25
+	}
+}
+
+tech_BA_SI_Abydos_A02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Abydos
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		planet_districts_upkeep_mult = -0.2
+		terraforming_cost_mult = -0.25
+		terraform_speed_mult = 0.25
+	}
+}
+
+tech_BA_SI_Abydos_A03 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Abydos
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Abydos_A04 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Abydos
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		planet_decision_enact_speed_mult = 0.15
+		planet_buildings_cost_mult = -0.2
+	}
+}
+
+tech_BA_SI_Abydos_A05 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Abydos
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		BA_auto_districts_produces_mult = 0.2
+		megastructures_cost_mult = -0.2
+		station_gatherers_produces_mult = 0.3
+	}
+}
+
+tech_BA_SI_Abydos_A06 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Abydos
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Abydos_B01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Abydos
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Abydos_B02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Abydos
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Abydos_B03 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Abydos
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Abydos_B04 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Abydos
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		pc_desert_habitability = 0.3
+	}
+}
+
+tech_BA_SI_Abydos_B05 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Abydos
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Abydos_B06 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Abydos
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+### 格黑那
+tech_BA_SI_Gehenna_G01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Gehenna
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		planet_jobs_consumer_goods_upkeep_mult = -0.15
+		pop_housing_usage_mult = 0.15
+	}
+}
+
+tech_BA_SI_Gehenna_G02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Gehenna
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		country_resettlement_cost_mult = -0.25
+		pop_demotion_time_mult = -0.5
+	}
+}
+
+tech_BA_SI_Gehenna_G03 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Gehenna
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		BA_auto_buildings_produces_mult = 0.35
+		planet_metallurgists_produces_mult = 0.35
+		planet_metallurgists_upkeep_mult = 0.35
+	}
+}
+
+tech_BA_SI_Gehenna_A01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Gehenna
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Gehenna_A02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Gehenna
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Gehenna_A03 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Gehenna
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Gehenna_B01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Gehenna
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Gehenna_B02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Gehenna
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		starbase_trade_protection_add = 50
+		planet_jobs_unity_produces_mult = 0.2
+	}
+}
+
+tech_BA_SI_Gehenna_B03 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Gehenna
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Gehenna_C01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Gehenna
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Gehenna_C02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Gehenna
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Gehenna_C03 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Gehenna
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Gehenna_D01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Gehenna
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		BA_club_pop_produces_mult = 0.15
+		pop_cat_specialist_happiness = 0.25
+		pop_category_specialists_consumer_goods_upkeep_add = 0.5
+		pop_category_specialists_food_upkeep_add = 2
+	}
+}
+
+tech_BA_SI_Gehenna_D02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Gehenna
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		pop_category_workers_consumer_goods_upkeep_add = 0.25
+		pop_category_workers_food_upkeep_add = 1
+	}
+}
+
+tech_BA_SI_Gehenna_D03 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Gehenna
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		#ship_home_territory_fire_rate_mult = 0.75
+		#species_leader_exp_gain = 1
+		commander_skill_levels = 2
+		commander_exp_gain = 1
+	}
+}
+
+tech_BA_SI_Gehenna_E01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Gehenna
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Gehenna_E02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Gehenna
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		ship_home_territory_fire_rate_mult = 0.75
+		starbase_shipyard_build_speed_mult = 1
+		starbase_shipyard_build_cost_mult = 0.1
+	}
+}
+
+tech_BA_SI_Gehenna_E03 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Gehenna
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		# shipsize_BA_defence_cannon_build_speed_mult = 10
+	}
+}
+
+### 千年
+tech_BA_SI_Millennium_G01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Millennium
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		planet_researchers_consumer_goods_upkeep_add = 0.2
+		planet_researchers_physics_research_produces_add = 0.5
+		planet_researchers_society_research_produces_add = 0.5
+		planet_researchers_engineering_research_produces_add = 0.5
+	}
+}
+
+tech_BA_SI_Millennium_G02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Millennium
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		num_tech_alternatives_add = 1
+		leader_skill_levels = 1
+		planet_researchers_upkeep_mult = 0.05
+		planet_researchers_produces_mult = 0.1
+		planet_pop_assembly_mult = 0.2
+	}
+}
+
+tech_BA_SI_Millennium_G03 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Millennium
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Millennium_G04 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Millennium
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Millennium_G05 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Millennium
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Millennium_G06 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Millennium
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Millennium_G07 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Millennium
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Millennium_G08 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Millennium
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Millennium_G09 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Millennium
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		all_technology_research_speed = 0.25
+	}
+}
+
+tech_BA_SI_Millennium_G10 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Millennium
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		num_tech_alternatives_add = 3
+		leader_skill_levels = 2
+	}
+}
+
+tech_BA_SI_Millennium_G11 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Millennium
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		country_minor_artifacts_produces_mult = 0.1
+	}
+}
+
+tech_BA_SI_Millennium_A01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Millennium
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		science_ship_survey_speed = 0.2
+		ship_anomaly_research_speed_mult = 0.2
+		ship_anomaly_generation_chance_mult = 0.5
+	}
+}
+
+tech_BA_SI_Millennium_A02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Millennium
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		shipclass_science_ship_build_cost_mult = 1
+		shipclass_science_ship_evasion_add = 1
+		shipclass_science_ship_hull_mult = 1
+	}
+}
+
+tech_BA_SI_Millennium_B01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Millennium
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		ships_upkeep_mult = 0.05
+		starbase_shipyard_build_cost_mult = -0.05
+		starbase_shipyard_build_speed_mult = 0.1
+	}
+}
+
+tech_BA_SI_Millennium_B02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Millennium
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		ship_weapon_damage = 0.15
+		ship_fire_rate_mult = 0.15
+	}
+}
+
+tech_BA_SI_Millennium_C01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Millennium
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SI_Millennium_C02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Millennium
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		country_unity_produces_mult = 0.15
+		planet_stability_add = 5
+	}
+}
+
+tech_BA_SI_Millennium_C03 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Millennium
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		species_leader_exp_gain = 3.5
+	}
+}
+
+### 圣三一
+tech_BA_SI_Trinity_G01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Trinity
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		planet_stability_add = 15
+	}
+}
+
+tech_BA_SI_Trinity_A01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Trinity
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		country_unity_produces_mult = 0.05
+		planet_jobs_unity_produces_mult = 0.05
+		council_agenda_progress_speed = 0.05
+		empire_size_systems_mult = -0.1
+	}
+}
+
+tech_BA_SI_Trinity_A02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Trinity
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		pop_category_rulers_unity_produces_add = 5
+		BA_club_pop_unity_produces_add = 1
+		council_agenda_progress_speed = 0.05
+	}
+}
+
+tech_BA_SI_Trinity_A03 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Trinity
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		envoys_add = 4
+		envoy_improve_relations_mult = 1
+		envoy_harm_relations_mult = 1
+		intel_decryption_add = 10
+		espionage_operation_difficulty_add = -5
+	}
+}
+
+tech_BA_SI_Trinity_A04 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Trinity
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		planet_artisans_produces_mult = 0.2
+		planet_artisans_upkeep_mult = -0.05
+		planet_metallurgists_produces_mult = -0.25
+		planet_farmers_produces_mult = 0.3
+		council_agenda_progress_speed = 0.05
+	}
+}
+
+tech_BA_SI_Trinity_A05 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Trinity
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		planet_administrators_unity_produces_add = 5
+		country_unity_produces_mult = 0.1
+		council_agenda_progress_speed = 0.1
+	}
+}
+
+tech_BA_SI_Trinity_A06 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Trinity
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.20
+		council_agenda_progress_speed = 0.25
+		country_government_civic_points_add = 1
+		pop_category_rulers_upkeep_mult = 0.2
+	}
+}
+
+tech_BA_SI_Trinity_B01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Trinity
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		starbase_shipyard_build_speed_mult = 0.1
+		planet_jobs_produces_mult = 0.1
+		all_technology_research_speed = 0.1
+	}
+}
+
+tech_BA_SI_Trinity_B02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Trinity
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		country_alloys_produces_mult = 0.1
+		planet_metallurgists_produces_mult = 0.2
+		country_consumer_goods_produces_mult = -0.1
+		planet_artisans_produces_mult = -0.1
+	}
+}
+
+tech_BA_SI_Trinity_B03 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Trinity
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		starbase_shipyard_build_speed_mult = 0.2
+		starbase_shipyard_build_cost_mult = -0.3
+		ships_upkeep_mult = -0.3
+		country_naval_cap_mult = 0.2
+	}
+}
+
+tech_BA_SI_Trinity_B04 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Trinity
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		starbase_shipyard_build_speed_mult = 0.2
+		starbase_modules_cost_mult = -0.3
+		starbase_module_build_speed_mult = 1
+		starbases_upkeep_mult = -0.5
+	}
+}
+
+tech_BA_SI_Trinity_B05 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Trinity
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		planet_BA_districts_military_factory_build_speed_mult = 1
+		planet_metallurgists_produces_mult = 1
+		planet_metallurgists_upkeep_mult = 0.7
+		planet_stability_add = -5
+	}
+}
+
+tech_BA_SI_Trinity_B06 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Trinity
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		starbase_shipyard_build_speed_mult = 1
+		planet_jobs_produces_mult = 0.3
+		planet_jobs_upkeep_mult = 0.2
+	}
+}
+
+tech_BA_SI_Trinity_C01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Trinity
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		planet_jobs_produces_mult = 0.05
+		shipclass_starbase_build_cost_mult = -0.1
+		shipclass_colonizer_build_cost_mult = -0.3
+		empire_size_systems_mult = -0.1
+		empire_size = -0.02
+	}
+}
+
+tech_BA_SI_Trinity_C02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Trinity
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		planet_colony_development_speed_mult = 1
+		planet_district_city_build_speed_mult = 2
+		planet_district_industrial_build_speed_mult = 2
+		planet_jobs_upkeep_mult = 0.05
+		empire_size_colonies_mult = -0.1
+		empire_size = -0.04
+	}
+}
+
+tech_BA_SI_Trinity_C03 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Trinity
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		pop_growth_speed = 0.2
+		planet_jobs_produces_mult = 0.1
+		planet_jobs_upkeep_mult = 0.05
+		empire_size_pops_mult = -0.1
+		empire_size = -0.06
+	}
+}
+
+tech_BA_SI_Trinity_C04 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Trinity
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		planet_building_build_speed_mult = 0.5
+		planet_decision_enact_speed_mult = 0.5
+		starbase_shipyard_build_speed_mult = 0.2
+		planet_buildings_cost_mult = 0.2
+		planet_districts_cost_mult = 0.2
+		empire_size_districts_mult = -0.1
+		empire_size = -0.08
+	}
+}
+
+tech_BA_SI_Trinity_C05 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Trinity
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		starbase_upgrade_cost_mult = -0.2
+		country_naval_cap_mult = 0.15
+		megastructure_build_speed_mult = 2
+		country_megastructure_build_cap_add = 2
+		megastructures_cost_mult = 0.3
+		empire_size = -0.1
+	}
+}
+
+tech_BA_SI_Trinity_C06 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Trinity
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+	modifier = {
+		colony_start_num_pops_add = 2
+		pop_growth_from_immigration = 1
+		planet_jobs_produces_mult = 0.2
+		megastructures_produces_mult = 0.2
+	}
+}
+
+### 百鬼夜行
+tech_BA_SI_Hyakkiyako_G01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Hyakkiyako
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Hyakkiyako_G02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Hyakkiyako
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Hyakkiyako_G03 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Hyakkiyako
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Hyakkiyako_G04 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Hyakkiyako
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Hyakkiyako_G05 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Hyakkiyako
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Hyakkiyako_G06 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Hyakkiyako
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Hyakkiyako_G07 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Hyakkiyako
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Hyakkiyako_G08 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Hyakkiyako
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Hyakkiyako_G09 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Hyakkiyako
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+### 红冬
+tech_BA_SI_Redwinter_G01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Redwinter
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Redwinter_G02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Redwinter
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Redwinter_G03 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Redwinter
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Redwinter_G04 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Redwinter
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Redwinter_G05 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Redwinter
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+### 瓦尔基里
+tech_BA_SI_Valkyrie_G01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Valkyrie
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Valkyrie_G02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Valkyrie
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Valkyrie_A01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Valkyrie
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Valkyrie_A02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Valkyrie
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Valkyrie_B01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Valkyrie
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Valkyrie_B02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Valkyrie
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+### 山海经
+tech_BA_SI_Shanhaijing_G01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Shanhaijing
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Shanhaijing_G02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Shanhaijing
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Shanhaijing_A01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Shanhaijing
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Shanhaijing_A02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Shanhaijing
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Shanhaijing_A03 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Shanhaijing
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Shanhaijing_A04 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Shanhaijing
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Shanhaijing_B01 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Shanhaijing
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Shanhaijing_B02 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Shanhaijing
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Shanhaijing_B03 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Shanhaijing
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}
+
+tech_BA_SI_Shanhaijing_B04 = {
+	area = society
+	tier = 1
+	category = {
+		school_tech
+	}
+	cost = 1
+	icon = tech_BA_culture_Shanhaijing
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0	#未完成
+}

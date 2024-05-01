@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "chinatsu_weapon_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/chinatsu_weapon.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Chinatsu_Original_WeaponShape"
+			index = 0
+			texture_diffuse = "Chinatsu_Original_Weapon.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}

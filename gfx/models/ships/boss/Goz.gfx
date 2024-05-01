@@ -1,0 +1,60 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Goz_mesh"
+		file = "gfx\models\ships\boss\Goz.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "Goz_OriginalShape"
+			index = 0
+			texture_diffuse = "Goz_Original.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+
+		meshsettings = {
+			name = "Goz_OriginalShape"
+			index = 1
+			texture_diffuse = "Goz_Glass.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "Goz_ScreamriderShape"
+			index = 0
+			texture_diffuse = "Goz_Screamrider.dds"
+			texture_normal = "Goz_Screamrider_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+	pdxmesh = {
+		name = "Goz_Bomb_mesh"
+		file = "gfx\models\ships\boss\Goz_Bomb.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "Goz_BombShape"
+			index = 0
+			texture_diffuse = "Goz_Original.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+	pdxmesh = {
+		name = "Goz_Screamrider_mesh"
+		file = "gfx\models\ships\boss\Goz_Screamrider.mesh"
+		scale = 8.0
+
+		meshsettings = {
+			name = "Goz_ScreamriderShape"
+			index = 0
+			texture_diffuse = "Goz_Screamrider.dds"
+			texture_normal = "Goz_Screamrider_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}

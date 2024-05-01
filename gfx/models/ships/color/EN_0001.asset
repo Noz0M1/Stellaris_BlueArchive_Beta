@@ -1,0 +1,14 @@
+entity = {
+	name = "EN_0001_entity"
+	pdxmesh = "EN_0001_mesh"
+	locator = {
+		name = "root"
+		position = { 0 0 0 }
+		rotation = { 0 0 0 }
+	}
+
+
+	attach = {
+		root = "EN_0001_Sub_entity"
+	}
+}

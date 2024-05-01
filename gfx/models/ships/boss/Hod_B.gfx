@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Hod_B_mesh"
+		file = "gfx\models\ships\boss\Hod_B.mesh"
+		scale = 15.0
+
+		meshsettings = {
+			name = "Hod_B_BodyShape"
+			index = 0
+			texture_diffuse = "HOD_B_Original.dds"
+			texture_normal = "HOD_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}

@@ -1,0 +1,747 @@
+#### 巨型青辉石制造机
+BA_Mega_pyroxenes_base_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"	#以后改
+	place_entity_on_planet_plane = no
+	entity_offset = {
+		x = -20
+		y = -20
+	}
+	rotate_to_center = no
+	scale_offset = yes
+	build_time = 1080
+	resources = {
+		category = megastructures
+		cost = {
+			unity = 5000
+			alloys = 3500
+			sr_pyroxenes = 500
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	prerequisites = {
+		"tech_BA_pyroxenes_megastructure_crafting"
+	}
+	possible = {
+		#存在恒星基地 在国界内 完全调查 无宜居星球 
+		#要求黑洞
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_habitable_planets"
+			NOT = {
+				any_system_planet = {
+					colonizable_planet = yes
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_black_hole"
+			is_star_class = sc_black_hole
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_megastructure"
+			star = {
+				BA_has_megastucture = no
+			}
+		}
+	}
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "must_build_around_star"
+				is_star = yes
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = {
+					has_anomaly = yes
+				}
+			}
+			is_star_class = sc_black_hole
+		}
+	}
+	on_build_complete = {
+		fromfrom.planet = {
+			if = {
+				limit = {
+					has_orbital_station = yes
+				}
+				orbital_station = {
+					dismantle = yes
+				}
+			}
+		}
+	}
+}
+
+BA_Mega_pyroxenes_base_1 = {
+	entity = "ba_mega_pyroxenes_base_stage_1_entity"	#以后改
+	construction_entity = "ba_mega_pyroxenes_base_stage_1_construction_entity"	#以后改
+	portrait = "GFX_megastructure_construction_background"	#以后改
+	entity_offset = {
+		x = -20
+		y = -20
+	}
+	rotate_to_center = yes
+	scale_offset = yes
+	place_entity_on_planet_plane = no
+	build_time = 2160
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 12500
+			unity = 5000
+		}
+		produces = {
+			sr_pyroxenes = 80
+		}
+		upkeep = {
+			energy = 25
+		}
+	}
+	upgrade_from = {
+		BA_Mega_pyroxenes_base_0
+	}
+	prerequisites = {
+		"tech_BA_pyroxenes_megastructure_crafting"
+	}
+	on_build_complete = {
+		from = {
+			country_event = {
+				id = BA_Shittem.3101
+			}
+		}
+	}
+}
+
+BA_Mega_pyroxenes_base_2 = {
+	entity = "ba_mega_pyroxenes_base_stage_2_entity"	#以后改
+	construction_entity = "ba_mega_pyroxenes_base_stage_2_construction_entity"	#以后改
+	portrait = "GFX_megastructure_construction_background"	#以后改
+	entity_offset = {
+		x = -20
+		y = -20
+	}
+	rotate_to_center = yes
+	scale_offset = yes
+	place_entity_on_planet_plane = no
+	build_time = 2160
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 12500
+			unity = 5000
+		}
+		produces = {
+			sr_pyroxenes = 160
+		}
+		upkeep = {
+			energy = 50
+		}
+	}
+	upgrade_from = {
+		BA_Mega_pyroxenes_base_1
+	}
+	prerequisites = {
+		"tech_BA_pyroxenes_megastructure_crafting"
+	}
+	on_build_complete = {
+		from = {
+			country_event = {
+				id = BA_Shittem.3102
+			}
+		}
+	}
+}
+
+BA_Mega_pyroxenes_base_3 = {
+	entity = "ba_mega_pyroxenes_base_stage_3_entity"	#以后改
+	construction_entity = "ba_mega_pyroxenes_base_stage_3_construction_entity"	#以后改
+	portrait = "GFX_megastructure_construction_background"	#以后改
+	entity_offset = {
+		x = -20
+		y = -20
+	}
+	rotate_to_center = yes
+	scale_offset = yes
+	place_entity_on_planet_plane = no
+	build_time = 2160
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 12500
+			unity = 5000
+		}
+		produces = {
+			sr_pyroxenes = 250
+		}
+		upkeep = {
+			energy = 75
+		}
+	}
+	upgrade_from = {
+		BA_Mega_pyroxenes_base_2
+	}
+	prerequisites = {
+		"tech_BA_pyroxenes_megastructure_crafting"
+	}
+	show_prereqs = yes
+	on_build_complete = {
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+			country_event = {
+				id = BA_Shittem.3103
+			}
+		}
+	}
+}
+
+BA_Mega_pyroxenes_base_4 = {
+	entity = "ba_mega_pyroxenes_base_stage_4_entity"	#以后改
+	construction_entity = "ba_mega_pyroxenes_base_stage_4_construction_entity"	#以后改
+	portrait = "GFX_megastructure_construction_background"	#以后改
+	entity_offset = {
+		x = -20
+		y = -20
+	}
+	rotate_to_center = yes
+	scale_offset = yes
+	place_entity_on_planet_plane = no
+	build_time = 2160
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 12500
+			unity = 5000
+			sr_eligma = 200
+		}
+		produces = {
+			sr_pyroxenes = 350
+		}
+		upkeep = {
+			energy = 100
+		}
+	}
+	upgrade_from = {
+		BA_Mega_pyroxenes_base_3
+	}
+	prerequisites = {
+		"tech_BA_megastructure_linking"
+	}
+	show_prereqs = yes
+	on_build_complete = {
+		from = {
+			country_event = {
+				id = BA_Shittem.3104
+			}
+		}
+	}
+}
+
+#### 巨型制造石制造机 
+BA_Mega_keystone_base_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"	#以后改
+	place_entity_on_planet_plane = no
+	entity_offset = {
+		x = -17
+		y = -27
+	}
+	show_galactic_map_icon = yes
+	build_time = 480
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 3000
+			unity = 750
+			sr_pyroxenes = 50
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	prerequisites = {
+		tech_BA_keystone_megastructure_crafting
+	}
+	show_prereqs = yes
+	possible = {
+		#有恒星基地 国界内 行星限制 完全调查（抄就完事
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+	}
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_survey_not_habitable"
+				is_surveyed = {
+					# prevent leaking habitability information
+					who = prev.from
+					status = yes
+				}
+				colonizable_planet = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = {
+					has_anomaly = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_existing_megastructure"
+				BA_has_megastucture = no
+			}
+		}
+	}
+}
+
+BA_Mega_keystone_base_1 = {
+	entity = "ba_mega_keystone_base_stage_1_entity"	#以后改
+	construction_entity = "ba_mega_keystone_base_stage_1_entity"	#以后改
+	portrait = "GFX_megastructure_construction_background"	#以后改
+	place_entity_on_planet_plane = no
+	entity_offset = {
+		x = -17
+		y = -27
+	}
+	build_time = 960
+	resources = {
+		#25倍一级青辉石制造机
+		category = megastructures
+		cost = {
+			alloys = 4000
+			unity = 750
+		}
+		upkeep = {
+			energy = 30
+			sr_pyroxenes = 15
+		}
+		produces = {
+			sr_keystone = 30
+		}
+	}
+	upgrade_from = {
+		BA_Mega_keystone_base_0
+	}
+	prerequisites = {
+		tech_BA_keystone_megastructure_crafting
+	}
+	on_build_complete = {
+		from = {
+			country_event = {
+				id = BA_Shittem.3105
+			}
+		}
+	}
+}
+
+BA_Mega_keystone_base_2 = {
+	entity = "ba_mega_keystone_base_stage_2_entity"	#以后改
+	construction_entity = "ba_mega_keystone_base_stage_2_entity"	#以后改
+	portrait = "GFX_megastructure_construction_background"	#以后改
+	place_entity_on_planet_plane = no
+	entity_offset = {
+		x = -17
+		y = -27
+	}
+	build_time = 960
+	resources = {
+		#50倍二级青辉石制造机
+		category = megastructures
+		cost = {
+			alloys = 5000
+			unity = 750
+		}
+		upkeep = {
+			energy = 50
+			sr_pyroxenes = 30
+		}
+		produces = {
+			sr_keystone = 60
+		}
+	}
+	upgrade_from = {
+		BA_Mega_keystone_base_1
+	}
+	prerequisites = {
+		tech_BA_keystone_megastructure_crafting
+	}
+	show_prereqs = yes
+	on_build_complete = {
+		from = {
+			country_event = {
+				id = BA_Shittem.3106
+			}
+		}
+	}
+}
+
+BA_Mega_keystone_base_3 = {
+	entity = "ba_mega_keystone_base_stage_3_entity"	#以后改
+	construction_entity = "ba_mega_keystone_base_stage_3_entity"	#以后改
+	portrait = "GFX_megastructure_construction_background"	#以后改
+	place_entity_on_planet_plane = no
+	entity_offset = {
+		x = -17
+		y = -27
+	}
+	build_time = 960
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 6000
+			unity = 750
+			sr_eligma = 100
+		}
+		upkeep = {
+			energy = 75
+			sr_pyroxenes = 60
+		}
+		produces = {
+			sr_keystone = 120
+		}
+	}
+	upgrade_from = {
+		BA_Mega_keystone_base_2
+	}
+	prerequisites = {
+		"tech_BA_megastructure_linking"
+	}
+	show_prereqs = yes
+	on_build_complete = {
+		from = {
+			country_event = {
+				id = BA_Shittem.3107
+			}
+		}
+	}
+}
+
+#### 千年巨塔
+BA_Millennium_tower_0 = {
+	entity = construction_platform_entity
+	construction_entity = construction_platform_entity
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = {
+		x = -7
+		y = -7
+	}
+	build_time = 1	#900
+	resources = {
+		category = megastructures
+		cost = {
+			influence = 300
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	prerequisites = {
+		"tech_BA_SI_Millennium_G05"
+	}
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_habitable_planets"
+			NOT = {
+				any_system_planet = {
+					colonizable_planet = yes
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_black_hole"
+			NOT = {
+				is_star_class = sc_black_hole
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_binary_trinary"
+			NOR = {
+				is_star_class = sc_binary_1
+				is_star_class = sc_binary_2
+				is_star_class = sc_binary_3
+				is_star_class = sc_binary_4
+				is_star_class = sc_binary_5
+				is_star_class = sc_binary_6
+				is_star_class = sc_binary_7
+				is_star_class = sc_binary_8
+				is_star_class = sc_binary_9
+				is_star_class = sc_binary_10
+				is_star_class = sc_trinary_1
+				is_star_class = sc_trinary_2
+				is_star_class = sc_trinary_3
+				is_star_class = sc_trinary_4
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_megastructure"
+			#NOT = { has_any_megastructure = yes }
+			has_no_non_gate_megastructure = yes
+			from = {
+				NOT = {
+					has_country_flag = has_Millennium_tower
+				}
+			}
+		}
+	}
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "must_build_around_star"
+				is_star = yes
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = {
+					has_anomaly = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_planets_for_material"
+				hidden:solar_system = {
+					any_system_planet = {
+						NOT = {
+							is_star = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	ai_weight = {
+		base = 0
+	}
+	on_build_start = {
+	}
+	on_build_cancel = {
+	}
+	on_build_complete = {
+		from = {
+			set_country_flag = has_Millennium_tower
+			from = {
+				set_megastructure_flag = Millennium_tower@prev
+			}
+		}
+		set_star_flag = ring_world_built
+	}
+}
+
+BA_Millennium_tower_1 = {
+	entity = "Millennium_Tech_Tower_Phase_01_entity"
+	construction_entity = "Millennium_Tech_Tower_Phase_01_entity"
+	portrait = "GFX_megastructure_construction_background"
+	build_time = 1	#600
+	resources = {
+		category = megastructures
+		cost = {
+			energy = 2500
+			minerals = 2500
+			alloys = 1000
+		}
+		upkeep = {
+			minerals = 100
+		}
+		produces = {
+			physics_research = 100
+			society_research = 100
+			engineering_research = 100
+		}
+	}
+	country_modifier = {
+		all_technology_research_speed = 0.05
+	}
+	upgrade_from = {
+		BA_Millennium_tower_0
+	}
+	prerequisites = {
+		"tech_BA_SI_Millennium_G05"
+	}
+	show_prereqs = yes
+	on_build_start = {
+	}
+	on_build_cancel = {
+	}
+	on_build_complete = {
+		every_system_planet = {
+			limit = {
+				is_star = no
+			}
+			remove_planet = yes
+		}
+		set_asteroid_belt = {
+			radius = 0
+		}
+	}
+}
+
+BA_Millennium_tower_2 = {
+	entity = "Millennium_Tech_Tower_Phase_02_entity"
+	construction_entity = "Millennium_Tech_Tower_Phase_02_entity"
+	portrait = "GFX_megastructure_construction_background"
+	build_time = 1	#600
+	resources = {
+		category = megastructures
+		cost = {
+			energy = 3500
+			minerals = 3500
+			alloys = 1500
+		}
+		upkeep = {
+			minerals = 150
+		}
+		produces = {
+			physics_research = 200
+			society_research = 200
+			engineering_research = 200
+		}
+	}
+	country_modifier = {
+		all_technology_research_speed = 0.1
+		ship_ftl_jumpdrive_range_mult = 0.1
+	}
+	upgrade_from = {
+		BA_Millennium_tower_1
+	}
+	prerequisites = {
+		"tech_BA_SI_Millennium_G06"
+	}
+	show_prereqs = yes
+	on_build_complete = {
+		remove_system_terraforming_candidates = yes
+	}
+}
+
+BA_Millennium_tower_3 = {
+	entity = "Millennium_Tech_Tower_Phase_03_entity"
+	construction_entity = "Millennium_Tech_Tower_Phase_03_entity"
+	portrait = "GFX_megastructure_construction_background"
+	build_time = 1	#600
+	resources = {
+		category = megastructures
+		cost = {
+			energy = 6000
+			minerals = 6000
+			alloys = 2000
+		}
+		upkeep = {
+			minerals = 200
+		}
+		produces = {
+			physics_research = 300
+			society_research = 300
+			engineering_research = 300
+		}
+	}
+	country_modifier = {
+		all_technology_research_speed = 0.15
+		ship_ftl_jumpdrive_range_mult = 0.2
+		ship_speed_mult = 0.2
+	}
+	upgrade_from = {
+		BA_Millennium_tower_2
+	}
+	prerequisites = {
+		"tech_BA_SI_Millennium_G07"
+	}
+	show_prereqs = yes
+	on_build_complete = {
+	}
+}
+
+BA_Millennium_tower_4 = {
+	entity = "Millennium_Tech_Tower_Phase_04_entity"
+	construction_entity = "Millennium_Tech_Tower_Phase_04_entity"
+	portrait = "GFX_megastructure_construction_background"
+	build_time = 1	#1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 8000
+		}
+		upkeep = {
+			minerals = 200
+		}
+		produces = {
+			physics_research = 500
+			society_research = 500
+			engineering_research = 500
+		}
+	}
+	country_modifier = {
+		all_technology_research_speed = 0.30
+		ship_ftl_jumpdrive_range_mult = 0.4
+		ship_speed_mult = 0.4
+		ship_weapon_range_mult = 0.25
+		planet_districts_energy_upkeep_mult = -0.5
+		planet_buildings_energy_upkeep_mult = -0.5
+	}
+	upgrade_from = {
+		BA_Millennium_tower_3
+	}
+	prerequisites = {
+		"tech_BA_SI_Millennium_G08"
+	}
+	show_prereqs = yes
+	on_build_complete = {
+	}
+}

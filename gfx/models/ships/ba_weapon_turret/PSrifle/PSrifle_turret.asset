@@ -1,0 +1,16 @@
+entity = {
+	name = "PSrifle_turret_entity"
+	pdxmesh = "PSrifle_turret_mesh"
+	attach = {
+		root = "PSrifle_entity"
+	}
+	scale = 1.2
+}
+entity = {
+	name = "PSrifle_gun_turret_entity"
+	pdxmesh = "PSrifle_turret_mesh"
+	attach = {
+		root = "PSrifle_entity"
+	}
+	scale = 1.2
+}

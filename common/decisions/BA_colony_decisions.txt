@@ -1,0 +1,251 @@
+########## 改造飞升 ##########
+decision_BA_convert_to_Aris = {
+	owned_planets_only = yes
+	potential = {
+		owner = {
+			has_country_flag = BA_Aris
+		}
+	}
+	enactment_time = 1
+	effect = {
+		hidden_effect = {
+			planet_event = {
+				id = BA_Shittem.3001
+			}
+		}
+	}
+}
+
+decision_BA_new_frontier = {
+	owned_planets_only = yes
+	icon = decision_arcology_project
+	potential = {
+		owner = {
+			has_ascension_perk = ap_BA_new_frontier
+		}
+		NOR = {
+			is_planet_class = pc_BA_ruined_planet
+			is_planet_class = pc_BA_campus_planet
+			is_planet_class = pc_city
+			is_planet_class = pc_BA_auto_habitat
+			is_planet_class = pc_habitat
+			is_planet_class = pc_ringworld_habitable
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+			has_modifier = pm_wenkwort_custodian
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			fail_text = decision_arcology_project_requirements
+			free_district_slots < 1
+			num_districts = {
+				type = district_farming
+				value < 1
+			}
+			num_districts = {
+				type = district_mining
+				value < 1
+			}
+			num_districts = {
+				type = district_generator
+				value < 1
+			}
+			num_districts = {
+				type = district_farming_uncapped
+				value < 1
+			}
+			num_districts = {
+				type = district_mining_uncapped
+				value < 1
+			}
+			num_districts = {
+				type = district_generator_uncapped
+				value < 1
+			}
+		}
+		num_uncleared_blockers < 1
+	}
+	enactment_time = 1800
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1600
+			minerals = 8000
+			consumer_goods = 2400
+			rare_crystals = 160
+			volatile_motes = 160
+			exotic_gases = 160
+		}
+	}
+	effect = {
+		custom_tooltip = decision_BA_new_frontier_desc
+		hidden_effect = {
+			clear_deposits = yes
+			change_pc = pc_BA_campus_planet
+			set_planet_flag = colony_event
+			add_district = BA_districts_dome
+			add_district = BA_districts_dome
+			add_district = BA_districts_dome
+			add_district = BA_districts_campus
+			add_district = BA_districts_campus
+			add_district = BA_districts_municipality
+			add_district = BA_districts_municipality
+			add_district = BA_districts_military_factory
+			add_district = BA_districts_suburbs
+			add_district = BA_districts_suburbs
+			check_planet_employment = yes
+			# planet_event = {
+			# 	id = BA_ape.3002
+			# }
+		}
+	}
+}
+
+########## 居住站 ##########
+#居住站扩建
+decision_BA_upgrade_habitat = {
+	owned_planets_only = yes
+	icon = decision_satellite_in_orbit
+	enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			trigger = {
+				owner = {
+					NOT = {
+						has_active_tradition = tr_expansion_finish_void
+					}
+				}
+			}
+			influence = 25
+			alloys = 750
+		}
+		cost = {
+			trigger = {
+				owner = {
+					has_active_tradition = tr_expansion_finish_void
+				}
+			}
+			influence = 20
+			alloys = 640
+		}
+		cost = {
+			trigger = {
+				NOT = {
+					has_planet_flag = advanced_habitat
+				}
+			}
+			sr_pyroxenes = 40
+		}
+		cost = {
+			trigger = {
+				has_planet_flag = advanced_habitat
+			}
+			sr_pyroxenes = 100
+		}
+	}
+	potential = {
+		exists = owner
+		is_planet_class = pc_BA_auto_habitat
+		owner = {
+			has_technology = tech_BA_auto_habitat_2
+		}
+		NOT = {
+			has_planet_flag = advanced_habitat_2
+		}
+	}
+	allow = {
+		has_upgraded_capital = yes
+	}
+	effect = {
+		if = {
+			limit = {
+				has_planet_flag = advanced_habitat
+			}
+			hidden_effect = {
+				set_planet_entity = {
+					entity = "habitat_phase_03_entity"
+					graphical_culture = owner
+				}
+				set_planet_flag = advanced_habitat_2
+			}
+			set_planet_size = 10
+		}
+		else = {
+			hidden_effect = {
+				set_planet_entity = {
+					entity = "habitat_phase_02_entity"
+					graphical_culture = owner
+				}
+				set_planet_flag = advanced_habitat
+			}
+			set_planet_size = 6
+		}
+	}
+	ai_weight = {
+		weight = 10
+	}
+}
+
+########## 社团项目 ##########
+#对策委员会
+decision_Foreclosure_task_force = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_Foreclosure_task_force
+	resources = {
+		category = decisions
+		cost = {
+			unity = 1000
+		}
+	}
+	potential = {
+		owner = {
+			is_regular_empire = yes
+			has_country_flag = BA_Foreclosure_decisions_ready
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			fail_text = decision_fulled
+			NOT = {
+				has_modifier = modifier_BA_Foreclosure_task_force_3
+			}
+		}
+	}
+	effect = {
+		hidden_effect = {
+			owner = {
+				remove_country_flag = BA_Foreclosure_decisions_ready
+			}
+		}
+		if = {
+			limit = {
+				has_modifier = modifier_BA_Foreclosure_task_force_2
+			}
+			remove_modifier = modifier_BA_Foreclosure_task_force_2
+			add_modifier = {
+				modifier = modifier_BA_Foreclosure_task_force_3
+			}
+		}
+		else_if = {
+			limit = {
+				has_modifier = modifier_BA_Foreclosure_task_force_1
+			}
+			remove_modifier = modifier_BA_Foreclosure_task_force_1
+			add_modifier = {
+				modifier = modifier_BA_Foreclosure_task_force_2
+			}
+		}
+		else = {
+			add_modifier = {
+				modifier = modifier_BA_Foreclosure_task_force_1
+			}
+		}
+	}
+	ai_weight = {
+		weight = 1
+	}
+}

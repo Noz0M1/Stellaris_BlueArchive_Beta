@@ -1,0 +1,19 @@
+entity = {
+	name = "Gregorius_entity"
+	pdxmesh = "Gregorius_mesh"
+
+	attach = {
+		fire = "Gregorius_fire_entity"
+		fire_2 = "Gregorius_fire_entity"
+	}
+}
+
+entity = {
+	name = "Gregorius_fire_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "Gregorius_fire_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+	}
+}

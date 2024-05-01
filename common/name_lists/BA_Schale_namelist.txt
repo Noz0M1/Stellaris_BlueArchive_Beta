@@ -1,0 +1,1515 @@
+﻿# 基沃托斯 namelist
+Schale = {
+	randomized = no
+	language = "l_simp_chinese"
+	ship_names = {
+		generic = {
+			SHIROKO_WEAPON
+			SERIKA_WEAPON
+			HOSHINO_WEAPON
+			AYANE_WEAPON
+			KAYOKO_WEAPON
+			ARU_WEAPON
+			CHINATSU_WEAPON
+			IORI_WEAPON
+			HINA_WEAPON
+			JUNKO_WEAPON
+			IZUMI_WEAPON
+			AKARI_WEAPON
+			HARUNA_WEAPON
+			FUUKA_WEAPON
+			HIFUMI_WEAPON
+			YOSHIMI_WEAPON
+			AIRI_WEAPON
+			SERINA_WEAPON
+			HASUMI_WEAPON
+			TSURUGI_WEAPON
+			ASUNA_WEAPON
+			AKANE_WEAPON
+			KARIN_WEAPON
+			NERU_WEAPON
+			HARE_WEAPON
+			MAKI_WEAPON
+			KOTORI_WEAPON
+			UTAHA_WEAPON
+			HIBIKI_WEAPON
+			YUUKA_WEAPON
+			SUMIRE_WEAPON
+			PINA_WEAPON
+			TSUBAKI_WEAPON
+			CHISE_WEAPON
+			SAYA_WEAPON
+			SHUN_WEAPON
+			NONOMI_WEAPON
+			EIMI_WEAPON
+			HANAE_WEAPON
+			MUTSUKI_WEAPON
+			HARUKA_WEAPON
+			JURI_WEAPON
+			SHIMIKO_WEAPON
+			SUZUMI_WEAPON
+			KOTAMA_WEAPON
+			MASHIRO_WEAPON
+			IZUNA_WEAPON
+			SHIZUKO_WEAPON
+			ARIS_WEAPON
+			MOMOI_WEAPON
+			MIDORI_WEAPON
+			CHERINO_WEAPON
+			NODOKA_WEAPON
+			YUZU_WEAPON
+			AZUSA_WEAPON
+			HANAKO_WEAPON
+			KOHARU_WEAPON
+			KIRINO_WEAPON
+			NATSU_WEAPON
+			MARI_WEAPON
+			MIKU_WEAPON
+			AKO_WEAPON
+			TOMOE_WEAPON
+			FUBUKI_WEAPON
+			WAKAMO_WEAPON
+			SENA_WEAPON
+			CHIHIRO_WEAPON
+			MIMORI_WEAPON
+			UI_WEAPON
+			HINATA_WEAPON
+			MARINA_WEAPON
+			SAKI_WEAPON
+			MIYAKO_WEAPON
+			MIYU_WEAPON
+			KAEDE_WEAPON
+			IROHA_WEAPON
+			MICHIRU_WEAPON
+			TSUKUYO_WEAPON
+			MISAKI_WEAPON
+			HIYORI_WEAPON
+			ATSUKO_WEAPON
+			SAORI_WEAPON
+			MOE_WEAPON
+			KAZUSA_WEAPON
+			KOKONA_WEAPON
+			NOA_WEAPON
+			HIMARI_WEAPON
+			SHIGURE_WEAPON
+			MINE_WEAPON
+			MIKA_WEAPON
+			MEGU_WEAPON
+			KANNA_WEAPON
+			SAKURAKO_WEAPON
+			TOKI_WEAPON
+			NAGISA_WEAPON
+			KOYUKI_WEAPON
+			KAHO_WEAPON
+			REISA_WEAPON
+			RUMI_WEAPON
+			MINA_WEAPON
+			MINORI_WEAPON
+			MERU_WEAPON
+			MOMIJI_WEAPON
+			KASUMI_WEAPON
+			ICHIKA_WEAPON
+		}
+		corvette = {
+		}
+		destroyer = {
+		}
+		cruiser = {
+		}
+		battleship = {
+		}
+		titan = {
+		}
+		colossus = {
+		}
+		science = {
+		}
+		colonizer = {
+		}
+		constructor = {
+		}
+		transport = {
+		}
+		military_station_small = {
+		}
+		ion_cannon = {
+		}
+		BA_missile_ship = {
+		}
+	}
+	ship_class_names = {
+		generic = {
+			SHIROKO_WEAPON
+			SERIKA_WEAPON
+			HOSHINO_WEAPON
+			AYANE_WEAPON
+			KAYOKO_WEAPON
+			ARU_WEAPON
+			CHINATSU_WEAPON
+			IORI_WEAPON
+			HINA_WEAPON
+			JUNKO_WEAPON
+			IZUMI_WEAPON
+			AKARI_WEAPON
+			HARUNA_WEAPON
+			FUUKA_WEAPON
+			HIFUMI_WEAPON
+			YOSHIMI_WEAPON
+			AIRI_WEAPON
+			SERINA_WEAPON
+			HASUMI_WEAPON
+			TSURUGI_WEAPON
+			ASUNA_WEAPON
+			AKANE_WEAPON
+			KARIN_WEAPON
+			NERU_WEAPON
+			HARE_WEAPON
+			MAKI_WEAPON
+			KOTORI_WEAPON
+			UTAHA_WEAPON
+			HIBIKI_WEAPON
+			YUUKA_WEAPON
+			SUMIRE_WEAPON
+			PINA_WEAPON
+			TSUBAKI_WEAPON
+			CHISE_WEAPON
+			SAYA_WEAPON
+			SHUN_WEAPON
+			NONOMI_WEAPON
+			EIMI_WEAPON
+			HANAE_WEAPON
+			MUTSUKI_WEAPON
+			HARUKA_WEAPON
+			JURI_WEAPON
+			SHIMIKO_WEAPON
+			SUZUMI_WEAPON
+			KOTAMA_WEAPON
+			MASHIRO_WEAPON
+			IZUNA_WEAPON
+			SHIZUKO_WEAPON
+			ARIS_WEAPON
+			MOMOI_WEAPON
+			MIDORI_WEAPON
+			CHERINO_WEAPON
+			NODOKA_WEAPON
+			YUZU_WEAPON
+			AZUSA_WEAPON
+			HANAKO_WEAPON
+			KOHARU_WEAPON
+			KIRINO_WEAPON
+			NATSU_WEAPON
+			MARI_WEAPON
+			MIKU_WEAPON
+			AKO_WEAPON
+			TOMOE_WEAPON
+			FUBUKI_WEAPON
+			WAKAMO_WEAPON
+			SENA_WEAPON
+			CHIHIRO_WEAPON
+			MIMORI_WEAPON
+			UI_WEAPON
+			HINATA_WEAPON
+			MARINA_WEAPON
+			SAKI_WEAPON
+			MIYAKO_WEAPON
+			MIYU_WEAPON
+			KAEDE_WEAPON
+			IROHA_WEAPON
+			MICHIRU_WEAPON
+			TSUKUYO_WEAPON
+			MISAKI_WEAPON
+			HIYORI_WEAPON
+			ATSUKO_WEAPON
+			SAORI_WEAPON
+			MOE_WEAPON
+			KAZUSA_WEAPON
+			KOKONA_WEAPON
+			NOA_WEAPON
+			HIMARI_WEAPON
+			SHIGURE_WEAPON
+			MINE_WEAPON
+			MIKA_WEAPON
+			MEGU_WEAPON
+			KANNA_WEAPON
+			SAKURAKO_WEAPON
+			TOKI_WEAPON
+			NAGISA_WEAPON
+			KOYUKI_WEAPON
+			KAHO_WEAPON
+			REISA_WEAPON
+			RUMI_WEAPON
+			MINA_WEAPON
+			MINORI_WEAPON
+			MERU_WEAPON
+			MOMIJI_WEAPON
+			KASUMI_WEAPON
+			ICHIKA_WEAPON
+		}
+	}
+	# 默认舰船名字
+	fleet_names = {
+		random_names = {
+			#namelist_BA_fleet_001
+			#namelist_BA_fleet_002
+			#namelist_BA_fleet_003
+			#namelist_BA_fleet_004
+			#namelist_BA_fleet_005
+			#namelist_BA_fleet_006
+			#namelist_BA_fleet_007
+			#namelist_BA_fleet_008
+			#namelist_BA_fleet_009
+			#namelist_BA_fleet_010
+			#namelist_BA_fleet_011
+		}
+		sequential_name = HUM1_xxARMADA_ORD
+	}
+	# 陆军名字吧？
+	army_names = {
+		machine_defense = {
+			sequential_name = HUM1_xxGROUNDSHIELD_ORD
+		}
+		machine_assault_1 = {
+			sequential_name = HUM1_xxWARGUILD_ORD
+		}
+		machine_assault_2 = {
+			sequential_name = HUM1_xxWARGUILD_ORD
+		}
+		machine_assault_3 = {
+			sequential_name = HUM1_xxWARGUILD_ORD
+		}
+		defense_army = {
+			sequential_name = HUM1_xxGROUNDSHIELD_ORD
+		}
+		assault_army = {
+			sequential_name = HUM1_xxWARGUILD_ORD
+		}
+		slave_army = {
+			sequential_name = HUM1_xxWARPEONS_ORD
+		}
+		clone_army = {
+			sequential_name = HUM1_xxFIGHTINGCLONES_ORD
+		}
+		undead_army = {
+			sequential_name = HUM1_xxDREADPEONS_ORD
+		}
+		robotic_army = {
+			sequential_name = HUM1_xxROBOTICLANCERS_ORD
+		}
+		robotic_defense_army = {
+			sequential_name = HUM1_xxROBOTICPROTECTORS_ORD
+		}
+		psionic_army = {
+			sequential_name = HUM1_xxWARLOCKCOMPANY_ORD
+		}
+		xenomorph_army = {
+			sequential_name = HUM1_xxDEATHFLOCK_ORD
+		}
+		gene_warrior_army = {
+			sequential_name = HUM1_xxSTARKNIGHTS_ORD
+		}
+		occupation_army = {
+			sequential_name = HUM1_xxOCCUPATIONSHIELD_ORD
+		}
+		robotic_occupation_army = {
+			sequential_name = HUM1_xxROBOTICOCCUPIERS_ORD
+		}
+		primitive_army = {
+			sequential_name = HUM1_PRIMITIVEARMYxx_SEQ
+		}
+		industrial_army = {
+			sequential_name = HUM1_INDUSTRIALARMYxx_SEQ
+		}
+		postatomic_army = {
+			sequential_name = HUM1_POSTATOMICARMYxx_SEQ
+		}
+	}
+	# 我以为是殖民地名字 后来发现是母星系行星名字）
+	planet_names = {
+		generic = {
+			names = {
+			}
+		}
+		pc_desert = {
+			names = {
+			}
+		}
+		pc_tropical = {
+			names = {
+			}
+		}
+		pc_arid = {
+			names = {
+			}
+		}
+		pc_continental = {
+			names = {
+			}
+		}
+		pc_ocean = {
+			names = {
+			}
+		}
+		pc_tundra = {
+			names = {
+			}
+		}
+		pc_arctic = {
+			names = {
+			}
+		}
+		pc_savannah = {
+			names = {
+			}
+		}
+		pc_alpine = {
+			names = {
+			}
+		}
+	}
+	# 预设角色名（但是总是和立绘对不上）
+	character_names = {
+		default = {
+			# A complete name
+			full_names_male = {
+				leader_name_BA_01
+				leader_name_BA_02
+				leader_name_BA_03
+				leader_name_BA_04
+				leader_name_BA_05
+				leader_name_BA_06
+				leader_name_BA_07
+				leader_name_BA_08
+				leader_name_BA_09
+				leader_name_BA_10
+				leader_name_BA_11
+				leader_name_BA_12
+				leader_name_BA_13
+				leader_name_BA_14
+				leader_name_BA_15
+				leader_name_BA_16
+				leader_name_BA_17
+				leader_name_BA_18
+				leader_name_BA_19
+				leader_name_BA_20
+				leader_name_BA_21
+				leader_name_BA_22
+				leader_name_BA_23
+				leader_name_BA_24
+				leader_name_BA_25
+				leader_name_BA_26
+				leader_name_BA_27
+				leader_name_BA_28
+				leader_name_BA_29
+				leader_name_BA_30
+				leader_name_BA_31
+				leader_name_BA_32
+				leader_name_BA_33
+				leader_name_BA_34
+				leader_name_BA_35
+				leader_name_BA_36
+				leader_name_BA_37
+				leader_name_BA_38
+				leader_name_BA_39
+				leader_name_BA_40
+				leader_name_BA_41
+				leader_name_BA_42
+				leader_name_BA_43
+				leader_name_BA_44
+				leader_name_BA_45
+				leader_name_BA_46
+				leader_name_BA_47
+				leader_name_BA_48
+				leader_name_BA_49
+				leader_name_BA_50
+				leader_name_BA_51
+				leader_name_BA_52
+				leader_name_BA_53
+				leader_name_BA_54
+				leader_name_BA_55
+				leader_name_BA_56
+				leader_name_BA_57
+				leader_name_BA_58
+				leader_name_BA_59
+				leader_name_BA_60
+				leader_name_BA_61
+				leader_name_BA_62
+				leader_name_BA_63
+				leader_name_BA_64
+				leader_name_BA_65
+				leader_name_BA_66
+				leader_name_BA_67
+				leader_name_BA_68
+				leader_name_BA_69
+				leader_name_BA_70
+				leader_name_BA_71
+				leader_name_BA_72
+				leader_name_BA_73
+				leader_name_BA_74
+				leader_name_BA_75
+				leader_name_BA_76
+				leader_name_BA_77
+				leader_name_BA_78
+				leader_name_BA_79
+				leader_name_BA_80
+				leader_name_BA_81
+				leader_name_BA_82
+				leader_name_BA_83
+				leader_name_BA_84
+				leader_name_BA_85
+				leader_name_BA_86
+				leader_name_BA_87
+				leader_name_BA_88
+				leader_name_BA_89
+				leader_name_BA_90
+				leader_name_BA_91
+				leader_name_BA_92
+				leader_name_BA_93
+				leader_name_BA_94
+				leader_name_BA_95
+				leader_name_BA_96
+				leader_name_BA_97
+				leader_name_BA_98
+				leader_name_BA_99
+				leader_name_BA_100
+				leader_name_BA_101
+				leader_name_BA_102
+				leader_name_BA_103
+				leader_name_BA_104
+				leader_name_BA_105
+				leader_name_BA_106
+				leader_name_BA_107
+				leader_name_BA_108
+				leader_name_BA_109
+				leader_name_BA_110
+				leader_name_BA_111
+				leader_name_BA_112
+				leader_name_BA_113
+				leader_name_BA_114
+				leader_name_BA_115
+				leader_name_BA_116
+				leader_name_BA_117
+				leader_name_BA_118
+				leader_name_BA_119
+				leader_name_BA_120
+				leader_name_BA_121
+				leader_name_BA_122
+				leader_name_BA_123
+				leader_name_BA_124
+				leader_name_BA_125
+				leader_name_BA_126
+				leader_name_BA_127
+				leader_name_BA_128
+				leader_name_BA_129
+				leader_name_BA_130
+				leader_name_BA_131
+				leader_name_BA_132
+				leader_name_BA_133
+				leader_name_BA_134
+				leader_name_BA_135
+				leader_name_BA_136
+				leader_name_BA_137
+				leader_name_BA_138
+				leader_name_BA_139
+				leader_name_BA_140
+				leader_name_BA_141
+				leader_name_BA_142
+				leader_name_BA_143
+				leader_name_BA_144
+				leader_name_BA_145
+				leader_name_BA_146
+				leader_name_BA_147
+				leader_name_BA_148
+				leader_name_BA_149
+				leader_name_BA_150
+				leader_name_BA_151
+				leader_name_BA_152
+				leader_name_BA_153
+				leader_name_BA_154
+				leader_name_BA_155
+				leader_name_BA_156
+				leader_name_BA_157
+				leader_name_BA_158
+				leader_name_BA_159
+				leader_name_BA_160
+				leader_name_BA_161
+				leader_name_BA_162
+				leader_name_BA_163
+				leader_name_BA_164
+				leader_name_BA_165
+				leader_name_BA_166
+				leader_name_BA_167
+				leader_name_BA_168
+				leader_name_BA_169
+				leader_name_BA_170
+				leader_name_BA_171
+				leader_name_BA_172
+				leader_name_BA_173
+				leader_name_BA_174
+				leader_name_BA_175
+				leader_name_BA_176
+				leader_name_BA_177
+				leader_name_BA_178
+				leader_name_BA_179
+				leader_name_BA_180
+				leader_name_BA_181
+				leader_name_BA_182
+				leader_name_BA_183
+				leader_name_BA_184
+				leader_name_BA_185
+				leader_name_BA_186
+				leader_name_BA_187
+				leader_name_BA_188
+				leader_name_BA_189
+				leader_name_BA_190
+				leader_name_BA_191
+				leader_name_BA_192
+				leader_name_BA_193
+				leader_name_BA_194
+				leader_name_BA_195
+				leader_name_BA_196
+				leader_name_BA_197
+				leader_name_BA_198
+				leader_name_BA_199
+				leader_name_BA_200
+				leader_name_BA_201
+				leader_name_BA_202
+				leader_name_BA_203
+				leader_name_BA_204
+				leader_name_BA_205
+				leader_name_BA_206
+				leader_name_BA_207
+				leader_name_BA_208
+				leader_name_BA_209
+				leader_name_BA_210
+				leader_name_BA_211
+				leader_name_BA_212
+				leader_name_BA_213
+				leader_name_BA_214
+				leader_name_BA_215
+				leader_name_BA_216
+				leader_name_BA_217
+				leader_name_BA_218
+				leader_name_BA_219
+				leader_name_BA_220
+				leader_name_BA_221
+				leader_name_BA_222
+				leader_name_BA_223
+				leader_name_BA_224
+				leader_name_BA_225
+				leader_name_BA_226
+				leader_name_BA_227
+				leader_name_BA_228
+				leader_name_BA_229
+				leader_name_BA_230
+				leader_name_BA_231
+				leader_name_BA_232
+				leader_name_BA_233
+				leader_name_BA_234
+				leader_name_BA_235
+				leader_name_BA_236
+				leader_name_BA_237
+				leader_name_BA_238
+				leader_name_BA_239
+				leader_name_BA_240
+				leader_name_BA_241
+				leader_name_BA_242
+			}
+			full_names_female = {
+				leader_name_BA_01
+				leader_name_BA_02
+				leader_name_BA_03
+				leader_name_BA_04
+				leader_name_BA_05
+				leader_name_BA_06
+				leader_name_BA_07
+				leader_name_BA_08
+				leader_name_BA_09
+				leader_name_BA_10
+				leader_name_BA_11
+				leader_name_BA_12
+				leader_name_BA_13
+				leader_name_BA_14
+				leader_name_BA_15
+				leader_name_BA_16
+				leader_name_BA_17
+				leader_name_BA_18
+				leader_name_BA_19
+				leader_name_BA_20
+				leader_name_BA_21
+				leader_name_BA_22
+				leader_name_BA_23
+				leader_name_BA_24
+				leader_name_BA_25
+				leader_name_BA_26
+				leader_name_BA_27
+				leader_name_BA_28
+				leader_name_BA_29
+				leader_name_BA_30
+				leader_name_BA_31
+				leader_name_BA_32
+				leader_name_BA_33
+				leader_name_BA_34
+				leader_name_BA_35
+				leader_name_BA_36
+				leader_name_BA_37
+				leader_name_BA_38
+				leader_name_BA_39
+				leader_name_BA_40
+				leader_name_BA_41
+				leader_name_BA_42
+				leader_name_BA_43
+				leader_name_BA_44
+				leader_name_BA_45
+				leader_name_BA_46
+				leader_name_BA_47
+				leader_name_BA_48
+				leader_name_BA_49
+				leader_name_BA_50
+				leader_name_BA_51
+				leader_name_BA_52
+				leader_name_BA_53
+				leader_name_BA_54
+				leader_name_BA_55
+				leader_name_BA_56
+				leader_name_BA_57
+				leader_name_BA_58
+				leader_name_BA_59
+				leader_name_BA_60
+				leader_name_BA_61
+				leader_name_BA_62
+				leader_name_BA_63
+				leader_name_BA_64
+				leader_name_BA_65
+				leader_name_BA_66
+				leader_name_BA_67
+				leader_name_BA_68
+				leader_name_BA_69
+				leader_name_BA_70
+				leader_name_BA_71
+				leader_name_BA_72
+				leader_name_BA_73
+				leader_name_BA_74
+				leader_name_BA_75
+				leader_name_BA_76
+				leader_name_BA_77
+				leader_name_BA_78
+				leader_name_BA_79
+				leader_name_BA_80
+				leader_name_BA_81
+				leader_name_BA_82
+				leader_name_BA_83
+				leader_name_BA_84
+				leader_name_BA_85
+				leader_name_BA_86
+				leader_name_BA_87
+				leader_name_BA_88
+				leader_name_BA_89
+				leader_name_BA_90
+				leader_name_BA_91
+				leader_name_BA_92
+				leader_name_BA_93
+				leader_name_BA_94
+				leader_name_BA_95
+				leader_name_BA_96
+				leader_name_BA_97
+				leader_name_BA_98
+				leader_name_BA_99
+				leader_name_BA_100
+				leader_name_BA_101
+				leader_name_BA_102
+				leader_name_BA_103
+				leader_name_BA_104
+				leader_name_BA_105
+				leader_name_BA_106
+				leader_name_BA_107
+				leader_name_BA_108
+				leader_name_BA_109
+				leader_name_BA_110
+				leader_name_BA_111
+				leader_name_BA_112
+				leader_name_BA_113
+				leader_name_BA_114
+				leader_name_BA_115
+				leader_name_BA_116
+				leader_name_BA_117
+				leader_name_BA_118
+				leader_name_BA_119
+				leader_name_BA_120
+				leader_name_BA_121
+				leader_name_BA_122
+				leader_name_BA_123
+				leader_name_BA_124
+				leader_name_BA_125
+				leader_name_BA_126
+				leader_name_BA_127
+				leader_name_BA_128
+				leader_name_BA_129
+				leader_name_BA_130
+				leader_name_BA_131
+				leader_name_BA_132
+				leader_name_BA_133
+				leader_name_BA_134
+				leader_name_BA_135
+				leader_name_BA_136
+				leader_name_BA_137
+				leader_name_BA_138
+				leader_name_BA_139
+				leader_name_BA_140
+				leader_name_BA_141
+				leader_name_BA_142
+				leader_name_BA_143
+				leader_name_BA_144
+				leader_name_BA_145
+				leader_name_BA_146
+				leader_name_BA_147
+				leader_name_BA_148
+				leader_name_BA_149
+				leader_name_BA_150
+				leader_name_BA_151
+				leader_name_BA_152
+				leader_name_BA_153
+				leader_name_BA_154
+				leader_name_BA_155
+				leader_name_BA_156
+				leader_name_BA_157
+				leader_name_BA_158
+				leader_name_BA_159
+				leader_name_BA_160
+				leader_name_BA_161
+				leader_name_BA_162
+				leader_name_BA_163
+				leader_name_BA_164
+				leader_name_BA_165
+				leader_name_BA_166
+				leader_name_BA_167
+				leader_name_BA_168
+				leader_name_BA_169
+				leader_name_BA_170
+				leader_name_BA_171
+				leader_name_BA_172
+				leader_name_BA_173
+				leader_name_BA_174
+				leader_name_BA_175
+				leader_name_BA_176
+				leader_name_BA_177
+				leader_name_BA_178
+				leader_name_BA_179
+				leader_name_BA_180
+				leader_name_BA_181
+				leader_name_BA_182
+				leader_name_BA_183
+				leader_name_BA_184
+				leader_name_BA_185
+				leader_name_BA_186
+				leader_name_BA_187
+				leader_name_BA_188
+				leader_name_BA_189
+				leader_name_BA_190
+				leader_name_BA_191
+				leader_name_BA_192
+				leader_name_BA_193
+				leader_name_BA_194
+				leader_name_BA_195
+				leader_name_BA_196
+				leader_name_BA_197
+				leader_name_BA_198
+				leader_name_BA_199
+				leader_name_BA_200
+				leader_name_BA_201
+				leader_name_BA_202
+				leader_name_BA_203
+				leader_name_BA_204
+				leader_name_BA_205
+				leader_name_BA_206
+				leader_name_BA_207
+				leader_name_BA_208
+				leader_name_BA_209
+				leader_name_BA_210
+				leader_name_BA_211
+				leader_name_BA_212
+				leader_name_BA_213
+				leader_name_BA_214
+				leader_name_BA_215
+				leader_name_BA_216
+				leader_name_BA_217
+				leader_name_BA_218
+				leader_name_BA_219
+				leader_name_BA_220
+				leader_name_BA_221
+				leader_name_BA_222
+				leader_name_BA_223
+				leader_name_BA_224
+				leader_name_BA_225
+				leader_name_BA_226
+				leader_name_BA_227
+				leader_name_BA_228
+				leader_name_BA_229
+				leader_name_BA_230
+				leader_name_BA_231
+				leader_name_BA_232
+				leader_name_BA_233
+				leader_name_BA_234
+				leader_name_BA_235
+				leader_name_BA_236
+				leader_name_BA_237
+				leader_name_BA_238
+				leader_name_BA_239
+				leader_name_BA_240
+				leader_name_BA_241
+				leader_name_BA_242
+			}
+			# Always combined with a second name
+			first_names = {
+			}
+			# Always combined with a first name
+			second_names = {
+			}
+		}
+	}
+}
+
+#爱丽丝 namelist
+ArisName = {
+	randomized = no
+	language = "l_simp_chinese"
+	ship_names = {
+		generic = {
+			SHIROKO_WEAPON
+			SERIKA_WEAPON
+			HOSHINO_WEAPON
+			AYANE_WEAPON
+			KAYOKO_WEAPON
+			ARU_WEAPON
+			CHINATSU_WEAPON
+			IORI_WEAPON
+			HINA_WEAPON
+			JUNKO_WEAPON
+			IZUMI_WEAPON
+			AKARI_WEAPON
+			HARUNA_WEAPON
+			FUUKA_WEAPON
+			HIFUMI_WEAPON
+			YOSHIMI_WEAPON
+			AIRI_WEAPON
+			SERINA_WEAPON
+			HASUMI_WEAPON
+			TSURUGI_WEAPON
+			ASUNA_WEAPON
+			AKANE_WEAPON
+			KARIN_WEAPON
+			NERU_WEAPON
+			HARE_WEAPON
+			MAKI_WEAPON
+			KOTORI_WEAPON
+			UTAHA_WEAPON
+			HIBIKI_WEAPON
+			YUUKA_WEAPON
+			SUMIRE_WEAPON
+			PINA_WEAPON
+			TSUBAKI_WEAPON
+			CHISE_WEAPON
+			SAYA_WEAPON
+			SHUN_WEAPON
+			NONOMI_WEAPON
+			EIMI_WEAPON
+			HANAE_WEAPON
+			MUTSUKI_WEAPON
+			HARUKA_WEAPON
+			JURI_WEAPON
+			SHIMIKO_WEAPON
+			SUZUMI_WEAPON
+			KOTAMA_WEAPON
+			MASHIRO_WEAPON
+			IZUNA_WEAPON
+			SHIZUKO_WEAPON
+			ARIS_WEAPON
+			MOMOI_WEAPON
+			MIDORI_WEAPON
+			CHERINO_WEAPON
+			NODOKA_WEAPON
+			YUZU_WEAPON
+			AZUSA_WEAPON
+			HANAKO_WEAPON
+			KOHARU_WEAPON
+			KIRINO_WEAPON
+			NATSU_WEAPON
+			MARI_WEAPON
+			MIKU_WEAPON
+			AKO_WEAPON
+			TOMOE_WEAPON
+			FUBUKI_WEAPON
+			WAKAMO_WEAPON
+			SENA_WEAPON
+			CHIHIRO_WEAPON
+			MIMORI_WEAPON
+			UI_WEAPON
+			HINATA_WEAPON
+			MARINA_WEAPON
+			SAKI_WEAPON
+			MIYAKO_WEAPON
+			MIYU_WEAPON
+			KAEDE_WEAPON
+			IROHA_WEAPON
+			MICHIRU_WEAPON
+			TSUKUYO_WEAPON
+			MISAKI_WEAPON
+			HIYORI_WEAPON
+			ATSUKO_WEAPON
+			SAORI_WEAPON
+			MOE_WEAPON
+			KAZUSA_WEAPON
+			KOKONA_WEAPON
+			NOA_WEAPON
+			HIMARI_WEAPON
+			SHIGURE_WEAPON
+			MINE_WEAPON
+			MIKA_WEAPON
+			MEGU_WEAPON
+			KANNA_WEAPON
+			SAKURAKO_WEAPON
+			TOKI_WEAPON
+			NAGISA_WEAPON
+			KOYUKI_WEAPON
+			KAHO_WEAPON
+			REISA_WEAPON
+			RUMI_WEAPON
+			MINA_WEAPON
+			MINORI_WEAPON
+			MERU_WEAPON
+			MOMIJI_WEAPON
+			KASUMI_WEAPON
+			ICHIKA_WEAPON
+		}
+		corvette = {
+		}
+		destroyer = {
+		}
+		cruiser = {
+		}
+		battleship = {
+		}
+		titan = {
+		}
+		colossus = {
+		}
+		science = {
+		}
+		colonizer = {
+		}
+		constructor = {
+		}
+		transport = {
+		}
+		military_station_small = {
+		}
+		ion_cannon = {
+		}
+		BA_missile_ship = {
+		}
+	}
+	ship_class_names = {
+		generic = {
+			SHIROKO_WEAPON
+			SERIKA_WEAPON
+			HOSHINO_WEAPON
+			AYANE_WEAPON
+			KAYOKO_WEAPON
+			ARU_WEAPON
+			CHINATSU_WEAPON
+			IORI_WEAPON
+			HINA_WEAPON
+			JUNKO_WEAPON
+			IZUMI_WEAPON
+			AKARI_WEAPON
+			HARUNA_WEAPON
+			FUUKA_WEAPON
+			HIFUMI_WEAPON
+			YOSHIMI_WEAPON
+			AIRI_WEAPON
+			SERINA_WEAPON
+			HASUMI_WEAPON
+			TSURUGI_WEAPON
+			ASUNA_WEAPON
+			AKANE_WEAPON
+			KARIN_WEAPON
+			NERU_WEAPON
+			HARE_WEAPON
+			MAKI_WEAPON
+			KOTORI_WEAPON
+			UTAHA_WEAPON
+			HIBIKI_WEAPON
+			YUUKA_WEAPON
+			SUMIRE_WEAPON
+			PINA_WEAPON
+			TSUBAKI_WEAPON
+			CHISE_WEAPON
+			SAYA_WEAPON
+			SHUN_WEAPON
+			NONOMI_WEAPON
+			EIMI_WEAPON
+			HANAE_WEAPON
+			MUTSUKI_WEAPON
+			HARUKA_WEAPON
+			JURI_WEAPON
+			SHIMIKO_WEAPON
+			SUZUMI_WEAPON
+			KOTAMA_WEAPON
+			MASHIRO_WEAPON
+			IZUNA_WEAPON
+			SHIZUKO_WEAPON
+			ARIS_WEAPON
+			MOMOI_WEAPON
+			MIDORI_WEAPON
+			CHERINO_WEAPON
+			NODOKA_WEAPON
+			YUZU_WEAPON
+			AZUSA_WEAPON
+			HANAKO_WEAPON
+			KOHARU_WEAPON
+			KIRINO_WEAPON
+			NATSU_WEAPON
+			MARI_WEAPON
+			MIKU_WEAPON
+			AKO_WEAPON
+			TOMOE_WEAPON
+			FUBUKI_WEAPON
+			WAKAMO_WEAPON
+			SENA_WEAPON
+			CHIHIRO_WEAPON
+			MIMORI_WEAPON
+			UI_WEAPON
+			HINATA_WEAPON
+			MARINA_WEAPON
+			SAKI_WEAPON
+			MIYAKO_WEAPON
+			MIYU_WEAPON
+			KAEDE_WEAPON
+			IROHA_WEAPON
+			MICHIRU_WEAPON
+			TSUKUYO_WEAPON
+			MISAKI_WEAPON
+			HIYORI_WEAPON
+			ATSUKO_WEAPON
+			SAORI_WEAPON
+			MOE_WEAPON
+			KAZUSA_WEAPON
+			KOKONA_WEAPON
+			NOA_WEAPON
+			HIMARI_WEAPON
+			SHIGURE_WEAPON
+			MINE_WEAPON
+			MIKA_WEAPON
+			MEGU_WEAPON
+			KANNA_WEAPON
+			SAKURAKO_WEAPON
+			TOKI_WEAPON
+			NAGISA_WEAPON
+			KOYUKI_WEAPON
+			KAHO_WEAPON
+			REISA_WEAPON
+			RUMI_WEAPON
+			MINA_WEAPON
+			MINORI_WEAPON
+			MERU_WEAPON
+			MOMIJI_WEAPON
+			KASUMI_WEAPON
+			ICHIKA_WEAPON
+		}
+	}
+	# 默认舰船名字
+	fleet_names = {
+		sequential_name = HUM1_xxARMADA_ORD
+	}
+	# 陆军名字吧？
+	army_names = {
+		machine_defense = {
+			sequential_name = HUM1_xxGROUNDSHIELD_ORD
+		}
+		machine_assault_1 = {
+			sequential_name = HUM1_xxWARGUILD_ORD
+		}
+		machine_assault_2 = {
+			sequential_name = HUM1_xxWARGUILD_ORD
+		}
+		machine_assault_3 = {
+			sequential_name = HUM1_xxWARGUILD_ORD
+		}
+		defense_army = {
+			sequential_name = HUM1_xxGROUNDSHIELD_ORD
+		}
+		assault_army = {
+			sequential_name = HUM1_xxWARGUILD_ORD
+		}
+		slave_army = {
+			sequential_name = HUM1_xxWARPEONS_ORD
+		}
+		clone_army = {
+			sequential_name = HUM1_xxFIGHTINGCLONES_ORD
+		}
+		undead_army = {
+			sequential_name = HUM1_xxDREADPEONS_ORD
+		}
+		robotic_army = {
+			sequential_name = HUM1_xxROBOTICLANCERS_ORD
+		}
+		robotic_defense_army = {
+			sequential_name = HUM1_xxROBOTICPROTECTORS_ORD
+		}
+		psionic_army = {
+			sequential_name = HUM1_xxWARLOCKCOMPANY_ORD
+		}
+		xenomorph_army = {
+			sequential_name = HUM1_xxDEATHFLOCK_ORD
+		}
+		gene_warrior_army = {
+			sequential_name = HUM1_xxSTARKNIGHTS_ORD
+		}
+		occupation_army = {
+			sequential_name = HUM1_xxOCCUPATIONSHIELD_ORD
+		}
+		robotic_occupation_army = {
+			sequential_name = HUM1_xxROBOTICOCCUPIERS_ORD
+		}
+		primitive_army = {
+			sequential_name = HUM1_PRIMITIVEARMYxx_SEQ
+		}
+		industrial_army = {
+			sequential_name = HUM1_INDUSTRIALARMYxx_SEQ
+		}
+		postatomic_army = {
+			sequential_name = HUM1_POSTATOMICARMYxx_SEQ
+		}
+	}
+	# 我以为是殖民地名字 后来发现是母星系行星名字）
+	planet_names = {
+		generic = {
+			names = {
+				namelist_BA_planet_SP01
+				namelist_BA_planet_SP02
+				namelist_BA_planet_SP03
+				namelist_BA_planet_SP04
+				namelist_BA_planet_SP10
+				namelist_BA_planet_SP11
+				namelist_BA_planet_SP12
+				namelist_BA_planet_SP13
+				namelist_BA_planet_SP14
+			}
+		}
+		pc_desert = {
+			names = {
+			}
+		}
+		pc_tropical = {
+			names = {
+			}
+		}
+		pc_arid = {
+			names = {
+			}
+		}
+		pc_continental = {
+			names = {
+			}
+		}
+		pc_ocean = {
+			names = {
+			}
+		}
+		pc_tundra = {
+			names = {
+			}
+		}
+		pc_arctic = {
+			names = {
+			}
+		}
+		pc_savannah = {
+			names = {
+			}
+		}
+		pc_alpine = {
+			names = {
+			}
+		}
+	}
+	# 预设角色名
+	character_names = {
+		default = {
+			first_names = {
+				namelist_BA_AL1S_first_names
+			}
+			second_names = {
+				namelist_BA_AL1S_second_names_001
+				namelist_BA_AL1S_second_names_002
+				namelist_BA_AL1S_second_names_003
+				namelist_BA_AL1S_second_names_004
+				namelist_BA_AL1S_second_names_005
+				namelist_BA_AL1S_second_names_006
+				namelist_BA_AL1S_second_names_007
+				namelist_BA_AL1S_second_names_008
+				namelist_BA_AL1S_second_names_009
+				namelist_BA_AL1S_second_names_010
+				namelist_BA_AL1S_second_names_011
+				namelist_BA_AL1S_second_names_012
+				namelist_BA_AL1S_second_names_013
+				namelist_BA_AL1S_second_names_014
+				namelist_BA_AL1S_second_names_015
+				namelist_BA_AL1S_second_names_016
+				namelist_BA_AL1S_second_names_017
+				namelist_BA_AL1S_second_names_018
+				namelist_BA_AL1S_second_names_019
+				namelist_BA_AL1S_second_names_020
+				namelist_BA_AL1S_second_names_021
+				namelist_BA_AL1S_second_names_022
+				namelist_BA_AL1S_second_names_023
+				namelist_BA_AL1S_second_names_024
+				namelist_BA_AL1S_second_names_025
+				namelist_BA_AL1S_second_names_026
+				namelist_BA_AL1S_second_names_027
+				namelist_BA_AL1S_second_names_028
+				namelist_BA_AL1S_second_names_029
+				namelist_BA_AL1S_second_names_030
+				namelist_BA_AL1S_second_names_031
+				namelist_BA_AL1S_second_names_032
+				namelist_BA_AL1S_second_names_033
+				namelist_BA_AL1S_second_names_034
+				namelist_BA_AL1S_second_names_035
+				namelist_BA_AL1S_second_names_036
+				namelist_BA_AL1S_second_names_037
+				namelist_BA_AL1S_second_names_038
+				namelist_BA_AL1S_second_names_039
+				namelist_BA_AL1S_second_names_040
+				namelist_BA_AL1S_second_names_041
+				namelist_BA_AL1S_second_names_042
+				namelist_BA_AL1S_second_names_043
+				namelist_BA_AL1S_second_names_044
+				namelist_BA_AL1S_second_names_045
+				namelist_BA_AL1S_second_names_046
+				namelist_BA_AL1S_second_names_047
+				namelist_BA_AL1S_second_names_048
+				namelist_BA_AL1S_second_names_049
+				namelist_BA_AL1S_second_names_050
+			}
+		}
+	}
+}
+
+ArisPrName = {
+	randomized = no
+	language = "l_simp_chinese"
+	ship_names = {
+		generic = {
+			namelist_BA_ship_ArisPR
+		}
+		corvette = {
+		}
+		destroyer = {
+		}
+		cruiser = {
+		}
+		battleship = {
+		}
+		titan = {
+		}
+		colossus = {
+		}
+		science = {
+		}
+		colonizer = {
+		}
+		constructor = {
+		}
+		transport = {
+		}
+		military_station_small = {
+		}
+		ion_cannon = {
+		}
+		BA_missile_ship = {
+		}
+	}
+	ship_class_names = {
+		generic = {
+			namelist_BA_shipclass_ArisPR
+		}
+	}
+	# 默认舰船名字
+	fleet_names = {
+		random_names = {
+			namelist_BA_fleet_ArisPR
+		}
+		sequential_name = HUM1_xxARMADA_ORD
+	}
+	# 陆军名字吧？
+	army_names = {
+		machine_defense = {
+			sequential_name = HUM1_xxGROUNDSHIELD_ORD
+		}
+		machine_assault_1 = {
+			sequential_name = HUM1_xxWARGUILD_ORD
+		}
+		machine_assault_2 = {
+			sequential_name = HUM1_xxWARGUILD_ORD
+		}
+		machine_assault_3 = {
+			sequential_name = HUM1_xxWARGUILD_ORD
+		}
+		defense_army = {
+			sequential_name = HUM1_xxGROUNDSHIELD_ORD
+		}
+		assault_army = {
+			sequential_name = HUM1_xxWARGUILD_ORD
+		}
+		slave_army = {
+			sequential_name = HUM1_xxWARPEONS_ORD
+		}
+		clone_army = {
+			sequential_name = HUM1_xxFIGHTINGCLONES_ORD
+		}
+		undead_army = {
+			sequential_name = HUM1_xxDREADPEONS_ORD
+		}
+		robotic_army = {
+			sequential_name = HUM1_xxROBOTICLANCERS_ORD
+		}
+		robotic_defense_army = {
+			sequential_name = HUM1_xxROBOTICPROTECTORS_ORD
+		}
+		psionic_army = {
+			sequential_name = HUM1_xxWARLOCKCOMPANY_ORD
+		}
+		xenomorph_army = {
+			sequential_name = HUM1_xxDEATHFLOCK_ORD
+		}
+		gene_warrior_army = {
+			sequential_name = HUM1_xxSTARKNIGHTS_ORD
+		}
+		occupation_army = {
+			sequential_name = HUM1_xxOCCUPATIONSHIELD_ORD
+		}
+		robotic_occupation_army = {
+			sequential_name = HUM1_xxROBOTICOCCUPIERS_ORD
+		}
+		primitive_army = {
+			sequential_name = HUM1_PRIMITIVEARMYxx_SEQ
+		}
+		industrial_army = {
+			sequential_name = HUM1_INDUSTRIALARMYxx_SEQ
+		}
+		postatomic_army = {
+			sequential_name = HUM1_POSTATOMICARMYxx_SEQ
+		}
+	}
+	# 我以为是殖民地名字 后来发现是母星系行星名字）
+	planet_names = {
+		generic = {
+			names = {
+				namelist_BA_planet_SP01
+				namelist_BA_planet_SP02
+				namelist_BA_planet_SP03
+				namelist_BA_planet_SP04
+				namelist_BA_planet_SP10
+				namelist_BA_planet_SP11
+				namelist_BA_planet_SP12
+				namelist_BA_planet_SP13
+				namelist_BA_planet_SP14
+			}
+		}
+		pc_desert = {
+			names = {
+			}
+		}
+		pc_tropical = {
+			names = {
+			}
+		}
+		pc_arid = {
+			names = {
+			}
+		}
+		pc_continental = {
+			names = {
+			}
+		}
+		pc_ocean = {
+			names = {
+			}
+		}
+		pc_tundra = {
+			names = {
+			}
+		}
+		pc_arctic = {
+			names = {
+			}
+		}
+		pc_savannah = {
+			names = {
+			}
+		}
+		pc_alpine = {
+			names = {
+			}
+		}
+	}
+	# 预设角色名（但是总是和立绘对不上）
+	character_names = {
+		default = {
+			first_names = {
+				namelist_BA_AL1S_first_names_pr
+			}
+			second_names = {
+				namelist_BA_AL1S_second_names_001
+				namelist_BA_AL1S_second_names_002
+				namelist_BA_AL1S_second_names_003
+				namelist_BA_AL1S_second_names_004
+				namelist_BA_AL1S_second_names_005
+				namelist_BA_AL1S_second_names_006
+				namelist_BA_AL1S_second_names_007
+				namelist_BA_AL1S_second_names_008
+				namelist_BA_AL1S_second_names_009
+				namelist_BA_AL1S_second_names_010
+				namelist_BA_AL1S_second_names_011
+				namelist_BA_AL1S_second_names_012
+				namelist_BA_AL1S_second_names_013
+				namelist_BA_AL1S_second_names_014
+				namelist_BA_AL1S_second_names_015
+				namelist_BA_AL1S_second_names_016
+				namelist_BA_AL1S_second_names_017
+				namelist_BA_AL1S_second_names_018
+				namelist_BA_AL1S_second_names_019
+				namelist_BA_AL1S_second_names_020
+				namelist_BA_AL1S_second_names_021
+				namelist_BA_AL1S_second_names_022
+				namelist_BA_AL1S_second_names_023
+				namelist_BA_AL1S_second_names_024
+				namelist_BA_AL1S_second_names_025
+				namelist_BA_AL1S_second_names_026
+				namelist_BA_AL1S_second_names_027
+				namelist_BA_AL1S_second_names_028
+				namelist_BA_AL1S_second_names_029
+				namelist_BA_AL1S_second_names_030
+				namelist_BA_AL1S_second_names_031
+				namelist_BA_AL1S_second_names_032
+				namelist_BA_AL1S_second_names_033
+				namelist_BA_AL1S_second_names_034
+				namelist_BA_AL1S_second_names_035
+				namelist_BA_AL1S_second_names_036
+				namelist_BA_AL1S_second_names_037
+				namelist_BA_AL1S_second_names_038
+				namelist_BA_AL1S_second_names_039
+				namelist_BA_AL1S_second_names_040
+				namelist_BA_AL1S_second_names_041
+				namelist_BA_AL1S_second_names_042
+				namelist_BA_AL1S_second_names_043
+				namelist_BA_AL1S_second_names_044
+				namelist_BA_AL1S_second_names_045
+				namelist_BA_AL1S_second_names_046
+				namelist_BA_AL1S_second_names_047
+				namelist_BA_AL1S_second_names_048
+				namelist_BA_AL1S_second_names_049
+				namelist_BA_AL1S_second_names_050
+			}
+		}
+	}
+}

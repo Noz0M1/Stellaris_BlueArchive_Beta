@@ -1,0 +1,47 @@
+objectTypes = {
+	pdxmesh = {
+		name = "BT7274_Part1_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/BT7274_Part1.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "BT7274_Part1Shape"
+			index = 0
+			texture_diffuse = "BT7274_Part1_diffuse.dds"
+			texture_normal = "BT7274_Part1_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "BT7274_Part1Shape"
+			index = 1
+			texture_diffuse = "BT7274_Part1_Nose_Art.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "BT7274_Part1Shape"
+			index = 2
+			texture_diffuse = "t_cockpit_atlas_diffuse.dds"
+			texture_normal = "t_cockpit_atlas_noraml.dds"
+			texture_specular = "t_cockpit_atlas_spec.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "BT7274_Part2_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/titanfall_weapon/BT7274_Part2.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "BT7274_Part2Shape"
+			index = 0
+			texture_diffuse = "BT7274_Part1_diffuse.dds"
+			texture_normal = "BT7274_Part1_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

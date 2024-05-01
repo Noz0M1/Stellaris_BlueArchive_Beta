@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "saya_weapon_mesh"
+		file = "gfx/models/ships/ba_weapon_turret/saya_weapon.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Saya_Original_WeaponShape"
+			index = 0
+			texture_diffuse = "Saya_Original_Weapon.dds"
+			texture_normal = "blue_archive_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+	}
+}

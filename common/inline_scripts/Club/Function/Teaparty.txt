@@ -1,0 +1,97 @@
+#茶会-行政人员援助
+option = {
+    name = Teaparty_support
+    custom_tooltip = Teaparty_support.tip
+    response_text = Teaparty_support.$CHARA$RE
+    allow = {
+        custom_tooltip_fail = {
+            text = Teaparty_support_capped
+            NOT = {
+                has_modifier = modifier_BA_Teaparty_4
+            }
+        }
+        if = {
+            limit = {
+                has_modifier = modifier_BA_Teaparty_3
+            }
+            resource_stockpile_compare = {
+                resource = energy
+                value >= 15000
+            }
+        }
+        else_if = {
+            limit = {
+                has_modifier = modifier_BA_Teaparty_2
+            }
+            resource_stockpile_compare = {
+                resource = energy
+                value >= 4000
+            }
+        }
+        else_if = {
+            limit = {
+                has_modifier = modifier_BA_Teaparty_1
+            }
+            resource_stockpile_compare = {
+                resource = energy
+                value >= 1200
+            }
+        }
+        else = {
+            resource_stockpile_compare = {
+                resource = energy
+                value >= 200
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_modifier = modifier_BA_Teaparty_3
+        }
+        add_resource = {
+            energy = -15000
+        }
+        hidden_effect = {
+            remove_modifier = modifier_BA_Teaparty_3
+        }
+        add_modifier = {
+            modifier = modifier_BA_Teaparty_4
+        }
+    }
+    else_if = {
+        limit = {
+            has_modifier = modifier_BA_Teaparty_2
+        }
+        add_resource = {
+            energy = -4000
+        }
+        hidden_effect = {
+            remove_modifier = modifier_BA_Teaparty_2
+        }
+        add_modifier = {
+            modifier = modifier_BA_Teaparty_3
+        }
+    }
+    else_if = {
+        limit = {
+            has_modifier = modifier_BA_Teaparty_1
+        }
+        add_resource = {
+            energy = -1200
+        }
+        hidden_effect = {
+            remove_modifier = modifier_BA_Teaparty_1
+        }
+        add_modifier = {
+            modifier = modifier_BA_Teaparty_2
+        }
+    }
+    else = {
+        add_resource = {
+            energy = -200
+        }
+        add_modifier = {
+            modifier = modifier_BA_Teaparty_1
+        }
+    }
+}

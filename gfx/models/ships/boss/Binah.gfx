@@ -1,0 +1,47 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Binah_mesh"
+		file = "gfx/models/ships/boss/Binah.mesh"
+
+		meshsettings = {
+			name = "Binah_Original_BodyShape"
+			index = 0
+			texture_diffuse = "Binah_Original.dds"
+			texture_normal = "Binah_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+
+		meshsettings = {
+			name = "Binah_Original_HaloShape"
+			index = 0
+			texture_diffuse = "Binah_Halo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+		scale = 15.0
+	}
+
+	pdxmesh = {
+		name = "Binah_Color_mesh"
+		file = "gfx/models/ships/boss/Binah_Color.mesh"
+
+		meshsettings = {
+			name = "Binah_Colorl_HaloShape"
+			index = 0
+			texture_diffuse = "Binah_Color_Halo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "Binah_Color_BodyShape"
+			index = 0
+			texture_diffuse = "Binah_Color.dds"
+			texture_normal = "Binah_Color_normal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShipDiffuseEmissive"
+		}
+		scale = 15.0
+	}
+
+
+}

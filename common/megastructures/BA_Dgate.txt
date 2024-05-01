@@ -1,0 +1,69 @@
+# see README.txt for example
+# D-Gate
+Dgate_base = {
+	entity = "gatebuilder_01_gateway_entity"
+	construction_entity = "gateway_portal_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	show_galactic_map_icon = no
+	potential = {
+		always = no
+	}
+	construction_blocks_and_blocked_by = none
+	bypass_type = Dgate
+}
+
+Dgate_temp_base = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	show_galactic_map_icon = no
+	potential = {
+		always = no
+	}
+	construction_blocks_and_blocked_by = none
+}
+
+Dgate_temp = {
+	entity = "gatebuilder_01_gateway_entity"
+	construction_entity = "gateway_portal_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	potential = {
+		has_country_flag = BA_allow_build_gate
+	}
+	prerequisites = {
+		tech_BA_gate_build
+	}
+	upgrade_from = {
+		Dgate_temp_base
+	}
+	build_time = 1080
+	construction_blocks_and_blocked_by = multi_stage_type
+	resources = {
+		category = megastructures
+		cost = {
+			energy = 8500
+			food = 1500
+			alloys = 6000
+			sr_pyroxenes = 100
+		}
+	}
+	on_build_start = {
+		owner = {
+			set_country_flag = BA_mid_Aris_gate_building
+		}
+	}
+	on_build_complete = {
+		save_global_event_target_as = BA_mid_Aris_gate
+		every_country = {
+			limit = {
+				is_country_type = global_event
+			}
+			country_event = {
+				id = BA_crisis.1013
+			}
+		}
+	}
+}

@@ -1,0 +1,173 @@
+#下翻页
+button_effect_BA_page_down = {
+    allow = {
+        always = yes
+    }
+    potential = {
+        from = {
+            OR = {
+                AND = {
+                    check_variable = {
+                        which = BA_page_serial
+                        value < 2
+                    }
+                    check_variable = {
+                        which = BA_page_class
+                        value = 1
+                    }
+                }
+                AND = {
+                    check_variable = {
+                        which = BA_page_serial
+                        value < 2
+                    }
+                    check_variable = {
+                        which = BA_page_class
+                        value = 2
+                    }
+                }
+                AND = {
+                    check_variable = {
+                        which = BA_page_serial
+                        value < 3
+                    }
+                    check_variable = {
+                        which = BA_page_class
+                        value = 4
+                    }
+                }
+                AND = {
+                    check_variable = {
+                        which = BA_page_serial
+                        value < 2
+                    }
+                    check_variable = {
+                        which = BA_page_class
+                        value = 7
+                    }
+                }
+            }
+        }
+    }
+    effect = {
+        hidden_effect = {
+            from = {
+                change_variable = {
+                    which = BA_page_serial
+                    value = 1
+                }
+            }
+        }
+    }
+}
+
+#上翻页
+button_effect_BA_page_up = {
+    allow = {
+        always = yes
+    }
+    potential = {
+        from = {
+            check_variable = {
+                which = BA_page_serial
+                value > 1
+            }
+        }
+    }
+    effect = {
+        hidden_effect = {
+            from = {
+                subtract_variable = {
+                    which = BA_page_serial
+                    value = 1
+                }
+            }
+        }
+    }
+}
+
+#彩色占位符
+button_effect_BA_placeholder = {
+    #仅做占位用 彩色
+    allow = {
+        always = yes
+    }
+    potential = {
+        always = yes
+    }
+    effect = {
+    }
+}
+
+#黑白占位符
+button_effect_BA_placeholder_forbid = {
+    #仅做占位用 灰色
+    allow = {
+        custom_tooltip = {
+            fail_text = BA_coming_soon
+            always = no
+        }
+    }
+    potential = {
+        always = yes
+    }
+    effect = {
+    }
+}
+
+#框架：第一页
+button_effect_BA_frame_1 = {
+    allow = {
+        hidden_trigger = {
+            always = no
+        }
+    }
+    potential = {
+        from = {
+            check_variable = {
+                which = BA_page_serial
+                value = 1
+            }
+        }
+    }
+    effect = {
+    }
+}
+
+#框架：第二页
+button_effect_BA_frame_2 = {
+    allow = {
+        hidden_trigger = {
+            always = no
+        }
+    }
+    potential = {
+        from = {
+            check_variable = {
+                which = BA_page_serial
+                value = 2
+            }
+        }
+    }
+    effect = {
+    }
+}
+
+#框架：第三页
+button_effect_BA_frame_3 = {
+    allow = {
+        hidden_trigger = {
+            always = no
+        }
+    }
+    potential = {
+        from = {
+            check_variable = {
+                which = BA_page_serial
+                value = 3
+            }
+        }
+    }
+    effect = {
+    }
+}

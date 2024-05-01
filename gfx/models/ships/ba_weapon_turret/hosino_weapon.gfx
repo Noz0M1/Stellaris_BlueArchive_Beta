@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "hosino_weapon_mesh"
+		file = "gfx\models\ships\ba_weapon_turret\hosino_weapon.mesh"
+		scale = 4.0
+
+		meshsettings = {
+			name = "Hosino_Origninal_WeaponShape"
+			index = 0
+			texture_diffuse = "Hoshino_Original_Weapon.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "BA_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

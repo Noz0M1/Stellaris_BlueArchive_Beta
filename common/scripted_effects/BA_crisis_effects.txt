@@ -1,0 +1,182 @@
+#创建爱丽丝舰队
+BA_create_mid_Aris_fleet_pawn = {
+	create_fleet = {
+		name = BA_MID_ARIS_FLEET_PAWN
+		effect = {
+			set_owner = event_target:BA_Precursors_Aris_country
+			set_location = {
+				target = prev				#event_target:BA_mid_Aris_base
+				distance = 75
+				angle = 60
+				direction = out_system
+			}
+			set_fleet_flag = BA_mid_Aris_pawn
+			while = {
+				count = 2
+				create_ship = {
+					name = ARIS_CASTLE
+					design = NAME_BA_FE_ARTILLERY_SHIP
+				}
+			}
+			while = {
+				count = 2
+				create_ship = {
+					name = ARIS_BISHOP
+					design = NAME_BA_FE_SWARM_SHIP
+				}
+			}
+			while = {
+				count = 6
+				create_ship = {
+					name = ARIS_PAWN
+					design = NAME_BA_FE_MISSILE_SHIP
+				}
+			}
+			#
+			event_target:BA_Precursors_Aris_country = {
+				create_leader = {
+					class = admiral
+					species = event_target:BA_Precursors_Aris_species
+					gender = female
+					name = RANDOM
+					skill = 3
+					set_age = 15
+					immortal = yes
+					event_leader = yes
+					traits = {
+						trait = leader_trait_hina_SP2
+					}
+					effect = {
+						set_leader_flag = BA_mid_Aris_admiral
+					}
+				}
+			}
+			assign_leader = last_created_leader
+			set_fleet_bombardment_stance = BA_berserk_bomb
+		}
+	}
+}
+
+BA_create_mid_Aris_fleet_bishop = {
+	create_fleet = {
+		name = BA_MID_ARIS_FLEET_BISHOP
+		effect = {
+			set_owner = event_target:BA_Precursors_Aris_country
+			set_location = {
+				target = prev				#event_target:BA_mid_Aris_base
+				distance = 75
+				angle = 60
+				direction = out_system
+			}
+			set_fleet_flag = BA_mid_Aris_bishop
+			while = {
+				count = 3
+				create_ship = {
+					name = ARIS_CASTLE
+					design = NAME_BA_FE_ARTILLERY_SHIP
+				}
+			}
+			while = {
+				count = 3
+				create_ship = {
+					name = ARIS_BISHOP
+					design = NAME_BA_FE_SWARM_SHIP
+				}
+			}
+			while = {
+				count = 8
+				create_ship = {
+					name = ARIS_PAWN
+					design = NAME_BA_FE_MISSILE_SHIP
+				}
+			}
+			event_target:BA_Precursors_Aris_country = {
+				create_leader = {
+					class = admiral
+					species = event_target:BA_Precursors_Aris_species
+					gender = female
+					name = RANDOM
+					skill = 3
+					set_age = 15
+					immortal = yes
+					event_leader = yes
+					traits = {
+						trait = leader_trait_hina_SP2
+					}
+					effect = {
+						set_leader_flag = BA_mid_Aris_admiral
+					}
+				}
+			}
+			assign_leader = last_created_leader
+			set_fleet_bombardment_stance = BA_berserk_bomb
+		}
+	}
+}
+
+BA_create_mid_Aris_fleet_king = {
+	create_fleet = {
+		name = BA_MID_ARIS_FLEET_KING
+		effect = {
+			set_owner = event_target:BA_Precursors_Aris_country
+			set_location = {
+				target = prev				#event_target:BA_mid_Aris_base
+				distance = 75
+				angle = 60
+				direction = out_system
+			}
+			set_fleet_flag = BA_mid_Aris_king
+			create_ship = {
+				name = RANDOM
+				design = NAME_BA_Aris_flagship
+				prefix = yes
+				effect = {
+					set_disable_at_health = 0.05
+					set_ship_flag = BA_mid_Aris_flagship
+					save_global_event_target_as = BA_mid_Aris_flagship
+				}
+			}
+			# while = {
+			# 	count = 3
+			# 	create_ship = {
+			# 		name = ARIS_CASTLE
+			# 		design = NAME_BA_FE_ARTILLERY_SHIP
+			# 	}
+			# }
+			# while = {
+			# 	count = 3
+			# 	create_ship = {
+			# 		name = ARIS_BISHOP
+			# 		design = NAME_BA_FE_SWARM_SHIP
+			# 	}
+			# }
+			# while = {
+			# 	count = 8
+			# 	create_ship = {
+			# 		name = ARIS_PAWN
+			# 		design = NAME_BA_FE_MISSILE_SHIP
+			# 	}
+			# }
+			event_target:BA_Precursors_Aris_country = {
+				create_leader = {
+					class = admiral
+					species = event_target:BA_Precursors_Aris_species
+					gender = female
+					name = AL-1S
+					skill = 10
+					set_age = 15
+					immortal = yes
+					event_leader = yes
+					traits = {
+						trait = leader_trait_hina_SP2
+					}
+					effect = {
+						set_leader_flag = BA_mid_Aris_center
+					}
+				}
+			}
+			assign_leader = last_created_leader
+			set_fleet_bombardment_stance = BA_berserk_bomb
+		}
+	}
+}
