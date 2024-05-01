@@ -1276,6 +1276,11 @@ country_event = {
 	}
 	immediate = {
 		BA_club_Engineering_club_function_init = yes
+		#add_resource = {
+		#	physics_research = 10000000
+		#	society_research = 10000000
+		#	engineering_research = 10000000
+		#}
 	}
 	option = {
 		name = BA_club.0005.cancel
@@ -1283,6 +1288,7 @@ country_event = {
 	}
 	option = {
 		name = Engineering_club_weapon_str.physics_research
+		custom_tooltip = Engineering_club_weapon_str.physics_research.tip
 		response_text = Engineering_club_weapon_str.re
 		allow = {
 			custom_tooltip = {
@@ -1307,6 +1313,7 @@ country_event = {
 	}
 	option = {
 		name = Engineering_club_weapon_str.society_research
+		custom_tooltip = Engineering_club_weapon_str.society_research.tip
 		response_text = Engineering_club_weapon_str.re
 		allow = {
 			custom_tooltip = {
@@ -1331,6 +1338,7 @@ country_event = {
 	}
 	option = {
 		name = Engineering_club_weapon_str.engineering_research
+		custom_tooltip = Engineering_club_weapon_str.engineering_research.tip
 		response_text = Engineering_club_weapon_str.re
 		allow = {
 			custom_tooltip = {
