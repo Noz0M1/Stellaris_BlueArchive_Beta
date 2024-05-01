@@ -103,10 +103,7 @@ button_effect_BA_placeholder = {
 button_effect_BA_placeholder_forbid = {
     #仅做占位用 灰色
     allow = {
-        custom_tooltip = {
-            fail_text = BA_coming_soon
-            always = no
-        }
+        BA_comming_soon = yes
     }
     potential = {
         always = yes

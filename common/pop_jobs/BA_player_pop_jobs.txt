@@ -91,7 +91,7 @@ BA_Vigilant_crew = {
 		is_kivotos = yes
 	}
 	resources = {
-		category = planet_soldiers
+		category = BA_crew_pop
 		produces = {
 			unity = 3
 		}
@@ -99,15 +99,14 @@ BA_Vigilant_crew = {
 			trigger = {
 				planet = {
 					owner = {
-						has_tradition = tr_kivotos_space_supplies
+						has_tradition = tr_kivotos_student_arms
 					}
 				}
 			}
 			unity = 2
 		}
 		upkeep = {
-			alloys = 2
-			consumer_goods = 3
+			consumer_goods = 7
 		}
 	}
 	planet_modifier = {
@@ -553,7 +552,7 @@ BA_flexible_workers = {
 		}
 	}
 	resources = {
-		category = BA_club_pop
+		category = BA_flex_pop
 		produces = {
 			physics_research = 1
 			society_research = 1
@@ -855,7 +854,6 @@ BA_surveyor = {
 	}
 }
 
-#############   劳工   #############
 ### 餐务员
 #基础：2食物 -> 4凝聚力 3消费品 混成化增益
 BA_caterer = {
@@ -905,6 +903,7 @@ BA_caterer = {
 	}
 }
 
+#############   劳工   #############
 ### 拾荒者
 #基础：3凝聚力 2电 -> 1消费品 1食物 0.1稀有资源
 #政策：1消费品或0.1稀有资源
@@ -928,7 +927,7 @@ BA_scavenger = {
 		}
 	}
 	resources = {
-		category = planet_miners
+		category = BA_flex_pop
 		produces = {
 			consumer_goods = 1
 			food = 1
@@ -992,7 +991,7 @@ BA_student_on_duty = {
 		}
 	}
 	resources = {
-		category = BA_club_pop
+		category = BA_crew_pop
 		produces = {
 			unity = 1
 			physics_research = 1

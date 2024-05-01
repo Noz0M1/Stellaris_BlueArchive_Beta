@@ -1,5 +1,5 @@
+#格赫娜
 button_effect_BA_SI_Gehenna_Menu = {
-	#格赫娜
 	allow = {
 		BA_SI_main_unlock_trigger = {
 			SCHOOL = Gehenna
@@ -19,8 +19,8 @@ button_effect_BA_SI_Gehenna_Menu = {
 	}
 }
 
+#阿拜多斯
 button_effect_BA_SI_Abydos_Menu = {
-	#阿拜多斯
 	allow = {
 		BA_SI_main_unlock_trigger = {
 			SCHOOL = Abydos
@@ -40,27 +40,8 @@ button_effect_BA_SI_Abydos_Menu = {
 	}
 }
 
-button_effect_BA_SI_Hyakkiyako_Menu = {
-	#百鬼夜行
-	allow = {
-		BA_SI_sub_unlock_trigger = yes
-	}
-	potential = {
-		always = yes
-	}
-	effect = {
-		hidden_effect = {
-			from = {
-				country_event = {
-					id = BA_Shittem.1033
-				}
-			}
-		}
-	}
-}
-
+#千年
 button_effect_BA_SI_Millennium_Menu = {
-	#千年
 	allow = {
 		BA_SI_main_unlock_trigger = {
 			SCHOOL = Millennium
@@ -80,46 +61,8 @@ button_effect_BA_SI_Millennium_Menu = {
 	}
 }
 
-button_effect_BA_SI_Redwinter_Menu = {
-	#赤冬
-	allow = {
-		BA_SI_sub_unlock_trigger = yes
-	}
-	potential = {
-		always = yes
-	}
-	effect = {
-		hidden_effect = {
-			from = {
-				country_event = {
-					id = BA_Shittem.1035
-				}
-			}
-		}
-	}
-}
-
-button_effect_BA_SI_Shanhaijing_Menu = {
-	#山海经
-	allow = {
-		BA_SI_sub_unlock_trigger = yes
-	}
-	potential = {
-		always = yes
-	}
-	effect = {
-		hidden_effect = {
-			from = {
-				country_event = {
-					id = BA_Shittem.1036
-				}
-			}
-		}
-	}
-}
-
+#圣三一
 button_effect_BA_SI_Trinity_Menu = {
-	#圣三一
 	allow = {
 		BA_SI_main_unlock_trigger = {
 			SCHOOL = Trinity
@@ -139,10 +82,71 @@ button_effect_BA_SI_Trinity_Menu = {
 	}
 }
 
-button_effect_BA_SI_Valkyrie_Menu = {
-	#瓦尔基里
+#百鬼夜行
+button_effect_BA_SI_Hyakkiyako_Menu = {
 	allow = {
-		BA_SI_sub_unlock_trigger = yes
+		# BA_SI_sub_unlock_trigger = yes
+		BA_comming_soon = yes
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_Shittem.1033
+				}
+			}
+		}
+	}
+}
+
+#赤冬
+button_effect_BA_SI_Redwinter_Menu = {
+	allow = {
+		# BA_SI_sub_unlock_trigger = yes
+		BA_comming_soon = yes
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_Shittem.1035
+				}
+			}
+		}
+	}
+}
+
+#山海经
+button_effect_BA_SI_Shanhaijing_Menu = {
+	allow = {
+		# BA_SI_sub_unlock_trigger = yes
+		BA_comming_soon = yes
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_Shittem.1036
+				}
+			}
+		}
+	}
+}
+
+#瓦尔基里
+button_effect_BA_SI_Valkyrie_Menu = {
+	allow = {
+		# BA_SI_sub_unlock_trigger = yes
+		BA_comming_soon = yes
 	}
 	potential = {
 		always = yes

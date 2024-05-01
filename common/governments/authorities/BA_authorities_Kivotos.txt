@@ -5,12 +5,15 @@ auth_kivotos = {
 	ruler_council_position = councilor_ruler_kivotos
 	possible = {
 		ethics = {
-			NOR = {
+			NOT = {
 				value = ethic_gestalt_consciousness
-				value = ethic_materialist
-				value = ethic_fanatic_materialist
+			}
+			NOR = {
+				text = auth_kivotos_tooltip
 				value = ethic_spiritualist
 				value = ethic_fanatic_spiritualist
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
 			}
 		}
 		civics = {
@@ -24,6 +27,11 @@ auth_kivotos = {
 	}
 	random_weight = {
 		base = 0
+	}
+	tags = {
+		auth_kivotos_tag_1
+		auth_kivotos_tag_2
+		auth_kivotos_tag_3
 	}
 	country_modifier = {
 		leaders_upkeep_mult = -0.5

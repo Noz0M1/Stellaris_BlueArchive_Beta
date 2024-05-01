@@ -1,3 +1,4 @@
+##### 自动化
 BA_auto_districts = {
 	parent = planet_districts
 	use_for_ai_budget = no
@@ -10,6 +11,7 @@ BA_auto_districts = {
 		produces
 		upkeep
 	}
+	modifier_category = planet
 }
 
 BA_auto_buildings = {
@@ -24,11 +26,13 @@ BA_auto_buildings = {
 		produces
 		upkeep
 	}
+	modifier_category = planet
 }
 
-BA_club_pop = {
-	icon = "job_researcher"
-	parent = planet_researchers
+##### 自警团
+BA_crew_pop = {
+	icon = job_BA_Vigilant_crew
+	parent = planet_soldiers
 	generate_mult_modifiers = {
 		produces
 		upkeep
@@ -40,8 +44,9 @@ BA_club_pop = {
 	modifier_category = pop
 }
 
+##### 职员
 BA_staff_pop = {
-	icon = job_artisan
+	icon = job_BA_Kivotos_staff
 	parent = planet_artisans
 	generate_mult_modifiers = {
 		produces
@@ -54,6 +59,37 @@ BA_staff_pop = {
 	modifier_category = pop
 }
 
+##### 社团部员
+BA_club_pop = {
+	icon = job_BA_club_members
+	parent = planet_researchers
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+##### 灵活就业者
+BA_flex_pop = {
+	icon = job_BA_flexible_workers
+	parent = BA_club_pop
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+##### 行星特征
 BA_museum = {
 	use_for_ai_budget = no
 }

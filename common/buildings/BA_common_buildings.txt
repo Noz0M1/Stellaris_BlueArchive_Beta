@@ -313,7 +313,7 @@ building_BA_keystone_1 = {
 	}
 }
 
-### 集约化拱心石制造机
+### 集约化制造石制造机
 # 制造机维护员+1
 # 3青辉石 -> 6制造石
 building_BA_keystone_2 = {
@@ -499,6 +499,7 @@ building_BA_SI_Millennium_G10 = {
 	position_priority = 148
 	base_buildtime = 360
 	category = manufacturing
+	base_cap_amount = 1
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
