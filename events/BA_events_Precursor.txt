@@ -104,6 +104,7 @@ country_event = {
 				}
 			}
 			effect = {
+				set_country_flag = protected_from_queen_storm  #合成女王天灾保护
 				##########
 				save_global_event_target_as = BA_Precursor_country
 				set_country_flag = BA_Precursor
@@ -1158,6 +1159,8 @@ country_event = {
 				}
 			}
 			effect = {
+				set_country_flag = protected_from_queen_storm  #合成女王天灾保护
+				###################
 				set_country_flag = BA_Precursor_contactor
 				save_global_event_target_as = BA_Precursor_contactor
 				every_country = {

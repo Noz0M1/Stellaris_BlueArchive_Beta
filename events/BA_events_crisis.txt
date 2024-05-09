@@ -110,6 +110,7 @@ country_event = {
 				}
 			}
 			effect = {
+				set_country_flag = protected_from_queen_storm  #合成女王天灾保护
 				##########
 				#set_graphical_culture = 
 				save_global_event_target_as = BA_Precursors_Aris_country
