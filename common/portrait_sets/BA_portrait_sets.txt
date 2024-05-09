@@ -1,0 +1,37 @@
+Schale_Set = {
+    species_class = Schale
+    portraits = {
+        "Schale"
+    }
+    non_randomized_portraits = {
+        portraits = {
+            "Schale"
+        }
+    }
+}
+
+Aris_Set = {
+    species_class = Schale
+    portraits = {
+        Aris
+    }
+    # These should not be used for randomly generated species
+    non_randomized_portraits = {
+        portraits = {
+            Aris
+        }
+    }
+}
+
+Schale_pr_Set = {
+    species_class = Schale
+    portraits = {
+        "Schale_pr"
+    }
+    # These should not be used for randomly generated species
+    non_randomized_portraits = {
+        portraits = {
+            "Schale_pr"
+        }
+    }
+}
