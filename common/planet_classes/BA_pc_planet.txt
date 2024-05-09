@@ -5,11 +5,7 @@ pc_BA_campus_planet = {
 	#icon = GFX_planet_type_city
 	icon = GFX_planet_type_ocean
 	climate = "dry"
-	atmosphere_color = {
-		0.58
-		0.67
-		0.76
-	}
+	atmosphere_color = hsv{		0.58		0.67		0.76	}
 	atmosphere_intensity = 1
 	atmosphere_width = 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
@@ -45,11 +41,7 @@ pc_BA_ruined_planet = {
 	entity_scale = @planet_standard_scale
 	#icon = GFX_planet_type_city
 	icon = GFX_planet_type_nuked
-	atmosphere_color = {
-		0.58
-		0.67
-		0.76
-	}
+	atmosphere_color = hsv{		0.58		0.67		0.76	}
 	atmosphere_intensity = 1
 	atmosphere_width = 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
@@ -84,11 +76,7 @@ pc_BA_ruined_planet_model = {
 	entity = "ba_ruined_planet"
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_city
-	atmosphere_color = {
-		0.58
-		0.67
-		0.76
-	}
+	atmosphere_color = hsv{		0.58		0.67		0.76	}
 	atmosphere_intensity = 1
 	atmosphere_width = 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
@@ -125,11 +113,7 @@ pc_BA_auto_habitat = {
 	fixed_entity_scale = yes
 	place_entity_on_planet_plane = no
 	entity_face_object = no	#disable rotation towards sun or planet we orbit around
-	atmosphere_color = {
-		0
-		0
-		1
-	}
+	atmosphere_color = hsv{		0		0		1	}
 	#DONE
 	atmosphere_intensity = 1
 	atmosphere_width = 0.5
@@ -153,3 +137,5 @@ pc_BA_auto_habitat = {
 	}
 	carry_cap_per_free_district = @carry_cap_low
 }
+
+#自动环世界
