@@ -46,6 +46,16 @@
 # This means that you can input parameters into them, in a similar fashion as described in scripted_effects/99_advanced_documentation.txt
 # For format for doing so is value:my_value|PARAM1|value1|PARAM2|value2|.
 # Then you can use $PARAM1$ in the script value and it will replace it with value1
+########   星球障碍
+num_BA_Trinity_National_Museum_produce = {
+	base = 30
+	complex_trigger_modifier = {
+		trigger = years_passed
+		mode = add
+		multiplier = 0.5
+	}
+}
+
 ########   社团
 num_BA_club_game_produce = {
 	base = 15
