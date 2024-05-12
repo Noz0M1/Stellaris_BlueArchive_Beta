@@ -79,36 +79,38 @@
  building_BA_SI_Abydos_G02_tip:0 "建造完成后开始“副业”的行动准备。"
 
  # fallen empire
- building_BA_fe_data:0 "基沃托斯数据中心"
+ building_BA_fe_capital:0 "先驱者：团体中心"
+ building_BA_fe_capital_desc:0 "这里是见证者们处理公务的场所。"
+ building_BA_fe_data:0 "先驱者：基沃托斯数据中心"
  building_BA_fe_data_desc:0 "这个数据中心被用于维护星球和殖民地，其中有一个早已被封锁的数据库。"
- building_BA_fe_energy:0 "数秘术改造奇点"
- building_BA_fe_energy_desc:0 "经数秘术改造的4级奇点，可以将大量物质直接转化为能量。"
- building_BA_fe_food:0 "数秘术食物工厂"
+ building_BA_fe_energy:0 "先驱者：4级改造奇点"
+ building_BA_fe_energy_desc:0 "经先驱者改造的4级奇点，可以将大量物质直接转化为能量。"
+ building_BA_fe_food:0 "先驱者：定制食物工厂"
  building_BA_fe_food_desc:0 "全自动的食物工厂。可以生产出能令美食家们献上生命的美食。"
- building_BA_fe_alloy:0 "数秘术合金厂"
- building_BA_fe_alloy_desc:0 "经数据库直接管理的合金厂。"
- building_BA_fe_pyroxenes:0 "数秘术青辉石制造中心"
- building_BA_fe_pyroxenes_desc:0 "它的原理也许没有人能够揭晓了。"
- building_BA_fe_keystone:0 "数秘术制造石制造中心"
- building_BA_fe_keystone_desc:0 "制造石仍然是数秘术的命脉。"
- building_BA_fe_dome:0 "日光兰式居所"
- building_BA_fe_dome_desc:0 "数秘术用奇怪的技术建造的特殊宿舍，只需普普通通的一栋楼，就可以舒适的让数万人安家。"
+ building_BA_fe_alloy:0 "先驱者：成型合金厂"
+ building_BA_fe_alloy_desc:0 "经数据库直接管理的合金厂，将制造石成型后直接转化为合金。"
+ building_BA_fe_pyroxenes:0 "先驱者：奇点管理器"
+ building_BA_fe_pyroxenes_desc:0 "通过内部的奇点产生引力场，从而制作青辉石。"
+ building_BA_fe_keystone:0 "先驱者：材料炼制中心"
+ building_BA_fe_keystone_desc:0 "这里是先驱者们将垃圾和残骸等物品转化为制造石的场所。"
+ building_BA_fe_dome:0 "先驱者：日光兰式居所"
+ building_BA_fe_dome_desc:0 "用奇怪的技术建造的特殊宿舍，只需普普通通的一栋楼，就可以让数万人舒适居住。"
 
- #school idea
+ # school idea
  building_BA_fe_data_SI:0 "仿制：基沃托斯数据中心"
- building_BA_fe_data_SI_desc:0 "这个数据中心被用于维护星球和殖民地，其中有一个早已被封锁的数据库。"
- building_BA_fe_energy_SI:0 "仿制：数秘术改造奇点"
- building_BA_fe_energy_SI_desc:0 "经数秘术改造的4级奇点，可以将大量物质直接转化为能量。"
- building_BA_fe_food_SI:0 "仿制：数秘术食物工厂"
- building_BA_fe_food_SI_desc:0 "全自动的食物工厂。可以生产出能令美食家们献上生命的美食。"
- building_BA_fe_alloy_SI:0 "仿制：数秘术合金厂"
- building_BA_fe_alloy_SI_desc:0 "经数据库直接管理的合金厂。"
+ building_BA_fe_data_SI_desc:0 "这个数据中心被用于维护星球和殖民地，其中的数据库使用的是文化室辛苦搜集来的记录。"
+ building_BA_fe_energy_SI:0 "仿制：4级改造奇点"
+ building_BA_fe_energy_SI_desc:0 "一个4级奇点，可以将物质直接转化为能量。"
+ building_BA_fe_food_SI:0 "仿制：定制食物工厂"
+ building_BA_fe_food_SI_desc:0 "全自动的食物工厂。可以生产出能让一整个城市食用的食物。"
+ building_BA_fe_alloy_SI:0 "仿制：成型合金厂"
+ building_BA_fe_alloy_SI_desc:0 "经数据库直接管理的合金厂，将成型的制造石直接转化为合金。"
  building_BA_fe_pyroxenes_SI:0 "仿制：数秘术青辉石制造中心"
- building_BA_fe_pyroxenes_SI_desc:0 "它的原理也许没有人能够揭晓了。"
- building_BA_fe_keystone_SI:0 "仿制：数秘术制造石制造中心"
- building_BA_fe_keystone_SI_desc:0 "制造石仍然是数秘术的命脉。"
+ building_BA_fe_pyroxenes_SI_desc:0 "通过内部的发生器产生引力场，从而制作青辉石。"
+ building_BA_fe_keystone_SI:0 "仿制：材料炼制中心"
+ building_BA_fe_keystone_SI_desc:0 "使用先驱者的工艺在地面上模拟零重力环境，将青辉石转化为制造石的场所。"
  building_BA_fe_dome_SI:0 "仿制：日光兰式居所"
- building_BA_fe_dome_SI_desc:0 "数秘术用奇怪的技术建造的特殊宿舍，只需普普通通的一栋楼，就可以舒适的让数万人安家。"
+ building_BA_fe_dome_SI_desc:0 "这一栋庞大的建筑，内部可以让数万人居住。住房环境当然是有所保证的。"
 
 
  #####       Decision       #####
@@ -367,6 +369,10 @@
  NAME_BA_Gematria_country:0 "数秘术"
  NAME_BA_Precursor_species:0 "基沃托斯先驱者"
  NAME_BA_Precursor_country:0 "Moe Xcom"
+ NAME_BA_Precursor_country_title:0 "叠合空间失落帝国"
+ NAME_BA_Precursor_country_desc:0 "这是一个残留的远古星际势力，处在一片奇妙的叠合空间中。我们所在的星系被她们称为“外域”。她们并非不愿离开国境踏入外域，而是做不到。"
+ NAME_BA_Precursor_country_awakened_title:0 "叠合空间复兴帝国"
+ NAME_BA_Precursor_country_awakened_desc:0 "这个残留的远古星际势力似乎终于找到了踏出叠合空间的方法。于是，她们对外域的浓厚兴趣终于得以不加保留的施展。"
  NAME_BA_Precursors_Aris_species:0 "流浪爱丽丝"
  NAME_BA_Precursors_Aris_country:0 "流浪爱丽丝"
  NAME_BA_Precursor_contactor:0 "Moe Xcom外域探索者"
@@ -614,7 +620,33 @@
  col_BA_campus_unemp_tooltip:0 "£job£灵活就业者的维护费用不再消耗£influence£影响力"
 
 
-
+#####       Policies       #####
+###     origin    ###
+ policy_BA_Arius_mining_policy:0 "废墟采矿政策"
+ policy_BA_Arius_mining_policy_desc:0 "堆积如山的废墟是我们重要的资源来源，我们应该充分利用。"
+ BA_Arius_mining_consumer_goods_name:0 "废墟采矿：消费品"
+ For_consumer_goods:0 "废墟采矿：消费品"
+ For_consumer_goods_desc:0 "$job_BA_scavenger$和$job_BA_reminer$将产出额外的£consumer_goods£消费品。"
+ BA_Arius_mining_rare_resource_name:0 "废墟采矿：稀有资源"
+ For_rare_resource:0 "废墟采矿：稀有资源"
+ For_rare_resource_desc:0 "$job_BA_scavenger$和$job_BA_reminer$将产出额外的£rare_crystals£ £volatile_motes£ £exotic_gases£稀有资源。"
+###     civic     ###
+ policy_BA_Arius_guise_policy:0 "面纱"
+ policy_BA_Arius_guise_policy_desc:0 "外星人对我们而言，不过是复兴之路上的垫脚石。\n§R该政策不可更改§!"
+ BA_Arius_guise_policy_tooltip:0 "我们需要一个契机。"
+ BA_Arius_Under_guise_name:0 "面纱之下"
+ Arius_Under_guise:0 "面纱之下"
+ Arius_Under_guise_desc:0 "为了更好的利用它们，足够的伪装是必要的。"
+ BA_Arius_Guise_lifted_name:0 "面纱已揭"
+ Arius_Guise_lifted:0 "面纱已揭"
+ Arius_Guise_lifted_desc:0 "所有外星人口会被献祭，获得£alloys£合金与£sr_keystone£制造石。战争摧毁一个国家时，获得其部分库存资源。"
+ BA_Arius_Guise_aborted_name:0 "双面之人"
+ Arius_Guise_aborted:0 "双面之人"
+ Arius_Guise_aborted_desc:0 "也许，你我之间并无太多不同……"
+###    vanilla    ###
+ diplo_Moe_Xcom:0 "观察与干涉"
+ diplo_Moe_Xcom_name:0 "观察与干涉"
+ diplo_Moe_Xcom_desc:0 "该帝国密切关注着星系内的一举一动，并十分乐意提供帮助以改变星系现状。"
 
 
 ######      Resources      #####

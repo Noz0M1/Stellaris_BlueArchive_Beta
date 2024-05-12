@@ -19,12 +19,11 @@ Dgate = {
 	ftl_bypass_effect = "gateway_ftl_bypass_effect_entity"
 	extends_sensors = yes
 	country_can_use = {
-		#always = yes
 		custom_tooltip = {
 			fail_text = Dgate_base_fail_tooltip
 			OR = {
 				has_authority = auth_kivotos
-				has_authority = auth_kivotos_pr
+				is_BA_fallen_empire = yes
 			}
 		}
 	}

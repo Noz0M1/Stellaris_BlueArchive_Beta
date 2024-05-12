@@ -8,7 +8,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = fallen_empire
+			is_country_type = Moe_Xcom
 			is_patronizing_to = from
 			NOT = {
 				is_at_war_with = FROM
@@ -24,7 +24,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = fallen_empire
+			is_country_type = Moe_Xcom
 			is_patronizing_to = from
 			NOT = {
 				is_at_war_with = FROM
@@ -40,7 +40,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = fallen_empire
+			is_country_type = Moe_Xcom
 			is_patronizing_to = from
 			NOT = {
 				is_at_war_with = FROM
@@ -56,7 +56,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = fallen_empire
+			is_country_type = Moe_Xcom
 			is_patronizing_to = from
 			NOT = {
 				is_at_war_with = FROM
@@ -73,7 +73,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = fallen_empire
+			is_country_type = Moe_Xcom
 			is_dismissive_to = from
 			NOT = {
 				is_at_war_with = FROM
@@ -89,7 +89,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = fallen_empire
+			is_country_type = Moe_Xcom
 			is_dismissive_to = from
 			NOT = {
 				is_at_war_with = FROM
@@ -105,7 +105,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = fallen_empire
+			is_country_type = Moe_Xcom
 			is_dismissive_to = from
 			NOT = {
 				is_at_war_with = FROM
@@ -122,7 +122,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = fallen_empire
+			is_country_type = Moe_Xcom
 			is_angry_to = from
 			NOT = {
 				is_at_war_with = FROM
@@ -138,7 +138,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = fallen_empire
+			is_country_type = Moe_Xcom
 			is_angry_to = from
 			NOT = {
 				is_at_war_with = FROM
@@ -154,7 +154,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = fallen_empire
+			is_country_type = Moe_Xcom
 			is_angry_to = from
 			NOT = {
 				is_at_war_with = FROM
@@ -171,7 +171,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = fallen_empire
+			is_country_type = Moe_Xcom
 			is_at_war_with = FROM
 			from = {
 				has_authority = auth_kivotos
@@ -185,7 +185,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = fallen_empire
+			is_country_type = Moe_Xcom
 			is_at_war_with = FROM
 			from = {
 				NOT = {
@@ -204,7 +204,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = awakened_fallen_empire
+			is_country_type = Moe_Xcom_awakened
 			is_custodial_to = from
 			NOT = {
 				is_at_war_with = FROM
@@ -220,7 +220,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = awakened_fallen_empire
+			is_country_type = Moe_Xcom_awakened
 			is_custodial_to = from
 			NOT = {
 				is_at_war_with = FROM
@@ -236,7 +236,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = awakened_fallen_empire
+			is_country_type = Moe_Xcom_awakened
 			is_custodial_to = from
 			NOT = {
 				is_at_war_with = FROM
@@ -252,7 +252,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = awakened_fallen_empire
+			is_country_type = Moe_Xcom_awakened
 			is_custodial_to = from
 			NOT = {
 				is_at_war_with = FROM
@@ -269,7 +269,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = awakened_fallen_empire
+			is_country_type = Moe_Xcom_awakened
 			is_arrogant_to = from
 			NOT = {
 				is_at_war_with = FROM
@@ -285,7 +285,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = awakened_fallen_empire
+			is_country_type = Moe_Xcom_awakened
 			is_arrogant_to = from
 			NOT = {
 				is_at_war_with = FROM
@@ -301,7 +301,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = awakened_fallen_empire
+			is_country_type = Moe_Xcom_awakened
 			is_arrogant_to = from
 			NOT = {
 				is_at_war_with = FROM
@@ -318,7 +318,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = awakened_fallen_empire
+			is_country_type = Moe_Xcom_awakened
 			OR = {
 				is_imperious_to = from
 				is_belligerent_to = from
@@ -337,7 +337,8 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = awakened_fallen_empire
+			is_country_type = Moe_Xcom_awakened
+			
 			OR = {
 				is_imperious_to = from
 				is_belligerent_to = from
@@ -356,7 +357,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = awakened_fallen_empire
+			is_country_type = Moe_Xcom_awakened
 			OR = {
 				is_imperious_to = from
 				is_belligerent_to = from
@@ -377,7 +378,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = awakened_fallen_empire
+			is_country_type = Moe_Xcom_awakened
 			is_at_war_with = FROM
 			from = {
 				has_authority = auth_kivotos
@@ -391,7 +392,7 @@ greetings = {
 		}
 		trigger = {
 			has_authority = auth_kivotos_pr
-			is_country_type = awakened_fallen_empire
+			is_country_type = Moe_Xcom_awakened
 			is_at_war_with = FROM
 			from = {
 				NOT = {

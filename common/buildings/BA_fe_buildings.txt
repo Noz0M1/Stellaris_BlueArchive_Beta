@@ -1,4 +1,46 @@
-#### 正品
+#### 首府
+building_BA_fe_capital = {
+	icon = building_system_capital
+	base_buildtime = 1
+	capital = yes
+	can_build = no
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
+	position_priority = 0
+	category = government
+	potential = {
+		exists = owner
+		owner = {
+			is_BA_fallen_empire = yes
+		}
+	}
+	convert_to = {
+		building_hive_major_capital
+		building_machine_major_capital
+		building_major_capital
+		building_resort_major_capital
+		building_slave_major_capital
+		building_ancient_control_center
+		building_ancient_palace
+		building_system_capital_nanotech
+	}
+	prerequisites = {
+		tech_BA_fe
+	}
+	show_tech_unlock_if = {
+		is_BA_fallen_empire = yes
+	}
+	resources = {
+		category = planet_buildings
+		produces = {
+			unity = 1000
+		}
+	}
+}
+
+
+#### 正品建筑
 building_BA_fe_data = {
 	icon = building_master_archive
 	position_priority = 150
@@ -7,8 +49,8 @@ building_BA_fe_data = {
 	potential = {
 		owner = {
 			OR = {
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
+				is_country_type = Moe_Xcom
+				is_country_type = Moe_Xcom_awakened
 			}
 			has_authority = auth_kivotos_pr
 		}
@@ -34,8 +76,8 @@ building_BA_fe_energy = {
 	potential = {
 		owner = {
 			OR = {
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
+				is_country_type = Moe_Xcom
+				is_country_type = Moe_Xcom_awakened
 			}
 			has_authority = auth_kivotos_pr
 		}
@@ -59,8 +101,8 @@ building_BA_fe_food = {
 	potential = {
 		owner = {
 			OR = {
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
+				is_country_type = Moe_Xcom
+				is_country_type = Moe_Xcom_awakened
 			}
 			has_authority = auth_kivotos_pr
 		}
@@ -85,8 +127,8 @@ building_BA_fe_alloy = {
 	potential = {
 		owner = {
 			OR = {
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
+				is_country_type = Moe_Xcom
+				is_country_type = Moe_Xcom_awakened
 			}
 			has_authority = auth_kivotos_pr
 		}
@@ -108,8 +150,8 @@ building_BA_fe_pyroxenes = {
 	potential = {
 		owner = {
 			OR = {
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
+				is_country_type = Moe_Xcom
+				is_country_type = Moe_Xcom_awakened
 			}
 			has_authority = auth_kivotos_pr
 		}
@@ -131,8 +173,8 @@ building_BA_fe_keystone = {
 	potential = {
 		owner = {
 			OR = {
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
+				is_country_type = Moe_Xcom
+				is_country_type = Moe_Xcom_awakened
 			}
 			has_authority = auth_kivotos_pr
 		}
@@ -153,8 +195,8 @@ building_BA_fe_dome = {
 	potential = {
 		owner = {
 			OR = {
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
+				is_country_type = Moe_Xcom
+				is_country_type = Moe_Xcom_awakened
 			}
 			has_authority = auth_kivotos_pr
 		}

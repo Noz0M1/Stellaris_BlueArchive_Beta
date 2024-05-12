@@ -161,7 +161,7 @@ BA_fe_defender = {
     }
     possible = {
         owner = {
-            is_fallen_empire = yes
+            is_BA_fallen_empire = yes
             has_authority = auth_kivotos_pr
         }
         is_same_species = owner
@@ -192,7 +192,7 @@ BA_fe_volunteers = {
     }
     possible = {
         owner = {
-            is_fallen_empire = yes
+            is_BA_fallen_empire = yes
             has_authority = auth_kivotos_pr
         }
         is_same_species = owner
@@ -200,16 +200,9 @@ BA_fe_volunteers = {
     resources = {
         category = planet_researchers
         produces = {
-            energy = 1200
-            minerals = 800
-            food = 1200
-            consumer_goods = 600
-            alloys = 300
-            sr_keystone = 100
-            physics_research = 150
-            society_research = 150
-            engineering_research = 150
-            unity = 150
+            physics_research = 10
+            society_research = 10
+            engineering_research = 10
         }
     }
     weight = {
@@ -253,6 +246,3 @@ BA_Sweeper_refugees = {
 }
 
 ### 虚妄圣库姆特
-BA_Unnamed_enemy = {
-
-}

@@ -21,14 +21,7 @@ country_event = {
 			id = BA_Precursor.0010
 		}
 		#快子信号通告及先驱者
-		every_country = {
-			limit = {
-				OR = {
-					is_country_type = default
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
-				}
-			}
+		every_playable_country = {
 			country_event = {
 				id = BA_crisis.1001
 			}
@@ -2576,14 +2569,7 @@ country_event = {
 				is_country_type = global_event
 			}
 			#快子信号通告及先驱者
-			every_country = {
-				limit = {
-					OR = {
-						is_country_type = default
-						is_country_type = fallen_empire
-						is_country_type = awakened_fallen_empire
-					}
-				}
+			every_playable_country = {
 				country_event = {
 					id = BA_crisis.1001
 				}

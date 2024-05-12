@@ -367,13 +367,10 @@ can_destroy_planet_with_Sweepers = {
 ##### Fallen Empire
 #country scope
 is_BA_fallen_empire = {
-	is_country_type = fallen_empire
-	has_authority = auth_kivotos_pr
-}
-
-is_BA_fallen_empire_awakened = {
-	is_country_type = awakened_fallen_empire
-	has_authority = auth_kivotos_pr
+	OR = {
+		is_country_type = Moe_Xcom
+		is_country_type = Moe_Xcom_awakened
+	}
 }
 
 ##### UI

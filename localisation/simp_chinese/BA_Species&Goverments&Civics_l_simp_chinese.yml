@@ -187,12 +187,9 @@
  councilor_ruler_kivotos_desc:0 "联邦学生会下辖各个科室的统领者。"
  councilor_ruler_kivotos_male:0 "联邦学生会长"
  councilor_ruler_kivotos_female:0 "联邦学生会长"
- councilor_ruler_kivotos_pr:0 "见证者"
+ councilor_ruler_kivotos_pr:0 "首席见证者"
  councilor_ruler_kivotos_pr_desc:0 "公开见证学生们之间建立的协议等契约所设立的席位。"
 
-
- auth_ba_fe:0 "???"
- auth_ba_fe_desc:0 "我们无法知晓他们的帝国具体构成"
 
 #指针悬停政府类型时显示的内容
  KIVOTOS_STUDENTS:0 "帝国由学生们联邦自治。"
@@ -246,28 +243,7 @@
  origin_Kivotos_Unnamed_starting_desc:0 "我们在那次战争中失去了家园，但我们顽强的在星空中奋战，最后扎根。抛却悲痛，我们重新建立了另一种形式的学园都市，并最终掌握了未来的最后一片拼图。从这满是奇迹的始发点开始，我们要夺回家园、迈向星河。"
  origin_Kivotos_Unnamed_starting_effects:0 "-在['concept_auto_habitat']上开局，而非在母星\n-开局拥有建造和升级['concept_auto_habitat']相关科技\n§R-全局唯一，其余玩家将被替换为§Y$origin_Kivotos_Eden_treaty$§R起源\n-此起源的制作尚不完整，请谨慎选择§!"
 
-#政策
- policy_BA_Arius_mining_policy:0 "废墟采矿政策"
- policy_BA_Arius_mining_policy_desc:0 "堆积如山的废墟是我们重要的资源来源，我们应该充分利用。"
- BA_Arius_mining_consumer_goods_name:0 "废墟采矿：消费品"
- For_consumer_goods:0 "废墟采矿：消费品"
- For_consumer_goods_desc:0 "$job_BA_scavenger$和$job_BA_reminer$将产出额外的£consumer_goods£消费品。"
- BA_Arius_mining_rare_resource_name:0 "废墟采矿：稀有资源"
- For_rare_resource:0 "废墟采矿：稀有资源"
- For_rare_resource_desc:0 "$job_BA_scavenger$和$job_BA_reminer$将产出额外的£rare_crystals£ £volatile_motes£ £exotic_gases£稀有资源。"
 
- policy_BA_Arius_guise_policy:0 "面纱"
- policy_BA_Arius_guise_policy_desc:0 "外星人对我们而言，不过是复兴之路上的垫脚石。\n§R该政策不可更改§!"
- BA_Arius_guise_policy_tooltip:0 "我们需要一个契机。"
- BA_Arius_Under_guise_name:0 "面纱之下"
- Arius_Under_guise:0 "面纱之下"
- Arius_Under_guise_desc:0 "为了更好的利用它们，足够的伪装是必要的。"
- BA_Arius_Guise_lifted_name:0 "面纱已揭"
- Arius_Guise_lifted:0 "面纱已揭"
- Arius_Guise_lifted_desc:0 "所有外星人口会被献祭，获得£alloys£合金与£sr_keystone£制造石。战争摧毁一个国家时，获得其部分库存资源。"
- BA_Arius_Guise_aborted_name:0 "双面之人"
- Arius_Guise_aborted:0 "双面之人"
- Arius_Guise_aborted_desc:0 "也许，你我之间并无太多不同……"
 
 #物种增长
 

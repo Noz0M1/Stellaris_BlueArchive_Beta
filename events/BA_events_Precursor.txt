@@ -76,7 +76,7 @@ country_event = {
 		create_country = {
 			name = NAME_BA_Precursor_country
 			species = event_target:BA_Precursor_species
-			type = fallen_empire
+			type = Moe_Xcom
 			ignore_initial_colony_error = yes
 			authority = auth_kivotos_pr
 			ethos = {
@@ -848,7 +848,7 @@ country_event = {
 		#如果已觉醒，打开内部星门
 		if = {
 			limit = {
-				is_country_type = awakened_fallen_empire
+				is_country_type = Moe_Xcom_awakened
 				has_global_flag = BA_outland_activated
 				NOT = {
 					has_global_flag = BA_inland_activated
@@ -1174,19 +1174,25 @@ country_event = {
 			}
 		}
 		#与先驱者联系
-		every_country = {
-			limit = {
-				OR = {
-					is_country_type = default
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
-				}
-			}
+		every_playable_country = {
 			establish_communications_no_message = root
 			country_event = {
 				id = BA_Precursor.0101
 			}
 		}
+		#every_country = {
+		#	limit = {
+		#		OR = {
+		#			is_country_type = default
+		#			is_country_type = fallen_empire
+		#			is_country_type = awakened_fallen_empire
+		#		}
+		#	}
+		#	establish_communications_no_message = root
+		#	country_event = {
+		#		id = BA_Precursor.0101
+		#	}
+		#}
 		#启动外域星门
 		random_country = {
 			limit = {

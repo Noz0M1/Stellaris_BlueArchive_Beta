@@ -9,7 +9,6 @@ ba_fallen_empire_01 = {
 	friction_modifier = 0
 	#
 	behaviour = {
-		#大概是天灾发生时要摇的人
 		conqueror = no
 		subjugator = no
 		liberator = yes
@@ -26,8 +25,7 @@ ba_fallen_empire_01 = {
 		attack_neutrals = no
 	}
 	allow = {
-		is_country_type = fallen_empire
-		has_ethic = ethic_fanatic_egalitarian
+		is_country_type = Moe_Xcom
 	}
 	weight_modifier = {
 		weight = 100000
@@ -67,8 +65,7 @@ ba_awakened_fallen_empire_01 = {
 		# limited = yes # prevents certain AI behaviours
 	}
 	allow = {
-		is_country_type = awakened_fallen_empire
-		has_authority = "auth_kivotos_pr"		#拥有的政体
+		is_country_type = Moe_Xcom_awakened
 	}
 	weight_modifier = {
 		weight = 9999

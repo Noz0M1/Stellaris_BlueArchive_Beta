@@ -56,8 +56,7 @@ BA_districts_dome = {
 			exists = owner
 			owner = {
 				OR = {
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
+					is_BA_fallen_empire = yes
 					has_country_flag = BA_Blue_new_world_4
 				}
 			}
@@ -71,8 +70,7 @@ BA_districts_dome = {
 			exists = owner
 			owner = {
 				OR = {
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
+					is_BA_fallen_empire = yes
 					has_country_flag = BA_Blue_new_world_7
 				}
 			}

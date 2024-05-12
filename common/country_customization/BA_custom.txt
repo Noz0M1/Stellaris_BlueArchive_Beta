@@ -14,3 +14,16 @@ default = {
 		}
 	}
 }
+
+BA_fe = {
+	colony_shelter = {
+		default = building_BA_fe_capital
+	}
+	weight = {
+		base = 0
+		modifier = {
+			add = 10
+			has_authority = auth_kivotos_pr
+		}
+	}
+}
