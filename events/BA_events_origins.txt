@@ -1672,9 +1672,9 @@ planet_event = {
 		name = BA_origin.1301.next
 		add_deposit = d_Arius_site_park		#添加遗址公园
 		owner = {
-			add_random_research_option = {
-				add_progress = 0.4
-				area = society
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = 6
 			}
 		}
 	}
@@ -1710,13 +1710,13 @@ planet_event = {
 				minerals = 500
 				alloys = 300
 			}
-			add_random_research_option = {
-				add_progress = 0.25
-				area = physics
+			add_monthly_resource_mult = {
+				resource = physics_research
+				value = 6
 			}
-			add_random_research_option = {
-				add_progress = 0.25
-				area = society
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = 6
 			}
 		}
 	}
@@ -1751,14 +1751,6 @@ planet_event = {
 	option = {
 		name = BA_origin.1303.next
 		owner = {
-			add_random_research_option = {
-				add_progress = 0.4
-				area = physics
-			}
-			add_random_research_option = {
-				add_progress = 0.4
-				area = society
-			}
 			give_technology = {
 				tech = tech_BA_legacy_of_millennium
 			}
@@ -1766,13 +1758,19 @@ planet_event = {
 				resource = physics_research
 				value = 48
 				min = 6000
-				max = 18000
+				max = 36000
+			}
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = 48
+				min = 6000
+				max = 36000
 			}
 			add_monthly_resource_mult = {
 				resource = engineering_research
 				value = 48
 				min = 6000
-				max = 18000
+				max = 36000
 			}
 		}
 	}
@@ -1825,9 +1823,9 @@ planet_event = {
 				minerals = 300
 				sr_pyroxenes = 200
 			}
-			add_random_research_option = {
-				add_progress = 0.4
-				area = society
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = 6
 			}
 		}
 	}
@@ -1859,9 +1857,9 @@ planet_event = {
 	option = {
 		name = BA_origin.1305.next
 		owner = {
-			add_random_research_option = {
-				add_progress = 0.5
-				area = society
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = 6
 			}
 		}
 		add_deposit = d_Gehenna_shelter

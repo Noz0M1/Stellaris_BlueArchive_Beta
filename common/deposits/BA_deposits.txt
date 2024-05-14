@@ -153,7 +153,7 @@ d_Arius_Cathedral_ruined = {
 	on_cleared = {
 		hidden_effect = {
 			#清除后给予flag并检测是否全部清除
-			set_Planet_flag = Arius_Cathedral_flag_ruined
+			set_planet_flag = Arius_Cathedral_flag_ruined
 			# planet_event = {
 			# 	id = BA_origin.0280
 			# }

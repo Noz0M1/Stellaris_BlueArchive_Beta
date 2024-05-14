@@ -340,6 +340,14 @@ tech_BA_Halo_coding_outline = {
 		has_authority = auth_kivotos
 	}
 	weight = 0
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			any_council_member = {
+				has_trait = "leader_trait_ui_SP1"
+			}
+		}
+	}
 	prereqfor_desc = {
 		custom = {
 			title = tech_BA_Halo_coding_outline_title
@@ -366,6 +374,14 @@ tech_BA_Halo_coding_space = {
 		has_authority = auth_kivotos
 	}
 	weight = @tier4weight2
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			any_council_member = {
+				has_trait = "leader_trait_ui_SP1"
+			}
+		}
+	}
 	prereqfor_desc = {
 		custom = {
 			title = tech_BA_Halo_coding_space_title
@@ -393,6 +409,14 @@ tech_BA_Halo_coding_inner = {
 		has_authority = auth_kivotos
 	}
 	weight = @tier5weight2
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			any_council_member = {
+				has_trait = "leader_trait_ui_SP1"
+			}
+		}
+	}
 	prereqfor_desc = {
 		custom = {
 			title = tech_BA_Halo_coding_inner_title
@@ -449,8 +473,7 @@ tech_BA_Halo_amplifier = {
 	weight_modifier = {
 		modifier = {
 			factor = 2
-			research_leader = {
-				area = physics
+			any_council_member = {
 				has_trait = "leader_trait_ui_SP1"
 			}
 		}
@@ -475,8 +498,7 @@ tech_BA_amplifier_upgrade = {
 	weight_modifier = {
 		modifier = {
 			factor = 2
-			research_leader = {
-				area = physics
+			any_council_member = {
 				has_trait = "leader_trait_ui_SP1"
 			}
 		}

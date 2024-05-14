@@ -542,7 +542,8 @@ trait_test = {
 	}
 	icon = "gfx/interface/icons/traits/Icon_unfinshed.dds"
 	modifier = {
-		#pop_environment_tolerance = 2
+		pc_BA_campus_planet_habitability = 0.5
+		pc_BA_ruined_planet_habitability = 0.5
 		pop_housing_usage_mult = -0.3
 		planet_jobs_produces_mult = 0.2
 		planet_pops_upkeep_mult = 0.2
@@ -567,6 +568,7 @@ trait_test_finished = {
 	}
 	icon = "gfx/interface/icons/traits/Icon_aris_purple.dds"
 	modifier = {
+		habitability_floor_add = 0.5
 		planet_jobs_produces_mult = 0.3
 		army_damage_mult = 0.2
 		army_health = 1.5
