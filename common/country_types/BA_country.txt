@@ -132,18 +132,18 @@ Moe_Xcom = {
 				action_offer_peace
 				action_make_rival
 				action_end_rivalry
-				action_offer_trade_deal
-				action_cancel_trade_deal
+				#action_offer_trade_deal
+				#action_cancel_trade_deal
 				action_insult
 				action_make_claims_diplomacy_view
 			}
 			can_send = {
 				action_declare_war
-				action_make_rival
-				action_end_rivalry
+				#action_make_rival
+				#action_end_rivalry
 				action_offer_peace
-				action_offer_trade_deal
-				action_cancel_trade_deal
+				#action_offer_trade_deal
+				#action_cancel_trade_deal
 				action_open_borders
 				action_close_borders
 			}
@@ -230,8 +230,8 @@ Moe_Xcom_awakened = {
 				action_offer_peace
 				action_make_rival
 				action_end_rivalry
-				action_offer_trade_deal
-				action_cancel_trade_deal
+				#action_offer_trade_deal
+				#action_cancel_trade_deal
 				action_insult
 				action_ask_to_become_thrall
 				action_ask_to_become_dominion
@@ -248,8 +248,8 @@ Moe_Xcom_awakened = {
 				action_make_rival
 				action_end_rivalry
 				action_offer_peace
-				action_offer_trade_deal
-				action_cancel_trade_deal
+				#action_offer_trade_deal
+				#action_cancel_trade_deal
 				action_demand_thrall
 				action_demand_dominion
 				action_demand_satellite
