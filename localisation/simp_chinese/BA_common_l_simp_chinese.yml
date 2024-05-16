@@ -35,6 +35,15 @@
  building_BA_keystone_foundry_2:0 "大型$tech_BA_angel24_keystone_to_alloy$"
  building_BA_keystone_foundry_2_desc:0 "$tech_BA_angel24_keystone_to_alloy_desc$"
 
+ # ringworld
+ building_BA_ringworld_refinery_A: "制造石配送器"
+ building_BA_ringworld_refinery_A_desc: "专为配送制造石设计的物流中枢。"
+ building_BA_ringworld_refinery_A_effect: "建造此建筑后，将不能再建造§G$building_BA_ringworld_refinery_B$§!\n§B铸模区段§!的产出将变为与此建筑一致"
+ building_BA_ringworld_refinery_B: "透镜模块"
+ building_BA_ringworld_refinery_B_desc: "REPLACE_ME"
+ building_BA_ringworld_refinery_B_effect: "建造此建筑后，将不能再建造§G$building_BA_ringworld_refinery_A$§!\n§B铸模区段§!的产出将变为与此建筑一致"
+
+
  # club room
  building_BA_Schale_office:0 "夏莱办公室"
  building_BA_Schale_office_desc:0 "这里是老师工作的地方。各个学园的打架斗殴等鸡毛蒜皮类事件本应由联邦学生会处理，不过貌似现在已经大部分事情都交给老师来干了。"
@@ -138,7 +147,10 @@
  decision_BA_new_frontier:0 "学园都市改造"
  decision_BA_new_frontier_desc:0 "将此殖民地改造为学园都市星球。"
  decision_BA_upgrade_habitat:0 "居住站扩建"
- decision_BA_upgrade_habitat_desc:0 "加装更多的青辉石自动化模块"
+ decision_BA_upgrade_habitat_desc:0 "加装更多的青辉石自动化模块。"
+ decision_BA_new_ringworld: "翻修为§B模块化环世界§!"
+ decision_BA_new_ringworld_desc: "将此环形世界重新整修规划为崭新的§B模块化环世界§!，提供自动化的区划和无限的岗位。"
+ decision_BA_new_ringworld_tip: "将此环形世界重新整修规划为崭新的§B模块化环世界§!，提供自动化的区划和无限的岗位。"
 
  decision_BA_SI_Abydos_A06: "碧蓝的波纹"
  decision_BA_SI_Abydos_A06_desc: "从前我们无比向往着海的尽头，如今一个星球已经不能满足我们探索的脚步。"
@@ -274,7 +286,7 @@
  BA_districts_special_factory_desc:0 "从事太空工业，掌握未来的区划。"
  BA_districts_special_factory_plural:0 "$BA_districts_special_factory$"
  mod_planet_BA_districts_special_factory_build_speed_mult:0 "$BA_districts_special_factory$建造速度"
- BA_districts_auto_refinery:0 "精炼区"
+ BA_districts_auto_refinery:0 "透镜区"
  BA_districts_auto_refinery_desc:0 "生产青辉石的自动化工厂。由于工厂附近会产生引力波动影响学生们的睡眠，因此这个区域仅供通勤。"
  BA_districts_auto_refinery_plural:0 "$BA_districts_auto_refinery$"
  mod_planet_BA_districts_auto_refinery_build_speed_mult:0 "$BA_districts_auto_refinery$建造速度"
@@ -608,6 +620,12 @@
  mod_pc_BA_auto_habitat_habitability:0 "自动化太空居住站适应性"
  trait_pc_BA_auto_habitat_preference:0 "自动化太空居住站偏好"
  trait_pc_BA_auto_habitat_preference_desc:0 "自动化太空居住站偏好"
+ pc_BA_auto_ringworld: "模块化环世界"
+ pc_BA_auto_ringworld_desc: "基沃托斯的学生们改造的居住站，应有尽有的理想国。"
+ pc_BA_auto_ringworld_adj: "模块化环世界"
+ mod_pc_BA_auto_ringworld_habitability: "模块化环世界适应性"
+ trait_pc_BA_auto_ringworld_preference: "模块化环世界偏好"
+ trait_pc_BA_auto_ringworld_preference_desc: "模块化环世界偏好"
 ###     colony    ###
  col_pyroxenes_craft:0 "青辉石星球"
  col_pyroxenes_craft_desc:0 "为制造青辉石而特化的星球。"
@@ -667,7 +685,7 @@
  sr_pyroxenes_deficit_desc:0 "青辉石短缺desc"
 
  sr_keystone:0 "制造石"
- sr_keystone_desc:0 "可以制造出各种道具的神秘石头。"
+ sr_keystone_desc:0 "制造石（£sr_keystone£）是一种可以制造出各种道具的神秘石头。你可以通过以下的方式获取更多的矿物： 1.在殖民星球上建设采矿区划。 2.在富含矿物的星球上使用工程船建设开采站。 3.在贸易市场添购矿物。（点击以打开市场）"
  mod_country_base_sr_keystone_produces_add:0 "每月$sr_keystone$"
  mod_country_sr_keystone_cost_mult:0 "$sr_keystone$花费"
  mod_pop_category_slave_sr_keystone_upkeep_add:"来自奴隶的£sr_keystone£ $sr_keystone$维护费"

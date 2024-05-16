@@ -94,12 +94,10 @@ BA_keystone_maintenance_staff = {
     resources = {
         category = planet_metallurgists
         produces = {
-            alloys = 2
-            consumer_goods = 2
+            sr_keystone = 4
         }
         upkeep = {
-            minerals = 3
-            sr_keystone = 1
+            sr_pyroxenes = 2
         }
     }
     planet_modifier = {

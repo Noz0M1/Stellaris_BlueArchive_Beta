@@ -1,0 +1,71 @@
+#############   环型世界   #############
+### 铸模区段
+# 普通：青辉石*15 --> 制造石*30
+# 制造石配送器：存在时改为 青辉石*15 --> 制造石*40 ；
+building_BA_ringworld_refinery_A = {
+    position_priority = 153
+    base_buildtime = 360
+    category = manufacturing
+    potential = {
+        owner = {
+            has_authority = auth_kivotos
+        }
+        is_planet_class = pc_BA_auto_ringworld
+    }
+    destroy_trigger = {
+        NOT = {
+            is_planet_class = pc_BA_auto_ringworld
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_authority = auth_kivotos
+            }
+        }
+        modifier = {
+            job_BA_keystone_maintenance_staff_add = 1
+        }
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 200
+            sr_pyroxenes = 10
+        }
+        upkeep = {
+            energy = 15
+            sr_pyroxenes = 1
+        }
+        produces = {
+            sr_keystone = 2
+        }
+        upkeep = {
+            trigger = {
+                colony_type = col_auto_building
+            }
+            energy = 1.6
+            sr_pyroxenes = 0.2
+        }
+        produces = {
+            trigger = {
+                colony_type = col_auto_building
+            }
+            sr_keystone = 0.4
+        }
+    }
+    prerequisites = {
+        "tech_BA_keystone_crafting"
+    }
+    upgrades = {
+        building_BA_keystone_2
+    }
+}
+
+
+# 透镜模块：存在时改为 120矿 --> 青辉石*20 ；
+
+
+
+

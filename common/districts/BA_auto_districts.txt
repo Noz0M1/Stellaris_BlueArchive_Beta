@@ -2,7 +2,7 @@
 #####################################
 #自动居住站区划 数值有待商榷
 #####################################
-#精炼区 矿-->青辉石
+#透镜区 矿-->青辉石
 BA_districts_auto_refinery = {
 	base_buildtime = @BA_habitat_build_time
 	is_capped_by_modifier = no
@@ -188,5 +188,94 @@ BA_districts_auto_drill = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
+	}
+}
+
+#####################################
+#模块化环世界区划 数值有待商榷
+#####################################
+### 铸模区段
+# 普通：青辉石*15 --> 制造石*30
+# 制造石配送器：存在时改为 青辉石*20 --> 制造石*40
+# 透镜模块：存在时改为 120矿 --> 青辉石*20
+BA_districts_ringworld_refinery = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = BA_auto_ringworld
+	}
+	potential = {
+		uses_district_set = BA_auto_ringworld
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			energy = 500
+			minerals = 1000
+			sr_keystone = 50
+		}
+		produces = {
+			sr_keystone = 30
+		}
+		upkeep = {
+			energy = 15
+			sr_pyroxenes = 15
+		}
+	}
+}
+
+### 工厂区段 制造石-->合金
+# 精密制造区：青辉石-->消费品
+BA_districts_ringworld_factory = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = BA_auto_ringworld
+	}
+	potential = {
+		uses_district_set = BA_auto_ringworld
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			energy = 500
+			minerals = 1000
+			sr_keystone = 50
+		}
+		produces = {
+			consumer_goods = 90
+		}
+		upkeep = {
+			energy = 15
+			minerals = 90
+		}
+	}
+}
+
+### 矩阵区段
+# 公用串流器
+BA_districts_ringworld_matrix = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = BA_auto_ringworld
+	}
+	potential = {
+		uses_district_set = BA_auto_ringworld
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			energy = 500
+			minerals = 1000
+			sr_keystone = 50
+		}
+		produces = {
+			sr_pyroxenes = 15
+		}
+		upkeep = {
+			energy = 15
+			minerals = 90
+		}
 	}
 }
