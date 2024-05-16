@@ -2,6 +2,7 @@ default = {
 	# "default" should always exists as it's the value the engine will always fall back on
 	colony_shelter = {
 		default = "building_colony_shelter"
+		pc_cosmogenesis_world = "building_lathe_capital"
 		pc_habitat = "building_hab_capital"
 		pc_BA_auto_habitat = "building_hab_capital"
 	}
