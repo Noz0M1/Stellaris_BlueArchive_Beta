@@ -1,0 +1,829 @@
+####   ！此文件涉及原版修改
+diplomatic_stance = {
+	potential = {
+		OR = {
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+			is_country_type = primitive
+			is_country_type = awakened_marauders
+			is_country_type = mirrored_country
+            #################
+            is_BA_fallen_empire = yes
+		}
+	}
+	allow = {
+		is_at_war = no		# Not allowed to change policies in this group while at war
+	}
+	option = {
+		name = "diplo_stance_belligerent"
+		icon = "GFX_diplomatic_stance_belligerent"
+		potential = {
+			OR = {
+				is_country_type = default
+				is_country_type = awakened_fallen_empire
+			}
+		}
+		valid = {
+			NOT = {
+				has_valid_civic = civic_inwards_perfection
+			}
+			is_homicidal = no			# They have their own variants of this
+		}
+		policy_flags = {
+			diplo_stance_belligerent
+		}
+		modifier = {
+			country_war_exhaustion_mult = -0.1
+			country_naval_cap_mult = 0.1
+			country_claim_influence_cost_mult = -0.1
+			external_leader_pool_add = -1
+		}
+		ai_weight = {
+			weight = 10
+			modifier = {
+				factor = 0
+				NOT = {
+					has_country_flag = has_encountered_other_empire
+				}
+			}
+			# Pacifists
+			modifier = {
+				# Fanatic Pacifists will *only* go belligerent if there's a rival neighbor...
+				factor = 0
+				has_ethic = ethic_fanatic_pacifist
+				NOT = {
+					any_neighbor_country = {
+						is_rival = root
+					}
+				}
+			}
+			modifier = {
+				# Regular Pacifists have only a small chance to go belligerent unless there's a rival neighbor...
+				factor = 0.5
+				has_ethic = ethic_pacifist
+				NOT = {
+					any_neighbor_country = {
+						is_rival = root
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5				# ...but they're still less likely to.
+				is_pacifist = yes
+			}
+			# Angry people like to be belligerent
+			modifier = {
+				factor = 2
+				has_ethic = ethic_fanatic_militarist
+			}
+			modifier = {
+				factor = 1.5
+				has_ethic = ethic_militarist
+			}
+			modifier = {
+				factor = 1.5
+				has_ethic = ethic_fanatic_authoritarian
+			}
+			modifier = {
+				factor = 1.25
+				has_ethic = ethic_authoritarian
+			}
+			modifier = {
+				factor = 5				# Intentionally high value for despoilers/Nihilistic Acquisition
+				is_slaver = yes
+			}
+			modifier = {
+				factor = 1.5
+				has_valid_civic = civic_nationalistic_zeal
+			}
+			modifier = {
+				factor = 1.5
+				OR = {
+					has_valid_civic = civic_hive_strength_of_legions
+					has_valid_civic = civic_machine_warbots
+					has_valid_civic = civic_private_military_companies
+					has_valid_civic = civic_warrior_culture
+				}
+			}
+			modifier = {
+				factor = 1.5
+				has_ai_personality_behaviour = conqueror
+			}
+			modifier = {
+				factor = 1.5
+				has_ai_personality_behaviour = subjugator
+			}
+			modifier = {
+				factor = 3				# Blocked in propagators get ANGRY
+				has_ai_expansion_plan = no
+				has_ai_personality_behaviour = propagator
+			}
+		}
+	}
+	option = {
+		name = "diplo_stance_cooperative"
+		icon = "GFX_diplomatic_stance_cooperative"
+		potential = {
+			OR = {
+				is_country_type = default
+				is_country_type = awakened_fallen_empire
+				is_country_type = mirrored_country
+			}
+		}
+		valid = {
+			NOT = {
+				has_valid_civic = civic_inwards_perfection
+			}
+			is_unfriendly = no			# Not homicidal or barbaric despoilers
+		}
+		policy_flags = {
+			diplo_stance_cooperative
+		}
+		modifier = {
+			diplo_weight_mult = 0.25
+			envoy_improve_relations_mult = 0.5
+			country_border_friction_mult = -0.5
+			operations_cost_mult = 0.25
+			operations_upkeep_mult = 0.25
+			external_leader_pool_add = 1
+		}
+		ai_weight = {
+			weight = 10
+			modifier = {
+				factor = 0.01
+				has_ascension_perk = ap_become_the_crisis
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					has_country_flag = has_encountered_other_empire
+				}
+			}
+			# Tons of Ethics modifiers!
+			# Cranky people:
+			modifier = {
+				factor = 0
+				has_ethic = ethic_fanatic_xenophobe
+			}
+			modifier = {
+				factor = 0.1
+				has_ethic = ethic_xenophobe
+			}
+			modifier = {
+				factor = 0.5
+				has_ethic = ethic_fanatic_authoritarian
+			}
+			modifier = {
+				factor = 0.75
+				has_ethic = ethic_authoritarian
+			}
+			# Nice people:
+			modifier = {
+				factor = 2
+				has_ethic = ethic_fanatic_xenophile
+			}
+			modifier = {
+				factor = 1.5
+				has_ethic = ethic_xenophile
+			}
+			modifier = {
+				factor = 1.3
+				has_valid_civic = civic_machine_exploration_protocol
+			}
+			modifier = {
+				factor = 1.3
+				has_ethic = ethic_fanatic_pacifist
+			}
+			modifier = {
+				factor = 1.15
+				has_ethic = ethic_pacifist
+			}
+			modifier = {
+				factor = 1.3
+				has_ethic = ethic_fanatic_egalitarian
+			}
+			modifier = {
+				factor = 1.15
+				has_ethic = ethic_egalitarian
+			}
+			modifier = {
+				factor = 1.1
+				has_ethic = ethic_fanatic_materialist
+			}
+			modifier = {
+				factor = 1.05
+				has_ethic = ethic_materialist
+			}
+			modifier = {
+				factor = 1.25
+				has_ai_personality_behaviour = multispecies
+			}
+			modifier = {
+				factor = 3
+				has_ai_personality = federation_builders
+			}
+		}
+	}
+	option = {
+		name = "diplo_stance_isolationist"
+		icon = "GFX_diplomatic_stance_isolationist"
+		potential = {
+			OR = {
+				is_country_type = default
+				is_country_type = awakened_fallen_empire
+			}
+		}
+		valid = {
+			is_megacorp = no			# "NO! YOU CAN'T BUY OUR STUFF!" makes the shareholders sad
+			is_homicidal = no			# Homicidal variants below
+		}
+		policy_flags = {
+			diplo_stance_isolationist
+		}
+		modifier = {
+			country_unity_produces_mult = 0.1
+			diplo_weight_mult = -0.25
+			diplomacy_upkeep_mult = 1
+			pop_government_ethic_attraction = 0.25
+			country_border_friction_mult = 2
+			external_leader_pool_add = -2
+		}
+		on_enabled = {
+		}
+		ai_weight = {
+			weight = 10
+			modifier = {
+				factor = 0.01
+				has_ascension_perk = ap_become_the_crisis
+			}
+			modifier = {
+				factor = 0.25				# Let the isolationists start in this if they want
+				NOT = {
+					has_country_flag = has_encountered_other_empire
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_ai_personality = federation_builders
+					has_ai_personality = fanatic_befrienders
+				}
+			}
+			modifier = {
+				factor = 100				# Inwards Perfection should almost always go isolationist
+				has_valid_civic = civic_inwards_perfection
+			}
+			modifier = {
+				factor = 3
+				has_ai_personality_behaviour = isolationist
+			}
+			modifier = {
+				factor = 2
+				is_xenophobe = yes
+				is_militarist = no
+				is_authoritarian = no
+			}
+		}
+	}
+	option = {
+		name = "diplo_stance_expansionist"
+		icon = "GFX_diplomatic_stance_expansionist"
+		potential = {
+			OR = {
+				is_country_type = default
+				is_country_type = awakened_fallen_empire
+			}
+		}
+		valid = {
+			is_homicidal = no
+		}
+		policy_flags = {
+			diplo_stance_expansionist
+		}
+		modifier = {
+			starbase_outpost_cost_mult = -0.1
+			planet_colony_development_speed_mult = 0.15
+			country_border_friction_mult = 1
+		}
+		ai_weight = {
+			weight = 10
+			modifier = {
+				factor = 2
+				NOT = {
+					has_country_flag = has_encountered_other_empire
+				}
+			}
+			modifier = {
+				factor = 0.01
+				has_ascension_perk = ap_become_the_crisis
+			}
+		}
+	}
+	option = {
+		name = "diplo_stance_mercantile"
+		icon = "GFX_diplomatic_stance_mercantile"
+		potential = {
+			OR = {
+				is_country_type = default
+				is_country_type = awakened_fallen_empire
+				is_country_type = mirrored_country
+			}
+			is_gestalt = no
+		}
+		valid = {
+			NOT = {
+				has_valid_civic = civic_inwards_perfection
+			}
+			is_homicidal = no
+			# some ugliness to preserve the
+			# auth/civic - potential/valid divide for tooltip
+			if = {
+				limit = {
+					has_megacorp = yes
+					is_megacorp = yes
+				}
+				is_megacorp = yes
+			}
+			else_if = {
+				limit = {
+					has_megacorp = yes
+				}
+				has_civic = civic_merchant_guilds
+			}
+			else = {
+				has_civic = civic_corporate_dominion
+			}
+		}
+		policy_flags = {
+			diplo_stance_mercantile
+		}
+		modifier = {
+			diplo_weight_economy_mult = 0.25
+			trade_value_mult = 0.1
+			local_trade_protection_add = 5
+			external_leader_pool_add = 1
+		}
+		ai_weight = {
+			weight = 10
+			modifier = {
+				factor = 0.01
+				has_ascension_perk = ap_become_the_crisis
+			}
+			modifier = {
+				factor = 3
+				is_megacorp = yes				# Megacorps should generally prefer this diplo stance unless their ethics get them to specialize differently
+			}
+			modifier = {
+				factor = 1.25
+				has_valid_civic = civic_free_traders
+			}
+			modifier = {
+				factor = 10
+				should_ai_focus_on_trade = yes
+			}
+			modifier = {
+				factor = 0.65
+				OR = {
+					has_valid_civic = civic_private_prospectors
+					has_valid_civic = civic_private_military_companies
+				}
+			}
+		}
+	}
+	option = {
+		name = "diplo_stance_supremacist"
+		icon = "GFX_diplomatic_stance_supremacy"
+		potential = {
+			OR = {
+				is_country_type = awakened_fallen_empire
+				is_country_type = awakened_marauders
+				is_country_type = default
+				is_country_type = mirrored_country
+			}
+		}
+		valid = {
+			NOR = {
+				has_valid_civic = civic_inwards_perfection
+				has_modifier = humiliated
+			}
+			is_homicidal = no
+			custom_tooltip = {
+				fail_text = "requires_supremacy_traditions"
+				OR = {
+					has_tradition = tr_supremacy_finish
+					NOT = {
+						is_country_type = default
+					}
+				}
+			}
+			is_subject = no
+		}
+		policy_flags = {
+			diplo_stance_supremacist
+		}
+		modifier = {
+			diplo_weight_naval_mult = 1
+			diplo_weight_economy_mult = -0.5
+			diplo_weight_technology_mult = -0.5
+			country_war_exhaustion_mult = -0.2
+			country_naval_cap_mult = 0.2
+			country_claim_influence_cost_mult = -0.1
+		}
+		on_enabled = {
+		}
+		ai_weight = {
+			weight = 10
+			modifier = {
+				factor = 0
+				NOT = {
+					has_country_flag = has_encountered_other_empire
+				}
+			}
+			modifier = {
+				factor = 0
+				is_pacifist = yes
+			}
+			modifier = {
+				factor = 10
+				OR = {
+					is_country_type = awakened_fallen_empire
+					is_country_type = awakened_marauders
+				}
+			}
+			# Angry people want to be Supreme
+			modifier = {
+				factor = 2
+				has_ethic = ethic_fanatic_militarist
+			}
+			modifier = {
+				factor = 1.5
+				has_ethic = ethic_militarist
+			}
+			modifier = {
+				factor = 1.5
+				has_ethic = ethic_fanatic_authoritarian
+			}
+			modifier = {
+				factor = 1.25
+				has_ethic = ethic_authoritarian
+			}
+			modifier = {
+				factor = 1.25				# Despoilers/Nihilistic Acquisition intentionally get a higher multiplier for Belligerent than Supremacist
+				is_slaver = yes
+			}
+			modifier = {
+				factor = 2
+				has_valid_civic = civic_nationalistic_zeal
+			}
+			modifier = {
+				factor = 3
+				OR = {
+					has_valid_civic = civic_hive_strength_of_legions
+					has_valid_civic = civic_machine_warbots
+					has_valid_civic = civic_private_military_companies
+					has_valid_civic = civic_warrior_culture
+				}
+			}
+			modifier = {
+				factor = 1.5
+				has_ai_personality_behaviour = conqueror
+			}
+			modifier = {
+				factor = 1.5
+				has_ai_personality_behaviour = subjugator
+			}
+			modifier = {
+				# Don't be suicidal
+				factor = 0
+				any_relation = {
+					has_communications = root
+					has_policy_flag = diplo_stance_supremacist
+					is_country_type = default
+					is_subject = no
+					relative_power = {
+						who = root
+						category = fleet
+						value = overwhelming
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				any_neighbor_country = {
+					has_communications = root
+					is_country_type = default
+					is_subject = no
+					relative_power = {
+						who = root
+						category = fleet
+						value > equivalent
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "diplo_stance_animosity"
+		icon = "GFX_diplomatic_stance_animosity"
+		potential = {
+			is_country_type = default
+		}
+		valid = {
+			is_homicidal = no
+			custom_tooltip = {
+				fail_text = "requires_enmity_traditions"
+				OR = {
+					has_tradition = tr_enmity_finish
+					NOT = {
+						is_country_type = default
+					}
+				}
+			}
+			is_subject = no
+		}
+		policy_flags = {
+			diplo_stance_animosity
+		}
+		modifier = {
+			max_rivalries = 2
+			rivalries_unity_produces_add = 10
+			country_border_friction_mult = 1
+			diplo_weight_rivals_mult = 0.05
+		}
+		ai_weight = {
+			weight = 10
+			modifier = {
+				factor = 0
+				NOT = {
+					has_country_flag = has_encountered_other_empire
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = ethic_fanatic_xenophile
+					has_valid_civic = civic_hive_empath
+				}
+			}
+			modifier = {
+				factor = 0
+				num_rivals = 0
+			}
+			# Ambitious people who want to be rivals
+			modifier = {
+				factor = 2
+				is_fanatic = yes
+			}
+			modifier = {
+				factor = 1.5
+				has_ethic = ethic_militarist
+			}
+			modifier = {
+				factor = 1.25
+				has_ethic = ethic_authoritarian
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					has_valid_civic = civic_nationalistic_zeal
+					has_valid_civic = civic_pompous_purists
+				}
+			}
+			modifier = {
+				factor = 3
+				OR = {
+					has_valid_civic = civic_hive_strength_of_legions
+					has_valid_civic = civic_machine_warbots
+					has_valid_civic = civic_private_military_companies
+					has_valid_civic = civic_warrior_culture
+					has_origin = origin_payback
+				}
+			}
+			modifier = {
+				factor = 1.5
+				OR = {
+					has_ai_personality_behaviour = subjugator
+					has_ai_personality_behaviour = opportunist
+					has_ai_personality_behaviour = propagator
+				}
+			}
+			modifier = {
+				factor = 20
+				has_ai_personality = metalhead
+			}
+		}
+	}
+	option = {
+		name = "diplo_stance_hunger"
+		icon = "GFX_diplomatic_stance_rest"
+		potential = {
+			has_authority = auth_hive_mind
+		}
+		valid = {
+			has_valid_civic = civic_hive_devouring_swarm
+		}
+		policy_flags = {
+			diplo_stance_hunger
+		}
+		modifier = {
+		}
+		ai_weight = {
+			weight = 100
+		}
+	}
+	option = {
+		name = "diplo_stance_extermination"
+		icon = "GFX_diplomatic_stance_recompiling"
+		potential = {
+			has_authority = auth_machine_intelligence
+		}
+		valid = {
+			has_valid_civic = civic_machine_terminator
+		}
+		policy_flags = {
+			diplo_stance_extermination
+		}
+		modifier = {
+		}
+		ai_weight = {
+			weight = 100
+		}
+	}
+	option = {
+		name = "diplo_stance_purification"
+		icon = "GFX_diplomatic_stance_withdrawn"
+		potential = {
+			has_utopia = yes
+		}
+		valid = {
+			has_valid_civic = civic_fanatic_purifiers
+		}
+		policy_flags = {
+			diplo_stance_purification
+		}
+		modifier = {
+		}
+		ai_weight = {
+			weight = 100
+		}
+	}
+	option = {
+		name = "diplo_stance_isolationist_fallen_empire"
+		icon = "GFX_diplomatic_stance_isolationist"
+		potential = {
+			is_country_type = fallen_empire
+		}
+		policy_flags = {
+			diplo_stance_isolationist_fallen_empire
+		}
+		modifier = {
+		}
+		ai_weight = {
+			weight = 100
+		}
+	}
+	option = {
+		name = "diplo_stance_ignorant"
+		icon = "GFX_diplomatic_stance_isolationist"
+		potential = {
+			is_country_type = primitive
+			current_awareness_level < medium
+			capital_scope = {
+				NOT = {
+					has_modifier = culture_shock_diplomacy
+				}
+			}
+		}
+		policy_flags = {
+			diplo_stance_ignorant
+		}
+		modifier = {
+		}
+		ai_weight = {
+			weight = 1
+		}
+	}
+	option = {
+		name = "diplo_stance_questioning"
+		icon = "GFX_diplomatic_stance_expansionist"
+		potential = {
+			is_country_type = primitive
+			current_awareness_level = medium
+			capital_scope = {
+				NOT = {
+					has_modifier = culture_shock_diplomacy
+				}
+			}
+		}
+		policy_flags = {
+			diplo_stance_questioning
+		}
+		modifier = {
+		}
+		ai_weight = {
+			weight = 1
+		}
+	}
+	option = {
+		name = "diplo_stance_eager"
+		icon = "GFX_diplomatic_stance_cooperative"
+		potential = {
+			is_country_type = primitive
+			current_awareness_level >= high
+			is_xenophile = yes
+			capital_scope = {
+				NOT = {
+					has_modifier = culture_shock_diplomacy
+				}
+			}
+		}
+		policy_flags = {
+			diplo_stance_eager
+		}
+		modifier = {
+		}
+		ai_weight = {
+			weight = 1
+		}
+	}
+	option = {
+		name = "diplo_stance_fearful"
+		icon = "GFX_diplomatic_stance_withdrawn"
+		potential = {
+			is_country_type = primitive
+			current_awareness_level >= high
+			is_xenophobe = yes
+			capital_scope = {
+				NOT = {
+					has_modifier = culture_shock_diplomacy
+				}
+			}
+		}
+		policy_flags = {
+			diplo_stance_fearful
+		}
+		modifier = {
+		}
+		ai_weight = {
+			weight = 1
+		}
+	}
+	option = {
+		name = "diplo_stance_uncertain"
+		icon = "GFX_diplomatic_stance_isolationist"
+		potential = {
+			is_country_type = primitive
+			current_awareness_level >= high
+			is_xenophile = no
+			is_xenophobe = no
+			capital_scope = {
+				NOT = {
+					has_modifier = culture_shock_diplomacy
+				}
+			}
+		}
+		policy_flags = {
+			diplo_stance_uncertain
+		}
+		modifier = {
+		}
+		ai_weight = {
+			weight = 1
+		}
+	}
+	option = {
+		name = "diplo_stance_culture_shock"
+		icon = "GFX_diplomatic_stance_belligerent"
+		potential = {
+			is_country_type = primitive
+			capital_scope = {
+				has_modifier = culture_shock_diplomacy
+			}
+		}
+		policy_flags = {
+			diplo_stance_culture_shock
+		}
+		modifier = {
+			diplo_action_acceptance_add = -100
+		}
+		ai_weight = {
+			weight = 100
+		}
+	}
+    #################
+    option = {
+        name = diplo_Moe_Xcom
+        icon = GFX_diplomatic_stance_cooperative
+        potential = {
+            is_BA_fallen_empire = yes
+        }
+        policy_flags = {
+            diplo_Moe_Xcom
+        }
+        ai_weight = {
+            weight = 10
+        }
+
+    }
+}
