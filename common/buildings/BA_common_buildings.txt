@@ -274,9 +274,6 @@ building_BA_keystone_1 = {
 				has_authority = auth_kivotos
 			}
 		}
-		modifier = {
-			job_BA_keystone_maintenance_staff_add = 1
-		}
 	}
 	resources = {
 		category = planet_buildings
@@ -345,6 +342,7 @@ building_BA_keystone_2 = {
 		cost = {
 			minerals = 1200
 			sr_keystone = 30
+			sr_eligma = 1
 		}
 		upkeep = {
 			energy = 12
