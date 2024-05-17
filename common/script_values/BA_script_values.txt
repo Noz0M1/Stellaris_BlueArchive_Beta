@@ -61,44 +61,44 @@ num_BA_club_game_produce = {
 	base = 15
 	min = 15
 	### 人口
-	#complex_trigger_modifier = {
-	#	trigger = count_owned_pop
-	#	parameters = {
-	#		limit = {
-	#			is_kivotos = yes
-	#		}
-	#	}
-	#	mode = add
-	#	multiplier = 0.5
-	#}
-	### 建筑
-	#complex_trigger_modifier = {
-	#	trigger = count_owned_planet
-	#	parameters = {
-	#		limit = {
-	#			has_active_building = building_BA_Schale_office
-	#		}
-	#	}
-	#	mode = add
-	#	multiplier = 5
-	#}
-	#complex_trigger_modifier = {
-	#	trigger = count_owned_planet
-	#	parameters = {
-	#		limit = {
-	#			has_active_building = building_BA_Game_development_department
-	#		}
-	#	}
-	#	mode = add
-	#	multiplier = 15
-	#}
+	complex_trigger_modifier = {
+		trigger = count_owned_pop
+		parameters = {
+			limit = {
+				is_kivotos = yes
+			}
+		}
+		mode = add
+		multiplier = 0.5
+	}
+	## 建筑
+	complex_trigger_modifier = {
+		trigger = count_owned_planet
+		parameters = {
+			limit = {
+				has_active_building = building_BA_Schale_office
+			}
+		}
+		mode = add
+		multiplier = 5
+	}
+	complex_trigger_modifier = {
+		trigger = count_owned_planet
+		parameters = {
+			limit = {
+				has_active_building = building_BA_Game_development_department
+			}
+		}
+		mode = add
+		multiplier = 15
+	}
 	### 自动变更
 	add = Game_development_department_unity
 	### 学策
-	#modifier = {
-	#	factor = 2
-	#	has_technology = tech_BA_SI_Millennium_C02
-	#}
+	modifier = {
+		factor = 2
+		has_technology = tech_BA_SI_Millennium_C02
+	}
 }
 
 num_BA_club_resource_by_empire_size = {
