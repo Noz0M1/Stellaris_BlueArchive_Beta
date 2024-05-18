@@ -18,13 +18,8 @@ building_BA_Schale_office = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
 		}
 		modifier = {
-			job_BA_club_members_add = 1
-			job_BA_club_members_per_pop = 0.05
 			pop_government_ethic_attraction = 1
 			planet_amenities_add = 10
 		}
@@ -32,9 +27,32 @@ building_BA_Schale_office = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = {
-				has_authority = auth_kivotos
+			OR = {
+				AND = {
+					is_planet_class = pc_BA_auto_ringworld
+					BA_has_any_club_building = yes
+				}
+				NOR = {
+					is_planet_class = pc_BA_auto_ringworld
+					is_planet_class = pc_BA_auto_ringworld
+				}
 			}
+		}
+		job_BA_club_members_add = 1
+		job_BA_club_members_per_pop = 0.05
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			is_planet_class = pc_BA_auto_ringworld
+			BA_has_any_club_building = no
+		}
+		job_BA_ringworld_worker_add = 2
+		job_BA_ringworld_worker_per_pop = 0.1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
 			planet = {
 				NOR = {
 					is_planet_class = pc_nuked

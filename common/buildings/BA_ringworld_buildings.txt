@@ -1,70 +1,309 @@
 #############   环型世界   #############
 ### 铸模区段
-# 普通：青辉石*15 --> 制造石*30
-# 制造石配送器：存在时改为 青辉石*15 --> 制造石*40 ；
+# 制造石配送器：青辉石*20 --> 制造石*40
 building_BA_ringworld_refinery_A = {
     position_priority = 153
     base_buildtime = 360
-    category = manufacturing
+    category = government
     potential = {
         owner = {
             has_authority = auth_kivotos
         }
         is_planet_class = pc_BA_auto_ringworld
     }
+    allow = {
+        BA_no_exclude_building = {
+            Building = building_BA_ringworld_refinery_B
+        }
+    }
     destroy_trigger = {
         NOT = {
             is_planet_class = pc_BA_auto_ringworld
         }
     }
+    triggered_desc = {
+        text = building_BA_ringworld_refinery_A_effect
+    }
     triggered_planet_modifier = {
         potential = {
             exists = owner
-            owner = {
-                has_authority = auth_kivotos
-            }
         }
         modifier = {
-            job_BA_keystone_maintenance_staff_add = 1
+            job_BA_ringworld_worker_add = 2
         }
     }
     resources = {
-        category = planet_buildings
+        category = BA_auto_buildings
         cost = {
-            minerals = 200
-            sr_pyroxenes = 10
+            energy = 500
+            minerals = 1000
+            sr_keystone = 50
+            sr_eligma = 1
+        }
+        produces = {
+            sr_keystone = 40
         }
         upkeep = {
             energy = 15
-            sr_pyroxenes = 1
+            sr_pyroxenes = 20
         }
-        produces = {
-            sr_keystone = 2
-        }
-        upkeep = {
-            trigger = {
-                colony_type = col_auto_building
-            }
-            energy = 1.6
-            sr_pyroxenes = 0.2
-        }
-        produces = {
-            trigger = {
-                colony_type = col_auto_building
-            }
-            sr_keystone = 0.4
-        }
-    }
-    prerequisites = {
-        "tech_BA_keystone_crafting"
-    }
-    upgrades = {
-        building_BA_keystone_2
     }
 }
 
+# 锻压透镜模块：矿*120 --> 青辉石*20
+building_BA_ringworld_refinery_B = {
+    position_priority = 153
+    base_buildtime = 360
+    category = government
+    potential = {
+        owner = {
+            has_authority = auth_kivotos
+        }
+        is_planet_class = pc_BA_auto_ringworld
+    }
+    allow = {
+        BA_no_exclude_building = {
+            Building = building_BA_ringworld_refinery_A
+        }
+    }
+    destroy_trigger = {
+        NOT = {
+            is_planet_class = pc_BA_auto_ringworld
+        }
+    }
+    triggered_desc = {
+        text = building_BA_ringworld_refinery_B_effect
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+        }
+        modifier = {
+            job_BA_ringworld_worker_add = 2
+        }
+    }
+    resources = {
+        category = BA_auto_buildings
+        cost = {
+            energy = 500
+            minerals = 1000
+            sr_keystone = 50
+            sr_eligma = 1
+        }
+        produces = {
+            sr_pyroxenes = 20
+        }
+        upkeep = {
+            energy = 15
+            minerals = 120
+        }
+    }
+}
 
-# 透镜模块：存在时改为 120矿 --> 青辉石*20 ；
+### 工厂区段
+# 军需无人机网络：制造石*40 --> 合金*100 海军容量-每值日生+4
+building_BA_ringworld_factory_A = {
+    position_priority = 153
+    base_buildtime = 360
+    category = government
+    potential = {
+        owner = {
+            has_authority = auth_kivotos
+        }
+        is_planet_class = pc_BA_auto_ringworld
+    }
+    allow = {
+        BA_no_exclude_building = {
+            Building = building_BA_ringworld_factory_B
+        }
+    }
+    destroy_trigger = {
+        NOT = {
+            is_planet_class = pc_BA_auto_ringworld
+        }
+    }
+    triggered_desc = {
+        text = building_BA_ringworld_factory_A_effect
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+        }
+        modifier = {
+            job_BA_ringworld_worker_add = 2
+        }
+    }
+    resources = {
+        category = BA_auto_buildings
+        cost = {
+            energy = 500
+            minerals = 1000
+            sr_keystone = 50
+            sr_eligma = 1
+        }
+        produces = {
+            alloys = 100
+        }
+        upkeep = {
+            energy = 15
+            sr_keystone = 40
+        }
+    }
+}
+
+# 精密制造区：矿*120 --> 消费品*150
+building_BA_ringworld_factory_B = {
+    position_priority = 153
+    base_buildtime = 360
+    category = government
+    potential = {
+        owner = {
+            has_authority = auth_kivotos
+        }
+        is_planet_class = pc_BA_auto_ringworld
+    }
+    allow = {
+        BA_no_exclude_building = {
+            Building = building_BA_ringworld_factory_A
+        }
+    }
+    destroy_trigger = {
+        NOT = {
+            is_planet_class = pc_BA_auto_ringworld
+        }
+    }
+    triggered_desc = {
+        text = building_BA_ringworld_factory_A_effect
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+        }
+        modifier = {
+            job_BA_ringworld_worker_add = 2
+        }
+    }
+    resources = {
+        category = BA_auto_buildings
+        cost = {
+            energy = 500
+            minerals = 1000
+            sr_keystone = 50
+            sr_eligma = 1
+        }
+        produces = {
+            consumer_goods = 150
+        }
+        upkeep = {
+            energy = 15
+            minerals = 120
+        }
+    }
+}
+
+### 矩阵区段
+# 公用超光速串流器：制造石*40 --> 凝聚力*240
+building_BA_ringworld_matrix_A = {
+    position_priority = 153
+    base_buildtime = 360
+    category = government
+    potential = {
+        owner = {
+            has_authority = auth_kivotos
+        }
+        is_planet_class = pc_BA_auto_ringworld
+    }
+    allow = {
+        BA_no_exclude_building = {
+            Building = building_BA_ringworld_matrix_B
+        }
+    }
+    destroy_trigger = {
+        NOT = {
+            is_planet_class = pc_BA_auto_ringworld
+        }
+    }
+    triggered_desc = {
+        text = building_BA_ringworld_matrix_A_effect
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+        }
+        modifier = {
+            job_BA_ringworld_worker_add = 2
+        }
+    }
+    resources = {
+        category = BA_auto_buildings
+        cost = {
+            energy = 500
+            minerals = 1000
+            sr_keystone = 50
+            sr_eligma = 1
+        }
+        produces = {
+            unity = 240
+        }
+        upkeep = {
+            energy = 15
+            sr_keystone = 40
+        }
+    }
+}
+
+# 辅助扩散矩阵：制造石*40 --> 三科*240
+building_BA_ringworld_matrix_B = {
+    position_priority = 153
+    base_buildtime = 360
+    category = government
+    potential = {
+        owner = {
+            has_authority = auth_kivotos
+        }
+        is_planet_class = pc_BA_auto_ringworld
+    }
+    allow = {
+        BA_no_exclude_building = {
+            Building = building_BA_ringworld_factory_A
+        }
+    }
+    destroy_trigger = {
+        NOT = {
+            is_planet_class = pc_BA_auto_ringworld
+        }
+    }
+    triggered_desc = {
+        text = building_BA_ringworld_matrix_B_effect
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+        }
+        modifier = {
+            job_BA_ringworld_worker_add = 2
+        }
+    }
+    resources = {
+        category = BA_auto_buildings
+        cost = {
+            energy = 500
+            minerals = 1000
+            sr_keystone = 50
+            sr_eligma = 1
+        }
+        produces = {
+            physics_research = 240
+            society_research = 240
+            engineering_research = 240
+        }
+        upkeep = {
+            energy = 15
+            sr_keystone = 40
+        }
+    }
+}
+
 
 
 

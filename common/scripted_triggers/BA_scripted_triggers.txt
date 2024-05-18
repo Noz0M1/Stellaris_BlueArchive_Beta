@@ -304,6 +304,17 @@ Aris_is_commander = {
 	}
 }
 
+##### Buildings
+BA_no_exclude_building = {
+	custom_tooltip = {
+		fail_text = building_BA_ringworld_excluded
+		NOR = {
+			has_building = $Building$
+			has_building_construction = $Building$
+		}
+	}
+}
+
 ##### Megastructures
 #system scope
 has_no_BA_Industry_megastructure = {
@@ -341,7 +352,18 @@ Project_Cradle_planet_trigger = {
 	has_planet_flag = BA_Project_Cradle_target
 }
 
-##### CLUB
+##### Club
+BA_has_any_club_building = {
+	OR = {
+		has_active_building = building_BA_Game_development_department
+		has_active_building = building_BA_Engineering_club
+		has_active_building = building_BA_Veritas_server
+		has_active_building = building_BA_local_division
+		has_active_building = building_BA_Teaparty_branch
+	}
+}
+
+
 ##### Planet Killer Triggers
 #planet scope
 can_destroy_planet_with_Sweepers = {

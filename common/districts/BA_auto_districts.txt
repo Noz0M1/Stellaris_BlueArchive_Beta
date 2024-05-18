@@ -194,10 +194,60 @@ BA_districts_auto_drill = {
 #####################################
 #模块化环世界区划 数值有待商榷
 #####################################
+### 卫星区段
+# 住房+20 舒适度+40 稳定度+5；环世界值日生+10；自警团+3
+# 任何社团部室：存在时转为提供社团部员岗位
+BA_districts_ringworld_satellite = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = BA_auto_ringworld
+	}
+	potential = {
+		uses_district_set = BA_auto_ringworld
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_housing_add = 25
+		planet_amenities_add = 40
+		planet_stability_add = 5
+		job_BA_Vigilant_crew_add = 3
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			BA_has_any_club_building = no
+		}
+		job_BA_ringworld_worker_add = 10
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			BA_has_any_club_building = yes
+		}
+		job_BA_club_members_add = 10
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			energy = 500
+			minerals = 1000
+			sr_keystone = 50
+		}
+		upkeep = {
+			energy = 15
+		}
+	}
+}
+
+
 ### 铸模区段
-# 普通：青辉石*15 --> 制造石*30
+# 住房+5；环世界值日生+5
+# 基准产出：青辉石*15 --> 制造石*30
 # 制造石配送器：存在时改为 青辉石*20 --> 制造石*40
-# 透镜模块：存在时改为 120矿 --> 青辉石*20
+# 透镜铸造模块：存在时改为 矿*120 --> 青辉石*20
 BA_districts_ringworld_refinery = {
 	base_buildtime = 360
 	is_capped_by_modifier = no
@@ -207,25 +257,90 @@ BA_districts_ringworld_refinery = {
 	potential = {
 		uses_district_set = BA_auto_ringworld
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_housing_add = 5
+		job_BA_ringworld_worker_add = 5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			NOT = {
+				has_active_building = building_BA_ringworld_refinery_B
+			}
+		}
+		BA_auto_pop_sr_keystone_produces_add = 0.3
+		BA_auto_pop_sr_pyroxenes_upkeep_add = 0.15
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			has_active_building = building_BA_ringworld_refinery_B
+		}
+		BA_auto_pop_sr_pyroxenes_produces_add = 0.15
+		BA_auto_pop_minerals_upkeep_add = 0.9
+	}
 	resources = {
 		category = BA_auto_districts
 		cost = {
 			energy = 500
 			minerals = 1000
-			sr_keystone = 50
-		}
-		produces = {
-			sr_keystone = 30
+			alloys = 200
+			sr_keystone = 100
 		}
 		upkeep = {
 			energy = 15
+		}
+		produces = {
+			trigger = {
+				NOT = {
+					has_active_building = building_BA_ringworld_refinery_B
+				}
+			}
+			sr_keystone = 30
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					has_active_building = building_BA_ringworld_refinery_B
+				}
+			}
 			sr_pyroxenes = 15
+		}
+		produces = {
+			trigger = {
+				has_active_building = building_BA_ringworld_refinery_A
+			}
+			sr_keystone = 10
+		}
+		upkeep = {
+			trigger = {
+				has_active_building = building_BA_ringworld_refinery_A
+			}
+			sr_pyroxenes = 5
+		}
+		produces = {
+			trigger = {
+				has_active_building = building_BA_ringworld_refinery_B
+			}
+			sr_pyroxenes = 20
+		}
+		upkeep = {
+			trigger = {
+				has_active_building = building_BA_ringworld_refinery_B
+			}
+			minerals = 120
 		}
 	}
 }
 
-### 工厂区段 制造石-->合金
-# 精密制造区：青辉石-->消费品
+### 工厂区段
+# 住房+5；环世界值日生+5
+# 基准产出：制造石*30 --> 合金*60
+# 军需无人机网络：存在时改为 制造石*30 能量币*30 --> 合金*60 海军容量-每值日生+4
+# 精密制造区：存在时改为 矿*120 --> 消费品*150
 BA_districts_ringworld_factory = {
 	base_buildtime = 360
 	is_capped_by_modifier = no
@@ -235,25 +350,80 @@ BA_districts_ringworld_factory = {
 	potential = {
 		uses_district_set = BA_auto_ringworld
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_housing_add = 5
+		job_BA_ringworld_worker_add = 5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			NOT = {
+				has_active_building = building_BA_ringworld_factory_B
+			}
+		}
+		BA_auto_pop_alloys_produces_add = 1
+		BA_auto_pop_sr_keystone_upkeep_add = 0.5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			has_active_building = building_BA_ringworld_factory_B
+		}
+		BA_auto_pop_consumer_goods_produces_add = 1.5
+		BA_auto_pop_minerals_upkeep_add = 1.5
+	}
 	resources = {
 		category = BA_auto_districts
 		cost = {
 			energy = 500
 			minerals = 1000
-			sr_keystone = 50
-		}
-		produces = {
-			consumer_goods = 90
+			alloys = 200
+			sr_keystone = 100
 		}
 		upkeep = {
 			energy = 15
-			minerals = 90
+		}
+		produces = {
+			trigger = {
+				NOR = {
+					has_active_building = building_BA_ringworld_factory_B
+				}
+			}
+			alloys = 60
+		}
+		upkeep = {
+			trigger = {
+				NOR = {
+					has_active_building = building_BA_ringworld_factory_B
+				}
+			}
+			sr_keystone = 30
+		}
+		produces = {
+			trigger = {
+				has_active_building = building_BA_ringworld_factory_B
+			}
+			consumer_goods = 150
+		}
+		upkeep = {
+			trigger = {
+				has_active_building = building_BA_ringworld_factory_B
+			}
+			minerals = 120
 		}
 	}
+
 }
 
 ### 矩阵区段
-# 公用串流器
+# 住房+5；环世界值日生+5
+# 基准产出：青辉石*15 --> 三科*180
+# 辅助扩散矩阵：存在时改为 青辉石*20 --> 三科*240
+# 公用超光速串流器：存在时改为 青辉石*20 --> 凝聚力*240
+# 任何社团部室：存在时转为提供社团部员岗位
 BA_districts_ringworld_matrix = {
 	base_buildtime = 360
 	is_capped_by_modifier = no
@@ -263,19 +433,100 @@ BA_districts_ringworld_matrix = {
 	potential = {
 		uses_district_set = BA_auto_ringworld
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_housing_add = 5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			BA_has_any_club_building = no
+		}
+		job_BA_ringworld_worker_add = 5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			BA_has_any_club_building = yes
+		}
+		job_BA_club_members_add = 5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			NOT = {
+				has_active_building = building_BA_ringworld_matrix_B
+			}
+		}
+		BA_auto_pop_physics_research_produces_add = 1
+		BA_auto_pop_society_research_produces_add = 1
+		BA_auto_pop_engineering_research_produces_add = 1
+		BA_auto_pop_sr_pyroxenes_upkeep_add = 0.05
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			has_active_building = building_BA_ringworld_matrix_B
+		}
+		BA_auto_pop_unity_produces_add = 1
+		BA_auto_pop_sr_pyroxenes_upkeep_add = 0.05
+	}
 	resources = {
 		category = BA_auto_districts
 		cost = {
 			energy = 500
 			minerals = 1000
-			sr_keystone = 50
-		}
-		produces = {
-			sr_pyroxenes = 15
+			alloys = 200
+			sr_keystone = 100
 		}
 		upkeep = {
 			energy = 15
-			minerals = 90
+		}
+		produces = {
+			trigger = {
+				NOR = {
+					has_active_building = building_BA_ringworld_matrix_A
+					has_active_building = building_BA_ringworld_matrix_B
+				}
+			}
+			physics_research = 180
+			society_research = 180
+			engineering_research = 180
+		}
+		produces = {
+			trigger = {
+				has_active_building = building_BA_ringworld_matrix_A
+			}
+			physics_research = 240
+			society_research = 240
+			engineering_research = 240
+		}
+		produces = {
+			trigger = {
+				has_active_building = building_BA_ringworld_matrix_B
+			}
+			unity = 240
+		}
+		upkeep = {
+			trigger = {
+				NOR = {
+					has_active_building = building_BA_ringworld_matrix_A
+					has_active_building = building_BA_ringworld_matrix_B
+				}
+			}
+			sr_pyroxenes = 15
+		}
+		upkeep = {
+			trigger = {
+				OR = {
+					has_active_building = building_BA_ringworld_matrix_A
+					has_active_building = building_BA_ringworld_matrix_B
+				}
+			}
+			sr_pyroxenes = 20
 		}
 	}
 }
+

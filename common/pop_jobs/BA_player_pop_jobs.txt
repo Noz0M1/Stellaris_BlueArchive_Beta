@@ -351,7 +351,7 @@ BA_keystone_foundry = {
 		country_naval_cap_add = 8
 	}
 	weight = {
-		weight = @specialist_job_weight		# Fairly important job
+		weight = @specialist_job_weight
 		mult = value:job_weights_modifier|JOB|foundry|RESOURCE|alloys|
 		modifier = {
 			factor = 5
@@ -979,7 +979,7 @@ BA_scavenger = {
 #######################
 ##	  居住站&环世界
 #######################
-### 值日生
+### 居住站值日生
 #基础：
 BA_student_on_duty = {
 	category = worker
@@ -1001,7 +1001,7 @@ BA_student_on_duty = {
 		}
 	}
 	resources = {
-		category = BA_crew_pop
+		category = BA_auto_pop
 		produces = {
 			unity = 1
 			physics_research = 1
@@ -1030,3 +1030,37 @@ BA_student_on_duty = {
 	}
 }
 
+### 环世界值日生
+BA_ringworld_worker = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		is_kivotos = yes
+	}
+	resources = {
+		category = BA_auto_pop
+	}
+	triggered_country_modifier = {
+		potential = {
+			planet = {
+				has_active_building = building_BA_ringworld_factory_A
+			}
+		}
+		country_naval_cap_add = 4
+	}
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 3
+			has_job = BA_ringworld_worker
+		}
+	}
+}

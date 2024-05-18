@@ -89,6 +89,21 @@ BA_flex_pop = {
 	modifier_category = pop
 }
 
+##### 自动化设备操作者
+BA_auto_pop = {
+	icon = job_BA_ringworld_worker
+	parent = planet_jobs
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
 ##### 行星特征
 BA_museum = {
 	use_for_ai_budget = no
