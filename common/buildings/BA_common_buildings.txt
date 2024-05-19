@@ -173,7 +173,7 @@ building_BA_keystone_foundry_2 = {
 ### 青辉石建造中心 
 # 青辉石生产员+1
 building_BA_pyroxenes_1 = {
-	position_priority = 151
+	position_priority = 200
 	base_buildtime = 360
 	category = manufacturing
 	potential = {
@@ -216,7 +216,7 @@ building_BA_pyroxenes_1 = {
 ### 规模化青辉石制造中心
 # 青辉石生产员+3
 building_BA_pyroxenes_2 = {
-	position_priority = 150
+	position_priority = 201
 	base_buildtime = 480
 	can_build = no
 	category = manufacturing
@@ -259,7 +259,7 @@ building_BA_pyroxenes_2 = {
 ### 制造石制造机
 # 1青辉石 -> 2制造石
 building_BA_keystone_1 = {
-	position_priority = 153
+	position_priority = 202
 	base_buildtime = 360
 	category = manufacturing
 	potential = {
@@ -314,7 +314,7 @@ building_BA_keystone_1 = {
 # 制造机维护员+1
 # 3青辉石 -> 6制造石
 building_BA_keystone_2 = {
-	position_priority = 152
+	position_priority = 203
 	base_buildtime = 480
 	can_build = no
 	category = manufacturing
@@ -373,7 +373,7 @@ building_BA_keystone_2 = {
 ######   暗物质   ######
 #暗物质浓缩机 无岗位 20电10青辉石 -> 5暗物质
 building_BA_dark_matter_concentrator_1 = {
-	position_priority = 156
+	position_priority = 300
 	base_buildtime = 480
 	category = manufacturing
 	potential = {
@@ -416,7 +416,7 @@ building_BA_dark_matter_concentrator_1 = {
 ######  稀有资源  ######
 #稀有资源集中生产中心 10电5青辉石->2三种稀有资源
 building_BA_rare_center_1 = {
-	position_priority = 155
+	position_priority = 302
 	base_buildtime = 360
 	category = manufacturing
 	potential = {
