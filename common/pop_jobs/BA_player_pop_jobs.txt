@@ -109,14 +109,27 @@ BA_Vigilant_crew = {
 			consumer_goods = 7
 		}
 	}
-	planet_modifier = {
+	triggered_planet_modifier = {
 		planet_stability_add = 4
 	}
-	pop_modifier = {
+	triggered_pop_modifier = {
+		potential = {
+			exists = owner
+		}
 		pop_defense_armies_add = 2
 	}
 	triggered_pop_modifier = {
 		potential = {
+			exists = owner
+			planet = {
+				has_deposit = d_fade_Sanctum
+			}
+		}
+		pop_defense_armies_add = 4
+	}
+	triggered_pop_modifier = {
+		potential = {
+			exists = owner
 			owner = {
 				has_tradition = tr_kivotos_student_arms
 			}

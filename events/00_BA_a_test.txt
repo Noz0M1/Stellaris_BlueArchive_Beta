@@ -42,7 +42,7 @@ country_event = {
 			}
 			create_country = {
 				name = "NAME_Unnamed_enemy_country"
-				type = faction
+				type = Fade_Sanctum
 				ignore_initial_colony_error = yes
 				species = event_target:BA_Unnamed_enemy_species
 				ethos = {
@@ -212,8 +212,10 @@ country_event = {
 					kill_pop = yes
 				}
 				set_owner = event_target:BA_Unnamed_enemy_country
+				add_building = building_BA_fade_Sanctum_center
+				remove_building = building_BA_Schale_office
 				while = {
-					count = 8
+					count = 28
 					create_pop = {
 						species = event_target:BA_Unnamed_enemy_species
 						effect = {
@@ -315,24 +317,13 @@ planet_event = {
 		}
 	}
 	immediate = {
-		planet_event = {
-			id = BA_origin.2004
-			days = 30
-		}
-		if = {
-			limit = {
-				num_pops < 8
-			}
-			every_galaxy_pop = {
-				limit = {
-					is_species = "NAME_Unnamed_enemy_species"
-					owner = {
-						NOT = {
-							has_country_flag = BA_Unnamed_enemy
-						}
-					}
+		while = {
+			count = 8
+			create_pop = {
+				species = event_target:BA_Unnamed_enemy_species
+				effect = {
+					set_pop_flag = BA_Unnamed_enemy_pop
 				}
-				kill_pop = yes
 			}
 		}
 	}
@@ -466,12 +457,21 @@ country_event = {
 		name = BA_origin.2052.next
 		fromfrom = {
 			hidden_effect = {
+				while = {
+					count = 4
+					create_pop = {
+						species = root.owner_main_species
+					}
+				}
 				every_owned_pop = {
 					limit = {
 						has_pop_flag = BA_Unnamed_enemy_pop
 					}
-					change_species = root
+					kill_pop = yes
 				}
+				add_district = BA_districts_dome
+				add_district = BA_districts_dome
+				check_planet_employment = yes
 				planet_event = {
 					id = BA_origin.2055
 					days = 180
@@ -549,6 +549,7 @@ planet_event = {
 		}
 	}
 	immediate = {
+		check_planet_employment = yes
 		remove_planet_flag = BA_fade_Sanctum
 		owner = {
 			remove_country_flag = BA_origin_Unnamed_starting_engaged_2
@@ -897,8 +898,7 @@ country_event = {
 				add_deposit = d_broken_power_station				#千年发电厂
 				add_deposit = d_broken_desert_mine				#沙漠矿区
 				add_deposit = d_Greenhouse_farms				#赤冬温室农场（只是因为没有粮食区划所以拉来凑数的）
-				add_building = building_BA_Schale_office				#夏莱建筑
-				remove_building = building_commercial_zone				#清除旧建筑 下同
+				remove_building = building_commercial_zone				#清除旧建筑
 				remove_building = building_research_lab_1
 				remove_building = building_bureaucratic_1
 				remove_building = building_temple
@@ -918,6 +918,7 @@ country_event = {
 						}
 					}
 				}
+				#add_building = building_BA_fade_Sanctum_center
 				while = {
 					count = 12
 					create_army = {

@@ -244,3 +244,22 @@ BA_Sweeper_refugees = {
 }
 
 ### 虚妄圣库姆特
+BA_fade_Sanctum_pop = {
+    icon = soldier
+    category = sweeper_pop
+    is_capped_by_modifier = no
+    possible_pre_triggers = {
+        has_owner = yes
+    }
+    possible = {
+        planet = {
+            exists = owner
+        }
+        species = {
+            has_species_flag = BA_Unnamed_enemy_species
+        }
+    }
+    weight = {
+        base = 80000
+    }
+}

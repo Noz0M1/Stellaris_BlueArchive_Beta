@@ -24,6 +24,30 @@ Shittem_communication = {
 	}
 }
 
+Fade_Sanctum = {
+	playable = no
+	observable = no
+	ai = {
+		enabled = no
+	}
+	faction = {
+		hostile = yes
+		needs_border_access = no
+		generate_borders = no
+		needs_colony = no
+		auto_delete = no
+	}
+	modules = {
+		#standard_event_module = {}
+		#standard_economy_module = {}
+		#standard_expansion_module = {}
+		#standard_species_rights_module = {}
+		exclusive_diplomacy_module = { # Nothing is allowed, but we need this for relationships.
+			contact_rule = on_action_only
+		}
+	}
+}
+
 Aris_mid = {
 	mid_game_crisis = yes
 	scaled_difficulty_bonuses = 1
