@@ -626,7 +626,7 @@ BA_flexible_workers = {
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
 	}
 	weight = {
-		weight = 1
+		weight = 0.01
 	}
 }
 
@@ -1055,9 +1055,6 @@ BA_ringworld_worker = {
 		is_sapient = yes
 	}
 	possible_precalc = can_fill_specialist_job
-	possible = {
-		is_kivotos = yes
-	}
 	resources = {
 		category = BA_auto_pop
 	}

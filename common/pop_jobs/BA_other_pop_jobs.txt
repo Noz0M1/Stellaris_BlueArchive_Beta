@@ -15,9 +15,6 @@ BA_pyroxenes_maker = {
         is_sapient = yes
     }
     possible_precalc = can_fill_specialist_job
-    possible = {
-        is_kivotos = yes
-    }
     resources = {
         category = planet_metallurgists
         produces = {
@@ -88,9 +85,6 @@ BA_keystone_maintenance_staff = {
         is_sapient = yes
     }
     possible_precalc = can_fill_specialist_job
-    possible = {
-        is_kivotos = yes
-    }
     resources = {
         category = planet_metallurgists
         produces = {
