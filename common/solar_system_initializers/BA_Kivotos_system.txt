@@ -1,6 +1,6 @@
 BA_Kivotos_sys = {
 	name = "sys.Kivotos.name"
-	class = sc_m_giant
+	class = sc_k
 	usage = custom_empire
 	usage_odds = 0
 	flags = {
@@ -8,7 +8,7 @@ BA_Kivotos_sys = {
 	}
 	planet = {
 		name = "sys.Kivotos.stellar.name"
-		class = pc_m_giant_star
+		class = pc_k_star
 		flags = {
 			BA_Kivotos_S_flag
 		}
@@ -158,7 +158,7 @@ BA_Kivotos_sys = {
 
 BA_Kivotos_habitat_sys = {
 	name = "sys.Kivotos.name"
-	class = sc_m_giant
+	class = sc_k
 	usage = origin
 	usage_odds = 0
 	flags = {
@@ -167,7 +167,7 @@ BA_Kivotos_habitat_sys = {
 	}
 	planet = {
 		name = "sys.Kivotos.stellar.name"
-		class = pc_m_giant_star
+		class = pc_k_star
 		flags = {
 			BA_Kivotos_S_flag
 		}
