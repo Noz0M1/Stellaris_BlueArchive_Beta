@@ -1,5 +1,4 @@
 @club_room_time = 180
-#############   社团建筑   #############
 ### 夏莱办公室
 #基础：+1社团部员岗位 非学园都市星球每10人口+1社团部员岗位
 building_BA_Schale_office = {
@@ -15,6 +14,14 @@ building_BA_Schale_office = {
 	}
 	can_be_disabled = no
 	can_be_ruined = no
+	destroy_trigger = {
+		planet = {
+			is_capital = yes
+		}
+	}
+	convert_to = {
+		building_BA_Locker_room
+	}
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -73,6 +80,86 @@ building_BA_Schale_office = {
 	}
 }
 
+building_BA_Locker_room = {
+	position_priority = 21
+	base_buildtime = @club_room_time
+	empire_limit = 1
+	category = government
+	icon = Locker_room
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	can_be_disabled = no
+	can_be_ruined = no
+	destroy_trigger = {
+		planet = {
+			is_capital = no
+		}
+	}
+	convert_to = {
+		building_BA_Schale_office
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			pop_government_ethic_attraction = 1
+			planet_amenities_add = 10
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			OR = {
+				AND = {
+					is_planet_class = pc_BA_auto_ringworld
+					BA_has_any_club_building = yes
+				}
+				NOR = {
+					is_planet_class = pc_BA_auto_ringworld
+					is_planet_class = pc_BA_auto_ringworld
+				}
+			}
+		}
+		job_BA_club_members_add = 1
+		job_BA_club_members_per_pop = 0.05
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			is_planet_class = pc_BA_auto_ringworld
+			BA_has_any_club_building = no
+		}
+		job_BA_ringworld_worker_add = 2
+		job_BA_ringworld_worker_per_pop = 0.1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			planet = {
+				NOR = {
+					is_planet_class = pc_nuked
+				}
+			}
+		}
+		pop_environment_tolerance = 0.2
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			sr_eligma = 60
+		}
+		upkeep = {
+			consumer_goods = 1
+			energy = 1
+		}
+	}
+}
+
+#############   社团建筑   #############
 #游戏开发部 +2/+5社团部员
 building_BA_Game_development_department = {
 	base_buildtime = @club_room_time
