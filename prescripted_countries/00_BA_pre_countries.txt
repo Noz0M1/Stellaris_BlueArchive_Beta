@@ -56,7 +56,7 @@ BA_ETO = {
 		portrait = BA_leader_120
 		ruler_title = scripted_student_federal_president
 		ruler_title_female = scripted_student_federal_president
-		trait = "trait_ruler_warlike"
+		trait = "leader_special_120"
 		leader_class = commander
 		texture = 0
 	}
@@ -125,11 +125,11 @@ BA_NPA = {
 	ruler = {
 		gender = female
 		name = "NAME_Atsuko"
-		portrait = "BA_136"
+		portrait = BA_leader_012
 		ruler_title = scripted_student_federal_president
 		ruler_title_female = scripted_student_federal_president
 		leader_class = commander
-		trait = leader_special_136
+		trait = leader_special_012
 		texture = 0
 	}
 	spawn_as_fallen = no
@@ -198,11 +198,11 @@ BA_DUU = {
 	ruler = {
 		gender = female
 		name = "NAME_Yuuka"
-		portrait = "BA_76"
+		portrait = BA_leader_092
 		ruler_title = scripted_student_federal_president
 		ruler_title_female = scripted_student_federal_president
 		leader_class = scientist
-		trait = leader_special_076
+		trait = leader_special_092
 		texture = 0
 	}
 	spawn_as_fallen = no

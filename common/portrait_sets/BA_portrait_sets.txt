@@ -1,7 +1,10 @@
 Schale_Set = {
     species_class = Schale
     portraits = {
-        "Schale"
+        Schale
+    }
+    uplifted_portraits = {
+        Schale
     }
     non_randomized_portraits = {
         portraits = {
@@ -15,6 +18,9 @@ Aris_Set = {
     portraits = {
         Aris
     }
+    uplifted_portraits = {
+        Aris
+    }
     # These should not be used for randomly generated species
     non_randomized_portraits = {
         portraits = {
@@ -26,7 +32,10 @@ Aris_Set = {
 Schale_pr_Set = {
     species_class = Schale
     portraits = {
-        "Schale_pr"
+        Schale_pr
+    }
+    uplifted_portraits = {
+        Schale_pr
     }
     # These should not be used for randomly generated species
     non_randomized_portraits = {

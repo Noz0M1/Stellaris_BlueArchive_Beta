@@ -1,7 +1,6 @@
 #移除特殊特质 leader
 BA_remove_sp_trait = {
 	optimize_memory
-	#remove_trait = leader_trait_scientist_Eimi
 	# TODO:重命名特质
 }
 
@@ -91,10 +90,8 @@ BA_iterate_rename_flag = {
 				has_leader_flag = BA_rename_target
 			}
 			remove_leader_flag = BA_rename_target
-			#检查命名标志
-			BA_check_rename_flag_envoy = yes
-			#按命名标志命名
-			BA_rename_leader_envoy = yes
+			#特使专用处理
+			BA_rename_envoy = yes
 		}
 	}
 }
@@ -134,4 +131,10 @@ BA_event_leader_replace = {
 			BA_rename_leader = yes
 		}
 	}
+}
+
+#特使专用处理
+BA_rename_envoy= {
+	change_leader_portrait = BA_carefree
+	set_name = BA_envoy
 }

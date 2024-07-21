@@ -1,0 +1,137 @@
+#移除特殊特质 leader
+BA_remove_sp_trait = {
+	optimize_memory
+	#remove_trait = leader_trait_scientist_Eimi
+	# TODO:重命名特质
+}
+
+#为所有领袖施加检测印记
+BA_set_rename_flag = {
+	every_owned_leader = {
+		limit = {
+			species = {
+				BA_has_halo_organic = yes
+			}
+		}
+		set_leader_flag = BA_rename_target
+	}
+	every_pool_leader = {
+		limit = {
+			species = {
+				BA_has_halo_organic = yes
+			}
+		}
+		set_leader_flag = BA_rename_target
+	}
+	every_envoy = {
+		limit = {
+			species = {
+				BA_has_halo_organic = yes
+			}
+		}
+		set_leader_flag = BA_rename_target
+	}
+	# 重命名豁免
+	every_owned_leader = {
+		limit = {
+			OR = {
+				is_same_value = owner.ruler
+				has_leader_flag = star_oath_ruler
+			}
+		}
+		remove_leader_flag = BA_rename_target
+	}
+}
+
+#遍历所有领袖，执行重命名 country
+BA_iterate_rename_flag = {
+	optimize_memory
+	while = {
+		limit = {
+			any_owned_leader = {
+				has_leader_flag = BA_rename_target
+			}
+		}
+		random_owned_leader = {
+			limit = {
+				has_leader_flag = BA_rename_target
+			}
+			remove_leader_flag = BA_rename_target
+			#检查命名标志
+			BA_check_rename_flag = yes
+			#按命名标志命名
+			BA_rename_leader = yes
+		}
+	}
+	while = {
+		limit = {
+			any_pool_leader = {
+				has_leader_flag = BA_rename_target
+			}
+		}
+		random_pool_leader = {
+			limit = {
+				has_leader_flag = BA_rename_target
+			}
+			remove_leader_flag = BA_rename_target
+			#检查命名标志
+			BA_check_rename_flag = yes
+			#按命名标志命名
+			BA_rename_leader = yes
+		}
+	}
+	while = {
+		limit = {
+			any_envoy = {
+				has_leader_flag = BA_rename_target
+			}
+		}
+		random_envoy = {
+			limit = {
+				has_leader_flag = BA_rename_target
+			}
+			remove_leader_flag = BA_rename_target
+			#检查命名标志
+			BA_check_rename_flag_envoy = yes
+			#按命名标志命名
+			BA_rename_leader_envoy = yes
+		}
+	}
+}
+
+#生成事件领袖时，为重复的领袖更名 leader
+BA_event_leader_replace = {
+	set_leader_flag = $Leader_flag$
+	owner = {
+		every_owned_leader = {
+			limit = {
+				has_leader_flag = $Leader_flag$
+				NOT = {
+					is_same_value = prevprev
+				}
+			}
+			remove_leader_flag = $Leader_flag$
+			BA_remove_sp_trait = yes
+			BA_check_rename_flag = yes
+			BA_rename_leader = yes
+		}
+		every_pool_leader = {
+			limit = {
+				has_leader_flag = $Leader_flag$
+			}
+			remove_leader_flag = $Leader_flag$
+			BA_remove_sp_trait = yes
+			BA_check_rename_flag = yes
+			BA_rename_leader = yes
+		}
+		every_envoy = {
+			limit = {
+				has_leader_flag = $Leader_flag$
+			}
+			remove_leader_flag = $Leader_flag$
+			BA_remove_sp_trait = yes
+			BA_check_rename_flag = yes
+			BA_rename_leader = yes
+		}
+	}
+}
