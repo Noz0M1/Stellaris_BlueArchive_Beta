@@ -1131,8 +1131,8 @@ country_event = {
 country_event = {
 	id = BA_Shittem.1300
 	is_triggered_only = yes
-	title = BA_Shittem.1120.title
-	desc = BA_Shittem.1120.desc
+	title = BA_Shittem.1300.title
+	desc = BA_Shittem.1300.desc
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
@@ -1154,6 +1154,63 @@ country_event = {
 		name = BACK
 		default_hide_option = yes
 	}
+	option = {
+		name = BA_Shittem.1301.title
+		custom_tooltip = BA_Shittem.1301.tip
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.1301
+			}
+		}
+	}
+	option = {
+		name = BA_Shittem.1302.title
+		custom_tooltip = BA_Shittem.1302.tip
+		trigger = {
+			always = no
+		}
+	}
+	option = {
+		name = BA_Shittem.1303.title
+		custom_tooltip = BA_Shittem.1303.tip
+		trigger = {
+			always = no
+		}
+	}
+}
+
+
+country_event = {
+	id = BA_Shittem.1301
+	is_triggered_only = yes
+	title = BA_Shittem.1301.title
+	desc = BA_Shittem.1301.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0004
+		room = BA_03_room
+	}
+	trigger = {
+		NOT = {
+			has_country_flag = Communication_engaged
+		}
+	}
+	immediate = {
+		set_country_flag = Communication_engaged
+	}
+	after = {
+		remove_country_flag = Communication_engaged
+	}
+	option = {
+		name = BACK
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.1300
+			}
+		}
+	}
 	# TODO：随特殊领袖储备更新
 	#爱丽丝
 	option = {
@@ -1170,7 +1227,7 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = BA_Shittem.1301
+				id = BA_Shittem.1351
 			}
 		}
 	}
@@ -1189,7 +1246,7 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = BA_Shittem.1302
+				id = BA_Shittem.1352
 			}
 		}
 	}
@@ -1208,7 +1265,7 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = BA_Shittem.1303
+				id = BA_Shittem.1353
 			}
 		}
 	}
@@ -1227,7 +1284,7 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = BA_Shittem.1304
+				id = BA_Shittem.1354
 			}
 		}
 	}
@@ -1246,7 +1303,7 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = BA_Shittem.1305
+				id = BA_Shittem.1355
 			}
 		}
 	}
@@ -1265,7 +1322,7 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = BA_Shittem.1306
+				id = BA_Shittem.1356
 			}
 		}
 	}
@@ -1284,7 +1341,7 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = BA_Shittem.1307
+				id = BA_Shittem.1357
 			}
 		}
 	}
@@ -1305,7 +1362,7 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = BA_Shittem.1309
+				id = BA_Shittem.1359
 			}
 		}
 	}
@@ -1314,7 +1371,7 @@ country_event = {
 
 #爱丽丝
 country_event = {
-	id = BA_Shittem.1301
+	id = BA_Shittem.1351
 	is_triggered_only = yes
 	title = BA_communication.Aris.title
 	desc = BA_communication.Aris.desc
@@ -1367,7 +1424,7 @@ country_event = {
 
 #星野
 country_event = {
-	id = BA_Shittem.1302
+	id = BA_Shittem.1352
 	inline_script = {
 		script = Leader/SP_recruit
 		Leader = Hoshino
@@ -1397,7 +1454,7 @@ country_event = {
 
 #日奈
 country_event = {
-	id = BA_Shittem.1303
+	id = BA_Shittem.1353
 	inline_script = {
 		script = Leader/SP_recruit
 		Leader = Hina
@@ -1407,7 +1464,7 @@ country_event = {
 
 #未花
 country_event = {
-	id = BA_Shittem.1304
+	id = BA_Shittem.1354
 	inline_script = {
 		script = Leader/SP_recruit
 		Leader = Mika
@@ -1422,7 +1479,7 @@ country_event = {
 
 #优香
 country_event = {
-	id = BA_Shittem.1305
+	id = BA_Shittem.1355
 	inline_script = {
 		script = Leader/SP_recruit
 		Leader = Yuuka
@@ -1452,7 +1509,7 @@ country_event = {
 
 #亚津子
 country_event = {
-	id = BA_Shittem.1306
+	id = BA_Shittem.1356
 	inline_script = {
 		script = Leader/SP_recruit
 		Leader = Atsuko
@@ -1462,7 +1519,7 @@ country_event = {
 
 #纱织
 country_event = {
-	id = BA_Shittem.1307
+	id = BA_Shittem.1357
 	inline_script = {
 		script = Leader/SP_recruit
 		Leader = Saori
@@ -1473,7 +1530,7 @@ country_event = {
 #诺亚（电磁炮）
 #忧
 country_event = {
-	id = BA_Shittem.1309
+	id = BA_Shittem.1359
 	inline_script = {
 		script = Leader/SP_recruit
 		Leader = Ui
@@ -2851,7 +2908,7 @@ country_event = {
 	option = {
 		name = BA_Shittem.2005.go
 		country_event = {
-			id = BA_Shittem.1300
+			id = BA_Shittem.1301
 		}
 	}
 	option = {

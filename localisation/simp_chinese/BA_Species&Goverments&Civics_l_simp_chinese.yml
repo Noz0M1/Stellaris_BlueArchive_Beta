@@ -75,8 +75,10 @@
 #物种特质
  trait_test:0 "测试中"
  trait_test_desc:0 "测试中的机器人，目前还只是一批原型机。"
+ trait_test_effect:0 "无法产生§Y领袖§!"
  trait_test_finished:0 "姬器人核心"
  trait_test_finished_desc:0 "专门为姬器人设计的核心，安装后会产生一个模拟的光环。"
+ trait_test_finished_effect:0 "无法产生§Y领袖§!，除非通过§M领袖储备§!界面招募。"
 
  trait_pc_Schale_preference:0 "基沃托斯偏好"
  trait_pc_Schale_preference_desc:0 "§L她们的气候偏好是由亿万年来的进化、设计，或是人工基因操纵所决定的……吧？§!"
@@ -98,6 +100,7 @@
  trait_BA_grate_duty_desc: "优秀的值日轮班制度使得核心机构的运转变得顺畅了，顺带减轻了某人的工作量。"
  trait_BA_summer_star: "夏日之星"
  trait_BA_summer_star_desc: "夏日，大海！"
+ trait_BA_summer_star_tip: "领袖切换为§B泳装§!类别的换装时，不需要花费资源。"
  trait_BA_tactical_training:0 "战术训练"
  trait_BA_tactical_training_desc:0 "战术训练是基沃托斯的标准课程之一。"
  trait_BA_top_notchism:0 "顶配主义"

@@ -1,4 +1,28 @@
 ### ！此文件涉及原版修改
+# 领袖
+can_generate_leader_from_species = {
+	is_sapient = yes
+	OR = {
+		NAND = {
+			NOT = {
+				root = {
+					has_technology = "tech_synthetic_leaders"
+				}
+			}
+			has_trait = "trait_mechanical"
+		}
+		has_citizenship_type = {
+			type = citizenship_full
+			country = root
+		}
+	}
+	# BA
+	NOR = {
+		has_trait = trait_test
+		has_trait = trait_test_finished
+	}
+}
+
 # 分部
 can_build_branch_offices = {
 	custom_tooltip = {
@@ -203,7 +227,9 @@ can_take_hostile_actions = {
 	if = {
 		limit = {
 			ROOT = {
-				NOT = { has_policy_flag = first_contact_attack_allowed }
+				NOT = {
+					has_policy_flag = first_contact_attack_allowed
+				}
 			}
 			NOT = {
 				is_hostile = ROOT
@@ -230,7 +256,9 @@ can_take_hostile_actions = {
 	else_if = {
 		limit = {
 			AND = {
-				NOT = { has_country_flag = hostile_to_nomads }
+				NOT = {
+					has_country_flag = hostile_to_nomads
+				}
 				ROOT = {
 					is_country_type = nomad
 				}
@@ -260,7 +288,9 @@ can_take_hostile_actions = {
 	else_if = {
 		limit = {
 			is_primitive = yes
-			ROOT = { is_country_type = default }
+			ROOT = {
+				is_country_type = default
+			}
 			capital_scope = {
 				root = {
 					NOT = {
@@ -278,7 +308,11 @@ can_take_hostile_actions = {
 	}
 	else_if = {
 		limit = {
-			ROOT = { any_agreement = { agreement_preset = preset_satrapy } }
+			ROOT = {
+				any_agreement = {
+					agreement_preset = preset_satrapy
+				}
+			}
 			is_country_type = faction
 			root = {
 				any_owned_planet = {
@@ -297,7 +331,11 @@ can_take_hostile_actions = {
 	else_if = {
 		limit = {
 			exists = overlord
-			ROOT = { any_agreement = { agreement_preset = preset_satrapy } }
+			ROOT = {
+				any_agreement = {
+					agreement_preset = preset_satrapy
+				}
+			}
 		}
 		custom_tooltip = {
 			text = "CAN_TAKE_HOSTILE_ACTION_SATRAPY"
@@ -307,8 +345,14 @@ can_take_hostile_actions = {
 	else_if = {
 		limit = {
 			exists = overlord
-			overlord = { is_same_value = root }
-			ROOT = { any_agreement = { agreement_preset = preset_satrapy } }
+			overlord = {
+				is_same_value = root
+			}
+			ROOT = {
+				any_agreement = {
+					agreement_preset = preset_satrapy
+				}
+			}
 		}
 		custom_tooltip = {
 			text = "CAN_TAKE_HOSTILE_ACTION_OVERLORD"
