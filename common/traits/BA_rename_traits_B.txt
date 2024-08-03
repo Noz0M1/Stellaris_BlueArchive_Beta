@@ -248,10 +248,16 @@ leader_special_012 = {
 }
 
 #013 葛叶 雪山弥漫求命行
-leader_special_150 = {
+leader_special_013 = {
 	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y82.dds"
 	randomized = no
+	councilor_modifier = {
+		#内阁议程速度+400%，研究速度+100%，领袖经验获取+100%，领袖花费+12000%，领袖维护费+12000%
+		council_agenda_progress_speed = 4
+		all_technology_research_speed = 1
+		species_leader_exp_gain = 1
+	}
 	sector_modifier = {
 		#岗位生产的资源+50%，舰船建造速度+400%
 		planet_jobs_produces_mult = 0.5
@@ -269,11 +275,101 @@ leader_special_150 = {
 	sorting_priority = 998
 }
 
-#014 桐生桔梗 TODO
-#015 不破莲华 TODO
-#016 御稜名草 TODO
-#017 勘解由小路缘里 TODO
-#018 新 NG
+#014 桐生桔梗 罗网地天
+leader_special_014 = {
+	cost = 0
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y36.dds"
+	randomized = no
+	fleet_modifier = {
+		#舰载机速度+50%，舰载机攻击+50，舰船武器射程+20%
+		ship_weapon_range_mult = 0.2
+	}
+	leader_class = {
+		commander
+	}
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#015 不破莲华 热忱子弹
+leader_special_015 = {
+	cost = 0
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R05.dds"
+	randomized = no
+	fleet_modifier = {
+		#爆炸武器伤害+23%，爆炸物器射速+23%，爆炸武器射程+23%
+		weapon_type_explosive_weapon_damage_mult = 0.23
+		weapon_type_explosive_weapon_fire_rate_mult = 0.23
+		ship_weapon_range_mult = 0.23
+	}
+	leader_class = {
+		commander
+	}
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#016 御稜名草 冥想一击
+leader_special_016 = {
+	cost = 0
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
+	randomized = no
+	fleet_modifier = {
+		#能量武器伤害+300%。舰船武器射速-55%，舰船武器射程+25%
+		weapon_type_energy_weapon_damage_mult = 3
+		ship_weapon_range_mult = 0.25
+		ship_fire_rate_mult = -0.55
+	}
+	self_modifier = {
+		#领袖维护费+3000%
+		leaders_upkeep_mult = 30
+	}
+	leader_class = {
+		commander
+	}
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#017 勘解由小路缘里 樱花之舞
+leader_special_017 = {
+	cost = 0
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B83.dds"
+	randomized = no
+	# 星球总督
+	planet_modifier = {
+		#幸福度+10，凝聚力产出+6%，星球决议速度+50%
+		pop_happiness = 0.1
+		planet_jobs_unity_produces_mult = 0.1
+		planet_buildings_unity_produces_mult = 0.1
+		BA_auto_districts_unity_produces_mult = 0.1
+	}
+	leader_class = {
+		scientist
+	}
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#018 新 魑魅一座
+leader_special_018 = {
+	cost = 0
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
+	randomized = no
+	fleet_modifier = {
+		ship_disengage_chance_mult = 1
+		ship_emergency_ftl_min_days_mult = -0.8
+	}
+	self_modifier = {
+		leaders_upkeep_mult = -0.5
+	}
+	leader_class = {
+		commander
+	}
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
 #019 虞美人 NG
 #020 箭吹棕榈 NG
 #021 朝比奈菲娜 侠义燃烧
@@ -911,9 +1007,59 @@ leader_special_057 = {
 	sorting_priority = 998
 }
 
-#058 橘光明 TODO
-#059 橘希望 TODO
-#060 朝雾周防 TODO
+#058 橘光明 铁道双子
+leader_special_058 = {
+	cost = 0
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R33.dds"
+	randomized = no
+	sector_modifier = {
+		planet_stability_add = -5
+		planet_building_build_speed_mult = 0.75
+		planet_jobs_minerals_produces_mult = 0.25
+	}
+	leader_class = {
+		official
+	}
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#059 橘希望 铁道双子
+leader_special_059 = {
+	cost = 0
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R33.dds"
+	randomized = no
+	sector_modifier = {
+		planet_stability_add = -5
+		planet_building_build_speed_mult = 0.75
+		planet_jobs_minerals_produces_mult = 0.25
+	}
+	leader_class = {
+		official
+	}
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#060 朝雾周防 总署精英
+leader_special_060 = {
+	cost = 0
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R33.dds"
+	randomized = no
+	councilor_modifier = {
+		planet_building_build_speed_mult = 0.65
+	}
+	planet_modifier = {
+		planet_jobs_alloys_produces_mult = 0.35
+		planet_jobs_sr_pyroxenes_produces_mult = 0.35
+	}
+	leader_class = {
+		official
+	}
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
 #061 天见和香 镜相分析
 leader_special_061 = {
 	cost = 0
@@ -953,8 +1099,42 @@ leader_special_062 = {
 	sorting_priority = 998
 }
 
-#063 荒槇八云 TODO
-#064 三善贵音 TODO
+#063 荒槇八云 社长的营业微笑
+leader_special_063 = {
+	cost = 0
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
+	randomized = no
+	councilor_modifier = {
+		#自治区职员的产出+25%，自治区职员的维护费+25%
+		BA_staff_pop_produces_mult = 0.25
+		BA_staff_pop_upkeep_mult = 0.25
+	}
+	leader_class = {
+		official
+	}
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#064 三善贵音 会长的独到见解
+leader_special_064 = {
+	cost = 0
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
+	randomized = no
+	councilor_modifier = {
+		#自治区职员的社会学点数产出+0.5，社团部员的社会学点数产出+0.5，专家岗位维护费+10%
+		BA_staff_pop_society_research_produces_add = 0.5
+		BA_club_pop_society_research_produces_add = 0.5
+		BA_staff_pop_upkeep_mult = 0.1
+		BA_club_pop_upkeep_mult = 0.1
+	}
+	leader_class = {
+		official
+	}
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
 #065 佐城巴 冲锋号令
 leader_special_065 = {
 	cost = 0
@@ -1052,7 +1232,7 @@ leader_special_068 = {
 }
 
 #069 秋泉红叶 漫画爱好者
-leader_special_240 = {
+leader_special_069 = {
 	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y41.dds"
 	randomized = no
@@ -1068,7 +1248,7 @@ leader_special_240 = {
 }
 
 #070 姬木梅露 星海取材研究
-leader_special_241 = {
+leader_special_070 = {
 	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y03.dds"
 	randomized = no
@@ -1311,7 +1491,23 @@ leader_special_087 = {
 	sorting_priority = 998
 }
 
-#088 野正丽 TODO
+#088 野正丽 全力本垒打
+leader_special_088 = {
+	cost = 0
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
+	randomized = no
+	fleet_modifier = {
+		#舰船武器射程-80%，舰船武器伤害+240%
+		ship_weapon_range_mult = -0.8
+		ship_weapon_damage = 2.4
+	}
+	leader_class = {
+		commander
+	}
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
 #089 调月莉音 零熵决议
 leader_special_089 = {
 	cost = 0
@@ -1631,7 +1827,7 @@ leader_special_105 = {
 }
 
 #106 室笠朱音 沉默射击
-leader_special_083 = {
+leader_special_106 = {
 	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y38.dds"
 	randomized = no
@@ -1711,7 +1907,23 @@ leader_special_109 = {
 	sorting_priority = 998
 }
 
-#110 申谷廻 TODO
+#110 申谷廻 仙参禁药
+leader_special_110 = {
+	cost = 0
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R27.dds"
+	randomized = no
+	sector_modifier = {
+		planet_stability_add = -15
+		pop_growth_speed = 0.35
+	}
+	leader_class = {
+		official
+	}
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+
 #111 龙华妃咲 玄龙门的门主
 leader_special_111 = {
 	cost = 0
@@ -1773,7 +1985,7 @@ leader_special_114 = {
 }
 
 #115 浦和花子 课后安排
-leader_special_027 = {
+leader_special_115 = {
 	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B44.dds"
 	randomized = no
@@ -2356,10 +2568,98 @@ leader_special_143 = {
 	sorting_priority = 998
 }
 
-#144 胡桃 TODO
-#145 妮可 TODO
-#146 七度雪乃 TODO
-#147 音葵 TODO
+#144 胡桃 撞击冲锋实操
+leader_special_144 = {
+	cost = 0
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B34.dds"
+	randomized = no
+	fleet_modifier = {
+		#船体值+100％，护盾值+300％，装甲值+300％，闪避+35，舰船武器射程-75％
+		ship_hull_mult = 1
+		ship_shield_mult = 3
+		ship_armor_mult = 3
+		ship_evasion_add = 35
+		ship_weapon_range_mult = -0.75
+	}
+	leader_class = {
+		commander
+	}
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#145 妮可 后勤保障部署
+leader_special_145 = {
+	cost = 0
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y23.dds"
+	randomized = no
+	councilor_modifier = {
+		#护盾恢复+25％，船体恢复+25％，装甲恢复+25％
+		ship_shield_regen_add_perc = 0.25
+		ship_armor_regen_add_perc = 0.25
+		ship_hull_regen_add_perc = 0.25
+
+	}
+	fleet_modifier = {
+		#护盾恢复+25％，船体恢复+25％，装甲恢复+25％
+		ship_shield_regen_add_static = 1
+		ship_armor_regen_add_static = 1
+		ship_hull_regen_add_static = 1
+	}
+	leader_class = {
+		commander
+	}
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#146 七度雪乃 打击指挥中枢
+leader_special_146 = {
+	cost = 0
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R25.dds"
+	randomized = no
+	councilor_modifier = {
+		#舰船武器伤害+40％，舰船武器射速+25％，亚光速航速-8％，维护费+20%
+		ship_weapon_damage = 0.4
+		ship_fire_rate_mult = 0.25
+		ship_speed_mult = -0.08
+		ships_upkeep_mult = 0.2
+	}
+	fleet_modifier = {
+		ship_weapon_damage = 0.4
+		ship_fire_rate_mult = 0.25
+		ship_speed_mult = -0.08
+		ships_upkeep_mult = 0.2
+	}
+	leader_class = {
+		commander
+	}
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#147 音葵 撕裂阻击学说
+leader_special_147 = {
+	cost = 0
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B17.dds"
+	randomized = no
+	fleet_modifier = {
+		#船体值-90％，护盾恢复速度-80％，装甲回复速度-100％，双穿+50%，舰船武器伤害+150％，舰船武器射程+50％
+		ship_shield_penetration_add = 50
+		ship_armor_penetration_add = 50
+		ship_weapon_damage = 1.5
+		ship_weapon_range_mult = 0.5
+		ship_hull_mult = -0.9
+		ship_shield_regen_add_perc = -0.8
+		ship_armor_regen_add_perc = -0.8
+	}
+	leader_class = {
+		commander
+	}
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
 #148 月雪宫子:RABBIT1：正面纲领
 leader_special_148 = {
 	cost = 0

@@ -6,12 +6,12 @@ BA_rename_leader = {
 		}
 		BA_set_name = yes
 	}
-	# if = {
-	# 	limit = {
-	# 		has_global_flag = BA_leader_rename_trait_activated
-	# 	}
-	# 	BA_add_club_trait = yes
-	# }
+	if = {
+		limit = {
+			has_global_flag = BA_leader_rename_trait_activated
+		}
+		BA_add_club_trait = yes
+	}
 }
 
 #将领袖按命名标志重命名 001~159
@@ -829,40 +829,40 @@ BA_add_club_trait = {
 			add_trait = leader_club_001
 		}
 		leader_BA_003 = {
-			add_trait = leader_club_001
+			add_trait = leader_club_002
 		}
 		leader_BA_004 = {
-			add_trait = leader_club_001
+			add_trait = leader_club_002
 		}
 		leader_BA_005 = {
-			add_trait = leader_club_003
+			add_trait = leader_club_002
 		}
 		leader_BA_006 = {
-			add_trait = leader_club_003
+			add_trait = leader_club_002
 		}
 		leader_BA_007 = {
-			add_trait = leader_club_053
+			add_trait = leader_club_002
 		}
-		leader_BA_008 = {
-			add_trait = leader_club_005
-		}
+		# leader_BA_008 = {
+		# 	add_trait = leader_club_002
+		# }
 		leader_BA_009 = {
-			add_trait = leader_club_005
+			add_trait = leader_club_003
 		}
 		leader_BA_010 = {
-			add_trait = leader_club_005
+			add_trait = leader_club_003
 		}
 		leader_BA_011 = {
-			add_trait = leader_club_005
+			add_trait = leader_club_003
 		}
 		leader_BA_012 = {
-			add_trait = leader_club_005
+			add_trait = leader_club_003
 		}
 		leader_BA_013 = {
-			add_trait = leader_club_054
+			add_trait = leader_club_004
 		}
 		leader_BA_014 = {
-			add_trait = leader_club_054
+			add_trait = leader_club_004
 		}
 		leader_BA_015 = {
 			add_trait = leader_club_004
@@ -873,125 +873,125 @@ BA_add_club_trait = {
 		leader_BA_017 = {
 			add_trait = leader_club_004
 		}
-		leader_BA_018 = {
-			add_trait = leader_club_007
-		}
-		leader_BA_019 = {
-			add_trait = leader_club_007
-		}
-		leader_BA_020 = {
-			add_trait = leader_club_007
-		}
+		# leader_BA_018 = {
+		# 	add_trait = leader_club_007
+		# }
+		# leader_BA_019 = {
+		# 	add_trait = leader_club_007
+		# }
+		# leader_BA_020 = {
+		# 	add_trait = leader_club_007
+		# }
 		leader_BA_021 = {
 			add_trait = leader_club_007
 		}
 		leader_BA_022 = {
-			add_trait = leader_club_012
+			add_trait = leader_club_007
 		}
 		leader_BA_023 = {
-			add_trait = leader_club_012
+			add_trait = leader_club_007
 		}
 		leader_BA_024 = {
-			add_trait = leader_club_012
+			add_trait = leader_club_008
 		}
 		leader_BA_025 = {
-			add_trait = leader_club_012
+			add_trait = leader_club_009
 		}
 		leader_BA_026 = {
-			add_trait = leader_club_012
+			add_trait = leader_club_009
 		}
 		leader_BA_027 = {
-			add_trait = leader_club_012
+			add_trait = leader_club_009
 		}
 		leader_BA_028 = {
-			add_trait = leader_club_008
+			add_trait = leader_club_010
 		}
 		leader_BA_029 = {
-			add_trait = leader_club_008
+			add_trait = leader_club_010
 		}
 		leader_BA_030 = {
-			add_trait = leader_club_008
+			add_trait = leader_club_010
 		}
 		leader_BA_031 = {
-			add_trait = leader_club_008
+			add_trait = leader_club_011
 		}
 		leader_BA_032 = {
-			add_trait = leader_club_008
+			add_trait = leader_club_011
 		}
 		leader_BA_033 = {
-			add_trait = leader_club_016
+			add_trait = leader_club_011
 		}
 		leader_BA_034 = {
-			add_trait = leader_club_016
+			add_trait = leader_club_012
 		}
 		leader_BA_035 = {
-			add_trait = leader_club_016
+			add_trait = leader_club_012
 		}
 		leader_BA_036 = {
-			add_trait = leader_club_014
+			add_trait = leader_club_012
 		}
 		leader_BA_037 = {
-			add_trait = leader_club_014
+			add_trait = leader_club_012
 		}
 		leader_BA_038 = {
-			add_trait = leader_club_015
+			add_trait = leader_club_013
 		}
 		leader_BA_039 = {
-			add_trait = leader_club_015
+			add_trait = leader_club_013
 		}
 		leader_BA_040 = {
-			add_trait = leader_club_015
+			add_trait = leader_club_013
 		}
 		leader_BA_041 = {
-			add_trait = leader_club_014
+			add_trait = leader_club_013
 		}
 		leader_BA_042 = {
-			add_trait = leader_club_017
+			add_trait = leader_club_014
 		}
 		leader_BA_043 = {
-			add_trait = leader_club_017
+			add_trait = leader_club_014
 		}
 		leader_BA_044 = {
-			add_trait = leader_club_011
+			add_trait = leader_club_015
 		}
 		leader_BA_045 = {
 			add_trait = leader_club_016
 		}
 		leader_BA_046 = {
-			add_trait = leader_club_019
+			add_trait = leader_club_015
 		}
 		leader_BA_047 = {
-			add_trait = leader_club_019
+			add_trait = leader_club_017
 		}
 		leader_BA_048 = {
-			add_trait = leader_club_019
+			add_trait = leader_club_017
 		}
 		leader_BA_049 = {
-			add_trait = leader_club_019
+			add_trait = leader_club_017
 		}
 		leader_BA_050 = {
-			add_trait = leader_club_019
+			add_trait = leader_club_017
 		}
 		leader_BA_051 = {
-			add_trait = leader_club_019
+			add_trait = leader_club_018
 		}
 		leader_BA_052 = {
-			add_trait = leader_club_019
+			add_trait = leader_club_018
 		}
 		leader_BA_053 = {
-			add_trait = leader_club_019
+			add_trait = leader_club_018
 		}
 		leader_BA_054 = {
-			add_trait = leader_club_026
+			add_trait = leader_club_018
 		}
 		leader_BA_055 = {
-			add_trait = leader_club_027
+			add_trait = leader_club_018
 		}
 		leader_BA_056 = {
-			add_trait = leader_club_020
+			add_trait = leader_club_019
 		}
 		leader_BA_057 = {
-			add_trait = leader_club_020
+			add_trait = leader_club_019
 		}
 		leader_BA_058 = {
 			add_trait = leader_club_020
@@ -1003,127 +1003,127 @@ BA_add_club_trait = {
 			add_trait = leader_club_020
 		}
 		leader_BA_061 = {
-			add_trait = leader_club_020
+			add_trait = leader_club_022
 		}
 		leader_BA_062 = {
-			add_trait = leader_club_020
+			add_trait = leader_club_022
 		}
 		leader_BA_063 = {
-			add_trait = leader_club_020
+			add_trait = leader_club_023
 		}
 		leader_BA_064 = {
-			add_trait = leader_club_018
+			add_trait = leader_club_023
 		}
 		leader_BA_065 = {
-			add_trait = leader_club_018
-		}
-		leader_BA_066 = {
-			add_trait = leader_club_018
-		}
-		leader_BA_067 = {
-			add_trait = leader_club_018
-		}
-		leader_BA_068 = {
-			add_trait = leader_club_021
-		}
-		leader_BA_069 = {
-			add_trait = leader_club_021
-		}
-		leader_BA_070 = {
-			add_trait = leader_club_021
-		}
-		leader_BA_071 = {
-			add_trait = leader_club_021
-		}
-		leader_BA_072 = {
-			add_trait = leader_club_021
-		}
-		leader_BA_073 = {
 			add_trait = leader_club_024
 		}
-		leader_BA_074 = {
+		leader_BA_066 = {
+			add_trait = leader_club_024
+		}
+		leader_BA_067 = {
+			add_trait = leader_club_024
+		}
+		leader_BA_068 = {
 			add_trait = leader_club_025
 		}
+		leader_BA_069 = {
+			add_trait = leader_club_026
+		}
+		leader_BA_070 = {
+			add_trait = leader_club_026
+		}
+		# leader_BA_071 = {
+		# 	add_trait = leader_club_027
+		# }
+		# leader_BA_072 = {
+		# 	add_trait = leader_club_027
+		# }
+		# leader_BA_073 = {
+		# 	add_trait = leader_club_027
+		# }
+		# leader_BA_074 = {
+		# 	add_trait = leader_club_028
+		# }
 		leader_BA_075 = {
-			add_trait = leader_club_027
+			add_trait = leader_club_028
 		}
 		leader_BA_076 = {
 			add_trait = leader_club_028
 		}
 		leader_BA_077 = {
-			add_trait = leader_club_055
-		}
-		leader_BA_078 = {
-			add_trait = leader_club_055
-		}
-		leader_BA_079 = {
-			add_trait = leader_club_055
-		}
-		leader_BA_080 = {
-			add_trait = leader_club_055
-		}
-		leader_BA_081 = {
-			add_trait = leader_club_033
-		}
-		leader_BA_082 = {
-			add_trait = leader_club_034
-		}
-		leader_BA_083 = {
-			add_trait = leader_club_033
-		}
-		leader_BA_084 = {
-			add_trait = leader_club_034
-		}
-		leader_BA_085 = {
-			add_trait = leader_club_033
-		}
-		leader_BA_086 = {
-			add_trait = leader_club_034
-		}
-		leader_BA_087 = {
-			add_trait = leader_club_033
-		}
-		leader_BA_088 = {
-			add_trait = leader_club_034
-		}
-		leader_BA_089 = {
 			add_trait = leader_club_028
 		}
-		leader_BA_090 = {
-			add_trait = leader_club_031
+		leader_BA_078 = {
+			add_trait = leader_club_028
 		}
-		leader_BA_091 = {
+		leader_BA_079 = {
+			add_trait = leader_club_028
+		}
+		leader_BA_080 = {
+			add_trait = leader_club_028
+		}
+		leader_BA_081 = {
+			add_trait = leader_club_028
+		}
+		leader_BA_082 = {
 			add_trait = leader_club_029
 		}
-		leader_BA_092 = {
+		leader_BA_083 = {
 			add_trait = leader_club_029
 		}
-		leader_BA_093 = {
-			add_trait = leader_club_031
-		}
-		leader_BA_094 = {
+		leader_BA_084 = {
 			add_trait = leader_club_029
 		}
-		leader_BA_095 = {
+		leader_BA_085 = {
 			add_trait = leader_club_030
 		}
-		leader_BA_096 = {
+		leader_BA_086 = {
+			add_trait = leader_club_030
+		}
+		leader_BA_087 = {
 			add_trait = leader_club_031
 		}
-		leader_BA_097 = {
+		leader_BA_088 = {
+			add_trait = leader_club_031
+		}
+		leader_BA_089 = {
 			add_trait = leader_club_032
 		}
+		leader_BA_090 = {
+			add_trait = leader_club_032
+		}
+		leader_BA_091 = {
+			add_trait = leader_club_032
+		}
+		leader_BA_092 = {
+			add_trait = leader_club_032
+		}
+		leader_BA_093 = {
+			add_trait = leader_club_033
+		}
+		leader_BA_094 = {
+			add_trait = leader_club_033
+		}
+		leader_BA_095 = {
+			add_trait = leader_club_033
+		}
+		leader_BA_096 = {
+			add_trait = leader_club_033
+		}
+		# leader_BA_097 = {
+		# 	add_trait = leader_club_033
+		# }
 		leader_BA_098 = {
-			add_trait = leader_club_031
+			add_trait = leader_club_034
 		}
 		leader_BA_099 = {
-			add_trait = leader_club_035
+			add_trait = leader_club_034
 		}
 		leader_BA_100 = {
-			add_trait = leader_club_035
+			add_trait = leader_club_034
 		}
 		leader_BA_101 = {
-			add_trait = leader_club_035
+			add_trait = leader_club_034
 		}
 		leader_BA_102 = {
 			add_trait = leader_club_035
@@ -1138,416 +1138,167 @@ BA_add_club_trait = {
 			add_trait = leader_club_035
 		}
 		leader_BA_106 = {
-			add_trait = leader_club_043
+			add_trait = leader_club_035
 		}
 		leader_BA_107 = {
-			add_trait = leader_club_041
+			add_trait = leader_club_036
 		}
 		leader_BA_108 = {
-			add_trait = leader_club_041
+			add_trait = leader_club_037
 		}
 		leader_BA_109 = {
-			add_trait = leader_club_044
+			add_trait = leader_club_037
 		}
 		leader_BA_110 = {
-			add_trait = leader_club_042
-		}
-		leader_BA_111 = {
-			add_trait = leader_club_042
-		}
-		leader_BA_112 = {
-			add_trait = leader_club_043
-		}
-		leader_BA_113 = {
-			add_trait = leader_club_044
-		}
-		leader_BA_114 = {
-			add_trait = leader_club_044
-		}
-		leader_BA_115 = {
-			add_trait = leader_club_045
-		}
-		leader_BA_116 = {
-			add_trait = leader_club_043
-		}
-		leader_BA_117 = {
-			add_trait = leader_club_045
-		}
-		leader_BA_118 = {
-			add_trait = leader_club_047
-		}
-		leader_BA_119 = {
-			add_trait = leader_club_047
-		}
-		leader_BA_120 = {
-			add_trait = leader_club_047
-		}
-		leader_BA_121 = {
-			add_trait = leader_club_047
-		}
-		leader_BA_122 = {
-			add_trait = leader_club_050
-		}
-		leader_BA_123 = {
-			add_trait = leader_club_050
-		}
-		leader_BA_124 = {
-			add_trait = leader_club_048
-		}
-		leader_BA_125 = {
-			add_trait = leader_club_050
-		}
-		leader_BA_126 = {
-			add_trait = leader_club_048
-		}
-		leader_BA_127 = {
-			add_trait = leader_club_049
-		}
-		leader_BA_128 = {
-			add_trait = leader_club_039
-		}
-		leader_BA_129 = {
-			add_trait = leader_club_039
-		}
-		leader_BA_130 = {
-			add_trait = leader_club_039
-		}
-		leader_BA_131 = {
-			add_trait = leader_club_040
-		}
-		leader_BA_132 = {
-			add_trait = leader_club_040
-		}
-		leader_BA_133 = {
-			add_trait = leader_club_038
-		}
-		leader_BA_134 = {
-			add_trait = leader_club_052
-		}
-		leader_BA_135 = {
-			add_trait = leader_club_052
-		}
-		leader_BA_136 = {
-			add_trait = leader_club_052
-		}
-		leader_BA_137 = {
-			add_trait = leader_club_052
-		}
-		leader_BA_138 = {
-			add_trait = leader_club_052
-		}
-		leader_BA_139 = {
-			add_trait = leader_club_036
-		}
-		leader_BA_140 = {
-			add_trait = leader_club_036
-		}
-		leader_BA_141 = {
-			add_trait = leader_club_036
-		}
-		leader_BA_142 = {
-			add_trait = leader_club_041
-		}
-		leader_BA_143 = {
-			add_trait = leader_club_030
-		}
-		leader_BA_144 = {
-			add_trait = leader_club_042
-		}
-		leader_BA_145 = {
-			add_trait = leader_club_044
-		}
-		leader_BA_146 = {
-			add_trait = leader_club_043
-		}
-		leader_BA_147 = {
-			add_trait = leader_club_045
-		}
-		leader_BA_148 = {
-			add_trait = leader_club_045
-		}
-		leader_BA_149 = {
 			add_trait = leader_club_008
 		}
-		leader_BA_150 = {
-			add_trait = leader_club_058
-		}
-		leader_BA_151 = {
-			add_trait = leader_club_007
-		}
-		leader_BA_152 = {
-			add_trait = leader_club_011
-		}
-		leader_BA_153 = {
-			add_trait = leader_club_016
-		}
-		leader_BA_154 = {
-			add_trait = leader_club_028
-		}
-		leader_BA_155 = {
-			add_trait = leader_club_029
-		}
-		leader_BA_156 = {
-			add_trait = leader_club_029
-		}
-		leader_BA_157 = {
-			add_trait = leader_club_029
-		}
-		leader_BA_158 = {
-			add_trait = leader_club_057
-		}
-		leader_BA_159 = {
-			add_trait = leader_club_028
-		}
-		leader_BA_160 = {
-			add_trait = leader_club_028
-		}
-		leader_BA_161 = {
-			add_trait = leader_club_014
-		}
-		leader_BA_162 = {
-			add_trait = leader_club_016
-		}
-		leader_BA_163 = {
-			add_trait = leader_club_009
-		}
-		leader_BA_164 = {
-			add_trait = leader_club_032
-		}
-		leader_BA_165 = {
-			add_trait = leader_club_031
-		}
-		leader_BA_166 = {
-			add_trait = leader_club_015
-		}
-		leader_BA_167 = {
-			add_trait = leader_club_029
-		}
-		leader_BA_168 = {
-			add_trait = leader_club_015
-		}
-		leader_BA_169 = {
-			add_trait = leader_club_009
-		}
-		leader_BA_170 = {
-			add_trait = leader_club_009
-		}
-		leader_BA_171 = {
-			add_trait = leader_club_059
-		}
-		leader_BA_172 = {
-			add_trait = leader_club_059
-		}
-		leader_BA_173 = {
-			add_trait = leader_club_059
-		}
-		leader_BA_174 = {
-			add_trait = leader_club_059
-		}
-		leader_BA_175 = {
-			add_trait = leader_club_057
-		}
-		leader_BA_176 = {
-			add_trait = leader_club_057
-		}
-		leader_BA_177 = {
-			add_trait = leader_club_057
-		}
-		leader_BA_178 = {
-			add_trait = leader_club_057
-		}
-		leader_BA_179 = {
-			add_trait = leader_club_019
-		}
-		leader_BA_180 = {
-			add_trait = leader_club_023
-		}
-		leader_BA_181 = {
-			add_trait = leader_club_023
-		}
-		leader_BA_182 = {
-			add_trait = leader_club_023
-		}
-		leader_BA_183 = {
-			add_trait = leader_club_023
-		}
-		leader_BA_184 = {
-			add_trait = leader_club_042
-		}
-		leader_BA_185 = {
-			add_trait = leader_club_044
-		}
-		leader_BA_186 = {
-			add_trait = leader_club_043
-		}
-		leader_BA_187 = {
-			add_trait = leader_club_044
-		}
-		leader_BA_188 = {
-			add_trait = leader_club_045
-		}
-		leader_BA_189 = {
-			add_trait = leader_club_033
-		}
-		leader_BA_190 = {
-			add_trait = leader_club_033
-		}
-		leader_BA_191 = {
-			add_trait = leader_club_030
-		}
-		leader_BA_192 = {
-			add_trait = leader_club_025
-		}
-		leader_BA_193 = {
-			add_trait = leader_club_015
-		}
-		leader_BA_194 = {
-			add_trait = leader_club_015
-		}
-		leader_BA_195 = {
-			add_trait = leader_club_027
-		}
-		leader_BA_196 = {
-			add_trait = leader_club_022
-		}
-		leader_BA_197 = {
-			add_trait = leader_club_022
-		}
-		leader_BA_198 = {
-			add_trait = leader_club_022
-		}
-		leader_BA_199 = {
-			add_trait = leader_club_022
-		}
-		leader_BA_200 = {
-			add_trait = leader_club_037
-		}
-		leader_BA_201 = {
-			add_trait = leader_club_037
-		}
-		leader_BA_202 = {
-			add_trait = leader_club_054
-		}
-		leader_BA_203 = {
-			add_trait = leader_club_054
-		}
-		leader_BA_204 = {
-			add_trait = leader_club_014
-		}
-		leader_BA_205 = {
-			add_trait = leader_club_018
-		}
-		leader_BA_206 = {
-			add_trait = leader_club_028
-		}
-		leader_BA_207 = {
-			add_trait = leader_club_028
-		}
-		leader_BA_208 = {
-			add_trait = leader_club_002
-		}
-		leader_BA_209 = {
-			add_trait = leader_club_002
-		}
-		leader_BA_210 = {
-			add_trait = leader_club_002
-		}
-		leader_BA_211 = {
-			add_trait = leader_club_002
-		}
-		leader_BA_212 = {
-			add_trait = leader_club_002
-		}
-		leader_BA_213 = {
-			add_trait = leader_club_002
-		}
-		leader_BA_214 = {
-			add_trait = leader_club_002
-		}
-		leader_BA_215 = {
-			add_trait = leader_club_003
-		}
-		leader_BA_216 = {
-			add_trait = leader_club_007
-		}
-		leader_BA_217 = {
-			add_trait = leader_club_013
-		}
-		leader_BA_218 = {
-			add_trait = leader_club_013
-		}
-		leader_BA_219 = {
-			add_trait = leader_club_013
-		}
-		leader_BA_220 = {
-			add_trait = leader_club_056
-		}
-		leader_BA_221 = {
-			add_trait = leader_club_056
-		}
-		leader_BA_222 = {
-			add_trait = leader_club_056
-		}
-		leader_BA_223 = {
-			add_trait = leader_club_056
-		}
-		leader_BA_224 = {
-			add_trait = leader_club_034
-		}
-		leader_BA_225 = {
-			add_trait = leader_club_041
-		}
-		leader_BA_226 = {
-			add_trait = leader_club_049
-		}
-		leader_BA_227 = {
-			add_trait = leader_club_041
-		}
-		leader_BA_228 = {
+		leader_BA_111 = {
 			add_trait = leader_club_038
 		}
-		leader_BA_229 = {
-			add_trait = leader_club_001
+		leader_BA_112 = {
+			add_trait = leader_club_038
 		}
-		leader_BA_230 = {
-			add_trait = leader_club_001
+		# leader_BA_113 = {
+		# 	add_trait = leader_club_044
+		# }
+		leader_BA_114 = {
+			add_trait = leader_club_039
 		}
-		leader_BA_231 = {
-			add_trait = leader_club_006
+		leader_BA_115 = {
+			add_trait = leader_club_040
 		}
-		leader_BA_232 = {
-			add_trait = leader_club_006
+		leader_BA_116 = {
+			add_trait = leader_club_040
 		}
-		leader_BA_233 = {
-			add_trait = leader_club_006
+		leader_BA_117 = {
+			add_trait = leader_club_040
 		}
-		leader_BA_234 = {
-			add_trait = leader_club_006
+		leader_BA_118 = {
+			add_trait = leader_club_040
 		}
-		leader_BA_235 = {
-			add_trait = leader_club_012
+		leader_BA_119 = {
+			add_trait = leader_club_041
 		}
-		leader_BA_236 = {
-			add_trait = leader_club_012
+		leader_BA_120 = {
+			add_trait = leader_club_041
 		}
-		leader_BA_237 = {
-			add_trait = leader_club_017
+		leader_BA_121 = {
+			add_trait = leader_club_041
 		}
-		leader_BA_238 = {
-			add_trait = leader_club_014
+		leader_BA_122 = {
+			add_trait = leader_club_042
 		}
-		leader_BA_239 = {
-			add_trait = leader_club_051
+		leader_BA_123 = {
+			add_trait = leader_club_042
 		}
-		leader_BA_240 = {
+		leader_BA_124 = {
+			add_trait = leader_club_042
+		}
+		leader_BA_125 = {
+			add_trait = leader_club_008
+		}
+		leader_BA_126 = {
+			add_trait = leader_club_043
+		}
+		leader_BA_127 = {
+			add_trait = leader_club_043
+		}
+		leader_BA_128 = {
+			add_trait = leader_club_043
+		}
+		leader_BA_129 = {
+			add_trait = leader_club_043
+		}
+		leader_BA_130 = {
+			add_trait = leader_club_044
+		}
+		leader_BA_131 = {
+			add_trait = leader_club_044
+		}
+		leader_BA_132 = {
+			add_trait = leader_club_045
+		}
+		leader_BA_133 = {
+			add_trait = leader_club_045
+		}
+		leader_BA_134 = {
+			add_trait = leader_club_045
+		}
+		leader_BA_135 = {
+			add_trait = leader_club_046
+		}
+		leader_BA_136 = {
+			add_trait = leader_club_046
+		}
+		leader_BA_137 = {
+			add_trait = leader_club_046
+		}
+		leader_BA_138 = {
+			add_trait = leader_club_046
+		}
+		leader_BA_139 = {
+			add_trait = leader_club_047
+		}
+		leader_BA_140 = {
+			add_trait = leader_club_047
+		}
+		leader_BA_141 = {
 			add_trait = leader_club_048
 		}
-		leader_BA_241 = {
+		leader_BA_142 = {
 			add_trait = leader_club_048
 		}
-		leader_BA_242 = {
-			add_trait = leader_club_051
+		leader_BA_143 = {
+			add_trait = leader_club_048
 		}
+		leader_BA_144 = {
+			add_trait = leader_club_049
+		}
+		leader_BA_145 = {
+			add_trait = leader_club_049
+		}
+		leader_BA_146 = {
+			add_trait = leader_club_049
+		}
+		leader_BA_147 = {
+			add_trait = leader_club_049
+		}
+		leader_BA_148 = {
+			add_trait = leader_club_049
+		}
+		leader_BA_149 = {
+			add_trait = leader_club_049
+		}
+		leader_BA_150 = {
+			add_trait = leader_club_049
+		}
+		leader_BA_151 = {
+			add_trait = leader_club_049
+		}
+		# leader_BA_152 = {
+		# 	add_trait = leader_club_999
+		# }
+		# leader_BA_153 = {
+		# 	add_trait = leader_club_999
+		# }
+		# leader_BA_154 = {
+		# 	add_trait = leader_club_999
+		# }
+		# leader_BA_155 = {
+		# 	add_trait = leader_club_999
+		# }
+		# leader_BA_156 = {
+		# 	add_trait = leader_club_029
+		# }
+		# leader_BA_157 = {
+		# 	add_trait = leader_club_999
+		# }
+		# leader_BA_158 = {
+		# 	add_trait = leader_club_999
+		# }
+		# leader_BA_159 = {
+		# 	add_trait = leader_club_999
+		# }
 		default = {
 			add_trait = leader_club_000
 		}
@@ -1599,21 +1350,21 @@ BA_add_special_trait = {
 		leader_BA_013 = {
 			add_trait = leader_special_013
 		}
-		# leader_BA_014 = {
-		# 	add_trait = leader_special_014
-		# }
-		# leader_BA_015 = {
-		# 	add_trait = leader_special_015
-		# }
-		# leader_BA_016 = {
-		# 	add_trait = leader_special_016
-		# }
-		# leader_BA_017 = {
-		# 	add_trait = leader_special_017
-		# }
-		# leader_BA_018 = {
-		# 	add_trait = leader_special_018
-		# }
+		leader_BA_014 = {
+			add_trait = leader_special_014
+		}
+		leader_BA_015 = {
+			add_trait = leader_special_015
+		}
+		leader_BA_016 = {
+			add_trait = leader_special_016
+		}
+		leader_BA_017 = {
+			add_trait = leader_special_017
+		}
+		leader_BA_018 = {
+			add_trait = leader_special_018
+		}
 		# leader_BA_019 = {
 		# 	add_trait = leader_special_019
 		# }
@@ -2016,9 +1767,9 @@ BA_add_special_trait = {
 		# leader_BA_152 = {
 		# 	add_trait = leader_special_152
 		# }
-		leader_BA_153 = {
-			add_trait = leader_special_153
-		}
+		# leader_BA_153 = {
+		# 	add_trait = leader_special_153
+		# }
 		# leader_BA_154 = {
 		# 	add_trait = leader_special_154
 		# }

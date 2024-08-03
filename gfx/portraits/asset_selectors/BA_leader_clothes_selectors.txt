@@ -13,13 +13,16 @@ BA_clothes_002 = {
 BA_clothes_003 = {
 	default = gfx/models/portraits/main_texture/003.dds
 	leader = {
-		gfx/models/portraits/main_texture/003_COL.dds={
+		gfx/models/portraits/main_texture/003_COL.dds = {
 			has_leader_flag = BA_skin_COL
 		}
-		gfx/models/portraits/main_texture/003_CYC.dds={
+		gfx/models/portraits/main_texture/003_CYC.dds = {
 			has_leader_flag = BA_skin_CYC
 		}
-		gfx/models/portraits/main_texture/003_SS.dds={
+		gfx/models/portraits/main_texture/003_SP.dds = {
+			has_leader_flag = BA_skin_SP
+		}
+		gfx/models/portraits/main_texture/003_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -28,7 +31,10 @@ BA_clothes_003 = {
 BA_clothes_004 = {
 	default = gfx/models/portraits/main_texture/004.dds
 	leader = {
-		gfx/models/portraits/main_texture/004_SS.dds={
+		gfx/models/portraits/main_texture/004_SP.dds = {
+			has_leader_flag = BA_skin_SP
+		}
+		gfx/models/portraits/main_texture/004_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -37,10 +43,13 @@ BA_clothes_004 = {
 BA_clothes_005 = {
 	default = gfx/models/portraits/main_texture/005.dds
 	leader = {
-		gfx/models/portraits/main_texture/005_KMN.dds={
+		gfx/models/portraits/main_texture/005_KMN.dds = {
 			has_leader_flag = BA_skin_KMN
 		}
-		gfx/models/portraits/main_texture/005_SS.dds={
+		gfx/models/portraits/main_texture/005_SP.dds = {
+			has_leader_flag = BA_skin_SP
+		}
+		gfx/models/portraits/main_texture/005_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -49,13 +58,16 @@ BA_clothes_005 = {
 BA_clothes_006 = {
 	default = gfx/models/portraits/main_texture/006.dds
 	leader = {
-		gfx/models/portraits/main_texture/006_JK1.dds={
+		gfx/models/portraits/main_texture/006_JK1.dds = {
 			has_leader_flag = BA_skin_JK1
 		}
-		gfx/models/portraits/main_texture/006_JK2.dds={
+		gfx/models/portraits/main_texture/006_JK2.dds = {
 			has_leader_flag = BA_skin_JK2
 		}
-		gfx/models/portraits/main_texture/006_SS.dds={
+		gfx/models/portraits/main_texture/006_SP.dds = {
+			has_leader_flag = BA_skin_SP
+		}
+		gfx/models/portraits/main_texture/006_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -64,10 +76,13 @@ BA_clothes_006 = {
 BA_clothes_007 = {
 	default = gfx/models/portraits/main_texture/007.dds
 	leader = {
-		gfx/models/portraits/main_texture/007_JK1.dds={
+		gfx/models/portraits/main_texture/007_JK1.dds = {
 			has_leader_flag = BA_skin_JK1
 		}
-		gfx/models/portraits/main_texture/007_SS.dds={
+		gfx/models/portraits/main_texture/007_SP.dds = {
+			has_leader_flag = BA_skin_SP
+		}
+		gfx/models/portraits/main_texture/007_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -94,7 +109,7 @@ BA_clothes_010 = {
 BA_clothes_011 = {
 	default = gfx/models/portraits/main_texture/011.dds
 	leader = {
-		gfx/models/portraits/main_texture/011_DR.dds={
+		gfx/models/portraits/main_texture/011_DR.dds = {
 			has_leader_flag = BA_skin_DR
 		}
 	}
@@ -133,10 +148,10 @@ BA_clothes_016 = {
 BA_clothes_017 = {
 	default = gfx/models/portraits/main_texture/017.dds
 	leader = {
-		gfx/models/portraits/main_texture/017_JC.dds={
+		gfx/models/portraits/main_texture/017_JC.dds = {
 			has_leader_flag = BA_skin_JC
 		}
-		gfx/models/portraits/main_texture/017_MK.dds={
+		gfx/models/portraits/main_texture/017_MK.dds = {
 			has_leader_flag = BA_skin_MK
 		}
 	}
@@ -163,7 +178,7 @@ BA_clothes_020 = {
 BA_clothes_021 = {
 	default = gfx/models/portraits/main_texture/021.dds
 	leader = {
-		gfx/models/portraits/main_texture/021_GD.dds={
+		gfx/models/portraits/main_texture/021_GD.dds = {
 			has_leader_flag = BA_skin_GD
 		}
 	}
@@ -178,10 +193,10 @@ BA_clothes_022 = {
 BA_clothes_023 = {
 	default = gfx/models/portraits/main_texture/023.dds
 	leader = {
-		gfx/models/portraits/main_texture/023_SP.dds={
+		gfx/models/portraits/main_texture/023_SP.dds = {
 			has_leader_flag = BA_skin_SP
 		}
-		gfx/models/portraits/main_texture/023_SS.dds={
+		gfx/models/portraits/main_texture/023_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -190,10 +205,10 @@ BA_clothes_023 = {
 BA_clothes_024 = {
 	default = gfx/models/portraits/main_texture/024.dds
 	leader = {
-		gfx/models/portraits/main_texture/024_FN.dds={
+		gfx/models/portraits/main_texture/024_FN.dds = {
 			has_leader_flag = BA_skin_FN
 		}
-		gfx/models/portraits/main_texture/024_SS.dds={
+		gfx/models/portraits/main_texture/024_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -202,10 +217,10 @@ BA_clothes_024 = {
 BA_clothes_025 = {
 	default = gfx/models/portraits/main_texture/025.dds
 	leader = {
-		gfx/models/portraits/main_texture/025_SP.dds={
+		gfx/models/portraits/main_texture/025_SP.dds = {
 			has_leader_flag = BA_skin_SP
 		}
-		gfx/models/portraits/main_texture/025_SS.dds={
+		gfx/models/portraits/main_texture/025_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -214,7 +229,7 @@ BA_clothes_025 = {
 BA_clothes_026 = {
 	default = gfx/models/portraits/main_texture/026.dds
 	leader = {
-		gfx/models/portraits/main_texture/026_SP.dds={
+		gfx/models/portraits/main_texture/026_SP.dds = {
 			has_leader_flag = BA_skin_SP
 		}
 	}
@@ -229,7 +244,7 @@ BA_clothes_027 = {
 BA_clothes_028 = {
 	default = gfx/models/portraits/main_texture/028.dds
 	leader = {
-		gfx/models/portraits/main_texture/028_GD.dds={
+		gfx/models/portraits/main_texture/028_GD.dds = {
 			has_leader_flag = BA_skin_GD
 		}
 	}
@@ -238,10 +253,10 @@ BA_clothes_028 = {
 BA_clothes_029 = {
 	default = gfx/models/portraits/main_texture/029.dds
 	leader = {
-		gfx/models/portraits/main_texture/029_GD.dds={
+		gfx/models/portraits/main_texture/029_GD.dds = {
 			has_leader_flag = BA_skin_GD
 		}
-		gfx/models/portraits/main_texture/029_SP.dds={
+		gfx/models/portraits/main_texture/029_SP.dds = {
 			has_leader_flag = BA_skin_SP
 		}
 	}
@@ -250,7 +265,7 @@ BA_clothes_029 = {
 BA_clothes_030 = {
 	default = gfx/models/portraits/main_texture/030.dds
 	leader = {
-		gfx/models/portraits/main_texture/030_SS.dds={
+		gfx/models/portraits/main_texture/030_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -271,10 +286,10 @@ BA_clothes_032 = {
 BA_clothes_033 = {
 	default = gfx/models/portraits/main_texture/033.dds
 	leader = {
-		gfx/models/portraits/main_texture/033_SP.dds={
+		gfx/models/portraits/main_texture/033_SP.dds = {
 			has_leader_flag = BA_skin_SP
 		}
-		gfx/models/portraits/main_texture/033_SS.dds={
+		gfx/models/portraits/main_texture/033_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -283,10 +298,10 @@ BA_clothes_033 = {
 BA_clothes_034 = {
 	default = gfx/models/portraits/main_texture/034.dds
 	leader = {
-		gfx/models/portraits/main_texture/034_DR.dds={
+		gfx/models/portraits/main_texture/034_DR.dds = {
 			has_leader_flag = BA_skin_DR
 		}
-		gfx/models/portraits/main_texture/034_KMN.dds={
+		gfx/models/portraits/main_texture/034_KMN.dds = {
 			has_leader_flag = BA_skin_KMN
 		}
 	}
@@ -295,13 +310,13 @@ BA_clothes_034 = {
 BA_clothes_035 = {
 	default = gfx/models/portraits/main_texture/035.dds
 	leader = {
-		gfx/models/portraits/main_texture/035_DR.dds={
+		gfx/models/portraits/main_texture/035_DR.dds = {
 			has_leader_flag = BA_skin_DR
 		}
-		gfx/models/portraits/main_texture/035_KMN.dds={
+		gfx/models/portraits/main_texture/035_KMN.dds = {
 			has_leader_flag = BA_skin_KMN
 		}
-		gfx/models/portraits/main_texture/035_NVG.dds={
+		gfx/models/portraits/main_texture/035_NVG.dds = {
 			has_leader_flag = BA_skin_NVG
 		}
 	}
@@ -310,13 +325,13 @@ BA_clothes_035 = {
 BA_clothes_036 = {
 	default = gfx/models/portraits/main_texture/036.dds
 	leader = {
-		gfx/models/portraits/main_texture/036_AGT.dds={
+		gfx/models/portraits/main_texture/036_AGT.dds = {
 			has_leader_flag = BA_skin_AGT
 		}
-		gfx/models/portraits/main_texture/036_DR.dds={
+		gfx/models/portraits/main_texture/036_DR.dds = {
 			has_leader_flag = BA_skin_DR
 		}
-		gfx/models/portraits/main_texture/036_KMN.dds={
+		gfx/models/portraits/main_texture/036_KMN.dds = {
 			has_leader_flag = BA_skin_KMN
 		}
 	}
@@ -325,13 +340,13 @@ BA_clothes_036 = {
 BA_clothes_037 = {
 	default = gfx/models/portraits/main_texture/037.dds
 	leader = {
-		gfx/models/portraits/main_texture/037_AGT.dds={
+		gfx/models/portraits/main_texture/037_AGT.dds = {
 			has_leader_flag = BA_skin_AGT
 		}
-		gfx/models/portraits/main_texture/037_DR.dds={
+		gfx/models/portraits/main_texture/037_DR.dds = {
 			has_leader_flag = BA_skin_DR
 		}
-		gfx/models/portraits/main_texture/037_KMN.dds={
+		gfx/models/portraits/main_texture/037_KMN.dds = {
 			has_leader_flag = BA_skin_KMN
 		}
 	}
@@ -340,7 +355,7 @@ BA_clothes_037 = {
 BA_clothes_038 = {
 	default = gfx/models/portraits/main_texture/038.dds
 	leader = {
-		gfx/models/portraits/main_texture/038_HS.dds={
+		gfx/models/portraits/main_texture/038_HS.dds = {
 			has_leader_flag = BA_skin_HS
 		}
 	}
@@ -349,13 +364,13 @@ BA_clothes_038 = {
 BA_clothes_039 = {
 	default = gfx/models/portraits/main_texture/039.dds
 	leader = {
-		gfx/models/portraits/main_texture/039_DR.dds={
+		gfx/models/portraits/main_texture/039_DR.dds = {
 			has_leader_flag = BA_skin_DR
 		}
-		gfx/models/portraits/main_texture/039_PJ.dds={
+		gfx/models/portraits/main_texture/039_PJ.dds = {
 			has_leader_flag = BA_skin_PJ
 		}
-		gfx/models/portraits/main_texture/039_SS.dds={
+		gfx/models/portraits/main_texture/039_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -364,13 +379,13 @@ BA_clothes_039 = {
 BA_clothes_040 = {
 	default = gfx/models/portraits/main_texture/040.dds
 	leader = {
-		gfx/models/portraits/main_texture/040_DR.dds={
+		gfx/models/portraits/main_texture/040_DR.dds = {
 			has_leader_flag = BA_skin_DR
 		}
-		gfx/models/portraits/main_texture/040_NVG.dds={
+		gfx/models/portraits/main_texture/040_NVG.dds = {
 			has_leader_flag = BA_skin_NVG
 		}
-		gfx/models/portraits/main_texture/040_SP.dds={
+		gfx/models/portraits/main_texture/040_SP.dds = {
 			has_leader_flag = BA_skin_SP
 		}
 	}
@@ -379,7 +394,7 @@ BA_clothes_040 = {
 BA_clothes_041 = {
 	default = gfx/models/portraits/main_texture/041.dds
 	leader = {
-		gfx/models/portraits/main_texture/041_SS.dds={
+		gfx/models/portraits/main_texture/041_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -388,7 +403,7 @@ BA_clothes_041 = {
 BA_clothes_042 = {
 	default = gfx/models/portraits/main_texture/042.dds
 	leader = {
-		gfx/models/portraits/main_texture/042_KMN.dds={
+		gfx/models/portraits/main_texture/042_KMN.dds = {
 			has_leader_flag = BA_skin_KMN
 		}
 	}
@@ -421,10 +436,10 @@ BA_clothes_046 = {
 BA_clothes_047 = {
 	default = gfx/models/portraits/main_texture/047.dds
 	leader = {
-		gfx/models/portraits/main_texture/047_KMN.dds={
+		gfx/models/portraits/main_texture/047_KMN.dds = {
 			has_leader_flag = BA_skin_KMN
 		}
-		gfx/models/portraits/main_texture/047_SP.dds={
+		gfx/models/portraits/main_texture/047_SP.dds = {
 			has_leader_flag = BA_skin_SP
 		}
 	}
@@ -433,10 +448,10 @@ BA_clothes_047 = {
 BA_clothes_048 = {
 	default = gfx/models/portraits/main_texture/048.dds
 	leader = {
-		gfx/models/portraits/main_texture/048_KMN.dds={
+		gfx/models/portraits/main_texture/048_KMN.dds = {
 			has_leader_flag = BA_skin_KMN
 		}
-		gfx/models/portraits/main_texture/048_SP.dds={
+		gfx/models/portraits/main_texture/048_SP.dds = {
 			has_leader_flag = BA_skin_SP
 		}
 	}
@@ -445,10 +460,10 @@ BA_clothes_048 = {
 BA_clothes_049 = {
 	default = gfx/models/portraits/main_texture/049.dds
 	leader = {
-		gfx/models/portraits/main_texture/049_KMN.dds={
+		gfx/models/portraits/main_texture/049_KMN.dds = {
 			has_leader_flag = BA_skin_KMN
 		}
-		gfx/models/portraits/main_texture/049_SPW.dds={
+		gfx/models/portraits/main_texture/049_SPW.dds = {
 			has_leader_flag = BA_skin_SPW
 		}
 	}
@@ -457,13 +472,13 @@ BA_clothes_049 = {
 BA_clothes_050 = {
 	default = gfx/models/portraits/main_texture/050.dds
 	leader = {
-		gfx/models/portraits/main_texture/050_KMN.dds={
+		gfx/models/portraits/main_texture/050_KMN.dds = {
 			has_leader_flag = BA_skin_KMN
 		}
-		gfx/models/portraits/main_texture/050_SP.dds={
+		gfx/models/portraits/main_texture/050_SP.dds = {
 			has_leader_flag = BA_skin_SP
 		}
-		gfx/models/portraits/main_texture/050_SS.dds={
+		gfx/models/portraits/main_texture/050_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -472,7 +487,7 @@ BA_clothes_050 = {
 BA_clothes_051 = {
 	default = gfx/models/portraits/main_texture/051.dds
 	leader = {
-		gfx/models/portraits/main_texture/051_DR.dds={
+		gfx/models/portraits/main_texture/051_DR.dds = {
 			has_leader_flag = BA_skin_DR
 		}
 	}
@@ -493,7 +508,7 @@ BA_clothes_053 = {
 BA_clothes_054 = {
 	default = gfx/models/portraits/main_texture/054.dds
 	leader = {
-		gfx/models/portraits/main_texture/054_DR.dds={
+		gfx/models/portraits/main_texture/054_DR.dds = {
 			has_leader_flag = BA_skin_DR
 		}
 	}
@@ -538,7 +553,7 @@ BA_clothes_060 = {
 BA_clothes_061 = {
 	default = gfx/models/portraits/main_texture/061.dds
 	leader = {
-		gfx/models/portraits/main_texture/061_HS.dds={
+		gfx/models/portraits/main_texture/061_HS.dds = {
 			has_leader_flag = BA_skin_HS
 		}
 	}
@@ -547,7 +562,7 @@ BA_clothes_061 = {
 BA_clothes_062 = {
 	default = gfx/models/portraits/main_texture/062.dds
 	leader = {
-		gfx/models/portraits/main_texture/062_HS.dds={
+		gfx/models/portraits/main_texture/062_HS.dds = {
 			has_leader_flag = BA_skin_HS
 		}
 	}
@@ -580,7 +595,7 @@ BA_clothes_066 = {
 BA_clothes_067 = {
 	default = gfx/models/portraits/main_texture/067.dds
 	leader = {
-		gfx/models/portraits/main_texture/067_HS.dds={
+		gfx/models/portraits/main_texture/067_HS.dds = {
 			has_leader_flag = BA_skin_HS
 		}
 	}
@@ -589,7 +604,7 @@ BA_clothes_067 = {
 BA_clothes_068 = {
 	default = gfx/models/portraits/main_texture/068.dds
 	leader = {
-		gfx/models/portraits/main_texture/068_OLD.dds={
+		gfx/models/portraits/main_texture/068_OLD.dds = {
 			has_leader_flag = BA_skin_OLD
 		}
 	}
@@ -604,7 +619,7 @@ BA_clothes_069 = {
 BA_clothes_070 = {
 	default = gfx/models/portraits/main_texture/070.dds
 	leader = {
-		gfx/models/portraits/main_texture/070_HS.dds={
+		gfx/models/portraits/main_texture/070_HS.dds = {
 			has_leader_flag = BA_skin_HS
 		}
 	}
@@ -637,7 +652,7 @@ BA_clothes_074 = {
 BA_clothes_075 = {
 	default = gfx/models/portraits/main_texture/075.dds
 	leader = {
-		gfx/models/portraits/main_texture/075_NVG.dds={
+		gfx/models/portraits/main_texture/075_NVG.dds = {
 			has_leader_flag = BA_skin_NVG
 		}
 	}
@@ -646,7 +661,7 @@ BA_clothes_075 = {
 BA_clothes_076 = {
 	default = gfx/models/portraits/main_texture/076.dds
 	leader = {
-		gfx/models/portraits/main_texture/076_NVG.dds={
+		gfx/models/portraits/main_texture/076_NVG.dds = {
 			has_leader_flag = BA_skin_NVG
 		}
 	}
@@ -679,7 +694,7 @@ BA_clothes_080 = {
 BA_clothes_081 = {
 	default = gfx/models/portraits/main_texture/081.dds
 	leader = {
-		gfx/models/portraits/main_texture/081_NVG.dds={
+		gfx/models/portraits/main_texture/081_NVG.dds = {
 			has_leader_flag = BA_skin_NVG
 		}
 	}
@@ -688,7 +703,7 @@ BA_clothes_081 = {
 BA_clothes_082 = {
 	default = gfx/models/portraits/main_texture/082.dds
 	leader = {
-		gfx/models/portraits/main_texture/082_CL.dds={
+		gfx/models/portraits/main_texture/082_CL.dds = {
 			has_leader_flag = BA_skin_CL
 		}
 	}
@@ -697,10 +712,10 @@ BA_clothes_082 = {
 BA_clothes_083 = {
 	default = gfx/models/portraits/main_texture/083.dds
 	leader = {
-		gfx/models/portraits/main_texture/083_CL.dds={
+		gfx/models/portraits/main_texture/083_CL.dds = {
 			has_leader_flag = BA_skin_CL
 		}
-		gfx/models/portraits/main_texture/083_SP.dds={
+		gfx/models/portraits/main_texture/083_SP.dds = {
 			has_leader_flag = BA_skin_SP
 		}
 	}
@@ -709,7 +724,7 @@ BA_clothes_083 = {
 BA_clothes_084 = {
 	default = gfx/models/portraits/main_texture/084.dds
 	leader = {
-		gfx/models/portraits/main_texture/084_CL.dds={
+		gfx/models/portraits/main_texture/084_CL.dds = {
 			has_leader_flag = BA_skin_CL
 		}
 	}
@@ -718,7 +733,7 @@ BA_clothes_084 = {
 BA_clothes_085 = {
 	default = gfx/models/portraits/main_texture/085.dds
 	leader = {
-		gfx/models/portraits/main_texture/085_SS.dds={
+		gfx/models/portraits/main_texture/085_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -727,10 +742,10 @@ BA_clothes_085 = {
 BA_clothes_086 = {
 	default = gfx/models/portraits/main_texture/086.dds
 	leader = {
-		gfx/models/portraits/main_texture/086_CD.dds={
+		gfx/models/portraits/main_texture/086_CD.dds = {
 			has_leader_flag = BA_skin_CD
 		}
-		gfx/models/portraits/main_texture/086_NVG.dds={
+		gfx/models/portraits/main_texture/086_NVG.dds = {
 			has_leader_flag = BA_skin_NVG
 		}
 	}
@@ -739,7 +754,7 @@ BA_clothes_086 = {
 BA_clothes_087 = {
 	default = gfx/models/portraits/main_texture/087.dds
 	leader = {
-		gfx/models/portraits/main_texture/087_SP.dds={
+		gfx/models/portraits/main_texture/087_SP.dds = {
 			has_leader_flag = BA_skin_SP
 		}
 	}
@@ -760,7 +775,7 @@ BA_clothes_089 = {
 BA_clothes_090 = {
 	default = gfx/models/portraits/main_texture/090.dds
 	leader = {
-		gfx/models/portraits/main_texture/090_SP.dds={
+		gfx/models/portraits/main_texture/090_SP.dds = {
 			has_leader_flag = BA_skin_SP
 		}
 	}
@@ -769,16 +784,19 @@ BA_clothes_090 = {
 BA_clothes_091 = {
 	default = gfx/models/portraits/main_texture/091.dds
 	leader = {
+		gfx/models/portraits/main_texture/091_BN.dds = {
+			has_leader_flag = BA_skin_BN
+		}
 	}
 }
 
 BA_clothes_092 = {
 	default = gfx/models/portraits/main_texture/092.dds
 	leader = {
-		gfx/models/portraits/main_texture/092_NVG.dds={
+		gfx/models/portraits/main_texture/092_NVG.dds = {
 			has_leader_flag = BA_skin_NVG
 		}
-		gfx/models/portraits/main_texture/092_SPW.dds={
+		gfx/models/portraits/main_texture/092_SPW.dds = {
 			has_leader_flag = BA_skin_SPW
 		}
 	}
@@ -787,7 +805,7 @@ BA_clothes_092 = {
 BA_clothes_093 = {
 	default = gfx/models/portraits/main_texture/093.dds
 	leader = {
-		gfx/models/portraits/main_texture/093_MD.dds={
+		gfx/models/portraits/main_texture/093_MD.dds = {
 			has_leader_flag = BA_skin_MD
 		}
 	}
@@ -796,7 +814,7 @@ BA_clothes_093 = {
 BA_clothes_094 = {
 	default = gfx/models/portraits/main_texture/094.dds
 	leader = {
-		gfx/models/portraits/main_texture/094_MD.dds={
+		gfx/models/portraits/main_texture/094_MD.dds = {
 			has_leader_flag = BA_skin_MD
 		}
 	}
@@ -805,7 +823,7 @@ BA_clothes_094 = {
 BA_clothes_095 = {
 	default = gfx/models/portraits/main_texture/095.dds
 	leader = {
-		gfx/models/portraits/main_texture/095_MD.dds={
+		gfx/models/portraits/main_texture/095_MD.dds = {
 			has_leader_flag = BA_skin_MD
 		}
 	}
@@ -814,7 +832,7 @@ BA_clothes_095 = {
 BA_clothes_096 = {
 	default = gfx/models/portraits/main_texture/096.dds
 	leader = {
-		gfx/models/portraits/main_texture/096_MD.dds={
+		gfx/models/portraits/main_texture/096_MD.dds = {
 			has_leader_flag = BA_skin_MD
 		}
 	}
@@ -829,7 +847,7 @@ BA_clothes_097 = {
 BA_clothes_098 = {
 	default = gfx/models/portraits/main_texture/098.dds
 	leader = {
-		gfx/models/portraits/main_texture/098_CMP.dds={
+		gfx/models/portraits/main_texture/098_CMP.dds = {
 			has_leader_flag = BA_skin_CMP
 		}
 	}
@@ -838,7 +856,7 @@ BA_clothes_098 = {
 BA_clothes_099 = {
 	default = gfx/models/portraits/main_texture/099.dds
 	leader = {
-		gfx/models/portraits/main_texture/099_CMP.dds={
+		gfx/models/portraits/main_texture/099_CMP.dds = {
 			has_leader_flag = BA_skin_CMP
 		}
 	}
@@ -847,7 +865,7 @@ BA_clothes_099 = {
 BA_clothes_100 = {
 	default = gfx/models/portraits/main_texture/100.dds
 	leader = {
-		gfx/models/portraits/main_texture/100_CMP.dds={
+		gfx/models/portraits/main_texture/100_CMP.dds = {
 			has_leader_flag = BA_skin_CMP
 		}
 	}
@@ -856,10 +874,10 @@ BA_clothes_100 = {
 BA_clothes_101 = {
 	default = gfx/models/portraits/main_texture/101.dds
 	leader = {
-		gfx/models/portraits/main_texture/101_CMP.dds={
+		gfx/models/portraits/main_texture/101_CMP.dds = {
 			has_leader_flag = BA_skin_CMP
 		}
-		gfx/models/portraits/main_texture/101_SP.dds={
+		gfx/models/portraits/main_texture/101_SP.dds = {
 			has_leader_flag = BA_skin_SP
 		}
 	}
@@ -868,10 +886,10 @@ BA_clothes_101 = {
 BA_clothes_102 = {
 	default = gfx/models/portraits/main_texture/102.dds
 	leader = {
-		gfx/models/portraits/main_texture/102_BN.dds={
+		gfx/models/portraits/main_texture/102_BN.dds = {
 			has_leader_flag = BA_skin_BN
 		}
-		gfx/models/portraits/main_texture/102_UNF.dds={
+		gfx/models/portraits/main_texture/102_UNF.dds = {
 			has_leader_flag = BA_skin_UNF
 		}
 	}
@@ -880,10 +898,10 @@ BA_clothes_102 = {
 BA_clothes_103 = {
 	default = gfx/models/portraits/main_texture/103.dds
 	leader = {
-		gfx/models/portraits/main_texture/103_BN.dds={
+		gfx/models/portraits/main_texture/103_BN.dds = {
 			has_leader_flag = BA_skin_BN
 		}
-		gfx/models/portraits/main_texture/103_UNF.dds={
+		gfx/models/portraits/main_texture/103_UNF.dds = {
 			has_leader_flag = BA_skin_UNF
 		}
 	}
@@ -892,7 +910,7 @@ BA_clothes_103 = {
 BA_clothes_104 = {
 	default = gfx/models/portraits/main_texture/104.dds
 	leader = {
-		gfx/models/portraits/main_texture/104_BN.dds={
+		gfx/models/portraits/main_texture/104_BN.dds = {
 			has_leader_flag = BA_skin_BN
 		}
 	}
@@ -901,7 +919,7 @@ BA_clothes_104 = {
 BA_clothes_105 = {
 	default = gfx/models/portraits/main_texture/105.dds
 	leader = {
-		gfx/models/portraits/main_texture/105_BN.dds={
+		gfx/models/portraits/main_texture/105_BN.dds = {
 			has_leader_flag = BA_skin_BN
 		}
 	}
@@ -910,7 +928,7 @@ BA_clothes_105 = {
 BA_clothes_106 = {
 	default = gfx/models/portraits/main_texture/106.dds
 	leader = {
-		gfx/models/portraits/main_texture/106_BN.dds={
+		gfx/models/portraits/main_texture/106_BN.dds = {
 			has_leader_flag = BA_skin_BN
 		}
 	}
@@ -919,7 +937,7 @@ BA_clothes_106 = {
 BA_clothes_107 = {
 	default = gfx/models/portraits/main_texture/107.dds
 	leader = {
-		gfx/models/portraits/main_texture/107_DL.dds={
+		gfx/models/portraits/main_texture/107_DL.dds = {
 			has_leader_flag = BA_skin_DL
 		}
 	}
@@ -928,7 +946,7 @@ BA_clothes_107 = {
 BA_clothes_108 = {
 	default = gfx/models/portraits/main_texture/108.dds
 	leader = {
-		gfx/models/portraits/main_texture/108_YN.dds={
+		gfx/models/portraits/main_texture/108_YN.dds = {
 			has_leader_flag = BA_skin_YN
 		}
 	}
@@ -973,7 +991,7 @@ BA_clothes_114 = {
 BA_clothes_115 = {
 	default = gfx/models/portraits/main_texture/115.dds
 	leader = {
-		gfx/models/portraits/main_texture/115_SS.dds={
+		gfx/models/portraits/main_texture/115_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -982,10 +1000,10 @@ BA_clothes_115 = {
 BA_clothes_116 = {
 	default = gfx/models/portraits/main_texture/116.dds
 	leader = {
-		gfx/models/portraits/main_texture/116_SP.dds={
+		gfx/models/portraits/main_texture/116_SP.dds = {
 			has_leader_flag = BA_skin_SP
 		}
-		gfx/models/portraits/main_texture/116_SS.dds={
+		gfx/models/portraits/main_texture/116_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -994,10 +1012,10 @@ BA_clothes_116 = {
 BA_clothes_117 = {
 	default = gfx/models/portraits/main_texture/117.dds
 	leader = {
-		gfx/models/portraits/main_texture/117_SP.dds={
+		gfx/models/portraits/main_texture/117_SP.dds = {
 			has_leader_flag = BA_skin_SP
 		}
-		gfx/models/portraits/main_texture/117_SS.dds={
+		gfx/models/portraits/main_texture/117_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -1006,10 +1024,10 @@ BA_clothes_117 = {
 BA_clothes_118 = {
 	default = gfx/models/portraits/main_texture/118.dds
 	leader = {
-		gfx/models/portraits/main_texture/118_SP.dds={
+		gfx/models/portraits/main_texture/118_SP.dds = {
 			has_leader_flag = BA_skin_SP
 		}
-		gfx/models/portraits/main_texture/118_SS.dds={
+		gfx/models/portraits/main_texture/118_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -1024,7 +1042,7 @@ BA_clothes_119 = {
 BA_clothes_120 = {
 	default = gfx/models/portraits/main_texture/120.dds
 	leader = {
-		gfx/models/portraits/main_texture/120_SP.dds={
+		gfx/models/portraits/main_texture/120_SP.dds = {
 			has_leader_flag = BA_skin_SP
 		}
 	}
@@ -1039,10 +1057,10 @@ BA_clothes_121 = {
 BA_clothes_122 = {
 	default = gfx/models/portraits/main_texture/122.dds
 	leader = {
-		gfx/models/portraits/main_texture/122_CL.dds={
+		gfx/models/portraits/main_texture/122_CL.dds = {
 			has_leader_flag = BA_skin_CL
 		}
-		gfx/models/portraits/main_texture/122_XMS.dds={
+		gfx/models/portraits/main_texture/122_XMS.dds = {
 			has_leader_flag = BA_skin_XMS
 		}
 	}
@@ -1057,10 +1075,10 @@ BA_clothes_123 = {
 BA_clothes_124 = {
 	default = gfx/models/portraits/main_texture/124.dds
 	leader = {
-		gfx/models/portraits/main_texture/124_NS.dds={
+		gfx/models/portraits/main_texture/124_NS.dds = {
 			has_leader_flag = BA_skin_NS
 		}
-		gfx/models/portraits/main_texture/124_XMS.dds={
+		gfx/models/portraits/main_texture/124_XMS.dds = {
 			has_leader_flag = BA_skin_XMS
 		}
 	}
@@ -1075,7 +1093,7 @@ BA_clothes_125 = {
 BA_clothes_126 = {
 	default = gfx/models/portraits/main_texture/126.dds
 	leader = {
-		gfx/models/portraits/main_texture/126_BD.dds={
+		gfx/models/portraits/main_texture/126_BD.dds = {
 			has_leader_flag = BA_skin_BD
 		}
 	}
@@ -1084,7 +1102,7 @@ BA_clothes_126 = {
 BA_clothes_127 = {
 	default = gfx/models/portraits/main_texture/127.dds
 	leader = {
-		gfx/models/portraits/main_texture/127_BD.dds={
+		gfx/models/portraits/main_texture/127_BD.dds = {
 			has_leader_flag = BA_skin_BD
 		}
 	}
@@ -1093,8 +1111,11 @@ BA_clothes_127 = {
 BA_clothes_128 = {
 	default = gfx/models/portraits/main_texture/128.dds
 	leader = {
-		gfx/models/portraits/main_texture/128_BD.dds={
+		gfx/models/portraits/main_texture/128_BD.dds = {
 			has_leader_flag = BA_skin_BD
+		}
+		gfx/models/portraits/main_texture/128_OLD.dds = {
+			has_leader_flag = BA_skin_OLD
 		}
 	}
 }
@@ -1102,10 +1123,10 @@ BA_clothes_128 = {
 BA_clothes_129 = {
 	default = gfx/models/portraits/main_texture/129.dds
 	leader = {
-		gfx/models/portraits/main_texture/129_BD.dds={
+		gfx/models/portraits/main_texture/129_BD.dds = {
 			has_leader_flag = BA_skin_BD
 		}
-		gfx/models/portraits/main_texture/129_SP.dds={
+		gfx/models/portraits/main_texture/129_SP.dds = {
 			has_leader_flag = BA_skin_SP
 		}
 	}
@@ -1114,7 +1135,7 @@ BA_clothes_129 = {
 BA_clothes_130 = {
 	default = gfx/models/portraits/main_texture/130.dds
 	leader = {
-		gfx/models/portraits/main_texture/130_SS.dds={
+		gfx/models/portraits/main_texture/130_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -1129,7 +1150,7 @@ BA_clothes_131 = {
 BA_clothes_132 = {
 	default = gfx/models/portraits/main_texture/132.dds
 	leader = {
-		gfx/models/portraits/main_texture/132_SPW.dds={
+		gfx/models/portraits/main_texture/132_SPW.dds = {
 			has_leader_flag = BA_skin_SPW
 		}
 	}
@@ -1138,7 +1159,7 @@ BA_clothes_132 = {
 BA_clothes_133 = {
 	default = gfx/models/portraits/main_texture/133.dds
 	leader = {
-		gfx/models/portraits/main_texture/133_SS.dds={
+		gfx/models/portraits/main_texture/133_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -1147,10 +1168,10 @@ BA_clothes_133 = {
 BA_clothes_134 = {
 	default = gfx/models/portraits/main_texture/134.dds
 	leader = {
-		gfx/models/portraits/main_texture/134_DR.dds={
+		gfx/models/portraits/main_texture/134_DR.dds = {
 			has_leader_flag = BA_skin_DR
 		}
-		gfx/models/portraits/main_texture/134_SNT.dds={
+		gfx/models/portraits/main_texture/134_SNT.dds = {
 			has_leader_flag = BA_skin_SNT
 		}
 	}
@@ -1159,10 +1180,10 @@ BA_clothes_134 = {
 BA_clothes_135 = {
 	default = gfx/models/portraits/main_texture/135.dds
 	leader = {
-		gfx/models/portraits/main_texture/135_SP.dds={
+		gfx/models/portraits/main_texture/135_SP.dds = {
 			has_leader_flag = BA_skin_SP
 		}
-		gfx/models/portraits/main_texture/135_SS.dds={
+		gfx/models/portraits/main_texture/135_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -1171,7 +1192,7 @@ BA_clothes_135 = {
 BA_clothes_136 = {
 	default = gfx/models/portraits/main_texture/136.dds
 	leader = {
-		gfx/models/portraits/main_texture/136_SPW.dds={
+		gfx/models/portraits/main_texture/136_SPW.dds = {
 			has_leader_flag = BA_skin_SPW
 		}
 	}
@@ -1186,10 +1207,10 @@ BA_clothes_137 = {
 BA_clothes_138 = {
 	default = gfx/models/portraits/main_texture/138.dds
 	leader = {
-		gfx/models/portraits/main_texture/138_SP.dds={
+		gfx/models/portraits/main_texture/138_SP.dds = {
 			has_leader_flag = BA_skin_SP
 		}
-		gfx/models/portraits/main_texture/138_SS.dds={
+		gfx/models/portraits/main_texture/138_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -1252,7 +1273,10 @@ BA_clothes_147 = {
 BA_clothes_148 = {
 	default = gfx/models/portraits/main_texture/148.dds
 	leader = {
-		gfx/models/portraits/main_texture/148_SS.dds={
+		gfx/models/portraits/main_texture/148_SP.dds = {
+			has_leader_flag = BA_skin_SP
+		}
+		gfx/models/portraits/main_texture/148_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -1261,7 +1285,10 @@ BA_clothes_148 = {
 BA_clothes_149 = {
 	default = gfx/models/portraits/main_texture/149.dds
 	leader = {
-		gfx/models/portraits/main_texture/149_SS.dds={
+		gfx/models/portraits/main_texture/149_SP.dds = {
+			has_leader_flag = BA_skin_SP
+		}
+		gfx/models/portraits/main_texture/149_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -1270,7 +1297,10 @@ BA_clothes_149 = {
 BA_clothes_150 = {
 	default = gfx/models/portraits/main_texture/150.dds
 	leader = {
-		gfx/models/portraits/main_texture/150_SS.dds={
+		gfx/models/portraits/main_texture/150_SP.dds = {
+			has_leader_flag = BA_skin_SP
+		}
+		gfx/models/portraits/main_texture/150_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -1279,7 +1309,10 @@ BA_clothes_150 = {
 BA_clothes_151 = {
 	default = gfx/models/portraits/main_texture/151.dds
 	leader = {
-		gfx/models/portraits/main_texture/151_SS.dds={
+		gfx/models/portraits/main_texture/151_SP.dds = {
+			has_leader_flag = BA_skin_SP
+		}
+		gfx/models/portraits/main_texture/151_SS.dds = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
@@ -1332,3 +1365,4 @@ BA_clothes_159 = {
 	leader = {
 	}
 }
+

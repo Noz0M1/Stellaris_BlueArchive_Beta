@@ -579,6 +579,39 @@ leader_special_084_CL = {
 	sorting_priority = 998
 }
 
+#085_SS 和泉元艾米（泳装） 如鱼得水
+leader_special_085_SS = {
+	cost = 0
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R51.dds"
+	randomized = no
+	# 科研船及其他
+	modifier = {
+		ship_speed_mult = 2
+		science_ship_survey_speed = 0.25
+	}
+	leader_class = {
+		scientist
+	}
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#086_CD 明星日鞠（寒冷） 超天才冰雪风美少女☆
+leader_special_086_CD = {
+	cost = 0
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R66.dds"
+	randomized = no
+	# 科研船及其他
+	modifier = {
+		ship_speed_mult = -0.15
+	}
+	leader_class = {
+		scientist
+	}
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
 #087_SP 乙花菫（体操服） 运动迸发
 leader_special_087_SP = {
 	cost = 0
