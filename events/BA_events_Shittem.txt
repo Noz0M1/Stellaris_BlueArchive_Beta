@@ -176,7 +176,6 @@ country_event = {
 			}
 			set_council_position = councilor_defense_kivotos
 		}
-
 		#非特有起源的arona
 		country_event = {
 			id = BA_Shittem.0120
@@ -470,7 +469,6 @@ country_event = {
 		name = BA_Shittem.0998.a
 	}
 }
-
 
 #####################
 ###    主界面   
@@ -884,8 +882,8 @@ country_event = {
 	}
 }
 
+#格赫娜
 country_event = {
-	#格赫娜
 	id = BA_Shittem.1031
 	is_triggered_only = yes
 	title = "BLANK_TEXT"
@@ -909,8 +907,8 @@ country_event = {
 	}
 }
 
+#阿拜多斯
 country_event = {
-	#阿拜多斯
 	id = BA_Shittem.1032
 	is_triggered_only = yes
 	title = "BLANK_TEXT"
@@ -933,8 +931,8 @@ country_event = {
 	}
 }
 
+#百鬼夜行
 country_event = {
-	#百鬼夜行
 	id = BA_Shittem.1033
 	is_triggered_only = yes
 	title = "BLANK_TEXT"
@@ -957,8 +955,8 @@ country_event = {
 	}
 }
 
+#千年
 country_event = {
-	#千年
 	id = BA_Shittem.1034
 	is_triggered_only = yes
 	title = "BLANK_TEXT"
@@ -981,8 +979,8 @@ country_event = {
 	}
 }
 
+#赤冬
 country_event = {
-	#赤冬
 	id = BA_Shittem.1035
 	is_triggered_only = yes
 	title = "BLANK_TEXT"
@@ -1005,8 +1003,8 @@ country_event = {
 	}
 }
 
+#山海经
 country_event = {
-	#山海经
 	id = BA_Shittem.1036
 	is_triggered_only = yes
 	title = "BLANK_TEXT"
@@ -1029,8 +1027,8 @@ country_event = {
 	}
 }
 
+#圣三一
 country_event = {
-	#圣三一
 	id = BA_Shittem.1037
 	is_triggered_only = yes
 	title = "BLANK_TEXT"
@@ -1053,8 +1051,8 @@ country_event = {
 	}
 }
 
+#瓦尔基里
 country_event = {
-	#瓦尔基里
 	id = BA_Shittem.1038
 	is_triggered_only = yes
 	title = "BLANK_TEXT"
@@ -1077,8 +1075,8 @@ country_event = {
 	}
 }
 
+#待定
 country_event = {
-	#待定
 	id = BA_Shittem.1039
 	is_triggered_only = yes
 	title = "BLANK_TEXT"
@@ -1093,8 +1091,8 @@ country_event = {
 	}
 }
 
+#待定
 country_event = {
-	#待定
 	id = BA_Shittem.1040
 	is_triggered_only = yes
 	title = "BLANK_TEXT"
@@ -1109,8 +1107,8 @@ country_event = {
 	}
 }
 
+#待定
 country_event = {
-	#待定
 	id = BA_Shittem.1041
 	is_triggered_only = yes
 	title = "BLANK_TEXT"
@@ -1124,7 +1122,6 @@ country_event = {
 		default_hide_option = yes
 	}
 }
-
 
 ### 领袖储备
 # TODO：随特殊领袖储备更新
@@ -1155,6 +1152,30 @@ country_event = {
 		default_hide_option = yes
 	}
 	option = {
+		name = BA_Shittem.1311.title
+		custom_tooltip = BA_Shittem.1311.tip
+		allow = {
+			custom_tooltip_fail = {
+				text = BA_Shittem.1311.fail.1
+				capital_scope = {
+					exists = leader
+					this.leader.species = {
+						BA_has_halo_organic = yes
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			capital_scope = {
+				leader = {
+					leader_event = {
+						id = BA_Shittem.1310
+					}
+				}
+			}
+		}
+	}
+	option = {
 		name = BA_Shittem.1301.title
 		custom_tooltip = BA_Shittem.1301.tip
 		hidden_effect = {
@@ -1179,7 +1200,6 @@ country_event = {
 	}
 }
 
-
 country_event = {
 	id = BA_Shittem.1301
 	is_triggered_only = yes
@@ -1190,17 +1210,6 @@ country_event = {
 	picture_event_data = {
 		portrait = Arona0004
 		room = BA_03_room
-	}
-	trigger = {
-		NOT = {
-			has_country_flag = Communication_engaged
-		}
-	}
-	immediate = {
-		set_country_flag = Communication_engaged
-	}
-	after = {
-		remove_country_flag = Communication_engaged
 	}
 	option = {
 		name = BACK
@@ -1215,6 +1224,7 @@ country_event = {
 	#爱丽丝
 	option = {
 		name = NAME_Aris
+		is_dialog_only = yes
 		trigger = {
 			event_target:BA_Shittem_country = {
 				has_country_flag = BA_stored_SP_Aris_@root
@@ -1234,6 +1244,7 @@ country_event = {
 	#星野
 	option = {
 		name = NAME_Hoshino
+		is_dialog_only = yes
 		trigger = {
 			event_target:BA_Shittem_country = {
 				has_country_flag = BA_stored_SP_Hoshino_@root
@@ -1253,6 +1264,7 @@ country_event = {
 	#日奈
 	option = {
 		name = NAME_Hina
+		is_dialog_only = yes
 		trigger = {
 			event_target:BA_Shittem_country = {
 				has_country_flag = BA_stored_SP_Hina_@root
@@ -1272,6 +1284,7 @@ country_event = {
 	#未花
 	option = {
 		name = NAME_Mika
+		is_dialog_only = yes
 		trigger = {
 			event_target:BA_Shittem_country = {
 				has_country_flag = BA_stored_SP_Mika_@root
@@ -1291,6 +1304,7 @@ country_event = {
 	#优香-总督
 	option = {
 		name = NAME_Yuuka
+		is_dialog_only = yes
 		trigger = {
 			event_target:BA_Shittem_country = {
 				has_country_flag = BA_stored_SP_Yuuka_@root
@@ -1310,6 +1324,7 @@ country_event = {
 	#亚津子
 	option = {
 		name = NAME_Atsuko
+		is_dialog_only = yes
 		trigger = {
 			event_target:BA_Shittem_country = {
 				has_country_flag = BA_stored_SP_Atsuko_@root
@@ -1329,6 +1344,7 @@ country_event = {
 	#纱织
 	option = {
 		name = NAME_Saori
+		is_dialog_only = yes
 		trigger = {
 			event_target:BA_Shittem_country = {
 				has_country_flag = BA_stored_SP_Saori_@root
@@ -1369,6 +1385,180 @@ country_event = {
 	### 特殊定制
 }
 
+##换装
+leader_event = {
+	id = BA_Shittem.1310
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		owner = {
+			country_event = {
+				id = BA_Shittem.1311
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_Shittem.1311
+	is_triggered_only = yes
+	title = BA_Shittem.1311.title
+	desc = BA_Shittem.1311.desc
+	diplomatic = yes
+	custom_gui = BA_window
+	picture_event_data = {
+		portrait = Arona0003
+		room = BA_03_room
+	}
+	option = {
+		name = BA_Shittem.1311.exit
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.1300
+			}
+		}
+	}
+	option = {
+		name = BA_Shittem.1311.ORG
+		is_dialog_only = yes
+		response_text = BA_Shittem.1311.ORG.re
+		custom_tooltip = BA_Shittem.1311.ORG.tip
+		hidden_effect = {
+			from = {
+				BA_remove_skin = yes
+				if = {
+					limit = {
+						has_skill > 2
+					}
+					BA_change_skin_trait = yes
+				}
+			}
+		}
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = GD
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = OLD
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = SS
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = CYC
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = XMS
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = UNF
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = PJ
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = CD
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = NS
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = MK
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = SNT
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = YN
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = DL
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = MD
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = BN
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = BD
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = CL
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = HS
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = FN
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = JK1
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = JK2
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = JC
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = NVG
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = DR
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = COL
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = CMP
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = KMN
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = AGT
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = SPW
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = SP
+	}
+}
+
+##领袖列表
 #爱丽丝
 country_event = {
 	id = BA_Shittem.1351
@@ -1537,7 +1727,6 @@ country_event = {
 	}
 	###
 }
-
 
 ### 提示
 #故障提示

@@ -1,3 +1,4 @@
+##### Leaders
 BA_leader_is_renamed = {
     # scope: leader
     OR = {
@@ -285,3 +286,456 @@ BA_leader_has_same = {
         }
     }
 }
+
+BA_rename_special_check_1 = {
+    has_skill > 2
+    species = {
+        BA_has_halo_organic = yes
+    }
+    OR = {
+        leader_class = commander
+        leader_class = scientist
+        leader_class = official
+    }
+    NOR = {
+        has_trait = leader_special_000
+        has_trait = leader_special_001
+        has_trait = leader_special_002
+        has_trait = leader_special_003
+        has_trait = leader_special_004
+        has_trait = leader_special_005
+        has_trait = leader_special_005
+        has_trait = leader_special_007
+        #has_trait = leader_special_008
+        has_trait = leader_special_009
+        has_trait = leader_special_009
+        has_trait = leader_special_011
+        has_trait = leader_special_012
+        has_trait = leader_special_015
+        has_trait = leader_special_016
+        has_trait = leader_special_017
+        has_trait = leader_special_018
+        # has_trait = leader_special_019
+        # has_trait = leader_special_019
+        has_trait = leader_special_021
+        has_trait = leader_special_022
+        has_trait = leader_special_023
+        has_trait = leader_special_024
+        has_trait = leader_special_025
+        has_trait = leader_special_026
+        has_trait = leader_special_027
+        has_trait = leader_special_028
+        has_trait = leader_special_029
+        has_trait = leader_special_030
+        has_trait = leader_special_031
+        # has_trait = leader_special_032
+        has_trait = leader_special_033
+        has_trait = leader_special_034
+        has_trait = leader_special_035
+        has_trait = leader_special_036
+        has_trait = leader_special_037
+        has_trait = leader_special_038
+        has_trait = leader_special_039
+        has_trait = leader_special_040
+        has_trait = leader_special_041
+        has_trait = leader_special_042
+        has_trait = leader_special_043
+        # has_trait = leader_special_044
+        has_trait = leader_special_045
+        # has_trait = leader_special_046
+        has_trait = leader_special_047
+        has_trait = leader_special_048
+        has_trait = leader_special_049
+        has_trait = leader_special_050
+        has_trait = leader_special_051
+        # has_trait = leader_special_052
+        # has_trait = leader_special_053
+        has_trait = leader_special_054
+        has_trait = leader_special_055
+        # has_trait = leader_special_056
+        has_trait = leader_special_057
+        has_trait = leader_special_058
+        has_trait = leader_special_059
+        has_trait = leader_special_060
+        has_trait = leader_special_061
+        has_trait = leader_special_062
+        has_trait = leader_special_063
+        has_trait = leader_special_064
+        has_trait = leader_special_065
+        has_trait = leader_special_066
+        has_trait = leader_special_067
+        has_trait = leader_special_068
+        has_trait = leader_special_069
+        has_trait = leader_special_070
+        # has_trait = leader_special_071
+        # has_trait = leader_special_072
+        # has_trait = leader_special_073
+        has_trait = leader_special_075
+        has_trait = leader_special_076
+        has_trait = leader_special_077
+        # has_trait = leader_special_078
+        # has_trait = leader_special_079
+        # has_trait = leader_special_080
+        has_trait = leader_special_081
+        has_trait = leader_special_082
+        has_trait = leader_special_083
+        has_trait = leader_special_084
+        has_trait = leader_special_085
+        has_trait = leader_special_086
+        has_trait = leader_special_087
+        has_trait = leader_special_088
+        has_trait = leader_special_089
+        has_trait = leader_special_090
+        has_trait = leader_special_091
+        has_trait = leader_special_092
+        has_trait = leader_special_093
+        has_trait = leader_special_094
+        has_trait = leader_special_095
+        has_trait = leader_special_096
+        # has_trait = leader_special_097
+        has_trait = leader_special_098
+        has_trait = leader_special_099
+        has_trait = leader_special_100
+        has_trait = leader_special_101
+        has_trait = leader_special_102
+        has_trait = leader_special_103
+        has_trait = leader_special_104
+        has_trait = leader_special_105
+        has_trait = leader_special_106
+        has_trait = leader_special_107
+        has_trait = leader_special_108
+        has_trait = leader_special_109
+        has_trait = leader_special_110
+        has_trait = leader_special_111
+        has_trait = leader_special_112
+        # has_trait = leader_special_113
+        has_trait = leader_special_114
+        has_trait = leader_special_115
+        has_trait = leader_special_116
+        has_trait = leader_special_117
+        has_trait = leader_special_118
+        has_trait = leader_special_119
+        has_trait = leader_special_120
+        has_trait = leader_special_121
+        has_trait = leader_special_122
+        has_trait = leader_special_123
+        has_trait = leader_special_124
+        has_trait = leader_special_125
+        has_trait = leader_special_126
+        has_trait = leader_special_127
+        has_trait = leader_special_128
+        has_trait = leader_special_129
+        has_trait = leader_special_130
+        has_trait = leader_special_131
+        has_trait = leader_special_132
+        has_trait = leader_special_133
+        has_trait = leader_special_134
+        has_trait = leader_special_135
+        has_trait = leader_special_136
+        has_trait = leader_special_137
+        has_trait = leader_special_138
+        has_trait = leader_special_139
+        has_trait = leader_special_140
+        has_trait = leader_special_141
+        has_trait = leader_special_142
+        has_trait = leader_special_143
+        has_trait = leader_special_144
+        has_trait = leader_special_145
+        has_trait = leader_special_146
+        has_trait = leader_special_147
+        has_trait = leader_special_148
+        has_trait = leader_special_149
+        has_trait = leader_special_150
+        has_trait = leader_special_151
+    }
+}
+
+##### Leader Skins
+BA_leader_has_skin_GD = {
+    OR = {
+        has_leader_flag = leader_BA_021
+        has_leader_flag = leader_BA_028
+        has_leader_flag = leader_BA_029
+    }
+}
+
+BA_leader_has_skin_OLD = {
+    OR = {
+        has_leader_flag = leader_BA_068
+        has_leader_flag = leader_BA_128
+    }
+}
+
+BA_leader_has_skin_SS = {
+    OR = {
+        has_leader_flag = leader_BA_003
+        has_leader_flag = leader_BA_004
+        has_leader_flag = leader_BA_005
+        has_leader_flag = leader_BA_006
+        has_leader_flag = leader_BA_007
+        has_leader_flag = leader_BA_023
+        has_leader_flag = leader_BA_024
+        has_leader_flag = leader_BA_025
+        has_leader_flag = leader_BA_030
+        has_leader_flag = leader_BA_033
+        has_leader_flag = leader_BA_039
+        has_leader_flag = leader_BA_041
+        has_leader_flag = leader_BA_050
+        has_leader_flag = leader_BA_085
+        has_leader_flag = leader_BA_115
+        has_leader_flag = leader_BA_116
+        has_leader_flag = leader_BA_117
+        has_leader_flag = leader_BA_118
+        has_leader_flag = leader_BA_130
+        has_leader_flag = leader_BA_133
+        has_leader_flag = leader_BA_135
+        has_leader_flag = leader_BA_138
+        has_leader_flag = leader_BA_148
+        has_leader_flag = leader_BA_149
+        has_leader_flag = leader_BA_150
+        has_leader_flag = leader_BA_151
+    }
+}
+
+BA_leader_has_skin_CYC = {
+    OR = {
+        has_leader_flag = leader_BA_003
+    }
+}
+
+BA_leader_has_skin_XMS = {
+    OR = {
+        has_leader_flag = leader_BA_122
+        has_leader_flag = leader_BA_124
+    }
+}
+
+BA_leader_has_skin_UNF = {
+    OR = {
+        has_leader_flag = leader_BA_102
+        has_leader_flag = leader_BA_103
+    }
+}
+
+BA_leader_has_skin_PJ = {
+    OR = {
+        has_leader_flag = leader_BA_039
+    }
+}
+
+BA_leader_has_skin_CD = {
+    OR = {
+        has_leader_flag = leader_BA_086
+    }
+}
+
+BA_leader_has_skin_NS = {
+    OR = {
+        has_leader_flag = leader_BA_124
+    }
+}
+
+BA_leader_has_skin_MK = {
+    OR = {
+        has_leader_flag = leader_BA_017
+    }
+}
+
+BA_leader_has_skin_SNT = {
+    OR = {
+        has_leader_flag = leader_BA_134
+    }
+}
+
+BA_leader_has_skin_YN = {
+    OR = {
+        has_leader_flag = leader_BA_108
+    }
+}
+
+BA_leader_has_skin_DL = {
+    OR = {
+        has_leader_flag = leader_BA_107
+    }
+}
+
+BA_leader_has_skin_MD = {
+    OR = {
+        has_leader_flag = leader_BA_093
+        has_leader_flag = leader_BA_094
+        has_leader_flag = leader_BA_095
+        has_leader_flag = leader_BA_096
+    }
+}
+
+BA_leader_has_skin_BN = {
+    OR = {
+        has_leader_flag = leader_BA_091
+        has_leader_flag = leader_BA_102
+        has_leader_flag = leader_BA_103
+        has_leader_flag = leader_BA_104
+        has_leader_flag = leader_BA_105
+        has_leader_flag = leader_BA_106
+    }
+}
+
+BA_leader_has_skin_BD = {
+    OR = {
+        has_leader_flag = leader_BA_126
+        has_leader_flag = leader_BA_127
+        has_leader_flag = leader_BA_128
+        has_leader_flag = leader_BA_129
+    }
+}
+
+BA_leader_has_skin_CL = {
+    OR = {
+        has_leader_flag = leader_BA_082
+        has_leader_flag = leader_BA_083
+        has_leader_flag = leader_BA_084
+        has_leader_flag = leader_BA_122
+    }
+}
+
+BA_leader_has_skin_HS = {
+    OR = {
+        has_leader_flag = leader_BA_038
+        has_leader_flag = leader_BA_061
+        has_leader_flag = leader_BA_062
+        has_leader_flag = leader_BA_067
+        has_leader_flag = leader_BA_070
+    }
+}
+
+BA_leader_has_skin_FN = {
+    OR = {
+        has_leader_flag = leader_BA_024
+    }
+}
+
+BA_leader_has_skin_JK1 = {
+    OR = {
+        has_leader_flag = leader_BA_006
+        has_leader_flag = leader_BA_007
+    }
+}
+
+BA_leader_has_skin_JK2 = {
+    OR = {
+        has_leader_flag = leader_BA_006
+    }
+}
+
+BA_leader_has_skin_JC = {
+    OR = {
+        has_leader_flag = leader_BA_017
+    }
+}
+
+BA_leader_has_skin_NVG = {
+    OR = {
+        has_leader_flag = leader_BA_035
+        has_leader_flag = leader_BA_040
+        has_leader_flag = leader_BA_075
+        has_leader_flag = leader_BA_076
+        has_leader_flag = leader_BA_081
+        has_leader_flag = leader_BA_086
+        has_leader_flag = leader_BA_092
+    }
+}
+
+BA_leader_has_skin_DR = {
+    OR = {
+        has_leader_flag = leader_BA_011
+        has_leader_flag = leader_BA_034
+        has_leader_flag = leader_BA_035
+        has_leader_flag = leader_BA_036
+        has_leader_flag = leader_BA_037
+        has_leader_flag = leader_BA_039
+        has_leader_flag = leader_BA_040
+        has_leader_flag = leader_BA_051
+        has_leader_flag = leader_BA_054
+        has_leader_flag = leader_BA_134
+    }
+}
+
+BA_leader_has_skin_COL = {
+    OR = {
+        has_leader_flag = leader_BA_003
+    }
+}
+
+BA_leader_has_skin_CMP = {
+    OR = {
+        has_leader_flag = leader_BA_098
+        has_leader_flag = leader_BA_099
+        has_leader_flag = leader_BA_100
+        has_leader_flag = leader_BA_101
+    }
+}
+
+BA_leader_has_skin_KMN = {
+    OR = {
+        has_leader_flag = leader_BA_005
+        has_leader_flag = leader_BA_034
+        has_leader_flag = leader_BA_035
+        has_leader_flag = leader_BA_036
+        has_leader_flag = leader_BA_037
+        has_leader_flag = leader_BA_042
+        has_leader_flag = leader_BA_047
+        has_leader_flag = leader_BA_048
+        has_leader_flag = leader_BA_049
+        has_leader_flag = leader_BA_050
+    }
+}
+
+BA_leader_has_skin_AGT = {
+    OR = {
+        has_leader_flag = leader_BA_036
+        has_leader_flag = leader_BA_037
+    }
+}
+
+BA_leader_has_skin_SPW = {
+    OR = {
+        has_leader_flag = leader_BA_049
+        has_leader_flag = leader_BA_092
+        has_leader_flag = leader_BA_132
+        has_leader_flag = leader_BA_136
+    }
+}
+
+BA_leader_has_skin_SP = {
+    OR = {
+        has_leader_flag = leader_BA_003
+        has_leader_flag = leader_BA_004
+        has_leader_flag = leader_BA_005
+        has_leader_flag = leader_BA_006
+        has_leader_flag = leader_BA_007
+        has_leader_flag = leader_BA_023
+        has_leader_flag = leader_BA_025
+        has_leader_flag = leader_BA_026
+        has_leader_flag = leader_BA_029
+        has_leader_flag = leader_BA_033
+        has_leader_flag = leader_BA_040
+        has_leader_flag = leader_BA_047
+        has_leader_flag = leader_BA_048
+        has_leader_flag = leader_BA_050
+        has_leader_flag = leader_BA_083
+        has_leader_flag = leader_BA_087
+        has_leader_flag = leader_BA_090
+        has_leader_flag = leader_BA_101
+        has_leader_flag = leader_BA_116
+        has_leader_flag = leader_BA_117
+        has_leader_flag = leader_BA_118
+        has_leader_flag = leader_BA_120
+        has_leader_flag = leader_BA_129
+        has_leader_flag = leader_BA_135
+        has_leader_flag = leader_BA_138
+        has_leader_flag = leader_BA_148
+        has_leader_flag = leader_BA_149
+        has_leader_flag = leader_BA_150
+        has_leader_flag = leader_BA_151
+    }
+}
+

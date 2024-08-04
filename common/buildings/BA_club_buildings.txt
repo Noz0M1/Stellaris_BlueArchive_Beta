@@ -101,6 +101,9 @@ building_BA_Locker_room = {
 	convert_to = {
 		building_BA_Schale_office
 	}
+	triggered_desc = {
+		text = building_BA_Locker_room_tip
+	}
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner

@@ -1,3 +1,125 @@
+##### 系统初始化
+#为所有领袖施加检测印记
+BA_set_rename_flag = {
+	every_owned_leader = {
+		limit = {
+			species = {
+				BA_has_halo_organic = yes
+			}
+		}
+		set_leader_flag = BA_rename_target
+	}
+	every_pool_leader = {
+		limit = {
+			species = {
+				BA_has_halo_organic = yes
+			}
+		}
+		set_leader_flag = BA_rename_target
+	}
+	every_envoy = {
+		limit = {
+			species = {
+				BA_has_halo_organic = yes
+			}
+		}
+		set_leader_flag = BA_rename_target
+	}
+	# 重命名豁免
+	every_owned_leader = {
+		limit = {
+			OR = {
+				is_same_value = owner.ruler
+				has_leader_flag = star_oath_ruler
+			}
+		}
+		remove_leader_flag = BA_rename_target
+	}
+}
+
+#遍历所有领袖，执行重命名 country
+BA_iterate_rename_flag = {
+	optimize_memory
+	while = {
+		limit = {
+			any_owned_leader = {
+				has_leader_flag = BA_rename_target
+			}
+		}
+		random_owned_leader = {
+			limit = {
+				has_leader_flag = BA_rename_target
+			}
+			remove_leader_flag = BA_rename_target
+			#检查命名标志
+			BA_check_rename_flag = yes
+			#按命名标志命名
+			BA_rename_leader = yes
+		}
+	}
+	while = {
+		limit = {
+			any_pool_leader = {
+				has_leader_flag = BA_rename_target
+			}
+		}
+		random_pool_leader = {
+			limit = {
+				has_leader_flag = BA_rename_target
+			}
+			remove_leader_flag = BA_rename_target
+			#检查命名标志
+			BA_check_rename_flag = yes
+			#按命名标志命名
+			BA_rename_leader = yes
+		}
+	}
+	while = {
+		limit = {
+			any_envoy = {
+				has_leader_flag = BA_rename_target
+			}
+		}
+		random_envoy = {
+			limit = {
+				has_leader_flag = BA_rename_target
+			}
+			remove_leader_flag = BA_rename_target
+			#特使专用处理
+			BA_rename_envoy = yes
+		}
+	}
+}
+
+#生成事件领袖时，为重复的领袖更名 leader
+BA_event_leader_replace = {
+	set_leader_flag = $Leader_flag$
+	owner = {
+		every_owned_leader = {
+			limit = {
+				has_leader_flag = $Leader_flag$
+				NOT = {
+					is_same_value = prevprev
+				}
+			}
+			remove_leader_flag = $Leader_flag$
+			BA_remove_sp_trait = yes
+			BA_check_rename_flag = yes
+			BA_rename_leader = yes
+		}
+		every_pool_leader = {
+			limit = {
+				has_leader_flag = $Leader_flag$
+			}
+			remove_leader_flag = $Leader_flag$
+			BA_remove_sp_trait = yes
+			BA_check_rename_flag = yes
+			BA_rename_leader = yes
+		}
+	}
+}
+
+##### 领袖重命名与立绘
 #按设置执行重命名操作 leader
 BA_rename_leader = {
 	if = {
@@ -817,7 +939,14 @@ BA_set_name = {
 	}
 }
 
-#为领袖添加社团特质 001~159
+#特使专用处理
+BA_rename_envoy= {
+	change_leader_portrait = BA_carefree
+	set_name = BA_envoy
+}
+
+##### 特质处理 001~159
+#为领袖添加社团特质
 BA_add_club_trait = {
 	optimize_memory
 	switch = {
@@ -1305,488 +1434,1482 @@ BA_add_club_trait = {
 	}
 }
 
-#为领袖添加特殊特质 001~159
-BA_add_special_trait = {
+#去除所有换装标志 leader
+BA_remove_skin= {
+	remove_leader_flag = BA_skin_GD
+	remove_leader_flag = BA_skin_OLD
+	remove_leader_flag = BA_skin_SS
+	remove_leader_flag = BA_skin_CYC
+	remove_leader_flag = BA_skin_XMS
+	remove_leader_flag = BA_skin_UNF
+	remove_leader_flag = BA_skin_PJ
+	remove_leader_flag = BA_skin_CD
+	remove_leader_flag = BA_skin_NS
+	remove_leader_flag = BA_skin_MK
+	remove_leader_flag = BA_skin_SNT
+	remove_leader_flag = BA_skin_YN
+	remove_leader_flag = BA_skin_DL
+	remove_leader_flag = BA_skin_MD
+	remove_leader_flag = BA_skin_BN
+	remove_leader_flag = BA_skin_BD
+	remove_leader_flag = BA_skin_CL
+	remove_leader_flag = BA_skin_HS
+	remove_leader_flag = BA_skin_FN
+	remove_leader_flag = BA_skin_JK1
+	remove_leader_flag = BA_skin_JK2
+	remove_leader_flag = BA_skin_JC
+	remove_leader_flag = BA_skin_NVG
+	remove_leader_flag = BA_skin_DR
+	remove_leader_flag = BA_skin_COL
+	remove_leader_flag = BA_skin_CMP
+	remove_leader_flag = BA_skin_KMN
+	remove_leader_flag = BA_skin_AGT
+	remove_leader_flag = BA_skin_SPW
+	remove_leader_flag = BA_skin_SP
+}
+
+#移除特殊特质 leader
+BA_remove_sp_trait = {
 	optimize_memory
-	#谨慎展开
+	remove_trait = leader_special_001
+	remove_trait = leader_special_002
+	remove_trait = leader_special_003
+	remove_trait = leader_special_003_CYC
+	remove_trait = leader_special_004
+	remove_trait = leader_special_004_SS
+	remove_trait = leader_special_005
+	remove_trait = leader_special_005_KMN
+	remove_trait = leader_special_006
+	remove_trait = leader_special_006_SS
+	remove_trait = leader_special_007
+	remove_trait = leader_special_007_SS
+	# remove_trait = leader_special_008
+	remove_trait = leader_special_009
+	remove_trait = leader_special_010
+	remove_trait = leader_special_011
+	remove_trait = leader_special_012
+	remove_trait = leader_special_013
+	remove_trait = leader_special_014
+	remove_trait = leader_special_015
+	remove_trait = leader_special_016
+	remove_trait = leader_special_017
+	remove_trait = leader_special_018
+	# remove_trait = leader_special_019
+	# remove_trait = leader_special_020
+	remove_trait = leader_special_021
+	remove_trait = leader_special_022
+	remove_trait = leader_special_023
+	remove_trait = leader_special_023_SP
+	remove_trait = leader_special_023_SS
+	remove_trait = leader_special_024
+	remove_trait = leader_special_024_FN
+	remove_trait = leader_special_024_SS
+	remove_trait = leader_special_025
+	remove_trait = leader_special_025_SP
+	remove_trait = leader_special_025_SS
+	remove_trait = leader_special_026
+	remove_trait = leader_special_026_SP
+	remove_trait = leader_special_027
+	remove_trait = leader_special_028
+	remove_trait = leader_special_029
+	# remove_trait = leader_special_029_SP
+	remove_trait = leader_special_030
+	remove_trait = leader_special_030_SS
+	remove_trait = leader_special_031
+	# remove_trait = leader_special_032
+	remove_trait = leader_special_033
+	remove_trait = leader_special_033_SS
+	remove_trait = leader_special_034
+	remove_trait = leader_special_034_KMN
+	remove_trait = leader_special_035
+	remove_trait = leader_special_035_KMN
+	remove_trait = leader_special_036
+	remove_trait = leader_special_036_KMN
+	remove_trait = leader_special_037
+	remove_trait = leader_special_037_KMN
+	remove_trait = leader_special_038
+	remove_trait = leader_special_038_HS
+	remove_trait = leader_special_039
+	remove_trait = leader_special_039_PJ
+	remove_trait = leader_special_039_SS
+	remove_trait = leader_special_040
+	remove_trait = leader_special_041
+	remove_trait = leader_special_041_SS
+	remove_trait = leader_special_042
+	remove_trait = leader_special_042_KMN
+	remove_trait = leader_special_043
+	# remove_trait = leader_special_044
+	remove_trait = leader_special_045
+	# remove_trait = leader_special_046
+	remove_trait = leader_special_047
+	remove_trait = leader_special_048
+	remove_trait = leader_special_049
+	remove_trait = leader_special_050
+	remove_trait = leader_special_050_SS
+	remove_trait = leader_special_051
+	# remove_trait = leader_special_052
+	# remove_trait = leader_special_053
+	remove_trait = leader_special_054
+	remove_trait = leader_special_055
+	# remove_trait = leader_special_056
+	remove_trait = leader_special_057
+	remove_trait = leader_special_058
+	remove_trait = leader_special_059
+	remove_trait = leader_special_060
+	remove_trait = leader_special_061
+	remove_trait = leader_special_061_HS
+	remove_trait = leader_special_062
+	remove_trait = leader_special_063
+	remove_trait = leader_special_064
+	remove_trait = leader_special_065
+	remove_trait = leader_special_066
+	remove_trait = leader_special_067
+	remove_trait = leader_special_067_HS
+	remove_trait = leader_special_068
+	remove_trait = leader_special_069
+	remove_trait = leader_special_070
+	# remove_trait = leader_special_071
+	# remove_trait = leader_special_072
+	# remove_trait = leader_special_073
+	# remove_trait = leader_special_074
+	remove_trait = leader_special_075
+	remove_trait = leader_special_076
+	remove_trait = leader_special_077
+	# remove_trait = leader_special_078
+	# remove_trait = leader_special_079
+	# remove_trait = leader_special_080
+	remove_trait = leader_special_081
+	remove_trait = leader_special_082
+	remove_trait = leader_special_082_CL
+	remove_trait = leader_special_083
+	remove_trait = leader_special_083_CL
+	remove_trait = leader_special_083_SP
+	remove_trait = leader_special_084
+	remove_trait = leader_special_085
+	remove_trait = leader_special_085_SS
+	remove_trait = leader_special_086
+	remove_trait = leader_special_086_CD
+	remove_trait = leader_special_087
+	remove_trait = leader_special_088
+	remove_trait = leader_special_089
+	remove_trait = leader_special_090
+	remove_trait = leader_special_091
+	remove_trait = leader_special_093
+	remove_trait = leader_special_094
+	remove_trait = leader_special_095
+	remove_trait = leader_special_096
+	# remove_trait = leader_special_097
+	remove_trait = leader_special_098
+	remove_trait = leader_special_099
+	remove_trait = leader_special_100
+	remove_trait = leader_special_101
+	remove_trait = leader_special_102
+	remove_trait = leader_special_102_BN
+	remove_trait = leader_special_102_UNF
+	remove_trait = leader_special_103
+	remove_trait = leader_special_103_BN
+	remove_trait = leader_special_103_UNF
+	remove_trait = leader_special_104
+	remove_trait = leader_special_104_BN
+	remove_trait = leader_special_105
+	remove_trait = leader_special_106
+	remove_trait = leader_special_106_BN
+	remove_trait = leader_special_107
+	remove_trait = leader_special_107_DL
+	remove_trait = leader_special_108
+	remove_trait = leader_special_108_YN
+	remove_trait = leader_special_109
+	remove_trait = leader_special_110
+	remove_trait = leader_special_111
+	remove_trait = leader_special_112
+	# remove_trait = leader_special_113
+	remove_trait = leader_special_114
+	remove_trait = leader_special_115
+	remove_trait = leader_special_115_SS
+	remove_trait = leader_special_116
+	remove_trait = leader_special_116_SS
+	remove_trait = leader_special_117
+	remove_trait = leader_special_118
+	remove_trait = leader_special_118_SS
+	remove_trait = leader_special_119
+	remove_trait = leader_special_120
+	remove_trait = leader_special_121
+	remove_trait = leader_special_122
+	remove_trait = leader_special_122_CL
+	remove_trait = leader_special_122_XMS
+	remove_trait = leader_special_123
+	remove_trait = leader_special_124
+	remove_trait = leader_special_124_NS
+	remove_trait = leader_special_124_XMS
+	remove_trait = leader_special_125
+	remove_trait = leader_special_126
+	remove_trait = leader_special_127
+	remove_trait = leader_special_128
+	remove_trait = leader_special_129
+	remove_trait = leader_special_130
+	remove_trait = leader_special_130_SS
+	remove_trait = leader_special_131
+	remove_trait = leader_special_132
+	remove_trait = leader_special_132_SPW
+	remove_trait = leader_special_133
+	remove_trait = leader_special_133_SS
+	remove_trait = leader_special_134
+	remove_trait = leader_special_134_SNT
+	remove_trait = leader_special_135
+	remove_trait = leader_special_135_SS
+	remove_trait = leader_special_136
+	remove_trait = leader_special_137
+	remove_trait = leader_special_138
+	remove_trait = leader_special_138_SP
+	remove_trait = leader_special_138_SS
+	remove_trait = leader_special_139
+	remove_trait = leader_special_140
+	remove_trait = leader_special_141
+	remove_trait = leader_special_142
+	remove_trait = leader_special_143
+	remove_trait = leader_special_144
+	remove_trait = leader_special_145
+	remove_trait = leader_special_146
+	remove_trait = leader_special_147
+	remove_trait = leader_special_148
+	remove_trait = leader_special_149
+	remove_trait = leader_special_150
+	remove_trait = leader_special_151
+	# remove_trait = leader_special_152
+	# remove_trait = leader_special_153
+	# remove_trait = leader_special_154
+	# remove_trait = leader_special_155
+	# remove_trait = leader_special_156
+	# remove_trait = leader_special_157
+	# remove_trait = leader_special_158
+	# remove_trait = leader_special_159
+}
+
+#检测领袖标志和换装标志，更换个人特质 leader
+BA_change_skin_trait = {
+	BA_remove_sp_trait = yes
 	switch = {
 		trigger = has_leader_flag
 		leader_BA_001 = {
-			add_trait = leader_special_001
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_001
+				}
+			}
 		}
 		leader_BA_002 = {
-			add_trait = leader_special_002
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_002
+				}
+			}
 		}
 		leader_BA_003 = {
-			add_trait = leader_special_003
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_CYC = {
+					add_trait = leader_special_003_CYC
+				}
+				default = {
+					add_trait = leader_special_003
+				}
+			}
 		}
 		leader_BA_004 = {
-			add_trait = leader_special_004
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = leader_special_004_SS
+				}
+				default = {
+					add_trait = leader_special_004
+				}
+			}
 		}
 		leader_BA_005 = {
-			add_trait = leader_special_005
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_KMN = {
+					add_trait = leader_special_005_KMN
+				}
+				default = {
+					add_trait = leader_special_005
+				}
+			}
 		}
 		leader_BA_006 = {
-			add_trait = leader_special_006
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = leader_special_006_SS
+				}
+				default = {
+					add_trait = leader_special_006
+				}
+			}
 		}
 		leader_BA_007 = {
-			add_trait = leader_special_007
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = leader_special_007_SS
+				}
+				default = {
+					add_trait = leader_special_007
+				}
+			}
 		}
-		# leader_BA_008 = {
-		# 	add_trait = leader_special_008
-		# }
 		leader_BA_009 = {
-			add_trait = leader_special_009
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_009
+				}
+			}
 		}
 		leader_BA_010 = {
-			add_trait = leader_special_010
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_010
+				}
+			}
 		}
 		leader_BA_011 = {
-			add_trait = leader_special_011
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_011
+				}
+			}
 		}
 		leader_BA_012 = {
-			add_trait = leader_special_012
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_012
+				}
+			}
 		}
 		leader_BA_013 = {
-			add_trait = leader_special_013
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_013
+				}
+			}
 		}
 		leader_BA_014 = {
-			add_trait = leader_special_014
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_014
+				}
+			}
 		}
 		leader_BA_015 = {
-			add_trait = leader_special_015
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_015
+				}
+			}
 		}
 		leader_BA_016 = {
-			add_trait = leader_special_016
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_016
+				}
+			}
 		}
 		leader_BA_017 = {
-			add_trait = leader_special_017
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_017
+				}
+			}
 		}
-		leader_BA_018 = {
-			add_trait = leader_special_018
-		}
-		# leader_BA_019 = {
-		# 	add_trait = leader_special_019
-		# }
-		# leader_BA_020 = {
-		# 	add_trait = leader_special_020
-		# }
 		leader_BA_021 = {
-			add_trait = leader_special_021
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_021
+				}
+			}
 		}
 		leader_BA_022 = {
-			add_trait = leader_special_022
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_022
+				}
+			}
 		}
 		leader_BA_023 = {
-			add_trait = leader_special_023
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SP = {
+					add_trait = leader_special_023_SP
+				}
+				BA_skin_SS = {
+					add_trait = leader_special_023_SS
+				}
+				default = {
+					add_trait = leader_special_023
+				}
+			}
 		}
 		leader_BA_024 = {
-			add_trait = leader_special_024
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_FN = {
+					add_trait = leader_special_024_FN
+				}
+				BA_skin_SS = {
+					add_trait = leader_special_024_SS
+				}
+				default = {
+					add_trait = leader_special_024
+				}
+			}
 		}
 		leader_BA_025 = {
-			add_trait = leader_special_025
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SP = {
+					add_trait = leader_special_025_SP
+				}
+				BA_skin_SS = {
+					add_trait = leader_special_025_SS
+				}
+				default = {
+					add_trait = leader_special_025
+				}
+			}
 		}
 		leader_BA_026 = {
-			add_trait = leader_special_026
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SP = {
+					add_trait = leader_special_026_SP
+				}
+				default = {
+					add_trait = leader_special_026
+				}
+			}
 		}
 		leader_BA_027 = {
-			add_trait = leader_special_027
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_027
+				}
+			}
 		}
 		leader_BA_028 = {
-			add_trait = leader_special_028
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_028
+				}
+			}
 		}
 		leader_BA_029 = {
-			add_trait = leader_special_029
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SP = {
+					add_trait = leader_special_029_SP
+				}
+				default = {
+					add_trait = leader_special_029
+				}
+			}
 		}
 		leader_BA_030 = {
-			add_trait = leader_special_030
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = leader_special_030_SS
+				}
+				default = {
+					add_trait = leader_special_030
+				}
+			}
 		}
 		leader_BA_031 = {
-			add_trait = leader_special_031
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_031
+				}
+			}
 		}
-		# leader_BA_032 = {
-		# 	add_trait = leader_special_032
-		# }
 		leader_BA_033 = {
-			add_trait = leader_special_033
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = leader_special_033_SS
+				}
+				default = {
+					add_trait = leader_special_033
+				}
+			}
 		}
 		leader_BA_034 = {
-			add_trait = leader_special_034
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_KMN = {
+					add_trait = leader_special_034_KMN
+				}
+				default = {
+					add_trait = leader_special_034
+				}
+			}
 		}
 		leader_BA_035 = {
-			add_trait = leader_special_035
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_KMN = {
+					add_trait = leader_special_035_KMN
+				}
+				default = {
+					add_trait = leader_special_035
+				}
+			}
 		}
 		leader_BA_036 = {
-			add_trait = leader_special_036
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_KMN = {
+					add_trait = leader_special_036_KMN
+				}
+				default = {
+					add_trait = leader_special_036
+				}
+			}
 		}
 		leader_BA_037 = {
-			add_trait = leader_special_037
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_KMN = {
+					add_trait = leader_special_037_KMN
+				}
+				default = {
+					add_trait = leader_special_037
+				}
+			}
 		}
 		leader_BA_038 = {
-			add_trait = leader_special_038
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_HS = {
+					add_trait = leader_special_038_HS
+				}
+				default = {
+					add_trait = leader_special_038
+				}
+			}
 		}
 		leader_BA_039 = {
-			add_trait = leader_special_039
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_PJ = {
+					add_trait = leader_special_039_PJ
+				}
+				BA_skin_SS = {
+					add_trait = leader_special_039_SS
+				}
+				default = {
+					add_trait = leader_special_039
+				}
+			}
 		}
 		leader_BA_040 = {
-			add_trait = leader_special_040
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_040
+				}
+			}
 		}
 		leader_BA_041 = {
-			add_trait = leader_special_041
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = leader_special_041_SS
+				}
+				default = {
+					add_trait = leader_special_041
+				}
+			}
 		}
 		leader_BA_042 = {
-			add_trait = leader_special_042
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_KMN = {
+					add_trait = leader_special_042_KMN
+				}
+				default = {
+					add_trait = leader_special_042
+				}
+			}
 		}
 		leader_BA_043 = {
-			add_trait = leader_special_043
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_043
+				}
+			}
 		}
-		# leader_BA_044 = {
-		# 	add_trait = leader_special_044
-		# }
 		leader_BA_045 = {
-			add_trait = leader_special_045
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_045
+				}
+			}
 		}
-		# leader_BA_046 = {
-		# 	add_trait = leader_special_046
-		# }
 		leader_BA_047 = {
-			add_trait = leader_special_047
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_047
+				}
+			}
 		}
 		leader_BA_048 = {
-			add_trait = leader_special_048
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_048
+				}
+			}
 		}
 		leader_BA_049 = {
-			add_trait = leader_special_049
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_049
+				}
+			}
 		}
 		leader_BA_050 = {
-			add_trait = leader_special_050
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = leader_special_050_SS
+				}
+				default = {
+					add_trait = leader_special_050
+				}
+			}
 		}
 		leader_BA_051 = {
-			add_trait = leader_special_051
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_051
+				}
+			}
 		}
-		# leader_BA_052 = {
-		# 	add_trait = leader_special_052
-		# }
-		# leader_BA_053 = {
-		# 	add_trait = leader_special_053
-		# }
 		leader_BA_054 = {
-			add_trait = leader_special_054
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_054
+				}
+			}
 		}
 		leader_BA_055 = {
-			add_trait = leader_special_055
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_055
+				}
+			}
 		}
-		# leader_BA_056 = {
-		# 	add_trait = leader_special_056
-		# }
 		leader_BA_057 = {
-			add_trait = leader_special_057
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_057
+				}
+			}
 		}
-		# leader_BA_058 = {
-		# 	add_trait = leader_special_058
-		# }
-		# leader_BA_059 = {
-		# 	add_trait = leader_special_059
-		# }
-		# leader_BA_060 = {
-		# 	add_trait = leader_special_060
-		# }
+		leader_BA_058 = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_058
+				}
+			}
+		}
+		leader_BA_059 = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_059
+				}
+			}
+		}
+		leader_BA_060 = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_060
+				}
+			}
+		}
 		leader_BA_061 = {
-			add_trait = leader_special_061
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_HS = {
+					add_trait = leader_special_061_HS
+				}
+				default = {
+					add_trait = leader_special_061
+				}
+			}
 		}
 		leader_BA_062 = {
-			add_trait = leader_special_062
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_062
+				}
+			}
 		}
-		# leader_BA_063 = {
-		# 	add_trait = leader_special_063
-		# }
-		# leader_BA_064 = {
-		# 	add_trait = leader_special_064
-		# }
+		leader_BA_063 = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_063
+				}
+			}
+		}
+		leader_BA_064 = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_064
+				}
+			}
+		}
 		leader_BA_065 = {
-			add_trait = leader_special_065
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_065
+				}
+			}
 		}
 		leader_BA_066 = {
-			add_trait = leader_special_066
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_066
+				}
+			}
 		}
 		leader_BA_067 = {
-			add_trait = leader_special_067
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_HS = {
+					add_trait = leader_special_067_HS
+				}
+				default = {
+					add_trait = leader_special_067
+				}
+			}
 		}
 		leader_BA_068 = {
-			add_trait = leader_special_068
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_068
+				}
+			}
 		}
 		leader_BA_069 = {
-			add_trait = leader_special_069
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_069
+				}
+			}
 		}
 		leader_BA_070 = {
-			add_trait = leader_special_070
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_070
+				}
+			}
 		}
-		# leader_BA_071 = {
-		# 	add_trait = leader_special_071
-		# }
-		# leader_BA_072 = {
-		# 	add_trait = leader_special_072
-		# }
-		# leader_BA_073 = {
-		# 	add_trait = leader_special_073
-		# }
-		# leader_BA_074 = {
-		# 	add_trait = leader_special_074
-		# }
 		leader_BA_075 = {
-			add_trait = leader_special_075
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_075
+				}
+			}
 		}
 		leader_BA_076 = {
-			add_trait = leader_special_076
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_076
+				}
+			}
 		}
 		leader_BA_077 = {
-			add_trait = leader_special_077
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_077
+				}
+			}
 		}
-		# leader_BA_078 = {
-		# 	add_trait = leader_special_078
-		# }
-		# leader_BA_079 = {
-		# 	add_trait = leader_special_079
-		# }
-		# leader_BA_080 = {
-		# 	add_trait = leader_special_080
-		# }
 		leader_BA_081 = {
-			add_trait = leader_special_081
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_081
+				}
+			}
 		}
 		leader_BA_082 = {
-			add_trait = leader_special_082
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_CL = {
+					add_trait = leader_special_082_CL
+				}
+				default = {
+					add_trait = leader_special_082
+				}
+			}
 		}
 		leader_BA_083 = {
-			add_trait = leader_special_083
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_CL = {
+					add_trait = leader_special_083_CL
+				}
+				BA_skin_SP = {
+					add_trait = leader_special_083_SP
+				}
+				default = {
+					add_trait = leader_special_083
+				}
+			}
 		}
 		leader_BA_084 = {
-			add_trait = leader_special_084
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_084
+				}
+			}
 		}
 		leader_BA_085 = {
-			add_trait = leader_special_085
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = leader_special_085_SS
+				}
+				default = {
+					add_trait = leader_special_085
+				}
+			}
 		}
 		leader_BA_086 = {
-			add_trait = leader_special_086
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_CD = {
+					add_trait = leader_special_086_CD
+				}
+				default = {
+					add_trait = leader_special_086
+				}
+			}
 		}
 		leader_BA_087 = {
-			add_trait = leader_special_087
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_087
+				}
+			}
 		}
-		# leader_BA_088 = {
-		# 	add_trait = leader_special_088
-		# }
+		leader_BA_088 = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_088
+				}
+			}
+		}
 		leader_BA_089 = {
-			add_trait = leader_special_089
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_089
+				}
+			}
 		}
 		leader_BA_090 = {
-			add_trait = leader_special_090
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_090
+				}
+			}
 		}
 		leader_BA_091 = {
-			add_trait = leader_special_091
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_091
+				}
+			}
 		}
 		leader_BA_092 = {
-			add_trait = leader_special_092
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_092
+				}
+			}
 		}
 		leader_BA_093 = {
-			add_trait = leader_special_093
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_093
+				}
+			}
 		}
 		leader_BA_094 = {
-			add_trait = leader_special_094
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_094
+				}
+			}
 		}
 		leader_BA_095 = {
-			add_trait = leader_special_095
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_095
+				}
+			}
 		}
 		leader_BA_096 = {
-			add_trait = leader_special_096
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_096
+				}
+			}
 		}
-		# leader_BA_097 = {
-		# 	add_trait = leader_special_097
-		# }
 		leader_BA_098 = {
-			add_trait = leader_special_098
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_098
+				}
+			}
 		}
 		leader_BA_099 = {
-			add_trait = leader_special_099
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_099
+				}
+			}
 		}
 		leader_BA_100 = {
-			add_trait = leader_special_100
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_100
+				}
+			}
 		}
 		leader_BA_101 = {
-			add_trait = leader_special_101
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_101
+				}
+			}
 		}
 		leader_BA_102 = {
-			add_trait = leader_special_102
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_BN = {
+					add_trait = leader_special_102_BN
+				}
+				BA_skin_UNF = {
+					add_trait = leader_special_102_UNF
+				}
+				default = {
+					add_trait = leader_special_102
+				}
+			}
 		}
 		leader_BA_103 = {
-			add_trait = leader_special_103
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_BN = {
+					add_trait = leader_special_103_BN
+				}
+				BA_skin_UNF = {
+					add_trait = leader_special_103_UNF
+				}
+				default = {
+					add_trait = leader_special_103
+				}
+			}
 		}
 		leader_BA_104 = {
-			add_trait = leader_special_104
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_BN = {
+					add_trait = leader_special_104_BN
+				}
+				default = {
+					add_trait = leader_special_104
+				}
+			}
 		}
 		leader_BA_105 = {
-			add_trait = leader_special_105
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_105
+				}
+			}
 		}
 		leader_BA_106 = {
-			add_trait = leader_special_106
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_BN = {
+					add_trait = leader_special_106_BN
+				}
+				default = {
+					add_trait = leader_special_106
+				}
+			}
 		}
 		leader_BA_107 = {
-			add_trait = leader_special_107
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_DL = {
+					add_trait = leader_special_107_DL
+				}
+				default = {
+					add_trait = leader_special_107
+				}
+			}
 		}
 		leader_BA_108 = {
-			add_trait = leader_special_108
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_YN = {
+					add_trait = leader_special_108_YN
+				}
+				default = {
+					add_trait = leader_special_108
+				}
+			}
 		}
 		leader_BA_109 = {
-			add_trait = leader_special_109
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_109
+				}
+			}
 		}
-		# leader_BA_110 = {
-		# 	add_trait = leader_special_110
-		# }
+		leader_BA_110 = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_110
+				}
+			}
+		}
 		leader_BA_111 = {
-			add_trait = leader_special_111
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_111
+				}
+			}
 		}
 		leader_BA_112 = {
-			add_trait = leader_special_112
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_112
+				}
+			}
 		}
-		# leader_BA_113 = {
-		# 	add_trait = leader_special_113
-		# }
 		leader_BA_114 = {
-			add_trait = leader_special_114
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_114
+				}
+			}
 		}
 		leader_BA_115 = {
-			add_trait = leader_special_115
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = leader_special_115_SS
+				}
+				default = {
+					add_trait = leader_special_115
+				}
+			}
 		}
 		leader_BA_116 = {
-			add_trait = leader_special_116
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = leader_special_116_SS
+				}
+				default = {
+					add_trait = leader_special_116
+				}
+			}
 		}
 		leader_BA_117 = {
-			add_trait = leader_special_117
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_117
+				}
+			}
 		}
 		leader_BA_118 = {
-			add_trait = leader_special_118
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = leader_special_118_SS
+				}
+				default = {
+					add_trait = leader_special_118
+				}
+			}
 		}
 		leader_BA_119 = {
-			add_trait = leader_special_119
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_119
+				}
+			}
 		}
 		leader_BA_120 = {
-			add_trait = leader_special_120
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_120
+				}
+			}
 		}
 		leader_BA_121 = {
-			add_trait = leader_special_121
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_121
+				}
+			}
 		}
 		leader_BA_122 = {
-			add_trait = leader_special_122
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_CL = {
+					add_trait = leader_special_122_CL
+				}
+				BA_skin_XMS = {
+					add_trait = leader_special_122_XMS
+				}
+				default = {
+					add_trait = leader_special_122
+				}
+			}
 		}
 		leader_BA_123 = {
-			add_trait = leader_special_123
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_123
+				}
+			}
 		}
 		leader_BA_124 = {
-			add_trait = leader_special_124
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_NS = {
+					add_trait = leader_special_124_NS
+				}
+				BA_skin_XMS = {
+					add_trait = leader_special_124_XMS
+				}
+				default = {
+					add_trait = leader_special_124
+				}
+			}
 		}
 		leader_BA_125 = {
-			add_trait = leader_special_125
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_125
+				}
+			}
 		}
 		leader_BA_126 = {
-			add_trait = leader_special_126
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_126
+				}
+			}
 		}
 		leader_BA_127 = {
-			add_trait = leader_special_127
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_127
+				}
+			}
 		}
 		leader_BA_128 = {
-			add_trait = leader_special_128
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_128
+				}
+			}
 		}
 		leader_BA_129 = {
-			add_trait = leader_special_129
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_129
+				}
+			}
 		}
 		leader_BA_130 = {
-			add_trait = leader_special_130
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = leader_special_130_SS
+				}
+				default = {
+					add_trait = leader_special_130
+				}
+			}
 		}
 		leader_BA_131 = {
-			add_trait = leader_special_131
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_131
+				}
+			}
 		}
 		leader_BA_132 = {
-			add_trait = leader_special_132
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SPW = {
+					add_trait = leader_special_132_SPW
+				}
+				default = {
+					add_trait = leader_special_132
+				}
+			}
 		}
 		leader_BA_133 = {
-			add_trait = leader_special_133
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = leader_special_133_SS
+				}
+				default = {
+					add_trait = leader_special_133
+				}
+			}
 		}
 		leader_BA_134 = {
-			add_trait = leader_special_134
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SNT = {
+					add_trait = leader_special_134_SNT
+				}
+				default = {
+					add_trait = leader_special_134
+				}
+			}
 		}
 		leader_BA_135 = {
-			add_trait = leader_special_135
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = leader_special_135_SS
+				}
+				default = {
+					add_trait = leader_special_135
+				}
+			}
 		}
 		leader_BA_136 = {
-			add_trait = leader_special_136
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_136
+				}
+			}
 		}
 		leader_BA_137 = {
-			add_trait = leader_special_137
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_137
+				}
+			}
 		}
 		leader_BA_138 = {
-			add_trait = leader_special_138
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SP = {
+					add_trait = leader_special_138_SP
+				}
+				BA_skin_SS = {
+					add_trait = leader_special_138_SS
+				}
+				default = {
+					add_trait = leader_special_138
+				}
+			}
 		}
 		leader_BA_139 = {
-			add_trait = leader_special_139
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_139
+				}
+			}
 		}
 		leader_BA_140 = {
-			add_trait = leader_special_140
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_140
+				}
+			}
 		}
 		leader_BA_141 = {
-			add_trait = leader_special_141
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_141
+				}
+			}
 		}
 		leader_BA_142 = {
-			add_trait = leader_special_142
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_142
+				}
+			}
 		}
 		leader_BA_143 = {
-			add_trait = leader_special_143
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_143
+				}
+			}
 		}
-		# leader_BA_144 = {
-		# 	add_trait = leader_special_144
-		# }
-		# leader_BA_145 = {
-		# 	add_trait = leader_special_145
-		# }
-		# leader_BA_146 = {
-		# 	add_trait = leader_special_146
-		# }
-		# leader_BA_147 = {
-		# 	add_trait = leader_special_147
-		# }
+		leader_BA_144 = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_144
+				}
+			}
+		}
+		leader_BA_145 = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_145
+				}
+			}
+		}
+		leader_BA_146 = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_146
+				}
+			}
+		}
+		leader_BA_147 = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_147
+				}
+			}
+		}
 		leader_BA_148 = {
-			add_trait = leader_special_148
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_148
+				}
+			}
 		}
 		leader_BA_149 = {
-			add_trait = leader_special_149
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_149
+				}
+			}
 		}
 		leader_BA_150 = {
-			add_trait = leader_special_150
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_150
+				}
+			}
 		}
 		leader_BA_151 = {
-			add_trait = leader_special_151
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = leader_special_151
+				}
+			}
 		}
-		# leader_BA_152 = {
-		# 	add_trait = leader_special_152
-		# }
-		# leader_BA_153 = {
-		# 	add_trait = leader_special_153
-		# }
-		# leader_BA_154 = {
-		# 	add_trait = leader_special_154
-		# }
-		# leader_BA_155 = {
-		# 	add_trait = leader_special_155
-		# }
-		# leader_BA_156 = {
-		# 	add_trait = leader_special_156
-		# }
-		# leader_BA_157 = {
-		# 	add_trait = leader_special_157
-		# }
-		# leader_BA_158 = {
-		# 	add_trait = leader_special_158
-		# }
-		# leader_BA_159 = {
-		# 	add_trait = leader_special_159
-		# }
+		default = {
+			add_trait = leader_special_000
+		}
 	}
 }

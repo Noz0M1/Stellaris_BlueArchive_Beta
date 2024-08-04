@@ -142,7 +142,7 @@ country_event = {
 			#安置其他候选人
 			country_event = {
 				id = BA_origin.0011
-				days = 58
+				days = 60
 			}
 		}
 	}
@@ -395,6 +395,10 @@ country_event = {
 			event_target:BA_Shittem_country = {
 				set_country_flag = BA_stored_SP_Hoshino_@root
 			}
+			inline_script = {
+				script = Leader/SP_unlock
+				Leader = Hoshino
+			}
 		}
 		if = {
 			limit = {
@@ -404,6 +408,10 @@ country_event = {
 			}
 			event_target:BA_Shittem_country = {
 				set_country_flag = BA_stored_SP_Hina_@root
+			}
+			inline_script = {
+				script = Leader/SP_unlock
+				Leader = Hina
 			}
 		}
 		if = {
@@ -415,6 +423,10 @@ country_event = {
 			event_target:BA_Shittem_country = {
 				set_country_flag = BA_stored_SP_Mika_@root
 			}
+			inline_script = {
+				script = Leader/SP_unlock
+				Leader = Mika
+			}
 		}
 		if = {
 			limit = {
@@ -424,6 +436,10 @@ country_event = {
 			}
 			event_target:BA_Shittem_country = {
 				set_country_flag = BA_stored_SP_Yuuka_@root
+			}
+			inline_script = {
+				script = Leader/SP_unlock
+				Leader = Yuuka
 			}
 		}
 	}
