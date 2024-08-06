@@ -204,6 +204,11 @@ BA_check_rename_flag = {
 						leader_class = official
 					}
 				}
+				modifier = {
+					#葛叶特殊优化：前20年不出现
+					factor = 0
+					years_passed <= 20
+				}
 				set_leader_flag = leader_BA_013
 			}
 			0 = {

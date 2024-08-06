@@ -2227,17 +2227,17 @@ button_effect_BA_SI_Gehenna_D01_lock = {
 			BA_SI_time_limit_trigger = yes
 			custom_tooltip = {
 				fail_text = Gehenna_SI_Student_Council_point
-				always = yes
-				#OR = {
-				#	has_technology = tech_BA_SI_Gehenna_A01
-				#	has_technology = tech_BA_SI_Gehenna_A02
-				#	has_technology = tech_BA_SI_Gehenna_A03
-				#}
-				#OR = {
-				#	has_technology = tech_BA_SI_Gehenna_B01
-				#	has_technology = tech_BA_SI_Gehenna_B02
-				#	has_technology = tech_BA_SI_Gehenna_B03
-				#}
+				#always = yes
+				OR = {
+					has_technology = tech_BA_SI_Gehenna_A01
+					has_technology = tech_BA_SI_Gehenna_A02
+					has_technology = tech_BA_SI_Gehenna_A03
+				}
+				OR = {
+					has_technology = tech_BA_SI_Gehenna_B01
+					has_technology = tech_BA_SI_Gehenna_B02
+					has_technology = tech_BA_SI_Gehenna_B03
+				}
 			}
 			custom_tooltip = {
 				fail_text = BA_mutual_exclusion_events

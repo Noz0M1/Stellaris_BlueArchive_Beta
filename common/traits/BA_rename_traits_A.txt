@@ -721,4 +721,24 @@ leader_club_049 = {
 }
 
 #050 钢盔团
+#998 葛叶 只要998葛叶带回家
+leader_club_998 = {
+	cost = 0
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B83.dds"
+	randomized = no
+	councilor_modifier = {
+		#内阁议程速度+400%，研究速度+100%，领袖经验获取+100%，领袖花费+12000%，领袖维护费+12000%
+		council_agenda_progress_speed = 4
+		all_technology_research_speed = 1
+		species_leader_exp_gain = 1
+	}
+	self_modifier = {
+		leaders_cost_mult = 120
+		leaders_upkeep_mult = 120
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
 #999 联动

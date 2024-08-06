@@ -248,85 +248,62 @@ Schale = {
 	}
 	# 默认舰船名字
 	fleet_names = {
-		random_names = {
-			#namelist_BA_fleet_001
-			#namelist_BA_fleet_002
-			#namelist_BA_fleet_003
-			#namelist_BA_fleet_004
-			#namelist_BA_fleet_005
-			#namelist_BA_fleet_006
-			#namelist_BA_fleet_007
-			#namelist_BA_fleet_008
-			#namelist_BA_fleet_009
-			#namelist_BA_fleet_010
-			#namelist_BA_fleet_011
-		}
-		sequential_name = HUM1_xxARMADA_ORD
+		sequential_name = BA_xxARMADA_ORD
 	}
 	# 陆军名字吧？
 	army_names = {
-		machine_defense = {
-			sequential_name = HUM1_xxGROUNDSHIELD_ORD
-		}
-		machine_assault_1 = {
-			sequential_name = HUM1_xxWARGUILD_ORD
-		}
-		machine_assault_2 = {
-			sequential_name = HUM1_xxWARGUILD_ORD
-		}
-		machine_assault_3 = {
-			sequential_name = HUM1_xxWARGUILD_ORD
-		}
 		defense_army = {
 			sequential_name = HUM1_xxGROUNDSHIELD_ORD
 		}
 		assault_army = {
-			sequential_name = HUM1_xxWARGUILD_ORD
-		}
-		slave_army = {
-			sequential_name = HUM1_xxWARPEONS_ORD
-		}
-		clone_army = {
-			sequential_name = HUM1_xxFIGHTINGCLONES_ORD
-		}
-		undead_army = {
-			sequential_name = HUM1_xxDREADPEONS_ORD
-		}
-		robotic_army = {
-			sequential_name = HUM1_xxROBOTICLANCERS_ORD
-		}
-		robotic_defense_army = {
-			sequential_name = HUM1_xxROBOTICPROTECTORS_ORD
-		}
-		psionic_army = {
-			sequential_name = HUM1_xxWARLOCKCOMPANY_ORD
-		}
-		xenomorph_army = {
-			sequential_name = HUM1_xxDEATHFLOCK_ORD
-		}
-		gene_warrior_army = {
-			sequential_name = HUM1_xxSTARKNIGHTS_ORD
-		}
-		occupation_army = {
-			sequential_name = HUM1_xxOCCUPATIONSHIELD_ORD
-		}
-		robotic_occupation_army = {
-			sequential_name = HUM1_xxROBOTICOCCUPIERS_ORD
-		}
-		primitive_army = {
-			sequential_name = HUM1_PRIMITIVEARMYxx_SEQ
-		}
-		industrial_army = {
-			sequential_name = HUM1_INDUSTRIALARMYxx_SEQ
-		}
-		postatomic_army = {
-			sequential_name = HUM1_POSTATOMICARMYxx_SEQ
+			sequential_name = BA_xxWARGUILD_ORD
 		}
 	}
 	# 我以为是殖民地名字 后来发现是母星系行星名字）
 	planet_names = {
 		generic = {
 			names = {
+				namelist_BA_colony_001
+				namelist_BA_colony_002
+				namelist_BA_colony_003
+				namelist_BA_colony_004
+				namelist_BA_colony_005
+				namelist_BA_colony_006
+				namelist_BA_colony_007
+				namelist_BA_colony_008
+				namelist_BA_colony_009
+				namelist_BA_colony_010
+				namelist_BA_colony_011
+				namelist_BA_colony_012
+				namelist_BA_colony_013
+				namelist_BA_colony_014
+				namelist_BA_colony_015
+				namelist_BA_colony_016
+				namelist_BA_colony_017
+				namelist_BA_colony_018
+				namelist_BA_colony_019
+				namelist_BA_colony_020
+				namelist_BA_colony_021
+				namelist_BA_colony_022
+				namelist_BA_colony_023
+				namelist_BA_colony_024
+				namelist_BA_colony_025
+				namelist_BA_colony_026
+				namelist_BA_colony_027
+				namelist_BA_colony_028
+				namelist_BA_colony_029
+				namelist_BA_colony_030
+				namelist_BA_colony_031
+				namelist_BA_colony_032
+				namelist_BA_colony_033
+				namelist_BA_colony_034
+				namelist_BA_colony_035
+				namelist_BA_colony_036
+				namelist_BA_colony_037
+				namelist_BA_colony_038
+				namelist_BA_colony_039
+				namelist_BA_colony_040
+				namelist_BA_colony_041
 			}
 		}
 		pc_desert = {
