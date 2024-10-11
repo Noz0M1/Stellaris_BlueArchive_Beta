@@ -252,12 +252,6 @@ leader_special_013 = {
 	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y82.dds"
 	randomized = no
-	councilor_modifier = {
-		#内阁议程速度+400%，研究速度+100%，领袖经验获取+100%
-		council_agenda_progress_speed = 4
-		all_technology_research_speed = 1
-		species_leader_exp_gain = 1
-	}
 	sector_modifier = {
 		#岗位生产的资源+50%，舰船建造速度+400%
 		planet_jobs_produces_mult = 0.5
