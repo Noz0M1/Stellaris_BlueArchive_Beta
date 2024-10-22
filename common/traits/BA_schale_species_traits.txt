@@ -606,9 +606,9 @@ trait_BA_truancy = {
 	randomized = yes
 	icon = "gfx/interface/icons/traits/species/BA_gammer.dds"
 	modifier = {
-		planet_jobs_engineering_research_produces_mult = 0.1
-		planet_jobs_physics_research_produces_mult = 0.1
-		planet_jobs_society_research_produces_mult = 0.1
+		planet_jobs_engineering_research_produces_mult = -0.1
+		planet_jobs_physics_research_produces_mult = -0.1
+		planet_jobs_society_research_produces_mult = -0.1
 		planet_jobs_worker_produces_mult = 0.25
 	}
 }
