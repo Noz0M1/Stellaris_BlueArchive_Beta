@@ -320,15 +320,14 @@ trait_BA_Koharu = {
 	sorting_priority = 15
 	opposites = {
 		trait_BA_good_students
+		trait_BA_grate_duty
 	}
 	allowed_archetypes = {
 		Schale
 	}
 	modifier = {
-		pop_growth_speed = 0.15
-		planet_jobs_engineering_research_produces_mult = -0.1
-		planet_jobs_physics_research_produces_mult = -0.1
-		planet_jobs_society_research_produces_mult = -0.1
+		pop_growth_speed = 0.2
+		species_leader_exp_gain = -0.20
 	}
 }
 
@@ -339,6 +338,7 @@ trait_BA_good_students = {
 	sorting_priority = 15
 	opposites = {
 		trait_BA_Koharu
+		trait_BA_grate_duty
 	}
 	allowed_archetypes = {
 		Schale
@@ -347,6 +347,9 @@ trait_BA_good_students = {
 		planet_jobs_engineering_research_produces_mult = 0.1
 		planet_jobs_physics_research_produces_mult = 0.1
 		planet_jobs_society_research_produces_mult = 0.1
+		planet_researchers_produces_mult = 0.1
+		planet_researchers_upkeep_mult = 0.1
+		negative_traits_leader = -2
 	}
 }
 
@@ -355,80 +358,114 @@ trait_BA_grate_duty = {
 	cost = 1
 	icon = "gfx/interface/icons/traits/species/BA_grate_duty.dds"
 	sorting_priority = 15
+	opposites = {
+		trait_BA_Koharu
+		trait_BA_good_students
+	}
 	allowed_archetypes = {
 		Schale
 	}
 	modifier = {
 		planet_jobs_unity_produces_mult = 0.15
 		pop_housing_usage_mult = -0.05
+		pop_growth_from_immigration = 0.10
+		pop_resettlement_cost_mult = -0.25
 	}
 }
+
 
 #夏日之星 1
 trait_BA_summer_star = {
 	cost = 1
 	icon = "gfx/interface/icons/traits/species/BA_summer_star.dds"
 	sorting_priority = 15
+	opposites = {
+		trait_BA_starlink
+		trait_BA_pioneer
+	}
 	allowed_archetypes = {
 		Schale
 	}
-	modifier = {
-		pc_ocean_habitability = 1
-		pop_happiness = 0.05
+	triggered_pop_modifier = {
+		potential = {
+			exists = planet
+			planet = {
+				OR = {
+					has_climate = wet
+					has_modifier = flooded_habitat
+				}
+				is_ideal = no
+			}
+		}
+		pop_housing_usage_mult = -0.2
+		planet_pops_upkeep_mult = -0.1
+		pop_environment_tolerance = 0.5
 	}
-	custom_tooltip_with_modifiers = trait_BA_summer_star_tip
 }
+
+#星链 1
+trait_BA_starlink = {
+	cost = 1
+	sorting_priority = 15
+	opposites = {
+		trait_BA_summer_star
+		trait_BA_pioneer
+	}
+	allowed_archetypes = {
+		Schale
+	}
+	icon = "gfx/interface/icons/traits/species/BA_starlink.dds"
+	modifier = {
+		planet_jobs_produces_mult = 0.1
+		planet_jobs_upkeep_mult = 0.1
+	}
+}
+
+#新世界开拓者 1
+trait_BA_pioneer = {
+	cost = 1
+	sorting_priority = 15
+	opposites = {
+		trait_BA_summer_star
+		trait_BA_starlink
+	}
+	allowed_archetypes = {
+		Schale
+	}
+	icon = "gfx/interface/icons/traits/species/BA_pioneer.dds"
+	modifier = {
+		planet_jobs_alloys_produces_mult = 0.04
+		planet_jobs_minerals_produces_mult = 0.08
+		pop_resettlement_cost_mult = -0.75
+	}
+}
+
 
 #战术训练 2
 trait_BA_tactical_training = {
 	cost = 2
 	icon = "gfx/interface/icons/traits/species/BA_tactical_training.dds"
 	sorting_priority = 15
+	opposites = {
+		trait_BA_top_notchism
+		trait_BA_BDcase
+	}
 	allowed_archetypes = {
 		Schale
 	}
 	modifier = {
-		army_damage_mult = 0.2
-		army_morale = 0.2
+		armies_cost_mult = -0.25
+		army_build_speed_mult = 1
 	}
 }
 
-#星链 2
-trait_BA_starlink = {
-	cost = 2
-	sorting_priority = 15
-	allowed_archetypes = {
-		Schale
-	}
-	icon = "gfx/interface/icons/traits/species/BA_starlink.dds"
-	modifier = {
-		planet_jobs_produces_mult = 0.05
-		planet_jobs_ruler_produces_mult = 0.05
-	}
-}
-
-#新世界开拓者 2
-trait_BA_pioneer = {
-	cost = 2
-	sorting_priority = 15
-	allowed_archetypes = {
-		Schale
-	}
-	icon = "gfx/interface/icons/traits/species/BA_pioneer.dds"
-	modifier = {
-		pop_growth_from_immigration = 0.25
-		pop_resettlement_cost_mult = -0.6
-		pop_government_ethic_attraction = -0.05
-	}
-}
-
-#顶配主义 4
+#顶配主义 2
 trait_BA_top_notchism = {
-	cost = 4
+	cost = 2
 	sorting_priority = 15
 	opposites = {
 		trait_BA_tactical_training
-		trait_BA_no_pack
+		trait_BA_BDcase
 	}
 	allowed_archetypes = {
 		Schale
@@ -439,60 +476,55 @@ trait_BA_top_notchism = {
 	icon = "gfx/interface/icons/traits/species/BA_top_notchism.dds"
 	modifier = {
 		army_damage_mult = 0.5
-		army_health = 1
-		army_morale = 0.5
+		armies_upkeep_mult = 0.40
 	}
 }
 
 #BD补给方案 4
 trait_BA_BDcase = {
-	cost = 4
+	cost = 2
 	sorting_priority = 15
+	opposites = {
+		trait_BA_tactical_training
+		trait_BA_top_notchism
+	}
 	allowed_archetypes = {
 		Schale
 	}
 	icon = "gfx/interface/icons/traits/species/BA_BDcase.dds"
 	modifier = {
-		num_tech_alternatives_add = 1
-		species_leader_exp_gain = 0.4
-		leader_skill_levels = 3
+		leaders_upkeep_mult = 0.2
+		species_leader_exp_gain = 0.6
 	}
 }
 
-#摸鱼 -2
+
+#摸鱼 -1
 trait_BA_slack = {
-	cost = -2
+	cost = -1
 	sorting_priority = 10
+	opposites = {
+		trait_BA_rebellion
+		trait_BA_no_pack
+	}
 	allowed_archetypes = {
 		Schale
 	}
 	icon = "gfx/interface/icons/traits/species/BA_slack.dds"
 	modifier = {
-		planet_jobs_energy_produces_mult = -0.05
-		pop_amenities_usage_mult = -0.1
-		pop_happiness = 0.1
+		planet_jobs_produces_mult = -0.05
+		planet_jobs_unity_produces_mult = 0.35
 	}
 }
 
-#沉迷游戏 -2
-trait_BA_gammer = {
-	cost = -2
-	sorting_priority = 10
-	allowed_archetypes = {
-		Schale
-	}
-	initial = yes
-	randomized = yes
-	icon = "gfx/interface/icons/traits/species/BA_gammer.dds"
-	modifier = {
-		pop_resettlement_cost_mult = 0.2
-	}
-}
-
-#逆反主义 -4
+#管制漏洞 -1
 trait_BA_rebellion = {
-	cost = -4
+	cost = -1
 	sorting_priority = 10
+	opposites = {
+		trait_BA_slack
+		trait_BA_no_pack
+	}
 	allowed_archetypes = {
 		Schale
 	}
@@ -501,16 +533,17 @@ trait_BA_rebellion = {
 	modifier = {
 		pop_housing_usage_mult = 0.2
 		pop_amenities_usage_no_happiness_mult = 0.2
+		pop_lifestyle_trade_value_add = 2
 	}
 }
 
-#没包人 -4
+#没包人 -1
 trait_BA_no_pack = {
-	cost = -4
+	cost = -1
 	sorting_priority = 10
 	opposites = {
-		trait_BA_tactical_training
-		trait_BA_top_notchism
+		trait_BA_slack
+		trait_BA_rebellion
 	}
 	allowed_archetypes = {
 		Schale
@@ -518,11 +551,67 @@ trait_BA_no_pack = {
 	randomized = no
 	icon = "gfx/interface/icons/traits/species/BA_no_pack.dds"
 	modifier = {
-		army_damage_mult = -0.3
-		army_health = -0.6
+		planet_jobs_energy_produces_mult = 0.2
+		army_health = -0.2
 	}
 }
 
+
+#沉迷游戏 -1
+trait_BA_gammer = {
+	cost = -1
+	sorting_priority = 10
+	opposites = {
+	}
+	allowed_archetypes = {
+		Schale
+	}
+	initial = yes
+	randomized = yes
+	icon = "gfx/interface/icons/traits/species/BA_gammer.dds"
+	modifier = {
+		pop_resettlement_cost_mult = 0.5
+		pop_housing_usage_mult = -0.25
+	}
+}
+
+#消费主义 -1
+trait_BA_consumerism = {
+	cost = -1
+	sorting_priority = 10
+	opposites = {
+	}
+	allowed_archetypes = {
+		Schale
+	}
+	initial = yes
+	randomized = yes
+	icon = "gfx/interface/icons/traits/species/BA_gammer.dds"
+	modifier = {
+		planet_pops_consumer_goods_upkeep_mult = 0.15
+		planet_jobs_energy_produces_mult = 0.25
+	}
+}
+
+#旷课思想 -1
+trait_BA_truancy = {
+	cost = -1
+	sorting_priority = 10
+	opposites = {
+	}
+	allowed_archetypes = {
+		Schale
+	}
+	initial = yes
+	randomized = yes
+	icon = "gfx/interface/icons/traits/species/BA_gammer.dds"
+	modifier = {
+		planet_jobs_engineering_research_produces_mult = -0.1
+		planet_jobs_physics_research_produces_mult = -0.1
+		planet_jobs_society_research_produces_mult = -0.1
+		planet_jobs_worker_produces_mult = 0.25
+	}
+}
 #### 姬器人
 #测试中！
 trait_test = {
@@ -581,6 +670,7 @@ trait_gamegirl = {
 	sorting_priority = 19
 	allowed_archetypes = {
 		MACHINE
+		ROBOT
 	}
 	initial = no
 	randomized = no
@@ -591,7 +681,7 @@ trait_gamegirl = {
 	}
 	species_possible_remove = {
 		from = {
-			#has_country_flag = BA_Aris_lifted
+			has_country_flag = BA_Aris_lifted
 			always = yes
 		}
 	}
@@ -610,6 +700,7 @@ trait_wingbot = {
 	sorting_priority = 19
 	allowed_archetypes = {
 		MACHINE
+		ROBOT
 	}
 	initial = no
 	randomized = no
@@ -638,6 +729,7 @@ trait_randomized_line = {
 	sorting_priority = 19
 	allowed_archetypes = {
 		MACHINE
+		ROBOT
 	}
 	initial = no
 	randomized = no
@@ -664,6 +756,7 @@ trait_federation_matrix = {
 	sorting_priority = 19
 	allowed_archetypes = {
 		MACHINE
+		ROBOT
 	}
 	initial = no
 	randomized = no
@@ -692,6 +785,7 @@ trait_substance_module = {
 	sorting_priority = 19
 	allowed_archetypes = {
 		MACHINE
+		ROBOT
 	}
 	initial = no
 	randomized = no

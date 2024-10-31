@@ -1,0 +1,92 @@
+
+weapon_component_template = {
+    key = "BA_MG_t"
+    size = titanic
+    type = instant
+    icon = "GFX_Hina_Weapon"
+    icon_frame = 1
+    #color = { 0.1 1.0 0.1 1 }
+    prerequisites = { "tech_BA_institute_of_reconstruction" }
+    component_set = "BA_MG_T"
+    projectile_gfx = "gamma_laser_s"
+    tags = {
+        weapon_type_kinetic
+        weapon_type_Kivotos
+    }
+    ai_tags = {
+        gunship
+        weapon_role_anti_shield
+    }
+    resources = {
+        category = ship_components
+        cost = {
+            alloys = 20
+        }
+        upkeep = {
+            energy = 0.22
+            alloys = 0.02
+        }
+    }
+    power = -800
+    damage = { min = 512 max = 4096 }
+    windup = { min = 3 max = 5 }
+    total_fire_time = 10
+    hull_damage = 1
+    shield_damage = 2
+    shield_penetration = 0.2
+    armor_damage = 1
+    armor_penetration = 0.2
+    min_range = 20
+    range = 240
+    accuracy = 0.6
+    tracking = 0
+    ai_weight = {
+        weight = 1
+    }
+}
+
+weapon_component_template = {
+    key = "BA_RD_t"
+    size = titanic
+    type = instant
+    icon = "GFX_SuperNova"
+    icon_frame = 1
+    #color = { 0.1 1.0 0.1 1 }
+    prerequisites = { "tech_BA_institute_of_reconstruction" }
+    component_set = "BA_RD_T"
+    projectile_gfx = "gamma_laser_s"
+    tags = {
+        weapon_type_energy
+        weapon_type_Kivotos
+    }
+    ai_tags = {
+        gunship
+        weapon_role_anti_shield
+    }
+    resources = {
+        category = ship_components
+        cost = {
+            alloys = 20
+        }
+        upkeep = {
+            energy = 0.22
+            alloys = 0.02
+        }
+    }
+    power = -800
+    damage = { min = 1024 max = 16384 }
+    windup = { min = 30 max = 50 }
+    total_fire_time = 60
+    hull_damage = 1
+    shield_damage = 0.5
+    shield_penetration = 1
+    armor_damage = 0.5
+    armor_penetration = 1
+    min_range = 20
+    range = 300
+    accuracy = 1
+    tracking = 0.5
+    ai_weight = {
+        weight = 1
+    }
+}
