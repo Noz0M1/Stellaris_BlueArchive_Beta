@@ -54,6 +54,10 @@ country_event = {
 		custom_tooltip = BA_ape.0001.c.tip
 		add_research_option = "tech_BA_Preliminary_ring_theory"
 		hidden_effect = {
+			inline_script = {
+				script = Leader/SP_unlock
+				Leader = Ui
+			}
 			event_target:BA_Shittem_country = {
 				set_country_flag = BA_stored_SP_Ui_@root
 			}

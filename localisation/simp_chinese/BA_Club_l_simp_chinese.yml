@@ -1,5 +1,24 @@
 ﻿l_simp_chinese:
-#
+ #
+ Club_confirm:0 "批准选中社团提交的那一份建设申请。不选中任何社团，则随机批准一份。"
+ Club_tbc:0 "§L更多社团待续……§!"
+ Club_founded:0 "£trigger_no£该社团§C已经建立§!了太空部室"
+ Club_not_found:0 "£trigger_no£该社团§R还未建立§!太空部室"
+
+ #
+ policy_BA_club_spounce_clubs: "社团赞助额设定"
+ policy_BA_club_spounce_clubs_desc: "此政策决定为社团活动拨款的经费总额。研究更多社会学科技以解锁更多拨款挡位。"
+ BA_club_no_spounce: "无赞助"
+ BA_club_no_spounce_desc: "各个社团已经从自己的所属学园获得了经费，无需额外拨款。"
+ BA_club_lv1_spounce: "活动级拨款"
+ BA_club_lv1_spounce_desc: "将社团作为年度的活动来规划拨款，为社团部员们提供更好的活动条件。\n  社团部室的维护费增加，并依据已建立的太空社团部室，提供独特的§Y帝国修正§!"
+ BA_club_lv2_spounce: "设施级拨款"
+ BA_club_lv2_spounce_desc: "将社团消耗视为基础设施的维护费用进行拨款，提供更高的创作自由度和活动规模\n  社团部室及相关巨构的产出增加。"
+ BA_club_lv3_spounce: "战略级拨款"
+ BA_club_lv3_spounce_desc: "社团关乎我们的生死存亡，必须大力投入。\n  £job_BA_club_members£社团部员的维护费和产出增加"
+
+
+ #
  Game_development_department:0 "游戏开发部"
  Game_development_department_desc:0 "游戏开发部可以制作并发行游戏，提供大量的凝聚力。"
 
@@ -24,7 +43,6 @@
  BA_club_base:0 "社团部基址"
  BA_club_base_DESC:0 "将一艘社团舰送入此处以建立一个社团"
  BA_club_base_MEGASTRUCTURE_DETAILS:0 "$BA_club_base_DESC$"
- single_club_limit:0 "$TRIGGER_FAIL$每个星系只能设立一个社团"
 
  BA_club_station_game_dev:0 "$Game_development_department$"
  BA_club_station_game_dev_DESC:0 "$Game_development_department_desc$增加基沃托斯的人口、建造夏莱办公室及社团部室可以增加£unity£凝聚力的产出。"
@@ -62,13 +80,16 @@
  BA_club.0002.comfirmed:0 "了解。"
 
  BA_club.0005.title:0 "社团部室开建"
- BA_club.0005.desc:0 "社团舰已经抵达社团基址，使用申请已经向学生开放。一旦申请通过，该太空部室产权就归此社团所有，同时她们也会获得直接向统括室提交项目计划，并§Y作为研究选项呈现§!的权益。您可以将此部室§Y分配给指定的社团§!，也可以交给学生们内部竞争来裁定。"
+ BA_club.0005.desc:0 "社团舰已经抵达社团基址，使用申请已经向学生开放。此部室的归属权可以§Y分配给指定的社团§!，也可以交给学生们内部竞争来裁定。"
+ BA_club.0005.confirm:0 "好的，请帮我打开裁定确认界面。"
+ BA_club.0005.confirm.tip:0 "指定一个社团的使用申请通过，这需要消耗5社团权限币。一旦申请通过，该太空部室产权就归这个指定的社团所有，同时她们也会获得直接向统括室提交项目计划，并§Y作为研究选项呈现§!的权益。"
  BA_club.0005.random:0 "交给学生们自由裁定。"
+ BA_club.0005.random.tip:0 "下放自由裁量权，这需要消耗3社团权限币。太空部室的产权将分配给裁定胜出者，同时她们也会获得直接向统括室提交项目计划，并§Y作为研究选项呈现§!的权益。"
  BA_club.0005.cancel:0 "暂时取消。"
 
- BA_club.0006.title:0 "社团建立取消"
- BA_club.0006.desc:0 "由于没有合适的社团被选择使用这个部室，部室的建设已经取消。"
- BA_club.0006.tip:0 "更多社团正在制作中，请等待卫星击落"
+ BA_club.0007.title:0 "社团建立取消"
+ BA_club.0007.desc:0 "由于没有合适的社团被选择使用这个部室，部室的建设已经取消。"
+ BA_club.0007.tip:0 "更多社团正在制作中，请等待卫星击落"
 
  BA_club.0031.title:0 "社团舰殖民"
  BA_club.0031.desc:0 "经过船员的大胆决策，我们的社团舰已经降落在[from.GetName]的一处平坦地形上。船上的社团部员小心翼翼的踏上了这个新世界的土地，留下了来自基沃托斯的第一个脚印。之后，一座座的建筑将在这里拔地而起。\n新的世界已经触手可得。"
@@ -87,13 +108,14 @@
  BA_club.0051.exit:0 "关闭窗口"
 
  Communication_main:0 "社团总部"
- Communication_main.desc1:0 "这里是联邦学生会社团总部，您可以在此联系各个社团，也可以在此处理社团相关的事务。"
+ Communication_main.tip:0 "联邦学生会社团总部，您可以在此处处理社团相关的事务。"
+ Communication_main.desc1:0 "这里是联邦学生会社团总部，您可以在此处处理社团相关的事务。"
  Communication_exit:0 "关闭窗口"
 
  Sponsor_all_club:0 "赞助全部社团"
  All_club_sponsed:0 "所有社团都已经赞助，单次赞助为期720天。"
  Sponsor_all_club.re:0 "部费已经下发给各社团，学生们会怎么用这笔钱呢？"
- Sponsor_all_club.tip:0 "拨款给所有可赞助的社团。§Y此操作将赞助个[Root.BA_club_to_sponse]社团，消耗[Root.BA_club_sponse_cost]£energy£能量币。§!"
+ Sponsor_all_club.tip:0 "拨款给所有可赞助的社团。§Y此操作将赞助[Root.BA_club_to_sponse]个社团，消耗[Root.BA_club_sponse_cost]£energy£能量币。§!"
 
  Gain_more_club:0 "增加社团容量"
  Club_overlimit:0 "暂时不需要这么多社团容量，先去新建几个社团如何？"
@@ -316,13 +338,16 @@
  Foreclosure_task_force_sponsor_ShirokoRE:0 "感谢，虽然这点小事情，我自己就可以解决……嗯，这样的话……"
  modifier_BA_club_sponsor_Foreclosure_task_force: "赞助$Foreclosure_task_force$"
 
- Foreclosure_task_force_decisions:0 "我需要你们对殖民地建设的意见。"
- Foreclosure_task_force_decisions.tip:0 "$decision_Foreclosure_task_force_desc$"
+ Foreclosure_task_force_decisions:0 "社团总部对你们下达了下一轮的殖民地调查指令，这是经费。"
+ Foreclosure_task_force_decisions.tip:0 "经过实地调查后，对策委员会的各位成员可以对此殖民地进行更好的资源配置、人力分配优化。\n下一轮的调查需要花费§G1800§!£time£天。"
+ Foreclosure_task_force_func_lv:0 "对策委员会调查等级"
  taskforce_not_finished:0 "一个优化决策已准备好，请先在一个殖民地上执行此决策"
- taskforce_cooldown:0 "需要时间准备下一个决策"
+ taskforce_cooldown:0 "下一级决策的前置调查还未完成"
  decision_fulled:0 "$TRIGGER_FAIL$优化决策已充分进行，去其他殖民地进行优化吧"
+ decision_limited:0 "$TRIGGER_FAIL$更高等级的优化预案还没有筹措，请向对策委员会拨款"
+ decision_coming_soon:0 ""
  decision_Foreclosure_task_force:0 "对策委员会优化"
- decision_Foreclosure_task_force_desc:0 "对策委员会的各位成员可以对此殖民地进行资源配置、人力分配的优化。"
+ decision_Foreclosure_task_force_desc:0 "通过调查现有的生产状况与城市规划，对策委员会可以对殖民地进行全面优化。这需要支付少量£physics_research£ £society_research£ £engineering_research£研究点数进行维护。"
  Foreclosure_task_force_decisions.NonomiRE:0 "了解~我们马上动身~"
  Foreclosure_task_force_decisions.ShirokoRE:0 "嗯，我知道了，这就去。"
 
@@ -331,7 +356,7 @@
  Foreclosure_task_force_building_ShirokoRE:0 "可以的话，我想要离市区近一些的高处，方便我……啊，抱歉。"
 
  Foreclosure_task_force_building_add:0 "管理中心不足的话，可以分配更多给你们。"
- Foreclosure_task_force_building_add_NonomiRE:0 "嘛，对阿拜多斯来说是好事情呢，谢谢您。"
+ Foreclosure_task_force_building_add_NonomiRE:0 "嘛，对大家来说是好事情呢，谢谢您。"
  Foreclosure_task_force_building_add_ShirokoRE:0 "嗯，可以当作撤退的据点使用……没什么。"
 
 #茶会
@@ -344,7 +369,7 @@
  Seia_desc2:0 "$Teaparty_opinion$您似乎为什么事情而困扰……需要我的帮助吗，老师？"
  Seia_desc3:0 "$Teaparty_opinion$它叫银喉长尾山雀……嗯，我知道您想要问什么。"
  Mika_desc1:0 "$Teaparty_opinion$老师! 来茶会有何贵干，是来和我聊天的吗？"
- Mika_desc2:0 "$Teaparty_opinion$在太空中，瑞士卷有和平时不同的风味，圣娅酱和我说过，这是因为太空中……呃，因为什么来着？"
+ Mika_desc2:0 "$Teaparty_opinion$在太空中，瑞士卷有和平时不同的风味，圣娅酱和我介绍过，这是因为太空中……呃，因为什么来着？"
  Mika_desc3:0 "$Teaparty_opinion$我很喜欢这座太空部室，你看，我站在这里，这样……看，像不像《传说传奇编年史4》末章那一幕的公主！……嗯? 第五部的主角队是公主和勇者的儿女们…… 啊，呃，那个…… (脸红)"
 
  Teaparty_sponsor:0 "社团总部可以为你们提供赞助。"
@@ -354,7 +379,7 @@
  modifier_BA_club_sponsor_Teaparty: "赞助$Teaparty$"
 
  Teaparty_support:0 "我们需要你们的行政人员。"
- Teaparty_support.tip:0 "请求茶会提供行政人员为联邦学生会支援，以限制帝国规模。"
+ Teaparty_support.tip:0 "请求茶会提供行政人员为联邦学生会支援，以此来获得或更新帝国修正，限制帝国规模。"
  Teaparty_support.NagisaRE:0 "十分感谢，老师，而且我一向不会刁难有诚意的合作方。"
  Teaparty_support.SeiaRE:0 "……甜点，啊，不……才不是我想要吃……"
  Teaparty_support.MikaRE:0 "真的吗? 那么，就奖励您可以和可爱的未花一起共事的机会！……公文每天三千页起? ……那还是算了……"

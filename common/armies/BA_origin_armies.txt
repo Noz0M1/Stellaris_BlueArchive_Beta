@@ -88,28 +88,26 @@ BA_Deca_army_start = {
 }
 
 BA_Deca_army_final = {
-	defensive = yes
-	is_pop_spawned = yes
+	# defensive = yes
+	# is_pop_spawned = yes
 	war_exhaustion = 0.0
-	has_species = yes
-	damage = 2
-	health = 10
+	#has_species = yes
+	damage = 5
+	health = 2
 	has_morale = no
 	morale_damage = 1
-	collateral_damage = 4
 	icon = GFX_army_type_machine_defensive
 	resources = {
 		category = armies
 	}
 	potential = {
-		owner = {
-			has_country_flag = BA_Unnamed_enemy
+		from = {
+			has_species_flag = BA_Unnamed_enemy_species
 		}
 	}
 }
 
 BA_origin_Kyrie_controled = {
-	defensive = yes
 	damage = 6
 	health = 20
 	has_morale = no

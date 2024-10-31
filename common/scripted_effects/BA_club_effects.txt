@@ -1,3 +1,196 @@
+# UI
+BA_club_clear_found_flag = {
+    remove_country_flag = BA_club_set_Game_development_department
+    remove_country_flag = BA_club_set_Engineering_club
+    remove_country_flag = BA_club_set_Veritas
+    remove_country_flag = BA_club_set_Foreclosure_task_force
+    remove_country_flag = BA_club_set_Teaparty
+}
+
+BA_club_found_selected_club = {
+    hidden_effect = {
+        random_list = {
+            0 = {
+                #游戏部
+                modifier = {
+                    add = 1000
+                    OR = {
+                        BA_set_random_club = yes
+                        has_country_flag = BA_club_set_Game_development_department
+                    }
+                }
+                fromfrom = {
+                    upgrade_megastructure_to = BA_club_station_game_dev
+                }
+                country_event = {
+                    id = BA_club.1001
+                    days = 5
+                }
+                BA_club_cap_use = yes
+                remove_country_flag = BA_club_set_Game_development_department
+                set_country_flag = BA_Game_development_department
+                destroy_fleet = from
+            }
+            0 = {
+                #工程师部
+                modifier = {
+                    add = 1000
+                    OR = {
+                        BA_set_random_club = yes
+                        has_country_flag = BA_club_set_Engineering_club
+                    }
+                }
+                fromfrom = {
+                    upgrade_megastructure_to = BA_club_station_engineering_club
+                }
+                country_event = {
+                    id = BA_club.1101
+                    days = 5
+                }
+                BA_club_cap_use = yes
+                remove_country_flag = BA_club_set_Engineering_club
+                set_country_flag = BA_Engineering_club
+                destroy_fleet = from
+            }
+            0 = {
+                #真理部
+                modifier = {
+                    add = 1000
+                    OR = {
+                        BA_set_random_club = yes
+                        has_country_flag = BA_club_set_Veritas
+                    }
+                }
+                fromfrom = {
+                    upgrade_megastructure_to = BA_club_station_veritas
+                }
+                country_event = {
+                    id = BA_club.1201
+                    days = 5
+                }
+                BA_club_cap_use = yes
+                remove_country_flag = BA_club_set_Veritas
+                set_country_flag = BA_Veritas
+                destroy_fleet = from
+            }
+            0 = {
+                #对策委员会
+                modifier = {
+                    add = 1000
+                    OR = {
+                        BA_set_random_club = yes
+                        has_country_flag = BA_club_set_Foreclosure_task_force
+                    }
+                }
+                fromfrom = {
+                    upgrade_megastructure_to = BA_club_station_countermeasures_committee
+                }
+                country_event = {
+                    id = BA_club.1301
+                    days = 5
+                }
+                BA_club_cap_use = yes
+                remove_country_flag = BA_club_set_Foreclosure_task_force
+                set_country_flag = BA_Foreclosure_task_force
+                destroy_fleet = from
+            }
+            0 = {
+                #茶会
+                modifier = {
+                    add = 1000
+                    OR = {
+                        BA_set_random_club = yes
+                        has_country_flag = BA_club_set_Teaparty
+                    }
+                }
+                fromfrom = {
+                    upgrade_megastructure_to = BA_club_station_tea_party
+                }
+                country_event = {
+                    id = BA_club.1401
+                    days = 5
+                }
+                BA_club_cap_use = yes
+                remove_country_flag = BA_club_set_Teaparty
+                set_country_flag = BA_Teaparty
+                destroy_fleet = from
+            }
+            1 = {
+                fromfrom = {
+                    remove_megastructure_flag = BA_club_occupied
+                }
+                country_event = {
+                    id = BA_club.0007
+                }
+            }
+
+        }
+        remove_country_flag = BA_club_other_block
+    }
+}
+
+# Modifier
+BA_club_clear_country_modifier = {
+    remove_modifier = modifier_BA_club_sponsor_Game_development_department
+    remove_modifier = modifier_BA_club_sponsor_Engineering_club
+    remove_modifier = modifier_BA_club_sponsor_Veritas
+    remove_modifier = modifier_BA_club_sponsor_Foreclosure_task_force
+    remove_modifier = modifier_BA_club_sponsor_Teaparty
+}
+
+BA_club_set_country_modifier = {
+    BA_club_clear_country_modifier = yes
+    if = {
+        limit = {
+            has_country_flag = BA_Game_development_department
+        }
+        add_modifier = {
+            modifier = modifier_BA_club_sponsor_Game_development_department
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = BA_Engineering_club
+        }
+        add_modifier = {
+            modifier = modifier_BA_club_sponsor_Engineering_club
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = BA_Veritas
+        }
+        add_modifier = {
+            modifier = modifier_BA_club_sponsor_Veritas
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = BA_Foreclosure_task_force
+        }
+        add_modifier = {
+            modifier = modifier_BA_club_sponsor_Foreclosure_task_force
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = BA_Teaparty
+        }
+        add_modifier = {
+            modifier = modifier_BA_club_sponsor_Teaparty
+            multiplier = value:num_BA_club_empire_size_modifier_effect
+        }
+    }
+}
+
+BA_club_reload_Teaparty_effect_modifier = {
+    add_modifier = {
+        modifier = modifier_BA_Teaparty
+        multiplier = value:num_BA_club_empire_size_modifier_effect
+    }
+}
+
+# Function
 BA_club_Engineering_club_function_init = {
     # physics_research
     export_resource_stockpile_to_variable = {

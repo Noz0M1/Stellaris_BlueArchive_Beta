@@ -1,0 +1,66 @@
+option = {
+    name = BA_Shittem.1311.$Skin$
+    is_dialog_only = yes
+    response_text = BA_Shittem.1311.$Skin$.re
+    trigger = {
+        from = {
+            BA_leader_has_skin_$Skin$ = yes
+        }
+    }
+    allow = {
+        if = {
+            limit = {
+                from = {
+                    has_leader_flag = BA_skin_$Skin$
+                }
+            }
+            custom_tooltip_fail = {
+                text = BA_Shittem.1311.fail.3
+                always = no
+            }
+        }
+        else_if = {
+            limit = {
+                from = {
+                    has_leader_flag = new_skin
+                }
+            }
+            always = yes
+        }
+        else = {
+            resource_stockpile_compare = {
+                resource = sr_pyroxenes
+                value >= 200
+            }
+        }
+    }
+    if = {
+        limit = {
+            from = {
+                has_leader_flag = new_skin
+            }
+        }
+        custom_tooltip = BA_Shittem.1311.aftersale
+    }
+    else = {
+        add_resource = {
+            sr_pyroxenes = -200
+        }
+    }
+    hidden_effect = {
+        from = {
+            BA_remove_skin = yes
+            set_leader_flag = BA_skin_$Skin$
+            set_timed_leader_flag = {
+                flag = new_skin
+                days = 30
+            }
+            if = {
+                limit = {
+                    has_skill > 2
+                }
+                BA_change_skin_trait = yes
+            }
+        }
+    }
+}

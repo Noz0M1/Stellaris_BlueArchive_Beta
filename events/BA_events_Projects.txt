@@ -2068,75 +2068,19 @@ planet_event = {
 		#6项随机科技的50%进度
 		hidden_effect = {
 			owner = {
-				add_random_research_option = {
-					add_progress = 0.5
-					ignore_prereqs = yes
-					fail_effects = {
-						add_monthly_resource_mult = {
-							resource = engineering_research
-							value = @tier5researchreward
-							min = @tier5researchmin
-							max = @tier5researchmax
-						}
-					}
-				}
-				add_random_research_option = {
-					add_progress = 0.5
-					ignore_prereqs = yes
-					fail_effects = {
-						add_monthly_resource_mult = {
-							resource = engineering_research
-							value = @tier5researchreward
-							min = @tier5researchmin
-							max = @tier5researchmax
-						}
-					}
-				}
-				add_random_research_option = {
-					add_progress = 0.5
-					ignore_prereqs = yes
-					fail_effects = {
-						add_monthly_resource_mult = {
-							resource = engineering_research
-							value = @tier5researchreward
-							min = @tier5researchmin
-							max = @tier5researchmax
-						}
-					}
-				}
-				add_random_research_option = {
-					add_progress = 0.5
-					ignore_prereqs = yes
-					fail_effects = {
-						add_monthly_resource_mult = {
-							resource = engineering_research
-							value = @tier5researchreward
-							min = @tier5researchmin
-							max = @tier5researchmax
-						}
-					}
-				}
-				add_random_research_option = {
-					add_progress = 0.5
-					ignore_prereqs = yes
-					fail_effects = {
-						add_monthly_resource_mult = {
-							resource = engineering_research
-							value = @tier5researchreward
-							min = @tier5researchmin
-							max = @tier5researchmax
-						}
-					}
-				}
-				add_random_research_option = {
-					add_progress = 0.5
-					ignore_prereqs = yes
-					fail_effects = {
-						add_monthly_resource_mult = {
-							resource = engineering_research
-							value = @tier5researchreward
-							min = @tier5researchmin
-							max = @tier5researchmax
+				while = {
+					count = 6
+					add_random_research_option = {
+						add_progress = 0.5
+						ignore_prereqs = yes
+						area = engineering
+						fail_effects = {
+							add_monthly_resource_mult = {
+								resource = engineering_research
+								value = @tier5researchreward
+								min = @tier5researchmin
+								max = @tier5researchmax
+							}
 						}
 					}
 				}

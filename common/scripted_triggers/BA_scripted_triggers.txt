@@ -26,6 +26,7 @@ is_kivotos = {
 
 ##### Leaders
 BA_has_halo_organic = {
+	# species scope
 	NOT = {
 		is_same_value = event_target:BA_leader_species
 	}
@@ -35,250 +36,6 @@ BA_has_halo_organic = {
 		has_trait = trait_halo_full_awakened
 		has_trait = trait_Halo_amplifier
 		has_trait = trait_Halo_precursor
-	}
-}
-
-BA_rename_special_check_1 = {
-	has_skill > 2
-	species = {
-		BA_has_halo_organic = yes
-	}
-	OR = {
-		leader_class = commander
-		leader_class = scientist
-		leader_class = official
-	}
-	NOR = {
-		has_trait = leader_special_000
-		has_trait = leader_special_001
-		has_trait = leader_special_002
-		has_trait = leader_special_003
-		has_trait = leader_special_004
-		has_trait = leader_special_005
-		has_trait = leader_special_005
-		has_trait = leader_special_007
-		has_trait = leader_special_008
-		has_trait = leader_special_009
-		has_trait = leader_special_009
-		has_trait = leader_special_011
-		has_trait = leader_special_012
-		has_trait = leader_special_015
-		has_trait = leader_special_016
-		has_trait = leader_special_017
-		has_trait = leader_special_018
-		has_trait = leader_special_019
-		has_trait = leader_special_019
-		has_trait = leader_special_021
-		has_trait = leader_special_022
-		has_trait = leader_special_023
-		has_trait = leader_special_024
-		has_trait = leader_special_025
-		has_trait = leader_special_026
-		has_trait = leader_special_027
-		has_trait = leader_special_028
-		has_trait = leader_special_029
-		has_trait = leader_special_030
-		has_trait = leader_special_031
-		has_trait = leader_special_032
-		has_trait = leader_special_033
-		has_trait = leader_special_034
-		has_trait = leader_special_035
-		has_trait = leader_special_036
-		has_trait = leader_special_037
-		has_trait = leader_special_038
-		has_trait = leader_special_039
-		has_trait = leader_special_040
-		has_trait = leader_special_041
-		has_trait = leader_special_042
-		has_trait = leader_special_043
-		has_trait = leader_special_044
-		has_trait = leader_special_045
-		has_trait = leader_special_046
-		has_trait = leader_special_047
-		has_trait = leader_special_048
-		has_trait = leader_special_049
-		has_trait = leader_special_050
-		has_trait = leader_special_051
-		has_trait = leader_special_052
-		has_trait = leader_special_053
-		has_trait = leader_special_054
-		has_trait = leader_special_055
-		has_trait = leader_special_056
-		has_trait = leader_special_057
-		has_trait = leader_special_058
-		has_trait = leader_special_059
-		has_trait = leader_special_060
-		has_trait = leader_special_061
-		has_trait = leader_special_062
-		has_trait = leader_special_063
-		has_trait = leader_special_064
-		has_trait = leader_special_065
-		has_trait = leader_special_066
-		has_trait = leader_special_067
-		has_trait = leader_special_068
-		has_trait = leader_special_069
-		has_trait = leader_special_070
-		has_trait = leader_special_071
-		has_trait = leader_special_072
-		has_trait = leader_special_073
-		has_trait = leader_special_075
-		has_trait = leader_special_076
-		has_trait = leader_special_077
-		has_trait = leader_special_078
-		has_trait = leader_special_079
-		has_trait = leader_special_080
-		has_trait = leader_special_081
-		has_trait = leader_special_082
-		has_trait = leader_special_083
-		has_trait = leader_special_084
-		has_trait = leader_special_085
-		has_trait = leader_special_086
-		has_trait = leader_special_087
-		has_trait = leader_special_088
-		has_trait = leader_special_089
-		has_trait = leader_special_090
-		has_trait = leader_special_091
-		has_trait = leader_special_092
-		has_trait = leader_special_093
-		has_trait = leader_special_094
-		has_trait = leader_special_095
-		has_trait = leader_special_096
-		has_trait = leader_special_097
-		has_trait = leader_special_098
-		has_trait = leader_special_099
-		has_trait = leader_special_100
-		has_trait = leader_special_101
-		has_trait = leader_special_102
-		has_trait = leader_special_103
-		has_trait = leader_special_104
-		has_trait = leader_special_105
-		has_trait = leader_special_106
-		has_trait = leader_special_107
-		has_trait = leader_special_108
-		has_trait = leader_special_109
-		has_trait = leader_special_110
-		has_trait = leader_special_111
-		has_trait = leader_special_112
-		has_trait = leader_special_113
-		has_trait = leader_special_114
-		has_trait = leader_special_115
-		has_trait = leader_special_116
-		has_trait = leader_special_117
-		has_trait = leader_special_118
-		has_trait = leader_special_119
-		has_trait = leader_special_120
-		has_trait = leader_special_121
-		has_trait = leader_special_122
-		has_trait = leader_special_123
-		has_trait = leader_special_124
-		has_trait = leader_special_125
-		has_trait = leader_special_126
-		has_trait = leader_special_127
-		has_trait = leader_special_128
-		has_trait = leader_special_129
-		has_trait = leader_special_130
-		has_trait = leader_special_131
-		has_trait = leader_special_132
-		has_trait = leader_special_133
-		has_trait = leader_special_134
-		has_trait = leader_special_135
-		has_trait = leader_special_136
-		has_trait = leader_special_137
-		has_trait = leader_special_138
-		has_trait = leader_special_139
-		has_trait = leader_special_140
-		has_trait = leader_special_141
-		has_trait = leader_special_142
-		has_trait = leader_special_143
-		has_trait = leader_special_144
-		has_trait = leader_special_145
-		has_trait = leader_special_146
-		has_trait = leader_special_147
-		has_trait = leader_special_148
-		has_trait = leader_special_149
-		has_trait = leader_special_150
-		has_trait = leader_special_151
-		has_trait = leader_special_152
-		has_trait = leader_special_153
-		has_trait = leader_special_154
-		has_trait = leader_special_155
-		has_trait = leader_special_156
-		has_trait = leader_special_157
-		has_trait = leader_special_158
-		has_trait = leader_special_159
-		has_trait = leader_special_160
-		has_trait = leader_special_161
-		has_trait = leader_special_162
-		has_trait = leader_special_163
-		has_trait = leader_special_164
-		has_trait = leader_special_165
-		has_trait = leader_special_166
-		has_trait = leader_special_167
-		has_trait = leader_special_168
-		has_trait = leader_special_169
-		has_trait = leader_special_170
-		has_trait = leader_special_171
-		has_trait = leader_special_172
-		has_trait = leader_special_173
-		has_trait = leader_special_174
-		has_trait = leader_special_175
-		has_trait = leader_special_176
-		has_trait = leader_special_177
-		has_trait = leader_special_178
-		has_trait = leader_special_179
-		has_trait = leader_special_180
-		has_trait = leader_special_181
-		has_trait = leader_special_182
-		has_trait = leader_special_183
-		has_trait = leader_special_184
-		has_trait = leader_special_185
-		has_trait = leader_special_186
-		has_trait = leader_special_187
-		has_trait = leader_special_188
-		has_trait = leader_special_189
-		has_trait = leader_special_190
-		has_trait = leader_special_191
-		has_trait = leader_special_193
-		has_trait = leader_special_194
-		has_trait = leader_special_195
-		has_trait = leader_special_196
-		has_trait = leader_special_197
-		has_trait = leader_special_198
-		has_trait = leader_special_199
-		has_trait = leader_special_200
-		has_trait = leader_special_201
-		has_trait = leader_special_204
-		has_trait = leader_special_206
-		has_trait = leader_special_207
-		has_trait = leader_special_208
-		has_trait = leader_special_209
-		has_trait = leader_special_210
-		has_trait = leader_special_211
-		has_trait = leader_special_212
-		has_trait = leader_special_213
-		has_trait = leader_special_214
-		has_trait = leader_special_215
-		has_trait = leader_special_216
-		has_trait = leader_special_217
-		has_trait = leader_special_218
-		has_trait = leader_special_219
-		has_trait = leader_special_220
-		has_trait = leader_special_221
-		has_trait = leader_special_222
-		has_trait = leader_special_223
-		has_trait = leader_special_224
-		has_trait = leader_special_225
-		has_trait = leader_special_226
-		has_trait = leader_special_231
-		has_trait = leader_special_232
-		has_trait = leader_special_233
-		has_trait = leader_special_234
-		has_trait = leader_special_235
-		has_trait = leader_special_236
-		has_trait = leader_special_237
-		has_trait = leader_special_238
-		has_trait = leader_special_240
-		has_trait = leader_special_241
 	}
 }
 
@@ -353,7 +110,19 @@ Project_Cradle_planet_trigger = {
 }
 
 ##### Club
+BA_set_random_club = {
+	# TODO:随社团更新
+	NOR = {
+		has_country_flag = BA_club_set_Game_development_department
+		has_country_flag = BA_club_set_Engineering_club
+		has_country_flag = BA_club_set_Veritas
+		has_country_flag = BA_club_set_Foreclosure_task_force
+		has_country_flag = BA_club_set_Teaparty
+	}
+}
+
 BA_has_any_club_building = {
+	# TODO:随社团更新
 	OR = {
 		has_active_building = building_BA_Game_development_department
 		has_active_building = building_BA_Engineering_club
@@ -361,6 +130,13 @@ BA_has_any_club_building = {
 		has_active_building = building_BA_local_division
 		has_active_building = building_BA_Teaparty_branch
 	}
+}
+
+BA_Foreclosure_task_force_lv_limit = {
+	# check_variable = {
+	# 	which = Foreclosure_task_force_func_lv
+	#
+	# }
 }
 
 

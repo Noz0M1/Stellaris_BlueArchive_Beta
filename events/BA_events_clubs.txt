@@ -115,273 +115,73 @@ fleet_event = {
 			set_megastructure_flag = BA_club_occupied
 		}
 	}
-	### 选项仅设置旗帜
-	# TODO：随社团更新
-	#随机
+	option = {
+		name = BA_club.0005.confirm
+		custom_tooltip = BA_club.0005.confirm.tip
+		hidden_effect = {
+			from.owner = {
+				country_event = {
+					id = BA_club.0006
+				}
+			}
+		}
+	}
 	option = {
 		name = BA_club.0005.random
-	}
-	#游戏部
-	option = {
-		name = Game_development_department
-		custom_tooltip = Game_development_department_desc
-		trigger = {
-			owner = {
-				NOT = {
-					has_country_flag = BA_Game_development_department
+		custom_tooltip = BA_club.0005.random.tip
+		hidden_effect = {
+			from.owner = {
+				country_event = {
+					id = BA_club.0006
 				}
 			}
 		}
-		hidden_effect = {
-			from.owner = {
-				set_country_flag = BA_club_other_block
-				set_country_flag = BA_club_set_Game_development_department
-			}
-		}
 	}
-	#工程师部
-	option = {
-		name = Engineering_club
-		custom_tooltip = Engineering_club_desc
-		trigger = {
-			owner = {
-				NOT = {
-					has_country_flag = BA_Engineering_club
-				}
-			}
-		}
-		hidden_effect = {
-			from.owner = {
-				set_country_flag = BA_club_other_block
-				set_country_flag = BA_club_set_Engineering_club
-			}
-		}
-	}
-	#真理部
-	option = {
-		name = Veritas
-		custom_tooltip = Veritas_desc
-		trigger = {
-			owner = {
-				NOT = {
-					has_country_flag = BA_Veritas
-				}
-			}
-		}
-		hidden_effect = {
-			from.owner = {
-				set_country_flag = BA_club_other_block
-				set_country_flag = BA_club_set_Veritas
-			}
-		}
-	}
-	#对策委员会
-	option = {
-		name = Foreclosure_task_force
-		custom_tooltip = Foreclosure_task_force_desc
-		trigger = {
-			owner = {
-				NOT = {
-					has_country_flag = BA_Foreclosure_task_force
-				}
-			}
-		}
-		hidden_effect = {
-			from.owner = {
-				set_country_flag = BA_club_other_block
-				set_country_flag = BA_club_set_Foreclosure_task_force
-			}
-		}
-	}
-	#茶会
-	option = {
-		name = Teaparty
-		custom_tooltip = Teaparty_desc
-		trigger = {
-			owner = {
-				NOT = {
-					has_country_flag = BA_Teaparty
-				}
-			}
-		}
-		hidden_effect = {
-			from.owner = {
-				set_country_flag = BA_club_other_block
-				set_country_flag = BA_club_set_Teaparty
-			}
-		}
-	}
-	#取消
 	option = {
 		name = BA_club.0005.cancel
 		hidden_effect = {
 			from = {
+				remove_megastructure_flag = BA_club_occupied
 				owner = {
-					set_country_flag = BA_club_other_block
-				}
-			}
-		}
-	}
-	### 功能器
-	after = {
-		hidden_effect = {
-			from = {
-				owner = {
-					# TODO：随社团更新
-					random_list = {
-						#游戏部
-						1000 = {
-							modifier = {
-								set = 0
-								has_country_flag = BA_Game_development_department
-							}
-							modifier = {
-								set = 0
-								has_country_flag = BA_club_other_block
-								NOT = {
-									has_country_flag = BA_club_set_Game_development_department
-								}
-							}
-							prev = {
-								upgrade_megastructure_to = BA_club_station_game_dev
-							}
-							country_event = {
-								id = BA_club.1001
-								days = 5
-							}
-							BA_club_cap_use = yes
-							remove_country_flag = BA_club_set_Game_development_department
-							set_country_flag = BA_Game_development_department
-							destroy_fleet = root
-						}
-						#工程师部
-						1000 = {
-							modifier = {
-								set = 0
-								has_country_flag = BA_Engineering_club
-							}
-							modifier = {
-								set = 0
-								has_country_flag = BA_club_other_block
-								NOT = {
-									has_country_flag = BA_club_set_Engineering_club
-								}
-							}
-							prev = {
-								upgrade_megastructure_to = BA_club_station_engineering_club
-							}
-							country_event = {
-								id = BA_club.1101
-								days = 5
-							}
-							BA_club_cap_use = yes
-							remove_country_flag = BA_club_set_Engineering_club
-							set_country_flag = BA_Engineering_club
-							destroy_fleet = root
-						}
-						#真理部
-						1000 = {
-							modifier = {
-								set = 0
-								has_country_flag = BA_Veritas
-							}
-							modifier = {
-								set = 0
-								has_country_flag = BA_club_other_block
-								NOT = {
-									has_country_flag = BA_club_set_Veritas
-								}
-							}
-							prev = {
-								upgrade_megastructure_to = BA_club_station_veritas
-							}
-							country_event = {
-								id = BA_club.1201
-								days = 5
-							}
-							BA_club_cap_use = yes
-							remove_country_flag = BA_club_set_Veritas
-							set_country_flag = BA_Veritas
-							destroy_fleet = root
-						}
-						#对策委员会
-						1000 = {
-							modifier = {
-								set = 0
-								has_country_flag = BA_Foreclosure_task_force
-							}
-							modifier = {
-								set = 0
-								has_country_flag = BA_club_other_block
-								NOT = {
-									has_country_flag = BA_club_set_Foreclosure_task_force
-								}
-							}
-							prev = {
-								upgrade_megastructure_to = BA_club_station_countermeasures_committee
-							}
-							country_event = {
-								id = BA_club.1301
-								days = 5
-							}
-							BA_club_cap_use = yes
-							remove_country_flag = BA_club_set_Foreclosure_task_force
-							set_country_flag = BA_Foreclosure_task_force
-							destroy_fleet = root
-						}
-						#茶会
-						1000 = {
-							modifier = {
-								set = 0
-								has_country_flag = BA_Teaparty
-							}
-							modifier = {
-								set = 0
-								has_country_flag = BA_club_other_block
-								NOT = {
-									has_country_flag = BA_club_set_Teaparty
-								}
-							}
-							prev = {
-								upgrade_megastructure_to = BA_club_station_tea_party
-							}
-							country_event = {
-								id = BA_club.1401
-								days = 5
-							}
-							BA_club_cap_use = yes
-							remove_country_flag = BA_club_set_Teaparty
-							set_country_flag = BA_Teaparty
-							destroy_fleet = root
-						}
-						#取消
-						1 = {
-							prev = {
-								remove_megastructure_flag = BA_club_occupied
-							}
-							country_event = {
-								id = BA_club.0006
-							}
-						}
+					country_event = {
+						id = BA_club.0007
 					}
-					remove_country_flag = BA_club_other_block
 				}
 			}
 		}
 	}
 }
 
-#创部失败，不进行下一步
+#创部选择UI
 country_event = {
 	id = BA_club.0006
+	title = BLANK_TEXT
+	desc = BLANK_TEXT
 	is_triggered_only = yes
-	title = BA_club.0006.title
-	desc = BA_club.0006.desc
+	diplomatic = yes
+	custom_gui = "BA_UI_club_main"
+	custom_gui_option = "BA_UI_club_confirm_option"
+	immediate = {
+		BA_club_clear_found_flag = yes
+	}
+	option = {
+		name = BLANK_TEXT
+		custom_tooltip = Club_confirm
+		BA_club_found_selected_club = yes
+	}
+}
+
+#创部失败，不进行下一步
+country_event = {
+	id = BA_club.0007
+	is_triggered_only = yes
+	title = BA_club.0007.title
+	desc = BA_club.0007.desc
 	show_sound = event_mystic_reveal
 	picture = GFX_BA_Azusa_in_Trinity
 	option = {
 		name = CONFIRM
-		custom_tooltip = BA_club.0006.tip
+		custom_tooltip = BA_club.0007.tip
 	}
 }
 
@@ -411,24 +211,16 @@ planet_event = {
 				}
 			}
 			switch = {
-				trigger = has_country_flag
-				BA_Club_ship_upgrade_0 = {
+				trigger = has_technology
+				tech_capital_productivity_3 = {
 					root = {
 						add_modifier = {
-							modifier = modifier_BA_colony_development_00
+							modifier = modifier_BA_colony_development_03
 							days = 3600
 						}
 					}
 				}
-				BA_Club_ship_upgrade_1 = {
-					root = {
-						add_modifier = {
-							modifier = modifier_BA_colony_development_01
-							days = 3600
-						}
-					}
-				}
-				BA_Club_ship_upgrade_2 = {
+				tech_capital_productivity_2 = {
 					root = {
 						add_modifier = {
 							modifier = modifier_BA_colony_development_02
@@ -436,10 +228,18 @@ planet_event = {
 						}
 					}
 				}
-				BA_Club_ship_upgrade_3 = {
+				tech_capital_productivity_1 = {
 					root = {
 						add_modifier = {
-							modifier = modifier_BA_colony_development_03
+							modifier = modifier_BA_colony_development_01
+							days = 3600
+						}
+					}
+				}
+				default = {
+					root = {
+						add_modifier = {
+							modifier = modifier_BA_colony_development_00
 							days = 3600
 						}
 					}
@@ -490,164 +290,11 @@ country_event = {
 	title = BA_club.0051.title
 	desc = BA_club.0051.desc
 	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		room = "BA_Shittem_room"
-	}
+	custom_gui = "BA_UI_club_communicate"
+	custom_gui_option = "BA_UI_club_confirm_option"
 	option = {
-		name = BA_club.0051.exit
+		name = BLANK_TEXT
 		default_hide_option = yes
-	}
-	#联邦学生会社团总部
-	option = {
-		name = Communication_main
-		country_event = {
-			id = BA_club.0052
-		}
-	}
-	# TODO：随社团更新
-	#联邦学生会
-	#option = {
-	#	name = Federal_student_union
-	#	hidden_effect = {
-	#		switch = {
-	#			trigger = has_country_flag
-	#			hoshino_is_leader_flag = {
-	#				country_event = {
-	#					id = BA_club.8001
-	#				}
-	#			}
-	#			hina_is_leader_flag = {
-	#				country_event = {
-	#					id = BA_club.8101
-	#				}
-	#			}
-	#			mika_is_leader_flag = {
-	#				country_event = {
-	#					id = BA_club.8201
-	#				}
-	#			}
-	#			yuuka_is_leader_flag = {
-	#				country_event = {
-	#					id = BA_club.8301
-	#				}
-	#			}
-	#		}
-	#	}
-	#}
-	#游戏开发部
-	option = {
-		name = Game_development_department
-		trigger = {
-			has_country_flag = BA_Game_development_department
-		}
-		hidden_effect = {
-			random_list = {
-				10 = {
-					country_event = {
-						id = BA_club.1004
-					}
-				}
-				10 = {
-					country_event = {
-						id = BA_club.1005
-					}
-				}
-			}
-		}
-	}
-	#工程师部
-	option = {
-		name = Engineering_club
-		trigger = {
-			has_country_flag = BA_Engineering_club
-		}
-		hidden_effect = {
-			random_list = {
-				10 = {
-					country_event = {
-						id = BA_club.1104
-					}
-				}
-				10 = {
-					country_event = {
-						id = BA_club.1105
-					}
-				}
-			}
-		}
-	}
-	#真理部
-	option = {
-		name = Veritas
-		trigger = {
-			has_country_flag = BA_Veritas
-		}
-		hidden_effect = {
-			random_list = {
-				10 = {
-					country_event = {
-						id = BA_club.1204
-					}
-				}
-				10 = {
-					country_event = {
-						id = BA_club.1205
-					}
-				}
-			}
-		}
-	}
-	#对策委员会
-	option = {
-		name = Foreclosure_task_force
-		trigger = {
-			has_country_flag = BA_Foreclosure_task_force
-		}
-		hidden_effect = {
-			random_list = {
-				10 = {
-					country_event = {
-						id = BA_club.1304
-					}
-				}
-				10 = {
-					country_event = {
-						id = BA_club.1305
-					}
-				}
-			}
-		}
-	}
-	#茶会
-	option = {
-		name = Teaparty
-		trigger = {
-			has_country_flag = BA_Teaparty
-		}
-		hidden_effect = {
-			random_list = {
-				10 = {
-					country_event = {
-						id = BA_club.1404
-					}
-				}
-				10 = {
-					country_event = {
-						id = BA_club.1405
-					}
-				}
-				10 = {
-					modifier = {
-						set = 0
-						has_country_flag = mika_is_leader_flag
-					}
-					country_event = {
-						id = BA_club.1406
-					}
-				}
-			}
-		}
 	}
 }
 
@@ -682,63 +329,6 @@ country_event = {
 			}
 		}
 	}
-	#强化社团舰
-	option = {
-		name = Upgrade_club_ship
-		is_dialog_only = yes
-		response_text = Upgrade_club_ship.re
-		custom_tooltip = Upgrade_club_ship.tip
-		trigger = {
-			has_country_flag = BA_club_colonized
-			NOR = {
-				has_country_flag = BA_Club_ship_upgrade_3
-			}
-		}
-		allow = {
-			if = {
-				limit = {
-					has_country_flag = BA_Club_ship_upgrade_0
-				}
-				has_technology = tech_capital_productivity_1
-			}
-			else_if = {
-				limit = {
-					has_country_flag = BA_Club_ship_upgrade_1
-				}
-				has_technology = tech_capital_productivity_2
-			}
-			else_if = {
-				limit = {
-					has_country_flag = BA_Club_ship_upgrade_2
-				}
-				has_technology = tech_capital_productivity_3
-			}
-			else = {
-				hidden_trigger = {
-					always = yes
-				}
-			}
-		}
-		###
-		if = {
-			limit = {
-				has_country_flag = BA_Club_ship_upgrade_2
-			}
-			remove_country_flag = BA_Club_ship_upgrade_2
-			set_country_flag = BA_Club_ship_upgrade_3
-		}
-		else_if = {
-			limit = {
-				has_country_flag = BA_Club_ship_upgrade_1
-			}
-			remove_country_flag = BA_Club_ship_upgrade_1
-			set_country_flag = BA_Club_ship_upgrade_2
-		}
-		else = {
-			set_country_flag = BA_Club_ship_upgrade_1
-			remove_country_flag = BA_Club_ship_upgrade_0
-		}
-	}
 	#赞助
 	option = {
 		name = Sponsor_all_club
@@ -761,6 +351,10 @@ country_event = {
 		}
 		hidden_effect = {
 			BA_club_sponse_all = yes
+			add_resource = {
+				energy = -1
+				multiplier = BA_club_sponse_cost
+			}
 		}
 	}
 	#提高社团容量
@@ -2592,7 +2186,7 @@ country_event = {
 		room = BA_06_room
 	}
 	immediate = {
-		fromfrom = {
+		fromfromfrom = {
 			solar_system = {
 				set_star_flag = BA_Foreclosure_task_force_system
 			}
@@ -2609,6 +2203,16 @@ country_event = {
 			which = Foreclosure_task_force_room_limit			#部室限制
 			value = 1
 		}
+		#
+		set_variable = {
+			which = Foreclosure_task_force_func_lv			#赞助等级
+			value = 1
+		}
+		set_timed_country_flag = {
+			flag = BA_Foreclosure_decisions_cooldown
+			days = 1
+		}
+		#
 		every_country = {
 			limit = {
 				has_authority = auth_kivotos
@@ -2642,19 +2246,73 @@ country_event = {
 ### 主界面
 country_event = {
 	id = BA_club.1304
+	title = Foreclosure_task_force
+	desc = Nonomi_desc1
+	desc = Nonomi_desc2
+	desc = Nonomi_desc3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_Nonomi
+		room = BA_06_room
+	}
+	#社团功能
 	inline_script = {
-		script = Club/Club_main
+		script = Club/Function/Foreclosure_task_force
+		CHARA = Nonomi
+	}
+	#部室
+	inline_script = {
+		script = Club/Planet_room/Operation
 		CLUB = Foreclosure_task_force
 		CHARA = Nonomi
+	}
+	#返回
+	option = {
+		name = BA_option_club_exit
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.0051
+			}
+		}
 	}
 }
 
 country_event = {
 	id = BA_club.1305
+	title = Foreclosure_task_force
+	desc = Shiroko_desc1
+	desc = Shiroko_desc2
+	desc = Shiroko_desc3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_Shiroko
+		room = BA_06_room
+	}
+	#社团功能
 	inline_script = {
-		script = Club/Club_main
+		script = Club/Function/Foreclosure_task_force
+		CHARA = Shiroko
+	}
+	#部室
+	inline_script = {
+		script = Club/Planet_room/Operation
 		CLUB = Foreclosure_task_force
 		CHARA = Shiroko
+	}
+	#返回
+	option = {
+		name = BA_option_club_exit
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.0051
+			}
+		}
 	}
 }
 
@@ -2692,6 +2350,10 @@ country_event = {
 			which = Teaparty_room_limit			#部室限制
 			value = 1
 		}
+		set_variable = {
+			which = Teaparty_sponse_count			#赞助效果自变量
+			value = 0
+		}
 		every_country = {
 			limit = {
 				has_authority = auth_kivotos
@@ -2725,29 +2387,96 @@ country_event = {
 ### 主界面
 country_event = {
 	id = BA_club.1404
+	title = Teaparty
+	desc = Nagisa_desc1
+	desc = Nagisa_desc2
+	desc = Nagisa_desc3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_Nagisa
+		room = BA_06_room
+	}
+	#社团功能
 	inline_script = {
-		script = Club/Club_main
+		script = Club/Function/Teaparty
+		CHARA = Nagisa
+	}
+	#部室
+	inline_script = {
+		script = Club/Planet_room/Operation
 		CLUB = Teaparty
 		CHARA = Nagisa
+	}
+	#返回
+	option = {
+		name = BA_option_club_exit
+		default_hide_option = yes
 	}
 }
 
 country_event = {
 	id = BA_club.1405
+	title = Teaparty
+	desc = Seia_desc1
+	desc = Seia_desc2
+	desc = Seia_desc3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_Seia
+		room = BA_06_room
+	}
+	#社团功能
 	inline_script = {
-		script = Club/Club_main
+		script = Club/Function/Teaparty
+		CHARA = Seia
+	}
+	#部室
+	inline_script = {
+		script = Club/Planet_room/Operation
 		CLUB = Teaparty
 		CHARA = Seia
+	}
+	#返回
+	option = {
+		name = BA_option_club_exit
+		default_hide_option = yes
 	}
 }
 
 country_event = {
 	id = BA_club.1406
+	title = Teaparty
+	desc = Mika_desc1
+	desc = Mika_desc2
+	desc = Mika_desc3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_Mika
+		room = BA_06_room
+	}
+	#社团功能
 	inline_script = {
-		script = Club/Club_main
+		script = Club/Function/Teaparty
+		CHARA = Mika
+	}
+	#部室
+	inline_script = {
+		script = Club/Planet_room/Operation
 		CLUB = Teaparty
 		CHARA = Mika
 	}
+	#返回
+	option = {
+		name = BA_option_club_exit
+		default_hide_option = yes
+	}
+
 }
 
 #
@@ -3596,8 +3325,7 @@ country_event = {
 	}
 }
 
-#######################
-#调试用事件
+
 #存储用事件
 country_event = {
 	id = BA_club.9999

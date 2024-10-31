@@ -116,11 +116,7 @@ country_event = {
 				limit = {
 					BA_rename_special_check_1 = yes
 				}
-				BA_add_special_trait = yes
-				change_variable = {
-					which = AAAAA
-					value = 1
-				}
+				BA_change_skin_trait = yes
 			}
 		}
 		#add_modifier = {

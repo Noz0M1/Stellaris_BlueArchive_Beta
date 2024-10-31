@@ -608,7 +608,8 @@ guiTypes = {
         containerWindowType = {#按钮组
             name = "BlueArchive_MainWindow_button"
             position = { x = 520 y = 97 }
-            size = { x = 1000 y = 500 }
+            #size = { x = 1000 y = 500 }
+            size = { width = 1000 height = 500 }
             #天使24
             effectButtonType = {
                 name = "BlueArchive_MainWindow_button_1"

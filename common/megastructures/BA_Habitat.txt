@@ -836,54 +836,10 @@ BA_club_station = {
 	}
 }
 
-# #联邦学生会部室
-# BA_club_station_prime_student_council = {
-# 	entity = ba_club_station_prime_student_council_entity
-# 	construction_entity = ba_club_station_prime_student_council_entity
-# 	portrait = "GFX_megastructure_construction_background"
-# 	place_entity_on_planet_plane = no
-# 	build_time = 1
-# 	resources = {
-# 		category = megastructures
-# 		cost = {
-# 		}
-# 		upkeep = {
-# 			energy = 20
-# 		}
-# 	}
-# 	upgrade_from = {
-# 		BA_club_base
-# 	}
-# 	potential = {
-# 		always = no
-# 	}
-# }
-# #夏莱部室
-# BA_club_station_schale = {
-# 	entity = ba_club_station_schale_entity
-# 	construction_entity = ba_club_station_schale_entity
-# 	portrait = "GFX_megastructure_construction_background"
-# 	place_entity_on_planet_plane = no
-# 	build_time = 1
-# 	resources = {
-# 		category = megastructures
-# 		cost = {
-# 		}
-# 		upkeep = {
-# 			energy = 20
-# 		}
-# 	}
-# 	upgrade_from = {
-# 		BA_club_base
-# 	}
-# 	potential = {
-# 		always = no
-# 	}
-# }
 #游戏开发部部室
 BA_club_station_game_dev = {
-	entity = ba_club_station_game_dev_entity
-	construction_entity = ba_club_station_game_dev_entity
+	entity = ba_club_station_01_entity
+	construction_entity = ba_club_station_01_entity
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	build_time = 1
@@ -896,6 +852,12 @@ BA_club_station_game_dev = {
 			multiplier = owner.value:num_BA_club_game_produce
 		}
 		upkeep = {
+			energy = 5
+		}
+		upkeep = {
+			trigger = {
+				has_policy_flag = club_lv1_spounce
+			}
 			energy = 20
 		}
 	}
@@ -908,35 +870,41 @@ BA_club_station_game_dev = {
 }
 
 BA_club_station_game_dev_ex = {
-	entity = ba_club_station_game_dev_entity
-	construction_entity = ba_club_station_game_dev_entity
+	entity = ba_club_station_ex_01_entity
+	construction_entity = ba_club_station_ex_01_entity
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	build_time = 1
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 500
-		}
-		upkeep = {
-			energy = 30
 		}
 		produces = {
-			unity = 100
+			unity = 1.5
+			multiplier = owner.value:num_BA_club_game_produce
+		}
+		upkeep = {
+			energy = 5
+		}
+		upkeep = {
+			trigger = {
+				has_policy_flag = club_lv1_spounce
+			}
+			energy = 20
 		}
 	}
 	upgrade_from = {
-		BA_club_base
+		BA_club_station_game_dev
 	}
 	potential = {
-		always = no
+		always = yes
 	}
 }
 
 #工程部部室
 BA_club_station_engineering_club = {
-	entity = ba_club_station_engineering_department_entity
-	construction_entity = ba_club_station_engineering_department_entity
+	entity = ba_club_station_01_entity
+	construction_entity = ba_club_station_01_entity
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	build_time = 1
@@ -945,6 +913,12 @@ BA_club_station_engineering_club = {
 		cost = {
 		}
 		upkeep = {
+			energy = 5
+		}
+		upkeep = {
+			trigger = {
+				has_policy_flag = club_lv1_spounce
+			}
 			energy = 20
 		}
 	}
@@ -958,8 +932,8 @@ BA_club_station_engineering_club = {
 
 #真理部部室
 BA_club_station_veritas = {
-	entity = ba_club_station_veritas_entity
-	construction_entity = ba_club_station_veritas_entity
+	entity = ba_club_station_01_entity
+	construction_entity = ba_club_station_01_entity
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	build_time = 1
@@ -968,6 +942,12 @@ BA_club_station_veritas = {
 		cost = {
 		}
 		upkeep = {
+			energy = 5
+		}
+		upkeep = {
+			trigger = {
+				has_policy_flag = club_lv1_spounce
+			}
 			energy = 20
 		}
 	}
@@ -981,8 +961,8 @@ BA_club_station_veritas = {
 
 #对策委员会部室
 BA_club_station_countermeasures_committee = {
-	entity = ba_club_station_countermeasures_committee_entity
-	construction_entity = ba_club_station_countermeasures_committee_entity
+	entity = ba_club_station_01_entity
+	construction_entity = ba_club_station_01_entity
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	build_time = 1
@@ -991,7 +971,19 @@ BA_club_station_countermeasures_committee = {
 		cost = {
 		}
 		upkeep = {
+			energy = 5
+		}
+		upkeep = {
+			trigger = {
+				has_policy_flag = club_lv1_spounce
+			}
 			energy = 20
+		}
+		upkeep = {
+			physics_research = 1
+			society_research = 1
+			engineering_research = 1
+			multiplier = value:num_BA_colony_boost_dicision_upkeep
 		}
 	}
 	upgrade_from = {
@@ -1004,8 +996,8 @@ BA_club_station_countermeasures_committee = {
 
 #茶会部室
 BA_club_station_tea_party = {
-	entity = ba_club_station_tea_party_entity
-	construction_entity = ba_club_station_tea_party_entity
+	entity = ba_club_station_01_entity
+	construction_entity = ba_club_station_01_entity
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	build_time = 1
@@ -1014,11 +1006,25 @@ BA_club_station_tea_party = {
 		cost = {
 		}
 		upkeep = {
+			energy = 5
+		}
+		upkeep = {
+			trigger = {
+				has_policy_flag = club_lv1_spounce
+			}
 			energy = 20
+		}
+		upkeep = {
+			energy = 1
+			multiplier = value:num_BA_club_empire_size_modifier_boost_cost
 		}
 	}
 	upgrade_from = {
 		BA_club_base
+	}
+	country_modifier = {
+		empire_size_colonies_mult = -0.3
+		empire_size_branch_office_mult = -0.5
 	}
 	potential = {
 		always = no
@@ -1028,8 +1034,8 @@ BA_club_station_tea_party = {
 ### 真理部
 #太空通讯管控装置-部分
 BA_Veritas_device = {
-	entity = ba_veritas_device_phase_01_entity
-	construction_entity = ba_veritas_device_phase_01_construction_entity
+	entity = ba_club_station_01_entity
+	construction_entity = ba_club_station_01_entity
 	portrait = GFX_megastructure_construction_background
 	place_entity_on_planet_plane = no
 	build_time = 540

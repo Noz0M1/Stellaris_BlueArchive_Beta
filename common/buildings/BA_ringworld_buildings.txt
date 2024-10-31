@@ -173,7 +173,7 @@ building_BA_ringworld_factory_B = {
         }
     }
     triggered_desc = {
-        text = building_BA_ringworld_factory_A_effect
+        text = building_BA_ringworld_factory_B_effect
     }
     triggered_planet_modifier = {
         potential = {
@@ -202,7 +202,7 @@ building_BA_ringworld_factory_B = {
 }
 
 ### 矩阵区段
-# 公用超光速串流器：制造石*40 --> 凝聚力*240
+# 辅助扩散矩阵：制造石*40 --> 三科*240
 building_BA_ringworld_matrix_A = {
     position_priority = 153
     base_buildtime = 360
@@ -252,7 +252,7 @@ building_BA_ringworld_matrix_A = {
     }
 }
 
-# 辅助扩散矩阵：制造石*40 --> 三科*240
+# 公用超光速串流器：制造石*40 --> 凝聚力*240
 building_BA_ringworld_matrix_B = {
     position_priority = 153
     base_buildtime = 360

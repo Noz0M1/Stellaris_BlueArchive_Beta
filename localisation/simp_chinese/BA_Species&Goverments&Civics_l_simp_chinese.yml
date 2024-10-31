@@ -51,13 +51,10 @@
  PRESCRIPTED_adjective_BA_NPA:0 "阿里乌斯"
  PRESCRIPTED_adjective_BA_DUU:0 "联合会"
 
- NAME_ETO:0 "基沃托斯"
- SYSTEM_BA_ETO:0 "基沃托斯"
-
 #国家介绍及开始界面信息
  ETOSS:0 "ETOSS"
  EMPIRE_DESIGN_BA_ETO:0 "伊甸条约机构"
- EMPIRE_DESIGN_BA_ETO_desc:0 "远在我们进入太空之前，基沃托斯中两所大型学园——圣三一和欣嫩谷几经波折终于签订了“伊甸条约”，设立了伊甸条约机构(ETO)以调停两所学园的世仇纠纷，防止爆发全面战争。\n那之后，虽然发生了不少不愉快的事情，但ETO仍然通过各种手段将基沃托斯联合在一起，带领基沃托斯挺过了枪林弹雨。\n在我们怀着激动的心情迈向未知的同时，当然也做好了清算一切仇恨的准备。因为我们终将与昔日宿敌不期而遇。"
+ EMPIRE_DESIGN_BA_ETO_desc:0 "远在我们进入太空之前，基沃托斯中两所大型学园——圣三一和格黑那几经波折终于签订了“伊甸条约”，设立了伊甸条约机构(ETO)以调停两所学园的世仇纠纷，防止爆发全面战争。\n那之后，虽然发生了不少不愉快的事情，但ETO仍然通过各种手段将基沃托斯联合在一起，带领基沃托斯挺过了枪林弹雨。\n在我们怀着激动的心情迈向未知的同时，当然也做好了清算一切仇恨的准备。因为我们终将与昔日宿敌不期而遇。"
  START_SCREEN_EDEN_TREATY:0 "在某位值得信任的人的帮助下，我们成功把色彩赶出了我们的母星，在圣三一的推动下，我们重新签订了伊甸条约，随着越来越多学校加入到条约学园中，基沃托斯终于能够结束纷争。时过境迁，昔日推动条约的学园的学生会长组建了新一任联邦学生会，在我们把目光投向星空之时，美好的未来尽在眼前。\n然而，在深空之中，我们终将与昔日宿敌不期而遇。"
  START_SCREEN_BA_ETO:0 "$EMPIRE_DESIGN_BA_ETO_desc$"
 
@@ -68,7 +65,7 @@
  START_SCREEN_BA_NPA:0 "$EMPIRE_DESIGN_BA_NPA_desc$"
 
  DUUSS:0 "STUSS"
- EMPIRE_DESIGN_BA_DUU:0 "白鸟联合会"
+ EMPIRE_DESIGN_BA_DUU:0 "方舟联合议会"
  EMPIRE_DESIGN_BA_DUU_desc:0 "基沃托斯在虚妄之塔的进攻下失守后，我们的一部分幸存者逃往太空，以那里的空间站作为据点保留了我们最后的火种。克服了最开始的困难后，我们扎根于太空，一座又一座的新空间站被建立。虽然也曾有过压迫、反抗、怀疑和纷争，但现在我们怀着一致的目标联合在一起。这星点的火花，即将带着燃尽一切的力量重返家园。"
  START_SCREEN_UNNAMED:0 "太空中的生活与昔日大不相同，我们至今仍向往着往日在大地上奔跑、喧闹的日子。武器已经就绪，我们已不像以前那么弱小。我们的故土不会就这样被遗忘，我们已经迫不及待，在这一次的新起点，开始新的故事。"
  START_SCREEN_BA_DUU:0 "$EMPIRE_DESIGN_BA_DUU_desc$"
@@ -78,8 +75,10 @@
 #物种特质
  trait_test:0 "测试中"
  trait_test_desc:0 "测试中的机器人，目前还只是一批原型机。"
+ trait_test_effect:0 "无法产生§Y领袖§!"
  trait_test_finished:0 "姬器人核心"
  trait_test_finished_desc:0 "专门为姬器人设计的核心，安装后会产生一个模拟的光环。"
+ trait_test_finished_effect:0 "无法产生§Y领袖§!，除非通过§M领袖储备§!界面招募。"
 
  trait_pc_Schale_preference:0 "基沃托斯偏好"
  trait_pc_Schale_preference_desc:0 "§L她们的气候偏好是由亿万年来的进化、设计，或是人工基因操纵所决定的……吧？§!"
@@ -101,6 +100,7 @@
  trait_BA_grate_duty_desc: "优秀的值日轮班制度使得核心机构的运转变得顺畅了，顺带减轻了某人的工作量。"
  trait_BA_summer_star: "夏日之星"
  trait_BA_summer_star_desc: "夏日，大海！"
+ trait_BA_summer_star_tip: "领袖切换为§B泳装§!类别的换装时，不需要花费资源。"
  trait_BA_tactical_training:0 "战术训练"
  trait_BA_tactical_training_desc:0 "战术训练是基沃托斯的标准课程之一。"
  trait_BA_top_notchism:0 "顶配主义"

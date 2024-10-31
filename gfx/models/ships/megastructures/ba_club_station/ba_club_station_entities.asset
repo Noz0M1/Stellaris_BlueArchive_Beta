@@ -28,6 +28,32 @@ entity = {
 
 }
 
+entity = {
+	name = "ba_club_station_ex_01_entity"
+	pdxmesh = "ba_01_starport_mesh"
+
+	locator = {
+		name = "slot1"
+		position = { 0 0 0 }
+		rotation = { 0 0 0 }
+	}
+
+	attach = {
+		slot1 = "ba_ship_halo_station_entity"
+	}
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		 event = { time = 0 node = "light_locator_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_03" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_01" } }
+	}
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+
+}
+
 
 #########对策委员会部室########
 

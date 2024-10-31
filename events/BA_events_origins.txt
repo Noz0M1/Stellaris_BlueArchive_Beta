@@ -142,7 +142,7 @@ country_event = {
 			#安置其他候选人
 			country_event = {
 				id = BA_origin.0011
-				days = 58
+				days = 60
 			}
 		}
 	}
@@ -395,6 +395,10 @@ country_event = {
 			event_target:BA_Shittem_country = {
 				set_country_flag = BA_stored_SP_Hoshino_@root
 			}
+			inline_script = {
+				script = Leader/SP_unlock
+				Leader = Hoshino
+			}
 		}
 		if = {
 			limit = {
@@ -404,6 +408,10 @@ country_event = {
 			}
 			event_target:BA_Shittem_country = {
 				set_country_flag = BA_stored_SP_Hina_@root
+			}
+			inline_script = {
+				script = Leader/SP_unlock
+				Leader = Hina
 			}
 		}
 		if = {
@@ -415,6 +423,10 @@ country_event = {
 			event_target:BA_Shittem_country = {
 				set_country_flag = BA_stored_SP_Mika_@root
 			}
+			inline_script = {
+				script = Leader/SP_unlock
+				Leader = Mika
+			}
 		}
 		if = {
 			limit = {
@@ -424,6 +436,10 @@ country_event = {
 			}
 			event_target:BA_Shittem_country = {
 				set_country_flag = BA_stored_SP_Yuuka_@root
+			}
+			inline_script = {
+				script = Leader/SP_unlock
+				Leader = Yuuka
 			}
 		}
 	}
@@ -634,6 +650,7 @@ country_event = {
 		capital_scope = {
 			###
 			set_planet_flag = BA_Kyrie_target_@root
+			save_global_event_target_as = BA_Kyrie_capital_target_@root
 			###
 			clear_deposits = yes			#清除原有区块
 			add_deposit = d_Arius_Cathedral_ruined			#大圣堂
@@ -1841,7 +1858,7 @@ planet_event = {
 	}
 }
 
-#重建欣嫰谷
+#重建格黑那
 planet_event = {
 	id = BA_origin.1305
 	is_triggered_only = yes

@@ -1,22 +1,16 @@
 #对策委员会-优化决策
 option = {
     name = Foreclosure_task_force_decisions
+    is_dialog_only = yes
     custom_tooltip = Foreclosure_task_force_decisions.tip
     response_text = Foreclosure_task_force_decisions.$CHARA$RE
+    trigger = {
+        check_variable = {
+            which = Foreclosure_task_force_func_lv
+            value < 5
+        }
+    }
     allow = {
-        custom_tooltip = {
-            text = BA_club_favor_fail
-            check_variable = {
-                which = Foreclosure_task_force
-                value >= 40
-            }
-        }
-        custom_tooltip = {
-            fail_text = taskforce_not_finished
-            NOT = {
-                has_country_flag = BA_Foreclosure_decisions_ready
-            }
-        }
         custom_tooltip = {
             fail_text = taskforce_cooldown
             NOT = {
@@ -24,11 +18,14 @@ option = {
             }
         }
     }
+    change_variable = {
+        which = Foreclosure_task_force_func_lv
+        value = 1
+    }
     hidden_effect = {
-        set_country_flag = BA_Foreclosure_decisions_ready
         set_timed_country_flag = {
             flag = BA_Foreclosure_decisions_cooldown
-            days = 180
+            days = 1
         }
     }
 }

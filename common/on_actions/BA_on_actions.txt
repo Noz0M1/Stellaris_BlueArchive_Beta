@@ -162,6 +162,21 @@ on_planet_attackers_win = {
 	}
 }
 
+# Planet has reached 0 pops from orbital bombardment
+# This = Planet
+# From = Bombarder
+on_planet_zero_pops = {
+	events = {
+	}
+}
+
+# Planet has reached 0 pops from collateral damage
+# This = Planet
+# From = Army owner
+on_planet_zero_pops_ground_combat = {
+}
+
+
 on_colony_3_years_old = {
 	events = {
 		BA_Project.0017		#触发摇篮计划2阶段
