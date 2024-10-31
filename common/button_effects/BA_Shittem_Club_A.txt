@@ -1,0 +1,246 @@
+button_effect_found_nothing = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = Club_tbc
+	}
+}
+
+#
+button_effect_found_Game_development_department = {
+	allow = {
+		custom_tooltip = {
+			fail_text = Club_founded
+			owner = {
+				NOT = {
+					has_country_flag = BA_Game_development_department
+				}
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = Game_development_department_desc
+		hidden_effect = {
+			owner = {
+				if = {
+					limit = {
+						has_country_flag = BA_club_set_Game_development_department
+					}
+					remove_country_flag = BA_club_set_Game_development_department
+				}
+				else = {
+					BA_club_clear_found_flag = yes
+					set_country_flag = BA_club_set_Game_development_department
+				}
+			}
+		}
+	}
+}
+
+button_effect_frame_Game_development_department = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		owner = {
+			has_country_flag = BA_club_set_Game_development_department
+		}
+	}
+	effect = {
+	}
+}
+
+#
+button_effect_found_Engineering_club = {
+	allow = {
+		custom_tooltip = {
+			fail_text = Club_founded
+			owner = {
+				NOT = {
+					has_country_flag = BA_Engineering_club
+				}
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = Engineering_club_desc
+		hidden_effect = {
+			owner = {
+				if = {
+					limit = {
+						has_country_flag = BA_club_set_Engineering_club
+					}
+					remove_country_flag = BA_club_set_Engineering_club
+				}
+				else = {
+					BA_club_clear_found_flag = yes
+					set_country_flag = BA_club_set_Engineering_club
+				}
+			}
+		}
+	}
+}
+
+button_effect_frame_Engineering_club = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		owner = {
+			has_country_flag = BA_club_set_Engineering_club
+		}
+	}
+	effect = {
+	}
+}
+
+#
+button_effect_found_Veritas = {
+	allow = {
+		custom_tooltip = {
+			fail_text = Club_founded
+			owner = {
+				NOT = {
+					has_country_flag = BA_Veritas
+				}
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = Veritas_desc
+		hidden_effect = {
+			owner = {
+				if = {
+					limit = {
+						has_country_flag = BA_club_set_Veritas
+					}
+					remove_country_flag = BA_club_set_Veritas
+				}
+				else = {
+					BA_club_clear_found_flag = yes
+					set_country_flag = BA_club_set_Veritas
+				}
+			}
+		}
+	}
+}
+
+button_effect_frame_Veritas = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		owner = {
+			has_country_flag = BA_club_set_Veritas
+		}
+	}
+	effect = {
+	}
+}
+
+#
+button_effect_found_Foreclosure_task_force = {
+	allow = {
+		custom_tooltip = {
+			fail_text = Club_founded
+			owner = {
+				NOT = {
+					has_country_flag = BA_Foreclosure_task_force
+				}
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = Foreclosure_task_force_desc
+		hidden_effect = {
+			owner = {
+				if = {
+					limit = {
+						has_country_flag = BA_club_set_Foreclosure_task_force
+					}
+					remove_country_flag = BA_club_set_Foreclosure_task_force
+				}
+				else = {
+					BA_club_clear_found_flag = yes
+					set_country_flag = BA_club_set_Foreclosure_task_force
+				}
+			}
+		}
+	}
+}
+
+button_effect_frame_Foreclosure_task_force = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		owner = {
+			has_country_flag = BA_club_set_Foreclosure_task_force
+		}
+	}
+	effect = {
+	}
+}
+
+#
+button_effect_found_Teaparty = {
+	allow = {
+		custom_tooltip = {
+			fail_text = Club_founded
+			owner = {
+				NOT = {
+					has_country_flag = BA_Teaparty
+				}
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = Teaparty_desc
+		hidden_effect = {
+			owner = {
+				if = {
+					limit = {
+						has_country_flag = BA_club_set_Teaparty
+					}
+					remove_country_flag = BA_club_set_Teaparty
+				}
+				else = {
+					BA_club_clear_found_flag = yes
+					set_country_flag = BA_club_set_Teaparty
+				}
+			}
+		}
+	}
+}
+
+button_effect_frame_Teaparty = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		owner = {
+			has_country_flag = BA_club_set_Teaparty
+		}
+	}
+	effect = {
+	}
+}

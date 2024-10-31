@@ -110,7 +110,19 @@ Project_Cradle_planet_trigger = {
 }
 
 ##### Club
+BA_set_random_club = {
+	# TODO:随社团更新
+	NOR = {
+		has_country_flag = BA_club_set_Game_development_department
+		has_country_flag = BA_club_set_Engineering_club
+		has_country_flag = BA_club_set_Veritas
+		has_country_flag = BA_club_set_Foreclosure_task_force
+		has_country_flag = BA_club_set_Teaparty
+	}
+}
+
 BA_has_any_club_building = {
+	# TODO:随社团更新
 	OR = {
 		has_active_building = building_BA_Game_development_department
 		has_active_building = building_BA_Engineering_club
@@ -118,6 +130,13 @@ BA_has_any_club_building = {
 		has_active_building = building_BA_local_division
 		has_active_building = building_BA_Teaparty_branch
 	}
+}
+
+BA_Foreclosure_task_force_lv_limit = {
+	# check_variable = {
+	# 	which = Foreclosure_task_force_func_lv
+	#
+	# }
 }
 
 
