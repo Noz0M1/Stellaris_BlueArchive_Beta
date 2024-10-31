@@ -243,45 +243,81 @@ decision_Foreclosure_task_force = {
 	}
 	potential = {
 		owner = {
-			is_regular_empire = yes
-			has_country_flag = BA_Foreclosure_decisions_ready
+			any_owned_megastructure = {
+				has_megastructure_flag = Mega_Foreclosure_task_force_@owner
+			}
+		}
+		NOT = {
+			has_modifier = modifier_BA_Foreclosure_task_force_5
 		}
 	}
 	allow = {
 		custom_tooltip = {
+			#这里以后改
 			fail_text = decision_fulled
 			NOT = {
-				has_modifier = modifier_BA_Foreclosure_task_force_3
+				has_modifier = modifier_BA_Foreclosure_task_force_5
+			}
+		}
+		custom_tooltip = {
+			fail_text = decision_limited
+			check_variable = {
+				which = Foreclosure_task_force_func_lv_planet
+				value < owner.Foreclosure_task_force_func_lv
 			}
 		}
 	}
 	effect = {
+		switch = {
+			trigger = has_modifier
+			modifier_BA_Foreclosure_task_force_4 = {
+				hidden_effect = {
+					remove_modifier = modifier_BA_Foreclosure_task_force_4
+				}
+				add_modifier = {
+					modifier = modifier_BA_Foreclosure_task_force_5
+				}
+			}
+			modifier_BA_Foreclosure_task_force_3 = {
+				hidden_effect = {
+					remove_modifier = modifier_BA_Foreclosure_task_force_3
+				}
+				add_modifier = {
+					modifier = modifier_BA_Foreclosure_task_force_4
+				}
+			}
+			modifier_BA_Foreclosure_task_force_2 = {
+				hidden_effect = {
+					remove_modifier = modifier_BA_Foreclosure_task_force_2
+				}
+				add_modifier = {
+					modifier = modifier_BA_Foreclosure_task_force_3
+				}
+			}
+			modifier_BA_Foreclosure_task_force_1 = {
+				hidden_effect = {
+					remove_modifier = modifier_BA_Foreclosure_task_force_1
+				}
+				add_modifier = {
+					modifier = modifier_BA_Foreclosure_task_force_2
+				}
+			}
+			default = {
+				add_modifier = {
+					modifier = modifier_BA_Foreclosure_task_force_1
+				}
+			}
+		}
 		hidden_effect = {
+			change_variable = {
+				which = Foreclosure_task_force_func_lv_planet
+				value = 1
+			}
 			owner = {
-				remove_country_flag = BA_Foreclosure_decisions_ready
-			}
-		}
-		if = {
-			limit = {
-				has_modifier = modifier_BA_Foreclosure_task_force_2
-			}
-			remove_modifier = modifier_BA_Foreclosure_task_force_2
-			add_modifier = {
-				modifier = modifier_BA_Foreclosure_task_force_3
-			}
-		}
-		else_if = {
-			limit = {
-				has_modifier = modifier_BA_Foreclosure_task_force_1
-			}
-			remove_modifier = modifier_BA_Foreclosure_task_force_1
-			add_modifier = {
-				modifier = modifier_BA_Foreclosure_task_force_2
-			}
-		}
-		else = {
-			add_modifier = {
-				modifier = modifier_BA_Foreclosure_task_force_1
+				change_variable = {
+					which = Foreclosure_task_force_func_cost
+					value = 1
+				}
 			}
 		}
 	}

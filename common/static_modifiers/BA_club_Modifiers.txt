@@ -1,3 +1,16 @@
+#1-(0.04x+1)^{-x}
+@Tp_m_1 = -0.05
+@Tp_m_2 = -0.14
+@Tp_m_3 = -0.28
+@Tp_m_4 = -0.45
+@Tp_m_5 = -0.6
+@Tp_m_6 = -0.72
+@Tp_m_7 = -0.82
+@Tp_m_8 = -0.89
+@Tp_m_9 = -0.94
+@Tp_m_X = -0.97
+
+
 #社团超载
 modifier_BA_club_overload_1 = {
 	empire_size_mult = 0.1
@@ -58,7 +71,6 @@ modifier_BA_colony_development_03 = {
 
 #赞助 TODO:随社团更新
 modifier_BA_club_sponsor_Game_development_department = {
-
 	pop_happiness = 0.1
 	planet_jobs_society_research_produces_mult = 0.05
 }
@@ -145,27 +157,95 @@ modifier_BA_Foreclosure_task_force_3 = {
 	planet_jobs_physics_research_produces_mult = 0.15
 	planet_jobs_society_research_produces_mult = 0.15
 	planet_jobs_engineering_research_produces_mult = 0.15
+	#
+	planet_housing_mult = 0.1
+}
+
+modifier_BA_Foreclosure_task_force_4 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_BA_Arius_cleaning.dds"
+	#
+	planet_jobs_energy_upkeep_mult = -0.2
+	#
+	planet_jobs_minerals_upkeep_mult = -0.2
+	planet_jobs_consumer_goods_upkeep_mult = -0.15
+	#
+	planet_jobs_physics_research_produces_mult = 0.15
+	planet_jobs_society_research_produces_mult = 0.15
+	planet_jobs_engineering_research_produces_mult = 0.15
+	#
+	planet_housing_mult = 0.15
+}
+
+modifier_BA_Foreclosure_task_force_5 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_BA_Arius_cleaning.dds"
+	#
+	planet_jobs_energy_upkeep_mult = -0.2
+	#
+	planet_jobs_minerals_upkeep_mult = -0.2
+	planet_jobs_consumer_goods_upkeep_mult = -0.2
+	#
+	planet_jobs_physics_research_produces_mult = 0.25
+	planet_jobs_society_research_produces_mult = 0.25
+	planet_jobs_engineering_research_produces_mult = 0.25
+	#
+	planet_housing_mult = 0.15
+	planet_army_build_speed_mult = 0.5
+	planet_building_build_speed_mult = 0.1
+	planet_decision_enact_speed_mult = 0.1
 }
 
 #茶会
+modifier_BA_Teaparty = {
+	empire_size_pops_mult = -1
+	empire_size_systems_mult = -1
+}
+
 modifier_BA_Teaparty_1 = {
-	empire_size_pops_mult = -0.05
+	empire_size_pops_mult = @Tp_m_1
+	empire_size_systems_mult = @Tp_m_1
 }
 
 modifier_BA_Teaparty_2 = {
-	empire_size_pops_mult = -0.075
-	empire_size_colonies_mult = -0.1
+	empire_size_pops_mult = @Tp_m_2
+	empire_size_systems_mult = @Tp_m_2
 }
 
 modifier_BA_Teaparty_3 = {
-	empire_size_pops_mult = -0.1
-	empire_size_colonies_mult = -0.2
-	empire_size_systems_mult = -0.2
+	empire_size_pops_mult = @Tp_m_3
+	empire_size_systems_mult = @Tp_m_3
 }
 
 modifier_BA_Teaparty_4 = {
-	empire_size_pops_mult = -0.15
-	empire_size_colonies_mult = -0.3
-	empire_size_systems_mult = -0.4
-	empire_size_branch_office_mult = -0.5
+	empire_size_pops_mult = @Tp_m_4
+	empire_size_systems_mult = @Tp_m_4
+}
+
+modifier_BA_Teaparty_5 = {
+	empire_size_pops_mult = @Tp_m_5
+	empire_size_systems_mult = @Tp_m_5
+}
+
+modifier_BA_Teaparty_6 = {
+	empire_size_pops_mult = @Tp_m_6
+	empire_size_systems_mult = @Tp_m_6
+}
+
+modifier_BA_Teaparty_7 = {
+	empire_size_pops_mult = @Tp_m_7
+	empire_size_systems_mult = @Tp_m_7
+}
+
+modifier_BA_Teaparty_8 = {
+	empire_size_pops_mult = @Tp_m_8
+	empire_size_systems_mult = @Tp_m_8
+}
+
+modifier_BA_Teaparty_9 = {
+	empire_size_pops_mult = @Tp_m_9
+	empire_size_systems_mult = @Tp_m_9
+}
+
+modifier_BA_Teaparty_X = {
+	empire_size_pops_mult = @Tp_m_X
+	empire_size_systems_mult = @Tp_m_X
 }

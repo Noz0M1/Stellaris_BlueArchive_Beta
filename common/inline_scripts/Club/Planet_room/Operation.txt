@@ -1,0 +1,52 @@
+#建立部室
+option = {
+    name = $CLUB$_building
+    trigger = {
+        NOT = {
+            has_country_flag = allow_$CLUB$
+        }
+    }
+    allow = {
+        custom_tooltip = {
+            fail_text = BA_club_favor_fail
+            check_variable = {
+                which = $CLUB$
+                value >= 60
+            }
+        }
+        resource_stockpile_compare = {
+            resource = sr_pyroxenes
+            value >= 200
+            multiplier = $CLUB$_room_limit
+        }
+    }
+    response_text = $CLUB$_building_$CHARA$RE
+    set_country_flag = allow_$CLUB$
+    add_resource = {
+        sr_pyroxenes = -200
+    }
+}
+#增加部室
+option = {
+    name = $CLUB$_building_add
+    trigger = {
+        has_country_flag = allow_$CLUB$
+    }
+    allow = {
+        resource_stockpile_compare = {
+            resource = sr_pyroxenes
+            value >= 1000
+            multiplier = $CLUB$_room_limit
+        }
+    }
+    response_text = $CLUB$_building_add_$CHARA$RE
+    hidden_effect = {
+        change_variable = {
+            which = $CLUB$_room_limit
+            value = 1
+        }
+    }
+    add_resource = {
+        sr_pyroxenes = -200
+    }
+}

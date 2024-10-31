@@ -940,7 +940,7 @@ BA_set_name = {
 }
 
 #特使专用处理
-BA_rename_envoy= {
+BA_rename_envoy = {
 	change_leader_portrait = BA_carefree
 	set_name = BA_envoy
 }
@@ -1435,7 +1435,7 @@ BA_add_club_trait = {
 }
 
 #去除所有换装标志 leader
-BA_remove_skin= {
+BA_remove_skin = {
 	remove_leader_flag = BA_skin_GD
 	remove_leader_flag = BA_skin_OLD
 	remove_leader_flag = BA_skin_SS
@@ -1688,6 +1688,1379 @@ BA_remove_sp_trait = {
 #检测领袖标志和换装标志，更换个人特质 leader
 BA_change_skin_trait = {
 	BA_remove_sp_trait = yes
+	if = {
+		limit = {
+			has_leader_flag = leader_BA_001
+		}
+		add_trait = leader_special_001
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_002
+		}
+		add_trait = leader_special_002
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_003
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_CYC
+			}
+			add_trait = leader_special_003_CYC
+		}
+		else = {
+			add_trait = leader_special_003
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_004
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SS
+			}
+			add_trait = leader_special_004_SS
+		}
+		else = {
+			add_trait = leader_special_004
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_005
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_KMN
+			}
+			add_trait = leader_special_005_KMN
+		}
+		else = {
+			add_trait = leader_special_005
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_006
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SS
+			}
+			add_trait = leader_special_006_SS
+		}
+		else = {
+			add_trait = leader_special_006
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_007
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SS
+			}
+			add_trait = leader_special_007_SS
+		}
+		else = {
+			add_trait = leader_special_007
+		}
+	}
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_008
+	# 	}
+	# 	add_trait = leader_special_008
+	# }
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_009
+		}
+		add_trait = leader_special_009
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_010
+		}
+		add_trait = leader_special_010
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_011
+		}
+		add_trait = leader_special_011
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_012
+		}
+		add_trait = leader_special_012
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_013
+		}
+		add_trait = leader_special_013
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_014
+		}
+		add_trait = leader_special_014
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_015
+		}
+		add_trait = leader_special_015
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_016
+		}
+		add_trait = leader_special_016
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_017
+		}
+		add_trait = leader_special_017
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_018
+		}
+		add_trait = leader_special_018
+	}
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_019
+	# 	}
+	# 	add_trait = leader_special_019
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_020
+	# 	}
+	# 	add_trait = leader_special_020
+	# }
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_021
+		}
+		add_trait = leader_special_021
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_022
+		}
+		add_trait = leader_special_022
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_023
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SP
+			}
+			add_trait = leader_special_023_SP
+		}
+		else_if = {
+			limit = {
+				has_leader_flag = BA_skin_SS
+			}
+			add_trait = leader_special_023_SS
+		}
+		else = {
+			add_trait = leader_special_023
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_024
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_FN
+			}
+			add_trait = leader_special_024_FN
+		}
+		else_if = {
+			limit = {
+				has_leader_flag = BA_skin_SS
+			}
+			add_trait = leader_special_024_SS
+		}
+		else = {
+			add_trait = leader_special_024
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_025
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SP
+			}
+			add_trait = leader_special_025_SP
+		}
+		else_if = {
+			limit = {
+				has_leader_flag = BA_skin_SS
+			}
+			add_trait = leader_special_025_SS
+		}
+		else = {
+			add_trait = leader_special_025
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_026
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SP
+			}
+			add_trait = leader_special_026_SP
+		}
+		else = {
+			add_trait = leader_special_026
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_027
+		}
+		add_trait = leader_special_027
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_028
+		}
+		add_trait = leader_special_028
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_029
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SP
+			}
+			add_trait = leader_special_029_SP
+		}
+		else = {
+			add_trait = leader_special_029
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_030
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SS
+			}
+			add_trait = leader_special_030_SS
+		}
+		else = {
+			add_trait = leader_special_030
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_031
+		}
+		add_trait = leader_special_031
+	}
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_032
+	# 	}
+	# 	add_trait = leader_special_032
+	# }
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_033
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SS
+			}
+			add_trait = leader_special_033_SS
+		}
+		else = {
+			add_trait = leader_special_033
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_034
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_KMN
+			}
+			add_trait = leader_special_034_KMN
+		}
+		else = {
+			add_trait = leader_special_034
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_035
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_KMN
+			}
+			add_trait = leader_special_035_KMN
+		}
+		else = {
+			add_trait = leader_special_035
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_036
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_KMN
+			}
+			add_trait = leader_special_036_KMN
+		}
+		else = {
+			add_trait = leader_special_036
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_037
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_KMN
+			}
+			add_trait = leader_special_037_KMN
+		}
+		else = {
+			add_trait = leader_special_037
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_038
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_HS
+			}
+			add_trait = leader_special_038_HS
+		}
+		else = {
+			add_trait = leader_special_038
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_039
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_PJ
+			}
+			add_trait = leader_special_039_PJ
+		}
+		else_if = {
+			limit = {
+				has_leader_flag = BA_skin_SS
+			}
+			add_trait = leader_special_039_SS
+		}
+		else = {
+			add_trait = leader_special_039
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_040
+		}
+		add_trait = leader_special_040
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_041
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SS
+			}
+			add_trait = leader_special_041_SS
+		}
+		else = {
+			add_trait = leader_special_041
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_042
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_KMN
+			}
+			add_trait = leader_special_042_KMN
+		}
+		else = {
+			add_trait = leader_special_042
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_043
+		}
+		add_trait = leader_special_043
+	}
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_044
+	# 	}
+	# 	add_trait = leader_special_044
+	# }
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_045
+		}
+		add_trait = leader_special_045
+	}
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_046
+	# 	}
+	# 	add_trait = leader_special_046
+	# }
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_047
+		}
+		add_trait = leader_special_047
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_048
+		}
+		add_trait = leader_special_048
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_049
+		}
+		add_trait = leader_special_049
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_050
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SS
+			}
+			add_trait = leader_special_050_SS
+		}
+		else = {
+			add_trait = leader_special_050
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_051
+		}
+		add_trait = leader_special_051
+	}
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_052
+	# 	}
+	# 	add_trait = leader_special_052
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_053
+	# 	}
+	# 	add_trait = leader_special_053
+	# }
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_054
+		}
+		add_trait = leader_special_054
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_055
+		}
+		add_trait = leader_special_055
+	}
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_056
+	# 	}
+	# 	add_trait = leader_special_056
+	# }
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_057
+		}
+		add_trait = leader_special_057
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_058
+		}
+		add_trait = leader_special_058
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_059
+		}
+		add_trait = leader_special_059
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_060
+		}
+		add_trait = leader_special_060
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_061
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_HS
+			}
+			add_trait = leader_special_061_HS
+		}
+		else = {
+			add_trait = leader_special_061
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_062
+		}
+		add_trait = leader_special_062
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_063
+		}
+		add_trait = leader_special_063
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_064
+		}
+		add_trait = leader_special_064
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_065
+		}
+		add_trait = leader_special_065
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_066
+		}
+		add_trait = leader_special_066
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_067
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_HS
+			}
+			add_trait = leader_special_067_HS
+		}
+		else = {
+			add_trait = leader_special_067
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_068
+		}
+		add_trait = leader_special_068
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_069
+		}
+		add_trait = leader_special_069
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_070
+		}
+		add_trait = leader_special_070
+	}
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_071
+	# 	}
+	# 	add_trait = leader_special_071
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_072
+	# 	}
+	# 	add_trait = leader_special_072
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_073
+	# 	}
+	# 	add_trait = leader_special_073
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_074
+	# 	}
+	# 	add_trait = leader_special_074
+	# }
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_075
+		}
+		add_trait = leader_special_075
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_076
+		}
+		add_trait = leader_special_076
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_077
+		}
+		add_trait = leader_special_077
+	}
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_078
+	# 	}
+	# 	add_trait = leader_special_078
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_079
+	# 	}
+	# 	add_trait = leader_special_079
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_080
+	# 	}
+	# 	add_trait = leader_special_080
+	# }
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_081
+		}
+		add_trait = leader_special_081
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_082
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_CL
+			}
+			add_trait = leader_special_082_CL
+		}
+		else = {
+			add_trait = leader_special_082
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_083
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_CL
+			}
+			add_trait = leader_special_083_CL
+		}
+		else_if = {
+			limit = {
+				has_leader_flag = BA_skin_SP
+			}
+			add_trait = leader_special_083_SP
+		}
+		else = {
+			add_trait = leader_special_083
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_084
+		}
+		add_trait = leader_special_084
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_085
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SS
+			}
+			add_trait = leader_special_085_SS
+		}
+		else = {
+			add_trait = leader_special_085
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_086
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_CD
+			}
+			add_trait = leader_special_086_CD
+		}
+		else = {
+			add_trait = leader_special_086
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_087
+		}
+		add_trait = leader_special_087
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_088
+		}
+		add_trait = leader_special_088
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_089
+		}
+		add_trait = leader_special_089
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_090
+		}
+		add_trait = leader_special_090
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_091
+		}
+		add_trait = leader_special_091
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_092
+		}
+		add_trait = leader_special_092
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_093
+		}
+		add_trait = leader_special_093
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_094
+		}
+		add_trait = leader_special_094
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_095
+		}
+		add_trait = leader_special_095
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_096
+		}
+		add_trait = leader_special_096
+	}
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_097
+	# 	}
+	# 	add_trait = leader_special_097
+	# }
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_098
+		}
+		add_trait = leader_special_098
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_099
+		}
+		add_trait = leader_special_099
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_100
+		}
+		add_trait = leader_special_100
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_101
+		}
+		add_trait = leader_special_101
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_102
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_BN
+			}
+			add_trait = leader_special_102_BN
+		}
+		else_if = {
+			limit = {
+				has_leader_flag = BA_skin_UNF
+			}
+			add_trait = leader_special_102_UNF
+		}
+		else = {
+			add_trait = leader_special_102
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_103
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_BN
+			}
+			add_trait = leader_special_103_BN
+		}
+		else_if = {
+			limit = {
+				has_leader_flag = BA_skin_UNF
+			}
+			add_trait = leader_special_103_UNF
+		}
+		else = {
+			add_trait = leader_special_103
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_104
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_BN
+			}
+			add_trait = leader_special_104_BN
+		}
+		else = {
+			add_trait = leader_special_104
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_105
+		}
+		add_trait = leader_special_105
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_106
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_BN
+			}
+			add_trait = leader_special_106_BN
+		}
+		else = {
+			add_trait = leader_special_106
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_107
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_DL
+			}
+			add_trait = leader_special_107_DL
+		}
+		else = {
+			add_trait = leader_special_107
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_108
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_YN
+			}
+			add_trait = leader_special_108_YN
+		}
+		else = {
+			add_trait = leader_special_108
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_109
+		}
+		add_trait = leader_special_109
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_110
+		}
+		add_trait = leader_special_110
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_111
+		}
+		add_trait = leader_special_111
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_112
+		}
+		add_trait = leader_special_112
+	}
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_113
+	# 	}
+	# 	add_trait = leader_special_113
+	# }
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_114
+		}
+		add_trait = leader_special_114
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_115
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SS
+			}
+			add_trait = leader_special_115_SS
+		}
+		else = {
+			add_trait = leader_special_115
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_116
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SS
+			}
+			add_trait = leader_special_116_SS
+		}
+		else = {
+			add_trait = leader_special_116
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_117
+		}
+		add_trait = leader_special_117
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_118
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SS
+			}
+			add_trait = leader_special_118_SS
+		}
+		else = {
+			add_trait = leader_special_118
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_119
+		}
+		add_trait = leader_special_119
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_120
+		}
+		add_trait = leader_special_120
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_121
+		}
+		add_trait = leader_special_121
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_122
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_CL
+			}
+			add_trait = leader_special_122_CL
+		}
+		else_if = {
+			limit = {
+				has_leader_flag = BA_skin_XMS
+			}
+			add_trait = leader_special_122_XMS
+		}
+		else = {
+			add_trait = leader_special_122
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_123
+		}
+		add_trait = leader_special_123
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_124
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_NS
+			}
+			add_trait = leader_special_124_NS
+		}
+		else_if = {
+			limit = {
+				has_leader_flag = BA_skin_XMS
+			}
+			add_trait = leader_special_124_XMS
+		}
+		else = {
+			add_trait = leader_special_124
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_125
+		}
+		add_trait = leader_special_125
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_126
+		}
+		add_trait = leader_special_126
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_127
+		}
+		add_trait = leader_special_127
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_128
+		}
+		add_trait = leader_special_128
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_129
+		}
+		add_trait = leader_special_129
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_130
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SS
+			}
+			add_trait = leader_special_130_SS
+		}
+		else = {
+			add_trait = leader_special_130
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_131
+		}
+		add_trait = leader_special_131
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_132
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SPW
+			}
+			add_trait = leader_special_132_SPW
+		}
+		else = {
+			add_trait = leader_special_132
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_133
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SS
+			}
+			add_trait = leader_special_133_SS
+		}
+		else = {
+			add_trait = leader_special_133
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_134
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SNT
+			}
+			add_trait = leader_special_134_SNT
+		}
+		else = {
+			add_trait = leader_special_134
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_135
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SS
+			}
+			add_trait = leader_special_135_SS
+		}
+		else = {
+			add_trait = leader_special_135
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_136
+		}
+		add_trait = leader_special_136
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_137
+		}
+		add_trait = leader_special_137
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_138
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SP
+			}
+			add_trait = leader_special_138_SP
+		}
+		else_if = {
+			limit = {
+				has_leader_flag = BA_skin_SS
+			}
+			add_trait = leader_special_138_SS
+		}
+		else = {
+			add_trait = leader_special_138
+		}
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_139
+		}
+		add_trait = leader_special_139
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_140
+		}
+		add_trait = leader_special_140
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_141
+		}
+		add_trait = leader_special_141
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_142
+		}
+		add_trait = leader_special_142
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_143
+		}
+		add_trait = leader_special_143
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_144
+		}
+		add_trait = leader_special_144
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_145
+		}
+		add_trait = leader_special_145
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_146
+		}
+		add_trait = leader_special_146
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_147
+		}
+		add_trait = leader_special_147
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_148
+		}
+		add_trait = leader_special_148
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_149
+		}
+		add_trait = leader_special_149
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_150
+		}
+		add_trait = leader_special_150
+	}
+	else_if = {
+		limit = {
+			has_leader_flag = leader_BA_151
+		}
+		add_trait = leader_special_151
+	}
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_152
+	# 	}
+	# 	add_trait = leader_special_152
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_153
+	# 	}
+	# 	add_trait = leader_special_153
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_154
+	# 	}
+	# 	add_trait = leader_special_154
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_155
+	# 	}
+	# 	add_trait = leader_special_155
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_156
+	# 	}
+	# 	add_trait = leader_special_156
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_157
+	# 	}
+	# 	add_trait = leader_special_157
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_158
+	# 	}
+	# 	add_trait = leader_special_158
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		has_leader_flag = leader_BA_159
+	# 	}
+	# 	add_trait = leader_special_159
+	# }
+	else = {
+		add_trait = leader_special_000
+	}
+}
+
+BA_change_skin_trait_bak = {
+	BA_remove_sp_trait = yes
 	switch = {
 		trigger = has_leader_flag
 		leader_BA_001 = {
@@ -1794,12 +3167,14 @@ BA_change_skin_trait = {
 			}
 		}
 		leader_BA_013 = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = leader_special_013
-				}
-			}
+			add_trait = leader_special_013
+			#remove_leader_flag = leader_BA_013
+			#set_leader_flag = leader_BA_014
+			# switch = {
+			# 	trigger = has_leader_flag
+			# 	default = {
+			# 	}
+			# }
 		}
 		leader_BA_014 = {
 			switch = {

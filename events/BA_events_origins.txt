@@ -650,6 +650,7 @@ country_event = {
 		capital_scope = {
 			###
 			set_planet_flag = BA_Kyrie_target_@root
+			save_global_event_target_as = BA_Kyrie_capital_target_@root
 			###
 			clear_deposits = yes			#清除原有区块
 			add_deposit = d_Arius_Cathedral_ruined			#大圣堂

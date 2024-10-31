@@ -11,6 +11,11 @@ building_BA_Schale_office = {
 		owner = {
 			has_authority = auth_kivotos
 		}
+		planet = {
+			NOT = {
+				has_building = building_BA_Locker_room
+			}
+		}
 	}
 	can_be_disabled = no
 	can_be_ruined = no
@@ -83,20 +88,17 @@ building_BA_Schale_office = {
 building_BA_Locker_room = {
 	position_priority = 21
 	base_buildtime = @club_room_time
-	empire_limit = 1
 	category = government
 	icon = Locker_room
 	potential = {
-		owner = {
-			has_authority = auth_kivotos
-		}
+		always = no
 	}
 	can_be_disabled = no
 	can_be_ruined = no
 	destroy_trigger = {
-		planet = {
-			is_capital = no
-		}
+		# planet = {
+		# 	is_capital = no
+		# }
 	}
 	convert_to = {
 		building_BA_Schale_office

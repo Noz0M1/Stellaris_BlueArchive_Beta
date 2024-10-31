@@ -87,6 +87,7 @@ num_BA_Trinity_National_Museum_produce = {
 }
 
 ########   社团
+#游戏部
 num_BA_club_game_produce = {
 	base = 15
 	min = 15
@@ -140,6 +141,7 @@ num_BA_club_resource_by_empire_size = {
 	add = 1
 }
 
+#工程部
 num_BA_club_weapon_boost_cost = {
 	base = 10
 	add = BA_weapon_var_count
@@ -151,6 +153,33 @@ num_BA_club_weapon_boost_prev = {
 	add = BA_weapon_var_count
 	add = BA_weapon_var_prev
 	multiply = 10000
+}
+
+#对策委员会
+num_BA_colony_boost_dicision_upkeep = {
+	base = 2.71828
+	pow = Foreclosure_task_force_func_cost
+	pow = 0.1
+	add = Foreclosure_task_force_func_cost
+}
+
+#茶会
+num_BA_club_empire_size_modifier_boost_cost = {
+	base = 2.71828
+	pow = Teaparty_sponse_count
+	divide = 4
+	add = 5
+}
+
+num_BA_club_empire_size_modifier_effect = {
+	#1-(0.04x+1)^{-x}
+	base = 25
+	add = Teaparty_sponse_count
+	multiply = 0.04
+	pow = Teaparty_sponse_count
+	pow = -1
+	multiply = -1
+	add = 1
 }
 
 ########   学园理念
