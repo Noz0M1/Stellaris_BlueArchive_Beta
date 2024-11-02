@@ -25,7 +25,7 @@ weapon_component_template = {
             alloys = 20
         }
         upkeep = {
-            energy = 0.22
+            energy = 0.2
             alloys = 0.02
         }
     }
@@ -72,11 +72,11 @@ weapon_component_template = {
     resources = {
         category = ship_components
         cost = {
-            alloys = 20
+            alloys = 30
         }
         upkeep = {
-            energy = 0.22
-            alloys = 0.02
+            energy = 0.3
+            alloys = 0.03
         }
     }
     power = -12
@@ -123,11 +123,13 @@ weapon_component_template = {
     resources = {
         category = ship_components
         cost = {
-            alloys = 20
+            alloys = 36
+            volatile_motes = 0.3
+            sr_pyroxenes = 1
         }
         upkeep = {
-            energy = 0.22
-            alloys = 0.02
+            energy = 0.36
+            alloys = 0.036
         }
     }
     power = -20
@@ -173,11 +175,13 @@ weapon_component_template = {
     resources = {
         category = ship_components
         cost = {
-            alloys = 20
+            alloys = 48
+            volatile_motes = 0.5
+            sr_keystone = 4
         }
         upkeep = {
-            energy = 0.22
-            alloys = 0.02
+            energy = 0.48
+            alloys = 0.048
         }
     }
     power = -32
@@ -222,11 +226,11 @@ weapon_component_template = {
     resources = {
         category = ship_components
         cost = {
-            alloys = 20
+            alloys = 30
         }
         upkeep = {
-            energy = 0.22
-            alloys = 0.02
+            energy = 0.30
+            alloys = 0.03
         }
     }
     power = -12
@@ -270,11 +274,13 @@ weapon_component_template = {
     resources = {
         category = ship_components
         cost = {
-            alloys = 20
+            alloys = 36
+            volatile_motes = 0.3
+            sr_pyroxenes = 1
         }
         upkeep = {
-            energy = 0.22
-            alloys = 0.02
+            energy = 0.36
+            alloys = 0.036
         }
     }
     power = -20
@@ -317,11 +323,13 @@ weapon_component_template = {
     resources = {
         category = ship_components
         cost = {
-            alloys = 20
+            alloys = 48
+            volatile_motes = 0.5
+            sr_keystone = 4
         }
         upkeep = {
-            energy = 0.22
-            alloys = 0.02
+            energy = 0.48
+            alloys = 0.048
         }
     }
     power = -32
@@ -365,11 +373,13 @@ weapon_component_template = {
     resources = {
         category = ship_components
         cost = {
-            alloys = 20
+            alloys = 32
+            exotic_gases = 0.5
+            sr_pyroxenes = 1
         }
         upkeep = {
-            energy = 0.22
-            alloys = 0.02
+            energy = 0.32
+            alloys = 0.032
         }
     }
     power = -16
@@ -412,11 +422,13 @@ weapon_component_template = {
     resources = {
         category = ship_components
         cost = {
-            alloys = 20
+            alloys = 50
+            exotic_gases = 0.8
+            sr_keystone = 4
         }
         upkeep = {
-            energy = 0.22
-            alloys = 0.02
+            energy = 0.5
+            alloys = 0.05
         }
     }
     power = -32

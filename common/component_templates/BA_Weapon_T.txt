@@ -20,11 +20,13 @@ weapon_component_template = {
     resources = {
         category = ship_components
         cost = {
-            alloys = 20
+            alloys = 420
+            volatile_motes = 8
+            sr_keystone = 50
         }
         upkeep = {
-            energy = 0.22
-            alloys = 0.02
+            energy = 4.2
+            alloys = 0.42
         }
     }
     power = -800
@@ -66,11 +68,14 @@ weapon_component_template = {
     resources = {
         category = ship_components
         cost = {
-            alloys = 20
+            alloys = 420
+            rare_crystals = 8
+            sr_pyroxenes = 24
+            sr_dark_matter = 8
         }
         upkeep = {
-            energy = 0.22
-            alloys = 0.02
+            energy = 4.2
+            alloys = 0.42
         }
     }
     power = -800
