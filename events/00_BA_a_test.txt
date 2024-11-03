@@ -200,7 +200,7 @@ country_event = {
 				add_deposit = d_broken_power_station				#千年发电厂
 				add_deposit = d_broken_desert_mine				#沙漠矿区
 				add_deposit = d_Greenhouse_farms				#赤冬温室农场（只是因为没有粮食区划所以拉来凑数的）
-				add_building = building_BA_Schale_office				#夏莱建筑
+				add_building = building_BA_Locker_room				#夏莱建筑
 				remove_building = building_commercial_zone				#清除旧建筑 下同
 				remove_building = building_research_lab_1
 				remove_building = building_bureaucratic_1
@@ -213,7 +213,7 @@ country_event = {
 				}
 				set_owner = event_target:BA_Unnamed_enemy_country
 				add_building = building_BA_fade_Sanctum_center
-				remove_building = building_BA_Schale_office
+				remove_building = building_BA_Locker_room
 				while = {
 					count = 28
 					create_pop = {
