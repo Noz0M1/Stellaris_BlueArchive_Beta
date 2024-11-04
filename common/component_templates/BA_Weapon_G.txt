@@ -9,7 +9,7 @@ weapon_component_template = {
     prerequisites = { "tech_BA_institute_of_reconstruction" }
     upgrades_to = "BA_SG_2_g"
     component_set = "BA_SG_1"
-    projectile_gfx = "gamma_laser_s"
+    projectile_gfx = "stormfire_auto_cannons_m"
     tags = {
         weapon_type_kinetic
         weapon_type_Kivotos
@@ -60,7 +60,7 @@ weapon_component_template = {
     prerequisites = { "tech_BA_institute_of_reconstruction" }
     upgrades_to = "BA_SG_3_g"
     component_set = "BA_SG_2"
-    projectile_gfx = "gamma_laser_s"
+    projectile_gfx = "stormfire_auto_cannons_m"
     tags = {
         weapon_type_kinetic
         weapon_type_Kivotos
@@ -112,7 +112,7 @@ weapon_component_template = {
     #color = { 0.1 1.0 0.1 1 }
     prerequisites = { "tech_BA_institute_of_reconstruction" }
     component_set = "BA_SG_3"
-    projectile_gfx = "gamma_laser_s"
+    projectile_gfx = "stormfire_auto_cannons_m"
     tags = {
         weapon_type_kinetic
         weapon_type_Kivotos
@@ -164,7 +164,7 @@ weapon_component_template = {
     #color = { 0.1 1.0 0.1 1 }
     prerequisites = { "tech_BA_institute_of_reconstruction" }
     component_set = "BA_Megumin_G"
-    projectile_gfx = "gamma_laser_s"
+    projectile_gfx = "titan_laser"
     tags = {
         weapon_type_energy
         weapon_type_explosive
@@ -220,7 +220,7 @@ weapon_component_template = {
     prerequisites = { "tech_BA_institute_of_reconstruction" }
     upgrades_to = "BA_GL_2_g"
     component_set = "BA_GL_1"
-    projectile_gfx = "gamma_laser_s"
+    projectile_gfx = "large_torpedo_02"
     tags = {
         weapon_type_explosive
         weapon_type_Kivotos
@@ -281,7 +281,7 @@ weapon_component_template = {
     #color = { 0.1 1.0 0.1 1 }
     prerequisites = { "tech_BA_institute_of_reconstruction" }
     component_set = "BA_GL_2"
-    projectile_gfx = "gamma_laser_s"
+    projectile_gfx = "large_torpedo_03"
     tags = {
         weapon_type_explosive
         weapon_type_Kivotos

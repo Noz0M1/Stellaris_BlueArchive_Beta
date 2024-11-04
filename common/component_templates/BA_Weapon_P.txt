@@ -8,7 +8,7 @@ weapon_component_template = {
     #color = { 0.1 1.0 0.1 1 }
     prerequisites = { "tech_BA_institute_of_reconstruction" }
     component_set = "BA_HG_P"
-    projectile_gfx = "gamma_laser_s"
+    projectile_gfx = "flak_pd_1"
     tags = {
         weapon_type_kinetic
         weapon_type_Kivotos
@@ -56,7 +56,7 @@ weapon_component_template = {
     prerequisites = { "tech_BA_institute_of_reconstruction" }
     upgrades_to = "BA_SMG_2_p"
     component_set = "BA_SMG_1_P"
-    projectile_gfx = "gamma_laser_s"
+    projectile_gfx = "red_laser_pd"
     tags = {
         weapon_type_kinetic
         weapon_type_Kivotos
@@ -104,7 +104,7 @@ weapon_component_template = {
     prerequisites = { "tech_BA_institute_of_reconstruction" }
     upgrades_to = "BA_SMG_3_p"
     component_set = "BA_SMG_2_P"
-    projectile_gfx = "gamma_laser_s"
+    projectile_gfx = "blue_laser_pd"
     tags = {
         weapon_type_kinetic
         weapon_type_Kivotos
@@ -153,7 +153,7 @@ weapon_component_template = {
     #color = { 0.1 1.0 0.1 1 }
     prerequisites = { "tech_BA_institute_of_reconstruction" }
     component_set = "BA_SMG_3_P"
-    projectile_gfx = "gamma_laser_s"
+    projectile_gfx = "white_laser_pd"
     tags = {
         weapon_type_kinetic
         weapon_type_Kivotos

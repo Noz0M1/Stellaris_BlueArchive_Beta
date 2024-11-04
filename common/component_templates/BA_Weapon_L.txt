@@ -9,7 +9,7 @@ weapon_component_template = {
     prerequisites = { "tech_BA_institute_of_reconstruction" }
     upgrades_to = "BA_AR_2_l"
     component_set = "BA_AR_1"
-    projectile_gfx = "gamma_laser_s"
+    projectile_gfx = "flak_pd_2"
     tags = {
         weapon_type_kinetic
         weapon_type_Kivotos
@@ -58,7 +58,7 @@ weapon_component_template = {
     #color = { 0.1 1.0 0.1 1 }
     prerequisites = { "tech_BA_institute_of_reconstruction" }
     component_set = "BA_AR_2"
-    projectile_gfx = "gamma_laser_s"
+    projectile_gfx = "flak_pd_3"
     tags = {
         weapon_type_kinetic
         weapon_type_Kivotos
@@ -108,7 +108,7 @@ weapon_component_template = {
     prerequisites = { "tech_BA_institute_of_reconstruction" }
     upgrades_to = "BA_SR_2_l"
     component_set = "BA_SR_1"
-    projectile_gfx = "gamma_laser_s"
+    projectile_gfx = "plasma_thrower_m"
     tags = {
         weapon_type_kinetic
         weapon_type_Kivotos
@@ -157,7 +157,7 @@ weapon_component_template = {
     prerequisites = { "tech_BA_institute_of_reconstruction" }
     upgrades_to = "BA_SR_3_l"
     component_set = "BA_SR_2"
-    projectile_gfx = "gamma_laser_s"
+    projectile_gfx = "plasma_accelerator_m"
     tags = {
         weapon_type_kinetic
         weapon_type_Kivotos
@@ -207,7 +207,7 @@ weapon_component_template = {
     #color = { 0.1 1.0 0.1 1 }
     prerequisites = { "tech_BA_institute_of_reconstruction" }
     component_set = "BA_SR_3"
-    projectile_gfx = "gamma_laser_s"
+    projectile_gfx = "plasma_cannon_m"
     tags = {
         weapon_type_kinetic
         weapon_type_Kivotos
@@ -258,7 +258,7 @@ weapon_component_template = {
     prerequisites = { "tech_BA_institute_of_reconstruction" }
     upgrades_to = "BA_MG_2_l"
     component_set = "BA_MG_1"
-    projectile_gfx = "gamma_laser_s"
+    projectile_gfx = "auto_cannons_m"
     tags = {
         weapon_type_kinetic
         weapon_type_Kivotos
@@ -306,7 +306,7 @@ weapon_component_template = {
     prerequisites = { "tech_BA_institute_of_reconstruction" }
     upgrades_to = "BA_MG_3_l"
     component_set = "BA_MG_2"
-    projectile_gfx = "gamma_laser_s"
+    projectile_gfx = "ripper_auto_cannons_m"
     tags = {
         weapon_type_kinetic
         weapon_type_Kivotos
@@ -355,7 +355,7 @@ weapon_component_template = {
     #color = { 0.1 1.0 0.1 1 }
     prerequisites = { "tech_BA_institute_of_reconstruction" }
     component_set = "BA_MG_3"
-    projectile_gfx = "gamma_laser_s"
+    projectile_gfx = "stormfire_auto_cannons_m"
     tags = {
         weapon_type_kinetic
         weapon_type_Kivotos
