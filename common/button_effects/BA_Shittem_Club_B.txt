@@ -56,6 +56,16 @@ button_effect_communicate_Game_development_department = {
 								id = BA_club.1005
 							}
 						}
+						10 = {
+							country_event = {
+								id = BA_club.1006
+							}
+						}
+						10 = {
+							country_event = {
+								id = BA_club.1007
+							}
+						}
 					}
 				}
 			}
@@ -207,6 +217,37 @@ button_effect_communicate_Teaparty = {
 							}
 							country_event = {
 								id = BA_club.1406
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#
+button_effect_communicate_Hotspring_development_department = {
+	allow = {
+		custom_tooltip = {
+			fail_text = Club_not_found
+			owner = {
+				has_country_flag = BA_Hotspring_development_department
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = Hotspring_development_department_desc
+		hidden_effect = {
+			owner = {
+				hidden_effect = {
+					random_list = {
+						10 = {
+							country_event = {
+								id = BA_club.1504
 							}
 						}
 					}

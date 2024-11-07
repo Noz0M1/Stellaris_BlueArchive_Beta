@@ -185,6 +185,7 @@ country_event = {
 	}
 }
 
+### 功能执行
 #社团舰殖民
 planet_event = {
 	id = BA_club.0030
@@ -261,6 +262,47 @@ country_event = {
 	}
 }
 
+#社团好感度月度变更
+country_event = {
+	id = BA_club.0035
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_authority = auth_kivotos
+	}
+	immediate = {
+		if = {
+			limit = {
+				has_policy_flag = club_lv3_spounce
+			}
+			BA_club_favor_grow = {
+				AMOUNT = 5
+			}
+		}
+		else_if = {
+			limit = {
+				has_policy_flag = club_lv2_spounce
+			}
+			BA_club_favor_grow = {
+				AMOUNT = 3
+			}
+		}
+		else_if = {
+			limit = {
+				has_policy_flag = club_lv1_spounce
+			}
+			BA_club_favor_grow = {
+				AMOUNT = 2
+			}
+		}
+		else = {
+			BA_club_favor_grow = {
+				AMOUNT = 1
+			}
+		}
+	}
+}
+
 ####################
 ##### 社团交流
 ####################
@@ -314,8 +356,6 @@ country_event = {
 		#清点社团总数并设置消耗
 		BA_club_cap_recount = yes
 		BA_club_resource_recount = yes
-		#清点赞助情况并设置消耗
-		BA_club_check_sponse = yes
 		#清点部室情况并设置消耗
 		BA_club_check_room = yes
 	}
@@ -326,34 +366,6 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = BA_club.0051
-			}
-		}
-	}
-	#赞助
-	option = {
-		name = Sponsor_all_club
-		is_dialog_only = yes
-		response_text = Sponsor_all_club.re
-		custom_tooltip = Sponsor_all_club.tip
-		allow = {
-			custom_tooltip = {
-				fail_text = All_club_sponsed
-				check_variable = {
-					which = BA_club_to_sponse
-					value >= 1
-				}
-			}
-			resource_stockpile_compare = {
-				resource = energy
-				value >= 1
-				multiplier = BA_club_sponse_cost
-			}
-		}
-		hidden_effect = {
-			BA_club_sponse_all = yes
-			add_resource = {
-				energy = -1
-				multiplier = BA_club_sponse_cost
 			}
 		}
 	}
@@ -550,7 +562,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_Yuzu
+		portrait = BA_leader_096
 		room = BA_06_room
 	}
 	immediate = {
@@ -601,6 +613,7 @@ country_event = {
 	desc = BA_club.1002.desc
 	picture = GFX_BA_Checkmate
 	trigger = {
+		has_authority = auth_kivotos
 		NOT = {
 			has_country_flag = BA_Game_development_department
 		}
@@ -613,19 +626,121 @@ country_event = {
 ### 主界面 （多个事件显示不同部员 功能应完全一致）
 country_event = {
 	id = BA_club.1004
+	title = Game_development_department
+	desc = Yuzu_desc1
+	desc = Yuzu_desc2
+	desc = Yuzu_desc3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_leader_096
+		room = BA_06_room
+	}
+	#社团功能
 	inline_script = {
-		script = Club/Club_main
+		script = Club/Function/Game_development_department
+	}
+	#部室
+	inline_script = {
+		script = Club/Planet_room/Operation
 		CLUB = Game_development_department
 		CHARA = Yuzu
+	}
+	#返回
+	option = {
+		name = BA_option_club_exit
+		default_hide_option = yes
 	}
 }
 
 country_event = {
 	id = BA_club.1005
+	title = Game_development_department
+	desc = Aris_desc1
+	desc = Aris_desc2
+	desc = Aris_desc3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_leader_093
+		room = BA_06_room
+	}
+	#社团功能
 	inline_script = {
-		script = Club/Club_main
+		script = Club/Function/Game_development_department
+	}
+	#部室
+	inline_script = {
+		script = Club/Planet_room/Operation
 		CLUB = Game_development_department
 		CHARA = Aris
+	}
+	#返回
+	option = {
+		name = BA_option_club_exit
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	id = BA_club.1006
+	title = Game_development_department
+	desc = Momoi_desc1
+	desc = Momoi_desc2
+	desc = Momoi_desc3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_leader_095
+		room = BA_06_room
+	}
+	#社团功能
+	inline_script = {
+		script = Club/Function/Game_development_department
+	}
+	#部室
+	inline_script = {
+		script = Club/Planet_room/Operation
+		CLUB = Game_development_department
+		CHARA = Momoi
+	}
+	#返回
+	option = {
+		name = BA_option_club_exit
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	id = BA_club.1007
+	title = Game_development_department
+	desc = Midori_desc1
+	desc = Midori_desc2
+	desc = Midori_desc3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_leader_094
+		room = BA_06_room
+	}
+	#社团功能
+	inline_script = {
+		script = Club/Function/Game_development_department
+	}
+	#部室
+	inline_script = {
+		script = Club/Planet_room/Operation
+		CLUB = Game_development_department
+		CHARA = Midori
+	}
+	#返回
+	option = {
+		name = BA_option_club_exit
+		default_hide_option = yes
 	}
 }
 
@@ -643,7 +758,7 @@ country_event = {
 				100 = {
 					modifier = {
 						multiply = 0.75
-						has_modifier = modifier_BA_club_sponsor_Game_development_department
+						has_policy_flag = club_lv1_spounce
 					}
 					change_variable = {
 						which = Game_development_department_unity
@@ -653,7 +768,7 @@ country_event = {
 				100 = {
 					modifier = {
 						multiply = 0.75
-						has_modifier = modifier_BA_club_sponsor_Game_development_department
+						has_policy_flag = club_lv1_spounce
 					}
 					change_variable = {
 						which = Game_development_department_unity
@@ -683,7 +798,7 @@ country_event = {
 				75 = {
 					modifier = {
 						multiply = 1.2
-						has_modifier = modifier_BA_club_sponsor_Game_development_department
+						has_policy_flag = club_lv1_spounce
 					}
 					modifier = {
 						multiply = 1.2
@@ -697,7 +812,7 @@ country_event = {
 				45 = {
 					modifier = {
 						multiply = 1.2
-						has_modifier = modifier_BA_club_sponsor_Game_development_department
+						has_policy_flag = club_lv1_spounce
 					}
 					modifier = {
 						multiply = 1.2
@@ -711,7 +826,7 @@ country_event = {
 				20 = {
 					modifier = {
 						multiply = 1.2
-						has_modifier = modifier_BA_club_sponsor_Game_development_department
+						has_policy_flag = club_lv1_spounce
 					}
 					modifier = {
 						multiply = 1.2
@@ -747,7 +862,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_Utaha
+		portrait = BA_leader_082
 		room = BA_06_room
 	}
 	immediate = {
@@ -828,6 +943,7 @@ country_event = {
 	desc = BA_club.1102.desc
 	picture = GFX_BA_Checkmate
 	trigger = {
+		has_authority = auth_kivotos
 		NOT = {
 			has_country_flag = BA_Engineering_club
 		}
@@ -840,19 +956,61 @@ country_event = {
 ### 主界面
 country_event = {
 	id = BA_club.1104
+	title = Engineering_club
+	desc = Utaha_desc1
+	desc = Utaha_desc2
+	desc = Utaha_desc3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_leader_082
+		room = BA_06_room
+	}
+	#社团功能
 	inline_script = {
-		script = Club/Club_main
+		script = Club/Function/Engineering_club
+	}
+	#部室
+	inline_script = {
+		script = Club/Planet_room/Operation
 		CLUB = Engineering_club
 		CHARA = Utaha
+	}
+	#返回
+	option = {
+		name = BA_option_club_exit
+		default_hide_option = yes
 	}
 }
 
 country_event = {
 	id = BA_club.1105
+	title = Engineering_club
+	desc = Hibiki_desc1
+	desc = Hibiki_desc2
+	desc = Hibiki_desc3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_leader_084
+		room = BA_06_room
+	}
+	#社团功能
 	inline_script = {
-		script = Club/Club_main
+		script = Club/Function/Engineering_club
+	}
+	#部室
+	inline_script = {
+		script = Club/Planet_room/Operation
 		CLUB = Engineering_club
 		CHARA = Hibiki
+	}
+	#返回
+	option = {
+		name = BA_option_club_exit
+		default_hide_option = yes
 	}
 }
 
@@ -865,16 +1023,11 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_Hibiki
+		portrait = BA_leader_084
 		room = BA_06_room
 	}
 	immediate = {
 		BA_club_Engineering_club_function_init = yes
-		#add_resource = {
-		#	physics_research = 10000000
-		#	society_research = 10000000
-		#	engineering_research = 10000000
-		#}
 	}
 	option = {
 		name = BA_club.0005.cancel
@@ -1043,7 +1196,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_Hibiki
+		portrait = BA_leader_084
 		room = BA_06_room
 	}
 	immediate = {
@@ -1192,7 +1345,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_Chihiro
+		portrait = BA_leader_084
 		room = BA_06_room
 	}
 	immediate = {
@@ -1383,7 +1536,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_Chihiro
+		portrait = BA_leader_084
 		room = BA_06_room
 	}
 	immediate = {
@@ -1574,7 +1727,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_Chihiro
+		portrait = BA_leader_084
 		room = BA_06_room
 	}
 	immediate = {
@@ -1716,7 +1869,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_Chihiro
+		portrait = BA_leader_084
 		room = BA_06_room
 	}
 	immediate = {
@@ -1893,7 +2046,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_Chihiro
+		portrait = BA_leader_084
 		room = BA_06_room
 	}
 	immediate = {
@@ -1965,7 +2118,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_Chihiro
+		portrait = BA_leader_084
 		room = BA_06_room
 	}
 	immediate = {
@@ -2008,7 +2161,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_Chihiro
+		portrait = BA_leader_098
 		room = BA_06_room
 	}
 	immediate = {
@@ -2054,6 +2207,7 @@ country_event = {
 	desc = BA_club.1202.desc
 	picture = GFX_BA_Checkmate
 	trigger = {
+		has_authority = auth_kivotos
 		NOT = {
 			has_country_flag = BA_Veritas
 		}
@@ -2066,19 +2220,61 @@ country_event = {
 ### 主界面
 country_event = {
 	id = BA_club.1204
+	title = Veritas
+	desc = Chihiro_desc1
+	desc = Chihiro_desc2
+	desc = Chihiro_desc3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_leader_098
+		room = BA_06_room
+	}
+	#社团功能
 	inline_script = {
-		script = Club/Club_main
+		script = Club/Function/Veritas
+	}
+	#部室
+	inline_script = {
+		script = Club/Planet_room/Operation
 		CLUB = Veritas
 		CHARA = Chihiro
+	}
+	#返回
+	option = {
+		name = BA_option_club_exit
+		default_hide_option = yes
 	}
 }
 
 country_event = {
 	id = BA_club.1205
+	title = Veritas
+	desc = Hare_desc1
+	desc = Hare_desc2
+	desc = Hare_desc3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_leader_099
+		room = BA_06_room
+	}
+	#社团功能
 	inline_script = {
-		script = Club/Club_main
+		script = Club/Function/Veritas
+	}
+	#部室
+	inline_script = {
+		script = Club/Planet_room/Operation
 		CLUB = Veritas
 		CHARA = Hare
+	}
+	#返回
+	option = {
+		name = BA_option_club_exit
+		default_hide_option = yes
 	}
 }
 
@@ -2099,6 +2295,20 @@ country_event = {
 		name = Veritas_sensor1.next
 		add_modifier = {
 			modifier = modifier_BA_Veritas_1
+		}
+		hidden_effect = {
+			random_list = {
+				10 = {
+					country_event = {
+						id = BA_club.1204
+					}
+				}
+				10 = {
+					country_event = {
+						id = BA_club.1205
+					}
+				}
+			}
 		}
 	}
 }
@@ -2123,6 +2333,20 @@ country_event = {
 		add_modifier = {
 			modifier = modifier_BA_Veritas_2
 		}
+		hidden_effect = {
+			random_list = {
+				10 = {
+					country_event = {
+						id = BA_club.1204
+					}
+				}
+				10 = {
+					country_event = {
+						id = BA_club.1205
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -2145,6 +2369,20 @@ country_event = {
 		}
 		add_modifier = {
 			modifier = modifier_BA_Veritas_3
+		}
+		hidden_effect = {
+			random_list = {
+				10 = {
+					country_event = {
+						id = BA_club.1204
+					}
+				}
+				10 = {
+					country_event = {
+						id = BA_club.1205
+					}
+				}
+			}
 		}
 	}
 }
@@ -2169,6 +2407,20 @@ country_event = {
 		add_modifier = {
 			modifier = modifier_BA_Veritas_4
 		}
+		hidden_effect = {
+			random_list = {
+				10 = {
+					country_event = {
+						id = BA_club.1204
+					}
+				}
+				10 = {
+					country_event = {
+						id = BA_club.1205
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -2182,7 +2434,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_Ayane
+		portrait = BA_leader_004
 		room = BA_06_room
 	}
 	immediate = {
@@ -2234,6 +2486,7 @@ country_event = {
 	desc = BA_club.1302.desc
 	picture = GFX_BA_Checkmate
 	trigger = {
+		has_authority = auth_kivotos
 		NOT = {
 			has_country_flag = BA_Foreclosure_task_force
 		}
@@ -2254,7 +2507,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_Nonomi
+		portrait = BA_leader_007
 		room = BA_06_room
 	}
 	#社团功能
@@ -2272,11 +2525,6 @@ country_event = {
 	option = {
 		name = BA_option_club_exit
 		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.0051
-			}
-		}
 	}
 }
 
@@ -2290,7 +2538,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_Shiroko
+		portrait = BA_leader_003
 		room = BA_06_room
 	}
 	#社团功能
@@ -2308,11 +2556,6 @@ country_event = {
 	option = {
 		name = BA_option_club_exit
 		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.0051
-			}
-		}
 	}
 }
 
@@ -2329,7 +2572,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_Nagisa
+		portrait = BA_leader_121
 		room = BA_06_room
 	}
 	immediate = {
@@ -2375,6 +2618,7 @@ country_event = {
 	desc = BA_club.1402.desc
 	picture = GFX_BA_Checkmate
 	trigger = {
+		has_authority = auth_kivotos
 		NOT = {
 			has_country_flag = BA_Teaparty
 		}
@@ -2395,7 +2639,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_Nagisa
+		portrait = BA_leader_121
 		room = BA_06_room
 	}
 	#社团功能
@@ -2426,7 +2670,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_Seia
+		portrait = BA_leader_119
 		room = BA_06_room
 	}
 	#社团功能
@@ -2457,7 +2701,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_Mika
+		portrait = BA_leader_120
 		room = BA_06_room
 	}
 	#社团功能
@@ -2476,8 +2720,304 @@ country_event = {
 		name = BA_option_club_exit
 		default_hide_option = yes
 	}
-
 }
+
+
+
+###### 温泉开发部 Hotspring_development_department  105 ######
+### 建部通知
+country_event = {
+	id = BA_club.1501
+	is_triggered_only = yes
+	title = BA_club.1501.title
+	desc = BA_club.1501.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_leader_057
+		room = BA_06_room
+	}
+	immediate = {
+		fromfrom = {
+			solar_system = {
+				set_star_flag = BA_Hotspring_development_department_system
+			}
+			set_megastructure_flag = BA_mega_club_room
+			set_megastructure_flag = Mega_Hotspring_development_department
+			set_megastructure_flag = Mega_Hotspring_development_department_@owner
+			set_name = Hotspring_development_department
+		}
+		set_variable = {
+			which = Hotspring_development_department			#好感度
+			value = 0
+		}
+		set_variable = {
+			which = Hotspring_development_department_room_limit			#部室限制
+			value = 1
+		}
+		every_country = {
+			limit = {
+				has_authority = auth_kivotos
+			}
+			country_event = {
+				id = BA_club.1502
+			}
+		}
+	}
+	option = {
+		name = BA_club.1501.next
+	}
+}
+
+country_event = {
+	id = BA_club.1502
+	is_triggered_only = yes
+	title = BA_club.1502.title
+	desc = BA_club.1502.desc
+	picture = GFX_BA_Checkmate
+	trigger = {
+		has_authority = auth_kivotos
+		NOT = {
+			has_country_flag = BA_Hotspring_development_department
+		}
+	}
+	option = {
+		name = HARDWORK
+	}
+}
+
+### 主界面
+country_event = {
+	id = BA_club.1504
+	title = Hotspring_development_department
+	desc = Megu_desc1
+	desc = Megu_desc2
+	desc = Megu_desc3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_leader_057
+		room = BA_06_room
+	}
+	#社团功能
+	# inline_script = {
+	# 	script = Club/Function/Hotspring_development_department
+	# 	CHARA = Megu
+	# }
+	#部室
+	inline_script = {
+		script = Club/Planet_room/Operation
+		CLUB = Hotspring_development_department
+		CHARA = Megu
+	}
+	#返回
+	option = {
+		name = BA_option_club_exit
+		default_hide_option = yes
+	}
+}
+
+
+
+###### 祭典运营委员会 Festival_operations_department  106 ######
+### 建部通知
+country_event = {
+	id = BA_club.1601
+	is_triggered_only = yes
+	title = BA_club.1601.title
+	desc = BA_club.1601.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_leader_023
+		room = BA_06_room
+	}
+	immediate = {
+		fromfrom = {
+			solar_system = {
+				set_star_flag = BA_Festival_operations_department_system
+			}
+			set_megastructure_flag = BA_mega_club_room
+			set_megastructure_flag = Mega_Festival_operations_department
+			set_megastructure_flag = Mega_Festival_operations_department_@owner
+			set_name = Festival_operations_department
+		}
+		set_variable = {
+			which = Festival_operations_department			#好感度
+			value = 0
+		}
+		set_variable = {
+			which = Festival_operations_department_room_limit			#部室限制
+			value = 1
+		}
+		every_country = {
+			limit = {
+				has_authority = auth_kivotos
+			}
+			country_event = {
+				id = BA_club.1602
+			}
+		}
+	}
+	option = {
+		name = BA_club.1601.next
+	}
+}
+
+country_event = {
+	id = BA_club.1602
+	is_triggered_only = yes
+	title = BA_club.1602.title
+	desc = BA_club.1602.desc
+	picture = GFX_BA_Checkmate
+	trigger = {
+		has_authority = auth_kivotos
+		NOT = {
+			has_country_flag = BA_Festival_operations_department
+		}
+	}
+	option = {
+		name = HARDWORK
+	}
+}
+
+### 主界面
+
+
+
+######       玄武商会 Xuanwu_promenade  107        ######
+### 建部通知
+country_event = {
+	id = BA_club.1701
+	is_triggered_only = yes
+	title = BA_club.1701.title
+	desc = BA_club.1701.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_leader_114
+		room = BA_06_room
+	}
+	immediate = {
+		fromfrom = {
+			solar_system = {
+				set_star_flag = BA_Xuanwu_promenade_system
+			}
+			set_megastructure_flag = BA_mega_club_room
+			set_megastructure_flag = Mega_Xuanwu_promenade
+			set_megastructure_flag = Mega_Xuanwu_promenade_@owner
+			set_name = Xuanwu_promenade
+		}
+		set_variable = {
+			which = Xuanwu_promenade			#好感度
+			value = 0
+		}
+		set_variable = {
+			which = Xuanwu_promenade_room_limit			#部室限制
+			value = 1
+		}
+		every_country = {
+			limit = {
+				has_authority = auth_kivotos
+			}
+			country_event = {
+				id = BA_club.1702
+			}
+		}
+	}
+	option = {
+		name = BA_club.1701.next
+	}
+}
+
+country_event = {
+	id = BA_club.1702
+	is_triggered_only = yes
+	title = BA_club.1702.title
+	desc = BA_club.1702.desc
+	picture = GFX_BA_Checkmate
+	trigger = {
+		has_authority = auth_kivotos
+		NOT = {
+			has_country_flag = BA_Xuanwu_promenade
+		}
+	}
+	option = {
+		name = HARDWORK
+	}
+}
+
+### 主界面
+
+
+
+######     出版部 Publishing_department  108      ######
+### 建部通知
+country_event = {
+	id = BA_club.1801
+	is_triggered_only = yes
+	title = BA_club.1801.title
+	desc = BA_club.1801.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_leader_064
+		room = BA_06_room
+	}
+	immediate = {
+		fromfrom = {
+			solar_system = {
+				set_star_flag = BA_Publishing_department_system
+			}
+			set_megastructure_flag = BA_mega_club_room
+			set_megastructure_flag = Mega_Publishing_department
+			set_megastructure_flag = Mega_Publishing_department_@owner
+			set_name = Publishing_department
+		}
+		set_variable = {
+			which = Publishing_department			#好感度
+			value = 0
+		}
+		set_variable = {
+			which = Publishing_department_room_limit			#部室限制
+			value = 1
+		}
+		every_country = {
+			limit = {
+				has_authority = auth_kivotos
+			}
+			country_event = {
+				id = BA_club.1802
+			}
+		}
+	}
+	option = {
+		name = BA_club.1801.next
+	}
+}
+
+country_event = {
+	id = BA_club.1802
+	is_triggered_only = yes
+	title = BA_club.1802.title
+	desc = BA_club.1802.desc
+	picture = GFX_BA_Checkmate
+	trigger = {
+		has_authority = auth_kivotos
+		NOT = {
+			has_country_flag = BA_Publishing_department
+		}
+	}
+	option = {
+		name = HARDWORK
+	}
+}
+
+### 主界面
+
+
+
 
 #
 #######                 联邦学生会                 #######

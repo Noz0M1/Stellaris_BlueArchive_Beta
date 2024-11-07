@@ -121,11 +121,10 @@ BA_club_spounce_clubs = {
 	option = {
 		name = BA_club_no_spounce
 		on_enabled = {
-			remove_modifier = modifier_BA_club_sponsor_Game_development_department
-			remove_modifier = modifier_BA_club_sponsor_Engineering_club
-			remove_modifier = modifier_BA_club_sponsor_Veritas
-			remove_modifier = modifier_BA_club_sponsor_Foreclosure_task_force
-			remove_modifier = modifier_BA_club_sponsor_Teaparty
+			BA_club_clear_country_modifier = yes
+		}
+		ai_weight = {
+			base = 10
 		}
 	}
 	option = {
@@ -135,6 +134,12 @@ BA_club_spounce_clubs = {
 		}
 		policy_flags = {
 			club_lv1_spounce
+		}
+		on_enabled = {
+			BA_club_set_country_modifier = yes
+		}
+		ai_weight = {
+			base = 5
 		}
 	}
 	option = {
@@ -146,6 +151,12 @@ BA_club_spounce_clubs = {
 			club_lv1_spounce
 			club_lv2_spounce
 		}
+		on_enabled = {
+			BA_club_set_country_modifier = yes
+		}
+		ai_weight = {
+			base = 2
+		}
 	}
 	option = {
 		name = BA_club_lv3_spounce
@@ -156,6 +167,12 @@ BA_club_spounce_clubs = {
 			club_lv1_spounce
 			club_lv2_spounce
 			club_lv3_spounce
+		}
+		on_enabled = {
+			BA_club_set_country_modifier = yes
+		}
+		ai_weight = {
+			base = 1
 		}
 	}
 }

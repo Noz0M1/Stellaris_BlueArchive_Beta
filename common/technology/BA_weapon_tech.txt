@@ -26,13 +26,7 @@ tech_BA_SPW_Base_G = {
 			value > 0
 		}
 	}
-	weight = @tier3weight2
-	weight_modifier = {
-		modifier = {
-			multiply = 5000
-			always = yes
-		}
-	}
+	weight = 10
 }
 
 tech_BA_SPW_Base_L = {
@@ -62,13 +56,7 @@ tech_BA_SPW_Base_L = {
 			value > 0
 		}
 	}
-	weight = @tier3weight2
-	weight_modifier = {
-		modifier = {
-			multiply = 0.5
-			always = yes
-		}
-	}
+	weight = 10
 }
 
 tech_BA_SPW_Base_M = {
@@ -98,13 +86,7 @@ tech_BA_SPW_Base_M = {
 			value > 0
 		}
 	}
-	weight = @tier3weight2
-	weight_modifier = {
-		modifier = {
-			multiply = 0.5
-			always = yes
-		}
-	}
+	weight = 10
 }
 
 tech_BA_SPW_Base_P = {
@@ -134,13 +116,7 @@ tech_BA_SPW_Base_P = {
 			value > 0
 		}
 	}
-	weight = @tier2weight3
-	weight_modifier = {
-		modifier = {
-			multiply = 0.5
-			always = yes
-		}
-	}
+	weight = 12
 }
 
 tech_BA_SPW_Base_S = {
@@ -170,13 +146,7 @@ tech_BA_SPW_Base_S = {
 			value > 0
 		}
 	}
-	weight = @tier2weight2
-	weight_modifier = {
-		modifier = {
-			multiply = 0.5
-			always = yes
-		}
-	}
+	weight = 50
 }
 
 tech_BA_SPW_Base_X = {
@@ -206,13 +176,7 @@ tech_BA_SPW_Base_X = {
 			value > 0
 		}
 	}
-	weight = @tier4weight2
-	weight_modifier = {
-		modifier = {
-			multiply = 0.5
-			always = yes
-		}
-	}
+	weight = 8
 }
 
 tech_BA_SPW_Base_T = {
@@ -242,13 +206,7 @@ tech_BA_SPW_Base_T = {
 			value > 0
 		}
 	}
-	weight = @tier4weight3
-	weight_modifier = {
-		modifier = {
-			multiply = 0.5
-			always = yes
-		}
-	}
+	weight = 8
 }
 
 ### G
