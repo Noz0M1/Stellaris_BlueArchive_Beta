@@ -160,7 +160,7 @@ building_BA_Locker_room = {
 }
 
 #############   社团建筑   #############
-#游戏开发部 +3/+5社团部员
+#游戏开发部 +2/+5社团部员
 building_BA_Game_development_department = {
 	base_buildtime = @club_room_time
 	category = government
@@ -222,7 +222,7 @@ building_BA_Game_development_department = {
 			}
 		}
 		modifier = {
-			job_BA_club_members_add = 3
+			job_BA_club_members_add = 2
 			pop_happiness = 0.15
 			planet_jobs_unity_produces_mult = 0.15
 			BA_club_pop_unity_produces_add = 0.5
@@ -252,7 +252,7 @@ building_BA_Game_development_department = {
 	}
 }
 
-#工程师部 +3/+5社团部员
+#工程师部 +2/+5社团部员
 building_BA_Engineering_club = {
 	base_buildtime = @club_room_time
 	category = government
@@ -289,22 +289,11 @@ building_BA_Engineering_club = {
 			}
 		}
 		modifier = {
-			job_BA_club_members_add = 3
+			job_BA_club_members_add = 2
 			planet_building_build_speed_mult = 0.2
 			planet_decision_enact_speed_mult = 0.2
 			BA_club_pop_engineering_research_produces_add = 1.5
 			BA_club_pop_consumer_goods_upkeep_add = 0.5
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_technology = tech_BA_SI_Millennium_G03
-			}
-		}
-		modifier = {
-			job_BA_club_members_add = 2
 		}
 	}
 	resources = {
@@ -319,8 +308,8 @@ building_BA_Engineering_club = {
 	}
 }
 
-#真理部服务器 +3/+5社团部员
-building_BA_Veritas = {
+#真理部服务器
+building_BA_Veritas_server = {
 	base_buildtime = @club_room_time
 	category = government
 	position_priority = 22
@@ -339,7 +328,7 @@ building_BA_Veritas = {
 		}
 	}
 	#triggered_desc = {
-	#	text = building_BA_Veritas_effect
+	#	text = building_BA_Veritas_server_effect
 	#}
 	potential = {
 		owner = {
@@ -356,21 +345,10 @@ building_BA_Veritas = {
 			}
 		}
 		modifier = {
-			job_BA_club_members_add = 3
+			job_BA_club_members_add = 2
 			pop_government_ethic_attraction = 3
 			BA_club_pop_physics_research_produces_add = 1.5
 			BA_club_pop_consumer_goods_upkeep_add = 0.5
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_technology = tech_BA_SI_Millennium_G03
-			}
-		}
-		modifier = {
-			job_BA_club_members_add = 2
 		}
 	}
 	triggered_country_modifier = {
@@ -395,8 +373,8 @@ building_BA_Veritas = {
 	}
 }
 
-#阿拜多斯生产部门（本地） +3/+5社团部员
-building_BA_Foreclosure_task_force = {
+#阿拜多斯生产部门（本地） +2/+5社团部员
+building_BA_local_division = {
 	base_buildtime = @club_room_time
 	category = government
 	position_priority = 22
@@ -415,7 +393,7 @@ building_BA_Foreclosure_task_force = {
 		}
 	}
 	#triggered_desc = {
-	#	text = building_BA_Foreclosure_task_force_effect
+	#	text = building_BA_local_division_effect
 	#}
 	potential = {
 		owner = {
@@ -432,24 +410,13 @@ building_BA_Foreclosure_task_force = {
 			}
 		}
 		modifier = {
-			job_BA_club_members_add = 3
+			job_BA_club_members_add = 2
 			planet_miners_minerals_produces_mult = 0.25
 			planet_miners_consumer_goods_upkeep_add = 0.5
 			planet_technician_energy_produces_mult = 0.25
 			planet_technician_consumer_goods_upkeep_add = 0.5
 			BA_club_pop_society_research_produces_add = 1.5
 			BA_club_pop_consumer_goods_upkeep_add = 0.5
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_technology = tech_BA_SI_Millennium_G03
-			}
-		}
-		modifier = {
-			job_BA_club_members_add = 2
 		}
 	}
 	resources = {
@@ -464,7 +431,7 @@ building_BA_Foreclosure_task_force = {
 	}
 }
 
-#茶会办事处 +3/+5社团部员
+#茶会办事处 +2/+5社团部员
 building_BA_Teaparty_branch = {
 	base_buildtime = @club_room_time
 	category = government
@@ -483,9 +450,9 @@ building_BA_Teaparty_branch = {
 			always = no			#需要的话以后改
 		}
 	}
-	# triggered_desc = {
-	# 	text = building_BA_Teaparty_effect
-	# }
+	#triggered_desc = {
+	#	text = building_BA_local_division_effect
+	#}
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -501,21 +468,10 @@ building_BA_Teaparty_branch = {
 			}
 		}
 		modifier = {
-			job_BA_club_members_add = 3
+			job_BA_club_members_add = 2
 			empire_size_districts_mult = -0.6
 			BA_club_pop_unity_produces_add = 0.5
 			BA_club_pop_consumer_goods_upkeep_add = 0.5
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_technology = tech_BA_SI_Millennium_G03
-			}
-		}
-		modifier = {
-			job_BA_club_members_add = 2
 		}
 	}
 	resources = {
