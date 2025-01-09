@@ -1,4 +1,408 @@
-### 前置（工程部社团项目）
+### 标准武器
+tech_BA_SPW_Standard_SG_1 = {
+	icon = tech_BA_SPW_Base_G
+	area = engineering
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_reverse_engineerable = no
+	prerequisites = {
+		#TODO:前置科技
+	}
+	prereqfor_desc = {
+
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier3weight1
+}
+
+tech_BA_SPW_Standard_SG_2 = {
+	icon = tech_BA_SPW_Base_G
+	area = engineering
+	cost = @tier4cost1
+	category = {
+		school_tech
+	}
+	tier = 4
+	is_reverse_engineerable = no
+	prerequisites = {
+		#TODO:前置科技
+	}
+	prereqfor_desc = {
+
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier4weight1
+}
+
+tech_BA_SPW_Standard_SG_3 = {
+	icon = tech_BA_SPW_Base_G
+	area = engineering
+	cost = @tier5cost1
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_reverse_engineerable = no
+	prerequisites = {
+		#TODO:前置科技
+	}
+	prereqfor_desc = {
+
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight1
+}
+
+tech_BA_SPW_Standard_GL_1 = {
+	icon = tech_BA_SPW_Base_G
+	area = physics
+	cost = @tier4cost1
+	category = {
+		school_tech
+	}
+	tier = 4
+	is_reverse_engineerable = no
+	prerequisites = {
+		#TODO:前置科技
+	}
+	prereqfor_desc = {
+
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier4weight1
+}
+
+tech_BA_SPW_Standard_GL_2 = {
+	icon = tech_BA_SPW_Base_G
+	area = physics
+	cost = @tier5cost1
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_reverse_engineerable = no
+	prerequisites = {
+		#TODO:前置科技
+	}
+	prereqfor_desc = {
+
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight1
+}
+
+tech_BA_SPW_Standard_SMG_1 = {
+	icon = tech_BA_SPW_Base_P
+	area = engineering
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_reverse_engineerable = no
+	prerequisites = {
+		#TODO:前置科技
+	}
+	prereqfor_desc = {
+
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier3weight1
+}
+
+tech_BA_SPW_Standard_SMG_2 = {
+	icon = tech_BA_SPW_Base_P
+	area = engineering
+	cost = @tier4cost1
+	category = {
+		school_tech
+	}
+	tier = 4
+	is_reverse_engineerable = no
+	prerequisites = {
+		#TODO:前置科技
+	}
+	prereqfor_desc = {
+
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier4weight1
+}
+
+tech_BA_SPW_Standard_SMG_3 = {
+	icon = tech_BA_SPW_Base_P
+	area = engineering
+	cost = @tier5cost1
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_reverse_engineerable = no
+	prerequisites = {
+		#TODO:前置科技
+	}
+	prereqfor_desc = {
+
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight1
+}
+
+tech_BA_SPW_Standard_AR_1 = {
+	icon = tech_BA_SPW_Base_M
+	area = physics
+	cost = @tier4cost1
+	category = {
+		school_tech
+	}
+	tier = 4
+	is_reverse_engineerable = no
+	prerequisites = {
+		#TODO:前置科技
+	}
+	prereqfor_desc = {
+
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier4weight1
+}
+
+tech_BA_SPW_Standard_AR_2 = {
+	icon = tech_BA_SPW_Base_M
+	area = physics
+	cost = @tier5cost1
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_reverse_engineerable = no
+	prerequisites = {
+		#TODO:前置科技
+	}
+	prereqfor_desc = {
+
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight1
+}
+
+tech_BA_SPW_Standard_SR_1 = {
+	icon = tech_BA_SPW_Base_L
+	area = engineering
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_reverse_engineerable = no
+	prerequisites = {
+		#TODO:前置科技
+	}
+	prereqfor_desc = {
+
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier3weight1
+}
+
+tech_BA_SPW_Standard_SR_2 = {
+	icon = tech_BA_SPW_Base_L
+	area = engineering
+	cost = @tier4cost1
+	category = {
+		school_tech
+	}
+	tier = 4
+	is_reverse_engineerable = no
+	prerequisites = {
+		#TODO:前置科技
+	}
+	prereqfor_desc = {
+
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier4weight1
+}
+
+tech_BA_SPW_Standard_SR_3 = {
+	icon = tech_BA_SPW_Base_L
+	area = engineering
+	cost = @tier5cost1
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_reverse_engineerable = no
+	prerequisites = {
+		#TODO:前置科技
+	}
+	prereqfor_desc = {
+
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight1
+}
+
+tech_BA_SPW_Standard_MG_1 = {
+	icon = tech_BA_SPW_Base_X
+	area = engineering
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_reverse_engineerable = no
+	prerequisites = {
+		#TODO:前置科技
+	}
+	prereqfor_desc = {
+
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier3weight1
+}
+
+tech_BA_SPW_Standard_MG_2 = {
+	icon = tech_BA_SPW_Base_X
+	area = engineering
+	cost = @tier4cost1
+	category = {
+		school_tech
+	}
+	tier = 4
+	is_reverse_engineerable = no
+	prerequisites = {
+		#TODO:前置科技
+	}
+	prereqfor_desc = {
+
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier4weight1
+}
+
+tech_BA_SPW_Standard_MG_3 = {
+	icon = tech_BA_SPW_Base_X
+	area = engineering
+	cost = @tier5cost1
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_reverse_engineerable = no
+	prerequisites = {
+		#TODO:前置科技
+	}
+	prereqfor_desc = {
+
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight1
+}
+
+tech_BA_SPW_Standard_HG = {
+	icon = tech_BA_SPW_Base_S
+	area = physics
+	cost = @tier2cost3
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_reverse_engineerable = no
+	prerequisites = {
+		#TODO:前置科技
+	}
+	prereqfor_desc = {
+
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier2weight3
+}
+
+tech_BA_SPW_Standard_RG = {
+	icon = tech_BA_SPW_Base_T
+	area = physics
+	cost = @tier5cost3
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		#TODO:前置科技
+	}
+	prereqfor_desc = {
+
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight3
+}
+
+### 精选武器
+tech_BA_SPW_Selected_Megumine = {
+	icon = tech_BA_SPW_Base_G
+	area = physics
+	cost = @tier5cost3
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Standard_GL_2
+	}
+	prereqfor_desc = {
+
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight3
+}
+
+### 特殊武器前置（工程部社团项目）
 tech_BA_SPW_Base_G = {
 	area = physics
 	levels = -1

@@ -1,190 +1,221 @@
-
 weapon_component_template = {
-    key = "BA_HG_p"
-    size = point_defence
-    type = instant
-    icon = "GFX_Soft_determination"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    component_set = "BA_HG_P"
-    projectile_gfx = "gamma_laser_s"
-    tags = {
-        weapon_type_kinetic
-        weapon_type_Kivotos
-        weapon_type_point_defense
-    }
-    ai_tags = {
-        weapon_role_point_defense
-        screen
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 20
-        }
-        upkeep = {
-            energy = 0.22
-            alloys = 0.02
-        }
-    }
-    power = -6
-    damage = { min = 10 max = 10 }
-    windup = { min = 0 max = 0 }
-    total_fire_time = 10
-    hull_damage = 1
-    shield_damage = 1
-    shield_penetration = 0.2
-    armor_damage = 1
-    armor_penetration = 0.2
-    min_range = 0
-    range = 40
-    accuracy = 1
-    tracking = 1
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_HG_p"
+	size = point_defence
+	type = instant
+	icon = "GFX_Soft_determination"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Standard_HG"
+	}
+	component_set = "BA_HG_P"
+	projectile_gfx = "gamma_laser_s"
+	tags = {
+		weapon_type_kinetic
+		weapon_type_Kivotos
+		weapon_type_point_defense
+	}
+	ai_tags = {
+		weapon_role_point_defense
+		screen
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.02
+		}
+	}
+	power = -6
+	damage = {
+		min = 10
+		max = 10
+	}
+	windup = {
+		min = 0
+		max = 0
+	}
+	total_fire_time = 10
+	hull_damage = 1
+	shield_damage = 1
+	shield_penetration = 0.2
+	armor_damage = 1
+	armor_penetration = 0.2
+	min_range = 0
+	range = 40
+	accuracy = 1
+	tracking = 1
+	ai_weight = {
+		weight = 1
+	}
 }
 
 weapon_component_template = {
-    key = "BA_SMG_1_p"
-    size = point_defence
-    type = instant
-    icon = "GFX_Airi_Weapon"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    upgrades_to = "BA_SMG_2_p"
-    component_set = "BA_SMG_1_P"
-    projectile_gfx = "gamma_laser_s"
-    tags = {
-        weapon_type_kinetic
-        weapon_type_Kivotos
-        weapon_type_point_defense
-    }
-    ai_tags = {
-        weapon_role_point_defense
-        screen
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 20
-        }
-        upkeep = {
-            energy = 0.22
-            alloys = 0.02
-        }
-    }
-    power = -12
-    damage = { min = 4 max = 16 }
-    windup = { min = 0 max = 0 }
-    total_fire_time = 6
-    hull_damage = 2
-    shield_damage = 0.5
-    shield_penetration = 0.6
-    armor_damage = 0.5
-    armor_penetration = 0.6
-    min_range = 0
-    range = 40
-    accuracy = 1
-    tracking = 1
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_SMG_1_p"
+	size = point_defence
+	type = instant
+	icon = "GFX_Airi_Weapon"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Standard_SMG_1"
+	}
+	upgrades_to = "BA_SMG_2_p"
+	component_set = "BA_SMG_1_P"
+	projectile_gfx = "gamma_laser_s"
+	tags = {
+		weapon_type_kinetic
+		weapon_type_Kivotos
+		weapon_type_point_defense
+	}
+	ai_tags = {
+		weapon_role_point_defense
+		screen
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.02
+		}
+	}
+	power = -12
+	damage = {
+		min = 4
+		max = 16
+	}
+	windup = {
+		min = 0
+		max = 0
+	}
+	total_fire_time = 6
+	hull_damage = 2
+	shield_damage = 0.5
+	shield_penetration = 0.6
+	armor_damage = 0.5
+	armor_penetration = 0.6
+	min_range = 0
+	range = 40
+	accuracy = 1
+	tracking = 1
+	ai_weight = {
+		weight = 1
+	}
 }
 
 weapon_component_template = {
-    key = "BA_SMG_2_p"
-    size = point_defence
-    type = instant
-    icon = "GFX_Yuuka_Weapon"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    upgrades_to = "BA_SMG_3_p"
-    component_set = "BA_SMG_2_P"
-    projectile_gfx = "gamma_laser_s"
-    tags = {
-        weapon_type_kinetic
-        weapon_type_Kivotos
-        weapon_type_point_defense
-    }
-    ai_tags = {
-        weapon_role_point_defense
-        screen
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 20
-        }
-        upkeep = {
-            energy = 0.22
-            alloys = 0.02
-        }
-    }
-    power = -20
-    damage = { min = 9 max = 24 }
-    windup = { min = 0 max = 0 }
-    total_fire_time = 6
-    hull_damage = 3
-    shield_damage = 0.5
-    shield_penetration = 0.7
-    armor_damage = 0.5
-    armor_penetration = 0.7
-    min_range = 0
-    range = 40
-    accuracy = 1
-    tracking = 1
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_SMG_2_p"
+	size = point_defence
+	type = instant
+	icon = "GFX_Yuuka_Weapon"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Standard_SMG_2"
+	}
+	upgrades_to = "BA_SMG_3_p"
+	component_set = "BA_SMG_2_P"
+	projectile_gfx = "gamma_laser_s"
+	tags = {
+		weapon_type_kinetic
+		weapon_type_Kivotos
+		weapon_type_point_defense
+	}
+	ai_tags = {
+		weapon_role_point_defense
+		screen
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.02
+		}
+	}
+	power = -20
+	damage = {
+		min = 9
+		max = 24
+	}
+	windup = {
+		min = 0
+		max = 0
+	}
+	total_fire_time = 6
+	hull_damage = 3
+	shield_damage = 0.5
+	shield_penetration = 0.7
+	armor_damage = 0.5
+	armor_penetration = 0.7
+	min_range = 0
+	range = 40
+	accuracy = 1
+	tracking = 1
+	ai_weight = {
+		weight = 1
+	}
 }
 
 weapon_component_template = {
-    key = "BA_SMG_3_p"
-    size = point_defence
-    type = instant
-    icon = "GFX_Mika_Weapon"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    component_set = "BA_SMG_3_P"
-    projectile_gfx = "gamma_laser_s"
-    tags = {
-        weapon_type_kinetic
-        weapon_type_Kivotos
-        weapon_type_point_defense
-    }
-    ai_tags = {
-        weapon_role_point_defense
-        screen
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 20
-        }
-        upkeep = {
-            energy = 0.22
-            alloys = 0.02
-        }
-    }
-    power = -32
-    damage = { min = 20 max = 32 }
-    windup = { min = 0 max = 0 }
-    total_fire_time = 6
-    hull_damage = 4
-    shield_damage = 0.5
-    shield_penetration = 0.8
-    armor_damage = 0.5
-    armor_penetration = 0.8
-    min_range = 0
-    range = 40
-    accuracy = 0.6
-    tracking = 0.8
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_SMG_3_p"
+	size = point_defence
+	type = instant
+	icon = "GFX_Mika_Weapon"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Standard_SMG_3"
+	}
+	component_set = "BA_SMG_3_P"
+	projectile_gfx = "gamma_laser_s"
+	tags = {
+		weapon_type_kinetic
+		weapon_type_Kivotos
+		weapon_type_point_defense
+	}
+	ai_tags = {
+		weapon_role_point_defense
+		screen
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.02
+		}
+	}
+	power = -32
+	damage = {
+		min = 20
+		max = 32
+	}
+	windup = {
+		min = 0
+		max = 0
+	}
+	total_fire_time = 6
+	hull_damage = 4
+	shield_damage = 0.5
+	shield_penetration = 0.8
+	armor_damage = 0.5
+	armor_penetration = 0.8
+	min_range = 0
+	range = 40
+	accuracy = 0.6
+	tracking = 0.8
+	ai_weight = {
+		weight = 1
+	}
 }

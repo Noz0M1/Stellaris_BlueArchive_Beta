@@ -17,11 +17,11 @@ modifier_BA_club_overload_1 = {
 }
 
 modifier_BA_club_overload_2 = {
-	empire_size_mult = 0.1
+	empire_size_mult = 0.3
 }
 
 modifier_BA_club_overload_3 = {
-	empire_size_mult = 0.1
+	empire_size_mult = 0.5
 }
 
 #社团舰殖民
@@ -94,6 +94,22 @@ modifier_BA_club_sponsor_Foreclosure_task_force = {
 modifier_BA_club_sponsor_Teaparty = {
 	planet_stability_add = 5
 	planet_jobs_unity_produces_mult = 0.05
+}
+
+modifier_BA_club_sponsor_Hotspring_development_department = {
+	planet_amenities_add = 10
+}
+
+modifier_BA_club_sponsor_Festival_operations_department = {
+	pop_amenities_usage_mult = -0.1
+}
+
+modifier_BA_club_sponsor_Xuanwu_promenade = {
+	starbase_trade_protection_add = 20
+}
+
+modifier_BA_club_sponsor_Publishing_department = {
+	planet_pops_consumer_goods_upkeep_mult = -0.1
 }
 
 #游戏开发部
@@ -200,52 +216,19 @@ modifier_BA_Teaparty = {
 	empire_size_systems_mult = -1
 }
 
-modifier_BA_Teaparty_1 = {
-	empire_size_pops_mult = @Tp_m_1
-	empire_size_systems_mult = @Tp_m_1
+#祭典运营委员会
+modifier_BA_Festival_operations_department = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_BA_Arius_cleaning.dds"
+	pop_happiness = 0.25
+	BA_club_pop_produces_mult = 0.5
+	BA_crew_pop_produces_mult = 0.5
+	BA_flex_pop_produces_mult = 0.5
 }
 
-modifier_BA_Teaparty_2 = {
-	empire_size_pops_mult = @Tp_m_2
-	empire_size_systems_mult = @Tp_m_2
+#出版部
+modifier_BA_Publishing_department = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_BA_Arius_cleaning.dds"
+	pop_government_ethic_attraction = 1
 }
 
-modifier_BA_Teaparty_3 = {
-	empire_size_pops_mult = @Tp_m_3
-	empire_size_systems_mult = @Tp_m_3
-}
 
-modifier_BA_Teaparty_4 = {
-	empire_size_pops_mult = @Tp_m_4
-	empire_size_systems_mult = @Tp_m_4
-}
-
-modifier_BA_Teaparty_5 = {
-	empire_size_pops_mult = @Tp_m_5
-	empire_size_systems_mult = @Tp_m_5
-}
-
-modifier_BA_Teaparty_6 = {
-	empire_size_pops_mult = @Tp_m_6
-	empire_size_systems_mult = @Tp_m_6
-}
-
-modifier_BA_Teaparty_7 = {
-	empire_size_pops_mult = @Tp_m_7
-	empire_size_systems_mult = @Tp_m_7
-}
-
-modifier_BA_Teaparty_8 = {
-	empire_size_pops_mult = @Tp_m_8
-	empire_size_systems_mult = @Tp_m_8
-}
-
-modifier_BA_Teaparty_9 = {
-	empire_size_pops_mult = @Tp_m_9
-	empire_size_systems_mult = @Tp_m_9
-}
-
-modifier_BA_Teaparty_X = {
-	empire_size_pops_mult = @Tp_m_X
-	empire_size_systems_mult = @Tp_m_X
-}

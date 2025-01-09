@@ -1,189 +1,219 @@
-
 weapon_component_template = {
-    key = "BA_MG_x"
-    size = extra_large
-    type = instant
-    icon = "GFX_Hina_Weapon"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    component_set = "BA_MG_X"
-    projectile_gfx = "gamma_laser_s"
-    tags = {
-        weapon_type_kinetic
-        weapon_type_Kivotos
-    }
-    ai_tags = {
-        gunship
-        weapon_role_anti_shield
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 20
-        }
-        upkeep = {
-            energy = 0.22
-            alloys = 0.02
-        }
-    }
-    power = -320
-    damage = { min = 200 max = 600 }
-    windup = { min = 3 max = 5 }
-    total_fire_time = 4
-    hull_damage = 1
-    shield_damage = 1.5
-    shield_penetration = 0.2
-    armor_damage = 0.8
-    armor_penetration = 0.2
-    min_range = 20
-    range = 180
-    accuracy = 0.6
-    tracking = 0
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_MG_x"
+	size = extra_large
+	type = instant
+	icon = "GFX_Hina_Weapon"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Standard_MG_2"
+	}
+	component_set = "BA_MG_X"
+	projectile_gfx = "gamma_laser_s"
+	tags = {
+		weapon_type_kinetic
+		weapon_type_Kivotos
+	}
+	ai_tags = {
+		gunship
+		weapon_role_anti_shield
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.02
+		}
+	}
+	power = -320
+	damage = {
+		min = 200
+		max = 600
+	}
+	windup = {
+		min = 3
+		max = 5
+	}
+	total_fire_time = 4
+	hull_damage = 1
+	shield_damage = 1.5
+	shield_penetration = 0.2
+	armor_damage = 0.8
+	armor_penetration = 0.2
+	min_range = 20
+	range = 180
+	accuracy = 0.6
+	tracking = 0
+	ai_weight = {
+		weight = 1
+	}
 }
 
 weapon_component_template = {
-    key = "BA_SR_x"
-    size = extra_large
-    type = instant
-    icon = "GFX_Karin_Weapon"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    component_set = "BA_SR_X"
-    projectile_gfx = "gamma_laser_s"
-    tags = {
-        weapon_type_kinetic
-        weapon_type_Kivotos
-    }
-    ai_tags = {
-        gunship
-        weapon_role_anti_hull
-        weapon_role_anti_armor
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 20
-        }
-        upkeep = {
-            energy = 0.22
-            alloys = 0.02
-        }
-    }
-    power = -320
-    damage = { min = 2000 max = 2400 }
-    windup = { min = 30 max = 50 }
-    total_fire_time = 40
-    hull_damage = 3
-    shield_damage = 2
-    shield_penetration = 0.4
-    armor_damage = 4
-    armor_penetration = 0.25
-    min_range = 20
-    range = 180
-    accuracy = 1
-    tracking = 0.3
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_SR_x"
+	size = extra_large
+	type = instant
+	icon = "GFX_Karin_Weapon"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Standard_SR_2"
+	}
+	component_set = "BA_SR_X"
+	projectile_gfx = "gamma_laser_s"
+	tags = {
+		weapon_type_kinetic
+		weapon_type_Kivotos
+	}
+	ai_tags = {
+		gunship
+		weapon_role_anti_hull
+		weapon_role_anti_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.02
+		}
+	}
+	power = -320
+	damage = {
+		min = 2000
+		max = 2400
+	}
+	windup = {
+		min = 30
+		max = 50
+	}
+	total_fire_time = 40
+	hull_damage = 3
+	shield_damage = 2
+	shield_penetration = 0.4
+	armor_damage = 4
+	armor_penetration = 0.25
+	min_range = 20
+	range = 180
+	accuracy = 1
+	tracking = 0.3
+	ai_weight = {
+		weight = 1
+	}
 }
 
 weapon_component_template = {
-    key = "BA_RD_x"
-    size = extra_large
-    type = instant
-    icon = "GFX_SuperNova"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    component_set = "BA_RD_X"
-    projectile_gfx = "gamma_laser_s"
-    tags = {
-        weapon_type_energy
-        weapon_type_Kivotos
-    }
-    ai_tags = {
-        gunship
-        weapon_role_anti_shield
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 20
-        }
-        upkeep = {
-            energy = 0.22
-            alloys = 0.02
-        }
-    }
-    power = -320
-    damage = { min = 100 max = 5400 }
-    windup = { min = 30 max = 50 }
-    total_fire_time = 60
-    hull_damage = 1
-    shield_damage = 0.5
-    shield_penetration = 1
-    armor_damage = 0.5
-    armor_penetration = 1
-    min_range = 20
-    range = 200
-    accuracy = 1
-    tracking = 0.5
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_RG_x"
+	size = extra_large
+	type = instant
+	icon = "GFX_SuperNova"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Standard_RG"
+	}
+	component_set = "BA_RG_X"
+	projectile_gfx = "gamma_laser_s"
+	tags = {
+		weapon_type_energy
+		weapon_type_Kivotos
+	}
+	ai_tags = {
+		gunship
+		weapon_role_anti_shield
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.02
+		}
+	}
+	power = -320
+	damage = {
+		min = 100
+		max = 5400
+	}
+	windup = {
+		min = 30
+		max = 50
+	}
+	total_fire_time = 60
+	hull_damage = 1
+	shield_damage = 0.5
+	shield_penetration = 1
+	armor_damage = 0.5
+	armor_penetration = 1
+	min_range = 20
+	range = 200
+	accuracy = 1
+	tracking = 0.5
+	ai_weight = {
+		weight = 1
+	}
 }
 
 weapon_component_template = {
-    key = "BA_Megumine_x"
-    size = extra_large
-    type = instant
-    icon = "GFX_Megu_Weapon"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    component_set = "BA_Megumin_X"
-    projectile_gfx = "gamma_laser_s"
-    tags = {
-        weapon_type_energy
-        weapon_type_explosive
-        weapon_type_Kivotos
-    }
-    ai_tags = {
-        explosive
-        explosive_stealth
-        weapon_role_anti_armor
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 20
-        }
-        upkeep = {
-            energy = 0.22
-            alloys = 0.02
-        }
-    }
-    power = -320
-    damage = { min = 700 max = 900 }
-    windup = { min = 0 max = 0 }
-    total_fire_time = 16
-    hull_damage = 2
-    shield_damage = 1
-    shield_penetration = 0.8
-    armor_damage = 2
-    armor_penetration = 0
-    min_range = 0
-    range = 60
-    accuracy = 0.6
-    tracking = 0.6
-    size_damage_factor = 2
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_Megumine_x"
+	size = extra_large
+	type = instant
+	icon = "GFX_Megu_Weapon"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Selected_Megumine"
+	}
+	component_set = "BA_Megumin_X"
+	projectile_gfx = "gamma_laser_s"
+	tags = {
+		weapon_type_energy
+		weapon_type_explosive
+		weapon_type_Kivotos
+	}
+	ai_tags = {
+		explosive
+		explosive_stealth
+		weapon_role_anti_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.02
+		}
+	}
+	power = -320
+	damage = {
+		min = 700
+		max = 900
+	}
+	windup = {
+		min = 0
+		max = 0
+	}
+	total_fire_time = 16
+	hull_damage = 2
+	shield_damage = 1
+	shield_penetration = 0.8
+	armor_damage = 2
+	armor_penetration = 0
+	min_range = 0
+	range = 60
+	accuracy = 0.6
+	tracking = 0.6
+	size_damage_factor = 2
+	ai_weight = {
+		weight = 1
+	}
 }
-

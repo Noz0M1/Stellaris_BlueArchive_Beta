@@ -732,7 +732,7 @@ BA_club_base = {
 		x = -7
 		y = -7
 	}
-	build_time = 36	#360
+	build_time = 180
 	resources = {
 		category = megastructures_habitat
 		cost = {
@@ -841,11 +841,15 @@ BA_club_station_Game_development_department = {
 	entity = ba_club_station_01_entity
 	construction_entity = ba_club_station_01_entity
 	portrait = "GFX_megastructure_construction_background"
+	show_in_outliner = no
 	place_entity_on_planet_plane = no
 	build_time = 1
 	resources = {
 		category = megastructures
 		cost = {
+		}
+		produces = {
+			sr_eligma = 1
 		}
 		produces = {
 			unity = 1
@@ -877,6 +881,7 @@ BA_club_station_Game_development_department_ex = {
 	entity = ba_club_station_ex_01_entity
 	construction_entity = ba_club_station_ex_01_entity
 	portrait = "GFX_megastructure_construction_background"
+	show_in_outliner = no
 	place_entity_on_planet_plane = no
 	build_time = 1
 	resources = {
@@ -910,11 +915,15 @@ BA_club_station_Engineering_club = {
 	entity = ba_club_station_01_entity
 	construction_entity = ba_club_station_01_entity
 	portrait = "GFX_megastructure_construction_background"
+	show_in_outliner = no
 	place_entity_on_planet_plane = no
 	build_time = 1
 	resources = {
 		category = megastructures
 		cost = {
+		}
+		produces = {
+			sr_eligma = 1
 		}
 		upkeep = {
 			energy = 55
@@ -942,11 +951,15 @@ BA_club_station_Veritas = {
 	entity = ba_club_station_01_entity
 	construction_entity = ba_club_station_01_entity
 	portrait = "GFX_megastructure_construction_background"
+	show_in_outliner = no
 	place_entity_on_planet_plane = no
 	build_time = 1
 	resources = {
 		category = megastructures
 		cost = {
+		}
+		produces = {
+			sr_eligma = 1
 		}
 		upkeep = {
 			energy = 5
@@ -971,11 +984,15 @@ BA_club_station_Foreclosure_task_force = {
 	entity = ba_club_station_01_entity
 	construction_entity = ba_club_station_01_entity
 	portrait = "GFX_megastructure_construction_background"
+	show_in_outliner = no
 	place_entity_on_planet_plane = no
 	build_time = 1
 	resources = {
 		category = megastructures
 		cost = {
+		}
+		produces = {
+			sr_eligma = 1
 		}
 		upkeep = {
 			energy = 5
@@ -1006,11 +1023,15 @@ BA_club_station_Teaparty = {
 	entity = ba_club_station_01_entity
 	construction_entity = ba_club_station_01_entity
 	portrait = "GFX_megastructure_construction_background"
+	show_in_outliner = no
 	place_entity_on_planet_plane = no
 	build_time = 1
 	resources = {
 		category = megastructures
 		cost = {
+		}
+		produces = {
+			sr_eligma = 1
 		}
 		upkeep = {
 			energy = 5
@@ -1043,6 +1064,7 @@ BA_club_station_Hotspring_development_department = {
 	entity = ba_club_station_01_entity
 	construction_entity = ba_club_station_01_entity
 	portrait = "GFX_megastructure_construction_background"
+	show_in_outliner = no
 	place_entity_on_planet_plane = no
 	build_time = 1
 	resources = {
@@ -1050,6 +1072,7 @@ BA_club_station_Hotspring_development_department = {
 		cost = {
 		}
 		produces = {
+			sr_eligma = 1
 			volatile_motes = 5
 			exotic_gases = 5
 		}
@@ -1078,11 +1101,15 @@ BA_club_station_Festival_operations_department = {
 	entity = ba_club_station_01_entity
 	construction_entity = ba_club_station_01_entity
 	portrait = "GFX_megastructure_construction_background"
+	show_in_outliner = no
 	place_entity_on_planet_plane = no
 	build_time = 1
 	resources = {
 		category = megastructures
 		cost = {
+		}
+		produces = {
+			sr_eligma = 1
 		}
 		upkeep = {
 			energy = 5
@@ -1092,6 +1119,13 @@ BA_club_station_Festival_operations_department = {
 				has_policy_flag = club_lv1_spounce
 			}
 			energy = 20
+		}
+		upkeep = {
+			trigger = {
+				has_country_flag = Festival_operations_department_cooldown
+			}
+			consumer_goods = 10
+			multiplier = trigger:count_owned_planet
 		}
 	}
 	upgrade_from = {
@@ -1109,11 +1143,15 @@ BA_club_station_Xuanwu_promenade = {
 	entity = ba_club_station_01_entity
 	construction_entity = ba_club_station_01_entity
 	portrait = "GFX_megastructure_construction_background"
+	show_in_outliner = no
 	place_entity_on_planet_plane = no
 	build_time = 1
 	resources = {
 		category = megastructures
 		cost = {
+		}
+		produces = {
+			sr_eligma = 1
 		}
 		upkeep = {
 			energy = 5
@@ -1124,12 +1162,16 @@ BA_club_station_Xuanwu_promenade = {
 			}
 			energy = 20
 		}
+		upkeep = {
+			unity = 0.1
+			multiplier = trigger:count_owned_starbase
+		}
 	}
 	upgrade_from = {
 		BA_club_base
 	}
 	country_modifier = {
-		trade_value_add = 100
+		living_standard_trade_value_specialists_add = 1
 	}
 	potential = {
 		always = no
@@ -1141,11 +1183,15 @@ BA_club_station_Publishing_department = {
 	entity = ba_club_station_01_entity
 	construction_entity = ba_club_station_01_entity
 	portrait = "GFX_megastructure_construction_background"
+	show_in_outliner = no
 	place_entity_on_planet_plane = no
 	build_time = 1
 	resources = {
 		category = megastructures
 		cost = {
+		}
+		produces = {
+			sr_eligma = 1
 		}
 		upkeep = {
 			energy = 5
@@ -1202,6 +1248,7 @@ BA_Veritas_device_full = {
 	entity = ba_veritas_device_phase_04_entity
 	construction_entity = ba_veritas_device_phase_04_construction_entity
 	portrait = GFX_megastructure_spy_orb_background
+	show_in_outliner = no
 	place_entity_on_planet_plane = no
 	build_time = 540
 	resources = {
@@ -1224,4 +1271,137 @@ BA_Veritas_device_full = {
 }
 
 ### 温泉开发部
+#开采站
+BA_Hotspring_mine_station = {
+	entity = construction_platform_entity
+	construction_entity = construction_platform_entity	#"habitat_phase_01_entity"
+	portrait = "GFX_megastructure_arc_furnace_background"
+	show_in_outliner = no
+	entity_offset = {
+		x = 4
+		y = -15
+	}
+	build_time = 180
+	resources = {
+		category = megastructures
+		produces = {
+			minerals = 50
+			multiplier = owner.Hotspring_development_department_megastructure_produce
+		}
+		produces = {
+			trigger = {
+				planet = {
+					is_planet_class = pc_barren
+				}
+			}
+			alloys = 10
+			multiplier = owner.Hotspring_development_department_megastructure_produce
+		}
+		produces = {
+			trigger = {
+				planet = {
+					is_planet_class = pc_barren_cold
+				}
+			}
+			minerals = 50
+			multiplier = owner.Hotspring_development_department_megastructure_produce
+		}
+		produces = {
+			trigger = {
+				planet = {
+					is_planet_class = pc_molten
+				}
+			}
+			volatile_motes = 3
+			multiplier = owner.Hotspring_development_department_megastructure_produce
+		}
+		produces = {
+			trigger = {
+				planet = {
+					is_planet_class = pc_toxic
+				}
+			}
+			exotic_gases = 3
+			multiplier = owner.Hotspring_development_department_megastructure_produce
+		}
+		produces = {
+			trigger = {
+				planet = {
+					is_planet_class = pc_frozen
+				}
+			}
+			rare_crystals = 3
+			multiplier = owner.Hotspring_development_department_megastructure_produce
+		}
+		cost = {
+			alloys = 200
+			unity = 500
+			sr_eligma = 20
+		}
+		cost = {
+			alloys = 200
+			multiplier = owner.Hotspring_development_department_megastructure_produce
+		}
+	}
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "BA_m_has_hotspring"
+				OR = {
+					is_planet_class = pc_barren
+					is_planet_class = pc_barren_cold
+					is_planet_class = pc_molten
+					is_planet_class = pc_toxic
+					is_planet_class = pc_frozen
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_survey_not_habitable"
+				is_surveyed = {
+					# prevent leaking habitability information
+					who = prev.from
+					status = yes
+				}
+				colonizable_planet = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_existing_megastructure"
+				BA_has_megastucture = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				is_ringworld = no
+			}
+		}
+	}
+	possible = {
+		hidden_trigger = {
+			exists = starbase
+		}
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_megastructure"
+			has_no_non_gate_megastructure = yes
+		}
+	}
 
+	prerequisites = { }
+
+	on_build_start = {
+	}
+	on_build_cancel = {
+	}
+	on_build_complete = {
+	}
+}

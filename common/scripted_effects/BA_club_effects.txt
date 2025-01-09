@@ -5,6 +5,10 @@ BA_club_clear_found_flag = {
     remove_country_flag = BA_club_set_Veritas
     remove_country_flag = BA_club_set_Foreclosure_task_force
     remove_country_flag = BA_club_set_Teaparty
+    remove_country_flag = BA_club_set_Hotspring_development_department
+    remove_country_flag = BA_club_set_Festival_operations_department
+    remove_country_flag = BA_club_set_Xuanwu_promenade
+    remove_country_flag = BA_club_set_Publishing_department
 }
 
 BA_club_found_selected_club = {
@@ -398,81 +402,207 @@ BA_club_favor_grow = {
         limit = {
             has_country_flag = BA_Game_development_department
         }
-        change_variable = {
-            which = Game_development_department
-            value = $AMOUNT$
+        if = {
+            limit = {
+                check_variable = {
+                    which = Game_development_department
+                    value >= 100
+                }
+            }
+            set_variable = {
+                which = Game_development_department
+                value = 100
+            }
+        }
+        else = {
+            change_variable = {
+                which = Game_development_department
+                value = $AMOUNT$
+            }
         }
     }
     if = {
         limit = {
             has_country_flag = BA_Engineering_club
         }
-        change_variable = {
-            which = Engineering_club
-            value = $AMOUNT$
+        if = {
+            limit = {
+                check_variable = {
+                    which = Engineering_club
+                    value >= 100
+                }
+            }
+            set_variable = {
+                which = Engineering_club
+                value = 100
+            }
+        }
+        else = {
+            change_variable = {
+                which = Engineering_club
+                value = $AMOUNT$
+            }
         }
     }
     if = {
         limit = {
             has_country_flag = BA_Veritas
         }
-        change_variable = {
-            which = Veritas
-            value = $AMOUNT$
+        if = {
+            limit = {
+                check_variable = {
+                    which = Veritas
+                    value >= 100
+                }
+            }
+            set_variable = {
+                which = Veritas
+                value = 100
+            }
+        }
+        else = {
+            change_variable = {
+                which = Veritas
+                value = $AMOUNT$
+            }
         }
     }
     if = {
         limit = {
             has_country_flag = BA_Foreclosure_task_force
         }
-        change_variable = {
-            which = Foreclosure_task_force
-            value = $AMOUNT$
+        if = {
+            limit = {
+                check_variable = {
+                    which = Foreclosure_task_force
+                    value >= 100
+                }
+            }
+            set_variable = {
+                which = Foreclosure_task_force
+                value = 100
+            }
+        }
+        else = {
+            change_variable = {
+                which = Foreclosure_task_force
+                value = $AMOUNT$
+            }
         }
     }
     if = {
         limit = {
             has_country_flag = BA_Teaparty
         }
-        change_variable = {
-            which = Teaparty
-            value = $AMOUNT$
+        if = {
+            limit = {
+                check_variable = {
+                    which = Teaparty
+                    value >= 100
+                }
+            }
+            set_variable = {
+                which = Teaparty
+                value = 100
+            }
+        }
+        else = {
+            change_variable = {
+                which = Teaparty
+                value = $AMOUNT$
+            }
         }
     }
     if = {
         limit = {
             has_country_flag = BA_Hotspring_development_department
         }
-        change_variable = {
-            which = Hotspring_development_department
-            value = $AMOUNT$
+        if = {
+            limit = {
+                check_variable = {
+                    which = Hotspring_development_department
+                    value >= 100
+                }
+            }
+            set_variable = {
+                which = Hotspring_development_department
+                value = 100
+            }
+        }
+        else = {
+            change_variable = {
+                which = Hotspring_development_department
+                value = $AMOUNT$
+            }
         }
     }
     if = {
         limit = {
             has_country_flag = BA_Festival_operations_department
         }
-        change_variable = {
-            which = Festival_operations_department
-            value = $AMOUNT$
+        if = {
+            limit = {
+                check_variable = {
+                    which = Festival_operations_department
+                    value >= 100
+                }
+            }
+            set_variable = {
+                which = Festival_operations_department
+                value = 100
+            }
+        }
+        else = {
+            change_variable = {
+                which = Festival_operations_department
+                value = $AMOUNT$
+            }
         }
     }
     if = {
         limit = {
             has_country_flag = BA_Xuanwu_promenade
         }
-        change_variable = {
-            which = Xuanwu_promenade
-            value = $AMOUNT$
+        if = {
+            limit = {
+                check_variable = {
+                    which = Xuanwu_promenade
+                    value >= 100
+                }
+            }
+            set_variable = {
+                which = Xuanwu_promenade
+                value = 100
+            }
+        }
+        else = {
+            change_variable = {
+                which = Xuanwu_promenade
+                value = $AMOUNT$
+            }
         }
     }
     if = {
         limit = {
             has_country_flag = BA_Publishing_department
         }
-        change_variable = {
-            which = Publishing_department
-            value = $AMOUNT$
+        if = {
+            limit = {
+                check_variable = {
+                    which = Publishing_department
+                    value >= 100
+                }
+            }
+            set_variable = {
+                which = Publishing_department
+                value = 100
+            }
+        }
+        else = {
+            change_variable = {
+                which = Publishing_department
+                value = $AMOUNT$
+            }
         }
     }
 }

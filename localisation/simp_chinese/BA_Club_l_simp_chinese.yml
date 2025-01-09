@@ -11,11 +11,14 @@
  BA_club_no_spounce: "无赞助"
  BA_club_no_spounce_desc: "各个社团已经从自己的所属学园获得了经费，无需额外拨款。"
  BA_club_lv1_spounce: "活动级拨款"
- BA_club_lv1_spounce_desc: "将社团作为年度的活动来规划拨款，为社团部员们提供更好的活动条件。\n  社团部室的维护费增加，并依据已建立的太空社团部室，提供独特的§Y帝国修正§!"
+ BA_club_lv1_spounce_desc: "将社团作为年度的活动来规划拨款，为社团部员们提供更好的活动条件。\n$BA_club_lv1_tip$"
  BA_club_lv2_spounce: "设施级拨款"
- BA_club_lv2_spounce_desc: "将社团消耗视为基础设施的维护费用进行拨款，提供更高的创作自由度和活动规模\n  社团部室及相关巨构的产出增加。"
+ BA_club_lv2_spounce_desc: "将社团消耗视为基础设施的维护费用进行拨款，提供更高的创作自由度和活动规模\n$BA_club_lv1_tip$$BA_club_lv2_tip$"
  BA_club_lv3_spounce: "战略级拨款"
- BA_club_lv3_spounce_desc: "社团关乎我们的生死存亡，必须大力投入。\n  £job_BA_club_members£社团部员的维护费和产出增加"
+ BA_club_lv3_spounce_desc: "社团关乎我们的生死存亡，必须大力投入。\n$BA_club_lv1_tip$$BA_club_lv2_tip$$BA_club_lv3_tip$"
+ BA_club_lv1_tip:0 "  社团部室的维护费增加，并依据已建立的太空社团部室，提供独特的§Y帝国修正§!\n"
+ BA_club_lv2_tip:0 "  社团部室及相关巨构的产出增加\n"
+ BA_club_lv3_tip:0 "  £job_BA_club_members£$BA_club_pop$的维护费和产出增加\n"
 
 
  #
@@ -98,14 +101,21 @@
  BA_Veritas_device_DESC:0 "真理部用部室改装而成的通讯站，作为她们黑客行动的基地。"
  BA_Veritas_device_full:0 "真理部监测阵列"
  BA_Veritas_device_full_DESC:0 "真理部花费了大量的经费才建成的传感器阵列，内嵌了一个演算枢纽核心的原型，可以用来做许多不可言说的事情。"
+ BA_Hotspring_mine_station: "温泉部开采湾"
+ BA_Hotspring_mine_station_DESC: "温泉开发部在这里找到了矿脉，设置了此巨构对其进行开采。"
+ BA_Hotspring_mine_station_MEGASTRUCTURE_DETAILS: "温泉开发部在这里找到了矿脉，设置了此巨构对其进行开采。"
+ BA_Hotspring_mine_station_astroid: "温泉部采矿器"
+ BA_Hotspring_mine_station_astroid_DESC: "温泉开发部在这里找到了矿脉，设置了此巨构对其进行开采。"
+ BA_Hotspring_mine_station_astroid_MEGASTRUCTURE_DETAILS: "温泉开发部在这里找到了矿脉，设置了此巨构对其进行开采。"
+ BA_m_has_hotspring:0 "£trigger_no£§B温泉开发部拒绝勘探此处，因为这颗星球上不可能有温泉。§!"
 
 #
  BA_club.0001.title:0 "社团机制说明"
- BA_club.0001.desc:0 "“老师，我们刚刚完成了建造社团舰和太空部室所必须的研究……\n咳嗯，现在是太空时代了……您不觉得一个太空中的社团部室十分的炫酷吗? 现在，我们可以建造这样的部室了。要建造太空社团，首先需要派一艘工程船修建一座社团部基址，然后再建造一艘社团舰，命令社团舰进入基址轨道，社团建立就会开始进行。”"
+ BA_club.0001.desc:0 "“老师，我们刚刚完成了建造社团舰和太空部室所必须的研究……\n咳嗯，现在是太空时代了……您不觉得一个太空中的社团部室十分的炫酷吗? 现在，我们可以建造这样的部室了。要建造太空社团，首先需要派一艘工程船修建一座社团部基址，然后再建造一艘社团舰，命令社团舰进入基址轨道，社团建立就会开始进行。\n或者，您也可以指派社团舰上的部员们殖民一个新的行星，社团部员的工作效率不如正规的殖民者，但她们创造性的想法有助于星球的后续发展。”"
  BA_club.0001.comfirmed:0 "了解。"
 
  BA_club.0002.title:0 "社团机制说明"
- BA_club.0002.desc:0 "“老师，我们的第一艘社团舰下水了！\n需要注意的是，每个星系只能建造一个社团部室，而且我们要控制社团部室的数量不超出社团上限，否则会对联邦学生会的管理造成一些压力……当然，只要资源足够，这些都是可以轻松解决的问题。\n同时，您也可以指派社团舰上的部员们殖民一个新的行星，社团部员的工作效率不如正规的殖民者，但她们创造性的想法有助于星球的后续发展。好了，老师，一起加油吧！”"
+ BA_club.0002.desc:0 "“老师，我们的第一艘社团舰下水了！\n还记得建立社团的流程吗？咳咳嗯，要建造太空社团，首先需要派一艘工程船修建一座社团部基址，然后再建造一艘社团舰，命令社团舰进入基址轨道，社团建立就会开始进行。\n需要注意的是，我们要控制社团部室的数量不超出社团上限，否则会对联邦学生会的管理造成一些压力……当然，只要资源足够，这些都是可以轻松解决的问题。\n好了，老师，一起加油吧！”"
  BA_club.0002.comfirmed:0 "了解。"
 
  BA_club.0005.title:0 "社团部室开建"
@@ -128,7 +138,9 @@
  BA_club_station_plural:0 "基沃托斯社团空间站"
  BA_club_enclave_curator_key:0 "通用空间站-核心区段"
 
- BA_club_favor_fail:0 "好感度不足，先进行其他互动增加下好感度吧"
+ BA_club_favor_fail:0 "建设度不足，先进行赞助来增加建设度吧。"
+ BA_club_favor_fail.50:0 "需要建设度达到§G50§!，先进行赞助来增加建设度吧。"
+ BA_club_favor_fail.100:0 "需要建设度达到§G100§!，先进行赞助来增加建设度吧。"
 
 #
  Club_communicate.name:0 "基沃托斯社团联络中枢"
@@ -240,7 +252,7 @@
 
 
 #游戏部
- Game_development_department_opinion:0 "（§G当前好感度：[Root.Game_development_department] §!）\n\n"
+ Game_development_department_opinion:0 "（§G当前建设度：[Root.Game_development_department] §!）\n\n"
 
  Yuzu_desc1:0 "$Game_development_department_opinion$……欢，欢迎……呜……"
  Yuzu_desc2:0 "$Game_development_department_opinion$我们是游戏开发部，制作游戏是我们的活动内容……额，不只是制作。"
@@ -277,7 +289,7 @@
 
 
 #工程师部
- Engineering_club_opinion:0 "（§G当前好感度：[Root.Engineering_club] §!）\n\n"
+ Engineering_club_opinion:0 "（§G当前建设度：[Root.Engineering_club] §!）\n\n"
 
  Utaha_desc1:0 "$Engineering_club_opinion$老师，您问这是什么……这不是巧克力，这是弹匣，我们这个弹匣体积小方便携带，……"
  Utaha_desc2:0 "$Engineering_club_opinion$老师，快来看，我家的小雷现在会后空翻了!……额，没什么，您先说。"
@@ -338,7 +350,7 @@
 
 
 #真理部
- Veritas_opinion:0 "（§G当前好感度：[Root.Veritas] §!）\n\n"
+ Veritas_opinion:0 "（§G当前建设度：[Root.Veritas] §!）\n\n"
 
  Chihiro_desc1:0 "$Veritas_opinion$啊，欢迎……"
  Chihiro_desc2:0 "$Veritas_opinion$……我看起来很疲惫? ……只是被一种原始而令人惊叹的入侵方法折磨了一天而已。"
@@ -364,16 +376,16 @@
  Veritas_sensor4.next:0 "开工！"
 
  Veritas_building:0 "你们需要将节点部署在星球上吗？"
- Veritas_building_ChihiroRE:0 "您愿意提供帮助的话……也好，真是太棒了。感谢您。"
- Veritas_building_HareRE:0 "真的吗? 如果您是指星球网络的接口……额，当然。谢谢您。"
+ Veritas_building.ChihiroRE:0 "您愿意提供帮助的话……也好，真是太棒了。感谢您。"
+ Veritas_building.HareRE:0 "真的吗? 如果您是指星球网络的接口……额，当然。谢谢您。"
 
  Veritas_building_add:0 "我们可以为你们提供更多的节点。"
- Veritas_building_add_ChihiroRE:0 "您愿意提供帮助的话……也好，真是太棒了。感谢您。"
- Veritas_building_add_HareRE:0 "如果您是指星球网络的接口……额，当然。谢谢您。"
+ Veritas_building_add.ChihiroRE:0 "您愿意提供帮助的话……也好，真是太棒了。感谢您。"
+ Veritas_building_add.HareRE:0 "如果您是指星球网络的接口……额，当然。谢谢您。"
 
 
 #对策委员会
- Foreclosure_task_force_opinion:0 "（§G当前好感度：[Root.Foreclosure_task_force] §!）\n\n"
+ Foreclosure_task_force_opinion:0 "（§G当前建设度：[Root.Foreclosure_task_force] §!）\n\n"
 
  Nonomi_desc1:0 "$Foreclosure_task_force_opinion$啊啦，老师~ 有什么事情吗？"
  Nonomi_desc2:0 "$Foreclosure_task_force_opinion$我们对策委员会并不研发设备，我们靠的是敏锐的眼光~"
@@ -400,16 +412,16 @@
  Foreclosure_task_force_decisions.ShirokoRE:0 "嗯，我知道了，这就去。"
 
  Foreclosure_task_force_building:0 "我们可以给你们分配管理中心。"
- Foreclosure_task_force_building_NonomiRE:0 "啊啦嘛……真的太谢谢您了。"
- Foreclosure_task_force_building_ShirokoRE:0 "可以的话，我想要离市区近一些的高处，方便我……啊，抱歉。"
+ Foreclosure_task_force_building.NonomiRE:0 "啊啦嘛……真的太谢谢您了。"
+ Foreclosure_task_force_building.ShirokoRE:0 "可以的话，我想要离市区近一些的高处，方便我……啊，抱歉。"
 
  Foreclosure_task_force_building_add:0 "管理中心不足的话，可以分配更多给你们。"
- Foreclosure_task_force_building_add_NonomiRE:0 "嘛，对大家来说是好事情呢，谢谢您。"
- Foreclosure_task_force_building_add_ShirokoRE:0 "嗯，可以当作撤退的据点使用……没什么。"
+ Foreclosure_task_force_building_add.NonomiRE:0 "嘛，对大家来说是好事情呢，谢谢您。"
+ Foreclosure_task_force_building_add.ShirokoRE:0 "嗯，可以当作撤退的据点使用……没什么。"
 
 
 #茶会
- Teaparty_opinion:0 "（§G当前好感度：[Root.Teaparty] §!）\n\n"
+ Teaparty_opinion:0 "（§G当前建设度：[Root.Teaparty] §!）\n\n"
 
  Nagisa_desc1:0 "$Teaparty_opinion$欢迎您的到访，老师。"
  Nagisa_desc2:0 "$Teaparty_opinion$茶会是一个由三个学生会合并而来的组织……因此我们更加懂得何为平衡。"
@@ -422,9 +434,9 @@
  Mika_desc3:0 "$Teaparty_opinion$我很喜欢这座太空部室，你看，我站在这里，这样……看，像不像《传说传奇编年史4》末章那一幕的公主！……嗯? 第五部的主角队是公主和勇者的儿女们…… 啊，呃，那个…… (脸红)"
 
  Teaparty_sponsor:0 "社团总部可以为你们提供赞助。"
- Teaparty_sponsor_NagisaRE:0 "多谢，虽然金钱上的帮助对我们而言意义不大，但您的诚意令我们十分感动。"
- Teaparty_sponsor_SeiaRE:0 "十分感谢……这是给联邦学生会的回礼，请务必收下。"
- Teaparty_sponsor_MikaRE:0 "不愧是您！我会珍惜的使用这些钱的。"
+ Teaparty_sponsor.NagisaRE:0 "多谢，虽然金钱上的帮助对我们而言意义不大，但您的诚意令我们十分感动。"
+ Teaparty_sponsor.SeiaRE:0 "十分感谢……这是给联邦学生会的回礼，请务必收下。"
+ Teaparty_sponsor.MikaRE:0 "不愧是您！我会珍惜的使用这些钱的。"
 
  Teaparty_support:0 "我们需要你们的行政人员。"
  Teaparty_support.tip:0 "请求茶会提供行政人员为联邦学生会支援，以此来获得或更新帝国修正，限制帝国规模。"
@@ -434,28 +446,119 @@
  Teaparty_support_capped:0 "支援已达到最大规模"
 
  Teaparty_building:0 "如果你们需要分支建筑，殖民地可以提供规划。"
- Teaparty_building_NagisaRE:0 "这样的话我们也能更好的履行我们的义务，帮大忙了。"
- Teaparty_building_SeiaRE:0 "不愧是老师，恰到好处的时机呢……"
- Teaparty_building_MikaRE:0 "真棒！这可是值得纪念的地方，该怎么布置呢……"
+ Teaparty_building.NagisaRE:0 "这样的话我们也能更好的履行我们的义务，帮大忙了。"
+ Teaparty_building.SeiaRE:0 "不愧是老师，恰到好处的时机呢……"
+ Teaparty_building.MikaRE:0 "真棒！这可是值得纪念的地方，该怎么布置呢……"
 
  Teaparty_building_add:0 "分支建筑数量是否不足？现在可以提供补充。"
- Teaparty_building_add_NagisaRE:0 "现在茶会的分支可以承担更多的职能了，感谢。"
- Teaparty_building_add_SeiaRE:0 "……于此对应的，我需要一张更大的床……"
- Teaparty_building_add_MikaRE:0 "这样可以更快的处理掉那些不听话的坏孩子了。"
+ Teaparty_building_add.NagisaRE:0 "现在茶会的分支可以承担更多的职能了，感谢。"
+ Teaparty_building_add.SeiaRE:0 "……于此对应的，我需要一张更大的床……"
+ Teaparty_building_add.MikaRE:0 "这样可以更快的处理掉那些不听话的坏孩子了。"
 
 
 #温泉开发部
- Hotspring_development_department_opinion:0 "（§G当前好感度：[Root.Hotspring_development_department] §!）\n\n"
+ Hotspring_development_department_opinion:0 "（§G当前建设度：[Root.Hotspring_development_department] §!）\n\n"
 
- Megu_desc1:0 "$Hotspring_development_department_opinion$快快快……有什么需要我们去铲平的地方吗?"
- Megu_desc2:0 "$Hotspring_development_department_opinion$嘿嘿……那些我们弄出来的温泉都变得热闹起来了呢!老师你最近有去过吗?"
- Megu_desc3:0 "$Hotspring_development_department_opinion$之前我们挖的温泉，很多地方都是几天后就枯竭了。现在我们有了勘探设备，终于不用再一个个的碰运气了!"
+ Megu_desc1:0 "$Hotspring_development_department_opinion$快快快……有什么需要我们去铲平的地方吗？"
+ Megu_desc2:0 "$Hotspring_development_department_opinion$嘿嘿……那些我们弄出来的温泉都变得热闹起来了呢!老师你最近有去过吗？"
+ Megu_desc3:0 "$Hotspring_development_department_opinion$之前我们挖的温泉，很多地方都是几天后就枯竭了。现在我们有了勘探设备，终于不用再一个个的碰运气了！"
+
+ Hotspring_development_department_research:0 "我们可以开展一些研究来提升勘探效率。"
+ Hotspring_development_department_research.tip:0 "这些研究需要准备充足的资源。完成后，开采机的开采效率会得到大幅提升，新的开采机造价也会提高。"
+ Hotspring_development_department_research.undone:0 "前一个研究项目还未完成"
+ Hotspring_development_department_research.MeguRE:0 "把这些交给统括室对吧，我知道了！"
 
  Hotspring_development_department_building:0 "你们需要营业部吗？"
- Hotspring_development_department_building_NagisaRE:0 "这样的话我们也能更好的履行我们的义务，帮大忙了。"
+ Hotspring_development_department_building.MeguRE:0 "……嗯，光是开发还不够，商业手段也是必要的？好难懂……"
 
- Hotspring_development_department_building_add:0 "？。"
- Hotspring_development_department_building_add_NagisaRE:0 "现在茶会的分支可以承担更多的职能了，感谢。"
+ Hotspring_development_department_building_add:0 "是时候运营更多的温泉了。"
+ Hotspring_development_department_building_add.MeguRE:0 "虽然搞不懂商业，但是只要享受温泉的人变多了就好！"
+
+
+#祭典运营委员会
+ Festival_operations_department_opinion:0 "（§G当前建设度：[Root.Festival_operations_department] §!）\n\n"
+
+ Shizuko_desc1:0 "$Festival_operations_department_opinion$"
+ Shizuko_desc2:0 "$Festival_operations_department_opinion$"
+ Shizuko_desc3:0 "$Festival_operations_department_opinion$"
+
+ Festival_operations_department_host:0 "开办一次庆典吧。"
+ Festival_operations_department_host.tip:0 "在殖民地上开展一次大型庆典，为所有已建立殖民地提供持续的增益。期间每个殖民地需要§Y10§!£consumer_goods£$consumer_goods$作为维护费。\n冷却时间：[Root.Festival_operations_department_cooldown]£time£天"
+ Festival_operations_department_host.cooldown:0 "现在还不能进行下一次的庆典举办。"
+ Festival_operations_department_host.ShizukoRE:0 "放~心的交给我们吧，一定让所有人都乐在其中的！"
+
+ Festival_operations_department_prolong:0 "庆典的规模可以再大一些吗？"
+ Festival_operations_department_prolong.tip:0 "支付一些资源，延长庆典增益的持续时间。这同样会使庆典举办进入冷却，并支付£consumer_goods£$consumer_goods$作为维护费。"
+ Festival_operations_department_prolong.cooldown:0 "社团部需要更多的安排才能准备好下一次扩大规模。"
+ Festival_operations_department_prolong.max:0 "祭典的计划规模已达最大"
+ Festival_operations_department_prolong.ShizukoRE:0 "如果联邦学生会承担经费的话……没问题的！\n\n(下次举办庆典时，获得的增益持续时间将延长360£time£天)"
+
+ Festival_operations_department_building:0 "需要开设其他的运营中心吗？"
+ Festival_operations_department_building.ShizukoRE:0 "这样可以让营业额更快增长了。"
+
+ Festival_operations_department_building_add:0 "如果需要更多的运营中心，请和我汇报。"
+ Festival_operations_department_building_add.ShizukoRE:0 "下一步的扩张计划已经提交了，请您过目！"
+
+
+#玄武商会
+ Xuanwu_promenade_opinion:0 "（§G当前建设度：[Root.Xuanwu_promenade] §!）\n\n"
+
+ Rumi_desc1:0 "$Xuanwu_promenade_opinion$"
+ Rumi_desc2:0 "$Xuanwu_promenade_opinion$"
+ Rumi_desc3:0 "$Xuanwu_promenade_opinion$"
+
+ Xuanwu_promenade_trade:0 "我们需要向玄武商会下一些特殊订单。"
+ Xuanwu_promenade_trade.tip:0 "提供商品的特价渠道及稀有品的特殊来源，一手交钱一手交货。\n冷却时间：360£time£天"
+ Xuanwu_promenade_trade.cooldown:0 "玄武商会正在处理渠道相关的事宜，稍后再下单。"
+ Xuanwu_promenade_trade.noflow:0 "我们没有此资源的流水，无法证明此交易合法。"
+
+ Xuanwu_promenade_trade.RumiRE.1:0 "爽快！……怎么会呢，啊哈哈，我们玄武商会是做正经生意的，欸嘿。"
+ Xuanwu_promenade_trade.RumiRE.2:0 "这可是我们废了好大力气才弄到的货，就不要嫌弃成色不好啦。"
+
+ Xuanwu_promenade_trade.title:0 "玄武商会：特殊订单"
+ Xuanwu_promenade_trade.desc:0 "$Xuanwu_promenade_opinion$有需要的货就尽管下单……即刻到货，其他的事情玄武商会来摆平。"
+ Xuanwu_promenade_trade.exit:0 "返回"
+ Xuanwu_promenade_trade.consumer_goods:0 "购买£consumer_goods£$consumer_goods$"
+ Xuanwu_promenade_trade.consumer_goods.tip:0 "消耗§Y13000§!£energy£$energy$，购买§Y5000§!£consumer_goods£$consumer_goods$"
+ Xuanwu_promenade_trade.alloys:0 "购买£alloys£$alloys$"
+ Xuanwu_promenade_trade.alloys.tip:0 "消耗§Y13000§!£energy£$energy$，购买§Y2500§!£alloys£$alloys$"
+ Xuanwu_promenade_trade.volatile_motes:0 "购买£volatile_motes£$volatile_motes$"
+ Xuanwu_promenade_trade.volatile_motes.tip:0 "消耗§Y13000§!£energy£$energy$，购买§Y1000§!£volatile_motes£$volatile_motes$"
+ Xuanwu_promenade_trade.exotic_gases:0 "购买£exotic_gases£$exotic_gases$"
+ Xuanwu_promenade_trade.exotic_gases.tip:0 "消耗§Y13000§!£energy£$energy$，购买§Y1000§!£exotic_gases£$exotic_gases$"
+ Xuanwu_promenade_trade.rare_crystals:0 "购买£rare_crystals£$rare_crystals$"
+ Xuanwu_promenade_trade.rare_crystals.tip:0 "消耗§Y13000§!£energy£$energy$，购买§Y1000§!£rare_crystals£$rare_crystals$"
+ Xuanwu_promenade_trade.sr_zro:0 "购买£zro£$sr_zro$"
+ Xuanwu_promenade_trade.sr_zro.tip:0 "消耗§Y13000§!£energy£$energy$，购买§Y500§!£zro£$sr_zro$"
+ Xuanwu_promenade_trade.nanites:0 "购买£nanites£$nanites$"
+ Xuanwu_promenade_trade.nanites.tip:0 "消耗§Y13000§!£energy£$energy$，购买§Y500§!£nanites£$nanites$"
+ Xuanwu_promenade_trade.sr_living_metal:0 "购买£sr_living_metal£$sr_living_metal$"
+ Xuanwu_promenade_trade.sr_living_metal.tip:0 "消耗§Y13000§!£energy£$energy$，购买§Y500§!£sr_living_metal£$sr_living_metal$"
+
+ Xuanwu_promenade_building:0 "现在你们可以开设分社了。"
+ Xuanwu_promenade_building.RumiRE:0 "哈哈哈，让我想想要从什么业务开始……"
+
+ Xuanwu_promenade_building_add:0 "我们可以扩大分社的规模。"
+ Xuanwu_promenade_building_add.RumiRE:0 "那么，我们可以先联系那位客户……"
+
+
+#出版部
+ Publishing_department_opinion:0 "（§G当前建设度：[Root.Publishing_department] §!）\n\n"
+
+ Takane_desc1:0 "$Publishing_department_opinion$"
+ Takane_desc2:0 "$Publishing_department_opinion$"
+ Takane_desc3:0 "$Publishing_department_opinion$"
+
+ Publishing_department_spevent:0 "我需要委托你们进行一轮加刊。"
+ Publishing_department_spevent.tip:0 "消耗一些£food£$food$获得一些£consumer_goods£$consumer_goods$，同时增加主流思潮吸引力。出版部的维护费将少量提升。"
+ Publishing_department_spevent.TakaneRE:0 "嗯，请您将策划案交给我们吧。"
+
+ Publishing_department_building:0 "现在我们可以开设其他的编辑部了。"
+ Publishing_department_building.TakaneRE:0 "我需要先设计新的logo……"
+
+ Publishing_department_building_add:0 "你们有扩大编辑部的计划吗？"
+ Publishing_department_building_add.TakaneRE:0 "根据我们的反馈数据，需要这样……"
+
 
 ###############################
  mouthly_mission:0 "接受联邦学生会的委托"

@@ -262,7 +262,7 @@ country_event = {
 	}
 }
 
-#社团好感度月度变更
+#社团建设度月度变更
 country_event = {
 	id = BA_club.0035
 	is_triggered_only = yes
@@ -575,7 +575,7 @@ country_event = {
 			set_megastructure_flag = Mega_Game_development_department_@owner
 		}
 		set_variable = {
-			which = Game_development_department			#好感度
+			which = Game_development_department			#建设度
 			value = 0
 		}
 		set_variable = {
@@ -847,7 +847,6 @@ country_event = {
 			random = 90
 			#days = 1
 		}
-
 	}
 }
 
@@ -876,7 +875,7 @@ country_event = {
 			set_name = Engineering_club
 		}
 		set_variable = {
-			which = Engineering_club			#好感度
+			which = Engineering_club			#建设度
 			value = 0
 		}
 		set_variable = {
@@ -2175,7 +2174,7 @@ country_event = {
 			set_name = Veritas
 		}
 		set_variable = {
-			which = Veritas			#好感度
+			which = Veritas			#建设度
 			value = 0
 		}
 		set_variable = {
@@ -2424,7 +2423,7 @@ country_event = {
 	}
 }
 
-######   对策委员会 Foreclosure_task_force  103   ######
+######  对策委员会 Foreclosure_task_force  13xx   ######
 ### 建部通知
 country_event = {
 	id = BA_club.1301
@@ -2448,7 +2447,7 @@ country_event = {
 			set_name = Foreclosure_task_force
 		}
 		set_variable = {
-			which = Foreclosure_task_force			#好感度
+			which = Foreclosure_task_force			#建设度
 			value = 0
 		}
 		set_variable = {
@@ -2562,7 +2561,7 @@ country_event = {
 ### 彩蛋：白子抢劫行商
 # TODO
 #
-######             茶会 Teaparty  104             ######
+######             茶会 Teaparty  14xx            ######
 ### 建部通知
 country_event = {
 	id = BA_club.1401
@@ -2586,7 +2585,7 @@ country_event = {
 			set_name = Teaparty
 		}
 		set_variable = {
-			which = Teaparty			#好感度
+			which = Teaparty			#建设度
 			value = 0
 		}
 		set_variable = {
@@ -2722,9 +2721,8 @@ country_event = {
 	}
 }
 
-
-
-###### 温泉开发部 Hotspring_development_department  105 ######
+#
+###### 温泉部 Hotspring_development_department  15xx ######
 ### 建部通知
 country_event = {
 	id = BA_club.1501
@@ -2748,11 +2746,15 @@ country_event = {
 			set_name = Hotspring_development_department
 		}
 		set_variable = {
-			which = Hotspring_development_department			#好感度
+			which = Hotspring_development_department			#建设度
 			value = 0
 		}
 		set_variable = {
 			which = Hotspring_development_department_room_limit			#部室限制
+			value = 1
+		}
+		set_variable = {
+			which = Hotspring_development_department_megastructure_produce			#产出倍率
 			value = 1
 		}
 		every_country = {
@@ -2801,10 +2803,10 @@ country_event = {
 		room = BA_06_room
 	}
 	#社团功能
-	# inline_script = {
-	# 	script = Club/Function/Hotspring_development_department
-	# 	CHARA = Megu
-	# }
+	inline_script = {
+		script = Club/Function/Hotspring_development_department
+		CHARA = Megu
+	}
 	#部室
 	inline_script = {
 		script = Club/Planet_room/Operation
@@ -2818,9 +2820,29 @@ country_event = {
 	}
 }
 
+### 项目完成
+country_event = {
+	id = BA_club.1510
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		OR = {
+			last_increased_tech = tech_BA_club_Hotspring_development_department_01
+			last_increased_tech = tech_BA_club_Hotspring_development_department_02
+			last_increased_tech = tech_BA_club_Hotspring_development_department_03
+		}
+	}
+	immediate = {
+		remove_country_flag = Hotspring_development_department_research_undone
+		change_variable = {
+			which = Hotspring_development_department_megastructure_produce
+			value = 1
+		}
+	}
+}
 
-
-###### 祭典运营委员会 Festival_operations_department  106 ######
+#
+###### 祭运委 Festival_operations_department  16xx ######
 ### 建部通知
 country_event = {
 	id = BA_club.1601
@@ -2844,12 +2866,16 @@ country_event = {
 			set_name = Festival_operations_department
 		}
 		set_variable = {
-			which = Festival_operations_department			#好感度
+			which = Festival_operations_department			#建设度
 			value = 0
 		}
 		set_variable = {
 			which = Festival_operations_department_room_limit			#部室限制
 			value = 1
+		}
+		set_variable = {
+			which = Festival_operations_department_fes_time			#节日增益持续时间
+			value = 360
 		}
 		every_country = {
 			limit = {
@@ -2883,10 +2909,39 @@ country_event = {
 }
 
 ### 主界面
+country_event = {
+	id = BA_club.1604
+	title = Festival_operations_department
+	desc = Shizuko_desc1
+	desc = Shizuko_desc2
+	desc = Shizuko_desc3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_leader_023
+		room = BA_06_room
+	}
+	#社团功能
+	inline_script = {
+		script = Club/Function/Festival_operations_department
+		CHARA = Shizuko
+	}
+	#部室
+	inline_script = {
+		script = Club/Planet_room/Operation
+		CLUB = Festival_operations_department
+		CHARA = Shizuko
+	}
+	#返回
+	option = {
+		name = BA_option_club_exit
+		default_hide_option = yes
+	}
+}
 
-
-
-######       玄武商会 Xuanwu_promenade  107        ######
+#
+######       玄武商会 Xuanwu_promenade  17xx        ######
 ### 建部通知
 country_event = {
 	id = BA_club.1701
@@ -2910,7 +2965,7 @@ country_event = {
 			set_name = Xuanwu_promenade
 		}
 		set_variable = {
-			which = Xuanwu_promenade			#好感度
+			which = Xuanwu_promenade			#建设度
 			value = 0
 		}
 		set_variable = {
@@ -2949,10 +3004,83 @@ country_event = {
 }
 
 ### 主界面
+country_event = {
+	id = BA_club.1704
+	title = Xuanwu_promenade
+	desc = Rumi_desc1
+	desc = Rumi_desc2
+	desc = Rumi_desc3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_leader_114
+		room = BA_06_room
+	}
+	#社团功能-inline在事件中使用
+	option = {
+		name = Xuanwu_promenade_trade
+		custom_tooltip = Xuanwu_promenade_trade.tip
+		allow = {
+			custom_tooltip_fail = {
+				text = Xuanwu_promenade_trade.cooldown
+				NOT = {
+					has_country_flag = Xuanwu_promenade_trade_cooldown
+				}
+			}
+		}
+		hidden_effect = {
+			set_timed_country_flag = {
+				flag = Xuanwu_promenade_trade_cooldown
+				days = 360
+			}
+		}
+	}
+	#部室
+	inline_script = {
+		script = Club/Planet_room/Operation
+		CLUB = Xuanwu_promenade
+		CHARA = Rumi
+	}
+	#返回
+	option = {
+		name = BA_option_club_exit
+		default_hide_option = yes
+	}
+}
 
+### 交易界面
+country_event = {
+	id = BA_club.1714
+	title = Xuanwu_promenade_trade.title
+	desc = Xuanwu_promenade_trade.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_leader_114
+		room = BA_06_room
+	}
+	#返回
+	option = {
+		name = Xuanwu_promenade_trade.exit
+		default_hide_option = yes
+		hidden_effect = {
+			remove_country_flag = Xuanwu_promenade_trade_cooldown
+			country_event = {
+				id = BA_club.1704
+			}
+		}
+	}
+	#菜单
+	inline_script = {
+		script = Club/Function/Xuanwu_promenade
+		CHARA = Rumi
+	}
+}
 
-
-######     出版部 Publishing_department  108      ######
+#
+######     出版部 Publishing_department  18xx      ######
 ### 建部通知
 country_event = {
 	id = BA_club.1801
@@ -2976,7 +3104,7 @@ country_event = {
 			set_name = Publishing_department
 		}
 		set_variable = {
-			which = Publishing_department			#好感度
+			which = Publishing_department			#建设度
 			value = 0
 		}
 		set_variable = {
@@ -3015,856 +3143,36 @@ country_event = {
 }
 
 ### 主界面
-
-
-
-
-#
-#######                 联邦学生会                 #######
-###  星野  ###
 country_event = {
-	id = BA_club.8001
-	title = Hoshino
-	desc = Hoshino_desc1
+	id = BA_club.1804
+	title = Publishing_department
+	desc = Takane_desc1
+	desc = Takane_desc2
+	desc = Takane_desc3
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = hoshino0000
-		room = BA_02_room
+		portrait = BA_leader_064
+		room = BA_06_room
 	}
-	#对现状的看法
-	option = {
-		name = Hoshino_about_now
-		custom_tooltip = Hoshino_about_now.tip
-		response_text = Hoshino_about_now.1
-		response_text = Hoshino_about_now.2
+	#社团功能
+	inline_script = {
+		script = Club/Function/Publishing_department
+		CHARA = Takane
 	}
-	#闲聊
-	option = {
-		name = Hoshino_chat
-		custom_tooltip = Hoshino_chat.tip
-		hidden_effect = {
-			random_list = {
-				10 = {
-					country_event = {
-						id = BA_club.8002
-					}
-				}
-				10 = {
-					country_event = {
-						id = BA_club.8003
-					}
-				}
-				0 = {
-					modifier = {
-						add = 20
-						NOT = {
-							has_country_flag = dream_of_blue_wheel_done
-						}
-					}
-					country_event = {
-						id = BA_club.8004
-					}
-				}
-				10 = {
-					country_event = {
-						id = BA_club.8005
-					}
-				}
-				10 = {
-					country_event = {
-						id = BA_club.8006
-					}
-				}
-				10 = {
-					country_event = {
-						id = BA_club.8007
-					}
-				}
-				0 = {
-					modifier = {
-						add = 20
-						has_country_flag = hoshino_daisuki
-					}
-					country_event = {
-						id = BA_club.8008
-					}
-				}
-			}
-		}
-	}
-	option = {
-		name = Hoshino_event
-		custom_tooltip = Hoshino_event.tip
-		allow = {
-			custom_tooltip = {
-				fail_text = hoshino_event_fail2
-				has_country_flag = dream_of_blue_wheel_done
-			}
-		}
-		hidden_effect = {
-			# country_event = {
-			# 	id = BA_The_legacy_of_the_dream.0010
-			# }
-		}
-	}
-	#TODO 这个我不会写 交给你了N佬 要实现的内容我放在txt里了 一定要记得写哟~ by一只小五
-	option = {
-		name = mouthly_mission
-		custom_tooltip = Hoshino_mission.tip
-		response_text = Hoshino_mission_re.1
-		hidden_effect = {
-		}
+	#部室
+	inline_script = {
+		script = Club/Planet_room/Operation
+		CLUB = Publishing_department
+		CHARA = Takane
 	}
 	#返回
 	option = {
-		name = BA_Hoshino_exit
+		name = BA_option_club_exit
 		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.0051
-			}
-		}
 	}
 }
-
-country_event = {
-	id = BA_club.8002
-	title = Hoshino
-	desc = Hoshino_chat.1
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = hoshino0002
-		room = BA_02_room
-	}
-	option = {
-		name = Hoshino_chat.1.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8001
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_club.8003
-	title = Hoshino
-	desc = Hoshino_chat.2
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = hoshino0010
-		room = BA_02_room
-	}
-	option = {
-		name = Hoshino_chat.2.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8001
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_club.8004
-	title = Hoshino
-	desc = Hoshino_chat.3
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = hoshino0015
-		room = BA_02_room
-	}
-	option = {
-		name = Hoshino_chat.3.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8001
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_club.8005
-	title = Hoshino
-	desc = Hoshino_chat.4
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = hoshino0010
-		room = BA_02_room
-	}
-	option = {
-		name = Hoshino_chat.4.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8001
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_club.8006
-	title = Hoshino
-	desc = Hoshino_chat.5
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = hoshino0010
-		room = BA_02_room
-	}
-	option = {
-		name = Hoshino_chat.5.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8001
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_club.8007
-	title = Hoshino
-	desc = Hoshino_chat.6
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = hoshino0010
-		room = BA_02_room
-	}
-	option = {
-		name = Hoshino_chat.6.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8001
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_club.8008
-	title = Hoshino
-	desc = Hoshino_chat.7
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = hoshino0001
-		room = BA_02_room
-	}
-	option = {
-		name = Hoshino_chat.7.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8009
-			}
-		}
-	}
-	option = {
-		name = Hoshino_chat.7.b
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8009
-			}
-		}
-	}
-	option = {
-		name = Hoshino_chat.7.c
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8010
-			}
-		}
-	}
-	option = {
-		name = Hoshino_chat.7.d
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8011
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_club.8009
-	title = Hoshino
-	desc = Hoshino_chat.8
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = hoshino0003
-		room = BA_02_room
-	}
-	option = {
-		name = Hoshino_chat.8.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8001
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_club.8010
-	title = Hoshino
-	desc = Hoshino_chat.9
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = hoshino0012
-		room = BA_02_room
-	}
-	option = {
-		name = Hoshino_chat.9.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8001
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_club.8011
-	title = Hoshino
-	desc = Hoshino_chat.10
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = hoshino0008
-		room = BA_02_room
-	}
-	option = {
-		name = Hoshino_chat.10.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8001
-			}
-		}
-	}
-}
-
-###  日奈  ###
-country_event = {
-	id = BA_club.8101
-	title = Hina
-	desc = Hina_desc1
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		#portrait = hina0000
-		portrait = BA_Hina
-		room = BA_02_room
-	}
-	#对现状的看法
-	option = {
-		name = Hina_about_now
-		custom_tooltip = Hina_about_now.tip
-		response_text = Hina_about_now.1
-		response_text = Hina_about_now.2
-	}
-	#闲聊
-	option = {
-		name = Hina_chat
-		custom_tooltip = Hina_chat.tip
-		hidden_effect = {
-			random_list = {
-				10 = {
-					country_event = {
-						id = BA_club.8102
-					}
-				}
-				10 = {
-					country_event = {
-						id = BA_club.8103
-					}
-				}
-				10 = {
-					country_event = {
-						id = BA_club.8104
-					}
-				}
-				10 = {
-					country_event = {
-						id = BA_club.8105
-					}
-				}
-			}
-		}
-	}
-	#TODO 这个我不会写 交给你了N佬 要实现的内容我放在txt里了 一定要记得写哟~ by一只小五
-	option = {
-		name = mouthly_mission
-		custom_tooltip = Hina_mission.tip
-		response_text = Hina_mission_re.1
-		hidden_effect = {
-		}
-	}
-	#返回
-	option = {
-		name = BA_Hina_exit
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.0051
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_club.8102
-	title = Hina
-	desc = Hina_chat.1
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		#portrait = hina0002
-		portrait = BA_Hina
-		room = BA_02_room
-	}
-	option = {
-		name = Hina_chat.1.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8101
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_club.8103
-	title = Hina
-	desc = Hina_chat.2
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		#portrait = hina0002
-		portrait = BA_Hina
-		room = BA_02_room
-	}
-	option = {
-		name = Hina_chat.2.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8101
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_club.8104
-	title = Hina
-	desc = Hina_chat.3
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		#portrait = hina0002
-		portrait = BA_Hina
-		room = BA_02_room
-	}
-	option = {
-		name = Hina_chat.3.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8101
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_club.8105
-	title = Hina
-	desc = Hina_chat.4
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		#portrait = hina0002
-		portrait = BA_Hina
-		room = BA_02_room
-	}
-	option = {
-		name = Hina_chat.4.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8101
-			}
-		}
-	}
-}
-
-###  未花  ###
-country_event = {
-	id = BA_club.8201
-	title = Mika
-	desc = Mika_desc
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		#portrait = mika0000
-		portrait = BA_Mika
-		room = BA_02_room
-	}
-	#对现状的看法
-	option = {
-		name = Mika_about_now
-		custom_tooltip = Mika_about_now.tip
-		response_text = Mika_about_now.1
-		response_text = Mika_about_now.2
-		response_text = Mika_about_now.3
-		response_text = Mika_about_now.4
-		response_text = Mika_about_now.5
-		response_text = Mika_about_now.6
-	}
-	#闲聊
-	option = {
-		name = Mika_chat
-		custom_tooltip = Mika_chat.tip
-		hidden_effect = {
-			random_list = {
-				10 = {
-					country_event = {
-						id = BA_club.8202
-					}
-				}
-				10 = {
-					country_event = {
-						id = BA_club.8203
-					}
-				}
-				10 = {
-					country_event = {
-						id = BA_club.8204
-					}
-				}
-				10 = {
-					country_event = {
-						id = BA_club.8205
-					}
-				}
-			}
-		}
-	}
-	##TODO mika的作者没有给出学生会的委托 要不N佬你帮他想一想
-	#option = {
-	#	name = mouthly_mission
-	#	custom_tooltip = Mika_mission.tip
-	#	response_text = Mika_mission_re.1
-	#	hidden_effect = {
-	#
-	#	}
-	#}
-	#返回
-	option = {
-		name = BA_Mika_exit
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.0051
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_club.8202
-	title = Hina
-	desc = Hina_chat.1
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		#portrait = hina0002
-		portrait = BA_Hina
-		room = BA_02_room
-	}
-	option = {
-		name = Hina_chat.1.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8201
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_club.8203
-	title = Hina
-	desc = Hina_chat.2
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		#portrait = hina0002
-		portrait = BA_Hina
-		room = BA_02_room
-	}
-	option = {
-		name = Hina_chat.2.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8201
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_club.8204
-	title = Hina
-	desc = Hina_chat.3
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		#portrait = hina0002
-		portrait = BA_Hina
-		room = BA_02_room
-	}
-	option = {
-		name = Hina_chat.3.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8201
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_club.8205
-	title = Hina
-	desc = Hina_chat.4
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		#portrait = hina0002
-		portrait = BA_Hina
-		room = BA_02_room
-	}
-	option = {
-		name = Hina_chat.4.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8201
-			}
-		}
-	}
-}
-
-###  优香  ###
-country_event = {
-	id = BA_club.8301
-	title = Yuuka
-	desc = Yuuka_desc1
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		#portrait = yuuka0000
-		portrait = BA_Yuuka
-		room = BA_02_room
-	}
-	#对现状的看法
-	option = {
-		name = Yuuka_about_now
-		custom_tooltip = Yuuka_about_now.tip
-		response_text = Yuuka_about_now.1
-		response_text = Yuuka_about_now.2
-	}
-	#闲聊
-	option = {
-		name = Yuuka_chat
-		custom_tooltip = Yuuka_chat.tip
-		hidden_effect = {
-			random_list = {
-				10 = {
-					country_event = {
-						id = BA_club.8302
-					}
-				}
-				10 = {
-					country_event = {
-						id = BA_club.8303
-					}
-				}
-				10 = {
-					country_event = {
-						id = BA_club.8304
-					}
-				}
-				10 = {
-					country_event = {
-						id = BA_club.8305
-					}
-				}
-			}
-		}
-	}
-	##TODO 这个我不会写 交给你了N佬 要实现的内容我放在txt里了 一定要记得写哟~ by一只小五
-	#option = {
-	#	name = mouthly_mission
-	#	custom_tooltip = Yuuka_mission.tip
-	#	response_text = Yuuka_mission_re.1
-	#	hidden_effect = {
-	#
-	#	}
-	#}
-	#返回
-	option = {
-		name = BA_Yuuka_exit
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.0051
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_club.8302
-	title = Yuuka
-	desc = Yuuka_chat.1
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		#portrait = yuuka0000
-		portrait = BA_Yuuka
-		room = BA_02_room
-	}
-	option = {
-		name = Yuuka_chat.1.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8301
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_club.8303
-	title = Yuuka
-	desc = Yuuka_chat.2
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		#portrait = yuuka0000
-		portrait = BA_Yuuka
-		room = BA_02_room
-	}
-	option = {
-		name = Yuuka_chat.2.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8301
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_club.8304
-	title = Yuuka
-	desc = Yuuka_chat.3
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		#portrait = yuuka0000
-		portrait = BA_Yuuka
-		room = BA_02_room
-	}
-	option = {
-		name = Yuuka_chat.3.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8301
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_club.8305
-	title = Yuuka
-	desc = Yuuka_chat.4
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		#portrait = yuuka0000
-		portrait = BA_Yuuka
-		room = BA_02_room
-	}
-	option = {
-		name = Yuuka_chat.4.a
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_club.8301
-			}
-		}
-	}
-}
-
 
 #存储用事件
 country_event = {
@@ -3873,176 +3181,35 @@ country_event = {
 	hide_window = yes
 	immediate = {
 		#
-		set_timed_country_flag = {
-			flag = BA_club_Game_development_department_sponsoring
-			days = 720
-		}
-		set_timed_country_flag = {
-			flag = BA_club_Engineering_club_sponsoring
-			days = 720
-		}
-		set_timed_country_flag = {
-			flag = BA_club_Veritas_sponsoring
-			days = 720
-		}
-		set_timed_country_flag = {
-			flag = BA_club_Foreclosure_task_force_sponsoring
-			days = 720
-		}
-		set_timed_country_flag = {
-			flag = BA_club_Teaparty_sponsoring
-			days = 720
-		}
+		# set_timed_country_flag = {
+		# 	flag = BA_club_Game_development_department_sponsoring
+		# 	days = 720
+		# }
+		# set_timed_country_flag = {
+		# 	flag = BA_club_Engineering_club_sponsoring
+		# 	days = 720
+		# }
+		# set_timed_country_flag = {
+		# 	flag = BA_club_Veritas_sponsoring
+		# 	days = 720
+		# }
+		# set_timed_country_flag = {
+		# 	flag = BA_club_Foreclosure_task_force_sponsoring
+		# 	days = 720
+		# }
+		# set_timed_country_flag = {
+		# 	flag = BA_club_Teaparty_sponsoring
+		# 	days = 720
+		# }
 		#
 		set_country_flag = allow_Game_development_department
 		set_country_flag = allow_Engineering_club
 		set_country_flag = allow_Veritas
 		set_country_flag = allow_Foreclosure_task_force
 		set_country_flag = allow_Teaparty
+		set_country_flag = allow_Hotspring_development_department
+		set_country_flag = allow_Festival_operations_department
+		set_country_flag = allow_Xuanwu_promenade
+		set_country_flag = allow_Publishing_department
 	}
 }
-
-### 备份-游戏制作过程
-#country_event = {
-#	id = BA_club.1023
-#	is_triggered_only = yes
-#	hide_window = yes
-#	trigger = {
-#		has_country_flag = Game_development_department_working
-#	}
-#	immediate = {
-#		#时间+1
-#		change_variable = {
-#			which = Game_development_department_time_used
-#			value = 1
-#		}
-#		#如果有赞助，完成度+1
-#		if = {
-#			limit = {
-#				has_country_flag = BA_club_Game_development_department_sponsoring
-#			}
-#			change_variable = {
-#				which = Game_development_department_score
-#				value = 1
-#			}
-#		}
-#		random_list = {
-#			25 = {
-#				change_variable = {
-#					which = Game_development_department_score
-#					value = 1
-#				}
-#			}
-#			50 = {
-#				change_variable = {
-#					which = Game_development_department_score
-#					value = 2
-#				}
-#			}
-#			25 = {
-#				change_variable = {
-#					which = Game_development_department_score
-#					value = 3
-#				}
-#			}
-#		}
-#		random_list = {
-#			18 = {
-#				country_event = {
-#					id = BA_club.1023
-#					days = 30
-#				}
-#			}
-#			1 = {
-#				modifier = {
-#					factor = Game_development_department_time_used
-#				}
-#				modifier = {
-#					set = 0
-#					check_variable = {
-#						which = Game_development_department_time_used
-#						value < 12
-#					}
-#				}
-#				modifier = {
-#					set = 2048
-#					check_variable = {
-#						which = Game_development_department_time_used
-#						value >= 36
-#					}
-#				}
-#				modifier = {
-#					factor = 0.6
-#					has_country_flag = BA_club_Game_development_department_sponsoring
-#				}
-#				country_event = {
-#					id = BA_club.1024
-#				}
-#			}
-#		}
-#	}
-#}
-#
-#country_event = {
-#	id = BA_club.1024
-#	is_triggered_only = yes
-#	hide_window = yes
-#	trigger = {
-#		NOT = {
-#			has_country_flag = Game_development_department_busy
-#		}
-#	}
-#	immediate = {
-#		remove_country_flag = Game_development_department_working
-#		set_timed_country_flag = {
-#			flag = Game_development_department_busy
-#			days = 720
-#		}
-#		if = {
-#			limit = {
-#				has_country_flag = Game_development_department_in_series
-#			}
-#			country_event = {
-#				id = BA_club.1029
-#			}
-#		}
-#		if = {
-#			limit = {
-#				check_variable = {
-#					which = Game_development_department_score
-#					value < 36
-#				}
-#			}
-#			country_event = {
-#				id = BA_club.1025
-#			}
-#		}
-#		else_if = {
-#			limit = {
-#				check_variable = {
-#					which = Game_development_department_score
-#					value < 45
-#				}
-#			}
-#			country_event = {
-#				id = BA_club.1026
-#			}
-#		}
-#		else_if = {
-#			limit = {
-#				check_variable = {
-#					which = Game_development_department_score
-#					value < 60
-#				}
-#			}
-#			country_event = {
-#				id = BA_club.1027
-#			}
-#		}
-#		else = {
-#			country_event = {
-#				id = BA_club.1028
-#			}
-#		}
-#	}
-#}

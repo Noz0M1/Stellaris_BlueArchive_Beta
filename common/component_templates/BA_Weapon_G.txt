@@ -1,321 +1,364 @@
-
 weapon_component_template = {
-    key = "BA_SG_1_g"
-    size = torpedo
-    type = instant
-    icon = "GFX_Juri_Weapon"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    upgrades_to = "BA_SG_2_g"
-    component_set = "BA_SG_1"
-    projectile_gfx = "gamma_laser_s"
-    tags = {
-        weapon_type_kinetic
-        weapon_type_Kivotos
-        g_slot
-    }
-    ai_tags = {
-        explosive
-        explosive_stealth
-        weapon_role_anti_hull
-        weapon_role_anti_shield
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 20
-        }
-        upkeep = {
-            energy = 0.22
-            alloys = 0.02
-        }
-    }
-    power = -25
-    damage = { min = 50 max = 200 }
-    windup = { min = 12 max = 16 }
-    total_fire_time = 30
-    hull_damage = 1.2
-    shield_damage = 1.5
-    shield_penetration = 1
-    armor_damage = 0.8
-    armor_penetration = 0.2
-    min_range = 0
-    range = 30
-    accuracy = 1
-    tracking = 0.6
-    size_damage_factor = 1
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_SG_1_g"
+	size = torpedo
+	type = instant
+	icon = "GFX_Juri_Weapon"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Standard_SG_1"
+	}
+	upgrades_to = "BA_SG_2_g"
+	component_set = "BA_SG_1"
+	projectile_gfx = "gamma_laser_s"
+	tags = {
+		weapon_type_kinetic
+		weapon_type_Kivotos
+		g_slot
+	}
+	ai_tags = {
+		explosive
+		explosive_stealth
+		weapon_role_anti_hull
+		weapon_role_anti_shield
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.02
+		}
+	}
+	power = -25
+	damage = {
+		min = 50
+		max = 200
+	}
+	windup = {
+		min = 12
+		max = 16
+	}
+	total_fire_time = 30
+	hull_damage = 1.2
+	shield_damage = 1.5
+	shield_penetration = 1
+	armor_damage = 0.8
+	armor_penetration = 0.2
+	min_range = 0
+	range = 30
+	accuracy = 1
+	tracking = 0.6
+	size_damage_factor = 1
+	ai_weight = {
+		weight = 1
+	}
 }
 
 weapon_component_template = {
-    key = "BA_SG_2_g"
-    size = torpedo
-    type = instant
-    icon = "GFX_Juri_Weapon"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    upgrades_to = "BA_SG_3_g"
-    component_set = "BA_SG_2"
-    projectile_gfx = "gamma_laser_s"
-    tags = {
-        weapon_type_kinetic
-        weapon_type_Kivotos
-        g_slot
-    }
-    ai_tags = {
-        explosive
-        explosive_stealth
-        weapon_role_anti_hull
-        weapon_role_anti_shield
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 20
-        }
-        upkeep = {
-            energy = 0.22
-            alloys = 0.02
-        }
-    }
-    power = -50
-    damage = { min = 70 max = 300 }
-    windup = { min = 12 max = 16 }
-    total_fire_time = 30
-    hull_damage = 1.2
-    shield_damage = 1.5
-    shield_penetration = 1
-    armor_damage = 0.8
-    armor_penetration = 0.2
-    min_range = 0
-    range = 30
-    accuracy = 1
-    tracking = 0.6
-    size_damage_factor = 1
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_SG_2_g"
+	size = torpedo
+	type = instant
+	icon = "GFX_Juri_Weapon"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Standard_SG_2"
+	}
+	upgrades_to = "BA_SG_3_g"
+	component_set = "BA_SG_2"
+	projectile_gfx = "gamma_laser_s"
+	tags = {
+		weapon_type_kinetic
+		weapon_type_Kivotos
+		g_slot
+	}
+	ai_tags = {
+		explosive
+		explosive_stealth
+		weapon_role_anti_hull
+		weapon_role_anti_shield
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.02
+		}
+	}
+	power = -50
+	damage = {
+		min = 70
+		max = 300
+	}
+	windup = {
+		min = 12
+		max = 16
+	}
+	total_fire_time = 30
+	hull_damage = 1.2
+	shield_damage = 1.5
+	shield_penetration = 1
+	armor_damage = 0.8
+	armor_penetration = 0.2
+	min_range = 0
+	range = 30
+	accuracy = 1
+	tracking = 0.6
+	size_damage_factor = 1
+	ai_weight = {
+		weight = 1
+	}
 }
 
 weapon_component_template = {
-    key = "BA_SG_3_g"
-    size = torpedo
-    type = instant
-    icon = "GFX_Hoshino_Weapon"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    component_set = "BA_SG_3"
-    projectile_gfx = "gamma_laser_s"
-    tags = {
-        weapon_type_kinetic
-        weapon_type_Kivotos
-        g_slot
-    }
-    ai_tags = {
-        explosive
-        explosive_stealth
-        weapon_role_anti_hull
-        weapon_role_anti_shield
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 20
-        }
-        upkeep = {
-            energy = 0.22
-            alloys = 0.02
-        }
-    }
-    power = -80
-    damage = { min = 120 max = 560 }
-    windup = { min = 12 max = 16 }
-    total_fire_time = 30
-    hull_damage = 1.2
-    shield_damage = 1.5
-    shield_penetration = 1
-    armor_damage = 0.8
-    armor_penetration = 0.2
-    min_range = 0
-    range = 30
-    accuracy = 1
-    tracking = 0.6
-    size_damage_factor = 1
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_SG_3_g"
+	size = torpedo
+	type = instant
+	icon = "GFX_Hoshino_Weapon"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Standard_SG_3"
+	}
+	component_set = "BA_SG_3"
+	projectile_gfx = "gamma_laser_s"
+	tags = {
+		weapon_type_kinetic
+		weapon_type_Kivotos
+		g_slot
+	}
+	ai_tags = {
+		explosive
+		explosive_stealth
+		weapon_role_anti_hull
+		weapon_role_anti_shield
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.02
+		}
+	}
+	power = -80
+	damage = {
+		min = 120
+		max = 560
+	}
+	windup = {
+		min = 12
+		max = 16
+	}
+	total_fire_time = 30
+	hull_damage = 1.2
+	shield_damage = 1.5
+	shield_penetration = 1
+	armor_damage = 0.8
+	armor_penetration = 0.2
+	min_range = 0
+	range = 30
+	accuracy = 1
+	tracking = 0.6
+	size_damage_factor = 1
+	ai_weight = {
+		weight = 1
+	}
 }
 
 weapon_component_template = {
-    key = "BA_Megumine_g"
-    size = torpedo
-    type = instant
-    icon = "GFX_Megu_Weapon"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    component_set = "BA_Megumin_G"
-    projectile_gfx = "gamma_laser_s"
-    tags = {
-        weapon_type_energy
-        weapon_type_explosive
-        weapon_type_Kivotos
-        g_slot
-    }
-    ai_tags = {
-        explosive
-        explosive_stealth
-        weapon_role_anti_armor
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 20
-        }
-        upkeep = {
-            energy = 0.22
-            alloys = 0.02
-        }
-    }
-    power = -160
-    damage = { min = 120 max = 160 }
-    windup = { min = 0 max = 0 }
-    total_fire_time = 10
-    hull_damage = 2
-    shield_damage = 1
-    shield_penetration = 0.5
-    armor_damage = 2
-    armor_penetration = 0
-    min_range = 0
-    range = 30
-    accuracy = 0.6
-    tracking = 0.8
-    size_damage_factor = 2
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_Megumine_g"
+	size = torpedo
+	type = instant
+	icon = "GFX_Megu_Weapon"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Selected_Megumine"
+	}
+	component_set = "BA_Megumin_G"
+	projectile_gfx = "gamma_laser_s"
+	tags = {
+		weapon_type_energy
+		weapon_type_explosive
+		weapon_type_Kivotos
+		g_slot
+	}
+	ai_tags = {
+		explosive
+		explosive_stealth
+		weapon_role_anti_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.02
+		}
+	}
+	power = -160
+	damage = {
+		min = 120
+		max = 160
+	}
+	windup = {
+		min = 0
+		max = 0
+	}
+	total_fire_time = 10
+	hull_damage = 2
+	shield_damage = 1
+	shield_penetration = 0.5
+	armor_damage = 2
+	armor_penetration = 0
+	min_range = 0
+	range = 30
+	accuracy = 0.6
+	tracking = 0.8
+	size_damage_factor = 2
+	ai_weight = {
+		weight = 1
+	}
 }
 
 weapon_component_template = {
-    key = "BA_GL_1_g"
-    size = torpedo
-    type = instant
-    icon = "GFX_Grenadiers_575"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    upgrades_to = "BA_GL_2_g"
-    component_set = "BA_GL_1"
-    projectile_gfx = "gamma_laser_s"
-    tags = {
-        weapon_type_explosive
-        weapon_type_Kivotos
-        g_slot
-    }
-    ai_tags = {
-        weapon_role_artillery
-        artillery
-        artillery_stealth
-        energy_torpedoes
-        energy_torpedoes_stealth
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 20
-        }
-        upkeep = {
-            energy = 0.22
-            alloys = 0.02
-        }
-    }
-    power = -50
-    damage = { min = 100 max = 200 }
-    windup = { min = 10 max = 20 }
-    total_fire_time = 30
-    hull_damage = 1
-    shield_damage = 1
-    shield_penetration = 1
-    armor_damage = 1.5
-    armor_penetration = 0.2
-    min_range = 0
-    range = 100
-    accuracy = 1
-    tracking = 0.6
-
-    missile_speed = 20
-    missile_evasion = 0.5
-    missile_shield = 4
-    missile_armor = 12
-    missile_health = 12
-    missile_retarget_range = 100
-
-    size_damage_factor = 0.2
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_GL_1_g"
+	size = torpedo
+	type = instant
+	icon = "GFX_Grenadiers_575"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Standard_GL_1"
+	}
+	upgrades_to = "BA_GL_2_g"
+	component_set = "BA_GL_1"
+	projectile_gfx = "gamma_laser_s"
+	tags = {
+		weapon_type_explosive
+		weapon_type_Kivotos
+		g_slot
+	}
+	ai_tags = {
+		weapon_role_artillery
+		artillery
+		artillery_stealth
+		energy_torpedoes
+		energy_torpedoes_stealth
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.02
+		}
+	}
+	power = -50
+	damage = {
+		min = 100
+		max = 200
+	}
+	windup = {
+		min = 10
+		max = 20
+	}
+	total_fire_time = 30
+	hull_damage = 1
+	shield_damage = 1
+	shield_penetration = 1
+	armor_damage = 1.5
+	armor_penetration = 0.2
+	min_range = 0
+	range = 100
+	accuracy = 1
+	tracking = 0.6
+	missile_speed = 20
+	missile_evasion = 0.5
+	missile_shield = 4
+	missile_armor = 12
+	missile_health = 12
+	missile_retarget_range = 100
+	size_damage_factor = 0.2
+	ai_weight = {
+		weight = 1
+	}
 }
 
 weapon_component_template = {
-    key = "BA_GL_2_g"
-    size = torpedo
-    type = instant
-    icon = "GFX_Fantacy_colors_SP"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    component_set = "BA_GL_2"
-    projectile_gfx = "gamma_laser_s"
-    tags = {
-        weapon_type_explosive
-        weapon_type_Kivotos
-        g_slot
-    }
-    ai_tags = {
-        weapon_role_artillery
-        artillery
-        artillery_stealth
-        energy_torpedoes
-        energy_torpedoes_stealth
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 20
-        }
-        upkeep = {
-            energy = 0.22
-            alloys = 0.02
-        }
-    }
-    power = -100
-    damage = { min = 300 max = 600 }
-    windup = { min = 10 max = 20 }
-    total_fire_time = 30
-    hull_damage = 1
-    shield_damage = 1
-    shield_penetration = 1
-    armor_damage = 1.5
-    armor_penetration = 0.2
-    min_range = 0
-    range = 120
-    accuracy = 1
-    tracking = 0.6
-
-    missile_speed = 30
-    missile_evasion = 0.7
-    missile_shield = 10
-    missile_armor = 20
-    missile_health = 20
-    missile_retarget_range = 120
-
-    size_damage_factor = 0.3
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_GL_2_g"
+	size = torpedo
+	type = instant
+	icon = "GFX_Fantacy_colors_SP"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Standard_GL_2"
+	}
+	component_set = "BA_GL_2"
+	projectile_gfx = "gamma_laser_s"
+	tags = {
+		weapon_type_explosive
+		weapon_type_Kivotos
+		g_slot
+	}
+	ai_tags = {
+		weapon_role_artillery
+		artillery
+		artillery_stealth
+		energy_torpedoes
+		energy_torpedoes_stealth
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.02
+		}
+	}
+	power = -100
+	damage = {
+		min = 300
+		max = 600
+	}
+	windup = {
+		min = 10
+		max = 20
+	}
+	total_fire_time = 30
+	hull_damage = 1
+	shield_damage = 1
+	shield_penetration = 1
+	armor_damage = 1.5
+	armor_penetration = 0.2
+	min_range = 0
+	range = 120
+	accuracy = 1
+	tracking = 0.6
+	missile_speed = 30
+	missile_evasion = 0.7
+	missile_shield = 10
+	missile_armor = 20
+	missile_health = 20
+	missile_retarget_range = 120
+	size_damage_factor = 0.3
+	ai_weight = {
+		weight = 1
+	}
 }

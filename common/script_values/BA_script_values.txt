@@ -182,6 +182,26 @@ num_BA_club_empire_size_modifier_effect = {
 	add = 1
 }
 
+#出版部
+num_BA_club_publish_value = {
+	complex_trigger_modifier = {
+		trigger = count_owned_pop
+		parameters = {
+			limit = {
+				is_sapient = yes
+			}
+		}
+		mode = add
+	}
+}
+
+num_BA_club_publish_time = {
+	base = 360
+	multiply = Publishing_department
+	divide = 10
+	min = 360
+}
+
 ########   学园理念
 num_BA_SI_available = {
 	add = BA_SI_cost
