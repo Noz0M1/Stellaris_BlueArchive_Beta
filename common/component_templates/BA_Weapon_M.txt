@@ -1,402 +1,465 @@
-
 weapon_component_template = {
-    key = "BA_SG_1_m"
-    size = medium
-    type = instant
-    icon = "GFX_Juri_Weapon"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    upgrades_to = "BA_SG_2_m"
-    component_set = "BA_SG_1"
-    projectile_gfx = "stormfire_auto_cannons_m"
-    tags = {
-        weapon_type_kinetic
-        weapon_type_Kivotos
-        m_slot
-    }
-    ai_tags = {
-        explosive
-        explosive_stealth
-        weapon_role_anti_hull
-        weapon_role_anti_shield
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 60
-        }
-        upkeep = {
-            energy = 0.6
-            alloys = 0.06
-        }
-    }
-    power = -25
-    damage = { min = 50 max = 200 }
-    windup = { min = 12 max = 16 }
-    total_fire_time = 30
-    hull_damage = 1.2
-    shield_damage = 1.3
-    shield_penetration = 1
-    armor_damage = 0.8
-    armor_penetration = 0.2
-    min_range = 0
-    range = 40
-    accuracy = 1
-    tracking = 0.5
-    size_damage_factor = 0.4
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_SG_1_m"
+	size = medium
+	type = instant
+	icon = "GFX_Juri_Weapon"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Standard_SG_1"
+	}
+	upgrades_to = "BA_SG_2_m"
+	component_set = "BA_SG_1"
+	projectile_gfx = "stormfire_auto_cannons_m"
+	tags = {
+		weapon_type_kinetic
+		weapon_type_Kivotos
+		m_slot
+	}
+	ai_tags = {
+		explosive
+		explosive_stealth
+		weapon_role_anti_hull
+		weapon_role_anti_shield
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+		}
+		upkeep = {
+			energy = 0.6
+			alloys = 0.06
+		}
+	}
+	power = -25
+	damage = {
+		min = 50
+		max = 200
+	}
+	windup = {
+		min = 12
+		max = 16
+	}
+	total_fire_time = 30
+	hull_damage = 1.2
+	shield_damage = 1.3
+	shield_penetration = 1
+	armor_damage = 0.8
+	armor_penetration = 0.2
+	min_range = 0
+	range = 40
+	accuracy = 1
+	tracking = 0.5
+	size_damage_factor = 0.4
+	ai_weight = {
+		weight = 1
+	}
 }
 
 weapon_component_template = {
-    key = "BA_SG_2_m"
-    size = medium
-    type = instant
-    icon = "GFX_Juri_Weapon"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    upgrades_to = "BA_SG_3_m"
-    component_set = "BA_SG_2"
-    projectile_gfx = "stormfire_auto_cannons_m"
-    tags = {
-        weapon_type_kinetic
-        weapon_type_Kivotos
-        m_slot
-    }
-    ai_tags = {
-        explosive
-        explosive_stealth
-        weapon_role_anti_hull
-        weapon_role_anti_shield
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 72
-            volatile_motes = 0.6
-            sr_pyroxenes = 2
-        }
-        upkeep = {
-            energy = 0.72
-            alloys = 0.072
-        }
-    }
-    power = -50
-    damage = { min = 70 max = 300 }
-    windup = { min = 12 max = 16 }
-    total_fire_time = 30
-    hull_damage = 1.2
-    shield_damage = 1.3
-    shield_penetration = 1
-    armor_damage = 0.8
-    armor_penetration = 0.2
-    min_range = 0
-    range = 40
-    accuracy = 1
-    tracking = 0.5
-    size_damage_factor = 0.4
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_SG_2_m"
+	size = medium
+	type = instant
+	icon = "GFX_Juri_Weapon"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Standard_SG_2"
+	}
+	upgrades_to = "BA_SG_3_m"
+	component_set = "BA_SG_2"
+	projectile_gfx = "stormfire_auto_cannons_m"
+	tags = {
+		weapon_type_kinetic
+		weapon_type_Kivotos
+		m_slot
+	}
+	ai_tags = {
+		explosive
+		explosive_stealth
+		weapon_role_anti_hull
+		weapon_role_anti_shield
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 72
+			volatile_motes = 0.6
+			sr_pyroxenes = 2
+		}
+		upkeep = {
+			energy = 0.72
+			alloys = 0.072
+		}
+	}
+	power = -50
+	damage = {
+		min = 70
+		max = 300
+	}
+	windup = {
+		min = 12
+		max = 16
+	}
+	total_fire_time = 30
+	hull_damage = 1.2
+	shield_damage = 1.3
+	shield_penetration = 1
+	armor_damage = 0.8
+	armor_penetration = 0.2
+	min_range = 0
+	range = 40
+	accuracy = 1
+	tracking = 0.5
+	size_damage_factor = 0.4
+	ai_weight = {
+		weight = 1
+	}
 }
 
 weapon_component_template = {
-    key = "BA_SG_3_m"
-    size = medium
-    type = instant
-    icon = "GFX_Hoshino_Weapon"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    component_set = "BA_SG_3"
-    projectile_gfx = "stormfire_auto_cannons_m"
-    tags = {
-        weapon_type_kinetic
-        weapon_type_Kivotos
-        m_slot
-    }
-    ai_tags = {
-        explosive
-        explosive_stealth
-        weapon_role_anti_hull
-        weapon_role_anti_shield
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 96
-            volatile_motes = 1
-            sr_keystone = 8
-        }
-        upkeep = {
-            energy = 0.96
-            alloys = 0.096
-        }
-    }
-    power = -80
-    damage = { min = 120 max = 560 }
-    windup = { min = 12 max = 16 }
-    total_fire_time = 30
-    hull_damage = 1.2
-    shield_damage = 1.3
-    shield_penetration = 1
-    armor_damage = 0.8
-    armor_penetration = 0.2
-    min_range = 0
-    range = 40
-    accuracy = 1
-    tracking = 0.5
-    size_damage_factor = 0.4
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_SG_3_m"
+	size = medium
+	type = instant
+	icon = "GFX_Hoshino_Weapon"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Standard_SG_3"
+	}
+	component_set = "BA_SG_3"
+	projectile_gfx = "stormfire_auto_cannons_m"
+	tags = {
+		weapon_type_kinetic
+		weapon_type_Kivotos
+		m_slot
+	}
+	ai_tags = {
+		explosive
+		explosive_stealth
+		weapon_role_anti_hull
+		weapon_role_anti_shield
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 96
+			volatile_motes = 1
+			sr_keystone = 8
+		}
+		upkeep = {
+			energy = 0.96
+			alloys = 0.096
+		}
+	}
+	power = -80
+	damage = {
+		min = 120
+		max = 560
+	}
+	windup = {
+		min = 12
+		max = 16
+	}
+	total_fire_time = 30
+	hull_damage = 1.2
+	shield_damage = 1.3
+	shield_penetration = 1
+	armor_damage = 0.8
+	armor_penetration = 0.2
+	min_range = 0
+	range = 40
+	accuracy = 1
+	tracking = 0.5
+	size_damage_factor = 0.4
+	ai_weight = {
+		weight = 1
+	}
 }
 
 weapon_component_template = {
-    key = "BA_SMG_1_m"
-    size = medium
-    type = instant
-    icon = "GFX_Airi_Weapon"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    upgrades_to = "BA_SMG_2_m"
-    component_set = "BA_SMG_1"
-    projectile_gfx = "red_laser_pd"
-    tags = {
-        weapon_type_kinetic
-        weapon_type_Kivotos
-        m_slot
-    }
-    ai_tags = {
-        gunship
-        weapon_role_anti_shield
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 60
-        }
-        upkeep = {
-            energy = 0.6
-            alloys = 0.06
-        }
-    }
-    power = -25
-    damage = { min = 10 max = 40 }
-    windup = { min = 1 max = 7 }
-    total_fire_time = 2
-    hull_damage = 1
-    shield_damage = 2
-    shield_penetration = 0.5
-    armor_damage = 1
-    armor_penetration = 0
-    min_range = 0
-    range = 60
-    accuracy = 0.6
-    tracking = 0.6
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_SMG_1_m"
+	size = medium
+	type = instant
+	icon = "GFX_Airi_Weapon"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Standard_SMG_1"
+	}
+	upgrades_to = "BA_SMG_2_m"
+	component_set = "BA_SMG_1"
+	projectile_gfx = "red_laser_pd"
+	tags = {
+		weapon_type_kinetic
+		weapon_type_Kivotos
+		m_slot
+	}
+	ai_tags = {
+		gunship
+		weapon_role_anti_shield
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+		}
+		upkeep = {
+			energy = 0.6
+			alloys = 0.06
+		}
+	}
+	power = -25
+	damage = {
+		min = 10
+		max = 40
+	}
+	windup = {
+		min = 1
+		max = 7
+	}
+	total_fire_time = 2
+	hull_damage = 1
+	shield_damage = 2
+	shield_penetration = 0.5
+	armor_damage = 1
+	armor_penetration = 0
+	min_range = 0
+	range = 60
+	accuracy = 0.6
+	tracking = 0.6
+	ai_weight = {
+		weight = 1
+	}
 }
 
 weapon_component_template = {
-    key = "BA_SMG_2_m"
-    size = medium
-    type = instant
-    icon = "GFX_Airi_Weapon"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    upgrades_to = "BA_SMG_3_m"
-    component_set = "BA_SMG_2"
-    projectile_gfx = "blue_laser_pd"
-    tags = {
-        weapon_type_kinetic
-        weapon_type_Kivotos
-        m_slot
-    }
-    ai_tags = {
-        gunship
-        weapon_role_anti_shield
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 72
-            volatile_motes = 0.6
-            sr_pyroxenes = 2
-        }
-        upkeep = {
-            energy = 0.72
-            alloys = 0.072
-        }
-    }
-    power = -50
-    damage = { min = 21 max = 80 }
-    windup = { min = 1 max = 7 }
-    total_fire_time = 2
-    hull_damage = 1
-    shield_damage = 2
-    shield_penetration = 0.5
-    armor_damage = 1
-    armor_penetration = 0
-    min_range = 0
-    range = 60
-    accuracy = 0.6
-    tracking = 0.6
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_SMG_2_m"
+	size = medium
+	type = instant
+	icon = "GFX_Airi_Weapon"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Standard_SMG_2"
+	}
+	upgrades_to = "BA_SMG_3_m"
+	component_set = "BA_SMG_2"
+	projectile_gfx = "blue_laser_pd"
+	tags = {
+		weapon_type_kinetic
+		weapon_type_Kivotos
+		m_slot
+	}
+	ai_tags = {
+		gunship
+		weapon_role_anti_shield
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 72
+			volatile_motes = 0.6
+			sr_pyroxenes = 2
+		}
+		upkeep = {
+			energy = 0.72
+			alloys = 0.072
+		}
+	}
+	power = -50
+	damage = {
+		min = 21
+		max = 80
+	}
+	windup = {
+		min = 1
+		max = 7
+	}
+	total_fire_time = 2
+	hull_damage = 1
+	shield_damage = 2
+	shield_penetration = 0.5
+	armor_damage = 1
+	armor_penetration = 0
+	min_range = 0
+	range = 60
+	accuracy = 0.6
+	tracking = 0.6
+	ai_weight = {
+		weight = 1
+	}
 }
 
 weapon_component_template = {
-    key = "BA_SMG_3_m"
-    size = medium
-    type = instant
-    icon = "GFX_Airi_Weapon"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    component_set = "BA_SMG_3"
-    projectile_gfx = "white_laser_pd"
-    tags = {
-        weapon_type_kinetic
-        weapon_type_Kivotos
-        m_slot
-    }
-    ai_tags = {
-        gunship
-        weapon_role_anti_shield
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 96
-            volatile_motes = 1
-            sr_keystone = 8
-        }
-        upkeep = {
-            energy = 0.96
-            alloys = 0.096
-        }
-    }
-    power = -80
-    damage = { min = 45 max = 120 }
-    windup = { min = 1 max = 7 }
-    total_fire_time = 2
-    hull_damage = 1
-    shield_damage = 2
-    shield_penetration = 0.5
-    armor_damage = 1
-    armor_penetration = 0
-    min_range = 0
-    range = 60
-    accuracy = 0.6
-    tracking = 0.6
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_SMG_3_m"
+	size = medium
+	type = instant
+	icon = "GFX_Airi_Weapon"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Standard_SMG_3"
+	}
+	component_set = "BA_SMG_3"
+	projectile_gfx = "white_laser_pd"
+	tags = {
+		weapon_type_kinetic
+		weapon_type_Kivotos
+		m_slot
+	}
+	ai_tags = {
+		gunship
+		weapon_role_anti_shield
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 96
+			volatile_motes = 1
+			sr_keystone = 8
+		}
+		upkeep = {
+			energy = 0.96
+			alloys = 0.096
+		}
+	}
+	power = -80
+	damage = {
+		min = 45
+		max = 120
+	}
+	windup = {
+		min = 1
+		max = 7
+	}
+	total_fire_time = 2
+	hull_damage = 1
+	shield_damage = 2
+	shield_penetration = 0.5
+	armor_damage = 1
+	armor_penetration = 0
+	min_range = 0
+	range = 60
+	accuracy = 0.6
+	tracking = 0.6
+	ai_weight = {
+		weight = 1
+	}
 }
 
 weapon_component_template = {
-    key = "BA_AR_1_m"
-    size = medium
-    type = instant
-    icon = "GFX_Shiroko_Weapon"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    upgrades_to = "BA_AR_2_m"
-    component_set = "BA_AR_1"
-    projectile_gfx = "flak_pd_2"
-    tags = {
-        weapon_type_kinetic
-        weapon_type_Kivotos
-        m_slot
-    }
-    ai_tags = {
-        gunship
-        weapon_role_anti_armor
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 64
-            exotic_gases = 1
-            sr_pyroxenes = 2
-        }
-        upkeep = {
-            energy = 0.64
-            alloys = 0.064
-        }
-    }
-    power = -40
-    damage = { min = 64 max = 90 }
-    windup = { min = 7 max = 9 }
-    total_fire_time = 12
-    hull_damage = 1
-    shield_damage = 1
-    shield_penetration = 0
-    armor_damage = 1.5
-    armor_penetration = 0.6
-    min_range = 0
-    range = 100
-    accuracy = 0.9
-    tracking = 0.4
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_AR_1_m"
+	size = medium
+	type = instant
+	icon = "GFX_Shiroko_Weapon"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Standard_AR_1"
+	}
+	upgrades_to = "BA_AR_2_m"
+	component_set = "BA_AR_1"
+	projectile_gfx = "flak_pd_2"
+	tags = {
+		weapon_type_kinetic
+		weapon_type_Kivotos
+		m_slot
+	}
+	ai_tags = {
+		gunship
+		weapon_role_anti_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 64
+			exotic_gases = 1
+			sr_pyroxenes = 2
+		}
+		upkeep = {
+			energy = 0.64
+			alloys = 0.064
+		}
+	}
+	power = -40
+	damage = {
+		min = 64
+		max = 90
+	}
+	windup = {
+		min = 7
+		max = 9
+	}
+	total_fire_time = 12
+	hull_damage = 1
+	shield_damage = 1
+	shield_penetration = 0
+	armor_damage = 1.5
+	armor_penetration = 0.6
+	min_range = 0
+	range = 100
+	accuracy = 0.9
+	tracking = 0.4
+	ai_weight = {
+		weight = 1
+	}
 }
 
 weapon_component_template = {
-    key = "BA_AR_2_m"
-    size = medium
-    type = instant
-    icon = "GFX_Hanae_Weapon"
-    icon_frame = 1
-    #color = { 0.1 1.0 0.1 1 }
-    prerequisites = { "tech_BA_institute_of_reconstruction" }
-    component_set = "BA_AR_2"
-    projectile_gfx = "flak_pd_3"
-    tags = {
-        weapon_type_kinetic
-        weapon_type_Kivotos
-        m_slot
-    }
-    ai_tags = {
-        gunship
-        weapon_role_anti_armor
-    }
-    resources = {
-        category = ship_components
-        cost = {
-            alloys = 100
-            exotic_gases = 1.6
-            sr_keystone = 16
-        }
-        upkeep = {
-            energy = 1
-            alloys = 0.1
-        }
-    }
-    power = -90
-    damage = { min = 120 max = 150 }
-    windup = { min = 5 max = 7 }
-    total_fire_time = 10
-    hull_damage = 1
-    shield_damage = 1
-    shield_penetration = 0
-    armor_damage = 1.5
-    armor_penetration = 0.6
-    min_range = 0
-    range = 110
-    accuracy = 0.9
-    tracking = 0.3
-    ai_weight = {
-        weight = 1
-    }
+	key = "BA_AR_2_m"
+	size = medium
+	type = instant
+	icon = "GFX_Hanae_Weapon"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	prerequisites = {
+		"tech_BA_SPW_Standard_AR_2"
+	}
+	component_set = "BA_AR_2"
+	projectile_gfx = "flak_pd_3"
+	tags = {
+		weapon_type_kinetic
+		weapon_type_Kivotos
+		m_slot
+	}
+	ai_tags = {
+		gunship
+		weapon_role_anti_armor
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			exotic_gases = 1.6
+			sr_keystone = 16
+		}
+		upkeep = {
+			energy = 1
+			alloys = 0.1
+		}
+	}
+	power = -90
+	damage = {
+		min = 120
+		max = 150
+	}
+	windup = {
+		min = 5
+		max = 7
+	}
+	total_fire_time = 10
+	hull_damage = 1
+	shield_damage = 1
+	shield_penetration = 0
+	armor_damage = 1.5
+	armor_penetration = 0.6
+	min_range = 0
+	range = 110
+	accuracy = 0.9
+	tracking = 0.3
+	ai_weight = {
+		weight = 1
+	}
 }
