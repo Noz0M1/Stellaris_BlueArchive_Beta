@@ -2,161 +2,161 @@
 ### 夏莱办公室
 #基础：+1社团部员岗位 非学园都市星球每10人口+1社团部员岗位
 building_BA_Schale_office = {
-    position_priority = 21
-    base_buildtime = @club_room_time
-    base_cap_amount = 1
-    category = government
-    icon = Schale_office
-    potential = {
-        is_capital = no
-        owner = {
-            has_authority = auth_kivotos
-        }
-    }
-    can_be_disabled = no
-    can_be_ruined = no
-    destroy_trigger = {
-        is_capital = yes
-    }
-    convert_to = {
-        building_BA_Locker_room
-    }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-        }
-        modifier = {
-            pop_government_ethic_attraction = 1
-            planet_amenities_add = 10
-        }
-    }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            OR = {
-                AND = {
-                    is_planet_class = pc_BA_auto_ringworld
-                    BA_has_any_club_building = yes
-                }
-                NOR = {
-                    is_planet_class = pc_BA_auto_ringworld
-                    is_planet_class = pc_BA_auto_ringworld
-                }
-            }
-        }
-        job_BA_club_members_add = 1
-        job_BA_club_members_per_pop = 0.05
-    }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            is_planet_class = pc_BA_auto_ringworld
-            BA_has_any_club_building = no
-        }
-        job_BA_ringworld_worker_add = 2
-        job_BA_ringworld_worker_per_pop = 0.1
-    }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            planet = {
-                NOR = {
-                    is_planet_class = pc_nuked
-                }
-            }
-        }
-        pop_environment_tolerance = 0.2
-    }
-    resources = {
-        category = planet_buildings
-        cost = {
-            minerals = 400
-        }
-        upkeep = {
-            consumer_goods = 1
-            energy = 1
-        }
-    }
+	position_priority = 21
+	base_buildtime = @club_room_time
+	base_cap_amount = 1
+	category = government
+	icon = Schale_office
+	potential = {
+		is_capital = no
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	can_be_disabled = no
+	can_be_ruined = no
+	destroy_trigger = {
+		is_capital = yes
+	}
+	convert_to = {
+		building_BA_Locker_room
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			pop_government_ethic_attraction = 1
+			planet_amenities_add = 10
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			OR = {
+				AND = {
+					is_planet_class = pc_BA_auto_ringworld
+					BA_has_any_club_building = yes
+				}
+				NOR = {
+					is_planet_class = pc_BA_auto_ringworld
+					is_planet_class = pc_BA_auto_ringworld
+				}
+			}
+		}
+		job_BA_club_members_add = 1
+		job_BA_club_members_per_pop = 0.05
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			is_planet_class = pc_BA_auto_ringworld
+			BA_has_any_club_building = no
+		}
+		job_BA_ringworld_worker_add = 2
+		job_BA_ringworld_worker_per_pop = 0.1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			planet = {
+				NOR = {
+					is_planet_class = pc_nuked
+				}
+			}
+		}
+		pop_environment_tolerance = 0.2
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+		}
+		upkeep = {
+			consumer_goods = 1
+			energy = 1
+		}
+	}
 }
 
 building_BA_Locker_room = {
-    position_priority = 21
-    base_buildtime = @club_room_time
-    base_cap_amount = 1
-    category = government
-    icon = Locker_room
-    potential = {
-        is_capital = yes
-    }
-    can_be_disabled = no
-    can_be_ruined = no
-    destroy_trigger = {
-        planet = {
-            is_capital = no
-        }
-    }
-    convert_to = {
-        building_BA_Schale_office
-    }
-    triggered_desc = {
-        text = building_BA_Locker_room_tip
-    }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-        }
-        modifier = {
-            pop_government_ethic_attraction = 1
-            planet_amenities_add = 10
-        }
-    }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            OR = {
-                AND = {
-                    is_planet_class = pc_BA_auto_ringworld
-                    BA_has_any_club_building = yes
-                }
-                NOR = {
-                    is_planet_class = pc_BA_auto_ringworld
-                    is_planet_class = pc_BA_auto_ringworld
-                }
-            }
-        }
-        job_BA_club_members_add = 1
-        job_BA_club_members_per_pop = 0.05
-    }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            is_planet_class = pc_BA_auto_ringworld
-            BA_has_any_club_building = no
-        }
-        job_BA_ringworld_worker_add = 2
-        job_BA_ringworld_worker_per_pop = 0.1
-    }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            planet = {
-                NOR = {
-                    is_planet_class = pc_nuked
-                }
-            }
-        }
-        pop_environment_tolerance = 0.2
-    }
-    resources = {
-        category = planet_buildings
-        cost = {
-            minerals = 400
-        }
-        upkeep = {
-            consumer_goods = 1
-            energy = 1
-        }
-    }
+	position_priority = 21
+	base_buildtime = @club_room_time
+	base_cap_amount = 1
+	category = government
+	icon = Locker_room
+	potential = {
+		is_capital = yes
+	}
+	can_be_disabled = no
+	can_be_ruined = no
+	destroy_trigger = {
+		planet = {
+			is_capital = no
+		}
+	}
+	convert_to = {
+		building_BA_Schale_office
+	}
+	triggered_desc = {
+		text = building_BA_Locker_room_tip
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			pop_government_ethic_attraction = 1
+			planet_amenities_add = 10
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			OR = {
+				AND = {
+					is_planet_class = pc_BA_auto_ringworld
+					BA_has_any_club_building = yes
+				}
+				NOR = {
+					is_planet_class = pc_BA_auto_ringworld
+					is_planet_class = pc_BA_auto_ringworld
+				}
+			}
+		}
+		job_BA_club_members_add = 1
+		job_BA_club_members_per_pop = 0.05
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			is_planet_class = pc_BA_auto_ringworld
+			BA_has_any_club_building = no
+		}
+		job_BA_ringworld_worker_add = 2
+		job_BA_ringworld_worker_per_pop = 0.1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			planet = {
+				NOR = {
+					is_planet_class = pc_nuked
+				}
+			}
+		}
+		pop_environment_tolerance = 0.2
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+		}
+		upkeep = {
+			consumer_goods = 1
+			energy = 1
+		}
+	}
 }
 
 #############   社团建筑   #############
@@ -486,41 +486,266 @@ building_BA_Teaparty_branch = {
 	}
 }
 
-# #风纪委员会 +2/+5社团部员
-# building_BA_Prefect_team = {
-# 	base_buildtime = @club_room_time 
-# 	base_cap_amount = 1
-# 	category = amenity
-# 	icon = building_luxury_residence	#暂时的 以后改
-# 	#icon = engineer_club
-# 	allow = {
-# 		has_upgraded_capital = yes
-# 	}
-# 	triggered_planet_modifier = {
-# 		potential = {
-# 			exists = owner
-# 			owner = {
-# 				has_authority = auth_kivotos
-# 			}
-# 		}
-# 		modifier = {
-# 			#job_BA_judgemen_add = 4
-# 			job_BA_club_members_add = 2
-# 			planet_stability_add = 10			#暂时的 以后改
-# 			planet_crime_mult = -15
-# 		}
-# 	}
-# 	resources = {
-# 		category = planet_buildings
-# 		cost = {
-# 			minerals = 350
-# 		}
-# 		upkeep = {
-# 			energy = 5
-# 			alloys = 5
-# 		}
-# 	}
-# 	prerequisites = {
-# 		"tech_BA_culture_Gehenna"
-# 	}
-# }
+#温泉开发部度假村 +3/+5社团部员
+building_BA_Hotspring_development_department = {
+	base_buildtime = @club_room_time
+	category = government
+	position_priority = 22
+	base_cap_amount = 1
+	empire_limit = {
+		base = 0
+		modifier = {
+			add = Hotspring_development_department_room_limit			#设置的部室变量
+			owner = {
+				has_country_flag = allow_Hotspring_development_department				#设置的允许标志
+			}
+		}
+		modifier = {
+			set = -1
+			always = no			#需要的话以后改
+		}
+	}
+	# triggered_desc = {
+	# 	text = building_BA_Hotspring_development_department_effect
+	# }
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	can_be_disabled = no
+	can_be_ruined = no
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_club_members_add = 3
+			planet_amenities_mult = 0.3
+			BA_club_pop_engineering_research_produces_add = 1.5
+			BA_club_pop_consumer_goods_upkeep_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_SI_Millennium_G03
+			}
+		}
+		modifier = {
+			job_BA_club_members_add = 2
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 350
+		}
+		upkeep = {
+			energy = 5
+			alloys = 5
+		}
+	}
+}
+
+#祭典运营委员会直营广场 +3/+5社团部员
+building_BA_Festival_operations_department = {
+	base_buildtime = @club_room_time
+	category = government
+	position_priority = 22
+	base_cap_amount = 1
+	empire_limit = {
+		base = 0
+		modifier = {
+			add = Festival_operations_department_room_limit			#设置的部室变量
+			owner = {
+				has_country_flag = allow_Festival_operations_department				#设置的允许标志
+			}
+		}
+		modifier = {
+			set = -1
+			always = no			#需要的话以后改
+		}
+	}
+	# triggered_desc = {
+	# 	text = building_BA_Festival_operations_department_effect
+	# }
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	can_be_disabled = no
+	can_be_ruined = no
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_club_members_add = 3
+			pop_happiness = 0.1
+			BA_club_pop_unity_produces_add = 0.5
+			BA_club_pop_consumer_goods_upkeep_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_SI_Millennium_G03
+			}
+		}
+		modifier = {
+			job_BA_club_members_add = 2
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 350
+		}
+		upkeep = {
+			energy = 5
+			alloys = 5
+		}
+	}
+}
+
+#玄武商会贸易港 +3/+5社团部员
+building_BA_Xuanwu_promenade = {
+	base_buildtime = @club_room_time
+	category = government
+	position_priority = 22
+	base_cap_amount = 1
+	empire_limit = {
+		base = 0
+		modifier = {
+			add = Xuanwu_promenade_room_limit			#设置的部室变量
+			owner = {
+				has_country_flag = allow_Xuanwu_promenade				#设置的允许标志
+			}
+		}
+		modifier = {
+			set = -1
+			always = no			#需要的话以后改
+		}
+	}
+	# triggered_desc = {
+	# 	text = building_BA_Xuanwu_promenade_effect
+	# }
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	can_be_disabled = no
+	can_be_ruined = no
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_club_members_add = 3
+			trade_value_mult = 0.2
+			BA_club_pop_physics_research_produces_add = 0.5
+			BA_club_pop_consumer_goods_upkeep_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_SI_Millennium_G03
+			}
+		}
+		modifier = {
+			job_BA_club_members_add = 2
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 350
+		}
+		upkeep = {
+			energy = 5
+			alloys = 5
+		}
+	}
+}
+
+#出版部编辑社 +3/+5社团部员
+building_BA_Publishing_department = {
+	base_buildtime = @club_room_time
+	category = government
+	position_priority = 22
+	base_cap_amount = 1
+	empire_limit = {
+		base = 0
+		modifier = {
+			add = Publishing_department_room_limit			#设置的部室变量
+			owner = {
+				has_country_flag = allow_Publishing_department				#设置的允许标志
+			}
+		}
+		modifier = {
+			set = -1
+			always = no			#需要的话以后改
+		}
+	}
+	# triggered_desc = {
+	# 	text = building_BA_Publishing_department_effect
+	# }
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	can_be_disabled = no
+	can_be_ruined = no
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_club_members_add = 3
+			pop_government_ethic_attraction = 1
+			BA_club_pop_unity_produces_add = 0.5
+			BA_club_pop_consumer_goods_upkeep_add = 0.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_SI_Millennium_G03
+			}
+		}
+		modifier = {
+			job_BA_club_members_add = 2
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 350
+		}
+		upkeep = {
+			energy = 5
+			alloys = 5
+		}
+	}
+}
