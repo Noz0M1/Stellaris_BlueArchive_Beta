@@ -10,7 +10,7 @@ weapon_component_template = {
 	}
 	upgrades_to = "BA_SG_2_m"
 	component_set = "BA_SG_1"
-	projectile_gfx = "gamma_laser_s"
+	projectile_gfx = "stormfire_auto_cannons_m"
 	tags = {
 		weapon_type_kinetic
 		weapon_type_Kivotos
@@ -25,11 +25,11 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 20
+			alloys = 60
 		}
 		upkeep = {
-			energy = 0.22
-			alloys = 0.02
+			energy = 0.6
+			alloys = 0.06
 		}
 	}
 	power = -25
@@ -69,7 +69,7 @@ weapon_component_template = {
 	}
 	upgrades_to = "BA_SG_3_m"
 	component_set = "BA_SG_2"
-	projectile_gfx = "gamma_laser_s"
+	projectile_gfx = "stormfire_auto_cannons_m"
 	tags = {
 		weapon_type_kinetic
 		weapon_type_Kivotos
@@ -84,11 +84,13 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 20
+			alloys = 72
+			volatile_motes = 0.6
+			sr_pyroxenes = 2
 		}
 		upkeep = {
-			energy = 0.22
-			alloys = 0.02
+			energy = 0.72
+			alloys = 0.072
 		}
 	}
 	power = -50
@@ -127,7 +129,7 @@ weapon_component_template = {
 		"tech_BA_SPW_Standard_SG_3"
 	}
 	component_set = "BA_SG_3"
-	projectile_gfx = "gamma_laser_s"
+	projectile_gfx = "stormfire_auto_cannons_m"
 	tags = {
 		weapon_type_kinetic
 		weapon_type_Kivotos
@@ -142,11 +144,13 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 20
+			alloys = 96
+			volatile_motes = 1
+			sr_keystone = 8
 		}
 		upkeep = {
-			energy = 0.22
-			alloys = 0.02
+			energy = 0.96
+			alloys = 0.096
 		}
 	}
 	power = -80
@@ -186,7 +190,7 @@ weapon_component_template = {
 	}
 	upgrades_to = "BA_SMG_2_m"
 	component_set = "BA_SMG_1"
-	projectile_gfx = "gamma_laser_s"
+	projectile_gfx = "red_laser_pd"
 	tags = {
 		weapon_type_kinetic
 		weapon_type_Kivotos
@@ -199,11 +203,11 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 20
+			alloys = 60
 		}
 		upkeep = {
-			energy = 0.22
-			alloys = 0.02
+			energy = 0.6
+			alloys = 0.06
 		}
 	}
 	power = -25
@@ -242,7 +246,7 @@ weapon_component_template = {
 	}
 	upgrades_to = "BA_SMG_3_m"
 	component_set = "BA_SMG_2"
-	projectile_gfx = "gamma_laser_s"
+	projectile_gfx = "blue_laser_pd"
 	tags = {
 		weapon_type_kinetic
 		weapon_type_Kivotos
@@ -255,11 +259,13 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 20
+			alloys = 72
+			volatile_motes = 0.6
+			sr_pyroxenes = 2
 		}
 		upkeep = {
-			energy = 0.22
-			alloys = 0.02
+			energy = 0.72
+			alloys = 0.072
 		}
 	}
 	power = -50
@@ -297,7 +303,7 @@ weapon_component_template = {
 		"tech_BA_SPW_Standard_SMG_3"
 	}
 	component_set = "BA_SMG_3"
-	projectile_gfx = "gamma_laser_s"
+	projectile_gfx = "white_laser_pd"
 	tags = {
 		weapon_type_kinetic
 		weapon_type_Kivotos
@@ -310,11 +316,13 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 20
+			alloys = 96
+			volatile_motes = 1
+			sr_keystone = 8
 		}
 		upkeep = {
-			energy = 0.22
-			alloys = 0.02
+			energy = 0.96
+			alloys = 0.096
 		}
 	}
 	power = -80
@@ -353,7 +361,7 @@ weapon_component_template = {
 	}
 	upgrades_to = "BA_AR_2_m"
 	component_set = "BA_AR_1"
-	projectile_gfx = "gamma_laser_s"
+	projectile_gfx = "flak_pd_2"
 	tags = {
 		weapon_type_kinetic
 		weapon_type_Kivotos
@@ -366,11 +374,13 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 20
+			alloys = 64
+			exotic_gases = 1
+			sr_pyroxenes = 2
 		}
 		upkeep = {
-			energy = 0.22
-			alloys = 0.02
+			energy = 0.64
+			alloys = 0.064
 		}
 	}
 	power = -40
@@ -408,7 +418,7 @@ weapon_component_template = {
 		"tech_BA_SPW_Standard_AR_2"
 	}
 	component_set = "BA_AR_2"
-	projectile_gfx = "gamma_laser_s"
+	projectile_gfx = "flak_pd_3"
 	tags = {
 		weapon_type_kinetic
 		weapon_type_Kivotos
@@ -421,11 +431,13 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 20
+			alloys = 100
+			exotic_gases = 1.6
+			sr_keystone = 16
 		}
 		upkeep = {
-			energy = 0.22
-			alloys = 0.02
+			energy = 1
+			alloys = 0.1
 		}
 	}
 	power = -90
@@ -451,4 +463,3 @@ weapon_component_template = {
 		weight = 1
 	}
 }
-

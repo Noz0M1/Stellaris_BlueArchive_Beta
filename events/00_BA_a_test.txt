@@ -212,7 +212,6 @@ country_event = {
 				}
 				set_owner = event_target:BA_Unnamed_enemy_country
 				add_building = building_BA_fade_Sanctum_center
-				remove_building = building_BA_Schale_office
 				while = {
 					count = 28
 					create_pop = {

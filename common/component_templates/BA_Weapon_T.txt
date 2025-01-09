@@ -9,7 +9,7 @@ weapon_component_template = {
 		"tech_BA_SPW_Standard_MG_3"
 	}
 	component_set = "BA_MG_T"
-	projectile_gfx = "gamma_laser_s"
+	projectile_gfx = "stormfire_auto_cannons_l"
 	tags = {
 		weapon_type_kinetic
 		weapon_type_Kivotos
@@ -21,11 +21,13 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 20
+			alloys = 420
+			volatile_motes = 8
+			sr_keystone = 50
 		}
 		upkeep = {
-			energy = 0.22
-			alloys = 0.02
+			energy = 4.2
+			alloys = 0.42
 		}
 	}
 	power = -800
@@ -53,7 +55,7 @@ weapon_component_template = {
 }
 
 weapon_component_template = {
-	key = "BA_RG_t"
+	key = "BA_RD_t"
 	size = titanic
 	type = instant
 	icon = "GFX_SuperNova"
@@ -62,8 +64,8 @@ weapon_component_template = {
 	prerequisites = {
 		"tech_BA_SPW_Standard_RG"
 	}
-	component_set = "BA_RG_T"
-	projectile_gfx = "gamma_laser_s"
+	component_set = "BA_RD_T"
+	projectile_gfx = "tachyon_lance"
 	tags = {
 		weapon_type_energy
 		weapon_type_Kivotos
@@ -75,11 +77,14 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 20
+			alloys = 420
+			rare_crystals = 8
+			sr_pyroxenes = 24
+			sr_dark_matter = 8
 		}
 		upkeep = {
-			energy = 0.22
-			alloys = 0.02
+			energy = 4.2
+			alloys = 0.42
 		}
 	}
 	power = -800
