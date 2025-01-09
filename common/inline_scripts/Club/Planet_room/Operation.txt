@@ -7,11 +7,11 @@ option = {
         }
     }
     allow = {
-        custom_tooltip = {
-            fail_text = BA_club_favor_fail
+        custom_tooltip_fail = {
+            text = BA_club_favor_fail.50
             check_variable = {
                 which = $CLUB$
-                value >= 60
+                value >= 50
             }
         }
         resource_stockpile_compare = {
@@ -20,7 +20,7 @@ option = {
             multiplier = $CLUB$_room_limit
         }
     }
-    response_text = $CLUB$_building_$CHARA$RE
+    response_text = $CLUB$_building.$CHARA$RE
     set_country_flag = allow_$CLUB$
     add_resource = {
         sr_pyroxenes = -200
@@ -39,7 +39,7 @@ option = {
             multiplier = $CLUB$_room_limit
         }
     }
-    response_text = $CLUB$_building_add_$CHARA$RE
+    response_text = $CLUB$_building_add.$CHARA$RE
     hidden_effect = {
         change_variable = {
             which = $CLUB$_room_limit

@@ -536,7 +536,7 @@ tech_BA_club_Game_development_department_01 = {
 tech_BA_club_Game_development_department_02 = {
 	icon = tech_BA_Aris_uplifting
 	area = physics
-	cost = @tier2cost1
+	cost = @tier2cost3
 	tier = 2
 	category = {
 		school_tech
@@ -559,8 +559,8 @@ tech_BA_club_Game_development_department_02 = {
 tech_BA_club_Game_development_department_03 = {
 	icon = tech_BA_Aris_uplifting
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost1
+	tier = 3
 	category = {
 		school_tech
 	}
@@ -582,8 +582,8 @@ tech_BA_club_Game_development_department_03 = {
 tech_BA_club_Game_development_department_04 = {
 	icon = tech_BA_Aris_uplifting
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost3
+	tier = 3
 	category = {
 		school_tech
 	}
@@ -605,6 +605,70 @@ tech_BA_club_Game_development_department_04 = {
 ## 真理部
 ## 对策委员会
 ## 茶会
+## 温泉开发部
+tech_BA_club_Hotspring_development_department_01 = {
+	icon = tech_volatile_motes
+	area = engineering
+	cost = @tier2cost3
+	tier = 2
+	category = {
+		school_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_club_Hotspring_development_department_01_title
+		}
+	}
+	weight = 0
+}
+
+tech_BA_club_Hotspring_development_department_02 = {
+	icon = tech_volatile_motes
+	area = engineering
+	cost = @tier3cost3
+	tier = 3
+	category = {
+		school_tech
+	}
+	prerequisites = {
+		tech_BA_club_Hotspring_development_department_01
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_club_Hotspring_development_department_02_title
+		}
+	}
+	weight = 0
+}
+
+tech_BA_club_Hotspring_development_department_03 = {
+	icon = tech_volatile_motes
+	area = engineering
+	cost = @tier4cost3
+	tier = 4
+	category = {
+		school_tech
+	}
+	prerequisites = {
+		tech_BA_club_Hotspring_development_department_02
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_club_Hotspring_development_department_03_title
+		}
+	}
+	weight = 0
+}
+
 #### 学园文化科技
 tech_BA_culture_Federal = {
 	area = society

@@ -244,3 +244,192 @@ button_effect_frame_Teaparty = {
 	effect = {
 	}
 }
+
+#
+button_effect_found_Hotspring_development_department = {
+	allow = {
+		custom_tooltip = {
+			fail_text = Club_founded
+			owner = {
+				NOT = {
+					has_country_flag = BA_Hotspring_development_department
+				}
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = Hotspring_development_department_desc
+		hidden_effect = {
+			owner = {
+				if = {
+					limit = {
+						has_country_flag = BA_club_set_Hotspring_development_department
+					}
+					remove_country_flag = BA_club_set_Hotspring_development_department
+				}
+				else = {
+					BA_club_clear_found_flag = yes
+					set_country_flag = BA_club_set_Hotspring_development_department
+				}
+			}
+		}
+	}
+}
+
+button_effect_frame_Hotspring_development_department = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		owner = {
+			has_country_flag = BA_club_set_Hotspring_development_department
+		}
+	}
+	effect = {
+	}
+}
+
+#
+button_effect_found_Festival_operations_department = {
+	allow = {
+		custom_tooltip = {
+			fail_text = Club_founded
+			owner = {
+				NOT = {
+					has_country_flag = BA_Festival_operations_department
+				}
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = Festival_operations_department_desc
+		hidden_effect = {
+			owner = {
+				if = {
+					limit = {
+						has_country_flag = BA_club_set_Festival_operations_department
+					}
+					remove_country_flag = BA_club_set_Festival_operations_department
+				}
+				else = {
+					BA_club_clear_found_flag = yes
+					set_country_flag = BA_club_set_Festival_operations_department
+				}
+			}
+		}
+	}
+}
+
+button_effect_frame_Festival_operations_department = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		owner = {
+			has_country_flag = BA_club_set_Festival_operations_department
+		}
+	}
+	effect = {
+	}
+}
+#
+button_effect_found_Xuanwu_promenade = {
+	allow = {
+		custom_tooltip = {
+			fail_text = Club_founded
+			owner = {
+				NOT = {
+					has_country_flag = BA_Xuanwu_promenade
+				}
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = Xuanwu_promenade_desc
+		hidden_effect = {
+			owner = {
+				if = {
+					limit = {
+						has_country_flag = BA_club_set_Xuanwu_promenade
+					}
+					remove_country_flag = BA_club_set_Xuanwu_promenade
+				}
+				else = {
+					BA_club_clear_found_flag = yes
+					set_country_flag = BA_club_set_Xuanwu_promenade
+				}
+			}
+		}
+	}
+}
+
+button_effect_frame_Xuanwu_promenade = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		owner = {
+			has_country_flag = BA_club_set_Xuanwu_promenade
+		}
+	}
+	effect = {
+	}
+}
+#
+button_effect_found_Publishing_department = {
+	allow = {
+		custom_tooltip = {
+			fail_text = Club_founded
+			owner = {
+				NOT = {
+					has_country_flag = BA_Publishing_department
+				}
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = Publishing_department_desc
+		hidden_effect = {
+			owner = {
+				if = {
+					limit = {
+						has_country_flag = BA_club_set_Publishing_department
+					}
+					remove_country_flag = BA_club_set_Publishing_department
+				}
+				else = {
+					BA_club_clear_found_flag = yes
+					set_country_flag = BA_club_set_Publishing_department
+				}
+			}
+		}
+	}
+}
+
+button_effect_frame_Publishing_department = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		owner = {
+			has_country_flag = BA_club_set_Publishing_department
+		}
+	}
+	effect = {
+	}
+}
+
+
+

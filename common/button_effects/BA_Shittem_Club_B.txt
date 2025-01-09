@@ -56,6 +56,16 @@ button_effect_communicate_Game_development_department = {
 								id = BA_club.1005
 							}
 						}
+						10 = {
+							country_event = {
+								id = BA_club.1006
+							}
+						}
+						10 = {
+							country_event = {
+								id = BA_club.1007
+							}
+						}
 					}
 				}
 			}
@@ -207,6 +217,130 @@ button_effect_communicate_Teaparty = {
 							}
 							country_event = {
 								id = BA_club.1406
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#
+button_effect_communicate_Hotspring_development_department = {
+	allow = {
+		custom_tooltip = {
+			fail_text = Club_not_found
+			owner = {
+				has_country_flag = BA_Hotspring_development_department
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = Hotspring_development_department_desc
+		hidden_effect = {
+			owner = {
+				hidden_effect = {
+					random_list = {
+						10 = {
+							country_event = {
+								id = BA_club.1504
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#
+button_effect_communicate_Festival_operations_department = {
+	allow = {
+		custom_tooltip = {
+			fail_text = Club_not_found
+			owner = {
+				has_country_flag = BA_Festival_operations_department
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = Festival_operations_department_desc
+		hidden_effect = {
+			owner = {
+				hidden_effect = {
+					random_list = {
+						10 = {
+							country_event = {
+								id = BA_club.1604
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#
+button_effect_communicate_Xuanwu_promenade = {
+	allow = {
+		custom_tooltip = {
+			fail_text = Club_not_found
+			owner = {
+				has_country_flag = BA_Xuanwu_promenade
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = Xuanwu_promenade_desc
+		hidden_effect = {
+			owner = {
+				hidden_effect = {
+					random_list = {
+						10 = {
+							country_event = {
+								id = BA_club.1704
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#
+button_effect_communicate_Publishing_department = {
+	allow = {
+		custom_tooltip = {
+			fail_text = Club_not_found
+			owner = {
+				has_country_flag = BA_Publishing_department
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = Publishing_department_desc
+		hidden_effect = {
+			owner = {
+				hidden_effect = {
+					random_list = {
+						10 = {
+							country_event = {
+								id = BA_club.1804
 							}
 						}
 					}

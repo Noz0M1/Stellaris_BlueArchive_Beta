@@ -155,36 +155,70 @@ guiTypes = {
                 quadTextureSprite = GFX_Club_button_SPTF
             }
             ### 2行
+            #
             effectButtonType = {
-                name = BA_UI_club_button_GenbuExp
+                name = BA_UI_club_button_Hotspring
                 position = { x= 100 y = 275 }
-                effect = button_effect_found_nothing
-                quadTextureSprite = GFX_Club_button_GenbuExp
+                effect = button_effect_found_Hotspring_development_department
+                quadTextureSprite = GFX_Club_button_Hotspring
             }
+            effectButtonType = {
+                name = BA_UI_club_frame_Hotspring
+                position = { x= 90 y = 265 }
+                effect = button_effect_frame_Hotspring_development_department
+                quadTextureSprite = GFX_Club_button_FRAME
+                alwaysTransparent = yes
+            }
+            #
             effectButtonType = {
                 name = BA_UI_club_button_Matsuri
                 position = { x= 275 y = 275 }
-                effect = button_effect_found_nothing
+                effect = button_effect_found_Festival_operations_department
                 quadTextureSprite = GFX_Club_button_Matsuri
             }
             effectButtonType = {
-                name = BA_UI_club_button_Publish
+                name = BA_UI_club_frame_Matsuri
+                position = { x= 265 y = 265 }
+                effect = button_effect_frame_Festival_operations_department
+                quadTextureSprite = GFX_Club_button_FRAME
+                alwaysTransparent = yes
+            }
+            #
+            effectButtonType = {
+                name = BA_UI_club_button_GenbuExp
                 position = { x= 450 y = 275 }
-                effect = button_effect_found_nothing
+                effect = button_effect_found_Xuanwu_promenade
+                quadTextureSprite = GFX_Club_button_GenbuExp
+            }
+            effectButtonType = {
+                name = BA_UI_club_frame_GenbuExp
+                position = { x= 440 y = 265 }
+                effect = button_effect_frame_Xuanwu_promenade
+                quadTextureSprite = GFX_Club_button_FRAME
+                alwaysTransparent = yes
+            }
+            #
+            effectButtonType = {
+                name = BA_UI_club_button_Publish
+                position = { x= 625 y = 275 }
+                effect = button_effect_found_Publishing_department
                 quadTextureSprite = GFX_Club_button_Publish
             }
             effectButtonType = {
-                name = BA_UI_club_button_24
-                position = { x= 625 y = 275 }
-                effect = button_effect_found_nothing
-                quadTextureSprite = GFX_Club_button_Communicate
+                name = BA_UI_club_frame_Publish
+                position = { x= 615 y = 265 }
+                effect = button_effect_frame_Publishing_department
+                quadTextureSprite = GFX_Club_button_FRAME
+                alwaysTransparent = yes
             }
+            #
             effectButtonType = {
                 name = BA_UI_club_button_25
                 position = { x= 800 y = 275 }
                 effect = button_effect_found_nothing
                 quadTextureSprite = GFX_Club_button_Communicate
             }
+            #
             effectButtonType = {
                 name = BA_UI_club_button_26
                 position = { x= 975 y = 275 }
@@ -448,28 +482,28 @@ guiTypes = {
             }
             ### 2行
             effectButtonType = {
-                name = BA_UI_club_button_GenbuExp
+                name = BA_UI_club_button_Hotspring
                 position = { x= 100 y = 275 }
-                effect = button_effect_communicate_nothing
-                quadTextureSprite = GFX_Club_button_GenbuExp
+                effect = button_effect_communicate_Hotspring_development_department
+                quadTextureSprite = GFX_Club_button_Hotspring
             }
             effectButtonType = {
                 name = BA_UI_club_button_Matsuri
                 position = { x= 275 y = 275 }
-                effect = button_effect_communicate_nothing
+                effect = button_effect_communicate_Festival_operations_department
                 quadTextureSprite = GFX_Club_button_Matsuri
             }
             effectButtonType = {
-                name = BA_UI_club_button_Publish
+                name = BA_UI_club_button_GenbuExp
                 position = { x= 450 y = 275 }
-                effect = button_effect_communicate_nothing
-                quadTextureSprite = GFX_Club_button_Publish
+                effect = button_effect_communicate_Xuanwu_promenade
+                quadTextureSprite = GFX_Club_button_GenbuExp
             }
             effectButtonType = {
-                name = BA_UI_club_button_24
+                name = BA_UI_club_button_Publish
                 position = { x= 625 y = 275 }
-                effect = button_effect_communicate_nothing
-                quadTextureSprite = GFX_Club_button_Communicate
+                effect = button_effect_communicate_Publishing_department
+                quadTextureSprite = GFX_Club_button_Publish
             }
             effectButtonType = {
                 name = BA_UI_club_button_25

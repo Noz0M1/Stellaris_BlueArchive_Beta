@@ -16,6 +16,7 @@ on_game_start_country = {
 
 on_monthly_pulse_country = {
 	events = {
+		BA_club.0035	#社团建设度月检
 		BA_Precursor.0002
 		#BA_Shittem.9990		#月产出计数
 		#BA_Shittem.9992		#先驱者通讯月检
@@ -136,6 +137,7 @@ on_tech_increased = {
 		BA_Shittem.3005		#姬器人委托用
 		BA_club.0001		#社团提示
 		BA_club.1190		#工程部武器研究选项
+		BA_club.1510		#温泉开发部项目完成
 	}
 }
 

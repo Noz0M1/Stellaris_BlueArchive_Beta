@@ -1,0 +1,81 @@
+option = {
+    name = Hotspring_development_department_research
+    custom_tooltip = Hotspring_development_department_research.tip
+    response_text = Hotspring_development_department_research.$CHARA$RE
+    trigger = {
+        NOT = {
+            has_technology = tech_BA_club_Hotspring_development_department_03
+        }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = Hotspring_development_department_research.undone
+            NOT = {
+                has_country_flag = Hotspring_development_department_research_undone
+            }
+        }
+        resource_stockpile_compare = {
+            resource = energy
+            value >= 3000
+            multiplier = Hotspring_development_department_megastructure_produce
+        }
+        resource_stockpile_compare = {
+            resource = food
+            value >= 3000
+            multiplier = Hotspring_development_department_megastructure_produce
+        }
+        resource_stockpile_compare = {
+            resource = volatile_motes
+            value >= 100
+            multiplier = Hotspring_development_department_megastructure_produce
+        }
+        resource_stockpile_compare = {
+            resource = exotic_gases
+            value >= 100
+            multiplier = Hotspring_development_department_megastructure_produce
+        }
+        resource_stockpile_compare = {
+            resource = rare_crystals
+            value >= 100
+            multiplier = Hotspring_development_department_megastructure_produce
+        }
+    }
+    add_resource = {
+        energy = 3000
+        food = 3000
+        volatile_motes = 100
+        exotic_gases = 100
+        rare_crystals = 100
+        multiplier = Hotspring_development_department_megastructure_produce
+    }
+    if = {
+        limit = {
+            check_variable = {
+                which = Hotspring_development_department_megastructure_produce
+                value = 1
+            }
+        }
+        add_research_option = tech_BA_club_Hotspring_development_department_01
+    }
+    else_if = {
+        limit = {
+            check_variable = {
+                which = Hotspring_development_department_megastructure_produce
+                value = 2
+            }
+        }
+        add_research_option = tech_BA_club_Hotspring_development_department_02
+    }
+    else_if = {
+        limit = {
+            check_variable = {
+                which = Hotspring_development_department_megastructure_produce
+                value = 3
+            }
+        }
+        add_research_option = tech_BA_club_Hotspring_development_department_03
+    }
+    hidden_effect = {
+        set_country_flag = Hotspring_development_department_research_undone
+    }
+}

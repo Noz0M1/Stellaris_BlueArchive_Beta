@@ -1,0 +1,249 @@
+#二级资源
+option = {
+    name = Xuanwu_promenade_trade.consumer_goods
+    custom_tooltip = Xuanwu_promenade_trade.consumer_goods.tip
+    response_text = Xuanwu_promenade_trade.$CHARA$RE.1
+    allow = {
+        resource_stockpile_compare = {
+            resource = energy
+            value >= 13000
+        }
+    }
+    add_resource = {
+        energy = -13000
+        consumer_goods = 5000
+    }
+}
+option = {
+    name = Xuanwu_promenade_trade.alloys
+    custom_tooltip = Xuanwu_promenade_trade.alloys.tip
+    response_text = Xuanwu_promenade_trade.$CHARA$RE.1
+    allow = {
+        resource_stockpile_compare = {
+            resource = energy
+            value >= 13000
+        }
+    }
+    add_resource = {
+        energy = -13000
+        alloys = 2500
+    }
+}
+#三级资源
+option = {
+    name = Xuanwu_promenade_trade.volatile_motes
+    custom_tooltip = Xuanwu_promenade_trade.volatile_motes.tip
+    response_text = Xuanwu_promenade_trade.$CHARA$RE.1
+    trigger = {
+        OR = {
+            has_technology = tech_volatile_motes
+            has_technology = tech_mine_volatile_motes
+            has_technology = tech_BA_angel24_rare_produce
+        }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = Xuanwu_promenade_trade.noflow
+            NOT = {
+                resource_income_compare = {
+                    resource = volatile_motes
+                    value = 0
+                }
+            }
+        }
+        custom_tooltip_fail = {
+            text = BA_club_favor_fail.50
+            check_variable = {
+                which = Xuanwu_promenade
+                value >= 50
+            }
+        }
+        resource_stockpile_compare = {
+            resource = energy
+            value >= 13000
+        }
+    }
+    add_resource = {
+        energy = -13000
+        volatile_motes = 1000
+    }
+}
+option = {
+    name = Xuanwu_promenade_trade.exotic_gases
+    custom_tooltip = Xuanwu_promenade_trade.exotic_gases.tip
+    response_text = Xuanwu_promenade_trade.$CHARA$RE.1
+    trigger = {
+        OR = {
+            has_technology = tech_exotic_gases
+            has_technology = tech_mine_exotic_gases
+            has_technology = tech_BA_angel24_rare_produce
+        }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = Xuanwu_promenade_trade.noflow
+            NOT = {
+                resource_income_compare = {
+                    resource = exotic_gases
+                    value = 0
+                }
+            }
+        }
+        custom_tooltip_fail = {
+            text = BA_club_favor_fail.50
+            check_variable = {
+                which = Xuanwu_promenade
+                value >= 50
+            }
+        }
+        resource_stockpile_compare = {
+            resource = energy
+            value >= 13000
+        }
+    }
+    add_resource = {
+        energy = -13000
+        exotic_gases = 1000
+    }
+}
+option = {
+    name = Xuanwu_promenade_trade.rare_crystals
+    custom_tooltip = Xuanwu_promenade_trade.rare_crystals.tip
+    response_text = Xuanwu_promenade_trade.$CHARA$RE.1
+    trigger = {
+        OR = {
+            has_technology = tech_rare_crystals
+            has_technology = tech_mine_rare_crystals
+            has_technology = tech_BA_angel24_rare_produce
+        }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = Xuanwu_promenade_trade.noflow
+            NOT = {
+                resource_income_compare = {
+                    resource = rare_crystals
+                    value = 0
+                }
+            }
+        }
+        custom_tooltip_fail = {
+            text = BA_club_favor_fail.50
+            check_variable = {
+                which = Xuanwu_promenade
+                value >= 50
+            }
+        }
+        resource_stockpile_compare = {
+            resource = energy
+            value >= 13000
+        }
+    }
+    add_resource = {
+        energy = -13000
+        rare_crystals = 1000
+    }
+}
+#稀有资源
+option = {
+    name = Xuanwu_promenade_trade.sr_zro
+    custom_tooltip = Xuanwu_promenade_trade.sr_zro.tip
+    response_text = Xuanwu_promenade_trade.$CHARA$RE.2
+    trigger = {
+        NAND = {
+            resource_stockpile_compare = {
+                resource = sr_zro
+                value = 0
+            }
+            resource_revenue_compare = {
+                resource = sr_zro
+                value = 0
+            }
+        }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = BA_club_favor_fail.100
+            check_variable = {
+                which = Xuanwu_promenade
+                value >= 100
+            }
+        }
+        resource_stockpile_compare = {
+            resource = energy
+            value >= 13000
+        }
+    }
+    add_resource = {
+        energy = -13000
+        sr_zro = 500
+    }
+}
+option = {
+    name = Xuanwu_promenade_trade.nanites
+    custom_tooltip = Xuanwu_promenade_trade.nanites.tip
+    response_text = Xuanwu_promenade_trade.$CHARA$RE.2
+    trigger = {
+        NAND = {
+            resource_stockpile_compare = {
+                resource = nanites
+                value = 0
+            }
+            resource_revenue_compare = {
+                resource = nanites
+                value = 0
+            }
+        }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = BA_club_favor_fail.100
+            check_variable = {
+                which = Xuanwu_promenade
+                value >= 100
+            }
+        }
+        resource_stockpile_compare = {
+            resource = energy
+            value >= 13000
+        }
+    }
+    add_resource = {
+        energy = -13000
+        nanites = 500
+    }
+}
+option = {
+    name = Xuanwu_promenade_trade.sr_living_metal
+    custom_tooltip = Xuanwu_promenade_trade.sr_living_metal.tip
+    response_text = Xuanwu_promenade_trade.$CHARA$RE.2
+    trigger = {
+        NAND = {
+            resource_stockpile_compare = {
+                resource = sr_living_metal
+                value = 0
+            }
+            resource_revenue_compare = {
+                resource = sr_living_metal
+                value = 0
+            }
+        }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = BA_club_favor_fail.100
+            check_variable = {
+                which = Xuanwu_promenade
+                value >= 100
+            }
+        }
+        resource_stockpile_compare = {
+            resource = energy
+            value >= 13000
+        }
+    }
+    add_resource = {
+        energy = -13000
+        sr_living_metal = 500
+    }
+}

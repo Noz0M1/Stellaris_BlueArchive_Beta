@@ -26,20 +26,20 @@ option = {
     name = Engineering_club_weapon_str
     custom_tooltip = Engineering_club_weapon_str.tip
     allow = {
-        custom_tooltip = {
-            text = BA_club_favor_fail
+        custom_tooltip_fail = {
+            text = BA_club_favor_fail.100
             check_variable = {
                 which = Engineering_club
                 value >= 100
             }
         }
-        #has_technology = tech_BA_spaceship_automation_4
-        custom_tooltip = {
-            fail_text = enginner_developing_cooldown
+        custom_tooltip_fail = {
+            text = enginner_developing_cooldown
             NOT = {
                 has_country_flag = Engineering_club_weapon_develop_cooldown
             }
         }
+        has_technology = tech_BA_spaceship_automation_4
     }
     hidden_effect = {
         country_event = {
