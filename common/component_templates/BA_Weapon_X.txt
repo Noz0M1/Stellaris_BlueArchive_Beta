@@ -112,7 +112,7 @@ weapon_component_template = {
 }
 
 weapon_component_template = {
-	key = "BA_RD_x"
+	key = "BA_RG_x"
 	size = extra_large
 	type = instant
 	icon = "GFX_SuperNova"
@@ -121,7 +121,7 @@ weapon_component_template = {
 	prerequisites = {
 		"tech_BA_SPW_Standard_RG"
 	}
-	component_set = "BA_RD_X"
+	component_set = "BA_RG_X"
 	projectile_gfx = "tachyon_lance"
 	tags = {
 		weapon_type_energy

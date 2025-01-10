@@ -1,7 +1,7 @@
 ### 标准武器
 tech_BA_SPW_Standard_SG_1 = {
 	icon = tech_BA_SPW_Base_G
-	area = engineering
+	area = physics
 	cost = @tier3cost1
 	category = {
 		school_tech
@@ -22,7 +22,7 @@ tech_BA_SPW_Standard_SG_1 = {
 
 tech_BA_SPW_Standard_SG_2 = {
 	icon = tech_BA_SPW_Base_G
-	area = engineering
+	area = physics
 	cost = @tier4cost1
 	category = {
 		school_tech
@@ -43,7 +43,7 @@ tech_BA_SPW_Standard_SG_2 = {
 
 tech_BA_SPW_Standard_SG_3 = {
 	icon = tech_BA_SPW_Base_G
-	area = engineering
+	area = physics
 	cost = @tier5cost1
 	category = {
 		school_tech
@@ -106,7 +106,7 @@ tech_BA_SPW_Standard_GL_2 = {
 
 tech_BA_SPW_Standard_SMG_1 = {
 	icon = tech_BA_SPW_Base_P
-	area = engineering
+	area = physics
 	cost = @tier3cost1
 	category = {
 		school_tech
@@ -127,7 +127,7 @@ tech_BA_SPW_Standard_SMG_1 = {
 
 tech_BA_SPW_Standard_SMG_2 = {
 	icon = tech_BA_SPW_Base_P
-	area = engineering
+	area = physics
 	cost = @tier4cost1
 	category = {
 		school_tech
@@ -148,7 +148,7 @@ tech_BA_SPW_Standard_SMG_2 = {
 
 tech_BA_SPW_Standard_SMG_3 = {
 	icon = tech_BA_SPW_Base_P
-	area = engineering
+	area = physics
 	cost = @tier5cost1
 	category = {
 		school_tech
@@ -169,7 +169,7 @@ tech_BA_SPW_Standard_SMG_3 = {
 
 tech_BA_SPW_Standard_AR_1 = {
 	icon = tech_BA_SPW_Base_M
-	area = physics
+	area = engineering
 	cost = @tier4cost1
 	category = {
 		school_tech
@@ -190,7 +190,7 @@ tech_BA_SPW_Standard_AR_1 = {
 
 tech_BA_SPW_Standard_AR_2 = {
 	icon = tech_BA_SPW_Base_M
-	area = physics
+	area = engineering
 	cost = @tier5cost1
 	category = {
 		school_tech
@@ -337,7 +337,7 @@ tech_BA_SPW_Standard_MG_3 = {
 
 tech_BA_SPW_Standard_HG = {
 	icon = tech_BA_SPW_Base_S
-	area = physics
+	area = engineering
 	cost = @tier2cost3
 	category = {
 		school_tech
