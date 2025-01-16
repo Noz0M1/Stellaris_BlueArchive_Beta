@@ -68,7 +68,7 @@ trait_halo_unreleased = {
 	}
 }
 
-#### 光环改造线路专属
+#### 神性解放线路专属
 #光环（解放）！
 trait_halo_awakened = {
 	cost = 0
@@ -124,7 +124,7 @@ trait_halo_full_awakened = {
 	}
 }
 
-#### 神性解放线路专属
+#### 光环改造线路专属
 #光环增幅装置！
 trait_Halo_amplifier = {
 	cost = 0
@@ -313,6 +313,8 @@ trait_starlink_receiver = {
 }
 
 #####   物种特性   #####
+### 正面
+##研究组
 #小春化 1
 trait_BA_Koharu = {
 	cost = 1
@@ -328,6 +330,7 @@ trait_BA_Koharu = {
 	modifier = {
 		pop_growth_speed = 0.2
 		species_leader_exp_gain = -0.20
+
 	}
 }
 
@@ -373,7 +376,7 @@ trait_BA_grate_duty = {
 	}
 }
 
-
+##开拓组
 #夏日之星 1
 trait_BA_summer_star = {
 	cost = 1
@@ -386,6 +389,7 @@ trait_BA_summer_star = {
 	allowed_archetypes = {
 		Schale
 	}
+	custom_tooltip_with_modifiers = trait_BA_summer_star_tip
 	triggered_pop_modifier = {
 		potential = {
 			exists = planet
@@ -440,7 +444,7 @@ trait_BA_pioneer = {
 	}
 }
 
-
+##军事组
 #战术训练 2
 trait_BA_tactical_training = {
 	cost = 2
@@ -455,7 +459,7 @@ trait_BA_tactical_training = {
 	}
 	modifier = {
 		armies_cost_mult = -0.25
-		army_build_speed_mult = 1
+		planet_army_build_speed_mult = 1
 	}
 }
 
@@ -498,7 +502,7 @@ trait_BA_BDcase = {
 	}
 }
 
-
+### 负面
 #摸鱼 -1
 trait_BA_slack = {
 	cost = -1
@@ -556,7 +560,6 @@ trait_BA_no_pack = {
 	}
 }
 
-
 #沉迷游戏 -1
 trait_BA_gammer = {
 	cost = -1
@@ -570,14 +573,15 @@ trait_BA_gammer = {
 	randomized = yes
 	icon = "gfx/interface/icons/traits/species/BA_gammer.dds"
 	modifier = {
+		planet_jobs_unity_produces_mult = -0.1
 		pop_resettlement_cost_mult = 0.5
-		pop_housing_usage_mult = -0.25
 	}
 }
 
-#消费主义 -1
+### 中性
+#消费主义
 trait_BA_consumerism = {
-	cost = -1
+	cost = 0
 	sorting_priority = 10
 	opposites = {
 	}
@@ -586,16 +590,16 @@ trait_BA_consumerism = {
 	}
 	initial = yes
 	randomized = yes
-	icon = "gfx/interface/icons/traits/species/BA_gammer.dds"
+	icon = "gfx/interface/icons/traits/species/BA_consumerism.dds"
 	modifier = {
 		planet_pops_consumer_goods_upkeep_mult = 0.15
 		planet_jobs_energy_produces_mult = 0.25
 	}
 }
 
-#旷课思想 -1
+#旷课思想
 trait_BA_truancy = {
-	cost = -1
+	cost = 0
 	sorting_priority = 10
 	opposites = {
 	}
@@ -604,7 +608,7 @@ trait_BA_truancy = {
 	}
 	initial = yes
 	randomized = yes
-	icon = "gfx/interface/icons/traits/species/BA_gammer.dds"
+	icon = "gfx/interface/icons/traits/species/BA_truancy.dds"
 	modifier = {
 		planet_jobs_engineering_research_produces_mult = -0.1
 		planet_jobs_physics_research_produces_mult = -0.1
@@ -612,6 +616,7 @@ trait_BA_truancy = {
 		planet_jobs_worker_produces_mult = 0.25
 	}
 }
+
 #### 姬器人
 #测试中！
 trait_test = {

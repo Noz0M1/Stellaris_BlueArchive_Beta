@@ -309,7 +309,7 @@ building_BA_Engineering_club = {
 }
 
 #真理部服务器
-building_BA_Veritas_server = {
+building_BA_Veritas = {
 	base_buildtime = @club_room_time
 	category = government
 	position_priority = 22
@@ -328,7 +328,7 @@ building_BA_Veritas_server = {
 		}
 	}
 	#triggered_desc = {
-	#	text = building_BA_Veritas_server_effect
+	#	text = building_BA_Veritas_effect
 	#}
 	potential = {
 		owner = {
@@ -373,8 +373,8 @@ building_BA_Veritas_server = {
 	}
 }
 
-#阿拜多斯生产部门（本地） +2/+5社团部员
-building_BA_local_division = {
+#阿拜多斯生产部门（本地） +社团部员
+building_BA_Foreclosure_task_force = {
 	base_buildtime = @club_room_time
 	category = government
 	position_priority = 22
@@ -393,7 +393,7 @@ building_BA_local_division = {
 		}
 	}
 	#triggered_desc = {
-	#	text = building_BA_local_division_effect
+	#	text = building_BA_Foreclosure_task_force_effect
 	#}
 	potential = {
 		owner = {
@@ -451,7 +451,7 @@ building_BA_Teaparty_branch = {
 		}
 	}
 	#triggered_desc = {
-	#	text = building_BA_local_division_effect
+	#	text = building_BA_Foreclosure_task_force_effect
 	#}
 	potential = {
 		owner = {

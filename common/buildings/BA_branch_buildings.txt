@@ -22,13 +22,13 @@ building_BA_student_embassy = {
 		category = planet_branch_office_buildings
 		cost = {
 			minerals = 1000
-			sr_pyroxenes = 20
 		}
 		produces = {
-			sr_pyroxenes = 4
+			influence = 2
+			energy = 30
 		}
 		upkeep = {
-			energy = 5
+			unity = 5
 		}
 	}
 	ai_weight = {
