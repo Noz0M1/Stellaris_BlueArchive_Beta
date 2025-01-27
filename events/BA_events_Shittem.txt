@@ -1614,6 +1614,7 @@ country_event = {
 #星野
 country_event = {
 	id = BA_Shittem.1352
+	is_triggered_only = yes
 	inline_script = {
 		script = Leader/SP_recruit
 		Leader = Hoshino
@@ -1644,6 +1645,7 @@ country_event = {
 #日奈
 country_event = {
 	id = BA_Shittem.1353
+	is_triggered_only = yes
 	inline_script = {
 		script = Leader/SP_recruit
 		Leader = Hina
@@ -1654,6 +1656,7 @@ country_event = {
 #未花
 country_event = {
 	id = BA_Shittem.1354
+	is_triggered_only = yes
 	inline_script = {
 		script = Leader/SP_recruit
 		Leader = Mika
@@ -1669,6 +1672,7 @@ country_event = {
 #优香
 country_event = {
 	id = BA_Shittem.1355
+	is_triggered_only = yes
 	inline_script = {
 		script = Leader/SP_recruit
 		Leader = Yuuka
@@ -1699,6 +1703,7 @@ country_event = {
 #亚津子
 country_event = {
 	id = BA_Shittem.1356
+	is_triggered_only = yes
 	inline_script = {
 		script = Leader/SP_recruit
 		Leader = Atsuko
@@ -1709,6 +1714,7 @@ country_event = {
 #纱织
 country_event = {
 	id = BA_Shittem.1357
+	is_triggered_only = yes
 	inline_script = {
 		script = Leader/SP_recruit
 		Leader = Saori
@@ -1720,6 +1726,7 @@ country_event = {
 #忧
 country_event = {
 	id = BA_Shittem.1359
+	is_triggered_only = yes
 	inline_script = {
 		script = Leader/SP_recruit
 		Leader = Ui
@@ -2108,7 +2115,11 @@ country_event = {
 		}
 	}
 	##### 阿里乌斯起源 #####
-	## 委托模板参照K01
+	## 委托旗帜：
+	#      未解锁：无flag
+	#      已解锁未接受：allow
+	#      已接受未完成：allow accepted
+	#      已完成：无flag或特定的flag
 	#K01
 	option = {
 		name = commmission.Kyrie_01_A		#A项 用于接受委托
@@ -2136,8 +2147,7 @@ country_event = {
 			has_country_flag = BA_Kyrie_commmission_01_accepted			#还没接受委托就想领奖励？
 		}
 		allow = {
-			#已接受未完成文本，不解释了
-			custom_tooltip = {
+			custom_tooltip_fail = {
 				text = BA_commission_accepted_unfinished
 				#这个完成标识可以换成别的判断条件
 				has_country_flag = BA_Kyrie_commmission_01_finished
@@ -2158,9 +2168,7 @@ country_event = {
 			}
 		}
 		#收货，发奖
-		add_resource = {
-			sr_keystone = 50
-		}
+		BA_Kyrie_commmission_01_bounce = yes
 	}
 	#K02
 	option = {
@@ -2200,10 +2208,7 @@ country_event = {
 				value = 1
 			}
 		}
-		add_resource = {
-			sr_eligma = 10
-			society_research = 2000
-		}
+		BA_Kyrie_commmission_02_bounce = yes
 	}
 	#K03
 	option = {
@@ -2246,11 +2251,7 @@ country_event = {
 				value = 1
 			}
 		}
-		add_resource = {
-			alloys = -200
-			sr_pyroxenes = 100
-			sr_eligma = 20
-		}
+		BA_Kyrie_commmission_03_bounce = yes
 	}
 	#K04
 	option = {
@@ -2297,16 +2298,7 @@ country_event = {
 				value = 1
 			}
 		}
-		add_resource = {
-			volatile_motes = -40
-			food = -400
-			sr_pyroxenes = 100
-			sr_eligma = 30
-		}
-		add_monthly_resource_mult = {
-			resource = unity
-			value = 12
-		}
+		BA_Kyrie_commmission_04_bounce = yes
 	}
 	##### 伊甸条约起源 #####
 	#E01
@@ -2350,10 +2342,7 @@ country_event = {
 				value = 1
 			}
 		}
-		add_resource = {
-			influence = -500
-			sr_eligma = 80
-		}
+		BA_EdenTreaty_commmission_01_bounce = yes
 	}
 	#####    通用     #####
 	#N00 青辉石委托
@@ -2366,7 +2355,7 @@ country_event = {
 			}
 		}
 		allow = {
-			custom_tooltip = {
+			custom_tooltip_fail = {
 				text = project_pyroxenes_crafting_limit
 				check_variable = {
 					which = BA_commission_count
@@ -2405,13 +2394,7 @@ country_event = {
 				which = BA_commission_count
 				value = 1
 			}
-		}
-		add_resource = {
-			sr_eligma = 20
-		}
-		add_research_option = tech_BA_pyroxenes_crafting
-		capital_scope = {
-			add_building = building_BA_pyroxenes_1
+			BA_Normal_commmission_00_bounce = yes
 		}
 	}
 	#N01
@@ -2440,6 +2423,7 @@ country_event = {
 				text = BA_commission_accepted_unfinished
 				any_owned_planet = {
 					OR = {
+						has_building = building_BA_club_room
 						has_building = building_research_lab_1
 						has_building = building_research_lab_2
 						has_building = building_research_lab_3
@@ -2457,9 +2441,7 @@ country_event = {
 				value = 1
 			}
 		}
-		add_resource = {
-			sr_eligma = 20
-		}
+		BA_Normal_commmission_01_bounce = yes
 	}
 	#N02
 	option = {
@@ -2502,10 +2484,7 @@ country_event = {
 				value = 1
 			}
 		}
-		add_resource = {
-			energy = -1000
-			sr_eligma = 20
-		}
+		BA_Normal_commmission_02_bounce = yes
 	}
 	#N03
 	option = {
@@ -2548,10 +2527,7 @@ country_event = {
 				value = 1
 			}
 		}
-		add_resource = {
-			consumer_goods = -500
-			sr_eligma = 20
-		}
+		BA_Normal_commmission_03_bounce = yes
 	}
 	#N04
 	option = {
@@ -2594,10 +2570,7 @@ country_event = {
 				value = 1
 			}
 		}
-		add_resource = {
-			food = -3000
-			sr_eligma = 20
-		}
+		BA_Normal_commmission_04_bounce = yes
 	}
 	#N05
 	option = {
@@ -2644,14 +2617,7 @@ country_event = {
 				value = 1
 			}
 		}
-		add_resource = {
-			rare_crystals = -40
-			alloys = -200
-			sr_eligma = 30
-		}
-		add_modifier = {
-			modifier = modifier_BA_survey
-		}
+		BA_Normal_commmission_05_bounce = yes
 	}
 	#N06
 	option = {
@@ -2698,11 +2664,7 @@ country_event = {
 				value = 1
 			}
 		}
-		add_resource = {
-			exotic_gases = -40
-			minerals = -400
-			sr_eligma = 30
-		}
+		BA_Normal_commmission_06_bounce = yes
 	}
 	#N07（反光环武器
 	option = {
@@ -2742,9 +2704,7 @@ country_event = {
 				value = 1
 			}
 		}
-		add_resource = {
-			sr_eligma = 50
-		}
+		BA_Normal_commmission_07_bounce = yes
 	}
 	#N08（姬器人委托1
 	option = {
@@ -2801,10 +2761,7 @@ country_event = {
 				days = 1
 			}
 		}
-		add_resource = {
-			alloys = -1000
-			sr_eligma = 40
-		}
+		BA_Normal_commmission_08_bounce = yes
 	}
 	#N09（姬器人委托2
 	option = {
@@ -2854,28 +2811,13 @@ country_event = {
 				value = 1
 			}
 		}
-		add_resource = {
-			alloys = -1000
-			consumer_goods = -1000
-			sr_eligma = 40
-		}
 		set_country_flag = BA_Aris
 		set_country_flag = BA_Normal_commission_10_allow
 		set_timed_country_flag = {
 			flag = BA_Normal_commission_10_delaying
 			days = 720
 		}
-		capital_scope = {
-			create_pop = {
-				species = event_target:BA_Robot_species
-			}
-			create_pop = {
-				species = event_target:BA_Robot_species
-			}
-			create_pop = {
-				species = event_target:BA_Robot_species
-			}
-		}
+		BA_Normal_commmission_09_bounce = yes
 	}
 	#N10（姬器人委托3
 	option = {
@@ -2978,17 +2920,12 @@ country_event = {
 				value = 1
 			}
 		}
-		add_resource = {
-			alloys = -1000
-			consumer_goods = -1000
-			sr_eligma = 40
-		}
 	}
 	##########
 }
 
-#### on_action触发，定时类委托触发器
-#无区别类委托
+#### on_action触发，定时类委托触发
+#委托触发器
 country_event = {
 	id = BA_Shittem.2001
 	hide_window = yes
@@ -3001,7 +2938,6 @@ country_event = {
 			trigger = years_passed
 			3 = {
 				set_country_flag = BA_Normal_commission_01_allow
-				set_country_flag = BA_Normal_commission_03_allow
 			}
 			5 = {
 				set_country_flag = BA_Normal_commission_02_allow
@@ -3019,47 +2955,42 @@ country_event = {
 				remove_country_flag = BA_Normal_commission_01_allow
 			}
 		}
-	}
-}
-
-#伊甸条约
-country_event = {
-	id = BA_Shittem.2002
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_authority = auth_kivotos
-		has_origin = origin_Kivotos_Eden_treaty
-	}
-	immediate = {
-		switch = {
-			trigger = years_passed
-			5 = {
-				set_country_flag = BA_EdenTreaty_commmission_01_allow
+		if = {
+			limit = {
+				has_country_flag = BA_Publishing_department
+				years_passed = 20
+			}
+			set_country_flag = BA_Normal_commission_03_allow
+		}
+		#伊甸条约
+		if = {
+			limit = {
+				has_origin = origin_Kivotos_Eden_treaty
+			}
+			switch = {
+				trigger = years_passed
+				5 = {
+					set_country_flag = BA_EdenTreaty_commmission_01_allow
+				}
+			}
+		}
+		#阿里乌斯
+		if = {
+			limit = {
+				has_origin = origin_Kivotos_Eden_treaty
+			}
+			switch = {
+				trigger = years_passed
+				10 = {
+					set_country_flag = BA_Kyrie_commmission_04_allow
+				}
 			}
 		}
 	}
 }
 
-#阿里乌斯
-country_event = {
-	id = BA_Shittem.2003
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_authority = auth_kivotos
-		has_origin = origin_Kivotos_Kyrie
-	}
-	immediate = {
-		switch = {
-			trigger = years_passed
-			10 = {
-				set_country_flag = BA_Kyrie_commmission_04_allow
-			}
-		}
-	}
-}
-
+#委托检测器
+### test
 #其他方式触发
 ship_event = {
 	id = BA_Shittem.2004

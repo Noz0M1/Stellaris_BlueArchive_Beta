@@ -186,6 +186,7 @@ tech_BA_gate_build = {
 #### 飞升科技
 #初步光环理论（基础路线 1阶）
 tech_BA_Preliminary_ring_theory = {
+	icon = tech_BA_Aris_uplifting
 	area = society
 	cost = @tier2cost1
 	tier = 2
@@ -207,6 +208,7 @@ tech_BA_Preliminary_ring_theory = {
 
 #光环解析装置（基础路线 2阶）
 tech_BA_Ring_resolution_device = {
+	icon = tech_BA_Aris_uplifting
 	area = physics
 	cost = @tier2cost2
 	tier = 2
@@ -244,6 +246,7 @@ tech_BA_Ring_resolution_device = {
 
 #光环增幅实验（基础路线 3阶-改造路线飞升前置）
 tech_BA_Halo_power_increase = {
+	icon = tech_BA_Aris_uplifting
 	area = society
 	cost = @tier2cost3
 	tier = 2
@@ -287,6 +290,7 @@ tech_BA_Halo_power_increase = {
 
 #神性解放理论（基础路线 3阶-解放路线飞升前置）
 tech_BA_Divine_liberation_theory = {
+	icon = tech_BA_Aris_uplifting
 	area = society
 	cost = @tier2cost3
 	tier = 2
@@ -330,6 +334,7 @@ tech_BA_Divine_liberation_theory = {
 
 #光环编码：外环（改造路线 1阶）
 tech_BA_Halo_coding_outline = {
+	icon = tech_BA_Aris_uplifting
 	area = physics
 	cost = @tier3cost3
 	tier = 3
@@ -364,6 +369,7 @@ tech_BA_Halo_coding_outline = {
 
 #光环编码：空区（改造路线 2阶）
 tech_BA_Halo_coding_space = {
+	icon = tech_BA_Aris_uplifting
 	area = physics
 	cost = @tier4cost2
 	tier = 3
@@ -398,6 +404,7 @@ tech_BA_Halo_coding_space = {
 
 #光环编码：内环（改造路线 3阶）
 tech_BA_Halo_coding_inner = {
+	icon = tech_BA_Aris_uplifting
 	area = physics
 	cost = @tier5cost1
 	tier = 5
@@ -433,6 +440,7 @@ tech_BA_Halo_coding_inner = {
 
 #神性解放实验（解放路线 1阶）
 tech_BA_Preliminary_divine_liberation = {
+	icon = tech_BA_Aris_uplifting
 	area = society
 	cost = @tier3cost3
 	tier = 3
@@ -458,6 +466,7 @@ tech_BA_Preliminary_divine_liberation = {
 
 #青辉石外接增幅器（解放路线 2阶）
 tech_BA_Halo_amplifier = {
+	icon = tech_BA_Aris_uplifting
 	area = physics
 	cost = @tier4cost2
 	tier = 4
@@ -485,6 +494,7 @@ tech_BA_Halo_amplifier = {
 
 #外接增幅器升级（解放路线 3阶）
 tech_BA_amplifier_upgrade = {
+	icon = tech_BA_Aris_uplifting
 	area = physics
 	cost = @tier5cost1
 	tier = 5
@@ -606,8 +616,27 @@ tech_BA_club_Game_development_department_04 = {
 ## 对策委员会
 ## 茶会
 ## 温泉开发部
+tech_BA_club_Hotspring_development_department_00 = {
+	icon =  tech_BA_club_Hotspring_development_department
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = {
+		school_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_club_Hotspring_development_department_01_title
+		}
+	}
+	weight = 0
+}
+
 tech_BA_club_Hotspring_development_department_01 = {
-	icon = tech_volatile_motes
+	icon =  tech_BA_club_Hotspring_development_department
 	area = engineering
 	cost = @tier2cost3
 	tier = 2
@@ -626,7 +655,7 @@ tech_BA_club_Hotspring_development_department_01 = {
 }
 
 tech_BA_club_Hotspring_development_department_02 = {
-	icon = tech_volatile_motes
+	icon = tech_BA_club_Hotspring_development_department
 	area = engineering
 	cost = @tier3cost3
 	tier = 3
@@ -648,7 +677,7 @@ tech_BA_club_Hotspring_development_department_02 = {
 }
 
 tech_BA_club_Hotspring_development_department_03 = {
-	icon = tech_volatile_motes
+	icon = tech_BA_club_Hotspring_development_department
 	area = engineering
 	cost = @tier4cost3
 	tier = 4
@@ -664,6 +693,94 @@ tech_BA_club_Hotspring_development_department_03 = {
 	prereqfor_desc = {
 		custom = {
 			title = tech_BA_club_Hotspring_development_department_03_title
+		}
+	}
+	weight = 0
+}
+
+tech_BA_club_Hotspring_development_department_04 = {
+	icon = tech_BA_club_Hotspring_development_department
+	area = engineering
+	cost = @tier5cost1
+	tier = 5
+	category = {
+		school_tech
+	}
+	prerequisites = {
+		tech_BA_club_Hotspring_development_department_03
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_club_Hotspring_development_department_04_title
+		}
+	}
+	weight = 0
+}
+
+tech_BA_club_Hotspring_development_department_05 = {
+	icon = tech_BA_club_Hotspring_development_department
+	area = engineering
+	cost = @tier5cost2
+	tier = 5
+	category = {
+		school_tech
+	}
+	prerequisites = {
+		tech_BA_club_Hotspring_development_department_04
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_club_Hotspring_development_department_05_title
+		}
+	}
+	weight = 0
+}
+
+tech_BA_club_Hotspring_development_department_06 = {
+	icon = tech_BA_club_Hotspring_development_department
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	category = {
+		school_tech
+	}
+	prerequisites = {
+		tech_BA_club_Hotspring_development_department_05
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_club_Hotspring_development_department_06_title
+		}
+	}
+	weight = 0
+}
+
+tech_BA_club_Hotspring_development_department_07 = {
+	icon = tech_BA_club_Hotspring_development_department
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	category = {
+		school_tech
+	}
+	prerequisites = {
+		tech_BA_club_Hotspring_development_department_06
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_club_Hotspring_development_department_07_title
 		}
 	}
 	weight = 0

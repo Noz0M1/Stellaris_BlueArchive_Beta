@@ -9,7 +9,6 @@ tech_BA_SPW_Standard_SG_1 = {
 	tier = 3
 	is_reverse_engineerable = no
 	prerequisites = {
-		#TODO:前置科技
 	}
 	prereqfor_desc = {
 
@@ -30,7 +29,8 @@ tech_BA_SPW_Standard_SG_2 = {
 	tier = 4
 	is_reverse_engineerable = no
 	prerequisites = {
-		#TODO:前置科技
+		tech_BA_SPW_Standard_SG_1
+		tech_BA_pyroxenes_using
 	}
 	prereqfor_desc = {
 
@@ -51,7 +51,8 @@ tech_BA_SPW_Standard_SG_3 = {
 	tier = 5
 	is_reverse_engineerable = no
 	prerequisites = {
-		#TODO:前置科技
+		tech_BA_SPW_Standard_SG_2
+		tech_BA_keystone_crafting
 	}
 	prereqfor_desc = {
 
@@ -72,7 +73,8 @@ tech_BA_SPW_Standard_GL_1 = {
 	tier = 4
 	is_reverse_engineerable = no
 	prerequisites = {
-		#TODO:前置科技
+		tech_torpedoes_1
+		tech_BA_keystone_crafting
 	}
 	prereqfor_desc = {
 
@@ -93,7 +95,8 @@ tech_BA_SPW_Standard_GL_2 = {
 	tier = 5
 	is_reverse_engineerable = no
 	prerequisites = {
-		#TODO:前置科技
+		tech_BA_SPW_Standard_GL_1
+		tech_BA_keystone_crafting
 	}
 	prereqfor_desc = {
 
@@ -114,7 +117,7 @@ tech_BA_SPW_Standard_SMG_1 = {
 	tier = 3
 	is_reverse_engineerable = no
 	prerequisites = {
-		#TODO:前置科技
+		tech_mass_drivers_4
 	}
 	prereqfor_desc = {
 
@@ -135,7 +138,8 @@ tech_BA_SPW_Standard_SMG_2 = {
 	tier = 4
 	is_reverse_engineerable = no
 	prerequisites = {
-		#TODO:前置科技
+		tech_BA_SPW_Standard_SMG_1
+		tech_BA_pyroxenes_using
 	}
 	prereqfor_desc = {
 
@@ -156,7 +160,8 @@ tech_BA_SPW_Standard_SMG_3 = {
 	tier = 5
 	is_reverse_engineerable = no
 	prerequisites = {
-		#TODO:前置科技
+		tech_BA_SPW_Standard_SMG_2
+		tech_BA_keystone_crafting
 	}
 	prereqfor_desc = {
 
@@ -177,7 +182,7 @@ tech_BA_SPW_Standard_AR_1 = {
 	tier = 4
 	is_reverse_engineerable = no
 	prerequisites = {
-		#TODO:前置科技
+		tech_mass_drivers_2
 	}
 	prereqfor_desc = {
 
@@ -198,7 +203,8 @@ tech_BA_SPW_Standard_AR_2 = {
 	tier = 5
 	is_reverse_engineerable = no
 	prerequisites = {
-		#TODO:前置科技
+		tech_BA_SPW_Standard_AR_1
+		tech_BA_pyroxenes_using
 	}
 	prereqfor_desc = {
 
@@ -219,7 +225,7 @@ tech_BA_SPW_Standard_SR_1 = {
 	tier = 3
 	is_reverse_engineerable = no
 	prerequisites = {
-		#TODO:前置科技
+		tech_mass_drivers_4
 	}
 	prereqfor_desc = {
 
@@ -240,7 +246,8 @@ tech_BA_SPW_Standard_SR_2 = {
 	tier = 4
 	is_reverse_engineerable = no
 	prerequisites = {
-		#TODO:前置科技
+		tech_BA_SPW_Standard_SR_1
+		tech_BA_pyroxenes_using
 	}
 	prereqfor_desc = {
 
@@ -261,7 +268,8 @@ tech_BA_SPW_Standard_SR_3 = {
 	tier = 5
 	is_reverse_engineerable = no
 	prerequisites = {
-		#TODO:前置科技
+		tech_BA_SPW_Standard_SR_2
+		tech_BA_keystone_crafting
 	}
 	prereqfor_desc = {
 
@@ -282,7 +290,7 @@ tech_BA_SPW_Standard_MG_1 = {
 	tier = 3
 	is_reverse_engineerable = no
 	prerequisites = {
-		#TODO:前置科技
+		tech_mass_drivers_2
 	}
 	prereqfor_desc = {
 
@@ -303,7 +311,8 @@ tech_BA_SPW_Standard_MG_2 = {
 	tier = 4
 	is_reverse_engineerable = no
 	prerequisites = {
-		#TODO:前置科技
+		tech_BA_SPW_Standard_MG_1
+		tech_BA_pyroxenes_using
 	}
 	prereqfor_desc = {
 
@@ -324,7 +333,8 @@ tech_BA_SPW_Standard_MG_3 = {
 	tier = 5
 	is_reverse_engineerable = no
 	prerequisites = {
-		#TODO:前置科技
+		tech_BA_SPW_Standard_MG_2
+		tech_BA_keystone_crafting
 	}
 	prereqfor_desc = {
 
@@ -368,7 +378,9 @@ tech_BA_SPW_Standard_RG = {
 	is_dangerous = yes
 	is_reverse_engineerable = no
 	prerequisites = {
-		#TODO:前置科技
+		tech_battleships
+		tech_disruptors_3
+		tech_BA_pyroxenes_using
 	}
 	prereqfor_desc = {
 
@@ -430,7 +442,8 @@ tech_BA_SPW_Base_G = {
 			value > 0
 		}
 	}
-	weight = 10
+	#weight = 10
+	weight = 0
 }
 
 tech_BA_SPW_Base_L = {
@@ -460,7 +473,8 @@ tech_BA_SPW_Base_L = {
 			value > 0
 		}
 	}
-	weight = 10
+	#weight = 10
+	weight = 0
 }
 
 tech_BA_SPW_Base_M = {
@@ -490,7 +504,8 @@ tech_BA_SPW_Base_M = {
 			value > 0
 		}
 	}
-	weight = 10
+	#weight = 10
+	weight = 0
 }
 
 tech_BA_SPW_Base_P = {
@@ -520,7 +535,8 @@ tech_BA_SPW_Base_P = {
 			value > 0
 		}
 	}
-	weight = 12
+	#weight = 12
+	weight = 0
 }
 
 tech_BA_SPW_Base_S = {
@@ -550,7 +566,8 @@ tech_BA_SPW_Base_S = {
 			value > 0
 		}
 	}
-	weight = 50
+	#weight = 50
+	weight = 0
 }
 
 tech_BA_SPW_Base_X = {
@@ -580,7 +597,8 @@ tech_BA_SPW_Base_X = {
 			value > 0
 		}
 	}
-	weight = 8
+	#weight = 8
+	weight = 0
 }
 
 tech_BA_SPW_Base_T = {
@@ -610,7 +628,8 @@ tech_BA_SPW_Base_T = {
 			value > 0
 		}
 	}
-	weight = 8
+	#weight = 8
+	weight = 0
 }
 
 ### G

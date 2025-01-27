@@ -4,7 +4,7 @@ option = {
     response_text = Hotspring_development_department_research.$CHARA$RE
     trigger = {
         NOT = {
-            has_technology = tech_BA_club_Hotspring_development_department_03
+            has_technology = tech_BA_club_Hotspring_development_department_07
         }
     }
     allow = {
@@ -74,6 +74,42 @@ option = {
             }
         }
         add_research_option = tech_BA_club_Hotspring_development_department_03
+    }
+    else_if = {
+        limit = {
+            check_variable = {
+                which = Hotspring_development_department_megastructure_produce
+                value = 4
+            }
+        }
+        add_research_option = tech_BA_club_Hotspring_development_department_04
+    }
+    else_if = {
+        limit = {
+            check_variable = {
+                which = Hotspring_development_department_megastructure_produce
+                value = 5
+            }
+        }
+        add_research_option = tech_BA_club_Hotspring_development_department_05
+    }
+    else_if = {
+        limit = {
+            check_variable = {
+                which = Hotspring_development_department_megastructure_produce
+                value = 6
+            }
+        }
+        add_research_option = tech_BA_club_Hotspring_development_department_06
+    }
+    else_if = {
+        limit = {
+            check_variable = {
+                which = Hotspring_development_department_megastructure_produce
+                value = 7
+            }
+        }
+        add_research_option = tech_BA_club_Hotspring_development_department_07
     }
     hidden_effect = {
         set_country_flag = Hotspring_development_department_research_undone

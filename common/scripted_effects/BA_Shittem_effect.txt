@@ -78,6 +78,160 @@ BA_Shittem_get_stockpile = {
 	}
 }
 
+###    委托
+BA_Kyrie_commmission_01_bounce = {
+	add_resource = {
+		sr_eligma = 50
+	}
+	add_monthly_resource_mult = {
+		resource = energy
+		value = 5
+	}
+}
+
+BA_Kyrie_commmission_02_bounce = {
+	add_resource = {
+		society_research = 3000
+		sr_eligma = 50
+	}
+}
+
+BA_Kyrie_commmission_03_bounce = {
+	add_resource = {
+		alloys = -200
+		sr_eligma = 50
+	}
+	add_monthly_resource_mult = {
+		resource = unity
+		value = 12
+	}
+}
+
+BA_Kyrie_commmission_04_bounce = {
+	add_resource = {
+		volatile_motes = -40
+		food = -400
+		sr_eligma = 50
+	}
+	add_monthly_resource_mult = {
+		resource = unity
+		value = 12
+	}
+}
+
+BA_EdenTreaty_commmission_01_bounce = {
+	add_resource = {
+		influence = -500
+		sr_eligma = 200
+	}
+}
+
+BA_Normal_commmission_00_bounce = {
+	add_resource = {
+		sr_eligma = 50
+	}
+	add_research_option = tech_BA_pyroxenes_crafting
+	capital_scope = {
+		add_building = building_BA_pyroxenes_1
+	}
+}
+
+BA_Normal_commmission_01_bounce = {
+	add_resource = {
+		sr_eligma = 50
+	}
+}
+
+BA_Normal_commmission_02_bounce = {
+	add_resource = {
+		energy = -1000
+		sr_eligma = 50
+	}
+}
+
+BA_Normal_commmission_03_bounce = {
+	add_resource = {
+		consumer_goods = -500
+		sr_eligma = 50
+	}
+
+}
+
+BA_Normal_commmission_04_bounce = {
+	add_resource = {
+		food = -3000
+		sr_eligma = 50
+	}
+
+}
+
+BA_Normal_commmission_05_bounce = {
+	add_resource = {
+		rare_crystals = -40
+		alloys = -200
+		sr_eligma = 100
+	}
+	add_modifier = {
+		modifier = modifier_BA_survey
+	}
+
+}
+
+BA_Normal_commmission_06_bounce = {
+	add_resource = {
+		exotic_gases = -40
+		minerals = -400
+		sr_eligma = 100
+	}
+
+}
+
+BA_Normal_commmission_07_bounce = {
+	add_resource = {
+		sr_eligma = 150
+	}
+
+}
+
+BA_Normal_commmission_08_bounce = {
+	add_resource = {
+		alloys = -1000
+		sr_eligma = 50
+	}
+
+}
+
+BA_Normal_commmission_09_bounce = {
+	add_resource = {
+		alloys = -1000
+		consumer_goods = -1000
+		sr_eligma = 50
+	}
+	capital_scope = {
+		create_pop = {
+			species = event_target:BA_Robot_species
+		}
+		create_pop = {
+			species = event_target:BA_Robot_species
+		}
+		create_pop = {
+			species = event_target:BA_Robot_species
+		}
+	}
+
+}
+
+BA_Normal_commmission_10_bounce = {
+
+}
+
+BA_Normal_commmission_11_bounce = {
+	add_resource = {
+		sr_eligma = 40
+	}
+}
+
+
 ####   社团
 #社团容量相关 country scope
 BA_club_cap_add = {

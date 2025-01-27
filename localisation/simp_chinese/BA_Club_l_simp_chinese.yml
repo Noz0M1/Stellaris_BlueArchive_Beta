@@ -11,14 +11,15 @@
  BA_club_no_spounce: "无赞助"
  BA_club_no_spounce_desc: "各个社团已经从自己的所属学园获得了经费，无需额外拨款。"
  BA_club_lv1_spounce: "活动级拨款"
- BA_club_lv1_spounce_desc: "将社团作为年度的活动来规划拨款，为社团部员们提供更好的活动条件。\n$BA_club_lv1_tip$"
+ BA_club_lv1_spounce_desc: "将社团作为年度的活动来规划拨款，为社团部员们提供更好的活动条件。"
  BA_club_lv2_spounce: "设施级拨款"
- BA_club_lv2_spounce_desc: "将社团消耗视为基础设施的维护费用进行拨款，提供更高的创作自由度和活动规模\n$BA_club_lv1_tip$$BA_club_lv2_tip$"
+ BA_club_lv2_spounce_desc: "将社团消耗视为基础设施的维护费用进行拨款，提供更高的创作自由度和活动规模。"
  BA_club_lv3_spounce: "战略级拨款"
- BA_club_lv3_spounce_desc: "社团关乎我们的生死存亡，必须大力投入。\n$BA_club_lv1_tip$$BA_club_lv2_tip$$BA_club_lv3_tip$"
- BA_club_lv1_tip:0 "  社团部室的维护费增加，并依据已建立的太空社团部室，提供独特的§Y帝国修正§!\n"
- BA_club_lv2_tip:0 "  社团部室及相关巨构的产出增加\n"
- BA_club_lv3_tip:0 "  £job_BA_club_members£$BA_club_pop$的维护费和产出增加\n"
+ BA_club_lv3_spounce_desc: "社团关乎我们的生死存亡，必须大力投入。"
+ BA_club_nospounce_tip:0 "  取消其他拨款级别的增益与维护费。"
+ BA_club_lv1_tip:0 "  社团部室的维护费增加，并依据已建立的太空社团部室，提供独特的§Y帝国修正§!。"
+ BA_club_lv2_tip:0 "  社团部室及相关巨构的产出增加。"
+ BA_club_lv3_tip:0 "  £job_BA_club_members£$BA_club_pop$的维护费和产出增加。"
 
 
  #
@@ -552,7 +553,7 @@
  Takane_desc3:0 "$Publishing_department_opinion$"
 
  Publishing_department_spevent:0 "我需要委托你们进行一轮加刊。"
- Publishing_department_spevent.tip:0 "消耗一些£food£$food$获得一些£consumer_goods£$consumer_goods$，同时增加主流思潮吸引力。出版部的维护费将少量提升。"
+ Publishing_department_spevent.tip:0 "基于当前的£pop£人口数，消耗一些£food£$food$并获得一些£consumer_goods£$consumer_goods$，同时增加主流思潮吸引力。出版部的维护费将少量提升。"
  Publishing_department_spevent.TakaneRE:0 "嗯，请您将策划案交给我们吧。"
 
  Publishing_department_building:0 "现在我们可以开设其他的编辑部了。"

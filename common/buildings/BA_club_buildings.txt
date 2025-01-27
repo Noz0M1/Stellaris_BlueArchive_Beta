@@ -159,8 +159,53 @@ building_BA_Locker_room = {
 	}
 }
 
-#############   社团建筑   #############
-#游戏开发部 +2/+5社团部员
+### 通用部室 +2/+5社团部员
+building_BA_club_room = {
+	icon = building_augmentation_center
+	base_buildtime = @club_room_time
+	category = government
+	position_priority = 22
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_club_members_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_SI_Millennium_G03
+			}
+		}
+		modifier = {
+			job_BA_club_members_add = 2
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+		}
+		upkeep = {
+			consumer_goods = 1
+			energy = 1
+		}
+	}
+}
+
+#############   社团建筑 +2/+5社团部员   #############
+#游戏开发部
 building_BA_Game_development_department = {
 	base_buildtime = @club_room_time
 	category = government
@@ -252,7 +297,7 @@ building_BA_Game_development_department = {
 	}
 }
 
-#工程师部 +2/+5社团部员
+#工程师部
 building_BA_Engineering_club = {
 	base_buildtime = @club_room_time
 	category = government
@@ -373,7 +418,7 @@ building_BA_Veritas = {
 	}
 }
 
-#阿拜多斯生产部门（本地） +社团部员
+#阿拜多斯生产部门
 building_BA_Foreclosure_task_force = {
 	base_buildtime = @club_room_time
 	category = government
@@ -431,7 +476,7 @@ building_BA_Foreclosure_task_force = {
 	}
 }
 
-#茶会办事处 +2/+5社团部员
+#茶会办事处
 building_BA_Teaparty_branch = {
 	base_buildtime = @club_room_time
 	category = government
@@ -486,7 +531,7 @@ building_BA_Teaparty_branch = {
 	}
 }
 
-#温泉开发部度假村 +3/+5社团部员
+#温泉开发部度假村
 building_BA_Hotspring_development_department = {
 	base_buildtime = @club_room_time
 	category = government
@@ -552,7 +597,7 @@ building_BA_Hotspring_development_department = {
 	}
 }
 
-#祭典运营委员会直营广场 +3/+5社团部员
+#祭典运营委员会直营广场
 building_BA_Festival_operations_department = {
 	base_buildtime = @club_room_time
 	category = government
@@ -618,7 +663,7 @@ building_BA_Festival_operations_department = {
 	}
 }
 
-#玄武商会贸易港 +3/+5社团部员
+#玄武商会贸易港
 building_BA_Xuanwu_promenade = {
 	base_buildtime = @club_room_time
 	category = government
@@ -684,7 +729,7 @@ building_BA_Xuanwu_promenade = {
 	}
 }
 
-#出版部编辑社 +3/+5社团部员
+#出版部编辑社
 building_BA_Publishing_department = {
 	base_buildtime = @club_room_time
 	category = government

@@ -1198,6 +1198,15 @@ BA_club_station_Publishing_department = {
 		}
 		upkeep = {
 			trigger = {
+				owner = {
+					has_modifier = modifier_BA_Publishing_department
+				}
+			}
+			energy = 0.01
+			multiplier = value:num_BA_club_publish_value
+		}
+		upkeep = {
+			trigger = {
 				has_policy_flag = club_lv1_spounce
 			}
 			energy = 20
@@ -1336,7 +1345,7 @@ BA_Hotspring_mine_station = {
 		cost = {
 			alloys = 200
 			unity = 500
-			sr_eligma = 20
+			sr_eligma = 50
 		}
 		cost = {
 			alloys = 200
@@ -1395,9 +1404,9 @@ BA_Hotspring_mine_station = {
 			has_no_non_gate_megastructure = yes
 		}
 	}
-
-	prerequisites = { }
-
+	prerequisites = {
+		tech_BA_club_Hotspring_development_department_00
+	}
 	on_build_start = {
 	}
 	on_build_cancel = {

@@ -166,6 +166,10 @@
 
  BA_Shittem.2000.title:0 "委托"
  BA_Shittem.2000.desc:0 "学生们会向Schale提出各种各样的请求。也许她们是公务相禀，也许是私下里的小请求。这些琐事只需片刻就可以完成，Arona会一直在这里帮您的。\n\n\n\n（已完成委托数：[Root.BA_commission_count]）"
+ BA_Shittem.2001.title:0 "委托完成"
+ BA_Shittem.2001.desc:0 "委托的收益已经计入资源储备，辛勤的工作有了回报。\n（本次完成委托数：[Root.BA_commissiont_this_count]）"
+ BA_Shittem.2001.comfirm:0 "已查收。"
+
  Kyrie_ruins:0 "临时加固废墟"
  Kyrie_ruins.response:0 "Arona已经计算出了容易产生这种废墟障碍的地方，并通知工程队前去加固了！不过这种措施最多只能坚持§Y2年§!哦。"
  Kyrie_ruins.tip:0 "资源不足或尚在有效期内"
@@ -235,7 +239,7 @@
  commmission.Normal_01_A:0 "科研部门扩充请求"
  BA_Normal_commission_01_A:0 "“老师，这是统括室的那些研究者们关于扩充自身规模的预算书。让Arona先看看……咳咳。星际时代，科技的重要性不言而喻，没有科技就没有基沃托斯的未来……呃，感觉都是些说烂的了道理呢……不过，和以前的基沃托斯不同，现在科研的重要性不言而喻。而且我们现在科研的§Y每月数值§!……什么，那不是Arona该看到的东西？哈啊！难，难道这里有什么不干净的东西吗？唔……”\n\n（在母星或任意殖民地上建立一个§Y研究实验室§!建筑）（完成后，我们可以得到20£sr_eligma£神名文字）"
  commmission.Normal_01_B:0 "$commmission.Normal_01_A$"
- BA_Normal_commission_01_tip:0 "在母星或任意殖民地上建立一个§Y研究实验室§!建筑。"
+ BA_Normal_commission_01_tip:0 "在母星或任意殖民地上建立一个§Y$building_BA_club_room$§!或任意等级的§Y$building_research_lab_1$§!建筑。"
  BA_Normal_commission_01_B:0 "“我们只是做了应该做的工作而已……总之，老师，辛苦了。”"
 
  commmission.Normal_02_A:0 "分析异常材料"
@@ -245,13 +249,13 @@
  BA_Normal_commission_02_B:0 "“能得到什么结果，Arona还是很期待的。老师，辛苦了。”"
 
  commmission.Normal_03_A:0 "出版物印刷"
- BA_Normal_commission_03_A:0 "“老师，收到了一位学生未署名的讯息，她说她很喜欢看杂志，但最近几个月无论是书店还是二手市场都找不到一本杂志了……说起来这也是难免的事情，进入太空时代以来，基沃托斯的出版机构从原料到渠道都被挤兑，产量严重不足。老师，如果条件允许，可以在这个方面小小投资一笔……”\n\n（提交500£consumer_goods£消费品）（完成后，我们可以得到20£sr_eligma£神名文字）"
+ BA_Normal_commission_03_A:0 "“老师，收到了一位学生未署名的讯息，她说她很喜欢看杂志，但最近几个月无论是书店还是二手市场都找不到一本杂志了……说起来这也是难免的事情，进入太空时代以来，基沃托斯的出版机构从原料到渠道都被挤兑，产量严重不足。老师，既然现在我们有了出版部的建设，如果条件允许，可以在这个方面小小投资一笔……”\n\n（提交500£consumer_goods£消费品）（完成后，我们可以得到20£sr_eligma£神名文字）"
  commmission.Normal_03_B:0 "$commmission.Normal_03_A$"
  BA_Normal_commission_03_tip:0 "提交500£consumer_goods£消费品"
- BA_Normal_commission_03_B:0 "“Arona会去和出版机构协商的，只要学生们能尽早看到好看的杂志就好。老师，辛苦了。”"
+ BA_Normal_commission_03_B:0 "“Arona会去和出版部协商的，只要学生们能尽早看到好看的杂志就好。老师，辛苦了。”"
 
  commmission.Normal_04_A:0 "给食改善"
- BA_Normal_commission_04_A:0 "“老师，最近给食部收到的投诉信越来越多，大量的信都是在抱怨给食量少又难吃，可是据Arona所知，来值日的学生们吃的都还不错来着……欸，给食部的经费只有采矿部门在给，却还要供自警团和配给部门的餐饮吗，Arona还是第一次知道这种事情的说……呃，怎么投诉信都是配给部门在写！别打听太多……是什么意思？啊，不管怎样，采矿可是基沃托斯的支柱产业，采矿的学生们吃的不好这种事绝对不能容忍！”\n\n（提交3000£food£食物）（完成后，我们可以得到20£sr_eligma£神名文字）"
+ BA_Normal_commission_04_A:0 "“老师，最近给食部收到的投诉信越来越多，大量的信都是在抱怨给食量少又难吃，可是据Arona所知，来值日的学生们吃的都还不错来着……欸，给食部的经费只有采矿部门在给，却还要供自警团和配给部门的餐饮吗，Arona还是第一次知道这种事情的说……\n呃，怎么投诉信都是配给部门在写！§R别打听太多§!……是什么意思？啊，不管怎样，采矿可是基沃托斯的支柱产业，采矿的学生们吃的不好这种事绝对不能容忍！”\n\n（提交3000£food£食物）（完成后，我们可以得到20£sr_eligma£神名文字）"
  commmission.Normal_04_B:0 "$commmission.Normal_04_A$"
  BA_Normal_commission_04_tip:0 "提交3000£food£食物。"
  BA_Normal_commission_04_B:0 "“联邦学生会的开销又增加了呢，这个月的流水……没什么，老师，辛苦了，啊呜……”"
@@ -293,12 +297,12 @@
  BA_Normal_commission_10_B:0 "……您问我怎么不高兴? 没怎么! 既然姬器人更可爱您就去找她们玩啊，哼!"
 
  commmission.Normal_11_A:0 "夏日百夜堂再开！"
- BA_Normal_commission_11_A:0 "“老师，这次是百鬼夜行的学生们发来的委托……请老师听一听这段语音信箱：\n\n‘您好，这里是百夜堂的静子，今年的夏天又快要到了，老师，百夜堂也要开始新一轮的夏日扩张计划了。这次，我发现了一块开发中止的海滩做基址，感觉那风景绝佳，老师要不要来看看呢？’”\n\n（清除首都上的£blocker£浅滩）（完成后，我们可以得到40£sr_eligma£神名文字）"
+ BA_Normal_commission_11_A:0 "“老师，这次是百鬼夜行的学生们发来的委托……请老师听一听这段语音信箱：\n\n‘您好，这里是§G河合静子§!，今年的夏天又快要到了，老师，百夜堂也要开始新一轮的夏日扩张计划了。这次，我发现了一块开发中止的海滩做基址，感觉那风景绝佳，老师要不要来看看呢？’”\n\n（清除首都上的£blocker£浅滩）（完成后，我们可以得到40£sr_eligma£神名文字）"
  commmission.Normal_11_B:0 "$commmission.Normal_11_A$"
- BA_Normal_commission_11_tip:0 "清除首都上的£blocker£浅滩，并等待后续事件链完成。"
+ BA_Normal_commission_11_tip:0 "清除首都上的£blocker£浅滩废墟。"
  BA_Normal_commission_11_B:0 "“百夜堂，百夜堂! 欸嘿嘿……”"
- d_BA_beach:0 "£blocker£浅滩"
- d_BA_beach_desc:0 "一处进行了部分开发的浅滩，是百夜堂下一步扩张的目标。"
+ d_BA_beach:0 "£blocker£浅滩废墟"
+ d_BA_beach_desc:0 "一处进行了部分开发但意外终止的浅滩，是百夜堂下一步扩张的目标。"
 
  #阿里乌斯
  commmission.Kyrie_01_A:0 "矿业协会计划书§R(重要)"

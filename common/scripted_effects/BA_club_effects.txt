@@ -266,7 +266,38 @@ BA_club_set_country_modifier = {
         }
         add_modifier = {
             modifier = modifier_BA_club_sponsor_Teaparty
-            multiplier = value:num_BA_club_empire_size_modifier_effect
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = BA_Hotspring_development_department
+        }
+        add_modifier = {
+            modifier = modifier_BA_club_sponsor_Hotspring_development_department
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = BA_Festival_operations_department
+        }
+        add_modifier = {
+            modifier = modifier_BA_club_sponsor_Festival_operations_department
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = BA_Xuanwu_promenade
+        }
+        add_modifier = {
+            modifier = modifier_BA_club_sponsor_Xuanwu_promenade
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = BA_Publishing_department
+        }
+        add_modifier = {
+            modifier = modifier_BA_club_sponsor_Publishing_department
         }
     }
 }

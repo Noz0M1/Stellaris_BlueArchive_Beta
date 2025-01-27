@@ -121,7 +121,10 @@ BA_club_spounce_clubs = {
 	option = {
 		name = BA_club_no_spounce
 		on_enabled = {
-			BA_club_clear_country_modifier = yes
+			custom_tooltip = BA_club_nospounce_tip
+			hidden_effect = {
+				BA_club_clear_country_modifier = yes
+			}
 		}
 		ai_weight = {
 			base = 10
@@ -129,14 +132,17 @@ BA_club_spounce_clubs = {
 	}
 	option = {
 		name = BA_club_lv1_spounce
-		potential = {
+		valid = {
 			has_technology = tech_capital_productivity_1
 		}
 		policy_flags = {
 			club_lv1_spounce
 		}
 		on_enabled = {
-			BA_club_set_country_modifier = yes
+			custom_tooltip = BA_club_lv1_tip
+			hidden_effect = {
+				BA_club_set_country_modifier = yes
+			}
 		}
 		ai_weight = {
 			base = 5
@@ -144,7 +150,7 @@ BA_club_spounce_clubs = {
 	}
 	option = {
 		name = BA_club_lv2_spounce
-		potential = {
+		valid = {
 			has_technology = tech_capital_productivity_2
 		}
 		policy_flags = {
@@ -152,7 +158,10 @@ BA_club_spounce_clubs = {
 			club_lv2_spounce
 		}
 		on_enabled = {
-			BA_club_set_country_modifier = yes
+			custom_tooltip = BA_club_lv2_tip
+			hidden_effect = {
+				BA_club_set_country_modifier = yes
+			}
 		}
 		ai_weight = {
 			base = 2
@@ -160,7 +169,7 @@ BA_club_spounce_clubs = {
 	}
 	option = {
 		name = BA_club_lv3_spounce
-		potential = {
+		valid = {
 			has_technology = tech_capital_productivity_3
 		}
 		policy_flags = {
@@ -169,7 +178,10 @@ BA_club_spounce_clubs = {
 			club_lv3_spounce
 		}
 		on_enabled = {
-			BA_club_set_country_modifier = yes
+			custom_tooltip = BA_club_lv3_tip
+			hidden_effect = {
+				BA_club_set_country_modifier = yes
+			}
 		}
 		ai_weight = {
 			base = 1

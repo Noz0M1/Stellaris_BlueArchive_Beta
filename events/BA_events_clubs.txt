@@ -2768,6 +2768,7 @@ country_event = {
 	}
 	option = {
 		name = BA_club.1501.next
+		add_research_option = tech_BA_club_Hotspring_development_department_00
 	}
 }
 
@@ -2820,7 +2821,7 @@ country_event = {
 	}
 }
 
-### 项目完成
+### 项目完成-1阶
 country_event = {
 	id = BA_club.1510
 	is_triggered_only = yes
@@ -2830,6 +2831,10 @@ country_event = {
 			last_increased_tech = tech_BA_club_Hotspring_development_department_01
 			last_increased_tech = tech_BA_club_Hotspring_development_department_02
 			last_increased_tech = tech_BA_club_Hotspring_development_department_03
+			last_increased_tech = tech_BA_club_Hotspring_development_department_04
+			last_increased_tech = tech_BA_club_Hotspring_development_department_05
+			last_increased_tech = tech_BA_club_Hotspring_development_department_06
+			last_increased_tech = tech_BA_club_Hotspring_development_department_07
 		}
 	}
 	immediate = {
@@ -3033,6 +3038,9 @@ country_event = {
 			set_timed_country_flag = {
 				flag = Xuanwu_promenade_trade_cooldown
 				days = 360
+			}
+			country_event = {
+				id = BA_club.1714
 			}
 		}
 	}
