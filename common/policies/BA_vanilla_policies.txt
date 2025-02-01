@@ -8,8 +8,6 @@ diplomatic_stance = {
 			is_country_type = primitive
 			is_country_type = awakened_marauders
 			is_country_type = mirrored_country
-            #################
-            is_BA_fallen_empire = yes
 		}
 	}
 	allow = {
@@ -618,7 +616,7 @@ diplomatic_stance = {
 		name = "diplo_stance_hunger"
 		icon = "GFX_diplomatic_stance_rest"
 		potential = {
-			has_authority = auth_hive_mind
+			is_hive_empire = yes
 		}
 		valid = {
 			has_valid_civic = civic_hive_devouring_swarm
@@ -636,7 +634,7 @@ diplomatic_stance = {
 		name = "diplo_stance_extermination"
 		icon = "GFX_diplomatic_stance_recompiling"
 		potential = {
-			has_authority = auth_machine_intelligence
+			is_machine_empire = yes
 		}
 		valid = {
 			has_valid_civic = civic_machine_terminator
@@ -811,19 +809,18 @@ diplomatic_stance = {
 			weight = 100
 		}
 	}
-    #################
-    option = {
-        name = diplo_Moe_Xcom
-        icon = GFX_diplomatic_stance_cooperative
-        potential = {
-            is_BA_fallen_empire = yes
-        }
-        policy_flags = {
-            diplo_Moe_Xcom
-        }
-        ai_weight = {
-            weight = 10
-        }
-
-    }
+	#################
+	option = {
+		name = diplo_Moe_Xcom
+		icon = GFX_diplomatic_stance_cooperative
+		potential = {
+			is_BA_fallen_empire = yes
+		}
+		policy_flags = {
+			diplo_Moe_Xcom
+		}
+		ai_weight = {
+			weight = 10
+		}
+	}
 }

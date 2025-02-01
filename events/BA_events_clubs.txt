@@ -262,7 +262,7 @@ country_event = {
 	}
 }
 
-#社团建设度月度变更
+#社团月检
 country_event = {
 	id = BA_club.0035
 	is_triggered_only = yes
@@ -271,6 +271,7 @@ country_event = {
 		has_authority = auth_kivotos
 	}
 	immediate = {
+		#社团建设度月度变更
 		if = {
 			limit = {
 				has_policy_flag = club_lv3_spounce
@@ -300,6 +301,9 @@ country_event = {
 				AMOUNT = 1
 			}
 		}
+		#社团赞助buff
+		BA_club_clear_country_modifier = yes
+		BA_club_set_country_modifier = yes
 	}
 }
 

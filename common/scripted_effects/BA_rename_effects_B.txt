@@ -1436,6 +1436,7 @@ BA_add_club_trait = {
 
 #去除所有换装标志 leader
 BA_remove_skin = {
+	optimize_memory
 	remove_leader_flag = BA_skin_GD
 	remove_leader_flag = BA_skin_OLD
 	remove_leader_flag = BA_skin_SS
@@ -1687,6 +1688,7 @@ BA_remove_sp_trait = {
 
 #检测领袖标志和换装标志，更换个人特质 leader
 BA_change_skin_trait = {
+	optimize_memory
 	BA_remove_sp_trait = yes
 	if = {
 		limit = {
@@ -3060,6 +3062,7 @@ BA_change_skin_trait = {
 }
 
 BA_change_skin_trait_bak = {
+	optimize_memory
 	BA_remove_sp_trait = yes
 	switch = {
 		trigger = has_leader_flag

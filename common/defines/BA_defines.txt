@@ -2,7 +2,18 @@
 NGameplay = {
 	COUNCIL_RESEARCH_POSITIONS = {
 		"councilor_gestalt_scientist"
-        "councilor_research_kivotos"
+		"councilor_research_kivotos"
 		"councilor_research"
+	}
+	COUNCIL_NAVAL_POSITIONS = {
+		"councilor_gestalt_legion"
+		"councilor_defense"
+		"councilor_defense_kivotos"
+	}
+	COUNCIL_DIPLOMACY_POSITIONS = {
+		"councilor_gestalt_regulatory"
+		"councilor_state"
+		"councilor_culture_kivotos"
+		"councilor_mediation_kivotos"
 	}
 }

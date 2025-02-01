@@ -113,7 +113,7 @@ leader_event = {
 		name = BA_Easter_egg.0002.b
 	}
 	after = {
-		custom_tooltip =  BA_Easter_egg.0002.tip
+		custom_tooltip = BA_Easter_egg.0002.tip
 		hidden_effect = {
 			owner = {
 				country_event = {
@@ -141,7 +141,7 @@ country_event = {
 		name = BA_Easter_egg.0003.b
 	}
 	after = {
-		custom_tooltip =  BA_Easter_egg.0003.tip
+		custom_tooltip = BA_Easter_egg.0003.tip
 		hidden_effect = {
 			owner = {
 				country_event = {
@@ -200,7 +200,7 @@ country_event = {
 country_event = {
 	id = BA_Easter_egg.0011
 	is_triggered_only = yes
-	title =  BA_Easter_egg.0011.title
+	title = BA_Easter_egg.0011.title
 	desc = BA_Easter_egg.0011.desc
 	trigger = {
 		has_modifier = modifier_BA_Aris_in_matrix
@@ -407,5 +407,3 @@ country_event = {
 #		name = BA_Easter_egg_Angel_arc_site_option_RAID05
 #	}
 #}
-
-

@@ -1222,7 +1222,6 @@ BA_club_station_Publishing_department = {
 	}
 }
 
-
 ### 真理部
 #太空通讯管控装置-部分
 BA_Veritas_device = {
@@ -1375,7 +1374,9 @@ BA_Hotspring_mine_station = {
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_anomaly"
-				NOT = { has_anomaly = yes }
+				NOT = {
+					has_anomaly = yes
+				}
 			}
 			custom_tooltip = {
 				fail_text = "requires_not_star"

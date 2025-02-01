@@ -87,6 +87,9 @@ building_BA_Locker_room = {
 	icon = Locker_room
 	potential = {
 		is_capital = yes
+		owner = {
+			has_authority = auth_kivotos
+		}
 	}
 	can_be_disabled = no
 	can_be_ruined = no

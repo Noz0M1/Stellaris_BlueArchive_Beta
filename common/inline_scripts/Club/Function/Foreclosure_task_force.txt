@@ -17,6 +17,15 @@ option = {
                 has_country_flag = BA_Foreclosure_decisions_cooldown
             }
         }
+        resource_stockpile_compare = {
+            resource = energy
+            value >= 2000
+            multiplier = Foreclosure_task_force_func_lv
+        }
+    }
+    add_resource = {
+        energy = -2000
+        multiplier = Foreclosure_task_force_func_lv
     }
     change_variable = {
         which = Foreclosure_task_force_func_lv
@@ -25,7 +34,7 @@ option = {
     hidden_effect = {
         set_timed_country_flag = {
             flag = BA_Foreclosure_decisions_cooldown
-            days = 1
+            days = 1800
         }
     }
 }

@@ -1,5 +1,6 @@
 special_project = {
 	key = "BA_MID_GET_ARIS"
+	event_chain = BA_mid_Aris_chain
 	cost = 0
 	days_to_research = 60
 	tech_department = engineering_technology
@@ -12,6 +13,7 @@ special_project = {
 		ship_event = {
 			id = BA_crisis.1016
 		}
+		end_event_chain = BA_mid_Aris_chain
 	}
 	on_fail = {
 	}

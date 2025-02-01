@@ -110,7 +110,11 @@ BA_Vigilant_crew = {
 		}
 	}
 	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
 		planet_stability_add = 4
+		planet_crime_add = -15
 	}
 	triggered_pop_modifier = {
 		potential = {

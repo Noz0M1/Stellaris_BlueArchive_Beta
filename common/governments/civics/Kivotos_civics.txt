@@ -159,6 +159,9 @@ civic_SI_Abydos = {
 				value = civic_SI_Trinity
 				value = civic_SI_Gehenna
 			}
+			NOT = {
+				value = civic_BA_Omnia_Vanitas
+			}
 		}
 	}
 	random_weight = {
@@ -203,6 +206,9 @@ civic_SI_Millennium = {
 				value = civic_SI_Trinity
 				value = civic_SI_Gehenna
 			}
+			NOT = {
+				value = civic_BA_Omnia_Vanitas
+			}
 		}
 	}
 	random_weight = {
@@ -246,6 +252,9 @@ civic_SI_Trinity = {
 				value = civic_SI_Millennium
 				value = civic_SI_Abydos
 				value = civic_SI_Gehenna
+			}
+			NOT = {
+				value = civic_BA_Omnia_Vanitas
 			}
 		}
 	}
@@ -329,6 +338,15 @@ civic_BA_Omnia_Vanitas = {
 		origin = {
 			NOT = {
 				value = origin_Kivotos_Eden_treaty
+			}
+		}
+		civics = {
+			NOR = {
+				text = civic_Omnia_Vanitas_only
+				value = civic_SI_Millennium
+				value = civic_SI_Abydos
+				value = civic_SI_Trinity
+				value = civic_SI_Gehenna
 			}
 		}
 	}

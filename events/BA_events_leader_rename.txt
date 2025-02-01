@@ -52,7 +52,6 @@ country_event = {
 			every_country = {
 				country_event = {
 					id = BA_rename.1002
-					days = 5
 				}
 			}
 		}
@@ -69,6 +68,22 @@ country_event = {
 		has_global_flag = BA_leader_rename_activated
 	}
 	immediate = {
+		country_event = {
+			id = BA_rename.1003
+			days = 15
+		}
+	}
+}
+
+country_event = {
+	id = BA_rename.1003
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_authority = auth_kivotos
+		has_global_flag = BA_leader_rename_activated
+	}
+	immediate = {
 		BA_set_rename_flag = yes
 		BA_iterate_rename_flag = yes
 	}
@@ -76,7 +91,7 @@ country_event = {
 
 #处理 新生成入池的领袖
 country_event = {
-	id = BA_rename.1003
+	id = BA_rename.1004
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
