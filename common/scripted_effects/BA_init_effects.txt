@@ -151,7 +151,7 @@ BA_fe_capital_initial = {
 	clear_deposits = yes
 	while = {
 		count = 12
-		add_district = BA_districts_dome
+		add_district = BA_districts_dome_fe
 	}
 	add_building = building_BA_fe_capital	#以后改
 	add_building = building_BA_fe_data
@@ -178,7 +178,7 @@ BA_fe_colony_initial = {
 	clear_deposits = yes
 	while = {
 		count = 6
-		add_district = district_city
+		add_district = BA_districts_dome_fe
 	}
 	add_building = building_BA_fe_capital	#以后改
 	add_building = building_BA_fe_data
@@ -206,7 +206,7 @@ BA_fe_rw_initial = {
 	clear_deposits = yes
 	while = {
 		count = 5
-		add_district = district_rw_city
+		add_district = BA_districts_ringworld_satellite_fe
 	}
 	add_building = building_BA_fe_capital	#以后改
 	add_building = building_BA_fe_data
@@ -232,19 +232,23 @@ BA_fe_rw_initial = {
 BA_fe_system_initial = {
 	every_system_planet = {
 		limit = {
-			is_planet_class = pc_BA_campus_planet
+			is_planet_class = pc_BA_fe_campus_planet
+			has_planet_flag = BA_Precursor_capital
 		}
 		BA_fe_capital_initial = yes
 	}
 	every_system_planet = {
 		limit = {
-			is_planet_class = pc_gaia
+			is_planet_class = pc_BA_fe_campus_planet
+			NOT = {
+				has_planet_flag = BA_Precursor_capital
+			}
 		}
 		BA_fe_colony_initial = yes
 	}
 	every_system_planet = {
 		limit = {
-			is_planet_class = pc_ringworld_habitable
+			is_planet_class = pc_BA_fe_auto_ringworld
 		}
 		BA_fe_rw_initial = yes
 	}
@@ -263,12 +267,25 @@ BA_fe_system_initial = {
 		owner = event_target:BA_Precursor_country
 		effect = {
 			while = {
-				count = 11
+				count = 50
 				create_ship = {
 					name = random
 					design = "NAME_BA_FE_DEFENCE_CANON"
 					graphical_culture = owner
 				}
+			}
+			save_event_target_as = BA_Precursor_system_base
+		}
+	}
+	while = {
+		count = 5
+		BA_fe_create_fleet = {
+			Target = event_target:BA_Precursor_system_base
+		}
+		last_created_fleet = {
+			set_home_base = event_target:BA_Precursor_system_base.starbase
+			queue_actions = {
+				move_to = starbase
 			}
 		}
 	}
@@ -295,114 +312,60 @@ BA_fe_system_initial = {
 #### 失落帝国刷舰队 !system scope
 #为失落帝国刷一支舰队
 BA_fe_create_fleet = {
-	event_target:BA_Precursor_country = {
-		create_fleet = {
-			name = BA_FE_FLEET
-			effect = {
-				set_owner = prev
-				set_location = {
-					target = prevprev
-					distance = 75
-					angle = 60
-					direction = out_system
+	create_fleet = {
+		name = BA_FE_FLEET
+		effect = {
+			set_owner = event_target:BA_Precursor_country
+			set_location = {
+				target = $Target$
+				distance = 75
+				angle = 60
+				direction = out_system
+			}
+			while = {
+				count = 1
+				create_ship = {
+					name = RANDOM
+					design = NAME_BA_FE_HUB_SHIP
+					prefix = yes
 				}
-				while = {
-					count = 1
-					create_ship = {
-						name = RANDOM
-						design = NAME_BA_FE_HUB_SHIP
-						prefix = yes
-					}
+			}
+			while = {
+				count = 12
+				create_ship = {
+					name = RANDOM
+					design = NAME_BA_FE_ARTILLERY_SHIP
+					prefix = yes
 				}
-				while = {
-					count = 12
-					create_ship = {
-						name = RANDOM
-						design = NAME_BA_FE_ARTILLERY_SHIP
-						prefix = yes
-					}
+			}
+			while = {
+				count = 12
+				create_ship = {
+					name = RANDOM
+					design = NAME_BA_FE_SWARM_SHIP
+					prefix = yes
 				}
-				while = {
-					count = 12
-					create_ship = {
-						name = RANDOM
-						design = NAME_BA_FE_SWARM_SHIP
-						prefix = yes
-					}
+			}
+			while = {
+				count = 30
+				create_ship = {
+					name = RANDOM
+					design = NAME_BA_FE_MISSILE_SHIP
+					prefix = yes
 				}
-				while = {
-					count = 10
-					create_ship = {
-						name = RANDOM
-						design = NAME_BA_FE_MISSILE_SHIP
-						prefix = yes
+			}
+			owner = {
+				create_leader = {
+					name = BA_fe_commander
+					class = commander
+					species = event_target:BA_Precursor_species
+					effect = {
+						add_trait_no_notify = leader_trait_commander_fe
+						change_leader_portrait = BA_carefree
 					}
 				}
 			}
-		}
-	}
-}
-
-#失落帝国军备初始化
-BA_fe_fleet_initial = {
-	while = {
-		count = 4
-		event_target:D_KETHER = {
-			BA_fe_create_fleet = yes
-		}
-	}
-	while = {
-		count = 1
-		event_target:D_CHHOKMAH = {
-			BA_fe_create_fleet = yes
-		}
-	}
-	while = {
-		count = 1
-		event_target:D_BINAH = {
-			BA_fe_create_fleet = yes
-		}
-	}
-	while = {
-		count = 1
-		event_target:D_CHESED = {
-			BA_fe_create_fleet = yes
-		}
-	}
-	while = {
-		count = 1
-		event_target:D_GEBURAH = {
-			BA_fe_create_fleet = yes
-		}
-	}
-	while = {
-		count = 1
-		event_target:D_TIPHARETH = {
-			BA_fe_create_fleet = yes
-		}
-	}
-	while = {
-		count = 1
-		event_target:D_NETSAH = {
-			BA_fe_create_fleet = yes
-		}
-	}
-	while = {
-		count = 1
-		event_target:D_HOD = {
-			BA_fe_create_fleet = yes
-		}
-	}
-	while = {
-		count = 4
-		event_target:D_YESOD = {
-			BA_fe_create_fleet = yes
-		}
-	}
-	while = {
-		count = 5
-		event_target:D_MALKUTH = {
-			BA_fe_create_fleet = yes
+			assign_leader = last_created_leader
 		}
 	}
 }

@@ -56,7 +56,7 @@ country_event = {
 		else = {
 			set_global_flag = BA_Crisis_Insane
 		}
-		#### 创建国家 选择线路
+		#### 创建国家
 		create_species = {
 			name = "NAME_BA_Precursor_species"
 			class = Schale
@@ -114,11 +114,12 @@ country_event = {
 					species = event_target:BA_Precursor_species
 					gender = female
 					name = NAME_Seia
-					skill = 3
+					skill = 10
 					set_age = 17
 					immortal = yes
 					event_leader = yes
 					traits = {
+						trait = trait
 					}
 					effect = {
 						change_leader_portrait = BA_Seia
@@ -128,6 +129,10 @@ country_event = {
 					}
 				}
 				##########
+				give_technology = {
+					tech = tech_BA_fe
+					message = no
+				}
 				add_resource = {
 					minerals = 5000
 					energy = 5000
@@ -146,8 +151,6 @@ country_event = {
 				add_global_ship_design = NAME_BA_FE_HUB_SHIP
 				add_global_ship_design = NAME_BA_FE_DEFENCE_CANON
 				add_global_ship_design = NAME_BA_FE_CONSTRUCTION
-				##########
-				BA_fe_fleet_initial = yes
 				##########
 				country_event = {
 					id = BA_Precursor.0100
@@ -808,30 +811,8 @@ country_event = {
 		}
 		event_target:BA_Precursor_country = {
 			# save_global_event_target_as = BA_fe_country
-			every_system_within_border = {
-				while = {
-					count = 10
-					BA_fe_create_fleet = yes
-				}
-			}
-			event_target:D_KETHER = {
-				while = {
-					count = 10
-					BA_fe_create_fleet = yes
-				}
-			}
-			event_target:D_TIPHARETH = {
-				while = {
-					count = 10
-					BA_fe_create_fleet = yes
-				}
-			}
-			event_target:D_MALKUTH = {
-				while = {
-					count = 10
-					BA_fe_create_fleet = yes
-				}
-			}
+			##########
+			# BA_fe_fleet_initial = yes
 		}
 	}
 }

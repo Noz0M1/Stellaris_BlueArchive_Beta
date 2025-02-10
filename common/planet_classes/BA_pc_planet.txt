@@ -171,3 +171,75 @@ pc_BA_auto_ringworld = {
 	}
 	carry_cap_per_free_district = @carry_cap_high
 }
+
+
+#失落帝国行星
+pc_BA_fe_campus_planet = {
+	entity = "BA_planet"
+	entity_scale = @planet_standard_scale
+	#icon = GFX_planet_type_city
+	icon = GFX_planet_type_ocean
+	climate = "dry"
+	atmosphere_color = hsv{0.58 0.67 0.76}
+	atmosphere_intensity = 1
+	atmosphere_width = 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	modifier = {
+	}
+	min_distance_from_sun = @habitable_min_distance
+	max_distance_from_sun = @habitable_max_distance
+	spawn_odds = 0
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	fixed_city_level = 6	#这一项意义不明
+	chance_of_ring = 0.2	#这一项意义不明
+	planet_size = {
+		min = @habitable_planet_min_size
+		max = @habitable_planet_max_size
+	}
+	moon_size = {
+		min = @habitable_moon_min_size
+		max = @habitable_moon_max_size
+	}
+	colonizable = yes
+	district_set = BA_fe_planet
+	starting_planet = no
+	#ideal = yes
+	show_city = no
+	uses_alternative_skies_for_moons = yes
+	carry_cap_per_free_district = @carry_cap_high
+}
+
+#失落帝国环世界
+pc_BA_fe_auto_ringworld = {
+	ringworld = yes
+	entity = "ringworld_habitable_entity"
+	preview_entity = "ringworld_01_damaged_full_entity"
+	icon = GFX_planet_type_ringworld
+	entity_scale = 1
+	enable_tilt = no
+	fixed_entity_scale = yes
+	atmosphere_color = hsv{0 0 1}
+	atmosphere_intensity = 1
+	atmosphere_width = 0.5
+	show_city = no
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	chance_of_ring = 0
+	planet_size = 10
+	moon_size = 1
+	colonizable = yes
+	district_set = BA_fe_auto_ringworld
+	ideal = yes
+	starting_planet = no
+	orbit_lines = no
+	has_colonization_influence_cost = no	# applies when within own borders
+	is_artificial_planet = yes
+	uses_alternative_skies_for_moons = yes
+	modifier = {
+		planet_max_buildings_add = 99
+		planet_resettlement_unemployed_destination_mult = 0.5
+	}
+	carry_cap_per_free_district = @carry_cap_high
+}

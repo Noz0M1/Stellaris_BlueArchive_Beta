@@ -566,3 +566,60 @@ BA_districts_special_factory = {
 		}
 	}
 }
+
+#####################################
+#先驱者学园都市星球区划
+#####################################
+BA_districts_dome_fe = {
+	icon = BA_districts_dome
+	base_buildtime = @BA_base_time
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = BA_fe_planet
+	}
+	potential = {
+		uses_district_set = BA_fe_planet
+	}
+	allow = {
+		always = yes
+	}
+	#建造维护费
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @BA_base_cost
+		}
+		upkeep = {
+			energy = @BA_base_upkeep
+		}
+	}
+	#修正
+	planet_modifier = {
+		planet_housing_add = 20
+		planet_amenities_add = 8
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_BA_fallen_empire = yes
+			}
+		}
+		modifier = {
+			#1自警团
+			job_BA_fe_defender_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_BA_fallen_empire = no
+			}
+		}
+		modifier = {
+			#1自警团
+			job_BA_Vigilant_crew_add = 1
+		}
+	}
+}

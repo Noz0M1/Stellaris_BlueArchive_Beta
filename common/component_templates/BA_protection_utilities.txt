@@ -1011,3 +1011,104 @@ utility_component_template = {
 	component_set = "T6badge"
 	#upgrades_to = "LARGE_T5BADGE"
 }
+
+
+##### 先驱者专用
+utility_component_template = {
+	key = "SMALL_PREBACKPACK"
+	size = small
+	icon = "GFX_T6BACKPACK"
+	icon_frame = 1
+	modifier = {
+		ship_shield_add = 20000
+		ship_shield_regen_add_static = 200
+		ship_armor_add = 20000
+		ship_armor_regen_add_static = 200
+	}
+	prerequisites = {
+		tech_BA_fe
+	}
+	component_set = "T6backpack"
+}
+
+utility_component_template = {
+	key = "MEDIUM_PREBACKPACK"
+	size = medium
+	icon = "GFX_T6BACKPACK"
+	icon_frame = 1
+	modifier = {
+		ship_shield_add = 50000
+		ship_shield_regen_add_static = 500
+		ship_armor_add = 50000
+		ship_armor_regen_add_static = 500
+	}
+	prerequisites = {
+		tech_BA_fe
+	}
+	component_set = "T6backpack"
+}
+
+utility_component_template = {
+	key = "LARGE_PREBACKPACK"
+	size = large
+	icon = "GFX_T6BACKPACK"
+	icon_frame = 1
+	modifier = {
+		ship_shield_add = 140000
+		ship_shield_regen_add_static = 1400
+		ship_armor_add = 140000
+		ship_armor_regen_add_static = 1400
+	}
+	prerequisites = {
+		tech_BA_fe
+	}
+	component_set = "T6backpack"
+}
+
+utility_component_template = {
+	key = "SMALL_PREBADGE"
+	size = small
+	icon = "GFX_T6BADGE"
+	icon_frame = 1
+	modifier = {
+		ship_evasion_add = 8
+		ship_speed_mult = 0.125
+		ship_hull_add = 20000
+	}
+	prerequisites = {
+		tech_BA_fe
+	}
+	component_set = "T6badge"
+}
+
+utility_component_template = {
+	key = "MEDIUM_PREBADGE"
+	size = medium
+	icon = "GFX_T6BADGE"
+	icon_frame = 1
+	modifier = {
+		ship_evasion_add = 8
+		ship_speed_mult = 0.125
+		ship_hull_add = 50000
+	}
+	prerequisites = {
+		tech_BA_fe
+	}
+	component_set = "T6badge"
+}
+
+utility_component_template = {
+	key = "LARGE_PREBADGE"
+	size = large
+	icon = "GFX_T6BADGE"
+	icon_frame = 1
+	modifier = {
+		ship_evasion_add = 8
+		ship_speed_mult = 0.125
+		ship_hull_add = 140000
+	}
+	prerequisites = {
+		tech_BA_fe
+	}
+	component_set = "T6badge"
+}

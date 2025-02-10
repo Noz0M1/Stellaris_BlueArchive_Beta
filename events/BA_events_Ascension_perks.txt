@@ -726,6 +726,7 @@ country_event = {
 					has_trait = trait_halo_awakened
 					has_trait = trait_halo_full_awakened
 					has_trait = trait_Halo_amplifier
+					has_trait = trait_Halo_precursor
 				}
 			}
 		}
@@ -747,6 +748,14 @@ country_event = {
 					}
 				}
 				add_trait = leader_trait_halo_full_awakened
+			}
+			else_if = {
+				limit = {
+					species = {
+						has_trait = trait_Halo_precursor
+					}
+				}
+				add_trait = leader_trait_halo_fe
 			}
 			# TODO：光环改造
 		}

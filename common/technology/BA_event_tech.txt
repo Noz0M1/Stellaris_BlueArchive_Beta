@@ -138,6 +138,7 @@ tech_BA_Arius_antihalo = {
 
 #堕落帝国
 tech_BA_fe = {
+	icon = tech_mine_dark_matter
 	area = society
 	cost = @tier5cost3
 	tier = 5
@@ -148,13 +149,14 @@ tech_BA_fe = {
 		school_tech
 	}
 	potential = {
-		is_BA_fallen_empire = yes
-	}
-	prereqfor_desc = {
-		custom = {
-			title = tech_BA_fe_desc
-			desc = tech_BA_fe_desc
+		OR = {
+			has_country_flag = BA_cheat
+			is_BA_fallen_empire = yes
 		}
+	}
+	modifier = {
+		command_limit_add = 100
+		starbase_defense_platform_capacity_add = 200
 	}
 	weight = 0
 }

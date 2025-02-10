@@ -530,3 +530,47 @@ BA_districts_ringworld_matrix = {
 	}
 }
 
+#####################################
+#失落帝国环世界区划
+#####################################
+### 卫星区段
+# 住房+20 舒适度+40 稳定度+5；环世界值日生+10；自警团+3
+# 任何社团部室：存在时转为提供社团部员岗位
+BA_districts_ringworld_satellite_fe = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = BA_fe_auto_ringworld
+	}
+	potential = {
+		uses_district_set = BA_fe_auto_ringworld
+	}
+	planet_modifier = {
+		planet_housing_add = 20
+		planet_amenities_add = 8
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_BA_fallen_empire = yes
+			}
+		}
+		modifier = {
+			#1自警团
+			job_BA_fe_defender_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_BA_fallen_empire = no
+			}
+		}
+		modifier = {
+			#1自警团
+			job_BA_Vigilant_crew_add = 1
+		}
+	}
+}

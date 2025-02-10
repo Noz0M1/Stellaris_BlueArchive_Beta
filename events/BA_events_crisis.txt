@@ -729,7 +729,7 @@ country_event = {
 	}
 }
 
-#建门路线：先驱者将爱丽丝送至基沃托斯
+#建门路线（先驱者将爱丽丝送至基沃托斯）
 country_event = {
 	id = BA_crisis.1014
 	is_triggered_only = yes
@@ -1113,7 +1113,7 @@ fleet_event = {
 					effect = {
 						id = ArisMid.effect.0008						#解除锁定，摧毁舰队
 						event_target:BA_mid_Aris_base = {
-							change_pc = pc_machine_broken
+							change_pc = pc_shattered
 						}
 						event_target:BA_mid_Aris_flagship = {
 							fleet = {
@@ -1124,8 +1124,8 @@ fleet_event = {
 					}
 					wait = 60
 					#收集完成，返回星门，结束事件链
-					move_to = event_target:BA_mid_Aris_gate
-					orbit_planet = event_target:BA_mid_Aris_gate
+					move_to = event_target:BA_mid_Aris_gate_system
+					#orbit_planet = event_target:BA_mid_Aris_gate
 					wait = 30
 					effect = {
 						id = ArisMid.effect.0009
@@ -1517,6 +1517,19 @@ country_event = {
 			NOT = {
 				has_authority = auth_kivotos
 			}
+		}
+	}
+	after = {
+		begin_event_chain = {
+			event_chain = BA_mid_Aris_chain
+			#target = event_target:BA_mid_Aris_system
+		}
+		create_point_of_interest = {
+			id = BA_mid_aris_base
+			name = BA_mid_Aris_chain_point_title
+			desc = BA_mid_Aris_chain_point_desc
+			event_chain = BA_mid_Aris_chain
+			location = event_target:BA_mid_Aris_base
 		}
 	}
 }
@@ -2182,6 +2195,9 @@ country_event = {
 	option = {
 		name = BA_crisis.1231.next
 	}
+	after = {
+		end_event_chain = BA_mid_Aris_chain
+	}
 }
 
 #建门完成，其他帝国通知
@@ -2240,6 +2256,9 @@ country_event = {
 			}
 		}
 	}
+	after = {
+		end_event_chain = BA_mid_Aris_chain
+	}
 }
 
 #对话，先驱者捕获爱丽丝事件链
@@ -2248,6 +2267,7 @@ country_event = {
 	is_triggered_only = yes
 	title = BA_crisis.1233.title
 	desc = BA_crisis.1233.desc
+	location = event_target:BA_Precursor_contactor_ship
 	immediate = {
 	}
 	option = {
@@ -2678,7 +2698,7 @@ fleet_event = {
 					effect = {
 						id = ArisMid.effect.0006						#解除锁定，摧毁舰队
 						event_target:BA_mid_Aris_base = {
-							change_pc = pc_machine_broken
+							change_pc = pc_shattered
 						}
 						event_target:BA_mid_Aris_flagship = {
 							fleet = {
@@ -2690,6 +2710,7 @@ fleet_event = {
 					wait = 30
 					move_to = event_target:BA_mid_Aris_gate
 					wait = 30
+					#TODO:在这里
 				}
 			}
 		}

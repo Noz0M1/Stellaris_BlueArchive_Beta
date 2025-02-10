@@ -47,12 +47,9 @@ building_BA_fe_data = {
 	base_buildtime = 360
 	category = manufacturing
 	potential = {
+		exists = owner
 		owner = {
-			OR = {
-				is_country_type = Moe_Xcom
-				is_country_type = Moe_Xcom_awakened
-			}
-			has_authority = auth_kivotos_pr
+			is_BA_fallen_empire = yes
 		}
 	}
 	resources = {
@@ -74,12 +71,9 @@ building_BA_fe_energy = {
 	base_buildtime = 360
 	category = manufacturing
 	potential = {
+		exists = owner
 		owner = {
-			OR = {
-				is_country_type = Moe_Xcom
-				is_country_type = Moe_Xcom_awakened
-			}
-			has_authority = auth_kivotos_pr
+			is_BA_fallen_empire = yes
 		}
 	}
 	resources = {
@@ -99,12 +93,9 @@ building_BA_fe_food = {
 	base_buildtime = 360
 	category = manufacturing
 	potential = {
+		exists = owner
 		owner = {
-			OR = {
-				is_country_type = Moe_Xcom
-				is_country_type = Moe_Xcom_awakened
-			}
-			has_authority = auth_kivotos_pr
+			is_BA_fallen_empire = yes
 		}
 	}
 	resources = {
@@ -125,12 +116,9 @@ building_BA_fe_alloy = {
 	base_buildtime = 360
 	category = manufacturing
 	potential = {
+		exists = owner
 		owner = {
-			OR = {
-				is_country_type = Moe_Xcom
-				is_country_type = Moe_Xcom_awakened
-			}
-			has_authority = auth_kivotos_pr
+			is_BA_fallen_empire = yes
 		}
 	}
 	resources = {
@@ -148,12 +136,9 @@ building_BA_fe_pyroxenes = {
 	base_buildtime = 360
 	category = manufacturing
 	potential = {
+		exists = owner
 		owner = {
-			OR = {
-				is_country_type = Moe_Xcom
-				is_country_type = Moe_Xcom_awakened
-			}
-			has_authority = auth_kivotos_pr
+			is_BA_fallen_empire = yes
 		}
 	}
 	resources = {
@@ -171,12 +156,9 @@ building_BA_fe_keystone = {
 	base_buildtime = 360
 	category = manufacturing
 	potential = {
+		exists = owner
 		owner = {
-			OR = {
-				is_country_type = Moe_Xcom
-				is_country_type = Moe_Xcom_awakened
-			}
-			has_authority = auth_kivotos_pr
+			is_BA_fallen_empire = yes
 		}
 	}
 	resources = {
@@ -193,12 +175,9 @@ building_BA_fe_dome = {
 	base_buildtime = 360
 	category = manufacturing
 	potential = {
+		exists = owner
 		owner = {
-			OR = {
-				is_country_type = Moe_Xcom
-				is_country_type = Moe_Xcom_awakened
-			}
-			has_authority = auth_kivotos_pr
+			is_BA_fallen_empire = yes
 		}
 	}
 	resources = {
@@ -208,8 +187,7 @@ building_BA_fe_dome = {
 		}
 	}
 	planet_modifier = {
-		planet_housing_add = 10
-		planet_amenities_add = 100
+		planet_amenities_add = 1000
 	}
 }
 

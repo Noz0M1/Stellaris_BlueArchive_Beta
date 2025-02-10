@@ -58,6 +58,9 @@ Dgate_temp = {
 	}
 	on_build_complete = {
 		save_global_event_target_as = BA_mid_Aris_gate
+		solar_system = {
+			save_global_event_target_as = BA_mid_Aris_gate_system
+		}
 		every_country = {
 			limit = {
 				is_country_type = global_event

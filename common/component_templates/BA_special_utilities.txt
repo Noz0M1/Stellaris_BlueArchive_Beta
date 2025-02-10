@@ -1,4 +1,4 @@
-#武器
+# 这些是旧版本武器，现为Moe Xcom专用，相比旧版本消除了能耗、造价与维护费，并且基础伤害*100
 ##### P武器
 #射手座之夜
 weapon_component_template = {
@@ -7,7 +7,8 @@ weapon_component_template = {
 	icon = "GFX_Sagittarius_night"
 	icon_frame = 1
 	prerequisites = {
-		"tech_BA_Sagittarius_night"
+		#"tech_BA_Sagittarius_night"
+		tech_BA_fe
 	}
 	component_set = "Sagittarius_night"
 	type = point_defence
@@ -24,17 +25,17 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 20
+			#alloys = 20
 		}
 		upkeep = {
-			energy = 0.1
-			alloys = 0.015
+			#energy = 0.1
+			#alloys = 0.015
 		}
 	}
-	power = -30
+	#power = -30
 	damage = {
-		min = 3
-		max = 10
+		min = 300
+		max = 1000
 	}
 	windup = {
 		min = 0
@@ -62,7 +63,8 @@ weapon_component_template = {
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
-		"tech_BA_Soft_determination"
+		#"tech_BA_Soft_determination"
+		tech_BA_fe
 	}
 	component_set = "Soft_determination"
 	projectile_gfx = "gamma_laser_s"
@@ -77,17 +79,17 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 20
+			#alloys = 20
 		}
 		upkeep = {
-			energy = 0.22
-			alloys = 0.02
+			#energy = 0.22
+			#alloys = 0.02
 		}
 	}
-	power = -12
+	#power = -12
 	damage = {
-		min = 18
-		max = 40
+		min = 1800
+		max = 4000
 	}
 	hull_damage = 0.8
 	shield_damage = 1.5
@@ -116,7 +118,8 @@ weapon_component_template = {
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
-		"tech_BA_Unique_idea"
+		#"tech_BA_Unique_idea"
+		tech_BA_fe
 	}
 	component_set = "Unique_idea"
 	projectile_gfx = "Unique_idea"
@@ -131,18 +134,18 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 100
-			sr_pyroxenes = 1
+			#alloys = 100
+			#sr_pyroxenes = 1
 		}
 		upkeep = {
-			energy = 0.5
-			alloys = 0.1
+			#energy = 0.5
+			#alloys = 0.1
 		}
 	}
-	power = -50
+	#power = -50
 	damage = {
-		min = 36
-		max = 96
+		min = 3600
+		max = 9600
 	}
 	hull_damage = 1
 	shield_damage = 0.25
@@ -172,7 +175,8 @@ weapon_component_template = {
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
-		"tech_BA_Flashy_inspiration"
+		#"tech_BA_Flashy_inspiration"
+		tech_BA_fe
 	}
 	component_set = "Flashy_inspiration"
 	projectile_gfx = "Flashy_inspiration"
@@ -187,18 +191,18 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 220
-			sr_pyroxenes = 2
+			#alloys = 220
+			#sr_pyroxenes = 2
 		}
 		upkeep = {
-			energy = 0.5
-			alloys = 0.2
+			#energy = 0.5
+			#alloys = 0.2
 		}
 	}
-	power = -110
+	#power = -110
 	damage = {
-		min = 135
-		max = 150
+		min = 13500
+		max = 15000
 	}
 	hull_damage = 1
 	shield_damage = 2
@@ -227,7 +231,8 @@ weapon_component_template = {
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
-		tech_BA_Crack_shot
+		#tech_BA_Crack_shot
+		tech_BA_fe
 	}
 	component_set = "Crack_shot"
 	projectile_gfx = "Crack_shot"
@@ -242,18 +247,18 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 180
-			sr_pyroxenes = 2
+			#alloys = 180
+			#sr_pyroxenes = 2
 		}
 		upkeep = {
-			energy = 0.22
-			alloys = 0.18
+			#energy = 0.22
+			#alloys = 0.18
 		}
 	}
-	power = -90
+	#power = -90
 	damage = {
-		min = 300
-		max = 500
+		min = 30000
+		max = 50000
 	}
 	hull_damage = 1
 	shield_damage = 1
@@ -279,7 +284,8 @@ weapon_component_template = {
 	icon = "GFX_Grenadiers_575"
 	icon_frame = 1
 	prerequisites = {
-		"tech_BA_Grenadiers_575"
+		#"tech_BA_Grenadiers_575"
+		tech_BA_fe
 	}
 	component_set = "Grenadiers_575"
 	type = missile
@@ -296,17 +302,17 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 35
+			#alloys = 35
 		}
 		upkeep = {
-			energy = 0.15
-			alloys = 0.035
+			#energy = 0.15
+			#alloys = 0.035
 		}
 	}
-	power = -30
+	#power = -30
 	damage = {
-		min = 15
-		max = 18
+		min = 1500
+		max = 1800
 	}
 	windup = {
 		min = 2
@@ -334,23 +340,23 @@ strike_craft_component_template = {
 	entity = "Adena3_entity"
 	weapon_type = point_defence
 	projectile_gfx = "strike_craft_laser_3"
-	power = -55
+	#power = -55
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 88
+			#alloys = 88
 		}
 		upkeep = {
-			energy = 0.88
-			alloys = 0.196
+			#energy = 0.88
+			#alloys = 0.196
 		}
 	}
 	count = 8
 	regeneration_per_day = 0.5
 	launch_time = 1.5
 	damage = {
-		min = 6
-		max = 17
+		min = 600
+		max = 1700
 	}
 	cooldown = 2.3
 	range = 10
@@ -372,7 +378,8 @@ strike_craft_component_template = {
 	icon_frame = 1
 	component_set = "Adena_3"
 	prerequisites = {
-		"tech_BA_Adena_3"
+		#"tech_BA_Adena_3"
+		tech_BA_fe
 	}
 	tags = {
 		weapon_type_strike_craft
@@ -394,7 +401,8 @@ weapon_component_template = {
 	min_range = 10
 	use_ship_kill_target = no
 	prerequisites = {
-		"tech_BA_Fantacy_colors"
+		#"tech_BA_Fantacy_colors"
+		tech_BA_fe
 	}
 	component_set = "Fantacy_colors"
 	projectile_gfx = "adv_kinetic_artillery"
@@ -408,10 +416,10 @@ weapon_component_template = {
 		weapon_role_artillery
 	}
 	ai_tag_weight = 0
-	power = -250
+	#power = -250
 	damage = {
-		min = 2500
-		max = 6500
+		min = 250000
+		max = 650000
 	}
 	windup = {
 		min = 20
@@ -427,12 +435,12 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 500
-			sr_keystone = 25
+			#alloys = 500
+			#sr_keystone = 25
 		}
 		upkeep = {
-			energy = 6
-			alloys = 2
+			#energy = 6
+			#alloys = 2
 		}
 	}
 	ai_weight = {
@@ -451,7 +459,8 @@ weapon_component_template = {
 	min_range = 10
 	use_ship_kill_target = no
 	prerequisites = {
-		"tech_BA_SuperNova"
+		#"tech_BA_SuperNova"
+		tech_BA_fe
 	}
 	component_set = "SuperNova"
 	projectile_gfx = "Supernova"
@@ -463,10 +472,10 @@ weapon_component_template = {
 		weapon_role_artillery
 	}
 	ai_tag_weight = 0
-	power = -500
+	#power = -500
 	damage = {
-		min = 3500
-		max = 8500
+		min = 350000
+		max = 850000
 	}
 	windup = {
 		min = 0
@@ -482,12 +491,12 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 500
-			sr_keystone = 50
+			#alloys = 500
+			#sr_keystone = 50
 		}
 		upkeep = {
-			energy = 6
-			alloys = 2
+			#energy = 6
+			#alloys = 2
 		}
 	}
 	type = instant
