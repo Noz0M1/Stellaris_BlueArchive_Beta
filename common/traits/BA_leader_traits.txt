@@ -185,6 +185,45 @@ leader_trait_halo_fe = {
 	leader_class = all
 }
 
+### 学园理念
+#千年G10：档案数据库重构
+leader_trait_SI_Millennium_G10 = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/sp_leaders/Icon_custom_SP.dds"
+	randomized = no
+	triggered_fleet_modifier = {
+		potential = {
+			leader_class = commander
+		}
+		ship_weapon_damage = 0.3
+	}
+	triggered_army_modifier = {
+		potential = {
+			leader_class = commander
+		}
+		army_damage_mult = 0.6
+	}
+	triggered_planet_modifier = {
+		potential = {
+			leader_class = official
+		}
+		planet_jobs_produces_mult = 0.4
+	}
+	triggered_modifier = {
+		potential = {
+			leader_class = scientist
+		}
+		science_ship_survey_speed = 0.5
+		ship_astral_rift_clues_add = 1
+	}
+	self_modifier = {
+		leaders_upkeep_mult = -1
+	}
+	sorting_priority = 1000
+	selectable_weight = 0
+	leader_class = all
+}
+
 ###############
 ###  特殊领袖
 ###############

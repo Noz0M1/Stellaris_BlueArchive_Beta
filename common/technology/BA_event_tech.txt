@@ -948,6 +948,7 @@ tech_repeatable_weapon_type_Kivotos_physics_research = {
 		weapon_type_mystic_weapon_damage_mult = 0.05
 	}
 	potential = {
+		has_authority = auth_kivotos
 	}
 }
 
@@ -973,6 +974,7 @@ tech_repeatable_weapon_type_Kivotos_society_research = {
 		weapon_type_penetration_weapon_damage_mult = 0.05
 	}
 	potential = {
+		has_authority = auth_kivotos
 	}
 }
 
@@ -998,5 +1000,6 @@ tech_repeatable_weapon_type_Kivotos_engineering_research = {
 		weapon_type_explosion_weapon_damage_mult = 0.05
 	}
 	potential = {
+		has_authority = auth_kivotos
 	}
 }

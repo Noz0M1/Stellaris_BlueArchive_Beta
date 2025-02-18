@@ -212,6 +212,10 @@ button_effect_BA_SI_Abydos_A01_lock = {
 							message = no
 						}
 					}
+					add_tech_progress = {
+						tech = tech_terrestrial_sculpting
+						progress = 0.75
+					}
 				}
 			}
 		}
@@ -1337,13 +1341,13 @@ button_effect_BA_SI_Gehenna_A02_lock = {
 					has_technology = tech_BA_SI_Gehenna_B02
 				}
 			}
-			# custom_tooltip = {
-			# 	fail_text = need_preposition_ideas
-			# 	OR = {
-			# 		has_technology = tech_BA_SI_Gehenna_A01
-			# 		has_technology = tech_BA_SI_Gehenna_B01
-			# 	}
-			# }
+			custom_tooltip = {
+				fail_text = Gehenna_SI_start_point
+				OR = {
+					has_technology = tech_BA_SI_Gehenna_A01
+					has_technology = tech_BA_SI_Gehenna_B01
+				}
+			}
 		}
 	}
 	potential = {
@@ -1420,13 +1424,13 @@ button_effect_BA_SI_Gehenna_A03_lock = {
 					has_technology = tech_BA_SI_Gehenna_B03
 				}
 			}
-			# custom_tooltip = {
-			# 	fail_text = need_preposition_ideas
-			# 	OR = {
-			# 		has_technology = tech_BA_SI_Gehenna_A02
-			# 		has_technology = tech_BA_SI_Gehenna_B02
-			# 	}
-			# }
+			custom_tooltip = {
+				fail_text = Gehenna_SI_start_point
+				OR = {
+					has_technology = tech_BA_SI_Gehenna_A01
+					has_technology = tech_BA_SI_Gehenna_B01
+				}
+			}
 		}
 	}
 	potential = {
@@ -1572,13 +1576,13 @@ button_effect_BA_SI_Gehenna_B02_lock = {
 					has_technology = tech_BA_SI_Gehenna_A02
 				}
 			}
-			# custom_tooltip = {
-			# 	fail_text = need_preposition_ideas
-			# 	OR = {
-			# 		has_technology = tech_BA_SI_Gehenna_A01
-			# 		has_technology = tech_BA_SI_Gehenna_B01
-			# 	}
-			# }
+			custom_tooltip = {
+				fail_text = Gehenna_SI_start_point
+				OR = {
+					has_technology = tech_BA_SI_Gehenna_A01
+					has_technology = tech_BA_SI_Gehenna_B01
+				}
+			}
 		}
 	}
 	potential = {
@@ -1648,13 +1652,13 @@ button_effect_BA_SI_Gehenna_B03_lock = {
 					has_technology = tech_BA_SI_Gehenna_A03
 				}
 			}
-			# custom_tooltip = {
-			# 	fail_text = need_preposition_ideas
-			# 	OR = {
-			# 		has_technology = tech_BA_SI_Gehenna_A02
-			# 		has_technology = tech_BA_SI_Gehenna_B02
-			# 	}
-			# }
+			custom_tooltip = {
+				fail_text = Gehenna_SI_start_point
+				OR = {
+					has_technology = tech_BA_SI_Gehenna_A01
+					has_technology = tech_BA_SI_Gehenna_B01
+				}
+			}
 		}
 	}
 	potential = {
@@ -1929,7 +1933,8 @@ button_effect_BA_SI_Gehenna_G03_lock = {
 			BA_SI_time_limit_trigger = yes
 			custom_tooltip = {
 				fail_text = need_preposition_ideas
-				OR = {
+				calc_true_if = {
+					amount >= 2
 					has_technology = tech_BA_SI_Gehenna_C03
 					has_technology = tech_BA_SI_Gehenna_D03
 					has_technology = tech_BA_SI_Gehenna_E03
@@ -2005,13 +2010,6 @@ button_effect_BA_SI_Gehenna_C01_lock = {
 					has_technology = tech_BA_SI_Gehenna_A01
 					has_technology = tech_BA_SI_Gehenna_A02
 					has_technology = tech_BA_SI_Gehenna_A03
-				}
-			}
-			custom_tooltip = {
-				fail_text = BA_mutual_exclusion_events
-				NOR = {
-					has_technology = tech_BA_SI_Gehenna_D01
-					has_technology = tech_BA_SI_Gehenna_E01
 				}
 			}
 			custom_tooltip = {
@@ -2240,13 +2238,6 @@ button_effect_BA_SI_Gehenna_D01_lock = {
 				}
 			}
 			custom_tooltip = {
-				fail_text = BA_mutual_exclusion_events
-				NOR = {
-					has_technology = tech_BA_SI_Gehenna_C01
-					has_technology = tech_BA_SI_Gehenna_E01
-				}
-			}
-			custom_tooltip = {
 				fail_text = need_preposition_ideas
 				has_technology = tech_BA_SI_Gehenna_G02
 			}
@@ -2457,13 +2448,6 @@ button_effect_BA_SI_Gehenna_E01_lock = {
 					has_technology = tech_BA_SI_Gehenna_B01
 					has_technology = tech_BA_SI_Gehenna_B02
 					has_technology = tech_BA_SI_Gehenna_B03
-				}
-			}
-			custom_tooltip = {
-				fail_text = BA_mutual_exclusion_events
-				NOR = {
-					has_technology = tech_BA_SI_Gehenna_C01
-					has_technology = tech_BA_SI_Gehenna_D01
 				}
 			}
 			custom_tooltip = {

@@ -244,6 +244,17 @@ BA_districts_municipality = {
 		#7阶段
 		planet_jobs_produces_mult = 0.025
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_SI_Abydos_A01
+			}
+		}
+		#学园理念：Abydos A01
+		job_BA_Kivotos_staff_add = 1
+	}
+
 }
 
 ### 军工厂区划 1槽位、3住房

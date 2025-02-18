@@ -15,33 +15,33 @@
 
  SI_Abydos_G03: "尾声：对策委员会的终点"
  SI_Abydos_G03_desc: "对策委员会的职责已经到了尾声，§B阿拜多斯废校对策委员会§!的名称已经不再沿用，而是悬挂在校史馆的正厅内，激励着、警示着基沃托斯的学生们。"
- SI_Abydos_G03_effect: "\n效果：\n§H解锁星球决议: §!$decision_BA_SI_Abydos_G03$（仅§Y学园都市星球§!可用）\n "
+ SI_Abydos_G03_effect: "\n效果：\n$MOD_COUNTRY_MEGASTRUCTURE_BUILD_CAP_ADD$: §G+1§!\n§H解锁星球决议: §!$decision_BA_SI_Abydos_G03$（仅§Y学园都市星球§!可用）\n "
  SI_Abydos_G03_tip: "§C$SI_Abydos_G03$§!\n$SI_Abydos_G03_desc$\n$SI_Abydos_G03_effect$"
 
  ### 左线
  SI_Abydos_A01: "星球改造对策"
  SI_Abydos_A01_desc: "想要改造星球的环境，必须先规划建设好足够的基础，能量的供应是重中之重。"
- SI_Abydos_A01_effect: "\n§R与§!$SI_Abydos_B01$§R互斥§!\n效果：\n环境改造速度: §G+25%§!\n£job_BA_Kivotos_staff£§Y自治区职员产出§!: -1£food£§Y食物§!, +2£energy£§Y能量币§!\n "
+ SI_Abydos_A01_effect: "\n§R与§!$SI_Abydos_B01$§R互斥§!\n效果：\n获得£society_research£§H$tech_terrestrial_sculpting$§!科技的§G75%§!进度\n环境改造速度: §G+25%§!\n自治区区划提供的§Y£job_BA_Kivotos_staff£$job_BA_Kivotos_staff$§!岗位: §G+1§!\n£job_BA_Kivotos_staff£§Y自治区职员产出§!: -1£food£§Y食物§!, +2£energy£§Y能量币§!\n "
  SI_Abydos_A01_tip: "§C$SI_Abydos_A01$§!\n$SI_Abydos_A01_desc$\n$SI_Abydos_A01_effect$"
 
  SI_Abydos_A02: "物流整合"
  SI_Abydos_A02_desc: "星球改造是个巨大无比的工程，物资流通的效率直接决定了工程的进度。"
- SI_Abydos_A02_effect: "\n效果：\n区划维护费: §G-15%§!\n环境改造消耗: §G-25%§!\n环境改造速度: §G+25%§!\n "
+ SI_Abydos_A02_effect: "\n效果：\n$mod_planet_districts_cost_mult$: §G-15%§!\n$mod_planet_districts_upkeep_mult$: §G-15%§!\n环境改造消耗: §G-35%§!\n环境改造速度: §G+25%§!\n "
  SI_Abydos_A02_tip: "§C$SI_Abydos_A02$§!\n$SI_Abydos_A02_desc$\n$SI_Abydos_A02_effect$"
 
  SI_Abydos_A03: "强化产业"
  SI_Abydos_A03_desc: "为了更快的完成我们的目标，一些有代价的加速生产是必要的。"
- SI_Abydos_A03_effect: "\n效果:\n§H解锁学园理念法令: §!$edict_BA_SI_Abydos_A03$:\n    §Y基础启动花费: £unity£200§!\n    §Y基础维护费: £unity£20§!\n    岗位生产的资源: §G+25%§!\n    岗位所需的维护费: §R+25%§!\n "
+ SI_Abydos_A03_effect: "\n效果:\n§H解锁学园理念法令: §!$edict_BA_SI_Abydos_A03$:\n    §Y基础启动花费: £unity£300§!\n    §Y基础维护费: £unity£30§!\n    $MOD_PLANET_BUILDING_BUILD_SPEED_MULT$: §G+25%§!\n    $mod_planet_jobs_produces_mult$: §G+25%§!\n    $mod_BA_staff_pop_produces_mult$: §G+25%§!\n    $mod_planet_jobs_upkeep_mult$: §R+25%§!\n "
  SI_Abydos_A03_tip: "§C$SI_Abydos_A03$§!\n$SI_Abydos_A03_desc$\n$SI_Abydos_A03_effect$"
 
  SI_Abydos_A04: "星球蓝图"
  SI_Abydos_A04_desc: "基沃托斯始终是最适合居住的地方，学园都市星球是我们最为理想的家园。"
- SI_Abydos_A04_effect: "\n效果：\n决议颁布速度: §G+15%§!\n建筑花费: §G-20%§!\n "
+ SI_Abydos_A04_effect: "\n效果：\n$mod_planet_metallurgists_alloys_produces_add$: §G+1§!\n$MOD_PLANET_DECISION_ENACT_SPEED_MULT$: §G+15%§!\n$mod_planet_buildings_cost_mult$: §G-20%§!\n "
  SI_Abydos_A04_tip: "§C$SI_Abydos_A04$§!\n$SI_Abydos_A04_desc$\n$SI_Abydos_A04_effect$"
 
  SI_Abydos_A05: "开拓虚空"
  SI_Abydos_A05_desc: "无畏的工程师们正在征服近地轨道的广阔空间，自动化居住站就是她们的手段。"
- SI_Abydos_A05_effect: "\n效果：\n自动化区划生产的资源: §G+20%§!\n巨型结构费用: §G-20%§!\n开采站产出: §G+30%§!\n " #\n居住站和自动化居住站宜居性: §G+30%§!
+ SI_Abydos_A05_effect: "\n效果：\n$MOD_MEGASTRUCTURE_BUILD_SPEED_MULT$: §G+75%§!\n$mod_BA_auto_districts_produces_mult$: §G+20%§!\n$mod_megastructures_cost_mult$: §G-20%§!\n$mod_station_gatherers_produces_mult$: §G+30%§!\n " #\n居住站和自动化居住站宜居性: §G+30%§!
  SI_Abydos_A05_tip: "§C$SI_Abydos_A05$§!\n$SI_Abydos_A05_desc$\n$SI_Abydos_A05_effect$"
 
  SI_Abydos_A06: "自新世界"
@@ -90,7 +90,7 @@
 
  SI_Gehenna_G02: "新世界的火种"
  SI_Gehenna_G02_desc: "格黑那所属的学生在活跃度上一向是力压其他所有学园，他们对于新世界的渴望也是如此。"
- SI_Gehenna_G02_effect: "\n效果：\n强制迁移花费: §G-25%§!\n人口降级时间: §G-50%§!\n§Y新设立§!的殖民地§H获得行星修正: §!$modifier_BA_SI_Gehenna_G02$(1800£time£)：\n    幸福度: §G+40%§!\n "
+ SI_Gehenna_G02_effect: "\n效果：\n强制迁移花费: §G-25%§!\n人口降级时间: §G-50%§!\n§Y新设立§!的殖民地§H获得行星修正: §!$modifier_BA_SI_Gehenna_G02$(1800£time£)：\n    幸福度: §G+40%§!\n    $MOD_PLANET_BUILDING_BUILD_SPEED_MULT$: §G+25%§!\n "
  SI_Gehenna_G02_tip: "§C$SI_Gehenna_G02$§!\n$SI_Gehenna_G02_desc$\n$SI_Gehenna_G02_effect$"
 
  SI_Gehenna_G03: "尾声：烈火洗礼的学园都市"
@@ -111,9 +111,8 @@
 
  SI_Gehenna_A03: "万魔殿策略：霸权态势"
  SI_Gehenna_A03_desc: "格黑那的内部一直不太平，万魔殿的选择是铁拳治理，并以战争作为泄压口。虽然是万魔殿推动的计划，实际的规划与操作却交给风纪委来进行。"
- SI_Gehenna_A03_effect: "\n§R与§!$SI_Gehenna_B03$§R互斥§!\n效果：\n§Y新近获得控制权§!的殖民地§H获得行星修正: §!$modifier_BA_SI_Gehenna_A03$(1800£time£)：\n    稳定度: §G+50%§!\n " #\n§H解锁战争借口: §!霸权征服
+ SI_Gehenna_A03_effect: "\n§R与§!$SI_Gehenna_B03$§R互斥§!\n效果：\n§Y新近获得控制权§!的殖民地§H获得行星修正: §!$modifier_BA_SI_Gehenna_A03$(1800£time£)：\n    稳定度: §G+50%§!\n    $MOD_PLANET_BUILDING_BUILD_SPEED_MULT$: §G+25%§!\n    $mod_planet_jobs_upkeep_mult$: §G-10%§!\n若此星球从§Y前超光速文明§!中取得，则§B首都§!也会获得这个修正。\n若此星球从§Y失落帝国或复兴帝国§!中取得，则§B所有殖民地§!都会获得这个修正。" #\n§H解锁战争借口: §!霸权征服
  SI_Gehenna_A03_tip: "§C$SI_Gehenna_A03$§!\n$SI_Gehenna_A03_desc$\n$SI_Gehenna_A03_effect$"
-
  ### 上右线
  SI_Gehenna_B01: "风纪委策略：旌旗之下"
  SI_Gehenna_B01_desc: "如今格黑那是联邦学生会的首席，在行政官的计划下，借助风纪委员长的威信，星际时代的辉煌志在必得。"
@@ -149,7 +148,7 @@
  ### 下中线
  SI_Gehenna_D01: "社团活动准则"
  SI_Gehenna_D01_desc: "格赫娜长久以来对社团过于的放任自由，如今已经不适合星际时代，需要掌控力更强的社团管理条例来维护社团。"
- SI_Gehenna_D01_effect: "\n效果：\n£job_BA_club_members£§B基沃托斯§!§G社团部员§!产出: §G+15%§!\n£pop_cat_specialist£专家人口£happiness£幸福度: §G+25%§!\n£pop_cat_specialist£专家人口的£consumer_goods£消费品维护费: §R+0.25§!\n£pop_cat_specialist£专家人口的£food£食物维护费: §R+2§!\n "
+ SI_Gehenna_D01_effect: "\n效果：\n£job_BA_club_members£§B基沃托斯§!§G社团部员§!产出: §G+15%§!\n£pop_cat_specialist£专家人口£happiness£幸福度: §G+25%§!\n£pop_cat_specialist£专家人口的£consumer_goods£消费品维护费: §R+0.25§!\n£pop_cat_specialist£专家人口的£food£食物维护费: §R+0.2§!\n "
  SI_Gehenna_D01_tip: "§C$SI_Gehenna_D01$§!\n$SI_Gehenna_D01_desc$\n$SI_Gehenna_D01_effect$"
  SI_Gehenna_D02: "悬赏任务制"
  SI_Gehenna_D02_desc: "悬赏制的好处在于，只需要通过一些小小的花费，广大学生们的智慧和勇气就可为基沃托斯所用。"
@@ -189,8 +188,8 @@
  SI_Millennium_G03_effect: "\n效果：\n当前所有§Y科学官§!领袖的等级§G提升1级§!\n行星上的所有§H社团部室§!额外提供§G+2§!£job_BA_club_members£$job_BA_club_members$岗位\n "
  SI_Millennium_G03_tip: "§C$SI_Millennium_G03$§!\n$SI_Millennium_G03_desc$\n$SI_Millennium_G03_effect$"
  SI_Millennium_G04: "斗争与探索"
- SI_Millennium_G04_desc: "随着母星附近的资源相继开发，我们的可选项逐渐变得狭窄起来。"
- SI_Millennium_G04_effect: "\n效果：\n获得大量£physics£ £society£ £engineering£研究点数和£alloys£合金\n为母星添加§H行星修正: §!$modifier_BA_SI_Millennium_G04$\n "
+ SI_Millennium_G04_desc: "随着母星附近的资源相继开发，我们的可选项逐渐变得狭窄起来。但是，天上的乌云背后藏着的是更加宏伟深邃的世界。"
+ SI_Millennium_G04_effect: "\n效果：\n研究备选: §G+§!\n获得大量£physics£ £society£ £engineering£研究点数和£alloys£合金\n为母星添加§H行星修正: §!$modifier_BA_SI_Millennium_G04$\n "
  SI_Millennium_G04_tip: "§C$SI_Millennium_G04$§!\n$SI_Millennium_G04_desc$\n$SI_Millennium_G04_effect$"
 
  ### 共通中
@@ -214,15 +213,15 @@
  ### 共通下
  SI_Millennium_G09: "信息终端枢纽"
  SI_Millennium_G09_desc: "在各个星球上建造与千年巨塔对接的传递中枢，以将千年巨塔的算力充分释放到用户手中。"
- SI_Millennium_G09_effect: "\n效果：\n研究速度: §G+25%§!\n§H解锁建筑§!: $building_BA_SI_Millennium_G10$\n "
+ SI_Millennium_G09_effect: "\n效果：\n研究速度: §G+25%§!\n$mod_megastructures_upkeep_mult$: §G-10%§!\n$mod_planet_districts_upkeep_mult$: §G-10%§!\n$mod_planet_buildings_upkeep_mult$: §G-10%§!\n§H解锁建筑§!: $building_BA_SI_Millennium_G10$\n "
  SI_Millennium_G09_tip: "§C$SI_Millennium_G09$§!\n$SI_Millennium_G09_desc$\n$SI_Millennium_G09_effect$"
  SI_Millennium_G10: "档案数据库重构"
  SI_Millennium_G10_desc: "利用千年巨塔重新整理我们的研究数据，从而发现更多潜在的研究方向。"
- SI_Millennium_G10_effect: "\n效果：\n研究备选: §G+3§!\n领袖等级上限: §G+2§!\n "
+ SI_Millennium_G10_effect: "\n效果：\n领袖初始等级: §G+3§!\n领袖上限: §G+3§!\n为所有领袖添加特质：$leader_trait_SI_Millennium_G10$: \n        £official£§I行政官§!:\n    $mod_planet_jobs_produces_mult$: §G+40%§!\n        £scientist£§B科学官§!:\n    $MOD_SHIP_SCIENCE_SURVEY_SPEED$: §G+50%§!\n    $MOD_SHIP_ASTRAL_RIFT_CLUES_ADD$: §G+1§!\n        £commander£§R指挥官§!:\n    $MOD_SHIP_WEAPON_DAMAGE$: §G+30%§!\n    $MOD_ARMY_DAMAGE_MULT$: §G+60%§!\n "
  SI_Millennium_G10_tip: "§C$SI_Millennium_G10$§!\n$SI_Millennium_G10_desc$\n$SI_Millennium_G10_effect$"
  SI_Millennium_G11: "尾声：直到时间与世界的尽头"
  SI_Millennium_G11_desc: "我们写下的每一条定律，都将伴随我们直至一切的终点。那些数字和符号的优美组合，即是基沃托斯永恒的纪念碑。"
- SI_Millennium_G11_effect: "\n效果：\n远古建筑产出: §G+200%§!\n随机获得两项模仿§B基沃托斯先驱者§!的建筑科技。\n "
+ SI_Millennium_G11_effect: "\n效果：\n随机获得两项模仿§B基沃托斯先驱者§!的建筑科技。\n$mod_country_minor_artifacts_produces_mult$: §G+10%§!\n$mod_planet_districts_upkeep_mult$: §G-10%§!\n$mod_planet_buildings_upkeep_mult$: §G-10%§!\n$mod_BA_club_pop_physics_research_produces_add$: §G+1.5§!\n$mod_BA_club_pop_society_research_produces_add$: §G+1.5§!\n$mod_BA_club_pop_engineering_research_produces_add$: §G+1.5§!\n$mod_BA_club_pop_unity_produces_add$: §G+1.5§!\n$mod_BA_club_pop_consumer_goods_upkeep_add$: §R+2§!\n "
  SI_Millennium_G11_tip: "§C$SI_Millennium_G11$§!\n$SI_Millennium_G11_desc$\n$SI_Millennium_G11_effect$"
 
  ### 上左线

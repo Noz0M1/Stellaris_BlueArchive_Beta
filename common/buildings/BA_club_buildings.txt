@@ -16,6 +16,10 @@ building_BA_Schale_office = {
 	can_be_disabled = no
 	can_be_ruined = no
 	destroy_trigger = {
+		owner = {
+			is_ai = no
+			has_authority = auth_kivotos
+		}
 		is_capital = yes
 	}
 	convert_to = {
@@ -88,14 +92,23 @@ building_BA_Locker_room = {
 	potential = {
 		is_capital = yes
 		owner = {
+			is_ai = no
 			has_authority = auth_kivotos
 		}
 	}
 	can_be_disabled = no
 	can_be_ruined = no
 	destroy_trigger = {
-		planet = {
+		OR = {
 			is_capital = no
+			owner  = {
+				is_ai = yes
+			}
+			owner = {
+				NOT = {
+					has_authority = auth_kivotos
+				}
+			}
 		}
 	}
 	convert_to = {
@@ -207,7 +220,7 @@ building_BA_club_room = {
 	}
 }
 
-#############   社团建筑 +2/+5社团部员   #############
+#############   社团建筑    #############
 #游戏开发部
 building_BA_Game_development_department = {
 	base_buildtime = @club_room_time
@@ -227,37 +240,9 @@ building_BA_Game_development_department = {
 			always = no			#需要的话以后改
 		}
 	}
-	#triggered_desc = {
-	#	text = building_BA_Game_development_department_effect
-	#}
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
-		}
-	}
-	allow = {
-		#has_active_building = building_BA_Schale_office
-		check_variable = {
-			which = BA_planet_club_count
-			value < 3
-		}
-	}
-	on_queued = {
-		change_variable = {
-			which = BA_planet_club_count
-			value = 1
-		}
-	}
-	on_unqueued = {
-		change_variable = {
-			which = BA_planet_club_count
-			value = -1
-		}
-	}
-	on_destroy = {
-		change_variable = {
-			which = BA_planet_club_count
-			value = -1
 		}
 	}
 	can_be_disabled = no
@@ -270,7 +255,6 @@ building_BA_Game_development_department = {
 			}
 		}
 		modifier = {
-			job_BA_club_members_add = 2
 			pop_happiness = 0.15
 			planet_jobs_unity_produces_mult = 0.15
 			BA_club_pop_unity_produces_add = 0.5
@@ -319,9 +303,6 @@ building_BA_Engineering_club = {
 			always = no			#需要的话以后改
 		}
 	}
-	#triggered_desc = {
-	#	text = building_BA_Engineering_club_effect
-	#}
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -375,9 +356,6 @@ building_BA_Veritas = {
 			always = no			#需要的话以后改
 		}
 	}
-	#triggered_desc = {
-	#	text = building_BA_Veritas_effect
-	#}
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -393,8 +371,7 @@ building_BA_Veritas = {
 			}
 		}
 		modifier = {
-			job_BA_club_members_add = 2
-			pop_government_ethic_attraction = 3
+			planet_hyperlane_range_add = 10
 			BA_club_pop_physics_research_produces_add = 1.5
 			BA_club_pop_consumer_goods_upkeep_add = 0.5
 		}
@@ -406,8 +383,10 @@ building_BA_Veritas = {
 				has_authority = auth_kivotos
 			}
 		}
-		intel_encryption_add = 1
-		intel_decryption_add = 1
+		intel_encryption_add = 2
+		intel_decryption_add = 2
+		spy_network_daily_value_mult = 100
+		planet_hyperlane_range_add = 2
 	}
 	resources = {
 		category = planet_buildings
@@ -440,9 +419,6 @@ building_BA_Foreclosure_task_force = {
 			always = no			#需要的话以后改
 		}
 	}
-	#triggered_desc = {
-	#	text = building_BA_Foreclosure_task_force_effect
-	#}
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -458,7 +434,6 @@ building_BA_Foreclosure_task_force = {
 			}
 		}
 		modifier = {
-			job_BA_club_members_add = 2
 			planet_miners_minerals_produces_mult = 0.25
 			planet_miners_consumer_goods_upkeep_add = 0.5
 			planet_technician_energy_produces_mult = 0.25
@@ -498,9 +473,6 @@ building_BA_Teaparty_branch = {
 			always = no			#需要的话以后改
 		}
 	}
-	#triggered_desc = {
-	#	text = building_BA_Foreclosure_task_force_effect
-	#}
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -518,6 +490,7 @@ building_BA_Teaparty_branch = {
 		modifier = {
 			job_BA_club_members_add = 2
 			empire_size_districts_mult = -0.6
+			pop_demotion_time_mult = 10
 			BA_club_pop_unity_produces_add = 0.5
 			BA_club_pop_consumer_goods_upkeep_add = 0.5
 		}
@@ -553,9 +526,6 @@ building_BA_Hotspring_development_department = {
 			always = no			#需要的话以后改
 		}
 	}
-	# triggered_desc = {
-	# 	text = building_BA_Hotspring_development_department_effect
-	# }
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -572,6 +542,7 @@ building_BA_Hotspring_development_department = {
 		}
 		modifier = {
 			job_BA_club_members_add = 3
+			planet_amenities_add = 30
 			planet_amenities_mult = 0.3
 			BA_club_pop_engineering_research_produces_add = 1.5
 			BA_club_pop_consumer_goods_upkeep_add = 0.5
@@ -619,9 +590,6 @@ building_BA_Festival_operations_department = {
 			always = no			#需要的话以后改
 		}
 	}
-	# triggered_desc = {
-	# 	text = building_BA_Festival_operations_department_effect
-	# }
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -685,9 +653,6 @@ building_BA_Xuanwu_promenade = {
 			always = no			#需要的话以后改
 		}
 	}
-	# triggered_desc = {
-	# 	text = building_BA_Xuanwu_promenade_effect
-	# }
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -704,6 +669,7 @@ building_BA_Xuanwu_promenade = {
 		}
 		modifier = {
 			job_BA_club_members_add = 3
+			trade_value_add = 10
 			trade_value_mult = 0.2
 			BA_club_pop_physics_research_produces_add = 0.5
 			BA_club_pop_consumer_goods_upkeep_add = 0.5
@@ -751,9 +717,6 @@ building_BA_Publishing_department = {
 			always = no			#需要的话以后改
 		}
 	}
-	# triggered_desc = {
-	# 	text = building_BA_Publishing_department_effect
-	# }
 	potential = {
 		owner = {
 			has_authority = auth_kivotos

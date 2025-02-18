@@ -29,6 +29,7 @@ BA_set_rename_flag = {
 	every_owned_leader = {
 		limit = {
 			OR = {
+				BA_leader_is_renamed = yes
 				is_same_value = owner.ruler
 				has_leader_flag = star_oath_ruler
 			}
@@ -103,6 +104,8 @@ BA_event_leader_replace = {
 				}
 			}
 			remove_leader_flag = $Leader_flag$
+			remove_leader_flag = BA_renamed
+			remove_leader_flag = BA_has_sp_trait_1
 			BA_remove_sp_trait = yes
 			BA_check_rename_flag = yes
 			BA_rename_leader = yes
@@ -112,6 +115,8 @@ BA_event_leader_replace = {
 				has_leader_flag = $Leader_flag$
 			}
 			remove_leader_flag = $Leader_flag$
+			remove_leader_flag = BA_renamed
+			remove_leader_flag = BA_has_sp_trait_1
 			BA_remove_sp_trait = yes
 			BA_check_rename_flag = yes
 			BA_rename_leader = yes
@@ -122,6 +127,7 @@ BA_event_leader_replace = {
 ##### 领袖重命名与立绘
 #按设置执行重命名操作 leader
 BA_rename_leader = {
+	set_leader_flag = BA_renamed
 	if = {
 		limit = {
 			has_global_flag = BA_leader_rename_activated
@@ -1472,6 +1478,9 @@ BA_remove_skin = {
 #移除特殊特质 leader
 BA_remove_sp_trait = {
 	optimize_memory
+	# 标识
+	remove_leader_flag = BA_has_sp_trait_1
+	# 特质
 	remove_trait = leader_special_001
 	remove_trait = leader_special_002
 	remove_trait = leader_special_003
@@ -1690,6 +1699,7 @@ BA_remove_sp_trait = {
 BA_change_skin_trait = {
 	optimize_memory
 	BA_remove_sp_trait = yes
+	set_leader_flag = BA_has_sp_trait_1
 	if = {
 		limit = {
 			has_leader_flag = leader_BA_001

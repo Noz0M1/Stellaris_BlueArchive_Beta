@@ -43,6 +43,9 @@ tech_BA_SI_Abydos_G03 = {
 		has_country_flag = unlocked_BA_SI_Abydos
 	}
 	weight = 0
+	modifier = {
+		country_megastructure_build_cap_add = 1
+	}
 }
 
 tech_BA_SI_Abydos_A01 = {
@@ -77,8 +80,9 @@ tech_BA_SI_Abydos_A02 = {
 	}
 	weight = 0
 	modifier = {
+		planet_districts_cost_mult = -0.15
 		planet_districts_upkeep_mult = -0.2
-		terraforming_cost_mult = -0.25
+		terraforming_cost_mult = -0.35
 		terraform_speed_mult = 0.25
 	}
 }
@@ -112,6 +116,7 @@ tech_BA_SI_Abydos_A04 = {
 	}
 	weight = 0
 	modifier = {
+		planet_metallurgists_alloys_produces_add = 1
 		planet_decision_enact_speed_mult = 0.15
 		planet_buildings_cost_mult = -0.2
 	}
@@ -131,6 +136,7 @@ tech_BA_SI_Abydos_A05 = {
 	}
 	weight = 0
 	modifier = {
+		megastructure_build_speed_mult = 0.75
 		BA_auto_districts_produces_mult = 0.2
 		megastructures_cost_mult = -0.2
 		station_gatherers_produces_mult = 0.3
@@ -459,8 +465,9 @@ tech_BA_SI_Gehenna_D01 = {
 	modifier = {
 		BA_club_pop_produces_mult = 0.15
 		pop_cat_specialist_happiness = 0.25
+		pop_category_specialists_produces_add
 		pop_category_specialists_consumer_goods_upkeep_add = 0.5
-		pop_category_specialists_food_upkeep_add = 2
+		pop_category_specialists_food_upkeep_add = 0.2
 	}
 }
 
@@ -629,6 +636,9 @@ tech_BA_SI_Millennium_G04 = {
 		has_country_flag = unlocked_BA_SI_Millennium
 	}
 	weight = 0
+	modifier = {
+		num_tech_alternatives_add = 3
+	}
 }
 
 tech_BA_SI_Millennium_G05 = {
@@ -706,6 +716,9 @@ tech_BA_SI_Millennium_G09 = {
 	weight = 0
 	modifier = {
 		all_technology_research_speed = 0.25
+		megastructures_upkeep_mult = -0.1
+		planet_districts_upkeep_mult = -0.1
+		planet_buildings_upkeep_mult = -0.1
 	}
 }
 
@@ -723,8 +736,12 @@ tech_BA_SI_Millennium_G10 = {
 	}
 	weight = 0
 	modifier = {
-		num_tech_alternatives_add = 3
-		leader_skill_levels = 2
+		commander_initial_skill = 3
+		official_initial_skill = 3
+		scientist_initial_skill = 3
+		country_commander_cap_add = 3
+		country_scientist_cap_add = 3
+		country_official_cap_add = 3
 	}
 }
 
@@ -743,6 +760,13 @@ tech_BA_SI_Millennium_G11 = {
 	weight = 0
 	modifier = {
 		country_minor_artifacts_produces_mult = 0.1
+		planet_districts_upkeep_mult = -0.1
+		planet_buildings_upkeep_mult = -0.1
+		BA_club_pop_physics_research_produces_add = 1.5
+		BA_club_pop_society_research_produces_add = 1.5
+		BA_club_pop_engineering_research_produces_add = 1.5
+		BA_club_pop_unity_produces_add = 1.5
+		BA_club_pop_consumer_goods_upkeep_add = 2
 	}
 }
 

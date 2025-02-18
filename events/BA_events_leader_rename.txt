@@ -50,6 +50,9 @@ country_event = {
 	after = {
 		hidden_effect = {
 			every_country = {
+				limit = {
+					is_country_type = default
+				}
 				country_event = {
 					id = BA_rename.1002
 				}
@@ -121,38 +124,33 @@ country_event = {
 		has_global_flag = BA_leader_rename_trait_activated
 	}
 	immediate = {
-		while = {
-			limit = {
-				any_owned_leader = {
-					BA_rename_special_check_1 = yes
-				}
-			}
-			random_owned_leader = {
+		from = {
+			if = {
 				limit = {
 					BA_rename_special_check_1 = yes
 				}
 				BA_change_skin_trait = yes
 			}
 		}
-		#add_modifier = {
-		#	modifier = modifier_BA_testing
-		#}
+		# random_pool_leader = {
+		# 	limit = { leader_class = official }
+		# 	set_leader_flag = leader_BA_013 BA_rename_leader = yes }
 	}
 }
 
-leader_event = {
-	id = BA_rename.1102
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_skill >= 3
-		species = {
-			BA_has_halo_organic = yes
-		}
-		NOT = {
-			has_leader_flag = BA_SP_trait_Lv1
-		}
-	}
-	immediate = {
-	}
-}
+# leader_event = {
+# 	id = BA_rename.1102
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		has_skill >= 3
+# 		species = {
+# 			BA_has_halo_organic = yes
+# 		}
+# 		NOT = {
+# 			has_leader_flag = BA_SP_trait_Lv1
+# 		}
+# 	}
+# 	immediate = {
+# 	}
+# }

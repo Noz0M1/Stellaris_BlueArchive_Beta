@@ -110,6 +110,21 @@ Project_Cradle_planet_trigger = {
 }
 
 ##### Club
+BA_has_any_club = {
+	# TODO:随社团更新
+	OR = {
+		has_country_flag = BA_Game_development_department
+		has_country_flag = BA_Engineering_club
+		has_country_flag = BA_Veritas
+		has_country_flag = BA_Foreclosure_task_force
+		has_country_flag = BA_Teaparty
+		has_country_flag = BA_Hotspring_development_department
+		has_country_flag = BA_Festival_operations_department
+		has_country_flag = BA_Xuanwu_promenade
+		has_country_flag = BA_Publishing_department
+	}
+}
+
 BA_set_random_club = {
 	# TODO:随社团更新
 	NOR = {

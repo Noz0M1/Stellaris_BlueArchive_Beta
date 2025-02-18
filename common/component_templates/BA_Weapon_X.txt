@@ -13,6 +13,7 @@ weapon_component_template = {
 	tags = {
 		weapon_type_kinetic
 		weapon_type_Kivotos
+		weapon_type_explosion
 	}
 	ai_tags = {
 		gunship
@@ -69,6 +70,7 @@ weapon_component_template = {
 	tags = {
 		weapon_type_kinetic
 		weapon_type_Kivotos
+		weapon_type_penetration
 	}
 	ai_tags = {
 		gunship
@@ -130,6 +132,8 @@ weapon_component_template = {
 	ai_tags = {
 		gunship
 		weapon_role_anti_shield
+		weapon_role_anti_armor
+		weapon_role_artillery
 	}
 	resources = {
 		category = ship_components
@@ -184,6 +188,7 @@ weapon_component_template = {
 		weapon_type_energy
 		weapon_type_explosive
 		weapon_type_Kivotos
+		weapon_type_explosion
 	}
 	ai_tags = {
 		explosive

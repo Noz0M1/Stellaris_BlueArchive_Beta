@@ -118,6 +118,36 @@ fleet_event = {
 	option = {
 		name = BA_club.0005.confirm
 		custom_tooltip = BA_club.0005.confirm.tip
+		trigger = {
+			BA_has_any_club = yes
+		}
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = sr_eligma
+					value >= 50
+				}
+			}
+		}
+		hidden_effect = {
+			owner = {
+				add_resource = {
+					sr_eligma = -50
+				}
+			}
+			from.owner = {
+				country_event = {
+					id = BA_club.0006
+				}
+			}
+		}
+	}
+	option = {
+		name = BA_club.0005.confirm.first
+		custom_tooltip = BA_club.0005.confirm.tip
+		trigger = {
+			BA_has_any_club = no
+		}
 		hidden_effect = {
 			from.owner = {
 				country_event = {
@@ -129,6 +159,9 @@ fleet_event = {
 	option = {
 		name = BA_club.0005.random
 		custom_tooltip = BA_club.0005.random.tip
+		trigger = {
+			BA_has_any_club = yes
+		}
 		hidden_effect = {
 			from.owner = {
 				country_event = {

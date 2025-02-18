@@ -11,9 +11,10 @@ weapon_component_template = {
 	component_set = "BA_HG_P"
 	projectile_gfx = "flak_pd_1"
 	tags = {
+		weapon_type_point_defense
 		weapon_type_kinetic
 		weapon_type_Kivotos
-		weapon_type_point_defense
+		weapon_type_mystic
 	}
 	ai_tags = {
 		weapon_role_point_defense
@@ -180,9 +181,10 @@ weapon_component_template = {
 	component_set = "BA_SMG_3_P"
 	projectile_gfx = "white_laser_pd"
 	tags = {
+		weapon_type_point_defense
 		weapon_type_kinetic
 		weapon_type_Kivotos
-		weapon_type_point_defense
+		weapon_type_mystic
 	}
 	ai_tags = {
 		weapon_role_point_defense

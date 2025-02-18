@@ -39,13 +39,19 @@ option = {
             value >= 100
             multiplier = Hotspring_development_department_megastructure_produce
         }
+        resource_stockpile_compare = {
+            resource = sr_eligma
+            value >= 50
+            multiplier = Hotspring_development_department_megastructure_produce
+        }
     }
     add_resource = {
-        energy = 3000
-        food = 3000
-        volatile_motes = 100
-        exotic_gases = 100
-        rare_crystals = 100
+        energy = -3000
+        food = -3000
+        volatile_motes = -100
+        exotic_gases = -100
+        rare_crystals = -100
+        sr_eligma = -50
         multiplier = Hotspring_development_department_megastructure_produce
     }
     if = {

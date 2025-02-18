@@ -69,9 +69,10 @@ weapon_component_template = {
 	component_set = "BA_AR_2"
 	projectile_gfx = "flak_pd_3"
 	tags = {
+		l_slot
 		weapon_type_kinetic
 		weapon_type_Kivotos
-		l_slot
+		weapon_type_explosion
 	}
 	ai_tags = {
 		gunship
@@ -242,9 +243,10 @@ weapon_component_template = {
 	component_set = "BA_SR_3"
 	projectile_gfx = "plasma_cannon_m"
 	tags = {
+		l_slot
 		weapon_type_kinetic
 		weapon_type_Kivotos
-		l_slot
+		weapon_type_penetration
 	}
 	ai_tags = {
 		gunship
@@ -414,9 +416,10 @@ weapon_component_template = {
 	component_set = "BA_MG_3"
 	projectile_gfx = "stormfire_auto_cannons_m"
 	tags = {
+		l_slot
 		weapon_type_kinetic
 		weapon_type_Kivotos
-		l_slot
+		weapon_type_explosion
 	}
 	ai_tags = {
 		gunship

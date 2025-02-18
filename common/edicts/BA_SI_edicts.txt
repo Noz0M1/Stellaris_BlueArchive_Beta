@@ -4,16 +4,18 @@ BA_SI_Abydos_A03 = {
 	resources = {
 		category = edicts
 		cost = {
-			unity = 200
+			unity = 300
 			multiplier = value:edict_size_effect
 		}
 		upkeep = {
-			unity = 20
+			unity = 30
 			multiplier = value:edict_size_effect
 		}
 	}
 	modifier = {
+		planet_building_build_speed_mult = 0.25
 		planet_jobs_produces_mult = 0.25
+		BA_staff_pop_produces_mult = 0.25
 		planet_jobs_upkeep_mult = 0.25
 	}
 	potential = {

@@ -1,7 +1,7 @@
 ### 阿拜多斯
 modifier_BA_SI_Abydos_A06_permanent = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
-	planet_max_districts_add = 6
+	planet_max_districts_mult = 0.2
 }
 
 modifier_BA_SI_Abydos_A06_temp = {
@@ -63,6 +63,7 @@ modifier_BA_SI_Abydos_B_route_4 = {
 modifier_BA_SI_Gehenna_G02 = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
 	pop_happiness = 0.4
+	planet_building_build_speed_mult = 0.4
 }
 
 modifier_BA_SI_Gehenna_A01 = {
@@ -80,6 +81,8 @@ modifier_BA_SI_Gehenna_A02 = {
 modifier_BA_SI_Gehenna_A03 = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
 	planet_stability_add = 50
+	planet_building_build_speed_mult = 0.25
+	planet_jobs_upkeep_mult = -0.1
 }
 
 modifier_BA_SI_Gehenna_B01 = {

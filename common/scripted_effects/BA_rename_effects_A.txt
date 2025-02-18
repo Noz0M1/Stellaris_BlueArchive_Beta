@@ -1,2488 +1,2482 @@
 #### 领袖重命名初始化
-#检查命名标志，没有的随机加一个 leader
+#检查命名标志，没有的随机加一个 scope: leader
 BA_check_rename_flag = {
 	optimize_memory
-	if = {
-		# 001~159
-		limit = {
-			BA_leader_is_renamed = no
+	# 001~159
+	random_list = {
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_001
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_001
 		}
-		# 001~159
-		random_list = {
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_001
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_001
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_002
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_002
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_003
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_003
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_004
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = scientist
-					}
-				}
-				set_leader_flag = leader_BA_004
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_005
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_005
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_006
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_006
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_007
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_007
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_008
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_008
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_009
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_009
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_010
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_010
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_011
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_011
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_012
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_012
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_013
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				modifier = {
-					#葛叶特殊优化：前20年不出现
-					factor = 0
-					years_passed <= 20
-				}
-				set_leader_flag = leader_BA_013
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_014
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_014
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_015
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_015
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_016
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_016
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_017
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_017
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_018
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_018
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_019
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_019
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_020
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_020
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_021
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_021
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_022
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_022
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_023
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_023
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_024
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_024
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_025
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = scientist
-					}
-				}
-				set_leader_flag = leader_BA_025
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_026
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_026
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_027
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_027
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_028
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_028
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_029
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_029
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_030
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_030
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_031
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_031
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_032
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_032
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_033
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_033
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_034
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_034
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_035
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_035
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_036
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_036
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_037
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_037
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_038
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_038
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_039
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_039
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_040
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_040
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_041
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_041
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_042
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_042
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_043
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_043
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_044
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_044
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_045
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_045
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_046
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_046
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_047
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_047
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_048
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_048
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_049
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_049
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_050
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_050
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_051
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_051
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_052
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_052
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_053
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_053
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_054
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_054
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_055
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_055
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_056
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_056
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_057
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_057
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_058
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_058
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_059
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_059
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_060
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_060
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_061
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = scientist
-					}
-				}
-				set_leader_flag = leader_BA_061
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_062
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_062
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_063
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_063
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_064
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_064
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_065
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_065
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_066
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_066
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_067
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_067
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_068
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_068
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_069
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = scientist
-					}
-				}
-				set_leader_flag = leader_BA_069
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_070
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = scientist
-					}
-				}
-				set_leader_flag = leader_BA_070
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_071
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_071
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_072
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_072
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_073
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_073
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_074
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_074
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_075
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_075
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_076
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_076
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_077
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_077
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_078
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_078
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_079
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_079
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_080
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_080
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_081
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_081
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_082
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_082
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_083
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_083
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_084
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_084
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_085
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = scientist
-					}
-				}
-				set_leader_flag = leader_BA_085
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_086
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = scientist
-					}
-				}
-				set_leader_flag = leader_BA_086
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_087
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_087
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_088
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_088
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_089
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_089
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_090
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = scientist
-					}
-				}
-				set_leader_flag = leader_BA_090
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_091
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = scientist
-					}
-				}
-				set_leader_flag = leader_BA_091
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_092
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = scientist
-					}
-				}
-				set_leader_flag = leader_BA_092
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_093
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_093
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_094
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_094
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_095
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_095
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_096
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = scientist
-					}
-				}
-				set_leader_flag = leader_BA_096
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_097
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_097
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_098
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = scientist
-					}
-				}
-				set_leader_flag = leader_BA_098
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_099
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = scientist
-					}
-				}
-				set_leader_flag = leader_BA_099
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_100
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_100
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_101
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = scientist
-					}
-				}
-				set_leader_flag = leader_BA_101
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_102
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_102
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_103
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_103
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_104
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_104
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_105
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = scientist
-					}
-				}
-				set_leader_flag = leader_BA_105
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_106
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_106
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_107
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = scientist
-					}
-				}
-				set_leader_flag = leader_BA_107
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_108
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = scientist
-					}
-				}
-				set_leader_flag = leader_BA_108
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_109
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = scientist
-					}
-				}
-				set_leader_flag = leader_BA_109
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_110
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_110
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_111
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_111
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_112
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_112
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_113
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_113
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_114
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_114
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_115
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_115
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_116
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_116
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_117
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_117
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_118
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_118
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_119
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_119
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_120
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_120
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_121
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_121
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_122
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_122
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_123
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_123
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_124
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_124
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_125
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_125
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_126
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_126
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_127
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_127
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_128
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_128
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_129
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_129
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_130
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = scientist
-					}
-				}
-				set_leader_flag = leader_BA_130
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_131
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = scientist
-					}
-				}
-				set_leader_flag = leader_BA_131
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_132
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_132
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_133
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_133
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_134
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_134
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_135
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_135
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_136
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_136
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_137
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_137
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_138
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_138
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_139
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_139
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_140
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_140
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_141
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_141
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_142
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_142
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_143
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_143
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_144
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_144
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_145
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_145
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_146
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_146
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_147
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_147
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_148
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_148
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_149
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_149
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_150
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_150
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_151
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-					}
-				}
-				set_leader_flag = leader_BA_151
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_152
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_152
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_153
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_153
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_154
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_154
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_155
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_155
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_156
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_156
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_157
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_157
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_158
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_158
-			}
-			0 = {
-				modifier = {
-					factor = 0
-					BA_leader_has_same = {
-						flag = leader_BA_159
-					}
-				}
-				modifier = {
-					factor = 0
-					NOR = {
-						leader_class = commander
-						leader_class = scientist
-						leader_class = official
-					}
-				}
-				set_leader_flag = leader_BA_159
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_002
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_002
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_003
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_003
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_004
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_004
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_005
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_005
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_006
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_006
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_007
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_007
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_008
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_008
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_009
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_009
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_010
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_010
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_011
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_011
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_012
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_012
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_013
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			modifier = {
+				#葛叶特殊优化：前20年不出现
+				factor = 0
+				years_passed <= 20
+			}
+			set_leader_flag = leader_BA_013
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_014
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_014
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_015
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_015
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_016
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_016
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_017
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_017
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_018
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_018
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_019
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_019
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_020
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_020
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_021
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_021
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_022
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_022
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_023
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_023
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_024
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_024
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_025
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_025
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_026
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_026
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_027
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_027
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_028
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_028
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_029
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_029
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_030
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_030
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_031
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_031
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_032
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_032
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_033
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_033
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_034
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_034
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_035
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_035
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_036
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_036
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_037
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_037
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_038
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_038
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_039
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_039
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_040
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_040
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_041
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_041
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_042
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_042
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_043
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_043
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_044
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_044
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_045
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_045
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_046
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_046
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_047
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_047
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_048
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_048
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_049
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_049
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_050
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_050
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_051
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_051
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_052
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_052
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_053
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_053
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_054
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_054
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_055
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_055
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_056
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_056
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_057
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_057
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_058
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_058
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_059
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_059
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_060
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_060
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_061
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_061
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_062
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_062
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_063
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_063
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_064
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_064
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_065
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_065
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_066
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_066
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_067
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_067
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_068
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_068
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_069
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_069
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_070
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_070
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_071
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_071
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_072
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_072
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_073
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_073
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_074
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_074
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_075
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_075
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_076
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_076
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_077
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_077
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_078
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_078
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_079
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_079
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_080
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_080
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_081
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_081
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_082
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_082
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_083
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_083
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_084
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_084
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_085
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_085
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_086
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_086
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_087
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_087
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_088
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_088
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_089
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_089
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_090
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_090
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_091
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_091
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_092
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_092
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_093
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_093
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_094
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_094
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_095
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_095
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_096
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_096
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_097
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_097
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_098
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_098
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_099
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_099
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_100
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_100
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_101
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_101
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_102
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_102
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_103
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_103
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_104
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_104
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_105
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_105
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_106
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_106
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_107
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_107
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_108
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_108
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_109
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_109
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_110
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_110
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_111
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_111
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_112
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_112
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_113
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_113
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_114
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_114
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_115
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_115
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_116
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_116
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_117
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_117
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_118
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_118
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_119
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_119
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_120
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_120
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_121
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_121
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_122
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_122
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_123
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_123
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_124
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_124
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_125
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_125
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_126
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_126
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_127
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_127
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_128
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_128
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_129
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_129
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_130
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_130
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_131
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_131
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_132
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_132
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_133
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_133
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_134
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_134
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_135
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_135
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_136
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_136
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_137
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_137
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_138
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_138
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_139
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_139
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_140
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_140
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_141
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_141
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_142
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_142
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_143
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_143
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_144
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_144
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_145
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_145
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_146
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_146
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_147
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_147
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_148
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_148
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_149
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_149
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_150
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_150
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_151
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_151
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_152
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_152
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_153
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_153
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_154
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_154
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_155
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_155
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_156
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_156
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_157
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_157
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_158
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_158
+		}
+		0 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_159
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+					leader_class = scientist
+					leader_class = official
+				}
 			}
+			set_leader_flag = leader_BA_159
 		}
 	}
 }

@@ -814,13 +814,8 @@ ship_section_template = {
 		template = "invisible_extra_large_fixed"
 		locatorname = "xl_gun_01"
 	}
-	component_slot = {
-		name = "EXTRA_LARGE_03"
-		template = "invisible_extra_large_fixed"
-		locatorname = "xl_gun_01"
-	}
-	large_utility_slots = 3
-	aux_utility_slots = 1
+	large_utility_slots = 2
+	aux_utility_slots = 3
 	resources = {
 		category = ship_sections
 		cost = {

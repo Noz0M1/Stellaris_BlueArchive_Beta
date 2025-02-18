@@ -8,9 +8,40 @@ option = {
             multiplier = Veritas_sensor_cost
         }
         custom_tooltip = {
-            fail_text = Veritas_crafting_sensor
-            NOT = {
-                has_country_flag = BA_Veritas_crafting
+            fail_text = BA_club_favor_fail
+            OR = {
+                AND = {
+                    NOR = {
+                        has_modifier = modifier_BA_Veritas_1
+                        has_modifier = modifier_BA_Veritas_2
+                        has_modifier = modifier_BA_Veritas_3
+                    }
+                    check_variable = {
+                        which = Veritas
+                        value >= 25
+                    }
+                }
+                AND = {
+                    has_modifier = modifier_BA_Veritas_1
+                    check_variable = {
+                        which = Veritas
+                        value >= 50
+                    }
+                }
+                AND = {
+                    has_modifier = modifier_BA_Veritas_2
+                    check_variable = {
+                        which = Veritas
+                        value >= 75
+                    }
+                }
+                AND = {
+                    has_modifier = modifier_BA_Veritas_3
+                    check_variable = {
+                        which = Veritas
+                        value >= 100
+                    }
+                }
             }
         }
         custom_tooltip = {
@@ -36,10 +67,6 @@ option = {
         limit = {
             has_modifier = modifier_BA_Veritas_2
         }
-        set_timed_country_flag = {
-            flag = BA_Veritas_crafting
-            days = 720
-        }
         country_event = {
             id = BA_club.1213
         }
@@ -48,19 +75,11 @@ option = {
         limit = {
             has_modifier = modifier_BA_Veritas_1
         }
-        set_timed_country_flag = {
-            flag = BA_Veritas_crafting
-            days = 540
-        }
         country_event = {
             id = BA_club.1212
         }
     }
     else = {
-        set_timed_country_flag = {
-            flag = BA_Veritas_crafting
-            days = 360
-        }
         country_event = {
             id = BA_club.1211
         }

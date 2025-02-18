@@ -131,9 +131,10 @@ weapon_component_template = {
 	component_set = "BA_SG_3"
 	projectile_gfx = "stormfire_auto_cannons_m"
 	tags = {
+		g_slot
 		weapon_type_kinetic
 		weapon_type_Kivotos
-		g_slot
+		weapon_type_penetration
 	}
 	ai_tags = {
 		explosive
@@ -191,10 +192,11 @@ weapon_component_template = {
 	component_set = "BA_Megumin_G"
 	projectile_gfx = "titan_laser"
 	tags = {
+		g_slot
 		weapon_type_energy
 		weapon_type_explosive
 		weapon_type_Kivotos
-		g_slot
+		weapon_type_explosion
 	}
 	ai_tags = {
 		explosive
@@ -322,9 +324,10 @@ weapon_component_template = {
 	component_set = "BA_GL_2"
 	projectile_gfx = "large_torpedo_03"
 	tags = {
+		g_slot
 		weapon_type_explosive
 		weapon_type_Kivotos
-		g_slot
+		weapon_type_mystic
 	}
 	ai_tags = {
 		weapon_role_artillery

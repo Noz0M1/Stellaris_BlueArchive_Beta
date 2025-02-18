@@ -3750,6 +3750,20 @@ country_event = {
 				}
 			}
 		}
+		### 千年
+		if = {
+			limit = {
+				has_technology = tech_BA_SI_Millennium_G10
+			}
+			every_owned_leader = {
+				limit = {
+					NOT = {
+						has_trait = leader_trait_SI_Millennium_G10
+					}
+				}
+				add_trait = leader_trait_SI_Millennium_G10
+			}
+		}
 	}
 }
 
@@ -3884,7 +3898,7 @@ planet_event = {
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
-		owner = {
+		from = {
 			has_technology = tech_BA_SI_Gehenna_A03
 		}
 	}
@@ -3892,6 +3906,42 @@ planet_event = {
 		add_modifier = {
 			modifier = modifier_BA_SI_Gehenna_A03
 			days = 1800
+		}
+		if = {
+			limit = {
+				exists = fromfrom
+				fromfrom = {
+					OR = {
+						is_country_type = primitive
+					}
+				}
+			}
+			from.capital_scope = {
+				add_modifier = {
+					modifier = modifier_BA_SI_Gehenna_A03
+					days = 1800
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				exists = fromfrom
+				fromfrom = {
+					OR = {
+						is_country_type = fallen_empire
+						is_country_type = awakened_fallen_empire
+					}
+				}
+			}
+			from = {
+				every_owned_planet = {
+					add_modifier = {
+						modifier = modifier_BA_SI_Gehenna_A03
+						days = 1800
+					}
+				}
+			}
+
 		}
 	}
 }
