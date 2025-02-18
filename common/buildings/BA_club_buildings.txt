@@ -185,6 +185,10 @@ building_BA_club_room = {
 		owner = {
 			has_authority = auth_kivotos
 		}
+		NOR = {
+			is_planet_class = pc_BA_auto_ringworld
+			is_planet_class = pc_BA_auto_habitat
+		}
 	}
 	triggered_planet_modifier = {
 		potential = {

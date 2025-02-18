@@ -1,10 +1,46 @@
 #############   环型世界   #############
+building_BA_ringworld_room = {
+    base_buildtime = 360
+    category = government
+    position_priority = 1
+    potential = {
+        owner = {
+            has_authority = auth_kivotos
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_authority = auth_kivotos
+            }
+        }
+        modifier = {
+            job_BA_ringworld_worker_add = 10
+        }
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            energy = 500
+            minerals = 1000
+            sr_keystone = 50
+            sr_eligma = 1
+        }
+        upkeep = {
+            energy = 15
+        }
+    }
+}
+
+
 ### 铸模区段
 # 制造石配送器：青辉石*20 --> 制造石*40
 building_BA_ringworld_refinery_A = {
     position_priority = 153
     base_buildtime = 360
     category = government
+    base_cap_amount = 1
     potential = {
         owner = {
             has_authority = auth_kivotos
@@ -55,6 +91,7 @@ building_BA_ringworld_refinery_B = {
     position_priority = 153
     base_buildtime = 360
     category = government
+    base_cap_amount = 1
     potential = {
         owner = {
             has_authority = auth_kivotos
@@ -106,6 +143,7 @@ building_BA_ringworld_factory_A = {
     position_priority = 153
     base_buildtime = 360
     category = government
+    base_cap_amount = 1
     potential = {
         owner = {
             has_authority = auth_kivotos
@@ -156,6 +194,7 @@ building_BA_ringworld_factory_B = {
     position_priority = 153
     base_buildtime = 360
     category = government
+    base_cap_amount = 1
     potential = {
         owner = {
             has_authority = auth_kivotos
@@ -207,6 +246,7 @@ building_BA_ringworld_matrix_A = {
     position_priority = 153
     base_buildtime = 360
     category = government
+    base_cap_amount = 1
     potential = {
         owner = {
             has_authority = auth_kivotos
@@ -243,7 +283,9 @@ building_BA_ringworld_matrix_A = {
             sr_eligma = 1
         }
         produces = {
-            unity = 240
+            physics_research = 240
+            society_research = 240
+            engineering_research = 240
         }
         upkeep = {
             energy = 15
@@ -257,6 +299,7 @@ building_BA_ringworld_matrix_B = {
     position_priority = 153
     base_buildtime = 360
     category = government
+    base_cap_amount = 1
     potential = {
         owner = {
             has_authority = auth_kivotos
@@ -265,7 +308,7 @@ building_BA_ringworld_matrix_B = {
     }
     allow = {
         BA_no_exclude_building = {
-            Building = building_BA_ringworld_factory_A
+            Building = building_BA_ringworld_matrix_A
         }
     }
     destroy_trigger = {
@@ -293,9 +336,7 @@ building_BA_ringworld_matrix_B = {
             sr_eligma = 1
         }
         produces = {
-            physics_research = 240
-            society_research = 240
-            engineering_research = 240
+            unity = 240
         }
         upkeep = {
             energy = 15
