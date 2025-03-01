@@ -7,6 +7,9 @@ ap_BA_halo_awaken = {
 	}
 	possible = {
 		has_technology = tech_BA_Shittem_starting
+		has_technology = tech_BA_Halo_power_increase
+		has_technology = tech_BA_Divine_liberation_theory
+		has_technology = tech_BA_pyroxenes_crafting
 		custom_tooltip = {
 			fail_text = In_awaken_route
 			has_country_flag = BA_halo_awaken_route
@@ -25,6 +28,7 @@ ap_BA_halo_awaken = {
 				OR = {
 					has_country_flag = BA_origin_Eden_treaty_finished
 					has_country_flag = BA_origin_Kyrie_finished
+					has_country_flag = BA_origin_Kyrie_failed
 					has_country_flag = BA_origin_Unnamed_starting_finished
 				}
 			}
