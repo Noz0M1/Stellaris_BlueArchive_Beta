@@ -124,7 +124,7 @@
  BA_club.0005.confirm:0 "好的，请帮我打开裁定确认界面。"
  BA_club.0005.confirm.tip:0 "指定一个社团的使用申请通过，需要50§Y£sr_eligma£$sr_eligma$§!。一旦申请通过，该太空部室产权就归这个指定的社团所有，同时她们也会获得直接向统括室提交项目计划，并§Y作为研究选项呈现§!的权益。"
  BA_club.0005.confirm.first:0 "为我们的第一个太空社团部剪彩！"
- BA_club.0005.confirm.first.tip:0 "国家首个社团的使用申请无需消耗§Y£sr_eligma£$sr_eligma$§!。一旦申请通过，该太空部室产权就归这个指定的社团所有，同时她们也会获得直接向统括室提交项目计划，并§Y作为研究选项呈现§!的权益。"
+ BA_club.0005.confirm.first.tip:0 "首个社团的使用申请无需消耗§Y£sr_eligma£$sr_eligma$§!。一旦申请通过，该太空部室产权就归这个指定的社团所有，同时她们也会获得直接向统括室提交项目计划，并§Y作为研究选项呈现§!的权益。"
  BA_club.0005.random:0 "交给学生们自由裁定。"
  BA_club.0005.random.tip:0 "下放自由裁量权，这无需消耗§Y£sr_eligma£$sr_eligma$§!。太空部室的产权将分配给裁定胜出者，同时她们也会获得直接向统括室提交项目计划，并§Y作为研究选项呈现§!的权益。"
  BA_club.0005.cancel:0 "暂时取消。"
@@ -404,10 +404,10 @@
  Foreclosure_task_force_sponsor_ShirokoRE:0 "感谢，虽然这点小事情，我自己就可以解决……嗯，这样的话……"
 
  Foreclosure_task_force_decisions:0 "社团总部对你们下达了下一轮的殖民地调查指令，这是经费。"
- Foreclosure_task_force_decisions.tip:0 "经过实地调查后，对策委员会的各位成员可以对此殖民地进行更好的资源配置、人力分配优化。\n下一轮的调查需要花费§G1800§!£time£天。"
+ Foreclosure_task_force_decisions.tip:0 "经过实地调查后，对策委员会的各位成员可以对此殖民地进行更好的资源配置、人力分配优化。\n每一轮调查需要准备§G1800§!£time£天。"
  Foreclosure_task_force_func_lv:0 "对策委员会调查等级"
  taskforce_not_finished:0 "一个优化决策已准备好，请先在一个殖民地上执行此决策"
- taskforce_cooldown:0 "下一级决策的前置调查还未完成"
+ taskforce_cooldown:0 "还未准备好下一级决策的前置调查"
  decision_fulled:0 "$TRIGGER_FAIL$优化决策已充分进行，去其他殖民地进行优化吧"
  decision_limited:0 "$TRIGGER_FAIL$更高等级的优化预案还没有筹措，请向对策委员会拨款"
  decision_coming_soon:0 ""
@@ -444,7 +444,7 @@
  Teaparty_sponsor.MikaRE:0 "不愧是您！我会珍惜的使用这些钱的。"
 
  Teaparty_support:0 "我们需要你们的行政人员。"
- Teaparty_support.tip:0 "请求茶会提供行政人员为联邦学生会支援，以此来获得或更新帝国修正，限制帝国规模。"
+ Teaparty_support.tip:0 "请求茶会提供行政人员为联邦学生会支援，以此大量限制帝国规模。"
  Teaparty_support.NagisaRE:0 "十分感谢，老师，而且我一向不会刁难有诚意的合作方。"
  Teaparty_support.SeiaRE:0 "……甜点，啊，不……才不是我想要吃……"
  Teaparty_support.MikaRE:0 "真的吗? 那么，就奖励您可以和可爱的未花一起共事的机会！……公文每天三千页起? ……那还是算了……"
@@ -555,7 +555,7 @@
  Takane_desc3:0 "$Publishing_department_opinion$"
 
  Publishing_department_spevent:0 "我需要委托你们进行一轮加刊。"
- Publishing_department_spevent.tip:0 "基于当前的£pop£人口数，消耗一些£food£$food$并获得一些£consumer_goods£$consumer_goods$，同时增加主流思潮吸引力。出版部的维护费将少量提升。"
+ Publishing_department_spevent.tip:0 "持续时间内，出版部将消耗£food£$food$来产出£consumer_goods£$consumer_goods$，同时增加主流思潮吸引力。（数值基于当前的£pop£人口数，需要立即支付1次月度£food£$food$消耗）"
  Publishing_department_spevent.TakaneRE:0 "嗯，请您将策划案交给我们吧。"
 
  Publishing_department_building:0 "现在我们可以开设其他的编辑部了。"

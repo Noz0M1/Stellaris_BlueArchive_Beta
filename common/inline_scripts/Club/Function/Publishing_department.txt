@@ -9,15 +9,21 @@ option = {
             value >= 1
             multiplier = value:num_BA_club_publish_value
         }
+        NOT = {
+            has_modifier = modifier_BA_Publishing_department
+        }
     }
     add_resource = {
         food = -1
-        consumer_goods = 1
         multiplier = value:num_BA_club_publish_value
     }
     add_modifier = {
         modifier = modifier_BA_Publishing_department
         days = 1
         time_multiplier = value:num_BA_club_publish_time
+    }
+    set_timed_country_flag = {
+        flag = Publishing_department_func
+        days = value:num_BA_club_publish_time
     }
 }

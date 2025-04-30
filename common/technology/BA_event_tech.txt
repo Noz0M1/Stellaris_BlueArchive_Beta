@@ -206,6 +206,9 @@ tech_BA_Preliminary_ring_theory = {
 		}
 	}
 	weight = 0
+	modifier = {
+		planet_jobs_produces_mult = 0.01
+	}
 }
 
 #光环解析装置（基础路线 2阶）
@@ -243,6 +246,9 @@ tech_BA_Ring_resolution_device = {
 	}
 	prerequisites = {
 		tech_BA_Preliminary_ring_theory
+	}
+	modifier = {
+		planet_jobs_produces_mult = 0.02
 	}
 }
 

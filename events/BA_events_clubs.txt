@@ -119,7 +119,9 @@ fleet_event = {
 		name = BA_club.0005.confirm
 		custom_tooltip = BA_club.0005.confirm.tip
 		trigger = {
-			BA_has_any_club = yes
+			owner = {
+				BA_has_any_club = yes
+			}
 		}
 		allow = {
 			owner = {
@@ -144,9 +146,11 @@ fleet_event = {
 	}
 	option = {
 		name = BA_club.0005.confirm.first
-		custom_tooltip = BA_club.0005.confirm.tip
+		custom_tooltip = BA_club.0005.confirm.first.tip
 		trigger = {
-			BA_has_any_club = no
+			owner = {
+				BA_has_any_club = no
+			}
 		}
 		hidden_effect = {
 			from.owner = {
@@ -160,7 +164,9 @@ fleet_event = {
 		name = BA_club.0005.random
 		custom_tooltip = BA_club.0005.random.tip
 		trigger = {
-			BA_has_any_club = yes
+			owner = {
+				BA_has_any_club = yes
+			}
 		}
 		hidden_effect = {
 			from.owner = {

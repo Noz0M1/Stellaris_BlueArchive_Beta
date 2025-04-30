@@ -1196,14 +1196,32 @@ BA_club_station_Publishing_department = {
 		upkeep = {
 			energy = 5
 		}
+		produces = {
+			trigger = {
+				owner = {
+					has_country_flag = Publishing_department_func
+				}
+			}
+			consumer_goods = 1
+			multiplier = owner.value:num_BA_club_publish_value
+		}
 		upkeep = {
 			trigger = {
 				owner = {
-					has_modifier = modifier_BA_Publishing_department
+					has_country_flag = Publishing_department_func
+				}
+			}
+			food = 1
+			multiplier = owner.value:num_BA_club_publish_value
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					has_country_flag = Publishing_department_func
 				}
 			}
 			energy = 0.01
-			multiplier = value:num_BA_club_publish_value
+			multiplier = owner.value:num_BA_club_publish_value
 		}
 		upkeep = {
 			trigger = {

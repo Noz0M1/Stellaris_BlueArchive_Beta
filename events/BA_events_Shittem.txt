@@ -242,6 +242,14 @@ country_event = {
 			}
 		}
 	}
+	option = {
+		name = BA_Shittem.0102.b
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.0998
+			}
+		}
+	}
 }
 
 country_event = {
@@ -1194,7 +1202,12 @@ country_event = {
 		name = BA_Shittem.1303.title
 		custom_tooltip = BA_Shittem.1303.tip
 		trigger = {
-			always = no
+			has_country_flag = BA_Aris_joined
+		}
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.1303
+			}
 		}
 	}
 }
@@ -1220,30 +1233,9 @@ country_event = {
 		}
 	}
 	# TODO：随特殊领袖储备更新
-	#爱丽丝
-	option = {
-		name = NAME_Aris
-		is_dialog_only = yes
-		trigger = {
-			event_target:BA_Shittem_country = {
-				has_country_flag = BA_stored_SP_Aris_@root
-			}
-			NOT = {
-				any_owned_leader = {
-					has_leader_flag = BA_Real_Aris
-				}
-			}
-		}
-		hidden_effect = {
-			country_event = {
-				id = BA_Shittem.1351
-			}
-		}
-	}
 	#星野
 	option = {
 		name = NAME_Hoshino
-		is_dialog_only = yes
 		trigger = {
 			event_target:BA_Shittem_country = {
 				has_country_flag = BA_stored_SP_Hoshino_@root
@@ -1263,7 +1255,6 @@ country_event = {
 	#日奈
 	option = {
 		name = NAME_Hina
-		is_dialog_only = yes
 		trigger = {
 			event_target:BA_Shittem_country = {
 				has_country_flag = BA_stored_SP_Hina_@root
@@ -1283,7 +1274,6 @@ country_event = {
 	#未花
 	option = {
 		name = NAME_Mika
-		is_dialog_only = yes
 		trigger = {
 			event_target:BA_Shittem_country = {
 				has_country_flag = BA_stored_SP_Mika_@root
@@ -1303,7 +1293,6 @@ country_event = {
 	#优香-总督
 	option = {
 		name = NAME_Yuuka
-		is_dialog_only = yes
 		trigger = {
 			event_target:BA_Shittem_country = {
 				has_country_flag = BA_stored_SP_Yuuka_@root
@@ -1323,7 +1312,6 @@ country_event = {
 	#亚津子
 	option = {
 		name = NAME_Atsuko
-		is_dialog_only = yes
 		trigger = {
 			event_target:BA_Shittem_country = {
 				has_country_flag = BA_stored_SP_Atsuko_@root
@@ -1343,7 +1331,6 @@ country_event = {
 	#纱织
 	option = {
 		name = NAME_Saori
-		is_dialog_only = yes
 		trigger = {
 			event_target:BA_Shittem_country = {
 				has_country_flag = BA_stored_SP_Saori_@root
@@ -1382,6 +1369,60 @@ country_event = {
 		}
 	}
 	### 特殊定制
+}
+
+country_event = {
+	id = BA_Shittem.1302
+	is_triggered_only = yes
+	title = BA_Shittem.1302.title
+	desc = BA_Shittem.1302.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0004
+		room = BA_03_room
+	}
+	option = {
+		name = BACK
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.1300
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_Shittem.1303
+	is_triggered_only = yes
+	title = BA_Shittem.1303.title
+	desc = BA_Shittem.1303.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0004
+		room = BA_03_room
+	}
+	option = {
+		name = BACK
+		default_hide_option = yes
+		# hidden_effect = {
+		# 	country_event = {
+		# 		id = BA_Shittem.1300
+		# 	}
+		# }
+	}
+	# TODO：随特殊领袖储备更新
+	#爱丽丝
+	option = {
+		name = NAME_Aris
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.3003
+			}
+		}
+	}
 }
 
 ##换装
@@ -1957,6 +1998,58 @@ country_event = {
 	option = {
 		name = BA_Shittem.2000.exit
 	}
+	#N00 青辉石委托
+	option = {
+		name = commmission.Normal_00_A
+		trigger = {
+			has_country_flag = BA_Normal_commission_00_allow
+			NOT = {
+				has_country_flag = BA_Normal_commission_00_accepted
+			}
+		}
+		allow = {
+			custom_tooltip_fail = {
+				text = project_pyroxenes_crafting_limit
+				check_variable = {
+					which = BA_commission_count
+					value >= 7
+				}
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_00_A
+		set_country_flag = BA_Normal_commission_00_accepted
+		set_timed_country_flag = {
+			flag = BA_Normal_commission_00_engaging
+			days = 29
+		}
+	}
+	option = {
+		name = commmission.Normal_00_B
+		custom_tooltip = BA_Normal_commission_00_tip
+		trigger = {
+			has_country_flag = BA_Normal_commission_00_accepted
+		}
+		allow = {
+			custom_tooltip = {
+				text = BA_commission_accepted_unfinished
+				NOT = {
+					has_country_flag = BA_Normal_commission_00_engaging
+				}
+			}
+		}
+		is_dialog_only = yes
+		response_text = BA_Normal_commission_00_B
+		hidden_effect = {
+			remove_country_flag = BA_Normal_commission_00_allow
+			remove_country_flag = BA_Normal_commission_00_accepted
+			change_variable = {
+				which = BA_commission_count
+				value = 1
+			}
+			BA_Normal_commmission_00_bounce = yes
+		}
+	}
 	#循环委托1：提交消费品（完成一段飞升解锁
 	option = {
 		name = commmission.Repeatable_01_A
@@ -2345,58 +2438,6 @@ country_event = {
 		BA_EdenTreaty_commmission_01_bounce = yes
 	}
 	#####    通用     #####
-	#N00 青辉石委托
-	option = {
-		name = commmission.Normal_00_A
-		trigger = {
-			has_country_flag = BA_Normal_commission_00_allow
-			NOT = {
-				has_country_flag = BA_Normal_commission_00_accepted
-			}
-		}
-		allow = {
-			custom_tooltip_fail = {
-				text = project_pyroxenes_crafting_limit
-				check_variable = {
-					which = BA_commission_count
-					value >= 7
-				}
-			}
-		}
-		is_dialog_only = yes
-		response_text = BA_Normal_commission_00_A
-		set_country_flag = BA_Normal_commission_00_accepted
-		set_timed_country_flag = {
-			flag = BA_Normal_commission_00_engaging
-			days = 29
-		}
-	}
-	option = {
-		name = commmission.Normal_00_B
-		custom_tooltip = BA_Normal_commission_00_tip
-		trigger = {
-			has_country_flag = BA_Normal_commission_00_accepted
-		}
-		allow = {
-			custom_tooltip = {
-				text = BA_commission_accepted_unfinished
-				NOT = {
-					has_country_flag = BA_Normal_commission_00_engaging
-				}
-			}
-		}
-		is_dialog_only = yes
-		response_text = BA_Normal_commission_00_B
-		hidden_effect = {
-			remove_country_flag = BA_Normal_commission_00_allow
-			remove_country_flag = BA_Normal_commission_00_accepted
-			change_variable = {
-				which = BA_commission_count
-				value = 1
-			}
-			BA_Normal_commmission_00_bounce = yes
-		}
-	}
 	#N01
 	option = {
 		name = commmission.Normal_01_A
@@ -2958,7 +2999,7 @@ country_event = {
 		if = {
 			limit = {
 				has_country_flag = BA_Publishing_department
-				years_passed = 20
+				years_passed >= 20
 			}
 			set_country_flag = BA_Normal_commission_03_allow
 		}
@@ -2977,7 +3018,7 @@ country_event = {
 		#阿里乌斯
 		if = {
 			limit = {
-				has_origin = origin_Kivotos_Eden_treaty
+				has_origin = origin_Kivotos_Kyrie
 			}
 			switch = {
 				trigger = years_passed
@@ -2990,6 +3031,8 @@ country_event = {
 }
 
 #委托检测器
+#id = BA_Shittem.2002
+
 ### test
 #其他方式触发
 ship_event = {
@@ -3131,9 +3174,6 @@ country_event = {
 	}
 	immediate = {
 		set_country_flag = BA_Aris_joined
-		BA_Aris_SP = {
-			class = scientist
-		}
 	}
 	option = {
 		name = BA_Shittem.3002.a
@@ -3150,6 +3190,12 @@ country_event = {
 		response_text = BA_Shittem.3002.c.re
 		default_hide_option = yes
 		custom_tooltip = Aris_joined
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.1351
+				days = 30
+			}
+		}
 	}
 }
 
@@ -3343,34 +3389,6 @@ country_event = {
 					save_global_event_target_as = BA_Robot_species
 				}
 			}
-		}
-	}
-}
-
-### 舰船武器 TODO：武器组
-#升级前卸除武器组buff
-ship_event = {
-	id = BA_Shittem.3020
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		#TODO：武器buff
-		remove_modifier = modifier_BA_ship_weapon_01
-	}
-}
-
-#同时装备 独特点子+清爽灵感 ，提供武器伤害
-ship_event = {
-	id = BA_Shittem.3051
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		has_component = Unique_idea
-		has_component = Flashy_inspiration
-	}
-	immediate = {
-		add_modifier = {
-			modifier = modifier_BA_ship_weapon_01
 		}
 	}
 }

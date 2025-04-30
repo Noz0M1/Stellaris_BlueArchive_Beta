@@ -24,6 +24,7 @@
  BA_Shittem.0102.name:0 "$BA_Shittem.0101.name$"
  BA_Shittem.0102.desc:0 "连接密码确认，已确认连接者。\n欢迎使用 什亭之匣 。为完成认证，转换至主系统 A.R.O.N.A。"
  BA_Shittem.0102.a:0 "……终于……！"
+ BA_Shittem.0102.b:0 "（跳过此段剧情）"
 
  BA_Shittem.0103.name:0 "$BA_Shittem.0101.name$"
  BA_Shittem.0103.desc:0 "（熟悉的破损教室里，一个熟悉的女孩子趴在桌子上打瞌睡）\n\n“咕呜……zzZ\n\n咕呜……zzZ\n\n唔喵……蛋糕……草莓牛奶……唔嘿嘿嘿！zzZ”"
@@ -51,7 +52,7 @@
  BA_Shittem.0108.desc:0 "“现在的基沃托斯变成了什么样子呢……如果可以的话，不仅仅是塔内，带我到基沃托斯的街道上到处看看好吗，老师？……欸嘿嘿，好期待呢。再来确认一次，这个流程就完成了哦。”"
 
  BA_Shittem.0998.name:0 "什亭之匣启动"
- BA_Shittem.0998.desc:0 "“那么，这样Arona就正式回归夏莱了吧！\n欸嘿嘿……想要找Arona的话，在外交界面就可以找到Arona了哦。(§Y通讯(F10)§! -> §Y$Shittem.name$§!)”"
+ BA_Shittem.0998.desc:0 "“那么，这样Arona就正式回归夏莱了！\n欸嘿嘿……想要找Arona的话，在外交界面就可以找到Arona了哦。(§Y通讯(F10)§! -> §Y$Shittem.name$§!)”"
  BA_Shittem.0998.a:0 "（Arona……）"
  BA_Shittem.0998.tip:0 "结束什亭之匣事件链"
 
@@ -167,7 +168,7 @@
  BA_Shittem.2000.title:0 "委托"
  BA_Shittem.2000.desc:0 "学生们会向Schale提出各种各样的请求。也许她们是公务相禀，也许是私下里的小请求。这些琐事只需片刻就可以完成，Arona会一直在这里帮您的。\n\n\n\n（已完成委托数：[Root.BA_commission_count]）"
  BA_Shittem.2001.title:0 "委托完成"
- BA_Shittem.2001.desc:0 "委托的收益已经计入资源储备，辛勤的工作有了回报。\n（本次完成委托数：[Root.BA_commissiont_this_count]）"
+ BA_Shittem.2001.desc:0 "委托的收益已经计入资源储备，辛勤的工作有了回报。\n（本次完成委托数：[Root.BA_commission_this_count]）"
  BA_Shittem.2001.comfirm:0 "已查收。"
 
  Kyrie_ruins:0 "临时加固废墟"
