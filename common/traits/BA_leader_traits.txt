@@ -615,6 +615,31 @@ leader_trait_aris_SP = {
 	selectable_weight = 0
 }
 
+#### 先驱者
+#先驱者：议员
+leader_trait_councilor_fe = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/sp_leaders/Icon_custom_SP.dds"
+	randomized = no
+	sorting_priority = 999
+	selectable_weight = 0
+	leader_class = {
+		commander
+	}
+}
+
+#先驱者：指挥官
+leader_trait_commander_fe = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/sp_leaders/Icon_custom_SP.dds"
+	randomized = no
+	sorting_priority = 999
+	selectable_weight = 0
+	leader_class = {
+		commander
+	}
+}
+
 #### 定制
 #泛用
 leader_trait_customize = {

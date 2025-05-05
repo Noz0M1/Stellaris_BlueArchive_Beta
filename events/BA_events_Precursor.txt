@@ -119,7 +119,7 @@ country_event = {
 					immortal = yes
 					event_leader = yes
 					traits = {
-						trait = trait
+						trait = leader_trait_councilor_fe
 					}
 					effect = {
 						change_leader_portrait = BA_Seia
@@ -160,650 +160,7 @@ country_event = {
 			}
 		}
 		#### 创建星系
-		set_global_flag = Precursor_cluster_generated
-		set_spawn_system_batch = begin
-		## 生成第一个星系
-		#200
-		if = {
-			limit = {
-				count_system = {
-					count <= 250
-				}
-			}
-			#入口*3
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 90
-					max_distance <= 180
-					min_orientation_angle = 30
-					max_orientation_angle = 30
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 90
-					max_distance <= 180
-					min_orientation_angle = 150
-					max_orientation_angle = 150
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_2
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 90
-					max_distance <= 180
-					min_orientation_angle = 270
-					max_orientation_angle = 270
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_3
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			#10
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_MALKUTH
-					min_distance >= 350
-					max_distance <= 360
-					min_orientation_angle = 135
-					max_orientation_angle = 135
-					hyperlane = no
-					effect = {
-						save_global_event_target_as = D_MALKUTH
-						BA_fe_system_initial = yes
-					}
-				}
-			}
-		}
-		#400
-		else_if = {
-			limit = {
-				count_system = {
-					count <= 450
-				}
-			}
-			#入口*4
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 125
-					max_distance <= 250
-					min_orientation_angle = 0
-					max_orientation_angle = 0
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 125
-					max_distance <= 250
-					min_orientation_angle = 90
-					max_orientation_angle = 90
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 125
-					max_distance <= 250
-					min_orientation_angle = 180
-					max_orientation_angle = 180
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 125
-					max_distance <= 250
-					min_orientation_angle = 270
-					max_orientation_angle = 270
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			#10
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_MALKUTH
-					min_distance >= 500
-					max_distance <= 510
-					min_orientation_angle = 135
-					max_orientation_angle = 135
-					hyperlane = no
-					effect = {
-						save_global_event_target_as = D_MALKUTH
-						BA_fe_system_initial = yes
-					}
-				}
-			}
-		}
-		#600
-		else_if = {
-			limit = {
-				count_system = {
-					count <= 650
-				}
-			}
-			#入口*5
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 150
-					max_distance <= 300
-					min_orientation_angle = 0
-					max_orientation_angle = 0
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 150
-					max_distance <= 300
-					min_orientation_angle = 72
-					max_orientation_angle = 72
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 150
-					max_distance <= 300
-					min_orientation_angle = 144
-					max_orientation_angle = 144
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 150
-					max_distance <= 300
-					min_orientation_angle = 216
-					max_orientation_angle = 216
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 150
-					max_distance <= 300
-					min_orientation_angle = 288
-					max_orientation_angle = 288
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			#10
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_MALKUTH
-					min_distance >= 580
-					max_distance <= 590
-					min_orientation_angle = 135
-					max_orientation_angle = 135
-					hyperlane = no
-					effect = {
-						save_global_event_target_as = D_MALKUTH
-						BA_fe_system_initial = yes
-					}
-				}
-			}
-		}
-		#800
-		else_if = {
-			limit = {
-				count_system = {
-					count <= 850
-				}
-			}
-			#入口*6
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 160
-					max_distance <= 320
-					min_orientation_angle = 0
-					max_orientation_angle = 0
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 160
-					max_distance <= 320
-					min_orientation_angle = 60
-					max_orientation_angle = 60
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 160
-					max_distance <= 320
-					min_orientation_angle = 120
-					max_orientation_angle = 120
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 160
-					max_distance <= 320
-					min_orientation_angle = 180
-					max_orientation_angle = 180
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 160
-					max_distance <= 320
-					min_orientation_angle = 240
-					max_orientation_angle = 240
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 160
-					max_distance <= 320
-					min_orientation_angle = 300
-					max_orientation_angle = 300
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			#10
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_MALKUTH
-					min_distance >= 630
-					max_distance <= 640
-					min_orientation_angle = 135
-					max_orientation_angle = 135
-					hyperlane = no
-					effect = {
-						save_global_event_target_as = D_MALKUTH
-						BA_fe_system_initial = yes
-					}
-				}
-			}
-		}
-		#1000
-		else = {
-			#入口*8
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 170
-					max_distance <= 340
-					min_orientation_angle = 0
-					max_orientation_angle = 0
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 170
-					max_distance <= 340
-					min_orientation_angle = 45
-					max_orientation_angle = 45
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 170
-					max_distance <= 340
-					min_orientation_angle = 90
-					max_orientation_angle = 90
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 170
-					max_distance <= 340
-					min_orientation_angle = 135
-					max_orientation_angle = 135
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 170
-					max_distance <= 340
-					min_orientation_angle = 180
-					max_orientation_angle = 180
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 170
-					max_distance <= 340
-					min_orientation_angle = 225
-					max_orientation_angle = 225
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 170
-					max_distance <= 340
-					min_orientation_angle = 270
-					max_orientation_angle = 270
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_ENTRANCE
-					min_distance >= 170
-					max_distance <= 340
-					min_orientation_angle = 315
-					max_orientation_angle = 315
-					hyperlane = yes
-					effect = {
-						save_global_event_target_as = D_ENTRANCE_1
-						set_star_flag = BA_Dnode
-					}
-				}
-			}
-			#10
-			no_scope = {
-				spawn_system = {
-					initializer = BA_D_system_MALKUTH
-					min_distance >= 680
-					max_distance <= 690
-					min_orientation_angle = 135
-					max_orientation_angle = 135
-					hyperlane = no
-					effect = {
-						save_global_event_target_as = D_MALKUTH
-						BA_fe_system_initial = yes
-					}
-				}
-			}
-		}
-		## 生成其余的星系
-		#09
-		event_target:D_MALKUTH = {
-			spawn_system = {
-				initializer = BA_D_system_YESOD
-				min_distance >= 20
-				max_distance <= 20
-				min_orientation_angle = 180
-				max_orientation_angle = 180
-				hyperlane = yes
-				effect = {
-					save_global_event_target_as = D_YESOD
-					set_star_flag = BA_Dnode
-				}
-			}
-		}
-		#08
-		event_target:D_YESOD = {
-			spawn_system = {
-				initializer = BA_D_system_HOD
-				min_distance >= 20
-				max_distance <= 20
-				min_orientation_angle = 240
-				max_orientation_angle = 240
-				hyperlane = yes
-				effect = {
-					save_global_event_target_as = D_HOD
-					set_star_flag = BA_Dnode
-				}
-			}
-		}
-		#07
-		event_target:D_YESOD = {
-			spawn_system = {
-				initializer = BA_D_system_NETSAH
-				min_distance >= 20
-				max_distance <= 20
-				min_orientation_angle = 120
-				max_orientation_angle = 120
-				hyperlane = yes
-				effect = {
-					save_global_event_target_as = D_NETSAH
-					set_star_flag = BA_Dnode
-				}
-			}
-		}
-		#05
-		event_target:D_HOD = {
-			spawn_system = {
-				initializer = BA_D_system_GEBURAH
-				min_distance >= 20
-				max_distance <= 20
-				min_orientation_angle = 180
-				max_orientation_angle = 180
-				hyperlane = yes
-				effect = {
-					save_global_event_target_as = D_GEBURAH
-					set_star_flag = BA_Dnode
-				}
-			}
-		}
-		#04
-		event_target:D_NETSAH = {
-			spawn_system = {
-				initializer = BA_D_system_CHESED
-				min_distance >= 20
-				max_distance <= 20
-				min_orientation_angle = 180
-				max_orientation_angle = 180
-				hyperlane = yes
-				effect = {
-					save_global_event_target_as = D_CHESED
-					set_star_flag = BA_Dnode
-				}
-			}
-		}
-		#03
-		event_target:D_GEBURAH = {
-			spawn_system = {
-				initializer = BA_D_system_BINAH
-				min_distance >= 20
-				max_distance <= 20
-				min_orientation_angle = 180
-				max_orientation_angle = 180
-				hyperlane = yes
-				effect = {
-					save_global_event_target_as = D_BINAH
-					set_star_flag = BA_Dnode
-				}
-			}
-		}
-		#02
-		event_target:D_CHESED = {
-			spawn_system = {
-				initializer = BA_D_system_CHHOKMAH
-				min_distance >= 20
-				max_distance <= 20
-				min_orientation_angle = 180
-				max_orientation_angle = 180
-				hyperlane = yes
-				effect = {
-					save_global_event_target_as = D_CHHOKMAH
-					set_star_flag = BA_Dnode
-				}
-			}
-		}
-		#06
-		event_target:D_YESOD = {
-			spawn_system = {
-				initializer = BA_D_system_TIPHARETH
-				min_distance >= 20
-				max_distance <= 20
-				min_orientation_angle = 180
-				max_orientation_angle = 180
-				hyperlane = no
-				effect = {
-					save_global_event_target_as = D_TIPHARETH
-					set_star_flag = BA_Dnode
-				}
-			}
-			add_hyperlane = {
-				from = event_target:D_HOD
-				to = event_target:D_TIPHARETH
-			}
-			add_hyperlane = {
-				from = event_target:D_NETSAH
-				to = event_target:D_TIPHARETH
-			}
-			add_hyperlane = {
-				from = event_target:D_GEBURAH
-				to = event_target:D_TIPHARETH
-			}
-			add_hyperlane = {
-				from = event_target:D_CHESED
-				to = event_target:D_TIPHARETH
-			}
-		}
-		#01
-		event_target:D_TIPHARETH = {
-			spawn_system = {
-				initializer = BA_D_system_KETHER
-				min_distance >= 40
-				max_distance <= 40
-				min_orientation_angle = 180
-				max_orientation_angle = 180
-				hyperlane = no
-				effect = {
-					save_global_event_target_as = D_KETHER
-					set_star_flag = BA_Dnode
-				}
-			}
-			add_hyperlane = {
-				from = event_target:D_CHHOKMAH
-				to = event_target:D_KETHER
-			}
-			add_hyperlane = {
-				from = event_target:D_BINAH
-				to = event_target:D_KETHER
-			}
-		}
-		##
-		set_spawn_system_batch = end
+		BA_generate_Precursor_cluster = yes
 		##先驱者线
 		event_target:BA_Precursor_species = {
 			# save_global_event_target_as = BA_fe_species
@@ -980,7 +337,6 @@ ship_event = {
 			has_star_flag = BA_D_ENTRANCE
 		}
 		fromfrom = {
-			has_authority = auth_kivotos
 			NOT = {
 				has_country_flag = BA_FIND_D_GATE
 			}
@@ -1330,7 +686,9 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				always = yes				#以后改
+				event_target:BA_Precursor_country = {
+					is_angry_to = from
+				}
 			}
 			country_event = {
 				id = BA_Precursor.0151
@@ -1395,21 +753,133 @@ country_event = {
 	#说明
 	option = {
 		name = BA_Precursor.manual
+		hidden_effect = {
+			country_event = {
+				id = BA_Precursor.0153
+			}
+		}
+	}
+	#进行交易
+	option = {
+		name = BA_Precursor.trade
+		hidden_effect = {
+			country_event = {
+				id = BA_Precursor.0160
+			}
+		}
+	}
+	#聊天
+	option = {
+		name = BA_Precursor.chat
+		hidden_effect = {
+			# country_event = {
+			# 	id = BA_Precursor.0153
+			# }
+		}
+	}
+
+}
+
+country_event = {
+	id = BA_Precursor.0153
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_Window"
+	picture_event_data = {
+		portrait = BA_Seia
+		room = BA_01_room
+	}
+	title = BA_Precursor.manual.title
+	desc = BA_Precursor.manual.desc
+
+
+	#退出
+	option = {
+		name = BA_Precursor.exit
+		default_hide_option = yes
+	}
+	#说明
+	option = {
+		name = BA_Precursor.manual
 		is_dialog_only = yes
 		response_text = BA_Precursor.manual.re
 	}
-	#交易物资
-	option = {
-		name = BA_Precursor.trade
+
+}
+
+country_event = {
+	id = BA_Precursor.0160
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_Window"
+	picture_event_data = {
+		portrait = BA_Seia
+		room = BA_01_room
 	}
-	#交易其他
+	title = BA_Precursor.trade.title
+	desc = BA_Precursor.trade.desc
+
+
+	#退出
 	option = {
-		name = BA_Precursor.other
+		name = BA_Precursor.exit
+		default_hide_option = yes
 	}
-	#交流信息	
+	#获得点数
+	#虫洞交易
+	#飞船交易
+	#
+
+}
+
+country_event = {
+	id = BA_Precursor.0160
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_Window"
+	picture_event_data = {
+		portrait = BA_Seia
+		room = BA_01_room
+	}
+	title = BA_Precursor.trade.title
+	desc = BA_Precursor.trade.desc
+
+
+	#退出
 	option = {
-		name = BA_Precursor.info
+		name = BA_Precursor.exit
+		default_hide_option = yes
 	}
+	#获得点数
+	#虫洞交易
+	#飞船交易
+	#
+
+}
+
+country_event = {
+	id = BA_Precursor.0190
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_Window"
+	picture_event_data = {
+		portrait = BA_Seia
+		room = BA_01_room
+	}
+	title = BA_Precursor.chat.title
+	desc = BA_Precursor.trade.desc
+
+
+	#退出
+	option = {
+		name = BA_Precursor.exit
+		default_hide_option = yes
+	}
+	#获得点数
+	#虫洞交易
+	#飞船交易
+	#
+
 }
 
 ######################

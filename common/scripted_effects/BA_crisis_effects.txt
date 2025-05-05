@@ -35,7 +35,7 @@ BA_create_mid_Aris_fleet_pawn = {
 			#
 			event_target:BA_Precursors_Aris_country = {
 				create_leader = {
-					class = admiral
+					class = commander
 					species = event_target:BA_Precursors_Aris_species
 					gender = female
 					name = RANDOM
@@ -92,7 +92,7 @@ BA_create_mid_Aris_fleet_bishop = {
 			}
 			event_target:BA_Precursors_Aris_country = {
 				create_leader = {
-					class = admiral
+					class = commander
 					species = event_target:BA_Precursors_Aris_species
 					gender = female
 					name = RANDOM
@@ -159,7 +159,7 @@ BA_create_mid_Aris_fleet_king = {
 			# }
 			event_target:BA_Precursors_Aris_country = {
 				create_leader = {
-					class = admiral
+					class = commander
 					species = event_target:BA_Precursors_Aris_species
 					gender = female
 					name = AL-1S
