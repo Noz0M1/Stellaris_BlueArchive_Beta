@@ -3040,7 +3040,6 @@ country_event = {
 
 #委托检测器
 #id = BA_Shittem.2002
-
 ### test
 #其他方式触发
 ship_event = {
@@ -3127,44 +3126,45 @@ planet_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		set_variable = {
-			which = BA_MAC_count
-			value = 0
-		}
-		every_owned_pop = {
+		# set_variable = {
+		# 	which = BA_MAC_count
+		# 	value = 0
+		# }
+		every_owned_pop_group = {
 			limit = {
-				is_robot_pop = yes
+				is_robot_pop_group = yes
 				NOT = {
 					species = {
 						is_same_species = event_target:BA_Robot_species
 					}
 				}
 			}
-			set_pop_flag = BA_to_be_converted
+			change_species = event_target:BA_Robot_species
+			# set_pop_flag = BA_to_be_converted
 		}
-		while = {
-			limit = {
-				any_owned_pop = {
-					has_pop_flag = BA_to_be_converted
-				}
-			}
-			random_owned_pop = {
-				limit = {
-					has_pop_flag = BA_to_be_converted
-				}
-				kill_pop = yes
-			}
-			change_variable = {
-				which = BA_MAC_count
-				value = 1
-			}
-		}
-		while = {
-			count = BA_MAC_count
-			create_pop = {
-				species = event_target:BA_Robot_species
-			}
-		}
+		# while = {
+		# 	limit = {
+		# 		any_owned_pop = {
+		# 			has_pop_flag = BA_to_be_converted
+		# 		}
+		# 	}
+		# 	random_owned_pop = {
+		# 		limit = {
+		# 			has_pop_flag = BA_to_be_converted
+		# 		}
+		# 		kill_pop = yes
+		# 	}
+		# 	change_variable = {
+		# 		which = BA_MAC_count
+		# 		value = 1
+		# 	}
+		# }
+		# while = {
+		# 	count = BA_MAC_count
+		# 	create_pop = {
+		# 		species = event_target:BA_Robot_species
+		# 	}
+		# }
 	}
 }
 
@@ -3383,7 +3383,7 @@ country_event = {
 			}
 			remove_country_flag = BA_uplifting_Aris
 			set_country_flag = BA_Aris_lifted
-			every_owned_pop = {
+			every_owned_pop_group = {
 				limit = {
 					has_trait = trait_test
 				}
@@ -3967,7 +3967,6 @@ planet_event = {
 					}
 				}
 			}
-
 		}
 	}
 }

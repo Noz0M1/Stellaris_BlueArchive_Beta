@@ -674,11 +674,11 @@ country_event = {
 			add_district = BA_districts_supply_station
 			add_district = BA_districts_special_factory
 			add_building = building_BA_Locker_room			#夏莱建筑
-			#清除5人口
-			while = {
-				count = 5
-				random_owned_pop = {
-					kill_pop = yes
+			#清除25%人口
+			every_owned_pop_group = {
+				kill_pop_group = {
+					pop_group = this
+					amount = 25%
 				}
 			}
 		}
@@ -1987,9 +1987,9 @@ planet_event = {
 			}
 			set_country_flag = BA_Project_Cradle_ready			#项目
 		}
-		every_owned_pop = {
-			resettle_pop = {
-				pop = THIS
+		every_owned_pop_group = {
+			resettle_pop_group = {
+				pop_group = THIS
 				planet = event_target:BA_resettle_target
 			}
 		}
@@ -2048,9 +2048,9 @@ planet_event = {
 			}
 			set_country_flag = BA_Project_Cradle_ready			#项目
 		}
-		every_owned_pop = {
-			resettle_pop = {
-				pop = THIS
+		every_owned_pop_group = {
+			resettle_pop_group = {
+				pop_group = THIS
 				planet = event_target:BA_resettle_target
 			}
 		}
@@ -2590,10 +2590,10 @@ country_event = {
 							}
 							set_capital = yes
 							set_name = sys.Kivotos.habitat.1.name
-							while = {
-								count = 17
-								create_pop = {
-									species = owner_main_species
+							create_pop_group = {
+								species = owner_main_species
+								effect = {
+									add_pop_amount = 1000
 								}
 							}
 							check_planet_employment = yes
@@ -2667,18 +2667,15 @@ country_event = {
 				remove_building = building_temple
 				remove_all_districts = yes				#清除旧区划
 				### 虚妄圣库姆特
-				every_owned_pop = {
-					kill_pop = yes
+				every_owned_pop_group = {
+					kill_all_pop = yes
 				}
 				set_owner = event_target:BA_Unnamed_enemy_country
 				add_building = building_BA_fade_Sanctum_center
-				while = {
-					count = 28
-					create_pop = {
-						species = event_target:BA_Unnamed_enemy_species
-						effect = {
-							set_pop_flag = BA_Unnamed_enemy_pop
-						}
+				create_pop_group = {
+					species = event_target:BA_Unnamed_enemy_species
+					effect = {
+						add_pop_amount = 1000
 					}
 				}
 				while = {
@@ -2775,15 +2772,15 @@ planet_event = {
 		}
 	}
 	immediate = {
-		while = {
-			count = 8
-			create_pop = {
-				species = event_target:BA_Unnamed_enemy_species
-				effect = {
-					set_pop_flag = BA_Unnamed_enemy_pop
-				}
-			}
-		}
+		# while = {
+		# 	count = 8
+		# 	create_pop = {
+		# 		species = event_target:BA_Unnamed_enemy_species
+		# 		effect = {
+		# 			set_pop_flag = BA_Unnamed_enemy_pop
+		# 		}
+		# 	}
+		# }
 	}
 }
 
@@ -2919,17 +2916,14 @@ country_event = {
 		name = BA_origin.2052.next
 		fromfrom = {
 			hidden_effect = {
-				while = {
-					count = 4
-					create_pop = {
-						species = root.owner_main_species
-					}
+				every_owned_pop_group = {
+					kill_all_pop = yes
 				}
-				every_owned_pop = {
-					limit = {
-						has_pop_flag = BA_Unnamed_enemy_pop
+				create_pop_group = {
+					species = owner_main_species
+					effect = {
+						add_pop_amount = 400
 					}
-					kill_pop = yes
 				}
 				add_district = BA_districts_dome
 				add_district = BA_districts_dome
@@ -3126,298 +3120,4 @@ country_event = {
 
 ###########
 ##### 备份
-country_event = {
-	id = BA_origin.2900
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		has_authority = auth_kivotos
-		has_origin = origin_Kivotos_Unnamed_starting
-	}
-	immediate = {
-		if = {
-			limit = {
-				exists = event_target:BA_origin_Unnamed_starting
-			}
-			#切换为伊甸条约起源
-			set_origin = origin_Kivotos_Eden_treaty
-			#清除居住站
-			every_planet_within_border = {
-				limit = {
-					OR = {
-						has_planet_flag = Unnamed_starting_habitat_1
-						has_planet_flag = Unnamed_starting_habitat_2
-						has_planet_flag = Unnamed_starting_habitat_3
-						has_planet_flag = Unnamed_starting_habitat_4
-					}
-				}
-				remove_planet = yes
-			}
-			country_event = {
-				id = BA_origin.0001
-			}
-		}
-		else = {
-			save_global_event_target_as = BA_origin_Unnamed_starting
-			set_country_flag = BA_origin_Unnamed_starting_engaged_1
-			set_country_flag = BA_habitat_inhibit_1
-			#无名之神
-			create_species = {
-				name = "NAME_Unnamed_enemy_species"
-				class = MACHINE				#以后改
-				portrait = ai_crisis_1				#以后改
-				traits = {
-					trait = trait_mechanical
-				}
-				effect = {
-					set_species_homeworld = root.capital_scope
-					set_species_flag = BA_Unnamed_enemy_species
-					save_global_event_target_as = BA_Unnamed_enemy_species
-				}
-			}
-			create_country = {
-				name = "NAME_Unnamed_enemy_country"
-				type = faction
-				ignore_initial_colony_error = yes
-				species = event_target:BA_Unnamed_enemy_species
-				ethos = {
-					ethic = ethic_gestalt_consciousness
-				}
-				authority = auth_machine_intelligence
-				flag = {
-					icon = {
-						category = "special"
-						file = "flag_MX.dds"
-					}
-					background = {
-						category = "backgrounds"
-						file = "flag_BG_31.dds"
-					}
-					colors = {
-						"satin_burgundy"
-						"intense_blue"
-						"null"
-						"null"
-					}
-				}
-				effect = {
-					save_global_event_target_as = BA_Unnamed_enemy_country
-					set_country_flag = BA_Unnamed_enemy
-					every_country = {
-						set_faction_hostility = {
-							target = prev
-							set_friendly = no
-							set_hostile = no
-							set_neutral = yes
-						}
-					}
-					root = {
-						set_faction_hostility = {
-							target = prev
-							set_friendly = no
-							set_neutral = no
-							set_hostile = yes
-						}
-					}
-				}
-			}
-			#1号站
-			random_planet_within_border = {
-				limit = {
-					has_planet_flag = Unnamed_starting_habitat_1
-				}
-				create_colony = {
-					owner = root
-				}
-				set_name = sys.Kivotos.habitat.1.name
-				set_planet_entity = {
-					entity = "AtrahasisArk_station_entity"
-				}
-				add_modifier = {
-					modifier = modifier_BA_Atrahasis_station_1
-				}
-				remove_modifier = modifier_BA_origin_station_1
-				while = {
-					count = 5
-					create_pop = {
-						species = owner_main_species
-					}
-				}
-				set_capital = yes
-				add_deposit = d_Atrahasis_reactor
-				add_deposit = d_Atrahasis_harvester
-				add_deposit = d_Atrahasis_agriculture
-				add_deposit = d_Atrahasis_factory
-				add_building = building_BA_Schale_office
-				while = {
-					count = 3
-					add_district = BA_districts_auto_turbine
-				}
-				while = {
-					count = 3
-					add_district = BA_districts_auto_sustainer
-				}
-				while = {
-					count = 3
-					add_district = BA_districts_auto_foundry
-				}
-				add_district = BA_districts_auto_refinery
-				set_variable = {
-					which = Unnamed_starting_enemy_count
-					value = 8
-				}
-				planet_event = {
-					id = BA_origin.2011
-					days = 180
-				}
-			}
-			#2号站
-			random_planet_within_border = {
-				limit = {
-					has_planet_flag = Unnamed_starting_habitat_2
-				}
-				create_colony = {
-					owner = root
-				}
-				set_name = sys.Kivotos.habitat.2.name
-				set_planet_entity = {
-					entity = "habitat_phase_02_entity"
-					graphical_culture = this.owner
-				}
-				add_modifier = {
-					modifier = modifier_BA_origin_station_1
-				}
-				create_pop = {
-					species = owner_main_species
-				}
-				add_district = BA_districts_auto_sustainer
-				while = {
-					count = 2
-					add_district = BA_districts_auto_foundry
-				}
-				add_district = BA_districts_auto_refinery
-			}
-			#3号站
-			random_planet_within_border = {
-				limit = {
-					has_planet_flag = Unnamed_starting_habitat_3
-				}
-				create_colony = {
-					owner = root
-				}
-				set_name = sys.Kivotos.habitat.3.name
-				set_planet_entity = {
-					entity = "habitat_phase_02_entity"
-					graphical_culture = this.owner
-				}
-				add_modifier = {
-					modifier = modifier_BA_origin_station_1
-				}
-				create_pop = {
-					species = owner_main_species
-				}
-				while = {
-					count = 3
-					add_district = BA_districts_auto_drill
-				}
-				add_district = BA_districts_auto_refinery
-			}
-			#4号站
-			random_planet_within_border = {
-				limit = {
-					has_planet_flag = Unnamed_starting_habitat_4
-				}
-				create_colony = {
-					owner = root
-				}
-				set_name = sys.Kivotos.habitat.4.name
-				set_planet_entity = {
-					entity = "habitat_phase_01_entity"
-					graphical_culture = this.owner
-				}
-				add_modifier = {
-					modifier = modifier_BA_origin_station_1
-				}
-				while = {
-					count = 2
-					add_district = BA_districts_auto_refinery
-				}
-			}
-			#母星
-			random_owned_planet = {
-				limit = {
-					has_planet_flag = BA_Unnamed_starting_target
-				}
-				### 基础设置
-				change_pc = pc_BA_campus_planet
-				set_name = sys.Kivotos.home.name
-				clear_deposits = yes				#清除原有区块
-				while = {
-					count = 6
-					add_deposit = d_fade_Sanctum
-				}
-				add_deposit = d_black_market				#黑市区块
-				add_deposit = d_broken_Abydos_school				#阿拜多斯校区
-				add_deposit = d_broken_Millennium_school				#千年校区
-				add_deposit = d_broken_Trinity_school				#三一校区
-				add_deposit = d_broken_Gehenna_school				#格黑娜校区
-				add_deposit = d_broken_power_station				#千年发电厂
-				add_deposit = d_broken_desert_mine				#沙漠矿区
-				add_deposit = d_Greenhouse_farms				#赤冬温室农场（只是因为没有粮食区划所以拉来凑数的）
-				remove_building = building_commercial_zone				#清除旧建筑
-				remove_building = building_research_lab_1
-				remove_building = building_bureaucratic_1
-				remove_building = building_temple
-				remove_building = building_temple
-				remove_all_districts = yes				#清除旧区划
-				### 虚妄圣库姆特
-				every_owned_pop = {
-					kill_pop = yes
-				}
-				set_owner = event_target:BA_Unnamed_enemy_country
-				while = {
-					count = 8
-					create_pop = {
-						species = event_target:BA_Unnamed_enemy_species
-						effect = {
-							set_pop_flag = BA_Unnamed_enemy_pop
-						}
-					}
-				}
-				#add_building = building_BA_fade_Sanctum_center
-				while = {
-					count = 12
-					create_army = {
-						owner = event_target:BA_Unnamed_enemy_country
-						type = BA_Deca_army_final
-					}
-				}
-				set_variable = {
-					which = Unnamed_starting_enemy_count
-					value = 14
-				}
-			}
-			give_technology = {
-				tech = tech_BA_institute_of_reconstruction
-				message = no
-			}
-			#联系Arona
-			give_technology = {
-				tech = tech_BA_Shittem_starting
-				message = no
-			}
-			set_country_flag = BA_Arona_Established
-			event_target:BA_Shittem_country = {
-				establish_communications_no_message = root
-			}
-			country_event = {
-				id = BA_origin.2002
-			}
-			country_event = {
-				id = BA_origin.2003
-				days = 60
-			}
-		}
-	}
-}
 

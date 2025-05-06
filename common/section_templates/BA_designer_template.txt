@@ -235,7 +235,9 @@ ship_section_template = {
 		tech_mass_accelerator_1
 		tech_mass_accelerator_2
 		#mod
-		tech_BA_Fantacy_colors
+		tech_BA_SPW_Standard_MG_2
+		tech_BA_SPW_Standard_SR_2
+		tech_BA_SPW_Standard_RG
 	}
 }
 
@@ -267,7 +269,7 @@ ship_section_template = {
 		}
 	}
 	prerequisites = {
-		tech_BA_SuperNova
+		tech_BA_SPW_Standard_RG
 	}
 }
 

@@ -13,7 +13,9 @@ special_project = {
 		ship_event = {
 			id = BA_crisis.1016
 		}
-		end_event_chain = BA_mid_Aris_chain
+		owner = {
+			end_event_chain = BA_mid_Aris_chain
+		}
 	}
 	on_fail = {
 	}

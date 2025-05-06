@@ -104,7 +104,7 @@ country_event = {
 				}
 			}
 			effect = {
-				set_country_flag = protected_from_queen_storm  #合成女王天灾保护
+				set_country_flag = protected_from_queen_storm				#合成女王天灾保护
 				##########
 				save_global_event_target_as = BA_Precursor_country
 				set_country_flag = BA_Precursor
@@ -496,7 +496,7 @@ country_event = {
 				}
 			}
 			effect = {
-				set_country_flag = protected_from_queen_storm  #合成女王天灾保护
+				set_country_flag = protected_from_queen_storm				#合成女王天灾保护
 				###################
 				set_country_flag = BA_Precursor_contactor
 				save_global_event_target_as = BA_Precursor_contactor
@@ -777,7 +777,6 @@ country_event = {
 			# }
 		}
 	}
-
 }
 
 country_event = {
@@ -791,8 +790,6 @@ country_event = {
 	}
 	title = BA_Precursor.manual.title
 	desc = BA_Precursor.manual.desc
-
-
 	#退出
 	option = {
 		name = BA_Precursor.exit
@@ -804,7 +801,6 @@ country_event = {
 		is_dialog_only = yes
 		response_text = BA_Precursor.manual.re
 	}
-
 }
 
 country_event = {
@@ -818,8 +814,6 @@ country_event = {
 	}
 	title = BA_Precursor.trade.title
 	desc = BA_Precursor.trade.desc
-
-
 	#退出
 	option = {
 		name = BA_Precursor.exit
@@ -829,7 +823,6 @@ country_event = {
 	#虫洞交易
 	#飞船交易
 	#
-
 }
 
 country_event = {
@@ -843,8 +836,6 @@ country_event = {
 	}
 	title = BA_Precursor.trade.title
 	desc = BA_Precursor.trade.desc
-
-
 	#退出
 	option = {
 		name = BA_Precursor.exit
@@ -854,7 +845,6 @@ country_event = {
 	#虫洞交易
 	#飞船交易
 	#
-
 }
 
 country_event = {
@@ -868,8 +858,6 @@ country_event = {
 	}
 	title = BA_Precursor.chat.title
 	desc = BA_Precursor.trade.desc
-
-
 	#退出
 	option = {
 		name = BA_Precursor.exit
@@ -879,7 +867,6 @@ country_event = {
 	#虫洞交易
 	#飞船交易
 	#
-
 }
 
 ######################

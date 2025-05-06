@@ -17,6 +17,17 @@ BA_civic_SI_add_trigger = {
 }
 
 ##### Pop Jobs
+kivotos_pop_amount = {
+	count_owned_pop_amount = {
+		limit = {
+			has_trait = trait_halo_unreleased
+			has_trait = trait_halo_awakened
+			has_trait = trait_halo_full_awakened
+			has_trait = trait_Halo_amplifier
+			has_trait = trait_Halo_precursor
+		}
+	}
+}
 is_kivotos = {
 	OR = {
 		is_species_class = Schale
