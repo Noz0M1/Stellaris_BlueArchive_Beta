@@ -1,8 +1,77 @@
-BA_placeholder = {
-	set_leader_flag = star_oath_ruler
-}
-
-
+# BA_placeholder = {
+# 	set_leader_flag = star_oath_ruler
+# }
+#
+#
+# generate_start_buildings_and_districts = {
+# 	optimize_memory
+#
+# 	inline_script = "game_start/rural_districts_initializer"
+#
+# 	inline_script = "game_start/authority_regular"
+# 	inline_script = "game_start/authority_hive"
+# 	inline_script = "game_start/authority_machine"
+#
+# 	## End of Default
+# 	## Start of Unique District Setup
+#
+# 	## Species
+# 	inline_script = "game_start/species_lithoids"
+# 	inline_script = "game_start/species_individual_machine"
+# 	inline_script = "game_start/species_subspecies" ## Set subspecies flags
+#
+# 	# Shipsets
+# 	inline_script = "game_start/shipsets"
+#
+# 	## Ethic
+# 	inline_script = "game_start/ethic_spiritualist"
+# 	inline_script = "game_start/ethic_materialist"
+# 	inline_script = "game_start/ethic_pacifist"
+# 	inline_script = "game_start/ethic_militarist"
+# 	inline_script = "game_start/ethic_egalitarian"
+# 	inline_script = "game_start/ethic_authoritarian"
+# 	inline_script = "game_start/ethic_xenophile"
+# 	inline_script = "game_start/ethic_xenophobe"
+#
+# 	# BioGenesis
+# 	inline_script = "game_start/origin_wilderness"
+#
+# 	##Civics
+# 	inline_script = "game_start/civics"
+#
+# 	## Origin
+# 	# Default
+# 	inline_script = "game_start/origin_default"
+# 	# Machine Age
+# 	inline_script = "game_start/origin_cybernetic_creed"
+# 	inline_script = "game_start/origin_synthetic_fertility"
+# 	# First Contact
+# 	inline_script = "game_start/origin_payback"
+# 	inline_script = "game_start/origin_broken_shackles"
+# 	# Toxoids
+# 	inline_script = "game_start/origin_toxic_knights"
+# 	# Overlord
+# 	inline_script = "game_start/origin_progenitor_hive"
+# 	inline_script = "game_start/origin_subterranean"
+# 	# Aquatics
+# 	inline_script = "game_start/origin_ocean_paradise"
+# 	# Necroids
+# 	inline_script = "game_start/origin_necrophage"
+# 	# Federations
+# 	inline_script = "game_start/origin_shattered_ring"
+# 	inline_script = "game_start/origin_remnants"
+# 	## for Void Dwellers see void_dweller_home_planet_setup
+# 	# Humanoids
+# 	inline_script = "game_start/origin_clone_army"
+# 	# Synthetic Dawn
+# 	inline_script = "game_start/origin_machine"
+# 	# Utopia
+# 	inline_script = "game_start/origin_mechanist"
+# 	# Apply rural districts depending on variable count
+# 	inline_script = "game_start/rural_districts_placement"
+#
+# 	give_starting_resources_effect = yes
+# }
 
 
 

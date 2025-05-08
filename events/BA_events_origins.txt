@@ -16,6 +16,25 @@ country_event = {
 		}
 		set_country_flag = BA_origin_Eden_treaty_engaged
 		capital_scope = {
+			clear_planet_modifiers = yes
+			# 区划建筑
+			validate_planet_buildings_and_districts = yes
+			remove_all_districts = yes
+			add_district = BA_districts_municipality
+			add_district = BA_districts_municipality
+			add_district = BA_districts_military_factory
+			add_district = BA_districts_suburbs
+			add_district = BA_districts_suburbs
+			add_building = {
+				zone = zone_default
+				building = building_BA_Locker_room
+			}
+			add_building = {
+				zone = zone_default
+				building = building_capital
+			}
+			remove_building = building_colony_shelter
+			# 区块
 			clear_deposits = yes			#清除原有区块
 			add_deposit = d_black_market			#黑市区块
 			add_deposit = d_broken_Abydos_school			#阿拜多斯校区
@@ -25,23 +44,14 @@ country_event = {
 			add_deposit = d_broken_power_station			#千年发电厂
 			add_deposit = d_broken_desert_mine			#沙漠矿区
 			add_deposit = d_Greenhouse_farms			#赤冬温室农场（只是因为没有粮食区划所以拉来凑数的）
-			remove_building = building_commercial_zone			#清除旧建筑 下同
-			remove_building = building_research_lab_1
-			remove_building = building_bureaucratic_1
-			remove_building = building_temple
-			remove_building = building_temple
-			remove_all_districts = yes			#清除旧区划
-			add_district = BA_districts_dome
-			add_district = BA_districts_dome
-			add_district = BA_districts_campus
-			add_district = BA_districts_campus
-			add_district = BA_districts_municipality
-			add_district = BA_districts_municipality
-			add_district = BA_districts_military_factory
-			add_district = BA_districts_suburbs
-			add_district = BA_districts_suburbs
-			add_building = building_BA_Locker_room			#夏莱建筑
-			check_planet_employment = yes
+			#人口
+			every_owned_pop_group = {
+				kill_all_pop = yes
+			}
+			create_pop_group = {
+				species = owner_main_species
+				size = 3500
+			}
 		}
 	}
 }

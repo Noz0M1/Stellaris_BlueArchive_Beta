@@ -275,6 +275,7 @@
 
 
 ##### District & Building  #####
+ # district
  BA_districts_dome:0 "宿舍区划"
  BA_districts_dome_desc:0 "为基沃托斯的学生量身打造的宿舍，配备各种自助式服务设备。居住舒适，价格公道，最重要的是防弹。"
  BA_districts_dome_plural:0 "$BA_districts_dome$"
@@ -283,12 +284,12 @@
  BA_districts_campus_desc:0 "学园是基沃托斯的核心组成，数座大型学园聚集于此。论规模，当今的一个区划足以装下很多个当年的圣三一。"
  BA_districts_campus_plural:0 "$BA_districts_campus$"
  mod_planet_BA_districts_campus_build_speed_mult:0 "$BA_districts_campus$建造速度"
- BA_districts_municipality:0 "自治区区划"
+ BA_districts_municipality:0 "学园自治区划"
  BA_districts_municipality_desc:0 "划归各个学园自行管辖的自治区，包括各种商业街、游乐园、办公区和工厂等。"
  BA_districts_municipality_plural:0 "$BA_districts_municipality$"
  mod_planet_BA_districts_municipality_build_speed_mult:0 "$BA_districts_municipality$建造速度"
- BA_districts_military_factory:0 "军工厂区划"
- BA_districts_military_factory_desc:0 "基沃托斯的重工业集中在此。不仅提供军火，还承包各种航空材料的制造。"
+ BA_districts_military_factory:0 "都市工业区划"
+ BA_districts_military_factory_desc:0 "基沃托斯的轻重工业集中在此。不仅提供军火和各种航空材料，还生产大量民用商品。"
  BA_districts_military_factory_plural:0 "$BA_districts_military_factory$"
  mod_planet_BA_districts_military_factory_build_speed_mult:0 "$BA_districts_military_factory$建造速度"
  BA_districts_suburbs:0 "城郊区区划"
@@ -365,9 +366,32 @@
  BA_districts_ringworld_matrix_plural: "矩阵区段"
  mod_planet_BA_districts_ringworld_matrix_build_speed_mult: "$BA_districts_ringworld_matrix$建造速度"
 
+ # zone
+ zone_BA_support: "卫星区块"
+ zone_BA_support_desc: "联邦学生会为了协助区域设施、扩大功能面积而建设的城区。"
+ mod_planet_zone_BA_support_build_speed_mult: "$zone_BA_support$建造速度"
+ zone_BA_municipality_federal: "联邦行政区块"
+ zone_BA_municipality_federal_desc: "联邦学生会通过这里对学园的运行情况进行监督。"
+ mod_planet_zone_BA_municipality_federal_build_speed_mult: "$zone_BA_municipality_federal$建造速度"
+ zone_BA_municipality_club: "社团总部区块"
+ zone_BA_municipality_club_desc: "建设在这里的无数大楼，是社团部用作活动的基地。"
+ mod_planet_zone_BA_municipality_club_build_speed_mult: "$zone_BA_municipality_club$建造速度"
+ zone_BA_grand_suburbs: "高密度郊区"
+ zone_BA_grand_suburbs_desc: "严密分配空间的城郊区，能够承载更多的产能。"
+ mod_planet_zone_BA_grand_suburbs_build_speed_mult: "$zone_BA_grand_suburbs$建造速度"
+ zone_BA_energy_suburbs: "癫能反应炉"
+ zone_BA_energy_suburbs_desc: "“就在这里发电！”"
+ mod_planet_zone_BA_energy_suburbs_build_speed_mult: "$zone_BA_energy_suburbs$建造速度"
+ zone_BA_mineral_suburbs: "行星钻机"
+ zone_BA_mineral_suburbs_desc: "行星钻机可以发射空降舱至地底采掘矿物。"
+ mod_planet_zone_BA_mineral_suburbs_build_speed_mult: "$zone_BA_mineral_suburbs$建造速度"
+ zone_BA_food_suburbs: "气候工程农场"
+ zone_BA_food_suburbs_desc: "因地制宜供给各种各样的食物，从既实惠还管饱的营养膏到奢靡的山珍海味一应俱全。"
+ mod_planet_zone_BA_food_suburbs_build_speed_mult: "$zone_BA_food_suburbs$建造速度"
 
 
-#####      Diplomatic      #####
+
+ #####      Diplomatic      #####
 ###     opinion   ###
  opinion_BA_fe_after:0 "基沃托斯先驱"
 
@@ -611,10 +635,10 @@
  job_BA_dont_be_crazy_here_plural:0 "发癫者"
  job_BA_dont_be_crazy_here_desc:0 "别在这理发店！基沃托斯的学生们富有魅力，使得不少学生成为了市民甚至其他学生的发癫对象。"
  mod_job_BA_dont_be_crazy_here_add:0 "发癫者岗位"
- job_BA_Kivotos_staff:0 "自治区职员"
- job_BA_Kivotos_staff_plural:0 "自治区职员"
- job_BA_Kivotos_staff_desc:0 "在自治区内任职、为学生们提供各种服务的职员。"
- mod_job_BA_Kivotos_staff_add:0 "自治区职员岗位"
+ job_BA_Kivotos_staff:0 "联邦职员"
+ job_BA_Kivotos_staff_plural:0 "联邦职员"
+ job_BA_Kivotos_staff_desc:0 "在自治区内任职，为学生们提供各种服务的职员。"
+ mod_job_BA_Kivotos_staff_add:0 "联邦职员岗位"
  job_BA_Kivotos_miner:0 "采矿团"
  job_BA_Kivotos_miner_plural:0 "采矿团"
  job_BA_Kivotos_miner_desc:0 "为工厂的运作提供原材料的采矿团。开采方式比较暴力。"
@@ -667,6 +691,10 @@
  job_BA_oblation_plural:0 "被献祭者"
  job_BA_oblation_desc:0 "它们只有一种为我们做贡献的方式。"
  mod_job_BA_oblation_add: "被献祭者"
+ job_BA_keystone_artisan:0 "制造石工匠"
+ job_BA_keystone_artisan_plural:0 "制造石工匠"
+ job_BA_keystone_artisan_desc:0 "使用矿物和制造石生产民用工业品的技师们。"
+ mod_job_BA_keystone_artisan_add:0 "制造石工匠岗位"
  job_BA_keystone_foundry:0 "制造石锻造师"
  job_BA_keystone_foundry_plural:0 "制造石锻造师"
  job_BA_keystone_foundry_desc:0 "混合使用矿物和制造石产出合金，十分高效。"

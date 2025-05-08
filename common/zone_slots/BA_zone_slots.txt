@@ -1,0 +1,43 @@
+slot_BA_municipality_school = {
+    start = zone_default
+    include = {
+        zone_default
+    }
+    exclude = {
+    }
+    potential = {
+        always = yes
+    }
+    unlock = { # planet scope
+        always = yes
+    }
+}
+
+slot_BA_municipality_school = {
+    start = zone_default
+    include = {
+        zone_default
+    }
+    exclude = {
+    }
+    potential = {
+        always = yes
+    }
+    unlock = { # planet scope
+        always = yes
+    }
+}
+
+slot_BA_suburbs = {
+    include = {
+        zone_BA_grand_suburbs
+        zone_BA_energy_suburbs
+        zone_BA_mineral_suburbs
+        zone_BA_food_suburbs
+        zone_BA_support
+    }
+    exclude = {
+    }
+    unlock = {
+    }
+}

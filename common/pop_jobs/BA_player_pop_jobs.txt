@@ -16,7 +16,13 @@
 #buff:星球科技产出+5%
 BA_student_delegate = {
 	category = ruler
-	condition_string = RULER_JOB_TRIGGER
+	swappable_data = {
+		default = {
+			icon = BA_student_delegate
+			condition_string = RULER_JOB_TRIGGER
+			building_icon = building_BA_club_room
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -57,17 +63,10 @@ BA_student_delegate = {
 		planet_jobs_society_research_produces_mult = 0.05
 		planet_jobs_engineering_research_produces_mult = 0.05
 	}
-	pop_modifier = {
-		pop_happiness = 0.3
-	}
 	weight = {
 		weight = @ruler_job_weight
 		mult = value:job_weights_research_modifier|JOB|head_researcher|
 		mult = value:job_weights_modifier|JOB|head_researcher|RESOURCE|unity|FACTOR|0.25|
-		modifier = {
-			factor = 5
-			has_job = BA_student_delegate
-		}
 	}
 }
 
@@ -77,8 +76,13 @@ BA_student_delegate = {
 #传统强化：生成2防御部队 2凝聚力
 BA_Vigilant_crew = {
 	category = ruler
-	condition_string = SPECIALIST_JOB_TRIGGER
-	#building_icon = building_BA_pyroxenes
+	swappable_data = {
+		default = {
+			icon = BA_Vigilant_crew
+			condition_string = RULER_JOB_TRIGGER
+			building_icon = building_BA_Schale_office
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -115,30 +119,16 @@ BA_Vigilant_crew = {
 		}
 		planet_stability_add = 4
 		planet_crime_add = -15
+		planet_defense_armies_add = 3
 	}
-	triggered_pop_modifier = {
-		potential = {
-			exists = owner
-		}
-		pop_defense_armies_add = 2
-	}
-	triggered_pop_modifier = {
+	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			planet = {
 				has_deposit = d_fade_Sanctum
 			}
 		}
-		pop_defense_armies_add = 4
-	}
-	triggered_pop_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_tradition = tr_kivotos_student_arms
-			}
-		}
-		pop_defense_armies_add = 2
+		planet_defense_armies_add = 3
 	}
 	country_modifier = {
 		country_naval_cap_add = 8
@@ -147,12 +137,11 @@ BA_Vigilant_crew = {
 		weight = @ruler_job_weight
 		mult = value:job_weights_modifier|JOB|high_priest|RESOURCE|unity|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
-		modifier = {
-			factor = 5
-			has_job = BA_Vigilant_crew
-		}
 	}
 }
+
+
+
 
 #############   专家   #############
 ### 社团部员 ###
@@ -161,8 +150,13 @@ BA_Vigilant_crew = {
 #
 BA_club_members = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	#building_icon = building_BA_pyroxenes
+	swappable_data = {
+		default = {
+			icon = BA_club_members
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_BA_club_room
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -208,21 +202,21 @@ BA_club_members = {
 			factor = 2
 			always = yes
 		}
-		modifier = {
-			factor = 5
-			has_job = BA_club_members
-		}
 	}
 }
 
-### 自治区职员 ###
-#模式一 48：基础 —— 6矿物 -> 3食物 6消费品
-#模式二 72：我们的故事 2段 —— 10矿物 -> 3食物 8消费品 0.5青辉石
-#传统强化：2舒适度
+### 联邦职员 ###
+#舒适度 凝聚力
 BA_Kivotos_staff = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
 	#building_icon = building_BA_pyroxenes
+	swappable_data = {
+		default = {
+			icon = BA_Kivotos_miner
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_factory_1
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -245,8 +239,8 @@ BA_Kivotos_staff = {
 			minerals = 6
 		}
 		produces = {
-			consumer_goods = 6
-			food = 3
+			consumer_goods = 9
+			trade = 3
 		}
 		upkeep = {
 			trigger = {
@@ -263,7 +257,7 @@ BA_Kivotos_staff = {
 				}
 			}
 			sr_pyroxenes = 0.5
-			consumer_goods = 2
+			consumer_goods = 3
 		}
 		produces = {
 			trigger = {
@@ -291,10 +285,71 @@ BA_Kivotos_staff = {
 			is_enslaved = yes
 			can_take_servant_job = no
 		}
-		modifier = {
-			factor = 5
-			has_job = BA_Kivotos_staff
+	}
+}
+
+### 制造石工匠 ###
+#模式一 48：基础 —— 8矿物 -> 8消费品
+#模式二 72：我们的故事 2段 —— 9矿物 1制造石 -> 14消费品
+BA_keystone_artisan = {
+	category = specialist
+	#building_icon = building_BA_pyroxenes
+	swappable_data = {
+		default = {
+			icon = artisan
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_factory_1
 		}
+	}
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		hidden_trigger = {
+			exists = owner
+		}
+		owner = {
+			is_gestalt = no
+		}
+	}
+	resources = {
+		category = planet_artisans
+		upkeep = {
+			minerals = 8
+		}
+		produces = {
+			consumer_goods = 8
+		}
+		upkeep = {
+			trigger = {
+				BA_can_activate_keystone_mode = yes
+			}
+			sr_keystone = 1
+			minerals = 1
+		}
+		produces = {
+			trigger = {
+				BA_can_activate_keystone_mode = yes
+			}
+			consumer_goods = 6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				has_tradition = tr_kivotos_newkind_dome
+			}
+		}
+		planet_amenities_add = 2
+	}
+	weight = {
+		weight = @specialist_job_weight
+		mult = value:job_weights_modifier|JOB|artisan|RESOURCE|consumer_goods|
 	}
 }
 
@@ -304,9 +359,13 @@ BA_Kivotos_staff = {
 #传统强化：8海军容量
 BA_keystone_foundry = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	icon = foundry
-	building_icon = building_nano_forge
+	swappable_data = {
+		default = {
+			icon = foundry
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_nano_forge
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -333,28 +392,14 @@ BA_keystone_foundry = {
 		}
 		upkeep = {
 			trigger = {
-				owner = {
-					has_country_flag = BA_Blue_new_world_3
-					resource_stockpile_compare = {
-						resource = sr_keystone
-						value >= value:num_BA_count_jobs|Job|BA_keystone_foundry|
-						multiplier = 2
-					}
-				}
+				BA_can_activate_keystone_mode = yes
 			}
 			sr_keystone = 1
 			minerals = 1
 		}
 		produces = {
 			trigger = {
-				owner = {
-					has_country_flag = BA_Blue_new_world_3
-					resource_stockpile_compare = {
-						resource = sr_keystone
-						value >= value:num_BA_count_jobs|Job|BA_keystone_foundry|
-						multiplier = 2
-					}
-				}
+				BA_can_activate_keystone_mode = yes
 			}
 			alloys = 3
 		}
@@ -370,10 +415,6 @@ BA_keystone_foundry = {
 	weight = {
 		weight = @specialist_job_weight
 		mult = value:job_weights_modifier|JOB|foundry|RESOURCE|alloys|
-		modifier = {
-			factor = 5
-			has_job = BA_keystone_foundry
-		}
 	}
 }
 
@@ -382,7 +423,13 @@ BA_keystone_foundry = {
 #模式二：学园球 + 我们的故事 1段 —— 9电 9矿 -> 1稀有资源
 BA_scrap_refiner = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
+	swappable_data = {
+		default = {
+			icon = BA_scrap_refiner
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_mineral_purification_plant
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -434,20 +481,8 @@ BA_scrap_refiner = {
 		}
 		planet_amenities_add = -1
 	}
-	triggered_pop_modifier = {
-		potential = {
-			planet = {
-				is_planet_class = pc_BA_ruined_planet
-			}
-		}
-		pop_happiness = -0.2
-	}
 	weight = {
 		weight = @specialist_job_weight
-		modifier = {
-			factor = 7
-			has_job = BA_scrap_refiner
-		}
 	}
 }
 
@@ -457,8 +492,13 @@ BA_scrap_refiner = {
 #模式二：我们的故事 1段 —— 2凝聚力 -> 21电
 BA_dont_be_crazy_here = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_energy_nexus
+	swappable_data = {
+		default = {
+			icon = BA_Kivotos_miner
+			condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_energy_nexus
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -492,8 +532,8 @@ BA_dont_be_crazy_here = {
 			energy = 6
 		}
 	}
-	pop_modifier = {
-		pop_happiness = 1
+	pop_group_modifier = {
+		pop_amenities_usage_mult = -0.5
 	}
 	weight = {
 		weight = @worker_job_weight
@@ -506,8 +546,13 @@ BA_dont_be_crazy_here = {
 #模式二：我们的故事 1段 —— 1合金 5舒适度 -> 21矿
 BA_Kivotos_miner = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_mineral_purification_plant
+	swappable_data = {
+		default = {
+			icon = BA_Kivotos_miner
+			condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_mineral_purification_plant
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -544,12 +589,63 @@ BA_Kivotos_miner = {
 	planet_modifier = {
 		planet_amenities_add = -5
 	}
-	pop_modifier = {
-		pop_happiness = 0.2
-	}
+
 	weight = {
 		weight = @worker_job_weight
 		mult = value:job_weights_modifier|JOB|miner|RESOURCE|minerals|
+	}
+}
+
+### 餐务员
+#基础：2消费品 -> 15粮 混成化增益
+BA_caterer = {
+	category = worker
+	swappable_data = {
+		default = {
+			icon = BA_caterer
+			condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_genomic_facility
+		}
+	}
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	possible_precalc = can_fill_worker_job
+	resources = {
+		category = planet_farmers
+		produces = {
+			food = 15
+		}
+		upkeep = {
+			consumer_goods = 2
+		}
+		#混成化增益
+		produces = {
+			trigger = {
+				exists = owner
+				planet = {
+					has_active_building = building_BA_mixed_ruins_lab
+				}
+			}
+			engineering_research = 4
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				planet = {
+					has_active_building = building_BA_mixed_ruins_lab
+				}
+			}
+			energy = 1
+		}
+	}
+	weight = {
+		weight = @worker_job_weight
+		mult = value:job_weights_modifier|JOB|farmer|RESOURCE|food|
 	}
 }
 
@@ -558,7 +654,13 @@ BA_Kivotos_miner = {
 #注：基沃托斯的失业者
 BA_flexible_workers = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
+	swappable_data = {
+		default = {
+			icon = BA_flexible_workers
+			condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_BA_Schale_office
+		}
+	}
 	is_capped_by_modifier = no
 	possible_pre_triggers = {
 		has_owner = yes
@@ -584,9 +686,11 @@ BA_flexible_workers = {
 			physics_research = 1
 			society_research = 1
 			engineering_research = 1
+			trade = 3
 		}
 		upkeep = {
 			unity = 1
+			# influence = 0.002
 		}
 		produces = {
 			trigger = {
@@ -618,17 +722,6 @@ BA_flexible_workers = {
 			influence = 0.02
 		}
 	}
-	triggered_planet_modifier = {
-		potential = {
-			planet = {
-				NOT = {
-					has_planet_flag = has_franchise_headquarters
-				}
-			}
-		}
-		trade_value_add = 3
-		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
-	}
 	weight = {
 		weight = 0.01
 	}
@@ -643,7 +736,13 @@ BA_flexible_workers = {
 #混成化增益：2食物 -> 4工程学
 BA_supplier = {
 	category = ruler
-	condition_string = RULER_JOB_TRIGGER
+	swappable_data = {
+		default = {
+			icon = BA_supplier
+			condition_string = RULER_JOB_TRIGGER
+			building_icon = building_food_processing_facility
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -688,10 +787,6 @@ BA_supplier = {
 	weight = {
 		weight = @ruler_job_weight
 		mult = value:job_weights_research_modifier|JOB|head_researcher|
-		modifier = {
-			factor = 5
-			has_job = BA_supplier
-		}
 	}
 }
 
@@ -699,8 +794,14 @@ BA_supplier = {
 #基础：8矿 -> 8*3科研点数 12海军容量 5舒适度
 BA_quartermaster = {
 	category = ruler
-	condition_string = RULER_JOB_TRIGGER
-	#building_icon = building_BA_pyroxenes
+	swappable_data = {
+		default = {
+			icon = BA_quartermaster
+			condition_string = RULER_JOB_TRIGGER
+			building_icon = building_factory_efficiency_1
+		}
+	}
+
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -732,10 +833,6 @@ BA_quartermaster = {
 	weight = {
 		weight = @ruler_job_weight
 		mult = value:job_weights_research_modifier|JOB|head_researcher|
-		modifier = {
-			factor = 5
-			has_job = BA_quartermaster
-		}
 	}
 }
 
@@ -746,7 +843,13 @@ BA_quartermaster = {
 #混成化增益：1食物 -> 4工程学
 BA_reminer = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
+	swappable_data = {
+		default = {
+			icon = BA_reminer
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_mineral_purification_plant
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -804,10 +907,6 @@ BA_reminer = {
 	}
 	weight = {
 		weight = @specialist_job_weight
-		modifier = {
-			factor = 5
-			has_job = BA_reminer
-		}
 	}
 }
 
@@ -815,8 +914,13 @@ BA_reminer = {
 #基础：2矿 -> 7电 2食物 2消费品
 BA_solar_farmer = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	#building_icon = building_BA_pyroxenes
+	swappable_data = {
+		default = {
+			icon = BA_solar_farmer
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_primitive_power_plant
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -838,10 +942,6 @@ BA_solar_farmer = {
 	}
 	weight = {
 		weight = @specialist_job_weight
-		modifier = {
-			factor = 5
-			has_job = BA_solar_farmer
-		}
 	}
 }
 
@@ -849,8 +949,13 @@ BA_solar_farmer = {
 #基础：5电 -> 6社会和工程学点数 5舒适度
 BA_surveyor = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	#building_icon = building_BA_pyroxenes
+	swappable_data = {
+		default = {
+			icon = BA_surveyor
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_research_lab_1
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -874,61 +979,9 @@ BA_surveyor = {
 	}
 	weight = {
 		weight = @specialist_job_weight
-		modifier = {
-			factor = 5
-			has_job = BA_surveyor
-		}
 	}
 }
 
-### 餐务员
-#基础：2食物 -> 4凝聚力 3消费品 混成化增益
-BA_caterer = {
-	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	#building_icon = building_BA_pyroxenes
-	possible_pre_triggers = {
-		has_owner = yes
-		is_enslaved = no
-		is_being_purged = no
-		is_being_assimilated = no
-		is_sapient = yes
-	}
-	possible_precalc = can_fill_worker_job
-	resources = {
-		category = planet_farmers
-		produces = {
-			unity = 4
-			consumer_goods = 3
-		}
-		upkeep = {
-			food = 2
-		}
-		#
-		produces = {
-			trigger = {
-				exists = owner
-				planet = {
-					has_active_building = building_BA_mixed_ruins_lab
-				}
-			}
-			engineering_research = 4
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				planet = {
-					has_active_building = building_BA_mixed_ruins_lab
-				}
-			}
-			food = 1
-		}
-	}
-	weight = {
-		weight = @worker_job_weight
-		mult = value:job_weights_modifier|JOB|farmer|RESOURCE|food|
-	}
-}
 
 #############   劳工   #############
 ### 拾荒者
@@ -937,9 +990,14 @@ BA_caterer = {
 #注：这是废墟星球上的失业者
 BA_scavenger = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	#building_icon = building_BA_pyroxenes
 	is_capped_by_modifier = no
+	swappable_data = {
+		default = {
+			icon = BA_scavenger
+			condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_BA_rare_center_1
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -1000,8 +1058,14 @@ BA_scavenger = {
 #基础：
 BA_student_on_duty = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
 	is_capped_by_modifier = no
+	swappable_data = {
+		default = {
+			icon = BA_student_on_duty
+			condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_BA_Schale_office
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -1031,13 +1095,11 @@ BA_student_on_duty = {
 			consumer_goods = 0.5
 		}
 	}
-	pop_modifier = {
-		pop_amenities_usage_mult = -0.8
-		pop_defense_armies_add = 1
-	}
+
 	planet_modifier = {
 		planet_amenities_add = 1
 		planet_crime_add = -1
+		planet_defense_armies_add = 1
 	}
 	country_modifier = {
 		country_naval_cap_add = 2
@@ -1050,7 +1112,13 @@ BA_student_on_duty = {
 ### 环世界值日生
 BA_ringworld_worker = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
+	swappable_data = {
+		default = {
+			icon = BA_ringworld_worker
+			condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_BA_club_room
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -1072,9 +1140,5 @@ BA_ringworld_worker = {
 	}
 	weight = {
 		weight = @specialist_job_weight
-		modifier = {
-			factor = 3
-			has_job = BA_ringworld_worker
-		}
 	}
 }

@@ -66,11 +66,18 @@ num_minor_orbitals = {
 }
 
 ########   岗位
-num_BA_count_jobs = {
+num_BA_count_keystone_jobs = {
 	complex_trigger_modifier = {
 		trigger = num_assigned_jobs
 		parameters = {
-			job = $Job$
+			job = BA_keystone_foundry
+		}
+		mode = add
+	}
+	complex_trigger_modifier = {
+		trigger = num_assigned_jobs
+		parameters = {
+			job = BA_keystone_artisan
 		}
 		mode = add
 	}

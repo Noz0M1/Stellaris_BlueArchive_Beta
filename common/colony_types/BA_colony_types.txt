@@ -92,17 +92,17 @@ col_BA_campus_club = {
 	}
 	planet_modifier = {
 		planet_researchers_upkeep_mult = -0.2
-		planet_BA_districts_campus_build_speed_mult = 0.2
+		# planet_BA_districts_campus_build_speed_mult = 0.2
 	}
 	weight_modifier = {
 		base = 25
-		modifier = {
-			add = 20
-			num_districts = {
-				type = BA_districts_campus
-				value >= 5
-			}
-		}
+		# modifier = {
+		# 	add = 20
+		# 	num_districts = {
+		# 		type = BA_districts_campus
+		# 		value >= 5
+		# 	}
+		# }
 	}
 }
 

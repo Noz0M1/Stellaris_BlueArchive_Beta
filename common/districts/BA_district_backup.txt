@@ -1,0 +1,97 @@
+# ### 学园区划 2槽位、3住房，减少5稳定度
+# BA_districts_campus = {
+# 	base_buildtime = @BA_base_time
+# 	is_capped_by_modifier = no
+# 	show_on_uncolonized = {
+# 		uses_district_set = BA_planet
+# 	}
+# 	potential = {
+# 		uses_district_set = BA_planet
+# 	}
+# 	allow = {
+# 		NOT = {
+# 			has_modifier = resort_colony
+# 		}
+# 		NOT = {
+# 			has_modifier = slave_colony
+# 		}
+# 	}
+# 	resources = {
+# 		category = planet_districts
+# 		cost = {
+# 			minerals = @BA_base_cost
+# 		}
+# 		upkeep = {
+# 			energy = @BA_base_upkeep
+# 		}
+# 	}
+# 	#修正
+# 	planet_modifier = {
+# 		planet_housing_add = 3
+# 	}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = {
+# 				NOT = {
+# 					has_country_flag = BA_Blue_new_world_5
+# 				}
+# 			}
+# 		}
+# 		#5阶段前
+# 		planet_stability_add = -3
+# 	}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 		}
+# 		modifier = {
+# 			#3社团部员
+# 			job_BA_club_members_add = 3
+# 		}
+# 	}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = {
+# 				has_tradition = tr_kivotos_finish
+# 			}
+# 		}
+# 		modifier = {
+# 			#传统：1学生代表
+# 			job_BA_student_delegate_add = 1
+# 			job_BA_club_members_add = -1
+# 		}
+# 	}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = {
+# 				has_country_flag = BA_Blue_new_world_4
+# 			}
+# 		}
+# 		#4阶段 住房+3
+# 		planet_housing_add = 3
+# 		planet_max_buildings_add = 20
+# 	}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = {
+# 				has_country_flag = BA_Blue_new_world_5
+# 			}
+# 		}
+# 		#5阶段 +1部员
+# 		job_BA_club_members_add = 1
+# 	}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = {
+# 				has_country_flag = BA_Blue_new_world_7
+# 			}
+# 		}
+# 		#7阶段
+# 		planet_jobs_produces_mult = 0.025
+# 	}
+# }
