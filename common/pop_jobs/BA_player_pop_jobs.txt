@@ -141,8 +141,6 @@ BA_Vigilant_crew = {
 }
 
 
-
-
 #############   专家   #############
 ### 社团部员 ###
 # 1食物 1消费品 0.5合金 -> 4*3科研点
@@ -154,7 +152,7 @@ BA_club_members = {
 		default = {
 			icon = BA_club_members
 			condition_string = SPECIALIST_JOB_TRIGGER
-			building_icon = building_BA_club_room
+			building_icon = building_augmentation_center
 		}
 	}
 	possible_pre_triggers = {
@@ -214,7 +212,7 @@ BA_Kivotos_staff = {
 		default = {
 			icon = BA_Kivotos_miner
 			condition_string = SPECIALIST_JOB_TRIGGER
-			building_icon = building_factory_1
+			building_icon = building_holo_theatres
 		}
 	}
 	possible_pre_triggers = {
@@ -363,7 +361,7 @@ BA_keystone_foundry = {
 		default = {
 			icon = foundry
 			condition_string = SPECIALIST_JOB_TRIGGER
-			building_icon = building_nano_forge
+			building_icon = building_foundry_1
 		}
 	}
 	possible_pre_triggers = {
@@ -494,7 +492,7 @@ BA_dont_be_crazy_here = {
 	category = worker
 	swappable_data = {
 		default = {
-			icon = BA_Kivotos_miner
+			icon = BA_dont_be_crazy_here
 			condition_string = WORKER_JOB_TRIGGER
 			building_icon = building_energy_nexus
 		}
@@ -604,7 +602,7 @@ BA_caterer = {
 		default = {
 			icon = BA_caterer
 			condition_string = WORKER_JOB_TRIGGER
-			building_icon = building_genomic_facility
+			building_icon = building_food_processing_facility
 		}
 	}
 	possible_pre_triggers = {
@@ -658,7 +656,7 @@ BA_flexible_workers = {
 		default = {
 			icon = BA_flexible_workers
 			condition_string = WORKER_JOB_TRIGGER
-			building_icon = building_BA_Schale_office
+			building_icon = building_genomic_facility
 		}
 	}
 	is_capped_by_modifier = no

@@ -1,6 +1,5 @@
-#############   人口建筑   #############
+#############   功能建筑   #############
 ######   组装厂   ######
-### 卫星局
 building_BA_starlink_1 = {
 	position_priority = 20
 	base_buildtime = 360
@@ -8,9 +7,6 @@ building_BA_starlink_1 = {
 	base_cap_amount = 1
 	potential = {
 		exists = owner
-		NOT = {
-			is_planet_class = pc_habitat
-		}
 		owner = {
 			is_ai = no
 			has_authority = auth_kivotos
@@ -23,7 +19,7 @@ building_BA_starlink_1 = {
 				has_authority = auth_kivotos
 			}
 		}
-		planet_pop_assembly_organic_mult = 0.12
+		logistic_growth_mult = 0.12
 		planet_pop_assembly_mult = 0.12
 	}
 	planet_modifier = {
@@ -44,7 +40,6 @@ building_BA_starlink_1 = {
 	}
 }
 
-### 星链局
 building_BA_starlink_2 = {
 	position_priority = 20
 	can_build = no
@@ -66,8 +61,8 @@ building_BA_starlink_2 = {
 				has_authority = auth_kivotos
 			}
 		}
-		planet_pop_assembly_organic_mult = 0.25
-		planet_pop_assembly_mult = 0.25
+		logistic_growth_mult = 0.12
+		planet_pop_assembly_mult = 0.12
 	}
 	planet_modifier = {
 		job_roboticist_add = 3
@@ -84,8 +79,110 @@ building_BA_starlink_2 = {
 	}
 }
 
+######   稳定度   ######
+building_BA_basis_schola_1 = {
+	base_buildtime = 360
+	category = government
+	building_sets = {
+		government
+		urban
+	}
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	convert_to = {
+		building_precinct_house
+	}
+	planet_modifier = {
+		job_BA_Vigilant_crew_add = 200
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	prerequisites = {
+		"tech_planetary_government"
+	}
+	triggered_desc = {
+		text = job_BA_Vigilant_crew_effect_desc
+	}
+	upgrades = {
+		building_BA_basis_schola_2
+	}
+}
+
+building_BA_basis_schola_2 = {
+	base_buildtime = @b2_time
+	category = government
+	can_build = no
+	building_sets = {
+		government
+		urban
+	}
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	convert_to = {
+		building_hall_judgment
+	}
+	planet_modifier = {
+		job_BA_Vigilant_crew_add = 500
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			volatile_motes = @b2_rare_cost
+		}
+		upkeep = {
+			energy = @b1_upkeep
+			volatile_motes = @b2_rare_upkeep
+		}
+	}
+	prerequisites = {
+		"tech_colonial_centralization"
+	}
+	triggered_desc = {
+		text = job_BA_Vigilant_crew_effect_desc
+	}
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+		NOT = {
+			has_valid_civic = civic_civil_education
+		}
+	}
+}
+
 #############   基础生产   #############
-### 制造石冶金厂
 # 制造石冶金者+2 
 building_BA_keystone_foundry_1 = {
 	base_buildtime = 360
@@ -128,7 +225,6 @@ building_BA_keystone_foundry_1 = {
 	}
 }
 
-### 大型制造石冶金厂
 # 制造石冶金者+4
 building_BA_keystone_foundry_2 = {
 	base_buildtime = 480
@@ -170,7 +266,6 @@ building_BA_keystone_foundry_2 = {
 
 #############   特殊资源   #############
 ######   青辉石   ######
-### 青辉石建造中心 
 # 青辉石生产员+1
 building_BA_pyroxenes_1 = {
 	position_priority = 200
@@ -213,7 +308,6 @@ building_BA_pyroxenes_1 = {
 	}
 }
 
-### 规模化青辉石制造中心
 # 青辉石生产员+3
 building_BA_pyroxenes_2 = {
 	position_priority = 201
@@ -256,7 +350,6 @@ building_BA_pyroxenes_2 = {
 }
 
 ######   制造石   ######
-### 制造石制造机
 # 1青辉石 -> 2制造石
 building_BA_keystone_1 = {
 	position_priority = 202
@@ -310,7 +403,6 @@ building_BA_keystone_1 = {
 	}
 }
 
-### 集约化制造石制造机
 # 制造机维护员+1
 # 3青辉石 -> 6制造石
 building_BA_keystone_2 = {
@@ -455,7 +547,6 @@ building_BA_rare_center_1 = {
 
 #############   事件建筑   #############
 ### 起源
-#混成数据实验室
 building_BA_mixed_ruins_lab = {
 	position_priority = 199
 	base_buildtime = 360
@@ -492,7 +583,6 @@ building_BA_mixed_ruins_lab = {
 	}
 }
 
-#控制中心
 building_BA_fade_Sanctum_center = {
 	icon = building_illicit_research_labs
 	can_build = no
@@ -554,4 +644,3 @@ building_BA_SI_Millennium_G10 = {
 		"tech_BA_SI_Millennium_G09"
 	}
 }
-

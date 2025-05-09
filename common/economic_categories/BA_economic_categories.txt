@@ -41,7 +41,7 @@ BA_crew_pop = {
 		produces
 		upkeep
 	}
-	modifier_category = pop
+	modifier_category = pop_group
 }
 
 ##### 职员
@@ -56,7 +56,7 @@ BA_staff_pop = {
 		produces
 		upkeep
 	}
-	modifier_category = pop
+	modifier_category = pop_group
 }
 
 ##### 社团部员
@@ -71,7 +71,7 @@ BA_club_pop = {
 		produces
 		upkeep
 	}
-	modifier_category = pop
+	modifier_category = pop_group
 }
 
 ##### 灵活就业者
@@ -86,7 +86,7 @@ BA_flex_pop = {
 		produces
 		upkeep
 	}
-	modifier_category = pop
+	modifier_category = pop_group
 }
 
 ##### 自动化设备操作者
@@ -101,10 +101,12 @@ BA_auto_pop = {
 		produces
 		upkeep
 	}
-	modifier_category = pop
+	modifier_category = pop_group
 }
 
 ##### 行星特征
-BA_museum = {
+BA_planet_deposit = {
 	use_for_ai_budget = no
+	parent = country_base
+	modifier_category = deposit
 }

@@ -1,6 +1,7 @@
 #### 民用舰船
 #社团舰
 BA_club_ship = {
+	map_icon_override = {  }
 	max_hitpoints = @colony_hp
 	combat_disengage_chance = 0.5
 	max_speed = @speed_very_slow
@@ -25,6 +26,7 @@ BA_club_ship = {
 	prerequisites = {
 		"tech_BA_culture_Federal"
 	}
+	available_to_everyone = yes
 	class = shipclass_colonizer
 	construction_type = starbase_shipyard
 	resources = {
@@ -53,7 +55,6 @@ BA_missile_ship = {
 	entity = "ba_missile_ship_entity"
 	modifier = {
 		ship_evasion_add = @destroyer_evasion
-		ship_piracy_suppression_add = 8
 	}
 	size_multiplier = 2
 	fleet_slot_size = 2
@@ -77,6 +78,7 @@ BA_missile_ship = {
 		tech_BA_spaceship_automation_1
 	}
 	combat_disengage_chance = 1.5
+	available_to_everyone = yes
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	required_component_set = "power_core"
@@ -116,7 +118,6 @@ BA_artillery_ship = {
 	entity = "ba_artillery_ship_entity"
 	modifier = {
 		ship_evasion_add = @battleship_evasion
-		ship_piracy_suppression_add = 8
 	}
 	size_multiplier = 6
 	fleet_slot_size = 4
@@ -143,6 +144,7 @@ BA_artillery_ship = {
 		tech_BA_spaceship_automation_2
 	}
 	combat_disengage_chance = 1.5
+	available_to_everyone = yes
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	required_component_set = "power_core"
@@ -213,6 +215,7 @@ BA_swarm_ship = {
 		tech_BA_spaceship_automation_2
 	}
 	combat_disengage_chance = 1.5
+	available_to_everyone = yes
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	required_component_set = "power_core"
@@ -260,7 +263,6 @@ BA_hub_ship = {
 	entity = "ba_hub_ship_entity"
 	modifier = {
 		ship_evasion_add = @battleship_evasion
-		ship_piracy_suppression_add = 24
 	}
 	size_multiplier = 16
 	fleet_slot_size = 8
@@ -287,6 +289,7 @@ BA_hub_ship = {
 		"tech_BA_spaceship_automation_4"
 	}
 	combat_disengage_chance = 1.25
+	available_to_everyone = yes
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	required_component_set = "power_core"
@@ -389,6 +392,7 @@ BA_defence_cannon = {
 	prerequisites = {
 		tech_BA_spaceship_automation_3
 	}
+	available_to_everyone = yes
 	class = shipclass_military_station
 	ship_class_icon_frame = 26
 	icon = ship_size_military_station
@@ -461,6 +465,7 @@ starbase_Aris = {
 	is_listed = no
 	can_disable = no
 	enable_default_design = no	#if yes, countries will have an auto-generated design at start
+	available_to_everyone = yes
 	class = shipclass_starbase
 	required_component_set = "power_core"
 	required_component_set = "sensor_components"
@@ -511,6 +516,7 @@ BA_Aris_flagship = {
 		"tech_BA_fe"
 	}
 	combat_disengage_chance = 1.25
+	available_to_everyone = yes
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	required_component_set = "power_core"

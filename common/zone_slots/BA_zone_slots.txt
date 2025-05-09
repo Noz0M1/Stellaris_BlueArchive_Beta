@@ -1,30 +1,27 @@
-slot_BA_municipality_school = {
-    start = zone_default
+slot_BA_municipality = {
     include = {
-        zone_default
+        zone_urban
+        zone_industrial
+        zone_foundry
+        zone_factory
+        zone_unity
+        zone_unity_spiritualist
+        zone_research
+        zone_research_unity
+        zone_trade
+        zone_fortress
     }
     exclude = {
-    }
-    potential = {
-        always = yes
-    }
-    unlock = { # planet scope
-        always = yes
-    }
-}
-
-slot_BA_municipality_school = {
-    start = zone_default
-    include = {
         zone_default
-    }
-    exclude = {
-    }
-    potential = {
-        always = yes
-    }
-    unlock = { # planet scope
-        always = yes
+        zone_research_physics
+        zone_research_engineering
+        zone_research_society
+        zone_minerals
+        zone_food
+        zone_energy
+        zone_urban_food
+        zone_urban_minerals
+        zone_urban_energy
     }
 }
 

@@ -540,7 +540,7 @@ d_power_station = {
 		planet_jobs_energy_upkeep_mult = -0.1
 	}
 	resources = {
-		category = BA_museum
+		category = BA_planet_deposit
 		produces = {
 			energy = 60
 		}
@@ -556,7 +556,7 @@ d_desert_mine = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	resources = {
-		category = BA_museum
+		category = BA_planet_deposit
 		produces = {
 			trigger = {
 				years_passed >= 50
@@ -582,7 +582,7 @@ d_Greenhouse_farms = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	resources = {
-		category = BA_museum
+		category = BA_planet_deposit
 		produces = {
 			trigger = {
 				years_passed >= 30

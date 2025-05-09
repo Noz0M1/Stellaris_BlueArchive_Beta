@@ -46,8 +46,8 @@ BA_districts_municipality = {
 	}
 	zone_slots = {
 		slot_city_government
-		slot_city_01
-		slot_city_02
+		slot_BA_municipality
+		slot_BA_municipality
 	}
 	resources = {
 		category = planet_districts
@@ -278,7 +278,7 @@ BA_districts_military_factory = {
 	# }
 }
 
-### 城郊区划 电、矿、粮
+### 城郊区划 电矿粮
 BA_districts_suburbs = {
 	base_buildtime = @BA_base_time
 	is_capped_by_modifier = no
@@ -353,9 +353,9 @@ BA_districts_suburbs = {
 	# }
 }
 
-### 化工厂区划 飞升解锁-微粒、天然气、水晶
+### 化工厂区划 飞升解锁-微粒天然气水晶
 
-### 复合线区划 飞升解锁-青辉石与制造石
+### 复合线区划 飞升解锁-青辉石制造石
 
 ### 航空港区划 飞升解锁-贸易
 

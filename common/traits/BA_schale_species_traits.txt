@@ -58,7 +58,7 @@ trait_halo_unreleased = {
 		always = no
 	}
 	modifier = {
-		pop_growth_speed = -0.3
+		bonus_pop_growth_mult = -0.3
 		pop_environment_tolerance = 0.2
 		pc_BA_campus_planet_habitability = 0.5
 		pc_BA_ruined_planet_habitability = 0.2
@@ -89,7 +89,7 @@ trait_halo_awakened = {
 		always = no
 	}
 	modifier = {
-		pop_growth_speed = -0.2
+		bonus_pop_growth_mult = -0.2
 		pop_environment_tolerance = 0.3
 		planet_jobs_produces_mult = 0.3
 		army_damage_mult = 0.6
@@ -302,7 +302,7 @@ trait_starlink_receiver = {
 	}
 	custom_tooltip = trait_starlink_receiver_tip
 	modifier = {
-		pop_growth_speed = -0.15
+		bonus_pop_growth_mult = -0.15
 		empire_size_pops_mult = 0.2
 		pop_category_slave_sr_pyroxenes_upkeep_add = 0.05
 		pop_category_rulers_sr_pyroxenes_upkeep_add = 0.05
@@ -327,9 +327,8 @@ trait_BA_Koharu = {
 		Schale
 	}
 	modifier = {
-		pop_growth_speed = 0.2
+		bonus_pop_growth_mult = 0.2
 		species_leader_exp_gain = -0.20
-
 	}
 }
 
@@ -370,8 +369,7 @@ trait_BA_grate_duty = {
 	modifier = {
 		planet_jobs_unity_produces_mult = 0.15
 		pop_housing_usage_mult = -0.05
-		pop_growth_from_immigration = 0.10
-		pop_resettlement_cost_mult = -0.25
+		pop_resettlement_cost_mult = -0.4
 	}
 }
 
@@ -389,7 +387,7 @@ trait_BA_summer_star = {
 		Schale
 	}
 	custom_tooltip_with_modifiers = trait_BA_summer_star_tip
-	triggered_pop_modifier = {
+	triggered_pop_group_modifier = {
 		potential = {
 			exists = planet
 			planet = {
@@ -402,8 +400,22 @@ trait_BA_summer_star = {
 		}
 		pop_housing_usage_mult = -0.2
 		planet_pops_upkeep_mult = -0.1
+		pop_bonus_workforce_mult = 0.05
+	}
+	triggered_planet_growth_habitability_modifier = {
+		potential = {
+			exists = planet
+			planet = {
+				OR = {
+					has_climate = wet
+					has_modifier = flooded_habitat
+				}
+				is_ideal = no
+			}
+		}
 		pop_environment_tolerance = 0.5
 	}
+
 }
 
 #星链 1
@@ -592,7 +604,7 @@ trait_BA_consumerism = {
 	icon = "gfx/interface/icons/traits/species/BA_consumerism.dds"
 	modifier = {
 		planet_pops_consumer_goods_upkeep_mult = 0.15
-		planet_jobs_energy_produces_mult = 0.25
+		planet_pops_trade_produces_mult = 0.20
 	}
 }
 
@@ -838,7 +850,7 @@ trait_Halo_precursor = {
 	}
 	icon = "gfx/interface/icons/traits/Icon_airi_gold.dds"
 	modifier = {
-		pop_growth_speed = -0.5
+		bonus_pop_growth_mult = -0.9
 		pop_environment_tolerance = 1.5
 		planet_jobs_produces_mult = 1
 		army_damage_mult = 2

@@ -54,7 +54,7 @@ d_Arius_site_park = {
 	#####################
 	# 每月+3影响力 50年后额外+3
 	resources = {
-		category = BA_museum
+		category = BA_planet_deposit
 		produces = {
 			trigger = {
 				owner = {
@@ -172,7 +172,7 @@ d_Trinity_National_Museum = {
 	planet_modifier = {
 	}
 	resources = {
-		category = BA_museum
+		category = BA_planet_deposit
 		produces = {
 			society_research = 1
 			multiplier = value:num_BA_Trinity_National_Museum_produce
@@ -195,7 +195,7 @@ d_Gehenna_shelter = {
 		planet_housing_add = 12
 	}
 	resources = {
-		category = BA_museum
+		category = BA_planet_deposit
 		produces = {
 			trigger = {
 				is_planet_class = pc_BA_campus_planet
@@ -254,7 +254,7 @@ d_cleaning_machine_center = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	resources = {
-		category = BA_museum
+		category = BA_planet_deposit
 		produces = {
 			trigger = {
 				has_modifier = modifier_BA_Arius_cleaning
@@ -330,7 +330,7 @@ d_Atrahasis_reactor = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	resources = {
-		category = BA_museum
+		category = BA_planet_deposit
 		produces = {
 			energy = 80
 		}
@@ -345,7 +345,7 @@ d_Atrahasis_harvester = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	resources = {
-		category = BA_museum
+		category = BA_planet_deposit
 		produces = {
 			minerals = 36
 		}
@@ -360,7 +360,7 @@ d_Atrahasis_agriculture = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	resources = {
-		category = BA_museum
+		category = BA_planet_deposit
 		produces = {
 			food = 35
 		}
@@ -375,7 +375,7 @@ d_Atrahasis_factory = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	resources = {
-		category = BA_museum
+		category = BA_planet_deposit
 		produces = {
 			alloys = 12
 			sr_pyroxenes = 1

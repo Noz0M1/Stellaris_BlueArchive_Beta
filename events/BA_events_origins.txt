@@ -23,8 +23,11 @@ country_event = {
 			add_district = BA_districts_municipality
 			add_district = BA_districts_municipality
 			add_district = BA_districts_military_factory
+			add_district = BA_districts_military_factory
 			add_district = BA_districts_suburbs
 			add_district = BA_districts_suburbs
+			add_district = BA_districts_suburbs
+			remove_building = building_colony_shelter
 			add_building = {
 				zone = zone_default
 				building = building_BA_Locker_room
@@ -33,7 +36,10 @@ country_event = {
 				zone = zone_default
 				building = building_capital
 			}
-			remove_building = building_colony_shelter
+			add_building = {
+				zone = zone_default
+				building = building_BA_basis_schola_1
+			}
 			# 区块
 			clear_deposits = yes			#清除原有区块
 			add_deposit = d_black_market			#黑市区块
@@ -52,6 +58,8 @@ country_event = {
 				species = owner_main_species
 				size = 3500
 			}
+			check_planet_employment = yes
+
 		}
 	}
 }
@@ -688,7 +696,7 @@ country_event = {
 			every_owned_pop_group = {
 				kill_pop_group = {
 					pop_group = this
-					amount = 25%
+					percentage = 0.25
 				}
 			}
 		}

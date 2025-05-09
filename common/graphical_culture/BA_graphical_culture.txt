@@ -48,6 +48,14 @@ ba_01 = {
 	selectable = {
 		always = yes
 	}
+	ship_kinds = {
+		default_ship
+		space_amoeba
+		tiyanki
+		voidworm
+		cutholoid
+		crystalline_entity
+	}
 	ship_color = yes
 	fallback = nemesis_01
 	ship_lighting = {
