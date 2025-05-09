@@ -213,21 +213,21 @@ BA_districts_ringworld_satellite = {
 		planet_housing_add = 25
 		planet_amenities_add = 40
 		planet_stability_add = 5
-		job_BA_Vigilant_crew_add = 3
+		job_BA_Vigilant_crew_add = 300
 	}
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			BA_has_any_club_building = no
 		}
-		job_BA_ringworld_worker_add = 10
+		job_BA_ringworld_worker_add = 1000
 	}
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			BA_has_any_club_building = yes
 		}
-		job_BA_club_members_add = 10
+		job_BA_club_members_add = 1000
 	}
 	resources = {
 		category = BA_auto_districts
@@ -262,7 +262,7 @@ BA_districts_ringworld_refinery = {
 			exists = owner
 		}
 		planet_housing_add = 5
-		job_BA_ringworld_worker_add = 5
+		job_BA_ringworld_worker_add = 500
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -355,7 +355,7 @@ BA_districts_ringworld_factory = {
 			exists = owner
 		}
 		planet_housing_add = 5
-		job_BA_ringworld_worker_add = 5
+		job_BA_ringworld_worker_add = 500
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -444,14 +444,14 @@ BA_districts_ringworld_matrix = {
 			exists = owner
 			BA_has_any_club_building = no
 		}
-		job_BA_ringworld_worker_add = 5
+		job_BA_ringworld_worker_add = 500
 	}
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			BA_has_any_club_building = yes
 		}
-		job_BA_club_members_add = 5
+		job_BA_club_members_add = 500
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -558,7 +558,7 @@ BA_districts_ringworld_satellite_fe = {
 		}
 		modifier = {
 			#1自警团
-			job_BA_fe_defender_add = 1
+			job_BA_fe_defender_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -570,7 +570,7 @@ BA_districts_ringworld_satellite_fe = {
 		}
 		modifier = {
 			#1自警团
-			job_BA_Vigilant_crew_add = 1
+			job_BA_Vigilant_crew_add = 100
 		}
 	}
 }

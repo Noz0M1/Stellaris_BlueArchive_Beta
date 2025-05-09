@@ -11,4 +11,4 @@ tags={
 	"Species"
 }
 name="BlueArchive Beta"
-supported_version="4.*"
+supported_version="v4.*"

@@ -395,8 +395,8 @@ BA_districts_shelter = {
 		}
 		modifier = {
 			#1自警团 1餐务员
-			job_BA_Vigilant_crew_add = 1
-			job_BA_caterer_add = 1
+			job_BA_Vigilant_crew_add = 100
+			job_BA_caterer_add = 100
 		}
 	}
 }
@@ -432,7 +432,7 @@ BA_districts_remining_area = {
 		}
 		modifier = {
 			#2矿工
-			job_BA_reminer_add = 2
+			job_BA_reminer_add = 200
 		}
 	}
 	triggered_planet_modifier = {
@@ -444,7 +444,7 @@ BA_districts_remining_area = {
 		}
 		modifier = {
 			#阿里乌斯起源 1矿工
-			job_BA_reminer_add = 1
+			job_BA_reminer_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -458,7 +458,7 @@ BA_districts_remining_area = {
 		}
 		modifier = {
 			#非阿里乌斯起源 1调查员
-			job_BA_surveyor_add = 1
+			job_BA_surveyor_add = 100
 		}
 	}
 }
@@ -494,7 +494,7 @@ BA_districts_supply_station = {
 		}
 		modifier = {
 			#3太阳能农场职工
-			job_BA_solar_farmer_add = 3
+			job_BA_solar_farmer_add = 300
 		}
 	}
 }
@@ -529,9 +529,9 @@ BA_districts_special_factory = {
 		}
 		modifier = {
 			#阿里乌斯起源 1军需员 1配给员
-			job_BA_quartermaster_add = 1
-			job_BA_supplier_add = 1
-			job_BA_scrap_refiner_add = 1
+			job_BA_quartermaster_add = 100
+			job_BA_supplier_add = 100
+			job_BA_scrap_refiner_add = 100
 		}
 	}
 }
@@ -581,7 +581,7 @@ BA_districts_dome_fe = {
 		}
 		modifier = {
 			#1自警团
-			job_BA_fe_defender_add = 1
+			job_BA_fe_defender_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -593,7 +593,7 @@ BA_districts_dome_fe = {
 		}
 		modifier = {
 			#1自警团
-			job_BA_Vigilant_crew_add = 1
+			job_BA_Vigilant_crew_add = 100
 		}
 	}
 }

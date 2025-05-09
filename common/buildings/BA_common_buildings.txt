@@ -23,7 +23,7 @@ building_BA_starlink_1 = {
 		planet_pop_assembly_mult = 0.12
 	}
 	planet_modifier = {
-		job_roboticist_add = 1
+		job_roboticist_add = 100
 	}
 	resources = {
 		category = planet_buildings
@@ -65,7 +65,7 @@ building_BA_starlink_2 = {
 		planet_pop_assembly_mult = 0.12
 	}
 	planet_modifier = {
-		job_roboticist_add = 3
+		job_roboticist_add = 300
 	}
 	resources = {
 		category = planet_buildings
@@ -204,7 +204,7 @@ building_BA_keystone_foundry_1 = {
 			}
 		}
 		modifier = {
-			job_BA_keystone_foundry_add = 2
+			job_BA_keystone_foundry_add = 200
 		}
 	}
 	resources = {
@@ -247,7 +247,7 @@ building_BA_keystone_foundry_2 = {
 			}
 		}
 		modifier = {
-			job_BA_keystone_foundry_add = 4
+			job_BA_keystone_foundry_add = 400
 		}
 	}
 	resources = {
@@ -287,7 +287,7 @@ building_BA_pyroxenes_1 = {
 			}
 		}
 		modifier = {
-			job_BA_pyroxenes_maker_add = 1
+			job_BA_pyroxenes_maker_add = 100
 		}
 	}
 	resources = {
@@ -330,7 +330,7 @@ building_BA_pyroxenes_2 = {
 			}
 		}
 		modifier = {
-			job_BA_pyroxenes_maker_add = 3
+			job_BA_pyroxenes_maker_add = 300
 		}
 	}
 	resources = {
@@ -426,7 +426,7 @@ building_BA_keystone_2 = {
 			}
 		}
 		modifier = {
-			job_BA_keystone_maintenance_staff_add = 1
+			job_BA_keystone_maintenance_staff_add = 100
 		}
 	}
 	resources = {
@@ -574,7 +574,7 @@ building_BA_mixed_ruins_lab = {
 		potential = {
 			is_planet_class = pc_BA_campus_planet
 		}
-		job_BA_club_members_add = 4
+		job_BA_club_members_add = 400
 	}
 	destroy_trigger = {
 		planet = {
@@ -627,7 +627,7 @@ building_BA_SI_Millennium_G10 = {
 			}
 		}
 		modifier = {
-			job_BA_student_delegate_add = 3
+			job_BA_student_delegate_add = 300
 		}
 	}
 	resources = {
