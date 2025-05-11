@@ -385,9 +385,9 @@ BA_districts_shelter = {
 	}
 	#修正
 	planet_modifier = {
-		planet_housing_add = 8
+		planet_housing_add = 800
 		planet_max_buildings_add = 1
-		planet_amenities_add = 4
+		planet_amenities_add = 400
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -423,7 +423,7 @@ BA_districts_remining_area = {
 	}
 	#修正
 	planet_modifier = {
-		planet_housing_add = 3
+		planet_housing_add = 300
 		planet_max_buildings_add = 1
 	}
 	triggered_planet_modifier = {
@@ -485,7 +485,7 @@ BA_districts_supply_station = {
 	}
 	#修正
 	planet_modifier = {
-		planet_housing_add = 3
+		planet_housing_add = 300
 		planet_max_buildings_add = 1
 	}
 	triggered_planet_modifier = {
@@ -569,8 +569,8 @@ BA_districts_dome_fe = {
 	}
 	#修正
 	planet_modifier = {
-		planet_housing_add = 20
-		planet_amenities_add = 8
+		planet_housing_add = 2000
+		planet_amenities_add = 800
 	}
 	triggered_planet_modifier = {
 		potential = {

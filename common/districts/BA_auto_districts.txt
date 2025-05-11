@@ -57,7 +57,7 @@ BA_districts_auto_sustainer = {
 		}
 	}
 	planet_modifier = {
-		planet_housing_add = 6
+		planet_housing_add = 600
 		planet_max_buildings_add = 0.5
 	}
 }
@@ -88,7 +88,7 @@ BA_districts_auto_foundry = {
 		}
 	}
 	planet_modifier = {
-		planet_housing_add = 4
+		planet_housing_add = 400
 		planet_max_buildings_add = 0.5
 	}
 }
@@ -154,7 +154,7 @@ BA_districts_auto_turbine = {
 		}
 	}
 	planet_modifier = {
-		planet_housing_add = 2
+		planet_housing_add = 200
 	}
 }
 
@@ -187,7 +187,7 @@ BA_districts_auto_drill = {
 		}
 	}
 	planet_modifier = {
-		planet_housing_add = 2
+		planet_housing_add = 200
 	}
 }
 
@@ -210,8 +210,8 @@ BA_districts_ringworld_satellite = {
 		potential = {
 			exists = owner
 		}
-		planet_housing_add = 25
-		planet_amenities_add = 40
+		planet_housing_add = 2500
+		planet_amenities_add = 4000
 		planet_stability_add = 5
 		job_BA_Vigilant_crew_add = 300
 	}
@@ -261,7 +261,7 @@ BA_districts_ringworld_refinery = {
 		potential = {
 			exists = owner
 		}
-		planet_housing_add = 5
+		planet_housing_add = 500
 		job_BA_ringworld_worker_add = 500
 	}
 	triggered_planet_modifier = {
@@ -354,7 +354,7 @@ BA_districts_ringworld_factory = {
 		potential = {
 			exists = owner
 		}
-		planet_housing_add = 5
+		planet_housing_add = 500
 		job_BA_ringworld_worker_add = 500
 	}
 	triggered_planet_modifier = {
@@ -437,7 +437,7 @@ BA_districts_ringworld_matrix = {
 		potential = {
 			exists = owner
 		}
-		planet_housing_add = 5
+		planet_housing_add = 500
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -546,8 +546,8 @@ BA_districts_ringworld_satellite_fe = {
 		uses_district_set = BA_fe_auto_ringworld
 	}
 	planet_modifier = {
-		planet_housing_add = 20
-		planet_amenities_add = 8
+		planet_housing_add = 2000
+		planet_amenities_add = 800
 	}
 	triggered_planet_modifier = {
 		potential = {

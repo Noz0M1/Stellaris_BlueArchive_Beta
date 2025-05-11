@@ -121,7 +121,7 @@ d_black_market = {
 	planet_modifier = {
 		planet_stability_add = -5
 		planet_crime_mult = 0.15
-		planet_amenities_add = 10
+		planet_amenities_add = 1000
 		trade_value_add = 5
 	}
 	#降低稳定度与增加犯罪度
@@ -192,7 +192,7 @@ d_Gehenna_shelter = {
 		potential = {
 			is_planet_class = pc_BA_ruined_planet
 		}
-		planet_housing_add = 12
+		planet_housing_add = 1200
 	}
 	resources = {
 		category = BA_planet_deposit

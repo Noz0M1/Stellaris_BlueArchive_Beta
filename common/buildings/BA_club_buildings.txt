@@ -31,7 +31,7 @@ building_BA_Schale_office = {
 		}
 		modifier = {
 			pop_government_ethic_attraction = 1
-			planet_amenities_add = 10
+			planet_amenities_add = 1000
 		}
 	}
 	triggered_planet_modifier = {
@@ -97,7 +97,7 @@ building_BA_Locker_room = {
 		}
 		modifier = {
 			pop_government_ethic_attraction = 1
-			planet_amenities_add = 10
+			planet_amenities_add = 1000
 		}
 	}
 	triggered_planet_modifier = {
@@ -494,7 +494,7 @@ building_BA_Hotspring_development_department = {
 		}
 		modifier = {
 			job_BA_club_members_add = 300
-			planet_amenities_add = 30
+			planet_amenities_add = 3000
 			planet_amenities_mult = 0.3
 			BA_club_pop_engineering_research_produces_add = 1.5
 			BA_club_pop_consumer_goods_upkeep_add = 0.5
