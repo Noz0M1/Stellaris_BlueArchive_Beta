@@ -6,6 +6,12 @@ building_BA_Schale_office = {
 	base_buildtime = @club_room_time
 	base_cap_amount = 1
 	category = government
+
+	building_sets = {
+		government
+		ba_government
+	}
+
 	icon = Schale_office
 	potential = {
 		is_capital = no
@@ -62,6 +68,12 @@ building_BA_Locker_room = {
 	base_buildtime = @club_room_time
 	base_cap_amount = 1
 	category = government
+
+	building_sets = {
+		government
+		ba_government
+	}
+
 	icon = Locker_room
 	potential = {
 		is_capital = yes
@@ -128,6 +140,12 @@ building_BA_club_room = {
 	icon = building_augmentation_center
 	base_buildtime = @club_room_time
 	category = government
+
+	building_sets = {
+		government
+		ba_government
+	}
+
 	position_priority = 22
 	potential = {
 		owner = {
@@ -177,6 +195,12 @@ building_BA_club_room = {
 building_BA_Game_development_department = {
 	base_buildtime = @club_room_time
 	category = government
+
+	building_sets = {
+		government
+		ba_government
+	}
+
 	position_priority = 22
 	base_cap_amount = 1
 	empire_limit = {
@@ -240,6 +264,12 @@ building_BA_Game_development_department = {
 building_BA_Engineering_club = {
 	base_buildtime = @club_room_time
 	category = government
+
+	building_sets = {
+		government
+		ba_government
+	}
+
 	position_priority = 22
 	base_cap_amount = 1
 	empire_limit = {
@@ -293,6 +323,12 @@ building_BA_Engineering_club = {
 building_BA_Veritas = {
 	base_buildtime = @club_room_time
 	category = government
+
+	building_sets = {
+		government
+		ba_government
+	}
+
 	position_priority = 22
 	base_cap_amount = 1
 	empire_limit = {
@@ -356,6 +392,12 @@ building_BA_Veritas = {
 building_BA_Foreclosure_task_force = {
 	base_buildtime = @club_room_time
 	category = government
+
+	building_sets = {
+		government
+		ba_government
+	}
+
 	position_priority = 22
 	base_cap_amount = 1
 	empire_limit = {
@@ -410,6 +452,12 @@ building_BA_Foreclosure_task_force = {
 building_BA_Teaparty_branch = {
 	base_buildtime = @club_room_time
 	category = government
+
+	building_sets = {
+		government
+		ba_government
+	}
+
 	position_priority = 22
 	base_cap_amount = 1
 	empire_limit = {
@@ -463,6 +511,12 @@ building_BA_Teaparty_branch = {
 building_BA_Hotspring_development_department = {
 	base_buildtime = @club_room_time
 	category = government
+
+	building_sets = {
+		government
+		ba_government
+	}
+
 	position_priority = 22
 	base_cap_amount = 1
 	empire_limit = {
@@ -527,6 +581,14 @@ building_BA_Hotspring_development_department = {
 building_BA_Festival_operations_department = {
 	base_buildtime = @club_room_time
 	category = government
+
+	building_sets = {
+		government
+		unity
+		ba_unity
+		ba_government
+	}
+
 	position_priority = 22
 	base_cap_amount = 1
 	empire_limit = {
@@ -590,6 +652,14 @@ building_BA_Festival_operations_department = {
 building_BA_Xuanwu_promenade = {
 	base_buildtime = @club_room_time
 	category = government
+
+	building_sets = {
+		government
+		trade
+		ba_trade
+		ba_government
+	}
+
 	position_priority = 22
 	base_cap_amount = 1
 	empire_limit = {
@@ -621,8 +691,8 @@ building_BA_Xuanwu_promenade = {
 		}
 		modifier = {
 			job_BA_club_members_add = 300
-			trade_value_add = 10
-			trade_value_mult = 0.2
+			# trade_value_add = 10
+			# trade_value_mult = 0.2
 			BA_club_pop_physics_research_produces_add = 0.5
 			BA_club_pop_consumer_goods_upkeep_add = 0.5
 		}
@@ -654,6 +724,14 @@ building_BA_Xuanwu_promenade = {
 building_BA_Publishing_department = {
 	base_buildtime = @club_room_time
 	category = government
+
+	building_sets = {
+		government
+		unity
+		ba_unity
+		ba_government
+	}
+
 	position_priority = 22
 	base_cap_amount = 1
 	empire_limit = {

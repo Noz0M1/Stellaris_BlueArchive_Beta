@@ -5,6 +5,13 @@ building_BA_starlink_1 = {
 	base_buildtime = 360
 	category = pop_assembly
 	base_cap_amount = 1
+
+	building_sets = {
+		government
+		urban
+		ba_pop_assembly
+	}
+
 	potential = {
 		exists = owner
 		owner = {
@@ -45,6 +52,13 @@ building_BA_starlink_2 = {
 	can_build = no
 	base_buildtime = 360
 	category = pop_assembly
+
+	building_sets = {
+		government
+		urban
+		ba_pop_assembly
+	}
+
 	potential = {
 		exists = owner
 		owner = {
@@ -183,86 +197,8 @@ building_BA_basis_schola_2 = {
 }
 
 #############   基础生产   #############
-# 制造石冶金者+2 
-building_BA_keystone_foundry_1 = {
-	base_buildtime = 360
-	position_priority = 154
-	category = manufacturing
-	potential = {
-		owner = {
-			has_authority = auth_kivotos
-		}
-	}
-	allow = {
-		has_upgraded_capital = yes
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
-		modifier = {
-			job_BA_keystone_foundry_add = 200
-		}
-	}
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = 300
-			alloys = 50
-		}
-		upkeep = {
-			energy = 4
-		}
-	}
-	prerequisites = {
-		"tech_BA_angel24_keystone_to_alloy"
-	}
-	upgrades = {
-		building_BA_keystone_foundry_2
-	}
-}
 
-# 制造石冶金者+4
-building_BA_keystone_foundry_2 = {
-	base_buildtime = 480
-	can_build = no
-	position_priority = 154
-	category = manufacturing
-	potential = {
-		owner = {
-			has_authority = auth_kivotos
-		}
-	}
-	allow = {
-		has_major_upgraded_capital = yes
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
-		modifier = {
-			job_BA_keystone_foundry_add = 400
-		}
-	}
-	resources = {
-		category = planet_buildings
-		cost = {
-			sr_keystone = 100
-		}
-		upkeep = {
-			energy = 8
-		}
-	}
-	prerequisites = {
-		"tech_BA_angel24_keystone_to_alloy"
-	}
-}
+
 
 #############   特殊资源   #############
 ######   青辉石   ######
@@ -271,6 +207,14 @@ building_BA_pyroxenes_1 = {
 	position_priority = 200
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		industrial
+		factory
+		foundry
+		ba_specialFactory
+	}
+
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -314,6 +258,14 @@ building_BA_pyroxenes_2 = {
 	base_buildtime = 480
 	can_build = no
 	category = manufacturing
+
+	building_sets = {
+		industrial
+		factory
+		foundry
+		ba_specialFactory
+	}
+
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -355,6 +307,14 @@ building_BA_keystone_1 = {
 	position_priority = 202
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		industrial
+		factory
+		foundry
+		ba_specialFactory
+	}
+
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -410,6 +370,14 @@ building_BA_keystone_2 = {
 	base_buildtime = 480
 	can_build = no
 	category = manufacturing
+
+	building_sets = {
+		industrial
+		factory
+		foundry
+		ba_specialFactory
+	}
+
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -468,6 +436,14 @@ building_BA_dark_matter_concentrator_1 = {
 	position_priority = 300
 	base_buildtime = 480
 	category = manufacturing
+
+	building_sets = {
+		industrial
+		factory
+		foundry
+		ba_specialFactory
+	}
+
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -511,6 +487,14 @@ building_BA_rare_center_1 = {
 	position_priority = 302
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		industrial
+		factory
+		foundry
+		ba_specialFactory
+	}
+
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -556,6 +540,14 @@ building_BA_mixed_ruins_lab = {
 	can_be_disabled = no
 	can_demolish = no
 	can_be_ruined = no
+
+	building_sets = {
+		government
+		research
+		physics
+		ba_special
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -591,6 +583,12 @@ building_BA_fade_Sanctum_center = {
 	can_be_disabled = no
 	position_priority = 0
 	category = government
+
+	building_sets = {
+		government
+		ba_special
+	}
+
 	potential = {
 		always = no
 	}
@@ -610,6 +608,14 @@ building_BA_SI_Millennium_G10 = {
 	position_priority = 148
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		government
+		research
+		physics
+		ba_special
+	}
+
 	base_cap_amount = 1
 	potential = {
 		owner = {

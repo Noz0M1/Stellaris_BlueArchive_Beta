@@ -1,0 +1,517 @@
+### 图标为占位符
+########## 一产 ##########
+# 能量币 #
+building_ba_energy_01 = {
+    base_buildtime = @b1_time
+    base_cap_amount = 1
+    category = resource
+
+    building_sets = {
+        generator
+        ba_generator
+    }
+
+    potential = {
+        owner = {
+            has_authority = auth_kivotos
+        }
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = 2
+        }
+    }
+
+    planet_modifier = {
+        # 预留标记
+    }
+
+    prerequisites = {
+        # 预留标记
+    }
+
+    upgrades = {
+        building_ba_energy_02
+    }
+
+    # 不知道是干嘛的
+    # ai_resource_production = {
+    #     energy = 10
+    #
+    #     trigger = {
+    #         has_any_generator_zone = yes
+    #     }
+    # }
+
+    # show_tech_unlock_if = {
+    #     is_wilderness_empire = no
+    # }
+}
+
+building_ba_energy_02 = {
+    base_buildtime = @b2_time
+    can_build = no
+    category = resource
+
+    building_sets = {
+        generator
+        ba_generator
+    }
+
+    potential = {
+        owner = {
+            has_authority = auth_kivotos
+        }
+    }
+    allow = {
+        has_upgraded_capital = yes
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            trigger = {
+                has_ringworld_output_boost = no
+            }
+            minerals = @b2_minerals
+            rare_crystals = @b2_rare_cost
+        }
+        cost = {
+            trigger = {
+                has_ringworld_output_boost = yes
+            }
+            minerals = 900
+            rare_crystals = 200
+        }
+        upkeep = {
+            trigger = {
+                has_ringworld_output_boost = no
+            }
+            energy = 2
+            rare_crystals = @b2_rare_upkeep
+        }
+        upkeep = {
+            trigger = {
+                has_ringworld_output_boost = yes
+            }
+            energy = 5
+            rare_crystals = 3
+        }
+    }
+
+    planet_modifier = {
+        # 预留标记
+    }
+
+    triggered_planet_modifier = {
+        # 预留标记
+    }
+
+    prerequisites = {
+        # 预留标记
+    }
+}
+
+# 苹果 #
+building_ba_food_facility = {
+    base_buildtime = @b1_time
+    base_cap_amount = 1
+    category = resource
+
+    building_sets = {
+        farming
+        ba_farming
+    }
+
+    potential = {
+        owner = {
+            has_authority = auth_kivotos
+        }
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b1_minerals
+        }
+        upkeep = {
+            energy = 2
+        }
+    }
+
+    planet_modifier = {
+        # 预留标记
+    }
+
+    upgrades = {
+        building_food_center
+    }
+
+    prerequisites = {
+        # 预留标记
+    }
+}
+
+building_food_center = {
+    base_buildtime = @b2_time
+    can_build = no
+    category = resource
+
+    building_sets = {
+        farming
+        ba_farming
+    }
+
+    potential = {
+        owner = {
+            has_authority = auth_kivotos
+        }
+    }
+    allow = {
+        exists = owner
+        has_upgraded_capital = yes
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            trigger = {
+                has_ringworld_output_boost = no
+            }
+            minerals = @b2_minerals
+            exotic_gases = @b2_rare_cost
+        }
+        cost = {
+            trigger = {
+                has_ringworld_output_boost = yes
+            }
+            minerals = 900
+            exotic_gases = 200
+        }
+        upkeep = {
+            trigger = {
+                has_ringworld_output_boost = no
+            }
+            energy = 2
+            exotic_gases = @b2_rare_upkeep
+        }
+        upkeep = {
+            trigger = {
+                has_ringworld_output_boost = yes
+            }
+            energy = 5
+            exotic_gases = 3
+        }
+    }
+
+    planet_modifier = {
+        # 预留标记
+    }
+
+    triggered_planet_modifier = {
+        # 预留标记
+    }
+
+    prerequisites = {
+        # 预留标记
+    }
+}
+
+# 矿 #
+building_ba_mining_01 = {
+    base_buildtime = @b1_time
+    base_cap_amount = 1
+    category = resource
+
+    building_sets = {
+        mining
+        ba_mining
+    }
+
+    potential = {
+        owner = {
+            has_authority = auth_kivotos
+        }
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 200
+        }
+        upkeep = {
+            energy = 2
+        }
+    }
+
+    planet_modifier = {
+        # 预留标记
+    }
+
+    upgrades = {
+        building_ba_mining_02
+    }
+
+    prerequisites = {
+        # 预留标记
+    }
+}
+
+building_ba_mining_02 = {
+    base_buildtime = @b2_time
+    can_build = no
+    category = resource
+
+    building_sets = {
+        mining
+        ba_mining
+    }
+
+    potential = {
+        owner = {
+            has_authority = auth_kivotos
+        }
+    }
+    allow = {
+        has_upgraded_capital = yes
+        NOT = { has_modifier = resort_colony }
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            trigger = {
+                has_ringworld_output_boost = no
+            }
+            minerals = @b2_minerals
+            volatile_motes = @b2_rare_cost
+        }
+        cost = {
+            trigger = {
+                has_ringworld_output_boost = yes
+            }
+            minerals = 900
+            volatile_motes = 200
+        }
+        upkeep = {
+            trigger = {
+                has_ringworld_output_boost = no
+            }
+            energy = 2
+            volatile_motes = @b2_rare_upkeep
+        }
+        upkeep = {
+            trigger = {
+                has_ringworld_output_boost = yes
+            }
+            energy = 5
+            volatile_motes = 3
+        }
+    }
+
+    planet_modifier = {
+        # 预留标记
+    }
+
+    triggered_planet_modifier = {
+        # 预留标记
+    }
+
+    prerequisites = {
+        # 预留标记
+    }
+}
+
+########## 二产 ##########
+### 制造石冶金厂
+# 合金
+building_BA_keystone_foundry_1 = {
+    base_buildtime = 360
+    position_priority = 154
+    category = manufacturing
+
+    building_sets = {
+        industrial
+        foundry
+        ba_foundry
+    }
+
+    potential = {
+        owner = {
+            has_authority = auth_kivotos
+        }
+    }
+    allow = {
+        has_upgraded_capital = yes
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_authority = auth_kivotos
+            }
+        }
+        modifier = {
+            job_BA_keystone_foundry_add = 200
+        }
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 300
+            alloys = 50
+        }
+        upkeep = {
+            energy = 4
+        }
+    }
+    prerequisites = {
+        "tech_BA_angel24_keystone_to_alloy"
+    }
+    upgrades = {
+        building_BA_keystone_foundry_2
+    }
+}
+### 大型制造石冶金厂
+# 制造石冶金者+4
+building_BA_keystone_foundry_2 = {
+    base_buildtime = 480
+    can_build = no
+    position_priority = 154
+    category = manufacturing
+
+    building_sets = {
+        industrial
+        foundry
+        ba_foundry
+    }
+
+    potential = {
+        owner = {
+            has_authority = auth_kivotos
+        }
+    }
+    allow = {
+        has_major_upgraded_capital = yes
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_authority = auth_kivotos
+            }
+        }
+        modifier = {
+            job_BA_keystone_foundry_add = 400
+        }
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            sr_keystone = 100
+        }
+        upkeep = {
+            energy = 8
+        }
+    }
+    prerequisites = {
+        "tech_BA_angel24_keystone_to_alloy"
+    }
+}
+# 消费品
+building_BA_factory_1 = {
+    base_buildtime = 360
+    position_priority = 154
+    category = manufacturing
+
+    building_sets = {
+        industrial
+        factory
+        ba_factory
+    }
+
+    potential = {
+        owner = {
+            has_authority = auth_kivotos
+        }
+    }
+    allow = {
+        has_upgraded_capital = yes
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_authority = auth_kivotos
+            }
+        }
+        modifier = {
+            # 预留给岗位添加
+        }
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 300
+            alloys = 50
+        }
+        upkeep = {
+            energy = 4【
+        }
+    }
+    prerequisites = {
+       # 预留给科技
+    }
+    upgrades = {
+        building_BA_factory_2
+    }
+}
+building_BA_factory_2 = {
+    base_buildtime = 480
+    position_priority = 154
+    category = manufacturing
+
+    building_sets = {
+        industrial
+        factory
+        ba_factory
+    }
+
+    potential = {
+        owner = {
+            has_authority = auth_kivotos
+        }
+    }
+    allow = {
+        has_upgraded_capital = yes
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_authority = auth_kivotos
+            }
+        }
+        modifier = {
+            # 预留给岗位
+        }
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 300
+            alloys = 50
+        }
+        upkeep = {
+            energy = 4
+        }
+    }
+    prerequisites = {
+        # 预留给科技
+    }
+}
