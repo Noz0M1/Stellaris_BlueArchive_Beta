@@ -1,7 +1,7 @@
 #注：原版基本人口-投入-产出比
 #每人口一产| 电：/-6 矿：/-4 粮/-6
 #每人口二产| 消费品：6矿-6 合金：6矿-3 稀有：5矿-1
-#每人口特产| 凝聚力：2消费品-4 科研点：2消费品-4*3 舒适度：1消费品-10+1凝聚力
+#每人口特产| 凝聚力：2消费品-4 科研点：2消费品-4*3 舒适度：1消费品-10+1凝聚力 贸易：2消费品-16贸易
 ### 原版 以点数记：
 # 一产 劳工24：电--4	矿--6	苹果--4
 # 二产 专家36点：合金--12	消费品--6
@@ -152,7 +152,7 @@ BA_club_members = {
 		default = {
 			icon = BA_club_members
 			condition_string = SPECIALIST_JOB_TRIGGER
-			building_icon = building_augmentation_center
+			building_icon = building_BA_club_room
 		}
 	}
 	possible_pre_triggers = {
@@ -210,9 +210,9 @@ BA_Kivotos_staff = {
 	#building_icon = building_BA_pyroxenes
 	swappable_data = {
 		default = {
-			icon = BA_Kivotos_miner
+			icon = BA_Kivotos_staff
 			condition_string = SPECIALIST_JOB_TRIGGER
-			building_icon = building_holo_theatres
+			building_icon = building_factory_1
 		}
 	}
 	possible_pre_triggers = {
@@ -234,38 +234,39 @@ BA_Kivotos_staff = {
 	resources = {
 		category = BA_staff_pop
 		upkeep = {
-			minerals = 6
+			food = 12
 		}
 		produces = {
-			consumer_goods = 9
-			trade = 3
+			consumer_goods = 4
+			trade = 24
+			unity = 2
 		}
-		upkeep = {
-			trigger = {
-				owner = {
-					has_country_flag = BA_Blue_new_world_2
-				}
-			}
-			minerals = 4
-		}
-		produces = {
-			trigger = {
-				owner = {
-					has_country_flag = BA_Blue_new_world_2
-				}
-			}
-			sr_pyroxenes = 0.5
-			consumer_goods = 3
-		}
-		produces = {
-			trigger = {
-				owner = {
-					has_technology = tech_BA_SI_Abydos_A01
-				}
-			}
-			food = -1
-			energy = 2
-		}
+		# upkeep = {
+		# 	trigger = {
+		# 		owner = {
+		# 			has_country_flag = BA_Blue_new_world_2
+		# 		}
+		# 	}
+		# 	minerals = 4
+		# }
+		# produces = {
+		# 	trigger = {
+		# 		owner = {
+		# 			has_country_flag = BA_Blue_new_world_2
+		# 		}
+		# 	}
+		# 	sr_pyroxenes = 0.5
+		# 	consumer_goods = 3
+		# }
+		# produces = {
+		# 	trigger = {
+		# 		owner = {
+		# 			has_technology = tech_BA_SI_Abydos_A01
+		# 		}
+		# 	}
+		# 	food = -1
+		# 	energy = 2
+		# }
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -273,7 +274,7 @@ BA_Kivotos_staff = {
 				has_tradition = tr_kivotos_newkind_dome
 			}
 		}
-		planet_amenities_add = 200
+		planet_amenities_add = 2
 	}
 	weight = {
 		weight = @specialist_job_weight
@@ -343,7 +344,7 @@ BA_keystone_artisan = {
 				has_tradition = tr_kivotos_newkind_dome
 			}
 		}
-		planet_amenities_add = 200
+		planet_amenities_add = 2
 	}
 	weight = {
 		weight = @specialist_job_weight
@@ -361,7 +362,7 @@ BA_keystone_foundry = {
 		default = {
 			icon = foundry
 			condition_string = SPECIALIST_JOB_TRIGGER
-			building_icon = building_foundry_1
+			building_icon = building_nano_forge
 		}
 	}
 	possible_pre_triggers = {
@@ -477,7 +478,7 @@ BA_scrap_refiner = {
 				is_planet_class = pc_BA_ruined_planet
 			}
 		}
-		planet_amenities_add = -100
+		planet_amenities_add = -1
 	}
 	weight = {
 		weight = @specialist_job_weight
@@ -540,7 +541,7 @@ BA_dont_be_crazy_here = {
 }
 
 ### 采矿团 ###
-#模式一：基础 —— 1合金 5舒适度 -> 15矿 
+#模式一：基础 —— 1合金 5舒适度 -> 15矿
 #模式二：我们的故事 1段 —— 1合金 5舒适度 -> 21矿
 BA_Kivotos_miner = {
 	category = worker
@@ -585,7 +586,7 @@ BA_Kivotos_miner = {
 		}
 	}
 	planet_modifier = {
-		planet_amenities_add = -500
+		planet_amenities_add = -5
 	}
 
 	weight = {
@@ -619,7 +620,7 @@ BA_caterer = {
 			food = 15
 		}
 		upkeep = {
-			consumer_goods = 2
+			influence = 0.05
 		}
 		#混成化增益
 		produces = {
@@ -656,7 +657,7 @@ BA_flexible_workers = {
 		default = {
 			icon = BA_flexible_workers
 			condition_string = WORKER_JOB_TRIGGER
-			building_icon = building_genomic_facility
+			building_icon = building_BA_Schale_office
 		}
 	}
 	is_capped_by_modifier = no
@@ -730,7 +731,7 @@ BA_flexible_workers = {
 ##############################
 #############  统治者  #############
 ### 配给员
-#基础：8矿 -> 12凝聚力 8*3科研点数 
+#基础：8矿 -> 12凝聚力 8*3科研点数
 #混成化增益：2食物 -> 4工程学
 BA_supplier = {
 	category = ruler
@@ -788,7 +789,7 @@ BA_supplier = {
 	}
 }
 
-### 军需员 
+### 军需员
 #基础：8矿 -> 8*3科研点数 12海军容量 5舒适度
 BA_quartermaster = {
 	category = ruler
@@ -823,7 +824,7 @@ BA_quartermaster = {
 		}
 	}
 	planet_modifier = {
-		planet_amenities_add = 500
+		planet_amenities_add = 5
 	}
 	country_modifier = {
 		country_naval_cap_add = 12
@@ -973,7 +974,7 @@ BA_surveyor = {
 		}
 	}
 	planet_modifier = {
-		planet_amenities_add = 500
+		planet_amenities_add = 5
 	}
 	weight = {
 		weight = @specialist_job_weight
@@ -1095,7 +1096,7 @@ BA_student_on_duty = {
 	}
 
 	planet_modifier = {
-		planet_amenities_add = 100
+		planet_amenities_add = 1
 		planet_crime_add = -1
 		planet_defense_armies_add = 1
 	}

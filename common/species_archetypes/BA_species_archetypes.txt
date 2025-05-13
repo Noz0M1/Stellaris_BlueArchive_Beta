@@ -2,4 +2,24 @@
 Schale = {
 	species_trait_points = 4
 	species_max_traits = 8
+	resources = {
+		category = planet_pops
+		# Regular food, mineral and energy upkeep.
+		inline_script = "pop_resources/regular_upkeep"
+		# Resource production from other sources
+		inline_script = "pop_resources/pop_misc_production"
+		produces = {
+			trigger = {
+				exists = planet
+				planet = {
+					is_planet_class = pc_BA_campus_planet
+				}
+				is_enslaved = no
+			}
+			physics_research = 0.2
+			society_research = 0.2
+			engineering_research = 0.2
+		}
+	}
 }
+
