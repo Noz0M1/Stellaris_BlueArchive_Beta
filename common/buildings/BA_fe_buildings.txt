@@ -9,6 +9,12 @@ building_BA_fe_capital = {
 	can_be_disabled = no
 	position_priority = 0
 	category = government
+
+	building_sets = {
+		government
+		ba_government
+	}
+
 	potential = {
 		exists = owner
 		owner = {
@@ -46,6 +52,13 @@ building_BA_fe_data = {
 	position_priority = 150
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		research
+		ba_research
+		ba_feBuilding
+	}
+
 	potential = {
 		exists = owner
 		owner = {
@@ -70,6 +83,13 @@ building_BA_fe_energy = {
 	position_priority = 151
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		generator
+		ba_generator
+		ba_feBuilding
+	}
+
 	potential = {
 		exists = owner
 		owner = {
@@ -92,6 +112,13 @@ building_BA_fe_food = {
 	position_priority = 152
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		farming
+		ba_farming
+		ba_feBuilding
+	}
+
 	potential = {
 		exists = owner
 		owner = {
@@ -115,6 +142,14 @@ building_BA_fe_alloy = {
 	position_priority = 153
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		foundry
+		industrial
+		ba_feBuilding
+		ba_foundry
+	}
+
 	potential = {
 		exists = owner
 		owner = {
@@ -135,6 +170,15 @@ building_BA_fe_pyroxenes = {
 	position_priority = 154
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		industrial
+		factory
+		foundry
+		ba_feBuilding
+		ba_specialFactory
+	}
+
 	potential = {
 		exists = owner
 		owner = {
@@ -155,6 +199,15 @@ building_BA_fe_keystone = {
 	position_priority = 155
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		industrial
+		factory
+		foundry
+		ba_feBuilding
+		ba_specialFactory
+	}
+
 	potential = {
 		exists = owner
 		owner = {
@@ -174,6 +227,15 @@ building_BA_fe_dome = {
 	position_priority = 156
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		government
+		urban
+		entertainment
+		ba_feBuilding
+		ba_urban
+	}
+
 	potential = {
 		exists = owner
 		owner = {
@@ -197,6 +259,13 @@ building_BA_fe_data_SI = {
 	position_priority = 150
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		research
+		ba_research
+		ba_feBuilding
+	}
+
 	potential = {
 		owner = {
 			has_country_flag = BA_SI_Millennium_building_1
@@ -225,6 +294,13 @@ building_BA_fe_energy_SI = {
 	position_priority = 151
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		generator
+		ba_generator
+		ba_feBuilding
+	}
+
 	potential = {
 		owner = {
 			has_country_flag = BA_SI_Millennium_building_2
@@ -248,6 +324,13 @@ building_BA_fe_food_SI = {
 	position_priority = 152
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		farming
+		ba_farming
+		ba_feBuilding
+	}
+
 	potential = {
 		owner = {
 			has_country_flag = BA_SI_Millennium_building_3
@@ -275,6 +358,14 @@ building_BA_fe_alloy_SI = {
 	position_priority = 153
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		foundry
+		industrial
+		ba_feBuilding
+		ba_foundry
+	}
+
 	potential = {
 		owner = {
 			has_country_flag = BA_SI_Millennium_building_4
@@ -302,6 +393,15 @@ building_BA_fe_pyroxenes_SI = {
 	position_priority = 154
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		industrial
+		factory
+		foundry
+		ba_feBuilding
+		ba_specialFactory
+	}
+
 	potential = {
 		owner = {
 			has_country_flag = BA_SI_Millennium_building_5
@@ -322,6 +422,15 @@ building_BA_fe_keystone_SI = {
 	position_priority = 155
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		industrial
+		factory
+		foundry
+		ba_feBuilding
+		ba_specialFactory
+	}
+
 	potential = {
 		owner = {
 			has_country_flag = BA_SI_Millennium_building_6
@@ -345,6 +454,15 @@ building_BA_fe_dome_SI = {
 	position_priority = 156
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		government
+		urban
+		entertainment
+		ba_feBuilding
+		ba_urban
+	}
+
 	potential = {
 		owner = {
 			has_country_flag = BA_SI_Millennium_building_7

@@ -2,6 +2,12 @@
 building_BA_ringworld_room = {
     base_buildtime = 360
     category = government
+
+    building_sets = {
+        government
+        ba_government
+    }
+
     position_priority = 1
     potential = {
         owner = {
@@ -17,7 +23,7 @@ building_BA_ringworld_room = {
             }
         }
         modifier = {
-            job_BA_ringworld_worker_add = 10
+            job_BA_ringworld_worker_add = 1000
         }
     }
     resources = {
@@ -41,6 +47,14 @@ building_BA_ringworld_refinery_A = {
     position_priority = 153
     base_buildtime = 360
     category = government
+
+    building_sets = {
+        industrial
+        factory
+        foundry
+        ba_specialFactory
+    }
+
     base_cap_amount = 1
     potential = {
         owner = {
@@ -66,7 +80,7 @@ building_BA_ringworld_refinery_A = {
             exists = owner
         }
         modifier = {
-            job_BA_ringworld_worker_add = 2
+            job_BA_ringworld_worker_add = 200
         }
     }
     resources = {
@@ -92,6 +106,14 @@ building_BA_ringworld_refinery_B = {
     position_priority = 153
     base_buildtime = 360
     category = government
+
+    building_sets = {
+        industrial
+        factory
+        foundry
+        ba_specialFactory
+    }
+
     base_cap_amount = 1
     potential = {
         owner = {
@@ -117,7 +139,7 @@ building_BA_ringworld_refinery_B = {
             exists = owner
         }
         modifier = {
-            job_BA_ringworld_worker_add = 2
+            job_BA_ringworld_worker_add = 200
         }
     }
     resources = {
@@ -144,6 +166,16 @@ building_BA_ringworld_factory_A = {
     position_priority = 153
     base_buildtime = 360
     category = government
+
+    building_sets = {
+        industrial
+        factory
+        foundry
+        ba_factory
+        fortress
+        ba_fortress
+    }
+
     base_cap_amount = 1
     potential = {
         owner = {
@@ -169,7 +201,7 @@ building_BA_ringworld_factory_A = {
             exists = owner
         }
         modifier = {
-            job_BA_ringworld_worker_add = 2
+            job_BA_ringworld_worker_add = 200
         }
     }
     resources = {
@@ -195,6 +227,14 @@ building_BA_ringworld_factory_B = {
     position_priority = 153
     base_buildtime = 360
     category = government
+
+    building_sets = {
+        industrial
+        factory
+        foundry
+        ba_factory
+    }
+
     base_cap_amount = 1
     potential = {
         owner = {
@@ -220,7 +260,7 @@ building_BA_ringworld_factory_B = {
             exists = owner
         }
         modifier = {
-            job_BA_ringworld_worker_add = 2
+            job_BA_ringworld_worker_add = 200
         }
     }
     resources = {
@@ -247,6 +287,14 @@ building_BA_ringworld_matrix_A = {
     position_priority = 153
     base_buildtime = 360
     category = government
+
+    building_sets = {
+        government
+        ba_government
+        research
+        ba_research
+    }
+
     base_cap_amount = 1
     potential = {
         owner = {
@@ -272,7 +320,7 @@ building_BA_ringworld_matrix_A = {
             exists = owner
         }
         modifier = {
-            job_BA_ringworld_worker_add = 2
+            job_BA_ringworld_worker_add = 200
         }
     }
     resources = {
@@ -300,6 +348,14 @@ building_BA_ringworld_matrix_B = {
     position_priority = 153
     base_buildtime = 360
     category = government
+
+    building_sets = {
+        government
+        ba_government
+        unity
+        ba_unity
+    }
+
     base_cap_amount = 1
     potential = {
         owner = {
@@ -325,7 +381,7 @@ building_BA_ringworld_matrix_B = {
             exists = owner
         }
         modifier = {
-            job_BA_ringworld_worker_add = 2
+            job_BA_ringworld_worker_add = 200
         }
     }
     resources = {

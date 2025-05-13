@@ -6,6 +6,13 @@ building_BA_starlink_1 = {
 	base_buildtime = 360
 	category = pop_assembly
 	base_cap_amount = 1
+
+	building_sets = {
+		government
+		urban
+		ba_pop_assembly
+	}
+
 	potential = {
 		exists = owner
 		NOT = {
@@ -23,11 +30,14 @@ building_BA_starlink_1 = {
 				has_authority = auth_kivotos
 			}
 		}
-		planet_pop_assembly_organic_mult = 0.12
+		# planet_pop_assembly_organic_mult = 0.12
 		planet_pop_assembly_mult = 0.12
+
+		# 	数值待定
+		logistic_growth_mult = 0.12
 	}
 	planet_modifier = {
-		job_roboticist_add = 1
+		job_roboticist_add = 100
 	}
 	resources = {
 		category = planet_buildings
@@ -50,6 +60,13 @@ building_BA_starlink_2 = {
 	can_build = no
 	base_buildtime = 360
 	category = pop_assembly
+
+	building_sets = {
+		government
+		urban
+		ba_pop_assembly
+	}
+
 	potential = {
 		exists = owner
 		owner = {
@@ -66,11 +83,13 @@ building_BA_starlink_2 = {
 				has_authority = auth_kivotos
 			}
 		}
-		planet_pop_assembly_organic_mult = 0.25
+		# planet_pop_assembly_organic_mult = 0.25
 		planet_pop_assembly_mult = 0.25
+
+		logistic_growth_mult = 0.25
 	}
 	planet_modifier = {
-		job_roboticist_add = 3
+		job_roboticist_add = 300
 	}
 	resources = {
 		category = planet_buildings
@@ -85,88 +104,8 @@ building_BA_starlink_2 = {
 }
 
 #############   基础生产   #############
-### 制造石冶金厂
-# 制造石冶金者+2 
-building_BA_keystone_foundry_1 = {
-	base_buildtime = 360
-	position_priority = 154
-	category = manufacturing
-	potential = {
-		owner = {
-			has_authority = auth_kivotos
-		}
-	}
-	allow = {
-		has_upgraded_capital = yes
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
-		modifier = {
-			job_BA_keystone_foundry_add = 2
-		}
-	}
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = 300
-			alloys = 50
-		}
-		upkeep = {
-			energy = 4
-		}
-	}
-	prerequisites = {
-		"tech_BA_angel24_keystone_to_alloy"
-	}
-	upgrades = {
-		building_BA_keystone_foundry_2
-	}
-}
 
-### 大型制造石冶金厂
-# 制造石冶金者+4
-building_BA_keystone_foundry_2 = {
-	base_buildtime = 480
-	can_build = no
-	position_priority = 154
-	category = manufacturing
-	potential = {
-		owner = {
-			has_authority = auth_kivotos
-		}
-	}
-	allow = {
-		has_major_upgraded_capital = yes
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
-		modifier = {
-			job_BA_keystone_foundry_add = 4
-		}
-	}
-	resources = {
-		category = planet_buildings
-		cost = {
-			sr_keystone = 100
-		}
-		upkeep = {
-			energy = 8
-		}
-	}
-	prerequisites = {
-		"tech_BA_angel24_keystone_to_alloy"
-	}
-}
+
 
 #############   特殊资源   #############
 ######   青辉石   ######
@@ -176,6 +115,14 @@ building_BA_pyroxenes_1 = {
 	position_priority = 200
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		industrial
+		factory
+		foundry
+		ba_specialFactory
+	}
+
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -192,7 +139,7 @@ building_BA_pyroxenes_1 = {
 			}
 		}
 		modifier = {
-			job_BA_pyroxenes_maker_add = 1
+			job_BA_pyroxenes_maker_add = 100
 		}
 	}
 	resources = {
@@ -220,6 +167,14 @@ building_BA_pyroxenes_2 = {
 	base_buildtime = 480
 	can_build = no
 	category = manufacturing
+
+	building_sets = {
+		industrial
+		factory
+		foundry
+		ba_specialFactory
+	}
+
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -236,7 +191,7 @@ building_BA_pyroxenes_2 = {
 			}
 		}
 		modifier = {
-			job_BA_pyroxenes_maker_add = 3
+			job_BA_pyroxenes_maker_add = 300
 		}
 	}
 	resources = {
@@ -262,6 +217,14 @@ building_BA_keystone_1 = {
 	position_priority = 202
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		industrial
+		factory
+		foundry
+		ba_specialFactory
+	}
+
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -318,6 +281,14 @@ building_BA_keystone_2 = {
 	base_buildtime = 480
 	can_build = no
 	category = manufacturing
+
+	building_sets = {
+		industrial
+		factory
+		foundry
+		ba_specialFactory
+	}
+
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -334,7 +305,7 @@ building_BA_keystone_2 = {
 			}
 		}
 		modifier = {
-			job_BA_keystone_maintenance_staff_add = 1
+			job_BA_keystone_maintenance_staff_add = 100
 		}
 	}
 	resources = {
@@ -369,13 +340,20 @@ building_BA_keystone_2 = {
 		"tech_BA_keystone_automatic_crafting"
 	}
 }
-
 ######   暗物质   ######
 #暗物质浓缩机 无岗位 20电10青辉石 -> 5暗物质
 building_BA_dark_matter_concentrator_1 = {
 	position_priority = 300
 	base_buildtime = 480
 	category = manufacturing
+
+	building_sets = {
+		industrial
+		factory
+		foundry
+		ba_specialFactory
+	}
+
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -419,6 +397,14 @@ building_BA_rare_center_1 = {
 	position_priority = 302
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		industrial
+		factory
+		foundry
+		ba_specialFactory
+	}
+
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -465,6 +451,14 @@ building_BA_mixed_ruins_lab = {
 	can_be_disabled = no
 	can_demolish = no
 	can_be_ruined = no
+
+	building_sets = {
+		government
+		research
+		physics
+		ba_special
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -483,7 +477,7 @@ building_BA_mixed_ruins_lab = {
 		potential = {
 			is_planet_class = pc_BA_campus_planet
 		}
-		job_BA_club_members_add = 4
+		job_BA_club_members_add = 400
 	}
 	destroy_trigger = {
 		planet = {
@@ -501,6 +495,12 @@ building_BA_fade_Sanctum_center = {
 	can_be_disabled = no
 	position_priority = 0
 	category = government
+
+	building_sets = {
+		government
+		ba_special
+	}
+
 	potential = {
 		always = no
 	}
@@ -520,6 +520,14 @@ building_BA_SI_Millennium_G10 = {
 	position_priority = 148
 	base_buildtime = 360
 	category = manufacturing
+
+	building_sets = {
+		government
+		research
+		physics
+		ba_special
+	}
+
 	base_cap_amount = 1
 	potential = {
 		owner = {
@@ -537,7 +545,7 @@ building_BA_SI_Millennium_G10 = {
 			}
 		}
 		modifier = {
-			job_BA_student_delegate_add = 3
+			job_BA_student_delegate_add = 300
 		}
 	}
 	resources = {
