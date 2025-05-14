@@ -1,0 +1,2531 @@
+### G
+tech_BA_SPW_HOSHINO_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_HOSHINO_WEAPON
+	area = physics
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_G
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = HOSHINO_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_HARUKA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_HARUKA_WEAPON
+	area = society
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_G
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = HARUKA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_JURI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_JURI_WEAPON
+	area = society
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_G
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = JURI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_SUMIRE_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_SUMIRE_WEAPON
+	area = engineering
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_G
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = SUMIRE_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_EIMI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_EIMI_WEAPON
+	area = engineering
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_G
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = EIMI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_TSURUGI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_TSURUGI_WEAPON
+	area = society
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_G
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = TSURUGI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_MINE_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_MINE_WEAPON
+	area = society
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_G
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = MINE_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_SHIZUKO_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_SHIZUKO_WEAPON
+	area = physics
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_G
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = SHIZUKO_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_MICHIRU_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_MICHIRU_WEAPON
+	area = physics
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_G
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = MICHIRU_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_REISA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_REISA_WEAPON
+	area = society
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_G
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = REISA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_SENA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_SENA_WEAPON
+	area = society
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_G
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = SENA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_MIKU_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_MIKU_WEAPON
+	area = society
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_G
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = MIKU_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_YUZU_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_YUZU_WEAPON
+	area = engineering
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_G
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = YUZU_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_SHIGURE_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_SHIGURE_WEAPON
+	area = physics
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_G
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = SHIGURE_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_CHISE_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_CHISE_WEAPON
+	area = physics
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_G
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = CHISE_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_MISAKI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_MISAKI_WEAPON
+	area = engineering
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_G
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = MISAKI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+### L
+tech_BA_SPW_NONOMI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_NONOMI_WEAPON
+	area = physics
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = NONOMI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_HINA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_HINA_WEAPON
+	area = society
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = HINA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_MUTSUKI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_MUTSUKI_WEAPON
+	area = society
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = MUTSUKI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_IZUMI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_IZUMI_WEAPON
+	area = society
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = IZUMI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_MAKI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_MAKI_WEAPON
+	area = engineering
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = MAKI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_KOYUKI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_KOYUKI_WEAPON
+	area = engineering
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = KOYUKI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_KOTORI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_KOTORI_WEAPON
+	area = engineering
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = KOTORI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_KAZUSA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_KAZUSA_WEAPON
+	area = society
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = KAZUSA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_PINA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_PINA_WEAPON
+	area = physics
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = PINA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_SAKI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_SAKI_WEAPON
+	area = physics
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = SAKI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_IORI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_IORI_WEAPON
+	area = society
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = IORI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_ARU_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_ARU_WEAPON
+	area = society
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = ARU_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_HARUNA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_HARUNA_WEAPON
+	area = society
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = HARUNA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_MIDORI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_MIDORI_WEAPON
+	area = engineering
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = MIDORI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_HASUMI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_HASUMI_WEAPON
+	area = society
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = HASUMI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_KOHARU_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_KOHARU_WEAPON
+	area = society
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = KOHARU_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_UI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_UI_WEAPON
+	area = society
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = UI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_SHUN_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_SHUN_WEAPON
+	area = engineering
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = SHUN_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_TOMOE_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_TOMOE_WEAPON
+	area = physics
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = TOMOE_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_WAKAMO_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_WAKAMO_WEAPON
+	area = physics
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = WAKAMO_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_FUBUKI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_FUBUKI_WEAPON
+	area = physics
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = FUBUKI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_MIYU_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_MIYU_WEAPON
+	area = physics
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_L
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = MIYU_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+### M
+tech_BA_SPW_SHIROKO_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_SHIROKO_WEAPON
+	area = physics
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = SHIROKO_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_SERIKA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_SERIKA_WEAPON
+	area = physics
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = SERIKA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_JUNKO_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_JUNKO_WEAPON
+	area = society
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = JUNKO_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_AKARI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_AKARI_WEAPON
+	area = society
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = AKARI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_MOMOI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_MOMOI_WEAPON
+	area = engineering
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = MOMOI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_ASUNA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_ASUNA_WEAPON
+	area = engineering
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = ASUNA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_HARE_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_HARE_WEAPON
+	area = engineering
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = HARE_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_CHIHIRO_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_CHIHIRO_WEAPON
+	area = engineering
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = CHIHIRO_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_TOKI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_TOKI_WEAPON
+	area = engineering
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = TOKI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_YOSHIMI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_YOSHIMI_WEAPON
+	area = society
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = YOSHIMI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_SUZUMI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_SUZUMI_WEAPON
+	area = society
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = SUZUMI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_HANAE_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_HANAE_WEAPON
+	area = society
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = HANAE_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_HIFUMI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_HIFUMI_WEAPON
+	area = society
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = HIFUMI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_AZUSA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_AZUSA_WEAPON
+	area = society
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = AZUSA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_HANAKO_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_HANAKO_WEAPON
+	area = society
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = HANAKO_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_SERINA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_SERINA_WEAPON
+	area = society
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = SERINA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_SHIMIKO_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_SHIMIKO_WEAPON
+	area = society
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = SHIMIKO_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_SAKURAKO_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_SAKURAKO_WEAPON
+	area = society
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = SAKURAKO_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_KOKONA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_KOKONA_WEAPON
+	area = engineering
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = KOKONA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_KAHO_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_KAHO_WEAPON
+	area = physics
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = KAHO_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_SAORI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_SAORI_WEAPON
+	area = engineering
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = SAORI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_MINORI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_MINORI_WEAPON
+	area = physics
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_M
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = MINORI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+### P
+tech_BA_SPW_FUUKA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_FUUKA_WEAPON
+	area = society
+	cost = @tier2cost3
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_P
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = FUUKA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_YUUKA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_YUUKA_WEAPON
+	area = engineering
+	cost = @tier2cost3
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_P
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = YUUKA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_NERU_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_NERU_WEAPON
+	area = engineering
+	cost = @tier2cost3
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_P
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = NERU_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_UTAHA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_UTAHA_WEAPON
+	area = engineering
+	cost = @tier2cost3
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_P
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = UTAHA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_AIRI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_AIRI_WEAPON
+	area = society
+	cost = @tier2cost3
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_P
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = AIRI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_NATSU_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_NATSU_WEAPON
+	area = society
+	cost = @tier2cost3
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_P
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = NATSU_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_MIKA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_MIKA_WEAPON
+	area = society
+	cost = @tier2cost3
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_P
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = MIKA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_TSUBAKI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_TSUBAKI_WEAPON
+	area = physics
+	cost = @tier2cost3
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_P
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = TSUBAKI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_IZUNA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_IZUNA_WEAPON
+	area = physics
+	cost = @tier2cost3
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_P
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = IZUNA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_TSUKUYO_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_TSUKUYO_WEAPON
+	area = physics
+	cost = @tier2cost3
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_P
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = TSUKUYO_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_NODOKA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_NODOKA_WEAPON
+	area = physics
+	cost = @tier2cost3
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_P
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = NODOKA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_MARINA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_MARINA_WEAPON
+	area = physics
+	cost = @tier2cost3
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_P
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = MARINA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_MIYAKO_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_MIYAKO_WEAPON
+	area = physics
+	cost = @tier2cost3
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_P
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = MIYAKO_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_ATSUKO_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_ATSUKO_WEAPON
+	area = engineering
+	cost = @tier2cost3
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_P
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = ATSUKO_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_RUMI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_RUMI_WEAPON
+	area = engineering
+	cost = @tier2cost3
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_P
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = RUMI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+### S
+tech_BA_SPW_AYANE_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_AYANE_WEAPON
+	area = physics
+	cost = @tier2cost1
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_S
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = AYANE_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_CHINATSU_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_CHINATSU_WEAPON
+	area = society
+	cost = @tier2cost1
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_S
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = CHINATSU_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_KAYOKO_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_KAYOKO_WEAPON
+	area = society
+	cost = @tier2cost1
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_S
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = KAYOKO_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_AKO_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_AKO_WEAPON
+	area = society
+	cost = @tier2cost1
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_S
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = AKO_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_IROHA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_IROHA_WEAPON
+	area = society
+	cost = @tier2cost1
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_S
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = IROHA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_KOTAMA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_KOTAMA_WEAPON
+	area = engineering
+	cost = @tier2cost1
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_S
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = KOTAMA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_AKANE_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_AKANE_WEAPON
+	area = engineering
+	cost = @tier2cost1
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_S
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = AKANE_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_NOA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_NOA_WEAPON
+	area = engineering
+	cost = @tier2cost1
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_S
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = NOA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_HIMARI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_HIMARI_WEAPON
+	area = engineering
+	cost = @tier2cost1
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_S
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = HIMARI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_MARI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_MARI_WEAPON
+	area = society
+	cost = @tier2cost1
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_S
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = MARI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_HINATA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_HINATA_WEAPON
+	area = society
+	cost = @tier2cost1
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_S
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = HINATA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_NAGISA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_NAGISA_WEAPON
+	area = society
+	cost = @tier2cost1
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_S
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = NAGISA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_MIMORI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_MIMORI_WEAPON
+	area = physics
+	cost = @tier2cost1
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_S
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = MIMORI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_KAEDE_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_KAEDE_WEAPON
+	area = physics
+	cost = @tier2cost1
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_S
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = KAEDE_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_SAYA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_SAYA_WEAPON
+	area = engineering
+	cost = @tier2cost1
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_S
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = SAYA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_CHERINO_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_CHERINO_WEAPON
+	area = physics
+	cost = @tier2cost1
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_S
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = CHERINO_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_KIRINO_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_KIRINO_WEAPON
+	area = physics
+	cost = @tier2cost1
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_S
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = KIRINO_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_KANNA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_KANNA_WEAPON
+	area = physics
+	cost = @tier2cost1
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_S
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = KANNA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_MOE_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_MOE_WEAPON
+	area = physics
+	cost = @tier2cost1
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_S
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = MOE_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_MINA_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_MINA_WEAPON
+	area = engineering
+	cost = @tier2cost1
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_S
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = MINA_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+### X
+tech_BA_SPW_KARIN_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_KARIN_WEAPON
+	area = engineering
+	cost = @tier4cost3
+	category = {
+		school_tech
+	}
+	tier = 4
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_X
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = KARIN_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_MASHIRO_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_MASHIRO_WEAPON
+	area = society
+	cost = @tier4cost3
+	category = {
+		school_tech
+	}
+	tier = 4
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_X
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = MASHIRO_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_HIYORI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_HIYORI_WEAPON
+	area = engineering
+	cost = @tier4cost3
+	category = {
+		school_tech
+	}
+	tier = 4
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_X
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = HIYORI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_HIBIKI_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_HIBIKI_WEAPON
+	area = engineering
+	cost = @tier4cost3
+	category = {
+		school_tech
+	}
+	tier = 4
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_X
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = HIBIKI_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+tech_BA_SPW_MEGU_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_MEGU_WEAPON
+	area = society
+	cost = @tier4cost3
+	category = {
+		school_tech
+	}
+	tier = 4
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_X
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = MEGU_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
+
+### T
+tech_BA_SPW_ARIS_WEAPON = {
+	icon = gfx/interface/icons/technologies/Special_weapon/tech_BA_SPW_ARIS_WEAPON
+	area = engineering
+	cost = @tier4cost3
+	category = {
+		school_tech
+	}
+	tier = 4
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Base_T
+	}
+	prereqfor_desc = {
+		custom = {
+			title = tech_BA_SPW_WEAPON_desc
+			desc = ARIS_WEAPON_DESC
+		}
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = 0
+}
