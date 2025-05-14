@@ -4,11 +4,11 @@
 #通用
 zone_BA_support = {
 	icon = GFX_resource_trade_large
-	base_buildtime = 360
+	base_buildtime = 180
 	potential = {
 		exists = owner
 		owner = {
-			is_wilderness_empire = no
+			has_authority = auth_kivotos
 		}
 	}
 	unlock = {
@@ -16,17 +16,14 @@ zone_BA_support = {
 	resources = {
 		category = planet_zones
 		cost = {
-			minerals = 500
-			energy = 500
+			minerals = 200
+			energy = 200
 		}
 	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 		}
-		job_BA_dont_be_crazy_here_add = 50
-		job_BA_Kivotos_miner_add = 50
-		job_BA_caterer_add = 50
 	}
 	included_building_sets = {
 		industrial
@@ -154,8 +151,16 @@ zone_BA_grand_suburbs = {
         job_BA_caterer_add = 50
 	}
 	included_building_sets = {
+		generator
+		ba_generator
+		fallen_empire_generator
 		mining
+		ba_mining
 		fallen_empire_mining
+		farming
+		ba_farming
+		hydroponics
+		fallen_empire_farming
 		automation
 	}
 	planet_modifier = {
@@ -191,6 +196,7 @@ zone_BA_energy_suburbs = {
 	}
 	included_building_sets = {
 		generator
+		ba_generator
 		fallen_empire_generator
 		automation
 	}
@@ -227,6 +233,7 @@ zone_BA_mineral_suburbs = {
 	}
 	included_building_sets = {
 		mining
+		ba_mining
 		fallen_empire_mining
 		automation
 	}
@@ -263,6 +270,7 @@ zone_BA_food_suburbs = {
 	}
 	included_building_sets = {
 		farming
+		ba_farming
 		hydroponics
 		fallen_empire_farming
 		automation
