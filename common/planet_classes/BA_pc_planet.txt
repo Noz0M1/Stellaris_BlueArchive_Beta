@@ -10,6 +10,7 @@ pc_BA_campus_planet = {
 	atmosphere_width = 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
 	modifier = {
+		pop_happiness = 0.05
 	}
 	min_distance_from_sun = @habitable_min_distance
 	max_distance_from_sun = @habitable_max_distance

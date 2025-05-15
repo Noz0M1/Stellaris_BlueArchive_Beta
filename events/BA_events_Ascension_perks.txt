@@ -569,7 +569,7 @@ country_event = {
 				change_species_characteristics = {
 					remove_trait = trait_halo_unreleased
 					add_trait = trait_halo_awakened
-					add_traits_at_start_of_list = yes
+					#add_traits_at_start_of_list = yes
 				}
 				save_event_target_as = BA_awakened_species
 			}
@@ -639,7 +639,7 @@ country_event = {
 				change_species_characteristics = {
 					remove_trait = trait_halo_awakened
 					add_trait = trait_halo_full_awakened
-					add_traits_at_start_of_list = yes
+					#add_traits_at_start_of_list = yes
 				}
 				save_event_target_as = BA_awakened_species
 			}
@@ -832,7 +832,7 @@ country_event = {
 		#开启循环委托2
 		#激活一个项目
 		set_variable = {
-			which = BA_tradition_count
+			which = BA_Kivotos_chronicle_count
 			value = 1
 		}
 		country_event = {
@@ -853,7 +853,7 @@ country_event = {
 		if = {
 			limit = {
 				check_variable = {
-					which = BA_tradition_count
+					which = BA_Kivotos_chronicle_count
 					value = 1
 				}
 				NOT = {
@@ -864,10 +864,10 @@ country_event = {
 				name = BA_Another_route
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				check_variable = {
-					which = BA_tradition_count
+					which = BA_Kivotos_chronicle_count
 					value = 2
 				}
 				NOT = {
@@ -878,10 +878,10 @@ country_event = {
 				name = BA_Flowers
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				check_variable = {
-					which = BA_tradition_count
+					which = BA_Kivotos_chronicle_count
 					value = 3
 				}
 				NOT = {
@@ -892,10 +892,10 @@ country_event = {
 				name = BA_In_flame
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				check_variable = {
-					which = BA_tradition_count
+					which = BA_Kivotos_chronicle_count
 					value = 4
 				}
 				NOT = {
@@ -906,10 +906,10 @@ country_event = {
 				name = BA_Things_cannot_give_up
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				check_variable = {
-					which = BA_tradition_count
+					which = BA_Kivotos_chronicle_count
 					value = 5
 				}
 				NOT = {
@@ -920,10 +920,10 @@ country_event = {
 				name = BA_Hoshizora
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				check_variable = {
-					which = BA_tradition_count
+					which = BA_Kivotos_chronicle_count
 					value = 6
 				}
 				NOT = {
@@ -943,17 +943,10 @@ country_event = {
 	title = "BA_ape.2003.name"
 	desc = "BA_ape.2003.desc"
 	is_triggered_only = yes
-	#fire_only_once = yes
 	picture = GFX_BA_chronicle_1
-	# trigger = {
-	# 	check_variable = {
-	# 		which = BA_tradition_count
-	# 		value = 1
-	# 	}
-	# }
 	option = {
 		name = BA_ape.2003.next
-		custom_tooltip = BA_ape.2003.tip
+		custom_tooltip = BA_Kivotos_chronicle_effect_stage1
 	}
 }
 
@@ -962,17 +955,11 @@ country_event = {
 	title = "BA_ape.2004.name"
 	desc = "BA_ape.2004.desc"
 	is_triggered_only = yes
-	#fire_only_once = yes
+	
 	picture = GFX_BA_chronicle_2
-	# trigger = {
-	# 	check_variable = {
-	# 		which = BA_tradition_count
-	# 		value = 2
-	# 	}
-	# }
 	option = {
 		name = BA_ape.2004.next
-		custom_tooltip = BA_ape.2004.tip
+		custom_tooltip = BA_Kivotos_chronicle_effect_stage2
 		# hidden_effect = {
 		# 	add_modifier = {
 		# 		modifier = modifier_Blue_world_2
@@ -986,17 +973,10 @@ country_event = {
 	title = "BA_ape.2005.name"
 	desc = "BA_ape.2005.desc"
 	is_triggered_only = yes
-	#fire_only_once = yes
 	picture = GFX_BA_chronicle_3
-	# trigger = {
-	# 	check_variable = {
-	# 		which = BA_tradition_count
-	# 		value = 3
-	# 	}
-	# }
 	option = {
 		name = BA_ape.2005.next
-		custom_tooltip = BA_ape.2005.tip
+		custom_tooltip = BA_Kivotos_chronicle_effect_stage3
 	}
 }
 
@@ -1005,17 +985,10 @@ country_event = {
 	title = "BA_ape.2006.name"
 	desc = "BA_ape.2006.desc"
 	is_triggered_only = yes
-	#fire_only_once = yes
 	picture = GFX_BA_chronicle_4
-	# trigger = {
-	# 	check_variable = {
-	# 		which = BA_tradition_count
-	# 		value = 4
-	# 	}
-	# }
 	option = {
 		name = BA_ape.2006.next
-		custom_tooltip = BA_ape.2006.tip
+		custom_tooltip = BA_Kivotos_chronicle_effect_stage4
 	}
 }
 
@@ -1024,17 +997,10 @@ country_event = {
 	title = "BA_ape.2007.name"
 	desc = "BA_ape.2007.desc"
 	is_triggered_only = yes
-	#fire_only_once = yes
 	picture = GFX_BA_chronicle_5
-	# trigger = {
-	# 	check_variable = {
-	# 		which = BA_tradition_count
-	# 		value = 5
-	# 	}
-	# }
 	option = {
 		name = BA_ape.2007.next
-		custom_tooltip = BA_ape.2007.tip
+		custom_tooltip = BA_Kivotos_chronicle_effect_stage5
 	}
 }
 
@@ -1043,17 +1009,10 @@ country_event = {
 	title = "BA_ape.2008.name"
 	desc = "BA_ape.2008.desc"
 	is_triggered_only = yes
-	#fire_only_once = yes
 	picture = GFX_BA_chronicle_6
-	# trigger = {
-	# 	check_variable = {
-	# 		which = BA_tradition_count
-	# 		value = 6
-	# 	}
-	# }
 	option = {
 		name = BA_ape.2008.next
-		custom_tooltip = BA_ape.2008.tip
+		custom_tooltip = BA_Kivotos_chronicle_effect_stage6
 		hidden_effect = {
 			add_modifier = {
 				modifier = modifier_Blue_world_6
@@ -1066,7 +1025,6 @@ country_event = {
 country_event = {
 	id = BA_ape.2009
 	is_triggered_only = yes
-	#fire_only_once = yes
 	title = "BA_ape.2009.name"
 	desc = "BA_ape.2009.desc"
 	picture = GFX_BA_Kivotos_highway
@@ -1091,11 +1049,11 @@ country_event = {
 	title = "BA_ape.2010.name"
 	desc = "BA_ape.2010.desc"
 	is_triggered_only = yes
-	#fire_only_once = yes
+	
 	picture = GFX_BA_chronicle_8
 	option = {
 		name = BA_ape.2010.next
-		custom_tooltip = BA_ape.2010.tip
+		custom_tooltip = BA_Kivotos_chronicle_effect_stage7
 		end_event_chain = BA_Kivotos_chronicle_chain
 	}
 }

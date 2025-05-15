@@ -118,16 +118,30 @@
  BA_ape.2008.desc:0 "新的联邦学生会长，新的秩序，新的科技，新的飞船，新的建筑物。新的星球，新的朋友。新的基沃托斯。"
  BA_ape.2008.next:0 "我们的家园，在这碧蓝色的新世界中。"
  BA_ape.2009.name:0 "编年史：我们的故事"
- BA_ape.2009.desc:0 "我们将走向何方由自己来决定，我们当然不会让这个故事结束在这里，我们还要继续讲下去。"
+ BA_ape.2009.desc:0 "我们将走向何方由自己来决定，我们的智慧和勇气烙印在我们足迹所及的每一处。"
  BA_ape.2009.next:0 "这就是我们用双手亲自写下的，§B我们的故事§!。"
  BA_ape.2010.name:0 "编年史：尾声"
  BA_ape.2010.desc:0 "历史的尾声，正是留下新的历史的当下。崭新的基沃托斯屹立在星河之中。"
  BA_ape.2010.next:0 "致那些年幼的神明们。"
 
- BA_ape.2003.tip:0 "城郊区区划提供的§G£job£岗位§!会得到产出提升，同时提供产出£rare_crystals£ £volatile_motes£ £exotic_gases£稀有资源的§G£job£岗位§!"
- BA_ape.2004.tip:0 "自治区区划将提供更多§G£job£岗位§!，并且这些岗位会得到产出提升，同时开始产出£sr_pyroxenes£§Y青辉石§!"
- BA_ape.2005.tip:0 "军工厂区划将提供更多§G£job£岗位§!，并且这些岗位在库存充足的前提下会额外消耗£sr_keystone£§Y制造石§!以提升产出。"
- BA_ape.2006.tip:0 "学园都市星球上的区划将提供更多£housing£住房，并立即解锁学园都市星球的所有§Y建筑槽位§!。"
- BA_ape.2007.tip:0 "学园区划§Y不再减少星球稳定度§!，并且提供更多§G£job£岗位§!。"
- BA_ape.2008.tip:0 "舰船、恒星基地、巨构建筑的建造和升级速度§G+50%§!。"
- BA_ape.2010.tip:0 "学园都市星球上的每个§H区划§!将使该星球上的£job£岗位产出的资源§G+2.5%§!，§H宿舍区划§!具有双倍效果。"
+ # BA_Kivotos_chronicle_effect_stage1:0 "£district£自治区区划提供的§G£job£岗位§!会得到产出提升，同时开始产出£sr_pyroxenes£§Y青辉石§!"
+ BA_Kivotos_chronicle_effect_stage1:0 "学园都市星球将获得更多的£housing£住房，并且那些提供学园都市独特的£job£岗位的建筑可以§G进行升级§!，提供更多£job£岗位的同时提升£job£岗位的产出。"
+
+ # BA_Kivotos_chronicle_effect_stage2:0 "城郊区区划提供的§G£job£岗位§!会得到产出提升，同时提供产出£rare_crystals£ £volatile_motes£ £exotic_gases£稀有资源的§G£job£岗位§!"
+ BA_Kivotos_chronicle_effect_stage2:0 "§H£district£$BA_districts_suburbs$§!提供的§G£job£岗位§!会得到产出提升，并解锁专注于£energy£ £minerals£ £food£基础资源§Y其中一种§!的£zone£['concept_district_specialization']。"
+
+ # BA_Kivotos_chronicle_effect_stage3:0 "军工厂区划将提供更多§G£job£岗位§!，并且这些岗位在库存充足的前提下会额外消耗£sr_keystone£§Y制造石§!以提升产出。"
+ BA_Kivotos_chronicle_effect_stage3:0 "§H£district£$BA_districts_military_factory$§!提供的§G£job£岗位§!的产出与消耗提升，并且解锁特殊的行星决议：牺牲一些§l£district£区划上限§!以进一步提升此区划提供的§G£job£岗位§!的的产出与消耗。"
+
+ # BA_Kivotos_chronicle_effect_stage4:0 "学园都市星球上的区划将提供更多£housing£住房，并立即解锁学园都市星球的所有§Y建筑槽位§!。"
+ # BA_Kivotos_chronicle_effect_stage4:0 "为学园都市星球解锁三种特殊区划：§H$BA_districts_chemical_plant$§!(提供£rare_crystals£ £volatile_motes£ £exotic_gases£稀有资源)、§H$BA_districts_compound_line$§!(£sr_pyroxenes£ £sr_keystone£特别资源)、§H$BA_districts_space_harbor$§!(£trade_value£贸易)。"
+ BA_Kivotos_chronicle_effect_stage4:0 "为学园都市星球解锁三个特殊区划，可以在其中任意进行规划。"
+
+ # BA_Kivotos_chronicle_effect_stage5:0 "学园区划§Y不再减少星球稳定度§!，并且提供更多§G£job£岗位§!。"
+ BA_Kivotos_chronicle_effect_stage5:0 "§H£district£$BA_districts_municipality$§!将提供更多的§G£job£岗位§!，并且学园都市独特的£job£岗位将§Y不再损害行星£stability£稳定度、不再需要£influence£$influence$维护费。§!"
+
+ # BA_Kivotos_chronicle_effect_stage6:0 "舰船、恒星基地、巨构建筑的建造和升级速度§G+50%§!。"
+ BA_Kivotos_chronicle_effect_stage6:0 "舰船、恒星基地、巨构建筑的建造和升级速度§G+50%§!。可以为学园都市独特的£job£岗位建造独特的强化建筑，大幅增加其产出与消耗并提供£trade_value£$trade$。"
+
+ # BA_Kivotos_chronicle_effect_stage7:0 "学园都市星球上的每个§H区划§!将使该星球上的£job£岗位产出的资源§G+2.5%§!，§H£district£$BA_districts_municipality$§!具有双倍效果。"
+ BA_Kivotos_chronicle_effect_stage7:0 "学园都市星球上的每个§H£district£区划§!都将使该星球上的£job£岗位产出的资源§G+2.5%§!，§H£district£$BA_districts_dome$§!具有双倍效果。"

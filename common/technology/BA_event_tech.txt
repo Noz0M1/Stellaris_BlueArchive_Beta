@@ -185,7 +185,174 @@ tech_BA_gate_build = {
 	weight = 0
 }
 
-#### 飞升科技
+#学园编年史强化
+tech_BA_Kivotos_chronicle_stage1 = {
+	icon = tech_mine_dark_matter
+	area = society
+	cost = 1
+	tier = 1
+	is_reverse_engineerable = no
+	category = {
+		school_tech
+	}
+	potential = {
+		OR = {
+			has_country_flag = BA_cheat
+			AND = {
+				has_authority = auth_kivotos
+				has_ascension_perk = ap_BA_Our_story
+			}
+		}
+	}
+	modifier = {
+	}
+	weight = 0
+}
+
+tech_BA_Kivotos_chronicle_stage2 = {
+	icon = tech_mine_dark_matter
+	area = society
+	cost = 1
+	tier = 1
+	is_reverse_engineerable = no
+	category = {
+		school_tech
+	}
+	potential = {
+		OR = {
+			has_country_flag = BA_cheat
+			AND = {
+				has_authority = auth_kivotos
+				has_ascension_perk = ap_BA_Our_story
+			}
+		}
+	}
+	modifier = {
+	}
+	weight = 0
+}
+
+tech_BA_Kivotos_chronicle_stage3 = {
+	icon = tech_mine_dark_matter
+	area = society
+	cost = 1
+	tier = 1
+	is_reverse_engineerable = no
+	category = {
+		school_tech
+	}
+	potential = {
+		OR = {
+			has_country_flag = BA_cheat
+			AND = {
+				has_authority = auth_kivotos
+				has_ascension_perk = ap_BA_Our_story
+			}
+		}
+	}
+	modifier = {
+	}
+	weight = 0
+}
+
+tech_BA_Kivotos_chronicle_stage4 = {
+	icon = tech_mine_dark_matter
+	area = society
+	cost = 1
+	tier = 1
+	is_reverse_engineerable = no
+	category = {
+		school_tech
+	}
+	potential = {
+		OR = {
+			has_country_flag = BA_cheat
+			AND = {
+				has_authority = auth_kivotos
+				has_ascension_perk = ap_BA_Our_story
+			}
+		}
+	}
+
+	modifier = {
+	}
+	weight = 0
+}
+
+tech_BA_Kivotos_chronicle_stage5 = {
+	icon = tech_mine_dark_matter
+	area = society
+	cost = 1
+	tier = 1
+	is_reverse_engineerable = no
+	category = {
+		school_tech
+	}
+	potential = {
+		OR = {
+			has_country_flag = BA_cheat
+			AND = {
+				has_authority = auth_kivotos
+				has_ascension_perk = ap_BA_Our_story
+			}
+		}
+	}
+
+	modifier = {
+	}
+	weight = 0
+}
+
+tech_BA_Kivotos_chronicle_stage6 = {
+	icon = tech_mine_dark_matter
+	area = society
+	cost = 1
+	tier = 1
+	is_reverse_engineerable = no
+	category = {
+		school_tech
+	}
+	potential = {
+		OR = {
+			has_country_flag = BA_cheat
+			AND = {
+				has_authority = auth_kivotos
+				has_ascension_perk = ap_BA_Our_story
+			}
+		}
+	}
+
+	modifier = {
+	}
+	weight = 0
+}
+
+tech_BA_Kivotos_chronicle_stage7 = {
+	icon = tech_mine_dark_matter
+	area = society
+	cost = 1
+	tier = 1
+	is_reverse_engineerable = no
+	category = {
+		school_tech
+	}
+	potential = {
+		OR = {
+			has_country_flag = BA_cheat
+			AND = {
+				has_authority = auth_kivotos
+				has_ascension_perk = ap_BA_Our_story
+			}
+		}
+	}
+
+	modifier = {
+	}
+	weight = 0
+}
+
+
+#### 光环飞升科技
 #初步光环理论（基础路线 1阶）
 tech_BA_Preliminary_ring_theory = {
 	icon = tech_BA_Aris_uplifting

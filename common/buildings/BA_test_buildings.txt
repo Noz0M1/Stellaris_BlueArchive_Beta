@@ -36,17 +36,6 @@ building_BA_energy_1 = {
 	upgrades = {
 		building_BA_energy_2
 	}
-	# 不知道是干嘛的
-	# ai_resource_production = {
-	#     energy = 10
-	#
-	#     trigger = {
-	#         has_any_generator_zone = yes
-	#     }
-	# }
-	# show_tech_unlock_if = {
-	#     is_wilderness_empire = no
-	# }
 }
 
 building_BA_energy_2 = {
@@ -96,11 +85,13 @@ building_BA_energy_2 = {
 			rare_crystals = 3
 		}
 	}
-	planet_modifier = {
-		# 预留标记
-	}
 	triggered_planet_modifier = {
-		# 预留标记
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			job_BA_dont_be_crazy_here_add = 300
+		}
 	}
 	prerequisites = {
 		# 预留标记
@@ -136,6 +127,8 @@ building_BA_minerals_1 = {
 		}
 		modifier = {
 			job_BA_Kivotos_miner_add = 100
+			planet_miners_minerals_produces_add = 2
+
 		}
 	}
 	upgrades = {
@@ -171,36 +164,25 @@ building_BA_minerals_2 = {
 			trigger = {
 				has_ringworld_output_boost = no
 			}
-			minerals = @b2_minerals
-			volatile_motes = @b2_rare_cost
-		}
-		cost = {
-			trigger = {
-				has_ringworld_output_boost = yes
-			}
-			minerals = 900
-			volatile_motes = 200
+			minerals = 600
+			volatile_motes = 50
 		}
 		upkeep = {
 			trigger = {
 				has_ringworld_output_boost = no
 			}
 			energy = 2
-			volatile_motes = @b2_rare_upkeep
+			volatile_motes = 1
 		}
-		upkeep = {
-			trigger = {
-				has_ringworld_output_boost = yes
-			}
-			energy = 5
-			volatile_motes = 3
-		}
-	}
-	planet_modifier = {
-		# 预留标记
 	}
 	triggered_planet_modifier = {
-		# 预留标记
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			job_BA_Kivotos_miner_add = 300
+			planet_miners_minerals_produces_add = 5
+		}
 	}
 	prerequisites = {
 		# 预留标记
@@ -236,6 +218,7 @@ building_BA_food_1 = {
 		}
 		modifier = {
 			job_BA_caterer_add = 100
+			planet_farmers_food_produces_add = 2
 		}
 	}
 	upgrades = {
@@ -294,11 +277,14 @@ building_BA_food_2 = {
 			exotic_gases = 3
 		}
 	}
-	planet_modifier = {
-		# 预留标记
-	}
 	triggered_planet_modifier = {
-		# 预留标记
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			job_BA_caterer_add = 300
+			planet_farmers_food_produces_add = 5
+		}
 	}
 	prerequisites = {
 		# 预留标记
