@@ -83,9 +83,9 @@ special_project = {
 					has_trait = trait_halo_unreleased
 				}
 			}
-			add = 30
+			add = 0.3
 			scope = THIS
-			calc = pop_count
+			calc = pop_amount
 		}
 	}
 	event_scope = country_event
@@ -125,9 +125,9 @@ special_project = {
 					has_country_flag = BA_Halo_Prize0
 				}
 			}
-			add = 200
+			add = 0.2
 			scope = THIS
-			calc = pop_count
+			calc = pop_amount
 		}
 		scaled_modifier = {
 			limit = {
@@ -138,9 +138,9 @@ special_project = {
 					has_country_flag = BA_Halo_Prize1
 				}
 			}
-			add = 150
+			add = 0.15
 			scope = THIS
-			calc = pop_count
+			calc = pop_amount
 		}
 		scaled_modifier = {
 			limit = {
@@ -151,9 +151,9 @@ special_project = {
 					has_country_flag = BA_Halo_Prize2
 				}
 			}
-			add = 100
+			add = 0.1
 			scope = THIS
-			calc = pop_count
+			calc = pop_amount
 		}
 		scaled_modifier = {
 			limit = {
@@ -164,9 +164,9 @@ special_project = {
 					has_country_flag = BA_Halo_Prize3
 				}
 			}
-			add = 50
+			add = 0.50
 			scope = THIS
-			calc = pop_count
+			calc = pop_amount
 		}
 		scaled_modifier = {
 			limit = {
@@ -177,9 +177,9 @@ special_project = {
 					has_country_flag = BA_Halo_Prize4
 				}
 			}
-			add = 25
+			add = 0.25
 			scope = THIS
-			calc = pop_count
+			calc = pop_amount
 		}
 	}
 	event_scope = country_event
@@ -204,7 +204,10 @@ special_project = {
 				which = BA_Kivotos_chronicle_count
 				value = 1
 			}
-			set_country_flag = BA_Blue_new_world_1
+			give_technology = {
+				tech = tech_BA_Kivotos_chronicle_stage1
+				message = no
+			}
 			country_event = {
 				id = BA_ape.2002
 			}
@@ -232,7 +235,10 @@ special_project = {
 				which = BA_Kivotos_chronicle_count
 				value = 1
 			}
-			set_country_flag = BA_Blue_new_world_2
+			give_technology = {
+				tech = tech_BA_Kivotos_chronicle_stage2
+				message = no
+			}
 			country_event = {
 				id = BA_ape.2002
 			}
@@ -260,7 +266,10 @@ special_project = {
 				which = BA_Kivotos_chronicle_count
 				value = 1
 			}
-			set_country_flag = BA_Blue_new_world_3
+			give_technology = {
+				tech = tech_BA_Kivotos_chronicle_stage3
+				message = no
+			}
 			country_event = {
 				id = BA_ape.2002
 			}
@@ -287,7 +296,10 @@ special_project = {
 				which = BA_Kivotos_chronicle_count
 				value = 1
 			}
-			set_country_flag = BA_Blue_new_world_4
+			give_technology = {
+				tech = tech_BA_Kivotos_chronicle_stage4
+				message = no
+			}
 			country_event = {
 				id = BA_ape.2002
 			}
@@ -315,7 +327,10 @@ special_project = {
 				which = BA_Kivotos_chronicle_count
 				value = 1
 			}
-			set_country_flag = BA_Blue_new_world_5
+			give_technology = {
+				tech = tech_BA_Kivotos_chronicle_stage5
+				message = no
+			}
 			country_event = {
 				id = BA_ape.2002
 			}
@@ -343,7 +358,10 @@ special_project = {
 				which = BA_Kivotos_chronicle_count
 				value = 1
 			}
-			set_country_flag = BA_Blue_new_world_6
+			give_technology = {
+				tech = tech_BA_Kivotos_chronicle_stage6
+				message = no
+			}
 			country_event = {
 				id = BA_ape.2002
 			}
@@ -366,7 +384,10 @@ special_project = {
 	days_to_research = 1080
 	on_success = {
 		hidden_effect = {
-			set_country_flag = BA_Blue_new_world_7
+			give_technology = {
+				tech = tech_BA_Kivotos_chronicle_stage7
+				message = no
+			}
 			country_event = {
 				id = BA_ape.2010
 			}
@@ -382,9 +403,9 @@ special_project = {
 	cost = {
 		base = 3500
 		scaled_modifier = {
-			add = 100
+			add = 1
 			scope = THIS
-			calc = pop_count
+			calc = pop_amount
 		}
 	}
 	on_success = {

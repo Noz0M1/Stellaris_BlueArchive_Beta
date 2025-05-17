@@ -37,10 +37,10 @@ BA_student_delegate = {
 	resources = {
 		category = BA_club_pop
 		produces = {
-			influence = 1
-			physics_research = 12
-			society_research = 12
-			engineering_research = 12
+			influence = 0.5
+			physics_research = 15
+			society_research = 15
+			engineering_research = 15
 		}
 		produces = {
 			trigger = {
@@ -48,21 +48,21 @@ BA_student_delegate = {
 					has_active_building = building_BA_SI_Millennium_G10
 				}
 			}
-			influence = 1
-			physics_research = 12
-			society_research = 12
-			engineering_research = 12
+			influence = 0.5
+			physics_research = 15
+			society_research = 15
+			engineering_research = 15
 		}
 		upkeep = {
 			consumer_goods = 4
 			unity = 4
 		}
 	}
-	planet_modifier = {
-		planet_jobs_physics_research_produces_mult = 0.05
-		planet_jobs_society_research_produces_mult = 0.05
-		planet_jobs_engineering_research_produces_mult = 0.05
-	}
+	# planet_modifier = {
+	# 	planet_jobs_physics_research_produces_mult = 0.05
+	# 	planet_jobs_society_research_produces_mult = 0.05
+	# 	planet_jobs_engineering_research_produces_mult = 0.05
+	# }
 	weight = {
 		weight = @ruler_job_weight
 		mult = value:job_weights_research_modifier|JOB|head_researcher|
@@ -97,7 +97,7 @@ BA_Vigilant_crew = {
 	resources = {
 		category = BA_crew_pop
 		produces = {
-			unity = 3
+			unity = 8
 		}
 		produces = {
 			trigger = {
@@ -107,7 +107,7 @@ BA_Vigilant_crew = {
 					}
 				}
 			}
-			unity = 2
+			unity = 4
 		}
 		upkeep = {
 			consumer_goods = 7
@@ -180,19 +180,17 @@ BA_club_members = {
 			alloys = 0.5
 		}
 	}
-	#传统修正
+	#编年史
 	triggered_planet_modifier = {
 		potential = {
 			owner = {
 				NOT = {
-					has_tradition = tr_kivotos_finish
+					has_technology = tech_BA_Kivotos_chronicle_stage5
 				}
 			}
 		}
-		planet_stability_add = -0.5
+		planet_stability_add = -0.3
 	}
-	#社团修正
-	#
 	weight = {
 		weight = @specialist_job_weight
 		mult = value:job_weights_modifier|JOB|artisan|RESOURCE|consumer_goods|
@@ -238,8 +236,27 @@ BA_Kivotos_staff = {
 		}
 		produces = {
 			consumer_goods = 4
-			trade = 24
-			unity = 2
+		}
+		#传统
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_tradition = tr_kivotos_newkind_dome
+				}
+			}
+			trade = 32
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				NOT = {
+					owner = {
+						has_tradition = tr_kivotos_newkind_dome
+					}
+				}
+			}
+			unity = 8
 		}
 		# upkeep = {
 		# 	trigger = {
@@ -258,15 +275,16 @@ BA_Kivotos_staff = {
 		# 	sr_pyroxenes = 0.5
 		# 	consumer_goods = 3
 		# }
-		# produces = {
-		# 	trigger = {
-		# 		owner = {
-		# 			has_technology = tech_BA_SI_Abydos_A01
-		# 		}
-		# 	}
-		# 	food = -1
-		# 	energy = 2
-		# }
+		#
+		produces = {
+			trigger = {
+				owner = {
+					has_technology = tech_BA_SI_Abydos_A01
+				}
+			}
+			food = -1
+			energy = 2
+		}
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -278,18 +296,13 @@ BA_Kivotos_staff = {
 	}
 	weight = {
 		weight = @specialist_job_weight
-		mult = value:job_weights_modifier|JOB|artisan|RESOURCE|consumer_goods|
-		modifier = {
-			factor = 2
-			is_enslaved = yes
-			can_take_servant_job = no
-		}
+		mult = value:job_weights_modifier|JOB|trader|RESOURCE|trade|
 	}
 }
 
 ### 制造石工匠 ###
 #模式一 48：基础 —— 8矿物 -> 8消费品
-#模式二 72：我们的故事 2段 —— 9矿物 1制造石 -> 14消费品
+#模式二 72：编年史5阶段 —— 14矿物 -> 14消费品
 BA_keystone_artisan = {
 	category = specialist
 	#building_icon = building_BA_pyroxenes
@@ -326,18 +339,22 @@ BA_keystone_artisan = {
 		}
 		upkeep = {
 			trigger = {
-				BA_can_activate_keystone_mode = yes
+				owner = {
+					has_technology = tech_BA_Kivotos_chronicle_stage3
+				}
 			}
-			sr_keystone = 1
-			minerals = 1
+			minerals = 6
 		}
 		produces = {
 			trigger = {
-				BA_can_activate_keystone_mode = yes
+				owner = {
+					has_technology = tech_BA_Kivotos_chronicle_stage3
+				}
 			}
 			consumer_goods = 6
 		}
 	}
+	#传统
 	triggered_planet_modifier = {
 		potential = {
 			owner = {
@@ -354,7 +371,7 @@ BA_keystone_artisan = {
 
 ### 制造石锻造师 ###
 #模式一 48：基础 —— 8矿物 -> 4合金
-#模式二 84：我们的故事 3段 —— 9矿物 1制造石 -> 7合金
+#模式二 84：我们的故事 3段 —— 14矿物 -> 7合金
 #传统强化：8海军容量
 BA_keystone_foundry = {
 	category = specialist
@@ -391,25 +408,20 @@ BA_keystone_foundry = {
 		}
 		upkeep = {
 			trigger = {
-				BA_can_activate_keystone_mode = yes
+				owner = {
+					has_technology = tech_BA_Kivotos_chronicle_stage3
+				}
 			}
-			sr_keystone = 1
-			minerals = 1
+			minerals = 6
 		}
 		produces = {
 			trigger = {
-				BA_can_activate_keystone_mode = yes
+				owner = {
+					has_technology = tech_BA_Kivotos_chronicle_stage3
+				}
 			}
 			alloys = 3
 		}
-	}
-	triggered_country_modifier = {
-		potential = {
-			owner = {
-				has_tradition = tr_kivotos_space_supplies
-			}
-		}
-		country_naval_cap_add = 8
 	}
 	weight = {
 		weight = @specialist_job_weight
@@ -488,7 +500,7 @@ BA_scrap_refiner = {
 #############   劳工   #############
 ### 发癫者 ###
 #模式一：基础 —— 2凝聚力 -> 15电
-#模式二：我们的故事 1段 —— 2凝聚力 -> 21电
+#模式二：编年史2阶段 —— 2凝聚力 -> 21电
 BA_dont_be_crazy_here = {
 	category = worker
 	swappable_data = {
@@ -522,10 +534,12 @@ BA_dont_be_crazy_here = {
 		produces = {
 			energy = 15
 		}
+		#编年史
 		produces = {
 			trigger = {
+				exists = owner
 				owner = {
-					has_country_flag = BA_Blue_new_world_1
+					has_technology = tech_BA_Kivotos_chronicle_stage2
 				}
 			}
 			energy = 6
@@ -542,7 +556,7 @@ BA_dont_be_crazy_here = {
 
 ### 采矿团 ###
 #模式一：基础 —— 1合金 5舒适度 -> 15矿
-#模式二：我们的故事 1段 —— 1合金 5舒适度 -> 21矿
+#模式二：编年史2阶段 —— 1合金 5舒适度 -> 21矿
 BA_Kivotos_miner = {
 	category = worker
 	swappable_data = {
@@ -576,19 +590,26 @@ BA_Kivotos_miner = {
 		upkeep = {
 			alloys = 1
 		}
+		#编年史
 		produces = {
 			trigger = {
+				exists = owner
 				owner = {
-					has_country_flag = BA_Blue_new_world_1
+					has_technology = tech_BA_Kivotos_chronicle_stage2
 				}
 			}
 			minerals = 6
 		}
 	}
-	planet_modifier = {
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_Kivotos_chronicle_stage2
+			}
+		}
 		planet_amenities_add = -5
 	}
-
 	weight = {
 		weight = @worker_job_weight
 		mult = value:job_weights_modifier|JOB|miner|RESOURCE|minerals|
@@ -596,7 +617,8 @@ BA_Kivotos_miner = {
 }
 
 ### 餐务员
-#基础：2消费品 -> 15粮 混成化增益
+#模式一：基础 —— 2消费品 -> 15粮 混成化增益
+#模式二：编年史2阶段 —— 2消费品 -> 21粮
 BA_caterer = {
 	category = worker
 	swappable_data = {
@@ -620,7 +642,17 @@ BA_caterer = {
 			food = 15
 		}
 		upkeep = {
-			influence = 0.05
+			consumer_goods = 2
+		}
+		#编年史
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_technology = tech_BA_Kivotos_chronicle_stage2
+				}
+			}
+			food = 6
 		}
 		#混成化增益
 		produces = {
@@ -649,8 +681,8 @@ BA_caterer = {
 }
 
 ### 灵活就业者 ###
-#1消费品 2凝聚力 -> 3贸易额 1*3科研点数
-#注：基沃托斯的失业者
+#1凝聚力 0.05影响力 -> 6贸易额 1*3科研点数
+#编年史可免除影响力维护
 BA_flexible_workers = {
 	category = worker
 	swappable_data = {
@@ -660,7 +692,7 @@ BA_flexible_workers = {
 			building_icon = building_BA_Schale_office
 		}
 	}
-	is_capped_by_modifier = no
+	#is_capped_by_modifier = no
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -668,31 +700,23 @@ BA_flexible_workers = {
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-	possible = {
-		species = {
-			NOT = {
-				has_species_flag = BA_Unnamed_enemy_species
-			}
-		}
-		planet = {
-			is_planet_class = pc_BA_campus_planet
-			free_jobs = 0
-		}
-	}
+	possible_precalc = can_fill_worker_job
 	resources = {
 		category = BA_flex_pop
 		produces = {
 			physics_research = 1
 			society_research = 1
 			engineering_research = 1
-			trade = 3
+			trade = 6
 		}
 		upkeep = {
 			unity = 1
-			# influence = 0.002
+			influence = 0.05
 		}
+		#学园理念
 		produces = {
 			trigger = {
+				exists = owner
 				owner = {
 					has_technology = tech_BA_SI_Gehenna_D02
 				}
@@ -703,23 +727,37 @@ BA_flexible_workers = {
 		}
 		upkeep = {
 			trigger = {
+				exists = owner
 				owner = {
 					has_technology = tech_BA_SI_Gehenna_D02
 				}
 			}
 			unity = 3
 		}
+		#星球特化+编年史
 		upkeep = {
 			trigger = {
 				planet = {
-					NOR = {
-						is_capital = yes
-						colony_type = col_BA_campus_unemp
+					exists = owner
+					NOT = {
+						owner = {
+							has_technology = tech_BA_Kivotos_chronicle_stage5
+						}
 					}
 				}
 			}
-			influence = 0.02
+			influence = 0.05
 		}
+	}
+	#传统
+	triggered_country_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_tradition = tr_kivotos_student_arms
+			}
+		}
+		country_naval_cap_add = 4
 	}
 	weight = {
 		weight = 0.01

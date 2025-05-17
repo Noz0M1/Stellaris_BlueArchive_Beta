@@ -1,13 +1,13 @@
 ##################
 ##  基沃托斯传统
 ##################
-# 激活：开采站产出+20%
+#激活：开采站产出+20%
 tr_kivotos_adopt = {
 	possible = {
 		has_authority = auth_kivotos
 	}
 	modifier = {
-		station_gatherers_produces_mult = 0.2
+		planet_jobs_consumer_goods_upkeep_mult = -0.05
 	}
 	on_enabled = {
 		# hidden_effect = {
@@ -21,22 +21,36 @@ tr_kivotos_adopt = {
 	}
 }
 
-#完成：社团部员不再减少星球稳定度 飞升+1 （学园区划+1学生代表岗位    以后改到学园文化研究里面）
-tr_kivotos_finish = {
+#1 新型宿舍：联邦职员—— 无 -> 2舒适度
+tr_kivotos_newkind_dome = {
+	possible = {
+	}
 	modifier = {
-		station_researchers_produces_mult = 0.2
-		ascension_perks_add = 1
+		pop_housing_usage_mult = -0.05
+		pop_amenities_usage_add = -0.05
 	}
-	on_enabled = {
-		set_country_flag = BA_tr_kivotos_finished
+	ai_weight = {
+		factor = 1000
 	}
-	custom_tooltip = tr_kivotos_finish_desc
+	custom_tooltip = tr_kivotos_newkind_dome_desc
 }
 
-### 第一层
-#常时值日：社团部员—— 无 -> 1凝聚力
+#2 学园军备：自警团会生成防御部队，并+凝聚力。灵活就业者产出海军容量。
+tr_kivotos_student_arms = {
+	possible = {
+	}
+	modifier = {
+	}
+	ai_weight = {
+		factor = 1000
+	}
+	custom_tooltip = tr_kivotos_student_arms_desc
+}
+
+#1-1值日轮换：社团部员—— 0.5消费品 -> 1凝聚力
 tr_kivotos_daily_duty = {
 	possible = {
+		has_tradition = tr_kivotos_newkind_dome
 	}
 	modifier = {
 		BA_club_pop_unity_produces_add = 1
@@ -48,9 +62,10 @@ tr_kivotos_daily_duty = {
 	#custom_tooltip = tr_kivotos_daily_duty_desc
 }
 
-#探寻神秘：社团部员—— 0.5消费品 -> 1*3科研点
+#1-2探寻神秘：社团部员—— 0.5消费品 -> 1*3科研点
 tr_kivotos_opaz = {
 	possible = {
+		has_tradition = tr_kivotos_newkind_dome
 	}
 	modifier = {
 		BA_club_pop_physics_research_produces_add = 1
@@ -64,46 +79,31 @@ tr_kivotos_opaz = {
 	#custom_tooltip = tr_kivotos_opaz_desc
 }
 
-### 第二层
-#新型宿舍：自治区职员—— 无 -> 2舒适度
-tr_kivotos_newkind_dome = {
-	possible = {
-		has_tradition = tr_kivotos_daily_duty
-	}
-	modifier = {
-		#pop_housing_usage_mult = -0.05
-		#pop_amenities_usage_add = -0.05
-	}
-	ai_weight = {
-		factor = 1000
-	}
-	custom_tooltip = tr_kivotos_newkind_dome_desc
-}
-
-#学园军备：自警团会生成防御部队，并+2凝聚力
-tr_kivotos_student_arms = {
-	possible = {
-		has_tradition = tr_kivotos_daily_duty
-	}
-	modifier = {
-	}
-	ai_weight = {
-		factor = 1000
-	}
-	custom_tooltip = tr_kivotos_student_arms_desc
-}
-
-#太空补给：制造石冶金师—— 无 -> 8海军容量
+#2-1太空补给：制造石冶金师—— 无 -> 8海军容量
 tr_kivotos_space_supplies = {
 	possible = {
-		has_tradition = tr_kivotos_opaz
+		has_tradition = tr_kivotos_student_arms
 	}
 	modifier = {
+		station_gatherers_produces_mult = 0.2
+		station_researchers_produces_mult = 0.2
+		megastructures_produces_mult = 0.2
 	}
 	ai_weight = {
 		factor = 1000
 	}
-	custom_tooltip = tr_kivotos_space_supplies_desc
+	# custom_tooltip = tr_kivotos_space_supplies_desc
+}
+
+#完成：社团部员不再减少星球稳定度 飞升+1 学园区划转换100社团部员->学生代表岗位    以后改到学园文化研究里面）
+tr_kivotos_finish = {
+	modifier = {
+		ascension_perks_add = 1
+	}
+	on_enabled = {
+		set_country_flag = BA_tr_kivotos_finished
+	}
+	custom_tooltip = tr_kivotos_finish_desc
 }
 
 ##################

@@ -273,7 +273,6 @@ tech_BA_Kivotos_chronicle_stage4 = {
 			}
 		}
 	}
-
 	modifier = {
 	}
 	weight = 0
@@ -297,7 +296,6 @@ tech_BA_Kivotos_chronicle_stage5 = {
 			}
 		}
 	}
-
 	modifier = {
 	}
 	weight = 0
@@ -321,8 +319,12 @@ tech_BA_Kivotos_chronicle_stage6 = {
 			}
 		}
 	}
-
 	modifier = {
+		megastructure_build_speed_mult = 0.5
+		starbase_shipyard_build_speed_mult = 0.5
+		starbase_upgrade_speed_mult = 1
+		starbase_module_build_speed_mult = 1
+		starbase_building_build_speed_mult = 1
 	}
 	weight = 0
 }
@@ -345,12 +347,10 @@ tech_BA_Kivotos_chronicle_stage7 = {
 			}
 		}
 	}
-
 	modifier = {
 	}
 	weight = 0
 }
-
 
 #### 光环飞升科技
 #初步光环理论（基础路线 1阶）
@@ -792,7 +792,7 @@ tech_BA_club_Game_development_department_04 = {
 ## 茶会
 ## 温泉开发部
 tech_BA_club_Hotspring_development_department_00 = {
-	icon =  tech_BA_club_Hotspring_development_department
+	icon = tech_BA_club_Hotspring_development_department
 	area = engineering
 	cost = @tier2cost1
 	tier = 2
@@ -811,7 +811,7 @@ tech_BA_club_Hotspring_development_department_00 = {
 }
 
 tech_BA_club_Hotspring_development_department_01 = {
-	icon =  tech_BA_club_Hotspring_development_department
+	icon = tech_BA_club_Hotspring_development_department
 	area = engineering
 	cost = @tier2cost3
 	tier = 2

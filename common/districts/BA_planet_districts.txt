@@ -9,7 +9,7 @@
 #学园都市星球区划
 #####################################
 ### 学园区划 政府区
-BA_districts_municipality = {
+BA_districts_campus = {
 	base_buildtime = @BA_base_time
 	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
@@ -71,38 +71,49 @@ BA_districts_municipality = {
 			job_BA_club_members_add = 200
 		}
 	}
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = {
-	# 			has_country_flag = BA_Blue_new_world_2
-	# 		}
-	# 	}
-	# 	modifier = {
-	# 		#2阶段 1自治区职员
-	# 		job_BA_Kivotos_staff_add = 1
-	# 	}
-	# }
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = {
-	# 			has_country_flag = BA_Blue_new_world_4
-	# 		}
-	# 	}
-	# 	#4阶段 住房+500
-	# 	planet_housing_add = 500
-	# }
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = {
-	# 			has_country_flag = BA_Blue_new_world_7
-	# 		}
-	# 	}
-	# 	#7阶段
-	# 	planet_jobs_produces_mult = 0.025
-	# }
+	#传统
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_tradition = tr_kivotos_finish
+			}
+		}
+		#传统完成 100社团部员-->100学生代表
+		job_BA_club_members_add = -100
+		job_BA_student_delegate_add = 100
+	}
+	#编年史
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_Kivotos_chronicle_stage1
+			}
+		}
+		#编年史1阶段 500住房
+		planet_housing_add = 500
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_Kivotos_chronicle_stage1
+			}
+		}
+		#编年史5阶段 200社团部员
+		job_BA_club_members_add = 200
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_Kivotos_chronicle_stage7
+			}
+		}
+		#编年史7阶段 2.5全产
+		planet_jobs_produces_mult = 0.025
+	}
 	# triggered_planet_modifier = {
 	# 	potential = {
 	# 		exists = owner
@@ -136,7 +147,7 @@ BA_districts_dome = {
 		always = yes
 	}
 	zone_slots = {
-		slot_city_01
+		slot_BA_dome
 	}
 	#建造维护费
 	resources = {
@@ -158,36 +169,32 @@ BA_districts_dome = {
 			exists = owner
 		}
 		modifier = {
-			#100联邦职员
+			#200联邦职员 500灵活就业
 			job_BA_Kivotos_staff_add = 200
+			job_BA_flexible_workers_add = 500
 		}
 	}
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = {
-	# 			OR = {
-	# 				is_BA_fallen_empire = yes
-	# 				has_country_flag = BA_Blue_new_world_4
-	# 			}
-	# 		}
-	# 	}
-	# 	#4阶段 住房+5 槽位+2
-	# 	planet_housing_add = 500
-	# }
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = {
-	# 			OR = {
-	# 				is_BA_fallen_empire = yes
-	# 				has_country_flag = BA_Blue_new_world_7
-	# 			}
-	# 		}
-	# 	}
-	# 	#7阶段
-	# 	planet_jobs_produces_mult = 0.05
-	# }
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_Kivotos_chronicle_stage1
+			}
+		}
+		#编年史1阶段 800住房 500灵活就业
+		planet_housing_add = 800
+		job_BA_flexible_workers_add = 500
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_Kivotos_chronicle_stage7
+			}
+		}
+		#编年史7阶段 5全产
+		planet_jobs_produces_mult = 0.05
+	}
 	#转化
 	conversion_ratio = 1
 	convert_to = {
@@ -210,7 +217,7 @@ BA_districts_military_factory = {
 		always = yes
 	}
 	zone_slots = {
-		slot_city_01
+		slot_BA_urban_factory
 	}
 	resources = {
 		category = planet_districts
@@ -243,39 +250,16 @@ BA_districts_military_factory = {
 			job_BA_keystone_artisan_add = 100
 		}
 	}
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = {
-	# 			has_country_flag = BA_Blue_new_world_3
-	# 		}
-	# 	}
-	# 	modifier = {
-	# 		#3阶段 1制造石铸造师
-	# 		job_BA_keystone_foundry_add = 1
-	# 	}
-	# }
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = {
-	# 			has_country_flag = BA_Blue_new_world_4
-	# 		}
-	# 	}
-	# 	#4阶段 住房+3
-	# 	planet_housing_add = 3
-	# 	planet_max_buildings_add = 20
-	# }
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = {
-	# 			has_country_flag = BA_Blue_new_world_7
-	# 		}
-	# 	}
-	# 	#7阶段
-	# 	planet_jobs_produces_mult = 0.025
-	# }
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_Kivotos_chronicle_stage1
+			}
+		}
+		#编年史1阶段 300住房
+		planet_housing_add = 300
+	}
 }
 
 ### 城郊区划 电矿粮
@@ -319,42 +303,190 @@ BA_districts_suburbs = {
 			job_BA_caterer_add = 100
 		}
 	}
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = {
-	# 			has_country_flag = BA_Blue_new_world_1
-	# 		}
-	# 	}
-	# 	modifier = {
-	# 		#1阶段 1废料精炼工
-	# 		job_BA_scrap_refiner_add = 100
-	# 	}
-	# }
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = {
-	# 			has_country_flag = BA_Blue_new_world_4
-	# 		}
-	# 	}
-	# 	#4阶段 住房+3
-	# 	planet_housing_add = 300
-	# }
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = {
-	# 			has_country_flag = BA_Blue_new_world_7
-	# 		}
-	# 	}
-	# 	#7阶段
-	# 	planet_jobs_produces_mult = 0.025
-	# }
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_Kivotos_chronicle_stage1
+			}
+		}
+		#编年史1阶段 300住房
+		planet_housing_add = 300
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_Kivotos_chronicle_stage7
+			}
+		}
+		#编年史7阶段 2.5全产
+		planet_jobs_produces_mult = 0.025
+	}
 }
 
 ### 自治区 任意规划
+BA_districts_municipality_A = {
+	icon = BA_districts_municipality
+	base_buildtime = @BA_base_time
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = BA_planet
+	}
+	potential = {
+		exists = owner
+		uses_district_set = BA_planet
+	}
+	allow = {
+		always = yes
+	}
+	zone_slots = {
+		slot_BA_municipality
+	}
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @BA_base_cost
+		}
+		upkeep = {
+			energy = @BA_base_upkeep
+		}
+	}
+	#修正
+	planet_modifier = {
+		planet_housing_add = 300
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_Kivotos_chronicle_stage1
+			}
+		}
+		#编年史1阶段 300住房
+		planet_housing_add = 300
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_Kivotos_chronicle_stage7
+			}
+		}
+		#编年史7阶段 2.5全产
+		planet_jobs_produces_mult = 0.025
+	}
+}
 
+BA_districts_municipality_B = {
+	icon = BA_districts_municipality
+	base_buildtime = @BA_base_time
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = BA_planet
+	}
+	potential = {
+		exists = owner
+		uses_district_set = BA_planet
+		owner = {
+			has_technology = tech_BA_Kivotos_chronicle_stage4
+		}
+	}
+	allow = {
+		always = yes
+	}
+	zone_slots = {
+		slot_BA_municipality
+	}
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @BA_base_cost
+		}
+		upkeep = {
+			energy = @BA_base_upkeep
+		}
+	}
+	#修正
+	planet_modifier = {
+		planet_housing_add = 300
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_Kivotos_chronicle_stage1
+			}
+		}
+		#编年史1阶段 300住房
+		planet_housing_add = 300
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_Kivotos_chronicle_stage7
+			}
+		}
+		#编年史7阶段 2.5全产
+		planet_jobs_produces_mult = 0.025
+	}
+}
+
+BA_districts_municipality_C = {
+	icon = BA_districts_municipality
+	base_buildtime = @BA_base_time
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = BA_planet
+	}
+	potential = {
+		exists = owner
+		uses_district_set = BA_planet
+		owner = {
+			has_technology = tech_BA_Kivotos_chronicle_stage4
+		}
+	}
+	allow = {
+		always = yes
+	}
+	zone_slots = {
+		slot_BA_municipality
+	}
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @BA_base_cost
+		}
+		upkeep = {
+			energy = @BA_base_upkeep
+		}
+	}
+	#修正
+	planet_modifier = {
+		planet_housing_add = 300
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_Kivotos_chronicle_stage1
+			}
+		}
+		#编年史1阶段 300住房
+		planet_housing_add = 300
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_Kivotos_chronicle_stage7
+			}
+		}
+		#编年史7阶段 2.5全产
+		planet_jobs_produces_mult = 0.025
+	}
+}
 
 #####################################
 #学园都市废墟星球区划

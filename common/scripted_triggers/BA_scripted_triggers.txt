@@ -36,16 +36,16 @@ is_kivotos = {
 	}
 }
 
-BA_can_activate_keystone_mode = {
-	owner = {
-		has_country_flag = BA_Blue_new_world_3
-		resource_stockpile_compare = {
-			resource = sr_keystone
-			value >= value:num_BA_count_keystone_jobs
-			multiplier = 0.02
-		}
-	}
-}
+# BA_can_activate_keystone_mode = {
+# 	owner = {
+# 		has_country_flag = BA_Blue_new_world_3
+# 		resource_stockpile_compare = {
+# 			resource = sr_keystone
+# 			value >= value:num_BA_count_keystone_jobs
+# 			multiplier = 0.02
+# 		}
+# 	}
+# }
 
 ##### Leaders
 BA_has_halo_organic = {

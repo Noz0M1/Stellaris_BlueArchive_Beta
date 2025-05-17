@@ -106,6 +106,92 @@ zone_BA_municipality_club = {
 		potential = {
 			exists = owner
 		}
+		planet_housing_add = 300
+		job_BA_club_members_add = 300
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_stability_add = -3
+	}
+	included_building_sets = {
+		industrial
+		foundry
+		factory
+		automation
+		research
+		unity
+		fortress
+		trade
+		entertainment
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+#宿舍区划
+zone_BA_grand_dome = {
+	icon = GFX_resource_trade_large
+	base_buildtime = 360
+	potential = {
+		exists = owner
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 1000
+			energy = 500
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_housing_add = 800
+		job_BA_Kivotos_staff_add = 300
+	}
+	included_building_sets = {
+		industrial
+		foundry
+		factory
+		automation
+		research
+		unity
+		fortress
+		trade
+		entertainment
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+zone_BA_flexible_center = {
+	icon = GFX_resource_trade_large
+	base_buildtime = 360
+	potential = {
+		exists = owner
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 500
+			energy = 500
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_housing_add = 500
+		job_BA_Kivotos_staff_add = -200
+		job_BA_flexible_workers_add = 500
 	}
 	included_building_sets = {
 		industrial
@@ -130,7 +216,7 @@ zone_BA_grand_suburbs = {
 	potential = {
 		exists = owner
 		owner = {
-			is_wilderness_empire = no
+			has_technology = tech_BA_Kivotos_chronicle_stage2
 		}
 	}
 	unlock = {
@@ -146,9 +232,9 @@ zone_BA_grand_suburbs = {
 		potential = {
 			exists = owner
 		}
-        job_BA_dont_be_crazy_here_add = 50
-        job_BA_Kivotos_miner_add = 50
-        job_BA_caterer_add = 50
+		job_BA_dont_be_crazy_here_add = 50
+		job_BA_Kivotos_miner_add = 50
+		job_BA_caterer_add = 50
 	}
 	included_building_sets = {
 		generator
@@ -174,7 +260,7 @@ zone_BA_energy_suburbs = {
 	potential = {
 		exists = owner
 		owner = {
-			is_wilderness_empire = no
+			has_technology = tech_BA_Kivotos_chronicle_stage2
 		}
 	}
 	unlock = {
@@ -211,7 +297,7 @@ zone_BA_mineral_suburbs = {
 	potential = {
 		exists = owner
 		owner = {
-			is_wilderness_empire = no
+			has_technology = tech_BA_Kivotos_chronicle_stage2
 		}
 	}
 	unlock = {
@@ -248,7 +334,7 @@ zone_BA_food_suburbs = {
 	potential = {
 		exists = owner
 		owner = {
-			is_wilderness_empire = no
+			has_technology = tech_BA_Kivotos_chronicle_stage2
 		}
 	}
 	unlock = {

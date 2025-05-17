@@ -20,8 +20,8 @@ country_event = {
 			# 区划建筑
 			validate_planet_buildings_and_districts = yes
 			remove_all_districts = yes
-			add_district = BA_districts_municipality
-			add_district = BA_districts_municipality
+			add_district = BA_districts_campus
+			add_district = BA_districts_campus
 			add_district = BA_districts_dome
 			add_district = BA_districts_military_factory
 			add_district = BA_districts_military_factory
@@ -30,6 +30,7 @@ country_event = {
 			add_district = BA_districts_suburbs
 			add_district = BA_districts_suburbs
 			add_district = BA_districts_suburbs
+			add_district = BA_districts_municipality_A
 			remove_building = building_colony_shelter
 			add_building = {
 				zone = zone_default
@@ -62,7 +63,7 @@ country_event = {
 				size = 3500
 			}
 			check_planet_employment = yes
-
+			validate_planet_buildings_and_districts = yes
 		}
 	}
 }

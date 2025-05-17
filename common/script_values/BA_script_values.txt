@@ -66,22 +66,22 @@ num_minor_orbitals = {
 }
 
 ########   岗位
-num_BA_count_keystone_jobs = {
-	complex_trigger_modifier = {
-		trigger = num_assigned_jobs
-		parameters = {
-			job = BA_keystone_foundry
-		}
-		mode = add
-	}
-	complex_trigger_modifier = {
-		trigger = num_assigned_jobs
-		parameters = {
-			job = BA_keystone_artisan
-		}
-		mode = add
-	}
-}
+# num_BA_count_keystone_jobs = {
+# 	complex_trigger_modifier = {
+# 		trigger = num_assigned_jobs
+# 		parameters = {
+# 			job = BA_keystone_foundry
+# 		}
+# 		mode = add
+# 	}
+# 	complex_trigger_modifier = {
+# 		trigger = num_assigned_jobs
+# 		parameters = {
+# 			job = BA_keystone_artisan
+# 		}
+# 		mode = add
+# 	}
+# }
 
 ########   星球障碍
 num_BA_Trinity_National_Museum_produce = {

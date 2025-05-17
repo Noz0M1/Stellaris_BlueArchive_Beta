@@ -1,11 +1,12 @@
 slot_BA_municipality = {
     include = {
+        zone_BA_municipality_federal
+        zone_BA_municipality_club
         zone_urban
         zone_industrial
         zone_foundry
         zone_factory
         zone_unity
-        zone_unity_spiritualist
         zone_research
         zone_research_unity
         zone_trade
@@ -22,6 +23,47 @@ slot_BA_municipality = {
         zone_urban_food
         zone_urban_minerals
         zone_urban_energy
+    }
+}
+
+slot_BA_dome = {
+    include = {
+        zone_BA_grand_dome
+        zone_BA_flexible_center
+        zone_urban
+        zone_unity
+        zone_research_unity
+        zone_trade
+        zone_fortress
+        zone_urban_food
+        zone_urban_minerals
+        zone_urban_energy
+    }
+    exclude = {
+        zone_default
+        zone_industrial
+        zone_foundry
+        zone_factory
+        zone_research_physics
+        zone_research_engineering
+        zone_research_society
+        zone_minerals
+        zone_food
+        zone_energy
+    }
+}
+
+slot_BA_urban_factory = {
+    include = {
+        zone_urban
+        zone_industrial
+        zone_foundry
+        zone_factory
+        zone_unity
+        zone_trade
+        zone_fortress
+    }
+    exclude = {
     }
 }
 
