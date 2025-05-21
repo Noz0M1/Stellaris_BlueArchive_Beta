@@ -12,27 +12,7 @@ country_event = {
 		room = BA_04_room
 	}
 	trigger = {
-		has_authority = auth_kivotos
-		NOT = {
-			has_country_flag = BA_ui_communicated
-		}
-		if = {
-			limit = {
-				OR = {
-					has_origin = origin_Kivotos_Eden_treaty
-					has_origin = origin_Kivotos_Kyrie
-					has_origin = origin_Kivotos_Unnamed_starting
-				}
-			}
-			OR = {
-				has_country_flag = BA_origin_Eden_treaty_finished
-				has_country_flag = BA_origin_Kyrie_finished
-				has_country_flag = BA_origin_Unnamed_starting_finished
-			}
-		}
-		else = {
-			num_ascension_perks > 2
-		}
+		BA_origin_finished = yes
 	}
 	diplomatic = yes
 	immediate = {
@@ -1068,11 +1048,7 @@ country_event = {
 		if = {
 			#完成起源事件链
 			limit = {
-				OR = {
-					has_country_flag = BA_origin_Eden_treaty_finished
-					has_country_flag = BA_origin_Kyrie_finished
-					has_country_flag = BA_origin_Kyrie_failed
-				}
+				BA_origin_finished = yes
 			}
 			country_event = {
 				id = BA_ape.0001

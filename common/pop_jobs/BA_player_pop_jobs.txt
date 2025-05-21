@@ -430,7 +430,7 @@ BA_keystone_foundry = {
 }
 
 ### 废料精炼工 ###
-#模式一：废墟球 —— 无维护 -> 0.5稀有资源 -1舒适度
+#模式一：废墟球 —— 无维护 -> 0.5稀有资源 4消费品 -1舒适度
 #模式二：学园球 + 我们的故事 1段 —— 9电 9矿 -> 1稀有资源
 BA_scrap_refiner = {
 	category = specialist
@@ -460,19 +460,28 @@ BA_scrap_refiner = {
 	resources = {
 		category = planet_miners
 		produces = {
-			rare_crystals = 0.5
-			exotic_gases = 0.5
-			volatile_motes = 0.5
+			rare_crystals = 0.1
+			exotic_gases = 0.1
+			volatile_motes = 0.1
+
 		}
 		produces = {
 			trigger = {
-				owner = {
-					has_country_flag = BA_Blue_new_world_1
+				planet = {
+					is_planet_class = pc_BA_ruined_planet
 				}
 			}
-			rare_crystals = 0.5
-			exotic_gases = 0.5
-			volatile_motes = 0.5
+			consumer_goods = 4
+		}
+		produces = {
+			trigger = {
+				planet = {
+					is_planet_class = pc_BA_campus_planet
+				}
+			}
+			rare_crystals = 0.4
+			exotic_gases = 0.4
+			volatile_motes = 0.4
 		}
 		upkeep = {
 			trigger = {
@@ -838,7 +847,6 @@ BA_quartermaster = {
 			building_icon = building_factory_efficiency_1
 		}
 	}
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -875,7 +883,7 @@ BA_quartermaster = {
 
 #############   专家   #############
 ### 废墟开采员
-#基础：无 -> 4矿 2合金
+#基础：无 -> 4矿 2合金 2消费品
 #政策：1消费品或 0.15稀有资源
 #混成化增益：1食物 -> 4工程学
 BA_reminer = {
@@ -900,6 +908,7 @@ BA_reminer = {
 		produces = {
 			minerals = 4
 			alloys = 2
+			consumer_goods = 2
 		}
 		#
 		produces = {
@@ -982,7 +991,7 @@ BA_solar_farmer = {
 	}
 }
 
-### 调查员（摇篮计划
+### 调查员（摇篮计划）
 #基础：5电 -> 6社会和工程学点数 5舒适度
 BA_surveyor = {
 	category = specialist
@@ -1018,7 +1027,6 @@ BA_surveyor = {
 		weight = @specialist_job_weight
 	}
 }
-
 
 #############   劳工   #############
 ### 拾荒者

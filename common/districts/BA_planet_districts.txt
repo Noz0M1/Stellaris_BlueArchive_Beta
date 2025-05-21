@@ -501,6 +501,11 @@ BA_districts_shelter = {
 	potential = {
 		uses_district_set = BA_ruined_planet
 	}
+	zone_slots = {
+		slot_city_government
+		slot_BA_municipality
+		slot_BA_municipality
+	}
 	#建造维护费
 	resources = {
 		category = planet_districts
@@ -539,6 +544,9 @@ BA_districts_remining_area = {
 	potential = {
 		uses_district_set = BA_ruined_planet
 	}
+	zone_slots = {
+		slot_BA_remining
+	}
 	#建造维护费
 	resources = {
 		category = planet_districts
@@ -552,7 +560,6 @@ BA_districts_remining_area = {
 	#修正
 	planet_modifier = {
 		planet_housing_add = 300
-		planet_max_buildings_add = 1
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -567,7 +574,7 @@ BA_districts_remining_area = {
 		potential = {
 			exists = owner
 			owner = {
-				has_country_flag = BA_start_at_ruined_planet
+				BA_origin_finished = no
 			}
 		}
 		modifier = {
@@ -579,14 +586,12 @@ BA_districts_remining_area = {
 		potential = {
 			exists = owner
 			owner = {
-				NOT = {
-					has_country_flag = BA_start_at_ruined_planet
-				}
+				BA_origin_finished = yes
 			}
 		}
 		modifier = {
-			#非阿里乌斯起源 1调查员
-			job_BA_surveyor_add = 100
+			#非起源或摇篮计划 1精炼工
+			job_BA_scrap_refiner_add = 100
 		}
 	}
 }
@@ -601,6 +606,9 @@ BA_districts_supply_station = {
 	potential = {
 		uses_district_set = BA_ruined_planet
 	}
+	zone_slots = {
+		slot_BA_supply_station
+	}
 	#建造维护费
 	resources = {
 		category = planet_districts
@@ -614,14 +622,13 @@ BA_districts_supply_station = {
 	#修正
 	planet_modifier = {
 		planet_housing_add = 300
-		planet_max_buildings_add = 1
 	}
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 		}
 		modifier = {
-			#3太阳能农场职工
+			#300太阳能农场职工
 			job_BA_solar_farmer_add = 300
 		}
 	}
@@ -637,6 +644,9 @@ BA_districts_special_factory = {
 	potential = {
 		uses_district_set = BA_ruined_planet
 	}
+	zone_slots = {
+		slot_BA_special_factory
+	}
 	#建造维护费
 	resources = {
 		category = planet_districts
@@ -647,19 +657,30 @@ BA_districts_special_factory = {
 			energy = @BA_ruin_upkeep
 		}
 	}
-	#修正
-	planet_modifier = {
-		planet_max_buildings_add = 2
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				BA_origin_finished = no
+			}
+		}
+		modifier = {
+			#阿里乌斯起源 100军需员 100配给员
+			job_BA_quartermaster_add = 100
+			job_BA_supplier_add = 100
+
+		}
 	}
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				BA_origin_finished = yes
+			}
 		}
 		modifier = {
-			#阿里乌斯起源 1军需员 1配给员
-			job_BA_quartermaster_add = 100
-			job_BA_supplier_add = 100
-			job_BA_scrap_refiner_add = 100
+			#摇篮计划 200调查员
+			job_BA_surveyor_add = 200
 		}
 	}
 }

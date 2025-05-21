@@ -14,7 +14,6 @@ country_event = {
 		country_event = {
 			id = BA_origin.0002
 		}
-		set_country_flag = BA_origin_Eden_treaty_engaged
 		capital_scope = {
 			clear_planet_modifiers = yes
 			# 区划建筑
@@ -385,8 +384,7 @@ country_event = {
 	desc = "BA_origin.0010.desc"
 	picture = GFX_BA_Kivotos_highway
 	immediate = {
-		remove_country_flag = BA_origin_Eden_treaty_engaged
-		set_country_flag = BA_origin_Eden_treaty_finished
+		set_country_flag = BA_origin_finished
 		set_country_flag = BA_Project_Cradle_ready		#项目
 	}
 	option = {
@@ -668,12 +666,37 @@ country_event = {
 		has_origin = origin_Kivotos_Kyrie
 	}
 	immediate = {
-		set_country_flag = BA_origin_Kyrie_engaged
 		capital_scope = {
 			###
 			set_planet_flag = BA_Kyrie_target_@root
 			save_global_event_target_as = BA_Kyrie_capital_target_@root
 			###
+			clear_planet_modifiers = yes
+			validate_planet_buildings_and_districts = yes
+			remove_all_districts = yes
+			add_district = BA_districts_shelter
+			add_district = BA_districts_shelter
+			add_district = BA_districts_remining_area
+			add_district = BA_districts_remining_area
+			add_district = BA_districts_remining_area
+			add_district = BA_districts_supply_station
+			add_district = BA_districts_supply_station
+			add_district = BA_districts_special_factory
+			add_district = BA_districts_special_factory
+			remove_building = building_colony_shelter
+			add_building = {
+				zone = zone_default
+				building = building_capital
+			}
+			add_building = {
+				zone = zone_default
+				building = building_BA_Locker_room
+			}
+			add_building = {
+				zone = zone_default
+				building = building_BA_basis_schola_1
+			}
+			# 区块
 			clear_deposits = yes			#清除原有区块
 			add_deposit = d_Arius_Cathedral_ruined			#大圣堂
 			add_deposit = d_broken_Abydos_school			#_ruined			#阿拜多斯校区
@@ -683,26 +706,21 @@ country_event = {
 			add_deposit = d_broken_power_station			#_ruined			#千年发电厂
 			add_deposit = d_broken_desert_mine			#_ruined			#沙漠矿区
 			add_deposit = d_Greenhouse_farms			#_ruined			#农场
-			remove_building = building_commercial_zone			#清除旧建筑 下同
-			remove_building = building_research_lab_1
-			remove_building = building_bureaucratic_1
-			remove_building = building_temple
-			remove_building = building_temple
-			remove_all_districts = yes			#清除旧区划
-			add_district = BA_districts_shelter
-			add_district = BA_districts_shelter
-			add_district = BA_districts_remining_area
-			add_district = BA_districts_remining_area
-			add_district = BA_districts_supply_station
-			add_district = BA_districts_special_factory
-			add_building = building_BA_Locker_room			#夏莱建筑
-			#清除25%人口
+			# remove_building = building_commercial_zone			#清除旧建筑 下同
+			# remove_building = building_research_lab_1
+			# remove_building = building_bureaucratic_1
+			# remove_building = building_temple
+			# remove_building = building_temple
+			#人口
 			every_owned_pop_group = {
-				kill_pop_group = {
-					pop_group = this
-					percentage = 0.25
-				}
+				kill_all_pop = yes
 			}
+			create_pop_group = {
+				species = owner_main_species
+				size = 2500
+			}
+			check_planet_employment = yes
+			validate_planet_buildings_and_districts = yes
 		}
 		### 创建领袖
 		inline_script = {
@@ -848,7 +866,11 @@ country_event = {
 			set_situation_locked = no
 		}
 		capital_scope = {
-			add_building = building_BA_mixed_ruins_lab
+			add_building = {
+				district = BA_districts_shelter
+				zone = zone_default
+				building = building_BA_mixed_ruins_lab
+			}
 		}
 	}
 }
@@ -1492,6 +1514,11 @@ situation_event = {
 			}
 			set_situation_flag = BA_enemy_met
 		}
+		owner = {
+			add_resource = {
+				consumer_goods = 100000000000
+			}
+		}
 	}
 }
 
@@ -1990,9 +2017,8 @@ planet_event = {
 	option = {
 		name = BA_origin.1410.next
 		owner = {
-			remove_country_flag = BA_origin_Kyrie_engaged
 			set_country_flag = BA_origin_Kyrie_failed
-			set_country_flag = BA_origin_Kyrie_finished
+			set_country_flag = BA_origin_finished
 			every_situation = {
 				limit = {
 					has_situation_flag = situation_Kyrie
@@ -2011,8 +2037,8 @@ planet_event = {
 		}
 		every_owned_pop_group = {
 			resettle_pop_group = {
-				pop_group = THIS
-				planet = event_target:BA_resettle_target
+				POP_GROUP = THIS
+				PLANET = event_target:BA_resettle_target
 			}
 		}
 		change_pc = pc_shattered
@@ -2051,9 +2077,8 @@ planet_event = {
 	option = {
 		name = BA_origin.1412.next
 		owner = {
-			remove_country_flag = BA_origin_Kyrie_engaged
 			set_country_flag = BA_origin_Kyrie_failed
-			set_country_flag = BA_origin_Kyrie_finished
+			set_country_flag = BA_origin_finished
 			every_situation = {
 				limit = {
 					has_situation_flag = situation_Kyrie
@@ -2072,8 +2097,8 @@ planet_event = {
 		}
 		every_owned_pop_group = {
 			resettle_pop_group = {
-				pop_group = THIS
-				planet = event_target:BA_resettle_target
+				POP_GROUP = THIS
+				PLANET = event_target:BA_resettle_target
 			}
 		}
 		change_pc = pc_shattered
@@ -2102,9 +2127,8 @@ planet_event = {
 	option = {
 		name = BA_origin.1414.next
 		owner = {
-			remove_country_flag = BA_origin_Kyrie_engaged
 			set_country_flag = BA_origin_Kyrie_failed
-			set_country_flag = BA_origin_Kyrie_finished
+			set_country_flag = BA_origin_finished
 			every_situation = {
 				limit = {
 					has_situation_flag = situation_Kyrie
@@ -2174,8 +2198,7 @@ country_event = {
 		}
 	}
 	immediate = {
-		set_country_flag = BA_origin_Kyrie_finished
-		remove_country_flag = BA_origin_Kyrie_engaged
+		set_country_flag = BA_origin_finished
 		set_country_flag = BA_Project_Cradle_ready		#项目
 	}
 	option = {
@@ -2467,7 +2490,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_country_flag = BA_origin_Kyrie_finished
+				BA_origin_finished = yes
 			}
 			add_resource = {
 				sr_pyroxenes = 0.5
@@ -3034,7 +3057,7 @@ planet_event = {
 		remove_planet_flag = BA_fade_Sanctum
 		owner = {
 			remove_country_flag = BA_origin_Unnamed_starting_engaged_2
-			set_country_flag = BA_origin_Unnamed_starting_finished
+			set_country_flag = BA_origin_finished
 			set_country_flag = BA_Project_Cradle_ready			#项目
 		}
 	}

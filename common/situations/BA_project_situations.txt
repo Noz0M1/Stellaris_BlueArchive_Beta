@@ -49,7 +49,7 @@ situation_Project_Cradle_A = {
 			set = 0
 			desc = Project_Cradle_A_ship_event
 			owner = {
-				has_country_flag =   BA_Project_Cradle_A_ship_event
+				has_country_flag = BA_Project_Cradle_A_ship_event
 			}
 		}
 		modifier = {
@@ -64,6 +64,7 @@ situation_Project_Cradle_A = {
 		icon_background = GFX_situation_approach_bg_red
 		default = yes
 		on_select = {
+			custom_tooltip = Project_Cradle_A_nothing_desc
 		}
 	}
 	approach = {
@@ -85,6 +86,7 @@ situation_Project_Cradle_A = {
 				energy = 5
 			}
 		}
+		active_tooltip = Project_Cradle_A_support_desc
 	}
 	######
 	stages = {
@@ -138,6 +140,7 @@ situation_Project_Cradle_A = {
 		}
 	}
 	on_progress_complete = {
+		custom_tooltip = Project_Cradle_A_complete
 		owner = {
 			country_event = {
 				id = BA_Project.0016
@@ -211,17 +214,22 @@ situation_Project_Cradle_B = {
 		}
 	}
 	on_progress_complete = {
-		owner = {
-			country_event = {
-				id = BA_Project.8026
+		custom_tooltip = Project_Cradle_B_complete
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = BA_Project.8026
+				}
 			}
 		}
-		#destroy_situation = this
 	}
 	on_fail = {
-		owner = {
-			country_event = {
-				id = BA_Project.8027
+		custom_tooltip = Project_Cradle_B_fail
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = BA_Project.8027
+				}
 			}
 		}
 	}
@@ -537,7 +545,6 @@ situation_Halo_awaken = {
 		name = situation_Halo_awaken_support
 		icon = GFX_situation_approach_research
 		icon_background = GFX_situation_approach_bg_green
-		default = yes
 		on_select = {
 		}
 		resources = {

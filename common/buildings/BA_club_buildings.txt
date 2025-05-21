@@ -136,59 +136,6 @@ building_BA_Locker_room = {
 }
 
 ### 通用部室 +2/+5社团部员
-building_BA_club_room = {
-	icon = building_augmentation_center
-	base_buildtime = @club_room_time
-	category = government
-
-	building_sets = {
-		government
-		ba_government
-	}
-
-	position_priority = 22
-	potential = {
-		owner = {
-			has_authority = auth_kivotos
-		}
-		NOR = {
-			is_planet_class = pc_BA_auto_ringworld
-			is_planet_class = pc_BA_auto_habitat
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
-		modifier = {
-			job_BA_club_members_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_technology = tech_BA_SI_Millennium_G03
-			}
-		}
-		modifier = {
-			job_BA_club_members_add = 200
-		}
-	}
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = 400
-		}
-		upkeep = {
-			consumer_goods = 1
-			energy = 1
-		}
-	}
-}
 
 #############   社团建筑    #############
 #游戏开发部

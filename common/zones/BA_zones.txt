@@ -60,13 +60,14 @@ zone_BA_municipality_federal = {
 			energy = 500
 		}
 	}
+	district_planet_modifier = {
+		planet_housing_add = 200
+	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 		}
-		job_BA_dont_be_crazy_here_add = 50
-		job_BA_Kivotos_miner_add = 50
-		job_BA_caterer_add = 50
+		job_BA_Kivotos_staff_add = 150
 	}
 	included_building_sets = {
 		industrial
@@ -102,11 +103,13 @@ zone_BA_municipality_club = {
 			energy = 500
 		}
 	}
+	district_planet_modifier = {
+		planet_housing_add = 300
+	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 		}
-		planet_housing_add = 300
 		job_BA_club_members_add = 300
 	}
 	triggered_district_planet_modifier = {
@@ -364,4 +367,241 @@ zone_BA_food_suburbs = {
 	planet_modifier = {
 		zone_building_slots_add = 3
 	}
+}
+
+#####################################
+#学园都市废墟星球区划
+#####################################
+zone_BA_remining = {
+	icon = GFX_resource_minerals_large
+	base_buildtime = 360
+	potential = {
+		exists = owner
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 500
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			#100矿工
+			planet_housing_add = 300
+			job_BA_reminer_add = 100
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				BA_origin_finished = no
+			}
+		}
+		modifier = {
+			#阿里乌斯起源 50矿工
+			job_BA_reminer_add = 50
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				BA_origin_finished = yes
+			}
+		}
+		modifier = {
+			#非阿里乌斯起源 50调查员
+			job_BA_surveyor_add = 50
+		}
+	}
+
+	included_building_sets = {
+		mining
+		ba_mining
+		fallen_empire_mining
+		automation
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+zone_BA_supply_station = {
+	icon = GFX_resource_minerals_large
+	base_buildtime = 360
+	potential = {
+		exists = owner
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 500
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			#150太阳能农场职工
+			planet_housing_add = 300
+			job_BA_solar_farmer_add = 150
+		}
+	}
+	included_building_sets = {
+		mining
+		ba_mining
+		fallen_empire_mining
+		automation
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+zone_BA_special_factory_A = {
+	icon = GFX_resource_minerals_large
+	base_buildtime = 360
+	potential = {
+		exists = owner
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 500
+			energy = 500
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				BA_origin_finished = no
+			}
+		}
+		modifier = {
+			#阿里乌斯起源 50军需员 50配给员
+			job_BA_quartermaster_add = 50
+			job_BA_supplier_add = 50
+
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				BA_origin_finished = yes
+			}
+		}
+		modifier = {
+			#摇篮计划 100调查员
+			job_BA_surveyor_add = 100
+		}
+	}
+
+	included_building_sets = {
+		mining
+		ba_mining
+		fallen_empire_mining
+		automation
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+zone_BA_special_factory_B = {
+	icon = GFX_resource_minerals_large
+	base_buildtime = 360
+	potential = {
+		exists = owner
+		owner = {
+			BA_origin_finished = no
+		}
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 500
+			energy = 500
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				BA_origin_finished = no
+			}
+		}
+		modifier = {
+			#阿里乌斯起源 军需员
+			job_BA_quartermaster_add = 200
+			job_BA_supplier_add = -100
+		}
+	}
+	included_building_sets = {
+		mining
+		ba_mining
+		fallen_empire_mining
+		automation
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+	convert_to = { zone_BA_special_factory_A }
+}
+
+zone_BA_special_factory_C = {
+	icon = GFX_resource_minerals_large
+	base_buildtime = 360
+	potential = {
+		exists = owner
+		owner = {
+			BA_origin_finished = no
+		}
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 500
+			energy = 500
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				BA_origin_finished = no
+			}
+		}
+		modifier = {
+			#阿里乌斯起源 配给员
+			job_BA_quartermaster_add = -100
+			job_BA_supplier_add = 200
+		}
+	}
+	included_building_sets = {
+		mining
+		ba_mining
+		fallen_empire_mining
+		automation
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+	convert_to = { zone_BA_special_factory_A }
 }

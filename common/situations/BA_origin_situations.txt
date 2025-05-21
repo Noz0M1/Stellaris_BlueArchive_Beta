@@ -41,13 +41,14 @@ situation_Kyrie_ruin_research = {
 		}
 	}
 	picture = GFX_BA_Arius_ruins
-	category = neutral
+	category = positive
 	complete_icon = GFX_situation_outcome_positive
 	complete_icon_frame = GFX_situation_outcome_frame_blue
 	fail_icon = GFX_situation_outcome_positive
 	fail_icon_frame = GFX_situation_outcome_frame_blue
 	######
-	start_value = 0
+	#start_value = 0
+	initial_progress = 0
 	progress_direction = monodirectional
 	monthly_progress = {
 		base = 1
@@ -59,6 +60,9 @@ situation_Kyrie_ruin_research = {
 		default = yes
 		on_select = {
 		}
+		modifier = {
+			planet_stability_add = 5
+		}
 	}
 	######
 	on_start = {
@@ -68,7 +72,7 @@ situation_Kyrie_ruin_research = {
 		situation_Kyrie_ruin_research_1 = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_blue
-			end = 24			#持续2年 （2
+			end = 24
 			custom_tooltip = situation_Kyrie_ruin_research_1_tip
 		}
 		situation_Kyrie_ruin_research_2 = {
@@ -180,10 +184,10 @@ situation_Kyrie_planet_cleaning = {
 	fail_icon_frame = GFX_situation_outcome_frame_blue
 	######
 	start_value = 0
+	initial_progress = 0
 	progress_direction = monodirectional
 	monthly_progress = {
 		base = 10
-		
 	}
 	approach = {
 		name = situation_Kyrie_planet_cleaning_default
@@ -273,10 +277,16 @@ situation_Kyrie_planet_cleaning = {
 }
 
 situation_Kyrie_engage_enemy = {
+	# desc = {
+	# 	text = situation_Kyrie_engage_enemy_desc
+	# 	trigger = {
+	# 		situation_progress = 24
+	# 	}
+	# }
 	desc = {
 		text = situation_Kyrie_engage_enemy_desc
 		trigger = {
-			situation_progress = 24
+			always = yes
 		}
 	}
 	picture = GFX_BA_Abydos_vs_Binah
@@ -286,7 +296,8 @@ situation_Kyrie_engage_enemy = {
 	fail_icon = GFX_situation_outcome_positive
 	fail_icon_frame = GFX_situation_outcome_frame_blue
 	######
-	start_value = 0
+	#start_value = 0
+	initial_progress = 0
 	progress_direction = monodirectional
 	monthly_progress = {
 		base = 1
@@ -311,6 +322,9 @@ situation_Kyrie_engage_enemy = {
 		icon = GFX_situation_approach_research
 		icon_background = GFX_situation_approach_bg_green
 		default = yes
+		on_select = {
+			custom_tooltip = situation_Kyrie_engage_enemy_default_desc
+		}
 	}
 	approach = {
 		name = situation_Kyrie_engage_enemy_alert
@@ -319,6 +333,8 @@ situation_Kyrie_engage_enemy = {
 		target_modifier = {
 			pop_amenities_usage_mult = 0.1
 		}
+		on_select = {
+		}
 	}
 	approach = {
 		name = situation_Kyrie_engage_enemy_max_signal
@@ -326,6 +342,8 @@ situation_Kyrie_engage_enemy = {
 		icon_background = GFX_situation_approach_bg_yellow
 		target_modifier = {
 			pop_amenities_usage_mult = 0.1
+		}
+		on_select = {
 		}
 		resources = {
 			category = situations
@@ -338,6 +356,8 @@ situation_Kyrie_engage_enemy = {
 		name = situation_Kyrie_engage_enemy_quest
 		icon = GFX_situation_approach_research
 		icon_background = GFX_situation_approach_bg_yellow
+		on_select = {
+		}
 		active_tooltip = situation_Kyrie_engage_enemy_quest_tip
 		target_modifier = {
 			planet_jobs_physics_research_produces_mult = -0.2
@@ -431,9 +451,8 @@ situation_Kyrie_engage_enemy = {
 	}
 	on_monthly = {
 		random_events = {
-			6 = 0
+			7 = 0
 			1 = BA_origin.1210
-			1 = BA_origin.1211
 		}
 	}
 	on_progress_complete = {

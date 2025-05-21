@@ -74,6 +74,8 @@
  building_BA_Locker_room_tip:0 "（将领袖派驻为此处的§Y星球总督§!，即可在§B什亭之匣§!中为其更换换装）（这座建筑由首都的§B $building_BA_Schale_office$ §!转化而来）"
  building_BA_club_room:0 "通用社团部"
  building_BA_club_room_desc:0 "供学生们进行社团活动的场所，内部设有活动所需的一切设施。"
+ building_BA_club_mansion:0 "通用社团大楼"
+ building_BA_club_mansion_desc:0 "供大量的学生们进行社团活动的巨大建筑物，内部设有活动所需的一切设施。"
  building_BA_Game_development_department:0 "社团部：游戏开发部工作室"
  building_BA_Game_development_department_desc:0 "游戏开发部的部室，致力于制作游戏。"
  building_BA_Engineering_club:0 "社团部：工程师部研究所"
@@ -158,10 +160,10 @@
  #####       Decision       #####
  decision_Atrahasis_research_1:0 "方舟自动化设施研究"
  decision_Atrahasis_research_1_desc:0 "自动化区划的生产效率得到部分恢复，§H所有自动化区划的产出和维护费都会得到提高。§!"
- decision_Atrahasis_research_1_tip:0 "关于自动化设施宕机问题的充分研究，需要消耗成箱的青辉石和咖啡因。§!"
+ decision_Atrahasis_research_1_tip:0 "关于自动化设施宕机问题的充分研究，需要消耗成箱的青辉石和咖啡因。"
  decision_Atrahasis_research_2:0 "方舟自动化设施研究"
- decision_Atrahasis_research_2_desc:0 "自动化区划将发挥它全部的潜力，§H所有自动化区划的产出和维护费都会得到提高。§!"
- decision_Atrahasis_research_2_tip:0 "关于自动化设施产线工作异常问题的充分研究，需要消耗堆积如山的青辉石和咖啡因。§!"
+ decision_Atrahasis_research_2_desc:0 "自动化区划将发挥它全部的潜力，§H所有自动化区划的产出和维护费都会得到提高。"
+ decision_Atrahasis_research_2_tip:0 "关于自动化设施产线工作异常问题的充分研究，需要消耗堆积如山的青辉石和咖啡因。"
  decision_Kyrie_enemy_1:0 "措施一：屏蔽塔重启检修"
  decision_Kyrie_enemy_1_desc:0 "对行星上现存的屏蔽塔进行重启检修。此外，还需要为陆军的护送行动准备一些物资。"
  decision_Kyrie_enemy_2:0 "措施二：屏蔽塔功率增强"
@@ -428,7 +430,22 @@
  zone_BA_food_suburbs: "气候工程农场"
  zone_BA_food_suburbs_desc: "因地制宜供给各种各样的食物，从既实惠还管饱的营养膏到奢靡的山珍海味一应俱全。"
  mod_planet_zone_BA_food_suburbs_build_speed_mult: "$zone_BA_food_suburbs$建造速度"
+ zone_BA_remining: "再采集分选区"
+ zone_BA_remining_desc: "从学园都市废墟中清理出的材料种类数以千计，因此在这个区域中分选重炼。"
+ mod_planet_zone_BA_remining_build_speed_mult: "$zone_BA_remining$建造速度"
+ zone_BA_supply_station: "光电联产区"
+ zone_BA_supply_station_desc: "利用光电设备区域的废水等生产更多的资源。"
+ mod_planet_zone_BA_supply_station_build_speed_mult: "$zone_BA_supply_station$建造速度"
 
+ zone_BA_special_factory_A: "特业强化区"
+ zone_BA_special_factory_A_desc: "一切为了基沃托斯的未来。"
+ mod_planet_zone_BA_special_factory_A_build_speed_mult: "$zone_BA_special_factory_A$建造速度"
+ zone_BA_special_factory_B: "军需强化区"
+ zone_BA_special_factory_B_desc: "学园武装们认为基沃托斯的未来需要用剑来开辟。"
+ mod_planet_zone_BA_special_factory_B_build_speed_mult: "$zone_BA_special_factory_B$建造速度"
+ zone_BA_special_factory_C: "配给强化区"
+ zone_BA_special_factory_C_desc: "学园社团部认为必须充分利用现有的资源。"
+ mod_planet_zone_BA_special_factory_C_build_speed_mult: "$zone_BA_special_factory_C$建造速度"
 
 
  #####      Diplomatic      #####
@@ -1161,6 +1178,7 @@
  #摇篮计划-前期准备
  situation_Project_Cradle_A:0 "摇篮计划"
  situation_Project_Cradle_A_type:0 "摇篮计划"
+ situation_Project_Cradle_A_monthly_change_tooltip:0 "摇篮计划的工作进度"
  situation_Project_Cradle_A_desc_1:0 "Arona在巨塔中发现了一个庞大但层层加密的资料库，根据其他资料对数据库的描述来看，其内容似乎和这个星系的各种反常现象有关。如果要研究这些现象，也许可以从这个资料库入手。"
  situation_Project_Cradle_A_desc_ship:0 "星星点点的信息显示某颗行星上的建筑遗址十分可疑，需要派遣舰船进行进一步探索。"
  situation_Project_Cradle_A_desc_2:0 "资料库经过发掘，得到的最大成果是一份原理和用途皆不明的仪器图纸。好在这个仪器看起来很容易制造，我们需要进行进一步的研究。"
@@ -1169,17 +1187,27 @@
  Project_Cradle_A_ship_event:0 "等待指派舰船进行下一步探索。"
  Project_Cradle_A_supporting:0 "得到了联邦学生会的资金援助。"
  Project_Cradle_A_nothing:0 "维持现状"
+ Project_Cradle_A_nothing_desc:0 "工作不紧急，维持现状就可以。"
  Project_Cradle_A_support:0 "提供援助"
+ Project_Cradle_A_support_desc:0 "为参加工作的学生们准备一些咖啡。"
  Project_Cradle_A_1_tip:0 "资料库解密"
  Project_Cradle_A_2_tip:0 "不明仪器图纸研究"
  Project_Cradle_A_3_tip:0 "解除星球屏障"
  Project_Cradle_A_4_tip:0 "初步探索废墟"
+ Project_Cradle_A_1:0 ""
+ Project_Cradle_A_2:0 ""
+ Project_Cradle_A_3:0 ""
+ Project_Cradle_A_complete:0 "派遣一批殖民者，在此建立殖民地以进一步调查。"
  #摇篮计划-被掩埋的真相
  situation_Project_Cradle_B:0 "被掩埋的真相"
  situation_Project_Cradle_B_type:0 "被掩埋的真相"
+ situation_Project_Cradle_B_monthly_change_tooltip:0 "摇篮计划的工作进度"
  situation_Project_Cradle_B_desc:0 "我们在基沃托斯废墟星球的挖掘行动并不是完全掩人耳目的，如此规模之大的挖掘工程就不可能拦得住其他好奇的学生们的调查，她们通过各种各样的手段得知了这颗与我们同根同源的星球当初到底经历了什么:关于“我们”引起的战火与毁灭……"
  Project_Cradle_B_option_1:0 "公布真相"
  Project_Cradle_B_option_2:0 "管制信息"
+ Project_Cradle_B_complete:0 ""
+ Project_Cradle_B_fail:0 ""
+
  #摇篮计划-星球清理
  situation_Project_Cradle_C:0 "星球清理"
  situation_Project_Cradle_C_type:0 "星球清理"
@@ -1207,6 +1235,7 @@
  #致被遗忘的众神-废墟研究
  situation_Kyrie_ruin_research:0 "废墟研究"
  situation_Kyrie_ruin_research_type:0 "废墟研究"
+ situation_Kyrie_ruin_research_monthly_change_tooltip:0 "我们必须研究我们星球上的废墟。"
  situation_Kyrie_ruin_research_desc_1:0 "我们星球上的废墟是意外之敌所造成，和通常意义上的废墟并不相同。现在，我们已经在星系中建立了哨站，将我们的疆域扩张至太空。接下来，我们必须在无垠的太空中获取我们需要的一切，研究母星上的废墟，将我们的家园在废墟上重新建起。"
  situation_Kyrie_ruin_research_desc_2:0 "我们的矿业协会首先取得了突破：按她们的计划，我们需要收集更多关于这颗星球上废墟的相关数据，为此我们需要建造一个混成化实验室来承担这个功能。首先，先要完成£society_research£§Y$tech_BA_ruins_research$§!科技(研究选项可在§Y委托§!页面中获得)。"
  situation_Kyrie_ruin_research_desc_3:0 "混成化实验室正在对星球废墟的一些特征进行基础研究。目标是将废墟变成可供开采的矿藏。"
@@ -1226,6 +1255,7 @@
  #致被遗忘的众神-清扫重建
  situation_Kyrie_planet_cleaning:0 "清扫重建"
  situation_Kyrie_planet_cleaning_type:0 "清扫重建"
+ situation_Kyrie_planet_cleaning_monthly_change_tooltip:0 "必须将这些废墟清扫干净，重建我们的学园。"
  situation_Kyrie_planet_cleaning_1:0 "联邦学生会统括室和交通室正在准备清扫星球废墟需要使用的各种重型设备。"
  situation_Kyrie_planet_cleaning_2:0 "正在对星球进行清扫，这个过程需要消耗£energy£能量币并产出各种资源。"
  situation_Kyrie_planet_cleaning_3:0 "清扫工作已经全部完成，只剩下最后一步工作了。(于§Y行星决议(N)§!中完成重建学园都市星球)"
@@ -1236,8 +1266,10 @@
  #致被遗忘的众神-地下威胁
  situation_Kyrie_engage_enemy:0 "地下威胁"
  situation_Kyrie_engage_enemy_type:0 "地下威胁"
+ situation_Kyrie_engage_enemy_monthly_change_tooltip:0 "我们必须直面来自地下的威胁。"
  situation_Kyrie_engage_enemy_desc:0 "母星的地下有着不少的危险敌人。幸运的是，我们占据了绝对有利的地理位置，即使敌人异常强大，我们也仍握有战斗的主动权。(在§R局势进度推满§!前，于母星的§Y行星决议(N)§!中完成4项决议以完成该局势)"
  situation_Kyrie_engage_enemy_default:0 "维持现状"
+ situation_Kyrie_engage_enemy_default_desc:0 "我们的资源和人手都有限，必须专注于关键的事件中。"
  situation_Kyrie_engage_enemy_alert:0 "巡逻警戒"
  situation_Kyrie_engage_enemy_alert_desc:0 "简单的巡逻警戒也可以起到相当不错的效果。"
  situation_Kyrie_engage_enemy_max_signal:0 "增强屏蔽塔信号"
@@ -1776,13 +1808,13 @@
 
  ap_BA_Our_story:0 "我们的故事"
  ap_BA_Our_story_desc:0 "我们将走向何方由自己来决定，我们的历史当然不会结束在这里。这就是我们用双手亲自写下的，我们的故事。"
- ap_BA_Our_story_tip:0 "每个§B学园区划§!: §G+1£job_BA_student_delegate£$job_BA_student_delegate$§!岗位\n解锁一系列项目，为学园都市星球带来巨大增益"
+ ap_BA_Our_story_tip:0 "解锁一系列£research£项目，为§B学园都市星球§!带来巨大增益"
  ap_BA_origin_limit:0 "$TRIGGER_FAIL$需要先完成该起源的事件链."
  requires_ascension_perks_4:0 "$TRIGGER_FAIL$需要首先选择另外四个飞升天赋。"
 
  ap_BA_new_frontier:0 "新边界"
  ap_BA_new_frontier_desc:0 "我们所到之处，终是碧蓝的世界。"
- ap_BA_new_frontier_tip:0 "普通殖民地将可以改造为§Y学园都市星球§!\n卫星局可以升级为星链局" #\n分部建筑的建造将不受限制
+ ap_BA_new_frontier_tip:0 "普通殖民地将可以改造为§B学园都市星球§!\n为一部分功能建筑解锁升级（$building_BA_starlink_1$、$building_BA_basis_schola_1$等）" #\n分部建筑的建造将不受限制
  BA_Rebuild_a_planet:0 "[Root.GetRatherPlanetRebuilded]"
  BA_Rebuild_a_planet_YES:0 "$TRIGGER_PASS$完成一次学园都市废墟星球的重建（起源事件链或“摇篮计划”）"
  BA_Rebuild_a_planet_NO:0 "$TRIGGER_FAIL$完成一次学园都市废墟星球的重建（起源事件链或“摇篮计划”）"
