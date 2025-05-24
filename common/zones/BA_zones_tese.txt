@@ -1,0 +1,566 @@
+########## 居住站起源政府区域 ##########
+zone_BA_concept_habitat_goverment = {
+    icon = GFX_diplomatic_weight_large
+    base_buildtime = 240
+
+    ### 总是可用 ###
+    potential = {
+
+    }
+    unlock = {
+
+    }
+
+    ### 预留标记 ###
+    resources = {
+
+    }
+
+    max_buildings = 6
+
+    include = {
+        all
+    }
+
+    ### 任意类型建筑均可用 ###
+    excluded_building_sets = {
+
+    }
+}
+########## 城市，凝聚力 ###########
+zone_BA_concept_habitat_unity = {
+    icon = GFX_diplomatic_weight_large
+    base_buildtime = 180
+
+    ### 预留标记 ###
+    potential = {
+
+    }
+    unlock = {
+
+    }
+
+    ### 预留标记 ###
+    resources = {
+
+    }
+
+    max_buildings = 3
+
+    include = {
+        all
+    }
+
+    ### 任意类型建筑均可用 ###
+    excluded_building_sets = {
+
+    }
+}
+
+########## 城市，科研 ##########
+zone_BA_concept_habitat_science = {
+    icon = GFX_diplomatic_weight_large
+    base_buildtime = 180
+
+    ### 预留标记 ###
+    potential = {
+
+    }
+    unlock = {
+
+    }
+
+    ### 预留标记 ###
+    resources = {
+
+    }
+
+    max_buildings = 3
+
+    include = {
+        all
+    }
+
+    ### 任意类型建筑均可用 ###
+    excluded_building_sets = {
+
+    }
+}
+
+########## 城市，贸易 ##########
+zone_BA_concept_habitat_commercial= {
+    icon = GFX_diplomatic_weight_large
+    base_buildtime = 180
+
+    ### 预留标记 ###
+    potential = {
+
+    }
+    unlock = {
+
+    }
+
+    ### 预留标记 ###
+    resources = {
+
+    }
+
+    max_buildings = 3
+
+    include = {
+        all
+    }
+
+    ### 任意类型建筑均可用 ###
+    excluded_building_sets = {
+
+    }
+}
+
+########## 透镜区，自动化 ##########
+zone_BA_concept_habitat_refinery01 = {
+    icon = GFX_diplomatic_weight_large
+    base_buildtime = 180
+
+    ### 预留标记 ###
+    potential = {
+
+    }
+    unlock = {
+
+    }
+
+    ### 预留标记 ###
+    resources = {
+
+    }
+
+    max_buildings = 3
+
+    include = {
+        all
+    }
+
+    ### 任意类型建筑均可用 ###
+    excluded_building_sets = {
+
+    }
+}
+
+########## 透镜区，人工 ##########
+zone_BA_concept_habitat_refinery02 = {
+    icon = GFX_diplomatic_weight_large
+    base_buildtime = 180
+
+    ### 预留标记 ###
+    potential = {
+
+    }
+    unlock = {
+
+    }
+
+    ### 预留标记 ###
+    resources = {
+
+    }
+
+    ### 预留标记 ###
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+        }
+
+    }
+
+    max_buildings = 3
+
+    include = {
+        all
+    }
+
+    ### 任意类型建筑均可用 ###
+    excluded_building_sets = {
+
+    }
+}
+
+########## 维持区，自动化 #########
+zone_BA_concept_habitat_sustainer01 = {
+    icon = GFX_diplomatic_weight_large
+    base_buildtime = 180
+
+    ### 预留标记 ###
+    potential = {
+
+    }
+    unlock = {
+
+    }
+
+    ### 预留标记 ###
+    resources = {
+
+    }
+
+    ### 预留标记 ###
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+        }
+
+    }
+
+    max_buildings = 3
+
+    include = {
+        all
+    }
+
+    ### 任意类型建筑均可用 ###
+    excluded_building_sets = {
+
+    }
+}
+
+########## 维持区，人工 ##########
+zone_BA_concept_habitat_sustainer02 = {
+    icon = GFX_diplomatic_weight_large
+    base_buildtime = 180
+
+    ### 预留标记 ###
+    potential = {
+
+    }
+    unlock = {
+
+    }
+
+    ### 预留标记 ###
+    resources = {
+
+    }
+
+    ### 预留标记 ###
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+        }
+
+    }
+
+    max_buildings = 3
+
+    include = {
+        all
+    }
+
+    ### 任意类型建筑均可用 ###
+    excluded_building_sets = {
+
+    }
+}
+
+########## 铸造区，自动化 ##########
+zone_BA_concept_habitat_foundry01 = {
+    icon = GFX_diplomatic_weight_large
+    base_buildtime = 180
+
+    ### 预留标记 ###
+    potential = {
+
+    }
+    unlock = {
+
+    }
+
+    ### 预留标记 ###
+    resources = {
+
+    }
+
+    ### 预留标记 ###
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+        }
+
+    }
+
+    max_buildings = 3
+
+    include = {
+        all
+    }
+
+    ### 任意类型建筑均可用 ###
+    excluded_building_sets = {
+
+    }
+}
+
+########## 铸造区，人工 ##########
+zone_BA_concept_habitat_foundry02 = {
+    icon = GFX_diplomatic_weight_large
+    base_buildtime = 180
+
+    ### 预留标记 ###
+    potential = {
+
+    }
+    unlock = {
+
+    }
+
+    ### 预留标记 ###
+    resources = {
+
+    }
+
+    ### 预留标记 ###
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+        }
+
+    }
+
+    max_buildings = 3
+
+    include = {
+        all
+    }
+
+    ### 任意类型建筑均可用 ###
+    excluded_building_sets = {
+
+    }
+}
+
+########## 矩阵区，自动化 ##########
+zone_BA_concept_habitat_matrix01= {
+    icon = GFX_diplomatic_weight_large
+    base_buildtime = 180
+
+    ### 预留标记 ###
+    potential = {
+
+    }
+    unlock = {
+
+    }
+
+    ### 预留标记 ###
+    resources = {
+
+    }
+
+    ### 预留标记 ###
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+        }
+
+    }
+
+    max_buildings = 3
+
+    include = {
+        all
+    }
+
+    ### 任意类型建筑均可用 ###
+    excluded_building_sets = {
+
+    }
+}
+
+########## 矩阵区，人工 ##########
+zone_BA_concept_habitat_matrix02= {
+    icon = GFX_diplomatic_weight_large
+    base_buildtime = 180
+
+    ### 预留标记 ###
+    potential = {
+
+    }
+    unlock = {
+
+    }
+
+    ### 预留标记 ###
+    resources = {
+
+    }
+
+    ### 预留标记 ###
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+        }
+
+    }
+
+    max_buildings = 3
+
+    include = {
+        all
+    }
+
+    ### 任意类型建筑均可用 ###
+    excluded_building_sets = {
+
+    }
+}
+
+########## 涡轮区，自动化 ##########
+zone_BA_concept_habitat_turbine01= {
+    icon = GFX_diplomatic_weight_large
+    base_buildtime = 180
+
+    ### 预留标记 ###
+    potential = {
+
+    }
+    unlock = {
+
+    }
+
+    ### 预留标记 ###
+    resources = {
+
+    }
+
+    ### 预留标记 ###
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+        }
+
+    }
+
+    max_buildings = 3
+
+    include = {
+        all
+    }
+
+    ### 任意类型建筑均可用 ###
+    excluded_building_sets = {
+
+    }
+}
+
+########## 涡轮区，人工 ##########
+zone_BA_concept_habitat_turbine02= {
+    icon = GFX_diplomatic_weight_large
+    base_buildtime = 180
+
+    ### 预留标记 ###
+    potential = {
+
+    }
+    unlock = {
+
+    }
+
+    ### 预留标记 ###
+    resources = {
+
+    }
+
+    ### 预留标记 ###
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+        }
+
+    }
+
+    max_buildings = 3
+
+    include = {
+        all
+    }
+
+    ### 任意类型建筑均可用 ###
+    excluded_building_sets = {
+
+    }
+}
+
+########## 钻探区，自动化 ##########
+zone_BA_concept_habitat_drill01= {
+    icon = GFX_diplomatic_weight_large
+    base_buildtime = 180
+
+    ### 预留标记 ###
+    potential = {
+
+    }
+    unlock = {
+
+    }
+
+    ### 预留标记 ###
+    resources = {
+
+    }
+
+    ### 预留标记 ###
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+        }
+
+    }
+
+    max_buildings = 3
+
+    include = {
+        all
+    }
+
+    ### 任意类型建筑均可用 ###
+    excluded_building_sets = {
+
+    }
+}
+
+########## 钻探区，人工 ##########
+zone_BA_concept_habitat_drill02= {
+    icon = GFX_diplomatic_weight_large
+    base_buildtime = 180
+
+    ### 预留标记 ###
+    potential = {
+
+    }
+    unlock = {
+
+    }
+
+    ### 预留标记 ###
+    resources = {
+
+    }
+
+    ### 预留标记 ###
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+        }
+
+    }
+
+    max_buildings = 3
+
+    include = {
+        all
+    }
+
+    ### 任意类型建筑均可用 ###
+    excluded_building_sets = {
+
+    }
+}

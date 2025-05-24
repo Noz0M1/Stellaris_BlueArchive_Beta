@@ -1,0 +1,166 @@
+########## 居住站起源政府 ##########
+slot_BA_concept_habitat_goverment = {
+    start = zone_BA_concept_habitat_goverment
+    include = {
+        zone_BA_concept_habitat_goverment
+    }
+    exclude = {
+
+    }
+    potential = {
+        always = yes
+    }
+
+    unlock = {
+        always = yes
+    }
+}
+
+########## 居住站起源城市一 ##########
+slot_BA_concept_habitat_city01 = {
+    include = {
+        ### 临时标记 ###
+        zone_BA_concept_habitat_unity
+        zone_BA_concept_habitat_science
+        zone_BA_concept_habitat_commercial
+    }
+    exclude = {
+
+    }
+    potential = {
+        always = yes
+    }
+
+    unlock = {
+        always = yes
+    }
+}
+
+########## 居住站起源城市二 ##########
+slot_BA_concept_habitat_city02 = {
+    include = {
+        ### 临时标记 ###
+        zone_BA_concept_habitat_unity
+        zone_BA_concept_habitat_science
+        zone_BA_concept_habitat_commercial
+    }
+    exclude = {
+
+    }
+    potential = {
+        always = yes
+    }
+
+    unlock = {
+        always = yes
+    }
+}
+
+########## 居住站起源透镜区 ##########
+slot_BA_concept_habitat_refinery = {
+    include = {
+        ### 临时标记 ###
+        zone_BA_concept_habitat_refinery01
+        zone_BA_concept_habitat_refinery02
+    }
+    exclude = {
+
+    }
+    potential = {
+        uses_district_set = BA_auto_habitat
+    }
+
+    unlock = {
+        uses_district_set = BA_auto_habitat
+    }
+}
+########## 居住站起源维持区 ##########
+slot_BA_concept_habitat_sustainer = {
+    include = {
+        ### 临时标记 ###
+        zone_BA_concept_habitat_sustainer01
+        zone_BA_concept_habitat_sustainer02
+    }
+    exclude = {
+
+    }
+    potential = {
+        uses_district_set = BA_auto_habitat
+    }
+
+    unlock = {
+        uses_district_set = BA_auto_habitat
+    }
+}
+########## 居住站起源铸造区 ##########
+slot_BA_concept_habitat_foundry = {
+    include = {
+        ### 临时标记 ###
+        zone_BA_concept_habitat_foundry01
+        zone_BA_concept_habitat_foundry02
+    }
+    exclude = {
+
+    }
+    potential = {
+        uses_district_set = BA_auto_habitat
+    }
+
+    unlock = {
+        uses_district_set = BA_auto_habitat
+    }
+}
+########## 居住站起源矩阵区 ##########
+slot_BA_concept_habitat_matrix = {
+    include = {
+        ### 临时标记 ###
+        zone_BA_concept_habitat_matrix01
+        zone_BA_concept_habitat_matrix02
+    }
+    exclude = {
+
+    }
+    potential = {
+        uses_district_set = BA_auto_habitat
+    }
+
+    unlock = {
+        uses_district_set = BA_auto_habitat
+    }
+}
+########## 居住站起源涡轮区 ##########
+slot_BA_concept_habitat_turbine = {
+    include = {
+        ### 临时标记 ###
+        zone_BA_concept_habitat_turbine01
+        zone_BA_concept_habitat_turbine02
+    }
+    exclude = {
+
+    }
+    potential = {
+        uses_district_set = BA_auto_habitat
+    }
+
+    unlock = {
+        uses_district_set = BA_auto_habitat
+    }
+}
+########## 居住站起源钻探区 ##########
+slot_BA_concept_habitat_drill = {
+    include = {
+        ### 临时标记 ###
+        zone_BA_concept_habitat_drill01
+        zone_BA_concept_habitat_drill02
+    }
+    exclude = {
+
+    }
+    potential = {
+        uses_district_set = BA_auto_habitat
+    }
+
+    unlock = {
+        uses_district_set = BA_auto_habitat
+    }
+}
