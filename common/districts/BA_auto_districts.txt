@@ -6,6 +6,11 @@
 BA_districts_auto_refinery = {
 	base_buildtime = @BA_habitat_build_time
 	is_capped_by_modifier = no
+
+	zone_slots = {
+		slot_BA_concept_habitat_refinery
+	}
+
 	show_on_uncolonized = {
 		uses_district_set = BA_auto_habitat
 	}
@@ -35,6 +40,11 @@ BA_districts_auto_refinery = {
 BA_districts_auto_sustainer = {
 	base_buildtime = @BA_habitat_build_time
 	is_capped_by_modifier = no
+
+	zone_slots = {
+		slot_BA_concept_habitat_sustainer
+	}
+
 	show_on_uncolonized = {
 		uses_district_set = BA_auto_habitat
 	}
@@ -66,6 +76,11 @@ BA_districts_auto_sustainer = {
 BA_districts_auto_foundry = {
 	base_buildtime = @BA_habitat_build_time
 	is_capped_by_modifier = no
+
+	zone_slots = {
+		slot_BA_concept_habitat_foundry
+	}
+
 	show_on_uncolonized = {
 		uses_district_set = BA_auto_habitat
 	}
@@ -97,6 +112,11 @@ BA_districts_auto_foundry = {
 BA_districts_auto_matrix = {
 	base_buildtime = @BA_habitat_build_time
 	is_capped_by_modifier = yes
+
+	zone_slots = {
+		slot_BA_concept_habitat_matrix
+	}
+
 	show_on_uncolonized = {
 		uses_district_set = BA_auto_habitat
 	}
@@ -129,6 +149,11 @@ BA_districts_auto_matrix = {
 BA_districts_auto_turbine = {
 	base_buildtime = @BA_habitat_build_time
 	is_capped_by_modifier = yes
+
+	zone_slots = {
+		slot_BA_concept_habitat_turbine
+	}
+
 	show_on_uncolonized = {
 		uses_district_set = BA_auto_habitat
 	}
@@ -162,6 +187,11 @@ BA_districts_auto_turbine = {
 BA_districts_auto_drill = {
 	base_buildtime = @BA_habitat_build_time
 	is_capped_by_modifier = yes
+
+	zone_slots = {
+		slot_BA_concept_habitat_drill
+	}
+
 	show_on_uncolonized = {
 		uses_district_set = BA_auto_habitat
 	}

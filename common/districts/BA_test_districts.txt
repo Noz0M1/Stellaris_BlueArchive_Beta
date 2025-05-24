@@ -1,0 +1,64 @@
+@BA_habitat_build_time = 240
+#####################################
+### 居住站起源城市区划
+#####################################
+districtBA_concept_habitat_city = {
+	base_buildtime = 320
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+	default_starting_district = yes
+
+	zone_slots = {
+		slot_BA_concept_habitat_goverment
+		slot_BA_concept_habitat_city01
+		slot_BA_concept_habitat_city02
+	}
+
+	show_on_uncolonized = {
+		uses_district_set = BA_auto_habitat
+	}
+	potential = {
+		uses_district_set = BA_auto_habitat
+	}
+	allow = {
+		uses_district_set = BA_auto_habitat
+	}
+
+	conversion_ratio = 1
+
+	# convert_to = {
+	#
+	# }
+
+	resources = {
+		category = planet_districts_cities
+		cost = {
+			minerals = 400
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 1200
+	}
+
+	# 预留标记
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	#
+	# 		}
+	# 	}
+	# 	modifier = {
+	#
+	# 	}
+	# }
+
+	# 预留标记 用于展示特殊描述文本
+	# inline_script = {
+	# 	script =
+	# }
+}
