@@ -212,6 +212,17 @@ country_event = {
 			has_origin = origin_Kivotos_Unnamed_starting
 		}
 	}
+	immediate = {
+		if = {
+			limit = {
+				NOR = {
+					has_origin = origin_Kivotos_Kyrie
+					has_origin = origin_Kivotos_Unnamed_starting
+				}
+			}
+			set_country_flag = BA_origin_finished
+		}
+	}
 	option = {
 		name = BA_Shittem.0101.a
 	}
@@ -816,7 +827,7 @@ country_event = {
 		is_dialog_only = yes
 		trigger = {
 			NOT = {
-				has_technology = tech_BA_angel24_keystone_to_alloy
+				has_technology = tech_BA_angel24_keystone_foundry
 			}
 		}
 		allow = {
@@ -831,7 +842,7 @@ country_event = {
 			sr_eligma = -100
 		}
 		give_technology = {
-			tech = tech_BA_angel24_keystone_to_alloy
+			tech = tech_BA_angel24_keystone_foundry
 		}
 	}
 	#暗物质浓缩

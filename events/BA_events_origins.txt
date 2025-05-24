@@ -384,7 +384,6 @@ country_event = {
 	desc = "BA_origin.0010.desc"
 	picture = GFX_BA_Kivotos_highway
 	immediate = {
-		set_country_flag = BA_origin_finished
 		set_country_flag = BA_Project_Cradle_ready		#项目
 	}
 	option = {

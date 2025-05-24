@@ -59,13 +59,12 @@ slot_BA_dome = {
 slot_BA_urban_factory = {
     include = {
         zone_BA_support
-        zone_urban
+        zone_BA_mixed_industry
+        zone_BA_foundry
+        zone_BA_factory
         zone_industrial
         zone_foundry
         zone_factory
-        zone_unity
-        zone_trade
-        zone_fortress
     }
 }
 

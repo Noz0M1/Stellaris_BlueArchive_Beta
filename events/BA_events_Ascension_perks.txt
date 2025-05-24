@@ -12,6 +12,9 @@ country_event = {
 		room = BA_04_room
 	}
 	trigger = {
+		NOT = {
+			has_country_flag = BA_ui_communicated
+		}
 		BA_origin_finished = yes
 	}
 	diplomatic = yes
@@ -1015,6 +1018,10 @@ country_event = {
 		has_technology = tech_BA_Kivotos_chronicle_stage4
 		has_technology = tech_BA_Kivotos_chronicle_stage5
 		has_technology = tech_BA_Kivotos_chronicle_stage6
+		NOR = {
+			has_technology = tech_BA_Kivotos_chronicle_stage7
+			has_special_project = BA_End_of_chronicle
+		}
 	}
 	option = {
 		name = BA_ape.2009.next
@@ -1029,7 +1036,6 @@ country_event = {
 	title = "BA_ape.2010.name"
 	desc = "BA_ape.2010.desc"
 	is_triggered_only = yes
-	
 	picture = GFX_BA_chronicle_8
 	option = {
 		name = BA_ape.2010.next

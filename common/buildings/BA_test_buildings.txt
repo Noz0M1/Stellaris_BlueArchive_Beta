@@ -195,7 +195,6 @@ building_BA_energy_2 = {
 		modifier = {
 			job_BA_dont_be_crazy_here_add = 300
 			job_BA_dont_be_crazy_here_max_workforce_mult = 0.1
-
 		}
 	}
 	prerequisites = {
@@ -233,7 +232,6 @@ building_BA_minerals_1 = {
 		modifier = {
 			job_BA_Kivotos_miner_add = 100
 			planet_miners_minerals_produces_add = 2
-
 		}
 	}
 	upgrades = {
@@ -405,7 +403,7 @@ building_BA_keystone_foundry_1 = {
 	building_sets = {
 		industrial
 		foundry
-		ba_foundry
+		BA_foundry
 	}
 	potential = {
 		owner = {
@@ -413,7 +411,10 @@ building_BA_keystone_foundry_1 = {
 		}
 	}
 	allow = {
-		has_upgraded_capital = yes
+	}
+	triggered_desc = {
+		trigger = {  }
+		text = job_BA_keystone_foundry_tip_mode1
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -430,14 +431,12 @@ building_BA_keystone_foundry_1 = {
 		category = planet_buildings
 		cost = {
 			minerals = 300
-			alloys = 50
 		}
 		upkeep = {
-			energy = 4
+			energy = 2
 		}
 	}
 	prerequisites = {
-		"tech_BA_angel24_keystone_to_alloy"
 	}
 	upgrades = {
 		building_BA_keystone_foundry_2
@@ -452,7 +451,7 @@ building_BA_keystone_foundry_2 = {
 	building_sets = {
 		industrial
 		foundry
-		ba_foundry
+		BA_foundry
 	}
 	potential = {
 		owner = {
@@ -476,6 +475,52 @@ building_BA_keystone_foundry_2 = {
 	resources = {
 		category = planet_buildings
 		cost = {
+			minerals = 300
+			sr_keystone = 50
+		}
+		upkeep = {
+			energy = 4
+		}
+	}
+	prerequisites = {
+		#"tech_BA_angel24_keystone_foundry"
+	}
+}
+
+building_BA_keystone_foundry_3 = {
+	base_buildtime = 480
+	can_build = no
+	position_priority = 154
+	category = manufacturing
+	base_cap_amount = 1
+	building_sets = {
+		industrial
+		foundry
+		BA_foundry
+	}
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_keystone_foundry_add = 500
+			pop_BA_keystone_foundry_bonus_workforce_mult = 100000
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
 			sr_keystone = 100
 		}
 		upkeep = {
@@ -483,7 +528,7 @@ building_BA_keystone_foundry_2 = {
 		}
 	}
 	prerequisites = {
-		"tech_BA_angel24_keystone_to_alloy"
+		#"tech_BA_angel24_keystone_foundry"
 	}
 }
 
@@ -581,13 +626,13 @@ building_BA_keystone_factory_2 = {
 building_BA_club_room = {
 	icon = building_augmentation_center
 	base_buildtime = 180
-	category = government
-
+	category = research
 	building_sets = {
-		government
-		ba_government
+		research
+		unity
+		BA_research
+		BA_unity
 	}
-
 	position_priority = 22
 	potential = {
 		owner = {
@@ -639,12 +684,12 @@ building_BA_club_mansion = {
 	icon = building_augmentation_center
 	base_buildtime = 180
 	category = research
-
 	building_sets = {
-		government
-		ba_government
+		research
+		unity
+		BA_research
+		BA_unity
 	}
-
 	position_priority = 22
 	potential = {
 		owner = {

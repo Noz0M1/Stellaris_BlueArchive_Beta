@@ -1,12 +1,15 @@
 button_effect_communicate_nothing = {
 	allow = {
-		always = yes
+		custom_tooltip = {
+			fail_text = Club_tbc
+			always = no
+		}
 	}
 	potential = {
 		always = yes
 	}
 	effect = {
-		custom_tooltip = Club_tbc
+		#custom_tooltip = Club_tbc
 	}
 }
 

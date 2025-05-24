@@ -115,16 +115,20 @@ zone_BA_municipality_club = {
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				NOT = {
+					has_tradition = tr_kivotos_finish
+				}
+			}
 		}
 		planet_stability_add = -3
 	}
 	included_building_sets = {
-		industrial
-		foundry
-		factory
 		automation
 		research
 		unity
+		BA_research
+		BA_unity
 		fortress
 		trade
 		entertainment
@@ -206,6 +210,131 @@ zone_BA_flexible_center = {
 		fortress
 		trade
 		entertainment
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+#都市工业区划
+zone_BA_mixed_industry = {
+	icon = GFX_resource_energy_large
+	base_buildtime = 360
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_BA_Kivotos_chronicle_stage2
+		}
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 500
+			energy = 500
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			#100制造石铸造师 100制造石工匠
+			job_BA_keystone_foundry_add = 100
+			job_BA_keystone_artisan_add = 100
+		}
+	}
+	included_building_sets = {
+		industrial
+		foundry
+		factory
+		BA_foundry
+		BA_factory
+		automation
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+	inline_script = {
+		script = jobs/foundry_add
+		AMOUNT = @building_static_jobs
+	}
+
+}
+
+zone_BA_foundry = {
+	icon = GFX_resource_energy_large
+	base_buildtime = 360
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_BA_Kivotos_chronicle_stage2
+		}
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 500
+			energy = 500
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			#300制造石铸造师 -100制造石工匠
+			job_BA_keystone_foundry_add = 300
+			job_BA_keystone_artisan_add = -100
+		}
+	}
+	included_building_sets = {
+		industrial
+		foundry
+		BA_foundry
+		automation
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+zone_BA_factory = {
+	icon = GFX_resource_energy_large
+	base_buildtime = 360
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_BA_Kivotos_chronicle_stage2
+		}
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 500
+			energy = 500
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			#-100制造石铸造师 300制造石工匠
+			job_BA_keystone_foundry_add = -100
+			job_BA_keystone_artisan_add = 300
+		}
+	}
+	included_building_sets = {
+		industrial
+		factory
+		BA_factory
+		automation
 	}
 	planet_modifier = {
 		zone_building_slots_add = 3
