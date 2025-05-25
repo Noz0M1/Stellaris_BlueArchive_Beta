@@ -197,36 +197,16 @@ BA_Kivotos_habitat_sys = {
 		size = 21
 		flags = {
 			BA_Gematria_station
-			has_megastructure
 		}
 		has_ring = no
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
-			set_planet_flag = BA_init_module
+			# set_planet_flag = BA_init_module
 			add_deposit = d_physics_1
 			add_deposit = d_society_1
 			add_deposit = d_engineering_1
 		}
-		#moon = {
-		#	name = "sys.Kivotos.habitat.2.name"
-		#	class = pc_BA_auto_habitat
-		#	orbit_angle = {
-		#		min = 90
-		#		max = 270
-		#	}
-		#	orbit_distance = 6
-		#	size = 6
-		#	flags = {
-		#		Unnamed_starting_habitat_2
-		#		megastructure
-		#		habitat
-		#		energy_habitat
-		#		advanced_habitat
-		#		colony_event
-		#	}
-		#	deposit_blockers = none
-		#}
 	}
 	planet = {
 		name = "sys.Kivotos.home.name"
@@ -270,32 +250,11 @@ BA_Kivotos_habitat_sys = {
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
-			set_planet_flag = BA_init_module
+			# set_planet_flag = BA_init_module
 			add_deposit = d_minerals_1
 		}
 		flags = {
-			has_megastructure
 		}
-		#moon = {
-		#	name = "sys.Kivotos.habitat.1.name"
-		#	class = pc_BA_auto_habitat
-		#	orbit_angle = {
-		#		min = 90
-		#		max = 270
-		#	}
-		#	orbit_distance = 8
-		#	size = 15
-		#	flags = {
-		#		Unnamed_starting_habitat_1
-		#		megastructure
-		#		habitat
-		#		advanced_habitat
-		#		advanced_habitat_2
-		#		energy_habitat
-		#		colony_event
-		#	}
-		#	deposit_blockers = none
-		#}
 	}
 	planet = {
 		name = "sys.Kivotos.Metal.name"
@@ -310,26 +269,7 @@ BA_Kivotos_habitat_sys = {
 			set_planet_flag = BA_init_module
 		}
 		flags = {
-			has_megastructure
 		}
-		#moon = {
-		#	name = "sys.Kivotos.habitat.3.name"
-		#	class = pc_BA_auto_habitat
-		#	orbit_angle = {
-		#		min = 90
-		#		max = 270
-		#	}
-		#	orbit_distance = 6
-		#	size = 6
-		#	flags = {
-		#		Unnamed_starting_habitat_3
-		#		megastructure
-		#		habitat
-		#		advanced_habitat
-		#		colony_event
-		#	}
-		#	deposit_blockers = none
-		#}
 		moon = {
 			name = "sys.Kivotos.Copper.name"
 			class = pc_shattered
@@ -381,27 +321,10 @@ BA_Kivotos_habitat_sys = {
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
-			set_planet_flag = BA_init_module
+			#set_planet_flag = BA_init_module
 		}
 		flags = {
 			has_megastructure
 		}
-		#moon = {
-		#	name = "sys.Kivotos.habitat.4.name"
-		#	class = pc_BA_auto_habitat
-		#	orbit_angle = {
-		#		min = 90
-		#		max = 270
-		#	}
-		#	orbit_distance = 6
-		#	size = 4
-		#	flags = {
-		#		Unnamed_starting_habitat_4
-		#		megastructure
-		#		habitat
-		#		colony_event
-		#	}
-		#	deposit_blockers = none
-		#}
 	}
 }

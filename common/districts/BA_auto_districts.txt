@@ -2,15 +2,54 @@
 #####################################
 #自动居住站区划 数值有待商榷
 #####################################
+#蜂巢区 居住地
+BA_district_auto_city = {
+	base_buildtime = @BA_habitat_build_time
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+	zone_slots = {
+		slot_city_government
+		slot_BA_auto_city
+		slot_BA_auto_city
+	}
+	show_on_uncolonized = {
+		uses_district_set = BA_auto_habitat
+	}
+	potential = {
+		uses_district_set = BA_auto_habitat
+		NAND = {
+			is_capital = yes
+			owner = {
+				has_menace_perk = menp_behemoth_mind_meld
+			}
+		}
+	}
+	convert_to = {
+		district_mindlink
+	}
+	resources = {
+		category = planet_districts_hab
+		cost = {
+			energy = 200
+			minerals = 250
+			sr_pyroxenes = 10
+		}
+		upkeep = {
+			energy = 6
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 1000
+	}
+}
+
 #透镜区 矿-->青辉石
 BA_districts_auto_refinery = {
 	base_buildtime = @BA_habitat_build_time
 	is_capped_by_modifier = no
-
 	zone_slots = {
-		slot_BA_concept_habitat_refinery
+		slot_BA_auto_refinery
 	}
-
 	show_on_uncolonized = {
 		uses_district_set = BA_auto_habitat
 	}
@@ -32,7 +71,7 @@ BA_districts_auto_refinery = {
 		}
 	}
 	planet_modifier = {
-		planet_max_buildings_add = 0.5
+		planet_housing_add = 800
 	}
 }
 
@@ -40,11 +79,9 @@ BA_districts_auto_refinery = {
 BA_districts_auto_sustainer = {
 	base_buildtime = @BA_habitat_build_time
 	is_capped_by_modifier = no
-
 	zone_slots = {
-		slot_BA_concept_habitat_sustainer
+		slot_BA_auto_sustainer
 	}
-
 	show_on_uncolonized = {
 		uses_district_set = BA_auto_habitat
 	}
@@ -68,7 +105,6 @@ BA_districts_auto_sustainer = {
 	}
 	planet_modifier = {
 		planet_housing_add = 600
-		planet_max_buildings_add = 0.5
 	}
 }
 
@@ -76,11 +112,9 @@ BA_districts_auto_sustainer = {
 BA_districts_auto_foundry = {
 	base_buildtime = @BA_habitat_build_time
 	is_capped_by_modifier = no
-
 	zone_slots = {
-		slot_BA_concept_habitat_foundry
+		slot_BA_auto_foundry
 	}
-
 	show_on_uncolonized = {
 		uses_district_set = BA_auto_habitat
 	}
@@ -104,7 +138,6 @@ BA_districts_auto_foundry = {
 	}
 	planet_modifier = {
 		planet_housing_add = 400
-		planet_max_buildings_add = 0.5
 	}
 }
 
@@ -112,11 +145,9 @@ BA_districts_auto_foundry = {
 BA_districts_auto_matrix = {
 	base_buildtime = @BA_habitat_build_time
 	is_capped_by_modifier = yes
-
 	zone_slots = {
-		slot_BA_concept_habitat_matrix
+		slot_BA_auto_matrix
 	}
-
 	show_on_uncolonized = {
 		uses_district_set = BA_auto_habitat
 	}
@@ -149,11 +180,9 @@ BA_districts_auto_matrix = {
 BA_districts_auto_turbine = {
 	base_buildtime = @BA_habitat_build_time
 	is_capped_by_modifier = yes
-
 	zone_slots = {
-		slot_BA_concept_habitat_turbine
+		slot_BA_auto_turbine
 	}
-
 	show_on_uncolonized = {
 		uses_district_set = BA_auto_habitat
 	}
@@ -187,11 +216,9 @@ BA_districts_auto_turbine = {
 BA_districts_auto_drill = {
 	base_buildtime = @BA_habitat_build_time
 	is_capped_by_modifier = yes
-
 	zone_slots = {
-		slot_BA_concept_habitat_drill
+		slot_BA_auto_drill
 	}
-
 	show_on_uncolonized = {
 		uses_district_set = BA_auto_habitat
 	}
@@ -271,7 +298,6 @@ BA_districts_ringworld_satellite = {
 		}
 	}
 }
-
 
 ### 铸模区段
 # 住房+5；环世界值日生+5
@@ -445,7 +471,6 @@ BA_districts_ringworld_factory = {
 			minerals = 120
 		}
 	}
-
 }
 
 ### 矩阵区段

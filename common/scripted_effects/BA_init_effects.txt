@@ -678,7 +678,7 @@ BA_origin_create_module = {
 		}
 		create_fleet = {
 			effect = {
-				set_owner = root
+				set_owner = event_target:BA_origin_Unnamed_starting
 				create_ship = {
 					random_existing_design = ship_BA_auto_habitat_minor
 					effect = {

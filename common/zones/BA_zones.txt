@@ -260,7 +260,6 @@ zone_BA_mixed_industry = {
 		script = jobs/foundry_add
 		AMOUNT = @building_static_jobs
 	}
-
 }
 
 zone_BA_foundry = {
@@ -549,7 +548,6 @@ zone_BA_remining = {
 			job_BA_surveyor_add = 50
 		}
 	}
-
 	included_building_sets = {
 		mining
 		ba_mining
@@ -622,7 +620,6 @@ zone_BA_special_factory_A = {
 			#阿里乌斯起源 50军需员 50配给员
 			job_BA_quartermaster_add = 50
 			job_BA_supplier_add = 50
-
 		}
 	}
 	triggered_district_planet_modifier = {
@@ -637,7 +634,6 @@ zone_BA_special_factory_A = {
 			job_BA_surveyor_add = 100
 		}
 	}
-
 	included_building_sets = {
 		mining
 		ba_mining
@@ -689,7 +685,9 @@ zone_BA_special_factory_B = {
 	planet_modifier = {
 		zone_building_slots_add = 3
 	}
-	convert_to = { zone_BA_special_factory_A }
+	convert_to = {
+		zone_BA_special_factory_A
+	}
 }
 
 zone_BA_special_factory_C = {
@@ -732,5 +730,7 @@ zone_BA_special_factory_C = {
 	planet_modifier = {
 		zone_building_slots_add = 3
 	}
-	convert_to = { zone_BA_special_factory_A }
+	convert_to = {
+		zone_BA_special_factory_A
+	}
 }

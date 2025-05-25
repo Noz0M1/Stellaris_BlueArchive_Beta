@@ -33,11 +33,11 @@ country_event = {
 			remove_building = building_colony_shelter
 			add_building = {
 				zone = zone_default
-				building = building_BA_Locker_room
+				building = building_capital
 			}
 			add_building = {
 				zone = zone_default
-				building = building_capital
+				building = building_BA_Locker_room
 			}
 			add_building = {
 				zone = zone_default
@@ -1515,7 +1515,7 @@ situation_event = {
 		}
 		owner = {
 			add_resource = {
-				consumer_goods = 100000000000
+				consumer_goods = 1215752192
 			}
 		}
 	}
@@ -2591,7 +2591,6 @@ country_event = {
 				}
 			}
 			### 生成太空枢纽和模块
-			# BA_origin_create_nexus = yes
 			random_planet_within_border = {
 				limit = {
 					has_planet_flag = BA_Unnamed_starting_target
@@ -2607,7 +2606,7 @@ country_event = {
 						size = 8
 						has_ring = no
 						init_effect = {
-							set_planet_flag = Unnamed_starting_habitat_1
+							set_planet_flag = Unnamed_starting_habitat
 							set_planet_entity = {
 								entity = "AtrahasisArk_station_entity"
 							}
@@ -2615,8 +2614,7 @@ country_event = {
 								surveyed = yes
 								surveyor = FROM
 							}
-							set_all_comms_surveyed = yes
-							clear_blockers = yes
+							#set_all_comms_surveyed = yes
 							set_planet_flag = colony_event
 							set_planet_flag = megastructure
 							set_planet_flag = habitat
@@ -2636,26 +2634,37 @@ country_event = {
 							set_name = sys.Kivotos.habitat.1.name
 							create_pop_group = {
 								species = owner_main_species
-								effect = {
-									add_pop_amount = 1000
-								}
+								size = 1000
 							}
 							check_planet_employment = yes
+							clear_planet_modifiers = yes
+							remove_modifier = modifier_BA_origin_station_1
 							add_modifier = {
 								modifier = modifier_BA_Atrahasis_station_1
 							}
-							remove_modifier = modifier_BA_origin_station_1
+							# 区划建筑
+							remove_all_districts = yes
+							add_district = BA_district_auto_city
 							add_district = BA_districts_auto_refinery
 							add_district = BA_districts_auto_refinery
 							add_district = BA_districts_auto_sustainer
 							add_district = BA_districts_auto_sustainer
 							add_district = BA_districts_auto_foundry
 							add_district = BA_districts_auto_foundry
+							add_district = BA_districts_auto_turbine
+							add_district = BA_districts_auto_drill
+							validate_planet_buildings_and_districts = yes
+							add_building = {
+								zone = zone_default
+								building = building_BA_Locker_room
+							}
+							# 区块
+							clear_blockers = yes
 							add_deposit = d_Atrahasis_reactor
 							add_deposit = d_Atrahasis_harvester
 							add_deposit = d_Atrahasis_agriculture
 							add_deposit = d_Atrahasis_factory
-							add_building = building_BA_Locker_room
+							add_deposit = d_Atrahasis_gravity_control
 							set_variable = {
 								which = Unnamed_starting_enemy_count
 								value = 8
@@ -2666,23 +2675,31 @@ country_event = {
 							}
 						}
 					}
+					every_system_planet = {
+						limit = {
+							has_planet_flag = BA_init_module
+						}
+						BA_origin_create_module = yes
+						remove_planet_flag = BA_init_module
+
+					}
 					set_star_flag = has_habitat
 				}
 			}
-			while = {
-				limit = {
-					any_planet_within_border = {
-						has_planet_flag = BA_init_module
-					}
-				}
-				random_planet_within_border = {
-					limit = {
-						has_planet_flag = BA_init_module
-					}
-					BA_origin_create_module = yes
-					remove_planet_flag = BA_init_module
-				}
-			}
+			# while = {
+			# 	limit = {
+			# 		any_planet_within_border = {
+			# 			has_planet_flag = BA_init_module
+			# 		}
+			# 	}
+			# 	random_planet_within_border = {
+			# 		limit = {
+			# 			has_planet_flag = BA_init_module
+			# 		}
+			# 		BA_origin_create_module = yes
+			# 		remove_planet_flag = BA_init_module
+			# 	}
+			# }
 			### 初始化母星
 			random_owned_planet = {
 				limit = {
@@ -2691,25 +2708,30 @@ country_event = {
 				### 基础设置
 				change_pc = pc_BA_campus_planet
 				set_name = sys.Kivotos.home.name
-				clear_deposits = yes				#清除原有区块
+				clear_planet_modifiers = yes
+				# 区划建筑
+				validate_planet_buildings_and_districts = yes
+				remove_all_districts = yes
+				add_district = BA_districts_campus
+				remove_building = building_colony_shelter
+				add_building = {
+					zone = zone_default
+					building = building_BA_fade_Sanctum_center
+				}
+				# 区块
+				clear_deposits = yes			#清除原有区块
 				while = {
 					count = 6
 					add_deposit = d_fade_Sanctum
 				}
-				add_deposit = d_black_market				#黑市区块
-				add_deposit = d_broken_Abydos_school				#阿拜多斯校区
-				add_deposit = d_broken_Millennium_school				#千年校区
-				add_deposit = d_broken_Trinity_school				#三一校区
-				add_deposit = d_broken_Gehenna_school				#格黑娜校区
-				add_deposit = d_broken_power_station				#千年发电厂
-				add_deposit = d_broken_desert_mine				#沙漠矿区
-				add_deposit = d_Greenhouse_farms				#赤冬温室农场（只是因为没有粮食区划所以拉来凑数的）
-				remove_building = building_commercial_zone				#清除旧建筑 下同
-				remove_building = building_research_lab_1
-				remove_building = building_bureaucratic_1
-				remove_building = building_temple
-				remove_building = building_temple
-				remove_all_districts = yes				#清除旧区划
+				add_deposit = d_black_market			#黑市区块
+				add_deposit = d_broken_Abydos_school			#阿拜多斯校区
+				add_deposit = d_broken_Millennium_school			#千年校区
+				add_deposit = d_broken_Trinity_school			#三一校区
+				add_deposit = d_broken_Gehenna_school			#格黑娜校区
+				add_deposit = d_broken_power_station			#千年发电厂
+				add_deposit = d_broken_desert_mine			#沙漠矿区
+				add_deposit = d_Greenhouse_farms			#赤冬温室农场（只是因为没有粮食区划所以拉来凑数的）
 				### 虚妄圣库姆特
 				every_owned_pop_group = {
 					kill_all_pop = yes
@@ -3164,4 +3186,3 @@ country_event = {
 
 ###########
 ##### 备份
-

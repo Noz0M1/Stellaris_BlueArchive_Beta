@@ -133,7 +133,7 @@ pc_BA_auto_habitat = {
 	is_artificial_planet = yes
 	default_planet_selection = yes
 	modifier = {
-		planet_colony_development_speed_mult = 2		# Habitats should be fast to colonize
+		planet_colony_development_speed_mult = 2
 		pop_environment_tolerance = 0.7
 	}
 	carry_cap_per_free_district = @carry_cap_low

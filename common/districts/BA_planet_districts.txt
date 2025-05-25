@@ -26,6 +26,7 @@ BA_districts_campus = {
 		owner = {
 			OR = {
 				is_regular_empire = yes
+				has_country_flag = BA_Unnamed_enemy
 				AND = {
 					is_country_type = primitive
 					is_hive_empire = no

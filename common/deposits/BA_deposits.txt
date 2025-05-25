@@ -115,6 +115,7 @@ d_black_market = {
 		category = deposit_blockers
 		cost = {
 			energy = 500
+			trade = 5
 		}
 	}
 	#清除花费1000能量
@@ -122,7 +123,6 @@ d_black_market = {
 		planet_stability_add = -5
 		planet_crime_mult = 0.15
 		planet_amenities_add = 1000
-		trade_value_add = 5
 	}
 	#降低稳定度与增加犯罪度
 	drop_weight = {
@@ -378,11 +378,42 @@ d_Atrahasis_factory = {
 		category = BA_planet_deposit
 		produces = {
 			alloys = 12
-			sr_pyroxenes = 1
 		}
 	}
 	planet_modifier = {
-		pop_defense_armies_add = 1
+		planet_defense_armies_add = 10
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_Atrahasis_matrix = {
+	icon = "unused/d_space_walk"
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	resources = {
+		category = BA_planet_deposit
+		produces = {
+			physics_research = 10
+			society_research = 10
+			engineering_research = 10
+		}
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_Atrahasis_gravity_control = {
+	icon = "unused/d_space_walk"
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	resources = {
+		category = BA_planet_deposit
+		produces = {
+			sr_pyroxenes = 4
+		}
 	}
 	drop_weight = {
 		weight = 0

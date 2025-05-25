@@ -214,6 +214,10 @@ BA_orbital_generic = {
 	}
 	placement_rules = {
 		planet_possible = {
+			NOR = {
+				is_colonizable = yes
+				is_planet_class = pc_shielded
+			}
 			custom_tooltip = {
 				fail_text = "requires_surveyed_planet"
 				is_surveyed = {
