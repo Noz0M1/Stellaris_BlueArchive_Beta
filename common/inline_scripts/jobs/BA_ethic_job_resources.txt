@@ -1,0 +1,37 @@
+produces = {
+	trigger = {
+		exists = owner
+		owner = { is_materialist = yes }
+		planet = {
+			has_ethics_output = yes
+		}
+	}
+	physics_research = 0.25
+	society_research = 0.25
+	engineering_research = 0.25
+	mult = value:scripted_ethics_weight_mult|ETHIC|materialist|
+}
+produces = {
+	trigger = {
+		exists = owner
+		owner = { is_spiritualist = yes }
+		planet = {
+			has_ethics_output = yes
+		}
+	}
+	physics_research = 0.25
+	society_research = 0.25
+	engineering_research = 0.25
+	mult = value:scripted_ethics_weight_mult|ETHIC|spiritualist|
+}
+produces = {
+	trigger = {
+		exists = owner
+		owner = { is_egalitarian = yes }
+		planet = {
+			has_ethics_output = yes
+		}
+	}
+	trade = 1
+	mult = value:scripted_ethics_weight_mult|ETHIC|egalitarian|
+}

@@ -80,4 +80,12 @@
 #bonus@workforce
 
  BA_flexpop_bonus_workforce_mult:"为灵活就业者岗位$BONUS_WORKFORCE_FOR$"
- BA_flexpop_bonus_workforce_mult_tt:"£job_BA_flexible_workers£$BONUS_WORKFORCE_FOR$：$VARIABLE|0%=+$"
+ BA_flexpop_bonus_workforce_mult_tt:"['concept_planet_BA_flexpop']$BONUS_WORKFORCE_FOR$：$VARIABLE|0%=+$"
+
+#job@concept
+ concept_BA_flexible_workers:"灵活岗位"
+ concept_planet_BA_flexpop:"灵活就业者"
+ concept_planet_BA_scavenger:"拾荒者"
+ concept_planet_BA_flexpop_desc: "灵活岗位包括：$TABBED_NEW_LINE$—[BA_flexible_workers.GetNamePlural]$TABBED_NEW_LINE$—[BA_scavenger.GetNamePlural]"
+
+

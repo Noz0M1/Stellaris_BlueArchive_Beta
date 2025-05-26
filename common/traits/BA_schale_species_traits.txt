@@ -499,8 +499,7 @@ trait_BA_slack = {
 	icon = "gfx/interface/icons/traits/species/BA_slack.dds"
 	modifier = {
 		pop_bonus_workforce_mult = -0.05
-		planet_jobs_produces_mult = -0.05
-		bureaucrat_jobs_bonus_workforce_mult = 0.25
+		BA_flexpop_bonus_workforce_mult = 0.35
 	}
 }
 
