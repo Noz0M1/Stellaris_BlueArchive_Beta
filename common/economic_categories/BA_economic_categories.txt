@@ -67,9 +67,65 @@ BA_club_pop = {
 		produces
 		upkeep
 	}
-	generate_add_modifiers = {
-		produces
-		upkeep
+	triggered_produces_modifier = {
+		key = planet_physicists
+		modifier_types = {
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	triggered_upkeep_modifier = {
+		key = planet_physicists
+		modifier_types = {
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	triggered_produces_modifier = {
+		key = planet_biologists
+		modifier_types = {
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	triggered_upkeep_modifier = {
+		key = planet_biologists
+		modifier_types = {
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	triggered_produces_modifier = {
+		key = planet_engineers
+		modifier_types = {
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	triggered_upkeep_modifier = {
+		key = planet_engineers
+		modifier_types = {
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
 	}
 	modifier_category = pop_group
 }
@@ -184,7 +240,7 @@ BA_keystone_foundry = {
 	modifier_category = pop_group
 }
 
-####	BA一产岗
+####	BA一产岗	##联邦开采员
 BA_workers = {
 	parent = planet_jobs_worker
 	generate_mult_modifiers = {

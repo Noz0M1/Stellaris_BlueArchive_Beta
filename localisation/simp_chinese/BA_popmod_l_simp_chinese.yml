@@ -79,13 +79,29 @@
 
 #bonus@workforce
 
- BA_flexpop_bonus_workforce_mult:"为灵活就业者岗位$BONUS_WORKFORCE_FOR$"
+ BA_flexpop_bonus_workforce_mult:"为$concept_planet_BA_flexpop$$BONUS_WORKFORCE_FOR$"
  BA_flexpop_bonus_workforce_mult_tt:"['concept_planet_BA_flexpop']$BONUS_WORKFORCE_FOR$：$VARIABLE|0%=+$"
 
-#job@concept
- concept_BA_flexible_workers:"灵活岗位"
- concept_planet_BA_flexpop:"灵活就业者"
- concept_planet_BA_scavenger:"拾荒者"
- concept_planet_BA_flexpop_desc: "灵活岗位包括：$TABBED_NEW_LINE$—[BA_flexible_workers.GetNamePlural]$TABBED_NEW_LINE$—[BA_scavenger.GetNamePlural]"
+ BA_worker_bonus_workforce_mult:"为$concept_planet_BA_worker$$BONUS_WORKFORCE_FOR$"
+ BA_worker_bonus_workforce_mult_tt:"['concept_planet_BA_worker']$BONUS_WORKFORCE_FOR$：$VARIABLE|0%=+$"
 
+ BA_industryjobs_bonus_workforce_mult:"为$concept_planet_BA_industryjobs$$BONUS_WORKFORCE_FOR$"
+ BA_industryjobs_bonus_workforce_mult_tt:"['concept_planet_BA_industryjobs']$BONUS_WORKFORCE_FOR$：$VARIABLE|0%=+$"
+
+#job@concept
+ concept_planet_BA_flexpop:"灵活岗位"
+ concept_planet_BA_flexible_workers:"灵活就业者"
+ concept_planet_BA_scavenger:"拾荒者"
+ concept_planet_BA_flexpop_desc: "$concept_planet_BA_flexpop$包括:$TABBED_NEW_LINE$—[BA_flexible_workers.GetNamePlural]$TABBED_NEW_LINE$—[BA_scavenger.GetNamePlural]"
+
+ concept_planet_BA_worker:"联邦开采员"
+ concept_planet_BA_dont_be_crazy_here:"发癫者"
+ concept_planet_BA_Kivotos_miner:"采矿团"
+ concept_planet_BA_caterer:"餐务员"
+ concept_planet_BA_worker_desc:"$concept_planet_BA_worker$包括:$TABBED_NEW_LINE$—[BA_dont_be_crazy_here.GetNamePlural]$TABBED_NEW_LINE$—[BA_Kivotos_miner.GetNamePlural]$TABBED_NEW_LINE$—[BA_caterer.GetNamePlural]"
+
+ concept_planet_BA_industryjobs:"联邦工业员"
+ concept_planet_BA_keystone_artisan:"制造石工匠"
+ concept_planet_BA_keystone_foundry:"制造石锻造师"
+ concept_planet_BA_industryjobs_desc: "$concept_planet_BA_industryjobs$包括:$TABBED_NEW_LINE$—[BA_keystone_artisan.GetNamePlural]$TABBED_NEW_LINE$—[BA_keystone_foundry.GetNamePlural]"
 
