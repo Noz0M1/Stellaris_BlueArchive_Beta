@@ -558,8 +558,19 @@ BA_dont_be_crazy_here = {
 		pop_amenities_usage_mult = -0.5
 	}
 	weight = {
-		weight = @worker_job_weight
+		weight = @worker_prio_job_weight
 		mult = value:job_weights_modifier|JOB|technician|RESOURCE|energy|
+		modifier = {
+			factor = 3
+			exists = planet
+			exists = owner
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 10
+				}
+			}
+		}
 	}
 }
 
@@ -620,8 +631,19 @@ BA_Kivotos_miner = {
 		planet_amenities_add = -5
 	}
 	weight = {
-		weight = @worker_job_weight
+		weight = @worker_prio_job_weight
 		mult = value:job_weights_modifier|JOB|miner|RESOURCE|minerals|
+		modifier = {
+			factor = 3
+			exists = planet
+			exists = owner
+			owner = {
+				has_monthly_income = {
+					resource = minerals
+					value < 10
+				}
+			}
+		}
 	}
 }
 
@@ -684,8 +706,19 @@ BA_caterer = {
 		}
 	}
 	weight = {
-		weight = @worker_job_weight
+		weight = @worker_prio_job_weight
 		mult = value:job_weights_modifier|JOB|farmer|RESOURCE|food|
+		modifier = {
+			factor = 3
+			exists = planet
+			exists = owner
+			owner = {
+				has_monthly_income = {
+					resource = food
+					value < 10
+				}
+			}
+		}
 	}
 }
 
@@ -827,7 +860,7 @@ BA_flexible_workers = {
 	inline_script = "jobs/ethic_job_modifiers"
 
 	weight = {
-			weight = 2
+			weight = @worker_prio_job_weight
 		}
 }
 

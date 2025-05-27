@@ -429,8 +429,7 @@ trait_BA_pioneer = {
 	}
 	icon = "gfx/interface/icons/traits/species/BA_pioneer.dds"
 	modifier = {
-		foundry_jobs_bonus_workforce_mult = 0.04
-		miner_jobs_bonus_workforce_mult = 0.08
+		BA_worker_bonus_workforce_mult = 0.15
 		pop_resettlement_cost_mult = -0.75
 	}
 }
@@ -447,6 +446,7 @@ trait_BA_tactical_training = {
 	modifier = {
 		armies_cost_mult = -0.25
 		planet_army_build_speed_mult = 1
+		commander_skill_add = 1
 	}
 }
 
@@ -498,7 +498,7 @@ trait_BA_slack = {
 	}
 	icon = "gfx/interface/icons/traits/species/BA_slack.dds"
 	modifier = {
-		pop_bonus_workforce_mult = -0.05
+		BA_industryjobs_bonus_workforce_mult = -0.1
 		BA_flexpop_bonus_workforce_mult = 0.35
 	}
 }
