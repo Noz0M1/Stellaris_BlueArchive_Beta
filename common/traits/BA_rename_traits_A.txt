@@ -142,8 +142,8 @@ leader_club_011 = {
 	councilor_modifier = {
 		#社团部员的凝聚力产出+1，人口舒适度使用-15%，社团部员维护费+20%
 		pop_amenities_usage_add = -0.15
-		BA_club_pop_unity_produces_add = 1
-		BA_club_pop_upkeep_mult = 0.2
+		BA_staff_pop_unity_produces_add = 1
+		BA_staff_pop_upkeep_mult = 0.2
 	}
 	leader_class = all
 	selectable_weight = 0
@@ -460,7 +460,7 @@ leader_club_033 = {
 	randomized = no
 	councilor_modifier = {
 		#社团部员产出的凝聚力+0.5，社团部员产出的社会学点数+0.5，人口舒适度使用-5%
-		BA_club_pop_unity_produces_add = 0.5
+		BA_staff_pop_unity_produces_add = 0.5
 		BA_club_pop_society_research_produces_add = 0.5
 		pop_amenities_usage_add = -0.05
 	}
