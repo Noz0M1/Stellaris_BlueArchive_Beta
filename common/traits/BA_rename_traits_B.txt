@@ -1094,9 +1094,8 @@ leader_special_063 = {
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
 	randomized = no
 	councilor_modifier = {
-		#自治区职员的产出+25%，自治区职员的维护费+25%
-		BA_staff_pop_produces_mult = 0.25
-		BA_staff_pop_upkeep_mult = 0.25
+		#自治区职员的岗位效率+25%
+		pop_BA_Kivotos_staff_bonus_workforce_mult = 0.25
 	}
 	leader_class = {
 		official
@@ -1111,8 +1110,8 @@ leader_special_064 = {
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
 	randomized = no
 	councilor_modifier = {
-		#自治区职员的社会学点数产出+0.5，社团部员的社会学点数产出+0.5，专家岗位维护费+10%
-		BA_staff_pop_society_research_produces_add = 0.5
+		#自治区职员的凝聚力产出+0.5，社团部员的社会学点数产出+0.5，专家岗位维护费+10%
+		BA_staff_pop_unity_produces_add = 0.5
 		BA_club_pop_society_research_produces_add = 0.5
 		BA_staff_pop_upkeep_mult = 0.1
 		BA_club_pop_upkeep_mult = 0.1
@@ -2062,7 +2061,7 @@ leader_special_119 = {
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B77.dds"
 	randomized = no
 	planet_modifier = {
-		#社团部员产出的凝聚力+1
+		#联邦职员产出的凝聚力+1
 		BA_staff_pop_unity_produces_add = 1
 	}
 	leader_class = {

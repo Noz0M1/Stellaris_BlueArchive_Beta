@@ -9,6 +9,9 @@
 
  mod_BA_staff_pop_produces_mult:0 "£job_BA_Kivotos_staff£$BA_staff_pop$产出的资源"
  mod_BA_staff_pop_upkeep_mult:0 "£job_BA_Kivotos_staff£$BA_staff_pop$维护费"
+ mod_BA_staff_pop_unity_produces_add:"£job_BA_Kivotos_staff£$BA_staff_pop$产出的£unity£$unity$"
+ mod_BA_staff_pop_trade_produces_add:"£job_BA_Kivotos_staff£$BA_staff_pop$产出的£trade£$trade$"
+ mod_BA_staff_pop_consumer_goods_upkeep_add:"£job_BA_Kivotos_staff£$BA_staff_pop$消耗的£consumer_goods£$consumer_goods$"
  mod_BA_staff_pop_society_research_produces_mult:0 "£job_BA_Kivotos_staff£$BA_staff_pop$产出的£society£$society_research$"
  mod_BA_staff_pop_society_research_produces_add:0 "$mod_BA_staff_pop_society_research_produces_mult$"
  mod_BA_staff_pop_consumer_goods_produces_mult:0 "£job_BA_Kivotos_staff£$BA_staff_pop$产出的£consumer_goods£$consumer_goods$"
@@ -88,6 +91,30 @@
  BA_industryjobs_bonus_workforce_mult:"为$concept_planet_BA_industryjobs$$BONUS_WORKFORCE_FOR$"
  BA_industryjobs_bonus_workforce_mult_tt:"['concept_planet_BA_industryjobs']$BONUS_WORKFORCE_FOR$：$VARIABLE|0%=+$"
 
+##singlejob
+
+ mod_pop_BA_student_delegate_bonus_workforce_mult:"$job_BA_student_delegate$$BONUS_WORKFORCE_FOR$"
+ mod_pop_BA_Vigilant_crew_workforce_mult:"$job_BA_Vigilant_crew$$BONUS_WORKFORCE_FOR$"
+
+ mod_pop_BA_club_members_bonus_workforce_mult:"$job_BA_club_members$$BONUS_WORKFORCE_FOR$"
+ mod_pop_BA_Kivotos_staff_bonus_workforce_mult:"$job_BA_Kivotos_staff$$BONUS_WORKFORCE_FOR$"
+ mod_pop_BA_keystone_artisan_bonus_workforce_mult:"$job_BA_keystone_artisan$$BONUS_WORKFORCE_FOR$"
+ mod_pop_BA_keystone_foundry_bonus_workforce_mult:"$job_BA_keystone_foundry$$BONUS_WORKFORCE_FOR$"
+ mod_pop_BA_scrap_refiner_bonus_workforce_mult:"$job_BA_scrap_refiner$$BONUS_WORKFORCE_FOR$"
+
+ mod_pop_BA_dont_be_crazy_here_bonus_workforce_mult:"$job_BA_dont_be_crazy_here$$BONUS_WORKFORCE_FOR$"
+ mod_pop_BA_Kivotos_miner_bonus_workforce_mult :"$job_BA_Kivotos_miner$$BONUS_WORKFORCE_FOR$"
+ mod_pop_BA_caterer_bonus_workforce_mult :"$job_BA_caterer$$BONUS_WORKFORCE_FOR$"
+
+ mod_pop_BA_flexible_workers_bonus_workforce_mult:"$job_BA_flexible_workers$$BONUS_WORKFORCE_FOR$"
+ mod_pop_BA_scavenger_bonus_workforce_mult:"$job_BA_scavenger$$BONUS_WORKFORCE_FOR$"
+
+ mod_pop_BA_pyroxenes_maker_bonus_workforce_mult:"$job_BA_pyroxenes_maker$$BONUS_WORKFORCE_FOR$"
+ mod_pop_BA_keystone_maintenance_staff_bonus_workforce_mult:"$job_BA_keystone_maintenance_staff$$BONUS_WORKFORCE_FOR$"
+
+ mod_pop_BA_student_on_duty_bonus_workforce_mult:"$job_BA_student_on_duty$$BONUS_WORKFORCE_FOR$"
+ mod_pop_BA_ringworld_workerbonus_workforce_mult:"$job_BA_ringworld_worker$$BONUS_WORKFORCE_FOR$"
+ 
 #job@concept
  concept_planet_BA_flexpop:"灵活岗位"
  concept_planet_BA_flexible_workers:"灵活就业者"

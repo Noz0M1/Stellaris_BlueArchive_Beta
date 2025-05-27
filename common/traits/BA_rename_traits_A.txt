@@ -309,10 +309,10 @@ leader_club_023 = {
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R74.dds"
 	randomized = no
 	councilor_modifier = {
-		#自治区职员产出的社会学点数+1、消费品+1，矿物维护费+1
-		BA_staff_pop_society_research_produces_add = 1
-		BA_staff_pop_consumer_goods_produces_add = 1
-		BA_staff_pop_minerals_upkeep_add = 1
+		#自治区职员产出的凝聚力+1、贸易额+1，消费品维护费+1
+		BA_staff_pop_unity_produces_add = 1
+		BA_staff_pop_trade_produces_add = 1
+		BA_staff_pop_consumer_goods_upkeep_add = 1
 	}
 	leader_class = all
 	selectable_weight = 0
