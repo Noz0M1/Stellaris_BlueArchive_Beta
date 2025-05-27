@@ -202,6 +202,7 @@ BA_club_members = {
 }
 
 ### 联邦职员 ###
+#6食物 -> 6凝聚力 4贸易
 #舒适度 凝聚力
 BA_Kivotos_staff = {
 	category = specialist
@@ -232,32 +233,13 @@ BA_Kivotos_staff = {
 	resources = {
 		category = BA_staff_pop
 		upkeep = {
-			food = 12
+			food = 6
 		}
 		produces = {
-			consumer_goods = 4
+			unity = 6
+			trade = 6
 		}
 		#传统
-		produces = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_tradition = tr_kivotos_newkind_dome
-				}
-			}
-			trade = 32
-		}
-		produces = {
-			trigger = {
-				exists = owner
-				NOT = {
-					owner = {
-						has_tradition = tr_kivotos_newkind_dome
-					}
-				}
-			}
-			unity = 8
-		}
 		# upkeep = {
 		# 	trigger = {
 		# 		owner = {
@@ -276,15 +258,6 @@ BA_Kivotos_staff = {
 		# 	consumer_goods = 3
 		# }
 		#
-		produces = {
-			trigger = {
-				owner = {
-					has_technology = tech_BA_SI_Abydos_A01
-				}
-			}
-			food = -1
-			energy = 2
-		}
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -292,7 +265,8 @@ BA_Kivotos_staff = {
 				has_tradition = tr_kivotos_newkind_dome
 			}
 		}
-		planet_amenities_add = 2
+		planet_amenities_add = 50
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 	weight = {
 		weight = @specialist_job_weight
@@ -330,7 +304,7 @@ BA_keystone_artisan = {
 		}
 	}
 	resources = {
-		category = planet_artisans
+		category = BA_keystone_artisan
 		upkeep = {
 			minerals = 8
 		}
@@ -399,7 +373,7 @@ BA_keystone_foundry = {
 		}
 	}
 	resources = {
-		category = planet_metallurgists
+		category = BA_keystone_foundry
 		upkeep = {
 			minerals = 8
 		}
@@ -536,7 +510,7 @@ BA_dont_be_crazy_here = {
 		}
 	}
 	resources = {
-		category = planet_technician
+		category = BA_dont_be_crazy_here
 		upkeep = {
 			unity = 2
 		}
@@ -603,7 +577,7 @@ BA_Kivotos_miner = {
 		}
 	}
 	resources = {
-		category = planet_miners
+		category = BA_Kivotos_miner
 		produces = {
 			minerals = 15
 		}
@@ -668,7 +642,7 @@ BA_caterer = {
 	}
 	possible_precalc = can_fill_worker_job
 	resources = {
-		category = planet_farmers
+		category = BA_caterer
 		produces = {
 			food = 15
 		}
