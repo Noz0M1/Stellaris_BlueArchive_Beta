@@ -106,15 +106,19 @@ building_BA_basis_schola_2 = {
 # 能量币
 building_BA_energy_1 = {
 	base_buildtime = @b1_time
+	base_cap_amount = 1
 	category = resource
 	building_sets = {
 		generator
-		ba_generator
+		BA_generator
+		factory
+		# 不能在学院都市都市星球建，可加上factory可以建
 	}
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	resources = {
 		category = planet_buildings
@@ -130,7 +134,8 @@ building_BA_energy_1 = {
 			exists = owner
 		}
 		modifier = {
-			job_BA_dont_be_crazy_here_add = 100
+			job_BA_dont_be_crazy_here_add = 200
+			planet_technician_produces_mult = 0.2
 		}
 	}
 	prerequisites = {
@@ -147,12 +152,15 @@ building_BA_energy_2 = {
 	category = resource
 	building_sets = {
 		generator
-		ba_generator
+		BA_generator
+		factory
+		# 不能在学院都市都市星球建，可加上factory可以建
 	}
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	allow = {
 		has_upgraded_capital = yes
@@ -193,8 +201,19 @@ building_BA_energy_2 = {
 			exists = owner
 		}
 		modifier = {
-			job_BA_dont_be_crazy_here_add = 300
+			job_BA_dont_be_crazy_here_add = 400
 			job_BA_dont_be_crazy_here_max_workforce_mult = 0.1
+			planet_technician_produces_mult = 0.2
+			planet_technician_energy_produces_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_ringworld_output_boost = yes
+			exists = owner
+		}
+		modifier = {
+			planet_technician_energy_produces_add = 2
 		}
 	}
 	prerequisites = {
@@ -209,12 +228,15 @@ building_BA_minerals_1 = {
 	category = resource
 	building_sets = {
 		mining
-		ba_mining
+		BA_mining
+		factory
+		# 不能在学院都市都市星球建，可加上factory可以建
 	}
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	resources = {
 		category = planet_buildings
@@ -230,8 +252,8 @@ building_BA_minerals_1 = {
 			exists = owner
 		}
 		modifier = {
-			job_BA_Kivotos_miner_add = 100
-			planet_miners_minerals_produces_add = 2
+			job_BA_Kivotos_miner_add = 200
+			planet_miners_produces_mult = 0.2
 		}
 	}
 	upgrades = {
@@ -248,12 +270,15 @@ building_BA_minerals_2 = {
 	category = resource
 	building_sets = {
 		mining
-		ba_mining
+		BA_mining
+		factory
+		# 不能在学院都市都市星球建，可加上factory可以建
 	}
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	allow = {
 		has_upgraded_capital = yes
@@ -283,8 +308,10 @@ building_BA_minerals_2 = {
 			exists = owner
 		}
 		modifier = {
-			job_BA_Kivotos_miner_add = 300
-			planet_miners_minerals_produces_add = 5
+			job_BA_Kivotos_miner_add = 400
+			job_BA_Kivotos_miner_max_workforce_mult = 0.1
+			planet_miners_produces_mult =0.2
+			planet_miners_minerals_produces_add = 2
 		}
 	}
 	prerequisites = {
@@ -299,12 +326,15 @@ building_BA_food_1 = {
 	category = resource
 	building_sets = {
 		farming
-		ba_farming
+		BA_farming
+		factory
+		# 不能在学院都市都市星球建，可加上factory可以建
 	}
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	resources = {
 		category = planet_buildings
@@ -320,8 +350,8 @@ building_BA_food_1 = {
 			exists = owner
 		}
 		modifier = {
-			job_BA_caterer_add = 100
-			planet_farmers_food_produces_add = 2
+			job_BA_caterer_add = 200
+			planet_farmers_produces_mult = 0.2
 		}
 	}
 	upgrades = {
@@ -338,12 +368,15 @@ building_BA_food_2 = {
 	category = resource
 	building_sets = {
 		farming
-		ba_farming
+		BA_farming
+		factory
+		# 不能在学院都市都市星球建，可加上factory可以建
 	}
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	allow = {
 		exists = owner
@@ -385,8 +418,19 @@ building_BA_food_2 = {
 			exists = owner
 		}
 		modifier = {
-			job_BA_caterer_add = 300
-			planet_farmers_food_produces_add = 5
+			job_BA_caterer_add = 400
+			job_BA_caterer_max_workforce_mult = 0.1
+			planet_farmers_produces_mult = 0.20
+			planet_farmers_food_produces_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_ringworld_output_boost = yes
+			exists = owner
+		}
+		modifier = {
+			planet_farmers_food_produces_add = 2
 		}
 	}
 	prerequisites = {
@@ -581,6 +625,7 @@ building_BA_keystone_factory_1 = {
 
 building_BA_keystone_factory_2 = {
 	base_buildtime = 480
+	can_build = no
 	position_priority = 154
 	category = manufacturing
 	building_sets = {
@@ -651,7 +696,7 @@ building_BA_club_room = {
 			}
 		}
 		modifier = {
-			job_BA_club_members_add = 100
+			job_BA_club_members_add = 120
 		}
 	}
 	triggered_planet_modifier = {
@@ -662,7 +707,7 @@ building_BA_club_room = {
 			}
 		}
 		modifier = {
-			job_BA_club_members_add = 200
+			job_BA_club_members_add = 240
 		}
 	}
 	resources = {
@@ -682,6 +727,7 @@ building_BA_club_room = {
 
 building_BA_club_mansion = {
 	icon = building_augmentation_center
+	can_build = no
 	base_buildtime = 180
 	category = research
 	building_sets = {
@@ -708,7 +754,7 @@ building_BA_club_mansion = {
 			}
 		}
 		modifier = {
-			job_BA_club_members_add = 100
+			job_BA_club_members_add = 240
 		}
 	}
 	triggered_planet_modifier = {
@@ -719,7 +765,7 @@ building_BA_club_mansion = {
 			}
 		}
 		modifier = {
-			job_BA_club_members_add = 200
+			job_BA_club_members_add = 480
 		}
 	}
 	resources = {
@@ -733,3 +779,4 @@ building_BA_club_mansion = {
 		}
 	}
 }
+
