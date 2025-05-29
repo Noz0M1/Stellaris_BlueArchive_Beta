@@ -602,6 +602,7 @@ building_BA_keystone_factory_1 = {
 			}
 		}
 		modifier = {
+			job_BA_keystone_artisan_add = 200
 			# 预留给岗位添加
 		}
 	}
@@ -609,7 +610,6 @@ building_BA_keystone_factory_1 = {
 		category = planet_buildings
 		cost = {
 			minerals = 300
-			alloys = 50
 		}
 		upkeep = {
 			energy = 4
@@ -649,6 +649,7 @@ building_BA_keystone_factory_2 = {
 			}
 		}
 		modifier = {
+			job_BA_keystone_artisan_add = 400
 			# 预留给岗位
 		}
 	}
@@ -656,7 +657,7 @@ building_BA_keystone_factory_2 = {
 		category = planet_buildings
 		cost = {
 			minerals = 300
-			alloys = 50
+			sr_keystone = 50
 		}
 		upkeep = {
 			energy = 4
@@ -780,3 +781,90 @@ building_BA_club_mansion = {
 	}
 }
 
+building_BA_Kivotos_staff_room = {
+	icon = building_augmentation_center
+	base_buildtime = 180
+	category = unity
+	building_sets = {
+		unity
+		BA_research
+		BA_unity
+	}
+	position_priority = 22
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+		NOR = {
+			is_planet_class = pc_BA_auto_ringworld
+			is_planet_class = pc_BA_auto_habitat
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_Kivotos_staff_add = 200
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	upgrades = {
+		building_BA_Kivotos_staff_mansion
+	}
+}
+
+building_BA_Kivotos_staff_mansion = {
+	icon = building_augmentation_center
+	can_build = no
+	base_buildtime = 180
+	category = unity
+	building_sets = {
+		unity
+		BA_research
+		BA_unity
+	}
+	position_priority = 22
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+		NOR = {
+			is_planet_class = pc_BA_auto_ringworld
+			is_planet_class = pc_BA_auto_habitat
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_Kivotos_staff_add = 400
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+			rare_crystals = 35
+		}
+		upkeep = {
+			energy = 2
+			rare_crystals = 1
+		}
+	}
+}
