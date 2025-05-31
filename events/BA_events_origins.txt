@@ -362,12 +362,15 @@ country_event = {
 		capital_scope = {
 			if = {
 				limit = {
+					owner = {
+						has_origin = origin_Kivotos_Eden_treaty
+					}
 					has_planet_flag = Millennium_was_fixed_flag
 					has_planet_flag = Trinity_was_fixed_flag
 					has_planet_flag = Gehenna_was_fixed_flag
 					has_planet_flag = Abydos_was_fixed_flag
 				}
-				prev = {
+				owner = {
 					country_event = {
 						id = BA_origin.0010
 					}
@@ -2664,7 +2667,7 @@ country_event = {
 							add_deposit = d_Atrahasis_harvester
 							add_deposit = d_Atrahasis_agriculture
 							add_deposit = d_Atrahasis_factory
-							add_deposit = d_Atrahasis_gravity_control
+							add_deposit = d_Atrahasis_gravity_controllor
 							set_variable = {
 								which = Unnamed_starting_enemy_count
 								value = 8
@@ -2724,14 +2727,7 @@ country_event = {
 					count = 6
 					add_deposit = d_fade_Sanctum
 				}
-				add_deposit = d_black_market			#黑市区块
-				add_deposit = d_broken_Abydos_school			#阿拜多斯校区
-				add_deposit = d_broken_Millennium_school			#千年校区
-				add_deposit = d_broken_Trinity_school			#三一校区
-				add_deposit = d_broken_Gehenna_school			#格黑娜校区
-				add_deposit = d_broken_power_station			#千年发电厂
-				add_deposit = d_broken_desert_mine			#沙漠矿区
-				add_deposit = d_Greenhouse_farms			#赤冬温室农场（只是因为没有粮食区划所以拉来凑数的）
+				add_deposit = d_fade_Sanctum_zone
 				### 虚妄圣库姆特
 				every_owned_pop_group = {
 					kill_all_pop = yes
@@ -2740,9 +2736,7 @@ country_event = {
 				add_building = building_BA_fade_Sanctum_center
 				create_pop_group = {
 					species = event_target:BA_Unnamed_enemy_species
-					effect = {
-						add_pop_amount = 1000
-					}
+					size = 1000
 				}
 				while = {
 					count = 12
@@ -2794,6 +2788,17 @@ country_event = {
 	}
 	option = {
 		name = BA_origin.2002.next
+		begin_event_chain = {
+			event_chain = BA_Unnamed_starting_chain
+			target = root
+		}
+		create_point_of_interest = {
+			id = BA_Unnamed_starting_chain_point_A
+			name = BA_Unnamed_starting_chain_point_A_title
+			desc = BA_Unnamed_starting_chain_point_A_desc
+			event_chain = BA_Unnamed_starting_chain
+			location = capital_scope
+		}
 	}
 }
 
@@ -2810,9 +2815,12 @@ country_event = {
 	}
 	option = {
 		name = BA_origin.2003.next
-		begin_event_chain = {
+		create_point_of_interest = {
+			id = BA_Unnamed_starting_chain_point_B
+			name = BA_Unnamed_starting_chain_point_B_title
+			desc = BA_Unnamed_starting_chain_point_B_desc
 			event_chain = BA_Unnamed_starting_chain
-			target = root
+			location = capital_scope
 		}
 		add_resource = {
 			sr_pyroxenes = 30
@@ -2981,17 +2989,33 @@ country_event = {
 	option = {
 		name = BA_origin.2052.next
 		fromfrom = {
-			hidden_effect = {
-				every_owned_pop_group = {
-					kill_all_pop = yes
+			set_owner = root
+			owner = {
+				hidden_effect = {
+					remove_point_of_interest = BA_Unnamed_starting_chain_point_A
 				}
+				create_point_of_interest = {
+					id = BA_Unnamed_starting_chain_point_C
+					name = BA_Unnamed_starting_chain_point_C_title
+					desc = BA_Unnamed_starting_chain_point_C_desc
+					event_chain = BA_Unnamed_starting_chain
+					location = prev
+				}
+			}
+			hidden_effect = {
 				create_pop_group = {
 					species = owner_main_species
-					effect = {
-						add_pop_amount = 400
-					}
+					size = 400
 				}
-				add_district = BA_districts_dome
+				every_owned_pop_group = {
+					limit = {
+						species = {
+							has_species_flag = BA_Unnamed_enemy_species
+						}
+					}
+					kill_all_pop = yes
+				}
+				add_district = BA_districts_campus
 				add_district = BA_districts_dome
 				check_planet_employment = yes
 				planet_event = {
@@ -2999,7 +3023,6 @@ country_event = {
 					days = 180
 				}
 			}
-			set_owner = root
 		}
 	}
 }
@@ -3084,7 +3107,21 @@ planet_event = {
 	}
 	option = {
 		name = BA_origin.2102.next
-		set_capital = yes
+		custom_tooltip = BA_origin.2102.next
+		owner = {
+			end_event_chain = BA_Unnamed_starting_chain
+		}
+		hidden_effect = {
+			set_capital = yes
+			remove_deposit = d_fade_Sanctum_zone
+			add_deposit = d_broken_Abydos_school			#阿拜多斯校区
+			add_deposit = d_broken_Millennium_school			#千年校区
+			add_deposit = d_broken_Trinity_school			#三一校区
+			add_deposit = d_broken_Gehenna_school			#格黑娜校区
+			add_deposit = d_broken_power_station			#千年发电厂
+			add_deposit = d_broken_desert_mine			#沙漠矿区
+			add_deposit = d_Greenhouse_farms			#赤冬温室农场（只是因为没有粮食区划所以拉来凑数的）
+		}
 	}
 }
 
@@ -3180,7 +3217,9 @@ country_event = {
 	option = {
 		name = BA_origin.2112.next
 		custom_tooltip = BA_origin.2112.next.tip
-		end_event_chain = BA_Unnamed_starting_chain
+		hidden_effect = {
+			remove_point_of_interest = BA_Unnamed_starting_chain_point_B
+		}
 	}
 }
 

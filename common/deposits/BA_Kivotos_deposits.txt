@@ -23,14 +23,12 @@ d_broken_Abydos_school = {
 			minerals = 250
 		}
 	}
-	#清除花费1000能量，500矿
 	blocker_swap_types = {
 		d_Abydos_school
 	}
 	planet_modifier = {
 		planet_max_districts_add = -1
 	}
-	#-1区划
 	drop_weight = {
 		weight = 0
 	}
@@ -100,14 +98,12 @@ d_broken_Millennium_school = {
 			minerals = 250
 		}
 	}
-	#清除花费1000能量，500矿
 	blocker_swap_types = {
 		d_Millennium_school
 	}
 	planet_modifier = {
 		planet_max_districts_add = -1
 	}
-	#-1区划
 	drop_weight = {
 		weight = 0
 	}
@@ -173,14 +169,12 @@ d_broken_Trinity_school = {
 			minerals = 250
 		}
 	}
-	#清除花费1000能量，500矿
 	blocker_swap_types = {
 		d_Trinity_school
 	}
 	planet_modifier = {
 		planet_max_districts_add = -1
 	}
-	#-1区划
 	drop_weight = {
 		weight = 0
 	}
@@ -478,9 +472,7 @@ d_broken_power_station = {
 	}
 	planet_modifier = {
 		planet_max_districts_add = -1
-		district_generator_max = 4
 	}
-	#-1区划 +4发癫区划
 	drop_weight = {
 		weight = 0
 	}

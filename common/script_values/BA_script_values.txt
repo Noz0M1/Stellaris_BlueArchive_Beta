@@ -47,23 +47,23 @@
 # For format for doing so is value:my_value|PARAM1|value1|PARAM2|value2|.
 # Then you can use $PARAM1$ in the script value and it will replace it with value1
 ########   原版！
-num_minor_orbitals = {
-	base = 0
-	complex_trigger_modifier = {
-		trigger = count_fleet_in_system
-		parameters = {
-			limit = {
-				is_ship_class = shipclass_habitat_station
-				OR = {
-					is_ship_size = ship_BA_auto_habitat_minor
-					is_ship_size = minor_orbital_resource
-					is_ship_size = minor_orbital_generic
-				}
-			}
-		}
-		mode = add
-	}
-}
+# num_minor_orbitals = {
+# 	base = 0
+# 	complex_trigger_modifier = {
+# 		trigger = count_fleet_in_system
+# 		parameters = {
+# 			limit = {
+# 				is_ship_class = shipclass_habitat_station
+# 				OR = {
+# 					is_ship_size = ship_BA_auto_habitat_minor
+# 					is_ship_size = minor_orbital_resource
+# 					is_ship_size = minor_orbital_generic
+# 				}
+# 			}
+# 		}
+# 		mode = add
+# 	}
+# }
 
 ########   岗位
 # num_BA_count_keystone_jobs = {
@@ -100,7 +100,7 @@ num_BA_club_game_produce = {
 	min = 15
 	### 人口
 	complex_trigger_modifier = {
-		trigger = count_owned_pop
+		trigger = count_owned_pop_amount
 		parameters = {
 			limit = {
 				is_kivotos = yes
@@ -192,7 +192,7 @@ num_BA_club_empire_size_modifier_effect = {
 #出版部
 num_BA_club_publish_value = {
 	complex_trigger_modifier = {
-		trigger = count_owned_pop
+		trigger = count_owned_pop_amount
 		parameters = {
 			limit = {
 				is_sapient = yes
@@ -232,71 +232,33 @@ num_BA_SI_next_idea = {
 num_BA_auto_habitat_module_max_districts = {
 	base = 0
 	complex_trigger_modifier = {
-		trigger = count_fleet_in_system
+		trigger = count_system_planet
 		parameters = {
 			limit = {
-				has_fleet_flag = BA_minor_module
+				is_star = no
+				is_moon = no
+				is_asteroid = no
+				is_artificial = no
 			}
 		}
-		mult = 0.5
+		mult = 1
 		mode = add
 	}
 	complex_trigger_modifier = {
-		trigger = count_fleet_in_system
+		trigger = count_system_planet
 		parameters = {
 			limit = {
-				OR = {
-					has_fleet_flag = BA_normal_module
-					has_fleet_flag = BA_research_module
-				}
+				is_star = yes
 			}
 		}
 		mult = 1.5
 		mode = add
 	}
 	complex_trigger_modifier = {
-		trigger = count_fleet_in_system
+		trigger = count_system_planet
 		parameters = {
 			limit = {
-				OR = {
-					has_fleet_flag = BA_energy_module
-					has_fleet_flag = BA_mineral_module
-				}
-			}
-		}
-		mult = 1
-		mode = add
-	}
-}
-
-### 最大建筑槽位
-# 基础+1，通常模块+1，科研模块不增加，其他模块+0.5
-num_BA_auto_habitat_module_max_buildings = {
-	base = 1
-	complex_trigger_modifier = {
-		trigger = count_fleet_in_system
-		parameters = {
-			limit = {
-				has_fleet_flag = BA_normal_module
-				#is_ship_size = ship_BA_auto_habitat_generic
-			}
-		}
-		mult = 1
-		mode = add
-	}
-	complex_trigger_modifier = {
-		trigger = count_fleet_in_system
-		parameters = {
-			limit = {
-				OR = {
-					is_ship_size = ship_BA_auto_habitat_minor
-					is_ship_size = ship_BA_auto_habitat_generic
-				}
-				NOR = {
-					has_fleet_flag = BA_research_module
-					has_fleet_flag = BA_normal_module
-				}
-				#is_ship_size = ship_BA_auto_habitat_generic
+				is_moon = yes
 			}
 		}
 		mult = 0.5
@@ -305,63 +267,78 @@ num_BA_auto_habitat_module_max_buildings = {
 }
 
 ### 矩阵区上限
-# 基础+1，通常模块+1，研究模块+3
+# 基础+2，研究大天体+3，研究小天体+1
 num_BA_auto_habitat_max_matrix = {
-	base = 1
+	base = 2
 	complex_trigger_modifier = {
-		trigger = count_fleet_in_system
+		trigger = count_system_planet
 		parameters = {
 			limit = {
-				has_fleet_flag = BA_research_module
-				#is_ship_size = ship_BA_auto_habitat_generic
+				OR = {
+					has_deposit_for = shipclass_research_station
+					has_minor_artifact_deposit = yes
+				}
 			}
 		}
 		mult = 3
-		mode = add
-	}
-	complex_trigger_modifier = {
-		trigger = count_fleet_in_system
-		parameters = {
-			limit = {
-				is_ship_size = ship_BA_auto_habitat_generic
-				NOT = {
-					has_fleet_flag = BA_research_module
-				}
-				#is_ship_size = ship_BA_auto_habitat_generic
-			}
-		}
 		mode = add
 	}
 }
 
 ### 涡轮区上限
-# 发电模块+3
+# 基础+2，每矿藏+2，每气巨+1
 num_BA_auto_habitat_max_turbine = {
-	base = 0
+	base = 2
 	complex_trigger_modifier = {
-		trigger = count_fleet_in_system
+		trigger = count_system_planet
 		parameters = {
 			limit = {
-				has_fleet_flag = BA_energy_module
+				has_orbital_energy_deposit = yes
 			}
 		}
-		mult = 3
+		mult = 2
+		mode = add
+	}
+	complex_trigger_modifier = {
+		trigger = count_system_planet
+		parameters = {
+			limit = {
+				is_planet_class = pc_gas_giant
+				has_orbital_energy_deposit = no
+			}
+		}
+		mult = 1
 		mode = add
 	}
 }
 
 ### 钻探区上限
-# 采矿模块+3
+# 基础+2，每矿藏+2，每荒芜+1
 num_BA_auto_habitat_max_drill = {
-	base = 0
+	base = 2
 	complex_trigger_modifier = {
-		trigger = count_fleet_in_system
+		trigger = count_system_planet
 		parameters = {
 			limit = {
-				has_fleet_flag = BA_mineral_module
+				has_orbital_mining_deposit = yes
 			}
 		}
-		mult = 3
+		mult = 2
+		mode = add
+	}
+	complex_trigger_modifier = {
+		trigger = count_system_planet
+		parameters = {
+			limit = {
+				OR = {
+					is_planet_class = pc_barren
+					is_planet_class = pc_barren_cold
+					is_planet_class = pc_shattered
+				}
+				has_orbital_mining_deposit = no
+			}
+		}
+		mult = 1
 		mode = add
 	}
 }

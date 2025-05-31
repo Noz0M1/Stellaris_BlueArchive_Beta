@@ -111,8 +111,6 @@ building_BA_energy_1 = {
 	building_sets = {
 		generator
 		BA_generator
-		factory
-		# 不能在学院都市都市星球建，可加上factory可以建
 	}
 	potential = {
 		owner = {
@@ -153,8 +151,6 @@ building_BA_energy_2 = {
 	building_sets = {
 		generator
 		BA_generator
-		factory
-		# 不能在学院都市都市星球建，可加上factory可以建
 	}
 	potential = {
 		owner = {
@@ -229,8 +225,6 @@ building_BA_minerals_1 = {
 	building_sets = {
 		mining
 		BA_mining
-		factory
-		# 不能在学院都市都市星球建，可加上factory可以建
 	}
 	potential = {
 		owner = {
@@ -271,8 +265,6 @@ building_BA_minerals_2 = {
 	building_sets = {
 		mining
 		BA_mining
-		factory
-		# 不能在学院都市都市星球建，可加上factory可以建
 	}
 	potential = {
 		owner = {
@@ -327,8 +319,6 @@ building_BA_food_1 = {
 	building_sets = {
 		farming
 		BA_farming
-		factory
-		# 不能在学院都市都市星球建，可加上factory可以建
 	}
 	potential = {
 		owner = {
@@ -369,8 +359,6 @@ building_BA_food_2 = {
 	building_sets = {
 		farming
 		BA_farming
-		factory
-		# 不能在学院都市都市星球建，可加上factory可以建
 	}
 	potential = {
 		owner = {
@@ -559,7 +547,7 @@ building_BA_keystone_foundry_3 = {
 		}
 		modifier = {
 			job_BA_keystone_foundry_add = 500
-			pop_BA_keystone_foundry_bonus_workforce_mult = 100000
+			pop_BA_keystone_foundry_bonus_workforce_mult = 5
 		}
 	}
 	resources = {
@@ -572,7 +560,7 @@ building_BA_keystone_foundry_3 = {
 		}
 	}
 	prerequisites = {
-		#"tech_BA_angel24_keystone_foundry"
+		tech_BA_Kivotos_chronicle_stage1
 	}
 }
 

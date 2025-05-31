@@ -297,7 +297,7 @@ d_cleaning_machine_center = {
 ##############
 #虚妄圣塔
 d_fade_Sanctum = {
-	icon = d_cleaning_machine_center	#
+	icon = d_cleaning_machine_center
 	is_for_colonizable = yes
 	category = deposit_cat_blockers
 	time = 30
@@ -306,6 +306,7 @@ d_fade_Sanctum = {
 	}
 	planet_modifier = {
 		habitability_ceil_add = -0.15
+		planet_max_districts_add = -1
 	}
 	on_cleared = {
 		planet_event = {
@@ -318,6 +319,25 @@ d_fade_Sanctum = {
 	}
 	prerequisites = {
 		"tech_BA_institute_of_reconstruction"
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_fade_Sanctum_zone = {
+	icon = d_cleaning_machine_center
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+	time = 30
+	resources = {
+		category = deposit_blockers
+	}
+	planet_modifier = {
+		planet_max_districts_add = -6
+	}
+	can_be_cleared = {
+		always = no
 	}
 	drop_weight = {
 		weight = 0
@@ -405,7 +425,7 @@ d_Atrahasis_matrix = {
 	}
 }
 
-d_Atrahasis_gravity_control = {
+d_Atrahasis_gravity_controllor = {
 	icon = "unused/d_space_walk"
 	is_for_colonizable = yes
 	category = deposit_cat_rare

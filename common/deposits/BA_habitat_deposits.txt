@@ -5,24 +5,6 @@ d_BA_auto_habitat = {
 	potential = {
 		always = no
 	}
-	### 最大区划数
-	# 小模块+1，通常、科研模块+3，其他模块+2
-	triggered_planet_modifier = {
-		potential = {
-			always = yes
-		}
-		planet_max_districts_add = 1
-		mult = solar_system.value:num_BA_auto_habitat_module_max_districts
-	}
-	### 最大建筑槽位
-	# 基础+1，通常模块+1，其他模块+0.5
-	triggered_planet_modifier = {
-		potential = {
-			always = yes
-		}
-		planet_max_buildings_add = 1
-		mult = solar_system.value:num_BA_auto_habitat_module_max_buildings
-	}
 	# 升级居住站，可以获得额外的宜居性和企业槽位
 	triggered_planet_modifier = {
 		potential = {
@@ -38,8 +20,15 @@ d_BA_auto_habitat = {
 		pop_environment_tolerance = 0.1
 		planet_max_branch_office_buildings_add = 1
 	}
-	# The district cap for provided by support habitats is
-	# 3 × NUM_ORBITALS_TYPE
+	### 最大区划数
+	# 小模块+1，通常、科研模块+3，其他模块+2
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_max_districts_add = 1
+		mult = solar_system.value:num_BA_auto_habitat_module_max_districts
+	}
 	### 矩阵区上限
 	# 基础+1，通常模块+1，研究模块+3
 	triggered_planet_modifier = {
