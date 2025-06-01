@@ -198,7 +198,7 @@ building_BA_energy_2 = {
 		}
 		modifier = {
 			job_BA_dont_be_crazy_here_add = 400
-			job_BA_dont_be_crazy_here_max_workforce_mult = 0.1
+			pop_BA_dont_be_crazy_here_bonus_workforce_mult = 0.1
 			planet_technician_produces_mult = 0.2
 			planet_technician_energy_produces_add = 2
 		}
@@ -301,7 +301,7 @@ building_BA_minerals_2 = {
 		}
 		modifier = {
 			job_BA_Kivotos_miner_add = 400
-			job_BA_Kivotos_miner_max_workforce_mult = 0.1
+			pop_BA_Kivotos_miner_bonus_workforce_mult = 0.1
 			planet_miners_produces_mult =0.2
 			planet_miners_minerals_produces_add = 2
 		}
@@ -407,7 +407,7 @@ building_BA_food_2 = {
 		}
 		modifier = {
 			job_BA_caterer_add = 400
-			job_BA_caterer_max_workforce_mult = 0.1
+			pop_BA_caterer_bonus_workforce_mult = 0.1
 			planet_farmers_produces_mult = 0.20
 			planet_farmers_food_produces_add = 2
 		}
@@ -547,7 +547,7 @@ building_BA_keystone_foundry_3 = {
 		}
 		modifier = {
 			job_BA_keystone_foundry_add = 500
-			pop_BA_keystone_foundry_bonus_workforce_mult = 5
+			pop_BA_keystone_foundry_bonus_workforce_mult = 0.2
 		}
 	}
 	resources = {
