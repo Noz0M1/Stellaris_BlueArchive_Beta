@@ -240,9 +240,9 @@ zone_BA_mixed_industry = {
 			exists = owner
 		}
 		modifier = {
-			#100制造石铸造师 100制造石工匠
+			#100制造石铸造师 100青辉石工匠
 			job_BA_keystone_foundry_add = 100
-			job_BA_keystone_artisan_add = 100
+			job_BA_pyroxenes_artisan_add = 100
 		}
 	}
 	included_building_sets = {
@@ -285,9 +285,9 @@ zone_BA_foundry = {
 			exists = owner
 		}
 		modifier = {
-			#300制造石铸造师 -100制造石工匠
+			#300制造石铸造师 -100青辉石工匠
 			job_BA_keystone_foundry_add = 300
-			job_BA_keystone_artisan_add = -100
+			job_BA_pyroxenes_artisan_add = -100
 		}
 	}
 	included_building_sets = {
@@ -324,9 +324,9 @@ zone_BA_factory = {
 			exists = owner
 		}
 		modifier = {
-			#-100制造石铸造师 300制造石工匠
+			#-100制造石铸造师 300青辉石工匠
 			job_BA_keystone_foundry_add = -100
-			job_BA_keystone_artisan_add = 300
+			job_BA_pyroxenes_artisan_add = 300
 		}
 	}
 	included_building_sets = {

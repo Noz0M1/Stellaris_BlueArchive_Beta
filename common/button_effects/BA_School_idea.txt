@@ -3915,62 +3915,6 @@ button_effect_BA_SI_Millennium_G11_lock = {
 							message = no
 						}
 					}
-					hidden_effect = {
-						while = {
-							count = 2
-							random_list = {
-								1 = {
-									modifier = {
-										factor = 0
-										has_country_flag = BA_SI_Millennium_building_1
-									}
-									set_country_flag = BA_SI_Millennium_building_1
-								}
-								1 = {
-									modifier = {
-										factor = 0
-										has_country_flag = BA_SI_Millennium_building_2
-									}
-									set_country_flag = BA_SI_Millennium_building_2
-								}
-								1 = {
-									modifier = {
-										factor = 0
-										has_country_flag = BA_SI_Millennium_building_3
-									}
-									set_country_flag = BA_SI_Millennium_building_3
-								}
-								1 = {
-									modifier = {
-										factor = 0
-										has_country_flag = BA_SI_Millennium_building_4
-									}
-									set_country_flag = BA_SI_Millennium_building_4
-								}
-								1 = {
-									modifier = {
-										factor = 0
-										has_country_flag = BA_SI_Millennium_building_5
-									}
-									set_country_flag = BA_SI_Millennium_building_5
-								}
-								1 = {
-									modifier = {
-										factor = 0
-										has_country_flag = BA_SI_Millennium_building_6
-									}
-									set_country_flag = BA_SI_Millennium_building_6
-								}
-								1 = {
-									modifier = {
-										factor = 0
-										has_country_flag = BA_SI_Millennium_building_7
-									}
-									set_country_flag = BA_SI_Millennium_building_7
-								}
-							}
-						}
-					}
 				}
 			}
 		}

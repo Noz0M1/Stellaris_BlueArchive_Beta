@@ -246,9 +246,9 @@ BA_districts_military_factory = {
 			exists = owner
 		}
 		modifier = {
-			#100制造石铸造师 100制造石工匠
+			#100制造石铸造师 100青辉石工匠
 			job_BA_keystone_foundry_add = 100
-			job_BA_keystone_artisan_add = 100
+			job_BA_pyroxenes_artisan_add = 100
 		}
 	}
 	triggered_planet_modifier = {

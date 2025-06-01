@@ -668,8 +668,8 @@ country_event = {
 country_event = {
 	id = BA_Shittem.1012
 	is_triggered_only = yes
-	title = "BA_Shittem.1008.title"
-	desc = "BA_Shittem.1008.desc"
+	title = "BA_Shittem.1012.title"
+	desc = "BA_Shittem.1012.desc"
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
@@ -709,7 +709,7 @@ country_event = {
 	}
 	#返回
 	option = {
-		name = BA_Shittem.1008.exit
+		name = BA_Shittem.1012.exit
 		#hidden_effect = {
 		#    country_event = {
 		#        id = BA_Shittem.1010
@@ -823,7 +823,7 @@ country_event = {
 	}
 	#制造石冶金厂
 	option = {
-		name = angel24_tech_keystone_to_alloy
+		name = angel24_tech_keystone_foundry
 		is_dialog_only = yes
 		trigger = {
 			NOT = {
@@ -837,7 +837,7 @@ country_event = {
 				value >= 100
 			}
 		}
-		response_text = angel24_tech_keystone_to_alloy_done
+		response_text = angel24_tech_keystone_foundry_done
 		add_resource = {
 			sr_eligma = -100
 		}
@@ -873,6 +873,192 @@ country_event = {
 		}
 		set_country_flag = Added_angel24_tech_darkmatter
 	}
+	#学园理念：千年G11
+	option = {
+		name = angel24_tech_SI_Millennium_G11
+		trigger = {
+			has_technology = tech_BA_SI_Millennium_G11
+		}
+		country_event = {
+			id = BA_Shittem.1013
+		}
+	}
+}
+
+country_event = {
+	id = BA_Shittem.1013
+	is_triggered_only = yes
+	title = "BA_Shittem.1013.title"
+	desc = "BA_Shittem.1013.desc"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		room = "Angel24_room"
+	}
+	#返回
+	option = {
+		name = BA_Shittem.1013.exit
+		hidden_effect = {
+		   country_event = {
+		       id = BA_Shittem.1012
+		   }
+		}
+	}
+	option = {
+		name = angel24_tech_BA_data_SI
+		is_dialog_only = yes
+		trigger = {
+			NOT = {
+				has_technology = tech_BA_angel24_data_SI
+			}
+		}
+		allow = {
+			resource_stockpile_compare = {
+				resource = sr_eligma
+				value >= 100
+			}
+		}
+		response_text = angel24_tech_BA_data_SI_done
+		add_resource = {
+			sr_eligma = -100
+		}
+		give_technology = {
+			tech = tech_BA_angel24_data_SI
+		}
+	}
+	option = {
+		name = angel24_tech_BA_energy_SI
+		is_dialog_only = yes
+		trigger = {
+			NOT = {
+				has_technology = tech_BA_angel24_energy_SI
+			}
+		}
+		allow = {
+			resource_stockpile_compare = {
+				resource = sr_eligma
+				value >= 100
+			}
+		}
+		response_text = angel24_tech_BA_energy_SI_done
+		add_resource = {
+			sr_eligma = -100
+		}
+		give_technology = {
+			tech = tech_BA_angel24_energy_SI
+		}
+	}
+	option = {
+		name = angel24_tech_BA_food_SI
+		is_dialog_only = yes
+		trigger = {
+			NOT = {
+				has_technology = tech_BA_angel24_food_SI
+			}
+		}
+		allow = {
+			resource_stockpile_compare = {
+				resource = sr_eligma
+				value >= 100
+			}
+		}
+		response_text = angel24_tech_BA_food_SI_done
+		add_resource = {
+			sr_eligma = -100
+		}
+		give_technology = {
+			tech = tech_BA_angel24_food_SI
+		}
+	}
+	option = {
+		name = angel24_tech_BA_alloy_SI
+		is_dialog_only = yes
+		trigger = {
+			NOT = {
+				has_technology = tech_BA_angel24_alloy_SI
+			}
+		}
+		allow = {
+			resource_stockpile_compare = {
+				resource = sr_eligma
+				value >= 100
+			}
+		}
+		response_text = angel24_tech_BA_alloy_SI_done
+		add_resource = {
+			sr_eligma = -100
+		}
+		give_technology = {
+			tech = tech_BA_angel24_alloy_SI
+		}
+	}
+	option = {
+		name = angel24_tech_BA_pyroxenes_SI
+		is_dialog_only = yes
+		trigger = {
+			NOT = {
+				has_technology = tech_BA_angel24_pyroxenes_SI
+			}
+		}
+		allow = {
+			resource_stockpile_compare = {
+				resource = sr_eligma
+				value >= 100
+			}
+		}
+		response_text = angel24_tech_BA_pyroxenes_SI_done
+		add_resource = {
+			sr_eligma = -100
+		}
+		give_technology = {
+			tech = tech_BA_angel24_pyroxenes_SI
+		}
+	}
+	option = {
+		name = angel24_tech_BA_keystone_SI
+		is_dialog_only = yes
+		trigger = {
+			NOT = {
+				has_technology = tech_BA_angel24_keystone_SI
+			}
+		}
+		allow = {
+			resource_stockpile_compare = {
+				resource = sr_eligma
+				value >= 100
+			}
+		}
+		response_text = angel24_tech_BA_keystone_SI_done
+		add_resource = {
+			sr_eligma = -100
+		}
+		give_technology = {
+			tech = tech_BA_angel24_keystone_SI
+		}
+	}
+	option = {
+		name = angel24_tech_BA_dome_SI
+		is_dialog_only = yes
+		trigger = {
+			NOT = {
+				has_technology = tech_BA_angel24_dome_SI
+			}
+		}
+		allow = {
+			resource_stockpile_compare = {
+				resource = sr_eligma
+				value >= 100
+			}
+		}
+		response_text = angel24_tech_BA_dome_SI_done
+		add_resource = {
+			sr_eligma = -100
+		}
+		give_technology = {
+			tech = tech_BA_angel24_dome_SI
+		}
+	}
+
 }
 
 ### 学园理念

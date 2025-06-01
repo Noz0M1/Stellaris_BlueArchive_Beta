@@ -21,7 +21,7 @@
  ### 左线
  SI_Abydos_A01: "星球改造对策"
  SI_Abydos_A01_desc: "想要改造星球的环境，必须先规划建设好足够的基础，能量的供应是重中之重。"
- SI_Abydos_A01_effect: "\n§R与§!$SI_Abydos_B01$§R互斥§!\n效果：\n获得£society_research£§H$tech_terrestrial_sculpting$§!科技的§G75%§!进度\n环境改造速度: §G+25%§!\n自治区区划提供的§Y£job_BA_Kivotos_staff£$job_BA_Kivotos_staff$§!岗位: §G+1§!\n£job_BA_Kivotos_staff£§Y自治区职员产出§!: -1£food£§Y食物§!, +2£energy£§Y能量币§!\n "
+ SI_Abydos_A01_effect: "\n§R与§!$SI_Abydos_B01$§R互斥§!\n效果：\n获得£society_research£§H$tech_terrestrial_sculpting$§!科技的§G75%§!进度\n环境改造速度: §G+25%§!\n每100£job_BA_Kivotos_staff£§Y$job_BA_Kivotos_staff$§!或£job_BA_supplier£§Y$job_BA_supplier$§!提供:\n    $MOD_PLANET_BUILDING_BUILD_SPEED_MULT$§G+5%§!"
  SI_Abydos_A01_tip: "§C$SI_Abydos_A01$§!\n$SI_Abydos_A01_desc$\n$SI_Abydos_A01_effect$"
 
  SI_Abydos_A02: "物流整合"
@@ -189,7 +189,7 @@
  SI_Millennium_G03_tip: "§C$SI_Millennium_G03$§!\n$SI_Millennium_G03_desc$\n$SI_Millennium_G03_effect$"
  SI_Millennium_G04: "斗争与探索"
  SI_Millennium_G04_desc: "随着母星附近的资源相继开发，我们的可选项逐渐变得狭窄起来。但是，天上的乌云背后藏着的是更加宏伟深邃的世界。"
- SI_Millennium_G04_effect: "\n效果：\n研究备选: §G+§!\n获得大量£physics£ £society£ £engineering£研究点数和£alloys£合金\n为母星添加§H行星修正: §!$modifier_BA_SI_Millennium_G04$\n "
+ SI_Millennium_G04_effect: "\n效果：\n$MOD_COUNTRY_NUM_TECH_ALTERNATIVES_ADD$: §G+1§!\n$RESEARCH_EFFICIENCY$: §G+10%§!\n获得大量£physics£ £society£ £engineering£研究点数和£alloys£合金\n为母星添加§H行星修正: §!$modifier_BA_SI_Millennium_G04$\n "
  SI_Millennium_G04_tip: "§C$SI_Millennium_G04$§!\n$SI_Millennium_G04_desc$\n$SI_Millennium_G04_effect$"
 
  ### 共通中
@@ -221,7 +221,7 @@
  SI_Millennium_G10_tip: "§C$SI_Millennium_G10$§!\n$SI_Millennium_G10_desc$\n$SI_Millennium_G10_effect$"
  SI_Millennium_G11: "尾声：直到时间与世界的尽头"
  SI_Millennium_G11_desc: "我们写下的每一条定律，都将伴随我们直至一切的终点。那些数字和符号的优美组合，即是基沃托斯永恒的纪念碑。"
- SI_Millennium_G11_effect: "\n效果：\n随机获得两项模仿§B基沃托斯先驱者§!的建筑科技。\n$mod_country_minor_artifacts_produces_mult$: §G+10%§!\n$mod_planet_districts_upkeep_mult$: §G-10%§!\n$mod_planet_buildings_upkeep_mult$: §G-10%§!\n$mod_BA_club_pop_physics_research_produces_add$: §G+1.5§!\n$mod_BA_club_pop_society_research_produces_add$: §G+1.5§!\n$mod_BA_club_pop_engineering_research_produces_add$: §G+1.5§!\n$mod_BA_club_pop_unity_produces_add$: §G+1.5§!\n$mod_BA_club_pop_consumer_goods_upkeep_add$: §R+2§!\n "
+ SI_Millennium_G11_effect: "\n效果：\n可以通过§I天使24§!解锁科技，以模仿建造§B基沃托斯先驱者的§!的£building£建筑。\n$mod_country_minor_artifacts_produces_mult$: §G+10%§!\n$mod_planet_districts_upkeep_mult$: §G-10%§!\n$mod_planet_buildings_upkeep_mult$: §G-10%§!\n$mod_BA_club_pop_physics_research_produces_add$: §G+1.5§!\n$mod_BA_club_pop_society_research_produces_add$: §G+1.5§!\n$mod_BA_club_pop_engineering_research_produces_add$: §G+1.5§!\n$mod_BA_club_pop_unity_produces_add$: §G+1.5§!\n$mod_BA_club_pop_consumer_goods_upkeep_add$: §R+2§!\n "
  SI_Millennium_G11_tip: "§C$SI_Millennium_G11$§!\n$SI_Millennium_G11_desc$\n$SI_Millennium_G11_effect$"
 
  ### 上左线
@@ -251,7 +251,7 @@
  SI_Millennium_C01_tip: "§C$SI_Millennium_C01$§!\n$SI_Millennium_C01_desc$\n$SI_Millennium_C01_effect$"
  SI_Millennium_C02: "那让我们来做游戏吧"
  SI_Millennium_C02_desc: "这个模块的并行处理能力十分强大，如果用于生成一个庞大的虚拟游戏世界，一定会大受欢迎。"
- SI_Millennium_C02_effect: "\n§R与§!$SI_Millennium_C03$§R互斥§!\n效果：\n£unity£凝聚力产出: §G+15%§!\n稳定度: §G+5§!\n获得£unity£§Y凝聚力§!，数额相当于3倍的每月产出\n§B游戏开发部§!的社团建筑产出的凝聚力翻倍。\n "
+ SI_Millennium_C02_effect: "\n§R与§!$SI_Millennium_C03$§R互斥§!\n效果：\n立即获得大量£unity£§Y凝聚力§!，数额相当于3倍的每月产出\n£stability£稳定度: §G+5§!\n£unity£凝聚力产出: §G+15%§!\n§B游戏开发部§!的社团建筑产出的凝聚力翻倍。\n "
  SI_Millennium_C02_tip: "§C$SI_Millennium_C02$§!\n$SI_Millennium_C02_desc$\n$SI_Millennium_C02_effect$"
  SI_Millennium_C03: "搭建专用计算平台"
  SI_Millennium_C03_desc: "研讨会希望将这个模块用于帝国的领袖专用的工作平台，以提升帝国的整体行政效率。 "
@@ -347,7 +347,7 @@
  ### 第一页
  SI_Hyakkiyako_G01: "漫天樱花迟盛开"
  SI_Hyakkiyako_G01_desc: "百鬼夜行在自己治理和领导下，已经能够为帝国治理提供百鬼夜行综合学园认为最合适最恰当的发展途径"
- SI_Hyakkiyako_G01_effect: "\n效果：\n获得大量的£unity£ \n §H获得帝国修正: §!百鬼风尚 \n  "
+ SI_Hyakkiyako_G01_effect: "\n效果：\n立即获得大量的£unity£ \n §H获得帝国修正: §!百鬼风尚 \n  "
  SI_Hyakkiyako_G01_tip: "§C$SI_Hyakkiyako_G01$§!\n$SI_Hyakkiyako_G01_desc$\n$SI_Hyakkiyako_G01_effect$"
  SI_Hyakkiyako_G02: "行星百夜堂建设"
  SI_Hyakkiyako_G02_desc: "静子所提供的百夜堂的发展能够为学生们带来更好地课余时间的娱乐去处，同时也能带到整个星球的消费流动，为我们基沃托斯带来繁荣。"

@@ -579,10 +579,12 @@ tech_BA_SI_Millennium_G01 = {
 	}
 	weight = 0
 	modifier = {
-		planet_researchers_consumer_goods_upkeep_add = 0.2
-		planet_researchers_physics_research_produces_add = 0.5
-		planet_researchers_society_research_produces_add = 0.5
-		planet_researchers_engineering_research_produces_add = 0.5
+		planet_physicists_physics_research_produces_add = 0.5
+		planet_physicists_consumer_goods_upkeep_add = 0.2
+		planet_biologists_society_research_produces_add = 0.5
+		planet_biologists_consumer_goods_upkeep_add = 0.2
+		planet_engineers_engineering_research_produces_add = 0.5
+		planet_engineers_consumer_goods_upkeep_add = 0.2
 	}
 }
 
@@ -637,7 +639,8 @@ tech_BA_SI_Millennium_G04 = {
 	}
 	weight = 0
 	modifier = {
-		num_tech_alternatives_add = 3
+		num_tech_alternatives_add = 1
+		all_technology_research_speed = 0.1
 	}
 }
 

@@ -515,16 +515,19 @@ building_BA_keystone_foundry_2 = {
 		}
 	}
 	prerequisites = {
-		#"tech_BA_angel24_keystone_foundry"
+		tech_BA_Kivotos_chronicle_stage1
 	}
+	upgrades = {
+		building_BA_keystone_foundry_3
+	}
+
 }
 
 building_BA_keystone_foundry_3 = {
 	base_buildtime = 480
 	can_build = no
-	position_priority = 154
 	category = manufacturing
-	base_cap_amount = 1
+	base_cap_amount = 3
 	building_sets = {
 		industrial
 		foundry
@@ -536,7 +539,7 @@ building_BA_keystone_foundry_3 = {
 		}
 	}
 	allow = {
-		has_major_upgraded_capital = yes
+		has_fully_upgraded_capital = yes
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -560,12 +563,12 @@ building_BA_keystone_foundry_3 = {
 		}
 	}
 	prerequisites = {
-		tech_BA_Kivotos_chronicle_stage1
+
 	}
 }
 
 # 消费品
-building_BA_keystone_factory_1 = {
+building_BA_pyroxenes_factory_1 = {
 	base_buildtime = 360
 	position_priority = 154
 	category = manufacturing
@@ -590,7 +593,7 @@ building_BA_keystone_factory_1 = {
 			}
 		}
 		modifier = {
-			job_BA_keystone_artisan_add = 200
+			job_BA_pyroxenes_artisan_add = 200
 			# 预留给岗位添加
 		}
 	}
@@ -607,11 +610,11 @@ building_BA_keystone_factory_1 = {
 		# 预留给科技
 	}
 	upgrades = {
-		building_BA_keystone_factory_2
+		building_BA_pyroxenes_factory_2
 	}
 }
 
-building_BA_keystone_factory_2 = {
+building_BA_pyroxenes_factory_2 = {
 	base_buildtime = 480
 	can_build = no
 	position_priority = 154
@@ -637,7 +640,7 @@ building_BA_keystone_factory_2 = {
 			}
 		}
 		modifier = {
-			job_BA_keystone_artisan_add = 400
+			job_BA_pyroxenes_artisan_add = 400
 			# 预留给岗位
 		}
 	}
@@ -655,6 +658,54 @@ building_BA_keystone_factory_2 = {
 		# 预留给科技
 	}
 }
+
+building_BA_pyroxenes_factory_3 = {
+	base_buildtime = 480
+	can_build = no
+	category = manufacturing
+	base_cap_amount = 3
+	building_sets = {
+		industrial
+		foundry
+		BA_foundry
+	}
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+		has_fully_upgraded_capital = yes
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_pyroxenes_artisan_add = 500
+			pop_BA_pyroxenes_artisan_bonus_workforce_mult = 5
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			sr_pyroxenes = 100
+		}
+		upkeep = {
+			energy = 8
+		}
+	}
+	prerequisites = {
+
+	}
+
+}
+
+########## 特产 ##########
+
 
 ########## 科研和凝聚力 ##########
 building_BA_club_room = {
@@ -715,7 +766,7 @@ building_BA_club_room = {
 }
 
 building_BA_club_mansion = {
-	icon = building_augmentation_center
+	icon = building_augmentation_bazaars_branch
 	can_build = no
 	base_buildtime = 180
 	category = research

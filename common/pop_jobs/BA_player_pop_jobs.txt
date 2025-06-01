@@ -236,28 +236,37 @@ BA_Kivotos_staff = {
 			food = 6
 		}
 		produces = {
-			unity = 6
-			trade = 6
 		}
 		#传统
-		# upkeep = {
-		# 	trigger = {
-		# 		owner = {
-		# 			has_country_flag = BA_Blue_new_world_2
-		# 		}
-		# 	}
-		# 	minerals = 4
-		# }
-		# produces = {
-		# 	trigger = {
-		# 		owner = {
-		# 			has_country_flag = BA_Blue_new_world_2
-		# 		}
-		# 	}
-		# 	sr_pyroxenes = 0.5
-		# 	consumer_goods = 3
-		# }
-		#
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_tradition = tr_kivotos_newkind_dome
+				}
+			}
+			trade = 24
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				NOT = {
+					owner = {
+						has_tradition = tr_kivotos_newkind_dome
+					}
+				}
+			}
+			unity = 6
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_technology = tech_BA_SI_Abydos_A01
+				}
+			}
+			food = -1
+			energy = 2
+		}
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -268,16 +277,26 @@ BA_Kivotos_staff = {
 		planet_amenities_add = 50
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				has_technology = tech_BA_SI_Abydos_A01
+			}
+		}
+		#学园理念
+		planet_building_build_speed_mult = 0.05
+	}
+
 	weight = {
 		weight = @specialist_job_weight
 		mult = value:job_weights_modifier|JOB|trader|RESOURCE|trade|
 	}
 }
 
-### 制造石工匠 ###
+### 青辉石工匠 ###
 #模式一 48：基础 —— 8矿物 -> 8消费品
 #模式二 72：编年史5阶段 —— 14矿物 -> 14消费品
-BA_keystone_artisan = {
+BA_pyroxenes_artisan = {
 	category = specialist
 	#building_icon = building_BA_pyroxenes
 	swappable_data = {
@@ -304,7 +323,7 @@ BA_keystone_artisan = {
 		}
 	}
 	resources = {
-		category = BA_keystone_artisan
+		category = BA_pyroxenes_artisan
 		upkeep = {
 			minerals = 8
 		}
@@ -895,6 +914,15 @@ BA_supplier = {
 			}
 			food = 1
 		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				has_technology = tech_BA_SI_Abydos_A01
+			}
+		}
+		#学园理念
+		planet_building_build_speed_mult = 0.05
 	}
 	weight = {
 		weight = @ruler_job_weight

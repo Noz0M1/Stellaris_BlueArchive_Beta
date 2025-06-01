@@ -1,6 +1,5 @@
 #### 基础产业
 #tech_BA_keystone_foundry
-
 #### 高级产业
 #青辉石制造
 tech_BA_pyroxenes_crafting = {
@@ -202,6 +201,7 @@ tech_BA_angel24_rare_produce = {
 }
 
 tech_BA_angel24_keystone_foundry = {
+	icon = tech_BA_angel24
 	area = engineering
 	cost = @tier5cost3
 	tier = 5
@@ -212,6 +212,147 @@ tech_BA_angel24_keystone_foundry = {
 	weight = 0
 	potential = {
 		has_authority = auth_kivotos
+	}
+}
+
+tech_BA_angel24_pyroxenes_factory = {
+	icon = tech_BA_angel24
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	is_rare = yes
+	category = {
+		computing
+	}
+	weight = 0
+	potential = {
+		has_authority = auth_kivotos
+	}
+}
+
+tech_BA_angel24_data_SI = {
+	icon = tech_BA_angel24
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	is_rare = yes
+	category = {
+		computing
+	}
+	weight = 0
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prerequisites = {
+		tech_BA_SI_Millennium_G11
+	}
+}
+
+tech_BA_angel24_energy_SI = {
+	icon = tech_BA_angel24
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	is_rare = yes
+	category = {
+		computing
+	}
+	weight = 0
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prerequisites = {
+		tech_BA_SI_Millennium_G11
+	}
+}
+
+tech_BA_angel24_food_SI = {
+	icon = tech_BA_angel24
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	is_rare = yes
+	category = {
+		computing
+	}
+	weight = 0
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prerequisites = {
+		tech_BA_SI_Millennium_G11
+	}
+}
+
+tech_BA_angel24_alloy_SI = {
+	icon = tech_BA_angel24
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	is_rare = yes
+	category = {
+		computing
+	}
+	weight = 0
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prerequisites = {
+		tech_BA_SI_Millennium_G11
+	}
+}
+
+tech_BA_angel24_pyroxenes_SI = {
+	icon = tech_BA_angel24
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	is_rare = yes
+	category = {
+		computing
+	}
+	weight = 0
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prerequisites = {
+		tech_BA_SI_Millennium_G11
+	}
+}
+
+tech_BA_angel24_keystone_SI = {
+	icon = tech_BA_angel24
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	is_rare = yes
+	category = {
+		computing
+	}
+	weight = 0
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prerequisites = {
+		tech_BA_SI_Millennium_G11
+	}
+}
+
+tech_BA_angel24_dome_SI = {
+	icon = tech_BA_angel24
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	is_rare = yes
+	category = {
+		computing
+	}
+	weight = 0
+	potential = {
+		has_authority = auth_kivotos
+	}
+	prerequisites = {
+		tech_BA_SI_Millennium_G11
 	}
 }
 

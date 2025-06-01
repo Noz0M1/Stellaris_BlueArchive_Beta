@@ -9,12 +9,10 @@ building_BA_fe_capital = {
 	can_be_disabled = no
 	position_priority = 0
 	category = government
-
 	building_sets = {
 		government
 		ba_government
 	}
-
 	potential = {
 		exists = owner
 		owner = {
@@ -44,20 +42,17 @@ building_BA_fe_capital = {
 	}
 }
 
-
 #### 正品建筑
 building_BA_fe_data = {
 	icon = building_master_archive
 	position_priority = 150
 	base_buildtime = 360
 	category = manufacturing
-
 	building_sets = {
 		research
 		ba_research
 		ba_feBuilding
 	}
-
 	potential = {
 		exists = owner
 		owner = {
@@ -82,13 +77,11 @@ building_BA_fe_energy = {
 	position_priority = 151
 	base_buildtime = 360
 	category = manufacturing
-
 	building_sets = {
 		generator
 		BA_generator
 		ba_feBuilding
 	}
-
 	potential = {
 		exists = owner
 		owner = {
@@ -111,13 +104,11 @@ building_BA_fe_food = {
 	position_priority = 152
 	base_buildtime = 360
 	category = manufacturing
-
 	building_sets = {
 		farming
 		BA_farming
 		ba_feBuilding
 	}
-
 	potential = {
 		exists = owner
 		owner = {
@@ -141,14 +132,12 @@ building_BA_fe_alloy = {
 	position_priority = 153
 	base_buildtime = 360
 	category = manufacturing
-
 	building_sets = {
 		foundry
 		industrial
 		ba_feBuilding
 		BA_foundry
 	}
-
 	potential = {
 		exists = owner
 		owner = {
@@ -169,7 +158,6 @@ building_BA_fe_pyroxenes = {
 	position_priority = 154
 	base_buildtime = 360
 	category = manufacturing
-
 	building_sets = {
 		industrial
 		factory
@@ -177,7 +165,6 @@ building_BA_fe_pyroxenes = {
 		ba_feBuilding
 		ba_specialFactory
 	}
-
 	potential = {
 		exists = owner
 		owner = {
@@ -198,7 +185,6 @@ building_BA_fe_keystone = {
 	position_priority = 155
 	base_buildtime = 360
 	category = manufacturing
-
 	building_sets = {
 		industrial
 		factory
@@ -206,7 +192,6 @@ building_BA_fe_keystone = {
 		ba_feBuilding
 		ba_specialFactory
 	}
-
 	potential = {
 		exists = owner
 		owner = {
@@ -226,7 +211,6 @@ building_BA_fe_dome = {
 	position_priority = 156
 	base_buildtime = 360
 	category = manufacturing
-
 	building_sets = {
 		government
 		urban
@@ -234,7 +218,6 @@ building_BA_fe_dome = {
 		ba_feBuilding
 		ba_urban
 	}
-
 	potential = {
 		exists = owner
 		owner = {
@@ -258,16 +241,15 @@ building_BA_fe_data_SI = {
 	position_priority = 150
 	base_buildtime = 360
 	category = manufacturing
-
 	building_sets = {
 		research
 		ba_research
 		ba_feBuilding
 	}
-
 	potential = {
+		exists = owner
 		owner = {
-			has_country_flag = BA_SI_Millennium_building_1
+			has_authority = auth_kivotos
 		}
 	}
 	empire_limit = 8
@@ -286,6 +268,9 @@ building_BA_fe_data_SI = {
 	planet_modifier = {
 		planet_crime_add = -20
 	}
+	prerequisites = {
+		tech_BA_angel24_data_SI
+	}
 }
 
 building_BA_fe_energy_SI = {
@@ -293,16 +278,15 @@ building_BA_fe_energy_SI = {
 	position_priority = 151
 	base_buildtime = 360
 	category = manufacturing
-
 	building_sets = {
 		generator
 		BA_generator
 		ba_feBuilding
 	}
-
 	potential = {
+		exists = owner
 		owner = {
-			has_country_flag = BA_SI_Millennium_building_2
+			has_authority = auth_kivotos
 		}
 	}
 	empire_limit = 8
@@ -316,6 +300,9 @@ building_BA_fe_energy_SI = {
 			energy = 400
 		}
 	}
+	prerequisites = {
+		tech_BA_angel24_data_SI
+	}
 }
 
 building_BA_fe_food_SI = {
@@ -323,16 +310,15 @@ building_BA_fe_food_SI = {
 	position_priority = 152
 	base_buildtime = 360
 	category = manufacturing
-
 	building_sets = {
 		farming
 		BA_farming
 		ba_feBuilding
 	}
-
 	potential = {
+		exists = owner
 		owner = {
-			has_country_flag = BA_SI_Millennium_building_3
+			has_authority = auth_kivotos
 		}
 	}
 	empire_limit = 8
@@ -350,6 +336,9 @@ building_BA_fe_food_SI = {
 	planet_modifier = {
 		planet_amenities_add = 3000
 	}
+	prerequisites = {
+		tech_BA_angel24_food_SI
+	}
 }
 
 building_BA_fe_alloy_SI = {
@@ -357,17 +346,16 @@ building_BA_fe_alloy_SI = {
 	position_priority = 153
 	base_buildtime = 360
 	category = manufacturing
-
 	building_sets = {
 		foundry
 		industrial
 		ba_feBuilding
 		BA_foundry
 	}
-
 	potential = {
+		exists = owner
 		owner = {
-			has_country_flag = BA_SI_Millennium_building_4
+			has_authority = auth_kivotos
 		}
 	}
 	empire_limit = 8
@@ -385,6 +373,9 @@ building_BA_fe_alloy_SI = {
 	planet_modifier = {
 		planet_amenities_add = 2000
 	}
+	prerequisites = {
+		tech_BA_angel24_alloy_SI
+	}
 }
 
 building_BA_fe_pyroxenes_SI = {
@@ -392,7 +383,6 @@ building_BA_fe_pyroxenes_SI = {
 	position_priority = 154
 	base_buildtime = 360
 	category = manufacturing
-
 	building_sets = {
 		industrial
 		factory
@@ -400,10 +390,10 @@ building_BA_fe_pyroxenes_SI = {
 		ba_feBuilding
 		ba_specialFactory
 	}
-
 	potential = {
+		exists = owner
 		owner = {
-			has_country_flag = BA_SI_Millennium_building_5
+			has_authority = auth_kivotos
 		}
 	}
 	empire_limit = 8
@@ -414,6 +404,9 @@ building_BA_fe_pyroxenes_SI = {
 			sr_pyroxenes = 30
 		}
 	}
+	prerequisites = {
+		tech_BA_angel24_pyroxenes_SI
+	}
 }
 
 building_BA_fe_keystone_SI = {
@@ -421,7 +414,6 @@ building_BA_fe_keystone_SI = {
 	position_priority = 155
 	base_buildtime = 360
 	category = manufacturing
-
 	building_sets = {
 		industrial
 		factory
@@ -429,10 +421,10 @@ building_BA_fe_keystone_SI = {
 		ba_feBuilding
 		ba_specialFactory
 	}
-
 	potential = {
+		exists = owner
 		owner = {
-			has_country_flag = BA_SI_Millennium_building_6
+			has_authority = auth_kivotos
 		}
 	}
 	empire_limit = 8
@@ -446,6 +438,9 @@ building_BA_fe_keystone_SI = {
 			sr_keystone = 80
 		}
 	}
+	prerequisites = {
+		tech_BA_angel24_keystone_SI
+	}
 }
 
 building_BA_fe_dome_SI = {
@@ -453,7 +448,6 @@ building_BA_fe_dome_SI = {
 	position_priority = 156
 	base_buildtime = 360
 	category = manufacturing
-
 	building_sets = {
 		government
 		urban
@@ -461,10 +455,10 @@ building_BA_fe_dome_SI = {
 		ba_feBuilding
 		ba_urban
 	}
-
 	potential = {
+		exists = owner
 		owner = {
-			has_country_flag = BA_SI_Millennium_building_7
+			has_authority = auth_kivotos
 		}
 	}
 	empire_limit = 8
@@ -484,5 +478,8 @@ building_BA_fe_dome_SI = {
 	planet_modifier = {
 		planet_housing_add = 1000
 		planet_amenities_add = 5000
+	}
+	prerequisites = {
+		tech_BA_angel24_dome_SI
 	}
 }
