@@ -186,9 +186,9 @@ country_event = {
 		}
 		last_created_leader = {
 			remove_trait = leader_trait_hoshino_SP5
-			add_trait = leader_trait_hoshino_SP1
-			add_trait = leader_trait_hoshino_SP2
-			add_trait = leader_trait_hoshino_SP3
+			add_trait = { trait = leader_trait_hoshino_SP1 }
+			add_trait = { trait = leader_trait_hoshino_SP2 }
+			add_trait = { trait = leader_trait_hoshino_SP3 }
 		}
 		set_leader = last_created_leader
 		set_variable = {
@@ -225,8 +225,8 @@ country_event = {
 		}
 		last_created_leader = {
 			remove_trait = leader_trait_hina_SP2
-			add_trait = leader_trait_hina_SP1
-			add_trait = leader_trait_hina_SP3
+			add_trait = { trait = leader_trait_hina_SP1 }
+			add_trait = { trait = leader_trait_hina_SP3 }
 		}
 		set_leader = last_created_leader
 	}
@@ -258,8 +258,8 @@ country_event = {
 		}
 		last_created_leader = {
 			remove_trait = leader_trait_mika_SP3
-			add_trait = leader_trait_mika_SP1
-			add_trait = leader_trait_mika_SP2
+			add_trait = { trait = leader_trait_mika_SP1 }
+			add_trait = { trait = leader_trait_mika_SP2 }
 		}
 		set_leader = last_created_leader
 	}
@@ -286,8 +286,8 @@ country_event = {
 		}
 		last_created_leader = {
 			remove_trait = leader_trait_yuuka_SP3
-			add_trait = leader_trait_yuuka_SP1
-			add_trait = leader_trait_yuuka_SP2
+			add_trait = { trait = leader_trait_yuuka_SP1 }
+			add_trait = { trait = leader_trait_yuuka_SP2 }
 		}
 		set_leader = last_created_leader
 	}
@@ -620,7 +620,7 @@ country_event = {
 			set_country_flag = dream_of_blue_wheel_done
 			ruler = {
 				remove_trait = leader_trait_hoshino_SP3
-				add_trait = leader_trait_hoshino_SP4
+				add_trait = { trait = leader_trait_hoshino_SP4 }
 			}
 		}
 	}

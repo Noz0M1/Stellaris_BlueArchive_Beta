@@ -8,7 +8,7 @@ BA_Shittem_display = {
 		Class = scientist
 	}
 	last_created_leader = {
-		add_trait = leader_trait_aris_SP
+		add_trait = { trait = leader_trait_aris_SP }
 	}
 	#星野
 	inline_script = {
@@ -17,7 +17,7 @@ BA_Shittem_display = {
 		Class = commander
 	}
 	last_created_leader = {
-		add_trait = leader_trait_hoshino_SP5
+		add_trait = { trait = leader_trait_hoshino_SP5 }
 	}
 	#日奈
 	inline_script = {
@@ -26,7 +26,7 @@ BA_Shittem_display = {
 		Class = commander
 	}
 	last_created_leader = {
-		add_trait = leader_trait_hina_SP2
+		add_trait = { trait = leader_trait_hina_SP2 }
 	}
 	#未花
 	inline_script = {
@@ -35,7 +35,7 @@ BA_Shittem_display = {
 		Class = commander
 	}
 	last_created_leader = {
-		add_trait = leader_trait_hoshino_SP5
+		add_trait = { trait = leader_trait_hoshino_SP5 }
 	}
 	#优香
 	inline_script = {
@@ -44,7 +44,7 @@ BA_Shittem_display = {
 		Class = official
 	}
 	last_created_leader = {
-		add_trait = leader_trait_hoshino_SP5
+		add_trait = { trait = leader_trait_hoshino_SP5 }
 	}
 	#亚津子
 	inline_script = {
@@ -53,7 +53,7 @@ BA_Shittem_display = {
 		Class = official
 	}
 	last_created_leader = {
-		add_trait = leader_trait_atsuko_SP1
+		add_trait = { trait = leader_trait_atsuko_SP1 }
 	}
 	#纱织
 	inline_script = {
@@ -62,7 +62,7 @@ BA_Shittem_display = {
 		Class = commander
 	}
 	last_created_leader = {
-		add_trait = leader_trait_atsuko_SP1
+		add_trait = { trait = leader_trait_atsuko_SP1 }
 	}
 	#忧
 	inline_script = {
@@ -71,8 +71,8 @@ BA_Shittem_display = {
 		Class = scientist
 	}
 	last_created_leader = {
-		add_trait = leader_trait_ui_SP1
-		add_trait = leader_trait_ui_SP2
+		add_trait = { trait = leader_trait_ui_SP1 }
+		add_trait = { trait = leader_trait_ui_SP2 }
 	}
 
 }
