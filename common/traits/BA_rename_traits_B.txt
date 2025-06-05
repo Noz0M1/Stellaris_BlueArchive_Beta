@@ -1,6 +1,5 @@
 #000 占位符
 leader_special_000 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
 	randomized = no
 	# 科研船及其他
@@ -42,7 +41,6 @@ leader_special_000 = {
 
 #001 阿罗娜 万能的阿罗娜
 leader_special_001 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y87.dds"
 	randomized = no
 	planet_modifier = {
@@ -70,7 +68,6 @@ leader_special_001 = {
 
 #002 普拉娜 什亭之匣的黑之魂
 leader_special_002 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B85.dds"
 	randomized = no
 	fleet_modifier = {
@@ -91,18 +88,17 @@ leader_special_002 = {
 
 #003 砂狼白子 白子の奇妙经济学
 leader_special_003 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R47.dds"
 	randomized = no
 	planet_modifier = {
 		#犯罪度+8，贸易额+20
 		planet_crime_add = 8
-		trade_value_add = 20
+		planet_jobs_trade_produces_add = 0.4
 	}
 	sector_modifier = {
 		#犯罪度+4，贸易额+10
 		planet_crime_add = 4
-		trade_value_add = 10
+		planet_jobs_trade_produces_add = 0.2
 	}
 	leader_class = {
 		official
@@ -113,7 +109,6 @@ leader_special_003 = {
 
 #004 奥空绫音 沙漠复兴理论
 leader_special_004 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y17.dds"
 	randomized = no
 	councilor_modifier = {
@@ -129,7 +124,6 @@ leader_special_004 = {
 
 #005 黑见芹香 猛烈突击
 leader_special_005 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R45.dds"
 	randomized = no
 	fleet_modifier = {
@@ -145,7 +139,6 @@ leader_special_005 = {
 
 #006 小鸟游星野 星海卫戍
 leader_special_006 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y34.dds"
 	randomized = no
 	fleet_modifier = {
@@ -162,7 +155,6 @@ leader_special_006 = {
 
 #007 十六夜野宫 军工经济援助
 leader_special_007 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y68.dds"
 	randomized = no
 	councilor_modifier = {
@@ -180,7 +172,6 @@ leader_special_007 = {
 #008 栀子梦 NG
 #009 戒野美咲 暗天烟花
 leader_special_009 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R83.dds"
 	randomized = no
 	fleet_modifier = {
@@ -197,7 +188,6 @@ leader_special_009 = {
 
 #010 槌永日和 心系火花
 leader_special_010 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R73.dds"
 	randomized = no
 	fleet_modifier = {
@@ -216,7 +206,6 @@ leader_special_010 = {
 
 #011 锭前纱织 野草之赐
 leader_special_011 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R40.dds"
 	randomized = no
 	fleet_modifier = {
@@ -233,7 +222,6 @@ leader_special_011 = {
 
 #012 秤亚津子 无日之花
 leader_special_012 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B83.dds"
 	randomized = no
 	fleet_modifier = {
@@ -249,7 +237,6 @@ leader_special_012 = {
 
 #013 葛叶 雪山弥漫求命行
 leader_special_013 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y82.dds"
 	randomized = no
 	sector_modifier = {
@@ -266,7 +253,6 @@ leader_special_013 = {
 
 #014 桐生桔梗 罗网地天
 leader_special_014 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y36.dds"
 	randomized = no
 	fleet_modifier = {
@@ -282,7 +268,6 @@ leader_special_014 = {
 
 #015 不破莲华 热忱子弹
 leader_special_015 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R05.dds"
 	randomized = no
 	fleet_modifier = {
@@ -300,7 +285,6 @@ leader_special_015 = {
 
 #016 御稜名草 冥想一击
 leader_special_016 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
 	randomized = no
 	fleet_modifier = {
@@ -322,7 +306,6 @@ leader_special_016 = {
 
 #017 勘解由小路缘里 樱花之舞
 leader_special_017 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B83.dds"
 	randomized = no
 	# 星球总督
@@ -342,7 +325,6 @@ leader_special_017 = {
 
 #018 新 魑魅一座
 leader_special_018 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
 	randomized = no
 	fleet_modifier = {
@@ -363,7 +345,6 @@ leader_special_018 = {
 #020 箭吹棕榈 NG
 #021 朝比奈菲娜 侠义燃烧
 leader_special_021 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y29.dds"
 	randomized = no
 	fleet_modifier = {
@@ -384,7 +365,6 @@ leader_special_021 = {
 
 #022 里浜海香 祭运委筹算理论
 leader_special_022 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y84.dds"
 	randomized = no
 	councilor_modifier = {
@@ -401,20 +381,19 @@ leader_special_022 = {
 
 #023 河和静子 百夜堂老板娘
 leader_special_023 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B50.dds"
 	randomized = no
 	councilor_modifier = {
 		#贸易额+7%
-		trade_value_mult = 0.07
+		country_trade_produces_mult = 0.07
 	}
 	planet_modifier = {
 		#贸易额+28%
-		trade_value_mult = 0.28
+		planet_jobs_trade_produces_mult = 0.28
 	}
 	sector_modifier = {
 		#贸易额+14%
-		trade_value_mult = 0.14
+		planet_jobs_trade_produces_mult = 0.14
 	}
 	leader_class = {
 		official
@@ -425,7 +404,6 @@ leader_special_023 = {
 
 #024 狐坂若藻 樱花射击
 leader_special_024 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B83.dds"
 	randomized = no
 	fleet_modifier = {
@@ -444,7 +422,6 @@ leader_special_024 = {
 
 #025 久田泉奈 泉奈流破影术
 leader_special_025 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B59.dds"
 	randomized = no
 	modifier = {
@@ -461,7 +438,6 @@ leader_special_025 = {
 
 #026 大野月咏 月咏流潜影术……
 leader_special_026 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B60.dds"
 	randomized = no
 	fleet_modifier = {
@@ -479,7 +455,6 @@ leader_special_026 = {
 
 #027 千鸟满 数字化忍术宣传
 leader_special_027 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B26.dds"
 	randomized = no
 	councilor_modifier = {
@@ -500,7 +475,6 @@ leader_special_027 = {
 
 #028 春日椿 睡眠充足
 leader_special_028 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y88.dds"
 	randomized = no
 	planet_modifier = {
@@ -522,7 +496,6 @@ leader_special_028 = {
 
 #029 勇美枫 幸运一击
 leader_special_029 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B61.dds"
 	randomized = no
 	fleet_modifier = {
@@ -538,7 +511,6 @@ leader_special_029 = {
 
 #030 水羽三森 大和抚子
 leader_special_030 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R41.dds"
 	randomized = no
 	planet_modifier = {
@@ -560,19 +532,18 @@ leader_special_030 = {
 
 #031 桑上果穗 百鬼夜行文化属
 leader_special_031 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B31.dds"
 	randomized = no
 	planet_modifier = {
-		#幸福毒+6，贸易额+8%，岗位生产的凝聚力+12%
+		#幸福度+6，贸易额+8%，岗位生产的凝聚力+12%
 		pop_happiness = 0.06
-		trade_value_mult = 0.08
+		planet_jobs_trade_produces_mult = 0.08
 		planet_jobs_unity_produces_mult = 0.12
 	}
 	sector_modifier = {
-		#幸福毒+3，贸易额+4%，岗位生产的凝聚力+6%
+		#幸福度+3，贸易额+4%，岗位生产的凝聚力+6%
 		pop_happiness = 0.03
-		trade_value_mult = 0.04
+		planet_jobs_trade_produces_mult = 0.04
 		planet_jobs_unity_produces_mult = 0.06
 	}
 	leader_class = {
@@ -585,7 +556,6 @@ leader_special_031 = {
 #032 天地妮娅 TODO
 #033 和乐千世 月下少女
 leader_special_033 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B03.dds"
 	randomized = no
 	councilor_modifier = {
@@ -606,7 +576,6 @@ leader_special_033 = {
 
 #034 陆八魔阿露 灼热暴击
 leader_special_034 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R41.dds"
 	randomized = no
 	fleet_modifier = {
@@ -623,20 +592,19 @@ leader_special_034 = {
 
 #035 鬼方佳代子 善恶交织
 leader_special_035 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R22.dds"
 	randomized = no
 	planet_modifier = {
 		#幸福度-6%，稳定度+10，贸易额产出+10%
 		pop_happiness = -0.06
 		planet_stability_add = 10
-		trade_value_add = 0.1
+		planet_jobs_trade_produces_mult = 0.1
 	}
 	sector_modifier = {
 		#幸福度-3%，稳定度+5，贸易额产出+5%
 		pop_happiness = -0.03
 		planet_stability_add = 5
-		trade_value_add = 0.05
+		planet_jobs_trade_produces_mult = 0.05
 	}
 	leader_class = {
 		official
@@ -647,7 +615,6 @@ leader_special_035 = {
 
 #036 浅黄睦月 爆裂咏叹曲
 leader_special_036 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R08.dds"
 	randomized = no
 	fleet_modifier = {
@@ -664,7 +631,6 @@ leader_special_036 = {
 
 #037 伊草遥香 誓死强袭
 leader_special_037 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R29.dds"
 	randomized = no
 	fleet_modifier = {
@@ -681,7 +647,6 @@ leader_special_037 = {
 
 #038 火宫千夏 战地医疗
 leader_special_038 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B14.dds"
 	randomized = no
 	fleet_modifier = {
@@ -698,7 +663,6 @@ leader_special_038 = {
 
 #039 空崎日奈 魔王降临
 leader_special_039 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R21.dds"
 	randomized = no
 	councilor_modifier = {
@@ -732,7 +696,6 @@ leader_special_039 = {
 
 #040 天雨亚子 资料检索
 leader_special_040 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B53.dds"
 	randomized = no
 	fleet_modifier = {
@@ -749,7 +712,6 @@ leader_special_040 = {
 
 #041 银镜伊织 一网打尽
 leader_special_041 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y53.dds"
 	randomized = no
 	fleet_modifier = {
@@ -769,7 +731,6 @@ leader_special_041 = {
 
 #042 爱清枫香 厨堂统筹
 leader_special_042 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B02.dds"
 	randomized = no
 	planet_modifier = {
@@ -789,7 +750,6 @@ leader_special_042 = {
 
 #043 牛牧朱莉 菜园时光
 leader_special_043 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B34.dds"
 	randomized = no
 	planet_modifier = {
@@ -810,7 +770,6 @@ leader_special_043 = {
 #044 旗见绘梨香 TODO
 #045 冰室濑名 军医补给线
 leader_special_045 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B28.dds"
 	randomized = no
 	army_modifier = {
@@ -828,9 +787,9 @@ leader_special_045 = {
 #046 夜樱绮良良 TODO
 #047 赤司淳子 未尽的美食
 leader_special_047 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y45.dds"
 	randomized = no
+	po
 	fleet_modifier = {
 		#领袖维护费-55%，舰船武器射速+5%，舰船武器伤害+5%
 		ship_fire_rate_mult = 0.05
@@ -848,7 +807,6 @@ leader_special_047 = {
 
 #048 鳄渊明里 深不见底
 leader_special_048 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R30.dds"
 	randomized = no
 	fleet_modifier = {
@@ -868,7 +826,6 @@ leader_special_048 = {
 
 #049 黑馆晴奈 美食气概
 leader_special_049 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R05.dds"
 	randomized = no
 	fleet_modifier = {
@@ -888,7 +845,6 @@ leader_special_049 = {
 
 #050 狮子堂泉 毫不抉择
 leader_special_050 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R34.dds"
 	randomized = no
 	fleet_modifier = {
@@ -910,7 +866,6 @@ leader_special_050 = {
 
 #051 羽沼真琴 错综打击
 leader_special_051 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y01.dds"
 	randomized = no
 	fleet_modifier = {
@@ -934,7 +889,6 @@ leader_special_051 = {
 #053 元宫千秋 TODO
 #054 丹花伊吹 万魔之星
 leader_special_054 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y85.dds"
 	randomized = no
 	councilor_modifier = {
@@ -950,7 +904,6 @@ leader_special_054 = {
 
 #055 枣伊吕波 虎丸出击
 leader_special_055 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B62.dds"
 	randomized = no
 	army_modifier = {
@@ -968,7 +921,6 @@ leader_special_055 = {
 
 #057 下仓惠 高热度开发
 leader_special_057 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R33.dds"
 	randomized = no
 	councilor_modifier = {
@@ -998,7 +950,6 @@ leader_special_057 = {
 
 #058 橘光明 铁道双子
 leader_special_058 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R33.dds"
 	randomized = no
 	sector_modifier = {
@@ -1015,7 +966,6 @@ leader_special_058 = {
 
 #059 橘希望 铁道双子
 leader_special_059 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R33.dds"
 	randomized = no
 	sector_modifier = {
@@ -1032,7 +982,6 @@ leader_special_059 = {
 
 #060 朝雾周防 总署精英
 leader_special_060 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R33.dds"
 	randomized = no
 	councilor_modifier = {
@@ -1051,7 +1000,6 @@ leader_special_060 = {
 
 #061 天见和香 镜相分析
 leader_special_061 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R35.dds"
 	randomized = no
 	modifier = {
@@ -1067,7 +1015,6 @@ leader_special_061 = {
 
 #062 间宵时雨 特质伏特加
 leader_special_062 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R07.dds"
 	randomized = no
 	modifier = {
@@ -1090,7 +1037,6 @@ leader_special_062 = {
 
 #063 荒槇八云 社长的营业微笑
 leader_special_063 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
 	randomized = no
 	councilor_modifier = {
@@ -1106,7 +1052,6 @@ leader_special_063 = {
 
 #064 三善贵音 会长的独到见解
 leader_special_064 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
 	randomized = no
 	councilor_modifier = {
@@ -1125,7 +1070,6 @@ leader_special_064 = {
 
 #065 佐城巴 冲锋号令
 leader_special_065 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R86.dds"
 	randomized = no
 	fleet_modifier = {
@@ -1148,7 +1092,6 @@ leader_special_065 = {
 
 #066 池仓玛丽娜 革命突击
 leader_special_066 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y13.dds"
 	randomized = no
 	fleet_modifier = {
@@ -1173,7 +1116,6 @@ leader_special_066 = {
 
 #067 连河切里诺 胡子的权威
 leader_special_067 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y32.dds"
 	randomized = no
 	planet_modifier = {
@@ -1197,7 +1139,6 @@ leader_special_067 = {
 
 #068 安守实梨 罢免伪劣产品
 leader_special_068 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R25.dds"
 	randomized = no
 	planet_modifier = {
@@ -1221,7 +1162,6 @@ leader_special_068 = {
 
 #069 秋泉红叶 漫画爱好者
 leader_special_069 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y41.dds"
 	randomized = no
 	councilor_modifier = {
@@ -1237,7 +1177,6 @@ leader_special_069 = {
 
 #070 姬木梅露 星海取材研究
 leader_special_070 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y03.dds"
 	randomized = no
 	modifier = {
@@ -1262,7 +1201,6 @@ leader_special_070 = {
 #074 （联邦学生会长） NG
 #075 七神琳 星域枢纽总管辖
 leader_special_075 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B39.dds"
 	randomized = no
 	sector_modifier = {
@@ -1281,7 +1219,6 @@ leader_special_075 = {
 
 #076 岩柜步美 星宇调停
 leader_special_076 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B26.dds"
 	randomized = no
 	sector_modifier = {
@@ -1300,7 +1237,6 @@ leader_special_076 = {
 
 #077 不知火花耶 相斥防卫论
 leader_special_077 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B14.dds"
 	randomized = no
 	sector_modifier = {
@@ -1324,7 +1260,6 @@ leader_special_077 = {
 #080 李 TODO
 #081 由良木桃香 明太子维护费
 leader_special_081 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B35.dds"
 	randomized = no
 	planet_modifier = {
@@ -1347,7 +1282,6 @@ leader_special_081 = {
 
 #082 白石歌原 设备挂载研究
 leader_special_082 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y86.dds"
 	randomized = no
 	councilor_modifier = {
@@ -1368,7 +1302,6 @@ leader_special_082 = {
 
 #083 丰见亚都梨 额外装甲研发
 leader_special_083 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B86.dds"
 	randomized = no
 	councilor_modifier = {
@@ -1388,7 +1321,6 @@ leader_special_083 = {
 
 #084 猫冢响 抛射理论
 leader_special_084 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R02.dds"
 	randomized = no
 	councilor_modifier = {
@@ -1409,7 +1341,6 @@ leader_special_084 = {
 
 #085 和泉元艾米 高速解析
 leader_special_085 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R21.dds"
 	randomized = no
 	modifier = {
@@ -1426,7 +1357,6 @@ leader_special_085 = {
 
 #086 明星日鞠 千年超绝天才病弱美少女☆
 leader_special_086 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y11.dds"
 	randomized = no
 	modifier = {
@@ -1463,7 +1393,6 @@ leader_special_086 = {
 
 #087 乙花菫 三步迸发
 leader_special_087 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y19.dds"
 	randomized = no
 	fleet_modifier = {
@@ -1481,7 +1410,6 @@ leader_special_087 = {
 
 #088 野正丽 全力本垒打
 leader_special_088 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
 	randomized = no
 	fleet_modifier = {
@@ -1498,7 +1426,6 @@ leader_special_088 = {
 
 #089 调月莉音 零熵决议
 leader_special_089 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B39.dds"
 	randomized = no
 	sector_modifier = {
@@ -1516,7 +1443,6 @@ leader_special_089 = {
 
 #090 生塩诺亚 高效记忆
 leader_special_090 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R54.dds"
 	randomized = no
 	modifier = {
@@ -1540,7 +1466,6 @@ leader_special_090 = {
 
 #091 黑崎小雪 探索派遣
 leader_special_091 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B25.dds"
 	randomized = no
 	modifier = {
@@ -1556,7 +1481,6 @@ leader_special_091 = {
 
 #092 早濑优香 精算师协助
 leader_special_092 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R03.dds"
 	randomized = no
 	modifier = {
@@ -1584,7 +1508,6 @@ leader_special_092 = {
 
 #093 天童爱丽丝 超新星充能
 leader_special_093 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B01.dds"
 	randomized = no
 	fleet_modifier = {
@@ -1600,7 +1523,6 @@ leader_special_093 = {
 
 #094 才羽绿 开发者日志-小桃
 leader_special_094 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y31.dds"
 	randomized = no
 	fleet_modifier = {
@@ -1617,7 +1539,6 @@ leader_special_094 = {
 
 #095 才羽桃衣 开发者日志-小绿
 leader_special_095 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y31.dds"
 	randomized = no
 	fleet_modifier = {
@@ -1634,7 +1555,6 @@ leader_special_095 = {
 
 #096 花冈柚子 衣柜万花筒
 leader_special_096 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y07.dds"
 	randomized = no
 	planet_modifier = {
@@ -1661,7 +1581,6 @@ leader_special_096 = {
 #097 kei NG
 #098 各务千寻 可视化网络
 leader_special_098 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y34.dds"
 	randomized = no
 	councilor_modifier = {
@@ -1678,7 +1597,6 @@ leader_special_098 = {
 
 #099 小钩晴 仪器兼修
 leader_special_099 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R30.dds"
 	randomized = no
 	councilor_modifier = {
@@ -1706,7 +1624,6 @@ leader_special_099 = {
 
 #100 音濑小玉 星海监听
 leader_special_100 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R72.dds"
 	randomized = no
 	councilor_modifier = {
@@ -1727,7 +1644,6 @@ leader_special_100 = {
 
 #101 小涂真纪 大蛇之母
 leader_special_101 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y40.dds"
 	randomized = no
 	modifier = {
@@ -1744,7 +1660,6 @@ leader_special_101 = {
 
 #102 角楯花凛 匡默支援
 leader_special_102 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y01.dds"
 	randomized = no
 	fleet_modifier = {
@@ -1761,7 +1676,6 @@ leader_special_102 = {
 
 #103 一之濑明日奈 野性直觉
 leader_special_103 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B18.dds"
 	randomized = no
 	fleet_modifier = {
@@ -1779,7 +1693,6 @@ leader_special_103 = {
 
 #104 美甘尼禄 胜利誓约
 leader_special_104 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y38.dds"
 	randomized = no
 	fleet_modifier = {
@@ -1799,7 +1712,6 @@ leader_special_104 = {
 
 #105 飞鸟马时 机甲巡航
 leader_special_105 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R67.dds"
 	randomized = no
 	modifier = {
@@ -1816,7 +1728,6 @@ leader_special_105 = {
 
 #106 室笠朱音 沉默射击
 leader_special_106 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y38.dds"
 	randomized = no
 	fleet_modifier = {
@@ -1834,7 +1745,6 @@ leader_special_106 = {
 
 #107 药子沙绫 山海经制药学
 leader_special_107 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R34.dds"
 	randomized = no
 	councilor_modifier = {
@@ -1851,7 +1761,6 @@ leader_special_107 = {
 
 #108 春原瞬 梅花园的大姐姐
 leader_special_108 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R19.dds"
 	randomized = no
 	planet_modifier = {
@@ -1873,7 +1782,6 @@ leader_special_108 = {
 
 #109 春原心奈 小小教官
 leader_special_109 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y41.dds"
 	randomized = no
 	planet_modifier = {
@@ -1897,12 +1805,11 @@ leader_special_109 = {
 
 #110 申谷廻 仙参禁药
 leader_special_110 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R27.dds"
 	randomized = no
 	sector_modifier = {
 		planet_stability_add = -15
-		pop_growth_speed = 0.35
+		bonus_pop_growth_mult = 0.35
 	}
 	leader_class = {
 		official
@@ -1911,16 +1818,14 @@ leader_special_110 = {
 	sorting_priority = 999
 }
 
-
 #111 龙华妃咲 玄龙门的门主
 leader_special_111 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B14.dds"
 	randomized = no
 	sector_modifier = {
 		#稳定度+10，贸易额-10%，岗位生产的合金+25%
 		planet_stability_add = 10
-		trade_value_mult = -0.1
+		planet_jobs_trade_produces_mult = -0.1
 		planet_jobs_alloys_produces_mult = 0.25
 	}
 	leader_class = {
@@ -1932,7 +1837,6 @@ leader_special_111 = {
 
 #112 近卫南 玄龙安保室长
 leader_special_112 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R81.dds"
 	randomized = no
 	sector_modifier = {
@@ -1950,20 +1854,19 @@ leader_special_112 = {
 #113 鹿山丽情 TODO
 #114 朱城瑠美 玄武分埠管辖
 leader_special_114 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R20.dds"
 	randomized = no
 	councilor_modifier = {
 		#贸易额+7.5%
-		trade_value_mult = 0.075
+		country_trade_produces_mult = 0.075
 	}
 	planet_modifier = {
 		#贸易额+30%
-		trade_value_mult = 0.3
+		planet_jobs_trade_produces_mult = 0.3
 	}
 	sector_modifier = {
 		#贸易额+15%
-		trade_value_mult = 0.15
+		planet_jobs_trade_produces_mult = 0.15
 	}
 	leader_class = {
 		official
@@ -1974,7 +1877,6 @@ leader_special_114 = {
 
 #115 浦和花子 课后安排
 leader_special_115 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B44.dds"
 	randomized = no
 	councilor_modifier = {
@@ -2004,7 +1906,6 @@ leader_special_115 = {
 
 #116 阿慈谷日富美 佩洛洛，出击！
 leader_special_116 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y75.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2021,7 +1922,6 @@ leader_special_116 = {
 
 #117 下江小春 圣水手雷
 leader_special_117 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R76.dds"
 	randomized = no
 	army_modifier = {
@@ -2039,7 +1939,6 @@ leader_special_117 = {
 
 #118 白洲梓 万物皆虚
 leader_special_118 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R31.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2057,7 +1956,6 @@ leader_special_118 = {
 
 #119 百合园圣娅 梦之彼岸
 leader_special_119 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B77.dds"
 	randomized = no
 	planet_modifier = {
@@ -2073,7 +1971,6 @@ leader_special_119 = {
 
 #120 圣园未花 星辰坠落
 leader_special_120 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y01.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2092,7 +1989,6 @@ leader_special_120 = {
 
 #121 桐藤渚 火炮覆盖
 leader_special_121 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R07.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2112,7 +2008,6 @@ leader_special_121 = {
 
 #122 朝颜花绘 活力护士
 leader_special_122 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R17.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2135,7 +2030,6 @@ leader_special_122 = {
 
 #123 苍森美弥 天降正义
 leader_special_123 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R40.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2156,7 +2050,6 @@ leader_special_123 = {
 
 #124 鹫见芹娜 紧急维护
 leader_special_124 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B39.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2178,7 +2071,6 @@ leader_special_124 = {
 
 #125 清澄晶 慈爱怪盗
 leader_special_125 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B77.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2199,7 +2091,6 @@ leader_special_125 = {
 
 #126 栗村爱莉 甜品时光
 leader_special_126 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R52.dds"
 	randomized = no
 	planet_modifier = {
@@ -2221,7 +2112,6 @@ leader_special_126 = {
 
 #127 伊原木好美 甜品斗争
 leader_special_127 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y52.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2238,7 +2128,6 @@ leader_special_127 = {
 
 #128 杏山和纱 高糖效应
 leader_special_128 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y41.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2258,20 +2147,19 @@ leader_special_128 = {
 
 #129 柚鸟夏 精装甜品
 leader_special_129 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R38.dds"
 	randomized = no
 	planet_modifier = {
 		#工匠岗位维护费+40%，工匠岗位产出+40%，贸易额+10%
 		planet_artisans_produces_mult = 0.4
 		planet_artisans_upkeep_mult = 0.4
-		trade_value_add = 0.1
+		planet_jobs_trade_produces_mult = 0.1
 	}
 	sector_modifier = {
 		#工匠岗位维护费+20%，工匠岗位产出+20%，贸易额+5%
 		planet_artisans_produces_mult = 0.2
 		planet_artisans_upkeep_mult = 0.2
-		trade_value_add = 0.05
+		planet_jobs_trade_produces_mult = 0.05
 	}
 	fleet_modifier = {
 		#亚光速航速+20%，舰船武器射速+20%
@@ -2287,7 +2175,6 @@ leader_special_129 = {
 
 #130 古关忧 双向反差
 leader_special_130 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R60.dds"
 	randomized = no
 	modifier = {
@@ -2305,7 +2192,6 @@ leader_special_130 = {
 
 #131 圆堂志美子 书籍中的阿卡林
 leader_special_131 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R04.dds"
 	randomized = no
 	modifier = {
@@ -2325,7 +2211,6 @@ leader_special_131 = {
 
 #132 伊落玛丽 可爱修女
 leader_special_132 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B39.dds"
 	randomized = no
 	planet_modifier = {
@@ -2349,7 +2234,6 @@ leader_special_132 = {
 
 #133 若叶日向 最终手段
 leader_special_133 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B03.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2367,7 +2251,6 @@ leader_special_133 = {
 
 #134 歌住樱子 樱花之印
 leader_special_134 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B83.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2384,7 +2267,6 @@ leader_special_134 = {
 
 #135 剑先鹤城 最终兵器
 leader_special_135 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y55.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2404,7 +2286,6 @@ leader_special_135 = {
 
 #136 羽川莲见:凝视射击
 leader_special_136 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y01.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2422,7 +2303,6 @@ leader_special_136 = {
 
 #137 仲正一花:本能决断
 leader_special_137 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y83.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2440,7 +2320,6 @@ leader_special_137 = {
 
 #138 静山真白:最后指令
 leader_special_138 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R01.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2458,7 +2337,6 @@ leader_special_138 = {
 
 #139 守月铃美:星海闪光弹
 leader_special_139 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R09.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2475,7 +2353,6 @@ leader_special_139 = {
 
 #140 宇沢玲纱:跃动挑战券
 leader_special_140 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y71.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2494,7 +2371,6 @@ leader_special_140 = {
 
 #141 尾刃康娜:海军扩充拟文
 leader_special_141 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y20.dds"
 	randomized = no
 	councilor_modifier = {
@@ -2514,7 +2390,6 @@ leader_special_141 = {
 
 #142 合欢垣吹雪:灵活的执行者
 leader_special_142 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y05.dds"
 	randomized = no
 	planet_modifier = {
@@ -2536,7 +2411,6 @@ leader_special_142 = {
 
 #143 中务桐乃:警觉的执法者
 leader_special_143 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R19.dds"
 	randomized = no
 	planet_modifier = {
@@ -2558,7 +2432,6 @@ leader_special_143 = {
 
 #144 胡桃 撞击冲锋实操
 leader_special_144 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B34.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2578,7 +2451,6 @@ leader_special_144 = {
 
 #145 妮可 后勤保障部署
 leader_special_145 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y23.dds"
 	randomized = no
 	councilor_modifier = {
@@ -2586,7 +2458,6 @@ leader_special_145 = {
 		ship_shield_regen_add_perc = 0.25
 		ship_armor_regen_add_perc = 0.25
 		ship_hull_regen_add_perc = 0.25
-
 	}
 	fleet_modifier = {
 		#护盾恢复+25％，船体恢复+25％，装甲恢复+25％
@@ -2603,7 +2474,6 @@ leader_special_145 = {
 
 #146 七度雪乃 打击指挥中枢
 leader_special_146 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R25.dds"
 	randomized = no
 	councilor_modifier = {
@@ -2628,7 +2498,6 @@ leader_special_146 = {
 
 #147 音葵 撕裂阻击学说
 leader_special_147 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B17.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2650,7 +2519,6 @@ leader_special_147 = {
 
 #148 月雪宫子:RABBIT1：正面纲领
 leader_special_148 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y01.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2668,7 +2536,6 @@ leader_special_148 = {
 
 #149 霞沢美游:RABBIT3：狙击掩护
 leader_special_149 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y33.dds"
 	randomized = no
 	fleet_modifier = {
@@ -2686,7 +2553,6 @@ leader_special_149 = {
 
 #150 风仓萌绘:RABBIT4：火力学说
 leader_special_150 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y65.dds"
 	randomized = no
 	councilor_modifier = {
@@ -2707,7 +2573,6 @@ leader_special_150 = {
 
 #151 空井咲:RABBIT2：火力突破
 leader_special_151 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y21.dds"
 	randomized = no
 	fleet_modifier = {

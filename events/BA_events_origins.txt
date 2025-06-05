@@ -55,11 +55,10 @@ country_event = {
 			add_deposit = d_Greenhouse_farms			#赤冬温室农场（只是因为没有粮食区划所以拉来凑数的）
 			#人口
 			every_owned_pop_group = {
-				kill_all_pop = yes
-			}
-			create_pop_group = {
-				species = owner_main_species
-				size = 3500
+				kill_pop_group = {
+					pop_group = this
+					percentage = 0.25
+				}
 			}
 			check_planet_employment = yes
 			validate_planet_buildings_and_districts = yes
@@ -186,9 +185,15 @@ country_event = {
 		}
 		last_created_leader = {
 			remove_trait = leader_trait_hoshino_SP5
-			add_trait = { trait = leader_trait_hoshino_SP1 }
-			add_trait = { trait = leader_trait_hoshino_SP2 }
-			add_trait = { trait = leader_trait_hoshino_SP3 }
+			add_trait = {
+				trait = leader_trait_hoshino_SP1
+			}
+			add_trait = {
+				trait = leader_trait_hoshino_SP2
+			}
+			add_trait = {
+				trait = leader_trait_hoshino_SP3
+			}
 		}
 		set_leader = last_created_leader
 		set_variable = {
@@ -225,8 +230,13 @@ country_event = {
 		}
 		last_created_leader = {
 			remove_trait = leader_trait_hina_SP2
-			add_trait = { trait = leader_trait_hina_SP1 }
-			add_trait = { trait = leader_trait_hina_SP3 }
+			add_trait = leader_trait_atsuko_SP1
+			add_trait = {
+				trait = leader_trait_hina_SP1
+			}
+			add_trait = {
+				trait = leader_trait_hina_SP3
+			}
 		}
 		set_leader = last_created_leader
 	}
@@ -258,8 +268,12 @@ country_event = {
 		}
 		last_created_leader = {
 			remove_trait = leader_trait_mika_SP3
-			add_trait = { trait = leader_trait_mika_SP1 }
-			add_trait = { trait = leader_trait_mika_SP2 }
+			add_trait = {
+				trait = leader_trait_mika_SP1
+			}
+			add_trait = {
+				trait = leader_trait_mika_SP2
+			}
 		}
 		set_leader = last_created_leader
 	}
@@ -286,8 +300,12 @@ country_event = {
 		}
 		last_created_leader = {
 			remove_trait = leader_trait_yuuka_SP3
-			add_trait = { trait = leader_trait_yuuka_SP1 }
-			add_trait = { trait = leader_trait_yuuka_SP2 }
+			add_trait = {
+				trait = leader_trait_yuuka_SP1
+			}
+			add_trait = {
+				trait = leader_trait_yuuka_SP2
+			}
 		}
 		set_leader = last_created_leader
 	}
@@ -620,7 +638,9 @@ country_event = {
 			set_country_flag = dream_of_blue_wheel_done
 			ruler = {
 				remove_trait = leader_trait_hoshino_SP3
-				add_trait = { trait = leader_trait_hoshino_SP4 }
+				add_trait = {
+					trait = leader_trait_hoshino_SP4
+				}
 			}
 		}
 	}
@@ -715,11 +735,10 @@ country_event = {
 			# remove_building = building_temple
 			#人口
 			every_owned_pop_group = {
-				kill_all_pop = yes
-			}
-			create_pop_group = {
-				species = owner_main_species
-				size = 2500
+				kill_pop_group = {
+					pop_group = this
+					percentage = 0.4
+				}
 			}
 			check_planet_employment = yes
 			validate_planet_buildings_and_districts = yes
@@ -2687,7 +2706,6 @@ country_event = {
 						}
 						BA_origin_create_module = yes
 						remove_planet_flag = BA_init_module
-
 					}
 					set_star_flag = has_habitat
 				}
@@ -2725,7 +2743,7 @@ country_event = {
 					building = building_BA_fade_Sanctum_center
 				}
 				# 区块
-				clear_deposits = yes			#清除原有区块
+				clear_deposits = yes				#清除原有区块
 				while = {
 					count = 6
 					add_deposit = d_fade_Sanctum

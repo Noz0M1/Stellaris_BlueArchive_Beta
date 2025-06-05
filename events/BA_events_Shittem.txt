@@ -899,9 +899,9 @@ country_event = {
 	option = {
 		name = BA_Shittem.1013.exit
 		hidden_effect = {
-		   country_event = {
-		       id = BA_Shittem.1012
-		   }
+			country_event = {
+				id = BA_Shittem.1012
+			}
 		}
 	}
 	option = {
@@ -1058,7 +1058,6 @@ country_event = {
 			tech = tech_BA_angel24_dome_SI
 		}
 	}
-
 }
 
 ### 学园理念
@@ -3983,7 +3982,9 @@ country_event = {
 						has_trait = leader_trait_SI_Millennium_G10
 					}
 				}
-				add_trait = { trait = leader_trait_SI_Millennium_G10 }
+				add_trait = {
+					trait = leader_trait_SI_Millennium_G10
+				}
 			}
 		}
 	}
@@ -4283,7 +4284,6 @@ planet_event = {
 		}
 	}
 }
-
 
 ################################
 ###   月检事件区   —— N0Z0M1
