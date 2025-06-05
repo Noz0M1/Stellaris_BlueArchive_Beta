@@ -1665,7 +1665,7 @@ country_event = {
 				BA_remove_skin = yes
 				if = {
 					limit = {
-						has_skill > 2
+						has_total_skill > 2
 					}
 					BA_change_skin_trait = yes
 				}
@@ -3588,7 +3588,6 @@ country_event = {
 					change_species_characteristics = {
 						remove_trait = trait_test
 						add_trait = trait_test_finished
-						add_traits_at_start_of_list = yes
 					}
 					set_species_flag = BA_Robot_flag
 					save_global_event_target_as = BA_Robot_species
@@ -4202,14 +4201,14 @@ country_event = {
 		has_technology = tech_BA_SI_Gehenna_D03
 		any_pool_leader = {
 			leader_class = commander
-			has_skill = 1
+			has_total_skill = 1
 		}
 	}
 	immediate = {
 		every_pool_leader = {
 			limit = {
 				leader_class = commander
-				has_skill = 1
+				has_total_skill = 1
 			}
 			add_skill = 2
 		}
@@ -4265,6 +4264,26 @@ country_event = {
 		}
 	}
 }
+
+### 圣三一
+#C06-新殖民星球-星空彼端的乐土
+planet_event = {
+	id = BA_Shittem.4040
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		owner = {
+			has_technology = tech_BA_SI_Trinity_C06
+		}
+	}
+	immediate = {
+		add_modifier = {
+			modifier = modifier_BA_SI_Trinity_C06
+			days = 1800
+		}
+	}
+}
+
 
 ################################
 ###   月检事件区   —— N0Z0M1

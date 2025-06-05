@@ -140,7 +140,6 @@ BA_Vigilant_crew = {
 	}
 }
 
-
 #############   专家   #############
 ### 社团部员 ###
 # 1食物 1消费品 0.5合金 -> 4*3科研点
@@ -286,7 +285,6 @@ BA_Kivotos_staff = {
 		#学园理念
 		planet_building_build_speed_mult = 0.05
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		mult = value:job_weights_modifier|JOB|trader|RESOURCE|trade|
@@ -456,7 +454,6 @@ BA_scrap_refiner = {
 			rare_crystals = 0.1
 			exotic_gases = 0.1
 			volatile_motes = 0.1
-
 		}
 		produces = {
 			trigger = {
@@ -715,6 +712,7 @@ BA_caterer = {
 	}
 }
 
+#############   平民   #############
 ### 灵活就业者 ###
 #1凝聚力 0.05影响力 -> 6贸易额 1*3科研点数
 #编年史可免除影响力维护
@@ -727,15 +725,15 @@ BA_flexible_workers = {
 			building_icon = building_BA_Schale_office
 		}
 	}
-	is_capped_by_modifier = no #岗位不限量
-
+	is_capped_by_modifier = no	#岗位不限量
 	possible = {
-		hidden_trigger = { exists = owner }
+		hidden_trigger = {
+			exists = owner
+		}
 		planet = {
 			is_planet_class = pc_BA_campus_planet
 		}
 	}
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -762,55 +760,56 @@ BA_flexible_workers = {
 			}
 			unity = 1
 		}
-			#殖民地类型
-			upkeep = {
-				trigger = {
-					planet = {
-						not = {
-							colony_type = col_BA_campus_unemp
-						}
+		#殖民地类型
+		upkeep = {
+			trigger = {
+				planet = {
+					not = {
+						colony_type = col_BA_campus_unemp
 					}
 				}
-				influence = 0.05
 			}
-			#学园理念
-			produces = {
-				trigger = {
-					exists = owner
-					owner = {
-						has_technology = tech_BA_SI_Gehenna_D02
-					}
-				}
-				physics_research = 3
-				society_research = 3
-				engineering_research = 3
-			}
-			upkeep = {
-				trigger = {
-					exists = owner
-					owner = {
-						has_technology = tech_BA_SI_Gehenna_D02
-						is_pleasure_seeker_empire = no
-					}
-				}
-				unity = 3
-			}
-			#星球特化+编年史
-			upkeep = {
-				trigger = {
-					planet = {
-						exists = owner
-						NOT = {
-							colony_type = col_BA_campus_unemp
-							owner = {
-								has_technology = tech_BA_Kivotos_chronicle_stage5
-							}
-						}
-					}
-				}
-				influence = 0.05
-			}
+			influence = 0.05
 		}
+		#学园理念
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_technology = tech_BA_SI_Gehenna_D02
+				}
+			}
+			physics_research = 3
+			society_research = 3
+			engineering_research = 3
+			trade = 18
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_technology = tech_BA_SI_Gehenna_D02
+					is_pleasure_seeker_empire = no
+				}
+			}
+			unity = 3
+		}
+		#星球特化+编年史
+		upkeep = {
+			trigger = {
+				planet = {
+					exists = owner
+					NOT = {
+						colony_type = col_BA_campus_unemp
+						owner = {
+							has_technology = tech_BA_Kivotos_chronicle_stage5
+						}
+					}
+				}
+			}
+			influence = 0.05
+		}
+	}
 	#传统
 	triggered_country_modifier = {
 		potential = {
@@ -825,7 +824,9 @@ BA_flexible_workers = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_tradition = tr_mercantile_trickle_up_economics }
+			owner = {
+				has_tradition = tr_mercantile_trickle_up_economics
+			}
 		}
 		planet_amenities_add = 100
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
@@ -841,22 +842,20 @@ BA_flexible_workers = {
 		planet_amenities_add = 50
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
-
 	triggered_country_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_modifier = paragon_origin_strengthened_government_iii }
+			owner = {
+				has_modifier = paragon_origin_strengthened_government_iii
+			}
 		}
 		country_edict_fund_add = 1
 	}
-
 	inline_script = "jobs/ethic_job_modifiers"
-
 	weight = {
-			weight = @worker_prio_job_weight
-		}
+		weight = @worker_prio_job_weight
+	}
 }
-
 
 ##############################
 ##		学园都市废墟星球
@@ -1234,7 +1233,6 @@ BA_student_on_duty = {
 			consumer_goods = 0.5
 		}
 	}
-
 	planet_modifier = {
 		planet_amenities_add = 1
 		planet_crime_add = -1

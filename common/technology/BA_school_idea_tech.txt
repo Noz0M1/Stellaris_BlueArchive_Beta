@@ -285,8 +285,8 @@ tech_BA_SI_Gehenna_G02 = {
 	}
 	weight = 0
 	modifier = {
-		country_resettlement_cost_mult = -0.25
-		pop_demotion_time_mult = -0.5
+		pop_resettlement_cost_mult = -0.25
+		pop_bonus_workforce_mult = 0.1
 	}
 }
 
@@ -384,7 +384,7 @@ tech_BA_SI_Gehenna_B02 = {
 	}
 	weight = 0
 	modifier = {
-		starbase_trade_protection_add = 50
+		country_base_trade_produces_add = 50
 		planet_jobs_unity_produces_mult = 0.2
 	}
 }
@@ -485,8 +485,8 @@ tech_BA_SI_Gehenna_D02 = {
 	}
 	weight = 0
 	modifier = {
-		pop_category_workers_consumer_goods_upkeep_add = 0.25
-		pop_category_workers_food_upkeep_add = 1
+		pop_category_civilians_trade_produces_add = 4
+		pop_category_civilians_food_upkeep_add = 0.5
 	}
 }
 
@@ -504,8 +504,6 @@ tech_BA_SI_Gehenna_D03 = {
 	}
 	weight = 0
 	modifier = {
-		#ship_home_territory_fire_rate_mult = 0.75
-		#species_leader_exp_gain = 1
 		commander_skill_levels = 2
 		commander_exp_gain = 1
 	}
@@ -579,12 +577,16 @@ tech_BA_SI_Millennium_G01 = {
 	}
 	weight = 0
 	modifier = {
-		planet_physicists_physics_research_produces_add = 0.5
-		planet_physicists_consumer_goods_upkeep_add = 0.2
-		planet_biologists_society_research_produces_add = 0.5
-		planet_biologists_consumer_goods_upkeep_add = 0.2
-		planet_engineers_engineering_research_produces_add = 0.5
-		planet_engineers_consumer_goods_upkeep_add = 0.2
+		BA_club_pop_physics_research_produces_add = 0.5
+		BA_club_pop_society_research_produces_add = 0.5
+		BA_club_pop_engineering_research_produces_add = 0.5
+		BA_club_pop_consumer_goods_upkeep_add = 0.2
+		# planet_physicists_physics_research_produces_add = 0.5
+		# planet_physicists_consumer_goods_upkeep_add = 0.2
+		# planet_biologists_society_research_produces_add = 0.5
+		# planet_biologists_consumer_goods_upkeep_add = 0.2
+		# planet_engineers_engineering_research_produces_add = 0.5
+		# planet_engineers_consumer_goods_upkeep_add = 0.2
 	}
 }
 
@@ -602,10 +604,10 @@ tech_BA_SI_Millennium_G02 = {
 	}
 	weight = 0
 	modifier = {
+		planet_researchers_produces_mult = 0.1
+		planet_researchers_upkeep_mult = 0.05
 		num_tech_alternatives_add = 1
 		leader_skill_levels = 1
-		planet_researchers_upkeep_mult = 0.05
-		planet_researchers_produces_mult = 0.1
 		planet_pop_assembly_mult = 0.2
 	}
 }
@@ -959,7 +961,7 @@ tech_BA_SI_Trinity_A02 = {
 	weight = 0
 	modifier = {
 		pop_category_rulers_unity_produces_add = 5
-		BA_club_pop_unity_produces_add = 1
+		BA_staff_pop_unity_produces_add = 1
 		council_agenda_progress_speed = 0.05
 	}
 }
@@ -1022,7 +1024,7 @@ tech_BA_SI_Trinity_A05 = {
 	}
 	weight = 0
 	modifier = {
-		planet_administrators_unity_produces_add = 5
+		planet_bureaucrats_unity_produces_add = 5
 		country_unity_produces_mult = 0.1
 		council_agenda_progress_speed = 0.1
 	}
@@ -1211,7 +1213,6 @@ tech_BA_SI_Trinity_C02 = {
 	modifier = {
 		planet_colony_development_speed_mult = 1
 		planet_district_city_build_speed_mult = 2
-		planet_district_industrial_build_speed_mult = 2
 		planet_jobs_upkeep_mult = 0.05
 		empire_size_colonies_mult = -0.1
 		empire_size = -0.04
@@ -1232,7 +1233,7 @@ tech_BA_SI_Trinity_C03 = {
 	}
 	weight = 0
 	modifier = {
-		pop_growth_speed = 0.2
+		bonus_pop_growth_mult = 0.2
 		planet_jobs_produces_mult = 0.1
 		planet_jobs_upkeep_mult = 0.05
 		empire_size_pops_mult = -0.1
@@ -1301,10 +1302,8 @@ tech_BA_SI_Trinity_C06 = {
 	}
 	weight = 0
 	modifier = {
-		colony_start_num_pops_add = 2
-		pop_growth_from_immigration = 1
-		planet_jobs_produces_mult = 0.2
 		megastructures_produces_mult = 0.2
+		colony_start_urban_districts_add = 2
 	}
 }
 

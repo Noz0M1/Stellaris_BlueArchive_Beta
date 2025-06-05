@@ -717,9 +717,9 @@ trait_randomized_line = {
 		}
 	}
 	icon = "gfx/interface/icons/traits/trait_randomized_line.dds"	#以后改
-	assembling_modifier = {
-		planet_pop_assemblers_upkeep_mult = 0.2
-		planet_pop_assembly_mult = 0.15
+	modifier = {
+		roboticist_jobs_bonus_workforce_mult = -0.15
+		planet_pop_assembly_mult = 0.25
 	}
 }
 
@@ -746,9 +746,7 @@ trait_federation_matrix = {
 	}
 	icon = "gfx/interface/icons/traits/trait_federation_matrix.dds"	#以后改
 	modifier = {
-		jobs_bonus_workforce_mult = 0.15
-		#pop_category_specialists_sr_pyroxenes_upkeep_add = 0.2
-		#pop_category_rulers_sr_pyroxenes_upkeep_add = 0.2
+		pop_bonus_workforce_mult = 0.1
 	}
 }
 
@@ -809,7 +807,7 @@ trait_Halo_precursor = {
 	modifier = {
 		bonus_pop_growth_mult = -0.9
 		pop_environment_tolerance = 1.5
-		jobs_bonus_workforce_mult = 1
+		pop_bonus_workforce_mult = 1
 		army_damage_mult = 2
 		army_health = 4
 	}
@@ -836,7 +834,7 @@ trait_G_after = {
 	icon = "gfx/interface/icons/traits/Icon_airi_gold.dds"
 	modifier = {
 		pop_environment_tolerance = 2
-		jobs_bonus_workforce_mult = 0.3
+		pop_bonus_workforce_mult = 0.3
 		army_damage_mult = 0.2
 		army_health = 1.5
 	}

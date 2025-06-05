@@ -4,9 +4,9 @@ sweeper_pop = {
 	change_job_threshold = 16
 	keep_from_former_job = yes
 	demotion_time = 360
-	pop_modifier = {
-		pop_housing_usage_base = -1
-		pop_amenities_usage_base = -1
+	pop_group_modifier = {
+		pop_housing_usage_mult = -1
+		pop_amenities_usage_mult = -1
 	}
 	allow_resettlement = {
 		always = no

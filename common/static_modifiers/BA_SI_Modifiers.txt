@@ -6,7 +6,7 @@ modifier_BA_SI_Abydos_A06_permanent = {
 
 modifier_BA_SI_Abydos_A06_temp = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
-	pop_growth_speed = 0.5
+	bonus_pop_growth_mult = 0.5
 	planet_building_build_speed_mult = 1
 }
 
@@ -38,14 +38,14 @@ modifier_BA_SI_Abydos_B_route_1 = {
 modifier_BA_SI_Abydos_B_route_2 = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
 	planet_max_districts_add = 5
-	pop_growth_speed = 0.2
+	bonus_pop_growth_mult = 0.2
 	pop_housing_usage_mult = -0.15
 }
 
 modifier_BA_SI_Abydos_B_route_3 = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
 	planet_max_districts_add = 5
-	pop_growth_speed = 0.2
+	bonus_pop_growth_mult = 0.2
 	pop_housing_usage_mult = -0.15
 	planet_decision_enact_speed_mult = 0.85
 }
@@ -53,7 +53,7 @@ modifier_BA_SI_Abydos_B_route_3 = {
 modifier_BA_SI_Abydos_B_route_4 = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
 	planet_max_districts_add = 5
-	pop_growth_speed = 0.2
+	bonus_pop_growth_mult = 0.2
 	pop_housing_usage_mult = -0.15
 	planet_decision_enact_speed_mult = 0.85
 	planet_jobs_produces_mult = 0.2
@@ -68,7 +68,7 @@ modifier_BA_SI_Gehenna_G02 = {
 
 modifier_BA_SI_Gehenna_A01 = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
-	pop_growth_speed = 0.25
+	bonus_pop_growth_mult = 0.25
 	planet_pops_organics_food_upkeep_mult = 0.25
 }
 
@@ -117,6 +117,7 @@ modifier_BA_SI_Gehenna_E01 = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
 	planet_stability_add = 25
 	planet_crime_add = -20
+	ship_speed_mult = 0.3
 	ship_interstellar_speed_mult = 0.3
 }
 
@@ -146,4 +147,11 @@ modifier_agenda_BA_SI_Trinity_A02 = {
 modifier_agenda_BA_SI_Trinity_A04 = {
 	planet_jobs_produces_mult = 0.15
 	planet_jobs_upkeep_mult = 0.15
+}
+
+modifier_BA_SI_Trinity_C06 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	planet_building_build_speed_mult = 0.5
+	bonus_pop_growth_mult = 0.5
+	planet_jobs_produces_mult = 0.2
 }

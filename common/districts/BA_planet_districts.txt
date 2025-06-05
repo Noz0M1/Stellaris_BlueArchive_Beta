@@ -502,6 +502,9 @@ BA_districts_shelter = {
 	potential = {
 		uses_district_set = BA_ruined_planet
 	}
+	convert_to = {
+		BA_districts_campus
+	}
 	zone_slots = {
 		slot_city_government
 		slot_BA_municipality

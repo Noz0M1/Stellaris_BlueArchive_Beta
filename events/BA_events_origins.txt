@@ -1122,6 +1122,9 @@ country_event = {
 				has_country_flag = BA_origin_ruins_dark_matter
 			}
 		}
+		add_resource = {
+			unity = 100
+		}
 	}
 	after = {
 		hidden_effect = {
