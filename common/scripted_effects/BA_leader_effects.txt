@@ -91,7 +91,7 @@ BA_Halo_for_special_leader = {
 				}
 			}
 		}
-		add_trait = leader_trait_halo_awakened
+		add_trait = { trait = leader_trait_halo_awakened }
 	}
 	#二段光环
 	if = {
@@ -101,7 +101,7 @@ BA_Halo_for_special_leader = {
 				# TODO：光环改造
 			}
 		}
-		add_trait = leader_trait_halo_full_awakened
+		add_trait = { trait = leader_trait_halo_full_awakened }
 	}
 	#改造光环
 	# TODO：光环改造

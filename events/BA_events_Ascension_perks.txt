@@ -574,7 +574,7 @@ country_event = {
 					has_trait = leader_trait_halo_awakened
 				}
 			}
-			add_trait = leader_trait_halo_awakened
+			add_trait = { trait = leader_trait_halo_awakened }
 		}
 		every_pool_leader = {
 			limit = {
@@ -589,7 +589,7 @@ country_event = {
 					has_trait = leader_trait_halo_awakened
 				}
 			}
-			add_trait = leader_trait_halo_awakened
+			add_trait = { trait = leader_trait_halo_awakened }
 		}
 	}
 	option = {
@@ -645,7 +645,7 @@ country_event = {
 				}
 			}
 			remove_trait = leader_trait_halo_awakened
-			add_trait = leader_trait_halo_full_awakened
+			add_trait = { trait = leader_trait_halo_full_awakened }
 		}
 		every_pool_leader = {
 			limit = {
@@ -661,7 +661,7 @@ country_event = {
 				}
 			}
 			remove_trait = leader_trait_halo_awakened
-			add_trait = leader_trait_halo_full_awakened
+			add_trait = { trait = leader_trait_halo_full_awakened }
 		}
 	}
 	option = {
@@ -698,7 +698,7 @@ country_event = {
 						has_trait = trait_halo_awakened
 					}
 				}
-				add_trait = leader_trait_halo_awakened
+				add_trait = { trait = leader_trait_halo_awakened }
 			}
 			else_if = {
 				limit = {
@@ -706,7 +706,7 @@ country_event = {
 						has_trait = trait_halo_full_awakened
 					}
 				}
-				add_trait = leader_trait_halo_full_awakened
+				add_trait = { trait = leader_trait_halo_full_awakened }
 			}
 			else_if = {
 				limit = {
@@ -714,7 +714,7 @@ country_event = {
 						has_trait = trait_Halo_precursor
 					}
 				}
-				add_trait = leader_trait_halo_fe
+				add_trait = { trait = leader_trait_halo_fe }
 			}
 			# TODO：光环改造
 		}
@@ -772,7 +772,7 @@ country_event = {
 						has_trait = leader_trait_halo_awakened
 					}
 				}
-				add_trait = leader_trait_halo_awakened
+				add_trait = { trait = leader_trait_halo_awakened }
 				remove_trait = leader_trait_halo_full_awakened
 				# TODO：光环改造
 			}
@@ -785,7 +785,7 @@ country_event = {
 						has_trait = leader_trait_halo_full_awakened
 					}
 				}
-				add_trait = leader_trait_halo_full_awakened
+				add_trait = { trait = leader_trait_halo_full_awakened }
 				remove_trait = leader_trait_halo_awakened
 				# TODO：光环改造
 			}

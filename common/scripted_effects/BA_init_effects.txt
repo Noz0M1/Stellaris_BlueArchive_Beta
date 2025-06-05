@@ -1008,7 +1008,7 @@ BA_fe_create_fleet = {
 					class = commander
 					species = event_target:BA_Precursor_species
 					effect = {
-						add_trait_no_notify = leader_trait_commander_fe
+						add_trait = { trait = leader_trait_commander_fe  show_message = no }
 						change_leader_portrait = BA_carefree
 					}
 				}
