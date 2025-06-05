@@ -1,6 +1,5 @@
 #003_CYC 砂狼白子（骑行） 星海骑行
 leader_special_003_CYC = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B30.dds"
 	randomized = no
 	modifier = {
@@ -16,7 +15,6 @@ leader_special_003_CYC = {
 
 #004_SS 奥空绫音 舰载机强化
 leader_special_004_SS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y17.dds"
 	randomized = no
 	councilor_modifier = {
@@ -31,7 +29,6 @@ leader_special_004_SS = {
 
 #005_KMN 黑见芹香（正月） 经济复兴计划
 leader_special_005_KMN = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y13.dds"
 	randomized = no
 	planet_modifier = {
@@ -55,7 +52,6 @@ leader_special_005_KMN = {
 
 #006_SS 小鸟游星野（泳装） 爆发海域
 leader_special_006_SS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R69.dds"
 	randomized = no
 	fleet_modifier = {
@@ -74,7 +70,6 @@ leader_special_006_SS = {
 
 #007_SS 十六夜野宫（泳装） 空中火神
 leader_special_007_SS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R31.dds"
 	randomized = no
 	fleet_modifier = {
@@ -94,7 +89,6 @@ leader_special_007_SS = {
 
 #023_SP 河和静子（运动服） 晄轮大祭服务区
 leader_special_023_SP = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y33.dds"
 	randomized = no
 	planet_modifier = {
@@ -114,18 +108,17 @@ leader_special_023_SP = {
 
 #023_SS 河和静子（泳装） 海岸开张企划
 leader_special_023_SS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B33.dds"
 	randomized = no
 	planet_modifier = {
 		#行星建造速度+30%，贸易额+14%
 		planet_building_build_speed_mult = 0.3
-		trade_value_mult = 0.14
+		planet_jobs_trade_produces_mult = 0.14
 	}
 	sector_modifier = {
 		#行星建造速度+15%，贸易额+7%
 		planet_building_build_speed_mult = 0.15
-		trade_value_mult = 0.07
+		planet_jobs_trade_produces_mult = 0.07
 	}
 	leader_class = {
 		official
@@ -136,7 +129,6 @@ leader_special_023_SS = {
 
 #024_FN 狐坂若藻（华服） 正月之狐
 leader_special_024_FN = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B64.dds"
 	randomized = no
 	fleet_modifier = {
@@ -153,7 +145,6 @@ leader_special_024_FN = {
 
 #024_SS 狐坂若藻（泳装） 盛夏之狐
 leader_special_024_SS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y64.dds"
 	randomized = no
 	fleet_modifier = {
@@ -172,7 +163,6 @@ leader_special_024_SS = {
 
 #025_SS 久田泉奈（泳装） 泉奈流星落术
 leader_special_025_SS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B07.dds"
 	randomized = no
 	army_modifier = {
@@ -189,7 +179,6 @@ leader_special_025_SS = {
 
 #025_SP 久田泉奈（运动服） 泉奈流风行术
 leader_special_025_SP = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R29.dds"
 	randomized = no
 	modifier = {
@@ -206,7 +195,6 @@ leader_special_025_SP = {
 
 #026_SP 大野月咏（运动服） 月咏流化形术……
 leader_special_026_SP = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R60.dds"
 	randomized = no
 	army_modifier = {
@@ -223,7 +211,6 @@ leader_special_026_SP = {
 
 #029_GD 勇美枫（运动服） 占卜运动
 leader_special_029_SP = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R30.dds"
 	randomized = no
 	planet_modifier = {
@@ -243,7 +230,6 @@ leader_special_029_SP = {
 
 #030_SS 水羽三森（泳装） 夏日美人
 leader_special_030_SS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B41.dds"
 	randomized = no
 	planet_modifier = {
@@ -265,7 +251,6 @@ leader_special_030_SS = {
 
 #033_SS 和乐千世（泳装） 夏日计划
 leader_special_033_SS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B07.dds"
 	randomized = no
 	councilor_modifier = {
@@ -281,7 +266,6 @@ leader_special_033_SS = {
 
 #034_KMN 陆八魔阿露（正月） 正月之恶
 leader_special_034_KMN = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y09.dds"
 	randomized = no
 	fleet_modifier = {
@@ -298,7 +282,6 @@ leader_special_034_KMN = {
 
 #035_KMN 鬼方佳代子（正月） 正月之理
 leader_special_035_KMN = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R44.dds"
 	randomized = no
 	planet_modifier = {
@@ -321,7 +304,6 @@ leader_special_035_KMN = {
 
 #036_KMN 浅黄睦月（正月） 正月之月
 leader_special_036_KMN = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B31.dds"
 	randomized = no
 	fleet_modifier = {
@@ -337,7 +319,6 @@ leader_special_036_KMN = {
 
 #037_KMN 伊草遥香（正月） 正月之春
 leader_special_037_KMN = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R49.dds"
 	randomized = no
 	fleet_modifier = {
@@ -354,7 +335,6 @@ leader_special_037_KMN = {
 
 #038_HS 火宫千夏（温泉） 额外能量剂
 leader_special_038_HS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B44.dds"
 	randomized = no
 	fleet_modifier = {
@@ -371,7 +351,6 @@ leader_special_038_HS = {
 
 #039_PJ 空崎日奈（睡衣） 背后的怜意
 leader_special_039_PJ = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B14.dds"
 	randomized = no
 	councilor_modifier = {
@@ -388,7 +367,6 @@ leader_special_039_PJ = {
 
 #039_SS 空崎日奈（泳装） 风纪夏日
 leader_special_039_SS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R29.dds"
 	randomized = no
 	fleet_modifier = {
@@ -408,7 +386,6 @@ leader_special_039_SS = {
 
 #041_SS 银镜伊织（泳装） 夏日强袭
 leader_special_041_SS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R31.dds"
 	randomized = no
 	fleet_modifier = {
@@ -427,7 +404,6 @@ leader_special_041_SS = {
 
 #042_KMN 爱清枫香（正月） 昭昭之路
 leader_special_042_KMN = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y76.dds"
 	randomized = no
 	sector_modifier = {
@@ -444,7 +420,6 @@ leader_special_042_KMN = {
 
 #050_SS 狮子堂泉（泳装） 冰镇夏日
 leader_special_050_SS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B34.dds"
 	randomized = no
 	fleet_modifier = {
@@ -465,7 +440,6 @@ leader_special_050_SS = {
 
 #061_HS 天见和香（温泉） 温泉营业
 leader_special_061_HS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R27.dds"
 	randomized = no
 	modifier = {
@@ -492,7 +466,6 @@ leader_special_061_HS = {
 
 #067_HS 连河切里诺（温泉） 肃清酱出发
 leader_special_067_HS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R62.dds"
 	randomized = no
 	army_modifier = {
@@ -509,7 +482,6 @@ leader_special_067_HS = {
 
 #082_CL 白石歌原（应援团） 指挥炮塔应援
 leader_special_082_CL = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B82.dds"
 	randomized = no
 	army_modifier = {
@@ -527,7 +499,6 @@ leader_special_082_CL = {
 
 #083_CL 丰见亚都梨（应援团） 自走机器人应援
 leader_special_083_CL = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y67.dds"
 	randomized = no
 	army_modifier = {
@@ -544,7 +515,6 @@ leader_special_083_CL = {
 
 #083_SP 丰见亚都梨（体操服） 运动武器载具
 leader_special_083_SP = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y51.dds"
 	randomized = no
 	modifier = {
@@ -564,7 +534,6 @@ leader_special_083_SP = {
 
 #084_CL 猫冢响（应援团） Ei！Ei！Oh！
 leader_special_084_CL = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R85.dds"
 	randomized = no
 	army_modifier = {
@@ -581,7 +550,6 @@ leader_special_084_CL = {
 
 #085_SS 和泉元艾米（泳装） 如鱼得水
 leader_special_085_SS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R51.dds"
 	randomized = no
 	# 科研船及其他
@@ -598,7 +566,6 @@ leader_special_085_SS = {
 
 #086_CD 明星日鞠（寒冷） 超天才冰雪风美少女☆
 leader_special_086_CD = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R66.dds"
 	randomized = no
 	# 科研船及其他
@@ -614,7 +581,6 @@ leader_special_086_CD = {
 
 #087_SP 乙花菫（体操服） 运动迸发
 leader_special_087_SP = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y21.dds"
 	randomized = no
 	fleet_modifier = {
@@ -631,7 +597,6 @@ leader_special_087_SP = {
 
 #092_NVG 早濑优香（领航员） 精算师协助
 leader_special_092_NVG = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R03.dds"
 	randomized = no
 	modifier = {
@@ -659,7 +624,6 @@ leader_special_092_NVG = {
 
 #092_SPW 早濑优香（体操服） 速算进攻
 leader_special_092_SPW = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B66.dds"
 	randomized = no
 	fleet_modifier = {
@@ -677,7 +641,6 @@ leader_special_092_SPW = {
 
 #102_BN 角楯花凛（兔女郎） 支援战术
 leader_special_102_BN = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B21.dds"
 	randomized = no
 	army_modifier = {
@@ -695,7 +658,6 @@ leader_special_102_BN = {
 
 #102_UNF 角楯花凛（制服） 缄默
 leader_special_102_UNF = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y36.dds"
 	randomized = no
 	fleet_modifier = {
@@ -712,7 +674,6 @@ leader_special_102_UNF = {
 
 #103_BN 一之濑明日奈（兔女郎） 7·7·7
 leader_special_103_BN = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B09.dds"
 	randomized = no
 	army_modifier = {
@@ -728,7 +689,6 @@ leader_special_103_BN = {
 
 #103_UNF 一之濑明日奈（制服） 律动
 leader_special_103_UNF = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B03.dds"
 	randomized = no
 	fleet_modifier = {
@@ -745,7 +705,6 @@ leader_special_103_UNF = {
 
 #104_BN 美甘尼禄（兔女郎） 零零号令
 leader_special_104_BN = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R04.dds"
 	randomized = no
 	army_modifier = {
@@ -763,7 +722,6 @@ leader_special_104_BN = {
 
 #106_BN 室笠朱音（兔女郎） 静默行动
 leader_special_106_BN = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B07.dds"
 	randomized = no
 	army_modifier = {
@@ -779,7 +737,6 @@ leader_special_106_BN = {
 
 #107_DL 药子沙绫（私服） 生物舰队拓展
 leader_special_107_DL = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y68.dds"
 	randomized = no
 	fleet_modifier = {
@@ -795,7 +752,6 @@ leader_special_107_DL = {
 
 #108_YN 春原瞬（幼女） 小小的身躯
 leader_special_108_YN = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R57.dds"
 	randomized = no
 	councilor_modifier = {
@@ -814,7 +770,6 @@ leader_special_108_YN = {
 
 #115_SS 浦和花子（泳装） 潮海喷涌
 leader_special_115_SS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B32.dds"
 	randomized = no
 	fleet_modifier = {
@@ -834,7 +789,6 @@ leader_special_115_SS = {
 
 #116_SS 阿慈谷日富美（泳装） 十字军酱，出发！
 leader_special_116_SS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y56.dds"
 	randomized = no
 	planet_modifier = {
@@ -856,7 +810,6 @@ leader_special_116_SS = {
 
 #118_SS 白洲梓（泳装） 涛海之翼
 leader_special_118_SS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B31.dds"
 	randomized = no
 	fleet_modifier = {
@@ -874,7 +827,6 @@ leader_special_118_SS = {
 
 #122_CL 朝颜花绘（拉拉队） 激情之舞
 leader_special_122_CL = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R27.dds"
 	randomized = no
 	army_modifier = {
@@ -892,7 +844,6 @@ leader_special_122_CL = {
 
 #122_XMS 朝颜花绘（圣诞） 无微不至的火炉
 leader_special_122_XMS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B47.dds"
 	randomized = no
 	fleet_modifier = {
@@ -910,7 +861,6 @@ leader_special_122_XMS = {
 
 #124_NS 鹫见芹娜（护士） 日常保养
 leader_special_124_NS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B27.dds"
 	randomized = no
 	army_modifier = {
@@ -927,7 +877,6 @@ leader_special_124_NS = {
 
 #124_XMS 鹫见芹娜（圣诞） 圣诞之歌
 leader_special_124_XMS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y72.dds"
 	randomized = no
 	councilor_modifier = {
@@ -954,7 +903,6 @@ leader_special_124_XMS = {
 
 #130_SS 古关忧（泳装） 古学研究
 leader_special_130_SS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y11.dds"
 	randomized = no
 	councilor_modifier = {
@@ -971,7 +919,6 @@ leader_special_130_SS = {
 
 #132_SPW 伊落玛丽（体操服） 储备保养
 leader_special_132_SPW = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B04.dds"
 	randomized = no
 	fleet_modifier = {
@@ -989,7 +936,6 @@ leader_special_132_SPW = {
 
 #133_SS 若叶日向（泳装） 慈爱之手
 leader_special_133_SS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y73.dds"
 	randomized = no
 	fleet_modifier = {
@@ -1006,7 +952,6 @@ leader_special_133_SS = {
 
 #134_SNT 歌住樱子（圣装） 圣装洗礼
 leader_special_134_SNT = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B31.dds"
 	randomized = no
 	fleet_modifier = {
@@ -1026,7 +971,6 @@ leader_special_134_SNT = {
 
 #135_SS 剑先鹤城（泳装） 夏日之巅
 leader_special_135_SS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B55.dds"
 	randomized = no
 	fleet_modifier = {
@@ -1046,7 +990,6 @@ leader_special_135_SS = {
 
 #138_SS 静山真白（泳装）:洋流射击
 leader_special_138_SS = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y01.dds"
 	randomized = no
 	fleet_modifier = {
@@ -1063,7 +1006,6 @@ leader_special_138_SS = {
 
 #138_SP 静山真白（运动服）:重心固定
 leader_special_138_SP = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y25.dds"
 	randomized = no
 	fleet_modifier = {

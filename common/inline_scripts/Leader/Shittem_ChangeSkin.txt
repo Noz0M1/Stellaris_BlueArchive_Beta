@@ -57,7 +57,8 @@ option = {
             }
             if = {
                 limit = {
-                    has_skill > 2
+                    always = yes
+                    #has_total_skill > 2
                 }
                 BA_change_skin_trait = yes
             }

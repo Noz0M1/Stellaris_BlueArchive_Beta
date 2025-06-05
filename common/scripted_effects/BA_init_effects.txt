@@ -646,6 +646,7 @@ BA_generate_Precursor_cluster = {
 	##
 	set_spawn_system_batch = end
 }
+
 #### 起源初始化 ####
 #站开 创建模块（改自巨构）
 BA_origin_create_module = {
@@ -1008,7 +1009,10 @@ BA_fe_create_fleet = {
 					class = commander
 					species = event_target:BA_Precursor_species
 					effect = {
-						add_trait = { trait = leader_trait_commander_fe  show_message = no }
+						add_trait = {
+							trait = leader_trait_commander_fe
+							show_message = no
+						}
 						change_leader_portrait = BA_carefree
 					}
 				}

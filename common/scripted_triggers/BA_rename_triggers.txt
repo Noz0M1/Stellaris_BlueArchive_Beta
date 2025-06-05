@@ -22,7 +22,7 @@ BA_leader_has_same = {
 }
 
 BA_rename_special_check_1 = {
-    has_skill > 2
+    #has_total_skill > 2
     species = {
         BA_has_halo_organic = yes
     }

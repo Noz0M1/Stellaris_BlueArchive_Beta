@@ -1,6 +1,5 @@
 #000_基沃托斯 占位符
 leader_club_000 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
 	randomized = no
 	leader_class = all
@@ -10,7 +9,6 @@ leader_club_000 = {
 
 #001 什亭之匣 什亭之匣中枢
 leader_club_001 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
 	randomized = no
 	councilor_modifier = {
@@ -26,7 +24,6 @@ leader_club_001 = {
 
 #002 对策委员会 逆境工程
 leader_club_002 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R38.dds"
 	randomized = no
 	councilor_modifier = {
@@ -42,7 +39,6 @@ leader_club_002 = {
 
 #003 阿里乌斯小队 黑与白的交织
 leader_club_003 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R17.dds"
 	randomized = no
 	councilor_modifier = {
@@ -58,7 +54,6 @@ leader_club_003 = {
 
 #004 百花缭乱
 leader_club_004 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
 	randomized = no
 	councilor_modifier = {
@@ -73,7 +68,6 @@ leader_club_004 = {
 #006 花鸟风月
 #007 祭运委 星海祭典
 leader_club_007 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B79.dds"
 	randomized = no
 	councilor_modifier = {
@@ -88,7 +82,6 @@ leader_club_007 = {
 
 #008 七囚人 谜与恋爱的罪人
 leader_club_008 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B18.dds"
 	randomized = no
 	councilor_modifier = {
@@ -104,7 +97,6 @@ leader_club_008 = {
 
 #009 忍术研究部 新式忍术学说
 leader_club_009 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B05.dds"
 	randomized = no
 	councilor_modifier = {
@@ -120,7 +112,6 @@ leader_club_009 = {
 
 #010 修行部 星火助燃
 leader_club_010 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R72.dds"
 	randomized = no
 	councilor_modifier = {
@@ -136,7 +127,6 @@ leader_club_010 = {
 
 #011 阴阳部 名为樱花的小行星
 leader_club_011 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B50.dds"
 	randomized = no
 	councilor_modifier = {
@@ -152,7 +142,6 @@ leader_club_011 = {
 
 #012 便利屋68 一日一恶
 leader_club_012 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R55.dds"
 	randomized = no
 	councilor_modifier = {
@@ -167,7 +156,6 @@ leader_club_012 = {
 
 #013 风纪委 纪律与武力的统一
 leader_club_013 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R04.dds"
 	randomized = no
 	councilor_modifier = {
@@ -183,7 +171,6 @@ leader_club_013 = {
 
 #014 供给部 星海生命线
 leader_club_014 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B18.dds"
 	randomized = no
 	councilor_modifier = {
@@ -197,7 +184,6 @@ leader_club_014 = {
 
 #015 回家部 20240313
 leader_club_015 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y07.dds"
 	randomized = no
 	councilor_modifier = {
@@ -212,7 +198,6 @@ leader_club_015 = {
 
 #016 急救医学部 武装车与白色死神
 leader_club_016 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B46.dds"
 	randomized = no
 	councilor_modifier = {
@@ -228,7 +213,6 @@ leader_club_016 = {
 
 #017 美食研 美食的风流
 leader_club_017 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R24.dds"
 	randomized = no
 	councilor_modifier = {
@@ -243,7 +227,6 @@ leader_club_017 = {
 
 #018 万魔殿 无纪与野蛮的唯一
 leader_club_018 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B35.dds"
 	randomized = no
 	councilor_modifier = {
@@ -258,7 +241,6 @@ leader_club_018 = {
 
 #019 温泉开发部 重火力工程技术
 leader_club_019 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R39.dds"
 	randomized = no
 	councilor_modifier = {
@@ -274,13 +256,12 @@ leader_club_019 = {
 
 #020 CCC
 leader_club_020 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B66.dds"
 	randomized = no
 	councilor_modifier = {
 		country_claim_influence_cost_mult = -0.5
 		country_starbase_influence_cost_distance_mult = -0.5
-		starbase_trade_protection_add = -10
+		country_trade_produces_mult = 0.1
 	}
 	leader_class = all
 	selectable_weight = 0
@@ -290,7 +271,6 @@ leader_club_020 = {
 #021 海兰德监理室
 #022 227特别班 小小的振兴梦想
 leader_club_022 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y88.dds"
 	randomized = no
 	councilor_modifier = {
@@ -305,7 +285,6 @@ leader_club_022 = {
 
 #023 出版部 星海诗篇
 leader_club_023 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R74.dds"
 	randomized = no
 	councilor_modifier = {
@@ -321,7 +300,6 @@ leader_club_023 = {
 
 #024 红冬事务局 集权化管理
 leader_club_024 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y88.dds"
 	randomized = no
 	councilor_modifier = {
@@ -340,7 +318,6 @@ leader_club_024 = {
 
 #025 劳务部 工人的力量
 leader_club_025 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B38.dds"
 	randomized = no
 	councilor_modifier = {
@@ -359,7 +336,6 @@ leader_club_025 = {
 
 #026 知识解放战线 代表书籍的旗帜
 leader_club_026 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y74.dds"
 	randomized = no
 	councilor_modifier = {
@@ -375,7 +351,6 @@ leader_club_026 = {
 #027 报道部
 #028 行政委员会 联邦学生会星海监察条例
 leader_club_028 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B69.dds"
 	randomized = no
 	councilor_modifier = {
@@ -391,7 +366,6 @@ leader_club_028 = {
 
 #029 工程部 大师级工程学
 leader_club_029 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R33.dds"
 	randomized = no
 	councilor_modifier = {
@@ -407,7 +381,6 @@ leader_club_029 = {
 
 #030 特异现象搜查部 星海斥候
 leader_club_030 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R11.dds"
 	randomized = no
 	councilor_modifier = {
@@ -423,7 +396,6 @@ leader_club_030 = {
 
 #031 体育训练部 科学运动制
 leader_club_031 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R47.dds"
 	randomized = no
 	councilor_modifier = {
@@ -438,7 +410,6 @@ leader_club_031 = {
 
 #032 研讨会 精英行政效率
 leader_club_032 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B51.dds"
 	randomized = no
 	councilor_modifier = {
@@ -455,7 +426,6 @@ leader_club_032 = {
 
 #033 游戏部 群星Game Time
 leader_club_033 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y72.dds"
 	randomized = no
 	councilor_modifier = {
@@ -471,7 +441,6 @@ leader_club_033 = {
 
 #034 真理部 网络攻防纲领
 leader_club_034 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R16.dds"
 	randomized = no
 	councilor_modifier = {
@@ -487,7 +456,6 @@ leader_club_034 = {
 
 #035 C&C 特派打击学说
 leader_club_035 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y40.dds"
 	randomized = no
 	councilor_modifier = {
@@ -503,7 +471,6 @@ leader_club_035 = {
 
 #036 炼丹术研究会 山中人杰地灵
 leader_club_036 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B87.dds"
 	randomized = no
 	councilor_modifier = {
@@ -519,7 +486,6 @@ leader_club_036 = {
 
 #037 梅花园 幼小的梦园
 leader_club_037 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R19.dds"
 	randomized = no
 	councilor_modifier = {
@@ -533,7 +499,6 @@ leader_club_037 = {
 
 #038 玄龙门 新与旧的维护
 leader_club_038 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y88.dds"
 	randomized = no
 	councilor_modifier = {
@@ -549,14 +514,13 @@ leader_club_038 = {
 
 #039 玄武商会 旧与新的变革
 leader_club_039 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R79.dds"
 	randomized = no
 	councilor_modifier = {
 		#行星建造速度+15%，星球决议速度-10%，贸易额+10%
 		planet_building_build_speed_mult = 0.15
 		planet_decision_enact_speed_mult = -0.1
-		trade_value_mult = 0.1
+		country_trade_produces_mult = 0.1
 	}
 	leader_class = all
 	selectable_weight = 0
@@ -565,7 +529,6 @@ leader_club_039 = {
 
 #040 补习部 成绩监察制
 leader_club_040 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R43.dds"
 	randomized = no
 	councilor_modifier = {
@@ -582,7 +545,6 @@ leader_club_040 = {
 
 #041 茶话会 三位一体的茶话会
 leader_club_041 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B40.dds"
 	randomized = no
 	councilor_modifier = {
@@ -599,7 +561,6 @@ leader_club_041 = {
 
 #042 救护骑士团 象征着博爱与守护
 leader_club_042 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y73.dds"
 	randomized = no
 	councilor_modifier = {
@@ -614,7 +575,6 @@ leader_club_042 = {
 
 #043 甜点部 大小姐们的甜点
 leader_club_043 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R52.dds"
 	randomized = no
 	councilor_modifier = {
@@ -629,7 +589,6 @@ leader_club_043 = {
 
 #044 图书委员会 保持着神秘与厚重
 leader_club_044 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R51.dds"
 	randomized = no
 	councilor_modifier = {
@@ -648,7 +607,6 @@ leader_club_044 = {
 
 #045 修女会 代表着慈爱与秩序
 leader_club_045 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B84.dds"
 	randomized = no
 	councilor_modifier = {
@@ -662,7 +620,6 @@ leader_club_045 = {
 
 #046 正义委 盘根错杂的黑色卫士
 leader_club_046 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R86.dds"
 	randomized = no
 	councilor_modifier = {
@@ -678,7 +635,6 @@ leader_club_046 = {
 
 #047 自警团 市井的侠客
 leader_club_047 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R02.dds"
 	randomized = no
 	councilor_modifier = {
@@ -693,7 +649,6 @@ leader_club_047 = {
 
 #048 瓦尔基里 象征着安全的彗星
 leader_club_048 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y04.dds"
 	randomized = no
 	councilor_modifier = {
@@ -708,7 +663,6 @@ leader_club_048 = {
 
 #049 SRT
 leader_club_049 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R18.dds"
 	randomized = no
 	councilor_modifier = {
@@ -723,7 +677,6 @@ leader_club_049 = {
 #050 钢盔团
 #998 葛叶 只要998葛叶带回家
 leader_club_998 = {
-	cost = 0
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B83.dds"
 	randomized = no
 	councilor_modifier = {

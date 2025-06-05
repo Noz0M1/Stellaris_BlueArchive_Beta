@@ -1,643 +1,642 @@
 # UI
 BA_club_clear_found_flag = {
-    remove_country_flag = BA_club_set_Game_development_department
-    remove_country_flag = BA_club_set_Engineering_club
-    remove_country_flag = BA_club_set_Veritas
-    remove_country_flag = BA_club_set_Foreclosure_task_force
-    remove_country_flag = BA_club_set_Teaparty
-    remove_country_flag = BA_club_set_Hotspring_development_department
-    remove_country_flag = BA_club_set_Festival_operations_department
-    remove_country_flag = BA_club_set_Xuanwu_promenade
-    remove_country_flag = BA_club_set_Publishing_department
+	remove_country_flag = BA_club_set_Game_development_department
+	remove_country_flag = BA_club_set_Engineering_club
+	remove_country_flag = BA_club_set_Veritas
+	remove_country_flag = BA_club_set_Foreclosure_task_force
+	remove_country_flag = BA_club_set_Teaparty
+	remove_country_flag = BA_club_set_Hotspring_development_department
+	remove_country_flag = BA_club_set_Festival_operations_department
+	remove_country_flag = BA_club_set_Xuanwu_promenade
+	remove_country_flag = BA_club_set_Publishing_department
 }
 
 BA_club_found_selected_club = {
-    hidden_effect = {
-        random_list = {
-            0 = {
-                #游戏部
-                modifier = {
-                    add = 1000
-                    OR = {
-                        BA_set_random_club = yes
-                        has_country_flag = BA_club_set_Game_development_department
-                    }
-                }
-                fromfrom = {
-                    upgrade_megastructure_to = BA_club_station_Game_development_department
-                }
-                country_event = {
-                    id = BA_club.1001
-                    days = 5
-                }
-                BA_club_cap_use = yes
-                remove_country_flag = BA_club_set_Game_development_department
-                set_country_flag = BA_Game_development_department
-                destroy_fleet = from
-            }
-            0 = {
-                #工程师部
-                modifier = {
-                    add = 1000
-                    OR = {
-                        BA_set_random_club = yes
-                        has_country_flag = BA_club_set_Engineering_club
-                    }
-                }
-                fromfrom = {
-                    upgrade_megastructure_to = BA_club_station_Engineering_club
-                }
-                country_event = {
-                    id = BA_club.1101
-                    days = 5
-                }
-                BA_club_cap_use = yes
-                remove_country_flag = BA_club_set_Engineering_club
-                set_country_flag = BA_Engineering_club
-                destroy_fleet = from
-            }
-            0 = {
-                #真理部
-                modifier = {
-                    add = 1000
-                    OR = {
-                        BA_set_random_club = yes
-                        has_country_flag = BA_club_set_Veritas
-                    }
-                }
-                fromfrom = {
-                    upgrade_megastructure_to = BA_club_station_Veritas
-                }
-                country_event = {
-                    id = BA_club.1201
-                    days = 5
-                }
-                BA_club_cap_use = yes
-                remove_country_flag = BA_club_set_Veritas
-                set_country_flag = BA_Veritas
-                destroy_fleet = from
-            }
-            0 = {
-                #对策委员会
-                modifier = {
-                    add = 1000
-                    OR = {
-                        BA_set_random_club = yes
-                        has_country_flag = BA_club_set_Foreclosure_task_force
-                    }
-                }
-                fromfrom = {
-                    upgrade_megastructure_to = BA_club_station_Foreclosure_task_force
-                }
-                country_event = {
-                    id = BA_club.1301
-                    days = 5
-                }
-                BA_club_cap_use = yes
-                remove_country_flag = BA_club_set_Foreclosure_task_force
-                set_country_flag = BA_Foreclosure_task_force
-                destroy_fleet = from
-            }
-            0 = {
-                #茶会
-                modifier = {
-                    add = 1000
-                    OR = {
-                        BA_set_random_club = yes
-                        has_country_flag = BA_club_set_Teaparty
-                    }
-                }
-                fromfrom = {
-                    upgrade_megastructure_to = BA_club_station_Teaparty
-                }
-                country_event = {
-                    id = BA_club.1401
-                    days = 5
-                }
-                BA_club_cap_use = yes
-                remove_country_flag = BA_club_set_Teaparty
-                set_country_flag = BA_Teaparty
-                destroy_fleet = from
-            }
-            0 = {
-                #温泉开发部
-                modifier = {
-                    add = 1000
-                    OR = {
-                        BA_set_random_club = yes
-                        has_country_flag = BA_club_set_Hotspring_development_department
-                    }
-                }
-                fromfrom = {
-                    upgrade_megastructure_to = BA_club_station_Hotspring_development_department
-                }
-                country_event = {
-                    id = BA_club.1501
-                    days = 5
-                }
-                BA_club_cap_use = yes
-                remove_country_flag = BA_club_set_Hotspring_development_department
-                set_country_flag = BA_Hotspring_development_department
-                destroy_fleet = from
-            }
-            0 = {
-                #祭典运营委员会
-                modifier = {
-                    add = 1000
-                    OR = {
-                        BA_set_random_club = yes
-                        has_country_flag = BA_club_set_Festival_operations_department
-                    }
-                }
-                fromfrom = {
-                    upgrade_megastructure_to = BA_club_station_Festival_operations_department
-                }
-                country_event = {
-                    id = BA_club.1601
-                    days = 5
-                }
-                BA_club_cap_use = yes
-                remove_country_flag = BA_club_set_Festival_operations_department
-                set_country_flag = BA_Festival_operations_department
-                destroy_fleet = from
-            }
-            0 = {
-                #玄武商会
-                modifier = {
-                    add = 1000
-                    OR = {
-                        BA_set_random_club = yes
-                        has_country_flag = BA_club_set_Xuanwu_promenade
-                    }
-                }
-                fromfrom = {
-                    upgrade_megastructure_to = BA_club_station_Xuanwu_promenade
-                }
-                country_event = {
-                    id = BA_club.1701
-                    days = 5
-                }
-                BA_club_cap_use = yes
-                remove_country_flag = BA_club_set_Xuanwu_promenade
-                set_country_flag = BA_Xuanwu_promenade
-                destroy_fleet = from
-            }
-            0 = {
-                #出版部
-                modifier = {
-                    add = 1000
-                    OR = {
-                        BA_set_random_club = yes
-                        has_country_flag = BA_club_set_Publishing_department
-                    }
-                }
-                fromfrom = {
-                    upgrade_megastructure_to = BA_club_station_Publishing_department
-                }
-                country_event = {
-                    id = BA_club.1801
-                    days = 5
-                }
-                BA_club_cap_use = yes
-                remove_country_flag = BA_club_set_Publishing_department
-                set_country_flag = BA_Publishing_department
-                destroy_fleet = from
-            }
-            1 = {
-                fromfrom = {
-                    remove_megastructure_flag = BA_club_occupied
-                }
-                country_event = {
-                    id = BA_club.0007
-                }
-            }
-
-        }
-        remove_country_flag = BA_club_other_block
-    }
+	hidden_effect = {
+		random_list = {
+			0 = {
+				#游戏部
+				modifier = {
+					add = 1000
+					OR = {
+						BA_set_random_club = yes
+						has_country_flag = BA_club_set_Game_development_department
+					}
+				}
+				fromfrom = {
+					upgrade_megastructure_to = BA_club_station_Game_development_department
+				}
+				country_event = {
+					id = BA_club.1001
+					days = 5
+				}
+				BA_club_cap_use = yes
+				remove_country_flag = BA_club_set_Game_development_department
+				set_country_flag = BA_Game_development_department
+				destroy_fleet = from
+			}
+			0 = {
+				#工程师部
+				modifier = {
+					add = 1000
+					OR = {
+						BA_set_random_club = yes
+						has_country_flag = BA_club_set_Engineering_club
+					}
+				}
+				fromfrom = {
+					upgrade_megastructure_to = BA_club_station_Engineering_club
+				}
+				country_event = {
+					id = BA_club.1101
+					days = 5
+				}
+				BA_club_cap_use = yes
+				remove_country_flag = BA_club_set_Engineering_club
+				set_country_flag = BA_Engineering_club
+				destroy_fleet = from
+			}
+			0 = {
+				#真理部
+				modifier = {
+					add = 1000
+					OR = {
+						BA_set_random_club = yes
+						has_country_flag = BA_club_set_Veritas
+					}
+				}
+				fromfrom = {
+					upgrade_megastructure_to = BA_club_station_Veritas
+				}
+				country_event = {
+					id = BA_club.1201
+					days = 5
+				}
+				BA_club_cap_use = yes
+				remove_country_flag = BA_club_set_Veritas
+				set_country_flag = BA_Veritas
+				destroy_fleet = from
+			}
+			0 = {
+				#对策委员会
+				modifier = {
+					add = 1000
+					OR = {
+						BA_set_random_club = yes
+						has_country_flag = BA_club_set_Foreclosure_task_force
+					}
+				}
+				fromfrom = {
+					upgrade_megastructure_to = BA_club_station_Foreclosure_task_force
+				}
+				country_event = {
+					id = BA_club.1301
+					days = 5
+				}
+				BA_club_cap_use = yes
+				remove_country_flag = BA_club_set_Foreclosure_task_force
+				set_country_flag = BA_Foreclosure_task_force
+				destroy_fleet = from
+			}
+			0 = {
+				#茶会
+				modifier = {
+					add = 1000
+					OR = {
+						BA_set_random_club = yes
+						has_country_flag = BA_club_set_Teaparty
+					}
+				}
+				fromfrom = {
+					upgrade_megastructure_to = BA_club_station_Teaparty
+				}
+				country_event = {
+					id = BA_club.1401
+					days = 5
+				}
+				BA_club_cap_use = yes
+				remove_country_flag = BA_club_set_Teaparty
+				set_country_flag = BA_Teaparty
+				destroy_fleet = from
+			}
+			0 = {
+				#温泉开发部
+				modifier = {
+					add = 1000
+					OR = {
+						BA_set_random_club = yes
+						has_country_flag = BA_club_set_Hotspring_development_department
+					}
+				}
+				fromfrom = {
+					upgrade_megastructure_to = BA_club_station_Hotspring_development_department
+				}
+				country_event = {
+					id = BA_club.1501
+					days = 5
+				}
+				BA_club_cap_use = yes
+				remove_country_flag = BA_club_set_Hotspring_development_department
+				set_country_flag = BA_Hotspring_development_department
+				destroy_fleet = from
+			}
+			0 = {
+				#祭典运营委员会
+				modifier = {
+					add = 1000
+					OR = {
+						BA_set_random_club = yes
+						has_country_flag = BA_club_set_Festival_operations_department
+					}
+				}
+				fromfrom = {
+					upgrade_megastructure_to = BA_club_station_Festival_operations_department
+				}
+				country_event = {
+					id = BA_club.1601
+					days = 5
+				}
+				BA_club_cap_use = yes
+				remove_country_flag = BA_club_set_Festival_operations_department
+				set_country_flag = BA_Festival_operations_department
+				destroy_fleet = from
+			}
+			0 = {
+				#玄武商会
+				modifier = {
+					add = 1000
+					OR = {
+						BA_set_random_club = yes
+						has_country_flag = BA_club_set_Xuanwu_promenade
+					}
+				}
+				fromfrom = {
+					upgrade_megastructure_to = BA_club_station_Xuanwu_promenade
+				}
+				country_event = {
+					id = BA_club.1701
+					days = 5
+				}
+				BA_club_cap_use = yes
+				remove_country_flag = BA_club_set_Xuanwu_promenade
+				set_country_flag = BA_Xuanwu_promenade
+				destroy_fleet = from
+			}
+			0 = {
+				#出版部
+				modifier = {
+					add = 1000
+					OR = {
+						BA_set_random_club = yes
+						has_country_flag = BA_club_set_Publishing_department
+					}
+				}
+				fromfrom = {
+					upgrade_megastructure_to = BA_club_station_Publishing_department
+				}
+				country_event = {
+					id = BA_club.1801
+					days = 5
+				}
+				BA_club_cap_use = yes
+				remove_country_flag = BA_club_set_Publishing_department
+				set_country_flag = BA_Publishing_department
+				destroy_fleet = from
+			}
+			1 = {
+				fromfrom = {
+					remove_megastructure_flag = BA_club_occupied
+				}
+				country_event = {
+					id = BA_club.0007
+				}
+			}
+		}
+		remove_country_flag = BA_club_other_block
+	}
 }
 
 # Modifier
 BA_club_clear_country_modifier = {
-    remove_modifier = modifier_BA_club_sponsor_Game_development_department
-    remove_modifier = modifier_BA_club_sponsor_Engineering_club
-    remove_modifier = modifier_BA_club_sponsor_Veritas
-    remove_modifier = modifier_BA_club_sponsor_Foreclosure_task_force
-    remove_modifier = modifier_BA_club_sponsor_Teaparty
-    remove_modifier = modifier_BA_club_sponsor_Hotspring_development_department
-    remove_modifier = modifier_BA_club_sponsor_Festival_operations_department
-    remove_modifier = modifier_BA_club_sponsor_Xuanwu_promenade
-    remove_modifier = modifier_BA_club_sponsor_Publishing_department
+	remove_modifier = modifier_BA_club_sponsor_Game_development_department
+	remove_modifier = modifier_BA_club_sponsor_Engineering_club
+	remove_modifier = modifier_BA_club_sponsor_Veritas
+	remove_modifier = modifier_BA_club_sponsor_Foreclosure_task_force
+	remove_modifier = modifier_BA_club_sponsor_Teaparty
+	remove_modifier = modifier_BA_club_sponsor_Hotspring_development_department
+	remove_modifier = modifier_BA_club_sponsor_Festival_operations_department
+	remove_modifier = modifier_BA_club_sponsor_Xuanwu_promenade
+	remove_modifier = modifier_BA_club_sponsor_Publishing_department
 }
 
 BA_club_set_country_modifier = {
-    BA_club_clear_country_modifier = yes
-    if = {
-        limit = {
-            has_country_flag = BA_Game_development_department
-        }
-        add_modifier = {
-            modifier = modifier_BA_club_sponsor_Game_development_department
-        }
-    }
-    if = {
-        limit = {
-            has_country_flag = BA_Engineering_club
-        }
-        add_modifier = {
-            modifier = modifier_BA_club_sponsor_Engineering_club
-        }
-    }
-    if = {
-        limit = {
-            has_country_flag = BA_Veritas
-        }
-        add_modifier = {
-            modifier = modifier_BA_club_sponsor_Veritas
-        }
-    }
-    if = {
-        limit = {
-            has_country_flag = BA_Foreclosure_task_force
-        }
-        add_modifier = {
-            modifier = modifier_BA_club_sponsor_Foreclosure_task_force
-        }
-    }
-    if = {
-        limit = {
-            has_country_flag = BA_Teaparty
-        }
-        add_modifier = {
-            modifier = modifier_BA_club_sponsor_Teaparty
-        }
-    }
-    if = {
-        limit = {
-            has_country_flag = BA_Hotspring_development_department
-        }
-        add_modifier = {
-            modifier = modifier_BA_club_sponsor_Hotspring_development_department
-        }
-    }
-    if = {
-        limit = {
-            has_country_flag = BA_Festival_operations_department
-        }
-        add_modifier = {
-            modifier = modifier_BA_club_sponsor_Festival_operations_department
-        }
-    }
-    if = {
-        limit = {
-            has_country_flag = BA_Xuanwu_promenade
-        }
-        add_modifier = {
-            modifier = modifier_BA_club_sponsor_Xuanwu_promenade
-        }
-    }
-    if = {
-        limit = {
-            has_country_flag = BA_Publishing_department
-        }
-        add_modifier = {
-            modifier = modifier_BA_club_sponsor_Publishing_department
-        }
-    }
+	BA_club_clear_country_modifier = yes
+	if = {
+		limit = {
+			has_country_flag = BA_Game_development_department
+		}
+		add_modifier = {
+			modifier = modifier_BA_club_sponsor_Game_development_department
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Engineering_club
+		}
+		add_modifier = {
+			modifier = modifier_BA_club_sponsor_Engineering_club
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Veritas
+		}
+		add_modifier = {
+			modifier = modifier_BA_club_sponsor_Veritas
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Foreclosure_task_force
+		}
+		add_modifier = {
+			modifier = modifier_BA_club_sponsor_Foreclosure_task_force
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Teaparty
+		}
+		add_modifier = {
+			modifier = modifier_BA_club_sponsor_Teaparty
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Hotspring_development_department
+		}
+		add_modifier = {
+			modifier = modifier_BA_club_sponsor_Hotspring_development_department
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Festival_operations_department
+		}
+		add_modifier = {
+			modifier = modifier_BA_club_sponsor_Festival_operations_department
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Xuanwu_promenade
+		}
+		add_modifier = {
+			modifier = modifier_BA_club_sponsor_Xuanwu_promenade
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Publishing_department
+		}
+		add_modifier = {
+			modifier = modifier_BA_club_sponsor_Publishing_department
+		}
+	}
 }
 
 BA_club_reload_Teaparty_effect_modifier = {
-    add_modifier = {
-        modifier = modifier_BA_Teaparty
-        multiplier = value:num_BA_club_empire_size_modifier_effect
-    }
+	add_modifier = {
+		modifier = modifier_BA_Teaparty
+		multiplier = value:num_BA_club_empire_size_modifier_effect
+	}
 }
 
 # Function
 BA_club_Engineering_club_function_init = {
-    # physics_research
-    export_resource_stockpile_to_variable = {
-        resource = physics_research
-        variable = BA_weapon_var_physics_research_stockpile
-    }
-    set_variable = {
-        which = BA_weapon_var_prev
-        value = 0
-    }
-    while = {
-        limit = {
-            check_variable = {
-                which = BA_weapon_var_physics_research_stockpile
-                value > value:num_BA_club_weapon_boost_prev
-            }
-        }
-        subtract_variable = {
-            which = BA_weapon_var_physics_research_stockpile
-            value = value:num_BA_club_weapon_boost_prev
-        }
-        change_variable = {
-            which = BA_weapon_var_prev
-            value = 1
-        }
-    }
-    set_variable = {
-        which = BA_weapon_var_physics_research_prev
-        value = BA_weapon_var_prev
-    }
-    # society_research
-    export_resource_stockpile_to_variable = {
-        resource = society_research
-        variable = BA_weapon_var_society_research_stockpile
-    }
-    set_variable = {
-        which = BA_weapon_var_prev
-        value = 0
-    }
-    while = {
-        limit = {
-            check_variable = {
-                which = BA_weapon_var_society_research_stockpile
-                value > value:num_BA_club_weapon_boost_prev
-            }
-        }
-        subtract_variable = {
-            which = BA_weapon_var_society_research_stockpile
-            value = value:num_BA_club_weapon_boost_prev
-        }
-        change_variable = {
-            which = BA_weapon_var_prev
-            value = 1
-        }
-    }
-    set_variable = {
-        which = BA_weapon_var_society_research_prev
-        value = BA_weapon_var_prev
-    }
-    # engineering_research
-    export_resource_stockpile_to_variable = {
-        resource = engineering_research
-        variable = BA_weapon_var_engineering_research_stockpile
-    }
-    set_variable = {
-        which = BA_weapon_var_prev
-        value = 0
-    }
-    while = {
-        limit = {
-            check_variable = {
-                which = BA_weapon_var_engineering_research_stockpile
-                value > value:num_BA_club_weapon_boost_prev
-            }
-        }
-        subtract_variable = {
-            which = BA_weapon_var_engineering_research_stockpile
-            value = value:num_BA_club_weapon_boost_prev
-        }
-        change_variable = {
-            which = BA_weapon_var_prev
-            value = 1
-        }
-    }
-    set_variable = {
-        which = BA_weapon_var_engineering_research_prev
-        value = BA_weapon_var_prev
-    }
+	# physics_research
+	export_resource_stockpile_to_variable = {
+		resource = physics_research
+		variable = BA_weapon_var_physics_research_stockpile
+	}
+	set_variable = {
+		which = BA_weapon_var_prev
+		value = 0
+	}
+	while = {
+		limit = {
+			check_variable = {
+				which = BA_weapon_var_physics_research_stockpile
+				value > value:num_BA_club_weapon_boost_prev
+			}
+		}
+		subtract_variable = {
+			which = BA_weapon_var_physics_research_stockpile
+			value = value:num_BA_club_weapon_boost_prev
+		}
+		change_variable = {
+			which = BA_weapon_var_prev
+			value = 1
+		}
+	}
+	set_variable = {
+		which = BA_weapon_var_physics_research_prev
+		value = BA_weapon_var_prev
+	}
+	# society_research
+	export_resource_stockpile_to_variable = {
+		resource = society_research
+		variable = BA_weapon_var_society_research_stockpile
+	}
+	set_variable = {
+		which = BA_weapon_var_prev
+		value = 0
+	}
+	while = {
+		limit = {
+			check_variable = {
+				which = BA_weapon_var_society_research_stockpile
+				value > value:num_BA_club_weapon_boost_prev
+			}
+		}
+		subtract_variable = {
+			which = BA_weapon_var_society_research_stockpile
+			value = value:num_BA_club_weapon_boost_prev
+		}
+		change_variable = {
+			which = BA_weapon_var_prev
+			value = 1
+		}
+	}
+	set_variable = {
+		which = BA_weapon_var_society_research_prev
+		value = BA_weapon_var_prev
+	}
+	# engineering_research
+	export_resource_stockpile_to_variable = {
+		resource = engineering_research
+		variable = BA_weapon_var_engineering_research_stockpile
+	}
+	set_variable = {
+		which = BA_weapon_var_prev
+		value = 0
+	}
+	while = {
+		limit = {
+			check_variable = {
+				which = BA_weapon_var_engineering_research_stockpile
+				value > value:num_BA_club_weapon_boost_prev
+			}
+		}
+		subtract_variable = {
+			which = BA_weapon_var_engineering_research_stockpile
+			value = value:num_BA_club_weapon_boost_prev
+		}
+		change_variable = {
+			which = BA_weapon_var_prev
+			value = 1
+		}
+	}
+	set_variable = {
+		which = BA_weapon_var_engineering_research_prev
+		value = BA_weapon_var_prev
+	}
 }
 
 BA_club_Engineering_club_function_exec = {
-    while = {
-        limit = {
-            resource_stockpile_compare = {
-                resource = $TECH_CLASS$
-                value > value:num_BA_club_weapon_boost_cost
-            }
-        }
-        add_resource = {
-            $TECH_CLASS$ = -1
-            multiplier = value:num_BA_club_weapon_boost_cost
-        }
-        change_variable = {
-            which = BA_weapon_var_count
-            value = 1
-        }
-        give_technology = {
-            tech = tech_repeatable_weapon_type_Kivotos_$TECH_CLASS$
-            message = no
-        }
-        set_timed_country_flag = {
-            flag = Engineering_club_weapon_develop_cooldown
-            years = 1
-        }
-    }
+	while = {
+		limit = {
+			resource_stockpile_compare = {
+				resource = $TECH_CLASS$
+				value > value:num_BA_club_weapon_boost_cost
+			}
+		}
+		add_resource = {
+			$TECH_CLASS$ = -1
+			multiplier = value:num_BA_club_weapon_boost_cost
+		}
+		change_variable = {
+			which = BA_weapon_var_count
+			value = 1
+		}
+		give_technology = {
+			tech = tech_repeatable_weapon_type_Kivotos_$TECH_CLASS$
+			message = no
+		}
+		set_timed_country_flag = {
+			flag = Engineering_club_weapon_develop_cooldown
+			years = 1
+		}
+	}
 }
 
 # Else
 BA_club_favor_grow = {
-    if = {
-        limit = {
-            has_country_flag = BA_Game_development_department
-        }
-        if = {
-            limit = {
-                check_variable = {
-                    which = Game_development_department
-                    value >= 100
-                }
-            }
-            set_variable = {
-                which = Game_development_department
-                value = 100
-            }
-        }
-        else = {
-            change_variable = {
-                which = Game_development_department
-                value = $AMOUNT$
-            }
-        }
-    }
-    if = {
-        limit = {
-            has_country_flag = BA_Engineering_club
-        }
-        if = {
-            limit = {
-                check_variable = {
-                    which = Engineering_club
-                    value >= 100
-                }
-            }
-            set_variable = {
-                which = Engineering_club
-                value = 100
-            }
-        }
-        else = {
-            change_variable = {
-                which = Engineering_club
-                value = $AMOUNT$
-            }
-        }
-    }
-    if = {
-        limit = {
-            has_country_flag = BA_Veritas
-        }
-        if = {
-            limit = {
-                check_variable = {
-                    which = Veritas
-                    value >= 100
-                }
-            }
-            set_variable = {
-                which = Veritas
-                value = 100
-            }
-        }
-        else = {
-            change_variable = {
-                which = Veritas
-                value = $AMOUNT$
-            }
-        }
-    }
-    if = {
-        limit = {
-            has_country_flag = BA_Foreclosure_task_force
-        }
-        if = {
-            limit = {
-                check_variable = {
-                    which = Foreclosure_task_force
-                    value >= 100
-                }
-            }
-            set_variable = {
-                which = Foreclosure_task_force
-                value = 100
-            }
-        }
-        else = {
-            change_variable = {
-                which = Foreclosure_task_force
-                value = $AMOUNT$
-            }
-        }
-    }
-    if = {
-        limit = {
-            has_country_flag = BA_Teaparty
-        }
-        if = {
-            limit = {
-                check_variable = {
-                    which = Teaparty
-                    value >= 100
-                }
-            }
-            set_variable = {
-                which = Teaparty
-                value = 100
-            }
-        }
-        else = {
-            change_variable = {
-                which = Teaparty
-                value = $AMOUNT$
-            }
-        }
-    }
-    if = {
-        limit = {
-            has_country_flag = BA_Hotspring_development_department
-        }
-        if = {
-            limit = {
-                check_variable = {
-                    which = Hotspring_development_department
-                    value >= 100
-                }
-            }
-            set_variable = {
-                which = Hotspring_development_department
-                value = 100
-            }
-        }
-        else = {
-            change_variable = {
-                which = Hotspring_development_department
-                value = $AMOUNT$
-            }
-        }
-    }
-    if = {
-        limit = {
-            has_country_flag = BA_Festival_operations_department
-        }
-        if = {
-            limit = {
-                check_variable = {
-                    which = Festival_operations_department
-                    value >= 100
-                }
-            }
-            set_variable = {
-                which = Festival_operations_department
-                value = 100
-            }
-        }
-        else = {
-            change_variable = {
-                which = Festival_operations_department
-                value = $AMOUNT$
-            }
-        }
-    }
-    if = {
-        limit = {
-            has_country_flag = BA_Xuanwu_promenade
-        }
-        if = {
-            limit = {
-                check_variable = {
-                    which = Xuanwu_promenade
-                    value >= 100
-                }
-            }
-            set_variable = {
-                which = Xuanwu_promenade
-                value = 100
-            }
-        }
-        else = {
-            change_variable = {
-                which = Xuanwu_promenade
-                value = $AMOUNT$
-            }
-        }
-    }
-    if = {
-        limit = {
-            has_country_flag = BA_Publishing_department
-        }
-        if = {
-            limit = {
-                check_variable = {
-                    which = Publishing_department
-                    value >= 100
-                }
-            }
-            set_variable = {
-                which = Publishing_department
-                value = 100
-            }
-        }
-        else = {
-            change_variable = {
-                which = Publishing_department
-                value = $AMOUNT$
-            }
-        }
-    }
+	if = {
+		limit = {
+			has_country_flag = BA_Game_development_department
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = Game_development_department
+					value >= 100
+				}
+			}
+			set_variable = {
+				which = Game_development_department
+				value = 100
+			}
+		}
+		else = {
+			change_variable = {
+				which = Game_development_department
+				value = $AMOUNT$
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Engineering_club
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = Engineering_club
+					value >= 100
+				}
+			}
+			set_variable = {
+				which = Engineering_club
+				value = 100
+			}
+		}
+		else = {
+			change_variable = {
+				which = Engineering_club
+				value = $AMOUNT$
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Veritas
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = Veritas
+					value >= 100
+				}
+			}
+			set_variable = {
+				which = Veritas
+				value = 100
+			}
+		}
+		else = {
+			change_variable = {
+				which = Veritas
+				value = $AMOUNT$
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Foreclosure_task_force
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = Foreclosure_task_force
+					value >= 100
+				}
+			}
+			set_variable = {
+				which = Foreclosure_task_force
+				value = 100
+			}
+		}
+		else = {
+			change_variable = {
+				which = Foreclosure_task_force
+				value = $AMOUNT$
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Teaparty
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = Teaparty
+					value >= 100
+				}
+			}
+			set_variable = {
+				which = Teaparty
+				value = 100
+			}
+		}
+		else = {
+			change_variable = {
+				which = Teaparty
+				value = $AMOUNT$
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Hotspring_development_department
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = Hotspring_development_department
+					value >= 100
+				}
+			}
+			set_variable = {
+				which = Hotspring_development_department
+				value = 100
+			}
+		}
+		else = {
+			change_variable = {
+				which = Hotspring_development_department
+				value = $AMOUNT$
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Festival_operations_department
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = Festival_operations_department
+					value >= 100
+				}
+			}
+			set_variable = {
+				which = Festival_operations_department
+				value = 100
+			}
+		}
+		else = {
+			change_variable = {
+				which = Festival_operations_department
+				value = $AMOUNT$
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Xuanwu_promenade
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = Xuanwu_promenade
+					value >= 100
+				}
+			}
+			set_variable = {
+				which = Xuanwu_promenade
+				value = 100
+			}
+		}
+		else = {
+			change_variable = {
+				which = Xuanwu_promenade
+				value = $AMOUNT$
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BA_Publishing_department
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = Publishing_department
+					value >= 100
+				}
+			}
+			set_variable = {
+				which = Publishing_department
+				value = 100
+			}
+		}
+		else = {
+			change_variable = {
+				which = Publishing_department
+				value = $AMOUNT$
+			}
+		}
+	}
 }
