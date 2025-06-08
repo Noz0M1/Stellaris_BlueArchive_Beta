@@ -805,7 +805,7 @@ building_BA_pyroxenes_factory_X = {
 
 ########## 科研和凝聚力 ##########
 building_BA_club_room = {
-	icon = building_augmentation_center
+	#icon = building_augmentation_center
 	base_buildtime = 180
 	category = research
 	building_sets = {
@@ -862,7 +862,6 @@ building_BA_club_room = {
 }
 
 building_BA_club_mansion = {
-	icon = building_augmentation_bazaars_branch
 	can_build = no
 	base_buildtime = 180
 	category = research
@@ -917,7 +916,6 @@ building_BA_club_mansion = {
 }
 
 building_BA_Kivotos_staff_room = {
-	icon = building_augmentation_center
 	base_buildtime = 180
 	category = unity
 	building_sets = {
@@ -961,7 +959,6 @@ building_BA_Kivotos_staff_room = {
 }
 
 building_BA_Kivotos_staff_mansion = {
-	icon = building_augmentation_center
 	can_build = no
 	base_buildtime = 180
 	category = unity
