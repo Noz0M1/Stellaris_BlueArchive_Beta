@@ -1,5 +1,6 @@
 ##### Menu
 BA_comming_soon = {
+	optimize_memory
 	custom_tooltip = {
 		fail_text = BA_coming_soon
 		always = no
@@ -7,6 +8,7 @@ BA_comming_soon = {
 }
 
 BA_civic_SI_add_trigger = {
+	optimize_memory
 	NOR = {
 		has_civic = civic_BA_Omnia_Vanitas
 		has_civic = civic_SI_Abydos
@@ -16,8 +18,17 @@ BA_civic_SI_add_trigger = {
 	}
 }
 
+BA_use_vanilla_normal_council = {
+	optimize_memory
+	NOR = {
+		is_gestalt = yes
+		has_authority = auth_kivotos
+	}
+}
+
 ##### Pop Jobs
 kivotos_pop_amount = {
+	optimize_memory
 	count_owned_pop_amount = {
 		limit = {
 			has_trait = trait_halo_unreleased
@@ -30,6 +41,7 @@ kivotos_pop_amount = {
 }
 
 is_kivotos = {
+	optimize_memory
 	OR = {
 		is_species_class = Schale
 		is_species_class = MACHINE
@@ -46,9 +58,9 @@ is_kivotos = {
 # 		}
 # 	}
 # }
-
 ##### Leaders
 BA_has_halo_organic = {
+	optimize_memory
 	# species scope
 	NOT = {
 		is_same_value = event_target:BA_leader_species
@@ -64,6 +76,7 @@ BA_has_halo_organic = {
 
 ### AL-1S (leader scope)
 Aris_is_scientist = {
+	optimize_memory
 	any_owned_leader = {
 		has_leader_flag = BA_Real_Aris
 		leader_class = scientist
@@ -71,6 +84,7 @@ Aris_is_scientist = {
 }
 
 Aris_is_official = {
+	optimize_memory
 	any_owned_leader = {
 		has_leader_flag = BA_Real_Aris
 		leader_class = official
@@ -78,6 +92,7 @@ Aris_is_official = {
 }
 
 Aris_is_commander = {
+	optimize_memory
 	any_owned_leader = {
 		has_leader_flag = BA_Real_Aris
 		leader_class = commander
@@ -86,6 +101,7 @@ Aris_is_commander = {
 
 ##### Buildings
 BA_no_exclude_building = {
+	optimize_memory
 	custom_tooltip = {
 		fail_text = building_BA_ringworld_excluded
 		NOR = {
@@ -98,6 +114,7 @@ BA_no_exclude_building = {
 ##### Megastructures
 #system scope
 has_no_BA_Industry_megastructure = {
+	optimize_memory
 	NOT = {
 		any_system_megastructure = {
 			#TODO:新巨构需要在这里添加
@@ -114,6 +131,7 @@ has_no_BA_Industry_megastructure = {
 
 #planet scope
 BA_has_megastucture = {
+	optimize_memory
 	OR = {
 		has_any_megastructure = yes
 		has_planet_flag = megastructure
@@ -126,6 +144,7 @@ BA_has_megastucture = {
 
 ##### Origin
 BA_origin_finished = {
+	optimize_memory
 	if = {
 		limit = {
 			OR = {
@@ -147,9 +166,9 @@ BA_origin_finished = {
 	}
 }
 
-
 ##### Project
 Project_Cradle_planet_trigger = {
+	optimize_memory
 	solar_system = {
 		is_capital_system = yes
 	}
@@ -158,6 +177,7 @@ Project_Cradle_planet_trigger = {
 
 ##### Club
 BA_has_any_club = {
+	optimize_memory
 	# TODO:随社团更新
 	OR = {
 		has_country_flag = BA_Game_development_department
@@ -173,6 +193,7 @@ BA_has_any_club = {
 }
 
 BA_set_random_club = {
+	optimize_memory
 	# TODO:随社团更新
 	NOR = {
 		has_country_flag = BA_club_set_Game_development_department
@@ -188,6 +209,7 @@ BA_set_random_club = {
 }
 
 BA_has_any_club_building = {
+	optimize_memory
 	# TODO:随社团更新
 	OR = {
 		has_active_building = building_BA_Game_development_department
@@ -202,17 +224,10 @@ BA_has_any_club_building = {
 	}
 }
 
-BA_Foreclosure_task_force_lv_limit = {
-	# check_variable = {
-	# 	which = Foreclosure_task_force_func_lv
-	#
-	# }
-}
-
-
 ##### Planet Killer Triggers
 #planet scope
 can_destroy_planet_with_Sweepers = {
+	optimize_memory
 	custom_tooltip = {
 		fail_text = What_are_you_doing
 		NOR = {
@@ -235,6 +250,7 @@ can_destroy_planet_with_Sweepers = {
 ##### Fallen Empire
 #country scope
 is_BA_fallen_empire = {
+	optimize_memory
 	OR = {
 		is_country_type = Moe_Xcom
 		is_country_type = Moe_Xcom_awakened
@@ -243,6 +259,7 @@ is_BA_fallen_empire = {
 
 ##### UI
 BA_SI_cooldown_trigger = {
+	optimize_memory
 	custom_tooltip = {
 		fail_text = country_idea_cd
 		NOT = {
@@ -252,6 +269,7 @@ BA_SI_cooldown_trigger = {
 }
 
 BA_SI_time_limit_trigger = {
+	optimize_memory
 	custom_tooltip = {
 		fail_text = country_idea_cost
 		check_variable = {
@@ -262,6 +280,7 @@ BA_SI_time_limit_trigger = {
 }
 
 BA_SI_main_unlock_trigger = {
+	optimize_memory
 	custom_tooltip = {
 		fail_text = BA_need_civic
 		OR = {
@@ -283,6 +302,7 @@ BA_SI_main_unlock_trigger = {
 }
 
 BA_SI_sub_unlock_trigger = {
+	optimize_memory
 	custom_tooltip = {
 		fail_text = BA_need_other_idea
 		from = {
@@ -297,10 +317,12 @@ BA_SI_sub_unlock_trigger = {
 }
 
 BA_SI_Abydos_route = {
+	optimize_memory
 	has_technology = tech_BA_SI_Abydos_G01
 }
 
 BA_SI_Gehenna_route = {
+	optimize_memory
 	OR = {
 		has_technology = tech_BA_SI_Gehenna_A01
 		has_technology = tech_BA_SI_Gehenna_A02
@@ -312,10 +334,12 @@ BA_SI_Gehenna_route = {
 }
 
 BA_SI_Millennium_route = {
+	optimize_memory
 	has_technology = tech_BA_SI_Millennium_G01
 }
 
 BA_SI_Trinity_route = {
+	optimize_memory
 	OR = {
 		has_technology = tech_BA_SI_Trinity_A01
 		has_technology = tech_BA_SI_Trinity_B01

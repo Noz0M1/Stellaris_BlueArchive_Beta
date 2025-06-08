@@ -476,7 +476,7 @@ building_BA_keystone_foundry_1 = {
 }
 
 building_BA_keystone_foundry_2 = {
-	base_buildtime = 480
+	base_buildtime = 720
 	can_build = no
 	position_priority = 154
 	category = manufacturing
@@ -524,7 +524,7 @@ building_BA_keystone_foundry_2 = {
 }
 
 building_BA_keystone_foundry_3 = {
-	base_buildtime = 480
+	base_buildtime = 960
 	can_build = no
 	category = manufacturing
 	base_cap_amount = 3
@@ -567,8 +567,56 @@ building_BA_keystone_foundry_3 = {
 	}
 }
 
+building_BA_keystone_foundry_X = {
+	base_buildtime = 1080
+	can_build = no
+	category = manufacturing
+	base_cap_amount = 1
+	building_sets = {
+		industrial
+		foundry
+		BA_foundry
+	}
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+		has_fully_upgraded_capital = yes
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_keystone_foundry_add = 500
+			pop_BA_keystone_foundry_bonus_workforce_mult = 0.6
+			BA_keystone_foundry_energy_upkeep_add = 10
+			BA_industry_pop_physics_research_produces_add = 12
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			sr_keystone = 300
+			alloys = 1000
+		}
+		upkeep = {
+			energy = 15
+		}
+	}
+	prerequisites = {
+		tech_BA_Kivotos_chronicle_stage4
+	}
+}
+
 # 消费品
 building_BA_pyroxenes_factory_1 = {
+
 	base_buildtime = 360
 	position_priority = 154
 	category = manufacturing
@@ -615,7 +663,7 @@ building_BA_pyroxenes_factory_1 = {
 }
 
 building_BA_pyroxenes_factory_2 = {
-	base_buildtime = 480
+	base_buildtime = 720
 	can_build = no
 	position_priority = 154
 	category = manufacturing
@@ -660,7 +708,7 @@ building_BA_pyroxenes_factory_2 = {
 }
 
 building_BA_pyroxenes_factory_3 = {
-	base_buildtime = 480
+	base_buildtime = 960
 	can_build = no
 	category = manufacturing
 	base_cap_amount = 3
@@ -686,7 +734,7 @@ building_BA_pyroxenes_factory_3 = {
 		}
 		modifier = {
 			job_BA_pyroxenes_artisan_add = 500
-			pop_BA_pyroxenes_artisan_bonus_workforce_mult = 5
+			pop_BA_pyroxenes_artisan_bonus_workforce_mult = 0.2
 		}
 	}
 	resources = {
@@ -701,7 +749,55 @@ building_BA_pyroxenes_factory_3 = {
 	prerequisites = {
 
 	}
+	upgrades = { building_BA_pyroxenes_factory_X }
 
+}
+
+building_BA_pyroxenes_factory_X = {
+	base_buildtime = 1080
+	can_build = no
+	category = manufacturing
+	base_cap_amount = 1
+	building_sets = {
+		industrial
+		foundry
+		BA_foundry
+	}
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+		has_fully_upgraded_capital = yes
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+			job_BA_pyroxenes_artisan_add = 500
+			pop_BA_pyroxenes_artisan_bonus_workforce_mult = 0.6
+			BA_pyroxenes_artisan_energy_upkeep_add = 10
+			BA_industry_pop_physics_research_produces_add = 12
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			sr_keystone = 300
+			alloys = 1000
+		}
+		upkeep = {
+			energy = 15
+		}
+	}
+	prerequisites = {
+		tech_BA_Kivotos_chronicle_stage4
+	}
 }
 
 ########## 特产 ##########

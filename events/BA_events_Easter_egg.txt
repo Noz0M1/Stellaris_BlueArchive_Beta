@@ -16,7 +16,7 @@ country_event = {
 					has_country_flag = EasterEgg_MiAzusa
 				}
 				any_owned_leader = {
-					has_skill >= 5
+					has_total_skill >= 5
 					OR = {
 						has_leader_flag = leader_BA_011
 						has_leader_flag = leader_BA_019
@@ -68,7 +68,7 @@ country_event = {
 		set_country_flag = EasterEgg_MiAzusa
 		random_owned_leader = {
 			limit = {
-				has_skill >= 5
+				has_total_skill >= 5
 				OR = {
 					has_leader_flag = leader_BA_011
 					has_leader_flag = leader_BA_019
@@ -283,127 +283,127 @@ country_event = {
 
 ######     其他彩蛋     ######
 ### 超天酱
-#fleet_event = {
-#	id = BA_Easter_egg.8001
-#	title = BA_Easter_egg_Angel_arc_site_title_RAID01
-#	picture = GFX_BA_Ruined_street
-#	show_sound = event_collapsing_ruins
-#	archaeology = yes
-#	is_triggered_only = yes
-#	immediate = {
-#		from = {
-#			set_site_progress_locked = yes
-#		}
-#	}
-#	after = {
-#		from = {
-#			set_site_progress_locked = no
-#		}
-#	}
-#	desc = {
-#		text = BA_Easter_egg_Angel_arc_site_desc_RAID01
-#	}
-#	option = {
-#		name = BA_Easter_egg_Angel_arc_site_option_RAID01
-#	}
-#}
-#
-#fleet_event = {
-#	id = BA_Easter_egg.8002
-#	title = BA_Easter_egg_Angel_arc_site_title_RAID02
-#	picture = GFX_BA_Ruined_street
-#	show_sound = event_collapsing_ruins
-#	archaeology = yes
-#	is_triggered_only = yes
-#	immediate = {
-#		from = {
-#			set_site_progress_locked = yes
-#		}
-#	}
-#	after = {
-#		from = {
-#			set_site_progress_locked = no
-#		}
-#	}
-#	desc = {
-#		text = BA_Easter_egg_Angel_arc_site_desc_RAID02
-#	}
-#	option = {
-#		name = BA_Easter_egg_Angel_arc_site_option_RAID02
-#	}
-#}
-#
-#fleet_event = {
-#	id = BA_Easter_egg.8003
-#	title = BA_Easter_egg_Angel_arc_site_title_RAID03
-#	picture = GFX_BA_Ruined_street
-#	show_sound = event_collapsing_ruins
-#	archaeology = yes
-#	is_triggered_only = yes
-#	immediate = {
-#		from = {
-#			set_site_progress_locked = yes
-#		}
-#	}
-#	after = {
-#		from = {
-#			set_site_progress_locked = no
-#		}
-#	}
-#	desc = {
-#		text = BA_Easter_egg_Angel_arc_site_desc_RAID03
-#	}
-#	option = {
-#		name = BA_Easter_egg_Angel_arc_site_option_RAID03
-#	}
-#}
-#
-#fleet_event = {
-#	id = BA_Easter_egg.8001
-#	title = BA_Easter_egg_Angel_arc_site_title_RAID04
-#	picture = GFX_BA_Ruined_street
-#	show_sound = event_collapsing_ruins
-#	archaeology = yes
-#	is_triggered_only = yes
-#	immediate = {
-#		from = {
-#			set_site_progress_locked = yes
-#		}
-#	}
-#	after = {
-#		from = {
-#			set_site_progress_locked = no
-#		}
-#	}
-#	desc = {
-#		text = BA_Easter_egg_Angel_arc_site_desc_RAID04
-#	}
-#	option = {
-#		name = BA_Easter_egg_Angel_arc_site_option_RAID04
-#	}
-#}
-#
-#fleet_event = {
-#	id = BA_Easter_egg.8001
-#	title = BA_Easter_egg_Angel_arc_site_title_RAID05
-#	picture = GFX_BA_Ruined_street
-#	show_sound = event_collapsing_ruins
-#	archaeology = yes
-#	is_triggered_only = yes
-#	immediate = {
-#		from = {
-#			set_site_progress_locked = yes
-#		}
-#	}
-#	after = {
-#		from = {
-#			set_site_progress_locked = no
-#		}
-#	}
-#	desc = {
-#		text = BA_Easter_egg_Angel_arc_site_desc_RAID05
-#	}
-#	option = {
-#		name = BA_Easter_egg_Angel_arc_site_option_RAID05
-#	}
-#}
+fleet_event = {
+	id = BA_Easter_egg.8001
+	title = BA_Easter_egg_Angel_arc_site_title_RAID01
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = BA_Easter_egg_Angel_arc_site_desc_RAID01
+	}
+	option = {
+		name = BA_Easter_egg_Angel_arc_site_option_RAID01
+	}
+}
+
+fleet_event = {
+	id = BA_Easter_egg.8002
+	title = BA_Easter_egg_Angel_arc_site_title_RAID02
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = BA_Easter_egg_Angel_arc_site_desc_RAID02
+	}
+	option = {
+		name = BA_Easter_egg_Angel_arc_site_option_RAID02
+	}
+}
+
+fleet_event = {
+	id = BA_Easter_egg.8003
+	title = BA_Easter_egg_Angel_arc_site_title_RAID03
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = BA_Easter_egg_Angel_arc_site_desc_RAID03
+	}
+	option = {
+		name = BA_Easter_egg_Angel_arc_site_option_RAID03
+	}
+}
+
+fleet_event = {
+	id = BA_Easter_egg.8004
+	title = BA_Easter_egg_Angel_arc_site_title_RAID04
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = BA_Easter_egg_Angel_arc_site_desc_RAID04
+	}
+	option = {
+		name = BA_Easter_egg_Angel_arc_site_option_RAID04
+	}
+}
+
+fleet_event = {
+	id = BA_Easter_egg.8005
+	title = BA_Easter_egg_Angel_arc_site_title_RAID05
+	picture = GFX_BA_Ruined_street
+	show_sound = event_collapsing_ruins
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	after = {
+		from = {
+			set_site_progress_locked = no
+		}
+	}
+	desc = {
+		text = BA_Easter_egg_Angel_arc_site_desc_RAID05
+	}
+	option = {
+		name = BA_Easter_egg_Angel_arc_site_option_RAID05
+	}
+}

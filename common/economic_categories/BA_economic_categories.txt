@@ -134,6 +134,20 @@ BA_club_pop = {
 	modifier_category = pop_group
 }
 
+##### 工业技师
+BA_industry_pop = {
+	parent = planet_jobs_specialist
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop_group
+}
+
 ##### 灵活就业者
 BA_flex_pop = {
 	icon = job_BA_flexible_workers
@@ -164,15 +178,6 @@ BA_auto_pop = {
 	modifier_category = pop_group
 }
 
-####	BA工业岗
-BA_industryjobs = {
-	parent = planet_jobs_specialist
-	generate_mult_modifiers = {
-		produces
-		upkeep
-	}
-	modifier_category = pop_group
-}
 
 #####	青辉石工匠
 BA_pyroxenes_artisan = {
@@ -187,7 +192,7 @@ BA_pyroxenes_artisan = {
 		upkeep
 	}
 	triggered_produces_modifier = {
-		key = BA_industryjobs
+		key = BA_industry_pop
 		modifier_types = {
 			mult
 		}
@@ -197,7 +202,7 @@ BA_pyroxenes_artisan = {
 		use_parent_icon = yes
 	}
 	triggered_upkeep_modifier = {
-		key = BA_industryjobs
+		key = BA_industry_pop
 		modifier_types = {
 			mult
 		}
@@ -222,7 +227,7 @@ BA_keystone_foundry = {
 		upkeep
 	}
 	triggered_produces_modifier = {
-		key = BA_industryjobs
+		key = BA_industry_pop
 		modifier_types = {
 			mult
 		}
@@ -232,7 +237,7 @@ BA_keystone_foundry = {
 		use_parent_icon = yes
 	}
 	triggered_upkeep_modifier = {
-		key = BA_industryjobs
+		key = BA_industry_pop
 		modifier_types = {
 			mult
 		}

@@ -1,5 +1,6 @@
 ####   ！此文件涉及原版修改
 is_organic_species = {
+	optimize_memory
 	species = {
 		OR = {
 			is_archetype = BIOLOGICAL			# original trigger did not include pre-sapient classes
@@ -10,6 +11,7 @@ is_organic_species = {
 }
 
 has_food_upkeep = {
+	optimize_memory
 	species = {
 		OR = {
 			is_archetype = BIOLOGICAL
@@ -18,18 +20,6 @@ has_food_upkeep = {
 	}
 	NOT = {
 		has_trait = trait_voidling
-	}
-}
-
-colonizable_planet = {
-	OR = {
-		is_planet_class = pc_city
-		is_planet_class = pc_relic
-		is_planet_class = pc_nuked
-		is_planet_class = pc_hive
-		is_planet_class = pc_machine
-		habitable_structure = yes
-		habitable_planet = yes
 	}
 }
 
@@ -48,6 +38,7 @@ habitable_planet = {
 }
 
 uses_habitat_capitals = {
+	optimize_memory
 	OR = {
 		uses_district_set = habitat
 		uses_district_set = BA_auto_habitat
@@ -55,6 +46,10 @@ uses_habitat_capitals = {
 }
 
 has_upgraded_capital = {
+	optimize_memory
+	hidden_trigger = {
+		exists = owner
+	}
 	if = {
 		limit = {
 			has_modifier = resort_colony
@@ -91,6 +86,7 @@ has_upgraded_capital = {
 			OR = {
 				has_building = building_hab_capital
 				has_building = building_hab_major_capital
+				has_building = building_hab_system_capital
 				has_building = building_imperial_capital
 				has_building = building_imperial_machine_capital
 				has_building = building_imperial_hive_capital
@@ -100,9 +96,26 @@ has_upgraded_capital = {
 	else_if = {
 		limit = {
 			owner = {
+				is_wilderness_empire = yes
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_building_wilderness_capital"
+			OR = {
+				has_building = building_capital_wilderness
+				has_building = building_major_capital_wilderness
+				has_building = building_system_capital_wilderness
+				has_building = building_imperial_capital_wilderness
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			owner = {
 				is_hive_empire = yes
 			}
 		}
+		# excludes Wilderness, above
 		custom_tooltip = {
 			fail_text = "requires_building_hive_capital"
 			OR = {
@@ -138,12 +151,5 @@ has_upgraded_capital = {
 				has_building = building_imperial_capital
 			}
 		}
-	}
-}
-
-use_vanilla_normal_council = {
-	NOR = {
-		is_gestalt = yes
-		has_authority = auth_kivotos
 	}
 }

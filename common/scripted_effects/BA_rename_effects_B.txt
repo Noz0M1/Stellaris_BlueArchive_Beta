@@ -1,6 +1,7 @@
 ##### 系统初始化
 #为所有领袖施加检测印记
 BA_set_rename_flag = {
+	optimize_memory
 	every_owned_leader = {
 		limit = {
 			species = {
@@ -94,6 +95,7 @@ BA_iterate_rename_flag = {
 
 #生成事件领袖时，为重复的领袖更名 leader
 BA_event_leader_replace = {
+	optimize_memory
 	set_leader_flag = $Leader_flag$
 	owner = {
 		every_owned_leader = {
@@ -127,6 +129,7 @@ BA_event_leader_replace = {
 ##### 领袖重命名与立绘
 #按设置执行重命名操作 leader
 BA_rename_leader = {
+	optimize_memory
 	set_leader_flag = BA_renamed
 	if = {
 		limit = {
@@ -947,6 +950,7 @@ BA_set_name = {
 
 #特使专用处理
 BA_rename_envoy = {
+	optimize_memory
 	change_leader_portrait = BA_carefree
 	set_name = BA_envoy
 }
@@ -2910,8 +2914,18 @@ BA_change_skin_trait = {
 		limit = {
 			has_leader_flag = leader_BA_084
 		}
-		add_trait = {
-			trait = leader_special_084
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_CL
+			}
+			add_trait = {
+				trait = leader_special_084_CL
+			}
+		}
+		else = {
+			add_trait = {
+				trait = leader_special_084
+			}
 		}
 	}
 	else_if = {
@@ -2954,8 +2968,18 @@ BA_change_skin_trait = {
 		limit = {
 			has_leader_flag = leader_BA_087
 		}
-		add_trait = {
-			trait = leader_special_087
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_SP
+			}
+			add_trait = {
+				trait = leader_special_087_SP
+			}
+		}
+		else = {
+			add_trait = {
+				trait = leader_special_087
+			}
 		}
 	}
 	else_if = {
@@ -2994,8 +3018,26 @@ BA_change_skin_trait = {
 		limit = {
 			has_leader_flag = leader_BA_092
 		}
-		add_trait = {
-			trait = leader_special_092
+		if = {
+			limit = {
+				has_leader_flag = BA_skin_NVG
+			}
+			add_trait = {
+				trait = leader_special_092_NVG
+			}
+		}
+		else_if = {
+			limit = {
+				has_leader_flag = BA_skin_SPW
+			}
+			add_trait = {
+				trait = leader_special_092_SPW
+			}
+		}
+		else = {
+			add_trait = {
+				trait = leader_special_092
+			}
 		}
 	}
 	else_if = {
