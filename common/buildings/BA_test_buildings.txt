@@ -302,7 +302,7 @@ building_BA_minerals_2 = {
 		modifier = {
 			job_BA_Kivotos_miner_add = 400
 			pop_BA_Kivotos_miner_bonus_workforce_mult = 0.1
-			planet_miners_produces_mult =0.2
+			planet_miners_produces_mult = 0.2
 			planet_miners_minerals_produces_add = 2
 		}
 	}
@@ -408,7 +408,7 @@ building_BA_food_2 = {
 		modifier = {
 			job_BA_caterer_add = 400
 			pop_BA_caterer_bonus_workforce_mult = 0.1
-			planet_farmers_produces_mult = 0.20
+			planet_farmers_produces_mult = 0.2
 			planet_farmers_food_produces_add = 2
 		}
 	}
@@ -445,7 +445,8 @@ building_BA_keystone_foundry_1 = {
 	allow = {
 	}
 	triggered_desc = {
-		trigger = {  }
+		trigger = {
+		}
 		text = job_BA_keystone_foundry_tip_mode1
 	}
 	triggered_planet_modifier = {
@@ -520,7 +521,6 @@ building_BA_keystone_foundry_2 = {
 	upgrades = {
 		building_BA_keystone_foundry_3
 	}
-
 }
 
 building_BA_keystone_foundry_3 = {
@@ -563,7 +563,6 @@ building_BA_keystone_foundry_3 = {
 		}
 	}
 	prerequisites = {
-
 	}
 }
 
@@ -616,7 +615,6 @@ building_BA_keystone_foundry_X = {
 
 # 消费品
 building_BA_pyroxenes_factory_1 = {
-
 	base_buildtime = 360
 	position_priority = 154
 	category = manufacturing
@@ -747,10 +745,10 @@ building_BA_pyroxenes_factory_3 = {
 		}
 	}
 	prerequisites = {
-
 	}
-	upgrades = { building_BA_pyroxenes_factory_X }
-
+	upgrades = {
+		building_BA_pyroxenes_factory_X
+	}
 }
 
 building_BA_pyroxenes_factory_X = {
@@ -801,11 +799,8 @@ building_BA_pyroxenes_factory_X = {
 }
 
 ########## 特产 ##########
-
-
 ########## 科研和凝聚力 ##########
 building_BA_club_room = {
-	#icon = building_augmentation_center
 	base_buildtime = 180
 	category = research
 	building_sets = {
@@ -819,10 +814,7 @@ building_BA_club_room = {
 		owner = {
 			has_authority = auth_kivotos
 		}
-		NOR = {
-			is_planet_class = pc_BA_auto_ringworld
-			is_planet_class = pc_BA_auto_habitat
-		}
+		is_artificial = no
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -876,10 +868,7 @@ building_BA_club_mansion = {
 		owner = {
 			has_authority = auth_kivotos
 		}
-		NOR = {
-			is_planet_class = pc_BA_auto_ringworld
-			is_planet_class = pc_BA_auto_habitat
-		}
+		is_artificial = no
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -901,6 +890,7 @@ building_BA_club_mansion = {
 		}
 		modifier = {
 			job_BA_club_members_add = 480
+			pop_BA_club_members_bonus_workforce_mult = 0.1
 		}
 	}
 	resources = {

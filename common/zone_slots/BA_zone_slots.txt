@@ -1,5 +1,9 @@
 # inline_script = zones/allowed_zones_urban
 slot_BA_municipality = {
+	included_zone_sets = {
+		BA_municipality
+		BA_support
+	}
 	include = {
 		zone_BA_support
 		zone_BA_municipality_federal
@@ -29,6 +33,11 @@ slot_BA_municipality = {
 }
 
 slot_BA_dome = {
+	included_zone_sets = {
+		BA_dome
+		BA_support
+	}
+
 	include = {
 		zone_BA_support
 		zone_BA_grand_dome
@@ -57,6 +66,10 @@ slot_BA_dome = {
 }
 
 slot_BA_urban_factory = {
+	included_zone_sets = {
+		BA_urban_factory
+		BA_support
+	}
 	include = {
 		zone_BA_support
 		zone_BA_mixed_industry
@@ -69,6 +82,10 @@ slot_BA_urban_factory = {
 }
 
 slot_BA_suburbs = {
+	included_zone_sets = {
+		BA_suburbs
+		BA_support
+	}
 	include = {
 		zone_BA_grand_suburbs
 		zone_BA_energy_suburbs

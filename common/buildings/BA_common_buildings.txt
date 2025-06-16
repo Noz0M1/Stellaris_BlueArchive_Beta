@@ -5,13 +5,11 @@ building_BA_starlink_1 = {
 	base_buildtime = 360
 	category = pop_assembly
 	base_cap_amount = 1
-
 	building_sets = {
 		government
 		urban
 		ba_pop_assembly
 	}
-
 	potential = {
 		exists = owner
 		owner = {
@@ -52,13 +50,11 @@ building_BA_starlink_2 = {
 	can_build = no
 	base_buildtime = 360
 	category = pop_assembly
-
 	building_sets = {
 		government
 		urban
 		ba_pop_assembly
 	}
-
 	potential = {
 		exists = owner
 		owner = {
@@ -94,11 +90,7 @@ building_BA_starlink_2 = {
 }
 
 ######   稳定度   ######
-
 #############   基础生产   #############
-
-
-
 #############   特殊资源   #############
 ######   青辉石   ######
 # 青辉石生产员+1
@@ -106,14 +98,12 @@ building_BA_pyroxenes_1 = {
 	position_priority = 200
 	base_buildtime = 360
 	category = manufacturing
-
 	building_sets = {
 		industrial
 		factory
 		foundry
 		ba_specialFactory
 	}
-
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -157,14 +147,12 @@ building_BA_pyroxenes_2 = {
 	base_buildtime = 480
 	can_build = no
 	category = manufacturing
-
 	building_sets = {
 		industrial
 		factory
 		foundry
 		ba_specialFactory
 	}
-
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -206,14 +194,12 @@ building_BA_keystone_1 = {
 	position_priority = 202
 	base_buildtime = 360
 	category = manufacturing
-
 	building_sets = {
 		industrial
 		factory
 		foundry
 		ba_specialFactory
 	}
-
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -235,7 +221,7 @@ building_BA_keystone_1 = {
 		}
 		upkeep = {
 			energy = 8
-			sr_pyroxenes = 1
+			minerals = 6
 		}
 		produces = {
 			sr_keystone = 2
@@ -245,7 +231,7 @@ building_BA_keystone_1 = {
 				colony_type = col_auto_building
 			}
 			energy = 1.6
-			sr_pyroxenes = 0.2
+			minerals = 1.2
 		}
 		produces = {
 			trigger = {
@@ -269,14 +255,12 @@ building_BA_keystone_2 = {
 	base_buildtime = 480
 	can_build = no
 	category = manufacturing
-
 	building_sets = {
 		industrial
 		factory
 		foundry
 		ba_specialFactory
 	}
-
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -301,11 +285,11 @@ building_BA_keystone_2 = {
 		cost = {
 			minerals = 1200
 			sr_keystone = 30
-			sr_eligma = 1
+			sr_eligma = 5
 		}
 		upkeep = {
 			energy = 12
-			sr_pyroxenes = 3
+			minerals = 18
 		}
 		produces = {
 			sr_keystone = 6
@@ -315,7 +299,7 @@ building_BA_keystone_2 = {
 				colony_type = col_auto_building
 			}
 			energy = 2.4
-			sr_pyroxenes = 0.6
+			minerals = 3.6
 		}
 		produces = {
 			trigger = {
@@ -335,14 +319,12 @@ building_BA_dark_matter_concentrator_1 = {
 	position_priority = 300
 	base_buildtime = 480
 	category = manufacturing
-
 	building_sets = {
 		industrial
 		factory
 		foundry
 		ba_specialFactory
 	}
-
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -386,14 +368,12 @@ building_BA_rare_center_1 = {
 	position_priority = 302
 	base_buildtime = 360
 	category = manufacturing
-
 	building_sets = {
 		industrial
 		factory
 		foundry
 		ba_specialFactory
 	}
-
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
@@ -443,12 +423,10 @@ building_BA_mixed_ruins_lab = {
 	can_demolish = no
 	can_be_ruined = no
 	category = government
-
 	building_sets = {
 		government
 		BA_special
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -487,12 +465,10 @@ building_BA_fade_Sanctum_center = {
 	can_be_disabled = no
 	position_priority = 0
 	category = government
-
 	building_sets = {
 		government
 		BA_special
 	}
-
 	potential = {
 		always = no
 	}
@@ -512,14 +488,12 @@ building_BA_SI_Millennium_G10 = {
 	position_priority = 148
 	base_buildtime = 360
 	category = manufacturing
-
 	building_sets = {
 		government
 		research
 		physics
 		BA_special
 	}
-
 	base_cap_amount = 1
 	potential = {
 		owner = {
@@ -528,6 +502,9 @@ building_BA_SI_Millennium_G10 = {
 	}
 	allow = {
 		has_upgraded_capital = yes
+	}
+	triggered_desc = {
+		text = building_BA_SI_Millennium_G10_tip
 	}
 	triggered_planet_modifier = {
 		potential = {

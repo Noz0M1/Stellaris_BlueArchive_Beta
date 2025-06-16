@@ -25,16 +25,12 @@ zone_BA_support = {
 			exists = owner
 		}
 	}
+	zone_sets = {
+		BA_support
+	}
+
 	included_building_sets = {
-		industrial
-		foundry
-		factory
-		automation
-		research
-		unity
-		fortress
-		trade
-		entertainment
+		all
 	}
 	planet_modifier = {
 		zone_building_slots_add = 3
@@ -69,16 +65,22 @@ zone_BA_municipality_federal = {
 		}
 		job_BA_Kivotos_staff_add = 150
 	}
+	zone_sets = {
+		BA_municipality
+
+	}
 	included_building_sets = {
-		industrial
-		foundry
-		factory
-		automation
-		research
-		unity
-		fortress
-		trade
-		entertainment
+		all
+	}
+	excluded_building_sets = {
+		generator
+		BA_generator
+		mining
+		BA_mining
+		farming
+		BA_farming
+		knights
+		betharian
 	}
 	planet_modifier = {
 		zone_building_slots_add = 3
@@ -123,15 +125,22 @@ zone_BA_municipality_club = {
 		}
 		planet_stability_add = -3
 	}
+	zone_sets = {
+		BA_municipality
+	}
+
 	included_building_sets = {
-		automation
-		research
-		unity
-		BA_research
-		BA_unity
-		fortress
-		trade
-		entertainment
+		all
+	}
+	excluded_building_sets = {
+		generator
+		BA_generator
+		mining
+		BA_mining
+		farming
+		BA_farming
+		knights
+		betharian
 	}
 	planet_modifier = {
 		zone_building_slots_add = 3
@@ -161,17 +170,24 @@ zone_BA_grand_dome = {
 		planet_housing_add = 800
 		job_BA_Kivotos_staff_add = 300
 	}
-	included_building_sets = {
-		industrial
-		foundry
-		factory
-		automation
-		research
-		unity
-		fortress
-		trade
-		entertainment
+	zone_sets = {
+		BA_dome
 	}
+	included_building_sets = {
+		all
+	}
+	excluded_building_sets = {
+		generator
+		BA_generator
+		mining
+		BA_mining
+		farming
+		BA_farming
+		knights
+		betharian
+	}
+
+
 	planet_modifier = {
 		zone_building_slots_add = 3
 	}
@@ -200,17 +216,23 @@ zone_BA_flexible_center = {
 		job_BA_Kivotos_staff_add = -200
 		job_BA_flexible_workers_add = 500
 	}
-	included_building_sets = {
-		industrial
-		foundry
-		factory
-		automation
-		research
-		unity
-		fortress
-		trade
-		entertainment
+	zone_sets = {
+		BA_dome
 	}
+	included_building_sets = {
+		all
+	}
+	excluded_building_sets = {
+		generator
+		BA_generator
+		mining
+		BA_mining
+		farming
+		BA_farming
+		knights
+		betharian
+	}
+
 	planet_modifier = {
 		zone_building_slots_add = 3
 	}
@@ -244,6 +266,9 @@ zone_BA_mixed_industry = {
 			job_BA_keystone_foundry_add = 100
 			job_BA_pyroxenes_artisan_add = 100
 		}
+	}
+	zone_sets = {
+		BA_urban_factory
 	}
 	included_building_sets = {
 		industrial
@@ -290,6 +315,9 @@ zone_BA_foundry = {
 			job_BA_pyroxenes_artisan_add = -100
 		}
 	}
+	zone_sets = {
+		BA_urban_factory
+	}
 	included_building_sets = {
 		industrial
 		foundry
@@ -329,6 +357,9 @@ zone_BA_factory = {
 			job_BA_pyroxenes_artisan_add = 300
 		}
 	}
+	zone_sets = {
+		BA_urban_factory
+	}
 	included_building_sets = {
 		industrial
 		factory
@@ -366,6 +397,9 @@ zone_BA_grand_suburbs = {
 		job_BA_dont_be_crazy_here_add = 50
 		job_BA_Kivotos_miner_add = 50
 		job_BA_caterer_add = 50
+	}
+	zone_sets = {
+		BA_suburbs
 	}
 	included_building_sets = {
 		generator
@@ -411,6 +445,9 @@ zone_BA_energy_suburbs = {
 		job_BA_Kivotos_miner_add = -100
 		job_BA_caterer_add = -100
 	}
+	zone_sets = {
+		BA_suburbs
+	}
 	included_building_sets = {
 		generator
 		BA_generator
@@ -448,6 +485,9 @@ zone_BA_mineral_suburbs = {
 		job_BA_Kivotos_miner_add = 200
 		job_BA_caterer_add = -100
 	}
+	zone_sets = {
+		BA_suburbs
+	}
 	included_building_sets = {
 		mining
 		BA_mining
@@ -484,6 +524,9 @@ zone_BA_food_suburbs = {
 		job_BA_dont_be_crazy_here_add = -100
 		job_BA_Kivotos_miner_add = -100
 		job_BA_caterer_add = 200
+	}
+	zone_sets = {
+		BA_suburbs
 	}
 	included_building_sets = {
 		farming
