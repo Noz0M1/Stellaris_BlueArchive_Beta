@@ -14,14 +14,23 @@ zone_BA_auto_goverment = {
 	include = {
 		all
 	}
+	district_planet_modifier = {
+		planet_housing_add = 600
+	}
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_automated_workforce = 1.0
+	}
 	### 任意类型建筑均可用 ###
 	excluded_building_sets = {
 	}
 }
 
-########## 城市，凝聚力 ###########
+########## 城市，凝聚力 科研 ###########
 zone_BA_auto_unity = {
-	icon = GFX_diplomatic_weight_large
+	icon = GFX_job_bureaucrat
 	base_buildtime = 180
 	### 预留标记 ###
 	potential = {
@@ -29,27 +38,22 @@ zone_BA_auto_unity = {
 	unlock = {
 	}
 	### 预留标记 ###
-	resources = {
+	planet_modifier = {
+		zone_building_slots_add = 3
 	}
-	max_buildings = 3
-	include = {
-		all
+	triggered_district_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		job_BA_club_members_add = 200
+		planet_housing_add = -200
 	}
-	### 任意类型建筑均可用 ###
-	excluded_building_sets = {
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_automated_workforce = 1.0
 	}
-}
-
-########## 城市，科研 ##########
-zone_BA_auto_science = {
-	icon = GFX_diplomatic_weight_large
-	base_buildtime = 180
-	### 预留标记 ###
-	potential = {
-	}
-	unlock = {
-	}
-	### 预留标记 ###
 	resources = {
 	}
 	max_buildings = 3
@@ -63,7 +67,7 @@ zone_BA_auto_science = {
 
 ########## 城市，贸易 ##########
 zone_BA_auto_commercial = {
-	icon = GFX_diplomatic_weight_large
+	icon = GFX_resource_trade_large
 	base_buildtime = 180
 	### 预留标记 ###
 	potential = {
@@ -71,6 +75,22 @@ zone_BA_auto_commercial = {
 	unlock = {
 	}
 	### 预留标记 ###
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		job_BA_Kivotos_staff_add = 200
+		planet_housing_add = -200
+	}
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_automated_workforce = 1.0
+	}
 	resources = {
 	}
 	max_buildings = 3
@@ -94,7 +114,21 @@ zone_BA_auto_refinery01 = {
 	### 预留标记 ###
 	resources = {
 	}
-	max_buildings = 3
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		job_BA_pyroxenes_maker_add = 400
+	}
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_automated_workforce = 1.0
+	}
 	include = {
 		all
 	}
@@ -116,10 +150,14 @@ zone_BA_auto_refinery02 = {
 	resources = {
 	}
 	### 预留标记 ###
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
 	triggered_district_planet_modifier = {
 		potential = {
-			exists = owner
+			always = yes
 		}
+		job_BA_pyroxenes_maker_add = 400
 	}
 	max_buildings = 3
 	include = {
@@ -132,7 +170,7 @@ zone_BA_auto_refinery02 = {
 
 ########## 维持区，自动化 #########
 zone_BA_auto_sustainer01 = {
-	icon = GFX_diplomatic_weight_large
+	icon = GFX_resource_consumer_goods_large
 	base_buildtime = 180
 	### 预留标记 ###
 	potential = {
@@ -143,10 +181,20 @@ zone_BA_auto_sustainer01 = {
 	resources = {
 	}
 	### 预留标记 ###
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 		}
+		job_BA_pyroxenes_artisan_add = 200
+	}
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_automated_workforce = 1.0
 	}
 	max_buildings = 3
 	include = {
@@ -159,7 +207,7 @@ zone_BA_auto_sustainer01 = {
 
 ########## 维持区，人工 ##########
 zone_BA_auto_sustainer02 = {
-	icon = GFX_diplomatic_weight_large
+	icon = GFX_resource_consumer_goods_large
 	base_buildtime = 180
 	### 预留标记 ###
 	potential = {
@@ -170,10 +218,14 @@ zone_BA_auto_sustainer02 = {
 	resources = {
 	}
 	### 预留标记 ###
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 		}
+		job_BA_pyroxenes_artisan_add = 200
 	}
 	max_buildings = 3
 	include = {
@@ -186,7 +238,7 @@ zone_BA_auto_sustainer02 = {
 
 ########## 铸造区，自动化 ##########
 zone_BA_auto_foundry01 = {
-	icon = GFX_diplomatic_weight_large
+	icon = GFX_resource_alloys_large
 	base_buildtime = 180
 	### 预留标记 ###
 	potential = {
@@ -197,10 +249,20 @@ zone_BA_auto_foundry01 = {
 	resources = {
 	}
 	### 预留标记 ###
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 		}
+		job_BA_keystone_foundry_add = 200
+	}
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_automated_workforce = 1.0
 	}
 	max_buildings = 3
 	include = {
@@ -213,7 +275,7 @@ zone_BA_auto_foundry01 = {
 
 ########## 铸造区，人工 ##########
 zone_BA_auto_foundry02 = {
-	icon = GFX_diplomatic_weight_large
+	icon = GFX_resource_alloys_large
 	base_buildtime = 180
 	### 预留标记 ###
 	potential = {
@@ -224,10 +286,14 @@ zone_BA_auto_foundry02 = {
 	resources = {
 	}
 	### 预留标记 ###
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 		}
+		job_BA_keystone_foundry_add = 200
 	}
 	max_buildings = 3
 	include = {
@@ -240,7 +306,7 @@ zone_BA_auto_foundry02 = {
 
 ########## 矩阵区，自动化 ##########
 zone_BA_auto_matrix01 = {
-	icon = GFX_diplomatic_weight_large
+	icon = GFX_colony_type_research
 	base_buildtime = 180
 	### 预留标记 ###
 	potential = {
@@ -251,10 +317,20 @@ zone_BA_auto_matrix01 = {
 	resources = {
 	}
 	### 预留标记 ###
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 		}
+		job_BA_club_members_add = 300
+	}
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_automated_workforce = 1.0
 	}
 	max_buildings = 3
 	include = {
@@ -267,7 +343,7 @@ zone_BA_auto_matrix01 = {
 
 ########## 矩阵区，人工 ##########
 zone_BA_auto_matrix02 = {
-	icon = GFX_diplomatic_weight_large
+	icon = GFX_colony_type_research
 	base_buildtime = 180
 	### 预留标记 ###
 	potential = {
@@ -278,10 +354,14 @@ zone_BA_auto_matrix02 = {
 	resources = {
 	}
 	### 预留标记 ###
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 		}
+		job_BA_club_members_add = 300
 	}
 	max_buildings = 3
 	include = {
@@ -294,7 +374,7 @@ zone_BA_auto_matrix02 = {
 
 ########## 涡轮区，自动化 ##########
 zone_BA_auto_turbine01 = {
-	icon = GFX_diplomatic_weight_large
+	icon = GFX_resource_energy_large
 	base_buildtime = 180
 	### 预留标记 ###
 	potential = {
@@ -305,10 +385,20 @@ zone_BA_auto_turbine01 = {
 	resources = {
 	}
 	### 预留标记 ###
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 		}
+		job_BA_dont_be_crazy_here_add = 400
+	}
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_automated_workforce = 1.0
 	}
 	max_buildings = 3
 	include = {
@@ -321,7 +411,7 @@ zone_BA_auto_turbine01 = {
 
 ########## 涡轮区，人工 ##########
 zone_BA_auto_turbine02 = {
-	icon = GFX_diplomatic_weight_large
+	icon = GFX_resource_energy_large
 	base_buildtime = 180
 	### 预留标记 ###
 	potential = {
@@ -332,10 +422,14 @@ zone_BA_auto_turbine02 = {
 	resources = {
 	}
 	### 预留标记 ###
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 		}
+		job_BA_dont_be_crazy_here_add = 400
 	}
 	max_buildings = 3
 	include = {
@@ -348,7 +442,7 @@ zone_BA_auto_turbine02 = {
 
 ########## 钻探区，自动化 ##########
 zone_BA_auto_drill01 = {
-	icon = GFX_diplomatic_weight_large
+	icon = GFX_resource_minerals_large
 	base_buildtime = 180
 	### 预留标记 ###
 	potential = {
@@ -359,10 +453,20 @@ zone_BA_auto_drill01 = {
 	resources = {
 	}
 	### 预留标记 ###
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 		}
+		job_BA_Kivotos_miner_add = 400
+	}
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_automated_workforce = 1.0
 	}
 	max_buildings = 3
 	include = {
@@ -375,7 +479,7 @@ zone_BA_auto_drill01 = {
 
 ########## 钻探区，人工 ##########
 zone_BA_auto_drill02 = {
-	icon = GFX_diplomatic_weight_large
+	icon = GFX_resource_minerals_large
 	base_buildtime = 180
 	### 预留标记 ###
 	potential = {
@@ -386,10 +490,14 @@ zone_BA_auto_drill02 = {
 	resources = {
 	}
 	### 预留标记 ###
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 		}
+		job_BA_Kivotos_miner_add = 400
 	}
 	max_buildings = 3
 	include = {

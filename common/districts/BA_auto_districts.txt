@@ -63,15 +63,21 @@ BA_districts_auto_refinery = {
 			minerals = 250
 			sr_pyroxenes = 10
 		}
-		produces = {
-			sr_pyroxenes = 3
-		}
+		# produces = {
+		# 	sr_pyroxenes = 3
+		# }
 		upkeep = {
 			minerals = 18
 		}
 	}
 	planet_modifier = {
 		planet_housing_add = 800
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		job_BA_pyroxenes_maker_add = 400
 	}
 }
 
@@ -95,9 +101,9 @@ BA_districts_auto_sustainer = {
 			minerals = 250
 			sr_pyroxenes = 10
 		}
-		produces = {
-			consumer_goods = 12
-		}
+		# produces = {
+		# 	consumer_goods = 12
+		# }
 		upkeep = {
 			energy = 9
 			sr_pyroxenes = 1
@@ -105,6 +111,12 @@ BA_districts_auto_sustainer = {
 	}
 	planet_modifier = {
 		planet_housing_add = 600
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		job_BA_pyroxenes_artisan_add = 200
 	}
 }
 
@@ -128,9 +140,9 @@ BA_districts_auto_foundry = {
 			minerals = 250
 			sr_pyroxenes = 10
 		}
-		produces = {
-			alloys = 6
-		}
+		# produces = {
+		# 	alloys = 6
+		# }
 		upkeep = {
 			energy = 9
 			sr_pyroxenes = 1
@@ -138,6 +150,12 @@ BA_districts_auto_foundry = {
 	}
 	planet_modifier = {
 		planet_housing_add = 400
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		job_BA_keystone_foundry_add = 200
 	}
 }
 
@@ -164,15 +182,21 @@ BA_districts_auto_matrix = {
 			minerals = 250
 			sr_pyroxenes = 10
 		}
-		produces = {
-			physics_research = 24
-			society_research = 24
-			engineering_research = 24
-		}
+		# produces = {
+		# 	physics_research = 24
+		# 	society_research = 24
+		# 	engineering_research = 24
+		# }
 		upkeep = {
 			energy = 9
 			sr_pyroxenes = 1
 		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		job_BA_club_members_add = 300
 	}
 }
 
@@ -200,15 +224,21 @@ BA_districts_auto_turbine = {
 			alloys = 30
 			sr_pyroxenes = 10
 		}
-		produces = {
-			energy = 36
-		}
+		# produces = {
+		# 	energy = 36
+		# }
 		upkeep = {
 			minerals = 4
 		}
 	}
 	planet_modifier = {
 		planet_housing_add = 200
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		job_BA_dont_be_crazy_here_add = 400
 	}
 }
 
@@ -236,15 +266,21 @@ BA_districts_auto_drill = {
 			alloys = 30
 			sr_pyroxenes = 10
 		}
-		produces = {
-			minerals = 24
-		}
+		# produces = {
+		# 	minerals = 24
+		# }
 		upkeep = {
 			energy = 6
 		}
 	}
 	planet_modifier = {
 		planet_housing_add = 200
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		job_BA_Kivotos_miner_add = 400
 	}
 }
 
