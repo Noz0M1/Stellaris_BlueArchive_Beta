@@ -29,6 +29,18 @@ BA_auto_buildings = {
 	modifier_category = planet
 }
 
+#################################
+#####   一产资源岗
+BA_workers = {
+	parent = planet_jobs_worker
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop_group
+}
+
+#################################
 ##### 自警团
 BA_crew_pop = {
 	icon = job_BA_Vigilant_crew
@@ -45,6 +57,21 @@ BA_crew_pop = {
 }
 
 ##### 职员
+BA_staff_pop = {
+	icon = job_BA_Kivotos_staff
+	parent = planet_bureaucrats
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop_group
+}
+
+#####
 BA_staff_pop = {
 	icon = job_BA_Kivotos_staff
 	parent = planet_bureaucrats
@@ -178,7 +205,7 @@ BA_auto_pop = {
 	modifier_category = pop_group
 }
 
-
+#################################
 #####	青辉石工匠
 BA_pyroxenes_artisan = {
 	icon = job_artisan
@@ -245,16 +272,6 @@ BA_keystone_foundry = {
 			always = yes
 		}
 		use_parent_icon = yes
-	}
-	modifier_category = pop_group
-}
-
-####	BA一产岗	##联邦开采员
-BA_workers = {
-	parent = planet_jobs_worker
-	generate_mult_modifiers = {
-		produces
-		upkeep
 	}
 	modifier_category = pop_group
 }

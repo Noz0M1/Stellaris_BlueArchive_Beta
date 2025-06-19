@@ -205,7 +205,6 @@ BA_club_members = {
 #舒适度 凝聚力
 BA_Kivotos_staff = {
 	category = specialist
-	#building_icon = building_BA_pyroxenes
 	swappable_data = {
 		default = {
 			icon = BA_Kivotos_staff
@@ -235,36 +234,7 @@ BA_Kivotos_staff = {
 			food = 6
 		}
 		produces = {
-		}
-		#传统
-		produces = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_tradition = tr_kivotos_newkind_dome
-				}
-			}
-			trade = 24
-		}
-		produces = {
-			trigger = {
-				exists = owner
-				NOT = {
-					owner = {
-						has_tradition = tr_kivotos_newkind_dome
-					}
-				}
-			}
 			unity = 6
-		}
-		produces = {
-			trigger = {
-				owner = {
-					has_technology = tech_BA_SI_Abydos_A01
-				}
-			}
-			food = -1
-			energy = 2
 		}
 	}
 	triggered_planet_modifier = {
@@ -291,12 +261,52 @@ BA_Kivotos_staff = {
 	}
 }
 
+### 联邦交易员 ###
+BA_Kivotos_trader = {
+	category = specialist
+	swappable_data = {
+		default = {
+			icon = BA_Kivotos_trader
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_galactic_stock_exchange
+		}
+	}
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		hidden_trigger = {
+			exists = owner
+		}
+		owner = {
+			is_gestalt = no
+		}
+	}
+	resources = {
+		category = BA_staff_pop
+		upkeep = {
+			energy = 6
+		}
+		produces = {
+			trade = 24
+		}
+	}
+	weight = {
+		weight = @specialist_job_weight
+		mult = value:job_weights_modifier|JOB|trader|RESOURCE|trade|
+	}
+}
+
 ### 青辉石工匠 ###
 #模式一 48：基础 —— 8矿物 -> 8消费品
 #模式二 72：编年史5阶段 —— 14矿物 -> 14消费品
 BA_pyroxenes_artisan = {
 	category = specialist
-	#building_icon = building_BA_pyroxenes
 	swappable_data = {
 		default = {
 			icon = artisan

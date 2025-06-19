@@ -217,7 +217,12 @@ decision_BA_new_ringworld = {
 		custom_tooltip = decision_BA_new_ringworld_desc
 		hidden_effect = {
 			change_pc = pc_BA_auto_ringworld
-			check_planet_employment = yes
+			validate_planet_buildings_and_districts = yes
+			while = {
+				count = 3
+				remove_district = BA_districts_ringworld_satellite
+			}
+			change_planet_size = 2
 		}
 	}
 }

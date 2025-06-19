@@ -1,0 +1,462 @@
+### 卫星区段
+zone_BA_ringworld_support_A = {
+	icon = GFX_colony_type_urban
+	base_buildtime = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 200
+			energy = 200
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_housing_add = 500
+	}
+	zone_sets = {
+		BA_ringworld_support
+	}
+	included_building_sets = {
+		all
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+zone_BA_ringworld_support_B = {
+	icon = GFX_colony_type_urban
+	base_buildtime = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 200
+			energy = 200
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = -500
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		job_BA_ringworld_worker_add = 1000
+	}
+	zone_sets = {
+		BA_ringworld_support
+	}
+	included_building_sets = {
+		all
+	}
+}
+
+zone_BA_ringworld_satellite_A = {
+	icon = GFX_resource_trade_large
+	base_buildtime = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 500
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		job_BA_Kivotos_staff_add = 200
+		job_BA_Kivotos_trader_add = 200
+		job_BA_club_members_add = 200
+
+	}
+	zone_sets = {
+		BA_ringworld_satellite
+	}
+	included_building_sets = {
+		all
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+zone_BA_ringworld_satellite_B = {
+	icon = GFX_resource_trade_large
+	base_buildtime = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 200
+			energy = 200
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+	}
+	zone_sets = {
+		BA_ringworld_satellite
+	}
+	included_building_sets = {
+		all
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+zone_BA_ringworld_satellite_C = {
+	icon = GFX_resource_trade_large
+	base_buildtime = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 200
+			energy = 200
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+	}
+	zone_sets = {
+		BA_ringworld_satellite
+	}
+	included_building_sets = {
+		all
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+zone_BA_ringworld_satellite_D = {
+	icon = GFX_resource_trade_large
+	base_buildtime = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 200
+			energy = 200
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+	}
+	zone_sets = {
+		BA_ringworld_satellite
+	}
+	included_building_sets = {
+		all
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+zone_BA_ringworld_satellite_E = {
+	icon = GFX_colony_type_fortress
+	base_buildtime = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 200
+			energy = 200
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+	}
+	zone_sets = {
+		BA_ringworld_satellite
+	}
+	included_building_sets = {
+		all
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+### 铸模区段
+zone_BA_ringworld_refinery_A = {
+	icon = GFX_colony_type_urban
+	base_buildtime = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 200
+			energy = 200
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_housing_add = 500
+	}
+	zone_sets = {
+		BA_ringworld_refinery
+	}
+	included_building_sets = {
+		all
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+zone_BA_ringworld_refinery_B = {
+	icon = GFX_colony_type_urban
+	base_buildtime = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 200
+			energy = 200
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_housing_add = 500
+	}
+	zone_sets = {
+		BA_ringworld_refinery
+	}
+	included_building_sets = {
+		all
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+### 工厂区段
+zone_BA_ringworld_factory_A = {
+	icon = GFX_colony_type_urban
+	base_buildtime = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 200
+			energy = 200
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_housing_add = 500
+	}
+	zone_sets = {
+		BA_ringworld_factory
+	}
+	included_building_sets = {
+		all
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+zone_BA_ringworld_factory_B = {
+	icon = GFX_colony_type_urban
+	base_buildtime = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 200
+			energy = 200
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_housing_add = 500
+	}
+	zone_sets = {
+		BA_ringworld_factory
+	}
+	included_building_sets = {
+		all
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+### 矩阵区段
+zone_BA_ringworld_matrix_A = {
+	icon = GFX_colony_type_urban
+	base_buildtime = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 200
+			energy = 200
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_housing_add = 500
+	}
+	triggered_district_planet_modifier = {
+		district_automated_workforce = 0.5
+	}
+	zone_sets = {
+		BA_ringworld_matrix
+	}
+	included_building_sets = {
+		all
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+zone_BA_ringworld_matrix_B = {
+	icon = GFX_colony_type_urban
+	base_buildtime = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 200
+			energy = 200
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_housing_add = 500
+	}
+	zone_sets = {
+		BA_ringworld_matrix
+	}
+	included_building_sets = {
+		all
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}

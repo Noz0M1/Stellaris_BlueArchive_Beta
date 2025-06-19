@@ -3,44 +3,8 @@
 #####################################
 #通用
 zone_BA_support = {
-	icon = GFX_resource_trade_large
+	icon = GFX_colony_type_urban
 	base_buildtime = 180
-	potential = {
-		exists = owner
-		owner = {
-			has_authority = auth_kivotos
-		}
-	}
-	unlock = {
-	}
-	resources = {
-		category = planet_zones
-		cost = {
-			minerals = 200
-			energy = 200
-		}
-	}
-	triggered_district_planet_modifier = {
-		potential = {
-			exists = owner
-		}
-	}
-	zone_sets = {
-		BA_support
-	}
-
-	included_building_sets = {
-		all
-	}
-	planet_modifier = {
-		zone_building_slots_add = 3
-	}
-}
-
-#学园自治区划
-zone_BA_municipality_federal = {
-	icon = GFX_resource_trade_large
-	base_buildtime = 360
 	potential = {
 		exists = owner
 		owner = {
@@ -52,9 +16,48 @@ zone_BA_municipality_federal = {
 	resources = {
 		category = planet_zones
 		cost = {
+			minerals = 200
+			energy = 200
+		}
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+	}
+	zone_sets = {
+		BA_support
+	}
+	included_building_sets = {
+		all
+	}
+}
+
+#学园自治区划
+zone_BA_municipality_campus = {
+	icon = GFX_job_bureaucrat
+	base_buildtime = 360
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+		is_planet_class = pc_BA_campus_planet
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
 			minerals = 500
 			energy = 500
 		}
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
 	}
 	district_planet_modifier = {
 		planet_housing_add = 200
@@ -63,11 +66,22 @@ zone_BA_municipality_federal = {
 		potential = {
 			exists = owner
 		}
-		job_BA_Kivotos_staff_add = 150
+		job_BA_Kivotos_staff_add = 100
+		job_BA_club_members_add = 50
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = {
+					has_tradition = tr_kivotos_finish
+				}
+			}
+		}
+		planet_stability_add = -1
 	}
 	zone_sets = {
 		BA_municipality
-
 	}
 	included_building_sets = {
 		all
@@ -82,19 +96,17 @@ zone_BA_municipality_federal = {
 		knights
 		betharian
 	}
-	planet_modifier = {
-		zone_building_slots_add = 3
-	}
 }
 
-zone_BA_municipality_club = {
-	icon = GFX_resource_trade_large
+zone_BA_municipality_federal = {
+	icon = GFX_job_BA_Kivotos_staff
 	base_buildtime = 360
 	potential = {
 		exists = owner
 		owner = {
 			is_wilderness_empire = no
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	unlock = {
 	}
@@ -105,14 +117,60 @@ zone_BA_municipality_club = {
 			energy = 500
 		}
 	}
-	district_planet_modifier = {
-		planet_housing_add = 300
+	planet_modifier = {
+		zone_building_slots_add = 3
 	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 		}
-		job_BA_club_members_add = 300
+		job_BA_Kivotos_staff_add = 150
+	}
+	zone_sets = {
+		BA_municipality
+	}
+	included_building_sets = {
+		all
+	}
+	excluded_building_sets = {
+		generator
+		BA_generator
+		mining
+		BA_mining
+		farming
+		BA_farming
+		knights
+		betharian
+	}
+}
+
+zone_BA_municipality_club = {
+	icon = GFX_job_BA_club_members
+	base_buildtime = 360
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+		is_planet_class = pc_BA_campus_planet
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 500
+			energy = 500
+		}
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		job_BA_club_members_add = 150
 	}
 	triggered_district_planet_modifier = {
 		potential = {
@@ -128,7 +186,6 @@ zone_BA_municipality_club = {
 	zone_sets = {
 		BA_municipality
 	}
-
 	included_building_sets = {
 		all
 	}
@@ -142,8 +199,40 @@ zone_BA_municipality_club = {
 		knights
 		betharian
 	}
-	planet_modifier = {
-		zone_building_slots_add = 3
+}
+
+zone_BA_municipality_suburb_enforce = {
+	icon = GFX_job_BA_Kivotos_miner
+	base_buildtime = 360
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+		is_planet_class = pc_BA_campus_planet
+	}
+	unlock = {
+	}
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 500
+			energy = 500
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		BA_dont_be_crazy_here_produces_mult = 0.2
+		BA_Kivotos_miner_produces_mult = 0.2
+		BA_caterer_produces_mult = 0.2
+		BA_dont_be_crazy_here_trade_upkeep_add = 1
+		BA_Kivotos_miner_trade_upkeep_add = 1
+		BA_caterer_trade_upkeep_add = 1
+	}
+	zone_sets = {
+		BA_municipality
 	}
 }
 
@@ -153,6 +242,10 @@ zone_BA_grand_dome = {
 	base_buildtime = 360
 	potential = {
 		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	unlock = {
 	}
@@ -162,6 +255,9 @@ zone_BA_grand_dome = {
 			minerals = 1000
 			energy = 500
 		}
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
 	}
 	triggered_district_planet_modifier = {
 		potential = {
@@ -186,11 +282,6 @@ zone_BA_grand_dome = {
 		knights
 		betharian
 	}
-
-
-	planet_modifier = {
-		zone_building_slots_add = 3
-	}
 }
 
 zone_BA_flexible_center = {
@@ -198,6 +289,10 @@ zone_BA_flexible_center = {
 	base_buildtime = 360
 	potential = {
 		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	unlock = {
 	}
@@ -207,6 +302,9 @@ zone_BA_flexible_center = {
 			minerals = 500
 			energy = 500
 		}
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
 	}
 	triggered_district_planet_modifier = {
 		potential = {
@@ -232,10 +330,6 @@ zone_BA_flexible_center = {
 		knights
 		betharian
 	}
-
-	planet_modifier = {
-		zone_building_slots_add = 3
-	}
 }
 
 #都市工业区划
@@ -245,8 +339,10 @@ zone_BA_mixed_industry = {
 	potential = {
 		exists = owner
 		owner = {
+			is_wilderness_empire = no
 			has_technology = tech_BA_Kivotos_chronicle_stage2
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	unlock = {
 	}
@@ -256,6 +352,9 @@ zone_BA_mixed_industry = {
 			minerals = 500
 			energy = 500
 		}
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -278,13 +377,6 @@ zone_BA_mixed_industry = {
 		BA_factory
 		automation
 	}
-	planet_modifier = {
-		zone_building_slots_add = 3
-	}
-	inline_script = {
-		script = jobs/foundry_add
-		AMOUNT = @building_static_jobs
-	}
 }
 
 zone_BA_foundry = {
@@ -293,8 +385,10 @@ zone_BA_foundry = {
 	potential = {
 		exists = owner
 		owner = {
+			is_wilderness_empire = no
 			has_technology = tech_BA_Kivotos_chronicle_stage2
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	unlock = {
 	}
@@ -304,6 +398,9 @@ zone_BA_foundry = {
 			minerals = 500
 			energy = 500
 		}
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -324,9 +421,6 @@ zone_BA_foundry = {
 		BA_foundry
 		automation
 	}
-	planet_modifier = {
-		zone_building_slots_add = 3
-	}
 }
 
 zone_BA_factory = {
@@ -335,8 +429,10 @@ zone_BA_factory = {
 	potential = {
 		exists = owner
 		owner = {
+			is_wilderness_empire = no
 			has_technology = tech_BA_Kivotos_chronicle_stage2
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	unlock = {
 	}
@@ -346,6 +442,9 @@ zone_BA_factory = {
 			minerals = 500
 			energy = 500
 		}
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -366,9 +465,6 @@ zone_BA_factory = {
 		BA_factory
 		automation
 	}
-	planet_modifier = {
-		zone_building_slots_add = 3
-	}
 }
 
 #城郊区划
@@ -378,8 +474,10 @@ zone_BA_grand_suburbs = {
 	potential = {
 		exists = owner
 		owner = {
+			is_wilderness_empire = no
 			has_technology = tech_BA_Kivotos_chronicle_stage2
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	unlock = {
 	}
@@ -389,6 +487,9 @@ zone_BA_grand_suburbs = {
 			minerals = 500
 			energy = 500
 		}
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
 	}
 	triggered_district_planet_modifier = {
 		potential = {
@@ -414,9 +515,6 @@ zone_BA_grand_suburbs = {
 		fallen_empire_farming
 		automation
 	}
-	planet_modifier = {
-		zone_building_slots_add = 3
-	}
 }
 
 zone_BA_energy_suburbs = {
@@ -425,8 +523,10 @@ zone_BA_energy_suburbs = {
 	potential = {
 		exists = owner
 		owner = {
+			is_wilderness_empire = no
 			has_technology = tech_BA_Kivotos_chronicle_stage2
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	unlock = {
 	}
@@ -436,6 +536,9 @@ zone_BA_energy_suburbs = {
 			minerals = 500
 			energy = 500
 		}
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
 	}
 	triggered_district_planet_modifier = {
 		potential = {
@@ -454,9 +557,6 @@ zone_BA_energy_suburbs = {
 		fallen_empire_generator
 		automation
 	}
-	planet_modifier = {
-		zone_building_slots_add = 3
-	}
 }
 
 zone_BA_mineral_suburbs = {
@@ -465,8 +565,10 @@ zone_BA_mineral_suburbs = {
 	potential = {
 		exists = owner
 		owner = {
+			is_wilderness_empire = no
 			has_technology = tech_BA_Kivotos_chronicle_stage2
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	unlock = {
 	}
@@ -476,6 +578,9 @@ zone_BA_mineral_suburbs = {
 			minerals = 500
 			energy = 500
 		}
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
 	}
 	triggered_district_planet_modifier = {
 		potential = {
@@ -494,9 +599,6 @@ zone_BA_mineral_suburbs = {
 		fallen_empire_mining
 		automation
 	}
-	planet_modifier = {
-		zone_building_slots_add = 3
-	}
 }
 
 zone_BA_food_suburbs = {
@@ -505,8 +607,10 @@ zone_BA_food_suburbs = {
 	potential = {
 		exists = owner
 		owner = {
+			is_wilderness_empire = no
 			has_technology = tech_BA_Kivotos_chronicle_stage2
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	unlock = {
 	}
@@ -516,6 +620,9 @@ zone_BA_food_suburbs = {
 			minerals = 500
 			energy = 500
 		}
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
 	}
 	triggered_district_planet_modifier = {
 		potential = {
@@ -535,9 +642,6 @@ zone_BA_food_suburbs = {
 		fallen_empire_farming
 		automation
 	}
-	planet_modifier = {
-		zone_building_slots_add = 3
-	}
 }
 
 #####################################
@@ -548,6 +652,10 @@ zone_BA_remining = {
 	base_buildtime = 360
 	potential = {
 		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+		is_planet_class = pc_BA_ruined_planet
 	}
 	unlock = {
 	}
@@ -556,6 +664,9 @@ zone_BA_remining = {
 		cost = {
 			minerals = 500
 		}
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -597,9 +708,6 @@ zone_BA_remining = {
 		fallen_empire_mining
 		automation
 	}
-	planet_modifier = {
-		zone_building_slots_add = 3
-	}
 }
 
 zone_BA_supply_station = {
@@ -607,6 +715,10 @@ zone_BA_supply_station = {
 	base_buildtime = 360
 	potential = {
 		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+		is_planet_class = pc_BA_ruined_planet
 	}
 	unlock = {
 	}
@@ -615,6 +727,9 @@ zone_BA_supply_station = {
 		cost = {
 			minerals = 500
 		}
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
 	}
 	triggered_district_planet_modifier = {
 		potential = {
@@ -632,9 +747,6 @@ zone_BA_supply_station = {
 		fallen_empire_mining
 		automation
 	}
-	planet_modifier = {
-		zone_building_slots_add = 3
-	}
 }
 
 zone_BA_special_factory_A = {
@@ -642,6 +754,10 @@ zone_BA_special_factory_A = {
 	base_buildtime = 360
 	potential = {
 		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+		is_planet_class = pc_BA_ruined_planet
 	}
 	unlock = {
 	}
@@ -651,6 +767,9 @@ zone_BA_special_factory_A = {
 			minerals = 500
 			energy = 500
 		}
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
 	}
 	triggered_district_planet_modifier = {
 		potential = {
@@ -677,14 +796,14 @@ zone_BA_special_factory_A = {
 			job_BA_surveyor_add = 100
 		}
 	}
+	zone_sets = {
+		BA_special_factory
+	}
 	included_building_sets = {
 		mining
 		BA_mining
 		fallen_empire_mining
 		automation
-	}
-	planet_modifier = {
-		zone_building_slots_add = 3
 	}
 }
 
@@ -694,8 +813,10 @@ zone_BA_special_factory_B = {
 	potential = {
 		exists = owner
 		owner = {
+			is_wilderness_empire = no
 			BA_origin_finished = no
 		}
+		is_planet_class = pc_BA_ruined_planet
 	}
 	unlock = {
 	}
@@ -705,6 +826,9 @@ zone_BA_special_factory_B = {
 			minerals = 500
 			energy = 500
 		}
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
 	}
 	triggered_district_planet_modifier = {
 		potential = {
@@ -719,14 +843,14 @@ zone_BA_special_factory_B = {
 			job_BA_supplier_add = -100
 		}
 	}
+	zone_sets = {
+		BA_special_factory
+	}
 	included_building_sets = {
 		mining
 		BA_mining
 		fallen_empire_mining
 		automation
-	}
-	planet_modifier = {
-		zone_building_slots_add = 3
 	}
 	convert_to = {
 		zone_BA_special_factory_A
@@ -739,8 +863,10 @@ zone_BA_special_factory_C = {
 	potential = {
 		exists = owner
 		owner = {
+			is_wilderness_empire = no
 			BA_origin_finished = no
 		}
+		is_planet_class = pc_BA_ruined_planet
 	}
 	unlock = {
 	}
@@ -750,6 +876,9 @@ zone_BA_special_factory_C = {
 			minerals = 500
 			energy = 500
 		}
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
 	}
 	triggered_district_planet_modifier = {
 		potential = {
@@ -764,14 +893,14 @@ zone_BA_special_factory_C = {
 			job_BA_supplier_add = 200
 		}
 	}
+	zone_sets = {
+		BA_special_factory
+	}
 	included_building_sets = {
 		mining
 		BA_mining
 		fallen_empire_mining
 		automation
-	}
-	planet_modifier = {
-		zone_building_slots_add = 3
 	}
 	convert_to = {
 		zone_BA_special_factory_A
