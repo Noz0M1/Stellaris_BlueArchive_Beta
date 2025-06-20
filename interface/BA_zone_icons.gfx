@@ -1,7 +1,22 @@
 spriteTypes = {
+    #
+    spriteType = {
+        name = "GFX_resource_sr_pyroxenes_large"
+        textureFile = "gfx/interface/icons/resources/sr_pyroxenes_large.dds"
+    }
+    spriteType = {
+        name = "GFX_resource_sr_keystone_large"
+        textureFile = "gfx/interface/icons/resources/sr_keystone_large.dds"
+    }
+
+    #
     spriteType = {
         name = "GFX_job_BA_Kivotos_staff"
         textureFile = "gfx/interface/icons/jobs/job_BA_Kivotos_staff.dds"
+    }
+    spriteType = {
+        name = "GFX_job_BA_Kivotos_trader"
+        textureFile = "gfx/interface/icons/jobs/job_BA_Kivotos_trader.dds"
     }
     spriteType = {
         name = "GFX_job_BA_club_members"
@@ -10,5 +25,9 @@ spriteTypes = {
     spriteType = {
         name = "GFX_job_BA_Kivotos_miner"
         textureFile = "gfx/interface/icons/jobs/job_BA_Kivotos_miner.dds"
+    }
+    spriteType = {
+        name = "GFX_job_BA_ringworld_worker"
+        textureFile = "gfx/interface/icons/jobs/job_BA_ringworld_worker.dds"
     }
 }

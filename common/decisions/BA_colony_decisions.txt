@@ -219,10 +219,10 @@ decision_BA_new_ringworld = {
 			change_pc = pc_BA_auto_ringworld
 			validate_planet_buildings_and_districts = yes
 			while = {
-				count = 3
-				remove_district = BA_districts_ringworld_satellite
+				count = 5
+				remove_district = BA_districts_ringworld_capital
 			}
-			change_planet_size = 2
+			change_planet_size = 3
 		}
 	}
 }

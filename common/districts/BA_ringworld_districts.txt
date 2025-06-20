@@ -1,17 +1,15 @@
 #####################################
 #模块化环世界区划 数值有待商榷
 #####################################
-### 卫星区段
-# 住房+20 舒适度+40 稳定度+5；环世界值日生+10；自警团+3
-# 任何社团部室：存在时转为提供社团部员岗位
-BA_districts_ringworld_satellite = {
+### 环世界中心城
+BA_districts_ringworld_capital = {
     base_buildtime = 360
     is_capped_by_modifier = no
     exempt_from_ai_planet_specialization = yes
     zone_slots = {
         slot_city_government
-        slot_BA_ringworld_satellite
-        slot_BA_ringworld_satellite
+        slot_BA_ringworld_capital
+        slot_BA_ringworld_capital
     }
     show_on_uncolonized = {
         uses_district_set = BA_auto_ringworld
@@ -55,6 +53,143 @@ BA_districts_ringworld_satellite = {
     }
 }
 
+#####   待开发区划
+BA_districts_ringworld_specialist_01 = {
+    icon = BA_districts_ringworld_specialist
+    base_buildtime = 360
+    is_capped_by_modifier = no
+    exempt_from_ai_planet_specialization = yes
+    zone_slots = {
+        slot_BA_ringworld_specialist
+    }
+    show_on_uncolonized = {
+        uses_district_set = BA_auto_ringworld
+    }
+    potential = {
+        uses_district_set = BA_auto_ringworld
+    }
+    planet_modifier = {
+        planet_housing_add = 1000
+    }
+    resources = {
+        category = BA_auto_districts
+        cost = {
+            energy = 500
+            minerals = 1000
+            sr_keystone = 50
+        }
+        upkeep = {
+            energy = 5
+        }
+    }
+}
+
+BA_districts_ringworld_specialist_02 = {
+    icon = BA_districts_ringworld_specialist
+    base_buildtime = 360
+    is_capped_by_modifier = no
+    exempt_from_ai_planet_specialization = yes
+    zone_slots = {
+        slot_BA_ringworld_specialist
+    }
+    show_on_uncolonized = {
+        uses_district_set = BA_auto_ringworld
+    }
+    potential = {
+        uses_district_set = BA_auto_ringworld
+    }
+    planet_modifier = {
+        planet_housing_add = 1000
+    }
+    resources = {
+        category = BA_auto_districts
+        cost = {
+            energy = 500
+            minerals = 1000
+            sr_keystone = 50
+        }
+        upkeep = {
+            energy = 5
+        }
+    }
+}
+BA_districts_ringworld_specialist_03 = {
+    icon = BA_districts_ringworld_specialist
+    base_buildtime = 360
+    is_capped_by_modifier = no
+    exempt_from_ai_planet_specialization = yes
+    zone_slots = {
+        slot_BA_ringworld_specialist
+    }
+    show_on_uncolonized = {
+        uses_district_set = BA_auto_ringworld
+    }
+    potential = {
+        uses_district_set = BA_auto_ringworld
+    }
+    planet_modifier = {
+        planet_housing_add = 1000
+    }
+    resources = {
+        category = BA_auto_districts
+        cost = {
+            energy = 500
+            minerals = 1000
+            sr_keystone = 50
+        }
+        upkeep = {
+            energy = 5
+        }
+    }
+}
+
+#####   特化区划
+### 卫星区段
+# 住房+20 舒适度+40 稳定度+5；环世界值日生+10；自警团+3
+# 任何社团部室：存在时转为提供社团部员岗位
+BA_districts_ringworld_satellite = {
+    base_buildtime = 360
+    is_capped_by_modifier = no
+    exempt_from_ai_planet_specialization = yes
+    zone_slots = {
+        slot_BA_ringworld_satellite
+    }
+    show_on_uncolonized = {
+        always = no
+    }
+    potential = {
+        always = no
+    }
+    planet_modifier = {
+        planet_housing_add = 2500
+        planet_amenities_add = 4000
+        planet_stability_add = 5
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_authority = auth_kivotos
+            }
+        }
+        job_BA_Vigilant_crew_add = 200
+        job_BA_Kivotos_staff_add = 400
+        job_BA_Kivotos_trader_add = 400
+        job_BA_club_members_add = 400
+    }
+    resources = {
+        category = BA_auto_districts
+        cost = {
+            energy = 500
+            minerals = 1000
+            sr_keystone = 50
+        }
+        upkeep = {
+            energy = 5
+        }
+    }
+}
+
 ### 铸模区段
 # 住房+5；环世界值日生+5
 # 基准产出：青辉石*15 --> 制造石*30
@@ -68,31 +203,13 @@ BA_districts_ringworld_refinery = {
         slot_BA_ringworld_refinery
     }
     show_on_uncolonized = {
-        uses_district_set = BA_auto_ringworld
+        always = no
     }
     potential = {
-        uses_district_set = BA_auto_ringworld
+        always = no
     }
     planet_modifier = {
         planet_housing_add = 1000
-    }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            NOT = {
-                has_active_building = building_BA_ringworld_refinery_B
-            }
-        }
-        BA_auto_pop_sr_keystone_produces_add = 0.3
-        BA_auto_pop_sr_pyroxenes_upkeep_add = 0.15
-    }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            has_active_building = building_BA_ringworld_refinery_B
-        }
-        BA_auto_pop_sr_pyroxenes_produces_add = 0.15
-        BA_auto_pop_minerals_upkeep_add = 0.9
     }
     resources = {
         category = BA_auto_districts
@@ -104,46 +221,6 @@ BA_districts_ringworld_refinery = {
         }
         upkeep = {
             energy = 5
-        }
-        produces = {
-            trigger = {
-                NOT = {
-                    has_active_building = building_BA_ringworld_refinery_B
-                }
-            }
-            sr_keystone = 30
-        }
-        upkeep = {
-            trigger = {
-                NOT = {
-                    has_active_building = building_BA_ringworld_refinery_B
-                }
-            }
-            minerals = 90
-        }
-        produces = {
-            trigger = {
-                has_active_building = building_BA_ringworld_refinery_A
-            }
-            sr_keystone = 10
-        }
-        upkeep = {
-            trigger = {
-                has_active_building = building_BA_ringworld_refinery_A
-            }
-            minerals = 30
-        }
-        produces = {
-            trigger = {
-                has_active_building = building_BA_ringworld_refinery_B
-            }
-            sr_pyroxenes = 20
-        }
-        upkeep = {
-            trigger = {
-                has_active_building = building_BA_ringworld_refinery_B
-            }
-            minerals = 120
         }
     }
 }
@@ -161,31 +238,13 @@ BA_districts_ringworld_factory = {
         slot_BA_ringworld_factory
     }
     show_on_uncolonized = {
-        uses_district_set = BA_auto_ringworld
+        always = no
     }
     potential = {
-        uses_district_set = BA_auto_ringworld
+        always = no
     }
     planet_modifier = {
         planet_housing_add = 1000
-    }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            NOT = {
-                has_active_building = building_BA_ringworld_factory_B
-            }
-        }
-        BA_auto_pop_alloys_produces_add = 1
-        BA_auto_pop_sr_keystone_upkeep_add = 0.5
-    }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            has_active_building = building_BA_ringworld_factory_B
-        }
-        BA_auto_pop_consumer_goods_produces_add = 1.5
-        BA_auto_pop_minerals_upkeep_add = 1.5
     }
     resources = {
         category = BA_auto_districts
@@ -197,34 +256,6 @@ BA_districts_ringworld_factory = {
         }
         upkeep = {
             energy = 5
-        }
-        produces = {
-            trigger = {
-                NOR = {
-                    has_active_building = building_BA_ringworld_factory_B
-                }
-            }
-            alloys = 60
-        }
-        upkeep = {
-            trigger = {
-                NOR = {
-                    has_active_building = building_BA_ringworld_factory_B
-                }
-            }
-            sr_keystone = 30
-        }
-        produces = {
-            trigger = {
-                has_active_building = building_BA_ringworld_factory_B
-            }
-            consumer_goods = 150
-        }
-        upkeep = {
-            trigger = {
-                has_active_building = building_BA_ringworld_factory_B
-            }
-            minerals = 120
         }
     }
 }
@@ -241,36 +272,16 @@ BA_districts_ringworld_matrix = {
     exempt_from_ai_planet_specialization = yes
     zone_slots = {
         slot_BA_ringworld_matrix
-        #slot_BA_auto_matrix
     }
     show_on_uncolonized = {
-        uses_district_set = BA_auto_ringworld
+        always = no
     }
     potential = {
-        uses_district_set = BA_auto_ringworld
+        always = no
     }
+
     planet_modifier = {
         planet_housing_add = 1000
-    }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            NOT = {
-                has_active_building = building_BA_ringworld_matrix_B
-            }
-        }
-        BA_auto_pop_physics_research_produces_add = 1
-        BA_auto_pop_society_research_produces_add = 1
-        BA_auto_pop_engineering_research_produces_add = 1
-        BA_auto_pop_sr_pyroxenes_upkeep_add = 0.05
-    }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            has_active_building = building_BA_ringworld_matrix_B
-        }
-        BA_auto_pop_unity_produces_add = 1
-        BA_auto_pop_sr_pyroxenes_upkeep_add = 0.05
     }
     resources = {
         category = BA_auto_districts
@@ -282,49 +293,6 @@ BA_districts_ringworld_matrix = {
         }
         upkeep = {
             energy = 5
-        }
-        produces = {
-            trigger = {
-                NOR = {
-                    has_active_building = building_BA_ringworld_matrix_A
-                    has_active_building = building_BA_ringworld_matrix_B
-                }
-            }
-            physics_research = 180
-            society_research = 180
-            engineering_research = 180
-        }
-        produces = {
-            trigger = {
-                has_active_building = building_BA_ringworld_matrix_A
-            }
-            physics_research = 240
-            society_research = 240
-            engineering_research = 240
-        }
-        produces = {
-            trigger = {
-                has_active_building = building_BA_ringworld_matrix_B
-            }
-            unity = 240
-        }
-        upkeep = {
-            trigger = {
-                NOR = {
-                    has_active_building = building_BA_ringworld_matrix_A
-                    has_active_building = building_BA_ringworld_matrix_B
-                }
-            }
-            sr_pyroxenes = 15
-        }
-        upkeep = {
-            trigger = {
-                OR = {
-                    has_active_building = building_BA_ringworld_matrix_A
-                    has_active_building = building_BA_ringworld_matrix_B
-                }
-            }
-            sr_pyroxenes = 20
         }
     }
 }

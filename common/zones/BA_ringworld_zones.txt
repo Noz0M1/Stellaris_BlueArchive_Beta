@@ -1,79 +1,6 @@
-### 卫星区段
-zone_BA_ringworld_support_A = {
-	icon = GFX_colony_type_urban
-	base_buildtime = 180
-	potential = {
-		exists = owner
-		owner = {
-			is_wilderness_empire = no
-		}
-	}
-	unlock = {
-	}
-	resources = {
-		category = planet_zones
-		cost = {
-			minerals = 200
-			energy = 200
-		}
-	}
-	triggered_district_planet_modifier = {
-		potential = {
-			exists = owner
-		}
-		planet_housing_add = 500
-	}
-	zone_sets = {
-		BA_ringworld_support
-	}
-	included_building_sets = {
-		all
-	}
-	planet_modifier = {
-		zone_building_slots_add = 3
-	}
-}
-
-zone_BA_ringworld_support_B = {
-	icon = GFX_colony_type_urban
-	base_buildtime = 180
-	potential = {
-		exists = owner
-		owner = {
-			is_wilderness_empire = no
-		}
-	}
-	unlock = {
-	}
-	resources = {
-		category = planet_zones
-		cost = {
-			minerals = 200
-			energy = 200
-		}
-	}
-	planet_modifier = {
-		planet_housing_add = -500
-	}
-	triggered_district_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
-		job_BA_ringworld_worker_add = 1000
-	}
-	zone_sets = {
-		BA_ringworld_support
-	}
-	included_building_sets = {
-		all
-	}
-}
-
-zone_BA_ringworld_satellite_A = {
-	icon = GFX_resource_trade_large
+### 中心区
+zone_BA_ringworld_capital_A = {
+	icon = GFX_colony_type_capital
 	base_buildtime = 180
 	potential = {
 		exists = owner
@@ -89,28 +16,30 @@ zone_BA_ringworld_satellite_A = {
 			minerals = 500
 		}
 	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
 		}
 		job_BA_Kivotos_staff_add = 200
 		job_BA_Kivotos_trader_add = 200
 		job_BA_club_members_add = 200
-
 	}
 	zone_sets = {
-		BA_ringworld_satellite
+		BA_ringworld_capital
 	}
 	included_building_sets = {
 		all
 	}
-	planet_modifier = {
-		zone_building_slots_add = 3
-	}
 }
 
-zone_BA_ringworld_satellite_B = {
-	icon = GFX_resource_trade_large
+zone_BA_ringworld_capital_B = {
+	icon = GFX_job_BA_Kivotos_staff
 	base_buildtime = 180
 	potential = {
 		exists = owner
@@ -123,28 +52,33 @@ zone_BA_ringworld_satellite_B = {
 	resources = {
 		category = planet_zones
 		cost = {
-			minerals = 200
-			energy = 200
+			minerals = 500
 		}
-	}
-	triggered_district_planet_modifier = {
-		potential = {
-			exists = owner
-		}
-	}
-	zone_sets = {
-		BA_ringworld_satellite
-	}
-	included_building_sets = {
-		all
 	}
 	planet_modifier = {
 		zone_building_slots_add = 3
 	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		job_BA_Kivotos_staff_add = 1000
+		job_BA_Kivotos_trader_add = -400
+		job_BA_club_members_add = -400
+	}
+	zone_sets = {
+		BA_ringworld_capital
+	}
+	included_building_sets = {
+		all
+	}
 }
 
-zone_BA_ringworld_satellite_C = {
-	icon = GFX_resource_trade_large
+zone_BA_ringworld_capital_C = {
+	icon = GFX_job_BA_Kivotos_trader
 	base_buildtime = 180
 	potential = {
 		exists = owner
@@ -157,28 +91,30 @@ zone_BA_ringworld_satellite_C = {
 	resources = {
 		category = planet_zones
 		cost = {
-			minerals = 200
-			energy = 200
+			minerals = 500
 		}
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
 	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 		}
+		job_BA_Kivotos_staff_add = -400
+		job_BA_Kivotos_trader_add = 1000
+		job_BA_club_members_add = -400
 	}
 	zone_sets = {
-		BA_ringworld_satellite
+		BA_ringworld_capital
 	}
 	included_building_sets = {
 		all
 	}
-	planet_modifier = {
-		zone_building_slots_add = 3
-	}
 }
 
-zone_BA_ringworld_satellite_D = {
-	icon = GFX_resource_trade_large
+zone_BA_ringworld_capital_D = {
+	icon = GFX_job_BA_club_members
 	base_buildtime = 180
 	potential = {
 		exists = owner
@@ -191,27 +127,32 @@ zone_BA_ringworld_satellite_D = {
 	resources = {
 		category = planet_zones
 		cost = {
-			minerals = 200
-			energy = 200
+			minerals = 500
 		}
-	}
-	triggered_district_planet_modifier = {
-		potential = {
-			exists = owner
-		}
-	}
-	zone_sets = {
-		BA_ringworld_satellite
-	}
-	included_building_sets = {
-		all
 	}
 	planet_modifier = {
 		zone_building_slots_add = 3
 	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		job_BA_Kivotos_staff_add = -400
+		job_BA_Kivotos_trader_add = -400
+		job_BA_club_members_add = 1000
+	}
+	zone_sets = {
+		BA_ringworld_capital
+	}
+	included_building_sets = {
+		all
+	}
 }
 
-zone_BA_ringworld_satellite_E = {
+zone_BA_ringworld_capital_E = {
 	icon = GFX_colony_type_fortress
 	base_buildtime = 180
 	potential = {
@@ -229,12 +170,59 @@ zone_BA_ringworld_satellite_E = {
 			energy = 200
 		}
 	}
+	planet_modifier = {
+		planet_orbital_bombardment_damage = -0.5
+		zone_building_slots_add = 3
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		job_BA_Vigilant_crew_add = 800
+		job_BA_Kivotos_staff_add = -200
+		job_BA_Kivotos_trader_add = -200
+		job_BA_club_members_add = -200
+	}
+	zone_sets = {
+		BA_ringworld_capital
+	}
+	included_building_sets = {
+		all
+	}
+}
+
+### 卫星区段
+zone_BA_ringworld_satellite_A = {
+	icon = GFX_colony_type_urban
+	base_buildtime = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+	}
+	unlock = {
+	}
+	swap_type = BA_districts_ringworld_satellite
+	swap_type_weight = 5
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 200
+			energy = 200
+		}
+	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 		}
+		planet_housing_add = 500
 	}
 	zone_sets = {
+		BA_ringworld_specialist
 		BA_ringworld_satellite
 	}
 	included_building_sets = {
@@ -245,9 +233,8 @@ zone_BA_ringworld_satellite_E = {
 	}
 }
 
-### 铸模区段
-zone_BA_ringworld_refinery_A = {
-	icon = GFX_colony_type_urban
+zone_BA_ringworld_satellite_B = {
+	icon = GFX_job_BA_ringworld_worker
 	base_buildtime = 180
 	potential = {
 		exists = owner
@@ -257,6 +244,50 @@ zone_BA_ringworld_refinery_A = {
 	}
 	unlock = {
 	}
+	swap_type = BA_districts_ringworld_satellite
+	swap_type_weight = 5
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 200
+			energy = 200
+		}
+	}
+	planet_modifier = {
+		district_automated_workforce = 0.5
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		job_BA_ringworld_worker_add = 2000
+	}
+	zone_sets = {
+		BA_ringworld_specialist
+		BA_ringworld_satellite
+	}
+	included_building_sets = {
+		all
+	}
+}
+
+### 铸模区段
+zone_BA_ringworld_refinery_A = {
+	icon = GFX_resource_sr_keystone_large
+	base_buildtime = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+	}
+	unlock = {
+	}
+	swap_type = BA_districts_ringworld_refinery
+	swap_type_weight = 5
 	resources = {
 		category = planet_zones
 		cost = {
@@ -270,19 +301,32 @@ zone_BA_ringworld_refinery_A = {
 		}
 		planet_housing_add = 500
 	}
+	planet_modifier = {
+		district_automated_workforce = 0.5
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		planet_housing_add = -500
+		job_BA_ringworld_worker_add = 1000
+		BA_auto_pop_sr_keystone_produces_add = 0.3
+		BA_auto_pop_minerals_upkeep_add = 0.9
+	}
 	zone_sets = {
+		BA_ringworld_specialist
 		BA_ringworld_refinery
 	}
 	included_building_sets = {
 		all
-	}
-	planet_modifier = {
-		zone_building_slots_add = 3
 	}
 }
 
 zone_BA_ringworld_refinery_B = {
-	icon = GFX_colony_type_urban
+	icon = GFX_resource_sr_pyroxenes_large
 	base_buildtime = 180
 	potential = {
 		exists = owner
@@ -292,6 +336,8 @@ zone_BA_ringworld_refinery_B = {
 	}
 	unlock = {
 	}
+	swap_type = BA_districts_ringworld_refinery
+	swap_type_weight = 5
 	resources = {
 		category = planet_zones
 		cost = {
@@ -299,26 +345,33 @@ zone_BA_ringworld_refinery_B = {
 			energy = 200
 		}
 	}
+	planet_modifier = {
+		district_automated_workforce = 0.5
+	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
 		}
-		planet_housing_add = 500
+		planet_housing_add = -500
+		job_BA_ringworld_worker_add = 1000
+		BA_auto_pop_sr_pyroxenes_produces_add = 0.15
+		BA_auto_pop_minerals_upkeep_add = 0.9
 	}
 	zone_sets = {
+		BA_ringworld_specialist
 		BA_ringworld_refinery
 	}
 	included_building_sets = {
 		all
-	}
-	planet_modifier = {
-		zone_building_slots_add = 3
 	}
 }
 
 ### 工厂区段
 zone_BA_ringworld_factory_A = {
-	icon = GFX_colony_type_urban
+	icon = GFX_resource_alloys_large
 	base_buildtime = 180
 	potential = {
 		exists = owner
@@ -328,6 +381,8 @@ zone_BA_ringworld_factory_A = {
 	}
 	unlock = {
 	}
+	swap_type = BA_districts_ringworld_factory
+	swap_type_weight = 5
 	resources = {
 		category = planet_zones
 		cost = {
@@ -335,25 +390,32 @@ zone_BA_ringworld_factory_A = {
 			energy = 200
 		}
 	}
+	planet_modifier = {
+		district_automated_workforce = 0.5
+	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
 		}
-		planet_housing_add = 500
+		planet_housing_add = -500
+		job_BA_ringworld_worker_add = 1000
+		BA_auto_pop_alloys_produces_add = 0.75
+		BA_auto_pop_minerals_upkeep_add = 1.5
 	}
 	zone_sets = {
+		BA_ringworld_specialist
 		BA_ringworld_factory
 	}
 	included_building_sets = {
 		all
-	}
-	planet_modifier = {
-		zone_building_slots_add = 3
 	}
 }
 
 zone_BA_ringworld_factory_B = {
-	icon = GFX_colony_type_urban
+	icon = GFX_resource_consumer_goods_large
 	base_buildtime = 180
 	potential = {
 		exists = owner
@@ -363,6 +425,8 @@ zone_BA_ringworld_factory_B = {
 	}
 	unlock = {
 	}
+	swap_type = BA_districts_ringworld_factory
+	swap_type_weight = 5
 	resources = {
 		category = planet_zones
 		cost = {
@@ -370,26 +434,33 @@ zone_BA_ringworld_factory_B = {
 			energy = 200
 		}
 	}
+	planet_modifier = {
+		district_automated_workforce = 0.5
+	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
 		}
-		planet_housing_add = 500
+		planet_housing_add = -500
+		job_BA_ringworld_worker_add = 1000
+		BA_auto_pop_consumer_goods_produces_add = 1.5
+		BA_auto_pop_minerals_upkeep_add = 1.5
 	}
 	zone_sets = {
+		BA_ringworld_specialist
 		BA_ringworld_factory
 	}
 	included_building_sets = {
 		all
-	}
-	planet_modifier = {
-		zone_building_slots_add = 3
 	}
 }
 
 ### 矩阵区段
 zone_BA_ringworld_matrix_A = {
-	icon = GFX_colony_type_urban
+	icon = GFX_colony_type_research
 	base_buildtime = 180
 	potential = {
 		exists = owner
@@ -399,6 +470,8 @@ zone_BA_ringworld_matrix_A = {
 	}
 	unlock = {
 	}
+	swap_type = BA_districts_ringworld_matrix
+	swap_type_weight = 5
 	resources = {
 		category = planet_zones
 		cost = {
@@ -406,29 +479,34 @@ zone_BA_ringworld_matrix_A = {
 			energy = 200
 		}
 	}
+	planet_modifier = {
+		district_automated_workforce = 0.5
+	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
 		}
-		planet_housing_add = 500
-	}
-	triggered_district_planet_modifier = {
-		district_automated_workforce = 0.5
+		planet_housing_add = -500
+		job_BA_ringworld_worker_add = 1000
+		BA_auto_pop_physics_research_produces_add = 1
+		BA_auto_pop_society_research_produces_add = 1
+		BA_auto_pop_engineering_research_produces_add = 1
+		BA_auto_pop_sr_pyroxenes_upkeep_add = 0.05
 	}
 	zone_sets = {
+		BA_ringworld_specialist
 		BA_ringworld_matrix
 	}
 	included_building_sets = {
 		all
-	}
-	planet_modifier = {
-		zone_building_slots_add = 3
 	}
 }
 
 zone_BA_ringworld_matrix_B = {
-	icon = GFX_colony_type_urban
-	base_buildtime = 180
+	icon = GFX_colony_type_bureaucratic
 	potential = {
 		exists = owner
 		owner = {
@@ -437,6 +515,8 @@ zone_BA_ringworld_matrix_B = {
 	}
 	unlock = {
 	}
+	swap_type = BA_districts_ringworld_matrix
+	swap_type_weight = 5
 	resources = {
 		category = planet_zones
 		cost = {
@@ -444,19 +524,26 @@ zone_BA_ringworld_matrix_B = {
 			energy = 200
 		}
 	}
+	planet_modifier = {
+		district_automated_workforce = 0.5
+	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
 		}
-		planet_housing_add = 500
+		planet_housing_add = -500
+		job_BA_ringworld_worker_add = 1000
+		BA_auto_pop_unity_produces_add = 1
+		BA_auto_pop_sr_pyroxenes_upkeep_add = 0.05
 	}
 	zone_sets = {
+		BA_ringworld_specialist
 		BA_ringworld_matrix
 	}
 	included_building_sets = {
 		all
-	}
-	planet_modifier = {
-		zone_building_slots_add = 3
 	}
 }

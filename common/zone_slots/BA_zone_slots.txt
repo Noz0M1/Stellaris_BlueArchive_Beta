@@ -68,35 +68,40 @@ slot_BA_special_factory = {
 	}
 }
 
+#######
+slot_BA_ringworld_capital = {
+	included_zone_sets = {
+		BA_ringworld_capital
+	}
+}
+
+slot_BA_ringworld_specialist = {
+	included_zone_sets = {
+		BA_ringworld_specialist
+	}
+}
+
 #
 slot_BA_ringworld_satellite = {
 	included_zone_sets = {
-		urban
 		BA_ringworld_satellite
-		BA_support
 	}
 }
 
 slot_BA_ringworld_refinery = {
 	included_zone_sets = {
-		urban
 		BA_ringworld_refinery
-		BA_support
 	}
 }
 
 slot_BA_ringworld_factory = {
 	included_zone_sets = {
-		urban
 		BA_ringworld_factory
-		BA_support
 	}
 }
 
 slot_BA_ringworld_matrix = {
 	included_zone_sets = {
-		urban
 		BA_ringworld_matrix
-		BA_support
 	}
 }
