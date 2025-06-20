@@ -227,6 +227,7 @@ ship_section_template = {
 		}
 	}
 	prerequisites = {
+		OR = {
 		#原版
 		tech_energy_lance_1
 		tech_energy_lance_2
@@ -238,6 +239,7 @@ ship_section_template = {
 		tech_BA_SPW_Standard_MG_2
 		tech_BA_SPW_Standard_SR_2
 		tech_BA_SPW_Standard_RG
+		}
 	}
 }
 
