@@ -1063,6 +1063,393 @@ defined_text = {
 	}
 }
 
+#飞升
+defined_text = {
+	name = ap_Our_story_stage2_prerequisites_A
+	text = {
+		trigger = {
+			owner = {
+				has_technology = tech_power_hub_1
+			}
+		}
+		localization_key =	ap_Our_story_stage2_prerequisites_A_success
+	}
+	text = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_technology = tech_power_hub_1
+				}
+			}
+		}
+		localization_key =	ap_Our_story_stage2_prerequisites_A_fail
+	}
+}
+
+defined_text = {
+	name = ap_Our_story_stage2_prerequisites_B
+	text = {
+		trigger = {
+			owner = {
+				has_technology = tech_mineral_purification_1
+			}
+		}
+		localization_key =	ap_Our_story_stage2_prerequisites_B_success
+	}
+	text = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_technology = tech_mineral_purification_1
+				}
+			}
+		}
+		localization_key =	ap_Our_story_stage2_prerequisites_B_fail
+	}
+}
+
+defined_text = {
+	name = ap_Our_story_stage2_prerequisites_C
+	text = {
+		trigger = {
+			owner = {
+				has_technology = tech_food_processing_1
+			}
+		}
+		localization_key =	ap_Our_story_stage2_prerequisites_C_success
+	}
+	text = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_technology = tech_food_processing_1
+				}
+			}
+		}
+		localization_key =	ap_Our_story_stage2_prerequisites_C_fail
+	}
+}
+
+defined_text = {
+	name = ap_Our_story_stage3_prerequisites_A
+	text = {
+		trigger = {
+			owner = {
+				has_technology = tech_colonial_centralization
+			}
+		}
+		localization_key =	ap_Our_story_stage3_prerequisites_A_success
+	}
+	text = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_technology = tech_colonial_centralization
+				}
+			}
+		}
+		localization_key =	ap_Our_story_stage3_prerequisites_A_fail
+	}
+}
+
+defined_text = {
+	name = ap_Our_story_stage3_prerequisites_B
+	text = {
+		trigger = {
+			owner = {
+				has_technology = tech_alloys_1
+			}
+		}
+		localization_key =	ap_Our_story_stage3_prerequisites_B_success
+	}
+	text = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_technology = tech_alloys_1
+				}
+			}
+		}
+		localization_key =	ap_Our_story_stage3_prerequisites_B_fail
+	}
+}
+
+defined_text = {
+	name = ap_Our_story_stage3_prerequisites_C
+	text = {
+		trigger = {
+			owner = {
+				has_technology = tech_food_processing_1
+			}
+		}
+		localization_key =	ap_Our_story_stage3_prerequisites_C_success
+	}
+	text = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_technology = tech_food_processing_1
+				}
+			}
+		}
+		localization_key =	ap_Our_story_stage3_prerequisites_C_fail
+	}
+}
+
+defined_text = {
+	name = ap_Our_story_stage4_prerequisites_A
+	text = {
+		trigger = {
+			owner = {
+				has_technology = tech_BA_pyroxenes_using
+			}
+		}
+		localization_key =	ap_Our_story_stage4_prerequisites_A_success
+	}
+	text = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_technology = tech_BA_pyroxenes_using
+				}
+			}
+		}
+		localization_key =	ap_Our_story_stage4_prerequisites_A_fail
+	}
+}
+
+defined_text = {
+	name = ap_Our_story_stage4_prerequisites_B
+	text = {
+		trigger = {
+			owner = {
+				has_technology = tech_colonization_2
+			}
+		}
+		localization_key =	ap_Our_story_stage4_prerequisites_B_success
+	}
+	text = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_technology = tech_colonization_2
+				}
+			}
+		}
+		localization_key =	ap_Our_story_stage4_prerequisites_B_fail
+	}
+}
+
+defined_text = {
+	name = ap_Our_story_stage4_prerequisites_C
+	text = {
+		trigger = {
+			owner = {
+				has_technology = tech_interstellar_fleet_traditions
+			}
+		}
+		localization_key =	ap_Our_story_stage4_prerequisites_C_success
+	}
+	text = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_technology = tech_interstellar_fleet_traditions
+				}
+			}
+		}
+		localization_key =	ap_Our_story_stage4_prerequisites_C_fail
+	}
+}
+
+defined_text = {
+	name = ap_Our_story_stage5_prerequisites_A
+	text = {
+		trigger = {
+			owner = {
+				has_technology = tech_self_aware_logic
+			}
+		}
+		localization_key =	ap_Our_story_stage5_prerequisites_A_success
+	}
+	text = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_technology = tech_self_aware_logic
+				}
+			}
+		}
+		localization_key =	ap_Our_story_stage5_prerequisites_A_fail
+	}
+}
+
+defined_text = {
+	name = ap_Our_story_stage5_prerequisites_B
+	text = {
+		trigger = {
+			owner = {
+				has_technology = tech_space_science_3
+			}
+		}
+		localization_key =	ap_Our_story_stage5_prerequisites_B_success
+	}
+	text = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_technology = tech_space_science_3
+				}
+			}
+		}
+		localization_key =	ap_Our_story_stage5_prerequisites_B_fail
+	}
+}
+
+
+
+
+defined_text = {
+	name = ap_Our_story_stage6_prerequisites_A
+	text = {
+		trigger = {
+			owner = {
+				has_technology = tech_galactic_administration
+			}
+		}
+		localization_key =	ap_Our_story_stage6_prerequisites_A_success
+	}
+	text = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_technology = tech_galactic_administration
+				}
+			}
+		}
+		localization_key =	ap_Our_story_stage6_prerequisites_A_fail
+	}
+}
+
+defined_text = {
+	name = ap_Our_story_stage6_prerequisites_B
+	text = {
+		trigger = {
+			owner = {
+				has_technology = tech_starbase_4
+			}
+		}
+		localization_key =	ap_Our_story_stage6_prerequisites_B_success
+	}
+	text = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_technology = tech_starbase_4
+				}
+			}
+		}
+		localization_key =	ap_Our_story_stage6_prerequisites_B_fail
+	}
+}
+
+
+
+
+defined_text = {
+	name = ap_Our_story_stage7_prerequisites_A
+	text = {
+		trigger = {
+			owner = {
+				has_technology = tech_BA_keystone_crafting
+			}
+		}
+		localization_key =	ap_Our_story_stage7_prerequisites_A_success
+	}
+	text = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_technology = tech_BA_keystone_crafting
+				}
+			}
+		}
+		localization_key =	ap_Our_story_stage7_prerequisites_A_fail
+	}
+}
+
+defined_text = {
+	name = ap_Our_story_stage7_prerequisites_B
+	text = {
+		trigger = {
+			owner = {
+				has_technology = tech_housing_2
+			}
+		}
+		localization_key =	ap_Our_story_stage7_prerequisites_B_success
+	}
+	text = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_technology = tech_housing_2
+				}
+			}
+		}
+		localization_key =	ap_Our_story_stage7_prerequisites_B_fail
+	}
+}
+
+
+
+
+defined_text = {
+	name = ap_Our_story_stage8_prerequisites_A
+	text = {
+		trigger = {
+			owner = {
+				has_technology = tech_self_aware_logic
+			}
+		}
+		localization_key =	ap_Our_story_stage8_prerequisites_A_success
+	}
+	text = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_technology = tech_self_aware_logic
+				}
+			}
+		}
+		localization_key =	ap_Our_story_stage8_prerequisites_A_fail
+	}
+}
+
+defined_text = {
+	name = ap_Our_story_stage8_prerequisites_B
+	text = {
+		trigger = {
+			owner = {
+				has_technology = tech_space_science_3
+			}
+		}
+		localization_key =	ap_Our_story_stage8_prerequisites_B_success
+	}
+	text = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_technology = tech_space_science_3
+				}
+			}
+		}
+		localization_key =	ap_Our_story_stage8_prerequisites_B_fail
+	}
+}
+
+
+
+
 #领袖
 defined_text = {
 	name = GetArisSPDesc

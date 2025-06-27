@@ -352,6 +352,29 @@ tech_BA_Kivotos_chronicle_stage7 = {
 	weight = 0
 }
 
+tech_BA_Kivotos_chronicle_stage8 = {
+	icon = tech_mine_dark_matter
+	area = society
+	cost = 1
+	tier = 1
+	is_reverse_engineerable = no
+	category = {
+		school_tech
+	}
+	potential = {
+		OR = {
+			has_country_flag = BA_cheat
+			AND = {
+				has_authority = auth_kivotos
+				has_ascension_perk = ap_BA_Our_story
+			}
+		}
+	}
+	modifier = {
+	}
+	weight = 0
+}
+
 #### 光环飞升科技
 #初步光环理论（基础路线 1阶）
 tech_BA_Preliminary_ring_theory = {

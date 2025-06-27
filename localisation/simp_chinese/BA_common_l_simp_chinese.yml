@@ -1225,6 +1225,87 @@
 
 
 #####      Situation       #####
+ #飞升-我们的故事
+ situation_Our_story:0 "学园编年史"
+ situation_Our_story_type:0 "学园编年史"
+ situation_Our_story_monthly_change_tooltip:0 "学园都市星球改造进度"
+
+ situation_Our_story_desc_1:0 "这是一切的开始，我们的一切活动都建立在物质之上。\n\n ['concept_Kivotos_chronicle_stage1_bonus'] ['concept_Kivotos_chronicle_stage2_prerequisites']"
+ situation_Our_story_desc_2:0 "郊区产出的原材料供给学园都市每日的庞大消耗。这里即是学园都市的基石，也是扩展的前沿，混乱的郊区等同于迷惘的未来。\n\n ['concept_Kivotos_chronicle_stage2_bonus'] ['concept_Kivotos_chronicle_stage3_prerequisites']"
+ situation_Our_story_desc_3:0 "大量的民用工业集中在自治区内。每一根管道的走向，每一条无人机的航线，每一张图纸的存放，这些都务必要进行仔细的规划。\n\n ['concept_Kivotos_chronicle_stage3_bonus'] ['concept_Kivotos_chronicle_stage4_prerequisites']"
+ situation_Our_story_desc_4:0 "只是片瓦遮头当然不够，但我们对房间的喜好也众口难调。将空间分给每个人独属并不是一种浪费，而是一种必要的文化投资。\n\n ['concept_Kivotos_chronicle_stage4_bonus'] ['concept_Kivotos_chronicle_stage5_prerequisites']"
+ situation_Our_story_desc_5:0 "即使是现在，大型学园之间也难免会有不和。找出本质，解决它。\n\n ['concept_Kivotos_chronicle_stage5_bonus'] ['concept_Kivotos_chronicle_stage6_prerequisites']"
+ situation_Our_story_desc_6:0 "单个星球承载力终究有上限。为了学园都市的未来，它必须拥抱整个宇宙。\n\n ['concept_Kivotos_chronicle_stage6_bonus'] ['concept_Kivotos_chronicle_stage7_prerequisites']"
+ situation_Our_story_desc_7:0 "学园都市星球的最终改造。水到渠成。\n\n ['concept_Kivotos_chronicle_stage7_bonus'] ['concept_Kivotos_chronicle_stage8_prerequisites']"
+ situation_Our_story_desc_8:0 "我们所到之处，终是碧蓝的世界。\n\n ['concept_Kivotos_chronicle_stage8_bonus']"
+
+ situation_Our_story_default:0 "正常研究"
+ situation_Our_story_default_desc:0 ""
+ situation_Our_story_forge:0 "提供资料特权"
+ situation_Our_story_forge_desc:0 "虽然我们的资源必须分配到其他重要事务上，但我们可以尽可能的提供信息。"
+ situation_Our_story_forge_tip:0 "采用此解决方案的期间，解锁下一阶段所需的£research£科技将有概率直接作为研究选项出现。"
+ situation_Our_story_full:0 "全力推进"
+ situation_Our_story_full_desc:0 "我们已经落后太多，必须全力进行。"
+ situation_Our_story_full_tip:0 "$situation_speed_tt$: §G+100%§!"
+ situation_Our_story_full_tip_desc:0 "全力推进编年史项目"
+ situation_Our_story_pause:0 "暂停研究"
+ situation_Our_story_pause_desc:0 "暂停编年史项目，期间免除维护费。"
+ situation_Our_story_pause_tip:0 "$situation_speed_tt$: §R-1000%§!\n局势维护费: §G-1000%§!"
+ situation_Our_story_pause_tip_desc:0 "暂停编年史项目"
+
+ situation_Our_story_prerequisites_fail:0 "需要研发前置科技"
+
+ ap_Our_story_stage2_prerequisites:0 "§H推进下一阶段需要:§! \n[owner.ap_Our_story_stage2_prerequisites_A]\n[owner.ap_Our_story_stage2_prerequisites_B]\n[owner.ap_Our_story_stage2_prerequisites_C]"
+ ap_Our_story_stage2_prerequisites_A_success:0 "$TRIGGER_PASS$ $physics_research_icon_with_space$$tech_power_hub_1$"
+ ap_Our_story_stage2_prerequisites_A_fail:0 "$TRIGGER_FAIL$ $physics_research_icon_with_space$$tech_power_hub_1$"
+ ap_Our_story_stage2_prerequisites_B_success:0 "$TRIGGER_PASS$ $engineering_research_icon_with_space$$tech_mineral_purification_1$"
+ ap_Our_story_stage2_prerequisites_B_fail:0 "$TRIGGER_FAIL$ $engineering_research_icon_with_space$$tech_mineral_purification_1$"
+ ap_Our_story_stage2_prerequisites_C_success:0 "$TRIGGER_PASS$ $society_research_icon_with_space$$tech_food_processing_1$"
+ ap_Our_story_stage2_prerequisites_C_fail:0 "$TRIGGER_FAIL$ $society_research_icon_with_space$$tech_food_processing_1$"
+
+ ap_Our_story_stage3_prerequisites:0 "§H推进下一阶段需要:§! \n[owner.ap_Our_story_stage3_prerequisites_A]\n[owner.ap_Our_story_stage3_prerequisites_B]\n[owner.ap_Our_story_stage3_prerequisites_C]"
+ ap_Our_story_stage3_prerequisites_A_success:0 "$TRIGGER_PASS$ $society_research_icon_with_space$$tech_colonial_centralization$"
+ ap_Our_story_stage3_prerequisites_A_fail:0 "$TRIGGER_FAIL$ $society_research_icon_with_space$$tech_colonial_centralization$"
+ ap_Our_story_stage3_prerequisites_B_success:0 "$TRIGGER_PASS$ $engineering_research_icon_with_space$$tech_alloys_1$"
+ ap_Our_story_stage3_prerequisites_B_fail:0 "$TRIGGER_FAIL$ $engineering_research_icon_with_space$$tech_alloys_1$"
+ ap_Our_story_stage3_prerequisites_C_success:0 "$TRIGGER_PASS$ $engineering_research_icon_with_space$$tech_luxuries_1$"
+ ap_Our_story_stage3_prerequisites_C_fail:0 "$TRIGGER_FAIL$ $engineering_research_icon_with_space$$tech_luxuries_1$"
+
+ ap_Our_story_stage4_prerequisites:0 "§H推进下一阶段需要:§! \n[owner.ap_Our_story_stage4_prerequisites_A]\n[owner.ap_Our_story_stage4_prerequisites_B]\n[owner.ap_Our_story_stage4_prerequisites_C]"
+ ap_Our_story_stage4_prerequisites_A_success:0 "$TRIGGER_PASS$ $engineering_research_icon_with_space$$tech_BA_pyroxenes_using$"
+ ap_Our_story_stage4_prerequisites_A_fail:0 "$TRIGGER_FAIL$ $engineering_research_icon_with_space$$tech_BA_pyroxenes_using$"
+ ap_Our_story_stage4_prerequisites_B_success:0 "$TRIGGER_PASS$ $society_research_icon_with_space$$tech_colonization_2$"
+ ap_Our_story_stage4_prerequisites_B_fail:0 "$TRIGGER_FAIL$ $society_research_icon_with_space$$tech_colonization_2$"
+ ap_Our_story_stage4_prerequisites_C_success:0 "$TRIGGER_PASS$ $society_research_icon_with_space$$tech_interstellar_fleet_traditions$"
+ ap_Our_story_stage4_prerequisites_C_fail:0 "$TRIGGER_FAIL$ $society_research_icon_with_space$$tech_interstellar_fleet_traditions$"
+
+ ap_Our_story_stage5_prerequisites:0 "§H推进下一阶段需要:§! \n[owner.ap_Our_story_stage5_prerequisites_A]\n[owner.ap_Our_story_stage5_prerequisites_B]"
+ ap_Our_story_stage5_prerequisites_A_success:0 "$TRIGGER_PASS$ $physics_research_icon_with_space$$tech_self_aware_logic$"
+ ap_Our_story_stage5_prerequisites_A_fail:0 "$TRIGGER_FAIL$ $physics_research_icon_with_space$$tech_self_aware_logic$"
+ ap_Our_story_stage5_prerequisites_B_success:0 "$TRIGGER_PASS$ $physics_research_icon_with_space$$tech_space_science_3$"
+ ap_Our_story_stage5_prerequisites_B_fail:0 "$TRIGGER_FAIL$ $physics_research_icon_with_space$$tech_space_science_3$"
+
+ ap_Our_story_stage6_prerequisites:0 "§H推进下一阶段需要:§! \n[owner.ap_Our_story_stage6_prerequisites_A]\n[owner.ap_Our_story_stage6_prerequisites_B]"
+ ap_Our_story_stage6_prerequisites_A_success:0 "$TRIGGER_PASS$ $society_research_icon_with_space$$tech_galactic_administration$"
+ ap_Our_story_stage6_prerequisites_A_fail:0 "$TRIGGER_FAIL$ $society_research_icon_with_space$$tech_galactic_administration$"
+ ap_Our_story_stage6_prerequisites_B_success:0 "$TRIGGER_PASS$ $engineering_research_icon_with_space$$tech_starbase_4$"
+ ap_Our_story_stage6_prerequisites_B_fail:0 "$TRIGGER_FAIL$ $engineering_research_icon_with_space$$tech_starbase_4$"
+
+ ap_Our_story_stage7_prerequisites:0 "§H推进下一阶段需要:§! \n[owner.ap_Our_story_stage7_prerequisites_A]\n[owner.ap_Our_story_stage7_prerequisites_B]"
+ ap_Our_story_stage7_prerequisites_A_success:0 "$TRIGGER_PASS$ $engineering_research_icon_with_space$$tech_BA_keystone_crafting$"
+ ap_Our_story_stage7_prerequisites_A_fail:0 "$TRIGGER_FAIL$ $engineering_research_icon_with_space$$tech_BA_keystone_crafting$"
+ ap_Our_story_stage7_prerequisites_B_success:0 "$TRIGGER_PASS$ $engineering_research_icon_with_space$$tech_housing_2$"
+ ap_Our_story_stage7_prerequisites_B_fail:0 "$TRIGGER_FAIL$ $engineering_research_icon_with_space$$tech_housing_2$"
+
+ ap_Our_story_stage8_prerequisites:0 "§H推进下一阶段需要:§! \n[owner.ap_Our_story_stage8_prerequisites_A]\n[owner.ap_Our_story_stage8_prerequisites_B]"
+ ap_Our_story_stage8_prerequisites_A_success:0 "$TRIGGER_PASS$ $society_research_icon_with_space$$tech_capital_productivity_2$"
+ ap_Our_story_stage8_prerequisites_A_fail:0 "$TRIGGER_FAIL$ $society_research_icon_with_space$$tech_capital_productivity_2$"
+ ap_Our_story_stage8_prerequisites_B_success:0 "$TRIGGER_PASS$ $society_research_icon_with_space$$tech_ecological_adaptation$"
+ ap_Our_story_stage8_prerequisites_B_fail:0 "$TRIGGER_FAIL$ $society_research_icon_with_space$$tech_ecological_adaptation$"
+
+
+ #飞升-为虚无赐名
+ #
  #摇篮计划-前期准备
  situation_Project_Cradle_A:0 "摇篮计划"
  situation_Project_Cradle_A_type:0 "摇篮计划"
@@ -1761,6 +1842,8 @@
  tech_BA_Kivotos_chronicle_stage6_desc: ""
  tech_BA_Kivotos_chronicle_stage7: "学园编年史：阶段7"
  tech_BA_Kivotos_chronicle_stage7_desc: ""
+ tech_BA_Kivotos_chronicle_stage8: "学园编年史：阶段8"
+ tech_BA_Kivotos_chronicle_stage8_desc: ""
 
  tech_BA_club_Game_development_department_01:0 "社团项目-$Game_development_department$：市场调研"
  tech_BA_club_Game_development_department_01_desc:0 ""
@@ -1873,16 +1956,7 @@
  halo_asset:0 "神性的元素之一，"
 
 ### ascension perks ###
- ap_BA_halo_awaken:0 "光环觉醒"
- ap_BA_halo_awaken_desc:0 "自出生以来便伴随我们的神秘光环，究竟隐藏着怎样的秘密？既然它们是一些神秘象征的具现，我们是否能够探索到这些神秘的本源？"
- ap_BA_halo_awaken_tip:0 "开始§G光环觉醒§!局势，对整个物种进行改造以发掘光环的潜力。"
- In_awaken_route:0 "$TRIGGER_FAIL$研究完成所有的光环研究科技，完成$situation_Into_Halo$局势，并选择§Y$ap_BA_halo_awaken$§!路线。"
-
- ap_BA_Our_story:0 "我们的故事"
- ap_BA_Our_story_desc:0 "我们将走向何方由自己来决定，我们的历史当然不会结束在这里。这就是我们用双手亲自写下的，我们的故事。"
- ap_BA_Our_story_tip:0 "解锁一系列£research£项目，为§B学园都市星球§!带来巨大增益"
  ap_BA_origin_limit:0 "$TRIGGER_FAIL$需要先完成该起源的事件链."
- requires_ascension_perks_4:0 "$TRIGGER_FAIL$需要首先选择另外四个飞升天赋。"
 
  ap_BA_new_frontier:0 "新边界"
  ap_BA_new_frontier_desc:0 "我们所到之处，终是碧蓝的世界。"
@@ -1894,6 +1968,22 @@
  BA_tr_kivotos_finished_YES:0 "$TRIGGER_PASS$完成§G学园联邦传统§!"
  BA_tr_kivotos_finished_NO:0 "$TRIGGER_FAIL$完成§G学园联邦传统§!"
  BA_chronicle_finished:0 "$TRIGGER_FAIL$需要完成对学园都市星球的改造"
+
+ ap_BA_halo_awaken:0 "光环觉醒"
+ ap_BA_halo_awaken_desc:0 "自出生以来便伴随我们的神秘光环，究竟隐藏着怎样的秘密？既然它们是一些神秘象征的具现，我们是否能够探索到这些神秘的本源？"
+ ap_BA_halo_awaken_tip:0 "开始§G光环觉醒§!局势，对整个物种进行改造以发掘光环的潜力。"
+ In_awaken_route:0 "$TRIGGER_FAIL$研究完成所有的光环研究科技，完成$situation_Into_Halo$局势，并选择§Y$ap_BA_halo_awaken$§!路线。"
+
+ ap_BA_Our_story:0 "我们的故事"
+ ap_BA_Our_story_desc:0 "我们将走向何方由自己来决定，我们的历史当然不会结束在这里。这就是我们用双手亲自写下的，我们的故事。"
+ ap_BA_Our_story_tip:0 "\n—§R与§_$ap_BA_Name_the_void$§!互斥§!"
+
+
+ ap_BA_Name_the_void:0 "为崇高赐名"
+ ap_BA_Name_the_void_desc:0 "我们为无名之物赋予了名字，于是我们得以拥抱它，利用它。我们化腐朽为神奇，将其铸造为我们自己的历史。\n\n—§R与§B$ap_BA_Our_story$§!互斥"
+ ap_BA_Name_the_void_tip:0 "\n—§R与§B$ap_BA_Our_story$§!互斥§!"
+ ap_BA_Name_the_void_effect_fake:0 "开始局势：§Y学园都市的三重彩§! \n\n"
+ ap_BA_Name_the_void_tip_unknown:0 "$TRIGGER_FAIL$我们真的了解它吗？"
 
 
 

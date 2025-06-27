@@ -730,8 +730,8 @@ spriteTypes = {
 	}
 	# Ascension Perks
 	spriteType = {
-		name = "GFX_ap_BA_Our_story"
-		texturefile = "gfx/interface/icons/ascension_perks/ap_BA_Our_story.dds"
+		name = "GFX_ap_BA_new_frontier"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_BA_new_frontier.dds"
 		alwaystransparent = yes
 	}
 	spriteType = {
@@ -740,8 +740,13 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 	spriteType = {
-		name = "GFX_ap_BA_new_frontier"
-		texturefile = "gfx/interface/icons/ascension_perks/ap_BA_new_frontier.dds"
+		name = "GFX_ap_BA_Our_story"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_BA_Our_story.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_BA_Name_the_void"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_BA_Name_the_void.dds"
 		alwaystransparent = yes
 	}
 }

@@ -153,7 +153,7 @@ BA_origin_finished = {
 				has_origin = origin_Kivotos_Unnamed_starting
 			}
 		}
-		custom_tooltip = {
+		custom_tooltip_fail = {
 			text = ap_BA_origin_limit
 			has_country_flag = BA_origin_finished
 		}
@@ -344,5 +344,16 @@ BA_SI_Trinity_route = {
 		has_technology = tech_BA_SI_Trinity_A01
 		has_technology = tech_BA_SI_Trinity_B01
 		has_technology = tech_BA_SI_Trinity_C01
+	}
+}
+
+##### Else
+BA_cant_research_tech = {
+	optimize_memory
+	OR = {
+		has_technology = $tech$
+		NOT = {
+			can_research_technology = $tech$
+		}
 	}
 }

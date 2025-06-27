@@ -58,7 +58,7 @@ building_BA_starlink_2 = {
 	potential = {
 		exists = owner
 		owner = {
-			has_ascension_perk = ap_BA_new_frontier
+			has_authority = auth_kivotos
 		}
 	}
 	allow = {
@@ -86,6 +86,9 @@ building_BA_starlink_2 = {
 		upkeep = {
 			energy = 4
 		}
+	}
+	prerequisites = {
+		tech_BA_Kivotos_chronicle_stage6
 	}
 }
 

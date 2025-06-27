@@ -69,13 +69,13 @@ situation_Kyrie_ruin_research = {
 		set_situation_flag = situation_Kyrie
 	}
 	stages = {
-		situation_Kyrie_ruin_research_1 = {
+		stage_1 = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_blue
 			end = 24
 			custom_tooltip = situation_Kyrie_ruin_research_1_tip
 		}
-		situation_Kyrie_ruin_research_2 = {
+		stage_2 = {
 			icon = GFX_situation_stage_2
 			icon_background = GFX_situation_stage_frame_blue
 			end = 48			#持续等待建造实验室 +2年 （4
@@ -89,7 +89,7 @@ situation_Kyrie_ruin_research = {
 				}
 			}
 		}
-		situation_Kyrie_ruin_research_3 = {
+		stage_3 = {
 			icon = GFX_situation_stage_3
 			icon_background = GFX_situation_stage_frame_blue
 			end = 84			#持续3年 +研究科技清除废墟 （7
@@ -103,7 +103,7 @@ situation_Kyrie_ruin_research = {
 				}
 			}
 		}
-		situation_Kyrie_ruin_research_4 = {
+		stage_4 = {
 			icon = GFX_situation_stage_4
 			icon_background = GFX_situation_stage_frame_blue
 			end = 96			#1年（8
@@ -116,7 +116,7 @@ situation_Kyrie_ruin_research = {
 				}
 			}
 		}
-		situation_Kyrie_ruin_research_5 = {
+		stage_5 = {
 			icon = GFX_situation_stage_5
 			icon_background = GFX_situation_stage_frame_blue
 			end = 97			#废墟清除完成后进行下一步
@@ -200,19 +200,19 @@ situation_Kyrie_planet_cleaning = {
 			category = situations
 			upkeep = {
 				trigger = {
-					current_stage = situation_Kyrie_planet_cleaning_1
+					current_stage = stage_1
 				}
 				alloys = 50
 			}
 			upkeep = {
 				trigger = {
-					current_stage = situation_Kyrie_planet_cleaning_2
+					current_stage = stage_2
 				}
 				energy = 50
 			}
 			produces = {
 				trigger = {
-					current_stage = situation_Kyrie_planet_cleaning_2
+					current_stage = stage_2
 				}
 				minerals = 50
 				alloys = 40
@@ -227,7 +227,7 @@ situation_Kyrie_planet_cleaning = {
 		set_situation_flag = situation_Kyrie
 	}
 	stages = {
-		situation_Kyrie_planet_cleaning_1 = {
+		stage_1 = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_blue
 			end = 120			#持续1年
@@ -236,7 +236,7 @@ situation_Kyrie_planet_cleaning = {
 				set_situation_flag = situation_Kyrie_planet_cleaning
 			}
 		}
-		situation_Kyrie_planet_cleaning_2 = {
+		stage_2 = {
 			icon = GFX_situation_stage_2
 			icon_background = GFX_situation_stage_frame_blue
 			end = 720			#持续6年
@@ -249,7 +249,7 @@ situation_Kyrie_planet_cleaning = {
 				}
 			}
 		}
-		situation_Kyrie_planet_cleaning_3 = {
+		stage_3 = {
 			icon = GFX_situation_stage_3
 			icon_background = GFX_situation_stage_frame_blue
 			end = 721			#持续6年
@@ -385,13 +385,13 @@ situation_Kyrie_engage_enemy = {
 		}
 	}
 	stages = {
-		situation_Kyrie_engage_enemy_1 = {
+		stage_1 = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_blue
 			end = 150
 			custom_tooltip = situation_Kyrie_engage_enemy_1_tip
 		}
-		situation_Kyrie_engage_enemy_2 = {
+		stage_2 = {
 			icon = GFX_situation_stage_2
 			icon_background = GFX_situation_stage_frame_blue
 			end = 300
@@ -410,7 +410,7 @@ situation_Kyrie_engage_enemy = {
 				}
 			}
 		}
-		situation_Kyrie_engage_enemy_3 = {
+		stage_3 = {
 			icon = GFX_situation_stage_3
 			icon_background = GFX_situation_stage_frame_blue
 			end = 450
@@ -429,7 +429,7 @@ situation_Kyrie_engage_enemy = {
 				}
 			}
 		}
-		situation_Kyrie_engage_enemy_4 = {
+		stage_4 = {
 			icon = GFX_situation_stage_4
 			icon_background = GFX_situation_stage_frame_blue
 			end = 600
