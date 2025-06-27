@@ -1891,11 +1891,11 @@ planet_event = {
 			modifier = BA_mistake_hit
 			days = 360
 		}
-		random_owned_pop = {
-			kill_pop = yes
+		random_owned_pop_group = {
+			kill_all_pop = yes
 		}
-		random_owned_pop = {
-			kill_pop = yes
+		random_owned_pop_group = {
+			kill_all_pop = yes
 		}
 		owner = {
 			set_timed_country_flag = {
@@ -2152,8 +2152,8 @@ planet_event = {
 	option = {
 		name = BA_Project.8227.confirm
 		add_planet_devastation = 20
-		random_owned_pop = {
-			kill_pop = yes
+		random_owned_pop_group = {
+			kill_all_pop = yes
 		}
 		owner = {
 			set_timed_country_flag = {

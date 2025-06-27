@@ -1012,6 +1012,180 @@ utility_component_template = {
 	#upgrades_to = "LARGE_T5BADGE"
 }
 
+##### 爱丽丝专用
+utility_component_template = {
+	key = "SMALL_ARISBACKPACK"
+	size = small
+	icon = "GFX_T5BACKPACK"
+	icon_frame = 1
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 12
+			sr_dark_matter = 0.2
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.16
+		}
+	}
+	modifier = {
+		ship_shield_add = 185
+		ship_shield_regen_add_static = 1.85
+		ship_armor_add = 185
+		ship_armor_regen_add_static = 1.85
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T5"
+	}
+	component_set = "T5backpack"
+	upgrades_to = "SMALL_T6BACKPACK"
+}
+
+utility_component_template = {
+	key = "MEDIUM_ARISBACKPACK"
+	size = medium
+	icon = "GFX_T5BACKPACK"
+	icon_frame = 1
+	power = -100
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 18
+			sr_dark_matter = 0.3
+		}
+		upkeep = {
+			energy = 0.44
+			alloys = 0.2
+		}
+	}
+	modifier = {
+		ship_shield_add = 465
+		ship_shield_regen_add_static = 4.65
+		ship_armor_add = 465
+		ship_armor_regen_add_static = 4.65
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T5"
+	}
+	component_set = "T5backpack"
+	upgrades_to = "MEDIUM_T6BACKPACK"
+}
+
+utility_component_template = {
+	key = "LARGE_ARISBACKPACK"
+	size = large
+	icon = "GFX_T5BACKPACK"
+	icon_frame = 1
+	power = -200
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 24
+			sr_dark_matter = 0.4
+		}
+		upkeep = {
+			energy = 0.88
+			alloys = 0.24
+		}
+	}
+	modifier = {
+		ship_shield_add = 1110
+		ship_shield_regen_add_static = 11.1
+		ship_armor_add = 1110
+		ship_armor_regen_add_static = 11.1
+	}
+	prerequisites = {
+		"tech_BA_Tactical_backpack_T5"
+	}
+	component_set = "T5backpack"
+	upgrades_to = "LARGE_T6BACKPACK"
+}
+
+utility_component_template = {
+	key = "SMALL_ARISBADGE"
+	size = small
+	icon = "GFX_T5BADGE"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 12
+			sr_dark_matter = 0.2
+		}
+		upkeep = {
+			energy = 0.22
+			alloys = 0.16
+		}
+	}
+	modifier = {
+		ship_evasion_add = 7
+		ship_speed_mult = 0.1
+		ship_hull_add = 185
+	}
+	prerequisites = {
+		"tech_BA_Badge_T5"
+	}
+	component_set = "T5badge"
+	upgrades_to = "SMALL_T6BADGE"
+}
+
+utility_component_template = {
+	key = "MEDIUM_ARISBADGE"
+	size = medium
+	icon = "GFX_T5BADGE"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 18
+			sr_dark_matter = 0.3
+		}
+		upkeep = {
+			energy = 0.44
+			alloys = 0.2
+		}
+	}
+	modifier = {
+		ship_evasion_add = 7
+		ship_speed_mult = 0.1
+		ship_hull_add = 465
+	}
+	prerequisites = {
+		"tech_BA_Badge_T5"
+	}
+	component_set = "T5badge"
+	upgrades_to = "MEDIUM_T6BADGE"
+}
+
+utility_component_template = {
+	key = "LARGE_ARISBADGE"
+	size = large
+	icon = "GFX_T5BADGE"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			sr_keystone = 24
+			sr_dark_matter = 0.4
+		}
+		upkeep = {
+			energy = 0.88
+			alloys = 0.24
+		}
+	}
+	modifier = {
+		ship_evasion_add = 7
+		ship_speed_mult = 0.1
+		ship_hull_add = 1110
+	}
+	prerequisites = {
+		"tech_BA_Badge_T5"
+	}
+	component_set = "T5badge"
+	upgrades_to = "LARGE_T6BADGE"
+}
 
 ##### 先驱者专用
 utility_component_template = {

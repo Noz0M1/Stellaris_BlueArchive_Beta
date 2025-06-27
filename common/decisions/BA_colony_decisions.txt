@@ -193,7 +193,7 @@ decision_BA_new_ringworld = {
 	icon = decision_arcology_project
 	potential = {
 		owner = {
-			#has_ascension_perk = ap_BA_new_frontier
+			has_authority = auth_kivotos
 		}
 		is_planet_class = pc_ringworld_habitable
 	}
@@ -203,6 +203,9 @@ decision_BA_new_ringworld = {
 			free_district_slots < 1
 		}
 		num_uncleared_blockers < 1
+		owner = {
+			has_technology = tech_BA_keystone_automatic_crafting
+		}
 	}
 	enactment_time = 1800
 	resources = {
@@ -227,7 +230,6 @@ decision_BA_new_ringworld = {
 		}
 	}
 }
-
 
 ########## 社团项目 ##########
 #对策委员会

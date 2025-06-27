@@ -3,7 +3,6 @@
 ###############
 #一段光环
 leader_trait_halo_awakened = {
-	cost = 0
 	icon = "gfx/interface/icons/traits/Icon_halo_full_awakened.dds"
 	randomized = no
 	triggered_modifier = {
@@ -64,7 +63,6 @@ leader_trait_halo_awakened = {
 
 #二段光环
 leader_trait_halo_full_awakened = {
-	cost = 0
 	icon = "gfx/interface/icons/traits/Icon_halo_full_awakened.dds"
 	randomized = no
 	triggered_modifier = {
@@ -126,7 +124,6 @@ leader_trait_halo_full_awakened = {
 
 #先驱者光环
 leader_trait_halo_fe = {
-	cost = 0
 	icon = "gfx/interface/icons/traits/Icon_airi_gold.dds"
 	randomized = no
 	triggered_modifier = {
@@ -188,7 +185,6 @@ leader_trait_halo_fe = {
 ### 学园理念
 #千年G10：档案数据库重构
 leader_trait_SI_Millennium_G10 = {
-	cost = 0
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_custom_SP.dds"
 	randomized = no
 	triggered_fleet_modifier = {
@@ -229,7 +225,6 @@ leader_trait_SI_Millennium_G10 = {
 ###############
 #星野
 leader_trait_hoshino_SP1 = {
-	cost = 0
 	initial = no
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_hoshino_SP1.dds"
 	randomized = no
@@ -248,7 +243,6 @@ leader_trait_hoshino_SP1 = {
 }
 
 leader_trait_hoshino_SP2 = {
-	cost = 0
 	initial = no
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_hoshino_SP2.dds"
 	randomized = no
@@ -265,7 +259,6 @@ leader_trait_hoshino_SP2 = {
 }
 
 leader_trait_hoshino_SP3 = {
-	cost = 0
 	initial = no
 	inline_script = {
 		script = trait/icon
@@ -283,7 +276,6 @@ leader_trait_hoshino_SP3 = {
 }
 
 leader_trait_hoshino_SP4 = {
-	cost = 0
 	initial = no
 	inline_script = {
 		script = trait/icon
@@ -304,7 +296,6 @@ leader_trait_hoshino_SP4 = {
 }
 
 leader_trait_hoshino_SP5 = {
-	cost = 0
 	initial = no
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_hoshino_SP4.dds"
 	randomized = no
@@ -325,7 +316,6 @@ leader_trait_hoshino_SP5 = {
 
 #日奈
 leader_trait_hina_SP1 = {
-	cost = 0
 	initial = no
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_hina_SP1.dds"
 	randomized = no
@@ -341,7 +331,6 @@ leader_trait_hina_SP1 = {
 }
 
 leader_trait_hina_SP2 = {
-	cost = 0
 	initial = no
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_hina_SP2.dds"
 	randomized = no
@@ -361,7 +350,6 @@ leader_trait_hina_SP2 = {
 }
 
 leader_trait_hina_SP3 = {
-	cost = 0
 	initial = no
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_hina_SP2.dds"
 	custom_tooltip = leader_trait_hina_SP3_tip
@@ -373,7 +361,6 @@ leader_trait_hina_SP3 = {
 
 #未花
 leader_trait_mika_SP1 = {
-	cost = 0
 	initial = no
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_mika_SP1.dds"
 	randomized = no
@@ -389,7 +376,6 @@ leader_trait_mika_SP1 = {
 }
 
 leader_trait_mika_SP2 = {
-	cost = 0
 	initial = no
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_mika_SP2.dds"
 	randomized = no
@@ -404,7 +390,6 @@ leader_trait_mika_SP2 = {
 }
 
 leader_trait_mika_SP3 = {
-	cost = 0
 	initial = no
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_mika_SP2.dds"
 	randomized = no
@@ -423,7 +408,6 @@ leader_trait_mika_SP3 = {
 
 #佑香
 leader_trait_yuuka_SP1 = {
-	cost = 0
 	initial = no
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_yuuka_SP1.dds"
 	randomized = no
@@ -443,7 +427,6 @@ leader_trait_yuuka_SP1 = {
 }
 
 leader_trait_yuuka_SP2 = {
-	cost = 0
 	initial = no
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_yuuka_SP2.dds"
 	randomized = no
@@ -454,7 +437,6 @@ leader_trait_yuuka_SP2 = {
 }
 
 leader_trait_yuuka_SP3 = {
-	cost = 0
 	initial = no
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_yuuka_SP1.dds"
 	randomized = no
@@ -474,7 +456,6 @@ leader_trait_yuuka_SP3 = {
 
 #亚津子（统治者
 leader_trait_atsuko_SP1 = {
-	cost = 0
 	initial = no
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_atsuko_SP1.dds"
 	randomized = no
@@ -494,7 +475,6 @@ leader_trait_atsuko_SP1 = {
 
 #纱织
 leader_trait_saori_SP1 = {
-	cost = 0
 	initial = no
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_saori_SP1.dds"
 	randomized = no
@@ -513,7 +493,6 @@ leader_trait_saori_SP1 = {
 
 #忧
 leader_trait_ui_SP1 = {
-	cost = 0
 	initial = no
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_ui_SP1.dds"
 	randomized = no
@@ -532,7 +511,6 @@ leader_trait_ui_SP1 = {
 }
 
 leader_trait_ui_SP2 = {
-	cost = 0
 	initial = no
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_ui_SP2.dds"
 	randomized = no
@@ -551,7 +529,6 @@ leader_trait_ui_SP2 = {
 }
 
 leader_trait_ui_SP3 = {
-	cost = 0
 	initial = no
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_ui_SP1.dds"
 	randomized = no
@@ -567,7 +544,6 @@ leader_trait_ui_SP3 = {
 
 #爱丽丝
 leader_trait_aris_SP = {
-	cost = 0
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_leader_trait_aris.dds"
 	#is_councilor_trait_for_ruler = yes
 	randomized = no
@@ -618,7 +594,6 @@ leader_trait_aris_SP = {
 #### 先驱者
 #先驱者：议员
 leader_trait_councilor_fe = {
-	cost = 0
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_custom_SP.dds"
 	randomized = no
 	sorting_priority = 999
@@ -630,7 +605,6 @@ leader_trait_councilor_fe = {
 
 #先驱者：指挥官
 leader_trait_commander_fe = {
-	cost = 0
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_custom_SP.dds"
 	randomized = no
 	sorting_priority = 999
@@ -643,7 +617,6 @@ leader_trait_commander_fe = {
 #### 定制
 #泛用
 leader_trait_customize = {
-	cost = 0
 	initial = no
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_leader_customize.dds"
 	randomized = no
@@ -654,7 +627,6 @@ leader_trait_customize = {
 
 #芹娜
 leader_trait_custom_Serina_SP = {
-	cost = 0
 	initial = no
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_custom_SP.dds"
 	randomized = no
@@ -671,7 +643,6 @@ leader_trait_custom_Serina_SP = {
 
 #伊织
 leader_trait_custom_Iori_SP = {
-	cost = 0
 	initial = no
 	icon = "gfx/interface/icons/traits/sp_leaders/Icon_custom_SP.dds"
 	randomized = no

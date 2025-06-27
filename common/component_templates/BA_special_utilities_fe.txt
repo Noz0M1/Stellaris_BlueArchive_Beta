@@ -399,7 +399,6 @@ weapon_component_template = {
 	icon_frame = 1
 	firing_arc = 25
 	min_range = 10
-	use_ship_kill_target = no
 	prerequisites = {
 		#"tech_BA_Fantacy_colors"
 		tech_BA_fe
@@ -457,7 +456,6 @@ weapon_component_template = {
 	icon_frame = 1
 	firing_arc = 25
 	min_range = 10
-	use_ship_kill_target = no
 	prerequisites = {
 		#"tech_BA_SuperNova"
 		tech_BA_fe
@@ -511,13 +509,8 @@ weapon_component_template = {
 	key = "Sweepers"
 	size = planet_killer
 	type = planet_killer
-	use_ship_kill_target = no
 	icon = GFX_ship_part_world_cracker
 	icon_frame = 1
-	size_restriction = {
-		colossus
-		BA_hub_ship
-	}
 	component_set = "Sweepers"
 	planet_destruction_gfx = "neutron_planet_gfx"
 	ai_weight = {
