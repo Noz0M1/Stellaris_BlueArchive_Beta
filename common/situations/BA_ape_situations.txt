@@ -1,0 +1,417 @@
+situation_Our_story = {
+	category = positive
+	desc = {
+		text = situation_Our_story_desc_1
+		trigger = {
+			situation_progress < 120
+		}
+	}
+	desc = {
+		text = situation_Our_story_desc_2
+		trigger = {
+			situation_progress > 120
+			situation_progress < 270
+		}
+	}
+	desc = {
+		text = situation_Our_story_desc_3
+		trigger = {
+			situation_progress > 270
+			situation_progress < 450
+		}
+	}
+	desc = {
+		text = situation_Our_story_desc_4
+		trigger = {
+			situation_progress > 450
+			situation_progress < 660
+		}
+	}
+	desc = {
+		text = situation_Our_story_desc_5
+		trigger = {
+			situation_progress > 660
+			situation_progress < 900
+		}
+	}
+	desc = {
+		text = situation_Our_story_desc_6
+		trigger = {
+			situation_progress > 900
+			situation_progress < 1260
+		}
+	}
+	desc = {
+		text = situation_Our_story_desc_7
+		trigger = {
+			situation_progress > 1260
+			situation_progress < 1800
+		}
+	}
+	desc = {
+		text = situation_Our_story_desc_8
+		trigger = {
+			situation_progress > 1800
+		}
+	}
+	picture = GFX_BA_chronicle_8
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_positive
+	monthly_progress = {
+		base = 30
+		modifier = {
+			multiply = 0
+			current_situation_approach = situation_Our_story_pause
+			desc = situation_Our_story_pause_tip_desc
+		}
+		modifier = {
+			multiply = 2
+			current_situation_approach = situation_Our_story_full
+			desc = situation_Our_story_full_tip_desc
+		}
+		modifier = {
+			multiply = 0
+			desc = ap_Our_story_stage2_prerequisites
+			custom_tooltip = {
+				text = ap_Our_story_stage2_prerequisites
+				current_stage = stage_2
+				owner = {
+					NAND = {
+						has_technology = tech_power_hub_1
+						has_technology = tech_mineral_purification_1
+						has_technology = tech_food_processing_1
+					}
+				}
+			}
+		}
+		modifier = {
+			multiply = 0
+			desc = ap_Our_story_stage3_prerequisites
+			custom_tooltip = {
+				text = ap_Our_story_stage3_prerequisites
+				current_stage = stage_3
+				owner = {
+					NAND = {
+						has_technology = tech_colonial_centralization
+						has_technology = tech_alloys_1
+						has_technology = tech_luxuries_1
+					}
+				}
+			}
+		}
+		modifier = {
+			multiply = 0
+			desc = ap_Our_story_stage4_prerequisites
+			custom_tooltip = {
+				text = ap_Our_story_stage4_prerequisites
+				current_stage = stage_4
+				owner = {
+					NAND = {
+						has_technology = tech_BA_pyroxenes_using
+						has_technology = tech_colonization_2
+						has_technology = tech_interstellar_fleet_traditions
+					}
+				}
+			}
+		}
+		modifier = {
+			multiply = 0
+			desc = ap_Our_story_stage5_prerequisites
+			custom_tooltip = {
+				text = ap_Our_story_stage5_prerequisites
+				current_stage = stage_5
+				owner = {
+					NAND = {
+						has_technology = tech_self_aware_logic
+						has_technology = tech_space_science_3
+					}
+				}
+			}
+		}
+		modifier = {
+			multiply = 0
+			desc = ap_Our_story_stage6_prerequisites
+			custom_tooltip = {
+				text = ap_Our_story_stage6_prerequisites
+				current_stage = stage_6
+				owner = {
+					NAND = {
+						has_technology = tech_galactic_administration
+						has_technology = tech_starbase_4
+					}
+				}
+			}
+		}
+		modifier = {
+			multiply = 0
+			desc = ap_Our_story_stage7_prerequisites
+			custom_tooltip = {
+				text = ap_Our_story_stage7_prerequisites
+				current_stage = stage_7
+				owner = {
+					NAND = {
+						has_technology = tech_BA_keystone_crafting
+						has_technology = tech_housing_2
+					}
+				}
+			}
+		}
+		modifier = {
+			multiply = 0
+			desc = ap_Our_story_stage8_prerequisites
+			custom_tooltip = {
+				text = ap_Our_story_stage8_prerequisites
+				current_stage = stage_8
+				owner = {
+					NAND = {
+						has_technology = tech_capital_productivity_2
+						has_technology = tech_ecological_adaptation
+					}
+				}
+			}
+		}
+	}
+	stages = {
+		stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 120
+			on_first_enter = {
+				set_situation_flag = BA_ape_situation
+				set_situation_flag = situation_Our_story
+			}
+			custom_tooltip = situation_Our_story_desc_1
+		}
+		stage_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_blue
+			end = 270
+			on_first_enter = {
+				owner = {
+					country_event = {
+						id = BA_ape.2003
+					}
+					hidden_effect = {
+						give_technology = {
+							tech = tech_BA_Kivotos_chronicle_stage1
+							message = no
+						}
+					}
+				}
+			}
+			custom_tooltip = situation_Our_story_desc_2
+		}
+		stage_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_blue
+			end = 450
+			on_first_enter = {
+				owner = {
+					country_event = {
+						id = BA_ape.2004
+					}
+					hidden_effect = {
+						give_technology = {
+							tech = tech_BA_Kivotos_chronicle_stage2
+							message = no
+						}
+					}
+				}
+			}
+			custom_tooltip = situation_Our_story_desc_3
+		}
+		stage_4 = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_blue
+			end = 660
+			on_first_enter = {
+				owner = {
+					country_event = {
+						id = BA_ape.2005
+					}
+					hidden_effect = {
+						give_technology = {
+							tech = tech_BA_Kivotos_chronicle_stage3
+							message = no
+						}
+					}
+				}
+			}
+			custom_tooltip = situation_Our_story_desc_4
+		}
+		stage_5 = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_blue
+			end = 900
+			on_first_enter = {
+				owner = {
+					country_event = {
+						id = BA_ape.2006
+					}
+					hidden_effect = {
+						give_technology = {
+							tech = tech_BA_Kivotos_chronicle_stage4
+							message = no
+						}
+					}
+				}
+			}
+			custom_tooltip = situation_Our_story_desc_5
+		}
+		stage_6 = {
+			icon = GFX_situation_stage_6
+			icon_background = GFX_situation_stage_frame_blue
+			end = 1260
+			on_first_enter = {
+				owner = {
+					country_event = {
+						id = BA_ape.2007
+					}
+					hidden_effect = {
+						give_technology = {
+							tech = tech_BA_Kivotos_chronicle_stage5
+							message = no
+						}
+					}
+				}
+			}
+			custom_tooltip = situation_Our_story_desc_6
+		}
+		stage_7 = {
+			icon = GFX_situation_stage_7
+			icon_background = GFX_situation_stage_frame_blue
+			end = 1800
+			on_first_enter = {
+				owner = {
+					country_event = {
+						id = BA_ape.2008
+					}
+					hidden_effect = {
+						give_technology = {
+							tech = tech_BA_Kivotos_chronicle_stage6
+							message = no
+						}
+					}
+				}
+			}
+			custom_tooltip = situation_Our_story_desc_7
+		}
+		stage_8 = {
+			icon = GFX_situation_stage_8
+			icon_background = GFX_situation_stage_frame_blue
+			end = 2340
+			on_first_enter = {
+				owner = {
+					country_event = {
+						id = BA_ape.2009
+					}
+					hidden_effect = {
+						give_technology = {
+							tech = tech_BA_Kivotos_chronicle_stage7
+							message = no
+						}
+					}
+				}
+			}
+			custom_tooltip = situation_Our_story_desc_8
+		}
+	}
+	on_progress_complete = {
+		owner = {
+			country_event = {
+				id = BA_ape.2010
+			}
+			hidden_effect = {
+				give_technology = {
+					tech = tech_BA_Kivotos_chronicle_stage8
+					message = no
+				}
+			}
+		}
+	}
+	approach = {
+		name = situation_Our_story_default
+		icon = GFX_situation_approach_research
+		icon_background = GFX_situation_approach_bg_yellow
+		default = yes
+		on_select = {
+		}
+		resources = {
+			category = situations
+			upkeep = {
+				trigger = {
+					situation_monthly_progress > 0
+				}
+				energy = 20
+				minerals = 20
+				consumer_goods = 10
+			}
+		}
+	}
+	# approach = {
+	# 	name = situation_Our_story_forge
+	# 	active_tooltip = situation_Our_story_forge_tip
+	# 	icon = GFX_situation_approach_research
+	# 	icon_background = GFX_situation_approach_bg_green
+	# 	on_select = {
+	# 	}
+	# 	resources = {
+	# 		category = situations
+	# 		upkeep = {
+	# 			unity = 10
+	# 		}
+	# 		upkeep = {
+	# 			trigger = {
+	# 				situation_monthly_progress > 0
+	# 			}
+	# 			energy = 20
+	# 			minerals = 20
+	# 			consumer_goods = 10
+	# 		}
+	# 	}
+	# }
+	approach = {
+		name = situation_Our_story_full
+		active_tooltip = situation_Our_story_full_tip_desc
+		icon = GFX_situation_approach_research
+		icon_background = GFX_situation_approach_bg_green
+		on_select = {
+			custom_tooltip = situation_Our_story_full_tip
+		}
+		resources = {
+			upkeep = {
+				trigger = {
+					situation_monthly_progress > 0
+				}
+				energy = 40
+				minerals = 40
+				consumer_goods = 20
+			}
+		}
+		triggered_modifier = {
+			potential = {
+				situation_monthly_progress > 0
+			}
+			country_trade_produces_mult = -0.1
+			country_unity_produces_mult = -0.1
+		}
+	}
+	approach = {
+		name = situation_Our_story_pause
+		active_tooltip = situation_Our_story_pause_desc
+		icon = GFX_situation_approach_research
+		icon_background = GFX_situation_approach_bg_red
+		on_select = {
+			custom_tooltip = situation_Our_story_pause_tip
+		}
+	}
+	on_monthly = {
+		# events = {
+		# 	BA_ape.2001
+		# }
+		# random_events = {
+		# 	90 = 0
+		# 	10 = BA_ape.2001
+		# }
+	}
+}

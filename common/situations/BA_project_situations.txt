@@ -90,7 +90,7 @@ situation_Project_Cradle_A = {
 	}
 	######
 	stages = {
-		Project_Cradle_A_1 = {
+		stage_1 = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_blue
 			end = 28
@@ -98,7 +98,7 @@ situation_Project_Cradle_A = {
 			on_first_enter = {
 			}
 		}
-		Project_Cradle_A_2 = {
+		stage_2 = {
 			icon = GFX_situation_stage_2
 			icon_background = GFX_situation_stage_frame_blue
 			end = 52
@@ -112,7 +112,7 @@ situation_Project_Cradle_A = {
 				}
 			}
 		}
-		Project_Cradle_A_3 = {
+		stage_3 = {
 			icon = GFX_situation_stage_3
 			icon_background = GFX_situation_stage_frame_blue
 			end = 76
@@ -125,7 +125,7 @@ situation_Project_Cradle_A = {
 				}
 			}
 		}
-		Project_Cradle_A_3 = {
+		stage_3 = {
 			icon = GFX_situation_stage_4
 			icon_background = GFX_situation_stage_frame_blue
 			end = 100
@@ -207,7 +207,7 @@ situation_Project_Cradle_B = {
 	}
 	######
 	stages = {
-		Project_Cradle_B = {
+		stage_1 = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_blue
 			end = 100
@@ -320,7 +320,7 @@ situation_Project_Cradle_C = {
 	}
 	######
 	stages = {
-		Project_Cradle_C = {
+		stage_1 = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_blue
 			end = 180			# = 12*3*5
@@ -415,7 +415,7 @@ situation_Into_Halo = {
 	}
 	######
 	stages = {
-		situation_Into_Halo_1 = {
+		stage_1 = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_blue
 			end = 12
@@ -423,7 +423,7 @@ situation_Into_Halo = {
 			on_first_enter = {
 			}
 		}
-		situation_Into_Halo_2 = {
+		stage_2 = {
 			icon = GFX_situation_stage_2
 			icon_background = GFX_situation_stage_frame_blue
 			end = 24
@@ -436,7 +436,7 @@ situation_Into_Halo = {
 				}
 			}
 		}
-		situation_Into_Halo_3 = {
+		stage_3 = {
 			icon = GFX_situation_stage_3
 			icon_background = GFX_situation_stage_frame_blue
 			end = 36
@@ -557,7 +557,7 @@ situation_Halo_awaken = {
 	}
 	######
 	stages = {
-		situation_Halo_awaken_1 = {
+		stage_1 = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_blue
 			end = 30
@@ -565,7 +565,7 @@ situation_Halo_awaken = {
 			on_first_enter = {
 			}
 		}
-		situation_Halo_awaken_2 = {
+		stage_2 = {
 			icon = GFX_situation_stage_2
 			icon_background = GFX_situation_stage_frame_blue
 			end = 50
@@ -578,7 +578,7 @@ situation_Halo_awaken = {
 				}
 			}
 		}
-		situation_Halo_awaken_3 = {
+		stage_3 = {
 			icon = GFX_situation_stage_3
 			icon_background = GFX_situation_stage_frame_blue
 			end = 100
@@ -620,7 +620,8 @@ situation_mid_Aris_ask_help = {
 	fail_icon = GFX_situation_outcome_positive
 	fail_icon_frame = GFX_situation_outcome_frame_blue
 	######
-	start_value = 50
+	#start_value = 50
+	initial_progress = 50
 	progress_direction = bidirectional
 	monthly_progress = {
 		base = 0
@@ -716,7 +717,7 @@ situation_mid_Aris_ask_help = {
 	}
 	######
 	stages = {
-		mid_Aris_ask_help = {
+		stage_1 = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_blue
 			end = 100

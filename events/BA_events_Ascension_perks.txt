@@ -815,9 +815,9 @@ country_event = {
 ##### 我们的故事 #####
 #启动
 country_event = {
-	id = BA_ape.2001
-	title = "BA_ape.2001.name"
-	desc = "BA_ape.2001.desc"
+	id = BA_ape.2000
+	title = "BA_ape.2000.name"
+	desc = "BA_ape.2000.desc"
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_window"
@@ -825,116 +825,301 @@ country_event = {
 		portrait = Arona0001
 		room = "BA_Shittem_room"
 	}
-	immediate = {
-		begin_event_chain = {
-			event_chain = BA_Kivotos_chronicle_chain
-			target = root
-		}
-		#开启循环委托2
-		#激活一个项目
-		set_variable = {
-			which = BA_Kivotos_chronicle_count
-			value = 1
-		}
-		country_event = {
-			id = BA_ape.2002
-		}
-	}
 	option = {
-		name = BA_ape.2001.a
+		name = BA_ape.2000.a
 	}
 }
 
-#激活项目的分选器 （谨慎展开
-country_event = {
-	id = BA_ape.2002
+#局势月检事件 （谨慎展开
+situation_event = {
+	id = BA_ape.2001
 	is_triggered_only = yes
-	hide_window = yes
+	title = "BA_ape.2001.name"
+	desc = "BA_ape.2001.desc"
+	picture = GFX_BA_Hidden_lab
 	immediate = {
+		owner = {
+			start_situation = {
+				type = situation_mid_Aris_ask_help
+			}
+		}
+
 		if = {
 			limit = {
-				check_variable = {
-					which = BA_Kivotos_chronicle_count
-					value = 1
+				OR = {
+					current_stage = stage_1
+					current_stage = stage_2
 				}
-				NOT = {
-					has_country_flag = BA_Blue_new_world_1
+				owner = {
+					NOR = {
+						has_technology = tech_power_hub_1
+						has_technology = tech_mineral_purification_1
+						has_technology = tech_food_processing_1
+					}
 				}
 			}
-			enable_special_project = {
-				name = BA_Another_route
+			owner = {
+				random_list = {
+					10 = {
+						modifier = {
+							multiply = 0
+							BA_cant_research_tech = {
+								tech = tech_power_hub_1
+							}
+						}
+						add_research_option = tech_power_hub_1
+					}
+					10 = {
+						modifier = {
+							multiply = 0
+							BA_cant_research_tech = {
+								tech = tech_mineral_purification_1
+							}
+						}
+						add_research_option = tech_mineral_purification_1
+					}
+					10 = {
+						modifier = {
+							multiply = 0
+							BA_cant_research_tech = {
+								tech = tech_food_processing_1
+							}
+						}
+						add_research_option = tech_food_processing_1
+					}
+				}
 			}
 		}
 		else_if = {
 			limit = {
-				check_variable = {
-					which = BA_Kivotos_chronicle_count
-					value = 2
+				OR = {
+					current_stage = stage_2
+					current_stage = stage_3
 				}
-				NOT = {
-					has_country_flag = BA_Blue_new_world_2
+				owner = {
+					NOR = {
+						has_technology = tech_colonial_centralization
+						has_technology = tech_alloys_1
+						has_technology = tech_luxuries_1
+					}
 				}
 			}
-			enable_special_project = {
-				name = BA_Flowers
+			owner = {
+				random_list = {
+					10 = {
+						modifier = {
+							multiply = 0
+							BA_cant_research_tech = {
+								tech = tech_colonial_centralization
+							}
+						}
+						add_research_option = tech_colonial_centralization
+					}
+					10 = {
+						modifier = {
+							multiply = 0
+							BA_cant_research_tech = {
+								tech = tech_alloys_1
+							}
+						}
+						add_research_option = tech_alloys_1
+					}
+					10 = {
+						modifier = {
+							multiply = 0
+							BA_cant_research_tech = {
+								tech = tech_luxuries_1
+							}
+						}
+						add_research_option = tech_luxuries_1
+					}
+				}
 			}
 		}
 		else_if = {
 			limit = {
-				check_variable = {
-					which = BA_Kivotos_chronicle_count
-					value = 3
+				OR = {
+					current_stage = stage_3
+					current_stage = stage_4
 				}
-				NOT = {
-					has_country_flag = BA_Blue_new_world_3
+				owner = {
+					NOR = {
+						has_technology = tech_BA_pyroxenes_using
+						has_technology = tech_colonization_2
+						has_technology = tech_interstellar_fleet_traditions
+					}
 				}
 			}
-			enable_special_project = {
-				name = BA_In_flame
+			owner = {
+				random_list = {
+					10 = {
+						modifier = {
+							multiply = 0
+							BA_cant_research_tech = {
+								tech = tech_BA_pyroxenes_using
+							}
+						}
+						add_research_option = tech_BA_pyroxenes_using
+					}
+					10 = {
+						modifier = {
+							multiply = 0
+							BA_cant_research_tech = {
+								tech = tech_colonization_2
+							}
+						}
+						add_research_option = tech_colonization_2
+					}
+					10 = {
+						modifier = {
+							multiply = 0
+							BA_cant_research_tech = {
+								tech = tech_interstellar_fleet_traditions
+							}
+						}
+						add_research_option = tech_interstellar_fleet_traditions
+					}
+				}
 			}
 		}
 		else_if = {
 			limit = {
-				check_variable = {
-					which = BA_Kivotos_chronicle_count
-					value = 4
+				OR = {
+					current_stage = stage_4
+					current_stage = stage_5
 				}
-				NOT = {
-					has_country_flag = BA_Blue_new_world_4
+				owner = {
+					NOR = {
+						has_technology = tech_self_aware_logic
+						has_technology = tech_space_science_3
+					}
 				}
 			}
-			enable_special_project = {
-				name = BA_Things_cannot_give_up
+			owner = {
+				random_list = {
+					10 = {
+						modifier = {
+							multiply = 0
+							BA_cant_research_tech = {
+								tech = tech_self_aware_logic
+							}
+						}
+						add_research_option = tech_self_aware_logic
+					}
+					10 = {
+						modifier = {
+							multiply = 0
+							BA_cant_research_tech = {
+								tech = tech_space_science_3
+							}
+						}
+						add_research_option = tech_space_science_3
+					}
+				}
 			}
 		}
 		else_if = {
 			limit = {
-				check_variable = {
-					which = BA_Kivotos_chronicle_count
-					value = 5
+				OR = {
+					current_stage = stage_5
+					current_stage = stage_6
 				}
-				NOT = {
-					has_country_flag = BA_Blue_new_world_5
+				owner = {
+					NOR = {
+						has_technology = tech_galactic_administration
+						has_technology = tech_starbase_4
+					}
 				}
 			}
-			enable_special_project = {
-				name = BA_Hoshizora
+			owner = {
+				random_list = {
+					10 = {
+						modifier = {
+							multiply = 0
+							BA_cant_research_tech = {
+								tech = tech_galactic_administration
+							}
+						}
+						add_research_option = tech_galactic_administration
+					}
+					10 = {
+						modifier = {
+							multiply = 0
+							BA_cant_research_tech = {
+								tech = tech_starbase_4
+							}
+						}
+						add_research_option = tech_starbase_4
+					}
+				}
 			}
 		}
 		else_if = {
 			limit = {
-				check_variable = {
-					which = BA_Kivotos_chronicle_count
-					value = 6
+				OR = {
+					current_stage = stage_6
+					current_stage = stage_7
 				}
-				NOT = {
-					has_country_flag = BA_Blue_new_world_6
+				owner = {
+					NOR = {
+						has_technology = tech_BA_keystone_crafting
+						has_technology = tech_housing_2
+					}
 				}
 			}
-			enable_special_project = {
-				name = BA_Blue_new_world
+			owner = {
+				random_list = {
+					10 = {
+						modifier = {
+							multiply = 0
+							BA_cant_research_tech = {
+								tech = tech_housing_2
+							}
+						}
+						add_research_option = tech_housing_2
+					}
+				}
 			}
 		}
+		else_if = {
+			limit = {
+				OR = {
+					current_stage = stage_7
+					current_stage = stage_8
+				}
+				owner = {
+					NOR = {
+						has_technology = tech_capital_productivity_2
+						has_technology = tech_ecological_adaptation
+					}
+				}
+			}
+			owner = {
+				random_list = {
+					10 = {
+						modifier = {
+							multiply = 0
+							BA_cant_research_tech = {
+								tech = tech_capital_productivity_2
+							}
+						}
+						add_research_option = tech_capital_productivity_2
+					}
+					10 = {
+						modifier = {
+							multiply = 0
+							BA_cant_research_tech = {
+								tech = tech_ecological_adaptation
+							}
+						}
+						add_research_option = tech_ecological_adaptation
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = BA_ape.2001.next
 	}
 }
 
@@ -1013,11 +1198,6 @@ country_event = {
 	option = {
 		name = BA_ape.2008.next
 		custom_tooltip = BA_Kivotos_chronicle_effect_stage6
-		hidden_effect = {
-			add_modifier = {
-				modifier = modifier_Blue_world_6
-			}
-		}
 	}
 }
 
@@ -1028,23 +1208,9 @@ country_event = {
 	title = "BA_ape.2009.name"
 	desc = "BA_ape.2009.desc"
 	picture = GFX_BA_Kivotos_highway
-	trigger = {
-		has_technology = tech_BA_Kivotos_chronicle_stage1
-		has_technology = tech_BA_Kivotos_chronicle_stage2
-		has_technology = tech_BA_Kivotos_chronicle_stage3
-		has_technology = tech_BA_Kivotos_chronicle_stage4
-		has_technology = tech_BA_Kivotos_chronicle_stage5
-		has_technology = tech_BA_Kivotos_chronicle_stage6
-		NOR = {
-			has_technology = tech_BA_Kivotos_chronicle_stage7
-			has_special_project = BA_End_of_chronicle
-		}
-	}
 	option = {
 		name = BA_ape.2009.next
-		enable_special_project = {
-			name = BA_End_of_chronicle
-		}
+		custom_tooltip = BA_Kivotos_chronicle_effect_stage7
 	}
 }
 
@@ -1056,8 +1222,8 @@ country_event = {
 	picture = GFX_BA_chronicle_8
 	option = {
 		name = BA_ape.2010.next
-		custom_tooltip = BA_Kivotos_chronicle_effect_stage7
-		end_event_chain = BA_Kivotos_chronicle_chain
+		custom_tooltip = BA_Kivotos_chronicle_effect_stage8
+		destroy_situation = from
 	}
 }
 

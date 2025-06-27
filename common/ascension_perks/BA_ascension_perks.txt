@@ -1,3 +1,30 @@
+ap_BA_new_frontier = {
+	potential = {
+		has_authority = auth_kivotos
+		NOT = {
+			has_ascension_perk = ap_BA_new_frontier
+		}
+		#暂时禁用，等待重做
+		always = no
+	}
+	possible = {
+		custom_tooltip = {
+			text = BA_Rebuild_a_planet
+			has_country_flag = BA_Planet_rebuilded
+		}
+		custom_tooltip = {
+			text = BA_tr_kivotos_finished
+			has_country_flag = BA_tr_kivotos_finished
+		}
+	}
+	on_enabled = {
+		custom_tooltip = ap_BA_new_frontier_tip
+	}
+	ai_weight = {
+		factor = 10000
+	}
+}
+
 ap_BA_halo_awaken = {
 	potential = {
 		has_authority = auth_kivotos
@@ -10,17 +37,16 @@ ap_BA_halo_awaken = {
 		has_technology = tech_BA_Halo_power_increase
 		has_technology = tech_BA_Divine_liberation_theory
 		has_technology = tech_BA_pyroxenes_crafting
-		custom_tooltip = {
-			fail_text = In_awaken_route
+		custom_tooltip_fail = {
+			text = In_awaken_route
 			has_country_flag = BA_halo_awaken_route
 		}
-		custom_tooltip = {
-			# TODO：新起源
-			fail_text = ap_BA_origin_limit
+		custom_tooltip_fail = {
+			text = ap_BA_origin_limit
 			BA_origin_finished = yes
 		}
-		custom_tooltip = {
-			fail_text = "requires_ascension_perks_3"
+		custom_tooltip_fail = {
+			text = "requires_ascension_perks_3"
 			num_ascension_perks > 2
 		}
 	}
@@ -41,13 +67,14 @@ ap_BA_halo_awaken = {
 ap_BA_Our_story = {
 	potential = {
 		has_authority = auth_kivotos
-		NOT = {
+		NOR = {
 			has_ascension_perk = ap_BA_Our_story
+			has_ascension_perk = ap_BA_Name_the_void
 		}
 	}
 	possible = {
-		custom_tooltip = {
-			fail_text = "requires_ascension_perks_1"
+		custom_tooltip_fail = {
+			text = "requires_ascension_perks_1"
 			num_ascension_perks > 0
 		}
 		BA_origin_finished = yes
@@ -57,44 +84,46 @@ ap_BA_Our_story = {
 		# has_technology = tech_colonial_centralization
 	}
 	on_enabled = {
-		custom_tooltip = ap_BA_Our_story_tip
+		start_situation = {
+			type = situation_Our_story
+		}
 		hidden_effect = {
 			country_event = {
-				id = BA_ape.2001
+				id = BA_ape.2000
 			}
 		}
+		custom_tooltip = ap_BA_Our_story_tip
 	}
 	ai_weight = {
 		factor = 10000
 	}
 }
 
-ap_BA_new_frontier = {
+ap_BA_Name_the_void = {
 	potential = {
 		has_authority = auth_kivotos
-		NOT = {
-			has_ascension_perk = ap_BA_new_frontier
+		NOR = {
+			has_ascension_perk = ap_BA_Our_story
+			has_ascension_perk = ap_BA_Name_the_void
 		}
 	}
 	possible = {
-		custom_tooltip = {
-			text = BA_Rebuild_a_planet
-			has_country_flag = BA_Planet_rebuilded
+		custom_tooltip_fail = {
+			text = "requires_ascension_perks_1"
+			num_ascension_perks > 0
 		}
-		custom_tooltip = {
-			text = BA_tr_kivotos_finished
-			has_country_flag = BA_tr_kivotos_finished
+		BA_origin_finished = yes
+		custom_tooltip_fail = {
+			text = ap_BA_Name_the_void_tip_unknown
+			always = no
 		}
 	}
 	on_enabled = {
-		custom_tooltip = ap_BA_new_frontier_tip
-		hidden_effect = {
-			# country_event = {
-			# 	id = BA_ape.3001
-			# }
-		}
+		custom_tooltip = ap_BA_Name_the_void_effect_fake
+		custom_tooltip = ap_BA_Name_the_void_tip
 	}
 	ai_weight = {
 		factor = 10000
 	}
 }
+
