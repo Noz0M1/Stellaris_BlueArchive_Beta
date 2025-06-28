@@ -133,7 +133,7 @@ building_BA_energy_1 = {
 		}
 		modifier = {
 			job_BA_dont_be_crazy_here_add = 200
-			planet_technician_produces_mult = 0.2
+			BA_dont_be_crazy_here_produces_mult = 0.2
 		}
 	}
 	prerequisites = {
@@ -199,8 +199,8 @@ building_BA_energy_2 = {
 		modifier = {
 			job_BA_dont_be_crazy_here_add = 400
 			pop_BA_dont_be_crazy_here_bonus_workforce_mult = 0.1
-			planet_technician_produces_mult = 0.2
-			planet_technician_energy_produces_add = 2
+			BA_dont_be_crazy_here_produces_mult = 0.2
+			BA_dont_be_crazy_here_energy_produces_add = 2
 		}
 	}
 	triggered_planet_modifier = {
@@ -247,7 +247,7 @@ building_BA_minerals_1 = {
 		}
 		modifier = {
 			job_BA_Kivotos_miner_add = 200
-			planet_miners_produces_mult = 0.2
+			BA_Kivotos_miner_produces_mult = 0.2
 		}
 	}
 	upgrades = {
@@ -302,8 +302,8 @@ building_BA_minerals_2 = {
 		modifier = {
 			job_BA_Kivotos_miner_add = 400
 			pop_BA_Kivotos_miner_bonus_workforce_mult = 0.1
-			planet_miners_produces_mult = 0.2
-			planet_miners_minerals_produces_add = 2
+			BA_Kivotos_miner_produces_mult = 0.2
+			BA_Kivotos_miner_minerals_produces_add = 2
 		}
 	}
 	prerequisites = {
@@ -341,7 +341,7 @@ building_BA_food_1 = {
 		}
 		modifier = {
 			job_BA_caterer_add = 200
-			planet_farmers_produces_mult = 0.2
+			BA_caterer_produces_mult = 0.2
 		}
 	}
 	upgrades = {
@@ -408,8 +408,8 @@ building_BA_food_2 = {
 		modifier = {
 			job_BA_caterer_add = 400
 			pop_BA_caterer_bonus_workforce_mult = 0.1
-			planet_farmers_produces_mult = 0.2
-			planet_farmers_food_produces_add = 2
+			BA_caterer_produces_mult = 0.2
+			BA_caterer_food_produces_add = 2
 		}
 	}
 	triggered_planet_modifier = {
@@ -795,6 +795,279 @@ building_BA_pyroxenes_factory_X = {
 	}
 	prerequisites = {
 		tech_BA_Kivotos_chronicle_stage4
+	}
+}
+
+# 辅助建筑
+# 工业物流中心
+building_BA_upkeep = {
+	base_buildtime = 360
+	position_priority = 154
+	base_cap_amount = 1
+	category = manufacturing
+	building_sets = {
+		industrial
+		foundry
+		BA_foundry
+	}
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+	}
+	triggered_desc = {
+		trigger = {
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			sr_pyroxenes = 100
+		}
+		upkeep = {
+			energy = 3
+			sr_pyroxenes = 1
+		}
+	}
+	prerequisites = {
+		tech_BA_pyroxenes_crafting
+	}
+	planet_modifier = {
+		BA_keystone_foundry_upkeep_mult = -0.40
+		BA_pyroxenes_artisan_upkeep_mult = -0.40
+		BA_keystone_foundry_alloys_produces_add = 2
+		BA_keystone_foundry_produces_mult = 0.4
+		BA_pyroxenes_artisan_consumer_goods_produces_add = 2
+		BA_pyroxenes_artisan_produces_mult = 0.4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			industrial_jobs_are_catalytic_trigger = no
+		}
+		BA_keystone_foundry_minerals_upkeep_add = 1
+		BA_pyroxenes_artisan_minerals_upkeep_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			industrial_jobs_are_catalytic_trigger = yes
+		}
+		BA_keystone_foundry_food_upkeep_add = 1.5
+		BA_pyroxenes_artisan_food_upkeep_add = 1.5
+	}
+	upgrades = {
+	}
+}
+
+# 青辉石精炼厂
+building_BA_refinery = {
+	base_buildtime = 360
+	position_priority = 154
+	base_cap_amount = 1
+	category = manufacturing
+	building_sets = {
+		industrial
+		foundry
+		BA_foundry
+	}
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+	}
+	triggered_desc = {
+		trigger = {
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			sr_pyroxenes = 100
+		}
+		upkeep = {
+			energy = 5
+			sr_pyroxenes = 1
+		}
+	}
+	prerequisites = {
+		tech_BA_pyroxenes_crafting
+	}
+	planet_modifier = {
+		BA_keystone_foundry_exotic_gases_produces_add = 1.5
+		BA_keystone_foundry_volatile_motes_produces_add = 1.5
+		BA_keystone_foundry_rare_crystals_produces_add = 1.5
+		BA_pyroxenes_artisan_exotic_gases_produces_add = 1.5
+		BA_pyroxenes_artisan_rare_crystals_produces_add = 1.5
+		BA_pyroxenes_artisan_volatile_motes_produces_add = 1.5
+	}
+	upgrades = {
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			industrial_jobs_are_catalytic_trigger = no
+		}
+		BA_keystone_foundry_minerals_upkeep_add = 3
+		BA_pyroxenes_artisan_minerals_upkeep_add = 3
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+				industrial_jobs_are_catalytic_trigger = yes
+			}
+			BA_keystone_foundry_food_upkeep_add = 4.5
+			BA_pyroxenes_artisan_food_upkeep_add = 4.5
+		}
+}
+
+# 社团中心
+building_BA_Club_Complex = {
+	base_buildtime = 360
+	position_priority = 154
+	base_cap_amount = 1
+	category = research
+	building_sets = {
+		research
+		unity
+		BA_research
+		BA_unity
+	}
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+	}
+	triggered_desc = {
+		trigger = {
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			sr_pyroxenes = 100
+		}
+		upkeep = {
+			energy = 3
+			sr_pyroxenes = 1
+		}
+	}
+	prerequisites = {
+		tech_BA_pyroxenes_crafting
+	}
+	planet_modifier = {
+		BA_club_pop_upkeep_mult = -0.40
+		BA_club_pop_physics_research_produces_add = 3
+		BA_club_pop_society_research_produces_add = 3
+		BA_club_pop_engineering_research_produces_add = 3
+		BA_club_pop_produces_mult = 0.4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			industrial_jobs_are_catalytic_trigger = no
+		}
+		BA_club_pop_consumer_goods_upkeep_add = 2
+	}
+	upgrades = {
+	}
+}
+
+# 档案馆
+building_BA_Archive = {
+	base_buildtime = 360
+	position_priority = 154
+	base_cap_amount = 1
+	category = unity
+	building_sets = {
+		unity
+		BA_research
+		BA_unity
+	}
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+	}
+	triggered_desc = {
+		trigger = {
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			sr_pyroxenes = 100
+		}
+		upkeep = {
+			energy = 3
+			sr_pyroxenes = 1
+		}
+	}
+	prerequisites = {
+		tech_BA_pyroxenes_crafting
+	}
+	planet_modifier = {
+		BA_staff_pop_upkeep_mult = -0.40
+		BA_staff_pop_unity_produces_add = 3
+		BA_staff_pop_produces_mult = 0.4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			industrial_jobs_are_catalytic_trigger = no
+		}
+		BA_staff_pop_consumer_goods_upkeep_add = 2
+	}
+	upgrades = {
 	}
 }
 
