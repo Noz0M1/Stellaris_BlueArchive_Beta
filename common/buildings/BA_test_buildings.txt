@@ -105,6 +105,7 @@ building_BA_basis_schola_2 = {
 ########## 一产 ##########
 # 能量币
 building_BA_energy_1 = {
+	icon = building_energy_grid  #TODO
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = resource
@@ -145,6 +146,7 @@ building_BA_energy_1 = {
 }
 
 building_BA_energy_2 = {
+	icon = building_energy_nexus  #TODO
 	base_buildtime = @b2_time
 	can_build = no
 	category = resource
@@ -219,6 +221,7 @@ building_BA_energy_2 = {
 
 # 矿
 building_BA_minerals_1 = {
+	icon = building_mineral_purification_plant  #TODO
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = resource
@@ -259,6 +262,7 @@ building_BA_minerals_1 = {
 }
 
 building_BA_minerals_2 = {
+	icon = building_mineral_purification_hub  #TODO
 	base_buildtime = @b2_time
 	can_build = no
 	category = resource
@@ -313,6 +317,7 @@ building_BA_minerals_2 = {
 
 # 苹果
 building_BA_food_1 = {
+	icon = building_food_processing_facility  #TODO
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = resource
@@ -353,6 +358,7 @@ building_BA_food_1 = {
 }
 
 building_BA_food_2 = {
+	icon = building_food_processing_center  #TODO
 	base_buildtime = @b2_time
 	can_build = no
 	category = resource
@@ -801,6 +807,7 @@ building_BA_pyroxenes_factory_X = {
 # 辅助建筑
 # 工业物流中心
 building_BA_upkeep = {
+	icon = building_industrial_subsidiary  #TODO
 	base_buildtime = 360
 	position_priority = 154
 	base_cap_amount = 1
@@ -874,6 +881,7 @@ building_BA_upkeep = {
 
 # 青辉石精炼厂
 building_BA_refinery = {
+	icon = building_archaeo_refinery  #TODO
 	base_buildtime = 360
 	position_priority = 154
 	base_cap_amount = 1
@@ -891,8 +899,7 @@ building_BA_refinery = {
 	allow = {
 	}
 	triggered_desc = {
-		trigger = {
-		}
+		text = concept_planet_BA_industry_pop
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -919,12 +926,9 @@ building_BA_refinery = {
 		tech_BA_pyroxenes_crafting
 	}
 	planet_modifier = {
-		BA_keystone_foundry_exotic_gases_produces_add = 1.5
-		BA_keystone_foundry_volatile_motes_produces_add = 1.5
-		BA_keystone_foundry_rare_crystals_produces_add = 1.5
-		BA_pyroxenes_artisan_exotic_gases_produces_add = 1.5
-		BA_pyroxenes_artisan_rare_crystals_produces_add = 1.5
-		BA_pyroxenes_artisan_volatile_motes_produces_add = 1.5
+		BA_industry_pop_volatile_motes_produces_add = 1.5
+		BA_industry_pop_exotic_gases_produces_add = 1.5
+		BA_industry_pop_rare_crystals_produces_add = 1.5
 	}
 	upgrades = {
 	}
@@ -948,6 +952,7 @@ building_BA_refinery = {
 
 # 社团中心
 building_BA_Club_Complex = {
+	icon = building_research_efficiency_1  #TODO
 	base_buildtime = 360
 	position_priority = 154
 	base_cap_amount = 1
@@ -994,11 +999,11 @@ building_BA_Club_Complex = {
 		tech_BA_pyroxenes_crafting
 	}
 	planet_modifier = {
-		BA_club_pop_upkeep_mult = -0.40
 		BA_club_pop_physics_research_produces_add = 3
 		BA_club_pop_society_research_produces_add = 3
 		BA_club_pop_engineering_research_produces_add = 3
 		BA_club_pop_produces_mult = 0.4
+		BA_club_pop_upkeep_mult = -0.4
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -1012,6 +1017,7 @@ building_BA_Club_Complex = {
 
 # 档案馆
 building_BA_Archive = {
+	icon = building_illicit_research_labs  #TODO
 	base_buildtime = 360
 	position_priority = 154
 	base_cap_amount = 1
@@ -1261,205 +1267,5 @@ building_BA_Kivotos_staff_mansion = {
 			energy = 2
 			rare_crystals = 1
 		}
-	}
-}
-
-#### 居住站建筑 ####
-#居住站控制节点
-#提供100%的劳动力填充，不可禁用或拆除
-builiding_BA_hab_controller = {
-	icon = building_automation_2
-	base_buildtime = @b2_time
-	# planet_limit = 1
-	category = pop_assembly
-
-	building_sets = {
-		government
-		urban
-		farming
-		mining
-		generator
-	}
-
-	potential = {
-		always = yes
-	}
-
-	allow = {
-		always = yes
-	}
-
-	destroy_trigger = {
-	}
-
-	planet_modifier = {
-		district_automated_workforce = 1.0
-	}
-
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = @b1_minerals
-		}
-		upkeep = {
-			energy = @b4_upkeep
-			mult = value:count_any_districts
-		}
-		upkeep = {
-			energy = @b4_upkeep
-			mult = value:count_any_building
-		}
-	}
-
-	prerequisites = {
-	}
-
-	show_tech_unlock_if = {
-	}
-
-	triggered_desc = {
-		text = automation_2_tooltip
-	}
-}
-
-#居住站维护节点
-#降低岗位维护费
-builiding_BA_hab_maintenance = {
-	capital = no
-	can_build = yes
-	can_demolish = yes
-	can_be_ruined = yes
-	can_be_disabled = yes
-
-	category = government
-	building_sets = {
-		government
-		BA_government
-	}
-
-	potential = {
-
-	}
-	allow = {
-
-	}
-	prerequisites = {
-
-	}
-
-	triggered_planet_modifier = {
-		 potential = {
-			exists = owner
-		}
-		planet_jobs_upkeep_mult = -0.05
-	}
-
-	resources = {
-		category = planet_buildings
-	 	upkeep = {
-			energy = 1
-		 }
-	 	cost = {
-			minerals = 300
-	 	}
-	}
-
-	ai_weight = {
-		weight = 0
-	}
-}
-
-#居住站分配节点
-#提高岗位产出
-builiding_BA_hab_allocation = {
-	capital = no
-	can_build = yes
-	can_demolish = yes
-	can_be_ruined = yes
-	can_be_disabled = yes
-
-	category = government
-	building_sets = {
-		government
-		BA_government
-	}
-
-	potential = {
-
-	}
-	allow = {
-
-	}
-	prerequisites = {
-
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-		}
-		planet_jobs_produces_mult = 0.10
-	}
-
-	resources = {
-		category = planet_buildings
-		upkeep = {
-			energy = 1
-		}
-		cost = {
-			minerals = 300
-		}
-	}
-
-	ai_weight = {
-		weight = 0
-	}
-}
-
-#居住站扩展坞
-#住房+400，最大区划+0.5
-builiding_BA_hab_expansionCabin = {
-	capital = no
-	can_build = yes
-	can_demolish = yes
-	can_be_ruined = yes
-	can_be_disabled = yes
-
-	category = government
-	building_sets = {
-		government
-		BA_government
-	}
-
-	potential = {
-
-	}
-	allow = {
-
-	}
-	prerequisites = {
-
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-		}
-		planet_max_districts_add = 0.50
-		planet_housing_add = 400
-	}
-
-	resources = {
-		category = planet_buildings
-		upkeep = {
-			energy = 1
-		}
-		cost = {
-			minerals = 300
-		}
-	}
-
-	ai_weight = {
-		weight = 0
 	}
 }

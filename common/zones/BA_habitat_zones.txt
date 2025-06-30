@@ -1,0 +1,143 @@
+########## 居住站起源政府区域 ##########
+zone_BA_auto_goverment = {
+	icon = GFX_diplomatic_weight_large
+	base_buildtime = 240
+	### 总是可用 ###
+	potential = {
+	}
+	unlock = {
+	}
+	### 预留标记 ###
+	resources = {
+	}
+	max_buildings = 6
+	include = {
+		all
+	}
+	district_planet_modifier = {
+		planet_housing_add = 600
+	}
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_automated_workforce = 1
+	}
+	### 任意类型建筑均可用 ###
+	excluded_building_sets = {
+	}
+}
+
+########## 城市，凝聚力 科研 贸易 ###########
+zone_BA_auto_unity = {
+	icon = GFX_job_bureaucrat
+	base_buildtime = 180
+	### 预留标记 ###
+	potential = {
+	}
+	unlock = {
+	}
+	### 预留标记 ###
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_housing_add = -200
+		job_BA_club_members_add = 200
+		job_BA_student_on_duty_add = -400
+	}
+	resources = {
+	}
+	max_buildings = 3
+	include = {
+		all
+	}
+}
+
+zone_BA_auto_commercial = {
+	icon = GFX_resource_trade_large
+	base_buildtime = 180
+	### 预留标记 ###
+	potential = {
+	}
+	unlock = {
+	}
+	### 预留标记 ###
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_housing_add = -200
+		job_BA_Kivotos_trader_add = 200
+		job_BA_student_on_duty_add = -400
+	}
+	max_buildings = 3
+	include = {
+		all
+	}
+}
+
+########## 专业区块 ##########
+zone_BA_auto_A = {
+	icon = GFX_diplomatic_weight_large
+	base_buildtime = 180
+	### 预留标记 ###
+	potential = {
+	}
+	unlock = {
+	}
+	### 预留标记 ###
+	resources = {
+	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_housing_add = 200
+		job_BA_student_on_duty_add = 200
+	}
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_automated_workforce = 1
+	}
+	include = {
+		all
+	}
+	excluded_building_sets = {
+	}
+}
+
+zone_BA_auto_B = {
+	icon = GFX_diplomatic_weight_large
+	base_buildtime = 180
+	potential = {
+	}
+	unlock = {
+	}
+	resources = {
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		planet_housing_add = -300
+	}
+	triggered_planet_modifier = {
+		district_automated_workforce = 1
+	}
+}
+

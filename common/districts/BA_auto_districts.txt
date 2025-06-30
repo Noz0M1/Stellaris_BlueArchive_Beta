@@ -41,6 +41,15 @@ BA_district_auto_city = {
 	planet_modifier = {
 		planet_housing_add = 1000
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		job_BA_student_on_duty_add = 700
+	}
 }
 
 #透镜区 矿-->青辉石
@@ -66,19 +75,28 @@ BA_districts_auto_refinery = {
 		# produces = {
 		# 	sr_pyroxenes = 3
 		# }
+		# upkeep = {
+		# 	minerals = 18
+		# }
 		upkeep = {
-			minerals = 18
+			sr_pyroxenes = 0.5
 		}
 	}
 	planet_modifier = {
-		planet_housing_add = 800
+		planet_housing_add = 300
 	}
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
 		}
-		job_BA_pyroxenes_maker_add = 400
+		job_BA_student_on_duty_add = 300
+		BA_auto_pop_sr_pyroxenes_produces_add = 1
+		BA_auto_pop_minerals_upkeep_add = 6
 	}
+
 }
 
 #维持区 青辉石-->食物、消费品
@@ -104,19 +122,23 @@ BA_districts_auto_sustainer = {
 		# produces = {
 		# 	consumer_goods = 12
 		# }
+		# upkeep = {
+		# 	energy = 9
+		# 	sr_pyroxenes = 1
+		# }
 		upkeep = {
-			energy = 9
-			sr_pyroxenes = 1
+			sr_pyroxenes = 0.5
 		}
-	}
-	planet_modifier = {
-		planet_housing_add = 600
 	}
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
 		}
-		job_BA_pyroxenes_artisan_add = 200
+		BA_auto_pop_consumer_goods_produces_add = 4
+		BA_auto_pop_sr_pyroxenes_upkeep_add = 0.5
 	}
 }
 
@@ -143,19 +165,24 @@ BA_districts_auto_foundry = {
 		# produces = {
 		# 	alloys = 6
 		# }
+		# upkeep = {
+		# 	energy = 9
+		# 	sr_pyroxenes = 1
+		# }
 		upkeep = {
-			energy = 9
-			sr_pyroxenes = 1
+			sr_pyroxenes = 0.5
 		}
 	}
-	planet_modifier = {
-		planet_housing_add = 400
-	}
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
 		}
-		job_BA_keystone_foundry_add = 200
+		BA_auto_pop_alloys_produces_add = 2
+		BA_auto_pop_sr_pyroxenes_upkeep_add = 0.5
 	}
 }
 
@@ -187,16 +214,25 @@ BA_districts_auto_matrix = {
 		# 	society_research = 24
 		# 	engineering_research = 24
 		# }
+		# upkeep = {
+		# 	energy = 9
+		# 	sr_pyroxenes = 1
+		# }
 		upkeep = {
-			energy = 9
-			sr_pyroxenes = 1
+			sr_pyroxenes = 0.5
 		}
 	}
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
 		}
-		job_BA_club_members_add = 300
+		BA_auto_pop_physics_research_produces_add = 8
+		BA_auto_pop_society_research_produces_add = 8
+		BA_auto_pop_engineering_research_produces_add = 8
+		BA_auto_pop_sr_pyroxenes_upkeep_add = 0.5
 	}
 }
 
@@ -227,18 +263,16 @@ BA_districts_auto_turbine = {
 		# produces = {
 		# 	energy = 36
 		# }
-		upkeep = {
-			minerals = 4
-		}
 	}
-	planet_modifier = {
-		planet_housing_add = 200
-	}
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
 		}
-		job_BA_dont_be_crazy_here_add = 400
+		BA_auto_pop_energy_produces_add = 12
 	}
 }
 
@@ -266,21 +300,19 @@ BA_districts_auto_drill = {
 			alloys = 30
 			sr_pyroxenes = 10
 		}
-		# produces = {
-		# 	minerals = 24
-		# }
 		upkeep = {
 			energy = 6
 		}
 	}
-	planet_modifier = {
-		planet_housing_add = 200
-	}
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
 		}
-		job_BA_Kivotos_miner_add = 400
+		BA_auto_pop_minerals_produces_add = 8
 	}
 }
 

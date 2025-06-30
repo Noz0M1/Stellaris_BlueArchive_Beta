@@ -267,9 +267,9 @@ num_BA_auto_habitat_module_max_districts = {
 }
 
 ### 矩阵区上限
-# 基础+2，研究大天体+3，研究小天体+1
+# 基础+3，研究大天体+3，研究小天体+1
 num_BA_auto_habitat_max_matrix = {
-	base = 2
+	base = 3
 	complex_trigger_modifier = {
 		trigger = count_system_planet
 		parameters = {
@@ -304,16 +304,15 @@ num_BA_auto_habitat_max_turbine = {
 		parameters = {
 			limit = {
 				is_planet_class = pc_gas_giant
-				has_orbital_energy_deposit = no
 			}
 		}
-		mult = 1
+		mult = 3
 		mode = add
 	}
 }
 
 ### 钻探区上限
-# 基础+2，每矿藏+2，每荒芜+1
+# 基础+2，每矿藏+2，每荒芜+1（卫星减半）
 num_BA_auto_habitat_max_drill = {
 	base = 2
 	complex_trigger_modifier = {
@@ -336,9 +335,27 @@ num_BA_auto_habitat_max_drill = {
 					is_planet_class = pc_shattered
 				}
 				has_orbital_mining_deposit = no
+				is_moon = no
 			}
 		}
 		mult = 1
 		mode = add
 	}
+	complex_trigger_modifier = {
+		trigger = count_system_planet
+		parameters = {
+			limit = {
+				OR = {
+					is_planet_class = pc_barren
+					is_planet_class = pc_barren_cold
+					is_planet_class = pc_shattered
+				}
+				has_orbital_mining_deposit = no
+				is_moon = yes
+			}
+		}
+		mult = 0.5
+		mode = add
+	}
+	floor = yes
 }

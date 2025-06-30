@@ -1206,7 +1206,6 @@ BA_scavenger = {
 #基础：
 BA_student_on_duty = {
 	category = worker
-	is_capped_by_modifier = no
 	swappable_data = {
 		default = {
 			icon = BA_student_on_duty
@@ -1220,14 +1219,6 @@ BA_student_on_duty = {
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
-	}
-	possible = {
-		planet = {
-			OR = {
-				is_planet_class = pc_BA_auto_habitat
-			}
-			free_jobs = 0
-		}
 	}
 	resources = {
 		category = BA_auto_pop

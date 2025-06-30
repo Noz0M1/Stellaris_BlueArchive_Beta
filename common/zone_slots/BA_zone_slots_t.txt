@@ -1,0 +1,146 @@
+########## 居住站 ##########
+slot_BA_auto_city = {
+	include = {
+		zone_BA_auto_unity
+		zone_BA_auto_commercial
+		zone_urban
+		zone_trade
+		zone_fortress
+	}
+	exclude = {
+	}
+}
+
+#透镜区
+slot_BA_auto_refinery = {
+	include = {
+		zone_BA_auto_A
+		zone_BA_auto_B
+	}
+	exclude = {
+	}
+	potential = {
+		uses_district_set = BA_auto_habitat
+	}
+	unlock = {
+		custom_tooltip = {
+			fail_text = zone_unavailable_BA_auto_district
+			exists = owner
+			owner = {
+				has_technology = tech_BA_pyroxenes_using
+			}
+		}
+	}
+}
+
+#维持区
+slot_BA_auto_sustainer = {
+	include = {
+		zone_BA_auto_A
+		zone_BA_auto_B
+	}
+
+	exclude = {
+	}
+	potential = {
+		uses_district_set = BA_auto_habitat
+	}
+	unlock = {
+		custom_tooltip = {
+			fail_text = zone_unavailable_BA_auto_district
+			exists = owner
+			owner = {
+				has_technology = tech_BA_pyroxenes_using
+			}
+		}
+	}
+}
+
+#铸造区
+slot_BA_auto_foundry = {
+	include = {
+		zone_BA_auto_A
+		zone_BA_auto_B
+	}
+
+	exclude = {
+	}
+	potential = {
+		uses_district_set = BA_auto_habitat
+	}
+	unlock = {
+		custom_tooltip = {
+			fail_text = zone_unavailable_BA_auto_district
+			exists = owner
+			owner = {
+				has_technology = tech_BA_pyroxenes_using
+			}
+		}
+	}
+
+}
+
+#矩阵区
+slot_BA_auto_matrix = {
+	include = {
+		zone_BA_auto_A
+		zone_BA_auto_B
+	}
+
+	exclude = {
+	}
+	potential = {
+		uses_district_set = BA_auto_habitat
+	}
+	unlock = {
+		uses_district_set = BA_auto_habitat
+	}
+}
+
+#涡轮区
+slot_BA_auto_turbine = {
+	include = {
+		zone_BA_auto_A
+		zone_BA_auto_B
+	}
+
+	exclude = {
+	}
+	potential = {
+		uses_district_set = BA_auto_habitat
+	}
+	unlock = {
+		custom_tooltip = {
+			fail_text = zone_unavailable_BA_auto_district
+			exists = owner
+			owner = {
+				has_technology = tech_BA_pyroxenes_using
+			}
+		}
+	}
+
+}
+
+#钻探区
+slot_BA_auto_drill = {
+	include = {
+		zone_BA_auto_A
+		zone_BA_auto_B
+	}
+
+	exclude = {
+	}
+	potential = {
+		uses_district_set = BA_auto_habitat
+	}
+	unlock = {
+		custom_tooltip = {
+			fail_text = zone_unavailable_BA_auto_district
+			exists = owner
+			owner = {
+				has_technology = tech_BA_pyroxenes_using
+			}
+		}
+	}
+
+}
