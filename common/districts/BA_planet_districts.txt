@@ -69,7 +69,8 @@ BA_districts_campus = {
 		}
 		modifier = {
 			#200社团部员
-			job_BA_club_members_add = 200
+			job_BA_club_members_add = 150
+			job_BA_Kivotos_trader_add = 50
 		}
 	}
 	#传统
@@ -80,9 +81,9 @@ BA_districts_campus = {
 				has_tradition = tr_kivotos_finish
 			}
 		}
-		#传统完成 100社团部员-->100学生代表
-		job_BA_club_members_add = -100
-		job_BA_student_delegate_add = 100
+		#传统完成 50社团部员-->50学生代表
+		job_BA_club_members_add = -50
+		job_BA_student_delegate_add = 50
 	}
 	#编年史
 	triggered_planet_modifier = {

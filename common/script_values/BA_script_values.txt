@@ -97,7 +97,6 @@ num_BA_Trinity_National_Museum_produce = {
 #游戏部
 num_BA_club_game_produce = {
 	base = 15
-	min = 15
 	### 人口
 	complex_trigger_modifier = {
 		trigger = count_owned_pop_amount
@@ -107,7 +106,7 @@ num_BA_club_game_produce = {
 			}
 		}
 		mode = add
-		multiplier = 0.5
+		multiplier = 0.005
 	}
 	## 建筑
 	complex_trigger_modifier = {
@@ -137,6 +136,7 @@ num_BA_club_game_produce = {
 		factor = 2
 		has_technology = tech_BA_SI_Millennium_C02
 	}
+	min = 15
 }
 
 num_BA_club_resource_by_empire_size = {

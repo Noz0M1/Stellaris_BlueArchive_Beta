@@ -31,7 +31,7 @@ zone_BA_support = {
 	zone_sets = {
 		BA_support
 	}
-	included_building_sets = {
+	include = {
 		all
 	}
 }
@@ -84,15 +84,15 @@ zone_BA_municipality_campus = {
 		BA_municipality
 	}
 	included_building_sets = {
-		all
+		research
+		unity
+		automation
+		origin
 	}
 	excluded_building_sets = {
 		generator
-		BA_generator
 		mining
-		BA_mining
 		farming
-		BA_farming
 		knights
 		betharian
 	}
@@ -130,15 +130,15 @@ zone_BA_municipality_federal = {
 		BA_municipality
 	}
 	included_building_sets = {
-		all
+		research
+		unity
+		automation
+		origin
 	}
 	excluded_building_sets = {
 		generator
-		BA_generator
 		mining
-		BA_mining
 		farming
-		BA_farming
 		knights
 		betharian
 	}
@@ -187,15 +187,15 @@ zone_BA_municipality_club = {
 		BA_municipality
 	}
 	included_building_sets = {
-		all
+		research
+		unity
+		automation
+		origin
 	}
 	excluded_building_sets = {
 		generator
-		BA_generator
 		mining
-		BA_mining
 		farming
-		BA_farming
 		knights
 		betharian
 	}
@@ -269,16 +269,13 @@ zone_BA_grand_dome = {
 	zone_sets = {
 		BA_dome
 	}
-	included_building_sets = {
+	include = {
 		all
 	}
 	excluded_building_sets = {
 		generator
-		BA_generator
 		mining
-		BA_mining
 		farming
-		BA_farming
 		knights
 		betharian
 	}
@@ -317,16 +314,13 @@ zone_BA_flexible_center = {
 	zone_sets = {
 		BA_dome
 	}
-	included_building_sets = {
+	include = {
 		all
 	}
 	excluded_building_sets = {
 		generator
-		BA_generator
 		mining
-		BA_mining
 		farming
-		BA_farming
 		knights
 		betharian
 	}
@@ -504,13 +498,10 @@ zone_BA_grand_suburbs = {
 	}
 	included_building_sets = {
 		generator
-		BA_generator
 		fallen_empire_generator
 		mining
-		BA_mining
 		fallen_empire_mining
 		farming
-		BA_farming
 		hydroponics
 		fallen_empire_farming
 		automation
@@ -553,7 +544,6 @@ zone_BA_energy_suburbs = {
 	}
 	included_building_sets = {
 		generator
-		BA_generator
 		fallen_empire_generator
 		automation
 	}
@@ -595,7 +585,6 @@ zone_BA_mineral_suburbs = {
 	}
 	included_building_sets = {
 		mining
-		BA_mining
 		fallen_empire_mining
 		automation
 	}
@@ -637,7 +626,6 @@ zone_BA_food_suburbs = {
 	}
 	included_building_sets = {
 		farming
-		BA_farming
 		hydroponics
 		fallen_empire_farming
 		automation
@@ -704,7 +692,6 @@ zone_BA_remining = {
 	}
 	included_building_sets = {
 		mining
-		BA_mining
 		fallen_empire_mining
 		automation
 	}
@@ -743,7 +730,6 @@ zone_BA_supply_station = {
 	}
 	included_building_sets = {
 		mining
-		BA_mining
 		fallen_empire_mining
 		automation
 	}
@@ -801,7 +787,6 @@ zone_BA_special_factory_A = {
 	}
 	included_building_sets = {
 		mining
-		BA_mining
 		fallen_empire_mining
 		automation
 	}
@@ -848,7 +833,6 @@ zone_BA_special_factory_B = {
 	}
 	included_building_sets = {
 		mining
-		BA_mining
 		fallen_empire_mining
 		automation
 	}

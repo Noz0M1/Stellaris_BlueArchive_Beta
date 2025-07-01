@@ -1,5 +1,5 @@
 ﻿l_simp_chinese:
-#produce/upkeep
+#economic_category
  mod_BA_crew_pop_produces_mult:0 "$BA_crew_pop$产出的资源"
  mod_BA_crew_pop_upkeep_mult:0 "$BA_crew_pop$维护费"
  mod_BA_crew_pop_unity_produces_mult:0 "$BA_crew_pop$产出的£unity£$unity$"
@@ -23,6 +23,8 @@
 
  mod_BA_club_pop_produces_mult:0 "$BA_club_pop$产出的资源"
  mod_BA_club_pop_upkeep_mult:0 "$BA_club_pop$维护费"
+ mod_BA_club_pop_trade_produces_mult:0 "$BA_club_pop$产出的£trade£$trade$"
+ mod_BA_club_pop_trade_produces_add:0 "$mod_BA_club_pop_trade_produces_mult$"
  mod_BA_club_pop_unity_produces_mult:0 "$BA_club_pop$产出的£unity£$unity$"
  mod_BA_club_pop_unity_produces_add:0 "$mod_BA_club_pop_unity_produces_mult$"
  mod_BA_club_pop_physics_research_produces_mult:0 "$BA_club_pop$产出的£physics£$physics_research$"
@@ -37,8 +39,10 @@
  mod_BA_club_pop_exotic_gases_upkeep_add:0 "$BA_club_pop$消耗的£exotic_gases£$exotic_gases$"
  mod_BA_club_pop_rare_crystals_upkeep_add:0 "$BA_club_pop$消耗的£rare_crystals£$rare_crystals$"
 
+ mod_BA_industry_pop_produces_mult:0 "$BA_industry_pop$产出的资源"
+ mod_BA_industry_pop_upkeep_mult:0 "$BA_industry_pop$维护费"
  mod_BA_industry_pop_trade_produces_mult:0 "$BA_industry_pop$产出的£trade_value£$trade$"
- mod_BA_industry_pop_trade_produces_add:0 "$mod_BA_industry_pop_physics_research_produces_mult$"
+ mod_BA_industry_pop_trade_produces_add:0 "$mod_BA_industry_pop_trade_produces_mult$"
  mod_BA_industry_pop_volatile_motes_produces_mult:0 "$BA_industry_pop$产出的£volatile_motes£$volatile_motes$"
  mod_BA_industry_pop_volatile_motes_produces_add:0 "$mod_BA_industry_pop_volatile_motes_produces_mult$"
  mod_BA_industry_pop_exotic_gases_produces_mult:0 "$BA_industry_pop$产出的£exotic_gases£$exotic_gases$"
@@ -125,22 +129,30 @@
  mod_pop_BA_ringworld_workerbonus_workforce_mult:"$job_BA_ringworld_worker$$BONUS_WORKFORCE_FOR$"
 
  #industry
+ mod_BA_pyroxenes_artisan_consumer_goods_produces_mult:0 "$job_BA_pyroxenes_artisan$产出的£consumer_goods£$consumer_goods$"
+ mod_BA_pyroxenes_artisan_consumer_goods_produces_add:0 "$mod_BA_pyroxenes_artisan_consumer_goods_produces_mult$"
  mod_pop_BA_pyroxenes_artisan_bonus_workforce_mult:"$job_BA_pyroxenes_artisan$$BONUS_WORKFORCE_FOR$"
  mod_BA_pyroxenes_artisan_energy_upkeep_add:"$job_BA_pyroxenes_artisan$$r_energy$$UPKEEP$"
- mod_pop_BA_keystone_foundry_bonus_workforce_mult:"$job_BA_keystone_foundry$$BONUS_WORKFORCE_FOR$"
+ mod_BA_keystone_foundry_alloys_produces_mult:0 "$BA_keystone_foundry$产出的£alloys£$alloys$"
+ mod_BA_keystone_foundry_alloys_produces_add:0 "$mod_BA_keystone_foundry_alloys_produces_mult$"
+ mod_BA_keystone_foundry_bonus_workforce_mult:"$job_BA_keystone_foundry$$BONUS_WORKFORCE_FOR$"
  mod_BA_keystone_foundry_energy_upkeep_add:"$job_BA_keystone_foundry$$r_energy$$UPKEEP$"
  mod_pop_BA_scrap_refiner_bonus_workforce_mult:"$job_BA_scrap_refiner$$BONUS_WORKFORCE_FOR$"
 
  #special resource
- mod_pop_BA_pyroxenes_maker_bonus_workforce_mult:"$job_BA_pyroxenes_maker$$BONUS_WORKFORCE_FOR$"
- mod_pop_BA_keystone_maintenance_staff_bonus_workforce_mult:"$job_BA_keystone_maintenance_staff$$BONUS_WORKFORCE_FOR$"
+ mod_pop_BA_pyroxenes_maker_bonus_workforce_mult: "$job_BA_pyroxenes_maker$$BONUS_WORKFORCE_FOR$"
+ mod_pop_BA_keystone_maintenance_staff_bonus_workforce_mult: "$job_BA_keystone_maintenance_staff$$BONUS_WORKFORCE_FOR$"
 
  #else
- mod_pop_BA_dont_be_crazy_here_bonus_workforce_mult:"$job_BA_dont_be_crazy_here$$BONUS_WORKFORCE_FOR$"
- mod_pop_BA_Kivotos_miner_bonus_workforce_mult :"$job_BA_Kivotos_miner$$BONUS_WORKFORCE_FOR$"
- mod_pop_BA_caterer_bonus_workforce_mult :"$job_BA_caterer$$BONUS_WORKFORCE_FOR$"
-
-
+ mod_pop_BA_dont_be_crazy_here_bonus_workforce_mult: "$job_BA_dont_be_crazy_here$$BONUS_WORKFORCE_FOR$"
+ mod_BA_dont_be_crazy_here_produces_mult: "$job_BA_dont_be_crazy_here$产出的资源"
+ mod_BA_dont_be_crazy_here_food_produces_add: "$job_BA_dont_be_crazy_here$产出的£energy£$energy$"
+ mod_pop_BA_Kivotos_miner_bonus_workforce_mult: "$job_BA_Kivotos_miner$$BONUS_WORKFORCE_FOR$"
+ mod_BA_Kivotos_miner_produces_mult: "$job_BA_Kivotos_miner$产出的资源"
+ mod_BA_Kivotos_miner_food_produces_add: "$job_BA_Kivotos_miner$产出的£minerals£$minerals$"
+ mod_pop_BA_caterer_bonus_workforce_mult: "$job_BA_caterer$$BONUS_WORKFORCE_FOR$"
+ mod_BA_caterer_produces_mult: "$job_BA_caterer$产出的资源"
+ mod_BA_caterer_food_produces_add: "$job_BA_caterer$产出的£food£$food$"
 
 ##job@concept
  concept_planet_BA_flexpop:"灵活岗位"

@@ -1,6 +1,7 @@
 ### 图标为占位符
 ########## 行星 ##########
 building_BA_basis_schola_1 = {
+	icon = building_simulation_1 #TODO
 	base_buildtime = 360
 	category = government
 	building_sets = {
@@ -49,6 +50,7 @@ building_BA_basis_schola_1 = {
 }
 
 building_BA_basis_schola_2 = {
+	icon = building_simulation_2 #TODO
 	base_buildtime = @b2_time
 	category = government
 	can_build = no
@@ -89,8 +91,9 @@ building_BA_basis_schola_2 = {
 		}
 	}
 	prerequisites = {
-		"tech_colonial_centralization"
+		tech_BA_Kivotos_chronicle_stage4
 	}
+
 	triggered_desc = {
 		text = job_BA_Vigilant_crew_effect_desc
 	}
@@ -105,13 +108,12 @@ building_BA_basis_schola_2 = {
 ########## 一产 ##########
 # 能量币
 building_BA_energy_1 = {
-	icon = building_energy_grid  #TODO
+	icon = building_energy_grid	#TODO
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = resource
 	building_sets = {
 		generator
-		BA_generator
 	}
 	potential = {
 		owner = {
@@ -146,13 +148,12 @@ building_BA_energy_1 = {
 }
 
 building_BA_energy_2 = {
-	icon = building_energy_nexus  #TODO
+	icon = building_energy_nexus	#TODO
 	base_buildtime = @b2_time
 	can_build = no
 	category = resource
 	building_sets = {
 		generator
-		BA_generator
 	}
 	potential = {
 		owner = {
@@ -215,19 +216,18 @@ building_BA_energy_2 = {
 		}
 	}
 	prerequisites = {
-		# 预留标记
+		tech_BA_Kivotos_chronicle_stage4
 	}
 }
 
 # 矿
 building_BA_minerals_1 = {
-	icon = building_mineral_purification_plant  #TODO
+	icon = building_mineral_purification_plant	#TODO
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = resource
 	building_sets = {
 		mining
-		BA_mining
 	}
 	potential = {
 		owner = {
@@ -262,13 +262,12 @@ building_BA_minerals_1 = {
 }
 
 building_BA_minerals_2 = {
-	icon = building_mineral_purification_hub  #TODO
+	icon = building_mineral_purification_hub	#TODO
 	base_buildtime = @b2_time
 	can_build = no
 	category = resource
 	building_sets = {
 		mining
-		BA_mining
 	}
 	potential = {
 		owner = {
@@ -311,19 +310,18 @@ building_BA_minerals_2 = {
 		}
 	}
 	prerequisites = {
-		# 预留标记
+		tech_BA_Kivotos_chronicle_stage4
 	}
 }
 
 # 苹果
 building_BA_food_1 = {
-	icon = building_food_processing_facility  #TODO
+	icon = building_food_processing_facility	#TODO
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = resource
 	building_sets = {
 		farming
-		BA_farming
 	}
 	potential = {
 		owner = {
@@ -358,13 +356,12 @@ building_BA_food_1 = {
 }
 
 building_BA_food_2 = {
-	icon = building_food_processing_center  #TODO
+	icon = building_food_processing_center	#TODO
 	base_buildtime = @b2_time
 	can_build = no
 	category = resource
 	building_sets = {
 		farming
-		BA_farming
 	}
 	potential = {
 		owner = {
@@ -428,7 +425,7 @@ building_BA_food_2 = {
 		}
 	}
 	prerequisites = {
-		# 预留标记
+		tech_BA_Kivotos_chronicle_stage4
 	}
 }
 
@@ -447,6 +444,7 @@ building_BA_keystone_foundry_1 = {
 		owner = {
 			has_authority = auth_kivotos
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	allow = {
 	}
@@ -496,6 +494,7 @@ building_BA_keystone_foundry_2 = {
 		owner = {
 			has_authority = auth_kivotos
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	allow = {
 		has_major_upgraded_capital = yes
@@ -522,7 +521,7 @@ building_BA_keystone_foundry_2 = {
 		}
 	}
 	prerequisites = {
-		tech_BA_Kivotos_chronicle_stage1
+		tech_BA_Kivotos_chronicle_stage4
 	}
 	upgrades = {
 		building_BA_keystone_foundry_3
@@ -543,6 +542,7 @@ building_BA_keystone_foundry_3 = {
 		owner = {
 			has_authority = auth_kivotos
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	allow = {
 		has_fully_upgraded_capital = yes
@@ -586,6 +586,7 @@ building_BA_keystone_foundry_X = {
 		owner = {
 			has_authority = auth_kivotos
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	allow = {
 		has_fully_upgraded_capital = yes
@@ -633,6 +634,7 @@ building_BA_pyroxenes_factory_1 = {
 		owner = {
 			has_authority = auth_kivotos
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	allow = {
 		has_upgraded_capital = yes
@@ -680,6 +682,7 @@ building_BA_pyroxenes_factory_2 = {
 		owner = {
 			has_authority = auth_kivotos
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	allow = {
 		has_upgraded_capital = yes
@@ -725,6 +728,7 @@ building_BA_pyroxenes_factory_3 = {
 		owner = {
 			has_authority = auth_kivotos
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	allow = {
 		has_fully_upgraded_capital = yes
@@ -771,6 +775,7 @@ building_BA_pyroxenes_factory_X = {
 		owner = {
 			has_authority = auth_kivotos
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	allow = {
 		has_fully_upgraded_capital = yes
@@ -805,83 +810,9 @@ building_BA_pyroxenes_factory_X = {
 }
 
 # 辅助建筑
-# 工业物流中心
-building_BA_upkeep = {
-	icon = building_industrial_subsidiary  #TODO
-	base_buildtime = 360
-	position_priority = 154
-	base_cap_amount = 1
-	category = manufacturing
-	building_sets = {
-		industrial
-		foundry
-		BA_foundry
-	}
-	potential = {
-		owner = {
-			has_authority = auth_kivotos
-		}
-	}
-	allow = {
-	}
-	triggered_desc = {
-		trigger = {
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
-		modifier = {
-		}
-	}
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = 800
-			sr_pyroxenes = 100
-		}
-		upkeep = {
-			energy = 3
-			sr_pyroxenes = 1
-		}
-	}
-	prerequisites = {
-		tech_BA_pyroxenes_crafting
-	}
-	planet_modifier = {
-		BA_keystone_foundry_upkeep_mult = -0.40
-		BA_pyroxenes_artisan_upkeep_mult = -0.40
-		BA_keystone_foundry_alloys_produces_add = 2
-		BA_keystone_foundry_produces_mult = 0.4
-		BA_pyroxenes_artisan_consumer_goods_produces_add = 2
-		BA_pyroxenes_artisan_produces_mult = 0.4
-	}
-	triggered_planet_modifier = {
-		potential = {
-			industrial_jobs_are_catalytic_trigger = no
-		}
-		BA_keystone_foundry_minerals_upkeep_add = 1
-		BA_pyroxenes_artisan_minerals_upkeep_add = 1
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			industrial_jobs_are_catalytic_trigger = yes
-		}
-		BA_keystone_foundry_food_upkeep_add = 1.5
-		BA_pyroxenes_artisan_food_upkeep_add = 1.5
-	}
-	upgrades = {
-	}
-}
-
 # 青辉石精炼厂
 building_BA_refinery = {
-	icon = building_archaeo_refinery  #TODO
+	icon = building_archaeo_refinery	#TODO
 	base_buildtime = 360
 	position_priority = 154
 	base_cap_amount = 1
@@ -895,6 +826,7 @@ building_BA_refinery = {
 		owner = {
 			has_authority = auth_kivotos
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	allow = {
 	}
@@ -923,16 +855,16 @@ building_BA_refinery = {
 		}
 	}
 	prerequisites = {
-		tech_BA_pyroxenes_crafting
+		tech_BA_Kivotos_chronicle_stage4
 	}
 	planet_modifier = {
 		BA_industry_pop_volatile_motes_produces_add = 1.5
 		BA_industry_pop_exotic_gases_produces_add = 1.5
 		BA_industry_pop_rare_crystals_produces_add = 1.5
+		BA_industry_pop_trade_produces_add = 8
 	}
 	upgrades = {
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			industrial_jobs_are_catalytic_trigger = no
@@ -940,33 +872,32 @@ building_BA_refinery = {
 		BA_keystone_foundry_minerals_upkeep_add = 3
 		BA_pyroxenes_artisan_minerals_upkeep_add = 3
 	}
-
 	triggered_planet_modifier = {
 		potential = {
-				industrial_jobs_are_catalytic_trigger = yes
-			}
-			BA_keystone_foundry_food_upkeep_add = 4.5
-			BA_pyroxenes_artisan_food_upkeep_add = 4.5
+			industrial_jobs_are_catalytic_trigger = yes
 		}
+		BA_keystone_foundry_food_upkeep_add = 4.5
+		BA_pyroxenes_artisan_food_upkeep_add = 4.5
+	}
 }
 
-# 社团中心
-building_BA_Club_Complex = {
-	icon = building_research_efficiency_1  #TODO
+# 工业物流中心
+building_BA_upkeep = {
+	icon = building_industrial_subsidiary	#TODO
 	base_buildtime = 360
 	position_priority = 154
 	base_cap_amount = 1
-	category = research
+	category = manufacturing
 	building_sets = {
-		research
-		unity
-		BA_research
-		BA_unity
+		industrial
+		foundry
+		BA_foundry
 	}
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	allow = {
 	}
@@ -996,14 +927,86 @@ building_BA_Club_Complex = {
 		}
 	}
 	prerequisites = {
-		tech_BA_pyroxenes_crafting
+		tech_BA_Kivotos_chronicle_stage6
+	}
+	planet_modifier = {
+		BA_keystone_foundry_alloys_produces_add = 2
+		BA_pyroxenes_artisan_consumer_goods_produces_add = 2
+		BA_industry_pop_trade_produces_add = 8
+		BA_industry_pop_produces_mult = 0.2
+		BA_industry_pop_upkeep_mult = 0.2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			industrial_jobs_are_catalytic_trigger = no
+		}
+		BA_keystone_foundry_minerals_upkeep_add = 1
+		BA_pyroxenes_artisan_minerals_upkeep_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			industrial_jobs_are_catalytic_trigger = yes
+		}
+		BA_keystone_foundry_food_upkeep_add = 1.5
+		BA_pyroxenes_artisan_food_upkeep_add = 1.5
+	}
+	upgrades = {
+	}
+}
+
+# 社团中心
+building_BA_Club_Complex = {
+	icon = building_research_efficiency_1	#TODO
+	base_buildtime = 360
+	position_priority = 154
+	base_cap_amount = 1
+	category = research
+	building_sets = {
+		research
+		unity
+	}
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+		is_planet_class = pc_BA_campus_planet
+	}
+	allow = {
+	}
+	triggered_desc = {
+		trigger = {
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		modifier = {
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			sr_pyroxenes = 100
+		}
+		upkeep = {
+			energy = 3
+			sr_pyroxenes = 1
+		}
+	}
+	prerequisites = {
+		tech_BA_Kivotos_chronicle_stage6
 	}
 	planet_modifier = {
 		BA_club_pop_physics_research_produces_add = 3
 		BA_club_pop_society_research_produces_add = 3
 		BA_club_pop_engineering_research_produces_add = 3
-		BA_club_pop_produces_mult = 0.4
-		BA_club_pop_upkeep_mult = -0.4
+		BA_club_pop_trade_produces_mult = 8
+		BA_club_pop_upkeep_mult = 0.2
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -1017,20 +1020,20 @@ building_BA_Club_Complex = {
 
 # 档案馆
 building_BA_Archive = {
-	icon = building_illicit_research_labs  #TODO
+	icon = building_illicit_research_labs	#TODO
 	base_buildtime = 360
 	position_priority = 154
 	base_cap_amount = 1
 	category = unity
 	building_sets = {
 		unity
-		BA_research
-		BA_unity
+		research
 	}
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
 		}
+		is_planet_class = pc_BA_campus_planet
 	}
 	allow = {
 	}
@@ -1063,9 +1066,9 @@ building_BA_Archive = {
 		tech_BA_pyroxenes_crafting
 	}
 	planet_modifier = {
-		BA_staff_pop_upkeep_mult = -0.40
 		BA_staff_pop_unity_produces_add = 3
 		BA_staff_pop_produces_mult = 0.4
+		BA_staff_pop_upkeep_mult = -0.4
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -1085,8 +1088,6 @@ building_BA_club_room = {
 	building_sets = {
 		research
 		unity
-		BA_research
-		BA_unity
 	}
 	position_priority = 22
 	potential = {
@@ -1139,8 +1140,6 @@ building_BA_club_mansion = {
 	building_sets = {
 		research
 		unity
-		BA_research
-		BA_unity
 	}
 	position_priority = 22
 	potential = {
@@ -1148,6 +1147,9 @@ building_BA_club_mansion = {
 			has_authority = auth_kivotos
 		}
 		is_artificial = no
+	}
+	prerequisites = {
+		tech_BA_Kivotos_chronicle_stage4
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -1189,18 +1191,14 @@ building_BA_Kivotos_staff_room = {
 	category = unity
 	building_sets = {
 		unity
-		BA_research
-		BA_unity
+		research
 	}
 	position_priority = 22
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
 		}
-		NOR = {
-			is_planet_class = pc_BA_auto_ringworld
-			is_planet_class = pc_BA_auto_habitat
-		}
+		is_artificial = no
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -1233,18 +1231,17 @@ building_BA_Kivotos_staff_mansion = {
 	category = unity
 	building_sets = {
 		unity
-		BA_research
-		BA_unity
+		research
 	}
 	position_priority = 22
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
 		}
-		NOR = {
-			is_planet_class = pc_BA_auto_ringworld
-			is_planet_class = pc_BA_auto_habitat
-		}
+		is_artificial = no
+	}
+	prerequisites = {
+		tech_BA_Kivotos_chronicle_stage4
 	}
 	triggered_planet_modifier = {
 		potential = {

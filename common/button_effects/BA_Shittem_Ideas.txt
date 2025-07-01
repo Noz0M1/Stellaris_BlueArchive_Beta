@@ -85,12 +85,16 @@ button_effect_BA_SI_Trinity_Menu = {
 #百鬼夜行
 button_effect_BA_SI_Hyakkiyako_Menu = {
 	allow = {
-		always = yes
+		custom_tooltip = {
+			text = BA_coming_soon
+			always = no
+		}
 	}
 	potential = {
 		always = yes
 	}
 	effect = {
+
 		hidden_effect = {
 			from = {
 				country_event = {
@@ -104,7 +108,10 @@ button_effect_BA_SI_Hyakkiyako_Menu = {
 #赤冬
 button_effect_BA_SI_Redwinter_Menu = {
 	allow = {
-		always = yes
+		custom_tooltip = {
+			text = BA_coming_soon
+			always = no
+		}
 	}
 	potential = {
 		always = yes
@@ -123,7 +130,10 @@ button_effect_BA_SI_Redwinter_Menu = {
 #山海经
 button_effect_BA_SI_Shanhaijing_Menu = {
 	allow = {
-		always = yes
+		custom_tooltip = {
+			text = BA_coming_soon
+			always = no
+		}
 	}
 	potential = {
 		always = yes
@@ -142,7 +152,10 @@ button_effect_BA_SI_Shanhaijing_Menu = {
 #瓦尔基里
 button_effect_BA_SI_Valkyrie_Menu = {
 	allow = {
-		always = yes
+		custom_tooltip = {
+			text = BA_coming_soon
+			always = no
+		}
 	}
 	potential = {
 		always = yes

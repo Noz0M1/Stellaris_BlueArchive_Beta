@@ -1612,6 +1612,20 @@ country_event = {
 	#爱丽丝
 	option = {
 		name = NAME_Aris
+		custom_tooltip = DESC_Aris
+		trigger = {
+			has_country_flag = BA_Aris_joined
+		}
+		allow = {
+			custom_tooltip = {
+				text = TRIGGER_Aris
+				NOT = {
+					any_owned_leader = {
+						has_leader_flag = BA_Real_Aris
+					}
+				}
+			}
+		}
 		hidden_effect = {
 			country_event = {
 				id = BA_Shittem.3003
