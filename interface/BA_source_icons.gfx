@@ -754,6 +754,11 @@ spriteTypes = {
 # Army
 spriteTypes = {
 	spriteType = {
+		name = "GFX_army_type_auto_turrent"
+		textureFile = gfx/interface/icons/armies/BA_auto_turrent.dds
+		default_frame = 1
+	}
+	spriteType = {
 		name = "GFX_army_type_Binah_1"
 		textureFile = "gfx/interface/planetview/Binah_army_1_icon.dds"
 		default_frame = 1

@@ -84,10 +84,8 @@ civic_BA_info_net = {
 		base = 0
 	}
 	modifier = {
-		trade_value_mult = 0.1
-		starbase_trade_collection_range_add = 2
-		starbase_trade_protection_range_add = 2
-		starbase_trade_protection_add = 30
+		country_trade_produces_mult = 0.15
+		intel_encryption_add = 5
 	}
 }
 

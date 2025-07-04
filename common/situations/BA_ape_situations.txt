@@ -3,49 +3,49 @@ situation_Our_story = {
 	desc = {
 		text = situation_Our_story_desc_1
 		trigger = {
-			situation_progress < 120
+			situation_progress <= 120
 		}
 	}
 	desc = {
 		text = situation_Our_story_desc_2
 		trigger = {
 			situation_progress > 120
-			situation_progress < 270
+			situation_progress <= 270
 		}
 	}
 	desc = {
 		text = situation_Our_story_desc_3
 		trigger = {
 			situation_progress > 270
-			situation_progress < 450
+			situation_progress <= 450
 		}
 	}
 	desc = {
 		text = situation_Our_story_desc_4
 		trigger = {
 			situation_progress > 450
-			situation_progress < 660
+			situation_progress <= 660
 		}
 	}
 	desc = {
 		text = situation_Our_story_desc_5
 		trigger = {
 			situation_progress > 660
-			situation_progress < 900
+			situation_progress <= 900
 		}
 	}
 	desc = {
 		text = situation_Our_story_desc_6
 		trigger = {
 			situation_progress > 900
-			situation_progress < 1260
+			situation_progress <= 1260
 		}
 	}
 	desc = {
 		text = situation_Our_story_desc_7
 		trigger = {
 			situation_progress > 1260
-			situation_progress < 1800
+			situation_progress <= 1800
 		}
 	}
 	desc = {

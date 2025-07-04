@@ -27,19 +27,6 @@ BA_use_vanilla_normal_council = {
 }
 
 ##### Pop Jobs
-kivotos_pop_amount = {
-	optimize_memory
-	count_owned_pop_amount = {
-		limit = {
-			has_trait = trait_halo_unreleased
-			has_trait = trait_halo_awakened
-			has_trait = trait_halo_full_awakened
-			has_trait = trait_Halo_amplifier
-			has_trait = trait_Halo_precursor
-		}
-	}
-}
-
 is_kivotos = {
 	optimize_memory
 	OR = {

@@ -231,14 +231,14 @@ building_BA_keystone_1 = {
 		}
 		upkeep = {
 			trigger = {
-				colony_type = col_auto_building
+				colony_type = col_BA_auto_building
 			}
 			energy = 1.6
 			minerals = 1.2
 		}
 		produces = {
 			trigger = {
-				colony_type = col_auto_building
+				colony_type = col_BA_auto_building
 			}
 			sr_keystone = 0.4
 		}
@@ -299,14 +299,14 @@ building_BA_keystone_2 = {
 		}
 		upkeep = {
 			trigger = {
-				colony_type = col_auto_building
+				colony_type = col_BA_auto_building
 			}
 			energy = 2.4
 			minerals = 3.6
 		}
 		produces = {
 			trigger = {
-				colony_type = col_auto_building
+				colony_type = col_BA_auto_building
 			}
 			sr_keystone = 1.2
 		}
@@ -348,14 +348,14 @@ building_BA_dark_matter_concentrator_1 = {
 		}
 		upkeep = {
 			trigger = {
-				colony_type = col_auto_building
+				colony_type = col_BA_auto_building
 			}
 			energy = 4
 			sr_pyroxenes = 2
 		}
 		produces = {
 			trigger = {
-				colony_type = col_auto_building
+				colony_type = col_BA_auto_building
 			}
 			sr_keystone = 1
 		}
@@ -399,7 +399,7 @@ building_BA_rare_center_1 = {
 		}
 		produces = {
 			trigger = {
-				colony_type = col_auto_building
+				colony_type = col_BA_auto_building
 			}
 			volatile_motes = 0.2
 			exotic_gases = 0.2

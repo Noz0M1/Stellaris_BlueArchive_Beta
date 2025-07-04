@@ -10,6 +10,13 @@
  modifier_agenda_BA_SI_Trinity_A04: "议程：合作的乐趣"
  modifier_agenda_BA_SI_Trinity_A04_desc: "合同协作的魅力在于一些简单的磨合就能带来奇效。"
 
+#####       Armies         #####
+ BA_auto_turrent_1: "自走炮塔部队"
+ BA_auto_turrent_1_desc: "一种自走炮塔"
+ BA_auto_turrent_2: "深潜者炮塔部队"
+ BA_auto_turrent_2_desc: "如同特种兵那样穿插作战的自走炮塔"
+
+
 #####       Building       #####
  # base resource
  building_BA_energy_1: "联邦发癫大楼"
@@ -899,20 +906,30 @@
  pc_BA_fe_auto_ringworld_adj: "叠合空间模块化环世界"
 
  ###     colony    ###
- col_pyroxenes_craft:0 "青辉石星球"
- col_pyroxenes_craft_desc:0 "为制造青辉石而特化的星球。"
- col_auto_building:0 "自动化制造星球"
- col_auto_building_desc:0 "为自动化建筑群而布置的星球。"
- col_auto_building_tooltip:0 "自动化建筑生产效率：§Y+20%§!"
  col_BA_campus_normal:0 "D.U.星球"
  col_BA_campus_normal_desc:0 "学生川流不息的学园都市中心区。"
+ col_BA_campus_normal_tt:0 ""
  col_BA_campus_club:0 "社团星球"
  col_BA_campus_club_desc:0 "星球级别规模的社团大楼。"
- col_BA_campus_craft:0 "制造石星球"
- col_BA_campus_craft_desc:0 "使用制造石进行工业生产的星球。"
+ col_BA_campus_club_tt:0 ""
+ col_BA_pyroxenes:0 "青辉石星球"
+ col_BA_pyroxenes_desc:0 "为制造青辉石而特化的星球。"
+ col_BA_pyroxenes_tt:0 ""
+ col_BA_keystone:0 "制造石星球"
+ col_BA_keystone_desc:0 "使用制造石进行工业生产的星球。"
+ col_BA_keystone_tt:0 ""
  col_BA_campus_unemp:0 "灵活就业星球"
  col_BA_campus_unemp_desc:0 "提供许许多多灵活就业方式，并帮助人们适应灵活就业生活的星球。"
- col_BA_campus_unemp_tooltip:0 "£job£灵活就业者的维护费用不再消耗£influence£影响力"
+ col_BA_campus_unemp_tt:0 "£job£灵活就业者的维护费用不再消耗£influence£影响力"
+ col_BA_auto_building:0 "自动化制造星球"
+ col_BA_auto_building_desc:0 "为自动化建筑群而布置的星球。"
+ col_BA_auto_building_tt:0 "自动化建筑生产效率：§Y+20%§!"
+ col_BA_foundry: "联邦锻冶星球"
+ col_BA_foundry_desc: "布满成型建筑的锻冶中心。"
+ col_BA_foundry_tt: ""
+ col_BA_artisan: "联邦工业星球"
+ col_BA_artisan_desc: "复制厂无边无际的消费品生产中心。"
+ col_BA_artisan_tt: ""
 
 
 #####       Policies       #####
@@ -1759,6 +1776,11 @@
  tech_BA_Badge_T5_desc:0 "小孩子才做选择，大人全都要。由暗物质制作的的徽章，十分可靠。"
  tech_BA_Badge_T6:0 "舰船用徽章T6"
  tech_BA_Badge_T6_desc:0 "小孩子才做选择，大人全都要。顶配主义徽章，给人十足的安全感的同时优化了生产流程。"
+
+ tech_BA_auto_turrent_1:0 "自走炮塔部件"
+ tech_BA_auto_turrent_1_desc:0 "一种自走炮塔的部件设计。"
+ tech_BA_auto_turrent_2:0 "自修复炮塔核心"
+ tech_BA_auto_turrent_2_desc:0 "这个核心能够让自走炮台如同特种兵那样穿插作战。"
 
  tech_BA_Arius_antihalo:0 "光环炸弹"
  tech_BA_Arius_antihalo_desc:0 "一种原理未被确认的、可以摧毁我们的光环的炸弹。极其危险。"

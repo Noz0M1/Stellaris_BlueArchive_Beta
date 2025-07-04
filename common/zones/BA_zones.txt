@@ -350,7 +350,7 @@ zone_BA_mixed_industry = {
 	planet_modifier = {
 		zone_building_slots_add = 3
 	}
-	triggered_planet_modifier = {
+	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 		}
@@ -396,7 +396,7 @@ zone_BA_foundry = {
 	planet_modifier = {
 		zone_building_slots_add = 3
 	}
-	triggered_planet_modifier = {
+	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 		}
@@ -440,7 +440,7 @@ zone_BA_factory = {
 	planet_modifier = {
 		zone_building_slots_add = 3
 	}
-	triggered_planet_modifier = {
+	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 		}

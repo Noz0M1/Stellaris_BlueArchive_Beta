@@ -101,10 +101,6 @@ BA_auto_habitat_center = {
 					}
 				}
 			}
-			custom_tooltip = {
-				fail_text = "requires_not_star"
-				is_star = no
-			}
 			#禁止ai用这个
 			if = {
 				always = no

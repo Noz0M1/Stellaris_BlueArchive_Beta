@@ -3908,6 +3908,21 @@ country_event = {
 	}
 }
 
+#### 功能事件
+#废墟球殖民初始化
+planet_event = {
+	id = BA_Shittem.3200
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_planet_class = pc_BA_ruined_planet
+	}
+	immediate = {
+		add_district = BA_districts_shelter
+		remove_district = district_city
+	}
+}
+
 ################################
 ###   学园理念   —— N0Z0M1
 ################################

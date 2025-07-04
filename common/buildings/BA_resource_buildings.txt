@@ -862,22 +862,9 @@ building_BA_refinery = {
 		BA_industry_pop_exotic_gases_produces_add = 1.5
 		BA_industry_pop_rare_crystals_produces_add = 1.5
 		BA_industry_pop_trade_produces_add = 8
+		BA_industry_pop_upkeep_mult = 0.3
 	}
 	upgrades = {
-	}
-	triggered_planet_modifier = {
-		potential = {
-			industrial_jobs_are_catalytic_trigger = no
-		}
-		BA_keystone_foundry_minerals_upkeep_add = 3
-		BA_pyroxenes_artisan_minerals_upkeep_add = 3
-	}
-	triggered_planet_modifier = {
-		potential = {
-			industrial_jobs_are_catalytic_trigger = yes
-		}
-		BA_keystone_foundry_food_upkeep_add = 4.5
-		BA_pyroxenes_artisan_food_upkeep_add = 4.5
 	}
 }
 
@@ -933,22 +920,7 @@ building_BA_upkeep = {
 		BA_keystone_foundry_alloys_produces_add = 2
 		BA_pyroxenes_artisan_consumer_goods_produces_add = 2
 		BA_industry_pop_trade_produces_add = 8
-		BA_industry_pop_produces_mult = 0.2
 		BA_industry_pop_upkeep_mult = 0.2
-	}
-	triggered_planet_modifier = {
-		potential = {
-			industrial_jobs_are_catalytic_trigger = no
-		}
-		BA_keystone_foundry_minerals_upkeep_add = 1
-		BA_pyroxenes_artisan_minerals_upkeep_add = 1
-	}
-	triggered_planet_modifier = {
-		potential = {
-			industrial_jobs_are_catalytic_trigger = yes
-		}
-		BA_keystone_foundry_food_upkeep_add = 1.5
-		BA_pyroxenes_artisan_food_upkeep_add = 1.5
 	}
 	upgrades = {
 	}
@@ -1002,17 +974,20 @@ building_BA_Club_Complex = {
 		tech_BA_Kivotos_chronicle_stage6
 	}
 	planet_modifier = {
-		BA_club_pop_physics_research_produces_add = 3
-		BA_club_pop_society_research_produces_add = 3
-		BA_club_pop_engineering_research_produces_add = 3
-		BA_club_pop_trade_produces_mult = 8
-		BA_club_pop_upkeep_mult = 0.2
 	}
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
 			industrial_jobs_are_catalytic_trigger = no
 		}
-		BA_club_pop_consumer_goods_upkeep_add = 2
+		BA_club_pop_physics_research_produces_add = 3
+		BA_club_pop_society_research_produces_add = 3
+		BA_club_pop_engineering_research_produces_add = 3
+		BA_club_pop_trade_produces_add = 8
+		BA_club_pop_upkeep_mult = 0.3
 	}
 	upgrades = {
 	}

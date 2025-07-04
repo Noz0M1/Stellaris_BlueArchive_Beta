@@ -70,7 +70,7 @@ BA_districts_campus = {
 		modifier = {
 			#200社团部员
 			job_BA_club_members_add = 150
-			job_BA_Kivotos_trader_add = 50
+			job_BA_Kivotos_staff_add = 50
 		}
 	}
 	#传统
@@ -100,7 +100,7 @@ BA_districts_campus = {
 		potential = {
 			exists = owner
 			owner = {
-				has_technology = tech_BA_Kivotos_chronicle_stage1
+				has_technology = tech_BA_Kivotos_chronicle_stage5
 			}
 		}
 		#编年史5阶段 200社团部员

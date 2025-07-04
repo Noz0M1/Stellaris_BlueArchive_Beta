@@ -1,0 +1,63 @@
+BA_auto_turrent_1 = {
+    damage = 1.5
+    morale_damage = 1.0
+    collateral_damage = 1.0
+    war_exhaustion = 0
+    health = 1.0
+    has_morale = no
+    time = 20
+    icon = GFX_army_type_auto_turrent
+    has_species = no
+
+    resources = {
+        category = armies
+        cost = {
+            minerals = 100
+        }
+        upkeep = {
+            energy = 1
+        }
+    }
+
+    potential_country = {
+        has_authority = auth_kivotos
+    }
+
+    prerequisites = { tech_BA_auto_turrent_1 }
+
+    ai_weight = {
+        base = 10
+    }
+}
+BA_auto_turrent_2 = {
+    damage = 3.2
+    morale_damage = 1.0
+    collateral_damage = 1.0
+    war_exhaustion = 0
+    health = 2.0
+    has_morale = no
+    time = 20
+    icon = GFX_army_type_auto_turrent
+    has_species = no
+
+    resources = {
+        category = armies
+        cost = {
+            minerals = 100
+            sr_keystone = 5
+        }
+        upkeep = {
+            energy = 1
+        }
+    }
+
+    potential_country = {
+        has_authority = auth_kivotos
+    }
+
+    prerequisites = { tech_BA_auto_turrent_2 }
+
+    ai_weight = {
+        base = 10
+    }
+}

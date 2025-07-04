@@ -798,3 +798,39 @@ tech_BA_Badge_T6 = {
 		has_authority = auth_kivotos
 	}
 }
+
+#### 陆军科技
+tech_BA_auto_turrent_1 = {
+	area = engineering
+	cost = @tier1cost2
+	tier = 1
+	is_rare = no
+	is_reverse_engineerable = no
+	category = {
+		school_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier1weight1
+}
+
+tech_BA_auto_turrent_2 = {
+	area = engineering
+	cost = @tier3cost2
+	tier = 3
+	is_rare = yes
+	is_reverse_engineerable = no
+	category = {
+		school_tech
+	}
+	prerequisites = {
+		tech_BA_auto_turrent_1
+		tech_BA_keystone_crafting
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier1weight1
+}
+

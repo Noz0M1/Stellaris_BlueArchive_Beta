@@ -394,9 +394,24 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		### 统计人口，决定项目价格
-		set_variable = {
+		export_trigger_value_to_variable = {
+			trigger = count_owned_pop_amount
+			parameters = {
+				limit = {
+					OR = {
+						has_trait = trait_halo_unreleased
+						has_trait = trait_halo_awakened
+						has_trait = trait_halo_full_awakened
+						has_trait = trait_Halo_amplifier
+						has_trait = trait_Halo_precursor
+					}
+				}
+			}
+			variable = Halo_prize
+		}
+		multiply_variable = {
 			which = Halo_prize
-			value = trigger:kivotos_pop_amount
+			value = 0.01
 		}
 	}
 	option = {
@@ -410,12 +425,12 @@ country_event = {
 		allow = {
 			resource_stockpile_compare = {
 				resource = food
-				value >= 1
+				value >= 10
 				multiplier = Halo_prize
 			}
 		}
 		add_resource = {
-			food = -1
+			food = -10
 			multiplier = Halo_prize
 		}
 		hidden_effect = {
@@ -427,24 +442,24 @@ country_event = {
 		allow = {
 			resource_stockpile_compare = {
 				resource = volatile_motes
-				value >= -0.05
+				value >= -0.5
 				multiplier = Halo_prize
 			}
 			resource_stockpile_compare = {
 				resource = exotic_gases
-				value >= -0.05
+				value >= -0.5
 				multiplier = Halo_prize
 			}
 			resource_stockpile_compare = {
 				resource = rare_crystals
-				value >= -0.05
+				value >= -0.5
 				multiplier = Halo_prize
 			}
 		}
 		add_resource = {
-			volatile_motes = -0.05
-			exotic_gases = -0.05
-			rare_crystals = -0.05
+			volatile_motes = -0.5
+			exotic_gases = -0.5
+			rare_crystals = -0.5
 			multiplier = Halo_prize
 		}
 		hidden_effect = {
@@ -456,12 +471,12 @@ country_event = {
 		allow = {
 			resource_stockpile_compare = {
 				resource = consumer_goods
-				value >= 2
+				value >= 12
 				multiplier = Halo_prize
 			}
 		}
 		add_resource = {
-			consumer_goods = -2
+			consumer_goods = -12
 			multiplier = Halo_prize
 		}
 		hidden_effect = {
@@ -473,12 +488,12 @@ country_event = {
 		allow = {
 			resource_stockpile_compare = {
 				resource = sr_pyroxenes
-				value >= 0.5
+				value >= 3
 				multiplier = Halo_prize
 			}
 		}
 		add_resource = {
-			sr_pyroxenes = -0.5
+			sr_pyroxenes = -3
 			multiplier = Halo_prize
 		}
 		hidden_effect = {
@@ -600,7 +615,7 @@ country_event = {
 		name = BA_ape.1004.next
 		custom_tooltip = BA_ape.1004.next.tip
 		add_resource = {
-			unity = 50
+			unity = 500
 			multiplier = Halo_prize
 		}
 		end_event_chain = BA_Halo_awaken_chain
@@ -675,7 +690,7 @@ country_event = {
 	option = {
 		name = BA_ape.1005.next
 		add_resource = {
-			unity = 100
+			unity = 1000
 			multiplier = Halo_prize
 		}
 	}
