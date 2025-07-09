@@ -1,6 +1,5 @@
 ####   ！此文件涉及原版修改
 is_organic_species = {
-	optimize_memory
 	species = {
 		OR = {
 			is_archetype = BIOLOGICAL			# original trigger did not include pre-sapient classes
@@ -11,7 +10,6 @@ is_organic_species = {
 }
 
 has_food_upkeep = {
-	optimize_memory
 	species = {
 		OR = {
 			is_archetype = BIOLOGICAL
@@ -24,7 +22,6 @@ has_food_upkeep = {
 }
 
 habitable_planet = {
-	optimize_memory	#内存
 	OR = {
 		# vanilla
 		habitable_planet_not_urban = yes
@@ -38,7 +35,6 @@ habitable_planet = {
 }
 
 uses_habitat_capitals = {
-	optimize_memory
 	OR = {
 		uses_district_set = habitat
 		uses_district_set = BA_auto_habitat
@@ -46,7 +42,6 @@ uses_habitat_capitals = {
 }
 
 has_upgraded_capital = {
-	optimize_memory
 	hidden_trigger = {
 		exists = owner
 	}

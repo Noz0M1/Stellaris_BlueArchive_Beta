@@ -1193,7 +1193,7 @@ tech_BA_SI_Trinity_C01 = {
 		shipclass_starbase_build_cost_mult = -0.1
 		shipclass_colonizer_build_cost_mult = -0.3
 		empire_size_systems_mult = -0.1
-		empire_size = -0.02
+		empire_size_mult = -0.02
 	}
 }
 
@@ -1215,7 +1215,7 @@ tech_BA_SI_Trinity_C02 = {
 		planet_district_city_build_speed_mult = 2
 		planet_jobs_upkeep_mult = 0.05
 		empire_size_colonies_mult = -0.1
-		empire_size = -0.04
+		empire_size_mult = -0.04
 	}
 }
 
@@ -1237,7 +1237,7 @@ tech_BA_SI_Trinity_C03 = {
 		planet_jobs_produces_mult = 0.1
 		planet_jobs_upkeep_mult = 0.05
 		empire_size_pops_mult = -0.1
-		empire_size = -0.06
+		empire_size_mult = -0.06
 	}
 }
 
@@ -1261,7 +1261,7 @@ tech_BA_SI_Trinity_C04 = {
 		planet_buildings_cost_mult = 0.2
 		planet_districts_cost_mult = 0.2
 		empire_size_districts_mult = -0.1
-		empire_size = -0.08
+		empire_size_mult = -0.08
 	}
 }
 
@@ -1284,7 +1284,7 @@ tech_BA_SI_Trinity_C05 = {
 		megastructure_build_speed_mult = 2
 		country_megastructure_build_cap_add = 2
 		megastructures_cost_mult = 0.3
-		empire_size = -0.1
+		empire_size_mult = -0.1
 	}
 }
 

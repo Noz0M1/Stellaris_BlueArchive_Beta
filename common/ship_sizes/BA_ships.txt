@@ -1,7 +1,8 @@
 #### 民用舰船
 #社团舰
 BA_club_ship = {
-	map_icon_override = {  }
+	map_icon_override = {
+	}
 	max_hitpoints = @colony_hp
 	combat_disengage_chance = 0.5
 	max_speed = @speed_very_slow
@@ -188,7 +189,6 @@ BA_swarm_ship = {
 	entity = "ba_swarm_ship_entity"
 	modifier = {
 		ship_evasion_add = @battleship_evasion
-		ship_piracy_suppression_add = 8
 	}
 	size_multiplier = 6
 	fleet_slot_size = 4
@@ -204,7 +204,7 @@ BA_swarm_ship = {
 		}
 	}
 	num_target_locators = 4
-	icon = ship_size_military_8
+	icon = ship_size_military_4
 	is_space_station = no
 	base_buildtime = 360
 	can_have_federation_design = no
@@ -410,7 +410,7 @@ BA_defence_cannon = {
 		}
 	}
 	resources = {
-		category = starbase_stations
+		category = defensive_pacts
 		cost = {
 			alloys = 500
 			sr_keystone = 20
@@ -420,7 +420,6 @@ BA_defence_cannon = {
 		}
 	}
 }
-
 
 #### 天灾舰船
 starbase_Aris = {
@@ -487,7 +486,6 @@ BA_Aris_flagship = {
 	entity = "ba_hub_ship_entity"
 	modifier = {
 		ship_evasion_add = @battleship_evasion
-		ship_piracy_suppression_add = 24
 	}
 	is_designable = no
 	components_add_to_cost = no
@@ -530,10 +528,6 @@ BA_Aris_flagship = {
 	}
 	resources = {
 		category = ships
-		upkeep = {
-			energy = @titan_upkeep_energy
-			alloys = @titan_upkeep_alloys
-		}
 	}
 	min_upgrade_cost = {
 		alloys = 16

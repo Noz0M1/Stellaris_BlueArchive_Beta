@@ -8,46 +8,92 @@ country_event = {
 		has_authority = auth_kivotos
 	}
 	immediate = {
-		### 群友菜单
-		#MiAzusa
-		if = {
-			limit = {
-				NOT = {
+		random = {
+			chance = 100
+			country_event = {
+				id = BA_Easter_egg.9998
+				random = 25
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_Easter_egg.9998
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_authority = auth_kivotos
+	}
+	immediate = {
+		random_list = {
+			### 群友彩蛋
+			#MiAzusa
+			0 = {
+				modifier = {
+					set = 0
 					has_country_flag = EasterEgg_MiAzusa
 				}
-				any_owned_leader = {
-					has_total_skill >= 5
-					OR = {
-						has_leader_flag = leader_BA_011
-						has_leader_flag = leader_BA_019
-						has_leader_flag = leader_BA_033
-						has_leader_flag = leader_BA_039
-						has_leader_flag = leader_BA_040
-						has_leader_flag = leader_BA_044
-						has_leader_flag = leader_BA_081
-						has_leader_flag = leader_BA_084
-						has_leader_flag = leader_BA_085
-						has_leader_flag = leader_BA_089
-						has_leader_flag = leader_BA_112
-						has_leader_flag = leader_BA_129
-						has_leader_flag = leader_BA_151
-						has_leader_flag = leader_BA_194
-						has_leader_flag = leader_BA_206
-						has_leader_flag = leader_BA_220
-						has_leader_flag = leader_BA_221
-						has_leader_flag = leader_BA_222
-						has_leader_flag = leader_BA_226
-						has_leader_flag = leader_BA_234
-						has_leader_flag = leader_BA_239
+				modifier = {
+					add = 1000
+					any_owned_leader = {
+						has_total_skill >= 5
+						OR = {
+							has_leader_flag = leader_BA_011
+							has_leader_flag = leader_BA_019
+							has_leader_flag = leader_BA_033
+							has_leader_flag = leader_BA_039
+							has_leader_flag = leader_BA_040
+							has_leader_flag = leader_BA_044
+							has_leader_flag = leader_BA_081
+							has_leader_flag = leader_BA_084
+							has_leader_flag = leader_BA_085
+							has_leader_flag = leader_BA_089
+							has_leader_flag = leader_BA_112
+							has_leader_flag = leader_BA_129
+							has_leader_flag = leader_BA_151
+							has_leader_flag = leader_BA_194
+							has_leader_flag = leader_BA_206
+							has_leader_flag = leader_BA_220
+							has_leader_flag = leader_BA_221
+							has_leader_flag = leader_BA_222
+							has_leader_flag = leader_BA_226
+							has_leader_flag = leader_BA_234
+							has_leader_flag = leader_BA_239
+						}
 					}
+
 				}
-			}
-			random = {
-				chance = 99
 				country_event = {
 					id = BA_Easter_egg.0001
 					random = 25
 				}
+			}
+			#鞋垫-#1
+			0 = {
+				modifier = {
+					set = 0
+					has_country_flag = EasterEgg_Zombie
+				}
+				modifier = {
+					add = 1000
+					any_owned_leader = {
+						has_total_skill >= 5
+						OR = {
+							has_leader_flag = leader_BA_003
+							has_leader_flag = leader_BA_004
+							has_leader_flag = leader_BA_005
+							has_leader_flag = leader_BA_006
+							has_leader_flag = leader_BA_007
+						}
+					}
+				}
+				country_event = {
+					id = BA_Easter_egg.0010
+					random = 25
+				}
+			}
+			1 = {
 			}
 		}
 	}
@@ -175,7 +221,7 @@ country_event = {
 	}
 }
 
-### 白石透
+### 鞋垫-#1
 country_event = {
 	id = BA_Easter_egg.0010
 	is_triggered_only = yes
@@ -202,11 +248,8 @@ country_event = {
 	is_triggered_only = yes
 	title = BA_Easter_egg.0011.title
 	desc = BA_Easter_egg.0011.desc
+	picture = GFX_BA_Hidden_lab
 	trigger = {
-		has_modifier = modifier_BA_Aris_in_matrix
-		any_owned_planet = {
-			has_deposit = d_black_market
-		}
 	}
 	option = {
 		name = BA_Easter_egg.0011.a
@@ -227,6 +270,7 @@ country_event = {
 	is_triggered_only = yes
 	title = BA_Easter_egg.0012.title
 	desc = BA_Easter_egg.0012.desc
+	picture = GFX_BA_Hidden_lab
 	option = {
 		name = BA_Easter_egg.0012.a
 		country_event = {
@@ -241,6 +285,7 @@ country_event = {
 	is_triggered_only = yes
 	title = BA_Easter_egg.0013.title
 	desc = BA_Easter_egg.0013.desc
+	picture = GFX_BA_Hidden_lab
 	option = {
 		name = BA_Easter_egg.0013.a
 		country_event = {
@@ -255,6 +300,7 @@ country_event = {
 	is_triggered_only = yes
 	title = BA_Easter_egg.0014.title
 	desc = BA_Easter_egg.0014.desc
+	picture = GFX_BA_Hidden_lab
 	option = {
 		name = BA_Easter_egg.0014.a
 		country_event = {
@@ -269,17 +315,14 @@ country_event = {
 	is_triggered_only = yes
 	title = BA_Easter_egg.0015.title
 	desc = BA_Easter_egg.0015.desc
+	picture = GFX_BA_Hidden_lab
 	option = {
 		name = BA_Easter_egg.0015.a
 		set_country_flag = BA_bitcoin_yamero
-		hidden_effect = {
-			BA_remove_Aris = yes
-			BA_Aris_SP = {
-				class = scientist
-			}
-		}
 	}
 }
+
+### 鞋垫-#2
 
 ######     其他彩蛋     ######
 ### 超天酱

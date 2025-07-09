@@ -15,21 +15,21 @@ BA_create_mid_Aris_fleet_pawn = {
 				count = 2
 				create_ship = {
 					name = ARIS_CASTLE
-					design = NAME_BA_FE_ARTILLERY_SHIP
+					design = NAME_BA_ARIS_ARTILLERY_SHIP
 				}
 			}
 			while = {
 				count = 2
 				create_ship = {
 					name = ARIS_BISHOP
-					design = NAME_BA_FE_SWARM_SHIP
+					design = NAME_BA_ARIS_SWARM_SHIP
 				}
 			}
 			while = {
 				count = 6
 				create_ship = {
 					name = ARIS_PAWN
-					design = NAME_BA_FE_MISSILE_SHIP
+					design = NAME_BA_ARIS_MISSILE_SHIP
 				}
 			}
 			#
@@ -73,21 +73,21 @@ BA_create_mid_Aris_fleet_bishop = {
 				count = 3
 				create_ship = {
 					name = ARIS_CASTLE
-					design = NAME_BA_FE_ARTILLERY_SHIP
+					design = NAME_BA_ARIS_ARTILLERY_SHIP
 				}
 			}
 			while = {
 				count = 3
 				create_ship = {
 					name = ARIS_BISHOP
-					design = NAME_BA_FE_SWARM_SHIP
+					design = NAME_BA_ARIS_SWARM_SHIP
 				}
 			}
 			while = {
 				count = 8
 				create_ship = {
 					name = ARIS_PAWN
-					design = NAME_BA_FE_MISSILE_SHIP
+					design = NAME_BA_ARIS_MISSILE_SHIP
 				}
 			}
 			event_target:BA_Precursors_Aris_country = {

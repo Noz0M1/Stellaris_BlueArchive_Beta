@@ -149,8 +149,9 @@ situation_Kyrie_ruin_research = {
 		}
 	}
 	on_monthly = {
-		events = {
-			BA_origin.1030
+		random_events = {
+			92 = 0
+			8 = BA_origin.1030
 		}
 	}
 	on_progress_complete = {

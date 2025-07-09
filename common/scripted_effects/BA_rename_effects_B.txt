@@ -1,7 +1,6 @@
 ##### 系统初始化
 #为所有领袖施加检测印记
 BA_set_rename_flag = {
-	optimize_memory
 	every_owned_leader = {
 		limit = {
 			species = {

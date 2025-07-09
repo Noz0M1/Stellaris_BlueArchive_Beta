@@ -136,6 +136,30 @@ tech_BA_Arius_antihalo = {
 	weight = 0
 }
 
+#天灾
+tech_BA_crisis = {
+	icon = tech_mine_dark_matter
+	area = society
+	cost = @tier5cost3
+	tier = 5
+	start_tech = yes
+	is_reverse_engineerable = no
+	category = {
+		school_tech
+	}
+	potential = {
+		OR = {
+			has_country_flag = BA_cheat
+			is_BA_crisis = yes
+		}
+	}
+	modifier = {
+		command_limit_add = 1000
+		starbase_defense_platform_capacity_add = 200
+	}
+	weight = 0
+}
+
 #堕落帝国
 tech_BA_fe = {
 	icon = tech_mine_dark_matter
@@ -155,7 +179,7 @@ tech_BA_fe = {
 		}
 	}
 	modifier = {
-		command_limit_add = 100
+		command_limit_add = 1000
 		starbase_defense_platform_capacity_add = 200
 	}
 	weight = 0
@@ -1009,93 +1033,220 @@ tech_BA_culture_Federal = {
 
 tech_BA_culture_Abydos = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost2
+	tier = 3
 	is_rare = no
 	category = {
 		school_tech
 	}
-	weight = 0
-	weight_modifier = {
-		modifier = {
-			factor = 3
-			has_country_flag = hoshino_is_leader_flag			#当星野是学生会长时，权重*3
-		}
-	}
+	weight = @tier3weight2
 	prerequisites = {
 		"tech_BA_culture_Federal"
 	}
 	potential = {
 		has_authority = auth_kivotos
+	}
+	modifier = {
+		planet_building_capacity_add = 1
 	}
 }
 
 tech_BA_culture_Gehenna = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost2
+	tier = 3
 	is_rare = no
 	category = {
 		school_tech
 	}
-	weight = 0
-	weight_modifier = {
-		modifier = {
-			factor = 3
-			has_country_flag = hina_is_leader_flag			#当日奈是学生会长时，权重*3
-		}
-	}
+	weight = @tier3weight2
 	prerequisites = {
 		"tech_BA_culture_Federal"
 	}
 	potential = {
 		has_authority = auth_kivotos
+	}
+	modifier = {
+		command_limit_add = 40
 	}
 }
 
 tech_BA_culture_Millennium = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost2
+	tier = 3
 	is_rare = no
 	category = {
 		school_tech
 	}
-	weight = 0
-	weight_modifier = {
-		modifier = {
-			factor = 3
-			has_country_flag = yuuka_is_leader_flag			#当优香是学生会长时，权重*3
-		}
-	}
+	weight = @tier3weight2
 	prerequisites = {
 		"tech_BA_culture_Federal"
 	}
 	potential = {
 		has_authority = auth_kivotos
+	}
+	modifier = {
+		BA_club_pop_upkeep_mult = -0.1
 	}
 }
 
 tech_BA_culture_Trinity = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost2
+	tier = 3
 	is_rare = no
 	category = {
 		school_tech
 	}
-	weight = 0
-	weight_modifier = {
-		modifier = {
-			factor = 3
-			has_country_flag = mika_is_leader_flag			#当未花是学生会长时，权重*3
-		}
-	}
+	weight = @tier3weight2
 	prerequisites = {
 		"tech_BA_culture_Federal"
 	}
 	potential = {
 		has_authority = auth_kivotos
+	}
+	modifier = {
+		empire_size_penalty_mult = -0.2
+	}
+}
+
+tech_BA_culture_Redwinter = {
+	area = society
+	cost = @tier3cost3
+	tier = 3
+	is_rare = no
+	category = {
+		school_tech
+	}
+	weight = @tier3weight3
+	prerequisites = {
+		tech_BA_culture_Abydos
+		tech_BA_culture_Gehenna
+		tech_BA_culture_Millennium
+		tech_BA_culture_Trinity
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	modifier = {
+		planet_jobs_worker_produces_mult = 0.1
+	}
+}
+
+tech_BA_culture_Hyakkiyako = {
+	area = society
+	cost = @tier3cost3
+	tier = 3
+	is_rare = no
+	category = {
+		school_tech
+	}
+	weight = @tier3weight3
+	prerequisites = {
+		tech_BA_culture_Abydos
+		tech_BA_culture_Gehenna
+		tech_BA_culture_Millennium
+		tech_BA_culture_Trinity
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	modifier = {
+		council_agenda_progress_speed = 0.1
+	}
+}
+
+tech_BA_culture_Shanhaijing = {
+	area = society
+	cost = @tier3cost3
+	tier = 3
+	is_rare = no
+	category = {
+		school_tech
+	}
+	weight = @tier3weight3
+	prerequisites = {
+		tech_BA_culture_Abydos
+		tech_BA_culture_Gehenna
+		tech_BA_culture_Millennium
+		tech_BA_culture_Trinity
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	modifier = {
+		country_trade_produces_mult = 0.05
+	}
+}
+
+tech_BA_culture_Valkyrie = {
+	area = society
+	cost = @tier3cost3
+	tier = 3
+	is_rare = no
+	category = {
+		school_tech
+	}
+	weight = @tier3weight3
+	prerequisites = {
+		tech_BA_culture_Abydos
+		tech_BA_culture_Gehenna
+		tech_BA_culture_Millennium
+		tech_BA_culture_Trinity
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	modifier = {
+		BA_crew_pop_upkeep_mult = -0.2
+	}
+}
+
+tech_BA_culture_SRT = {
+	area = society
+	cost = @tier3cost3
+	tier = 3
+	is_rare = no
+	category = {
+		school_tech
+	}
+	weight = @tier3weight3
+	prerequisites = {
+		tech_BA_culture_Abydos
+		tech_BA_culture_Gehenna
+		tech_BA_culture_Millennium
+		tech_BA_culture_Trinity
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	modifier = {
+		ship_experience_gain_mult = 0.1
+	}
+}
+
+tech_BA_culture_Arius = {
+	area = society
+	cost = @tier3cost3
+	tier = 3
+	is_rare = no
+	category = {
+		school_tech
+	}
+	weight = @tier3weight3
+	prerequisites = {
+		tech_BA_culture_Abydos
+		tech_BA_culture_Gehenna
+		tech_BA_culture_Millennium
+		tech_BA_culture_Trinity
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	modifier = {
+		planet_amenities_mult = 0.05
+		federation_experience_add = 2
 	}
 }
 

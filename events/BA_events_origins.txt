@@ -963,14 +963,8 @@ situation_event = {
 	hide_window = yes
 	immediate = {
 		target = {
-			random_list = {
-				8 = {
-					planet_event = {
-						id = BA_origin.1033
-					}
-				}
-				92 = {
-				}
+			planet_event = {
+				id = BA_origin.1033
 			}
 		}
 	}

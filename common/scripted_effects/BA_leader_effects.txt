@@ -26,7 +26,7 @@ BA_remove_Aris = {
 ## 定制领袖
 BA_governor_Serina_PR = {
 	create_leader = {
-		class = governor
+		class = official
 		species = event_target:BA_leader_species
 		gender = female
 		name = NAME_Serina
@@ -53,7 +53,7 @@ BA_governor_Serina_PR = {
 
 BA_admiral_Iori_PR = {
 	create_leader = {
-		class = admiral
+		class = commander
 		species = event_target:BA_leader_species
 		gender = female
 		name = NAME_Iori

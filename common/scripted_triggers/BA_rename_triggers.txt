@@ -1,6 +1,5 @@
 ##### Leaders
 BA_leader_is_renamed = {
-	optimize_memory
 	# scope: leader
 	OR = {
 		has_leader_flag = BA_renamed
@@ -10,7 +9,6 @@ BA_leader_is_renamed = {
 }
 
 BA_leader_has_same = {
-	optimize_memory
 	owner = {
 		OR = {
 			any_owned_leader = {
@@ -24,7 +22,6 @@ BA_leader_has_same = {
 }
 
 BA_rename_special_check_1 = {
-	optimize_memory
 	has_total_skill >= 3
 	species = {
 		BA_has_halo_organic = yes
@@ -41,7 +38,6 @@ BA_rename_special_check_1 = {
 
 ##### Leader Skins
 BA_leader_has_skin_GD = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_021
 		has_leader_flag = leader_BA_028
@@ -50,7 +46,6 @@ BA_leader_has_skin_GD = {
 }
 
 BA_leader_has_skin_OLD = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_068
 		has_leader_flag = leader_BA_128
@@ -58,7 +53,6 @@ BA_leader_has_skin_OLD = {
 }
 
 BA_leader_has_skin_SS = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_003
 		has_leader_flag = leader_BA_004
@@ -90,14 +84,12 @@ BA_leader_has_skin_SS = {
 }
 
 BA_leader_has_skin_CYC = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_003
 	}
 }
 
 BA_leader_has_skin_XMS = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_122
 		has_leader_flag = leader_BA_124
@@ -105,7 +97,6 @@ BA_leader_has_skin_XMS = {
 }
 
 BA_leader_has_skin_UNF = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_102
 		has_leader_flag = leader_BA_103
@@ -113,56 +104,48 @@ BA_leader_has_skin_UNF = {
 }
 
 BA_leader_has_skin_PJ = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_039
 	}
 }
 
 BA_leader_has_skin_CD = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_086
 	}
 }
 
 BA_leader_has_skin_NS = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_124
 	}
 }
 
 BA_leader_has_skin_MK = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_017
 	}
 }
 
 BA_leader_has_skin_SNT = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_134
 	}
 }
 
 BA_leader_has_skin_YN = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_108
 	}
 }
 
 BA_leader_has_skin_DL = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_107
 	}
 }
 
 BA_leader_has_skin_MD = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_093
 		has_leader_flag = leader_BA_094
@@ -172,7 +155,6 @@ BA_leader_has_skin_MD = {
 }
 
 BA_leader_has_skin_BN = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_091
 		has_leader_flag = leader_BA_102
@@ -184,7 +166,6 @@ BA_leader_has_skin_BN = {
 }
 
 BA_leader_has_skin_BD = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_126
 		has_leader_flag = leader_BA_127
@@ -194,7 +175,6 @@ BA_leader_has_skin_BD = {
 }
 
 BA_leader_has_skin_CL = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_082
 		has_leader_flag = leader_BA_083
@@ -204,7 +184,6 @@ BA_leader_has_skin_CL = {
 }
 
 BA_leader_has_skin_HS = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_038
 		has_leader_flag = leader_BA_061
@@ -215,14 +194,12 @@ BA_leader_has_skin_HS = {
 }
 
 BA_leader_has_skin_FN = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_024
 	}
 }
 
 BA_leader_has_skin_JK1 = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_006
 		has_leader_flag = leader_BA_007
@@ -230,21 +207,18 @@ BA_leader_has_skin_JK1 = {
 }
 
 BA_leader_has_skin_JK2 = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_006
 	}
 }
 
 BA_leader_has_skin_JC = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_017
 	}
 }
 
 BA_leader_has_skin_NVG = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_035
 		has_leader_flag = leader_BA_040
@@ -257,7 +231,6 @@ BA_leader_has_skin_NVG = {
 }
 
 BA_leader_has_skin_DR = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_011
 		has_leader_flag = leader_BA_034
@@ -273,14 +246,12 @@ BA_leader_has_skin_DR = {
 }
 
 BA_leader_has_skin_COL = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_003
 	}
 }
 
 BA_leader_has_skin_CMP = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_098
 		has_leader_flag = leader_BA_099
@@ -290,7 +261,6 @@ BA_leader_has_skin_CMP = {
 }
 
 BA_leader_has_skin_KMN = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_005
 		has_leader_flag = leader_BA_034
@@ -306,7 +276,6 @@ BA_leader_has_skin_KMN = {
 }
 
 BA_leader_has_skin_AGT = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_036
 		has_leader_flag = leader_BA_037
@@ -314,7 +283,6 @@ BA_leader_has_skin_AGT = {
 }
 
 BA_leader_has_skin_SPW = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_049
 		has_leader_flag = leader_BA_092
@@ -324,7 +292,6 @@ BA_leader_has_skin_SPW = {
 }
 
 BA_leader_has_skin_SP = {
-	optimize_memory
 	OR = {
 		has_leader_flag = leader_BA_003
 		has_leader_flag = leader_BA_004

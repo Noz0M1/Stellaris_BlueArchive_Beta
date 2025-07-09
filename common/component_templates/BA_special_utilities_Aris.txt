@@ -7,7 +7,7 @@ weapon_component_template = {
 	icon = "GFX_Sagittarius_night"
 	icon_frame = 1
 	prerequisites = {
-		tech_BA_fe
+		tech_BA_crisis
 	}
 	component_set = "Sagittarius_night"
 	type = point_defence
@@ -62,7 +62,7 @@ weapon_component_template = {
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
-		tech_BA_fe
+		tech_BA_crisis
 	}
 	component_set = "Soft_determination"
 	projectile_gfx = "gamma_laser_s"
@@ -116,7 +116,7 @@ weapon_component_template = {
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
-		tech_BA_fe
+		tech_BA_crisis
 	}
 	component_set = "Unique_idea"
 	projectile_gfx = "Unique_idea"
@@ -172,7 +172,7 @@ weapon_component_template = {
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
-		tech_BA_fe
+		tech_BA_crisis
 	}
 	component_set = "Flashy_inspiration"
 	projectile_gfx = "Flashy_inspiration"
@@ -227,7 +227,7 @@ weapon_component_template = {
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
-		tech_BA_fe
+		tech_BA_crisis
 	}
 	component_set = "Crack_shot"
 	projectile_gfx = "Crack_shot"
@@ -279,7 +279,7 @@ weapon_component_template = {
 	icon = "GFX_Grenadiers_575"
 	icon_frame = 1
 	prerequisites = {
-		tech_BA_fe
+		tech_BA_crisis
 	}
 	component_set = "Grenadiers_575"
 	type = missile
@@ -372,7 +372,7 @@ strike_craft_component_template = {
 	icon_frame = 1
 	component_set = "Adena_3"
 	prerequisites = {
-		tech_BA_fe
+		tech_BA_crisis
 	}
 	tags = {
 		weapon_type_strike_craft
@@ -393,7 +393,7 @@ weapon_component_template = {
 	firing_arc = 25
 	min_range = 10
 	prerequisites = {
-		tech_BA_fe
+		tech_BA_crisis
 	}
 	component_set = "Fantacy_colors"
 	projectile_gfx = "adv_kinetic_artillery"
@@ -449,7 +449,7 @@ weapon_component_template = {
 	firing_arc = 25
 	min_range = 10
 	prerequisites = {
-		tech_BA_fe
+		tech_BA_crisis
 	}
 	component_set = "SuperNova"
 	projectile_gfx = "Supernova"
@@ -493,4 +493,3 @@ weapon_component_template = {
 		weight = 1
 	}
 }
-

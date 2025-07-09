@@ -301,7 +301,7 @@ country_event = {
 	}
 }
 
-#社团月检
+#社团年检
 country_event = {
 	id = BA_club.0035
 	is_triggered_only = yes
@@ -316,7 +316,7 @@ country_event = {
 				has_policy_flag = club_lv3_spounce
 			}
 			BA_club_favor_grow = {
-				AMOUNT = 5
+				AMOUNT = 60
 			}
 		}
 		else_if = {
@@ -324,7 +324,7 @@ country_event = {
 				has_policy_flag = club_lv2_spounce
 			}
 			BA_club_favor_grow = {
-				AMOUNT = 3
+				AMOUNT = 36
 			}
 		}
 		else_if = {
@@ -332,12 +332,12 @@ country_event = {
 				has_policy_flag = club_lv1_spounce
 			}
 			BA_club_favor_grow = {
-				AMOUNT = 2
+				AMOUNT = 24
 			}
 		}
 		else = {
 			BA_club_favor_grow = {
-				AMOUNT = 1
+				AMOUNT = 12
 			}
 		}
 		#社团赞助buff

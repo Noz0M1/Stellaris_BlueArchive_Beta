@@ -1202,7 +1202,7 @@ BA_club_station_Publishing_department = {
 					has_country_flag = Publishing_department_func
 				}
 			}
-			consumer_goods = 1
+			consumer_goods = 0.01
 			multiplier = owner.value:num_BA_club_publish_value
 		}
 		upkeep = {
@@ -1211,7 +1211,7 @@ BA_club_station_Publishing_department = {
 					has_country_flag = Publishing_department_func
 				}
 			}
-			food = 1
+			food = 0.01
 			multiplier = owner.value:num_BA_club_publish_value
 		}
 		upkeep = {

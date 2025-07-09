@@ -1,3 +1,196 @@
+#####      主界面     #####
+#格赫娜
+button_effect_BA_SI_Gehenna_Menu = {
+	allow = {
+		custom_tooltip = {
+			success_text = tech_BA_culture_Shanhaijing_desc
+			always = yes
+		}
+		BA_SI_main_unlock_trigger = {
+			SCHOOL = Gehenna
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = tech_BA_culture_Gehenna_desc
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_Shittem.1031
+				}
+			}
+		}
+	}
+}
+
+#阿拜多斯
+button_effect_BA_SI_Abydos_Menu = {
+	allow = {
+		BA_SI_main_unlock_trigger = {
+			SCHOOL = Abydos
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = tech_BA_culture_Abydos_desc
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_Shittem.1032
+				}
+			}
+		}
+	}
+}
+
+#千年
+button_effect_BA_SI_Millennium_Menu = {
+	allow = {
+		BA_SI_main_unlock_trigger = {
+			SCHOOL = Millennium
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = tech_BA_culture_Millennium_desc
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_Shittem.1034
+				}
+			}
+		}
+	}
+}
+
+#圣三一
+button_effect_BA_SI_Trinity_Menu = {
+	allow = {
+		custom_tooltip = {
+			success_text = tech_BA_culture_Trinity_desc
+			always = yes
+		}
+		BA_SI_main_unlock_trigger = {
+			SCHOOL = Trinity
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = tech_BA_culture_Shanhaijing_desc
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_Shittem.1037
+				}
+			}
+		}
+	}
+}
+
+#赤冬
+button_effect_BA_SI_Redwinter_Menu = {
+	allow = {
+		custom_tooltip = {
+			text = BA_coming_soon
+			always = yes
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = tech_BA_culture_Redwinter_desc
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_Shittem.1035
+				}
+			}
+		}
+	}
+}
+
+#百鬼夜行
+button_effect_BA_SI_Hyakkiyako_Menu = {
+	allow = {
+		custom_tooltip = {
+			text = BA_coming_soon
+			always = yes
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = tech_BA_culture_Hyakkiyako_desc
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_Shittem.1033
+				}
+			}
+		}
+	}
+}
+
+#山海经
+button_effect_BA_SI_Shanhaijing_Menu = {
+	allow = {
+		custom_tooltip = {
+			success_text = tech_BA_culture_Shanhaijing_desc
+			always = yes
+		}
+		custom_tooltip = {
+			text = BA_coming_soon
+			always = yes
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = tech_BA_culture_Shanhaijing_desc
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_Shittem.1036
+				}
+			}
+		}
+	}
+}
+
+#瓦尔基里
+button_effect_BA_SI_Valkyrie_Menu = {
+	allow = {
+		custom_tooltip = {
+			text = BA_coming_soon
+			always = yes
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = tech_BA_culture_Valkyrie_desc
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_Shittem.1038
+				}
+			}
+		}
+	}
+}
+
 #####     阿拜多斯     #####
 ### 页面1
 #G线路
@@ -7191,7 +7384,6 @@ button_effect_BA_SI_Shanhaijing_G02_lock = {
 		from = {
 			BA_SI_cooldown_trigger = yes
 			BA_SI_time_limit_trigger = yes
-
 			custom_tooltip = {
 				fail_text = need_preposition_ideas
 				has_technology = tech_BA_SI_Shanhaijing_G01
