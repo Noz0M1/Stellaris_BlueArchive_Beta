@@ -560,6 +560,10 @@ country_event = {
 	custom_gui = BlueArchive_MainWindow_daytime
 	immediate = {
 		set_country_flag = Shittem_engaged
+		set_variable = {
+			which = BA_cheat_click_count
+			value = 0
+		}
 	}
 	after = {
 		remove_country_flag = Shittem_engaged
@@ -580,6 +584,10 @@ country_event = {
 	custom_gui = BlueArchive_MainWindow_night
 	immediate = {
 		set_country_flag = Shittem_engaged
+		set_variable = {
+			which = BA_cheat_click_count
+			value = 0
+		}
 	}
 	after = {
 		remove_country_flag = Shittem_engaged
@@ -2073,9 +2081,9 @@ country_event = {
 		default_hide_option = yes
 	}
 	option = {
-		name = cheat_buff
+		name = BA_cheat_buff
 		is_dialog_only = yes
-		response_text = buff_added
+		response_text = BA_cheat_buff_added
 		if = {
 			limit = {
 				has_modifier = modifier_BA_testing
@@ -2089,22 +2097,31 @@ country_event = {
 		}
 	}
 	option = {
-		name = check_crisis_level
+		name = BA_cheat_check_crisis_level
 		is_dialog_only = yes
-		response_text = check_crisis_level_re
+		response_text = BA_cheat_check_crisis_level_re
 	}
 	option = {
-		name = pyroxene_tech
+		name = BA_cheat_get_SI_point
 		is_dialog_only = yes
-		response_text = tech_gived
+		response_text = BA_cheat_acquired
+		set_country_flag = BA_SI_no_cd
+		BA_SI_cost_change = {
+			VALUE = 40000
+		}
+	}
+	option = {
+		name = BA_cheat_get_pyroxene_tech
+		is_dialog_only = yes
+		response_text = BA_cheat_acquired
 		give_technology = {
 			tech = tech_BA_pyroxenes_crafting
 		}
 	}
 	option = {
-		name = keystone_tech
+		name = BA_cheat_get_keystone_tech
 		is_dialog_only = yes
-		response_text = tech_gived
+		response_text = BA_cheat_acquired
 		give_technology = {
 			tech = tech_BA_keystone_crafting
 		}
@@ -2686,6 +2703,7 @@ country_event = {
 						has_building = building_research_lab_1
 						has_building = building_research_lab_2
 						has_building = building_research_lab_3
+
 					}
 				}
 			}
@@ -3909,17 +3927,36 @@ country_event = {
 }
 
 #### 功能事件
-#废墟球殖民初始化
+#殖民初始化
 planet_event = {
-	id = BA_Shittem.3200
+	id = BA_Shittem.3201
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
+		is_planet_class = pc_BA_campus_planet
 		is_planet_class = pc_BA_ruined_planet
+		is_planet_class = pc_BA_auto_habitat
 	}
 	immediate = {
-		add_district = BA_districts_shelter
-		remove_district = district_city
+		validate_planet_buildings_and_districts = yes
+		# switch = {
+		# 	trigger = is_planet_class
+		# 	pc_BA_ruined_planet = {
+		# 		add_district = BA_districts_campus
+		# 		remove_district = district_city
+		# 		validate_planet_buildings_and_districts = yes
+		# 	}
+		# 	pc_BA_ruined_planet = {
+		# 		add_district = BA_districts_shelter
+		# 		remove_district = district_city
+		# 		validate_planet_buildings_and_districts = yes
+		# 	}
+		# 	pc_BA_auto_habitat = {
+		# 		add_district = BA_district_auto_city
+		# 		remove_district = district_city
+		# 		validate_planet_buildings_and_districts = yes
+		# 	}
+		# }
 	}
 }
 

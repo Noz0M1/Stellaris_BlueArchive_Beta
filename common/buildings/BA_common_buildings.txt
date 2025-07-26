@@ -421,6 +421,9 @@ building_BA_mixed_ruins_lab = {
 		owner = {
 			has_authority = auth_kivotos
 		}
+		planet = {
+			is_planet_class = pc_BA_ruined_planet
+		}
 	}
 	can_be_disabled = no
 	can_demolish = no

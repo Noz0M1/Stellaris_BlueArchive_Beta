@@ -679,13 +679,18 @@ situation_mid_Aris_ask_help = {
 		#
 		modifier = {
 			add = 10
-			desc = mid_Aris_ask_help_easy_mode
+			desc = mid_Aris_ask_help_Normal_mode
 			has_global_flag = BA_Crisis_Normal
 		}
 		modifier = {
 			add = -10
-			desc = mid_Aris_ask_help_insane_mode
-			has_global_flag = BA_Crisis_Insane
+			desc = mid_Aris_ask_help_Torment_mode
+			has_global_flag = BA_Crisis_Torment
+		}
+		modifier = {
+			add = -20
+			desc = mid_Aris_ask_help_Lunatic_mode
+			has_global_flag = BA_Crisis_Lunatic
 		}
 	}
 	approach = {

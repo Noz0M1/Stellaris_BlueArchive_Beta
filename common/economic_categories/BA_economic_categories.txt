@@ -71,21 +71,6 @@ BA_staff_pop = {
 	modifier_category = pop_group
 }
 
-#####
-BA_staff_pop = {
-	icon = job_BA_Kivotos_staff
-	parent = planet_bureaucrats
-	generate_mult_modifiers = {
-		produces
-		upkeep
-	}
-	generate_add_modifiers = {
-		produces
-		upkeep
-	}
-	modifier_category = pop_group
-}
-
 ##### 社团部员
 BA_club_pop = {
 	icon = job_BA_club_members

@@ -393,6 +393,11 @@ ship_section_template = {
 		template = "invisible_titanic_fixed"
 		locatorname = "xl_gun_02"
 	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
 	large_utility_slots = 3
 	aux_utility_slots = 1
 	resources = {

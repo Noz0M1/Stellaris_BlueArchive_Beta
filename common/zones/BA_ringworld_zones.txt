@@ -181,10 +181,13 @@ zone_BA_ringworld_capital_E = {
 				has_authority = auth_kivotos
 			}
 		}
-		job_BA_Vigilant_crew_add = 800
 		job_BA_Kivotos_staff_add = -200
 		job_BA_Kivotos_trader_add = -200
 		job_BA_club_members_add = -200
+	}
+	inline_script = {
+		script = jobs/add_BA_crew_pop_jobs
+		value = 800
 	}
 	zone_sets = {
 		BA_ringworld_capital

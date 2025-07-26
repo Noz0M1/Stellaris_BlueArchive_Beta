@@ -3020,6 +3020,12 @@ country_event = {
 			which = Xuanwu_promenade_room_limit			#部室限制
 			value = 1
 		}
+		#
+		set_variable = {
+			which = Xuanwu_promenade_cooldown			#冷却时间
+			value = 360
+		}
+		#
 		every_country = {
 			limit = {
 				has_authority = auth_kivotos
@@ -3078,10 +3084,15 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			set_timed_country_flag = {
-				flag = Xuanwu_promenade_trade_cooldown
-				days = 360
+			set_saved_date = {
+				key = Xuanwu_promenade_trade_cooldown
+				days_from_present = Xuanwu_promenade_cooldown
+				expires = Xuanwu_promenade_cooldown
 			}
+			# set_timed_country_flag = {
+			# 	flag = Xuanwu_promenade_trade_cooldown
+			# 	days = Xuanwu_promenade_cooldown
+			# }
 			country_event = {
 				id = BA_club.1714
 			}
@@ -3104,7 +3115,8 @@ country_event = {
 country_event = {
 	id = BA_club.1714
 	title = Xuanwu_promenade_trade.title
-	desc = Xuanwu_promenade_trade.desc
+	desc = Xuanwu_promenade_trade.desc1
+	desc = Xuanwu_promenade_trade.desc2
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_window"

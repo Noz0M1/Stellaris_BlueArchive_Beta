@@ -221,6 +221,14 @@ diplomatic_stance = {
 				factor = 3
 				has_ai_personality = federation_builders
 			}
+			modifier = {
+				factor = 3
+				has_ai_personality = hive_mind_friend
+			}
+			modifier = {
+				factor = 3
+				has_country_flag = fallen_empire_hive_control
+			}
 		}
 	}
 	option = {
@@ -288,6 +296,7 @@ diplomatic_stance = {
 		name = "diplo_stance_expansionist"
 		icon = "GFX_diplomatic_stance_expansionist"
 		potential = {
+			is_wilderness_empire = no
 			OR = {
 				is_country_type = default
 				is_country_type = awakened_fallen_empire
@@ -302,6 +311,41 @@ diplomatic_stance = {
 		modifier = {
 			starbase_outpost_cost_mult = -0.1
 			planet_colony_development_speed_mult = 0.15
+			country_border_friction_mult = 1
+		}
+		ai_weight = {
+			weight = 10
+			modifier = {
+				factor = 2
+				NOT = {
+					has_country_flag = has_encountered_other_empire
+				}
+			}
+			modifier = {
+				factor = 0.01
+				has_ascension_perk = ap_become_the_crisis
+			}
+		}
+	}
+	option = {
+		name = "diplo_stance_expansionist_wilderness"
+		icon = "GFX_diplomatic_stance_expansionist"
+		potential = {
+			is_wilderness_empire = yes
+			OR = {
+				is_country_type = default
+				is_country_type = awakened_fallen_empire
+			}
+		}
+		valid = {
+			is_homicidal = no
+		}
+		policy_flags = {
+			diplo_stance_expansionist
+		}
+		modifier = {
+			starbase_outpost_cost_mult = -0.1
+			terraform_speed_mult = 0.15
 			country_border_friction_mult = 1
 		}
 		ai_weight = {
@@ -358,8 +402,7 @@ diplomatic_stance = {
 		}
 		modifier = {
 			diplo_weight_economy_mult = 0.25
-			trade_value_mult = 0.1
-			local_trade_protection_add = 5
+			country_trade_produces_mult = 0.1
 			external_leader_pool_add = 1
 		}
 		ai_weight = {
@@ -481,6 +524,7 @@ diplomatic_stance = {
 					has_valid_civic = civic_machine_warbots
 					has_valid_civic = civic_private_military_companies
 					has_valid_civic = civic_warrior_culture
+					has_country_flag = fallen_empire_hive_war
 				}
 			}
 			modifier = {
@@ -616,10 +660,16 @@ diplomatic_stance = {
 		name = "diplo_stance_hunger"
 		icon = "GFX_diplomatic_stance_rest"
 		potential = {
-			is_hive_empire = yes
+			OR = {
+				is_hive_empire = yes
+				has_menace_perk = menp_behemoth_ever_hungry
+			}
 		}
 		valid = {
-			has_valid_civic = civic_hive_devouring_swarm
+			OR = {
+				has_valid_civic = civic_hive_devouring_swarm
+				has_menace_perk = menp_behemoth_ever_hungry
+			}
 		}
 		policy_flags = {
 			diplo_stance_hunger
@@ -821,6 +871,197 @@ diplomatic_stance = {
 		}
 		ai_weight = {
 			weight = 10
+		}
+	}
+}
+
+trade_policy = {
+	potential = {
+		NOT = {
+			has_ethic = ethic_gestalt_consciousness
+		}
+	}
+	option = {
+		name = "trade_policy_default"
+		potential = {
+			is_worker_coop_empire = no
+		}
+		on_enabled = {
+			hidden_effect = {
+				set_trade_conversions = {
+					trade = 0.5
+					energy = 0.5
+				}
+			}
+		}
+		on_disabled = {
+			hidden_effect = {
+				set_trade_conversions = {
+				}
+			}
+		}
+		AI_weight = {
+			factor = 0
+		}
+	}
+	option = {
+		name = "trade_policy_consumer_goods"
+		potential = {
+			OR = {
+				has_federation = no
+				AND = {
+					has_federation = yes
+					federation = {
+						NOT = {
+							has_federation_perk = trade_federation_passive
+						}
+					}
+				}
+			}
+			has_tradition = tr_mercantile_adaptive_economic_policies
+			is_worker_coop_empire = no
+		}
+		on_enabled = {
+			set_trade_conversions = {
+				trade = 0.75
+				consumer_goods = 0.25
+			}
+		}
+		policy_flags = {
+			trade_conversion_consumer_goods
+		}
+		modifier = {
+		}
+		AI_weight = {
+			factor = 1
+		}
+	}
+	option = {
+		name = "trade_policy_unity"
+		potential = {
+			OR = {
+				has_federation = no
+				AND = {
+					has_federation = yes
+					federation = {
+						NOR = {
+							has_federation_perk = trade_federation_passive
+							has_federation_perk = unity_trade_1
+						}
+					}
+				}
+			}
+			has_tradition = tr_mercantile_adaptive_economic_policies
+			is_worker_coop_empire = no
+		}
+		on_enabled = {
+			set_trade_conversions = {
+				trade = 0.75
+				unity = 0.25
+			}
+		}
+		policy_flags = {
+			trade_conversion_unity
+		}
+		modifier = {
+		}
+		AI_weight = {
+			factor = 0
+		}
+	}
+	option = {
+		name = "trade_policy_trade_league"
+		potential = {
+			has_federation = yes
+			federation = {
+				has_federation_perk = trade_federation_passive
+			}
+		}
+		on_enabled = {
+			set_trade_conversions = {
+				trade = 0.5
+				energy = 0.1
+				consumer_goods = 0.2
+				unity = 0.2
+			}
+		}
+		policy_flags = {
+			trade_conversion_trade_league
+		}
+		modifier = {
+		}
+		AI_weight = {
+			factor = 1000
+		}
+	}
+	option = {
+		name = "trade_policy_holy_covenant"
+		potential = {
+			has_federation = yes
+			federation = {
+				has_federation_perk = unity_trade_1
+			}
+		}
+		on_enabled = {
+			set_trade_conversions = {
+				trade = 0.6
+				unity = 0.4
+			}
+		}
+		policy_flags = {
+			trade_conversion_holy_covenant
+		}
+		modifier = {
+		}
+		AI_weight = {
+			factor = 1000
+		}
+	}
+	option = {
+		name = "trade_policy_mutual_aid"
+		potential = {
+			is_worker_coop_empire = yes
+		}
+		on_enabled = {
+			set_trade_conversions = {
+				trade = 0.3
+				energy = 0.2
+				minerals = 0.2
+				food = 0.2
+				unity = 0.1
+			}
+		}
+		policy_flags = {
+			trade_conversion_mutual_aid
+		}
+		modifier = {
+		}
+		AI_weight = {
+			factor = 1000
+		}
+	}
+	############
+	option = {
+		name = "trade_policy_BA_federal"
+		potential = {
+			has_tradition = tr_kivotos_adopt
+		}
+		on_enabled = {
+			set_trade_conversions = {
+				trade = 1.5
+			}
+		}
+		policy_flags = {
+			trade_policy_BA_federal
+		}
+		modifier = {
+		}
+		AI_weight = {
+			factor = 1000
+			modifier = {
+				multiply = 100
+				has_authority = auth_kivotos
+			}
 		}
 	}
 }

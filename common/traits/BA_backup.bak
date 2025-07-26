@@ -3058,7 +3058,7 @@
 #	randomized = no
 #	modifier = {
 #		trade_value_add = 25		# "贸易额"
-#		pop_job_trade_mult = 0.1		#"£job£岗位产出的£trade_value£贸易额"
+#		pop_job_trade_mult = 0.1		#"£job£岗位产出的£trade£贸易额"
 #	}
 #	inline_script = {
 #		script = paragon/leader_resource_produces
@@ -3402,7 +3402,7 @@
 #	is_councilor_trait_for_ruler = yes
 #	randomized = no
 #	modifier = {
-#		pop_job_trade_mult = 1.5		#"£job£岗位产的£trade_value£贸易额"
+#		pop_job_trade_mult = 1.5		#"£job£岗位产的£trade£贸易额"
 #	}
 #	inline_script = {
 #		script = paragon/leader_resource_produces
@@ -4281,7 +4281,7 @@
 #	randomized = no
 #	modifier = {
 #		planet_stability_add = 10		# "稳定度"
-#		pop_job_trade_mult = -0.15		#"£job£岗位产出的£trade_value£贸易额"
+#		pop_job_trade_mult = -0.15		#"£job£岗位产出的£trade£贸易额"
 #		planet_jobs_minerals_produces_mult = 0.25		#"£job£ 岗位生产的£minerals£ $minerals$"
 #	}
 #	leader_class = {

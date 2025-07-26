@@ -1,7 +1,7 @@
 ##################
 ##  基沃托斯传统
 ##################
-#激活：开采站产出+20%
+#激活
 tr_kivotos_adopt = {
 	possible = {
 		has_authority = auth_kivotos
@@ -14,9 +14,10 @@ tr_kivotos_adopt = {
 	ai_weight = {
 		weight = 10000
 	}
+	custom_tooltip = tr_kivotos_adopt_desc
 }
 
-#1 新型宿舍：联邦职员—— 无 -> 50舒适度
+#1 新型宿舍
 tr_kivotos_newkind_dome = {
 	possible = {
 	}
@@ -31,7 +32,7 @@ tr_kivotos_newkind_dome = {
 	custom_tooltip = tr_kivotos_newkind_dome_desc
 }
 
-#2 学园军备：自警团会生成防御部队，并+凝聚力。灵活就业者产出海军容量。
+#2 学园军备
 tr_kivotos_student_arms = {
 	possible = {
 	}
@@ -43,7 +44,7 @@ tr_kivotos_student_arms = {
 	custom_tooltip = tr_kivotos_student_arms_desc
 }
 
-#1-1值日轮换：社团部员—— 0.5消费品 -> 1凝聚力
+#1-1值日轮换
 tr_kivotos_daily_duty = {
 	possible = {
 		has_tradition = tr_kivotos_newkind_dome
@@ -58,7 +59,7 @@ tr_kivotos_daily_duty = {
 	#custom_tooltip = tr_kivotos_daily_duty_desc
 }
 
-#1-2探寻神秘：社团部员—— 0.5消费品 -> 1*3科研点
+#1-2探寻神秘：
 tr_kivotos_opaz = {
 	possible = {
 		has_tradition = tr_kivotos_newkind_dome
@@ -75,7 +76,7 @@ tr_kivotos_opaz = {
 	#custom_tooltip = tr_kivotos_opaz_desc
 }
 
-#2-1太空补给：制造石冶金师—— 无 -> 8海军容量
+#2-1太空补给
 tr_kivotos_space_supplies = {
 	possible = {
 		has_tradition = tr_kivotos_student_arms
@@ -91,7 +92,7 @@ tr_kivotos_space_supplies = {
 	# custom_tooltip = tr_kivotos_space_supplies_desc
 }
 
-#完成：社团部员不再减少星球稳定度 飞升+1 学园区划转换100社团部员->学生代表岗位    以后改到学园文化研究里面）
+#完成
 tr_kivotos_finish = {
 	modifier = {
 		ascension_perks_add = 1

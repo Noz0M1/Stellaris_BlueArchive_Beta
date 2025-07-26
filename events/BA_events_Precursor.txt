@@ -48,13 +48,22 @@ country_event = {
 			limit = {
 				check_variable = {
 					which = BA_Crisis_Strength
+					value < 150
+				}
+			}
+			set_global_flag = BA_Crisis_Insane
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = BA_Crisis_Strength
 					value < 250
 				}
 			}
-			set_global_flag = BA_Crisis_Extreme
+			set_global_flag = BA_Crisis_Torment
 		}
 		else = {
-			set_global_flag = BA_Crisis_Insane
+			set_global_flag = BA_Crisis_Lunatic
 		}
 		#### 创建国家
 		create_species = {
@@ -697,7 +706,7 @@ country_event = {
 		else = {
 			country_event = {
 				# id = BA_Precursor.0152
-				id = BA_Precursor.0151 #暂时关闭
+				id = BA_Precursor.0151				#暂时关闭
 			}
 		}
 	}

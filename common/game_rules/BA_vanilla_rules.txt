@@ -1,4 +1,4 @@
-### ！此文件涉及原版修改
+####   ！此文件涉及原版修改
 # 领袖
 can_generate_leader_from_species = {
 	is_sapient = yes
@@ -28,46 +28,10 @@ can_build_branch_offices = {
 	custom_tooltip = {
 		fail_text = BRANCH_OFFICE_NOT_MEGACORP
 		OR = {
-			has_authority = auth_corporate
+			is_megacorp = yes
 			has_civic = civic_galactic_sovereign_megacorp
 			# BA
 			has_authority = auth_kivotos
-		}
-	}
-}
-
-can_support_branch_offices = {
-	custom_tooltip = {
-		fail_text = BRANCH_OFFICE_NOT_FALLEN_EMPIRES
-		NOR = {
-			is_country_type = fallen_empire
-			is_country_type = awakened_fallen_empire
-		}
-	}
-	custom_tooltip = {
-		fail_text = BRANCH_OFFICE_NOT_ON_MEGACORP_PLANET
-		NOR = {
-			has_authority = auth_corporate
-			has_civic = civic_galactic_sovereign_megacorp
-			#BA
-			has_authority = auth_kivotos
-		}
-	}
-	custom_tooltip = {
-		fail_text = BRANCH_OFFICE_NOT_REGULAR_EMPIRE
-		is_gestalt = no
-	}
-	custom_tooltip = {
-		fail_text = BRANCH_OFFICE_NOT_ADVANCED_PRE_FTL
-		if = {
-			limit = {
-				is_primitive = yes
-				is_gestalt = no
-			}
-			OR = {
-				has_pre_ftl_age = atomic_age
-				has_pre_ftl_age = early_space_age
-			}
 		}
 	}
 }
@@ -77,7 +41,7 @@ is_criminal_syndicate_rule = {
 		#Vanilla
 		AND = {
 			OR = {
-				has_authority = auth_corporate
+				is_megacorp = yes
 				has_valid_civic = civic_galactic_sovereign_megacorp
 			}
 			has_valid_civic = civic_criminal_heritage
@@ -170,6 +134,7 @@ can_orbital_bombard = {
 				is_country_type = swarm
 				is_country_type = ai_empire
 				is_country_type = cybrex_empire
+				is_country_type = abandoned_hatchery
 				AND = {
 					is_country_type = awakened_marauders
 					ROOT.CONTROLLER = {
@@ -192,6 +157,15 @@ can_orbital_bombard = {
 				is_country_type = debt_collectors
 				is_country_type = gray_goo
 				is_country_type = vol
+				is_country_type = behemoth_hatchling
+				is_country_type = abandoned_hatchery
+				AND = {
+					is_country_type = frenzied_voidworms
+					has_country_flag = can_bombard
+					FROM.CONTROLLER = {
+						has_country_flag = tormented_by_frenzied_voidworms
+					}
+				}
 				AND = {
 					OR = {
 						is_country_type = awakened_marauders
@@ -199,6 +173,12 @@ can_orbital_bombard = {
 					}
 					FROM.CONTROLLER = {
 						is_hostile = prev
+					}
+				}
+				AND = {
+					is_voidworms_hostile_country_type = yes
+					ROOT = {
+						is_ship_size = voidworms_titan
 					}
 				}
 				#	BA

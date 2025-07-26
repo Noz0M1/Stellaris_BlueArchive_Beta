@@ -19,12 +19,11 @@
 # 		factor = 0
 # 	}
 # }
-
 purge_Sacrifice = {
 	pop_escape_chance = 0.05
 	pop_decline_rate = 15
 	# 1 pop per 4 months, overrides BASE_POP_DECLINE, will only work on purge types
-	pop_modifier = {
+	pop_group_modifier = {
 		pop_happiness = -10
 	}
 	pop_tooltip = Sacrificing

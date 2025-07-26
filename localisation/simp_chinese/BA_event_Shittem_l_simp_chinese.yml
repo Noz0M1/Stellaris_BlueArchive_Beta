@@ -196,15 +196,26 @@
  BA_Shittem.1901.a:0 "立即续签协议"
  BA_Shittem.1901.b:0 "o(TヘTo)，蓝色恶魔……"
 
+#作弊界面
  BA_Shittem.1998.title:0 "作弊界面"
  BA_Shittem.1998.desc:0 "“老师，不知您是怎么发现这个界面的呢？哎……制作者的水平虽然不怎么样，偏偏在这种奇怪的地方很有热情……\n\n这里的功能有的可以帮助大家脱离bug的困扰，有的则有堪比第四天灾遗珍的强度……总之，还请老师慎重使用，制作者的本意是希望大家玩的开心就好。”"
- about_arius:0 "关于该起源的事件链……"
- about_arius_re:0 "对该起源的事件链结构感到困扰，让Arona稍微，稍微透露一下流程？没问题，当然可以哦。\n\n第一步，经由§Y委托§!获得£physics£§Y$tech_BA_ruins_research$§!研究选项并研究它，之后在母星上建造§Y$building_BA_mixed_ruins_lab$§!建筑。\n第二步，等待混成化实验室的研究，直至获得£engineering_research£§Y$tech_BA_ruins_mining$§!研究选项后，研究它之后必须清理包括圣堂在内的学园障碍，需要特殊资源的两个障碍不在此限。\n第三步，清理完成后会获得£engineering_research£§Y$tech_BA_Arius_planet_rebuild$§!研究选项，这个研究很耗时间，可以趁此多做一些委托，这些委托都很容易完成，但奖励很丰富。\n第四步，研究完成后，花费之前攒的£sr_keystone£制造石停止废墟生成后清除所有现有障碍，然后去星球决议中选择§Y$decision_Kyrie_clean_colony$§!，此外解除威胁的工作也会在研究完成后自动开始。是否正在解除威胁、清理废墟可以直接在母星的星球修正上看到。 \n解除威胁完成后，星球就不会再爆掉了。在星球决议中完成星球重建，并击败2250年来袭的陆军，该事件链就宣告完成了。"
- cheat_buff:0 "§M大人的卡片§!"
- buff_added:0 "欸嘿嘿，这东西可比 ~ 键好用多了！"
- pyroxene_tech:0 "获得青辉石量产科技"
- keystone_tech:0 "获得制造石量产科技"
- tech_gived:0 "已获得了哦。"
+
+ BA_cheat_buff:0 "§M大人的卡片§!"
+ BA_cheat_buff_added:0 "欸嘿嘿，这东西可比 ~ 键好用多了！"
+
+ BA_cheat_check_crisis_level:0 "查询天灾难度"
+ BA_cheat_check_crisis_level_re:0 "本局的天灾难度是：[GetBACrisisLevel]"
+ BA_crisis_level_Normal:0 "§GNormal§!"
+ BA_crisis_level_Hardcore:0 "§YHardcore§!"
+ BA_crisis_level_Insane:0 "§BInsane§!"
+ BA_crisis_level_Torment:0 "§RTorment§!"
+ BA_crisis_level_Lunatic:0 "§MLunatic§!"
+
+ BA_cheat_get_SI_point:0 "获取§B学园理念§!点数(无冷却时间)"
+ BA_cheat_get_pyroxene_tech:0 "获得青辉石量产科技"
+ BA_cheat_get_keystone_tech:0 "获得制造石量产科技"
+ BA_cheat_acquired:0 "已获得了哦。"
+
 
 #委托
  BA_commission_accepted_unfinished:0 "委托尚未完成"

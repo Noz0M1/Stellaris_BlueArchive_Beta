@@ -9,8 +9,8 @@ button_effect_BA_angel_24 = {
 		hidden_effect = {
 			from = {
 				country_event = {
-                    id = BA_Shittem.1010
-                }
+					id = BA_Shittem.1010
+				}
 			}
 		}
 	}
@@ -113,9 +113,21 @@ button_effect_BA_developer_options = {
 	effect = {
 		hidden_effect = {
 			from = {
-				# country_event = {
-				# 	id = BlueArchiveEvents.6
-				# }
+				change_variable = {
+					which = BA_cheat_click_count
+					value = 1
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = BA_cheat_click_count
+							value > 12
+						}
+					}
+					country_event = {
+						id = BA_Shittem.1998
+					}
+				}
 			}
 		}
 	}

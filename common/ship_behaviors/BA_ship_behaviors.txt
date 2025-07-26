@@ -1,8 +1,8 @@
 ship_behavior = {
 	name = "mortar"
-	preferred_attack_range = 165
-	formation_distance = 165
-	return_to_formation_distance = 180
+	preferred_attack_range = 200
+	formation_distance = 200
+	return_to_formation_distance = 220
 	combat_target_anchor = root
 	collision_awareness = 0.2
 	collision_radius = 1	#collision_radius is a multiplier on the radius specified in the ship size

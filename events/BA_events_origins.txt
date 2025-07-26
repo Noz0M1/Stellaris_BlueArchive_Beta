@@ -1531,11 +1531,6 @@ situation_event = {
 			}
 			set_situation_flag = BA_enemy_met
 		}
-		owner = {
-			add_resource = {
-				consumer_goods = 1215752192
-			}
-		}
 	}
 }
 
@@ -1904,7 +1899,7 @@ planet_event = {
 		owner = {
 			add_resource = {
 				minerals = 300
-				sr_pyroxenes = 200
+				sr_pyroxenes = 60
 			}
 			add_monthly_resource_mult = {
 				resource = society_research

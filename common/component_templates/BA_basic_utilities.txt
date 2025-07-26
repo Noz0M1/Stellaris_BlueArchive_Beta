@@ -14,19 +14,19 @@
 @BA_small_core_cost_5 = 66
 @BA_small_core_cost_6 = 86
 #
-@BA_mediem_core_power_1 = 590
-@BA_mediem_core_power_2 = 800
-@BA_mediem_core_power_3 = 1070
-@BA_mediem_core_power_4 = 1410
-@BA_mediem_core_power_5 = 1750
-@BA_mediem_core_power_6 = 2240
+@BA_medium_core_power_1 = 590
+@BA_medium_core_power_2 = 800
+@BA_medium_core_power_3 = 1070
+@BA_medium_core_power_4 = 1410
+@BA_medium_core_power_5 = 1750
+@BA_medium_core_power_6 = 2240
 #
-@BA_mediem_core_cost_1 = 84
-@BA_mediem_core_cost_2 = 112
-@BA_mediem_core_cost_3 = 160
-@BA_mediem_core_cost_4 = 208
-@BA_mediem_core_cost_5 = 264
-@BA_mediem_core_cost_6 = 344
+@BA_medium_core_cost_1 = 84
+@BA_medium_core_cost_2 = 112
+@BA_medium_core_cost_3 = 160
+@BA_medium_core_cost_4 = 208
+@BA_medium_core_cost_5 = 264
+@BA_medium_core_cost_6 = 344
 #
 @BA_large_core_power_1 = 1180
 @BA_large_core_power_2 = 1610
@@ -48,11 +48,11 @@
 @BA_small_thruster_power_4 = -50
 @BA_small_thruster_power_5 = -60
 #
-@BA_mediem_thruster_power_1 = -80
-@BA_mediem_thruster_power_2 = -120
-@BA_mediem_thruster_power_3 = -160
-@BA_mediem_thruster_power_4 = -200
-@BA_mediem_thruster_power_5 = -240
+@BA_medium_thruster_power_1 = -80
+@BA_medium_thruster_power_2 = -120
+@BA_medium_thruster_power_3 = -160
+@BA_medium_thruster_power_4 = -200
+@BA_medium_thruster_power_5 = -240
 #
 @BA_large_thruster_power_1 = -160
 @BA_large_thruster_power_2 = -240
@@ -66,11 +66,11 @@
 @BA_small_thruster_cost_4 = 24
 @BA_small_thruster_cost_5 = 30
 #
-@BA_mediem_thruster_cost_1 = 24
-@BA_mediem_thruster_cost_2 = 48
-@BA_mediem_thruster_cost_3 = 72
-@BA_mediem_thruster_cost_4 = 96
-@BA_mediem_thruster_cost_5 = 120
+@BA_medium_thruster_cost_1 = 24
+@BA_medium_thruster_cost_2 = 48
+@BA_medium_thruster_cost_3 = 72
+@BA_medium_thruster_cost_4 = 96
+@BA_medium_thruster_cost_5 = 120
 #
 @BA_large_thruster_cost_1 = 48
 @BA_large_thruster_cost_2 = 96
@@ -121,15 +121,15 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "BA_MEDIEM_FISSION_REACTOR"
+	key = "BA_MEDIUM_FISSION_REACTOR"
 	size = small
 	icon = "GFX_T1CORE"
 	icon_frame = 1
-	power = @BA_mediem_core_power_1
+	power = @BA_medium_core_power_1
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @BA_mediem_core_cost_1
+			alloys = @BA_medium_core_cost_1
 		}
 		upkeep = {
 			energy = 0.8
@@ -149,7 +149,7 @@ utility_component_template = {
 		BA_swarm_ship
 		BA_defence_cannon
 	}
-	upgrades_to = "BA_MEDIEM_FUSION_REACTOR"
+	upgrades_to = "BA_MEDIUM_FUSION_REACTOR"
 	ai_weight = {
 		weight = 1
 	}
@@ -224,15 +224,15 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "BA_MEDIEM_FUSION_REACTOR"
+	key = "BA_MEDIUM_FUSION_REACTOR"
 	size = small
 	icon = "GFX_T2CORE"
 	icon_frame = 1
-	power = @BA_mediem_core_power_2
+	power = @BA_medium_core_power_2
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @BA_mediem_core_cost_2
+			alloys = @BA_medium_core_cost_2
 		}
 		upkeep = {
 			energy = 1.04
@@ -252,7 +252,7 @@ utility_component_template = {
 		BA_swarm_ship
 		BA_defence_cannon
 	}
-	upgrades_to = "BA_MEDIEM_COLD_FUSION_REACTOR"
+	upgrades_to = "BA_MEDIUM_COLD_FUSION_REACTOR"
 	ai_weight = {
 		weight = 2
 	}
@@ -327,15 +327,15 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "BA_MEDIEM_COLD_FUSION_REACTOR"
+	key = "BA_MEDIUM_COLD_FUSION_REACTOR"
 	size = small
 	icon = "GFX_T3CORE"
 	icon_frame = 1
-	power = @BA_mediem_core_power_3
+	power = @BA_medium_core_power_3
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @BA_mediem_core_cost_3
+			alloys = @BA_medium_core_cost_3
 		}
 		upkeep = {
 			energy = 1.35
@@ -355,7 +355,7 @@ utility_component_template = {
 		BA_swarm_ship
 		BA_defence_cannon
 	}
-	upgrades_to = "BA_MEDIEM_ANTIMATTER_REACTOR"
+	upgrades_to = "BA_MEDIUM_ANTIMATTER_REACTOR"
 	ai_weight = {
 		weight = 3
 	}
@@ -430,15 +430,15 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "BA_MEDIEM_ANTIMATTER_REACTOR"
+	key = "BA_MEDIUM_ANTIMATTER_REACTOR"
 	size = small
 	icon = "GFX_T4CORE"
 	icon_frame = 1
-	power = @BA_mediem_core_power_4
+	power = @BA_medium_core_power_4
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @BA_mediem_core_cost_4
+			alloys = @BA_medium_core_cost_4
 		}
 		upkeep = {
 			energy = 1.76
@@ -458,7 +458,7 @@ utility_component_template = {
 		BA_swarm_ship
 		BA_defence_cannon
 	}
-	upgrades_to = "BA_MEDIEM_ZERO_POINT_REACTOR"
+	upgrades_to = "BA_MEDIUM_ZERO_POINT_REACTOR"
 	ai_weight = {
 		weight = 4
 	}
@@ -533,15 +533,15 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "BA_MEDIEM_ZERO_POINT_REACTOR"
+	key = "BA_MEDIUM_ZERO_POINT_REACTOR"
 	size = small
 	icon = "GFX_T5CORE"
 	icon_frame = 1
-	power = @BA_mediem_core_power_5
+	power = @BA_medium_core_power_5
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @BA_mediem_core_cost_5
+			alloys = @BA_medium_core_cost_5
 		}
 		upkeep = {
 			energy = 2.29
@@ -561,7 +561,7 @@ utility_component_template = {
 		BA_swarm_ship
 		BA_defence_cannon
 	}
-	upgrades_to = "BA_MEDIEM_DARK_MATTER_REACTOR"
+	upgrades_to = "BA_MEDIUM_DARK_MATTER_REACTOR"
 	ai_weight = {
 		weight = 5
 	}
@@ -643,15 +643,15 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "BA_MEDIEM_DARK_MATTER_REACTOR"
+	key = "BA_MEDIUM_DARK_MATTER_REACTOR"
 	size = small
 	icon = "GFX_T6CORE"
 	icon_frame = 1
-	power = @BA_mediem_core_power_6
+	power = @BA_medium_core_power_6
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @BA_mediem_core_cost_6
+			alloys = @BA_medium_core_cost_6
 			sr_dark_matter = 8
 		}
 		upkeep = {
@@ -858,15 +858,15 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "BA_MEDIEM_SHIP_THRUSTER_1"
+	key = "BA_MEDIUM_SHIP_THRUSTER_1"
 	size = small
 	icon = "GFX_ship_part_thruster_1"
 	icon_frame = 1
-	power = @BA_mediem_thruster_power_1
+	power = @BA_medium_thruster_power_1
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @BA_mediem_thruster_cost_1
+			alloys = @BA_medium_thruster_cost_1
 		}
 	}
 	modifier = {
@@ -879,7 +879,7 @@ utility_component_template = {
 		BA_artillery_ship
 		BA_swarm_ship
 	}
-	upgrades_to = "BA_MEDIEM_SHIP_THRUSTER_2"
+	upgrades_to = "BA_MEDIUM_SHIP_THRUSTER_2"
 	ai_weight = {
 		weight = 1
 	}
@@ -944,15 +944,15 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "BA_MEDIEM_SHIP_THRUSTER_2"
+	key = "BA_MEDIUM_SHIP_THRUSTER_2"
 	size = small
 	icon = "GFX_ship_part_thruster_2"
 	icon_frame = 1
-	power = @BA_mediem_thruster_power_2
+	power = @BA_medium_thruster_power_2
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @BA_mediem_thruster_cost_2
+			alloys = @BA_medium_thruster_cost_2
 		}
 	}
 	modifier = {
@@ -967,7 +967,7 @@ utility_component_template = {
 		BA_artillery_ship
 		BA_swarm_ship
 	}
-	upgrades_to = "BA_MEDIEM_SHIP_THRUSTER_3"
+	upgrades_to = "BA_MEDIUM_SHIP_THRUSTER_3"
 	ai_weight = {
 		weight = 2
 	}
@@ -1034,15 +1034,15 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "BA_MEDIEM_SHIP_THRUSTER_3"
+	key = "BA_MEDIUM_SHIP_THRUSTER_3"
 	size = small
 	icon = "GFX_ship_part_thruster_3"
 	icon_frame = 1
-	power = @BA_mediem_thruster_power_3
+	power = @BA_medium_thruster_power_3
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @BA_mediem_thruster_cost_3
+			alloys = @BA_medium_thruster_cost_3
 		}
 	}
 	modifier = {
@@ -1057,7 +1057,7 @@ utility_component_template = {
 		BA_artillery_ship
 		BA_swarm_ship
 	}
-	upgrades_to = "BA_MEDIEM_SHIP_THRUSTER_4"
+	upgrades_to = "BA_MEDIUM_SHIP_THRUSTER_4"
 	ai_weight = {
 		weight = 3
 	}
@@ -1124,15 +1124,15 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "BA_MEDIEM_SHIP_THRUSTER_4"
+	key = "BA_MEDIUM_SHIP_THRUSTER_4"
 	size = small
 	icon = "GFX_ship_part_thruster_4"
 	icon_frame = 1
-	power = @BA_mediem_thruster_power_4
+	power = @BA_medium_thruster_power_4
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @BA_mediem_thruster_cost_4
+			alloys = @BA_medium_thruster_cost_4
 		}
 	}
 	modifier = {
@@ -1147,7 +1147,7 @@ utility_component_template = {
 		BA_artillery_ship
 		BA_swarm_ship
 	}
-	upgrades_to = "BA_MEDIEM_SHIP_THRUSTER_5"
+	upgrades_to = "BA_MEDIUM_SHIP_THRUSTER_5"
 	ai_weight = {
 		weight = 4
 	}
@@ -1220,15 +1220,15 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "BA_MEDIEM_SHIP_THRUSTER_5"
+	key = "BA_MEDIUM_SHIP_THRUSTER_5"
 	size = small
 	icon = "GFX_ship_part_thruster_5"
 	icon_frame = 1
-	power = @BA_mediem_thruster_power_5
+	power = @BA_medium_thruster_power_5
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @BA_mediem_thruster_cost_4
+			alloys = @BA_medium_thruster_cost_4
 			sr_dark_matter = 8
 		}
 	}
@@ -1416,6 +1416,34 @@ utility_component_template = {
 	}
 }
 
+utility_component_template = {
+	key = "BA_COMBAT_COMPUTER_CANNON_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_carrier_advanced"
+	icon_frame = 1
+	power = @BA_small_computer_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_computer_cost_3
+		}
+	}
+	class_restriction = {
+		shipclass_military_station
+	}
+	size_restriction = {
+		BA_defence_cannon
+	}
+	component_set = "combat_computers"
+	ship_behavior = "mortar"
+	ship_modifier = {
+		ship_engagement_range_mult = 1.5
+	}
+	ai_weight = {
+		weight = 5
+	}
+}
+
 #T4
 utility_component_template = {
 	key = "BA_COMBAT_COMPUTER_LINE_AUTONOMOUS"
@@ -1539,6 +1567,38 @@ utility_component_template = {
 		BA_artillery_ship
 		BA_swarm_ship
 		BA_hub_ship
+	}
+	component_set = "combat_computers"
+	ship_behavior = "mortar"
+	prerequisites = {
+		"tech_BA_spaceship_automation_3"
+	}
+	ship_modifier = {
+		ship_engagement_range_mult = 1
+	}
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "BA_COMBAT_COMPUTER_CANNON_AUTONOMOUS"
+	size = small
+	icon = "GFX_ship_part_computer_carrier_sapient"
+	icon_frame = 1
+	power = @BA_small_computer_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_computer_cost_3
+		}
+	}
+	class_restriction = {
+		shipclass_military_station
+
+	}
+	size_restriction = {
+		BA_defence_cannon
 	}
 	component_set = "combat_computers"
 	ship_behavior = "mortar"
@@ -1679,6 +1739,38 @@ utility_component_template = {
 		BA_artillery_ship
 		BA_swarm_ship
 		BA_hub_ship
+	}
+	component_set = "combat_computers"
+	ship_behavior = "mortar"
+	prerequisites = {
+		"tech_BA_spaceship_automation_4"
+	}
+	ship_modifier = {
+		ship_engagement_range_mult = 0.75
+		ship_tracking_add = 10
+	}
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "BA_COMBAT_COMPUTER_CANNON_PRECOG"
+	size = small
+	icon = "GFX_ship_part_computer_carrier_precog"
+	icon_frame = 1
+	power = @BA_small_computer_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @BA_small_computer_cost_3
+		}
+	}
+	class_restriction = {
+		shipclass_military_station
+	}
+	size_restriction = {
+		BA_defence_cannon
 	}
 	component_set = "combat_computers"
 	ship_behavior = "mortar"

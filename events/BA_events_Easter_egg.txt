@@ -9,7 +9,7 @@ country_event = {
 	}
 	immediate = {
 		random = {
-			chance = 100
+			chance = 1
 			country_event = {
 				id = BA_Easter_egg.9998
 				random = 25
@@ -62,7 +62,6 @@ country_event = {
 							has_leader_flag = leader_BA_239
 						}
 					}
-
 				}
 				country_event = {
 					id = BA_Easter_egg.0001
@@ -323,7 +322,6 @@ country_event = {
 }
 
 ### 鞋垫-#2
-
 ######     其他彩蛋     ######
 ### 超天酱
 fleet_event = {

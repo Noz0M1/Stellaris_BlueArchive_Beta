@@ -228,17 +228,17 @@ ship_section_template = {
 	}
 	prerequisites = {
 		OR = {
-		#原版
-		tech_energy_lance_1
-		tech_energy_lance_2
-		tech_arc_emitter_1
-		tech_arc_emitter_2
-		tech_mass_accelerator_1
-		tech_mass_accelerator_2
-		#mod
-		tech_BA_SPW_Standard_MG_2
-		tech_BA_SPW_Standard_SR_2
-		tech_BA_SPW_Standard_RG
+			#原版
+			tech_energy_lance_1
+			tech_energy_lance_2
+			tech_arc_emitter_1
+			tech_arc_emitter_2
+			tech_mass_accelerator_1
+			tech_mass_accelerator_2
+			#mod
+			tech_BA_SPW_Standard_MG_2
+			tech_BA_SPW_Standard_SR_2
+			tech_BA_SPW_Standard_RG
 		}
 	}
 }
@@ -818,12 +818,604 @@ ship_section_template = {
 		template = "invisible_extra_large_fixed"
 		locatorname = "xl_gun_01"
 	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
 	large_utility_slots = 2
 	aux_utility_slots = 3
 	resources = {
 		category = ship_sections
 		cost = {
-			alloys = 0
+			alloys = 10
 		}
 	}
+}
+
+######### 深空擎天堡
+ship_section_template = {
+	key = "BA_DEEP_SPACE_CITADEL_SI_STAGE_1_A"
+	ship_size = starbase_deep_space_citadel_1
+	prerequisites = {
+		tech_BA_SI_Shanhaijing_A03
+	}
+	ai_tags = {
+		citadel
+	}
+	fits_on_slot = "core"
+	should_draw_components = no
+	entity = "deep_space_01_starbase_citadel_section_1_entity"
+	icon = "GFX_ship_part_core_mid"
+	#
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "extra_large_turret"
+		locatorname = "large_turret1"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "extra_large_turret"
+		locatorname = "large_turret2"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "extra_large_turret"
+		locatorname = "large_turret3"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "extra_large_turret"
+		locatorname = "large_turret1"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "extra_large_turret"
+		locatorname = "large_turret2"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "extra_large_turret"
+		locatorname = "large_turret3"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 5
+}
+
+ship_section_template = {
+	key = "BA_DEEP_SPACE_CITADEL_SI_STAGE_1_B"
+	ship_size = starbase_deep_space_citadel_1
+	prerequisites = {
+		tech_BA_SI_Shanhaijing_A03
+	}
+	ai_tags = {
+		citadel
+	}
+	fits_on_slot = "core"
+	should_draw_components = no
+	entity = "deep_space_01_starbase_citadel_section_1_entity"
+	icon = "GFX_ship_part_core_mid"
+	#
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "medium_missile_turret"
+		locatorname = "large_turret1"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "medium_missile_turret"
+		locatorname = "large_turret2"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "medium_missile_turret"
+		locatorname = "large_turret3"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "medium_missile_turret"
+		locatorname = "large_turret1"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "medium_missile_turret"
+		locatorname = "large_turret2"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "medium_missile_turret"
+		locatorname = "large_turret3"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "medium_missile_turret"
+		locatorname = "large_turret1"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "medium_missile_turret"
+		locatorname = "large_turret2"
+	}
+	component_slot = {
+		name = "LARGE_GUN_09"
+		template = "medium_missile_turret"
+		locatorname = "large_turret3"
+	}
+	component_slot = {
+		name = "LARGE_GUN_10"
+		template = "medium_missile_turret"
+		locatorname = "large_turret1"
+	}
+	component_slot = {
+		name = "LARGE_GUN_11"
+		template = "medium_missile_turret"
+		locatorname = "large_turret2"
+	}
+	component_slot = {
+		name = "LARGE_GUN_12"
+		template = "medium_missile_turret"
+		locatorname = "large_turret3"
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 5
+}
+
+ship_section_template = {
+	key = "BA_DEEP_SPACE_CITADEL_SI_STAGE_2_A"
+	ship_size = starbase_deep_space_citadel_2
+	prerequisites = {
+		tech_BA_SI_Shanhaijing_A03
+	}
+	ai_tags = {
+		citadel
+	}
+	fits_on_slot = "core"
+	should_draw_components = no
+	entity = "deep_space_02_starbase_citadel_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	#
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "extra_large_turret"
+		locatorname = "large_turret_02_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "extra_large_turret"
+		locatorname = "large_turret_02_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "extra_large_turret"
+		locatorname = "large_turret_02_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "extra_large_turret"
+		locatorname = "large_turret_02_04"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "extra_large_turret"
+		locatorname = "large_turret_02_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "extra_large_turret"
+		locatorname = "large_turret_02_06"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "extra_large_turret"
+		locatorname = "large_turret_02_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "extra_large_turret"
+		locatorname = "large_turret_02_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_09"
+		template = "extra_large_turret"
+		locatorname = "large_turret_02_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_10"
+		template = "extra_large_turret"
+		locatorname = "large_turret_02_04"
+	}
+	component_slot = {
+		name = "LARGE_GUN_11"
+		template = "extra_large_turret"
+		locatorname = "large_turret_02_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_12"
+		template = "extra_large_turret"
+		locatorname = "large_turret_02_06"
+	}
+	large_utility_slots = 10
+	aux_utility_slots = 5
+}
+
+ship_section_template = {
+	key = "BA_DEEP_SPACE_CITADEL_SI_STAGE_2_B"
+	ship_size = starbase_deep_space_citadel_2
+	prerequisites = {
+		tech_BA_SI_Shanhaijing_A03
+	}
+	ai_tags = {
+		citadel
+	}
+	fits_on_slot = "core"
+	should_draw_components = no
+	entity = "deep_space_02_starbase_citadel_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	#
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_04"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_06"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_09"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_10"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_04"
+	}
+	component_slot = {
+		name = "LARGE_GUN_11"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_12"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_06"
+	}
+	component_slot = {
+		name = "LARGE_GUN_13"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_14"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_15"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_16"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_04"
+	}
+	component_slot = {
+		name = "LARGE_GUN_17"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_18"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_06"
+	}
+	component_slot = {
+		name = "LARGE_GUN_19"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_20"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_21"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_22"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_04"
+	}
+	component_slot = {
+		name = "LARGE_GUN_23"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_24"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_02_06"
+	}
+	large_utility_slots = 10
+	aux_utility_slots = 5
+}
+
+ship_section_template = {
+	key = "BA_DEEP_SPACE_CITADEL_SI_STAGE_3_A"
+	ship_size = starbase_deep_space_citadel_3
+	prerequisites = {
+		tech_BA_SI_Shanhaijing_A03
+	}
+	ai_tags = {
+		citadel
+	}
+	fits_on_slot = "core"
+	should_draw_components = no
+	entity = "deep_space_03_starbase_citadel_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "extra_large_turret"
+		locatorname = "large_turret_03_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "extra_large_turret"
+		locatorname = "large_turret_03_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "extra_large_turret"
+		locatorname = "large_turret_03_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "extra_large_turret"
+		locatorname = "large_turret_03_04"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "extra_large_turret"
+		locatorname = "large_turret_03_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "extra_large_turret"
+		locatorname = "large_turret_03_06"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "extra_large_turret"
+		locatorname = "large_turret_03_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "extra_large_turret"
+		locatorname = "large_turret_03_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_09"
+		template = "extra_large_turret"
+		locatorname = "large_turret_03_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_10"
+		template = "extra_large_turret"
+		locatorname = "large_turret_03_04"
+	}
+	component_slot = {
+		name = "LARGE_GUN_11"
+		template = "extra_large_turret"
+		locatorname = "large_turret_03_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_12"
+		template = "extra_large_turret"
+		locatorname = "large_turret_03_06"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_titanic_turret"
+		locatorname = "extra_large_turret"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_titanic_turret"
+		locatorname = "extra_large_turret"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_titanic_turret"
+		locatorname = "extra_large_turret"
+	}
+	large_utility_slots = 15
+	aux_utility_slots = 10
+}
+
+ship_section_template = {
+	key = "BA_DEEP_SPACE_CITADEL_SI_STAGE_3_B"
+	ship_size = starbase_deep_space_citadel_3
+	prerequisites = {
+		tech_BA_SI_Shanhaijing_A03
+	}
+	ai_tags = {
+		citadel
+	}
+	fits_on_slot = "core"
+	should_draw_components = no
+	entity = "deep_space_03_starbase_citadel_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_04"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_06"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_09"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_10"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_04"
+	}
+	component_slot = {
+		name = "LARGE_GUN_11"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_12"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_06"
+	}
+	component_slot = {
+		name = "LARGE_GUN_13"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_14"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_15"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_16"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_04"
+	}
+	component_slot = {
+		name = "LARGE_GUN_17"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_18"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_06"
+	}
+	component_slot = {
+		name = "LARGE_GUN_19"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_20"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_21"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_22"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_04"
+	}
+	component_slot = {
+		name = "LARGE_GUN_23"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_24"
+		template = "medium_missile_turret"
+		locatorname = "large_turret_03_06"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_titanic_turret"
+		locatorname = "extra_large_turret"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_titanic_turret"
+		locatorname = "extra_large_turret"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_titanic_turret"
+		locatorname = "extra_large_turret"
+	}
+	large_utility_slots = 24
+	aux_utility_slots = 3
 }

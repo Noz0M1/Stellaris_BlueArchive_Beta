@@ -29,16 +29,13 @@ BA_districts_ringworld_capital = {
                 has_authority = auth_kivotos
             }
         }
-        job_BA_Vigilant_crew_add = 200
         job_BA_Kivotos_staff_add = 400
         job_BA_Kivotos_trader_add = 400
         job_BA_club_members_add = 400
     }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            BA_has_any_club_building = yes
-        }
+    inline_script = {
+        script = jobs/add_BA_crew_pop_jobs
+        value = 200
     }
     resources = {
         category = BA_auto_districts
@@ -171,10 +168,13 @@ BA_districts_ringworld_satellite = {
                 has_authority = auth_kivotos
             }
         }
-        job_BA_Vigilant_crew_add = 200
         job_BA_Kivotos_staff_add = 400
         job_BA_Kivotos_trader_add = 400
         job_BA_club_members_add = 400
+    }
+    inline_script = {
+        script = jobs/add_BA_crew_pop_jobs
+        value = 200
     }
     resources = {
         category = BA_auto_districts

@@ -1,7 +1,7 @@
 ### 图标为占位符
 ########## 行星 ##########
 building_BA_basis_schola_1 = {
-	icon = building_simulation_1 #TODO
+	icon = building_simulation_1	#TODO
 	base_buildtime = 360
 	category = government
 	building_sets = {
@@ -23,11 +23,9 @@ building_BA_basis_schola_1 = {
 			}
 		}
 	}
-	convert_to = {
-		building_precinct_house
-	}
-	planet_modifier = {
-		job_BA_Vigilant_crew_add = 200
+	inline_script = {
+		script = jobs/add_BA_crew_pop_jobs
+		value = 200
 	}
 	resources = {
 		category = planet_buildings
@@ -42,15 +40,31 @@ building_BA_basis_schola_1 = {
 		"tech_planetary_government"
 	}
 	triggered_desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_technology = tech_BA_SI_Valkyrie_G02
+				}
+			}
+		}
 		text = job_BA_Vigilant_crew_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			owner = {
+				has_technology = tech_BA_SI_Valkyrie_G02
+			}
+		}
+		text = job_BA_Valkyrie_police_effect_desc
 	}
 	upgrades = {
 		building_BA_basis_schola_2
+		building_BA_SI_Valkyrie_B02
 	}
 }
 
 building_BA_basis_schola_2 = {
-	icon = building_simulation_2 #TODO
+	icon = building_simulation_2	#TODO
 	base_buildtime = @b2_time
 	category = government
 	can_build = no
@@ -61,6 +75,9 @@ building_BA_basis_schola_2 = {
 	potential = {
 		owner = {
 			has_authority = auth_kivotos
+			NOT = {
+				has_technology = tech_BA_SI_Valkyrie_G02
+			}
 		}
 	}
 	allow = {
@@ -68,15 +85,19 @@ building_BA_basis_schola_2 = {
 	destroy_trigger = {
 		exists = owner
 		owner = {
-			NOT = {
-				has_authority = auth_kivotos
-			}
+			has_technology = tech_BA_SI_Valkyrie_G02
 		}
 	}
 	convert_to = {
-		building_hall_judgment
+		building_BA_SI_Valkyrie_B02
 	}
-	planet_modifier = {
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
 		job_BA_Vigilant_crew_add = 500
 	}
 	resources = {
@@ -93,15 +114,8 @@ building_BA_basis_schola_2 = {
 	prerequisites = {
 		tech_BA_Kivotos_chronicle_stage4
 	}
-
 	triggered_desc = {
 		text = job_BA_Vigilant_crew_effect_desc
-	}
-	show_tech_unlock_if = {
-		is_regular_empire = yes
-		NOT = {
-			has_valid_civic = civic_civil_education
-		}
 	}
 }
 

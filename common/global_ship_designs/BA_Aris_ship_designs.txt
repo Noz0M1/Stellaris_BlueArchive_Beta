@@ -538,6 +538,10 @@ ship_design = {
             template = SuperNova_Aris
         }
         component = {
+            slot = TITANIC_03
+            template = SuperNova_Aris
+        }
+        component = {
             slot = LARGE_UTILITY_1
             template = LARGE_ARISBACKPACK
 
@@ -557,7 +561,6 @@ ship_design = {
             template = ENIGMATIC_DECODER
         }
     }
-    required_component = SENSOR_4
     required_component = BA_FE_REACTOR
     required_component = BA_COMBAT_COMPUTER_MORTAR_PRECOG
 }

@@ -31,9 +31,6 @@ BA_student_delegate = {
 		is_sapient = yes
 	}
 	possible_precalc = can_fill_ruler_job
-	possible = {
-		is_kivotos = yes
-	}
 	resources = {
 		category = BA_club_pop
 		produces = {
@@ -91,9 +88,6 @@ BA_Vigilant_crew = {
 		is_sapient = yes
 	}
 	possible_precalc = can_fill_ruler_job
-	possible = {
-		is_kivotos = yes
-	}
 	resources = {
 		category = BA_crew_pop
 		produces = {
@@ -140,6 +134,68 @@ BA_Vigilant_crew = {
 	}
 }
 
+BA_Valkyrie_police = {
+	category = ruler
+	swappable_data = {
+		default = {
+			icon = BA_Valkyrie_police
+			condition_string = RULER_JOB_TRIGGER
+			building_icon = building_BA_Schale_office
+		}
+	}
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	possible_precalc = can_fill_ruler_job
+	resources = {
+		category = BA_crew_pop
+		produces = {
+			unity = 12
+		}
+		produces = {
+			trigger = {
+				planet = {
+					owner = {
+						has_tradition = tr_kivotos_student_arms
+					}
+				}
+			}
+			unity = 8
+		}
+		upkeep = {
+			consumer_goods = 7
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_stability_add = 6
+		planet_defense_armies_add = 3
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			planet = {
+				has_deposit = d_fade_Sanctum
+			}
+		}
+		planet_defense_armies_add = 3
+	}
+	country_modifier = {
+		country_naval_cap_add = 14
+	}
+	weight = {
+		weight = @ruler_job_weight
+		mult = value:job_weights_modifier|JOB|high_priest|RESOURCE|unity|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+	}
+}
+
 #############   专家   #############
 ### 社团部员 ###
 # 1食物 1消费品 0.5合金 -> 4*3科研点
@@ -162,9 +218,6 @@ BA_club_members = {
 		is_sapient = yes
 	}
 	possible_precalc = can_fill_specialist_job
-	possible = {
-		is_kivotos = yes
-	}
 	resources = {
 		category = BA_club_pop
 		### 基础
@@ -220,14 +273,6 @@ BA_Kivotos_staff = {
 		is_sapient = yes
 	}
 	possible_precalc = can_fill_specialist_job
-	possible = {
-		hidden_trigger = {
-			exists = owner
-		}
-		owner = {
-			is_gestalt = no
-		}
-	}
 	resources = {
 		category = BA_staff_pop
 		upkeep = {
@@ -255,6 +300,15 @@ BA_Kivotos_staff = {
 		#学园理念
 		planet_building_build_speed_mult = 0.05
 	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				has_technology = tech_BA_SI_Redwinter_G05
+			}
+		}
+		#学园理念
+		planet_jobs_produces_mult = 0.01
+	}
 	weight = {
 		weight = @specialist_job_weight
 		mult = value:job_weights_modifier|JOB|trader|RESOURCE|trade|
@@ -279,14 +333,6 @@ BA_Kivotos_trader = {
 		is_sapient = yes
 	}
 	possible_precalc = can_fill_specialist_job
-	possible = {
-		hidden_trigger = {
-			exists = owner
-		}
-		owner = {
-			is_gestalt = no
-		}
-	}
 	resources = {
 		category = BA_staff_pop
 		upkeep = {
@@ -295,6 +341,7 @@ BA_Kivotos_trader = {
 		produces = {
 			trade = 24
 		}
+		produces = {  }
 	}
 	weight = {
 		weight = @specialist_job_weight
@@ -322,14 +369,6 @@ BA_pyroxenes_artisan = {
 		is_sapient = yes
 	}
 	possible_precalc = can_fill_specialist_job
-	possible = {
-		hidden_trigger = {
-			exists = owner
-		}
-		owner = {
-			is_gestalt = no
-		}
-	}
 	resources = {
 		category = BA_pyroxenes_artisan
 		upkeep = {
@@ -391,14 +430,6 @@ BA_keystone_foundry = {
 		is_sapient = yes
 	}
 	possible_precalc = can_fill_specialist_job
-	possible = {
-		hidden_trigger = {
-			exists = owner
-		}
-		owner = {
-			is_gestalt = no
-		}
-	}
 	resources = {
 		category = BA_keystone_foundry
 		upkeep = {
@@ -450,14 +481,6 @@ BA_scrap_refiner = {
 		is_sapient = yes
 	}
 	possible_precalc = can_fill_worker_job
-	possible = {
-		hidden_trigger = {
-			exists = owner
-		}
-		owner = {
-			is_gestalt = no
-		}
-	}
 	resources = {
 		category = planet_miners
 		produces = {
@@ -527,14 +550,6 @@ BA_dont_be_crazy_here = {
 		is_sapient = yes
 	}
 	possible_precalc = can_fill_worker_job
-	possible = {
-		hidden_trigger = {
-			exists = owner
-		}
-		owner = {
-			is_gestalt = no
-		}
-	}
 	resources = {
 		category = BA_dont_be_crazy_here
 		upkeep = {
@@ -594,14 +609,6 @@ BA_Kivotos_miner = {
 		is_sapient = yes
 	}
 	possible_precalc = can_fill_worker_job
-	possible = {
-		hidden_trigger = {
-			exists = owner
-		}
-		owner = {
-			is_gestalt = no
-		}
-	}
 	resources = {
 		category = BA_Kivotos_miner
 		produces = {
@@ -735,15 +742,6 @@ BA_flexible_workers = {
 			building_icon = building_BA_Schale_office
 		}
 	}
-	is_capped_by_modifier = no	#岗位不限量
-	possible = {
-		hidden_trigger = {
-			exists = owner
-		}
-		planet = {
-			is_planet_class = pc_BA_campus_planet
-		}
-	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -769,17 +767,6 @@ BA_flexible_workers = {
 				}
 			}
 			unity = 1
-		}
-		#殖民地类型
-		upkeep = {
-			trigger = {
-				planet = {
-					not = {
-						colony_type = col_BA_campus_unemp
-					}
-				}
-			}
-			influence = 0.05
 		}
 		#学园理念
 		produces = {
@@ -809,7 +796,7 @@ BA_flexible_workers = {
 			trigger = {
 				planet = {
 					exists = owner
-					NOT = {
+					NOR = {
 						colony_type = col_BA_campus_unemp
 						owner = {
 							has_technology = tech_BA_Kivotos_chronicle_stage5
@@ -891,9 +878,6 @@ BA_supplier = {
 		is_sapient = yes
 	}
 	possible_precalc = can_fill_ruler_job
-	possible = {
-		is_kivotos = yes
-	}
 	resources = {
 		category = BA_club_pop
 		produces = {
@@ -958,9 +942,6 @@ BA_quartermaster = {
 		is_sapient = yes
 	}
 	possible_precalc = can_fill_ruler_job
-	possible = {
-		is_kivotos = yes
-	}
 	resources = {
 		category = BA_club_pop
 		produces = {
@@ -1135,7 +1116,6 @@ BA_surveyor = {
 ### 拾荒者
 #基础：3凝聚力 2电 -> 1消费品 1食物 0.1稀有资源
 #政策：1消费品或0.1稀有资源
-#注：这是废墟星球上的失业者
 BA_scavenger = {
 	category = worker
 	is_capped_by_modifier = no
@@ -1156,7 +1136,6 @@ BA_scavenger = {
 	possible = {
 		planet = {
 			is_planet_class = pc_BA_ruined_planet
-			free_jobs = 0
 		}
 	}
 	resources = {
@@ -1267,14 +1246,6 @@ BA_ringworld_worker = {
 	possible_precalc = can_fill_specialist_job
 	resources = {
 		category = BA_auto_pop
-	}
-	triggered_country_modifier = {
-		potential = {
-			planet = {
-				has_active_building = building_BA_ringworld_factory_A
-			}
-		}
-		country_naval_cap_add = 4
 	}
 	weight = {
 		weight = @specialist_job_weight
