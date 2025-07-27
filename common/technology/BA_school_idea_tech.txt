@@ -44,6 +44,7 @@ tech_BA_SI_Abydos_G03 = {
 	}
 	weight = 0
 	modifier = {
+		BA_SI_sub_cap_add = 1
 		country_megastructure_build_cap_add = 1
 	}
 }
@@ -304,6 +305,7 @@ tech_BA_SI_Gehenna_G03 = {
 	}
 	weight = 0
 	modifier = {
+		BA_SI_sub_cap_add = 1
 		BA_auto_buildings_produces_mult = 0.35
 		planet_metallurgists_produces_mult = 0.35
 		planet_metallurgists_upkeep_mult = 0.35
@@ -921,7 +923,8 @@ tech_BA_SI_Trinity_G01 = {
 	}
 	weight = 0
 	modifier = {
-		planet_stability_add = 15
+		BA_SI_sub_cap_add = 2
+		planet_stability_add = 40
 	}
 }
 
@@ -1319,7 +1322,7 @@ tech_BA_SI_Hyakkiyako_G01 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
 }
 
 tech_BA_SI_Hyakkiyako_G02 = {
@@ -1333,7 +1336,7 @@ tech_BA_SI_Hyakkiyako_G02 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
 }
 
 tech_BA_SI_Hyakkiyako_G03 = {
@@ -1347,7 +1350,7 @@ tech_BA_SI_Hyakkiyako_G03 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
 }
 
 tech_BA_SI_Hyakkiyako_G04 = {
@@ -1361,7 +1364,7 @@ tech_BA_SI_Hyakkiyako_G04 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
 }
 
 tech_BA_SI_Hyakkiyako_G05 = {
@@ -1375,7 +1378,7 @@ tech_BA_SI_Hyakkiyako_G05 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
 }
 
 tech_BA_SI_Hyakkiyako_G06 = {
@@ -1389,7 +1392,7 @@ tech_BA_SI_Hyakkiyako_G06 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
 }
 
 tech_BA_SI_Hyakkiyako_G07 = {
@@ -1403,7 +1406,7 @@ tech_BA_SI_Hyakkiyako_G07 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
 }
 
 tech_BA_SI_Hyakkiyako_G08 = {
@@ -1417,7 +1420,7 @@ tech_BA_SI_Hyakkiyako_G08 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
 }
 
 tech_BA_SI_Hyakkiyako_G09 = {
@@ -1431,7 +1434,7 @@ tech_BA_SI_Hyakkiyako_G09 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
 }
 
 ### 红冬
@@ -1446,7 +1449,10 @@ tech_BA_SI_Redwinter_G01 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
+	modifier = {
+		planet_stability_add = -15
+	}
 }
 
 tech_BA_SI_Redwinter_G02 = {
@@ -1460,7 +1466,10 @@ tech_BA_SI_Redwinter_G02 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
+	modifier = {
+		planet_stability_add = -15
+	}
 }
 
 tech_BA_SI_Redwinter_G03 = {
@@ -1474,7 +1483,12 @@ tech_BA_SI_Redwinter_G03 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
+	modifier = {
+		planet_stability_add = -15
+		planet_jobs_worker_produces_mult = 0.25
+		pop_category_workers_consumer_goods_upkeep_add = 0.1
+	}
 }
 
 tech_BA_SI_Redwinter_G04 = {
@@ -1488,7 +1502,12 @@ tech_BA_SI_Redwinter_G04 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
+	modifier = {
+		planet_stability_add = -15
+		planet_jobs_specialist_produces_mult = 0.15
+		pop_category_specialists_unity_upkeep_add = 0.15
+	}
 }
 
 tech_BA_SI_Redwinter_G05 = {
@@ -1502,7 +1521,10 @@ tech_BA_SI_Redwinter_G05 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
+	modifier = {
+		planet_stability_add = 60
+	}
 }
 
 ### 瓦尔基里
@@ -1517,7 +1539,7 @@ tech_BA_SI_Valkyrie_G01 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
 }
 
 tech_BA_SI_Valkyrie_G02 = {
@@ -1531,7 +1553,13 @@ tech_BA_SI_Valkyrie_G02 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
+	modifier = {
+		army_defense_health_mult = 1.5
+		army_defense_damage_mult = 1.5
+		edicts_upkeep_mult = -0.3
+		country_energy_produces_mult = -0.03
+	}
 }
 
 tech_BA_SI_Valkyrie_A01 = {
@@ -1545,7 +1573,7 @@ tech_BA_SI_Valkyrie_A01 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
 }
 
 tech_BA_SI_Valkyrie_A02 = {
@@ -1559,7 +1587,12 @@ tech_BA_SI_Valkyrie_A02 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
+	modifier = {
+		starbase_shipyard_build_speed_mult = 0.15
+		starbase_shipyard_build_cost_mult = -0.15
+		country_naval_cap_mult = 0.2
+	}
 }
 
 tech_BA_SI_Valkyrie_B01 = {
@@ -1573,7 +1606,7 @@ tech_BA_SI_Valkyrie_B01 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
 }
 
 tech_BA_SI_Valkyrie_B02 = {
@@ -1587,7 +1620,14 @@ tech_BA_SI_Valkyrie_B02 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
+	modifier = {
+		starbase_shipyard_build_speed_mult = 0.15
+		ship_weapon_damage = 0.25
+		ship_fire_rate_mult = 0.25
+		damage_vs_country_type_dormant_marauders_mult = 5
+		damage_vs_country_type_awakened_marauders_mult = 5
+	}
 }
 
 ### 山海经
@@ -1602,7 +1642,7 @@ tech_BA_SI_Shanhaijing_G01 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
 }
 
 tech_BA_SI_Shanhaijing_G02 = {
@@ -1616,7 +1656,7 @@ tech_BA_SI_Shanhaijing_G02 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
 }
 
 tech_BA_SI_Shanhaijing_A01 = {
@@ -1630,7 +1670,13 @@ tech_BA_SI_Shanhaijing_A01 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
+	modifier = {
+		deep_space_citadel_limit_add = 1
+		shipclass_military_station_damage_mult = 0.25
+		shipclass_military_station_build_speed_mult = 1
+		shipclass_military_station_build_cost_mult = -0.25
+	}
 }
 
 tech_BA_SI_Shanhaijing_A02 = {
@@ -1644,7 +1690,11 @@ tech_BA_SI_Shanhaijing_A02 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
+	modifier = {
+		shipsize_BA_defence_cannon_build_speed_mult = 3
+		starbase_defense_platform_capacity_add = 20
+	}
 }
 
 tech_BA_SI_Shanhaijing_A03 = {
@@ -1658,7 +1708,10 @@ tech_BA_SI_Shanhaijing_A03 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
+	modifier = {
+		ship_experience_gain_mult = 400
+	}
 }
 
 tech_BA_SI_Shanhaijing_A04 = {
@@ -1672,7 +1725,10 @@ tech_BA_SI_Shanhaijing_A04 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
+	modifier = {
+		deep_space_citadel_limit_add = 1
+	}
 }
 
 tech_BA_SI_Shanhaijing_B01 = {
@@ -1686,7 +1742,7 @@ tech_BA_SI_Shanhaijing_B01 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
 }
 
 tech_BA_SI_Shanhaijing_B02 = {
@@ -1700,7 +1756,10 @@ tech_BA_SI_Shanhaijing_B02 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
+	modifier = {
+		BA_staff_pop_trade_produces_mult = 1.5
+	}
 }
 
 tech_BA_SI_Shanhaijing_B03 = {
@@ -1714,7 +1773,11 @@ tech_BA_SI_Shanhaijing_B03 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
+	modifier = {
+		country_trade_produces_mult = 0.2
+		country_trade_fee = -0.25
+	}
 }
 
 tech_BA_SI_Shanhaijing_B04 = {
@@ -1728,5 +1791,5 @@ tech_BA_SI_Shanhaijing_B04 = {
 	potential = {
 		has_authority = auth_kivotos
 	}
-	weight = 0	#未完成
+	weight = 0
 }

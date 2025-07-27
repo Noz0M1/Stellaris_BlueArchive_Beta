@@ -1,12 +1,12 @@
 ########## 改造飞升 ##########
 decision_BA_convert_to_Aris = {
+	icon = decision_atmospheric_entry
 	owned_planets_only = yes
 	potential = {
 		owner = {
 			has_country_flag = BA_Aris
 		}
 	}
-	enactment_time = 1
 	effect = {
 		hidden_effect = {
 			planet_event = {
@@ -83,18 +83,33 @@ decision_BA_new_frontier = {
 	effect = {
 		custom_tooltip = decision_BA_new_frontier_desc
 		hidden_effect = {
+			save_deposits = yes
 			clear_deposits = yes
+			restore_saved_deposits = yes
 			change_pc = pc_BA_campus_planet
 			set_planet_flag = colony_event
-			add_district = BA_districts_campus
+			set_variable = {
+				which = BA_colony_district_count
+				value = value:num_BA_main_district_count
+			}
+			subtract_variable = {
+				which = BA_colony_district_count
+				value = 3
+			}
+			while = {
+				count = BA_colony_district_count
+				remove_district = BA_districts_campus
+			}
+			clear_variable = BA_colony_district_count
+			set_planet_entity = {
+				entity = "BA_planet"
+				graphical_culture = owner
+			}
 			add_district = BA_districts_dome
 			add_district = BA_districts_dome
 			add_district = BA_districts_suburbs
 			add_district = BA_districts_suburbs
 			check_planet_employment = yes
-			# planet_event = {
-			# 	id = BA_ape.3002
-			# }
 		}
 	}
 }

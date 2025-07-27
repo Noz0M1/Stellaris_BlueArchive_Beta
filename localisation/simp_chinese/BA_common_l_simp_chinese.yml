@@ -37,7 +37,7 @@
  building_BA_starlink_1_desc:0 "卫星落地的速度远远赶不上放卫星的速度。"
  building_BA_starlink_2:0 "联邦星链局"
  building_BA_starlink_2_desc:0 "悠星! 有人在标题画面4年了还没实装啊！"
- building_BA_basis_schola_1: "联邦自警团据点"
+ building_BA_basis_schola_1: "联邦治安据点"
  building_BA_basis_schola_1_desc: "有困难，来这里！既是各种基层服务的中心，也是自警团在巡逻之余的休息场所。"
  building_BA_basis_schola_2: "联邦自治区消防枢纽"
  building_BA_basis_schola_2_desc: "有困难，来这里！所有的公共服务都可以在这里找到。"
@@ -149,6 +149,13 @@
  building_BA_SI_Millennium_G10:0 "千年巨塔信息中枢"
  building_BA_SI_Millennium_G10_desc:0 "从千年巨塔传递至此的无数信息由此进行中转，为实验室提供了理想选址地。"
  building_BA_SI_Millennium_G10_tip:0 "£job_BA_student_delegate£$job_BA_student_delegate$产出: §G+100%§!"
+ building_BA_SI_Valkyrie_B02:0 "瓦尔基里警部"
+ building_BA_SI_Valkyrie_B02_desc:0 "有困难，来这里！不仅所有的公共服务都可以在这里找到，还能学习一些战斗技巧。"
+ building_BA_SI_Valkyrie_B02_tip:0 "£job_BA_student_delegate£$job_BA_student_delegate$产出: §G+100%§!"
+ building_BA_SI_Shanhaijing_G01: "梅花园"
+ building_BA_SI_Shanhaijing_G01_desc: "基沃托斯著名的保育机构。"
+ building_BA_SI_Shanhaijing_G02: "炼丹术实验室"
+ building_BA_SI_Shanhaijing_G02_desc: "经由传统工艺产出神秘产品的炼金实验室。"
 
  # branch
  building_BA_student_embassy:0 "§B校方大使馆§!"
@@ -162,6 +169,9 @@
  building_BA_SI_Abydos_G02:0 "§B阿拜多斯秘密基地§!"
  building_BA_SI_Abydos_G02_desc:0 "学生们为了那一点小小的副业而设立的据点。"
  building_BA_SI_Abydos_G02_tip:0 "建造完成后开始“副业”的行动准备。"
+ building_BA_SI_Shanhaijing_B03: "§B玄武商会外贸区§!"
+ building_BA_SI_Shanhaijing_B03_desc: "玄武商会进行对外贸易的星际港口，同时也负责平账。"
+ building_BA_SI_Shanhaijing_B03_tip: "些许降低§Y$Xuanwu_promenade$特殊订单§!的冷却时间"
 
  # fallen empire
  building_BA_fe_capital:0 "先驱者：团体中心"
@@ -171,7 +181,7 @@
  building_BA_fe_energy:0 "先驱者：4级改造奇点"
  building_BA_fe_energy_desc:0 "经先驱者改造的4级奇点，可以将大量物质直接转化为能量。"
  building_BA_fe_food:0 "先驱者：定制食物工厂"
- building_BA_fe_food_desc:0 "全自动的食物工厂。可以生产出能令美食家们献上生命的美食。"
+ building_BA_fe_food_desc:0 "全自动的食物工厂，可以生产出能令美食家们献上生命的美食。"
  building_BA_fe_alloy:0 "先驱者：自动成型合金厂"
  building_BA_fe_alloy_desc:0 "经数据库直接管理的合金厂，将制造石成型后直接转化为合金。"
  building_BA_fe_pyroxenes:0 "先驱者：奇点管理器"
@@ -240,6 +250,17 @@
  decision_BA_SI_Abydos_B06_desc: ""
  decision_BA_SI_Abydos_G03: "钢铁星河狂想曲"
  decision_BA_SI_Abydos_G03_desc: ""
+ decision_SI_Hyakkiyako_G02: "$d_SI_Hyakkiyako_G02$"
+ decision_SI_Hyakkiyako_G02_desc: "$d_SI_Hyakkiyako_G02_desc$"
+ decision_SI_Hyakkiyako_G03: "$d_SI_Hyakkiyako_G03$"
+ decision_SI_Hyakkiyako_G03_desc: "$d_SI_Hyakkiyako_G03_desc$"
+ decision_SI_Hyakkiyako_G04: "$d_SI_Hyakkiyako_G04$"
+ decision_SI_Hyakkiyako_G04_desc: "$d_SI_Hyakkiyako_G04_desc$"
+ decision_SI_Valkyrie_G01: "$SI_Valkyrie_G01$"
+ decision_SI_Valkyrie_G01_desc: "$SI_Valkyrie_G01_desc$"
+ decision_SI_Shanhaijing_B04: "玄武商会-§R烈火烹油§!"
+ decision_SI_Shanhaijing_B04_desc: "$SI_Shanhaijing_B04_desc$"
+ decision_SI_Shanhaijing_B04_tip: "该决议可以重复进行，直至§Y行星可用区划<2§!"
 
 
 #####       Deposits       #####
@@ -328,6 +349,15 @@
  d_Atrahasis_factory_desc:0 "方舟上用于生产机器人军队的工厂，重新编程之后成为了我们重要的物资来源。"
  d_Atrahasis_gravity_controllor:0 "方舟引力控制器"
  d_Atrahasis_gravity_controllor_desc:0 "方舟使用此设备控制内部的引力，同时还能产出一些必需品。"
+
+ d_SI_Hyakkiyako_G02: "§U设施§!-百夜堂连锁"
+ d_SI_Hyakkiyako_G02_desc: "$SI_Hyakkiyako_G02_desc$"
+ d_SI_Hyakkiyako_G03: "§U设施§!-静海度假区"
+ d_SI_Hyakkiyako_G03_desc: "$SI_Hyakkiyako_G03_desc$"
+ d_SI_Hyakkiyako_G04: "§U设施§!-缭花剧场"
+ d_SI_Hyakkiyako_G04_desc: "$SI_Hyakkiyako_G04_desc$"
+ d_SI_Shanhaijing_B04: "§G玄武商会§!经济特区"
+ d_SI_Shanhaijing_B04_desc: "$SI_Shanhaijing_B04_desc$"
 
 
 
@@ -777,6 +807,12 @@
  job_BA_Vigilant_crew_effect_desc:0 "£job_BA_Vigilant_crew£$job_BA_Vigilant_crew$产出§Y$unity_with_icon$§!，降低£crime£§Y$PLANET_CRIME_TITLE$§!、提升$r_stability$并产生£defense_army£§Y防御部队§!"
  mod_job_BA_Vigilant_crew_add:0 "自警团岗位"
 
+ job_BA_Valkyrie_police:0 "瓦尔基里巡警"
+ job_BA_Valkyrie_police_plural:0 "瓦尔基里巡警"
+ job_BA_Valkyrie_police_desc:0 "巡视街道维持治安的组织，同时也是陆军、海军的预备役。"
+ job_BA_Valkyrie_police_effect_desc:0 "£job_BA_Valkyrie_police£$job_BA_Valkyrie_police$产出§Y$unity_with_icon$§!，降低£crime£§Y$PLANET_CRIME_TITLE$§!并产生£defense_army£§Y防御部队§!"
+ mod_job_BA_Valkyrie_police_add:0 "瓦尔基里巡警岗位"
+
  job_BA_flexible_workers:0 "灵活就业者"
  job_BA_flexible_workers_plural:0 "灵活就业者"
  job_BA_flexible_workers_desc:0 "没有选择run，而是留在基沃托斯灵活就业的学生们。"
@@ -1093,6 +1129,13 @@
  NAME_BA_ARIS_CONSTRUCTION:0 "职员"
 
  BA_CLUB_SECTION:0 "社团舰核心"
+
+ BA_DEEP_SPACE_CITADEL_SI_STAGE_1_A: "联邦深空擎天堡(武之意)-迫击型 I"
+ BA_DEEP_SPACE_CITADEL_SI_STAGE_1_B: "联邦深空擎天堡(武之意)-弹群型 I"
+ BA_DEEP_SPACE_CITADEL_SI_STAGE_2_A: "联邦深空擎天堡(武之意)-迫击型 II"
+ BA_DEEP_SPACE_CITADEL_SI_STAGE_2_B: "联邦深空擎天堡(武之意)-弹群型 II"
+ BA_DEEP_SPACE_CITADEL_SI_STAGE_3_A: "联邦深空擎天堡(武之意)-迫击型 III"
+ BA_DEEP_SPACE_CITADEL_SI_STAGE_3_B: "联邦深空擎天堡(武之意)-弹群型 III"
 
  Aris_starbase_key:0 "天灾基地"
  BA_Aris_flagship:0 "爱丽丝旗舰"
@@ -1730,7 +1773,20 @@
  SP_BA_SI_Gehenna_C02_DESC:0 "回顾万魔殿创始人们筚路蓝缕的建校历程，让大家感悟当下学园生活的来之不易。（完成后，获得§H帝国修正：§!$modifier_BA_SI_Gehenna_C02$）"
 
 
-#####     Technologies     #####
+#####  Starbase building   #####
+ sm_BA_fe_harbor: "前线基地模块"
+ sm_BA_fe_harbor_desc: "先驱者搞出的黑科技。"
+ sm_BA_SI_Valkyrie_A01: "瓦尔基里海军港"
+ sm_BA_SI_Valkyrie_A01_desc: "$SI_Valkyrie_A01_desc$"
+ sm_BA_SI_Valkyrie_A01_tip: "恒星基地模块槽位全部建设为§Y$sm_shipyard$§!时，提供: \n    $MOD_STARBASE_SHIPYARD_CAPACITY_ADD$: §G+4§!\n    $MOD_STARBASE_DEFENSE_PLATFORM_CAPACITY_ADD$: §G+12§!\n    $MOD_SHIP_SENSOR_RANGE_ADD$: §G+5§!\n    $MOD_SHIP_HYPERLANE_RANGE_ADD$: §G+5§!\n "
+
+ sm_BA_SI_Shanhaijing_A04: "自律炮塔组装厂"
+ sm_BA_SI_Shanhaijing_A04_desc: "$SI_Shanhaijing_A04_desc$"
+ sm_BA_SI_Shanhaijing_A04_tip: "每1年，为此深空基地免费建造3座§Y$BA_defence_cannon$§!，直至防御平台容量超过80%"
+
+
+
+ #####     Technologies     #####
 ###  technologies   ###
  tech_BA_Shittem_starting:0 "修复什亭之匣"
  tech_BA_Shittem_starting_desc:0 "修复这个用途不明的设备。它到底有什么用处，又藏着怎样的秘密呢……"
@@ -2145,7 +2201,7 @@
  Civic_SI:0 "学园理念"
  Civic_SI_info:0 "当前可用：£job_BA_dont_be_crazy_here£ [root.BA_SI_available]              [root.GetSICooldown]"
  Civic_SI_no_cooldown:0 "下一个可用：£time£ [root.BA_SI_next_idea]月后"
- Civic_SI_cooldown:0 "冷却完成：£time£ [root.BA_school_idea_cooldown]"
+ Civic_SI_cooldown:0 "冷却完成：£time£ [root.BA_SI_cooldown]"
  Civic_tip:0 "进入学园理念管理界面，选择§B学园理念§!并获得增益"
  Club_title:0 "§M社团总部§!"
  Club_tip:0 "与已建立的社团进行交流，进行赞助或其他交互"
@@ -2227,16 +2283,16 @@
  BlueArchiveAronaDesc23:0 "测试文本23"
  BlueArchiveAronaDesc24:0 "老师，刚才您有收到一些，额，照片……比较清凉又脱线的那种，看起来不像是无意之中发送的呢……为了您的安全着想，Arona已经帮您没收掉了哦。" #-o-
 
- country_idea_cd:0 "学园理念激活间隔过短，请稍等"
+ country_idea_cd:0 "学园理念冷却中（就绪时间: [root.BA_SI_cooldown]）"
  country_idea_cost:0 "下一个学园理念就绪还需§Y[from.BA_SI_diff]§!个月"
  BA_mutual_exclusion_events:0 "已选择与此互斥的学园理念"
  need_three_ideas:0 "需要先完成上方任意三个学园理念"
  need_preposition_ideas:0 "需要完成前置学园理念"
  need_more_left_ideas:0 "未满足前置要求"
  BA_not_the_right_time:0 "时机未到……"
- BA_need_civic:0 "$TRIGGER_FAIL$需要特定的§C学园级国民理念§!，且未激活其他§B学园理念（主要线路）§!"
+ BA_need_civic:0 "$TRIGGER_FAIL$需要特定的§C学园级国民理念§!，且未激活其他§B学园理念（主要）§!"
  BA_idea_chosen:0 "$TRIGGER_FAIL$已激活其他的国民理念"
- BA_need_other_idea:0 "$TRIGGER_FAIL$需要先完成一个§B学园理念（主要线路）§!"
+ BA_need_other_idea:0 "$TRIGGER_FAIL$$mod_BA_SI_sub_cap_add$不足"
  BA_coming_soon:0 "敬请期待"
  Gehenna_SI_start_point:0 "需要拥有学园理念：§R$SI_Gehenna_A01$§! 或 §M$SI_Gehenna_B01$§!"
  Gehenna_SI_Pandemonium_Society_point:0 "需要至少两点§R万魔殿策略§!"

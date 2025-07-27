@@ -1,0 +1,130 @@
+BA_fe_harbor = {
+	icon = "GFX_spaceport_module_fleet_academy"
+	construction_days = 360
+	potential = {
+		exists = owner
+		owner = {
+			has_authority = auth_kivotos_pr
+			has_technology = tech_BA_fe
+		}
+		is_normal_starbase = yes
+		is_space_citadel = no
+	}
+	possible = {
+		OR = {
+			has_starbase_module = shipyard
+			starbase_buildable_is_in_queue_before = {
+				first = shipyard
+				second = BA_fe_harbor
+			}
+		}
+	}
+	station_modifier = {
+		starbase_shipyard_capacity_add = 4
+		starbase_defense_platform_capacity_add = 40
+		ship_sensor_range_add = 5
+		ship_hyperlane_range_add = 5
+	}
+	resources = {
+		category = starbase_buildings
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			add = 100
+			owner = {
+				has_authority = auth_kivotos_pr
+			}
+		}
+	}
+}
+
+BA_SI_Valkyrie_A01 = {
+	icon = "GFX_spaceport_module_fleet_academy"
+	construction_days = 360
+	potential = {
+		exists = owner
+		owner = {
+			has_authority = auth_kivotos
+			has_technology = tech_BA_SI_Valkyrie_A01
+		}
+		is_normal_starbase = yes
+		is_space_citadel = no
+	}
+	possible = {
+		OR = {
+			has_starbase_module = shipyard
+			starbase_buildable_is_in_queue_before = {
+				first = shipyard
+				second = BA_SI_Valkyrie_A01
+			}
+		}
+	}
+	custom_tooltip_with_modifiers = sm_BA_SI_Valkyrie_A01_tip
+	triggered_station_modifier = {
+		potential = {
+			count_starbase_modules = {
+				type = shipyard
+				include_being_constructed = no
+				count = 6
+			}
+		}
+		starbase_shipyard_capacity_add = 4
+		starbase_defense_platform_capacity_add = 12
+		ship_sensor_range_add = 5
+		ship_hyperlane_range_add = 5
+	}
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	show_in_tech = tech_BA_SI_Valkyrie_A01
+	ai_weight = {
+		weight = 100
+		modifier = {
+			factor = 0
+			count_starbase_modules = {
+				type = shipyard
+				count = 6
+			}
+		}
+	}
+}
+
+BA_SI_Shanhaijing_A04 = {
+	icon = "GFX_spaceport_module_fleet_academy"
+	construction_days = 360
+	potential = {
+		exists = owner
+		owner = {
+			has_authority = auth_kivotos
+			has_technology = tech_BA_SI_Shanhaijing_A04
+		}
+        OR = {
+            is_normal_starbase = yes
+            is_orbital_ring = yes
+            is_space_citadel = yes
+        }
+	}
+	custom_tooltip_with_modifiers = sm_BA_SI_Shanhaijing_A04_tip
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 1000
+            sr_keystone = 50
+		}
+		upkeep = {
+			alloys = 10
+            sr_keystone = 1
+		}
+	}
+	show_in_tech = tech_BA_SI_Shanhaijing_A04
+	ai_weight = {
+		weight = 100
+	}
+}

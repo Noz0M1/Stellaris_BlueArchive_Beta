@@ -3974,8 +3974,15 @@ country_event = {
 	}
 	immediate = {
 		### 学园理念计时
-		BA_SI_cost_change = {
-			VALUE = 1
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = BA_SI_cooldown
+				}
+			}
+			BA_SI_cost_change = {
+				VALUE = 1
+			}
 		}
 		set_variable = {
 			which = BA_SI_available
@@ -4055,6 +4062,108 @@ country_event = {
 		}
 	}
 }
+
+#年检
+country_event = {
+	id = BA_Shittem.4001
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_authority = auth_kivotos
+	}
+	immediate = {
+		### 学园理念计时
+		if = {
+			limit = {
+				check_variable = {
+					which = BA_SI_available
+					value >= 5
+				}
+				NOT = {
+					has_country_flag = BA_SI_cooldown
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = BA_SI_notificated
+				}
+				create_message = {
+					type = BA_SI_READY
+					localization = MESSAGE_BA_SI_READY_DESC
+					days = 30
+					target = root
+				}
+			}
+			else = {
+				country_event = {
+					id = BA_Shittem.4010
+					days = 20
+					random = 160
+				}
+			}
+		}
+		### 山海经
+		every_owned_starbase = {
+			limit = {
+				fleet = {
+					is_in_combat = no
+				}
+				used_defense_platform_capacity_percent < 0.8
+				has_starbase_building = BA_SI_Shanhaijing_A04
+			}
+			while = {
+				count = 3
+				BA_SI_SI_Shanhaijing_A04_grant_cannon = yes
+			}
+		}
+		every_owned_nonprimary_starbase = {
+			limit = {
+				fleet = {
+					is_in_combat = no
+				}
+				used_defense_platform_capacity_percent < 0.8
+				has_starbase_building = BA_SI_Shanhaijing_A04
+			}
+			while = {
+				count = 3
+				BA_SI_SI_Shanhaijing_A04_grant_cannon = yes
+			}
+		}
+	}
+}
+
+#提醒点选
+country_event = {
+	id = BA_Shittem.4010
+	is_triggered_only = yes
+	title = BA_Shittem.4010.title
+	desc = BA_Shittem.4010.desc
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Arona0013
+		room = "BA_Shittem_room"
+	}
+	trigger = {
+		has_authority = auth_kivotos
+		NOT = {
+			has_country_flag = BA_SI_notificated
+		}
+	}
+	immediate = {
+		set_country_flag = BA_SI_notificated
+	}
+	option = {
+		name = BA_Shittem.2008.go
+		country_event = {
+			id = BA_Shittem.1030
+		}
+	}
+	option = {
+		name = BA_Shittem.2008.cancel
+	}
+}
+
 
 ### 阿拜多斯
 #B01 B04-新殖民星球-沙漠开发 丰饶绿洲计划

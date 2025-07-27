@@ -1,0 +1,79 @@
+#百鬼夜行
+d_SI_Hyakkiyako_G02 = {
+	icon = d_Trinity_National_Museum
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	planet_modifier = {
+		BA_staff_pop_physics_research_produces_add = 3
+		BA_staff_pop_society_research_produces_add = 3
+		BA_staff_pop_engineering_research_produces_add = 3
+		BA_staff_pop_food_upkeep_add = 3
+	}
+	resources = {
+		category = BA_planet_deposit
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_SI_Hyakkiyako_G03 = {
+	icon = d_Trinity_National_Museum
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	planet_modifier = {
+		BA_staff_pop_consumer_goods_upkeep_mult = -0.3
+		BA_club_pop_consumer_goods_upkeep_mult = -0.3
+		BA_flex_pop_consumer_goods_upkeep_mult = -0.3
+	}
+	resources = {
+		category = BA_planet_deposit
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_SI_Hyakkiyako_G04 = {
+	icon = d_Trinity_National_Museum
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	planet_modifier = {
+		planet_amenities_add = 2000
+		BA_staff_pop_unity_produces_add = 3
+		BA_staff_pop_food_upkeep_add = 3
+	}
+	resources = {
+		category = BA_planet_deposit
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+#山海经
+d_SI_Shanhaijing_B04 = {
+	icon = d_black_market
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	planet_modifier = {
+		planet_max_districts_add = -2
+	}
+	country_modifier = {
+		planet_jobs_produces_mult = 0.1
+		planet_jobs_upkeep_mult = 0.08
+	}
+	resources = {
+		category = BA_planet_deposit
+		produces = {
+			trade = 320
+		}
+		upkeep = {
+			energy = 30
+		}
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+

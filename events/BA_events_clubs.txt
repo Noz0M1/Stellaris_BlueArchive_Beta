@@ -310,39 +310,89 @@ country_event = {
 		has_authority = auth_kivotos
 	}
 	immediate = {
+		### 基础功能
 		#社团建设度月度变更
-		if = {
-			limit = {
-				has_policy_flag = club_lv3_spounce
+		hidden_effect = {
+			if = {
+				limit = {
+					has_policy_flag = club_lv3_spounce
+				}
+				BA_club_favor_grow = {
+					AMOUNT = 60
+				}
 			}
-			BA_club_favor_grow = {
-				AMOUNT = 60
+			else_if = {
+				limit = {
+					has_policy_flag = club_lv2_spounce
+				}
+				BA_club_favor_grow = {
+					AMOUNT = 36
+				}
 			}
-		}
-		else_if = {
-			limit = {
-				has_policy_flag = club_lv2_spounce
+			else_if = {
+				limit = {
+					has_policy_flag = club_lv1_spounce
+				}
+				BA_club_favor_grow = {
+					AMOUNT = 24
+				}
 			}
-			BA_club_favor_grow = {
-				AMOUNT = 36
-			}
-		}
-		else_if = {
-			limit = {
-				has_policy_flag = club_lv1_spounce
-			}
-			BA_club_favor_grow = {
-				AMOUNT = 24
-			}
-		}
-		else = {
-			BA_club_favor_grow = {
-				AMOUNT = 12
+			else = {
+				BA_club_favor_grow = {
+					AMOUNT = 12
+				}
 			}
 		}
 		#社团赞助buff
 		BA_club_clear_country_modifier = yes
 		BA_club_set_country_modifier = yes
+		### 社团功能
+		#百鬼夜行
+		if = {
+			limit = {
+				has_technology = tech_BA_SI_Hyakkiyako_G05
+				any_owned_megastructure = {
+					is_megastructure_type = BA_club_station_Festival_operations_department
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = Festival_operations_department_fes_level
+						value = 10
+					}
+				}
+				every_owned_planet = {
+					limit = {
+						NOT = {
+							has_modifier = modifier_BA_Festival_operations_department_4
+						}
+					}
+					remove_modifier = modifier_BA_Festival_operations_department_1
+					remove_modifier = modifier_BA_Festival_operations_department_2
+					remove_modifier = modifier_BA_Festival_operations_department_3
+					add_modifier = {
+						modifier = modifier_BA_Festival_operations_department_4
+					}
+
+				}
+			}
+			else = {
+				every_owned_planet = {
+					limit = {
+						NOR = {
+							has_modifier = modifier_BA_Festival_operations_department_3
+							has_modifier = modifier_BA_Festival_operations_department_4
+						}
+					}
+					remove_modifier = modifier_BA_Festival_operations_department_1
+					remove_modifier = modifier_BA_Festival_operations_department_2
+					add_modifier = {
+						modifier = modifier_BA_Festival_operations_department_3
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -2922,8 +2972,8 @@ country_event = {
 			value = 1
 		}
 		set_variable = {
-			which = Festival_operations_department_fes_time			#节日增益持续时间
-			value = 360
+			which = Festival_operations_department_fes_level			#节日增益等级
+			value = 1
 		}
 		every_country = {
 			limit = {

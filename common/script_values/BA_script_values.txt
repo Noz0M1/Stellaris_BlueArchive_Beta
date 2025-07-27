@@ -71,25 +71,6 @@ num_BA_main_district_count = {
 	}
 }
 
-########   岗位
-# num_BA_count_keystone_jobs = {
-# 	complex_trigger_modifier = {
-# 		trigger = num_assigned_jobs
-# 		parameters = {
-# 			job = BA_keystone_foundry
-# 		}
-# 		mode = add
-# 	}
-# 	complex_trigger_modifier = {
-# 		trigger = num_assigned_jobs
-# 		parameters = {
-# 			job = BA_pyroxenes_artisan
-# 		}
-# 		mode = add
-# 	}
-# }
-
-########   星球障碍
 num_BA_Trinity_National_Museum_produce = {
 	base = 30
 	complex_trigger_modifier = {
@@ -193,6 +174,60 @@ num_BA_club_empire_size_modifier_effect = {
 	pow = -1
 	multiply = -1
 	add = 1
+}
+
+#祭典运营委员会
+num_BA_club_festival_buff_time = {
+	base = 360
+	multiply = Festival_operations_department_fes_level
+	min = 360
+	modifier = {
+		has_technology =  tech_BA_SI_Hyakkiyako_G05
+		set = 360
+	}
+}
+
+num_BA_club_festival_buff_boost = {
+	base = 1
+	modifier = {
+		add = 0.5
+		has_deposit = d_SI_Hyakkiyako_G02
+	}
+	modifier = {
+		add = 0.5
+		has_deposit = d_SI_Hyakkiyako_G03
+	}
+	modifier = {
+		add = 0.5
+		has_deposit = d_SI_Hyakkiyako_G04
+	}
+}
+
+num_BA_club_festival_buff_upkeep_eligma = {
+	base = 10
+	divide = Festival_operations_department_fes_level
+}
+
+num_BA_club_festival_buff_upkeep_consumer_goods = {
+	base = 10
+	complex_trigger_modifier = {
+		trigger = count_owned_planet
+		parameters = {
+			limit = {
+				always = yes
+			}
+		}
+		mode = multiply
+	}
+}
+
+#玄武商会
+num_BA_club_trade_mult = {
+	base = 1
+	modifier = {
+		has_technology = tech_BA_SI_Shanhaijing_B03
+		add = 1
+	}
 }
 
 #出版部

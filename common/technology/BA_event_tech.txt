@@ -1009,6 +1009,7 @@ tech_BA_club_Hotspring_development_department_07 = {
 }
 
 #### 学园文化科技
+#一级
 tech_BA_culture_Federal = {
 	area = society
 	#icon = culture_Federal
@@ -1033,8 +1034,8 @@ tech_BA_culture_Federal = {
 
 tech_BA_culture_Abydos = {
 	area = society
-	cost = @tier3cost2
-	tier = 3
+	cost = @tier2cost2
+	tier = 2
 	is_rare = no
 	category = {
 		school_tech
@@ -1053,8 +1054,8 @@ tech_BA_culture_Abydos = {
 
 tech_BA_culture_Gehenna = {
 	area = society
-	cost = @tier3cost2
-	tier = 3
+	cost = @tier2cost2
+	tier = 2
 	is_rare = no
 	category = {
 		school_tech
@@ -1073,8 +1074,8 @@ tech_BA_culture_Gehenna = {
 
 tech_BA_culture_Millennium = {
 	area = society
-	cost = @tier3cost2
-	tier = 3
+	cost = @tier2cost2
+	tier = 2
 	is_rare = no
 	category = {
 		school_tech
@@ -1093,8 +1094,8 @@ tech_BA_culture_Millennium = {
 
 tech_BA_culture_Trinity = {
 	area = society
-	cost = @tier3cost2
-	tier = 3
+	cost = @tier2cost2
+	tier = 2
 	is_rare = no
 	category = {
 		school_tech
@@ -1111,6 +1112,32 @@ tech_BA_culture_Trinity = {
 	}
 }
 
+#二级
+tech_BA_culture_Schale = {
+	icon = tech_BA_culture_Federal
+	area = society
+	#icon = culture_Federal
+	cost = @tier3cost1
+	tier = 3
+	is_rare = no
+	category = {
+		school_tech
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier3weight3
+	prerequisites = {
+		tech_BA_culture_Abydos
+		tech_BA_culture_Gehenna
+		tech_BA_culture_Millennium
+		tech_BA_culture_Trinity
+	}
+	modifier = {
+		BA_SI_sub_cap_add = 1
+	}
+}
+
 tech_BA_culture_Redwinter = {
 	area = society
 	cost = @tier3cost3
@@ -1121,10 +1148,7 @@ tech_BA_culture_Redwinter = {
 	}
 	weight = @tier3weight3
 	prerequisites = {
-		tech_BA_culture_Abydos
-		tech_BA_culture_Gehenna
-		tech_BA_culture_Millennium
-		tech_BA_culture_Trinity
+		tech_BA_culture_Schale
 	}
 	potential = {
 		has_authority = auth_kivotos
@@ -1144,10 +1168,7 @@ tech_BA_culture_Hyakkiyako = {
 	}
 	weight = @tier3weight3
 	prerequisites = {
-		tech_BA_culture_Abydos
-		tech_BA_culture_Gehenna
-		tech_BA_culture_Millennium
-		tech_BA_culture_Trinity
+		tech_BA_culture_Schale
 	}
 	potential = {
 		has_authority = auth_kivotos
@@ -1167,10 +1188,7 @@ tech_BA_culture_Shanhaijing = {
 	}
 	weight = @tier3weight3
 	prerequisites = {
-		tech_BA_culture_Abydos
-		tech_BA_culture_Gehenna
-		tech_BA_culture_Millennium
-		tech_BA_culture_Trinity
+		tech_BA_culture_Schale
 	}
 	potential = {
 		has_authority = auth_kivotos
@@ -1190,10 +1208,7 @@ tech_BA_culture_Valkyrie = {
 	}
 	weight = @tier3weight3
 	prerequisites = {
-		tech_BA_culture_Abydos
-		tech_BA_culture_Gehenna
-		tech_BA_culture_Millennium
-		tech_BA_culture_Trinity
+		tech_BA_culture_Schale
 	}
 	potential = {
 		has_authority = auth_kivotos
@@ -1213,10 +1228,7 @@ tech_BA_culture_SRT = {
 	}
 	weight = @tier3weight3
 	prerequisites = {
-		tech_BA_culture_Abydos
-		tech_BA_culture_Gehenna
-		tech_BA_culture_Millennium
-		tech_BA_culture_Trinity
+		tech_BA_culture_Schale
 	}
 	potential = {
 		has_authority = auth_kivotos
@@ -1236,10 +1248,7 @@ tech_BA_culture_Arius = {
 	}
 	weight = @tier3weight3
 	prerequisites = {
-		tech_BA_culture_Abydos
-		tech_BA_culture_Gehenna
-		tech_BA_culture_Millennium
-		tech_BA_culture_Trinity
+		tech_BA_culture_Schale
 	}
 	potential = {
 		has_authority = auth_kivotos

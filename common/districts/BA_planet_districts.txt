@@ -256,11 +256,31 @@ BA_districts_military_factory = {
 		potential = {
 			exists = owner
 			owner = {
+				has_technology = tech_BA_SI_Redwinter_G04
+			}
+		}
+		#学园理念-Redwinter G04
+		job_BA_Kivotos_staff_add = 100
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
 				has_technology = tech_BA_Kivotos_chronicle_stage1
 			}
 		}
 		#编年史1阶段 300住房
 		planet_housing_add = 300
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_Kivotos_chronicle_stage7
+			}
+		}
+		#编年史7阶段 2.5全产
+		planet_jobs_produces_mult = 0.025
 	}
 }
 
@@ -304,6 +324,16 @@ BA_districts_suburbs = {
 			job_BA_Kivotos_miner_add = 100
 			job_BA_caterer_add = 100
 		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_BA_SI_Redwinter_G03
+			}
+		}
+		#学园理念-Redwinter G03
+		job_BA_Kivotos_staff_add = 100
 	}
 	triggered_planet_modifier = {
 		potential = {

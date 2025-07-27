@@ -90,8 +90,14 @@
  modifier_BA_Foreclosure_task_force_5_desc:0 "$modifier_BA_Foreclosure_task_force_desc$\n§B已经尽善尽美？§!"
  modifier_BA_Teaparty:0 "茶会行政效能增益"
  modifier_BA_Teaparty_desc:0 "有了来自茶会的专业行政人员的协助，我们的帝国规模得到了一定程度的限制。"
- modifier_BA_Festival_operations_department:0 "星球祭典"
- modifier_BA_Festival_operations_department_desc:0 "祭典运行委员会在这里举行了一次节日庆祝活动，这让大家很开心。"
+ modifier_BA_Festival_operations_department_1:0 "星球祭典"
+ modifier_BA_Festival_operations_department_1_desc:0 "祭典运营委员会在这里举行了一次节日庆祝活动，这让大家很开心。"
+ modifier_BA_Festival_operations_department_2:0 "星球祭典"
+ modifier_BA_Festival_operations_department_2_desc:0 "祭典运营委员会在这里举行了一次节日庆祝活动，这让大家很开心。"
+ modifier_BA_Festival_operations_department_3:0 "星球祭典"
+ modifier_BA_Festival_operations_department_3_desc:0 "祭典运营委员会在这里举行了一次节日庆祝活动，这让大家很开心。"
+ modifier_BA_Festival_operations_department_4:0 "星球祭典"
+ modifier_BA_Festival_operations_department_4_desc:0 "祭典运营委员会在这里举行了一次节日庆祝活动，这让大家很开心。"
  modifier_BA_Publishing_department:0 "出版部加刊"
  modifier_BA_Publishing_department_desc:0 "出版部作为联邦学生会的喉舌，正在绝赞撰刊中。"
  modifier_BA_arena:0 "战术对抗赛"
@@ -129,23 +135,23 @@
  modifier_BA_SI_Abydos_B_route_4_desc: ""
 
  modifier_BA_SI_Gehenna_G02: "§C新世界的火种§!"
- modifier_BA_SI_Gehenna_G02_desc: ""
+ modifier_BA_SI_Gehenna_G02_desc: "$SI_Gehenna_G02_desc$"
  modifier_BA_SI_Gehenna_A01: "§C万魔星载§!"
- modifier_BA_SI_Gehenna_A01_desc: ""
+ modifier_BA_SI_Gehenna_A01_desc: "$SI_Gehenna_A01_desc$"
  modifier_BA_SI_Gehenna_A02: "§C先发制人§!"
- modifier_BA_SI_Gehenna_A02_desc: ""
+ modifier_BA_SI_Gehenna_A02_desc: "$SI_Gehenna_A02_desc$"
  modifier_BA_SI_Gehenna_A03: "§C光荣征服§!"
- modifier_BA_SI_Gehenna_A03_desc: ""
+ modifier_BA_SI_Gehenna_A03_desc: "$SI_Gehenna_A03_desc$"
  modifier_BA_SI_Gehenna_B01: "§C风纪武断§!"
- modifier_BA_SI_Gehenna_B01_desc: ""
+ modifier_BA_SI_Gehenna_B01_desc: "$SI_Gehenna_B01_desc$"
  modifier_BA_SI_Gehenna_B03: "§C万里风行§!"
- modifier_BA_SI_Gehenna_B03_desc: "（此修正的持续时间会§G每月刷新§!，除非§Y稳定度过低§!）"
+ modifier_BA_SI_Gehenna_B03_desc: "$SI_Gehenna_B03_desc$\n（此修正的持续时间会§G每月刷新§!，除非§Y稳定度过低§!）"
  modifier_BA_SI_Gehenna_C01: "§C万魔殿的野心§!"
- modifier_BA_SI_Gehenna_C01_desc: ""
+ modifier_BA_SI_Gehenna_C01_desc: "$SI_Gehenna_C01_desc$"
  modifier_BA_SI_Gehenna_C02: "§C幕后准则§!"
- modifier_BA_SI_Gehenna_C02_desc: "对饱经战火的基沃托斯来说，没有什么比历史更能操纵矛盾。通过对某些细节的选择性强调或忽视，万魔殿可以轻松揽取主流文化的实际解释权。"
+ modifier_BA_SI_Gehenna_C02_desc: "$SI_Gehenna_C02_desc$"
  modifier_BA_SI_Gehenna_E01: "§C星空下的伊施波设§!"
- modifier_BA_SI_Gehenna_E01_desc: ""
+ modifier_BA_SI_Gehenna_E01_desc: "$SI_Gehenna_E01_desc$"
 
  modifier_BA_SI_Millennium_G04: "§C§_“独特点子”§!数据共享服务器§!"
  modifier_BA_SI_Millennium_G04_desc: "共享精神尤为重要。某个天才的灵光一闪，可能会为另一个普通人节省数年的刻苦努力。"
@@ -154,6 +160,21 @@
 
  modifier_BA_SI_Trinity_C06: "§C星空彼端的乐土§!"
  modifier_BA_SI_Trinity_C06_desc: ""
+
+ modifier_BA_SI_Redwinter_G02: "§C帝国秘隐§!"
+ modifier_BA_SI_Redwinter_G02_desc: "$SI_Redwinter_G02_desc$"
+ modifier_BA_SI_Redwinter_G05: "§C$SI_Redwinter_G05$§!"
+ modifier_BA_SI_Redwinter_G05_desc: "$SI_Redwinter_G05_desc$"
+
+ modifier_BA_SI_Valkyrie_G01: "§C$SI_Valkyrie_G01$§!"
+ modifier_BA_SI_Valkyrie_G01_desc: "$SI_Valkyrie_G01_desc$"
+
+ ###     ship      ###
+ mod_shipsize_BA_missile_ship_build_speed_mult:0 "自律导弹艇建造速度"
+ mod_shipsize_BA_artillery_ship_build_speed_mult:0 "自律脊峰舰建造速度"
+ mod_shipsize_BA_swarm_ship_build_speed_mult:0 "自律军团舰建造速度"
+ mod_shipsize_BA_hub_ship_build_speed_mult:0 "自律演算枢纽建造速度"
+ mod_shipsize_BA_defence_cannon_build_speed_mult:0 "自律防御炮塔建造速度"
 
 
  ###  easter egg   ###
@@ -179,5 +200,11 @@
 
  mod_Schale_pop_growth_speed:0 "基沃托斯学生增长速度"
  mod_Schale_pop_growth_speed_DESC:0 "此数值影响基沃托斯学生的成长速度"
+
+
+
+###   scripted   ###
+ mod_BA_Kivotos_avg_length: "学生平均身高"
+ mod_BA_SI_sub_cap_add: "可解锁的§B$BA_SI$§!（可选）"
 
 

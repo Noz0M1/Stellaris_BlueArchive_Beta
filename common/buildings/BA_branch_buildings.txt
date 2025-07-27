@@ -147,6 +147,7 @@ building_BA_Momoyado_interstellar = {
 	}
 }
 
+# 学园理念
 building_BA_SI_Abydos_G02 = {
 	base_buildtime = 360
 	icon = building_virtual_entertainment_studios
@@ -191,6 +192,62 @@ building_BA_SI_Abydos_G02 = {
 			#days = 360
 			#random = 1800
 			days = 10
+		}
+	}
+}
+
+building_BA_SI_Shanhaijing_B03 = {
+	base_buildtime = 360
+	icon = building_virtual_entertainment_studios
+	owner_type = corporate
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			is_ai = no
+			has_authority = auth_kivotos
+		}
+		is_artificial = no
+		NOR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+			is_planet_class = pc_city
+		}
+	}
+	triggered_desc = {
+		text = building_BA_SI_Shanhaijing_B03_tip
+	}
+	prerequisites = {
+		tech_BA_SI_Shanhaijing_B03
+	}
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = 500
+		}
+		produces = {
+			trade = 1000
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	ai_weight = {
+		base = 100000
+	}
+	on_built = {
+		planet.branch_office_owner = {
+			multiply_variable = {
+				which = Xuanwu_promenade_cooldown
+				value = 0.8
+			}
+		}
+	}
+	on_destroy = {
+		planet.branch_office_owner = {
+			multiply_variable = {
+				which = Xuanwu_promenade_cooldown
+				value = 1.25
+			}
 		}
 	}
 }

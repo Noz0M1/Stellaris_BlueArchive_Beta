@@ -59,10 +59,16 @@ building_BA_starlink_2 = {
 		exists = owner
 		owner = {
 			has_authority = auth_kivotos
+			NOT = {
+				has_technology = tech_BA_SI_Shanhaijing_G01
+			}
 		}
 	}
 	allow = {
 		has_upgraded_capital = yes
+	}
+	convert_to = {
+		building_BA_SI_Shanhaijing_G01
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -491,6 +497,7 @@ building_BA_fade_Sanctum_center = {
 
 ### 学院理念
 building_BA_SI_Millennium_G10 = {
+	icon = building_citadel_uplink
 	position_priority = 148
 	base_buildtime = 360
 	category = manufacturing
@@ -535,5 +542,138 @@ building_BA_SI_Millennium_G10 = {
 	}
 	prerequisites = {
 		"tech_BA_SI_Millennium_G09"
+	}
+}
+
+building_BA_SI_Valkyrie_B02 = {
+	icon = building_disinformation_center
+	base_buildtime = @b2_time
+	category = government
+	can_build = no
+	building_sets = {
+		government
+		urban
+	}
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		job_BA_Valkyrie_police_add = 500
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			volatile_motes = @b2_rare_cost
+		}
+		upkeep = {
+			energy = @b1_upkeep
+			volatile_motes = @b2_rare_upkeep
+		}
+	}
+	prerequisites = {
+		tech_BA_SI_Valkyrie_B02
+	}
+	triggered_desc = {
+		text = job_BA_Valkyrie_police_effect_desc
+	}
+}
+
+building_BA_SI_Shanhaijing_G01 = {
+	icon = primal_arena
+	position_priority = 20
+	can_build = no
+	base_buildtime = 360
+	category = pop_assembly
+	building_sets = {
+		government
+		urban
+		ba_pop_assembly
+	}
+	potential = {
+		exists = owner
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+		has_upgraded_capital = yes
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		logistic_growth_mult = 0.3
+		planet_pop_assembly_mult = 0.3
+	}
+	planet_modifier = {
+		job_roboticist_add = 300
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+			sr_eligma = 100
+		}
+		upkeep = {
+			energy = 4
+		}
+	}
+	prerequisites = {
+		tech_BA_SI_Shanhaijing_G01
+	}
+}
+
+building_BA_SI_Shanhaijing_G02 = {
+	icon = building_corporate_forum
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+	category = government
+	building_sets = {
+		government
+		urban
+	}
+	potential = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	allow = {
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		BA_club_pop_sr_dark_matter_produces_add = 0.05
+		BA_Kivotos_avg_length = -0.15
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			volatile_motes = @b2_rare_cost
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
+	prerequisites = {
+		tech_BA_SI_Shanhaijing_G02
 	}
 }

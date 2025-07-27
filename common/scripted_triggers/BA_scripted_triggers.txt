@@ -236,8 +236,11 @@ is_BA_fallen_empire = {
 BA_SI_cooldown_trigger = {
 	custom_tooltip = {
 		fail_text = country_idea_cd
-		NOT = {
-			has_country_flag = BA_school_idea_cooldown
+		OR = {
+			has_country_flag = BA_SI_no_cd
+			NOT = {
+				has_country_flag = BA_SI_cooldown
+			}
 		}
 	}
 }
@@ -247,7 +250,7 @@ BA_SI_time_limit_trigger = {
 		fail_text = country_idea_cost
 		check_variable = {
 			which = BA_SI_cost
-			value >= 48
+			value >= $COST$
 		}
 	}
 }
@@ -274,15 +277,13 @@ BA_SI_main_unlock_trigger = {
 }
 
 BA_SI_sub_unlock_trigger = {
-	custom_tooltip = {
-		fail_text = BA_need_other_idea
-		from = {
-			OR = {
-				has_technology = tech_BA_SI_Abydos_G03
-				has_technology = tech_BA_SI_Gehenna_G03
-				has_technology = tech_BA_SI_Millennium_G11
-				has_technology = tech_BA_SI_Trinity_G01
-			}
+	from = {
+		calc_true_if = {
+			amount < modifier:BA_SI_sub_cap_add
+			has_technology = tech_BA_SI_Redwinter_G01
+			has_technology = tech_BA_SI_Hyakkiyako_G01
+			has_technology = tech_BA_SI_Valkyrie_G01
+			has_technology = tech_BA_SI_Shanhaijing_G01
 		}
 	}
 }

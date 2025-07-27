@@ -67,6 +67,24 @@ defined_text = {
 	}
 }
 
+define_text = {
+	name = GetSICooldown
+	text = {
+		localization_key = Civic_SI_cooldown
+		trigger = {
+			has_country_flag = BA_SI_cooldown
+		}
+	}
+	text = {
+		localization_key = Civic_SI_no_cooldown
+		trigger = {
+			NOT = {
+				has_country_flag = BA_SI_cooldown
+			}
+		}
+	}
+}
+
 defined_text = {
 	name = GetRatherPlanetRebuilded
 	text = {
@@ -1072,7 +1090,7 @@ defined_text = {
 				has_technology = tech_power_hub_1
 			}
 		}
-		localization_key =	ap_Our_story_stage2_prerequisites_A_success
+		localization_key = ap_Our_story_stage2_prerequisites_A_success
 	}
 	text = {
 		trigger = {
@@ -1082,7 +1100,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key =	ap_Our_story_stage2_prerequisites_A_fail
+		localization_key = ap_Our_story_stage2_prerequisites_A_fail
 	}
 }
 
@@ -1094,7 +1112,7 @@ defined_text = {
 				has_technology = tech_mineral_purification_1
 			}
 		}
-		localization_key =	ap_Our_story_stage2_prerequisites_B_success
+		localization_key = ap_Our_story_stage2_prerequisites_B_success
 	}
 	text = {
 		trigger = {
@@ -1104,7 +1122,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key =	ap_Our_story_stage2_prerequisites_B_fail
+		localization_key = ap_Our_story_stage2_prerequisites_B_fail
 	}
 }
 
@@ -1116,7 +1134,7 @@ defined_text = {
 				has_technology = tech_food_processing_1
 			}
 		}
-		localization_key =	ap_Our_story_stage2_prerequisites_C_success
+		localization_key = ap_Our_story_stage2_prerequisites_C_success
 	}
 	text = {
 		trigger = {
@@ -1126,7 +1144,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key =	ap_Our_story_stage2_prerequisites_C_fail
+		localization_key = ap_Our_story_stage2_prerequisites_C_fail
 	}
 }
 
@@ -1138,7 +1156,7 @@ defined_text = {
 				has_technology = tech_colonial_centralization
 			}
 		}
-		localization_key =	ap_Our_story_stage3_prerequisites_A_success
+		localization_key = ap_Our_story_stage3_prerequisites_A_success
 	}
 	text = {
 		trigger = {
@@ -1148,7 +1166,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key =	ap_Our_story_stage3_prerequisites_A_fail
+		localization_key = ap_Our_story_stage3_prerequisites_A_fail
 	}
 }
 
@@ -1160,7 +1178,7 @@ defined_text = {
 				has_technology = tech_alloys_1
 			}
 		}
-		localization_key =	ap_Our_story_stage3_prerequisites_B_success
+		localization_key = ap_Our_story_stage3_prerequisites_B_success
 	}
 	text = {
 		trigger = {
@@ -1170,7 +1188,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key =	ap_Our_story_stage3_prerequisites_B_fail
+		localization_key = ap_Our_story_stage3_prerequisites_B_fail
 	}
 }
 
@@ -1182,7 +1200,7 @@ defined_text = {
 				has_technology = tech_food_processing_1
 			}
 		}
-		localization_key =	ap_Our_story_stage3_prerequisites_C_success
+		localization_key = ap_Our_story_stage3_prerequisites_C_success
 	}
 	text = {
 		trigger = {
@@ -1192,7 +1210,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key =	ap_Our_story_stage3_prerequisites_C_fail
+		localization_key = ap_Our_story_stage3_prerequisites_C_fail
 	}
 }
 
@@ -1204,7 +1222,7 @@ defined_text = {
 				has_technology = tech_BA_pyroxenes_using
 			}
 		}
-		localization_key =	ap_Our_story_stage4_prerequisites_A_success
+		localization_key = ap_Our_story_stage4_prerequisites_A_success
 	}
 	text = {
 		trigger = {
@@ -1214,7 +1232,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key =	ap_Our_story_stage4_prerequisites_A_fail
+		localization_key = ap_Our_story_stage4_prerequisites_A_fail
 	}
 }
 
@@ -1226,7 +1244,7 @@ defined_text = {
 				has_technology = tech_colonization_2
 			}
 		}
-		localization_key =	ap_Our_story_stage4_prerequisites_B_success
+		localization_key = ap_Our_story_stage4_prerequisites_B_success
 	}
 	text = {
 		trigger = {
@@ -1236,7 +1254,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key =	ap_Our_story_stage4_prerequisites_B_fail
+		localization_key = ap_Our_story_stage4_prerequisites_B_fail
 	}
 }
 
@@ -1248,7 +1266,7 @@ defined_text = {
 				has_technology = tech_interstellar_fleet_traditions
 			}
 		}
-		localization_key =	ap_Our_story_stage4_prerequisites_C_success
+		localization_key = ap_Our_story_stage4_prerequisites_C_success
 	}
 	text = {
 		trigger = {
@@ -1258,7 +1276,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key =	ap_Our_story_stage4_prerequisites_C_fail
+		localization_key = ap_Our_story_stage4_prerequisites_C_fail
 	}
 }
 
@@ -1270,7 +1288,7 @@ defined_text = {
 				has_technology = tech_self_aware_logic
 			}
 		}
-		localization_key =	ap_Our_story_stage5_prerequisites_A_success
+		localization_key = ap_Our_story_stage5_prerequisites_A_success
 	}
 	text = {
 		trigger = {
@@ -1280,7 +1298,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key =	ap_Our_story_stage5_prerequisites_A_fail
+		localization_key = ap_Our_story_stage5_prerequisites_A_fail
 	}
 }
 
@@ -1292,7 +1310,7 @@ defined_text = {
 				has_technology = tech_space_science_3
 			}
 		}
-		localization_key =	ap_Our_story_stage5_prerequisites_B_success
+		localization_key = ap_Our_story_stage5_prerequisites_B_success
 	}
 	text = {
 		trigger = {
@@ -1302,12 +1320,9 @@ defined_text = {
 				}
 			}
 		}
-		localization_key =	ap_Our_story_stage5_prerequisites_B_fail
+		localization_key = ap_Our_story_stage5_prerequisites_B_fail
 	}
 }
-
-
-
 
 defined_text = {
 	name = ap_Our_story_stage6_prerequisites_A
@@ -1317,7 +1332,7 @@ defined_text = {
 				has_technology = tech_galactic_administration
 			}
 		}
-		localization_key =	ap_Our_story_stage6_prerequisites_A_success
+		localization_key = ap_Our_story_stage6_prerequisites_A_success
 	}
 	text = {
 		trigger = {
@@ -1327,7 +1342,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key =	ap_Our_story_stage6_prerequisites_A_fail
+		localization_key = ap_Our_story_stage6_prerequisites_A_fail
 	}
 }
 
@@ -1339,7 +1354,7 @@ defined_text = {
 				has_technology = tech_starbase_4
 			}
 		}
-		localization_key =	ap_Our_story_stage6_prerequisites_B_success
+		localization_key = ap_Our_story_stage6_prerequisites_B_success
 	}
 	text = {
 		trigger = {
@@ -1349,12 +1364,9 @@ defined_text = {
 				}
 			}
 		}
-		localization_key =	ap_Our_story_stage6_prerequisites_B_fail
+		localization_key = ap_Our_story_stage6_prerequisites_B_fail
 	}
 }
-
-
-
 
 defined_text = {
 	name = ap_Our_story_stage7_prerequisites_A
@@ -1364,7 +1376,7 @@ defined_text = {
 				has_technology = tech_BA_keystone_crafting
 			}
 		}
-		localization_key =	ap_Our_story_stage7_prerequisites_A_success
+		localization_key = ap_Our_story_stage7_prerequisites_A_success
 	}
 	text = {
 		trigger = {
@@ -1374,7 +1386,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key =	ap_Our_story_stage7_prerequisites_A_fail
+		localization_key = ap_Our_story_stage7_prerequisites_A_fail
 	}
 }
 
@@ -1386,7 +1398,7 @@ defined_text = {
 				has_technology = tech_housing_2
 			}
 		}
-		localization_key =	ap_Our_story_stage7_prerequisites_B_success
+		localization_key = ap_Our_story_stage7_prerequisites_B_success
 	}
 	text = {
 		trigger = {
@@ -1396,32 +1408,29 @@ defined_text = {
 				}
 			}
 		}
-		localization_key =	ap_Our_story_stage7_prerequisites_B_fail
+		localization_key = ap_Our_story_stage7_prerequisites_B_fail
 	}
 }
-
-
-
 
 defined_text = {
 	name = ap_Our_story_stage8_prerequisites_A
 	text = {
 		trigger = {
 			owner = {
-				has_technology = tech_self_aware_logic
+				has_technology = tech_capital_productivity_2
 			}
 		}
-		localization_key =	ap_Our_story_stage8_prerequisites_A_success
+		localization_key = ap_Our_story_stage8_prerequisites_A_success
 	}
 	text = {
 		trigger = {
 			owner = {
 				NOT = {
-					has_technology = tech_self_aware_logic
+					has_technology = tech_capital_productivity_2
 				}
 			}
 		}
-		localization_key =	ap_Our_story_stage8_prerequisites_A_fail
+		localization_key = ap_Our_story_stage8_prerequisites_A_fail
 	}
 }
 
@@ -1430,25 +1439,22 @@ defined_text = {
 	text = {
 		trigger = {
 			owner = {
-				has_technology = tech_space_science_3
+				has_technology = tech_ecological_adaptation
 			}
 		}
-		localization_key =	ap_Our_story_stage8_prerequisites_B_success
+		localization_key = ap_Our_story_stage8_prerequisites_B_success
 	}
 	text = {
 		trigger = {
 			owner = {
 				NOT = {
-					has_technology = tech_space_science_3
+					has_technology = tech_ecological_adaptation
 				}
 			}
 		}
-		localization_key =	ap_Our_story_stage8_prerequisites_B_fail
+		localization_key = ap_Our_story_stage8_prerequisites_B_fail
 	}
 }
-
-
-
 
 #领袖
 defined_text = {
@@ -1478,27 +1484,33 @@ defined_text = {
 	name = GetBACrisisLevel
 	text = {
 		trigger = {
+			has_global_flag = BA_Crisis_Torment
+		}
+		localization_key = BA_crisis_level_Lunatic
+	}
+	text = {
+		trigger = {
 			has_global_flag = BA_Crisis_Insane
 		}
-		localization_key = LEVEL_Insane
+		localization_key = BA_crisis_level_Torment
 	}
 	text = {
 		trigger = {
 			has_global_flag = BA_Crisis_Extreme
 		}
-		localization_key = LEVEL_Veryhard
+		localization_key = BA_crisis_level_Insane
 	}
 	text = {
 		trigger = {
 			has_global_flag = BA_Crisis_Hardcore
 		}
-		localization_key = LEVEL_Hardcore
+		localization_key = BA_crisis_level_Hardcore
 	}
 	text = {
 		trigger = {
 			has_global_flag = BA_Crisis_Normal
 		}
-		localization_key = LEVEL_Normal
+		localization_key = BA_crisis_level_Normal
 	}
 }
 

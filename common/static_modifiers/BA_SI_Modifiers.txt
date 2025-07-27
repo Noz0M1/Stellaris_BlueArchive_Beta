@@ -155,3 +155,43 @@ modifier_BA_SI_Trinity_C06 = {
 	bonus_pop_growth_mult = 0.5
 	planet_jobs_produces_mult = 0.2
 }
+
+### 红冬
+modifier_BA_SI_Redwinter_G02 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	country_base_unity_produces_add = 100
+}
+
+modifier_BA_SI_Redwinter_G05 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	starbase_shipyard_build_speed_mult = 0.35
+	starbase_upgrade_speed_mult = 0.7
+	country_unity_produces_mult = 0.2
+}
+
+### 瓦尔基里
+modifier_BA_SI_Valkyrie_G01 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	pop_happiness = -0.15
+	planet_crime_add = -100
+}
+
+### 红冬
+modifier_BA_SI_Redwinter_G02 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	country_base_unity_produces_add = 100
+}
+
+modifier_BA_SI_Redwinter_G05 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	starbase_shipyard_build_speed_mult = 0.35
+	starbase_upgrade_speed_mult = 0.7
+	country_unity_produces_mult = 0.2
+}
+
+### 瓦尔基里
+modifier_BA_SI_Valkyrie_G01 = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"	#TODO：换掉
+	pop_happiness = -0.15
+	planet_crime_add = -100
+}

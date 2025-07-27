@@ -1183,16 +1183,27 @@ BA_SI_cost_change = {
 	}
 }
 
-BA_SI_set_cooldown_normal = {
+BA_SI_active = {
 	hidden_effect = {
 		# 学园理念cd
-		set_timed_country_flag = {
-			flag = BA_school_idea_cooldown
-			days = 5
+		set_saved_date = {
+			key = BA_SI_cooldown
+			days_from_present = $COOLDOWN$
+			expires = $COOLDOWN$
 		}
+		# 学园理念状态条刷新
+		set_variable = {
+			which = BA_SI_available
+			value = value:num_BA_SI_available
+		}
+		set_variable = {
+			which = BA_SI_next_idea
+			value = value:num_BA_SI_next_idea
+		}
+
 		# 点击时触发的效果
 		BA_SI_cost_change = {
-			VALUE = -49
+			VALUE = $COST$
 		}
 		country_event = {
 			id = BA_Shittem.4000
@@ -1229,6 +1240,74 @@ BA_SI_Gehenna_A02_grant_fleet = {
 					}
 				}
 			}
+		}
+	}
+}
+
+BA_SI_SI_Shanhaijing_A04_grant_cannon = {
+	# this = starbase
+	fleet = {
+		if = {
+			limit = {
+				any_owned_ship = {
+					is_ship_size = BA_defence_cannon
+				}
+			}
+			random_owned_ship = {
+				limit = {
+					is_ship_size = BA_defence_cannon
+				}
+				save_event_target_as = target_cannon
+			}
+		}
+		else = {
+			owner = {
+				random_owned_design = {
+					limit = {
+						is_ship_size = BA_defence_cannon
+					}
+					save_event_target_as = target_cannon
+				}
+			}
+		}
+		create_ship = {
+			name = random
+			design = event_target:target_cannon
+			graphical_culture = owner
+		}
+	}
+}
+
+BA_SI_SI_Shanhaijing_A04_grant_cannon = {
+	# this = starbase
+	fleet = {
+		if = {
+			limit = {
+				any_owned_ship = {
+					is_ship_size = BA_defence_cannon
+				}
+			}
+			random_owned_ship = {
+				limit = {
+					is_ship_size = BA_defence_cannon
+				}
+				save_event_target_as = target_cannon
+			}
+		}
+		else = {
+			owner = {
+				random_owned_design = {
+					limit = {
+						is_ship_size = BA_defence_cannon
+					}
+					save_event_target_as = target_cannon
+				}
+			}
+		}
+		create_ship = {
+			name = random
+			design = event_target:target_cannon
+			graphical_culture = owner
 		}
 	}
 }

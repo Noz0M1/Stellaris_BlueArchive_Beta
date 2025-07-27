@@ -1,10 +1,22 @@
 message_type = {
-    key = "NEW_SP_LEADER"
+    key = "BA_NEW_SP_LEADER"
     icon = "GFX_message_new_heir"
     icon_frame = 1
     hidden_in_message_settings = yes
-    name = "MESSAGE_NEW_SP_LEADER_TITLE"
+    name = "MESSAGE_BA_NEW_SP_LEADER_TITLE"
     sound = "notification"
     ping = mixed_notification_green
     category = leaders
 }
+
+message_type = {
+    key = "BA_SI_READY"
+    icon = "GFX_message_negotiate_existing_agreement"
+    icon_frame = 1
+    hidden_in_message_settings = yes
+    name = "MESSAGE_BA_SI_READY_DESC"
+    sound = "notification"
+    ping = mixed_notification_green
+    category = leaders
+}
+

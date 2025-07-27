@@ -1,36 +1,76 @@
 option = {
-    name = Festival_operations_department_host
-    custom_tooltip = Festival_operations_department_host.tip
-    response_text = Festival_operations_department_host.$CHARA$RE
-    allow = {
-        resource_stockpile_compare = {
-            resource = sr_eligma
-            value >= 100
-        }
-        custom_tooltip_fail = {
-            text = Festival_operations_department_host.cooldown
-            NOT = {
-                has_country_flag = Festival_operations_department_cooldown
-            }
-        }
-    }
-    add_resource = {
-        sr_eligma = -100
-    }
-    every_owned_planet = {
-        add_modifier = {
-            modifier = modifier_BA_Festival_operations_department
-            days = 1
-            time_multiplier = owner.Festival_operations_department_fes_time
-        }
-    }
-    hidden_effect = {
-        set_timed_country_flag = {
-            flag = Festival_operations_department_cooldown
-            days = Festival_operations_department_fes_time
-        }
-    }
+	name = Festival_operations_department_host
+	custom_tooltip = Festival_operations_department_host.tip
+	response_text = Festival_operations_department_host.$CHARA$RE
+	allow = {
+		resource_stockpile_compare = {
+			resource = sr_eligma
+			value >= 100
+		}
+		custom_tooltip_fail = {
+			text = Festival_operations_department_host.cooldown
+			NOT = {
+				has_country_flag = Festival_operations_department_cooldown
+			}
+		}
+		custom_tooltip_fail = {
+			text = Festival_operations_department_host.auto
+			NOT = {
+				has_technology = tech_BA_SI_Hyakkiyako_G05
+			}
+		}
+	}
+	add_resource = {
+		sr_eligma = -120
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = Festival_operations_department_fes_level
+				value = 10
+			}
+		}
+		every_owned_planet = {
+			add_modifier = {
+				modifier = modifier_BA_Festival_operations_department_3
+				days = 1
+				time_multiplier = owner.value:num_BA_club_festival_buff_time
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = Festival_operations_department_fes_level
+				value >= 5
+			}
+		}
+		every_owned_planet = {
+			add_modifier = {
+				modifier = modifier_BA_Festival_operations_department_3
+				days = 1
+				time_multiplier = owner.value:num_BA_club_festival_buff_time
+			}
+		}
+	}
+	else = {
+		every_owned_planet = {
+			add_modifier = {
+				modifier = modifier_BA_Festival_operations_department_1
+				days = 1
+				time_multiplier = owner.value:num_BA_club_festival_buff_time
+			}
+		}
+	}
+	hidden_effect = {
+		set_saved_date = {
+			key = Festival_operations_department_cooldown
+			days_from_present = value:num_BA_club_festival_buff_time
+			expires = value:num_BA_club_festival_buff_time
+		}
+	}
 }
+
 option = {
     name = Festival_operations_department_prolong
     custom_tooltip = Festival_operations_department_prolong.tip
@@ -39,8 +79,8 @@ option = {
         if = {
             limit = {
                 check_variable = {
-                    which = Festival_operations_department_fes_time
-                    value >= 3600
+                    which = Festival_operations_department_fes_level
+                    value >= 10
                 }
             }
             custom_tooltip_fail = {
@@ -65,22 +105,23 @@ option = {
             resource_stockpile_compare = {
                 resource = consumer_goods
                 value >= 10
-                multiplier = Festival_operations_department_fes_time
+                multiplier = value:num_BA_club_festival_buff_time
             }
         }
     }
     add_resource = {
         consumer_goods = -10
-        multiplier = Festival_operations_department_fes_time
+        multiplier = value:num_BA_club_festival_buff_time
     }
     hidden_effect = {
         change_variable = {
-            which = Festival_operations_department_fes_time
-            value = 360
+            which = Festival_operations_department_fes_level
+            value = 1
         }
-        set_timed_country_flag = {
-            flag = Festival_operations_department_cooldown
-            days = Festival_operations_department_fes_time
-        }
+		set_saved_date = {
+			key = Festival_operations_department_cooldown
+			days_from_present = value:num_BA_club_festival_buff_time
+			expires = value:num_BA_club_festival_buff_time
+		}
     }
 }

@@ -32,9 +32,10 @@ option = {
         value = 1
     }
     hidden_effect = {
-        set_timed_country_flag = {
-            flag = BA_Foreclosure_decisions_cooldown
-            days = 1800
+        set_saved_date = {
+            key = BA_Foreclosure_decisions_cooldown
+            days_from_present = 1800
+            expires = 1800
         }
     }
 }

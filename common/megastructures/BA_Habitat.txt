@@ -530,10 +530,24 @@ BA_club_station_Festival_operations_department = {
 		}
 		upkeep = {
 			trigger = {
-				has_country_flag = Festival_operations_department_cooldown
+				owner = {
+					OR = {
+						has_country_flag = Festival_operations_department_cooldown
+						has_technology = tech_BA_SI_Hyakkiyako_G05
+					}
+				}
 			}
-			consumer_goods = 10
-			multiplier = trigger:count_owned_planet
+			consumer_goods = 1
+			multiplier = value:num_BA_club_festival_buff_upkeep_consumer_goods
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					has_technology = tech_BA_SI_Hyakkiyako_G05
+				}
+			}
+			sr_eligma = 1
+			multiplier = value:num_BA_club_festival_buff_upkeep_eligma
 		}
 	}
 	upgrade_from = {
