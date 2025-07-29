@@ -50,6 +50,7 @@ on_five_year_pulse_country = {
 	events = {
 		BA_Shittem.1921		#青辉石修复委托：提示
 		BA_rename.1002		#领袖重命名动作触发器
+		BA_rename.1005		#领袖重命名立绘修复触发器
 	}
 }
 
@@ -122,6 +123,16 @@ on_leader_fired = {
 on_leader_level_up = {
 	events = {
 		BA_rename.1101		#3级 添加个人特质
+	}
+}
+
+# This = Country
+# From = Species ( Post Modification )
+# FromFrom = Species ( Original )
+# Prev = Planet
+on_modification_complete = {
+	events = {
+		BA_rename.1005		#领袖重命名立绘修复触发器
 	}
 }
 

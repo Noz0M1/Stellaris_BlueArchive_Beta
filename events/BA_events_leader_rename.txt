@@ -92,13 +92,13 @@ country_event = {
 	}
 }
 
-#处理 新生成入池的领袖
+#处理新生成入池的领袖
 country_event = {
 	id = BA_rename.1004
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
-		has_country_flag = BA_leader_rename_activated
+		has_global_flag = BA_leader_rename_activated
 		from = {
 			species = {
 				BA_has_halo_organic = yes
@@ -111,9 +111,38 @@ country_event = {
 			BA_check_rename_flag = yes
 			#按命名标志命名
 			BA_rename_leader = yes
+			if = {
+				limit = {
+					BA_rename_special_check_1 = yes
+				}
+				BA_change_skin_trait = yes
+			}
 		}
 	}
 }
+
+#已存在领袖修复
+country_event = {
+	id = BA_rename.1005
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_global_flag = BA_leader_rename_activated
+		NOT = {
+			has_country_flag = BA_leader_rename_modification_action
+		}
+	}
+	immediate = {
+		set_timed_country_flag = {
+			flag = BA_leader_rename_modification_action
+			days = 5
+		}
+		BA_set_rename_fix_flag = yes
+		BA_iterate_rename_fix_flag = yes
+	}
+}
+
+
 
 #领袖3级添加特质
 country_event = {
@@ -132,9 +161,6 @@ country_event = {
 				BA_change_skin_trait = yes
 			}
 		}
-		# random_pool_leader = {
-		# 	limit = { leader_class = official }
-		# 	set_leader_flag = leader_BA_013 BA_rename_leader = yes }
 	}
 }
 

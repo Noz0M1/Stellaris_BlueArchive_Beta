@@ -1,5 +1,5 @@
 ##### 系统初始化
-#为所有领袖施加检测印记
+#为所有领袖施加初始操作标记 country
 BA_set_rename_flag = {
 	every_owned_leader = {
 		limit = {
@@ -38,7 +38,7 @@ BA_set_rename_flag = {
 	}
 }
 
-#遍历所有领袖，执行重命名 country
+#遍历所有初始操作标记领袖，执行重命名 country
 BA_iterate_rename_flag = {
 	optimize_memory
 	while = {
@@ -954,6 +954,112 @@ BA_rename_envoy = {
 	set_name = BA_envoy
 }
 
+##### 修复操作
+#为所有领袖施加修复操作标记 country
+BA_set_rename_fix_flag = {
+	every_owned_leader = {
+		limit = {
+			species = {
+				BA_has_halo_organic = yes
+			}
+		}
+		set_leader_flag = BA_rename_fix_target
+	}
+	every_pool_leader = {
+		limit = {
+			species = {
+				BA_has_halo_organic = yes
+			}
+		}
+		set_leader_flag = BA_rename_fix_target
+	}
+	every_envoy = {
+		limit = {
+			species = {
+				BA_has_halo_organic = yes
+			}
+		}
+		set_leader_flag = BA_rename_fix_target
+	}
+	# 重命名豁免
+	every_owned_leader = {
+		limit = {
+			OR = {
+				BA_leader_is_renamed = yes
+				is_same_value = owner.ruler
+				has_leader_flag = star_oath_ruler
+			}
+		}
+		remove_leader_flag = BA_rename_target
+	}
+}
+
+#遍历所有修复操作标记领袖，执行修复 country
+BA_iterate_rename_fix_flag = {
+	optimize_memory
+	while = {
+		limit = {
+			any_owned_leader = {
+				has_leader_flag = BA_rename_fix_target
+			}
+		}
+		random_owned_leader = {
+			limit = {
+				has_leader_flag = BA_rename_fix_target
+			}
+			remove_leader_flag = BA_rename_fix_target
+			#按命名标志命名
+			BA_rename_leader = yes
+			#移除特质并重新添加
+			if = {
+				limit = {
+					has_global_flag = BA_leader_rename_trait_activated
+				}
+				BA_remove_sp_trait = yes
+				BA_change_skin_trait = yes
+			}
+		}
+	}
+	while = {
+		limit = {
+			any_pool_leader = {
+				has_leader_flag = BA_rename_fix_target
+			}
+		}
+		random_pool_leader = {
+			limit = {
+				has_leader_flag = BA_rename_fix_target
+			}
+			remove_leader_flag = BA_rename_fix_target
+			#按命名标志命名
+			BA_rename_leader = yes
+			#移除特质并重新添加
+			if = {
+				limit = {
+					has_global_flag = BA_leader_rename_trait_activated
+				}
+				BA_remove_sp_trait = yes
+				BA_change_skin_trait = yes
+			}
+		}
+	}
+	while = {
+		limit = {
+			any_envoy = {
+				has_leader_flag = BA_rename_fix_target
+			}
+		}
+		random_envoy = {
+			limit = {
+				has_leader_flag = BA_rename_fix_target
+			}
+			remove_leader_flag = BA_rename_fix_target
+			#特使专用处理
+			BA_rename_envoy = yes
+		}
+	}
+}
+
 ##### 特质处理 001~159
 #为领袖添加社团特质
 BA_add_club_trait = {
@@ -1768,6 +1874,7 @@ BA_remove_sp_trait = {
 	# 标识
 	remove_leader_flag = BA_has_sp_trait_1
 	# 特质
+	remove_trait = leader_special_000
 	remove_trait = leader_special_001
 	remove_trait = leader_special_002
 	remove_trait = leader_special_003

@@ -1,5 +1,25 @@
 ﻿l_simp_chinese:
-########   内阁席位   ########
+########   用户界面   ########
+ MESSAGE_BA_NEW_SP_LEADER_TITLE: "领袖储备"
+ MESSAGE_BA_NEW_SP_LEADER_DESC: "$SP_NAME|B$加入了领袖储备，可在什亭之匣中招募为特殊领袖。"
+
+ ## 领袖名称事件 ##
+ BA_rename.1001.title: "领袖命名功能"
+ BA_rename.1001.desc: "这是§B碧蓝档案物种包§!内置的领袖立绘与名称统一功能的开关事件。开启该功能后，每隔10年自动统一化领袖的名称与立绘，并可以施加相应的专属特质。"
+ BA_rename.1001.on: "打开全部功能"
+ BA_rename.1001.on.tip: "每5年进行一次检测，统一§B基沃托斯学生§!领袖的名称与立绘。\n同时，§B基沃托斯学生§!领袖也可以获得专属的§Y特殊特质§!。"
+ BA_rename.1001.partial: "仅进行领袖名称统一"
+ BA_rename.1001.partial.tip: "每5年进行一次检测，统一§B基沃托斯学生§!领袖的名称与立绘。"
+ BA_rename.1001.off: "关闭所有功能"
+
+ BA_rename_fix:0 "立绘修复功能"
+ BA_rename_fix.tip:0 "如果因各种事件导致原本立绘与名称一致的领袖出现异常，或领袖特殊特质出现不匹配，可以激活此功能进行修复"
+ BA_rename_fix.re:0 "已修复了哦。"
+
+
+
+
+ ########   内阁席位   ########
  #首席科学家 -> 统括室长  国防部长 -> 防卫室长
  councilor_research_kivotos: "统括室行政官"
  councilor_research_kivotos_desc: "只向联邦学生会长负责，进行学园都市中各项工作的统筹工作，内容主要为研究与生活方面。"
@@ -18,8 +38,6 @@
  councilor_medic_kivotos_desc: "顾名思义，负责联邦学生会统筹医疗保健方面的事宜。"
 
 ########   特殊领袖   ########
- MESSAGE_BA_NEW_SP_LEADER_TITLE: "领袖储备"
- MESSAGE_BA_NEW_SP_LEADER_DESC: "$SP_NAME|B$加入了领袖储备，可在什亭之匣中招募为特殊领袖。"
  ###姬器人
  NAME_Aris: "天童爱丽丝"
  PHASE_Aris: "梆梆咔梆！爱丽丝得到了重要道具，数据库口令！事不宜迟，快点接入数据库……唔呣，这里是这样运作的呢……"
@@ -201,15 +219,6 @@
  leader_trait_custom_Iori_SP: "§R疾风怒涛§!"
  leader_trait_custom_Iori_SP_desc: "§B作为风纪委员会的突击队长，一旦发现违法校规的学生，伊织会立即利用压倒性的强大实力将其当场处罚。§!\n$GetIori.re$"
 
-
-######## 领袖名称事件 ########
- BA_rename.1001.title: "领袖命名功能"
- BA_rename.1001.desc: "这是§B碧蓝档案物种包§!内置的领袖立绘与名称统一功能的开关事件。开启该功能后，每隔10年自动统一化领袖的名称与立绘，并可以施加相应的专属特质。"
- BA_rename.1001.on: "打开全部功能"
- BA_rename.1001.on.tip: "每5年进行一次检测，统一§B基沃托斯学生§!领袖的名称与立绘。\n同时，§B基沃托斯学生§!领袖也可以获得专属的§Y特殊特质§!。"
- BA_rename.1001.partial: "仅进行领袖名称统一"
- BA_rename.1001.partial.tip: "每5年进行一次检测，统一§B基沃托斯学生§!领袖的名称与立绘。"
- BA_rename.1001.off: "关闭所有功能"
 
 ######## 领袖文本 ########
 ### 领袖姓名
