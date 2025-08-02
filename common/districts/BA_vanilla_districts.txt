@@ -1,4 +1,12 @@
 ####   ！此文件涉及原版修改
+@base_cost = 300
+@city_cost = 500
+@rw_cost = 1000
+@rw_cost_sr = 50
+@rw_maintenance = 5
+@rw_maintenance_sr = 2
+@rw_district_buildtime = 360
+
 district_city = {
 	base_buildtime = 480
 	is_capped_by_modifier = no

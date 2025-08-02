@@ -216,6 +216,9 @@ decision_SI_Hyakkiyako_G02 = {
 		tech_BA_SI_Hyakkiyako_G02
 	}
 	potential = {
+		NOT = {
+			has_deposit = d_SI_Hyakkiyako_G02
+		}
 	}
 	enactment_time = 360
 	resources = {
@@ -238,6 +241,9 @@ decision_SI_Hyakkiyako_G03 = {
 		tech_BA_SI_Hyakkiyako_G03
 	}
 	potential = {
+		NOT = {
+			has_deposit = d_SI_Hyakkiyako_G03
+		}
 	}
 	enactment_time = 360
 	resources = {
@@ -260,6 +266,9 @@ decision_SI_Hyakkiyako_G04 = {
 		tech_BA_SI_Hyakkiyako_G04
 	}
 	potential = {
+		NOT = {
+			has_deposit = d_SI_Hyakkiyako_G04
+		}
 	}
 	enactment_time = 360
 	resources = {

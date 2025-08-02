@@ -17,6 +17,10 @@ BA_club_found_selected_club = {
 			0 = {
 				#游戏部
 				modifier = {
+					set = 0
+					has_country_flag = BA_Game_development_department
+				}
+				modifier = {
 					add = 1000
 					OR = {
 						BA_set_random_club = yes
@@ -37,6 +41,10 @@ BA_club_found_selected_club = {
 			}
 			0 = {
 				#工程师部
+				modifier = {
+					set = 0
+					has_country_flag = BA_Engineering_club
+				}
 				modifier = {
 					add = 1000
 					OR = {
@@ -59,6 +67,10 @@ BA_club_found_selected_club = {
 			0 = {
 				#真理部
 				modifier = {
+					set = 0
+					has_country_flag = BA_Veritas
+				}
+				modifier = {
 					add = 1000
 					OR = {
 						BA_set_random_club = yes
@@ -79,6 +91,10 @@ BA_club_found_selected_club = {
 			}
 			0 = {
 				#对策委员会
+				modifier = {
+					set = 0
+					has_country_flag = BA_Foreclosure_task_force
+				}
 				modifier = {
 					add = 1000
 					OR = {
@@ -101,6 +117,10 @@ BA_club_found_selected_club = {
 			0 = {
 				#茶会
 				modifier = {
+					set = 0
+					has_country_flag = BA_Teaparty
+				}
+				modifier = {
 					add = 1000
 					OR = {
 						BA_set_random_club = yes
@@ -121,6 +141,10 @@ BA_club_found_selected_club = {
 			}
 			0 = {
 				#温泉开发部
+				modifier = {
+					set = 0
+					has_country_flag = BA_Hotspring_development_department
+				}
 				modifier = {
 					add = 1000
 					OR = {
@@ -143,6 +167,10 @@ BA_club_found_selected_club = {
 			0 = {
 				#祭典运营委员会
 				modifier = {
+					set = 0
+					has_country_flag = BA_Festival_operations_department
+				}
+				modifier = {
 					add = 1000
 					OR = {
 						BA_set_random_club = yes
@@ -164,6 +192,10 @@ BA_club_found_selected_club = {
 			0 = {
 				#玄武商会
 				modifier = {
+					set = 0
+					has_country_flag = BA_Xuanwu_promenade
+				}
+				modifier = {
 					add = 1000
 					OR = {
 						BA_set_random_club = yes
@@ -184,6 +216,10 @@ BA_club_found_selected_club = {
 			}
 			0 = {
 				#出版部
+				modifier = {
+					set = 0
+					has_country_flag = BA_Publishing_department
+				}
 				modifier = {
 					add = 1000
 					OR = {

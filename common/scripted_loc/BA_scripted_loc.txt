@@ -1197,7 +1197,7 @@ defined_text = {
 	text = {
 		trigger = {
 			owner = {
-				has_technology = tech_food_processing_1
+				has_technology = tech_luxuries_1
 			}
 		}
 		localization_key = ap_Our_story_stage3_prerequisites_C_success
@@ -1206,7 +1206,7 @@ defined_text = {
 		trigger = {
 			owner = {
 				NOT = {
-					has_technology = tech_food_processing_1
+					has_technology = tech_luxuries_1
 				}
 			}
 		}
