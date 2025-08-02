@@ -942,10 +942,9 @@ tech_BA_SI_Trinity_A01 = {
 	}
 	weight = 0
 	modifier = {
-		country_unity_produces_mult = 0.05
-		planet_jobs_unity_produces_mult = 0.05
-		council_agenda_progress_speed = 0.05
+		planet_jobs_unity_produces_mult = 0.2
 		empire_size_systems_mult = -0.1
+		council_agenda_progress_speed = 0.15
 	}
 }
 
@@ -963,9 +962,9 @@ tech_BA_SI_Trinity_A02 = {
 	}
 	weight = 0
 	modifier = {
-		pop_category_rulers_unity_produces_add = 5
-		BA_staff_pop_unity_produces_add = 1
-		council_agenda_progress_speed = 0.05
+		pop_category_rulers_unity_produces_add = 8
+		pop_category_specialists_unity_produces_add = 0.5
+		council_agenda_progress_speed = 0.15
 	}
 }
 
@@ -983,11 +982,9 @@ tech_BA_SI_Trinity_A03 = {
 	}
 	weight = 0
 	modifier = {
-		envoys_add = 4
-		envoy_improve_relations_mult = 1
-		envoy_harm_relations_mult = 1
-		intel_decryption_add = 10
-		espionage_operation_difficulty_add = -5
+		diplo_weight_mult = 0.3
+		council_agenda_finishing_effect_duration_mult = 0.5
+		council_agenda_progress_speed = 0.25
 	}
 }
 
@@ -1005,11 +1002,11 @@ tech_BA_SI_Trinity_A04 = {
 	}
 	weight = 0
 	modifier = {
-		planet_artisans_produces_mult = 0.2
-		planet_artisans_upkeep_mult = -0.05
-		planet_metallurgists_produces_mult = -0.25
-		planet_farmers_produces_mult = 0.3
-		council_agenda_progress_speed = 0.05
+		planet_artisans_produces_mult = 0.3
+		planet_artisans_upkeep_mult = -0.1
+		planet_metallurgists_produces_mult = -0.3
+		pop_cat_worker_bonus_workforce_mult = 0.3
+		council_agenda_progress_speed = 0.15
 	}
 }
 
@@ -1027,9 +1024,9 @@ tech_BA_SI_Trinity_A05 = {
 	}
 	weight = 0
 	modifier = {
-		planet_bureaucrats_unity_produces_add = 5
-		country_unity_produces_mult = 0.1
-		council_agenda_progress_speed = 0.1
+		BA_staff_pop_unity_produces_add = 8
+		country_unity_produces_mult = 0.2
+		council_agenda_progress_speed = 0.15
 	}
 }
 
@@ -1047,10 +1044,10 @@ tech_BA_SI_Trinity_A06 = {
 	}
 	weight = 0
 	modifier = {
-		planet_jobs_unity_produces_mult = 0.2
-		council_agenda_progress_speed = 0.25
+		planetary_ascension_effect_mult = 0.2
 		country_government_civic_points_add = 1
-		pop_category_rulers_upkeep_mult = 0.2
+		planet_jobs_upkeep_mult = 0.1
+		council_agenda_progress_speed = 0.15
 	}
 }
 
@@ -1069,8 +1066,8 @@ tech_BA_SI_Trinity_B01 = {
 	weight = 0
 	modifier = {
 		starbase_shipyard_build_speed_mult = 0.1
-		planet_jobs_produces_mult = 0.1
-		all_technology_research_speed = 0.1
+		all_technology_research_speed = 0.15
+		bonus_pop_growth_mult = 0.1
 	}
 }
 
@@ -1088,10 +1085,11 @@ tech_BA_SI_Trinity_B02 = {
 	}
 	weight = 0
 	modifier = {
-		country_alloys_produces_mult = 0.1
-		planet_metallurgists_produces_mult = 0.2
+		country_alloys_produces_mult = 0.2
+		planet_metallurgists_alloys_produces_add = 1
 		country_consumer_goods_produces_mult = -0.1
-		planet_artisans_produces_mult = -0.1
+		planet_artisans_consumer_goods_produces_add = -0.5
+		bonus_pop_growth_mult = 0.1
 	}
 }
 
@@ -1109,10 +1107,11 @@ tech_BA_SI_Trinity_B03 = {
 	}
 	weight = 0
 	modifier = {
-		starbase_shipyard_build_speed_mult = 0.2
-		starbase_shipyard_build_cost_mult = -0.3
-		ships_upkeep_mult = -0.3
-		country_naval_cap_mult = 0.2
+		starbase_shipyard_build_speed_mult = 0.3
+		ships_upkeep_mult = -0.5
+		starbase_shipyard_build_cost_mult = -0.2
+		ship_speed_mult = 0.15
+		bonus_pop_growth_mult = 0.15
 	}
 }
 
@@ -1130,10 +1129,11 @@ tech_BA_SI_Trinity_B04 = {
 	}
 	weight = 0
 	modifier = {
-		starbase_shipyard_build_speed_mult = 0.2
-		starbase_modules_cost_mult = -0.3
-		starbase_module_build_speed_mult = 1
-		starbases_upkeep_mult = -0.5
+		starbase_upgrade_speed_mult = 0.5
+		shipclass_starbase_build_cost_mult = -0.3
+		starbase_module_build_speed_mult = 1.5
+		starbases_upkeep_mult = -0.3
+		megastructure_build_speed_mult = 0.3
 	}
 }
 
@@ -1153,8 +1153,8 @@ tech_BA_SI_Trinity_B05 = {
 	modifier = {
 		planet_BA_districts_military_factory_build_speed_mult = 1
 		planet_metallurgists_produces_mult = 1
-		planet_metallurgists_upkeep_mult = 0.7
-		planet_stability_add = -5
+		planet_metallurgists_upkeep_mult = 0.3
+		planet_stability_add = -10
 	}
 }
 
@@ -1172,9 +1172,10 @@ tech_BA_SI_Trinity_B06 = {
 	}
 	weight = 0
 	modifier = {
-		starbase_shipyard_build_speed_mult = 1
-		planet_jobs_produces_mult = 0.3
-		planet_jobs_upkeep_mult = 0.2
+		starbase_shipyard_build_speed_mult = 1.5
+		country_naval_cap_mult = 0.4
+		planet_jobs_produces_mult = 0.5
+		planet_jobs_upkeep_mult = 0.4
 	}
 }
 
@@ -1192,11 +1193,10 @@ tech_BA_SI_Trinity_C01 = {
 	}
 	weight = 0
 	modifier = {
-		planet_jobs_produces_mult = 0.05
-		shipclass_starbase_build_cost_mult = -0.1
-		shipclass_colonizer_build_cost_mult = -0.3
-		empire_size_systems_mult = -0.1
-		empire_size_mult = -0.02
+		planet_jobs_produces_mult = 0.1
+		country_starbase_influence_cost_mult = -0.75
+		empire_size_pops_mult = -0.1
+		empire_size_mult = -0.05
 	}
 }
 
@@ -1215,10 +1215,9 @@ tech_BA_SI_Trinity_C02 = {
 	weight = 0
 	modifier = {
 		planet_colony_development_speed_mult = 1
-		planet_district_city_build_speed_mult = 2
-		planet_jobs_upkeep_mult = 0.05
-		empire_size_colonies_mult = -0.1
-		empire_size_mult = -0.04
+		planet_building_build_speed_mult = 0.5
+		empire_size_pops_mult = -0.1
+		empire_size_mult = -0.05
 	}
 }
 
@@ -1237,10 +1236,10 @@ tech_BA_SI_Trinity_C03 = {
 	weight = 0
 	modifier = {
 		bonus_pop_growth_mult = 0.2
-		planet_jobs_produces_mult = 0.1
-		planet_jobs_upkeep_mult = 0.05
+		planet_jobs_produces_mult = 0.15
+		planet_jobs_upkeep_mult = 0.15
 		empire_size_pops_mult = -0.1
-		empire_size_mult = -0.06
+		empire_size_mult = -0.05
 	}
 }
 
@@ -1263,8 +1262,7 @@ tech_BA_SI_Trinity_C04 = {
 		starbase_shipyard_build_speed_mult = 0.2
 		planet_buildings_cost_mult = 0.2
 		planet_districts_cost_mult = 0.2
-		empire_size_districts_mult = -0.1
-		empire_size_mult = -0.08
+		empire_size_mult = -0.05
 	}
 }
 
@@ -1287,7 +1285,7 @@ tech_BA_SI_Trinity_C05 = {
 		megastructure_build_speed_mult = 2
 		country_megastructure_build_cap_add = 2
 		megastructures_cost_mult = 0.3
-		empire_size_mult = -0.1
+		empire_size_mult = -0.05
 	}
 }
 
@@ -1307,6 +1305,7 @@ tech_BA_SI_Trinity_C06 = {
 	modifier = {
 		megastructures_produces_mult = 0.2
 		colony_start_urban_districts_add = 2
+		empire_size_colonies_mult = -0.2
 	}
 }
 

@@ -4411,10 +4411,15 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				has_country_flag = close_BA_SI_Millennium_G11_message
+				has_country_flag = close_BA_SI_Millennium_C03_message
 			}
 			every_owned_leader = {
 				remove_all_negative_traits = yes
+			}
+			create_message = {
+				type = BA_SI_ACTIVATED
+				localization = MESSAGE_BA_SI_ACTIVATED_Millennium_C03_DESC
+				days = @toast_message_days
 			}
 		}
 		else = {
@@ -4442,7 +4447,7 @@ country_event = {
 	option = {
 		name = BA_Shittem.4031.a
 		hidden_effect = {
-			set_country_flag = close_BA_SI_Millennium_G11_message
+			set_country_flag = close_BA_SI_Millennium_C03_message
 		}
 	}
 	after = {
@@ -4453,9 +4458,29 @@ country_event = {
 }
 
 ### 圣三一
+#A03-议程完成后所有领袖获得1000经验
+country_event = {
+	id = BA_Shittem.4040
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_technology = tech_BA_SI_Trinity_A03
+	}
+	immediate = {
+		every_owned_leader = {
+			add_experience = 1000
+		}
+		create_message = {
+			type = BA_SI_ACTIVATED
+			localization =  MESSAGE_BA_SI_ACTIVATED_Trinity_A03_DESC
+			days = @toast_message_days
+		}
+	}
+}
+
 #C06-新殖民星球-星空彼端的乐土
 planet_event = {
-	id = BA_Shittem.4040
+	id = BA_Shittem.4041
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {

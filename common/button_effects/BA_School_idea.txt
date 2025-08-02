@@ -7997,12 +7997,6 @@ button_effect_BA_SI_Shanhaijing_A01_lock = {
 				COST = 48
 			}
 			custom_tooltip = {
-				fail_text = BA_mutual_exclusion_events
-				NOT = {
-					has_technology = tech_BA_SI_Shanhaijing_B01
-				}
-			}
-			custom_tooltip = {
 				fail_text = need_preposition_ideas
 				has_technology = tech_BA_SI_Shanhaijing_G01
 			}
@@ -8308,12 +8302,6 @@ button_effect_BA_SI_Shanhaijing_B01_lock = {
 			BA_SI_cooldown_trigger = yes
 			BA_SI_time_limit_trigger = { 
 				COST = 48
-			}
-			custom_tooltip = {
-				fail_text = BA_mutual_exclusion_events
-				NOT = {
-					has_technology = tech_BA_SI_Shanhaijing_A01
-				}
 			}
 			custom_tooltip = {
 				fail_text = need_preposition_ideas

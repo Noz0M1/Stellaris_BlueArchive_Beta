@@ -79,6 +79,15 @@ on_war_beginning = {
 	}
 }
 
+# Executed when a country activates an agenda
+# THIS = country
+on_agenda_finished = {
+	events = {
+		BA_Shittem.4040
+	}
+}
+
+
 # This = destroyed country
 # From = optional, destroyer (country)
 on_country_destroyed = {
@@ -288,7 +297,7 @@ on_colonized = {
 		BA_origin.2110		#居住站殖民完成
 		BA_Shittem.3201		#废墟球殖民完成
 		BA_Shittem.4011		#学园理念 阿拜多斯B01
-		BA_Shittem.4040		#学园理念 圣三一C06
+		BA_Shittem.4041		#学园理念 圣三一C06
 	}
 }
 

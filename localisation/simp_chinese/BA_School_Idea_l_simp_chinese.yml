@@ -1,8 +1,12 @@
 ﻿l_simp_chinese:
  BA_SI: "学园理念"
 
- MESSAGE_BA_SI_READY: "领袖储备"
+ MESSAGE_BA_SI_READY: "学园理念就绪"
  MESSAGE_BA_SI_READY_DESC: "我们已经积攒了超过5点£job_BA_dont_be_crazy_here£§B$BA_SI$点数§!，请前往什亭之匣激活$BA_SI$"
+
+ MESSAGE_BA_SI_ACTIVATED: "学园理念效果已激活"
+ MESSAGE_BA_SI_ACTIVATED_Trinity_A03_DESC: "§Y$SI_Trinity_A03$§!已激活，为所有领袖提供§C1000经验值§!。"
+ MESSAGE_BA_SI_ACTIVATED_Millennium_C03_DESC: "§Y$SI_Millennium_C03$§!已激活，清除所有领袖的§R负面特质§!。"
 
  BA_Shittem.4010.title: "$BA_SI$"
  BA_Shittem.4010.desc: "老师，我们已经积攒了许多£job_BA_dont_be_crazy_here£§B$BA_SI$点数§!了！不同的学园有着不同的对于统治与联合的看法，您可以点选§B$BA_SI$§!来将她们的点子采纳为国策，获得巨大的增益！老师，学生们的智慧也是有许多可取之处的，不要白白消磨她们的热情才对吧。"
@@ -279,7 +283,7 @@
  SI_Millennium_C02_effect: "\n§R与§!$SI_Millennium_C03$§R互斥§!\n效果：\n立即获得大量£unity£§Y凝聚力§!，数额相当于3倍的每月产出\n£stability£$MOD_PLANET_STABILITY_ADD$: §G+5§!\n$mod_country_unity_produces_mult$: §G+15%§!\n§B游戏开发部§!的社团建筑产出的凝聚力翻倍。\n "
  SI_Millennium_C02_tip: "§C$SI_Millennium_C02$§!\n$SI_Millennium_C02_desc$\n$SI_Millennium_C02_effect$"
 
- SI_Millennium_C03: "搭建专用计算平台"
+ SI_Millennium_C03: "专用计算平台"
  SI_Millennium_C03_desc: "研讨会希望将这个模块用于帝国的领袖专用的工作平台，以提升帝国的整体行政效率。 "
  SI_Millennium_C03_effect: "\n§R与§!$SI_Millennium_C02$§R互斥§!\n效果：\n$MOD_LEADER_SPECIES_EXP_GAIN$: §G+350%§!\n当前所有§Y$scientist$、$commander$、$official$§!领袖的等级§G提升1级§!\n§Y每5年§!，为所有领袖清除普通的§R负面特质§!\n "
  SI_Millennium_C03_tip: "§C$SI_Millennium_C03$§!\n$SI_Millennium_C03_desc$\n$SI_Millennium_C03_effect$"
@@ -296,94 +300,94 @@
  ### 左线
  SI_Trinity_A01: "菲利乌斯主持"
  SI_Trinity_A01_desc: "菲利乌斯派曾经主导了伊甸条约的签订，虽然结果不那么顺遂人意，但她们的展示出的外交才能无可挑剔。"
- SI_Trinity_A01_effect: "\n§R与§!$SI_Trinity_B01$§R互斥§!\n§R与§!$SI_Trinity_C01$§R互斥§!\n效果：\n每月£unity£凝聚力: §G+5%§!\n£job£岗位生产的凝聚力: §G+5%§!\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$: §G+5%§!\n$MOD_EMPIRE_SIZE_SYSTEMS_MULT$: §G-10%§!\n "
+ SI_Trinity_A01_effect: "\n§R与§!$SI_Trinity_B01$、$SI_Trinity_C01$§R互斥§!\n效果：\n$mod_planet_jobs_unity_produces_mult$: §G+20%§!\n$MOD_EMPIRE_SIZE_SYSTEMS_MULT$: §G-10%§!\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$: §G+15%§!\n "
  SI_Trinity_A01_tip: "§C$SI_Trinity_A01$§!\n$SI_Trinity_A01_desc$\n$SI_Trinity_A01_effect$"
 
  SI_Trinity_A02: "去中心化官僚"
  SI_Trinity_A02_desc: "将各地官僚打散并重新整合为茶会的下属机构，防止其中相互勾连。"
- SI_Trinity_A02_effect: "\n效果：\n§H解锁学园理念议程:§! $council_agenda_agenda_BA_SI_Trinity_A02_name$\n£pop_cat_ruler£$pop_cat_ruler$产出的£unity£凝聚力: §G+5§!\n$mod_BA_staff_pop_unity_produces_add$: §G+1§!\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$: §G+5%§!\n "
+ SI_Trinity_A02_effect: "\n效果：\n§H解锁学园理念议程:§! $council_agenda_agenda_BA_SI_Trinity_A02_name$\n$mod_pop_category_rulers_unity_produces_add$: §G+8§!\n$mod_pop_category_specialists_unity_produces_add$: §G+0.5§!\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$: §G+15%§!\n "
  SI_Trinity_A02_tip: "§C$SI_Trinity_A02$§!\n$SI_Trinity_A02_desc$\n$SI_Trinity_A02_effect$"
 
  SI_Trinity_A03: "圣殿使团"
  SI_Trinity_A03_desc: "菲利乌斯派十分重视使团，她们清楚使者在帝国间的纸醉金迷中究竟扮演了什么样的角色。"
- SI_Trinity_A03_effect: "\n效果：\n可用特使: §G+4§!\n$MOD_ENVOY_IMPROVE_RELATIONS_MULT$: §G+100%§!\n$MOD_ENVOY_HARM_RELATIONS_MULT$: §G+100%§!\n$MOD_INTEL_DECRYPTION_ADD$: §G+10§!\n$MOD_ESPIONAGE_OPERATION_DIFFICULTY_ADD$: §G-5§!\n "
+ SI_Trinity_A03_effect: "\n效果：\n每当有§Y议程§!启动时，所有领袖获得§C1000经验值§!\n$MOD_DIPLO_WEIGHT_MULT$: §G+0.3§!\n$MOD_COUNCIL_AGENDA_FINISHING_EFFECT_DURATION_MULT$: §G+0.5%§!\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$: §G+25%§!\n "
  SI_Trinity_A03_tip: "§C$SI_Trinity_A03$§!\n$SI_Trinity_A03_desc$\n$SI_Trinity_A03_effect$"
 
  SI_Trinity_A04: "下午茶计划"
  SI_Trinity_A04_desc: "用下午茶等小小的福利做奖品，通过无数的小型社交会让那些上下游合作者熟络起来，旨在向学生们展示合作协同的魅力。"
- SI_Trinity_A04_effect: "\n效果：\n§H解锁学园理念议程:§! $council_agenda_agenda_BA_SI_Trinity_A04_name$\n£job_artisan£工匠产出: §G+20%§!\n£job_artisan£工匠维护费: §G-5%§!\n£job_foundry£冶金师产出: §R-25%§!\n£job_farmer£农夫产出: §G+30%§!\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$: §G+5%§!\n "
+ SI_Trinity_A04_effect: "\n效果：\n§H解锁学园理念议程:§! $council_agenda_agenda_BA_SI_Trinity_A04_name$\n£job_artisan£工匠产出: §G+30%§!\n£job_artisan£工匠维护费: §G-10%§!\n£job_foundry£冶金师产出: §R-30%§!\n$mod_pop_cat_worker_bonus_workforce_mult$: §G+30%§!\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$: §G+15%§!\n "
  SI_Trinity_A04_tip: "§C$SI_Trinity_A04$§!\n$SI_Trinity_A04_desc$\n$SI_Trinity_A04_effect$"
 
  SI_Trinity_A05: "统括室协作"
  SI_Trinity_A05_desc: "将统括室和茶会各自的工作互相交换一些，发挥AI行政助手的最大潜能，并尽可能杜绝外行指导内行的现象。"
- SI_Trinity_A05_effect: "\n效果：\n$mod_planet_bureaucrats_unity_produces_add$: §G+5§!\n每月£unity£凝聚力: §G+10%§!\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$: §G+10%§!\n"
+ SI_Trinity_A05_effect: "\n效果：\n$mod_BA_staff_pop_unity_produces_add$: §G+5§!\n$mod_country_unity_produces_mult$: §G+20%§!\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$: §G+15%§!\n"
  SI_Trinity_A05_tip: "§C$SI_Trinity_A05$§!\n$SI_Trinity_A05_desc$\n$SI_Trinity_A05_effect$"
 
  SI_Trinity_A06: "再会，朋友们"
  SI_Trinity_A06_desc: "“即使是最亲密的朋友，在这广袤的星空中也难免天各一方。但即使相隔数万光年，我们仍然可以心念彼此，并为同一个理想奋战。”"
- SI_Trinity_A06_effect: "\n效果：\n$mod_planet_jobs_unity_produces_mult$: §G+20%§!\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$: §G+25%§!\n$MOD_COUNTRY_GOVERNMENT_CIVIC_POINTS_ADD$: §G+1§!\n$mod_pop_category_rulers_upkeep_mult$: §R+20%§!\n "
+ SI_Trinity_A06_effect: "\n效果：\n$MOD_PLANETARY_ASCENSION_EFFECT_MULT$: §G+20%§!\n$MOD_COUNTRY_GOVERNMENT_CIVIC_POINTS_ADD$: §G+1§!\n$mod_planet_jobs_upkeep_mult$: §R+10%§!\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$: §G+15%§! "
  SI_Trinity_A06_tip: "§C$SI_Trinity_A06$§!\n$SI_Trinity_A06_desc$\n$SI_Trinity_A06_effect$"
 
  ### 中线
  SI_Trinity_B01: "帕特尔主持"
  SI_Trinity_B01_desc: "帕特尔派崇尚以武力解决争端，虽然她们的领袖丧失了部分权威，随着与外星文明的接触，她们的影响力反而有增无减。"
- SI_Trinity_B01_effect: "\n§R与§!$SI_Trinity_A01$§R互斥§!\n§R与§!$SI_Trinity_C01$§R互斥§!\n效果：\n舰船建造速度: §G+10%§!\n$mod_planet_jobs_produces_mult$: §G+10%§!\n研究速度: §G+10%§!\n "
+ SI_Trinity_B01_effect: "\n§R与§!$SI_Trinity_A01$、$SI_Trinity_C01$§R互斥§!\n效果：\n$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$: §G+10%§!\n$RESEARCH_EFFICIENCY$: §G+15%§!\n$MOD_BONUS_POP_GROWTH_MULT$: §G+10%§!\n "
  SI_Trinity_B01_tip: "§C$SI_Trinity_B01$§!\n$SI_Trinity_B01_desc$\n$SI_Trinity_B01_effect$"
 
  SI_Trinity_B02: "钢铁铸成的摇篮"
  SI_Trinity_B02_desc: "在浩瀚星空面前，基沃托斯如同一个好奇的婴儿。即使现在我们不值一提，终有一天目光所及之处都将被我们征服。"
- SI_Trinity_B02_effect: "\n效果：\n$alloys_with_icon$产出: §G+10%§!\n£job_foundry£冶金师产出: §G+20%§!\n$consumer_goods_with_icon$产出: §R-10%§!\n£job_artisan£工匠产出: §R-10%§!\n "
+ SI_Trinity_B02_effect: "\n效果：\n$mod_country_alloys_produces_mult$: §G+20%§!\n$mod_planet_metallurgists_alloys_produces_add$: §G+1§!\n$mod_country_consumer_goods_produces_mult$: §R-10%§!\n$mod_planet_artisans_consumer_goods_produces_add$: §R-0.5§!\n$MOD_BONUS_POP_GROWTH_MULT$: §G+10%§!\n "
  SI_Trinity_B02_tip: "§C$SI_Trinity_B02$§!\n$SI_Trinity_B02_desc$\n$SI_Trinity_B02_effect$"
 
  SI_Trinity_B03: "启程的哨音"
  SI_Trinity_B03_desc: "一艘艘飞船射向天空，如同传说中的勇者背起他的剑，迈出旅途的第一步。不同之处在于，我们不是向着地平线行进，而是将其甩在身后。"
- SI_Trinity_B03_effect: "\n效果：\n舰船建造速度: §G+20%§!\n造舰费用: §G-30%§!\n舰船维护费: §G-30%§!\n$MOD_COUNTRY_NAVAL_CAP_MULT$: §G+20%§!\n "
+ SI_Trinity_B03_effect: "\n效果：\n$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$: §G+30%§!\n$mod_ships_upkeep_mult$: §G-50%§!\n$MOD_STARBASE_SHIPYARD_BUILD_COST_MULT$: §G-20%§!\n$MOD_SHIP_SPEED_MULT$: §G+15%§!\n$MOD_BONUS_POP_GROWTH_MULT$: §G+15%§!\n "
  SI_Trinity_B03_tip: "§C$SI_Trinity_B03$§!\n$SI_Trinity_B03_desc$\n$SI_Trinity_B03_effect$"
 
  SI_Trinity_B04: "无垢之土"
- SI_Trinity_B04_desc: "我们在星空中的家，曾经承载过无数的幻想。但还远远不够，我们自己就可以将我们的幻想变为现实。"
- SI_Trinity_B04_effect: "\n效果：\n恒星基地建造花费: §G-30%§!\n恒星基地模块花费: §G-50%§!\n恒星基地模块建造速度: §G+100%§!\n恒星基地维护费: §G-50%§!\n "
+ SI_Trinity_B04_desc: "我们在星空中的家曾经承载过无数的幻想。但还远远不够，我们自己就可以将我们的幻想变为现实。"
+ SI_Trinity_B04_effect: "\n效果：\n$MOD_STARBASE_UPGRADE_SPEED_MULT$: §G+50%§!\n$mod_shipclass_starbase_build_cost_mult$: §G-30%§!\n$MOD_STARBASE_MODULE_BUILD_SPEED_MULT$: §G+150%§!\n$mod_starbases_upkeep_mult$: §G-30%§!\n$MOD_MEGASTRUCTURE_BUILD_SPEED_MULT$: §G+30%§!\n "
  SI_Trinity_B04_tip: "§C$SI_Trinity_B04$§!\n$SI_Trinity_B04_desc$\n$SI_Trinity_B04_effect$"
 
  SI_Trinity_B05: "倒转的地平线"
  SI_Trinity_B05_desc: "既然我们的眼中满是星辰的光芒，就绝对不能让曾经包容一切的大地成为了我们的束缚。"
- SI_Trinity_B05_effect: "\n效果：\n$mod_planet_BA_districts_military_factory_build_speed_mult$: §G+100%§!\n£job_foundry£冶金师产出: §G+100%§!\n£job_foundry£冶金师维护费: §R+70%§!\n£stability£$MOD_PLANET_STABILITY_ADD$: §R-5§!\n "
+ SI_Trinity_B05_effect: "\n效果：\n$mod_planet_BA_districts_military_factory_build_speed_mult$: §G+100%§!\n$mod_planet_metallurgists_produces_mult$: §G+100%§!\n$mod_planet_metallurgists_upkeep_mult$: §R+30%§!\n£stability£$MOD_PLANET_STABILITY_ADD$: §R-10§!\n "
  SI_Trinity_B05_tip: "§C$SI_Trinity_B05$§!\n$SI_Trinity_B05_desc$\n$SI_Trinity_B05_effect$"
 
  SI_Trinity_B06: "如星辰般闪耀"
  SI_Trinity_B06_desc: "如同燃烧的恒星般，我们化平平无奇为闪耀之物，在这宇宙中，再也不会有任何文明能够比我们更加耀眼。"
- SI_Trinity_B06_effect: "\n效果：\n舰船建造速度: §G+100%§!\n$mod_planet_jobs_produces_mult$: §G+30%§!\n岗位维护费: §R+20%§!\n "
+ SI_Trinity_B06_effect: "\n效果：\n$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$: §G+150%§!\n$MOD_COUNTRY_NAVAL_CAP_MULT$: §G+40%§!\n$mod_planet_jobs_produces_mult$: §G+50%§!\n$mod_planet_jobs_upkeep_mult$: §R+40%§!\n "
  SI_Trinity_B06_tip: "§C$SI_Trinity_B06$§!\n$SI_Trinity_B06_desc$\n$SI_Trinity_B06_effect$"
 
  ### 右线
  SI_Trinity_C01: "圣可托斯主持"
  SI_Trinity_C01_desc: "圣可托斯派持身中立但在野心上毫不逊色，相比当下和短期操作，她们对更远的未来更加关心。"
- SI_Trinity_C01_effect: "\n§R与§!$SI_Trinity_A01$§R互斥§!\n§R与§!$SI_Trinity_B01$§R互斥§!\n效果：\n$mod_planet_jobs_produces_mult$: §G+5%§!\n$mod_shipclass_starbase_build_cost_mult$: §G-10%§!\n$mod_shipclass_colonizer_build_cost_mult$: §G-30%§!\n$MOD_EMPIRE_SIZE_SYSTEMS_MULT$: §G-10%§!\n帝国规模: §G-2%§!\n "
+ SI_Trinity_C01_effect: "\n§R与§!$SI_Trinity_A01$、$SI_Trinity_B01$§R互斥§!\n效果：\n$mod_planet_jobs_produces_mult$: §G+5%§!\n$mod_shipclass_starbase_build_cost_mult$: §G-10%§!\n$mod_shipclass_colonizer_build_cost_mult$: §G-30%§!\n$MOD_EMPIRE_SIZE_SYSTEMS_MULT$: §G-10%§!\n帝国规模: §G-2%§!\n "
  SI_Trinity_C01_tip: "§C$SI_Trinity_C01$§!\n$SI_Trinity_C01_desc$\n$SI_Trinity_C01_effect$"
 
  SI_Trinity_C02: "城市扩张法"
  SI_Trinity_C02_desc: "规划混乱的城市注定只能繁华一时，无法成长为超级大城。"
- SI_Trinity_C02_effect: "\n效果：\n$MOD_PLANET_COLONY_DEVELOPMENT_SPEED_MULT$: §G+100%§!\n$mod_planet_district_city_build_speed_mult$: §G+200%§!\n$mod_planet_jobs_upkeep_mult$: §R+5%§!\n$MOD_EMPIRE_SIZE_COLONIES_MULT$: §G-10%§!\n帝国规模: §G-4%§!\n "
+ SI_Trinity_C02_effect: "\n效果：\n$mod_planet_jobs_produces_mult$: §G+10%§!\n$MOD_COUNTRY_STARBASE_INFLUENCE_COST_MULT$: §G-75%§!\n$MOD_EMPIRE_SIZE_POPS_MULT$: §G-10%§!\n$MOD_EMPIRE_SIZE_MULT$: §G-5%§!\n "
  SI_Trinity_C02_tip: "§C$SI_Trinity_C02$§!\n$SI_Trinity_C02_desc$\n$SI_Trinity_C02_effect$"
 
  SI_Trinity_C03: "学籍档案部"
  SI_Trinity_C03_desc: "档案管理概念的产生可以追溯至文明肇始，在人口爆炸的当今更加不能忽视。"
- SI_Trinity_C03_effect: "\n效果：\n$MOD_BONUS_POP_GROWTH_MULT$: §G+20%§!\n$mod_planet_jobs_produces_mult$: §G+10%§!\n$mod_planet_jobs_upkeep_mult$: §R+5%§!\n$MOD_EMPIRE_SIZE_POPS_MULT$: §G-20%§!\n帝国规模: §G-6%§!\n "
+ SI_Trinity_C03_effect: "\n效果：\n$MOD_BONUS_POP_GROWTH_MULT$: §G+20%§!\n$mod_planet_jobs_produces_mult$: §G+15%§!\n$mod_planet_jobs_upkeep_mult$: §R+15%§!\n$MOD_EMPIRE_SIZE_POPS_MULT$: §G-10%§!\n$MOD_EMPIRE_SIZE_MULT$: §G-5%§!\n "
  SI_Trinity_C03_tip: "§C$SI_Trinity_C03$§!\n$SI_Trinity_C03_desc$\n$SI_Trinity_C03_effect$"
 
  SI_Trinity_C04: "星际物流预测"
  SI_Trinity_C04_desc: "即使拥有FTL技术，行星间的货物运输依然需要跨越十分遥远的距离，这其中有许多的细节值得我们仔细调控。"
- SI_Trinity_C04_effect: "\n效果：\n$MOD_PLANET_BUILDING_BUILD_SPEED_MULT$: §G+50%§!\n$MOD_PLANET_DECISION_ENACT_SPEED_MULT$: §G+50%§!\n$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$: §G+20%§!\n建筑与区划花费: §R+20%§!\n$MOD_EMPIRE_SIZE_DISTRICTS_MULT$: §G-10%§!\n帝国规模: §G-8%§!\n "
+ SI_Trinity_C04_effect: "\n效果：\n$MOD_PLANET_BUILDING_BUILD_SPEED_MULT$: §G+50%§!\n$MOD_PLANET_DECISION_ENACT_SPEED_MULT$: §G+50%§!\n$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$: §G+20%§!\n建筑与区划花费: §R+20%§!\n$MOD_EMPIRE_SIZE_DISTRICTS_MULT$: §G-10%§!\n$MOD_EMPIRE_SIZE_MULT$: §G-5%§!\n "
  SI_Trinity_C04_tip: "§C$SI_Trinity_C04$§!\n$SI_Trinity_C04_desc$\n$SI_Trinity_C04_effect$"
 
  SI_Trinity_C05: "超光速信息流"
  SI_Trinity_C05_desc: "信息是帝国的命脉，采用超前调节算法，我们无需再付出时间来进行那些漫长的等待。"
- SI_Trinity_C05_effect: "\n效果：\n$MOD_STARBASE_UPGRADE_COST_MULT$: §G-20%§!\n$MOD_COUNTRY_NAVAL_CAP_MULT$: §G+15%§!\n$MOD_MEGASTRUCTURE_BUILD_SPEED_MULT$: §G+200%§!\n$MOD_COUNTRY_MEGASTRUCTURE_BUILD_CAP_ADD$: §G+2§!\n$mod_megastructures_cost_mult$: §R+30%§!\n帝国规模: §G-10%§!\n "
+ SI_Trinity_C05_effect: "\n效果：\n$MOD_STARBASE_UPGRADE_COST_MULT$: §G-20%§!\n$MOD_COUNTRY_NAVAL_CAP_MULT$: §G+15%§!\n$MOD_MEGASTRUCTURE_BUILD_SPEED_MULT$: §G+200%§!\n$MOD_COUNTRY_MEGASTRUCTURE_BUILD_CAP_ADD$: §G+2§!\n$mod_megastructures_cost_mult$: §R+30%§!\n$MOD_EMPIRE_SIZE_MULT$: §G-5%§!\n "
  SI_Trinity_C05_tip: "§C$SI_Trinity_C05$§!\n$SI_Trinity_C05_desc$\n$SI_Trinity_C05_effect$"
 
  SI_Trinity_C06: "星空彼端的乐土"
  SI_Trinity_C06_desc: "新世界的美景，相比我们梦中所见丝毫不逊色。"
- SI_Trinity_C06_effect: "\n效果：\n$mod_megastructures_produces_mult$: §G+20%§!\n$mod_colony_start_urban_districts_add$§G+2§!\n§Y新设立§!的殖民地§H获得行星修正:§! $modifier_BA_SI_Trinity_C06$(1800£time£)：\n    $MOD_PLANET_BUILDING_BUILD_SPEED_MULT$: §G+50%§!\n    $MOD_BONUS_POP_GROWTH_MULT$: §G+50%§!\n    $mod_planet_jobs_produces_mult$: §G+20%§!\n "
+ SI_Trinity_C06_effect: "\n效果：\n$mod_megastructures_produces_mult$: §G+20%§!\n$mod_colony_start_urban_districts_add$§G+2§!\n$MOD_EMPIRE_SIZE_COLONIES_MULT$: §G-20%§!\n§Y新设立§!的殖民地§H获得行星修正:§! $modifier_BA_SI_Trinity_C06$(1800£time£)：\n    $MOD_PLANET_BUILDING_BUILD_SPEED_MULT$: §G+50%§!\n    $MOD_BONUS_POP_GROWTH_MULT$: §G+50%§!\n    $mod_planet_jobs_produces_mult$: §G+20%§!\n "
  SI_Trinity_C06_tip: "§C$SI_Trinity_C06$§!\n$SI_Trinity_C06_desc$\n$SI_Trinity_C06_effect$"
 
  #####      红冬      #####
