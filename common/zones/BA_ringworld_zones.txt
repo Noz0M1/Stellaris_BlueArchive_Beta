@@ -1,5 +1,5 @@
 ### 中心区
-zone_BA_ringworld_capital_A = {
+zone_BA_ringworld_capital_mixed = {
 	icon = GFX_colony_type_capital
 	base_buildtime = 180
 	potential = {
@@ -33,12 +33,12 @@ zone_BA_ringworld_capital_A = {
 	zone_sets = {
 		BA_ringworld_capital
 	}
-	included_building_sets = {
+	include = { 
 		all
 	}
 }
 
-zone_BA_ringworld_capital_B = {
+zone_BA_ringworld_capital_staff = {
 	icon = GFX_job_BA_Kivotos_staff
 	base_buildtime = 180
 	potential = {
@@ -72,12 +72,12 @@ zone_BA_ringworld_capital_B = {
 	zone_sets = {
 		BA_ringworld_capital
 	}
-	included_building_sets = {
+	include = { 
 		all
 	}
 }
 
-zone_BA_ringworld_capital_C = {
+zone_BA_ringworld_capital_trade = {
 	icon = GFX_job_BA_Kivotos_trader
 	base_buildtime = 180
 	potential = {
@@ -108,12 +108,12 @@ zone_BA_ringworld_capital_C = {
 	zone_sets = {
 		BA_ringworld_capital
 	}
-	included_building_sets = {
+	include = { 
 		all
 	}
 }
 
-zone_BA_ringworld_capital_D = {
+zone_BA_ringworld_capital_club = {
 	icon = GFX_job_BA_club_members
 	base_buildtime = 180
 	potential = {
@@ -147,12 +147,12 @@ zone_BA_ringworld_capital_D = {
 	zone_sets = {
 		BA_ringworld_capital
 	}
-	included_building_sets = {
+	include = { 
 		all
 	}
 }
 
-zone_BA_ringworld_capital_E = {
+zone_BA_ringworld_capital_military = {
 	icon = GFX_colony_type_fortress
 	base_buildtime = 180
 	potential = {
@@ -192,7 +192,10 @@ zone_BA_ringworld_capital_E = {
 	zone_sets = {
 		BA_ringworld_capital
 	}
-	included_building_sets = {
+	include = { 
+		all
+	}
+	include = { 
 		all
 	}
 }
@@ -218,6 +221,9 @@ zone_BA_ringworld_satellite_A = {
 			energy = 200
 		}
 	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
 	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
@@ -228,7 +234,7 @@ zone_BA_ringworld_satellite_A = {
 		BA_ringworld_specialist
 		BA_ringworld_satellite
 	}
-	included_building_sets = {
+	include = { 
 		all
 	}
 	planet_modifier = {
@@ -272,7 +278,7 @@ zone_BA_ringworld_satellite_B = {
 		BA_ringworld_specialist
 		BA_ringworld_satellite
 	}
-	included_building_sets = {
+	include = { 
 		all
 	}
 }
@@ -323,8 +329,11 @@ zone_BA_ringworld_refinery_A = {
 		BA_ringworld_specialist
 		BA_ringworld_refinery
 	}
-	included_building_sets = {
+	include = { 
 		all
+	}
+	triggered_desc = {
+
 	}
 }
 
@@ -367,7 +376,7 @@ zone_BA_ringworld_refinery_B = {
 		BA_ringworld_specialist
 		BA_ringworld_refinery
 	}
-	included_building_sets = {
+	include = { 
 		all
 	}
 }
@@ -412,7 +421,7 @@ zone_BA_ringworld_factory_A = {
 		BA_ringworld_specialist
 		BA_ringworld_factory
 	}
-	included_building_sets = {
+	include = { 
 		all
 	}
 }
@@ -456,7 +465,7 @@ zone_BA_ringworld_factory_B = {
 		BA_ringworld_specialist
 		BA_ringworld_factory
 	}
-	included_building_sets = {
+	include = { 
 		all
 	}
 }
@@ -503,7 +512,7 @@ zone_BA_ringworld_matrix_A = {
 		BA_ringworld_specialist
 		BA_ringworld_matrix
 	}
-	included_building_sets = {
+	include = { 
 		all
 	}
 }
@@ -546,7 +555,7 @@ zone_BA_ringworld_matrix_B = {
 		BA_ringworld_specialist
 		BA_ringworld_matrix
 	}
-	included_building_sets = {
+	include = { 
 		all
 	}
 }

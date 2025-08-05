@@ -220,19 +220,23 @@ zone_BA_municipality_suburb_enforce = {
 			energy = 500
 		}
 	}
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
 	triggered_district_planet_modifier = {
 		potential = {
 			always = yes
 		}
-		BA_dont_be_crazy_here_produces_mult = 0.2
-		BA_Kivotos_miner_produces_mult = 0.2
-		BA_caterer_produces_mult = 0.2
-		BA_dont_be_crazy_here_trade_upkeep_add = 1
-		BA_Kivotos_miner_trade_upkeep_add = 1
-		BA_caterer_trade_upkeep_add = 1
+		BA_worker_pop_produces_mult = 0.2
+		BA_worker_pop_trade_upkeep_add = 1
 	}
 	zone_sets = {
 		BA_municipality
+	}
+	included_building_sets = {
+		generator
+		mining
+		farming
 	}
 }
 

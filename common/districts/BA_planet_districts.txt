@@ -34,7 +34,6 @@ BA_districts_campus = {
 			}
 		}
 		uses_district_set = BA_planet
-		is_special_colony_type = no
 		NAND = {
 			is_capital = yes
 			owner = {
@@ -563,10 +562,14 @@ BA_districts_shelter = {
 		}
 		modifier = {
 			#1自警团 1餐务员
-			job_BA_Vigilant_crew_add = 100
 			job_BA_caterer_add = 100
 		}
 	}
+	inline_script = {
+		script = jobs/add_BA_crew_pop_jobs
+		value = 100
+	}
+
 }
 
 #再采集区划 1槽位、3住房
@@ -765,18 +768,6 @@ BA_districts_dome_fe = {
 		modifier = {
 			#1自警团
 			job_BA_fe_defender_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_BA_fallen_empire = no
-			}
-		}
-		modifier = {
-			#1自警团
-			job_BA_Vigilant_crew_add = 100
 		}
 	}
 }

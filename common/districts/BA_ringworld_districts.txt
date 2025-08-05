@@ -334,16 +334,4 @@ BA_districts_ringworld_satellite_fe = {
             job_BA_fe_defender_add = 100
         }
     }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                is_BA_fallen_empire = no
-            }
-        }
-        modifier = {
-            #1自警团
-            job_BA_Vigilant_crew_add = 100
-        }
-    }
 }

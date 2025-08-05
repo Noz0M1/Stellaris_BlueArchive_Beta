@@ -31,7 +31,9 @@ BA_auto_buildings = {
 
 #################################
 #####   一产资源岗
-BA_workers = {
+### 开采员
+BA_worker_pop = {
+	icon = job_BA_Kivotos_miner
 	parent = planet_jobs_worker
 	generate_mult_modifiers = {
 		produces
@@ -40,8 +42,208 @@ BA_workers = {
 	modifier_category = pop_group
 }
 
-#################################
-##### 自警团
+#	发癫者
+BA_dont_be_crazy_here = {
+	icon = job_BA_dont_be_crazy_here
+	parent = planet_technician
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	triggered_produces_modifier = {
+		key = BA_worker_pop
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	triggered_upkeep_modifier = {
+		key = BA_worker_pop
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	modifier_category = pop_group
+}
+
+#	采矿团
+BA_Kivotos_miner = {
+	icon = job_BA_Kivotos_miner
+	parent = planet_miners
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	triggered_produces_modifier = {
+		key = BA_worker_pop
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	triggered_upkeep_modifier = {
+		key = BA_worker_pop
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	modifier_category = pop_group
+}
+
+#	餐务员
+BA_caterer = {
+	icon = job_BA_caterer
+	parent = planet_farmers
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	triggered_produces_modifier = {
+		key = BA_worker_pop
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	triggered_upkeep_modifier = {
+		key = BA_worker_pop
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	modifier_category = pop_group
+}
+
+#####   二产资源岗
+### 工业技师
+BA_industry_pop = {
+	icon = BA_industry_pop
+	parent = planet_jobs_specialist
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop_group
+}
+
+#	青辉石工匠
+BA_pyroxenes_artisan = {
+	icon = job_artisan
+	parent = planet_artisans
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	triggered_produces_modifier = {
+		key = BA_industry_pop
+		modifier_types = {
+			mult
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	triggered_upkeep_modifier = {
+		key = BA_industry_pop
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	modifier_category = pop_group
+}
+
+#	制造石锻造师
+BA_keystone_foundry = {
+	icon = job_alloy_drone
+	parent = planet_metallurgists
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	triggered_produces_modifier = {
+		key = BA_industry_pop
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	triggered_upkeep_modifier = {
+		key = BA_industry_pop
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	modifier_category = pop_group
+}
+
+#####   科研凝聚力资源岗
+# 自警团
 BA_crew_pop = {
 	icon = job_BA_Vigilant_crew
 	parent = planet_soldiers
@@ -56,7 +258,7 @@ BA_crew_pop = {
 	modifier_category = pop_group
 }
 
-##### 职员
+# 职员
 BA_staff_pop = {
 	icon = job_BA_Kivotos_staff
 	parent = planet_bureaucrats
@@ -71,7 +273,7 @@ BA_staff_pop = {
 	modifier_category = pop_group
 }
 
-##### 社团部员
+# 社团部员
 BA_club_pop = {
 	icon = job_BA_club_members
 	parent = planet_researchers
@@ -146,21 +348,8 @@ BA_club_pop = {
 	modifier_category = pop_group
 }
 
-##### 工业技师
-BA_industry_pop = {
-	parent = planet_jobs_specialist
-	generate_mult_modifiers = {
-		produces
-		upkeep
-	}
-	generate_add_modifiers = {
-		produces
-		upkeep
-	}
-	modifier_category = pop_group
-}
-
-##### 灵活就业者
+#####   其他岗
+# 灵活就业者
 BA_flex_pop = {
 	icon = job_BA_flexible_workers
 	parent = planet_civilians
@@ -175,7 +364,7 @@ BA_flex_pop = {
 	modifier_category = pop_group
 }
 
-##### 自动化设备操作者
+# 自动化设备操作者
 BA_auto_pop = {
 	icon = job_BA_ringworld_worker
 	parent = planet_jobs
@@ -191,190 +380,6 @@ BA_auto_pop = {
 }
 
 #################################
-#####	青辉石工匠
-BA_pyroxenes_artisan = {
-	icon = job_artisan
-	parent = planet_artisans
-	generate_mult_modifiers = {
-		produces
-		upkeep
-	}
-	generate_add_modifiers = {
-		produces
-		upkeep
-	}
-	triggered_produces_modifier = {
-		key = BA_industry_pop
-		modifier_types = {
-			mult
-		}
-		trigger = {
-			always = yes
-		}
-		use_parent_icon = yes
-	}
-	triggered_upkeep_modifier = {
-		key = BA_industry_pop
-		modifier_types = {
-			mult
-			add
-		}
-		trigger = {
-			always = yes
-		}
-		use_parent_icon = yes
-	}
-	modifier_category = pop_group
-}
-
-#####	制造石锻造师
-BA_keystone_foundry = {
-	icon = job_alloy_drone
-	parent = planet_metallurgists
-	generate_mult_modifiers = {
-		produces
-		upkeep
-	}
-	generate_add_modifiers = {
-		produces
-		upkeep
-	}
-	triggered_produces_modifier = {
-		key = BA_industry_pop
-		modifier_types = {
-			mult
-			add
-		}
-		trigger = {
-			always = yes
-		}
-		use_parent_icon = yes
-	}
-	triggered_upkeep_modifier = {
-		key = BA_industry_pop
-		modifier_types = {
-			mult
-			add
-		}
-		trigger = {
-			always = yes
-		}
-		use_parent_icon = yes
-	}
-	modifier_category = pop_group
-}
-
-#####	发癫者
-BA_dont_be_crazy_here = {
-	icon = job_BA_dont_be_crazy_here
-	parent = planet_technician
-	generate_mult_modifiers = {
-		produces
-		upkeep
-	}
-	generate_add_modifiers = {
-		produces
-		upkeep
-	}
-	triggered_produces_modifier = {
-		key = BA_workers
-		modifier_types = {
-			mult
-			add
-		}
-		trigger = {
-			always = yes
-		}
-		use_parent_icon = yes
-	}
-	triggered_upkeep_modifier = {
-		key = BA_workers
-		modifier_types = {
-			mult
-			add
-		}
-		trigger = {
-			always = yes
-		}
-		use_parent_icon = yes
-	}
-	modifier_category = pop_group
-}
-
-#####	采矿团
-BA_Kivotos_miner = {
-	icon = job_BA_Kivotos_miner
-	parent = planet_miners
-	generate_mult_modifiers = {
-		produces
-		upkeep
-	}
-	generate_add_modifiers = {
-		produces
-		upkeep
-	}
-	triggered_produces_modifier = {
-		key = BA_workers
-		modifier_types = {
-			mult
-			add
-		}
-		trigger = {
-			always = yes
-		}
-		use_parent_icon = yes
-	}
-	triggered_upkeep_modifier = {
-		key = BA_workers
-		modifier_types = {
-			mult
-			add
-		}
-		trigger = {
-			always = yes
-		}
-		use_parent_icon = yes
-	}
-	modifier_category = pop_group
-}
-
-#####	餐务员
-BA_caterer = {
-	icon = job_BA_caterer
-	parent = planet_farmers
-	generate_mult_modifiers = {
-		produces
-		upkeep
-	}
-	generate_add_modifiers = {
-		produces
-		upkeep
-	}
-	triggered_produces_modifier = {
-		key = BA_workers
-		modifier_types = {
-			mult
-			add
-		}
-		trigger = {
-			always = yes
-		}
-		use_parent_icon = yes
-	}
-	triggered_upkeep_modifier = {
-		key = BA_workers
-		modifier_types = {
-			mult
-			add
-		}
-		trigger = {
-			always = yes
-		}
-		use_parent_icon = yes
-	}
-	modifier_category = pop_group
-}
-
 ##### 行星特征
 BA_planet_deposit = {
 	use_for_ai_budget = no
