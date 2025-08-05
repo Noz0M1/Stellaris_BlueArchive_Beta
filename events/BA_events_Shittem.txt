@@ -4,8 +4,9 @@ namespace = BA_Shittem
 #1000：主界面相关
 #2000：
 #4000：学园理念
+###
+#初始化总成
 country_event = {
-	#触发器
 	id = BA_Shittem.0001
 	hide_window = yes
 	is_triggered_only = yes
@@ -142,6 +143,34 @@ country_event = {
 		set_variable = {
 			which = BA_Club_check
 			value = BA_Club_limit
+		}
+		#色彩解析值
+		set_variable = {
+			which = BA_colorize
+			value = 0
+		}
+		export_trigger_value_to_variable = {
+			variable = BA_colorize_count_pop_amount_A
+			trigger = count_owned_pop_amount
+			parameters = {
+				limit = {
+					species = {
+						OR = {
+							BA_has_halo_organic = yes
+							BA_has_halo_machine = yes
+						}
+					}
+				}
+			}
+		}
+		export_trigger_value_to_variable = {
+			variable = BA_colorize_count_fleet_A
+			trigger = count_used_naval_cap
+			parameters = {
+				limit = {
+					always = yes
+				}
+			}
 		}
 		#面纱相关
 		if = {

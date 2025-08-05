@@ -56,6 +56,13 @@ BA_has_halo_organic = {
 	}
 }
 
+BA_has_halo_machine = {
+	OR = {
+		has_trait = trait_test
+		has_trait = trait_test_finished
+	}
+}
+
 ### AL-1S (leader scope)
 Aris_is_scientist = {
 	any_owned_leader = {

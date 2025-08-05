@@ -268,6 +268,53 @@ num_BA_SI_next_idea = {
 	min = 0
 }
 
+########   色彩解析
+num_BA_colorize_random_count = {
+	base = 1
+	modifier = { 
+		add = 1
+		years_passed >= 5
+	}
+	modifier = { 
+		add = 1
+		years_passed >= 10
+	}
+	modifier = { 
+		add = 2
+		years_passed >= 15
+	}
+	modifier = { 
+		add = 2
+		years_passed >= 20
+	}
+	modifier = { 
+		add = 3
+		years_passed >= 30
+	}
+	modifier = {
+		add = 5
+		years_passed >= 60
+	}
+}
+
+num_BA_colorize_colony_monitor = {
+	#planet scope
+	base = 100
+	subtract = trigger:planet_stability
+	modifier = {
+		subtract = trigger:planet_stability
+	}
+}
+
+num_BA_colorize_pop_amount_difference = {
+	#country scope
+	base = 0
+	add = BA_colorize_count_pop_amount_A
+	subtract = BA_colorize_count_pop_amount_B
+	min = 0
+}
+
+
 ########   自动化居住站
 ### 最大区划数
 # 小模块+0.5，通常、科研模块+1.5，其他模块+1
