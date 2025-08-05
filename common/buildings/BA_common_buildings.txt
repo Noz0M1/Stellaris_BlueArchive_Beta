@@ -67,9 +67,6 @@ building_BA_starlink_2 = {
 	allow = {
 		has_upgraded_capital = yes
 	}
-	convert_to = {
-		building_BA_SI_Shanhaijing_G01
-	}
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -95,6 +92,9 @@ building_BA_starlink_2 = {
 	}
 	prerequisites = {
 		tech_BA_Kivotos_chronicle_stage6
+	}
+	upgrades = {
+		building_BA_SI_Shanhaijing_G01
 	}
 }
 
@@ -372,7 +372,7 @@ building_BA_dark_matter_concentrator_1 = {
 }
 
 ######  稀有资源  ######
-#稀有资源集中生产中心 10电5青辉石->2三种稀有资源
+#稀有资源集中生产中心 15电15矿5青辉石->5三种稀有资源
 building_BA_rare_center_1 = {
 	position_priority = 302
 	base_buildtime = 360
@@ -395,25 +395,18 @@ building_BA_rare_center_1 = {
 			sr_pyroxenes = 30
 		}
 		upkeep = {
-			energy = 10
+			energy = 15
+			minerals = 15
 			sr_pyroxenes = 5
 		}
 		produces = {
-			volatile_motes = 2
-			exotic_gases = 2
-			rare_crystals = 2
-		}
-		produces = {
-			trigger = {
-				colony_type = col_BA_auto_building
-			}
-			volatile_motes = 0.2
-			exotic_gases = 0.2
-			rare_crystals = 0.2
+			volatile_motes = 5
+			exotic_gases = 5
+			rare_crystals = 5
 		}
 	}
 	prerequisites = {
-		"tech_BA_angel24_rare_produce"
+		tech_BA_angel24_rare_produce
 	}
 }
 
@@ -569,6 +562,9 @@ building_BA_SI_Valkyrie_B02 = {
 			}
 		}
 		job_BA_Valkyrie_police_add = 500
+	}
+	country_modifier = {
+		country_naval_cap_mult = 0.1
 	}
 	resources = {
 		category = planet_buildings

@@ -1,5 +1,6 @@
 triggered_planet_modifier = {
 	potential = {
+		exists = owner
 		owner = {
 			NOT = {
 				has_technology = tech_BA_SI_Valkyrie_G02
@@ -11,6 +12,7 @@ triggered_planet_modifier = {
 
 triggered_planet_modifier = {
 	potential = {
+		exists = owner
 		owner = {
 			has_technology = tech_BA_SI_Valkyrie_G02
 		}

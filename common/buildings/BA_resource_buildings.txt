@@ -59,7 +59,6 @@ building_BA_basis_schola_1 = {
 	}
 	upgrades = {
 		building_BA_basis_schola_2
-		building_BA_SI_Valkyrie_B02
 	}
 }
 
@@ -100,6 +99,10 @@ building_BA_basis_schola_2 = {
 		}
 		job_BA_Vigilant_crew_add = 500
 	}
+	inline_script = {
+		script = jobs/add_BA_crew_pop_jobs
+		value = 500
+	}
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -115,7 +118,25 @@ building_BA_basis_schola_2 = {
 		tech_BA_Kivotos_chronicle_stage4
 	}
 	triggered_desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					has_technology = tech_BA_SI_Valkyrie_G02
+				}
+			}
+		}
 		text = job_BA_Vigilant_crew_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			owner = {
+				has_technology = tech_BA_SI_Valkyrie_G02
+			}
+		}
+		text = job_BA_Valkyrie_police_effect_desc
+	}
+	upgrades = {
+		building_BA_SI_Valkyrie_B02
 	}
 }
 
@@ -546,7 +567,6 @@ building_BA_keystone_foundry_3 = {
 	base_buildtime = 960
 	can_build = no
 	category = manufacturing
-	base_cap_amount = 3
 	building_sets = {
 		industrial
 		foundry
@@ -570,7 +590,7 @@ building_BA_keystone_foundry_3 = {
 		}
 		modifier = {
 			job_BA_keystone_foundry_add = 500
-			pop_BA_keystone_foundry_bonus_workforce_mult = 0.2
+			pop_BA_keystone_foundry_bonus_workforce_mult = 0.1
 		}
 	}
 	resources = {
@@ -583,6 +603,7 @@ building_BA_keystone_foundry_3 = {
 		}
 	}
 	prerequisites = {
+		tech_BA_Kivotos_chronicle_stage4
 	}
 }
 
@@ -615,8 +636,8 @@ building_BA_keystone_foundry_X = {
 		modifier = {
 			job_BA_keystone_foundry_add = 500
 			pop_BA_keystone_foundry_bonus_workforce_mult = 0.6
-			BA_keystone_foundry_energy_upkeep_add = 10
 			BA_industry_pop_physics_research_produces_add = 12
+			BA_keystone_foundry_energy_upkeep_add = 10
 		}
 	}
 	resources = {
@@ -630,7 +651,7 @@ building_BA_keystone_foundry_X = {
 		}
 	}
 	prerequisites = {
-		tech_BA_Kivotos_chronicle_stage4
+		tech_BA_angel24_keystone_foundry
 	}
 }
 
@@ -804,8 +825,8 @@ building_BA_pyroxenes_factory_X = {
 		modifier = {
 			job_BA_pyroxenes_artisan_add = 500
 			pop_BA_pyroxenes_artisan_bonus_workforce_mult = 0.6
-			BA_pyroxenes_artisan_energy_upkeep_add = 10
 			BA_industry_pop_physics_research_produces_add = 12
+			BA_pyroxenes_artisan_energy_upkeep_add = 10
 		}
 	}
 	resources = {
@@ -845,7 +866,7 @@ building_BA_refinery = {
 	allow = {
 	}
 	triggered_desc = {
-		text = concept_planet_BA_industry_pop
+		text = BA_industry_pop_desc
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -872,11 +893,11 @@ building_BA_refinery = {
 		tech_BA_Kivotos_chronicle_stage4
 	}
 	planet_modifier = {
-		BA_industry_pop_volatile_motes_produces_add = 1.5
-		BA_industry_pop_exotic_gases_produces_add = 1.5
-		BA_industry_pop_rare_crystals_produces_add = 1.5
+		BA_industry_pop_volatile_motes_produces_add = 0.5
+		BA_industry_pop_exotic_gases_produces_add = 0.5
+		BA_industry_pop_rare_crystals_produces_add = 0.5
 		BA_industry_pop_trade_produces_add = 8
-		BA_industry_pop_upkeep_mult = 0.3
+		BA_industry_pop_upkeep_mult = 0.2
 	}
 	upgrades = {
 	}
