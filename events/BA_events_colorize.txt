@@ -50,7 +50,7 @@ country_event = {
                     limit = {
                         check_variable_arithmetic = {
                             which = BA_colorize_pop_amount_difference
-                            value >= 0
+                            value > 0
                         }
                     }
                     if = {

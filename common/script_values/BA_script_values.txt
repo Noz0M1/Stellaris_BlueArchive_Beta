@@ -299,11 +299,10 @@ num_BA_colorize_random_count = {
 
 num_BA_colorize_colony_monitor = {
 	#planet scope
-	base = 100
+	base = 85
 	subtract = trigger:planet_stability
-	modifier = {
-		subtract = trigger:planet_stability
-	}
+	min = 0
+	multiply = 0.5
 }
 
 num_BA_colorize_pop_amount_difference = {
@@ -311,7 +310,6 @@ num_BA_colorize_pop_amount_difference = {
 	base = 0
 	add = BA_colorize_count_pop_amount_A
 	subtract = BA_colorize_count_pop_amount_B
-	min = 0
 }
 
 
