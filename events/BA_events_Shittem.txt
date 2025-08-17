@@ -225,6 +225,20 @@ country_event = {
 	}
 }
 
+#全局设置
+country_event = {
+	id = BA_Shittem.0002
+	is_triggered_only = yes
+	title = BLANK_TEXT
+	diplomatic = yes
+	custom_gui = "BA_UI_game_setup"
+	custom_gui_option = "BA_UI_club_confirm_option"
+	option = {
+		name = BLANK_TEXT
+		default_hide_option = yes
+	}
+}
+
 #联系Arona（剧情事件链第一个事件）
 country_event = {
 	id = BA_Shittem.0101

@@ -133,6 +133,30 @@ spriteTypes = {
 	#彩蛋按钮
 }
 
+### 设置页面
+spriteTypes = {
+	spriteType = {
+		name = BA_UI_Setting_slide_left_arrow
+		textureFile = gfx/Shittem_UI/Setup/slide_left_arrow.dds
+	}
+	spriteType = {
+		name = BA_UI_Setting_slide_right_arrow
+		textureFile = gfx/Shittem_UI/Setup/slide_right_arrow.dds
+	}
+	spriteType = {
+		name = BA_UI_Setting_slide_display
+		textureFile = gfx/Shittem_UI/Setup/slide_display.dds
+	}
+	spriteType = {
+		name = BA_UI_Setting_slide_blue
+		textureFile = gfx/Shittem_UI/Setup/slide_blue.dds
+	}
+	spriteType = {
+		name = BA_UI_Setting_slide_gray
+		textureFile = gfx/Shittem_UI/Setup/slide_gray.dds
+	}
+}
+
 ### 立绘
 spriteTypes = {
 	#主界面
