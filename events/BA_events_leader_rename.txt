@@ -34,7 +34,8 @@ country_event = {
 		default_hide_option = yes
 		hidden_effect = {
 			set_global_flag = BA_leader_rename_activated
-			set_global_flag = BA_leader_rename_add_leader_trait
+			set_global_flag = BA_leader_rename_add_club_trait
+			set_global_flag = BA_leader_rename_add_skin_trait
 		}
 	}
 	option = {
@@ -121,7 +122,7 @@ country_event = {
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
-		has_global_flag = BA_leader_rename_add_leader_trait
+		has_global_flag = BA_leader_rename_add_skin_trait
 		from = {
 			species = {
 				BA_has_halo_organic = yes
@@ -134,8 +135,7 @@ country_event = {
 	}
 }
 
-### 已存在领袖修复
-#动作器
+#已存在领袖修复
 country_event = {
 	id = BA_rename.1006
 	is_triggered_only = yes
@@ -156,15 +156,13 @@ country_event = {
 	}
 }
 
-
-### 特质
 #领袖3级添加特质
 country_event = {
 	id = BA_rename.1101
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		has_global_flag = BA_leader_rename_add_leader_trait
+		has_global_flag = BA_leader_rename_add_skin_trait
 	}
 	immediate = {
 		from = {
