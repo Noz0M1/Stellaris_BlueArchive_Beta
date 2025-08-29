@@ -1484,19 +1484,19 @@ defined_text = {
 	name = GetBACrisisLevel
 	text = {
 		trigger = {
-			has_global_flag = BA_Crisis_Torment
+			has_global_flag = BA_Crisis_Lunatic
 		}
 		localization_key = BA_crisis_level_Lunatic
 	}
 	text = {
 		trigger = {
-			has_global_flag = BA_Crisis_Insane
+			has_global_flag = BA_Crisis_Torment
 		}
 		localization_key = BA_crisis_level_Torment
 	}
 	text = {
 		trigger = {
-			has_global_flag = BA_Crisis_Extreme
+			has_global_flag = BA_Crisis_Insane
 		}
 		localization_key = BA_crisis_level_Insane
 	}
@@ -1509,6 +1509,55 @@ defined_text = {
 	text = {
 		trigger = {
 			has_global_flag = BA_Crisis_Normal
+		}
+		localization_key = BA_crisis_level_Normal
+	}
+}
+
+defined_text = {
+	name = GetBACrisisLevelSetting
+	text = {
+		trigger = {
+			check_variable = {
+				which = BA_Setting_Crisis
+				value = 5
+			}
+		}
+		localization_key = BA_crisis_level_Lunatic
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = BA_Setting_Crisis
+				value = 4
+			}
+		}
+		localization_key = BA_crisis_level_Torment
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = BA_Setting_Crisis
+				value = 3
+			}
+		}
+		localization_key = BA_crisis_level_Insane
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = BA_Setting_Crisis
+				value = 2
+			}
+		}
+		localization_key = BA_crisis_level_Hardcore
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = BA_Setting_Crisis
+				value = 1
+			}
 		}
 		localization_key = BA_crisis_level_Normal
 	}

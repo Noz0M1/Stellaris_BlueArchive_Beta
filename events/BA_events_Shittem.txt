@@ -14,7 +14,6 @@ country_event = {
 		has_authority = auth_kivotos
 	}
 	immediate = {
-		set_global_flag = Kivotos_detected		#一系列突发事件触发用的flag，也是BA堕落帝国生成事件用的flag
 		set_country_flag = situation_machine_uprising_started		#防机械叛乱
 		set_country_flag = synth_detector		#防机械叛乱
 		#创建Arona通讯界面国家
@@ -144,7 +143,7 @@ country_event = {
 			which = BA_Club_check
 			value = BA_Club_limit
 		}
-		#色彩解析值
+		#色彩解析度
 		set_variable = {
 			which = BA_colorize
 			value = 0
@@ -233,9 +232,227 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_UI_game_setup"
 	custom_gui_option = "BA_UI_club_confirm_option"
+	immediate = {
+		# 读取天灾设置
+		hidden_effect = {
+			if = {
+				limit = {
+					has_global_flag = BA_Crisis_Normal
+				}
+				set_variable = {
+					which = BA_Setting_Crisis
+					value = 1
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_flag = BA_Crisis_Hardcore
+				}
+				set_variable = {
+					which = BA_Setting_Crisis
+					value = 2
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_flag = BA_Crisis_Insane
+				}
+				set_variable = {
+					which = BA_Setting_Crisis
+					value = 3
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_flag = BA_Crisis_Torment
+				}
+				set_variable = {
+					which = BA_Setting_Crisis
+					value = 4
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_flag = BA_Crisis_Lunatic
+				}
+				set_variable = {
+					which = BA_Setting_Crisis
+					value = 5
+				}
+			}
+			else = {
+				set_variable = {
+					which = BA_Setting_Crisis
+					value = 3
+				}
+			}
+		}
+		# 读取色彩解析度设置
+		hidden_effect = {
+			set_variable = {
+				which = BA_Setting_colorize_mult
+				value = BA_colorize_mult
+			}
+			multiply_variable = {
+				which = BA_Setting_colorize_mult
+				value = 100
+			}
+			set_variable = {
+				which = BA_Setting_colorize_dec
+				value = BA_colorize_dec
+			}
+			multiply_variable = {
+				which = BA_Setting_colorize_mult
+				value = 100
+			}
+		}
+		# 读取领袖重命名设置
+		hidden_effect = {
+			if = {
+				limit = {
+					has_global_flag = BA_leader_rename_deactivated
+				}
+				set_country_flag = BA_Setting_leader_rename_off
+			}
+			else_if = {
+				limit = {
+					has_global_flag = BA_leader_rename_activated
+				}
+				set_country_flag = BA_Setting_leader_rename_on
+				# 社团特质
+				if = {
+					limit = {
+						has_global_flag = BA_leader_rename_add_club_trait
+					}
+					set_country_flag = BA_Setting_leader_rename_add_club_trait
+				}
+				# 个人特质
+				if = {
+					limit = {
+						has_global_flag = BA_leader_rename_add_leader_trait
+					}
+					set_country_flag = BA_Setting_leader_rename_add_leader_trait
+				}
+			}
+			# 初始化为默认值
+			else = {
+				set_country_flag = BA_Setting_leader_rename_on
+				set_country_flag = BA_Setting_leader_rename_add_club_trait
+				set_country_flag = BA_Setting_leader_rename_add_leader_trait
+			}
+		}
+	}
 	option = {
 		name = BLANK_TEXT
 		default_hide_option = yes
+		custom_tooltip = Setup_active_tip
+		# 应用天灾设置
+		hidden_effect = {
+			remove_global_flag = BA_Crisis_Normal
+			remove_global_flag = BA_Crisis_Hardcore
+			remove_global_flag = BA_Crisis_Insane
+			remove_global_flag = BA_Crisis_Torment
+			remove_global_flag = BA_Crisis_Lunatic
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_Setting_Crisis
+						value = 1
+					}
+				}
+				set_global_flag = BA_Crisis_Normal
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = BA_Setting_Crisis
+						value = 2
+					}
+				}
+				set_global_flag = BA_Crisis_Hardcore
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = BA_Setting_Crisis
+						value = 3
+					}
+				}
+				set_global_flag = BA_Crisis_Insane
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = BA_Setting_Crisis
+						value = 4
+					}
+				}
+				set_global_flag = BA_Crisis_Torment
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = BA_Setting_Crisis
+						value = 5
+					}
+				}
+				set_global_flag = BA_Crisis_Lunatic
+			}
+			else = {
+				set_global_flag = BA_Crisis_Insane
+			}
+		}
+		# 应用色彩解析度设置
+		hidden_effect = {
+			random_country = {
+				# global event
+				limit = {
+					is_country_type = global_event
+				}
+				set_variable = {
+					which = BA_colorize_mult
+					value = prev.BA_Setting_colorize_mult
+				}
+				divide_variable = {
+					which = BA_colorize_mult
+					value = 100
+				}
+				set_variable = {
+					which = BA_colorize_dec
+					value = prev.BA_Setting_colorize_dec
+				}
+				divide_variable = {
+					which = BA_colorize_dec
+					value = 100
+				}
+				every_country = {
+					# 学园联邦制
+					limit = {
+						OR = {
+							AND = {
+								is_country_type = default
+								has_authority = auth_kivotos
+							}
+							is_country_type = Moe_Xcom
+						}
+					}
+					set_variable = {
+						which = BA_colorize_mult
+						value = prev.BA_colorize_mult
+					}
+					set_variable = {
+						which = BA_colorize_dec
+						value = prev.BA_colorize_dec
+					}
+				}
+			}
+		}
+		# 清理
+		hidden_effect = {
+			clear_variable = BA_Setting_Crisis
+			clear_variable = BA_Setting_colorize_mult
+			clear_variable = BA_Setting_colorize_dec
+		}
 	}
 }
 
@@ -2757,7 +2974,6 @@ country_event = {
 						has_building = building_research_lab_1
 						has_building = building_research_lab_2
 						has_building = building_research_lab_3
-
 					}
 				}
 			}
@@ -4218,7 +4434,6 @@ country_event = {
 	}
 }
 
-
 ### 阿拜多斯
 #B01 B04-新殖民星球-沙漠开发 丰饶绿洲计划
 planet_event = {
@@ -4515,7 +4730,7 @@ country_event = {
 		}
 		create_message = {
 			type = BA_SI_ACTIVATED
-			localization =  MESSAGE_BA_SI_ACTIVATED_Trinity_A03_DESC
+			localization = MESSAGE_BA_SI_ACTIVATED_Trinity_A03_DESC
 			days = @toast_message_days
 		}
 	}

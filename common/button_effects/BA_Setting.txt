@@ -1,0 +1,403 @@
+button_effect_BA_setup_display = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+	}
+}
+
+### 天灾强度
+button_effect_BA_setup_crisis_detail = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = Setup_crisis_tip
+	}
+}
+
+button_effect_BA_setup_crisis_left = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_Setting_Crisis
+						value > 1
+					}
+				}
+				change_variable = {
+					which = BA_Setting_Crisis
+					value = -1
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_setup_crisis_right = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_Setting_Crisis
+						value < 5
+					}
+				}
+				change_variable = {
+					which = BA_Setting_Crisis
+					value = 1
+				}
+			}
+		}
+	}
+}
+
+### 色彩解析
+button_effect_BA_setup_colorize_detail = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		custom_tooltip = Setup_colorize_tip
+	}
+}
+
+#增长倍率
+button_effect_BA_setup_colorize_mult_left = {
+	allow = {
+		hidden_trigger = {
+			check_variable = {
+				which = BA_Setting_colorize_mult
+				value > @BA_Setting_colorize_mult_min
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = {
+				which = BA_Setting_colorize_mult
+				value = -5
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_Setting_colorize_mult
+						value < @BA_Setting_colorize_mult_min
+					}
+				}
+				set_variable = {
+					which = BA_Setting_colorize_mult
+					value = @BA_Setting_colorize_mult_min
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_setup_colorize_mult_left_double = {
+	allow = {
+		hidden_trigger = {
+			check_variable = {
+				which = BA_Setting_colorize_mult
+				value > @BA_Setting_colorize_mult_min
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = {
+				which = BA_Setting_colorize_mult
+				value = -50
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_Setting_colorize_mult
+						value < @BA_Setting_colorize_mult_min
+					}
+				}
+				set_variable = {
+					which = BA_Setting_colorize_mult
+					value = @BA_Setting_colorize_mult_min
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_setup_colorize_mult_right = {
+	allow = {
+		hidden_trigger = {
+			check_variable = {
+				which = BA_Setting_colorize_mult
+				value < @BA_Setting_colorize_mult_max
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = {
+				which = BA_Setting_colorize_mult
+				value = 5
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_Setting_colorize_mult
+						value > @BA_Setting_colorize_mult_max
+					}
+				}
+				set_variable = {
+					which = BA_Setting_colorize_mult
+					value = @BA_Setting_colorize_mult_max
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_setup_colorize_mult_right_double = {
+	allow = {
+		hidden_trigger = {
+			check_variable = {
+				which = BA_Setting_colorize_mult
+				value < @BA_Setting_colorize_mult_max
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = {
+				which = BA_Setting_colorize_mult
+				value = 50
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_Setting_colorize_mult
+						value > @BA_Setting_colorize_mult_max
+					}
+				}
+				set_variable = {
+					which = BA_Setting_colorize_mult
+					value = @BA_Setting_colorize_mult_max
+				}
+			}
+		}
+	}
+}
+
+#衰减指数
+button_effect_BA_setup_colorize_dec_left = {
+	allow = {
+		hidden_trigger = {
+			check_variable = {
+				which = BA_Setting_colorize_dec
+				value > @BA_Setting_colorize_dec_min
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = {
+				which = BA_Setting_colorize_dec
+				value = -1
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_Setting_colorize_dec
+						value < @BA_Setting_colorize_dec_min
+					}
+				}
+				set_variable = {
+					which = BA_Setting_colorize_dec
+					value = @BA_Setting_colorize_dec_min
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_setup_colorize_dec_left_double = {
+	allow = {
+		hidden_trigger = {
+			check_variable = {
+				which = BA_Setting_colorize_dec
+				value > @BA_Setting_colorize_dec_min
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = {
+				which = BA_Setting_colorize_dec
+				value = -10
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_Setting_colorize_dec
+						value < @BA_Setting_colorize_dec_min
+					}
+				}
+				set_variable = {
+					which = BA_Setting_colorize_dec
+					value = @BA_Setting_colorize_dec_min
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_setup_colorize_dec_right = {
+	allow = {
+		hidden_trigger = {
+			check_variable = {
+				which = BA_Setting_colorize_dec
+				value < @BA_Setting_colorize_dec_max
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = {
+				which = BA_Setting_colorize_dec
+				value = 1
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_Setting_colorize_dec
+						value > @BA_Setting_colorize_dec_max
+					}
+				}
+				set_variable = {
+					which = BA_Setting_colorize_dec
+					value = @BA_Setting_colorize_dec_max
+				}
+			}
+		}
+	}
+}
+
+button_effect_BA_setup_colorize_dec_right_double = {
+	allow = {
+		hidden_trigger = {
+			check_variable = {
+				which = BA_Setting_colorize_dec
+				value < @BA_Setting_colorize_dec_max
+			}
+		}
+	}
+	potential = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			change_variable = {
+				which = BA_Setting_colorize_dec
+				value = 10
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_Setting_colorize_dec
+						value > @BA_Setting_colorize_dec_max
+					}
+				}
+				set_variable = {
+					which = BA_Setting_colorize_dec
+					value = @BA_Setting_colorize_dec_max
+				}
+			}
+		}
+	}
+}
+
+### 领袖重命名
+#总开关
+button_effect_BA_setup_leader_rename_on = {
+	allow = {
+        always = yes
+	}
+	potential = {
+        hidden_trigger = {
+            has_country_flag = BA_Setting_leader_rename_off
+        }
+	}
+	effect = {
+        custom_tooltip = Setup_leader_rename_active_tip
+        hidden_effect = {
+            remove_country_flag = BA_Setting_leader_rename_off
+            set_country_flag = BA_Setting_leader_rename_on
+        }
+	}
+}
+
+button_effect_BA_setup_leader_rename_off = {
+    allow = {
+        always = yes
+    }
+    potential = {
+        hidden_trigger = {
+            has_country_flag = BA_Setting_leader_rename_on
+        }
+    }
+	effect = {
+        custom_tooltip = Setup_leader_rename_active_tip
+        hidden_effect = {
+            remove_country_flag = BA_Setting_leader_rename_on
+            set_country_flag = BA_Setting_leader_rename_off
+        }
+    }
+}
+
+#社团特质
+
+
+

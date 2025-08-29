@@ -2,171 +2,171 @@ namespace = BA_colorize
 ########     功能器     ########
 #年检
 country_event = {
-    id = BA_colorize.0001
-    is_triggered_only = yes
-    hide_window = yes
-    immediate = {
-        #随机变更
-        hidden_effect = {
-            set_variable_to_random_value = {
-                which = BA_colorize_random_change
-                min = -2
-                max = 3
-            }
-            multiply_variable = {
-                which = BA_colorize_random_change
-                value = value:num_BA_colorize_random_count
-            }
-            add_variable = {
-                which = BA_colorize
-                value = BA_colorize_random_change
-            }
-        }
-        #国力监测变更
-        hidden_effect = {
-            #光环人口
-            hidden_effect = {
-                #变量操作
-                export_trigger_value_to_variable = {
-                    variable = BA_colorize_count_pop_amount_B
-                    trigger = count_owned_pop_amount
-                    parameters = {
-                        limit = {
-                            species = {
-                                OR = {
-                                    BA_has_halo_organic = yes
-                                    BA_has_halo_machine = yes
-                                }
-                            }
-                        }
-                    }
-                }
-                set_variable = {
-                    which = BA_colorize_pop_amount_difference
-                    value = value:num_BA_colorize_pop_amount_difference
-                }
-                #解析值变更
-                if = {
-                    limit = {
-                        check_variable_arithmetic = {
-                            which = BA_colorize_pop_amount_difference
-                            value > 0
-                        }
-                    }
-                    if = {
-                        limit = {
-                            check_variable_arithmetic = {
-                                which = BA_colorize_pop_amount_difference
-                                divide = BA_colorize_count_pop_amount_A
-                                value < 0.02
-                            }
-                        }
-                        set_variable = {
-                            which = BA_colorize_monitor_change
-                            value = 1
-                        }
-                        multiply_variable = {
-                            which = BA_colorize_monitor_change
-                            value = BA_colorize_pop_amount_difference
-                        }
-
-                    }
-                    else_if = {
-                        limit = {
-                            check_variable_arithmetic = {
-                                which = BA_colorize_pop_amount_difference
-                                divide = BA_colorize_count_pop_amount_A
-                                value < 0.05
-                            }
-                        }
-                        set_variable = {
-                            which = BA_colorize_monitor_change
-                            value = 1.2
-                        }
-                        multiply_variable = {
-                            which = BA_colorize_monitor_change
-                            value = BA_colorize_pop_amount_difference
-                        }
-
-                    }
-                    else_if = {
-                        limit = {
-                            check_variable_arithmetic = {
-                                which = BA_colorize_pop_amount_difference
-                                divide = BA_colorize_count_pop_amount_A
-                                value < 0.12
-                            }
-                        }
-                        set_variable = {
-                            which = BA_colorize_monitor_change
-                            value = 1.8
-                        }
-                        multiply_variable = {
-                            which = BA_colorize_monitor_change
-                            value = BA_colorize_pop_amount_difference
-                        }
-                    }
-                    else = {
-                        set_variable = {
-                            which = BA_colorize_monitor_change
-                            value = 1.8
-                        }
-                        multiply_variable = {
-                            which = BA_colorize_monitor_change
-                            value = BA_colorize_pop_amount_difference
-                        }
-                        add_variable = {
-                            which = BA_colorize_monitor_change
-                            value = 50
-                        }
-
-                    }
-                }
-            }
-            #殖民地
-            every_owned_planet = {  }
-
-
-        }
-        #随机事件
-    }
+	id = BA_colorize.0001
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		#随机变更
+		hidden_effect = {
+			set_variable_to_random_value = {
+				which = BA_colorize_random_change
+				min = -2
+				max = 3
+			}
+			multiply_variable = {
+				which = BA_colorize_random_change
+				value = value:num_BA_colorize_random_count
+			}
+			add_variable = {
+				which = BA_colorize
+				value = BA_colorize_random_change
+			}
+		}
+		#国力监测变更
+		hidden_effect = {
+			#光环人口
+			hidden_effect = {
+				#变量操作
+				export_trigger_value_to_variable = {
+					variable = BA_colorize_count_pop_amount_B
+					trigger = count_owned_pop_amount
+					parameters = {
+						limit = {
+							species = {
+								OR = {
+									BA_has_halo_organic = yes
+									BA_has_halo_machine = yes
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					which = BA_colorize_pop_amount_difference
+					value = value:num_BA_colorize_pop_amount_difference
+				}
+				#解析值变更
+				if = {
+					limit = {
+						check_variable_arithmetic = {
+							which = BA_colorize_pop_amount_difference
+							value > 0
+						}
+					}
+					if = {
+						limit = {
+							check_variable_arithmetic = {
+								which = BA_colorize_pop_amount_difference
+								divide = BA_colorize_count_pop_amount_A
+								value < 0.02
+							}
+						}
+						set_variable = {
+							which = BA_colorize_monitor_change
+							value = 1
+						}
+						multiply_variable = {
+							which = BA_colorize_monitor_change
+							value = BA_colorize_pop_amount_difference
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable_arithmetic = {
+								which = BA_colorize_pop_amount_difference
+								divide = BA_colorize_count_pop_amount_A
+								value < 0.05
+							}
+						}
+						set_variable = {
+							which = BA_colorize_monitor_change
+							value = 1.2
+						}
+						multiply_variable = {
+							which = BA_colorize_monitor_change
+							value = BA_colorize_pop_amount_difference
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable_arithmetic = {
+								which = BA_colorize_pop_amount_difference
+								divide = BA_colorize_count_pop_amount_A
+								value < 0.12
+							}
+						}
+						set_variable = {
+							which = BA_colorize_monitor_change
+							value = 1.8
+						}
+						multiply_variable = {
+							which = BA_colorize_monitor_change
+							value = BA_colorize_pop_amount_difference
+						}
+					}
+					else = {
+						set_variable = {
+							which = BA_colorize_monitor_change
+							value = 1.8
+						}
+						multiply_variable = {
+							which = BA_colorize_monitor_change
+							value = BA_colorize_pop_amount_difference
+						}
+						add_variable = {
+							which = BA_colorize_monitor_change
+							value = 50
+						}
+					}
+				}
+			}
+			#殖民地
+			every_owned_planet = {
+			}
+		}
+		#随机事件
+	}
 }
 
 ########   随机事件   ########
 #随机事件触发器
 country_event = {
-    id = BA_colorize.1000
-    is_triggered_only = yes
-    hide_window = yes
-    immediate = {
-        random_list = {
-            95 = {}
-            5 = {
-                country_event = {
-                    id = BA_colorize.1001
-                    days = 5
-                    random = 25
-                }
-            }
-        }
-
-    }
+	id = BA_colorize.1000
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		random_list = {
+			95 = {
+			}
+			5 = {
+				country_event = {
+					id = BA_colorize.1001
+					days = 5
+					random = 25
+				}
+			}
+		}
+	}
 }
 
 country_event = {
-    id = BA_colorize.1001
-    is_triggered_only = yes
-    hide_window = yes
-    immediate = {
-        random_list = {
-            10 = {}
-            10 = {}
-            10 = {}
-            10 = {}
-            10 = {}
-            10 = {}
-        }
-
-    }
+	id = BA_colorize.1001
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		random_list = {
+			10 = {
+			}
+			10 = {
+			}
+			10 = {
+			}
+			10 = {
+			}
+			10 = {
+			}
+			10 = {
+			}
+		}
+	}
 }
-

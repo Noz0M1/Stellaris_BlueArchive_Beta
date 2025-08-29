@@ -29,7 +29,7 @@ guiTypes = {
         #    quadTextureSprite = GFX_School_philosophy_School_philosophy_word
         #}
         instantTextBoxType = {
-            name = "BlueArchive_MainWindow_button_text_2"
+            name = "BlueArchive_MainWindow_button_text_title"
             font = "large_title_font"
             text = "Setup_title"
             position = {x = 100 y = 40}
@@ -38,6 +38,17 @@ guiTypes = {
             #fixedSize = yes
             alwaysTransparent = yes
         }
+        effectButtonType = {
+            name = "BlueArchive_MainWindow_button_text_game_num"
+            font = "large_title_font"
+            text = "Setup_title_game_num"
+            position = {x = 400 y = -40}
+            maxWidth = 1000
+            maxHeight = 22
+            effect = button_effect_BA_setup_display
+            alwaysTransparent = yes
+        }
+
         iconType = {
             name = BlueArchive_school_idea_bg_2
             position = { x = 0 y = 0 }
@@ -56,43 +67,250 @@ guiTypes = {
         ### 设置区
         containerWindowType = {
             name = BA_UI_game_setup_crisis
-            position = { x = 100  y = 100 }
+            position = { x = 100  y = 110 }
             size = { width = 500 height = 200 }
-            effectButtonType = {
-                name = BA_UI_game_setup_crisis_text
-                font = large_title_font
-                text = Setup_crisis_title
-                position = { x = 0  y = 0 }
-                effect = button_effect_BA_setup_0
-                alwaysTransparent = yes
-            }
-            effectButtonType = {
-                name = BA_UI_game_setup_crisis_tip
-                font = large_title_font_28
-                text = Setup_crisis_tip
-                position = { x = 0  y = 100 }
-                effect = button_effect_BA_setup_0
-                alwaysTransparent = yes
-            }
             iconType = {
-                name = BA_UI_game_setup_crisis_tip
-                position = { x = 0  y = 100 }
+                name = BA_UI_game_setup_crisis_background
+                position = { x = 0  y = 0 }
                 quadTextureSprite = BA_UI_Setting_slide_display
                 alwaysTransparent = yes
             }
             effectButtonType = {
-                name = BA_UI_game_setup_crisis_decrease
-                position = { x = 10  y = 100 }
-                effect = button_effect_BA_setup_0
-                quadTextureSprite = BA_UI_Setting_slide_left_arrow
-                #scale = 0.4
+                name = BA_UI_game_setup_crisis_title
+                font = large_title_font
+                text = Setup_crisis_title
+                position = { x = 10  y = -70 }
+                effect = button_effect_BA_setup_display
+                alwaysTransparent = yes
             }
             effectButtonType = {
-                name = BA_UI_game_setup_crisis_increase
-                position = { x = 350  y = 100 }
-                effect = button_effect_BA_setup_0
+                name = BA_UI_game_setup_crisis_detail
+                position = { x = 297  y = 8 }
+                effect = button_effect_BA_setup_crisis_detail
+                quadTextureSprite = BA_UI_Setting_slide_detail
+                scale = 0.65
+            }
+            effectButtonType = {
+                name = BA_UI_game_setup_crisis_display
+                font = large_title_font_28
+                text = Setup_crisis_display
+                position = { x = 75  y = -15 }
+                effect = button_effect_BA_setup_display
+                alwaysTransparent = yes
+            }
+            effectButtonType = {
+                name = BA_UI_game_setup_crisis_left
+                position = { x = 20  y = 60 }
+                effect = button_effect_BA_setup_crisis_left
+                quadTextureSprite = BA_UI_Setting_slide_left_arrow
+                scale = 0.5
+            }
+            effectButtonType = {
+                name = BA_UI_game_setup_crisis_right
+                position = { x = 310  y = 60 }
+                effect = button_effect_BA_setup_crisis_right
                 quadTextureSprite = BA_UI_Setting_slide_right_arrow
-                #scale = 0.4
+                scale = 0.5
+            }
+
+        }
+
+        containerWindowType = {
+            name = BA_UI_game_setup_colorize
+            position = { x = 100  y = 280 }
+            size = { width = 500 height = 200 }
+            iconType = {
+                name = BA_UI_game_setup_colorize_background
+                position = { x = 0  y = 0 }
+                quadTextureSprite = BA_UI_Setting_slide_display_2
+                alwaysTransparent = yes
+            }
+            effectButtonType = {
+                name = BA_UI_game_setup_colorize_title
+                font = large_title_font
+                text = Setup_colorize_title
+                position = { x = 10  y = -70 }
+                effect = button_effect_BA_setup_display
+                alwaysTransparent = yes
+            }
+            effectButtonType = {
+                name = BA_UI_game_setup_colorize_detail
+                position = { x = 297  y = 8 }
+                effect = button_effect_BA_setup_colorize_detail
+                quadTextureSprite = BA_UI_Setting_slide_detail
+                scale = 0.65
+            }
+            ##
+            instantTextBoxType = {
+                name = BA_UI_game_setup_colorize_mult
+                text = Setup_colorize_mult
+                font = large_title_font_28
+                position = { x = 125  y = 70 }  # +45 +15
+                maxWidth = 543
+                maxHeight = 22
+                fixedSize = yes
+                alwaysTransparent = yes
+            }
+            effectButtonType = {
+                name = BA_UI_game_setup_colorize_mult_display
+                font = large_title_font_28
+                text = Setup_colorize_mult_display
+                position = { x = 75  y = 35 }
+                effect = button_effect_BA_setup_display
+                alwaysTransparent = yes
+            }
+            effectButtonType = {
+                name = BA_UI_game_setup_colorize_mult_left
+                position = { x = 70  y = 110 }
+                effect = button_effect_BA_setup_colorize_mult_left
+                quadTextureSprite = BA_UI_Setting_slide_left_arrow
+                scale = 0.5
+            }
+            effectButtonType = {
+                name = BA_UI_game_setup_colorize_mult_left_double
+                position = { x = 33  y = 116 }
+                effect = button_effect_BA_setup_colorize_mult_left_double
+                quadTextureSprite = BA_UI_Setting_slide_left_arrow
+                scale = 0.4
+            }
+            effectButtonType = {
+                name = BA_UI_game_setup_colorize_mult_right
+                position = { x = 260  y = 110 }
+                effect = button_effect_BA_setup_colorize_mult_right
+                quadTextureSprite = BA_UI_Setting_slide_right_arrow
+                scale = 0.5
+            }
+            effectButtonType = {
+                name = BA_UI_game_setup_colorize_mult_right_double
+                position = { x = 300  y = 116 }
+                effect = button_effect_BA_setup_colorize_mult_right_double
+                quadTextureSprite = BA_UI_Setting_slide_right_arrow
+                scale = 0.4
+            }
+            ##
+            instantTextBoxType = {
+                name = BA_UI_game_setup_colorize_dec
+                text = Setup_colorize_dec
+                font = large_title_font_28
+                position = { x = 125  y = 190 }  # +45 +15
+                maxWidth = 543
+                maxHeight = 22
+                fixedSize = yes
+                alwaysTransparent = yes
+            }
+            effectButtonType = {
+                name = BA_UI_game_setup_colorize_dec_display
+                font = large_title_font_28
+                text = Setup_colorize_dec_display
+                position = { x = 75  y = 155 }
+                effect = button_effect_BA_setup_display
+                alwaysTransparent = yes
+            }
+            effectButtonType = {
+                name = BA_UI_game_setup_colorize_dec_left
+                position = { x = 70  y = 230 }
+                effect = button_effect_BA_setup_colorize_dec_left
+                quadTextureSprite = BA_UI_Setting_slide_left_arrow
+                scale = 0.5
+            }
+            effectButtonType = {
+                name = BA_UI_game_setup_colorize_dec_left_double
+                position = { x = 33  y = 236 }
+                effect = button_effect_BA_setup_colorize_dec_left_double
+                quadTextureSprite = BA_UI_Setting_slide_left_arrow
+                scale = 0.4
+            }
+            effectButtonType = {
+                name = BA_UI_game_setup_colorize_dec_right
+                position = { x = 260  y = 230 }
+                effect = button_effect_BA_setup_colorize_dec_right
+                quadTextureSprite = BA_UI_Setting_slide_right_arrow
+                scale = 0.5
+            }
+            effectButtonType = {
+                name = BA_UI_game_setup_colorize_dec_right_double
+                position = { x = 300  y = 236 }
+                effect = button_effect_BA_setup_colorize_dec_right_double
+                quadTextureSprite = BA_UI_Setting_slide_right_arrow
+                scale = 0.4
+            }
+
+        }
+
+        containerWindowType = {
+            name = BA_UI_game_setup_leader_rename
+            position = { x = 480  y = 110 }
+            size = { width = 500 height = 200 }
+            iconType = {
+                name = BA_UI_game_setup_crisis_background
+                position = { x = 0  y = 0 }
+                quadTextureSprite = BA_UI_Setting_slide_display_2
+                alwaysTransparent = yes
+            }
+            effectButtonType = {
+                name = BA_UI_game_setup_leader_rename_title
+                font = large_title_font
+                text = Setup_leader_rename_title
+                position = { x = 30  y = -70 }
+                effect = button_effect_BA_setup_display
+                alwaysTransparent = yes
+            }
+            effectButtonType = {
+                name = BA_UI_game_setup_leader_rename_detail
+                position = { x = 297  y = 8 }
+                effect = button_effect_BA_setup_crisis_detail
+                quadTextureSprite = BA_UI_Setting_slide_detail
+                scale = 0.65
+            }
+            ##
+            effectButtonType = {
+                name = BA_UI_game_setup_leader_rename_switch_on
+                position = { x = 30  y = 70 }
+                effect = button_effect_BA_setup_crisis_detail
+                quadTextureSprite = BA_UI_Setting_checkbox_active
+                scale = 0.5
+            }
+            effectButtonType = {
+                name = BA_UI_game_setup_leader_rename_switch_off
+                position = { x = 30  y = 70 }
+                effect = button_effect_BA_setup_crisis_detail
+                quadTextureSprite = BA_UI_Setting_checkbox_disactive
+                scale = 0.5
+            }
+            instantTextBoxType = {
+                name = BA_UI_game_setup_colorize_dec
+                text = Setup_leader_rename_active
+                font = large_title_font_28
+                position = { x = 105  y = 82 }
+                maxWidth = 543
+                maxHeight = 22
+                fixedSize = yes
+                alwaysTransparent = yes
+            }
+            ##
+            effectButtonType = {
+                name = BA_UI_game_setup_leader_rename_trait_switch_on
+                position = { x = 30  y = 170 }
+                effect = button_effect_BA_setup_crisis_detail
+                quadTextureSprite = BA_UI_Setting_checkbox_active
+                scale = 0.5
+            }
+            effectButtonType = {
+                name = BA_UI_game_setup_leader_rename_trait_switch_off
+                position = { x = 30  y = 170 }
+                effect = button_effect_BA_setup_crisis_detail
+                quadTextureSprite = BA_UI_Setting_checkbox_disactive
+                scale = 0.5
+            }
+            instantTextBoxType = {
+                name = BA_UI_game_setup_leader_rename_trait
+                text = Setup_leader_rename_add_leader_trait
+                font = large_title_font_28
+                position = { x = 105  y = 182 }
+                maxWidth = 543
+                maxHeight = 22
+                fixedSize = yes
+                alwaysTransparent = yes
             }
 
         }

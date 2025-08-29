@@ -138,7 +138,7 @@ BA_rename_leader = {
 	}
 	if = {
 		limit = {
-			has_global_flag = BA_leader_rename_trait_activated
+			has_global_flag = BA_leader_rename_add_leader_trait
 		}
 		BA_add_club_trait = yes
 	}
@@ -1013,7 +1013,7 @@ BA_iterate_rename_fix_flag = {
 			#移除特质并重新添加
 			if = {
 				limit = {
-					has_global_flag = BA_leader_rename_trait_activated
+					has_global_flag = BA_leader_rename_add_leader_trait
 				}
 				BA_remove_sp_trait = yes
 				BA_change_skin_trait = yes
@@ -1036,7 +1036,7 @@ BA_iterate_rename_fix_flag = {
 			#移除特质并重新添加
 			if = {
 				limit = {
-					has_global_flag = BA_leader_rename_trait_activated
+					has_global_flag = BA_leader_rename_add_leader_trait
 				}
 				BA_remove_sp_trait = yes
 				BA_change_skin_trait = yes

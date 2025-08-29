@@ -137,23 +137,39 @@ spriteTypes = {
 spriteTypes = {
 	spriteType = {
 		name = BA_UI_Setting_slide_left_arrow
-		textureFile = gfx/Shittem_UI/Setup/slide_left_arrow.dds
+		textureFile = gfx/Shittem_UI/Setting/slide_left_arrow.dds
 	}
 	spriteType = {
 		name = BA_UI_Setting_slide_right_arrow
-		textureFile = gfx/Shittem_UI/Setup/slide_right_arrow.dds
+		textureFile = gfx/Shittem_UI/Setting/slide_right_arrow.dds
+	}
+	spriteType = {
+		name = BA_UI_Setting_slide_detail
+		textureFile = gfx/Shittem_UI/Setting/setting_detail.dds
 	}
 	spriteType = {
 		name = BA_UI_Setting_slide_display
-		textureFile = gfx/Shittem_UI/Setup/slide_display.dds
+		textureFile = gfx/Shittem_UI/Setting/slide_display.dds
+	}
+	spriteType = {
+		name = BA_UI_Setting_slide_display_2
+		textureFile = gfx/Shittem_UI/Setting/slide_display_2.dds
 	}
 	spriteType = {
 		name = BA_UI_Setting_slide_blue
-		textureFile = gfx/Shittem_UI/Setup/slide_blue.dds
+		textureFile = gfx/Shittem_UI/Setting/slide_blue.dds
 	}
 	spriteType = {
 		name = BA_UI_Setting_slide_gray
-		textureFile = gfx/Shittem_UI/Setup/slide_gray.dds
+		textureFile = gfx/Shittem_UI/Setting/slide_gray.dds
+	}
+	spriteType = {
+		name = BA_UI_Setting_checkbox_active
+		textureFile = gfx/Shittem_UI/Setting/checkbox_active.dds
+	}
+	spriteType = {
+		name = BA_UI_Setting_checkbox_disactive
+		textureFile = gfx/Shittem_UI/Setting/checkbox_disactive.dds
 	}
 }
 

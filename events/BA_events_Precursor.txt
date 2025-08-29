@@ -2,7 +2,7 @@ namespace = BA_Precursor
 ######################
 ###     前置准备 
 ######################
-#初始化
+#初始化总成-全局
 country_event = {
 	id = BA_Precursor.0001
 	is_triggered_only = yes
@@ -16,6 +16,47 @@ country_event = {
 		}
 	}
 	immediate = {
+		set_global_flag = Kivotos_detected		#一系列突发事件触发用的flag，也是BA堕落帝国生成事件用的flag
+		# 世界编号
+		set_variable_to_random_value = {
+			which = BA_game_num
+			min = 10
+			max = 10000000
+			rounded = yes
+		}
+		# 色彩解析度默认参数
+		set_variable = {
+			which = BA_colorize_mult
+			value = 1
+		}
+		set_variable = {
+			which = BA_colorize_dec
+			value = 0.88
+		}
+		# 派发全局变量至国家
+		every_country = {
+			limit = {
+				OR = {
+					AND = {
+						is_country_type = default
+						has_authority = auth_kivotos
+					}
+					is_country_type = Moe_Xcom
+				}
+			}
+			set_variable = {
+				which = BA_game_num
+				value = prev.BA_game_num
+			}
+			set_variable = {
+				which = BA_colorize_mult
+				value = prev.BA_colorize_mult
+			}
+			set_variable = {
+				which = BA_colorize_dec
+				value = prev.BA_colorize_dec
+			}
+		}
 		#### 设定难度！！
 		set_variable = {
 			which = BA_Crisis_Strength

@@ -1,4 +1,5 @@
 ﻿l_simp_chinese:
+ Blue_Archive_Story_Pack:0 "§B碧蓝档案故事包-BETA§!"
 
 #####       Agendas        #####
  council_agenda_agenda_BA_SI_Trinity_A02_name: "菲利乌斯补习法"
@@ -2188,9 +2189,30 @@
  AronaTest:0 "Arona Test"
  Shittem.name:0 "什亭之匣"
 
+
  Setup_title:0 "全局设置"
+ Setup_title_game_num:0 "#[root.BA_game_num]"
+ Setup_active_tip:0 "应用全局设置。"
+
  Setup_crisis_title:0 "§M天灾强度§!"
- Setup_crisis_tip:0 "[GetBACrisisLevel]"
+ Setup_crisis_tip:0 "调整$Blue_Archive_Story_Pack$的§R中期天灾与末期天灾(如果出现)§!的作战强度。\n调整此选项不会影响已经出现的天灾。\n\n$BA_crisis_level_Normal$:      折合原版天灾强度约§B5倍§!，天灾舰队不会对星球造成损伤。\n$BA_crisis_level_Hardcore$:  折合原版天灾强度约§B25倍§!。\n$BA_crisis_level_Insane$:       折合原版天灾强度约§B125倍§!。\n$BA_crisis_level_Torment$:   折合原版天灾强度约§B250倍§!，天灾普通舰队将搭载电子战部件。\n$BA_crisis_level_Lunatic$:     折合原版天灾强度约§B1000倍§!，建议搭配其他模组挑战此难度。"
+ Setup_crisis_display:0 "[GetBACrisisLevelSetting]"
+
+ Setup_colorize_title:0 "§M色彩解析度§!"
+ Setup_colorize_tip:0 "调整§B$auth_kivotos$§!国家的§_色彩解析度§!变化值。\n§R警告：剧烈调整此数值会带来难以预期的走向§!\n\n§B增长倍率§!：任何§_色彩解析度§!增加时都会按此值倍增。\n§C衰减指数§!：每年§_色彩解析度§!都会自然衰减，此值越低则衰减越快。"
+ Setup_colorize_mult:0 "§B增长倍率§!"
+ Setup_colorize_dec:0 "§C衰减指数§!"
+ Setup_colorize_mult_display:0 "§B[root.BA_Setting_colorize_mult]%§!"
+ Setup_colorize_dec_display:0 "§C[root.BA_Setting_colorize_dec]%§!"
+
+ Setup_leader_rename_title:0 "§M领袖重命名§!"
+ Setup_leader_rename_active:0 "§B同步立绘与领袖姓名§!"
+ Setup_leader_rename_active_tip:0 "领袖重命名系统作用于具有§B光环特质§!的物种的领袖，统一领袖的§B姓名与立绘§!。\n在以下时机，领袖重命名系统将执行功能：\n    每5年的§U2月14日§!\n    任意具有§B光环特质§!的物种编辑完成\n    在§B什亭之匣-领袖储备§!中由玩家手动激活"
+ Setup_leader_rename_add_club_trait:0 "§B添加 社团 特殊特质§!"
+ Setup_leader_rename_add_club_trait_tip:0 "领袖重命名系统会同时添加社团特殊特质，这些特质仅作用于内阁席位。"
+ Setup_leader_rename_add_leader_trait:0 "§B添加 个人 特殊特质§!"
+ Setup_leader_rename_add_leader_trait_tip:0 "领袖重命名系统会同时为等级高于3级的领袖添加个人特殊特质。"
+
 
  Angel24_title:0 "§M天使24§!"
  Angel24_tip:0 "使用$energy_with_icon$、£sr_pyroxenes£$sr_pyroxenes$和£sr_keystone£$sr_keystone$购买物品"
