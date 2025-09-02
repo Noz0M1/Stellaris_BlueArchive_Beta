@@ -2199,19 +2199,20 @@
  Setup_crisis_display:0 "[GetBACrisisLevelSetting]"
 
  Setup_colorize_title:0 "§M色彩解析度§!"
- Setup_colorize_tip:0 "调整§B$auth_kivotos$§!国家的§_色彩解析度§!变化值。\n§R警告：剧烈调整此数值会带来难以预期的走向§!\n\n§B增长倍率§!：任何§_色彩解析度§!增加时都会按此值倍增。\n§C衰减指数§!：每年§_色彩解析度§!都会自然衰减，此值越低则衰减越快。"
+ Setup_colorize_tip:0 "调整§B$auth_kivotos$§!国家的§_色彩解析度§!变化值。\n§R警告：剧烈调整此数值会带来难以预期的走向§!\n\n§B增长倍率§!：§_色彩解析度§!增加值按此值倍增。\n§C衰减指数§!：§_色彩解析度§!的每年度衰减比率。"
  Setup_colorize_mult:0 "§B增长倍率§!"
- Setup_colorize_dec:0 "§C衰减指数§!"
+ Setup_colorize_dec:0 "§C衰减指数§!"+
  Setup_colorize_mult_display:0 "§B[root.BA_Setting_colorize_mult]%§!"
  Setup_colorize_dec_display:0 "§C[root.BA_Setting_colorize_dec]%§!"
 
  Setup_leader_rename_title:0 "§M领袖重命名§!"
- Setup_leader_rename_active:0 "§B同步立绘与领袖姓名§!"
+ Setup_leader_rename_active:0 "§B同步领袖立绘与姓名§!"
  Setup_leader_rename_active_tip:0 "领袖重命名系统作用于具有§B光环特质§!的物种的领袖，统一领袖的§B姓名与立绘§!。\n在以下时机，领袖重命名系统将执行功能：\n    每5年的§U2月14日§!\n    任意具有§B光环特质§!的物种编辑完成\n    在§B什亭之匣-领袖储备§!中由玩家手动激活"
+ Setup_leader_rename_deactive_tip:0 "领袖重命名系统关闭时，此项设置不可用"
  Setup_leader_rename_add_club_trait:0 "§B添加 社团 特殊特质§!"
- Setup_leader_rename_add_club_trait_tip:0 "领袖重命名系统会同时添加社团特殊特质，这些特质仅作用于内阁席位。"
- Setup_leader_rename_add_leader_trait:0 "§B添加 个人 特殊特质§!"
- Setup_leader_rename_add_leader_trait_tip:0 "领袖重命名系统会同时为等级高于3级的领袖添加个人特殊特质。"
+ Setup_leader_rename_add_club_trait_tip:0 "领袖重命名系统会同时根据所属社团添加特殊特质，这些特质仅作用于内阁席位。"
+ Setup_leader_rename_add_skin_trait:0 "§B添加 个人 特殊特质§!"
+ Setup_leader_rename_add_skin_trait_tip:0 "领袖重命名系统会同时为等级高于3级的领袖添加个人特殊特质。"
 
 
  Angel24_title:0 "§M天使24§!"

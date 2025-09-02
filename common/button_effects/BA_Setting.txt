@@ -361,43 +361,138 @@ button_effect_BA_setup_colorize_dec_right_double = {
 
 ### 领袖重命名
 #总开关
-button_effect_BA_setup_leader_rename_on = {
+button_effect_BA_setup_leader_rename_detail = {
 	allow = {
-        always = yes
+		always = yes
 	}
 	potential = {
-        hidden_trigger = {
-            has_country_flag = BA_Setting_leader_rename_off
-        }
+		always = yes
 	}
 	effect = {
-        custom_tooltip = Setup_leader_rename_active_tip
-        hidden_effect = {
-            remove_country_flag = BA_Setting_leader_rename_off
-            set_country_flag = BA_Setting_leader_rename_on
-        }
+		custom_tooltip = Setup_leader_rename_active_tip
+	}
+}
+
+button_effect_BA_setup_leader_rename_on = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		hidden_trigger = {
+			NOT = {
+				has_country_flag = BA_Setting_leader_rename_on
+			}
+		}
+	}
+	effect = {
+		hidden_effect = {
+			set_country_flag = BA_Setting_leader_rename_on
+			set_country_flag = BA_Setting_leader_rename_add_club_trait
+			set_country_flag = BA_Setting_leader_rename_add_skin_trait
+		}
 	}
 }
 
 button_effect_BA_setup_leader_rename_off = {
-    allow = {
-        always = yes
-    }
-    potential = {
-        hidden_trigger = {
-            has_country_flag = BA_Setting_leader_rename_on
-        }
-    }
+	allow = {
+		always = yes
+	}
+	potential = {
+		hidden_trigger = {
+			has_country_flag = BA_Setting_leader_rename_on
+		}
+	}
 	effect = {
-        custom_tooltip = Setup_leader_rename_active_tip
-        hidden_effect = {
-            remove_country_flag = BA_Setting_leader_rename_on
-            set_country_flag = BA_Setting_leader_rename_off
-        }
-    }
+		hidden_effect = {
+			remove_country_flag = BA_Setting_leader_rename_on
+			remove_country_flag = BA_Setting_leader_rename_add_club_trait
+			remove_country_flag = BA_Setting_leader_rename_add_skin_trait
+		}
+	}
 }
 
 #社团特质
+button_effect_BA_setup_leader_rename_add_club_trait_on = {
+	allow = {
+		custom_tooltip = {
+			fail_text = Setup_leader_rename_deactive_tip
+			has_country_flag = BA_Setting_leader_rename_on
+		}
+	}
+	potential = {
+		hidden_trigger = {
+			NOT = {
+				has_country_flag = BA_Setting_leader_rename_add_club_trait
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = Setup_leader_rename_add_club_trait_tip
+		hidden_effect = {
+			set_country_flag = BA_Setting_leader_rename_add_club_trait
+		}
+	}
+}
 
+button_effect_BA_setup_leader_rename_add_club_trait_off = {
+	allow = {
+		custom_tooltip = {
+			fail_text = Setup_leader_rename_deactive_tip
+			has_country_flag = BA_Setting_leader_rename_on
+		}
+	}
+	potential = {
+		hidden_trigger = {
+			has_country_flag = BA_Setting_leader_rename_add_club_trait
+		}
+	}
+	effect = {
+		custom_tooltip = Setup_leader_rename_add_club_trait_tip
+		hidden_effect = {
+			remove_country_flag = BA_Setting_leader_rename_add_club_trait
+		}
+	}
+}
 
+#个人特质
+button_effect_BA_setup_leader_rename_add_skin_trait_on = {
+	allow = {
+		custom_tooltip = {
+			fail_text = Setup_leader_rename_deactive_tip
+			has_country_flag = BA_Setting_leader_rename_on
+		}
+	}
+	potential = {
+		hidden_trigger = {
+			NOT = {
+				has_country_flag = BA_Setting_leader_rename_add_skin_trait
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = Setup_leader_rename_add_skin_trait_tip
+		hidden_effect = {
+			set_country_flag = BA_Setting_leader_rename_add_skin_trait
+		}
+	}
+}
 
+button_effect_BA_setup_leader_rename_add_skin_trait_off = {
+	allow = {
+		custom_tooltip = {
+			fail_text = Setup_leader_rename_deactive_tip
+			has_country_flag = BA_Setting_leader_rename_on
+		}
+	}
+	potential = {
+		hidden_trigger = {
+			has_country_flag = BA_Setting_leader_rename_add_skin_trait
+		}
+	}
+	effect = {
+		custom_tooltip = Setup_leader_rename_add_skin_trait_tip
+		hidden_effect = {
+			remove_country_flag = BA_Setting_leader_rename_add_skin_trait
+		}
+	}
+}

@@ -224,9 +224,23 @@ country_event = {
 	}
 }
 
-#全局设置
+#全局设置触发器
 country_event = {
 	id = BA_Shittem.0002
+	is_triggered_only = yes
+	hide_window = yes
+	fire_only_once = yes
+	immediate = {
+		country_event = {
+			id = BA_Shittem.0003
+			days = 43
+		}
+	}
+}
+
+#全局设置界面
+country_event = {
+	id = BA_Shittem.0003
 	is_triggered_only = yes
 	title = BLANK_TEXT
 	diplomatic = yes
@@ -302,7 +316,7 @@ country_event = {
 				value = BA_colorize_dec
 			}
 			multiply_variable = {
-				which = BA_Setting_colorize_mult
+				which = BA_Setting_colorize_dec
 				value = 100
 			}
 		}
@@ -310,11 +324,15 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					has_global_flag = BA_leader_rename_deactivated
+					NOT = {
+						has_global_flag = BA_leader_rename_initialized
+					}
 				}
-				set_country_flag = BA_Setting_leader_rename_off
+				set_country_flag = BA_Setting_leader_rename_on
+				set_country_flag = BA_Setting_leader_rename_add_club_trait
+				set_country_flag = BA_Setting_leader_rename_add_skin_trait
 			}
-			else_if = {
+			if = {
 				limit = {
 					has_global_flag = BA_leader_rename_activated
 				}
@@ -331,14 +349,8 @@ country_event = {
 					limit = {
 						has_global_flag = BA_leader_rename_add_leader_trait
 					}
-					set_country_flag = BA_Setting_leader_rename_add_leader_trait
+					set_country_flag = BA_Setting_leader_rename_add_skin_trait
 				}
-			}
-			# 初始化为默认值
-			else = {
-				set_country_flag = BA_Setting_leader_rename_on
-				set_country_flag = BA_Setting_leader_rename_add_club_trait
-				set_country_flag = BA_Setting_leader_rename_add_leader_trait
 			}
 		}
 	}
@@ -447,11 +459,68 @@ country_event = {
 				}
 			}
 		}
+		# 应用领袖重命名设置
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = BA_Setting_leader_rename_on
+				}
+				set_global_flag = BA_leader_rename_activated
+				if = {
+					limit = {
+						has_country_flag = BA_Setting_leader_rename_add_club_trait
+					}
+					set_global_flag = BA_leader_rename_add_club_trait
+				}
+				else = {
+					remove_global_flag = BA_leader_rename_add_club_trait
+				}
+				if = {
+					limit = {
+						has_country_flag = BA_Setting_leader_rename_add_skin_trait
+					}
+					set_global_flag = BA_leader_rename_add_skin_trait
+				}
+				else = {
+					remove_global_flag = BA_leader_rename_add_skin_trait
+				}
+				# 执行初始化或修复
+				hidden_effect = {
+					if = {
+						limit = {
+							has_global_flag = BA_leader_rename_initialized
+						}
+						country_event = {
+							id = BA_rename.1006
+						}
+					}
+					else = {
+						every_country = {
+							limit = {
+								is_country_type = default
+							}
+							set_global_flag = BA_leader_rename_initialized
+							country_event = {
+								id = BA_rename.1003
+							}
+						}
+					}
+				}
+			}
+			else = {
+				remove_global_flag = BA_leader_rename_activated
+				remove_global_flag = BA_leader_rename_add_club_trait
+				remove_global_flag = BA_leader_rename_add_skin_trait
+			}
+		}
 		# 清理
 		hidden_effect = {
 			clear_variable = BA_Setting_Crisis
 			clear_variable = BA_Setting_colorize_mult
 			clear_variable = BA_Setting_colorize_dec
+			remove_country_flag = BA_Setting_leader_rename_on
+			remove_country_flag = BA_Setting_leader_rename_add_club_trait
+			remove_country_flag = BA_Setting_leader_rename_add_skin_trait
 		}
 	}
 }

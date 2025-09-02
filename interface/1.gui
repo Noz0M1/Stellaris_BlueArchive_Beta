@@ -258,7 +258,7 @@ guiTypes = {
             effectButtonType = {
                 name = BA_UI_game_setup_leader_rename_detail
                 position = { x = 297  y = 8 }
-                effect = button_effect_BA_setup_crisis_detail
+                effect = button_effect_BA_setup_leader_rename_detail
                 quadTextureSprite = BA_UI_Setting_slide_detail
                 scale = 0.65
             }
@@ -266,15 +266,15 @@ guiTypes = {
             effectButtonType = {
                 name = BA_UI_game_setup_leader_rename_switch_on
                 position = { x = 30  y = 70 }
-                effect = button_effect_BA_setup_crisis_detail
-                quadTextureSprite = BA_UI_Setting_checkbox_active
+                effect = button_effect_BA_setup_leader_rename_on
+                quadTextureSprite = BA_UI_Setting_checkbox_disactive
                 scale = 0.5
             }
             effectButtonType = {
                 name = BA_UI_game_setup_leader_rename_switch_off
                 position = { x = 30  y = 70 }
-                effect = button_effect_BA_setup_crisis_detail
-                quadTextureSprite = BA_UI_Setting_checkbox_disactive
+                effect = button_effect_BA_setup_leader_rename_off
+                quadTextureSprite = BA_UI_Setting_checkbox_active
                 scale = 0.5
             }
             instantTextBoxType = {
@@ -289,24 +289,49 @@ guiTypes = {
             }
             ##
             effectButtonType = {
-                name = BA_UI_game_setup_leader_rename_trait_switch_on
-                position = { x = 30  y = 170 }
-                effect = button_effect_BA_setup_crisis_detail
-                quadTextureSprite = BA_UI_Setting_checkbox_active
-                scale = 0.5
-            }
-            effectButtonType = {
-                name = BA_UI_game_setup_leader_rename_trait_switch_off
-                position = { x = 30  y = 170 }
-                effect = button_effect_BA_setup_crisis_detail
+                name = BA_UI_game_setup_leader_rename_club_trait_switch_on
+                position = { x = 30  y = 150 }
+                effect = button_effect_BA_setup_leader_rename_add_club_trait_on
                 quadTextureSprite = BA_UI_Setting_checkbox_disactive
                 scale = 0.5
             }
+            effectButtonType = {
+                name = BA_UI_game_setup_leader_rename_club_trait_switch_off
+                position = { x = 30  y = 150 }
+                effect = button_effect_BA_setup_leader_rename_add_club_trait_off
+                quadTextureSprite = BA_UI_Setting_checkbox_active
+                scale = 0.5
+            }
             instantTextBoxType = {
-                name = BA_UI_game_setup_leader_rename_trait
-                text = Setup_leader_rename_add_leader_trait
+                name = BA_UI_game_setup_leader_rename_club_trait
+                text = Setup_leader_rename_add_club_trait
                 font = large_title_font_28
-                position = { x = 105  y = 182 }
+                position = { x = 105  y = 162 }
+                maxWidth = 543
+                maxHeight = 22
+                fixedSize = yes
+                alwaysTransparent = yes
+            }
+            ###
+            effectButtonType = {
+                name = BA_UI_game_setup_leader_rename_skin_trait_switch_on
+                position = { x = 30  y = 230 }
+                effect = button_effect_BA_setup_leader_rename_add_skin_trait_on
+                quadTextureSprite = BA_UI_Setting_checkbox_disactive
+                scale = 0.5
+            }
+            effectButtonType = {
+                name = BA_UI_game_setup_leader_rename_skin_trait_switch_off
+                position = { x = 30  y = 230 }
+                effect = button_effect_BA_setup_leader_rename_add_skin_trait_off
+                quadTextureSprite = BA_UI_Setting_checkbox_active
+                scale = 0.5
+            }
+            instantTextBoxType = {
+                name = BA_UI_game_setup_leader_rename_skin_trait
+                text = Setup_leader_rename_add_skin_trait
+                font = large_title_font_28
+                position = { x = 105  y = 242 }
                 maxWidth = 543
                 maxHeight = 22
                 fixedSize = yes

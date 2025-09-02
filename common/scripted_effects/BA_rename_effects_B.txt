@@ -1011,26 +1011,18 @@ BA_iterate_rename_fix_flag = {
 			#按命名标志命名
 			BA_rename_leader = yes
 			#移除特质并重新添加
+			BA_remove_sp_trait = yes
 			if = {
 				limit = {
-					OR = {
-						has_global_flag = BA_leader_rename_add_club_trait
-						has_global_flag = BA_leader_rename_add_skin_trait
-					}
+					has_global_flag = BA_leader_rename_add_club_trait
 				}
-				BA_remove_sp_trait = yes
-				if = {
-					limit = {
-						has_global_flag = BA_leader_rename_add_club_trait
-					}
-					BA_add_club_trait = yes
+				BA_add_club_trait = yes
+			}
+			if = {
+				limit = {
+					has_global_flag = BA_leader_rename_add_skin_trait
 				}
-				if = {
-					limit = {
-						has_global_flag = BA_leader_rename_add_skin_trait
-					}
-					BA_change_skin_trait = yes
-				}
+				BA_change_skin_trait = yes
 			}
 		}
 	}
