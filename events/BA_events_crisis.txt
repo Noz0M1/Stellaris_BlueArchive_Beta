@@ -693,7 +693,7 @@ country_event = {
 			last_created_leader = {
 				set_leader_flag = BA_event_leader
 				set_age = 16
-				change_leader_portrait = BA_125
+				change_leader_portrait = BA_leader_062
 			}
 			create_fleet = {
 				name = Soft_determination
@@ -2421,7 +2421,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_Aris
+		portrait = BA_leader_093
 		room = BA_01_room
 	}
 	desc = {

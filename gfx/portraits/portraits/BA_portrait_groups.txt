@@ -1,7 +1,7 @@
-# leader special species
 portrait_groups = {
+	# leader special species
 	"Schale_leaders" = {
-		default = "BA_18"
+		default = "BA_leader_119"
 		game_setup = {
 			add = {
 				portraits = {
@@ -32,10 +32,7 @@ portrait_groups = {
 			}
 		}
 	}
-}
-
-# Aris
-portrait_groups = {
+	# Aris
 	"Aris" = {
 		default = "Aris01"
 		game_setup = {
@@ -79,7 +76,7 @@ portrait_groups = {
 			}
 		}
 		#pop scope
-		pop = {
+		pop_group = {
 			#for a specific pop
 			add = {
 				portraits = {
@@ -120,7 +117,7 @@ portrait_groups = {
 				}
 			}
 		}
-		#leader scope 
+		#leader scope
 		ruler = {
 			add = {
 				portraits = {
