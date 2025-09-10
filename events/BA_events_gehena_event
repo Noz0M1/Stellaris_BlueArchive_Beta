@@ -1,0 +1,985 @@
+namespace = BA_Gehena_Event
+################
+##命名规则：00XX是日奈线 01XX是伊吕波线路
+##To do：等待国策相关扳机
+##国策与事件对应关系：旌旗之下 —— 事件0001
+##一网打尽 —— 事件0002
+##疾风怒涛 —— 事件0004
+##新世界的火种 —— 事件0006 同时 这里需要写一个判断 按照日奈/伊吕波谁当选话事人分别触发事件 参见事件0006注释
+##行政官的铁腕 —— 事件0011
+##步步为营 —— 事件0016
+##暗潮涌动 —— 事件0101
+##先发制人 —— 事件0102
+##霸权态势 —— 事件0104
+##幕后准则 —— 事件0112 同时 也会触发事件 0201 也就是日奈的日常线 这个最好错开几天触发 N佬你来决定吧
+##昭昭天命 —— 事件0116
+##晚宴事件自动在剧情线最后一个事件后6年触发
+
+
+
+##日奈线1 国策：旌旗之下
+country_event = {
+	id = BA_Gehena_Event.0001
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0001.name"
+	desc = "BA_Gehena_Event.0001.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0001.a
+		hidden_effect = {
+
+		}
+	}
+}
+
+##日奈线2 国策：一网打尽
+country_event = {
+	id = BA_Gehena_Event.0002
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0002.name"
+	desc = "BA_Gehena_Event.0002.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0002.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0003
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_Gehena_Event.0003
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0003.name"
+	desc = "BA_Gehena_Event.0003.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0003.a
+		hidden_effect = {
+
+		}
+	}
+}
+
+##日奈线3 国策：疾风怒涛
+country_event = {
+	id = BA_Gehena_Event.0004
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0004.name"
+	desc = "BA_Gehena_Event.0004.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0004.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0005
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_Gehena_Event.0005
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0005.name"
+	desc = "BA_Gehena_Event.0005.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0005.a
+		hidden_effect = {
+
+		}
+	}
+}
+
+##国策：新世界火种 ——————这里添加一个判断 若日奈话语权＞168触发事件0007 若168话语权＞日奈触发事件0106
+country_event = {
+	id = BA_Gehena_Event.0006
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0006.name"
+	desc = "BA_Gehena_Event.0006.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0006.a
+		hidden_effect = {
+
+		}
+	}
+}
+
+#与日奈的交流
+country_event = {
+	id = BA_Gehena_Event.0007
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0007.name"
+	desc = "BA_Gehena_Event.0007.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0007.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0008
+				days = 2
+			}
+		}
+	}
+}
+
+#风纪委的通告
+country_event = {
+	id = BA_Gehena_Event.0008
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0008.name"
+	desc = "BA_Gehena_Event.0008.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0008.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0009
+				days = 365
+			}
+		}
+	}
+}
+
+#权力让渡
+country_event = {
+	id = BA_Gehena_Event.0009
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0009.name"
+	desc = "BA_Gehena_Event.0009.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0009.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0010
+				days = 365
+			}
+		}
+	}
+}
+
+#落寞惆怅
+country_event = {
+	id = BA_Gehena_Event.0010
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0010.name"
+	desc = "BA_Gehena_Event.0010.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0010.a
+		hidden_effect = {
+
+		}
+	}
+}
+
+#零容忍
+country_event = {
+	id = BA_Gehena_Event.0011
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0011.name"
+	desc = "BA_Gehena_Event.0011.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0011.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0012
+				days = 365
+			}
+		}
+	}
+}
+
+#睡不着的少女
+country_event = {
+	id = BA_Gehena_Event.0012
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0012.name"
+	desc = "BA_Gehena_Event.0012.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0012.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0013
+				days = 2
+			}
+		}
+	}
+}
+
+#屋檐下的安慰
+country_event = {
+	id = BA_Gehena_Event.0013
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0013.name"
+	desc = "BA_Gehena_Event.0013.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0013.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0014
+				days = 2
+			}
+		}
+	}
+}
+
+#久违的值班
+country_event = {
+	id = BA_Gehena_Event.0014
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0014.name"
+	desc = "BA_Gehena_Event.0014.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0014.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0015
+				days = 2
+			}
+		}
+	}
+}
+
+#从未体验过的一天
+country_event = {
+	id = BA_Gehena_Event.0015
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0015.name"
+	desc = "BA_Gehena_Event.0015.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0015.a
+		hidden_effect = {
+
+		}
+	}
+}
+
+#对策收缩于国内
+country_event = {
+	id = BA_Gehena_Event.0016
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0016.name"
+	desc = "BA_Gehena_Event.0016.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0016.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0017
+				days = 365
+			}
+		}
+	}
+}
+
+#第一次放手
+country_event = {
+	id = BA_Gehena_Event.0017
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0017.name"
+	desc = "BA_Gehena_Event.0017.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0017.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0018
+				days = 60
+			}
+		}
+	}
+}
+
+#逐渐舒张的真正炽热之心
+country_event = {
+	id = BA_Gehena_Event.0018
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0018.name"
+	desc = "BA_Gehena_Event.0018.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0018.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0019
+				days = 60
+			}
+		}
+	}
+}
+
+#格赫娜学子们的学园
+country_event = {
+	id = BA_Gehena_Event.0019
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0019.name"
+	desc = "BA_Gehena_Event.0019.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0019.a
+		hidden_effect = {
+			set_country_flag = gehena_dinner_hina
+			country_event = {
+				id = BA_Gehena_Event.0301
+				years = 6  #6年后触发晚宴
+			}
+		}
+	}
+}
+
+
+
+######伊吕波线
+
+
+
+#国策：暗潮涌动
+country_event = {
+	id = BA_Gehena_Event.0101
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0101.name"
+	desc = "BA_Gehena_Event.0101.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0101.a
+		hidden_effect = {
+
+		}
+	}
+}
+
+#先发制人
+country_event = {
+	id = BA_Gehena_Event.0102
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0102.name"
+	desc = "BA_Gehena_Event.0102.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0102.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0103
+				days = 2
+			}
+		}
+	}
+}
+
+#倾听伊吕波的担忧
+country_event = {
+	id = BA_Gehena_Event.0103
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0103.name"
+	desc = "BA_Gehena_Event.0103.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0103.a
+		hidden_effect = {
+
+		}
+	}
+}
+
+#霸权态势
+country_event = {
+	id = BA_Gehena_Event.0104
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0104.name"
+	desc = "BA_Gehena_Event.0104.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0104.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0105
+				days = 2
+			}
+		}
+	}
+}
+
+#对话语权的踌躇
+country_event = {
+	id = BA_Gehena_Event.0105
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0105.name"
+	desc = "BA_Gehena_Event.0105.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0105.a
+		hidden_effect = {
+
+		}
+	}
+}
+
+#新世界的火种：伊吕波线 ——与伊吕波的交流
+country_event = {
+	id = BA_Gehena_Event.0106
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0106.name"
+	desc = "BA_Gehena_Event.0106.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0106.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0107
+				days = 2
+			}
+		}
+	}
+}
+
+#万魔殿的通告
+country_event = {
+	id = BA_Gehena_Event.0107
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0107.name"
+	desc = "BA_Gehena_Event.0107.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0107.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0108
+				days = 365
+			}
+		}
+	}
+}
+
+#将治安机构和内务机构交还给风纪委
+country_event = {
+	id = BA_Gehena_Event.0108
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0108.name"
+	desc = "BA_Gehena_Event.0108.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0108.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0109
+				days = 30
+			}
+		}
+	}
+}
+
+#脱去担子的少女
+country_event = {
+	id = BA_Gehena_Event.0109
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0109.name"
+	desc = "BA_Gehena_Event.0109.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0109.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0110
+				days = 2
+			}
+		}
+	}
+}
+
+#伊吕波的担忧
+country_event = {
+	id = BA_Gehena_Event.0110
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0110.name"
+	desc = "BA_Gehena_Event.0110.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0110.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0111
+				days = 60
+			}
+		}
+	}	
+}
+
+#重担的内阁
+country_event = {
+	id = BA_Gehena_Event.0111
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0111.name"
+	desc = "BA_Gehena_Event.0111.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0111.a
+		hidden_effect = {
+
+		}
+	}
+}
+
+#伊吹的想法
+country_event = {
+	id = BA_Gehena_Event.0112
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0112.name"
+	desc = "BA_Gehena_Event.0112.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0112.a
+		hidden_effect = {
+			set_country_flag = Ibuki_leader_flag
+			country_event = {
+				id = BA_Gehena_Event.0113
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = BA_Gehena_Event.0112.b
+		hidden_effect = {
+			set_country_flag = Iroha_leader_flag
+			country_event = {
+				id = BA_Gehena_Event.0121
+				days = 2
+			}
+		}
+	}
+}
+
+#举旗人的要领 伊吹线
+country_event = {
+	id = BA_Gehena_Event.0113
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0113.name"
+	desc = "BA_Gehena_Event.0113.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0113.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0114
+				days = 365
+			}
+		}
+	}
+}
+
+#自我懵懂的信念 伊吹线
+country_event = {
+	id = BA_Gehena_Event.0114
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0114.name"
+	desc = "BA_Gehena_Event.0114.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0114.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0115
+				days = 365
+			}
+		}
+	}
+}
+
+#伊吕波的认可 伊吹线
+country_event = {
+	id = BA_Gehena_Event.0115
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0115.name"
+	desc = "BA_Gehena_Event.0115.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0115.a
+		hidden_effect = {
+
+		}
+	}
+}
+
+#格赫娜的大军改 共通
+country_event = {
+	id = BA_Gehena_Event.0116
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0116.name"
+	desc = "BA_Gehena_Event.0116.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0116.a
+		hidden_effect = {
+            switch = {
+	    		trigger = has_country_flag
+		    	Ibuki_leader_flag = {
+					country_event = {
+						id = BA_Gehena_Event.0118
+						days = 2
+					}
+				}
+				Iroha_leader_flag = {
+					country_event = {
+						id = BA_Gehena_Event.0124
+						days = 2
+					}
+				}
+			}
+		}
+	}
+}
+
+#夏莱的一天 伊吹线
+country_event = {
+	id = BA_Gehena_Event.0117
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0117.name"
+	desc = "BA_Gehena_Event.0117.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0117.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0118
+				days = 365
+			}
+		}
+	}
+}
+
+#独立的扛旗人 伊吹线
+country_event = {
+	id = BA_Gehena_Event.0118
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0118.name"
+	desc = "BA_Gehena_Event.0118.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0118.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0119
+				days = 2
+			}
+		}
+	}
+}
+
+#基沃托斯“最高峰”的风景 伊吹线
+country_event = {
+	id = BA_Gehena_Event.0119
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0119.name"
+	desc = "BA_Gehena_Event.0119.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0119.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0120
+				days = 2
+			}
+		}
+	}
+}
+
+#伊吕波的想法和伊吹的心意 伊吹线
+country_event = {
+	id = BA_Gehena_Event.0120
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0120.name"
+	desc = "BA_Gehena_Event.0120.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0120.a
+		hidden_effect = {
+			set_country_flag = gehena_dinner_ibuki
+			country_event = {
+				id = BA_Gehena_Event.0301
+				years = 6  #6年后触发晚宴
+			}
+		}
+	}
+	option = {
+		name = BA_Gehena_Event.0120.b
+		hidden_effect = {
+			set_country_flag = gehena_dinner_ibuki_and_iroha
+			country_event = {
+				id = BA_Gehena_Event.0301
+				years = 6  #6年后触发晚宴
+			}
+		}
+	}
+}
+
+#举旗人的自重 168线
+country_event = {
+	id = BA_Gehena_Event.0121
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0121.name"
+	desc = "BA_Gehena_Event.0121.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0121.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0122
+				days = 365
+			}
+		}
+	}
+}
+
+#小小的摸鱼时刻 168线
+country_event = {
+	id = BA_Gehena_Event.0122
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0122.name"
+	desc = "BA_Gehena_Event.0122.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0122.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0123
+				days = 365
+			}
+		}
+	}
+}
+
+#更重的担子 168线
+country_event = {
+	id = BA_Gehena_Event.0123
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0123.name"
+	desc = "BA_Gehena_Event.0123.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0123.a
+		hidden_effect = {
+
+		}
+	}
+}
+
+#不堪重负 168线
+country_event = {
+	id = BA_Gehena_Event.0124
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0124.name"
+	desc = "BA_Gehena_Event.0124.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0124.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0125
+				days = 2
+			}
+		}
+	}
+}
+
+#久违的摸鱼室 168线
+country_event = {
+	id = BA_Gehena_Event.0125
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0125.name"
+	desc = "BA_Gehena_Event.0125.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0125.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0126
+				days = 60
+			}
+		}
+	}
+}
+
+#举旗人的变革 168线
+country_event = {
+	id = BA_Gehena_Event.0126
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0126.name"
+	desc = "BA_Gehena_Event.0126.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0126.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0127
+				days = 60
+			}
+		}
+	}
+}
+
+#所依靠的另一半 168线
+country_event = {
+	id = BA_Gehena_Event.0127
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0127.name"
+	desc = "BA_Gehena_Event.0127.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0127.a
+		hidden_effect = {
+			country_event = {
+				id = BA_Gehena_Event.0128
+				days = 60
+			}
+		}
+	}
+}
+
+#优化完毕的内阁 168线
+country_event = {
+	id = BA_Gehena_Event.0128
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0128.name"
+	desc = "BA_Gehena_Event.0128.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0128.a
+		hidden_effect = {
+			set_country_flag = gehena_dinner_iroha
+			country_event = {
+				id = BA_Gehena_Event.0301
+				years = 6  #6年后触发晚宴
+			}
+		}
+	}
+}
+
+
+#日奈日常事件1
+country_event = {
+	id = BA_Gehena_Event.0201
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0201.name"
+	desc = "BA_Gehena_Event.0201.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0201.a
+		hidden_effect = {
+
+		}
+	}
+}
+
+
+#格黑娜的晚宴
+country_event = {
+	id = BA_Gehena_Event.0301
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0301.name"
+	desc = "BA_Gehena_Event.0301.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0301.a
+		hidden_effect = {
+            switch = {
+	    		trigger = has_country_flag
+		    	gehena_dinner_hina = {
+					country_event = {
+						id = BA_Gehena_Event.0302
+						days = 2
+					}
+				}
+				gehena_dinner_iroha = {
+					country_event = {
+						id = BA_Gehena_Event.0303
+						days = 2
+					}
+				}
+				gehena_dinner_ibuki = {
+					country_event = {
+						id = BA_Gehena_Event.0304
+						days = 2
+					}
+				}
+				gehena_dinner_ibuki_and_iroha = {
+					country_event = {
+						id = BA_Gehena_Event.0305
+						days = 2
+					}
+				}
+			}
+		}
+	}
+}
+
+#格黑娜的晚宴 ——ALL FOR HINA
+country_event = {
+	id = BA_Gehena_Event.0302
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0302.name"
+	desc = "BA_Gehena_Event.0302.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0302.a
+		hidden_effect = {
+
+		}
+	}
+}
+
+#格黑娜的晚宴 ——属于你的时间 168
+country_event = {
+	id = BA_Gehena_Event.0303
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0303.name"
+	desc = "BA_Gehena_Event.0303.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0303.a
+		hidden_effect = {
+
+		}
+	}
+}
+
+#格黑娜的晚宴 ——她的决心 伊吹
+country_event = {
+	id = BA_Gehena_Event.0304
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0304.name"
+	desc = "BA_Gehena_Event.0304.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0304.a
+		hidden_effect = {
+
+		}
+	}
+}
+
+#格黑娜的晚宴 二人的决意 168+伊吹
+country_event = {
+	id = BA_Gehena_Event.0305
+	is_triggered_only = yes
+	title = "BA_Gehena_Event.0305.name"
+	desc = "BA_Gehena_Event.0305.desc"
+	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	option = {
+		name = BA_Gehena_Event.0305.a
+		hidden_effect = {
+
+		}
+	}
+}
