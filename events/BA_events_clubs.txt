@@ -2,6 +2,13 @@ namespace = BA_club
 ####################
 ##### 创建社团
 ####################
+
+#######提交了联邦学生长的交流事件
+#######星野8001 日奈8101 未花8201 邮箱8301
+#######如果认为有必要采用这些事件请N佬手动添加触发的入口
+#######考虑到社团UI重置过 我不熟悉新版的代码
+
+
 country_event = {
 	id = BA_club.0001
 	is_triggered_only = yes
@@ -3324,5 +3331,1082 @@ country_event = {
 		set_country_flag = allow_Festival_operations_department
 		set_country_flag = allow_Xuanwu_promenade
 		set_country_flag = allow_Publishing_department
+	}
+}
+
+#######                 联邦学生会                 #######
+###  星野  ###
+country_event = {
+	id = BA_club.8001
+	title = Hoshino
+	desc = Hoshino_desc1
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = hoshino0000
+		room = BA_02_room
+	}
+	#对现状的看法
+	option = {
+		name = Hoshino_about_now
+		custom_tooltip = Hoshino_about_now.tip
+		response_text = Hoshino_about_now.1
+		response_text = Hoshino_about_now.2
+	}
+	#闲聊
+	option = {
+		name = Hoshino_chat
+		custom_tooltip = Hoshino_chat.tip
+		hidden_effect = {
+			random_list = {
+				10 = {
+					country_event = {
+						id = BA_club.8002
+					}
+				}
+				10 = {
+					country_event = {
+						id = BA_club.8003
+					}
+				}
+				0 = {
+					modifier = {
+						add = 20
+						NOT = {
+							has_country_flag = dream_of_blue_wheel_done
+						}
+					}
+					country_event = {
+						id = BA_club.8004
+					}
+				}
+				10 = {
+					country_event = {
+						id = BA_club.8005
+					}
+				}
+				10 = {
+					country_event = {
+						id = BA_club.8006
+					}
+				}
+				10 = {
+					country_event = {
+						id = BA_club.8007
+					}
+				}
+				0 = {
+					modifier = {
+						add = 20
+						has_country_flag = hoshino_daisuki
+					}
+					country_event = {
+						id = BA_club.8008
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = Hoshino_event
+		custom_tooltip = Hoshino_event.tip
+		allow = {
+			custom_tooltip = {
+				fail_text = hoshino_event_fail2
+				has_country_flag = dream_of_blue_wheel_done
+			}
+		}
+		hidden_effect = {
+			# country_event = {
+			# 	id = BA_The_legacy_of_the_dream.0010
+			# }
+		}
+	}
+
+	#TODO 这个我不会写 交给你了N佬 要实现的内容我放在txt里了 一定要记得写哟~ by一只小五
+	option = {
+		name = mouthly_mission
+		custom_tooltip = Hoshino_mission.tip
+		response_text = Hoshino_mission_re.1
+		hidden_effect = {
+
+		}
+	}
+
+	#返回
+	option = {
+		name = BA_Hoshino_exit
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.0051
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8002
+	title = Hoshino
+	desc = Hoshino_chat.1
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = hoshino0002
+		room = BA_02_room
+	}
+	option = {
+		name = Hoshino_chat.1.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8001
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8003
+	title = Hoshino
+	desc = Hoshino_chat.2
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = hoshino0010
+		room = BA_02_room
+	}
+	option = {
+		name = Hoshino_chat.2.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8001
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8004
+	title = Hoshino
+	desc = Hoshino_chat.3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = hoshino0015
+		room = BA_02_room
+	}
+	option = {
+		name = Hoshino_chat.3.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8001
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8005
+	title = Hoshino
+	desc = Hoshino_chat.4
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = hoshino0010
+		room = BA_02_room
+	}
+	option = {
+		name = Hoshino_chat.4.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8001
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8006
+	title = Hoshino
+	desc = Hoshino_chat.5
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = hoshino0010
+		room = BA_02_room
+	}
+	option = {
+		name = Hoshino_chat.5.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8001
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8007
+	title = Hoshino
+	desc = Hoshino_chat.6
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = hoshino0010
+		room = BA_02_room
+	}
+	option = {
+		name = Hoshino_chat.6.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8001
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8008
+	title = Hoshino
+	desc = Hoshino_chat.7
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = hoshino0001
+		room = BA_02_room
+	}
+	option = {
+		name = Hoshino_chat.7.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8009
+			}
+		}
+	}
+	option = {
+		name = Hoshino_chat.7.b
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8009
+			}
+		}
+	}
+	option = {
+		name = Hoshino_chat.7.c
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8010
+			}
+		}
+	}
+	option = {
+		name = Hoshino_chat.7.d
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8011
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8009
+	title = Hoshino
+	desc = Hoshino_chat.8
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = hoshino0003
+		room = BA_02_room
+	}
+	option = {
+		name = Hoshino_chat.8.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8001
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8010
+	title = Hoshino
+	desc = Hoshino_chat.9
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = hoshino0012
+		room = BA_02_room
+	}
+	option = {
+		name = Hoshino_chat.9.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8001
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8011
+	title = Hoshino
+	desc = Hoshino_chat.10
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = hoshino0008
+		room = BA_02_room
+	}
+	option = {
+		name = Hoshino_chat.10.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8001
+			}
+		}
+	}
+}
+
+###  日奈  ###
+country_event = {
+	id = BA_club.8101
+	title = Hina
+	desc = Hina_desc1
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Hina0003
+		room = BA_02_room
+	}
+	#对现状的看法
+	option = {
+		name = Hina_about_now
+		custom_tooltip = Hina_about_now.tip
+		response_text = Hina_about_now.1
+		response_text = Hina_about_now.2
+	}
+	#闲聊
+	option = {
+		name = Hina_chat
+		custom_tooltip = Hina_chat.tip
+		hidden_effect = {
+			random_list = {
+				10 = {
+					country_event = {
+						id = BA_club.8102
+					}
+				}
+				10 = {
+					country_event = {
+						id = BA_club.8103
+					}
+				}
+				10 = {
+					country_event = {
+						id = BA_club.8104
+					}
+				}
+				10 = {
+					country_event = {
+						id = BA_club.8105
+					}
+				}
+			}
+		}
+	}
+
+    #TODO 这个我不会写 交给你了N佬 要实现的内容我放在txt里了 一定要记得写哟~ by一只小五
+    option = {
+		name = mouthly_mission
+		custom_tooltip = Hina_mission.tip
+        response_text = Hina_mission_re.1
+		hidden_effect = {
+            
+		}
+	}
+
+	#返回
+	option = {
+		name = BA_Hina_exit
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.0051
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8102
+	title = Hina
+	desc = Hina_chat.1
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Hina0010
+		room = BA_02_room
+	}
+	option = {
+		name = Hina_chat.1.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8101
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8103
+	title = Hina
+	desc = Hina_chat.2
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Hina0006
+		room = BA_02_room
+	}
+	option = {
+		name = Hina_chat.2.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8101
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8104
+	title = Hina
+	desc = Hina_chat.3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Hina0001
+		room = BA_02_room
+	}
+	option = {
+		name = Hina_chat.3.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8101
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8105
+	title = Hina
+	desc = Hina_chat.4
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Hina0004
+		room = BA_02_room
+	}
+	option = {
+		name = Hina_chat.4.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8101
+			}
+		}
+	}
+}
+
+
+#### 未花 ####
+country_event = {
+	id = BA_club.8201
+	title = Mika
+	desc = Mika_desc1
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0013
+		room = BA_02_room
+	}
+	#对现状的看法
+	option = {
+		name = Mika_about_now
+		custom_tooltip = Mika_about_now.tip
+		response_text = Mika_about_now.1
+		response_text = Mika_about_now.2
+		response_text = Mika_about_now.3
+		response_text = Mika_about_now.4
+		response_text = Mika_about_now.5
+		response_text = Mika_about_now.6
+	}
+	#闲聊
+	option = {
+		name = Mika_chat
+		custom_tooltip = Mika_chat.tip
+		hidden_effect = {
+			random_list = {
+				10 = {
+					modifier = {
+						subtract = 10
+						has_country_flag = mika_daisuki
+					}
+					country_event = {
+						id = BA_club.8202
+					}
+				}
+				10 = {
+					modifier = {
+						subtract = 10
+						has_country_flag = mika_daisuki
+					}
+					country_event = {
+						id = BA_club.8203
+					}
+				}
+				10 = {
+					modifier = {
+						subtract = 10
+						has_country_flag = mika_daisuki
+					}
+					country_event = {
+						id = BA_club.8204
+					}
+				}
+				10 = {
+					modifier = {
+						subtract = 10
+						has_country_flag = mika_daisuki
+					}
+					country_event = {
+						id = BA_club.8205
+					}
+				}
+				0 = {
+					modifier = {
+						add = 20
+						has_country_flag = mika_daisuki
+					}
+					country_event = {
+						id = BA_club.8206
+					}
+				}
+				0 = {
+					modifier = {
+						add = 20
+						has_country_flag = mika_daisuki
+					}
+					country_event = {
+						id = BA_club.8207
+					}
+				}
+				0 = {
+					modifier = {
+						add = 20
+						has_country_flag = mika_daisuki
+					}
+					country_event = {
+						id = BA_club.8208
+					}
+				}
+				0 = {
+					modifier = {
+						add = 20
+						has_country_flag = mika_daisuki
+					}
+					country_event = {
+						id = BA_club.8209
+					}
+				}
+				0 = {
+					modifier = {
+						add = 20
+						has_country_flag = mika_daisuki
+					}
+					country_event = {
+						id = BA_club.8210
+					}
+				}
+				0 = {
+					modifier = {
+						add = 20
+						has_country_flag = mika_daisuki
+					}
+					country_event = {
+						id = BA_club.8211
+					}
+				}
+				0 = {
+					modifier = {
+						add = 20
+						has_country_flag = mika_daisuki
+					}
+					country_event = {
+						id = BA_club.8212
+					}
+				}
+			}
+		}
+	}
+
+    #TODO mika的作者没有给出学生会的委托 要不N佬你帮他想一想
+    option = {
+		name = mouthly_mission
+		custom_tooltip = Mika_mission.tip
+        response_text = Mika_mission_re.1
+		hidden_effect = {
+            
+		}
+	}
+
+	#返回
+	option = {
+		name = BA_Mika_exit
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.0051
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8202
+	title = Mika
+	desc = Mika_chat.1
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0012
+		room = BA_02_room
+	}
+	option = {
+		name = Mika_chat.1.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8201
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8203
+	title = Mika
+	desc = Mika_chat.2
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0011
+		room = BA_02_room
+	}
+	option = {
+		name = Mika_chat.2.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8201
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8204
+	title = Mika
+	desc = Mika_chat.3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0009
+		room = BA_02_room
+	}
+	option = {
+		name = Mika_chat.3.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8201
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8205
+	title = Mika
+	desc = Mika_chat.4
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0006
+		room = BA_02_room
+	}
+	option = {
+		name = Mika_chat.4.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8201
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8206
+	title = Mika
+	desc = Mika_chat.5
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0006
+		room = BA_02_room
+	}
+	option = {
+		name = Mika_chat.5.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8201
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8207
+	title = Mika
+	desc = Mika_chat.6
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0006
+		room = BA_02_room
+	}
+	option = {
+		name = Mika_chat.6.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8201
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = BA_club.8208
+	title = Mika
+	desc = Mika_chat.7
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0017
+		room = BA_02_room
+	}
+	option = {
+		name = Mika_chat.7.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8201
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8209
+	title = Mika
+	desc = Mika_chat.8
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0009
+		room = BA_02_room
+	}
+	option = {
+		name = Mika_chat.8.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8201
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8210
+	title = Mika
+	desc = Mika_chat.9
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0029
+		room = BA_02_room
+	}
+	option = {
+		name = Mika_chat.9.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8201
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8211
+	title = Mika
+	desc = Mika_chat.10
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0025
+		room = BA_02_room
+	}
+	option = {
+		name = Mika_chat.10.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8201
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8212
+	title = Mika
+	desc = Mika_chat.11
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0025
+		room = BA_02_room
+	}
+	option = {
+		name = Mika_chat.11.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8201
+			}
+		}
+	}
+}
+
+
+
+###优香
+country_event = {
+	id = BA_club.8301
+	title = Yuuka
+	desc = Yuuka_desc1
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Yuuka0001
+		room = BA_02_room
+	}
+	#对现状的看法
+	option = {
+		name = Yuuka_about_now
+		custom_tooltip = Yuuka_about_now.tip
+		response_text = Yuuka_about_now.1
+		response_text = Yuuka_about_now.2
+	}
+	#闲聊
+	option = {
+		name = Yuuka_chat
+		custom_tooltip = Yuuka_chat.tip
+		hidden_effect = {
+			random_list = {
+				10 = {
+					country_event = {
+						id = BA_club.8302
+					}
+				}
+				10 = {
+					country_event = {
+						id = BA_club.8303
+					}
+				}
+				10 = {
+					country_event = {
+						id = BA_club.8304
+					}
+				}
+				10 = {
+					country_event = {
+						id = BA_club.8305
+					}
+				}
+			}
+		}
+	}
+
+    #TODO 这个我不会写 交给你了N佬 要实现的内容我放在txt里了 一定要记得写哟~ by一只小五
+    option = {
+		name = mouthly_mission
+		custom_tooltip = Yuuka_mission.tip
+        response_text = Yuuka_mission_re.1
+		hidden_effect = {
+            
+		}
+	}
+
+	#返回
+	option = {
+		name = BA_Yuuka_exit
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.0051
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8302
+	title = Yuuka
+	desc = Yuuka_chat.1
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Yuuka0002
+		room = BA_02_room
+	}
+	option = {
+		name = Yuuka_chat.1.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8301
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8303
+	title = Yuuka
+	desc = Yuuka_chat.2
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Yuuka0002
+		room = BA_02_room
+	}
+	option = {
+		name = Yuuka_chat.2.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8301
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8304
+	title = Yuuka
+	desc = Yuuka_chat.3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Yuuka0002
+		room = BA_02_room
+	}
+	option = {
+		name = Yuuka_chat.3.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8301
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_club.8305
+	title = Yuuka
+	desc = Yuuka_chat.4
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Yuuka0002
+		room = BA_02_room
+	}
+	option = {
+		name = Yuuka_chat.4.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_club.8301
+			}
+		}
 	}
 }
