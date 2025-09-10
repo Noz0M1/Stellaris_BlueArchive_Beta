@@ -68,6 +68,51 @@ special_project = {
 	}
 }
 
+#mika剧情线相关项目
+special_project = {
+	key = "BA_leaders_story_mika_memories"
+	days_to_research = 360
+	picture = GFX_BA_ring_tech
+
+	event_scope = country_event
+
+	on_success = {
+		country_event = {
+			id = BA_origin.0311
+		}
+	}
+}
+
+special_project = {
+	key = "BA_leaders_story_mika_fixed"
+	cost = 3000
+	picture = GFX_BA_ring_tech
+	tech_department = engineering_technology
+
+	event_scope = country_event
+
+	on_success = {
+		country_event = {
+			id = BA_origin.0320
+		}
+	}
+}
+
+special_project = {
+	key = "BA_leaders_story_mika_last_fixed"
+	cost = 5000
+	picture = GFX_BA_ring_tech
+	tech_department = engineering_technology
+
+	event_scope = country_event
+
+	on_success = {
+		country_event = {
+			id = BA_origin.0326
+		}
+	}
+}
+
 ##### 飞升项目 #####
 #### 飞升一
 #光环研究
