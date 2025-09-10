@@ -406,6 +406,69 @@ leader_trait_mika_SP3 = {
 	selectable_weight = 0
 }
 
+#忧郁的公主殿下
+leader_trait_mika_Depression_Princess = {
+	cost = 0
+	initial = no
+	icon = "gfx/interface/icons/traits/sp_leaders/Icon_leader_trait_mika_Depression_Princess.dds"
+	randomized = no
+	is_councilor_trait_for_ruler = yes
+	councilor_modifier = {
+		planet_jobs_produces_mult = -0.05
+		country_unity_produces_mult = -0.05
+	}
+	leader_class = {
+		governor
+		scientist
+		admiral
+		general
+	}
+	sorting_priority = 1000
+	selectable_weight = 0
+}
+
+#重拾星之碎片的少女
+leader_trait_mika_star_Princess = {
+	cost = 0
+	initial = no
+	icon = "gfx/interface/icons/traits/sp_leaders/Icon_leader_trait_mika_star_Princess.dds"
+	randomized = no
+	is_councilor_trait_for_ruler = yes
+	councilor_modifier = {
+		leaders_cost_mult = 10
+	}
+	leader_class = {
+		governor
+		scientist
+		admiral
+		general
+	}
+	sorting_priority = 1000
+	selectable_weight = 0
+}
+
+leader_trait_mika_star_Princess_ex = {
+	cost = 0
+	initial = no
+	icon = "gfx/interface/icons/traits/sp_leaders/Icon_leader_trait_mika_star_Princess_ex.dds"
+	randomized = no
+	is_councilor_trait_for_ruler = yes
+	councilor_modifier = {
+		planet_jobs_produces_mult = 0.1
+		starbase_shipyard_build_speed_mult = 0.1
+		SHIP_SPEED_MULT = 0.15
+		ship_weapon_damage = 0.3
+	}
+	leader_class = {
+		governor
+		scientist
+		admiral
+		general
+	}
+	sorting_priority = 1000
+	selectable_weight = 0
+}
+
 #佑香
 leader_trait_yuuka_SP1 = {
 	initial = no
@@ -451,6 +514,48 @@ leader_trait_yuuka_SP3 = {
 		official
 	}
 	sorting_priority = 1000
+	selectable_weight = 0
+}
+
+特质：温柔回忆
+leader_trait_ruler_yuuka_gentle_memories = {
+	cost = 0
+	initial = no
+	icon = "gfx/interface/icons/traits/Icon_gentle_memories.dds"
+	randomized = no
+	is_councilor_trait_for_ruler = yes
+	leader_class = {
+		governor
+		scientist
+		admiral
+		general
+	}
+	modifier = {
+		country_unity_produces_mult = 0.15
+		council_agenda_progress_speed = 0.2
+    }
+	sorting_priority = 1000
+	selectable_weight = 0
+}
+
+#特质：梦境永恒 
+leader_trait_ruler_yuuka_lingering_dream = {
+	cost = 0
+	initial = no
+	icon = "gfx/interface/icons/traits/Icon_lingering_dream.dds"
+	randomized = no
+	is_councilor_trait_for_ruler = yes
+	leader_class = {
+		governor
+		scientist
+		admiral
+		general
+	}
+	modifier = {
+	    planet_researchers_produces_mult = 0.05
+		science_ship_survey_speed = 0.1
+    }
+	sorting_priority = 999
 	selectable_weight = 0
 }
 
