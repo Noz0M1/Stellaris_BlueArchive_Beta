@@ -658,17 +658,1224 @@ country_event = {
 	}
 }
 
-###### 未花
+###### 未花 注：该事件年久失修，可能存在未知bug
+country_event = {
+	id = BA_origin.0301
+	is_triggered_only = yes
+	title = "BA_origin.0301.name"
+	desc = "BA_origin.0301.desc"
+	picture = GFX_BA_Kivotos_highway #暂时无图
+	option = {
+		name = BA_origin.0301.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0302
+				days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0302
+	title = "BA_origin.0301.name"
+	desc = "BA_origin.0302.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0021
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0302.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0303
+				days = 0
+			}
+		}
+	}
+	option = {
+		name = BA_origin.0302.b
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0303
+				days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0303
+	title = "BA_origin.0301.name"
+	desc = "BA_origin.0303.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0028
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0303.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0304
+				days = 0
+			}
+		}
+	}
+	option = {
+		name = BA_origin.0303.b
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0304
+				days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0304
+	title = "BA_origin.0301.name"
+	desc = "BA_origin.0304.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0023
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0304.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0305
+				days = 0
+			}
+		}
+	}
+	option = {
+		name = BA_origin.0304.b
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0305
+				days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0305
+	title = "BA_origin.0301.name"
+	desc = "BA_origin.0305.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0022
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0305.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0306
+				days = 0
+			}
+		}
+	}
+	option = {
+		name = BA_origin.0305.b
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0306
+				days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0306
+	title = "BA_origin.0301.name"
+	desc = "BA_origin.0306.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0025
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0306.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0307
+				days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0307
+	title = "BA_origin.0301.name"
+	desc = "BA_origin.0307.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0025
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0307.a
+		default_hide_option = yes
+		ruler = {
+			add_trait = leader_trait_mika_Depression_Princess  
+		}
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0308
+			    days = 360
+				random = 360
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0308
+	title = "BA_origin.0308.name"
+	desc = "BA_origin.0308.desc"
+	is_triggered_only = yes
+	picture = GFX_BA_Kivotos_highway #暂时无图
+	option = {
+		name = BA_origin.0308.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0309
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0309
+	title = "BA_origin.0308.name"
+	desc = "BA_origin.0309.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_92
+		room = BA_26_room
+	}
+	option = {
+		name = BA_origin.0309.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0310
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0310
+	title = "BA_origin.0308.name"
+	desc = "BA_origin.0310.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_92
+		room = BA_26_room
+	}
+	option = {
+		name = BA_origin.0310.a
+		default_hide_option = yes
+		hidden_effect = {
+			enable_special_project = {
+				name = BA_leaders_story_mika_memories
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0311
+	title = "BA_origin.0311.name"
+	desc = "BA_origin.0311.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_92
+		room = BA_26_room
+	}
+	option = {
+		name = BA_origin.0311.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0312
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0312
+	title = "BA_origin.0311.name"
+	desc = "BA_origin.0312.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_92
+		room = BA_26_room
+	}
+	option = {
+		name = BA_origin.0312.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0313
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0313
+	title = "BA_origin.0311.name"
+	desc = "BA_origin.0313.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_92
+		room = BA_26_room
+	}
+	option = {
+		name = BA_origin.0313.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0314
+			    days = 60
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0314
+	title = "BA_origin.0314.name"
+	desc = "BA_origin.0314.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0006
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0314.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0315
+			    days = 0
+			}
+		}
+	}
+	option = {
+		name = BA_origin.0314.b
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0315
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0315
+	title = "BA_origin.0314.name"
+	desc = "BA_origin.0315.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0014
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0315.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0316
+			    days = 0
+			}
+		}
+	}
+	option = {
+		name = BA_origin.0315.b
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0316
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0316
+	title = "BA_origin.0314.name"
+	desc = "BA_origin.0316.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0016
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0316.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0317
+			    days = 0
+			}
+		}
+	}
+	option = {
+		name = BA_origin.0316.b
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0317
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0317
+	title = "BA_origin.0314.name"
+	desc = "BA_origin.0317.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0018
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0317.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0318
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0318
+	title = "BA_origin.0314.name"
+	desc = "BA_origin.0318.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0018
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0318.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0319
+			    days = 0
+			}
+		}
+	}
+	option = {
+		name = BA_origin.0318.b
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0319
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0319
+	title = "BA_origin.0314.name"
+	desc = "BA_origin.0319.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0001
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0319.a
+		default_hide_option = yes
+		hidden_effect = {
+			enable_special_project = {
+				name = BA_leaders_story_mika_fixed
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0320
+	title = "BA_origin.0320.name"
+	desc = "BA_origin.0320.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0017
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0320.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0321
+			    days = 0
+			}
+		}
+	}
+	option = {
+		name = BA_origin.0320.b
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0321
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0321
+	title = "BA_origin.0320.name"
+	desc = "BA_origin.0321.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0003
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0321.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0322
+			    days = 0
+			}
+		}
+	}
+	option = {
+		name = BA_origin.0321.b
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0322
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0322
+	title = "BA_origin.0320.name"
+	desc = "BA_origin.0322.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0012
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0322.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0323
+			    days = 0
+			}
+		}
+	}
+	option = {
+		name = BA_origin.0322.b
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0323
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0323
+	title = "BA_origin.0320.name"
+	desc = "BA_origin.0323.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0019
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0323.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0324
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0324
+	title = "BA_origin.0320.name"
+	desc = "BA_origin.0324.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0002
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0324.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0325
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0325
+	title = "BA_origin.0320.name"
+	desc = "BA_origin.0325.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0022
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0325.a
+		default_hide_option = yes
+		ruler = {
+			add_trait = leader_trait_mika_star_Princess  
+		}
+		hidden_effect = {
+			enable_special_project = {
+				name = BA_leaders_story_mika_last_fixed
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0326
+	title = "BA_origin.0326.name"
+	desc = "BA_origin.0326.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_21
+		room = BA_01_room
+	}
+	option = {
+		name = BA_origin.0326.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0327
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0327
+	title = "BA_origin.0326.name"
+	desc = "BA_origin.0327.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_21
+		room = BA_01_room
+	}
+	option = {
+		name = BA_origin.0327.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0328
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0328
+	title = "BA_origin.0326.name"
+	desc = "BA_origin.0328.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = BA_21
+		room = BA_01_room
+	}
+	option = {
+		name = BA_origin.0328.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0329
+			    days = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0329
+	title = "BA_origin.0329.name"
+	desc = "BA_origin.0329.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		room = BA_0407_room
+	}
+	option = {
+		name = BA_origin.0329.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0330
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0330
+	title = "BA_origin.0329.name"
+	desc = "BA_origin.0330.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0012
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0330.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0331
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0331
+	title = "BA_origin.0329.name"
+	desc = "BA_origin.0331.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0011
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0331.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0332
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0332
+	title = "BA_origin.0329.name"
+	desc = "BA_origin.0332.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0011
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0332.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0333
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0333
+	title = "BA_origin.0329.name"
+	desc = "BA_origin.0333.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0011
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0333.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0334
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0334
+	title = "BA_origin.0329.name"
+	desc = "BA_origin.0334.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0014
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0334.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0335
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0335
+	title = "BA_origin.0329.name"
+	desc = "BA_origin.0335.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0014
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0335.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0336
+			    days = 0
+			}
+		}
+	}
+	option = {
+		name = BA_origin.0335.b
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0336
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0336
+	title = "BA_origin.0329.name"
+	desc = "BA_origin.0336.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0006
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0336.a
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0337
+			    days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BA_origin.0337
+	title = "BA_origin.0329.name"
+	desc = "BA_origin.0337.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "BA_window"
+	picture_event_data = {
+		portrait = Mika0006
+		room = BA_02_room
+	}
+	option = {
+		name = BA_origin.0337.a
+		default_hide_option = yes
+		set_country_flag = mika_daisuki
+		ruler = {
+			remove_trait = leader_trait_mika_Depression_Princess  
+			add_trait = leader_trait_mika_star_Princess_ex  
+		}
+	}
+}
+
+
+
 ###### 优香
 country_event = {
 	id = BA_origin.0401
 	is_triggered_only = yes
 	title = "BA_origin.0401.name"
 	desc = "BA_origin.0401.desc"
-	picture = GFX_BA_yuuka_no_bag
+	picture = GFX_BA_yuuka_hesitation_burnout
 	option = {
 		name = BA_origin.0401.a
-		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0402
+				days = 0
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = BA_origin.0402
+	is_triggered_only = yes
+	title = "BA_origin.0402.name"
+	desc = "BA_origin.0402.desc"
+	picture = GFX_BA_yuuka_hesitation_burnout
+	option = {
+		name = BA_origin.0402.a
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0403
+				days = 0
+			}
+		}
+	}
+}
+
+#心动
+country_event = {
+	id = BA_origin.0403
+	is_triggered_only = yes
+	title = "BA_origin.0403.name"
+	desc = "BA_origin.0403.desc"
+	picture = GFX_BA_yuuka_hesitation_burnout
+	option = {
+		name = BA_origin.0403.a
+		hidden_effect = {
+			set_capital_flag = atmospheric_aphrodisiac
+			add_research_option = non_contact_hypotonic_system					
+		}
+	}
+}
+
+#纠结
+country_event = {
+	id = BA_origin.0404
+	is_triggered_only = yes
+	title = "BA_origin.0404.name"
+	desc = "BA_origin.0404.desc"
+	picture = GFX_BA_yuuka_love_silence
+	trigger = {
+		is_ai = no
+		last_increased_tech = non_contact_hypotonic_system
+	}
+	option = {
+		name = BA_origin.0404.a
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0405
+				days = 0
+		    }
+	    }
+	 }
+}
+
+#勇气
+country_event = {
+	id = BA_origin.0405
+	is_triggered_only = yes
+	title = "BA_origin.0405.name"
+	desc = "BA_origin.0405.desc"
+	picture = GFX_BA_yuuka_love_silence
+	option = {
+		name = BA_origin.0405.a
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0406
+				days = 0
+			}
+		}
+	}
+}
+
+#紧张
+country_event = {
+	id = BA_origin.0406
+	is_triggered_only = yes
+	title = "BA_origin.0406.name"
+	desc = "BA_origin.0406.desc"
+	picture = GFX_BA_yuuka_love_silence
+	option = {
+		name = BA_origin.0406.a
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0407
+				days = 0
+			}
+		}
+	}
+}
+
+#缄爱
+country_event = {
+	id = BA_origin.0407
+	is_triggered_only = yes
+	title = "BA_origin.0407.name"
+	desc = "BA_origin.0407.desc"
+	picture = GFX_BA_yuuka_love_silence
+	option = {
+		name = BA_origin.0407.a
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0408
+				days = 60
+				random = 90
+			}
+		}
+	}
+}
+
+#决心
+country_event = {
+	id = BA_origin.0408
+	is_triggered_only = yes
+	title = "BA_origin.0408.name"
+	desc = "BA_origin.0408.desc"
+	picture = GFX_BA_yuuka_myprevious_holdback
+	option = {
+		name = BA_origin.0408.a
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0409
+				days = 0
+			}
+		}
+	}
+}
+
+#安然
+country_event = {
+	id = BA_origin.0409
+	is_triggered_only = yes
+	title = "BA_origin.0409.name"
+	desc = "BA_origin.0409.desc"
+	picture = GFX_BA_yuuka_myprevious_holdback
+	option = {
+		name = BA_origin.0409.a
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0410
+				days = 0
+			}
+		}
+	}
+}
+
+#不舍
+country_event = {
+	id = BA_origin.0410
+	is_triggered_only = yes
+	title = "BA_origin.0410.name"
+	desc = "BA_origin.0410.desc"
+	picture = GFX_BA_yuuka_myprevious_holdback
+	option = {
+		name = BA_origin.0410.a
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0411
+				days = 0
+			}
+		}
+	}
+}
+
+#诀别
+country_event = {
+	id = BA_origin.0411
+	is_triggered_only = yes
+	title = "BA_origin.0411.name"
+	desc = "BA_origin.0411.desc"
+	picture = GFX_BA_yuuka_myprevious_holdback
+	option = {
+		name = BA_origin.0411.a
+		ruler = {
+			add_trait = leader_trait_ruler_yuuka_gentle_memories  
+			}
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0412
+				days = 30
+			}
+		}
+	}
+}
+
+#怀念
+country_event = {
+	id = BA_origin.0412
+	is_triggered_only = yes
+	title = "BA_origin.0412.name"
+	desc = "BA_origin.0412.desc"
+	picture = GFX_BA_yuuka_sincerity_confession
+	option = {
+		name = BA_origin.0412.a
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0413
+				days = 0
+			}
+		}
+	}
+}
+
+#暧昧
+country_event = {
+	id = BA_origin.0413
+	is_triggered_only = yes
+	title = "BA_origin.0413.name"
+	desc = "BA_origin.0413.desc"
+	picture = GFX_BA_yuuka_sincerity_confession
+	option = {
+		name = BA_origin.0413.a
+		hidden_effect = {
+			country_event = {
+				id = BA_origin.0414
+				days = 0
+			}
+		}
+	}
+}
+
+#告白
+country_event = {
+	id = BA_origin.0414
+	is_triggered_only = yes
+	title = "BA_origin.0414.name"
+	desc = "BA_origin.0414.desc"
+	picture = GFX_BA_yuuka_sincerity_confession
+	option = {
+		name = BA_origin.0414.a
+			ruler = {
+				add_trait = leader_trait_ruler_yuuka_lingering_dream
+			}		
 	}
 }
 
