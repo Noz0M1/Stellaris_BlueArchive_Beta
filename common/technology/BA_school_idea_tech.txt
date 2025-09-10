@@ -1792,3 +1792,23 @@ tech_BA_SI_Shanhaijing_B04 = {
 	}
 	weight = 0
 }
+
+non_contact_hypotonic_system = {
+	cost = 2000
+	area = society
+	tier = 1
+	category = {
+		biology
+	}
+	start_tech = no
+	is_rare = no 
+	weight = 0
+	weight_modifier = {
+		factor = 0
+	}
+	prereqfor_desc = {
+		custom = {
+			title = "non_contact_hypotonic_system_desc"
+		}
+	}
+}
