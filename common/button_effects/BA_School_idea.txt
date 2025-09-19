@@ -1628,6 +1628,13 @@ button_effect_BA_SI_Gehenna_A01_lock = {
 				days = 3600
 			}
 		}
+		hidden_effect = {
+			# story
+			country_event = {
+				id = BA_Gehena_Event.0101
+				days = 1
+			}
+		}
 	}
 }
 
@@ -1716,6 +1723,13 @@ button_effect_BA_SI_Gehenna_A02_lock = {
 			}
 			BA_SI_Gehenna_A02_grant_fleet = yes
 		}
+		hidden_effect = {
+			# story
+			country_event = {
+				id = BA_Gehena_Event.0102
+				days = 1
+			}
+		}
 	}
 }
 
@@ -1797,6 +1811,14 @@ button_effect_BA_SI_Gehenna_A03_lock = {
 				}
 			}
 		}
+		hidden_effect = {
+			# story
+			country_event = {
+				id = BA_Gehena_Event.0104
+				days = 1
+			}
+		}
+
 	}
 }
 
@@ -1876,6 +1898,13 @@ button_effect_BA_SI_Gehenna_B01_lock = {
 			add_modifier = {
 				modifier = modifier_BA_SI_Gehenna_B01
 				days = 1800
+			}
+		}
+		hidden_effect = {
+			# story
+			country_event = {
+				id = BA_Gehena_Event.0001
+				days = 1
 			}
 		}
 	}
@@ -1959,6 +1988,13 @@ button_effect_BA_SI_Gehenna_B02_lock = {
 				}
 			}
 		}
+		hidden_effect = {
+			# story
+			country_event = {
+				id = BA_Gehena_Event.0002
+				days = 1
+			}
+		}
 	}
 }
 
@@ -2038,6 +2074,13 @@ button_effect_BA_SI_Gehenna_B03_lock = {
 						}
 					}
 				}
+			}
+		}
+		hidden_effect = {
+			# story
+			country_event = {
+				id = BA_Gehena_Event.0004
+				days = 1
 			}
 		}
 	}
@@ -2191,6 +2234,13 @@ button_effect_BA_SI_Gehenna_G02_P1_lock = {
 				}
 			}
 		}
+		hidden_effect = {
+			# story
+			country_event = {
+				id = BA_Gehena_Event.0006
+				days = 1
+			}
+		}
 	}
 }
 
@@ -2262,6 +2312,13 @@ button_effect_BA_SI_Gehenna_G02_P2_lock = {
 						}
 					}
 				}
+			}
+		}
+		hidden_effect = {
+			# story
+			country_event = {
+				id = BA_Gehena_Event.0006
+				days = 1
 			}
 		}
 	}
@@ -2504,6 +2561,18 @@ button_effect_BA_SI_Gehenna_C02_lock = {
 				owner = from
 			}
 		}
+		hidden_effect = {
+			# story
+			country_event = {
+				id = BA_Gehena_Event.0112
+				days = 1
+			}
+			country_event = {
+				id = BA_Gehena_Event.0201
+				days = 60
+			}
+		}
+
 	}
 }
 
@@ -2575,6 +2644,14 @@ button_effect_BA_SI_Gehenna_C03_lock = {
 				}
 			}
 		}
+		hidden_effect = {
+			# story
+			country_event = {
+				id = BA_Gehena_Event.0116
+				days = 1
+			}
+		}
+
 	}
 }
 
@@ -2966,6 +3043,14 @@ button_effect_BA_SI_Gehenna_E02_lock = {
 				}
 			}
 		}
+		hidden_effect = {
+			# story
+			country_event = {
+				id = BA_Gehena_Event.0011
+				days = 1
+			}
+		}
+
 	}
 }
 
@@ -3037,6 +3122,14 @@ button_effect_BA_SI_Gehenna_E03_lock = {
 				}
 			}
 		}
+		hidden_effect = {
+			# story
+			country_event = {
+				id = BA_Gehena_Event.0016
+				days = 1
+			}
+		}
+
 	}
 }
 
