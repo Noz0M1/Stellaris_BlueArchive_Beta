@@ -15,23 +15,20 @@ namespace = BA_Gehena_Event
 ##%幕后准则 —— 事件0112 同时 也会触发事件 0201 也就是日奈的日常线 这个最好错开几天触发 N佬你来决定吧
 ##%昭昭天命 —— 事件0116
 ##晚宴事件自动在剧情线最后一个事件后6年触发
-
-
-
+################
 ##日奈线1 国策：旌旗之下
 country_event = {
 	id = BA_Gehena_Event.0001
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0001.name"
 	desc = "BA_Gehena_Event.0001.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG02
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
 	option = {
 		name = BA_Gehena_Event.0001.a
 		hidden_effect = {
-
 		}
 	}
 }
@@ -42,7 +39,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0002.name"
 	desc = "BA_Gehena_Event.0002.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG03
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -62,14 +59,13 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0003.name"
 	desc = "BA_Gehena_Event.0003.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG04
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
 	option = {
 		name = BA_Gehena_Event.0003.a
 		hidden_effect = {
-
 		}
 	}
 }
@@ -80,7 +76,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0004.name"
 	desc = "BA_Gehena_Event.0004.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG05
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -100,14 +96,13 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0005.name"
 	desc = "BA_Gehena_Event.0005.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG06
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
 	option = {
 		name = BA_Gehena_Event.0005.a
 		hidden_effect = {
-
 		}
 	}
 }
@@ -118,7 +113,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0006.name"
 	desc = "BA_Gehena_Event.0006.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG10
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -153,7 +148,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0007.name"
 	desc = "BA_Gehena_Event.0007.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG04
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -174,7 +169,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0008.name"
 	desc = "BA_Gehena_Event.0008.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG11
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -195,7 +190,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0009.name"
 	desc = "BA_Gehena_Event.0009.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG12
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -216,14 +211,13 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0010.name"
 	desc = "BA_Gehena_Event.0010.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG14
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
 	option = {
 		name = BA_Gehena_Event.0010.a
 		hidden_effect = {
-
 		}
 	}
 }
@@ -234,7 +228,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0011.name"
 	desc = "BA_Gehena_Event.0011.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG16
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -255,7 +249,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0012.name"
 	desc = "BA_Gehena_Event.0012.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG17
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -276,7 +270,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0013.name"
 	desc = "BA_Gehena_Event.0013.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG17
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -297,7 +291,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0014.name"
 	desc = "BA_Gehena_Event.0014.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG18
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -318,14 +312,13 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0015.name"
 	desc = "BA_Gehena_Event.0015.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG18
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
 	option = {
 		name = BA_Gehena_Event.0015.a
 		hidden_effect = {
-
 		}
 	}
 }
@@ -336,7 +329,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0016.name"
 	desc = "BA_Gehena_Event.0016.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG19
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -357,7 +350,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0017.name"
 	desc = "BA_Gehena_Event.0017.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG20
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -378,7 +371,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0018.name"
 	desc = "BA_Gehena_Event.0018.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG21
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -399,7 +392,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0019.name"
 	desc = "BA_Gehena_Event.0019.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG22
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -409,32 +402,26 @@ country_event = {
 			set_country_flag = gehena_dinner_hina
 			country_event = {
 				id = BA_Gehena_Event.0301
-				years = 6  #6年后触发晚宴
+				years = 6				#6年后触发晚宴
 			}
 		}
 	}
 }
 
-
-
 ######伊吕波线
-
-
-
 #国策：暗流之上
 country_event = {
 	id = BA_Gehena_Event.0101
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0101.name"
 	desc = "BA_Gehena_Event.0101.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG07
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
 	option = {
 		name = BA_Gehena_Event.0101.a
 		hidden_effect = {
-
 		}
 	}
 }
@@ -445,7 +432,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0102.name"
 	desc = "BA_Gehena_Event.0102.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG03
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -466,14 +453,13 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0103.name"
 	desc = "BA_Gehena_Event.0103.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG08
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
 	option = {
 		name = BA_Gehena_Event.0103.a
 		hidden_effect = {
-
 		}
 	}
 }
@@ -484,7 +470,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0104.name"
 	desc = "BA_Gehena_Event.0104.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG07
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -505,14 +491,13 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0105.name"
 	desc = "BA_Gehena_Event.0105.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG09
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
 	option = {
 		name = BA_Gehena_Event.0105.a
 		hidden_effect = {
-
 		}
 	}
 }
@@ -523,7 +508,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0106.name"
 	desc = "BA_Gehena_Event.0106.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG08
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -544,7 +529,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0107.name"
 	desc = "BA_Gehena_Event.0107.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG11
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -565,7 +550,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0108.name"
 	desc = "BA_Gehena_Event.0108.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG12
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -586,7 +571,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0109.name"
 	desc = "BA_Gehena_Event.0109.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG17
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -607,7 +592,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0110.name"
 	desc = "BA_Gehena_Event.0110.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG09
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -619,7 +604,7 @@ country_event = {
 				days = 60
 			}
 		}
-	}	
+	}
 }
 
 #重担的内阁
@@ -628,14 +613,13 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0111.name"
 	desc = "BA_Gehena_Event.0111.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG26
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
 	option = {
 		name = BA_Gehena_Event.0111.a
 		hidden_effect = {
-
 		}
 	}
 }
@@ -646,7 +630,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0112.name"
 	desc = "BA_Gehena_Event.0112.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG28
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -678,7 +662,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0113.name"
 	desc = "BA_Gehena_Event.0113.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG31
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -699,7 +683,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0114.name"
 	desc = "BA_Gehena_Event.0114.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG28
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -720,14 +704,13 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0115.name"
 	desc = "BA_Gehena_Event.0115.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG09
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
 	option = {
 		name = BA_Gehena_Event.0115.a
 		hidden_effect = {
-
 		}
 	}
 }
@@ -738,16 +721,16 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0116.name"
 	desc = "BA_Gehena_Event.0116.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG32
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
 	option = {
 		name = BA_Gehena_Event.0116.a
 		hidden_effect = {
-            switch = {
-	    		trigger = has_country_flag
-		    	Ibuki_leader_flag = {
+			switch = {
+				trigger = has_country_flag
+				Ibuki_leader_flag = {
 					country_event = {
 						id = BA_Gehena_Event.0118
 						days = 2
@@ -770,7 +753,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0117.name"
 	desc = "BA_Gehena_Event.0117.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG02
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -791,7 +774,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0118.name"
 	desc = "BA_Gehena_Event.0118.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG11
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -812,7 +795,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0119.name"
 	desc = "BA_Gehena_Event.0119.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG02
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -833,7 +816,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0120.name"
 	desc = "BA_Gehena_Event.0120.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG33
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -843,7 +826,7 @@ country_event = {
 			set_country_flag = gehena_dinner_ibuki
 			country_event = {
 				id = BA_Gehena_Event.0301
-				years = 6  #6年后触发晚宴
+				years = 6				#6年后触发晚宴
 			}
 		}
 	}
@@ -853,7 +836,7 @@ country_event = {
 			set_country_flag = gehena_dinner_ibuki_and_iroha
 			country_event = {
 				id = BA_Gehena_Event.0301
-				years = 6  #6年后触发晚宴
+				years = 6				#6年后触发晚宴
 			}
 		}
 	}
@@ -865,7 +848,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0121.name"
 	desc = "BA_Gehena_Event.0121.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG31
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -886,7 +869,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0122.name"
 	desc = "BA_Gehena_Event.0122.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG08
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -907,14 +890,13 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0123.name"
 	desc = "BA_Gehena_Event.0123.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG34
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
 	option = {
 		name = BA_Gehena_Event.0123.a
 		hidden_effect = {
-
 		}
 	}
 }
@@ -925,7 +907,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0124.name"
 	desc = "BA_Gehena_Event.0124.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG34
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -946,7 +928,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0125.name"
 	desc = "BA_Gehena_Event.0125.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG08
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -967,7 +949,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0126.name"
 	desc = "BA_Gehena_Event.0126.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG28
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -988,7 +970,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0127.name"
 	desc = "BA_Gehena_Event.0127.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG08
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -1009,7 +991,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0128.name"
 	desc = "BA_Gehena_Event.0128.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG35
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
@@ -1019,12 +1001,11 @@ country_event = {
 			set_country_flag = gehena_dinner_iroha
 			country_event = {
 				id = BA_Gehena_Event.0301
-				years = 6  #6年后触发晚宴
+				years = 6				#6年后触发晚宴
 			}
 		}
 	}
 }
-
 
 #日奈日常事件1
 country_event = {
@@ -1032,18 +1013,16 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0201.name"
 	desc = "BA_Gehena_Event.0201.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG27
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
 	option = {
 		name = BA_Gehena_Event.0201.a
 		hidden_effect = {
-
 		}
 	}
 }
-
 
 #格黑娜的晚宴
 country_event = {
@@ -1051,16 +1030,16 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0301.name"
 	desc = "BA_Gehena_Event.0301.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG36
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
 	option = {
 		name = BA_Gehena_Event.0301.a
 		hidden_effect = {
-            switch = {
-	    		trigger = has_country_flag
-		    	gehena_dinner_hina = {
+			switch = {
+				trigger = has_country_flag
+				gehena_dinner_hina = {
 					country_event = {
 						id = BA_Gehena_Event.0302
 						days = 2
@@ -1095,14 +1074,13 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0302.name"
 	desc = "BA_Gehena_Event.0302.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG37
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
 	option = {
 		name = BA_Gehena_Event.0302.a
 		hidden_effect = {
-
 		}
 	}
 }
@@ -1113,14 +1091,13 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0303.name"
 	desc = "BA_Gehena_Event.0303.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG38
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
 	option = {
 		name = BA_Gehena_Event.0303.a
 		hidden_effect = {
-
 		}
 	}
 }
@@ -1131,14 +1108,13 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0304.name"
 	desc = "BA_Gehena_Event.0304.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG39
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
 	option = {
 		name = BA_Gehena_Event.0304.a
 		hidden_effect = {
-
 		}
 	}
 }
@@ -1149,14 +1125,13 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Gehena_Event.0305.name"
 	desc = "BA_Gehena_Event.0305.desc"
-	picture = GFX_BA_Kivotos_highway ##图片暂时不定
+	picture = GFX_BA_Eden_Gehenna_CG40
 	trigger = {
 		BA_skip_ETO_Gehenna = no
 	}
 	option = {
 		name = BA_Gehena_Event.0305.a
 		hidden_effect = {
-
 		}
 	}
 }
