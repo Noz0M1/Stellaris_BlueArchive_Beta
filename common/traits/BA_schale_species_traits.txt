@@ -1,30 +1,3 @@
-#####    宜居性    #####
-trait_pc_Schale_preference = {
-	icon = "gfx/interface/icons/traits/Icon_preference.dds"
-	cost = 0
-	sorting_priority = 30
-	modifier = {
-		pc_BA_campus_planet_habitability = 0.5
-		pc_BA_ruined_planet_habitability = 0.1
-		pc_BA_auto_habitat_habitability = 0.1
-		#
-		pc_continental_habitability = 0.3
-		pc_tropical_habitability = 0.3
-		pc_ocean_habitability = 0.3
-		pc_desert_habitability = 0.3
-		pc_arid_habitability = 0.3
-		pc_tundra_habitability = 0.3
-		pc_arctic_habitability = 0.3
-		pc_alpine_habitability = 0.3
-		pc_savannah_habitability = 0.3
-		#
-		pc_habitat_habitability = 0.1
-		pc_nuked_habitability = 0.1
-	}
-	ai_weight = {
-		weight = 0
-	}
-}
 
 #####     光环     #####
 #光环（未解放）！
