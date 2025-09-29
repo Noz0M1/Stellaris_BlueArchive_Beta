@@ -80,9 +80,6 @@
  trait_test_finished_desc:0 "专门为姬器人设计的核心，安装后会产生一个模拟的光环。"
  trait_test_finished_effect:0 "无法产生§Y领袖§!，除非通过§M领袖储备§!界面招募。"
 
- trait_pc_Schale_preference:0 "基沃托斯偏好"
- trait_pc_Schale_preference_desc:0 "§L她们的气候偏好是由亿万年来的进化、设计，或是人工基因操纵所决定的……吧？§!"
-
  trait_halo_unreleased:0 "神性光环"
  trait_halo_unreleased_desc:0 "原理未知的、自出生便伴随我们的光环，它带来的祝福似乎并没有被察觉到。"
  trait_halo_awakened:0 "改造神性光环"
@@ -180,6 +177,17 @@
 
 #############
 #环境偏好
+ trait_pc_Schale_preference:0 "基沃托斯偏好"
+ trait_schale_planet_preference_desc:0 "§L她们的气候偏好是由亿万年来的进化、设计，或是人工基因操纵所决定的……吧？§!"
+
+ trait_schale_dry_planet_preference: "$trait_dry_planet_preference$（基沃托斯）"
+ trait_schale_dry_planet_preference_desc: "$trait_schale_planet_preference_desc$"
+ trait_schale_wet_planet_preference: "$trait_wet_planet_preference$（基沃托斯）"
+ trait_schale_wet_planet_preference_desc: "$trait_schale_planet_preference_desc$"
+ trait_schale_cold_planet_preference: "$trait_cold_planet_preference$（基沃托斯）"
+ trait_schale_cold_planet_preference_desc: "$trait_schale_planet_preference_desc$"
+
+
  trait_schale_pc_desert_preference:0"$trait_pc_desert_preference$"
  trait_schale_pc_arid_preference:0"$trait_pc_arid_preference$"
  trait_schale_pc_savannah_preference:0"$trait_pc_savannah_preference$"

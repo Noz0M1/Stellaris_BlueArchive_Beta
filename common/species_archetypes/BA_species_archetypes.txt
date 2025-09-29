@@ -2,12 +2,11 @@
 @schale_trait_points = 4
 @schale_max_traits = 8
 Schale = {
+	
 	species_trait_points = @schale_trait_points
 	species_max_traits = @schale_max_traits
 	resources = {
 		category = planet_pops
-		# Regular food, mineral and energy upkeep.
-		# inline_script = "pop_resources/regular_upkeep"
 		# Resource production from other sources
 		inline_script = "pop_resources/pop_misc_production"
 		produces = {
@@ -18,9 +17,6 @@ Schale = {
 				}
 				is_enslaved = no
 			}
-			physics_research = 0.2
-			society_research = 0.2
-			engineering_research = 0.2
 		}
 	}
 }
