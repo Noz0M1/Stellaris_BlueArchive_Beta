@@ -14,7 +14,12 @@ namespace = BA_Gehena_Event
 ##%霸权态势 —— 事件0104
 ##%幕后准则 —— 事件0112 同时 也会触发事件 0201 也就是日奈的日常线 这个最好错开几天触发 N佬你来决定吧
 ##%昭昭天命 —— 事件0116
-##晚宴事件自动在剧情线最后一个事件后6年触发
+
+##2025/10/6 请N佬修改：事件0008 绑定国策
+##事件0107 绑定国策
+##最后一个国策六年后触发晚宴 同时 最后一个国策需有以下四个flag之一才可点击（文本提示为：需完成角色个人剧情线）
+##gehena_dinner_hina // gehena_dinner_ibuki // gehena_dinner_ibuki_and_iroha // gehena_dinner_iroha
+
 ################
 ##日奈线1 国策：旌旗之下
 country_event = {
@@ -155,10 +160,7 @@ country_event = {
 	option = {
 		name = BA_Gehena_Event.0007.a
 		hidden_effect = {
-			country_event = {
-				id = BA_Gehena_Event.0008
-				days = 2
-			}
+
 		}
 	}
 }
@@ -400,10 +402,6 @@ country_event = {
 		name = BA_Gehena_Event.0019.a
 		hidden_effect = {
 			set_country_flag = gehena_dinner_hina
-			country_event = {
-				id = BA_Gehena_Event.0301
-				years = 6				#6年后触发晚宴
-			}
 		}
 	}
 }
@@ -824,20 +822,12 @@ country_event = {
 		name = BA_Gehena_Event.0120.a
 		hidden_effect = {
 			set_country_flag = gehena_dinner_ibuki
-			country_event = {
-				id = BA_Gehena_Event.0301
-				years = 6				#6年后触发晚宴
-			}
 		}
 	}
 	option = {
 		name = BA_Gehena_Event.0120.b
 		hidden_effect = {
 			set_country_flag = gehena_dinner_ibuki_and_iroha
-			country_event = {
-				id = BA_Gehena_Event.0301
-				years = 6				#6年后触发晚宴
-			}
 		}
 	}
 }
@@ -999,10 +989,6 @@ country_event = {
 		name = BA_Gehena_Event.0128.a
 		hidden_effect = {
 			set_country_flag = gehena_dinner_iroha
-			country_event = {
-				id = BA_Gehena_Event.0301
-				years = 6				#6年后触发晚宴
-			}
 		}
 	}
 }
