@@ -2359,6 +2359,21 @@ button_effect_BA_SI_Gehenna_G03_lock = {
 					has_technology = tech_BA_SI_Gehenna_E03
 				}
 			}
+			custom_tooltip = {
+				fail_text = need_story_event
+				OR = {
+					has_country_flag = BA_cheat
+					#
+					has_global_flag = BA_story_skip_all
+					has_country_flag = BA_story_skip_ETO
+					has_country_flag = BA_story_skip_ETO_Gehenna
+					#
+					has_country_flag = gehena_dinner_hina
+					has_country_flag = gehena_dinner_ibuki
+					has_country_flag = gehena_dinner_ibuki_and_iroha
+					has_country_flag = gehena_dinner_iroha
+				}
+			}
 		}
 	}
 	potential = {
@@ -2394,6 +2409,13 @@ button_effect_BA_SI_Gehenna_G03_lock = {
 						}
 					}
 				}
+			}
+		}
+		hidden_effect = {
+			# story
+			country_event = {
+				id = BA_Gehena_Event.0301
+				days = 2160
 			}
 		}
 	}
@@ -2481,6 +2503,13 @@ button_effect_BA_SI_Gehenna_C01_lock = {
 			add_modifier = {
 				modifier = modifier_BA_SI_Gehenna_C01
 				days = 10800
+			}
+		}
+		hidden_effect = {
+			# story
+			country_event = {
+				id = BA_Gehena_Event.0107
+				days = 1
 			}
 		}
 	}
@@ -2967,6 +2996,13 @@ button_effect_BA_SI_Gehenna_E01_lock = {
 			add_modifier = {
 				modifier = modifier_BA_SI_Gehenna_E01
 				days = 10800
+			}
+		}
+		hidden_effect = {
+			# story
+			country_event = {
+				id = BA_Gehena_Event.0008
+				days = 1
 			}
 		}
 	}

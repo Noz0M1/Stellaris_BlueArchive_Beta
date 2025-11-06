@@ -1,6 +1,7 @@
 BA_skip_ETO_Gehenna = {
     OR = {
         has_global_flag = BA_story_skip_all
+        has_country_flag = BA_story_skip_ETO
         has_country_flag = BA_story_skip_ETO_Gehenna
     }
 }
