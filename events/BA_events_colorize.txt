@@ -129,20 +129,20 @@ country_event = {
 }
 
 ########   随机事件   ########
-#随机事件触发器
+### 随机事件触发器
 country_event = {
 	id = BA_colorize.1000
 	is_triggered_only = yes
 	hide_window = yes
 	immediate = {
 		random_list = {
-			95 = {
+			97 = {
 			}
-			5 = {
+			3 = {
 				country_event = {
 					id = BA_colorize.1001
 					days = 5
-					random = 25
+					random = 24
 				}
 			}
 		}
@@ -156,6 +156,9 @@ country_event = {
 	immediate = {
 		random_list = {
 			10 = {
+				country_event = {
+					id = BA_colorize.1010
+				}
 			}
 			10 = {
 			}
@@ -170,3 +173,48 @@ country_event = {
 		}
 	}
 }
+
+### 模板事件
+country_event = {
+	id = BA_colorize.1010
+	is_triggered_only = yes
+	title = BA_colorize.template.title
+	desc = BA_colorize.template.desc
+	immediate = {
+		BA_colorizeRE_Hina_handled = yes
+	}
+	option = {
+		name = BA_colorize.template.do_nothing
+		custom_tooltip = BA_colorize.template.do_nothing.tip
+		trigger = {
+			NOT = {
+				has_country_flag = BA_colorizeRE_HinaHandled
+			}
+		}
+	}
+	option = {
+		name = BA_colorize.template.HinaHandled
+		custom_tooltip = BA_colorize.template.HinaHandled.tip
+		trigger = {
+			has_country_flag = BA_colorizeRE_HinaHandled
+		}
+		hidden_effect = {
+			remove_country_flag = BA_colorizeRE_HinaHandled
+		}
+	}
+}
+
+### 阿拜多斯系
+#地形沙化
+#银行遇劫
+#钢厂事故
+
+### 格黑那系
+#猴王暴乱
+#风纪委拉练失控
+#食堂怪兽
+
+### 圣三一系
+#大规模清退
+#黑市风波
+#领袖病倒
