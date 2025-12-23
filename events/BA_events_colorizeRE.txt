@@ -156,8 +156,10 @@ country_event = {
 	immediate = {
 		random_list = {
 			10 = {
-				country_event = {
-					id = BA_colorize.1010
+				random_owned_planet = {
+					planet_event = {
+						id = BA_colorize.1010
+					}
 				}
 			}
 			10 = {
@@ -175,7 +177,7 @@ country_event = {
 }
 
 ### 模板事件
-country_event = {
+planet_event = {
 	id = BA_colorize.1010
 	is_triggered_only = yes
 	title = BA_colorize.template.title
@@ -188,7 +190,9 @@ country_event = {
 		custom_tooltip = BA_colorize.template.do_nothing.tip
 		trigger = {
 			NOT = {
-				has_country_flag = BA_colorizeRE_HinaHandled
+				owner = {
+					has_country_flag = BA_colorizeRE_HinaHandled
+				}
 			}
 		}
 	}
@@ -196,10 +200,14 @@ country_event = {
 		name = BA_colorize.template.HinaHandled
 		custom_tooltip = BA_colorize.template.HinaHandled.tip
 		trigger = {
-			has_country_flag = BA_colorizeRE_HinaHandled
+			owner = {
+				has_country_flag = BA_colorizeRE_HinaHandled
+			}
 		}
 		hidden_effect = {
-			remove_country_flag = BA_colorizeRE_HinaHandled
+			owner = {
+				remove_country_flag = BA_colorizeRE_HinaHandled
+			}
 		}
 	}
 }

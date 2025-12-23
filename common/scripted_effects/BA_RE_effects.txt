@@ -1,4 +1,11 @@
 BA_colorizeRE_Hina_handled = {
+    if = {
+        limit = {
+            any_owned_leader = {
+                has_trait = leader_trait_hina_SP3
+            }
+        }
+    }
     random = {
         chance = 30
         set_country_flag = BA_colorizeRE_HinaHandled
