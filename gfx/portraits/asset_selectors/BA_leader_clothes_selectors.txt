@@ -1,1372 +1,1568 @@
-# Irony this is a placeholder file please ignore it
-BA_clothes_001 = {
-	default = "gfx/models/portraits/main_texture/001.dds"
+BA_clothes_Hoshino = {
+	default = "gfx/models/portraits/main_texture/Hoshino.dds"
 	leader = {
-	}
-}
-
-BA_clothes_002 = {
-	default = "gfx/models/portraits/main_texture/002.dds"
-	leader = {
-	}
-}
-
-BA_clothes_003 = {
-	default = "gfx/models/portraits/main_texture/003.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/003_COL.dds" = {
-			has_leader_flag = BA_skin_COL
-		}
-		"gfx/models/portraits/main_texture/003_CYC.dds" = {
-			has_leader_flag = BA_skin_CYC
-		}
-		"gfx/models/portraits/main_texture/003_SP.dds" = {
-			has_leader_flag = BA_skin_SP
-		}
-		"gfx/models/portraits/main_texture/003_SS.dds" = {
+		"gfx/models/portraits/main_texture/Hoshino_SS.dds" = {
 			has_leader_flag = BA_skin_SS
 		}
-	}
-}
-
-BA_clothes_004 = {
-	default = "gfx/models/portraits/main_texture/004.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/004_SP.dds" = {
-			has_leader_flag = BA_skin_SP
+		"gfx/models/portraits/main_texture/Hoshino_QB.dds" = {
+			has_leader_flag = BA_skin_QB
 		}
-		"gfx/models/portraits/main_texture/004_SS.dds" = {
-			has_leader_flag = BA_skin_SS
-		}
-	}
-}
-
-BA_clothes_005 = {
-	default = "gfx/models/portraits/main_texture/005.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/005_KMN.dds" = {
-			has_leader_flag = BA_skin_KMN
-		}
-		"gfx/models/portraits/main_texture/005_SP.dds" = {
-			has_leader_flag = BA_skin_SP
-		}
-		"gfx/models/portraits/main_texture/005_SS.dds" = {
-			has_leader_flag = BA_skin_SS
-		}
-	}
-}
-
-BA_clothes_006 = {
-	default = "gfx/models/portraits/main_texture/006.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/006_JK1.dds" = {
+		"gfx/models/portraits/main_texture/Hoshino_JK1.dds" = {
 			has_leader_flag = BA_skin_JK1
 		}
-		"gfx/models/portraits/main_texture/006_JK2.dds" = {
+		"gfx/models/portraits/main_texture/Hoshino_JK2.dds" = {
 			has_leader_flag = BA_skin_JK2
 		}
-		"gfx/models/portraits/main_texture/006_SP.dds" = {
-			has_leader_flag = BA_skin_SP
+	}
+}
+
+BA_clothes_Shiroko = {
+	default = "gfx/models/portraits/main_texture/Shiroko.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Shiroko_CYC.dds" = {
+			has_leader_flag = BA_skin_CYC
 		}
-		"gfx/models/portraits/main_texture/006_SS.dds" = {
+		"gfx/models/portraits/main_texture/Shiroko_SS.dds" = {
 			has_leader_flag = BA_skin_SS
+		}
+		"gfx/models/portraits/main_texture/Shiroko_COL.dds" = {
+			has_leader_flag = BA_skin_COL
+		}
+		"gfx/models/portraits/main_texture/Shiroko_SP.dds" = {
+			has_leader_flag = BA_skin_SP
 		}
 	}
 }
 
-BA_clothes_007 = {
-	default = "gfx/models/portraits/main_texture/007.dds"
+BA_clothes_Serika = {
+	default = "gfx/models/portraits/main_texture/Serika.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/007_JK1.dds" = {
+		"gfx/models/portraits/main_texture/Serika_KMN.dds" = {
+			has_leader_flag = BA_skin_KMN
+		}
+		"gfx/models/portraits/main_texture/Serika_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+		"gfx/models/portraits/main_texture/Serika_SP.dds" = {
+			has_leader_flag = BA_skin_SP
+		}
+	}
+}
+
+BA_clothes_Nonomi = {
+	default = "gfx/models/portraits/main_texture/Nonomi.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Nonomi_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+		"gfx/models/portraits/main_texture/Nonomi_JK1.dds" = {
 			has_leader_flag = BA_skin_JK1
 		}
-		"gfx/models/portraits/main_texture/007_SP.dds" = {
-			has_leader_flag = BA_skin_SP
-		}
-		"gfx/models/portraits/main_texture/007_SS.dds" = {
-			has_leader_flag = BA_skin_SS
-		}
-	}
-}
-
-BA_clothes_008 = {
-	default = "gfx/models/portraits/main_texture/008.dds"
-	leader = {
-	}
-}
-
-BA_clothes_009 = {
-	default = "gfx/models/portraits/main_texture/009.dds"
-	leader = {
-	}
-}
-
-BA_clothes_010 = {
-	default = "gfx/models/portraits/main_texture/010.dds"
-	leader = {
-	}
-}
-
-BA_clothes_011 = {
-	default = "gfx/models/portraits/main_texture/011.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/011_DR.dds" = {
-			has_leader_flag = BA_skin_DR
-		}
-	}
-}
-
-BA_clothes_012 = {
-	default = "gfx/models/portraits/main_texture/012.dds"
-	leader = {
-	}
-}
-
-BA_clothes_013 = {
-	default = "gfx/models/portraits/main_texture/013.dds"
-	leader = {
-	}
-}
-
-BA_clothes_014 = {
-	default = "gfx/models/portraits/main_texture/014.dds"
-	leader = {
-	}
-}
-
-BA_clothes_015 = {
-	default = "gfx/models/portraits/main_texture/015.dds"
-	leader = {
-	}
-}
-
-BA_clothes_016 = {
-	default = "gfx/models/portraits/main_texture/016.dds"
-	leader = {
-	}
-}
-
-BA_clothes_017 = {
-	default = "gfx/models/portraits/main_texture/017.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/017_JC.dds" = {
-			has_leader_flag = BA_skin_JC
-		}
-		"gfx/models/portraits/main_texture/017_MK.dds" = {
-			has_leader_flag = BA_skin_MK
-		}
-	}
-}
-
-BA_clothes_018 = {
-	default = "gfx/models/portraits/main_texture/018.dds"
-	leader = {
-	}
-}
-
-BA_clothes_019 = {
-	default = "gfx/models/portraits/main_texture/019.dds"
-	leader = {
-	}
-}
-
-BA_clothes_020 = {
-	default = "gfx/models/portraits/main_texture/020.dds"
-	leader = {
-	}
-}
-
-BA_clothes_021 = {
-	default = "gfx/models/portraits/main_texture/021.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/021_GD.dds" = {
-			has_leader_flag = BA_skin_GD
-		}
-	}
-}
-
-BA_clothes_022 = {
-	default = "gfx/models/portraits/main_texture/022.dds"
-	leader = {
-	}
-}
-
-BA_clothes_023 = {
-	default = "gfx/models/portraits/main_texture/023.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/023_SP.dds" = {
-			has_leader_flag = BA_skin_SP
-		}
-		"gfx/models/portraits/main_texture/023_SS.dds" = {
-			has_leader_flag = BA_skin_SS
-		}
-	}
-}
-
-BA_clothes_024 = {
-	default = "gfx/models/portraits/main_texture/024.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/024_FN.dds" = {
-			has_leader_flag = BA_skin_FN
-		}
-		"gfx/models/portraits/main_texture/024_SS.dds" = {
-			has_leader_flag = BA_skin_SS
-		}
-	}
-}
-
-BA_clothes_025 = {
-	default = "gfx/models/portraits/main_texture/025.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/025_SP.dds" = {
-			has_leader_flag = BA_skin_SP
-		}
-		"gfx/models/portraits/main_texture/025_SS.dds" = {
-			has_leader_flag = BA_skin_SS
-		}
-	}
-}
-
-BA_clothes_026 = {
-	default = "gfx/models/portraits/main_texture/026.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/026_SP.dds" = {
+		"gfx/models/portraits/main_texture/Nonomi_SP.dds" = {
 			has_leader_flag = BA_skin_SP
 		}
 	}
 }
 
-BA_clothes_027 = {
-	default = "gfx/models/portraits/main_texture/027.dds"
+BA_clothes_Ayane = {
+	default = "gfx/models/portraits/main_texture/Ayane.dds"
 	leader = {
-	}
-}
-
-BA_clothes_028 = {
-	default = "gfx/models/portraits/main_texture/028.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/028_GD.dds" = {
-			has_leader_flag = BA_skin_GD
+		"gfx/models/portraits/main_texture/Ayane_SS.dds" = {
+			has_leader_flag = BA_skin_SS
 		}
-	}
-}
-
-BA_clothes_029 = {
-	default = "gfx/models/portraits/main_texture/029.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/029_GD.dds" = {
-			has_leader_flag = BA_skin_GD
-		}
-		"gfx/models/portraits/main_texture/029_SP.dds" = {
+		"gfx/models/portraits/main_texture/Ayane_SP.dds" = {
 			has_leader_flag = BA_skin_SP
 		}
 	}
 }
 
-BA_clothes_030 = {
-	default = "gfx/models/portraits/main_texture/030.dds"
+BA_clothes_Yume = {
+	default = "gfx/models/portraits/main_texture/Yume.dds"
+	leader = { }
+}
+
+BA_clothes_Makoto = {
+	default = "gfx/models/portraits/main_texture/Makoto.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/030_SS.dds" = {
+		"gfx/models/portraits/main_texture/Makoto_DR.dds" = {
+			has_leader_flag = BA_skin_DR
+		}
+	}
+}
+
+BA_clothes_Iroha = {
+	default = "gfx/models/portraits/main_texture/Iroha.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Iroha_SS.dds" = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
 }
 
-BA_clothes_031 = {
-	default = "gfx/models/portraits/main_texture/031.dds"
+BA_clothes_Ibuki = {
+	default = "gfx/models/portraits/main_texture/Ibuki.dds"
 	leader = {
-	}
-}
-
-BA_clothes_032 = {
-	default = "gfx/models/portraits/main_texture/032.dds"
-	leader = {
-	}
-}
-
-BA_clothes_033 = {
-	default = "gfx/models/portraits/main_texture/033.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/033_SP.dds" = {
-			has_leader_flag = BA_skin_SP
-		}
-		"gfx/models/portraits/main_texture/033_SS.dds" = {
-			has_leader_flag = BA_skin_SS
-		}
-	}
-}
-
-BA_clothes_034 = {
-	default = "gfx/models/portraits/main_texture/034.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/034_DR.dds" = {
+		"gfx/models/portraits/main_texture/Ibuki_DR.dds" = {
 			has_leader_flag = BA_skin_DR
 		}
-		"gfx/models/portraits/main_texture/034_KMN.dds" = {
-			has_leader_flag = BA_skin_KMN
-		}
 	}
 }
 
-BA_clothes_035 = {
-	default = "gfx/models/portraits/main_texture/035.dds"
+BA_clothes_Satsuki = {
+	default = "gfx/models/portraits/main_texture/Satsuki.dds"
+	leader = { }
+}
+
+BA_clothes_Chiaki = {
+	default = "gfx/models/portraits/main_texture/Chiaki.dds"
+	leader = { }
+}
+
+BA_clothes_Hina = {
+	default = "gfx/models/portraits/main_texture/Hina.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/035_DR.dds" = {
+		"gfx/models/portraits/main_texture/Hina_DR.dds" = {
 			has_leader_flag = BA_skin_DR
 		}
-		"gfx/models/portraits/main_texture/035_KMN.dds" = {
-			has_leader_flag = BA_skin_KMN
-		}
-		"gfx/models/portraits/main_texture/035_NVG.dds" = {
-			has_leader_flag = BA_skin_NVG
-		}
-	}
-}
-
-BA_clothes_036 = {
-	default = "gfx/models/portraits/main_texture/036.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/036_AGT.dds" = {
-			has_leader_flag = BA_skin_AGT
-		}
-		"gfx/models/portraits/main_texture/036_DR.dds" = {
-			has_leader_flag = BA_skin_DR
-		}
-		"gfx/models/portraits/main_texture/036_KMN.dds" = {
-			has_leader_flag = BA_skin_KMN
-		}
-	}
-}
-
-BA_clothes_037 = {
-	default = "gfx/models/portraits/main_texture/037.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/037_AGT.dds" = {
-			has_leader_flag = BA_skin_AGT
-		}
-		"gfx/models/portraits/main_texture/037_DR.dds" = {
-			has_leader_flag = BA_skin_DR
-		}
-		"gfx/models/portraits/main_texture/037_KMN.dds" = {
-			has_leader_flag = BA_skin_KMN
-		}
-	}
-}
-
-BA_clothes_038 = {
-	default = "gfx/models/portraits/main_texture/038.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/038_HS.dds" = {
-			has_leader_flag = BA_skin_HS
-		}
-	}
-}
-
-BA_clothes_039 = {
-	default = "gfx/models/portraits/main_texture/039.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/039_DR.dds" = {
-			has_leader_flag = BA_skin_DR
-		}
-		"gfx/models/portraits/main_texture/039_PJ.dds" = {
+		"gfx/models/portraits/main_texture/Hina_PJ.dds" = {
 			has_leader_flag = BA_skin_PJ
 		}
-		"gfx/models/portraits/main_texture/039_SS.dds" = {
+		"gfx/models/portraits/main_texture/Hina_SS.dds" = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
 }
 
-BA_clothes_040 = {
-	default = "gfx/models/portraits/main_texture/040.dds"
+BA_clothes_Ako = {
+	default = "gfx/models/portraits/main_texture/Ako.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/040_DR.dds" = {
+		"gfx/models/portraits/main_texture/Ako_DR.dds" = {
 			has_leader_flag = BA_skin_DR
 		}
-		"gfx/models/portraits/main_texture/040_NVG.dds" = {
-			has_leader_flag = BA_skin_NVG
-		}
-		"gfx/models/portraits/main_texture/040_SP.dds" = {
+		"gfx/models/portraits/main_texture/Ako_SP.dds" = {
 			has_leader_flag = BA_skin_SP
+		}
+		"gfx/models/portraits/main_texture/Ako_NVG.dds" = {
+			has_leader_flag = BA_skin_NVG
 		}
 	}
 }
 
-BA_clothes_041 = {
-	default = "gfx/models/portraits/main_texture/041.dds"
+BA_clothes_Iori = {
+	default = "gfx/models/portraits/main_texture/Iori.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/041_SS.dds" = {
+		"gfx/models/portraits/main_texture/Iori_SS.dds" = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
 }
 
-BA_clothes_042 = {
-	default = "gfx/models/portraits/main_texture/042.dds"
+BA_clothes_Chinatsu = {
+	default = "gfx/models/portraits/main_texture/Chinatsu.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/042_KMN.dds" = {
+		"gfx/models/portraits/main_texture/Chinatsu_HS.dds" = {
+			has_leader_flag = BA_skin_HS
+		}
+	}
+}
+
+BA_clothes_Aru = {
+	default = "gfx/models/portraits/main_texture/Aru.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Aru_DR.dds" = {
+			has_leader_flag = BA_skin_DR
+		}
+		"gfx/models/portraits/main_texture/Aru_KMN.dds" = {
 			has_leader_flag = BA_skin_KMN
 		}
 	}
 }
 
-BA_clothes_043 = {
-	default = "gfx/models/portraits/main_texture/043.dds"
+BA_clothes_Kayoko = {
+	default = "gfx/models/portraits/main_texture/Kayoko.dds"
 	leader = {
-	}
-}
-
-BA_clothes_044 = {
-	default = "gfx/models/portraits/main_texture/044.dds"
-	leader = {
-	}
-}
-
-BA_clothes_045 = {
-	default = "gfx/models/portraits/main_texture/045.dds"
-	leader = {
-	}
-}
-
-BA_clothes_046 = {
-	default = "gfx/models/portraits/main_texture/046.dds"
-	leader = {
-	}
-}
-
-BA_clothes_047 = {
-	default = "gfx/models/portraits/main_texture/047.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/047_KMN.dds" = {
+		"gfx/models/portraits/main_texture/Kayoko_DR.dds" = {
+			has_leader_flag = BA_skin_DR
+		}
+		"gfx/models/portraits/main_texture/Kayoko_KMN.dds" = {
 			has_leader_flag = BA_skin_KMN
 		}
-		"gfx/models/portraits/main_texture/047_SP.dds" = {
-			has_leader_flag = BA_skin_SP
+		"gfx/models/portraits/main_texture/Kayoko_NVG.dds" = {
+			has_leader_flag = BA_skin_NVG
 		}
 	}
 }
 
-BA_clothes_048 = {
-	default = "gfx/models/portraits/main_texture/048.dds"
+BA_clothes_Mutsuki = {
+	default = "gfx/models/portraits/main_texture/Mutsuki.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/048_KMN.dds" = {
+		"gfx/models/portraits/main_texture/Mutsuki_DR.dds" = {
+			has_leader_flag = BA_skin_DR
+		}
+		"gfx/models/portraits/main_texture/Mutsuki_KMN.dds" = {
 			has_leader_flag = BA_skin_KMN
 		}
-		"gfx/models/portraits/main_texture/048_SP.dds" = {
-			has_leader_flag = BA_skin_SP
+		"gfx/models/portraits/main_texture/Mutsuki_AGT.dds" = {
+			has_leader_flag = BA_skin_AGT
 		}
 	}
 }
 
-BA_clothes_049 = {
-	default = "gfx/models/portraits/main_texture/049.dds"
+BA_clothes_Haruka = {
+	default = "gfx/models/portraits/main_texture/Haruka.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/049_KMN.dds" = {
+		"gfx/models/portraits/main_texture/Haruka_DR.dds" = {
+			has_leader_flag = BA_skin_DR
+		}
+		"gfx/models/portraits/main_texture/Haruka_KMN.dds" = {
 			has_leader_flag = BA_skin_KMN
 		}
-		"gfx/models/portraits/main_texture/049_SPW.dds" = {
+		"gfx/models/portraits/main_texture/Haruka_AGT.dds" = {
+			has_leader_flag = BA_skin_AGT
+		}
+	}
+}
+
+BA_clothes_Haruna = {
+	default = "gfx/models/portraits/main_texture/Haruna.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Haruna_KMN.dds" = {
+			has_leader_flag = BA_skin_KMN
+		}
+		"gfx/models/portraits/main_texture/Haruna_SPW.dds" = {
 			has_leader_flag = BA_skin_SPW
 		}
 	}
 }
 
-BA_clothes_050 = {
-	default = "gfx/models/portraits/main_texture/050.dds"
+BA_clothes_Akari = {
+	default = "gfx/models/portraits/main_texture/Akari.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/050_KMN.dds" = {
+		"gfx/models/portraits/main_texture/Akari_KMN.dds" = {
 			has_leader_flag = BA_skin_KMN
 		}
-		"gfx/models/portraits/main_texture/050_SP.dds" = {
+		"gfx/models/portraits/main_texture/Akari_SP.dds" = {
 			has_leader_flag = BA_skin_SP
 		}
-		"gfx/models/portraits/main_texture/050_SS.dds" = {
+	}
+}
+
+BA_clothes_Izumi = {
+	default = "gfx/models/portraits/main_texture/Izumi.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Izumi_KMN.dds" = {
+			has_leader_flag = BA_skin_KMN
+		}
+		"gfx/models/portraits/main_texture/Izumi_SS.dds" = {
 			has_leader_flag = BA_skin_SS
 		}
-	}
-}
-
-BA_clothes_051 = {
-	default = "gfx/models/portraits/main_texture/051.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/051_DR.dds" = {
-			has_leader_flag = BA_skin_DR
-		}
-	}
-}
-
-BA_clothes_052 = {
-	default = "gfx/models/portraits/main_texture/052.dds"
-	leader = {
-	}
-}
-
-BA_clothes_053 = {
-	default = "gfx/models/portraits/main_texture/053.dds"
-	leader = {
-	}
-}
-
-BA_clothes_054 = {
-	default = "gfx/models/portraits/main_texture/054.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/054_DR.dds" = {
-			has_leader_flag = BA_skin_DR
-		}
-	}
-}
-
-BA_clothes_055 = {
-	default = "gfx/models/portraits/main_texture/055.dds"
-	leader = {
-	}
-}
-
-BA_clothes_056 = {
-	default = "gfx/models/portraits/main_texture/056.dds"
-	leader = {
-	}
-}
-
-BA_clothes_057 = {
-	default = "gfx/models/portraits/main_texture/057.dds"
-	leader = {
-	}
-}
-
-BA_clothes_058 = {
-	default = "gfx/models/portraits/main_texture/058.dds"
-	leader = {
-	}
-}
-
-BA_clothes_059 = {
-	default = "gfx/models/portraits/main_texture/059.dds"
-	leader = {
-	}
-}
-
-BA_clothes_060 = {
-	default = "gfx/models/portraits/main_texture/060.dds"
-	leader = {
-	}
-}
-
-BA_clothes_061 = {
-	default = "gfx/models/portraits/main_texture/061.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/061_HS.dds" = {
-			has_leader_flag = BA_skin_HS
-		}
-	}
-}
-
-BA_clothes_062 = {
-	default = "gfx/models/portraits/main_texture/062.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/062_HS.dds" = {
-			has_leader_flag = BA_skin_HS
-		}
-	}
-}
-
-BA_clothes_063 = {
-	default = "gfx/models/portraits/main_texture/063.dds"
-	leader = {
-	}
-}
-
-BA_clothes_064 = {
-	default = "gfx/models/portraits/main_texture/064.dds"
-	leader = {
-	}
-}
-
-BA_clothes_065 = {
-	default = "gfx/models/portraits/main_texture/065.dds"
-	leader = {
-	}
-}
-
-BA_clothes_066 = {
-	default = "gfx/models/portraits/main_texture/066.dds"
-	leader = {
-	}
-}
-
-BA_clothes_067 = {
-	default = "gfx/models/portraits/main_texture/067.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/067_HS.dds" = {
-			has_leader_flag = BA_skin_HS
-		}
-	}
-}
-
-BA_clothes_068 = {
-	default = "gfx/models/portraits/main_texture/068.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/068_OLD.dds" = {
-			has_leader_flag = BA_skin_OLD
-		}
-	}
-}
-
-BA_clothes_069 = {
-	default = "gfx/models/portraits/main_texture/069.dds"
-	leader = {
-	}
-}
-
-BA_clothes_070 = {
-	default = "gfx/models/portraits/main_texture/070.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/070_HS.dds" = {
-			has_leader_flag = BA_skin_HS
-		}
-	}
-}
-
-BA_clothes_071 = {
-	default = "gfx/models/portraits/main_texture/071.dds"
-	leader = {
-	}
-}
-
-BA_clothes_072 = {
-	default = "gfx/models/portraits/main_texture/072.dds"
-	leader = {
-	}
-}
-
-BA_clothes_073 = {
-	default = "gfx/models/portraits/main_texture/073.dds"
-	leader = {
-	}
-}
-
-BA_clothes_074 = {
-	default = "gfx/models/portraits/main_texture/074.dds"
-	leader = {
-	}
-}
-
-BA_clothes_075 = {
-	default = "gfx/models/portraits/main_texture/075.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/075_NVG.dds" = {
-			has_leader_flag = BA_skin_NVG
-		}
-	}
-}
-
-BA_clothes_076 = {
-	default = "gfx/models/portraits/main_texture/076.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/076_NVG.dds" = {
-			has_leader_flag = BA_skin_NVG
-		}
-	}
-}
-
-BA_clothes_077 = {
-	default = "gfx/models/portraits/main_texture/077.dds"
-	leader = {
-	}
-}
-
-BA_clothes_078 = {
-	default = "gfx/models/portraits/main_texture/078.dds"
-	leader = {
-	}
-}
-
-BA_clothes_079 = {
-	default = "gfx/models/portraits/main_texture/079.dds"
-	leader = {
-	}
-}
-
-BA_clothes_080 = {
-	default = "gfx/models/portraits/main_texture/080.dds"
-	leader = {
-	}
-}
-
-BA_clothes_081 = {
-	default = "gfx/models/portraits/main_texture/081.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/081_NVG.dds" = {
-			has_leader_flag = BA_skin_NVG
-		}
-	}
-}
-
-BA_clothes_082 = {
-	default = "gfx/models/portraits/main_texture/082.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/082_CL.dds" = {
-			has_leader_flag = BA_skin_CL
-		}
-	}
-}
-
-BA_clothes_083 = {
-	default = "gfx/models/portraits/main_texture/083.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/083_CL.dds" = {
-			has_leader_flag = BA_skin_CL
-		}
-		"gfx/models/portraits/main_texture/083_SP.dds" = {
+		"gfx/models/portraits/main_texture/Izumi_SP.dds" = {
 			has_leader_flag = BA_skin_SP
 		}
 	}
 }
 
-BA_clothes_084 = {
-	default = "gfx/models/portraits/main_texture/084.dds"
+BA_clothes_Junko = {
+	default = "gfx/models/portraits/main_texture/Junko.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/084_CL.dds" = {
-			has_leader_flag = BA_skin_CL
+		"gfx/models/portraits/main_texture/Junko_KMN.dds" = {
+			has_leader_flag = BA_skin_KMN
 		}
-	}
-}
-
-BA_clothes_085 = {
-	default = "gfx/models/portraits/main_texture/085.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/085_SS.dds" = {
-			has_leader_flag = BA_skin_SS
-		}
-	}
-}
-
-BA_clothes_086 = {
-	default = "gfx/models/portraits/main_texture/086.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/086_CD.dds" = {
-			has_leader_flag = BA_skin_CD
-		}
-		"gfx/models/portraits/main_texture/086_NVG.dds" = {
-			has_leader_flag = BA_skin_NVG
-		}
-	}
-}
-
-BA_clothes_087 = {
-	default = "gfx/models/portraits/main_texture/087.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/087_SP.dds" = {
+		"gfx/models/portraits/main_texture/Junko_SP.dds" = {
 			has_leader_flag = BA_skin_SP
 		}
 	}
 }
 
-BA_clothes_088 = {
-	default = "gfx/models/portraits/main_texture/088.dds"
+BA_clothes_Fuuka = {
+	default = "gfx/models/portraits/main_texture/Fuuka.dds"
 	leader = {
-	}
-}
-
-BA_clothes_089 = {
-	default = "gfx/models/portraits/main_texture/089.dds"
-	leader = {
-	}
-}
-
-BA_clothes_090 = {
-	default = "gfx/models/portraits/main_texture/090.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/090_SP.dds" = {
-			has_leader_flag = BA_skin_SP
+		"gfx/models/portraits/main_texture/Fuuka_KMN.dds" = {
+			has_leader_flag = BA_skin_KMN
 		}
-	}
-}
-
-BA_clothes_091 = {
-	default = "gfx/models/portraits/main_texture/091.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/091_BN.dds" = {
-			has_leader_flag = BA_skin_BN
-		}
-	}
-}
-
-BA_clothes_092 = {
-	default = "gfx/models/portraits/main_texture/092.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/092_NVG.dds" = {
-			has_leader_flag = BA_skin_NVG
-		}
-		"gfx/models/portraits/main_texture/092_SPW.dds" = {
-			has_leader_flag = BA_skin_SPW
-		}
-	}
-}
-
-BA_clothes_093 = {
-	default = "gfx/models/portraits/main_texture/093.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/093_MD.dds" = {
-			has_leader_flag = BA_skin_MD
-		}
-	}
-}
-
-BA_clothes_094 = {
-	default = "gfx/models/portraits/main_texture/094.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/094_MD.dds" = {
-			has_leader_flag = BA_skin_MD
-		}
-	}
-}
-
-BA_clothes_095 = {
-	default = "gfx/models/portraits/main_texture/095.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/095_MD.dds" = {
-			has_leader_flag = BA_skin_MD
-		}
-	}
-}
-
-BA_clothes_096 = {
-	default = "gfx/models/portraits/main_texture/096.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/096_MD.dds" = {
-			has_leader_flag = BA_skin_MD
-		}
-	}
-}
-
-BA_clothes_097 = {
-	default = "gfx/models/portraits/main_texture/097.dds"
-	leader = {
-	}
-}
-
-BA_clothes_098 = {
-	default = "gfx/models/portraits/main_texture/098.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/098_CMP.dds" = {
-			has_leader_flag = BA_skin_CMP
-		}
-	}
-}
-
-BA_clothes_099 = {
-	default = "gfx/models/portraits/main_texture/099.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/099_CMP.dds" = {
-			has_leader_flag = BA_skin_CMP
-		}
-	}
-}
-
-BA_clothes_100 = {
-	default = "gfx/models/portraits/main_texture/100.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/100_CMP.dds" = {
-			has_leader_flag = BA_skin_CMP
-		}
-	}
-}
-
-BA_clothes_101 = {
-	default = "gfx/models/portraits/main_texture/101.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/101_CMP.dds" = {
-			has_leader_flag = BA_skin_CMP
-		}
-		"gfx/models/portraits/main_texture/101_SP.dds" = {
-			has_leader_flag = BA_skin_SP
-		}
-	}
-}
-
-BA_clothes_102 = {
-	default = "gfx/models/portraits/main_texture/102.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/102_BN.dds" = {
-			has_leader_flag = BA_skin_BN
-		}
-		"gfx/models/portraits/main_texture/102_UNF.dds" = {
-			has_leader_flag = BA_skin_UNF
-		}
-	}
-}
-
-BA_clothes_103 = {
-	default = "gfx/models/portraits/main_texture/103.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/103_BN.dds" = {
-			has_leader_flag = BA_skin_BN
-		}
-		"gfx/models/portraits/main_texture/103_UNF.dds" = {
-			has_leader_flag = BA_skin_UNF
-		}
-	}
-}
-
-BA_clothes_104 = {
-	default = "gfx/models/portraits/main_texture/104.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/104_BN.dds" = {
-			has_leader_flag = BA_skin_BN
-		}
-	}
-}
-
-BA_clothes_105 = {
-	default = "gfx/models/portraits/main_texture/105.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/105_BN.dds" = {
-			has_leader_flag = BA_skin_BN
-		}
-	}
-}
-
-BA_clothes_106 = {
-	default = "gfx/models/portraits/main_texture/106.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/106_BN.dds" = {
-			has_leader_flag = BA_skin_BN
-		}
-	}
-}
-
-BA_clothes_107 = {
-	default = "gfx/models/portraits/main_texture/107.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/107_DL.dds" = {
+		"gfx/models/portraits/main_texture/Fuuka_DL.dds" = {
 			has_leader_flag = BA_skin_DL
 		}
 	}
 }
 
-BA_clothes_108 = {
-	default = "gfx/models/portraits/main_texture/108.dds"
+BA_clothes_Juri = {
+	default = "gfx/models/portraits/main_texture/Juri.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/108_YN.dds" = {
-			has_leader_flag = BA_skin_YN
+		"gfx/models/portraits/main_texture/Juri_WK.dds" = {
+			has_leader_flag = BA_skin_WK
 		}
 	}
 }
 
-BA_clothes_109 = {
-	default = "gfx/models/portraits/main_texture/109.dds"
+BA_clothes_Megu = {
+	default = "gfx/models/portraits/main_texture/Megu.dds"
 	leader = {
-	}
-}
-
-BA_clothes_110 = {
-	default = "gfx/models/portraits/main_texture/110.dds"
-	leader = {
-	}
-}
-
-BA_clothes_111 = {
-	default = "gfx/models/portraits/main_texture/111.dds"
-	leader = {
-	}
-}
-
-BA_clothes_112 = {
-	default = "gfx/models/portraits/main_texture/112.dds"
-	leader = {
-	}
-}
-
-BA_clothes_113 = {
-	default = "gfx/models/portraits/main_texture/113.dds"
-	leader = {
-	}
-}
-
-BA_clothes_114 = {
-	default = "gfx/models/portraits/main_texture/114.dds"
-	leader = {
-	}
-}
-
-BA_clothes_115 = {
-	default = "gfx/models/portraits/main_texture/115.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/115_SS.dds" = {
+		"gfx/models/portraits/main_texture/Megu_SS.dds" = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
 }
 
-BA_clothes_116 = {
-	default = "gfx/models/portraits/main_texture/116.dds"
+BA_clothes_Kirara = {
+	default = "gfx/models/portraits/main_texture/Kirara.dds"
+	leader = { }
+}
+
+BA_clothes_Erika = {
+	default = "gfx/models/portraits/main_texture/Erika.dds"
+	leader = { }
+}
+
+BA_clothes_Sena = {
+	default = "gfx/models/portraits/main_texture/Sena.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/116_SP.dds" = {
+		"gfx/models/portraits/main_texture/Sena_DL.dds" = {
+			has_leader_flag = BA_skin_DL
+		}
+	}
+}
+
+BA_clothes_Rio = {
+	default = "gfx/models/portraits/main_texture/Rio.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Rio_CD.dds" = {
+			has_leader_flag = BA_skin_CD
+		}
+		"gfx/models/portraits/main_texture/Rio_QB.dds" = {
+			has_leader_flag = BA_skin_QB
+		}
+	}
+}
+
+BA_clothes_Yuuka = {
+	default = "gfx/models/portraits/main_texture/Yuuka.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Yuuka_SPW.dds" = {
+			has_leader_flag = BA_skin_SPW
+		}
+		"gfx/models/portraits/main_texture/Yuuka_PJ.dds" = {
+			has_leader_flag = BA_skin_PJ
+		}
+		"gfx/models/portraits/main_texture/Yuuka_NVG.dds" = {
+			has_leader_flag = BA_skin_NVG
+		}
+	}
+}
+
+BA_clothes_Noa = {
+	default = "gfx/models/portraits/main_texture/Noa.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Noa_PJ.dds" = {
+			has_leader_flag = BA_skin_PJ
+		}
+		"gfx/models/portraits/main_texture/Noa_SP.dds" = {
 			has_leader_flag = BA_skin_SP
 		}
-		"gfx/models/portraits/main_texture/116_SS.dds" = {
-			has_leader_flag = BA_skin_SS
+	}
+}
+
+BA_clothes_Koyuki = {
+	default = "gfx/models/portraits/main_texture/Koyuki.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Koyuki_PJ.dds" = {
+			has_leader_flag = BA_skin_PJ
+		}
+		"gfx/models/portraits/main_texture/Koyuki_BN.dds" = {
+			has_leader_flag = BA_skin_BN
 		}
 	}
 }
 
-BA_clothes_117 = {
-	default = "gfx/models/portraits/main_texture/117.dds"
+BA_clothes_Neru = {
+	default = "gfx/models/portraits/main_texture/Neru.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/117_SP.dds" = {
-			has_leader_flag = BA_skin_SP
+		"gfx/models/portraits/main_texture/Neru_UNF.dds" = {
+			has_leader_flag = BA_skin_UNF
 		}
-		"gfx/models/portraits/main_texture/117_SS.dds" = {
-			has_leader_flag = BA_skin_SS
+		"gfx/models/portraits/main_texture/Neru_BN.dds" = {
+			has_leader_flag = BA_skin_BN
 		}
 	}
 }
 
-BA_clothes_118 = {
-	default = "gfx/models/portraits/main_texture/118.dds"
+BA_clothes_Asuna = {
+	default = "gfx/models/portraits/main_texture/Asuna.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/118_SP.dds" = {
-			has_leader_flag = BA_skin_SP
+		"gfx/models/portraits/main_texture/Asuna_UNF.dds" = {
+			has_leader_flag = BA_skin_UNF
 		}
-		"gfx/models/portraits/main_texture/118_SS.dds" = {
-			has_leader_flag = BA_skin_SS
-		}
-	}
-}
-
-BA_clothes_119 = {
-	default = "gfx/models/portraits/main_texture/119.dds"
-	leader = {
-	}
-}
-
-BA_clothes_120 = {
-	default = "gfx/models/portraits/main_texture/120.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/120_SP.dds" = {
-			has_leader_flag = BA_skin_SP
+		"gfx/models/portraits/main_texture/Asuna_BN.dds" = {
+			has_leader_flag = BA_skin_BN
 		}
 	}
 }
 
-BA_clothes_121 = {
-	default = "gfx/models/portraits/main_texture/121.dds"
+BA_clothes_Karin = {
+	default = "gfx/models/portraits/main_texture/Karin.dds"
 	leader = {
-	}
-}
-
-BA_clothes_122 = {
-	default = "gfx/models/portraits/main_texture/122.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/122_CL.dds" = {
-			has_leader_flag = BA_skin_CL
+		"gfx/models/portraits/main_texture/Karin_UNF.dds" = {
+			has_leader_flag = BA_skin_UNF
 		}
-		"gfx/models/portraits/main_texture/122_XMS.dds" = {
-			has_leader_flag = BA_skin_XMS
+		"gfx/models/portraits/main_texture/Karin_BN.dds" = {
+			has_leader_flag = BA_skin_BN
 		}
 	}
 }
 
-BA_clothes_123 = {
-	default = "gfx/models/portraits/main_texture/123.dds"
+BA_clothes_Akane = {
+	default = "gfx/models/portraits/main_texture/Akane.dds"
 	leader = {
-	}
-}
-
-BA_clothes_124 = {
-	default = "gfx/models/portraits/main_texture/124.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/124_NS.dds" = {
-			has_leader_flag = BA_skin_NS
+		"gfx/models/portraits/main_texture/Akane_DL.dds" = {
+			has_leader_flag = BA_skin_DL
 		}
-		"gfx/models/portraits/main_texture/124_XMS.dds" = {
-			has_leader_flag = BA_skin_XMS
-		}
-		"gfx/models/portraits/main_texture/124_XMS.dds" = {
-			has_leader_flag = BA_Serina_PR
+		"gfx/models/portraits/main_texture/Akane_BN.dds" = {
+			has_leader_flag = BA_skin_BN
 		}
 	}
 }
 
-BA_clothes_125 = {
-	default = "gfx/models/portraits/main_texture/125.dds"
+BA_clothes_Toki = {
+	default = "gfx/models/portraits/main_texture/Toki.dds"
 	leader = {
-	}
-}
-
-BA_clothes_126 = {
-	default = "gfx/models/portraits/main_texture/126.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/126_BD.dds" = {
-			has_leader_flag = BA_skin_BD
+		"gfx/models/portraits/main_texture/Toki_DL.dds" = {
+			has_leader_flag = BA_skin_DL
+		}
+		"gfx/models/portraits/main_texture/Toki_QB.dds" = {
+			has_leader_flag = BA_skin_QB
+		}
+		"gfx/models/portraits/main_texture/Toki_BN.dds" = {
+			has_leader_flag = BA_skin_BN
 		}
 	}
 }
 
-BA_clothes_127 = {
-	default = "gfx/models/portraits/main_texture/127.dds"
+BA_clothes_Yuzu = {
+	default = "gfx/models/portraits/main_texture/Yuzu.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/127_BD.dds" = {
-			has_leader_flag = BA_skin_BD
+		"gfx/models/portraits/main_texture/Yuzu_MD.dds" = {
+			has_leader_flag = BA_skin_MD
+		}
+		"gfx/models/portraits/main_texture/Yuzu_CD.dds" = {
+			has_leader_flag = BA_skin_CD
+		}
+		"gfx/models/portraits/main_texture/Yuzu_QB.dds" = {
+			has_leader_flag = BA_skin_QB
 		}
 	}
 }
 
-BA_clothes_128 = {
-	default = "gfx/models/portraits/main_texture/128.dds"
+BA_clothes_Momoi = {
+	default = "gfx/models/portraits/main_texture/Momoi.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/128_BD.dds" = {
-			has_leader_flag = BA_skin_BD
+		"gfx/models/portraits/main_texture/Momoi_MD.dds" = {
+			has_leader_flag = BA_skin_MD
 		}
-		"gfx/models/portraits/main_texture/128_OLD.dds" = {
+		"gfx/models/portraits/main_texture/Momoi_CD.dds" = {
+			has_leader_flag = BA_skin_CD
+		}
+		"gfx/models/portraits/main_texture/Momoi_QB.dds" = {
+			has_leader_flag = BA_skin_QB
+		}
+	}
+}
+
+BA_clothes_Midori = {
+	default = "gfx/models/portraits/main_texture/Midori.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Midori_MD.dds" = {
+			has_leader_flag = BA_skin_MD
+		}
+		"gfx/models/portraits/main_texture/Midori_CD.dds" = {
+			has_leader_flag = BA_skin_CD
+		}
+		"gfx/models/portraits/main_texture/Midori_QB.dds" = {
+			has_leader_flag = BA_skin_QB
+		}
+	}
+}
+
+BA_clothes_Aris = {
+	default = "gfx/models/portraits/main_texture/Aris.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Aris_MD.dds" = {
+			has_leader_flag = BA_skin_MD
+		}
+		"gfx/models/portraits/main_texture/Aris_CD.dds" = {
+			has_leader_flag = BA_skin_CD
+		}
+		"gfx/models/portraits/main_texture/Aris_QB.dds" = {
+			has_leader_flag = BA_skin_QB
+		}
+		"gfx/models/portraits/main_texture/Aris_OLD.dds" = {
 			has_leader_flag = BA_skin_OLD
 		}
 	}
 }
 
-BA_clothes_129 = {
-	default = "gfx/models/portraits/main_texture/129.dds"
+BA_clothes_Chihiro = {
+	default = "gfx/models/portraits/main_texture/Chihiro.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/129_BD.dds" = {
-			has_leader_flag = BA_skin_BD
+		"gfx/models/portraits/main_texture/Chihiro_PJ.dds" = {
+			has_leader_flag = BA_skin_PJ
 		}
-		"gfx/models/portraits/main_texture/129_SP.dds" = {
+		"gfx/models/portraits/main_texture/Chihiro_CMP.dds" = {
+			has_leader_flag = BA_skin_CMP
+		}
+	}
+}
+
+BA_clothes_Kotama = {
+	default = "gfx/models/portraits/main_texture/Kotama.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Kotama_PJ.dds" = {
+			has_leader_flag = BA_skin_PJ
+		}
+		"gfx/models/portraits/main_texture/Kotama_CMP.dds" = {
+			has_leader_flag = BA_skin_CMP
+		}
+	}
+}
+
+BA_clothes_Hare = {
+	default = "gfx/models/portraits/main_texture/Hare.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Hare_PJ.dds" = {
+			has_leader_flag = BA_skin_PJ
+		}
+		"gfx/models/portraits/main_texture/Hare_CMP.dds" = {
+			has_leader_flag = BA_skin_CMP
+		}
+	}
+}
+
+BA_clothes_Maki = {
+	default = "gfx/models/portraits/main_texture/Maki.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Maki_PJ.dds" = {
+			has_leader_flag = BA_skin_PJ
+		}
+		"gfx/models/portraits/main_texture/Maki_CMP.dds" = {
+			has_leader_flag = BA_skin_CMP
+		}
+		"gfx/models/portraits/main_texture/Maki_SP.dds" = {
 			has_leader_flag = BA_skin_SP
 		}
 	}
 }
 
-BA_clothes_130 = {
-	default = "gfx/models/portraits/main_texture/130.dds"
+BA_clothes_Utaha = {
+	default = "gfx/models/portraits/main_texture/Utaha.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/130_SS.dds" = {
+		"gfx/models/portraits/main_texture/Utaha_IDL.dds" = {
+			has_leader_flag = BA_skin_IDL
+		}
+		"gfx/models/portraits/main_texture/Utaha_CL.dds" = {
+			has_leader_flag = BA_skin_CL
+		}
+	}
+}
+
+BA_clothes_Hibiki = {
+	default = "gfx/models/portraits/main_texture/Hibiki.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Hibiki_CL.dds" = {
+			has_leader_flag = BA_skin_CL
+		}
+	}
+}
+
+BA_clothes_Kotori = {
+	default = "gfx/models/portraits/main_texture/Kotori.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Kotori_CL.dds" = {
+			has_leader_flag = BA_skin_CL
+		}
+		"gfx/models/portraits/main_texture/Kotori_SP.dds" = {
+			has_leader_flag = BA_skin_SP
+		}
+	}
+}
+
+BA_clothes_Himari = {
+	default = "gfx/models/portraits/main_texture/Himari.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Himari_QB.dds" = {
+			has_leader_flag = BA_skin_QB
+		}
+		"gfx/models/portraits/main_texture/Himari_CD.dds" = {
+			has_leader_flag = BA_skin_CD
+		}
+		"gfx/models/portraits/main_texture/Himari_NVG.dds" = {
+			has_leader_flag = BA_skin_NVG
+		}
+	}
+}
+
+BA_clothes_Eimi = {
+	default = "gfx/models/portraits/main_texture/Eimi.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Eimi_QB.dds" = {
+			has_leader_flag = BA_skin_QB
+		}
+		"gfx/models/portraits/main_texture/Eimi_SS.dds" = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
 }
 
-BA_clothes_131 = {
-	default = "gfx/models/portraits/main_texture/131.dds"
+BA_clothes_Sumire = {
+	default = "gfx/models/portraits/main_texture/Sumire.dds"
 	leader = {
-	}
-}
-
-BA_clothes_132 = {
-	default = "gfx/models/portraits/main_texture/132.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/132_SPW.dds" = {
-			has_leader_flag = BA_skin_SPW
+		"gfx/models/portraits/main_texture/Sumire_WK.dds" = {
+			has_leader_flag = BA_skin_WK
+		}
+		"gfx/models/portraits/main_texture/Sumire_SP.dds" = {
+			has_leader_flag = BA_skin_SP
 		}
 	}
 }
 
-BA_clothes_133 = {
-	default = "gfx/models/portraits/main_texture/133.dds"
+BA_clothes_Rei = {
+	default = "gfx/models/portraits/main_texture/Rei.dds"
+	leader = { }
+}
+
+BA_clothes_Mirai = {
+	default = "gfx/models/portraits/main_texture/Mirai.dds"
+	leader = { }
+}
+
+BA_clothes_Mika = {
+	default = "gfx/models/portraits/main_texture/Mika.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/133_SS.dds" = {
+		"gfx/models/portraits/main_texture/Mika_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+		"gfx/models/portraits/main_texture/Mika_SP.dds" = {
+			has_leader_flag = BA_skin_SP
+		}
+	}
+}
+
+BA_clothes_Nagisa = {
+	default = "gfx/models/portraits/main_texture/Nagisa.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Nagisa_SS.dds" = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
 }
 
-BA_clothes_134 = {
-	default = "gfx/models/portraits/main_texture/134.dds"
+BA_clothes_Seia = {
+	default = "gfx/models/portraits/main_texture/Seia.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/134_DR.dds" = {
+		"gfx/models/portraits/main_texture/Seia_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+	}
+}
+
+BA_clothes_Hifumi = {
+	default = "gfx/models/portraits/main_texture/Hifumi.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Hifumi_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+		"gfx/models/portraits/main_texture/Hifumi_SP.dds" = {
+			has_leader_flag = BA_skin_SP
+		}
+	}
+}
+
+BA_clothes_Azusa = {
+	default = "gfx/models/portraits/main_texture/Azusa.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Azusa_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+		"gfx/models/portraits/main_texture/Azusa_SP.dds" = {
+			has_leader_flag = BA_skin_SP
+		}
+	}
+}
+
+BA_clothes_Hanako = {
+	default = "gfx/models/portraits/main_texture/Hanako.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Hanako_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+	}
+}
+
+BA_clothes_Koharu = {
+	default = "gfx/models/portraits/main_texture/Koharu.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Koharu_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+		"gfx/models/portraits/main_texture/Koharu_SP.dds" = {
+			has_leader_flag = BA_skin_SP
+		}
+	}
+}
+
+BA_clothes_Tsurugi = {
+	default = "gfx/models/portraits/main_texture/Tsurugi.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Tsurugi_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+		"gfx/models/portraits/main_texture/Tsurugi_SP.dds" = {
+			has_leader_flag = BA_skin_SP
+		}
+		"gfx/models/portraits/main_texture/Tsurugi_DR.dds" = {
 			has_leader_flag = BA_skin_DR
 		}
-		"gfx/models/portraits/main_texture/134_SNT.dds" = {
-			has_leader_flag = BA_skin_SNT
-		}
 	}
 }
 
-BA_clothes_135 = {
-	default = "gfx/models/portraits/main_texture/135.dds"
+BA_clothes_Hasumi = {
+	default = "gfx/models/portraits/main_texture/Hasumi.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/135_SP.dds" = {
-			has_leader_flag = BA_skin_SP
-		}
-		"gfx/models/portraits/main_texture/135_SS.dds" = {
+		"gfx/models/portraits/main_texture/Hasumi_SS.dds" = {
 			has_leader_flag = BA_skin_SS
 		}
-	}
-}
-
-BA_clothes_136 = {
-	default = "gfx/models/portraits/main_texture/136.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/136_SPW.dds" = {
+		"gfx/models/portraits/main_texture/Hasumi_SPW.dds" = {
 			has_leader_flag = BA_skin_SPW
 		}
 	}
 }
 
-BA_clothes_137 = {
-	default = "gfx/models/portraits/main_texture/137.dds"
+BA_clothes_Ichika = {
+	default = "gfx/models/portraits/main_texture/Ichika.dds"
 	leader = {
+		"gfx/models/portraits/main_texture/Ichika_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+		"gfx/models/portraits/main_texture/Ichika_DR.dds" = {
+			has_leader_flag = BA_skin_DR
+		}
 	}
 }
 
-BA_clothes_138 = {
-	default = "gfx/models/portraits/main_texture/138.dds"
+BA_clothes_Mashiro = {
+	default = "gfx/models/portraits/main_texture/Mashiro.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/138_SP.dds" = {
+		"gfx/models/portraits/main_texture/Mashiro_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+		"gfx/models/portraits/main_texture/Mashiro_SP.dds" = {
 			has_leader_flag = BA_skin_SP
 		}
-		"gfx/models/portraits/main_texture/138_SS.dds" = {
+	}
+}
+
+BA_clothes_Sakurako = {
+	default = "gfx/models/portraits/main_texture/Sakurako.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Sakurako_DR.dds" = {
+			has_leader_flag = BA_skin_DR
+		}
+		"gfx/models/portraits/main_texture/Sakurako_IDL.dds" = {
+			has_leader_flag = BA_skin_IDL
+		}
+	}
+}
+
+BA_clothes_Hinata = {
+	default = "gfx/models/portraits/main_texture/Hinata.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Hinata_SS.dds" = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
 }
 
-BA_clothes_139 = {
-	default = "gfx/models/portraits/main_texture/139.dds"
+BA_clothes_Mari = {
+	default = "gfx/models/portraits/main_texture/Mari.dds"
 	leader = {
+		"gfx/models/portraits/main_texture/Mari_SPW.dds" = {
+			has_leader_flag = BA_skin_SPW
+		}
+		"gfx/models/portraits/main_texture/Mari_IDL.dds" = {
+			has_leader_flag = BA_skin_IDL
+		}
 	}
 }
 
-BA_clothes_140 = {
-	default = "gfx/models/portraits/main_texture/140.dds"
+BA_clothes_Airi = {
+	default = "gfx/models/portraits/main_texture/Airi.dds"
 	leader = {
+		"gfx/models/portraits/main_texture/Airi_BD.dds" = {
+			has_leader_flag = BA_skin_BD
+		}
+		"gfx/models/portraits/main_texture/Airi_HH.dds" = {
+			has_leader_flag = BA_skin_HH
+		}
 	}
 }
 
-BA_clothes_141 = {
-	default = "gfx/models/portraits/main_texture/141.dds"
+BA_clothes_Kazusa = {
+	default = "gfx/models/portraits/main_texture/Kazusa.dds"
 	leader = {
+		"gfx/models/portraits/main_texture/Kazusa_BD.dds" = {
+			has_leader_flag = BA_skin_BD
+		}
+		"gfx/models/portraits/main_texture/Kazusa_OLD.dds" = {
+			has_leader_flag = BA_skin_OLD
+		}
+		"gfx/models/portraits/main_texture/Kazusa_HH.dds" = {
+			has_leader_flag = BA_skin_HH
+		}
 	}
 }
 
-BA_clothes_142 = {
-	default = "gfx/models/portraits/main_texture/142.dds"
+BA_clothes_Yoshimi = {
+	default = "gfx/models/portraits/main_texture/Yoshimi.dds"
 	leader = {
+		"gfx/models/portraits/main_texture/Yoshimi_BD.dds" = {
+			has_leader_flag = BA_skin_BD
+		}
+		"gfx/models/portraits/main_texture/Yoshimi_HH.dds" = {
+			has_leader_flag = BA_skin_HH
+		}
 	}
 }
 
-BA_clothes_143 = {
-	default = "gfx/models/portraits/main_texture/143.dds"
+BA_clothes_Natsu = {
+	default = "gfx/models/portraits/main_texture/Natsu.dds"
 	leader = {
-	}
-}
-
-BA_clothes_144 = {
-	default = "gfx/models/portraits/main_texture/144.dds"
-	leader = {
-	}
-}
-
-BA_clothes_145 = {
-	default = "gfx/models/portraits/main_texture/145.dds"
-	leader = {
-	}
-}
-
-BA_clothes_146 = {
-	default = "gfx/models/portraits/main_texture/146.dds"
-	leader = {
-	}
-}
-
-BA_clothes_147 = {
-	default = "gfx/models/portraits/main_texture/147.dds"
-	leader = {
-	}
-}
-
-BA_clothes_148 = {
-	default = "gfx/models/portraits/main_texture/148.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/148_SP.dds" = {
+		"gfx/models/portraits/main_texture/Natsu_BD.dds" = {
+			has_leader_flag = BA_skin_BD
+		}
+		"gfx/models/portraits/main_texture/Natsu_HH.dds" = {
+			has_leader_flag = BA_skin_HH
+		}
+		"gfx/models/portraits/main_texture/Natsu_SP.dds" = {
 			has_leader_flag = BA_skin_SP
 		}
-		"gfx/models/portraits/main_texture/148_SS.dds" = {
+	}
+}
+
+BA_clothes_Mine = {
+	default = "gfx/models/portraits/main_texture/Mine.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Mine_IDL.dds" = {
+			has_leader_flag = BA_skin_IDL
+		}
+	}
+}
+
+BA_clothes_Serina = {
+	default = "gfx/models/portraits/main_texture/Serina.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Serina_XMS.dds" = {
+			has_leader_flag = BA_skin_XMS
+		}
+		"gfx/models/portraits/main_texture/Serina_NS.dds" = {
+			has_leader_flag = BA_skin_NS
+		}
+	}
+}
+
+BA_clothes_Hanae = {
+	default = "gfx/models/portraits/main_texture/Hanae.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Hanae_XMS.dds" = {
+			has_leader_flag = BA_skin_XMS
+		}
+		"gfx/models/portraits/main_texture/Hanae_NS.dds" = {
+			has_leader_flag = BA_skin_NS
+		}
+		"gfx/models/portraits/main_texture/Hanae_CL.dds" = {
+			has_leader_flag = BA_skin_CL
+		}
+	}
+}
+
+BA_clothes_Suzumi = {
+	default = "gfx/models/portraits/main_texture/Suzumi.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Suzumi_MG.dds" = {
+			has_leader_flag = BA_skin_MG
+		}
+	}
+}
+
+BA_clothes_Reisa = {
+	default = "gfx/models/portraits/main_texture/Reisa.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Reisa_MG.dds" = {
+			has_leader_flag = BA_skin_MG
+		}
+	}
+}
+
+BA_clothes_Ui = {
+	default = "gfx/models/portraits/main_texture/Ui.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Ui_SS.dds" = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
 }
 
-BA_clothes_149 = {
-	default = "gfx/models/portraits/main_texture/149.dds"
+BA_clothes_Shimiko = {
+	default = "gfx/models/portraits/main_texture/Shimiko.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/149_SP.dds" = {
+		"gfx/models/portraits/main_texture/Shimiko_MG.dds" = {
+			has_leader_flag = BA_skin_MG
+		}
+	}
+}
+
+BA_clothes_Wakamo = {
+	default = "gfx/models/portraits/main_texture/Wakamo.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Wakamo_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+		"gfx/models/portraits/main_texture/Wakamo_FN.dds" = {
+			has_leader_flag = BA_skin_FN
+		}
+	}
+}
+
+BA_clothes_Niya = {
+	default = "gfx/models/portraits/main_texture/Niya.dds"
+	leader = { }
+}
+
+BA_clothes_Kaho = {
+	default = "gfx/models/portraits/main_texture/Kaho.dds"
+	leader = { }
+}
+
+BA_clothes_Chise = {
+	default = "gfx/models/portraits/main_texture/Chise.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Chise_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+		"gfx/models/portraits/main_texture/Chise_SP.dds" = {
 			has_leader_flag = BA_skin_SP
 		}
-		"gfx/models/portraits/main_texture/149_SS.dds" = {
+	}
+}
+
+BA_clothes_Ayame = {
+	default = "gfx/models/portraits/main_texture/Ayame.dds"
+	leader = { }
+}
+
+BA_clothes_Nagusa = {
+	default = "gfx/models/portraits/main_texture/Nagusa.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Nagusa_SS.dds" = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
 }
 
-BA_clothes_150 = {
-	default = "gfx/models/portraits/main_texture/150.dds"
+BA_clothes_Renge = {
+	default = "gfx/models/portraits/main_texture/Renge.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/150_SP.dds" = {
-			has_leader_flag = BA_skin_SP
-		}
-		"gfx/models/portraits/main_texture/150_SS.dds" = {
+		"gfx/models/portraits/main_texture/Renge_SS.dds" = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
 }
 
-BA_clothes_151 = {
-	default = "gfx/models/portraits/main_texture/151.dds"
+BA_clothes_Kikyou = {
+	default = "gfx/models/portraits/main_texture/Kikyou.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/151_SP.dds" = {
-			has_leader_flag = BA_skin_SP
-		}
-		"gfx/models/portraits/main_texture/151_SS.dds" = {
+		"gfx/models/portraits/main_texture/Kikyou_SS.dds" = {
 			has_leader_flag = BA_skin_SS
 		}
 	}
 }
 
-BA_clothes_152 = {
-	default = "gfx/models/portraits/main_texture/152.dds"
+BA_clothes_Yukari = {
+	default = "gfx/models/portraits/main_texture/Yukari.dds"
 	leader = {
+		"gfx/models/portraits/main_texture/Yukari_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+		"gfx/models/portraits/main_texture/Yukari_JC.dds" = {
+			has_leader_flag = BA_skin_JC
+		}
+		"gfx/models/portraits/main_texture/Yukari_MK.dds" = {
+			has_leader_flag = BA_skin_MK
+		}
 	}
 }
 
-BA_clothes_153 = {
-	default = "gfx/models/portraits/main_texture/153.dds"
+BA_clothes_Kuzunoha = {
+	default = "gfx/models/portraits/main_texture/Kuzunoha.dds"
+	leader = { }
+}
+
+BA_clothes_Tsubaki = {
+	default = "gfx/models/portraits/main_texture/Tsubaki.dds"
 	leader = {
+		"gfx/models/portraits/main_texture/Tsubaki_GD.dds" = {
+			has_leader_flag = BA_skin_GD
+		}
 	}
 }
 
-BA_clothes_154 = {
-	default = "gfx/models/portraits/main_texture/154.dds"
+BA_clothes_Mimori = {
+	default = "gfx/models/portraits/main_texture/Mimori.dds"
 	leader = {
+		"gfx/models/portraits/main_texture/Mimori_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
 	}
 }
 
-BA_clothes_155 = {
-	default = "gfx/models/portraits/main_texture/155.dds"
+BA_clothes_Kaede = {
+	default = "gfx/models/portraits/main_texture/Kaede.dds"
 	leader = {
+		"gfx/models/portraits/main_texture/Kaede_GD.dds" = {
+			has_leader_flag = BA_skin_GD
+		}
+		"gfx/models/portraits/main_texture/Kaede_SP.dds" = {
+			has_leader_flag = BA_skin_SP
+		}
 	}
 }
 
-BA_clothes_156 = {
-	default = "gfx/models/portraits/main_texture/156.dds"
+BA_clothes_Michiru = {
+	default = "gfx/models/portraits/main_texture/Michiru.dds"
 	leader = {
+		"gfx/models/portraits/main_texture/Michiru_DR.dds" = {
+			has_leader_flag = BA_skin_DR
+		}
 	}
 }
 
-BA_clothes_157 = {
-	default = "gfx/models/portraits/main_texture/157.dds"
+BA_clothes_Izuna = {
+	default = "gfx/models/portraits/main_texture/Izuna.dds"
 	leader = {
+		"gfx/models/portraits/main_texture/Izuna_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+		"gfx/models/portraits/main_texture/Izuna_SP.dds" = {
+			has_leader_flag = BA_skin_SP
+		}
 	}
 }
 
-BA_clothes_158 = {
-	default = "gfx/models/portraits/main_texture/158.dds"
+BA_clothes_Tsukuyo = {
+	default = "gfx/models/portraits/main_texture/Tsukuyo.dds"
 	leader = {
+		"gfx/models/portraits/main_texture/Tsukuyo_DR.dds" = {
+			has_leader_flag = BA_skin_DR
+		}
+		"gfx/models/portraits/main_texture/Tsukuyo_SP.dds" = {
+			has_leader_flag = BA_skin_SP
+		}
 	}
 }
 
-BA_clothes_159 = {
-	default = "gfx/models/portraits/main_texture/159.dds"
+BA_clothes_Shizuko = {
+	default = "gfx/models/portraits/main_texture/Shizuko.dds"
 	leader = {
+		"gfx/models/portraits/main_texture/Shizuko_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+		"gfx/models/portraits/main_texture/Shizuko_SP.dds" = {
+			has_leader_flag = BA_skin_SP
+		}
 	}
 }
 
+BA_clothes_Pina = {
+	default = "gfx/models/portraits/main_texture/Pina.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Pina_GD.dds" = {
+			has_leader_flag = BA_skin_GD
+		}
+	}
+}
+
+BA_clothes_Umika = {
+	default = "gfx/models/portraits/main_texture/Umika.dds"
+	leader = { }
+}
+
+BA_clothes_Kokuriko = {
+	default = "gfx/models/portraits/main_texture/Kokuriko.dds"
+	leader = { }
+}
+
+BA_clothes_Shuro = {
+	default = "gfx/models/portraits/main_texture/Shuro.dds"
+	leader = { }
+}
+
+BA_clothes_Azami = {
+	default = "gfx/models/portraits/main_texture/Azami.dds"
+	leader = { }
+}
+
+BA_clothes_Arata = {
+	default = "gfx/models/portraits/main_texture/Arata.dds"
+	leader = { }
+}
+
+BA_clothes_Cherino = {
+	default = "gfx/models/portraits/main_texture/Cherino.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Cherino_HS.dds" = {
+			has_leader_flag = BA_skin_HS
+		}
+		"gfx/models/portraits/main_texture/Cherino_QP.dds" = {
+			has_leader_flag = BA_skin_QP
+		}
+	}
+}
+
+BA_clothes_Tomoe = {
+	default = "gfx/models/portraits/main_texture/Tomoe.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Tomoe_QP.dds" = {
+			has_leader_flag = BA_skin_QP
+		}
+	}
+}
+
+BA_clothes_Marina = {
+	default = "gfx/models/portraits/main_texture/Marina.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Marina_QP.dds" = {
+			has_leader_flag = BA_skin_QP
+		}
+	}
+}
+
+BA_clothes_Nodoka = {
+	default = "gfx/models/portraits/main_texture/Nodoka.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Nodoka_HS.dds" = {
+			has_leader_flag = BA_skin_HS
+		}
+	}
+}
+
+BA_clothes_Shigure = {
+	default = "gfx/models/portraits/main_texture/Shigure.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Shigure_HS.dds" = {
+			has_leader_flag = BA_skin_HS
+		}
+	}
+}
+
+BA_clothes_Momiji = {
+	default = "gfx/models/portraits/main_texture/Momiji.dds"
+	leader = { }
+}
+
+BA_clothes_Meru = {
+	default = "gfx/models/portraits/main_texture/Meru.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Meru_HS.dds" = {
+			has_leader_flag = BA_skin_HS
+		}
+	}
+}
+
+BA_clothes_Yakumo = {
+	default = "gfx/models/portraits/main_texture/Yakumo.dds"
+	leader = { }
+}
+
+BA_clothes_Takane = {
+	default = "gfx/models/portraits/main_texture/Takane.dds"
+	leader = { }
+}
+
+BA_clothes_Minori = {
+	default = "gfx/models/portraits/main_texture/Minori.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Minori_OLD.dds" = {
+			has_leader_flag = BA_skin_OLD
+		}
+	}
+}
+
+BA_clothes_Kisaki = {
+	default = "gfx/models/portraits/main_texture/Kisaki.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Kisaki_YN.dds" = {
+			has_leader_flag = BA_skin_YN
+		}
+	}
+}
+
+BA_clothes_Mina = {
+	default = "gfx/models/portraits/main_texture/Mina.dds"
+	leader = { }
+}
+
+BA_clothes_Rumi = {
+	default = "gfx/models/portraits/main_texture/Rumi.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Rumi_YN.dds" = {
+			has_leader_flag = BA_skin_YN
+		}
+	}
+}
+
+BA_clothes_Reijo = {
+	default = "gfx/models/portraits/main_texture/Reijo.dds"
+	leader = { }
+}
+
+BA_clothes_Shun = {
+	default = "gfx/models/portraits/main_texture/Shun.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Shun_YN.dds" = {
+			has_leader_flag = BA_skin_YN
+		}
+	}
+}
+
+BA_clothes_Kokona = {
+	default = "gfx/models/portraits/main_texture/Kokona.dds"
+	leader = { }
+}
+
+BA_clothes_Kai = {
+	default = "gfx/models/portraits/main_texture/Kai.dds"
+	leader = { }
+}
+
+BA_clothes_Saya = {
+	default = "gfx/models/portraits/main_texture/Saya.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Saya_DL.dds" = {
+			has_leader_flag = BA_skin_DL
+		}
+	}
+}
+
+BA_clothes_Kaguya = {
+	default = "gfx/models/portraits/main_texture/Kaguya.dds"
+	leader = { }
+}
+
+BA_clothes_Kanna = {
+	default = "gfx/models/portraits/main_texture/Kanna.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Kanna_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+	}
+}
+
+BA_clothes_Konoka = {
+	default = "gfx/models/portraits/main_texture/Konoka.dds"
+	leader = { }
+}
+
+BA_clothes_Kirino = {
+	default = "gfx/models/portraits/main_texture/Kirino.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Kirino_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+		"gfx/models/portraits/main_texture/Kirino_IDL.dds" = {
+			has_leader_flag = BA_skin_IDL
+		}
+	}
+}
+
+BA_clothes_Fubuki = {
+	default = "gfx/models/portraits/main_texture/Fubuki.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Fubuki_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+		"gfx/models/portraits/main_texture/Fubuki_IDL.dds" = {
+			has_leader_flag = BA_skin_IDL
+		}
+	}
+}
+
+BA_clothes_Saori = {
+	default = "gfx/models/portraits/main_texture/Saori.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Saori_DR.dds" = {
+			has_leader_flag = BA_skin_DR
+		}
+		"gfx/models/portraits/main_texture/Saori_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+	}
+}
+
+BA_clothes_Atsuko = {
+	default = "gfx/models/portraits/main_texture/Atsuko.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Atsuko_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+	}
+}
+
+BA_clothes_Misaki = {
+	default = "gfx/models/portraits/main_texture/Misaki.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Misaki_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+	}
+}
+
+BA_clothes_Hiyori = {
+	default = "gfx/models/portraits/main_texture/Hiyori.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Hiyori_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+	}
+}
+
+BA_clothes_Subaru = {
+	default = "gfx/models/portraits/main_texture/Subaru.dds"
+	leader = { }
+}
+
+BA_clothes_Maia = {
+	default = "gfx/models/portraits/main_texture/Maia.dds"
+	leader = { }
+}
+
+BA_clothes_Miyako = {
+	default = "gfx/models/portraits/main_texture/Miyako.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Miyako_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+		"gfx/models/portraits/main_texture/Miyako_SP.dds" = {
+			has_leader_flag = BA_skin_SP
+		}
+	}
+}
+
+BA_clothes_Saki = {
+	default = "gfx/models/portraits/main_texture/Saki.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Saki_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+		"gfx/models/portraits/main_texture/Saki_SP.dds" = {
+			has_leader_flag = BA_skin_SP
+		}
+	}
+}
+
+BA_clothes_Miyu = {
+	default = "gfx/models/portraits/main_texture/Miyu.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Miyu_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+		"gfx/models/portraits/main_texture/Miyu_SP.dds" = {
+			has_leader_flag = BA_skin_SP
+		}
+	}
+}
+
+BA_clothes_Moe = {
+	default = "gfx/models/portraits/main_texture/Moe.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Moe_SS.dds" = {
+			has_leader_flag = BA_skin_SS
+		}
+		"gfx/models/portraits/main_texture/Moe_SP.dds" = {
+			has_leader_flag = BA_skin_SP
+		}
+	}
+}
+
+BA_clothes_Yukino = {
+	default = "gfx/models/portraits/main_texture/Yukino.dds"
+	leader = { }
+}
+
+BA_clothes_Niko = {
+	default = "gfx/models/portraits/main_texture/Niko.dds"
+	leader = { }
+}
+
+BA_clothes_Kurumi = {
+	default = "gfx/models/portraits/main_texture/Kurumi.dds"
+	leader = { }
+}
+
+BA_clothes_Otogi = {
+	default = "gfx/models/portraits/main_texture/Otogi.dds"
+	leader = { }
+}
+
+BA_clothes_Hikari = {
+	default = "gfx/models/portraits/main_texture/Hikari.dds"
+	leader = { }
+}
+
+BA_clothes_Nozomi = {
+	default = "gfx/models/portraits/main_texture/Nozomi.dds"
+	leader = { }
+}
+
+BA_clothes_Suou = {
+	default = "gfx/models/portraits/main_texture/Suou.dds"
+	leader = { }
+}
+
+BA_clothes_Aoba = {
+	default = "gfx/models/portraits/main_texture/Aoba.dds"
+	leader = { }
+}
+
+BA_clothes_Manami = {
+	default = "gfx/models/portraits/main_texture/Manami.dds"
+	leader = { }
+}
+
+BA_clothes_Akira = {
+	default = "gfx/models/portraits/main_texture/Akira.dds"
+	leader = { }
+}
+
+BA_clothes_Hiromi = {
+	default = "gfx/models/portraits/main_texture/Hiromi.dds"
+	leader = { }
+}
+
+BA_clothes_Eri = {
+	default = "gfx/models/portraits/main_texture/Eri.dds"
+	leader = { }
+}
+
+BA_clothes_Tsumugi = {
+	default = "gfx/models/portraits/main_texture/Tsumugi.dds"
+	leader = { }
+}
+
+BA_clothes_Kanoe = {
+	default = "gfx/models/portraits/main_texture/Kanoe.dds"
+	leader = { }
+}
+
+BA_clothes_Rena = {
+	default = "gfx/models/portraits/main_texture/Rena.dds"
+	leader = { }
+}
+
+BA_clothes_Miyo = {
+	default = "gfx/models/portraits/main_texture/Miyo.dds"
+	leader = { }
+}
+
+BA_clothes_Fuyu = {
+	default = "gfx/models/portraits/main_texture/Fuyu.dds"
+	leader = { }
+}
+
+BA_clothes_Ritsu = {
+	default = "gfx/models/portraits/main_texture/Ritsu.dds"
+	leader = { }
+}
+
+BA_clothes_Hatsune_Miku = {
+	default = "gfx/models/portraits/main_texture/Hatsune_Miku.dds"
+	leader = { }
+}
+
+BA_clothes_Professor_Smug = {
+	default = "gfx/models/portraits/main_texture/Professor_Smug.dds"
+	leader = { }
+}
+
+BA_clothes_Student_Council_President = {
+	default = "gfx/models/portraits/main_texture/Student_Council_President.dds"
+	leader = { }
+}
+
+BA_clothes_Rin = {
+	default = "gfx/models/portraits/main_texture/Rin.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Rin_NVG.dds" = {
+			has_leader_flag = BA_skin_NVG
+		}
+	}
+}
+
+BA_clothes_Momoka = {
+	default = "gfx/models/portraits/main_texture/Momoka.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Momoka_NVG.dds" = {
+			has_leader_flag = BA_skin_NVG
+		}
+	}
+}
+
+BA_clothes_Ayumu = {
+	default = "gfx/models/portraits/main_texture/Ayumu.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Ayumu_NVG.dds" = {
+			has_leader_flag = BA_skin_NVG
+		}
+	}
+}
+
+BA_clothes_Kaya = {
+	default = "gfx/models/portraits/main_texture/Kaya.dds"
+	leader = { }
+}
+
+BA_clothes_Aoi = {
+	default = "gfx/models/portraits/main_texture/Aoi.dds"
+	leader = { }
+}
+
+BA_clothes_Haine = {
+	default = "gfx/models/portraits/main_texture/Haine.dds"
+	leader = { }
+}
+
+BA_clothes_Sumomo = {
+	default = "gfx/models/portraits/main_texture/Sumomo.dds"
+	leader = { }
+}
+
+BA_clothes_Arona = {
+	default = "gfx/models/portraits/main_texture/Arona.dds"
+	leader = { }
+}
+
+BA_clothes_Plana = {
+	default = "gfx/models/portraits/main_texture/Plana.dds"
+	leader = { }
+}
+
+BA_clothes_Sora = {
+	default = "gfx/models/portraits/main_texture/Sora.dds"
+	leader = { }
+}
+
+BA_clothes_Shinon = {
+	default = "gfx/models/portraits/main_texture/Shinon.dds"
+	leader = { }
+}
+
+BA_clothes_Mai = {
+	default = "gfx/models/portraits/main_texture/Mai.dds"
+	leader = { }
+}

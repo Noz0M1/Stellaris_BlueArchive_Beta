@@ -2,13 +2,12 @@
 #检查命名标志，没有的随机加一个 scope: leader
 BA_check_rename_flag = {
 	optimize_memory
-	# 001~159
 	random_list = {
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_001
+					flag = leader_BA_Hoshino
 				}
 			}
 			modifier = {
@@ -17,28 +16,13 @@ BA_check_rename_flag = {
 					leader_class = commander
 				}
 			}
-			set_leader_flag = leader_BA_001
+			set_leader_flag = leader_BA_Hoshino
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_002
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_002
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_003
+					flag = leader_BA_Shiroko
 				}
 			}
 			modifier = {
@@ -47,28 +31,13 @@ BA_check_rename_flag = {
 					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_003
+			set_leader_flag = leader_BA_Shiroko
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_004
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = scientist
-				}
-			}
-			set_leader_flag = leader_BA_004
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_005
+					flag = leader_BA_Serika
 				}
 			}
 			modifier = {
@@ -77,28 +46,13 @@ BA_check_rename_flag = {
 					leader_class = commander
 				}
 			}
-			set_leader_flag = leader_BA_005
+			set_leader_flag = leader_BA_Serika
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_006
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_006
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_007
+					flag = leader_BA_Nonomi
 				}
 			}
 			modifier = {
@@ -107,289 +61,13 @@ BA_check_rename_flag = {
 					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_007
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_008
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_008
+			set_leader_flag = leader_BA_Nonomi
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_009
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_009
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_010
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_010
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_011
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_011
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_012
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_012
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_013
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = official
-				}
-			}
-			modifier = {
-				#葛叶特殊优化：前20年不出现
-				factor = 0
-				years_passed <= 20
-			}
-			set_leader_flag = leader_BA_013
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_014
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_014
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_015
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_015
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_016
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_016
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_017
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_017
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_018
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_018
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_019
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_019
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_020
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_020
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_021
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_021
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_022
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_022
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_023
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_023
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_024
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_024
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_025
+					flag = leader_BA_Ayane
 				}
 			}
 			modifier = {
@@ -398,13 +76,13 @@ BA_check_rename_flag = {
 					leader_class = scientist
 				}
 			}
-			set_leader_flag = leader_BA_025
+			set_leader_flag = leader_BA_Ayane
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_026
+					flag = leader_BA_Makoto
 				}
 			}
 			modifier = {
@@ -413,13 +91,13 @@ BA_check_rename_flag = {
 					leader_class = commander
 				}
 			}
-			set_leader_flag = leader_BA_026
+			set_leader_flag = leader_BA_Makoto
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_027
+					flag = leader_BA_Iroha
 				}
 			}
 			modifier = {
@@ -428,13 +106,13 @@ BA_check_rename_flag = {
 					leader_class = commander
 				}
 			}
-			set_leader_flag = leader_BA_027
+			set_leader_flag = leader_BA_Iroha
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_028
+					flag = leader_BA_Ibuki
 				}
 			}
 			modifier = {
@@ -443,13 +121,13 @@ BA_check_rename_flag = {
 					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_028
+			set_leader_flag = leader_BA_Ibuki
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_029
+					flag = leader_BA_Hina
 				}
 			}
 			modifier = {
@@ -458,13 +136,73 @@ BA_check_rename_flag = {
 					leader_class = commander
 				}
 			}
-			set_leader_flag = leader_BA_029
+			set_leader_flag = leader_BA_Hina
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_030
+					flag = leader_BA_Ako
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Ako
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Iori
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Iori
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Chinatsu
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Chinatsu
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Aru
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Aru
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kayoko
 				}
 			}
 			modifier = {
@@ -473,13 +211,103 @@ BA_check_rename_flag = {
 					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_030
+			set_leader_flag = leader_BA_Kayoko
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_031
+					flag = leader_BA_Mutsuki
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Mutsuki
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Haruka
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Haruka
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Haruna
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Haruna
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Akari
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Akari
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Izumi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Izumi
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Junko
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Junko
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Fuuka
 				}
 			}
 			modifier = {
@@ -488,60 +316,13 @@ BA_check_rename_flag = {
 					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_031
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_032
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_032
+			set_leader_flag = leader_BA_Fuuka
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_033
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_033
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_034
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_034
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_035
+					flag = leader_BA_Juri
 				}
 			}
 			modifier = {
@@ -550,103 +331,13 @@ BA_check_rename_flag = {
 					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_035
+			set_leader_flag = leader_BA_Juri
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_036
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_036
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_037
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_037
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_038
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_038
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_039
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_039
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_040
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_040
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_041
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_041
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_042
+					flag = leader_BA_Megu
 				}
 			}
 			modifier = {
@@ -655,13 +346,28 @@ BA_check_rename_flag = {
 					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_042
+			set_leader_flag = leader_BA_Megu
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_043
+					flag = leader_BA_Sena
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Sena
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Rio
 				}
 			}
 			modifier = {
@@ -670,284 +376,13 @@ BA_check_rename_flag = {
 					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_043
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_044
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_044
+			set_leader_flag = leader_BA_Rio
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_045
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_045
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_046
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_046
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_047
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_047
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_048
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_048
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_049
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_049
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_050
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_050
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_051
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_051
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_052
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_052
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_053
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_053
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_054
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_054
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_055
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_055
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_056
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_056
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_057
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_057
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_058
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_058
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_059
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_059
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_060
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_060
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_061
+					flag = leader_BA_Yuuka
 				}
 			}
 			modifier = {
@@ -956,122 +391,13 @@ BA_check_rename_flag = {
 					leader_class = scientist
 				}
 			}
-			set_leader_flag = leader_BA_061
+			set_leader_flag = leader_BA_Yuuka
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_062
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_062
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_063
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_063
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_064
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_064
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_065
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_065
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_066
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_066
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_067
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_067
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_068
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_068
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_069
+					flag = leader_BA_Noa
 				}
 			}
 			modifier = {
@@ -1080,13 +406,13 @@ BA_check_rename_flag = {
 					leader_class = scientist
 				}
 			}
-			set_leader_flag = leader_BA_069
+			set_leader_flag = leader_BA_Noa
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_070
+					flag = leader_BA_Koyuki
 				}
 			}
 			modifier = {
@@ -1095,96 +421,13 @@ BA_check_rename_flag = {
 					leader_class = scientist
 				}
 			}
-			set_leader_flag = leader_BA_070
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_071
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_071
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_072
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_072
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_073
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_073
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_074
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_074
+			set_leader_flag = leader_BA_Koyuki
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_075
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_075
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_076
+					flag = leader_BA_Neru
 				}
 			}
 			modifier = {
@@ -1193,94 +436,13 @@ BA_check_rename_flag = {
 					leader_class = commander
 				}
 			}
-			set_leader_flag = leader_BA_076
+			set_leader_flag = leader_BA_Neru
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_077
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_077
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_078
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_078
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_079
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_079
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_080
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_080
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_081
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_081
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_082
+					flag = leader_BA_Asuna
 				}
 			}
 			modifier = {
@@ -1289,13 +451,13 @@ BA_check_rename_flag = {
 					leader_class = commander
 				}
 			}
-			set_leader_flag = leader_BA_082
+			set_leader_flag = leader_BA_Asuna
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_083
+					flag = leader_BA_Karin
 				}
 			}
 			modifier = {
@@ -1304,13 +466,13 @@ BA_check_rename_flag = {
 					leader_class = commander
 				}
 			}
-			set_leader_flag = leader_BA_083
+			set_leader_flag = leader_BA_Karin
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_084
+					flag = leader_BA_Akane
 				}
 			}
 			modifier = {
@@ -1319,13 +481,13 @@ BA_check_rename_flag = {
 					leader_class = commander
 				}
 			}
-			set_leader_flag = leader_BA_084
+			set_leader_flag = leader_BA_Akane
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_085
+					flag = leader_BA_Toki
 				}
 			}
 			modifier = {
@@ -1334,13 +496,13 @@ BA_check_rename_flag = {
 					leader_class = scientist
 				}
 			}
-			set_leader_flag = leader_BA_085
+			set_leader_flag = leader_BA_Toki
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_086
+					flag = leader_BA_Yuzu
 				}
 			}
 			modifier = {
@@ -1349,13 +511,13 @@ BA_check_rename_flag = {
 					leader_class = scientist
 				}
 			}
-			set_leader_flag = leader_BA_086
+			set_leader_flag = leader_BA_Yuzu
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_087
+					flag = leader_BA_Momoi
 				}
 			}
 			modifier = {
@@ -1364,90 +526,13 @@ BA_check_rename_flag = {
 					leader_class = commander
 				}
 			}
-			set_leader_flag = leader_BA_087
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_088
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_088
+			set_leader_flag = leader_BA_Momoi
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_089
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_089
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_090
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = scientist
-				}
-			}
-			set_leader_flag = leader_BA_090
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_091
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = scientist
-				}
-			}
-			set_leader_flag = leader_BA_091
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_092
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = scientist
-				}
-			}
-			set_leader_flag = leader_BA_092
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_093
+					flag = leader_BA_Midori
 				}
 			}
 			modifier = {
@@ -1456,13 +541,13 @@ BA_check_rename_flag = {
 					leader_class = commander
 				}
 			}
-			set_leader_flag = leader_BA_093
+			set_leader_flag = leader_BA_Midori
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_094
+					flag = leader_BA_Aris
 				}
 			}
 			modifier = {
@@ -1471,13 +556,28 @@ BA_check_rename_flag = {
 					leader_class = commander
 				}
 			}
-			set_leader_flag = leader_BA_094
+			set_leader_flag = leader_BA_Aris
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_095
+					flag = leader_BA_Chihiro
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Chihiro
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kotama
 				}
 			}
 			modifier = {
@@ -1486,13 +586,13 @@ BA_check_rename_flag = {
 					leader_class = commander
 				}
 			}
-			set_leader_flag = leader_BA_095
+			set_leader_flag = leader_BA_Kotama
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_096
+					flag = leader_BA_Hare
 				}
 			}
 			modifier = {
@@ -1501,30 +601,13 @@ BA_check_rename_flag = {
 					leader_class = scientist
 				}
 			}
-			set_leader_flag = leader_BA_096
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_097
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_097
+			set_leader_flag = leader_BA_Hare
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_098
+					flag = leader_BA_Maki
 				}
 			}
 			modifier = {
@@ -1533,28 +616,13 @@ BA_check_rename_flag = {
 					leader_class = scientist
 				}
 			}
-			set_leader_flag = leader_BA_098
+			set_leader_flag = leader_BA_Maki
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_099
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = scientist
-				}
-			}
-			set_leader_flag = leader_BA_099
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_100
+					flag = leader_BA_Utaha
 				}
 			}
 			modifier = {
@@ -1563,28 +631,13 @@ BA_check_rename_flag = {
 					leader_class = commander
 				}
 			}
-			set_leader_flag = leader_BA_100
+			set_leader_flag = leader_BA_Utaha
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_101
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = scientist
-				}
-			}
-			set_leader_flag = leader_BA_101
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_102
+					flag = leader_BA_Hibiki
 				}
 			}
 			modifier = {
@@ -1593,13 +646,13 @@ BA_check_rename_flag = {
 					leader_class = commander
 				}
 			}
-			set_leader_flag = leader_BA_102
+			set_leader_flag = leader_BA_Hibiki
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_103
+					flag = leader_BA_Kotori
 				}
 			}
 			modifier = {
@@ -1608,13 +661,43 @@ BA_check_rename_flag = {
 					leader_class = commander
 				}
 			}
-			set_leader_flag = leader_BA_103
+			set_leader_flag = leader_BA_Kotori
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_104
+					flag = leader_BA_Himari
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Himari
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Eimi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Eimi
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Sumire
 				}
 			}
 			modifier = {
@@ -1623,28 +706,13 @@ BA_check_rename_flag = {
 					leader_class = commander
 				}
 			}
-			set_leader_flag = leader_BA_104
+			set_leader_flag = leader_BA_Sumire
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_105
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = scientist
-				}
-			}
-			set_leader_flag = leader_BA_105
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_106
+					flag = leader_BA_Rei
 				}
 			}
 			modifier = {
@@ -1653,75 +721,43 @@ BA_check_rename_flag = {
 					leader_class = commander
 				}
 			}
-			set_leader_flag = leader_BA_106
+			set_leader_flag = leader_BA_Rei
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_107
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = scientist
-				}
-			}
-			set_leader_flag = leader_BA_107
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_108
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = scientist
-				}
-			}
-			set_leader_flag = leader_BA_108
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_109
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = scientist
-				}
-			}
-			set_leader_flag = leader_BA_109
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_110
+					flag = leader_BA_Mika
 				}
 			}
 			modifier = {
 				factor = 0
 				NOR = {
 					leader_class = commander
-					leader_class = scientist
-					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_110
+			set_leader_flag = leader_BA_Mika
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_111
+					flag = leader_BA_Nagisa
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Nagisa
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Seia
 				}
 			}
 			modifier = {
@@ -1730,13 +766,43 @@ BA_check_rename_flag = {
 					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_111
+			set_leader_flag = leader_BA_Seia
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_112
+					flag = leader_BA_Hifumi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Hifumi
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Azusa
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Azusa
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Hanako
 				}
 			}
 			modifier = {
@@ -1745,270 +811,283 @@ BA_check_rename_flag = {
 					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_112
+			set_leader_flag = leader_BA_Hanako
 		}
-		0 = {
+		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_113
+					flag = leader_BA_Koharu
 				}
 			}
 			modifier = {
 				factor = 0
 				NOR = {
 					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Koharu
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Tsurugi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Tsurugi
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Hasumi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Hasumi
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Ichika
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Ichika
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Mashiro
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Mashiro
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Sakurako
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Sakurako
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Hinata
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Hinata
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Mari
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Mari
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Airi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Airi
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kazusa
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Kazusa
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Yoshimi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Yoshimi
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Natsu
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Natsu
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Mine
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Mine
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Serina
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Serina
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Hanae
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Hanae
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Suzumi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Suzumi
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Reisa
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Reisa
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Ui
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
 					leader_class = scientist
-					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_113
+			set_leader_flag = leader_BA_Ui
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_114
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_114
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_115
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_115
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_116
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_116
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_117
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_117
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_118
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_118
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_119
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_119
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_120
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_120
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_121
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_121
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_122
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_122
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_123
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_123
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_124
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_124
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_125
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_125
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_126
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_126
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_127
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_127
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_128
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_128
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_129
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_129
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_130
+					flag = leader_BA_Shimiko
 				}
 			}
 			modifier = {
@@ -2017,13 +1096,103 @@ BA_check_rename_flag = {
 					leader_class = scientist
 				}
 			}
-			set_leader_flag = leader_BA_130
+			set_leader_flag = leader_BA_Shimiko
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_131
+					flag = leader_BA_Wakamo
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Wakamo
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kaho
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Kaho
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Chise
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Chise
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Nagusa
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Nagusa
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Renge
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Renge
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kikyou
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Kikyou
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Yukari
 				}
 			}
 			modifier = {
@@ -2032,13 +1201,13 @@ BA_check_rename_flag = {
 					leader_class = scientist
 				}
 			}
-			set_leader_flag = leader_BA_131
+			set_leader_flag = leader_BA_Yukari
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_132
+					flag = leader_BA_Kuzunoha
 				}
 			}
 			modifier = {
@@ -2047,133 +1216,13 @@ BA_check_rename_flag = {
 					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_132
+			set_leader_flag = leader_BA_Kuzunoha
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_133
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_133
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_134
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_134
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_135
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_135
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_136
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_136
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_137
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_137
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_138
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_138
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_139
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_139
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_140
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_140
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_141
+					flag = leader_BA_Tsubaki
 				}
 			}
 			modifier = {
@@ -2182,13 +1231,13 @@ BA_check_rename_flag = {
 					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_141
+			set_leader_flag = leader_BA_Tsubaki
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_142
+					flag = leader_BA_Mimori
 				}
 			}
 			modifier = {
@@ -2197,96 +1246,58 @@ BA_check_rename_flag = {
 					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_142
+			set_leader_flag = leader_BA_Mimori
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_143
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_143
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_144
+					flag = leader_BA_Kaede
 				}
 			}
 			modifier = {
 				factor = 0
 				NOR = {
 					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Kaede
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Michiru
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Michiru
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Izuna
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
 					leader_class = scientist
-					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_144
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_145
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_145
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_146
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_146
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_147
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
-					leader_class = official
-				}
-			}
-			set_leader_flag = leader_BA_147
+			set_leader_flag = leader_BA_Izuna
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_148
+					flag = leader_BA_Tsukuyo
 				}
 			}
 			modifier = {
@@ -2295,188 +1306,626 @@ BA_check_rename_flag = {
 					leader_class = commander
 				}
 			}
-			set_leader_flag = leader_BA_148
+			set_leader_flag = leader_BA_Tsukuyo
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_149
+					flag = leader_BA_Shizuko
 				}
 			}
 			modifier = {
 				factor = 0
 				NOR = {
-					leader_class = commander
+					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_149
+			set_leader_flag = leader_BA_Shizuko
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_150
+					flag = leader_BA_Pina
 				}
 			}
 			modifier = {
 				factor = 0
 				NOR = {
-					leader_class = official
+					leader_class = commander
 				}
 			}
-			set_leader_flag = leader_BA_150
+			set_leader_flag = leader_BA_Pina
 		}
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_151
+					flag = leader_BA_Umika
 				}
 			}
 			modifier = {
 				factor = 0
 				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_151
-		}
-		0 = {
-			modifier = {
-				factor = 0
-				BA_leader_has_same = {
-					flag = leader_BA_152
-				}
-			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-					leader_class = scientist
 					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_152
+			set_leader_flag = leader_BA_Umika
 		}
-		0 = {
+		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_153
+					flag = leader_BA_Arata
 				}
 			}
 			modifier = {
 				factor = 0
 				NOR = {
 					leader_class = commander
-					leader_class = scientist
-					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_153
+			set_leader_flag = leader_BA_Arata
 		}
-		0 = {
+		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_154
+					flag = leader_BA_Cherino
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Cherino
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Tomoe
 				}
 			}
 			modifier = {
 				factor = 0
 				NOR = {
 					leader_class = commander
-					leader_class = scientist
-					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_154
+			set_leader_flag = leader_BA_Tomoe
 		}
-		0 = {
+		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_155
+					flag = leader_BA_Marina
 				}
 			}
 			modifier = {
 				factor = 0
 				NOR = {
 					leader_class = commander
-					leader_class = scientist
-					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_155
+			set_leader_flag = leader_BA_Marina
 		}
-		0 = {
+		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_156
+					flag = leader_BA_Nodoka
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Nodoka
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Shigure
 				}
 			}
 			modifier = {
 				factor = 0
 				NOR = {
 					leader_class = commander
-					leader_class = scientist
-					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_156
+			set_leader_flag = leader_BA_Shigure
 		}
-		0 = {
+		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_157
+					flag = leader_BA_Momiji
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Momiji
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Meru
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Meru
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Yakumo
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Yakumo
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Takane
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Takane
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Minori
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Minori
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kisaki
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Kisaki
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Mina
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Mina
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Rumi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Rumi
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Shun
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Shun
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kokona
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Kokona
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kai
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Kai
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Saya
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Saya
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kanna
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Kanna
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kirino
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Kirino
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Fubuki
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Fubuki
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Miyako
 				}
 			}
 			modifier = {
 				factor = 0
 				NOR = {
 					leader_class = commander
-					leader_class = scientist
-					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_157
+			set_leader_flag = leader_BA_Miyako
 		}
-		0 = {
+		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_158
+					flag = leader_BA_Saki
 				}
 			}
 			modifier = {
 				factor = 0
 				NOR = {
 					leader_class = commander
-					leader_class = scientist
-					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_158
+			set_leader_flag = leader_BA_Saki
 		}
-		0 = {
+		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_159
+					flag = leader_BA_Miyu
 				}
 			}
 			modifier = {
 				factor = 0
 				NOR = {
 					leader_class = commander
-					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Miyu
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Moe
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Moe
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Yukino
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Yukino
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Niko
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Niko
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kurumi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Kurumi
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Otogi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Otogi
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Suou
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
 					leader_class = official
 				}
 			}
-			set_leader_flag = leader_BA_159
+			set_leader_flag = leader_BA_Suou
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Akira
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Akira
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Hatsune
+					Miku
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+					scientist
+					commander
+				}
+			}
+			set_leader_flag = leader_BA_Hatsune
+			Miku
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Rin
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Rin
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Momoka
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Momoka
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Ayumu
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Ayumu
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kaya
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Kaya
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Arona
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Arona
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Plana
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Plana
 		}
 	}
 }

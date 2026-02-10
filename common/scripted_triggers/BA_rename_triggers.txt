@@ -37,290 +37,378 @@ BA_rename_special_check_1 = {
 }
 
 ##### Leader Skins
+#导游
 BA_leader_has_skin_GD = {
 	OR = {
-		has_leader_flag = leader_BA_021
-		has_leader_flag = leader_BA_028
-		has_leader_flag = leader_BA_029
+		has_leader_flag = leader_BA_Tsubaki
+		has_leader_flag = leader_BA_Kaede
+		has_leader_flag = leader_BA_Pina
 	}
 }
 
+#旧
 BA_leader_has_skin_OLD = {
 	OR = {
-		has_leader_flag = leader_BA_068
-		has_leader_flag = leader_BA_128
+		has_leader_flag = leader_BA_Aris
+		has_leader_flag = leader_BA_Kazusa
+		has_leader_flag = leader_BA_Minori
 	}
 }
 
+#泳装
 BA_leader_has_skin_SS = {
 	OR = {
-		has_leader_flag = leader_BA_003
-		has_leader_flag = leader_BA_004
-		has_leader_flag = leader_BA_005
-		has_leader_flag = leader_BA_006
-		has_leader_flag = leader_BA_007
-		has_leader_flag = leader_BA_023
-		has_leader_flag = leader_BA_024
-		has_leader_flag = leader_BA_025
-		has_leader_flag = leader_BA_030
-		has_leader_flag = leader_BA_033
-		has_leader_flag = leader_BA_039
-		has_leader_flag = leader_BA_041
-		has_leader_flag = leader_BA_050
-		has_leader_flag = leader_BA_085
-		has_leader_flag = leader_BA_115
-		has_leader_flag = leader_BA_116
-		has_leader_flag = leader_BA_117
-		has_leader_flag = leader_BA_118
-		has_leader_flag = leader_BA_130
-		has_leader_flag = leader_BA_133
-		has_leader_flag = leader_BA_135
-		has_leader_flag = leader_BA_138
-		has_leader_flag = leader_BA_148
-		has_leader_flag = leader_BA_149
-		has_leader_flag = leader_BA_150
-		has_leader_flag = leader_BA_151
+		has_leader_flag = leader_BA_Hoshino
+		has_leader_flag = leader_BA_Shiroko
+		has_leader_flag = leader_BA_Serika
+		has_leader_flag = leader_BA_Nonomi
+		has_leader_flag = leader_BA_Ayane
+		has_leader_flag = leader_BA_Hina
+		has_leader_flag = leader_BA_Iori
+		has_leader_flag = leader_BA_Izumi
+		has_leader_flag = leader_BA_Iroha
+		has_leader_flag = leader_BA_Megu
+		has_leader_flag = leader_BA_Eimi
+		has_leader_flag = leader_BA_Mika
+		has_leader_flag = leader_BA_Nagisa
+		has_leader_flag = leader_BA_Seia
+		has_leader_flag = leader_BA_Hifumi
+		has_leader_flag = leader_BA_Azusa
+		has_leader_flag = leader_BA_Hanako
+		has_leader_flag = leader_BA_Koharu
+		has_leader_flag = leader_BA_Tsurugi
+		has_leader_flag = leader_BA_Hasumi
+		has_leader_flag = leader_BA_Ichika
+		has_leader_flag = leader_BA_Mashiro
+		has_leader_flag = leader_BA_Hinata
+		has_leader_flag = leader_BA_Ui
+		has_leader_flag = leader_BA_Wakamo
+		has_leader_flag = leader_BA_Chise
+		has_leader_flag = leader_BA_Nagusa
+		has_leader_flag = leader_BA_Renge
+		has_leader_flag = leader_BA_Kikyou
+		has_leader_flag = leader_BA_Yukari
+		has_leader_flag = leader_BA_Mimori
+		has_leader_flag = leader_BA_Izuna
+		has_leader_flag = leader_BA_Shizuko
+		has_leader_flag = leader_BA_Kanna
+		has_leader_flag = leader_BA_Kirino
+		has_leader_flag = leader_BA_Fubuki
+		has_leader_flag = leader_BA_Saori
+		has_leader_flag = leader_BA_Atsuko
+		has_leader_flag = leader_BA_Misaki
+		has_leader_flag = leader_BA_Hiyori
+		has_leader_flag = leader_BA_Miyako
+		has_leader_flag = leader_BA_Saki
+		has_leader_flag = leader_BA_Miyu
+		has_leader_flag = leader_BA_Moe
 	}
 }
 
+#骑行
 BA_leader_has_skin_CYC = {
 	OR = {
-		has_leader_flag = leader_BA_003
+		has_leader_flag = leader_BA_Shiroko
 	}
 }
 
+#圣诞
 BA_leader_has_skin_XMS = {
 	OR = {
-		has_leader_flag = leader_BA_122
-		has_leader_flag = leader_BA_124
+		has_leader_flag = leader_BA_Serina
+		has_leader_flag = leader_BA_Hanae
 	}
 }
 
+#制服
 BA_leader_has_skin_UNF = {
 	OR = {
-		has_leader_flag = leader_BA_102
-		has_leader_flag = leader_BA_103
+		has_leader_flag = leader_BA_Neru
+		has_leader_flag = leader_BA_Asuna
+		has_leader_flag = leader_BA_Karin
 	}
 }
 
+#睡衣
 BA_leader_has_skin_PJ = {
 	OR = {
-		has_leader_flag = leader_BA_039
+		has_leader_flag = leader_BA_Hina
+		has_leader_flag = leader_BA_Yuuka
+		has_leader_flag = leader_BA_Noa
+		has_leader_flag = leader_BA_Koyuki
+		has_leader_flag = leader_BA_Chihiro
+		has_leader_flag = leader_BA_Kotama
+		has_leader_flag = leader_BA_Hare
+		has_leader_flag = leader_BA_Maki
 	}
 }
 
+#冬装
 BA_leader_has_skin_CD = {
 	OR = {
-		has_leader_flag = leader_BA_086
+		has_leader_flag = leader_BA_Rio
+		has_leader_flag = leader_BA_Yuzu
+		has_leader_flag = leader_BA_Momoi
+		has_leader_flag = leader_BA_Midori
+		has_leader_flag = leader_BA_Aris
+		has_leader_flag = leader_BA_Himari
 	}
 }
 
+#护士
 BA_leader_has_skin_NS = {
 	OR = {
-		has_leader_flag = leader_BA_124
+		has_leader_flag = leader_BA_Serina
+		has_leader_flag = leader_BA_Hanae
 	}
 }
 
+#巫女
 BA_leader_has_skin_MK = {
 	OR = {
-		has_leader_flag = leader_BA_017
+		has_leader_flag = leader_BA_Yukari
 	}
 }
 
+#圣装
 BA_leader_has_skin_SNT = {
 	OR = {
-		has_leader_flag = leader_BA_134
 	}
 }
 
+#幼女
 BA_leader_has_skin_YN = {
 	OR = {
-		has_leader_flag = leader_BA_108
+		has_leader_flag = leader_BA_Kisaki
+		has_leader_flag = leader_BA_Rumi
+		has_leader_flag = leader_BA_Shun
 	}
 }
 
+#私服
 BA_leader_has_skin_DL = {
 	OR = {
-		has_leader_flag = leader_BA_107
+		has_leader_flag = leader_BA_Fuuka
+		has_leader_flag = leader_BA_Sena
+		has_leader_flag = leader_BA_Akane
+		has_leader_flag = leader_BA_Toki
+		has_leader_flag = leader_BA_Saya
 	}
 }
 
+#女仆
 BA_leader_has_skin_MD = {
 	OR = {
-		has_leader_flag = leader_BA_093
-		has_leader_flag = leader_BA_094
-		has_leader_flag = leader_BA_095
-		has_leader_flag = leader_BA_096
+		has_leader_flag = leader_BA_Yuzu
+		has_leader_flag = leader_BA_Momoi
+		has_leader_flag = leader_BA_Midori
+		has_leader_flag = leader_BA_Aris
 	}
 }
 
+#兔女郎
 BA_leader_has_skin_BN = {
 	OR = {
-		has_leader_flag = leader_BA_091
-		has_leader_flag = leader_BA_102
-		has_leader_flag = leader_BA_103
-		has_leader_flag = leader_BA_104
-		has_leader_flag = leader_BA_105
-		has_leader_flag = leader_BA_106
+		has_leader_flag = leader_BA_Koyuki
+		has_leader_flag = leader_BA_Neru
+		has_leader_flag = leader_BA_Asuna
+		has_leader_flag = leader_BA_Karin
+		has_leader_flag = leader_BA_Akane
+		has_leader_flag = leader_BA_Toki
 	}
 }
 
+#乐队
 BA_leader_has_skin_BD = {
 	OR = {
-		has_leader_flag = leader_BA_126
-		has_leader_flag = leader_BA_127
-		has_leader_flag = leader_BA_128
-		has_leader_flag = leader_BA_129
+		has_leader_flag = leader_BA_Airi
+		has_leader_flag = leader_BA_Kazusa
+		has_leader_flag = leader_BA_Yoshimi
+		has_leader_flag = leader_BA_Natsu
 	}
 }
 
+#拉拉队
 BA_leader_has_skin_CL = {
 	OR = {
-		has_leader_flag = leader_BA_082
-		has_leader_flag = leader_BA_083
-		has_leader_flag = leader_BA_084
-		has_leader_flag = leader_BA_122
+		has_leader_flag = leader_BA_Hanae
+		has_leader_flag = leader_BA_Utaha
+		has_leader_flag = leader_BA_Hibiki
+		has_leader_flag = leader_BA_Kotori
 	}
 }
 
+#温泉
 BA_leader_has_skin_HS = {
 	OR = {
-		has_leader_flag = leader_BA_038
-		has_leader_flag = leader_BA_061
-		has_leader_flag = leader_BA_062
-		has_leader_flag = leader_BA_067
-		has_leader_flag = leader_BA_070
+		has_leader_flag = leader_BA_Chinatsu
+		has_leader_flag = leader_BA_Cherino
+		has_leader_flag = leader_BA_Nodoka
+		has_leader_flag = leader_BA_Shigure
+		has_leader_flag = leader_BA_Meru
 	}
 }
 
+#华服
 BA_leader_has_skin_FN = {
 	OR = {
-		has_leader_flag = leader_BA_024
+		has_leader_flag = leader_BA_Wakamo
+		has_leader_flag = leader_BA_Cherino
+		has_leader_flag = leader_BA_Tomoe
+		has_leader_flag = leader_BA_Marina
 	}
 }
 
+#一年级
 BA_leader_has_skin_JK1 = {
 	OR = {
-		has_leader_flag = leader_BA_006
-		has_leader_flag = leader_BA_007
+		has_leader_flag = leader_BA_Hoshino
+		has_leader_flag = leader_BA_Nonomi
 	}
 }
 
+#二年级
 BA_leader_has_skin_JK2 = {
 	OR = {
-		has_leader_flag = leader_BA_006
+		has_leader_flag = leader_BA_Hoshino
 	}
 }
 
+#中学生
 BA_leader_has_skin_JC = {
 	OR = {
-		has_leader_flag = leader_BA_017
+		has_leader_flag = leader_BA_Yukari
 	}
 }
 
+#领航员
 BA_leader_has_skin_NVG = {
 	OR = {
-		has_leader_flag = leader_BA_035
-		has_leader_flag = leader_BA_040
-		has_leader_flag = leader_BA_075
-		has_leader_flag = leader_BA_076
-		has_leader_flag = leader_BA_081
-		has_leader_flag = leader_BA_086
-		has_leader_flag = leader_BA_092
+		has_leader_flag = leader_BA_Ako
+		has_leader_flag = leader_BA_Kayoko
+		has_leader_flag = leader_BA_Yuuka
+		has_leader_flag = leader_BA_Himari
+		has_leader_flag = leader_BA_Rin
+		has_leader_flag = leader_BA_Momoka
+		has_leader_flag = leader_BA_Ayumu
 	}
 }
 
+#礼服
 BA_leader_has_skin_DR = {
 	OR = {
-		has_leader_flag = leader_BA_011
-		has_leader_flag = leader_BA_034
-		has_leader_flag = leader_BA_035
-		has_leader_flag = leader_BA_036
-		has_leader_flag = leader_BA_037
-		has_leader_flag = leader_BA_039
-		has_leader_flag = leader_BA_040
-		has_leader_flag = leader_BA_051
-		has_leader_flag = leader_BA_054
-		has_leader_flag = leader_BA_134
+		has_leader_flag = leader_BA_Makoto
+		has_leader_flag = leader_BA_Ibuki
+		has_leader_flag = leader_BA_Hina
+		has_leader_flag = leader_BA_Ako
+		has_leader_flag = leader_BA_Aru
+		has_leader_flag = leader_BA_Kayoko
+		has_leader_flag = leader_BA_Mutsuki
+		has_leader_flag = leader_BA_Haruka
+		has_leader_flag = leader_BA_Tsurugi
+		has_leader_flag = leader_BA_Sakurako
+		has_leader_flag = leader_BA_Michiru
+		has_leader_flag = leader_BA_Tsukuyo
+		has_leader_flag = leader_BA_Saori
 	}
 }
 
+#色彩
 BA_leader_has_skin_COL = {
 	OR = {
-		has_leader_flag = leader_BA_003
+		has_leader_flag = leader_BA_Shiroko
 	}
 }
 
+#野营
 BA_leader_has_skin_CMP = {
 	OR = {
-		has_leader_flag = leader_BA_098
-		has_leader_flag = leader_BA_099
-		has_leader_flag = leader_BA_100
-		has_leader_flag = leader_BA_101
+		has_leader_flag = leader_BA_Chihiro
+		has_leader_flag = leader_BA_Kotama
+		has_leader_flag = leader_BA_Hare
+		has_leader_flag = leader_BA_Maki
 	}
 }
 
+#正月
 BA_leader_has_skin_KMN = {
 	OR = {
-		has_leader_flag = leader_BA_005
-		has_leader_flag = leader_BA_034
-		has_leader_flag = leader_BA_035
-		has_leader_flag = leader_BA_036
-		has_leader_flag = leader_BA_037
-		has_leader_flag = leader_BA_042
-		has_leader_flag = leader_BA_047
-		has_leader_flag = leader_BA_048
-		has_leader_flag = leader_BA_049
-		has_leader_flag = leader_BA_050
+		has_leader_flag = leader_BA_Serika
+		has_leader_flag = leader_BA_Aru
+		has_leader_flag = leader_BA_Kayoko
+		has_leader_flag = leader_BA_Mutsuki
+		has_leader_flag = leader_BA_Haruka
+		has_leader_flag = leader_BA_Haruna
+		has_leader_flag = leader_BA_Akari
+		has_leader_flag = leader_BA_Izumi
+		has_leader_flag = leader_BA_Junko
+		has_leader_flag = leader_BA_Fuuka
 	}
 }
 
+#特工
 BA_leader_has_skin_AGT = {
 	OR = {
-		has_leader_flag = leader_BA_036
-		has_leader_flag = leader_BA_037
+		has_leader_flag = leader_BA_Mutsuki
+		has_leader_flag = leader_BA_Haruka
 	}
 }
 
+#体操服
 BA_leader_has_skin_SPW = {
 	OR = {
-		has_leader_flag = leader_BA_049
-		has_leader_flag = leader_BA_092
-		has_leader_flag = leader_BA_132
-		has_leader_flag = leader_BA_136
+		has_leader_flag = leader_BA_Haruna
+		has_leader_flag = leader_BA_Yuuka
+		has_leader_flag = leader_BA_Hasumi
+		has_leader_flag = leader_BA_Mari
 	}
 }
 
+#运动服
 BA_leader_has_skin_SP = {
 	OR = {
-		has_leader_flag = leader_BA_003
-		has_leader_flag = leader_BA_004
-		has_leader_flag = leader_BA_005
-		has_leader_flag = leader_BA_006
-		has_leader_flag = leader_BA_007
-		has_leader_flag = leader_BA_023
-		has_leader_flag = leader_BA_025
-		has_leader_flag = leader_BA_026
-		has_leader_flag = leader_BA_029
-		has_leader_flag = leader_BA_033
-		has_leader_flag = leader_BA_040
-		has_leader_flag = leader_BA_047
-		has_leader_flag = leader_BA_048
-		has_leader_flag = leader_BA_050
-		has_leader_flag = leader_BA_083
-		has_leader_flag = leader_BA_087
-		has_leader_flag = leader_BA_090
-		has_leader_flag = leader_BA_101
-		has_leader_flag = leader_BA_116
-		has_leader_flag = leader_BA_117
-		has_leader_flag = leader_BA_118
-		has_leader_flag = leader_BA_120
-		has_leader_flag = leader_BA_129
-		has_leader_flag = leader_BA_135
-		has_leader_flag = leader_BA_138
-		has_leader_flag = leader_BA_148
-		has_leader_flag = leader_BA_149
-		has_leader_flag = leader_BA_150
-		has_leader_flag = leader_BA_151
+		has_leader_flag = leader_BA_Shiroko
+		has_leader_flag = leader_BA_Serika
+		has_leader_flag = leader_BA_Nonomi
+		has_leader_flag = leader_BA_Ayane
+		has_leader_flag = leader_BA_Ako
+		has_leader_flag = leader_BA_Akari
+		has_leader_flag = leader_BA_Izumi
+		has_leader_flag = leader_BA_Junko
+		has_leader_flag = leader_BA_Noa
+		has_leader_flag = leader_BA_Maki
+		has_leader_flag = leader_BA_Kotori
+		has_leader_flag = leader_BA_Sumire
+		has_leader_flag = leader_BA_Mika
+		has_leader_flag = leader_BA_Hifumi
+		has_leader_flag = leader_BA_Azusa
+		has_leader_flag = leader_BA_Koharu
+		has_leader_flag = leader_BA_Tsurugi
+		has_leader_flag = leader_BA_Mashiro
+		has_leader_flag = leader_BA_Natsu
+		has_leader_flag = leader_BA_Chise
+		has_leader_flag = leader_BA_Kaede
+		has_leader_flag = leader_BA_Izuna
+		has_leader_flag = leader_BA_Tsukuyo
+		has_leader_flag = leader_BA_Shizuko
+		has_leader_flag = leader_BA_Miyako
+		has_leader_flag = leader_BA_Saki
+		has_leader_flag = leader_BA_Miyu
+		has_leader_flag = leader_BA_Moe
+	}
+}
+
+#临战
+BA_leader_has_skin_QB = {
+	OR = {
+		has_leader_flag = leader_BA_Hoshino
+		has_leader_flag = leader_BA_Rio
+		has_leader_flag = leader_BA_Toki
+		has_leader_flag = leader_BA_Yuzu
+		has_leader_flag = leader_BA_Momoi
+		has_leader_flag = leader_BA_Midori
+		has_leader_flag = leader_BA_Aris
+		has_leader_flag = leader_BA_Himari
+		has_leader_flag = leader_BA_Eimi
 	}
 }

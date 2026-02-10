@@ -149,800 +149,875 @@ BA_set_name = {
 	optimize_memory
 	switch = {
 		trigger = has_leader_flag
-		#阿罗娜
-		leader_BA_001 = {
-			change_leader_portrait = BA_leader_001
-			set_name = BA_name_leader_001
+		#小鸟游星野
+		leader_BA_Hoshino = {
+			change_leader_portrait = BA_leader_Hoshino
+			set_name = BA_name_leader_Hoshino
 		}
-		#普拉娜
-		leader_BA_002 = {
-			change_leader_portrait = BA_leader_002
-			set_name = BA_name_leader_002
+		#砂狼白子
+		leader_BA_Shiroko = {
+			change_leader_portrait = BA_leader_Shiroko
+			set_name = BA_name_leader_Shiroko
 		}
-		#白子
-		leader_BA_003 = {
-			change_leader_portrait = BA_leader_003
-			set_name = BA_name_leader_003
+		#黑见茜香
+		leader_BA_Serika = {
+			change_leader_portrait = BA_leader_Serika
+			set_name = BA_name_leader_Serika
 		}
-		#绫音
-		leader_BA_004 = {
-			change_leader_portrait = BA_leader_004
-			set_name = BA_name_leader_004
+		#十六夜野宫
+		leader_BA_Nonomi = {
+			change_leader_portrait = BA_leader_Nonomi
+			set_name = BA_name_leader_Nonomi
 		}
-		#芹香
-		leader_BA_005 = {
-			change_leader_portrait = BA_leader_005
-			set_name = BA_name_leader_005
+		#奥空绫音
+		leader_BA_Ayane = {
+			change_leader_portrait = BA_leader_Ayane
+			set_name = BA_name_leader_Ayane
 		}
-		#星野
-		leader_BA_006 = {
-			change_leader_portrait = BA_leader_006
-			set_name = BA_name_leader_006
+		#栀子梦
+		leader_BA_Yume = {
+			change_leader_portrait = BA_leader_Yume
+			set_name = BA_name_leader_Yume
 		}
-		#野宫
-		leader_BA_007 = {
-			change_leader_portrait = BA_leader_007
-			set_name = BA_name_leader_007
+		#羽沼真琴
+		leader_BA_Makoto = {
+			change_leader_portrait = BA_leader_Makoto
+			set_name = BA_name_leader_Makoto
 		}
-		#梦
-		leader_BA_008 = {
-			change_leader_portrait = BA_leader_008
-			set_name = BA_name_leader_008
+		#枣伊吕波
+		leader_BA_Iroha = {
+			change_leader_portrait = BA_leader_Iroha
+			set_name = BA_name_leader_Iroha
 		}
-		#美咲
-		leader_BA_009 = {
-			change_leader_portrait = BA_leader_009
-			set_name = BA_name_leader_009
+		#丹花伊吹
+		leader_BA_Ibuki = {
+			change_leader_portrait = BA_leader_Ibuki
+			set_name = BA_name_leader_Ibuki
 		}
-		#日和
-		leader_BA_010 = {
-			change_leader_portrait = BA_leader_010
-			set_name = BA_name_leader_010
+		#京极皋月
+		leader_BA_Satsuki = {
+			change_leader_portrait = BA_leader_Satsuki
+			set_name = BA_name_leader_Satsuki
 		}
-		#纱织
-		leader_BA_011 = {
-			change_leader_portrait = BA_leader_011
-			set_name = BA_name_leader_011
+		#元宫千秋
+		leader_BA_Chiaki = {
+			change_leader_portrait = BA_leader_Chiaki
+			set_name = BA_name_leader_Chiaki
 		}
-		#亚津子
-		leader_BA_012 = {
-			change_leader_portrait = BA_leader_012
-			set_name = BA_name_leader_012
+		#空崎日奈
+		leader_BA_Hina = {
+			change_leader_portrait = BA_leader_Hina
+			set_name = BA_name_leader_Hina
+		}
+		#天雨亚子
+		leader_BA_Ako = {
+			change_leader_portrait = BA_leader_Ako
+			set_name = BA_name_leader_Ako
+		}
+		#银镜伊织
+		leader_BA_Iori = {
+			change_leader_portrait = BA_leader_Iori
+			set_name = BA_name_leader_Iori
+		}
+		#火宫千夏
+		leader_BA_Chinatsu = {
+			change_leader_portrait = BA_leader_Chinatsu
+			set_name = BA_name_leader_Chinatsu
+		}
+		#陆八魔亚瑠
+		leader_BA_Aru = {
+			change_leader_portrait = BA_leader_Aru
+			set_name = BA_name_leader_Aru
+		}
+		#鬼方佳世子
+		leader_BA_Kayoko = {
+			change_leader_portrait = BA_leader_Kayoko
+			set_name = BA_name_leader_Kayoko
+		}
+		#浅黄睦月
+		leader_BA_Mutsuki = {
+			change_leader_portrait = BA_leader_Mutsuki
+			set_name = BA_name_leader_Mutsuki
+		}
+		#伊草春香
+		leader_BA_Haruka = {
+			change_leader_portrait = BA_leader_Haruka
+			set_name = BA_name_leader_Haruka
+		}
+		#黑馆晴奈
+		leader_BA_Haruna = {
+			change_leader_portrait = BA_leader_Haruna
+			set_name = BA_name_leader_Haruna
+		}
+		#鳄渊明里
+		leader_BA_Akari = {
+			change_leader_portrait = BA_leader_Akari
+			set_name = BA_name_leader_Akari
+		}
+		#狮子堂泉
+		leader_BA_Izumi = {
+			change_leader_portrait = BA_leader_Izumi
+			set_name = BA_name_leader_Izumi
+		}
+		#赤司淳子
+		leader_BA_Junko = {
+			change_leader_portrait = BA_leader_Junko
+			set_name = BA_name_leader_Junko
+		}
+		#爱清枫香
+		leader_BA_Fuuka = {
+			change_leader_portrait = BA_leader_Fuuka
+			set_name = BA_name_leader_Fuuka
+		}
+		#牛牧朱莉
+		leader_BA_Juri = {
+			change_leader_portrait = BA_leader_Juri
+			set_name = BA_name_leader_Juri
+		}
+		#鬼怒川霞
+		leader_BA_Iroha = {
+			change_leader_portrait = BA_leader_Iroha
+			set_name = BA_name_leader_Iroha
+		}
+		#下仓惠
+		leader_BA_Megu = {
+			change_leader_portrait = BA_leader_Megu
+			set_name = BA_name_leader_Megu
+		}
+		#夜樱绮罗罗
+		leader_BA_Kirara = {
+			change_leader_portrait = BA_leader_Kirara
+			set_name = BA_name_leader_Kirara
+		}
+		#旗见绘里香
+		leader_BA_Erika = {
+			change_leader_portrait = BA_leader_Erika
+			set_name = BA_name_leader_Erika
+		}
+		#冰室濑奈
+		leader_BA_Sena = {
+			change_leader_portrait = BA_leader_Sena
+			set_name = BA_name_leader_Sena
+		}
+		#调月莉音
+		leader_BA_Rio = {
+			change_leader_portrait = BA_leader_Rio
+			set_name = BA_name_leader_Rio
+		}
+		#早濑优香
+		leader_BA_Yuuka = {
+			change_leader_portrait = BA_leader_Yuuka
+			set_name = BA_name_leader_Yuuka
+		}
+		#生盐乃爱
+		leader_BA_Noa = {
+			change_leader_portrait = BA_leader_Noa
+			set_name = BA_name_leader_Noa
+		}
+		#黑崎小雪
+		leader_BA_Koyuki = {
+			change_leader_portrait = BA_leader_Koyuki
+			set_name = BA_name_leader_Koyuki
+		}
+		#美甘尼禄
+		leader_BA_Neru = {
+			change_leader_portrait = BA_leader_Neru
+			set_name = BA_name_leader_Neru
+		}
+		#一之濑明日奈
+		leader_BA_Asuna = {
+			change_leader_portrait = BA_leader_Asuna
+			set_name = BA_name_leader_Asuna
+		}
+		#角楯花凛
+		leader_BA_Karin = {
+			change_leader_portrait = BA_leader_Karin
+			set_name = BA_name_leader_Karin
+		}
+		#室笠朱音
+		leader_BA_Akane = {
+			change_leader_portrait = BA_leader_Akane
+			set_name = BA_name_leader_Akane
+		}
+		#飞鸟马时
+		leader_BA_Toki = {
+			change_leader_portrait = BA_leader_Toki
+			set_name = BA_name_leader_Toki
+		}
+		#花冈柚子
+		leader_BA_Yuzu = {
+			change_leader_portrait = BA_leader_Yuzu
+			set_name = BA_name_leader_Yuzu
+		}
+		#才羽桃井
+		leader_BA_Momoi = {
+			change_leader_portrait = BA_leader_Momoi
+			set_name = BA_name_leader_Momoi
+		}
+		#才羽绿
+		leader_BA_Midori = {
+			change_leader_portrait = BA_leader_Midori
+			set_name = BA_name_leader_Midori
+		}
+		#天童爱丽丝
+		leader_BA_Aris = {
+			change_leader_portrait = BA_leader_Aris
+			set_name = BA_name_leader_Aris
+		}
+		#各务千寻
+		leader_BA_Chihiro = {
+			change_leader_portrait = BA_leader_Chihiro
+			set_name = BA_name_leader_Chihiro
+		}
+		#音濑小玉
+		leader_BA_Kotama = {
+			change_leader_portrait = BA_leader_Kotama
+			set_name = BA_name_leader_Kotama
+		}
+		#小钩晴
+		leader_BA_Hare = {
+			change_leader_portrait = BA_leader_Hare
+			set_name = BA_name_leader_Hare
+		}
+		#小涂真纪
+		leader_BA_Maki = {
+			change_leader_portrait = BA_leader_Maki
+			set_name = BA_name_leader_Maki
+		}
+		#白石咏叶
+		leader_BA_Utaha = {
+			change_leader_portrait = BA_leader_Utaha
+			set_name = BA_name_leader_Utaha
+		}
+		#猫冢响
+		leader_BA_Hibiki = {
+			change_leader_portrait = BA_leader_Hibiki
+			set_name = BA_name_leader_Hibiki
+		}
+		#丰见亚都梨
+		leader_BA_Kotori = {
+			change_leader_portrait = BA_leader_Kotori
+			set_name = BA_name_leader_Kotori
+		}
+		#明星日鞠
+		leader_BA_Himari = {
+			change_leader_portrait = BA_leader_Himari
+			set_name = BA_name_leader_Himari
+		}
+		#和泉元艾米
+		leader_BA_Eimi = {
+			change_leader_portrait = BA_leader_Eimi
+			set_name = BA_name_leader_Eimi
+		}
+		#乙花堇
+		leader_BA_Sumire = {
+			change_leader_portrait = BA_leader_Sumire
+			set_name = BA_name_leader_Sumire
+		}
+		#野正丽
+		leader_BA_Rei = {
+			change_leader_portrait = BA_leader_Rei
+			set_name = BA_name_leader_Rei
+		}
+		#吾妻未来
+		leader_BA_Mirai = {
+			change_leader_portrait = BA_leader_Mirai
+			set_name = BA_name_leader_Mirai
+		}
+		#圣园未花
+		leader_BA_Mika = {
+			change_leader_portrait = BA_leader_Mika
+			set_name = BA_name_leader_Mika
+		}
+		#桐藤渚
+		leader_BA_Nagisa = {
+			change_leader_portrait = BA_leader_Nagisa
+			set_name = BA_name_leader_Nagisa
+		}
+		#百合园圣娅
+		leader_BA_Seia = {
+			change_leader_portrait = BA_leader_Seia
+			set_name = BA_name_leader_Seia
+		}
+		#阿慈谷日富美
+		leader_BA_Hifumi = {
+			change_leader_portrait = BA_leader_Hifumi
+			set_name = BA_name_leader_Hifumi
+		}
+		#白洲梓
+		leader_BA_Azusa = {
+			change_leader_portrait = BA_leader_Azusa
+			set_name = BA_name_leader_Azusa
+		}
+		#浦和花子
+		leader_BA_Hanako = {
+			change_leader_portrait = BA_leader_Hanako
+			set_name = BA_name_leader_Hanako
+		}
+		#下江小春
+		leader_BA_Koharu = {
+			change_leader_portrait = BA_leader_Koharu
+			set_name = BA_name_leader_Koharu
+		}
+		#剑先鹤城
+		leader_BA_Tsurugi = {
+			change_leader_portrait = BA_leader_Tsurugi
+			set_name = BA_name_leader_Tsurugi
+		}
+		#羽川莲实
+		leader_BA_Hasumi = {
+			change_leader_portrait = BA_leader_Hasumi
+			set_name = BA_name_leader_Hasumi
+		}
+		#仲正一花
+		leader_BA_Ichika = {
+			change_leader_portrait = BA_leader_Ichika
+			set_name = BA_name_leader_Ichika
+		}
+		#静山真白
+		leader_BA_Mashiro = {
+			change_leader_portrait = BA_leader_Mashiro
+			set_name = BA_name_leader_Mashiro
+		}
+		#歌住樱子
+		leader_BA_Sakurako = {
+			change_leader_portrait = BA_leader_Sakurako
+			set_name = BA_name_leader_Sakurako
+		}
+		#若叶日向
+		leader_BA_Hinata = {
+			change_leader_portrait = BA_leader_Hinata
+			set_name = BA_name_leader_Hinata
+		}
+		#伊落玛丽
+		leader_BA_Mari = {
+			change_leader_portrait = BA_leader_Mari
+			set_name = BA_name_leader_Mari
+		}
+		#栗村爱莉
+		leader_BA_Airi = {
+			change_leader_portrait = BA_leader_Airi
+			set_name = BA_name_leader_Airi
+		}
+		#杏山和纱
+		leader_BA_Kazusa = {
+			change_leader_portrait = BA_leader_Kazusa
+			set_name = BA_name_leader_Kazusa
+		}
+		#伊原木好美
+		leader_BA_Yoshimi = {
+			change_leader_portrait = BA_leader_Yoshimi
+			set_name = BA_name_leader_Yoshimi
+		}
+		#柚鸟夏
+		leader_BA_Natsu = {
+			change_leader_portrait = BA_leader_Natsu
+			set_name = BA_name_leader_Natsu
+		}
+		#苍森美弥
+		leader_BA_Mine = {
+			change_leader_portrait = BA_leader_Mine
+			set_name = BA_name_leader_Mine
+		}
+		#鹫见芹奈
+		leader_BA_Serina = {
+			change_leader_portrait = BA_leader_Serina
+			set_name = BA_name_leader_Serina
+		}
+		#朝颜花绘
+		leader_BA_Hanae = {
+			change_leader_portrait = BA_leader_Hanae
+			set_name = BA_name_leader_Hanae
+		}
+		#守月铃美
+		leader_BA_Suzumi = {
+			change_leader_portrait = BA_leader_Suzumi
+			set_name = BA_name_leader_Suzumi
+		}
+		#宇泽玲纱
+		leader_BA_Reisa = {
+			change_leader_portrait = BA_leader_Reisa
+			set_name = BA_name_leader_Reisa
+		}
+		#古关忧
+		leader_BA_Ui = {
+			change_leader_portrait = BA_leader_Ui
+			set_name = BA_name_leader_Ui
+		}
+		#圆堂志美子
+		leader_BA_Shimiko = {
+			change_leader_portrait = BA_leader_Shimiko
+			set_name = BA_name_leader_Shimiko
+		}
+		#狐坂若藻
+		leader_BA_Wakamo = {
+			change_leader_portrait = BA_leader_Wakamo
+			set_name = BA_name_leader_Wakamo
+		}
+		#天地妮娅
+		leader_BA_Niya = {
+			change_leader_portrait = BA_leader_Niya
+			set_name = BA_name_leader_Niya
+		}
+		#桑上果穗
+		leader_BA_Kaho = {
+			change_leader_portrait = BA_leader_Kaho
+			set_name = BA_name_leader_Kaho
+		}
+		#和乐千世
+		leader_BA_Chise = {
+			change_leader_portrait = BA_leader_Chise
+			set_name = BA_name_leader_Chise
+		}
+		#七棱菖蒲
+		leader_BA_Ayame = {
+			change_leader_portrait = BA_leader_Ayame
+			set_name = BA_name_leader_Ayame
+		}
+		#御棱名草
+		leader_BA_Nagusa = {
+			change_leader_portrait = BA_leader_Nagusa
+			set_name = BA_name_leader_Nagusa
+		}
+		#不破莲华
+		leader_BA_Renge = {
+			change_leader_portrait = BA_leader_Renge
+			set_name = BA_name_leader_Renge
+		}
+		#桐生桔梗
+		leader_BA_Kikyou = {
+			change_leader_portrait = BA_leader_Kikyou
+			set_name = BA_name_leader_Kikyou
+		}
+		#勘解由小路紫
+		leader_BA_Yukari = {
+			change_leader_portrait = BA_leader_Yukari
+			set_name = BA_name_leader_Yukari
 		}
 		#葛叶
-		leader_BA_013 = {
-			change_leader_portrait = BA_leader_013
-			set_name = BA_name_leader_013
+		leader_BA_Kuzunoha = {
+			change_leader_portrait = BA_leader_Kuzunoha
+			set_name = BA_name_leader_Kuzunoha
 		}
-		#桔梗
-		leader_BA_014 = {
-			change_leader_portrait = BA_leader_014
-			set_name = BA_name_leader_014
+		#春日椿
+		leader_BA_Tsubaki = {
+			change_leader_portrait = BA_leader_Tsubaki
+			set_name = BA_name_leader_Tsubaki
 		}
-		#莲华
-		leader_BA_015 = {
-			change_leader_portrait = BA_leader_015
-			set_name = BA_name_leader_015
+		#水羽三森
+		leader_BA_Mimori = {
+			change_leader_portrait = BA_leader_Mimori
+			set_name = BA_name_leader_Mimori
 		}
-		#名草
-		leader_BA_016 = {
-			change_leader_portrait = BA_leader_016
-			set_name = BA_name_leader_016
+		#勇美枫
+		leader_BA_Kaede = {
+			change_leader_portrait = BA_leader_Kaede
+			set_name = BA_name_leader_Kaede
 		}
-		#缘里
-		leader_BA_017 = {
-			change_leader_portrait = BA_leader_017
-			set_name = BA_name_leader_017
+		#千鸟满
+		leader_BA_Michiru = {
+			change_leader_portrait = BA_leader_Michiru
+			set_name = BA_name_leader_Michiru
 		}
-		#新
-		leader_BA_018 = {
-			change_leader_portrait = BA_leader_018
-			set_name = BA_name_leader_018
+		#久田泉奈
+		leader_BA_Izuna = {
+			change_leader_portrait = BA_leader_Izuna
+			set_name = BA_name_leader_Izuna
+		}
+		#大野月夜
+		leader_BA_Tsukuyo = {
+			change_leader_portrait = BA_leader_Tsukuyo
+			set_name = BA_name_leader_Tsukuyo
+		}
+		#河和静子
+		leader_BA_Shizuko = {
+			change_leader_portrait = BA_leader_Shizuko
+			set_name = BA_name_leader_Shizuko
+		}
+		#朝比奈菲娜
+		leader_BA_Pina = {
+			change_leader_portrait = BA_leader_Pina
+			set_name = BA_name_leader_Pina
+		}
+		#里滨海香
+		leader_BA_Umika = {
+			change_leader_portrait = BA_leader_Umika
+			set_name = BA_name_leader_Umika
 		}
 		#虞美人
-		leader_BA_019 = {
-			change_leader_portrait = BA_leader_019
-			set_name = BA_name_leader_019
-		}
-		#棕榈
-		leader_BA_020 = {
-			change_leader_portrait = BA_leader_020
-			set_name = BA_name_leader_020
-		}
-		#菲娜
-		leader_BA_021 = {
-			change_leader_portrait = BA_leader_021
-			set_name = BA_name_leader_021
-		}
-		#海香
-		leader_BA_022 = {
-			change_leader_portrait = BA_leader_022
-			set_name = BA_name_leader_022
-		}
-		#静子
-		leader_BA_023 = {
-			change_leader_portrait = BA_leader_023
-			set_name = BA_name_leader_023
-		}
-		#若藻
-		leader_BA_024 = {
-			change_leader_portrait = BA_leader_024
-			set_name = BA_name_leader_024
-		}
-		#泉奈
-		leader_BA_025 = {
-			change_leader_portrait = BA_leader_025
-			set_name = BA_name_leader_025
-		}
-		#月咏
-		leader_BA_026 = {
-			change_leader_portrait = BA_leader_026
-			set_name = BA_name_leader_026
-		}
-		#满
-		leader_BA_027 = {
-			change_leader_portrait = BA_leader_027
-			set_name = BA_name_leader_027
-		}
-		#椿
-		leader_BA_028 = {
-			change_leader_portrait = BA_leader_028
-			set_name = BA_name_leader_028
-		}
-		#枫
-		leader_BA_029 = {
-			change_leader_portrait = BA_leader_029
-			set_name = BA_name_leader_029
-		}
-		#三森
-		leader_BA_030 = {
-			change_leader_portrait = BA_leader_030
-			set_name = BA_name_leader_030
-		}
-		#果穗
-		leader_BA_031 = {
-			change_leader_portrait = BA_leader_031
-			set_name = BA_name_leader_031
-		}
-		#妮娅
-		leader_BA_032 = {
-			change_leader_portrait = BA_leader_032
-			set_name = BA_name_leader_032
-		}
-		#千世
-		leader_BA_033 = {
-			change_leader_portrait = BA_leader_033
-			set_name = BA_name_leader_033
-		}
-		#阿露
-		leader_BA_034 = {
-			change_leader_portrait = BA_leader_034
-			set_name = BA_name_leader_034
-		}
-		#佳代子
-		leader_BA_035 = {
-			change_leader_portrait = BA_leader_035
-			set_name = BA_name_leader_035
-		}
-		#睦月
-		leader_BA_036 = {
-			change_leader_portrait = BA_leader_036
-			set_name = BA_name_leader_036
-		}
-		#遥香
-		leader_BA_037 = {
-			change_leader_portrait = BA_leader_037
-			set_name = BA_name_leader_037
-		}
-		#千夏
-		leader_BA_038 = {
-			change_leader_portrait = BA_leader_038
-			set_name = BA_name_leader_038
-		}
-		#日奈
-		leader_BA_039 = {
-			change_leader_portrait = BA_leader_039
-			set_name = BA_name_leader_039
-		}
-		#亚子
-		leader_BA_040 = {
-			change_leader_portrait = BA_leader_040
-			set_name = BA_name_leader_040
-		}
-		#伊织
-		leader_BA_041 = {
-			change_leader_portrait = BA_leader_041
-			set_name = BA_name_leader_041
-		}
-		#枫香
-		leader_BA_042 = {
-			change_leader_portrait = BA_leader_042
-			set_name = BA_name_leader_042
-		}
-		#朱莉
-		leader_BA_043 = {
-			change_leader_portrait = BA_leader_043
-			set_name = BA_name_leader_043
-		}
-		#绘梨香
-		leader_BA_044 = {
-			change_leader_portrait = BA_leader_044
-			set_name = BA_name_leader_044
-		}
-		#濑名
-		leader_BA_045 = {
-			change_leader_portrait = BA_leader_045
-			set_name = BA_name_leader_045
-		}
-		#绮良良
-		leader_BA_046 = {
-			change_leader_portrait = BA_leader_046
-			set_name = BA_name_leader_046
-		}
-		#淳子
-		leader_BA_047 = {
-			change_leader_portrait = BA_leader_047
-			set_name = BA_name_leader_047
-		}
-		#明里
-		leader_BA_048 = {
-			change_leader_portrait = BA_leader_048
-			set_name = BA_name_leader_048
-		}
-		#晴奈
-		leader_BA_049 = {
-			change_leader_portrait = BA_leader_049
-			set_name = BA_name_leader_049
-		}
-		#泉
-		leader_BA_050 = {
-			change_leader_portrait = BA_leader_050
-			set_name = BA_name_leader_050
-		}
-		#真琴
-		leader_BA_051 = {
-			change_leader_portrait = BA_leader_051
-			set_name = BA_name_leader_051
-		}
-		#皐月
-		leader_BA_052 = {
-			change_leader_portrait = BA_leader_052
-			set_name = BA_name_leader_052
-		}
-		#千秋
-		leader_BA_053 = {
-			change_leader_portrait = BA_leader_053
-			set_name = BA_name_leader_053
-		}
-		#伊吹
-		leader_BA_054 = {
-			change_leader_portrait = BA_leader_054
-			set_name = BA_name_leader_054
-		}
-		#伊吕波
-		leader_BA_055 = {
-			change_leader_portrait = BA_leader_055
-			set_name = BA_name_leader_055
-		}
-		#霞
-		leader_BA_056 = {
-			change_leader_portrait = BA_leader_056
-			set_name = BA_name_leader_056
-		}
-		#惠
-		leader_BA_057 = {
-			change_leader_portrait = BA_leader_057
-			set_name = BA_name_leader_057
-		}
-		#光明
-		leader_BA_058 = {
-			change_leader_portrait = BA_leader_058
-			set_name = BA_name_leader_058
-		}
-		#希望
-		leader_BA_059 = {
-			change_leader_portrait = BA_leader_059
-			set_name = BA_name_leader_059
-		}
-		#周防
-		leader_BA_060 = {
-			change_leader_portrait = BA_leader_060
-			set_name = BA_name_leader_060
-		}
-		#和香
-		leader_BA_061 = {
-			change_leader_portrait = BA_leader_061
-			set_name = BA_name_leader_061
-		}
-		#时雨
-		leader_BA_062 = {
-			change_leader_portrait = BA_leader_062
-			set_name = BA_name_leader_062
-		}
-		#八云
-		leader_BA_063 = {
-			change_leader_portrait = BA_leader_063
-			set_name = BA_name_leader_063
-		}
-		#贵音
-		leader_BA_064 = {
-			change_leader_portrait = BA_leader_064
-			set_name = BA_name_leader_064
-		}
-		#巴
-		leader_BA_065 = {
-			change_leader_portrait = BA_leader_065
-			set_name = BA_name_leader_065
-		}
-		#玛丽娜
-		leader_BA_066 = {
-			change_leader_portrait = BA_leader_066
-			set_name = BA_name_leader_066
-		}
-		#切里诺
-		leader_BA_067 = {
-			change_leader_portrait = BA_leader_067
-			set_name = BA_name_leader_067
-		}
-		#实梨
-		leader_BA_068 = {
-			change_leader_portrait = BA_leader_068
-			set_name = BA_name_leader_068
-		}
-		#红叶
-		leader_BA_069 = {
-			change_leader_portrait = BA_leader_069
-			set_name = BA_name_leader_069
-		}
-		#梅露
-		leader_BA_070 = {
-			change_leader_portrait = BA_leader_070
-			set_name = BA_name_leader_070
-		}
-		#志乃
-		leader_BA_071 = {
-			change_leader_portrait = BA_leader_071
-			set_name = BA_name_leader_071
-		}
-		#麦
-		leader_BA_072 = {
-			change_leader_portrait = BA_leader_072
-			set_name = BA_name_leader_072
-		}
-		#?
-		leader_BA_073 = {
-			change_leader_portrait = BA_leader_073
-			set_name = BA_name_leader_073
-		}
-		#联邦学生会长
-		leader_BA_074 = {
-			change_leader_portrait = BA_leader_074
-			set_name = BA_name_leader_074
-		}
-		#凛
-		leader_BA_075 = {
-			change_leader_portrait = BA_leader_075
-			set_name = BA_name_leader_075
-		}
-		#步美
-		leader_BA_076 = {
-			change_leader_portrait = BA_leader_076
-			set_name = BA_name_leader_076
-		}
-		#花耶
-		leader_BA_077 = {
-			change_leader_portrait = BA_leader_077
-			set_name = BA_name_leader_077
-		}
-		#灰音
-		leader_BA_078 = {
-			change_leader_portrait = BA_leader_078
-			set_name = BA_name_leader_078
-		}
-		#葵
-		leader_BA_079 = {
-			change_leader_portrait = BA_leader_079
-			set_name = BA_name_leader_079
-		}
-		#李
-		leader_BA_080 = {
-			change_leader_portrait = BA_leader_080
-			set_name = BA_name_leader_080
-		}
-		#桃香
-		leader_BA_081 = {
-			change_leader_portrait = BA_leader_081
-			set_name = BA_name_leader_081
-		}
-		#歌原
-		leader_BA_082 = {
-			change_leader_portrait = BA_leader_082
-			set_name = BA_name_leader_082
-		}
-		#琴里
-		leader_BA_083 = {
-			change_leader_portrait = BA_leader_083
-			set_name = BA_name_leader_083
-		}
-		#响
-		leader_BA_084 = {
-			change_leader_portrait = BA_leader_084
-			set_name = BA_name_leader_084
-		}
-		#艾米
-		leader_BA_085 = {
-			change_leader_portrait = BA_leader_085
-			set_name = BA_name_leader_085
-		}
-		#日鞠
-		leader_BA_086 = {
-			change_leader_portrait = BA_leader_086
-			set_name = BA_name_leader_086
-		}
-		#堇
-		leader_BA_087 = {
-			change_leader_portrait = BA_leader_087
-			set_name = BA_name_leader_087
-		}
-		#丽
-		leader_BA_088 = {
-			change_leader_portrait = BA_leader_088
-			set_name = BA_name_leader_088
-		}
-		#莉音
-		leader_BA_089 = {
-			change_leader_portrait = BA_leader_089
-			set_name = BA_name_leader_089
-		}
-		#诺亚
-		leader_BA_090 = {
-			change_leader_portrait = BA_leader_090
-			set_name = BA_name_leader_090
-		}
-		#小雪
-		leader_BA_091 = {
-			change_leader_portrait = BA_leader_091
-			set_name = BA_name_leader_091
-		}
-		#优香
-		leader_BA_092 = {
-			change_leader_portrait = BA_leader_092
-			set_name = BA_name_leader_092
-		}
-		#爱丽丝
-		leader_BA_093 = {
-			change_leader_portrait = BA_leader_093
-			set_name = BA_name_leader_093
-		}
-		#绿
-		leader_BA_094 = {
-			change_leader_portrait = BA_leader_094
-			set_name = BA_name_leader_094
-		}
-		#桃井
-		leader_BA_095 = {
-			change_leader_portrait = BA_leader_095
-			set_name = BA_name_leader_095
-		}
-		#柚子
-		leader_BA_096 = {
-			change_leader_portrait = BA_leader_096
-			set_name = BA_name_leader_096
-		}
-		#kei
-		leader_BA_097 = {
-			change_leader_portrait = BA_leader_097
-			set_name = BA_name_leader_097
-		}
-		#千寻
-		leader_BA_098 = {
-			change_leader_portrait = BA_leader_098
-			set_name = BA_name_leader_098
-		}
-		#晴
-		leader_BA_099 = {
-			change_leader_portrait = BA_leader_099
-			set_name = BA_name_leader_099
-		}
-		#小玉
-		leader_BA_100 = {
-			change_leader_portrait = BA_leader_100
-			set_name = BA_name_leader_100
-		}
-		#真纪
-		leader_BA_101 = {
-			change_leader_portrait = BA_leader_101
-			set_name = BA_name_leader_101
-		}
-		#花凛
-		leader_BA_102 = {
-			change_leader_portrait = BA_leader_102
-			set_name = BA_name_leader_102
-		}
-		#明日奈
-		leader_BA_103 = {
-			change_leader_portrait = BA_leader_103
-			set_name = BA_name_leader_103
-		}
-		#尼禄
-		leader_BA_104 = {
-			change_leader_portrait = BA_leader_104
-			set_name = BA_name_leader_104
-		}
-		#时
-		leader_BA_105 = {
-			change_leader_portrait = BA_leader_105
-			set_name = BA_name_leader_105
-		}
-		#朱音
-		leader_BA_106 = {
-			change_leader_portrait = BA_leader_106
-			set_name = BA_name_leader_106
-		}
-		#纱绫
-		leader_BA_107 = {
-			change_leader_portrait = BA_leader_107
-			set_name = BA_name_leader_107
-		}
-		#瞬
-		leader_BA_108 = {
-			change_leader_portrait = BA_leader_108
-			set_name = BA_name_leader_108
-		}
-		#心奈
-		leader_BA_109 = {
-			change_leader_portrait = BA_leader_109
-			set_name = BA_name_leader_109
-		}
-		#廻
-		leader_BA_110 = {
-			change_leader_portrait = BA_leader_110
-			set_name = BA_name_leader_110
-		}
-		#妃咲
-		leader_BA_111 = {
-			change_leader_portrait = BA_leader_111
-			set_name = BA_name_leader_111
-		}
-		#南
-		leader_BA_112 = {
-			change_leader_portrait = BA_leader_112
-			set_name = BA_name_leader_112
-		}
-		#丽情
-		leader_BA_113 = {
-			change_leader_portrait = BA_leader_113
-			set_name = BA_name_leader_113
-		}
-		#瑠美
-		leader_BA_114 = {
-			change_leader_portrait = BA_leader_114
-			set_name = BA_name_leader_114
-		}
-		#花子
-		leader_BA_115 = {
-			change_leader_portrait = BA_leader_115
-			set_name = BA_name_leader_115
-		}
-		#日富美
-		leader_BA_116 = {
-			change_leader_portrait = BA_leader_116
-			set_name = BA_name_leader_116
-		}
-		#小春
-		leader_BA_117 = {
-			change_leader_portrait = BA_leader_117
-			set_name = BA_name_leader_117
-		}
-		#梓
-		leader_BA_118 = {
-			change_leader_portrait = BA_leader_118
-			set_name = BA_name_leader_118
-		}
-		#圣娅
-		leader_BA_119 = {
-			change_leader_portrait = BA_leader_119
-			set_name = BA_name_leader_119
-		}
-		#未花
-		leader_BA_120 = {
-			change_leader_portrait = BA_leader_120
-			set_name = BA_name_leader_120
-		}
-		#渚
-		leader_BA_121 = {
-			change_leader_portrait = BA_leader_121
-			set_name = BA_name_leader_121
-		}
-		#花绘
-		leader_BA_122 = {
-			change_leader_portrait = BA_leader_122
-			set_name = BA_name_leader_122
-		}
-		#美弥
-		leader_BA_123 = {
-			change_leader_portrait = BA_leader_123
-			set_name = BA_name_leader_123
-		}
-		#芹娜
-		leader_BA_124 = {
-			change_leader_portrait = BA_leader_124
-			set_name = BA_name_leader_124
-		}
-		#晶
-		leader_BA_125 = {
-			change_leader_portrait = BA_leader_125
-			set_name = BA_name_leader_125
-		}
-		#爱莉
-		leader_BA_126 = {
-			change_leader_portrait = BA_leader_126
-			set_name = BA_name_leader_126
-		}
-		#好美
-		leader_BA_127 = {
-			change_leader_portrait = BA_leader_127
-			set_name = BA_name_leader_127
-		}
-		#和纱
-		leader_BA_128 = {
-			change_leader_portrait = BA_leader_128
-			set_name = BA_name_leader_128
-		}
-		#夏
-		leader_BA_129 = {
-			change_leader_portrait = BA_leader_129
-			set_name = BA_name_leader_129
-		}
-		#忧
-		leader_BA_130 = {
-			change_leader_portrait = BA_leader_130
-			set_name = BA_name_leader_130
-		}
-		#志美子
-		leader_BA_131 = {
-			change_leader_portrait = BA_leader_131
-			set_name = BA_name_leader_131
-		}
-		#玛丽
-		leader_BA_132 = {
-			change_leader_portrait = BA_leader_132
-			set_name = BA_name_leader_132
-		}
-		#日向
-		leader_BA_133 = {
-			change_leader_portrait = BA_leader_133
-			set_name = BA_name_leader_133
-		}
-		#樱子
-		leader_BA_134 = {
-			change_leader_portrait = BA_leader_134
-			set_name = BA_name_leader_134
-		}
-		#鹤城
-		leader_BA_135 = {
-			change_leader_portrait = BA_leader_135
-			set_name = BA_name_leader_135
-		}
-		#莲见
-		leader_BA_136 = {
-			change_leader_portrait = BA_leader_136
-			set_name = BA_name_leader_136
-		}
-		#一花
-		leader_BA_137 = {
-			change_leader_portrait = BA_leader_137
-			set_name = BA_name_leader_137
-		}
-		#真白
-		leader_BA_138 = {
-			change_leader_portrait = BA_leader_138
-			set_name = BA_name_leader_138
-		}
-		#玲美
-		leader_BA_139 = {
-			change_leader_portrait = BA_leader_139
-			set_name = BA_name_leader_139
-		}
-		#玲纱
-		leader_BA_140 = {
-			change_leader_portrait = BA_leader_140
-			set_name = BA_name_leader_140
-		}
-		#康娜
-		leader_BA_141 = {
-			change_leader_portrait = BA_leader_141
-			set_name = BA_name_leader_141
-		}
-		#吹雪
-		leader_BA_142 = {
-			change_leader_portrait = BA_leader_142
-			set_name = BA_name_leader_142
-		}
-		#桐乃
-		leader_BA_143 = {
-			change_leader_portrait = BA_leader_143
-			set_name = BA_name_leader_143
-		}
-		#胡桃
-		leader_BA_144 = {
-			change_leader_portrait = BA_leader_144
-			set_name = BA_name_leader_144
+		leader_BA_Kokuriko = {
+			change_leader_portrait = BA_leader_Kokuriko
+			set_name = BA_name_leader_Kokuriko
+		}
+		#箭吹棕榈
+		leader_BA_Shuro = {
+			change_leader_portrait = BA_leader_Shuro
+			set_name = BA_name_leader_Shuro
+		}
+		#土生蓟
+		leader_BA_Azami = {
+			change_leader_portrait = BA_leader_Azami
+			set_name = BA_name_leader_Azami
+		}
+		#新
+		leader_BA_Arata = {
+			change_leader_portrait = BA_leader_Arata
+			set_name = BA_name_leader_Arata
+		}
+		#连河切莉诺
+		leader_BA_Cherino = {
+			change_leader_portrait = BA_leader_Cherino
+			set_name = BA_name_leader_Cherino
+		}
+		#佐城智惠
+		leader_BA_Tomoe = {
+			change_leader_portrait = BA_leader_Tomoe
+			set_name = BA_name_leader_Tomoe
+		}
+		#池仓玛丽娜
+		leader_BA_Marina = {
+			change_leader_portrait = BA_leader_Marina
+			set_name = BA_name_leader_Marina
+		}
+		#天见和香
+		leader_BA_Nodoka = {
+			change_leader_portrait = BA_leader_Nodoka
+			set_name = BA_name_leader_Nodoka
+		}
+		#间宵时雨
+		leader_BA_Shigure = {
+			change_leader_portrait = BA_leader_Shigure
+			set_name = BA_name_leader_Shigure
+		}
+		#秋泉红叶
+		leader_BA_Momiji = {
+			change_leader_portrait = BA_leader_Momiji
+			set_name = BA_name_leader_Momiji
+		}
+		#姬木爱瑠
+		leader_BA_Meru = {
+			change_leader_portrait = BA_leader_Meru
+			set_name = BA_name_leader_Meru
+		}
+		#荒槙八云
+		leader_BA_Yakumo = {
+			change_leader_portrait = BA_leader_Yakumo
+			set_name = BA_name_leader_Yakumo
+		}
+		#三善贵音
+		leader_BA_Takane = {
+			change_leader_portrait = BA_leader_Takane
+			set_name = BA_name_leader_Takane
+		}
+		#安守实里
+		leader_BA_Minori = {
+			change_leader_portrait = BA_leader_Minori
+			set_name = BA_name_leader_Minori
+		}
+		#龙华妃咲
+		leader_BA_Kisaki = {
+			change_leader_portrait = BA_leader_Kisaki
+			set_name = BA_name_leader_Kisaki
+		}
+		#近卫弥奈
+		leader_BA_Mina = {
+			change_leader_portrait = BA_leader_Mina
+			set_name = BA_name_leader_Mina
+		}
+		#朱城瑠美
+		leader_BA_Rumi = {
+			change_leader_portrait = BA_leader_Rumi
+			set_name = BA_name_leader_Rumi
+		}
+		#鹿山丽情
+		leader_BA_Reijo = {
+			change_leader_portrait = BA_leader_Reijo
+			set_name = BA_name_leader_Reijo
+		}
+		#春原瞬
+		leader_BA_Shun = {
+			change_leader_portrait = BA_leader_Shun
+			set_name = BA_name_leader_Shun
+		}
+		#春原心奈
+		leader_BA_Kokona = {
+			change_leader_portrait = BA_leader_Kokona
+			set_name = BA_name_leader_Kokona
+		}
+		#申谷海
+		leader_BA_Kai = {
+			change_leader_portrait = BA_leader_Kai
+			set_name = BA_name_leader_Kai
+		}
+		#药子沙耶
+		leader_BA_Saya = {
+			change_leader_portrait = BA_leader_Saya
+			set_name = BA_name_leader_Saya
+		}
+		#漆原辉夜
+		leader_BA_Kaguya = {
+			change_leader_portrait = BA_leader_Kaguya
+			set_name = BA_name_leader_Kaguya
+		}
+		#尾刃康娜
+		leader_BA_Kanna = {
+			change_leader_portrait = BA_leader_Kanna
+			set_name = BA_name_leader_Kanna
+		}
+		#木乃香
+		leader_BA_Konoka = {
+			change_leader_portrait = BA_leader_Konoka
+			set_name = BA_name_leader_Konoka
+		}
+		#中务桐乃
+		leader_BA_Kirino = {
+			change_leader_portrait = BA_leader_Kirino
+			set_name = BA_name_leader_Kirino
+		}
+		#合欢垣吹雪
+		leader_BA_Fubuki = {
+			change_leader_portrait = BA_leader_Fubuki
+			set_name = BA_name_leader_Fubuki
+		}
+		#锭前纱织
+		leader_BA_Saori = {
+			change_leader_portrait = BA_leader_Saori
+			set_name = BA_name_leader_Saori
+		}
+		#秤亚津子
+		leader_BA_Atsuko = {
+			change_leader_portrait = BA_leader_Atsuko
+			set_name = BA_name_leader_Atsuko
+		}
+		#戒野美咲
+		leader_BA_Misaki = {
+			change_leader_portrait = BA_leader_Misaki
+			set_name = BA_name_leader_Misaki
+		}
+		#槌永日和
+		leader_BA_Hiyori = {
+			change_leader_portrait = BA_leader_Hiyori
+			set_name = BA_name_leader_Hiyori
+		}
+		#梯昴
+		leader_BA_Subaru = {
+			change_leader_portrait = BA_leader_Subaru
+			set_name = BA_name_leader_Subaru
+		}
+		#立木迈亚
+		leader_BA_Maia = {
+			change_leader_portrait = BA_leader_Maia
+			set_name = BA_name_leader_Maia
+		}
+		#月雪宫子
+		leader_BA_Miyako = {
+			change_leader_portrait = BA_leader_Miyako
+			set_name = BA_name_leader_Miyako
+		}
+		#空井咲
+		leader_BA_Saki = {
+			change_leader_portrait = BA_leader_Saki
+			set_name = BA_name_leader_Saki
+		}
+		#霞泽美游
+		leader_BA_Miyu = {
+			change_leader_portrait = BA_leader_Miyu
+			set_name = BA_name_leader_Miyu
+		}
+		#风仓萌绘
+		leader_BA_Moe = {
+			change_leader_portrait = BA_leader_Moe
+			set_name = BA_name_leader_Moe
+		}
+		#七度雪乃
+		leader_BA_Yukino = {
+			change_leader_portrait = BA_leader_Yukino
+			set_name = BA_name_leader_Yukino
 		}
 		#妮可
-		leader_BA_145 = {
-			change_leader_portrait = BA_leader_145
-			set_name = BA_name_leader_145
+		leader_BA_Niko = {
+			change_leader_portrait = BA_leader_Niko
+			set_name = BA_name_leader_Niko
 		}
-		#雪乃
-		leader_BA_146 = {
-			change_leader_portrait = BA_leader_146
-			set_name = BA_name_leader_146
+		#胡桃
+		leader_BA_Kurumi = {
+			change_leader_portrait = BA_leader_Kurumi
+			set_name = BA_name_leader_Kurumi
 		}
 		#音葵
-		leader_BA_147 = {
-			change_leader_portrait = BA_leader_147
-			set_name = BA_name_leader_147
+		leader_BA_Otogi = {
+			change_leader_portrait = BA_leader_Otogi
+			set_name = BA_name_leader_Otogi
 		}
-		#宫子
-		leader_BA_148 = {
-			change_leader_portrait = BA_leader_148
-			set_name = BA_name_leader_148
+		#橘光明
+		leader_BA_Hikari = {
+			change_leader_portrait = BA_leader_Hikari
+			set_name = BA_name_leader_Hikari
 		}
-		#美游
-		leader_BA_149 = {
-			change_leader_portrait = BA_leader_149
-			set_name = BA_name_leader_149
+		#橘希望
+		leader_BA_Nozomi = {
+			change_leader_portrait = BA_leader_Nozomi
+			set_name = BA_name_leader_Nozomi
 		}
-		#萌绘
-		leader_BA_150 = {
-			change_leader_portrait = BA_leader_150
-			set_name = BA_name_leader_150
+		#朝雾周防
+		leader_BA_Suou = {
+			change_leader_portrait = BA_leader_Suou
+			set_name = BA_name_leader_Suou
 		}
-		#咲
-		leader_BA_151 = {
-			change_leader_portrait = BA_leader_151
-			set_name = BA_name_leader_151
+		#内海青叶
+		leader_BA_Aoba = {
+			change_leader_portrait = BA_leader_Aoba
+			set_name = BA_name_leader_Aoba
 		}
-		#佐天泪子
-		leader_BA_152 = {
-			change_leader_portrait = BA_leader_152
-			set_name = BA_name_leader_152
+		#云类鹫真奈美
+		leader_BA_Manami = {
+			change_leader_portrait = BA_leader_Manami
+			set_name = BA_name_leader_Manami
+		}
+		#清澄晶
+		leader_BA_Akira = {
+			change_leader_portrait = BA_leader_Akira
+			set_name = BA_name_leader_Akira
+		}
+		#裕美
+		leader_BA_Hiromi = {
+			change_leader_portrait = BA_leader_Hiromi
+			set_name = BA_name_leader_Hiromi
+		}
+		#白尾绘里
+		leader_BA_Eri = {
+			change_leader_portrait = BA_leader_Eri
+			set_name = BA_name_leader_Eri
+		}
+		#椎名纺希
+		leader_BA_Tsumugi = {
+			change_leader_portrait = BA_leader_Tsumugi
+			set_name = BA_name_leader_Tsumugi
+		}
+		#板垣鹿江
+		leader_BA_Kanoe = {
+			change_leader_portrait = BA_leader_Kanoe
+			set_name = BA_name_leader_Kanoe
+		}
+		#衣斐蕾娜
+		leader_BA_Rena = {
+			change_leader_portrait = BA_leader_Rena
+			set_name = BA_name_leader_Rena
+		}
+		#樱井美代
+		leader_BA_Miyo = {
+			change_leader_portrait = BA_leader_Miyo
+			set_name = BA_name_leader_Miyo
+		}
+		#若狭冬优
+		leader_BA_Fuyu = {
+			change_leader_portrait = BA_leader_Fuyu
+			set_name = BA_name_leader_Fuyu
+		}
+		#薄叶律
+		leader_BA_Ritsu = {
+			change_leader_portrait = BA_leader_Ritsu
+			set_name = BA_name_leader_Ritsu
 		}
 		#初音未来
-		leader_BA_153 = {
-			change_leader_portrait = BA_leader_153
-			set_name = BA_name_leader_153
+		leader_BA_HatsuneMiku = {
+			change_leader_portrait = BA_leader_HatsuneMiku
+			set_name = BA_name_leader_HatsuneMiku
 		}
-		#食蜂操祈
-		leader_BA_154 = {
-			change_leader_portrait = BA_leader_154
-			set_name = BA_name_leader_154
+		#笑面教授
+		leader_BA_ProfessorSmug = {
+			change_leader_portrait = BA_leader_ProfessorSmug
+			set_name = BA_name_leader_ProfessorSmug
 		}
-		#御坂美琴
-		leader_BA_155 = {
-			change_leader_portrait = BA_leader_155
-			set_name = BA_name_leader_155
+		#（联邦学生会会长）
+		leader_BA_StudentCouncilPresident = {
+			change_leader_portrait = BA_leader_StudentCouncilPresident
+			set_name = BA_name_leader_StudentCouncilPresident
 		}
-		#兰舞
-		leader_BA_156 = {
-			change_leader_portrait = BA_leader_156
-			set_name = BA_name_leader_156
+		#七神凛
+		leader_BA_Rin = {
+			change_leader_portrait = BA_leader_Rin
+			set_name = BA_name_leader_Rin
 		}
-		#无
-		leader_BA_157 = {
-			change_leader_portrait = BA_leader_157
-			set_name = BA_name_leader_157
+		#由良木桃香
+		leader_BA_Momoka = {
+			change_leader_portrait = BA_leader_Momoka
+			set_name = BA_name_leader_Momoka
 		}
-		#限
-		leader_BA_158 = {
-			change_leader_portrait = BA_leader_158
-			set_name = BA_name_leader_158
+		#岩柜步梦
+		leader_BA_Ayumu = {
+			change_leader_portrait = BA_leader_Ayumu
+			set_name = BA_name_leader_Ayumu
 		}
-		#光
-		leader_BA_159 = {
-			change_leader_portrait = BA_leader_159
-			set_name = BA_name_leader_159
+		#不知火花耶
+		leader_BA_Kaya = {
+			change_leader_portrait = BA_leader_Kaya
+			set_name = BA_name_leader_Kaya
+		}
+		#扇喜葵
+		leader_BA_Aoi = {
+			change_leader_portrait = BA_leader_Aoi
+			set_name = BA_name_leader_Aoi
+		}
+		#灰音
+		leader_BA_Haine = {
+			change_leader_portrait = BA_leader_Haine
+			set_name = BA_name_leader_Haine
+		}
+		#李
+		leader_BA_Sumomo = {
+			change_leader_portrait = BA_leader_Sumomo
+			set_name = BA_name_leader_Sumomo
+		}
+		#阿洛娜
+		leader_BA_Arona = {
+			change_leader_portrait = BA_leader_Arona
+			set_name = BA_name_leader_Arona
+		}
+		#普拉娜
+		leader_BA_Plana = {
+			change_leader_portrait = BA_leader_Plana
+			set_name = BA_name_leader_Plana
+		}
+		#空
+		leader_BA_Sora = {
+			change_leader_portrait = BA_leader_Sora
+			set_name = BA_name_leader_Sora
+		}
+		#河驹风兰舞
+		leader_BA_Labu = {
+			change_leader_portrait = BA_leader_Labu
+			set_name = BA_name_leader_Labu
+		}
+		#川流诗音
+		leader_BA_Shinon = {
+			change_leader_portrait = BA_leader_Shinon
+			set_name = BA_name_leader_Shinon
+		}
+		#风卷麻衣
+		leader_BA_Mai = {
+			change_leader_portrait = BA_leader_Mai
+			set_name = BA_name_leader_Mai
+		}
+		#艾茵
+		leader_BA_Ayin = {
+			change_leader_portrait = BA_leader_Ayin
+			set_name = BA_name_leader_Ayin
+		}
+		#索芙
+		leader_BA_Soph = {
+			change_leader_portrait = BA_leader_Soph
+			set_name = BA_name_leader_Soph
+		}
+		#奥茹
+		leader_BA_Aur = {
+			change_leader_portrait = BA_leader_Aur
+			set_name = BA_name_leader_Aur
+		}
+		#柯伊
+		leader_BA_Kei = {
+			change_leader_portrait = BA_leader_Kei
+			set_name = BA_name_leader_Kei
 		}
 	}
 }
@@ -2154,7 +2229,6 @@ BA_remove_skin = {
 	remove_leader_flag = BA_skin_SPW
 	remove_leader_flag = BA_skin_SP
 }
-
 
 #检测领袖标志和换装标志，更换个人特质 leader
 BA_change_skin_trait = {
