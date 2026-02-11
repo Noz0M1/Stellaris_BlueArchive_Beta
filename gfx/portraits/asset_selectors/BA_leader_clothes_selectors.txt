@@ -295,6 +295,15 @@ BA_clothes_Juri = {
 	}
 }
 
+BA_clothes_Kasumi = {
+	default = "gfx/models/portraits/main_texture/Juri.dds"
+	leader = {
+		"gfx/models/portraits/main_texture/Juri_WK.dds" = {
+			has_leader_flag = BA_skin_WK
+		}
+	}
+}
+
 BA_clothes_Megu = {
 	default = "gfx/models/portraits/main_texture/Megu.dds"
 	leader = {
@@ -1480,18 +1489,18 @@ BA_clothes_Ritsu = {
 	leader = { }
 }
 
-BA_clothes_Hatsune_Miku = {
-	default = "gfx/models/portraits/main_texture/Hatsune_Miku.dds"
+BA_clothes_HatsuneMiku = {
+	default = "gfx/models/portraits/main_texture/HatsuneMiku.dds"
 	leader = { }
 }
 
-BA_clothes_Professor_Smug = {
-	default = "gfx/models/portraits/main_texture/Professor_Smug.dds"
+BA_clothes_ProfessorSmug = {
+	default = "gfx/models/portraits/main_texture/ProfessorSmug.dds"
 	leader = { }
 }
 
-BA_clothes_Student_Council_President = {
-	default = "gfx/models/portraits/main_texture/Student_Council_President.dds"
+BA_clothes_StudentCouncilPresident = {
+	default = "gfx/models/portraits/main_texture/StudentCouncilPresident.dds"
 	leader = { }
 }
 
@@ -1564,5 +1573,25 @@ BA_clothes_Shinon = {
 
 BA_clothes_Mai = {
 	default = "gfx/models/portraits/main_texture/Mai.dds"
+	leader = { }
+}
+
+BA_clothes_Ayin = {
+	default = "gfx/models/portraits/main_texture/Ayin.dds"
+	leader = { }
+}
+
+BA_clothes_Soph = {
+	default = "gfx/models/portraits/main_texture/Soph.dds"
+	leader = { }
+}
+
+BA_clothes_Aur = {
+	default = "gfx/models/portraits/main_texture/Aur.dds"
+	leader = { }
+}
+
+BA_clothes_Kei = {
+	default = "gfx/models/portraits/main_texture/Kei.dds"
 	leader = { }
 }
