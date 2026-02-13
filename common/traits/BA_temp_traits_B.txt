@@ -3230,6 +3230,71 @@ leader_special_Fubuki = {
     sorting_priority = 998
 }
 
+###   瓦尔基里
+#戒野美咲 Misaki 暗天烟花
+leader_special_Misaki = {
+    icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R83.dds"
+    randomized = no
+    fleet_modifier = {
+        #舰船武器射速-20%，爆炸武器伤害+80%
+        ship_fire_rate_mult = -0.2
+        #weapon_type_explosive_weapon_damage_mult = 0.8
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = 0
+    sorting_priority = 998
+}
+
+#槌永日和 Hiyori 心系火花
+leader_special_Hiyori = {
+    icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R73.dds"
+    randomized = no
+    fleet_modifier = {
+        #舰船武器射程+20%，舰船武器射-40%，舰船武器伤害+20%，爆炸武器伤害+40%
+        ship_weapon_range_mult = 0.2
+        ship_fire_rate_mult = -0.4
+        ship_weapon_damage = 0.2
+        #weapon_type_explosive_weapon_damage_mult = 0.4
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = 0
+    sorting_priority = 998
+}
+
+#锭前纱织 Saori 野草之赐
+leader_special_Saori = {
+    icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R40.dds"
+    randomized = no
+    fleet_modifier = {
+        #舰船武器伤害+35%，舰船武器射速-7.5%
+        ship_weapon_damage = 0.35
+        ship_fire_rate_mult = -0.075
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = 0
+    sorting_priority = 998
+}
+
+#秤亚津子 Atsuko 无日之花
+leader_special_Atsuko = {
+    icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B83.dds"
+    randomized = no
+    fleet_modifier = {
+        #每日护盾再生+100%
+        ship_shield_regen_add_perc = 1
+    }
+    leader_class = {
+        commander
+    }
+    selectable_weight = 0
+    sorting_priority = 998
+}
 
 
 ###   SRT
@@ -3461,7 +3526,7 @@ leader_special_Akira = {
 
 ###   其他
 #初音未来 Hatsune Miku 虚拟偶像
-leader_special_Hatsunemiku = {
+leader_special_HatsuneMiku = {
     icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
     randomized = no
     modifier = {
