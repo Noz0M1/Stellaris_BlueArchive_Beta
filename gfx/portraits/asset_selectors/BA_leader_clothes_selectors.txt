@@ -1,3 +1,4 @@
+### 阿拜多斯
 BA_clothes_Hoshino = {
 	default = "gfx/models/portraits/main_texture/Hoshino.dds"
 	leader = {
@@ -78,9 +79,11 @@ BA_clothes_Ayane = {
 
 BA_clothes_Yume = {
 	default = "gfx/models/portraits/main_texture/Yume.dds"
-	leader = { }
+	leader = {
+	}
 }
 
+### 格黑那
 BA_clothes_Makoto = {
 	default = "gfx/models/portraits/main_texture/Makoto.dds"
 	leader = {
@@ -92,11 +95,6 @@ BA_clothes_Makoto = {
 
 BA_clothes_Iroha = {
 	default = "gfx/models/portraits/main_texture/Iroha.dds"
-	leader = {
-		"gfx/models/portraits/main_texture/Iroha_SS.dds" = {
-			has_leader_flag = BA_skin_SS
-		}
-	}
 }
 
 BA_clothes_Ibuki = {
@@ -110,12 +108,14 @@ BA_clothes_Ibuki = {
 
 BA_clothes_Satsuki = {
 	default = "gfx/models/portraits/main_texture/Satsuki.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Chiaki = {
 	default = "gfx/models/portraits/main_texture/Chiaki.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Hina = {
@@ -296,10 +296,10 @@ BA_clothes_Juri = {
 }
 
 BA_clothes_Kasumi = {
-	default = "gfx/models/portraits/main_texture/Juri.dds"
+	default = "gfx/models/portraits/main_texture/Kasumi.dds"
 	leader = {
-		"gfx/models/portraits/main_texture/Juri_WK.dds" = {
-			has_leader_flag = BA_skin_WK
+		"gfx/models/portraits/main_texture/Kasumi_SS.dds" = {
+			has_leader_flag = BA_skin_SS
 		}
 	}
 }
@@ -315,12 +315,14 @@ BA_clothes_Megu = {
 
 BA_clothes_Kirara = {
 	default = "gfx/models/portraits/main_texture/Kirara.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Erika = {
 	default = "gfx/models/portraits/main_texture/Erika.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Sena = {
@@ -332,6 +334,7 @@ BA_clothes_Sena = {
 	}
 }
 
+### 千年
 BA_clothes_Rio = {
 	default = "gfx/models/portraits/main_texture/Rio.dds"
 	leader = {
@@ -620,6 +623,12 @@ BA_clothes_Eimi = {
 	}
 }
 
+BA_clothes_Kei = {
+	default = "gfx/models/portraits/main_texture/Kei.dds"
+	leader = {
+	}
+}
+
 BA_clothes_Sumire = {
 	default = "gfx/models/portraits/main_texture/Sumire.dds"
 	leader = {
@@ -634,14 +643,17 @@ BA_clothes_Sumire = {
 
 BA_clothes_Rei = {
 	default = "gfx/models/portraits/main_texture/Rei.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Mirai = {
 	default = "gfx/models/portraits/main_texture/Mirai.dds"
-	leader = { }
+	leader = {
+	}
 }
 
+### 圣三一
 BA_clothes_Mika = {
 	default = "gfx/models/portraits/main_texture/Mika.dds"
 	leader = {
@@ -882,9 +894,6 @@ BA_clothes_Hanae = {
 		"gfx/models/portraits/main_texture/Hanae_XMS.dds" = {
 			has_leader_flag = BA_skin_XMS
 		}
-		"gfx/models/portraits/main_texture/Hanae_NS.dds" = {
-			has_leader_flag = BA_skin_NS
-		}
 		"gfx/models/portraits/main_texture/Hanae_CL.dds" = {
 			has_leader_flag = BA_skin_CL
 		}
@@ -927,6 +936,7 @@ BA_clothes_Shimiko = {
 	}
 }
 
+### 百鬼夜行
 BA_clothes_Wakamo = {
 	default = "gfx/models/portraits/main_texture/Wakamo.dds"
 	leader = {
@@ -941,12 +951,14 @@ BA_clothes_Wakamo = {
 
 BA_clothes_Niya = {
 	default = "gfx/models/portraits/main_texture/Niya.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Kaho = {
 	default = "gfx/models/portraits/main_texture/Kaho.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Chise = {
@@ -963,7 +975,8 @@ BA_clothes_Chise = {
 
 BA_clothes_Ayame = {
 	default = "gfx/models/portraits/main_texture/Ayame.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Nagusa = {
@@ -1010,7 +1023,8 @@ BA_clothes_Yukari = {
 
 BA_clothes_Kuzunoha = {
 	default = "gfx/models/portraits/main_texture/Kuzunoha.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Tsubaki = {
@@ -1099,29 +1113,35 @@ BA_clothes_Pina = {
 
 BA_clothes_Umika = {
 	default = "gfx/models/portraits/main_texture/Umika.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Kokuriko = {
 	default = "gfx/models/portraits/main_texture/Kokuriko.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Shuro = {
 	default = "gfx/models/portraits/main_texture/Shuro.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Azami = {
 	default = "gfx/models/portraits/main_texture/Azami.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Arata = {
 	default = "gfx/models/portraits/main_texture/Arata.dds"
-	leader = { }
+	leader = {
+	}
 }
 
+### 红冬
 BA_clothes_Cherino = {
 	default = "gfx/models/portraits/main_texture/Cherino.dds"
 	leader = {
@@ -1172,7 +1192,8 @@ BA_clothes_Shigure = {
 
 BA_clothes_Momiji = {
 	default = "gfx/models/portraits/main_texture/Momiji.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Meru = {
@@ -1186,12 +1207,14 @@ BA_clothes_Meru = {
 
 BA_clothes_Yakumo = {
 	default = "gfx/models/portraits/main_texture/Yakumo.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Takane = {
 	default = "gfx/models/portraits/main_texture/Takane.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Minori = {
@@ -1203,6 +1226,7 @@ BA_clothes_Minori = {
 	}
 }
 
+### 山海经
 BA_clothes_Kisaki = {
 	default = "gfx/models/portraits/main_texture/Kisaki.dds"
 	leader = {
@@ -1214,7 +1238,8 @@ BA_clothes_Kisaki = {
 
 BA_clothes_Mina = {
 	default = "gfx/models/portraits/main_texture/Mina.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Rumi = {
@@ -1228,7 +1253,8 @@ BA_clothes_Rumi = {
 
 BA_clothes_Reijo = {
 	default = "gfx/models/portraits/main_texture/Reijo.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Shun = {
@@ -1242,12 +1268,14 @@ BA_clothes_Shun = {
 
 BA_clothes_Kokona = {
 	default = "gfx/models/portraits/main_texture/Kokona.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Kai = {
 	default = "gfx/models/portraits/main_texture/Kai.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Saya = {
@@ -1261,7 +1289,8 @@ BA_clothes_Saya = {
 
 BA_clothes_Kaguya = {
 	default = "gfx/models/portraits/main_texture/Kaguya.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Kanna = {
@@ -1275,7 +1304,8 @@ BA_clothes_Kanna = {
 
 BA_clothes_Konoka = {
 	default = "gfx/models/portraits/main_texture/Konoka.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Kirino = {
@@ -1302,6 +1332,7 @@ BA_clothes_Fubuki = {
 	}
 }
 
+### 阿里乌斯
 BA_clothes_Saori = {
 	default = "gfx/models/portraits/main_texture/Saori.dds"
 	leader = {
@@ -1343,15 +1374,17 @@ BA_clothes_Hiyori = {
 
 BA_clothes_Subaru = {
 	default = "gfx/models/portraits/main_texture/Subaru.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Maia = {
 	default = "gfx/models/portraits/main_texture/Maia.dds"
-	leader = { }
+	leader = {
+	}
 }
 
-#### SRT
+### SRT
 BA_clothes_Miyako = {
 	default = "gfx/models/portraits/main_texture/Miyako.dds"
 	leader = {
@@ -1402,107 +1435,129 @@ BA_clothes_Moe = {
 
 BA_clothes_Yukino = {
 	default = "gfx/models/portraits/main_texture/Yukino.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Niko = {
 	default = "gfx/models/portraits/main_texture/Niko.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Kurumi = {
 	default = "gfx/models/portraits/main_texture/Kurumi.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Otogi = {
 	default = "gfx/models/portraits/main_texture/Otogi.dds"
-	leader = { }
+	leader = {
+	}
 }
 
+### 海兰德
 BA_clothes_Hikari = {
 	default = "gfx/models/portraits/main_texture/Hikari.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Nozomi = {
 	default = "gfx/models/portraits/main_texture/Nozomi.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Suou = {
 	default = "gfx/models/portraits/main_texture/Suou.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Aoba = {
 	default = "gfx/models/portraits/main_texture/Aoba.dds"
-	leader = { }
+	leader = {
+	}
 }
 
-BA_clothes_Manami = {
-	default = "gfx/models/portraits/main_texture/Manami.dds"
-	leader = { }
-}
-
+###   狂猎
+# BA_clothes_Manami = {
+# 	default = "gfx/models/portraits/main_texture/Manami.dds"
+# 	leader = { }
+# }
 BA_clothes_Akira = {
 	default = "gfx/models/portraits/main_texture/Akira.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Hiromi = {
 	default = "gfx/models/portraits/main_texture/Hiromi.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Eri = {
 	default = "gfx/models/portraits/main_texture/Eri.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Tsumugi = {
 	default = "gfx/models/portraits/main_texture/Tsumugi.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Kanoe = {
 	default = "gfx/models/portraits/main_texture/Kanoe.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Rena = {
 	default = "gfx/models/portraits/main_texture/Rena.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Miyo = {
 	default = "gfx/models/portraits/main_texture/Miyo.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Fuyu = {
 	default = "gfx/models/portraits/main_texture/Fuyu.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Ritsu = {
 	default = "gfx/models/portraits/main_texture/Ritsu.dds"
-	leader = { }
+	leader = {
+	}
 }
 
+### 其他
 BA_clothes_HatsuneMiku = {
 	default = "gfx/models/portraits/main_texture/HatsuneMiku.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_ProfessorSmug = {
 	default = "gfx/models/portraits/main_texture/ProfessorSmug.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_StudentCouncilPresident = {
 	default = "gfx/models/portraits/main_texture/StudentCouncilPresident.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Rin = {
@@ -1534,65 +1589,72 @@ BA_clothes_Ayumu = {
 
 BA_clothes_Kaya = {
 	default = "gfx/models/portraits/main_texture/Kaya.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Aoi = {
 	default = "gfx/models/portraits/main_texture/Aoi.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Haine = {
 	default = "gfx/models/portraits/main_texture/Haine.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Sumomo = {
 	default = "gfx/models/portraits/main_texture/Sumomo.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Arona = {
 	default = "gfx/models/portraits/main_texture/Arona.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Plana = {
 	default = "gfx/models/portraits/main_texture/Plana.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Sora = {
 	default = "gfx/models/portraits/main_texture/Sora.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Shinon = {
 	default = "gfx/models/portraits/main_texture/Shinon.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Mai = {
 	default = "gfx/models/portraits/main_texture/Mai.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Ayin = {
 	default = "gfx/models/portraits/main_texture/Ayin.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Soph = {
 	default = "gfx/models/portraits/main_texture/Soph.dds"
-	leader = { }
+	leader = {
+	}
 }
 
 BA_clothes_Aur = {
 	default = "gfx/models/portraits/main_texture/Aur.dds"
-	leader = { }
-}
-
-BA_clothes_Kei = {
-	default = "gfx/models/portraits/main_texture/Kei.dds"
-	leader = { }
+	leader = {
+	}
 }

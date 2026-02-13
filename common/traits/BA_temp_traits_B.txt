@@ -1,3 +1,44 @@
+#000 占位符
+leader_special_default = {
+    icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
+    randomized = no
+    # 科研船及其他
+    modifier = {
+        ship_anomaly_research_speed_mult = 0.2
+    }
+    # 内阁
+    councilor_modifier = {
+        council_agenda_progress_speed = 0.2
+    }
+    # 星球总督
+    planet_modifier = {
+        planet_jobs_upkeep_mult = -0.2
+    }
+    # 星域总督
+    sector_modifier = {
+        planet_jobs_upkeep_mult = -0.1
+    }
+    # 军用舰队
+    fleet_modifier = {
+        ship_weapon_range_mult = 0.2
+    }
+    # 陆军
+    army_modifier = {
+        army_health = 0.2
+    }
+    # 领袖自身
+    self_modifier = {
+        leaders_upkeep_mult = -0.1
+    }
+    leader_class = {
+        official
+        scientist
+        commander
+    }
+    selectable_weight = 0
+    sorting_priority = 999
+}
+
 ###   阿拜多斯
 #小鸟游星野 Hoshino 星海卫戍
 leader_special_Hoshino = {

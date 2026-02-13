@@ -1,1219 +1,1052 @@
 portraits = {
-    BA_leader_Hoshino = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Hoshino
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Hoshino
-    }
-
-    BA_leader_Shiroko = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Shiroko
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Shiroko
-    }
-
-    BA_leader_Serika = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Serika
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Serika
-    }
-
-    BA_leader_Nonomi = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Nonomi
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Nonomi
-    }
-
-    BA_leader_Ayane = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Ayane
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Ayane
-    }
-
-    BA_leader_Yume = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Yume
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Yume
-    }
-
-    BA_leader_Makoto = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Makoto
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Makoto
-    }
-
-    BA_leader_Iroha = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Iroha
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Iroha
-    }
-
-    BA_leader_Ibuki = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Ibuki
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Ibuki
-    }
-
-    BA_leader_Satsuki = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Satsuki
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Satsuki
-    }
-
-    BA_leader_Chiaki = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Chiaki
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Chiaki
-    }
-
-    BA_leader_Hina = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Hina
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Hina
-    }
-
-    BA_leader_Ako = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Ako
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Ako
-    }
-
-    BA_leader_Iori = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Iori
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Iori
-    }
-
-    BA_leader_Chinatsu = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Chinatsu
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Chinatsu
-    }
-
-    BA_leader_Aru = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Aru
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Aru
-    }
-
-    BA_leader_Kayoko = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Kayoko
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Kayoko
-    }
-
-    BA_leader_Mutsuki = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Mutsuki
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Mutsuki
-    }
-
-    BA_leader_Haruka = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Haruka
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Haruka
-    }
-
-    BA_leader_Haruna = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Haruna
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Haruna
-    }
-
-    BA_leader_Akari = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Akari
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Akari
-    }
-
-    BA_leader_Izumi = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Izumi
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Izumi
-    }
-
-    BA_leader_Junko = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Junko
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Junko
-    }
-
-    BA_leader_Fuuka = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Fuuka
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Fuuka
-    }
-
-    BA_leader_Juri = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Juri
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Juri
-    }
-
-    BA_leader_Kasumi = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Kasumi
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Kasumi
-    }
-
-    BA_leader_Megu = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Megu
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Megu
-    }
-
-    BA_leader_Kirara = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Kirara
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Kirara
-    }
-
-    BA_leader_Erika = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Erika
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Erika
-    }
-
-    BA_leader_Sena = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Sena
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Sena
-    }
-
-    BA_leader_Rio = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Rio
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Rio
-    }
-
-    BA_leader_Yuuka = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Yuuka
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Yuuka
-    }
-
-    BA_leader_Noa = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Noa
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Noa
-    }
-
-    BA_leader_Koyuki = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Koyuki
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Koyuki
-    }
-
-    BA_leader_Neru = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Neru
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Neru
-    }
-
-    BA_leader_Asuna = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Asuna
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Asuna
-    }
-
-    BA_leader_Karin = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Karin
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Karin
-    }
-
-    BA_leader_Akane = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Akane
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Akane
-    }
-
-    BA_leader_Toki = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Toki
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Toki
-    }
-
-    BA_leader_Yuzu = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Yuzu
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Yuzu
-    }
-
-    BA_leader_Momoi = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Momoi
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Momoi
-    }
-
-    BA_leader_Midori = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Midori
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Midori
-    }
-
-    BA_leader_Aris = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Aris
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Aris
-    }
-
-    BA_leader_Chihiro = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Chihiro
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Chihiro
-    }
-
-    BA_leader_Kotama = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Kotama
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Kotama
-    }
-
-    BA_leader_Hare = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Hare
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Hare
-    }
-
-    BA_leader_Maki = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Maki
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Maki
-    }
-
-    BA_leader_Utaha = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Utaha
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Utaha
-    }
-
-    BA_leader_Hibiki = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Hibiki
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Hibiki
-    }
-
-    BA_leader_Kotori = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Kotori
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Kotori
-    }
-
-    BA_leader_Himari = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Himari
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Himari
-    }
-
-    BA_leader_Eimi = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Eimi
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Eimi
-    }
-
-    BA_leader_Sumire = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Sumire
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Sumire
-    }
-
-    BA_leader_Rei = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Rei
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Rei
-    }
-
-    BA_leader_Mirai = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Mirai
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Mirai
-    }
-
-    BA_leader_Mika = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Mika
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Mika
-    }
-
-    BA_leader_Nagisa = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Nagisa
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Nagisa
-    }
-
-    BA_leader_Seia = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Seia
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Seia
-    }
-
-    BA_leader_Hifumi = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Hifumi
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Hifumi
-    }
-
-    BA_leader_Azusa = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Azusa
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Azusa
-    }
-
-    BA_leader_Hanako = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Hanako
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Hanako
-    }
-
-    BA_leader_Koharu = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Koharu
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Koharu
-    }
-
-    BA_leader_Tsurugi = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Tsurugi
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Tsurugi
-    }
-
-    BA_leader_Hasumi = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Hasumi
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Hasumi
-    }
-
-    BA_leader_Ichika = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Ichika
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Ichika
-    }
-
-    BA_leader_Mashiro = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Mashiro
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Mashiro
-    }
-
-    BA_leader_Sakurako = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Sakurako
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Sakurako
-    }
-
-    BA_leader_Hinata = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Hinata
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Hinata
-    }
-
-    BA_leader_Mari = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Mari
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Mari
-    }
-
-    BA_leader_Airi = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Airi
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Airi
-    }
-
-    BA_leader_Kazusa = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Kazusa
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Kazusa
-    }
-
-    BA_leader_Yoshimi = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Yoshimi
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Yoshimi
-    }
-
-    BA_leader_Natsu = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Natsu
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Natsu
-    }
-
-    BA_leader_Mine = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Mine
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Mine
-    }
-
-    BA_leader_Serina = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Serina
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Serina
-    }
-
-    BA_leader_Hanae = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Hanae
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Hanae
-    }
-
-    BA_leader_Suzumi = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Suzumi
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Suzumi
-    }
-
-    BA_leader_Reisa = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Reisa
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Reisa
-    }
-
-    BA_leader_Ui = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Ui
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Ui
-    }
-
-    BA_leader_Shimiko = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Shimiko
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Shimiko
-    }
-
-    BA_leader_Wakamo = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Wakamo
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Wakamo
-    }
-
-    BA_leader_Niya = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Niya
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Niya
-    }
-
-    BA_leader_Kaho = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Kaho
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Kaho
-    }
-
-    BA_leader_Chise = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Chise
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Chise
-    }
-
-    BA_leader_Ayame = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Ayame
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Ayame
-    }
-
-    BA_leader_Nagusa = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Nagusa
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Nagusa
-    }
-
-    BA_leader_Renge = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Renge
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Renge
-    }
-
-    BA_leader_Kikyou = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Kikyou
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Kikyou
-    }
-
-    BA_leader_Yukari = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Yukari
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Yukari
-    }
-
-    BA_leader_Kuzunoha = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Kuzunoha
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Kuzunoha
-    }
-
-    BA_leader_Tsubaki = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Tsubaki
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Tsubaki
-    }
-
-    BA_leader_Mimori = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Mimori
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Mimori
-    }
-
-    BA_leader_Kaede = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Kaede
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Kaede
-    }
-
-    BA_leader_Michiru = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Michiru
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Michiru
-    }
-
-    BA_leader_Izuna = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Izuna
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Izuna
-    }
-
-    BA_leader_Tsukuyo = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Tsukuyo
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Tsukuyo
-    }
-
-    BA_leader_Shizuko = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Shizuko
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Shizuko
-    }
-
-    BA_leader_Pina = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Pina
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Pina
-    }
-
-    BA_leader_Umika = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Umika
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Umika
-    }
-
-    BA_leader_Kokuriko = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Kokuriko
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Kokuriko
-    }
-
-    BA_leader_Shuro = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Shuro
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Shuro
-    }
-
-    BA_leader_Azami = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Azami
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Azami
-    }
-
-    BA_leader_Arata = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Arata
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Arata
-    }
-
-    BA_leader_Cherino = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Cherino
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Cherino
-    }
-
-    BA_leader_Tomoe = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Tomoe
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Tomoe
-    }
-
-    BA_leader_Marina = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Marina
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Marina
-    }
-
-    BA_leader_Nodoka = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Nodoka
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Nodoka
-    }
-
-    BA_leader_Shigure = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Shigure
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Shigure
-    }
-
-    BA_leader_Momiji = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Momiji
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Momiji
-    }
-
-    BA_leader_Meru = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Meru
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Meru
-    }
-
-    BA_leader_Yakumo = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Yakumo
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Yakumo
-    }
-
-    BA_leader_Takane = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Takane
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Takane
-    }
-
-    BA_leader_Minori = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Minori
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Minori
-    }
-
-    BA_leader_Kisaki = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Kisaki
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Kisaki
-    }
-
-    BA_leader_Mina = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Mina
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Mina
-    }
-
-    BA_leader_Rumi = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Rumi
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Rumi
-    }
-
-    BA_leader_Reijo = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Reijo
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Reijo
-    }
-
-    BA_leader_Shun = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Shun
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Shun
-    }
-
-    BA_leader_Kokona = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Kokona
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Kokona
-    }
-
-    BA_leader_Kai = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Kai
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Kai
-    }
-
-    BA_leader_Saya = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Saya
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Saya
-    }
-
-    BA_leader_Kaguya = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Kaguya
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Kaguya
-    }
-
-    BA_leader_Kanna = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Kanna
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Kanna
-    }
-
-    BA_leader_Konoka = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Konoka
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Konoka
-    }
-
-    BA_leader_Kirino = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Kirino
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Kirino
-    }
-
-    BA_leader_Fubuki = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Fubuki
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Fubuki
-    }
-
-    BA_leader_Saori = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Saori
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Saori
-    }
-
-    BA_leader_Atsuko = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Atsuko
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Atsuko
-    }
-
-    BA_leader_Misaki = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Misaki
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Misaki
-    }
-
-    BA_leader_Hiyori = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Hiyori
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Hiyori
-    }
-
-    BA_leader_Subaru = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Subaru
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Subaru
-    }
-
-    BA_leader_Maia = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Maia
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Maia
-    }
-
-    BA_leader_Miyako = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Miyako
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Miyako
-    }
-
-    BA_leader_Saki = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Saki
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Saki
-    }
-
-    BA_leader_Miyu = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Miyu
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Miyu
-    }
-
-    BA_leader_Moe = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Moe
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Moe
-    }
-
-    BA_leader_Yukino = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Yukino
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Yukino
-    }
-
-    BA_leader_Niko = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Niko
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Niko
-    }
-
-    BA_leader_Kurumi = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Kurumi
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Kurumi
-    }
-
-    BA_leader_Otogi = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Otogi
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Otogi
-    }
-
-    BA_leader_Hikari = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Hikari
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Hikari
-    }
-
-    BA_leader_Nozomi = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Nozomi
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Nozomi
-    }
-
-    BA_leader_Suou = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Suou
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Suou
-    }
-
-    BA_leader_Aoba = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Aoba
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Aoba
-    }
-
-    BA_leader_Manami = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Manami
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Manami
-    }
-
-    BA_leader_Akira = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Akira
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Akira
-    }
-
-    BA_leader_Hiromi = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Hiromi
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Hiromi
-    }
-
-    BA_leader_Eri = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Eri
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Eri
-    }
-
-    BA_leader_Tsumugi = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Tsumugi
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Tsumugi
-    }
-
-    BA_leader_Kanoe = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Kanoe
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Kanoe
-    }
-
-    BA_leader_Rena = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Rena
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Rena
-    }
-
-    BA_leader_Miyo = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Miyo
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Miyo
-    }
-
-    BA_leader_Fuyu = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Fuyu
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Fuyu
-    }
-
-    BA_leader_Ritsu = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Ritsu
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Ritsu
-    }
-
-    BA_leader_HatsuneMiku = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_HatsuneMiku
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Hatsune_Miku
-    }
-
-    BA_leader_ProfessorSmug = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_ProfessorSmug
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Professor_Smug
-    }
-
-    BA_leader_StudentCouncilPresident = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_StudentCouncilPresident
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Student_Council_President
-    }
-
-    BA_leader_Rin = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Rin
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Rin
-    }
-
-    BA_leader_Momoka = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Momoka
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Momoka
-    }
-
-    BA_leader_Ayumu = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Ayumu
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Ayumu
-    }
-
-    BA_leader_Kaya = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Kaya
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Kaya
-    }
-
-    BA_leader_Aoi = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Aoi
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Aoi
-    }
-
-    BA_leader_Haine = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Haine
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Haine
-    }
-
-    BA_leader_Sumomo = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Sumomo
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Sumomo
-    }
-
-    BA_leader_Arona = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Arona
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Arona
-    }
-
-    BA_leader_Plana = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Plana
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Plana
-    }
-
-    BA_leader_Sora = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Sora
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Sora
-    }
-
-    BA_leader_Labu = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Labu
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Labu
-    }
-
-    BA_leader_Shinon = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Shinon
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Shinon
-    }
-
-    BA_leader_Mai = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Mai
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Mai
-    }
-
-    BA_leader_Ayin = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Ayin
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Ayin
-    }
-
-    BA_leader_Soph = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Soph
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Soph
-    }
-
-    BA_leader_Aur = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Aur
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Aur
-    }
-
-    BA_leader_Kei = {
-        entity = portrait_Schale_entity
-        clothes_selector = BA_clothes_Kei
-        attachment_selector = no_texture
-        # greeting_sound=sound_greeting_BA_Kei
-    }
+	BA_leader_Hoshino = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Hoshino
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Hoshino
+	}
+	BA_leader_Shiroko = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Shiroko
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Shiroko
+	}
+	BA_leader_Serika = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Serika
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Serika
+	}
+	BA_leader_Nonomi = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Nonomi
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Nonomi
+	}
+	BA_leader_Ayane = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Ayane
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Ayane
+	}
+	BA_leader_Yume = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Yume
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Yume
+	}
+	BA_leader_Makoto = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Makoto
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Makoto
+	}
+	BA_leader_Iroha = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Iroha
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Iroha
+	}
+	BA_leader_Ibuki = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Ibuki
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Ibuki
+	}
+	BA_leader_Satsuki = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Satsuki
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Satsuki
+	}
+	BA_leader_Chiaki = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Chiaki
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Chiaki
+	}
+	BA_leader_Hina = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Hina
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Hina
+	}
+	BA_leader_Ako = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Ako
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Ako
+	}
+	BA_leader_Iori = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Iori
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Iori
+	}
+	BA_leader_Chinatsu = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Chinatsu
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Chinatsu
+	}
+	BA_leader_Aru = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Aru
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Aru
+	}
+	BA_leader_Kayoko = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Kayoko
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Kayoko
+	}
+	BA_leader_Mutsuki = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Mutsuki
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Mutsuki
+	}
+	BA_leader_Haruka = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Haruka
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Haruka
+	}
+	BA_leader_Haruna = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Haruna
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Haruna
+	}
+	BA_leader_Akari = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Akari
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Akari
+	}
+	BA_leader_Izumi = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Izumi
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Izumi
+	}
+	BA_leader_Junko = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Junko
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Junko
+	}
+	BA_leader_Fuuka = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Fuuka
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Fuuka
+	}
+	BA_leader_Juri = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Juri
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Juri
+	}
+	BA_leader_Kasumi = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Kasumi
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Kasumi
+	}
+	BA_leader_Megu = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Megu
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Megu
+	}
+	BA_leader_Kirara = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Kirara
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Kirara
+	}
+	BA_leader_Erika = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Erika
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Erika
+	}
+	BA_leader_Sena = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Sena
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Sena
+	}
+	BA_leader_Rio = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Rio
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Rio
+	}
+	BA_leader_Yuuka = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Yuuka
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Yuuka
+	}
+	BA_leader_Noa = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Noa
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Noa
+	}
+	BA_leader_Koyuki = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Koyuki
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Koyuki
+	}
+	BA_leader_Neru = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Neru
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Neru
+	}
+	BA_leader_Asuna = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Asuna
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Asuna
+	}
+	BA_leader_Karin = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Karin
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Karin
+	}
+	BA_leader_Akane = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Akane
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Akane
+	}
+	BA_leader_Toki = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Toki
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Toki
+	}
+	BA_leader_Yuzu = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Yuzu
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Yuzu
+	}
+	BA_leader_Momoi = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Momoi
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Momoi
+	}
+	BA_leader_Midori = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Midori
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Midori
+	}
+	BA_leader_Aris = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Aris
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Aris
+	}
+	BA_leader_Chihiro = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Chihiro
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Chihiro
+	}
+	BA_leader_Kotama = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Kotama
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Kotama
+	}
+	BA_leader_Hare = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Hare
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Hare
+	}
+	BA_leader_Maki = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Maki
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Maki
+	}
+	BA_leader_Utaha = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Utaha
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Utaha
+	}
+	BA_leader_Hibiki = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Hibiki
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Hibiki
+	}
+	BA_leader_Kotori = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Kotori
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Kotori
+	}
+	BA_leader_Himari = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Himari
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Himari
+	}
+	BA_leader_Eimi = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Eimi
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Eimi
+	}
+	BA_leader_Kei = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Kei
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Kei
+	}
+	BA_leader_Sumire = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Sumire
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Sumire
+	}
+	BA_leader_Rei = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Rei
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Rei
+	}
+	BA_leader_Mirai = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Mirai
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Mirai
+	}
+    ### 圣三一
+	BA_leader_Mika = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Mika
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Mika
+	}
+	BA_leader_Nagisa = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Nagisa
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Nagisa
+	}
+	BA_leader_Seia = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Seia
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Seia
+	}
+	BA_leader_Hifumi = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Hifumi
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Hifumi
+	}
+	BA_leader_Azusa = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Azusa
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Azusa
+	}
+	BA_leader_Hanako = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Hanako
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Hanako
+	}
+	BA_leader_Koharu = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Koharu
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Koharu
+	}
+	BA_leader_Tsurugi = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Tsurugi
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Tsurugi
+	}
+	BA_leader_Hasumi = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Hasumi
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Hasumi
+	}
+	BA_leader_Ichika = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Ichika
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Ichika
+	}
+	BA_leader_Mashiro = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Mashiro
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Mashiro
+	}
+	BA_leader_Sakurako = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Sakurako
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Sakurako
+	}
+	BA_leader_Hinata = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Hinata
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Hinata
+	}
+	BA_leader_Mari = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Mari
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Mari
+	}
+	BA_leader_Airi = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Airi
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Airi
+	}
+	BA_leader_Kazusa = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Kazusa
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Kazusa
+	}
+	BA_leader_Yoshimi = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Yoshimi
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Yoshimi
+	}
+	BA_leader_Natsu = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Natsu
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Natsu
+	}
+	BA_leader_Mine = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Mine
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Mine
+	}
+	BA_leader_Serina = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Serina
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Serina
+	}
+	BA_leader_Hanae = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Hanae
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Hanae
+	}
+	BA_leader_Suzumi = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Suzumi
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Suzumi
+	}
+	BA_leader_Reisa = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Reisa
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Reisa
+	}
+	BA_leader_Ui = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Ui
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Ui
+	}
+	BA_leader_Shimiko = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Shimiko
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Shimiko
+	}
+    ### 百鬼夜行
+	BA_leader_Wakamo = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Wakamo
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Wakamo
+	}
+	BA_leader_Niya = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Niya
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Niya
+	}
+	BA_leader_Kaho = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Kaho
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Kaho
+	}
+	BA_leader_Chise = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Chise
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Chise
+	}
+	BA_leader_Ayame = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Ayame
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Ayame
+	}
+	BA_leader_Nagusa = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Nagusa
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Nagusa
+	}
+	BA_leader_Renge = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Renge
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Renge
+	}
+	BA_leader_Kikyou = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Kikyou
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Kikyou
+	}
+	BA_leader_Yukari = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Yukari
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Yukari
+	}
+	BA_leader_Kuzunoha = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Kuzunoha
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Kuzunoha
+	}
+	BA_leader_Tsubaki = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Tsubaki
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Tsubaki
+	}
+	BA_leader_Mimori = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Mimori
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Mimori
+	}
+	BA_leader_Kaede = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Kaede
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Kaede
+	}
+	BA_leader_Michiru = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Michiru
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Michiru
+	}
+	BA_leader_Izuna = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Izuna
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Izuna
+	}
+	BA_leader_Tsukuyo = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Tsukuyo
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Tsukuyo
+	}
+	BA_leader_Shizuko = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Shizuko
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Shizuko
+	}
+	BA_leader_Pina = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Pina
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Pina
+	}
+	BA_leader_Umika = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Umika
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Umika
+	}
+	BA_leader_Kokuriko = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Kokuriko
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Kokuriko
+	}
+	BA_leader_Shuro = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Shuro
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Shuro
+	}
+	BA_leader_Azami = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Azami
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Azami
+	}
+	BA_leader_Arata = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Arata
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Arata
+	}
+    ### 红冬
+	BA_leader_Cherino = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Cherino
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Cherino
+	}
+	BA_leader_Tomoe = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Tomoe
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Tomoe
+	}
+	BA_leader_Marina = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Marina
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Marina
+	}
+	BA_leader_Nodoka = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Nodoka
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Nodoka
+	}
+	BA_leader_Shigure = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Shigure
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Shigure
+	}
+	BA_leader_Momiji = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Momiji
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Momiji
+	}
+	BA_leader_Meru = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Meru
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Meru
+	}
+	BA_leader_Yakumo = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Yakumo
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Yakumo
+	}
+	BA_leader_Takane = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Takane
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Takane
+	}
+	BA_leader_Minori = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Minori
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Minori
+	}
+    ### 山海经
+	BA_leader_Kisaki = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Kisaki
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Kisaki
+	}
+	BA_leader_Mina = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Mina
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Mina
+	}
+	BA_leader_Rumi = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Rumi
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Rumi
+	}
+	BA_leader_Reijo = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Reijo
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Reijo
+	}
+	BA_leader_Shun = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Shun
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Shun
+	}
+	BA_leader_Kokona = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Kokona
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Kokona
+	}
+	BA_leader_Kai = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Kai
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Kai
+	}
+	BA_leader_Saya = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Saya
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Saya
+	}
+	BA_leader_Kaguya = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Kaguya
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Kaguya
+	}
+    ### 瓦尔基里
+	BA_leader_Kanna = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Kanna
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Kanna
+	}
+	BA_leader_Konoka = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Konoka
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Konoka
+	}
+	BA_leader_Kirino = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Kirino
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Kirino
+	}
+	BA_leader_Fubuki = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Fubuki
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Fubuki
+	}
+	BA_leader_Saori = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Saori
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Saori
+	}
+	BA_leader_Atsuko = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Atsuko
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Atsuko
+	}
+	BA_leader_Misaki = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Misaki
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Misaki
+	}
+	BA_leader_Hiyori = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Hiyori
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Hiyori
+	}
+	BA_leader_Subaru = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Subaru
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Subaru
+	}
+	BA_leader_Maia = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Maia
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Maia
+	}
+	BA_leader_Miyako = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Miyako
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Miyako
+	}
+	BA_leader_Saki = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Saki
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Saki
+	}
+	BA_leader_Miyu = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Miyu
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Miyu
+	}
+	BA_leader_Moe = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Moe
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Moe
+	}
+	BA_leader_Yukino = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Yukino
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Yukino
+	}
+	BA_leader_Niko = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Niko
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Niko
+	}
+	BA_leader_Kurumi = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Kurumi
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Kurumi
+	}
+	BA_leader_Otogi = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Otogi
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Otogi
+	}
+	BA_leader_Hikari = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Hikari
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Hikari
+	}
+	BA_leader_Nozomi = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Nozomi
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Nozomi
+	}
+	BA_leader_Suou = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Suou
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Suou
+	}
+	BA_leader_Aoba = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Aoba
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Aoba
+	}
+	### 狂猎
+	# BA_leader_Manami = {
+	#     entity = portrait_Schale_entity
+	#     clothes_selector = BA_clothes_Manami
+	#     attachment_selector = no_texture
+	#     # greeting_sound=sound_greeting_BA_Manami
+	# }
+	BA_leader_Akira = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Akira
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Akira
+	}
+	BA_leader_Hiromi = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Hiromi
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Hiromi
+	}
+	BA_leader_Eri = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Eri
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Eri
+	}
+	BA_leader_Tsumugi = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Tsumugi
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Tsumugi
+	}
+	BA_leader_Kanoe = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Kanoe
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Kanoe
+	}
+	BA_leader_Rena = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Rena
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Rena
+	}
+	BA_leader_Miyo = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Miyo
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Miyo
+	}
+	BA_leader_Fuyu = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Fuyu
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Fuyu
+	}
+	BA_leader_Ritsu = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Ritsu
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Ritsu
+	}
+	BA_leader_HatsuneMiku = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_HatsuneMiku
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Hatsune_Miku
+	}
+	BA_leader_ProfessorSmug = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_ProfessorSmug
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Professor_Smug
+	}
+	BA_leader_StudentCouncilPresident = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_StudentCouncilPresident
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Student_Council_President
+	}
+	BA_leader_Rin = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Rin
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Rin
+	}
+	BA_leader_Momoka = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Momoka
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Momoka
+	}
+	BA_leader_Ayumu = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Ayumu
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Ayumu
+	}
+	BA_leader_Kaya = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Kaya
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Kaya
+	}
+	BA_leader_Aoi = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Aoi
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Aoi
+	}
+	BA_leader_Haine = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Haine
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Haine
+	}
+	BA_leader_Sumomo = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Sumomo
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Sumomo
+	}
+	BA_leader_Arona = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Arona
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Arona
+	}
+	BA_leader_Plana = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Plana
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Plana
+	}
+	BA_leader_Sora = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Sora
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Sora
+	}
+	BA_leader_Labu = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Labu
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Labu
+	}
+	BA_leader_Shinon = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Shinon
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Shinon
+	}
+	BA_leader_Mai = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Mai
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Mai
+	}
+	BA_leader_Ayin = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Ayin
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Ayin
+	}
+	BA_leader_Soph = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Soph
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Soph
+	}
+	BA_leader_Aur = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Aur
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Aur
+	}
 }
