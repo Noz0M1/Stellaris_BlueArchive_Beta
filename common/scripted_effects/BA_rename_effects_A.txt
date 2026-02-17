@@ -1823,20 +1823,18 @@ BA_check_rename_flag = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_Hatsune
-					Miku
+					flag = leader_BA_HatsuneMiku
 				}
 			}
 			modifier = {
 				factor = 0
 				NOR = {
 					leader_class = official
-					scientist
-					commander
+					leader_class = scientist
+					leader_class = commander
 				}
 			}
-			set_leader_flag = leader_BA_Hatsune
-			Miku
+			set_leader_flag = leader_BA_HatsuneMiku
 		}
 		10 = {
 			modifier = {

@@ -3532,9 +3532,6 @@ leader_special_HatsuneMiku = {
     modifier = {
         ship_anomaly_research_speed_mult = 0.2
     }
-    councilor_modifier = {
-        council_agenda_progress_speed = 0.2
-    }
     planet_modifier = {
         planet_jobs_upkeep_mult = -0.2
     }
@@ -3550,11 +3547,7 @@ leader_special_HatsuneMiku = {
     self_modifier = {
         leaders_upkeep_mult = -0.1
     }
-    leader_class = {
-        official
-        scientist
-        commander
-    }
+    leader_class = all
     selectable_weight = 0
     sorting_priority = 999
 }
