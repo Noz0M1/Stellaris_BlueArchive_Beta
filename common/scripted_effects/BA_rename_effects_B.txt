@@ -1968,10 +1968,10 @@ BA_add_club_trait = {
 	else_if = {
 		limit = {
 			OR = {
-				has_leader_flag = Kanna
-				has_leader_flag = Konoka
-				has_leader_flag = Kirino
-				has_leader_flag = Fubuki
+				has_leader_flag = leader_BA_Kanna
+				has_leader_flag = leader_BA_Konoka
+				has_leader_flag = leader_BA_Kirino
+				has_leader_flag = leader_BA_Fubuki
 			}
 		}
 		add_trait = {

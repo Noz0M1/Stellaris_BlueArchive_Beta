@@ -176,19 +176,20 @@ country_event = {
 	}
 }
 
-# leader_event = {
-# 	id = BA_rename.1102
-# 	hide_window = yes
-# 	is_triggered_only = yes
-# 	trigger = {
-# 		has_skill >= 3
-# 		species = {
-# 			BA_has_halo_organic = yes
-# 		}
-# 		NOT = {
-# 			has_leader_flag = BA_SP_trait_Lv1
-# 		}
-# 	}
-# 	immediate = {
-# 	}
-# }
+leader_event = {
+	id = BA_rename.1102
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_skill >= 3
+		species = {
+			BA_has_halo_organic = yes
+		}
+		NOT = {
+			has_leader_flag = BA_SP_trait_Lv1
+		}
+	}
+	immediate = {
+		change_leader_class = scientist
+	}
+}

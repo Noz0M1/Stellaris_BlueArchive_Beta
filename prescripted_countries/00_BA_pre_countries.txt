@@ -1,207 +1,207 @@
 BA_ETO = {
-	ship_prefix = "ETOSS"
+	ship_prefix = ETOSS
 	species = {
-		class = "Schale"
-		portrait = "Schale"
-		name = "species_name_BA"
-		plural = "species_plural_BA"
-		adjective = "species_adjective_BA"
-		name_list = "Schale"
+		class = Schale
+		portrait = Schale
+		name = species_name_BA
+		plural = species_plural_BA
+		adjective = species_adjective_BA
+		name_list = Schale
 		gender = female
-		trait="trait_halo_unreleased"
-		trait="trait_BA_Koharu"
-		trait="trait_BA_starlink"
-		trait="trait_BA_grate_duty"
-		trait="trait_BA_pioneer"
-		trait="trait_BA_truancy"
-		trait="trait_BA_gammer"
+		trait = trait_halo_unreleased
+		trait = trait_BA_Koharu
+		trait = trait_BA_starlink
+		trait = trait_BA_grate_duty
+		trait = trait_BA_pioneer
+		trait = trait_BA_truancy
+		trait = trait_BA_gammer
 	}
-	ethic = "ethic_egalitarian"
-	ethic = "ethic_xenophile"
-	ethic = "ethic_militarist"
-	name = "EMPIRE_DESIGN_BA_ETO"
-	adjective = "PRESCRIPTED_adjective_BA_ETO"
-	authority = "auth_kivotos"
-	government = "gov_Kivotos_country"
-	planet_name = "sys.Kivotos.home.name"
-	planet_class = "pc_continental"
-	initializer = "BA_Kivotos_sys"
-	system_name = "sys.Kivotos.stellar.name"
-	graphical_culture = "ba_01"
-	city_graphical_culture = "ba_01"
-	advisor_voice_type = "l_english"
+	ethic = ethic_egalitarian
+	ethic = ethic_xenophile
+	ethic = ethic_militarist
+	name = EMPIRE_DESIGN_BA_ETO
+	adjective = PRESCRIPTED_adjective_BA_ETO
+	authority = auth_kivotos
+	government = gov_Kivotos_country
+	planet_name = sys.Kivotos.home.name
+	planet_class = pc_continental
+	initializer = BA_Kivotos_sys
+	system_name = sys.Kivotos.stellar.name
+	graphical_culture = ba_01
+	city_graphical_culture = ba_01
+	advisor_voice_type = l_english
 	flag = empire_BA_1
 	empire_flag = {
 		icon = {
-			category = "ba"
-			file = "ba_flags_08.dds"
+			category = ba
+			file = ba_flags_08.dds
 		}
 		background = {
-			category = "backgrounds"
-			file = "double_triangles.dds"
+			category = backgrounds
+			file = double_triangles.dds
 		}
 		colors = {
-			"intense_blue"
-			"satin_burgundy"
-			"null"
-			"null"
+			intense_blue
+			satin_burgundy
+			null
+			null
 		}
 	}
 	ruler = {
 		gender = female
-		name = "NAME_Mika"
-		portrait = BA_leader_120
+		name = NAME_Mika
+		portrait = BA_leader_Mika
 		ruler_title = scripted_student_federal_president
 		ruler_title_female = scripted_student_federal_president
-		trait = "leader_special_120"
+		trait = leader_special_Mika
 		leader_class = commander
 		texture = 0
 	}
 	spawn_as_fallen = no
 	ignore_portrait_duplication = no
-	room = "BA_01_room"
+	room = BA_01_room
 	civics = {
-		"civic_SI_Trinity"
-		"civic_BA_guild_region"
+		civic_SI_Trinity
+		civic_BA_guild_region
 	}
-	name_list = "Schale"
-	origin = "origin_Kivotos_Eden_treaty"
+	name_list = Schale
+	origin = origin_Kivotos_Eden_treaty
 }
 
 BA_NPA = {
-	ship_prefix = "NPASS"
+	ship_prefix = NPASS
 	species = {
-		class = "Schale"
-		portrait = "Schale"
-		name = "species_name_BA"
-		plural = "species_plural_BA"
-		adjective = "species_adjective_BA"
-		name_list = "Schale"
+		class = Schale
+		portrait = Schale
+		name = species_name_BA
+		plural = species_plural_BA
+		adjective = species_adjective_BA
+		name_list = Schale
 		gender = female
-		trait="trait_halo_unreleased"
-		trait="trait_BA_grate_duty"
-		trait="trait_BA_pioneer"
-		trait="trait_BA_BDcase"
-		trait="trait_BA_rebellion"
-		trait="trait_BA_truancy"
+		trait = trait_halo_unreleased
+		trait = trait_BA_grate_duty
+		trait = trait_BA_pioneer
+		trait = trait_BA_BDcase
+		trait = trait_BA_rebellion
+		trait = trait_BA_truancy
 	}
-	ethic = "ethic_egalitarian"
-	ethic = "ethic_fanatic_militarist"
-	name = "EMPIRE_DESIGN_BA_NPA"
-	adjective = "PRESCRIPTED_adjective_BA_NPA"
-	authority = "auth_kivotos"
-	government = "gov_Kivotos_country"
-	planet_name = "sys.Kivotos.home.name"
-	planet_class = "pc_continental"
-	initializer = "BA_Kivotos_sys"
-	system_name = "sys.Kivotos.stellar.name"
-	graphical_culture = "ba_01"
-	city_graphical_culture = "ba_01"
-	advisor_voice_type = "l_english"
+	ethic = ethic_egalitarian
+	ethic = ethic_fanatic_militarist
+	name = EMPIRE_DESIGN_BA_NPA
+	adjective = PRESCRIPTED_adjective_BA_NPA
+	authority = auth_kivotos
+	government = gov_Kivotos_country
+	planet_name = sys.Kivotos.home.name
+	planet_class = pc_continental
+	initializer = BA_Kivotos_sys
+	system_name = sys.Kivotos.stellar.name
+	graphical_culture = ba_01
+	city_graphical_culture = ba_01
+	advisor_voice_type = l_english
 	flag = empire_BA_2
 	empire_flag = {
 		icon = {
-			category = "ba"
-			file = "ba_flags_13.dds"
+			category = ba
+			file = ba_flags_13.dds
 		}
 		background = {
-			category = "backgrounds"
-			file = "double_triangles.dds"
+			category = backgrounds
+			file = double_triangles.dds
 		}
 		colors = {
-			"intense_blue"
-			"satin_burgundy"
-			"null"
-			"null"
+			intense_blue
+			satin_burgundy
+			null
+			null
 		}
 	}
 	ruler = {
 		gender = female
-		name = "NAME_Atsuko"
-		portrait = BA_leader_012
+		name = NAME_Atsuko
+		portrait = BA_leader_Atsuko
 		ruler_title = scripted_student_federal_president
 		ruler_title_female = scripted_student_federal_president
 		leader_class = commander
-		trait = leader_special_012
+		trait = leader_special_Atsuko
 		texture = 0
 	}
 	spawn_as_fallen = no
 	ignore_portrait_duplication = no
-	room = "BA_27_room"
+	room = BA_27_room
 	civics = {
-		"civic_BA_Omnia_Vanitas"
-		"civic_BA_digital_basis"
+		civic_BA_Omnia_Vanitas
+		civic_BA_digital_basis
 	}
-	name_list = "Schale"
-	origin = "origin_Kivotos_Kyrie"
+	name_list = Schale
+	origin = origin_Kivotos_Kyrie
 }
 
 BA_DUU = {
-	ship_prefix = "DUUSS"
+	ship_prefix = DUUSS
 	species = {
-		class = "Schale"
-		portrait = "Schale"
-		name = "species_name_BA"
-		plural = "species_plural_BA"
-		adjective = "species_adjective_BA"
-		name_list = "Schale"
+		class = Schale
+		portrait = Schale
+		name = species_name_BA
+		plural = species_plural_BA
+		adjective = species_adjective_BA
+		name_list = Schale
 		gender = female
-		trait="trait_halo_unreleased"
-		trait="trait_BA_good_students"
-		trait="trait_BA_pioneer"
-		trait="trait_BA_BDcase"
-		trait="trait_BA_tactical_training"
-		trait="trait_BA_no_pack"
-		trait="trait_BA_rebellion"
+		trait = trait_halo_unreleased
+		trait = trait_BA_good_students
+		trait = trait_BA_pioneer
+		trait = trait_BA_BDcase
+		trait = trait_BA_tactical_training
+		trait = trait_BA_no_pack
+		trait = trait_BA_rebellion
 	}
-	ethic = "ethic_egalitarian"
-	ethic = "ethic_xenophobe"
-	ethic = "ethic_militarist"
-	name = "EMPIRE_DESIGN_BA_DUU"
-	adjective = "PRESCRIPTED_adjective_BA_DUU"
-	authority = "auth_kivotos"
-	government = "gov_Kivotos_country"
-	planet_name = "sys.Kivotos.habitat.1.name"
-	planet_class = "pc_continental"
-	initializer = "BA_Kivotos_habitat_sys"
-	system_name = "sys.Kivotos.stellar.name"
-	graphical_culture = "ba_01"
-	city_graphical_culture = "ba_01"
-	advisor_voice_type = "l_english"
+	ethic = ethic_egalitarian
+	ethic = ethic_xenophobe
+	ethic = ethic_militarist
+	name = EMPIRE_DESIGN_BA_DUU
+	adjective = PRESCRIPTED_adjective_BA_DUU
+	authority = auth_kivotos
+	government = gov_Kivotos_country
+	planet_name = sys.Kivotos.habitat.1.name
+	planet_class = pc_continental
+	initializer = BA_Kivotos_habitat_sys
+	system_name = sys.Kivotos.stellar.name
+	graphical_culture = ba_01
+	city_graphical_culture = ba_01
+	advisor_voice_type = l_english
 	flag = empire_BA_3
 	empire_flag = {
 		icon = {
-			category = "ba"
-			file = "ba_flags_02.dds"
+			category = ba
+			file = ba_flags_02.dds
 		}
 		background = {
-			category = "backgrounds"
-			file = "double_triangles.dds"
+			category = backgrounds
+			file = double_triangles.dds
 		}
 		colors = {
-			"intense_blue"
-			"satin_burgundy"
-			"null"
-			"null"
+			intense_blue
+			satin_burgundy
+			null
+			null
 		}
 	}
 	ruler = {
 		gender = female
-		name = "NAME_Yuuka"
-		portrait = BA_leader_092
+		name = NAME_Yuuka
+		portrait = BA_leader_Yuuka
 		ruler_title = scripted_student_federal_president
 		ruler_title_female = scripted_student_federal_president
 		leader_class = scientist
-		trait = leader_special_092
+		trait = leader_special_Yuuka
 		texture = 0
 	}
 	spawn_as_fallen = no
 	ignore_portrait_duplication = no
-	room = "BA_06_room"
+	room = BA_06_room
 	civics = {
-		"civic_SI_Millennium"
-		"civic_BA_federal_actuaries"
+		civic_SI_Millennium
+		civic_BA_federal_actuaries
 	}
-	name_list = "Schale"
-	origin = "origin_Kivotos_Unnamed_starting"
+	name_list = Schale
+	origin = origin_Kivotos_Unnamed_starting
 }

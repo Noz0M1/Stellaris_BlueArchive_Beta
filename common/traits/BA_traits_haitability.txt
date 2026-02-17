@@ -1,13 +1,13 @@
-@BA_primary = 0.70
-@BA_secondary = 0.40
-@BA_tertiary = 0.10
+@BA_primary = 0.7
+@BA_secondary = 0.4
+@BA_tertiary = 0.1
 #####    宜居性    #####
 #####    常规星球    #####
 trait_schale_dry_planet_preference = {
 	icon = "gfx/interface/icons/traits/trait_dry_planet_preference.dds"
 	short_name = "trait_pc_desert_preference_short"
 	initial = no
-    randomized = no
+	randomized = no
 	allowed_archetypes = {
 		Schale
 	}
@@ -16,9 +16,9 @@ trait_schale_dry_planet_preference = {
 		pc_arid
 		pc_savannah
 	}
-    archetype_override = {
-        is_archetype = Schale
-    }
+	archetype_override = {
+		is_archetype = Schale
+	}
 	sorting_priority = 30
 	species_potential_add = {
 		can_change_habitability_preference = yes
@@ -51,7 +51,7 @@ trait_schale_wet_planet_preference = {
 	icon = "gfx/interface/icons/traits/trait_wet_planet_preference.dds"
 	short_name = "trait_pc_continental_preference_short"
 	initial = no
-    randomized = no
+	randomized = no
 	allowed_archetypes = {
 		Schale
 	}
@@ -92,7 +92,7 @@ trait_schale_cold_planet_preference = {
 	icon = "gfx/interface/icons/traits/trait_cold_planet_preference.dds"
 	short_name = "trait_pc_arctic_preference_short"
 	initial = no
-    randomized = no
+	randomized = no
 	allowed_archetypes = {
 		Schale
 	}

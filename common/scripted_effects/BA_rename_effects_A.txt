@@ -28,7 +28,7 @@ BA_check_rename_flag = {
 			modifier = {
 				factor = 0
 				NOR = {
-					leader_class = official
+					leader_class = scientist
 				}
 			}
 			set_leader_flag = leader_BA_Shiroko
@@ -58,7 +58,7 @@ BA_check_rename_flag = {
 			modifier = {
 				factor = 0
 				NOR = {
-					leader_class = official
+					leader_class = commander
 				}
 			}
 			set_leader_flag = leader_BA_Nonomi
@@ -78,7 +78,6 @@ BA_check_rename_flag = {
 			}
 			set_leader_flag = leader_BA_Ayane
 		}
-		#yume
 		10 = {
 			modifier = {
 				factor = 0
@@ -809,7 +808,7 @@ BA_check_rename_flag = {
 			modifier = {
 				factor = 0
 				NOR = {
-					leader_class = official
+					leader_class = commander
 				}
 			}
 			set_leader_flag = leader_BA_Hanako
@@ -1217,6 +1216,7 @@ BA_check_rename_flag = {
 					leader_class = official
 				}
 			}
+
 			set_leader_flag = leader_BA_Kuzunoha
 		}
 		10 = {
@@ -1259,7 +1259,7 @@ BA_check_rename_flag = {
 			modifier = {
 				factor = 0
 				NOR = {
-					leader_class = commander
+					leader_class = official
 				}
 			}
 			set_leader_flag = leader_BA_Kaede
@@ -1668,6 +1668,66 @@ BA_check_rename_flag = {
 				}
 			}
 			set_leader_flag = leader_BA_Fubuki
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Misaki
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Misaki
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Hiyori
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Hiyori
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Saori
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Saori
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Atsuko
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Atsuko
 		}
 		10 = {
 			modifier = {
