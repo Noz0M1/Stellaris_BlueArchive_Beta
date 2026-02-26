@@ -1,4 +1,4 @@
-#### 领袖重命名初始化
+####领袖重命名初始化
 #检查命名标志，没有的随机加一个 scope: leader
 BA_check_rename_flag = {
 	optimize_memory
@@ -83,6 +83,17 @@ BA_check_rename_flag = {
 			}
 			set_leader_flag = leader_BA_Ayane
 		}
+		#栀子梦
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Yume
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Yume
+		}
 		#羽沼真琴
 		10 = {
 			modifier = {
@@ -130,6 +141,28 @@ BA_check_rename_flag = {
 				}
 			}
 			set_leader_flag = leader_BA_Ibuki
+		}
+		#京极皋月
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Satsuki
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Satsuki
+		}
+		#元宫千秋
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Chiaki
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Chiaki
 		}
 		#空崎日奈
 		10 = {
@@ -211,7 +244,7 @@ BA_check_rename_flag = {
 			}
 			set_leader_flag = leader_BA_Aru
 		}
-		#鬼方佳世子
+		#鬼方佳代子
 		10 = {
 			modifier = {
 				factor = 0
@@ -323,7 +356,7 @@ BA_check_rename_flag = {
 			}
 			set_leader_flag = leader_BA_Junko
 		}
-		#爱清风香
+		#爱清枫香
 		10 = {
 			modifier = {
 				factor = 0
@@ -355,6 +388,22 @@ BA_check_rename_flag = {
 			}
 			set_leader_flag = leader_BA_Juri
 		}
+		#鬼怒川霞
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kasumi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Kasumi
+		}
 		#下仓惠
 		10 = {
 			modifier = {
@@ -371,7 +420,29 @@ BA_check_rename_flag = {
 			}
 			set_leader_flag = leader_BA_Megu
 		}
-		#冰室濑奈
+		#夜樱绮罗罗
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kirara
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Kirara
+		}
+		#旗见绘里香
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Erika
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Erika
+		}
+		#冰室濑名
 		10 = {
 			modifier = {
 				factor = 0
@@ -419,7 +490,7 @@ BA_check_rename_flag = {
 			}
 			set_leader_flag = leader_BA_Yuuka
 		}
-		#生盐乃爱
+		#生盐诺亚
 		10 = {
 			modifier = {
 				factor = 0
@@ -739,6 +810,22 @@ BA_check_rename_flag = {
 			}
 			set_leader_flag = leader_BA_Eimi
 		}
+		#柯伊
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kei
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Kei
+		}
 		#乙花堇
 		10 = {
 			modifier = {
@@ -770,6 +857,17 @@ BA_check_rename_flag = {
 				}
 			}
 			set_leader_flag = leader_BA_Rei
+		}
+		#吾妻未来
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Mirai
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Mirai
 		}
 		#圣园未花
 		10 = {
@@ -1075,7 +1173,7 @@ BA_check_rename_flag = {
 			}
 			set_leader_flag = leader_BA_Mine
 		}
-		#鹫见芹奈
+		#鹫见芹娜
 		10 = {
 			modifier = {
 				factor = 0
@@ -1187,6 +1285,17 @@ BA_check_rename_flag = {
 			}
 			set_leader_flag = leader_BA_Wakamo
 		}
+		#天地妮娅
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Niya
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Niya
+		}
 		#桑上果穗
 		10 = {
 			modifier = {
@@ -1218,6 +1327,17 @@ BA_check_rename_flag = {
 				}
 			}
 			set_leader_flag = leader_BA_Chise
+		}
+		#七棱菖蒲
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Ayame
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Ayame
 		}
 		#御棱名草
 		10 = {
@@ -1392,7 +1512,7 @@ BA_check_rename_flag = {
 			}
 			set_leader_flag = leader_BA_Izuna
 		}
-		#大野月夜
+		#大野月咏
 		10 = {
 			modifier = {
 				factor = 0
@@ -1455,6 +1575,39 @@ BA_check_rename_flag = {
 				}
 			}
 			set_leader_flag = leader_BA_Umika
+		}
+		#虞美人
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kokuriko
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Kokuriko
+		}
+		#箭吹棕榈
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Shuro
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Shuro
+		}
+		#土生蓟
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Azami
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Azami
 		}
 		#新
 		10 = {
@@ -1680,6 +1833,17 @@ BA_check_rename_flag = {
 			}
 			set_leader_flag = leader_BA_Rumi
 		}
+		#鹿山丽情
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Reijo
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Reijo
+		}
 		#春原瞬
 		10 = {
 			modifier = {
@@ -1744,6 +1908,17 @@ BA_check_rename_flag = {
 			}
 			set_leader_flag = leader_BA_Saya
 		}
+		#漆原辉夜
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kaguya
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Kaguya
+		}
 		#尾刃康娜
 		10 = {
 			modifier = {
@@ -1759,6 +1934,17 @@ BA_check_rename_flag = {
 				}
 			}
 			set_leader_flag = leader_BA_Kanna
+		}
+		#木乃香
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Konoka
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Konoka
 		}
 		#中务桐乃
 		10 = {
@@ -1792,6 +1978,38 @@ BA_check_rename_flag = {
 			}
 			set_leader_flag = leader_BA_Fubuki
 		}
+		#锭前纱织
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Saori
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Saori
+		}
+		#秤亚津子
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Atsuko
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Atsuko
+		}
 		#戒野美咲
 		10 = {
 			modifier = {
@@ -1824,37 +2042,27 @@ BA_check_rename_flag = {
 			}
 			set_leader_flag = leader_BA_Hiyori
 		}
-		#锭前纱织
+		#梯昴
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_Saori
+					flag = leader_BA_Subaru
 				}
 			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_Saori
+			#无类别
+			set_leader_flag = leader_BA_Subaru
 		}
-		#秤亚津子
+		#立木迈亚
 		10 = {
 			modifier = {
 				factor = 0
 				BA_leader_has_same = {
-					flag = leader_BA_Atsuko
+					flag = leader_BA_Maia
 				}
 			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
-			set_leader_flag = leader_BA_Atsuko
+			#无类别
+			set_leader_flag = leader_BA_Maia
 		}
 		#月雪宫子
 		10 = {
@@ -1984,6 +2192,28 @@ BA_check_rename_flag = {
 			}
 			set_leader_flag = leader_BA_Otogi
 		}
+		#橘光明
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Hikari
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Hikari
+		}
+		#橘希望
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Nozomi
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Nozomi
+		}
 		#朝雾周防
 		10 = {
 			modifier = {
@@ -2000,6 +2230,17 @@ BA_check_rename_flag = {
 			}
 			set_leader_flag = leader_BA_Suou
 		}
+		#内海青叶
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Aoba
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Aoba
+		}
 		#清澄晶
 		10 = {
 			modifier = {
@@ -2015,6 +2256,94 @@ BA_check_rename_flag = {
 				}
 			}
 			set_leader_flag = leader_BA_Akira
+		}
+		#裕美
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Hiromi
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Hiromi
+		}
+		#白尾绘里
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Eri
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Eri
+		}
+		#椎名纺希
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Tsumugi
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Tsumugi
+		}
+		#板垣鹿江
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kanoe
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Kanoe
+		}
+		#衣斐蕾娜
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Rena
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Rena
+		}
+		#樱井美代
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Miyo
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Miyo
+		}
+		#若狭冬优
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Fuyu
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Fuyu
+		}
+		#薄叶律
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Ritsu
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Ritsu
 		}
 		#初音未来
 		10 = {
@@ -2033,6 +2362,28 @@ BA_check_rename_flag = {
 				}
 			}
 			set_leader_flag = leader_BA_HatsuneMiku
+		}
+		#笑面教授
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_ProfessorSmug
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_ProfessorSmug
+		}
+		#（联邦学生会会长）
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_StudentCouncilPresident
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_StudentCouncilPresident
 		}
 		#七神凛
 		10 = {
@@ -2098,6 +2449,39 @@ BA_check_rename_flag = {
 			}
 			set_leader_flag = leader_BA_Kaya
 		}
+		#扇喜葵
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Aoi
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Aoi
+		}
+		#灰音
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Haine
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Haine
+		}
+		#李
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Sumomo
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Sumomo
+		}
 		#阿洛娜
 		10 = {
 			modifier = {
@@ -2130,6 +2514,39 @@ BA_check_rename_flag = {
 			}
 			set_leader_flag = leader_BA_Plana
 		}
+		#空
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Sora
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Sora
+		}
+		#川流诗音
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Shinon
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Shinon
+		}
+		#风卷麻衣
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Mai
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Mai
+		}
 		#艾茵
 		10 = {
 			modifier = {
@@ -2138,12 +2555,7 @@ BA_check_rename_flag = {
 					flag = leader_BA_Ayin
 				}
 			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
+			#无类别
 			#禁用
 			modifier = {
 				factor = 0
@@ -2159,12 +2571,7 @@ BA_check_rename_flag = {
 					flag = leader_BA_Soph
 				}
 			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
+			#无类别
 			#禁用
 			modifier = {
 				factor = 0
@@ -2180,12 +2587,7 @@ BA_check_rename_flag = {
 					flag = leader_BA_Aur
 				}
 			}
-			modifier = {
-				factor = 0
-				NOR = {
-					leader_class = commander
-				}
-			}
+			#无类别
 			#禁用
 			modifier = {
 				factor = 0
@@ -2193,5 +2595,4 @@ BA_check_rename_flag = {
 			}
 			set_leader_flag = leader_BA_Aur
 		}
-	}
-}
+	}}

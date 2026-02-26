@@ -2199,6 +2199,7 @@ BA_change_skin_trait = {
 	BA_remove_sp_trait = yes
 	switch = {
 		trigger = has_leader_flag
+		# 小鸟游星野
 		leader_BA_Hoshino = {
 			switch = {
 				trigger = has_leader_flag
@@ -2229,6 +2230,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 砂狼白子
 		leader_BA_Shiroko = {
 			switch = {
 				trigger = has_leader_flag
@@ -2259,6 +2261,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 黑见茜香
 		leader_BA_Serika = {
 			switch = {
 				trigger = has_leader_flag
@@ -2284,6 +2287,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 十六夜野宫
 		leader_BA_Nonomi = {
 			switch = {
 				trigger = has_leader_flag
@@ -2309,6 +2313,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 奥空绫音
 		leader_BA_Ayane = {
 			switch = {
 				trigger = has_leader_flag
@@ -2329,16 +2334,18 @@ BA_change_skin_trait = {
 				}
 			}
 		}
-		leader_BA_Yume = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Yume
-					}
-				}
-			}
-		}
+		# 栀子梦
+		# leader_BA_Yume = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Yume
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 羽沼真琴
 		leader_BA_Makoto = {
 			switch = {
 				trigger = has_leader_flag
@@ -2354,6 +2361,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 枣伊吕波
 		leader_BA_Iroha = {
 			switch = {
 				trigger = has_leader_flag
@@ -2364,6 +2372,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 丹花伊吹
 		leader_BA_Ibuki = {
 			switch = {
 				trigger = has_leader_flag
@@ -2379,26 +2388,29 @@ BA_change_skin_trait = {
 				}
 			}
 		}
-		leader_BA_Satsuki = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Satsuki
-					}
-				}
-			}
-		}
-		leader_BA_Chiaki = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Chiaki
-					}
-				}
-			}
-		}
+		# 京极皋月
+		# leader_BA_Satsuki = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Satsuki
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 元宫千秋
+		# leader_BA_Chiaki = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Chiaki
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 空崎日奈
 		leader_BA_Hina = {
 			switch = {
 				trigger = has_leader_flag
@@ -2424,6 +2436,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 天雨亚子
 		leader_BA_Ako = {
 			switch = {
 				trigger = has_leader_flag
@@ -2449,6 +2462,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 银镜伊织
 		leader_BA_Iori = {
 			switch = {
 				trigger = has_leader_flag
@@ -2464,6 +2478,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 火宫千夏
 		leader_BA_Chinatsu = {
 			switch = {
 				trigger = has_leader_flag
@@ -2479,6 +2494,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 陆八魔亚瑠
 		leader_BA_Aru = {
 			switch = {
 				trigger = has_leader_flag
@@ -2499,6 +2515,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 鬼方佳代子
 		leader_BA_Kayoko = {
 			switch = {
 				trigger = has_leader_flag
@@ -2524,6 +2541,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 浅黄睦月
 		leader_BA_Mutsuki = {
 			switch = {
 				trigger = has_leader_flag
@@ -2549,6 +2567,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 伊草春香
 		leader_BA_Haruka = {
 			switch = {
 				trigger = has_leader_flag
@@ -2574,6 +2593,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 黑馆晴奈
 		leader_BA_Haruna = {
 			switch = {
 				trigger = has_leader_flag
@@ -2594,6 +2614,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 鳄渊明里
 		leader_BA_Akari = {
 			switch = {
 				trigger = has_leader_flag
@@ -2614,6 +2635,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 狮子堂泉
 		leader_BA_Izumi = {
 			switch = {
 				trigger = has_leader_flag
@@ -2639,6 +2661,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 赤司淳子
 		leader_BA_Junko = {
 			switch = {
 				trigger = has_leader_flag
@@ -2659,6 +2682,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 爱清枫香
 		leader_BA_Fuuka = {
 			switch = {
 				trigger = has_leader_flag
@@ -2679,6 +2703,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 牛牧朱莉
 		leader_BA_Juri = {
 			switch = {
 				trigger = has_leader_flag
@@ -2694,6 +2719,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 鬼怒川霞
 		leader_BA_Kasumi = {
 			switch = {
 				trigger = has_leader_flag
@@ -2709,6 +2735,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 下仓惠
 		leader_BA_Megu = {
 			switch = {
 				trigger = has_leader_flag
@@ -2724,26 +2751,29 @@ BA_change_skin_trait = {
 				}
 			}
 		}
-		leader_BA_Kirara = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Kirara
-					}
-				}
-			}
-		}
-		leader_BA_Erika = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Erika
-					}
-				}
-			}
-		}
+		# 夜樱绮罗罗
+		# leader_BA_Kirara = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Kirara
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 旗见绘里香
+		# leader_BA_Erika = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Erika
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 冰室濑名
 		leader_BA_Sena = {
 			switch = {
 				trigger = has_leader_flag
@@ -2759,6 +2789,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 调月莉音
 		leader_BA_Rio = {
 			switch = {
 				trigger = has_leader_flag
@@ -2779,6 +2810,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 早濑优香
 		leader_BA_Yuuka = {
 			switch = {
 				trigger = has_leader_flag
@@ -2804,6 +2836,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 生盐诺亚
 		leader_BA_Noa = {
 			switch = {
 				trigger = has_leader_flag
@@ -2824,6 +2857,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 黑崎小雪
 		leader_BA_Koyuki = {
 			switch = {
 				trigger = has_leader_flag
@@ -2844,6 +2878,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 美甘尼禄
 		leader_BA_Neru = {
 			switch = {
 				trigger = has_leader_flag
@@ -2864,6 +2899,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 一之濑明日奈
 		leader_BA_Asuna = {
 			switch = {
 				trigger = has_leader_flag
@@ -2884,6 +2920,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 角楯花凛
 		leader_BA_Karin = {
 			switch = {
 				trigger = has_leader_flag
@@ -2904,6 +2941,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 室笠朱音
 		leader_BA_Akane = {
 			switch = {
 				trigger = has_leader_flag
@@ -2924,6 +2962,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 飞鸟马时
 		leader_BA_Toki = {
 			switch = {
 				trigger = has_leader_flag
@@ -2949,6 +2988,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 花冈柚子
 		leader_BA_Yuzu = {
 			switch = {
 				trigger = has_leader_flag
@@ -2974,6 +3014,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 才羽桃井
 		leader_BA_Momoi = {
 			switch = {
 				trigger = has_leader_flag
@@ -2999,6 +3040,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 才羽绿
 		leader_BA_Midori = {
 			switch = {
 				trigger = has_leader_flag
@@ -3024,6 +3066,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 天童爱丽丝
 		leader_BA_Aris = {
 			switch = {
 				trigger = has_leader_flag
@@ -3054,6 +3097,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 各务千寻
 		leader_BA_Chihiro = {
 			switch = {
 				trigger = has_leader_flag
@@ -3074,6 +3118,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 音濑小玉
 		leader_BA_Kotama = {
 			switch = {
 				trigger = has_leader_flag
@@ -3094,6 +3139,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 小钩晴
 		leader_BA_Hare = {
 			switch = {
 				trigger = has_leader_flag
@@ -3114,6 +3160,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 小涂真纪
 		leader_BA_Maki = {
 			switch = {
 				trigger = has_leader_flag
@@ -3139,6 +3186,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 白石咏叶
 		leader_BA_Utaha = {
 			switch = {
 				trigger = has_leader_flag
@@ -3159,6 +3207,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 猫冢响
 		leader_BA_Hibiki = {
 			switch = {
 				trigger = has_leader_flag
@@ -3174,6 +3223,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 丰见亚都梨
 		leader_BA_Kotori = {
 			switch = {
 				trigger = has_leader_flag
@@ -3194,6 +3244,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 明星日鞠
 		leader_BA_Himari = {
 			switch = {
 				trigger = has_leader_flag
@@ -3219,6 +3270,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 和泉元艾米
 		leader_BA_Eimi = {
 			switch = {
 				trigger = has_leader_flag
@@ -3239,6 +3291,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 柯伊
 		leader_BA_Kei = {
 			switch = {
 				trigger = has_leader_flag
@@ -3249,6 +3302,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 乙花堇
 		leader_BA_Sumire = {
 			switch = {
 				trigger = has_leader_flag
@@ -3269,6 +3323,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 野正丽
 		leader_BA_Rei = {
 			switch = {
 				trigger = has_leader_flag
@@ -3279,16 +3334,18 @@ BA_change_skin_trait = {
 				}
 			}
 		}
-		leader_BA_Mirai = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Mirai
-					}
-				}
-			}
-		}
+		# 吾妻未来
+		# leader_BA_Mirai = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Mirai
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 圣园未花
 		leader_BA_Mika = {
 			switch = {
 				trigger = has_leader_flag
@@ -3309,6 +3366,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 桐藤渚
 		leader_BA_Nagisa = {
 			switch = {
 				trigger = has_leader_flag
@@ -3324,6 +3382,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 百合园圣娅
 		leader_BA_Seia = {
 			switch = {
 				trigger = has_leader_flag
@@ -3339,6 +3398,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 阿慈谷日富美
 		leader_BA_Hifumi = {
 			switch = {
 				trigger = has_leader_flag
@@ -3359,6 +3419,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 白洲梓
 		leader_BA_Azusa = {
 			switch = {
 				trigger = has_leader_flag
@@ -3379,6 +3440,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 浦和花子
 		leader_BA_Hanako = {
 			switch = {
 				trigger = has_leader_flag
@@ -3394,6 +3456,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 下江小春
 		leader_BA_Koharu = {
 			switch = {
 				trigger = has_leader_flag
@@ -3414,6 +3477,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 剑先鹤城
 		leader_BA_Tsurugi = {
 			switch = {
 				trigger = has_leader_flag
@@ -3439,6 +3503,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 羽川莲实
 		leader_BA_Hasumi = {
 			switch = {
 				trigger = has_leader_flag
@@ -3459,6 +3524,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 仲正一花
 		leader_BA_Ichika = {
 			switch = {
 				trigger = has_leader_flag
@@ -3479,6 +3545,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 静山真白
 		leader_BA_Mashiro = {
 			switch = {
 				trigger = has_leader_flag
@@ -3499,6 +3566,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 歌住樱子
 		leader_BA_Sakurako = {
 			switch = {
 				trigger = has_leader_flag
@@ -3519,6 +3587,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 若叶日向
 		leader_BA_Hinata = {
 			switch = {
 				trigger = has_leader_flag
@@ -3534,6 +3603,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 伊落玛丽
 		leader_BA_Mari = {
 			switch = {
 				trigger = has_leader_flag
@@ -3554,6 +3624,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 栗村爱莉
 		leader_BA_Airi = {
 			switch = {
 				trigger = has_leader_flag
@@ -3574,6 +3645,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 杏山和纱
 		leader_BA_Kazusa = {
 			switch = {
 				trigger = has_leader_flag
@@ -3599,6 +3671,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 伊原木好美
 		leader_BA_Yoshimi = {
 			switch = {
 				trigger = has_leader_flag
@@ -3619,6 +3692,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 柚鸟夏
 		leader_BA_Natsu = {
 			switch = {
 				trigger = has_leader_flag
@@ -3644,6 +3718,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 苍森美弥
 		leader_BA_Mine = {
 			switch = {
 				trigger = has_leader_flag
@@ -3659,6 +3734,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 鹫见芹娜
 		leader_BA_Serina = {
 			switch = {
 				trigger = has_leader_flag
@@ -3679,6 +3755,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 朝颜花绘
 		leader_BA_Hanae = {
 			switch = {
 				trigger = has_leader_flag
@@ -3699,6 +3776,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 守月铃美
 		leader_BA_Suzumi = {
 			switch = {
 				trigger = has_leader_flag
@@ -3714,6 +3792,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 宇泽玲纱
 		leader_BA_Reisa = {
 			switch = {
 				trigger = has_leader_flag
@@ -3729,6 +3808,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 古关忧
 		leader_BA_Ui = {
 			switch = {
 				trigger = has_leader_flag
@@ -3744,6 +3824,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 圆堂志美子
 		leader_BA_Shimiko = {
 			switch = {
 				trigger = has_leader_flag
@@ -3759,6 +3840,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 狐坂若藻
 		leader_BA_Wakamo = {
 			switch = {
 				trigger = has_leader_flag
@@ -3779,16 +3861,18 @@ BA_change_skin_trait = {
 				}
 			}
 		}
-		leader_BA_Niya = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Niya
-					}
-				}
-			}
-		}
+		# 天地妮娅
+		# leader_BA_Niya = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Niya
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 桑上果穗
 		leader_BA_Kaho = {
 			switch = {
 				trigger = has_leader_flag
@@ -3799,6 +3883,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 和乐千世
 		leader_BA_Chise = {
 			switch = {
 				trigger = has_leader_flag
@@ -3819,16 +3904,18 @@ BA_change_skin_trait = {
 				}
 			}
 		}
-		leader_BA_Ayame = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Ayame
-					}
-				}
-			}
-		}
+		# 七棱菖蒲
+		# leader_BA_Ayame = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Ayame
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 御棱名草
 		leader_BA_Nagusa = {
 			switch = {
 				trigger = has_leader_flag
@@ -3844,6 +3931,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 不破莲华
 		leader_BA_Renge = {
 			switch = {
 				trigger = has_leader_flag
@@ -3859,6 +3947,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 桐生桔梗
 		leader_BA_Kikyou = {
 			switch = {
 				trigger = has_leader_flag
@@ -3874,6 +3963,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 勘解由小路紫
 		leader_BA_Yukari = {
 			switch = {
 				trigger = has_leader_flag
@@ -3899,6 +3989,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 葛叶
 		leader_BA_Kuzunoha = {
 			switch = {
 				trigger = has_leader_flag
@@ -3909,6 +4000,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 春日椿
 		leader_BA_Tsubaki = {
 			switch = {
 				trigger = has_leader_flag
@@ -3924,6 +4016,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 水羽三森
 		leader_BA_Mimori = {
 			switch = {
 				trigger = has_leader_flag
@@ -3939,6 +4032,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 勇美枫
 		leader_BA_Kaede = {
 			switch = {
 				trigger = has_leader_flag
@@ -3959,6 +4053,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 千鸟满
 		leader_BA_Michiru = {
 			switch = {
 				trigger = has_leader_flag
@@ -3974,6 +4069,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 久田泉奈
 		leader_BA_Izuna = {
 			switch = {
 				trigger = has_leader_flag
@@ -3994,6 +4090,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 大野月咏
 		leader_BA_Tsukuyo = {
 			switch = {
 				trigger = has_leader_flag
@@ -4014,6 +4111,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 河和静子
 		leader_BA_Shizuko = {
 			switch = {
 				trigger = has_leader_flag
@@ -4034,6 +4132,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 朝比奈菲娜
 		leader_BA_Pina = {
 			switch = {
 				trigger = has_leader_flag
@@ -4049,6 +4148,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 里滨海香
 		leader_BA_Umika = {
 			switch = {
 				trigger = has_leader_flag
@@ -4059,36 +4159,40 @@ BA_change_skin_trait = {
 				}
 			}
 		}
-		leader_BA_Kokuriko = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Kokuriko
-					}
-				}
-			}
-		}
-		leader_BA_Shuro = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Shuro
-					}
-				}
-			}
-		}
-		leader_BA_Azami = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Azami
-					}
-				}
-			}
-		}
+		# 虞美人
+		# leader_BA_Kokuriko = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Kokuriko
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 箭吹棕榈
+		# leader_BA_Shuro = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Shuro
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 土生蓟
+		# leader_BA_Azami = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Azami
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 新
 		leader_BA_Arata = {
 			switch = {
 				trigger = has_leader_flag
@@ -4099,6 +4203,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 连河切莉诺
 		leader_BA_Cherino = {
 			switch = {
 				trigger = has_leader_flag
@@ -4119,6 +4224,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 佐城智惠
 		leader_BA_Tomoe = {
 			switch = {
 				trigger = has_leader_flag
@@ -4134,6 +4240,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 池仓玛丽娜
 		leader_BA_Marina = {
 			switch = {
 				trigger = has_leader_flag
@@ -4149,6 +4256,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 天见和香
 		leader_BA_Nodoka = {
 			switch = {
 				trigger = has_leader_flag
@@ -4164,6 +4272,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 间宵时雨
 		leader_BA_Shigure = {
 			switch = {
 				trigger = has_leader_flag
@@ -4179,6 +4288,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 秋泉红叶
 		leader_BA_Momiji = {
 			switch = {
 				trigger = has_leader_flag
@@ -4189,6 +4299,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 姬木爱瑠
 		leader_BA_Meru = {
 			switch = {
 				trigger = has_leader_flag
@@ -4204,6 +4315,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 荒槙八云
 		leader_BA_Yakumo = {
 			switch = {
 				trigger = has_leader_flag
@@ -4214,6 +4326,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 三善贵音
 		leader_BA_Takane = {
 			switch = {
 				trigger = has_leader_flag
@@ -4224,6 +4337,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 安守实里
 		leader_BA_Minori = {
 			switch = {
 				trigger = has_leader_flag
@@ -4239,6 +4353,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 龙华妃咲
 		leader_BA_Kisaki = {
 			switch = {
 				trigger = has_leader_flag
@@ -4254,6 +4369,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 近卫弥奈
 		leader_BA_Mina = {
 			switch = {
 				trigger = has_leader_flag
@@ -4264,6 +4380,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 朱城瑠美
 		leader_BA_Rumi = {
 			switch = {
 				trigger = has_leader_flag
@@ -4279,16 +4396,18 @@ BA_change_skin_trait = {
 				}
 			}
 		}
-		leader_BA_Reijo = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Reijo
-					}
-				}
-			}
-		}
+		# 鹿山丽情
+		# leader_BA_Reijo = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Reijo
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 春原瞬
 		leader_BA_Shun = {
 			switch = {
 				trigger = has_leader_flag
@@ -4304,6 +4423,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 春原心奈
 		leader_BA_Kokona = {
 			switch = {
 				trigger = has_leader_flag
@@ -4314,6 +4434,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 申谷海
 		leader_BA_Kai = {
 			switch = {
 				trigger = has_leader_flag
@@ -4324,6 +4445,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 药子沙耶
 		leader_BA_Saya = {
 			switch = {
 				trigger = has_leader_flag
@@ -4339,16 +4461,18 @@ BA_change_skin_trait = {
 				}
 			}
 		}
-		leader_BA_Kaguya = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Kaguya
-					}
-				}
-			}
-		}
+		# 漆原辉夜
+		# leader_BA_Kaguya = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Kaguya
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 尾刃康娜
 		leader_BA_Kanna = {
 			switch = {
 				trigger = has_leader_flag
@@ -4364,16 +4488,18 @@ BA_change_skin_trait = {
 				}
 			}
 		}
-		leader_BA_Konoka = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Konoka
-					}
-				}
-			}
-		}
+		# 木乃香
+		# leader_BA_Konoka = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Konoka
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 中务桐乃
 		leader_BA_Kirino = {
 			switch = {
 				trigger = has_leader_flag
@@ -4394,6 +4520,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 合欢垣吹雪
 		leader_BA_Fubuki = {
 			switch = {
 				trigger = has_leader_flag
@@ -4414,6 +4541,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 锭前纱织
 		leader_BA_Saori = {
 			switch = {
 				trigger = has_leader_flag
@@ -4434,6 +4562,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 秤亚津子
 		leader_BA_Atsuko = {
 			switch = {
 				trigger = has_leader_flag
@@ -4449,6 +4578,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 戒野美咲
 		leader_BA_Misaki = {
 			switch = {
 				trigger = has_leader_flag
@@ -4464,6 +4594,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 槌永日和
 		leader_BA_Hiyori = {
 			switch = {
 				trigger = has_leader_flag
@@ -4479,26 +4610,29 @@ BA_change_skin_trait = {
 				}
 			}
 		}
-		leader_BA_Subaru = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Subaru
-					}
-				}
-			}
-		}
-		leader_BA_Maia = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Maia
-					}
-				}
-			}
-		}
+		# 梯昴
+		# leader_BA_Subaru = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Subaru
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 立木迈亚
+		# leader_BA_Maia = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Maia
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 月雪宫子
 		leader_BA_Miyako = {
 			switch = {
 				trigger = has_leader_flag
@@ -4519,6 +4653,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 空井咲
 		leader_BA_Saki = {
 			switch = {
 				trigger = has_leader_flag
@@ -4539,6 +4674,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 霞泽美游
 		leader_BA_Miyu = {
 			switch = {
 				trigger = has_leader_flag
@@ -4559,6 +4695,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 风仓萌绘
 		leader_BA_Moe = {
 			switch = {
 				trigger = has_leader_flag
@@ -4579,6 +4716,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 七度雪乃
 		leader_BA_Yukino = {
 			switch = {
 				trigger = has_leader_flag
@@ -4589,6 +4727,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 妮可
 		leader_BA_Niko = {
 			switch = {
 				trigger = has_leader_flag
@@ -4599,6 +4738,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 胡桃
 		leader_BA_Kurumi = {
 			switch = {
 				trigger = has_leader_flag
@@ -4609,6 +4749,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 音葵
 		leader_BA_Otogi = {
 			switch = {
 				trigger = has_leader_flag
@@ -4619,26 +4760,29 @@ BA_change_skin_trait = {
 				}
 			}
 		}
-		leader_BA_Hikari = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Hikari
-					}
-				}
-			}
-		}
-		leader_BA_Nozomi = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Nozomi
-					}
-				}
-			}
-		}
+		# 橘光明
+		# leader_BA_Hikari = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Hikari
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 橘希望
+		# leader_BA_Nozomi = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Nozomi
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 朝雾周防
 		leader_BA_Suou = {
 			switch = {
 				trigger = has_leader_flag
@@ -4649,16 +4793,18 @@ BA_change_skin_trait = {
 				}
 			}
 		}
-		leader_BA_Aoba = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Aoba
-					}
-				}
-			}
-		}
+		# 内海青叶
+		# leader_BA_Aoba = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Aoba
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 清澄晶
 		leader_BA_Akira = {
 			switch = {
 				trigger = has_leader_flag
@@ -4669,86 +4815,95 @@ BA_change_skin_trait = {
 				}
 			}
 		}
-		leader_BA_Hiromi = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Hiromi
-					}
-				}
-			}
-		}
-		leader_BA_Eri = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Eri
-					}
-				}
-			}
-		}
-		leader_BA_Tsumugi = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Tsumugi
-					}
-				}
-			}
-		}
-		leader_BA_Kanoe = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Kanoe
-					}
-				}
-			}
-		}
-		leader_BA_Rena = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Rena
-					}
-				}
-			}
-		}
-		leader_BA_Miyo = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Miyo
-					}
-				}
-			}
-		}
-		leader_BA_Fuyu = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Fuyu
-					}
-				}
-			}
-		}
-		leader_BA_Ritsu = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Ritsu
-					}
-				}
-			}
-		}
+		# 裕美
+		# leader_BA_Hiromi = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Hiromi
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 白尾绘里
+		# leader_BA_Eri = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Eri
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 椎名纺希
+		# leader_BA_Tsumugi = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Tsumugi
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 板垣鹿江
+		# leader_BA_Kanoe = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Kanoe
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 衣斐蕾娜
+		# leader_BA_Rena = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Rena
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 樱井美代
+		# leader_BA_Miyo = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Miyo
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 若狭冬优
+		# leader_BA_Fuyu = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Fuyu
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 薄叶律
+		# leader_BA_Ritsu = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Ritsu
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 初音未来
 		leader_BA_HatsuneMiku = {
 			switch = {
 				trigger = has_leader_flag
@@ -4759,26 +4914,29 @@ BA_change_skin_trait = {
 				}
 			}
 		}
-		leader_BA_ProfessorSmug = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_ProfessorSmug
-					}
-				}
-			}
-		}
-		leader_BA_StudentCouncilPresident = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_StudentCouncilPresident
-					}
-				}
-			}
-		}
+		# 笑面教授
+		# leader_BA_ProfessorSmug = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_ProfessorSmug
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# （联邦学生会会长）
+		# leader_BA_StudentCouncilPresident = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_StudentCouncilPresident
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 七神凛
 		leader_BA_Rin = {
 			switch = {
 				trigger = has_leader_flag
@@ -4794,6 +4952,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 由良木桃香
 		leader_BA_Momoka = {
 			switch = {
 				trigger = has_leader_flag
@@ -4809,6 +4968,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 岩柜步梦
 		leader_BA_Ayumu = {
 			switch = {
 				trigger = has_leader_flag
@@ -4824,6 +4984,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 不知火花耶
 		leader_BA_Kaya = {
 			switch = {
 				trigger = has_leader_flag
@@ -4834,36 +4995,40 @@ BA_change_skin_trait = {
 				}
 			}
 		}
-		leader_BA_Aoi = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Aoi
-					}
-				}
-			}
-		}
-		leader_BA_Haine = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Haine
-					}
-				}
-			}
-		}
-		leader_BA_Sumomo = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Sumomo
-					}
-				}
-			}
-		}
+		# 扇喜葵
+		# leader_BA_Aoi = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Aoi
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 灰音
+		# leader_BA_Haine = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Haine
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 李
+		# leader_BA_Sumomo = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Sumomo
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 阿洛娜
 		leader_BA_Arona = {
 			switch = {
 				trigger = has_leader_flag
@@ -4874,6 +5039,7 @@ BA_change_skin_trait = {
 				}
 			}
 		}
+		# 普拉娜
 		leader_BA_Plana = {
 			switch = {
 				trigger = has_leader_flag
@@ -4884,65 +5050,71 @@ BA_change_skin_trait = {
 				}
 			}
 		}
-		leader_BA_Sora = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Sora
-					}
-				}
-			}
-		}
-		leader_BA_Shinon = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Shinon
-					}
-				}
-			}
-		}
-		leader_BA_Mai = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Mai
-					}
-				}
-			}
-		}
-		leader_BA_Ayin = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Ayin
-					}
-				}
-			}
-		}
-		leader_BA_Soph = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Soph
-					}
-				}
-			}
-		}
-		leader_BA_Aur = {
-			switch = {
-				trigger = has_leader_flag
-				default = {
-					add_trait = {
-						trait = leader_special_Aur
-					}
-				}
-			}
-		}
+		# 空
+		# leader_BA_Sora = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Sora
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 川流诗音
+		# leader_BA_Shinon = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Shinon
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 风卷麻衣
+		# leader_BA_Mai = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Mai
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 艾茵
+		# leader_BA_Ayin = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Ayin
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 索芙
+		# leader_BA_Soph = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Soph
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 奥茹
+		# leader_BA_Aur = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Aur
+		# 			}
+		# 		}
+		# 	}
+		# }
 	}
 }

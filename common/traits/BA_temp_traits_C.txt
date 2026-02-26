@@ -625,6 +625,35 @@ leader_special_Juri_WK = {
     sorting_priority = 998
 }
 
+#鬼怒川霞（泳装） Kasumi_SS 无下限开发
+leader_special_Kasumi_SS = {
+    icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R33.dds"
+    randomized = no
+    councilor_modifier = {
+        #研究速度（工业）+15%
+        category_industry_research_speed_mult = 0.15
+    }
+    planet_modifier = {
+        #行星建造速度+40%，区域花费+25%，建筑花费+25%，岗位生产的天然气+12%
+        planet_building_build_speed_mult = 0.4
+        planet_districts_cost_mult = 0.25
+        planet_buildings_cost_mult = 0.25
+        planet_jobs_exotic_gases_produces_mult = 0.12
+    }
+    sector_modifier = {
+        #行星建造速度+20%，区域花费+12.5%，建筑花费+12.5%，岗位生产的天然气+6%
+        planet_building_build_speed_mult = 0.2
+        planet_districts_cost_mult = 0.125
+        planet_buildings_cost_mult = 0.125
+        planet_jobs_exotic_gases_produces_mult = 0.06
+    }
+    leader_class = {
+        official
+    }
+    selectable_weight = 0
+    sorting_priority = 998
+}
+
 #下仓惠（泳装） Megu_SS 高热度开发
 leader_special_Megu_SS = {
     icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R33.dds"

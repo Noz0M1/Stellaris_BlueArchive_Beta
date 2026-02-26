@@ -715,7 +715,35 @@ leader_special_Juri = {
 	sorting_priority = 998
 }
 
-#鬼怒川霞 Kasumi NG
+#鬼怒川霞 Kasumi 无下限开发
+leader_special_Kasumi = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R33.dds"
+	randomized = no
+	councilor_modifier = {
+		#研究速度（工业）+15%
+		category_industry_research_speed_mult = 0.15
+	}
+	planet_modifier = {
+		#行星建造速度+40%，区域花费+25%，建筑花费+25%，岗位生产的天然气+12%
+		planet_building_build_speed_mult = 0.4
+		planet_districts_cost_mult = 0.25
+		planet_buildings_cost_mult = 0.25
+		planet_jobs_exotic_gases_produces_mult = 0.12
+	}
+	sector_modifier = {
+		#行星建造速度+20%，区域花费+12.5%，建筑花费+12.5%，岗位生产的天然气+6%
+		planet_building_build_speed_mult = 0.2
+		planet_districts_cost_mult = 0.125
+		planet_buildings_cost_mult = 0.125
+		planet_jobs_exotic_gases_produces_mult = 0.06
+	}
+	leader_class = {
+		official
+	}
+	selectable_weight = 0
+	sorting_priority = 998
+}
+
 #下仓惠 Megu 高热度开发
 leader_special_Megu = {
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R33.dds"
@@ -1403,6 +1431,23 @@ leader_special_Eimi_SS = {
 	}
 	selectable_weight = 0
 	sorting_priority = 999
+}
+
+#Kei 被赐名者
+leader_special_Kei = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R21.dds"
+	randomized = no
+	modifier = {
+		#舰船武器射速+200%，舰船武器伤害+100%，撤退几率减成+30%
+		ship_fire_rate_mult = 2
+		ship_weapon_damage = 1
+		ship_disengage_chance_reduction = 0.8
+	}
+	leader_class = {
+		commander
+	}
+	selectable_weight = 0
+	sorting_priority = 998
 }
 
 #乙花堇 Sumire 三步迸发
