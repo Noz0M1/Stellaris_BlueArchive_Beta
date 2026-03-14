@@ -3866,15 +3866,30 @@ country_event = {
 							remove_all_districts = yes
 							add_district = BA_district_auto_city
 							add_district = BA_district_auto_city
-							add_district = BA_districts_auto_refinery
-							add_district = BA_districts_auto_sustainer
-							add_district = BA_districts_auto_foundry
+							add_district = BA_district_auto_slot_01
+							add_district = BA_district_auto_slot_02
+							add_district = BA_district_auto_slot_03
 							add_district = BA_districts_auto_turbine
 							add_district = BA_districts_auto_drill
 							validate_planet_buildings_and_districts = yes
 							add_building = {
 								zone = zone_default
 								building = building_BA_Locker_room
+							}
+							add_zone = {
+								district = BA_district_auto_slot_01
+								zone_slot = slot_BA_auto_specialist
+								zone = zone_BA_auto_refinery
+							}
+							add_zone = {
+								district = BA_district_auto_slot_02
+								zone_slot = slot_BA_auto_specialist
+								zone = zone_BA_auto_sustainer
+							}
+							add_zone = {
+								district = BA_district_auto_slot_03
+								zone_slot = slot_BA_auto_specialist
+								zone = zone_BA_auto_foundry
 							}
 							# 区块
 							clear_blockers = yes
@@ -3891,6 +3906,12 @@ country_event = {
 								id = BA_origin.2011
 								days = 180
 							}
+							# 资源
+							owner = {
+								add_resource = {
+									sr_pyroxenes = 12
+								}
+							}
 						}
 					}
 					every_system_planet = {
@@ -3903,20 +3924,6 @@ country_event = {
 					set_star_flag = has_habitat
 				}
 			}
-			# while = {
-			# 	limit = {
-			# 		any_planet_within_border = {
-			# 			has_planet_flag = BA_init_module
-			# 		}
-			# 	}
-			# 	random_planet_within_border = {
-			# 		limit = {
-			# 			has_planet_flag = BA_init_module
-			# 		}
-			# 		BA_origin_create_module = yes
-			# 		remove_planet_flag = BA_init_module
-			# 	}
-			# }
 			### 初始化母星
 			random_owned_planet = {
 				limit = {

@@ -1,0 +1,842 @@
+#（默认社团特质） 社团部员
+leader_club_default = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
+	randomized = no
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+### 阿拜多斯
+#对策委员会 逆境工程
+leader_club_Abydos_01 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R38.dds"
+	randomized = no
+	councilor_modifier = {
+		#决议颁布速度+10%，清理地块障碍速度+25%，清障花费-15%
+		planet_decision_enact_speed_mult = 0.1
+		planet_clear_blocker_speed_mult = 0.25
+		deposit_blockers_cost_mult = -0.15
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#阿拜多斯学生会 城市守护神
+leader_club_Abydos_02 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R38.dds"
+	randomized = no
+	councilor_modifier = {
+		#决议颁布速度+20%，清理地块障碍速度+50%，清障花费-30%
+		planet_decision_enact_speed_mult = 0.2
+		planet_clear_blocker_speed_mult = 0.5
+		deposit_blockers_cost_mult = -0.3
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+### 格黑那
+#万魔殿 无纪与野蛮的唯一
+leader_club_Gehenna_01 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B35.dds"
+	randomized = no
+	councilor_modifier = {
+		#TODO 未实现
+		#舰船武器伤害+25%
+		ship_weapon_damage = 0.45
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#风纪委 纪律与武力的统一
+leader_club_Gehenna_02 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R04.dds"
+	randomized = no
+	councilor_modifier = {
+		#犯罪度-6，亚光速航速+10%，舰船武器伤害+10%
+		planet_crime_add = -6
+		ship_speed_mult = 0.1
+		ship_weapon_damage = 0.1
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#万事屋68 一日一恶
+leader_club_Gehenna_03 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R55.dds"
+	randomized = no
+	councilor_modifier = {
+		#舰船武器伤害+6%，技工产出+8%
+		ship_weapon_damage = 0.06
+		planet_artisans_produces_mult = 0.08
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#美食研究会 美食的风流
+leader_club_Gehenna_04 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R24.dds"
+	randomized = no
+	councilor_modifier = {
+		#每月消费品-3%，舰船武器伤害+21%
+		country_consumer_goods_produces_mult = -0.03
+		ship_weapon_damage = 0.21
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#给食部 星海生命线
+leader_club_Gehenna_05 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B18.dds"
+	randomized = no
+	councilor_modifier = {
+		#每月粮食+15%
+		country_food_produces_mult = 0.15
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#温泉开发部 重火力工程技术
+leader_club_Gehenna_06 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R39.dds"
+	randomized = no
+	councilor_modifier = {
+		#研究速度（粒子研究）+20%，研究速度（工业）+20%，研究速度（新世界理论）+20%
+		category_particles_research_speed_mult = 0.2
+		category_industry_research_speed_mult = 0.2
+		category_new_worlds_research_speed_mult = 0.2
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#闪闪社 时尚战场
+leader_club_Gehenna_07 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B18.dds"
+	randomized = no
+	councilor_modifier = {
+		#每月消费品+10%
+		country_consumer_goods_produces_mult = 0.1
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#急救医学部 武装车与白色死神
+leader_club_Gehenna_08 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B46.dds"
+	randomized = no
+	councilor_modifier = {
+		#陆军士气+20%，陆军生命+20%，陆军撤退几率+5%
+		army_morale = 0.2
+		army_health = 0.2
+		army_disengage_chance_mult = 0.05
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+### 千年
+#研讨会 精英行政效率
+leader_club_Millennium_01 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B51.dds"
+	randomized = no
+	councilor_modifier = {
+		#建筑维护费用-20%，区划维护费用-20%。自动化建筑产出+15%
+		planet_buildings_upkeep_mult = -0.2
+		planet_districts_upkeep_mult = -0.2
+		BA_auto_districts_produces_mult = 0.15
+		BA_auto_buildings_produces_mult = 0.15
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#C&C 特派打击学说
+leader_club_Millennium_02 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y40.dds"
+	randomized = no
+	councilor_modifier = {
+		#陆军连带伤害+15%，舰船武器射程+15%，亚光速航速-5%
+		army_collateral_damage_mult = 0.15
+		ship_weapon_range_mult = 0.15
+		ship_speed_mult = -0.05
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#游戏开发部 群星Game Time
+leader_club_Millennium_03 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y72.dds"
+	randomized = no
+	councilor_modifier = {
+		#社团部员产出的凝聚力+0.5，社团部员产出的社会学点数+0.5，人口舒适度使用-5%
+		BA_staff_pop_unity_produces_add = 0.5
+		BA_club_pop_society_research_produces_add = 0.5
+		pop_amenities_usage_add = -0.05
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#真理部 网络攻防纲领
+leader_club_Millennium_04 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R16.dds"
+	randomized = no
+	councilor_modifier = {
+		#研究速度+5%，研究速度（粒子物理）+35%，研究速度（计算技术）+35%
+		all_technology_research_speed = 0.05
+		category_particles_research_speed_mult = 0.35
+		category_computing_research_speed_mult = 0.35
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#工程师部 大师级工程学
+leader_club_Millennium_05 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R33.dds"
+	randomized = no
+	councilor_modifier = {
+		#研究速度+5%，研究速度（工程学）+25%，社团部员的合金维护-0.5
+		all_technology_research_speed = 0.05
+		country_engineering_tech_research_speed = 0.25
+		BA_club_pop_alloys_upkeep_add = -0.5
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#特异现象搜查部 星海斥候
+leader_club_Millennium_06 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R11.dds"
+	randomized = no
+	councilor_modifier = {
+		#亚光速航速+25%，调查速度+25%，开采站建造速度+25%
+		ship_speed_mult = 0.25
+		science_ship_survey_speed = 0.25
+		shipclass_mining_station_build_speed_mult = 0.25
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#田径训练部 每日运动
+leader_club_Millennium_07 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R11.dds"
+	randomized = no
+	councilor_modifier = {
+		#幸福度+10%
+		pop_happiness = 0.1
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#超自然现象部 易如反掌之心
+leader_club_Millennium_08 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R11.dds"
+	randomized = no
+	councilor_modifier = {
+		#亚光速航速+25%，调查速度+25%，开采站建造速度+25%
+		diplo_weight_mult = 0.2
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+### 圣三一
+#茶会 三位一体的茶话会
+leader_club_Trinity_01 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B40.dds"
+	randomized = no
+	councilor_modifier = {
+		#内阁议程速度+50%，外交权重+35%，法令经费+75，帝国规模效果-5%
+		council_agenda_progress_speed = 0.5
+		diplo_weight_mult = 0.35
+		country_edict_fund_add = 75
+		empire_size_penalty_mult = -0.05
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#补习部 成绩监察制
+leader_club_Trinity_02 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R43.dds"
+	randomized = no
+	councilor_modifier = {
+		#社团成员的三科产出+1，社团成员的维护费+30%
+		BA_club_pop_engineering_research_produces_add = 1
+		BA_club_pop_physics_research_produces_add = 1
+		BA_club_pop_society_research_produces_add = 1
+		BA_club_pop_upkeep_mult = 0.3
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#正义实现委员会 盘根错杂的黑色卫士
+leader_club_Trinity_03 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R86.dds"
+	randomized = no
+	councilor_modifier = {
+		#犯罪度-6，舰船武器伤害+10%，陆军生命+15%
+		planet_crime_add = -6
+		ship_weapon_damage = 0.1
+		army_health = 0.15
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#修女会 代表着慈爱与秩序
+leader_club_Trinity_04 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B84.dds"
+	randomized = no
+	councilor_modifier = {
+		#岗位凝聚力产出+15%
+		planet_jobs_unity_produces_mult = 0.15
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#放学后的甜点部 大小姐们的甜点
+leader_club_Trinity_05 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R52.dds"
+	randomized = no
+	councilor_modifier = {
+		#工匠产出+20%，工匠岗位维护费+10%
+		planet_artisans_produces_mult = 0.2
+		planet_artisans_upkeep_mult = 0.1
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#救护骑士团 象征着博爱与守护
+leader_club_Trinity_06 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y73.dds"
+	randomized = no
+	councilor_modifier = {
+		#陆军生命+20%，海军舰船船体+20%
+		army_health = 0.2
+		ship_hull_mult = 0.2
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#自警团 市井的侠客
+leader_club_Trinity_07 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R02.dds"
+	randomized = no
+	councilor_modifier = {
+		#自警团岗位生产的凝聚力+150%，自警团维护费合金-2
+		BA_crew_pop_unity_produces_mult = 1.5
+		BA_crew_pop_alloys_produces_add = -2
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#图书委员会 保持着神秘与厚重
+leader_club_Trinity_08 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R51.dds"
+	randomized = no
+	councilor_modifier = {
+		#每月稀有文物+4，每月凝聚力+10%
+		country_unity_produces_mult = 0.1
+	}
+	inline_script = {
+		script = paragon/leader_resource_produces
+		RESOURCE = minor_artifacts
+		AMOUNT = 4
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+### 百鬼夜行
+#阴阳部 名为樱花的小行星
+leader_club_Hyakkiyako_01 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B50.dds"
+	randomized = no
+	councilor_modifier = {
+		#社团部员的凝聚力产出+1，人口舒适度使用-15%，社团部员维护费+20%
+		pop_amenities_usage_add = -0.15
+		BA_staff_pop_unity_produces_add = 1
+		BA_staff_pop_upkeep_mult = 0.2
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#百花缭乱调停委员会 百花缭乱
+leader_club_Hyakkiyako_02 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
+	randomized = no
+	councilor_modifier = {
+		planet_stability_add = 20
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#心修炼成部 星火助燃
+leader_club_Hyakkiyako_03 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R72.dds"
+	randomized = no
+	councilor_modifier = {
+		#舰船武器射速+20%，陆军伤害+5%，陆军连带伤害+5%
+		ship_fire_rate_mult = 0.2
+		army_damage_mult = 0.05
+		army_collateral_damage_mult = 0.05
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#忍术研究部 新式忍术学说
+leader_club_Hyakkiyako_04 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B05.dds"
+	randomized = no
+	councilor_modifier = {
+		#亚光速航速+5%，紧急超光速脱离受损风险-30%，紧急超光速脱离冷却-30%
+		ship_speed_mult = 0.05
+		ship_emergency_ftl_mult = -0.3
+		ship_emergency_ftl_min_days_mult = -0.3
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#祭典运营部 星海祭典
+leader_club_Hyakkiyako_05 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B79.dds"
+	randomized = no
+	councilor_modifier = {
+		#幸福度+10%，岗位生产的消费品+5%
+		pop_happiness = 0.1
+		planet_jobs_consumer_goods_produces_mult = 0.05
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#花鸟风月部 风起谓之流
+leader_club_Hyakkiyako_06 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B79.dds"
+	randomized = no
+	councilor_modifier = {
+		#岗位生产的矿物+5%，消费品+5%
+		planet_jobs_minerals_produces_mult = 0.05
+		planet_jobs_consumer_goods_produces_mult = 0.05
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#魑魅一座 亡灵的工作
+leader_club_Hyakkiyako_07 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B79.dds"
+	randomized = no
+	councilor_modifier = {
+		#稳定度-20%，凝聚力+20%
+		planet_stability_mult = -0.2
+		planet_jobs_unity_produces_mult = 0.2
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+### 红冬
+#红冬事务局 集权化管理
+leader_club_RedWinter_01 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y88.dds"
+	randomized = no
+	councilor_modifier = {
+		#TODO 有小问题
+		#行星建造速度+25%
+		planet_building_build_speed_mult = 0.25
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#227特别班 小小的振兴梦想
+leader_club_RedWinter_02 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y88.dds"
+	randomized = no
+	councilor_modifier = {
+		#行星建造速度+25%，矿工岗位产出+10%
+		planet_building_build_speed_mult = 0.25
+		planet_miners_produces_mult = 0.1
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#知识解放战线 代表书籍的旗帜
+leader_club_RedWinter_03 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y74.dds"
+	randomized = no
+	councilor_modifier = {
+		#社团部员产出的社会学点数+3，社团部员维护费+30%
+		BA_club_pop_society_research_produces_add = 3
+		BA_club_pop_upkeep_mult = 0.3
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#出版部 星海诗篇
+leader_club_RedWinter_04 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R74.dds"
+	randomized = no
+	councilor_modifier = {
+		#自治区职员产出的凝聚力+1、贸易额+1，消费品维护费+1
+		BA_staff_pop_unity_produces_add = 1
+		BA_staff_pop_trade_produces_add = 1
+		BA_staff_pop_consumer_goods_upkeep_add = 1
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#劳务部 工人的力量
+leader_club_RedWinter_05 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B38.dds"
+	randomized = no
+	councilor_modifier = {
+		#TODO 有小问题
+		#行星区划建造速度+15%，劳工岗位产出+10%
+		planet_jobs_worker_produces_mult = 0.1
+		planet_building_build_speed_mult = 0.15
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+### 山海经
+#玄龙门 新与旧的维护
+leader_club_Shanhaijing_01 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y88.dds"
+	randomized = no
+	councilor_modifier = {
+		#行星建造速度-10%，全产+5%，星球决议速度+25%
+		planet_building_build_speed_mult = -0.1
+		planet_jobs_produces_mult = 0.05
+		planet_decision_enact_speed_mult = 0.25
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#玄武商会 旧与新的变革
+leader_club_Shanhaijing_02 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R79.dds"
+	randomized = no
+	councilor_modifier = {
+		#行星建造速度+15%，星球决议速度-10%，贸易额+10%
+		planet_building_build_speed_mult = 0.15
+		planet_decision_enact_speed_mult = -0.1
+		country_trade_produces_mult = 0.1
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#梅花园 幼小的梦园
+leader_club_Shanhaijing_03 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R19.dds"
+	randomized = no
+	councilor_modifier = {
+		#岗位产出的社会学点数+15%
+		planet_jobs_society_research_produces_mult = 0.15
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#炼丹术研究会 山中人杰地灵
+leader_club_Shanhaijing_04 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B87.dds"
+	randomized = no
+	councilor_modifier = {
+		#研究速度（社会学）+10%，研究速度（生物学）+25%，研究速度+5%
+		country_society_tech_research_speed = 0.1
+		category_biology_research_speed_mult = 0.25
+		all_technology_research_speed = 0.05
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#京剧部 千形千面
+leader_club_Shanhaijing_05 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B87.dds"
+	randomized = no
+	councilor_modifier = {
+		#研究速度（社会学）+35%
+		country_society_tech_research_speed = 0.35
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+### 瓦尔基里
+#（通用） 象征着安全的彗星
+leader_club_Valkyrie_00 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_Y04.dds"
+	randomized = no
+	councilor_modifier = {
+		#TODO 未实现
+		#所有自律舰亚光速航速+25%，执法者+2凝聚力
+		planet_enforcers_unity_produces_add = 2
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#公安局 MISS
+#生活安全局 MISS
+### 阿里乌斯
+#阿里乌斯小队 黑与白的交织
+leader_club_Arius_01 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R17.dds"
+	randomized = no
+	councilor_modifier = {
+		#陆军伤害+10%，舰船武器伤害+10%，舰船武器射速+5%
+		army_damage_mult = 0.1
+		ship_weapon_damage = 0.1
+		ship_fire_rate_mult = 0.05
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#尼科米底亚部队 落日之草
+leader_club_Arius_02 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R17.dds"
+	randomized = no
+	councilor_modifier = {
+		#陆军伤害+10%，舰船武器伤害+10%，舰船武器射速+5%
+		army_damage_mult = 0.1
+		ship_weapon_damage = 0.1
+		ship_fire_rate_mult = 0.05
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+### SRT
+#（通用） 运动作战学说
+leader_club_SRT_00 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R18.dds"
+	randomized = no
+	councilor_modifier = {
+		#亚光速航速+40%
+		ship_speed_mult = 0.4
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#RABBIT小队 MISS
+#FOX小队 MISS
+### 海兰德
+#（通用） 铁路浪漫谭
+leader_club_Highlander_00 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R18.dds"
+	randomized = no
+	councilor_modifier = {
+		#亚光速航速+40%
+		ship_speed_mult = 0.4
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#CCC 沃普尔吉斯列车
+leader_club_Highlander_01 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B66.dds"
+	randomized = no
+	councilor_modifier = {
+		country_claim_influence_cost_mult = -0.5
+		country_starbase_influence_cost_distance_mult = -0.5
+		country_trade_produces_mult = 0.1
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#海兰德监理室 MISS
+#货物输送管理部 MISS
+### 狂猎
+#（通用) 浓缩式艺创
+leader_club_Wildhunt_00 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_R18.dds"
+	randomized = no
+	councilor_modifier = {
+		#每月贸易+20%
+		country_trade_produces_mult = 0.2
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#舍监队 MISS
+#神秘学研究部 MISS
+#特殊交易部 MISS
+### 其他
+#联邦学生会 联邦太空条例
+leader_club_Kivotos_01 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B69.dds"
+	randomized = no
+	councilor_modifier = {
+		#恒星基地升级速度+35%，恒星基地模块和建筑建造速度+35%
+		starbase_upgrade_speed_mult = 0.35
+		starbase_building_build_speed_mult = 0.35
+		starbase_module_build_speed_mult = 0.35
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#夏莱 什亭之匣中枢
+leader_club_Kivotos_02 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
+	randomized = no
+	councilor_modifier = {
+		#每月能量币-2%，全产+6%，星球建筑建造速度+25%
+		country_energy_produces_mult = -0.02
+		planet_jobs_produces_mult = 0.06
+		planet_building_build_speed_mult = 0.25
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#（初音未来专用） 量子之风
+leader_club_Kivotos_03 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
+	randomized = no
+	councilor_modifier = {
+		#全产-50%，每月资源+30%
+		planet_jobs_produces_mult = -0.5
+		country_produces_mult = 0.3
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#（葛叶专用）百花缭乱寻何处
+leader_club_Kivotos_04 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B83.dds"
+	randomized = no
+	councilor_modifier = {
+		#内阁议程速度+400%，研究速度+100%，领袖经验获取+100%，领袖花费+12000%，领袖维护费+12000%
+		council_agenda_progress_speed = 4
+		all_technology_research_speed = 1
+		species_leader_exp_gain = 1
+	}
+	self_modifier = {
+		leaders_cost_mult = 120
+		leaders_upkeep_mult = 120
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#（七囚人与笑面教授） 谜与恋爱的罪人
+leader_club_Kivotos_05 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B18.dds"
+	randomized = no
+	councilor_modifier = {
+		#犯罪度+10，研究速度+10%，全产+5%
+		planet_crime_add = 10
+		all_technology_research_speed = 0.1
+		planet_jobs_produces_mult = 0.05
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#（三小只） 无名者之心
+leader_club_Kivotos_06 = {
+	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B18.dds"
+	randomized = no
+	councilor_modifier = {
+		#机械岗位效率+60%
+		robotic_pop_bonus_workforce_mult = 0.6
+	}
+	leader_class = all
+	selectable_weight = 0
+	sorting_priority = 999
+}
+
+#柯罗诺斯新闻学院 MISS

@@ -111,10 +111,10 @@ BA_Aris_SP = {
 			BA_Halo_for_special_leader = yes
 			set_leader_flag = leader_death_events_blocked
 			set_leader_flag = BA_event_leader
-			set_leader_flag = BA_Real_Aris
-			change_leader_portrait = BA_leader_093
+			change_leader_portrait = BA_leader_Aris
+			set_leader_flag = leader_BA_Aris
 			BA_event_leader_replace = {
-				Leader_flag = leader_BA_093
+				Leader_flag = leader_BA_Aris
 			}
 			owner = {
 				set_timed_country_flag = {
@@ -144,10 +144,10 @@ BA_Hoshino_SP = {
 		effect = {
 			set_leader_flag = leader_death_events_blocked
 			set_leader_flag = BA_event_leader
-			set_leader_flag = BA_Hoshino
-			change_leader_portrait = BA_leader_006
+			set_leader_flag = leader_BA_Hoshino
+			change_leader_portrait = BA_leader_Hoshino
 			BA_event_leader_replace = {
-				Leader_flag = leader_BA_006
+				Leader_flag = leader_BA_Hoshino
 			}
 			BA_Halo_for_special_leader = yes
 		}
@@ -170,10 +170,10 @@ BA_Hina_SP = {
 		effect = {
 			set_leader_flag = leader_death_events_blocked
 			set_leader_flag = BA_event_leader
-			set_leader_flag = BA_Hina
-			change_leader_portrait = BA_leader_039
+			set_leader_flag = leader_BA_Hina
+			change_leader_portrait = BA_leader_Hina
 			BA_event_leader_replace = {
-				Leader_flag = leader_BA_039
+				Leader_flag = leader_BA_Hina
 			}
 			BA_Halo_for_special_leader = yes
 		}
@@ -196,10 +196,10 @@ BA_Mika_SP = {
 		effect = {
 			set_leader_flag = leader_death_events_blocked
 			set_leader_flag = BA_event_leader
-			set_leader_flag = BA_Mika
-			change_leader_portrait = BA_leader_120
+			set_leader_flag = leader_BA_Mika
+			change_leader_portrait = BA_leader_Mika
 			BA_event_leader_replace = {
-				Leader_flag = leader_BA_120
+				Leader_flag = leader_BA_Mika
 			}
 			BA_Halo_for_special_leader = yes
 		}
@@ -224,10 +224,10 @@ BA_Yuuka_SP = {
 		effect = {
 			set_leader_flag = leader_death_events_blocked
 			set_leader_flag = BA_event_leader
-			set_leader_flag = BA_Yuuka
-			change_leader_portrait = BA_leader_092
+			set_leader_flag = leader_BA_Yuuka
+			change_leader_portrait = BA_leader_Yuuka
 			BA_event_leader_replace = {
-				Leader_flag = leader_BA_092
+				Leader_flag = leader_BA_Yuuka
 			}
 			BA_Halo_for_special_leader = yes
 		}
@@ -250,10 +250,10 @@ BA_Atsuko_SP = {
 		effect = {
 			set_leader_flag = leader_death_events_blocked
 			set_leader_flag = BA_event_leader
-			set_leader_flag = BA_Atsuko
-			change_leader_portrait = BA_leader_012
+			set_leader_flag = leader_BA_Atsuko
+			change_leader_portrait = BA_leader_Atsuko
 			BA_event_leader_replace = {
-				Leader_flag = leader_BA_012
+				Leader_flag = leader_BA_Atsuko
 			}
 			BA_Halo_for_special_leader = yes
 		}
@@ -276,10 +276,10 @@ BA_Saori_SP = {
 		effect = {
 			set_leader_flag = leader_death_events_blocked
 			set_leader_flag = BA_event_leader
-			set_leader_flag = BA_Saori
-			change_leader_portrait = BA_leader_011
+			set_leader_flag = leader_BA_Saori
+			change_leader_portrait = BA_leader_Saori
 			BA_event_leader_replace = {
-				Leader_flag = leader_BA_011
+				Leader_flag = leader_BA_Saori
 			}
 			BA_Halo_for_special_leader = yes
 		}
@@ -303,10 +303,10 @@ BA_Ui_SP = {
 		effect = {
 			set_leader_flag = leader_death_events_blocked
 			set_leader_flag = BA_event_leader
-			set_leader_flag = BA_Ui
-			change_leader_portrait = BA_leader_130
+			set_leader_flag = leader_BA_Ui
+			change_leader_portrait = BA_leader_Ui
 			BA_event_leader_replace = {
-				Leader_flag = leader_BA_130
+				Leader_flag = leader_BA_Ui
 			}
 			BA_Halo_for_special_leader = yes
 		}

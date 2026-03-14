@@ -691,9 +691,10 @@ country_event = {
 				event_leader = yes
 			}
 			last_created_leader = {
+				#TODO：改为先驱版
 				set_leader_flag = BA_event_leader
 				set_age = 16
-				change_leader_portrait = BA_leader_062
+				change_leader_portrait = BA_leader_Shigure
 			}
 			create_fleet = {
 				name = Soft_determination
@@ -2421,7 +2422,8 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_leader_093
+		# TODO:改为先驱版
+		portrait = BA_leader_Aris
 		room = BA_01_room
 	}
 	desc = {
@@ -2516,6 +2518,7 @@ country_event = {
 ########
 #测试用 全图视野 开启外域链路 建立联系
 country_event = {
+	# event BA_crisis.7777
 	id = BA_crisis.7777
 	is_triggered_only = yes
 	hide_window = yes

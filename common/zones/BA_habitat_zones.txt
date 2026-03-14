@@ -1,4 +1,4 @@
-########## 居住站起源政府区域 ##########
+### 居住站起源政府区域
 zone_BA_auto_goverment = {
 	icon = GFX_diplomatic_weight_large
 	base_buildtime = 240
@@ -28,9 +28,9 @@ zone_BA_auto_goverment = {
 	}
 }
 
-########## 城市，凝聚力 科研 贸易 ###########
+### 城市，凝聚力 科研 贸易
 zone_BA_auto_unity = {
-	icon = GFX_job_bureaucrat
+	icon = GFX_district_specialization_bureaucrat
 	base_buildtime = 180
 	### 预留标记 ###
 	potential = {
@@ -58,7 +58,7 @@ zone_BA_auto_unity = {
 }
 
 zone_BA_auto_commercial = {
-	icon = GFX_resource_trade_large
+	icon = GFX_district_specialization_trade
 	base_buildtime = 180
 	### 预留标记 ###
 	potential = {
@@ -83,7 +83,7 @@ zone_BA_auto_commercial = {
 	}
 }
 
-########## 专业区块 ##########
+### 专业区块
 zone_BA_auto_A = {
 	icon = GFX_diplomatic_weight_large
 	base_buildtime = 180
@@ -141,3 +141,175 @@ zone_BA_auto_B = {
 	}
 }
 
+zone_BA_auto_refinery = {
+	icon = GFX_resource_sr_pyroxenes_large
+	base_buildtime = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+	}
+	unlock = {
+	}
+	swap_type = BA_districts_auto_refinery
+	swap_type_weight = 5
+	resources = {
+		category = planet_zones
+		cost = {
+			energy = 200
+			sr_pyroxenes = 10
+		}
+		upkeep = {
+			sr_pyroxenes = 0.5
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		BA_auto_pop_sr_pyroxenes_produces_add = 1
+		BA_auto_pop_minerals_upkeep_add = 6
+	}
+	zone_sets = {
+		BA_habitat_specialist
+		BA_habitat_refinery
+	}
+	include = {
+		all
+	}
+}
+
+zone_BA_auto_sustainer = {
+	icon = GFX_district_specialization_factory
+	base_buildtime = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+	}
+	unlock = {
+	}
+	swap_type = BA_districts_auto_sustainer
+	swap_type_weight = 5
+	resources = {
+		category = planet_zones
+		cost = {
+			energy = 200
+			sr_pyroxenes = 10
+		}
+		upkeep = {
+			sr_pyroxenes = 0.5
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		BA_auto_pop_consumer_goods_produces_add = 4
+		BA_auto_pop_sr_pyroxenes_upkeep_add = 0.5
+	}
+	zone_sets = {
+		BA_habitat_specialist
+		BA_habitat_sustainer
+	}
+	include = {
+		all
+	}
+}
+
+zone_BA_auto_foundry = {
+	icon = GFX_district_specialization_betharian
+	base_buildtime = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+	}
+	unlock = {
+	}
+	swap_type = BA_districts_auto_foundry
+	swap_type_weight = 5
+	resources = {
+		category = planet_zones
+		cost = {
+			energy = 200
+			sr_pyroxenes = 10
+		}
+		upkeep = {
+			sr_pyroxenes = 0.5
+		}
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		BA_auto_pop_alloys_produces_add = 2
+		BA_auto_pop_sr_pyroxenes_upkeep_add = 0.5
+	}
+	zone_sets = {
+		BA_habitat_specialist
+		BA_habitat_foundry
+	}
+	include = {
+		all
+	}
+}
+
+zone_BA_auto_matrix = {
+	icon = GFX_district_specialization_research
+	base_buildtime = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+	}
+	unlock = {
+	}
+	swap_type = BA_districts_auto_matrix
+	swap_type_weight = 5
+	resources = {
+		category = planet_zones
+		cost = {
+			energy = 200
+			sr_pyroxenes = 10
+		}
+		upkeep = {
+			sr_pyroxenes = 0.5
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 300
+	}
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		BA_auto_pop_physics_research_produces_add = 8
+		BA_auto_pop_society_research_produces_add = 8
+		BA_auto_pop_engineering_research_produces_add = 8
+		BA_auto_pop_sr_pyroxenes_upkeep_add = 0.5
+	}
+	zone_sets = {
+		BA_habitat_specialist
+		BA_habitat_matrix
+	}
+	include = {
+		all
+	}
+}
