@@ -2523,6 +2523,11 @@ BA_check_rename_flag = {
 				}
 			}
 			#无类别
+			#禁用
+			modifier = {
+				factor = 0
+				always = yes
+			}
 			set_leader_flag = leader_BA_Sora
 		}
 		#川流诗音
