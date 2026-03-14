@@ -1,32 +1,96 @@
-@base_agenda_cost = 7000
-
-agenda_BA_SI_Trinity_A02 = {
-    agenda_cost = @base_agenda_cost
-    potential = {
-        has_authority = auth_kivotos
-        has_technology = tech_BA_SI_Trinity_A02
-    }
-    allow = {
-        always = yes
-    }
-    modifier = {
-        species_leader_exp_gain = 0.2
-    }
-    finish_modifier = modifier_agenda_BA_SI_Trinity_A02
+@BA_base_agenda_cost = 7000
+BA_explore = {
+	agenda_cost = @BA_base_agenda_cost
+	potential = {
+		has_civic = civic_BA_explore
+	}
+	modifier = {
+		science_ship_survey_speed = 0.25
+		ship_speed_mult = 0.25
+	}
+	finish_modifier = modifier_agenda_BA_explore
 }
 
-agenda_BA_SI_Trinity_A04 = {
-    agenda_cost = @base_agenda_cost
-    potential = {
-        has_authority = auth_kivotos
-        has_technology = tech_BA_SI_Trinity_A04
-    }
-    allow = {
-        always = yes
-    }
-    modifier = {
-        planet_jobs_produces_mult = 0.05
-        planet_jobs_upkeep_mult = 0.05
-    }
-    finish_modifier = modifier_agenda_BA_SI_Trinity_A04
+BA_Kivotos = {
+	agenda_cost = @BA_base_agenda_cost
+	potential = {
+		has_civic = civic_BA_Kivotos
+	}
+	modifier = {
+		ship_weapon_damage = 0.05
+		ship_fire_rate_mult = 0.05
+		ship_weapon_range_mult = 0.05
+	}
+	finish_modifier = modifier_agenda_BA_Kivotos
+	effect = {
+		every_owned_leader = {
+			limit = {
+				leader_class = commander
+			}
+			add_experience = 600
+		}
+	}
+}
+
+BA_guild_region = {
+	agenda_cost = @BA_base_agenda_cost
+	potential = {
+		has_civic = civic_BA_guild_region
+	}
+	modifier = {
+		planet_building_build_speed_mult = 0.15
+		planet_buildings_cost_mult = -0.15
+		planet_buildings_energy_upkeep_mult = -0.1
+	}
+	finish_modifier = modifier_agenda_BA_guild_region
+}
+
+BA_info_net = {
+	agenda_cost = @BA_base_agenda_cost
+	potential = {
+		has_civic = civic_BA_info_net
+	}
+	modifier = {
+		ship_sensor_range_add = 1
+	}
+	finish_modifier = modifier_agenda_BA_info_net
+}
+
+BA_federal_actuaries = {
+	agenda_cost = @BA_base_agenda_cost
+	potential = {
+		has_civic = civic_BA_federal_actuaries
+	}
+	modifier = {
+		country_trade_produces_mult = 0.2
+		country_energy_produces_mult = 0.2
+		planet_stability_add = -5
+	}
+	finish_modifier = modifier_agenda_BA_federal_actuaries
+}
+
+BA_digital_basis = {
+	agenda_cost = @BA_base_agenda_cost
+	potential = {
+		has_civic = civic_BA_digital_basis
+	}
+	modifier = {
+		all_technology_research_speed = 0.05
+		planet_decision_enact_speed_mult = 0.05
+		planet_pops_food_upkeep_mult = -0.05
+	}
+	finish_modifier = modifier_agenda_BA_digital_basis
+}
+
+BA_Omnia_Vanitas = {
+	agenda_cost = @BA_base_agenda_cost
+	potential = {
+		has_civic = civic_BA_Omnia_Vanitas
+	}
+	modifier = {
+		country_claim_influence_cost_mult = -0.5
+		starbase_shipyard_build_speed_mult = 0.25
+		starbase_shipyard_build_cost_mult = -0.1
+	}
+	finish_modifier = modifier_agenda_BA_Omnia_Vanitas
 }

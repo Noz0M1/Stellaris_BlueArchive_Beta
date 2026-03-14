@@ -66,21 +66,24 @@ BA_has_halo_machine = {
 ### AL-1S (leader scope)
 Aris_is_scientist = {
 	any_owned_leader = {
-		has_leader_flag = BA_Real_Aris
+		has_leader_flag = BA_event_leader
+		has_leader_flag = leader_BA_Aris
 		leader_class = scientist
 	}
 }
 
 Aris_is_official = {
 	any_owned_leader = {
-		has_leader_flag = BA_Real_Aris
+		has_leader_flag = BA_event_leader
+		has_leader_flag = leader_BA_Aris
 		leader_class = official
 	}
 }
 
 Aris_is_commander = {
 	any_owned_leader = {
-		has_leader_flag = BA_Real_Aris
+		has_leader_flag = BA_event_leader
+		has_leader_flag = leader_BA_Aris
 		leader_class = commander
 	}
 }

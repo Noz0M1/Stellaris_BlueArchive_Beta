@@ -19,7 +19,6 @@ origin_Kivotos_Eden_treaty = {
 	advanced_start = yes
 	flags = {
 		custom_start_screen
-		BA_start_at_campus_planet
 	}
 	modifier = {
 		country_leader_cap_add = 2
@@ -48,7 +47,6 @@ origin_Kivotos_Kyrie = {
 	advanced_start = yes
 	flags = {
 		custom_start_screen
-		origin_Kyrie
 	}
 	modifier = {
 		country_resource_max_add = 5000
@@ -68,9 +66,6 @@ origin_Kivotos_Unnamed_starting = {
 	initializers = {
 		BA_Kivotos_habitat_sys
 	}
-	playable = {
-		#always = no		#暂时关闭
-	}
 	possible = {
 		authority = {
 			value = auth_kivotos
@@ -79,8 +74,6 @@ origin_Kivotos_Unnamed_starting = {
 	description = origin_Kivotos_Unnamed_starting_effects
 	flags = {
 		custom_start_screen
-		BA_start_at_auto_habitat
-		origin_Kivotos_Unnamed_starting
 	}
 	random_weight = {
 		base = 0

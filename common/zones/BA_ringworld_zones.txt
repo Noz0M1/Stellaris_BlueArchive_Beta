@@ -33,7 +33,7 @@ zone_BA_ringworld_capital_mixed = {
 	zone_sets = {
 		BA_ringworld_capital
 	}
-	include = { 
+	include = {
 		all
 	}
 }
@@ -72,7 +72,7 @@ zone_BA_ringworld_capital_staff = {
 	zone_sets = {
 		BA_ringworld_capital
 	}
-	include = { 
+	include = {
 		all
 	}
 }
@@ -108,7 +108,7 @@ zone_BA_ringworld_capital_trade = {
 	zone_sets = {
 		BA_ringworld_capital
 	}
-	include = { 
+	include = {
 		all
 	}
 }
@@ -147,7 +147,7 @@ zone_BA_ringworld_capital_club = {
 	zone_sets = {
 		BA_ringworld_capital
 	}
-	include = { 
+	include = {
 		all
 	}
 }
@@ -192,10 +192,10 @@ zone_BA_ringworld_capital_military = {
 	zone_sets = {
 		BA_ringworld_capital
 	}
-	include = { 
+	include = {
 		all
 	}
-	include = { 
+	include = {
 		all
 	}
 }
@@ -234,11 +234,8 @@ zone_BA_ringworld_satellite_A = {
 		BA_ringworld_specialist
 		BA_ringworld_satellite
 	}
-	include = { 
+	include = {
 		all
-	}
-	planet_modifier = {
-		zone_building_slots_add = 3
 	}
 }
 
@@ -278,7 +275,7 @@ zone_BA_ringworld_satellite_B = {
 		BA_ringworld_specialist
 		BA_ringworld_satellite
 	}
-	include = { 
+	include = {
 		all
 	}
 }
@@ -329,11 +326,10 @@ zone_BA_ringworld_refinery_A = {
 		BA_ringworld_specialist
 		BA_ringworld_refinery
 	}
-	include = { 
+	include = {
 		all
 	}
 	triggered_desc = {
-
 	}
 }
 
@@ -376,7 +372,7 @@ zone_BA_ringworld_refinery_B = {
 		BA_ringworld_specialist
 		BA_ringworld_refinery
 	}
-	include = { 
+	include = {
 		all
 	}
 }
@@ -421,7 +417,7 @@ zone_BA_ringworld_factory_A = {
 		BA_ringworld_specialist
 		BA_ringworld_factory
 	}
-	include = { 
+	include = {
 		all
 	}
 }
@@ -465,7 +461,7 @@ zone_BA_ringworld_factory_B = {
 		BA_ringworld_specialist
 		BA_ringworld_factory
 	}
-	include = { 
+	include = {
 		all
 	}
 }
@@ -512,7 +508,7 @@ zone_BA_ringworld_matrix_A = {
 		BA_ringworld_specialist
 		BA_ringworld_matrix
 	}
-	include = { 
+	include = {
 		all
 	}
 }
@@ -555,7 +551,7 @@ zone_BA_ringworld_matrix_B = {
 		BA_ringworld_specialist
 		BA_ringworld_matrix
 	}
-	include = { 
+	include = {
 		all
 	}
 }

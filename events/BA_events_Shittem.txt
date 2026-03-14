@@ -1785,7 +1785,8 @@ country_event = {
 			}
 			NOT = {
 				any_owned_leader = {
-					has_leader_flag = BA_Hoshino
+					has_leader_flag = BA_event_leader
+					has_leader_flag = leader_BA_Hoshino
 				}
 			}
 		}
@@ -1804,7 +1805,8 @@ country_event = {
 			}
 			NOT = {
 				any_owned_leader = {
-					has_leader_flag = BA_Hina
+					has_leader_flag = BA_event_leader
+					has_leader_flag = leader_BA_Hina
 				}
 			}
 		}
@@ -1823,7 +1825,8 @@ country_event = {
 			}
 			NOT = {
 				any_owned_leader = {
-					has_leader_flag = BA_Mika
+					has_leader_flag = BA_event_leader
+					has_leader_flag = leader_BA_Mika
 				}
 			}
 		}
@@ -1842,7 +1845,8 @@ country_event = {
 			}
 			NOT = {
 				any_owned_leader = {
-					has_leader_flag = BA_Yuuka
+					has_leader_flag = BA_event_leader
+					has_leader_flag = leader_BA_Yuuka
 				}
 			}
 		}
@@ -1861,7 +1865,8 @@ country_event = {
 			}
 			NOT = {
 				any_owned_leader = {
-					has_leader_flag = BA_Atsuko
+					has_leader_flag = BA_event_leader
+					has_leader_flag = leader_BA_Atsuko
 				}
 			}
 		}
@@ -1880,7 +1885,8 @@ country_event = {
 			}
 			NOT = {
 				any_owned_leader = {
-					has_leader_flag = BA_Saori
+					has_leader_flag = BA_event_leader
+					has_leader_flag = leader_BA_Saori
 				}
 			}
 		}
@@ -1901,7 +1907,8 @@ country_event = {
 			}
 			NOT = {
 				any_owned_leader = {
-					has_leader_flag = BA_Ui
+					has_leader_flag = BA_event_leader
+					has_leader_flag = leader_BA_Ui
 				}
 			}
 		}
@@ -1969,7 +1976,8 @@ country_event = {
 				text = TRIGGER_Aris
 				NOT = {
 					any_owned_leader = {
-						has_leader_flag = BA_Real_Aris
+						has_leader_flag = BA_event_leader
+						has_leader_flag = leader_BA_Aris
 					}
 				}
 			}
@@ -2152,6 +2160,30 @@ country_event = {
 	inline_script = {
 		script = Leader/Shittem_ChangeSkin
 		Skin = SP
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = QB
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = IDL
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = WK
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = QP
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = HH
+	}
+	inline_script = {
+		script = Leader/Shittem_ChangeSkin
+		Skin = MG
 	}
 }
 
@@ -3795,7 +3827,8 @@ country_event = {
 		trigger = {
 			any_owned_leader = {
 				leader_class = scientist
-				has_leader_flag = BA_Real_Aris
+				has_leader_flag = BA_event_leader
+				has_leader_flag = leader_BA_Aris
 			}
 		}
 		text = BA_Shittem.3003.desc.scientist.a
@@ -3804,7 +3837,8 @@ country_event = {
 		trigger = {
 			any_owned_leader = {
 				leader_class = official
-				has_leader_flag = BA_Real_Aris
+				has_leader_flag = BA_event_leader
+				has_leader_flag = leader_BA_Aris
 			}
 		}
 		text = BA_Shittem.3003.desc.governor.a
@@ -3813,7 +3847,8 @@ country_event = {
 		trigger = {
 			any_owned_leader = {
 				leader_class = commander
-				has_leader_flag = BA_Real_Aris
+				has_leader_flag = BA_event_leader
+				has_leader_flag = leader_BA_Aris
 			}
 		}
 		text = BA_Shittem.3003.desc.admiral.a
@@ -3822,7 +3857,8 @@ country_event = {
 		trigger = {
 			any_owned_leader = {
 				leader_class = commander
-				has_leader_flag = BA_Real_Aris
+				has_leader_flag = BA_event_leader
+				has_leader_flag = leader_BA_Aris
 			}
 		}
 		text = BA_Shittem.3003.desc.general.a
