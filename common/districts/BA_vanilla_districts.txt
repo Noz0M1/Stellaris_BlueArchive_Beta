@@ -12,6 +12,7 @@ district_city = {
 	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
 	default_starting_district = yes
+	overlay_icon = GFX_district_government
 	zone_slots = {
 		slot_city_government
 		slot_city_01
@@ -27,6 +28,7 @@ district_city = {
 			uses_district_set = hive_world
 			uses_district_set = machine_world
 			uses_district_set = shattered_ring_world
+			uses_district_set = volcanic_world
 		}
 		is_special_colony_type = no
 	}
@@ -58,6 +60,7 @@ district_city = {
 			uses_district_set = hive_world
 			uses_district_set = machine_world
 			uses_district_set = shattered_ring_world
+			uses_district_set = volcanic_world
 		}
 		is_special_colony_type = no
 		NAND = {
@@ -68,7 +71,15 @@ district_city = {
 		}
 	}
 	allow = {
-		is_special_colony_type = no
+		hidden_trigger = {
+			is_special_colony_type = no
+		}
+		custom_tooltip = {
+			fail_text = arcology_project_construction_fail_tt
+			NOT = {
+				has_planet_flag = arcology_project_construction
+			}
+		}
 	}
 	conversion_ratio = 1
 	convert_to = {
@@ -169,6 +180,17 @@ district_city = {
 			planet_housing_add = 200
 		}
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_tankbound_empire = yes
+			}
+		}
+		modifier = {
+			job_production_overseer_add = 100
+		}
+	}
 	inline_script = {
 		script = districts/district_triggered_name_urban
 	}
@@ -184,6 +206,7 @@ district_rw_city = {
 	base_buildtime = @rw_district_buildtime
 	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
+	overlay_icon = GFX_district_government
 	zone_slots = {
 		slot_city_government
 		slot_city_01
@@ -228,7 +251,10 @@ district_rw_city = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2500
-		job_enforcer_add = @base_district_jobs
+	}
+	inline_script = {
+		script = jobs/enforcers_add
+		AMOUNT = @base_district_jobs
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -247,6 +273,7 @@ district_rw_city = {
 			owner = {
 				is_regular_empire = yes
 				is_fallen_empire = no
+				is_tankbound_empire = no
 			}
 		}
 		modifier = {
@@ -259,11 +286,39 @@ district_rw_city = {
 			owner = {
 				is_regular_empire = yes
 				is_fallen_empire = no
+				is_tankbound_empire = yes
+			}
+		}
+		modifier = {
+			job_production_overseer_add = 300
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_fallen_empire = no
 				has_active_tradition = tr_virtuality_4
+				is_tankbound_empire = no
 			}
 		}
 		modifier = {
 			job_clerk_add = 600
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_fallen_empire = no
+				has_active_tradition = tr_virtuality_4
+				is_tankbound_empire = yes
+			}
+		}
+		modifier = {
+			job_production_overseer_add = 600
 		}
 	}
 	triggered_planet_modifier = {
@@ -302,6 +357,17 @@ district_rw_city = {
 			planet_housing_add = 500
 		}
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_tankbound_empire = yes
+			}
+		}
+		modifier = {
+			job_production_overseer_add = 100
+		}
+	}
 	triggered_desc = {
 		trigger = {
 			planet = {
@@ -313,13 +379,7 @@ district_rw_city = {
 		}
 		text = arcane_generator_upkeep_desc
 	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-		}
-		text = job_clerk_effect_desc
+	inline_script = {
+		script = districts/district_triggered_name_urban
 	}
 }

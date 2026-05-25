@@ -9,18 +9,6 @@ is_organic_species = {
 	}
 }
 
-has_food_upkeep = {
-	species = {
-		OR = {
-			is_archetype = BIOLOGICAL
-			is_archetype = Schale
-		}
-	}
-	NOT = {
-		has_trait = trait_voidling
-	}
-}
-
 habitable_planet = {
 	OR = {
 		# vanilla

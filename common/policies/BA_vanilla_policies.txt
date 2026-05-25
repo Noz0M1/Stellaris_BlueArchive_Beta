@@ -8,6 +8,7 @@ diplomatic_stance = {
 			is_country_type = primitive
 			is_country_type = awakened_marauders
 			is_country_type = mirrored_country
+			is_country_type = exiled
 		}
 	}
 	allow = {
@@ -162,7 +163,7 @@ diplomatic_stance = {
 			# Cranky people:
 			modifier = {
 				factor = 0
-				has_ethic = ethic_fanatic_xenophobe
+				is_fanatic_xenophobe = yes
 			}
 			modifier = {
 				factor = 0.1
@@ -238,6 +239,7 @@ diplomatic_stance = {
 			OR = {
 				is_country_type = default
 				is_country_type = awakened_fallen_empire
+				is_country_type = exiled
 			}
 		}
 		valid = {
@@ -923,7 +925,7 @@ trade_policy = {
 		}
 		on_enabled = {
 			set_trade_conversions = {
-				trade = 0.75
+				trade = 0.5
 				consumer_goods = 0.25
 			}
 		}
@@ -956,8 +958,8 @@ trade_policy = {
 		}
 		on_enabled = {
 			set_trade_conversions = {
-				trade = 0.75
-				unity = 0.25
+				trade = 0.50
+				unity = 0.125
 			}
 		}
 		policy_flags = {
@@ -980,9 +982,9 @@ trade_policy = {
 		on_enabled = {
 			set_trade_conversions = {
 				trade = 0.5
-				energy = 0.1
-				consumer_goods = 0.2
-				unity = 0.2
+				energy = 0.15
+				consumer_goods = 0.15
+				unity = 0.075
 			}
 		}
 		policy_flags = {
@@ -1004,8 +1006,8 @@ trade_policy = {
 		}
 		on_enabled = {
 			set_trade_conversions = {
-				trade = 0.6
-				unity = 0.4
+				trade = 0.50
+				unity = 0.1875
 			}
 		}
 		policy_flags = {
@@ -1024,11 +1026,11 @@ trade_policy = {
 		}
 		on_enabled = {
 			set_trade_conversions = {
-				trade = 0.3
+				trade = 0.25
 				energy = 0.2
 				minerals = 0.2
 				food = 0.2
-				unity = 0.1
+				unity = 0.075
 			}
 		}
 		policy_flags = {

@@ -83,6 +83,7 @@ can_enter_system_by_jump = {
 			#Vanilla
 			has_star_flag = lcluster
 			has_star_flag = formless_system
+			has_star_flag = hyperthermia_system
 			#BA
 			has_star_flag = BA_FE_SYS
 		}
@@ -181,6 +182,7 @@ can_orbital_bombard = {
 						is_ship_size = voidworms_titan
 					}
 				}
+				has_country_flag = revengeful_patron
 				#	BA
 				is_country_type = Aris_mid
 			}
