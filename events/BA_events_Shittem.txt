@@ -208,6 +208,7 @@ country_event = {
 		is_ai = no
 		last_increased_tech = tech_BA_Shittem_starting
 		NOR = {
+			has_origin = origin_Kivotos_Eden_treaty
 			has_origin = origin_Kivotos_Kyrie
 			has_origin = origin_Kivotos_Unnamed_starting
 		}
@@ -216,6 +217,7 @@ country_event = {
 		if = {
 			limit = {
 				NOR = {
+					has_origin = origin_Kivotos_Eden_treaty
 					has_origin = origin_Kivotos_Kyrie
 					has_origin = origin_Kivotos_Unnamed_starting
 				}

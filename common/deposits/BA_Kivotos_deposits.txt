@@ -64,13 +64,13 @@ d_broken_Abydos_school = {
 				}
 			}
 			hidden_effect = {
-				#清除后给予flag并检测是否全部清除
-				set_Planet_flag = Abydos_was_fixed_flag
-				owner = {
-					country_event = {
-						id = BA_origin.0009
-					}
+				change_variable = {
+					which = BA_cleared_deposit
+					value = 1
 				}
+                planet_event = {
+                    id = BA_origin.0009
+                }
 			}
 		}
 	}
@@ -135,13 +135,13 @@ d_broken_Millennium_school = {
 				}
 			}
 			hidden_effect = {
-				#清除后给予flag并检测是否全部清除
-				set_Planet_flag = Millennium_was_fixed_flag
-				owner = {
-					country_event = {
-						id = BA_origin.0009
-					}
+				change_variable = {
+					which = BA_cleared_deposit
+					value = 1
 				}
+                planet_event = {
+                    id = BA_origin.0009
+                }
 			}
 		}
 	}
@@ -206,13 +206,13 @@ d_broken_Trinity_school = {
 				}
 			}
 			hidden_effect = {
-				#清除后给予flag并检测是否全部清除
-				set_Planet_flag = Trinity_was_fixed_flag
-				owner = {
-					country_event = {
-						id = BA_origin.0009
-					}
+				change_variable = {
+					which = BA_cleared_deposit
+					value = 1
 				}
+                planet_event = {
+                    id = BA_origin.0009
+                }
 			}
 		}
 	}
@@ -281,12 +281,12 @@ d_broken_Gehenna_school = {
 				}
 			}
 			hidden_effect = {
-				#清除后给予flag并检测是否全部清除
-				set_Planet_flag = Gehenna_was_fixed_flag
-				owner = {
-					country_event = {
-						id = BA_origin.0009
-					}
+				change_variable = {
+					which = BA_cleared_deposit
+					value = 1
+				}
+				planet_event = {
+					id = BA_origin.0009
 				}
 			}
 		}
@@ -443,7 +443,7 @@ d_broken_power_station = {
 	icon = d_broken_power_station
 	is_for_colonizable = yes
 	category = deposit_cat_blockers
-	time = 120	#花费120天
+	time = 120 #花费120天
 	resources = {
 		category = deposit_blockers
 		cost = {
@@ -486,7 +486,7 @@ d_broken_desert_mine = {
 	icon = d_broken_desert_mine
 	is_for_colonizable = yes
 	category = deposit_cat_blockers
-	time = 120	#花费120天
+	time = 120 #花费120天
 	resources = {
 		category = deposit_blockers
 		cost = {
