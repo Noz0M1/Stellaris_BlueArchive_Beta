@@ -1,10 +1,11 @@
 ##### Leaders
-BA_leader_is_renamed = {
+BA_leader_exempt_rename = {
 	# scope: leader
 	OR = {
-		has_leader_flag = BA_renamed
 		has_leader_flag = BA_event_leader
 		has_leader_flag = BA_sp_leader
+		is_same_value = owner.ruler
+		has_leader_flag = star_oath_ruler
 	}
 }
 
