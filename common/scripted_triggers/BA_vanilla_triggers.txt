@@ -9,6 +9,19 @@ is_organic_species = {
 	}
 }
 
+country_uses_food_game_start = {
+	OR = {
+		any_owned_species = {
+			OR = {
+				has_trait = trait_organic
+				is_archetype = Schale
+			}
+		}
+		country_uses_bio_ships = yes
+		is_catalytic_empire = yes
+	}
+}
+
 habitable_planet = {
 	OR = {
 		# vanilla

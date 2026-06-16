@@ -352,7 +352,7 @@ BA_hub_ship = {
 			}
 		}
 		custom_tooltip = {
-			fail_text = starbase_titan_yards_trigger
+			fail_text = starbase_capital_yards_trigger
 			OR = {
 				AND = {
 					is_scope_type = megastructure
@@ -363,7 +363,7 @@ BA_hub_ship = {
 				}
 				AND = {
 					is_scope_type = starbase
-					has_starbase_building = titan_yards
+					has_starbase_building = capital_yards
 				}
 				#				is_ship_size = enclave_mercenary_station
 			}

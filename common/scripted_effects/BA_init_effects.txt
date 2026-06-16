@@ -812,11 +812,9 @@ BA_fe_capital_initial = {
 	add_building = building_BA_fe_keystone
 	add_building = building_BA_fe_keystone
 	add_building = building_BA_fe_keystone
-	while = {
-		count = 55
-		create_pop = {
-			species = event_target:BA_Precursor_species
-		}
+	create_pop_group = {
+		species = event_target:BA_Precursor_species
+		size = 5500
 	}
 	set_capital = yes
 }
@@ -841,11 +839,9 @@ BA_fe_colony_initial = {
 	add_building = building_BA_fe_keystone
 	add_building = building_BA_fe_dome
 	add_building = building_BA_fe_dome
-	while = {
-		count = 10
-		create_pop = {
-			species = event_target:BA_Precursor_species
-		}
+	create_pop_group = {
+		species = event_target:BA_Precursor_species
+		size = 1000
 	}
 }
 
@@ -869,11 +865,9 @@ BA_fe_rw_initial = {
 	add_building = building_BA_fe_keystone
 	add_building = building_BA_fe_dome
 	add_building = building_BA_fe_dome
-	while = {
-		count = 25
-		create_pop = {
-			species = event_target:BA_Precursor_species
-		}
+	create_pop_group = {
+		species = event_target:BA_Precursor_species
+		size = 2500
 	}
 }
 
@@ -911,8 +905,7 @@ BA_fe_system_initial = {
 		module = gun_battery
 		building = target_uplink_computer
 		building = BA_fe_harbor
-		building = colossus_yards
-		building = titan_yards
+		building = capital_yards
 		owner = event_target:BA_Precursor_country
 		effect = {
 			while = {

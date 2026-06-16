@@ -322,6 +322,7 @@ country_event = {
 	is_triggered_only = yes
 	title = BA_Precursor.0016.title
 	desc = BA_Precursor.0016.desc
+    diplomatic = yes
 	picture_event_data = {
 		portrait = event_target:BA_Precursor_country
 		room = BA_01_room
@@ -445,8 +446,8 @@ ship_event = {
 				limit = {
 					has_planet_flag = BA_D_system_base
 				}
+				create_archaeological_site = BA_Dgate_arc_site
 			}
-			create_archaeological_site = BA_Dgate_arc_site
 		}
 	}
 }
@@ -811,28 +812,6 @@ country_event = {
 		is_dialog_only = yes
 		response_text = BA_Precursor.manual.re
 	}
-}
-
-country_event = {
-	id = BA_Precursor.0160
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_Window"
-	picture_event_data = {
-		portrait = BA_Seia
-		room = BA_01_room
-	}
-	title = BA_Precursor.trade.title
-	desc = BA_Precursor.trade.desc
-	#退出
-	option = {
-		name = BA_Precursor.exit
-		default_hide_option = yes
-	}
-	#获得点数
-	#虫洞交易
-	#飞船交易
-	#
 }
 
 country_event = {

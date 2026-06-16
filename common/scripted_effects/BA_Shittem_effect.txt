@@ -202,14 +202,9 @@ BA_Normal_commmission_09_bounce = {
 		sr_eligma = 50
 	}
 	capital_scope = {
-		create_pop = {
+		create_pop_group = {
 			species = event_target:BA_Robot_species
-		}
-		create_pop = {
-			species = event_target:BA_Robot_species
-		}
-		create_pop = {
-			species = event_target:BA_Robot_species
+			size = 300
 		}
 	}
 }
