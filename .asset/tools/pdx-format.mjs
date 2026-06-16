@@ -3,7 +3,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 
-const INDENT = " ".repeat(4);
+const INDENT = "\t";
 const INLINE_BLOCK_HEADS = new Set(["rgb", "hsv", "hsv360"]);
 
 function usage() {
@@ -153,6 +153,10 @@ function format(input) {
         last = "";
     }
 
+    function blankLine() {
+        if (lines.length > 0 && lines[lines.length - 1] !== "") lines.push("");
+    }
+
     function append(text, mode = "atom") {
         if (line.length === 0) {
             line = INDENT.repeat(Math.max(indent, 0)) + text;
@@ -218,6 +222,7 @@ function format(input) {
             indent -= 1;
             line = INDENT.repeat(Math.max(indent, 0)) + "}";
             flush();
+            if (indent === 0) blankLine();
             continue;
         }
 
@@ -239,6 +244,7 @@ function format(input) {
     }
 
     flush();
+    while (lines[lines.length - 1] === "") lines.pop();
     return lines.join("\n") + "\n";
 }
 

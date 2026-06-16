@@ -98,7 +98,7 @@ guiTypes = {
             iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
             iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
         }
-		buttonType = { name = "empire_flag" quadTextureSprite = "GFX_empire_flag_128_curator" position = { x = 75 y = 240 } orientation = UPPER_LEFT}
+		#buttonType = { name = "empire_flag" quadTextureSprite = "GFX_empire_flag_128_curator" position = { x = 75 y = 240 } orientation = UPPER_LEFT}
         iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
         instantTextBoxType = { name = "empire_name" font = "malgun_goth_24" } # hidden
         instantTextBoxType = { name = "empire_government_type" font = "cg_16b" } # hidden
@@ -539,7 +539,7 @@ guiTypes = {
             iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" } # hidden
             iconType = { name = "portrait" spriteType = "GFX_portrait_character" } # hidden
         }
-		buttonType = { name = "empire_flag" quadTextureSprite = "GFX_empire_flag_128_curator" position = { x = 75 y = 240 } orientation = UPPER_LEFT}
+		# buttonType = { name = "empire_flag" quadTextureSprite = "GFX_empire_flag_128_curator" position = { x = 75 y = 240 } orientation = UPPER_LEFT}
         iconType = { name = "empire_info_bg" spriteType = "GFX_diplomacy_dark_fade_bg" } # hidden
         instantTextBoxType = { name = "empire_name" font = "malgun_goth_24" } # hidden
         instantTextBoxType = { name = "empire_government_type" font = "cg_16b" } # hidden

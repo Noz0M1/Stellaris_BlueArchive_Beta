@@ -13,9 +13,9 @@ country_event = {
 		has_authority = auth_kivotos
 	}
 	immediate = {
-		set_global_flag = Kivotos_detected		#一系列突发事件触发用的flag，也是BA堕落帝国生成事件用的flag
-		set_country_flag = situation_machine_uprising_started		#防机械叛乱
-		set_country_flag = synth_detector		#防机械叛乱
+		set_global_flag = Kivotos_detected #一系列突发事件触发用的flag，也是BA堕落帝国生成事件用的flag
+		set_country_flag = situation_machine_uprising_started #防机械叛乱
+		set_country_flag = synth_detector #防机械叛乱
 		#创建Arona通讯界面国家
 		if = {
 			limit = {
@@ -488,7 +488,7 @@ country_event = {
 }
 
 #####################
-###    主界面   
+###    主界面
 #####################
 ### 触发器
 country_event = {
@@ -1671,7 +1671,6 @@ country_event = {
 # 		}
 # 	}
 # }
-
 leader_event = {
 	id = BA_Shittem.1310
 	is_triggered_only = yes
@@ -2490,10 +2489,10 @@ country_event = {
 	#      已完成：无flag或特定的flag
 	#K01
 	option = {
-		name = commmission.Kyrie_01_A		#A项 用于接受委托
+		name = commmission.Kyrie_01_A #A项 用于接受委托
 		trigger = {
 			#除了数字以外不用改
-			has_country_flag = BA_Kyrie_commmission_01_allow			#在别的地方激活触发许可才可以接受
+			has_country_flag = BA_Kyrie_commmission_01_allow #在别的地方激活触发许可才可以接受
 			NOT = {
 				has_country_flag = BA_Kyrie_commmission_01_accepted
 			}
@@ -2502,17 +2501,17 @@ country_event = {
 			#其他接受限制
 		}
 		is_dialog_only = yes
-		response_text = BA_Kyrie_commmission_01_A		#委托详情
-		set_country_flag = BA_Kyrie_commmission_01_accepted		#标记已接受
+		response_text = BA_Kyrie_commmission_01_A #委托详情
+		set_country_flag = BA_Kyrie_commmission_01_accepted #标记已接受
 		#需要其他效果自己加，比如下面这个，别忘了测试一下
 		add_research_option = tech_BA_ruins_research
 	}
 	option = {
-		name = commmission.Kyrie_01_B		#B项 用于领取奖励，loc直接引用上一个
-		custom_tooltip = BA_Kyrie_commmission_01_tip		#说明一下完成条件，防止星际玩家
+		name = commmission.Kyrie_01_B #B项 用于领取奖励，loc直接引用上一个
+		custom_tooltip = BA_Kyrie_commmission_01_tip #说明一下完成条件，防止星际玩家
 		trigger = {
 			#除了数字以外不用改
-			has_country_flag = BA_Kyrie_commmission_01_accepted			#还没接受委托就想领奖励？
+			has_country_flag = BA_Kyrie_commmission_01_accepted #还没接受委托就想领奖励？
 		}
 		allow = {
 			custom_tooltip_fail = {
@@ -2523,12 +2522,12 @@ country_event = {
 			#提交资源类的委托，需要加上资源库存判定
 		}
 		is_dialog_only = yes
-		response_text = BA_Kyrie_commmission_01_B		#领奖详情
+		response_text = BA_Kyrie_commmission_01_B #领奖详情
 		hidden_effect = {
 			#除了数字以外不用改
-			remove_country_flag = BA_Kyrie_commmission_01_allow			#移除触发许可
-			remove_country_flag = BA_Kyrie_commmission_01_accepted			#移除已接受标识
-			remove_country_flag = BA_Kyrie_commmission_01_finished			#移除完成标识，可以换成别的判断条件
+			remove_country_flag = BA_Kyrie_commmission_01_allow #移除触发许可
+			remove_country_flag = BA_Kyrie_commmission_01_accepted #移除已接受标识
+			remove_country_flag = BA_Kyrie_commmission_01_finished #移除完成标识，可以换成别的判断条件
 			#完成委托计数
 			change_variable = {
 				which = BA_commission_count
@@ -2671,7 +2670,7 @@ country_event = {
 	##### 伊甸条约起源 #####
 	#E01
 	option = {
-		name = commmission.EdenTreaty_01_A		#这个委托以后改
+		name = commmission.EdenTreaty_01_A #这个委托以后改
 		trigger = {
 			has_country_flag = BA_EdenTreaty_commmission_01_allow
 			NOT = {
@@ -2743,7 +2742,6 @@ country_event = {
 						has_building = building_research_lab_1
 						has_building = building_research_lab_2
 						has_building = building_research_lab_3
-
 					}
 				}
 			}
@@ -3199,7 +3197,7 @@ country_event = {
 			NOT = {
 				has_country_flag = BA_Normal_commission_11_accepted
 			}
-			always = no			#还没做完 以后改
+			always = no #还没做完 以后改
 		}
 		allow = {
 		}
@@ -4208,7 +4206,6 @@ country_event = {
 	}
 }
 
-
 ### 阿拜多斯
 #B01 B04-新殖民星球-沙漠开发 丰饶绿洲计划
 planet_event = {
@@ -4290,7 +4287,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Shittem.4013.title"
 	desc = "BA_Shittem.4013.desc"
-	picture = GFX_BA_Kivotos_highway	#TODO：改掉
+	picture = GFX_BA_Kivotos_highway #TODO：改掉
 	option = {
 		name = BA_Shittem.4013.next
 		add_resource = {
@@ -4305,7 +4302,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_Shittem.4014.title"
 	desc = "BA_Shittem.4014.desc"
-	picture = GFX_BA_Kivotos_highway	#TODO：改掉
+	picture = GFX_BA_Kivotos_highway #TODO：改掉
 	option = {
 		name = BA_Shittem.4014.next
 		add_resource = {
@@ -4505,7 +4502,7 @@ country_event = {
 		}
 		create_message = {
 			type = BA_SI_ACTIVATED
-			localization =  MESSAGE_BA_SI_ACTIVATED_Trinity_A03_DESC
+			localization = MESSAGE_BA_SI_ACTIVATED_Trinity_A03_DESC
 			days = @toast_message_days
 		}
 	}
@@ -5029,7 +5026,7 @@ country_event = {
 	title = "BLANK_TEXT"
 	desc = "BLANK_TEXT"
 	diplomatic = yes
-	custom_gui = "test_window"	#这行换成*.gui文件里的name
+	custom_gui = "test_window" #这行换成*.gui文件里的name
 	custom_gui_option = "BA_window_option"
 	option = {
 		name = BLANK_TEXT

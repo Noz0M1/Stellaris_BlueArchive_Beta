@@ -131,7 +131,9 @@ country_event = {
 		}
 	}
 	immediate = {
-		BA_change_skin_trait = yes
+        from = {
+            BA_change_skin_trait = yes
+        }
 	}
 }
 
@@ -174,7 +176,7 @@ leader_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-        has_total_skill >= 3
+		has_total_skill >= 3
 		species = {
 			BA_has_halo_organic = yes
 		}
