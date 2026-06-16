@@ -3,12 +3,10 @@
 #################
 # ASCENSION PATHS
 #################
-
 @ascension_path_base_weight = 100
 @ascension_path_synergy_weight = 2
 @ascension_path_anti_synergy_weight = 0.5
 @ascension_path_mindwardens_present = 0.3
-
 # Genetic Ascension  (regular empires & Hive Minds)
 ap_engineered_evolution = {
     on_enabled = {
@@ -18,7 +16,9 @@ ap_engineered_evolution = {
                 is_wilderness_empire = no
             }
             hidden_effect = {
-                country_event = { id = bio.1 }
+                country_event = {
+                    id = bio.1
+                }
             }
             custom_tooltip = "engineered_evolution_biogenesis_tt"
             set_country_flag = genomic_research_facility_unlocked
@@ -29,7 +29,9 @@ ap_engineered_evolution = {
                 is_wilderness_empire = yes
             }
             hidden_effect = {
-                country_event = { id = bio.1 }
+                country_event = {
+                    id = bio.1
+                }
             }
             custom_tooltip = "engineered_evolution_wilderness_tt"
         }
@@ -94,7 +96,6 @@ ap_engineered_evolution = {
             }
         }
     }
-
     potential = {
         NOR = {
             has_ascension_perk = ap_engineered_evolution
@@ -140,7 +141,6 @@ ap_engineered_evolution = {
         }
     }
 }
-
 # Cyborg Ascension (regular empires)
 ap_the_flesh_is_weak = {
     on_enabled = {
@@ -163,7 +163,9 @@ ap_the_flesh_is_weak = {
         }
         custom_tooltip = {
             fail_text = "requires_not_ap_engineered_evolution"
-            NOT = { has_ascension_perk = ap_engineered_evolution }
+            NOT = {
+                has_ascension_perk = ap_engineered_evolution
+            }
         }
         custom_tooltip = {
             fail_text = "requires_not_ap_mind_over_matter"
@@ -171,14 +173,15 @@ ap_the_flesh_is_weak = {
         }
         custom_tooltip = {
             fail_text = "requires_not_ap_synthetic_evolution"
-            NOT = { has_ascension_perk = ap_synthetic_evolution }
+            NOT = {
+                has_ascension_perk = ap_synthetic_evolution
+            }
         }
         custom_tooltip = {
             fail_text = "requires_free_tradition_tree"
             num_tradition_categories < @max_tradition_trees
         }
     }
-
     potential = {
         NOR = {
             has_ascension_perk = ap_the_flesh_is_weak
@@ -200,7 +203,9 @@ ap_the_flesh_is_weak = {
         is_natural_design_empire = no
         is_chosen_empire = no
         owner_species = {
-            NOT = { has_trait = trait_unplugged_decyberized }
+            NOT = {
+                has_trait = trait_unplugged_decyberized
+            }
         }
         is_entropy_drinkers_empire = no
         # BA
@@ -208,7 +213,6 @@ ap_the_flesh_is_weak = {
             has_authority = auth_kivotos
         }
     }
-
     ai_weight = {
         factor = @ascension_path_base_weight
         modifier = {
@@ -223,7 +227,6 @@ ap_the_flesh_is_weak = {
         }
     }
 }
-
 # Cyborg Ascension (Hive Minds)
 ap_organo_machine_interfacing = {
     on_enabled = {
@@ -236,22 +239,29 @@ ap_organo_machine_interfacing = {
         }
         custom_tooltip = {
             fail_text = "requires_not_ap_engineered_evolution"
-            NOT = { has_ascension_perk = ap_engineered_evolution }
+            NOT = {
+                has_ascension_perk = ap_engineered_evolution
+            }
         }
         if = {
-            limit = { has_shroud_dlc = yes }
+            limit = {
+                has_shroud_dlc = yes
+            }
             custom_tooltip = {
                 fail_text = "requires_not_ap_mind_over_matter"
                 has_psionic_ascension = no
             }
-            NOT = { country_has_situation = { SITUATION = situation_shroud_forged } }
+            NOT = {
+                country_has_situation = {
+                    SITUATION = situation_shroud_forged
+                }
+            }
         }
         custom_tooltip = {
             fail_text = "requires_free_tradition_tree"
             num_tradition_categories < @max_tradition_trees
         }
     }
-
     potential = {
         NOR = {
             has_ascension_perk = ap_organo_machine_interfacing
@@ -268,7 +278,6 @@ ap_organo_machine_interfacing = {
             has_authority = auth_kivotos
         }
     }
-
     ai_weight = {
         factor = @ascension_path_base_weight
         modifier = {
@@ -279,7 +288,6 @@ ap_organo_machine_interfacing = {
         }
     }
 }
-
 # Cyborg Ascension (Machine Intelligence: Driven Assimilators)
 ap_organo_machine_interfacing_assimilator = {
     on_enabled = {
@@ -292,22 +300,29 @@ ap_organo_machine_interfacing_assimilator = {
         }
         custom_tooltip = {
             fail_text = "requires_not_ap_synthetic_age"
-            NOT = { has_ascension_perk = ap_synthetic_age }
+            NOT = {
+                has_ascension_perk = ap_synthetic_age
+            }
         }
         if = {
-            limit = { has_shroud_dlc = yes }
+            limit = {
+                has_shroud_dlc = yes
+            }
             custom_tooltip = {
                 fail_text = "requires_not_ap_interdimensional_processing"
                 has_psionic_ascension = no
             }
-            NOT = { country_has_situation = { SITUATION = situation_shroud_forged } }
+            NOT = {
+                country_has_situation = {
+                    SITUATION = situation_shroud_forged
+                }
+            }
         }
         custom_tooltip = {
             fail_text = "requires_free_tradition_tree"
             num_tradition_categories < @max_tradition_trees
         }
     }
-
     potential = {
         NOR = {
             has_ascension_perk = ap_organo_machine_interfacing_assimilator
@@ -321,7 +336,6 @@ ap_organo_machine_interfacing_assimilator = {
             has_authority = auth_kivotos
         }
     }
-
     ai_weight = {
         factor = @ascension_path_base_weight
         modifier = {
@@ -336,7 +350,6 @@ ap_organo_machine_interfacing_assimilator = {
         }
     }
 }
-
 # Synthetic Ascension (regular empires)
 ap_synthetic_evolution = {
     on_enabled = {
@@ -378,7 +391,9 @@ ap_synthetic_evolution = {
     possible = {
         custom_tooltip = {
             fail_text = "synthetic_empire_synthetic_ascension"
-            NOT = { has_trait = trait_mechanical }
+            NOT = {
+                has_trait = trait_mechanical
+            }
         }
         custom_tooltip = {
             fail_text = "requires_ascension_perks_2"
@@ -386,11 +401,15 @@ ap_synthetic_evolution = {
         }
         custom_tooltip = {
             fail_text = "requires_not_ap_engineered_evolution"
-            NOT = { has_ascension_perk = ap_engineered_evolution }
+            NOT = {
+                has_ascension_perk = ap_engineered_evolution
+            }
         }
         custom_tooltip = {
             fail_text = "requires_not_ap_the_flesh_is_weak"
-            NOT = { has_ascension_perk = ap_the_flesh_is_weak }
+            NOT = {
+                has_ascension_perk = ap_the_flesh_is_weak
+            }
         }
         custom_tooltip = {
             fail_text = "requires_not_ap_mind_over_matter"
@@ -401,7 +420,6 @@ ap_synthetic_evolution = {
             num_tradition_categories < @max_tradition_trees
         }
     }
-
     potential = {
         NOR = {
             has_ascension_perk = ap_synthetic_evolution
@@ -416,10 +434,14 @@ ap_synthetic_evolution = {
         is_gestalt = no
         is_mechanical_empire = no
         is_natural_design_empire = no
-        NOT = { has_valid_civic = civic_augmentation_bazaars }
+        NOT = {
+            has_valid_civic = civic_augmentation_bazaars
+        }
         is_individual_machine = no
         owner_species = {
-            NOT = { has_trait = trait_unplugged_decyberized }
+            NOT = {
+                has_trait = trait_unplugged_decyberized
+            }
         }
         is_chosen_empire = no
         is_galvanic_empire = no
@@ -429,7 +451,6 @@ ap_synthetic_evolution = {
             has_authority = auth_kivotos
         }
     }
-
     ai_weight = {
         factor = @ascension_path_base_weight
         modifier = {
@@ -452,7 +473,6 @@ ap_synthetic_evolution = {
         }
     }
 }
-
 # Psionic Ascension
 ap_mind_over_matter = {
     on_enabled = {
@@ -461,7 +481,9 @@ ap_mind_over_matter = {
     possible = {
         custom_tooltip = {
             fail_text = "synthetic_empire_psionic_ascension"
-            NOT = { has_trait = trait_mechanical }
+            NOT = {
+                has_trait = trait_mechanical
+            }
         }
         if = {
             limit = {
@@ -484,19 +506,27 @@ ap_mind_over_matter = {
         }
         custom_tooltip = {
             fail_text = "requires_not_ap_engineered_evolution"
-            NOT = { has_ascension_perk = ap_engineered_evolution }
+            NOT = {
+                has_ascension_perk = ap_engineered_evolution
+            }
         }
         custom_tooltip = {
             fail_text = "requires_not_ap_the_flesh_is_weak"
-            NOT = { has_ascension_perk = ap_the_flesh_is_weak }
+            NOT = {
+                has_ascension_perk = ap_the_flesh_is_weak
+            }
         }
         custom_tooltip = {
             fail_text = "requires_not_ap_synthetic_evolution"
-            NOT = { has_ascension_perk = ap_synthetic_evolution }
+            NOT = {
+                has_ascension_perk = ap_synthetic_evolution
+            }
         }
         custom_tooltip = {
             fail_text = "requires_not_ap_synthetic_age"
-            NOT = { has_ascension_perk = ap_synthetic_age }
+            NOT = {
+                has_ascension_perk = ap_synthetic_age
+            }
         }
         custom_tooltip = {
             fail_text = "requires_not_ap_organo_machine_interfacing"
@@ -519,7 +549,9 @@ ap_mind_over_matter = {
             }
         }
         if = {
-            limit = { has_origin = origin_shroud_forged }
+            limit = {
+                has_origin = origin_shroud_forged
+            }
             if = {
                 limit = {
                     any_situation = {
@@ -534,12 +566,13 @@ ap_mind_over_matter = {
             else = {
                 custom_tooltip = {
                     fail_text = "shroud_forged_liberation_acquired"
-                    NOT = { has_country_flag = finish_shroud_forged_liberation_flag }
+                    NOT = {
+                        has_country_flag = finish_shroud_forged_liberation_flag
+                    }
                 }
             }
         }
     }
-
     potential = {
         NOR = {
             has_country_flag = ratling_country
@@ -562,7 +595,9 @@ ap_mind_over_matter = {
                     is_cyborg_empire = no
                     AND = {
                         has_origin = origin_unplugged
-                        NOT = { has_country_flag = is_cyberized }
+                        NOT = {
+                            has_country_flag = is_cyberized
+                        }
                     }
                 }
                 is_individual_machine = no
@@ -570,15 +605,18 @@ ap_mind_over_matter = {
         }
         is_natural_design_empire = no
         if = {
-            limit = { has_origin = origin_shroud_forged }
-            NOT = { has_country_flag = finish_shroud_forged_control_flag }
+            limit = {
+                has_origin = origin_shroud_forged
+            }
+            NOT = {
+                has_country_flag = finish_shroud_forged_control_flag
+            }
         }
         # BA
         NOT = {
             has_authority = auth_kivotos
         }
     }
-
     tradition_swap = {
         name = ap_interdimensional_processing
         inherit_name = no
@@ -588,9 +626,10 @@ ap_mind_over_matter = {
             has_shroud_dlc = yes
             is_synthetic_empire = yes
         }
-        weight = { factor = 1 }
+        weight = {
+            factor = 1
+        }
     }
-
     ai_weight = {
         factor = @ascension_path_base_weight
         modifier = {
@@ -599,7 +638,9 @@ ap_mind_over_matter = {
                 has_mind_over_matter_synergy = yes
                 any_country = {
                     has_origin = origin_mindwardens
-                    NOT = { is_same_value = prev }
+                    NOT = {
+                        is_same_value = prev
+                    }
                 }
             }
         }
@@ -631,7 +672,6 @@ ap_mind_over_matter = {
         }
     }
 }
-
 # Synthetic Ascension (Machine Intelligence or Individualistic Machine)
 ap_synthetic_age = {
     potential = {
@@ -652,7 +692,6 @@ ap_synthetic_age = {
             has_authority = auth_kivotos
         }
     }
-
     possible = {
         custom_tooltip = {
             fail_text = "requires_ascension_perks_2"
@@ -660,7 +699,9 @@ ap_synthetic_age = {
         }
         custom_tooltip = {
             fail_text = "requires_not_ap_organo_machine_interfacing"
-            NOT = { has_ascension_perk = ap_organo_machine_interfacing_assimilator }
+            NOT = {
+                has_ascension_perk = ap_organo_machine_interfacing_assimilator
+            }
         }
         if = {
             limit = {
@@ -670,16 +711,18 @@ ap_synthetic_age = {
                 fail_text = "requires_not_ap_interdimensional_processing"
                 has_psionic_ascension = no
             }
-            NOT = { country_has_situation = { SITUATION = situation_shroud_forged } }
+            NOT = {
+                country_has_situation = {
+                    SITUATION = situation_shroud_forged
+                }
+            }
         }
         custom_tooltip = {
             fail_text = "requires_free_tradition_tree"
             num_tradition_categories < @max_tradition_trees
         }
     }
-
     custom_tooltip = "synthetic_age_tooltip"
-
     tradition_swap = {
         inherit_name = yes
         inherit_effects = no
@@ -690,15 +733,15 @@ ap_synthetic_age = {
         custom_tooltip = "synthetic_age_tooltip_machine_age"
         on_enabled = {
             hidden_effect = {
-                country_event = { id = machine_age.4000 }
+                country_event = {
+                    id = machine_age.4000
+                }
             }
         }
-
         weight = {
             factor = 1
         }
     }
-
     ai_weight = {
         factor = @ascension_path_base_weight
         modifier = {
