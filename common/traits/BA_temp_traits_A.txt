@@ -2,6 +2,10 @@
 leader_club_default = {
 	icon = "gfx/interface/icons/skill_icons/Icon_BA_traits_B12.dds"
 	randomized = no
+	councilor_modifier = {
+		#决议颁布速度+10%，清理地块障碍速度+25%，清障花费-15%
+		planet_jobs_upkeep_mult = -0.1
+	}
 	leader_class = all
 	selectable_weight = 0
 	sorting_priority = 999

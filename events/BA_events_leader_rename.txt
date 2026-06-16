@@ -142,15 +142,8 @@ country_event = {
 	hide_window = yes
 	trigger = {
 		has_global_flag = BA_leader_rename_activated
-		NOT = {
-			has_country_flag = BA_leader_rename_modification_action
-		}
 	}
 	immediate = {
-		set_timed_country_flag = {
-			flag = BA_leader_rename_modification_action
-			days = 5
-		}
 		BA_set_rename_fix_flag = yes
 		BA_iterate_rename_fix_flag = yes
 	}
@@ -181,7 +174,7 @@ leader_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		has_skill >= 3
+        has_total_skill >= 3
 		species = {
 			BA_has_halo_organic = yes
 		}

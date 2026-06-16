@@ -69,7 +69,7 @@ country_event = {
 		create_species = {
 			name = "NAME_BA_Precursor_species"
 			class = Schale
-			portrait = Schale_pr
+			portrait = Schale
 			traits = {
 				trait = trait_pc_ringworld_habitable_preference
 				trait = trait_Halo_precursor
@@ -599,7 +599,7 @@ country_event = {
 	force_open = yes
 	custom_gui = "BA_Window"
 	picture_event_data = {
-		portrait = event_target:BA_Precursor_country
+		portrait = fromfrom
 		room = BA_01_room
 	}
 	immediate = {

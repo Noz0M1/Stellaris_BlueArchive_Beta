@@ -100,7 +100,7 @@ Aris_mid = {
 }
 
 Moe_Xcom = {
-	scaled_difficulty_bonuses = 1	# scales to setting
+	scaled_difficulty_bonuses = 2		# scales to setting
 	counts_for_victory = yes
 	sub_title = "NAME_BA_Precursor_country_title"
 	sub_title_desc = "NAME_BA_Precursor_country_desc"
@@ -123,7 +123,7 @@ Moe_Xcom = {
 	#
 	ai = {
 		enabled = yes
-		declare_war = yes
+		declare_war = no
 		min_navy_for_wars = 0
 		min_assault_armies_for_wars = @armies_for_declaring_war
 		colonizer = no

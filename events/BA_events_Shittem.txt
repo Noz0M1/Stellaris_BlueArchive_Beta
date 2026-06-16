@@ -1376,11 +1376,9 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			capital_scope = {
-				leader = {
-					leader_event = {
-						id = BA_Shittem.1310
-					}
+			capital_scope.leader = {
+				leader_event = {
+					id = BA_Shittem.1310
 				}
 			}
 		}
@@ -1388,7 +1386,6 @@ country_event = {
 	option = {
 		name = BA_rename_fix
 		custom_tooltip = BA_rename_fix.tip
-		is_dialog_only = yes
 		response_text = BA_rename_fix.re
 		hidden_effect = {
 			country_event = {
@@ -1661,37 +1658,39 @@ country_event = {
 	}
 }
 
-##换装
+## 换装
+# leader_event = {
+# 	id = BA_Shittem.1310
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	immediate = {
+# 		owner = {
+# 			country_event = {
+# 				id = BA_Shittem.1311
+# 			}
+# 		}
+# 	}
+# }
+
 leader_event = {
 	id = BA_Shittem.1310
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		owner = {
-			country_event = {
-				id = BA_Shittem.1311
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BA_Shittem.1311
 	is_triggered_only = yes
 	title = BA_Shittem.1311.title
 	desc = BA_Shittem.1311.desc
 	diplomatic = yes
 	custom_gui = BA_window
 	picture_event_data = {
-		portrait = Arona0003
+		portrait = this
 		room = BA_03_room
 	}
 	option = {
 		name = BA_Shittem.1311.exit
 		default_hide_option = yes
 		hidden_effect = {
-			country_event = {
-				id = BA_Shittem.1300
+			from = {
+				country_event = {
+					id = BA_Shittem.1300
+				}
 			}
 		}
 	}
@@ -1701,14 +1700,12 @@ country_event = {
 		response_text = BA_Shittem.1311.ORG.re
 		custom_tooltip = BA_Shittem.1311.ORG.tip
 		hidden_effect = {
-			from = {
-				BA_remove_skin = yes
-				if = {
-					limit = {
-						has_total_skill > 2
-					}
-					BA_change_skin_trait = yes
+			BA_remove_skin = yes
+			if = {
+				limit = {
+					has_total_skill > 2
 				}
+				BA_change_skin_trait = yes
 			}
 		}
 	}
