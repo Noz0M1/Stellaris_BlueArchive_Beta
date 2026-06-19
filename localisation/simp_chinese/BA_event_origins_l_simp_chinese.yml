@@ -302,15 +302,29 @@
  BA_origin.2102.tip:0 "将首都迁回学园都市星球。\n其上的$d_fade_Sanctum_zone$已经恢复原状，可以进行清理了。"
 
 
- BA_origin.2111.title:0 "自动化区划研究"
- BA_origin.2111.desc:0 "“老师，我们对自动化区划的研究有结论了！原来我们之前在仿制设备的时候没有考虑到青辉石对空间的扭曲作用，才导致一些微小的错误被不断的放大，最后导致宕机。现在我们已经有成熟的解决方案了……Arona这就通知各个D.U.，通知她们改建设备。”"
+ BA_origin.2111.title:0 "方舟自动化研究：阶段完成"
+ BA_origin.2111.desc:0 "“老师，我们对方舟自动化设施的研究有结论了！原来我们在仿制设备时没有考虑青辉石对空间的扭曲作用，才导致微小误差不断放大，最后引发宕机。现在已经有成熟的修正方案了……Arona这就通知各个D.U.舱段改建设备。”"
  BA_origin.2111.next:0 "太棒了。"
- BA_origin.2111.next.tip:0 "自动化区划生产效率已经§Y部分恢复§!。"
+ BA_origin.2111.next.tip:0 "自动化系统已经§Y部分恢复§!：方舟舰行动速度§G+10%§!，岗位产出§G+5%§!。"
 
- BA_origin.2112.title:0 "自动化区划研究"
- BA_origin.2112.desc:0 "“老师，统括室已经完全理解了自动化区划的工作机制，产线布置的逻辑异常也已经修复！现在，我们自己建造的自动化区划已经和方舟上的原装设备别无二致了！”"
+ BA_origin.2112.title:0 "方舟自动化研究：全部完成"
+ BA_origin.2112.desc:0 "“老师，统括室已经完全理解方舟自动化系统的工作机制，产线布置和主控逻辑中的异常也全部修复了！现在各个舱段的自动化设备终于能够发挥完整性能！”"
  BA_origin.2112.next:0 "太棒了。"
- BA_origin.2112.next.tip:0 "自动化区划生产效率已经§B全部恢复§!。"
+ BA_origin.2112.next.tip:0 "自动化系统已经§B全部恢复§!：方舟舰行动速度§G+20%§!，岗位产出§G+10%§!。"
+
+ BA_origin.2120.title:0 "方舟自动化研究"
+ BA_origin.2120.desc:0 "方舟舰能够航行，并不意味着它已经处于最佳状态。大量自动化设施仍然沿用战时拼凑的控制逻辑，青辉石引发的空间扰动也令故障不断积累。统括室提交了一份分为两个阶段的研究计划；它将与方舟舰整备工作同步进行。"
+ BA_origin.2120.next:0 "将研究计划列入日志。"
+
+ BA_ark_automation_chain_title:0 "方舟自动化研究"
+ BA_ark_automation_chain_desc:0 "研究并修复方舟舰自动化设施中由仿制误差与青辉石空间扰动引发的系统性故障。"
+ BA_ark_automation_items:0 "已完成研究阶段"
+ BA_ARK_AUTOMATION_RESEARCH_1:0 "自动化控制逻辑校正"
+ BA_ARK_AUTOMATION_RESEARCH_1_DESC:0 "当库存中同时拥有§Y300§!£consumer_goods£消费品与§Y100§!£sr_pyroxenes£青辉石时，统括室会自动拨付这些资源并开始研究。研究耗时§Y24个月§!。"
+ BA_ARK_AUTOMATION_RESEARCH_PROGRESS_1:0 "控制逻辑校正进度"
+ BA_ARK_AUTOMATION_RESEARCH_2:0 "自动化产线全面重构"
+ BA_ARK_AUTOMATION_RESEARCH_2_DESC:0 "第一阶段完成后，当库存中同时拥有§Y600§!£consumer_goods£消费品与§Y200§!£sr_pyroxenes£青辉石时，统括室会自动拨付这些资源并开始研究。研究耗时§Y60个月§!。"
+ BA_ARK_AUTOMATION_RESEARCH_PROGRESS_2:0 "产线重构进度"
 
 
 

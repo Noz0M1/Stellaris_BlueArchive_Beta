@@ -2547,6 +2547,8 @@ country_event = {
 	trigger = {
 		has_authority = auth_kivotos
 		has_origin = origin_Kivotos_Unnamed_starting
+		# 旧版固定居住站起源的兼容保险；新版同键值起源只允许游牧国家。
+		is_nomadic = no
 	}
 	immediate = {
 		if = {
@@ -3212,15 +3214,11 @@ country_event = {
 		room = "BA_Shittem_room"
 	}
 	immediate = {
-		every_owned_planet = {
-			limit = {
-				has_modifier = modifier_BA_origin_station_1
-			}
-			remove_modifier = modifier_BA_origin_station_1
-			add_modifier = {
-				modifier = modifier_BA_origin_station_2
-			}
+		remove_modifier = modifier_BA_arkship_automation_2
+		add_modifier = {
+			modifier = modifier_BA_arkship_automation_1
 		}
+		set_country_flag = BA_ark_automation_research_1_finished
 	}
 	option = {
 		name = BA_origin.2111.next
@@ -3241,19 +3239,45 @@ country_event = {
 		room = "BA_Shittem_room"
 	}
 	immediate = {
-		every_owned_planet = {
-			limit = {
-				has_modifier = modifier_BA_origin_station_2
-			}
-			remove_modifier = modifier_BA_origin_station_2
+		remove_modifier = modifier_BA_arkship_automation_1
+		add_modifier = {
+			modifier = modifier_BA_arkship_automation_2
 		}
+		set_country_flag = BA_ark_automation_research_2_finished
 	}
 	option = {
 		name = BA_origin.2112.next
 		custom_tooltip = BA_origin.2112.next.tip
-		hidden_effect = {
-			remove_point_of_interest = BA_Unnamed_starting_chain_point_B
+	}
+}
+
+#方舟自动化研究任务链初始化
+country_event = {
+	id = BA_origin.2120
+	is_triggered_only = yes
+	title = BA_origin.2120.title
+	desc = BA_origin.2120.desc
+	picture = GFX_origin_station
+	auto_opens = no
+	trigger = {
+		has_origin = origin_Kivotos_Unnamed_starting
+		is_nomadic = yes
+		NOT = {
+			has_country_flag = BA_ark_automation_chain_started
 		}
+	}
+	immediate = {
+		set_country_flag = BA_ark_automation_chain_started
+		begin_event_chain = {
+			event_chain = BA_ark_automation_chain
+			target = capital_scope.ship
+		}
+		enable_mission = {
+			name = BA_ARK_AUTOMATION_RESEARCH_1
+		}
+	}
+	option = {
+		name = BA_origin.2120.next
 	}
 }
 

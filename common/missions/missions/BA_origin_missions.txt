@@ -1,0 +1,145 @@
+#### 方舟自动化研究 ####
+
+BA_ARK_AUTOMATION_RESEARCH_1 = {
+	desc = BA_ARK_AUTOMATION_RESEARCH_1_DESC
+	event_chain = BA_ark_automation_chain
+	picture = GFX_origin_station
+	icon = "gfx/interface/icons/situation_log/situation_log_engineering.dds"
+
+	counter = {
+		BA_ARK_AUTOMATION_RESEARCH_PROGRESS_1 = {
+			max = 24
+		}
+	}
+
+	abort_trigger = {
+		OR = {
+			is_nomadic = no
+			NOT = {
+				has_origin = origin_Kivotos_Unnamed_starting
+			}
+		}
+	}
+
+	on_monthly = {
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = BA_ark_automation_research_1_active
+				}
+				resource_stockpile_compare = {
+					resource = consumer_goods
+					value >= 300
+				}
+				resource_stockpile_compare = {
+					resource = sr_pyroxenes
+					value >= 100
+				}
+			}
+			add_resource = {
+				consumer_goods = -300
+				sr_pyroxenes = -100
+			}
+			set_country_flag = BA_ark_automation_research_1_active
+		}
+		if = {
+			limit = {
+				has_country_flag = BA_ark_automation_research_1_active
+			}
+			add_mission_counter = {
+				mission = BA_ARK_AUTOMATION_RESEARCH_1
+				counter = BA_ARK_AUTOMATION_RESEARCH_PROGRESS_1
+				amount = 1
+			}
+		}
+	}
+
+	on_success = {
+		add_event_chain_counter = {
+			event_chain = BA_ark_automation_chain
+			counter = BA_ark_automation_items
+			amount = 1
+		}
+		country_event = {
+			id = BA_origin.2111
+		}
+		enable_mission = {
+			name = BA_ARK_AUTOMATION_RESEARCH_2
+		}
+	}
+
+	on_stop = {
+		remove_country_flag = BA_ark_automation_research_1_active
+	}
+}
+
+BA_ARK_AUTOMATION_RESEARCH_2 = {
+	desc = BA_ARK_AUTOMATION_RESEARCH_2_DESC
+	event_chain = BA_ark_automation_chain
+	picture = GFX_origin_station
+	icon = "gfx/interface/icons/situation_log/situation_log_engineering.dds"
+
+	counter = {
+		BA_ARK_AUTOMATION_RESEARCH_PROGRESS_2 = {
+			max = 60
+		}
+	}
+
+	abort_trigger = {
+		OR = {
+			is_nomadic = no
+			NOT = {
+				has_origin = origin_Kivotos_Unnamed_starting
+			}
+		}
+	}
+
+	on_monthly = {
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = BA_ark_automation_research_2_active
+				}
+				resource_stockpile_compare = {
+					resource = consumer_goods
+					value >= 600
+				}
+				resource_stockpile_compare = {
+					resource = sr_pyroxenes
+					value >= 200
+				}
+			}
+			add_resource = {
+				consumer_goods = -600
+				sr_pyroxenes = -200
+			}
+			set_country_flag = BA_ark_automation_research_2_active
+		}
+		if = {
+			limit = {
+				has_country_flag = BA_ark_automation_research_2_active
+			}
+			add_mission_counter = {
+				mission = BA_ARK_AUTOMATION_RESEARCH_2
+				counter = BA_ARK_AUTOMATION_RESEARCH_PROGRESS_2
+				amount = 1
+			}
+		}
+	}
+
+	on_success = {
+		add_event_chain_counter = {
+			event_chain = BA_ark_automation_chain
+			counter = BA_ark_automation_items
+			amount = 1
+		}
+		country_event = {
+			id = BA_origin.2112
+		}
+		end_event_chain = BA_ark_automation_chain
+	}
+
+	on_stop = {
+		remove_country_flag = BA_ark_automation_research_2_active
+	}
+}

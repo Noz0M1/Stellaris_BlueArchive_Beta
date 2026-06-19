@@ -1,0 +1,88 @@
+# “未命名的始发点”游牧起源与“方舟联合议会”的专用开局星系。
+# 星系只保留失落故乡的残骸；实际首都由游牧机制生成为方舟舰。
+BA_Kivotos_nomad_sys = {
+	name = "sys.Kivotos.name"
+	class = sc_k
+	usage = nomad_init
+	usage_odds = 0
+
+	flags = {
+		BA_KIVOTOS_SYS_flag
+		empire_home_system
+	}
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		name = "sys.Kivotos.stellar.name"
+		class = pc_k_star
+		orbit_distance = 0
+		flags = { BA_Kivotos_S_flag }
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	planet = {
+		name = "sys.Kivotos.home.name"
+		class = pc_shattered
+		orbit_distance = 60
+		orbit_angle = 135
+		size = 20
+		has_ring = no
+		flags = {
+			BA_Kivotos_lost_home
+			BA_Project_Cradle_target
+		}
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_alloys_3
+			add_deposit = d_engineering_3
+		}
+	}
+
+	planet = {
+		name = "sys.Kivotos.Brilliant.name"
+		class = pc_barren
+		orbit_distance = 30
+		orbit_angle = 225
+		size = 21
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	planet = {
+		name = "sys.Kivotos.Metal.name"
+		class = pc_gas_giant
+		orbit_distance = 40
+		orbit_angle = 45
+		size = 25
+		has_ring = yes
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	planet = {
+		name = "sys.Kivotos.Sparkle.name"
+		class = pc_barren_cold
+		orbit_distance = 30
+		orbit_angle = 60
+		size = 27
+		has_ring = yes
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+}

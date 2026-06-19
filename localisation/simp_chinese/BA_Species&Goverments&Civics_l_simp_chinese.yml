@@ -66,10 +66,10 @@
 
  DUUSS:0 "STUSS"
  EMPIRE_DESIGN_BA_DUU:0 "方舟联合议会"
- EMPIRE_DESIGN_BA_DUU_desc:0 "基沃托斯在虚妄之塔的进攻下失守后，我们的一部分幸存者逃往太空，以那里的空间站作为据点保留了我们最后的火种。克服了最开始的困难后，我们扎根于太空，一座又一座的新空间站被建立。虽然也曾有过压迫、反抗、怀疑和纷争，但现在我们怀着一致的目标联合在一起。这星点的火花，即将带着燃尽一切的力量重返家园。"
- START_SCREEN_UNNAMED:0 "太空中的生活与昔日大不相同，我们至今仍向往着往日在大地上奔跑、喧闹的日子。武器已经就绪，我们已不像以前那么弱小。我们的故土不会就这样被遗忘，我们已经迫不及待，在这一次的新起点，开始新的故事。"
+ EMPIRE_DESIGN_BA_DUU_desc:0 "基沃托斯在虚妄之塔的进攻下失守后，一部分幸存者登上方舟舰，将最后的火种带入群星。我们不再把希望寄托于另一座静止的家园：移动的学园都市、沿途建立的驿站与彼此守望的舰队，就是新的基沃托斯。虽然也曾有过压迫、反抗、怀疑和纷争，但如今四座方舟已经组成联合议会，准备在无尽航路上书写新的故事。"
+ START_SCREEN_UNNAMED:0 "太空中的生活与昔日大不相同。如今，方舟舰既是我们的学园都市，也是我们的家园；后勤船采集沿途资源，驿站在群星间连成航路。我们不会再被一颗星球束缚，也不会遗忘曾经失去的一切。从这未命名的始发点启航，新的基沃托斯将与舰队一同前进。"
  START_SCREEN_BA_DUU:0 "$EMPIRE_DESIGN_BA_DUU_desc$"
-
+ sys.Kivotos.habitat.1.name:0 "阿特拉哈西斯"
  
 ###############################
 #物种特质
@@ -277,8 +277,8 @@
  origin_Kivotos_Kyrie_effects:0 "-以一颗学园都市废墟星球作为母星，对废墟的开发会带来灾害\n§R-需要在事态不可挽回前完成学园都市星球的重建，否则……§!"
 
  origin_Kivotos_Unnamed_starting:0 "未命名的始发点"
- origin_Kivotos_Unnamed_starting_desc:0 "我们在那次战争中失去了家园，但我们顽强的在星空中奋战，最后扎根。抛却悲痛，我们重新建立了另一种形式的学园都市，并最终掌握了未来的最后一片拼图。从这满是奇迹的始发点开始，我们要夺回家园、迈向星河。"
- origin_Kivotos_Unnamed_starting_effects:0 "-在['concept_auto_habitat']上开局，而非在母星\n-开局拥有建造和升级['concept_auto_habitat']相关科技\n§R-全局唯一，其余玩家将被替换为§Y$origin_Kivotos_Eden_treaty$§R起源\n-此起源的制作尚不完整，请谨慎选择§!"
+ origin_Kivotos_Unnamed_starting_desc:0 "我们在那次战争中失去了家园，却没有让文明的火种随之熄灭。幸存者将学园、工厂与城市装入巨大的方舟舰，从此不再扎根于任何一颗星球。旧日故乡已经远去，而舰队所至之处，便是新的基沃托斯。"
+ origin_Kivotos_Unnamed_starting_effects:0 "—§Y游牧起源§!\n—以一艘£arkship£ ['concept_arkship',科研方舟舰]作为移动首都\n—使用£construction_ship£ ['concept_logistic_ships',后勤船]采集资源，并以£waystation£ ['concept_waystations',驿站]建立航路\n—§G+20%§!方舟舰行动速度、调查速度、驿站建造速度与虚空技术研究速度\n—§G+50%§!舰船船体与装甲修复速度"
 
 
 

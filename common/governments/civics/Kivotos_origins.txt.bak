@@ -59,14 +59,14 @@ origin_Kivotos_Kyrie = {
 # 未命名的始发点
 origin_Kivotos_Unnamed_starting = {
 	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_Kivotos_Kyrie.dds"
-	picture = GFX_origin_station
-	non_colonizable_planet_class_neighbor = yes
+	icon = "gfx/interface/icons/origins/origins_Kivotos_Kyrie.dds"	#先用着 以后改
+	picture = GFX_origin_station	#先用着 以后改
+	starting_colony = pc_BA_auto_habitat
+	preferred_planet_class_neighbor = no
 	initializers = {
 		BA_Kivotos_habitat_sys
 	}
 	possible = {
-		is_nomadic = yes
 		authority = {
 			value = auth_kivotos
 		}
@@ -75,27 +75,17 @@ origin_Kivotos_Unnamed_starting = {
 	flags = {
 		custom_start_screen
 	}
-	modifier = {
-		arkship_action_speed = 0.2
-		science_ship_survey_speed = 0.2
-		megastructure_waystation_megastructure_build_speed_mult = 0.2
-		category_voidcraft_draw_chance_mult = 0.2
-		category_voidcraft_research_speed_mult = 0.2
-		ship_repair_hull_mult = 0.5
-		ship_repair_armor_mult = 0.5
-	}
 	random_weight = {
 		base = 0
 	}
-	advanced_start = yes
 }
 
 #堕落帝国起源
 origin_ba_fallen_empire = {
 	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_Kivotos_Eden_treaty.dds" #图标（N/A)
+	icon = "gfx/interface/icons/origins/origins_Kivotos_Eden_treaty.dds"	#图标（N/A)
 	playable = {
-		always = no #非玩家起源
+		always = no		#非玩家起源
 	}
 	possible = {
 	}

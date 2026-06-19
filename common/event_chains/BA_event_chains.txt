@@ -13,6 +13,26 @@ BA_Unnamed_starting_chain = {
 	picture = GFX_BA_Shittem_Arona_contact	#以后改
 }
 
+#方舟自动化研究
+BA_ark_automation_chain = {
+	icon = "gfx/interface/icons/situation_log/situation_log_engineering.dds"
+	picture = GFX_origin_station
+	counter = {
+		BA_ark_automation_items = {
+			max = 2
+		}
+	}
+	situation_log_category = empire_concerns
+	abort_trigger = {
+		OR = {
+			is_nomadic = no
+			NOT = {
+				has_origin = origin_Kivotos_Unnamed_starting
+			}
+		}
+	}
+}
+
 #Rabbit突袭！Caerbannog之兔
 BA_Emergencies_Caerbannog_chain = {
 	picture = GFX_BA_Emergencies_0002
