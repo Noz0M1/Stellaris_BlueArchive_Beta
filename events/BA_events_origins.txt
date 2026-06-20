@@ -2536,10 +2536,11 @@ country_event = {
 	}
 }
 
+namespace = BA_origin
 ####################
-#未命名的始发点
+# 未命名的始发点
 ####################
-### 开局初始化
+# 方舟开局初始化
 country_event = {
 	id = BA_origin.2001
 	is_triggered_only = yes
@@ -2547,270 +2548,52 @@ country_event = {
 	trigger = {
 		has_authority = auth_kivotos
 		has_origin = origin_Kivotos_Unnamed_starting
-		# 旧版固定居住站起源的兼容保险；新版同键值起源只允许游牧国家。
-		is_nomadic = no
+		is_nomadic = yes
 	}
 	immediate = {
+		# 与其他两个特有起源一致：直接给予科技，再由起源对话激活 Arona 通讯。
+		give_technology = {
+			tech = tech_BA_Shittem_starting
+			message = no
+		}
 		if = {
 			limit = {
-				exists = event_target:BA_origin_Unnamed_starting
+				exists = capital_scope
 			}
-			#切换为伊甸条约起源
-			set_origin = origin_Kivotos_Eden_treaty
-			country_event = {
-				id = BA_origin.0001
-			}
-		}
-		else = {
-			save_global_event_target_as = BA_origin_Unnamed_starting
-			set_country_flag = BA_origin_Unnamed_starting_engaged_1
-			set_country_flag = BA_habitat_inhibit_1
-			### 创建无名之神
-			create_species = {
-				name = "NAME_Unnamed_enemy_species"
-				class = MACHINE #以后改
-				portrait = ai_crisis_1 #以后改
-				traits = {
-					trait = trait_mechanical
-				}
-				effect = {
-					set_species_homeworld = root.capital_scope
-					set_species_flag = BA_Unnamed_enemy_species
-					save_global_event_target_as = BA_Unnamed_enemy_species
-				}
-			}
-			create_country = {
-				name = "NAME_Unnamed_enemy_country"
-				type = Fade_Sanctum
-				ignore_initial_colony_error = yes
-				species = event_target:BA_Unnamed_enemy_species
-				ethos = {
-					ethic = ethic_gestalt_consciousness
-				}
-				authority = auth_machine_intelligence
-				flag = {
-					icon = {
-						category = "special"
-						file = "flag_MX.dds"
-					}
-					background = {
-						category = "backgrounds"
-						file = "flag_BG_31.dds"
-					}
-					colors = {
-						"satin_burgundy"
-						"intense_blue"
-						"null"
-						"null"
-					}
-				}
-				effect = {
-					save_global_event_target_as = BA_Unnamed_enemy_country
-					set_country_flag = BA_Unnamed_enemy
-					every_country = {
-						set_faction_hostility = {
-							target = prev
-							set_friendly = no
-							set_hostile = no
-							set_neutral = yes
-						}
-					}
-					root = {
-						set_faction_hostility = {
-							target = prev
-							set_friendly = no
-							set_neutral = no
-							set_hostile = yes
-						}
-					}
-				}
-			}
-			### 生成太空枢纽和模块
-			random_planet_within_border = {
-				limit = {
-					has_planet_flag = BA_Unnamed_starting_target
-				}
-				save_event_target_as = target_planet
-				solar_system = {
-					spawn_planet = {
-						class = pc_BA_auto_habitat
-						location = event_target:target_planet
-						orbit_location = yes
-						orbit_angle_offset = 135
-						orbit_distance_offset = 9.899
-						size = 8
-						has_ring = no
-						init_effect = {
-							set_planet_flag = Unnamed_starting_habitat
-							set_planet_entity = {
-								entity = "AtrahasisArk_station_entity"
-							}
-							set_surveyed = {
-								surveyed = yes
-								surveyor = FROM
-							}
-							#set_all_comms_surveyed = yes
-							set_planet_flag = colony_event
-							set_planet_flag = megastructure
-							set_planet_flag = habitat
-							set_planet_flag = BA_auto_habitat
-							set_planet_flag = advanced_habitat_2
-							set_planet_flag = habitat_level_3
-							save_event_target_as = target_habitat
-							add_deposit = d_BA_auto_habitat
-							event_target:target_planet = {
-								set_planet_flag = habitat@PREV
-							}
-							###
-							create_colony = {
-								owner = root
-							}
-							set_capital = yes
-							set_name = sys.Kivotos.habitat.1.name
-							create_pop_group = {
-								species = owner_main_species
-								size = 1000
-							}
-							check_planet_employment = yes
-							clear_planet_modifiers = yes
-							remove_modifier = modifier_BA_origin_station_1
-							add_modifier = {
-								modifier = modifier_BA_Atrahasis_station_1
-							}
-							# 区划建筑
-							remove_all_districts = yes
-							add_district = BA_district_auto_city
-							add_district = BA_district_auto_city
-							add_district = BA_district_auto_slot_01
-							add_district = BA_district_auto_slot_02
-							add_district = BA_district_auto_slot_03
-							add_district = BA_districts_auto_turbine
-							add_district = BA_districts_auto_drill
-							validate_planet_buildings_and_districts = yes
-							add_building = {
-								zone = zone_default
-								building = building_BA_Locker_room
-							}
-							add_zone = {
-								district = BA_district_auto_slot_01
-								zone_slot = slot_BA_auto_specialist
-								zone = zone_BA_auto_refinery
-							}
-							add_zone = {
-								district = BA_district_auto_slot_02
-								zone_slot = slot_BA_auto_specialist
-								zone = zone_BA_auto_sustainer
-							}
-							add_zone = {
-								district = BA_district_auto_slot_03
-								zone_slot = slot_BA_auto_specialist
-								zone = zone_BA_auto_foundry
-							}
-							# 区块
-							clear_blockers = yes
-							add_deposit = d_Atrahasis_reactor
-							add_deposit = d_Atrahasis_harvester
-							add_deposit = d_Atrahasis_agriculture
-							add_deposit = d_Atrahasis_factory
-							add_deposit = d_Atrahasis_gravity_controllor
-							set_variable = {
-								which = Unnamed_starting_enemy_count
-								value = 8
-							}
-							planet_event = {
-								id = BA_origin.2011
-								days = 180
-							}
-							# 资源
-							owner = {
-								add_resource = {
-									sr_pyroxenes = 12
-								}
-							}
-						}
-					}
-					every_system_planet = {
-						limit = {
-							has_planet_flag = BA_init_module
-						}
-						BA_origin_create_module = yes
-						remove_planet_flag = BA_init_module
-					}
-					set_star_flag = has_habitat
-				}
-			}
-			### 初始化母星
-			random_owned_planet = {
-				limit = {
-					has_planet_flag = BA_Unnamed_starting_target
-				}
-				### 基础设置
-				change_pc = pc_BA_campus_planet
-				set_name = sys.Kivotos.home.name
-				clear_planet_modifiers = yes
-				# 区划建筑
-				validate_planet_buildings_and_districts = yes
+			capital_scope = {
+				# 三个基座区各一个，不预设任何区域特化。
 				remove_all_districts = yes
-				add_district = BA_districts_campus
-				remove_building = building_colony_shelter
+				add_district = BA_ark_district_slot_01
+				add_district = BA_ark_district_slot_02
+				add_district = BA_ark_district_slot_03
+				remove_building = building_stronghold
+				remove_building = building_fortress
+				set_timed_carrier_flag = {
+					flag = ignore_ai_building_limitations
+					days = 1
+				}
 				add_building = {
 					zone = zone_default
-					building = building_BA_fade_Sanctum_center
+					building = building_BA_Schale_office
 				}
-				# 区块
-				clear_deposits = yes #清除原有区块
-				while = {
-					count = 6
-					add_deposit = d_fade_Sanctum
-				}
-				add_deposit = d_fade_Sanctum_zone
-				### 虚妄圣库姆特
-				every_owned_pop_group = {
-					kill_all_pop = yes
-				}
-				set_owner = event_target:BA_Unnamed_enemy_country
-				add_building = building_BA_fade_Sanctum_center
-				create_pop_group = {
-					species = event_target:BA_Unnamed_enemy_species
-					size = 1000
-				}
-				while = {
-					count = 12
-					create_army = {
-						owner = event_target:BA_Unnamed_enemy_country
-						type = BA_Deca_army_final
-					}
-				}
-				set_variable = {
-					which = Unnamed_starting_enemy_count
-					value = 14
-				}
+				validate_planet_buildings_and_districts = yes
 			}
-			### 给科技，联系Arona，后续事件
-			give_technology = {
-				tech = tech_BA_institute_of_reconstruction
-				message = no
-			}
-			give_technology = {
-				tech = tech_BA_Shittem_starting
-				message = no
-			}
-			set_country_flag = BA_Arona_Established
-			event_target:BA_Shittem_country = {
-				establish_communications_no_message = root
-			}
-			country_event = {
-				id = BA_origin.2002
-			}
-			country_event = {
-				id = BA_origin.2003
-				days = 60
-			}
+		}
+		country_event = {
+			id = BA_origin.2002
+		}
+		country_event = {
+			id = BA_origin.2003
+			days = 60
+		}
+		country_event = {
+			id = BA_origin.2004
+			days = 1
 		}
 	}
 }
 
-### 开局Arona对话
+# 开局 Arona 对话：沿用旧 BA_origin.2002，移除旧任务链与兴趣点。
 country_event = {
 	id = BA_origin.2002
 	is_triggered_only = yes
@@ -2822,22 +2605,18 @@ country_event = {
 		portrait = Arona0005
 		room = "BA_Shittem_room"
 	}
+	immediate = {
+		set_country_flag = BA_Arona_Established
+		event_target:BA_Shittem_country = {
+			establish_communications_no_message = root
+		}
+	}
 	option = {
 		name = BA_origin.2002.next
-		begin_event_chain = {
-			event_chain = BA_Unnamed_starting_chain
-			target = root
-		}
-		create_point_of_interest = {
-			id = BA_Unnamed_starting_chain_point_A
-			name = BA_Unnamed_starting_chain_point_A_title
-			desc = BA_Unnamed_starting_chain_point_A_desc
-			event_chain = BA_Unnamed_starting_chain
-			location = capital_scope
-		}
 	}
 }
 
+# 开局 60 日 Arona 对话：沿用旧 BA_origin.2003，移除旧兴趣点。
 country_event = {
 	id = BA_origin.2003
 	is_triggered_only = yes
@@ -2851,13 +2630,6 @@ country_event = {
 	}
 	option = {
 		name = BA_origin.2003.next
-		create_point_of_interest = {
-			id = BA_Unnamed_starting_chain_point_B
-			name = BA_Unnamed_starting_chain_point_B_title
-			desc = BA_Unnamed_starting_chain_point_B_desc
-			event_chain = BA_Unnamed_starting_chain
-			location = capital_scope
-		}
 		add_resource = {
 			sr_pyroxenes = 30
 		}
@@ -2872,386 +2644,40 @@ country_event = {
 	}
 }
 
-planet_event = {
+# 原版方舟初始化结束后安装 BA 专用模块。
+country_event = {
 	id = BA_origin.2004
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
-		owner = {
-			has_country_flag = BA_Unnamed_enemy
-		}
-	}
-	immediate = {
-		# while = {
-		# 	count = 8
-		# 	create_pop = {
-		# 		species = event_target:BA_Unnamed_enemy_species
-		# 		effect = {
-		# 			set_pop_flag = BA_Unnamed_enemy_pop
-		# 		}
-		# 	}
-		# }
-	}
-}
-
-### 刷陆军
-planet_event = {
-	id = BA_origin.2010
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		change_variable = {
-			which = Unnamed_starting_enemy_count
-			value = 2
-		}
-		while = {
-			count = Unnamed_starting_enemy_count
-			create_army = {
-				name = NAME_BA_origin_enemy
-				owner = event_target:BA_Unnamed_enemy_country
-				type = BA_Deca_army_1
-				species = event_target:BA_Unnamed_enemy_species
-			}
-		}
-	}
-}
-
-### 方舟侵蚀
-#第一波
-planet_event = {
-	id = BA_origin.2011
-	is_triggered_only = yes
-	title = BA_origin.2011.title
-	desc = BA_origin.2011.desc
-	picture = GFX_BA_Abydos_vs_Binah
-	location = this
-	trigger = {
-		owner = {
-			has_country_flag = BA_origin_Unnamed_starting_engaged_1
-		}
-	}
-	immediate = {
-		planet_event = {
-			id = BA_origin.2010
-		}
-		planet_event = {
-			id = BA_origin.2012
-			days = 1080
-			random = 720
-		}
-	}
-	option = {
-		name = BA_origin.2011.next
-		custom_tooltip = BA_origin.2011.next.tip
-	}
-}
-
-#之后的波次
-planet_event = {
-	id = BA_origin.2012
-	is_triggered_only = yes
-	title = BA_origin.2012.title
-	desc = BA_origin.2012.desc
-	picture = GFX_BA_Abydos_vs_Binah
-	location = this
-	trigger = {
-		owner = {
-			has_country_flag = BA_origin_Unnamed_starting_engaged_1
-		}
-	}
-	immediate = {
-		planet_event = {
-			id = BA_origin.2010
-		}
-		planet_event = {
-			id = BA_origin.2012
-			days = 1080
-			random = 720
-		}
-	}
-	option = {
-		name = BA_origin.2011.next
-		custom_tooltip = BA_origin.2011.next.tip
-	}
-}
-
-### 星球夺回
-#进攻失败
-country_event = {
-	id = BA_origin.2051
-	is_triggered_only = yes
-	title = BA_origin.2051.title
-	desc = BA_origin.2051.desc
-	picture = GFX_BA_Checkmate
-	location = fromfrom
-	trigger = {
 		has_origin = origin_Kivotos_Unnamed_starting
-		from = {
-			has_country_flag = BA_Unnamed_enemy
-		}
-		fromfrom = {
-			has_planet_flag = BA_Unnamed_starting_target
-		}
-	}
-	option = {
-		name = BA_origin.2051.next
-	}
-}
-
-#进攻成功
-country_event = {
-	id = BA_origin.2052
-	is_triggered_only = yes
-	title = BA_origin.2052.title
-	desc = BA_origin.2052.desc
-	picture = GFX_BA_Abydos_vs_Binah
-	location = fromfrom
-	trigger = {
-		has_origin = origin_Kivotos_Unnamed_starting
-		from = {
-			has_country_flag = BA_Unnamed_enemy
-		}
-		fromfrom = {
-			has_planet_flag = BA_Unnamed_starting_target
-			NOT = {
-				is_owned_by = root
+		is_nomadic = yes
+		exists = capital_scope
+		capital_scope = {
+			ship? = {
+				is_ship_size = BA_arkship_tier_1
 			}
 		}
 	}
 	immediate = {
-		remove_country_flag = BA_origin_Unnamed_starting_engaged_1
-		set_country_flag = BA_origin_Unnamed_starting_engaged_2
-	}
-	option = {
-		name = BA_origin.2052.next
-		fromfrom = {
-			set_owner = root
-			owner = {
-				hidden_effect = {
-					remove_point_of_interest = BA_Unnamed_starting_chain_point_A
-				}
-				create_point_of_interest = {
-					id = BA_Unnamed_starting_chain_point_C
-					name = BA_Unnamed_starting_chain_point_C_title
-					desc = BA_Unnamed_starting_chain_point_C_desc
-					event_chain = BA_Unnamed_starting_chain
-					location = prev
-				}
-			}
-			hidden_effect = {
-				create_pop_group = {
-					species = owner_main_species
-					size = 400
-				}
-				every_owned_pop_group = {
-					limit = {
-						species = {
-							has_species_flag = BA_Unnamed_enemy_species
-						}
+		capital_scope = {
+			ship? = {
+				starbase = {
+					set_starbase_module = {
+						slot = 1
+						module = BA_arkship_engineering_bay
 					}
-					kill_all_pop = yes
-				}
-				add_district = BA_districts_campus
-				add_district = BA_districts_dome
-				check_planet_employment = yes
-				planet_event = {
-					id = BA_origin.2055
-					days = 180
+					set_starbase_module = {
+						slot = 2
+						module = BA_arkship_docking_bay
+					}
 				}
 			}
 		}
 	}
 }
 
-#杂兵
-planet_event = {
-	id = BA_origin.2055
-	is_triggered_only = yes
-	title = BA_origin.2055.title
-	desc = BA_origin.2055.desc
-	picture = GFX_BA_Abydos_vs_Binah
-	location = this
-	trigger = {
-		owner = {
-			has_country_flag = BA_origin_Unnamed_starting_engaged_2
-		}
-	}
-	immediate = {
-		planet_event = {
-			id = BA_origin.2010
-		}
-		planet_event = {
-			id = BA_origin.2055
-			days = 720
-			random = 720
-		}
-	}
-	option = {
-		name = BA_origin.2055.next
-	}
-}
-
-#清扫者或中子灭杀轰炸
-### 收尾工作
-#清除巨塔
-planet_event = {
-	id = BA_origin.2101
-	is_triggered_only = yes
-	title = BA_origin.2101.title
-	desc = BA_origin.2101.desc
-	diplomatic = yes
-	custom_gui = "BA_window"
-	location = this
-	picture_event_data = {
-		portrait = Arona0005
-		room = "BA_Shittem_room"
-	}
-	trigger = {
-		NOT = {
-			has_planet_flag = BA_fade_Sanctum
-		}
-	}
-	immediate = {
-		set_planet_flag = BA_fade_Sanctum
-	}
-	option = {
-		name = BA_origin.2101.next
-	}
-}
-
-#结束
-planet_event = {
-	id = BA_origin.2102
-	is_triggered_only = yes
-	title = BA_origin.2102.title
-	desc = BA_origin.2102.desc
-	picture = GFX_BA_Azusa_in_Trinity
-	location = this
-	trigger = {
-		NOT = {
-			has_deposit = d_fade_Sanctum
-		}
-	}
-	immediate = {
-		check_planet_employment = yes
-		remove_planet_flag = BA_fade_Sanctum
-		owner = {
-			remove_country_flag = BA_origin_Unnamed_starting_engaged_2
-			set_country_flag = BA_origin_finished
-			set_country_flag = BA_Project_Cradle_ready #项目
-		}
-	}
-	option = {
-		name = BA_origin.2102.next
-		custom_tooltip = BA_origin.2102.next
-		owner = {
-			end_event_chain = BA_Unnamed_starting_chain
-		}
-		hidden_effect = {
-			set_capital = yes
-			remove_deposit = d_fade_Sanctum_zone
-			add_deposit = d_broken_Abydos_school #阿拜多斯校区
-			add_deposit = d_broken_Millennium_school #千年校区
-			add_deposit = d_broken_Trinity_school #三一校区
-			add_deposit = d_broken_Gehenna_school #格黑娜校区
-			add_deposit = d_broken_power_station #千年发电厂
-			add_deposit = d_broken_desert_mine #沙漠矿区
-			add_deposit = d_Greenhouse_farms #赤冬温室农场（只是因为没有粮食区划所以拉来凑数的）
-		}
-	}
-}
-
-### 居住站修复
-#新殖民居住站时，加上debuff
-planet_event = {
-	id = BA_origin.2110
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		is_planet_class = pc_BA_auto_habitat
-		owner = {
-			has_origin = origin_Kivotos_Unnamed_starting
-			OR = {
-				has_country_flag = BA_habitat_inhibit_1
-				has_country_flag = BA_habitat_inhibit_2
-			}
-		}
-	}
-	immediate = {
-		if = {
-			limit = {
-				owner = {
-					has_country_flag = BA_habitat_inhibit_1
-				}
-			}
-			add_modifier = {
-				modifier = modifier_BA_origin_station_1
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-					has_country_flag = BA_habitat_inhibit_2
-				}
-			}
-			add_modifier = {
-				modifier = modifier_BA_origin_station_2
-			}
-		}
-	}
-}
-
-#完成项目1
-country_event = {
-	id = BA_origin.2111
-	is_triggered_only = yes
-	title = BA_origin.2111.title
-	desc = BA_origin.2111.desc
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = Arona0005
-		room = "BA_Shittem_room"
-	}
-	immediate = {
-		remove_modifier = modifier_BA_arkship_automation_2
-		add_modifier = {
-			modifier = modifier_BA_arkship_automation_1
-		}
-		set_country_flag = BA_ark_automation_research_1_finished
-	}
-	option = {
-		name = BA_origin.2111.next
-		custom_tooltip = BA_origin.2111.next.tip
-	}
-}
-
-#完成项目2
-country_event = {
-	id = BA_origin.2112
-	is_triggered_only = yes
-	title = BA_origin.2112.title
-	desc = BA_origin.2112.desc
-	diplomatic = yes
-	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = Arona0005
-		room = "BA_Shittem_room"
-	}
-	immediate = {
-		remove_modifier = modifier_BA_arkship_automation_1
-		add_modifier = {
-			modifier = modifier_BA_arkship_automation_2
-		}
-		set_country_flag = BA_ark_automation_research_2_finished
-	}
-	option = {
-		name = BA_origin.2112.next
-		custom_tooltip = BA_origin.2112.next.tip
-	}
-}
-
-#方舟自动化研究任务链初始化
+# 方舟自动化研究任务链初始化（保留原 BA_origin.2120）。
 country_event = {
 	id = BA_origin.2120
 	is_triggered_only = yes
@@ -3280,6 +2706,3 @@ country_event = {
 		name = BA_origin.2120.next
 	}
 }
-
-###########
-##### 备份

@@ -60,9 +60,11 @@ BA_ARK_AUTOMATION_RESEARCH_1 = {
 			counter = BA_ark_automation_items
 			amount = 1
 		}
-		country_event = {
-			id = BA_origin.2111
+		remove_modifier = modifier_BA_arkship_automation_2
+		add_modifier = {
+			modifier = modifier_BA_arkship_automation_1
 		}
+		set_country_flag = BA_ark_automation_research_1_finished
 		enable_mission = {
 			name = BA_ARK_AUTOMATION_RESEARCH_2
 		}
@@ -133,9 +135,11 @@ BA_ARK_AUTOMATION_RESEARCH_2 = {
 			counter = BA_ark_automation_items
 			amount = 1
 		}
-		country_event = {
-			id = BA_origin.2112
+		remove_modifier = modifier_BA_arkship_automation_1
+		add_modifier = {
+			modifier = modifier_BA_arkship_automation_2
 		}
+		set_country_flag = BA_ark_automation_research_2_finished
 		end_event_chain = BA_ark_automation_chain
 	}
 

@@ -308,15 +308,6 @@ d_fade_Sanctum = {
 		habitability_ceil_add = -0.15
 		planet_max_districts_add = -1
 	}
-	on_cleared = {
-		planet_event = {
-			id = BA_origin.2101
-		}
-		planet_event = {
-			id = BA_origin.2102
-			days = 10
-		}
-	}
 	prerequisites = {
 		"tech_BA_institute_of_reconstruction"
 	}

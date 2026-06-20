@@ -1,0 +1,16 @@
+# “未命名的始发点”专用方舟等级。
+# 槽位数量和蓝图沿用原版科研方舟 T1；独立定义，不覆盖原版方舟等级。
+starbase_level_BA_arkship_1 = {
+	ship_size = BA_arkship_tier_1
+	starbase_capacity_used = 1
+	picture = "GFX_arkship_blueprint_science_tier_1"
+	show_in_outliner = yes
+	display_shipyard_button = no
+	ai_weight = { weight = 1 }
+	potential_home_base = yes
+	downgrade_potential = {
+		always = no
+	}
+	module_slots = { 1 2 }
+	building_slots = { 1 2 3 4 }
+}
