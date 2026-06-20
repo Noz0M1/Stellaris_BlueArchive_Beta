@@ -142,6 +142,46 @@ pc_BA_auto_habitat = {
 	carry_cap_per_free_district = @carry_cap_low
 }
 
+# “未命名的始发点”专用移动方舟殖民地。
+# 视觉与内部建设参数暂时沿用自动化居住站，但使用独立的 planet class 与 district set。
+pc_BA_ark = {
+	habitat = yes
+	entity = "orbital_habitat"
+	icon = GFX_planet_type_habitat
+	icon_large = GFX_planet_type_habitat_big
+	entity_scale = 1
+	enable_tilt = no
+	fixed_entity_scale = yes
+	place_entity_on_planet_plane = no
+	entity_face_object = no
+	atmosphere_color = hsv{0 0 1}
+	atmosphere_intensity = 1
+	atmosphere_width = 0.5
+	show_city = no
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	chance_of_ring = 0
+	planet_size = 6
+	moon_size = 1
+	colonizable = yes
+	district_set = BA_ark
+	starting_district = BA_ark_district_city
+	starting_planet = no
+	orbit_lines = no
+	has_colonization_influence_cost = no
+	is_artificial_planet = yes
+	default_planet_selection = yes
+	single_build_queue = yes
+	modifier = {
+		planet_colony_development_speed_mult = 2
+		pop_environment_tolerance = 0.7
+		BA_ark_district_turbine_max_add = 2
+		BA_ark_district_drill_max_add = 2
+	}
+	carry_cap_per_free_district = @carry_cap_low
+}
+
 #模块化环世界
 pc_BA_auto_ringworld = {
 	ringworld = yes

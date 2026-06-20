@@ -1,0 +1,102 @@
+########## 居住站 ##########
+slot_BA_ark_city = {
+	include = {
+		zone_BA_ark_unity
+		zone_BA_ark_commercial
+		zone_urban
+		zone_trade
+		zone_fortress
+	}
+	exclude = {
+	}
+}
+
+slot_BA_ark_specialist = {
+	include = {
+		zone_BA_ark_refinery
+		zone_BA_ark_sustainer
+		zone_BA_ark_foundry
+		zone_BA_ark_matrix
+	}
+	unlock = {
+		custom_tooltip = {
+			fail_text = zone_unavailable_BA_auto_district
+			exists = owner
+			owner = {
+				has_technology = tech_BA_pyroxenes_using
+			}
+		}
+	}
+}
+
+###
+#透镜区
+slot_BA_ark_refinery = {
+	include = {
+		zone_BA_ark_refinery
+	}
+}
+
+#维持区
+slot_BA_ark_sustainer = {
+	include = {
+		zone_BA_ark_sustainer
+	}
+}
+#铸造区
+slot_BA_ark_foundry = {
+	include = {
+		zone_BA_ark_foundry
+	}
+}
+
+#矩阵区
+slot_BA_ark_matrix = {
+	include = {
+		zone_BA_ark_matrix
+	}
+}
+
+#涡轮区
+slot_BA_ark_turbine = {
+	include = {
+		zone_BA_ark_A
+		zone_BA_ark_B
+	}
+	exclude = {
+	}
+	potential = {
+		uses_district_set = BA_ark
+	}
+	unlock = {
+		custom_tooltip = {
+			fail_text = zone_unavailable_BA_auto_district
+			exists = owner
+			owner = {
+				has_technology = tech_BA_pyroxenes_using
+			}
+		}
+	}
+}
+
+#钻探区
+slot_BA_ark_drill = {
+	include = {
+		zone_BA_ark_A
+		zone_BA_ark_B
+	}
+	exclude = {
+	}
+	potential = {
+		uses_district_set = BA_ark
+	}
+	unlock = {
+		custom_tooltip = {
+			fail_text = zone_unavailable_BA_auto_district
+			exists = owner
+			owner = {
+				has_technology = tech_BA_pyroxenes_using
+			}
+		}
+	}
+}

@@ -1,0 +1,102 @@
+@BA_arkship_formation_priority = 4
+
+# “未命名的始发点”专用方舟。
+# 舰体参数暂沿用科研方舟 T1，但携带独立的 pc_BA_ark 殖民地。
+BA_arkship_tier_1 = {
+	is_starting_arkship = yes
+	graphical_culture = { "science_arkship" }
+	hero_ship = {
+		hero_ship_fleet_background = "GFX_arkship_fleetview_science"
+		custom_class_text_color = B
+	}
+	class = shipclass_starbase
+	carries_colony = pc_BA_ark
+	display_attack_neutral_fleet_button = no
+	automation_icon = GFX_fleet_order_auto_explore_arkship
+	arkship_picture = "arkship_science"
+	auto_upgrade = yes
+	can_disable = yes
+	stay_disabled = yes
+	never_lost = yes
+	collects_stockpile_from = {
+		shipclass_starbase
+		shipclass_constructor
+	}
+	collects_stockpile_to_country = yes
+	accepts_all_modifiers = yes
+
+	use_shipnames_from = science
+	potential_construction = { always = no }
+	possible_construction = { always = no }
+	on_click_sound = "arkship_science_selection"
+
+	icon = ship_size_science_arkship_tier_1
+	icon_frame = 16
+	ship_class_icon_frame = 64
+	map_icon_override = {
+		normal = GFX_ship_icons_type_arkship
+		mixed = GFX_ship_icons_type_arkship_mixed
+		cloaked = GFX_ship_icons_type_arkship_cloaked
+		encamped = GFX_ship_icons_type_arkship_encamped
+	}
+
+	entity = science_arkship_01_stage_1_entity
+	section_slots = {
+		"mid" = { locator = "part1" }
+		"1" = { locator = "module_01" }
+		"2" = { locator = "module_02" }
+	}
+
+	formation_priority = @BA_arkship_formation_priority
+	max_speed = @arkship_max_speed_100
+	acceleration = @arkship_acceleration_20_percent
+	rotation_speed = @arkship_rotation_speed_15_percent
+	construction_offset_mult = @arkship_construction_offset_2
+	collision_radius = @arkship_collision_radius_4
+	max_hitpoints = @arkship_hp_2500
+	modifier = {
+		ship_evasion_add = @arkship_evasion_5
+		ship_armor_add = @arkship_armor_1250
+		ship_shield_add = @arkship_shield_1250
+		ship_shield_regen_add_static = @arkship_shield_regen_4_375
+		starbase_module_capacity_add = @arkship_starbase_module_capacity_add_2
+		starbase_building_capacity_add = @arkship_starbase_building_capacity_add_4
+		planet_max_districts_add = @arkship_max_districts_add_0
+		ship_sensor_range_add = 2
+		ship_hyperlane_range_add = 1
+	}
+	ship_modifier = {
+		ship_starbase_stockpile_collection_rate_add = @arkship_collection_rate_add_125
+		science_ship_survey_speed = @arkship_innate_mult_5_percent
+	}
+	size_multiplier = @arkship_size_80
+	fleet_slot_size = @arkship_slot_size_8
+
+	is_designable = no
+	num_target_locators = 0
+	is_space_station = no
+	can_have_federation_design = no
+	is_civilian = no
+	components_add_to_cost = no
+	available_to_everyone = yes
+	enable_default_design = yes
+	prerequisites = { "tech_science_arkship" }
+	combat_disengage_chance = @arkship_disengage_chance_2
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = starbase_arkships
+		upkeep = {
+			alloys = @arkship_upkeep_alloys_1_5
+			energy = @arkship_upkeep_energy_1_5
+		}
+		logistics = { trade = @arkship_upkeep_logistics_0 }
+	}
+	min_upgrade_cost = { alloys = 1 }
+	ai_ship_data = { }
+}

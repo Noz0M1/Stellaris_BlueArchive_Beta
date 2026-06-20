@@ -1,0 +1,323 @@
+@BA_ark_build_time = 240
+#####################################
+#自动居住站区划 数值有待商榷
+#####################################
+### 居住
+BA_ark_district_city = {
+	base_buildtime = @BA_ark_build_time
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+	zone_slots = {
+		slot_city_government
+		slot_BA_ark_city
+		slot_BA_ark_city
+	}
+	show_on_uncolonized = {
+		uses_district_set = BA_ark
+	}
+	potential = {
+		uses_district_set = BA_ark
+		NAND = {
+			is_capital = yes
+			owner = {
+				has_menace_perk = menp_behemoth_mind_meld
+			}
+		}
+	}
+	convert_to = {
+		district_mindlink
+	}
+	resources = {
+		category = planet_districts_hab
+		cost = {
+			energy = 200
+			minerals = 250
+			sr_pyroxenes = 10
+		}
+		upkeep = {
+			energy = 6
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 1000
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		job_BA_student_on_duty_add = 700
+	}
+}
+
+### 槽位
+BA_ark_district_slot_01 = {
+	icon = BA_ark_district_city
+	base_buildtime = @BA_ark_build_time
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+	zone_slots = {
+		slot_BA_ark_specialist
+	}
+	show_on_uncolonized = {
+		uses_district_set = BA_ark
+	}
+	potential = {
+		uses_district_set = BA_ark
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			minerals = 250
+			sr_pyroxenes = 10
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 300
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		job_BA_student_on_duty_add = 300
+	}
+}
+
+BA_ark_district_slot_02 = {
+	icon = BA_ark_district_city
+	base_buildtime = @BA_ark_build_time
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+	zone_slots = {
+		slot_BA_ark_specialist
+	}
+	show_on_uncolonized = {
+		uses_district_set = BA_ark
+	}
+	potential = {
+		uses_district_set = BA_ark
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			minerals = 250
+			sr_pyroxenes = 10
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 300
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		job_BA_student_on_duty_add = 300
+	}
+}
+
+BA_ark_district_slot_03 = {
+	icon = BA_ark_district_city
+	base_buildtime = @BA_ark_build_time
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+	zone_slots = {
+		slot_BA_ark_specialist
+	}
+	show_on_uncolonized = {
+		uses_district_set = BA_ark
+	}
+	potential = {
+		uses_district_set = BA_ark
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			minerals = 250
+			sr_pyroxenes = 10
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 300
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		job_BA_student_on_duty_add = 300
+	}
+}
+
+### 功能
+#透镜区 矿-->青辉石
+BA_ark_district_refinery = {
+	base_buildtime = @BA_ark_build_time
+	is_capped_by_modifier = no
+	zone_slots = {
+		slot_BA_ark_refinery
+	}
+	show_on_uncolonized = {
+		always = no
+	}
+	potential = {
+		always = no
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			minerals = 250
+		}
+	}
+}
+
+#维持区 青辉石-->食物、消费品
+BA_ark_district_sustainer = {
+	base_buildtime = @BA_ark_build_time
+	is_capped_by_modifier = no
+	zone_slots = {
+		slot_BA_ark_sustainer
+	}
+	show_on_uncolonized = {
+		always = no
+	}
+	potential = {
+		always = no
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			minerals = 250
+		}
+	}
+}
+
+#铸造区 青辉石-->合金
+BA_ark_district_foundry = {
+	base_buildtime = @BA_ark_build_time
+	is_capped_by_modifier = no
+	zone_slots = {
+		slot_BA_ark_foundry
+	}
+	show_on_uncolonized = {
+		always = no
+	}
+	potential = {
+		always = no
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			minerals = 250
+		}
+	}
+}
+
+#矩阵区 青辉石-->科研点
+BA_ark_district_matrix = {
+	base_buildtime = @BA_ark_build_time
+	is_capped_by_modifier = no
+	zone_slots = {
+		slot_BA_ark_matrix
+	}
+	show_on_uncolonized = {
+		always = no
+	}
+	potential = {
+		always = no
+	}
+	# triggered_desc = {
+	# 	text = BA_ark_district_matrix_tip
+	# }
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			minerals = 250
+		}
+	}
+}
+
+### 采集
+#涡轮区 电
+BA_ark_district_turbine = {
+	base_buildtime = @BA_ark_build_time
+	is_capped_by_modifier = yes
+	zone_slots = {
+		slot_BA_ark_turbine
+	}
+	show_on_uncolonized = {
+		uses_district_set = BA_ark
+	}
+	potential = {
+		uses_district_set = BA_ark
+	}
+	triggered_desc = {
+		text = BA_ark_district_turbine_tip
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			energy = 200
+			minerals = 250
+			alloys = 30
+			sr_pyroxenes = 10
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		BA_auto_pop_energy_produces_add = 12
+	}
+}
+
+#钻探区 矿
+BA_ark_district_drill = {
+	base_buildtime = @BA_ark_build_time
+	is_capped_by_modifier = yes
+	zone_slots = {
+		slot_BA_ark_drill
+	}
+	show_on_uncolonized = {
+		uses_district_set = BA_ark
+	}
+	potential = {
+		uses_district_set = BA_ark
+	}
+	triggered_desc = {
+		text = BA_ark_district_drill_tip
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			energy = 200
+			minerals = 250
+			alloys = 30
+			sr_pyroxenes = 10
+		}
+		upkeep = {
+			energy = 6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		BA_auto_pop_minerals_produces_add = 8
+	}
+}
