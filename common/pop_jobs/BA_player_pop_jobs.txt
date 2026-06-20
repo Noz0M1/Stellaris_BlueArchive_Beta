@@ -381,7 +381,7 @@ BA_Kivotos_staff = {
 		}
 		modifier = {
 			factor = 2
-			owner? = { has_civic = civic_exalted_priesthood }
+			owner = { has_civic = civic_exalted_priesthood }
 		}
 		modifier = {
 			factor = 0.1
