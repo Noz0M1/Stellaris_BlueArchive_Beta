@@ -1,4 +1,4 @@
-### 居住站起源政府区域
+#### 蜂巢
 zone_BA_ark_goverment = {
 	icon = GFX_diplomatic_weight_large
 	base_buildtime = 240
@@ -28,7 +28,6 @@ zone_BA_ark_goverment = {
 	}
 }
 
-### 城市，凝聚力 科研 贸易
 zone_BA_ark_unity = {
 	icon = GFX_district_specialization_bureaucrat
 	base_buildtime = 180
@@ -83,8 +82,9 @@ zone_BA_ark_commercial = {
 	}
 }
 
+#### 基座
 zone_BA_ark_refinery = {
-	icon = GFX_resource_sr_pyroxenes_large
+	icon = GFX_zone_BA_ark_refinery
 	base_buildtime = 180
 	potential = {
 		exists = owner
@@ -126,7 +126,7 @@ zone_BA_ark_refinery = {
 }
 
 zone_BA_ark_sustainer = {
-	icon = GFX_district_specialization_factory
+	icon = GFX_zone_BA_ark_sustainer
 	base_buildtime = 180
 	potential = {
 		exists = owner
@@ -168,7 +168,7 @@ zone_BA_ark_sustainer = {
 }
 
 zone_BA_ark_foundry = {
-	icon = GFX_district_specialization_betharian
+	icon = GFX_zone_BA_ark_foundry
 	base_buildtime = 180
 	potential = {
 		exists = owner
@@ -210,7 +210,7 @@ zone_BA_ark_foundry = {
 }
 
 zone_BA_ark_matrix = {
-	icon = GFX_district_specialization_research
+	icon = GFX_zone_BA_ark_matrix
 	base_buildtime = 180
 	potential = {
 		exists = owner

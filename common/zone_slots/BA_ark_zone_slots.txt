@@ -18,15 +18,6 @@ slot_BA_ark_specialist = {
 		zone_BA_ark_foundry
 		zone_BA_ark_matrix
 	}
-	unlock = {
-		custom_tooltip = {
-			fail_text = zone_unavailable_BA_auto_district
-			exists = owner
-			owner = {
-				has_technology = tech_BA_pyroxenes_using
-			}
-		}
-	}
 }
 
 ###

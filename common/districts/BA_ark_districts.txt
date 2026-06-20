@@ -1,11 +1,10 @@
 @BA_ark_build_time = 240
 #####################################
-#自动居住站区划 数值有待商榷
+# 方舟区划
 #####################################
 ### 居住
 BA_ark_district_city = {
 	base_buildtime = @BA_ark_build_time
-	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
 	zone_slots = {
 		slot_city_government
@@ -56,7 +55,6 @@ BA_ark_district_city = {
 BA_ark_district_slot_01 = {
 	icon = BA_ark_district_city
 	base_buildtime = @BA_ark_build_time
-	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
 	zone_slots = {
 		slot_BA_ark_specialist
@@ -91,7 +89,6 @@ BA_ark_district_slot_01 = {
 BA_ark_district_slot_02 = {
 	icon = BA_ark_district_city
 	base_buildtime = @BA_ark_build_time
-	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
 	zone_slots = {
 		slot_BA_ark_specialist
@@ -126,7 +123,6 @@ BA_ark_district_slot_02 = {
 BA_ark_district_slot_03 = {
 	icon = BA_ark_district_city
 	base_buildtime = @BA_ark_build_time
-	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
 	zone_slots = {
 		slot_BA_ark_specialist
@@ -162,7 +158,6 @@ BA_ark_district_slot_03 = {
 #透镜区 矿-->青辉石
 BA_ark_district_refinery = {
 	base_buildtime = @BA_ark_build_time
-	is_capped_by_modifier = no
 	zone_slots = {
 		slot_BA_ark_refinery
 	}
@@ -183,7 +178,6 @@ BA_ark_district_refinery = {
 #维持区 青辉石-->食物、消费品
 BA_ark_district_sustainer = {
 	base_buildtime = @BA_ark_build_time
-	is_capped_by_modifier = no
 	zone_slots = {
 		slot_BA_ark_sustainer
 	}
@@ -204,7 +198,6 @@ BA_ark_district_sustainer = {
 #铸造区 青辉石-->合金
 BA_ark_district_foundry = {
 	base_buildtime = @BA_ark_build_time
-	is_capped_by_modifier = no
 	zone_slots = {
 		slot_BA_ark_foundry
 	}
@@ -225,7 +218,6 @@ BA_ark_district_foundry = {
 #矩阵区 青辉石-->科研点
 BA_ark_district_matrix = {
 	base_buildtime = @BA_ark_build_time
-	is_capped_by_modifier = no
 	zone_slots = {
 		slot_BA_ark_matrix
 	}

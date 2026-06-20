@@ -2536,7 +2536,6 @@ country_event = {
 	}
 }
 
-namespace = BA_origin
 ####################
 # 未命名的始发点
 ####################
@@ -2563,19 +2562,33 @@ country_event = {
 			capital_scope = {
 				# 三个基座区各一个，不预设任何区域特化。
 				remove_all_districts = yes
+				#
+				add_district = BA_ark_district_city
+				add_district = BA_ark_district_city
+				add_district = BA_ark_district_city
+				add_district = BA_ark_district_city
 				add_district = BA_ark_district_slot_01
 				add_district = BA_ark_district_slot_02
 				add_district = BA_ark_district_slot_03
-				remove_building = building_stronghold
-				remove_building = building_fortress
+				# 清除原版方舟开局生成的工业废土、贫民窟和凌乱机库等障碍特征。增加特征。
+                clear_blockers = yes
+                add_deposit = d_BA_ark_Atrahasis_reactor
+				add_deposit = d_BA_ark_Atrahasis_harvester
+				add_deposit = d_BA_ark_Atrahasis_agriculture
+				add_deposit = d_BA_ark_Atrahasis_factory
+				add_deposit = d_BA_ark_Atrahasis_gravity_controllor
 				set_timed_carrier_flag = {
 					flag = ignore_ai_building_limitations
 					days = 1
 				}
 				add_building = {
-					zone = zone_default
-					building = building_BA_Schale_office
+					zone = zone_BA_ark_goverment
+					building = building_BA_Locker_room
 				}
+                add_zone = {
+                    district = BA_ark_district_slot_01
+                    zone = zone_BA_ark_refinery
+                }
 				validate_planet_buildings_and_districts = yes
 			}
 		}
@@ -2593,7 +2606,7 @@ country_event = {
 	}
 }
 
-# 开局 Arona 对话：沿用旧 BA_origin.2002，移除旧任务链与兴趣点。
+# 开局 Arona 对话
 country_event = {
 	id = BA_origin.2002
 	is_triggered_only = yes
@@ -2616,7 +2629,7 @@ country_event = {
 	}
 }
 
-# 开局 60 日 Arona 对话：沿用旧 BA_origin.2003，移除旧兴趣点。
+# 开局 60 日 Arona 对话
 country_event = {
 	id = BA_origin.2003
 	is_triggered_only = yes
@@ -2653,25 +2666,19 @@ country_event = {
 		has_origin = origin_Kivotos_Unnamed_starting
 		is_nomadic = yes
 		exists = capital_scope
-		capital_scope = {
-			ship? = {
-				is_ship_size = BA_arkship_tier_1
-			}
+		capital_scope.ship = {
+			is_ship_size = BA_arkship_tier_1
 		}
 	}
 	immediate = {
-		capital_scope = {
-			ship? = {
-				starbase = {
-					set_starbase_module = {
-						slot = 1
-						module = BA_arkship_engineering_bay
-					}
-					set_starbase_module = {
-						slot = 2
-						module = BA_arkship_docking_bay
-					}
-				}
+		capital_scope.ship.starbase = {
+			set_starbase_module = {
+				slot = 1
+				module = BA_arkship_engineering_bay
+			}
+			set_starbase_module = {
+				slot = 2
+				module = BA_arkship_docking_bay
 			}
 		}
 	}
