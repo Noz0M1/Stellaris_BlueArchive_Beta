@@ -83,64 +83,6 @@ zone_BA_ark_commercial = {
 	}
 }
 
-### 专业区块
-zone_BA_ark_A = {
-	icon = GFX_diplomatic_weight_large
-	base_buildtime = 180
-	### 预留标记 ###
-	potential = {
-	}
-	unlock = {
-	}
-	### 预留标记 ###
-	resources = {
-	}
-	planet_modifier = {
-		zone_building_slots_add = 3
-	}
-	triggered_district_planet_modifier = {
-		potential = {
-			always = yes
-		}
-		planet_housing_add = 200
-		job_BA_student_on_duty_add = 200
-	}
-	triggered_planet_modifier = {
-		potential = {
-			always = yes
-		}
-		district_automated_workforce = 1
-	}
-	include = {
-		all
-	}
-	excluded_building_sets = {
-	}
-}
-
-zone_BA_ark_B = {
-	icon = GFX_diplomatic_weight_large
-	base_buildtime = 180
-	potential = {
-	}
-	unlock = {
-	}
-	resources = {
-	}
-	triggered_district_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
-		planet_housing_add = -300
-	}
-	triggered_planet_modifier = {
-		district_automated_workforce = 1
-	}
-}
-
 zone_BA_ark_refinery = {
 	icon = GFX_resource_sr_pyroxenes_large
 	base_buildtime = 180

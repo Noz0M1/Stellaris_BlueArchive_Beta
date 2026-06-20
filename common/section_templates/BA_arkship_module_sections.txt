@@ -1,0 +1,21 @@
+# BA 方舟专用模块区段。使用独立键，不覆盖原版 ARKSHIP_* 区段。
+
+ship_section_template = {
+	key = "BA_ARKSHIP_CONSTRUCTION_MODULE"
+	entity = "construction_yard_01_entity"
+	icon = "GFX_ship_part_core_mid"
+	ship_size = BA_arkship_tier_1
+	fits_on_slot = "1"
+	fits_on_slot = "2"
+	should_draw_components = yes
+}
+
+ship_section_template = {
+	key = "BA_ARKSHIP_FACTORY_MODULE"
+	entity = "hangar_factory_01_entity"
+	icon = "GFX_ship_part_core_mid"
+	ship_size = BA_arkship_tier_1
+	fits_on_slot = "1"
+	fits_on_slot = "2"
+	should_draw_components = yes
+}
