@@ -79,6 +79,9 @@ BA_arkship_tier_1 = {
 	is_civilian = no
 	components_add_to_cost = no
 	available_to_everyone = yes
+	potential_country = {
+		has_origin = origin_Kivotos_Unnamed_starting
+	}
 	enable_default_design = yes
 	prerequisites = { "tech_science_arkship" }
 	combat_disengage_chance = @arkship_disengage_chance_2

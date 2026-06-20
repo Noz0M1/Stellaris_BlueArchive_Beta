@@ -146,6 +146,8 @@ pc_BA_auto_habitat = {
 # 视觉与内部建设参数暂时沿用自动化居住站，但使用独立的 planet class 与 district set。
 pc_BA_ark = {
 	habitat = yes
+	climate = "artificial"
+	initial = yes
 	entity = "orbital_habitat"
 	icon = GFX_planet_type_habitat
 	icon_large = GFX_planet_type_habitat_big

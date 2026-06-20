@@ -1,0 +1,106 @@
+# “未命名的始发点”方舟专用必需组件。
+# 数值、资源、图标和行为分别取自原版 T1 方舟使用的
+# JUGGERNAUT_FISSION_REACTOR、COLOSSUS_SHIP_THRUSTER_1 与 COMBAT_COMPUTER_ARKSHIP。
+
+utility_component_template = {
+	key = "BA_ARKSHIP_FISSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_1"
+	icon_frame = 1
+	power = @juggernaut_reactor_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @juggernaut_reactor_cost_1
+		}
+		upkeep = {
+			energy = 5.6
+			alloys = 0.56
+		}
+	}
+	prerequisites = { "tech_fission_power" }
+	component_set = "power_core"
+	potential = {
+		is_ship_size = BA_arkship_tier_1
+	}
+	show_tech_unlock_if = {
+		has_origin = origin_Kivotos_Unnamed_starting
+	}
+	friendly_aura = {
+		name = "juggernaut_logistics"
+		system_wide = yes
+		stack_info = {
+			id = juggernaut_logistics
+			priority = 1
+		}
+		modifier = {
+			ships_logistics_mult = -0.75
+		}
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "BA_ARKSHIP_THRUSTER_1"
+	size = small
+	icon = "GFX_ship_part_thruster_1"
+	icon_frame = 1
+	power = -200
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+		}
+	}
+	modifier = {
+	}
+	prerequisites = { "tech_thrusters_1" }
+	component_set = "thruster_components"
+	potential = {
+		is_ship_size = BA_arkship_tier_1
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "BA_ARKSHIP_COMBAT_COMPUTER"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	power = -5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}
+	}
+	ship_behavior = "arkship"
+	potential = {
+		is_ship_size = BA_arkship_tier_1
+	}
+	component_set = "combat_computers"
+	scripted_action = {
+		arkship_build_megastructure
+		arkship_survey
+		arkship_deep_scan
+		arkship_harvest_resources
+		arkship_strip_mine
+		arkship_empty_spine
+		arkship_subspace_image
+		arkship_reprocess_planet
+		arkship_stellar_ignition
+		arkship_exodus_jump
+		arkship_settle
+		arkship_drop_off_prisoners
+		collect_waystation_stockpile
+		arkship_lithoid_consume_world
+		arkship_nanotech_consume_world
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
