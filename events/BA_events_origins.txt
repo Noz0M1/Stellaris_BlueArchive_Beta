@@ -187,7 +187,7 @@ country_event = {
 	immediate = {
 		set_country_flag = hoshino_is_leader_flag
 		BA_Hoshino_SP = yes
-		ruler = {
+		ruler?= {
 			kill_leader = {
 				show_notification = no
 			}
@@ -232,7 +232,7 @@ country_event = {
 	immediate = {
 		set_country_flag = hina_is_leader_flag
 		BA_Hina_SP = yes
-		ruler = {
+		ruler?= {
 			kill_leader = {
 				show_notification = no
 			}
@@ -269,7 +269,7 @@ country_event = {
 	immediate = {
 		set_country_flag = mika_is_leader_flag
 		BA_Mika_SP = yes
-		ruler = {
+		ruler?= {
 			kill_leader = {
 				show_notification = no
 			}
@@ -301,7 +301,7 @@ country_event = {
 	immediate = {
 		set_country_flag = yuuka_is_leader_flag
 		BA_Yuuka_SP = yes
-		ruler = {
+		ruler?= {
 			kill_leader = {
 				show_notification = no
 			}
@@ -2555,42 +2555,37 @@ country_event = {
 			tech = tech_BA_Shittem_starting
 			message = no
 		}
-		if = {
-			limit = {
-				exists = capital_scope
+		capital_scope?= {
+			# 三个基座区各一个，不预设任何区域特化。
+			remove_all_districts = yes
+			#
+			add_district = BA_ark_district_city
+			add_district = BA_ark_district_city
+			add_district = BA_ark_district_city
+			add_district = BA_ark_district_city
+			add_district = BA_ark_district_slot_01
+			add_district = BA_ark_district_slot_02
+			add_district = BA_ark_district_slot_03
+			# 清除原版方舟开局生成的工业废土、贫民窟和凌乱机库等障碍特征。增加特征。
+			clear_blockers = yes
+			add_deposit = d_BA_ark_Atrahasis_reactor
+			add_deposit = d_BA_ark_Atrahasis_harvester
+			add_deposit = d_BA_ark_Atrahasis_agriculture
+			add_deposit = d_BA_ark_Atrahasis_factory
+			add_deposit = d_BA_ark_Atrahasis_gravity_controllor
+			set_timed_carrier_flag = {
+				flag = ignore_ai_building_limitations
+				days = 1
 			}
-			capital_scope = {
-				# 三个基座区各一个，不预设任何区域特化。
-				remove_all_districts = yes
-				#
-				add_district = BA_ark_district_city
-				add_district = BA_ark_district_city
-				add_district = BA_ark_district_city
-				add_district = BA_ark_district_city
-				add_district = BA_ark_district_slot_01
-				add_district = BA_ark_district_slot_02
-				add_district = BA_ark_district_slot_03
-				# 清除原版方舟开局生成的工业废土、贫民窟和凌乱机库等障碍特征。增加特征。
-                clear_blockers = yes
-                add_deposit = d_BA_ark_Atrahasis_reactor
-				add_deposit = d_BA_ark_Atrahasis_harvester
-				add_deposit = d_BA_ark_Atrahasis_agriculture
-				add_deposit = d_BA_ark_Atrahasis_factory
-				add_deposit = d_BA_ark_Atrahasis_gravity_controllor
-				set_timed_carrier_flag = {
-					flag = ignore_ai_building_limitations
-					days = 1
-				}
-				add_building = {
-					zone = zone_BA_ark_goverment
-					building = building_BA_Locker_room
-				}
-                add_zone = {
-                    district = BA_ark_district_slot_01
-                    zone = zone_BA_ark_refinery
-                }
-				validate_planet_buildings_and_districts = yes
+			add_building = {
+				zone = zone_BA_ark_goverment
+				building = building_BA_Locker_room
 			}
+			add_zone = {
+				district = BA_ark_district_slot_01
+				zone = zone_BA_ark_refinery
+			}
+			validate_planet_buildings_and_districts = yes
 		}
 		country_event = {
 			id = BA_origin.2002
@@ -2665,8 +2660,7 @@ country_event = {
 	trigger = {
 		has_origin = origin_Kivotos_Unnamed_starting
 		is_nomadic = yes
-		exists = capital_scope
-		capital_scope.ship = {
+		capital_scope.ship?= {
 			is_ship_size = BA_arkship_tier_1
 		}
 	}
