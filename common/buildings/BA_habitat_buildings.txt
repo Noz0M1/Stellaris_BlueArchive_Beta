@@ -2,198 +2,168 @@
 #居住站控制节点
 #提供100%的劳动力填充，不可禁用或拆除
 builiding_BA_hab_controller = {
-    icon = building_automation_2
-    base_buildtime = @b2_time
-    # planet_limit = 1
-    category = pop_assembly
-
-    building_sets = {
-        government
-        urban
-        farming
-        mining
-        generator
-    }
-
-    potential = {
-        always = no   #TODO
-    }
-
-    allow = {
-        always = yes
-    }
-
-    destroy_trigger = {
-    }
-
-    planet_modifier = {
-        district_automated_workforce = 1.0
-    }
-
-    resources = {
-        category = planet_buildings
-        cost = {
-            minerals = @b1_minerals
-        }
-        upkeep = {
-            energy = @b4_upkeep
-            mult = value:count_any_districts
-        }
-        upkeep = {
-            energy = @b4_upkeep
-            mult = value:count_any_building
-        }
-    }
-
-    prerequisites = {
-    }
-
-    show_tech_unlock_if = {
-    }
-
-    triggered_desc = {
-        text = automation_2_tooltip
-    }
+	icon = building_automation_2
+	base_buildtime = @b2_time
+	# planet_limit = 1
+	category = pop_assembly
+	building_sets = {
+		government
+		urban
+		farming
+		mining
+		generator
+	}
+	potential = {
+		always = no #TODO
+	}
+	allow = {
+		always = yes
+	}
+	destroy_trigger = {
+	}
+	planet_modifier = {
+		district_automated_workforce = 1.0
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b4_upkeep
+			mult = value:count_any_districts
+		}
+		upkeep = {
+			energy = @b4_upkeep
+			mult = value:count_any_building
+		}
+	}
+	prerequisites = {
+	}
+	show_tech_unlock_if = {
+	}
+	triggered_desc = {
+		text = automation_2_tooltip
+	}
 }
 
 #居住站维护节点
 #降低岗位维护费
 builiding_BA_hab_maintenance = {
-    capital = no
-    can_build = yes
-    can_demolish = yes
-    can_be_ruined = yes
-    can_be_disabled = yes
-
-    category = government
-    building_sets = {
-        government
-        BA_government
-    }
-
-    potential = {
-        always = no   #TODO
-    }
-    allow = {
-
-    }
-    prerequisites = {
-
-    }
-
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-        }
-        planet_jobs_upkeep_mult = -0.05
-    }
-
-    resources = {
-        category = planet_buildings
-        upkeep = {
-            energy = 1
-        }
-        cost = {
-            minerals = 300
-        }
-    }
-
-    ai_weight = {
-        weight = 0
-    }
+	capital = no
+	can_build = yes
+	can_demolish = yes
+	can_be_ruined = yes
+	can_be_disabled = yes
+	category = government
+	building_sets = {
+		government
+		BA_government
+	}
+	potential = {
+		always = no #TODO
+	}
+	allow = {
+	}
+	prerequisites = {
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_jobs_upkeep_mult = -0.05
+	}
+	resources = {
+		category = planet_buildings
+		upkeep = {
+			energy = 1
+		}
+		cost = {
+			minerals = 300
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
 }
 
 #居住站分配节点
 #提高岗位产出
 builiding_BA_hab_allocation = {
-    capital = no
-    can_build = yes
-    can_demolish = yes
-    can_be_ruined = yes
-    can_be_disabled = yes
-
-    category = government
-    building_sets = {
-        government
-        BA_government
-    }
-
-    potential = {
-        always = no   #TODO
-    }
-    allow = {
-
-    }
-    prerequisites = {
-
-    }
-
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-        }
-        planet_jobs_produces_mult = 0.10
-    }
-
-    resources = {
-        category = planet_buildings
-        upkeep = {
-            energy = 1
-        }
-        cost = {
-            minerals = 300
-        }
-    }
-
-    ai_weight = {
-        weight = 0
-    }
+	capital = no
+	can_build = yes
+	can_demolish = yes
+	can_be_ruined = yes
+	can_be_disabled = yes
+	category = government
+	building_sets = {
+		government
+		BA_government
+	}
+	potential = {
+		always = no #TODO
+	}
+	allow = {
+	}
+	prerequisites = {
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_jobs_produces_mult = 0.10
+	}
+	resources = {
+		category = planet_buildings
+		upkeep = {
+			energy = 1
+		}
+		cost = {
+			minerals = 300
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
 }
 
 #居住站扩展坞
 #住房+400，最大区划+0.5
 builiding_BA_hab_expansionCabin = {
-    capital = no
-    can_build = yes
-    can_demolish = yes
-    can_be_ruined = yes
-    can_be_disabled = yes
-
-    category = government
-    building_sets = {
-        government
-        BA_government
-    }
-
-    potential = {
-        always = no   #TODO
-    }
-    allow = {
-
-    }
-    prerequisites = {
-
-    }
-
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-        }
-        planet_max_districts_add = 0.50
-        planet_housing_add = 400
-    }
-
-    resources = {
-        category = planet_buildings
-        upkeep = {
-            energy = 1
-        }
-        cost = {
-            minerals = 300
-        }
-    }
-
-    ai_weight = {
-        weight = 0
-    }
+	capital = no
+	can_build = yes
+	can_demolish = yes
+	can_be_ruined = yes
+	can_be_disabled = yes
+	category = government
+	building_sets = {
+		government
+		BA_government
+	}
+	potential = {
+		always = no #TODO
+	}
+	allow = {
+	}
+	prerequisites = {
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_max_districts_add = 0.50
+		planet_housing_add = 400
+	}
+	resources = {
+		category = planet_buildings
+		upkeep = {
+			energy = 1
+		}
+		cost = {
+			minerals = 300
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
 }

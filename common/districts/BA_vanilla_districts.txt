@@ -6,10 +6,8 @@
 @rw_maintenance = 5
 @rw_maintenance_sr = 2
 @rw_district_buildtime = 360
-
 district_city = {
 	base_buildtime = 480
-	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
 	default_starting_district = yes
 	overlay_icon = GFX_district_government
@@ -204,7 +202,6 @@ district_city = {
 
 district_rw_city = {
 	base_buildtime = @rw_district_buildtime
-	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
 	overlay_icon = GFX_district_government
 	zone_slots = {

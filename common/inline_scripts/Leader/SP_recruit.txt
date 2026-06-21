@@ -6,6 +6,7 @@ picture_event_data = {
 	portrait = event_target:BA_$Leader$_SP
 	room = paragon_ba_room
 }
+
 picture = GFX_leader_recruitment_bg_legendary_ba
 ###
 # HIRE
@@ -18,12 +19,14 @@ option = {
 		BA_$Leader$_SP = yes
 	}
 }
+
 # DISMISS
 option = {
 	name = DISMISS
 	tag = dismiss_leader
 	#sound = par_azaryn_dismiss
 }
+
 ###
 after = {
 	hidden_effect = {

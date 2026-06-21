@@ -1,4 +1,11 @@
 ########## 居住站 ##########
+slot_BA_ark_government = {
+	start = zone_BA_ark_goverment
+	include = {
+		zone_BA_ark_goverment
+	}
+}
+
 slot_BA_ark_city = {
 	include = {
 		zone_BA_ark_unity

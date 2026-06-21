@@ -2577,6 +2577,15 @@ country_event = {
 				flag = ignore_ai_building_limitations
 				days = 1
 			}
+			if = {
+				limit = {
+					NOT = { has_building = building_colony_shelter }
+				}
+				add_building = {
+					zone = zone_BA_ark_goverment
+					building = building_colony_shelter
+				}
+			}
 			add_building = {
 				zone = zone_BA_ark_goverment
 				building = building_BA_Locker_room

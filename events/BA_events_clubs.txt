@@ -374,7 +374,6 @@ country_event = {
 					add_modifier = {
 						modifier = modifier_BA_Festival_operations_department_4
 					}
-
 				}
 			}
 			else = {
@@ -668,11 +667,11 @@ country_event = {
 			set_megastructure_flag = Mega_Game_development_department_@owner
 		}
 		set_variable = {
-			which = Game_development_department			#建设度
+			which = Game_development_department #建设度
 			value = 0
 		}
 		set_variable = {
-			which = Game_development_department_room_limit			#部室限制
+			which = Game_development_department_room_limit #部室限制
 			value = 1
 		}
 		#
@@ -968,11 +967,11 @@ country_event = {
 			set_name = Engineering_club
 		}
 		set_variable = {
-			which = Engineering_club			#建设度
+			which = Engineering_club #建设度
 			value = 0
 		}
 		set_variable = {
-			which = Engineering_club_room_limit			#部室限制
+			which = Engineering_club_room_limit #部室限制
 			value = 1
 		}
 		#武器计数
@@ -2267,15 +2266,15 @@ country_event = {
 			set_name = Veritas
 		}
 		set_variable = {
-			which = Veritas			#建设度
+			which = Veritas #建设度
 			value = 0
 		}
 		set_variable = {
-			which = Veritas_sensor_cost			#传感器消耗
+			which = Veritas_sensor_cost #传感器消耗
 			value = 2500
 		}
 		set_variable = {
-			which = Veritas_room_limit			#部室限制
+			which = Veritas_room_limit #部室限制
 			value = 1
 		}
 		every_country = {
@@ -2540,16 +2539,16 @@ country_event = {
 			set_name = Foreclosure_task_force
 		}
 		set_variable = {
-			which = Foreclosure_task_force			#建设度
+			which = Foreclosure_task_force #建设度
 			value = 0
 		}
 		set_variable = {
-			which = Foreclosure_task_force_room_limit			#部室限制
+			which = Foreclosure_task_force_room_limit #部室限制
 			value = 1
 		}
 		#
 		set_variable = {
-			which = Foreclosure_task_force_func_lv			#赞助等级
+			which = Foreclosure_task_force_func_lv #赞助等级
 			value = 1
 		}
 		set_timed_country_flag = {
@@ -2678,15 +2677,15 @@ country_event = {
 			set_name = Teaparty
 		}
 		set_variable = {
-			which = Teaparty			#建设度
+			which = Teaparty #建设度
 			value = 0
 		}
 		set_variable = {
-			which = Teaparty_room_limit			#部室限制
+			which = Teaparty_room_limit #部室限制
 			value = 1
 		}
 		set_variable = {
-			which = Teaparty_sponse_count			#赞助效果自变量
+			which = Teaparty_sponse_count #赞助效果自变量
 			value = 0
 		}
 		every_country = {
@@ -2839,15 +2838,15 @@ country_event = {
 			set_name = Hotspring_development_department
 		}
 		set_variable = {
-			which = Hotspring_development_department			#建设度
+			which = Hotspring_development_department #建设度
 			value = 0
 		}
 		set_variable = {
-			which = Hotspring_development_department_room_limit			#部室限制
+			which = Hotspring_development_department_room_limit #部室限制
 			value = 1
 		}
 		set_variable = {
-			which = Hotspring_development_department_megastructure_produce			#产出倍率
+			which = Hotspring_development_department_megastructure_produce #产出倍率
 			value = 1
 		}
 		every_country = {
@@ -2964,15 +2963,15 @@ country_event = {
 			set_name = Festival_operations_department
 		}
 		set_variable = {
-			which = Festival_operations_department			#建设度
+			which = Festival_operations_department #建设度
 			value = 0
 		}
 		set_variable = {
-			which = Festival_operations_department_room_limit			#部室限制
+			which = Festival_operations_department_room_limit #部室限制
 			value = 1
 		}
 		set_variable = {
-			which = Festival_operations_department_fes_level			#节日增益等级
+			which = Festival_operations_department_fes_level #节日增益等级
 			value = 1
 		}
 		every_country = {
@@ -3063,16 +3062,16 @@ country_event = {
 			set_name = Xuanwu_promenade
 		}
 		set_variable = {
-			which = Xuanwu_promenade			#建设度
+			which = Xuanwu_promenade #建设度
 			value = 0
 		}
 		set_variable = {
-			which = Xuanwu_promenade_room_limit			#部室限制
+			which = Xuanwu_promenade_room_limit #部室限制
 			value = 1
 		}
 		#
 		set_variable = {
-			which = Xuanwu_promenade_cooldown			#冷却时间
+			which = Xuanwu_promenade_cooldown #冷却时间
 			value = 360
 		}
 		#
@@ -3217,11 +3216,11 @@ country_event = {
 			set_name = Publishing_department
 		}
 		set_variable = {
-			which = Publishing_department			#建设度
+			which = Publishing_department #建设度
 			value = 0
 		}
 		set_variable = {
-			which = Publishing_department_room_limit			#部室限制
+			which = Publishing_department_room_limit #部室限制
 			value = 1
 		}
 		every_country = {

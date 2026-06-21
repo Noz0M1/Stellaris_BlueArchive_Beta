@@ -1,39 +1,39 @@
 #茶会-行政人员援助
 option = {
-    name = Teaparty_support
-    custom_tooltip = Teaparty_support.tip
-    response_text = Teaparty_support.$CHARA$RE
-    allow = {
-        if = {
-            limit = {
-                check_variable = {
-                    which = Teaparty_sponse_count
-                    value >= 10
-                }
-                #has_modifier = modifier_BA_Teaparty_X
-            }
-            custom_tooltip_fail = {
-                text = Teaparty_support_capped
-                always = no
-            }
-        }
-        else = {
-            resource_stockpile_compare = {
-                resource = energy
-                value >= 1000
-                multiplier = value:num_BA_club_empire_size_modifier_boost_cost
-            }
-        }
-    }
-    add_resource = {
-        energy = -1000
-        multiplier = value:num_BA_club_empire_size_modifier_boost_cost
-    }
-    hidden_effect = {
-        change_variable = {
-            which = Teaparty_sponse_count
-            value = 1
-        }
-        BA_club_reload_Teaparty_effect_modifier = yes
-    }
+	name = Teaparty_support
+	custom_tooltip = Teaparty_support.tip
+	response_text = Teaparty_support.$CHARA$RE
+	allow = {
+		if = {
+			limit = {
+				check_variable = {
+					which = Teaparty_sponse_count
+					value >= 10
+				}
+				#has_modifier = modifier_BA_Teaparty_X
+			}
+			custom_tooltip_fail = {
+				text = Teaparty_support_capped
+				always = no
+			}
+		}
+		else = {
+			resource_stockpile_compare = {
+				resource = energy
+				value >= 1000
+				multiplier = value:num_BA_club_empire_size_modifier_boost_cost
+			}
+		}
+	}
+	add_resource = {
+		energy = -1000
+		multiplier = value:num_BA_club_empire_size_modifier_boost_cost
+	}
+	hidden_effect = {
+		change_variable = {
+			which = Teaparty_sponse_count
+			value = 1
+		}
+		BA_club_reload_Teaparty_effect_modifier = yes
+	}
 }

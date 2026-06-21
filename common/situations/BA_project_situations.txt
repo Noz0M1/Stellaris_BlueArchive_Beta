@@ -323,7 +323,7 @@ situation_Project_Cradle_C = {
 		stage_1 = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_blue
-			end = 180			# = 12*3*5
+			end = 180 # = 12*3*5
 			custom_tooltip = Project_Cradle_C_tip
 			on_first_enter = {
 			}
@@ -729,7 +729,7 @@ situation_mid_Aris_ask_help = {
 	}
 	on_progress_complete = {
 		owner = {
-			set_country_flag = BA_mid_Aris_ask_help_A			#出去干
+			set_country_flag = BA_mid_Aris_ask_help_A #出去干
 			country_event = {
 				id = BA_crisis.1230
 			}
@@ -738,8 +738,8 @@ situation_mid_Aris_ask_help = {
 	}
 	on_fail = {
 		owner = {
-			set_country_flag = BA_mid_Aris_ask_help_B			#窝里怂
-			set_country_flag = BA_GateBuilder			#建门者旗帜，以后用
+			set_country_flag = BA_mid_Aris_ask_help_B #窝里怂
+			set_country_flag = BA_GateBuilder #建门者旗帜，以后用
 			country_event = {
 				id = BA_crisis.1230
 			}

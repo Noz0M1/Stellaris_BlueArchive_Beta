@@ -1,34 +1,33 @@
 message_type = {
-    key = "BA_NEW_SP_LEADER"
-    icon = "GFX_message_new_heir"
-    icon_frame = 1
-    hidden_in_message_settings = yes
-    name = MESSAGE_BA_NEW_SP_LEADER_TITLE
-    sound = "notification"
-    ping = mixed_notification_green
-    category = leaders
+	key = "BA_NEW_SP_LEADER"
+	icon = "GFX_message_new_heir"
+	icon_frame = 1
+	hidden_in_message_settings = yes
+	name = MESSAGE_BA_NEW_SP_LEADER_TITLE
+	sound = "notification"
+	ping = mixed_notification_green
+	category = leaders
 }
 
 ### 学园理念
 message_type = {
-    key = "BA_SI_READY"
-    icon = "GFX_message_negotiate_existing_agreement"
-    icon_frame = 1
-    hidden_in_message_settings = yes
-    name = MESSAGE_BA_SI_READY
-    sound = "notification"
-    ping = mixed_notification_green
-    category = leaders
+	key = "BA_SI_READY"
+	icon = "GFX_message_negotiate_existing_agreement"
+	icon_frame = 1
+	hidden_in_message_settings = yes
+	name = MESSAGE_BA_SI_READY
+	sound = "notification"
+	ping = mixed_notification_green
+	category = leaders
 }
 
 message_type = {
-    key = "BA_SI_ACTIVATED"
-    icon = "GFX_message_leader_experience_gain"
-    icon_frame = 1
-    hidden_in_message_settings = yes
-    name = MESSAGE_BA_SI_ACTIVATED
-    sound = "notification"
-    ping = mixed_notification_green
-    category = leaders
+	key = "BA_SI_ACTIVATED"
+	icon = "GFX_message_leader_experience_gain"
+	icon_frame = 1
+	hidden_in_message_settings = yes
+	name = MESSAGE_BA_SI_ACTIVATED
+	sound = "notification"
+	ping = mixed_notification_green
+	category = leaders
 }
-

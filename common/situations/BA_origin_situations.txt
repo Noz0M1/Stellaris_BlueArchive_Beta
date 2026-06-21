@@ -9,33 +9,33 @@
 #############################
 situation_Kyrie_ruin_research = {
 	desc = {
-		text = situation_Kyrie_ruin_research_desc_1		#等待矿业协会提案
+		text = situation_Kyrie_ruin_research_desc_1 #等待矿业协会提案
 		trigger = {
 			situation_progress < 24
 		}
 	}
 	desc = {
-		text = situation_Kyrie_ruin_research_desc_2		#请建造研究室
+		text = situation_Kyrie_ruin_research_desc_2 #请建造研究室
 		trigger = {
 			situation_progress = 24
 		}
 	}
 	desc = {
-		text = situation_Kyrie_ruin_research_desc_3		#准备采矿科技中
+		text = situation_Kyrie_ruin_research_desc_3 #准备采矿科技中
 		trigger = {
 			situation_progress > 24
 			situation_progress < 48
 		}
 	}
 	desc = {
-		text = situation_Kyrie_ruin_research_desc_4		#准备清除废墟科技中
+		text = situation_Kyrie_ruin_research_desc_4 #准备清除废墟科技中
 		trigger = {
 			situation_progress >= 48
 			situation_progress < 84
 		}
 	}
 	desc = {
-		text = situation_Kyrie_ruin_research_desc_5		#研究清除废墟科技
+		text = situation_Kyrie_ruin_research_desc_5 #研究清除废墟科技
 		trigger = {
 			situation_progress >= 84
 		}
@@ -78,7 +78,7 @@ situation_Kyrie_ruin_research = {
 		stage_2 = {
 			icon = GFX_situation_stage_2
 			icon_background = GFX_situation_stage_frame_blue
-			end = 48			#持续等待建造实验室 +2年 （4
+			end = 48 #持续等待建造实验室 +2年 （4
 			custom_tooltip = situation_Kyrie_ruin_research_2_tip
 			on_first_enter = {
 				set_situation_locked = yes
@@ -92,7 +92,7 @@ situation_Kyrie_ruin_research = {
 		stage_3 = {
 			icon = GFX_situation_stage_3
 			icon_background = GFX_situation_stage_frame_blue
-			end = 84			#持续3年 +研究科技清除废墟 （7
+			end = 84 #持续3年 +研究科技清除废墟 （7
 			custom_tooltip = situation_Kyrie_ruin_research_3_tip
 			on_first_enter = {
 				#set_situation_locked = yes
@@ -106,7 +106,7 @@ situation_Kyrie_ruin_research = {
 		stage_4 = {
 			icon = GFX_situation_stage_4
 			icon_background = GFX_situation_stage_frame_blue
-			end = 96			#1年（8
+			end = 96 #1年（8
 			custom_tooltip = situation_Kyrie_ruin_research_4_tip
 			on_first_enter = {
 				owner = {
@@ -119,7 +119,7 @@ situation_Kyrie_ruin_research = {
 		stage_5 = {
 			icon = GFX_situation_stage_5
 			icon_background = GFX_situation_stage_frame_blue
-			end = 97			#废墟清除完成后进行下一步
+			end = 97 #废墟清除完成后进行下一步
 			custom_tooltip = situation_Kyrie_ruin_research_5_tip
 			on_first_enter = {
 				target = {
@@ -166,13 +166,13 @@ situation_Kyrie_ruin_research = {
 
 situation_Kyrie_planet_cleaning = {
 	desc = {
-		text = situation_Kyrie_planet_cleaning_1		#准备
+		text = situation_Kyrie_planet_cleaning_1 #准备
 		trigger = {
 			situation_progress < 12
 		}
 	}
 	desc = {
-		text = situation_Kyrie_planet_cleaning_2		#清扫
+		text = situation_Kyrie_planet_cleaning_2 #清扫
 		trigger = {
 			situation_progress >= 12
 		}
@@ -231,7 +231,7 @@ situation_Kyrie_planet_cleaning = {
 		stage_1 = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_blue
-			end = 120			#持续1年
+			end = 120 #持续1年
 			custom_tooltip = situation_Kyrie_planet_cleaning_1_tip
 			on_first_enter = {
 				set_situation_flag = situation_Kyrie_planet_cleaning
@@ -240,7 +240,7 @@ situation_Kyrie_planet_cleaning = {
 		stage_2 = {
 			icon = GFX_situation_stage_2
 			icon_background = GFX_situation_stage_frame_blue
-			end = 720			#持续6年
+			end = 720 #持续6年
 			custom_tooltip = situation_Kyrie_planet_cleaning_2_tip
 			on_first_enter = {
 				target = {
@@ -253,7 +253,7 @@ situation_Kyrie_planet_cleaning = {
 		stage_3 = {
 			icon = GFX_situation_stage_3
 			icon_background = GFX_situation_stage_frame_blue
-			end = 721			#持续6年
+			end = 721 #持续6年
 			custom_tooltip = situation_Kyrie_planet_cleaning_3_tip
 			on_first_enter = {
 				set_situation_locked = yes
@@ -270,7 +270,7 @@ situation_Kyrie_planet_cleaning = {
 	on_progress_complete = {
 		owner = {
 			country_event = {
-				id = BA_origin.1429				#胜利检测
+				id = BA_origin.1429 #胜利检测
 			}
 		}
 		destroy_situation = this
@@ -460,14 +460,14 @@ situation_Kyrie_engage_enemy = {
 		destroy_situation = this
 		target = {
 			planet_event = {
-				id = BA_origin.1410				#boom
+				id = BA_origin.1410 #boom
 			}
 		}
 	}
 	on_abort = {
 		owner = {
 			country_event = {
-				id = BA_origin.1429				#胜利检测
+				id = BA_origin.1429 #胜利检测
 			}
 		}
 	}

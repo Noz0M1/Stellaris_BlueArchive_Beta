@@ -1,87 +1,87 @@
 #真理部-传感器设立
 option = {
-    name = Veritas_sensor_crafting
-    allow = {
-        resource_stockpile_compare = {
-            resource = alloys
-            value >= 1
-            multiplier = Veritas_sensor_cost
-        }
-        custom_tooltip = {
-            fail_text = BA_club_favor_fail
-            OR = {
-                AND = {
-                    NOR = {
-                        has_modifier = modifier_BA_Veritas_1
-                        has_modifier = modifier_BA_Veritas_2
-                        has_modifier = modifier_BA_Veritas_3
-                    }
-                    check_variable = {
-                        which = Veritas
-                        value >= 25
-                    }
-                }
-                AND = {
-                    has_modifier = modifier_BA_Veritas_1
-                    check_variable = {
-                        which = Veritas
-                        value >= 50
-                    }
-                }
-                AND = {
-                    has_modifier = modifier_BA_Veritas_2
-                    check_variable = {
-                        which = Veritas
-                        value >= 75
-                    }
-                }
-                AND = {
-                    has_modifier = modifier_BA_Veritas_3
-                    check_variable = {
-                        which = Veritas
-                        value >= 100
-                    }
-                }
-            }
-        }
-        custom_tooltip = {
-            fail_text = Veritas_complete_sensor
-            NOT = {
-                has_modifier = modifier_BA_Veritas_4
-            }
-        }
-    }
-    add_resource = {
-        alloys = -1
-        multiplier = Veritas_sensor_cost
-    }
-    if = {
-        limit = {
-            has_modifier = modifier_BA_Veritas_3
-        }
-        country_event = {
-            id = BA_club.1214
-        }
-    }
-    else_if = {
-        limit = {
-            has_modifier = modifier_BA_Veritas_2
-        }
-        country_event = {
-            id = BA_club.1213
-        }
-    }
-    else_if = {
-        limit = {
-            has_modifier = modifier_BA_Veritas_1
-        }
-        country_event = {
-            id = BA_club.1212
-        }
-    }
-    else = {
-        country_event = {
-            id = BA_club.1211
-        }
-    }
+	name = Veritas_sensor_crafting
+	allow = {
+		resource_stockpile_compare = {
+			resource = alloys
+			value >= 1
+			multiplier = Veritas_sensor_cost
+		}
+		custom_tooltip = {
+			fail_text = BA_club_favor_fail
+			OR = {
+				AND = {
+					NOR = {
+						has_modifier = modifier_BA_Veritas_1
+						has_modifier = modifier_BA_Veritas_2
+						has_modifier = modifier_BA_Veritas_3
+					}
+					check_variable = {
+						which = Veritas
+						value >= 25
+					}
+				}
+				AND = {
+					has_modifier = modifier_BA_Veritas_1
+					check_variable = {
+						which = Veritas
+						value >= 50
+					}
+				}
+				AND = {
+					has_modifier = modifier_BA_Veritas_2
+					check_variable = {
+						which = Veritas
+						value >= 75
+					}
+				}
+				AND = {
+					has_modifier = modifier_BA_Veritas_3
+					check_variable = {
+						which = Veritas
+						value >= 100
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = Veritas_complete_sensor
+			NOT = {
+				has_modifier = modifier_BA_Veritas_4
+			}
+		}
+	}
+	add_resource = {
+		alloys = -1
+		multiplier = Veritas_sensor_cost
+	}
+	if = {
+		limit = {
+			has_modifier = modifier_BA_Veritas_3
+		}
+		country_event = {
+			id = BA_club.1214
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = modifier_BA_Veritas_2
+		}
+		country_event = {
+			id = BA_club.1213
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = modifier_BA_Veritas_1
+		}
+		country_event = {
+			id = BA_club.1212
+		}
+	}
+	else = {
+		country_event = {
+			id = BA_club.1211
+		}
+	}
 }

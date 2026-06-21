@@ -11,7 +11,6 @@
 ### 学园区划 政府区
 BA_districts_campus = {
 	base_buildtime = @BA_base_time
-	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
 	show_on_uncolonized = {
 		exists = from
@@ -130,7 +129,6 @@ BA_districts_campus = {
 ### 宿舍区划 辅助功能
 BA_districts_dome = {
 	base_buildtime = @BA_base_time
-	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
 	show_on_uncolonized = {
 		exists = from
@@ -206,7 +204,6 @@ BA_districts_dome = {
 ### 都市工业区划 合金 消费品
 BA_districts_military_factory = {
 	base_buildtime = @BA_base_time
-	is_capped_by_modifier = no
 	show_on_uncolonized = {
 		uses_district_set = BA_planet
 	}
@@ -286,7 +283,6 @@ BA_districts_military_factory = {
 ### 城郊区划 电矿粮
 BA_districts_suburbs = {
 	base_buildtime = @BA_base_time
-	is_capped_by_modifier = no
 	show_on_uncolonized = {
 		uses_district_set = BA_planet
 	}
@@ -360,7 +356,6 @@ BA_districts_suburbs = {
 BA_districts_municipality_A = {
 	icon = BA_districts_municipality
 	base_buildtime = @BA_base_time
-	is_capped_by_modifier = no
 	show_on_uncolonized = {
 		uses_district_set = BA_planet
 	}
@@ -412,7 +407,6 @@ BA_districts_municipality_A = {
 BA_districts_municipality_B = {
 	icon = BA_districts_municipality
 	base_buildtime = @BA_base_time
-	is_capped_by_modifier = no
 	show_on_uncolonized = {
 		uses_district_set = BA_planet
 	}
@@ -467,7 +461,6 @@ BA_districts_municipality_B = {
 BA_districts_municipality_C = {
 	icon = BA_districts_municipality
 	base_buildtime = @BA_base_time
-	is_capped_by_modifier = no
 	show_on_uncolonized = {
 		uses_district_set = BA_planet
 	}
@@ -525,7 +518,6 @@ BA_districts_municipality_C = {
 #定居点区划 1槽位、6住房、4舒适度
 BA_districts_shelter = {
 	base_buildtime = @BA_ruin_time
-	is_capped_by_modifier = no
 	show_on_uncolonized = {
 		uses_district_set = BA_ruined_planet
 	}
@@ -569,13 +561,11 @@ BA_districts_shelter = {
 		script = jobs/add_BA_crew_pop_jobs
 		value = 100
 	}
-
 }
 
 #再采集区划 1槽位、3住房
 BA_districts_remining_area = {
 	base_buildtime = @BA_ruin_time
-	is_capped_by_modifier = no
 	show_on_uncolonized = {
 		uses_district_set = BA_ruined_planet
 	}
@@ -637,7 +627,6 @@ BA_districts_remining_area = {
 #供给站区划
 BA_districts_supply_station = {
 	base_buildtime = @BA_ruin_time
-	is_capped_by_modifier = no
 	show_on_uncolonized = {
 		uses_district_set = BA_ruined_planet
 	}
@@ -675,7 +664,6 @@ BA_districts_supply_station = {
 #特殊工业区划
 BA_districts_special_factory = {
 	base_buildtime = @BA_ruin_time
-	is_capped_by_modifier = no
 	show_on_uncolonized = {
 		uses_district_set = BA_ruined_planet
 	}
@@ -728,7 +716,6 @@ BA_districts_special_factory = {
 BA_districts_dome_fe = {
 	icon = BA_districts_dome
 	base_buildtime = @BA_base_time
-	is_capped_by_modifier = no
 	show_on_uncolonized = {
 		uses_district_set = BA_fe_planet
 	}

@@ -44,7 +44,8 @@ Fade_Sanctum = {
 		#standard_economy_module = {}
 		#standard_expansion_module = {}
 		#standard_species_rights_module = {}
-		exclusive_diplomacy_module = { # Nothing is allowed, but we need this for relationships.
+		exclusive_diplomacy_module = {
+			# Nothing is allowed, but we need this for relationships.
 			contact_rule = on_action_only
 		}
 	}
@@ -69,10 +70,10 @@ Aris_mid = {
 	has_complete_sensor = yes
 	#
 	custom_starbase = starbase_Aris
-	attack_unarmed_orbital_stations = yes	#拆开采站
-	destroys_starbases = yes	#拆哨站
-	ship_disengagement = no	#死战不退
-	can_own_empty_planets = no	#占据空星球
+	attack_unarmed_orbital_stations = yes #拆开采站
+	destroys_starbases = yes #拆哨站
+	ship_disengagement = no #死战不退
+	can_own_empty_planets = no #占据空星球
 	orbital_bombardment = yes
 	#
 	ai = {
@@ -100,7 +101,7 @@ Aris_mid = {
 }
 
 Moe_Xcom = {
-	scaled_difficulty_bonuses = 2		# scales to setting
+	scaled_difficulty_bonuses = 2 # scales to setting
 	counts_for_victory = yes
 	sub_title = "NAME_BA_Precursor_country_title"
 	sub_title_desc = "NAME_BA_Precursor_country_desc"
@@ -196,7 +197,7 @@ Moe_Xcom = {
 }
 
 Moe_Xcom_awakened = {
-	scaled_difficulty_bonuses = 1	# scales to setting
+	scaled_difficulty_bonuses = 1 # scales to setting
 	counts_for_victory = yes
 	sub_title = "NAME_BA_Precursor_country_awakened_title"
 	sub_title_desc = "NAME_BA_Precursor_country_awakened_desc"
@@ -230,7 +231,7 @@ Moe_Xcom_awakened = {
 		government = no
 		construction = yes
 		tech = yes
-		traditions = yes		#but no ascension perks!
+		traditions = yes #but no ascension perks!
 		modules = {
 			military_minister_module
 			foreign_minister_module

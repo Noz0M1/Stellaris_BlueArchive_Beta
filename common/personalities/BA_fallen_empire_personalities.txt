@@ -1,8 +1,8 @@
 ba_fallen_empire_01 = {
-	aggressiveness = 0.1	#攻击性
-	trade_willingness = 1	#交易意愿
-	bravery = 0.1	#士气
-	combat_bravery = 0.25	#作战士气
+	aggressiveness = 0.1 #攻击性
+	trade_willingness = 1 #交易意愿
+	bravery = 0.1 #士气
+	combat_bravery = 0.25 #作战士气
 	#
 	threat_modifier = 0
 	threat_others_modifier = 0.25
@@ -60,8 +60,8 @@ ba_awakened_fallen_empire_01 = {
 		multispecies = yes
 		attack_neutrals = no
 		crisis_fighter = yes
-		crisis_leader = yes		# special for awakened fallen empires
-		custodian = yes		# special for awakened machine fallen empires, prevents colonization & locks attitude
+		crisis_leader = yes # special for awakened fallen empires
+		custodian = yes # special for awakened machine fallen empires, prevents colonization & locks attitude
 		# limited = yes # prevents certain AI behaviours
 	}
 	allow = {
