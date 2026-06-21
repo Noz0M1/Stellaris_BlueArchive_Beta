@@ -4,7 +4,6 @@
 ### 环世界中心城
 BA_districts_ringworld_capital = {
     base_buildtime = 360
-    is_capped_by_modifier = no
     exempt_from_ai_planet_specialization = yes
     zone_slots = {
         slot_city_government
@@ -54,7 +53,6 @@ BA_districts_ringworld_capital = {
 BA_districts_ringworld_specialist_01 = {
     icon = BA_districts_ringworld_specialist
     base_buildtime = 360
-    is_capped_by_modifier = no
     exempt_from_ai_planet_specialization = yes
     zone_slots = {
         slot_BA_ringworld_specialist
@@ -84,7 +82,6 @@ BA_districts_ringworld_specialist_01 = {
 BA_districts_ringworld_specialist_02 = {
     icon = BA_districts_ringworld_specialist
     base_buildtime = 360
-    is_capped_by_modifier = no
     exempt_from_ai_planet_specialization = yes
     zone_slots = {
         slot_BA_ringworld_specialist
@@ -114,7 +111,6 @@ BA_districts_ringworld_specialist_02 = {
 BA_districts_ringworld_specialist_03 = {
     icon = BA_districts_ringworld_specialist
     base_buildtime = 360
-    is_capped_by_modifier = no
     exempt_from_ai_planet_specialization = yes
     zone_slots = {
         slot_BA_ringworld_specialist
@@ -145,7 +141,6 @@ BA_districts_ringworld_specialist_03 = {
 ### 卫星区段
 BA_districts_ringworld_satellite = {
     base_buildtime = 360
-    is_capped_by_modifier = no
     exempt_from_ai_planet_specialization = yes
     zone_slots = {
         slot_BA_ringworld_satellite
@@ -196,7 +191,6 @@ BA_districts_ringworld_satellite = {
 # 透镜铸造模块：存在时改为 矿*120 --> 青辉石*20
 BA_districts_ringworld_refinery = {
     base_buildtime = 360
-    is_capped_by_modifier = no
     exempt_from_ai_planet_specialization = yes
     zone_slots = {
         slot_BA_ringworld_refinery
@@ -231,7 +225,6 @@ BA_districts_ringworld_refinery = {
 # 精密制造区：存在时改为 矿*120 --> 消费品*150
 BA_districts_ringworld_factory = {
     base_buildtime = 360
-    is_capped_by_modifier = no
     exempt_from_ai_planet_specialization = yes
     zone_slots = {
         slot_BA_ringworld_factory
@@ -267,7 +260,6 @@ BA_districts_ringworld_factory = {
 # 任何社团部室：存在时转为提供社团部员岗位
 BA_districts_ringworld_matrix = {
     base_buildtime = 360
-    is_capped_by_modifier = no
     exempt_from_ai_planet_specialization = yes
     zone_slots = {
         slot_BA_ringworld_matrix
@@ -305,7 +297,6 @@ BA_districts_ringworld_matrix = {
 BA_districts_ringworld_satellite_fe = {
     icon = BA_districts_ringworld_satellite
     base_buildtime = 360
-    is_capped_by_modifier = no
     exempt_from_ai_planet_specialization = yes
     zone_slots = {
         slot_city_government
