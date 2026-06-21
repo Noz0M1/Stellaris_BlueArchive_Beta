@@ -2,11 +2,11 @@
 #1 Sena
 weapon_component_template = {
 	key = "SENA_WEAPON"
-	size = torpedo	#G槽
-	type = missile	#导弹
-	icon = "GFX_Sena_Weapon"	#图标
+	size = torpedo #G槽
+	type = missile #导弹
+	icon = "GFX_Sena_Weapon" #图标
 	icon_frame = 1
-	entity = "sena_weapon_turret_base_entity"	#炮台模型
+	entity = "sena_weapon_turret_base_entity" #炮台模型
 	power = -45
 	damage = {
 		min = 363
@@ -19,24 +19,24 @@ weapon_component_template = {
 	}
 	#发射时间
 	range = 80
-	accuracy = 1	#准确性
-	hull_damage = 1.3	#船体伤害
-	shield_damage = 0.8	#护盾伤害
-	armor_damage = 1.5	#装甲伤害
-	shield_penetration = 1	#盾穿
-	armor_penetration = 0	#甲穿
-	tracking = 0.1	#追踪
-	missile_speed = 14	#导弹速度 12:250
-	missile_evasion = 0	#导弹闪避
-	missile_armor = 20	#导弹装甲
-	missile_health = 30	#导弹血条
-	missile_retarget_range = 100	#重新瞄准射程
+	accuracy = 1 #准确性
+	hull_damage = 1.3 #船体伤害
+	shield_damage = 0.8 #护盾伤害
+	armor_damage = 1.5 #装甲伤害
+	shield_penetration = 1 #盾穿
+	armor_penetration = 0 #甲穿
+	tracking = 0.1 #追踪
+	missile_speed = 14 #导弹速度 12:250
+	missile_evasion = 0 #导弹闪避
+	missile_armor = 20 #导弹装甲
+	missile_health = 30 #导弹血条
+	missile_retarget_range = 100 #重新瞄准射程
 	prerequisites = {
 		"tech_BA_SPW_SENA_WEAPON"
 	}
 	#科技
-	component_set = "SENA_WEAPON"	#组件集
-	projectile_gfx = "BA_WEAPON_GL"	#特效
+	component_set = "SENA_WEAPON" #组件集
+	projectile_gfx = "BA_WEAPON_GL" #特效
 	tags = {
 		weapon_type_Kivotos
 		weapon_type_Kivotos
@@ -1211,12 +1211,12 @@ weapon_component_template = {
 #1 Nonomi
 weapon_component_template = {
 	key = "NONOMI_WEAPON"
-	size = large	#L槽
-	type = instant	#直射武器
+	size = large #L槽
+	type = instant #直射武器
 	icon = "GFX_Nonomi_Weapon"
 	icon_frame = 1
-	entity = "nonomi_weapon_turret_base_entity"	#炮台模型
-	power = -70	#能源
+	entity = "nonomi_weapon_turret_base_entity" #炮台模型
+	power = -70 #能源
 	damage = {
 		min = 57
 		max = 185
@@ -1227,19 +1227,19 @@ weapon_component_template = {
 		max = 25
 	}
 	#发射时间
-	range = 100	#射程
-	accuracy = 0.5	#准确性
-	hull_damage = 1.1	#船体伤害
-	shield_damage = 1	#护盾伤害
-	armor_damage = 1.1	#装甲伤害
-	shield_penetration = 0	#盾穿
-	armor_penetration = 0	#甲穿
-	tracking = 0.25	#追踪
+	range = 100 #射程
+	accuracy = 0.5 #准确性
+	hull_damage = 1.1 #船体伤害
+	shield_damage = 1 #护盾伤害
+	armor_damage = 1.1 #装甲伤害
+	shield_penetration = 0 #盾穿
+	armor_penetration = 0 #甲穿
+	tracking = 0.25 #追踪
 	prerequisites = {
 		"tech_BA_SPW_NONOMI_WEAPON"
 	}
-	component_set = "NONOMI_WEAPON"	#组件集
-	projectile_gfx = "BA_WEAPON_MG"	#特效
+	component_set = "NONOMI_WEAPON" #组件集
+	projectile_gfx = "BA_WEAPON_MG" #特效
 	tags = {
 		weapon_type_Kivotos
 		weapon_type_Kivotos
@@ -2979,12 +2979,12 @@ weapon_component_template = {
 #26 SchoolGirlBoss02_SukebanSwim_MG
 weapon_component_template = {
 	key = "SchoolGirlBoss02_SukebanSwim_MG"
-	size = large	#L槽
-	type = instant	#直射武器
+	size = large #L槽
+	type = instant #直射武器
 	icon = "GFX_SchoolGirlBoss02_SukebanSwim_MG"
 	icon_frame = 1
-	entity = "SchoolGirlBoss02_SukebanSwim_MG_turret_base_entity"	#炮台模型
-	power = -70	#能源
+	entity = "SchoolGirlBoss02_SukebanSwim_MG_turret_base_entity" #炮台模型
+	power = -70 #能源
 	damage = {
 		min = 57
 		max = 185
@@ -2995,20 +2995,20 @@ weapon_component_template = {
 		max = 25
 	}
 	#发射时间
-	range = 100	#射程
-	accuracy = 0.5	#准确性
-	hull_damage = 1.1	#船体伤害
-	shield_damage = 1	#护盾伤害
-	armor_damage = 1.1	#装甲伤害
-	shield_penetration = 0	#盾穿
-	armor_penetration = 0	#甲穿
-	tracking = 0.25	#追踪
+	range = 100 #射程
+	accuracy = 0.5 #准确性
+	hull_damage = 1.1 #船体伤害
+	shield_damage = 1 #护盾伤害
+	armor_damage = 1.1 #装甲伤害
+	shield_penetration = 0 #盾穿
+	armor_penetration = 0 #甲穿
+	tracking = 0.25 #追踪
 	prerequisites = {
 		#"tech_BA_SPW_SchoolGirlBoss02_SukebanSwim_MG"
 		tech_BA_fe
 	}
-	component_set = "SchoolGirlBoss02_SukebanSwim_MG"	#组件集
-	projectile_gfx = "BA_WEAPON_MG"	#特效
+	component_set = "SchoolGirlBoss02_SukebanSwim_MG" #组件集
+	projectile_gfx = "BA_WEAPON_MG" #特效
 	tags = {
 		weapon_type_Kivotos
 		weapon_type_penetration
@@ -3041,12 +3041,12 @@ weapon_component_template = {
 #26 Attendant_Highlander_MG
 weapon_component_template = {
 	key = "Attendant_Highlander_MG"
-	size = large	#L槽
-	type = instant	#直射武器
+	size = large #L槽
+	type = instant #直射武器
 	icon = "GFX_Attendant_Highlander_MG"
 	icon_frame = 1
-	entity = "Attendant_Highlander_MG_turret_base_entity"	#炮台模型
-	power = -70	#能源
+	entity = "Attendant_Highlander_MG_turret_base_entity" #炮台模型
+	power = -70 #能源
 	damage = {
 		min = 57
 		max = 185
@@ -3057,20 +3057,20 @@ weapon_component_template = {
 		max = 25
 	}
 	#发射时间
-	range = 100	#射程
-	accuracy = 0.5	#准确性
-	hull_damage = 1.1	#船体伤害
-	shield_damage = 1	#护盾伤害
-	armor_damage = 1.1	#装甲伤害
-	shield_penetration = 0	#盾穿
-	armor_penetration = 0	#甲穿
-	tracking = 0.25	#追踪
+	range = 100 #射程
+	accuracy = 0.5 #准确性
+	hull_damage = 1.1 #船体伤害
+	shield_damage = 1 #护盾伤害
+	armor_damage = 1.1 #装甲伤害
+	shield_penetration = 0 #盾穿
+	armor_penetration = 0 #甲穿
+	tracking = 0.25 #追踪
 	prerequisites = {
 		#"tech_BA_SPW_Attendant_Highlander_MG"
 		tech_BA_fe
 	}
-	component_set = "Attendant_Highlander_MG"	#组件集
-	projectile_gfx = "BA_WEAPON_MG"	#特效
+	component_set = "Attendant_Highlander_MG" #组件集
+	projectile_gfx = "BA_WEAPON_MG" #特效
 	tags = {
 		weapon_type_Kivotos
 		weapon_type_penetration
@@ -6070,7 +6070,7 @@ weapon_component_template = {
 	hull_damage = 1
 	shield_damage = 1.1
 	armor_damage = 1
-	shield_penetration = 1	#千年特有的穿盾技术（
+	shield_penetration = 1 #千年特有的穿盾技术（
 	armor_penetration = 0
 	tracking = 0.5
 	prerequisites = {
@@ -6244,9 +6244,9 @@ weapon_component_template = {
 	hull_damage = 1
 	shield_damage = 0.8
 	armor_damage = 1.3
-	shield_penetration = 1	#问就是千年科技
+	shield_penetration = 1 #问就是千年科技
 	armor_penetration = 0
-	tracking = 0.99	#天才射准点怎么了
+	tracking = 0.99 #天才射准点怎么了
 	prerequisites = {
 		"tech_BA_SPW_HIMARI_WEAPON"
 	}
@@ -6413,12 +6413,12 @@ weapon_component_template = {
 		min = 10
 		max = 23
 	}
-	range = 15	#带个椅子怎么射程远
+	range = 15 #带个椅子怎么射程远
 	accuracy = 0.5
 	hull_damage = 1
 	shield_damage = 1.3
 	armor_damage = 0.8
-	shield_penetration = 0.25	#大量的炮击，使得有些攻击可以穿过护盾直接攻击护甲
+	shield_penetration = 0.25 #大量的炮击，使得有些攻击可以穿过护盾直接攻击护甲
 	armor_penetration = 0
 	tracking = 0.5
 	prerequisites = {
@@ -6593,7 +6593,7 @@ weapon_component_template = {
 	shield_damage = 1.3
 	armor_damage = 1
 	shield_penetration = 0
-	armor_penetration = 0.5	#奇妙药物捏
+	armor_penetration = 0.5 #奇妙药物捏
 	tracking = 0.5
 	prerequisites = {
 		"tech_BA_SPW_SAYA_WEAPON"
@@ -7217,12 +7217,12 @@ weapon_component_template = {
 #1 Karin
 weapon_component_template = {
 	key = "KARIN_WEAPON"
-	size = extra_large	#X槽
+	size = extra_large #X槽
 	type = instant
 	icon = "GFX_Karin_Weapon"
 	icon_frame = 1
-	entity = "karin_weapon_turret_base_entity"	#炮台模型
-	firing_arc = 25	#射击扇面
+	entity = "karin_weapon_turret_base_entity" #炮台模型
+	firing_arc = 25 #射击扇面
 	use_ship_kill_target = no
 	power = -300
 	damage = {
@@ -7235,13 +7235,13 @@ weapon_component_template = {
 		max = 250
 	}
 	#发射时间
-	range = 200	#射程
+	range = 200 #射程
 	accuracy = 0.8
-	hull_damage = 1.55	#船体伤害
+	hull_damage = 1.55 #船体伤害
 	shield_damage = 1.5
 	armor_damage = 0.5
 	shield_penetration = 0
-	armor_penetration = 0	#甲穿
+	armor_penetration = 0 #甲穿
 	tracking = 0
 	prerequisites = {
 		"tech_BA_SPW_KARIN_WEAPON"
@@ -7429,11 +7429,11 @@ weapon_component_template = {
 	shield_penetration = 0
 	armor_penetration = 0
 	tracking = 0.25
-	missile_speed = 300	#导弹速度
-	missile_evasion = 0	#导弹闪避
-	missile_armor = 10	#导弹装甲
-	missile_health = 10	#导弹血条
-	missile_retarget_range = 100	#重新瞄准射程
+	missile_speed = 300 #导弹速度
+	missile_evasion = 0 #导弹闪避
+	missile_armor = 10 #导弹装甲
+	missile_health = 10 #导弹血条
+	missile_retarget_range = 100 #重新瞄准射程
 	prerequisites = {
 		"tech_BA_SPW_HIBIKI_WEAPON"
 	}
@@ -7538,8 +7538,8 @@ weapon_component_template = {
 	key = "ARIS_WEAPON"
 	size = titanic
 	type = instant
-	prio_projectile = yes	#优先显示特效
-	entity = "aris_weapon_turret_base_entity"	#炮台模型
+	prio_projectile = yes #优先显示特效
+	entity = "aris_weapon_turret_base_entity" #炮台模型
 	icon = "GFX_Aris_Weapon"
 	icon_frame = 1
 	firing_arc = 100
@@ -7569,7 +7569,7 @@ weapon_component_template = {
 	}
 	#prerequisites = { "tech_titans" } #前置科技
 	component_set = "ARIS_WEAPON"
-	projectile_gfx = "BA_WEAPON_RG"	#特效
+	projectile_gfx = "BA_WEAPON_RG" #特效
 	resources = {
 		category = ship_components
 		cost = {
@@ -7618,11 +7618,11 @@ weapon_component_template = {
 	shield_penetration = 0
 	armor_penetration = 0
 	tracking = 0.1
-	missile_speed = 300	#导弹速度
-	missile_evasion = 0	#导弹闪避
-	missile_armor = 10	#导弹装甲
-	missile_health = 10	#导弹血条
-	missile_retarget_range = 100	#重新瞄准射程
+	missile_speed = 300 #导弹速度
+	missile_evasion = 0 #导弹闪避
+	missile_armor = 10 #导弹装甲
+	missile_health = 10 #导弹血条
+	missile_retarget_range = 100 #重新瞄准射程
 	prerequisites = {
 		#tech_BA_SPW_HIBIKI_CHEERLEADER_WEAPON
 		tech_BA_fe
@@ -7664,8 +7664,8 @@ weapon_component_template = {
 	key = "ARIS_WEAPON_EX"
 	size = titanic
 	type = instant
-	prio_projectile = yes	#优先显示特效
-	entity = "Aris_Weapon_EX_entity"	#炮台模型
+	prio_projectile = yes #优先显示特效
+	entity = "Aris_Weapon_EX_entity" #炮台模型
 	icon = "GFX_Aris_Weapon"
 	icon_frame = 1
 	firing_arc = 100
@@ -7698,7 +7698,7 @@ weapon_component_template = {
 		tech_BA_fe
 	}
 	component_set = "ARIS_WEAPON_EX"
-	projectile_gfx = "BA_WEAPON_RG"	#特效
+	projectile_gfx = "BA_WEAPON_RG" #特效
 	resources = {
 		category = ship_components
 		cost = {

@@ -105,22 +105,22 @@ BA_SI_Shanhaijing_A04 = {
 			has_authority = auth_kivotos
 			has_technology = tech_BA_SI_Shanhaijing_A04
 		}
-        OR = {
-            is_normal_starbase = yes
-            is_orbital_ring = yes
-            is_space_citadel = yes
-        }
+		OR = {
+			is_normal_starbase = yes
+			is_orbital_ring = yes
+			is_space_citadel = yes
+		}
 	}
 	custom_tooltip_with_modifiers = sm_BA_SI_Shanhaijing_A04_tip
 	resources = {
 		category = starbase_buildings
 		cost = {
 			alloys = 1000
-            sr_keystone = 50
+			sr_keystone = 50
 		}
 		upkeep = {
 			alloys = 10
-            sr_keystone = 1
+			sr_keystone = 1
 		}
 	}
 	show_in_tech = tech_BA_SI_Shanhaijing_A04

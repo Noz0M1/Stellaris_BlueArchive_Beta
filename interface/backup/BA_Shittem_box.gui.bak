@@ -1,28 +1,28 @@
 guiTypes = {
 
-	### FACTION OVERVIEW GUI ###
+	## FACTION OVERVIEW GUI ###
 
-	# containerWindowType = {
-	# 	name = "BA_Shittem_option"
-	# 	position = { x=0 y=0 }
-	# 	size = { width = 350 height = 30 }
-	# 	moveable = no
+	containerWindowType = {
+		name = "BA_Shittem_option"
+		position = { x=0 y=0 }
+		size = { width = 350 height = 30 }
+		moveable = no
 		
-	# 	buttonType = {
-	# 		name = "option_button"
-	# 		quadTextureSprite = "GFX_BA_UI_Option" 
-	# 		position = { x=0 y=0 }
-	# 		font = "cg_16b"
-	# 		text = "OPTION_TEXT"
-	# 		clicksound = "confirm_click"
-	# 	}
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_BA_UI_Option" 
+			position = { x=0 y=0 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+			clicksound = "confirm_click"
+		}
 		
-	# 	OverlappingElementsBoxType = {
-	# 		name = "trigger_icons"
-	# 		position = { x = 0  y = 10 }
-	# 		size = { x=65 y= 28 }
-	# 	}
-	# }
+		OverlappingElementsBoxType = {
+			name = "trigger_icons"
+			position = { x = 0  y = 10 }
+			size = { x=65 y= 28 }
+		}
+	}
 
 	containerWindowType = {
 		name = "BA_window_option"
@@ -54,12 +54,12 @@ guiTypes = {
 		origo = center
 
 		instantTextBoxType = {
-			#name = "resource_header"
+			name = "resource_header"
 			name = "action_title"
 			font = "malgun_goth_24"
 			text = "[Root.GetShittemDesc]"
-			#text = "BA_Shittem.1001.title" # header text, linked to localization file
-			#position = { x = 200 y = 35 }
+			text = "BA_Shittem.1001.title" # header text, linked to localization file
+			position = { x = 200 y = 35 }
 			position = { x = -1117 y = -1145 } #暂时隐藏 调试
 			maxWidth = 543
 			maxHeight = 22
@@ -88,7 +88,7 @@ guiTypes = {
 			Orientation = "UPPER_RIGHT"
 			position = { x = -380 y = 90 }
 			clicksound = "confirmation"
-			#shortcut = "1"
+			shortcut = "1"
 			effect = BA_Shittem_communication_button
 		}
 
@@ -115,7 +115,7 @@ guiTypes = {
 			quadTextureSprite = "GFX_BA_underconstruction_button"
 			Orientation = "UPPER_RIGHT"
 			position = { x = -680 y = 490 }
-			#clicksound = "confirmation"
+			clicksound = "confirmation"
 			effect = BA_Shittem_gray_button
 		}
 
@@ -128,7 +128,7 @@ guiTypes = {
 			effect = BA_Shittem_entrust_button
 		}
 
-		### ALL OF THIS IS HIDDEN OR DISPLACED ! ###
+		## ALL OF THIS IS HIDDEN OR DISPLACED ! ###
 
 		buttonType = { name = "focus_button" position = { x = -1180 y = -1112 } spriteType = "GFX_fleetview_focus" } # hidden
 		instantTextBoxType = { name = "heading" font = "malgun_goth_24" position = { x = -1120 y = -115 } } # hidden
@@ -173,7 +173,7 @@ guiTypes = {
 			instantTextBoxType = { name = "their_opinion" font = "cg_16b" }
 		}
 	
-		### EVENT DIPLO ###
+		## EVENT DIPLO ###
 	
 		containerWindowType = {
 			name = "EVENT_DIPLO"
@@ -184,7 +184,7 @@ guiTypes = {
 			instantTextBoxType={
 				name = "action_title"
 				font = "malgun_goth_24"
-				#position = { x = -10000 y = -10000 }
+				position = { x = -10000 y = -10000 }
 				position = { x = 200 y = 35 }
 				maxWidth = 600
 				maxHeight = 22
@@ -203,15 +203,15 @@ guiTypes = {
 			
 			listboxType = {
 				name = "option_list"
-				#position = { x = 25 y = 415 }
+				position = { x = 25 y = 415 }
 				position = { x = 1100 y = 275 }
-				#backGround=""
+				backGround=""
 				size = { x = 350 y = 200 }
 				spacing = 1
 				borderSize = { x = 0 y = 0 }
 			}
 		}
-		# Description Section
+		Description Section
 		instantTextBoxType = {
 			name = "alien_message"
 			font = "malgun_goth_24"
@@ -222,15 +222,15 @@ guiTypes = {
 			maxHeight = 90
 		}
 
-		# instantTextboxType = {
-		# 	name = "pyroxenes"
-		# 	font = "malgun_goth_24"
-		# 	position = { x = 160 y = 0 }
-		# 	format = left
-		# 	scrollbartype = "standardtext_slider"
-		# 	maxWidth = 310
-		# 	maxHeight = 90
-		# }
+		instantTextboxType = {
+			name = "pyroxenes"
+			font = "malgun_goth_24"
+			position = { x = 160 y = 0 }
+			format = left
+			scrollbartype = "standardtext_slider"
+			maxWidth = 310
+			maxHeight = 90
+		}
 
 	}
 }

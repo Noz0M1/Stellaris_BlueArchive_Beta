@@ -3,7 +3,7 @@ special_project = {
 	key = "BA_Project_Cradle_02"
 	event_chain = BA_Project_Cradle_chain
 	event_scope = ship_event
-	days_to_research = 180	#180
+	days_to_research = 180 #180
 	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
 	requirements = {
 		shipclass_science_ship = 1
@@ -23,7 +23,7 @@ special_project = {
 	key = "BA_Project_Cradle_03"
 	event_chain = BA_Project_Cradle_chain
 	event_scope = ship_event
-	days_to_research = 180	#180
+	days_to_research = 180 #180
 	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
 	requirements = {
 		shipclass_science_ship = 1
@@ -44,7 +44,7 @@ special_project = {
 	key = "BA_Project_Cradle_07"
 	event_chain = BA_Project_Cradle_chain
 	event_scope = country_event
-	days_to_research = 360	#360
+	days_to_research = 360 #360
 	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
 	on_start = {
 		add_modifier = {
@@ -67,7 +67,7 @@ special_project = {
 	event_chain = BA_Project_Cradle_chain
 	# event_scope = ship_event
 	event_scope = country_event
-	days_to_research = 720	#360
+	days_to_research = 720 #360
 	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
 	#requirements = {
 	#	shipclass_science_ship = 1
@@ -88,7 +88,7 @@ special_project = {
 	key = "BA_Project_Cradle_08"
 	event_chain = BA_Project_Cradle_chain
 	event_scope = country_event
-	days_to_research = 360	#360
+	days_to_research = 360 #360
 	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
 	on_start = {
 		add_modifier = {
@@ -107,7 +107,7 @@ special_project = {
 }
 
 special_project = {
-	key = "BA_Project_Cradle_09A"	#天基武器线路
+	key = "BA_Project_Cradle_09A" #天基武器线路
 	event_chain = BA_Project_Cradle_chain
 	event_scope = country_event
 	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
@@ -124,7 +124,7 @@ special_project = {
 }
 
 special_project = {
-	key = "BA_Project_Cradle_09B"	#自走机械线路
+	key = "BA_Project_Cradle_09B" #自走机械线路
 	event_chain = BA_Project_Cradle_chain
 	event_scope = country_event
 	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
@@ -141,7 +141,7 @@ special_project = {
 }
 
 special_project = {
-	key = "BA_Project_Cradle_09C"	#学生自规线路
+	key = "BA_Project_Cradle_09C" #学生自规线路
 	event_chain = BA_Project_Cradle_chain
 	event_scope = country_event
 	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
@@ -152,10 +152,10 @@ special_project = {
 }
 
 special_project = {
-	key = "BA_Project_Cradle_09A_after"	#天基武器拆解后研究
+	key = "BA_Project_Cradle_09A_after" #天基武器拆解后研究
 	#event_chain = BA_Project_Cradle_chain
 	event_scope = country_event
-	days_to_research = 360	#360
+	days_to_research = 360 #360
 	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
 	on_success = {
 		country_event = {

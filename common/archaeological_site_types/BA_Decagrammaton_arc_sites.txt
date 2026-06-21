@@ -1,9 +1,9 @@
 #跳线点考古
 BA_Dgate_arc_site = {
 	#picture = GFX_BA_RAID1
-	picture = GFX_BA_Checkmate	#暂时的 以后改
+	picture = GFX_BA_Checkmate #暂时的 以后改
 	desc = "BA_Gematria_arc_site_1_desc"
-	weight = 0	#不允许随机生成
+	weight = 0 #不允许随机生成
 	visible = {
 		default_site_visible_trigger = yes
 		this = {
@@ -18,27 +18,27 @@ BA_Dgate_arc_site = {
 	stages = 5
 	stage = {
 		difficulty = 1
-		icon = GFX_archaeology_runes_C1		#暂时的 以后改
+		icon = GFX_archaeology_runes_C1 #暂时的 以后改
 		event = BA_Precursor.8001
 	}
 	stage = {
 		difficulty = 4
-		icon = GFX_archaeology_runes_C2		#暂时的 以后改
+		icon = GFX_archaeology_runes_C2 #暂时的 以后改
 		event = BA_Precursor.8002
 	}
 	stage = {
 		difficulty = 4
-		icon = GFX_archaeology_runes_C3		#暂时的 以后改
+		icon = GFX_archaeology_runes_C3 #暂时的 以后改
 		event = BA_Precursor.8003
 	}
 	stage = {
 		difficulty = 4
-		icon = GFX_archaeology_runes_C4		#暂时的 以后改
+		icon = GFX_archaeology_runes_C4 #暂时的 以后改
 		event = BA_Precursor.8004
 	}
 	stage = {
 		difficulty = 6
-		icon = GFX_archaeology_runes_C5		#暂时的 以后改
+		icon = GFX_archaeology_runes_C5 #暂时的 以后改
 		event = BA_Precursor.8005
 	}
 	on_roll_failed = {

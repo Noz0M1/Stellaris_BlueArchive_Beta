@@ -1,41 +1,41 @@
 #对策委员会-优化决策
 option = {
-    name = Foreclosure_task_force_decisions
-    is_dialog_only = yes
-    custom_tooltip = Foreclosure_task_force_decisions.tip
-    response_text = Foreclosure_task_force_decisions.$CHARA$RE
-    trigger = {
-        check_variable = {
-            which = Foreclosure_task_force_func_lv
-            value < 5
-        }
-    }
-    allow = {
-        custom_tooltip = {
-            fail_text = taskforce_cooldown
-            NOT = {
-                has_country_flag = BA_Foreclosure_decisions_cooldown
-            }
-        }
-        resource_stockpile_compare = {
-            resource = energy
-            value >= 2000
-            multiplier = Foreclosure_task_force_func_lv
-        }
-    }
-    add_resource = {
-        energy = -2000
-        multiplier = Foreclosure_task_force_func_lv
-    }
-    change_variable = {
-        which = Foreclosure_task_force_func_lv
-        value = 1
-    }
-    hidden_effect = {
-        set_saved_date = {
-            key = BA_Foreclosure_decisions_cooldown
-            days_from_present = 1800
-            expires = 1800
-        }
-    }
+	name = Foreclosure_task_force_decisions
+	is_dialog_only = yes
+	custom_tooltip = Foreclosure_task_force_decisions.tip
+	response_text = Foreclosure_task_force_decisions.$CHARA$RE
+	trigger = {
+		check_variable = {
+			which = Foreclosure_task_force_func_lv
+			value < 5
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			fail_text = taskforce_cooldown
+			NOT = {
+				has_country_flag = BA_Foreclosure_decisions_cooldown
+			}
+		}
+		resource_stockpile_compare = {
+			resource = energy
+			value >= 2000
+			multiplier = Foreclosure_task_force_func_lv
+		}
+	}
+	add_resource = {
+		energy = -2000
+		multiplier = Foreclosure_task_force_func_lv
+	}
+	change_variable = {
+		which = Foreclosure_task_force_func_lv
+		value = 1
+	}
+	hidden_effect = {
+		set_saved_date = {
+			key = BA_Foreclosure_decisions_cooldown
+			days_from_present = 1800
+			expires = 1800
+		}
+	}
 }

@@ -3,190 +3,185 @@
 #####################################
 ### 环世界中心城
 BA_districts_ringworld_capital = {
-    base_buildtime = 360
-    is_capped_by_modifier = no
-    exempt_from_ai_planet_specialization = yes
-    zone_slots = {
-        slot_city_government
-        slot_BA_ringworld_capital
-        slot_BA_ringworld_capital
-    }
-    show_on_uncolonized = {
-        uses_district_set = BA_auto_ringworld
-    }
-    potential = {
-        uses_district_set = BA_auto_ringworld
-    }
-    planet_modifier = {
-        planet_housing_add = 2500
-        planet_amenities_add = 4000
-        planet_stability_add = 5
-    }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                has_authority = auth_kivotos
-            }
-        }
-        job_BA_Kivotos_staff_add = 400
-        job_BA_Kivotos_trader_add = 400
-        job_BA_club_members_add = 400
-    }
-    inline_script = {
-        script = jobs/add_BA_crew_pop_jobs
-        value = 200
-    }
-    resources = {
-        category = BA_auto_districts
-        cost = {
-            energy = 500
-            minerals = 1000
-            sr_keystone = 50
-        }
-        upkeep = {
-            energy = 5
-        }
-    }
+	base_buildtime = 360
+	exempt_from_ai_planet_specialization = yes
+	zone_slots = {
+		slot_city_government
+		slot_BA_ringworld_capital
+		slot_BA_ringworld_capital
+	}
+	show_on_uncolonized = {
+		uses_district_set = BA_auto_ringworld
+	}
+	potential = {
+		uses_district_set = BA_auto_ringworld
+	}
+	planet_modifier = {
+		planet_housing_add = 2500
+		planet_amenities_add = 4000
+		planet_stability_add = 5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		job_BA_Kivotos_staff_add = 400
+		job_BA_Kivotos_trader_add = 400
+		job_BA_club_members_add = 400
+	}
+	inline_script = {
+		script = jobs/add_BA_crew_pop_jobs
+		value = 200
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			energy = 500
+			minerals = 1000
+			sr_keystone = 50
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
 }
 
 #####   待开发区划
 BA_districts_ringworld_specialist_01 = {
-    icon = BA_districts_ringworld_specialist
-    base_buildtime = 360
-    is_capped_by_modifier = no
-    exempt_from_ai_planet_specialization = yes
-    zone_slots = {
-        slot_BA_ringworld_specialist
-    }
-    show_on_uncolonized = {
-        uses_district_set = BA_auto_ringworld
-    }
-    potential = {
-        uses_district_set = BA_auto_ringworld
-    }
-    planet_modifier = {
-        planet_housing_add = 1000
-    }
-    resources = {
-        category = BA_auto_districts
-        cost = {
-            energy = 500
-            minerals = 1000
-            sr_keystone = 50
-        }
-        upkeep = {
-            energy = 5
-        }
-    }
+	icon = BA_districts_ringworld_specialist
+	base_buildtime = 360
+	exempt_from_ai_planet_specialization = yes
+	zone_slots = {
+		slot_BA_ringworld_specialist
+	}
+	show_on_uncolonized = {
+		uses_district_set = BA_auto_ringworld
+	}
+	potential = {
+		uses_district_set = BA_auto_ringworld
+	}
+	planet_modifier = {
+		planet_housing_add = 1000
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			energy = 500
+			minerals = 1000
+			sr_keystone = 50
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
 }
 
 BA_districts_ringworld_specialist_02 = {
-    icon = BA_districts_ringworld_specialist
-    base_buildtime = 360
-    is_capped_by_modifier = no
-    exempt_from_ai_planet_specialization = yes
-    zone_slots = {
-        slot_BA_ringworld_specialist
-    }
-    show_on_uncolonized = {
-        uses_district_set = BA_auto_ringworld
-    }
-    potential = {
-        uses_district_set = BA_auto_ringworld
-    }
-    planet_modifier = {
-        planet_housing_add = 1000
-    }
-    resources = {
-        category = BA_auto_districts
-        cost = {
-            energy = 500
-            minerals = 1000
-            sr_keystone = 50
-        }
-        upkeep = {
-            energy = 5
-        }
-    }
+	icon = BA_districts_ringworld_specialist
+	base_buildtime = 360
+	exempt_from_ai_planet_specialization = yes
+	zone_slots = {
+		slot_BA_ringworld_specialist
+	}
+	show_on_uncolonized = {
+		uses_district_set = BA_auto_ringworld
+	}
+	potential = {
+		uses_district_set = BA_auto_ringworld
+	}
+	planet_modifier = {
+		planet_housing_add = 1000
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			energy = 500
+			minerals = 1000
+			sr_keystone = 50
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
 }
 
 BA_districts_ringworld_specialist_03 = {
-    icon = BA_districts_ringworld_specialist
-    base_buildtime = 360
-    is_capped_by_modifier = no
-    exempt_from_ai_planet_specialization = yes
-    zone_slots = {
-        slot_BA_ringworld_specialist
-    }
-    show_on_uncolonized = {
-        uses_district_set = BA_auto_ringworld
-    }
-    potential = {
-        uses_district_set = BA_auto_ringworld
-    }
-    planet_modifier = {
-        planet_housing_add = 1000
-    }
-    resources = {
-        category = BA_auto_districts
-        cost = {
-            energy = 500
-            minerals = 1000
-            sr_keystone = 50
-        }
-        upkeep = {
-            energy = 5
-        }
-    }
+	icon = BA_districts_ringworld_specialist
+	base_buildtime = 360
+	exempt_from_ai_planet_specialization = yes
+	zone_slots = {
+		slot_BA_ringworld_specialist
+	}
+	show_on_uncolonized = {
+		uses_district_set = BA_auto_ringworld
+	}
+	potential = {
+		uses_district_set = BA_auto_ringworld
+	}
+	planet_modifier = {
+		planet_housing_add = 1000
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			energy = 500
+			minerals = 1000
+			sr_keystone = 50
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
 }
 
 #####   特化区划
 ### 卫星区段
 BA_districts_ringworld_satellite = {
-    base_buildtime = 360
-    is_capped_by_modifier = no
-    exempt_from_ai_planet_specialization = yes
-    zone_slots = {
-        slot_BA_ringworld_satellite
-    }
-    show_on_uncolonized = {
-        always = no
-    }
-    potential = {
-        always = no
-    }
-    planet_modifier = {
-        planet_housing_add = 2500
-        planet_amenities_add = 4000
-        planet_stability_add = 5
-    }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                has_authority = auth_kivotos
-            }
-        }
-        job_BA_Kivotos_staff_add = 400
-        job_BA_Kivotos_trader_add = 400
-        job_BA_club_members_add = 400
-    }
-    inline_script = {
-        script = jobs/add_BA_crew_pop_jobs
-        value = 200
-    }
-    resources = {
-        category = BA_auto_districts
-        cost = {
-            energy = 500
-            minerals = 1000
-            sr_keystone = 50
-        }
-        upkeep = {
-            energy = 5
-        }
-    }
+	base_buildtime = 360
+	exempt_from_ai_planet_specialization = yes
+	zone_slots = {
+		slot_BA_ringworld_satellite
+	}
+	show_on_uncolonized = {
+		always = no
+	}
+	potential = {
+		always = no
+	}
+	planet_modifier = {
+		planet_housing_add = 2500
+		planet_amenities_add = 4000
+		planet_stability_add = 5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_kivotos
+			}
+		}
+		job_BA_Kivotos_staff_add = 400
+		job_BA_Kivotos_trader_add = 400
+		job_BA_club_members_add = 400
+	}
+	inline_script = {
+		script = jobs/add_BA_crew_pop_jobs
+		value = 200
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			energy = 500
+			minerals = 1000
+			sr_keystone = 50
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
 }
 
 ### 铸模区段
@@ -195,33 +190,32 @@ BA_districts_ringworld_satellite = {
 # 制造石配送器：存在时改为 青辉石*20 --> 制造石*40
 # 透镜铸造模块：存在时改为 矿*120 --> 青辉石*20
 BA_districts_ringworld_refinery = {
-    base_buildtime = 360
-    is_capped_by_modifier = no
-    exempt_from_ai_planet_specialization = yes
-    zone_slots = {
-        slot_BA_ringworld_refinery
-    }
-    show_on_uncolonized = {
-        always = no
-    }
-    potential = {
-        always = no
-    }
-    planet_modifier = {
-        planet_housing_add = 1000
-    }
-    resources = {
-        category = BA_auto_districts
-        cost = {
-            energy = 500
-            minerals = 1000
-            alloys = 300
-            sr_keystone = 150
-        }
-        upkeep = {
-            energy = 5
-        }
-    }
+	base_buildtime = 360
+	exempt_from_ai_planet_specialization = yes
+	zone_slots = {
+		slot_BA_ringworld_refinery
+	}
+	show_on_uncolonized = {
+		always = no
+	}
+	potential = {
+		always = no
+	}
+	planet_modifier = {
+		planet_housing_add = 1000
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			energy = 500
+			minerals = 1000
+			alloys = 300
+			sr_keystone = 150
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
 }
 
 ### 工厂区段
@@ -230,33 +224,32 @@ BA_districts_ringworld_refinery = {
 # 军需无人机网络：存在时改为 制造石*30 能量币*30 --> 合金*60 海军容量-每值日生+4
 # 精密制造区：存在时改为 矿*120 --> 消费品*150
 BA_districts_ringworld_factory = {
-    base_buildtime = 360
-    is_capped_by_modifier = no
-    exempt_from_ai_planet_specialization = yes
-    zone_slots = {
-        slot_BA_ringworld_factory
-    }
-    show_on_uncolonized = {
-        always = no
-    }
-    potential = {
-        always = no
-    }
-    planet_modifier = {
-        planet_housing_add = 1000
-    }
-    resources = {
-        category = BA_auto_districts
-        cost = {
-            energy = 500
-            minerals = 1000
-            alloys = 300
-            sr_keystone = 150
-        }
-        upkeep = {
-            energy = 5
-        }
-    }
+	base_buildtime = 360
+	exempt_from_ai_planet_specialization = yes
+	zone_slots = {
+		slot_BA_ringworld_factory
+	}
+	show_on_uncolonized = {
+		always = no
+	}
+	potential = {
+		always = no
+	}
+	planet_modifier = {
+		planet_housing_add = 1000
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			energy = 500
+			minerals = 1000
+			alloys = 300
+			sr_keystone = 150
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
 }
 
 ### 矩阵区段
@@ -266,34 +259,32 @@ BA_districts_ringworld_factory = {
 # 公用超光速串流器：存在时改为 青辉石*20 --> 凝聚力*240
 # 任何社团部室：存在时转为提供社团部员岗位
 BA_districts_ringworld_matrix = {
-    base_buildtime = 360
-    is_capped_by_modifier = no
-    exempt_from_ai_planet_specialization = yes
-    zone_slots = {
-        slot_BA_ringworld_matrix
-    }
-    show_on_uncolonized = {
-        always = no
-    }
-    potential = {
-        always = no
-    }
-
-    planet_modifier = {
-        planet_housing_add = 1000
-    }
-    resources = {
-        category = BA_auto_districts
-        cost = {
-            energy = 500
-            minerals = 1000
-            alloys = 300
-            sr_keystone = 150
-        }
-        upkeep = {
-            energy = 5
-        }
-    }
+	base_buildtime = 360
+	exempt_from_ai_planet_specialization = yes
+	zone_slots = {
+		slot_BA_ringworld_matrix
+	}
+	show_on_uncolonized = {
+		always = no
+	}
+	potential = {
+		always = no
+	}
+	planet_modifier = {
+		planet_housing_add = 1000
+	}
+	resources = {
+		category = BA_auto_districts
+		cost = {
+			energy = 500
+			minerals = 1000
+			alloys = 300
+			sr_keystone = 150
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
 }
 
 #####################################
@@ -303,35 +294,34 @@ BA_districts_ringworld_matrix = {
 # 住房+20 舒适度+40 稳定度+5；环世界值日生+10；自警团+3
 # 任何社团部室：存在时转为提供社团部员岗位
 BA_districts_ringworld_satellite_fe = {
-    icon = BA_districts_ringworld_satellite
-    base_buildtime = 360
-    is_capped_by_modifier = no
-    exempt_from_ai_planet_specialization = yes
-    zone_slots = {
-        slot_city_government
-        slot_BA_ringworld_satellite
-        slot_BA_ringworld_satellite
-    }
-    show_on_uncolonized = {
-        uses_district_set = BA_fe_auto_ringworld
-    }
-    potential = {
-        uses_district_set = BA_fe_auto_ringworld
-    }
-    planet_modifier = {
-        planet_housing_add = 2000
-        planet_amenities_add = 800
-    }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                is_BA_fallen_empire = yes
-            }
-        }
-        modifier = {
-            #1自警团
-            job_BA_fe_defender_add = 100
-        }
-    }
+	icon = BA_districts_ringworld_satellite
+	base_buildtime = 360
+	exempt_from_ai_planet_specialization = yes
+	zone_slots = {
+		slot_city_government
+		slot_BA_ringworld_satellite
+		slot_BA_ringworld_satellite
+	}
+	show_on_uncolonized = {
+		uses_district_set = BA_fe_auto_ringworld
+	}
+	potential = {
+		uses_district_set = BA_fe_auto_ringworld
+	}
+	planet_modifier = {
+		planet_housing_add = 2000
+		planet_amenities_add = 800
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_BA_fallen_empire = yes
+			}
+		}
+		modifier = {
+			#1自警团
+			job_BA_fe_defender_add = 100
+		}
+	}
 }

@@ -5,7 +5,6 @@
 ### 居住
 BA_district_auto_city = {
 	base_buildtime = @BA_habitat_build_time
-	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
 	zone_slots = {
 		slot_city_government
@@ -56,7 +55,6 @@ BA_district_auto_city = {
 BA_district_auto_slot_01 = {
 	icon = BA_district_auto_city
 	base_buildtime = @BA_habitat_build_time
-	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
 	zone_slots = {
 		slot_BA_auto_specialist
@@ -91,7 +89,6 @@ BA_district_auto_slot_01 = {
 BA_district_auto_slot_02 = {
 	icon = BA_district_auto_city
 	base_buildtime = @BA_habitat_build_time
-	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
 	zone_slots = {
 		slot_BA_auto_specialist
@@ -126,7 +123,6 @@ BA_district_auto_slot_02 = {
 BA_district_auto_slot_03 = {
 	icon = BA_district_auto_city
 	base_buildtime = @BA_habitat_build_time
-	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
 	zone_slots = {
 		slot_BA_auto_specialist
@@ -162,7 +158,6 @@ BA_district_auto_slot_03 = {
 #透镜区 矿-->青辉石
 BA_districts_auto_refinery = {
 	base_buildtime = @BA_habitat_build_time
-	is_capped_by_modifier = no
 	zone_slots = {
 		slot_BA_auto_refinery
 	}
@@ -183,7 +178,6 @@ BA_districts_auto_refinery = {
 #维持区 青辉石-->食物、消费品
 BA_districts_auto_sustainer = {
 	base_buildtime = @BA_habitat_build_time
-	is_capped_by_modifier = no
 	zone_slots = {
 		slot_BA_auto_sustainer
 	}
@@ -204,7 +198,6 @@ BA_districts_auto_sustainer = {
 #铸造区 青辉石-->合金
 BA_districts_auto_foundry = {
 	base_buildtime = @BA_habitat_build_time
-	is_capped_by_modifier = no
 	zone_slots = {
 		slot_BA_auto_foundry
 	}
@@ -225,7 +218,6 @@ BA_districts_auto_foundry = {
 #矩阵区 青辉石-->科研点
 BA_districts_auto_matrix = {
 	base_buildtime = @BA_habitat_build_time
-	is_capped_by_modifier = no
 	zone_slots = {
 		slot_BA_auto_matrix
 	}
@@ -250,7 +242,9 @@ BA_districts_auto_matrix = {
 #涡轮区 电
 BA_districts_auto_turbine = {
 	base_buildtime = @BA_habitat_build_time
-	is_capped_by_modifier = yes
+	is_uncapped = {
+		always = no
+	}
 	zone_slots = {
 		slot_BA_auto_turbine
 	}
@@ -286,7 +280,9 @@ BA_districts_auto_turbine = {
 #钻探区 矿
 BA_districts_auto_drill = {
 	base_buildtime = @BA_habitat_build_time
-	is_capped_by_modifier = yes
+	is_uncapped = {
+		always = no
+	}
 	zone_slots = {
 		slot_BA_auto_drill
 	}

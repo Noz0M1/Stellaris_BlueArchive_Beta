@@ -4,294 +4,298 @@
 ### 青辉石生产员
 #3电 2矿 -> 1青辉石 2凝聚力
 BA_pyroxenes_maker = {
-    category = specialist
-    swappable_data = {
-        default = {
-            icon = BA_pyroxenes_maker
-            condition_string = SPECIALIST_JOB_TRIGGER
-            building_icon = building_BA_pyroxenes_1
-        }
-    }
-    possible_pre_triggers = {
-        has_owner = yes
-        is_enslaved = no
-        is_being_purged = no
-        is_being_assimilated = no
-        is_sapient = yes
-    }
-    possible_precalc = can_fill_specialist_job
-    resources = {
-        category = planet_metallurgists
-        produces = {
-            unity = 2
-            sr_pyroxenes = 1
-        }
-        upkeep = {
-            energy = 3
-            minerals = 6
-        }
-        produces = {
-            trigger = {
-                owner = {
-                    has_technology = tech_BA_SI_Gehenna_G03
-                }
-            }
-            unity = 0.7
-            sr_pyroxenes = 0.35
-        }
-        upkeep = {
-            trigger = {
-                owner = {
-                    has_technology = tech_BA_SI_Gehenna_G03
-                }
-            }
-            energy = 1
-            minerals = 2.1
-        }
-    }
-    weight = {
-        weight = @specialist_job_weight
-        modifier = {
-            factor = 0.2
-            has_citizenship_rights = no
-            NOT = { has_trait = trait_mechanical }
-        }
-        modifier = {
-            factor = 0.1
-            can_take_servant_job = yes
-        }
-        modifier = {
-            factor = 1.2
-            is_enslaved = yes
-            has_slavery_type = { type = slavery_indentured }
-        }
-    }
+	category = specialist
+	swappable_data = {
+		default = {
+			icon = BA_pyroxenes_maker
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_BA_pyroxenes_1
+		}
+	}
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	possible_precalc = can_fill_specialist_job
+	resources = {
+		category = planet_metallurgists
+		produces = {
+			unity = 2
+			sr_pyroxenes = 1
+		}
+		upkeep = {
+			energy = 3
+			minerals = 6
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_technology = tech_BA_SI_Gehenna_G03
+				}
+			}
+			unity = 0.7
+			sr_pyroxenes = 0.35
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					has_technology = tech_BA_SI_Gehenna_G03
+				}
+			}
+			energy = 1
+			minerals = 2.1
+		}
+	}
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_indentured
+			}
+		}
+	}
 }
 
 ### 制造机维护员
 #基础：1制造石 -> 12海军容量 10宜居度
 BA_keystone_maintenance_staff = {
-    category = specialist
-    swappable_data = {
-        default = {
-            icon = BA_keystone_maintenance_staff
-            condition_string = SPECIALIST_JOB_TRIGGER
-            building_icon = building_BA_keystone_1
-        }
-    }
-    possible_pre_triggers = {
-        has_owner = yes
-        is_enslaved = no
-        is_being_purged = no
-        is_being_assimilated = no
-        is_sapient = yes
-    }
-    possible_precalc = can_fill_specialist_job
-    resources = {
-        category = planet_metallurgists
-        produces = {
-            sr_keystone = 4
-        }
-        upkeep = {
-            minerals = 12
-        }
-    }
-    planet_modifier = {
-        planet_amenities_add = 500
-    }
-    weight = {
-        weight = @specialist_job_weight
-        modifier = {
-            factor = 2
-            is_enslaved = yes
-            can_take_servant_job = no
-        }
-    }
+	category = specialist
+	swappable_data = {
+		default = {
+			icon = BA_keystone_maintenance_staff
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_BA_keystone_1
+		}
+	}
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	possible_precalc = can_fill_specialist_job
+	resources = {
+		category = planet_metallurgists
+		produces = {
+			sr_keystone = 4
+		}
+		upkeep = {
+			minerals = 12
+		}
+	}
+	planet_modifier = {
+		planet_amenities_add = 500
+	}
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 2
+			is_enslaved = yes
+			can_take_servant_job = no
+		}
+	}
 }
 
 ### 被献祭
 #基础：
 BA_oblation = {
-    #icon = battle_thrall
-    category = purge
-    #purge = purge_Sacrifice
-    is_capped_by_modifier = no
-    ignores_sapience = yes
-    possible_pre_triggers = {
-        has_owner = yes
-        is_being_purged = yes
-    }
-    possible = {
-        is_kivotos = no
-    }
-    resources = {
-        category = planet_jobs
-        produces = {
-            alloys = 2
-            sr_keystone = 1
-        }
-        upkeep = {
-            food = 1
-        }
-    }
-    weight = {
-        weight = 0
-        modifier = {
-            owner = {
-                has_policy_flag = BA_Arius_Guise_lifted
-            }
-            add = 999999
-        }
-    }
+	#icon = battle_thrall
+	category = purge
+	#purge = purge_Sacrifice
+	is_capped_by_modifier = no
+	ignores_sapience = yes
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = yes
+	}
+	possible = {
+		is_kivotos = no
+	}
+	resources = {
+		category = planet_jobs
+		produces = {
+			alloys = 2
+			sr_keystone = 1
+		}
+		upkeep = {
+			food = 1
+		}
+	}
+	weight = {
+		weight = 0
+		modifier = {
+			owner = {
+				has_policy_flag = BA_Arius_Guise_lifted
+			}
+			add = 999999
+		}
+	}
 }
 
 ### 先驱自警团
 BA_fe_defender = {
-    category = precursor
-    is_capped_by_modifier = yes
-    swappable_data = {
-        default = {
-            icon = BA_Vigilant_crew
-            #condition_string = WORKER_JOB_TRIGGER
-            building_icon = building_BA_club_room
-        }
-    }
-    possible_pre_triggers = {
-        has_owner = yes
-        is_sapient = yes
-    }
-    possible = {
-        owner = {
-            is_BA_fallen_empire = yes
-            has_authority = auth_kivotos_pr
-        }
-        is_same_species = owner
-    }
-    planet_modifier = {
-        planet_defense_armies_add = 10
-    }
-    country_modifier = {
-        country_naval_cap_add = 3000
-        country_commander_cap_add = 5
-    }
-    weight = {
-        weight = @ruler_job_weight
-        modifier = {
-            factor = 0.01
-            exists = planet
-            exists = planet.controller
-            planet.controller = {
-                OR = {
-                    is_country_type = swarm
-                    is_country_type = ai_empire
-                }
-            }
-        }
-    }
+	category = precursor
+	is_capped_by_modifier = yes
+	swappable_data = {
+		default = {
+			icon = BA_Vigilant_crew
+			#condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_BA_club_room
+		}
+	}
+	possible_pre_triggers = {
+		has_owner = yes
+		is_sapient = yes
+	}
+	possible = {
+		owner = {
+			is_BA_fallen_empire = yes
+			has_authority = auth_kivotos_pr
+		}
+		is_same_species = owner
+	}
+	planet_modifier = {
+		planet_defense_armies_add = 10
+	}
+	country_modifier = {
+		country_naval_cap_add = 3000
+		country_commander_cap_add = 5
+	}
+	weight = {
+		weight = @ruler_job_weight
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
+	}
 }
 
 ### 先驱志愿者
 BA_fe_volunteers = {
-    icon = job_BA_flexible_workers
-    category = precursor
-    is_capped_by_modifier = no
-    swappable_data = {
-        default = {
-            icon = BA_fe_volunteers
-            #condition_string = WORKER_JOB_TRIGGER
-            building_icon = building_BA_club_room
-        }
-    }
-    possible_pre_triggers = {
-        has_owner = yes
-        is_sapient = yes
-    }
-    possible = {
-        owner = {
-            is_BA_fallen_empire = yes
-            has_authority = auth_kivotos_pr
-        }
-        is_same_species = owner
-    }
-    resources = {
-        category = planet_researchers
-        produces = {
-            physics_research = 10
-            society_research = 10
-            engineering_research = 10
-        }
-    }
-    weight = {
-        weight = @specialist_job_weight
-        modifier = {
-            factor = 0.01
-            exists = planet
-            exists = planet.controller
-            planet.controller = {
-                OR = {
-                    is_country_type = swarm
-                    is_country_type = ai_empire
-                }
-            }
-        }
-    }
+	icon = job_BA_flexible_workers
+	category = precursor
+	is_capped_by_modifier = no
+	swappable_data = {
+		default = {
+			icon = BA_fe_volunteers
+			#condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_BA_club_room
+		}
+	}
+	possible_pre_triggers = {
+		has_owner = yes
+		is_sapient = yes
+	}
+	possible = {
+		owner = {
+			is_BA_fallen_empire = yes
+			has_authority = auth_kivotos_pr
+		}
+		is_same_species = owner
+	}
+	resources = {
+		category = planet_researchers
+		produces = {
+			physics_research = 10
+			society_research = 10
+			engineering_research = 10
+		}
+	}
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
+	}
 }
 
 ### 清扫难民
 BA_Sweeper_refugees = {
-    category = sweeper_pop
-    is_capped_by_modifier = no
-    swappable_data = {
-        default = {
-            icon = BA_fe_volunteers
-            #condition_string = WORKER_JOB_TRIGGER
-            building_icon = building_BA_club_room
-        }
-    }
-    possible_pre_triggers = {
-        has_owner = yes
-        is_sapient = yes
-    }
-    possible = {
-        planet = {
-            exists = owner
-            planet = {
-                has_planet_flag = BA_Planet_sweeped
-            }
-        }
-        owner = {
-            NOT = {
-                has_authority = auth_kivotos
-            }
-        }
-    }
-    weight = {
-        weight = 80000
-    }
+	category = sweeper_pop
+	is_capped_by_modifier = no
+	swappable_data = {
+		default = {
+			icon = BA_fe_volunteers
+			#condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_BA_club_room
+		}
+	}
+	possible_pre_triggers = {
+		has_owner = yes
+		is_sapient = yes
+	}
+	possible = {
+		planet = {
+			exists = owner
+			planet = {
+				has_planet_flag = BA_Planet_sweeped
+			}
+		}
+		owner = {
+			NOT = {
+				has_authority = auth_kivotos
+			}
+		}
+	}
+	weight = {
+		weight = 80000
+	}
 }
 
 ### 虚妄圣库姆特
 BA_fade_Sanctum_pop = {
-    category = sweeper_pop
-    is_capped_by_modifier = no
-    swappable_data = {
-        default = {
-            icon = soldier
-            building_icon = building_mineral_purification_plant
-        }
-    }
-    possible_pre_triggers = {
-        has_owner = yes
-    }
-    possible = {
-        planet = {
-            exists = owner
-        }
-        species = {
-            has_species_flag = BA_Unnamed_enemy_species
-        }
-    }
-    weight = {
-        weight = 80000
-    }
+	category = sweeper_pop
+	is_capped_by_modifier = no
+	swappable_data = {
+		default = {
+			icon = soldier
+			building_icon = building_mineral_purification_plant
+		}
+	}
+	possible_pre_triggers = {
+		has_owner = yes
+	}
+	possible = {
+		planet = {
+			exists = owner
+		}
+		species = {
+			has_species_flag = BA_Unnamed_enemy_species
+		}
+	}
+	weight = {
+		weight = 80000
+	}
 }

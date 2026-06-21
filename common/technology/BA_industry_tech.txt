@@ -359,7 +359,7 @@ tech_BA_angel24_dome_SI = {
 #星河奇迹飞升拓展
 tech_BA_megastructure_linking = {
 	area = physics
-	icon = tech_assembly_pattern	#以后改
+	icon = tech_assembly_pattern #以后改
 	tier = 5
 	is_rare = yes
 	is_dangerous = yes
@@ -385,7 +385,7 @@ tech_BA_megastructure_linking = {
 #高级社团部室
 tech_BA_club_upgrade = {
 	area = physics
-	icon = tech_assembly_pattern	#以后改
+	icon = tech_assembly_pattern #以后改
 	tier = 5
 	is_rare = yes
 	cost = @tier4cost2
@@ -406,8 +406,8 @@ tech_BA_club_upgrade = {
 #自走科技遗产
 tech_BA_legacy_of_millennium = {
 	area = physics
-	icon = tech_assembly_pattern	#以后改
-	cost = @tier2cost1	#白送的无所谓
+	icon = tech_assembly_pattern #以后改
+	cost = @tier2cost1 #白送的无所谓
 	category = {
 		computing
 	}
@@ -522,7 +522,7 @@ tech_BA_Tactical_backpack_T1 = {
 	weight_modifier = {
 		modifier = {
 			factor = 0.5
-			has_country_flag = yuuka_is_leader_flag			#当优香是学生会长时，权重*0.5
+			has_country_flag = yuuka_is_leader_flag #当优香是学生会长时，权重*0.5
 		}
 	}
 }
@@ -540,7 +540,7 @@ tech_BA_Tactical_backpack_T2 = {
 	weight_modifier = {
 		modifier = {
 			factor = 0.5
-			has_country_flag = yuuka_is_leader_flag			#当优香是学生会长时，权重*0.5
+			has_country_flag = yuuka_is_leader_flag #当优香是学生会长时，权重*0.5
 		}
 	}
 	prerequisites = {
@@ -564,7 +564,7 @@ tech_BA_Tactical_backpack_T3 = {
 	weight_modifier = {
 		modifier = {
 			factor = 0.5
-			has_country_flag = yuuka_is_leader_flag			#当优香是学生会长时，权重*0.5
+			has_country_flag = yuuka_is_leader_flag #当优香是学生会长时，权重*0.5
 		}
 	}
 	prerequisites = {
@@ -589,7 +589,7 @@ tech_BA_Tactical_backpack_T4 = {
 	weight_modifier = {
 		modifier = {
 			factor = 0.5
-			has_country_flag = yuuka_is_leader_flag			#当优香是学生会长时，权重*0.5
+			has_country_flag = yuuka_is_leader_flag #当优香是学生会长时，权重*0.5
 		}
 	}
 	prerequisites = {
@@ -610,7 +610,7 @@ tech_BA_Tactical_backpack_T5 = {
 	category = {
 		field_manipulation
 	}
-	weight = 0	#原版到五级科技好像是暗物质的了，所以没有基础权重。
+	weight = 0 #原版到五级科技好像是暗物质的了，所以没有基础权重。
 	prerequisites = {
 		"tech_BA_Tactical_backpack_T4"
 	}
@@ -669,7 +669,7 @@ tech_BA_Badge_T1 = {
 	weight_modifier = {
 		modifier = {
 			factor = 0.5
-			has_country_flag = yuuka_is_leader_flag			#当优香是学生会长时，权重*0.5
+			has_country_flag = yuuka_is_leader_flag #当优香是学生会长时，权重*0.5
 		}
 	}
 }
@@ -687,7 +687,7 @@ tech_BA_Badge_T2 = {
 	weight_modifier = {
 		modifier = {
 			factor = 0.5
-			has_country_flag = yuuka_is_leader_flag			#当优香是学生会长时，权重*0.5
+			has_country_flag = yuuka_is_leader_flag #当优香是学生会长时，权重*0.5
 		}
 	}
 	prerequisites = {
@@ -711,7 +711,7 @@ tech_BA_Badge_T3 = {
 	weight_modifier = {
 		modifier = {
 			factor = 0.5
-			has_country_flag = yuuka_is_leader_flag			#当优香是学生会长时，权重*0.5
+			has_country_flag = yuuka_is_leader_flag #当优香是学生会长时，权重*0.5
 		}
 	}
 	prerequisites = {
@@ -736,7 +736,7 @@ tech_BA_Badge_T4 = {
 	weight_modifier = {
 		modifier = {
 			factor = 0.5
-			has_country_flag = yuuka_is_leader_flag			#当优香是学生会长时，权重*0.5
+			has_country_flag = yuuka_is_leader_flag #当优香是学生会长时，权重*0.5
 		}
 	}
 	prerequisites = {
@@ -757,7 +757,7 @@ tech_BA_Badge_T5 = {
 	category = {
 		field_manipulation
 	}
-	weight = 0	#原版到五级科技好像是暗物质的了，所以没有基础权重。
+	weight = 0 #原版到五级科技好像是暗物质的了，所以没有基础权重。
 	prerequisites = {
 		"tech_BA_Badge_T4"
 	}
@@ -833,4 +833,3 @@ tech_BA_auto_turrent_2 = {
 	}
 	weight = @tier1weight1
 }
-
