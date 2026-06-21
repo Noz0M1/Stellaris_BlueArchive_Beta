@@ -72,56 +72,56 @@ option = {
 }
 
 option = {
-    name = Festival_operations_department_prolong
-    custom_tooltip = Festival_operations_department_prolong.tip
-    response_text = Festival_operations_department_prolong.$CHARA$RE
-    allow = {
-        if = {
-            limit = {
-                check_variable = {
-                    which = Festival_operations_department_fes_level
-                    value >= 10
-                }
-            }
-            custom_tooltip_fail = {
-                text = Festival_operations_department_prolong.max
-                always = no
-            }
-        }
-        else = {
-            custom_tooltip_fail = {
-                text = BA_club_favor_fail.50
-                check_variable = {
-                    which = Festival_operations_department
-                    value >= 50
-                }
-            }
-            custom_tooltip_fail = {
-                text = Festival_operations_department_prolong.cooldown
-                NOT = {
-                    has_country_flag = Festival_operations_department_cooldown
-                }
-            }
-            resource_stockpile_compare = {
-                resource = consumer_goods
-                value >= 10
-                multiplier = value:num_BA_club_festival_buff_time
-            }
-        }
-    }
-    add_resource = {
-        consumer_goods = -10
-        multiplier = value:num_BA_club_festival_buff_time
-    }
-    hidden_effect = {
-        change_variable = {
-            which = Festival_operations_department_fes_level
-            value = 1
-        }
+	name = Festival_operations_department_prolong
+	custom_tooltip = Festival_operations_department_prolong.tip
+	response_text = Festival_operations_department_prolong.$CHARA$RE
+	allow = {
+		if = {
+			limit = {
+				check_variable = {
+					which = Festival_operations_department_fes_level
+					value >= 10
+				}
+			}
+			custom_tooltip_fail = {
+				text = Festival_operations_department_prolong.max
+				always = no
+			}
+		}
+		else = {
+			custom_tooltip_fail = {
+				text = BA_club_favor_fail.50
+				check_variable = {
+					which = Festival_operations_department
+					value >= 50
+				}
+			}
+			custom_tooltip_fail = {
+				text = Festival_operations_department_prolong.cooldown
+				NOT = {
+					has_country_flag = Festival_operations_department_cooldown
+				}
+			}
+			resource_stockpile_compare = {
+				resource = consumer_goods
+				value >= 10
+				multiplier = value:num_BA_club_festival_buff_time
+			}
+		}
+	}
+	add_resource = {
+		consumer_goods = -10
+		multiplier = value:num_BA_club_festival_buff_time
+	}
+	hidden_effect = {
+		change_variable = {
+			which = Festival_operations_department_fes_level
+			value = 1
+		}
 		set_saved_date = {
 			key = Festival_operations_department_cooldown
 			days_from_present = value:num_BA_club_festival_buff_time
 			expires = value:num_BA_club_festival_buff_time
 		}
-    }
+	}
 }

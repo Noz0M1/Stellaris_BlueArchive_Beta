@@ -5,7 +5,6 @@ point_defence_turret = {
 		weapon_type_kinetic = "turret_point_defence_entity"
 		weapon_type_energy = "turret_point_defence_entity"
 		weapon_type_explosive = "turret_point_defence_entity"
-
 		weapon_type_penetration = "turret_point_defence_entity"
 		weapon_type_mystic = "turret_point_defence_entity"
 		weapon_type_explosion = "turret_point_defence_entity"
@@ -25,7 +24,6 @@ small_turret = {
 		weapon_type_kinetic = "small_kinetic_gun_entity"
 		weapon_type_energy = "small_laser_gun_entity"
 		weapon_type_explosive = "turret_missile_small_entity"
-
 		weapon_type_penetration = "small_kinetic_gun_entity"
 		weapon_type_mystic = "small_laser_gun_entity"
 		weapon_type_explosion = "turret_missile_small_entity"
@@ -45,7 +43,6 @@ medium_turret = {
 		weapon_type_kinetic = "medium_kinetic_gun_entity"
 		weapon_type_energy = "medium_laser_gun_entity"
 		weapon_type_explosive = "turret_missile_medium_entity"
-
 		weapon_type_penetration = "medium_kinetic_gun_entity"
 		weapon_type_mystic = "medium_laser_gun_entity"
 		weapon_type_explosion = "turret_missile_medium_entity"
@@ -65,7 +62,6 @@ large_turret = {
 		weapon_type_kinetic = "large_kinetic_gun_entity"
 		weapon_type_energy = "large_laser_gun_entity"
 		weapon_type_explosive = "turret_missile_large_entity"
-
 		weapon_type_penetration = "large_kinetic_gun_entity"
 		weapon_type_mystic = "large_laser_gun_entity"
 		weapon_type_explosion = "turret_missile_large_entity"
@@ -85,7 +81,6 @@ extra_large_turret = {
 		weapon_type_kinetic = "turret_xl_entity"
 		weapon_type_energy = "turret_xl_entity"
 		weapon_type_explosive = "turret_xl_entity"
-
 		weapon_type_penetration = "turret_xl_entity"
 		weapon_type_mystic = "turret_xl_entity"
 		weapon_type_explosion = "turret_xl_entity"
@@ -110,13 +105,10 @@ medium_missile_turret = {
 		weapon_type_explosive = "turret_missile_medium_entity"
 		weapon_type_kinetic = "medium_kinetic_gun_entity" # Failsafe for saved "invalid designs"
 		weapon_type_energy = "medium_laser_gun_entity" # Failsafe for saved "invalid designs"
-
-
 		weapon_type_penetration = "medium_kinetic_gun_entity"
 		weapon_type_mystic = "medium_laser_gun_entity"
 		weapon_type_explosion = "turret_missile_medium_entity"
 		weapon_type_destruction = "medium_kinetic_gun_entity"
-
 	}
 }
 
@@ -127,7 +119,6 @@ large_missile_turret = {
 		weapon_type_explosive = "turret_missile_large_entity"
 		weapon_type_kinetic = "large_kinetic_gun_entity" # Failsafe for saved "invalid designs"
 		weapon_type_energy = "large_laser_gun_entity" # Failsafe for saved "invalid designs"
-
 		weapon_type_penetration = "large_kinetic_gun_entity"
 		weapon_type_mystic = "large_laser_gun_entity"
 		weapon_type_explosion = "turret_missile_large_entity"

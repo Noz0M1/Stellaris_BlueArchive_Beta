@@ -174,7 +174,7 @@ BA_auto_habitat_center = {
 #基址
 BA_club_base = {
 	entity = construction_platform_entity
-	construction_entity = construction_platform_entity	#"habitat_phase_01_entity"
+	construction_entity = construction_platform_entity #"habitat_phase_01_entity"
 	portrait = "GFX_megastructure_construction_background"
 	build_type = inside_gravity_well
 	show_in_outliner = no
@@ -214,7 +214,7 @@ BA_club_base = {
 	placement_rules = {
 		planet_possible = {
 			custom_tooltip = {
-				fail_text = "BUILD_MEGASTRUCTURE_PLANET_TARGET_NEEDED"	# these loc lines are inverted
+				fail_text = "BUILD_MEGASTRUCTURE_PLANET_TARGET_NEEDED" # these loc lines are inverted
 				always = no
 			}
 		}
@@ -734,7 +734,7 @@ BA_Veritas_device_full = {
 #开采站
 BA_Hotspring_mine_station = {
 	entity = construction_platform_entity
-	construction_entity = construction_platform_entity	#"habitat_phase_01_entity"
+	construction_entity = construction_platform_entity #"habitat_phase_01_entity"
 	portrait = "GFX_megastructure_arc_furnace_background"
 	show_in_outliner = no
 	entity_offset = {

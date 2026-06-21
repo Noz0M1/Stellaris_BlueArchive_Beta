@@ -172,7 +172,7 @@ trait_Halo_amplifier = {
 trait_keystone_protocol = {
 	cost = 4
 	sorting_priority = 16
-	icon = "gfx/interface/icons/traits/Icon_Small_external_amplifier.dds"	#以后改
+	icon = "gfx/interface/icons/traits/Icon_Small_external_amplifier.dds" #以后改
 	allowed_archetypes = {
 		Schale
 	}
@@ -209,7 +209,7 @@ trait_keystone_protocol = {
 trait_Halo_matrix = {
 	cost = 4
 	sorting_priority = 16
-	icon = "gfx/interface/icons/traits/Icon_Small_external_amplifier.dds"	#以后改
+	icon = "gfx/interface/icons/traits/Icon_Small_external_amplifier.dds" #以后改
 	allowed_archetypes = {
 		Schale
 	}
@@ -248,7 +248,7 @@ trait_Halo_matrix = {
 trait_divine_coordinator = {
 	cost = 4
 	sorting_priority = 16
-	icon = "gfx/interface/icons/traits/Icon_Small_external_amplifier.dds"	#以后改
+	icon = "gfx/interface/icons/traits/Icon_Small_external_amplifier.dds" #以后改
 	allowed_archetypes = {
 		Schale
 	}
@@ -285,7 +285,7 @@ trait_divine_coordinator = {
 trait_inner_purfier = {
 	cost = 2
 	sorting_priority = 16
-	icon = "gfx/interface/icons/traits/Icon_Small_external_amplifier.dds"	#以后改
+	icon = "gfx/interface/icons/traits/Icon_Small_external_amplifier.dds" #以后改
 	allowed_archetypes = {
 		Schale
 	}
@@ -323,7 +323,7 @@ trait_inner_purfier = {
 trait_starlink_receiver = {
 	cost = 0
 	sorting_priority = 16
-	icon = "gfx/interface/icons/traits/Icon_Small_external_amplifier.dds"	#以后改
+	icon = "gfx/interface/icons/traits/Icon_Small_external_amplifier.dds" #以后改
 	allowed_archetypes = {
 		Schale
 	}
@@ -726,7 +726,7 @@ trait_gamegirl = {
 			always = yes
 		}
 	}
-	icon = "gfx/interface/icons/traits/trait_gamegirl.dds"	#以后改
+	icon = "gfx/interface/icons/traits/trait_gamegirl.dds" #以后改
 	modifier = {
 		bureaucrat_jobs_bonus_workforce_mult = 0.2
 		#species_empire_size_mult = -0.25
@@ -755,7 +755,7 @@ trait_wingbot = {
 			has_country_flag = BA_Aris_lifted
 		}
 	}
-	icon = "gfx/interface/icons/traits/trait_wingbot.dds"	#以后改
+	icon = "gfx/interface/icons/traits/trait_wingbot.dds" #以后改
 	modifier = {
 		researcher_jobs_bonus_workforce_mult = 0.15
 		#pop_category_specialists_sr_pyroxenes_upkeep_add = 0.2
@@ -782,7 +782,7 @@ trait_randomized_line = {
 			has_country_flag = BA_Aris_lifted
 		}
 	}
-	icon = "gfx/interface/icons/traits/trait_randomized_line.dds"	#以后改
+	icon = "gfx/interface/icons/traits/trait_randomized_line.dds" #以后改
 	modifier = {
 		roboticist_jobs_bonus_workforce_mult = -0.15
 		planet_pop_assembly_mult = 0.25
@@ -810,7 +810,7 @@ trait_federation_matrix = {
 			always = yes
 		}
 	}
-	icon = "gfx/interface/icons/traits/trait_federation_matrix.dds"	#以后改
+	icon = "gfx/interface/icons/traits/trait_federation_matrix.dds" #以后改
 	modifier = {
 		pop_bonus_workforce_mult = 0.1
 	}
@@ -843,7 +843,7 @@ trait_substance_module = {
 			always = yes
 		}
 	}
-	icon = "gfx/interface/icons/traits/trait_substance_module.dds"	#以后改
+	icon = "gfx/interface/icons/traits/trait_substance_module.dds" #以后改
 	modifier = {
 		influential_jobs_bonus_workforce_mult = 0.2
 		planet_pops_energy_upkeep_mult = -0.5

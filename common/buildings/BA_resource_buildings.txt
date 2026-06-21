@@ -1,7 +1,7 @@
 ### 图标为占位符
 ########## 行星 ##########
 building_BA_basis_schola_1 = {
-	icon = building_simulation_1	#TODO
+	icon = building_simulation_1 #TODO
 	base_buildtime = 360
 	category = government
 	building_sets = {
@@ -63,7 +63,7 @@ building_BA_basis_schola_1 = {
 }
 
 building_BA_basis_schola_2 = {
-	icon = building_simulation_2	#TODO
+	icon = building_simulation_2 #TODO
 	base_buildtime = @b2_time
 	category = government
 	can_build = no
@@ -143,7 +143,7 @@ building_BA_basis_schola_2 = {
 ########## 一产 ##########
 # 能量币
 building_BA_energy_1 = {
-	icon = building_energy_grid	#TODO
+	icon = building_energy_grid #TODO
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = resource
@@ -183,7 +183,7 @@ building_BA_energy_1 = {
 }
 
 building_BA_energy_2 = {
-	icon = building_energy_nexus	#TODO
+	icon = building_energy_nexus #TODO
 	base_buildtime = @b2_time
 	can_build = no
 	category = resource
@@ -257,7 +257,7 @@ building_BA_energy_2 = {
 
 # 矿
 building_BA_minerals_1 = {
-	icon = building_mineral_purification_plant	#TODO
+	icon = building_mineral_purification_plant #TODO
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = resource
@@ -297,7 +297,7 @@ building_BA_minerals_1 = {
 }
 
 building_BA_minerals_2 = {
-	icon = building_mineral_purification_hub	#TODO
+	icon = building_mineral_purification_hub #TODO
 	base_buildtime = @b2_time
 	can_build = no
 	category = resource
@@ -351,7 +351,7 @@ building_BA_minerals_2 = {
 
 # 苹果
 building_BA_food_1 = {
-	icon = building_food_processing_facility	#TODO
+	icon = building_food_processing_facility #TODO
 	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = resource
@@ -391,7 +391,7 @@ building_BA_food_1 = {
 }
 
 building_BA_food_2 = {
-	icon = building_food_processing_center	#TODO
+	icon = building_food_processing_center #TODO
 	base_buildtime = @b2_time
 	can_build = no
 	category = resource
@@ -847,7 +847,7 @@ building_BA_pyroxenes_factory_X = {
 # 辅助建筑
 # 青辉石精炼厂
 building_BA_refinery = {
-	icon = building_archaeo_refinery	#TODO
+	icon = building_archaeo_refinery #TODO
 	base_buildtime = 360
 	position_priority = 154
 	base_cap_amount = 1
@@ -905,7 +905,7 @@ building_BA_refinery = {
 
 # 工业物流中心
 building_BA_upkeep = {
-	icon = building_industrial_subsidiary	#TODO
+	icon = building_industrial_subsidiary #TODO
 	base_buildtime = 360
 	position_priority = 154
 	base_cap_amount = 1
@@ -963,7 +963,7 @@ building_BA_upkeep = {
 
 # 社团中心
 building_BA_Club_Complex = {
-	icon = building_research_efficiency_1	#TODO
+	icon = building_research_efficiency_1 #TODO
 	base_buildtime = 360
 	position_priority = 154
 	base_cap_amount = 1
@@ -1030,7 +1030,7 @@ building_BA_Club_Complex = {
 
 # 档案馆
 building_BA_Archive = {
-	icon = building_illicit_research_labs	#TODO
+	icon = building_illicit_research_labs #TODO
 	base_buildtime = 360
 	position_priority = 154
 	base_cap_amount = 1

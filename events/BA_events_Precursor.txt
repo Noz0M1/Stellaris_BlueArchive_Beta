@@ -1,6 +1,6 @@
 namespace = BA_Precursor
 ######################
-###     前置准备 
+###     前置准备
 ######################
 #初始化
 country_event = {
@@ -113,7 +113,7 @@ country_event = {
 				}
 			}
 			effect = {
-				set_country_flag = protected_from_queen_storm				#合成女王天灾保护
+				set_country_flag = protected_from_queen_storm #合成女王天灾保护
 				##########
 				save_global_event_target_as = BA_Precursor_country
 				set_country_flag = BA_Precursor
@@ -322,7 +322,7 @@ country_event = {
 	is_triggered_only = yes
 	title = BA_Precursor.0016.title
 	desc = BA_Precursor.0016.desc
-    diplomatic = yes
+	diplomatic = yes
 	picture_event_data = {
 		portrait = event_target:BA_Precursor_country
 		room = BA_01_room
@@ -333,7 +333,7 @@ country_event = {
 }
 
 ######################
-###     探索星系 
+###     探索星系
 ######################
 #进入通讯接口
 ship_event = {
@@ -474,7 +474,7 @@ ship_event = {
 }
 
 ######################
-###     先驱通讯 
+###     先驱通讯
 ######################
 ### 初次交流
 #触发器
@@ -506,7 +506,7 @@ country_event = {
 				}
 			}
 			effect = {
-				set_country_flag = protected_from_queen_storm				#合成女王天灾保护
+				set_country_flag = protected_from_queen_storm #合成女王天灾保护
 				###################
 				set_country_flag = BA_Precursor_contactor
 				save_global_event_target_as = BA_Precursor_contactor
@@ -707,7 +707,7 @@ country_event = {
 		else = {
 			country_event = {
 				# id = BA_Precursor.0152
-				id = BA_Precursor.0151				#暂时关闭
+				id = BA_Precursor.0151 #暂时关闭
 			}
 		}
 	}

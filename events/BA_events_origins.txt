@@ -44,15 +44,15 @@ country_event = {
 				building = building_BA_basis_schola_1
 			}
 			# 区块
-			clear_deposits = yes			#清除原有区块
-			add_deposit = d_black_market			#黑市区块
-			add_deposit = d_broken_Abydos_school			#阿拜多斯校区
-			add_deposit = d_broken_Millennium_school			#千年校区
-			add_deposit = d_broken_Trinity_school			#三一校区
-			add_deposit = d_broken_Gehenna_school			#格黑娜校区
-			add_deposit = d_broken_power_station			#千年发电厂
-			add_deposit = d_broken_desert_mine			#沙漠矿区
-			add_deposit = d_Greenhouse_farms			#赤冬温室农场（只是因为没有粮食区划所以拉来凑数的）
+			clear_deposits = yes #清除原有区块
+			add_deposit = d_black_market #黑市区块
+			add_deposit = d_broken_Abydos_school #阿拜多斯校区
+			add_deposit = d_broken_Millennium_school #千年校区
+			add_deposit = d_broken_Trinity_school #三一校区
+			add_deposit = d_broken_Gehenna_school #格黑娜校区
+			add_deposit = d_broken_power_station #千年发电厂
+			add_deposit = d_broken_desert_mine #沙漠矿区
+			add_deposit = d_Greenhouse_farms #赤冬温室农场（只是因为没有粮食区划所以拉来凑数的）
 			#人口
 			every_owned_pop_group = {
 				kill_pop_group = {
@@ -197,7 +197,7 @@ country_event = {
 		}
 		set_leader = last_created_leader
 		set_variable = {
-			which = Hoshino_daisuki			#星野好感度
+			which = Hoshino_daisuki #星野好感度
 			value = 0
 		}
 	}
@@ -404,7 +404,7 @@ country_event = {
 	desc = "BA_origin.0010.desc"
 	picture = GFX_BA_Kivotos_highway
 	immediate = {
-		set_country_flag = BA_Project_Cradle_ready		#项目
+		set_country_flag = BA_Project_Cradle_ready #项目
 	}
 	option = {
 		name = BA_origin.0010.a
@@ -414,7 +414,7 @@ country_event = {
 		# country_event = {
 		# 	id = BA_ape.0001
 		# 	days = 180
-		# } 
+		# }
 		#180天后触发光环科技路线 （改为满足条件mtth触发）
 	}
 }
@@ -718,15 +718,15 @@ country_event = {
 				building = building_BA_basis_schola_1
 			}
 			# 区块
-			clear_deposits = yes			#清除原有区块
-			add_deposit = d_Arius_Cathedral_ruined			#大圣堂
-			add_deposit = d_broken_Abydos_school			#_ruined			#阿拜多斯校区
-			add_deposit = d_broken_Millennium_school			#_ruined			#千年校区
-			add_deposit = d_broken_Trinity_school			#_ruined			#三一校区
-			add_deposit = d_broken_Gehenna_school			#_ruined			#格黑娜校区
-			add_deposit = d_broken_power_station			#_ruined			#千年发电厂
-			add_deposit = d_broken_desert_mine			#_ruined			#沙漠矿区
-			add_deposit = d_Greenhouse_farms			#_ruined			#农场
+			clear_deposits = yes #清除原有区块
+			add_deposit = d_Arius_Cathedral_ruined #大圣堂
+			add_deposit = d_broken_Abydos_school #_ruined			#阿拜多斯校区
+			add_deposit = d_broken_Millennium_school #_ruined			#千年校区
+			add_deposit = d_broken_Trinity_school #_ruined			#三一校区
+			add_deposit = d_broken_Gehenna_school #_ruined			#格黑娜校区
+			add_deposit = d_broken_power_station #_ruined			#千年发电厂
+			add_deposit = d_broken_desert_mine #_ruined			#沙漠矿区
+			add_deposit = d_Greenhouse_farms #_ruined			#农场
 			# remove_building = building_commercial_zone			#清除旧建筑 下同
 			# remove_building = building_research_lab_1
 			# remove_building = building_bureaucratic_1
@@ -782,7 +782,7 @@ country_event = {
 			#十年后，开始解除威胁
 			country_event = {
 				id = BA_origin.1201
-				days = 360				#0
+				days = 360 #0
 			}
 		}
 	}
@@ -856,7 +856,7 @@ country_event = {
 	option = {
 		name = BA_origin.1003.cancel
 		trigger = {
-			always = no			# TODO：tip待补 暂时隐藏
+			always = no # TODO：tip待补 暂时隐藏
 		}
 	}
 }
@@ -1423,7 +1423,7 @@ country_event = {
 	}
 }
 
-#第二阶段提示 
+#第二阶段提示
 country_event = {
 	id = BA_origin.1203
 	is_triggered_only = yes
@@ -1748,7 +1748,7 @@ planet_event = {
 	}
 	option = {
 		name = BA_origin.1301.next
-		add_deposit = d_Arius_site_park		#添加遗址公园
+		add_deposit = d_Arius_site_park #添加遗址公园
 		owner = {
 			add_monthly_resource_mult = {
 				resource = society_research
@@ -2045,7 +2045,7 @@ planet_event = {
 				}
 				save_event_target_as = BA_resettle_target
 			}
-			set_country_flag = BA_Project_Cradle_ready			#项目
+			set_country_flag = BA_Project_Cradle_ready #项目
 		}
 		every_owned_pop_group = {
 			resettle_pop_group = {
@@ -2105,7 +2105,7 @@ planet_event = {
 				}
 				save_event_target_as = BA_resettle_target
 			}
-			set_country_flag = BA_Project_Cradle_ready			#项目
+			set_country_flag = BA_Project_Cradle_ready #项目
 		}
 		every_owned_pop_group = {
 			resettle_pop_group = {
@@ -2147,7 +2147,7 @@ planet_event = {
 				}
 				abort_situation = this
 			}
-			set_country_flag = BA_Project_Cradle_ready			#项目
+			set_country_flag = BA_Project_Cradle_ready #项目
 		}
 		change_pc = pc_shattered
 	}
@@ -2211,7 +2211,7 @@ country_event = {
 	}
 	immediate = {
 		set_country_flag = BA_origin_finished
-		set_country_flag = BA_Project_Cradle_ready		#项目
+		set_country_flag = BA_Project_Cradle_ready #项目
 	}
 	option = {
 		name = BA_origin.1430.a
@@ -2307,7 +2307,7 @@ country_event = {
 					}
 				}
 				set_citizenship_type = {
-					type = citizenship_purge					#暂时设为驱逐
+					type = citizenship_purge #暂时设为驱逐
 					country = root
 				}
 			}
@@ -2546,8 +2546,8 @@ country_event = {
 			### 创建无名之神
 			create_species = {
 				name = "NAME_Unnamed_enemy_species"
-				class = MACHINE				#以后改
-				portrait = ai_crisis_1				#以后改
+				class = MACHINE #以后改
+				portrait = ai_crisis_1 #以后改
 				traits = {
 					trait = trait_mechanical
 				}
@@ -2736,7 +2736,7 @@ country_event = {
 					building = building_BA_fade_Sanctum_center
 				}
 				# 区块
-				clear_deposits = yes				#清除原有区块
+				clear_deposits = yes #清除原有区块
 				while = {
 					count = 6
 					add_deposit = d_fade_Sanctum
@@ -3116,7 +3116,7 @@ planet_event = {
 		owner = {
 			remove_country_flag = BA_origin_Unnamed_starting_engaged_2
 			set_country_flag = BA_origin_finished
-			set_country_flag = BA_Project_Cradle_ready			#项目
+			set_country_flag = BA_Project_Cradle_ready #项目
 		}
 	}
 	option = {
@@ -3128,13 +3128,13 @@ planet_event = {
 		hidden_effect = {
 			set_capital = yes
 			remove_deposit = d_fade_Sanctum_zone
-			add_deposit = d_broken_Abydos_school			#阿拜多斯校区
-			add_deposit = d_broken_Millennium_school			#千年校区
-			add_deposit = d_broken_Trinity_school			#三一校区
-			add_deposit = d_broken_Gehenna_school			#格黑娜校区
-			add_deposit = d_broken_power_station			#千年发电厂
-			add_deposit = d_broken_desert_mine			#沙漠矿区
-			add_deposit = d_Greenhouse_farms			#赤冬温室农场（只是因为没有粮食区划所以拉来凑数的）
+			add_deposit = d_broken_Abydos_school #阿拜多斯校区
+			add_deposit = d_broken_Millennium_school #千年校区
+			add_deposit = d_broken_Trinity_school #三一校区
+			add_deposit = d_broken_Gehenna_school #格黑娜校区
+			add_deposit = d_broken_power_station #千年发电厂
+			add_deposit = d_broken_desert_mine #沙漠矿区
+			add_deposit = d_Greenhouse_farms #赤冬温室农场（只是因为没有粮食区划所以拉来凑数的）
 		}
 	}
 }

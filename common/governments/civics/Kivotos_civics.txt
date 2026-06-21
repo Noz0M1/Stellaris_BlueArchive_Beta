@@ -119,7 +119,6 @@ civic_BA_digital_basis = {
 				value = origin_Kivotos_Unnamed_starting
 			}
 		}
-
 	}
 	random_weight = {
 		base = 0
@@ -416,36 +415,36 @@ civic_ba_awakened_fe = {
 			value = auth_kivotos_pr
 		}
 	}
-	modifier = {	
-	country_war_exhaustion_mult = 0.2
-	planet_max_buildings_add = 16
-	job_BA_fe_defender_per_pop = 0.1
-	#
-	country_base_influence_produces_add = 500
-	country_resource_max_add = 100000
-	#country_base_energy_produces_add = 10000
-	#country_base_minerals_produces_add = 10000
-	#country_base_food_produces_add = 10000
-	#country_base_alloys_produces_add = 10000
-	#country_base_consumer_goods_produces_add = 10000
-	#country_base_volatile_motes_produces_add = 10000
-	#country_base_exotic_gases_produces_add = 10000
-	#country_base_rare_crystals_produces_add	= 10000
-	#country_base_unity_produces_add = 10000
-	#
-	armies_upkeep_mult = -0.2
-	leaders_upkeep_mult = -1
-	starbases_upkeep_mult = -1
-	planet_pops_upkeep_mult = -1
-	planet_jobs_upkeep_mult = -1
-	#
-	ship_disengage_chance_mult = 0.5
-	starbase_shipyard_capacity_add = 30
-	country_naval_cap_add = 9999
-	ship_weapon_range_mult = 1
-	ship_fire_rate_mult = 10
-	ship_hull_mult = 1
-	ships_upkeep_mult = -1
+	modifier = {
+		country_war_exhaustion_mult = 0.2
+		planet_max_buildings_add = 16
+		job_BA_fe_defender_per_pop = 0.1
+		#
+		country_base_influence_produces_add = 500
+		country_resource_max_add = 100000
+		#country_base_energy_produces_add = 10000
+		#country_base_minerals_produces_add = 10000
+		#country_base_food_produces_add = 10000
+		#country_base_alloys_produces_add = 10000
+		#country_base_consumer_goods_produces_add = 10000
+		#country_base_volatile_motes_produces_add = 10000
+		#country_base_exotic_gases_produces_add = 10000
+		#country_base_rare_crystals_produces_add	= 10000
+		#country_base_unity_produces_add = 10000
+		#
+		armies_upkeep_mult = -0.2
+		leaders_upkeep_mult = -1
+		starbases_upkeep_mult = -1
+		planet_pops_upkeep_mult = -1
+		planet_jobs_upkeep_mult = -1
+		#
+		ship_disengage_chance_mult = 0.5
+		starbase_shipyard_capacity_add = 30
+		country_naval_cap_add = 9999
+		ship_weapon_range_mult = 1
+		ship_fire_rate_mult = 10
+		ship_hull_mult = 1
+		ships_upkeep_mult = -1
 	}
 	random_weight = {
 		base = 0
@@ -453,7 +452,7 @@ civic_ba_awakened_fe = {
 }
 
 civic_ba_awakened_fe_advance = {
-	icon = "gfx/interface/icons/governments/civics/azusa.dds"	#觉醒旗帜（N/A）
+	icon = "gfx/interface/icons/governments/civics/azusa.dds" #觉醒旗帜（N/A）
 	potential = {
 		country_type = {
 			value = awakened_fallen_empire
@@ -479,7 +478,7 @@ civic_ba_awakened_fe_advance = {
 		ship_starting_experience_add = 10000
 		country_naval_cap_add = 9999
 		country_resource_max_add = 1000000
-		planet_max_buildings_add = 16		#觉醒过后的各类加成
+		planet_max_buildings_add = 16 #觉醒过后的各类加成
 	}
 	random_weight = {
 		base = 99999

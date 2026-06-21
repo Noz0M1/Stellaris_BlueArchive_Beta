@@ -338,7 +338,6 @@ greetings = {
 		trigger = {
 			has_authority = auth_kivotos_pr
 			is_country_type = Moe_Xcom_awakened
-			
 			OR = {
 				is_imperious_to = from
 				is_belligerent_to = from

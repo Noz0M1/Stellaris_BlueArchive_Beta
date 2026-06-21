@@ -53,7 +53,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "BA_ape.0002.name"
 	desc = "BA_ape.0002.desc"
-	picture = GFX_BA_Emergencies_0401	#暂时用这个
+	picture = GFX_BA_Emergencies_0401 #暂时用这个
 	trigger = {
 		OR = {
 			last_increased_tech = tech_BA_Halo_power_increase
@@ -557,7 +557,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		set_country_flag = BA_ape_1_finished
-		set_country_flag = BA_Repeatable_commmission_01_allow		#开启循环委托1
+		set_country_flag = BA_Repeatable_commmission_01_allow #开启循环委托1
 		#改造完成的一系列效果
 		every_owned_pop_group = {
 			limit = {
@@ -858,7 +858,6 @@ situation_event = {
 				type = situation_mid_Aris_ask_help
 			}
 		}
-
 		if = {
 			limit = {
 				OR = {

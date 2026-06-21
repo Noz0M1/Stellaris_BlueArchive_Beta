@@ -12,7 +12,7 @@ diplomatic_stance = {
 		}
 	}
 	allow = {
-		is_at_war = no		# Not allowed to change policies in this group while at war
+		is_at_war = no # Not allowed to change policies in this group while at war
 	}
 	option = {
 		name = "diplo_stance_belligerent"
@@ -27,7 +27,7 @@ diplomatic_stance = {
 			NOT = {
 				has_valid_civic = civic_inwards_perfection
 			}
-			is_homicidal = no			# They have their own variants of this
+			is_homicidal = no # They have their own variants of this
 		}
 		policy_flags = {
 			diplo_stance_belligerent
@@ -68,7 +68,7 @@ diplomatic_stance = {
 				}
 			}
 			modifier = {
-				factor = 0.5				# ...but they're still less likely to.
+				factor = 0.5 # ...but they're still less likely to.
 				is_pacifist = yes
 			}
 			# Angry people like to be belligerent
@@ -89,7 +89,7 @@ diplomatic_stance = {
 				has_ethic = ethic_authoritarian
 			}
 			modifier = {
-				factor = 5				# Intentionally high value for despoilers/Nihilistic Acquisition
+				factor = 5 # Intentionally high value for despoilers/Nihilistic Acquisition
 				is_slaver = yes
 			}
 			modifier = {
@@ -114,7 +114,7 @@ diplomatic_stance = {
 				has_ai_personality_behaviour = subjugator
 			}
 			modifier = {
-				factor = 3				# Blocked in propagators get ANGRY
+				factor = 3 # Blocked in propagators get ANGRY
 				has_ai_expansion_plan = no
 				has_ai_personality_behaviour = propagator
 			}
@@ -134,7 +134,7 @@ diplomatic_stance = {
 			NOT = {
 				has_valid_civic = civic_inwards_perfection
 			}
-			is_unfriendly = no			# Not homicidal or barbaric despoilers
+			is_unfriendly = no # Not homicidal or barbaric despoilers
 		}
 		policy_flags = {
 			diplo_stance_cooperative
@@ -243,8 +243,8 @@ diplomatic_stance = {
 			}
 		}
 		valid = {
-			is_megacorp = no			# "NO! YOU CAN'T BUY OUR STUFF!" makes the shareholders sad
-			is_homicidal = no			# Homicidal variants below
+			is_megacorp = no # "NO! YOU CAN'T BUY OUR STUFF!" makes the shareholders sad
+			is_homicidal = no # Homicidal variants below
 		}
 		policy_flags = {
 			diplo_stance_isolationist
@@ -266,7 +266,7 @@ diplomatic_stance = {
 				has_ascension_perk = ap_become_the_crisis
 			}
 			modifier = {
-				factor = 0.25				# Let the isolationists start in this if they want
+				factor = 0.25 # Let the isolationists start in this if they want
 				NOT = {
 					has_country_flag = has_encountered_other_empire
 				}
@@ -279,7 +279,7 @@ diplomatic_stance = {
 				}
 			}
 			modifier = {
-				factor = 100				# Inwards Perfection should almost always go isolationist
+				factor = 100 # Inwards Perfection should almost always go isolationist
 				has_valid_civic = civic_inwards_perfection
 			}
 			modifier = {
@@ -415,7 +415,7 @@ diplomatic_stance = {
 			}
 			modifier = {
 				factor = 3
-				is_megacorp = yes				# Megacorps should generally prefer this diplo stance unless their ethics get them to specialize differently
+				is_megacorp = yes # Megacorps should generally prefer this diplo stance unless their ethics get them to specialize differently
 			}
 			modifier = {
 				factor = 1.25
@@ -512,7 +512,7 @@ diplomatic_stance = {
 				has_ethic = ethic_authoritarian
 			}
 			modifier = {
-				factor = 1.25				# Despoilers/Nihilistic Acquisition intentionally get a higher multiplier for Belligerent than Supremacist
+				factor = 1.25 # Despoilers/Nihilistic Acquisition intentionally get a higher multiplier for Belligerent than Supremacist
 				is_slaver = yes
 			}
 			modifier = {

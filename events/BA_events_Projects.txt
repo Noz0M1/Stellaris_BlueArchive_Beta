@@ -17,7 +17,7 @@ country_event = {
 		capital_scope = {
 			#设首都旗帜
 			set_planet_flag = BA_Kivotos_capital
-			set_planet_flag = colony_event			#屏蔽地底人一类的事件
+			set_planet_flag = colony_event #屏蔽地底人一类的事件
 			set_planet_size = 23
 			#为摇篮计划准备目标
 			solar_system = {
@@ -203,7 +203,7 @@ country_event = {
 				has_planet_flag = BA_Gematria_station
 			}
 			enable_special_project = {
-				name = BA_Project_Cradle_02				#扫描建筑遗址
+				name = BA_Project_Cradle_02 #扫描建筑遗址
 				location = this
 				owner = root
 			}
@@ -233,7 +233,7 @@ country_event = {
 				has_planet_flag = BA_Gematria_station
 			}
 			enable_special_project = {
-				name = BA_Project_Cradle_03				#中继站发掘
+				name = BA_Project_Cradle_03 #中继站发掘
 				#location = event_target:Project_Cradle_02_target
 				location = this
 				owner = root
@@ -409,7 +409,7 @@ country_event = {
 			target = root
 		}
 		enable_special_project = {
-			name = BA_Project_Cradle_07			#考古准备
+			name = BA_Project_Cradle_07 #考古准备
 		}
 	}
 }
@@ -564,12 +564,12 @@ country_event = {
 		}
 	}
 	option = {
-		name = BA_Project.0023.decentralize		#这一系列事件放在最后
+		name = BA_Project.0023.decentralize #这一系列事件放在最后
 		enable_special_project = {
 			name = BA_Project_Cradle_09C
 		}
 		trigger = {
-			always = no			#没做完，隐藏一下
+			always = no #没做完，隐藏一下
 		}
 	}
 }
@@ -1534,7 +1534,7 @@ situation_event = {
 planet_event = {
 	id = BA_Project.8101
 	title = "BA_Project.8101.title"
-	picture = GFX_BA_Desert_base	#以后改
+	picture = GFX_BA_Desert_base #以后改
 	is_triggered_only = yes
 	desc = {
 		text = "BA_Project.8101.desc"
@@ -1557,7 +1557,7 @@ planet_event = {
 planet_event = {
 	id = BA_Project.8102
 	title = "BA_Project.8102.title"
-	picture = GFX_BA_Desert_base	#以后改
+	picture = GFX_BA_Desert_base #以后改
 	is_triggered_only = yes
 	desc = {
 		#回收
@@ -1630,7 +1630,7 @@ planet_event = {
 planet_event = {
 	id = BA_Project.8103
 	title = "BA_Project.8103.title"
-	picture = GFX_BA_Desert_base	#以后改
+	picture = GFX_BA_Desert_base #以后改
 	is_triggered_only = yes
 	desc = {
 		#回收
@@ -1707,7 +1707,7 @@ planet_event = {
 planet_event = {
 	id = BA_Project.8104
 	title = "BA_Project.8104.title"
-	picture = GFX_BA_Aloha	#以后改
+	picture = GFX_BA_Aloha #以后改
 	is_triggered_only = yes
 	desc = "BA_Project.8104.desc"
 	immediate = {
@@ -1839,7 +1839,7 @@ planet_event = {
 planet_event = {
 	id = BA_Project.8126
 	title = "BA_Project.8126.title"
-	picture = GFX_BA_Ruined_building_Day	#以后改
+	picture = GFX_BA_Ruined_building_Day #以后改
 	is_triggered_only = yes
 	desc = "BA_Project.8126.desc"
 	trigger = {
@@ -1863,7 +1863,7 @@ planet_event = {
 planet_event = {
 	id = BA_Project.8127
 	title = "BA_Project.8127.title"
-	picture = GFX_BA_Ruined_building_Day	#以后改
+	picture = GFX_BA_Ruined_building_Day #以后改
 	is_triggered_only = yes
 	desc = "BA_Project.8127.desc"
 	trigger = {
@@ -1891,7 +1891,7 @@ planet_event = {
 planet_event = {
 	id = BA_Project.8128
 	title = "BA_Project.8128.title"
-	picture = GFX_BA_Ruined_building_Day	#以后改
+	picture = GFX_BA_Ruined_building_Day #以后改
 	is_triggered_only = yes
 	desc = "BA_Project.8128.desc"
 	trigger = {

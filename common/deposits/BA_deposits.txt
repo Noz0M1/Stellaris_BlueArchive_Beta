@@ -1,6 +1,6 @@
 #小兔子公园（突袭事件用
 d_BA_kousagi_park = {
-	icon = d_slums	#先用贫民窟的icon
+	icon = d_slums #先用贫民窟的icon
 	time = 30
 	is_for_colonizable = yes
 	category = deposit_cat_blockers
@@ -24,7 +24,7 @@ d_BA_kousagi_park = {
 
 #百夜堂沙滩
 d_BA_beach = {
-	icon = d_slums	#先用贫民窟的icon
+	icon = d_slums #先用贫民窟的icon
 	time = 30
 	is_for_colonizable = yes
 	category = deposit_cat_blockers
@@ -108,9 +108,9 @@ d_Arius_site_park = {
 #黑市地块
 d_black_market = {
 	icon = d_black_market
-	time = 120	#花费120天
+	time = 120 #花费120天
 	is_for_colonizable = yes
-	category = deposit_cat_blockers	#地块类型：障碍
+	category = deposit_cat_blockers #地块类型：障碍
 	resources = {
 		category = deposit_blockers
 		cost = {

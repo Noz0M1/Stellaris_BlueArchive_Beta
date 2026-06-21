@@ -66,7 +66,9 @@ BA_student_delegate = {
 		modifier = {
 			factor = 0.1
 			has_citizenship_rights = no
-			NOT = { has_trait = trait_mechanical }
+			NOT = {
+				has_trait = trait_mechanical
+			}
 		}
 		modifier = {
 			factor = 0.01
@@ -148,7 +150,9 @@ BA_Vigilant_crew = {
 		modifier = {
 			factor = 0.1
 			has_citizenship_rights = no
-			NOT = { has_trait = trait_mechanical }
+			NOT = {
+				has_trait = trait_mechanical
+			}
 		}
 		modifier = {
 			factor = 0.01
@@ -225,7 +229,9 @@ BA_Valkyrie_police = {
 		modifier = {
 			factor = 0.1
 			has_citizenship_rights = no
-			NOT = { has_trait = trait_mechanical }
+			NOT = {
+				has_trait = trait_mechanical
+			}
 		}
 		modifier = {
 			factor = 0.01
@@ -293,11 +299,15 @@ BA_club_members = {
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
-			NOT = { has_trait = trait_mechanical }
+			NOT = {
+				has_trait = trait_mechanical
+			}
 		}
 		modifier = {
 			factor = 2
-			has_living_standard = { type = living_standard_academic_privilege }
+			has_living_standard = {
+				type = living_standard_academic_privilege
+			}
 		}
 		modifier = {
 			factor = 0.1
@@ -306,7 +316,9 @@ BA_club_members = {
 		modifier = {
 			factor = 0.8
 			is_enslaved = yes
-			has_slavery_type = { type = slavery_indentured }
+			has_slavery_type = {
+				type = slavery_indentured
+			}
 		}
 		modifier = {
 			factor = 5
@@ -377,11 +389,15 @@ BA_Kivotos_staff = {
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
-			NOT = { has_trait = trait_mechanical }
+			NOT = {
+				has_trait = trait_mechanical
+			}
 		}
 		modifier = {
 			factor = 2
-			owner = { has_civic = civic_exalted_priesthood }
+			owner = {
+				has_civic = civic_exalted_priesthood
+			}
 		}
 		modifier = {
 			factor = 0.1
@@ -390,7 +406,9 @@ BA_Kivotos_staff = {
 		modifier = {
 			factor = 0.1
 			is_enslaved = yes
-			has_slavery_type = { type = slavery_indentured }
+			has_slavery_type = {
+				type = slavery_indentured
+			}
 		}
 	}
 }
@@ -421,7 +439,8 @@ BA_Kivotos_trader = {
 		produces = {
 			trade = 24
 		}
-		produces = {  }
+		produces = {
+		}
 	}
 	weight = {
 		weight = @specialist_job_weight
@@ -437,10 +456,16 @@ BA_Kivotos_trader = {
 				}
 			}
 			OR = {
-				NOT = { exists = event_target:custodian_bot }
+				NOT = {
+					exists = event_target:custodian_bot
+				}
 				AND = {
 					exists = event_target:custodian_bot
-					NOT = { species = { is_same_value = event_target:custodian_bot } }
+					NOT = {
+						species = {
+							is_same_value = event_target:custodian_bot
+						}
+					}
 				}
 			}
 		}
@@ -639,7 +664,9 @@ BA_scrap_refiner = {
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
-			NOT = { has_trait = trait_mechanical }
+			NOT = {
+				has_trait = trait_mechanical
+			}
 		}
 		modifier = {
 			factor = 0.1
@@ -648,7 +675,9 @@ BA_scrap_refiner = {
 		modifier = {
 			factor = 1.2
 			is_enslaved = yes
-			has_slavery_type = { type = slavery_indentured }
+			has_slavery_type = {
+				type = slavery_indentured
+			}
 		}
 	}
 }
@@ -790,7 +819,11 @@ BA_Kivotos_miner = {
 			factor = 10
 			is_enslaved = yes
 			can_take_servant_job = no
-			NOT = { has_slavery_type = { type = slavery_indentured } }
+			NOT = {
+				has_slavery_type = {
+					type = slavery_indentured
+				}
+			}
 		}
 		modifier = {
 			factor = 3
@@ -799,7 +832,9 @@ BA_Kivotos_miner = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
+			owner = {
+				has_technology = tech_droid_workers
+			}
 		}
 		modifier = {
 			factor = 200
@@ -808,7 +843,11 @@ BA_Kivotos_miner = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
+			owner = {
+				NOT = {
+					has_technology = tech_droid_workers
+				}
+			}
 		}
 		modifier = {
 			factor = 0.25
@@ -883,13 +922,19 @@ BA_caterer = {
 		weight = @worker_job_weight
 		modifier = {
 			factor = 1.1
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 		}
 		modifier = {
 			factor = 10
 			is_enslaved = yes
 			can_take_servant_job = no
-			NOT = { has_slavery_type = { type = slavery_indentured } }
+			NOT = {
+				has_slavery_type = {
+					type = slavery_indentured
+				}
+			}
 		}
 		modifier = {
 			factor = 3
@@ -898,7 +943,9 @@ BA_caterer = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
+			owner = {
+				has_technology = tech_droid_workers
+			}
 		}
 		modifier = {
 			factor = 200
@@ -907,7 +954,11 @@ BA_caterer = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
+			owner = {
+				NOT = {
+					has_technology = tech_droid_workers
+				}
+			}
 		}
 		modifier = {
 			factor = 0.25
@@ -915,7 +966,9 @@ BA_caterer = {
 		}
 		modifier = {
 			factor = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 		}
 		modifier = {
 			factor = 5
@@ -1145,7 +1198,9 @@ BA_supplier = {
 		modifier = {
 			factor = 0.1
 			has_citizenship_rights = no
-			NOT = { has_trait = trait_mechanical }
+			NOT = {
+				has_trait = trait_mechanical
+			}
 		}
 		modifier = {
 			factor = 0.01
@@ -1203,7 +1258,9 @@ BA_quartermaster = {
 		modifier = {
 			factor = 0.1
 			has_citizenship_rights = no
-			NOT = { has_trait = trait_mechanical }
+			NOT = {
+				has_trait = trait_mechanical
+			}
 		}
 		modifier = {
 			factor = 0.01
@@ -1366,11 +1423,15 @@ BA_surveyor = {
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
-			NOT = { has_trait = trait_mechanical }
+			NOT = {
+				has_trait = trait_mechanical
+			}
 		}
 		modifier = {
 			factor = 2
-			has_living_standard = { type = living_standard_academic_privilege }
+			has_living_standard = {
+				type = living_standard_academic_privilege
+			}
 		}
 		modifier = {
 			factor = 0.1
@@ -1379,7 +1440,9 @@ BA_surveyor = {
 		modifier = {
 			factor = 0.8
 			is_enslaved = yes
-			has_slavery_type = { type = slavery_indentured }
+			has_slavery_type = {
+				type = slavery_indentured
+			}
 		}
 		modifier = {
 			factor = 5
@@ -1507,7 +1570,9 @@ BA_student_on_duty = {
 		modifier = {
 			factor = 0.8
 			is_enslaved = yes
-			has_slavery_type = { type = slavery_indentured }
+			has_slavery_type = {
+				type = slavery_indentured
+			}
 		}
 	}
 }
@@ -1543,7 +1608,9 @@ BA_ringworld_worker = {
 		modifier = {
 			factor = 0.8
 			is_enslaved = yes
-			has_slavery_type = { type = slavery_indentured }
+			has_slavery_type = {
+				type = slavery_indentured
+			}
 		}
 	}
 }
