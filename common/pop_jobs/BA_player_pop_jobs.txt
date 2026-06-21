@@ -62,8 +62,23 @@ BA_student_delegate = {
 	# }
 	weight = {
 		weight = @ruler_job_weight
-		mult = value:job_weights_research_modifier|JOB|head_researcher|
-		mult = value:job_weights_modifier|JOB|head_researcher|RESOURCE|unity|FACTOR|0.25|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		modifier = {
+			factor = 0.1
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
 	}
 }
 
@@ -129,8 +144,23 @@ BA_Vigilant_crew = {
 	}
 	weight = {
 		weight = @ruler_job_weight
-		mult = value:job_weights_modifier|JOB|high_priest|RESOURCE|unity|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		modifier = {
+			factor = 0.1
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
 	}
 }
 
@@ -191,8 +221,23 @@ BA_Valkyrie_police = {
 	}
 	weight = {
 		weight = @ruler_job_weight
-		mult = value:job_weights_modifier|JOB|high_priest|RESOURCE|unity|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		modifier = {
+			factor = 0.1
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
 	}
 }
 
@@ -245,10 +290,27 @@ BA_club_members = {
 	}
 	weight = {
 		weight = @specialist_job_weight
-		mult = value:job_weights_modifier|JOB|artisan|RESOURCE|consumer_goods|
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
 		modifier = {
 			factor = 2
-			always = yes
+			has_living_standard = { type = living_standard_academic_privilege }
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 0.8
+			is_enslaved = yes
+			has_slavery_type = { type = slavery_indentured }
+		}
+		modifier = {
+			factor = 5
+			has_trait = trait_cyborg_creed_of_research
 		}
 	}
 }
@@ -311,7 +373,25 @@ BA_Kivotos_staff = {
 	}
 	weight = {
 		weight = @specialist_job_weight
-		mult = value:job_weights_modifier|JOB|trader|RESOURCE|trade|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 2
+			owner = { has_civic = civic_exalted_priesthood }
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 0.1
+			is_enslaved = yes
+			has_slavery_type = { type = slavery_indentured }
+		}
 	}
 }
 
@@ -345,7 +425,25 @@ BA_Kivotos_trader = {
 	}
 	weight = {
 		weight = @specialist_job_weight
-		mult = value:job_weights_modifier|JOB|trader|RESOURCE|trade|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+			OR = {
+				NOT = { exists = event_target:custodian_bot }
+				AND = {
+					exists = event_target:custodian_bot
+					NOT = { species = { is_same_value = event_target:custodian_bot } }
+				}
+			}
+		}
 	}
 }
 
@@ -405,7 +503,11 @@ BA_pyroxenes_artisan = {
 	}
 	weight = {
 		weight = @specialist_job_weight
-		mult = value:job_weights_modifier|JOB|artisan|RESOURCE|consumer_goods|
+		modifier = {
+			factor = 2
+			is_enslaved = yes
+			can_take_servant_job = no
+		}
 	}
 }
 
@@ -456,8 +558,16 @@ BA_keystone_foundry = {
 		}
 	}
 	weight = {
-		weight = @specialist_job_weight
-		mult = value:job_weights_modifier|JOB|foundry|RESOURCE|alloys|
+		weight = @specialist_job_weight # Fairly important job
+		modifier = {
+			factor = 2
+			is_enslaved = yes
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 5
+			has_trait = trait_cyborg_creed_of_construction
+		}
 	}
 }
 
@@ -526,6 +636,20 @@ BA_scrap_refiner = {
 	}
 	weight = {
 		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = { type = slavery_indentured }
+		}
 	}
 }
 
@@ -573,18 +697,41 @@ BA_dont_be_crazy_here = {
 		pop_amenities_usage_mult = -0.5
 	}
 	weight = {
-		weight = @worker_prio_job_weight
-		mult = value:job_weights_modifier|JOB|technician|RESOURCE|energy|
+		weight = @worker_job_weight
 		modifier = {
-			factor = 3
-			exists = planet
-			exists = owner
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value < 10
-				}
+			factor = 100
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
 			}
+			can_take_servant_job = no
+			can_fill_specialist_job_trigger = no
+		}
+		modifier = {
+			factor = 8
+			is_enslaved = yes
+			can_take_servant_job = no
+			OR = {
+				has_trait = trait_syncretic_proles
+				has_trait = trait_robot_superconductive
+				has_trait = trait_ingenious
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 0.25
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_trait = trait_cyborg_creed_of_labor
 		}
 	}
 }
@@ -638,18 +785,38 @@ BA_Kivotos_miner = {
 		planet_amenities_add = -5
 	}
 	weight = {
-		weight = @worker_prio_job_weight
-		mult = value:job_weights_modifier|JOB|miner|RESOURCE|minerals|
+		weight = @worker_job_weight
+		modifier = {
+			factor = 10
+			is_enslaved = yes
+			can_take_servant_job = no
+			NOT = { has_slavery_type = { type = slavery_indentured } }
+		}
 		modifier = {
 			factor = 3
-			exists = planet
-			exists = owner
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 10
-				}
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
 			}
+			can_take_servant_job = no
+			owner = { has_technology = tech_droid_workers }
+		}
+		modifier = {
+			factor = 200
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { NOT = { has_technology = tech_droid_workers } }
+		}
+		modifier = {
+			factor = 0.25
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_trait = trait_cyborg_creed_of_labor
 		}
 	}
 }
@@ -713,18 +880,46 @@ BA_caterer = {
 		}
 	}
 	weight = {
-		weight = @worker_prio_job_weight
-		mult = value:job_weights_modifier|JOB|farmer|RESOURCE|food|
+		weight = @worker_job_weight
+		modifier = {
+			factor = 1.1
+			owner = { has_valid_civic = civic_agrarian_idyll }
+		}
+		modifier = {
+			factor = 10
+			is_enslaved = yes
+			can_take_servant_job = no
+			NOT = { has_slavery_type = { type = slavery_indentured } }
+		}
 		modifier = {
 			factor = 3
-			exists = planet
-			exists = owner
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < 10
-				}
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
 			}
+			can_take_servant_job = no
+			owner = { has_technology = tech_droid_workers }
+		}
+		modifier = {
+			factor = 200
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { NOT = { has_technology = tech_droid_workers } }
+		}
+		modifier = {
+			factor = 0.25
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+			owner = { has_valid_civic = civic_agrarian_idyll }
+		}
+		modifier = {
+			factor = 5
+			has_trait = trait_cyborg_creed_of_labor
 		}
 	}
 }
@@ -850,7 +1045,34 @@ BA_flexible_workers = {
 	}
 	inline_script = "jobs/ethic_job_modifiers"
 	weight = {
-		weight = @worker_prio_job_weight
+		weight = @clerk_job_weight
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		modifier = {
+			factor = 0.25
+			is_enslaved = yes
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 10
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			can_fill_specialist_job_trigger = no
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
 	}
 }
 
@@ -919,7 +1141,23 @@ BA_supplier = {
 	}
 	weight = {
 		weight = @ruler_job_weight
-		mult = value:job_weights_research_modifier|JOB|head_researcher|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		modifier = {
+			factor = 0.1
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
 	}
 }
 
@@ -961,7 +1199,23 @@ BA_quartermaster = {
 	}
 	weight = {
 		weight = @ruler_job_weight
-		mult = value:job_weights_research_modifier|JOB|head_researcher|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		modifier = {
+			factor = 0.1
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
 	}
 }
 
@@ -1109,6 +1363,28 @@ BA_surveyor = {
 	}
 	weight = {
 		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 2
+			has_living_standard = { type = living_standard_academic_privilege }
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 0.8
+			is_enslaved = yes
+			has_slavery_type = { type = slavery_indentured }
+		}
+		modifier = {
+			factor = 5
+			has_trait = trait_cyborg_creed_of_research
+		}
 	}
 }
 
@@ -1174,7 +1450,7 @@ BA_scavenger = {
 		}
 	}
 	weight = {
-		weight = 1
+		weight = @worker_job_weight
 	}
 }
 
@@ -1222,7 +1498,17 @@ BA_student_on_duty = {
 		country_naval_cap_add = 2
 	}
 	weight = {
-		weight = 1
+		weight = @colonist_job_weight
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 0.8
+			is_enslaved = yes
+			has_slavery_type = { type = slavery_indentured }
+		}
 	}
 }
 
@@ -1248,6 +1534,16 @@ BA_ringworld_worker = {
 		category = BA_auto_pop
 	}
 	weight = {
-		weight = @specialist_job_weight
+		weight = @colonist_job_weight
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 0.8
+			is_enslaved = yes
+			has_slavery_type = { type = slavery_indentured }
+		}
 	}
 }
