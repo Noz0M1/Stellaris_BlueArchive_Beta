@@ -336,6 +336,18 @@ d_fade_Sanctum_zone = {
 }
 
 #基础增强区划
+d_BA_ark_continent = {
+	icon = d_mountain_range
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	planet_modifier = {
+		planet_max_districts_add = 8
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
 d_Atrahasis_reactor = {
 	icon = "unused/d_space_walk"
 	is_for_colonizable = yes

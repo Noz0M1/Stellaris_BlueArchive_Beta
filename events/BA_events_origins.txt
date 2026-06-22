@@ -2550,15 +2550,103 @@ country_event = {
 		is_nomadic = yes
 	}
 	immediate = {
-		# 与其他两个特有起源一致：直接给予科技，再由起源对话激活 Arona 通讯。
+		set_country_flag = BA_origin_Unnamed_starting_searching
+		set_country_flag = BA_habitat_inhibit_1
 		give_technology = {
 			tech = tech_BA_Shittem_starting
 			message = no
 		}
-		capital_scope?= {
-			# 三个基座区各一个，不预设任何区域特化。
+
+		# 保存摇篮与 D.U.白鸟；它们由起源的初始星系初始化器生成。
+		capital_scope.solar_system = {
+			save_global_event_target_as = BA_Unnamed_cradle_system
+			every_system_planet = {
+				limit = { has_planet_flag = BA_Unnamed_starting_target }
+				save_global_event_target_as = BA_Unnamed_starting_target
+			}
+		}
+
+		# 复用旧 2XXX 流程的虚妄圣库姆特国家与物种。
+		create_species = {
+			name = "NAME_Unnamed_enemy_species"
+			class = MACHINE
+			portrait = ai_crisis_1
+			traits = {
+				trait = trait_mechanical
+			}
+			effect = {
+				set_species_homeworld = event_target:BA_Unnamed_starting_target
+				set_species_flag = BA_Unnamed_enemy_species
+				save_global_event_target_as = BA_Unnamed_enemy_species
+			}
+		}
+		create_country = {
+			name = "NAME_Unnamed_enemy_country"
+			type = Fade_Sanctum
+			ignore_initial_colony_error = yes
+			species = event_target:BA_Unnamed_enemy_species
+			ethos = { ethic = ethic_gestalt_consciousness }
+			authority = auth_machine_intelligence
+			flag = {
+				icon = {
+					category = "special"
+					file = "flag_MX.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "flag_BG_31.dds"
+				}
+				colors = {
+					"satin_burgundy"
+					"intense_blue"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				set_country_flag = BA_Unnamed_enemy
+				save_global_event_target_as = BA_Unnamed_enemy_country
+			}
+		}
+		set_faction_hostility = {
+			target = event_target:BA_Unnamed_enemy_country
+			set_friendly = no
+			set_neutral = no
+			set_hostile = yes
+		}
+		event_target:BA_Unnamed_enemy_country = {
+			set_faction_hostility = {
+				target = root
+				set_friendly = no
+				set_neutral = no
+				set_hostile = yes
+			}
+		}
+
+		# 令敌对国家实际占领 D.U.白鸟，并布置旧事件中的圣塔与守军。
+		event_target:BA_Unnamed_starting_target = {
+			clear_deposits = yes
+			add_deposit = d_fade_Sanctum
+			add_deposit = d_fade_Sanctum
+			add_deposit = d_fade_Sanctum
+			add_deposit = d_fade_Sanctum
+			add_deposit = d_fade_Sanctum
+			add_deposit = d_fade_Sanctum
+			add_deposit = d_fade_Sanctum_zone
+			create_colony = { owner = event_target:BA_Unnamed_enemy_country }
+			set_name = sys.Kivotos.home.name
+			create_pop_group = {
+				species = event_target:BA_Unnamed_enemy_species
+				size = 200
+			}
 			remove_all_districts = yes
-			#
+			add_district = BA_districts_campus
+			validate_planet_buildings_and_districts = yes
+			planet_event = { id = BA_origin.2010 }
+		}
+
+		capital_scope?= {
+			remove_all_districts = yes
 			add_district = BA_ark_district_city
 			add_district = BA_ark_district_city
 			add_district = BA_ark_district_city
@@ -2596,6 +2684,60 @@ country_event = {
 			}
 			validate_planet_buildings_and_districts = yes
 		}
+
+		# 将方舟迁至与摇篮严格相隔八跳的无主星系。
+		random_system = {
+			limit = {
+				NOT = { exists = space_owner }
+				NOR = {
+					has_star_flag = hostile_system
+					has_star_flag = guardian
+				}
+				distance = {
+					source = event_target:BA_Unnamed_cradle_system
+					type = hyperlane
+					use_bypasses = no
+					min_jumps = 8
+					max_jumps = 8
+				}
+			}
+			save_global_event_target_as = BA_Unnamed_ark_start_system
+		}
+		if = {
+			limit = { NOT = { exists = event_target:BA_Unnamed_ark_start_system } }
+			random_system = {
+				limit = {
+					NOR = {
+						has_star_flag = hostile_system
+						has_star_flag = guardian
+					}
+					distance = {
+						source = event_target:BA_Unnamed_cradle_system
+						type = hyperlane
+						use_bypasses = no
+						min_jumps = 8
+						max_jumps = 8
+					}
+				}
+				save_global_event_target_as = BA_Unnamed_ark_start_system
+			}
+		}
+		if = {
+			limit = { exists = event_target:BA_Unnamed_ark_start_system }
+			every_owned_fleet = {
+				set_location = event_target:BA_Unnamed_ark_start_system
+			}
+			event_target:BA_Unnamed_ark_start_system = {
+				every_system_planet = {
+					set_surveyed = {
+						surveyed = yes
+						surveyor = root
+					}
+				}
+			}
+		}
+
+		establish_communications_no_message = event_target:BA_Unnamed_enemy_country
 		country_event = {
 			id = BA_origin.2002
 		}
@@ -2630,6 +2772,17 @@ country_event = {
 	}
 	option = {
 		name = BA_origin.2002.next
+		begin_event_chain = {
+			event_chain = BA_Unnamed_starting_chain
+			target = capital_scope.ship
+		}
+		create_point_of_interest = {
+			id = BA_Unnamed_starting_chain_point_A
+			name = BA_Unnamed_starting_chain_point_A_title
+			desc = BA_Unnamed_starting_chain_point_A_desc
+			event_chain = BA_Unnamed_starting_chain
+			location = capital_scope.ship
+		}
 	}
 }
 
@@ -2684,6 +2837,213 @@ country_event = {
 				module = BA_arkship_docking_bay
 			}
 		}
+	}
+}
+
+# D.U.白鸟开局守军。复用旧 BA_origin.2010 事件号。
+planet_event = {
+	id = BA_origin.2010
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		owner = { has_country_flag = BA_Unnamed_enemy }
+	}
+	immediate = {
+		while = {
+			count = 8
+			create_army = {
+				name = NAME_BA_origin_enemy
+				owner = event_target:BA_Unnamed_enemy_country
+				type = BA_Deca_army_2
+				species = event_target:BA_Unnamed_enemy_species
+			}
+		}
+	}
+}
+
+# 玩家舰船重新进入摇篮：完成“寻找”阶段。
+ship_event = {
+	id = BA_origin.2020
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = { is_same_value = event_target:BA_Unnamed_cradle_system }
+		owner = {
+			has_origin = origin_Kivotos_Unnamed_starting
+			has_country_flag = BA_origin_Unnamed_starting_searching
+		}
+	}
+	immediate = {
+		owner = { country_event = { id = BA_origin.2021 } }
+	}
+}
+
+country_event = {
+	id = BA_origin.2021
+	is_triggered_only = yes
+	title = BA_origin.2021.title
+	desc = BA_origin.2021.desc
+	picture = GFX_BA_Abydos_vs_Binah
+	location = event_target:BA_Unnamed_starting_target
+	immediate = {
+		remove_country_flag = BA_origin_Unnamed_starting_searching
+		set_country_flag = BA_origin_Unnamed_starting_reclaiming
+		remove_point_of_interest = BA_Unnamed_starting_chain_point_A
+		create_point_of_interest = {
+			id = BA_Unnamed_starting_chain_point_B
+			name = BA_Unnamed_starting_chain_point_B_title
+			desc = BA_Unnamed_starting_chain_point_B_desc
+			event_chain = BA_Unnamed_starting_chain
+			location = event_target:BA_Unnamed_starting_target
+		}
+	}
+	option = {
+		name = BA_origin.2021.next
+	}
+}
+
+# 夺回 D.U.白鸟失败。保留旧事件号与叙事。
+country_event = {
+	id = BA_origin.2051
+	is_triggered_only = yes
+	title = BA_origin.2051.title
+	desc = BA_origin.2051.desc
+	picture = GFX_BA_Checkmate
+	location = fromfrom
+	trigger = {
+		has_origin = origin_Kivotos_Unnamed_starting
+		has_country_flag = BA_origin_Unnamed_starting_reclaiming
+		from = { has_country_flag = BA_Unnamed_enemy }
+		fromfrom = { has_planet_flag = BA_Unnamed_starting_target }
+	}
+	option = {
+		name = BA_origin.2051.next
+	}
+}
+
+# 夺回 D.U.白鸟成功。保留旧事件号，随后进入游牧/定居抉择。
+country_event = {
+	id = BA_origin.2052
+	is_triggered_only = yes
+	title = BA_origin.2052.title
+	desc = BA_origin.2052.desc
+	picture = GFX_BA_Abydos_vs_Binah
+	location = fromfrom
+	trigger = {
+		has_origin = origin_Kivotos_Unnamed_starting
+		has_country_flag = BA_origin_Unnamed_starting_reclaiming
+		from = { has_country_flag = BA_Unnamed_enemy }
+		fromfrom = { has_planet_flag = BA_Unnamed_starting_target }
+	}
+	immediate = {
+		remove_country_flag = BA_origin_Unnamed_starting_reclaiming
+		set_country_flag = BA_origin_Unnamed_starting_reclaimed
+		remove_point_of_interest = BA_Unnamed_starting_chain_point_B
+		fromfrom = {
+			set_owner = root
+		}
+	}
+	option = {
+		name = BA_origin.2052.next
+		country_event = {
+			id = BA_origin.2060
+			days = 1
+		}
+	}
+}
+
+# 家园夺回后的路线抉择。继续游牧暂时保留为禁用选项。
+country_event = {
+	id = BA_origin.2060
+	is_triggered_only = yes
+	title = BA_origin.2060.title
+	desc = BA_origin.2060.desc
+	picture = GFX_origin_station
+	location = event_target:BA_Unnamed_starting_target
+	trigger = {
+		has_origin = origin_Kivotos_Unnamed_starting
+		has_country_flag = BA_origin_Unnamed_starting_reclaimed
+		is_nomadic = yes
+	}
+	option = {
+		name = BA_origin.2060.a
+		allow = {
+			custom_tooltip = {
+				fail_text = BA_origin.2060.a.disabled
+				always = no
+			}
+		}
+	}
+	option = {
+		name = BA_origin.2060.b
+		custom_tooltip = BA_origin.2060.b.tip
+		capital_scope.ship = {
+			save_global_event_target_as = BA_Unnamed_settling_arkship
+		}
+		event_target:BA_Unnamed_starting_target = {
+			solar_system = {
+				save_global_event_target_as = BA_Unnamed_settled_system
+			}
+			destroy_colony = yes
+		}
+		# 原版定居效果会新建恒星基地；若玩家已在摇篮建立哨站，先由定居程序接管并替换。
+		event_target:BA_Unnamed_settled_system = {
+			starbase? = {
+				fleet = { destroy_fleet = this }
+			}
+		}
+		arkship_settle_planet_effect = {
+			SETTLING_COUNTRY = root
+			SETTLING_ARKSHIP = event_target:BA_Unnamed_settling_arkship
+			SETTLED_PLANET = event_target:BA_Unnamed_starting_target
+			SETTLED_SYSTEM = event_target:BA_Unnamed_settled_system
+		}
+		convert_waystations_into_outposts_effect = {
+			SETTLING_COUNTRY = root
+		}
+		convert_logistic_ships_into_construction_ships_effects = yes
+		event_target:BA_Unnamed_starting_target = {
+			clear_blockers = yes
+			add_deposit = d_BA_ark_continent
+			set_planet_flag = BA_Unnamed_home_reclaimed
+			set_capital = yes
+			check_planet_employment = yes
+			validate_planet_buildings_and_districts = yes
+		}
+		event_target:BA_Unnamed_enemy_country? = {
+			destroy_country = yes
+		}
+		set_country_flag = BA_origin_Unnamed_starting_settled
+		country_event = {
+			id = BA_origin.2102
+			days = 1
+		}
+	}
+}
+
+# 起源总结与任务链收尾。沿用备份中的 BA_origin.2102。
+country_event = {
+	id = BA_origin.2102
+	is_triggered_only = yes
+	title = BA_origin.2102.title
+	desc = BA_origin.2102.desc
+	picture = GFX_BA_Azusa_in_Trinity
+	location = event_target:BA_Unnamed_starting_target
+	trigger = {
+		has_origin = origin_Kivotos_Unnamed_starting
+		has_country_flag = BA_origin_Unnamed_starting_settled
+	}
+	immediate = {
+		remove_country_flag = BA_origin_Unnamed_starting_reclaimed
+		remove_country_flag = BA_habitat_inhibit_1
+		set_country_flag = BA_origin_finished
+		set_country_flag = BA_Unnamed_starting_chain_completed
+		set_country_flag = BA_Project_Cradle_ready
+		end_event_chain = BA_Unnamed_starting_chain
+	}
+	option = {
+		name = BA_origin.2102.next
+		custom_tooltip = BA_origin.2102.tip
 	}
 }
 

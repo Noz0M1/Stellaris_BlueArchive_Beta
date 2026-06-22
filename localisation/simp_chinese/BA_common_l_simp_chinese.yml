@@ -369,6 +369,8 @@
  d_BA_ark_Atrahasis_factory_desc:0 "方舟内部的军用生产设施，重新编程后成为了重要的合金来源。"
  d_BA_ark_Atrahasis_gravity_controllor:0 "方舟引力控制器"
  d_BA_ark_Atrahasis_gravity_controllor_desc:0 "维持方舟内部重力环境的核心设备，同时能够回收少量青辉石。"
+ d_BA_ark_continent:0 "方舟大陆"
+ d_BA_ark_continent_desc:0 "始发方舟着陆后，其庞大的舰体、生态舱与生产舱被并入D.U.白鸟的地表规划，为家园提供了大片可开发区域。"
 
  d_SI_Hyakkiyako_G02: "§U设施§!-百夜堂连锁"
  d_SI_Hyakkiyako_G02_desc: "$SI_Hyakkiyako_G02_desc$"
@@ -1719,8 +1721,8 @@
  sys.Kivotos.Platinum.name:0 "铂"
  BA_Kivotos_habitat_sys_NAME:0 "摇篮（居住站）"
  BA_Kivotos_habitat_sys_DESC:0 "一个有着明显的斧凿痕迹的星系，并存在一座改造过的大型居住站。许许多多的光环在居住站中闪烁。"
- BA_Kivotos_nomad_sys_NAME:0 "摇篮（方舟舰）"
- BA_Kivotos_nomad_sys_DESC:0 "一个有着明显的斧凿痕迹的星系，宜居星球上有机械活动信号。"
+ BA_Kivotos_nomad_sys_NAME:0 "摇篮"
+ BA_Kivotos_nomad_sys_DESC:0 "失落的故乡星系。D.U.白鸟已被敌对机械占领，而我们的始发方舟将在八跳之外开始流亡。"
 
 
 
@@ -1731,11 +1733,11 @@
  BA_Kyrie_chain_title:0 "致被遗忘的众神"
  BA_Kyrie_chain_desc:0 "我们的抗争已是过往云烟，挣扎了许久的我们迎来的曙光。\n母星上关于能量、矿物、食物的生产正在不计后果的全力进行，只为我们能够在这浩瀚星宇中抢占先机。\n"
  BA_Unnamed_starting_chain_title:0 "未命名的始发点"
- BA_Unnamed_starting_chain_desc:0 "基沃托斯在虚妄之塔的进攻下失守后，我们的一部分幸存者逃往太空，以那里的空间站作为据点保留了我们最后的火种。克服了最开始的困难后，我们扎根于太空，一座又一座的新空间站被建立。\n不过，这些空间站中的自动化区划，都是我们在未参透其中原理的情况下自行仿制的，故障频发，因此，我们不得不关小功率、降低规模以便检修。\n方舟仍然漂浮在太空，等待我们完全参透其中奥秘的一天到来。"
- BA_Unnamed_starting_chain_point_A_title:0 "夺回学园都市星球"
- BA_Unnamed_starting_chain_point_A_desc:0 "建造一支力量足够的陆军，并派遣其§Y登陆学园都市星球§!，夺回我们的母星。"
- BA_Unnamed_starting_chain_point_B_title:0 "研究方舟中的自动化产线"
- BA_Unnamed_starting_chain_point_B_desc:0 "在§Y星球决议§!(£x£管理->£n£决议)中完成决议，以研究并修复产线。"
+ BA_Unnamed_starting_chain_desc:0 "虚妄圣库姆特夺取了摇篮与D.U.白鸟。幸存者搭乘始发方舟逃亡至八跳之外，如今我们必须先在星海中找回故乡，再以武力将它夺回。"
+ BA_Unnamed_starting_chain_point_A_title:0 "寻找摇篮"
+ BA_Unnamed_starting_chain_point_A_desc:0 "探索方舟周边星域，直到我们的舰船重新进入失落的§Y摇篮§!星系。"
+ BA_Unnamed_starting_chain_point_B_title:0 "武装夺回家园"
+ BA_Unnamed_starting_chain_point_B_desc:0 "集结进攻陆军，登陆被虚妄圣库姆特占领的§YD.U.白鸟§!，将家园夺回。"
  BA_Unnamed_starting_chain_point_C_title:0 "清除虚妄巨塔"
  BA_Unnamed_starting_chain_point_C_desc:0 "清除虚妄巨塔(£x£管理->行星特征)，完全修复学园都市星球。"
  BA_Project_Cradle_chain_title:0 "摇篮计划"

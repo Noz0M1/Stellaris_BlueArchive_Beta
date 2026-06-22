@@ -33,20 +33,22 @@ BA_Kivotos_nomad_sys = {
 
 	planet = {
 		name = "sys.Kivotos.home.name"
-		class = pc_shattered
+		class = pc_BA_campus_planet
 		orbit_distance = 60
 		orbit_angle = 135
 		size = 20
 		has_ring = no
+		deposit_blockers = none
 		flags = {
+			BA_Kivotos_P1_flag
+			BA_Unnamed_starting_target
 			BA_Kivotos_lost_home
 			BA_Project_Cradle_target
+			colony_event
 		}
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
-			add_deposit = d_alloys_3
-			add_deposit = d_engineering_3
 		}
 	}
 
