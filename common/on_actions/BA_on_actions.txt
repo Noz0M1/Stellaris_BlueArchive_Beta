@@ -1,3 +1,4 @@
+# This = Country
 on_game_start_country = {
 	events = {
 		# 通用
@@ -15,16 +16,19 @@ on_game_start_country = {
 	}
 }
 
+# No scope, like on_game_start
 on_mid_game_pulse = {
 	events = {
 	}
 }
 
+# No scope, like on_game_start
 on_late_game_pulse = {
 	events = {
 	}
 }
 
+# This = Country
 on_monthly_pulse_country = {
 	events = {
 		#BA_Precursor.0002
@@ -35,6 +39,7 @@ on_monthly_pulse_country = {
 	}
 }
 
+# This = Country
 on_yearly_pulse_country = {
 	events = {
 		BA_Shittem.2001			#委托触发器
@@ -47,6 +52,7 @@ on_yearly_pulse_country = {
 	}
 }
 
+# This = Country
 on_five_year_pulse_country = {
 	events = {
 		BA_Shittem.1921			#青辉石修复委托：提示
@@ -55,6 +61,7 @@ on_five_year_pulse_country = {
 	}
 }
 
+# This = Country
 on_decade_pulse_country = {
 	events = {
 		BA_Shittem.2008			#提示去委托页面查看
@@ -139,7 +146,7 @@ on_leader_level_up = {
 # This = Country
 # From = Species ( Post Modification )
 # FromFrom = Species ( Original )
-# Prev = Planet
+# Prev = Colony
 on_modification_complete = {
 	events = {
 		BA_rename.1006			#领袖重命名立绘修复触发器
@@ -157,6 +164,7 @@ on_custom_diplomacy = {
 	}
 }
 
+# This = Country
 on_tech_increased = {
 	events = {
 		BA_Shittem.0101			#研究“修复什亭之匣”，开启事件链
@@ -173,9 +181,9 @@ on_tech_increased = {
 }
 
 # This = country, attack leader
-# From = country, planet owner
-# FromFrom = planet
-on_planet_attackers_lose = {
+# From = country, colony owner
+# FromFrom = colony
+on_colony_attackers_lose = {
 	events = {
 		BA_origin.1220			#遗忘众神起源 爆金币
 		BA_origin.2051			#未命名的始发点：夺回家园失败
@@ -184,10 +192,10 @@ on_planet_attackers_lose = {
 	}
 }
 
-# This = country, leader attacker
-# From = country, planet owner
-# FromFrom = planet
-on_planet_attackers_win = {
+# This = country, lead attacker
+# From = country, colony owner
+# FromFrom = colony
+on_colony_attackers_win = {
 	events = {
 		BA_origin.1411			#遗忘众神起源 抵抗失败boom
 		BA_origin.1415			#被其他国家攻占 boom
@@ -195,26 +203,28 @@ on_planet_attackers_win = {
 	}
 }
 
-# Planet has reached 0 pops from orbital bombardment
-# This = Planet
-# From = Bombarder
+# Legacy on_action not present in current vanilla on_actions.
+# Historical scope: This = Planet
+# Historical From = Bombarder
 on_planet_zero_pops = {
 	events = {
 	}
 }
 
-# Planet has reached 0 pops from collateral damage
-# This = Planet
-# From = Army owner
+# Legacy on_action not present in current vanilla on_actions.
+# Historical scope: This = Planet
+# Historical From = Army owner
 on_planet_zero_pops_ground_combat = {
 }
 
+# No vanilla scope comment found.
 on_colony_3_years_old = {
 	events = {
 		BA_Project.0017			#触发摇篮计划2阶段
 	}
 }
 
+# Scope: Ship Event
 # Root = Ship
 # From = Planet
 on_ship_built = {
@@ -224,13 +234,14 @@ on_ship_built = {
 	}
 }
 
+# Root = Ship
 on_ship_upgraded = {
 	events = {
 	}
 }
 
-# This = new capital
-# From = old capital
+# This = Colony (new capital)
+# From = Colony (old capital)
 on_capital_changed = {
 	events = {
 	}
@@ -254,15 +265,15 @@ on_ship_disabled = {
 	}
 }
 
-# This = ship
-# From = system
+# Scope = Ship
+# From = System
 on_system_survey_ship = {
 	events = {
 		BA_Precursor.0057		#跳线点考古遗址
 	}
 }
 
-# This = Ship
+# Scope = Ship
 # From = System
 # FromFrom = Country
 on_entering_system_first_time = {
@@ -274,7 +285,9 @@ on_entering_system_first_time = {
 	}
 }
 
-# Scope = Ship, From = System, FromFrom = Country
+# Scope = Ship
+# From = System
+# FromFrom = Country
 # 使用每次进入事件，因为始发方舟在开局迁移前已经短暂位于摇篮。
 on_entering_system = {
 	events = {
@@ -282,6 +295,7 @@ on_entering_system = {
 	}
 }
 
+# This = Country
 on_mid_game_pulse_country = {
 	events = {
 		#BA_Precursor.0010		#启动外域星门 之后改为中期触发
@@ -289,18 +303,22 @@ on_mid_game_pulse_country = {
 	}
 }
 
+# This = Fleet scope
+# From = Planet/Starbase/Megastructure/Astral Rift scope
 on_fleet_enter_orbit = {
 	events = {
 		BA_club.0005			#社团舰建立社团
 	}
 }
 
+# Scope = Planet
 on_colonization_started = {
 	events = {
 		BA_club.0030			#社团舰开始殖民
 	}
 }
 
+# Scope = Carrier
 on_colonized = {
 	events = {
 		BA_Shittem.3201			#废墟球殖民完成
@@ -309,7 +327,9 @@ on_colonized = {
 	}
 }
 
-# This = Planet scope
+# Legacy on_action not present in current vanilla on_actions.
+# Current vanilla equivalent is on_colony_transfer:
+# This = Colony scope
 # From = Country scope (new owner)
 # FromFrom = Country scope (previous owner, if any)
 on_planet_transfer = {
@@ -318,6 +338,7 @@ on_planet_transfer = {
 	}
 }
 
+# This = Ship
 on_jump_drive = {
 	events = {
 	}

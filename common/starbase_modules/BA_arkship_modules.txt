@@ -1,12 +1,10 @@
 # BA 方舟专用开局模块。数值、图标和功能取自对应原版方舟模块。
-
 BA_arkship_engineering_bay = {
 	icon = "GFX_arkship_engineering_bay"
 	section = "BA_ARKSHIP_CONSTRUCTION_MODULE"
 	construction_days = 180
 	starbase_type = arkship
 	category = sm_naval_support_cat
-
 	potential = {
 		owner? = {
 			OR = {
@@ -16,7 +14,6 @@ BA_arkship_engineering_bay = {
 		}
 		has_starbase_size = BA_arkship_tier_1
 	}
-
 	possible = {
 		count_starbase_modules = {
 			type = arkship_beastport
@@ -24,38 +21,50 @@ BA_arkship_engineering_bay = {
 			include_being_constructed = yes
 		}
 	}
-
 	show_in_tech = "tech_space_construction"
-	show_tech_unlock_if = { is_nomadic = yes }
-	cannot_fit_on_slots = { spinal_mount_1 }
-
+	show_tech_unlock_if = {
+		is_nomadic = yes
+	}
+	cannot_fit_on_slots = {
+		spinal_mount_1
+	}
 	resources = {
 		category = starbase_arkship_upgrades
-		cost = { alloys = @arkship_cost_alloys_100 }
-		upkeep = { energy = @arkship_upkeep_energy_2 }
+		cost = {
+			alloys = @arkship_cost_alloys_100
+		}
+		upkeep = {
+			energy = @arkship_upkeep_energy_2
+		}
 	}
-
 	station_modifier = {
 		show_only_custom_tooltip = no
 		megastructure_build_speed_mult = 0.15
 	}
-	planet_modifier = { planet_building_capacity_add = 1 }
-
-	on_finished = { set_ship_construction_type = starbase_shipyard }
+	planet_modifier = {
+		planet_building_capacity_add = 1
+	}
+	on_finished = {
+		set_ship_construction_type = starbase_shipyard
+	}
 	on_destroyed = {
 		if = {
-			limit = { NOT = { has_starbase_module = BA_arkship_engineering_bay } }
+			limit = {
+				NOT = {
+					has_starbase_module = BA_arkship_engineering_bay
+				}
+			}
 			set_ship_construction_type = none
 		}
 	}
-
 	inline_script = {
 		script = jobs/arkship_module_soldiers_add
 		ZONE = zone_ark_shipwright
 		AMOUNT = @arkship_module_jobs
 	}
-
-	ai_weight = { weight = 100 }
+	ai_weight = {
+		weight = 100
+	}
 }
 
 BA_arkship_docking_bay = {
@@ -64,21 +73,32 @@ BA_arkship_docking_bay = {
 	construction_days = 180
 	starbase_type = arkship
 	category = sm_utility_cat
-
-	potential = { has_starbase_size = BA_arkship_tier_1 }
-	show_tech_unlock_if = { is_nomadic = yes }
-	cannot_fit_on_slots = { spinal_mount_1 }
-
+	potential = {
+		has_starbase_size = BA_arkship_tier_1
+	}
+	show_tech_unlock_if = {
+		is_nomadic = yes
+	}
+	cannot_fit_on_slots = {
+		spinal_mount_1
+	}
 	resources = {
 		category = starbase_arkship_upgrades
-		cost = { alloys = @arkship_cost_alloys_50 }
+		cost = {
+			alloys = @arkship_cost_alloys_50
+		}
 		upkeep = {
 			energy = @arkship_upkeep_energy_1
 			trade = @arkship_upkeep_trade_4
 		}
 	}
-
-	country_modifier = { country_naval_cap_add = 5 }
-	station_modifier = { ship_starbase_stockpile_collection_rate_mult = 0.10 }
-	ai_weight = { weight = 100 }
+	country_modifier = {
+		country_naval_cap_add = 5
+	}
+	station_modifier = {
+		ship_starbase_stockpile_collection_rate_mult = 0.10
+	}
+	ai_weight = {
+		weight = 100
+	}
 }

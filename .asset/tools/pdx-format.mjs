@@ -5,6 +5,7 @@ import { resolve } from "node:path";
 
 const INDENT = "\t";
 const INLINE_BLOCK_HEADS = new Set(["rgb", "hsv", "hsv360"]);
+const ASSIGNMENT_OPERATORS = new Set(["=", "?="]);
 
 function usage() {
     console.error("Usage: node .asset/tools/pdx-format.mjs [--check] <file> [file ...]");
@@ -61,6 +62,12 @@ function tokenize(input) {
             continue;
         }
 
+        if (ch === "?" && input[i + 1] === "=") {
+            tokens.push({ type: "?=", value: "?=" });
+            i += 2;
+            continue;
+        }
+
         if ("{}=".includes(ch)) {
             tokens.push({ type: ch, value: ch });
             i += 1;
@@ -71,7 +78,8 @@ function tokenize(input) {
         while (
             i < input.length &&
             !/\s/.test(input[i]) &&
-            !["{", "}", "=", "#", '"'].includes(input[i])
+            !["{", "}", "=", "#", '"'].includes(input[i]) &&
+            !(input[i] === "?" && input[i + 1] === "=")
         ) {
             i += 1;
         }
@@ -96,7 +104,9 @@ function canInlineBlock(tokens, openIndex) {
     if (closeIndex < 0) return false;
 
     for (let i = openIndex + 1; i < closeIndex; i += 1) {
-        if (tokens[i].type === "{" || tokens[i].type === "}" || tokens[i].type === "=") return false;
+        if (tokens[i].type === "{" || tokens[i].type === "}" || isAssignmentOperator(tokens[i])) {
+            return false;
+        }
         if (tokens[i].type === "comment") return false;
     }
 
@@ -112,18 +122,19 @@ function inlineBlockText(tokens, openIndex) {
     return { text: `{ ${body} }`, closeIndex };
 }
 
-function mergeSplitComparisonOperators(tokens) {
+function mergeSplitOperators(tokens) {
     const merged = [];
 
     for (let i = 0; i < tokens.length; i += 1) {
         const token = tokens[i];
 
-        if (token.type === "atom" && ["<", ">", "!"].includes(token.value)) {
+        if (token.type === "atom" && ["<", ">", "!", "?"].includes(token.value)) {
             let j = i + 1;
             while (tokens[j]?.type === "newline") j += 1;
 
             if (tokens[j]?.type === "=") {
-                merged.push({ type: "atom", value: `${token.value}=` });
+                const value = `${token.value}=`;
+                merged.push({ type: value === "?=" ? "?=" : "atom", value });
                 i = j;
                 continue;
             }
@@ -135,12 +146,16 @@ function mergeSplitComparisonOperators(tokens) {
     return merged;
 }
 
+function isAssignmentOperator(token) {
+    return token && ASSIGNMENT_OPERATORS.has(token.value);
+}
+
 function isComparisonOperator(token) {
     return token?.type === "atom" && /^(?:[<>]=?|!=|==)$/.test(token.value);
 }
 
 function format(input) {
-    const tokens = mergeSplitComparisonOperators(tokenize(input));
+    const tokens = mergeSplitOperators(tokenize(input));
     const lines = [];
     let line = "";
     let indent = 0;
@@ -160,16 +175,18 @@ function format(input) {
     function append(text, mode = "atom") {
         if (line.length === 0) {
             line = INDENT.repeat(Math.max(indent, 0)) + text;
-        } else if (mode === "equals") {
-            line = line.trimEnd() + " = ";
+        } else if (mode === "nullable_assignment") {
+            line = line.trimEnd() + "? = ";
+        } else if (mode === "assignment") {
+            line = line.trimEnd() + ` ${text} `;
         } else if (mode === "brace") {
             line = line.trimEnd() + " " + text;
-        } else if (last === "=" || last === "{") {
+        } else if (ASSIGNMENT_OPERATORS.has(last) || last === "{") {
             line += text;
         } else {
             line += " " + text;
         }
-        last = mode === "equals" ? "=" : text;
+        last = text;
     }
 
     for (let i = 0; i < tokens.length; i += 1) {
@@ -205,8 +222,8 @@ function format(input) {
             continue;
         }
 
-        if (token.type === "=") {
-            append("=", "equals");
+        if (isAssignmentOperator(token)) {
+            append(token.value, token.value === "?=" ? "nullable_assignment" : "assignment");
             continue;
         }
 
@@ -231,7 +248,7 @@ function format(input) {
         const next = tokens[i + 1];
         if (
             next &&
-            next.type !== "=" &&
+            !isAssignmentOperator(next) &&
             next.type !== "{" &&
             next.type !== "}" &&
             next.type !== "comment" &&
