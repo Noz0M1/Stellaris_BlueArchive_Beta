@@ -1,6 +1,16 @@
 title = BA_communication.$Leader$.title
 desc = BA_communication.$Leader$.desc
 event_window_type = leader_recruit
+immediate = {
+	if = {
+		limit = {
+			exists = event_target:BA_$Leader$_SP
+		}
+		event_target:BA_$Leader$_SP = {
+			change_leader_portrait = BA_leader_$Leader$
+		}
+	}
+}
 ###
 picture_event_data = {
 	portrait = event_target:BA_$Leader$_SP

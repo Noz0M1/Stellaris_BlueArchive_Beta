@@ -1862,6 +1862,16 @@ country_event = {
 	title = BA_communication.Aris.title
 	desc = BA_communication.Aris.desc
 	event_window_type = leader_recruit
+	immediate = {
+		if = {
+			limit = {
+				exists = event_target:BA_Aris_SP
+			}
+			event_target:BA_Aris_SP = {
+				change_leader_portrait = BA_leader_Aris
+			}
+		}
+	}
 	###
 	picture_event_data = {
 		portrait = event_target:BA_Aris_SP

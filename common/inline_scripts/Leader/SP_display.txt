@@ -10,7 +10,7 @@ create_leader = {
 	custom_description = DESC_$Leader$
 	custom_catch_phrase = PHASE_$Leader$
 	effect = {
-		change_leader_portrait = BA_$Leader$
+		change_leader_portrait = BA_leader_$Leader$
 		set_leader_flag = leader_death_events_blocked
 		save_global_event_target_as = BA_$Leader$_SP
 	}
