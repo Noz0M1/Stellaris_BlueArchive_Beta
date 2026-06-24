@@ -193,271 +193,273 @@ guiTypes = {
 				no_clicksound = yes
 			}
 
-			containerWindowType = {
-				name = "buttons"
-				position = { x = 0 y = 0 }
-				# The height here is the Y position of the last button on small resolutions + the height of the last button.
-				size = { width = @button_large_width height = 350 }
-				origo = CENTER_LEFT
-				orientation = CENTER_LEFT
-
-				if_scaled_resolution = {
-					min_height = 900
-
-					# The height here is the Y position of the last button on large resolutions + the height of the last button.
-					size = { width = @button_large_width height = 500}
-				}
-
-				@button_large_width = 340
-				@button_large_height = 49 # Reduced by 1 pixel to avoid overlap
-
-				containerWindowType = {
-					name = "start_game_container"
-					position = { x = 0 y = 0 }
-					size = { width = @button_large_width height = @button_large_height }
-
-					if_scaled_resolution = {
-						min_height = 900
-
-						position = { x = 0 y = 0 }
-					}
-
-					buttonType = {
-						id = "start"
-						name = "button"
-						spriteType = "GFX_main_menu_button"
-						position = { x = -35 y = 0 }
-						size = { x = @button_large_width y = @button_large_height }
-						oversound = mouse_over
-						defaultSelection = yes
-						clicksound = confirm_click
-					}
-
-					instantTextBoxType = {
-						name = "text"
-						font = "jura"
-						text = "FRONT_START"
-						position = { x = 0 y = 4 }
-						maxWidth = @button_large_width
-						maxHeight = @button_large_height
-						fixedSize = yes
-						format = left
-						vertical_alignment = center
-						alwaysTransparent = yes
-					}
-				}
-
-				containerWindowType = {
-					name = "load_game_container"
-					position = { x = 0 y = 50 }
-					size = { width = @button_large_width height = @button_large_height }
-
-					if_scaled_resolution = {
-						min_height = 900
-
-						position = { x = 0 y = 75 }
-					}
-
-					buttonType = {
-						id = "load"
-						name = "button"
-						spriteType = "GFX_main_menu_button"
-						position = { x = -35 y = 0 }
-						size = { x = @button_large_width y = @button_large_height }
-						oversound = mouse_over
-						clicksound = confirm_click
-					}
-
-					instantTextBoxType = {
-						name = "text"
-						font = "jura"
-						text = "FRONT_LOAD"
-						position = { x = 0 y = 4 }
-						maxWidth = @button_large_width
-						maxHeight = @button_large_height
-						fixedSize = yes
-						format = left
-						vertical_alignment = center
-						alwaysTransparent = yes
-					}
-				}
-
-				containerWindowType = {
-					name = "multiplayer_container"
-					position = { x = 0 y = 100 }
-					size = { width = @button_large_width height = @button_large_height }
-
-					if_scaled_resolution = {
-						min_height = 900
-
-						position = { x = 0 y = 150 }
-					}
-
-					buttonType = {
-						id = "multiplayer"
-						name = "button"
-						spriteType = "GFX_main_menu_button"
-						position = { x = -35 y = 0 }
-						size = { x = @button_large_width y = @button_large_height }
-						oversound = mouse_over
-						clicksound = confirm_click
-					}
-
-					instantTextBoxType = {
-						name = "text"
-						font = "jura"
-						text = "FRONT_MULTIPLAYER"
-						position = { x = 0 y = 4 }
-						maxWidth = @button_large_width
-						maxHeight = @button_large_height
-						fixedSize = yes
-						format = left
-						vertical_alignment = center
-						alwaysTransparent = yes
-					}
-				}
-
-				containerWindowType = {
-					name = "coop_container"
-					position = { x = 0 y = 150 }
-					size = { width = @button_large_width height = @button_large_height }
-
-					if_scaled_resolution = {
-						min_height = 900
-
-						position = { x = 0 y = 225 }
-					}
-
-					buttonType = {
-						id = "coop"
-						name = "button"
-						spriteType = "GFX_main_menu_button"
-						position = { x = -35 y = 0 }
-						size = { x = @button_large_width y = @button_large_height }
-						oversound = mouse_over
-						clicksound = confirm_click
-						pdx_tooltip = NAME_Beta
-					}
-
-					instantTextBoxType = {
-						name = "text"
-						font = "jura"
-						text = "FRONT_COOP"
-						position = { x = 0 y = 4 }
-						maxWidth = @button_large_width
-						maxHeight = @button_large_height
-						fixedSize = yes
-						format = left
-						vertical_alignment = center
-						alwaysTransparent = yes
-					}
-				}
-
-				containerWindowType = {
-					name = "settings_container"
-					position = { x = 0 y = 200 }
-					size = { width = @button_large_width height = @button_large_height }
-
-					if_scaled_resolution = {
-						min_height = 900
-
-						position = { x = 0 y = 300 }
-					}
-
-					buttonType = {
-						id = "settings"
-						name = "button"
-						spriteType = "GFX_main_menu_button"
-						position = { x = -35 y = 0 }
-						size = { x = @button_large_width y = @button_large_height }
-						oversound = mouse_over
-						clicksound = confirm_click
-					}
-
-					instantTextBoxType = {
-						name = "text"
-						font = "jura"
-						text = "FRONT_SETTINGS"
-						position = { x = 0 y = 4 }
-						maxWidth = @button_large_width
-						maxHeight = @button_large_height
-						fixedSize = yes
-						format = left
-						vertical_alignment = center
-						alwaysTransparent = yes
-					}
-				}
-
-				containerWindowType = {
-					name = "credits_container"
-					position = { x = 0 y = 250 }
-					size = { width = @button_large_width height = @button_large_height }
-
-					if_scaled_resolution = {
-						min_height = 900
-
-						position = { x = 0 y = 375 }
-					}
-
-					buttonType = {
-						id = "credits"
-						name = "button"
-						spriteType = "GFX_main_menu_button"
-						position = { x = -35 y = 0 }
-						size = { x = @button_large_width y = @button_large_height }
-						oversound = mouse_over
-						clicksound = confirm_click
-					}
-
-					instantTextBoxType = {
-						name = "text"
-						font = "jura"
-						text = "FRONT_CREDITS"
-						position = { x = 0 y = 4 }
-						maxWidth = @button_large_width
-						maxHeight = @button_large_height
-						fixedSize = yes
-						format = left
-						vertical_alignment = center
-						alwaysTransparent = yes
-					}
-				}
-
-				containerWindowType = {
-					name = "quit_container"
-					position = { x = 0 y = 300 }
-					size = { width = @button_large_width height = @button_large_height }
-
-					if_scaled_resolution = {
-						min_height = 900
-
-						position = { x = 0 y = 450 }
-					}
-
-					buttonType = {
-						id = "quit"
-						name = "button"
-						spriteType = "GFX_main_menu_button"
-						position = { x = -35 y = 0 }
-						size = { x = @button_large_width y = @button_large_height }
-						oversound = mouse_over
-						clicksound = confirm_click
-					}
-
-					instantTextBoxType = {
-						name = "text"
-						font = "jura"
-						text = "FRONT_QUIT"
-						position = { x = 0 y = 4 }
-						maxWidth = @button_large_width
-						maxHeight = @button_large_height
-						fixedSize = yes
-						format = left
-						vertical_alignment = center
-						alwaysTransparent = yes
-					}
-				}
-			}
+            # BA: main menu button overrides disabled; engine/pi/pds logo icons below intentionally kept.
+#			containerWindowType = {
+#				name = "buttons"
+#				position = { x = 0 y = 0 }
+#				# The height here is the Y position of the last button on small resolutions + the height of the last button.
+#				size = { width = @button_large_width height = 350 }
+#				origo = CENTER_LEFT
+#				orientation = CENTER_LEFT
+#
+#				if_scaled_resolution = {
+#					min_height = 900
+#
+#					# The height here is the Y position of the last button on large resolutions + the height of the last button.
+#					size = { width = @button_large_width height = 500}
+#				}
+#
+#				@button_large_width = 340
+#				@button_large_height = 49 # Reduced by 1 pixel to avoid overlap
+#
+#				containerWindowType = {
+#					name = "start_game_container"
+#					position = { x = 0 y = 0 }
+#					size = { width = @button_large_width height = @button_large_height }
+#
+#					if_scaled_resolution = {
+#						min_height = 900
+#
+#						position = { x = 0 y = 0 }
+#					}
+#
+#					buttonType = {
+#						id = "start"
+#						name = "button"
+#						spriteType = "GFX_main_menu_button"
+#						position = { x = -35 y = 0 }
+#						size = { x = @button_large_width y = @button_large_height }
+#						oversound = mouse_over
+#						defaultSelection = yes
+#						clicksound = confirm_click
+#					}
+#
+#					instantTextBoxType = {
+#						name = "text"
+#						font = "jura"
+#						text = "FRONT_START"
+#						position = { x = 0 y = 4 }
+#						maxWidth = @button_large_width
+#						maxHeight = @button_large_height
+#						fixedSize = yes
+#						format = left
+#						vertical_alignment = center
+#						alwaysTransparent = yes
+#					}
+#				}
+#
+#				containerWindowType = {
+#					name = "load_game_container"
+#					position = { x = 0 y = 50 }
+#					size = { width = @button_large_width height = @button_large_height }
+#
+#					if_scaled_resolution = {
+#						min_height = 900
+#
+#						position = { x = 0 y = 75 }
+#					}
+#
+#					buttonType = {
+#						id = "load"
+#						name = "button"
+#						spriteType = "GFX_main_menu_button"
+#						position = { x = -35 y = 0 }
+#						size = { x = @button_large_width y = @button_large_height }
+#						oversound = mouse_over
+#						clicksound = confirm_click
+#					}
+#
+#					instantTextBoxType = {
+#						name = "text"
+#						font = "jura"
+#						text = "FRONT_LOAD"
+#						position = { x = 0 y = 4 }
+#						maxWidth = @button_large_width
+#						maxHeight = @button_large_height
+#						fixedSize = yes
+#						format = left
+#						vertical_alignment = center
+#						alwaysTransparent = yes
+#					}
+#				}
+#
+#				containerWindowType = {
+#					name = "multiplayer_container"
+#					position = { x = 0 y = 100 }
+#					size = { width = @button_large_width height = @button_large_height }
+#
+#					if_scaled_resolution = {
+#						min_height = 900
+#
+#						position = { x = 0 y = 150 }
+#					}
+#
+#					buttonType = {
+#						id = "multiplayer"
+#						name = "button"
+#						spriteType = "GFX_main_menu_button"
+#						position = { x = -35 y = 0 }
+#						size = { x = @button_large_width y = @button_large_height }
+#						oversound = mouse_over
+#						clicksound = confirm_click
+#					}
+#
+#					instantTextBoxType = {
+#						name = "text"
+#						font = "jura"
+#						text = "FRONT_MULTIPLAYER"
+#						position = { x = 0 y = 4 }
+#						maxWidth = @button_large_width
+#						maxHeight = @button_large_height
+#						fixedSize = yes
+#						format = left
+#						vertical_alignment = center
+#						alwaysTransparent = yes
+#					}
+#				}
+#
+#				containerWindowType = {
+#					name = "coop_container"
+#					position = { x = 0 y = 150 }
+#					size = { width = @button_large_width height = @button_large_height }
+#
+#					if_scaled_resolution = {
+#						min_height = 900
+#
+#						position = { x = 0 y = 225 }
+#					}
+#
+#					buttonType = {
+#						id = "coop"
+#						name = "button"
+#						spriteType = "GFX_main_menu_button"
+#						position = { x = -35 y = 0 }
+#						size = { x = @button_large_width y = @button_large_height }
+#						oversound = mouse_over
+#						clicksound = confirm_click
+#						pdx_tooltip = NAME_Beta
+#					}
+#
+#					instantTextBoxType = {
+#						name = "text"
+#						font = "jura"
+#						text = "FRONT_COOP"
+#						position = { x = 0 y = 4 }
+#						maxWidth = @button_large_width
+#						maxHeight = @button_large_height
+#						fixedSize = yes
+#						format = left
+#						vertical_alignment = center
+#						alwaysTransparent = yes
+#					}
+#				}
+#
+#				containerWindowType = {
+#					name = "settings_container"
+#					position = { x = 0 y = 200 }
+#					size = { width = @button_large_width height = @button_large_height }
+#
+#					if_scaled_resolution = {
+#						min_height = 900
+#
+#						position = { x = 0 y = 300 }
+#					}
+#
+#					buttonType = {
+#						id = "settings"
+#						name = "button"
+#						spriteType = "GFX_main_menu_button"
+#						position = { x = -35 y = 0 }
+#						size = { x = @button_large_width y = @button_large_height }
+#						oversound = mouse_over
+#						clicksound = confirm_click
+#					}
+#
+#					instantTextBoxType = {
+#						name = "text"
+#						font = "jura"
+#						text = "FRONT_SETTINGS"
+#						position = { x = 0 y = 4 }
+#						maxWidth = @button_large_width
+#						maxHeight = @button_large_height
+#						fixedSize = yes
+#						format = left
+#						vertical_alignment = center
+#						alwaysTransparent = yes
+#					}
+#				}
+#
+#				containerWindowType = {
+#					name = "credits_container"
+#					position = { x = 0 y = 250 }
+#					size = { width = @button_large_width height = @button_large_height }
+#
+#					if_scaled_resolution = {
+#						min_height = 900
+#
+#						position = { x = 0 y = 375 }
+#					}
+#
+#					buttonType = {
+#						id = "credits"
+#						name = "button"
+#						spriteType = "GFX_main_menu_button"
+#						position = { x = -35 y = 0 }
+#						size = { x = @button_large_width y = @button_large_height }
+#						oversound = mouse_over
+#						clicksound = confirm_click
+#					}
+#
+#					instantTextBoxType = {
+#						name = "text"
+#						font = "jura"
+#						text = "FRONT_CREDITS"
+#						position = { x = 0 y = 4 }
+#						maxWidth = @button_large_width
+#						maxHeight = @button_large_height
+#						fixedSize = yes
+#						format = left
+#						vertical_alignment = center
+#						alwaysTransparent = yes
+#					}
+#				}
+#
+#				containerWindowType = {
+#					name = "quit_container"
+#					position = { x = 0 y = 300 }
+#					size = { width = @button_large_width height = @button_large_height }
+#
+#					if_scaled_resolution = {
+#						min_height = 900
+#
+#						position = { x = 0 y = 450 }
+#					}
+#
+#					buttonType = {
+#						id = "quit"
+#						name = "button"
+#						spriteType = "GFX_main_menu_button"
+#						position = { x = -35 y = 0 }
+#						size = { x = @button_large_width y = @button_large_height }
+#						oversound = mouse_over
+#						clicksound = confirm_click
+#					}
+#
+#					instantTextBoxType = {
+#						name = "text"
+#						font = "jura"
+#						text = "FRONT_QUIT"
+#						position = { x = 0 y = 4 }
+#						maxWidth = @button_large_width
+#						maxHeight = @button_large_height
+#						fixedSize = yes
+#						format = left
+#						vertical_alignment = center
+#						alwaysTransparent = yes
+#					}
+#				}
+#			}
+            # BA: end disabled main menu button overrides
 
 			iconType = {
 				name = "engine_logo"
