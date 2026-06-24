@@ -54,6 +54,7 @@ BA_iterate_rename_flag = {
 			BA_check_rename_flag = yes
 			#按命名标志命名
 			BA_rename_leader = yes
+			BA_change_skin_trait_if_unlocked = yes
 		}
 	}
 	while = {
@@ -71,6 +72,7 @@ BA_iterate_rename_flag = {
 			BA_check_rename_flag = yes
 			#按命名标志命名
 			BA_rename_leader = yes
+			BA_change_skin_trait_if_unlocked = yes
 		}
 	}
 	while = {
@@ -104,11 +106,12 @@ BA_event_leader_replace = {
 			}
 			remove_leader_flag = $Leader_flag$
 			remove_leader_flag = BA_renamed
-			remove_leader_flag = BA_has_sp_trait_1
+			remove_leader_flag = BA_has_sp_trait
 			BA_remove_club_trait = yes
 			BA_remove_skin_trait = yes
 			BA_check_rename_flag = yes
 			BA_rename_leader = yes
+			BA_change_skin_trait_if_unlocked = yes
 		}
 		every_pool_leader = {
 			limit = {
@@ -116,11 +119,12 @@ BA_event_leader_replace = {
 			}
 			remove_leader_flag = $Leader_flag$
 			remove_leader_flag = BA_renamed
-			remove_leader_flag = BA_has_sp_trait_1
+			remove_leader_flag = BA_has_sp_trait
 			BA_remove_club_trait = yes
 			BA_remove_skin_trait = yes
 			BA_check_rename_flag = yes
 			BA_rename_leader = yes
+			BA_change_skin_trait_if_unlocked = yes
 		}
 	}
 }
@@ -141,13 +145,19 @@ BA_rename_leader = {
 		}
 		BA_change_club_trait = yes
 	}
+	set_leader_flag = BA_renamed
+}
+
+#3级后刷新个人/换装特质 leader
+BA_change_skin_trait_if_unlocked = {
+	optimize_memory
 	if = {
 		limit = {
 			has_global_flag = BA_leader_rename_add_skin_trait
+			BA_rename_special_unlocked_check = yes
 		}
 		BA_change_skin_trait = yes
 	}
-	set_leader_flag = BA_renamed
 }
 
 #将领袖按命名标志重命名 001~159
@@ -281,9 +291,9 @@ BA_set_name = {
 			set_name = BA_name_leader_Juri
 		}
 		#鬼怒川霞
-		leader_BA_Iroha = {
-			change_leader_portrait = BA_leader_Iroha
-			set_name = BA_name_leader_Iroha
+		leader_BA_Kasumi = {
+			change_leader_portrait = BA_leader_Kasumi
+			set_name = BA_name_leader_Kasumi
 		}
 		#下仓惠
 		leader_BA_Megu = {
@@ -1071,6 +1081,7 @@ BA_set_rename_fix_flag = {
 			}
 		}
 		remove_leader_flag = BA_rename_target
+		remove_leader_flag = BA_rename_fix_target
 	}
 }
 
@@ -1090,18 +1101,13 @@ BA_iterate_rename_fix_flag = {
 			remove_leader_flag = BA_rename_fix_target
 			#按命名标志命名
 			BA_rename_leader = yes
+			BA_change_skin_trait_if_unlocked = yes
 			#移除特质并重新添加
 			if = {
 				limit = {
 					has_global_flag = BA_leader_rename_add_club_trait
 				}
 				BA_change_club_trait = yes
-			}
-			if = {
-				limit = {
-					has_global_flag = BA_leader_rename_add_skin_trait
-				}
-				BA_change_skin_trait = yes
 			}
 		}
 	}
@@ -1118,13 +1124,13 @@ BA_iterate_rename_fix_flag = {
 			remove_leader_flag = BA_rename_fix_target
 			#按命名标志命名
 			BA_rename_leader = yes
+			BA_change_skin_trait_if_unlocked = yes
 			#移除特质并重新添加
 			if = {
 				limit = {
-					has_global_flag = BA_leader_rename_add_skin_trait
+					has_global_flag = BA_leader_rename_add_club_trait
 				}
 				BA_change_club_trait = yes
-				BA_change_skin_trait = yes
 			}
 		}
 	}
@@ -1150,7 +1156,7 @@ BA_iterate_rename_fix_flag = {
 BA_remove_sp_trait = {
 	optimize_memory
 	# 标识
-	remove_leader_flag = BA_has_sp_trait_1
+	remove_leader_flag = BA_has_sp_trait
 	# 社团特质
 	remove_trait = leader_club_default
 	remove_trait = leader_club_Abydos_01
@@ -1456,6 +1462,7 @@ BA_remove_club_trait = {
 	remove_trait = leader_club_Kivotos_03
 	remove_trait = leader_club_Kivotos_04
 	remove_trait = leader_club_Kivotos_05
+	remove_trait = leader_club_Kivotos_06
 }
 
 #移除个人特质 leader
@@ -1646,6 +1653,161 @@ BA_remove_skin_trait = {
 	remove_trait = leader_special_Kaya
 	remove_trait = leader_special_Arona
 	remove_trait = leader_special_Plana
+	remove_trait = leader_special_Airi_BD
+	remove_trait = leader_special_Airi_HH
+	remove_trait = leader_special_Akane_DL
+	remove_trait = leader_special_Akari_KMN
+	remove_trait = leader_special_Akari_SP
+	remove_trait = leader_special_Ako_DR
+	remove_trait = leader_special_Ako_NVG
+	remove_trait = leader_special_Ako_SP
+	remove_trait = leader_special_Aris_CD
+	remove_trait = leader_special_Aris_MD
+	remove_trait = leader_special_Aris_OLD
+	remove_trait = leader_special_Aris_QB
+	remove_trait = leader_special_Aru_DR
+	remove_trait = leader_special_Atsuko
+	remove_trait = leader_special_Atsuko_SS
+	remove_trait = leader_special_Ayane_SP
+	remove_trait = leader_special_Ayumu_NVG
+	remove_trait = leader_special_Azusa_SP
+	remove_trait = leader_special_Cherino_QP
+	remove_trait = leader_special_Chihiro_CMP
+	remove_trait = leader_special_Chihiro_PJ
+	remove_trait = leader_special_Chise_SP
+	remove_trait = leader_special_default
+	remove_trait = leader_special_Eimi_QB
+	remove_trait = leader_special_Fubuki_IDL
+	remove_trait = leader_special_Fubuki_SS
+	remove_trait = leader_special_Fuuka_DL
+	remove_trait = leader_special_Hare_CMP
+	remove_trait = leader_special_Hare_PJ
+	remove_trait = leader_special_Haruka_AGT
+	remove_trait = leader_special_Haruka_DR
+	remove_trait = leader_special_Haruna_KMN
+	remove_trait = leader_special_Haruna_SPW
+	remove_trait = leader_special_Hasumi_SPW
+	remove_trait = leader_special_Hasumi_SS
+	remove_trait = leader_special_Hifumi_SP
+	remove_trait = leader_special_Himari_NVG
+	remove_trait = leader_special_Himari_QB
+	remove_trait = leader_special_Hina_DR
+	remove_trait = leader_special_Hiyori
+	remove_trait = leader_special_Hiyori_SS
+	remove_trait = leader_special_Hoshino_JK1
+	remove_trait = leader_special_Hoshino_JK2
+	remove_trait = leader_special_Hoshino_QB
+	remove_trait = leader_special_Ibuki_DR
+	remove_trait = leader_special_Ichika_DR
+	remove_trait = leader_special_Ichika_SS
+	remove_trait = leader_special_Izumi_KMN
+	remove_trait = leader_special_Izumi_SP
+	remove_trait = leader_special_Junko_KMN
+	remove_trait = leader_special_Junko_SP
+	remove_trait = leader_special_Juri_WK
+	remove_trait = leader_special_Kaede_GD
+	remove_trait = leader_special_Kanna_SS
+	remove_trait = leader_special_Kasumi
+	remove_trait = leader_special_Kasumi_SS
+	remove_trait = leader_special_Kayoko_DR
+	remove_trait = leader_special_Kayoko_NVG
+	remove_trait = leader_special_Kazusa_BD
+	remove_trait = leader_special_Kazusa_HH
+	remove_trait = leader_special_Kazusa_OLD
+	remove_trait = leader_special_Kei
+	remove_trait = leader_special_Kikyou_SS
+	remove_trait = leader_special_Kirino_IDL
+	remove_trait = leader_special_Kirino_SS
+	remove_trait = leader_special_Kisaki_YN
+	remove_trait = leader_special_Koharu_SP
+	remove_trait = leader_special_Koharu_SS
+	remove_trait = leader_special_Kotama_CMP
+	remove_trait = leader_special_Kotama_PJ
+	remove_trait = leader_special_Koyuki_BN
+	remove_trait = leader_special_Koyuki_PJ
+	remove_trait = leader_special_Maki_CMP
+	remove_trait = leader_special_Maki_PJ
+	remove_trait = leader_special_Maki_SP
+	remove_trait = leader_special_Makoto_DR
+	remove_trait = leader_special_Mari_IDL
+	remove_trait = leader_special_Marina_QP
+	remove_trait = leader_special_Megu_SS
+	remove_trait = leader_special_Meru_HS
+	remove_trait = leader_special_Michiru_DR
+	remove_trait = leader_special_Midori_CD
+	remove_trait = leader_special_Midori_MD
+	remove_trait = leader_special_Midori_QB
+	remove_trait = leader_special_Mika_SP
+	remove_trait = leader_special_Mika_SS
+	remove_trait = leader_special_Mine_IDL
+	remove_trait = leader_special_Minori_OLD
+	remove_trait = leader_special_Misaki
+	remove_trait = leader_special_Misaki_SS
+	remove_trait = leader_special_Miyako_SP
+	remove_trait = leader_special_Miyako_SS
+	remove_trait = leader_special_Miyu_SP
+	remove_trait = leader_special_Miyu_SS
+	remove_trait = leader_special_Moe_SP
+	remove_trait = leader_special_Moe_SS
+	remove_trait = leader_special_Momoi_CD
+	remove_trait = leader_special_Momoi_MD
+	remove_trait = leader_special_Momoi_QB
+	remove_trait = leader_special_Momoka_NVG
+	remove_trait = leader_special_Mutsuki_AGT
+	remove_trait = leader_special_Mutsuki_DR
+	remove_trait = leader_special_Nagisa_SS
+	remove_trait = leader_special_Nagusa_SS
+	remove_trait = leader_special_Natsu_BD
+	remove_trait = leader_special_Natsu_HH
+	remove_trait = leader_special_Natsu_SP
+	remove_trait = leader_special_Neru_UNF
+	remove_trait = leader_special_Noa_PJ
+	remove_trait = leader_special_Noa_SP
+	remove_trait = leader_special_Nonomi_JK1
+	remove_trait = leader_special_Nonomi_SP
+	remove_trait = leader_special_Pina_GD
+	remove_trait = leader_special_Reisa_MG
+	remove_trait = leader_special_Renge_SS
+	remove_trait = leader_special_Rin_NVG
+	remove_trait = leader_special_Rio_CD
+	remove_trait = leader_special_Rio_QB
+	remove_trait = leader_special_Rumi_YN
+	remove_trait = leader_special_Saki_SP
+	remove_trait = leader_special_Saki_SS
+	remove_trait = leader_special_Sakurako_DR
+	remove_trait = leader_special_Sakurako_IDL
+	remove_trait = leader_special_Saori
+	remove_trait = leader_special_Saori_DR
+	remove_trait = leader_special_Saori_SS
+	remove_trait = leader_special_Seia_SS
+	remove_trait = leader_special_Sena_DL
+	remove_trait = leader_special_Serika_SP
+	remove_trait = leader_special_Serika_SS
+	remove_trait = leader_special_Shigure_HS
+	remove_trait = leader_special_Shimiko_MG
+	remove_trait = leader_special_Shiroko_COL
+	remove_trait = leader_special_Shiroko_SP
+	remove_trait = leader_special_Shiroko_SS
+	remove_trait = leader_special_Sumire_WK
+	remove_trait = leader_special_Suzumi_MG
+	remove_trait = leader_special_Toki_BN
+	remove_trait = leader_special_Toki_DL
+	remove_trait = leader_special_Toki_QB
+	remove_trait = leader_special_Tomoe_QP
+	remove_trait = leader_special_Tsubaki_GD
+	remove_trait = leader_special_Tsukuyo_DR
+	remove_trait = leader_special_Tsurugi_DR
+	remove_trait = leader_special_Tsurugi_SP
+	remove_trait = leader_special_Utaha_IDL
+	remove_trait = leader_special_Yoshimi_BD
+	remove_trait = leader_special_Yoshimi_HH
+	remove_trait = leader_special_Yukari_JC
+	remove_trait = leader_special_Yukari_MK
+	remove_trait = leader_special_Yukari_SS
+	remove_trait = leader_special_Yuuka_PJ
+	remove_trait = leader_special_Yuzu_CD
+	remove_trait = leader_special_Yuzu_MD
+	remove_trait = leader_special_Yuzu_QB
 }
 
 #检测领袖标志，为领袖更换社团特质 leader
@@ -5327,6 +5489,7 @@ BA_change_skin_trait = {
 			}
 		}
 	}
+	set_leader_flag = BA_has_sp_trait
 }
 
 #去除所有换装标志 leader

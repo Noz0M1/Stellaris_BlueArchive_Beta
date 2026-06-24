@@ -124,6 +124,7 @@ on_added_to_leader_pool = {
 # This = Leader
 on_leader_hired = {
 	events = {
+		BA_rename.1005			#初始3级以上领袖添加个人特质
 	}
 }
 

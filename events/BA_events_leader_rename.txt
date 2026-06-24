@@ -112,28 +112,22 @@ country_event = {
 			BA_check_rename_flag = yes
 			#按命名标志命名
 			BA_rename_leader = yes
+			BA_change_skin_trait_if_unlocked = yes
 		}
 	}
 }
 
 #招募时处理领袖，尤其是初始3级以上的领袖
-country_event = {
+leader_event = {
 	id = BA_rename.1005
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
 		has_global_flag = BA_leader_rename_add_skin_trait
-		from = {
-			species = {
-				BA_has_halo_organic = yes
-			}
-			BA_rename_special_check_1 = yes
-		}
+		BA_rename_special_check = yes
 	}
 	immediate = {
-		from = {
-			BA_change_skin_trait = yes
-		}
+		BA_change_skin_trait = yes
 	}
 }
 
@@ -163,28 +157,10 @@ country_event = {
 		from = {
 			if = {
 				limit = {
-					BA_rename_special_check_1 = yes
+					BA_rename_special_check = yes
 				}
 				BA_change_skin_trait = yes
 			}
 		}
-	}
-}
-
-leader_event = {
-	id = BA_rename.1102
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_total_skill >= 3
-		species = {
-			BA_has_halo_organic = yes
-		}
-		NOT = {
-			has_leader_flag = BA_SP_trait_Lv1
-		}
-	}
-	immediate = {
-		change_leader_class = scientist
 	}
 }

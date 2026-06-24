@@ -22,7 +22,7 @@ BA_leader_has_same = {
 	}
 }
 
-BA_rename_special_check_1 = {
+BA_rename_special_unlocked_check = {
 	has_total_skill >= 3
 	species = {
 		BA_has_halo_organic = yes
@@ -32,8 +32,12 @@ BA_rename_special_check_1 = {
 		leader_class = scientist
 		leader_class = official
 	}
+}
+
+BA_rename_special_check = {
+	BA_rename_special_unlocked_check = yes
 	NOT = {
-		has_leader_flag = BA_has_sp_trait_1
+		has_leader_flag = BA_has_sp_trait
 	}
 }
 

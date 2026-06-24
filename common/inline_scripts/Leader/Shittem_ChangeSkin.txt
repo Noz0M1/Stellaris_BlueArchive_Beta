@@ -50,12 +50,6 @@ option = {
 			flag = new_skin
 			days = 30
 		}
-		if = {
-			limit = {
-				always = yes
-				#has_total_skill > 2
-			}
-			BA_change_skin_trait = yes
-		}
+		BA_change_skin_trait_if_unlocked = yes
 	}
 }

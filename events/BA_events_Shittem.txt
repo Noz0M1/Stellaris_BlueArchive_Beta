@@ -1702,12 +1702,7 @@ leader_event = {
 		custom_tooltip = BA_Shittem.1311.ORG.tip
 		hidden_effect = {
 			BA_remove_skin = yes
-			if = {
-				limit = {
-					has_total_skill > 2
-				}
-				BA_change_skin_trait = yes
-			}
+			BA_change_skin_trait_if_unlocked = yes
 		}
 	}
 	inline_script = {
