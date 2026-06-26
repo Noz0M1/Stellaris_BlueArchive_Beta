@@ -1,12 +1,12 @@
 namespace = BA_rename
 # 1.开局全局处理：赋予身份、名称立绘、社团特质、个人特质
-# 2.手动全局处理：名称立绘、社团特质、个人特质
-# 3.周期全局处理：名称立绘、领袖检查
-# 4.入池单个处理：赋予身份、名称立绘、社团特质、个人特质
-# 5.招募单个处理：个人特质、领袖检查
-# 7.处理特使
+# 2.手动全局处理：赋予身份、名称立绘、社团特质、个人特质
+# 3.周期自动全局处理：名称立绘、特质检查
+# 4.入池处理：赋予身份、名称立绘、社团特质、个人特质
+# 5.招募时：个人特质、特质检查
+# 6.处理特使
 ################
-# 0. 开关
+# 1. 开局全局处理
 ################
 country_event = {
 	id = BA_rename.1000
@@ -20,6 +20,7 @@ country_event = {
 	}
 }
 
+#开关
 country_event = {
 	id = BA_rename.1001
 	is_triggered_only = yes
@@ -55,130 +56,58 @@ country_event = {
 		name = BA_rename.1001.off
 	}
 	after = {
-		# 执行开局全局处理
 		hidden_effect = {
-			country_event = {
-				id = BA_rename.1010
+			if = {
+				limit = {
+					has_global_flag = BA_leader_rename_activated
+				}
+				every_country = {
+					limit = {
+						is_country_type = default
+						has_authority = auth_kivotos
+					}
+					BA_set_rename_flag = yes
+					BA_iterate_rename_flag = yes
+				}
 			}
 		}
 	}
 }
 
-################
-# 1. 开局全局处理
-################
+#周期性处理触发器（名称立绘 + 特质检查）
 country_event = {
-	id = BA_rename.1010
+	id = BA_rename.1003
 	is_triggered_only = yes
+	hide_window = yes
 	trigger = {
-		has_global_flag = BA_leader_rename_activated
-	}
-	immediate = {
-		# 赋予身份（全国）
-        every_owned_leader = {
-            BA_rename_base_identity = yes
-        }
-        every_pool_leader = {
-            BA_rename_base_identity = yes
-        }
-		# 名称立绘（全国）
-		# 社团特质（全国）
-		# 个人特质（全国）
-	}
-}
-
-################
-# 2. 手动全局处理
-################
-country_event = {
-	id = BA_rename.1020
-	is_triggered_only = yes
-	trigger = {
-		has_global_flag = BA_leader_rename_activated
-	}
-	immediate = {
-		# 名称立绘（全国）
-		# 社团特质（全国）
-		# 个人特质（全国）
-	}
-}
-
-################
-# 3. 周期全局处理
-################
-# 触发器
-country_event = {
-	id = BA_rename.1030
-	is_triggered_only = yes
-	trigger = {
+		has_authority = auth_kivotos
 		has_global_flag = BA_leader_rename_activated
 	}
 	immediate = {
 		country_event = {
-			id = BA_rename.1031
+			id = BA_rename.1004
 			days = 15
 		}
 	}
 }
 
-# 效果器
 country_event = {
-	id = BA_rename.1031
+	id = BA_rename.1004
 	is_triggered_only = yes
+	hide_window = yes
 	trigger = {
+		has_authority = auth_kivotos
 		has_global_flag = BA_leader_rename_activated
 	}
 	immediate = {
-		# 名称立绘（全国）
-		# 特质检查（全国）
+		BA_set_rename_flag = yes
+		BA_iterate_rename_flag_auto = yes
 	}
 }
 
-################
-# 4. 入池单个处理
-################
-# 触发器
-country_event = {
-	id = BA_rename.1040
-	is_triggered_only = yes
-	trigger = {
-		has_global_flag = BA_leader_rename_activated
-		from = {
-			BA_rename_identity_target_check = yes
-		}
-	}
-	immediate = {
-		# 赋予身份
-		BA_rename_base_identity = yes
-		# 名称立绘
-		# 社团特质
-		# 个人特质
-	}
-}
-
-# 效果器（触发器 or 手动处理）
-country_event = {
-	id = BA_rename.1041
-	is_triggered_only = yes
-	trigger = {
-		has_global_flag = BA_leader_rename_activated
-	}
-	immediate = {
-		# 赋予身份
-		BA_rename_base_identity = yes
-		# 名称立绘
-		# 社团特质
-		# 个人特质
-	}
-}
-
-################
-# 5. 招募单个处理
-################
-# 触发器（招募）
 #处理新生成入池的领袖
 country_event = {
-	id = BA_rename.2010
+	id = BA_rename.1010
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
@@ -196,7 +125,7 @@ country_event = {
 
 #招募时处理领袖，尤其是初始3级以上的领袖
 leader_event = {
-	id = BA_rename.2011
+	id = BA_rename.1011
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
@@ -224,7 +153,7 @@ country_event = {
 
 #领袖3级添加特质
 country_event = {
-	id = BA_rename.2101
+	id = BA_rename.1101
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
