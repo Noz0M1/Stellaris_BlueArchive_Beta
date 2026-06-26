@@ -23,11 +23,10 @@ BA_districts_ringworld_capital = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		job_BA_Kivotos_staff_add = 400
 		job_BA_Kivotos_trader_add = 400
 		job_BA_club_members_add = 400
@@ -158,11 +157,10 @@ BA_districts_ringworld_satellite = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		job_BA_Kivotos_staff_add = 400
 		job_BA_Kivotos_trader_add = 400
 		job_BA_club_members_add = 400
@@ -314,11 +312,10 @@ BA_districts_ringworld_satellite_fe = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				is_BA_fallen_empire = yes
-			}
-		}
+            owner? = {
+                is_BA_fallen_empire = yes
+            }
+        }
 		modifier = {
 			#1自警团
 			job_BA_fe_defender_add = 100

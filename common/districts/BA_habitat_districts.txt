@@ -18,7 +18,7 @@ BA_district_auto_city = {
 		uses_district_set = BA_auto_habitat
 		NAND = {
 			is_capital = yes
-			owner = {
+			owner? = {
 				has_menace_perk = menp_behemoth_mind_meld
 			}
 		}
@@ -42,8 +42,7 @@ BA_district_auto_city = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
+			owner? = {
 				has_authority = auth_kivotos
 			}
 		}
@@ -77,8 +76,7 @@ BA_district_auto_slot_01 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
+			owner? = {
 				has_authority = auth_kivotos
 			}
 		}
@@ -111,8 +109,7 @@ BA_district_auto_slot_02 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
+			owner? = {
 				has_authority = auth_kivotos
 			}
 		}
@@ -145,8 +142,7 @@ BA_district_auto_slot_03 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
+			owner? = {
 				has_authority = auth_kivotos
 			}
 		}
@@ -268,8 +264,7 @@ BA_districts_auto_turbine = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
+			owner? = {
 				has_authority = auth_kivotos
 			}
 		}
@@ -309,8 +304,7 @@ BA_districts_auto_drill = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
+			owner? = {
 				has_authority = auth_kivotos
 			}
 		}

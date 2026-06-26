@@ -1,21 +1,19 @@
 triggered_planet_modifier = {
 	potential = {
-		exists = owner
-		owner = {
-			NOT = {
-				has_technology = tech_BA_SI_Valkyrie_G02
-			}
-		}
-	}
+        owner? = {
+            NOT = {
+                has_technology = tech_BA_SI_Valkyrie_G02
+            }
+        }
+    }
 	job_BA_Vigilant_crew_add = $value$
 }
 
 triggered_planet_modifier = {
 	potential = {
-		exists = owner
-		owner = {
-			has_technology = tech_BA_SI_Valkyrie_G02
-		}
-	}
+        owner? = {
+            has_technology = tech_BA_SI_Valkyrie_G02
+        }
+    }
 	job_BA_Valkyrie_police_add = $value$
 }

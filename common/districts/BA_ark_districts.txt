@@ -42,11 +42,10 @@ BA_ark_district_city = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		job_BA_student_on_duty_add = 700
 	}
 }
@@ -77,11 +76,10 @@ BA_ark_district_slot_01 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		job_BA_student_on_duty_add = 300
 	}
 }
@@ -111,11 +109,10 @@ BA_ark_district_slot_02 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		job_BA_student_on_duty_add = 300
 	}
 }
@@ -145,11 +142,10 @@ BA_ark_district_slot_03 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		job_BA_student_on_duty_add = 300
 	}
 }

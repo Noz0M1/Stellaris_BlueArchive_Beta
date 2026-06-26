@@ -3026,89 +3026,90 @@ country_event = {
 			save_global_event_target_as = BA_Unnamed_settling_arkship_@root
 		}
 		# 结束游牧时清理原版“整备方舟舰”与 BA“方舟自动化研究”的游牧期遗留效果。
-		capital_scope? = {
-			remove_modifier = checklist_unaligned_shields
-			remove_modifier = checklist_sensor_calibration
-			remove_modifier = checklist_corrosive_coolant
-		}
-		remove_modifier = checklist_replicating_signal
-		remove_modifier = modifier_BA_arkship_automation_1
-		remove_modifier = modifier_BA_arkship_automation_2
-		remove_country_flag = checklist_shield_realignment
-		remove_country_flag = checklist_sensors_calibration
-		remove_country_flag = checklist_flush_coolant
-		remove_country_flag = checklist_decipher_signal
-		remove_country_flag = checklist_cluttered_hangars
-		remove_country_flag = checklist_harvest_resources
-		remove_country_flag = BA_ark_automation_chain_started
-		remove_country_flag = BA_ark_automation_research_1_active
-		remove_country_flag = BA_ark_automation_research_2_active
-		remove_country_flag = BA_ark_automation_research_1_finished
-		remove_country_flag = BA_ark_automation_research_2_finished
-		if = {
-			limit = {
-				has_event_chain = nomad_checklist_chain
-			}
-			end_event_chain = nomad_checklist_chain
-		}
-		if = {
-			limit = {
-				has_event_chain = BA_ark_automation_chain
-			}
-			end_event_chain = BA_ark_automation_chain
-		}
-		event_target:BA_Unnamed_starting_target_@root = {
-			solar_system = {
-				save_global_event_target_as = BA_Unnamed_settled_system_@root
-			}
-			destroy_colony = yes
-		}
-		# 原版定居效果会新建恒星基地；若玩家已在摇篮建立哨站，先由定居程序接管并替换。
-		event_target:BA_Unnamed_settled_system_@root = {
-			starbase? = {
-				fleet = {
-					destroy_fleet = this
-				}
-			}
-		}
-		arkship_settle_planet_effect = {
-			SETTLING_COUNTRY = root
-			SETTLING_ARKSHIP = event_target:BA_Unnamed_settling_arkship_@root
-			SETTLED_PLANET = event_target:BA_Unnamed_starting_target_@root
-			SETTLED_SYSTEM = event_target:BA_Unnamed_settled_system_@root
-		}
-		# 原版方舟定居会在星球轨道上生成 ambient_arkship_destroyed 残骸；此起源选择回归家园时不保留该视觉残骸。
-		event_target:BA_Unnamed_settled_system_@root = {
-			every_system_ambient_object = {
-				limit = {
-					is_ambient_object_type = ambient_arkship_destroyed
-				}
-				destroy_ambient_object = this
-			}
-		}
-		convert_waystations_into_outposts_effect = {
-			SETTLING_COUNTRY = root
-		}
-		convert_logistic_ships_into_construction_ships_effects = yes
-		event_target:BA_Unnamed_starting_target_@root = {
-			clear_blockers = yes
-			remove_modifier = checklist_unaligned_shields
-			remove_modifier = checklist_sensor_calibration
-			remove_modifier = checklist_corrosive_coolant
-			add_deposit = d_BA_ark_continent
-			set_planet_flag = BA_Unnamed_home_reclaimed
-			set_capital = yes
-			check_planet_employment = yes
-			validate_planet_buildings_and_districts = yes
-		}
-		event_target:BA_Unnamed_enemy_country_@root? = {
-			destroy_country = yes
-		}
-		set_country_flag = BA_origin_Unnamed_starting_settled
-		country_event = {
-			id = BA_origin.2102
-			days = 1
-		}
+        hidden_effect = {
+            capital_scope? = {
+                remove_modifier = checklist_unaligned_shields
+                remove_modifier = checklist_sensor_calibration
+                remove_modifier = checklist_corrosive_coolant
+            }
+            remove_modifier = checklist_replicating_signal
+            remove_modifier = modifier_BA_arkship_automation_1
+            remove_modifier = modifier_BA_arkship_automation_2
+            remove_country_flag = checklist_shield_realignment
+            remove_country_flag = checklist_sensors_calibration
+            remove_country_flag = checklist_flush_coolant
+            remove_country_flag = checklist_decipher_signal
+            remove_country_flag = checklist_cluttered_hangars
+            remove_country_flag = checklist_harvest_resources
+            remove_country_flag = BA_ark_automation_chain_started
+            remove_country_flag = BA_ark_automation_research_1_active
+            remove_country_flag = BA_ark_automation_research_2_active
+            remove_country_flag = BA_ark_automation_research_1_finished
+            remove_country_flag = BA_ark_automation_research_2_finished
+            if = {
+                limit = {
+                    has_event_chain = nomad_checklist_chain
+                }
+                end_event_chain = nomad_checklist_chain
+            }
+            if = {
+                limit = {
+                    has_event_chain = BA_ark_automation_chain
+                }
+                end_event_chain = BA_ark_automation_chain
+            }
+            event_target:BA_Unnamed_starting_target_@root = {
+                solar_system = {
+                    save_global_event_target_as = BA_Unnamed_settled_system_@root
+                }
+                destroy_colony = yes
+            }
+            # 原版定居效果会新建恒星基地；若玩家已在摇篮建立哨站，先由定居程序接管并替换。
+            event_target:BA_Unnamed_settled_system_@root = {
+                starbase? = {
+                    fleet = {
+                        destroy_fleet = this
+                    }
+                }
+            }
+            arkship_settle_planet_effect = {
+                SETTLING_COUNTRY = root
+                SETTLING_ARKSHIP = event_target:BA_Unnamed_settling_arkship_@root
+                SETTLED_PLANET = event_target:BA_Unnamed_starting_target_@root
+                SETTLED_SYSTEM = event_target:BA_Unnamed_settled_system_@root
+            }
+            # 原版方舟定居会在星球轨道上生成 ambient_arkship_destroyed 残骸；此起源选择回归家园时不保留该视觉残骸。
+            event_target:BA_Unnamed_settled_system_@root = {
+                every_system_ambient_object = {
+                    limit = {
+                        is_ambient_object_type = ambient_arkship_destroyed
+                    }
+                    destroy_ambient_object = this
+                }
+            }
+            convert_waystations_into_outposts_effect = {
+                SETTLING_COUNTRY = root
+            }
+            convert_logistic_ships_into_construction_ships_effects = yes
+            event_target:BA_Unnamed_starting_target_@root = {
+                clear_blockers = yes
+                remove_modifier = checklist_unaligned_shields
+                remove_modifier = checklist_sensor_calibration
+                remove_modifier = checklist_corrosive_coolant
+                set_planet_flag = BA_Unnamed_home_reclaimed
+                set_capital = yes
+                check_planet_employment = yes
+                validate_planet_buildings_and_districts = yes
+            }
+            event_target:BA_Unnamed_enemy_country_@root? = {
+                destroy_country = yes
+            }
+            set_country_flag = BA_origin_Unnamed_starting_settled
+            country_event = {
+                id = BA_origin.2102
+                days = 1
+            }
+        }
 	}
 }
 
@@ -3144,10 +3145,13 @@ country_event = {
 	}
 	option = {
 		name = BA_origin.2102.next
+        capital_scope = {
+            add_deposit = d_BA_ark_continent
+        }
 	}
 }
 
-# 方舟自动化研究任务链初始化（保留原 BA_origin.2120）。
+# 方舟自动化研究任务链初始化。
 country_event = {
 	id = BA_origin.2120
 	is_triggered_only = yes

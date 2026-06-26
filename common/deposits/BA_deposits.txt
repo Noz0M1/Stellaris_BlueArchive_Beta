@@ -337,104 +337,32 @@ d_fade_Sanctum_zone = {
 
 #基础增强区划
 d_BA_ark_continent = {
-	icon = d_mountain_range
+	icon = d_power_station
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	planet_modifier = {
+        planet_housing_add = 3000
 		planet_max_districts_add = 8
-	}
-	drop_weight = {
-		weight = 0
-	}
-}
-
-d_Atrahasis_reactor = {
-	icon = "unused/d_space_walk"
-	is_for_colonizable = yes
-	category = deposit_cat_rare
+        planet_defense_armies_add = 10
+    }
+    triggered_planet_modifier = {
+        potential = {
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
+        job_BA_Vigilant_crew_add = 100
+    }
 	resources = {
 		category = BA_planet_deposit
 		produces = {
 			energy = 80
-		}
-	}
-	drop_weight = {
-		weight = 0
-	}
-}
-
-d_Atrahasis_harvester = {
-	icon = "unused/d_space_walk"
-	is_for_colonizable = yes
-	category = deposit_cat_rare
-	resources = {
-		category = BA_planet_deposit
-		produces = {
 			minerals = 36
-		}
-	}
-	drop_weight = {
-		weight = 0
-	}
-}
-
-d_Atrahasis_agriculture = {
-	icon = "unused/d_space_walk"
-	is_for_colonizable = yes
-	category = deposit_cat_rare
-	resources = {
-		category = BA_planet_deposit
-		produces = {
 			food = 35
-		}
-	}
-	drop_weight = {
-		weight = 0
-	}
-}
-
-d_Atrahasis_factory = {
-	icon = "unused/d_space_walk"
-	is_for_colonizable = yes
-	category = deposit_cat_rare
-	resources = {
-		category = BA_planet_deposit
-		produces = {
 			alloys = 12
-		}
-	}
-	planet_modifier = {
-		planet_defense_armies_add = 10
-	}
-	drop_weight = {
-		weight = 0
-	}
-}
-
-d_Atrahasis_matrix = {
-	icon = "unused/d_space_walk"
-	is_for_colonizable = yes
-	category = deposit_cat_rare
-	resources = {
-		category = BA_planet_deposit
-		produces = {
 			physics_research = 10
 			society_research = 10
 			engineering_research = 10
-		}
-	}
-	drop_weight = {
-		weight = 0
-	}
-}
-
-d_Atrahasis_gravity_controllor = {
-	icon = "unused/d_space_walk"
-	is_for_colonizable = yes
-	category = deposit_cat_rare
-	resources = {
-		category = BA_planet_deposit
-		produces = {
 			sr_pyroxenes = 4
 		}
 	}

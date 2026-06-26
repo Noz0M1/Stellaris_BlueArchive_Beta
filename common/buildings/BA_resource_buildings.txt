@@ -9,15 +9,14 @@ building_BA_basis_schola_1 = {
 		urban
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 	}
 	allow = {
 	}
 	destroy_trigger = {
-		exists = owner
-		owner = {
+		owner? = {
 			NOT = {
 				has_authority = auth_kivotos
 			}
@@ -41,7 +40,7 @@ building_BA_basis_schola_1 = {
 	}
 	triggered_desc = {
 		trigger = {
-			owner = {
+			owner? = {
 				NOT = {
 					has_technology = tech_BA_SI_Valkyrie_G02
 				}
@@ -51,7 +50,7 @@ building_BA_basis_schola_1 = {
 	}
 	triggered_desc = {
 		trigger = {
-			owner = {
+			owner? = {
 				has_technology = tech_BA_SI_Valkyrie_G02
 			}
 		}
@@ -72,7 +71,7 @@ building_BA_basis_schola_2 = {
 		urban
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 			NOT = {
 				has_technology = tech_BA_SI_Valkyrie_G02
@@ -82,8 +81,7 @@ building_BA_basis_schola_2 = {
 	allow = {
 	}
 	destroy_trigger = {
-		exists = owner
-		owner = {
+		owner? = {
 			has_technology = tech_BA_SI_Valkyrie_G02
 		}
 	}
@@ -92,8 +90,7 @@ building_BA_basis_schola_2 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
+			owner? = {
 				has_authority = auth_kivotos
 			}
 		}
@@ -119,7 +116,7 @@ building_BA_basis_schola_2 = {
 	}
 	triggered_desc = {
 		trigger = {
-			owner = {
+			owner? = {
 				NOT = {
 					has_technology = tech_BA_SI_Valkyrie_G02
 				}
@@ -129,7 +126,7 @@ building_BA_basis_schola_2 = {
 	}
 	triggered_desc = {
 		trigger = {
-			owner = {
+			owner? = {
 				has_technology = tech_BA_SI_Valkyrie_G02
 			}
 		}
@@ -151,7 +148,7 @@ building_BA_energy_1 = {
 		generator
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		is_planet_class = pc_BA_campus_planet
@@ -191,7 +188,7 @@ building_BA_energy_2 = {
 		generator
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		is_planet_class = pc_BA_campus_planet
@@ -265,7 +262,7 @@ building_BA_minerals_1 = {
 		mining
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		is_planet_class = pc_BA_campus_planet
@@ -305,7 +302,7 @@ building_BA_minerals_2 = {
 		mining
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		is_planet_class = pc_BA_campus_planet
@@ -359,7 +356,7 @@ building_BA_food_1 = {
 		farming
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		is_planet_class = pc_BA_campus_planet
@@ -399,7 +396,7 @@ building_BA_food_2 = {
 		farming
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		is_planet_class = pc_BA_campus_planet
@@ -452,8 +449,8 @@ building_BA_food_2 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			has_ringworld_output_boost = yes
 			exists = owner
+			has_ringworld_output_boost = yes
 		}
 		modifier = {
 			planet_farmers_food_produces_add = 2
@@ -476,7 +473,7 @@ building_BA_keystone_foundry_1 = {
 		BA_foundry
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		is_planet_class = pc_BA_campus_planet
@@ -490,11 +487,10 @@ building_BA_keystone_foundry_1 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		modifier = {
 			job_BA_keystone_foundry_add = 200
 		}
@@ -526,7 +522,7 @@ building_BA_keystone_foundry_2 = {
 		BA_foundry
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		is_planet_class = pc_BA_campus_planet
@@ -536,11 +532,10 @@ building_BA_keystone_foundry_2 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		modifier = {
 			job_BA_keystone_foundry_add = 400
 		}
@@ -573,7 +568,7 @@ building_BA_keystone_foundry_3 = {
 		BA_foundry
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		is_planet_class = pc_BA_campus_planet
@@ -583,11 +578,10 @@ building_BA_keystone_foundry_3 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		modifier = {
 			job_BA_keystone_foundry_add = 500
 			pop_BA_keystone_foundry_bonus_workforce_mult = 0.1
@@ -618,7 +612,7 @@ building_BA_keystone_foundry_X = {
 		BA_foundry
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		is_planet_class = pc_BA_campus_planet
@@ -628,11 +622,10 @@ building_BA_keystone_foundry_X = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		modifier = {
 			job_BA_keystone_foundry_add = 500
 			pop_BA_keystone_foundry_bonus_workforce_mult = 0.6
@@ -666,7 +659,7 @@ building_BA_pyroxenes_factory_1 = {
 		ba_factory
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		is_planet_class = pc_BA_campus_planet
@@ -676,11 +669,10 @@ building_BA_pyroxenes_factory_1 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		modifier = {
 			job_BA_pyroxenes_artisan_add = 200
 			# 预留给岗位添加
@@ -714,7 +706,7 @@ building_BA_pyroxenes_factory_2 = {
 		ba_factory
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		is_planet_class = pc_BA_campus_planet
@@ -724,11 +716,10 @@ building_BA_pyroxenes_factory_2 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		modifier = {
 			job_BA_pyroxenes_artisan_add = 400
 			# 预留给岗位
@@ -760,7 +751,7 @@ building_BA_pyroxenes_factory_3 = {
 		BA_foundry
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		is_planet_class = pc_BA_campus_planet
@@ -770,11 +761,10 @@ building_BA_pyroxenes_factory_3 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		modifier = {
 			job_BA_pyroxenes_artisan_add = 500
 			pop_BA_pyroxenes_artisan_bonus_workforce_mult = 0.2
@@ -807,7 +797,7 @@ building_BA_pyroxenes_factory_X = {
 		BA_foundry
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		is_planet_class = pc_BA_campus_planet
@@ -817,11 +807,10 @@ building_BA_pyroxenes_factory_X = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		modifier = {
 			job_BA_pyroxenes_artisan_add = 500
 			pop_BA_pyroxenes_artisan_bonus_workforce_mult = 0.6
@@ -858,7 +847,7 @@ building_BA_refinery = {
 		BA_foundry
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		is_planet_class = pc_BA_campus_planet
@@ -870,11 +859,10 @@ building_BA_refinery = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		modifier = {
 		}
 	}
@@ -916,7 +904,7 @@ building_BA_upkeep = {
 		BA_foundry
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		is_planet_class = pc_BA_campus_planet
@@ -929,11 +917,10 @@ building_BA_upkeep = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		modifier = {
 		}
 	}
@@ -973,7 +960,7 @@ building_BA_Club_Complex = {
 		unity
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		is_planet_class = pc_BA_campus_planet
@@ -986,11 +973,10 @@ building_BA_Club_Complex = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		modifier = {
 		}
 	}
@@ -1012,11 +998,10 @@ building_BA_Club_Complex = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-			industrial_jobs_are_catalytic_trigger = no
+            owner? = {
+                has_authority = auth_kivotos
+            }
+            industrial_jobs_are_catalytic_trigger = no
 		}
 		BA_club_pop_physics_research_produces_add = 3
 		BA_club_pop_society_research_produces_add = 3
@@ -1040,7 +1025,7 @@ building_BA_Archive = {
 		research
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		is_planet_class = pc_BA_campus_planet
@@ -1053,11 +1038,10 @@ building_BA_Archive = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		modifier = {
 		}
 	}
@@ -1108,22 +1092,20 @@ building_BA_club_room = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		modifier = {
 			job_BA_club_members_add = 120
 		}
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_technology = tech_BA_SI_Millennium_G03
-			}
-		}
+            owner? = {
+                has_technology = tech_BA_SI_Millennium_G03
+            }
+        }
 		modifier = {
 			job_BA_club_members_add = 240
 		}
@@ -1153,7 +1135,7 @@ building_BA_club_mansion = {
 	}
 	position_priority = 22
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		is_artificial = no
@@ -1163,22 +1145,20 @@ building_BA_club_mansion = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		modifier = {
 			job_BA_club_members_add = 240
 		}
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_technology = tech_BA_SI_Millennium_G03
-			}
-		}
+            owner? = {
+                has_technology = tech_BA_SI_Millennium_G03
+            }
+        }
 		modifier = {
 			job_BA_club_members_add = 480
 			pop_BA_club_members_bonus_workforce_mult = 0.1
@@ -1205,18 +1185,17 @@ building_BA_Kivotos_staff_room = {
 	}
 	position_priority = 22
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		is_artificial = no
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		modifier = {
 			job_BA_Kivotos_staff_add = 200
 		}
@@ -1245,7 +1224,7 @@ building_BA_Kivotos_staff_mansion = {
 	}
 	position_priority = 22
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		is_artificial = no
@@ -1255,11 +1234,10 @@ building_BA_Kivotos_staff_mansion = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_kivotos
-			}
-		}
+            owner? = {
+                has_authority = auth_kivotos
+            }
+        }
 		modifier = {
 			job_BA_Kivotos_staff_add = 400
 		}
