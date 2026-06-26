@@ -60,17 +60,17 @@ situation_Our_story = {
 	monthly_progress = {
 		base = 10
 		modifier = {
-			multiply = 0
+			mult = 0
 			current_situation_approach = situation_Our_story_pause
 			desc = situation_Our_story_pause_tip_desc
 		}
 		modifier = {
-			multiply = 2
+			mult = 2
 			current_situation_approach = situation_Our_story_full
 			desc = situation_Our_story_full_tip_desc
 		}
 		modifier = {
-			multiply = 0
+			mult = 0
 			desc = ap_Our_story_stage2_prerequisites
 			custom_tooltip = {
 				text = ap_Our_story_stage2_prerequisites
@@ -85,7 +85,7 @@ situation_Our_story = {
 			}
 		}
 		modifier = {
-			multiply = 0
+			mult = 0
 			desc = ap_Our_story_stage3_prerequisites
 			custom_tooltip = {
 				text = ap_Our_story_stage3_prerequisites
@@ -100,7 +100,7 @@ situation_Our_story = {
 			}
 		}
 		modifier = {
-			multiply = 0
+			mult = 0
 			desc = ap_Our_story_stage4_prerequisites
 			custom_tooltip = {
 				text = ap_Our_story_stage4_prerequisites
@@ -115,7 +115,7 @@ situation_Our_story = {
 			}
 		}
 		modifier = {
-			multiply = 0
+			mult = 0
 			desc = ap_Our_story_stage5_prerequisites
 			custom_tooltip = {
 				text = ap_Our_story_stage5_prerequisites
@@ -129,7 +129,7 @@ situation_Our_story = {
 			}
 		}
 		modifier = {
-			multiply = 0
+			mult = 0
 			desc = ap_Our_story_stage6_prerequisites
 			custom_tooltip = {
 				text = ap_Our_story_stage6_prerequisites
@@ -143,7 +143,7 @@ situation_Our_story = {
 			}
 		}
 		modifier = {
-			multiply = 0
+			mult = 0
 			desc = ap_Our_story_stage7_prerequisites
 			custom_tooltip = {
 				text = ap_Our_story_stage7_prerequisites
@@ -157,7 +157,7 @@ situation_Our_story = {
 			}
 		}
 		modifier = {
-			multiply = 0
+			mult = 0
 			desc = ap_Our_story_stage8_prerequisites
 			custom_tooltip = {
 				text = ap_Our_story_stage8_prerequisites
@@ -317,6 +317,7 @@ situation_Our_story = {
 		}
 	}
 	on_progress_complete = {
+		custom_tooltip = BA_Kivotos_chronicle_effect_stage8
 		owner = {
 			country_event = {
 				id = BA_ape.2010

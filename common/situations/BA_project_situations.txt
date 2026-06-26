@@ -125,7 +125,7 @@ situation_Project_Cradle_A = {
 				}
 			}
 		}
-		stage_3 = {
+		stage_4 = {
 			icon = GFX_situation_stage_4
 			icon_background = GFX_situation_stage_frame_blue
 			end = 100
@@ -164,7 +164,7 @@ situation_Project_Cradle_B = {
 	fail_icon = GFX_situation_outcome_positive
 	fail_icon_frame = GFX_situation_outcome_frame_blue
 	######
-	start_value = 40
+	initial_progress = 40
 	progress_direction = bidirectional
 	monthly_progress = {
 		base = 5
@@ -411,6 +411,7 @@ situation_Into_Halo = {
 		icon_background = GFX_situation_approach_bg_yellow
 		default = yes
 		on_select = {
+			custom_tooltip = situation_Into_Halo_approach_desc
 		}
 	}
 	######
@@ -453,6 +454,7 @@ situation_Into_Halo = {
 	on_monthly = {
 	}
 	on_progress_complete = {
+		custom_tooltip = situation_Into_Halo_complete
 		owner = {
 			country_event = {
 				id = BA_ape.0007
@@ -539,6 +541,7 @@ situation_Halo_awaken = {
 		icon_background = GFX_situation_approach_bg_yellow
 		default = yes
 		on_select = {
+			custom_tooltip = situation_Halo_awaken_default_desc
 		}
 	}
 	approach = {
@@ -595,6 +598,7 @@ situation_Halo_awaken = {
 	on_monthly = {
 	}
 	on_progress_complete = {
+		custom_tooltip = situation_Halo_awaken_complete
 		owner = {
 			country_event = {
 				id = BA_ape.1004
