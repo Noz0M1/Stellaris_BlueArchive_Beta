@@ -44,7 +44,7 @@ option = {
 		}
 	}
 	hidden_effect = {
-		BA_remove_skin = yes
+		BA_rename_support_skin_remove = yes
 		set_leader_flag = BA_skin_$Skin$
 		set_timed_leader_flag = {
 			flag = new_skin

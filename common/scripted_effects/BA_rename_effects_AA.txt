@@ -1,4 +1,4 @@
-### 功能1 赋予身份：赋予领袖一个身份flag（排除豁免）
+### 功能1：赋予身份：赋予领袖一个身份flag（排除豁免）
 BA_rename_base_identity = {
 	# scope: leader
 	if = {
@@ -10,7 +10,7 @@ BA_rename_base_identity = {
 	}
 }
 
-### 功能2 名称立绘
+### 功能2：名称立绘
 BA_rename_base_portrait = {
 	# scope: leader
 	if = {
@@ -21,22 +21,54 @@ BA_rename_base_portrait = {
 	}
 }
 
-### 功能3 社团特质
-BA_rename_base_club = {
+### 功能3：社团特质
+BA_rename_base_club_trait = {
 	# scope: leader
+	if = {
+		limit = {
+			has_global_flag = BA_leader_rename_add_club_trait
+			has_leader_flag = BA_rename_identity
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_rename_club_trait
+			}
+			remove_leader_flag = BA_rename_club_trait
+			BA_rename_support_club_trait_remove = yes
+		}
+		set_leader_flag = BA_rename_club_trait
+		BA_rename_effect_club_trait = yes
+	}
 }
 
-### 功能4 个人特质
-BA_rename_base_skin = {
+### 功能4：个人特质
+BA_rename_base_skin_trait = {
 	# scope: leader
+	if = {
+		limit = {
+			has_global_flag = BA_leader_rename_add_skin_trait
+			has_leader_flag = BA_rename_identity
+			has_total_skill >= 3
+		}
+		if = {
+			limit = {
+				has_leader_flag = BA_rename_skin_trait
+			}
+			remove_leader_flag = BA_rename_skin_trait
+			BA_rename_support_skin_trait_remove = yes
+		}
+		set_leader_flag = BA_rename_skin_trait
+		BA_rename_effect_skin_trait = yes
+	}
 }
 
-### 功能5 领袖检查
-BA_rename_base_check = {
+### 功能5：领袖去重
+BA_rename_base_check_leader = {
 	# scope: leader
+	# 待完善
 }
 
-### 功能6 处理特使
+### 功能6：处理特使
 BA_rename_base_envoy = {
 	# scope: leader
 	if = {

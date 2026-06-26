@@ -2,7 +2,7 @@
 BA_rename_effect_identity = {
 	# scope: leader
 	optimize_memory
-    random_list = {
+	random_list = {
 		#小鸟游星野
 		10 = {
 			modifier = {
@@ -2626,1631 +2626,4615 @@ BA_rename_effect_identity = {
 
 # 动作器：名称立绘
 BA_rename_effect_portrait = {
-    optimize_memory
-    switch = {
-        trigger = has_leader_flag
-        #小鸟游星野
-        leader_BA_Hoshino = {
-            change_leader_portrait = BA_leader_Hoshino
-            set_name = BA_name_leader_Hoshino
-        }
-        #砂狼白子
-        leader_BA_Shiroko = {
-            change_leader_portrait = BA_leader_Shiroko
-            set_name = BA_name_leader_Shiroko
-        }
-        #黑见茜香
-        leader_BA_Serika = {
-            change_leader_portrait = BA_leader_Serika
-            set_name = BA_name_leader_Serika
-        }
-        #十六夜野宫
-        leader_BA_Nonomi = {
-            change_leader_portrait = BA_leader_Nonomi
-            set_name = BA_name_leader_Nonomi
-        }
-        #奥空绫音
-        leader_BA_Ayane = {
-            change_leader_portrait = BA_leader_Ayane
-            set_name = BA_name_leader_Ayane
-        }
-        #栀子梦
-        leader_BA_Yume = {
-            change_leader_portrait = BA_leader_Yume
-            set_name = BA_name_leader_Yume
-        }
-        #羽沼真琴
-        leader_BA_Makoto = {
-            change_leader_portrait = BA_leader_Makoto
-            set_name = BA_name_leader_Makoto
-        }
-        #枣伊吕波
-        leader_BA_Iroha = {
-            change_leader_portrait = BA_leader_Iroha
-            set_name = BA_name_leader_Iroha
-        }
-        #丹花伊吹
-        leader_BA_Ibuki = {
-            change_leader_portrait = BA_leader_Ibuki
-            set_name = BA_name_leader_Ibuki
-        }
-        #京极皋月
-        leader_BA_Satsuki = {
-            change_leader_portrait = BA_leader_Satsuki
-            set_name = BA_name_leader_Satsuki
-        }
-        #元宫千秋
-        leader_BA_Chiaki = {
-            change_leader_portrait = BA_leader_Chiaki
-            set_name = BA_name_leader_Chiaki
-        }
-        #空崎日奈
-        leader_BA_Hina = {
-            change_leader_portrait = BA_leader_Hina
-            set_name = BA_name_leader_Hina
-        }
-        #天雨亚子
-        leader_BA_Ako = {
-            change_leader_portrait = BA_leader_Ako
-            set_name = BA_name_leader_Ako
-        }
-        #银镜伊织
-        leader_BA_Iori = {
-            change_leader_portrait = BA_leader_Iori
-            set_name = BA_name_leader_Iori
-        }
-        #火宫千夏
-        leader_BA_Chinatsu = {
-            change_leader_portrait = BA_leader_Chinatsu
-            set_name = BA_name_leader_Chinatsu
-        }
-        #陆八魔亚瑠
-        leader_BA_Aru = {
-            change_leader_portrait = BA_leader_Aru
-            set_name = BA_name_leader_Aru
-        }
-        #鬼方佳世子
-        leader_BA_Kayoko = {
-            change_leader_portrait = BA_leader_Kayoko
-            set_name = BA_name_leader_Kayoko
-        }
-        #浅黄睦月
-        leader_BA_Mutsuki = {
-            change_leader_portrait = BA_leader_Mutsuki
-            set_name = BA_name_leader_Mutsuki
-        }
-        #伊草春香
-        leader_BA_Haruka = {
-            change_leader_portrait = BA_leader_Haruka
-            set_name = BA_name_leader_Haruka
-        }
-        #黑馆晴奈
-        leader_BA_Haruna = {
-            change_leader_portrait = BA_leader_Haruna
-            set_name = BA_name_leader_Haruna
-        }
-        #鳄渊明里
-        leader_BA_Akari = {
-            change_leader_portrait = BA_leader_Akari
-            set_name = BA_name_leader_Akari
-        }
-        #狮子堂泉
-        leader_BA_Izumi = {
-            change_leader_portrait = BA_leader_Izumi
-            set_name = BA_name_leader_Izumi
-        }
-        #赤司淳子
-        leader_BA_Junko = {
-            change_leader_portrait = BA_leader_Junko
-            set_name = BA_name_leader_Junko
-        }
-        #爱清枫香
-        leader_BA_Fuuka = {
-            change_leader_portrait = BA_leader_Fuuka
-            set_name = BA_name_leader_Fuuka
-        }
-        #牛牧朱莉
-        leader_BA_Juri = {
-            change_leader_portrait = BA_leader_Juri
-            set_name = BA_name_leader_Juri
-        }
-        #鬼怒川霞
-        leader_BA_Kasumi = {
-            change_leader_portrait = BA_leader_Kasumi
-            set_name = BA_name_leader_Kasumi
-        }
-        #下仓惠
-        leader_BA_Megu = {
-            change_leader_portrait = BA_leader_Megu
-            set_name = BA_name_leader_Megu
-        }
-        #夜樱绮罗罗
-        leader_BA_Kirara = {
-            change_leader_portrait = BA_leader_Kirara
-            set_name = BA_name_leader_Kirara
-        }
-        #旗见绘里香
-        leader_BA_Erika = {
-            change_leader_portrait = BA_leader_Erika
-            set_name = BA_name_leader_Erika
-        }
-        #冰室濑奈
-        leader_BA_Sena = {
-            change_leader_portrait = BA_leader_Sena
-            set_name = BA_name_leader_Sena
-        }
-        #调月莉音
-        leader_BA_Rio = {
-            change_leader_portrait = BA_leader_Rio
-            set_name = BA_name_leader_Rio
-        }
-        #早濑优香
-        leader_BA_Yuuka = {
-            change_leader_portrait = BA_leader_Yuuka
-            set_name = BA_name_leader_Yuuka
-        }
-        #生盐乃爱
-        leader_BA_Noa = {
-            change_leader_portrait = BA_leader_Noa
-            set_name = BA_name_leader_Noa
-        }
-        #黑崎小雪
-        leader_BA_Koyuki = {
-            change_leader_portrait = BA_leader_Koyuki
-            set_name = BA_name_leader_Koyuki
-        }
-        #美甘尼禄
-        leader_BA_Neru = {
-            change_leader_portrait = BA_leader_Neru
-            set_name = BA_name_leader_Neru
-        }
-        #一之濑明日奈
-        leader_BA_Asuna = {
-            change_leader_portrait = BA_leader_Asuna
-            set_name = BA_name_leader_Asuna
-        }
-        #角楯花凛
-        leader_BA_Karin = {
-            change_leader_portrait = BA_leader_Karin
-            set_name = BA_name_leader_Karin
-        }
-        #室笠朱音
-        leader_BA_Akane = {
-            change_leader_portrait = BA_leader_Akane
-            set_name = BA_name_leader_Akane
-        }
-        #飞鸟马时
-        leader_BA_Toki = {
-            change_leader_portrait = BA_leader_Toki
-            set_name = BA_name_leader_Toki
-        }
-        #花冈柚子
-        leader_BA_Yuzu = {
-            change_leader_portrait = BA_leader_Yuzu
-            set_name = BA_name_leader_Yuzu
-        }
-        #才羽桃井
-        leader_BA_Momoi = {
-            change_leader_portrait = BA_leader_Momoi
-            set_name = BA_name_leader_Momoi
-        }
-        #才羽绿
-        leader_BA_Midori = {
-            change_leader_portrait = BA_leader_Midori
-            set_name = BA_name_leader_Midori
-        }
-        #天童爱丽丝
-        leader_BA_Aris = {
-            change_leader_portrait = BA_leader_Aris
-            set_name = BA_name_leader_Aris
-        }
-        #各务千寻
-        leader_BA_Chihiro = {
-            change_leader_portrait = BA_leader_Chihiro
-            set_name = BA_name_leader_Chihiro
-        }
-        #音濑小玉
-        leader_BA_Kotama = {
-            change_leader_portrait = BA_leader_Kotama
-            set_name = BA_name_leader_Kotama
-        }
-        #小钩晴
-        leader_BA_Hare = {
-            change_leader_portrait = BA_leader_Hare
-            set_name = BA_name_leader_Hare
-        }
-        #小涂真纪
-        leader_BA_Maki = {
-            change_leader_portrait = BA_leader_Maki
-            set_name = BA_name_leader_Maki
-        }
-        #白石咏叶
-        leader_BA_Utaha = {
-            change_leader_portrait = BA_leader_Utaha
-            set_name = BA_name_leader_Utaha
-        }
-        #猫冢响
-        leader_BA_Hibiki = {
-            change_leader_portrait = BA_leader_Hibiki
-            set_name = BA_name_leader_Hibiki
-        }
-        #丰见亚都梨
-        leader_BA_Kotori = {
-            change_leader_portrait = BA_leader_Kotori
-            set_name = BA_name_leader_Kotori
-        }
-        #明星日鞠
-        leader_BA_Himari = {
-            change_leader_portrait = BA_leader_Himari
-            set_name = BA_name_leader_Himari
-        }
-        #和泉元艾米
-        leader_BA_Eimi = {
-            change_leader_portrait = BA_leader_Eimi
-            set_name = BA_name_leader_Eimi
-        }
-        #乙花堇
-        leader_BA_Sumire = {
-            change_leader_portrait = BA_leader_Sumire
-            set_name = BA_name_leader_Sumire
-        }
-        #野正丽
-        leader_BA_Rei = {
-            change_leader_portrait = BA_leader_Rei
-            set_name = BA_name_leader_Rei
-        }
-        #吾妻未来
-        leader_BA_Mirai = {
-            change_leader_portrait = BA_leader_Mirai
-            set_name = BA_name_leader_Mirai
-        }
-        #圣园未花
-        leader_BA_Mika = {
-            change_leader_portrait = BA_leader_Mika
-            set_name = BA_name_leader_Mika
-        }
-        #桐藤渚
-        leader_BA_Nagisa = {
-            change_leader_portrait = BA_leader_Nagisa
-            set_name = BA_name_leader_Nagisa
-        }
-        #百合园圣娅
-        leader_BA_Seia = {
-            change_leader_portrait = BA_leader_Seia
-            set_name = BA_name_leader_Seia
-        }
-        #阿慈谷日富美
-        leader_BA_Hifumi = {
-            change_leader_portrait = BA_leader_Hifumi
-            set_name = BA_name_leader_Hifumi
-        }
-        #白洲梓
-        leader_BA_Azusa = {
-            change_leader_portrait = BA_leader_Azusa
-            set_name = BA_name_leader_Azusa
-        }
-        #浦和花子
-        leader_BA_Hanako = {
-            change_leader_portrait = BA_leader_Hanako
-            set_name = BA_name_leader_Hanako
-        }
-        #下江小春
-        leader_BA_Koharu = {
-            change_leader_portrait = BA_leader_Koharu
-            set_name = BA_name_leader_Koharu
-        }
-        #剑先鹤城
-        leader_BA_Tsurugi = {
-            change_leader_portrait = BA_leader_Tsurugi
-            set_name = BA_name_leader_Tsurugi
-        }
-        #羽川莲实
-        leader_BA_Hasumi = {
-            change_leader_portrait = BA_leader_Hasumi
-            set_name = BA_name_leader_Hasumi
-        }
-        #仲正一花
-        leader_BA_Ichika = {
-            change_leader_portrait = BA_leader_Ichika
-            set_name = BA_name_leader_Ichika
-        }
-        #静山真白
-        leader_BA_Mashiro = {
-            change_leader_portrait = BA_leader_Mashiro
-            set_name = BA_name_leader_Mashiro
-        }
-        #歌住樱子
-        leader_BA_Sakurako = {
-            change_leader_portrait = BA_leader_Sakurako
-            set_name = BA_name_leader_Sakurako
-        }
-        #若叶日向
-        leader_BA_Hinata = {
-            change_leader_portrait = BA_leader_Hinata
-            set_name = BA_name_leader_Hinata
-        }
-        #伊落玛丽
-        leader_BA_Mari = {
-            change_leader_portrait = BA_leader_Mari
-            set_name = BA_name_leader_Mari
-        }
-        #栗村爱莉
-        leader_BA_Airi = {
-            change_leader_portrait = BA_leader_Airi
-            set_name = BA_name_leader_Airi
-        }
-        #杏山和纱
-        leader_BA_Kazusa = {
-            change_leader_portrait = BA_leader_Kazusa
-            set_name = BA_name_leader_Kazusa
-        }
-        #伊原木好美
-        leader_BA_Yoshimi = {
-            change_leader_portrait = BA_leader_Yoshimi
-            set_name = BA_name_leader_Yoshimi
-        }
-        #柚鸟夏
-        leader_BA_Natsu = {
-            change_leader_portrait = BA_leader_Natsu
-            set_name = BA_name_leader_Natsu
-        }
-        #苍森美弥
-        leader_BA_Mine = {
-            change_leader_portrait = BA_leader_Mine
-            set_name = BA_name_leader_Mine
-        }
-        #鹫见芹奈
-        leader_BA_Serina = {
-            change_leader_portrait = BA_leader_Serina
-            set_name = BA_name_leader_Serina
-        }
-        #朝颜花绘
-        leader_BA_Hanae = {
-            change_leader_portrait = BA_leader_Hanae
-            set_name = BA_name_leader_Hanae
-        }
-        #守月铃美
-        leader_BA_Suzumi = {
-            change_leader_portrait = BA_leader_Suzumi
-            set_name = BA_name_leader_Suzumi
-        }
-        #宇泽玲纱
-        leader_BA_Reisa = {
-            change_leader_portrait = BA_leader_Reisa
-            set_name = BA_name_leader_Reisa
-        }
-        #古关忧
-        leader_BA_Ui = {
-            change_leader_portrait = BA_leader_Ui
-            set_name = BA_name_leader_Ui
-        }
-        #圆堂志美子
-        leader_BA_Shimiko = {
-            change_leader_portrait = BA_leader_Shimiko
-            set_name = BA_name_leader_Shimiko
-        }
-        #狐坂若藻
-        leader_BA_Wakamo = {
-            change_leader_portrait = BA_leader_Wakamo
-            set_name = BA_name_leader_Wakamo
-        }
-        #天地妮娅
-        leader_BA_Niya = {
-            change_leader_portrait = BA_leader_Niya
-            set_name = BA_name_leader_Niya
-        }
-        #桑上果穗
-        leader_BA_Kaho = {
-            change_leader_portrait = BA_leader_Kaho
-            set_name = BA_name_leader_Kaho
-        }
-        #和乐千世
-        leader_BA_Chise = {
-            change_leader_portrait = BA_leader_Chise
-            set_name = BA_name_leader_Chise
-        }
-        #七棱菖蒲
-        leader_BA_Ayame = {
-            change_leader_portrait = BA_leader_Ayame
-            set_name = BA_name_leader_Ayame
-        }
-        #御棱名草
-        leader_BA_Nagusa = {
-            change_leader_portrait = BA_leader_Nagusa
-            set_name = BA_name_leader_Nagusa
-        }
-        #不破莲华
-        leader_BA_Renge = {
-            change_leader_portrait = BA_leader_Renge
-            set_name = BA_name_leader_Renge
-        }
-        #桐生桔梗
-        leader_BA_Kikyou = {
-            change_leader_portrait = BA_leader_Kikyou
-            set_name = BA_name_leader_Kikyou
-        }
-        #勘解由小路紫
-        leader_BA_Yukari = {
-            change_leader_portrait = BA_leader_Yukari
-            set_name = BA_name_leader_Yukari
-        }
-        #葛叶
-        leader_BA_Kuzunoha = {
-            change_leader_portrait = BA_leader_Kuzunoha
-            set_name = BA_name_leader_Kuzunoha
-        }
-        #春日椿
-        leader_BA_Tsubaki = {
-            change_leader_portrait = BA_leader_Tsubaki
-            set_name = BA_name_leader_Tsubaki
-        }
-        #水羽三森
-        leader_BA_Mimori = {
-            change_leader_portrait = BA_leader_Mimori
-            set_name = BA_name_leader_Mimori
-        }
-        #勇美枫
-        leader_BA_Kaede = {
-            change_leader_portrait = BA_leader_Kaede
-            set_name = BA_name_leader_Kaede
-        }
-        #千鸟满
-        leader_BA_Michiru = {
-            change_leader_portrait = BA_leader_Michiru
-            set_name = BA_name_leader_Michiru
-        }
-        #久田泉奈
-        leader_BA_Izuna = {
-            change_leader_portrait = BA_leader_Izuna
-            set_name = BA_name_leader_Izuna
-        }
-        #大野月夜
-        leader_BA_Tsukuyo = {
-            change_leader_portrait = BA_leader_Tsukuyo
-            set_name = BA_name_leader_Tsukuyo
-        }
-        #河和静子
-        leader_BA_Shizuko = {
-            change_leader_portrait = BA_leader_Shizuko
-            set_name = BA_name_leader_Shizuko
-        }
-        #朝比奈菲娜
-        leader_BA_Pina = {
-            change_leader_portrait = BA_leader_Pina
-            set_name = BA_name_leader_Pina
-        }
-        #里滨海香
-        leader_BA_Umika = {
-            change_leader_portrait = BA_leader_Umika
-            set_name = BA_name_leader_Umika
-        }
-        #虞美人
-        leader_BA_Kokuriko = {
-            change_leader_portrait = BA_leader_Kokuriko
-            set_name = BA_name_leader_Kokuriko
-        }
-        #箭吹棕榈
-        leader_BA_Shuro = {
-            change_leader_portrait = BA_leader_Shuro
-            set_name = BA_name_leader_Shuro
-        }
-        #土生蓟
-        leader_BA_Azami = {
-            change_leader_portrait = BA_leader_Azami
-            set_name = BA_name_leader_Azami
-        }
-        #新
-        leader_BA_Arata = {
-            change_leader_portrait = BA_leader_Arata
-            set_name = BA_name_leader_Arata
-        }
-        #连河切莉诺
-        leader_BA_Cherino = {
-            change_leader_portrait = BA_leader_Cherino
-            set_name = BA_name_leader_Cherino
-        }
-        #佐城智惠
-        leader_BA_Tomoe = {
-            change_leader_portrait = BA_leader_Tomoe
-            set_name = BA_name_leader_Tomoe
-        }
-        #池仓玛丽娜
-        leader_BA_Marina = {
-            change_leader_portrait = BA_leader_Marina
-            set_name = BA_name_leader_Marina
-        }
-        #天见和香
-        leader_BA_Nodoka = {
-            change_leader_portrait = BA_leader_Nodoka
-            set_name = BA_name_leader_Nodoka
-        }
-        #间宵时雨
-        leader_BA_Shigure = {
-            change_leader_portrait = BA_leader_Shigure
-            set_name = BA_name_leader_Shigure
-        }
-        #秋泉红叶
-        leader_BA_Momiji = {
-            change_leader_portrait = BA_leader_Momiji
-            set_name = BA_name_leader_Momiji
-        }
-        #姬木爱瑠
-        leader_BA_Meru = {
-            change_leader_portrait = BA_leader_Meru
-            set_name = BA_name_leader_Meru
-        }
-        #荒槙八云
-        leader_BA_Yakumo = {
-            change_leader_portrait = BA_leader_Yakumo
-            set_name = BA_name_leader_Yakumo
-        }
-        #三善贵音
-        leader_BA_Takane = {
-            change_leader_portrait = BA_leader_Takane
-            set_name = BA_name_leader_Takane
-        }
-        #安守实里
-        leader_BA_Minori = {
-            change_leader_portrait = BA_leader_Minori
-            set_name = BA_name_leader_Minori
-        }
-        #龙华妃咲
-        leader_BA_Kisaki = {
-            change_leader_portrait = BA_leader_Kisaki
-            set_name = BA_name_leader_Kisaki
-        }
-        #近卫弥奈
-        leader_BA_Mina = {
-            change_leader_portrait = BA_leader_Mina
-            set_name = BA_name_leader_Mina
-        }
-        #朱城瑠美
-        leader_BA_Rumi = {
-            change_leader_portrait = BA_leader_Rumi
-            set_name = BA_name_leader_Rumi
-        }
-        #鹿山丽情
-        leader_BA_Reijo = {
-            change_leader_portrait = BA_leader_Reijo
-            set_name = BA_name_leader_Reijo
-        }
-        #春原瞬
-        leader_BA_Shun = {
-            change_leader_portrait = BA_leader_Shun
-            set_name = BA_name_leader_Shun
-        }
-        #春原心奈
-        leader_BA_Kokona = {
-            change_leader_portrait = BA_leader_Kokona
-            set_name = BA_name_leader_Kokona
-        }
-        #申谷海
-        leader_BA_Kai = {
-            change_leader_portrait = BA_leader_Kai
-            set_name = BA_name_leader_Kai
-        }
-        #药子沙耶
-        leader_BA_Saya = {
-            change_leader_portrait = BA_leader_Saya
-            set_name = BA_name_leader_Saya
-        }
-        #漆原辉夜
-        leader_BA_Kaguya = {
-            change_leader_portrait = BA_leader_Kaguya
-            set_name = BA_name_leader_Kaguya
-        }
-        #尾刃康娜
-        leader_BA_Kanna = {
-            change_leader_portrait = BA_leader_Kanna
-            set_name = BA_name_leader_Kanna
-        }
-        #木乃香
-        leader_BA_Konoka = {
-            change_leader_portrait = BA_leader_Konoka
-            set_name = BA_name_leader_Konoka
-        }
-        #中务桐乃
-        leader_BA_Kirino = {
-            change_leader_portrait = BA_leader_Kirino
-            set_name = BA_name_leader_Kirino
-        }
-        #合欢垣吹雪
-        leader_BA_Fubuki = {
-            change_leader_portrait = BA_leader_Fubuki
-            set_name = BA_name_leader_Fubuki
-        }
-        #锭前纱织
-        leader_BA_Saori = {
-            change_leader_portrait = BA_leader_Saori
-            set_name = BA_name_leader_Saori
-        }
-        #秤亚津子
-        leader_BA_Atsuko = {
-            change_leader_portrait = BA_leader_Atsuko
-            set_name = BA_name_leader_Atsuko
-        }
-        #戒野美咲
-        leader_BA_Misaki = {
-            change_leader_portrait = BA_leader_Misaki
-            set_name = BA_name_leader_Misaki
-        }
-        #槌永日和
-        leader_BA_Hiyori = {
-            change_leader_portrait = BA_leader_Hiyori
-            set_name = BA_name_leader_Hiyori
-        }
-        #梯昴
-        leader_BA_Subaru = {
-            change_leader_portrait = BA_leader_Subaru
-            set_name = BA_name_leader_Subaru
-        }
-        #立木迈亚
-        leader_BA_Maia = {
-            change_leader_portrait = BA_leader_Maia
-            set_name = BA_name_leader_Maia
-        }
-        #月雪宫子
-        leader_BA_Miyako = {
-            change_leader_portrait = BA_leader_Miyako
-            set_name = BA_name_leader_Miyako
-        }
-        #空井咲
-        leader_BA_Saki = {
-            change_leader_portrait = BA_leader_Saki
-            set_name = BA_name_leader_Saki
-        }
-        #霞泽美游
-        leader_BA_Miyu = {
-            change_leader_portrait = BA_leader_Miyu
-            set_name = BA_name_leader_Miyu
-        }
-        #风仓萌绘
-        leader_BA_Moe = {
-            change_leader_portrait = BA_leader_Moe
-            set_name = BA_name_leader_Moe
-        }
-        #七度雪乃
-        leader_BA_Yukino = {
-            change_leader_portrait = BA_leader_Yukino
-            set_name = BA_name_leader_Yukino
-        }
-        #妮可
-        leader_BA_Niko = {
-            change_leader_portrait = BA_leader_Niko
-            set_name = BA_name_leader_Niko
-        }
-        #胡桃
-        leader_BA_Kurumi = {
-            change_leader_portrait = BA_leader_Kurumi
-            set_name = BA_name_leader_Kurumi
-        }
-        #音葵
-        leader_BA_Otogi = {
-            change_leader_portrait = BA_leader_Otogi
-            set_name = BA_name_leader_Otogi
-        }
-        #橘光明
-        leader_BA_Hikari = {
-            change_leader_portrait = BA_leader_Hikari
-            set_name = BA_name_leader_Hikari
-        }
-        #橘希望
-        leader_BA_Nozomi = {
-            change_leader_portrait = BA_leader_Nozomi
-            set_name = BA_name_leader_Nozomi
-        }
-        #朝雾周防
-        leader_BA_Suou = {
-            change_leader_portrait = BA_leader_Suou
-            set_name = BA_name_leader_Suou
-        }
-        #内海青叶
-        leader_BA_Aoba = {
-            change_leader_portrait = BA_leader_Aoba
-            set_name = BA_name_leader_Aoba
-        }
-        ###   狂猎
-        #云类鹫真奈美
-        # leader_BA_Manami = {
-        # 	change_leader_portrait = BA_leader_Manami
-        # 	set_name = BA_name_leader_Manami
-        # }
-        #清澄晶
-        leader_BA_Akira = {
-            change_leader_portrait = BA_leader_Akira
-            set_name = BA_name_leader_Akira
-        }
-        #裕美
-        leader_BA_Hiromi = {
-            change_leader_portrait = BA_leader_Hiromi
-            set_name = BA_name_leader_Hiromi
-        }
-        #白尾绘里
-        leader_BA_Eri = {
-            change_leader_portrait = BA_leader_Eri
-            set_name = BA_name_leader_Eri
-        }
-        #椎名纺希
-        leader_BA_Tsumugi = {
-            change_leader_portrait = BA_leader_Tsumugi
-            set_name = BA_name_leader_Tsumugi
-        }
-        #板垣鹿江
-        leader_BA_Kanoe = {
-            change_leader_portrait = BA_leader_Kanoe
-            set_name = BA_name_leader_Kanoe
-        }
-        #衣斐蕾娜
-        leader_BA_Rena = {
-            change_leader_portrait = BA_leader_Rena
-            set_name = BA_name_leader_Rena
-        }
-        #樱井美代
-        leader_BA_Miyo = {
-            change_leader_portrait = BA_leader_Miyo
-            set_name = BA_name_leader_Miyo
-        }
-        #若狭冬优
-        leader_BA_Fuyu = {
-            change_leader_portrait = BA_leader_Fuyu
-            set_name = BA_name_leader_Fuyu
-        }
-        #薄叶律
-        leader_BA_Ritsu = {
-            change_leader_portrait = BA_leader_Ritsu
-            set_name = BA_name_leader_Ritsu
-        }
-        #初音未来
-        leader_BA_HatsuneMiku = {
-            change_leader_portrait = BA_leader_HatsuneMiku
-            set_name = BA_name_leader_HatsuneMiku
-        }
-        #笑面教授
-        leader_BA_ProfessorSmug = {
-            change_leader_portrait = BA_leader_ProfessorSmug
-            set_name = BA_name_leader_ProfessorSmug
-        }
-        #（联邦学生会会长）
-        leader_BA_StudentCouncilPresident = {
-            change_leader_portrait = BA_leader_StudentCouncilPresident
-            set_name = BA_name_leader_StudentCouncilPresident
-        }
-        #七神凛
-        leader_BA_Rin = {
-            change_leader_portrait = BA_leader_Rin
-            set_name = BA_name_leader_Rin
-        }
-        #由良木桃香
-        leader_BA_Momoka = {
-            change_leader_portrait = BA_leader_Momoka
-            set_name = BA_name_leader_Momoka
-        }
-        #岩柜步梦
-        leader_BA_Ayumu = {
-            change_leader_portrait = BA_leader_Ayumu
-            set_name = BA_name_leader_Ayumu
-        }
-        #不知火花耶
-        leader_BA_Kaya = {
-            change_leader_portrait = BA_leader_Kaya
-            set_name = BA_name_leader_Kaya
-        }
-        #扇喜葵
-        leader_BA_Aoi = {
-            change_leader_portrait = BA_leader_Aoi
-            set_name = BA_name_leader_Aoi
-        }
-        #灰音
-        leader_BA_Haine = {
-            change_leader_portrait = BA_leader_Haine
-            set_name = BA_name_leader_Haine
-        }
-        #李
-        leader_BA_Sumomo = {
-            change_leader_portrait = BA_leader_Sumomo
-            set_name = BA_name_leader_Sumomo
-        }
-        #阿洛娜
-        leader_BA_Arona = {
-            change_leader_portrait = BA_leader_Arona
-            set_name = BA_name_leader_Arona
-        }
-        #普拉娜
-        leader_BA_Plana = {
-            change_leader_portrait = BA_leader_Plana
-            set_name = BA_name_leader_Plana
-        }
-        #空
-        leader_BA_Sora = {
-            change_leader_portrait = BA_leader_Sora
-            set_name = BA_name_leader_Sora
-        }
-        #河驹风兰舞
-        leader_BA_Labu = {
-            change_leader_portrait = BA_leader_Labu
-            set_name = BA_name_leader_Labu
-        }
-        #川流诗音
-        leader_BA_Shinon = {
-            change_leader_portrait = BA_leader_Shinon
-            set_name = BA_name_leader_Shinon
-        }
-        #风卷麻衣
-        leader_BA_Mai = {
-            change_leader_portrait = BA_leader_Mai
-            set_name = BA_name_leader_Mai
-        }
-        #艾茵
-        leader_BA_Ayin = {
-            change_leader_portrait = BA_leader_Ayin
-            set_name = BA_name_leader_Ayin
-        }
-        #索芙
-        leader_BA_Soph = {
-            change_leader_portrait = BA_leader_Soph
-            set_name = BA_name_leader_Soph
-        }
-        #奥茹
-        leader_BA_Aur = {
-            change_leader_portrait = BA_leader_Aur
-            set_name = BA_name_leader_Aur
-        }
-        #柯伊
-        leader_BA_Kei = {
-            change_leader_portrait = BA_leader_Kei
-            set_name = BA_name_leader_Kei
-        }
-    }
+	optimize_memory
+	switch = {
+		trigger = has_leader_flag
+		#小鸟游星野
+		leader_BA_Hoshino = {
+			change_leader_portrait = BA_leader_Hoshino
+			set_name = BA_name_leader_Hoshino
+		}
+		#砂狼白子
+		leader_BA_Shiroko = {
+			change_leader_portrait = BA_leader_Shiroko
+			set_name = BA_name_leader_Shiroko
+		}
+		#黑见茜香
+		leader_BA_Serika = {
+			change_leader_portrait = BA_leader_Serika
+			set_name = BA_name_leader_Serika
+		}
+		#十六夜野宫
+		leader_BA_Nonomi = {
+			change_leader_portrait = BA_leader_Nonomi
+			set_name = BA_name_leader_Nonomi
+		}
+		#奥空绫音
+		leader_BA_Ayane = {
+			change_leader_portrait = BA_leader_Ayane
+			set_name = BA_name_leader_Ayane
+		}
+		#栀子梦
+		leader_BA_Yume = {
+			change_leader_portrait = BA_leader_Yume
+			set_name = BA_name_leader_Yume
+		}
+		#羽沼真琴
+		leader_BA_Makoto = {
+			change_leader_portrait = BA_leader_Makoto
+			set_name = BA_name_leader_Makoto
+		}
+		#枣伊吕波
+		leader_BA_Iroha = {
+			change_leader_portrait = BA_leader_Iroha
+			set_name = BA_name_leader_Iroha
+		}
+		#丹花伊吹
+		leader_BA_Ibuki = {
+			change_leader_portrait = BA_leader_Ibuki
+			set_name = BA_name_leader_Ibuki
+		}
+		#京极皋月
+		leader_BA_Satsuki = {
+			change_leader_portrait = BA_leader_Satsuki
+			set_name = BA_name_leader_Satsuki
+		}
+		#元宫千秋
+		leader_BA_Chiaki = {
+			change_leader_portrait = BA_leader_Chiaki
+			set_name = BA_name_leader_Chiaki
+		}
+		#空崎日奈
+		leader_BA_Hina = {
+			change_leader_portrait = BA_leader_Hina
+			set_name = BA_name_leader_Hina
+		}
+		#天雨亚子
+		leader_BA_Ako = {
+			change_leader_portrait = BA_leader_Ako
+			set_name = BA_name_leader_Ako
+		}
+		#银镜伊织
+		leader_BA_Iori = {
+			change_leader_portrait = BA_leader_Iori
+			set_name = BA_name_leader_Iori
+		}
+		#火宫千夏
+		leader_BA_Chinatsu = {
+			change_leader_portrait = BA_leader_Chinatsu
+			set_name = BA_name_leader_Chinatsu
+		}
+		#陆八魔亚瑠
+		leader_BA_Aru = {
+			change_leader_portrait = BA_leader_Aru
+			set_name = BA_name_leader_Aru
+		}
+		#鬼方佳世子
+		leader_BA_Kayoko = {
+			change_leader_portrait = BA_leader_Kayoko
+			set_name = BA_name_leader_Kayoko
+		}
+		#浅黄睦月
+		leader_BA_Mutsuki = {
+			change_leader_portrait = BA_leader_Mutsuki
+			set_name = BA_name_leader_Mutsuki
+		}
+		#伊草春香
+		leader_BA_Haruka = {
+			change_leader_portrait = BA_leader_Haruka
+			set_name = BA_name_leader_Haruka
+		}
+		#黑馆晴奈
+		leader_BA_Haruna = {
+			change_leader_portrait = BA_leader_Haruna
+			set_name = BA_name_leader_Haruna
+		}
+		#鳄渊明里
+		leader_BA_Akari = {
+			change_leader_portrait = BA_leader_Akari
+			set_name = BA_name_leader_Akari
+		}
+		#狮子堂泉
+		leader_BA_Izumi = {
+			change_leader_portrait = BA_leader_Izumi
+			set_name = BA_name_leader_Izumi
+		}
+		#赤司淳子
+		leader_BA_Junko = {
+			change_leader_portrait = BA_leader_Junko
+			set_name = BA_name_leader_Junko
+		}
+		#爱清枫香
+		leader_BA_Fuuka = {
+			change_leader_portrait = BA_leader_Fuuka
+			set_name = BA_name_leader_Fuuka
+		}
+		#牛牧朱莉
+		leader_BA_Juri = {
+			change_leader_portrait = BA_leader_Juri
+			set_name = BA_name_leader_Juri
+		}
+		#鬼怒川霞
+		leader_BA_Kasumi = {
+			change_leader_portrait = BA_leader_Kasumi
+			set_name = BA_name_leader_Kasumi
+		}
+		#下仓惠
+		leader_BA_Megu = {
+			change_leader_portrait = BA_leader_Megu
+			set_name = BA_name_leader_Megu
+		}
+		#夜樱绮罗罗
+		leader_BA_Kirara = {
+			change_leader_portrait = BA_leader_Kirara
+			set_name = BA_name_leader_Kirara
+		}
+		#旗见绘里香
+		leader_BA_Erika = {
+			change_leader_portrait = BA_leader_Erika
+			set_name = BA_name_leader_Erika
+		}
+		#冰室濑奈
+		leader_BA_Sena = {
+			change_leader_portrait = BA_leader_Sena
+			set_name = BA_name_leader_Sena
+		}
+		#调月莉音
+		leader_BA_Rio = {
+			change_leader_portrait = BA_leader_Rio
+			set_name = BA_name_leader_Rio
+		}
+		#早濑优香
+		leader_BA_Yuuka = {
+			change_leader_portrait = BA_leader_Yuuka
+			set_name = BA_name_leader_Yuuka
+		}
+		#生盐乃爱
+		leader_BA_Noa = {
+			change_leader_portrait = BA_leader_Noa
+			set_name = BA_name_leader_Noa
+		}
+		#黑崎小雪
+		leader_BA_Koyuki = {
+			change_leader_portrait = BA_leader_Koyuki
+			set_name = BA_name_leader_Koyuki
+		}
+		#美甘尼禄
+		leader_BA_Neru = {
+			change_leader_portrait = BA_leader_Neru
+			set_name = BA_name_leader_Neru
+		}
+		#一之濑明日奈
+		leader_BA_Asuna = {
+			change_leader_portrait = BA_leader_Asuna
+			set_name = BA_name_leader_Asuna
+		}
+		#角楯花凛
+		leader_BA_Karin = {
+			change_leader_portrait = BA_leader_Karin
+			set_name = BA_name_leader_Karin
+		}
+		#室笠朱音
+		leader_BA_Akane = {
+			change_leader_portrait = BA_leader_Akane
+			set_name = BA_name_leader_Akane
+		}
+		#飞鸟马时
+		leader_BA_Toki = {
+			change_leader_portrait = BA_leader_Toki
+			set_name = BA_name_leader_Toki
+		}
+		#花冈柚子
+		leader_BA_Yuzu = {
+			change_leader_portrait = BA_leader_Yuzu
+			set_name = BA_name_leader_Yuzu
+		}
+		#才羽桃井
+		leader_BA_Momoi = {
+			change_leader_portrait = BA_leader_Momoi
+			set_name = BA_name_leader_Momoi
+		}
+		#才羽绿
+		leader_BA_Midori = {
+			change_leader_portrait = BA_leader_Midori
+			set_name = BA_name_leader_Midori
+		}
+		#天童爱丽丝
+		leader_BA_Aris = {
+			change_leader_portrait = BA_leader_Aris
+			set_name = BA_name_leader_Aris
+		}
+		#各务千寻
+		leader_BA_Chihiro = {
+			change_leader_portrait = BA_leader_Chihiro
+			set_name = BA_name_leader_Chihiro
+		}
+		#音濑小玉
+		leader_BA_Kotama = {
+			change_leader_portrait = BA_leader_Kotama
+			set_name = BA_name_leader_Kotama
+		}
+		#小钩晴
+		leader_BA_Hare = {
+			change_leader_portrait = BA_leader_Hare
+			set_name = BA_name_leader_Hare
+		}
+		#小涂真纪
+		leader_BA_Maki = {
+			change_leader_portrait = BA_leader_Maki
+			set_name = BA_name_leader_Maki
+		}
+		#白石咏叶
+		leader_BA_Utaha = {
+			change_leader_portrait = BA_leader_Utaha
+			set_name = BA_name_leader_Utaha
+		}
+		#猫冢响
+		leader_BA_Hibiki = {
+			change_leader_portrait = BA_leader_Hibiki
+			set_name = BA_name_leader_Hibiki
+		}
+		#丰见亚都梨
+		leader_BA_Kotori = {
+			change_leader_portrait = BA_leader_Kotori
+			set_name = BA_name_leader_Kotori
+		}
+		#明星日鞠
+		leader_BA_Himari = {
+			change_leader_portrait = BA_leader_Himari
+			set_name = BA_name_leader_Himari
+		}
+		#和泉元艾米
+		leader_BA_Eimi = {
+			change_leader_portrait = BA_leader_Eimi
+			set_name = BA_name_leader_Eimi
+		}
+		#乙花堇
+		leader_BA_Sumire = {
+			change_leader_portrait = BA_leader_Sumire
+			set_name = BA_name_leader_Sumire
+		}
+		#野正丽
+		leader_BA_Rei = {
+			change_leader_portrait = BA_leader_Rei
+			set_name = BA_name_leader_Rei
+		}
+		#吾妻未来
+		leader_BA_Mirai = {
+			change_leader_portrait = BA_leader_Mirai
+			set_name = BA_name_leader_Mirai
+		}
+		#圣园未花
+		leader_BA_Mika = {
+			change_leader_portrait = BA_leader_Mika
+			set_name = BA_name_leader_Mika
+		}
+		#桐藤渚
+		leader_BA_Nagisa = {
+			change_leader_portrait = BA_leader_Nagisa
+			set_name = BA_name_leader_Nagisa
+		}
+		#百合园圣娅
+		leader_BA_Seia = {
+			change_leader_portrait = BA_leader_Seia
+			set_name = BA_name_leader_Seia
+		}
+		#阿慈谷日富美
+		leader_BA_Hifumi = {
+			change_leader_portrait = BA_leader_Hifumi
+			set_name = BA_name_leader_Hifumi
+		}
+		#白洲梓
+		leader_BA_Azusa = {
+			change_leader_portrait = BA_leader_Azusa
+			set_name = BA_name_leader_Azusa
+		}
+		#浦和花子
+		leader_BA_Hanako = {
+			change_leader_portrait = BA_leader_Hanako
+			set_name = BA_name_leader_Hanako
+		}
+		#下江小春
+		leader_BA_Koharu = {
+			change_leader_portrait = BA_leader_Koharu
+			set_name = BA_name_leader_Koharu
+		}
+		#剑先鹤城
+		leader_BA_Tsurugi = {
+			change_leader_portrait = BA_leader_Tsurugi
+			set_name = BA_name_leader_Tsurugi
+		}
+		#羽川莲实
+		leader_BA_Hasumi = {
+			change_leader_portrait = BA_leader_Hasumi
+			set_name = BA_name_leader_Hasumi
+		}
+		#仲正一花
+		leader_BA_Ichika = {
+			change_leader_portrait = BA_leader_Ichika
+			set_name = BA_name_leader_Ichika
+		}
+		#静山真白
+		leader_BA_Mashiro = {
+			change_leader_portrait = BA_leader_Mashiro
+			set_name = BA_name_leader_Mashiro
+		}
+		#歌住樱子
+		leader_BA_Sakurako = {
+			change_leader_portrait = BA_leader_Sakurako
+			set_name = BA_name_leader_Sakurako
+		}
+		#若叶日向
+		leader_BA_Hinata = {
+			change_leader_portrait = BA_leader_Hinata
+			set_name = BA_name_leader_Hinata
+		}
+		#伊落玛丽
+		leader_BA_Mari = {
+			change_leader_portrait = BA_leader_Mari
+			set_name = BA_name_leader_Mari
+		}
+		#栗村爱莉
+		leader_BA_Airi = {
+			change_leader_portrait = BA_leader_Airi
+			set_name = BA_name_leader_Airi
+		}
+		#杏山和纱
+		leader_BA_Kazusa = {
+			change_leader_portrait = BA_leader_Kazusa
+			set_name = BA_name_leader_Kazusa
+		}
+		#伊原木好美
+		leader_BA_Yoshimi = {
+			change_leader_portrait = BA_leader_Yoshimi
+			set_name = BA_name_leader_Yoshimi
+		}
+		#柚鸟夏
+		leader_BA_Natsu = {
+			change_leader_portrait = BA_leader_Natsu
+			set_name = BA_name_leader_Natsu
+		}
+		#苍森美弥
+		leader_BA_Mine = {
+			change_leader_portrait = BA_leader_Mine
+			set_name = BA_name_leader_Mine
+		}
+		#鹫见芹奈
+		leader_BA_Serina = {
+			change_leader_portrait = BA_leader_Serina
+			set_name = BA_name_leader_Serina
+		}
+		#朝颜花绘
+		leader_BA_Hanae = {
+			change_leader_portrait = BA_leader_Hanae
+			set_name = BA_name_leader_Hanae
+		}
+		#守月铃美
+		leader_BA_Suzumi = {
+			change_leader_portrait = BA_leader_Suzumi
+			set_name = BA_name_leader_Suzumi
+		}
+		#宇泽玲纱
+		leader_BA_Reisa = {
+			change_leader_portrait = BA_leader_Reisa
+			set_name = BA_name_leader_Reisa
+		}
+		#古关忧
+		leader_BA_Ui = {
+			change_leader_portrait = BA_leader_Ui
+			set_name = BA_name_leader_Ui
+		}
+		#圆堂志美子
+		leader_BA_Shimiko = {
+			change_leader_portrait = BA_leader_Shimiko
+			set_name = BA_name_leader_Shimiko
+		}
+		#狐坂若藻
+		leader_BA_Wakamo = {
+			change_leader_portrait = BA_leader_Wakamo
+			set_name = BA_name_leader_Wakamo
+		}
+		#天地妮娅
+		leader_BA_Niya = {
+			change_leader_portrait = BA_leader_Niya
+			set_name = BA_name_leader_Niya
+		}
+		#桑上果穗
+		leader_BA_Kaho = {
+			change_leader_portrait = BA_leader_Kaho
+			set_name = BA_name_leader_Kaho
+		}
+		#和乐千世
+		leader_BA_Chise = {
+			change_leader_portrait = BA_leader_Chise
+			set_name = BA_name_leader_Chise
+		}
+		#七棱菖蒲
+		leader_BA_Ayame = {
+			change_leader_portrait = BA_leader_Ayame
+			set_name = BA_name_leader_Ayame
+		}
+		#御棱名草
+		leader_BA_Nagusa = {
+			change_leader_portrait = BA_leader_Nagusa
+			set_name = BA_name_leader_Nagusa
+		}
+		#不破莲华
+		leader_BA_Renge = {
+			change_leader_portrait = BA_leader_Renge
+			set_name = BA_name_leader_Renge
+		}
+		#桐生桔梗
+		leader_BA_Kikyou = {
+			change_leader_portrait = BA_leader_Kikyou
+			set_name = BA_name_leader_Kikyou
+		}
+		#勘解由小路紫
+		leader_BA_Yukari = {
+			change_leader_portrait = BA_leader_Yukari
+			set_name = BA_name_leader_Yukari
+		}
+		#葛叶
+		leader_BA_Kuzunoha = {
+			change_leader_portrait = BA_leader_Kuzunoha
+			set_name = BA_name_leader_Kuzunoha
+		}
+		#春日椿
+		leader_BA_Tsubaki = {
+			change_leader_portrait = BA_leader_Tsubaki
+			set_name = BA_name_leader_Tsubaki
+		}
+		#水羽三森
+		leader_BA_Mimori = {
+			change_leader_portrait = BA_leader_Mimori
+			set_name = BA_name_leader_Mimori
+		}
+		#勇美枫
+		leader_BA_Kaede = {
+			change_leader_portrait = BA_leader_Kaede
+			set_name = BA_name_leader_Kaede
+		}
+		#千鸟满
+		leader_BA_Michiru = {
+			change_leader_portrait = BA_leader_Michiru
+			set_name = BA_name_leader_Michiru
+		}
+		#久田泉奈
+		leader_BA_Izuna = {
+			change_leader_portrait = BA_leader_Izuna
+			set_name = BA_name_leader_Izuna
+		}
+		#大野月夜
+		leader_BA_Tsukuyo = {
+			change_leader_portrait = BA_leader_Tsukuyo
+			set_name = BA_name_leader_Tsukuyo
+		}
+		#河和静子
+		leader_BA_Shizuko = {
+			change_leader_portrait = BA_leader_Shizuko
+			set_name = BA_name_leader_Shizuko
+		}
+		#朝比奈菲娜
+		leader_BA_Pina = {
+			change_leader_portrait = BA_leader_Pina
+			set_name = BA_name_leader_Pina
+		}
+		#里滨海香
+		leader_BA_Umika = {
+			change_leader_portrait = BA_leader_Umika
+			set_name = BA_name_leader_Umika
+		}
+		#虞美人
+		leader_BA_Kokuriko = {
+			change_leader_portrait = BA_leader_Kokuriko
+			set_name = BA_name_leader_Kokuriko
+		}
+		#箭吹棕榈
+		leader_BA_Shuro = {
+			change_leader_portrait = BA_leader_Shuro
+			set_name = BA_name_leader_Shuro
+		}
+		#土生蓟
+		leader_BA_Azami = {
+			change_leader_portrait = BA_leader_Azami
+			set_name = BA_name_leader_Azami
+		}
+		#新
+		leader_BA_Arata = {
+			change_leader_portrait = BA_leader_Arata
+			set_name = BA_name_leader_Arata
+		}
+		#连河切莉诺
+		leader_BA_Cherino = {
+			change_leader_portrait = BA_leader_Cherino
+			set_name = BA_name_leader_Cherino
+		}
+		#佐城智惠
+		leader_BA_Tomoe = {
+			change_leader_portrait = BA_leader_Tomoe
+			set_name = BA_name_leader_Tomoe
+		}
+		#池仓玛丽娜
+		leader_BA_Marina = {
+			change_leader_portrait = BA_leader_Marina
+			set_name = BA_name_leader_Marina
+		}
+		#天见和香
+		leader_BA_Nodoka = {
+			change_leader_portrait = BA_leader_Nodoka
+			set_name = BA_name_leader_Nodoka
+		}
+		#间宵时雨
+		leader_BA_Shigure = {
+			change_leader_portrait = BA_leader_Shigure
+			set_name = BA_name_leader_Shigure
+		}
+		#秋泉红叶
+		leader_BA_Momiji = {
+			change_leader_portrait = BA_leader_Momiji
+			set_name = BA_name_leader_Momiji
+		}
+		#姬木爱瑠
+		leader_BA_Meru = {
+			change_leader_portrait = BA_leader_Meru
+			set_name = BA_name_leader_Meru
+		}
+		#荒槙八云
+		leader_BA_Yakumo = {
+			change_leader_portrait = BA_leader_Yakumo
+			set_name = BA_name_leader_Yakumo
+		}
+		#三善贵音
+		leader_BA_Takane = {
+			change_leader_portrait = BA_leader_Takane
+			set_name = BA_name_leader_Takane
+		}
+		#安守实里
+		leader_BA_Minori = {
+			change_leader_portrait = BA_leader_Minori
+			set_name = BA_name_leader_Minori
+		}
+		#龙华妃咲
+		leader_BA_Kisaki = {
+			change_leader_portrait = BA_leader_Kisaki
+			set_name = BA_name_leader_Kisaki
+		}
+		#近卫弥奈
+		leader_BA_Mina = {
+			change_leader_portrait = BA_leader_Mina
+			set_name = BA_name_leader_Mina
+		}
+		#朱城瑠美
+		leader_BA_Rumi = {
+			change_leader_portrait = BA_leader_Rumi
+			set_name = BA_name_leader_Rumi
+		}
+		#鹿山丽情
+		leader_BA_Reijo = {
+			change_leader_portrait = BA_leader_Reijo
+			set_name = BA_name_leader_Reijo
+		}
+		#春原瞬
+		leader_BA_Shun = {
+			change_leader_portrait = BA_leader_Shun
+			set_name = BA_name_leader_Shun
+		}
+		#春原心奈
+		leader_BA_Kokona = {
+			change_leader_portrait = BA_leader_Kokona
+			set_name = BA_name_leader_Kokona
+		}
+		#申谷海
+		leader_BA_Kai = {
+			change_leader_portrait = BA_leader_Kai
+			set_name = BA_name_leader_Kai
+		}
+		#药子沙耶
+		leader_BA_Saya = {
+			change_leader_portrait = BA_leader_Saya
+			set_name = BA_name_leader_Saya
+		}
+		#漆原辉夜
+		leader_BA_Kaguya = {
+			change_leader_portrait = BA_leader_Kaguya
+			set_name = BA_name_leader_Kaguya
+		}
+		#尾刃康娜
+		leader_BA_Kanna = {
+			change_leader_portrait = BA_leader_Kanna
+			set_name = BA_name_leader_Kanna
+		}
+		#木乃香
+		leader_BA_Konoka = {
+			change_leader_portrait = BA_leader_Konoka
+			set_name = BA_name_leader_Konoka
+		}
+		#中务桐乃
+		leader_BA_Kirino = {
+			change_leader_portrait = BA_leader_Kirino
+			set_name = BA_name_leader_Kirino
+		}
+		#合欢垣吹雪
+		leader_BA_Fubuki = {
+			change_leader_portrait = BA_leader_Fubuki
+			set_name = BA_name_leader_Fubuki
+		}
+		#锭前纱织
+		leader_BA_Saori = {
+			change_leader_portrait = BA_leader_Saori
+			set_name = BA_name_leader_Saori
+		}
+		#秤亚津子
+		leader_BA_Atsuko = {
+			change_leader_portrait = BA_leader_Atsuko
+			set_name = BA_name_leader_Atsuko
+		}
+		#戒野美咲
+		leader_BA_Misaki = {
+			change_leader_portrait = BA_leader_Misaki
+			set_name = BA_name_leader_Misaki
+		}
+		#槌永日和
+		leader_BA_Hiyori = {
+			change_leader_portrait = BA_leader_Hiyori
+			set_name = BA_name_leader_Hiyori
+		}
+		#梯昴
+		leader_BA_Subaru = {
+			change_leader_portrait = BA_leader_Subaru
+			set_name = BA_name_leader_Subaru
+		}
+		#立木迈亚
+		leader_BA_Maia = {
+			change_leader_portrait = BA_leader_Maia
+			set_name = BA_name_leader_Maia
+		}
+		#月雪宫子
+		leader_BA_Miyako = {
+			change_leader_portrait = BA_leader_Miyako
+			set_name = BA_name_leader_Miyako
+		}
+		#空井咲
+		leader_BA_Saki = {
+			change_leader_portrait = BA_leader_Saki
+			set_name = BA_name_leader_Saki
+		}
+		#霞泽美游
+		leader_BA_Miyu = {
+			change_leader_portrait = BA_leader_Miyu
+			set_name = BA_name_leader_Miyu
+		}
+		#风仓萌绘
+		leader_BA_Moe = {
+			change_leader_portrait = BA_leader_Moe
+			set_name = BA_name_leader_Moe
+		}
+		#七度雪乃
+		leader_BA_Yukino = {
+			change_leader_portrait = BA_leader_Yukino
+			set_name = BA_name_leader_Yukino
+		}
+		#妮可
+		leader_BA_Niko = {
+			change_leader_portrait = BA_leader_Niko
+			set_name = BA_name_leader_Niko
+		}
+		#胡桃
+		leader_BA_Kurumi = {
+			change_leader_portrait = BA_leader_Kurumi
+			set_name = BA_name_leader_Kurumi
+		}
+		#音葵
+		leader_BA_Otogi = {
+			change_leader_portrait = BA_leader_Otogi
+			set_name = BA_name_leader_Otogi
+		}
+		#橘光明
+		leader_BA_Hikari = {
+			change_leader_portrait = BA_leader_Hikari
+			set_name = BA_name_leader_Hikari
+		}
+		#橘希望
+		leader_BA_Nozomi = {
+			change_leader_portrait = BA_leader_Nozomi
+			set_name = BA_name_leader_Nozomi
+		}
+		#朝雾周防
+		leader_BA_Suou = {
+			change_leader_portrait = BA_leader_Suou
+			set_name = BA_name_leader_Suou
+		}
+		#内海青叶
+		leader_BA_Aoba = {
+			change_leader_portrait = BA_leader_Aoba
+			set_name = BA_name_leader_Aoba
+		}
+		###   狂猎
+		#云类鹫真奈美
+		# leader_BA_Manami = {
+		# 	change_leader_portrait = BA_leader_Manami
+		# 	set_name = BA_name_leader_Manami
+		# }
+		#清澄晶
+		leader_BA_Akira = {
+			change_leader_portrait = BA_leader_Akira
+			set_name = BA_name_leader_Akira
+		}
+		#裕美
+		leader_BA_Hiromi = {
+			change_leader_portrait = BA_leader_Hiromi
+			set_name = BA_name_leader_Hiromi
+		}
+		#白尾绘里
+		leader_BA_Eri = {
+			change_leader_portrait = BA_leader_Eri
+			set_name = BA_name_leader_Eri
+		}
+		#椎名纺希
+		leader_BA_Tsumugi = {
+			change_leader_portrait = BA_leader_Tsumugi
+			set_name = BA_name_leader_Tsumugi
+		}
+		#板垣鹿江
+		leader_BA_Kanoe = {
+			change_leader_portrait = BA_leader_Kanoe
+			set_name = BA_name_leader_Kanoe
+		}
+		#衣斐蕾娜
+		leader_BA_Rena = {
+			change_leader_portrait = BA_leader_Rena
+			set_name = BA_name_leader_Rena
+		}
+		#樱井美代
+		leader_BA_Miyo = {
+			change_leader_portrait = BA_leader_Miyo
+			set_name = BA_name_leader_Miyo
+		}
+		#若狭冬优
+		leader_BA_Fuyu = {
+			change_leader_portrait = BA_leader_Fuyu
+			set_name = BA_name_leader_Fuyu
+		}
+		#薄叶律
+		leader_BA_Ritsu = {
+			change_leader_portrait = BA_leader_Ritsu
+			set_name = BA_name_leader_Ritsu
+		}
+		#初音未来
+		leader_BA_HatsuneMiku = {
+			change_leader_portrait = BA_leader_HatsuneMiku
+			set_name = BA_name_leader_HatsuneMiku
+		}
+		#笑面教授
+		leader_BA_ProfessorSmug = {
+			change_leader_portrait = BA_leader_ProfessorSmug
+			set_name = BA_name_leader_ProfessorSmug
+		}
+		#（联邦学生会会长）
+		leader_BA_StudentCouncilPresident = {
+			change_leader_portrait = BA_leader_StudentCouncilPresident
+			set_name = BA_name_leader_StudentCouncilPresident
+		}
+		#七神凛
+		leader_BA_Rin = {
+			change_leader_portrait = BA_leader_Rin
+			set_name = BA_name_leader_Rin
+		}
+		#由良木桃香
+		leader_BA_Momoka = {
+			change_leader_portrait = BA_leader_Momoka
+			set_name = BA_name_leader_Momoka
+		}
+		#岩柜步梦
+		leader_BA_Ayumu = {
+			change_leader_portrait = BA_leader_Ayumu
+			set_name = BA_name_leader_Ayumu
+		}
+		#不知火花耶
+		leader_BA_Kaya = {
+			change_leader_portrait = BA_leader_Kaya
+			set_name = BA_name_leader_Kaya
+		}
+		#扇喜葵
+		leader_BA_Aoi = {
+			change_leader_portrait = BA_leader_Aoi
+			set_name = BA_name_leader_Aoi
+		}
+		#灰音
+		leader_BA_Haine = {
+			change_leader_portrait = BA_leader_Haine
+			set_name = BA_name_leader_Haine
+		}
+		#李
+		leader_BA_Sumomo = {
+			change_leader_portrait = BA_leader_Sumomo
+			set_name = BA_name_leader_Sumomo
+		}
+		#阿洛娜
+		leader_BA_Arona = {
+			change_leader_portrait = BA_leader_Arona
+			set_name = BA_name_leader_Arona
+		}
+		#普拉娜
+		leader_BA_Plana = {
+			change_leader_portrait = BA_leader_Plana
+			set_name = BA_name_leader_Plana
+		}
+		#空
+		leader_BA_Sora = {
+			change_leader_portrait = BA_leader_Sora
+			set_name = BA_name_leader_Sora
+		}
+		#河驹风兰舞
+		leader_BA_Labu = {
+			change_leader_portrait = BA_leader_Labu
+			set_name = BA_name_leader_Labu
+		}
+		#川流诗音
+		leader_BA_Shinon = {
+			change_leader_portrait = BA_leader_Shinon
+			set_name = BA_name_leader_Shinon
+		}
+		#风卷麻衣
+		leader_BA_Mai = {
+			change_leader_portrait = BA_leader_Mai
+			set_name = BA_name_leader_Mai
+		}
+		#艾茵
+		leader_BA_Ayin = {
+			change_leader_portrait = BA_leader_Ayin
+			set_name = BA_name_leader_Ayin
+		}
+		#索芙
+		leader_BA_Soph = {
+			change_leader_portrait = BA_leader_Soph
+			set_name = BA_name_leader_Soph
+		}
+		#奥茹
+		leader_BA_Aur = {
+			change_leader_portrait = BA_leader_Aur
+			set_name = BA_name_leader_Aur
+		}
+		#柯伊
+		leader_BA_Kei = {
+			change_leader_portrait = BA_leader_Kei
+			set_name = BA_name_leader_Kei
+		}
+	}
 }
 
-#检测领袖标志，为领袖更换社团特质 leader
-BA_rename_effect_club = {
-    optimize_memory
-    BA_remove_club_trait = yes
-    ### 阿拜多斯
-    #对策委员会
-    if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Hoshino
-                has_leader_flag = leader_BA_Shiroko
-                has_leader_flag = leader_BA_Serika
-                has_leader_flag = leader_BA_Nonomi
-                has_leader_flag = leader_BA_Ayane
-            }
-        }
-        add_trait = {
-            trait = leader_club_Abydos_01
-            show_message = no
-        }
-    }
-    #阿拜多斯学生会
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Yume
-            }
-        }
-        add_trait = {
-            trait = leader_club_Abydos_02
-        }
-    }
-    ### 格黑那
-    #万魔殿
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Makoto
-                has_leader_flag = leader_BA_Iroha
-                has_leader_flag = leader_BA_Ibuki
-                has_leader_flag = leader_BA_Satsuki
-                has_leader_flag = leader_BA_Chiaki
-            }
-        }
-        add_trait = {
-            trait = leader_club_Gehenna_01
-        }
-    }
-    #风纪委员会
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Hina
-                has_leader_flag = leader_BA_Ako
-                has_leader_flag = leader_BA_Iori
-                has_leader_flag = leader_BA_Chinatsu
-            }
-        }
-        add_trait = {
-            trait = leader_club_Gehenna_02
-        }
-    }
-    #万事屋68
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Aru
-                has_leader_flag = leader_BA_Kayoko
-                has_leader_flag = leader_BA_Mutsuki
-                has_leader_flag = leader_BA_Haruka
-            }
-        }
-        add_trait = {
-            trait = leader_club_Gehenna_03
-        }
-    }
-    #美食研究会
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Haruna
-                has_leader_flag = leader_BA_Akari
-                has_leader_flag = leader_BA_Izumi
-                has_leader_flag = leader_BA_Junko
-            }
-        }
-        add_trait = {
-            trait = leader_club_Gehenna_04
-        }
-    }
-    #给食部
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Fuuka
-                has_leader_flag = leader_BA_Juri
-            }
-        }
-        add_trait = {
-            trait = leader_club_Gehenna_05
-        }
-    }
-    #温泉部
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Kasumi
-                has_leader_flag = leader_BA_Megu
-            }
-        }
-        add_trait = {
-            trait = leader_club_Gehenna_06
-        }
-    }
-    #闪闪社
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Kirara
-                has_leader_flag = leader_BA_Erika
-            }
-        }
-        add_trait = {
-            trait = leader_club_Gehenna_07
-        }
-    }
-    #急救医学部
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Sena
-            }
-        }
-        add_trait = {
-            trait = leader_club_Gehenna_08
-        }
-    }
-    ### 千年
-    #研讨会
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Rio
-                has_leader_flag = leader_BA_Yuuka
-                has_leader_flag = leader_BA_Noa
-                has_leader_flag = leader_BA_Koyuki
-            }
-        }
-        add_trait = {
-            trait = leader_club_Millennium_01
-        }
-    }
-    #C&C
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Neru
-                has_leader_flag = leader_BA_Asuna
-                has_leader_flag = leader_BA_Karin
-                has_leader_flag = leader_BA_Akane
-                has_leader_flag = leader_BA_Toki
-            }
-        }
-        add_trait = {
-            trait = leader_club_Millennium_02
-        }
-    }
-    #游戏开发部
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Yuzu
-                has_leader_flag = leader_BA_Momoi
-                has_leader_flag = leader_BA_Midori
-                has_leader_flag = leader_BA_Aris
-            }
-        }
-        add_trait = {
-            trait = leader_club_Millennium_03
-        }
-    }
-    #真理部
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Chihiro
-                has_leader_flag = leader_BA_Kotama
-                has_leader_flag = leader_BA_Hare
-                has_leader_flag = leader_BA_Maki
-            }
-        }
-        add_trait = {
-            trait = leader_club_Millennium_04
-        }
-    }
-    #工程师部
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Utaha
-                has_leader_flag = leader_BA_Hibiki
-                has_leader_flag = leader_BA_Kotori
-            }
-        }
-        add_trait = {
-            trait = leader_club_Millennium_05
-        }
-    }
-    #特异现象搜查部
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Himari
-                has_leader_flag = leader_BA_Eimi
-                has_leader_flag = leader_BA_Kei
-            }
-        }
-        add_trait = {
-            trait = leader_club_Millennium_06
-        }
-    }
-    #田径训练部
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Sumire
-                has_leader_flag = leader_BA_Rei
-            }
-        }
-        add_trait = {
-            trait = leader_club_Millennium_07
-        }
-    }
-    #超自然现象部
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Mirai
-            }
-        }
-        add_trait = {
-            trait = leader_club_Millennium_08
-        }
-    }
-    ### 圣三一
-    #茶会
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Mika
-                has_leader_flag = leader_BA_Nagisa
-                has_leader_flag = leader_BA_Seia
-            }
-        }
-        add_trait = {
-            trait = leader_club_Trinity_01
-        }
-    }
-    #补习部
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Hifumi
-                has_leader_flag = leader_BA_Azusa
-                has_leader_flag = leader_BA_Hanako
-                has_leader_flag = leader_BA_Koharu
-            }
-        }
-        add_trait = {
-            trait = leader_club_Trinity_02
-        }
-    }
-    #正义实现委员会
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Tsurugi
-                has_leader_flag = leader_BA_Hasumi
-                has_leader_flag = leader_BA_Ichika
-                has_leader_flag = leader_BA_Mashiro
-            }
-        }
-        add_trait = {
-            trait = leader_club_Trinity_03
-        }
-    }
-    #修女会
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Sakurako
-                has_leader_flag = leader_BA_Hinata
-                has_leader_flag = leader_BA_Mari
-            }
-        }
-        add_trait = {
-            trait = leader_club_Trinity_04
-        }
-    }
-    #放学后的甜点部
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Airi
-                has_leader_flag = leader_BA_Kazusa
-                has_leader_flag = leader_BA_Yoshimi
-                has_leader_flag = leader_BA_Natsu
-            }
-        }
-        add_trait = {
-            trait = leader_club_Trinity_05
-        }
-    }
-    #救护骑士团
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Mine
-                has_leader_flag = leader_BA_Serina
-                has_leader_flag = leader_BA_Hanae
-            }
-        }
-        add_trait = {
-            trait = leader_club_Trinity_06
-        }
-    }
-    #自警团
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Suzumi
-                has_leader_flag = leader_BA_Reisa
-            }
-        }
-        add_trait = {
-            trait = leader_club_Trinity_07
-        }
-    }
-    #图书委员会
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Ui
-                has_leader_flag = leader_BA_Shimiko
-            }
-        }
-        add_trait = {
-            trait = leader_club_Trinity_08
-        }
-    }
-    ### 百鬼夜行
-    #阴阳部
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Niya
-                has_leader_flag = leader_BA_Kaho
-                has_leader_flag = leader_BA_Chise
-            }
-        }
-        add_trait = {
-            trait = leader_club_Hyakkiyako_01
-        }
-    }
-    #百花缭乱调停委员会
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Ayame
-                has_leader_flag = leader_BA_Nagusa
-                has_leader_flag = leader_BA_Renge
-                has_leader_flag = leader_BA_Kikyou
-                has_leader_flag = leader_BA_Yukari
-            }
-        }
-        add_trait = {
-            trait = leader_club_Hyakkiyako_02
-        }
-    }
-    #心修炼成部
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Tsubaki
-                has_leader_flag = leader_BA_Mimori
-                has_leader_flag = leader_BA_Kaede
-            }
-        }
-        add_trait = {
-            trait = leader_club_Hyakkiyako_03
-        }
-    }
-    #忍术研究部
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Michiru
-                has_leader_flag = leader_BA_Izuna
-                has_leader_flag = leader_BA_Tsukuyo
-            }
-        }
-        add_trait = {
-            trait = leader_club_Hyakkiyako_04
-        }
-    }
-    #祭典运营部
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Shizuko
-                has_leader_flag = leader_BA_Pina
-                has_leader_flag = leader_BA_Umika
-            }
-        }
-        add_trait = {
-            trait = leader_club_Hyakkiyako_05
-        }
-    }
-    #花鸟风月部
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Kokuriko
-                has_leader_flag = leader_BA_Shuro
-                has_leader_flag = leader_BA_Azami
-            }
-        }
-        add_trait = {
-            trait = leader_club_Hyakkiyako_06
-        }
-    }
-    #魑魅一座
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Arata
-            }
-        }
-        add_trait = {
-            trait = leader_club_Hyakkiyako_07
-        }
-    }
-    ### 红冬
-    #红冬事务局
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Cherino
-                has_leader_flag = leader_BA_Tomoe
-                has_leader_flag = leader_BA_Marina
-            }
-        }
-        add_trait = {
-            trait = leader_club_RedWinter_01
-        }
-    }
-    #227特别班
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Nodoka
-                has_leader_flag = leader_BA_Shigure
-            }
-        }
-        add_trait = {
-            trait = leader_club_RedWinter_02
-        }
-    }
-    #知识解放战线
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Momiji
-                has_leader_flag = leader_BA_Meru
-            }
-        }
-        add_trait = {
-            trait = leader_club_RedWinter_03
-        }
-    }
-    #出版部
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Yakumo
-                has_leader_flag = leader_BA_Takane
-            }
-        }
-        add_trait = {
-            trait = leader_club_RedWinter_04
-        }
-    }
-    #劳务部
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Minori
-            }
-        }
-        add_trait = {
-            trait = leader_club_RedWinter_05
-        }
-    }
-    ### 山海经
-    #玄龙门
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Kisaki
-                has_leader_flag = leader_BA_Mina
-            }
-        }
-        add_trait = {
-            trait = leader_club_Shanhaijing_01
-        }
-    }
-    #玄武商会
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Rumi
-                has_leader_flag = leader_BA_Reijo
-            }
-        }
-        add_trait = {
-            trait = leader_club_Shanhaijing_02
-        }
-    }
-    #梅花园
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Shun
-                has_leader_flag = leader_BA_Kokona
-            }
-        }
-        add_trait = {
-            trait = leader_club_Shanhaijing_03
-        }
-    }
-    #炼丹术研究会
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Kai
-                has_leader_flag = leader_BA_Saya
-            }
-        }
-        add_trait = {
-            trait = leader_club_Shanhaijing_04
-        }
-    }
-    #京剧部
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Kaguya
-            }
-        }
-        add_trait = {
-            trait = leader_club_Shanhaijing_05
-        }
-    }
-    ### 瓦尔基里
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Kanna
-                has_leader_flag = leader_BA_Konoka
-                has_leader_flag = leader_BA_Kirino
-                has_leader_flag = leader_BA_Fubuki
-            }
-        }
-        add_trait = {
-            trait = leader_club_Valkyrie_00
-        }
-    }
-    ### 阿里乌斯
-    #阿里乌斯小队
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Saori
-                has_leader_flag = leader_BA_Atsuko
-                has_leader_flag = leader_BA_Misaki
-                has_leader_flag = leader_BA_Hiyori
-            }
-        }
-        add_trait = {
-            trait = leader_club_Arius_01
-        }
-    }
-    #尼科米底亚部队
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Subaru
-                has_leader_flag = leader_BA_Maia
-            }
-        }
-        add_trait = {
-            trait = leader_club_Arius_02
-        }
-    }
-    ### SRT
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Miyako
-                has_leader_flag = leader_BA_Saki
-                has_leader_flag = leader_BA_Miyu
-                has_leader_flag = leader_BA_Moe
-                has_leader_flag = leader_BA_Yukino
-                has_leader_flag = leader_BA_Niko
-                has_leader_flag = leader_BA_Kurumi
-                has_leader_flag = leader_BA_Otogi
-            }
-        }
-        add_trait = {
-            trait = leader_club_SRT_00
-        }
-    }
-    ### 海兰德
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Suou
-                has_leader_flag = leader_BA_Aoba
-            }
-        }
-        add_trait = {
-            trait = leader_club_Highlander_00
-        }
-    }
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Hikari
-                has_leader_flag = leader_BA_Nozomi
-            }
-        }
-        add_trait = {
-            trait = leader_club_Highlander_01
-        }
-    }
-    ### 狂猎
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Hiromi
-                has_leader_flag = leader_BA_Eri
-                has_leader_flag = leader_BA_Tsumugi
-                has_leader_flag = leader_BA_Kanoe
-                has_leader_flag = leader_BA_Rena
-                has_leader_flag = leader_BA_Miyo
-                has_leader_flag = leader_BA_Fuyu
-                has_leader_flag = leader_BA_Ritsu
-            }
-        }
-        add_trait = {
-            trait = leader_club_Wildhunt_00
-        }
-    }
-    ### 其他
-    #联邦学生会
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_StudentCouncilPresident
-                has_leader_flag = leader_BA_Rin
-                has_leader_flag = leader_BA_Momoka
-                has_leader_flag = leader_BA_Ayumu
-                has_leader_flag = leader_BA_Kaya
-                has_leader_flag = leader_BA_Aoi
-                has_leader_flag = leader_BA_Haine
-                has_leader_flag = leader_BA_Sumomo
-            }
-        }
-        add_trait = {
-            trait = leader_club_Kivotos_01
-        }
-    }
-    #夏莱
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Arona
-                has_leader_flag = leader_BA_Plana
-                has_leader_flag = leader_BA_Sora
-            }
-        }
-        add_trait = {
-            trait = leader_club_Kivotos_02
-        }
-    }
-    #（初音未来专用）
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_HatsuneMiku
-            }
-        }
-        add_trait = {
-            trait = leader_club_Kivotos_03
-        }
-    }
-    #（葛叶专用）
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Kuzunoha
-            }
-        }
-        add_trait = {
-            trait = leader_club_Kivotos_04
-        }
-    }
-    #（七囚人与笑面教授）
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Wakamo
-                has_leader_flag = leader_BA_Akira
-                has_leader_flag = leader_BA_ProfessorSmug
-            }
-        }
-        add_trait = {
-            trait = leader_club_Kivotos_05
-        }
-    }
-    #（三小只）
-    else_if = {
-        limit = {
-            OR = {
-                has_leader_flag = leader_BA_Ayin
-                has_leader_flag = leader_BA_Soph
-                has_leader_flag = leader_BA_Aur
-            }
-        }
-        add_trait = {
-            trait = leader_club_Kivotos_06
-        }
-    }
-    ### Default
-    else = {
-        add_trait = {
-            trait = leader_club_default
-        }
-    }
-    set_leader_flag = BA_has_club_trait
+# 动作器：社团特质
+BA_rename_effect_club_trait = {
+	optimize_memory
+	### 阿拜多斯
+	#对策委员会
+	if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Hoshino
+				has_leader_flag = leader_BA_Shiroko
+				has_leader_flag = leader_BA_Serika
+				has_leader_flag = leader_BA_Nonomi
+				has_leader_flag = leader_BA_Ayane
+			}
+		}
+		add_trait = {
+			trait = leader_club_Abydos_01
+			show_message = no
+		}
+	}
+	#阿拜多斯学生会
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Yume
+			}
+		}
+		add_trait = {
+			trait = leader_club_Abydos_02
+			show_message = no
+		}
+	}
+	### 格黑那
+	#万魔殿
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Makoto
+				has_leader_flag = leader_BA_Iroha
+				has_leader_flag = leader_BA_Ibuki
+				has_leader_flag = leader_BA_Satsuki
+				has_leader_flag = leader_BA_Chiaki
+			}
+		}
+		add_trait = {
+			trait = leader_club_Gehenna_01
+			show_message = no
+		}
+	}
+	#风纪委员会
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Hina
+				has_leader_flag = leader_BA_Ako
+				has_leader_flag = leader_BA_Iori
+				has_leader_flag = leader_BA_Chinatsu
+			}
+		}
+		add_trait = {
+			trait = leader_club_Gehenna_02
+			show_message = no
+		}
+	}
+	#万事屋68
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Aru
+				has_leader_flag = leader_BA_Kayoko
+				has_leader_flag = leader_BA_Mutsuki
+				has_leader_flag = leader_BA_Haruka
+			}
+		}
+		add_trait = {
+			trait = leader_club_Gehenna_03
+			show_message = no
+		}
+	}
+	#美食研究会
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Haruna
+				has_leader_flag = leader_BA_Akari
+				has_leader_flag = leader_BA_Izumi
+				has_leader_flag = leader_BA_Junko
+			}
+		}
+		add_trait = {
+			trait = leader_club_Gehenna_04
+			show_message = no
+		}
+	}
+	#给食部
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Fuuka
+				has_leader_flag = leader_BA_Juri
+			}
+		}
+		add_trait = {
+			trait = leader_club_Gehenna_05
+			show_message = no
+		}
+	}
+	#温泉部
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Kasumi
+				has_leader_flag = leader_BA_Megu
+			}
+		}
+		add_trait = {
+			trait = leader_club_Gehenna_06
+			show_message = no
+		}
+	}
+	#闪闪社
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Kirara
+				has_leader_flag = leader_BA_Erika
+			}
+		}
+		add_trait = {
+			trait = leader_club_Gehenna_07
+			show_message = no
+		}
+	}
+	#急救医学部
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Sena
+			}
+		}
+		add_trait = {
+			trait = leader_club_Gehenna_08
+			show_message = no
+		}
+	}
+	### 千年
+	#研讨会
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Rio
+				has_leader_flag = leader_BA_Yuuka
+				has_leader_flag = leader_BA_Noa
+				has_leader_flag = leader_BA_Koyuki
+			}
+		}
+		add_trait = {
+			trait = leader_club_Millennium_01
+			show_message = no
+		}
+	}
+	#C&C
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Neru
+				has_leader_flag = leader_BA_Asuna
+				has_leader_flag = leader_BA_Karin
+				has_leader_flag = leader_BA_Akane
+				has_leader_flag = leader_BA_Toki
+			}
+		}
+		add_trait = {
+			trait = leader_club_Millennium_02
+			show_message = no
+		}
+	}
+	#游戏开发部
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Yuzu
+				has_leader_flag = leader_BA_Momoi
+				has_leader_flag = leader_BA_Midori
+				has_leader_flag = leader_BA_Aris
+			}
+		}
+		add_trait = {
+			trait = leader_club_Millennium_03
+			show_message = no
+		}
+	}
+	#真理部
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Chihiro
+				has_leader_flag = leader_BA_Kotama
+				has_leader_flag = leader_BA_Hare
+				has_leader_flag = leader_BA_Maki
+			}
+		}
+		add_trait = {
+			trait = leader_club_Millennium_04
+			show_message = no
+		}
+	}
+	#工程师部
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Utaha
+				has_leader_flag = leader_BA_Hibiki
+				has_leader_flag = leader_BA_Kotori
+			}
+		}
+		add_trait = {
+			trait = leader_club_Millennium_05
+			show_message = no
+		}
+	}
+	#特异现象搜查部
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Himari
+				has_leader_flag = leader_BA_Eimi
+				has_leader_flag = leader_BA_Kei
+			}
+		}
+		add_trait = {
+			trait = leader_club_Millennium_06
+			show_message = no
+		}
+	}
+	#田径训练部
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Sumire
+				has_leader_flag = leader_BA_Rei
+			}
+		}
+		add_trait = {
+			trait = leader_club_Millennium_07
+			show_message = no
+		}
+	}
+	#超自然现象部
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Mirai
+			}
+		}
+		add_trait = {
+			trait = leader_club_Millennium_08
+			show_message = no
+		}
+	}
+	### 圣三一
+	#茶会
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Mika
+				has_leader_flag = leader_BA_Nagisa
+				has_leader_flag = leader_BA_Seia
+			}
+		}
+		add_trait = {
+			trait = leader_club_Trinity_01
+			show_message = no
+		}
+	}
+	#补习部
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Hifumi
+				has_leader_flag = leader_BA_Azusa
+				has_leader_flag = leader_BA_Hanako
+				has_leader_flag = leader_BA_Koharu
+			}
+		}
+		add_trait = {
+			trait = leader_club_Trinity_02
+			show_message = no
+		}
+	}
+	#正义实现委员会
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Tsurugi
+				has_leader_flag = leader_BA_Hasumi
+				has_leader_flag = leader_BA_Ichika
+				has_leader_flag = leader_BA_Mashiro
+			}
+		}
+		add_trait = {
+			trait = leader_club_Trinity_03
+			show_message = no
+		}
+	}
+	#修女会
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Sakurako
+				has_leader_flag = leader_BA_Hinata
+				has_leader_flag = leader_BA_Mari
+			}
+		}
+		add_trait = {
+			trait = leader_club_Trinity_04
+			show_message = no
+		}
+	}
+	#放学后的甜点部
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Airi
+				has_leader_flag = leader_BA_Kazusa
+				has_leader_flag = leader_BA_Yoshimi
+				has_leader_flag = leader_BA_Natsu
+			}
+		}
+		add_trait = {
+			trait = leader_club_Trinity_05
+			show_message = no
+		}
+	}
+	#救护骑士团
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Mine
+				has_leader_flag = leader_BA_Serina
+				has_leader_flag = leader_BA_Hanae
+			}
+		}
+		add_trait = {
+			trait = leader_club_Trinity_06
+			show_message = no
+		}
+	}
+	#自警团
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Suzumi
+				has_leader_flag = leader_BA_Reisa
+			}
+		}
+		add_trait = {
+			trait = leader_club_Trinity_07
+			show_message = no
+		}
+	}
+	#图书委员会
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Ui
+				has_leader_flag = leader_BA_Shimiko
+			}
+		}
+		add_trait = {
+			trait = leader_club_Trinity_08
+			show_message = no
+		}
+	}
+	### 百鬼夜行
+	#阴阳部
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Niya
+				has_leader_flag = leader_BA_Kaho
+				has_leader_flag = leader_BA_Chise
+			}
+		}
+		add_trait = {
+			trait = leader_club_Hyakkiyako_01
+			show_message = no
+		}
+	}
+	#百花缭乱调停委员会
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Ayame
+				has_leader_flag = leader_BA_Nagusa
+				has_leader_flag = leader_BA_Renge
+				has_leader_flag = leader_BA_Kikyou
+				has_leader_flag = leader_BA_Yukari
+			}
+		}
+		add_trait = {
+			trait = leader_club_Hyakkiyako_02
+			show_message = no
+		}
+	}
+	#心修炼成部
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Tsubaki
+				has_leader_flag = leader_BA_Mimori
+				has_leader_flag = leader_BA_Kaede
+			}
+		}
+		add_trait = {
+			trait = leader_club_Hyakkiyako_03
+			show_message = no
+		}
+	}
+	#忍术研究部
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Michiru
+				has_leader_flag = leader_BA_Izuna
+				has_leader_flag = leader_BA_Tsukuyo
+			}
+		}
+		add_trait = {
+			trait = leader_club_Hyakkiyako_04
+			show_message = no
+		}
+	}
+	#祭典运营部
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Shizuko
+				has_leader_flag = leader_BA_Pina
+				has_leader_flag = leader_BA_Umika
+			}
+		}
+		add_trait = {
+			trait = leader_club_Hyakkiyako_05
+			show_message = no
+		}
+	}
+	#花鸟风月部
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Kokuriko
+				has_leader_flag = leader_BA_Shuro
+				has_leader_flag = leader_BA_Azami
+			}
+		}
+		add_trait = {
+			trait = leader_club_Hyakkiyako_06
+			show_message = no
+		}
+	}
+	#魑魅一座
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Arata
+			}
+		}
+		add_trait = {
+			trait = leader_club_Hyakkiyako_07
+			show_message = no
+		}
+	}
+	### 红冬
+	#红冬事务局
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Cherino
+				has_leader_flag = leader_BA_Tomoe
+				has_leader_flag = leader_BA_Marina
+			}
+		}
+		add_trait = {
+			trait = leader_club_RedWinter_01
+			show_message = no
+		}
+	}
+	#227特别班
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Nodoka
+				has_leader_flag = leader_BA_Shigure
+			}
+		}
+		add_trait = {
+			trait = leader_club_RedWinter_02
+			show_message = no
+		}
+	}
+	#知识解放战线
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Momiji
+				has_leader_flag = leader_BA_Meru
+			}
+		}
+		add_trait = {
+			trait = leader_club_RedWinter_03
+			show_message = no
+		}
+	}
+	#出版部
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Yakumo
+				has_leader_flag = leader_BA_Takane
+			}
+		}
+		add_trait = {
+			trait = leader_club_RedWinter_04
+			show_message = no
+		}
+	}
+	#劳务部
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Minori
+			}
+		}
+		add_trait = {
+			trait = leader_club_RedWinter_05
+			show_message = no
+		}
+	}
+	### 山海经
+	#玄龙门
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Kisaki
+				has_leader_flag = leader_BA_Mina
+			}
+		}
+		add_trait = {
+			trait = leader_club_Shanhaijing_01
+			show_message = no
+		}
+	}
+	#玄武商会
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Rumi
+				has_leader_flag = leader_BA_Reijo
+			}
+		}
+		add_trait = {
+			trait = leader_club_Shanhaijing_02
+			show_message = no
+		}
+	}
+	#梅花园
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Shun
+				has_leader_flag = leader_BA_Kokona
+			}
+		}
+		add_trait = {
+			trait = leader_club_Shanhaijing_03
+			show_message = no
+		}
+	}
+	#炼丹术研究会
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Kai
+				has_leader_flag = leader_BA_Saya
+			}
+		}
+		add_trait = {
+			trait = leader_club_Shanhaijing_04
+			show_message = no
+		}
+	}
+	#京剧部
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Kaguya
+			}
+		}
+		add_trait = {
+			trait = leader_club_Shanhaijing_05
+			show_message = no
+		}
+	}
+	### 瓦尔基里
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Kanna
+				has_leader_flag = leader_BA_Konoka
+				has_leader_flag = leader_BA_Kirino
+				has_leader_flag = leader_BA_Fubuki
+			}
+		}
+		add_trait = {
+			trait = leader_club_Valkyrie_00
+			show_message = no
+		}
+	}
+	### 阿里乌斯
+	#阿里乌斯小队
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Saori
+				has_leader_flag = leader_BA_Atsuko
+				has_leader_flag = leader_BA_Misaki
+				has_leader_flag = leader_BA_Hiyori
+			}
+		}
+		add_trait = {
+			trait = leader_club_Arius_01
+			show_message = no
+		}
+	}
+	#尼科米底亚部队
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Subaru
+				has_leader_flag = leader_BA_Maia
+			}
+		}
+		add_trait = {
+			trait = leader_club_Arius_02
+			show_message = no
+		}
+	}
+	### SRT
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Miyako
+				has_leader_flag = leader_BA_Saki
+				has_leader_flag = leader_BA_Miyu
+				has_leader_flag = leader_BA_Moe
+				has_leader_flag = leader_BA_Yukino
+				has_leader_flag = leader_BA_Niko
+				has_leader_flag = leader_BA_Kurumi
+				has_leader_flag = leader_BA_Otogi
+			}
+		}
+		add_trait = {
+			trait = leader_club_SRT_00
+			show_message = no
+		}
+	}
+	### 海兰德
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Suou
+				has_leader_flag = leader_BA_Aoba
+			}
+		}
+		add_trait = {
+			trait = leader_club_Highlander_00
+			show_message = no
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Hikari
+				has_leader_flag = leader_BA_Nozomi
+			}
+		}
+		add_trait = {
+			trait = leader_club_Highlander_01
+			show_message = no
+		}
+	}
+	### 狂猎
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Hiromi
+				has_leader_flag = leader_BA_Eri
+				has_leader_flag = leader_BA_Tsumugi
+				has_leader_flag = leader_BA_Kanoe
+				has_leader_flag = leader_BA_Rena
+				has_leader_flag = leader_BA_Miyo
+				has_leader_flag = leader_BA_Fuyu
+				has_leader_flag = leader_BA_Ritsu
+			}
+		}
+		add_trait = {
+			trait = leader_club_Wildhunt_00
+			show_message = no
+		}
+	}
+	### 其他
+	#联邦学生会
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_StudentCouncilPresident
+				has_leader_flag = leader_BA_Rin
+				has_leader_flag = leader_BA_Momoka
+				has_leader_flag = leader_BA_Ayumu
+				has_leader_flag = leader_BA_Kaya
+				has_leader_flag = leader_BA_Aoi
+				has_leader_flag = leader_BA_Haine
+				has_leader_flag = leader_BA_Sumomo
+			}
+		}
+		add_trait = {
+			trait = leader_club_Kivotos_01
+			show_message = no
+		}
+	}
+	#夏莱
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Arona
+				has_leader_flag = leader_BA_Plana
+				has_leader_flag = leader_BA_Sora
+			}
+		}
+		add_trait = {
+			trait = leader_club_Kivotos_02
+			show_message = no
+		}
+	}
+	#（初音未来专用）
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_HatsuneMiku
+			}
+		}
+		add_trait = {
+			trait = leader_club_Kivotos_03
+			show_message = no
+		}
+	}
+	#（葛叶专用）
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Kuzunoha
+			}
+		}
+		add_trait = {
+			trait = leader_club_Kivotos_04
+			show_message = no
+		}
+	}
+	#（七囚人与笑面教授）
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Wakamo
+				has_leader_flag = leader_BA_Akira
+				has_leader_flag = leader_BA_ProfessorSmug
+			}
+		}
+		add_trait = {
+			trait = leader_club_Kivotos_05
+			show_message = no
+		}
+	}
+	#（三小只）
+	else_if = {
+		limit = {
+			OR = {
+				has_leader_flag = leader_BA_Ayin
+				has_leader_flag = leader_BA_Soph
+				has_leader_flag = leader_BA_Aur
+			}
+		}
+		add_trait = {
+			trait = leader_club_Kivotos_06
+			show_message = no
+		}
+	}
+	### Default
+	else = {
+		add_trait = {
+			trait = leader_club_default
+			show_message = no
+		}
+	}
+}
+
+# 动作器：个人特质
+BA_rename_effect_skin_trait = {
+	optimize_memory
+	switch = {
+		trigger = has_leader_flag
+		# 小鸟游星野
+		leader_BA_Hoshino = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Hoshino_SS
+					}
+				}
+				BA_skin_QB = {
+					add_trait = {
+						trait = leader_special_Hoshino_QB
+					}
+				}
+				BA_skin_JK1 = {
+					add_trait = {
+						trait = leader_special_Hoshino_JK1
+					}
+				}
+				BA_skin_JK2 = {
+					add_trait = {
+						trait = leader_special_Hoshino_JK2
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Hoshino
+					}
+				}
+			}
+		}
+		# 砂狼白子
+		leader_BA_Shiroko = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_CYC = {
+					add_trait = {
+						trait = leader_special_Shiroko_CYC
+					}
+				}
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Shiroko_SS
+					}
+				}
+				BA_skin_COL = {
+					add_trait = {
+						trait = leader_special_Shiroko_COL
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Shiroko_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Shiroko
+					}
+				}
+			}
+		}
+		# 黑见茜香
+		leader_BA_Serika = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_KMN = {
+					add_trait = {
+						trait = leader_special_Serika_KMN
+					}
+				}
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Serika_SS
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Serika_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Serika
+					}
+				}
+			}
+		}
+		# 十六夜野宫
+		leader_BA_Nonomi = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Nonomi_SS
+					}
+				}
+				BA_skin_JK1 = {
+					add_trait = {
+						trait = leader_special_Nonomi_JK1
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Nonomi_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Nonomi
+					}
+				}
+			}
+		}
+		# 奥空绫音
+		leader_BA_Ayane = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Ayane_SS
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Ayane_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Ayane
+					}
+				}
+			}
+		}
+		# 栀子梦
+		# leader_BA_Yume = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Yume
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 羽沼真琴
+		leader_BA_Makoto = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_DR = {
+					add_trait = {
+						trait = leader_special_Makoto_DR
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Makoto
+					}
+				}
+			}
+		}
+		# 枣伊吕波
+		leader_BA_Iroha = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Iroha
+					}
+				}
+			}
+		}
+		# 丹花伊吹
+		leader_BA_Ibuki = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_DR = {
+					add_trait = {
+						trait = leader_special_Ibuki_DR
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Ibuki
+					}
+				}
+			}
+		}
+		# 京极皋月
+		# leader_BA_Satsuki = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Satsuki
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 元宫千秋
+		# leader_BA_Chiaki = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Chiaki
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 空崎日奈
+		leader_BA_Hina = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_DR = {
+					add_trait = {
+						trait = leader_special_Hina_DR
+					}
+				}
+				BA_skin_PJ = {
+					add_trait = {
+						trait = leader_special_Hina_PJ
+					}
+				}
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Hina_SS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Hina
+					}
+				}
+			}
+		}
+		# 天雨亚子
+		leader_BA_Ako = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_DR = {
+					add_trait = {
+						trait = leader_special_Ako_DR
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Ako_SP
+					}
+				}
+				BA_skin_NVG = {
+					add_trait = {
+						trait = leader_special_Ako_NVG
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Ako
+					}
+				}
+			}
+		}
+		# 银镜伊织
+		leader_BA_Iori = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Iori_SS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Iori
+					}
+				}
+			}
+		}
+		# 火宫千夏
+		leader_BA_Chinatsu = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_HS = {
+					add_trait = {
+						trait = leader_special_Chinatsu_HS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Chinatsu
+					}
+				}
+			}
+		}
+		# 陆八魔亚瑠
+		leader_BA_Aru = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_DR = {
+					add_trait = {
+						trait = leader_special_Aru_DR
+					}
+				}
+				BA_skin_KMN = {
+					add_trait = {
+						trait = leader_special_Aru_KMN
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Aru
+					}
+				}
+			}
+		}
+		# 鬼方佳代子
+		leader_BA_Kayoko = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_DR = {
+					add_trait = {
+						trait = leader_special_Kayoko_DR
+					}
+				}
+				BA_skin_KMN = {
+					add_trait = {
+						trait = leader_special_Kayoko_KMN
+					}
+				}
+				BA_skin_NVG = {
+					add_trait = {
+						trait = leader_special_Kayoko_NVG
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Kayoko
+					}
+				}
+			}
+		}
+		# 浅黄睦月
+		leader_BA_Mutsuki = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_DR = {
+					add_trait = {
+						trait = leader_special_Mutsuki_DR
+					}
+				}
+				BA_skin_KMN = {
+					add_trait = {
+						trait = leader_special_Mutsuki_KMN
+					}
+				}
+				BA_skin_AGT = {
+					add_trait = {
+						trait = leader_special_Mutsuki_AGT
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Mutsuki
+					}
+				}
+			}
+		}
+		# 伊草春香
+		leader_BA_Haruka = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_DR = {
+					add_trait = {
+						trait = leader_special_Haruka_DR
+					}
+				}
+				BA_skin_KMN = {
+					add_trait = {
+						trait = leader_special_Haruka_KMN
+					}
+				}
+				BA_skin_AGT = {
+					add_trait = {
+						trait = leader_special_Haruka_AGT
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Haruka
+					}
+				}
+			}
+		}
+		# 黑馆晴奈
+		leader_BA_Haruna = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_KMN = {
+					add_trait = {
+						trait = leader_special_Haruna_KMN
+					}
+				}
+				BA_skin_SPW = {
+					add_trait = {
+						trait = leader_special_Haruna_SPW
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Haruna
+					}
+				}
+			}
+		}
+		# 鳄渊明里
+		leader_BA_Akari = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_KMN = {
+					add_trait = {
+						trait = leader_special_Akari_KMN
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Akari_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Akari
+					}
+				}
+			}
+		}
+		# 狮子堂泉
+		leader_BA_Izumi = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_KMN = {
+					add_trait = {
+						trait = leader_special_Izumi_KMN
+					}
+				}
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Izumi_SS
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Izumi_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Izumi
+					}
+				}
+			}
+		}
+		# 赤司淳子
+		leader_BA_Junko = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_KMN = {
+					add_trait = {
+						trait = leader_special_Junko_KMN
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Junko_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Junko
+					}
+				}
+			}
+		}
+		# 爱清枫香
+		leader_BA_Fuuka = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_KMN = {
+					add_trait = {
+						trait = leader_special_Fuuka_KMN
+					}
+				}
+				BA_skin_DL = {
+					add_trait = {
+						trait = leader_special_Fuuka_DL
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Fuuka
+					}
+				}
+			}
+		}
+		# 牛牧朱莉
+		leader_BA_Juri = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_WK = {
+					add_trait = {
+						trait = leader_special_Juri_WK
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Juri
+					}
+				}
+			}
+		}
+		# 鬼怒川霞
+		leader_BA_Kasumi = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Kasumi_SS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Kasumi
+					}
+				}
+			}
+		}
+		# 下仓惠
+		leader_BA_Megu = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Megu_SS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Megu
+					}
+				}
+			}
+		}
+		# 夜樱绮罗罗
+		# leader_BA_Kirara = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Kirara
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 旗见绘里香
+		# leader_BA_Erika = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Erika
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 冰室濑名
+		leader_BA_Sena = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_DL = {
+					add_trait = {
+						trait = leader_special_Sena_DL
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Sena
+					}
+				}
+			}
+		}
+		# 调月莉音
+		leader_BA_Rio = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_CD = {
+					add_trait = {
+						trait = leader_special_Rio_CD
+					}
+				}
+				BA_skin_QB = {
+					add_trait = {
+						trait = leader_special_Rio_QB
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Rio
+					}
+				}
+			}
+		}
+		# 早濑优香
+		leader_BA_Yuuka = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SPW = {
+					add_trait = {
+						trait = leader_special_Yuuka_SPW
+					}
+				}
+				BA_skin_PJ = {
+					add_trait = {
+						trait = leader_special_Yuuka_PJ
+					}
+				}
+				BA_skin_NVG = {
+					add_trait = {
+						trait = leader_special_Yuuka_NVG
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Yuuka
+					}
+				}
+			}
+		}
+		# 生盐诺亚
+		leader_BA_Noa = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_PJ = {
+					add_trait = {
+						trait = leader_special_Noa_PJ
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Noa_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Noa
+					}
+				}
+			}
+		}
+		# 黑崎小雪
+		leader_BA_Koyuki = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_PJ = {
+					add_trait = {
+						trait = leader_special_Koyuki_PJ
+					}
+				}
+				BA_skin_BN = {
+					add_trait = {
+						trait = leader_special_Koyuki_BN
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Koyuki
+					}
+				}
+			}
+		}
+		# 美甘尼禄
+		leader_BA_Neru = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_UNF = {
+					add_trait = {
+						trait = leader_special_Neru_UNF
+					}
+				}
+				BA_skin_BN = {
+					add_trait = {
+						trait = leader_special_Neru_BN
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Neru
+					}
+				}
+			}
+		}
+		# 一之濑明日奈
+		leader_BA_Asuna = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_UNF = {
+					add_trait = {
+						trait = leader_special_Asuna_UNF
+					}
+				}
+				BA_skin_BN = {
+					add_trait = {
+						trait = leader_special_Asuna_BN
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Asuna
+					}
+				}
+			}
+		}
+		# 角楯花凛
+		leader_BA_Karin = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_UNF = {
+					add_trait = {
+						trait = leader_special_Karin_UNF
+					}
+				}
+				BA_skin_BN = {
+					add_trait = {
+						trait = leader_special_Karin_BN
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Karin
+					}
+				}
+			}
+		}
+		# 室笠朱音
+		leader_BA_Akane = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_DL = {
+					add_trait = {
+						trait = leader_special_Akane_DL
+					}
+				}
+				BA_skin_BN = {
+					add_trait = {
+						trait = leader_special_Akane_BN
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Akane
+					}
+				}
+			}
+		}
+		# 飞鸟马时
+		leader_BA_Toki = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_DL = {
+					add_trait = {
+						trait = leader_special_Toki_DL
+					}
+				}
+				BA_skin_QB = {
+					add_trait = {
+						trait = leader_special_Toki_QB
+					}
+				}
+				BA_skin_BN = {
+					add_trait = {
+						trait = leader_special_Toki_BN
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Toki
+					}
+				}
+			}
+		}
+		# 花冈柚子
+		leader_BA_Yuzu = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_MD = {
+					add_trait = {
+						trait = leader_special_Yuzu_MD
+					}
+				}
+				BA_skin_CD = {
+					add_trait = {
+						trait = leader_special_Yuzu_CD
+					}
+				}
+				BA_skin_QB = {
+					add_trait = {
+						trait = leader_special_Yuzu_QB
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Yuzu
+					}
+				}
+			}
+		}
+		# 才羽桃井
+		leader_BA_Momoi = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_MD = {
+					add_trait = {
+						trait = leader_special_Momoi_MD
+					}
+				}
+				BA_skin_CD = {
+					add_trait = {
+						trait = leader_special_Momoi_CD
+					}
+				}
+				BA_skin_QB = {
+					add_trait = {
+						trait = leader_special_Momoi_QB
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Momoi
+					}
+				}
+			}
+		}
+		# 才羽绿
+		leader_BA_Midori = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_MD = {
+					add_trait = {
+						trait = leader_special_Midori_MD
+					}
+				}
+				BA_skin_CD = {
+					add_trait = {
+						trait = leader_special_Midori_CD
+					}
+				}
+				BA_skin_QB = {
+					add_trait = {
+						trait = leader_special_Midori_QB
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Midori
+					}
+				}
+			}
+		}
+		# 天童爱丽丝
+		leader_BA_Aris = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_MD = {
+					add_trait = {
+						trait = leader_special_Aris_MD
+					}
+				}
+				BA_skin_CD = {
+					add_trait = {
+						trait = leader_special_Aris_CD
+					}
+				}
+				BA_skin_QB = {
+					add_trait = {
+						trait = leader_special_Aris_QB
+					}
+				}
+				BA_skin_OLD = {
+					add_trait = {
+						trait = leader_special_Aris_OLD
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Aris
+					}
+				}
+			}
+		}
+		# 各务千寻
+		leader_BA_Chihiro = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_PJ = {
+					add_trait = {
+						trait = leader_special_Chihiro_PJ
+					}
+				}
+				BA_skin_CMP = {
+					add_trait = {
+						trait = leader_special_Chihiro_CMP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Chihiro
+					}
+				}
+			}
+		}
+		# 音濑小玉
+		leader_BA_Kotama = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_PJ = {
+					add_trait = {
+						trait = leader_special_Kotama_PJ
+					}
+				}
+				BA_skin_CMP = {
+					add_trait = {
+						trait = leader_special_Kotama_CMP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Kotama
+					}
+				}
+			}
+		}
+		# 小钩晴
+		leader_BA_Hare = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_PJ = {
+					add_trait = {
+						trait = leader_special_Hare_PJ
+					}
+				}
+				BA_skin_CMP = {
+					add_trait = {
+						trait = leader_special_Hare_CMP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Hare
+					}
+				}
+			}
+		}
+		# 小涂真纪
+		leader_BA_Maki = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_PJ = {
+					add_trait = {
+						trait = leader_special_Maki_PJ
+					}
+				}
+				BA_skin_CMP = {
+					add_trait = {
+						trait = leader_special_Maki_CMP
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Maki_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Maki
+					}
+				}
+			}
+		}
+		# 白石咏叶
+		leader_BA_Utaha = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_IDL = {
+					add_trait = {
+						trait = leader_special_Utaha_IDL
+					}
+				}
+				BA_skin_CL = {
+					add_trait = {
+						trait = leader_special_Utaha_CL
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Utaha
+					}
+				}
+			}
+		}
+		# 猫冢响
+		leader_BA_Hibiki = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_CL = {
+					add_trait = {
+						trait = leader_special_Hibiki_CL
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Hibiki
+					}
+				}
+			}
+		}
+		# 丰见亚都梨
+		leader_BA_Kotori = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_CL = {
+					add_trait = {
+						trait = leader_special_Kotori_CL
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Kotori_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Kotori
+					}
+				}
+			}
+		}
+		# 明星日鞠
+		leader_BA_Himari = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_QB = {
+					add_trait = {
+						trait = leader_special_Himari_QB
+					}
+				}
+				BA_skin_CD = {
+					add_trait = {
+						trait = leader_special_Himari_CD
+					}
+				}
+				BA_skin_NVG = {
+					add_trait = {
+						trait = leader_special_Himari_NVG
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Himari
+					}
+				}
+			}
+		}
+		# 和泉元艾米
+		leader_BA_Eimi = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_QB = {
+					add_trait = {
+						trait = leader_special_Eimi_QB
+					}
+				}
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Eimi_SS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Eimi
+					}
+				}
+			}
+		}
+		# 柯伊
+		leader_BA_Kei = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Kei
+					}
+				}
+			}
+		}
+		# 乙花堇
+		leader_BA_Sumire = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_WK = {
+					add_trait = {
+						trait = leader_special_Sumire_WK
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Sumire_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Sumire
+					}
+				}
+			}
+		}
+		# 野正丽
+		leader_BA_Rei = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Rei
+					}
+				}
+			}
+		}
+		# 吾妻未来
+		# leader_BA_Mirai = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Mirai
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 圣园未花
+		leader_BA_Mika = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Mika_SS
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Mika_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Mika
+					}
+				}
+			}
+		}
+		# 桐藤渚
+		leader_BA_Nagisa = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Nagisa_SS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Nagisa
+					}
+				}
+			}
+		}
+		# 百合园圣娅
+		leader_BA_Seia = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Seia_SS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Seia
+					}
+				}
+			}
+		}
+		# 阿慈谷日富美
+		leader_BA_Hifumi = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Hifumi_SS
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Hifumi_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Hifumi
+					}
+				}
+			}
+		}
+		# 白洲梓
+		leader_BA_Azusa = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Azusa_SS
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Azusa_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Azusa
+					}
+				}
+			}
+		}
+		# 浦和花子
+		leader_BA_Hanako = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Hanako_SS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Hanako
+					}
+				}
+			}
+		}
+		# 下江小春
+		leader_BA_Koharu = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Koharu_SS
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Koharu_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Koharu
+					}
+				}
+			}
+		}
+		# 剑先鹤城
+		leader_BA_Tsurugi = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Tsurugi_SS
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Tsurugi_SP
+					}
+				}
+				BA_skin_DR = {
+					add_trait = {
+						trait = leader_special_Tsurugi_DR
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Tsurugi
+					}
+				}
+			}
+		}
+		# 羽川莲实
+		leader_BA_Hasumi = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Hasumi_SS
+					}
+				}
+				BA_skin_SPW = {
+					add_trait = {
+						trait = leader_special_Hasumi_SPW
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Hasumi
+					}
+				}
+			}
+		}
+		# 仲正一花
+		leader_BA_Ichika = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Ichika_SS
+					}
+				}
+				BA_skin_DR = {
+					add_trait = {
+						trait = leader_special_Ichika_DR
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Ichika
+					}
+				}
+			}
+		}
+		# 静山真白
+		leader_BA_Mashiro = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Mashiro_SS
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Mashiro_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Mashiro
+					}
+				}
+			}
+		}
+		# 歌住樱子
+		leader_BA_Sakurako = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_DR = {
+					add_trait = {
+						trait = leader_special_Sakurako_DR
+					}
+				}
+				BA_skin_IDL = {
+					add_trait = {
+						trait = leader_special_Sakurako_IDL
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Sakurako
+					}
+				}
+			}
+		}
+		# 若叶日向
+		leader_BA_Hinata = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Hinata_SS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Hinata
+					}
+				}
+			}
+		}
+		# 伊落玛丽
+		leader_BA_Mari = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SPW = {
+					add_trait = {
+						trait = leader_special_Mari_SPW
+					}
+				}
+				BA_skin_IDL = {
+					add_trait = {
+						trait = leader_special_Mari_IDL
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Mari
+					}
+				}
+			}
+		}
+		# 栗村爱莉
+		leader_BA_Airi = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_BD = {
+					add_trait = {
+						trait = leader_special_Airi_BD
+					}
+				}
+				BA_skin_HH = {
+					add_trait = {
+						trait = leader_special_Airi_HH
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Airi
+					}
+				}
+			}
+		}
+		# 杏山和纱
+		leader_BA_Kazusa = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_BD = {
+					add_trait = {
+						trait = leader_special_Kazusa_BD
+					}
+				}
+				BA_skin_OLD = {
+					add_trait = {
+						trait = leader_special_Kazusa_OLD
+					}
+				}
+				BA_skin_HH = {
+					add_trait = {
+						trait = leader_special_Kazusa_HH
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Kazusa
+					}
+				}
+			}
+		}
+		# 伊原木好美
+		leader_BA_Yoshimi = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_BD = {
+					add_trait = {
+						trait = leader_special_Yoshimi_BD
+					}
+				}
+				BA_skin_HH = {
+					add_trait = {
+						trait = leader_special_Yoshimi_HH
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Yoshimi
+					}
+				}
+			}
+		}
+		# 柚鸟夏
+		leader_BA_Natsu = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_BD = {
+					add_trait = {
+						trait = leader_special_Natsu_BD
+					}
+				}
+				BA_skin_HH = {
+					add_trait = {
+						trait = leader_special_Natsu_HH
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Natsu_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Natsu
+					}
+				}
+			}
+		}
+		# 苍森美弥
+		leader_BA_Mine = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_IDL = {
+					add_trait = {
+						trait = leader_special_Mine_IDL
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Mine
+					}
+				}
+			}
+		}
+		# 鹫见芹娜
+		leader_BA_Serina = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_XMS = {
+					add_trait = {
+						trait = leader_special_Serina_XMS
+					}
+				}
+				BA_skin_NS = {
+					add_trait = {
+						trait = leader_special_Serina_NS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Serina
+					}
+				}
+			}
+		}
+		# 朝颜花绘
+		leader_BA_Hanae = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_XMS = {
+					add_trait = {
+						trait = leader_special_Hanae_XMS
+					}
+				}
+				BA_skin_CL = {
+					add_trait = {
+						trait = leader_special_Hanae_CL
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Hanae
+					}
+				}
+			}
+		}
+		# 守月铃美
+		leader_BA_Suzumi = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_MG = {
+					add_trait = {
+						trait = leader_special_Suzumi_MG
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Suzumi
+					}
+				}
+			}
+		}
+		# 宇泽玲纱
+		leader_BA_Reisa = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_MG = {
+					add_trait = {
+						trait = leader_special_Reisa_MG
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Reisa
+					}
+				}
+			}
+		}
+		# 古关忧
+		leader_BA_Ui = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Ui_SS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Ui
+					}
+				}
+			}
+		}
+		# 圆堂志美子
+		leader_BA_Shimiko = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_MG = {
+					add_trait = {
+						trait = leader_special_Shimiko_MG
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Shimiko
+					}
+				}
+			}
+		}
+		# 狐坂若藻
+		leader_BA_Wakamo = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Wakamo_SS
+					}
+				}
+				BA_skin_FN = {
+					add_trait = {
+						trait = leader_special_Wakamo_FN
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Wakamo
+					}
+				}
+			}
+		}
+		# 天地妮娅
+		# leader_BA_Niya = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Niya
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 桑上果穗
+		leader_BA_Kaho = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Kaho
+					}
+				}
+			}
+		}
+		# 和乐千世
+		leader_BA_Chise = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Chise_SS
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Chise_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Chise
+					}
+				}
+			}
+		}
+		# 七棱菖蒲
+		# leader_BA_Ayame = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Ayame
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 御棱名草
+		leader_BA_Nagusa = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Nagusa_SS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Nagusa
+					}
+				}
+			}
+		}
+		# 不破莲华
+		leader_BA_Renge = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Renge_SS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Renge
+					}
+				}
+			}
+		}
+		# 桐生桔梗
+		leader_BA_Kikyou = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Kikyou_SS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Kikyou
+					}
+				}
+			}
+		}
+		# 勘解由小路紫
+		leader_BA_Yukari = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Yukari_SS
+					}
+				}
+				BA_skin_JC = {
+					add_trait = {
+						trait = leader_special_Yukari_JC
+					}
+				}
+				BA_skin_MK = {
+					add_trait = {
+						trait = leader_special_Yukari_MK
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Yukari
+					}
+				}
+			}
+		}
+		# 葛叶
+		leader_BA_Kuzunoha = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Kuzunoha
+					}
+				}
+			}
+		}
+		# 春日椿
+		leader_BA_Tsubaki = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_GD = {
+					add_trait = {
+						trait = leader_special_Tsubaki_GD
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Tsubaki
+					}
+				}
+			}
+		}
+		# 水羽三森
+		leader_BA_Mimori = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Mimori_SS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Mimori
+					}
+				}
+			}
+		}
+		# 勇美枫
+		leader_BA_Kaede = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_GD = {
+					add_trait = {
+						trait = leader_special_Kaede_GD
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Kaede_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Kaede
+					}
+				}
+			}
+		}
+		# 千鸟满
+		leader_BA_Michiru = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_DR = {
+					add_trait = {
+						trait = leader_special_Michiru_DR
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Michiru
+					}
+				}
+			}
+		}
+		# 久田泉奈
+		leader_BA_Izuna = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Izuna_SS
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Izuna_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Izuna
+					}
+				}
+			}
+		}
+		# 大野月咏
+		leader_BA_Tsukuyo = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_DR = {
+					add_trait = {
+						trait = leader_special_Tsukuyo_DR
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Tsukuyo_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Tsukuyo
+					}
+				}
+			}
+		}
+		# 河和静子
+		leader_BA_Shizuko = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Shizuko_SS
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Shizuko_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Shizuko
+					}
+				}
+			}
+		}
+		# 朝比奈菲娜
+		leader_BA_Pina = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_GD = {
+					add_trait = {
+						trait = leader_special_Pina_GD
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Pina
+					}
+				}
+			}
+		}
+		# 里滨海香
+		leader_BA_Umika = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Umika
+					}
+				}
+			}
+		}
+		# 虞美人
+		# leader_BA_Kokuriko = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Kokuriko
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 箭吹棕榈
+		# leader_BA_Shuro = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Shuro
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 土生蓟
+		# leader_BA_Azami = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Azami
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 新
+		leader_BA_Arata = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Arata
+					}
+				}
+			}
+		}
+		# 连河切莉诺
+		leader_BA_Cherino = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_HS = {
+					add_trait = {
+						trait = leader_special_Cherino_HS
+					}
+				}
+				BA_skin_QP = {
+					add_trait = {
+						trait = leader_special_Cherino_QP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Cherino
+					}
+				}
+			}
+		}
+		# 佐城智惠
+		leader_BA_Tomoe = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_QP = {
+					add_trait = {
+						trait = leader_special_Tomoe_QP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Tomoe
+					}
+				}
+			}
+		}
+		# 池仓玛丽娜
+		leader_BA_Marina = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_QP = {
+					add_trait = {
+						trait = leader_special_Marina_QP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Marina
+					}
+				}
+			}
+		}
+		# 天见和香
+		leader_BA_Nodoka = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_HS = {
+					add_trait = {
+						trait = leader_special_Nodoka_HS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Nodoka
+					}
+				}
+			}
+		}
+		# 间宵时雨
+		leader_BA_Shigure = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_HS = {
+					add_trait = {
+						trait = leader_special_Shigure_HS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Shigure
+					}
+				}
+			}
+		}
+		# 秋泉红叶
+		leader_BA_Momiji = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Momiji
+					}
+				}
+			}
+		}
+		# 姬木爱瑠
+		leader_BA_Meru = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_HS = {
+					add_trait = {
+						trait = leader_special_Meru_HS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Meru
+					}
+				}
+			}
+		}
+		# 荒槙八云
+		leader_BA_Yakumo = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Yakumo
+					}
+				}
+			}
+		}
+		# 三善贵音
+		leader_BA_Takane = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Takane
+					}
+				}
+			}
+		}
+		# 安守实里
+		leader_BA_Minori = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_OLD = {
+					add_trait = {
+						trait = leader_special_Minori_OLD
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Minori
+					}
+				}
+			}
+		}
+		# 龙华妃咲
+		leader_BA_Kisaki = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_YN = {
+					add_trait = {
+						trait = leader_special_Kisaki_YN
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Kisaki
+					}
+				}
+			}
+		}
+		# 近卫弥奈
+		leader_BA_Mina = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Mina
+					}
+				}
+			}
+		}
+		# 朱城瑠美
+		leader_BA_Rumi = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_YN = {
+					add_trait = {
+						trait = leader_special_Rumi_YN
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Rumi
+					}
+				}
+			}
+		}
+		# 鹿山丽情
+		# leader_BA_Reijo = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Reijo
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 春原瞬
+		leader_BA_Shun = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_YN = {
+					add_trait = {
+						trait = leader_special_Shun_YN
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Shun
+					}
+				}
+			}
+		}
+		# 春原心奈
+		leader_BA_Kokona = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Kokona
+					}
+				}
+			}
+		}
+		# 申谷海
+		leader_BA_Kai = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Kai
+					}
+				}
+			}
+		}
+		# 药子沙耶
+		leader_BA_Saya = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_DL = {
+					add_trait = {
+						trait = leader_special_Saya_DL
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Saya
+					}
+				}
+			}
+		}
+		# 漆原辉夜
+		# leader_BA_Kaguya = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Kaguya
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 尾刃康娜
+		leader_BA_Kanna = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Kanna_SS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Kanna
+					}
+				}
+			}
+		}
+		# 木乃香
+		# leader_BA_Konoka = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Konoka
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 中务桐乃
+		leader_BA_Kirino = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Kirino_SS
+					}
+				}
+				BA_skin_IDL = {
+					add_trait = {
+						trait = leader_special_Kirino_IDL
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Kirino
+					}
+				}
+			}
+		}
+		# 合欢垣吹雪
+		leader_BA_Fubuki = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Fubuki_SS
+					}
+				}
+				BA_skin_IDL = {
+					add_trait = {
+						trait = leader_special_Fubuki_IDL
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Fubuki
+					}
+				}
+			}
+		}
+		# 锭前纱织
+		leader_BA_Saori = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_DR = {
+					add_trait = {
+						trait = leader_special_Saori_DR
+					}
+				}
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Saori_SS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Saori
+					}
+				}
+			}
+		}
+		# 秤亚津子
+		leader_BA_Atsuko = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Atsuko_SS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Atsuko
+					}
+				}
+			}
+		}
+		# 戒野美咲
+		leader_BA_Misaki = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Misaki_SS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Misaki
+					}
+				}
+			}
+		}
+		# 槌永日和
+		leader_BA_Hiyori = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Hiyori_SS
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Hiyori
+					}
+				}
+			}
+		}
+		# 梯昴
+		# leader_BA_Subaru = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Subaru
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 立木迈亚
+		# leader_BA_Maia = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Maia
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 月雪宫子
+		leader_BA_Miyako = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Miyako_SS
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Miyako_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Miyako
+					}
+				}
+			}
+		}
+		# 空井咲
+		leader_BA_Saki = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Saki_SS
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Saki_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Saki
+					}
+				}
+			}
+		}
+		# 霞泽美游
+		leader_BA_Miyu = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Miyu_SS
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Miyu_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Miyu
+					}
+				}
+			}
+		}
+		# 风仓萌绘
+		leader_BA_Moe = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_SS = {
+					add_trait = {
+						trait = leader_special_Moe_SS
+					}
+				}
+				BA_skin_SP = {
+					add_trait = {
+						trait = leader_special_Moe_SP
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Moe
+					}
+				}
+			}
+		}
+		# 七度雪乃
+		leader_BA_Yukino = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Yukino
+					}
+				}
+			}
+		}
+		# 妮可
+		leader_BA_Niko = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Niko
+					}
+				}
+			}
+		}
+		# 胡桃
+		leader_BA_Kurumi = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Kurumi
+					}
+				}
+			}
+		}
+		# 音葵
+		leader_BA_Otogi = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Otogi
+					}
+				}
+			}
+		}
+		# 橘光明
+		# leader_BA_Hikari = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Hikari
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 橘希望
+		# leader_BA_Nozomi = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Nozomi
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 朝雾周防
+		leader_BA_Suou = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Suou
+					}
+				}
+			}
+		}
+		# 内海青叶
+		# leader_BA_Aoba = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Aoba
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 清澄晶
+		leader_BA_Akira = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Akira
+					}
+				}
+			}
+		}
+		# 裕美
+		# leader_BA_Hiromi = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Hiromi
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 白尾绘里
+		# leader_BA_Eri = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Eri
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 椎名纺希
+		# leader_BA_Tsumugi = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Tsumugi
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 板垣鹿江
+		# leader_BA_Kanoe = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Kanoe
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 衣斐蕾娜
+		# leader_BA_Rena = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Rena
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 樱井美代
+		# leader_BA_Miyo = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Miyo
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 若狭冬优
+		# leader_BA_Fuyu = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Fuyu
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 薄叶律
+		# leader_BA_Ritsu = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Ritsu
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 初音未来
+		leader_BA_HatsuneMiku = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_HatsuneMiku
+					}
+				}
+			}
+		}
+		# 笑面教授
+		# leader_BA_ProfessorSmug = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_ProfessorSmug
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# （联邦学生会会长）
+		# leader_BA_StudentCouncilPresident = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_StudentCouncilPresident
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 七神凛
+		leader_BA_Rin = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_NVG = {
+					add_trait = {
+						trait = leader_special_Rin_NVG
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Rin
+					}
+				}
+			}
+		}
+		# 由良木桃香
+		leader_BA_Momoka = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_NVG = {
+					add_trait = {
+						trait = leader_special_Momoka_NVG
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Momoka
+					}
+				}
+			}
+		}
+		# 岩柜步梦
+		leader_BA_Ayumu = {
+			switch = {
+				trigger = has_leader_flag
+				BA_skin_NVG = {
+					add_trait = {
+						trait = leader_special_Ayumu_NVG
+					}
+				}
+				default = {
+					add_trait = {
+						trait = leader_special_Ayumu
+					}
+				}
+			}
+		}
+		# 不知火花耶
+		leader_BA_Kaya = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Kaya
+					}
+				}
+			}
+		}
+		# 扇喜葵
+		# leader_BA_Aoi = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Aoi
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 灰音
+		# leader_BA_Haine = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Haine
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 李
+		# leader_BA_Sumomo = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Sumomo
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 阿洛娜
+		leader_BA_Arona = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Arona
+					}
+				}
+			}
+		}
+		# 普拉娜
+		leader_BA_Plana = {
+			switch = {
+				trigger = has_leader_flag
+				default = {
+					add_trait = {
+						trait = leader_special_Plana
+					}
+				}
+			}
+		}
+		# 空
+		# leader_BA_Sora = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Sora
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 川流诗音
+		# leader_BA_Shinon = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Shinon
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 风卷麻衣
+		# leader_BA_Mai = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Mai
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 艾茵
+		# leader_BA_Ayin = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Ayin
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 索芙
+		# leader_BA_Soph = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Soph
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# 奥茹
+		# leader_BA_Aur = {
+		# 	switch = {
+		# 		trigger = has_leader_flag
+		# 		default = {
+		# 			add_trait = {
+		# 				trait = leader_special_Aur
+		# 			}
+		# 		}
+		# 	}
+		# }
+		default = {
+			add_trait = {
+				trait = leader_special_default
+			}
+		}
+	}
 }

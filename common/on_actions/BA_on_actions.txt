@@ -115,14 +115,14 @@ on_leader_spawned = {
 on_added_to_leader_pool = {
 	events = {
 		BA_Shittem.4024
-		BA_rename.2010 # 领袖重命名：入池单个处理
+		BA_rename.1040 # 领袖重命名：入池单个处理
 	}
 }
 
 # This = Leader
 on_leader_hired = {
 	events = {
-		BA_rename.2011 # 领袖重命名：招募单个处理
+        BA_rename.1050 # 领袖重命名：招募单个处理
 	}
 }
 
@@ -138,7 +138,7 @@ on_leader_fired = {
 # From = Leader
 on_leader_level_up = {
 	events = {
-		BA_rename.2101 #3级 添加个人特质
+		BA_rename.1051 #3级 添加个人特质
 	}
 }
 

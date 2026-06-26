@@ -1,10 +1,12 @@
 namespace = BA_rename
 # 1.开局全局处理：赋予身份、名称立绘、社团特质、个人特质
-# 2.手动全局处理：名称立绘、社团特质、个人特质
-# 3.周期全局处理：名称立绘、领袖检查
+# 2.手动全局处理：名称立绘、社团特质、个人特质、领袖去重
+# 3.周期全局处理：名称立绘、领袖去重
 # 4.入池单个处理：赋予身份、名称立绘、社团特质、个人特质
-# 5.招募单个处理：个人特质、领袖检查
+# 5.招募单个处理：个人特质、领袖去重
 # 7.处理特使
+# 领袖去重可参考备份中的BA_event_leader_replace
+# BA_change_skin_trait_if_unlocked应替换为新的个人特质功能
 ################
 # 0. 开关
 ################
@@ -74,16 +76,19 @@ country_event = {
 		has_global_flag = BA_leader_rename_activated
 	}
 	immediate = {
-		# 赋予身份（全国）
-        every_owned_leader = {
-            BA_rename_base_identity = yes
-        }
-        every_pool_leader = {
-            BA_rename_base_identity = yes
-        }
-		# 名称立绘（全国）
-		# 社团特质（全国）
-		# 个人特质（全国）
+		# 赋予身份、名称立绘、社团特质、个人特质
+		every_owned_leader = {
+			BA_rename_base_identity = yes
+			BA_rename_base_portrait = yes
+			BA_rename_base_club_trait = yes
+			BA_rename_base_skin_trait = yes
+		}
+		every_pool_leader = {
+			BA_rename_base_identity = yes
+			BA_rename_base_portrait = yes
+			BA_rename_base_club_trait = yes
+			BA_rename_base_skin_trait = yes
+		}
 	}
 }
 
@@ -97,9 +102,18 @@ country_event = {
 		has_global_flag = BA_leader_rename_activated
 	}
 	immediate = {
-		# 名称立绘（全国）
-		# 社团特质（全国）
-		# 个人特质（全国）
+		# 名称立绘、社团特质、个人特质
+		every_owned_leader = {
+			BA_rename_base_portrait = yes
+			BA_rename_base_club_trait = yes
+			BA_rename_base_skin_trait = yes
+		}
+		every_pool_leader = {
+			BA_rename_base_portrait = yes
+			BA_rename_base_club_trait = yes
+			BA_rename_base_skin_trait = yes
+		}
+		# 领袖去重
 	}
 }
 
@@ -129,8 +143,14 @@ country_event = {
 		has_global_flag = BA_leader_rename_activated
 	}
 	immediate = {
-		# 名称立绘（全国）
-		# 特质检查（全国）
+		# 名称立绘
+		every_owned_leader = {
+			BA_rename_base_portrait = yes
+		}
+		every_pool_leader = {
+			BA_rename_base_portrait = yes
+		}
+		# 领袖去重
 	}
 }
 
@@ -148,94 +168,74 @@ country_event = {
 		}
 	}
 	immediate = {
-		# 赋予身份
-		BA_rename_base_identity = yes
-		# 名称立绘
-		# 社团特质
-		# 个人特质
+		from = {
+			leader_event = {
+				id = BA_rename.1041
+			}
+		}
 	}
 }
 
 # 效果器（触发器 or 手动处理）
-country_event = {
+leader_event = {
 	id = BA_rename.1041
 	is_triggered_only = yes
 	trigger = {
 		has_global_flag = BA_leader_rename_activated
+		BA_rename_identity_target_check = yes
 	}
 	immediate = {
 		# 赋予身份
 		BA_rename_base_identity = yes
 		# 名称立绘
+		BA_rename_base_portrait = yes
 		# 社团特质
+		BA_rename_base_club_trait = yes
 		# 个人特质
+		BA_rename_base_skin_trait = yes
 	}
 }
 
 ################
 # 5. 招募单个处理
 ################
-# 触发器（招募）
-#处理新生成入池的领袖
-country_event = {
-	id = BA_rename.2010
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		has_global_flag = BA_leader_rename_activated
-		from = {
-			BA_leader_rename_target_check = yes
-		}
-	}
-	immediate = {
-		from = {
-			BA_rename_leader = yes
-		}
-	}
-}
-
-#招募时处理领袖，尤其是初始3级以上的领袖
+# 招募
 leader_event = {
-	id = BA_rename.2011
+	id = BA_rename.1050
 	is_triggered_only = yes
-	hide_window = yes
 	trigger = {
 		has_global_flag = BA_leader_rename_activated
-		BA_leader_rename_target_check = yes
+		has_leader_flag = BA_rename_identity
 	}
 	immediate = {
-		BA_rename_leader_hired = yes
+		# 个人特质
+		BA_rename_base_skin_trait = yes
+		# 领袖去重
 	}
 }
 
-#已存在领袖修复
+# 升级
 country_event = {
-	id = BA_rename.1020
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		has_global_flag = BA_leader_rename_activated
-	}
-	immediate = {
-		BA_set_rename_flag = yes
-		BA_iterate_rename_flag = yes
-	}
-}
-
-#领袖3级添加特质
-country_event = {
-	id = BA_rename.2101
+	id = BA_rename.1051
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
 		has_global_flag = BA_leader_rename_activated
 		from = {
-			BA_leader_rename_target_check = yes
+			has_leader_flag = BA_rename_identity
 		}
 	}
 	immediate = {
+        # 个人特质
 		from = {
-			BA_rename_leader_hired = yes
+			if = {
+				limit = {
+					NOT = {
+						has_leader_flag = BA_rename_skin_trait
+					}
+				}
+				BA_rename_base_skin_trait = yes
+			}
 		}
 	}
 }
