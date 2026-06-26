@@ -3,34 +3,38 @@
 BA_set_rename_flag = {
 	every_owned_leader = {
 		limit = {
-			species = {
-				BA_has_halo_organic = yes
-			}
+			BA_leader_rename_target_check = yes
 		}
 		set_leader_flag = BA_rename_target
 	}
 	every_pool_leader = {
 		limit = {
-			species = {
-				BA_has_halo_organic = yes
-			}
+			BA_leader_rename_target_check = yes
 		}
 		set_leader_flag = BA_rename_target
 	}
 	every_envoy = {
 		limit = {
-			species = {
-				BA_has_halo_organic = yes
-			}
+			BA_leader_rename_target_check = yes
 		}
 		set_leader_flag = BA_rename_target
 	}
 	# 重命名豁免
 	every_owned_leader = {
 		limit = {
-			OR = {
-				BA_leader_exempt_rename = yes
-			}
+			BA_leader_rename_target_check = no
+		}
+		remove_leader_flag = BA_rename_target
+	}
+	every_pool_leader = {
+		limit = {
+			BA_leader_rename_target_check = no
+		}
+		remove_leader_flag = BA_rename_target
+	}
+	every_envoy = {
+		limit = {
+			BA_leader_rename_target_check = no
 		}
 		remove_leader_flag = BA_rename_target
 	}
@@ -51,8 +55,56 @@ BA_iterate_rename_flag = {
 			}
 			remove_leader_flag = BA_rename_target
 			#检查命名标志
-			BA_check_rename_flag = yes
-			#按命名标志命名
+			BA_rename_leader = yes
+		}
+	}
+	while = {
+		limit = {
+			any_pool_leader = {
+				has_leader_flag = BA_rename_target
+			}
+		}
+		random_pool_leader = {
+			limit = {
+				has_leader_flag = BA_rename_target
+			}
+			remove_leader_flag = BA_rename_target
+			#检查命名标志
+			BA_rename_leader = yes
+		}
+	}
+	while = {
+		limit = {
+			any_envoy = {
+				has_leader_flag = BA_rename_target
+			}
+		}
+		random_envoy = {
+			limit = {
+				has_leader_flag = BA_rename_target
+			}
+			remove_leader_flag = BA_rename_target
+			#特使专用处理
+			BA_rename_envoy = yes
+		}
+	}
+}
+
+#遍历所有自动操作标记领袖，刷新名称/立绘并检查特质 country
+BA_iterate_rename_flag_auto = {
+	optimize_memory
+	while = {
+		limit = {
+			any_owned_leader = {
+				has_leader_flag = BA_rename_target
+			}
+		}
+		random_owned_leader = {
+			limit = {
+				has_leader_flag = BA_rename_target
+			}
+			remove_leader_flag = BA_rename_target
+			#检查命名标志
 			BA_rename_leader_auto = yes
 		}
 	}
@@ -68,8 +120,6 @@ BA_iterate_rename_flag = {
 			}
 			remove_leader_flag = BA_rename_target
 			#检查命名标志
-			BA_check_rename_flag = yes
-			#按命名标志命名
 			BA_rename_leader_auto = yes
 		}
 	}
@@ -107,9 +157,7 @@ BA_event_leader_replace = {
 			remove_leader_flag = BA_has_sp_trait
 			BA_remove_club_trait = yes
 			BA_remove_skin_trait = yes
-			BA_check_rename_flag = yes
 			BA_rename_leader = yes
-			BA_change_skin_trait_if_unlocked = yes
 		}
 		every_pool_leader = {
 			limit = {
@@ -120,9 +168,7 @@ BA_event_leader_replace = {
 			remove_leader_flag = BA_has_sp_trait
 			BA_remove_club_trait = yes
 			BA_remove_skin_trait = yes
-			BA_check_rename_flag = yes
 			BA_rename_leader = yes
-			BA_change_skin_trait_if_unlocked = yes
 		}
 	}
 }
@@ -131,35 +177,96 @@ BA_event_leader_replace = {
 #按设置执行重命名操作的主动作器 leader
 BA_rename_leader = {
 	optimize_memory
-	BA_check_rename_flag = yes
 	if = {
 		limit = {
-			has_global_flag = BA_leader_rename_activated
+			BA_leader_rename_target_check = yes
 		}
-		BA_set_name = yes
-	}
-	if = {
-		limit = {
-			has_global_flag = BA_leader_rename_add_club_trait
+		BA_check_rename_flag = yes
+		if = {
+			limit = {
+				has_global_flag = BA_leader_rename_activated
+			}
+			BA_set_name = yes
 		}
-		BA_change_club_trait = yes
+		if = {
+			limit = {
+				has_global_flag = BA_leader_rename_add_club_trait
+				BA_has_rename_identity = yes
+			}
+			BA_change_club_trait = yes
+		}
+		BA_apply_personal_trait = yes
+		set_leader_flag = BA_renamed
 	}
-	set_leader_flag = BA_renamed
 }
 
-#自动检测只刷新名称/立绘，不处理特质 leader
+#自动检测刷新名称/立绘，并补齐缺失的特质标记 leader
 BA_rename_leader_auto = {
 	optimize_memory
 	if = {
 		limit = {
-			has_global_flag = BA_leader_rename_activated
+			BA_leader_rename_target_check = yes
 		}
-		BA_set_name = yes
+		if = {
+			limit = {
+				has_global_flag = BA_leader_rename_activated
+			}
+			BA_set_name = yes
+		}
+		BA_check_rename_traits = yes
+		set_leader_flag = BA_renamed
 	}
-	set_leader_flag = BA_renamed
 }
 
 #3级后刷新个人/换装特质 leader
+BA_rename_leader_hired = {
+	optimize_memory
+	if = {
+		limit = {
+			BA_leader_rename_target_check = yes
+		}
+		BA_apply_personal_trait = yes
+		BA_check_rename_traits = yes
+	}
+}
+
+BA_apply_personal_trait = {
+	optimize_memory
+	if = {
+		limit = {
+			has_global_flag = BA_leader_rename_add_skin_trait
+		}
+		BA_remove_skin_trait = yes
+		if = {
+			limit = {
+				BA_has_rename_identity = yes
+				BA_rename_special_unlocked_check = yes
+			}
+			BA_change_skin_trait = yes
+		}
+	}
+}
+
+BA_check_rename_traits = {
+	optimize_memory
+	if = {
+		limit = {
+			BA_leader_rename_target_check = yes
+			BA_has_rename_identity = yes
+			BA_rename_club_trait_check = yes
+		}
+		BA_change_club_trait = yes
+	}
+	if = {
+		limit = {
+			BA_leader_rename_target_check = yes
+			BA_has_rename_identity = yes
+			BA_rename_personal_trait_check = yes
+		}
+		BA_apply_personal_trait = yes
+	}
+}
+
 BA_change_skin_trait_if_unlocked = {
 	optimize_memory
 	if = {
@@ -1062,34 +1169,40 @@ BA_rename_envoy = {
 BA_set_rename_fix_flag = {
 	every_owned_leader = {
 		limit = {
-			species = {
-				BA_has_halo_organic = yes
-			}
+			BA_leader_rename_target_check = yes
 		}
 		set_leader_flag = BA_rename_fix_target
 	}
 	every_pool_leader = {
 		limit = {
-			species = {
-				BA_has_halo_organic = yes
-			}
+			BA_leader_rename_target_check = yes
 		}
 		set_leader_flag = BA_rename_fix_target
 	}
 	every_envoy = {
 		limit = {
-			species = {
-				BA_has_halo_organic = yes
-			}
+			BA_leader_rename_target_check = yes
 		}
 		set_leader_flag = BA_rename_fix_target
 	}
 	# 重命名豁免
 	every_owned_leader = {
 		limit = {
-			OR = {
-				BA_leader_exempt_rename = yes
-			}
+			BA_leader_rename_target_check = no
+		}
+		remove_leader_flag = BA_rename_target
+		remove_leader_flag = BA_rename_fix_target
+	}
+	every_pool_leader = {
+		limit = {
+			BA_leader_rename_target_check = no
+		}
+		remove_leader_flag = BA_rename_target
+		remove_leader_flag = BA_rename_fix_target
+	}
+	every_envoy = {
+		limit = {
+			BA_leader_rename_target_check = no
 		}
 		remove_leader_flag = BA_rename_target
 		remove_leader_flag = BA_rename_fix_target
@@ -1112,14 +1225,6 @@ BA_iterate_rename_fix_flag = {
 			remove_leader_flag = BA_rename_fix_target
 			#按命名标志命名
 			BA_rename_leader = yes
-			BA_change_skin_trait_if_unlocked = yes
-			#移除特质并重新添加
-			if = {
-				limit = {
-					has_global_flag = BA_leader_rename_add_club_trait
-				}
-				BA_change_club_trait = yes
-			}
 		}
 	}
 	while = {
@@ -1135,14 +1240,6 @@ BA_iterate_rename_fix_flag = {
 			remove_leader_flag = BA_rename_fix_target
 			#按命名标志命名
 			BA_rename_leader = yes
-			BA_change_skin_trait_if_unlocked = yes
-			#移除特质并重新添加
-			if = {
-				limit = {
-					has_global_flag = BA_leader_rename_add_club_trait
-				}
-				BA_change_club_trait = yes
-			}
 		}
 	}
 	while = {
@@ -1168,6 +1265,7 @@ BA_remove_sp_trait = {
 	optimize_memory
 	# 标识
 	remove_leader_flag = BA_has_sp_trait
+	remove_leader_flag = BA_has_club_trait
 	# 社团特质
 	remove_trait = leader_club_default
 	remove_trait = leader_club_Abydos_01
@@ -1417,6 +1515,7 @@ BA_remove_sp_trait = {
 #移除社团特质 leader
 BA_remove_club_trait = {
 	optimize_memory
+	remove_leader_flag = BA_has_club_trait
 	remove_trait = leader_club_default
 	remove_trait = leader_club_Abydos_01
 	remove_trait = leader_club_Abydos_02
@@ -1478,6 +1577,8 @@ BA_remove_club_trait = {
 
 #移除个人特质 leader
 BA_remove_skin_trait = {
+	optimize_memory
+	remove_leader_flag = BA_has_sp_trait
 	remove_trait = leader_special_Hoshino
 	remove_trait = leader_special_Hoshino_SS
 	remove_trait = leader_special_Shiroko
@@ -2569,6 +2670,7 @@ BA_change_club_trait = {
 			trait = leader_club_default
 		}
 	}
+	set_leader_flag = BA_has_club_trait
 }
 
 #检测领袖标志和换装标志，更换个人特质 leader

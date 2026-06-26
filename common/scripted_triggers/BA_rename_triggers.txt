@@ -201,11 +201,18 @@ BA_has_rename_identity = {
 	}
 }
 
-BA_rename_special_unlocked_check = {
-	has_total_skill >= 3
+BA_leader_rename_target_check = {
 	species = {
 		BA_has_halo_organic = yes
 	}
+	NOT = {
+		BA_leader_exempt_rename = yes
+	}
+}
+
+BA_rename_special_unlocked_check = {
+	has_total_skill >= 3
+	BA_leader_rename_target_check = yes
 	OR = {
 		leader_class = commander
 		leader_class = scientist
@@ -214,6 +221,21 @@ BA_rename_special_unlocked_check = {
 }
 
 BA_rename_special_check = {
+	BA_rename_special_unlocked_check = yes
+	NOT = {
+		has_leader_flag = BA_has_sp_trait
+	}
+}
+
+BA_rename_club_trait_check = {
+	has_global_flag = BA_leader_rename_add_club_trait
+	NOT = {
+		has_leader_flag = BA_has_club_trait
+	}
+}
+
+BA_rename_personal_trait_check = {
+	has_global_flag = BA_leader_rename_add_skin_trait
 	BA_rename_special_unlocked_check = yes
 	NOT = {
 		has_leader_flag = BA_has_sp_trait

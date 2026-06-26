@@ -4,6 +4,7 @@ BA_check_rename_flag = {
 	optimize_memory
 	if = {
 		limit = {
+			BA_leader_rename_target_check = yes
 			NOT = {
 				BA_has_rename_identity = yes
 			}
