@@ -212,18 +212,10 @@ BA_leader_rename_target_check = {
 
 BA_rename_special_unlocked_check = {
 	has_total_skill >= 3
-	BA_leader_rename_target_check = yes
 	OR = {
 		leader_class = commander
 		leader_class = scientist
 		leader_class = official
-	}
-}
-
-BA_rename_special_check = {
-	BA_rename_special_unlocked_check = yes
-	NOT = {
-		has_leader_flag = BA_has_sp_trait
 	}
 }
 

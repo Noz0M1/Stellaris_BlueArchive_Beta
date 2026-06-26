@@ -1,6 +1,12 @@
 namespace = BA_rename
+# 1.开局全局处理：赋予身份、名称立绘、社团特质、个人特质
+# 2.入池处理：赋予身份、名称立绘、社团特质、个人特质
+# 3.招募时：个人特质、特质检查
+# 4.周期自动全局处理：名称立绘、特质检查
+# 5.手动全局处理：赋予身份、名称立绘、社团特质、个人特质
 ################
-#开局触发器
+# 1. 开局全局处理
+################
 country_event = {
 	id = BA_rename.1000
 	is_triggered_only = yes
@@ -54,15 +60,15 @@ country_event = {
 				limit = {
 					has_global_flag = BA_leader_rename_activated
 				}
-                every_country = {
-                    limit = {
-                        is_country_type = default
-                        has_authority = auth_kivotos
-                    }
-                    BA_set_rename_flag = yes
-                    BA_iterate_rename_flag = yes
-                }
-            }
+				every_country = {
+					limit = {
+						is_country_type = default
+						has_authority = auth_kivotos
+					}
+					BA_set_rename_flag = yes
+					BA_iterate_rename_flag = yes
+				}
+			}
 		}
 	}
 }
@@ -139,8 +145,8 @@ country_event = {
 		has_global_flag = BA_leader_rename_activated
 	}
 	immediate = {
-		BA_set_rename_fix_flag = yes
-		BA_iterate_rename_fix_flag = yes
+		BA_set_rename_flag = yes
+		BA_iterate_rename_flag = yes
 	}
 }
 
