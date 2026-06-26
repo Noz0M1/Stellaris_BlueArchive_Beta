@@ -1,0 +1,73 @@
+### 功能1 赋予身份
+BA_rename_base_identity = {
+    optimize_memory
+    # 赋予重命名标识，排除豁免
+    hidden_effect = {
+        every_owned_leader = {
+            limit = {
+                BA_rename_identity_target_check = yes
+            }
+            set_leader_flag = BA_rename_target
+        }
+        every_pool_leader = {
+            limit = {
+                BA_rename_identity_target_check = yes
+            }
+            set_leader_flag = BA_rename_target
+        }
+        every_envoy = {
+            limit = {
+                BA_rename_identity_target_check = yes
+            }
+            set_leader_flag = BA_rename_target
+        }
+    }
+    # 遍历领袖，赋予身份
+    hidden_effect = {
+        while = {
+            limit = {
+                any_owned_leader = {
+                    has_leader_flag = BA_rename_target
+                }
+            }
+            random_owned_leader = {
+                limit = {
+                    has_leader_flag = BA_rename_target
+                }
+                remove_leader_flag = BA_rename_target
+                BA_rename_effect_identity = yes
+            }
+        }
+        while = {
+            limit = {
+                any_pool_leader = {
+                    has_leader_flag = BA_rename_target
+                }
+            }
+            random_pool_leader = {
+                limit = {
+                    has_leader_flag = BA_rename_target
+                }
+                remove_leader_flag = BA_rename_target
+
+                BA_rename_effect_identity = yes
+            }
+        }
+        while = {
+            limit = {
+                any_envoy = {
+                    has_leader_flag = BA_rename_target
+                }
+            }
+            random_envoy = {
+                limit = {
+                    has_leader_flag = BA_rename_target
+                }
+                remove_leader_flag = BA_rename_target
+                #特使专用处理
+                BA_rename_effect_envoy = yes
+            }
+        }
+
+    }
+}

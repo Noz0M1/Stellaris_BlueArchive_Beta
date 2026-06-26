@@ -1,0 +1,8 @@
+BA_rename_identity_target_check = {
+	species = {
+		BA_has_halo_organic = yes
+	}
+	NOT = {
+		BA_leader_exempt_rename = yes
+	}
+}

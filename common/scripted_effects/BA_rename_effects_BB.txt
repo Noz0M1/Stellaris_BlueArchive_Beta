@@ -1,0 +1,2630 @@
+# 动作器：赋予身份 scope: leader
+BA_rename_effect_identity = {
+	random_list = {
+		#小鸟游星野
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Hoshino
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Hoshino
+		}
+		#砂狼白子
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Shiroko
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Shiroko
+		}
+		#黑见茜香
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Serika
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Serika
+		}
+		#十六夜野宫
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Nonomi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Nonomi
+		}
+		#奥空绫音
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Ayane
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Ayane
+		}
+		#栀子梦
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Yume
+				}
+			}
+			#无类别
+			#禁用
+			modifier = {
+				factor = 0
+				always = yes
+			}
+			set_leader_flag = leader_BA_Yume
+		}
+		#羽沼真琴
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Makoto
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Makoto
+		}
+		#枣伊吕波
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Iroha
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Iroha
+		}
+		#丹花伊吹
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Ibuki
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Ibuki
+		}
+		#京极皋月
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Satsuki
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Satsuki
+		}
+		#元宫千秋
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Chiaki
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Chiaki
+		}
+		#空崎日奈
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Hina
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Hina
+		}
+		#天雨亚子
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Ako
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Ako
+		}
+		#银镜伊织
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Iori
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Iori
+		}
+		#火宫千夏
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Chinatsu
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Chinatsu
+		}
+		#陆八魔亚瑠
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Aru
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Aru
+		}
+		#鬼方佳代子
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kayoko
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Kayoko
+		}
+		#浅黄睦月
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Mutsuki
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Mutsuki
+		}
+		#伊草春香
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Haruka
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Haruka
+		}
+		#黑馆晴奈
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Haruna
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Haruna
+		}
+		#鳄渊明里
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Akari
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Akari
+		}
+		#狮子堂泉
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Izumi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Izumi
+		}
+		#赤司淳子
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Junko
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Junko
+		}
+		#爱清枫香
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Fuuka
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Fuuka
+		}
+		#牛牧朱莉
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Juri
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Juri
+		}
+		#鬼怒川霞
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kasumi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Kasumi
+		}
+		#下仓惠
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Megu
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Megu
+		}
+		#夜樱绮罗罗
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kirara
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Kirara
+		}
+		#旗见绘里香
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Erika
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Erika
+		}
+		#冰室濑名
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Sena
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Sena
+		}
+		#调月莉音
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Rio
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Rio
+		}
+		#早濑优香
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Yuuka
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Yuuka
+		}
+		#生盐诺亚
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Noa
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Noa
+		}
+		#黑崎小雪
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Koyuki
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Koyuki
+		}
+		#美甘尼禄
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Neru
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Neru
+		}
+		#一之濑明日奈
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Asuna
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Asuna
+		}
+		#角楯花凛
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Karin
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Karin
+		}
+		#室笠朱音
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Akane
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Akane
+		}
+		#飞鸟马时
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Toki
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Toki
+		}
+		#花冈柚子
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Yuzu
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Yuzu
+		}
+		#才羽桃井
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Momoi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Momoi
+		}
+		#才羽绿
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Midori
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Midori
+		}
+		#天童爱丽丝
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Aris
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Aris
+		}
+		#各务千寻
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Chihiro
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Chihiro
+		}
+		#音濑小玉
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kotama
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Kotama
+		}
+		#小钩晴
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Hare
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Hare
+		}
+		#小涂真纪
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Maki
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Maki
+		}
+		#白石咏叶
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Utaha
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Utaha
+		}
+		#猫冢响
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Hibiki
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Hibiki
+		}
+		#丰见亚都梨
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kotori
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Kotori
+		}
+		#明星日鞠
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Himari
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Himari
+		}
+		#和泉元艾米
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Eimi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Eimi
+		}
+		#柯伊
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kei
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Kei
+		}
+		#乙花堇
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Sumire
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Sumire
+		}
+		#野正丽
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Rei
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Rei
+		}
+		#吾妻未来
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Mirai
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Mirai
+		}
+		#圣园未花
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Mika
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Mika
+		}
+		#桐藤渚
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Nagisa
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Nagisa
+		}
+		#百合园圣娅
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Seia
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Seia
+		}
+		#阿慈谷日富美
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Hifumi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Hifumi
+		}
+		#白洲梓
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Azusa
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Azusa
+		}
+		#浦和花子
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Hanako
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Hanako
+		}
+		#下江小春
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Koharu
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Koharu
+		}
+		#剑先鹤城
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Tsurugi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Tsurugi
+		}
+		#羽川莲实
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Hasumi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Hasumi
+		}
+		#仲正一花
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Ichika
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Ichika
+		}
+		#静山真白
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Mashiro
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Mashiro
+		}
+		#歌住樱子
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Sakurako
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Sakurako
+		}
+		#若叶日向
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Hinata
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Hinata
+		}
+		#伊落玛丽
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Mari
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Mari
+		}
+		#栗村爱莉
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Airi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Airi
+		}
+		#杏山和纱
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kazusa
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Kazusa
+		}
+		#伊原木好美
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Yoshimi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Yoshimi
+		}
+		#柚鸟夏
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Natsu
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Natsu
+		}
+		#苍森美弥
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Mine
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Mine
+		}
+		#鹫见芹娜
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Serina
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Serina
+		}
+		#朝颜花绘
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Hanae
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Hanae
+		}
+		#守月铃美
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Suzumi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Suzumi
+		}
+		#宇泽玲纱
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Reisa
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Reisa
+		}
+		#古关忧
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Ui
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Ui
+		}
+		#圆堂志美子
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Shimiko
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Shimiko
+		}
+		#狐坂若藻
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Wakamo
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Wakamo
+		}
+		#天地妮娅
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Niya
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Niya
+		}
+		#桑上果穗
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kaho
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Kaho
+		}
+		#和乐千世
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Chise
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Chise
+		}
+		#七棱菖蒲
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Ayame
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Ayame
+		}
+		#御棱名草
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Nagusa
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Nagusa
+		}
+		#不破莲华
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Renge
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Renge
+		}
+		#桐生桔梗
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kikyou
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Kikyou
+		}
+		#勘解由小路紫
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Yukari
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Yukari
+		}
+		#葛叶
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kuzunoha
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			#前5年不刷防止卡槽位，中期5年后刷率增加，末期5年后刷率极剧增加
+			modifier = {
+				factor = 0
+				years_passed <= 5
+			}
+			modifier = {
+				factor = 10
+				mid_game_years_passed >= 5
+			}
+			modifier = {
+				factor = 10
+				end_game_years_passed >= 5
+			}
+			set_leader_flag = leader_BA_Kuzunoha
+		}
+		#春日椿
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Tsubaki
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Tsubaki
+		}
+		#水羽三森
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Mimori
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Mimori
+		}
+		#勇美枫
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kaede
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Kaede
+		}
+		#千鸟满
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Michiru
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Michiru
+		}
+		#久田泉奈
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Izuna
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Izuna
+		}
+		#大野月咏
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Tsukuyo
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Tsukuyo
+		}
+		#河和静子
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Shizuko
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Shizuko
+		}
+		#朝比奈菲娜
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Pina
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Pina
+		}
+		#里滨海香
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Umika
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Umika
+		}
+		#虞美人
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kokuriko
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Kokuriko
+		}
+		#箭吹棕榈
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Shuro
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Shuro
+		}
+		#土生蓟
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Azami
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Azami
+		}
+		#新
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Arata
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Arata
+		}
+		#连河切莉诺
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Cherino
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Cherino
+		}
+		#佐城智惠
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Tomoe
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Tomoe
+		}
+		#池仓玛丽娜
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Marina
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Marina
+		}
+		#天见和香
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Nodoka
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Nodoka
+		}
+		#间宵时雨
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Shigure
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Shigure
+		}
+		#秋泉红叶
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Momiji
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Momiji
+		}
+		#姬木爱瑠
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Meru
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Meru
+		}
+		#荒槙八云
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Yakumo
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Yakumo
+		}
+		#三善贵音
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Takane
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Takane
+		}
+		#安守实里
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Minori
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Minori
+		}
+		#龙华妃咲
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kisaki
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Kisaki
+		}
+		#近卫弥奈
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Mina
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Mina
+		}
+		#朱城瑠美
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Rumi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Rumi
+		}
+		#鹿山丽情
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Reijo
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Reijo
+		}
+		#春原瞬
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Shun
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Shun
+		}
+		#春原心奈
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kokona
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Kokona
+		}
+		#申谷海
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kai
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Kai
+		}
+		#药子沙耶
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Saya
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = scientist
+				}
+			}
+			set_leader_flag = leader_BA_Saya
+		}
+		#漆原辉夜
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kaguya
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Kaguya
+		}
+		#尾刃康娜
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kanna
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Kanna
+		}
+		#木乃香
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Konoka
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Konoka
+		}
+		#中务桐乃
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kirino
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Kirino
+		}
+		#合欢垣吹雪
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Fubuki
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Fubuki
+		}
+		#锭前纱织
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Saori
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Saori
+		}
+		#秤亚津子
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Atsuko
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Atsuko
+		}
+		#戒野美咲
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Misaki
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Misaki
+		}
+		#槌永日和
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Hiyori
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Hiyori
+		}
+		#梯昴
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Subaru
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Subaru
+		}
+		#立木迈亚
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Maia
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Maia
+		}
+		#月雪宫子
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Miyako
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Miyako
+		}
+		#空井咲
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Saki
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Saki
+		}
+		#霞泽美游
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Miyu
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Miyu
+		}
+		#风仓萌绘
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Moe
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Moe
+		}
+		#七度雪乃
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Yukino
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Yukino
+		}
+		#妮可
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Niko
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Niko
+		}
+		#胡桃
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kurumi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Kurumi
+		}
+		#音葵
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Otogi
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Otogi
+		}
+		#橘光明
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Hikari
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Hikari
+		}
+		#橘希望
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Nozomi
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Nozomi
+		}
+		#朝雾周防
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Suou
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Suou
+		}
+		#内海青叶
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Aoba
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Aoba
+		}
+		#清澄晶
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Akira
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Akira
+		}
+		#裕美
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Hiromi
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Hiromi
+		}
+		#白尾绘里
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Eri
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Eri
+		}
+		#椎名纺希
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Tsumugi
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Tsumugi
+		}
+		#板垣鹿江
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kanoe
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Kanoe
+		}
+		#衣斐蕾娜
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Rena
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Rena
+		}
+		#樱井美代
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Miyo
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Miyo
+		}
+		#若狭冬优
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Fuyu
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Fuyu
+		}
+		#薄叶律
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Ritsu
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Ritsu
+		}
+		#初音未来
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_HatsuneMiku
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+					leader_class = scientist
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_HatsuneMiku
+		}
+		#笑面教授
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_ProfessorSmug
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_ProfessorSmug
+		}
+		#（联邦学生会会长）
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_StudentCouncilPresident
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_StudentCouncilPresident
+		}
+		#七神凛
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Rin
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Rin
+		}
+		#由良木桃香
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Momoka
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Momoka
+		}
+		#岩柜步梦
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Ayumu
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Ayumu
+		}
+		#不知火花耶
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Kaya
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = official
+				}
+			}
+			set_leader_flag = leader_BA_Kaya
+		}
+		#扇喜葵
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Aoi
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Aoi
+		}
+		#灰音
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Haine
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Haine
+		}
+		#李
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Sumomo
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Sumomo
+		}
+		#阿洛娜
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Arona
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Arona
+		}
+		#普拉娜
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Plana
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					leader_class = commander
+				}
+			}
+			set_leader_flag = leader_BA_Plana
+		}
+		#空
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Sora
+				}
+			}
+			#无类别
+			#禁用
+			modifier = {
+				factor = 0
+				always = yes
+			}
+			set_leader_flag = leader_BA_Sora
+		}
+		#河驹风兰舞
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Labu
+				}
+			}
+			#无类别
+			#禁用
+			modifier = {
+				factor = 0
+				always = yes
+			}
+			set_leader_flag = leader_BA_Labu
+		}
+		#川流诗音
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Shinon
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Shinon
+		}
+		#风卷麻衣
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Mai
+				}
+			}
+			#无类别
+			set_leader_flag = leader_BA_Mai
+		}
+		#艾茵
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Ayin
+				}
+			}
+			#无类别
+			#禁用
+			modifier = {
+				factor = 0
+				always = yes
+			}
+			set_leader_flag = leader_BA_Ayin
+		}
+		#索芙
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Soph
+				}
+			}
+			#无类别
+			#禁用
+			modifier = {
+				factor = 0
+				always = yes
+			}
+			set_leader_flag = leader_BA_Soph
+		}
+		#奥茹
+		10 = {
+			modifier = {
+				factor = 0
+				BA_leader_has_same = {
+					flag = leader_BA_Aur
+				}
+			}
+			#无类别
+			#禁用
+			modifier = {
+				factor = 0
+				always = yes
+			}
+			set_leader_flag = leader_BA_Aur
+		}
+	}
+}
+
+# 动作器：赋予身份（特使专用处理，不参与后续步骤）
+BA_rename_effect_envoy = {
+	optimize_memory
+	change_leader_portrait = BA_carefree
+	set_name = BA_envoy
+}
