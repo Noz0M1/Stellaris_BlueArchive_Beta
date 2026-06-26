@@ -53,8 +53,7 @@ BA_iterate_rename_flag = {
 			#检查命名标志
 			BA_check_rename_flag = yes
 			#按命名标志命名
-			BA_rename_leader = yes
-			BA_change_skin_trait_if_unlocked = yes
+			BA_rename_leader_auto = yes
 		}
 	}
 	while = {
@@ -71,8 +70,7 @@ BA_iterate_rename_flag = {
 			#检查命名标志
 			BA_check_rename_flag = yes
 			#按命名标志命名
-			BA_rename_leader = yes
-			BA_change_skin_trait_if_unlocked = yes
+			BA_rename_leader_auto = yes
 		}
 	}
 	while = {
@@ -133,6 +131,7 @@ BA_event_leader_replace = {
 #按设置执行重命名操作的主动作器 leader
 BA_rename_leader = {
 	optimize_memory
+	BA_check_rename_flag = yes
 	if = {
 		limit = {
 			has_global_flag = BA_leader_rename_activated
@@ -144,6 +143,18 @@ BA_rename_leader = {
 			has_global_flag = BA_leader_rename_add_club_trait
 		}
 		BA_change_club_trait = yes
+	}
+	set_leader_flag = BA_renamed
+}
+
+#自动检测只刷新名称/立绘，不处理特质 leader
+BA_rename_leader_auto = {
+	optimize_memory
+	if = {
+		limit = {
+			has_global_flag = BA_leader_rename_activated
+		}
+		BA_set_name = yes
 	}
 	set_leader_flag = BA_renamed
 }

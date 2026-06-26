@@ -9,7 +9,7 @@ decision_BA_convert_to_Aris = {
 	}
 	effect = {
 		hidden_effect = {
-			planet_event = {
+			colony_event = {
 				id = BA_Shittem.3001
 			}
 		}
@@ -53,17 +53,24 @@ decision_BA_new_frontier = {
 				type = district_generator
 				value < 1
 			}
+			# Volcanic Worlds
 			num_districts = {
-				type = district_farming_uncapped
+				type = district_geothermal
 				value < 1
 			}
 			num_districts = {
-				type = district_mining_uncapped
+				type = district_melting
 				value < 1
 			}
 			num_districts = {
-				type = district_generator_uncapped
+				type = district_polytechnic
 				value < 1
+			}
+		}
+		custom_tooltip = {
+			fail_text = legendary_leader_decision_arcology_project
+			NOT = {
+				has_carrier_flag = legendary_leader_planet
 			}
 		}
 		num_uncleared_blockers < 1

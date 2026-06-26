@@ -154,11 +154,10 @@ d_Arius_Cathedral_ruined = {
 		hidden_effect = {
 			#清除后给予flag并检测是否全部清除
 			set_planet_flag = Arius_Cathedral_flag_ruined
-			# planet_event = {
-			# 	id = BA_origin.0280
-			# }
-			planet_event = {
-				id = BA_origin.1301
+			colony = {
+				colony_event = {
+					id = BA_origin.1301
+				}
 			}
 		}
 	}
@@ -341,18 +340,18 @@ d_BA_ark_continent = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 	planet_modifier = {
-        planet_housing_add = 3000
+		planet_housing_add = 3000
 		planet_max_districts_add = 8
-        planet_defense_armies_add = 10
-    }
-    triggered_planet_modifier = {
-        potential = {
-            owner? = {
-                has_authority = auth_kivotos
-            }
-        }
-        job_BA_Vigilant_crew_add = 100
-    }
+		planet_defense_armies_add = 10
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner? = {
+				has_authority = auth_kivotos
+			}
+		}
+		job_BA_Vigilant_crew_add = 100
+	}
 	resources = {
 		category = BA_planet_deposit
 		produces = {

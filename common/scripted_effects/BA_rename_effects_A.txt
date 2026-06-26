@@ -5,7 +5,7 @@ BA_check_rename_flag = {
 	if = {
 		limit = {
 			NOT = {
-				has_leader_flag = BA_renamed
+				BA_has_rename_identity = yes
 			}
 		}
 		random_list = {

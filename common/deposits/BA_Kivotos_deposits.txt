@@ -48,8 +48,10 @@ d_broken_Abydos_school = {
 				# planet_event = {
 				# 	id = BA_origin.0281
 				# }
-				planet_event = {
-					id = BA_origin.1302
+				colony = {
+					colony_event = {
+						id = BA_origin.1302
+					}
 				}
 				#委托
 				owner = {
@@ -68,9 +70,11 @@ d_broken_Abydos_school = {
 					which = BA_cleared_deposit
 					value = 1
 				}
-                planet_event = {
-                    id = BA_origin.0009
-                }
+				colony = {
+					colony_event = {
+						id = BA_origin.0009
+					}
+				}
 			}
 		}
 	}
@@ -120,11 +124,10 @@ d_broken_Millennium_school = {
 			hidden_effect = {
 				#清除后给予flag并检测是否全部清除
 				set_Planet_flag = Millennium_was_fixed_flag_ruined
-				# planet_event = {
-				# 	id = BA_origin.0282
-				# }
-				planet_event = {
-					id = BA_origin.1303
+				colony = {
+					colony_event = {
+						id = BA_origin.1303
+					}
 				}
 			}
 		}
@@ -139,9 +142,11 @@ d_broken_Millennium_school = {
 					which = BA_cleared_deposit
 					value = 1
 				}
-                planet_event = {
-                    id = BA_origin.0009
-                }
+				colony = {
+					colony_event = {
+						id = BA_origin.0009
+					}
+				}
 			}
 		}
 	}
@@ -191,11 +196,10 @@ d_broken_Trinity_school = {
 			hidden_effect = {
 				#清除后给予flag并检测是否全部清除
 				set_Planet_flag = Trinity_was_fixed_flag_ruined
-				# planet_event = {
-				# 	id = BA_origin.0283
-				# }
-				planet_event = {
-					id = BA_origin.1304
+				colony = {
+					colony_event = {
+						id = BA_origin.1304
+					}
 				}
 			}
 		}
@@ -210,9 +214,11 @@ d_broken_Trinity_school = {
 					which = BA_cleared_deposit
 					value = 1
 				}
-                planet_event = {
-                    id = BA_origin.0009
-                }
+				colony = {
+					colony_event = {
+						id = BA_origin.0009
+					}
+				}
 			}
 		}
 	}
@@ -262,16 +268,15 @@ d_broken_Gehenna_school = {
 			hidden_effect = {
 				#清除后给予flag并检测是否全部清除
 				set_Planet_flag = Gehenna_was_fixed_flag_ruined
-				# planet_event = {
-				# 	id = BA_origin.0284
-				# }
-				planet_event = {
+			}
+			colony = {
+				colony_event = {
 					id = BA_origin.1305
 				}
-				#委托
-				owner = {
-					set_country_flag = BA_Kyrie_commmission_03_allow
-				}
+			}
+			#委托
+			owner = {
+				set_country_flag = BA_Kyrie_commmission_03_allow
 			}
 		}
 		else_if = {
@@ -285,8 +290,10 @@ d_broken_Gehenna_school = {
 					which = BA_cleared_deposit
 					value = 1
 				}
-				planet_event = {
-					id = BA_origin.0009
+				colony = {
+					colony_event = {
+						id = BA_origin.0009
+					}
 				}
 			}
 		}
@@ -313,11 +320,10 @@ d_Abydos_school = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_tradition = tr_kivotos_finish
-			}
-		}
+            owner? = {
+                has_tradition = tr_kivotos_finish
+            }
+        }
 		modifier = {
 			#传统：1学生代表
 			job_BA_student_delegate_add = 100
@@ -349,11 +355,10 @@ d_Millennium_school = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_tradition = tr_kivotos_finish
-			}
-		}
+            owner? = {
+                has_tradition = tr_kivotos_finish
+            }
+        }
 		modifier = {
 			#传统：1学生代表
 			job_BA_student_delegate_add = 100
@@ -383,11 +388,10 @@ d_Trinity_school = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_tradition = tr_kivotos_finish
-			}
-		}
+            owner? = {
+                has_tradition = tr_kivotos_finish
+            }
+        }
 		modifier = {
 			#传统：1学生代表
 			job_BA_student_delegate_add = 100
@@ -418,11 +422,10 @@ d_Gehenna_school = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_tradition = tr_kivotos_finish
-			}
-		}
+            owner? = {
+                has_tradition = tr_kivotos_finish
+            }
+        }
 		modifier = {
 			#传统：1学生代表
 			job_BA_student_delegate_add = 100

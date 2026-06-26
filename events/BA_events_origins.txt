@@ -379,7 +379,7 @@ country_event = {
 }
 
 #清理完成
-planet_event = {
+colony_event = {
 	id = BA_origin.0009
 	is_triggered_only = yes
 	hide_window = yes
@@ -985,7 +985,7 @@ situation_event = {
 	hide_window = yes
 	immediate = {
 		target = {
-			planet_event = {
+			colony_event = {
 				id = BA_origin.1033
 			}
 		}
@@ -993,7 +993,7 @@ situation_event = {
 }
 
 #-研究废墟采矿科技2月后，开始随机生成废墟
-planet_event = {
+colony_event = {
 	id = BA_origin.1031
 	is_triggered_only = yes
 	title = BA_origin.1031.title
@@ -1039,7 +1039,7 @@ country_event = {
 }
 
 #- 随机生成一个废墟
-planet_event = {
+colony_event = {
 	id = BA_origin.1033
 	is_triggered_only = yes
 	title = BA_origin.1033.title
@@ -1217,7 +1217,7 @@ country_event = {
 }
 
 #准备完毕开始清扫（阶段2）
-planet_event = {
+colony_event = {
 	id = BA_origin.1102
 	is_triggered_only = yes
 	title = BA_origin.1102.title
@@ -1233,7 +1233,7 @@ planet_event = {
 }
 
 #清扫完毕
-planet_event = {
+colony_event = {
 	id = BA_origin.1103
 	is_triggered_only = yes
 	title = BA_origin.1103.title
@@ -1254,7 +1254,7 @@ planet_event = {
 }
 
 #重建完成
-planet_event = {
+colony_event = {
 	id = BA_origin.1104
 	is_triggered_only = yes
 	title = BA_origin.1104.title
@@ -1274,7 +1274,7 @@ planet_event = {
 ### 局势控制：解除威胁
 #只有一个阶段。详见设计文档。
 #陆军入侵
-planet_event = {
+colony_event = {
 	id = BA_origin.1200
 	is_triggered_only = yes
 	hide_window = yes
@@ -1544,14 +1544,14 @@ situation_event = {
 				has_situation_flag = BA_enemy_met
 			}
 			target = {
-				planet_event = {
+				colony_event = {
 					id = BA_origin.1212
 				}
 			}
 		}
 		else = {
 			target = {
-				planet_event = {
+				colony_event = {
 					id = BA_origin.1211
 				}
 			}
@@ -1561,7 +1561,7 @@ situation_event = {
 }
 
 #首次刷陆军
-planet_event = {
+colony_event = {
 	id = BA_origin.1211
 	is_triggered_only = yes
 	title = BA_origin.1211.title
@@ -1577,7 +1577,7 @@ planet_event = {
 			flag = BA_enemy_just_defeated
 			days = 180
 		}
-		planet_event = {
+		colony_event = {
 			id = BA_origin.1200
 		}
 	}
@@ -1587,7 +1587,7 @@ planet_event = {
 }
 
 #后续刷陆军
-planet_event = {
+colony_event = {
 	id = BA_origin.1212
 	is_triggered_only = yes
 	title = BA_origin.1212.title
@@ -1603,7 +1603,7 @@ planet_event = {
 			flag = BA_enemy_just_defeated
 			days = 180
 		}
-		planet_event = {
+		colony_event = {
 			id = BA_origin.1200
 		}
 	}
@@ -1614,7 +1614,7 @@ planet_event = {
 
 ### 项目完成
 #完成1
-planet_event = {
+colony_event = {
 	id = BA_origin.1213
 	is_triggered_only = yes
 	title = BA_origin.1213.title
@@ -1634,7 +1634,7 @@ planet_event = {
 }
 
 #完成2
-planet_event = {
+colony_event = {
 	id = BA_origin.1214
 	is_triggered_only = yes
 	title = BA_origin.1214.title
@@ -1654,7 +1654,7 @@ planet_event = {
 }
 
 #完成3
-planet_event = {
+colony_event = {
 	id = BA_origin.1215
 	is_triggered_only = yes
 	title = BA_origin.1215.title
@@ -1674,7 +1674,7 @@ planet_event = {
 }
 
 #完成4
-planet_event = {
+colony_event = {
 	id = BA_origin.1216
 	is_triggered_only = yes
 	title = BA_origin.1216.title
@@ -1715,7 +1715,7 @@ country_event = {
 	}
 	immediate = {
 		fromfrom = {
-			planet_event = {
+			colony_event = {
 				id = BA_origin.1221
 			}
 		}
@@ -1723,7 +1723,7 @@ country_event = {
 }
 
 #击退通知
-planet_event = {
+colony_event = {
 	id = BA_origin.1221
 	is_triggered_only = yes
 	title = BA_origin.1221.title
@@ -1760,7 +1760,7 @@ planet_event = {
 
 ###### 遗迹事件 ######
 #重建圣殿
-planet_event = {
+colony_event = {
 	id = BA_origin.1301
 	is_triggered_only = yes
 	title = BA_origin.1301.title
@@ -1795,7 +1795,7 @@ planet_event = {
 }
 
 #重建阿拜多斯
-planet_event = {
+colony_event = {
 	id = BA_origin.1302
 	is_triggered_only = yes
 	title = BA_origin.1302.title
@@ -1837,7 +1837,7 @@ planet_event = {
 }
 
 #重建千年
-planet_event = {
+colony_event = {
 	id = BA_origin.1303
 	is_triggered_only = yes
 	title = BA_origin.1303.title
@@ -1891,7 +1891,7 @@ planet_event = {
 }
 
 #重建圣三一
-planet_event = {
+colony_event = {
 	id = BA_origin.1304
 	is_triggered_only = yes
 	title = BA_origin.1304.title
@@ -1946,7 +1946,7 @@ planet_event = {
 }
 
 #重建格黑那
-planet_event = {
+colony_event = {
 	id = BA_origin.1305
 	is_triggered_only = yes
 	title = BA_origin.1305.title
@@ -2035,11 +2035,9 @@ country_event = {
 					has_planet_flag = BA_Kyrie_target_@root
 				}
 			}
-			planet = {
-				planet_event = {
-					id = BA_origin.1031
-					days = 60
-				}
+			colony_event = {
+				id = BA_origin.1031
+				days = 60
 			}
 		}
 	}
@@ -2050,7 +2048,7 @@ country_event = {
 
 ### 任务失败
 #解除威胁局势拉满
-planet_event = {
+colony_event = {
 	id = BA_origin.1410
 	is_triggered_only = yes
 	title = BA_origin.1410.title
@@ -2103,14 +2101,14 @@ country_event = {
 	}
 	immediate = {
 		fromfrom = {
-			planet_event = {
+			colony_event = {
 				id = BA_origin.1412
 			}
 		}
 	}
 }
 
-planet_event = {
+colony_event = {
 	id = BA_origin.1412
 	is_triggered_only = yes
 	title = BA_origin.1412.title
@@ -2151,7 +2149,7 @@ planet_event = {
 }
 
 #其他方式丢失母星控制权-通知触发器
-planet_event = {
+colony_event = {
 	id = BA_origin.1413
 	is_triggered_only = yes
 	hide_window = yes
@@ -2160,7 +2158,7 @@ planet_event = {
 }
 
 #通知
-planet_event = {
+colony_event = {
 	id = BA_origin.1414
 	is_triggered_only = yes
 	title = BA_origin.1414.title
@@ -2201,7 +2199,7 @@ country_event = {
 	}
 	immediate = {
 		fromfrom = {
-			planet_event = {
+			colony_event = {
 				id = BA_origin.1414
 			}
 		}
@@ -2657,8 +2655,10 @@ country_event = {
 			remove_all_districts = yes
 			add_district = BA_districts_campus
 			validate_planet_buildings_and_districts = yes
-			planet_event = {
-				id = BA_origin.2010
+			colony = {
+				colony_event = {
+					id = BA_origin.2010
+				}
 			}
 		}
 		capital_scope? = {
@@ -2865,7 +2865,7 @@ country_event = {
 }
 
 # D.U.白鸟开局守军。复用旧 BA_origin.2010 事件号。
-planet_event = {
+colony_event = {
 	id = BA_origin.2010
 	is_triggered_only = yes
 	hide_window = yes

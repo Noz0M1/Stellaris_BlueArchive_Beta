@@ -244,7 +244,7 @@ situation_Kyrie_planet_cleaning = {
 			custom_tooltip = situation_Kyrie_planet_cleaning_2_tip
 			on_first_enter = {
 				target = {
-					planet_event = {
+					colony_event = {
 						id = BA_origin.1102
 					}
 				}
@@ -258,7 +258,7 @@ situation_Kyrie_planet_cleaning = {
 			on_first_enter = {
 				set_situation_locked = yes
 				target = {
-					planet_event = {
+					colony_event = {
 						id = BA_origin.1103
 					}
 				}
@@ -459,7 +459,7 @@ situation_Kyrie_engage_enemy = {
 	on_progress_complete = {
 		destroy_situation = this
 		target = {
-			planet_event = {
+			colony_event = {
 				id = BA_origin.1410 #boom
 			}
 		}

@@ -1627,11 +1627,6 @@ country_event = {
 	option = {
 		name = BACK
 		default_hide_option = yes
-		# hidden_effect = {
-		# 	country_event = {
-		# 		id = BA_Shittem.1300
-		# 	}
-		# }
 	}
 	# TODO：随特殊领袖储备更新
 	#爱丽丝
@@ -1661,18 +1656,6 @@ country_event = {
 }
 
 ## 换装
-# leader_event = {
-# 	id = BA_Shittem.1310
-# 	is_triggered_only = yes
-# 	hide_window = yes
-# 	immediate = {
-# 		owner = {
-# 			country_event = {
-# 				id = BA_Shittem.1311
-# 			}
-# 		}
-# 	}
-# }
 leader_event = {
 	id = BA_Shittem.1310
 	is_triggered_only = yes
@@ -3394,15 +3377,11 @@ country_event = {
 ###########################
 #### 爱丽丝
 #改装为姬器人
-planet_event = {
+colony_event = {
 	id = BA_Shittem.3001
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		# set_variable = {
-		# 	which = BA_MAC_count
-		# 	value = 0
-		# }
 		every_owned_pop_group = {
 			limit = {
 				is_robot_pop_group = yes
@@ -3413,31 +3392,7 @@ planet_event = {
 				}
 			}
 			change_species = event_target:BA_Robot_species
-			# set_pop_flag = BA_to_be_converted
 		}
-		# while = {
-		# 	limit = {
-		# 		any_owned_pop = {
-		# 			has_pop_flag = BA_to_be_converted
-		# 		}
-		# 	}
-		# 	random_owned_pop = {
-		# 		limit = {
-		# 			has_pop_flag = BA_to_be_converted
-		# 		}
-		# 		kill_pop = yes
-		# 	}
-		# 	change_variable = {
-		# 		which = BA_MAC_count
-		# 		value = 1
-		# 	}
-		# }
-		# while = {
-		# 	count = BA_MAC_count
-		# 	create_pop = {
-		# 		species = event_target:BA_Robot_species
-		# 	}
-		# }
 	}
 }
 
@@ -3972,7 +3927,7 @@ country_event = {
 
 #### 功能事件
 #殖民初始化
-planet_event = {
+colony_event = {
 	id = BA_Shittem.3201
 	is_triggered_only = yes
 	hide_window = yes
@@ -4210,7 +4165,7 @@ country_event = {
 
 ### 阿拜多斯
 #B01 B04-新殖民星球-沙漠开发 丰饶绿洲计划
-planet_event = {
+colony_event = {
 	id = BA_Shittem.4011
 	is_triggered_only = yes
 	hide_window = yes
@@ -4243,7 +4198,7 @@ planet_event = {
 }
 
 #G02-小小的副业
-planet_event = {
+colony_event = {
 	id = BA_Shittem.4012
 	is_triggered_only = yes
 	hide_window = yes
@@ -4316,7 +4271,7 @@ country_event = {
 
 ### 格黑那
 #G02-新殖民星球-新世界的火种
-planet_event = {
+colony_event = {
 	id = BA_Shittem.4021
 	is_triggered_only = yes
 	hide_window = yes
@@ -4334,7 +4289,7 @@ planet_event = {
 }
 
 #A03-新获得星球-霸权态势
-planet_event = {
+colony_event = {
 	id = BA_Shittem.4022
 	is_triggered_only = yes
 	hide_window = yes
@@ -4511,7 +4466,7 @@ country_event = {
 }
 
 #C06-新殖民星球-星空彼端的乐土
-planet_event = {
+colony_event = {
 	id = BA_Shittem.4041
 	is_triggered_only = yes
 	hide_window = yes

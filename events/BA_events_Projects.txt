@@ -18,9 +18,9 @@ country_event = {
 			#设首都旗帜
 			planet = {
 				set_planet_flag = BA_Kivotos_capital
-				set_carrier_flag = colony_event #屏蔽地底人一类的事件
 			}
-			set_planet_size = 23
+            set_carrier_flag = colony_event #屏蔽地底人一类的事件
+            set_planet_size = 23
 			#为摇篮计划准备目标
 			solar_system = {
 				set_star_flag = BA_Project_Cradle_system
@@ -34,22 +34,6 @@ country_event = {
 					}
 					random_system_planet = {
 						limit = {
-							# is_star = no
-							# is_asteroid = no
-							# NOR = {
-							# 	is_planet_class = pc_continental
-							# 	is_planet_class = pc_tropical
-							# 	is_planet_class = pc_ocean
-							# 	is_planet_class = pc_desert
-							# 	is_planet_class = pc_arid
-							# 	is_planet_class = pc_tundra
-							# 	is_planet_class = pc_arctic
-							# 	is_planet_class = pc_alpine
-							# 	is_planet_class = pc_savannah
-							# 	is_planet_class = pc_BA_campus_planet
-							# 	is_planet_class = pc_BA_ruined_planet
-							# 	is_planet_class = pc_gas_giant
-							# }
 							NOR = {
 								is_star = yes
 								is_ideal = yes
@@ -57,14 +41,13 @@ country_event = {
 								is_colony = yes
 								is_asteroid = yes
 								is_artificial = yes
-								num_pops > 1
+                                pop_amount > 1
 								is_planet_class = pc_BA_campus_planet
 								is_planet_class = pc_BA_ruined_planet
 								is_planet_class = pc_gas_giant
 							}
 						}
 						set_planet_flag = BA_Project_Cradle_target
-						set_carrier_flag = colony_event
 						set_planet_size = 23
 						change_pc = pc_shielded
 					}
@@ -87,7 +70,6 @@ country_event = {
 							}
 						}
 						set_planet_flag = BA_Gematria_station
-						#save_global_event_target_as = Project_Cradle_02_target
 					}
 				}
 			}
@@ -134,27 +116,6 @@ country_event = {
 	}
 	immediate = {
 		remove_country_flag = BA_Project_Cradle_ready
-		#重设目标
-		# random_planet_within_border = {
-		# 	limit = {
-		# 		has_planet_flag = BA_Project_Cradle_target
-		# 		is_planet_class = pc_shielded
-		# 	}
-		# 	#save_global_event_target_as = Kivotos_shielded_planet
-		# 	solar_system = {
-		# 		random_system_planet = {
-		# 			limit = {
-		# 				NOR = {
-		# 					is_planet_class = pc_BA_campus_planet
-		# 					is_planet_class = pc_BA_ruined_planet
-		# 					is_planet_class = pc_shielded
-		# 				}
-		# 			}
-		# 			set_planet_flag = BA_Gematria_station
-		# 			#save_global_event_target_as = Project_Cradle_02_target
-		# 		}
-		# 	}
-		# }
 	}
 	option = {
 		name = BA_Project.0010.a
@@ -236,7 +197,6 @@ country_event = {
 			}
 			enable_special_project = {
 				name = BA_Project_Cradle_03 #中继站发掘
-				#location = event_target:Project_Cradle_02_target
 				location = this
 				owner = root
 			}
@@ -345,19 +305,28 @@ country_event = {
 			hidden_effect = {
 				change_pc = pc_BA_ruined_planet
 				set_name = namelist_BA_colony_event_002
-				create_pop_group = {
-					species = root.owner_main_species
-					size = 200
-				}
-				add_district = BA_districts_shelter
-				add_district = BA_districts_shelter
-				add_building = {
-					zone = zone_default
-					building = building_BA_Schale_office
-				}
-				validate_planet_buildings_and_districts = yes
+                create_colony = {
+                    owner = root
+                    species = owner_main_species
+                    ethos = owner
+                }
+                colony = {
+                    set_carrier_flag = colony_event
+                    create_pop_group = {
+                        species = root.owner_main_species
+                        size = 200
+                    }
+                    add_district = BA_districts_shelter
+                    add_district = BA_districts_shelter
+                    add_building = {
+                        zone = zone_default
+                        building = building_BA_Schale_office
+                    }
+                    validate_planet_buildings_and_districts = yes
+                }
 			}
-			set_owner = root
+
+
 		}
 		end_event_chain = BA_Project_Cradle_chain
 		destroy_situation = from
@@ -372,7 +341,7 @@ country_event = {
 #启动摇篮计划 B
 ##########
 #启动（on_action触发）
-planet_event = {
+colony_event = {
 	id = BA_Project.0017
 	is_triggered_only = yes
 	hide_window = yes
@@ -625,7 +594,7 @@ country_event = {
 			limit = {
 				Project_Cradle_planet_trigger = yes
 			}
-			planet_event = {
+			colony_event = {
 				id = BA_Project.8104
 				days = 10
 			}
@@ -763,7 +732,7 @@ country_event = {
 			limit = {
 				Project_Cradle_planet_trigger = yes
 			}
-			planet_event = {
+			colony_event = {
 				id = BA_Project.8203
 				days = 10
 			}
@@ -1451,78 +1420,78 @@ situation_event = {
 		target = {
 			random_list = {
 				60 = {
-					planet_event = {
+					colony_event = {
 						id = BA_Project.8121
 					}
 				}
 				10 = {
-					planet_event = {
+					colony_event = {
 						id = BA_Project.8122
 					}
 				}
 				4 = {
-					planet_event = {
+					colony_event = {
 						id = BA_Project.8123
 					}
 				}
 				1 = {
-					planet_event = {
+					colony_event = {
 						id = BA_Project.8124
 					}
 				}
 				15 = {
-					planet_event = {
+					colony_event = {
 						id = BA_Project.8125
 					}
 				}
 				6 = {
-					planet_event = {
+					colony_event = {
 						id = BA_Project.8126
 					}
 				}
 				3 = {
-					planet_event = {
+					colony_event = {
 						id = BA_Project.8127
 					}
 				}
 				1 = {
-					planet_event = {
+					colony_event = {
 						id = BA_Project.8128
 					}
 				}
 				#####
 				60 = {
-					planet_event = {
+					colony_event = {
 						id = BA_Project.8221
 					}
 				}
 				15 = {
-					planet_event = {
+					colony_event = {
 						id = BA_Project.8222
 					}
 				}
 				6 = {
-					planet_event = {
+					colony_event = {
 						id = BA_Project.8223
 					}
 				}
 				1 = {
-					planet_event = {
+					colony_event = {
 						id = BA_Project.8224
 					}
 				}
 				12 = {
-					planet_event = {
+					colony_event = {
 						id = BA_Project.8225
 					}
 				}
 				5 = {
-					planet_event = {
+					colony_event = {
 						id = BA_Project.8226
 					}
 				}
 				1 = {
-					planet_event = {
+					colony_event = {
 						id = BA_Project.8227
 					}
 				}
@@ -1533,7 +1502,7 @@ situation_event = {
 
 ### 天基武器
 #聚焦筒制造完成
-planet_event = {
+colony_event = {
 	id = BA_Project.8101
 	title = "BA_Project.8101.title"
 	picture = GFX_BA_Desert_base #以后改
@@ -1556,7 +1525,7 @@ planet_event = {
 }
 
 #屏蔽壳制造完成
-planet_event = {
+colony_event = {
 	id = BA_Project.8102
 	title = "BA_Project.8102.title"
 	picture = GFX_BA_Desert_base #以后改
@@ -1629,7 +1598,7 @@ planet_event = {
 }
 
 #核心组件制造完成
-planet_event = {
+colony_event = {
 	id = BA_Project.8103
 	title = "BA_Project.8103.title"
 	picture = GFX_BA_Desert_base #以后改
@@ -1706,7 +1675,7 @@ planet_event = {
 }
 
 #开始清理
-planet_event = {
+colony_event = {
 	id = BA_Project.8104
 	title = "BA_Project.8104.title"
 	picture = GFX_BA_Aloha #以后改
@@ -1716,7 +1685,7 @@ planet_event = {
 		add_modifier = {
 			modifier = modifier_BA_Arius_cleaning
 		}
-		# planet_event = {
+		# colony_event = {
 		# 	id = BA_Project.8121
 		# 	days = 30
 		# }
@@ -1734,7 +1703,7 @@ planet_event = {
 
 ### 随机事件 ###
 #正常清理
-planet_event = {
+colony_event = {
 	id = BA_Project.8121
 	is_triggered_only = yes
 	hide_window = yes
@@ -1746,7 +1715,7 @@ planet_event = {
 }
 
 #发现矿藏
-planet_event = {
+colony_event = {
 	id = BA_Project.8122
 	title = "BA_Project.8122.title"
 	picture = GFX_BA_Desert_base
@@ -1768,7 +1737,7 @@ planet_event = {
 }
 
 #发现大量矿藏
-planet_event = {
+colony_event = {
 	id = BA_Project.8123
 	title = "BA_Project.8123.title"
 	picture = GFX_BA_Desert_base
@@ -1790,7 +1759,7 @@ planet_event = {
 }
 
 #发现地下仓库
-planet_event = {
+colony_event = {
 	id = BA_Project.8124
 	title = "BA_Project.8124.title"
 	picture = GFX_BA_Hidden_lab
@@ -1814,7 +1783,7 @@ planet_event = {
 }
 
 #轻微干扰
-planet_event = {
+colony_event = {
 	id = BA_Project.8125
 	title = "BA_Project.8125.title"
 	picture = GFX_BA_Gliched_street
@@ -1838,7 +1807,7 @@ planet_event = {
 }
 
 #灾害级干扰
-planet_event = {
+colony_event = {
 	id = BA_Project.8126
 	title = "BA_Project.8126.title"
 	picture = GFX_BA_Ruined_building_Day #以后改
@@ -1862,7 +1831,7 @@ planet_event = {
 }
 
 #误击工业区
-planet_event = {
+colony_event = {
 	id = BA_Project.8127
 	title = "BA_Project.8127.title"
 	picture = GFX_BA_Ruined_building_Day #以后改
@@ -1890,7 +1859,7 @@ planet_event = {
 }
 
 #误击居住区
-planet_event = {
+colony_event = {
 	id = BA_Project.8128
 	title = "BA_Project.8128.title"
 	picture = GFX_BA_Ruined_building_Day #以后改
@@ -1925,7 +1894,7 @@ planet_event = {
 
 ### 自走机械事件
 #厂区建造完成
-planet_event = {
+colony_event = {
 	id = BA_Project.8201
 	title = "BA_Project.8201.title"
 	picture = GFX_BA_Desert_base
@@ -1944,7 +1913,7 @@ planet_event = {
 }
 
 #机械建造完成
-planet_event = {
+colony_event = {
 	id = BA_Project.8202
 	title = "BA_Project.8202.title"
 	picture = GFX_BA_Desert_base
@@ -1967,7 +1936,7 @@ planet_event = {
 }
 
 #开始清理
-planet_event = {
+colony_event = {
 	id = BA_Project.8203
 	title = "BA_Project.8203.title"
 	picture = GFX_BA_Desert_base
@@ -1991,7 +1960,7 @@ planet_event = {
 
 ### 随机事件 ###
 #正常清理
-planet_event = {
+colony_event = {
 	id = BA_Project.8221
 	is_triggered_only = yes
 	hide_window = yes
@@ -2003,7 +1972,7 @@ planet_event = {
 }
 
 #科学突破
-planet_event = {
+colony_event = {
 	id = BA_Project.8222
 	title = "BA_Project.8222.title"
 	picture = GFX_BA_Hidden_lab
@@ -2040,7 +2009,7 @@ planet_event = {
 }
 
 #发现遗址
-planet_event = {
+colony_event = {
 	id = BA_Project.8223
 	title = "BA_Project.8223.title"
 	picture = GFX_BA_Arius_ruins
@@ -2069,7 +2038,7 @@ planet_event = {
 }
 
 #发现实验室
-planet_event = {
+colony_event = {
 	id = BA_Project.8224
 	title = "BA_Project.8224.title"
 	picture = GFX_BA_Hidden_lab
@@ -2108,7 +2077,7 @@ planet_event = {
 }
 
 #宕机
-planet_event = {
+colony_event = {
 	id = BA_Project.8225
 	title = "BA_Project.8225.title"
 	picture = GFX_BA_Gliched_street
@@ -2131,7 +2100,7 @@ planet_event = {
 }
 
 #暴走
-planet_event = {
+colony_event = {
 	id = BA_Project.8226
 	title = "BA_Project.8226.title"
 	picture = GFX_BA_Gliched_street
@@ -2155,7 +2124,7 @@ planet_event = {
 }
 
 #预言者出现
-planet_event = {
+colony_event = {
 	id = BA_Project.8227
 	title = "BA_Project.8227.title"
 	picture = GFX_BA_Abydos_vs_Binah
