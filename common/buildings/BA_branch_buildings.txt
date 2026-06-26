@@ -187,11 +187,13 @@ building_BA_SI_Abydos_G02 = {
 		base = 100000
 	}
 	on_built = {
-		planet_event = {
-			id = BA_Shittem.4012
-			#days = 360
-			#random = 1800
-			days = 10
+		planet = {
+			planet_event = {
+				id = BA_Shittem.4012
+				#days = 360
+				#random = 1800
+				days = 10
+			}
 		}
 	}
 }

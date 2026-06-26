@@ -2743,7 +2743,7 @@ country_event = {
 		allow = {
 			custom_tooltip = {
 				text = BA_commission_accepted_unfinished
-				any_owned_planet = {
+				any_owned_colony = {
 					OR = {
 						has_building = building_BA_club_room
 						has_building = building_research_lab_1
@@ -4041,7 +4041,7 @@ country_event = {
 			limit = {
 				has_technology = tech_BA_SI_Abydos_B04
 			}
-			every_owned_planet = {
+			every_owned_colony = {
 				limit = {
 					is_planet_class = pc_desert
 					NOT = {
@@ -4061,7 +4061,7 @@ country_event = {
 				}
 				has_technology = tech_BA_SI_Abydos_B01
 			}
-			every_owned_planet = {
+			every_owned_colony = {
 				limit = {
 					is_planet_class = pc_desert
 					NOT = {
@@ -4078,7 +4078,7 @@ country_event = {
 			limit = {
 				has_technology = tech_BA_SI_Gehenna_B03
 			}
-			every_owned_planet = {
+			every_owned_colony = {
 				limit = {
 					planet_stability >= 90
 				}
@@ -4375,7 +4375,7 @@ planet_event = {
 				}
 			}
 			from = {
-				every_owned_planet = {
+				every_owned_colony = {
 					add_modifier = {
 						modifier = modifier_BA_SI_Gehenna_A03
 						days = 1800

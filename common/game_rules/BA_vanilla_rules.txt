@@ -1,5 +1,8 @@
 ####   ！此文件涉及原版修改
 # 领袖
+#Checks whether this species is eligible to become rulers through elections
+#Root = country
+#This = species
 can_generate_leader_from_species = {
 	is_sapient = yes
 	OR = {
@@ -24,6 +27,7 @@ can_generate_leader_from_species = {
 }
 
 # 分部
+# This = country
 can_build_branch_offices = {
 	custom_tooltip = {
 		fail_text = BRANCH_OFFICE_NOT_MEGACORP
@@ -36,6 +40,8 @@ can_build_branch_offices = {
 	}
 }
 
+# This = country
+# Checked by is_criminal_syndicate trigger
 is_criminal_syndicate_rule = {
 	OR = {
 		#Vanilla
@@ -52,6 +58,8 @@ is_criminal_syndicate_rule = {
 }
 
 # 全图视野
+# Check if full sensor range in entire galaxy
+# root: country
 has_full_sensor_range = {
 	OR = {
 		has_megastructure = spy_orb_4
@@ -62,35 +70,23 @@ has_full_sensor_range = {
 }
 
 # 星系跃迁限制
+# Root = country attempting to target system for movement
+# This = system being targeted
 can_enter_system_by_jump = {
+	can_enter_system_by_jump_trigger = {
+		SCOPE = root
+	}
 	custom_tooltip = {
-		#		success_text = "debug: can jump"
 		fail_text = cannot_jump_to_system
-		# Sealed system
-		OR = {
-			NOT = {
-				has_star_flag = sealed_system
-			}
-			AND = {
-				root = {
-					has_country_flag = entered_sealed_system
-				}
-				has_star_flag = sealed_system
-			}
-		}
-		# Special system
-		NOR = {
-			#Vanilla
-			has_star_flag = lcluster
-			has_star_flag = formless_system
-			has_star_flag = hyperthermia_system
-			#BA
+		# BA
+		NOT = {
 			has_star_flag = BA_FE_SYS
 		}
 	}
 }
 
 # 轨道轰炸
+#This rule is a condition for bombarding planets
 #Root = fleet, potential attacker
 #From = planet, potential target
 can_orbital_bombard = {
@@ -269,27 +265,6 @@ can_take_hostile_actions = {
 	}
 	else_if = {
 		limit = {
-			is_primitive = yes
-			ROOT = {
-				is_country_type = default
-			}
-			capital_scope = {
-				root = {
-					NOT = {
-						any_planet_within_border = {
-							is_same_value = prevprev
-						}
-					}
-				}
-			}
-		}
-		custom_tooltip = {
-			text = ""
-			always = no
-		}
-	}
-	else_if = {
-		limit = {
 			ROOT = {
 				any_agreement = {
 					agreement_preset = preset_satrapy
@@ -298,11 +273,10 @@ can_take_hostile_actions = {
 			is_country_type = faction
 			root = {
 				any_owned_planet = {
-					exists = controller
-					controller = {
-						is_same_value = prevprevprev
-					}
-				}
+                    controller? = {
+                        is_same_value = prevprevprev
+                    }
+                }
 			}
 		}
 		custom_tooltip = {
@@ -326,11 +300,10 @@ can_take_hostile_actions = {
 	}
 	else_if = {
 		limit = {
-			exists = overlord
-			overlord = {
-				is_same_value = root
-			}
-			ROOT = {
+            overlord? = {
+                is_same_value = root
+            }
+            ROOT = {
 				any_agreement = {
 					agreement_preset = preset_satrapy
 				}

@@ -97,7 +97,7 @@ num_BA_club_game_produce = {
 	}
 	## 建筑
 	complex_trigger_modifier = {
-		trigger = count_owned_planet
+		trigger = count_owned_colony
 		parameters = {
 			limit = {
 				has_active_building = building_BA_Schale_office
@@ -107,7 +107,7 @@ num_BA_club_game_produce = {
 		multiplier = 5
 	}
 	complex_trigger_modifier = {
-		trigger = count_owned_planet
+		trigger = count_owned_colony
 		parameters = {
 			limit = {
 				has_active_building = building_BA_Game_development_department
@@ -211,7 +211,7 @@ num_BA_club_festival_buff_upkeep_eligma = {
 num_BA_club_festival_buff_upkeep_consumer_goods = {
 	base = 10
 	complex_trigger_modifier = {
-		trigger = count_owned_planet
+		trigger = count_owned_colony
 		parameters = {
 			limit = {
 				always = yes

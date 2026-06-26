@@ -362,7 +362,7 @@ country_event = {
 						value = 10
 					}
 				}
-				every_owned_planet = {
+				every_owned_colony = {
 					limit = {
 						NOT = {
 							has_modifier = modifier_BA_Festival_operations_department_4
@@ -377,7 +377,7 @@ country_event = {
 				}
 			}
 			else = {
-				every_owned_planet = {
+				every_owned_colony = {
 					limit = {
 						NOR = {
 							has_modifier = modifier_BA_Festival_operations_department_3

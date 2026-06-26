@@ -709,8 +709,10 @@ country_event = {
 	immediate = {
 		capital_scope = {
 			###
-			set_planet_flag = BA_Kyrie_target_@root
-			save_global_event_target_as = BA_Kyrie_capital_target_@root
+			planet = {
+				set_planet_flag = BA_Kyrie_target_@root
+				save_global_event_target_as = BA_Kyrie_capital_target_@root
+			}
 			###
 			clear_planet_modifiers = yes
 			validate_planet_buildings_and_districts = yes
@@ -1198,9 +1200,11 @@ country_event = {
 	}
 	option = {
 		name = BA_origin.1101.next
-		random_owned_planet = {
+		random_owned_colony = {
 			limit = {
-				has_planet_flag = BA_Kyrie_target_@root
+				planet = {
+					has_planet_flag = BA_Kyrie_target_@root
+				}
 			}
 			root = {
 				start_situation = {
@@ -1407,9 +1411,11 @@ country_event = {
 	picture = GFX_BA_Abydos_vs_Binah
 	option = {
 		name = BA_origin.1201.next
-		random_owned_planet = {
+		random_owned_colony = {
 			limit = {
-				has_planet_flag = BA_Kyrie_target_@root
+				planet = {
+					has_planet_flag = BA_Kyrie_target_@root
+				}
 			}
 			root = {
 				start_situation = {
@@ -2023,13 +2029,17 @@ country_event = {
 		last_increased_tech = tech_BA_ruins_mining
 	}
 	immediate = {
-		random_owned_planet = {
+		random_owned_colony = {
 			limit = {
-				has_planet_flag = BA_Kyrie_target_@root
+				planet = {
+					has_planet_flag = BA_Kyrie_target_@root
+				}
 			}
-			planet_event = {
-				id = BA_origin.1031
-				days = 60
+			planet = {
+				planet_event = {
+					id = BA_origin.1031
+					days = 60
+				}
 			}
 		}
 	}
@@ -2057,7 +2067,7 @@ planet_event = {
 				}
 				abort_situation = this
 			}
-			random_owned_planet = {
+			random_owned_colony = {
 				limit = {
 					NOT = {
 						is_same_value = root
@@ -2117,7 +2127,7 @@ planet_event = {
 				}
 				abort_situation = this
 			}
-			random_owned_planet = {
+			random_owned_colony = {
 				limit = {
 					NOT = {
 						is_same_value = root
@@ -2240,9 +2250,11 @@ country_event = {
 		name = BA_origin.1430.b
 	}
 	after = {
-		every_owned_planet = {
+		every_owned_colony = {
 			limit = {
-				has_planet_flag = BA_Kyrie_target_@root
+				planet = {
+					has_planet_flag = BA_Kyrie_target_@root
+				}
 			}
 			remove_modifier = modifier_BA_Agnus_Dei
 			add_modifier = {

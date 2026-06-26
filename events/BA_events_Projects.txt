@@ -16,8 +16,10 @@ country_event = {
 		#目标准备
 		capital_scope = {
 			#设首都旗帜
-			set_planet_flag = BA_Kivotos_capital
-			set_planet_flag = colony_event #屏蔽地底人一类的事件
+			planet = {
+				set_planet_flag = BA_Kivotos_capital
+				set_carrier_flag = colony_event #屏蔽地底人一类的事件
+			}
 			set_planet_size = 23
 			#为摇篮计划准备目标
 			solar_system = {
@@ -62,7 +64,7 @@ country_event = {
 							}
 						}
 						set_planet_flag = BA_Project_Cradle_target
-						set_planet_flag = colony_event
+						set_carrier_flag = colony_event
 						set_planet_size = 23
 						change_pc = pc_shielded
 					}

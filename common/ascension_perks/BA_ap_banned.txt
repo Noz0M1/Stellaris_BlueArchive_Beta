@@ -663,7 +663,7 @@ ap_mind_over_matter = {
 		}
 		modifier = {
 			factor = value:psionic_offices_mind_over_matter_mult
-			any_owned_planet = {
+			any_owned_colony = {
 				exists = branch_office_owner
 				has_holding = {
 					holding = building_psionic_offices

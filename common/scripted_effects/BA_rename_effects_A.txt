@@ -98,7 +98,12 @@ BA_check_rename_flag = {
 					}
 				}
 				#无类别
-				set_leader_flag = leader_BA_Yume
+                #禁用
+                modifier = {
+                    factor = 0
+                    always = yes
+                }
+                set_leader_flag = leader_BA_Yume
 			}
 			#羽沼真琴
 			10 = {
