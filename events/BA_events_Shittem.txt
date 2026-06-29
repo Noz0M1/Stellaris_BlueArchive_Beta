@@ -1391,7 +1391,7 @@ country_event = {
 		response_text = BA_rename_fix.re
 		hidden_effect = {
 			country_event = {
-				id = BA_rename.2020
+				id = BA_rename.1020
 			}
 		}
 	}
@@ -1685,7 +1685,7 @@ leader_event = {
 		custom_tooltip = BA_Shittem.1311.ORG.tip
 		hidden_effect = {
 			BA_rename_support_skin_remove = yes
-			BA_change_skin_trait_if_unlocked = yes
+			BA_rename_base_skin_trait = yes
 		}
 	}
 	inline_script = {

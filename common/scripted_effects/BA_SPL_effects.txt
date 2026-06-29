@@ -111,11 +111,14 @@ BA_Aris_SP = {
 			BA_Halo_for_special_leader = yes
 			set_leader_flag = leader_death_events_blocked
 			set_leader_flag = BA_event_leader
-			change_leader_portrait = BA_leader_Aris
+			set_leader_flag = BA_rename_identity
 			set_leader_flag = leader_BA_Aris
-			BA_event_leader_replace = {
-				Leader_flag = leader_BA_Aris
+			owner = {
+				BA_rename_base_change_dupl_country = {
+					NAME = Aris
+				}
 			}
+			change_leader_portrait = BA_leader_Aris
 			owner = {
 				set_timed_country_flag = {
 					flag = BA_Aris_cooldown
@@ -144,11 +147,14 @@ BA_Hoshino_SP = {
 		effect = {
 			set_leader_flag = leader_death_events_blocked
 			set_leader_flag = BA_event_leader
+			set_leader_flag = BA_rename_identity
 			set_leader_flag = leader_BA_Hoshino
-			change_leader_portrait = BA_leader_Hoshino
-			BA_event_leader_replace = {
-				Leader_flag = leader_BA_Hoshino
+			owner = {
+				BA_rename_base_change_dupl_country = {
+					NAME = Hoshino
+				}
 			}
+			change_leader_portrait = BA_leader_Hoshino
 			BA_Halo_for_special_leader = yes
 		}
 	}
@@ -170,11 +176,14 @@ BA_Hina_SP = {
 		effect = {
 			set_leader_flag = leader_death_events_blocked
 			set_leader_flag = BA_event_leader
+			set_leader_flag = BA_rename_identity
 			set_leader_flag = leader_BA_Hina
-			change_leader_portrait = BA_leader_Hina
-			BA_event_leader_replace = {
-				Leader_flag = leader_BA_Hina
+			owner = {
+				BA_rename_base_change_dupl_country = {
+					NAME = Hina
+				}
 			}
+			change_leader_portrait = BA_leader_Hina
 			BA_Halo_for_special_leader = yes
 		}
 	}
@@ -196,11 +205,14 @@ BA_Mika_SP = {
 		effect = {
 			set_leader_flag = leader_death_events_blocked
 			set_leader_flag = BA_event_leader
+			set_leader_flag = BA_rename_identity
 			set_leader_flag = leader_BA_Mika
-			change_leader_portrait = BA_leader_Mika
-			BA_event_leader_replace = {
-				Leader_flag = leader_BA_Mika
+			owner = {
+				BA_rename_base_change_dupl_country = {
+					NAME = Mika
+				}
 			}
+			change_leader_portrait = BA_leader_Mika
 			BA_Halo_for_special_leader = yes
 		}
 	}
@@ -224,11 +236,14 @@ BA_Yuuka_SP = {
 		effect = {
 			set_leader_flag = leader_death_events_blocked
 			set_leader_flag = BA_event_leader
+			set_leader_flag = BA_rename_identity
 			set_leader_flag = leader_BA_Yuuka
-			change_leader_portrait = BA_leader_Yuuka
-			BA_event_leader_replace = {
-				Leader_flag = leader_BA_Yuuka
+			owner = {
+				BA_rename_base_change_dupl_country = {
+					NAME = Yuuka
+				}
 			}
+			change_leader_portrait = BA_leader_Yuuka
 			BA_Halo_for_special_leader = yes
 		}
 	}
@@ -250,11 +265,14 @@ BA_Atsuko_SP = {
 		effect = {
 			set_leader_flag = leader_death_events_blocked
 			set_leader_flag = BA_event_leader
+			set_leader_flag = BA_rename_identity
 			set_leader_flag = leader_BA_Atsuko
-			change_leader_portrait = BA_leader_Atsuko
-			BA_event_leader_replace = {
-				Leader_flag = leader_BA_Atsuko
+			owner = {
+				BA_rename_base_change_dupl_country = {
+					NAME = Atsuko
+				}
 			}
+			change_leader_portrait = BA_leader_Atsuko
 			BA_Halo_for_special_leader = yes
 		}
 	}
@@ -276,11 +294,14 @@ BA_Saori_SP = {
 		effect = {
 			set_leader_flag = leader_death_events_blocked
 			set_leader_flag = BA_event_leader
+			set_leader_flag = BA_rename_identity
 			set_leader_flag = leader_BA_Saori
-			change_leader_portrait = BA_leader_Saori
-			BA_event_leader_replace = {
-				Leader_flag = leader_BA_Saori
+			owner = {
+				BA_rename_base_change_dupl_country = {
+					NAME = Saori
+				}
 			}
+			change_leader_portrait = BA_leader_Saori
 			BA_Halo_for_special_leader = yes
 		}
 	}
@@ -303,11 +324,14 @@ BA_Ui_SP = {
 		effect = {
 			set_leader_flag = leader_death_events_blocked
 			set_leader_flag = BA_event_leader
+			set_leader_flag = BA_rename_identity
 			set_leader_flag = leader_BA_Ui
-			change_leader_portrait = BA_leader_Ui
-			BA_event_leader_replace = {
-				Leader_flag = leader_BA_Ui
+			owner = {
+				BA_rename_base_change_dupl_country = {
+					NAME = Ui
+				}
 			}
+			change_leader_portrait = BA_leader_Ui
 			BA_Halo_for_special_leader = yes
 		}
 	}

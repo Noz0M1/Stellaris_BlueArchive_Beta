@@ -47,8 +47,12 @@ BA_governor_Serina_PR = {
 		change_leader_portrait = BA_leader_Serina
 		set_leader_flag = BA_skin_XMS
 		set_leader_flag = BA_Serina_PR
-		BA_event_leader_replace = {
-			Leader_flag = leader_BA_124
+		set_leader_flag = BA_rename_identity
+		set_leader_flag = leader_BA_Serina
+		owner = {
+			BA_rename_base_change_dupl_country = {
+				NAME = Serina
+			}
 		}
 	}
 }
@@ -75,8 +79,12 @@ BA_admiral_Iori_PR = {
 		change_leader_portrait = BA_leader_Iori
 		set_leader_flag = BA_skin_SS
 		set_leader_flag = BA_Iori
-		BA_event_leader_replace = {
-			Leader_flag = leader_BA_041
+		set_leader_flag = BA_rename_identity
+		set_leader_flag = leader_BA_Iori
+		owner = {
+			BA_rename_base_change_dupl_country = {
+				NAME = Iori
+			}
 		}
 	}
 }

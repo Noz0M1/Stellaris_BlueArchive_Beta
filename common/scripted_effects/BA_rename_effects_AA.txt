@@ -5,17 +5,37 @@ BA_rename_base_identity = {
 		limit = {
 			BA_rename_identity_target_check = yes
 		}
-		set_leader_flag = BA_rename_identity
 		BA_rename_effect_identity = yes
+		if = {
+			limit = {
+				BA_has_rename_identity = yes
+			}
+			set_leader_flag = BA_rename_identity
+		}
+	}
+}
+
+BA_rename_base_identity_sync = {
+	# scope: leader
+	if = {
+		limit = {
+			BA_has_rename_identity = yes
+			NOT = {
+				has_leader_flag = BA_rename_identity
+			}
+		}
+		set_leader_flag = BA_rename_identity
 	}
 }
 
 ### 功能2：名称立绘
 BA_rename_base_portrait = {
 	# scope: leader
+	BA_rename_base_identity_sync = yes
 	if = {
 		limit = {
 			has_leader_flag = BA_rename_identity
+			BA_has_rename_identity = yes
 		}
 		BA_rename_effect_portrait = yes
 	}
@@ -24,18 +44,15 @@ BA_rename_base_portrait = {
 ### 功能3：社团特质
 BA_rename_base_club_trait = {
 	# scope: leader
+	BA_rename_base_identity_sync = yes
 	if = {
 		limit = {
 			has_global_flag = BA_leader_rename_add_club_trait
 			has_leader_flag = BA_rename_identity
+			BA_has_rename_identity = yes
 		}
-		if = {
-			limit = {
-				has_leader_flag = BA_rename_club_trait
-			}
-			remove_leader_flag = BA_rename_club_trait
-			BA_rename_support_club_trait_remove = yes
-		}
+		remove_leader_flag = BA_rename_club_trait
+		BA_rename_support_club_trait_remove = yes
 		set_leader_flag = BA_rename_club_trait
 		BA_rename_effect_club_trait = yes
 	}
@@ -44,19 +61,16 @@ BA_rename_base_club_trait = {
 ### 功能4：个人特质
 BA_rename_base_skin_trait = {
 	# scope: leader
+	BA_rename_base_identity_sync = yes
 	if = {
 		limit = {
 			has_global_flag = BA_leader_rename_add_skin_trait
 			has_leader_flag = BA_rename_identity
+			BA_has_rename_identity = yes
 			has_total_skill >= 3
 		}
-		if = {
-			limit = {
-				has_leader_flag = BA_rename_skin_trait
-			}
-			remove_leader_flag = BA_rename_skin_trait
-			BA_rename_support_skin_trait_remove = yes
-		}
+		remove_leader_flag = BA_rename_skin_trait
+		BA_rename_support_skin_trait_remove = yes
 		set_leader_flag = BA_rename_skin_trait
 		BA_rename_effect_skin_trait = yes
 	}
@@ -68,6 +82,9 @@ BA_rename_base_change_dupl_country = {
 	every_owned_leader = {
 		limit = {
 			has_leader_flag = leader_BA_$NAME$
+			NOT = {
+				is_same_value = prevprev
+			}
 		}
 		BA_rename_support_identity_remove = yes
 		BA_rename_base_identity = yes
