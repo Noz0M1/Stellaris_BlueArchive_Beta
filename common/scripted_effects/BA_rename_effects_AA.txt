@@ -63,9 +63,28 @@ BA_rename_base_skin_trait = {
 }
 
 ### 功能5：领袖去重
-BA_rename_base_check_leader = {
-	# scope: leader
-	# 待完善
+BA_rename_base_change_dupl_country = {
+	# scope: country
+	every_owned_leader = {
+		limit = {
+			has_leader_flag = leader_BA_$NAME$
+		}
+		BA_rename_support_identity_remove = yes
+		BA_rename_base_identity = yes
+		BA_rename_base_portrait = yes
+		BA_rename_base_club_trait = yes
+		BA_rename_base_skin_trait = yes
+	}
+	every_pool_leader = {
+		limit = {
+			has_leader_flag = leader_BA_$NAME$
+		}
+        BA_rename_support_identity_remove = yes
+        BA_rename_base_identity = yes
+        BA_rename_base_portrait = yes
+        BA_rename_base_club_trait = yes
+        BA_rename_base_skin_trait = yes
+	}
 }
 
 ### 功能6：处理特使

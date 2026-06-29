@@ -1,10 +1,9 @@
 namespace = BA_rename
-# 1.开局全局处理：赋予身份、名称立绘、社团特质、个人特质
-# 2.手动全局处理：名称立绘、社团特质、个人特质、领袖去重
-# 3.周期全局处理：名称立绘、领袖去重
+# 1.开局全局处理：赋予身份、名称立绘、社团特质、个人特质、处理特使
+# 2.手动全局处理：名称立绘、社团特质、个人特质、处理特使
+# 3.周期全局处理：名称立绘、处理特使
 # 4.入池单个处理：赋予身份、名称立绘、社团特质、个人特质
-# 5.招募单个处理：个人特质、领袖去重
-# 7.处理特使
+# 5.招募单个处理：个人特质
 # 领袖去重可参考备份中的BA_event_leader_replace
 # BA_change_skin_trait_if_unlocked应替换为新的个人特质功能
 ################
@@ -89,6 +88,10 @@ country_event = {
 			BA_rename_base_club_trait = yes
 			BA_rename_base_skin_trait = yes
 		}
+		# 处理特使
+		every_envoy = {
+			BA_rename_base_envoy = yes
+		}
 	}
 }
 
@@ -113,7 +116,10 @@ country_event = {
 			BA_rename_base_club_trait = yes
 			BA_rename_base_skin_trait = yes
 		}
-		# 领袖去重
+		# 处理特使
+		every_envoy = {
+			BA_rename_base_envoy = yes
+		}
 	}
 }
 
@@ -150,7 +156,10 @@ country_event = {
 		every_pool_leader = {
 			BA_rename_base_portrait = yes
 		}
-		# 领袖去重
+		# 处理特使
+		every_envoy = {
+			BA_rename_base_envoy = yes
+		}
 	}
 }
 
@@ -210,7 +219,6 @@ leader_event = {
 	immediate = {
 		# 个人特质
 		BA_rename_base_skin_trait = yes
-		# 领袖去重
 	}
 }
 
@@ -226,7 +234,7 @@ country_event = {
 		}
 	}
 	immediate = {
-        # 个人特质
+		# 个人特质
 		from = {
 			if = {
 				limit = {
