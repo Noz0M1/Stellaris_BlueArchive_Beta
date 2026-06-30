@@ -31,8 +31,10 @@ decision_build_focus_tube_home = {
 		#标记建造聚焦筒完成
 		custom_tooltip = decision_build_focus_tube_home_desc
 		hidden_effect = {
-			colony_event = {
-				id = BA_Project.8101
+			colony = {
+				colony_event = {
+					id = BA_Project.8101
+				}
 			}
 		}
 	}
@@ -68,8 +70,10 @@ decision_build_shielding_case_home = {
 		#标记建造屏蔽壳完成
 		custom_tooltip = decision_build_shielding_case_home_desc
 		hidden_effect = {
-			colony_event = {
-				id = BA_Project.8102
+			colony = {
+				colony_event = {
+					id = BA_Project.8102
+				}
 			}
 		}
 	}
@@ -102,8 +106,10 @@ decision_build_shielding_case_colony = {
 		#标记建造屏蔽壳完成
 		custom_tooltip = decision_build_shielding_case_colony_desc
 		hidden_effect = {
-			colony_event = {
-				id = BA_Project.8102
+			colony = {
+				colony_event = {
+					id = BA_Project.8102
+				}
 			}
 		}
 	}
@@ -141,8 +147,10 @@ decision_build_core_components_home = {
 		#标记建造核心组件完成
 		custom_tooltip = decision_build_core_components_home_desc
 		hidden_effect = {
-			colony_event = {
-				id = BA_Project.8103
+			colony = {
+				colony_event = {
+					id = BA_Project.8103
+				}
 			}
 		}
 	}
@@ -177,8 +185,10 @@ decision_build_core_components_colony = {
 		#标记建造核心组件完成
 		custom_tooltip = decision_build_core_components_colony_desc
 		hidden_effect = {
-			colony_event = {
-				id = BA_Project.8103
+			colony = {
+				colony_event = {
+					id = BA_Project.8103
+				}
 			}
 		}
 	}
@@ -212,8 +222,10 @@ decision_build_factory_colony = {
 		#标记厂区完成
 		custom_tooltip = decision_build_factory_colony_desc
 		hidden_effect = {
-			colony_event = {
-				id = BA_Project.8201
+			colony = {
+				colony_event = {
+					id = BA_Project.8201
+				}
 			}
 		}
 	}
@@ -248,8 +260,10 @@ decision_build_machine_colony = {
 		#不用标记机械完成
 		custom_tooltip = decision_build_machine_colony_desc
 		hidden_effect = {
-			colony_event = {
-				id = BA_Project.8202
+			colony = {
+				colony_event = {
+					id = BA_Project.8202
+				}
 			}
 		}
 	}

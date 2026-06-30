@@ -1002,11 +1002,15 @@ colony_event = {
 	trigger = {
 		is_planet_class = pc_BA_ruined_planet
 		NOT = {
-			has_planet_flag = BA_ruins_happening
+			planet = {
+				has_planet_flag = BA_ruins_happening
+			}
 		}
 	}
 	immediate = {
-		set_planet_flag = BA_ruins_happening
+		planet = {
+			set_planet_flag = BA_ruins_happening
+		}
 	}
 	option = {
 		name = BA_origin.1031.next
@@ -1047,7 +1051,9 @@ colony_event = {
 	picture = GFX_BA_Arius_ruins
 	trigger = {
 		is_planet_class = pc_BA_ruined_planet
-		has_planet_flag = BA_ruins_happening
+		planet = {
+			has_planet_flag = BA_ruins_happening
+		}
 		owner = {
 			NOT = {
 				has_country_flag = BA_Kyrie_Arona_will_help_you
@@ -1245,7 +1251,9 @@ colony_event = {
 		room = "BA_Shittem_room"
 	}
 	immediate = {
-		set_planet_flag = BA_Kyrie_clean_finished
+		planet = {
+			set_planet_flag = BA_Kyrie_clean_finished
+		}
 		remove_modifier = modifier_BA_Arius_cleaning
 	}
 	option = {
@@ -1569,13 +1577,17 @@ colony_event = {
 	picture = GFX_BA_Abydos_vs_Binah
 	trigger = {
 		NOT = {
-			has_planet_flag = BA_enemy_just_defeated
+			planet = {
+				has_planet_flag = BA_enemy_just_defeated
+			}
 		}
 	}
 	immediate = {
-		set_timed_planet_flag = {
-			flag = BA_enemy_just_defeated
-			days = 180
+		planet = {
+			set_timed_planet_flag = {
+				flag = BA_enemy_just_defeated
+				days = 180
+			}
 		}
 		colony_event = {
 			id = BA_origin.1200
@@ -1595,13 +1607,17 @@ colony_event = {
 	picture = GFX_BA_Abydos_vs_Binah
 	trigger = {
 		NOT = {
-			has_planet_flag = BA_enemy_just_defeated
+			planet = {
+				has_planet_flag = BA_enemy_just_defeated
+			}
 		}
 	}
 	immediate = {
-		set_timed_planet_flag = {
-			flag = BA_enemy_just_defeated
-			days = 180
+		planet = {
+			set_timed_planet_flag = {
+				flag = BA_enemy_just_defeated
+				days = 180
+			}
 		}
 		colony_event = {
 			id = BA_origin.1200
@@ -1767,10 +1783,14 @@ colony_event = {
 	desc = BA_origin.1301.desc
 	picture = GFX_BA_Arius_ruins
 	trigger = {
-		has_planet_flag = BA_Kyrie_target_@owner
+		planet = {
+			has_planet_flag = BA_Kyrie_target_@owner
+		}
 	}
 	immediate = {
-		set_planet_flag = BA_Kyrie_centre_cleared
+		planet = {
+			set_planet_flag = BA_Kyrie_centre_cleared
+		}
 	}
 	option = {
 		name = BA_origin.1301.next
@@ -1802,10 +1822,14 @@ colony_event = {
 	desc = BA_origin.1302.desc
 	picture = GFX_BA_Shield_of_Hoshino
 	trigger = {
-		has_planet_flag = BA_Kyrie_target_@owner
+		planet = {
+			has_planet_flag = BA_Kyrie_target_@owner
+		}
 	}
 	immediate = {
-		set_planet_flag = BA_Kyrie_Abydos_cleared
+		planet = {
+			set_planet_flag = BA_Kyrie_Abydos_cleared
+		}
 	}
 	option = {
 		name = BA_origin.1302.next
@@ -1844,10 +1868,14 @@ colony_event = {
 	desc = BA_origin.1303.desc
 	picture = GFX_BA_Site_of_Aris
 	trigger = {
-		has_planet_flag = BA_Kyrie_target_@owner
+		planet = {
+			has_planet_flag = BA_Kyrie_target_@owner
+		}
 	}
 	immediate = {
-		set_planet_flag = BA_Kyrie_Millennium_cleared
+		planet = {
+			set_planet_flag = BA_Kyrie_Millennium_cleared
+		}
 		owner = {
 			set_country_flag = BA_Kyrie_commmission_02_allow
 		}
@@ -1898,10 +1926,14 @@ colony_event = {
 	desc = BA_origin.1304.desc
 	picture = GFX_BA_Old_Cathedral
 	trigger = {
-		has_planet_flag = BA_Kyrie_target_@owner
+		planet = {
+			has_planet_flag = BA_Kyrie_target_@owner
+		}
 	}
 	immediate = {
-		set_planet_flag = BA_Kyrie_Trinity_cleared
+		planet = {
+			set_planet_flag = BA_Kyrie_Trinity_cleared
+		}
 	}
 	option = {
 		name = BA_origin.1304.protect
@@ -1953,10 +1985,14 @@ colony_event = {
 	desc = BA_origin.1305.desc
 	picture = GFX_BA_New_Cathedral
 	trigger = {
-		has_planet_flag = BA_Kyrie_target_@owner
+		planet = {
+			has_planet_flag = BA_Kyrie_target_@owner
+		}
 	}
 	immediate = {
-		set_planet_flag = BA_Kyrie_Gehenna_cleared
+		planet = {
+			set_planet_flag = BA_Kyrie_Gehenna_cleared
+		}
 	}
 	option = {
 		name = BA_origin.1305.next

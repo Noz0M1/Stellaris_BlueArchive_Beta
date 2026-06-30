@@ -9,8 +9,10 @@ decision_BA_convert_to_Aris = {
 	}
 	effect = {
 		hidden_effect = {
-			colony_event = {
-				id = BA_Shittem.3001
+			colony = {
+				colony_event = {
+					id = BA_Shittem.3001
+				}
 			}
 		}
 	}

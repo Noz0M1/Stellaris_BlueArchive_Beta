@@ -1,4 +1,4 @@
-# PDX Formatter
+    # PDX Formatter
 
 这是一个给 Stellaris/Paradox Script 的简单格式化脚本。它可以把普通代码块展开成多行，方便看清层级：
 

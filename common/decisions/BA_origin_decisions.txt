@@ -34,8 +34,10 @@ decision_Kyrie_rebuild_Kivotos_on_ruins = {
 	}
 	effect = {
 		custom_tooltip = decision_Kyrie_rebuild_Kivotos_on_ruins_desc
-		colony_event = {
-			id = BA_origin.1104
+		colony = {
+			colony_event = {
+				id = BA_origin.1104
+			}
 		}
 		hidden_effect = {
 			change_pc = pc_BA_campus_planet
@@ -98,8 +100,10 @@ decision_Kyrie_enemy_1 = {
 				which = situation_Kyrie_engage_enemy_dicision
 				value = 1
 			}
-			colony_event = {
-				id = BA_origin.1213
+			colony = {
+				colony_event = {
+					id = BA_origin.1213
+				}
 			}
 		}
 	}
@@ -130,8 +134,10 @@ decision_Kyrie_enemy_2 = {
 				which = situation_Kyrie_engage_enemy_dicision
 				value = 1
 			}
-			colony_event = {
-				id = BA_origin.1214
+			colony = {
+				colony_event = {
+					id = BA_origin.1214
+				}
 			}
 		}
 	}
@@ -162,8 +168,10 @@ decision_Kyrie_enemy_3 = {
 				which = situation_Kyrie_engage_enemy_dicision
 				value = 1
 			}
-			colony_event = {
-				id = BA_origin.1215
+			colony = {
+				colony_event = {
+					id = BA_origin.1215
+				}
 			}
 		}
 	}
@@ -194,8 +202,10 @@ decision_Kyrie_enemy_4 = {
 				which = situation_Kyrie_engage_enemy_dicision
 				value = 1
 			}
-			colony_event = {
-				id = BA_origin.1216
+			colony = {
+				colony_event = {
+					id = BA_origin.1216
+				}
 			}
 		}
 	}

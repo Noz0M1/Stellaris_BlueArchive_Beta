@@ -594,9 +594,11 @@ country_event = {
 			limit = {
 				Project_Cradle_planet_trigger = yes
 			}
-			colony_event = {
-				id = BA_Project.8104
-				days = 10
+			colony = {
+				colony_event = {
+					id = BA_Project.8104
+					days = 10
+				}
 			}
 		}
 		#        event_target:Kivotos_shielded_planet = {}
@@ -732,9 +734,11 @@ country_event = {
 			limit = {
 				Project_Cradle_planet_trigger = yes
 			}
-			colony_event = {
-				id = BA_Project.8203
-				days = 10
+			colony = {
+				colony_event = {
+					id = BA_Project.8203
+					days = 10
+				}
 			}
 		}
 		#        event_target:Kivotos_shielded_planet = {}
@@ -1566,7 +1570,9 @@ colony_event = {
 		}
 		if = {
 			limit = {
-				has_planet_flag = BA_Kivotos_P1_flag
+				planet = {
+					has_planet_flag = BA_Kivotos_P1_flag
+				}
 			}
 			owner = {
 				add_resource = {
@@ -1643,7 +1649,9 @@ colony_event = {
 		}
 		if = {
 			limit = {
-				has_planet_flag = BA_Kivotos_P1_flag
+				planet = {
+					has_planet_flag = BA_Kivotos_P1_flag
+				}
 			}
 			owner = {
 				add_resource = {

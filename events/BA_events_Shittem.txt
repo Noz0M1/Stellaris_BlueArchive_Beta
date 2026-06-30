@@ -4206,13 +4206,13 @@ colony_event = {
 		# has_active_building = building_BA_SI_Abydos_G02
 		owner = {
 			NOT = {
-				has_country_flag = BA_SI_G02_targeted@branch_office_owner
+				has_country_flag = BA_SI_G02_targeted@root.branch_office_owner
 			}
 		}
 	}
 	immediate = {
 		owner = {
-			set_country_flag = BA_SI_G02_targeted@branch_office_owner
+			set_country_flag = BA_SI_G02_targeted@root.branch_office_owner
 			export_resource_stockpile_to_variable = {
 				resource = energy
 				variable = BA_SI_G02_energy
