@@ -494,6 +494,12 @@ BA_leader_has_skin_QP = {
 	}
 }
 
+BA_leader_has_skin_SNT = {
+	OR = {
+		has_leader_flag = leader_BA_Sakurako
+	}
+}
+
 BA_leader_has_skin_SP = {
 	OR = {
 		has_leader_flag = leader_BA_Shiroko
