@@ -1,8 +1,7 @@
 col_BA_campus_normal = {
 	icon = GFX_colony_type_urban
 	potential = {
-		exists = owner
-		owner = {
+		owner? = {
 			is_regular_empire = yes
 			has_authority = auth_kivotos
 		}
@@ -22,8 +21,7 @@ col_BA_campus_normal = {
 col_BA_campus_club = {
 	icon = GFX_colony_type_research
 	potential = {
-		exists = owner
-		owner = {
+		owner? = {
 			is_regular_empire = yes
 			has_authority = auth_kivotos
 		}
@@ -37,6 +35,7 @@ col_BA_campus_club = {
 	weight_modifier = {
 		base = 0
 		modifier = {
+			add = 120
 			has_zone = {
 				zone = zone_BA_municipality_club
 			}
@@ -54,8 +53,7 @@ col_BA_campus_club = {
 col_BA_campus_unemp = {
 	icon = GFX_colony_type_bureaucratic
 	potential = {
-		exists = owner
-		owner = {
+		owner? = {
 			is_regular_empire = yes
 			has_authority = auth_kivotos
 		}
@@ -83,8 +81,7 @@ col_BA_campus_unemp = {
 col_BA_auto_building = {
 	icon = GFX_colony_type_refinery #以后改
 	potential = {
-		exists = owner
-		owner = {
+		owner? = {
 			is_regular_empire = yes
 			has_authority = auth_kivotos
 		}
@@ -116,8 +113,7 @@ col_BA_auto_building = {
 col_BA_foundry = {
 	icon = GFX_colony_type_foundry #以后改
 	potential = {
-		exists = owner
-		owner = {
+		owner? = {
 			is_regular_empire = yes
 			has_authority = auth_kivotos
 		}
@@ -154,8 +150,7 @@ col_BA_foundry = {
 col_BA_artisan = {
 	icon = GFX_colony_type_factory #以后改
 	potential = {
-		exists = owner
-		owner = {
+		owner? = {
 			is_regular_empire = yes
 			has_authority = auth_kivotos
 		}
@@ -192,8 +187,7 @@ col_BA_artisan = {
 col_BA_suburb = {
 	icon = GFX_colony_type_penal #以后改
 	potential = {
-		exists = owner
-		owner = {
+		owner? = {
 			is_regular_empire = yes
 			has_authority = auth_kivotos
 		}
