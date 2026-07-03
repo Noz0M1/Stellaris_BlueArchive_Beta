@@ -44,9 +44,6 @@ is_kivotos = {
 ##### Leaders
 BA_has_halo_organic = {
 	# species scope
-	NOT = {
-		is_same_value = event_target:BA_leader_species
-	}
 	OR = {
 		has_trait = trait_halo_unreleased
 		has_trait = trait_halo_awakened

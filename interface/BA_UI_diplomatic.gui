@@ -97,6 +97,15 @@ guiTypes = {
 			fixedSize = yes
 			alwaysTransparent = yes
 		}
+
+		# hidden
+		buttonType = {
+			name = "tts_button"
+			position = { x = 11450 y = 11175 }#20 5
+			spriteType = "GFX_button_tts_start"
+			buttonFont = "cg_16b"
+			shortCut = "t"
+		}
 		
 		# hidden
 		#通讯desc的深色背景

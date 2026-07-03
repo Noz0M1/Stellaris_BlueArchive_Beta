@@ -51,22 +51,7 @@ country_event = {
 				}
 			}
 		}
-		#设置特殊领袖用种族、复活计数器
-		create_species = {
-			name = "species_name_BA_leader"
-			class = Schale
-			portrait = "Schale"
-			name_list = "Schale"
-			is_mod = yes
-			immortal = yes
-			traits = {
-				trait = trait_BA_BDcase
-			}
-			effect = {
-				set_species_flag = BA_leader_species
-				save_global_event_target_as = BA_leader_species
-			}
-		}
+		# Respawn counter
 		set_variable = {
 			which = BA_leader_respawn_cost
 			value = 0

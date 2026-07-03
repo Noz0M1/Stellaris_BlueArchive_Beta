@@ -853,13 +853,18 @@ defined_text = {
 	text = {
 		localization_key = hive_greeting
 		trigger = {
-			has_authority = auth_hive_mind
+			owner = {
+				is_hive_empire = yes
+				is_wilderness_empire = no
+			}
 		}
 	}
 	text = {
 		localization_key = machine_greeting
 		trigger = {
-			is_machine_empire = yes
+			owner = {
+				is_machine_empire = yes
+			}
 		}
 	}
 	text = {

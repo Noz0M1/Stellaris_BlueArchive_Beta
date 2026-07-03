@@ -11,16 +11,14 @@ building_BA_starlink_1 = {
 		ba_pop_assembly
 	}
 	potential = {
-		exists = owner
-		owner = {
+		owner? = {
 			is_ai = no
 			has_authority = auth_kivotos
 		}
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
+			owner? = {
 				has_authority = auth_kivotos
 			}
 		}
@@ -56,8 +54,7 @@ building_BA_starlink_2 = {
 		ba_pop_assembly
 	}
 	potential = {
-		exists = owner
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 			NOT = {
 				has_technology = tech_BA_SI_Shanhaijing_G01
@@ -69,8 +66,7 @@ building_BA_starlink_2 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
+			owner? = {
 				has_authority = auth_kivotos
 			}
 		}
@@ -114,7 +110,7 @@ building_BA_pyroxenes_1 = {
 		ba_specialFactory
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 	}
@@ -123,8 +119,7 @@ building_BA_pyroxenes_1 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
+			owner? = {
 				has_authority = auth_kivotos
 			}
 		}
@@ -163,7 +158,7 @@ building_BA_pyroxenes_2 = {
 		ba_specialFactory
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 	}
@@ -172,8 +167,7 @@ building_BA_pyroxenes_2 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
+			owner? = {
 				has_authority = auth_kivotos
 			}
 		}
@@ -210,14 +204,13 @@ building_BA_keystone_1 = {
 		ba_specialFactory
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
+			owner? = {
 				has_authority = auth_kivotos
 			}
 		}
@@ -271,7 +264,7 @@ building_BA_keystone_2 = {
 		ba_specialFactory
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 	}
@@ -280,8 +273,7 @@ building_BA_keystone_2 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
+			owner? = {
 				has_authority = auth_kivotos
 			}
 		}
@@ -335,7 +327,7 @@ building_BA_dark_matter_concentrator_1 = {
 		ba_specialFactory
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 	}
@@ -384,7 +376,7 @@ building_BA_rare_center_1 = {
 		ba_specialFactory
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 	}
@@ -417,7 +409,7 @@ building_BA_mixed_ruins_lab = {
 	base_buildtime = 360
 	empire_limit = 1
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 		planet = {
@@ -502,7 +494,7 @@ building_BA_SI_Millennium_G10 = {
 	}
 	base_cap_amount = 1
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 	}
@@ -514,8 +506,7 @@ building_BA_SI_Millennium_G10 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
+			owner? = {
 				has_authority = auth_kivotos
 			}
 		}
@@ -548,7 +539,7 @@ building_BA_SI_Valkyrie_B02 = {
 		urban
 	}
 	potential = {
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 	}
@@ -556,8 +547,7 @@ building_BA_SI_Valkyrie_B02 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
+			owner? = {
 				has_authority = auth_kivotos
 			}
 		}
@@ -597,8 +587,7 @@ building_BA_SI_Shanhaijing_G01 = {
 		ba_pop_assembly
 	}
 	potential = {
-		exists = owner
-		owner = {
+		owner? = {
 			has_authority = auth_kivotos
 		}
 	}
@@ -607,8 +596,7 @@ building_BA_SI_Shanhaijing_G01 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
+			owner? = {
 				has_authority = auth_kivotos
 			}
 		}
@@ -651,8 +639,7 @@ building_BA_SI_Shanhaijing_G02 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
+			owner? = {
 				has_authority = auth_kivotos
 			}
 		}
