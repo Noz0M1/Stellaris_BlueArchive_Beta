@@ -1,0 +1,16 @@
+namespace = BA_float_shortcut
+
+country_event = {
+	id = BA_float_shortcut.0001
+	is_triggered_only = yes
+	title = "BLANK_TEXT"
+	desc = "BLANK_TEXT"
+	diplomatic = yes
+	custom_gui = "BA_float_shortcut_window"
+	custom_gui_option = "BA_float_shortcut_option"
+
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}

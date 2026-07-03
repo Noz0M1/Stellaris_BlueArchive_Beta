@@ -13,7 +13,6 @@ spriteTypes = {
 		character = yes
 	}
 	spriteType = {
-		#抓紧让它用不上
 		name = "GFX_BA_UI_Exit"
 		textureFile = "gfx/interface/ui/BA_ui_exit.dds"
 	}
@@ -83,8 +82,8 @@ spriteTypes = {
 	}
 }
 
+### 主界面
 spriteTypes = {
-	### 主界面
 	#背景
 	spriteType = {
 		name = BA_UI_Main_background_01
@@ -131,6 +130,30 @@ spriteTypes = {
 		textureFile = gfx/Shittem_UI/Main/textbox_gray.dds
 	}
 	#彩蛋按钮
+}
+
+### 访达
+spriteTypes = {
+	spriteType = {
+		name = "GFX_BA_Finder_background"
+		textureFile = "gfx/Shittem_UI/Finder/background.dds"
+	}
+	spriteType = {
+		name = "GFX_BA_float_shortcut_button_1"
+		textureFile = "gfx/Shittem_UI/Main/button_Raid_01.dds"
+	}
+	spriteType = {
+		name = "GFX_BA_float_shortcut_button_2"
+		textureFile = "gfx/Shittem_UI/Main/button_Raid_01.dds"
+	}
+	spriteType = {
+		name = "GFX_BA_float_shortcut_button_3"
+		textureFile = "gfx/Shittem_UI/Main/button_Raid_02.dds"
+	}
+	spriteType = {
+		name = "GFX_BA_float_shortcut_button_4"
+		textureFile = "gfx/Shittem_UI/Main/button_Raid_02.dds"
+	}
 }
 
 ### 立绘

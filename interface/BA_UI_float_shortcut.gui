@@ -1,0 +1,401 @@
+guiTypes = {
+	containerWindowType = {
+		name = "BA_float_shortcut_option"
+		position = { x = 0 y = 0 }
+		size = { width = 80 height = 80 }
+		moveable = no
+
+		buttonType = {
+			name = "option_button"
+			position = { x = -10000 y = -10000 }
+			quadTextureSprite = "GFX_BA_float_shortcut_button_1"
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+			clicksound = "confirm_click"
+		}
+
+		OverlappingElementsBoxType = {
+			name = "trigger_icons"
+			position = { x = -10000 y = -10000 }
+			size = { x = 65 y = 28 }
+		}
+	}
+
+	containerWindowType = {
+		name = "BA_float_shortcut_window"
+		orientation = center
+		origo = center
+		position = { x = 0 y = 0 }
+		size = { width = 150 height = 200 }
+		moveable = yes
+
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tiled_window_transparent"
+		}
+
+		iconType = {
+			name = "icon_background"
+			quadTextureSprite = "GFX_BA_Finder_background"
+			alwaysTransparent = yes
+		}
+
+		containerWindowType = {
+			name = "BA_float_shortcut_panel"
+			position = { x = 0 y = 0 }
+			size = { width = 132 height = 164 }
+			moveable = no
+
+			iconType = {
+				name = "panel_backing"
+				position = { x = 0 y = 0 }
+				size = { x = 132 y = 164 }
+				quadTextureSprite = "GFX_tiles_dark_area_cut_8"
+				alwaysTransparent = yes
+			}
+
+			# iconType = {
+			# 	name = "drag_bar"
+			# 	position = { x = 0 y = 0 }
+			# 	size = { x = 132 y = 28 }
+			# 	quadTextureSprite = "GFX_tiles_dark_area_cut_8"
+			# 	alwaysTransparent = yes
+			# }
+
+			containerWindowType = {
+				name = "button_grid"
+				position = { x = 0 y = 50 }
+				size = { width = 150 height = 150 }
+				moveable = no
+
+				effectButtonType = {
+					name = "shortcut_button_1"
+					position = { x = 25 y = 0 }
+					quadTextureSprite = "GFX_BA_float_shortcut_button_1"
+					effect = button_effect_BA_float_shortcut_1
+					clicksound = "confirm_click"
+				}
+
+				effectButtonType = {
+					name = "shortcut_button_2"
+					position = { x = 90 y = 0 }
+					quadTextureSprite = "GFX_BA_float_shortcut_button_2"
+					effect = button_effect_BA_float_shortcut_2
+					clicksound = "confirm_click"
+				}
+
+				effectButtonType = {
+					name = "shortcut_button_3"
+					position = { x = 25 y = 65 }
+					quadTextureSprite = "GFX_BA_float_shortcut_button_3"
+					effect = button_effect_BA_float_shortcut_3
+					clicksound = "confirm_click"
+				}
+
+				effectButtonType = {
+					name = "shortcut_button_4"
+					position = { x = 90 y = 65 }
+					quadTextureSprite = "GFX_BA_float_shortcut_button_4"
+					effect = button_effect_BA_float_shortcut_4
+					clicksound = "confirm_click"
+				}
+			}
+		}
+
+		buttonType = {
+			name = "close"
+			position = { x = 110 y = 15 }
+			orientation = UPPER_LEFT
+			scale = 0.75
+			quadTextureSprite = "GFX_BA_UI_Exit"
+			clicksound = "back_click"
+		}
+
+		buttonType = {
+			name = "focus_button"
+			position = { x = 11450 y = 11175 }
+			orientation = UPPER_RIGHT
+			spriteType = "GFX_fleetview_focus"
+			buttonFont = "cg_16b"
+		}
+
+		instantTextBoxType = {
+			name = "heading"
+			font = "malgun_goth_24"
+			text = "DIPLOMACY"
+			position = { x = 11450 y = 11175 }
+			maxWidth = 543
+			maxHeight = 22
+			fixedSize = yes
+			alwaysTransparent = yes
+		}
+
+		buttonType = {
+			name = "tts_button"
+			position = { x = 11450 y = 11175 }
+			spriteType = "GFX_button_tts_start"
+			buttonFont = "cg_16b"
+			shortCut = "t"
+		}
+
+		buttonType = {
+			name = "alien_message_background"
+			size = { x = 485 y = 280 }
+			position = { x = 11450 y = 11175 }
+			spriteType = "GFX_tiles_dark_area_cut_8"
+			alwaysTransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "alien_message"
+			font = "cg_16b"
+			position = { x = 11450 y = 11175 }
+			maxWidth = 465
+			maxHeight = 260
+			format = left
+			scrollbartype = "standardtext_slider"
+		}
+
+		buttonType = {
+			name = "confirm_button"
+			quadTextureSprite = "GFX_standard_button_142_34_button"
+			position = { x = 11450 y = 11175 }
+			orientation = UPPER_RIGHT
+			font = "cg_16b"
+			text = "MESSAGE_OK"
+			clicksound = "confirmation"
+		}
+
+		containerWindowType = {
+			name = "portrait_background"
+			position = { x = 11450 y = 11175 }
+			size = { width = 1200 height = 750 }
+			clipping = no
+
+			iconType = {
+				name = "event_picture"
+				spriteType = "GFX_diplomacy_portrait_frame"
+				position = { x = 11450 y = 11175 }
+			}
+
+			iconType = {
+				name = "portrait"
+				position = { x = 250 y = 0 }
+				spriteType = "GFX_portrait_character"
+			}
+		}
+
+		containerWindowType = {
+			name = "portrait"
+			position = { x = 11450 y = 11175 }
+			size = { width = 1200 height = 750 }
+			clipping = yes
+
+			iconType = {
+				name = "portrait"
+				spriteType = "GFX_portrait_gamesetup_mask"
+				alwaysTransparent = yes
+			}
+
+			iconType = {
+				name = "black_frame"
+				spriteType = "GFX_diplomacy_portrait_shadow_frame"
+				position = { x = 11450 y = 11175 }
+				alwaysTransparent = yes
+			}
+
+			iconType = {
+				name = "stripes_1"
+				spriteType = "GFX_diplomacy_stripes_2"
+				position = { x = 11450 y = 11175 }
+				alwaysTransparent = yes
+			}
+
+			iconType = {
+				name = "city_frame"
+				spriteType = "GFX_diplomacy_portrait_frame"
+				position = { x = 11450 y = 11175 }
+				alwaysTransparent = yes
+			}
+		}
+
+		iconType = {
+			name = "empire_info_bg"
+			spriteType = "GFX_diplomacy_dark_fade_bg"
+			position = { x = 11450 y = 11175 }
+			alwaysTransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "empire_name"
+			font = "malgun_goth_24"
+			text = "Hidden Empire"
+			position = { x = 11450 y = 11175 }
+			maxWidth = 450
+			maxHeight = 16
+			format = LEFT
+			text_color_code = "E"
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name = "empire_government_type"
+			font = "cg_16b"
+			text = "Hidden Government"
+			position = { x = 11450 y = 11175 }
+			maxWidth = 250
+			maxHeight = 16
+			format = LEFT
+			fixedsize = yes
+			text_color_code = "Y"
+		}
+
+		instantTextBoxType = {
+			name = "empire_personality_type"
+			font = "cg_16b"
+			text = "Hidden Personality"
+			position = { x = 11450 y = 11175 }
+			maxWidth = 250
+			maxHeight = 16
+			format = LEFT
+			fixedsize = yes
+		}
+
+		OverlappingElementsBoxType = {
+			name = "empire_ethics_icons"
+			position = { x = 11450 y = 11175 }
+			size = { x = 240 y = 30 }
+			spacing = 2.0
+			format = left
+		}
+
+		buttonType = {
+			name = "empire_flag"
+			quadTextureSprite = "GFX_empire_flag_128"
+			position = { x = 11450 y = 11175 }
+			orientation = UPPER_LEFT
+		}
+
+		containerWindowType = {
+			name = "leader_details"
+			position = { x = 11450 y = 11175 }
+
+			containerWindowType = {
+				name = "empire_traits_box"
+				position = { x = 0 y = -5 }
+				size = { width = 210 height = 75 }
+
+				background = {
+					name = "ethics_bg"
+					spriteType = "GFX_tiles_dark_area_cut_8"
+				}
+			}
+
+			instantTextBoxType = {
+				name = "empire_traits_label"
+				position = { x = 214 y = 37 }
+				font = "cg_16b"
+				maxWidth = 230
+				maxHeight = 20
+				fixedSize = yes
+				format = left
+				text = "RULER_TRAITS"
+				alwaysTransparent = yes
+			}
+
+			overlappingElementsBoxType = {
+				name = "leader_traits"
+				position = { x = 215 y = 55 }
+				size = { x = 125 y = 330 }
+			}
+
+			instantTextBoxType = {
+				name = "leader_name"
+				position = { x = 10 y = 0 }
+				font = "cg_16b"
+				maxWidth = 330
+				maxHeight = 20
+				fixedSize = yes
+				format = left
+				text = "Leader Name"
+				text_color_code = "E"
+			}
+
+			instantTextBoxType = {
+				name = "leader_species"
+				position = { x = 10 y = 18 }
+				font = "cg_16b"
+				maxWidth = 330
+				maxHeight = 20
+				fixedSize = yes
+				text = "Leader Species"
+				format = left
+			}
+		}
+
+		containerWindowType = {
+			name = "opinion_window"
+			position = { x = 11450 y = 11175 }
+			size = { width = 94 height = 30 }
+
+			background = {
+				name = "opinion_bg"
+				spriteType = "GFX_tiled_window_transparent"
+			}
+
+			iconType = {
+				name = "their_opinion_icon"
+				spriteType = "GFX_diplomacy_opinion"
+				position = { x = 7 y = 4 }
+				alwaysTransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "their_opinion"
+				font = "cg_16b"
+				maxWidth = 40
+				position = { x = 40 y = 7 }
+				format = left
+				text = "100"
+				alwaysTransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "EVENT_DIPLO"
+			position = { x = 11450 y = 11175 }
+			size = { width = 563 height = 280 }
+			moveable = no
+
+			instantTextBoxType = {
+				name = "action_title"
+				font = "malgun_goth_24"
+				position = { x = 20 y = 0 }
+				maxWidth = 520
+				alwaysTransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "action_desc"
+				font = "malgun_goth_24"
+				position = { x = 490 y = 0 }
+				maxWidth = 500
+				maxHeight = 180
+				orientation = UPPER_LEFT
+				format = center
+				alwaysTransparent = yes
+				text_color_code = "H"
+			}
+
+			listboxType = {
+				name = "option_list"
+				position = { x = 550 y = 20 }
+				size = { x = 450 y = 240 }
+				spacing = 1
+				scrollbartype = "standardlistbox_slider"
+				borderSize = { x = 0 y = 0 }
+				orientation = UPPER_LEFT
+			}
+		}
+	}
+}
