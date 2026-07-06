@@ -585,6 +585,21 @@ country_event = {
 	}
 }
 
+#访达
+country_event = {
+	id = BA_Shittem.1005
+	is_triggered_only = yes
+	title = "BLANK_TEXT"
+	desc = "BLANK_TEXT"
+	diplomatic = yes
+	custom_gui = "BA_Finder_window"
+	custom_gui_option = "BA_Finder_option"
+	option = {
+		name = "BLANK_TEXT"
+		default_hide_option = yes
+	}
+}
+
 ### 天使24
 country_event = {
 	#天使24

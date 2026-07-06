@@ -1,6 +1,6 @@
 guiTypes = {
 	containerWindowType = {
-		name = "BA_float_shortcut_option"
+		name = "BA_Finder_option"
 		position = {
 			x = 0
 			y = 0
@@ -16,7 +16,7 @@ guiTypes = {
 				x = -10000
 				y = -10000
 			}
-			quadTextureSprite = "GFX_BA_float_shortcut_button_1"
+			quadTextureSprite = "GFX_BA_Finder_Btnbg"
 			font = "cg_16b"
 			text = "OPTION_TEXT"
 			clicksound = "confirm_click"
@@ -34,7 +34,7 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
-		name = "BA_float_shortcut_window"
+		name = "BA_Finder_window"
 		orientation = center
 		origo = center
 		position = {
@@ -84,52 +84,88 @@ guiTypes = {
 				name = "button_grid"
 				position = {
 					x = 0
-					y = 30
+					y = 25
 				}
 				size = {
 					width = 150
 					height = 150
 				}
 				moveable = no
-				effectButtonType = {
-					name = "shortcut_button_1"
+				background = {
+					name = shortcut_btnbg_1
 					position = {
-						x = 15
+						x = 10
 						y = 0
 					}
-					quadTextureSprite = "GFX_BA_float_shortcut_button_1"
-					effect = button_effect_BA_float_shortcut_1
-					clicksound = "confirm_click"
+					size = {
+						width = 64
+						height = 64
+					}
+					quadTextureSprite = GFX_BA_Finder_Btnbg
+					alpha = 0.5
 				}
-				effectButtonType = {
-					name = "shortcut_button_2"
+				background = {
+					name = shortcut_btnbg_2
 					position = {
-						x = 80
+						x = 75
 						y = 0
 					}
-					quadTextureSprite = "GFX_BA_float_shortcut_button_2"
-					effect = button_effect_BA_float_shortcut_2
-					clicksound = "confirm_click"
+					size = {
+						width = 64
+						height = 64
+					}
+					quadTextureSprite = GFX_BA_Finder_Btnbg
+					alpha = 0.5
 				}
-				effectButtonType = {
-					name = "shortcut_button_3"
+				background = {
+					name = shortcut_btnbg_3
 					position = {
-						x = 15
+						x = 10
 						y = 75
 					}
-					quadTextureSprite = "GFX_BA_float_shortcut_button_3"
-					effect = button_effect_BA_float_shortcut_3
-					clicksound = "confirm_click"
+					size = {
+						width = 64
+						height = 64
+					}
+					quadTextureSprite = GFX_BA_Finder_Btnbg
+					alpha = 0.5
 				}
-				effectButtonType = {
-					name = "shortcut_button_4"
+				background = {
+					name = shortcut_btnbg_4
 					position = {
-						x = 80
+						x = 75
 						y = 75
 					}
-					quadTextureSprite = "GFX_BA_float_shortcut_button_4"
-					effect = button_effect_BA_float_shortcut_4
-					clicksound = "confirm_click"
+					size = {
+						width = 64
+						height = 64
+					}
+					quadTextureSprite = GFX_BA_Finder_Btnbg
+					alpha = 0.5
+				}
+				# 什亭之匣
+				effectButtonType = {
+					name = shortcut_button_1
+					position = {
+						x = 17
+						y = 70
+					}
+					quadTextureSprite = GFX_BA_Finder_MX
+					scale = 0.20
+					effect = button_effect_Finder_Precursor
+					clicksound = confirm_click
+				}
+				# 先驱者
+				effectButtonType = {
+					name = shortcut_button_2
+					position = {
+						x = 66
+						y = 70
+					}
+					quadTextureSprite = GFX_BA_Finder_Shittem
+					scale = 0.20
+					effect = button_effect_Finder_Shittem
+					clicksound = confirm_click
 				}
 			}
 		}
