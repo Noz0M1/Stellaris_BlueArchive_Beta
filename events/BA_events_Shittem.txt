@@ -594,9 +594,20 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_Finder_window"
 	custom_gui_option = "BA_Finder_option"
+	trigger = {
+		NOT = {
+			has_country_flag = BA_finder_activated
+		}
+	}
+	immediate = {
+		set_country_flag = BA_finder_activated
+	}
 	option = {
 		name = "BLANK_TEXT"
 		default_hide_option = yes
+		hidden_effect = {
+			remove_country_flag = BA_finder_activated
+		}
 	}
 }
 

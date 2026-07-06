@@ -112,10 +112,14 @@ button_effect_BA_developer_options = {
 	}
 	effect = {
 		hidden_effect = {
+			custom_tooltip = BA_Finder_tip
 			from = {
 				change_variable = {
 					which = BA_cheat_click_count
 					value = 1
+				}
+				country_event = {
+					id = BA_Shittem.1005
 				}
 				if = {
 					limit = {

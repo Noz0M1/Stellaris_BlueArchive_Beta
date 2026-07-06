@@ -91,11 +91,12 @@ guiTypes = {
 					height = 150
 				}
 				moveable = no
+				# 什亭之匣
 				containerWindowType = {
-					name = button_MX
+					name = button_Shittm
 					position = {
 						x = 0
-						y = 0
+						y = 10
 					}
 					size = {
 						width = 64
@@ -113,28 +114,121 @@ guiTypes = {
 					effectButtonType = {
 						name = button
 						position = {
-							x = 6
-							y = 6
+							x = 6.4
+							y = 6.4
 						}
-						quadTextureSprite = GFX_BA_Finder_MX
-						scale = 0.20
-						effect = button_effect_Finder_Precursor
+						scale = 0.8
+						quadTextureSprite = GFX_BA_Finder_Shittem
+						effect = button_effect_Finder_Shittem
+						clicksound = confirm_click
+					}
+				}
+				# 社团总部
+				containerWindowType = {
+					name = button_club
+					position = {
+						x = 64
+						y = 10
+					}
+					size = {
+						width = 64
+						height = 64
+					}
+					background = {
+						name = bg
+						position = {
+							x = 0
+							y = 0
+						}
+						quadTextureSprite = GFX_BA_Finder_Btnbg
+						alpha = 0.5
+					}
+					effectButtonType = {
+						name = button
+						position = {
+							x = 1
+							y = -1
+						}
+						quadTextureSprite = GFX_BA_Finder_club
+						effect = button_effect_Finder_club
 						clicksound = confirm_click
 					}
 				}
 				# 先驱者
-				# effectButtonType = {
-				# 	name = shortcut_button_2
-				# 	position = {
-				# 		x = 66
-				# 		y = 70
-				# 	}
-				# 	quadTextureSprite = GFX_BA_Finder_Shittem
-				# 	scale = 0.20
-				# 	effect = button_effect_Finder_Shittem
-				# 	clicksound = confirm_click
-				# }
+				containerWindowType = {
+					name = button_MX
+					position = {
+						x = 0
+						y = 76
+					}
+					size = {
+						width = 64
+						height = 64
+					}
+					background = {
+						name = bg
+						position = {
+							x = 0
+							y = 0
+						}
+						quadTextureSprite = GFX_BA_Finder_Btnbg
+						alpha = 0.5
+					}
+					effectButtonType = {
+						name = button
+						position = {
+							x = 0
+							y = 0
+						}
+						quadTextureSprite = GFX_BA_Finder_MX
+						effect = button_effect_Finder_MX
+						clicksound = confirm_click
+					}
+				}
+				# 待定
+				containerWindowType = {
+					name = button_Blank
+					position = {
+						x = 64
+						y = 76
+					}
+					size = {
+						width = 64
+						height = 64
+					}
+					background = {
+						name = bg
+						position = {
+							x = 0
+							y = 0
+						}
+						quadTextureSprite = GFX_BA_Finder_Btnbg
+						alpha = 0.5
+					}
+					effectButtonType = {
+						name = button
+						position = {
+							x = 0
+							y = 0
+						}
+						quadTextureSprite = GFX_BA_Finder_Blank
+						effect = button_effect_Finder_Blank
+						clicksound = confirm_click
+					}
+				}
 			}
+		}
+		effectButtonType = {
+			name = "finder_help"
+			position = {
+				x = 0
+				y = 2
+			}
+			orientation = UPPER_LEFT
+			scale = 0.75
+			quadTextureSprite = "GFX_BA_Finder_help"
+			effect = button_effect_Finder_help
+			clicksound = "back_click"
 		}
 		buttonType = {
 			name = "close"
