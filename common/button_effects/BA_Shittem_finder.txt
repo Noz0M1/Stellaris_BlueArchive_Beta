@@ -12,34 +12,68 @@ button_effect_Finder_help = {
 
 button_effect_Finder_Shittem = {
 	allow = {
-		always = yes
+		hidden_trigger = {
+			exists = event_target:BA_Shittem_country
+			from = {
+				has_communications = event_target:BA_Shittem_country
+			}
+		}
 	}
 	potential = {
 		always = yes
 	}
 	effect = {
+		hidden_effect = {
+			from = {
+				BA_Shittem_main_open = yes
+			}
+		}
 	}
 }
 
 button_effect_Finder_club = {
 	allow = {
-		always = yes
+		hidden_trigger = {
+			exists = event_target:BA_club_communicate_country
+			from = {
+				has_communications = event_target:BA_club_communicate_country
+			}
+		}
 	}
 	potential = {
 		always = yes
 	}
 	effect = {
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_club.0051
+				}
+			}
+		}
 	}
 }
 
 button_effect_Finder_MX = {
 	allow = {
-		always = yes
+		hidden_trigger = {
+			exists = event_target:BA_Precursor_country
+			from = {
+				has_communications = event_target:BA_Precursor_country
+			}
+		}
 	}
 	potential = {
 		always = yes
 	}
 	effect = {
+		hidden_effect = {
+			from = {
+				country_event = {
+					id = BA_Precursor.0152
+				}
+			}
+		}
 	}
 }
 

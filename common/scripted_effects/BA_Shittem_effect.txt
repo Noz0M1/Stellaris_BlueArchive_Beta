@@ -1,10 +1,11 @@
 ####   UI
-#获取资源数量 country scope
-BA_Shittem_get_stockpile = {
-	#### 初始化
+# 打开什亭之匣主界面 country scope
+BA_Shittem_main_open = {
+	#### 获取资源数量
+	### 初始化
 	remove_country_flag = BA_negative_pyroxenes
 	remove_country_flag = BA_negative_keystone
-	#存量
+	# 存量
 	set_variable = {
 		which = BA_var_stockpile_pyroxenes
 		value = 0
@@ -17,7 +18,7 @@ BA_Shittem_get_stockpile = {
 		which = BA_var_stockpile_energy
 		value = 0
 	}
-	#月度
+	# 月度
 	set_variable = {
 		which = BA_var_income_pyroxenes
 		value = 0
@@ -26,8 +27,8 @@ BA_Shittem_get_stockpile = {
 		which = BA_var_income_keystone
 		value = 0
 	}
-	#### 载入
-	#存量
+	### 载入
+	# 存量
 	export_resource_stockpile_to_variable = {
 		resource = sr_pyroxenes
 		variable = BA_var_stockpile_pyroxenes
@@ -40,7 +41,7 @@ BA_Shittem_get_stockpile = {
 		resource = sr_eligma
 		variable = BA_var_stockpile_energy
 	}
-	#月度
+	# 月度
 	export_resource_income_to_variable = {
 		resource = sr_pyroxenes
 		variable = BA_var_income_pyroxenes
@@ -49,7 +50,7 @@ BA_Shittem_get_stockpile = {
 		resource = sr_keystone
 		variable = BA_var_income_keystone
 	}
-	#### 设置
+	### 设置
 	if = {
 		limit = {
 			check_variable = {
@@ -74,6 +75,36 @@ BA_Shittem_get_stockpile = {
 		multiply_variable = {
 			which = BA_var_income_keystone
 			value = -1
+		}
+	}
+	#### 打开主界面
+	random_list = {
+		#事件提前生产0-24的随机数，通过该变量的值进行文本以及肖像的随机变化
+		#肖像绑定值，文本绑定值，以此实现肖像与文本的绑定
+		#序号为0的肖像与scripted loc当中的BlueArchivePulanaDesc0绑定，以此类推，Arona窗口同理
+		1 = {
+			set_variable_to_random_value = {
+				which = BA_Arona_serial
+				min = 0
+				#max = 24
+				max = 15
+				rounded = yes
+			}
+			country_event = {
+				id = BA_Shittem.1001
+			}
+		}
+		1 = {
+			set_variable_to_random_value = {
+				which = BA_Pulana_serial
+				min = 0
+				#max = 24
+				max = 13
+				rounded = yes
+			}
+			country_event = {
+				id = BA_Shittem.1002
+			}
 		}
 	}
 }

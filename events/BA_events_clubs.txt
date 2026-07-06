@@ -231,8 +231,7 @@ planet_event = {
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
-		exists = from
-		from = {
+		from? = {
 			is_ship_size = BA_club_ship
 		}
 	}
