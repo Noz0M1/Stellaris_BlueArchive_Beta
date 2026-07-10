@@ -603,11 +603,7 @@ country_event = {
 		portrait = event_target:BA_Precursor_country
 		room = BA_01_room
 	}
-	immediate = {
-		event_target:BA_Precursor_species = {
-			change_species_portrait = BA_Seia
-		}
-	}
+	immediate = { }
 	### 基沃托斯
 	option = {
 		name = BA_Precursor.0102.Eden_Treaty
