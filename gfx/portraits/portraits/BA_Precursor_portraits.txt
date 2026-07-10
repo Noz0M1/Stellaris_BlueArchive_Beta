@@ -1,0 +1,37 @@
+
+
+### 彩蛋领袖
+portraits = {
+	# 先驱者
+	BA_leader_Seia_pr = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Seia_pr
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Hoshino
+	}
+	BA_leader_Shigure_pr = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Shigure_pr
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Hoshino
+	}
+	BA_leader_Momoi_pr = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Momoi_pr
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Hoshino
+	}
+	BA_leader_Midori_pr = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Midori_pr
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Hoshino
+	}
+	# 事件
+	BA_leader_Axium = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Seia_pr
+		attachment_selector = no_texture
+		# greeting_sound=sound_greeting_BA_Hoshino
+	}
+}

@@ -737,49 +737,14 @@ portrait_groups = {
 			}
 		}
 	}
-
 	"Schale_pr" = {
-		default = BA_leader_Seia
-		game_setup = {
-			#will run with a limited country scope. species and government is set but the country does not actually exist
-			add = {
-				portraits = {
-					BA_leader_Seia
-				}
-			}
-		}
-		#species scope
-		species = {
-			#generic portrait for a species
-			add = {
-				portraits = {
-					BA_leader_Seia
-				}
-			}
-		}
+		default = BA_leader_Seia_pr
 		#pop scope
 		pop_group = {
 			#for a specific pop
 			add = {
 				portraits = {
-					BA_leader_Seia
-				}
-			}
-		}
-		#leader scope
-		leader = {
-			#scientists, generals, admirals, governor
-			add = {
-				portraits = {
-					BA_leader_Seia
-				}
-			}
-		}
-		#leader scope
-		ruler = {
-			add = {
-				portraits = {
-					BA_leader_Seia
+					BA_carefree
 				}
 			}
 		}

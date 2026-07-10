@@ -69,7 +69,7 @@ country_event = {
 		create_species = {
 			name = "NAME_BA_Precursor_species"
 			class = Schale
-			portrait = Schale
+			portrait = Schale_pr
 			traits = {
 				trait = trait_pc_ringworld_habitable_preference
 				trait = trait_Halo_precursor
@@ -131,7 +131,7 @@ country_event = {
 						trait = leader_trait_councilor_fe
 					}
 					effect = {
-						change_leader_portrait = BA_leader_Seia
+						change_leader_portrait = BA_leader_Seia_pr
 						owner = {
 							assign_leader = prev
 						}
@@ -600,7 +600,7 @@ country_event = {
 	force_open = yes
 	custom_gui = "BA_Window"
 	picture_event_data = {
-		portrait = fromfrom
+		portrait = event_target:BA_Precursor_country
 		room = BA_01_room
 	}
 	immediate = {
@@ -737,7 +737,8 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_Window"
 	picture_event_data = {
-		portrait = BA_Seia
+		portrait = event_target:BA_Precursor_country
+		#portrait = BA_leader_Seia_pr
 		room = BA_01_room
 	}
 	title = BA_Precursor.main.title
@@ -796,7 +797,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_Window"
 	picture_event_data = {
-		portrait = BA_Seia
+		portrait = BA_leader_Seia_pr
 		room = BA_01_room
 	}
 	title = BA_Precursor.manual.title
@@ -820,7 +821,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_Window"
 	picture_event_data = {
-		portrait = BA_Seia
+		portrait = BA_leader_Seia_pr
 		room = BA_01_room
 	}
 	title = BA_Precursor.trade.title
@@ -842,7 +843,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_Window"
 	picture_event_data = {
-		portrait = BA_Seia
+		portrait = BA_leader_Seia_pr
 		room = BA_01_room
 	}
 	title = BA_Precursor.chat.title
