@@ -41,14 +41,25 @@ guiTypes = {
 		origo = center
 		moveable = yes
 		size = {
-			#974 680
 			width = 1080
 			height = 750
 		}
+		#974 680
 		#整个界面的蓝色背景
 		background = {
 			name = "background"
 			quadTextureSprite = "GFX_tile_large_bg_curator"
+		}
+		#意义不明的蓝色六边形网格贴图
+		iconType = {
+			name = "hex_bg"
+			spriteType = "GFX_hex_bg_curator"
+			position = {
+				x = 11450
+				y = 11176
+			}
+			#-10 -14
+			alwaysTransparent = yes
 		}
 		#左上角的线
 		iconType = {
@@ -71,6 +82,20 @@ guiTypes = {
 			alwaysTransparent = yes
 			#scale = 1.5
 		}
+		# hidden
+		#移动视角按钮（本来就不显示
+		buttonType = {
+			name = "focus_button"
+			position = {
+				x = 11450
+				y = 11176
+			}
+			#-80 16
+			orientation = "UPPER_RIGHT"
+			spriteType = "GFX_fleetview_focus"
+			buttonFont = "cg_16b"
+			shortcut = "q"
+		}
 		#关闭按钮
 		buttonType = {
 			name = "close"
@@ -83,6 +108,23 @@ guiTypes = {
 			shortcut = "ESCAPE"
 			clicksound = "back_click"
 		}
+		# hidden
+		#信号传输接入
+		instantTextBoxType = {
+			name = "heading"
+			font = "malgun_goth_24"
+			text = "DIPLOMACY"
+			position = {
+				x = 11450
+				y = 11175
+			}
+			#20 5
+			maxWidth = 543
+			maxHeight = 22
+			fixedSize = yes
+			alwaysTransparent = yes
+		}
+		# hidden
 		#通讯desc的深色背景
 		buttonType = {
 			name = "alien_message_background"
@@ -137,6 +179,17 @@ guiTypes = {
 				height = 750
 			}
 			clipping = no #yes
+			#图像的外框
+			#hidden
+			iconType = {
+				name = "event_picture"
+				spriteType = "GFX_diplomacy_portrait_frame"
+				position = {
+					x = 11450
+					y = 11175
+				}
+				#-6 -5
+			}
 			iconType = {
 				name = "portrait"
 				position = {
@@ -161,167 +214,52 @@ guiTypes = {
 			iconType = {
 				name = "portrait"
 				spriteType = "GFX_portrait_Shittem_mask" #GFX_portrait_gamesetup_mask
+				#position = { x = 11450 y = 11175 }#本来没有这一行
 				alwaysTransparent = yes
 			}
-		}
-		### EVENT DIPLO ###
-		containerWindowType = {
-			name = "EVENT_DIPLO"
-			position = {
-				x = 0
-				y = 400
-			}
-			size = {
-				width = 563
-				height = 280
-			}
-			moveable = no
-			instantTextBoxType = {
-				name = "action_title"
-				font = "malgun_goth_24"
+			#hidden
+			#相框一类的东西？
+			iconType = {
+				name = "black_frame"
+				spriteType = "GFX_diplomacy_portrait_shadow_frame"
 				position = {
-					x = 20
-					y = 0
+					x = 11450
+					y = 11175
 				}
-				maxWidth = 520
+				#-4 -5
 				alwaysTransparent = yes
 			}
-			instantTextBoxType = {
-				name = "action_desc"
-				font = "malgun_goth_24"
+			#hidden
+			iconType = {
+				name = "stripes_1"
+				spriteType = "GFX_diplomacy_stripes_2"
 				position = {
-					x = 490
-					y = 0
+					x = 11450
+					y = 11175
 				}
-				maxWidth = 500
-				maxHeight = 180
-				Orientation = "UPPER_LEFT"
-				format = center
+				#原来没这行
 				alwaysTransparent = yes
-				text_color_code = "H"
 			}
-			listboxType = {
-				name = "option_list"
+			#hidden
+			iconType = {
+				name = "city_frame"
+				spriteType = "GFX_diplomacy_portrait_frame_curator"
 				position = {
-					x = 550
-					y = 20
+					x = 11450
+					y = 11175
 				}
-				#position = { x = 1100 y = 275 }
-				#backGround=""
-				size = {
-					x = 450
-					y = 240
-				}
-				spacing = 1
-				scrollbartype = "standardlistbox_slider"
-				borderSize = {
-					x = 0
-					y = 0
-				}
-				Orientation = "UPPER_LEFT"
+				#-6 -5
+				alwaysTransparent = yes
 			}
-		}
-		### HIDDEN CONTROLS ###
-		# 保留外交事件模板需要的命名控件，但不在 BA 通讯界面显示。
-		#意义不明的蓝色六边形网格贴图
-		iconType = {
-			name = "hex_bg"
-			spriteType = "GFX_hex_bg_curator"
-			position = {
-				x = 11450
-				y = 11176
-			}
-			#-10 -14
-			alwaysTransparent = yes
-		}
-		#移动视角按钮（本来就不显示
-		buttonType = {
-			name = "focus_button"
-			position = {
-				x = 11450
-				y = 11176
-			}
-			#-80 16
-			orientation = "UPPER_RIGHT"
-			spriteType = "GFX_fleetview_focus"
-			buttonFont = "cg_16b"
-			shortcut = "q"
-		}
-		#信号传输接入
-		instantTextBoxType = {
-			name = "heading"
-			font = "malgun_goth_24"
-			text = "DIPLOMACY"
-			position = {
-				x = 11450
-				y = 11175
-			}
-			#20 5
-			maxWidth = 543
-			maxHeight = 22
-			fixedSize = yes
-			alwaysTransparent = yes
-		}
-		buttonType = {
-			name = "tts_button"
-			position = {
-				x = 11450
-				y = 11175
-			}
-			#20 5
-			spriteType = "GFX_button_tts_start"
-			buttonFont = "cg_16b"
-			shortCut = "t"
-		}
-		#图像的外框
-		iconType = {
-			name = "event_picture"
-			spriteType = "GFX_diplomacy_portrait_frame"
-			position = {
-				x = 11450
-				y = 11175
-			}
-			#-6 -5
-			alwaysTransparent = yes
-		}
-		#相框一类的东西？
-		iconType = {
-			name = "black_frame"
-			spriteType = "GFX_diplomacy_portrait_shadow_frame"
-			position = {
-				x = 11450
-				y = 11175
-			}
-			#-4 -5
-			alwaysTransparent = yes
-		}
-		iconType = {
-			name = "stripes_1"
-			spriteType = "GFX_diplomacy_stripes_2"
-			position = {
-				x = 11450
-				y = 11175
-			}
-			#原来没这行
-			alwaysTransparent = yes
-		}
-		iconType = {
-			name = "city_frame"
-			spriteType = "GFX_diplomacy_portrait_frame_curator"
-			position = {
-				x = 11450
-				y = 11175
-			}
-			#-6 -5
-			alwaysTransparent = yes
 		}
 		### EMPIRE INFO ###
+		#这里应该不用改（
 		iconType = {
 			name = "empire_info_bg"
 			spriteType = "GFX_diplomacy_dark_fade_bg"
 			position = {
-				x = 11450
-				y = 11175
+				x = 58
+				y = 69
 			}
 			#33
 			alwaysTransparent = yes
@@ -331,8 +269,8 @@ guiTypes = {
 			font = "malgun_goth_24"
 			text = "Kammarian Galactic Concordat"
 			position = {
-				x = 11450
-				y = 11175
+				x = 70
+				y = 75
 			}
 			#45
 			maxWidth = 450
@@ -346,8 +284,8 @@ guiTypes = {
 			font = "cg_16b"
 			text = "Autocracy"
 			position = {
-				x = 11450
-				y = 11175
+				x = 70
+				y = 100
 			}
 			#45
 			maxWidth = 250
@@ -361,8 +299,8 @@ guiTypes = {
 			font = "cg_16b"
 			text = "Despicable Neutrals"
 			position = {
-				x = 11450
-				y = 11175
+				x = 70
+				y = 117
 			}
 			#45
 			maxWidth = 250
@@ -373,8 +311,8 @@ guiTypes = {
 		OverlappingElementsBoxType = {
 			name = "empire_ethics_icons"
 			position = {
-				x = 11450
-				y = 11175
+				x = 75
+				y = 143
 			}
 			#45
 			size = {
@@ -388,16 +326,16 @@ guiTypes = {
 			name = "empire_flag"
 			quadTextureSprite = "GFX_empire_flag_128_curator"
 			position = {
-				x = 11450
-				y = 11175
+				x = 75
+				y = 240
 			}
 			orientation = UPPER_LEFT
 		}
 		containerWindowType = {
 			name = "leader_details"
 			position = {
-				x = 11450
-				y = 11175
+				x = 25
+				y = 75
 			}
 			containerWindowType = {
 				name = "empire_traits_box"
@@ -472,8 +410,8 @@ guiTypes = {
 		containerWindowType = {
 			name = "opinion_window"
 			position = {
-				x = 11450
-				y = 11175
+				x = 27
+				y = 110
 			}
 			size = {
 				width = 94
@@ -504,6 +442,63 @@ guiTypes = {
 				format = left
 				text = "100"
 				alwaysTransparent = yes
+			}
+		}
+		### EVENT DIPLO ###
+		containerWindowType = {
+			name = "EVENT_DIPLO"
+			position = {
+				x = 0
+				y = 400
+			}
+			size = {
+				width = 563
+				height = 280
+			}
+			moveable = no
+			instantTextBoxType = {
+				name = "action_title"
+				font = "malgun_goth_24"
+				position = {
+					x = 20
+					y = 0
+				}
+				maxWidth = 520
+				alwaysTransparent = yes
+			}
+			instantTextBoxType = {
+				name = "action_desc"
+				font = "malgun_goth_24"
+				position = {
+					x = 490
+					y = 0
+				}
+				maxWidth = 500
+				maxHeight = 180
+				Orientation = "UPPER_LEFT"
+				format = center
+				alwaysTransparent = yes
+				text_color_code = "H"
+			}
+			listboxType = {
+				name = "option_list"
+				position = {
+					x = 550
+					y = 20
+				}
+				#position = { x = 1100 y = 275 }
+				#backGround=""
+				size = {
+					x = 450
+					y = 240
+				}
+				spacing = 1
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {
+					x = 0
+					y = 0
+				}
+				Orientation = "UPPER_LEFT"
 			}
 		}
 	}

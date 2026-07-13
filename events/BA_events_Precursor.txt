@@ -2,7 +2,7 @@ namespace = BA_Precursor
 ######################
 ###     前置准备
 ######################
-#初始化
+# 初始化
 country_event = {
 	id = BA_Precursor.0001
 	is_triggered_only = yes
@@ -183,7 +183,7 @@ country_event = {
 	}
 }
 
-#先驱者月检
+# 先驱者月检
 country_event = {
 	id = BA_Precursor.0002
 	hide_window = yes
@@ -209,7 +209,7 @@ country_event = {
 	}
 }
 
-#激活外域链路
+# 激活外域链路
 country_event = {
 	id = BA_Precursor.0010
 	is_triggered_only = yes
@@ -235,7 +235,7 @@ country_event = {
 	}
 }
 
-#激活失落帝国内链路
+# 激活失落帝国内链路
 country_event = {
 	id = BA_Precursor.0011
 	is_triggered_only = yes
@@ -277,7 +277,7 @@ country_event = {
 	}
 }
 
-#通知外部链路激活
+# 通知外部链路激活
 country_event = {
 	id = BA_Precursor.0015
 	is_triggered_only = yes
@@ -316,7 +316,7 @@ country_event = {
 	}
 }
 
-#通知内部链路激活
+# 通知内部链路激活
 country_event = {
 	id = BA_Precursor.0016
 	is_triggered_only = yes
@@ -335,7 +335,7 @@ country_event = {
 ######################
 ###     探索星系
 ######################
-#进入通讯接口
+# 进入通讯接口
 ship_event = {
 	id = BA_Precursor.0051
 	is_triggered_only = yes
@@ -362,7 +362,7 @@ ship_event = {
 	}
 }
 
-#进入失落帝国境内
+# 进入失落帝国境内
 ship_event = {
 	id = BA_Precursor.0052
 	is_triggered_only = yes
@@ -393,8 +393,8 @@ ship_event = {
 	}
 }
 
-#进入失落帝国环世界
-#进入失落帝国母星
+# 进入失落帝国环世界
+# 进入失落帝国母星
 ship_event = {
 	id = BA_Precursor.0054
 	is_triggered_only = yes
@@ -422,7 +422,7 @@ ship_event = {
 	}
 }
 
-#链路接口扫完后刷一个坟
+# 链路接口扫完后刷一个坟
 ship_event = {
 	id = BA_Precursor.0057
 	is_triggered_only = yes
@@ -452,7 +452,7 @@ ship_event = {
 	}
 }
 
-#进入一个新星系，+1数据
+# 进入一个新星系，+1数据
 ship_event = {
 	id = BA_Precursor.0060
 	is_triggered_only = yes
@@ -477,7 +477,7 @@ ship_event = {
 ###     先驱通讯
 ######################
 ### 初次交流
-#触发器
+# 触发器
 country_event = {
 	id = BA_Precursor.0100
 	hide_window = yes
@@ -552,7 +552,7 @@ country_event = {
 	}
 }
 
-#通讯触发（先驱者线路）
+# 通讯触发（先驱者线路）
 country_event = {
 	id = BA_Precursor.0101
 	is_triggered_only = yes
@@ -590,7 +590,7 @@ country_event = {
 	}
 }
 
-#先驱反抗者通讯
+# 先驱反抗者通讯
 country_event = {
 	id = BA_Precursor.0102
 	is_triggered_only = yes
@@ -603,7 +603,8 @@ country_event = {
 		portrait = event_target:BA_Precursor_country
 		room = BA_01_room
 	}
-	immediate = { }
+	immediate = {
+	}
 	### 基沃托斯
 	option = {
 		name = BA_Precursor.0102.Eden_Treaty
@@ -679,7 +680,7 @@ country_event = {
 }
 
 ### 通讯站
-#点击触发
+# 点击触发
 country_event = {
 	id = BA_Precursor.0150
 	is_triggered_only = yes
@@ -709,7 +710,7 @@ country_event = {
 	}
 }
 
-#拒绝接入
+# 拒绝接入
 country_event = {
 	id = BA_Precursor.0151
 	is_triggered_only = yes
@@ -726,7 +727,7 @@ country_event = {
 	}
 }
 
-#主界面
+# 主界面
 country_event = {
 	id = BA_Precursor.0152
 	is_triggered_only = yes
@@ -734,7 +735,6 @@ country_event = {
 	custom_gui = "BA_Window"
 	picture_event_data = {
 		portrait = event_target:BA_Precursor_country
-		#portrait = BA_leader_Seia_pr
 		room = BA_01_room
 	}
 	title = BA_Precursor.main.title
@@ -753,36 +753,42 @@ country_event = {
 	desc = {
 		text = BA_Precursor.main.desc.5
 	}
+	desc = {
+		text = BA_Precursor.main.desc.6
+	}
+	desc = {
+		text = BA_Precursor.main.desc.7
+	}
+	desc = {
+		text = BA_Precursor.main.desc.8
+	}
+	desc = {
+		text = BA_Precursor.main.desc.9
+	}
+	desc = {
+		text = BA_Precursor.main.desc.10
+	}
 	#退出
 	option = {
 		name = BA_Precursor.exit
 		default_hide_option = yes
 	}
-	#说明
-	option = {
-		name = BA_Precursor.manual
-		hidden_effect = {
-			country_event = {
-				id = BA_Precursor.0153
-			}
-		}
-	}
-	#进行交易
+	# 说明
+	# option = {
+	# 	name = BA_Precursor.manual
+	# 	hidden_effect = {
+	# 		country_event = {
+	# 			id = BA_Precursor.0153
+	# 		}
+	# 	}
+	# }
+	# 进行交易
 	option = {
 		name = BA_Precursor.trade
 		hidden_effect = {
 			country_event = {
 				id = BA_Precursor.0160
 			}
-		}
-	}
-	#聊天
-	option = {
-		name = BA_Precursor.chat
-		hidden_effect = {
-			# country_event = {
-			# 	id = BA_Precursor.0153
-			# }
 		}
 	}
 }
@@ -793,22 +799,22 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_Window"
 	picture_event_data = {
-		portrait = BA_leader_Seia_pr
+		portrait = event_target:BA_Precursor_country
 		room = BA_01_room
 	}
 	title = BA_Precursor.manual.title
 	desc = BA_Precursor.manual.desc
-	#退出
+	# 退出
 	option = {
 		name = BA_Precursor.exit
 		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_Precursor.0152
+			}
+		}
 	}
-	#说明
-	option = {
-		name = BA_Precursor.manual
-		is_dialog_only = yes
-		response_text = BA_Precursor.manual.re
-	}
+	# 说明
 }
 
 country_event = {
@@ -817,7 +823,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_Window"
 	picture_event_data = {
-		portrait = BA_leader_Seia_pr
+		portrait = event_target:BA_Precursor_country
 		room = BA_01_room
 	}
 	title = BA_Precursor.trade.title
@@ -826,32 +832,23 @@ country_event = {
 	option = {
 		name = BA_Precursor.exit
 		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_Precursor.0152
+			}
+		}
 	}
-	#获得点数
-	#虫洞交易
-	#飞船交易
-	#
-}
-
-country_event = {
-	id = BA_Precursor.0190
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_Window"
-	picture_event_data = {
-		portrait = BA_leader_Seia_pr
-		room = BA_01_room
-	}
-	title = BA_Precursor.chat.title
-	desc = BA_Precursor.trade.desc
-	#退出
 	option = {
-		name = BA_Precursor.exit
-		default_hide_option = yes
+		name = BA_Precursor.trade.manual
+		hidden_effect = {
+			country_event = {
+				id = BA_Precursor.0161
+			}
+		}
 	}
-	#获得点数
-	#虫洞交易
-	#飞船交易
+	# 获得点数
+	# 虫洞交易
+	# 飞船交易
 	#
 }
 
