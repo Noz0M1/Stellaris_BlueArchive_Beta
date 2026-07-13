@@ -136,9 +136,14 @@ country_event = {
 			set_country_flag = BA_Omnia_Vanitas_under_guise
 		}
 		#失落帝国相关
+		set_country_flag = BA_Angel24_locked
 		set_variable = {
 			which = BA_Precursor_coop_score
 			value = 1
+		}
+		set_variable = {
+			which = BA_Precursor_coop_claimed
+			value = 0
 		}
 		#内阁相关
 		unlock_council_selection = yes
@@ -4621,36 +4626,7 @@ country_event = {
 	}
 }
 
-#先驱者交易
-country_event = {
-	id = BA_Shittem.9992
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		is_ai = no
-		has_authority = auth_kivotos
-		has_country_flag = BA_Gematria_contacted
-	}
-	immediate = {
-		#存储未用额度
-		change_variable = {
-			which = BA_Precursor_stockpile
-			value = BA_Precursor_mounthly
-		}
-		if = {
-			limit = {
-				check_variable = {
-					which = BA_Precursor_stockpile
-					value > BA_Precursor_limit
-				}
-			}
-			set_variable = {
-				which = BA_Precursor_stockpile
-				value = BA_Precursor_limit
-			}
-		}
-	}
-}
+
 
 #####
 country_event = {

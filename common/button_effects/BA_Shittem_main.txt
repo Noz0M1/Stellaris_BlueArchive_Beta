@@ -1,11 +1,17 @@
 button_effect_BA_angel_24 = {
 	allow = {
-		always = yes
+		custom_tooltip = {
+			fail_text = Angel24_locked
+			NOT = {
+				has_country_flag = BA_Angel24_locked
+			}
+		}
 	}
 	potential = {
 		always = yes
 	}
 	effect = {
+		custom_tooltip = Angel24_tip
 		hidden_effect = {
 			from = {
 				country_event = {
@@ -16,7 +22,7 @@ button_effect_BA_angel_24 = {
 	}
 }
 
-button_effect_BA_communication = {
+button_effect_BA_leader = {
 	allow = {
 		always = yes
 	}
@@ -24,6 +30,7 @@ button_effect_BA_communication = {
 		always = yes
 	}
 	effect = {
+		custom_tooltip = Leader_tip
 		hidden_effect = {
 			from = {
 				country_event = {
@@ -43,6 +50,7 @@ button_effect_BA_school_idea = {
 		always = yes
 	}
 	effect = {
+		custom_tooltip = Civic_tip
 		hidden_effect = {
 			from = {
 				country_event = {
@@ -63,6 +71,7 @@ button_effect_BA_community_center = {
 	effect = {
 		hidden_effect = {
 			from = {
+				custom_tooltip = Club_tip
 				#临时
 				country_event = {
 					id = BA_club.0051
@@ -92,6 +101,7 @@ button_effect_BA_entrust = {
 		always = yes
 	}
 	effect = {
+		custom_tooltip = Commission_tip
 		hidden_effect = {
 			from = {
 				country_event = {

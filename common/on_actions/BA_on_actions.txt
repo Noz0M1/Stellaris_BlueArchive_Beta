@@ -46,8 +46,7 @@ on_late_game_pulse = {
 on_monthly_pulse_country = {
 	events = {
 		#BA_Precursor.0002
-		#BA_Shittem.9990		#月产出计数
-		#BA_Shittem.9992		#先驱者通讯月检
+		BA_Precursor.0200 #合作量：月度数据交换
 		BA_Shittem.4000 #学园理念月检
 		BA_Easter_egg.9999 #彩蛋月检
 	}
@@ -102,6 +101,15 @@ on_post_communications_established = {
 	events = {
 		BA_origin.1453 #阿里乌斯 面纱之下
 		BA_origin.1454 #阿里乌斯 面纱之下
+	}
+}
+
+# Triggered when two empires discover each other.
+# This = Empire 1
+# From = Empire 2
+on_first_contact = {
+	events = {
+		BA_Precursor.0204 #合作量：首次接触普通帝国
 	}
 }
 
@@ -271,6 +279,7 @@ on_ship_disabled = {
 on_system_survey_ship = {
 	events = {
 		BA_Precursor.0057 #跳线点考古遗址
+		BA_Precursor.0201 #合作量：调查星系
 	}
 }
 
@@ -282,7 +291,6 @@ on_entering_system_first_time = {
 		BA_Precursor.0051 #通讯接口
 		BA_Precursor.0052 #失落帝国境内
 		BA_Precursor.0054 #失落帝国母星
-		BA_Precursor.0060 #待售信息计数
 	}
 }
 
@@ -296,12 +304,13 @@ on_entering_system = {
 	}
 }
 
-# A ship is done surveying the last unsurveyed planet in a system
-# Scope = ship
-# From = system
-on_system_survey_ship = {
+
+# This = Ship
+# From = Planet
+anomaly_success = {
 	events = {
-		BA_Precursor.0060
+
+		BA_Precursor.0202 #合作量：完成异常研究
 	}
 }
 
@@ -316,6 +325,14 @@ on_fleet_enter_orbit = {
 # This = Ship
 on_jump_drive = {
 	events = {
+	}
+}
+
+# This = Fleet (science vessel)
+# From = Archaeological Site
+on_arch_site_finished = {
+	events = {
+		BA_Precursor.0203 #合作量：完成考古遗址
 	}
 }
 
