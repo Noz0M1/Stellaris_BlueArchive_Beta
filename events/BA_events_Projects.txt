@@ -323,6 +323,10 @@ country_event = {
                         building = building_BA_Schale_office
                     }
                     validate_planet_buildings_and_districts = yes
+					colony_event = {
+						id = BA_Project.0017
+						years = 3
+					}
                 }
 			}
 
@@ -331,7 +335,6 @@ country_event = {
 		end_event_chain = BA_Project_Cradle_chain
 		destroy_situation = from
 		hidden_effect = {
-			#允许0017触发
 			set_country_flag = BA_Project_Cradle_B_launched
 		}
 	}

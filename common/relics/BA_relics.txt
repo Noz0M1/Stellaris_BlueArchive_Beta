@@ -42,3 +42,62 @@
 # 	}
 # }
 #
+
+# 谜之种
+# 说明：以下事项暂时全部留空，仅保留注释占位；需要实装时取消对应字段注释并填写内容。
+r_BA_mysterious_seed = {
+	# activation_duration = @triumph_duration
+	# TODO：填写遗珍启用后的持续时间。
+
+	# portrait = ""
+	# TODO：填写遗珍图标，例如 "GFX_relic_xxx"。
+
+	# sound = ""
+	# TODO：填写遗珍启用音效。
+
+	# can_be_stolen = yes
+	# TODO：填写是否可被夺取；不写时原版默认可夺取。
+
+	# resources = {
+	# 	category = relics
+	# 	cost = {
+	# 		# TODO：填写启用消耗，例如 unity = @activation_cost。
+	# 	}
+	# 	produces = {
+	# 		# TODO：填写持有遗珍时的资源产出。
+	# 	}
+	# }
+
+	# triggered_country_modifier = {
+	# 	potential = {
+	# 		# TODO：填写被动效果生效条件。
+	# 	}
+	# 	# TODO：填写持有遗珍时的被动修正。
+	# }
+
+	# score = 0
+	# TODO：填写拥有该遗珍提供的胜利分数。
+
+	# active_effect = {
+	# 	# TODO：填写启用遗珍时触发的效果。
+	# 	# custom_tooltip = relic_triumph_cooldown
+	# 	# hidden_effect = {
+	# 	# 	add_modifier = {
+	# 	# 		modifier = "relic_activation_cooldown"
+	# 	# 		days = @triumph_duration
+	# 	# 	}
+	# 	# }
+	# }
+
+	# possible = {
+	# 	# TODO：填写遗珍启用条件。
+	# 	# inline_script = {
+	# 	# 	script = relics/activation_checks
+	# 	# 	RELIC = r_BA_mysterious_seed
+	# 	# }
+	# }
+
+	# ai_weight = {
+	# 	# TODO：填写 AI 启用权重。
+	# }
+}

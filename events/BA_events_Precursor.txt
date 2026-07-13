@@ -452,21 +452,20 @@ ship_event = {
 	}
 }
 
-# 进入一个新星系，+1数据
+# 完成调查新星系，+1数据
 ship_event = {
 	id = BA_Precursor.0060
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
 		owner = {
-			is_ai = no
 			has_authority = auth_kivotos
 		}
 	}
 	immediate = {
 		owner = {
 			change_variable = {
-				which = BA_Precursor_system_info
+				which = BA_Precursor_coop_score
 				value = 1
 			}
 		}
@@ -773,18 +772,10 @@ country_event = {
 		name = BA_Precursor.exit
 		default_hide_option = yes
 	}
-	# 说明
-	# option = {
-	# 	name = BA_Precursor.manual
-	# 	hidden_effect = {
-	# 		country_event = {
-	# 			id = BA_Precursor.0153
-	# 		}
-	# 	}
-	# }
-	# 进行交易
+
+	# 领取合作报酬
 	option = {
-		name = BA_Precursor.trade
+		name = BA_Precursor.coop
 		hidden_effect = {
 			country_event = {
 				id = BA_Precursor.0160
@@ -794,7 +785,7 @@ country_event = {
 }
 
 country_event = {
-	id = BA_Precursor.0153
+	id = BA_Precursor.0160
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_Window"
@@ -817,40 +808,6 @@ country_event = {
 	# 说明
 }
 
-country_event = {
-	id = BA_Precursor.0160
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_Window"
-	picture_event_data = {
-		portrait = event_target:BA_Precursor_country
-		room = BA_01_room
-	}
-	title = BA_Precursor.trade.title
-	desc = BA_Precursor.trade.desc
-	#退出
-	option = {
-		name = BA_Precursor.exit
-		default_hide_option = yes
-		hidden_effect = {
-			country_event = {
-				id = BA_Precursor.0152
-			}
-		}
-	}
-	option = {
-		name = BA_Precursor.trade.manual
-		hidden_effect = {
-			country_event = {
-				id = BA_Precursor.0161
-			}
-		}
-	}
-	# 获得点数
-	# 虫洞交易
-	# 飞船交易
-	#
-}
 
 ######################
 ###     考古遗址
