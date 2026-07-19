@@ -748,14 +748,11 @@ country_event = {
 	id = BA_Precursor.0160
 	is_triggered_only = yes
 	diplomatic = yes
-	custom_gui = "BA_Window"
-	picture_event_data = {
-		portrait = event_target:BA_Precursor_country
-		room = BA_01_room
-	}
+	custom_gui = BA_Precursor_Reward_window
+	custom_gui_option = BA_Precursor_Reward_option
 	title = BA_Precursor.coop_reward
 	desc = BA_Precursor.coop_reward.desc
-	# 退出
+	# 退出兜底：当所有奖励均已领取时，保证事件仍有有效选项。
 	option = {
 		name = BA_Precursor.exit
 		default_hide_option = yes
@@ -765,59 +762,96 @@ country_event = {
 			}
 		}
 	}
-	### 每一档都有资源奖励。除非只有这个，否则不写出。
 	# 1档：资源
 	option = {
 		name = BA_Precursor.coop_reward.1
+		custom_tooltip = BA_Precursor.coop_reward.1.tip
+		is_dialog_only = yes
+		response_text = BA_Precursor.coop_reward.1.re
 		trigger = {
 			check_variable = {
-				which = BA_Precursor_coop_score
-				value >= BA_Precursor_coop_reward_1
-			}
-			check_variable = {
 				which = BA_Precursor_coop_claimed
-				value < BA_Precursor_coop_reward_1
+				value < @BA_Precursor_coop_reward_1
 			}
 		}
+		allow = {
+			# 一档不检测合作量，直接领取
+			custom_tooltip = {
+				fail_text = BA_Precursor.coop_reward.nochoice
+				OR = {
+					has_country_flag = BA_Precursor_reward_choice_base
+					has_country_flag = BA_Precursor_reward_choice_tech
+					has_country_flag = BA_Precursor_reward_choice_industry
+					has_country_flag = BA_Precursor_reward_choice_trade
+				}
+			}
+		}
+		BA_Precursor_reward_resource = yes
 		hidden_effect = {
 			set_variable = {
 				which = BA_Precursor_coop_claimed
-				value = BA_Precursor_coop_reward_1
+				value = @BA_Precursor_coop_reward_1
 			}
-		}
-		country_event = {
-			id = BA_Precursor.0161
 		}
 	}
 	# 2档：开放“天使24”便利店
 	option = {
 		name = BA_Precursor.coop_reward.2
+		custom_tooltip = BA_Precursor.coop_reward.2.tip
+		is_dialog_only = yes
+		response_text = BA_Precursor.coop_reward.2.re
 		trigger = {
 			check_variable = {
-				which = BA_Precursor_coop_score
-				value >= BA_Precursor_coop_reward_2
-			}
-			check_variable = {
 				which = BA_Precursor_coop_claimed
-				value < BA_Precursor_coop_reward_2
+				value < @BA_Precursor_coop_reward_2
 			}
 		}
 		allow = {
-			custom_tooltip = {
-				fail_text = BA_Precursor.coop_reward.unclamed
-				check_variable = {
-					which = BA_Precursor_coop_claimed
-					value >= BA_Precursor_coop_reward_1
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_Precursor_coop_score
+						value < @BA_Precursor_coop_reward_2
+					}
+				}
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.notreach
+					always = no
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = BA_Precursor_coop_claimed
+						value < @BA_Precursor_coop_reward_1
+					}
+				}
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.unclamed
+					always = no
+				}
+			}
+			else = {
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.nochoice
+					OR = {
+						has_country_flag = BA_Precursor_reward_choice_base
+						has_country_flag = BA_Precursor_reward_choice_tech
+						has_country_flag = BA_Precursor_reward_choice_industry
+						has_country_flag = BA_Precursor_reward_choice_trade
+					}
 				}
 			}
 		}
+		BA_Precursor_reward_resource = yes
 		hidden_effect = {
+			remove_country_flag = BA_Angel24_locked
 			set_variable = {
 				which = BA_Precursor_coop_claimed
-				value = BA_Precursor_coop_reward_2
+				value = @BA_Precursor_coop_reward_2
 			}
 		}
-		remove_country_flag = BA_Angel24_locked
+		set_variable = {which = BA_Precursor_coop_score value = 1000000}
 	}
 	# 3档：更新领袖储备-先驱者
 	# 4档：暗物质浓缩机科技
@@ -828,16 +862,6 @@ country_event = {
 	# 9档：更新领袖储备-先驱者
 	# 10档：T7舰船部件科技
 	# 循环档：资源
-}
-
-# 资源奖励：造一个UI用
-country_event = {
-	id = BA_Precursor.0161
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_Precursor_Reward_window"
-	title = BA_Precursor.coop_reward
-	desc = BA_Precursor.coop_reward.desc
 }
 
 ### 合作量累积

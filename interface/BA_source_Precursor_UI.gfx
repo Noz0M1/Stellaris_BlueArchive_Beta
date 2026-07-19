@@ -1,14 +1,50 @@
+### 先驱者会话界面
 spriteTypes = {
+	### 通用
 	spriteType = {
-		name = "GFX_BA_Precursor_reward_frame"
-		textureFile = gfx/Shittem_UI/Precursor/Reward/frame.dds
+		name = "GFX_BA_UI_Portrait_Seia_pr"
+		textureFile = gfx/Shittem_UI/Precursor/UI_Portrait_Seia_pr.dds
+	}
+	spriteType = {
+		name = "GFX_BA_Precursor_frame"
+		textureFile = gfx/Shittem_UI/Precursor/frame.dds
+	}
+	spriteType = {
+		name = "GFX_BA_Precursor_topbar"
+		textureFile = gfx/Shittem_UI/Precursor/topbar.dds
 	}
 	spriteType = {
 		name = "GFX_BA_Precursor_reward_dialog_background"
-		textureFile = gfx/Shittem_UI/Precursor/Reward/dialog_background.dds
+		textureFile = gfx/Shittem_UI/Precursor/dialog_background.dds
 	}
+	### 主菜单
+	### 奖励界面
 	spriteType = {
 		name = "GFX_BA_Precursor_reward_option"
 		textureFile = gfx/Shittem_UI/Precursor/Reward/option.dds
+	}
+	spriteType = {
+		name = "GFX_BA_Precursor_reward_choice_bg_on"
+		textureFile = gfx/Shittem_UI/Precursor/Reward/choice_bg_on.dds
+	}
+	spriteType = {
+		name = "GFX_BA_Precursor_reward_choice_bg_off"
+		textureFile = gfx/Shittem_UI/Precursor/Reward/choice_bg_off.dds
+	}
+	spriteType = {
+		name = "GFX_BA_Precursor_reward_choice_base"
+		textureFile = gfx/Shittem_UI/Precursor/Reward/choice_base.dds
+	}
+	spriteType = {
+		name = "GFX_BA_Precursor_reward_choice_tech"
+		textureFile = gfx/Shittem_UI/Precursor/Reward/choice_tech.dds
+	}
+	spriteType = {
+		name = "GFX_BA_Precursor_reward_choice_industry"
+		textureFile = gfx/Shittem_UI/Precursor/Reward/choice_industry.dds
+	}
+	spriteType = {
+		name = "GFX_BA_Precursor_reward_choice_trade"
+		textureFile = gfx/Shittem_UI/Precursor/Reward/choice_trade.dds
 	}
 }

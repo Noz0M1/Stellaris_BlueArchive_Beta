@@ -1,151 +1,378 @@
 guiTypes = {
-	# BA_Precursor.0161 reward choice entry.
+	# reward choice entry.
 	containerWindowType = {
 		name = "BA_Precursor_Reward_option"
-		position = { x = 0 y = 0 }
-		size = { width = 216 height = 62 }
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 432
+			height = 62
+		}
 		moveable = no
-
 		buttonType = {
 			name = "option_button"
-			position = { x = 0 y = 0 }
+			position = {
+				x = 0
+				y = 0
+			}
 			quadTextureSprite = "GFX_BA_Precursor_reward_option"
-			font = "cg_16b"
+			font = "malgun_goth_24"
 			text = "OPTION_TEXT"
 			clicksound = "confirm_click"
 		}
-
 		OverlappingElementsBoxType = {
 			name = "trigger_icons"
-			position = { x = 4 y = 12 }
-			size = { x = 65 y = 28 }
+			position = {
+				x = 8
+				y = 12
+			}
+			size = {
+				x = 65
+				y = 28
+			}
 		}
-
 		OverlappingElementsBoxType = {
 			name = "effect_icons"
-			position = { x = 198 y = 12 }
-			size = { x = 72 y = 28 }
+			position = {
+				x = 356
+				y = 12
+			}
+			size = {
+				x = 72
+				y = 28
+			}
 			format = right
 		}
 	}
-
-	# BA_Precursor.0161 reward selection window.
+	# reward selection window.
 	containerWindowType = {
 		name = "BA_Precursor_Reward_window"
 		orientation = center
 		origo = center
-		position = { x = 0 y = 0 }
-		size = { width = 1200 height = 650 }
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 1200
+			height = 650
+		}
 		moveable = yes
-
 		background = {
 			name = "background"
-			quadTextureSprite = "GFX_BA_Precursor_reward_frame"
+			quadTextureSprite = "GFX_BA_Precursor_frame"
 			alwaysTransparent = yes
 		}
-
+		# Static Seia portrait. 44 + 576 = 620, flush with the top edge of
+		# the 30 px bottom frame.
+		iconType = {
+			name = "BA_Precursor_reward_portrait"
+			position = {
+				x = 160
+				y = 44
+			}
+			quadTextureSprite = "GFX_BA_UI_Portrait_Seia_pr"
+			alwaysTransparent = yes
+		}
+		# Half-scale precursor topbar.
+		iconType = {
+			name = "BA_Precursor_reward_topbar"
+			position = {
+				x = 92
+				y = 28
+			}
+			quadTextureSprite = "GFX_BA_Precursor_topbar"
+			scale = 0.5
+			alwaysTransparent = yes
+		}
 		# Left-bottom dialogue panel.
 		buttonType = {
 			name = "alien_message_background"
-			position = { x = 74 y = 448 }
-			size = { x = 455 y = 159 }
+			position = {
+				x = 74
+				y = 448
+			}
+			size = {
+				x = 455
+				y = 159
+			}
 			quadTextureSprite = "GFX_BA_Precursor_reward_dialog_background"
 			alwaysTransparent = yes
 		}
-
 		instantTextBoxType = {
 			name = "alien_message"
 			font = "malgun_goth_24"
-			position = { x = 94 y = 467 }
+			position = {
+				x = 94
+				y = 467
+			}
 			maxWidth = 415
 			maxHeight = 121
 			format = left
 			scrollbartype = "standardtext_slider"
 		}
-
-		# Event choices: 3 * 52 px buttons with 10 px vertical spacing.
+		# Resource choose button
 		containerWindowType = {
-			name = "EVENT_DIPLO"
-			position = { x = 0 y = 0 }
-			size = { width = 1200 height = 650 }
+			name = BA_Precursor_reward_choose
+			position = {
+				x = 648
+				y = 100
+			}
+			size = {
+				width = 432
+				height = 69
+			}
 			moveable = no
-
-			instantTextBoxType = {
-				name = "action_title"
-				font = "malgun_goth_24"
-				position = { x = -10000 y = -10000 }
-				maxWidth = 1
-				maxHeight = 1
+			effectButtonType = {
+				name = "BA_Precursor_reward_choice_base_bg_off"
+				position = {
+					x = 20
+					y = 0
+				}
+				quadTextureSprite = "GFX_BA_Precursor_reward_choice_bg_off"
+				scale = 0.25
+				effect = button_effect_BA_Precursor_reward_choice_base_bg_off
+				clicksound = "confirm_click"
+			}
+			effectButtonType = {
+				name = "BA_Precursor_reward_choice_base_bg_on"
+				position = {
+					x = 20
+					y = 0
+				}
+				quadTextureSprite = "GFX_BA_Precursor_reward_choice_bg_on"
+				scale = 0.25
+				effect = button_effect_BA_Precursor_reward_choice_base_bg_on
+				clicksound = "confirm_click"
+			}
+			effectButtonType = {
+				name = "BA_Precursor_reward_choice_tech_bg_off"
+				position = {
+					x = 128
+					y = 0
+				}
+				quadTextureSprite = "GFX_BA_Precursor_reward_choice_bg_off"
+				scale = 0.25
+				effect = button_effect_BA_Precursor_reward_choice_tech_bg_off
+				clicksound = "confirm_click"
+			}
+			effectButtonType = {
+				name = "BA_Precursor_reward_choice_tech_bg_on"
+				position = {
+					x = 128
+					y = 0
+				}
+				quadTextureSprite = "GFX_BA_Precursor_reward_choice_bg_on"
+				scale = 0.25
+				effect = button_effect_BA_Precursor_reward_choice_tech_bg_on
+				clicksound = "confirm_click"
+			}
+			effectButtonType = {
+				name = "BA_Precursor_reward_choice_industry_bg_off"
+				position = {
+					x = 236
+					y = 0
+				}
+				quadTextureSprite = "GFX_BA_Precursor_reward_choice_bg_off"
+				scale = 0.25
+				effect = button_effect_BA_Precursor_reward_choice_industry_bg_off
+				clicksound = "confirm_click"
+			}
+			effectButtonType = {
+				name = "BA_Precursor_reward_choice_industry_bg_on"
+				position = {
+					x = 236
+					y = 0
+				}
+				quadTextureSprite = "GFX_BA_Precursor_reward_choice_bg_on"
+				scale = 0.25
+				effect = button_effect_BA_Precursor_reward_choice_industry_bg_on
+				clicksound = "confirm_click"
+			}
+			effectButtonType = {
+				name = "BA_Precursor_reward_choice_trade_bg_off"
+				position = {
+					x = 344
+					y = 0
+				}
+				quadTextureSprite = "GFX_BA_Precursor_reward_choice_bg_off"
+				scale = 0.25
+				effect = button_effect_BA_Precursor_reward_choice_trade_bg_off
+				clicksound = "confirm_click"
+			}
+			effectButtonType = {
+				name = "BA_Precursor_reward_choice_trade_bg_on"
+				position = {
+					x = 344
+					y = 0
+				}
+				quadTextureSprite = "GFX_BA_Precursor_reward_choice_bg_on"
+				scale = 0.25
+				effect = button_effect_BA_Precursor_reward_choice_trade_bg_on
+				clicksound = "confirm_click"
+			}
+			# Category icons are visual overlays; clicks pass through to the
+			# currently visible on/off background button.
+			iconType = {
+				name = "BA_Precursor_reward_choice_base_icon"
+				position = {
+					x = 26
+					y = 8
+				}
+				quadTextureSprite = "GFX_BA_Precursor_reward_choice_base"
+				scale = 0.32
 				alwaysTransparent = yes
 			}
-
+			iconType = {
+				name = "BA_Precursor_reward_choice_tech_icon"
+				position = {
+					x = 135
+					y = 6
+				}
+				quadTextureSprite = "GFX_BA_Precursor_reward_choice_tech"
+				scale = 0.32
+				alwaysTransparent = yes
+			}
+			iconType = {
+				name = "BA_Precursor_reward_choice_industry_icon"
+				position = {
+					x = 241
+					y = 8
+				}
+				quadTextureSprite = "GFX_BA_Precursor_reward_choice_industry"
+				scale = 0.32
+				alwaysTransparent = yes
+			}
+			iconType = {
+				name = "BA_Precursor_reward_choice_trade_icon"
+				position = {
+					x = 349
+					y = 8
+				}
+				quadTextureSprite = "GFX_BA_Precursor_reward_choice_trade"
+				scale = 0.32
+				alwaysTransparent = yes
+			}
+		}
+		# Compact event choices
+		containerWindowType = {
+			name = "EVENT_DIPLO"
+			position = {
+				x = 0
+				y = 0
+			}
+			size = {
+				width = 1200
+				height = 650
+			}
+			moveable = no
+			instantTextBoxType = {
+				name = "action_title"
+				font = "large_title_font"
+				orientation = "UPPER_LEFT"
+				position = {
+					x = 105
+					y = 32
+				}
+				maxWidth = 650
+				maxHeight = 22
+				format = left
+				alwaysTransparent = yes
+			}
 			instantTextBoxType = {
 				name = "action_desc"
 				font = "malgun_goth_24"
-				position = { x = -10000 y = -10000 }
+				position = {
+					x = -10000
+					y = -10000
+				}
 				maxWidth = 1
 				maxHeight = 1
 				alwaysTransparent = yes
 			}
-
 			listboxType = {
 				name = "option_list"
-				position = { x = 856 y = 214 }
-				size = { x = 216 y = 186 }
+				position = {
+					x = 648
+					y = 180
+				}
+				size = {
+					x = 432
+					y = 186
+				}
 				spacing = 0
-				borderSize = { x = 0 y = 0 }
+				borderSize = {
+					x = 0
+					y = 0
+				}
 				orientation = UPPER_LEFT
 			}
 		}
-
 		# Same close button used by BA_UI_Shittem.gui.
 		buttonType = {
 			name = "close"
 			quadTextureSprite = "GFX_Mainpage_X"
-			position = { x = -132 y = 30 }
+			position = {
+				x = -130
+				y = 30
+			}
 			orientation = "UPPER_RIGHT"
 			shortcut = "ESCAPE"
 			clicksound = "back_click"
 			actionShortcut = "cancel"
 		}
-
 		# Required diplomatic-event widgets that are not used by this layout.
 		buttonType = {
 			name = "focus_button"
-			position = { x = -10000 y = -10000 }
+			position = {
+				x = -10000
+				y = -10000
+			}
 			spriteType = "GFX_fleetview_focus"
 			buttonFont = "cg_16b"
 		}
-
 		instantTextBoxType = {
 			name = "heading"
 			font = "malgun_goth_24"
-			position = { x = -10000 y = -10000 }
+			position = {
+				x = -10000
+				y = -10000
+			}
 			maxWidth = 1
 			maxHeight = 1
 		}
-
 		buttonType = {
 			name = "tts_button"
-			position = { x = -10000 y = -10000 }
+			position = {
+				x = -10000
+				y = -10000
+			}
 			spriteType = "GFX_button_tts_start"
 			buttonFont = "cg_16b"
 		}
-
 		buttonType = {
 			name = "confirm_button"
-			position = { x = -10000 y = -10000 }
+			position = {
+				x = -10000
+				y = -10000
+			}
 			quadTextureSprite = "GFX_standard_button_142_34_button"
 			font = "cg_16b"
 			text = "MESSAGE_OK"
 		}
-
 		containerWindowType = {
 			name = "portrait_background"
-			position = { x = -10000 y = -10000 }
-			size = { width = 0 height = 0 }
+			position = {
+				x = -10000
+				y = -10000
+			}
+			size = {
+				width = 0
+				height = 0
+			}
 			clipping = yes
-
 			iconType = {
 				name = "event_picture"
 				spriteType = "GFX_diplomacy_portrait_frame"
@@ -155,15 +382,19 @@ guiTypes = {
 				spriteType = "GFX_portrait_character"
 			}
 		}
-
 		# Required diplomatic-event compatibility widget. Kept hidden so a
 		# static iconType portrait can be added without dynamic portrait overlap.
 		containerWindowType = {
 			name = "portrait"
-			position = { x = -10000 y = -10000 }
-			size = { width = 0 height = 0 }
+			position = {
+				x = -10000
+				y = -10000
+			}
+			size = {
+				width = 0
+				height = 0
+			}
 			clipping = yes
-
 			iconType = {
 				name = "portrait"
 				spriteType = "GFX_portrait_gamesetup_mask"
@@ -181,55 +412,81 @@ guiTypes = {
 				spriteType = "GFX_diplomacy_portrait_frame"
 			}
 		}
-
 		iconType = {
 			name = "hex_bg"
 			spriteType = "GFX_hex_bg"
-			position = { x = -10000 y = -10000 }
+			position = {
+				x = -10000
+				y = -10000
+			}
 		}
 		iconType = {
 			name = "empire_header_line"
 			quadTextureSprite = "GFX_line_long"
-			position = { x = -10000 y = -10000 }
+			position = {
+				x = -10000
+				y = -10000
+			}
 		}
 		iconType = {
 			name = "empire_info_bg"
 			spriteType = "GFX_diplomacy_dark_fade_bg"
-			position = { x = -10000 y = -10000 }
+			position = {
+				x = -10000
+				y = -10000
+			}
 		}
 		instantTextBoxType = {
 			name = "empire_name"
 			font = "malgun_goth_24"
-			position = { x = -10000 y = -10000 }
+			position = {
+				x = -10000
+				y = -10000
+			}
 		}
 		instantTextBoxType = {
 			name = "empire_government_type"
 			font = "cg_16b"
-			position = { x = -10000 y = -10000 }
+			position = {
+				x = -10000
+				y = -10000
+			}
 		}
 		instantTextBoxType = {
 			name = "empire_personality_type"
 			font = "cg_16b"
-			position = { x = -10000 y = -10000 }
+			position = {
+				x = -10000
+				y = -10000
+			}
 		}
 		OverlappingElementsBoxType = {
 			name = "empire_ethics_icons"
-			position = { x = -10000 y = -10000 }
-			size = { x = 1 y = 1 }
+			position = {
+				x = -10000
+				y = -10000
+			}
+			size = {
+				x = 1
+				y = 1
+			}
 		}
 		buttonType = {
 			name = "empire_flag"
 			quadTextureSprite = "GFX_empire_flag_128"
-			position = { x = -10000 y = -10000 }
+			position = {
+				x = -10000
+				y = -10000
+			}
 		}
-
 		containerWindowType = {
 			name = "leader_details"
-			position = { x = -10000 y = -10000 }
-
+			position = {
+				x = -10000
+				y = -10000
+			}
 			containerWindowType = {
 				name = "leader_traits_box"
-
 				background = {
 					name = "ethics_bg"
 					spriteType = "GFX_tiles_dark_area_cut_8"
@@ -255,17 +512,20 @@ guiTypes = {
 				font = "cg_16b"
 			}
 		}
-
 		containerWindowType = {
 			name = "opinion_window"
-			position = { x = -10000 y = -10000 }
-			size = { width = 1 height = 1 }
-
+			position = {
+				x = -10000
+				y = -10000
+			}
+			size = {
+				width = 1
+				height = 1
+			}
 			background = {
 				name = "opinion_bg"
 				spriteType = "GFX_tiled_window_transparent"
 			}
-
 			iconType = {
 				name = "their_opinion_icon"
 				spriteType = "GFX_diplomacy_opinion"
