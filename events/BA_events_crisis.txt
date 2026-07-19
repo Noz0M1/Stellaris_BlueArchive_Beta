@@ -682,7 +682,7 @@ country_event = {
 		event_target:BA_Precursor_contactor = {
 			create_leader = {
 				class = commander
-				species = owner_main_species
+				species = event_target:BA_leader_species
 				gender = female
 				name = NAME_Shigure
 				skill = 10
@@ -996,7 +996,7 @@ fleet_event = {
 			wait = 60
 			find_closest_system = {
 				trigger = {
-					id = ArisMid.system.0001
+					id = ArisMid.system.0001.b
 					has_star_flag = BA_D_ENTRANCE
 					NOT = {
 						has_star_flag = BA_mid_Aris_visited
@@ -1006,7 +1006,7 @@ fleet_event = {
 					move_to = this
 					find_closest_planet = {
 						trigger = {
-							id = ArisMid.planet.0001
+							id = ArisMid.planet.0001.b
 							has_planet_flag = BA_D_system_base
 						}
 						found_planet = {
@@ -1014,7 +1014,7 @@ fleet_event = {
 						}
 					}
 					effect = {
-						id = ArisMid.effect.0002
+						id = ArisMid.effect.0002.b
 						set_star_flag = BA_mid_Aris_visited
 					}
 				}
@@ -1035,7 +1035,7 @@ fleet_event = {
 				}
 			}
 			effect = {
-				id = ArisMid.effect.0003
+				id = ArisMid.effect.0003.b
 				event_target:BA_Precursors_Aris_country = {
 					every_owned_fleet = {
 						limit = {
@@ -1072,7 +1072,7 @@ fleet_event = {
 					move_to = this
 					repeat = {
 						while = {
-							id = Arismid.system.0004 #检测有无爱丽丝舰队
+							id = Arismid.system.0004.b #检测有无爱丽丝舰队
 							any_fleet_in_system = {
 								is_owned_by = event_target:BA_Precursors_Aris_country
 								NOT = {
@@ -2647,7 +2647,7 @@ fleet_event = {
 		queue_actions = {
 			find_closest_system = {
 				trigger = {
-					id = Arismid.system.0004 #检测有无爱丽丝舰队
+					id = Arismid.system.0004.c #检测有无爱丽丝舰队
 					any_fleet_in_system = {
 						is_owned_by = event_target:BA_Precursors_Aris_country
 						NOT = {
@@ -2659,7 +2659,7 @@ fleet_event = {
 					move_to = this
 					repeat = {
 						while = {
-							id = Arismid.system.0004 #检测有无爱丽丝舰队
+							id = Arismid.system.0004.d #检测有无爱丽丝舰队
 							any_fleet_in_system = {
 								is_owned_by = event_target:BA_Precursors_Aris_country
 								NOT = {
@@ -2669,7 +2669,7 @@ fleet_event = {
 						}
 						find_random_fleet = {
 							trigger = {
-								id = Arismid.fleet.0001 #检测爱丽丝舰队
+								id = Arismid.fleet.0001.b #检测爱丽丝舰队
 								is_owned_by = event_target:BA_Precursors_Aris_country
 								NOT = {
 									has_fleet_flag = BA_mid_Aris_king
@@ -2679,7 +2679,7 @@ fleet_event = {
 								move_to = this
 								wait = 30
 								effect = {
-									id = ArisMid.effect.0006 #解除锁定，摧毁舰队
+									id = ArisMid.effect.0006.b #解除锁定，摧毁舰队
 									set_event_locked = no
 									destroy_fleet = this
 								}
@@ -2687,7 +2687,7 @@ fleet_event = {
 						}
 					}
 					effect = {
-						id = ArisMid.effect.0007 #去下一个星系
+						id = ArisMid.effect.0007.b #去下一个星系
 						root = {
 							fleet_event = {
 								id = BA_crisis.7878
@@ -2698,7 +2698,7 @@ fleet_event = {
 				failed = {
 					move_to = event_target:BA_mid_Aris_base
 					effect = {
-						id = ArisMid.effect.0006 #解除锁定，摧毁舰队
+						id = ArisMid.effect.0006.c #解除锁定，摧毁舰队
 						event_target:BA_mid_Aris_base = {
 							change_pc = pc_shattered
 						}

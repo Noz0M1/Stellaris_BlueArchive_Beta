@@ -272,7 +272,9 @@ BA_club_station_Game_development_department = {
 		}
 		upkeep = {
 			trigger = {
-				has_policy_flag = club_lv1_spounce
+				owner = {
+					has_policy_flag = club_lv1_spounce
+				}
 			}
 			energy = 20
 		}
@@ -305,7 +307,9 @@ BA_club_station_Game_development_department_ex = {
 		}
 		upkeep = {
 			trigger = {
-				has_policy_flag = club_lv1_spounce
+				owner = {
+					has_policy_flag = club_lv1_spounce
+				}
 			}
 			energy = 20
 		}
@@ -338,7 +342,9 @@ BA_club_station_Engineering_club = {
 		}
 		upkeep = {
 			trigger = {
-				has_policy_flag = club_lv1_spounce
+				owner = {
+					has_policy_flag = club_lv1_spounce
+				}
 			}
 			energy = 20
 		}
@@ -374,7 +380,9 @@ BA_club_station_Veritas = {
 		}
 		upkeep = {
 			trigger = {
-				has_policy_flag = club_lv1_spounce
+				owner = {
+					has_policy_flag = club_lv1_spounce
+				}
 			}
 			energy = 20
 		}
@@ -407,7 +415,9 @@ BA_club_station_Foreclosure_task_force = {
 		}
 		upkeep = {
 			trigger = {
-				has_policy_flag = club_lv1_spounce
+				owner = {
+					has_policy_flag = club_lv1_spounce
+				}
 			}
 			energy = 20
 		}
@@ -446,7 +456,9 @@ BA_club_station_Teaparty = {
 		}
 		upkeep = {
 			trigger = {
-				has_policy_flag = club_lv1_spounce
+				owner = {
+					has_policy_flag = club_lv1_spounce
+				}
 			}
 			energy = 20
 		}
@@ -489,7 +501,9 @@ BA_club_station_Hotspring_development_department = {
 		}
 		upkeep = {
 			trigger = {
-				has_policy_flag = club_lv1_spounce
+				owner = {
+					has_policy_flag = club_lv1_spounce
+				}
 			}
 			energy = 20
 		}
@@ -524,7 +538,9 @@ BA_club_station_Festival_operations_department = {
 		}
 		upkeep = {
 			trigger = {
-				has_policy_flag = club_lv1_spounce
+				owner = {
+					has_policy_flag = club_lv1_spounce
+				}
 			}
 			energy = 20
 		}
@@ -592,7 +608,9 @@ BA_club_station_Xuanwu_promenade = {
 		}
 		upkeep = {
 			trigger = {
-				has_policy_flag = club_lv1_spounce
+				owner = {
+					has_policy_flag = club_lv1_spounce
+				}
 			}
 			energy = 20
 		}
@@ -659,7 +677,9 @@ BA_club_station_Publishing_department = {
 		}
 		upkeep = {
 			trigger = {
-				has_policy_flag = club_lv1_spounce
+				owner = {
+					has_policy_flag = club_lv1_spounce
+				}
 			}
 			energy = 20
 		}
