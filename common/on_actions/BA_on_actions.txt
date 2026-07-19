@@ -318,13 +318,13 @@ on_colonization_started = {
 }
 
 # Scope = Carrier
-on_colonized = {
-	events = {
-		BA_Shittem.3201 #废墟球殖民完成
-		BA_Shittem.4011 #学园理念 阿拜多斯B01
-		BA_Shittem.4041 #学园理念 圣三一C06
-	}
-}
+# on_colonized = {
+# 	events = {
+# 		BA_Shittem.3201 #废墟球殖民完成
+# 		BA_Shittem.4011 #学园理念 阿拜多斯B01
+# 		BA_Shittem.4041 #学园理念 圣三一C06
+# 	}
+# }
 
 # Legacy on_action not present in current vanilla on_actions.
 # Current vanilla equivalent is on_colony_transfer:
