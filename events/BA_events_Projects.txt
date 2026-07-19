@@ -306,8 +306,8 @@ country_event = {
 				change_pc = pc_BA_ruined_planet
 				set_name = namelist_BA_colony_event_002
                 create_colony = {
-                    owner = root
-                    species = owner_main_species
+                    owner = root.owner
+                    species = root.owner_main_species
                     ethos = owner
                 }
                 colony = {
