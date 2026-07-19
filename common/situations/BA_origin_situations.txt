@@ -123,7 +123,12 @@ situation_Kyrie_ruin_research = {
 			custom_tooltip = situation_Kyrie_ruin_research_5_tip
 			on_first_enter = {
 				target = {
-					remove_planet_flag = BA_ruins_happening
+					every_owned_planet = { # 应该只有初始星球触发
+						limit = {
+							has_planet_flag = BA_ruins_happening
+						}
+						remove_planet_flag = BA_ruins_happening
+					}
 				}
 				#停止废墟生成
 				if = {

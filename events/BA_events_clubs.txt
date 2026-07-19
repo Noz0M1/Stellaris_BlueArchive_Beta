@@ -231,7 +231,8 @@ planet_event = {
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
-		from? = {
+		exists = from
+		from = {
 			is_ship_size = BA_club_ship
 		}
 	}
@@ -490,14 +491,6 @@ country_event = {
 				multiplier = BA_club_cap_keystone_cost
 			}
 		}
-		hidden_effect = {
-			#增加容量
-			BA_club_cap_add = yes
-			#计算限制
-			BA_club_cap_recount = yes
-			#计算资源
-			BA_club_resource_recount = yes
-		}
 		add_resource = {
 			consumer_goods = -1
 			multiplier = BA_club_cap_consumer_goods_cost
@@ -510,6 +503,15 @@ country_event = {
 			sr_keystone = -1
 			multiplier = BA_club_cap_keystone_cost
 		}
+		hidden_effect = {
+			#增加容量
+			BA_club_cap_add = yes
+			#计算限制
+			BA_club_cap_recount = yes
+			#计算资源
+			BA_club_resource_recount = yes
+		}
+	
 	}
 	#解锁社团部室
 	option = {
@@ -657,10 +659,7 @@ country_event = {
 		room = BA_06_room
 	}
 	immediate = {
-		random_owned_megastructure = {
-			limit = {
-				is_megastructure_type = BA_club_station_Game_development_department
-			}
+		fromfromfrom =  {
 			solar_system = {
 				set_star_flag = BA_Game_development_department_system
 			}
@@ -955,14 +954,11 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_leader_Hibiki
+		portrait = BA_leader_Utaha
 		room = BA_06_room
 	}
 	immediate = {
-		random_owned_megastructure = {
-			limit = {
-				is_megastructure_type = BA_club_station_Engineering_club
-			}
+		fromfromfrom =  {
 			solar_system = {
 				set_star_flag = BA_Engineering_club_system
 			}
@@ -1119,7 +1115,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_leader_Utaha
+		portrait = BA_leader_Hibiki
 		room = BA_06_room
 	}
 	immediate = {
@@ -2261,10 +2257,7 @@ country_event = {
 		room = BA_06_room
 	}
 	immediate = {
-		random_owned_megastructure = {
-			limit = {
-				is_megastructure_type = BA_club_station_Veritas
-			}
+		fromfromfrom =  {
 			solar_system = {
 				set_star_flag = BA_Veritas_system
 			}
@@ -2458,7 +2451,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_leader_Kotama
+		portrait = BA_leader_Hare
 		room = BA_06_room
 	}
 	option = {
@@ -2495,7 +2488,7 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_leader_Maki
+		portrait = BA_leader_Chihiro
 		room = BA_06_room
 	}
 	option = {
@@ -2537,10 +2530,7 @@ country_event = {
 		room = BA_06_room
 	}
 	immediate = {
-		random_owned_megastructure = {
-			limit = {
-				is_megastructure_type = BA_club_station_Foreclosure_task_force
-			}
+		fromfromfromfrom =  {
 			solar_system = {
 				set_star_flag = BA_Foreclosure_task_force_system
 			}
@@ -2662,7 +2652,7 @@ country_event = {
 }
 
 ### 彩蛋：白子抢劫行商
-# 待制作
+# TODO
 #
 ######             茶会 Teaparty  14xx            ######
 ### 建部通知
@@ -2678,10 +2668,7 @@ country_event = {
 		room = BA_06_room
 	}
 	immediate = {
-		random_owned_megastructure = {
-			limit = {
-				is_megastructure_type = BA_club_station_Teaparty
-			}
+		fromfromfrom =  {
 			solar_system = {
 				set_star_flag = BA_Teaparty_system
 			}
@@ -2689,10 +2676,6 @@ country_event = {
 			set_megastructure_flag = Mega_Teaparty
 			set_megastructure_flag = Mega_Teaparty_@owner
 			set_name = Teaparty
-			set_variable = {
-				which = Teaparty_sponse_count
-				value = 0
-			}
 		}
 		set_variable = {
 			which = Teaparty #建设度
@@ -2842,14 +2825,11 @@ country_event = {
 	diplomatic = yes
 	custom_gui = "BA_window"
 	picture_event_data = {
-		portrait = BA_leader_Kasumi
+		portrait = BA_leader_Megu
 		room = BA_06_room
 	}
 	immediate = {
-		random_owned_megastructure = {
-			limit = {
-				is_megastructure_type = BA_club_station_Hotspring_development_department
-			}
+		fromfromfrom =  {
 			solar_system = {
 				set_star_flag = BA_Hotspring_development_department_system
 			}
@@ -2974,10 +2954,7 @@ country_event = {
 		room = BA_06_room
 	}
 	immediate = {
-		random_owned_megastructure = {
-			limit = {
-				is_megastructure_type = BA_club_station_Festival_operations_department
-			}
+		fromfromfrom =  {
 			solar_system = {
 				set_star_flag = BA_Festival_operations_department_system
 			}
@@ -3076,10 +3053,7 @@ country_event = {
 		room = BA_06_room
 	}
 	immediate = {
-		random_owned_megastructure = {
-			limit = {
-				is_megastructure_type = BA_club_station_Xuanwu_promenade
-			}
+		fromfromfrom =  {
 			solar_system = {
 				set_star_flag = BA_Xuanwu_promenade_system
 			}
@@ -3160,15 +3134,15 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			set_timed_country_flag = {
-				flag = Xuanwu_promenade_trade_cooldown
-				days = Xuanwu_promenade_cooldown
-			}
 			set_saved_date = {
 				key = Xuanwu_promenade_trade_cooldown
 				days_from_present = Xuanwu_promenade_cooldown
 				expires = Xuanwu_promenade_cooldown
 			}
+			# set_timed_country_flag = {
+			# 	flag = Xuanwu_promenade_trade_cooldown
+			# 	days = Xuanwu_promenade_cooldown
+			# }
 			country_event = {
 				id = BA_club.1714
 			}
@@ -3233,10 +3207,7 @@ country_event = {
 		room = BA_06_room
 	}
 	immediate = {
-		random_owned_megastructure = {
-			limit = {
-				is_megastructure_type = BA_club_station_Publishing_department
-			}
+		fromfromfrom =  {
 			solar_system = {
 				set_star_flag = BA_Publishing_department_system
 			}
@@ -3322,6 +3293,28 @@ country_event = {
 	is_triggered_only = yes
 	hide_window = yes
 	immediate = {
+		#
+		# set_timed_country_flag = {
+		# 	flag = BA_club_Game_development_department_sponsoring
+		# 	days = 720
+		# }
+		# set_timed_country_flag = {
+		# 	flag = BA_club_Engineering_club_sponsoring
+		# 	days = 720
+		# }
+		# set_timed_country_flag = {
+		# 	flag = BA_club_Veritas_sponsoring
+		# 	days = 720
+		# }
+		# set_timed_country_flag = {
+		# 	flag = BA_club_Foreclosure_task_force_sponsoring
+		# 	days = 720
+		# }
+		# set_timed_country_flag = {
+		# 	flag = BA_club_Teaparty_sponsoring
+		# 	days = 720
+		# }
+		#
 		set_country_flag = allow_Game_development_department
 		set_country_flag = allow_Engineering_club
 		set_country_flag = allow_Veritas
