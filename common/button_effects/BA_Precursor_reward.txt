@@ -1,0 +1,151 @@
+button_effect_BA_Precursor_reward_choice_base_bg_off = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		from = {
+			NOT = {
+				has_country_flag = BA_Precursor_reward_choice_base
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = BA_Precursor.coop_reward.base
+		hidden_effect = {
+			from = {
+				set_country_flag = BA_Precursor_reward_choice_base
+				remove_country_flag = BA_Precursor_reward_choice_tech
+				remove_country_flag = BA_Precursor_reward_choice_industry
+				remove_country_flag = BA_Precursor_reward_choice_trade
+			}
+		}
+	}
+}
+
+button_effect_BA_Precursor_reward_choice_base_bg_on = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		from = {
+			has_country_flag = BA_Precursor_reward_choice_base
+		}
+	}
+	effect = {
+		custom_tooltip = BA_Precursor.coop_reward.base
+	}
+}
+
+button_effect_BA_Precursor_reward_choice_tech_bg_off = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		from = {
+			NOT = {
+				has_country_flag = BA_Precursor_reward_choice_tech
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = BA_Precursor.coop_reward.tech
+		hidden_effect = {
+			from = {
+				remove_country_flag = BA_Precursor_reward_choice_base
+				set_country_flag = BA_Precursor_reward_choice_tech
+				remove_country_flag = BA_Precursor_reward_choice_industry
+				remove_country_flag = BA_Precursor_reward_choice_trade
+			}
+		}
+	}
+}
+
+button_effect_BA_Precursor_reward_choice_tech_bg_on = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		from = {
+			has_country_flag = BA_Precursor_reward_choice_tech
+		}
+	}
+	effect = {
+		custom_tooltip = BA_Precursor.coop_reward.tech
+	}
+}
+
+button_effect_BA_Precursor_reward_choice_industry_bg_off = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		from = {
+			NOT = {
+				has_country_flag = BA_Precursor_reward_choice_industry
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = BA_Precursor.coop_reward.industry
+		hidden_effect = {
+			from = {
+				remove_country_flag = BA_Precursor_reward_choice_base
+				remove_country_flag = BA_Precursor_reward_choice_tech
+				set_country_flag = BA_Precursor_reward_choice_industry
+				remove_country_flag = BA_Precursor_reward_choice_trade
+			}
+		}
+	}
+}
+
+button_effect_BA_Precursor_reward_choice_industry_bg_on = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		from = {
+			has_country_flag = BA_Precursor_reward_choice_industry
+		}
+	}
+	effect = {
+		custom_tooltip = BA_Precursor.coop_reward.industry
+	}
+}
+
+button_effect_BA_Precursor_reward_choice_trade_bg_off = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		from = {
+			NOT = {
+				has_country_flag = BA_Precursor_reward_choice_trade
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = BA_Precursor.coop_reward.trade
+		hidden_effect = {
+			from = {
+				remove_country_flag = BA_Precursor_reward_choice_base
+				remove_country_flag = BA_Precursor_reward_choice_tech
+				remove_country_flag = BA_Precursor_reward_choice_industry
+				set_country_flag = BA_Precursor_reward_choice_trade
+			}
+		}
+	}
+}
+
+button_effect_BA_Precursor_reward_choice_trade_bg_on = {
+	allow = {
+		always = yes
+	}
+	potential = {
+		from = {
+			has_country_flag = BA_Precursor_reward_choice_trade
+		}
+	}
+	effect = {
+		custom_tooltip = BA_Precursor.coop_reward.trade
+	}
+}
