@@ -691,10 +691,9 @@ country_event = {
 				event_leader = yes
 			}
 			last_created_leader = {
-				#TODO：改为先驱版
 				set_leader_flag = BA_event_leader
 				set_age = 16
-				change_leader_portrait = BA_leader_Shigure
+				change_leader_portrait = BA_leader_Shigure_pr
 			}
 			create_fleet = {
 				name = Soft_determination

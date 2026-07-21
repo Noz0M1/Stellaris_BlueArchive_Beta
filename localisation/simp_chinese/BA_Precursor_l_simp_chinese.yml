@@ -77,40 +77,37 @@
  BA_Precursor.0151.desc:0 "“你说的对，但是《碧蓝档案物种包》是由N0Z0M1领衔的制作组制作的一款全新4x游戏Stellaris的二次元Mod。Mod剧情发生在一个被称作「基沃托斯」的幻想世界，在这里的学生们都有「光环」，导引神秘之力。你将扮演一位名为「Sensei」的神秘角色，在繁忙的工作中骚扰性格各异、能力独特的学生们，和她们一起击败强敌，找回失踪的联邦学生会长——同时，逐步发掘「神秘」的真相。”"
  BA_Precursor.0151.next:0 "一看就是玩碧蓝档案导致的。"
 
- BA_Precursor.main.title:0 "先驱者通讯"
- BA_Precursor.main.desc.1:0 "“……新奇……啊，没什么，你们遇到什么困难了吗？”"
- BA_Precursor.main.desc.2:0 "“虽然也是最近才观测到……你们发展的速度真的超乎我们的预期。”"
- BA_Precursor.main.desc.3:0 "“虽然我们的科技很强大、技术很发达……但有些事情我们也无法做到……”"
- BA_Precursor.main.desc.4:0 "“听好……关于神秘和恐怖的界限……嘛嘛，是你们的话应该没什么……”"
- BA_Precursor.main.desc.5:0 "“珍惜现在还在你身边的伙伴们吧……”"
+ BA_Precursor_coop:0 "当前$BA_Precursor_coop_score$：§G[Root.BA_Precursor_coop_score]§!\n\n"
+ BA_Precursor_coop_score:0 "§Y合作量§!"
 
+ BA_Precursor.main.title:0 "先驱者通讯"
+ BA_Precursor.main.desc.1:0 "$BA_Precursor_coop$“……新奇……啊，没什么，你们遇到什么困难了吗？”"
+ BA_Precursor.main.desc.2:0 "$BA_Precursor_coop$“虽然也是最近才观测到……你们发展的速度真的超乎我们的预期。”"
+ BA_Precursor.main.desc.3:0 "$BA_Precursor_coop$“虽然我们的科技很强大、技术很发达……但有些事情我们也无法做到……”"
+ BA_Precursor.main.desc.4:0 "$BA_Precursor_coop$“听好……关于神秘和恐怖的界限……嘛嘛，是你们的话应该没什么……”"
+ BA_Precursor.main.desc.5:0 "$BA_Precursor_coop$“珍惜现在还在你身边的伙伴们吧……”"
+ BA_Precursor.main.desc.6:0 "$BA_Precursor_coop$“叠合空间的边界今天依旧很安静……嗯，理所当然。”"
+ BA_Precursor.main.desc.7:0 "$BA_Precursor_coop$“我们是监牢中的解脱者……门并不一定都该被打开，你看。”"
+ BA_Precursor.main.desc.8:0 "$BA_Precursor_coop$“通路维护记录？可以给你们一份删减版。对你们来说，这东西助眠效果应该不错。”"
+ BA_Precursor.main.desc.9:0 "$BA_Precursor_coop$“不要把我们的克制理解为冷漠。一次越界的帮助，最后会变成谁也收拾不了的债。”"
+ BA_Precursor.main.desc.10:0 "$BA_Precursor_coop$“你们的光环在星图上亮得很漂亮。请别误会，这不是监视……好吧，至少不是恶意监视。”"
+
+ BA_Precursor.coop_reward:0 "领取合作报酬"
+ BA_Precursor.coop_reward.tip:0 "基于当前的$BA_Precursor_coop_score$，领取相应的报酬。（领取报酬不会降低$BA_Precursor_coop_score$）"
+ BA_Precursor.coop_reward.desc:0 "$BA_Precursor_coop$我们相当需要外域的各种信息，如果你们愿意提供，我们会提供你们绝对无法拒绝的丰富报酬……绝对不会亏待你们就是了。"
+ BA_Precursor.coop_reward.unclamed:0 "请先领取前一档报酬"
+ BA_Precursor.coop_reward.1:0 "报酬：资源"
+ BA_Precursor.coop_reward.1.tip:0 "之后，每一档报酬都附带一份资源奖励"
+ BA_Precursor.coop_reward.1.re:0 "报酬：资源"
+ BA_Precursor.coop_reward.2:0 "报酬：开放§0天使24便利店§!"
 
  BA_Precursor.manual:0 "说明"
  BA_Precursor.manual.title:0 "先驱者通讯：说明"
  BA_Precursor.manual.desc:0 "“因为这里是一个十分特别的空间，所以我们只能用特殊的方式向你们寄送物品……超空间航道是不可能了，但我们可以建立一个§Y微型虫洞§!，或者直接派出§B曲速货船§!。\n你们有什么想知道的事情吗？”"
 
 
- BA_Precursor.trade:0 "点数交易"
- BA_Precursor.trade.title:0 "先驱者通讯：点数及物流"
- BA_Precursor.trade.desc:0 "“我们不会过多的干涉你们，但是解燃眉之急之类的事情可以尽管开口……”"
-
- BA_Precursor.trade.get_point:0 "获取交易点数"
-
- BA_Precursor.trade.wormhole:0 "通过§Y微型虫洞§!交易物资"
-
- BA_Precursor.trade.warpship:0 "通过§B曲速货船§!交易物资"
-
- BA_Precursor.trade.infomation:0 "交易信息"
-
- BA_Precursor.chat:0 "闲谈"
- BA_Precursor.chat.title:0 "先驱者通讯：闲谈"
- BA_Precursor.chat.desc:0 "“我知道你们有许多的问题想要问……我们到底是谁、你们自己的来历，为什么”"
-
-
-
  BA_Precursor.exit:0 "关闭页面"
 
- BA_Precursor.manual.re:0 "由于我们之间的物流只能通过超空间航道以外的方式进行，因此我们没有办法通过正常的方式进行贸易。\n目前最合理的方式是微型虫洞，每月可以提供20点运力，虫洞维护费用由我们全额承担。\n那些没有使用的运力也不用担心浪费，我们也可以向你们派出曲速飞船，这些飞船单程需要由你们承担的运输成本是1000能量币。往程的费用必须由你们进行支付，返程的话我们提供你们两种选择：支付返程费用送回飞船，或者花费一些储存的运力留下这艘船，之后想拆解或者逆向研究我们都不会干涉。\n此外，我们相当需要外域的各种信息，如果你们愿意提供，我们会提供你们绝对无法拒绝的丰富报酬……绝对不会亏待你们就是了。怎样? 绝对是你们无法拒绝的条件吧！"
 
 
 ### 杂项事件

@@ -2,7 +2,7 @@ namespace = BA_Precursor
 ######################
 ###     前置准备
 ######################
-#初始化
+# 初始化
 country_event = {
 	id = BA_Precursor.0001
 	is_triggered_only = yes
@@ -183,7 +183,7 @@ country_event = {
 	}
 }
 
-#先驱者月检
+# 先驱者月检
 country_event = {
 	id = BA_Precursor.0002
 	hide_window = yes
@@ -209,7 +209,7 @@ country_event = {
 	}
 }
 
-#激活外域链路
+# 激活外域链路
 country_event = {
 	id = BA_Precursor.0010
 	is_triggered_only = yes
@@ -235,7 +235,7 @@ country_event = {
 	}
 }
 
-#激活失落帝国内链路
+# 激活失落帝国内链路
 country_event = {
 	id = BA_Precursor.0011
 	is_triggered_only = yes
@@ -277,7 +277,7 @@ country_event = {
 	}
 }
 
-#通知外部链路激活
+# 通知外部链路激活
 country_event = {
 	id = BA_Precursor.0015
 	is_triggered_only = yes
@@ -316,7 +316,7 @@ country_event = {
 	}
 }
 
-#通知内部链路激活
+# 通知内部链路激活
 country_event = {
 	id = BA_Precursor.0016
 	is_triggered_only = yes
@@ -335,7 +335,7 @@ country_event = {
 ######################
 ###     探索星系
 ######################
-#进入通讯接口
+# 进入通讯接口
 ship_event = {
 	id = BA_Precursor.0051
 	is_triggered_only = yes
@@ -362,7 +362,7 @@ ship_event = {
 	}
 }
 
-#进入失落帝国境内
+# 进入失落帝国境内
 ship_event = {
 	id = BA_Precursor.0052
 	is_triggered_only = yes
@@ -393,8 +393,8 @@ ship_event = {
 	}
 }
 
-#进入失落帝国环世界
-#进入失落帝国母星
+# 进入失落帝国环世界
+# 进入失落帝国母星
 ship_event = {
 	id = BA_Precursor.0054
 	is_triggered_only = yes
@@ -422,7 +422,7 @@ ship_event = {
 	}
 }
 
-#链路接口扫完后刷一个坟
+# 链路接口扫完后刷一个坟
 ship_event = {
 	id = BA_Precursor.0057
 	is_triggered_only = yes
@@ -452,32 +452,11 @@ ship_event = {
 	}
 }
 
-#进入一个新星系，+1数据
-ship_event = {
-	id = BA_Precursor.0060
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		owner = {
-			is_ai = no
-			has_authority = auth_kivotos
-		}
-	}
-	immediate = {
-		owner = {
-			change_variable = {
-				which = BA_Precursor_system_info
-				value = 1
-			}
-		}
-	}
-}
-
 ######################
 ###     先驱通讯
 ######################
 ### 初次交流
-#触发器
+# 触发器
 country_event = {
 	id = BA_Precursor.0100
 	hide_window = yes
@@ -552,34 +531,13 @@ country_event = {
 	}
 }
 
-#通讯触发（先驱者线路）
+# 通讯触发（先驱者线路）
 country_event = {
 	id = BA_Precursor.0101
 	is_triggered_only = yes
 	title = BA_Precursor.0101.title
 	desc = BA_Precursor.0101.desc
 	picture = GFX_evt_clocks
-	trigger = {
-		NOT = {
-			has_country_flag = BA_Gematria_contacted
-		}
-	}
-	immediate = {
-		set_country_flag = BA_Gematria_contacted
-		set_global_flag = BA_Gematria_contacted
-		set_variable = {
-			which = BA_Precursor_stockpile
-			value = 0
-		}
-		set_variable = {
-			which = BA_Precursor_mounthly
-			value = 0
-		}
-		set_variable = {
-			which = BA_Precursor_limit
-			value = 1600
-		}
-	}
 	option = {
 		name = BA_Precursor.0101.next
 		hidden_effect = {
@@ -590,7 +548,7 @@ country_event = {
 	}
 }
 
-#先驱反抗者通讯
+# 先驱反抗者通讯
 country_event = {
 	id = BA_Precursor.0102
 	is_triggered_only = yes
@@ -604,9 +562,6 @@ country_event = {
 		room = BA_01_room
 	}
 	immediate = {
-		event_target:BA_Precursor_species = {
-			change_species_portrait = BA_Seia
-		}
 	}
 	### 基沃托斯
 	option = {
@@ -683,7 +638,7 @@ country_event = {
 }
 
 ### 通讯站
-#点击触发
+# 点击触发
 country_event = {
 	id = BA_Precursor.0150
 	is_triggered_only = yes
@@ -713,7 +668,7 @@ country_event = {
 	}
 }
 
-#拒绝接入
+# 拒绝接入
 country_event = {
 	id = BA_Precursor.0151
 	is_triggered_only = yes
@@ -730,7 +685,7 @@ country_event = {
 	}
 }
 
-#主界面
+# 主界面
 country_event = {
 	id = BA_Precursor.0152
 	is_triggered_only = yes
@@ -738,7 +693,6 @@ country_event = {
 	custom_gui = "BA_Window"
 	picture_event_data = {
 		portrait = event_target:BA_Precursor_country
-		#portrait = BA_leader_Seia_pr
 		room = BA_01_room
 	}
 	title = BA_Precursor.main.title
@@ -757,106 +711,245 @@ country_event = {
 	desc = {
 		text = BA_Precursor.main.desc.5
 	}
+	desc = {
+		text = BA_Precursor.main.desc.6
+	}
+	desc = {
+		text = BA_Precursor.main.desc.7
+	}
+	desc = {
+		text = BA_Precursor.main.desc.8
+	}
+	desc = {
+		text = BA_Precursor.main.desc.9
+	}
+	desc = {
+		text = BA_Precursor.main.desc.10
+	}
 	#退出
 	option = {
 		name = BA_Precursor.exit
 		default_hide_option = yes
 	}
-	#说明
+	# 领取合作报酬
 	option = {
-		name = BA_Precursor.manual
-		hidden_effect = {
-			country_event = {
-				id = BA_Precursor.0153
-			}
-		}
-	}
-	#进行交易
-	option = {
-		name = BA_Precursor.trade
+		name = BA_Precursor.coop_reward
+		custom_tooltip = BA_Precursor.coop_reward.tip
 		hidden_effect = {
 			country_event = {
 				id = BA_Precursor.0160
 			}
 		}
 	}
-	#聊天
-	option = {
-		name = BA_Precursor.chat
-		hidden_effect = {
-			# country_event = {
-			# 	id = BA_Precursor.0153
-			# }
-		}
-	}
 }
 
-country_event = {
-	id = BA_Precursor.0153
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_Window"
-	picture_event_data = {
-		portrait = BA_leader_Seia_pr
-		room = BA_01_room
-	}
-	title = BA_Precursor.manual.title
-	desc = BA_Precursor.manual.desc
-	#退出
-	option = {
-		name = BA_Precursor.exit
-		default_hide_option = yes
-	}
-	#说明
-	option = {
-		name = BA_Precursor.manual
-		is_dialog_only = yes
-		response_text = BA_Precursor.manual.re
-	}
-}
-
+# 合作报酬领取
 country_event = {
 	id = BA_Precursor.0160
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_Window"
 	picture_event_data = {
-		portrait = BA_leader_Seia_pr
+		portrait = event_target:BA_Precursor_country
 		room = BA_01_room
 	}
-	title = BA_Precursor.trade.title
-	desc = BA_Precursor.trade.desc
-	#退出
+	title = BA_Precursor.coop_reward
+	desc = BA_Precursor.coop_reward.desc
+	# 退出
 	option = {
 		name = BA_Precursor.exit
 		default_hide_option = yes
+		hidden_effect = {
+			country_event = {
+				id = BA_Precursor.0152
+			}
+		}
 	}
-	#获得点数
-	#虫洞交易
-	#飞船交易
-	#
+	### 每一档都有资源奖励。除非只有这个，否则不写出。
+	# 1档：资源
+	option = {
+		name = BA_Precursor.coop_reward.1
+		trigger = {
+			check_variable = {
+				which = BA_Precursor_coop_score
+				value >= BA_Precursor_coop_reward_1
+			}
+			check_variable = {
+				which = BA_Precursor_coop_claimed
+				value < BA_Precursor_coop_reward_1
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				which = BA_Precursor_coop_claimed
+				value = BA_Precursor_coop_reward_1
+			}
+		}
+		country_event = {
+			id = BA_Precursor.0161
+		}
+	}
+	# 2档：开放“天使24”便利店
+	option = {
+		name = BA_Precursor.coop_reward.2
+		trigger = {
+			check_variable = {
+				which = BA_Precursor_coop_score
+				value >= BA_Precursor_coop_reward_2
+			}
+			check_variable = {
+				which = BA_Precursor_coop_claimed
+				value < BA_Precursor_coop_reward_2
+			}
+		}
+		allow = {
+			custom_tooltip = {
+				fail_text = BA_Precursor.coop_reward.unclamed
+				check_variable = {
+					which = BA_Precursor_coop_claimed
+					value >= BA_Precursor_coop_reward_1
+				}
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				which = BA_Precursor_coop_claimed
+				value = BA_Precursor_coop_reward_2
+			}
+		}
+		remove_country_flag = BA_Angel24_locked
+	}
+	# 3档：更新领袖储备-先驱者
+	# 4档：暗物质浓缩机科技
+	# 5档：更新领袖储备-先驱者
+	# 6档：+1可选学园理念（次要）
+	# 7档：更新领袖储备-先驱者
+	# 8档：遗珍-谜之种
+	# 9档：更新领袖储备-先驱者
+	# 10档：T7舰船部件科技
+	# 循环档：资源
 }
 
+# 资源奖励：造一个UI用
 country_event = {
-	id = BA_Precursor.0190
+	id = BA_Precursor.0161
 	is_triggered_only = yes
 	diplomatic = yes
-	custom_gui = "BA_Window"
-	picture_event_data = {
-		portrait = BA_leader_Seia_pr
-		room = BA_01_room
+	custom_gui = "BA_Precursor_Reward_window"
+	title = BA_Precursor.coop_reward
+	desc = BA_Precursor.coop_reward.desc
+}
+
+### 合作量累积
+# 月检
+country_event = {
+	id = BA_Precursor.0200
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_authority = auth_kivotos
 	}
-	title = BA_Precursor.chat.title
-	desc = BA_Precursor.trade.desc
-	#退出
-	option = {
-		name = BA_Precursor.exit
-		default_hide_option = yes
+	immediate = {
+		if = {
+			limit = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 30
+				}
+				resource_stockpile_compare = {
+					resource = consumer_goods
+					value >= 15
+				}
+			}
+			add_resource = {
+				energy = -30
+				consumer_goods = -15
+			}
+			change_variable = {
+				which = BA_Precursor_coop_score
+				value = 1
+			}
+		}
 	}
-	#获得点数
-	#虫洞交易
-	#飞船交易
-	#
+}
+
+# 探索、调查新星系，+1合作量
+ship_event = {
+	id = BA_Precursor.0201
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	immediate = {
+		owner = {
+			change_variable = {
+				which = BA_Precursor_coop_score
+				value = 1
+			}
+		}
+	}
+}
+
+# 完成异常现象研究，+2合作量
+ship_event = {
+	id = BA_Precursor.0202
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	immediate = {
+		owner = {
+			change_variable = {
+				which = BA_Precursor_coop_score
+				value = 2
+			}
+		}
+	}
+}
+
+# 完成考古遗址，+5合作量
+fleet_event = {
+	id = BA_Precursor.0203
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		owner = {
+			has_authority = auth_kivotos
+		}
+	}
+	immediate = {
+		owner = {
+			change_variable = {
+				which = BA_Precursor_coop_score
+				value = 5
+			}
+		}
+	}
+}
+
+# 首次接触普通太空帝国，+3合作量
+country_event = {
+	id = BA_Precursor.0204
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_authority = auth_kivotos
+		from = {
+			is_country_type = default
+		}
+	}
+	immediate = {
+		change_variable = {
+			which = BA_Precursor_coop_score
+			value = 3
+		}
+	}
 }
 
 ######################

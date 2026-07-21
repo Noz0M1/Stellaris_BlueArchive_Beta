@@ -1,3 +1,6 @@
+############
+# 初始化与中、后期
+############
 # This = Country
 on_game_start_country = {
 	events = {
@@ -22,18 +25,28 @@ on_mid_game_pulse = {
 	}
 }
 
+# This = Country
+on_mid_game_pulse_country = {
+	events = {
+		#BA_Precursor.0010		#启动外域星门 之后改为中期触发
+		#BA_Precursor.0011		#启动失落帝国内星门 之后改为其他触发
+	}
+}
+
 # No scope, like on_game_start
 on_late_game_pulse = {
 	events = {
 	}
 }
 
+############
+# 周期检测
+############
 # This = Country
 on_monthly_pulse_country = {
 	events = {
 		#BA_Precursor.0002
-		#BA_Shittem.9990		#月产出计数
-		#BA_Shittem.9992		#先驱者通讯月检
+		BA_Precursor.0200 #合作量：月度数据交换
 		BA_Shittem.4000 #学园理念月检
 		BA_Easter_egg.9999 #彩蛋月检
 	}
@@ -56,7 +69,7 @@ on_yearly_pulse_country = {
 on_five_year_pulse_country = {
 	events = {
 		BA_Shittem.1921 #青辉石修复委托：提示
-        BA_rename.1030 #领袖重命名：周期全局处理
+		BA_rename.1030 #领袖重命名：周期全局处理
 	}
 }
 
@@ -67,6 +80,20 @@ on_decade_pulse_country = {
 	}
 }
 
+############
+# 外交、战争
+############
+# This = target country (player)
+# From = source country
+on_custom_diplomacy = {
+	events = {
+		BA_Shittem.1000 #BA_Shittem.1000		#Arona通讯界面
+		BA_Precursor.0150 #先驱者通讯
+		BA_club.0050 #社团
+		BA_crisis.1180 #中期天灾-爱丽丝
+	}
+}
+
 # Executed right after country has established communications with another country. Does not fire if comms are established with establish_communications_no_message
 # This = Country which established the communications
 # From = Country which communications were established with
@@ -74,6 +101,15 @@ on_post_communications_established = {
 	events = {
 		BA_origin.1453 #阿里乌斯 面纱之下
 		BA_origin.1454 #阿里乌斯 面纱之下
+	}
+}
+
+# Triggered when two empires discover each other.
+# This = Empire 1
+# From = Empire 2
+on_first_contact = {
+	events = {
+		BA_Precursor.0204 #合作量：首次接触普通帝国
 	}
 }
 
@@ -102,6 +138,32 @@ on_country_destroyed = {
 	}
 }
 
+# This = country, attack leader
+# From = country, colony owner
+# FromFrom = colony
+on_colony_attackers_lose = {
+	events = {
+		BA_origin.1220 #遗忘众神起源 爆金币
+		BA_origin.2051 #未命名的始发点：夺回家园失败
+		#BA_Emergencies.0102	#突发事件：Rabbit突袭
+		#BA_Emergencies.0502	#突发事件：给食部与美食研
+	}
+}
+
+# This = country, lead attacker
+# From = country, colony owner
+# FromFrom = colony
+on_colony_attackers_win = {
+	events = {
+		BA_origin.1411 #遗忘众神起源 抵抗失败boom
+		BA_origin.1415 #被其他国家攻占 boom
+		BA_origin.2052 #未命名的始发点：夺回家园成功
+	}
+}
+
+############
+# 领袖相关
+############
 # This = country
 # From = leader
 on_leader_spawned = {
@@ -122,7 +184,7 @@ on_added_to_leader_pool = {
 # This = Leader
 on_leader_hired = {
 	events = {
-        BA_rename.1050 # 领袖重命名：招募单个处理
+		BA_rename.1050 # 领袖重命名：招募单个处理
 	}
 }
 
@@ -152,17 +214,6 @@ on_modification_complete = {
 	}
 }
 
-# This = target country (player)
-# From = source country
-on_custom_diplomacy = {
-	events = {
-		BA_Shittem.1000 #BA_Shittem.1000		#Arona通讯界面
-		BA_Precursor.0150 #先驱者通讯
-		BA_club.0050 #社团
-		BA_crisis.1180 #中期天灾-爱丽丝
-	}
-}
-
 # This = Country
 on_tech_increased = {
 	events = {
@@ -179,50 +230,9 @@ on_tech_increased = {
 	}
 }
 
-# This = country, attack leader
-# From = country, colony owner
-# FromFrom = colony
-on_colony_attackers_lose = {
-	events = {
-		BA_origin.1220 #遗忘众神起源 爆金币
-		BA_origin.2051 #未命名的始发点：夺回家园失败
-		#BA_Emergencies.0102	#突发事件：Rabbit突袭
-		#BA_Emergencies.0502	#突发事件：给食部与美食研
-	}
-}
-
-# This = country, lead attacker
-# From = country, colony owner
-# FromFrom = colony
-on_colony_attackers_win = {
-	events = {
-		BA_origin.1411 #遗忘众神起源 抵抗失败boom
-		BA_origin.1415 #被其他国家攻占 boom
-		BA_origin.2052 #未命名的始发点：夺回家园成功
-	}
-}
-
-# Legacy on_action not present in current vanilla on_actions.
-# Historical scope: This = Planet
-# Historical From = Bombarder
-on_planet_zero_pops = {
-	events = {
-	}
-}
-
-# Legacy on_action not present in current vanilla on_actions.
-# Historical scope: This = Planet
-# Historical From = Army owner
-on_planet_zero_pops_ground_combat = {
-}
-
-# No vanilla scope comment found.
-on_colony_3_years_old = {
-	events = {
-		BA_Project.0017 #触发摇篮计划2阶段
-	}
-}
-
+############
+# 舰船相关
+############
 # Scope: Ship Event
 # Root = Ship
 # From = Planet
@@ -269,6 +279,7 @@ on_ship_disabled = {
 on_system_survey_ship = {
 	events = {
 		BA_Precursor.0057 #跳线点考古遗址
+		BA_Precursor.0201 #合作量：调查星系
 	}
 }
 
@@ -280,7 +291,6 @@ on_entering_system_first_time = {
 		BA_Precursor.0051 #通讯接口
 		BA_Precursor.0052 #失落帝国境内
 		BA_Precursor.0054 #失落帝国母星
-		BA_Precursor.0060 #待售信息计数
 	}
 }
 
@@ -294,11 +304,13 @@ on_entering_system = {
 	}
 }
 
-# This = Country
-on_mid_game_pulse_country = {
+
+# This = Ship
+# From = Planet
+anomaly_success = {
 	events = {
-		#BA_Precursor.0010		#启动外域星门 之后改为中期触发
-		#BA_Precursor.0011		#启动失落帝国内星门 之后改为其他触发
+
+		BA_Precursor.0202 #合作量：完成异常研究
 	}
 }
 
@@ -310,6 +322,23 @@ on_fleet_enter_orbit = {
 	}
 }
 
+# This = Ship
+on_jump_drive = {
+	events = {
+	}
+}
+
+# This = Fleet (science vessel)
+# From = Archaeological Site
+on_arch_site_finished = {
+	events = {
+		BA_Precursor.0203 #合作量：完成考古遗址
+	}
+}
+
+############
+# 殖民地发展
+############
 # Scope = Planet
 on_colonization_started = {
 	events = {
@@ -326,20 +355,12 @@ on_colonization_started = {
 # 	}
 # }
 
-# Legacy on_action not present in current vanilla on_actions.
-# Current vanilla equivalent is on_colony_transfer:
 # This = Colony scope
 # From = Country scope (new owner)
 # FromFrom = Country scope (previous owner, if any)
-on_planet_transfer = {
+on_colony_transfer = {
 	events = {
 		BA_Shittem.4022 #学园理念 格黑那A03
-	}
-}
-
-# This = Ship
-on_jump_drive = {
-	events = {
 	}
 }
 
