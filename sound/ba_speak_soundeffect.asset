@@ -1,0 +1,972 @@
+# 请勿编辑该文件，请使用ba_voice.py生成文件(需要python3)
+
+sound = {
+	name = "Aris_speak_sound_1"
+	file = "voice/Aris_speak_sound_1.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Aris_speak_sound_1"
+	volume = 0.9
+	sounds = {
+		sound = Aris_speak_sound_1
+	}
+}
+
+sound = {
+	name = "Aris_speak_sound_2"
+	file = "voice/Aris_speak_sound_2.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Aris_speak_sound_2"
+	volume = 0.9
+	sounds = {
+		sound = Aris_speak_sound_2
+	}
+}
+
+sound = {
+	name = "Aris_speak_sound_3"
+	file = "voice/Aris_speak_sound_3.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Aris_speak_sound_3"
+	volume = 0.9
+	sounds = {
+		sound = Aris_speak_sound_3
+	}
+}
+
+sound = {
+	name = "arona_menu_talk_00"
+	file = "voice/arona_menu_talk_00.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_arona_menu_talk_00"
+	volume = 0.9
+	sounds = {
+		sound = arona_menu_talk_00
+	}
+}
+
+sound = {
+	name = "arona_menu_talk_01"
+	file = "voice/arona_menu_talk_01.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_arona_menu_talk_01"
+	volume = 0.9
+	sounds = {
+		sound = arona_menu_talk_01
+	}
+}
+
+sound = {
+	name = "arona_menu_talk_02"
+	file = "voice/arona_menu_talk_02.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_arona_menu_talk_02"
+	volume = 0.9
+	sounds = {
+		sound = arona_menu_talk_02
+	}
+}
+
+sound = {
+	name = "arona_menu_talk_03"
+	file = "voice/arona_menu_talk_03.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_arona_menu_talk_03"
+	volume = 0.9
+	sounds = {
+		sound = arona_menu_talk_03
+	}
+}
+
+sound = {
+	name = "arona_menu_talk_04"
+	file = "voice/arona_menu_talk_04.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_arona_menu_talk_04"
+	volume = 0.9
+	sounds = {
+		sound = arona_menu_talk_04
+	}
+}
+
+sound = {
+	name = "arona_menu_talk_05"
+	file = "voice/arona_menu_talk_05.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_arona_menu_talk_05"
+	volume = 0.9
+	sounds = {
+		sound = arona_menu_talk_05
+	}
+}
+
+sound = {
+	name = "arona_menu_talk_06"
+	file = "voice/arona_menu_talk_06.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_arona_menu_talk_06"
+	volume = 0.9
+	sounds = {
+		sound = arona_menu_talk_06
+	}
+}
+
+sound = {
+	name = "arona_menu_talk_07"
+	file = "voice/arona_menu_talk_07.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_arona_menu_talk_07"
+	volume = 0.9
+	sounds = {
+		sound = arona_menu_talk_07
+	}
+}
+
+sound = {
+	name = "arona_menu_talk_08"
+	file = "voice/arona_menu_talk_08.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_arona_menu_talk_08"
+	volume = 0.9
+	sounds = {
+		sound = arona_menu_talk_08
+	}
+}
+
+sound = {
+	name = "Chihiro_speak_sound_1"
+	file = "voice/Chihiro_speak_sound_1.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Chihiro_speak_sound_1"
+	volume = 0.9
+	sounds = {
+		sound = Chihiro_speak_sound_1
+	}
+}
+
+sound = {
+	name = "Chihiro_speak_sound_2"
+	file = "voice/Chihiro_speak_sound_2.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Chihiro_speak_sound_2"
+	volume = 0.9
+	sounds = {
+		sound = Chihiro_speak_sound_2
+	}
+}
+
+sound = {
+	name = "Chihiro_speak_sound_3"
+	file = "voice/Chihiro_speak_sound_3.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Chihiro_speak_sound_3"
+	volume = 0.9
+	sounds = {
+		sound = Chihiro_speak_sound_3
+	}
+}
+
+sound = {
+	name = "Hare_speak_sound_1"
+	file = "voice/Hare_speak_sound_1.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Hare_speak_sound_1"
+	volume = 0.9
+	sounds = {
+		sound = Hare_speak_sound_1
+	}
+}
+
+sound = {
+	name = "Hare_speak_sound_2"
+	file = "voice/Hare_speak_sound_2.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Hare_speak_sound_2"
+	volume = 0.9
+	sounds = {
+		sound = Hare_speak_sound_2
+	}
+}
+
+sound = {
+	name = "Hare_speak_sound_3"
+	file = "voice/Hare_speak_sound_3.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Hare_speak_sound_3"
+	volume = 0.9
+	sounds = {
+		sound = Hare_speak_sound_3
+	}
+}
+
+sound = {
+	name = "Hibiki_speak_sound_1"
+	file = "voice/Hibiki_speak_sound_1.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Hibiki_speak_sound_1"
+	volume = 0.9
+	sounds = {
+		sound = Hibiki_speak_sound_1
+	}
+}
+
+sound = {
+	name = "Hibiki_speak_sound_2"
+	file = "voice/Hibiki_speak_sound_2.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Hibiki_speak_sound_2"
+	volume = 0.9
+	sounds = {
+		sound = Hibiki_speak_sound_2
+	}
+}
+
+sound = {
+	name = "Hibiki_speak_sound_3"
+	file = "voice/Hibiki_speak_sound_3.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Hibiki_speak_sound_3"
+	volume = 0.9
+	sounds = {
+		sound = Hibiki_speak_sound_3
+	}
+}
+
+sound = {
+	name = "Megu_speak_sound_1"
+	file = "voice/Megu_speak_sound_1.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Megu_speak_sound_1"
+	volume = 0.9
+	sounds = {
+		sound = Megu_speak_sound_1
+	}
+}
+
+sound = {
+	name = "Megu_speak_sound_2"
+	file = "voice/Megu_speak_sound_2.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Megu_speak_sound_2"
+	volume = 0.9
+	sounds = {
+		sound = Megu_speak_sound_2
+	}
+}
+
+sound = {
+	name = "Megu_speak_sound_3"
+	file = "voice/Megu_speak_sound_3.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Megu_speak_sound_3"
+	volume = 0.9
+	sounds = {
+		sound = Megu_speak_sound_3
+	}
+}
+
+sound = {
+	name = "Midori_speak_sound_1"
+	file = "voice/Midori_speak_sound_1.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Midori_speak_sound_1"
+	volume = 0.9
+	sounds = {
+		sound = Midori_speak_sound_1
+	}
+}
+
+sound = {
+	name = "Midori_speak_sound_2"
+	file = "voice/Midori_speak_sound_2.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Midori_speak_sound_2"
+	volume = 0.9
+	sounds = {
+		sound = Midori_speak_sound_2
+	}
+}
+
+sound = {
+	name = "Midori_speak_sound_3"
+	file = "voice/Midori_speak_sound_3.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Midori_speak_sound_3"
+	volume = 0.9
+	sounds = {
+		sound = Midori_speak_sound_3
+	}
+}
+
+sound = {
+	name = "Mika_speak_sound_1"
+	file = "voice/Mika_speak_sound_1.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Mika_speak_sound_1"
+	volume = 0.9
+	sounds = {
+		sound = Mika_speak_sound_1
+	}
+}
+
+sound = {
+	name = "Mika_speak_sound_2"
+	file = "voice/Mika_speak_sound_2.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Mika_speak_sound_2"
+	volume = 0.9
+	sounds = {
+		sound = Mika_speak_sound_2
+	}
+}
+
+sound = {
+	name = "Mika_speak_sound_3"
+	file = "voice/Mika_speak_sound_3.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Mika_speak_sound_3"
+	volume = 0.9
+	sounds = {
+		sound = Mika_speak_sound_3
+	}
+}
+
+sound = {
+	name = "Momoi_speak_sound_1"
+	file = "voice/Momoi_speak_sound_1.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Momoi_speak_sound_1"
+	volume = 0.9
+	sounds = {
+		sound = Momoi_speak_sound_1
+	}
+}
+
+sound = {
+	name = "Momoi_speak_sound_2"
+	file = "voice/Momoi_speak_sound_2.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Momoi_speak_sound_2"
+	volume = 0.9
+	sounds = {
+		sound = Momoi_speak_sound_2
+	}
+}
+
+sound = {
+	name = "Momoi_speak_sound_3"
+	file = "voice/Momoi_speak_sound_3.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Momoi_speak_sound_3"
+	volume = 0.9
+	sounds = {
+		sound = Momoi_speak_sound_3
+	}
+}
+
+sound = {
+	name = "Nagisa_speak_sound_1"
+	file = "voice/Nagisa_speak_sound_1.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Nagisa_speak_sound_1"
+	volume = 0.9
+	sounds = {
+		sound = Nagisa_speak_sound_1
+	}
+}
+
+sound = {
+	name = "Nagisa_speak_sound_2"
+	file = "voice/Nagisa_speak_sound_2.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Nagisa_speak_sound_2"
+	volume = 0.9
+	sounds = {
+		sound = Nagisa_speak_sound_2
+	}
+}
+
+sound = {
+	name = "Nagisa_speak_sound_3"
+	file = "voice/Nagisa_speak_sound_3.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Nagisa_speak_sound_3"
+	volume = 0.9
+	sounds = {
+		sound = Nagisa_speak_sound_3
+	}
+}
+
+sound = {
+	name = "Nonomi_speak_sound_1"
+	file = "voice/Nonomi_speak_sound_1.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Nonomi_speak_sound_1"
+	volume = 0.9
+	sounds = {
+		sound = Nonomi_speak_sound_1
+	}
+}
+
+sound = {
+	name = "Nonomi_speak_sound_2"
+	file = "voice/Nonomi_speak_sound_2.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Nonomi_speak_sound_2"
+	volume = 0.9
+	sounds = {
+		sound = Nonomi_speak_sound_2
+	}
+}
+
+sound = {
+	name = "Nonomi_speak_sound_3"
+	file = "voice/Nonomi_speak_sound_3.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Nonomi_speak_sound_3"
+	volume = 0.9
+	sounds = {
+		sound = Nonomi_speak_sound_3
+	}
+}
+
+sound = {
+	name = "pulana_menu_talk_00"
+	file = "voice/pulana_menu_talk_00.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_pulana_menu_talk_00"
+	volume = 0.9
+	sounds = {
+		sound = pulana_menu_talk_00
+	}
+}
+
+sound = {
+	name = "pulana_menu_talk_01"
+	file = "voice/pulana_menu_talk_01.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_pulana_menu_talk_01"
+	volume = 0.9
+	sounds = {
+		sound = pulana_menu_talk_01
+	}
+}
+
+sound = {
+	name = "pulana_menu_talk_02"
+	file = "voice/pulana_menu_talk_02.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_pulana_menu_talk_02"
+	volume = 0.9
+	sounds = {
+		sound = pulana_menu_talk_02
+	}
+}
+
+sound = {
+	name = "pulana_menu_talk_03"
+	file = "voice/pulana_menu_talk_03.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_pulana_menu_talk_03"
+	volume = 0.9
+	sounds = {
+		sound = pulana_menu_talk_03
+	}
+}
+
+sound = {
+	name = "pulana_menu_talk_04"
+	file = "voice/pulana_menu_talk_04.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_pulana_menu_talk_04"
+	volume = 0.9
+	sounds = {
+		sound = pulana_menu_talk_04
+	}
+}
+
+sound = {
+	name = "pulana_menu_talk_05"
+	file = "voice/pulana_menu_talk_05.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_pulana_menu_talk_05"
+	volume = 0.9
+	sounds = {
+		sound = pulana_menu_talk_05
+	}
+}
+
+sound = {
+	name = "pulana_menu_talk_06"
+	file = "voice/pulana_menu_talk_06.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_pulana_menu_talk_06"
+	volume = 0.9
+	sounds = {
+		sound = pulana_menu_talk_06
+	}
+}
+
+sound = {
+	name = "pulana_menu_talk_07"
+	file = "voice/pulana_menu_talk_07.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_pulana_menu_talk_07"
+	volume = 0.9
+	sounds = {
+		sound = pulana_menu_talk_07
+	}
+}
+
+sound = {
+	name = "pulana_menu_talk_08"
+	file = "voice/pulana_menu_talk_08.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_pulana_menu_talk_08"
+	volume = 0.9
+	sounds = {
+		sound = pulana_menu_talk_08
+	}
+}
+
+sound = {
+	name = "Rumi_speak_sound_1"
+	file = "voice/Rumi_speak_sound_1.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Rumi_speak_sound_1"
+	volume = 0.9
+	sounds = {
+		sound = Rumi_speak_sound_1
+	}
+}
+
+sound = {
+	name = "Rumi_speak_sound_2"
+	file = "voice/Rumi_speak_sound_2.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Rumi_speak_sound_2"
+	volume = 0.9
+	sounds = {
+		sound = Rumi_speak_sound_2
+	}
+}
+
+sound = {
+	name = "Rumi_speak_sound_3"
+	file = "voice/Rumi_speak_sound_3.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Rumi_speak_sound_3"
+	volume = 0.9
+	sounds = {
+		sound = Rumi_speak_sound_3
+	}
+}
+
+sound = {
+	name = "Seia_speak_sound_1"
+	file = "voice/Seia_speak_sound_1.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Seia_speak_sound_1"
+	volume = 0.9
+	sounds = {
+		sound = Seia_speak_sound_1
+	}
+}
+
+sound = {
+	name = "Seia_speak_sound_2"
+	file = "voice/Seia_speak_sound_2.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Seia_speak_sound_2"
+	volume = 0.9
+	sounds = {
+		sound = Seia_speak_sound_2
+	}
+}
+
+sound = {
+	name = "Seia_speak_sound_3"
+	file = "voice/Seia_speak_sound_3.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Seia_speak_sound_3"
+	volume = 0.9
+	sounds = {
+		sound = Seia_speak_sound_3
+	}
+}
+
+sound = {
+	name = "Shiroko_speak_sound_1"
+	file = "voice/Shiroko_speak_sound_1.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Shiroko_speak_sound_1"
+	volume = 0.9
+	sounds = {
+		sound = Shiroko_speak_sound_1
+	}
+}
+
+sound = {
+	name = "Shiroko_speak_sound_2"
+	file = "voice/Shiroko_speak_sound_2.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Shiroko_speak_sound_2"
+	volume = 0.9
+	sounds = {
+		sound = Shiroko_speak_sound_2
+	}
+}
+
+sound = {
+	name = "Shiroko_speak_sound_3"
+	file = "voice/Shiroko_speak_sound_3.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Shiroko_speak_sound_3"
+	volume = 0.9
+	sounds = {
+		sound = Shiroko_speak_sound_3
+	}
+}
+
+sound = {
+	name = "Shizuko_speak_sound_1"
+	file = "voice/Shizuko_speak_sound_1.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Shizuko_speak_sound_1"
+	volume = 0.9
+	sounds = {
+		sound = Shizuko_speak_sound_1
+	}
+}
+
+sound = {
+	name = "Shizuko_speak_sound_2"
+	file = "voice/Shizuko_speak_sound_2.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Shizuko_speak_sound_2"
+	volume = 0.9
+	sounds = {
+		sound = Shizuko_speak_sound_2
+	}
+}
+
+sound = {
+	name = "Shizuko_speak_sound_3"
+	file = "voice/Shizuko_speak_sound_3.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Shizuko_speak_sound_3"
+	volume = 0.9
+	sounds = {
+		sound = Shizuko_speak_sound_3
+	}
+}
+
+sound = {
+	name = "Takane_speak_sound_1"
+	file = "voice/Takane_speak_sound_1.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Takane_speak_sound_1"
+	volume = 0.9
+	sounds = {
+		sound = Takane_speak_sound_1
+	}
+}
+
+sound = {
+	name = "Takane_speak_sound_2"
+	file = "voice/Takane_speak_sound_2.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Takane_speak_sound_2"
+	volume = 0.9
+	sounds = {
+		sound = Takane_speak_sound_2
+	}
+}
+
+sound = {
+	name = "Takane_speak_sound_3"
+	file = "voice/Takane_speak_sound_3.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Takane_speak_sound_3"
+	volume = 0.9
+	sounds = {
+		sound = Takane_speak_sound_3
+	}
+}
+
+sound = {
+	name = "Utaha_speak_sound_1"
+	file = "voice/Utaha_speak_sound_1.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Utaha_speak_sound_1"
+	volume = 0.9
+	sounds = {
+		sound = Utaha_speak_sound_1
+	}
+}
+
+sound = {
+	name = "Utaha_speak_sound_2"
+	file = "voice/Utaha_speak_sound_2.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Utaha_speak_sound_2"
+	volume = 0.9
+	sounds = {
+		sound = Utaha_speak_sound_2
+	}
+}
+
+sound = {
+	name = "Utaha_speak_sound_3"
+	file = "voice/Utaha_speak_sound_3.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Utaha_speak_sound_3"
+	volume = 0.9
+	sounds = {
+		sound = Utaha_speak_sound_3
+	}
+}
+
+sound = {
+	name = "Yuzu_speak_sound_1"
+	file = "voice/Yuzu_speak_sound_1.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Yuzu_speak_sound_1"
+	volume = 0.9
+	sounds = {
+		sound = Yuzu_speak_sound_1
+	}
+}
+
+sound = {
+	name = "Yuzu_speak_sound_2"
+	file = "voice/Yuzu_speak_sound_2.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Yuzu_speak_sound_2"
+	volume = 0.9
+	sounds = {
+		sound = Yuzu_speak_sound_2
+	}
+}
+
+sound = {
+	name = "Yuzu_speak_sound_3"
+	file = "voice/Yuzu_speak_sound_3.wav"
+	always_load = no
+}
+soundeffect = {
+	name = "effect_Yuzu_speak_sound_3"
+	volume = 0.9
+	sounds = {
+		sound = Yuzu_speak_sound_3
+	}
+}
+category = {
+	name = "Voice"
+	soundeffects = {
+		effect_Aris_speak_sound_1
+		effect_Aris_speak_sound_2
+		effect_Aris_speak_sound_3
+		effect_arona_menu_talk_00
+		effect_arona_menu_talk_01
+		effect_arona_menu_talk_02
+		effect_arona_menu_talk_03
+		effect_arona_menu_talk_04
+		effect_arona_menu_talk_05
+		effect_arona_menu_talk_06
+		effect_arona_menu_talk_07
+		effect_arona_menu_talk_08
+		effect_Chihiro_speak_sound_1
+		effect_Chihiro_speak_sound_2
+		effect_Chihiro_speak_sound_3
+		effect_Hare_speak_sound_1
+		effect_Hare_speak_sound_2
+		effect_Hare_speak_sound_3
+		effect_Hibiki_speak_sound_1
+		effect_Hibiki_speak_sound_2
+		effect_Hibiki_speak_sound_3
+		effect_Megu_speak_sound_1
+		effect_Megu_speak_sound_2
+		effect_Megu_speak_sound_3
+		effect_Midori_speak_sound_1
+		effect_Midori_speak_sound_2
+		effect_Midori_speak_sound_3
+		effect_Mika_speak_sound_1
+		effect_Mika_speak_sound_2
+		effect_Mika_speak_sound_3
+		effect_Momoi_speak_sound_1
+		effect_Momoi_speak_sound_2
+		effect_Momoi_speak_sound_3
+		effect_Nagisa_speak_sound_1
+		effect_Nagisa_speak_sound_2
+		effect_Nagisa_speak_sound_3
+		effect_Nonomi_speak_sound_1
+		effect_Nonomi_speak_sound_2
+		effect_Nonomi_speak_sound_3
+		effect_pulana_menu_talk_00
+		effect_pulana_menu_talk_01
+		effect_pulana_menu_talk_02
+		effect_pulana_menu_talk_03
+		effect_pulana_menu_talk_04
+		effect_pulana_menu_talk_05
+		effect_pulana_menu_talk_06
+		effect_pulana_menu_talk_07
+		effect_pulana_menu_talk_08
+		effect_Rumi_speak_sound_1
+		effect_Rumi_speak_sound_2
+		effect_Rumi_speak_sound_3
+		effect_Seia_speak_sound_1
+		effect_Seia_speak_sound_2
+		effect_Seia_speak_sound_3
+		effect_Shiroko_speak_sound_1
+		effect_Shiroko_speak_sound_2
+		effect_Shiroko_speak_sound_3
+		effect_Shizuko_speak_sound_1
+		effect_Shizuko_speak_sound_2
+		effect_Shizuko_speak_sound_3
+		effect_Takane_speak_sound_1
+		effect_Takane_speak_sound_2
+		effect_Takane_speak_sound_3
+		effect_Utaha_speak_sound_1
+		effect_Utaha_speak_sound_2
+		effect_Utaha_speak_sound_3
+		effect_Yuzu_speak_sound_1
+		effect_Yuzu_speak_sound_2
+		effect_Yuzu_speak_sound_3
+	}
+}
