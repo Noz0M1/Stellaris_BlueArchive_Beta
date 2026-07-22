@@ -2,7 +2,7 @@ weapon_component_template = {
 	key = "BA_HG_p"
 	size = point_defence
 	type = instant
-	icon = "GFX_Soft_determination"
+	icon = "GFX_BA_weapon_HG"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -14,7 +14,6 @@ weapon_component_template = {
 		weapon_type_point_defense
 		weapon_type_kinetic
 		weapon_type_Kivotos
-		weapon_type_mystic
 	}
 	ai_tags = {
 		weapon_role_point_defense
@@ -58,7 +57,7 @@ weapon_component_template = {
 	key = "BA_SMG_1_p"
 	size = point_defence
 	type = instant
-	icon = "GFX_Airi_Weapon"
+	icon = "GFX_BA_weapon_SMG_1"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -114,7 +113,7 @@ weapon_component_template = {
 	key = "BA_SMG_2_p"
 	size = point_defence
 	type = instant
-	icon = "GFX_Yuuka_Weapon"
+	icon = "GFX_BA_weapon_SMG_2"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -172,7 +171,7 @@ weapon_component_template = {
 	key = "BA_SMG_3_p"
 	size = point_defence
 	type = instant
-	icon = "GFX_Mika_Weapon"
+	icon = "GFX_BA_weapon_SMG_3"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -184,7 +183,6 @@ weapon_component_template = {
 		weapon_type_point_defense
 		weapon_type_kinetic
 		weapon_type_Kivotos
-		weapon_type_mystic
 	}
 	ai_tags = {
 		weapon_role_point_defense

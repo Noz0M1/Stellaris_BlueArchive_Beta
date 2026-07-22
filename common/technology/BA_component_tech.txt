@@ -1,0 +1,1032 @@
+#############
+### 舰船武器
+#############
+# 标准武器
+tech_BA_SPW_Standard_SG_1 = {
+	icon = tech_BA_SPW_Base_G
+	area = physics
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_reverse_engineerable = no
+	prerequisites = {
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier3weight1
+}
+
+tech_BA_SPW_Standard_SG_2 = {
+	icon = tech_BA_SPW_Base_G
+	area = physics
+	cost = @tier4cost1
+	category = {
+		school_tech
+	}
+	tier = 4
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Standard_SG_1
+		tech_BA_pyroxenes_using
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier4weight1
+}
+
+tech_BA_SPW_Standard_SG_3 = {
+	icon = tech_BA_SPW_Base_G
+	area = physics
+	cost = @tier5cost1
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Standard_SG_2
+		tech_BA_keystone_crafting
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight1
+}
+
+tech_BA_SPW_Standard_GL_1 = {
+	icon = tech_BA_SPW_Base_G
+	area = physics
+	cost = @tier4cost1
+	category = {
+		school_tech
+	}
+	tier = 4
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_torpedoes_1
+		tech_BA_keystone_crafting
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier4weight1
+}
+
+tech_BA_SPW_Standard_GL_2 = {
+	icon = tech_BA_SPW_Base_G
+	area = physics
+	cost = @tier5cost1
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Standard_GL_1
+		tech_BA_keystone_crafting
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight1
+}
+
+tech_BA_SPW_Standard_SMG_1 = {
+	icon = tech_BA_SPW_Base_P
+	area = physics
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_mass_drivers_4
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier3weight1
+}
+
+tech_BA_SPW_Standard_SMG_2 = {
+	icon = tech_BA_SPW_Base_P
+	area = physics
+	cost = @tier4cost1
+	category = {
+		school_tech
+	}
+	tier = 4
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Standard_SMG_1
+		tech_BA_pyroxenes_using
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier4weight1
+}
+
+tech_BA_SPW_Standard_SMG_3 = {
+	icon = tech_BA_SPW_Base_P
+	area = physics
+	cost = @tier5cost1
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Standard_SMG_2
+		tech_BA_keystone_crafting
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight1
+}
+
+tech_BA_SPW_Standard_AR_1 = {
+	icon = tech_BA_SPW_Base_M
+	area = engineering
+	cost = @tier4cost1
+	category = {
+		school_tech
+	}
+	tier = 4
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_mass_drivers_2
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier4weight1
+}
+
+tech_BA_SPW_Standard_AR_2 = {
+	icon = tech_BA_SPW_Base_M
+	area = engineering
+	cost = @tier5cost1
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Standard_AR_1
+		tech_BA_pyroxenes_using
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight1
+}
+
+tech_BA_SPW_Standard_SR_1 = {
+	icon = tech_BA_SPW_Base_L
+	area = engineering
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_mass_drivers_4
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier3weight1
+}
+
+tech_BA_SPW_Standard_SR_2 = {
+	icon = tech_BA_SPW_Base_L
+	area = engineering
+	cost = @tier4cost1
+	category = {
+		school_tech
+	}
+	tier = 4
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Standard_SR_1
+		tech_BA_pyroxenes_using
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier4weight1
+}
+
+tech_BA_SPW_Standard_SR_3 = {
+	icon = tech_BA_SPW_Base_L
+	area = engineering
+	cost = @tier5cost1
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Standard_SR_2
+		tech_BA_keystone_crafting
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight1
+}
+
+tech_BA_SPW_Standard_MG_1 = {
+	icon = tech_BA_SPW_Base_X
+	area = engineering
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_mass_drivers_2
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier3weight1
+}
+
+tech_BA_SPW_Standard_MG_2 = {
+	icon = tech_BA_SPW_Base_X
+	area = engineering
+	cost = @tier4cost1
+	category = {
+		school_tech
+	}
+	tier = 4
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Standard_MG_1
+		tech_BA_pyroxenes_using
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier4weight1
+}
+
+tech_BA_SPW_Standard_MG_3 = {
+	icon = tech_BA_SPW_Base_X
+	area = engineering
+	cost = @tier5cost1
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Standard_MG_2
+		tech_BA_keystone_crafting
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight1
+}
+
+tech_BA_SPW_Standard_HG = {
+	icon = tech_BA_SPW_Base_S
+	area = engineering
+	cost = @tier2cost3
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_reverse_engineerable = no
+	prerequisites = {
+		#TODO:前置科技
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier2weight3
+}
+
+tech_BA_SPW_Standard_RG = {
+	icon = tech_BA_SPW_Base_T
+	area = physics
+	cost = @tier5cost3
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_rare = yes
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_battleships
+		tech_disruptors_3
+		tech_BA_pyroxenes_using
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight3
+}
+
+# 精选武器
+tech_BA_SPW_Selected_Megumine = {
+	icon = tech_BA_SPW_Base_G
+	area = physics
+	cost = @tier5cost3
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		tech_BA_SPW_Standard_GL_2
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight3
+}
+
+#############
+### 舰船装备
+#############
+# 1号装备：进攻型（帽子、手套、鞋子）
+tech_BA_EQ_Offense_T1 = {
+	area = physics
+	cost = @tier1cost1
+	category = {
+		school_tech
+	}
+	tier = 1
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_ship_armor_2"
+		"tech_shields_2"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier1weight1
+}
+
+tech_BA_EQ_Offense_T2 = {
+	area = physics
+	cost = @tier1cost3
+	category = {
+		school_tech
+	}
+	tier = 1
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Offense_T1"
+		"tech_fusion_power"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier1weight3
+}
+
+tech_BA_EQ_Offense_T3 = {
+	area = physics
+	cost = @tier2cost2
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Offense_T2"
+		"tech_ship_armor_3"
+		"tech_shields_3"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier2weight2
+}
+
+tech_BA_EQ_Offense_T4 = {
+	area = physics
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Offense_T3"
+		"tech_cold_fusion_power"
+		"tech_BA_keystone_crafting"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier3weight1
+}
+
+tech_BA_EQ_Offense_T5 = {
+	area = physics
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Offense_T4"
+		"tech_ship_armor_4"
+		"tech_shields_4"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier3weight2
+}
+
+tech_BA_EQ_Offense_T6 = {
+	area = physics
+	cost = @tier3cost3
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Offense_T5"
+		"tech_antimatter_power"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier3weight3
+}
+
+tech_BA_EQ_Offense_T7 = {
+	area = physics
+	cost = @tier4cost2
+	category = {
+		school_tech
+	}
+	tier = 4
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Offense_T6"
+		"tech_ship_armor_5"
+		"tech_shields_5"
+		"tech_zero_point_power"
+		"tech_BA_keystone_automatic_crafting"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier4weight2
+}
+
+tech_BA_EQ_Offense_T8 = {
+	area = physics
+	cost = @tier5cost1
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_rare = yes
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Offense_T7"
+		"tech_BA_dark_matter_absorbing"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight1
+}
+
+tech_BA_EQ_Offense_T9 = {
+	area = physics
+	cost = @tier5cost2
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Offense_T8"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight2
+}
+
+tech_BA_EQ_Offense_T10 = {
+	area = physics
+	cost = @tier5cost3
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Offense_T9"
+		"tech_BA_keystone_megastructure_crafting"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight3
+}
+
+# 2号装备：防御型（徽章、背包、发夹）
+tech_BA_EQ_Defense_T1 = {
+	area = engineering
+	cost = @tier1cost1
+	category = {
+		school_tech
+	}
+	tier = 1
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_ship_armor_2"
+		"tech_shields_2"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier1weight1
+}
+
+tech_BA_EQ_Defense_T2 = {
+	area = engineering
+	cost = @tier1cost3
+	category = {
+		school_tech
+	}
+	tier = 1
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Defense_T1"
+		"tech_fusion_power"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier1weight3
+}
+
+tech_BA_EQ_Defense_T3 = {
+	area = engineering
+	cost = @tier2cost2
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Defense_T2"
+		"tech_ship_armor_3"
+		"tech_shields_3"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier2weight2
+}
+
+tech_BA_EQ_Defense_T4 = {
+	area = engineering
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Defense_T3"
+		"tech_cold_fusion_power"
+		"tech_BA_keystone_crafting"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier3weight1
+}
+
+tech_BA_EQ_Defense_T5 = {
+	area = engineering
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Defense_T4"
+		"tech_ship_armor_4"
+		"tech_shields_4"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier3weight2
+}
+
+tech_BA_EQ_Defense_T6 = {
+	area = engineering
+	cost = @tier3cost3
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Defense_T5"
+		"tech_antimatter_power"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier3weight3
+}
+
+tech_BA_EQ_Defense_T7 = {
+	area = engineering
+	cost = @tier4cost2
+	category = {
+		school_tech
+	}
+	tier = 4
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Defense_T6"
+		"tech_ship_armor_5"
+		"tech_shields_5"
+		"tech_zero_point_power"
+		"tech_BA_keystone_automatic_crafting"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier4weight2
+}
+
+tech_BA_EQ_Defense_T8 = {
+	area = engineering
+	cost = @tier5cost1
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_rare = yes
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Defense_T7"
+		"tech_BA_dark_matter_absorbing"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight1
+}
+
+tech_BA_EQ_Defense_T9 = {
+	area = engineering
+	cost = @tier5cost2
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Defense_T8"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight2
+}
+
+tech_BA_EQ_Defense_T10 = {
+	area = engineering
+	cost = @tier5cost3
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Defense_T9"
+		"tech_BA_keystone_megastructure_crafting"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight3
+}
+
+# 3号装备：辅助型（手表、项链、护符）
+tech_BA_EQ_Auxiliary_T1 = {
+	area = physics
+	cost = @tier1cost1
+	category = {
+		school_tech
+	}
+	tier = 1
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_ship_armor_2"
+		"tech_shields_2"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier1weight1
+}
+
+tech_BA_EQ_Auxiliary_T2 = {
+	area = physics
+	cost = @tier1cost3
+	category = {
+		school_tech
+	}
+	tier = 1
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Auxiliary_T1"
+		"tech_fusion_power"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier1weight3
+}
+
+tech_BA_EQ_Auxiliary_T3 = {
+	area = physics
+	cost = @tier2cost2
+	category = {
+		school_tech
+	}
+	tier = 2
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Auxiliary_T2"
+		"tech_ship_armor_3"
+		"tech_shields_3"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier2weight2
+}
+
+tech_BA_EQ_Auxiliary_T4 = {
+	area = physics
+	cost = @tier3cost1
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Auxiliary_T3"
+		"tech_cold_fusion_power"
+		"tech_BA_keystone_crafting"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier3weight1
+}
+
+tech_BA_EQ_Auxiliary_T5 = {
+	area = physics
+	cost = @tier3cost2
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Auxiliary_T4"
+		"tech_ship_armor_4"
+		"tech_shields_4"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier3weight2
+}
+
+tech_BA_EQ_Auxiliary_T6 = {
+	area = physics
+	cost = @tier3cost3
+	category = {
+		school_tech
+	}
+	tier = 3
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Auxiliary_T5"
+		"tech_antimatter_power"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier3weight3
+}
+
+tech_BA_EQ_Auxiliary_T7 = {
+	area = physics
+	cost = @tier4cost2
+	category = {
+		school_tech
+	}
+	tier = 4
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Auxiliary_T6"
+		"tech_ship_armor_5"
+		"tech_shields_5"
+		"tech_zero_point_power"
+		"tech_BA_keystone_automatic_crafting"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier4weight2
+}
+
+tech_BA_EQ_Auxiliary_T8 = {
+	area = physics
+	cost = @tier5cost1
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_rare = yes
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Auxiliary_T7"
+		"tech_BA_dark_matter_absorbing"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight1
+}
+
+tech_BA_EQ_Auxiliary_T9 = {
+	area = physics
+	cost = @tier5cost2
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Auxiliary_T8"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight2
+}
+
+tech_BA_EQ_Auxiliary_T10 = {
+	area = physics
+	cost = @tier5cost3
+	category = {
+		school_tech
+	}
+	tier = 5
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {
+		"tech_BA_EQ_Auxiliary_T9"
+		"tech_BA_keystone_megastructure_crafting"
+	}
+	prereqfor_desc = {
+	}
+	potential = {
+		has_authority = auth_kivotos
+	}
+	weight = @tier5weight3
+}

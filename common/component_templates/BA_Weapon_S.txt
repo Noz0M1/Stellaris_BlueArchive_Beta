@@ -2,7 +2,7 @@ weapon_component_template = {
 	key = "BA_HG_S"
 	size = small
 	type = instant
-	icon = "GFX_Soft_determination"
+	icon = "GFX_BA_weapon_HG"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -14,7 +14,6 @@ weapon_component_template = {
 		s_slot
 		weapon_type_kinetic
 		weapon_type_Kivotos
-		weapon_type_mystic
 	}
 	ai_tags = {
 		weapon_role_anti_hull
@@ -59,7 +58,7 @@ weapon_component_template = {
 	key = "BA_SG_1_s"
 	size = small
 	type = instant
-	icon = "GFX_Juri_Weapon"
+	icon = "GFX_BA_weapon_SG_1"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -118,7 +117,7 @@ weapon_component_template = {
 	key = "BA_SG_2_s"
 	size = small
 	type = instant
-	icon = "GFX_Juri_Weapon"
+	icon = "GFX_BA_weapon_SG_2"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -179,7 +178,7 @@ weapon_component_template = {
 	key = "BA_SG_3_s"
 	size = small
 	type = instant
-	icon = "GFX_Hoshino_Weapon"
+	icon = "GFX_BA_weapon_SG_3"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -191,7 +190,6 @@ weapon_component_template = {
 		s_slot
 		weapon_type_kinetic
 		weapon_type_Kivotos
-		weapon_type_penetration
 	}
 	ai_tags = {
 		explosive
@@ -240,7 +238,7 @@ weapon_component_template = {
 	key = "BA_SMG_1_s"
 	size = small
 	type = instant
-	icon = "GFX_Mika_Weapon"
+	icon = "GFX_BA_weapon_SMG_1"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -296,7 +294,7 @@ weapon_component_template = {
 	key = "BA_SMG_2_s"
 	size = small
 	type = instant
-	icon = "GFX_Airi_Weapon"
+	icon = "GFX_BA_weapon_SMG_2"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -354,7 +352,7 @@ weapon_component_template = {
 	key = "BA_SMG_3_s"
 	size = small
 	type = instant
-	icon = "GFX_Airi_Weapon"
+	icon = "GFX_BA_weapon_SMG_3"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -366,7 +364,6 @@ weapon_component_template = {
 		s_slot
 		weapon_type_kinetic
 		weapon_type_Kivotos
-		weapon_type_explosion
 	}
 	ai_tags = {
 		gunship
@@ -412,7 +409,7 @@ weapon_component_template = {
 	key = "BA_AR_1_s"
 	size = small
 	type = instant
-	icon = "GFX_Shiroko_Weapon"
+	icon = "GFX_BA_weapon_AR_1"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -470,7 +467,7 @@ weapon_component_template = {
 	key = "BA_AR_2_s"
 	size = small
 	type = instant
-	icon = "GFX_Hanae_Weapon"
+	icon = "GFX_BA_weapon_AR_2"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -482,7 +479,6 @@ weapon_component_template = {
 		s_slot
 		weapon_type_kinetic
 		weapon_type_Kivotos
-		weapon_type_explosion
 	}
 	ai_tags = {
 		gunship

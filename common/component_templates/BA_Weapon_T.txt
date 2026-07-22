@@ -2,7 +2,7 @@ weapon_component_template = {
 	key = "BA_MG_t"
 	size = titanic
 	type = instant
-	icon = "GFX_Hina_Weapon"
+	icon = "GFX_BA_weapon_MG_3"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -13,7 +13,6 @@ weapon_component_template = {
 	tags = {
 		weapon_type_kinetic
 		weapon_type_Kivotos
-		weapon_type_explosion
 	}
 	ai_tags = {
 		gunship

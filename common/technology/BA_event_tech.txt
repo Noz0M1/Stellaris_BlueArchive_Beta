@@ -1300,8 +1300,7 @@ tech_repeatable_weapon_type_Kivotos_physics_research = {
 	modifier = {
 		weapon_type_Kivotos_weapon_fire_rate_mult = 0.05
 		weapon_type_Kivotos_weapon_damage_mult = 0.05
-		weapon_type_mystic_weapon_fire_rate_mult = 0.05
-		weapon_type_mystic_weapon_damage_mult = 0.05
+		ship_fire_rate_mult = 0.02
 	}
 	potential = {
 		has_authority = auth_kivotos
@@ -1326,8 +1325,7 @@ tech_repeatable_weapon_type_Kivotos_society_research = {
 	modifier = {
 		weapon_type_Kivotos_weapon_fire_rate_mult = 0.05
 		weapon_type_Kivotos_weapon_damage_mult = 0.05
-		weapon_type_penetration_weapon_fire_rate_mult = 0.05
-		weapon_type_penetration_weapon_damage_mult = 0.05
+		ship_experience_gain_mult = 0.1
 	}
 	potential = {
 		has_authority = auth_kivotos
@@ -1352,8 +1350,7 @@ tech_repeatable_weapon_type_Kivotos_engineering_research = {
 	modifier = {
 		weapon_type_Kivotos_weapon_fire_rate_mult = 0.05
 		weapon_type_Kivotos_weapon_damage_mult = 0.05
-		weapon_type_explosion_weapon_fire_rate_mult = 0.05
-		weapon_type_explosion_weapon_damage_mult = 0.05
+		ship_weapon_damage = 0.02
 	}
 	potential = {
 		has_authority = auth_kivotos

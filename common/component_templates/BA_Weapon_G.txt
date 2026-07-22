@@ -2,7 +2,7 @@ weapon_component_template = {
 	key = "BA_SG_1_g"
 	size = torpedo
 	type = instant
-	icon = "GFX_Juri_Weapon"
+	icon = "GFX_BA_weapon_SG_1"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -61,7 +61,7 @@ weapon_component_template = {
 	key = "BA_SG_2_g"
 	size = torpedo
 	type = instant
-	icon = "GFX_Juri_Weapon"
+	icon = "GFX_BA_weapon_SG_2"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -122,7 +122,7 @@ weapon_component_template = {
 	key = "BA_SG_3_g"
 	size = torpedo
 	type = instant
-	icon = "GFX_Hoshino_Weapon"
+	icon = "GFX_BA_weapon_SG_3"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -134,7 +134,6 @@ weapon_component_template = {
 		g_slot
 		weapon_type_kinetic
 		weapon_type_Kivotos
-		weapon_type_penetration
 	}
 	ai_tags = {
 		explosive
@@ -183,7 +182,7 @@ weapon_component_template = {
 	key = "BA_Megumine_g"
 	size = torpedo
 	type = instant
-	icon = "GFX_Megu_Weapon"
+	icon = "GFX_BA_weapon_Megumin"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -196,7 +195,6 @@ weapon_component_template = {
 		weapon_type_energy
 		weapon_type_explosive
 		weapon_type_Kivotos
-		weapon_type_explosion
 	}
 	ai_tags = {
 		explosive
@@ -327,7 +325,6 @@ weapon_component_template = {
 		g_slot
 		weapon_type_explosive
 		weapon_type_Kivotos
-		weapon_type_mystic
 	}
 	ai_tags = {
 		weapon_role_artillery

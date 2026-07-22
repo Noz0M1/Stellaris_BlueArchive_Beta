@@ -2,7 +2,7 @@ weapon_component_template = {
 	key = "BA_AR_1_l"
 	size = large
 	type = instant
-	icon = "GFX_Shiroko_Weapon"
+	icon = "GFX_BA_weapon_AR_1"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -60,7 +60,7 @@ weapon_component_template = {
 	key = "BA_AR_2_l"
 	size = large
 	type = instant
-	icon = "GFX_Hanae_Weapon"
+	icon = "GFX_BA_weapon_AR_2"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -72,7 +72,6 @@ weapon_component_template = {
 		l_slot
 		weapon_type_kinetic
 		weapon_type_Kivotos
-		weapon_type_explosion
 	}
 	ai_tags = {
 		gunship
@@ -118,7 +117,7 @@ weapon_component_template = {
 	key = "BA_SR_1_l"
 	size = large
 	type = instant
-	icon = "GFX_Mashiro_Weapon"
+	icon = "GFX_BA_weapon_SR_1"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -175,7 +174,7 @@ weapon_component_template = {
 	key = "BA_SR_2_l"
 	size = large
 	type = instant
-	icon = "GFX_Hiyori_Weapon"
+	icon = "GFX_BA_weapon_SR_2"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -234,7 +233,7 @@ weapon_component_template = {
 	key = "BA_SR_3_l"
 	size = large
 	type = instant
-	icon = "GFX_Karin_Weapon"
+	icon = "GFX_BA_weapon_SR_3"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -246,7 +245,6 @@ weapon_component_template = {
 		l_slot
 		weapon_type_kinetic
 		weapon_type_Kivotos
-		weapon_type_penetration
 	}
 	ai_tags = {
 		gunship
@@ -293,7 +291,7 @@ weapon_component_template = {
 	key = "BA_MG_1_l"
 	size = large
 	type = instant
-	icon = "GFX_Nonomi_Weapon"
+	icon = "GFX_BA_weapon_MG_1"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -349,7 +347,7 @@ weapon_component_template = {
 	key = "BA_MG_2_l"
 	size = large
 	type = instant
-	icon = "GFX_Maki_Weapon"
+	icon = "GFX_BA_weapon_MG_2"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -407,7 +405,7 @@ weapon_component_template = {
 	key = "BA_MG_3_l"
 	size = large
 	type = instant
-	icon = "GFX_Hina_Weapon"
+	icon = "GFX_BA_weapon_MG_3"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	prerequisites = {
@@ -419,7 +417,6 @@ weapon_component_template = {
 		l_slot
 		weapon_type_kinetic
 		weapon_type_Kivotos
-		weapon_type_explosion
 	}
 	ai_tags = {
 		gunship
