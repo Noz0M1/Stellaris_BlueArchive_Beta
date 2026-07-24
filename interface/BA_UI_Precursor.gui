@@ -1,7 +1,7 @@
 guiTypes = {
-	# reward choice entry.
+	# Precursor main-window choice entry.
 	containerWindowType = {
-		name = "BA_Precursor_Reward_option"
+		name = "BA_Precursor_option"
 		position = {
 			x = 0
 			y = 0
@@ -46,9 +46,9 @@ guiTypes = {
 			format = right
 		}
 	}
-	# reward selection window.
+	# Precursor main window.
 	containerWindowType = {
-		name = "BA_Precursor_Reward_window"
+		name = "BA_Precursor_window"
 		orientation = center
 		origo = center
 		position = {
@@ -68,7 +68,7 @@ guiTypes = {
 		# Static Seia portrait. 44 + 576 = 620, flush with the top edge of
 		# the 30 px bottom frame.
 		iconType = {
-			name = "BA_Precursor_reward_portrait"
+			name = "BA_Precursor_portrait"
 			position = {
 				x = 160
 				y = 44
@@ -78,7 +78,7 @@ guiTypes = {
 		}
 		# Half-scale precursor topbar.
 		iconType = {
-			name = "BA_Precursor_reward_topbar"
+			name = "BA_Precursor_topbar"
 			position = {
 				x = 92
 				y = 28
@@ -113,150 +113,8 @@ guiTypes = {
 			format = left
 			scrollbartype = "standardtext_slider"
 		}
-		# Resource choose button
-		containerWindowType = {
-			name = BA_Precursor_reward_choose
-			position = {
-				x = 648
-				y = 100
-			}
-			size = {
-				width = 432
-				height = 69
-			}
-			moveable = no
-			effectButtonType = {
-				name = "BA_Precursor_reward_choice_base_bg_off"
-				position = {
-					x = 20
-					y = 0
-				}
-				quadTextureSprite = "GFX_BA_Precursor_reward_choice_bg_off"
-				scale = 0.25
-				effect = button_effect_BA_Precursor_reward_choice_base_bg_off
-				clicksound = "confirm_click"
-			}
-			effectButtonType = {
-				name = "BA_Precursor_reward_choice_base_bg_on"
-				position = {
-					x = 20
-					y = 0
-				}
-				quadTextureSprite = "GFX_BA_Precursor_reward_choice_bg_on"
-				scale = 0.25
-				effect = button_effect_BA_Precursor_reward_choice_base_bg_on
-				clicksound = "confirm_click"
-			}
-			effectButtonType = {
-				name = "BA_Precursor_reward_choice_tech_bg_off"
-				position = {
-					x = 128
-					y = 0
-				}
-				quadTextureSprite = "GFX_BA_Precursor_reward_choice_bg_off"
-				scale = 0.25
-				effect = button_effect_BA_Precursor_reward_choice_tech_bg_off
-				clicksound = "confirm_click"
-			}
-			effectButtonType = {
-				name = "BA_Precursor_reward_choice_tech_bg_on"
-				position = {
-					x = 128
-					y = 0
-				}
-				quadTextureSprite = "GFX_BA_Precursor_reward_choice_bg_on"
-				scale = 0.25
-				effect = button_effect_BA_Precursor_reward_choice_tech_bg_on
-				clicksound = "confirm_click"
-			}
-			effectButtonType = {
-				name = "BA_Precursor_reward_choice_industry_bg_off"
-				position = {
-					x = 236
-					y = 0
-				}
-				quadTextureSprite = "GFX_BA_Precursor_reward_choice_bg_off"
-				scale = 0.25
-				effect = button_effect_BA_Precursor_reward_choice_industry_bg_off
-				clicksound = "confirm_click"
-			}
-			effectButtonType = {
-				name = "BA_Precursor_reward_choice_industry_bg_on"
-				position = {
-					x = 236
-					y = 0
-				}
-				quadTextureSprite = "GFX_BA_Precursor_reward_choice_bg_on"
-				scale = 0.25
-				effect = button_effect_BA_Precursor_reward_choice_industry_bg_on
-				clicksound = "confirm_click"
-			}
-			effectButtonType = {
-				name = "BA_Precursor_reward_choice_trade_bg_off"
-				position = {
-					x = 344
-					y = 0
-				}
-				quadTextureSprite = "GFX_BA_Precursor_reward_choice_bg_off"
-				scale = 0.25
-				effect = button_effect_BA_Precursor_reward_choice_trade_bg_off
-				clicksound = "confirm_click"
-			}
-			effectButtonType = {
-				name = "BA_Precursor_reward_choice_trade_bg_on"
-				position = {
-					x = 344
-					y = 0
-				}
-				quadTextureSprite = "GFX_BA_Precursor_reward_choice_bg_on"
-				scale = 0.25
-				effect = button_effect_BA_Precursor_reward_choice_trade_bg_on
-				clicksound = "confirm_click"
-			}
-			# Category icons are visual overlays; clicks pass through to the
-			# currently visible on/off background button.
-			iconType = {
-				name = "BA_Precursor_reward_choice_base_icon"
-				position = {
-					x = 26
-					y = 8
-				}
-				quadTextureSprite = "GFX_BA_Precursor_reward_choice_base"
-				scale = 0.32
-				alwaysTransparent = yes
-			}
-			iconType = {
-				name = "BA_Precursor_reward_choice_tech_icon"
-				position = {
-					x = 135
-					y = 6
-				}
-				quadTextureSprite = "GFX_BA_Precursor_reward_choice_tech"
-				scale = 0.32
-				alwaysTransparent = yes
-			}
-			iconType = {
-				name = "BA_Precursor_reward_choice_industry_icon"
-				position = {
-					x = 241
-					y = 8
-				}
-				quadTextureSprite = "GFX_BA_Precursor_reward_choice_industry"
-				scale = 0.32
-				alwaysTransparent = yes
-			}
-			iconType = {
-				name = "BA_Precursor_reward_choice_trade_icon"
-				position = {
-					x = 349
-					y = 8
-				}
-				quadTextureSprite = "GFX_BA_Precursor_reward_choice_trade"
-				scale = 0.32
-				alwaysTransparent = yes
-			}
-		}
-		# Compact event choices
+		# Compact event choices. The reward category buttons are intentionally
+		# omitted; the option list occupies their former vertical position.
 		containerWindowType = {
 			name = "EVENT_DIPLO"
 			position = {
@@ -296,11 +154,11 @@ guiTypes = {
 				name = "option_list"
 				position = {
 					x = 648
-					y = 180
+					y = 100
 				}
 				size = {
 					x = 432
-					y = 420
+					y = 500
 				}
 				spacing = 0
 				scrollbartype = "standardlistbox_slider"

@@ -690,7 +690,8 @@ country_event = {
 	id = BA_Precursor.0152
 	is_triggered_only = yes
 	diplomatic = yes
-	custom_gui = "BA_Window"
+	custom_gui = BA_Precursor_window
+	custom_gui_option = BA_Precursor_option
 	picture_event_data = {
 		portrait = event_target:BA_Precursor_country
 		room = BA_01_room
@@ -748,14 +749,11 @@ country_event = {
 	id = BA_Precursor.0160
 	is_triggered_only = yes
 	diplomatic = yes
-	custom_gui = "BA_Window"
-	picture_event_data = {
-		portrait = event_target:BA_Precursor_country
-		room = BA_01_room
-	}
+	custom_gui = BA_Precursor_Reward_window
+	custom_gui_option = BA_Precursor_Reward_option
 	title = BA_Precursor.coop_reward
 	desc = BA_Precursor.coop_reward.desc
-	# 退出
+	# 退出兜底：当所有奖励均已领取时，保证事件仍有有效选项。
 	option = {
 		name = BA_Precursor.exit
 		default_hide_option = yes
@@ -765,79 +763,578 @@ country_event = {
 			}
 		}
 	}
-	### 每一档都有资源奖励。除非只有这个，否则不写出。
 	# 1档：资源
 	option = {
 		name = BA_Precursor.coop_reward.1
+		custom_tooltip = BA_Precursor.coop_reward.1.tip
+		is_dialog_only = yes
+		response_text = BA_Precursor.coop_reward.1.re
 		trigger = {
 			check_variable = {
-				which = BA_Precursor_coop_score
-				value >= BA_Precursor_coop_reward_1
-			}
-			check_variable = {
 				which = BA_Precursor_coop_claimed
-				value < BA_Precursor_coop_reward_1
-			}
-		}
-		hidden_effect = {
-			set_variable = {
-				which = BA_Precursor_coop_claimed
-				value = BA_Precursor_coop_reward_1
-			}
-		}
-		country_event = {
-			id = BA_Precursor.0161
-		}
-	}
-	# 2档：开放“天使24”便利店
-	option = {
-		name = BA_Precursor.coop_reward.2
-		trigger = {
-			check_variable = {
-				which = BA_Precursor_coop_score
-				value >= BA_Precursor_coop_reward_2
-			}
-			check_variable = {
-				which = BA_Precursor_coop_claimed
-				value < BA_Precursor_coop_reward_2
+				value < @BA_Precursor_coop_reward_1
 			}
 		}
 		allow = {
+			# 一档不检测合作量，直接领取
 			custom_tooltip = {
-				fail_text = BA_Precursor.coop_reward.unclamed
-				check_variable = {
-					which = BA_Precursor_coop_claimed
-					value >= BA_Precursor_coop_reward_1
+				fail_text = BA_Precursor.coop_reward.nochoice
+				OR = {
+					has_country_flag = BA_Precursor_reward_choice_base
+					has_country_flag = BA_Precursor_reward_choice_tech
+					has_country_flag = BA_Precursor_reward_choice_industry
+					has_country_flag = BA_Precursor_reward_choice_trade
 				}
 			}
 		}
 		hidden_effect = {
 			set_variable = {
 				which = BA_Precursor_coop_claimed
-				value = BA_Precursor_coop_reward_2
+				value = @BA_Precursor_coop_reward_1
+			}
+			BA_Precursor_reward_resource = yes
+		}
+	}
+	# 2档：开放“天使24”便利店
+	option = {
+		name = BA_Precursor.coop_reward.2
+		custom_tooltip = BA_Precursor.coop_reward.2.tip
+		is_dialog_only = yes
+		response_text = BA_Precursor.coop_reward.2.re
+		trigger = {
+			check_variable = {
+				which = BA_Precursor_coop_claimed
+				value < @BA_Precursor_coop_reward_2
 			}
 		}
-		remove_country_flag = BA_Angel24_locked
+		allow = {
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_Precursor_coop_score
+						value < @BA_Precursor_coop_reward_2
+					}
+				}
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.notreach
+					always = no
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = BA_Precursor_coop_claimed
+						value < @BA_Precursor_coop_reward_1
+					}
+				}
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.unclamed
+					always = no
+				}
+			}
+			else = {
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.nochoice
+					OR = {
+						has_country_flag = BA_Precursor_reward_choice_base
+						has_country_flag = BA_Precursor_reward_choice_tech
+						has_country_flag = BA_Precursor_reward_choice_industry
+						has_country_flag = BA_Precursor_reward_choice_trade
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			remove_country_flag = BA_Angel24_locked
+			set_variable = {
+				which = BA_Precursor_coop_claimed
+				value = @BA_Precursor_coop_reward_2
+			}
+			BA_Precursor_reward_resource = yes
+		}
 	}
 	# 3档：更新领袖储备-先驱者
-	# 4档：暗物质浓缩机科技
+	option = {
+		name = BA_Precursor.coop_reward.3
+		custom_tooltip = BA_Precursor.coop_reward.3.tip
+		is_dialog_only = yes
+		response_text = BA_Precursor.coop_reward.3.re
+		trigger = {
+			check_variable = {
+				which = BA_Precursor_coop_claimed
+				value < @BA_Precursor_coop_reward_3
+			}
+		}
+		allow = {
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_Precursor_coop_score
+						value < @BA_Precursor_coop_reward_3
+					}
+				}
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.notreach
+					always = no
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = BA_Precursor_coop_claimed
+						value < @BA_Precursor_coop_reward_2
+					}
+				}
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.unclamed
+					always = no
+				}
+			}
+			else = {
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.nochoice
+					OR = {
+						has_country_flag = BA_Precursor_reward_choice_base
+						has_country_flag = BA_Precursor_reward_choice_tech
+						has_country_flag = BA_Precursor_reward_choice_industry
+						has_country_flag = BA_Precursor_reward_choice_trade
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				which = BA_Precursor_coop_claimed
+				value = @BA_Precursor_coop_reward_3
+			}
+			BA_Precursor_reward_resource = yes
+			country_event = {
+				id = BA_Shittem.1302
+			}
+		}
+	}
+	# 4档：暗物质浓缩科技
+	option = {
+		name = BA_Precursor.coop_reward.4
+		custom_tooltip = BA_Precursor.coop_reward.4.tip
+		is_dialog_only = yes
+		response_text = BA_Precursor.coop_reward.4.re
+		trigger = {
+			check_variable = {
+				which = BA_Precursor_coop_claimed
+				value < @BA_Precursor_coop_reward_4
+			}
+		}
+		allow = {
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_Precursor_coop_score
+						value < @BA_Precursor_coop_reward_4
+					}
+				}
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.notreach
+					always = no
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = BA_Precursor_coop_claimed
+						value < @BA_Precursor_coop_reward_3
+					}
+				}
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.unclamed
+					always = no
+				}
+			}
+			else = {
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.nochoice
+					OR = {
+						has_country_flag = BA_Precursor_reward_choice_base
+						has_country_flag = BA_Precursor_reward_choice_tech
+						has_country_flag = BA_Precursor_reward_choice_industry
+						has_country_flag = BA_Precursor_reward_choice_trade
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				which = BA_Precursor_coop_claimed
+				value = @BA_Precursor_coop_reward_4
+			}
+			BA_Precursor_reward_resource = yes
+			give_technology = {
+				tech = tech_BA_dark_matter_absorbing
+			}
+		}
+	}
 	# 5档：更新领袖储备-先驱者
+	option = {
+		name = BA_Precursor.coop_reward.5
+		custom_tooltip = BA_Precursor.coop_reward.5.tip
+		is_dialog_only = yes
+		response_text = BA_Precursor.coop_reward.5.re
+		trigger = {
+			check_variable = {
+				which = BA_Precursor_coop_claimed
+				value < @BA_Precursor_coop_reward_5
+			}
+		}
+		allow = {
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_Precursor_coop_score
+						value < @BA_Precursor_coop_reward_5
+					}
+				}
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.notreach
+					always = no
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = BA_Precursor_coop_claimed
+						value < @BA_Precursor_coop_reward_4
+					}
+				}
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.unclamed
+					always = no
+				}
+			}
+			else = {
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.nochoice
+					OR = {
+						has_country_flag = BA_Precursor_reward_choice_base
+						has_country_flag = BA_Precursor_reward_choice_tech
+						has_country_flag = BA_Precursor_reward_choice_industry
+						has_country_flag = BA_Precursor_reward_choice_trade
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				which = BA_Precursor_coop_claimed
+				value = @BA_Precursor_coop_reward_5
+			}
+			BA_Precursor_reward_resource = yes
+			country_event = {
+				id = BA_Shittem.1302
+			}
+		}
+	}
 	# 6档：+1可选学园理念（次要）
+	option = {
+		name = BA_Precursor.coop_reward.6
+		custom_tooltip = BA_Precursor.coop_reward.6.tip
+		is_dialog_only = yes
+		response_text = BA_Precursor.coop_reward.6.re
+		trigger = {
+			check_variable = {
+				which = BA_Precursor_coop_claimed
+				value < @BA_Precursor_coop_reward_6
+			}
+		}
+		allow = {
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_Precursor_coop_score
+						value < @BA_Precursor_coop_reward_6
+					}
+				}
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.notreach
+					always = no
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = BA_Precursor_coop_claimed
+						value < @BA_Precursor_coop_reward_5
+					}
+				}
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.unclamed
+					always = no
+				}
+			}
+			else = {
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.nochoice
+					OR = {
+						has_country_flag = BA_Precursor_reward_choice_base
+						has_country_flag = BA_Precursor_reward_choice_tech
+						has_country_flag = BA_Precursor_reward_choice_industry
+						has_country_flag = BA_Precursor_reward_choice_trade
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				which = BA_Precursor_coop_claimed
+				value = @BA_Precursor_coop_reward_6
+			}
+			BA_Precursor_reward_resource = yes
+			add_modifier = {
+				modifier = modifier_BA_Precursor_coop_school_idea
+			}
+		}
+	}
 	# 7档：更新领袖储备-先驱者
+	option = {
+		name = BA_Precursor.coop_reward.7
+		custom_tooltip = BA_Precursor.coop_reward.7.tip
+		is_dialog_only = yes
+		response_text = BA_Precursor.coop_reward.7.re
+		trigger = {
+			check_variable = {
+				which = BA_Precursor_coop_claimed
+				value < @BA_Precursor_coop_reward_7
+			}
+		}
+		allow = {
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_Precursor_coop_score
+						value < @BA_Precursor_coop_reward_7
+					}
+				}
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.notreach
+					always = no
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = BA_Precursor_coop_claimed
+						value < @BA_Precursor_coop_reward_6
+					}
+				}
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.unclamed
+					always = no
+				}
+			}
+			else = {
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.nochoice
+					OR = {
+						has_country_flag = BA_Precursor_reward_choice_base
+						has_country_flag = BA_Precursor_reward_choice_tech
+						has_country_flag = BA_Precursor_reward_choice_industry
+						has_country_flag = BA_Precursor_reward_choice_trade
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				which = BA_Precursor_coop_claimed
+				value = @BA_Precursor_coop_reward_7
+			}
+			BA_Precursor_reward_resource = yes
+			country_event = {
+				id = BA_Shittem.1302
+			}
+		}
+	}
 	# 8档：遗珍-谜之种
+	option = {
+		name = BA_Precursor.coop_reward.8
+		custom_tooltip = BA_Precursor.coop_reward.8.tip
+		is_dialog_only = yes
+		response_text = BA_Precursor.coop_reward.8.re
+		trigger = {
+			check_variable = {
+				which = BA_Precursor_coop_claimed
+				value < @BA_Precursor_coop_reward_8
+			}
+		}
+		allow = {
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_Precursor_coop_score
+						value < @BA_Precursor_coop_reward_8
+					}
+				}
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.notreach
+					always = no
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = BA_Precursor_coop_claimed
+						value < @BA_Precursor_coop_reward_7
+					}
+				}
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.unclamed
+					always = no
+				}
+			}
+			else = {
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.nochoice
+					OR = {
+						has_country_flag = BA_Precursor_reward_choice_base
+						has_country_flag = BA_Precursor_reward_choice_tech
+						has_country_flag = BA_Precursor_reward_choice_industry
+						has_country_flag = BA_Precursor_reward_choice_trade
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				which = BA_Precursor_coop_claimed
+				value = @BA_Precursor_coop_reward_8
+			}
+			BA_Precursor_reward_resource = yes
+			add_relic = r_BA_mysterious_seed
+		}
+	}
 	# 9档：更新领袖储备-先驱者
-	# 10档：T7舰船部件科技
+	option = {
+		name = BA_Precursor.coop_reward.9
+		custom_tooltip = BA_Precursor.coop_reward.9.tip
+		is_dialog_only = yes
+		response_text = BA_Precursor.coop_reward.9.re
+		trigger = {
+			check_variable = {
+				which = BA_Precursor_coop_claimed
+				value < @BA_Precursor_coop_reward_9
+			}
+		}
+		allow = {
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_Precursor_coop_score
+						value < @BA_Precursor_coop_reward_9
+					}
+				}
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.notreach
+					always = no
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = BA_Precursor_coop_claimed
+						value < @BA_Precursor_coop_reward_8
+					}
+				}
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.unclamed
+					always = no
+				}
+			}
+			else = {
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.nochoice
+					OR = {
+						has_country_flag = BA_Precursor_reward_choice_base
+						has_country_flag = BA_Precursor_reward_choice_tech
+						has_country_flag = BA_Precursor_reward_choice_industry
+						has_country_flag = BA_Precursor_reward_choice_trade
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				which = BA_Precursor_coop_claimed
+				value = @BA_Precursor_coop_reward_9
+			}
+			BA_Precursor_reward_resource = yes
+			country_event = {
+				id = BA_Shittem.1302
+			}
+		}
+	}
+	# 10档：顶级舰船部件科技
+	option = {
+		name = BA_Precursor.coop_reward.10
+		custom_tooltip = BA_Precursor.coop_reward.10.tip
+		is_dialog_only = yes
+		response_text = BA_Precursor.coop_reward.10.re
+		trigger = {
+			check_variable = {
+				which = BA_Precursor_coop_claimed
+				value < @BA_Precursor_coop_reward_10
+			}
+		}
+		allow = {
+			if = {
+				limit = {
+					check_variable = {
+						which = BA_Precursor_coop_score
+						value < @BA_Precursor_coop_reward_10
+					}
+				}
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.notreach
+					always = no
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = BA_Precursor_coop_claimed
+						value < @BA_Precursor_coop_reward_9
+					}
+				}
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.unclamed
+					always = no
+				}
+			}
+			else = {
+				custom_tooltip = {
+					fail_text = BA_Precursor.coop_reward.nochoice
+					OR = {
+						has_country_flag = BA_Precursor_reward_choice_base
+						has_country_flag = BA_Precursor_reward_choice_tech
+						has_country_flag = BA_Precursor_reward_choice_industry
+						has_country_flag = BA_Precursor_reward_choice_trade
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				which = BA_Precursor_coop_claimed
+				value = @BA_Precursor_coop_reward_10
+			}
+			BA_Precursor_reward_resource = yes
+			give_technology = {
+				tech = tech_BA_Tactical_backpack_T6
+			}
+			give_technology = {
+				tech = tech_BA_Badge_T6
+			}
+		}
+	}
 	# 循环档：资源
-}
-
-# 资源奖励：造一个UI用
-country_event = {
-	id = BA_Precursor.0161
-	is_triggered_only = yes
-	diplomatic = yes
-	custom_gui = "BA_Precursor_Reward_window"
-	title = BA_Precursor.coop_reward
-	desc = BA_Precursor.coop_reward.desc
 }
 
 ### 合作量累积
