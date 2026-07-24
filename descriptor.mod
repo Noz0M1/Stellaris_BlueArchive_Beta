@@ -1,4 +1,4 @@
-version="5.0"
+version="5.2"
 tags={
 	"Buildings"
 	"Economy"
@@ -11,4 +11,4 @@ tags={
 	"Species"
 }
 name="BlueArchive Beta"
-supported_version="v4.1.*"
+supported_version="v4.4.*"
