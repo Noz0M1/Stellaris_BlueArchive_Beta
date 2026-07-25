@@ -48,6 +48,13 @@ button_effect_communicate_Game_development_department = {
 		hidden_effect = {
 			owner = {
 				hidden_effect = {
+					# 随机数1-3用来选择台词
+					set_variable_to_random_value = {
+						which = Array_speak_index
+						min = 1
+						max = 3
+						rounded = yes
+					}
 					random_list = {
 						10 = {
 							country_event = {
@@ -94,6 +101,13 @@ button_effect_communicate_Engineering_club = {
 		hidden_effect = {
 			owner = {
 				hidden_effect = {
+					# 随机数1-3用来选择台词
+					set_variable_to_random_value = {
+						which = Array_speak_index
+						min = 1
+						max = 3
+						rounded = yes
+					}
 					random_list = {
 						10 = {
 							country_event = {
@@ -130,6 +144,13 @@ button_effect_communicate_Veritas = {
 		hidden_effect = {
 			owner = {
 				hidden_effect = {
+					# 随机数1-3用来选择台词
+					set_variable_to_random_value = {
+						which = Array_speak_index
+						min = 1
+						max = 3
+						rounded = yes
+					}
 					random_list = {
 						10 = {
 							country_event = {
@@ -166,6 +187,13 @@ button_effect_communicate_Foreclosure_task_force = {
 		hidden_effect = {
 			owner = {
 				hidden_effect = {
+					# 随机数1-3用来选择台词
+					set_variable_to_random_value = {
+						which = Array_speak_index
+						min = 1
+						max = 3
+						rounded = yes
+					}
 					random_list = {
 						10 = {
 							country_event = {
@@ -202,6 +230,13 @@ button_effect_communicate_Teaparty = {
 		hidden_effect = {
 			owner = {
 				hidden_effect = {
+					# 随机数1-3用来选择台词
+					set_variable_to_random_value = {
+						which = Array_speak_index
+						min = 1
+						max = 3
+						rounded = yes
+					}
 					random_list = {
 						10 = {
 							country_event = {
@@ -247,6 +282,13 @@ button_effect_communicate_Hotspring_development_department = {
 		hidden_effect = {
 			owner = {
 				hidden_effect = {
+					# 随机数1-3用来选择台词
+					set_variable_to_random_value = {
+						which = Array_speak_index
+						min = 1
+						max = 3
+						rounded = yes
+					}
 					random_list = {
 						10 = {
 							country_event = {
@@ -278,6 +320,13 @@ button_effect_communicate_Festival_operations_department = {
 		hidden_effect = {
 			owner = {
 				hidden_effect = {
+					# 随机数1-3用来选择台词
+					set_variable_to_random_value = {
+						which = Array_speak_index
+						min = 1
+						max = 3
+						rounded = yes
+					}
 					random_list = {
 						10 = {
 							country_event = {
@@ -309,6 +358,13 @@ button_effect_communicate_Xuanwu_promenade = {
 		hidden_effect = {
 			owner = {
 				hidden_effect = {
+					# 随机数1-3用来选择台词
+					set_variable_to_random_value = {
+						which = Array_speak_index
+						min = 1
+						max = 3
+						rounded = yes
+					}
 					random_list = {
 						10 = {
 							country_event = {
@@ -340,6 +396,13 @@ button_effect_communicate_Publishing_department = {
 		hidden_effect = {
 			owner = {
 				hidden_effect = {
+					# 随机数1-3用来选择台词
+					set_variable_to_random_value = {
+						which = Array_speak_index
+						min = 1
+						max = 3
+						rounded = yes
+					}
 					random_list = {
 						10 = {
 							country_event = {

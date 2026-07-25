@@ -1,0 +1,113 @@
+GetAronaDescVoice = {
+	if = { 
+		limit = { 
+			check_variable = { which = BA_Arona_serial value = 0 } 
+		}
+		play_sound = effect_arona_menu_talk_00
+	}
+	if = { 
+		limit = { 
+			check_variable = { which = BA_Arona_serial value = 1 } 
+		}
+		play_sound = effect_arona_menu_talk_01
+	}
+	if = { 
+		limit = { 
+			check_variable = { which = BA_Arona_serial value = 2 } 
+		}
+		play_sound = effect_arona_menu_talk_02
+	}
+	if = { 
+		limit = { 
+			check_variable = { which = BA_Arona_serial value = 3 } 
+		}
+		play_sound = effect_arona_menu_talk_03
+	}
+	if = { 
+		limit = { 
+			check_variable = { which = BA_Arona_serial value = 4 } 
+		}
+		play_sound = effect_arona_menu_talk_04
+	}
+	if = { 
+		limit = { 
+			check_variable = { which = BA_Arona_serial value = 5 } 
+		}
+		play_sound = effect_arona_menu_talk_05
+	}
+	if = { 
+		limit = { 
+			check_variable = { which = BA_Arona_serial value = 6 } 
+		}
+		play_sound = effect_arona_menu_talk_06
+	}
+	if = { 
+		limit = { 
+			check_variable = { which = BA_Arona_serial value = 7 } 
+		}
+		play_sound = effect_arona_menu_talk_07
+	}
+	if = { 
+		limit = { 
+			check_variable = { which = BA_Arona_serial value = 8 } 
+		}
+		play_sound = effect_arona_menu_talk_08
+	}
+}
+
+GetPulanaDescVoice = {
+	if = { 
+		limit = { 
+			check_variable = { which = BA_Pulana_serial value = 0 } 
+		}
+		play_sound = effect_pulana_menu_talk_00
+	}
+	if = { 
+		limit = { 
+			check_variable = { which = BA_Pulana_serial value = 1 } 
+		}
+		play_sound = effect_pulana_menu_talk_01
+	}
+	if = { 
+		limit = { 
+			check_variable = { which = BA_Pulana_serial value = 2 } 
+		}
+		play_sound = effect_pulana_menu_talk_02
+	}
+	if = { 
+		limit = { 
+			check_variable = { which = BA_Pulana_serial value = 3 } 
+		}
+		play_sound = effect_pulana_menu_talk_03
+	}
+	if = { 
+		limit = { 
+			check_variable = { which = BA_Pulana_serial value = 4 } 
+		}
+		play_sound = effect_pulana_menu_talk_04
+	}
+	if = { 
+		limit = { 
+			check_variable = { which = BA_Pulana_serial value = 5 } 
+		}
+		play_sound = effect_pulana_menu_talk_05
+	}
+	if = { 
+		limit = { 
+			check_variable = { which = BA_Pulana_serial value = 6 } 
+		}
+		play_sound = effect_pulana_menu_talk_06
+	}
+	if = { 
+		limit = { 
+			check_variable = { which = BA_Pulana_serial value = 7 } 
+		}
+		play_sound = effect_pulana_menu_talk_07
+	}
+	if = { 
+		limit = { 
+			check_variable = { which = BA_Pulana_serial value = 8 } 
+		}
+		play_sound = effect_pulana_menu_talk_08
+	}
+}

@@ -496,7 +496,48 @@ country_event = {
 		}
 	}
 	immediate = {
-		BA_Shittem_main_open = yes
+		BA_Shittem_get_stockpile = yes
+		#如果故障中，打开故障提示
+		if = {
+			limit = {
+				always = no
+				#has_country_flag = Shittem_malfunctioned
+			}
+			country_event = {
+				id = BA_Shittem.1900
+			}
+		}
+		else = {
+			random_list = {
+				#事件提前生产0-24的随机数，通过该变量的值进行文本以及肖像的随机变化
+				#肖像绑定值，文本绑定值，以此实现肖像与文本的绑定
+				#序号为0的肖像与scripted loc当中的BlueArchivePulanaDesc0绑定，以此类推，Arona窗口同理
+				1 = {
+					set_variable_to_random_value = {
+						which = BA_Arona_serial
+						min = 0
+						#max = 24
+						max = 8
+						rounded = yes
+					}
+					country_event = {
+						id = BA_Shittem.1001
+					}
+				}
+				1 = {
+					set_variable_to_random_value = {
+						which = BA_Pulana_serial
+						min = 0
+						#max = 24
+						max = 8
+						rounded = yes
+					}
+					country_event = {
+						id = BA_Shittem.1002
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -515,6 +556,7 @@ country_event = {
 			which = BA_cheat_click_count
 			value = 0
 		}
+		GetAronaDescVoice = yes
 	}
 	after = {
 		remove_country_flag = Shittem_engaged
@@ -539,6 +581,7 @@ country_event = {
 			which = BA_cheat_click_count
 			value = 0
 		}
+		GetPulanaDescVoice = yes
 	}
 	after = {
 		remove_country_flag = Shittem_engaged
