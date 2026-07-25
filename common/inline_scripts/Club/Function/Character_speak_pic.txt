@@ -1,0 +1,59 @@
+desc = {
+	trigger = {
+		check_variable ={
+			which = Array_speak_index
+			value = 1
+		}
+	}
+	text = $CHARA$_speak_index_desc_1
+}
+desc = {
+	trigger = {
+		check_variable ={
+			which = Array_speak_index
+			value = 2
+		}
+	}
+	text = $CHARA$_speak_index_desc_2
+}
+desc = {
+	trigger = {
+		check_variable ={
+			which = Array_speak_index
+			value = 3
+		}
+	}
+	text = $CHARA$_speak_index_desc_3
+}
+
+show_sound = {
+	trigger = {
+		check_variable ={
+			which = Array_speak_index
+			value = 1
+		}
+	}
+	sound = effect_$CHARA$_speak_sound_1
+}
+show_sound = {
+	trigger = {
+		check_variable ={
+			which = Array_speak_index
+			value = 2
+		}
+	}
+	sound = effect_$CHARA$_speak_sound_2
+}
+show_sound = {
+	trigger = {
+		check_variable ={
+			which = Array_speak_index
+			value = 3
+		}
+	}
+	sound = effect_$CHARA$_speak_sound_3
+}
+picture_event_data = {
+	portrait = BA_leader_$CHARA$
+	room = BA_06_room
+}

@@ -2266,17 +2266,17 @@
  GetShittemDesc.common.04:0 "老师，选择想要做的工作吧！我会一直在这里帮您的!"
  GetShittemDesc.common.05:0 "要完成的工作都堆成山了呢……大人真辛苦啊……"
 
- #Pulana
+ #Pulana 立绘对应参考：zzz_finished.gui + BA_Shittem_GFX.gfx
  Shittem_Pulana_desc:0 "[this.GetPulanaDesc]"
- BlueArchivePulanaDesc0:0 "……连接确认……" #平静
- BlueArchivePulanaDesc1:0 "快点把工作做完吧，老师。" #平静
- BlueArchivePulanaDesc2:0 "……验证完成，较高的活动与代谢水平。老师，您今天心情很好呢。" #微微微笑
- BlueArchivePulanaDesc3:0 "请不要一直盯着我看，这样会造成内存混乱……而且，您还有工作吧，老师？" #无语流汗，光环混乱
- BlueArchivePulanaDesc4:0 "……错误……检测到错误提交的工作表单……" #张口，生气或战意激增
- BlueArchivePulanaDesc5:0 "老师……您真的不会重蹈覆辙的，对吧……" #视线躲闪，害羞或为难
- BlueArchivePulanaDesc6:0 "……发现污渍……淀粉、果糖、蛋白质和植物脂肪……原来这样就可以让Arona前辈开心起来吗……" #睁大眼，无语流汗
- BlueArchivePulanaDesc7:0 "已确认……需要重新修正对老师工作效率的评估……" #睁大眼，惊讶
- BlueArchivePulanaDesc8:0 "……那个是……！" #兴奋星星眼，嘴不张开
+ BlueArchivePulanaDesc0:0 "目标已识别，主操作系统，A.R.O.N.A已确认。"
+ BlueArchivePulanaDesc1:0 "要开始哪个工作呢，老师。"
+ BlueArchivePulanaDesc2:0 "老师…… 和往常一样呢。 安心了。"
+ BlueArchivePulanaDesc3:0 "老师，等您很久了。" 
+ BlueArchivePulanaDesc4:0 "现在的我是无敌的。比平时要强一倍。"
+ BlueArchivePulanaDesc5:0 "嗯……原来如此。" 
+ BlueArchivePulanaDesc6:0 "混乱，无法理解的行为。 请不要再戳我了，故障。"
+ BlueArchivePulanaDesc7:0 "理解了，老师现在，没有特别想做的事情呢，很闲呢。" 
+ BlueArchivePulanaDesc8:0 "我们开始吧。你和我……我们的——奇迹。" 
  BlueArchivePulanaDesc9:0 "老师，我认为这是不对的，联邦学生会不值得信任……您也不应该为所有事情都担下责任！" #辩解状
  BlueArchivePulanaDesc10:0 "……错误……" #委屈
  BlueArchivePulanaDesc11:0 "无法理解……" #皱眉，流汗，为难状
@@ -2293,17 +2293,17 @@
  BlueArchivePulanaDesc22:0 "测试文本22" #歪头
  BlueArchivePulanaDesc23:0 "测试文本23" #歪头
  BlueArchivePulanaDesc24:0 "测试文本24" #歪头
- #Arona
+ #Arona 立绘对应参考同上
  Shittem_Arona_desc:0 "[this.GetAronaDesc]"
- BlueArchiveAronaDesc0:0 "从这里，可以开始各种各样的工作呢！"
- BlueArchiveAronaDesc1:0 "老师，加油吧！还有很多工作没有完成呢！"
- BlueArchiveAronaDesc2:0 "原来如此……您是这样处理这些事情的呢。"
- BlueArchiveAronaDesc3:0 "不要太逼迫自己，您可以尽管相信Arona哦，欸嘿嘿。" #微笑
- BlueArchiveAronaDesc4:0 "哈，哈欸……老师，为什么这么着急呢……是有什么重要的事情要处理吗？" #微微惊讶
- BlueArchiveAronaDesc5:0 "老师，选择想要做的工作吧！我会一直在这里帮您的!" #认真状 ‘^’
- BlueArchiveAronaDesc6:0 "老师，偶尔也要好好休息一下……Arona很担心您的健康……"
- BlueArchiveAronaDesc7:0 "……切，居然如此冒犯我们，以后就叫你们外星毛球怎么样……啊，老师，Arona没有在偷窥外交通讯哦，啊哈哈，真的没有哦……"
- BlueArchiveAronaDesc8:0 "不需要你们来指手画脚，连制造石都不会用的东西……啊，您刚才有听到什么吗？"
+ BlueArchiveAronaDesc0:0 "老师可以在这里，处理各种工作哦！"
+ BlueArchiveAronaDesc1:0 "还有很多事情需要处理哦。加油吧！"
+ BlueArchiveAronaDesc2:0 "当老师都这么辛苦的吗……"
+ BlueArchiveAronaDesc3:0 "§MLa↗§BLa↘§CLa↗§ELa↘§GLa↗~!" #微笑
+ BlueArchiveAronaDesc4:0 "正前方！阿罗娜的小鲸鱼接近！" #微微惊讶
+ BlueArchiveAronaDesc5:0 "偶尔也要为自己的健康着想哦。 老师，我会很担心的！"
+ BlueArchiveAronaDesc6:0 "选择想要做的工作吧！我会一直在这里帮您的!" #认真状 ‘^’
+ BlueArchiveAronaDesc7:0 "广袤天空的另一边，会有些什么呢？"
+ BlueArchiveAronaDesc8:0 "今天又会有£mod_job_entertainer_add£什么事情£mod_job_entertainer_add£在等着我呢~"
  BlueArchiveAronaDesc9:0 "……啊，老师……邮件？没有哦，没有什么邮件哦，欸嘿嘿。" #阴暗+右上斜眼
  BlueArchiveAronaDesc10:0 "唉……看来今天老师又要工作到很晚了……" #叹气状
  BlueArchiveAronaDesc11:0 "我会帮助老师进行工作的！"

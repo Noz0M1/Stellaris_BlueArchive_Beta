@@ -719,15 +719,13 @@ country_event = {
 country_event = {
 	id = BA_club.1004
 	title = Game_development_department
-	desc = Yuzu_desc1
-	desc = Yuzu_desc2
-	desc = Yuzu_desc3
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = BA_leader_Yuzu
-		room = BA_06_room
+	# 展示台词，语音和立绘
+	inline_script = {
+		script = Club/Function/Character_speak_pic
+		CHARA = Yuzu
 	}
 	#社团功能
 	inline_script = {
@@ -749,15 +747,13 @@ country_event = {
 country_event = {
 	id = BA_club.1005
 	title = Game_development_department
-	desc = Aris_desc1
-	desc = Aris_desc2
-	desc = Aris_desc3
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = BA_leader_Aris
-		room = BA_06_room
+	# 展示台词，语音和立绘
+	inline_script = {
+		script = Club/Function/Character_speak_pic
+		CHARA = Aris
 	}
 	#社团功能
 	inline_script = {
@@ -779,15 +775,13 @@ country_event = {
 country_event = {
 	id = BA_club.1006
 	title = Game_development_department
-	desc = Momoi_desc1
-	desc = Momoi_desc2
-	desc = Momoi_desc3
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = BA_leader_Momoi
-		room = BA_06_room
+	# 展示台词，语音和立绘
+	inline_script = {
+		script = Club/Function/Character_speak_pic
+		CHARA = Momoi
 	}
 	#社团功能
 	inline_script = {
@@ -809,15 +803,13 @@ country_event = {
 country_event = {
 	id = BA_club.1007
 	title = Game_development_department
-	desc = Midori_desc1
-	desc = Midori_desc2
-	desc = Midori_desc3
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = BA_leader_Midori
-		room = BA_06_room
+	# 展示台词，语音和立绘
+	inline_script = {
+		script = Club/Function/Character_speak_pic
+		CHARA = Midori
 	}
 	#社团功能
 	inline_script = {
@@ -1019,15 +1011,13 @@ country_event = {
 country_event = {
 	id = BA_club.1104
 	title = Engineering_club
-	desc = Utaha_desc1
-	desc = Utaha_desc2
-	desc = Utaha_desc3
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = BA_leader_Utaha
-		room = BA_06_room
+	# 展示台词，语音和立绘
+	inline_script = {
+		script = Club/Function/Character_speak_pic
+		CHARA = Utaha
 	}
 	#社团功能
 	inline_script = {
@@ -1049,15 +1039,13 @@ country_event = {
 country_event = {
 	id = BA_club.1105
 	title = Engineering_club
-	desc = Hibiki_desc1
-	desc = Hibiki_desc2
-	desc = Hibiki_desc3
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = BA_leader_Hibiki
-		room = BA_06_room
+	# 展示台词，语音和立绘
+	inline_script = {
+		script = Club/Function/Character_speak_pic
+		CHARA = Hibiki
 	}
 	#社团功能
 	inline_script = {
@@ -1243,15 +1231,13 @@ country_event = {
 country_event = {
 	id = BA_club.1204
 	title = Veritas
-	desc = Chihiro_desc1
-	desc = Chihiro_desc2
-	desc = Chihiro_desc3
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = BA_leader_Chihiro
-		room = BA_06_room
+	# 展示台词，语音和立绘
+	inline_script = {
+		script = Club/Function/Character_speak_pic
+		CHARA = Chihiro
 	}
 	#社团功能
 	inline_script = {
@@ -1273,15 +1259,13 @@ country_event = {
 country_event = {
 	id = BA_club.1205
 	title = Veritas
-	desc = Hare_desc1
-	desc = Hare_desc2
-	desc = Hare_desc3
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = BA_leader_Hare
-		room = BA_06_room
+	# 展示台词，语音和立绘
+	inline_script = {
+		script = Club/Function/Character_speak_pic
+		CHARA = Hare
 	}
 	#社团功能
 	inline_script = {
@@ -1460,7 +1444,7 @@ country_event = {
 		room = BA_06_room
 	}
 	immediate = {
-		fromfromfromfrom = {
+		fromfromfrom =  {
 			solar_system = {
 				set_star_flag = BA_Foreclosure_task_force_system
 			}
@@ -1522,15 +1506,13 @@ country_event = {
 country_event = {
 	id = BA_club.1304
 	title = Foreclosure_task_force
-	desc = Nonomi_desc1
-	desc = Nonomi_desc2
-	desc = Nonomi_desc3
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = BA_leader_Nonomi
-		room = BA_06_room
+	# 展示台词，语音和立绘
+	inline_script = {
+		script = Club/Function/Character_speak_pic
+		CHARA = Nonomi
 	}
 	#社团功能
 	inline_script = {
@@ -1553,15 +1535,13 @@ country_event = {
 country_event = {
 	id = BA_club.1305
 	title = Foreclosure_task_force
-	desc = Shiroko_desc1
-	desc = Shiroko_desc2
-	desc = Shiroko_desc3
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = BA_leader_Shiroko
-		room = BA_06_room
+	# 展示台词，语音和立绘
+	inline_script = {
+		script = Club/Function/Character_speak_pic
+		CHARA = Shiroko
 	}
 	#社团功能
 	inline_script = {
@@ -1654,15 +1634,13 @@ country_event = {
 country_event = {
 	id = BA_club.1404
 	title = Teaparty
-	desc = Nagisa_desc1
-	desc = Nagisa_desc2
-	desc = Nagisa_desc3
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = BA_leader_Nagisa
-		room = BA_06_room
+	# 展示台词，语音和立绘
+	inline_script = {
+		script = Club/Function/Character_speak_pic
+		CHARA = Nagisa
 	}
 	#社团功能
 	inline_script = {
@@ -1685,15 +1663,13 @@ country_event = {
 country_event = {
 	id = BA_club.1405
 	title = Teaparty
-	desc = Seia_desc1
-	desc = Seia_desc2
-	desc = Seia_desc3
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = BA_leader_Seia
-		room = BA_06_room
+	# 展示台词，语音和立绘
+	inline_script = {
+		script = Club/Function/Character_speak_pic
+		CHARA = Seia
 	}
 	#社团功能
 	inline_script = {
@@ -1716,15 +1692,13 @@ country_event = {
 country_event = {
 	id = BA_club.1406
 	title = Teaparty
-	desc = Mika_desc1
-	desc = Mika_desc2
-	desc = Mika_desc3
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = BA_leader_Mika
-		room = BA_06_room
+	# 展示台词，语音和立绘
+	inline_script = {
+		script = Club/Function/Character_speak_pic
+		CHARA = Mika
 	}
 	#社团功能
 	inline_script = {
@@ -1816,15 +1790,13 @@ country_event = {
 country_event = {
 	id = BA_club.1504
 	title = Hotspring_development_department
-	desc = Megu_desc1
-	desc = Megu_desc2
-	desc = Megu_desc3
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = BA_leader_Megu
-		room = BA_06_room
+	# 展示台词，语音和立绘
+	inline_script = {
+		script = Club/Function/Character_speak_pic
+		CHARA = Megu
 	}
 	#社团功能
 	inline_script = {
@@ -1940,15 +1912,13 @@ country_event = {
 country_event = {
 	id = BA_club.1604
 	title = Festival_operations_department
-	desc = Shizuko_desc1
-	desc = Shizuko_desc2
-	desc = Shizuko_desc3
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = BA_leader_Shizuko
-		room = BA_06_room
+	# 展示台词，语音和立绘
+	inline_script = {
+		script = Club/Function/Character_speak_pic
+		CHARA = Shizuko
 	}
 	#社团功能
 	inline_script = {
@@ -2041,15 +2011,13 @@ country_event = {
 country_event = {
 	id = BA_club.1704
 	title = Xuanwu_promenade
-	desc = Rumi_desc1
-	desc = Rumi_desc2
-	desc = Rumi_desc3
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = BA_leader_Rumi
-		room = BA_06_room
+	# 展示台词，语音和立绘
+	inline_script = {
+		script = Club/Function/Character_speak_pic
+		CHARA = Rumi
 	}
 	#社团功能-inline在事件中使用
 	option = {
@@ -2189,15 +2157,13 @@ country_event = {
 country_event = {
 	id = BA_club.1804
 	title = Publishing_department
-	desc = Takane_desc1
-	desc = Takane_desc2
-	desc = Takane_desc3
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "BA_window"
-	picture_event_data = {
-		portrait = BA_leader_Takane
-		room = BA_06_room
+	# 展示台词，语音和立绘
+	inline_script = {
+		script = Club/Function/Character_speak_pic
+		CHARA = Takane
 	}
 	#社团功能
 	inline_script = {
