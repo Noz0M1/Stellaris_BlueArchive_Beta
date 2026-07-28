@@ -1123,30 +1123,19 @@ BA_SI_active = {
 
 BA_SI_Gehenna_A02_grant_fleet = {
 	capital_star = {
-		create_fleet = {
-			name = namelist_BA_fleet_ArisPR
-			effect = {
-				set_owner = prevprev
-				set_location = prev
-				while = {
-					count = 20
-					create_ship = {
-						name = random
-						random_existing_design = corvette
-					}
-				}
-			}
-		}
-		create_fleet = {
-			name = namelist_BA_fleet_ArisPR
-			effect = {
-				set_owner = prevprev
-				set_location = prev
-				while = {
-					count = 20
-					create_ship = {
-						name = random
-						random_existing_design = corvette
+		while = {
+			count = 2
+			create_fleet = {
+				name = namelist_BA_fleet_ArisPR
+				effect = {
+					set_owner = prevprev
+					set_location = prev
+					while = {
+						count = 10
+						create_ship = {
+							name = random
+							random_existing_design = corvette
+						}
 					}
 				}
 			}

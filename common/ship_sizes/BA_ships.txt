@@ -76,7 +76,7 @@ BA_missile_ship = {
 	modifier = {
 		ship_evasion_add = @destroyer_evasion
 	}
-	size_multiplier = 2
+	size_multiplier = 5
 	fleet_slot_size = 2
 	section_slots = {
 		"bow" = {
@@ -89,7 +89,7 @@ BA_missile_ship = {
 	num_target_locators = 4
 	icon = ship_size_military_2
 	is_space_station = no
-	base_buildtime = @destroyer_build_time
+	base_buildtime = 150
 	can_have_federation_design = no
 	enable_default_design = yes
 	enable_3dview_in_ship_browser = yes
@@ -123,11 +123,11 @@ BA_missile_ship = {
 	resources = {
 		category = ships
 		upkeep = {
-			energy = 0.7
-			alloys = 0.2
+			energy = 1
+			alloys = 0.5
 		}
 		logistics = {
-			trade = 0.2
+			trade = 1
 		}
 	}
 	min_upgrade_cost = {
@@ -156,7 +156,7 @@ BA_swarm_ship = {
 	modifier = {
 		ship_evasion_add = @cruiser_evasion
 	}
-	size_multiplier = 4
+	size_multiplier = 10
 	fleet_slot_size = 3
 	section_slots = {
 		"bow" = {
@@ -172,7 +172,7 @@ BA_swarm_ship = {
 	num_target_locators = 4
 	is_space_station = no
 	icon = ship_size_military_4
-	base_buildtime = @cruiser_build_time
+	base_buildtime = 300
 	can_have_federation_design = yes
 	enable_default_design = yes #if yes, countries will have an auto-generated design at start
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
@@ -196,11 +196,11 @@ BA_swarm_ship = {
 	resources = {
 		category = ships
 		upkeep = {
-			energy = 2.2
-			alloys = 0.7
+			energy = 2
+			alloys = 1
 		}
 		logistics = {
-			trade = 0.4
+			trade = 2
 		}
 	}
 	min_upgrade_cost = {
@@ -229,7 +229,7 @@ BA_artillery_ship = {
 	modifier = {
 		ship_evasion_add = @battleship_evasion
 	}
-	size_multiplier = 6
+	size_multiplier = 20
 	fleet_slot_size = 4
 	section_slots = {
 		"bow" = {
@@ -245,7 +245,7 @@ BA_artillery_ship = {
 	num_target_locators = 4
 	icon = ship_size_military_8
 	is_space_station = no
-	base_buildtime = 360
+	base_buildtime = 600
 	can_have_federation_design = no
 	enable_default_design = yes
 	enable_3dview_in_ship_browser = yes
@@ -265,8 +265,11 @@ BA_artillery_ship = {
 	resources = {
 		category = ships
 		upkeep = {
-			energy = 2.2
-			alloys = 0.7
+			energy = 4
+			alloys = 2
+		}
+		logistics = {
+			trade = 4
 		}
 	}
 	min_upgrade_cost = {
@@ -299,7 +302,7 @@ BA_hub_ship = {
 	modifier = {
 		ship_evasion_add = @battleship_evasion
 	}
-	size_multiplier = 16
+	size_multiplier = 40
 	fleet_slot_size = 8
 	section_slots = {
 		"bow" = {
@@ -315,7 +318,7 @@ BA_hub_ship = {
 	num_target_locators = 4
 	is_space_station = no
 	icon = ship_size_military_16
-	base_buildtime = @titan_build_time
+	base_buildtime = 2250
 	can_have_federation_design = no
 	enable_default_design = yes
 	enable_3dview_in_ship_browser = yes
@@ -372,8 +375,11 @@ BA_hub_ship = {
 	resources = {
 		category = ships
 		upkeep = {
-			energy = @titan_upkeep_energy
-			alloys = @titan_upkeep_alloys
+			energy = 8
+			alloys = 4
+		}
+		logistics = {
+			trade = 8
 		}
 	}
 	min_upgrade_cost = {

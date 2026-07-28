@@ -56,9 +56,6 @@ building_BA_starlink_2 = {
 	potential = {
 		owner? = {
 			has_authority = auth_kivotos
-			NOT = {
-				has_technology = tech_BA_SI_Shanhaijing_G01
-			}
 		}
 	}
 	allow = {

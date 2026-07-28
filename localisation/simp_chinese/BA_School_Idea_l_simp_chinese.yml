@@ -118,7 +118,7 @@
 
  SI_Gehenna_A02: "万魔殿策略：先发制人"
  SI_Gehenna_A02_desc: "万魔殿的头头认为，无论是地缘博弈还是政治斗争，掌握主动权永远是稳操胜券的第一要领。不过落实到具体行动，则是从计划书到执行都是秘书在做。"
- SI_Gehenna_A02_effect: "\n§R与§!$SI_Gehenna_B02$§R互斥§!\n效果：\n按照当前设计，立即获得§G40艘护卫舰§!\n§H获得帝国修正: §!$modifier_BA_SI_Gehenna_A02$(3600£time£)：\n    $MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$: §G+100%§!\n    $mod_ships_upkeep_mult$: §G-35%§!\n "
+ SI_Gehenna_A02_effect: "\n§R与§!$SI_Gehenna_B02$§R互斥§!\n效果：\n按照当前设计，立即获得§G20艘护卫舰§!\n§H获得帝国修正: §!$modifier_BA_SI_Gehenna_A02$(3600£time£)：\n    $MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$: §G+100%§!\n    $mod_ships_upkeep_mult$: §G-35%§!\n "
  SI_Gehenna_A02_tip: "§C$SI_Gehenna_A02$§!\n$SI_Gehenna_A02_desc$\n$SI_Gehenna_A02_effect$"
 
  SI_Gehenna_A03: "万魔殿策略：霸权态势"
@@ -505,8 +505,8 @@
  SI_Shanhaijing_tip: "学园理念（可选）：§G山海经高级中学§!\n山海经是在名为金钱与劳动的坚实地基上发展出的学园，理想与现实的碰撞是山海经永恒的主题。\n "
 
  SI_Shanhaijing_G01: "梅花园机构"
- SI_Shanhaijing_G01_desc: "在我们决定好其中一方之后，我们首先要进行对梅花园的扩充，以方便山海经对内学生的培养。"
- SI_Shanhaijing_G01_effect: "\n效果：\n§H解锁建筑: §!$building_BA_SI_Shanhaijing_G01$ (由$building_BA_starlink_2$转化)\n "
+ SI_Shanhaijing_G01_desc: "依托联邦星链局的通信与调配能力扩建梅花园，使山海经能够在各殖民地更高效地开展学生培养与生活保障。"
+ SI_Shanhaijing_G01_effect: "\n效果：\n§H解锁建筑升级：§!$building_BA_starlink_2$ → $building_BA_SI_Shanhaijing_G01$\n "
  SI_Shanhaijing_G01_tip: "§C$SI_Shanhaijing_G01$§!\n$SI_Shanhaijing_G01_desc$\n$SI_Shanhaijing_G01_effect$"
 
  SI_Shanhaijing_G02: "炼丹术实验室"
