@@ -10,7 +10,7 @@ button_effect_BA_Precursor_reward_choice_base_bg_off = {
 		}
 	}
 	effect = {
-		custom_tooltip = BA_Precursor.coop_reward.base
+		custom_tooltip = BA_Precursor.reward.base
 		hidden_effect = {
 			from = {
 				set_country_flag = BA_Precursor_reward_choice_base
@@ -32,7 +32,7 @@ button_effect_BA_Precursor_reward_choice_base_bg_on = {
 		}
 	}
 	effect = {
-		custom_tooltip = BA_Precursor.coop_reward.base
+		custom_tooltip = BA_Precursor.reward.base
 	}
 }
 
@@ -48,7 +48,7 @@ button_effect_BA_Precursor_reward_choice_tech_bg_off = {
 		}
 	}
 	effect = {
-		custom_tooltip = BA_Precursor.coop_reward.tech
+		custom_tooltip = BA_Precursor.reward.tech
 		hidden_effect = {
 			from = {
 				remove_country_flag = BA_Precursor_reward_choice_base
@@ -70,7 +70,7 @@ button_effect_BA_Precursor_reward_choice_tech_bg_on = {
 		}
 	}
 	effect = {
-		custom_tooltip = BA_Precursor.coop_reward.tech
+		custom_tooltip = BA_Precursor.reward.tech
 	}
 }
 
@@ -86,7 +86,7 @@ button_effect_BA_Precursor_reward_choice_industry_bg_off = {
 		}
 	}
 	effect = {
-		custom_tooltip = BA_Precursor.coop_reward.industry
+		custom_tooltip = BA_Precursor.reward.industry
 		hidden_effect = {
 			from = {
 				remove_country_flag = BA_Precursor_reward_choice_base
@@ -108,7 +108,7 @@ button_effect_BA_Precursor_reward_choice_industry_bg_on = {
 		}
 	}
 	effect = {
-		custom_tooltip = BA_Precursor.coop_reward.industry
+		custom_tooltip = BA_Precursor.reward.industry
 	}
 }
 
@@ -124,7 +124,7 @@ button_effect_BA_Precursor_reward_choice_trade_bg_off = {
 		}
 	}
 	effect = {
-		custom_tooltip = BA_Precursor.coop_reward.trade
+		custom_tooltip = BA_Precursor.reward.trade
 		hidden_effect = {
 			from = {
 				remove_country_flag = BA_Precursor_reward_choice_base
@@ -146,6 +146,6 @@ button_effect_BA_Precursor_reward_choice_trade_bg_on = {
 		}
 	}
 	effect = {
-		custom_tooltip = BA_Precursor.coop_reward.trade
+		custom_tooltip = BA_Precursor.reward.trade
 	}
 }

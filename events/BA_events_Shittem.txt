@@ -138,12 +138,8 @@ country_event = {
 		#失落帝国相关
 		set_country_flag = BA_Angel24_locked
 		set_variable = {
-			which = BA_Precursor_coop_score
-			value = 1
-		}
-		set_variable = {
-			which = BA_Precursor_coop_claimed
-			value = 100
+			which = BA_Precursor_unity_spent
+			value = 0
 		}
 		#内阁相关
 		unlock_council_selection = yes

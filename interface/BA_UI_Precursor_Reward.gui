@@ -270,13 +270,28 @@ guiTypes = {
 			moveable = no
 			instantTextBoxType = {
 				name = "action_title"
+				font = "malgun_goth_24"
+				orientation = "UPPER_LEFT"
+				position = {
+					x = 680
+					y = 37
+				}
+				maxWidth = 300
+				maxHeight = 24
+				fixedSize = yes
+				format = left
+				alwaysTransparent = yes
+			}
+			instantTextBoxType = {
+				name = "BA_Precursor_reward_heading"
 				font = "large_title_font"
+				text = "BA_Precursor.reward"
 				orientation = "UPPER_LEFT"
 				position = {
 					x = 105
 					y = 32
 				}
-				maxWidth = 650
+				maxWidth = 250
 				maxHeight = 22
 				format = left
 				alwaysTransparent = yes

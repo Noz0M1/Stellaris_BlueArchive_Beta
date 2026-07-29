@@ -1,14 +1,26 @@
 ### 兼容性
 @blue_archive_mod = 1
 
-### 先驱者：报酬分档
-@BA_Precursor_coop_reward_1 = 150
-@BA_Precursor_coop_reward_2 = 300
-@BA_Precursor_coop_reward_3 = 500
-@BA_Precursor_coop_reward_4 = 750
-@BA_Precursor_coop_reward_5 = 1050
-@BA_Precursor_coop_reward_6 = 1400
-@BA_Precursor_coop_reward_7 = 1850
-@BA_Precursor_coop_reward_8 = 2400
-@BA_Precursor_coop_reward_9 = 3100
-@BA_Precursor_coop_reward_10 = 4000
+### 先驱者：累计凝聚力消耗分档
+@BA_Precursor_unity_spent_threshold_1 = 150
+@BA_Precursor_unity_spent_threshold_2 = 300
+@BA_Precursor_unity_spent_threshold_3 = 500
+@BA_Precursor_unity_spent_threshold_4 = 750
+@BA_Precursor_unity_spent_threshold_5 = 1050
+@BA_Precursor_unity_spent_threshold_6 = 1400
+@BA_Precursor_unity_spent_threshold_7 = 1850
+@BA_Precursor_unity_spent_threshold_8 = 2400
+@BA_Precursor_unity_spent_threshold_9 = 3100
+@BA_Precursor_unity_spent_threshold_10 = 4000
+
+### 先驱者：各档凝聚力消耗
+@BA_Precursor_unity_cost_1 = 150
+@BA_Precursor_unity_cost_2 = 150
+@BA_Precursor_unity_cost_3 = 200
+@BA_Precursor_unity_cost_4 = 250
+@BA_Precursor_unity_cost_5 = 300
+@BA_Precursor_unity_cost_6 = 350
+@BA_Precursor_unity_cost_7 = 450
+@BA_Precursor_unity_cost_8 = 550
+@BA_Precursor_unity_cost_9 = 700
+@BA_Precursor_unity_cost_10 = 900

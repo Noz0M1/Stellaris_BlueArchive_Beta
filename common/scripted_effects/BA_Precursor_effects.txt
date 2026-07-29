@@ -1,4 +1,4 @@
-# 合作报酬资源：调用前必须已将 BA_Precursor_coop_claimed 设为本档阈值。
+# 先驱者报酬资源：调用前必须已将 BA_Precursor_unity_spent 设为本档累计消耗阈值。
 # 资源数值均以该阈值为 multiplier，不按档位另行拆分。
 # 根据奖励界面当前选择派发资源。
 BA_Precursor_reward_resource = {
@@ -10,7 +10,7 @@ BA_Precursor_reward_resource = {
 			energy = 2
 			food = 1
 			consumer_goods = 1
-			multiplier = BA_Precursor_coop_claimed
+			multiplier = BA_Precursor_unity_spent
 		}
 	}
 	else_if = {
@@ -21,8 +21,7 @@ BA_Precursor_reward_resource = {
 			physics_research = 0.5
 			society_research = 0.5
 			engineering_research = 0.5
-			unity = 1
-			multiplier = BA_Precursor_coop_claimed
+			multiplier = BA_Precursor_unity_spent
 		}
 	}
 	else_if = {
@@ -32,7 +31,7 @@ BA_Precursor_reward_resource = {
 		add_resource = {
 			minerals = 2
 			alloys = 0.5
-			multiplier = BA_Precursor_coop_claimed
+			multiplier = BA_Precursor_unity_spent
 		}
 	}
 	else_if = {
@@ -41,7 +40,7 @@ BA_Precursor_reward_resource = {
 		}
 		add_resource = {
 			trade = 3
-			multiplier = BA_Precursor_coop_claimed
+			multiplier = BA_Precursor_unity_spent
 		}
 	}
 }

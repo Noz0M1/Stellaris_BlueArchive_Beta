@@ -68,9 +68,23 @@ button_effect_Finder_MX = {
 	}
 	effect = {
 		hidden_effect = {
-			from = {
-				country_event = {
-					id = BA_Precursor.0152
+			if = {
+				limit = {
+					event_target:BA_Precursor_country = {
+						is_angry_to = from
+					}
+				}
+				from = {
+					country_event = {
+						id = BA_Precursor.0151
+					}
+				}
+			}
+			else = {
+				from = {
+					country_event = {
+						id = BA_Precursor.0152
+					}
 				}
 			}
 		}
