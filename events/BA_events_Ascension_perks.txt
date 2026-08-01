@@ -106,11 +106,12 @@ country_event = {
 				}
 				has_planet_flag = BA_Gematria_station
 			}
-			enable_special_project = {
-				name = BA_ring_tech_project_2
-				location = this
-				owner = root
-			}
+			# 和下面的BA_Gematria_arc_site_1考古事件完全重复了, 注释掉
+			# enable_special_project = {
+			# 	name = BA_ring_tech_project_2
+			# 	location = this
+			# 	owner = root
+			# }
 			create_archaeological_site = BA_Gematria_arc_site_1
 		}
 	}
