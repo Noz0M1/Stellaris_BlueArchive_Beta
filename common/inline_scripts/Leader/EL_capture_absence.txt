@@ -1,0 +1,28 @@
+# Country scope; from = elite leader that is about to die or has been fired.
+# The owning/player country is root, so all reserve keys use the player suffix.
+if = {
+	limit = {
+		exists = event_target:BA_EL_absent_copy_$Leader$_@root
+	}
+	event_target:BA_EL_absent_copy_$Leader$_@root = {
+		remove_leader_flag = BA_elite_leader
+		remove_leader_flag = BA_elite_leader_pr
+		kill_leader = {
+			show_notification = no
+		}
+	}
+	clear_global_event_target = BA_EL_absent_copy_$Leader$_@root
+}
+
+event_target:BA_Shittem_country = {
+	set_country_flag = BA_EL_absent_$Leader$_@root
+	clone_leader = {
+		target = root.from
+		effect = {
+			set_leader_flag = BA_EL_absent_copy
+			save_global_event_target_as = BA_EL_absent_copy_$Leader$_@root
+		}
+	}
+}
+
+clear_global_event_target = BA_EL_live_$Leader$_@root

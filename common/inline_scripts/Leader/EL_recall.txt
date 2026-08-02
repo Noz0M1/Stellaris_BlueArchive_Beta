@@ -1,0 +1,33 @@
+# Country scope. Restore the saved copy as a new owned leader while retaining
+# its class, skill, experience, traits and elite identity flags.
+clone_leader = {
+	target = event_target:BA_EL_absent_copy_$Leader$_@root
+	effect = {
+		remove_leader_flag = BA_EL_absent_copy
+		save_global_event_target_as = BA_EL_live_$Leader$_@owner
+	}
+}
+
+event_target:BA_EL_absent_copy_$Leader$_@root = {
+	remove_leader_flag = BA_elite_leader
+	remove_leader_flag = BA_elite_leader_pr
+	kill_leader = {
+		show_notification = no
+	}
+}
+clear_global_event_target = BA_EL_absent_copy_$Leader$_@root
+
+event_target:BA_Shittem_country = {
+	remove_country_flag = BA_EL_absent_$Leader$_@root
+}
+
+if = {
+	limit = {
+		has_modifier = modifier_BA_Aris_in_matrix
+	}
+	remove_modifier = modifier_BA_Aris_in_matrix
+}
+
+add_resource = {
+	unity = -57
+}

@@ -1458,24 +1458,24 @@ defined_text = {
 
 #领袖
 defined_text = {
-	name = GetArisSPDesc
+	name = GetArisELDesc
 	text = {
 		trigger = {
 			leader_class = scientist
 		}
-		localization_key = leader_trait_scientist_aris_SP_desc
+		localization_key = leader_trait_scientist_Aris_EL1_desc
 	}
 	text = {
 		trigger = {
 			leader_class = official
 		}
-		localization_key = leader_trait_official_aris_SP_desc
+		localization_key = leader_trait_official_Aris_EL1_desc
 	}
 	text = {
 		trigger = {
 			leader_class = commander
 		}
-		localization_key = leader_trait_commander_aris_SP_desc
+		localization_key = leader_trait_commander_Aris_EL1_desc
 	}
 }
 

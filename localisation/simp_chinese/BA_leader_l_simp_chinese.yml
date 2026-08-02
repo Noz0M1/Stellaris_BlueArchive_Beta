@@ -1,7 +1,11 @@
 ﻿l_simp_chinese:
 ########   用户界面   ########
- MESSAGE_BA_NEW_SP_LEADER_TITLE: "领袖储备"
- MESSAGE_BA_NEW_SP_LEADER_DESC: "$SP_NAME|B$加入了领袖储备，可在什亭之匣中招募为特殊领袖。"
+ MESSAGE_BA_NEW_EL_LEADER_TITLE: "领袖储备"
+ MESSAGE_BA_NEW_EL_LEADER_DESC: "$EL_NAME|B$加入了领袖储备，可在什亭之匣中招募为精英领袖。"
+ BA_EL.recall: "召回精英领袖"
+ BA_EL.recall.desc: "（这位精英领袖目前处于缺席状态，什亭之匣中保存了她离开前的完整记录，可将其召回）"
+ BA_EL.recall.cost: "召回花费：£unity£§Y57§!"
+ BA_EL.recruit.cost: "招募花费：£unity£§Y114§!"
 
  ## 领袖名称事件 ##
  BA_rename.1001.title: "领袖命名功能"
@@ -37,12 +41,11 @@
  councilor_medic_kivotos: "保健室长"
  councilor_medic_kivotos_desc: "顾名思义，负责联邦学生会统筹医疗保健方面的事宜。"
 
-########   特殊领袖   ########
+########   精英领袖   ########
  ###姬器人
  NAME_Aris: "天童爱丽丝"
  PHASE_Aris: "梆梆咔梆！爱丽丝得到了重要道具，数据库口令！事不宜迟，快点接入数据库……唔呣，这里是这样运作的呢……"
  DESC_Aris: "来自千年科技学园，姬器人们的原型机，游戏开发部的程序员。"
- TRIGGER_Aris: "爱丽丝已经在任职了"
  BA_communication.Aris.title: "招募储备：§B$NAME_Aris$§!"
  BA_communication.Aris.desc: "虽然爱丽丝来到了统括室，但是这里有很多奇奇怪怪的道具……爱丽丝不知道接下来要做什么了……"
  BA_communication.Aris.a: "统括室负责的东西有很多很多，要找人给你讲解一下才行。"
@@ -124,13 +127,27 @@
 #先驱者
  NAME_Seia: "百合园圣娅"
  NAME_Shigure: "间宵时雨"
+ NAME_Momoi:0 "$BA_name_leader_Momoi$"
+ NAME_Midori:0 "$BA_name_leader_Midori$"
+ BA_communication.Seia.title:0 "招募储备：§B$NAME_Seia$§!"
+ BA_communication.Seia.desc:0 "$BA_PR.recruit.desc$"
+ BA_communication.Seia.join:0 "$NAME_Seia$成为了领袖。该领袖不参与重命名与身份分配系统。"
+ BA_communication.Shigure.title:0 "招募储备：§B$NAME_Shigure$§!"
+ BA_communication.Shigure.desc:0 "$BA_PR.recruit.desc$"
+ BA_communication.Shigure.join:0 "$NAME_Shigure$成为了领袖。该领袖不参与重命名与身份分配系统。"
+ BA_communication.Momoi.title:0 "招募储备：§B$NAME_Momoi$§!"
+ BA_communication.Momoi.desc:0 "$BA_PR.recruit.desc$"
+ BA_communication.Momoi.join:0 "$NAME_Momoi$成为了领袖。该领袖不参与重命名与身份分配系统。"
+ BA_communication.Midori.title:0 "招募储备：§B$NAME_Midori$§!"
+ BA_communication.Midori.desc:0 "$BA_PR.recruit.desc$"
+ BA_communication.Midori.join:0 "$NAME_Midori$成为了领袖。该领袖不参与重命名与身份分配系统。"
 
 
 
 
 
 
-######## 特殊领袖特性文本 ########
+######## 精英领袖特性文本 ########
 #通用
  leader_trait_halo_awakened: "神性光环"
  leader_trait_halo_awakened_desc: "默默守护着我们的光环。"
@@ -143,56 +160,56 @@
  leader_trait_SI_Millennium_G10: "§B千年巨塔档案移动终端§!"
  leader_trait_SI_Millennium_G10_desc: ""
 
-#特殊
- leader_trait_hoshino_SP1: "适合睡觉的地方在哪里呢？"
- leader_trait_hoshino_SP1_desc: "在其它人看来，她总是对生活摆出一副懒懒散散的样子。\n“那么，适合睡觉的地方到底在哪里呢？。”"
- leader_trait_hoshino_SP2: "阿拜多斯的守护者"
- leader_trait_hoshino_SP2_desc: "在亲手埋葬了自己的前辈之后，也许她就再也没有相信过奇迹了吧。直到在那个下午，白子把老师背回来的那一天。\n“至少这一次，让我亲手守护着一切吧，哪怕落得光环破碎的下场。”"
- leader_trait_hoshino_SP3: "未归之鲸"
- leader_trait_hoshino_SP3_desc: "§P她在等待，等待蓝鲸的归来。"
- leader_trait_hoshino_SP4: "蓝鲸之梦"
- leader_trait_hoshino_SP4_desc: "在走过了无数个漫长的黑夜之后，她终于来到了奇迹的出发点\n“欢迎回来，前辈！”"
- leader_trait_hina_SP1: "格黑娜的管理者"
- leader_trait_hina_SP1_desc: "日奈以及她所领导的风纪委员会实际上是格黑娜的管理者，负责处理格黑娜内部的各项事务。"
- leader_trait_hina_SP3: "风纪委员会长"
- leader_trait_hina_SP3_tip: "有一定的概率阻止将要发生的基沃托斯学生搞事事件，以控制§P[[侵染度]§!。"
- leader_trait_hina_SP3_desc: "身为前风纪委员会长，日奈十分擅长应对这帮问题学生。"
- leader_trait_mika_SP1: "唤星之歌"
- leader_trait_mika_SP1_desc: "圣三一作为伊甸条约的发起人与最初成员校，在基沃托斯内部有着很大的影响力。"
- leader_trait_mika_SP2: "Kyrie Eleison"
- leader_trait_mika_SP2_desc: "愿大天使垂怜你们，所以……你们要先去见大天使才行。"
- leader_trait_yuuka_SP1: "精打细算的小会计"
- leader_trait_yuuka_SP1_desc: "身为前研讨会成员，在面对一帮不知道控制预算的科学疯子的情况下还能维持学校的正常运转，优香在这方面的能力毋庸置疑。"
- leader_trait_yuuka_SP2: "没包人"
- leader_trait_yuuka_SP2_desc: "§P所有与“战术背包”相关的科技，权重*0.5。§!\n禁止迫害没包人!"
+#精英
+ leader_trait_Hoshino_EL1: "适合睡觉的地方在哪里呢？"
+ leader_trait_Hoshino_EL1_desc: "在其它人看来，她总是对生活摆出一副懒懒散散的样子。\n“那么，适合睡觉的地方到底在哪里呢？。”"
+ leader_trait_Hoshino_EL2: "阿拜多斯的守护者"
+ leader_trait_Hoshino_EL2_desc: "在亲手埋葬了自己的前辈之后，也许她就再也没有相信过奇迹了吧。直到在那个下午，白子把老师背回来的那一天。\n“至少这一次，让我亲手守护着一切吧，哪怕落得光环破碎的下场。”"
+ leader_trait_Hoshino_EL3: "未归之鲸"
+ leader_trait_Hoshino_EL3_desc: "§P她在等待，等待蓝鲸的归来。"
+ leader_trait_Hoshino_EL4: "蓝鲸之梦"
+ leader_trait_Hoshino_EL4_desc: "在走过了无数个漫长的黑夜之后，她终于来到了奇迹的出发点\n“欢迎回来，前辈！”"
+ leader_trait_Hina_EL1: "格黑娜的管理者"
+ leader_trait_Hina_EL1_desc: "日奈以及她所领导的风纪委员会实际上是格黑娜的管理者，负责处理格黑娜内部的各项事务。"
+ leader_trait_Hina_EL3: "风纪委员会长"
+ leader_trait_Hina_EL3_tip: "有一定的概率阻止将要发生的基沃托斯学生搞事事件，以控制§P[[侵染度]§!。"
+ leader_trait_Hina_EL3_desc: "身为前风纪委员会长，日奈十分擅长应对这帮问题学生。"
+ leader_trait_Mika_EL1: "唤星之歌"
+ leader_trait_Mika_EL1_desc: "圣三一作为伊甸条约的发起人与最初成员校，在基沃托斯内部有着很大的影响力。"
+ leader_trait_Mika_EL2: "Kyrie Eleison"
+ leader_trait_Mika_EL2_desc: "愿大天使垂怜你们，所以……你们要先去见大天使才行。"
+ leader_trait_Yuuka_EL1: "精打细算的小会计"
+ leader_trait_Yuuka_EL1_desc: "身为前研讨会成员，在面对一帮不知道控制预算的科学疯子的情况下还能维持学校的正常运转，优香在这方面的能力毋庸置疑。"
+ leader_trait_Yuuka_EL2: "没包人"
+ leader_trait_Yuuka_EL2_desc: "§P所有与“战术背包”相关的科技，权重*0.5。§!\n禁止迫害没包人!"
 
- leader_trait_hoshino_SP5: "失去的事物，没能放手的事物"
- leader_trait_hoshino_SP5_desc: "自从从梦前辈手中接过了阿拜多斯，星野就下定决心守护好这所学校，无论是过去，现在，还是未来。"
- leader_trait_hina_SP2: "伊施波设"
- leader_trait_hina_SP2_desc: "身为基沃托斯的战力巅峰之一，不会有学生会试图正面与这位风纪委员过上两招。"
- leader_trait_mika_SP3: "瑞士卷"
- leader_trait_mika_SP3_desc: "作为能够一拳锤穿监狱墙的人，圣园未花拥有其他人难以想象的天生怪力。"
- leader_trait_yuuka_SP3: "管账婆"
- leader_trait_yuuka_SP3_desc: "身为前研讨会成员，在面对一帮不知道控制预算的科学疯子的情况下还能维持学校的正常运转，优香在这方面的能力毋庸置疑。"
+ leader_trait_Hoshino_EL5: "失去的事物，没能放手的事物"
+ leader_trait_Hoshino_EL5_desc: "自从从梦前辈手中接过了阿拜多斯，星野就下定决心守护好这所学校，无论是过去，现在，还是未来。"
+ leader_trait_Hina_EL2: "伊施波设"
+ leader_trait_Hina_EL2_desc: "身为基沃托斯的战力巅峰之一，不会有学生会试图正面与这位风纪委员过上两招。"
+ leader_trait_Mika_EL3: "瑞士卷"
+ leader_trait_Mika_EL3_desc: "作为能够一拳锤穿监狱墙的人，圣园未花拥有其他人难以想象的天生怪力。"
+ leader_trait_Yuuka_EL3: "管账婆"
+ leader_trait_Yuuka_EL3_desc: "身为前研讨会成员，在面对一帮不知道控制预算的科学疯子的情况下还能维持学校的正常运转，优香在这方面的能力毋庸置疑。"
 
- leader_trait_atsuko_SP1: "笼中的公主"
- leader_trait_atsuko_SP1_desc: "一直以来她被称为阿里乌斯的“公主”，这个称号不仅仅是个象征，也表现了她凝聚学生们的能力和决心。"
- leader_trait_saori_SP1: "Proditum Protector"
- leader_trait_saori_SP1_desc: "阿里乌斯众是她最重要的家人。她会保护好她们，无论用什么手段，无论曾被怎样的背叛过。"
+ leader_trait_Atsuko_EL1: "笼中的公主"
+ leader_trait_Atsuko_EL1_desc: "一直以来她被称为阿里乌斯的“公主”，这个称号不仅仅是个象征，也表现了她凝聚学生们的能力和决心。"
+ leader_trait_Saori_EL1: "Proditum Protector"
+ leader_trait_Saori_EL1_desc: "阿里乌斯众是她最重要的家人。她会保护好她们，无论用什么手段，无论曾被怎样的背叛过。"
 
- leader_trait_ui_SP1: "光环研究的先导者"
- leader_trait_ui_SP1_desc: "作为光环研究计划最早的发起者和重要的参与者，她在这方面付出的努力远远超过其他人。也许她只是想要证明自己长期以来热爱之物的价值吧。\n“我只是希望……我的这些孩子们……能够稍微派上一点用场……”"
- leader_trait_ui_SP1_tip: "§R所有神性解放路线的的科技，出现概率翻倍§!"
- leader_trait_ui_SP2: "重度社恐"
- leader_trait_ui_SP2_desc: "显然让忧乘上科研船探索星系是一个十分错误的选择，她只适合把自己封闭在古书馆厚实的大门里。\n也许总有办法能够改变这一切的，不是吗？"
- leader_trait_ui_SP3: "古老历史的挖掘者"
- leader_trait_ui_SP3_desc: "她终于愿意走出古书馆的大门，去看看星空下五彩斑斓的世界，去挖掘文明的迭起兴衰。\n也正是见证了忧的改变，我才坚信基沃托斯是真的存在魔法的，那名为「Miracle」魔法。"
+ leader_trait_Ui_EL1: "光环研究的先导者"
+ leader_trait_Ui_EL1_desc: "作为光环研究计划最早的发起者和重要的参与者，她在这方面付出的努力远远超过其他人。也许她只是想要证明自己长期以来热爱之物的价值吧。\n“我只是希望……我的这些孩子们……能够稍微派上一点用场……”"
+ leader_trait_Ui_EL1_tip: "§R所有神性解放路线的的科技，出现概率翻倍§!"
+ leader_trait_Ui_EL2: "重度社恐"
+ leader_trait_Ui_EL2_desc: "显然让忧乘上科研船探索星系是一个十分错误的选择，她只适合把自己封闭在古书馆厚实的大门里。\n也许总有办法能够改变这一切的，不是吗？"
+ leader_trait_Ui_EL3: "古老历史的挖掘者"
+ leader_trait_Ui_EL3_desc: "她终于愿意走出古书馆的大门，去看看星空下五彩斑斓的世界，去挖掘文明的迭起兴衰。\n也正是见证了忧的改变，我才坚信基沃托斯是真的存在魔法的，那名为「Miracle」魔法。"
 
- leader_trait_aris_SP: "AL-1S"
- leader_trait_aris_SP_desc: "[Root.GetArisSPDesc]"
- leader_trait_scientist_aris_SP_desc: "基沃托斯最棒的勇者，爱丽丝。"
- leader_trait_official_aris_SP_desc: "基沃托斯最棒的经理，爱丽丝。"
- leader_trait_commander_aris_SP_desc: "基沃托斯最棒的指挥官，爱丽丝。"
+ leader_trait_Aris_EL1: "AL-1S"
+ leader_trait_Aris_EL1_desc: "[Root.GetArisELDesc]"
+ leader_trait_scientist_Aris_EL1_desc: "基沃托斯最棒的勇者，爱丽丝。"
+ leader_trait_official_Aris_EL1_desc: "基沃托斯最棒的经理，爱丽丝。"
+ leader_trait_commander_Aris_EL1_desc: "基沃托斯最棒的指挥官，爱丽丝。"
 
 
 ######## 定制领袖 ########

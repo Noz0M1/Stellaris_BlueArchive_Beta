@@ -1,29 +1,3 @@
-#######  操作领袖（country_scope)
-## 爱丽丝
-BA_remove_Aris = {
-	every_owned_leader = {
-		limit = {
-			has_leader_flag = BA_event_leader
-			has_leader_flag = leader_BA_Aris
-		}
-		kill_leader = {
-			show_notification = no
-		}
-	}
-	if = {
-		limit = {
-			has_modifier = modifier_BA_Aris_in_matrix
-		}
-		remove_modifier = modifier_BA_Aris_in_matrix
-	}
-	else = {
-		change_variable = {
-			which = BA_leader_respawning
-			value = -1
-		}
-	}
-}
-
 ## 定制领袖
 BA_governor_Serina_PR = {
 	create_leader = {

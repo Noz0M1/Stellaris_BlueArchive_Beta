@@ -186,22 +186,22 @@ country_event = {
 	picture = GFX_BA_origin2
 	immediate = {
 		set_country_flag = hoshino_is_leader_flag
-		BA_Hoshino_SP = yes
+		BA_Hoshino_EL = yes
 		ruler? = {
 			kill_leader = {
 				show_notification = no
 			}
 		}
 		last_created_leader = {
-			remove_trait = leader_trait_hoshino_SP5
+			remove_trait = leader_trait_Hoshino_EL5
 			add_trait = {
-				trait = leader_trait_hoshino_SP1
+				trait = leader_trait_Hoshino_EL1
 			}
 			add_trait = {
-				trait = leader_trait_hoshino_SP2
+				trait = leader_trait_Hoshino_EL2
 			}
 			add_trait = {
-				trait = leader_trait_hoshino_SP3
+				trait = leader_trait_Hoshino_EL3
 			}
 		}
 		set_leader = last_created_leader
@@ -231,19 +231,19 @@ country_event = {
 	picture = GFX_BA_origin2
 	immediate = {
 		set_country_flag = hina_is_leader_flag
-		BA_Hina_SP = yes
+		BA_Hina_EL = yes
 		ruler? = {
 			kill_leader = {
 				show_notification = no
 			}
 		}
 		last_created_leader = {
-			remove_trait = leader_trait_hina_SP2
+			remove_trait = leader_trait_Hina_EL2
 			add_trait = {
-				trait = leader_trait_hina_SP1
+				trait = leader_trait_Hina_EL1
 			}
 			add_trait = {
-				trait = leader_trait_hina_SP3
+				trait = leader_trait_Hina_EL3
 			}
 		}
 		set_leader = last_created_leader
@@ -268,19 +268,19 @@ country_event = {
 	picture = GFX_BA_origin2
 	immediate = {
 		set_country_flag = mika_is_leader_flag
-		BA_Mika_SP = yes
+		BA_Mika_EL = yes
 		ruler? = {
 			kill_leader = {
 				show_notification = no
 			}
 		}
 		last_created_leader = {
-			remove_trait = leader_trait_mika_SP3
+			remove_trait = leader_trait_Mika_EL3
 			add_trait = {
-				trait = leader_trait_mika_SP1
+				trait = leader_trait_Mika_EL1
 			}
 			add_trait = {
-				trait = leader_trait_mika_SP2
+				trait = leader_trait_Mika_EL2
 			}
 		}
 		set_leader = last_created_leader
@@ -300,19 +300,19 @@ country_event = {
 	picture = GFX_BA_origin2
 	immediate = {
 		set_country_flag = yuuka_is_leader_flag
-		BA_Yuuka_SP = yes
+		BA_Yuuka_EL = yes
 		ruler? = {
 			kill_leader = {
 				show_notification = no
 			}
 		}
 		last_created_leader = {
-			remove_trait = leader_trait_yuuka_SP3
+			remove_trait = leader_trait_Yuuka_EL3
 			add_trait = {
-				trait = leader_trait_yuuka_SP1
+				trait = leader_trait_Yuuka_EL1
 			}
 			add_trait = {
-				trait = leader_trait_yuuka_SP2
+				trait = leader_trait_Yuuka_EL2
 			}
 		}
 		set_leader = last_created_leader
@@ -451,11 +451,8 @@ country_event = {
 					has_country_flag = hoshino_is_leader_flag
 				}
 			}
-			event_target:BA_Shittem_country = {
-				set_country_flag = BA_stored_SP_Hoshino_@root
-			}
 			inline_script = {
-				script = Leader/SP_unlock
+				script = Leader/EL_unlock
 				Leader = Hoshino
 			}
 		}
@@ -465,11 +462,8 @@ country_event = {
 					has_country_flag = hina_is_leader_flag
 				}
 			}
-			event_target:BA_Shittem_country = {
-				set_country_flag = BA_stored_SP_Hina_@root
-			}
 			inline_script = {
-				script = Leader/SP_unlock
+				script = Leader/EL_unlock
 				Leader = Hina
 			}
 		}
@@ -479,11 +473,8 @@ country_event = {
 					has_country_flag = mika_is_leader_flag
 				}
 			}
-			event_target:BA_Shittem_country = {
-				set_country_flag = BA_stored_SP_Mika_@root
-			}
 			inline_script = {
-				script = Leader/SP_unlock
+				script = Leader/EL_unlock
 				Leader = Mika
 			}
 		}
@@ -493,11 +484,8 @@ country_event = {
 					has_country_flag = yuuka_is_leader_flag
 				}
 			}
-			event_target:BA_Shittem_country = {
-				set_country_flag = BA_stored_SP_Yuuka_@root
-			}
 			inline_script = {
-				script = Leader/SP_unlock
+				script = Leader/EL_unlock
 				Leader = Yuuka
 			}
 		}
@@ -656,9 +644,9 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = dream_of_blue_wheel_done
 			ruler = {
-				remove_trait = leader_trait_hoshino_SP3
+				remove_trait = leader_trait_Hoshino_EL3
 				add_trait = {
-					trait = leader_trait_hoshino_SP4
+					trait = leader_trait_Hoshino_EL4
 				}
 			}
 		}
@@ -766,16 +754,13 @@ country_event = {
 		}
 		### 创建领袖
 		inline_script = {
-			script = Leader/SP_unlock
+			script = Leader/EL_unlock
 			Leader = Atsuko
 		}
 		inline_script = {
-			script = Leader/SP_unlock
+			script = Leader/EL_unlock
 			Leader = Saori
 		}
-		#event_target:BA_Shittem_country = {
-		#	set_country_flag = BA_stored_SP_Saori_@root
-		#}
 	}
 	option = {
 		name = BA_origin.1001.next

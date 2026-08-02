@@ -221,12 +221,12 @@ leader_trait_SI_Millennium_G10 = {
 }
 
 ###############
-###  特殊领袖
+###  精英领袖
 ###############
 #星野
-leader_trait_hoshino_SP1 = {
+leader_trait_Hoshino_EL1 = {
 	initial = no
-	icon = "gfx/interface/icons/traits/sp_leaders/Icon_hoshino_SP1.dds"
+	icon = "gfx/interface/icons/traits/el_leaders/Icon_Hoshino_EL1.dds"
 	randomized = no
 	councilor_modifier = {
 		pop_happiness = 0.2
@@ -242,9 +242,9 @@ leader_trait_hoshino_SP1 = {
 	selectable_weight = 0
 }
 
-leader_trait_hoshino_SP2 = {
+leader_trait_Hoshino_EL2 = {
 	initial = no
-	icon = "gfx/interface/icons/traits/sp_leaders/Icon_hoshino_SP2.dds"
+	icon = "gfx/interface/icons/traits/el_leaders/Icon_Hoshino_EL2.dds"
 	randomized = no
 	councilor_modifier = {
 		ship_friendly_territory_evasion_mult = 0.15
@@ -258,29 +258,29 @@ leader_trait_hoshino_SP2 = {
 	selectable_weight = 0
 }
 
-leader_trait_hoshino_SP3 = {
+leader_trait_Hoshino_EL3 = {
 	initial = no
 	inline_script = {
 		script = trait/icon
 		CLASS = admiral
-		ICON = "gfx/interface/icons/traits/sp_leaders/Icon_hoshino_SP3.dds"
+		ICON = "gfx/interface/icons/traits/el_leaders/Icon_Hoshino_EL3.dds"
 		RARITY = paragon
 		COUNCIL = yes
 		TIER = 3
 	}
-	#icon = "gfx/interface/icons/traits/sp_leaders/Icon_hoshino_SP3.dds"
+	#icon = "gfx/interface/icons/traits/el_leaders/Icon_Hoshino_EL3.dds"
 	randomized = no
 	leader_class = all
 	#sorting_priority = 1000
 	selectable_weight = 0
 }
 
-leader_trait_hoshino_SP4 = {
+leader_trait_Hoshino_EL4 = {
 	initial = no
 	inline_script = {
 		script = trait/icon
 		CLASS = admiral
-		ICON = "gfx/interface/icons/traits/sp_leaders/Icon_hoshino_SP4.dds"
+		ICON = "gfx/interface/icons/traits/el_leaders/Icon_Hoshino_EL4.dds"
 		RARITY = paragon
 		COUNCIL = yes
 		TIER = 3
@@ -295,9 +295,9 @@ leader_trait_hoshino_SP4 = {
 	selectable_weight = 0
 }
 
-leader_trait_hoshino_SP5 = {
+leader_trait_Hoshino_EL5 = {
 	initial = no
-	icon = "gfx/interface/icons/traits/sp_leaders/Icon_hoshino_SP4.dds"
+	icon = "gfx/interface/icons/traits/el_leaders/Icon_Hoshino_EL4.dds"
 	randomized = no
 	fleet_modifier = {
 		ship_friendly_territory_evasion_mult = 0.3
@@ -315,9 +315,9 @@ leader_trait_hoshino_SP5 = {
 }
 
 #日奈
-leader_trait_hina_SP1 = {
+leader_trait_Hina_EL1 = {
 	initial = no
-	icon = "gfx/interface/icons/traits/sp_leaders/Icon_hina_SP1.dds"
+	icon = "gfx/interface/icons/traits/el_leaders/Icon_Hina_EL1.dds"
 	randomized = no
 	councilor_modifier = {
 		country_ruler_influence_produces_add = 1
@@ -330,9 +330,9 @@ leader_trait_hina_SP1 = {
 	selectable_weight = 0
 }
 
-leader_trait_hina_SP2 = {
+leader_trait_Hina_EL2 = {
 	initial = no
-	icon = "gfx/interface/icons/traits/sp_leaders/Icon_hina_SP2.dds"
+	icon = "gfx/interface/icons/traits/el_leaders/Icon_Hina_EL2.dds"
 	randomized = no
 	#is_councilor_trait_for_ruler = yes
 	fleet_modifier = {
@@ -349,10 +349,10 @@ leader_trait_hina_SP2 = {
 	selectable_weight = 0
 }
 
-leader_trait_hina_SP3 = {
+leader_trait_Hina_EL3 = {
 	initial = no
-	icon = "gfx/interface/icons/traits/sp_leaders/Icon_hina_SP2.dds"
-	custom_tooltip = leader_trait_hina_SP3_tip
+	icon = "gfx/interface/icons/traits/el_leaders/Icon_Hina_EL2.dds"
+	custom_tooltip = leader_trait_Hina_EL3_tip
 	randomized = no
 	leader_class = all
 	sorting_priority = 1000
@@ -360,9 +360,9 @@ leader_trait_hina_SP3 = {
 }
 
 #未花
-leader_trait_mika_SP1 = {
+leader_trait_Mika_EL1 = {
 	initial = no
-	icon = "gfx/interface/icons/traits/sp_leaders/Icon_mika_SP1.dds"
+	icon = "gfx/interface/icons/traits/el_leaders/Icon_Mika_EL1.dds"
 	randomized = no
 	councilor_modifier = {
 		country_ruler_influence_produces_add = 1
@@ -375,9 +375,9 @@ leader_trait_mika_SP1 = {
 	selectable_weight = 0
 }
 
-leader_trait_mika_SP2 = {
+leader_trait_Mika_EL2 = {
 	initial = no
-	icon = "gfx/interface/icons/traits/sp_leaders/Icon_mika_SP2.dds"
+	icon = "gfx/interface/icons/traits/el_leaders/Icon_Mika_EL2.dds"
 	randomized = no
 	councilor_modifier = {
 		country_naval_cap_mult = 0.2
@@ -389,9 +389,9 @@ leader_trait_mika_SP2 = {
 	selectable_weight = 0
 }
 
-leader_trait_mika_SP3 = {
+leader_trait_Mika_EL3 = {
 	initial = no
-	icon = "gfx/interface/icons/traits/sp_leaders/Icon_mika_SP2.dds"
+	icon = "gfx/interface/icons/traits/el_leaders/Icon_Mika_EL2.dds"
 	randomized = no
 	#is_councilor_trait_for_ruler = yes
 	fleet_modifier = {
@@ -407,9 +407,9 @@ leader_trait_mika_SP3 = {
 }
 
 #佑香
-leader_trait_yuuka_SP1 = {
+leader_trait_Yuuka_EL1 = {
 	initial = no
-	icon = "gfx/interface/icons/traits/sp_leaders/Icon_yuuka_SP1.dds"
+	icon = "gfx/interface/icons/traits/el_leaders/Icon_Yuuka_EL1.dds"
 	randomized = no
 	councilor_modifier = {
 		country_ruler_influence_produces_add = 1
@@ -426,9 +426,9 @@ leader_trait_yuuka_SP1 = {
 	selectable_weight = 0
 }
 
-leader_trait_yuuka_SP2 = {
+leader_trait_Yuuka_EL2 = {
 	initial = no
-	icon = "gfx/interface/icons/traits/sp_leaders/Icon_yuuka_SP2.dds"
+	icon = "gfx/interface/icons/traits/el_leaders/Icon_Yuuka_EL2.dds"
 	randomized = no
 	#is_councilor_trait_for_ruler = yes
 	leader_class = all
@@ -436,9 +436,9 @@ leader_trait_yuuka_SP2 = {
 	selectable_weight = 0
 }
 
-leader_trait_yuuka_SP3 = {
+leader_trait_Yuuka_EL3 = {
 	initial = no
-	icon = "gfx/interface/icons/traits/sp_leaders/Icon_yuuka_SP1.dds"
+	icon = "gfx/interface/icons/traits/el_leaders/Icon_Yuuka_EL1.dds"
 	randomized = no
 	planet_modifier = {
 		planet_buildings_cost_mult = -0.1
@@ -455,9 +455,9 @@ leader_trait_yuuka_SP3 = {
 }
 
 #亚津子（统治者
-leader_trait_atsuko_SP1 = {
+leader_trait_Atsuko_EL1 = {
 	initial = no
-	icon = "gfx/interface/icons/traits/sp_leaders/Icon_atsuko_SP1.dds"
+	icon = "gfx/interface/icons/traits/el_leaders/Icon_Atsuko_EL1.dds"
 	randomized = no
 	#is_councilor_trait_for_ruler = yes
 	planet_modifier = {
@@ -474,9 +474,9 @@ leader_trait_atsuko_SP1 = {
 }
 
 #纱织
-leader_trait_saori_SP1 = {
+leader_trait_Saori_EL1 = {
 	initial = no
-	icon = "gfx/interface/icons/traits/sp_leaders/Icon_saori_SP1.dds"
+	icon = "gfx/interface/icons/traits/el_leaders/Icon_Saori_EL1.dds"
 	randomized = no
 	#is_councilor_trait_for_ruler = yes
 	fleet_modifier = {
@@ -492,11 +492,11 @@ leader_trait_saori_SP1 = {
 }
 
 #忧
-leader_trait_ui_SP1 = {
+leader_trait_Ui_EL1 = {
 	initial = no
-	icon = "gfx/interface/icons/traits/sp_leaders/Icon_ui_SP1.dds"
+	icon = "gfx/interface/icons/traits/el_leaders/Icon_Ui_EL1.dds"
 	randomized = no
-	custom_tooltip_with_modifiers = leader_trait_ui_SP1_tip
+	custom_tooltip_with_modifiers = leader_trait_Ui_EL1_tip
 	councilor_modifier = {
 		all_technology_research_speed = 0.4
 	}
@@ -510,9 +510,9 @@ leader_trait_ui_SP1 = {
 	selectable_weight = 0
 }
 
-leader_trait_ui_SP2 = {
+leader_trait_Ui_EL2 = {
 	initial = no
-	icon = "gfx/interface/icons/traits/sp_leaders/Icon_ui_SP2.dds"
+	icon = "gfx/interface/icons/traits/el_leaders/Icon_Ui_EL2.dds"
 	randomized = no
 	modifier = {
 		science_ship_survey_speed = -0.8
@@ -528,9 +528,9 @@ leader_trait_ui_SP2 = {
 	selectable_weight = 0
 }
 
-leader_trait_ui_SP3 = {
+leader_trait_Ui_EL3 = {
 	initial = no
-	icon = "gfx/interface/icons/traits/sp_leaders/Icon_ui_SP1.dds"
+	icon = "gfx/interface/icons/traits/el_leaders/Icon_Ui_EL1.dds"
 	randomized = no
 	modifier = {
 		ship_archaeological_site_excavation_speed_mult = 0.5
@@ -543,8 +543,8 @@ leader_trait_ui_SP3 = {
 }
 
 #爱丽丝
-leader_trait_aris_SP = {
-	icon = "gfx/interface/icons/traits/sp_leaders/Icon_leader_trait_aris.dds"
+leader_trait_Aris_EL1 = {
+	icon = "gfx/interface/icons/traits/el_leaders/Icon_Aris_EL1.dds"
 	#is_councilor_trait_for_ruler = yes
 	randomized = no
 	triggered_modifier = {

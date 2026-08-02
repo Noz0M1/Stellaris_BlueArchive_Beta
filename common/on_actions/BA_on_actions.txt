@@ -180,9 +180,25 @@ on_leader_hired = {
 
 # This = Country
 # From = Leader
+on_leader_death_notify = {
+	events = {
+		BA_Shittem.1367 # 精英领袖缺席捕获：显示死亡通知
+	}
+}
+
+# This = Country
+# From = Leader
+on_leader_death_no_notify = {
+	events = {
+		BA_Shittem.1367 # 精英领袖缺席捕获：无提示死亡
+	}
+}
+
+# This = Country
+# From = Leader
 on_leader_fired = {
 	events = {
-		#BA_Shittem.1964		# 重生领袖用
+		BA_Shittem.1367 # 精英领袖缺席捕获：解雇
 	}
 }
 
@@ -215,7 +231,7 @@ on_tech_increased = {
 		BA_Shittem.1923 #青辉石项目用
 		BA_Shittem.3005 #姬器人委托用
 		BA_club.0001 #社团提示
-		BA_club.1190 #工程部武器研究选项
+		# BA_club.1190 #工程部武器研究选项
 		BA_club.1510 #温泉开发部项目完成
 	}
 }

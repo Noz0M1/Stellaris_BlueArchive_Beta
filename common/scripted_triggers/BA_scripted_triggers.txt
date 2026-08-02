@@ -53,10 +53,10 @@ BA_has_halo_organic = {
 	}
 }
 
-### AL-1S (leader scope)
+### AL-1S (country scope)
 Aris_is_scientist = {
 	any_owned_leader = {
-		has_leader_flag = BA_event_leader
+		BA_is_elite_leader = yes
 		has_leader_flag = leader_BA_Aris
 		leader_class = scientist
 	}
@@ -64,7 +64,7 @@ Aris_is_scientist = {
 
 Aris_is_official = {
 	any_owned_leader = {
-		has_leader_flag = BA_event_leader
+		BA_is_elite_leader = yes
 		has_leader_flag = leader_BA_Aris
 		leader_class = official
 	}
@@ -72,7 +72,7 @@ Aris_is_official = {
 
 Aris_is_commander = {
 	any_owned_leader = {
-		has_leader_flag = BA_event_leader
+		BA_is_elite_leader = yes
 		has_leader_flag = leader_BA_Aris
 		leader_class = commander
 	}

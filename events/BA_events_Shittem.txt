@@ -47,8 +47,18 @@ country_event = {
 				effect = {
 					set_country_flag = BA_Shittem_country
 					save_global_event_target_as = BA_Shittem_country
-					BA_Shittem_display = yes
 				}
+			}
+		}
+		# Preview targets are suffixed with @root, so every player needs their own set.
+		# The preview leaders themselves remain stored in the shared Shittem country.
+		if = {
+			limit = {
+				exists = event_target:BA_Shittem_country
+			}
+			event_target:BA_Shittem_country = {
+				BA_Shittem_EL_display = yes
+				BA_Shittem_PR_display = yes
 			}
 		}
 		# Respawn counter
@@ -492,48 +502,7 @@ country_event = {
 		}
 	}
 	immediate = {
-		BA_Shittem_get_stockpile = yes
-		#如果故障中，打开故障提示
-		if = {
-			limit = {
-				always = no
-				#has_country_flag = Shittem_malfunctioned
-			}
-			country_event = {
-				id = BA_Shittem.1900
-			}
-		}
-		else = {
-			random_list = {
-				#事件提前生产0-24的随机数，通过该变量的值进行文本以及肖像的随机变化
-				#肖像绑定值，文本绑定值，以此实现肖像与文本的绑定
-				#序号为0的肖像与scripted loc当中的BlueArchivePulanaDesc0绑定，以此类推，Arona窗口同理
-				1 = {
-					set_variable_to_random_value = {
-						which = BA_Arona_serial
-						min = 0
-						#max = 24
-						max = 8
-						rounded = yes
-					}
-					country_event = {
-						id = BA_Shittem.1001
-					}
-				}
-				1 = {
-					set_variable_to_random_value = {
-						which = BA_Pulana_serial
-						min = 0
-						#max = 24
-						max = 8
-						rounded = yes
-					}
-					country_event = {
-						id = BA_Shittem.1002
-					}
-				}
-			}
-		}
+		BA_Shittem_main_open = yes
 	}
 }
 
@@ -1350,7 +1319,7 @@ country_event = {
 }
 
 ### 领袖储备
-# TODO：随特殊领袖储备更新
+# TODO：随精英领袖储备更新
 country_event = {
 	id = BA_Shittem.1300
 	is_triggered_only = yes
@@ -1369,6 +1338,75 @@ country_event = {
 	}
 	immediate = {
 		set_country_flag = Communication_engaged
+		# 旧存档迁移：按已经领取的先驱者援助档位补齐储备解锁状态与预览。
+		if = {
+			limit = {
+				check_variable = {
+					which = BA_Precursor_unity_spent
+					value >= @BA_Precursor_unity_spent_threshold_3
+				}
+				NOT = {
+					BA_EL_unlocked = {
+						Leader = Seia
+					}
+				}
+			}
+			inline_script = {
+				script = Leader/PR_unlock
+				Leader = Seia
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = BA_Precursor_unity_spent
+					value >= @BA_Precursor_unity_spent_threshold_5
+				}
+				NOT = {
+					BA_EL_unlocked = {
+						Leader = Shigure
+					}
+				}
+			}
+			inline_script = {
+				script = Leader/PR_unlock
+				Leader = Shigure
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = BA_Precursor_unity_spent
+					value >= @BA_Precursor_unity_spent_threshold_7
+				}
+				NOT = {
+					BA_EL_unlocked = {
+						Leader = Momoi
+					}
+				}
+			}
+			inline_script = {
+				script = Leader/PR_unlock
+				Leader = Momoi
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = BA_Precursor_unity_spent
+					value >= @BA_Precursor_unity_spent_threshold_7
+				}
+				NOT = {
+					BA_EL_unlocked = {
+						Leader = Midori
+					}
+				}
+			}
+			inline_script = {
+				script = Leader/PR_unlock
+				Leader = Midori
+			}
+		}
 	}
 	after = {
 		remove_country_flag = Communication_engaged
@@ -1422,14 +1460,51 @@ country_event = {
 		name = BA_Shittem.1302.title
 		custom_tooltip = BA_Shittem.1302.tip
 		trigger = {
-			always = no
+			OR = {
+				BA_EL_unlocked = {
+					Leader = Seia
+				}
+				BA_EL_unlocked = {
+					Leader = Shigure
+				}
+				BA_EL_unlocked = {
+					Leader = Momoi
+				}
+				BA_EL_unlocked = {
+					Leader = Midori
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = BA_Shittem.1302
+			}
 		}
 	}
 	option = {
 		name = BA_Shittem.1303.title
 		custom_tooltip = BA_Shittem.1303.tip
 		trigger = {
-			has_country_flag = BA_Aris_joined
+			BA_EL_unlocked = {
+				Leader = Aris
+			}
+			OR = {
+				BA_EL_preview_target_exists = {
+					Leader = Aris
+				}
+				any_owned_leader = {
+					BA_is_elite_leader = yes
+					has_leader_flag = leader_BA_Aris
+				}
+				AND = {
+					BA_EL_absent = {
+						Leader = Aris
+					}
+					BA_EL_absent_copy_target_exists = {
+						Leader = Aris
+					}
+				}
+			}
 		}
 		hidden_effect = {
 			country_event = {
@@ -1459,148 +1534,48 @@ country_event = {
 			}
 		}
 	}
-	# TODO：随特殊领袖储备更新
-	#星野
-	option = {
-		name = NAME_Hoshino
-		trigger = {
-			event_target:BA_Shittem_country = {
-				has_country_flag = BA_stored_SP_Hoshino_@root
-			}
-			NOT = {
-				any_owned_leader = {
-					has_leader_flag = BA_event_leader
-					has_leader_flag = leader_BA_Hoshino
-				}
-			}
-		}
-		hidden_effect = {
-			country_event = {
-				id = BA_Shittem.1352
-			}
-		}
+	# TODO：随精英领袖储备更新
+	inline_script = {
+		script = Leader/EL_reserve_option
+		Leader = Hoshino
+		RecruitEvent = BA_Shittem.1353
+		RecallEvent = BA_Shittem.1354
 	}
-	#日奈
-	option = {
-		name = NAME_Hina
-		trigger = {
-			event_target:BA_Shittem_country = {
-				has_country_flag = BA_stored_SP_Hina_@root
-			}
-			NOT = {
-				any_owned_leader = {
-					has_leader_flag = BA_event_leader
-					has_leader_flag = leader_BA_Hina
-				}
-			}
-		}
-		hidden_effect = {
-			country_event = {
-				id = BA_Shittem.1353
-			}
-		}
+	inline_script = {
+		script = Leader/EL_reserve_option
+		Leader = Hina
+		RecruitEvent = BA_Shittem.1355
+		RecallEvent = BA_Shittem.1356
 	}
-	#未花
-	option = {
-		name = NAME_Mika
-		trigger = {
-			event_target:BA_Shittem_country = {
-				has_country_flag = BA_stored_SP_Mika_@root
-			}
-			NOT = {
-				any_owned_leader = {
-					has_leader_flag = BA_event_leader
-					has_leader_flag = leader_BA_Mika
-				}
-			}
-		}
-		hidden_effect = {
-			country_event = {
-				id = BA_Shittem.1354
-			}
-		}
+	inline_script = {
+		script = Leader/EL_reserve_option
+		Leader = Mika
+		RecruitEvent = BA_Shittem.1357
+		RecallEvent = BA_Shittem.1358
 	}
-	#优香-总督
-	option = {
-		name = NAME_Yuuka
-		trigger = {
-			event_target:BA_Shittem_country = {
-				has_country_flag = BA_stored_SP_Yuuka_@root
-			}
-			NOT = {
-				any_owned_leader = {
-					has_leader_flag = BA_event_leader
-					has_leader_flag = leader_BA_Yuuka
-				}
-			}
-		}
-		hidden_effect = {
-			country_event = {
-				id = BA_Shittem.1355
-			}
-		}
+	inline_script = {
+		script = Leader/EL_reserve_option
+		Leader = Yuuka
+		RecruitEvent = BA_Shittem.1359
+		RecallEvent = BA_Shittem.1360
 	}
-	#亚津子
-	option = {
-		name = NAME_Atsuko
-		trigger = {
-			event_target:BA_Shittem_country = {
-				has_country_flag = BA_stored_SP_Atsuko_@root
-			}
-			NOT = {
-				any_owned_leader = {
-					has_leader_flag = BA_event_leader
-					has_leader_flag = leader_BA_Atsuko
-				}
-			}
-		}
-		hidden_effect = {
-			country_event = {
-				id = BA_Shittem.1356
-			}
-		}
+	inline_script = {
+		script = Leader/EL_reserve_option
+		Leader = Atsuko
+		RecruitEvent = BA_Shittem.1361
+		RecallEvent = BA_Shittem.1362
 	}
-	#纱织
-	option = {
-		name = NAME_Saori
-		trigger = {
-			event_target:BA_Shittem_country = {
-				has_country_flag = BA_stored_SP_Saori_@root
-			}
-			NOT = {
-				any_owned_leader = {
-					has_leader_flag = BA_event_leader
-					has_leader_flag = leader_BA_Saori
-				}
-			}
-		}
-		hidden_effect = {
-			country_event = {
-				id = BA_Shittem.1357
-			}
-		}
+	inline_script = {
+		script = Leader/EL_reserve_option
+		Leader = Saori
+		RecruitEvent = BA_Shittem.1363
+		RecallEvent = BA_Shittem.1364
 	}
-	#优香-科学家
-	#诺亚
-	#忧
-	option = {
-		name = NAME_Ui
-		trigger = {
-			event_target:BA_Shittem_country = {
-				has_country_flag = BA_stored_SP_Ui_@root
-			}
-			NOT = {
-				any_owned_leader = {
-					has_leader_flag = BA_event_leader
-					has_leader_flag = leader_BA_Ui
-				}
-			}
-		}
-		hidden_effect = {
-			country_event = {
-				id = BA_Shittem.1359
-			}
-		}
+	inline_script = {
+		script = Leader/EL_reserve_option
+		Leader = Ui
+		RecruitEvent = BA_Shittem.1365
+		RecallEvent = BA_Shittem.1366
 	}
 	### 特殊定制
 }
@@ -1625,6 +1600,30 @@ country_event = {
 			}
 		}
 	}
+	inline_script = {
+		script = Leader/EL_reserve_option
+		Leader = Seia
+		RecruitEvent = BA_Shittem.1370
+		RecallEvent = BA_Shittem.1371
+	}
+	inline_script = {
+		script = Leader/EL_reserve_option
+		Leader = Shigure
+		RecruitEvent = BA_Shittem.1372
+		RecallEvent = BA_Shittem.1373
+	}
+	inline_script = {
+		script = Leader/EL_reserve_option
+		Leader = Momoi
+		RecruitEvent = BA_Shittem.1374
+		RecallEvent = BA_Shittem.1375
+	}
+	inline_script = {
+		script = Leader/EL_reserve_option
+		Leader = Midori
+		RecruitEvent = BA_Shittem.1376
+		RecallEvent = BA_Shittem.1377
+	}
 }
 
 country_event = {
@@ -1642,28 +1641,218 @@ country_event = {
 		name = BACK
 		default_hide_option = yes
 	}
-	# TODO：随特殊领袖储备更新
 	#爱丽丝
 	option = {
 		name = NAME_Aris
 		custom_tooltip = DESC_Aris
 		trigger = {
-			has_country_flag = BA_Aris_joined
-		}
-		allow = {
-			custom_tooltip = {
-				text = TRIGGER_Aris
-				NOT = {
-					any_owned_leader = {
-						has_leader_flag = BA_event_leader
-						has_leader_flag = leader_BA_Aris
+			BA_EL_unlocked = {
+				Leader = Aris
+			}
+			OR = {
+				BA_EL_preview_target_exists = {
+					Leader = Aris
+				}
+				any_owned_leader = {
+					BA_is_elite_leader = yes
+					has_leader_flag = leader_BA_Aris
+				}
+				AND = {
+					BA_EL_absent = {
+						Leader = Aris
+					}
+					BA_EL_absent_copy_target_exists = {
+						Leader = Aris
 					}
 				}
 			}
 		}
 		hidden_effect = {
-			country_event = {
-				id = BA_Shittem.3003
+			if = {
+				limit = {
+					any_owned_leader = {
+						BA_is_elite_leader = yes
+						has_leader_flag = leader_BA_Aris
+					}
+				}
+				country_event = {
+					id = BA_Shittem.1350
+				}
+			}
+			else_if = {
+				limit = {
+					BA_EL_absent = {
+						Leader = Aris
+					}
+					BA_EL_absent_copy_target_exists = {
+						Leader = Aris
+					}
+				}
+				country_event = {
+					id = BA_Shittem.1352
+				}
+			}
+			else_if = {
+				limit = {
+					BA_EL_preview_target_exists = {
+						Leader = Aris
+					}
+				}
+				country_event = {
+					id = BA_Shittem.1351
+				}
+			}
+		}
+	}
+}
+
+# 精英领袖缺席捕获
+# root = 原所属国家；from = 即将死亡或已被解雇的领袖
+country_event = {
+	id = BA_Shittem.1367
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		exists = from
+		exists = event_target:BA_Shittem_country
+		from = {
+			BA_is_elite_leader = yes
+			NOT = {
+				has_leader_flag = BA_EL_absent_copy
+			}
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				from = {
+					has_leader_flag = leader_BA_Aris
+				}
+			}
+			inline_script = {
+				script = Leader/EL_capture_absence
+				Leader = Aris
+			}
+		}
+		else_if = {
+			limit = {
+				from = {
+					has_leader_flag = leader_BA_Hoshino
+				}
+			}
+			inline_script = {
+				script = Leader/EL_capture_absence
+				Leader = Hoshino
+			}
+		}
+		else_if = {
+			limit = {
+				from = {
+					has_leader_flag = leader_BA_Hina
+				}
+			}
+			inline_script = {
+				script = Leader/EL_capture_absence
+				Leader = Hina
+			}
+		}
+		else_if = {
+			limit = {
+				from = {
+					has_leader_flag = leader_BA_Mika
+				}
+			}
+			inline_script = {
+				script = Leader/EL_capture_absence
+				Leader = Mika
+			}
+		}
+		else_if = {
+			limit = {
+				from = {
+					has_leader_flag = leader_BA_Yuuka
+				}
+			}
+			inline_script = {
+				script = Leader/EL_capture_absence
+				Leader = Yuuka
+			}
+		}
+		else_if = {
+			limit = {
+				from = {
+					has_leader_flag = leader_BA_Atsuko
+				}
+			}
+			inline_script = {
+				script = Leader/EL_capture_absence
+				Leader = Atsuko
+			}
+		}
+		else_if = {
+			limit = {
+				from = {
+					has_leader_flag = leader_BA_Saori
+				}
+			}
+			inline_script = {
+				script = Leader/EL_capture_absence
+				Leader = Saori
+			}
+		}
+		else_if = {
+			limit = {
+				from = {
+					has_leader_flag = leader_BA_Ui
+				}
+			}
+			inline_script = {
+				script = Leader/EL_capture_absence
+				Leader = Ui
+			}
+		}
+		else_if = {
+			limit = {
+				from = {
+					has_leader_flag = leader_BA_Seia_pr
+				}
+			}
+			inline_script = {
+				script = Leader/EL_capture_absence
+				Leader = Seia
+			}
+		}
+		else_if = {
+			limit = {
+				from = {
+					has_leader_flag = leader_BA_Shigure_pr
+				}
+			}
+			inline_script = {
+				script = Leader/EL_capture_absence
+				Leader = Shigure
+			}
+		}
+		else_if = {
+			limit = {
+				from = {
+					has_leader_flag = leader_BA_Momoi_pr
+				}
+			}
+			inline_script = {
+				script = Leader/EL_capture_absence
+				Leader = Momoi
+			}
+		}
+		else_if = {
+			limit = {
+				from = {
+					has_leader_flag = leader_BA_Midori_pr
+				}
+			}
+			inline_script = {
+				script = Leader/EL_capture_absence
+				Leader = Midori
 			}
 		}
 	}
@@ -1851,24 +2040,185 @@ leader_event = {
 ##领袖列表
 #爱丽丝
 country_event = {
+	id = BA_Shittem.1350
+	title = "BA_Shittem.3003.name"
+	diplomatic = yes
+	custom_gui = "BA_window"
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = Aris11
+		room = BA_05_room
+	}
+	desc = {
+		trigger = {
+			always = yes
+		}
+		text = BA_Shittem.3003.desc.normal.a
+	}
+	desc = {
+		trigger = {
+			any_owned_leader = {
+				leader_class = scientist
+				BA_is_elite_leader = yes
+				has_leader_flag = leader_BA_Aris
+			}
+		}
+		text = BA_Shittem.3003.desc.scientist.a
+	}
+	desc = {
+		trigger = {
+			any_owned_leader = {
+				leader_class = official
+				BA_is_elite_leader = yes
+				has_leader_flag = leader_BA_Aris
+			}
+		}
+		text = BA_Shittem.3003.desc.governor.a
+	}
+	desc = {
+		trigger = {
+			any_owned_leader = {
+				leader_class = commander
+				BA_is_elite_leader = yes
+				has_leader_flag = leader_BA_Aris
+			}
+		}
+		text = BA_Shittem.3003.desc.admiral.a
+	}
+	desc = {
+		trigger = {
+			any_owned_leader = {
+				leader_class = commander
+				BA_is_elite_leader = yes
+				has_leader_flag = leader_BA_Aris
+			}
+		}
+		text = BA_Shittem.3003.desc.general.a
+	}
+	option = {
+		name = BA_Shittem.3003.exit
+		default_hide_option = yes
+	}
+	option = {
+		name = Aris_to_scientist
+		response_text = Aris_to_scientist.re
+		trigger = {
+			Aris_is_scientist = no
+		}
+		allow = {
+			custom_tooltip = {
+				text = Aris_cooldown
+				NOT = {
+					has_country_flag = BA_Aris_cooldown
+				}
+			}
+		}
+		hidden_effect = {
+			BA_Aris_EL_change_class = {
+				class = scientist
+			}
+		}
+	}
+	option = {
+		name = Aris_to_official
+		response_text = Aris_to_official.re
+		trigger = {
+			Aris_is_official = no
+		}
+		allow = {
+			custom_tooltip = {
+				text = Aris_cooldown
+				NOT = {
+					has_country_flag = BA_Aris_cooldown
+				}
+			}
+		}
+		hidden_effect = {
+			BA_Aris_EL_change_class = {
+				class = official
+			}
+		}
+	}
+	option = {
+		name = Aris_to_commander
+		response_text = Aris_to_commander.re
+		trigger = {
+			Aris_is_commander = no
+		}
+		allow = {
+			custom_tooltip = {
+				text = Aris_cooldown
+				NOT = {
+					has_country_flag = BA_Aris_cooldown
+				}
+			}
+		}
+		hidden_effect = {
+			BA_Aris_EL_change_class = {
+				class = commander
+			}
+		}
+	}
+	option = {
+		name = Aris_to_matrix
+		response_text = Aris_to_matrix.re
+		custom_tooltip = covenant.cycle.tooltip
+		trigger = {
+			NOR = {
+				has_modifier = modifier_BA_Aris_in_matrix
+				has_country_flag = BA_bitcoin_yamero
+			}
+		}
+		allow = {
+			custom_tooltip = {
+				text = Aris_cooldown
+				NOT = {
+					has_country_flag = BA_Aris_cooldown
+				}
+			}
+		}
+		hidden_effect = {
+			BA_Aris_EL_to_matrix = yes
+			random = {
+				chance = 30
+				country_event = {
+					id = BA_Easter_egg.0010
+				}
+			}
+		}
+	}
+}
+
+country_event = {
 	id = BA_Shittem.1351
 	is_triggered_only = yes
+	trigger = {
+		BA_EL_preview_target_exists = {
+			Leader = Aris
+		}
+		NOT = {
+			any_owned_leader = {
+				BA_is_elite_leader = yes
+				has_leader_flag = leader_BA_Aris
+			}
+		}
+	}
 	title = BA_communication.Aris.title
 	desc = BA_communication.Aris.desc
 	event_window_type = leader_recruit
 	immediate = {
 		if = {
 			limit = {
-				exists = event_target:BA_Aris_SP
+				exists = event_target:BA_EL_preview_Aris_@root
 			}
-			event_target:BA_Aris_SP = {
+			event_target:BA_EL_preview_Aris_@root = {
 				change_leader_portrait = BA_leader_Aris
 			}
 		}
 	}
 	###
 	picture_event_data = {
-		portrait = event_target:BA_Aris_SP
+		portrait = event_target:BA_EL_preview_Aris_@root
 		room = paragon_ba_room
 	}
 	picture = GFX_leader_recruitment_bg_legendary_ba
@@ -1878,8 +2228,20 @@ country_event = {
 		name = HIRE
 		tag = hire_leader
 		custom_tooltip = BA_communication.Aris.join
+		allow = {
+			custom_tooltip = {
+				text = BA_EL.recruit.cost
+				resource_stockpile_compare = {
+					resource = unity
+					value >= 114
+				}
+			}
+		}
 		hidden_effect = {
-			BA_Aris_SP = {
+			add_resource = {
+				unity = -114
+			}
+			BA_Aris_EL = {
 				class = scientist
 			}
 		}
@@ -1912,12 +2274,21 @@ country_event = {
 	}
 }
 
-#星野
 country_event = {
 	id = BA_Shittem.1352
 	is_triggered_only = yes
 	inline_script = {
-		script = Leader/SP_recruit
+		script = Leader/EL_recall_event
+		Leader = Aris
+	}
+}
+
+#星野
+country_event = {
+	id = BA_Shittem.1353
+	is_triggered_only = yes
+	inline_script = {
+		script = Leader/EL_recruit
 		Leader = Hoshino
 	}
 	###
@@ -1943,23 +2314,41 @@ country_event = {
 	}
 }
 
-#日奈
 country_event = {
-	id = BA_Shittem.1353
+	id = BA_Shittem.1354
 	is_triggered_only = yes
 	inline_script = {
-		script = Leader/SP_recruit
+		script = Leader/EL_recall_event
+		Leader = Hoshino
+	}
+}
+
+#日奈
+country_event = {
+	id = BA_Shittem.1355
+	is_triggered_only = yes
+	inline_script = {
+		script = Leader/EL_recruit
 		Leader = Hina
 	}
 	###
 }
 
-#未花
 country_event = {
-	id = BA_Shittem.1354
+	id = BA_Shittem.1356
 	is_triggered_only = yes
 	inline_script = {
-		script = Leader/SP_recruit
+		script = Leader/EL_recall_event
+		Leader = Hina
+	}
+}
+
+#未花
+country_event = {
+	id = BA_Shittem.1357
+	is_triggered_only = yes
+	inline_script = {
+		script = Leader/EL_recruit
 		Leader = Mika
 	}
 	###
@@ -1970,12 +2359,21 @@ country_event = {
 	}
 }
 
-#优香
 country_event = {
-	id = BA_Shittem.1355
+	id = BA_Shittem.1358
 	is_triggered_only = yes
 	inline_script = {
-		script = Leader/SP_recruit
+		script = Leader/EL_recall_event
+		Leader = Mika
+	}
+}
+
+#优香
+country_event = {
+	id = BA_Shittem.1359
+	is_triggered_only = yes
+	inline_script = {
+		script = Leader/EL_recruit
 		Leader = Yuuka
 	}
 	###
@@ -2001,40 +2399,149 @@ country_event = {
 	}
 }
 
-#亚津子
 country_event = {
-	id = BA_Shittem.1356
+	id = BA_Shittem.1360
 	is_triggered_only = yes
 	inline_script = {
-		script = Leader/SP_recruit
+		script = Leader/EL_recall_event
+		Leader = Yuuka
+	}
+}
+
+#亚津子
+country_event = {
+	id = BA_Shittem.1361
+	is_triggered_only = yes
+	inline_script = {
+		script = Leader/EL_recruit
 		Leader = Atsuko
 	}
 	###
 }
 
-#纱织
 country_event = {
-	id = BA_Shittem.1357
+	id = BA_Shittem.1362
 	is_triggered_only = yes
 	inline_script = {
-		script = Leader/SP_recruit
+		script = Leader/EL_recall_event
+		Leader = Atsuko
+	}
+}
+
+#纱织
+country_event = {
+	id = BA_Shittem.1363
+	is_triggered_only = yes
+	inline_script = {
+		script = Leader/EL_recruit
 		Leader = Saori
 	}
 	###
 }
 
-#诺亚（电磁炮）
-#忧
 country_event = {
-	id = BA_Shittem.1359
+	id = BA_Shittem.1364
 	is_triggered_only = yes
 	inline_script = {
-		script = Leader/SP_recruit
+		script = Leader/EL_recall_event
+		Leader = Saori
+	}
+}
+
+#忧
+country_event = {
+	id = BA_Shittem.1365
+	is_triggered_only = yes
+	inline_script = {
+		script = Leader/EL_recruit
 		Leader = Ui
 	}
 	###
 }
 
+country_event = {
+	id = BA_Shittem.1366
+	is_triggered_only = yes
+	inline_script = {
+		script = Leader/EL_recall_event
+		Leader = Ui
+	}
+}
+
+# 先驱者储备领袖招募与召回
+country_event = {
+	id = BA_Shittem.1370
+	is_triggered_only = yes
+	inline_script = {
+		script = Leader/EL_recruit
+		Leader = Seia
+	}
+}
+
+country_event = {
+	id = BA_Shittem.1371
+	is_triggered_only = yes
+	inline_script = {
+		script = Leader/EL_recall_event
+		Leader = Seia
+	}
+}
+
+country_event = {
+	id = BA_Shittem.1372
+	is_triggered_only = yes
+	inline_script = {
+		script = Leader/EL_recruit
+		Leader = Shigure
+	}
+}
+
+country_event = {
+	id = BA_Shittem.1373
+	is_triggered_only = yes
+	inline_script = {
+		script = Leader/EL_recall_event
+		Leader = Shigure
+	}
+}
+
+country_event = {
+	id = BA_Shittem.1374
+	is_triggered_only = yes
+	inline_script = {
+		script = Leader/EL_recruit
+		Leader = Momoi
+	}
+}
+
+country_event = {
+	id = BA_Shittem.1375
+	is_triggered_only = yes
+	inline_script = {
+		script = Leader/EL_recall_event
+		Leader = Momoi
+	}
+}
+
+country_event = {
+	id = BA_Shittem.1376
+	is_triggered_only = yes
+	inline_script = {
+		script = Leader/EL_recruit
+		Leader = Midori
+	}
+}
+
+country_event = {
+	id = BA_Shittem.1377
+	is_triggered_only = yes
+	inline_script = {
+		script = Leader/EL_recall_event
+		Leader = Midori
+	}
+}
+
+#诺亚（电磁炮）
 ### 提示
 #故障提示
 country_event = {
@@ -3423,7 +3930,19 @@ country_event = {
 		room = "Noa_Aris_room"
 	}
 	immediate = {
-		set_country_flag = BA_Aris_joined
+		if = {
+			limit = {
+				NOT = {
+					BA_EL_unlocked = {
+						Leader = Aris
+					}
+				}
+			}
+			inline_script = {
+				script = Leader/EL_unlock
+				Leader = Aris
+			}
+		}
 	}
 	option = {
 		name = BA_Shittem.3002.a
@@ -3439,168 +3958,10 @@ country_event = {
 		name = BA_Shittem.3002.c
 		response_text = BA_Shittem.3002.c.re
 		default_hide_option = yes
-		custom_tooltip = Aris_joined
 		hidden_effect = {
 			country_event = {
 				id = BA_Shittem.1351
 				days = 30
-			}
-		}
-	}
-}
-
-#和爱丽丝交流
-country_event = {
-	id = BA_Shittem.3003
-	title = "BA_Shittem.3003.name"
-	diplomatic = yes
-	custom_gui = "BA_window"
-	is_triggered_only = yes
-	picture_event_data = {
-		portrait = Aris11
-		room = BA_05_room
-	}
-	desc = {
-		trigger = {
-			always = yes
-		}
-		text = BA_Shittem.3003.desc.normal.a
-	}
-	desc = {
-		trigger = {
-			any_owned_leader = {
-				leader_class = scientist
-				has_leader_flag = BA_event_leader
-				has_leader_flag = leader_BA_Aris
-			}
-		}
-		text = BA_Shittem.3003.desc.scientist.a
-	}
-	desc = {
-		trigger = {
-			any_owned_leader = {
-				leader_class = official
-				has_leader_flag = BA_event_leader
-				has_leader_flag = leader_BA_Aris
-			}
-		}
-		text = BA_Shittem.3003.desc.governor.a
-	}
-	desc = {
-		trigger = {
-			any_owned_leader = {
-				leader_class = commander
-				has_leader_flag = BA_event_leader
-				has_leader_flag = leader_BA_Aris
-			}
-		}
-		text = BA_Shittem.3003.desc.admiral.a
-	}
-	desc = {
-		trigger = {
-			any_owned_leader = {
-				leader_class = commander
-				has_leader_flag = BA_event_leader
-				has_leader_flag = leader_BA_Aris
-			}
-		}
-		text = BA_Shittem.3003.desc.general.a
-	}
-	option = {
-		name = BA_Shittem.3003.exit
-		default_hide_option = yes
-	}
-	option = {
-		name = Aris_to_scientist
-		response_text = Aris_to_scientist.re
-		trigger = {
-			Aris_is_scientist = no
-		}
-		allow = {
-			custom_tooltip = {
-				text = Aris_cooldown
-				NOT = {
-					has_country_flag = BA_Aris_cooldown
-				}
-			}
-		}
-		hidden_effect = {
-			BA_remove_Aris = yes
-			BA_Aris_SP = {
-				class = scientist
-			}
-		}
-	}
-	option = {
-		name = Aris_to_official
-		response_text = Aris_to_official.re
-		trigger = {
-			Aris_is_official = no
-		}
-		allow = {
-			custom_tooltip = {
-				text = Aris_cooldown
-				NOT = {
-					has_country_flag = BA_Aris_cooldown
-				}
-			}
-		}
-		hidden_effect = {
-			BA_remove_Aris = yes
-			BA_Aris_SP = {
-				class = official
-			}
-		}
-	}
-	option = {
-		name = Aris_to_commander
-		response_text = Aris_to_commander.re
-		trigger = {
-			Aris_is_commander = no
-		}
-		allow = {
-			custom_tooltip = {
-				text = Aris_cooldown
-				NOT = {
-					has_country_flag = BA_Aris_cooldown
-				}
-			}
-		}
-		hidden_effect = {
-			BA_remove_Aris = yes
-			BA_Aris_SP = {
-				class = commander
-			}
-		}
-	}
-	option = {
-		name = Aris_to_matrix
-		response_text = Aris_to_matrix.re
-		custom_tooltip = covenant.cycle.tooltip
-		trigger = {
-			NOR = {
-				has_modifier = modifier_BA_Aris_in_matrix
-				has_country_flag = BA_bitcoin_yamero
-			}
-		}
-		allow = {
-			custom_tooltip = {
-				text = Aris_cooldown
-				NOT = {
-					has_country_flag = BA_Aris_cooldown
-				}
-			}
-		}
-		hidden_effect = {
-			BA_remove_Aris = yes
-			add_modifier = {
-				modifier = modifier_BA_Aris_in_matrix
-			}
-			random = {
-				chance = 30
-				country_event = {
-					id = BA_Easter_egg.0010
-				}
 			}
 		}
 	}
@@ -4664,8 +5025,6 @@ country_event = {
 		}
 	}
 }
-
-
 
 #####
 country_event = {

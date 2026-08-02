@@ -1,0 +1,56 @@
+### Elite leader reserve state (country scope)
+
+# Leader scope. Precursor elite leaders use a separate flag so systems that
+# intentionally distinguish them can branch without duplicating reserve logic.
+BA_is_elite_leader = {
+	OR = {
+		has_leader_flag = BA_elite_leader
+		has_leader_flag = BA_elite_leader_pr
+	}
+}
+
+BA_EL_has_identity = {
+	OR = {
+		has_leader_flag = leader_BA_$Leader$
+		has_leader_flag = leader_BA_$Leader$_pr
+	}
+}
+
+BA_EL_unlocked = {
+	exists = event_target:BA_Shittem_country
+	event_target:BA_Shittem_country = {
+		OR = {
+			has_country_flag = BA_EL_unlocked_$Leader$_@root
+			has_country_flag = BA_EL_unlocked_$Leader$_pr_@root
+		}
+	}
+}
+
+BA_EL_absent = {
+	exists = event_target:BA_Shittem_country
+	event_target:BA_Shittem_country = {
+		has_country_flag = BA_EL_absent_$Leader$_@root
+	}
+}
+
+BA_EL_preview_target_exists = {
+	exists = event_target:BA_EL_preview_$Leader$_@root
+}
+
+BA_EL_live_target_exists = {
+	exists = event_target:BA_EL_live_$Leader$_@root
+}
+
+BA_EL_absent_copy_target_exists = {
+	exists = event_target:BA_EL_absent_copy_$Leader$_@root
+}
+
+# Leader scope. Deliberately checks only the ordinary unlock flag: precursor
+# reserve unlocks must never make a normal rename-system identity available.
+BA_EL_identity_unlocked_for_owner = {
+	exists = owner
+	exists = event_target:BA_Shittem_country
+	event_target:BA_Shittem_country = {
+		has_country_flag = BA_EL_unlocked_$Leader$_@root.owner
+	}
+}
