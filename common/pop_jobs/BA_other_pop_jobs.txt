@@ -116,9 +116,9 @@ BA_keystone_maintenance_staff = {
 ### 被献祭
 #基础：
 BA_oblation = {
-	#icon = battle_thrall
 	category = purge
 	#purge = purge_Sacrifice
+	first_come_first_served = yes
 	is_capped_by_modifier = no
 	ignores_sapience = yes
 	possible_pre_triggers = {
@@ -127,24 +127,22 @@ BA_oblation = {
 	}
 	possible = {
 		is_kivotos = no
+		has_purge_type = { country = owner type = purge_Sacrifice }
 	}
 	resources = {
-		category = planet_jobs
+		category = pop_category_purge
 		produces = {
 			alloys = 2
 			sr_keystone = 1
 		}
-		upkeep = {
-			food = 1
-		}
 	}
 	weight = {
-		weight = 0
+		weight = @special_job_weight
 		modifier = {
+			factor = 9999
 			owner = {
 				has_policy_flag = BA_Arius_Guise_lifted
 			}
-			add = 999999
 		}
 	}
 }
@@ -196,7 +194,6 @@ BA_fe_defender = {
 
 ### 先驱志愿者
 BA_fe_volunteers = {
-	icon = job_BA_flexible_workers
 	category = precursor
 	is_capped_by_modifier = no
 	swappable_data = {
@@ -259,9 +256,7 @@ BA_Sweeper_refugees = {
 	possible = {
 		planet = {
 			exists = owner
-			planet = {
-				has_planet_flag = BA_Planet_sweeped
-			}
+			has_planet_flag = BA_Planet_sweeped
 		}
 		owner = {
 			NOT = {
