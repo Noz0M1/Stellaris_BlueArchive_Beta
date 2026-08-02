@@ -43,9 +43,6 @@ BA_create_mid_Aris_fleet_pawn = {
 					set_age = 15
 					immortal = yes
 					event_leader = yes
-					traits = {
-						trait = leader_trait_hina_SP2
-					}
 					effect = {
 						set_leader_flag = BA_mid_Aris_admiral
 					}
@@ -100,9 +97,6 @@ BA_create_mid_Aris_fleet_bishop = {
 					set_age = 15
 					immortal = yes
 					event_leader = yes
-					traits = {
-						trait = leader_trait_hina_SP2
-					}
 					effect = {
 						set_leader_flag = BA_mid_Aris_admiral
 					}
@@ -167,9 +161,6 @@ BA_create_mid_Aris_fleet_king = {
 					set_age = 15
 					immortal = yes
 					event_leader = yes
-					traits = {
-						trait = leader_trait_hina_SP2
-					}
 					effect = {
 						set_leader_flag = BA_mid_Aris_center
 					}

@@ -1,0 +1,54 @@
+option = {
+	name = NAME_$Leader$
+	trigger = {
+		BA_EL_unlocked = {
+			Leader = $Leader$
+		}
+		NOT = {
+			any_owned_leader = {
+				BA_is_elite_leader = yes
+				BA_EL_has_identity = { Leader = $Leader$ }
+			}
+		}
+		OR = {
+			AND = {
+				NOT = {
+					BA_EL_absent = {
+						Leader = $Leader$
+					}
+				}
+				BA_EL_preview_target_exists = {
+					Leader = $Leader$
+				}
+			}
+			AND = {
+				BA_EL_absent = {
+					Leader = $Leader$
+				}
+				BA_EL_absent_copy_target_exists = {
+					Leader = $Leader$
+				}
+			}
+		}
+	}
+	hidden_effect = {
+		if = {
+			limit = {
+				BA_EL_absent = {
+					Leader = $Leader$
+				}
+				BA_EL_absent_copy_target_exists = {
+					Leader = $Leader$
+				}
+			}
+			country_event = {
+				id = $RecallEvent$
+			}
+		}
+		else = {
+			country_event = {
+				id = $RecruitEvent$
+			}
+		}
+	}
+}

@@ -1,0 +1,62 @@
+title = BA_communication.$Leader$.title
+desc = BA_communication.$Leader$.desc
+event_window_type = leader_recruit
+immediate = {
+	if = {
+		limit = {
+			exists = event_target:BA_EL_preview_$Leader$_@root
+		}
+		event_target:BA_EL_preview_$Leader$_@root = {
+			if = {
+				limit = {
+					has_leader_flag = leader_BA_$Leader$_pr
+				}
+				change_leader_portrait = BA_leader_$Leader$_pr
+			}
+			else = {
+				change_leader_portrait = BA_leader_$Leader$
+			}
+		}
+	}
+}
+###
+picture_event_data = {
+	portrait = event_target:BA_EL_preview_$Leader$_@root
+	room = paragon_ba_room
+}
+picture = GFX_leader_recruitment_bg_legendary_ba
+###
+# HIRE
+option = {
+	name = HIRE
+	tag = hire_leader
+	#sound = par_azaryn_hire
+	custom_tooltip = BA_communication.$Leader$.join
+	allow = {
+		resource_stockpile_compare = {
+			resource = unity
+			value >= 114
+		}
+	}
+	hidden_effect = {
+		add_resource = {
+			unity = -114
+		}
+		BA_$Leader$_EL = yes
+		inline_script = {
+			script = Leader/EL_clear_preview
+			Leader = $Leader$
+		}
+	}
+}
+# DISMISS
+option = {
+	name = DISMISS
+	tag = dismiss_leader
+	#sound = par_azaryn_dismiss
+}
+###
+after = {
+	hidden_effect = {
+	}
+}

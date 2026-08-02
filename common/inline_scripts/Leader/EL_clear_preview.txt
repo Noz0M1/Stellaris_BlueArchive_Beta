@@ -1,0 +1,12 @@
+# Country scope. The dynamic suffix resolves against the recruiting/player country.
+if = {
+	limit = {
+		exists = event_target:BA_EL_preview_$Leader$_@root
+	}
+	event_target:BA_EL_preview_$Leader$_@root = {
+		kill_leader = {
+			show_notification = no
+		}
+	}
+	clear_global_event_target = BA_EL_preview_$Leader$_@root
+}

@@ -924,6 +924,10 @@ country_event = {
 			multiplier = @BA_Precursor_unity_cost_3
 		}
 		BA_Precursor_reward_resource = yes
+		inline_script = {
+			script = Leader/PR_unlock
+			Leader = Seia
+		}
 		country_event = {
 			id = BA_Shittem.1302
 		}
@@ -1046,6 +1050,10 @@ country_event = {
 			multiplier = @BA_Precursor_unity_cost_5
 		}
 		BA_Precursor_reward_resource = yes
+		inline_script = {
+			script = Leader/PR_unlock
+			Leader = Shigure
+		}
 		country_event = {
 			id = BA_Shittem.1302
 		}
@@ -1168,6 +1176,14 @@ country_event = {
 			multiplier = @BA_Precursor_unity_cost_7
 		}
 		BA_Precursor_reward_resource = yes
+		inline_script = {
+			script = Leader/PR_unlock
+			Leader = Momoi
+		}
+		inline_script = {
+			script = Leader/PR_unlock
+			Leader = Midori
+		}
 		country_event = {
 			id = BA_Shittem.1302
 		}

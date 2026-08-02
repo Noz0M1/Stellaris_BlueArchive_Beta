@@ -1,0 +1,49 @@
+title = BA_communication.$Leader$.title
+desc = BA_EL.recall.desc
+event_window_type = leader_recruit
+
+trigger = {
+	BA_EL_absent = {
+		Leader = $Leader$
+	}
+	BA_EL_absent_copy_target_exists = {
+		Leader = $Leader$
+	}
+	NOT = {
+		any_owned_leader = {
+			BA_is_elite_leader = yes
+			BA_EL_has_identity = { Leader = $Leader$ }
+		}
+	}
+}
+
+picture_event_data = {
+	portrait = event_target:BA_EL_absent_copy_$Leader$_@root
+	room = paragon_ba_room
+}
+picture = GFX_leader_recruitment_bg_legendary_ba
+
+option = {
+	name = BA_EL.recall
+	tag = hire_leader
+	allow = {
+		custom_tooltip = {
+			text = BA_EL.recall.cost
+			resource_stockpile_compare = {
+				resource = unity
+				value >= 57
+			}
+		}
+	}
+	hidden_effect = {
+		inline_script = {
+			script = Leader/EL_recall
+			Leader = $Leader$
+		}
+	}
+}
+
+option = {
+	name = DISMISS
+	tag = dismiss_leader
+}

@@ -1,0 +1,22 @@
+# Per-country elite leader reserve keys:
+# - country flag on BA_Shittem_country: BA_EL_unlocked_$Leader$_@root
+# - country flag on BA_Shittem_country: BA_EL_absent_$Leader$_@root
+# - global event target: BA_EL_preview_$Leader$_@root
+# - global event target: BA_EL_live_$Leader$_@root
+# - global event target: BA_EL_absent_copy_$Leader$_@root
+event_target:BA_Shittem_country = {
+	set_country_flag = BA_EL_unlocked_$Leader$_@root
+	root = {
+		create_message = {
+			type = BA_NEW_EL_LEADER
+			localization = MESSAGE_BA_NEW_EL_LEADER_DESC
+			days = 30
+			target = root
+			variable = {
+				type = key
+				value = NAME_$Leader$
+				localization = EL_NAME
+			}
+		}
+	}
+}
