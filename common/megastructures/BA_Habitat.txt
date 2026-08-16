@@ -168,6 +168,18 @@ BA_auto_habitat_center = {
 			}
 		}
 	}
+	# 建造位置提示
+	build_system_tooltip = habitat_tooltip
+	tooltip_system_score = {
+		base = 0
+		add = value:num_BA_auto_habitat_module_max_districts
+	}
+	tooltip_best_systems_header = "MEGASTRUCTURE_HABITAT_BEST_SYSTEMS_TOOLTIP_HEADER"
+	tooltip_system_filter = {
+		always = yes
+	}
+	tooltip_system_score_low_threshold = 10
+	tooltip_system_score_high_threshold = 16
 }
 
 ### 社团基地
