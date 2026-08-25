@@ -1,0 +1,22 @@
+# Player country scope. The _pr unlock is visible to BA_EL_unlocked but not to
+# BA_EL_identity_unlocked_for_owner, keeping the rename identity pool unchanged.
+event_target:BA_Shittem_country = {
+	set_country_flag = BA_EL_unlocked_$Leader$_pr_@root
+	if = {
+		limit = {
+			NOT = { exists = event_target:BA_EL_preview_$Leader$_@root }
+		}
+		BA_$Leader$_PR_preview = yes
+	}
+}
+create_message = {
+	type = BA_NEW_EL_LEADER
+	localization = MESSAGE_BA_NEW_EL_LEADER_DESC
+	days = 30
+	target = root
+	variable = {
+		type = key
+		value = NAME_$Leader$
+		localization = EL_NAME
+	}
+}

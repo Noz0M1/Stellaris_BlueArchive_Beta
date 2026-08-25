@@ -25,10 +25,45 @@ portraits = {
 		attachment_selector = no_texture
 		# greeting_sound=sound_greeting_BA_Hoshino
 	}
+	BA_leader_Axium_pr = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Axium_pr
+		attachment_selector = no_texture
+	}
+	BA_leader_Himari_pr = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Himari_pr
+		attachment_selector = no_texture
+	}
+	BA_leader_Miyako_pr = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Miyako_pr
+		attachment_selector = no_texture
+	}
+	BA_leader_Miyu_pr = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Miyu_pr
+		attachment_selector = no_texture
+	}
+	BA_leader_Moe_pr = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Moe_pr
+		attachment_selector = no_texture
+	}
+	BA_leader_Saki_pr = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Saki_pr
+		attachment_selector = no_texture
+	}
+	BA_leader_Serina_pr = {
+		entity = portrait_Schale_entity
+		clothes_selector = BA_clothes_Serina_pr
+		attachment_selector = no_texture
+	}
 	# 事件
 	BA_leader_Axium = {
 		entity = portrait_Schale_entity
-		clothes_selector = BA_clothes_Seia_pr
+		clothes_selector = BA_clothes_Axium_pr
 		attachment_selector = no_texture
 		# greeting_sound=sound_greeting_BA_Hoshino
 	}

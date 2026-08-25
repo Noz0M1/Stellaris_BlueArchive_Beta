@@ -35,12 +35,14 @@ option = {
 	allow = {
 		resource_stockpile_compare = {
 			resource = unity
-			value >= 114
+			value >= 1
+			multiplier = value:num_BA_SP_Leader_cost
 		}
 	}
 	hidden_effect = {
 		add_resource = {
-			unity = -114
+			unity = -1
+			multiplier = value:num_BA_SP_Leader_cost
 		}
 		BA_$Leader$_EL = yes
 		inline_script = {

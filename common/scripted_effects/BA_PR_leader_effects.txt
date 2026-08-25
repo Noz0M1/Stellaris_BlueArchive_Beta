@@ -1,0 +1,438 @@
+BA_Shittem_PR_display = {
+	optimize_memory
+	if = {
+		limit = {
+			NOT = {
+				exists = event_target:BA_EL_preview_Seia_@root
+			}
+		}
+		BA_Seia_PR_preview = yes
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = event_target:BA_EL_preview_Shigure_@root
+			}
+		}
+		BA_Shigure_PR_preview = yes
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = event_target:BA_EL_preview_Momoi_@root
+			}
+		}
+		BA_Momoi_PR_preview = yes
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = event_target:BA_EL_preview_Midori_@root
+			}
+		}
+		BA_Midori_PR_preview = yes
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = event_target:BA_EL_preview_Axium_@root
+			}
+		}
+		BA_Axium_PR_preview = yes
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = event_target:BA_EL_preview_Himari_@root
+			}
+		}
+		BA_Himari_PR_preview = yes
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = event_target:BA_EL_preview_Miyako_@root
+			}
+		}
+		BA_Miyako_PR_preview = yes
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = event_target:BA_EL_preview_Miyu_@root
+			}
+		}
+		BA_Miyu_PR_preview = yes
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = event_target:BA_EL_preview_Moe_@root
+			}
+		}
+		BA_Moe_PR_preview = yes
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = event_target:BA_EL_preview_Saki_@root
+			}
+		}
+		BA_Saki_PR_preview = yes
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = event_target:BA_EL_preview_Serina_@root
+			}
+		}
+		BA_Serina_PR_preview = yes
+	}
+}
+
+BA_Seia_PR_preview = {
+	inline_script = {
+		script = Leader/PR_display
+		Leader = Seia
+		Class = official
+		Age = 17
+	}
+}
+
+BA_Shigure_PR_preview = {
+	inline_script = {
+		script = Leader/PR_display
+		Leader = Shigure
+		Class = commander
+		Age = 16
+	}
+}
+
+BA_Momoi_PR_preview = {
+	inline_script = {
+		script = Leader/PR_display
+		Leader = Momoi
+		Class = scientist
+		Age = 15
+	}
+}
+
+BA_Midori_PR_preview = {
+	inline_script = {
+		script = Leader/PR_display
+		Leader = Midori
+		Class = scientist
+		Age = 15
+	}
+}
+
+BA_Axium_PR_preview = {
+	inline_script = {
+		script = Leader/PR_display
+		Leader = Axium
+		Class = official
+		Age = 17
+	}
+}
+
+BA_Himari_PR_preview = {
+	inline_script = {
+		script = Leader/PR_display
+		Leader = Himari
+		Class = scientist
+		Age = 17
+	}
+}
+
+BA_Miyako_PR_preview = {
+	inline_script = {
+		script = Leader/PR_display
+		Leader = Miyako
+		Class = commander
+		Age = 15
+	}
+}
+
+BA_Miyu_PR_preview = {
+	inline_script = {
+		script = Leader/PR_display
+		Leader = Miyu
+		Class = commander
+		Age = 15
+	}
+}
+
+BA_Moe_PR_preview = {
+	inline_script = {
+		script = Leader/PR_display
+		Leader = Moe
+		Class = commander
+		Age = 15
+	}
+}
+
+BA_Saki_PR_preview = {
+	inline_script = {
+		script = Leader/PR_display
+		Leader = Saki
+		Class = commander
+		Age = 15
+	}
+}
+
+BA_Serina_PR_preview = {
+	inline_script = {
+		script = Leader/PR_display
+		Leader = Serina
+		Class = official
+		Age = 16
+	}
+}
+
+BA_Seia_EL = {
+	inline_script = {
+		script = Leader/PR_create
+		Leader = Seia
+		Class = official
+		Age = 17
+	}
+}
+
+BA_Shigure_EL = {
+	inline_script = {
+		script = Leader/PR_create
+		Leader = Shigure
+		Class = commander
+		Age = 16
+	}
+}
+
+BA_Momoi_EL = {
+	inline_script = {
+		script = Leader/PR_create
+		Leader = Momoi
+		Class = scientist
+		Age = 15
+	}
+}
+
+BA_Midori_EL = {
+	inline_script = {
+		script = Leader/PR_create
+		Leader = Midori
+		Class = scientist
+		Age = 15
+	}
+}
+
+BA_Axium_EL = {
+	inline_script = {
+		script = Leader/PR_create
+		Leader = Axium
+		Class = official
+		Age = 17
+	}
+}
+
+BA_Himari_EL = {
+	inline_script = {
+		script = Leader/PR_create
+		Leader = Himari
+		Class = scientist
+		Age = 17
+	}
+}
+
+BA_Miyako_EL = {
+	inline_script = {
+		script = Leader/PR_create
+		Leader = Miyako
+		Class = commander
+		Age = 15
+	}
+}
+
+BA_Miyu_EL = {
+	inline_script = {
+		script = Leader/PR_create
+		Leader = Miyu
+		Class = commander
+		Age = 15
+	}
+}
+
+BA_Moe_EL = {
+	inline_script = {
+		script = Leader/PR_create
+		Leader = Moe
+		Class = commander
+		Age = 15
+	}
+}
+
+BA_Saki_EL = {
+	inline_script = {
+		script = Leader/PR_create
+		Leader = Saki
+		Class = commander
+		Age = 15
+	}
+}
+
+BA_Serina_EL = {
+	inline_script = {
+		script = Leader/PR_create
+		Leader = Serina
+		Class = official
+		Age = 16
+	}
+}
+
+# Player country scope. New members inherit the existing three precursor
+# reserve stages; reward events and their thresholds remain unchanged.
+BA_Shittem_PR_sync_unlocks = {
+	if = {
+		limit = {
+			BA_EL_unlocked = {
+				Leader = Seia
+			}
+		}
+		event_target:BA_Shittem_country = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = BA_EL_unlocked_Axium_pr_@root
+					}
+				}
+				set_country_flag = BA_EL_unlocked_Axium_pr_@root
+				if = {
+					limit = {
+						NOT = {
+							exists = event_target:BA_EL_preview_Axium_@root
+						}
+					}
+					BA_Axium_PR_preview = yes
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = BA_EL_unlocked_Serina_pr_@root
+					}
+				}
+				set_country_flag = BA_EL_unlocked_Serina_pr_@root
+				if = {
+					limit = {
+						NOT = {
+							exists = event_target:BA_EL_preview_Serina_@root
+						}
+					}
+					BA_Serina_PR_preview = yes
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			BA_EL_unlocked = {
+				Leader = Shigure
+			}
+		}
+		event_target:BA_Shittem_country = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = BA_EL_unlocked_Miyako_pr_@root
+					}
+				}
+				set_country_flag = BA_EL_unlocked_Miyako_pr_@root
+				if = {
+					limit = {
+						NOT = {
+							exists = event_target:BA_EL_preview_Miyako_@root
+						}
+					}
+					BA_Miyako_PR_preview = yes
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = BA_EL_unlocked_Saki_pr_@root
+					}
+				}
+				set_country_flag = BA_EL_unlocked_Saki_pr_@root
+				if = {
+					limit = {
+						NOT = {
+							exists = event_target:BA_EL_preview_Saki_@root
+						}
+					}
+					BA_Saki_PR_preview = yes
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = BA_EL_unlocked_Miyu_pr_@root
+					}
+				}
+				set_country_flag = BA_EL_unlocked_Miyu_pr_@root
+				if = {
+					limit = {
+						NOT = {
+							exists = event_target:BA_EL_preview_Miyu_@root
+						}
+					}
+					BA_Miyu_PR_preview = yes
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = BA_EL_unlocked_Moe_pr_@root
+					}
+				}
+				set_country_flag = BA_EL_unlocked_Moe_pr_@root
+				if = {
+					limit = {
+						NOT = {
+							exists = event_target:BA_EL_preview_Moe_@root
+						}
+					}
+					BA_Moe_PR_preview = yes
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				BA_EL_unlocked = {
+					Leader = Momoi
+				}
+				BA_EL_unlocked = {
+					Leader = Midori
+				}
+			}
+		}
+		event_target:BA_Shittem_country = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = BA_EL_unlocked_Himari_pr_@root
+					}
+				}
+				set_country_flag = BA_EL_unlocked_Himari_pr_@root
+				if = {
+					limit = {
+						NOT = {
+							exists = event_target:BA_EL_preview_Himari_@root
+						}
+					}
+					BA_Himari_PR_preview = yes
+				}
+			}
+		}
+	}
+}

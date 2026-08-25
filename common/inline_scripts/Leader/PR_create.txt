@@ -1,0 +1,25 @@
+# Player country scope. Create a live precursor elite leader while keeping the
+# shared EL reserve/absence/recall state machine and the separate _pr identity.
+create_leader = {
+	class = $Class$
+	species = event_target:BA_Precursor_species
+	gender = female
+	name = NAME_$Leader$
+	skill = 5
+	set_age = $Age$
+	immortal = yes
+	event_leader = yes
+	effect = {
+		set_leader_flag = leader_death_events_blocked
+		set_leader_flag = BA_event_leader
+		set_leader_flag = BA_elite_leader_pr
+		set_leader_flag = BA_precursor_rename_exempt
+		set_leader_flag = leader_BA_$Leader$_pr
+		change_leader_portrait = BA_leader_$Leader$_pr
+		save_global_event_target_as = BA_EL_live_$Leader$_@owner
+	}
+}
+inline_script = {
+	script = Leader/EL_clear_preview
+	Leader = $Leader$
+}

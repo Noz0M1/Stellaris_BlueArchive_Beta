@@ -362,7 +362,10 @@ defined_text = {
 	text = {
 		trigger = {
 			from = {
-				has_leader_flag = leader_BA_Himari
+				OR = {
+					has_leader_flag = leader_BA_Himari
+					has_leader_flag = leader_BA_Himari_pr
+				}
 			}
 		}
 		localization_key = leader_greeting_BA_Himari
@@ -514,7 +517,10 @@ defined_text = {
 	text = {
 		trigger = {
 			from = {
-				has_leader_flag = leader_BA_Serina
+				OR = {
+					has_leader_flag = leader_BA_Serina
+					has_leader_flag = leader_BA_Serina_pr
+				}
 			}
 		}
 		localization_key = leader_greeting_BA_Serina
@@ -829,7 +835,10 @@ defined_text = {
 	text = {
 		trigger = {
 			from = {
-				has_leader_flag = leader_BA_Miyako
+				OR = {
+					has_leader_flag = leader_BA_Miyako
+					has_leader_flag = leader_BA_Miyako_pr
+				}
 			}
 		}
 		localization_key = leader_greeting_BA_Miyako
@@ -837,7 +846,10 @@ defined_text = {
 	text = {
 		trigger = {
 			from = {
-				has_leader_flag = leader_BA_Saki
+				OR = {
+					has_leader_flag = leader_BA_Saki
+					has_leader_flag = leader_BA_Saki_pr
+				}
 			}
 		}
 		localization_key = leader_greeting_BA_Saki
@@ -845,7 +857,10 @@ defined_text = {
 	text = {
 		trigger = {
 			from = {
-				has_leader_flag = leader_BA_Miyu
+				OR = {
+					has_leader_flag = leader_BA_Miyu
+					has_leader_flag = leader_BA_Miyu_pr
+				}
 			}
 		}
 		localization_key = leader_greeting_BA_Miyu
@@ -853,7 +868,10 @@ defined_text = {
 	text = {
 		trigger = {
 			from = {
-				has_leader_flag = leader_BA_Moe
+				OR = {
+					has_leader_flag = leader_BA_Moe
+					has_leader_flag = leader_BA_Moe_pr
+				}
 			}
 		}
 		localization_key = leader_greeting_BA_Moe

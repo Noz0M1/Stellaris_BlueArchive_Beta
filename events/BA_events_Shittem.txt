@@ -1591,6 +1591,9 @@ country_event = {
 		portrait = Arona0004
 		room = BA_03_room
 	}
+	immediate = {
+		BA_Shittem_PR_sync_unlocks = yes
+	}
 	option = {
 		name = BACK
 		default_hide_option = yes
@@ -1608,9 +1611,45 @@ country_event = {
 	}
 	inline_script = {
 		script = Leader/EL_reserve_option
+		Leader = Axium
+		RecruitEvent = BA_Shittem.1378
+		RecallEvent = BA_Shittem.1379
+	}
+	inline_script = {
+		script = Leader/EL_reserve_option
+		Leader = Serina
+		RecruitEvent = BA_Shittem.1390
+		RecallEvent = BA_Shittem.1391
+	}
+	inline_script = {
+		script = Leader/EL_reserve_option
 		Leader = Shigure
 		RecruitEvent = BA_Shittem.1372
 		RecallEvent = BA_Shittem.1373
+	}
+	inline_script = {
+		script = Leader/EL_reserve_option
+		Leader = Miyako
+		RecruitEvent = BA_Shittem.1380
+		RecallEvent = BA_Shittem.1381
+	}
+	inline_script = {
+		script = Leader/EL_reserve_option
+		Leader = Saki
+		RecruitEvent = BA_Shittem.1382
+		RecallEvent = BA_Shittem.1383
+	}
+	inline_script = {
+		script = Leader/EL_reserve_option
+		Leader = Miyu
+		RecruitEvent = BA_Shittem.1384
+		RecallEvent = BA_Shittem.1385
+	}
+	inline_script = {
+		script = Leader/EL_reserve_option
+		Leader = Moe
+		RecruitEvent = BA_Shittem.1386
+		RecallEvent = BA_Shittem.1387
 	}
 	inline_script = {
 		script = Leader/EL_reserve_option
@@ -1623,6 +1662,12 @@ country_event = {
 		Leader = Midori
 		RecruitEvent = BA_Shittem.1376
 		RecallEvent = BA_Shittem.1377
+	}
+	inline_script = {
+		script = Leader/EL_reserve_option
+		Leader = Himari
+		RecruitEvent = BA_Shittem.1388
+		RecallEvent = BA_Shittem.1389
 	}
 }
 
@@ -1854,6 +1899,34 @@ country_event = {
 				script = Leader/EL_capture_absence
 				Leader = Midori
 			}
+		}
+		else_if = {
+			limit = { from = { has_leader_flag = leader_BA_Axium_pr } }
+			inline_script = { script = Leader/EL_capture_absence Leader = Axium }
+		}
+		else_if = {
+			limit = { from = { has_leader_flag = leader_BA_Himari_pr } }
+			inline_script = { script = Leader/EL_capture_absence Leader = Himari }
+		}
+		else_if = {
+			limit = { from = { has_leader_flag = leader_BA_Miyako_pr } }
+			inline_script = { script = Leader/EL_capture_absence Leader = Miyako }
+		}
+		else_if = {
+			limit = { from = { has_leader_flag = leader_BA_Miyu_pr } }
+			inline_script = { script = Leader/EL_capture_absence Leader = Miyu }
+		}
+		else_if = {
+			limit = { from = { has_leader_flag = leader_BA_Moe_pr } }
+			inline_script = { script = Leader/EL_capture_absence Leader = Moe }
+		}
+		else_if = {
+			limit = { from = { has_leader_flag = leader_BA_Saki_pr } }
+			inline_script = { script = Leader/EL_capture_absence Leader = Saki }
+		}
+		else_if = {
+			limit = { from = { has_leader_flag = leader_BA_Serina_pr } }
+			inline_script = { script = Leader/EL_capture_absence Leader = Serina }
 		}
 	}
 }
@@ -2229,17 +2302,16 @@ country_event = {
 		tag = hire_leader
 		custom_tooltip = BA_communication.Aris.join
 		allow = {
-			custom_tooltip = {
-				text = BA_EL.recruit.cost
-				resource_stockpile_compare = {
-					resource = unity
-					value >= 114
-				}
+			resource_stockpile_compare = {
+				resource = unity
+				value >= 1
+				multiplier = value:num_BA_SP_Leader_cost
 			}
 		}
 		hidden_effect = {
 			add_resource = {
-				unity = -114
+				unity = -1
+				multiplier = value:num_BA_SP_Leader_cost
 			}
 			BA_Aris_EL = {
 				class = scientist
@@ -2539,6 +2611,90 @@ country_event = {
 		script = Leader/EL_recall_event
 		Leader = Midori
 	}
+}
+
+country_event = {
+	id = BA_Shittem.1378
+	is_triggered_only = yes
+	inline_script = { script = Leader/EL_recruit Leader = Axium }
+}
+
+country_event = {
+	id = BA_Shittem.1379
+	is_triggered_only = yes
+	inline_script = { script = Leader/EL_recall_event Leader = Axium }
+}
+
+country_event = {
+	id = BA_Shittem.1380
+	is_triggered_only = yes
+	inline_script = { script = Leader/EL_recruit Leader = Miyako }
+}
+
+country_event = {
+	id = BA_Shittem.1381
+	is_triggered_only = yes
+	inline_script = { script = Leader/EL_recall_event Leader = Miyako }
+}
+
+country_event = {
+	id = BA_Shittem.1382
+	is_triggered_only = yes
+	inline_script = { script = Leader/EL_recruit Leader = Saki }
+}
+
+country_event = {
+	id = BA_Shittem.1383
+	is_triggered_only = yes
+	inline_script = { script = Leader/EL_recall_event Leader = Saki }
+}
+
+country_event = {
+	id = BA_Shittem.1384
+	is_triggered_only = yes
+	inline_script = { script = Leader/EL_recruit Leader = Miyu }
+}
+
+country_event = {
+	id = BA_Shittem.1385
+	is_triggered_only = yes
+	inline_script = { script = Leader/EL_recall_event Leader = Miyu }
+}
+
+country_event = {
+	id = BA_Shittem.1386
+	is_triggered_only = yes
+	inline_script = { script = Leader/EL_recruit Leader = Moe }
+}
+
+country_event = {
+	id = BA_Shittem.1387
+	is_triggered_only = yes
+	inline_script = { script = Leader/EL_recall_event Leader = Moe }
+}
+
+country_event = {
+	id = BA_Shittem.1388
+	is_triggered_only = yes
+	inline_script = { script = Leader/EL_recruit Leader = Himari }
+}
+
+country_event = {
+	id = BA_Shittem.1389
+	is_triggered_only = yes
+	inline_script = { script = Leader/EL_recall_event Leader = Himari }
+}
+
+country_event = {
+	id = BA_Shittem.1390
+	is_triggered_only = yes
+	inline_script = { script = Leader/EL_recruit Leader = Serina }
+}
+
+country_event = {
+	id = BA_Shittem.1391
+	is_triggered_only = yes
+	inline_script = { script = Leader/EL_recall_event Leader = Serina }
 }
 
 #诺亚（电磁炮）
