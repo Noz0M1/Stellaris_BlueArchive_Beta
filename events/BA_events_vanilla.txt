@@ -1,0 +1,16 @@
+namespace = BA_va
+##### 原版游戏逻辑补充 #####
+country_event = {
+	id = BA_va.0001
+	title = "BA_va.0001.name"
+	desc = "BA_va.0001.desc"
+	is_triggered_only = yes
+	trigger = {
+		last_increased_tech = tech_gene_tailoring
+		has_authority = auth_kivotos
+	}
+	picture = GFX_BA_chronicle_6
+	option = {
+		name = CONFIRM
+	}
+}
