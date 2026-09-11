@@ -11,7 +11,6 @@ create_leader = {
 	event_leader = yes
 	effect = {
 		set_leader_flag = leader_death_events_blocked
-		set_leader_flag = BA_event_leader
 		set_leader_flag = BA_elite_leader_pr
 		set_leader_flag = BA_precursor_rename_exempt
 		set_leader_flag = leader_BA_$Leader$_pr

@@ -9,7 +9,6 @@ create_leader = {
 	immortal = yes
 	event_leader = yes
 	effect = {
-		set_leader_flag = BA_event_leader
 		set_leader_flag = BA_precursor_rename_exempt
 		set_leader_flag = leader_BA_$Leader$_pr
 		change_leader_portrait = BA_leader_$Leader$_pr

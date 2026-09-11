@@ -577,7 +577,7 @@ country_event = {
 		every_owned_leader = {
 			limit = {
 				OR = {
-					has_leader_flag = BA_event_leader
+					BA_is_special_leader = yes
 					species = {
 						has_trait = trait_halo_awakened
 						#is_same_value = event_target:BA_awakened_species
@@ -594,7 +594,7 @@ country_event = {
 		every_pool_leader = {
 			limit = {
 				OR = {
-					has_leader_flag = BA_event_leader
+					BA_is_special_leader = yes
 					species = {
 						has_trait = trait_halo_awakened
 						#is_same_value = event_target:BA_awakened_species
@@ -651,7 +651,7 @@ country_event = {
 		every_owned_leader = {
 			limit = {
 				OR = {
-					has_leader_flag = BA_event_leader
+					BA_is_special_leader = yes
 					species = {
 						has_trait = trait_halo_full_awakened
 						#is_same_value = event_target:BA_awakened_species
@@ -669,7 +669,7 @@ country_event = {
 		every_pool_leader = {
 			limit = {
 				OR = {
-					has_leader_flag = BA_event_leader
+					BA_is_special_leader = yes
 					species = {
 						has_trait = trait_halo_full_awakened
 						#is_same_value = event_target:BA_awakened_species
@@ -761,7 +761,7 @@ country_event = {
 			limit = {
 				OR = {
 					### 特殊领袖
-					has_leader_flag = BA_event_leader
+					BA_is_special_leader = yes
 					### 种族有光环特质，但领袖没有
 					AND = {
 						species = {
@@ -785,7 +785,7 @@ country_event = {
 			### 特殊领袖
 			if = {
 				limit = {
-					has_leader_flag = BA_event_leader
+					BA_is_special_leader = yes
 				}
 				BA_Halo_for_special_leader = yes
 			}

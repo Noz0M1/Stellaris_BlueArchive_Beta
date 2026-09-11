@@ -3273,7 +3273,7 @@ button_effect_BA_SI_Millennium_G03_lock = {
 				limit = {
 					leader_class = scientist
 					NOT = {
-						has_leader_flag = BA_event_leader
+						BA_is_special_leader = yes
 					}
 					is_ruler = no
 				}
@@ -4674,7 +4674,7 @@ button_effect_BA_SI_Millennium_C03_lock = {
 						leader_class = official
 					}
 					NOT = {
-						has_leader_flag = BA_event_leader
+						BA_is_special_leader = yes
 					}
 					is_ruler = no
 				}

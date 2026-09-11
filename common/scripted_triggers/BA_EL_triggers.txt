@@ -1,11 +1,21 @@
 ### Elite leader reserve state (country scope)
 
-# Leader scope. Precursor elite leaders use a separate flag so systems that
-# intentionally distinguish them can branch without duplicating reserve logic.
+# Leader scope. These flags are reserved for leaders participating in the
+# reserve/absence/recall lifecycle; previews and temporary NPCs must not use them.
+# Precursor elite leaders keep a separate flag for systems that distinguish origin.
 BA_is_elite_leader = {
 	OR = {
 		has_leader_flag = BA_elite_leader
 		has_leader_flag = BA_elite_leader_pr
+	}
+}
+
+# Leader scope. Non-reserve event leaders temporarily retain BA_event_leader.
+# Generic special-leader handling should use this trigger during the transition.
+BA_is_special_leader = {
+	OR = {
+		BA_is_elite_leader = yes
+		has_leader_flag = BA_event_leader
 	}
 }
 
